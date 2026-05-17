@@ -1,0 +1,145 @@
+import { el, go, speak } from '../util.js';
+import { DIALEKTE, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
+import { KATEGORIEN } from '../../data/kategorien.js';
+import { getStreak, getLernStats, getDailySeed, toggleFavorit, isFavorit } from '../store.js';
+import { pickSeeded } from '../util.js';
+import { renderDialektCard } from './partials.js';
+
+export function renderHome(root) {
+  root.innerHTML = '';
+  const view = el('div', { class: 'view' });
+
+  const stats = getLernStats();
+  const streak = getStreak();
+  const totalExpr = ALLE_AUSDRUECKE.length;
+
+  // Hero
+  view.appendChild(el('section', { class: 'hero' },
+    el('div', {},
+      el('span', { class: 'hero-eyebrow' },
+        el('span', { html: '✨' }),
+        'Deutsche Sprachvielfalt entdecken'
+      ),
+      el('h1', { html: 'Lerne Dialekte aus <span class="grad">ganz Deutschland</span>.' }),
+      el('p', {}, 'Vom Frankfurter „Ei guude" bis zum Wiener „Schmäh": Tauche ein in regionale Ausdrücke, lerne mit Karteikarten und teste dich im Quiz — alles erklärt auf Hochdeutsch.'),
+      el('div', { class: 'hero-cta' },
+        el('button', { class: 'btn btn-primary', onClick: () => go('#/entdecken') },
+          'Dialekte entdecken',
+          el('span', { html: ' →' })
+        ),
+        el('button', { class: 'btn btn-secondary', onClick: () => go('#/lernen') },
+          'Karteikarten lernen'
+        ),
+        el('button', { class: 'btn btn-ghost', onClick: () => go('#/quiz') },
+          'Quiz starten'
+        )
+      ),
+      el('div', { class: 'hero-stats' },
+        el('div', {},
+          el('span', { class: 'hero-stat-num' }, String(DIALEKTE.length)),
+          el('span', { class: 'hero-stat-label' }, 'Dialekte')
+        ),
+        el('div', {},
+          el('span', { class: 'hero-stat-num' }, String(totalExpr)),
+          el('span', { class: 'hero-stat-label' }, 'Ausdrücke')
+        ),
+        el('div', {},
+          el('span', { class: 'hero-stat-num' }, String(stats.gelernt)),
+          el('span', { class: 'hero-stat-label' }, 'gelernt')
+        ),
+        streak > 0 ? el('div', {},
+          el('span', { class: 'hero-stat-num' }, `${streak}🔥`),
+          el('span', { class: 'hero-stat-label' }, 'Tage Streak')
+        ) : null
+      )
+    ),
+    renderHeroPreview()
+  ));
+
+  // Daily expression
+  view.appendChild(renderDailyExpression());
+
+  // Dialekt grid
+  const sec = el('section', { class: 'section' },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, 'Alle Dialekte'),
+        el('div', { class: 'lede' }, 'Wähle eine Region, um Ausdrücke und Bedeutungen zu erkunden.')
+      )
+    )
+  );
+  const grid = el('div', { class: 'dialekt-grid' });
+  DIALEKTE.forEach(d => grid.appendChild(renderDialektCard(d)));
+  sec.appendChild(grid);
+  view.appendChild(sec);
+
+  // Features section
+  view.appendChild(el('section', { class: 'section section-row' },
+    el('div', { class: 'card' },
+      el('div', { class: 'card-title' }, 'Was kannst du hier tun?'),
+      el('ul', { class: 'feature-list' },
+        el('li', {}, el('span', { class: 'fi' }, '📖'), el('div', {}, el('b', {}, 'Ausdrücke entdecken — '), 'Browse durch hunderte Wörter und Redewendungen aus allen Regionen.')),
+        el('li', {}, el('span', { class: 'fi' }, '🃏'), el('div', {}, el('b', {}, 'Karteikarten — '), 'Lerne wie mit Anki: vorne der Dialekt, hinten die Bedeutung auf Hochdeutsch.')),
+        el('li', {}, el('span', { class: 'fi' }, '🎯'), el('div', {}, el('b', {}, 'Quiz — '), 'Teste dein Wissen mit Multiple-Choice-Fragen.')),
+        el('li', {}, el('span', { class: 'fi' }, '🔊'), el('div', {}, el('b', {}, 'Aussprache — '), 'Höre dir Ausdrücke per Sprachsynthese vor.')),
+        el('li', {}, el('span', { class: 'fi' }, '⭐'), el('div', {}, el('b', {}, 'Favoriten — '), 'Speichere deine Lieblingsausdrücke für später.'))
+      )
+    ),
+    el('div', { class: 'card' },
+      el('div', { class: 'card-title' }, 'Tastatur-Shortcuts'),
+      el('ul', { class: 'feature-list' },
+        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'S '), '— Suche öffnen')),
+        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'T '), '— Hell/Dunkel umschalten')),
+        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, '← / → '), '— In Karteikarten navigieren')),
+        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'Leertaste '), '— Karteikarte umdrehen')),
+        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, '1/2/3 '), '— Im Quiz auswählen'))
+      )
+    )
+  ));
+
+  root.appendChild(view);
+}
+
+function renderHeroPreview() {
+  const samples = [
+    { dialekt: 'Hessisch',  farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!' },
+    { dialekt: 'Berlinisch', farbe: '#f4a261', ausdruck: 'Icke',       meaning: 'Ich' },
+    { dialekt: 'Bayerisch',  farbe: '#0077b6', ausdruck: 'Servus',     meaning: 'Hallo / Tschüss' }
+  ];
+  return el('div', { class: 'hero-preview' },
+    ...samples.map(s => el('div', { class: 'preview-card' },
+      el('span', { class: 'dialect-tag', style: { background: s.farbe + '22', color: s.farbe } }, s.dialekt),
+      el('div', { class: 'expr' }, s.ausdruck),
+      el('div', { class: 'meaning' }, s.meaning)
+    ))
+  );
+}
+
+function renderDailyExpression() {
+  const seed = getDailySeed();
+  const expr = pickSeeded(ALLE_AUSDRUECKE, seed);
+  if (!expr) return el('div');
+  return el('section', { class: 'section' },
+    el('div', { class: 'daily' },
+      el('div', { class: 'daily-content' },
+        el('span', { class: 'daily-eyebrow' }, '☀️ Ausdruck des Tages'),
+        el('div', { class: 'daily-expr' }, expr.ausdruck),
+        el('div', { class: 'daily-hd' }, '↦ ' + expr.hochdeutsch),
+        el('div', { class: 'daily-meaning' }, expr.bedeutung),
+        el('div', { class: 'daily-foot' },
+          el('span', { class: 'daily-source' }, `${expr.dialektFlag} ${expr.dialektName}`),
+          el('div', { class: 'daily-actions' },
+            el('button', {
+              class: 'daily-action', title: 'Anhören',
+              onClick: () => speak(expr.ausdruck)
+            }, el('span', { html: '🔊' })),
+            el('button', {
+              class: 'daily-action', title: 'Zum Dialekt',
+              onClick: () => go(`#/dialekt/${expr.dialektId}`)
+            }, el('span', { html: '→' }))
+          )
+        )
+      )
+    )
+  );
+}

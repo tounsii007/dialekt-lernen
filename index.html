@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="description" content="Lerne deutsche Dialekte – Hessisch, Berlinisch, Bayerisch, Kölsch, Sächsisch, Plattdeutsch und mehr." />
+  <title>Dialekto · Deutsche Dialekte lernen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A3%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/" data-route="home">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="currentColor" stop-opacity="1" />
+                <stop offset="100%" stop-color="currentColor" stop-opacity=".55" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#lg)" d="M16 3C9 3 3 8 3 15c0 4 2 7.5 5.5 9.5L7 30l6-3.2c1 .2 2 .2 3 .2 7 0 13-5 13-12S23 3 16 3Z"/>
+            <circle cx="11" cy="15" r="1.6" fill="#fff"/>
+            <circle cx="16" cy="15" r="1.6" fill="#fff"/>
+            <circle cx="21" cy="15" r="1.6" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Dialekto</span>
+          <span class="brand-sub">Deutsche Dialekte lernen</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#/" data-route="home" class="nav-link"><span>Start</span></a>
+        <a href="#/entdecken" data-route="entdecken" class="nav-link"><span>Entdecken</span></a>
+        <a href="#/lernen" data-route="lernen" class="nav-link"><span>Lernen</span></a>
+        <a href="#/quiz" data-route="quiz" class="nav-link"><span>Quiz</span></a>
+        <a href="#/favoriten" data-route="favoriten" class="nav-link"><span>Favoriten</span></a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button id="searchOpen" class="icon-btn" aria-label="Suchen" title="Suchen (S)">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+
+      <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Menü">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="app">
+    <!-- Views werden hier dynamisch gerendert -->
+  </main>
+
+  <!-- Search overlay -->
+  <div id="searchOverlay" class="search-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="search-panel">
+      <div class="search-input-row">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="searchInput" type="search" placeholder="Suche nach Ausdruck, Bedeutung oder Region…" autocomplete="off" />
+        <kbd class="kbd">Esc</kbd>
+      </div>
+      <div id="searchResults" class="search-results" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Toast notifications -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Dialekto · Mit ♥ für die deutsche Sprachvielfalt</span>
+      <span class="footer-meta">v1.0 · Erweiterbar · <button id="addDialectHint" class="link-btn">Eigenen Dialekt hinzufügen?</button></span>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
