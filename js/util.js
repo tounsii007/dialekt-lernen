@@ -8,3 +8,7 @@ export { debounce } from './util/timing.js';
 export { speak, isSpeechSupported } from './util/speech.js';
 export { parseHash, go } from './util/route.js';
 export { toast } from './util/toast.js';
+export {
+  observeReveals, observeCounters, animateCounter,
+  initSpotlight, initScrollProgress, confettiBurst
+} from './util/motion.js';

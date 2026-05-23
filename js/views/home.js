@@ -36,19 +36,19 @@ export function renderHome(root) {
       ),
       el('div', { class: 'hero-stats' },
         el('div', {},
-          el('span', { class: 'hero-stat-num' }, String(DIALEKTE.length)),
+          el('span', { class: 'hero-stat-num', dataset: { count: String(DIALEKTE.length) } }, '0'),
           el('span', { class: 'hero-stat-label' }, 'Dialekte')
         ),
         el('div', {},
-          el('span', { class: 'hero-stat-num' }, String(totalExpr)),
+          el('span', { class: 'hero-stat-num', dataset: { count: String(totalExpr) } }, '0'),
           el('span', { class: 'hero-stat-label' }, 'Ausdrücke')
         ),
         el('div', {},
-          el('span', { class: 'hero-stat-num' }, String(stats.gelernt)),
+          el('span', { class: 'hero-stat-num', dataset: { count: String(stats.gelernt) } }, '0'),
           el('span', { class: 'hero-stat-label' }, 'gelernt')
         ),
         streak > 0 ? el('div', {},
-          el('span', { class: 'hero-stat-num' }, `${streak}🔥`),
+          el('span', { class: 'hero-stat-num', dataset: { count: String(streak), suffix: '🔥' } }, '0'),
           el('span', { class: 'hero-stat-label' }, 'Tage Streak')
         ) : null
       )
@@ -57,10 +57,12 @@ export function renderHome(root) {
   ));
 
   // Daily expression
-  view.appendChild(renderDailyExpression());
+  const dailyWrap = renderDailyExpression();
+  dailyWrap.setAttribute('data-reveal', '');
+  view.appendChild(dailyWrap);
 
   // Dialekt grid
-  const sec = el('section', { class: 'section' },
+  const sec = el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
         el('h2', {}, 'Alle Dialekte'),
@@ -74,8 +76,8 @@ export function renderHome(root) {
   view.appendChild(sec);
 
   // Features section
-  view.appendChild(el('section', { class: 'section section-row' },
-    el('div', { class: 'card' },
+  view.appendChild(el('section', { class: 'section section-row', dataset: { reveal: '' } },
+    el('div', { class: 'card', dataset: { spotlight: '' } },
       el('div', { class: 'card-title' }, 'Was kannst du hier tun?'),
       el('ul', { class: 'feature-list' },
         el('li', {}, el('span', { class: 'fi' }, '📖'), el('div', {}, el('b', {}, 'Ausdrücke entdecken — '), 'Browse durch hunderte Wörter und Redewendungen aus allen Regionen.')),
@@ -85,7 +87,7 @@ export function renderHome(root) {
         el('li', {}, el('span', { class: 'fi' }, '⭐'), el('div', {}, el('b', {}, 'Favoriten — '), 'Speichere deine Lieblingsausdrücke für später.'))
       )
     ),
-    el('div', { class: 'card' },
+    el('div', { class: 'card', dataset: { spotlight: '' } },
       el('div', { class: 'card-title' }, 'Tastatur-Shortcuts'),
       el('ul', { class: 'feature-list' },
         el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'S '), '— Suche öffnen')),

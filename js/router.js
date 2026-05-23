@@ -2,6 +2,7 @@
 // Wertet den Location-Hash aus und ruft die passende View-Render-Funktion auf.
 
 import { $, $$, parseHash } from './util.js';
+import { observeReveals, observeCounters } from './util/motion.js';
 import { renderHome } from './views/home.js';
 import { renderEntdecken } from './views/entdecken.js';
 import { renderDialektDetail } from './views/dialektDetail.js';
@@ -38,6 +39,15 @@ function renderRoute(app, route, segs, params) {
   }
 }
 
+function doRender(app, route, segs, params) {
+  renderRoute(app, route, segs, params);
+  // Wire scroll-driven reveals + counters for freshly rendered nodes
+  requestAnimationFrame(() => {
+    observeReveals(app);
+    observeCounters(app);
+  });
+}
+
 export function router() {
   const app = $('#app');
   if (!app) return;
@@ -52,7 +62,12 @@ export function router() {
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  renderRoute(app, route, segs, params);
+  // Smooth route transitions where supported (Chromium-based)
+  if (document.startViewTransition) {
+    document.startViewTransition(() => doRender(app, route, segs, params));
+  } else {
+    doRender(app, route, segs, params);
+  }
 }
 
 export function initRouter() {
