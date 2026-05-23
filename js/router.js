@@ -6,6 +6,7 @@ import {
   observeReveals, observeCounters,
   initTilt, initMagnetic, initPointerParallax, initParallax
 } from './util/motion.js';
+import { initNav } from './nav.js';
 import { renderHome } from './views/home.js';
 import { renderEntdecken } from './views/entdecken.js';
 import { renderDialektDetail } from './views/dialektDetail.js';
@@ -52,6 +53,8 @@ function doRender(app, route, segs, params) {
   initMagnetic(app);
   initPointerParallax(app);
   initParallax(app);
+  // Nav indicator re-position after the active class shuffle.
+  initNav();
 }
 
 export function router() {

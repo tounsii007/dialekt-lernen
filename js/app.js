@@ -7,6 +7,7 @@ import { initTheme } from './theme.js';
 import { initSearch } from './search.js';
 import { initShortcuts } from './shortcuts.js';
 import { initRouter } from './router.js';
+import { initNav } from './nav.js';
 import { initSpotlight, initScrollProgress, initMagnetic, initTilt } from './util/motion.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
@@ -29,6 +30,7 @@ function init() {
   initSpotlight();
   initMagnetic();
   initTilt();
+  initNav();
   initRouter();
 }
 

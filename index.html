@@ -62,8 +62,10 @@
       </nav>
 
       <div class="topbar-actions">
-        <button id="searchOpen" class="icon-btn" aria-label="Suchen" title="Suchen (S)">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <button id="searchOpen" class="search-trigger" aria-label="Suchen" title="Suchen (S)">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="search-trigger-text">Suchen oder springen…</span>
+          <kbd class="kbd search-trigger-kbd">S</kbd>
         </button>
         <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
           <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -81,15 +83,21 @@
     <!-- Views werden hier dynamisch gerendert -->
   </main>
 
-  <!-- Search overlay -->
-  <div id="searchOverlay" class="search-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="search-panel">
-      <div class="search-input-row">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="searchInput" type="search" placeholder="Suche nach Ausdruck, Bedeutung oder Region…" autocomplete="off" />
+  <!-- Command palette overlay -->
+  <div id="searchOverlay" class="search-overlay cmdp-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="search-panel cmdp-panel">
+      <div class="search-input-row cmdp-input-row">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="searchInput" type="search" placeholder="Aktion, Dialekt oder Ausdruck…" autocomplete="off" />
         <kbd class="kbd">Esc</kbd>
       </div>
-      <div id="searchResults" class="search-results" aria-live="polite"></div>
+      <div id="searchResults" class="search-results cmdp-results" aria-live="polite"></div>
+      <div class="cmdp-footer">
+        <span><kbd class="kbd">↑</kbd><kbd class="kbd">↓</kbd> navigieren</span>
+        <span><kbd class="kbd">↵</kbd> öffnen</span>
+        <span><kbd class="kbd">esc</kbd> schließen</span>
+        <span class="cmdp-footer-brand">Dialekto · Kommando-Palette</span>
+      </div>
     </div>
   </div>
 
