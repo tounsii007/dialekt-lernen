@@ -2361,3 +2361,327 @@ input[type="search"]:not(#searchInput) {
 /* Section row cards: aligned with new gradient border */
 .section-row .card { isolation: isolate; }
 
+/* ============================================================ */
+/* Iteration 3 — Swipe flashcards, speak wave, animated ring     */
+/* ============================================================ */
+
+/* Flashcard drag transforms (use CSS vars updated from JS) */
+.flashcard {
+  --drag-x: 0px;
+  --drag-y: 0px;
+  --drag-rot: 0deg;
+  position: relative;
+}
+.flashcard .flashcard-inner {
+  transform: translate3d(var(--drag-x), var(--drag-y), 0) rotateZ(var(--drag-rot));
+  transition: transform .35s var(--ease-spring);
+  cursor: grab;
+}
+.flashcard.is-flipped .flashcard-inner {
+  transform: translate3d(var(--drag-x), var(--drag-y), 0) rotateY(180deg) rotateZ(calc(var(--drag-rot) * -1));
+}
+.flashcard.is-dragging .flashcard-inner {
+  transition: transform .06s linear;
+  cursor: grabbing;
+}
+
+/* Swipe cues — labels that fade in based on drag direction */
+.fc-swipe-cue {
+  position: absolute;
+  top: var(--sp-5);
+  padding: 6px 14px;
+  border-radius: var(--r-pill);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(-8px) scale(.9);
+  transition: opacity .25s var(--ease), transform .25s var(--ease-spring);
+  pointer-events: none;
+  z-index: 2;
+  border: 2px solid;
+  background: color-mix(in oklab, var(--bg-elev) 70%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.cue-hard { left: var(--sp-5); color: hsl(0 80% 60%); border-color: hsl(0 80% 60% / .8); }
+.cue-easy { right: var(--sp-5); color: var(--accent);  border-color: color-mix(in oklab, var(--accent) 80%, transparent); }
+.cue-med  { left: 50%; transform: translateX(-50%) translateY(-8px) scale(.9); color: var(--warm); border-color: color-mix(in oklab, var(--warm) 80%, transparent); }
+.flashcard.drag-left  .cue-hard { opacity: 1; transform: translateY(0) scale(1); }
+.flashcard.drag-right .cue-easy { opacity: 1; transform: translateY(0) scale(1); }
+.flashcard.drag-up    .cue-med  { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+
+/* Fly-off animations after a successful swipe */
+.flashcard.is-flying-right .flashcard-inner {
+  transition: transform .35s var(--ease);
+  transform: translate3d(140vw, 60px, 0) rotateZ(28deg);
+}
+.flashcard.is-flying-left .flashcard-inner {
+  transition: transform .35s var(--ease);
+  transform: translate3d(-140vw, 60px, 0) rotateZ(-28deg);
+}
+.flashcard.is-flying-up .flashcard-inner {
+  transition: transform .35s var(--ease);
+  transform: translate3d(0, -120vh, 0) scale(.7);
+}
+
+/* Speak button with animated wave bars */
+.fc-speak {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  position: relative;
+}
+.fc-speak .speak-wave {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  height: 16px;
+  opacity: 0;
+  transform: scaleX(.4);
+  transform-origin: left;
+  transition: opacity .2s var(--ease), transform .2s var(--ease-spring);
+}
+.fc-speak .speak-wave i {
+  width: 3px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 2px;
+  animation: speakWave 1s var(--ease) infinite;
+}
+.fc-speak .speak-wave i:nth-child(1) { animation-delay: 0s; }
+.fc-speak .speak-wave i:nth-child(2) { animation-delay: .1s; }
+.fc-speak .speak-wave i:nth-child(3) { animation-delay: .2s; }
+.fc-speak .speak-wave i:nth-child(4) { animation-delay: .15s; }
+.fc-speak .speak-wave i:nth-child(5) { animation-delay: .05s; }
+@keyframes speakWave {
+  0%, 100% { height: 4px; }
+  50%      { height: 14px; }
+}
+html.is-speaking .fc-speak .speak-wave {
+  opacity: 1;
+  transform: scaleX(1);
+}
+html.is-speaking .fc-speak .speak-icon {
+  animation: speakIconPulse 1s var(--ease) infinite;
+}
+@keyframes speakIconPulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.18); }
+}
+
+/* Highlight the active expression while it's being spoken */
+html.is-speaking .is-speakable {
+  text-shadow: 0 0 24px color-mix(in oklab, var(--brand) 50%, transparent);
+  animation: speakGlow 1.1s var(--ease) infinite alternate;
+}
+@keyframes speakGlow {
+  from { letter-spacing: -0.02em; }
+  to   { letter-spacing: 0; }
+}
+
+/* Quiz: shake on wrong, pulse on correct */
+@keyframes shakeX {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-10px); }
+  40%      { transform: translateX(10px); }
+  60%      { transform: translateX(-7px); }
+  80%      { transform: translateX(5px); }
+}
+.is-shake { animation: shakeX .55s var(--ease); }
+
+@keyframes pulseCorrect {
+  0%   { box-shadow: 0 0 0 0 color-mix(in oklab, var(--accent) 60%, transparent); }
+  100% { box-shadow: 0 0 0 24px color-mix(in oklab, var(--accent) 0%, transparent); }
+}
+.is-pulse-correct .quiz-question {
+  animation: pulseCorrect .8s var(--ease);
+}
+
+/* Quiz options — modernised */
+.quiz-option {
+  --delay: 0ms;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-elev) 92%, transparent),
+      color-mix(in oklab, var(--bg-elev) 80%, transparent));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    transform var(--t-fast) var(--ease-spring),
+    border-color var(--t-fast) var(--ease),
+    background var(--t-med) var(--ease);
+}
+.quiz-option[data-reveal] {
+  transition-delay: var(--delay);
+}
+.quiz-option:hover:not(:disabled) {
+  border-color: var(--brand);
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--brand) 8%, var(--bg-elev)),
+      color-mix(in oklab, var(--pink) 5%, var(--bg-elev)));
+  transform: translateY(-2px) scale(1.005);
+  box-shadow: var(--shadow-md);
+}
+.quiz-option .qo-letter {
+  background: linear-gradient(135deg, var(--bg-soft), color-mix(in oklab, var(--brand) 12%, var(--bg-soft)));
+  transition: transform var(--t-fast) var(--ease-spring), background var(--t-fast) var(--ease);
+}
+.quiz-option:hover:not(:disabled) .qo-letter {
+  transform: scale(1.1) rotate(-6deg);
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+}
+.qo-icon {
+  margin-left: auto;
+  opacity: 0;
+  transform: scale(.6);
+  transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease-spring);
+}
+.qo-icon.ok { color: var(--accent); }
+.qo-icon.no { color: hsl(0 80% 60%); }
+.quiz-option.is-correct .qo-icon.ok { opacity: 1; transform: scale(1.1); }
+.quiz-option.is-wrong   .qo-icon.no { opacity: 1; transform: scale(1.1); }
+
+.quiz-option.is-correct {
+  animation: optionPop .4s var(--ease-spring);
+}
+.quiz-option.is-wrong {
+  animation: optionShake .5s var(--ease);
+}
+@keyframes optionPop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+@keyframes optionShake {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-6px); }
+  75%      { transform: translateX(6px); }
+}
+
+/* Quiz progress glow */
+.qb-progress { position: relative; }
+.qb-progress-glow {
+  position: absolute;
+  top: 50%;
+  width: 18px; height: 18px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 50%;
+  background: hsl(var(--brand-h) var(--brand-s) 60%);
+  filter: blur(6px);
+  opacity: .85;
+  pointer-events: none;
+  transition: left var(--t-med) var(--ease);
+}
+
+/* Score ring — animated stroke draw */
+.score-ring .score-ring-fg {
+  --ring-len: 0;
+  --ring-tot: 0;
+  transition: stroke-dashoffset 1.1s var(--ease-spring);
+}
+.score-ring .score-num {
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(135deg, var(--brand), var(--pink), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 4px 12px color-mix(in oklab, var(--brand) 30%, transparent));
+}
+
+/* Quiz result celebrate emoji bounce */
+.celebrate-emoji {
+  font-size: 4rem;
+  margin-bottom: 12px;
+  display: inline-block;
+  animation: celebrateBounce 1.4s var(--ease-spring) both;
+}
+@keyframes celebrateBounce {
+  0%   { transform: scale(.2) rotate(-20deg); opacity: 0; }
+  60%  { transform: scale(1.15) rotate(8deg);  opacity: 1; }
+  80%  { transform: scale(.95) rotate(-3deg); }
+  100% { transform: scale(1)   rotate(0);     }
+}
+
+/* Quiz result card tones */
+.quiz-result[data-tone="win"] {
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--accent) 12%, var(--bg-elev)),
+      var(--bg-elev));
+  box-shadow:
+    var(--shadow-lg),
+    0 30px 60px color-mix(in oklab, var(--accent) 25%, transparent);
+}
+.quiz-result[data-tone="good"] {
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--warm) 10%, var(--bg-elev)),
+      var(--bg-elev));
+}
+.quiz-result[data-tone="try"] {
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--brand) 10%, var(--bg-elev)),
+      var(--bg-elev));
+}
+
+/* Flashcard front/back refined gradient and inner glow */
+.flashcard-face.front {
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--bg-elev) 95%, transparent),
+      color-mix(in oklab, var(--bg-soft) 95%, transparent));
+  box-shadow:
+    var(--shadow-lg),
+    inset 0 1px 0 rgba(255,255,255,.15);
+}
+.flashcard-face.front::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 30% 0%, color-mix(in oklab, var(--brand) 18%, transparent), transparent 50%),
+    radial-gradient(circle at 100% 100%, color-mix(in oklab, var(--pink) 18%, transparent), transparent 50%);
+  pointer-events: none;
+  opacity: .9;
+}
+.flashcard .fc-expr {
+  background: linear-gradient(135deg, var(--text), color-mix(in oklab, var(--brand) 40%, var(--text)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.flashcard-face.back .fc-hd {
+  font-family: var(--font-display);
+}
+.flashcard-face.back::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 0%, rgba(255,255,255,.18), transparent 50%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Modernise rating buttons with proper gradients */
+.fc-rate {
+  transition:
+    background var(--t-fast) var(--ease),
+    color var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease),
+    transform var(--t-fast) var(--ease-spring);
+}
+.fc-rate:hover { transform: translateY(-2px); }
+.fc-rate.hard:hover { background: linear-gradient(135deg, hsl(0 80% 60%), hsl(345 80% 60%)); }
+.fc-rate.med:hover  { background: linear-gradient(135deg, var(--warm), hsl(38 90% 58%)); }
+.fc-rate.easy:hover { background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+
+

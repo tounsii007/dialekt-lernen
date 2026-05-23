@@ -8,6 +8,7 @@ import { renderQuizSetup } from './quiz/setup.js';
 import { buildQuestion } from './quiz/question-builder.js';
 import { renderQuizQuestion } from './quiz/question.js';
 import { renderQuizResult } from './quiz/result.js';
+import { confettiBurst } from '../util/motion.js';
 
 export function renderQuiz(root) {
   root.innerHTML = '';
@@ -72,19 +73,29 @@ function answer(btn, chosen, correct, optsEl) {
   const correctBtn = Array.from(optsEl.querySelectorAll('.quiz-option')).find(b =>
     b.textContent.includes(correct)
   );
+  const stage = document.querySelector('.quiz-stage');
   if (chosen === correct) {
     btn.classList.add('is-correct');
+    confettiBurst(btn, { count: 70 });
+    if (stage) {
+      stage.classList.add('is-pulse-correct');
+      setTimeout(() => stage.classList.remove('is-pulse-correct'), 800);
+    }
     quiz.score++;
     quiz.history.push({ correct: true });
   } else {
     btn.classList.add('is-wrong');
     if (correctBtn) correctBtn.classList.add('is-correct');
+    if (stage) {
+      stage.classList.add('is-shake');
+      setTimeout(() => stage.classList.remove('is-shake'), 600);
+    }
     quiz.history.push({ correct: false });
   }
   setTimeout(() => {
     quiz.idx++;
     rerender();
-  }, 1000);
+  }, 1100);
 }
 
 function rerender() {
