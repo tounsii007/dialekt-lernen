@@ -10,5 +10,7 @@ export { parseHash, go } from './util/route.js';
 export { toast } from './util/toast.js';
 export {
   observeReveals, observeCounters, animateCounter,
-  initSpotlight, initScrollProgress, confettiBurst
+  initSpotlight, initScrollProgress, confettiBurst,
+  initTilt, initMagnetic, initParallax, initPointerParallax,
+  registerParallax
 } from './util/motion.js';

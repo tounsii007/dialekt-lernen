@@ -2,6 +2,7 @@ import { el, go } from '../util.js';
 import { getFavoriten, getLernStats, getQuizGenauigkeit, getStreak, getQuizHistory } from '../store.js';
 import { getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
+import { icon } from '../util/icons.js';
 
 export function renderFavoriten(root) {
   root.innerHTML = '';
@@ -21,30 +22,30 @@ export function renderFavoriten(root) {
   const favs = getFavoriten();
   const history = getQuizHistory();
 
-  view.appendChild(el('div', { class: 'stat-grid' },
-    el('div', { class: 'stat-card' },
-      el('div', { class: 'stat-card-icon' }, el('span', { html: '✓' })),
-      el('div', { class: 'stat-card-value' }, String(stats.gelernt)),
+  view.appendChild(el('div', { class: 'stat-grid', dataset: { reveal: '' } },
+    el('div', { class: 'stat-card', dataset: { spotlight: '' } },
+      el('div', { class: 'stat-card-icon' }, icon('target', { size: 22 })),
+      el('div', { class: 'stat-card-value', dataset: { count: String(stats.gelernt) } }, String(stats.gelernt)),
       el('div', { class: 'stat-card-label' }, 'Ausdrücke gelernt')
     ),
-    el('div', { class: 'stat-card' },
-      el('div', { class: 'stat-card-icon' }, el('span', { html: '📚' })),
-      el('div', { class: 'stat-card-value' }, String(stats.inArbeit)),
+    el('div', { class: 'stat-card', dataset: { spotlight: '' } },
+      el('div', { class: 'stat-card-icon' }, icon('book', { size: 22 })),
+      el('div', { class: 'stat-card-value', dataset: { count: String(stats.inArbeit) } }, String(stats.inArbeit)),
       el('div', { class: 'stat-card-label' }, 'In Arbeit')
     ),
-    el('div', { class: 'stat-card' },
-      el('div', { class: 'stat-card-icon' }, el('span', { html: '🎯' })),
-      el('div', { class: 'stat-card-value' }, acc + '%'),
+    el('div', { class: 'stat-card', dataset: { spotlight: '' } },
+      el('div', { class: 'stat-card-icon' }, icon('zap', { size: 22 })),
+      el('div', { class: 'stat-card-value', dataset: { count: String(acc), suffix: '%' } }, acc + '%'),
       el('div', { class: 'stat-card-label' }, 'Quiz-Genauigkeit')
     ),
-    el('div', { class: 'stat-card' },
-      el('div', { class: 'stat-card-icon' }, el('span', { html: '🔥' })),
-      el('div', { class: 'stat-card-value' }, String(streak)),
+    el('div', { class: 'stat-card', dataset: { spotlight: '' } },
+      el('div', { class: 'stat-card-icon' }, icon('flame', { size: 22 })),
+      el('div', { class: 'stat-card-value', dataset: { count: String(streak) } }, String(streak)),
       el('div', { class: 'stat-card-label' }, 'Tage in Folge')
     ),
-    el('div', { class: 'stat-card' },
-      el('div', { class: 'stat-card-icon' }, el('span', { html: '♥' })),
-      el('div', { class: 'stat-card-value' }, String(favs.length)),
+    el('div', { class: 'stat-card', dataset: { spotlight: '' } },
+      el('div', { class: 'stat-card-icon' }, icon('heart', { size: 22 })),
+      el('div', { class: 'stat-card-value', dataset: { count: String(favs.length) } }, String(favs.length)),
       el('div', { class: 'stat-card-label' }, 'Favoriten')
     )
   ));

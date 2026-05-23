@@ -2,7 +2,10 @@
 // Wertet den Location-Hash aus und ruft die passende View-Render-Funktion auf.
 
 import { $, $$, parseHash } from './util.js';
-import { observeReveals, observeCounters } from './util/motion.js';
+import {
+  observeReveals, observeCounters,
+  initTilt, initMagnetic, initPointerParallax, initParallax
+} from './util/motion.js';
 import { renderHome } from './views/home.js';
 import { renderEntdecken } from './views/entdecken.js';
 import { renderDialektDetail } from './views/dialektDetail.js';
@@ -41,11 +44,14 @@ function renderRoute(app, route, segs, params) {
 
 function doRender(app, route, segs, params) {
   renderRoute(app, route, segs, params);
-  // Wire scroll-driven reveals + counters for freshly rendered nodes
-  requestAnimationFrame(() => {
-    observeReveals(app);
-    observeCounters(app);
-  });
+  // Wire scroll-driven reveals + counters + interactions for freshly rendered nodes.
+  // Run synchronously to avoid relying on rAF (some throttled environments skip it).
+  observeReveals(app);
+  observeCounters(app);
+  initTilt(app);
+  initMagnetic(app);
+  initPointerParallax(app);
+  initParallax(app);
 }
 
 export function router() {

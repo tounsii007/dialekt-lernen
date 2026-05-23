@@ -2080,3 +2080,284 @@ a { color: inherit; text-decoration: none; }
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: none; }
 }
+
+/* ============================================================ */
+/* Iteration 2 — 3D tilt, magnetic, parallax, animated icons      */
+/* ============================================================ */
+
+/* 3D tilt — opt-in via [data-tilt]. Layered over hover scale. */
+[data-tilt] {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  transform: perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(0);
+  transform-style: preserve-3d;
+  transition: transform .25s var(--ease);
+}
+[data-tilt]:hover {
+  transition: transform .08s linear;
+}
+[data-tilt] > * { transform: translateZ(0); }
+
+/* Dialect cards: layered depth on tilt */
+.dialekt-card[data-tilt] .dc-flag {
+  transform: translateZ(40px);
+  transition: transform var(--t-med) var(--ease-spring);
+}
+.dialekt-card[data-tilt]:hover .dc-flag {
+  transform: translateZ(60px) scale(1.18) rotate(-6deg);
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+.dialekt-card[data-tilt] .dc-name { transform: translateZ(28px); }
+.dialekt-card[data-tilt] .dc-region { transform: translateZ(18px); }
+.dialekt-card[data-tilt] .dc-desc { transform: translateZ(12px); }
+.dialekt-card[data-tilt] .dc-foot { transform: translateZ(20px); }
+.dialekt-card[data-tilt] .dc-arrow { transform: translateZ(32px); }
+
+/* Magnetic buttons — apply pointer-tracked offset */
+[data-magnetic] {
+  --mag-x: 0px;
+  --mag-y: 0px;
+  transform: translate3d(var(--mag-x), var(--mag-y), 0);
+  transition: transform .25s var(--ease-spring);
+}
+[data-magnetic]:hover {
+  transition: transform .12s var(--ease);
+}
+/* Combine magnetic with existing :hover translate where possible */
+.btn-primary[data-magnetic]:hover {
+  transform: translate3d(var(--mag-x), calc(var(--mag-y) - 2px), 0);
+}
+
+/* Pointer parallax — hero preview */
+[data-pp-depth] {
+  --pp-x: 0px;
+  --pp-y: 0px;
+  --pp-rx: 0deg;
+  --pp-ry: 0deg;
+  transform-style: preserve-3d;
+  transition: transform .4s var(--ease);
+}
+[data-pointer-parallax] {
+  perspective: 1400px;
+}
+[data-pointer-parallax]:hover [data-pp-depth] {
+  transition: transform .12s var(--ease);
+}
+[data-pp-depth].preview-card {
+  animation-play-state: paused;
+  transform:
+    translate3d(var(--pp-x), var(--pp-y), 0)
+    rotateX(var(--pp-rx)) rotateY(var(--pp-ry))
+    rotate(var(--card-rot, 0deg));
+}
+.preview-card:nth-child(1) { --card-rot: 3deg; }
+.preview-card:nth-child(2) { --card-rot: -2deg; }
+.preview-card:nth-child(3) { --card-rot: 2deg; }
+
+/* Scroll parallax — generic */
+[data-parallax] {
+  --plx-y: 0px;
+  transform: translate3d(0, var(--plx-y), 0);
+  will-change: transform;
+}
+
+/* Feature list — animated stroke SVG icons */
+.feature-list .fi {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--brand) 18%, transparent),
+    color-mix(in oklab, var(--pink) 12%, transparent));
+  border: 1px solid color-mix(in oklab, var(--brand) 25%, transparent);
+  color: var(--brand);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-fast) var(--ease-spring);
+}
+.feature-list li:hover .fi {
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow: 0 6px 18px color-mix(in oklab, var(--brand) 30%, transparent);
+}
+.feature-list .fi svg {
+  width: 20px; height: 20px;
+}
+.feature-list .fi svg path,
+.feature-list .fi svg circle,
+.feature-list .fi svg polyline,
+.feature-list .fi svg line {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 60;
+  animation: drawStroke 1.2s var(--ease) forwards;
+}
+.feature-list .fi:nth-of-type(2) svg * { animation-delay: .1s; }
+.feature-list .fi:nth-of-type(3) svg * { animation-delay: .2s; }
+@keyframes drawStroke {
+  to { stroke-dashoffset: 0; }
+}
+.feature-list li {
+  position: relative;
+  padding-left: 2px;
+}
+.feature-list li::before {
+  content: '';
+  position: absolute;
+  left: -10px; top: 6px; bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--brand), transparent);
+  border-radius: 2px;
+  opacity: 0;
+  transform: scaleY(.4);
+  transform-origin: top;
+  transition: opacity var(--t-fast) var(--ease), transform var(--t-med) var(--ease-spring);
+}
+.feature-list li:hover::before {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* Cards: refined hover lift with gradient border ring */
+.card {
+  position: relative;
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-elev) 92%, transparent),
+      color-mix(in oklab, var(--bg-elev) 78%, transparent));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    transform var(--t-med) var(--ease-spring),
+    box-shadow var(--t-med) var(--ease);
+}
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--brand) 35%, transparent),
+    transparent 40%,
+    color-mix(in oklab, var(--pink) 28%, transparent));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  padding: 1px;
+  opacity: 0;
+  transition: opacity var(--t-med) var(--ease);
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.card:hover::after { opacity: 1; }
+
+/* Expression cards: gradient ring on hover, scale & glow */
+.expr-card {
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-elev) 92%, transparent),
+      color-mix(in oklab, var(--bg-elev) 80%, transparent));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+}
+.expr-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  opacity: 0;
+  z-index: -1;
+  transition: opacity var(--t-med) var(--ease);
+}
+.expr-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow:
+    var(--shadow-lg),
+    0 18px 40px color-mix(in oklab, var(--brand) 18%, transparent);
+}
+
+/* Chip — modern pill with sliding indicator */
+.chip {
+  position: relative;
+  overflow: hidden;
+  transition:
+    color var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease),
+    transform var(--t-fast) var(--ease);
+}
+.chip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  transform: translateY(100%);
+  transition: transform var(--t-med) var(--ease-spring);
+  z-index: -1;
+}
+.chip.is-active::before { transform: translateY(0); }
+.chip:hover:not(.is-active) {
+  transform: translateY(-1px);
+}
+
+/* Expression action buttons — animated heart pulse */
+.expr-action {
+  position: relative;
+  overflow: visible;
+}
+.expr-action.is-active span {
+  animation: heartPulse .5s var(--ease-spring);
+}
+@keyframes heartPulse {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.35); }
+  70%  { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+/* Detail head — gradient halo + parallax */
+.detail-head {
+  isolation: isolate;
+}
+.detail-head::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 0%, rgba(255,255,255,.25), transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(0,0,0,.25), transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+.detail-head > * { position: relative; z-index: 1; }
+
+/* Search input — animated focus glow */
+.expr-search input,
+input[type="search"]:not(#searchInput) {
+  background: color-mix(in oklab, var(--bg-elev) 85%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition:
+    border-color var(--t-fast) var(--ease),
+    box-shadow var(--t-fast) var(--ease),
+    background var(--t-med) var(--ease);
+}
+.expr-search input:focus {
+  background: var(--bg-elev);
+  box-shadow:
+    0 0 0 4px color-mix(in oklab, var(--brand) 20%, transparent),
+    0 12px 28px color-mix(in oklab, var(--brand) 25%, transparent);
+}
+
+/* Daily-action buttons — micro hover */
+.daily-action {
+  transition: transform var(--t-fast) var(--ease-spring), background var(--t-fast) var(--ease);
+}
+.daily-action:hover {
+  transform: translateY(-2px) scale(1.06);
+}
+
+/* Section row cards: aligned with new gradient border */
+.section-row .card { isolation: isolate; }
+

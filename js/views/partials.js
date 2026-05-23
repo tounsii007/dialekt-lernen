@@ -6,7 +6,7 @@ export function renderDialektCard(d) {
   return el('button', {
     class: 'dialekt-card',
     style: { '--dc': d.farbe },
-    dataset: { spotlight: '' },
+    dataset: { spotlight: '', tilt: '', tiltMax: '6' },
     onClick: () => go(`#/dialekt/${d.id}`)
   },
     el('span', { class: 'dc-flag' }, d.flag),

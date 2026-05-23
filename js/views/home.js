@@ -4,6 +4,7 @@ import { KATEGORIEN } from '../../data/kategorien.js';
 import { getStreak, getLernStats, getDailySeed, toggleFavorit, isFavorit } from '../store.js';
 import { pickSeeded } from '../util.js';
 import { renderDialektCard } from './partials.js';
+import { icon } from '../util/icons.js';
 
 export function renderHome(root) {
   root.innerHTML = '';
@@ -23,11 +24,11 @@ export function renderHome(root) {
       el('h1', { html: 'Lerne Dialekte aus <span class="grad">ganz Deutschland</span>.' }),
       el('p', {}, 'Vom Frankfurter „Ei guude" bis zum Wiener „Schmäh": Tauche ein in regionale Ausdrücke, lerne mit Karteikarten und teste dich im Quiz — alles erklärt auf Hochdeutsch.'),
       el('div', { class: 'hero-cta' },
-        el('button', { class: 'btn btn-primary', onClick: () => go('#/entdecken') },
+        el('button', { class: 'btn btn-primary', dataset: { magnetic: '16' }, onClick: () => go('#/entdecken') },
           'Dialekte entdecken',
           el('span', { html: ' →' })
         ),
-        el('button', { class: 'btn btn-secondary', onClick: () => go('#/lernen') },
+        el('button', { class: 'btn btn-secondary', dataset: { magnetic: '10' }, onClick: () => go('#/lernen') },
           'Karteikarten lernen'
         ),
         el('button', { class: 'btn btn-ghost', onClick: () => go('#/quiz') },
@@ -75,26 +76,26 @@ export function renderHome(root) {
   sec.appendChild(grid);
   view.appendChild(sec);
 
-  // Features section
+  // Features section — animated stroke icons
   view.appendChild(el('section', { class: 'section section-row', dataset: { reveal: '' } },
     el('div', { class: 'card', dataset: { spotlight: '' } },
       el('div', { class: 'card-title' }, 'Was kannst du hier tun?'),
       el('ul', { class: 'feature-list' },
-        el('li', {}, el('span', { class: 'fi' }, '📖'), el('div', {}, el('b', {}, 'Ausdrücke entdecken — '), 'Browse durch hunderte Wörter und Redewendungen aus allen Regionen.')),
-        el('li', {}, el('span', { class: 'fi' }, '🃏'), el('div', {}, el('b', {}, 'Karteikarten — '), 'Lerne wie mit Anki: vorne der Dialekt, hinten die Bedeutung auf Hochdeutsch.')),
-        el('li', {}, el('span', { class: 'fi' }, '🎯'), el('div', {}, el('b', {}, 'Quiz — '), 'Teste dein Wissen mit Multiple-Choice-Fragen.')),
-        el('li', {}, el('span', { class: 'fi' }, '🔊'), el('div', {}, el('b', {}, 'Aussprache — '), 'Höre dir Ausdrücke per Sprachsynthese vor.')),
-        el('li', {}, el('span', { class: 'fi' }, '⭐'), el('div', {}, el('b', {}, 'Favoriten — '), 'Speichere deine Lieblingsausdrücke für später.'))
+        el('li', {}, el('span', { class: 'fi' }, icon('book')),    el('div', {}, el('b', {}, 'Ausdrücke entdecken — '), 'Browse durch hunderte Wörter und Redewendungen aus allen Regionen.')),
+        el('li', {}, el('span', { class: 'fi' }, icon('cards')),   el('div', {}, el('b', {}, 'Karteikarten — '), 'Lerne wie mit Anki: vorne der Dialekt, hinten die Bedeutung auf Hochdeutsch.')),
+        el('li', {}, el('span', { class: 'fi' }, icon('target')),  el('div', {}, el('b', {}, 'Quiz — '), 'Teste dein Wissen mit Multiple-Choice-Fragen.')),
+        el('li', {}, el('span', { class: 'fi' }, icon('speaker')), el('div', {}, el('b', {}, 'Aussprache — '), 'Höre dir Ausdrücke per Sprachsynthese vor.')),
+        el('li', {}, el('span', { class: 'fi' }, icon('heart')),   el('div', {}, el('b', {}, 'Favoriten — '), 'Speichere deine Lieblingsausdrücke für später.'))
       )
     ),
     el('div', { class: 'card', dataset: { spotlight: '' } },
       el('div', { class: 'card-title' }, 'Tastatur-Shortcuts'),
       el('ul', { class: 'feature-list' },
-        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'S '), '— Suche öffnen')),
-        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'T '), '— Hell/Dunkel umschalten')),
-        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, '← / → '), '— In Karteikarten navigieren')),
-        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, 'Leertaste '), '— Karteikarte umdrehen')),
-        el('li', {}, el('span', { class: 'fi' }, '⌘'), el('div', {}, el('b', {}, '1/2/3 '), '— Im Quiz auswählen'))
+        el('li', {}, el('span', { class: 'fi' }, icon('search')),   el('div', {}, el('b', {}, 'S '), '— Suche öffnen')),
+        el('li', {}, el('span', { class: 'fi' }, icon('sparkles')), el('div', {}, el('b', {}, 'T '), '— Hell/Dunkel umschalten')),
+        el('li', {}, el('span', { class: 'fi' }, icon('arrow')),    el('div', {}, el('b', {}, '← / → '), '— In Karteikarten navigieren')),
+        el('li', {}, el('span', { class: 'fi' }, icon('keyboard')), el('div', {}, el('b', {}, 'Leertaste '), '— Karteikarte umdrehen')),
+        el('li', {}, el('span', { class: 'fi' }, icon('command')),  el('div', {}, el('b', {}, '1/2/3 '), '— Im Quiz auswählen'))
       )
     )
   ));
@@ -104,12 +105,12 @@ export function renderHome(root) {
 
 function renderHeroPreview() {
   const samples = [
-    { dialekt: 'Hessisch',  farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!' },
-    { dialekt: 'Berlinisch', farbe: '#f4a261', ausdruck: 'Icke',       meaning: 'Ich' },
-    { dialekt: 'Bayerisch',  farbe: '#0077b6', ausdruck: 'Servus',     meaning: 'Hallo / Tschüss' }
+    { dialekt: 'Hessisch',  farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!',          depth: '1.4' },
+    { dialekt: 'Berlinisch', farbe: '#f4a261', ausdruck: 'Icke',       meaning: 'Ich',             depth: '1.0' },
+    { dialekt: 'Bayerisch',  farbe: '#0077b6', ausdruck: 'Servus',     meaning: 'Hallo / Tschüss', depth: '1.7' }
   ];
-  return el('div', { class: 'hero-preview' },
-    ...samples.map(s => el('div', { class: 'preview-card' },
+  return el('div', { class: 'hero-preview', dataset: { pointerParallax: '' } },
+    ...samples.map(s => el('div', { class: 'preview-card', dataset: { ppDepth: s.depth } },
       el('span', { class: 'dialect-tag', style: { background: s.farbe + '22', color: s.farbe } }, s.dialekt),
       el('div', { class: 'expr' }, s.ausdruck),
       el('div', { class: 'meaning' }, s.meaning)

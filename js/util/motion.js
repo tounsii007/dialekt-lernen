@@ -117,6 +117,107 @@ export function initScrollProgress() {
   window.addEventListener('resize', set, { passive: true });
 }
 
+// 3D tilt — applies rotateX/rotateY based on pointer position.
+// Skipped on coarse pointers (touch) and reduced-motion.
+const isCoarse = () => window.matchMedia?.('(pointer: coarse)').matches;
+export function initTilt(root = document) {
+  if (prefersReduced() || isCoarse()) return;
+  root.querySelectorAll('[data-tilt]:not([data-tilt-bound])').forEach((el) => {
+    el.dataset.tiltBound = '1';
+    const max = parseFloat(el.dataset.tiltMax) || 8;
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      const nx = (e.clientX - r.left) / r.width  - 0.5;
+      const ny = (e.clientY - r.top)  / r.height - 0.5;
+      el.style.setProperty('--mx', ((nx + 0.5) * 100).toFixed(1) + '%');
+      el.style.setProperty('--my', ((ny + 0.5) * 100).toFixed(1) + '%');
+      el.style.setProperty('--tilt-x', (-ny * max).toFixed(2) + 'deg');
+      el.style.setProperty('--tilt-y', ( nx * max).toFixed(2) + 'deg');
+    }, { passive: true });
+    el.addEventListener('pointerleave', () => {
+      el.style.setProperty('--tilt-x', '0deg');
+      el.style.setProperty('--tilt-y', '0deg');
+    });
+  });
+}
+
+// Magnetic effect — element drifts subtly toward cursor when nearby.
+export function initMagnetic(root = document) {
+  if (prefersReduced() || isCoarse()) return;
+  root.querySelectorAll('[data-magnetic]:not([data-magnetic-bound])').forEach((el) => {
+    el.dataset.magneticBound = '1';
+    const strength = parseFloat(el.dataset.magnetic) || 14;
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      const cy = r.top  + r.height / 2;
+      const tx = ((e.clientX - cx) / r.width)  * strength;
+      const ty = ((e.clientY - cy) / r.height) * strength;
+      el.style.setProperty('--mag-x', tx.toFixed(1) + 'px');
+      el.style.setProperty('--mag-y', ty.toFixed(1) + 'px');
+    }, { passive: true });
+    el.addEventListener('pointerleave', () => {
+      el.style.setProperty('--mag-x', '0px');
+      el.style.setProperty('--mag-y', '0px');
+    });
+  });
+}
+
+// Parallax: shift elements by --plx multiplier relative to scroll.
+let parallaxInit = false;
+const parallaxEls = new Set();
+export function registerParallax(el) {
+  if (prefersReduced() || !el) return;
+  parallaxEls.add(el);
+  if (!parallaxInit) {
+    parallaxInit = true;
+    const update = () => {
+      const y = window.scrollY;
+      parallaxEls.forEach((node) => {
+        if (!node.isConnected) { parallaxEls.delete(node); return; }
+        const s = parseFloat(node.dataset.parallax) || 0.15;
+        node.style.setProperty('--plx-y', (y * s).toFixed(1) + 'px');
+      });
+    };
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+  }
+}
+export function initParallax(root = document) {
+  root.querySelectorAll('[data-parallax]').forEach((el) => registerParallax(el));
+}
+
+// Pointer parallax for hero preview — listens once, updates registered groups.
+let pointerParallaxInit = false;
+export function initPointerParallax(root = document) {
+  if (prefersReduced() || isCoarse()) return;
+  const containers = root.querySelectorAll('[data-pointer-parallax]:not([data-pp-bound])');
+  containers.forEach((c) => {
+    c.dataset.ppBound = '1';
+    const items = c.querySelectorAll('[data-pp-depth]');
+    c.addEventListener('pointermove', (e) => {
+      const r = c.getBoundingClientRect();
+      const nx = (e.clientX - r.left) / r.width  - 0.5;
+      const ny = (e.clientY - r.top)  / r.height - 0.5;
+      items.forEach((it) => {
+        const depth = parseFloat(it.dataset.ppDepth) || 1;
+        it.style.setProperty('--pp-x', (nx * depth * 16).toFixed(1) + 'px');
+        it.style.setProperty('--pp-y', (ny * depth * 16).toFixed(1) + 'px');
+        it.style.setProperty('--pp-rx', (-ny * depth * 4).toFixed(2) + 'deg');
+        it.style.setProperty('--pp-ry', ( nx * depth * 4).toFixed(2) + 'deg');
+      });
+    }, { passive: true });
+    c.addEventListener('pointerleave', () => {
+      items.forEach((it) => {
+        it.style.setProperty('--pp-x', '0px');
+        it.style.setProperty('--pp-y', '0px');
+        it.style.setProperty('--pp-rx', '0deg');
+        it.style.setProperty('--pp-ry', '0deg');
+      });
+    });
+  });
+}
+
 // Confetti burst (for celebrations). Lightweight, no deps.
 export function confettiBurst(originEl, { count = 80, colors } = {}) {
   if (prefersReduced()) return;
