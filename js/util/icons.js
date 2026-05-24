@@ -41,6 +41,51 @@ export function icon(name, opts) {
   return fn ? fn(opts) : svg('<circle cx="12" cy="12" r="9"/>', opts);
 }
 
+// Sparkline as an SVG path. Returns an SVG element with smooth line + gradient area fill.
+export function sparkline(values, { width = 220, height = 56, color = 'currentColor', max } = {}) {
+  const n = values.length || 1;
+  const hi = max ?? Math.max(1, ...values);
+  const pad = 4;
+  const innerW = width - pad * 2;
+  const innerH = height - pad * 2;
+  const points = values.map((v, i) => [
+    pad + (i / Math.max(1, n - 1)) * innerW,
+    pad + (1 - (v / hi)) * innerH
+  ]);
+  // Smooth path via Catmull-Rom-ish bezier
+  let line = '';
+  for (let i = 0; i < points.length; i++) {
+    const [x, y] = points[i];
+    if (i === 0) line += `M ${x.toFixed(1)} ${y.toFixed(1)}`;
+    else {
+      const [px, py] = points[i - 1];
+      const cx = (px + x) / 2;
+      line += ` C ${cx.toFixed(1)} ${py.toFixed(1)}, ${cx.toFixed(1)} ${y.toFixed(1)}, ${x.toFixed(1)} ${y.toFixed(1)}`;
+    }
+  }
+  const area = `${line} L ${(width - pad).toFixed(1)} ${(height - pad).toFixed(1)} L ${pad.toFixed(1)} ${(height - pad).toFixed(1)} Z`;
+  const id = 'spk-' + Math.random().toString(36).slice(2, 8);
+  const s = document.createElementNS(SVG_NS, 'svg');
+  s.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  s.setAttribute('width', width);
+  s.setAttribute('height', height);
+  s.classList.add('sparkline');
+  s.innerHTML = `
+    <defs>
+      <linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"  stop-color="${color}" stop-opacity=".45"/>
+        <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="${area}" fill="url(#${id})"/>
+    <path d="${line}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    ${points.map(([x, y], i) => i === points.length - 1
+      ? `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="${color}"/>`
+      : '').join('')}
+  `;
+  return s;
+}
+
 // Animated empty-state illustration. Pass one of: 'heart', 'search', 'map', 'sparkles'.
 // Returns an SVG that combines a soft blob background + a stroked shape on top.
 export function emptyIllustration(kind = 'heart') {
