@@ -46,6 +46,14 @@ function moveIndicator(nav) {
 let resizeBound = false;
 let mutationObserver = null;
 
+export function syncMobileNav() {
+  const topActive = document.querySelector('.nav-link.is-active');
+  const activeRoute = topActive?.dataset.route;
+  document.querySelectorAll('.mobile-nav-item').forEach(item => {
+    item.classList.toggle('is-active', item.dataset.route === activeRoute);
+  });
+}
+
 export function initNav() {
   const nav = $('.nav');
   if (!nav) return;

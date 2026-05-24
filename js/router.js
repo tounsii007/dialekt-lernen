@@ -7,7 +7,7 @@ import {
   observeReveals, observeCounters,
   initTilt, initMagnetic, initPointerParallax, initParallax
 } from './util/motion.js';
-import { initNav } from './nav.js';
+import { initNav, syncMobileNav } from './nav.js';
 
 // Eager: Routes, die direkt verfügbar sein müssen.
 import { renderHome } from './views/home.js';
@@ -143,6 +143,7 @@ async function doRender(app, route, segs, params) {
   initPointerParallax(app);
   initParallax(app);
   initNav();
+  syncMobileNav();
   app.setAttribute('aria-busy', 'false');
 }
 
