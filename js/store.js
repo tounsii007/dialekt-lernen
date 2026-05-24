@@ -7,6 +7,7 @@ export {
   setLernstand, getLernstand, getLernStats,
   STATUS_UNKNOWN, STATUS_HARD, STATUS_MEDIUM, STATUS_LEARNED
 } from './store/learning.js';
-export { registerStreak, getStreak } from './store/streak.js';
+export { registerStreak, getStreak, getStreakHeatmap, getActiveDays } from './store/streak.js';
 export { saveQuizResult, getQuizHistory, getQuizGenauigkeit } from './store/quiz.js';
 export { getDailySeed } from './store/daily.js';
+export { ACHIEVEMENTS, evaluateAchievements, markDialectVisited, getVisitedDialects } from './store/achievements.js';

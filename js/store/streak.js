@@ -21,7 +21,15 @@ function dayDiff(a, b) {
 
 export function registerStreak() {
   const today = todayKey();
-  if (state.streak.lastDay === today) return state.streak.count;
+  if (!state.streak.days) state.streak.days = {};
+  // Mark today as active (idempotent).
+  const wasActive = state.streak.days[today];
+  state.streak.days[today] = (state.streak.days[today] || 0) + 1;
+
+  if (state.streak.lastDay === today) {
+    if (!wasActive) persist();
+    return state.streak.count;
+  }
 
   const diff = dayDiff(state.streak.lastDay, today);
   if (diff === 1)      state.streak.count += 1;
@@ -35,4 +43,24 @@ export function registerStreak() {
 
 export function getStreak() {
   return state.streak.count || 0;
+}
+
+// Activity counts per day for last `weeks` weeks (default 16), keyed by YYYY-M-D.
+export function getStreakHeatmap(weeks = 16) {
+  const days = (state.streak && state.streak.days) || {};
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const total = weeks * 7;
+  const out = [];
+  for (let i = total - 1; i >= 0; i--) {
+    const d = new Date(today.getTime() - i * DAY_MS);
+    const key = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+    out.push({ date: new Date(d), key, count: days[key] || 0 });
+  }
+  return out;
+}
+
+// Total days the user logged in/learned (lifetime).
+export function getActiveDays() {
+  return Object.keys((state.streak && state.streak.days) || {}).length;
 }

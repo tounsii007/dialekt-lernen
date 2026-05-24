@@ -1,8 +1,12 @@
 import { el, go } from '../util.js';
-import { getFavoriten, getLernStats, getQuizGenauigkeit, getStreak, getQuizHistory } from '../store.js';
-import { getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
+import {
+  getFavoriten, getLernStats, getQuizGenauigkeit, getStreak, getQuizHistory,
+  getStreakHeatmap, getActiveDays, evaluateAchievements, getVisitedDialects
+} from '../store.js';
+import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
 import { icon } from '../util/icons.js';
+import { confettiBurst } from '../util/motion.js';
 
 export function renderFavoriten(root) {
   root.innerHTML = '';
@@ -50,6 +54,21 @@ export function renderFavoriten(root) {
     )
   ));
 
+  // Streak heatmap — GitHub-style
+  view.appendChild(renderHeatmap());
+
+  // Achievements
+  const achView = renderAchievements({
+    gelerntCount: stats.gelernt,
+    streak,
+    quizCount: history.length,
+    bestQuiz: history.reduce((m, h) => Math.max(m, Math.round((h.score / h.total) * 100)), 0),
+    visitedCount: getVisitedDialects().length,
+    totalDialects: DIALEKTE.length,
+    favCount: favs.length
+  });
+  view.appendChild(achView);
+
   // Quiz-Verlauf
   if (history.length) {
     const last5 = history.slice(0, 5);
@@ -95,4 +114,88 @@ export function renderFavoriten(root) {
   }
 
   root.appendChild(view);
+}
+
+function renderHeatmap() {
+  const days = getStreakHeatmap(16); // 16 weeks
+  const maxCount = days.reduce((m, d) => Math.max(m, d.count), 0) || 1;
+  const monthLabel = (d) => ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'][d.getMonth()];
+
+  const grid = el('div', { class: 'streak-grid' });
+  // Group into weeks (columns)
+  for (let w = 0; w < days.length / 7; w++) {
+    const col = el('div', { class: 'streak-col' });
+    for (let i = 0; i < 7; i++) {
+      const d = days[w * 7 + i];
+      if (!d) continue;
+      const lvl = d.count === 0 ? 0 : Math.min(4, Math.ceil((d.count / maxCount) * 4));
+      const cell = el('div', {
+        class: `streak-cell lvl-${lvl}`,
+        title: `${d.date.toLocaleDateString('de-DE')} — ${d.count} Aktion${d.count===1?'':'en'}`,
+        style: { '--cell-delay': `${(w * 7 + i) * 6}ms` }
+      });
+      col.appendChild(cell);
+    }
+    grid.appendChild(col);
+  }
+
+  return el('div', { class: 'card streak-card', dataset: { spotlight: '', reveal: '' } },
+    el('div', { class: 'streak-head' },
+      el('div', {},
+        el('div', { class: 'card-title' }, 'Lern-Heatmap'),
+        el('div', { class: 'lede', style: { fontSize: '.85rem' } },
+          `Letzte 16 Wochen · ${getActiveDays()} aktive Tage insgesamt`)
+      ),
+      el('div', { class: 'streak-legend' },
+        el('span', {}, 'weniger'),
+        el('span', { class: 'streak-cell lvl-0' }),
+        el('span', { class: 'streak-cell lvl-1' }),
+        el('span', { class: 'streak-cell lvl-2' }),
+        el('span', { class: 'streak-cell lvl-3' }),
+        el('span', { class: 'streak-cell lvl-4' }),
+        el('span', {}, 'mehr')
+      )
+    ),
+    grid
+  );
+}
+
+function renderAchievements(stats) {
+  const { items, justUnlocked } = evaluateAchievements(stats);
+  const unlockedCount = items.filter(i => i.unlocked).length;
+
+  const grid = el('div', { class: 'achievements-grid' });
+  items.forEach(({ def, unlocked, justUnlocked: ju }) => {
+    const card = el('div', {
+      class: 'achievement' + (unlocked ? ' is-unlocked' : ' is-locked') + (ju ? ' is-fresh' : ''),
+      title: def.desc,
+      dataset: { spotlight: '' }
+    },
+      el('div', { class: 'ach-icon' }, def.icon),
+      el('div', { class: 'ach-text' },
+        el('div', { class: 'ach-title' }, def.title),
+        el('div', { class: 'ach-desc' }, def.desc)
+      ),
+      unlocked ? el('div', { class: 'ach-check' }, icon('zap', { size: 14 })) : null
+    );
+    grid.appendChild(card);
+  });
+
+  // Celebrate any newly-unlocked achievements after a small delay.
+  if (justUnlocked.length) {
+    setTimeout(() => {
+      const first = grid.querySelector('.achievement.is-fresh');
+      if (first) confettiBurst(first, { count: 70 });
+    }, 400);
+  }
+
+  return el('section', { class: 'section', dataset: { reveal: '' } },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, 'Achievements'),
+        el('div', { class: 'lede' }, `${unlockedCount} von ${items.length} freigeschaltet`)
+      )
+    ),
+    grid
+  );
 }

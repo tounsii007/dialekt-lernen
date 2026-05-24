@@ -39,12 +39,17 @@ function withDefaults(loaded) {
     favoriten:    Array.isArray(loaded.favoriten) ? loaded.favoriten : [],
     gelernt:      loaded.gelernt      && typeof loaded.gelernt === 'object' ? loaded.gelernt : {},
     streak:       loaded.streak       && typeof loaded.streak === 'object'
-                    ? { count: 0, lastDay: null, ...loaded.streak }
-                    : { count: 0, lastDay: null },
+                    ? { count: 0, lastDay: null, days: {}, ...loaded.streak,
+                        days: (loaded.streak.days && typeof loaded.streak.days === 'object') ? loaded.streak.days : {} }
+                    : { count: 0, lastDay: null, days: {} },
     quizHistory:  Array.isArray(loaded.quizHistory) ? loaded.quizHistory : [],
     lernStats:    loaded.lernStats    && typeof loaded.lernStats === 'object'
                     ? { total: 0, korrekt: 0, ...loaded.lernStats }
-                    : { total: 0, korrekt: 0 }
+                    : { total: 0, korrekt: 0 },
+    visited:      Array.isArray(loaded.visited) ? loaded.visited : [],
+    achievements: loaded.achievements && typeof loaded.achievements === 'object'
+                    ? loaded.achievements : {},
+    onboarded:    !!loaded.onboarded
   };
 }
 

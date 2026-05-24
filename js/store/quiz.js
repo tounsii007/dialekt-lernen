@@ -1,6 +1,7 @@
 // Quiz-Historie und Genauigkeitsstatistik.
 
 import { state, persist } from './state.js';
+import { registerStreak } from './streak.js';
 
 const MAX_HISTORY = 50;
 
@@ -21,6 +22,7 @@ export function saveQuizResult(score, total, dialektId) {
   state.lernStats.total   += safeTotal;
   state.lernStats.korrekt += safeScore;
   persist();
+  registerStreak();
 }
 
 export function getQuizHistory() {

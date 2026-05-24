@@ -2,10 +2,14 @@ import { el, go, normalize } from '../util.js';
 import { getDialekt } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
+import { markDialectVisited } from '../store.js';
+import { getLernstand } from '../store/learning.js';
+import { icon } from '../util/icons.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
   const d = getDialekt(dialektId);
+  if (d) markDialectVisited(d.id);
   if (!d) {
     root.appendChild(el('div', { class: 'empty-state' },
       el('span', { class: 'emoji' }, '🚧'),
@@ -17,18 +21,51 @@ export function renderDialektDetail(root, dialektId) {
 
   const view = el('div', { class: 'view' });
 
+  // Progress ring — % gelernt
+  const totalExpr = d.ausdruecke.length;
+  let learned = 0, inProgress = 0;
+  d.ausdruecke.forEach(a => {
+    const s = getLernstand(d.id, a.id);
+    if (s >= 3) learned++;
+    else if (s > 0) inProgress++;
+  });
+  const pct = totalExpr > 0 ? Math.round((learned / totalExpr) * 100) : 0;
+  const R = 28, C = 2 * Math.PI * R;
+  const ringSvg = el('svg', {
+    width: 72, height: 72, viewBox: '0 0 72 72',
+    class: 'detail-ring',
+    html: `
+      <circle cx="36" cy="36" r="${R}" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="6"/>
+      <circle cx="36" cy="36" r="${R}" fill="none" stroke="white" stroke-width="6"
+              stroke-linecap="round" transform="rotate(-90 36 36)"
+              stroke-dasharray="${C}" stroke-dashoffset="${C - (pct/100)*C}"/>
+    `
+  });
+
   // Header
   view.appendChild(el('section', { class: 'detail-head', style: { '--dc': d.farbe, background: `linear-gradient(135deg, ${d.farbe} 0%, ${d.farbe}dd 100%)` } },
     el('button', { class: 'detail-back', onClick: () => go('#/entdecken') },
       el('span', { html: '←' }), ' Zurück'
     ),
-    el('h1', {}, `${d.flag} ${d.name}`),
-    el('div', { class: 'detail-region' }, d.region),
+    el('div', { class: 'detail-head-top' },
+      el('div', {},
+        el('h1', {}, `${d.flag} ${d.name}`),
+        el('div', { class: 'detail-region' }, d.region)
+      ),
+      el('div', { class: 'detail-progress' },
+        ringSvg,
+        el('div', { class: 'detail-progress-num' },
+          el('span', { class: 'dpn-pct' }, pct + '%'),
+          el('span', { class: 'dpn-lbl' }, 'gelernt')
+        )
+      )
+    ),
     el('div', { class: 'detail-desc' }, d.beschreibung),
     el('div', { class: 'detail-meta' },
       el('div', { class: 'detail-meta-item' }, el('b', {}, d.ausdruecke.length), 'Ausdrücke'),
+      el('div', { class: 'detail-meta-item' }, el('b', {}, learned), 'gelernt'),
+      el('div', { class: 'detail-meta-item' }, el('b', {}, inProgress), 'in Arbeit'),
       el('div', { class: 'detail-meta-item' }, el('b', {}, d.sprecher || '–'), 'Sprecher'),
-      el('div', { class: 'detail-meta-item' }, el('b', {}, d.bundesland), 'Region'),
       el('div', { class: 'detail-meta-item' },
         el('button', { class: 'link-btn', style: { color: 'white' }, onClick: () => go(`#/lernen?dialekt=${d.id}`) }, 'Mit Karten lernen →')
       )
