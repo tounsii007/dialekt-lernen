@@ -10,6 +10,7 @@ import { initRouter } from './router.js';
 import { initNav } from './nav.js';
 import { initSpotlight, initScrollProgress, initMagnetic, initTilt } from './util/motion.js';
 import { startOnboarding, resetOnboarding } from './util/onboarding.js';
+import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const ADD_DIALECT_HINT_TEXT =
@@ -28,12 +29,35 @@ function initRestartTour() {
   });
 }
 
+function initSoundToggle() {
+  const btn = $('#soundToggle');
+  if (!btn) return;
+  const sync = () => btn.classList.toggle('is-off', !isSoundEnabled());
+  sync();
+  btn.addEventListener('click', () => {
+    const next = !isSoundEnabled();
+    setSoundEnabled(next);
+    sync();
+    if (next) sfx.toggle();
+    toast(next ? 'Sounds an 🔊' : 'Sounds aus 🔇', 'info', 1200);
+  });
+  // Tastatur: M zum Stummschalten
+  document.addEventListener('keydown', (e) => {
+    if (e.key.toLowerCase() === 'm' && !e.metaKey && !e.ctrlKey && !e.altKey) {
+      const tag = (e.target?.tagName || '').toLowerCase();
+      if (tag === 'input' || tag === 'textarea' || e.target?.isContentEditable) return;
+      btn.click();
+    }
+  });
+}
+
 function init() {
   initTheme();
   initSearch();
   initShortcuts();
   initAddDialectHint();
   initRestartTour();
+  initSoundToggle();
   registerStreak();
   initScrollProgress();
   initSpotlight();

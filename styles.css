@@ -2858,6 +2858,63 @@ input[type="search"]:not(#searchInput) {
   .onboard-card { width: calc(100vw - 32px); }
 }
 
+/* ============================================================ */
+/* Iteration 7 — Sound toggle & speak waveform                    */
+/* ============================================================ */
+
+.sound-toggle .icon-sound-off { display: none; }
+.sound-toggle.is-off .icon-sound-on { display: none; }
+.sound-toggle.is-off .icon-sound-off { display: block; color: var(--text-muted); }
+
+.sound-toggle.is-off {
+  background: color-mix(in oklab, var(--bg-soft) 90%, transparent);
+}
+
+/* Speak canvas inside flashcard speaker button */
+.fc-speak {
+  position: relative;
+  width: 64px !important;
+  overflow: hidden;
+}
+.fc-speak .speak-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.fc-speak .fc-speak-canvas {
+  position: absolute;
+  inset: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  opacity: 0;
+  transition: opacity var(--t-med) var(--ease);
+  pointer-events: none;
+}
+html.is-speaking .fc-speak .speak-icon {
+  opacity: 0;
+  transform: scale(.85);
+}
+html.is-speaking .fc-speak .fc-speak-canvas {
+  opacity: 1;
+}
+html.is-speaking .fc-speak {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--brand) 18%, transparent),
+              0 0 22px color-mix(in oklab, var(--brand) 32%, transparent);
+}
+
+/* Global speaking pulse for the daily card */
+html.is-speaking .daily {
+  animation: dailyShift 14s var(--ease) infinite, speakingPulse 2.4s var(--ease) infinite;
+}
+@keyframes speakingPulse {
+  0%, 100% { box-shadow: var(--shadow-lg), 0 30px 60px hsl(var(--brand-h) var(--brand-s) 50% / .25); }
+  50%      { box-shadow: var(--shadow-lg), 0 30px 80px hsl(var(--brand-h) var(--brand-s) 50% / .45), 0 0 0 6px color-mix(in oklab, white 20%, transparent); }
+}
+
+
 
 
 /* ============================================================ */

@@ -7,6 +7,7 @@ import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
 import { icon, emptyIllustration } from '../util/icons.js';
 import { confettiBurst } from '../util/motion.js';
+import { sfx } from '../util/sounds.js';
 
 export function renderFavoriten(root) {
   root.innerHTML = '';
@@ -186,6 +187,7 @@ function renderAchievements(stats) {
     setTimeout(() => {
       const first = grid.querySelector('.achievement.is-fresh');
       if (first) confettiBurst(first, { count: 70 });
+      sfx.unlock();
     }, 400);
   }
 

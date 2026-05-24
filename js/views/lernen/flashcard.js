@@ -4,6 +4,8 @@ import { el, speak, toast } from '../../util.js';
 import { setLernstand, isFavorit, toggleFavorit } from '../../store.js';
 import { confettiBurst } from '../../util/motion.js';
 import { icon } from '../../util/icons.js';
+import { sfx, vibrate } from '../../util/sounds.js';
+import { createWaveform } from '../../util/waveform.js';
 
 const SWIPE_THRESHOLD = 110;
 const ROTATE_FACTOR = 0.06;
@@ -60,14 +62,11 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       el('span', { html: '←' })
     ),
     el('div', { class: 'fc-rating' },
-      el('button', { class: 'fc-rate hard', onClick: () => rateAndPersist(c, 1, session, onRate) }, 'Schwer'),
-      el('button', { class: 'fc-rate med',  onClick: () => rateAndPersist(c, 2, session, onRate) }, 'Mittel'),
-      el('button', { class: 'fc-rate easy', onClick: (e) => { confettiBurst(e.currentTarget, { count: 60 }); rateAndPersist(c, 3, session, onRate); } }, 'Leicht')
+      el('button', { class: 'fc-rate hard', onClick: () => { sfx.rate(1); vibrate(8);  rateAndPersist(c, 1, session, onRate); } }, 'Schwer'),
+      el('button', { class: 'fc-rate med',  onClick: () => { sfx.rate(2); vibrate(12); rateAndPersist(c, 2, session, onRate); } }, 'Mittel'),
+      el('button', { class: 'fc-rate easy', onClick: (e) => { sfx.rate(3); vibrate([10, 40, 10]); confettiBurst(e.currentTarget, { count: 60 }); rateAndPersist(c, 3, session, onRate); } }, 'Leicht')
     ),
-    el('button', { class: 'fc-btn fc-speak', onClick: () => speak(c.ausdruck), title: 'Anhören' },
-      el('div', { class: 'speak-icon' }, icon('speaker', { size: 20 })),
-      el('div', { class: 'speak-wave', html: '<i></i><i></i><i></i><i></i><i></i>' })
-    )
+    speakControl(c)
   ));
 
   wrap.appendChild(el('div', { style: { textAlign: 'center', marginTop: '20px' } },
@@ -87,6 +86,21 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
 function rateAndPersist(card, stand, session, onRate) {
   setLernstand(card.dialektId, card.id, stand);
   onRate(stand);
+}
+
+function speakControl(c) {
+  const canvas = el('canvas', { class: 'fc-speak-canvas' });
+  const btn = el('button', {
+    class: 'fc-btn fc-speak',
+    onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck); },
+    title: 'Anhören'
+  },
+    el('div', { class: 'speak-icon' }, icon('speaker', { size: 20 })),
+    canvas
+  );
+  // Activate waveform after attach
+  setTimeout(() => createWaveform(canvas, { bars: 22, glow: true }), 0);
+  return btn;
 }
 
 function bindDrag(card, onRate) {
@@ -144,10 +158,14 @@ function bindDrag(card, onRate) {
       // fly off and rate
       const dir = dx > 0 ? 1 : -1;
       card.classList.add(dir > 0 ? 'is-flying-right' : 'is-flying-left');
+      sfx.swipe();
+      vibrate(dir > 0 ? [10, 30, 10] : 8);
       setTimeout(() => onRate(dir > 0 ? 3 : 1), 250);
       rated = true;
     } else if (-dy > SWIPE_THRESHOLD * 0.85) {
       card.classList.add('is-flying-up');
+      sfx.swipe();
+      vibrate(12);
       setTimeout(() => onRate(2), 250);
       rated = true;
     }

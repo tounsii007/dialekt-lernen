@@ -9,6 +9,7 @@ import { buildQuestion } from './quiz/question-builder.js';
 import { renderQuizQuestion } from './quiz/question.js';
 import { renderQuizResult } from './quiz/result.js';
 import { confettiBurst } from '../util/motion.js';
+import { sfx, vibrate } from '../util/sounds.js';
 
 export function renderQuiz(root) {
   root.innerHTML = '';
@@ -76,6 +77,8 @@ function answer(btn, chosen, correct, optsEl) {
   const stage = document.querySelector('.quiz-stage');
   if (chosen === correct) {
     btn.classList.add('is-correct');
+    sfx.correct();
+    vibrate([12, 40, 12]);
     confettiBurst(btn, { count: 70 });
     if (stage) {
       stage.classList.add('is-pulse-correct');
@@ -85,6 +88,8 @@ function answer(btn, chosen, correct, optsEl) {
     quiz.history.push({ correct: true });
   } else {
     btn.classList.add('is-wrong');
+    sfx.wrong();
+    vibrate([60, 40, 60]);
     if (correctBtn) correctBtn.classList.add('is-correct');
     if (stage) {
       stage.classList.add('is-shake');
