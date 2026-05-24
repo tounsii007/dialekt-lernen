@@ -40,7 +40,7 @@ export function renderQuiz(root) {
   root.appendChild(view);
 }
 
-function startQuiz({ source, direction }) {
+function startQuiz({ source, direction, timerEnabled = true }) {
   const pool = source === 'all'
     ? ALLE_AUSDRUECKE
     : (getDialekt(source)?.ausdruecke || []).map(a => ({
@@ -59,6 +59,7 @@ function startQuiz({ source, direction }) {
   setQuiz({
     source,
     direction,
+    timerEnabled,
     questions,
     idx: 0,
     score: 0,

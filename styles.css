@@ -5833,5 +5833,69 @@ html {
     0 0 0 1px color-mix(in oklab, var(--brand) 12%, transparent);
 }
 
+/* ============================================================ */
+/* Iteration 30 — Quiz-Timer & Setup-Toggle                    */
+/* ============================================================ */
+
+.quiz-timer-svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+.quiz-timer-fill {
+  transition: stroke-dasharray 0.9s linear, stroke 0.3s var(--ease);
+}
+.quiz-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+.quiz-setup-option {
+  margin-bottom: var(--sp-4);
+}
+.quiz-setup-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.quiz-setup-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-track {
+  width: 44px;
+  height: 24px;
+  border-radius: 99px;
+  background: var(--border);
+  flex-shrink: 0;
+  position: relative;
+  transition: background var(--t-fast) var(--ease);
+}
+.toggle-track::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: transform var(--t-fast) var(--ease-spring), background var(--t-fast) var(--ease);
+}
+.quiz-setup-toggle input:checked ~ .toggle-track {
+  background: color-mix(in oklab, var(--brand) 55%, var(--border));
+}
+.quiz-setup-toggle input:checked ~ .toggle-track::before {
+  transform: translateX(20px);
+  background: var(--brand);
+}
+
 
 

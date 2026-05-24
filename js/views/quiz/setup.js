@@ -13,6 +13,27 @@ export function renderQuizSetup(onStart) {
     )
   ));
 
+  // Timer toggle
+  let timerEnabled = (() => { try { return localStorage.getItem('dialekto:quiz-timer') !== '0'; } catch { return true; } })();
+  const timerRow = el('div', { class: 'quiz-setup-option' });
+  function renderTimerToggle() {
+    timerRow.innerHTML = '';
+    timerRow.appendChild(el('label', { class: 'quiz-setup-toggle' },
+      el('input', {
+        type: 'checkbox',
+        checked: timerEnabled,
+        onChange: (e) => {
+          timerEnabled = e.target.checked;
+          try { localStorage.setItem('dialekto:quiz-timer', timerEnabled ? '1' : '0'); } catch {}
+        }
+      }),
+      el('span', { class: 'toggle-track' }),
+      el('span', { class: 'toggle-label' }, `⏱️ 20-Sekunden-Timer ${timerEnabled ? 'ein' : 'aus'}`)
+    ));
+  }
+  renderTimerToggle();
+  c.appendChild(timerRow);
+
   const grid = el('div', { class: 'dialekt-grid' });
 
   grid.appendChild(modeCard({
@@ -21,7 +42,7 @@ export function renderQuizSetup(onStart) {
     name: 'Bunt gemischt',
     region: 'Alle Dialekte',
     desc: 'Was bedeutet der Dialekt-Ausdruck auf Hochdeutsch?',
-    onClick: () => onStart({ source: 'all', direction: 'dial->hd' }),
+    onClick: () => onStart({ source: 'all', direction: 'dial->hd', timerEnabled }),
   }));
 
   grid.appendChild(modeCard({
@@ -30,7 +51,7 @@ export function renderQuizSetup(onStart) {
     name: 'Umgekehrt',
     region: 'Hochdeutsch → Dialekt',
     desc: 'Welcher Dialekt-Ausdruck passt zur Hochdeutsch-Bedeutung?',
-    onClick: () => onStart({ source: 'all', direction: 'hd->dial' }),
+    onClick: () => onStart({ source: 'all', direction: 'hd->dial', timerEnabled }),
   }));
 
   grid.appendChild(modeCard({
@@ -39,7 +60,7 @@ export function renderQuizSetup(onStart) {
     name: 'Wo wird das gesprochen?',
     region: 'Region erraten',
     desc: 'Aus welcher Region stammt dieser Ausdruck?',
-    onClick: () => onStart({ source: 'all', direction: 'guess-region' }),
+    onClick: () => onStart({ source: 'all', direction: 'guess-region', timerEnabled }),
   }));
 
   DIALEKTE.forEach(d => {
@@ -49,7 +70,7 @@ export function renderQuizSetup(onStart) {
       name: d.name,
       region: d.region,
       desc: `Teste dein ${d.name}-Wissen.`,
-      onClick: () => onStart({ source: d.id, direction: 'dial->hd' }),
+      onClick: () => onStart({ source: d.id, direction: 'dial->hd', timerEnabled }),
     }));
   });
 
