@@ -6,6 +6,7 @@ import { confettiBurst } from '../../util/motion.js';
 import { icon } from '../../util/icons.js';
 import { sfx, vibrate } from '../../util/sounds.js';
 import { createWaveform } from '../../util/waveform.js';
+import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
 const SWIPE_THRESHOLD = 110;
 const ROTATE_FACTOR = 0.06;
@@ -96,6 +97,45 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     ));
     setTimeout(() => input.focus(), 80);
     back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+    back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else if (mode === 'mc') {
+    // Multiple Choice — 4 Optionen, kein Flip nötig
+    front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
+    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Wähle die richtige Bedeutung:'));
+    const choices = buildMcChoices(c, ALLE_AUSDRUECKE);
+    const optRow = el('div', { class: 'fc-mc-options', onClick: (e) => e.stopPropagation() });
+    let answered = false;
+    choices.forEach((opt) => {
+      const btn = el('button', {
+        class: 'fc-mc-opt',
+        onClick: () => {
+          if (answered) return;
+          answered = true;
+          const correct = opt.hochdeutsch === c.hochdeutsch;
+          // Reveal all correct/wrong states
+          optRow.querySelectorAll('.fc-mc-opt').forEach(b => {
+            if (b.dataset.answer === c.hochdeutsch) b.classList.add('mc-correct');
+          });
+          btn.classList.add(correct ? 'mc-correct' : 'mc-wrong');
+          if (correct) {
+            sfx.correct();
+            vibrate([10, 30, 10]);
+            confettiBurst(btn, { count: 40 });
+            setTimeout(() => { rateAndPersist(c, 3, session, onRate); }, 800);
+          } else {
+            sfx.wrong();
+            vibrate([12, 60, 12]);
+            setTimeout(() => { rateAndPersist(c, 1, session, onRate); }, 1200);
+          }
+        }
+      }, opt.hochdeutsch);
+      btn.dataset.answer = opt.hochdeutsch;
+      optRow.appendChild(btn);
+    });
+    front.appendChild(optRow);
+    back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else {
@@ -276,4 +316,43 @@ function bindDrag(card, onRate) {
   card.addEventListener('pointerup', () => finish(false));
   card.addEventListener('pointercancel', () => finish(true));
   card.addEventListener('lostpointercapture', () => finish(true));
+}
+
+function buildMcChoices(card, allExpr, count = 4) {
+  // Collect distractors: same kategorie preferred, then random
+  const same = allExpr.filter(e =>
+    e.hochdeutsch !== card.hochdeutsch &&
+    e.hochdeutsch &&
+    e.id !== card.id &&
+    e.kategorie === card.kategorie
+  );
+  const other = allExpr.filter(e =>
+    e.hochdeutsch !== card.hochdeutsch &&
+    e.hochdeutsch &&
+    e.id !== card.id &&
+    e.kategorie !== card.kategorie
+  );
+  // Shuffle and pick
+  const pool = [...shuffleArr(same), ...shuffleArr(other)];
+  // Deduplicate by hochdeutsch
+  const seen = new Set([card.hochdeutsch]);
+  const distractors = [];
+  for (const e of pool) {
+    if (distractors.length >= count - 1) break;
+    if (!seen.has(e.hochdeutsch)) {
+      seen.add(e.hochdeutsch);
+      distractors.push(e);
+    }
+  }
+  const choices = [card, ...distractors].slice(0, count);
+  return shuffleArr(choices);
+}
+
+function shuffleArr(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }

@@ -4,10 +4,11 @@ import { DIALEKTE, ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 import { icon } from '../../util/icons.js';
 
 const MODES = [
-  { id: 'normal',  icon: 'cards',    title: 'Klassisch',    desc: 'Dialekt → Hochdeutsch' },
-  { id: 'reverse', icon: 'refresh',  title: 'Umgekehrt',    desc: 'Hochdeutsch → Dialekt' },
-  { id: 'type',    icon: 'keyboard', title: 'Tippen',       desc: 'Antwort eintippen (mit Toleranz)' },
-  { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',    desc: 'Hör zu, dann antworte' }
+  { id: 'normal',  icon: 'cards',    title: 'Klassisch',       desc: 'Dialekt → Hochdeutsch' },
+  { id: 'reverse', icon: 'refresh',  title: 'Umgekehrt',       desc: 'Hochdeutsch → Dialekt' },
+  { id: 'mc',      icon: 'target',   title: 'Multiple Choice', desc: '4 Optionen — tippe die Bedeutung' },
+  { id: 'type',    icon: 'keyboard', title: 'Tippen',          desc: 'Antwort eintippen (mit Toleranz)' },
+  { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',       desc: 'Hör zu, dann antworte' }
 ];
 
 export function renderSetup(onStart) {

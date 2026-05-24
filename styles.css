@@ -4647,5 +4647,82 @@ html.is-speaking .is-speakable {
   color: var(--accent);
 }
 
+/* ============================================================ */
+/* Iteration 21 — Multiple-Choice-Karteikarten                 */
+/* ============================================================ */
+
+.fc-mc-hint {
+  margin-top: var(--sp-3);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.fc-mc-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+  width: 100%;
+}
+
+.fc-mc-opt {
+  padding: var(--sp-3) var(--sp-3);
+  border-radius: var(--r-lg);
+  border: 1.5px solid var(--border);
+  background: color-mix(in oklab, var(--bg-elev) 90%, transparent);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.3;
+  transition: all var(--t-fast) var(--ease);
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+}
+.fc-mc-opt:hover {
+  border-color: var(--brand);
+  background: color-mix(in oklab, var(--brand) 8%, var(--bg-elev));
+  transform: translateY(-1px);
+}
+.fc-mc-opt:active {
+  transform: scale(0.97);
+}
+.fc-mc-opt.mc-correct {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 15%, var(--bg-elev));
+  color: var(--accent);
+  font-weight: 700;
+  animation: mcCorrectPulse 0.4s var(--ease-spring);
+}
+@keyframes mcCorrectPulse {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+.fc-mc-opt.mc-wrong {
+  border-color: hsl(0 70% 55%);
+  background: color-mix(in oklab, hsl(0 70% 55%) 12%, var(--bg-elev));
+  color: hsl(0 70% 55%);
+  font-weight: 600;
+  animation: mcShake 0.35s var(--ease);
+}
+@keyframes mcShake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+.mode-mc .flashcard-controls .fc-rating { display: none; }
+
+@media (max-width: 480px) {
+  .fc-mc-options { grid-template-columns: 1fr; }
+}
+
 
 
