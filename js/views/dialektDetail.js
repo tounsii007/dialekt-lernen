@@ -4,7 +4,7 @@ import { KATEGORIEN } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
 import { markDialectVisited } from '../store.js';
 import { getLernstand } from '../store/learning.js';
-import { icon } from '../util/icons.js';
+import { icon, emptyIllustration } from '../util/icons.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -12,9 +12,10 @@ export function renderDialektDetail(root, dialektId) {
   if (d) markDialectVisited(d.id);
   if (!d) {
     root.appendChild(el('div', { class: 'empty-state' },
-      el('span', { class: 'emoji' }, '🚧'),
-      el('div', {}, 'Dialekt nicht gefunden.'),
-      el('button', { class: 'btn btn-primary', style: { marginTop: '20px' }, onClick: () => go('#/entdecken') }, 'Zurück zur Übersicht')
+      emptyIllustration('map'),
+      el('h3', {}, 'Dialekt nicht gefunden'),
+      el('div', { class: 'empty-meta' }, 'Die Adresse zeigt auf einen Dialekt, den es nicht gibt — vielleicht ein Tippfehler?'),
+      el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, 'Zurück zur Übersicht')
     ));
     return;
   }

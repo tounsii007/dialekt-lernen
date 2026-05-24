@@ -1,6 +1,7 @@
 import { el, normalize } from '../util.js';
 import { DIALEKTE } from '../../data/dialekte.js';
 import { renderDialektCard } from './partials.js';
+import { emptyIllustration } from '../util/icons.js';
 
 export function renderEntdecken(root) {
   root.innerHTML = '';
@@ -33,9 +34,10 @@ export function renderEntdecken(root) {
       !n || normalize(d.name).includes(n) || normalize(d.region).includes(n) || normalize(d.bundesland).includes(n)
     );
     if (!items.length) {
-      grid.appendChild(el('div', { class: 'empty-state' },
-        el('span', { class: 'emoji' }, '🤔'),
-        el('div', {}, 'Keine Dialekte gefunden für „' + filter + '".')
+      grid.appendChild(el('div', { class: 'empty-state', style: { gridColumn: '1 / -1' } },
+        emptyIllustration('search'),
+        el('h3', {}, 'Keine Dialekte gefunden'),
+        el('div', { class: 'empty-meta' }, 'Probier ein anderes Wort oder leere das Suchfeld.')
       ));
       return;
     }

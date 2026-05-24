@@ -5,7 +5,7 @@ import {
 } from '../store.js';
 import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
-import { icon } from '../util/icons.js';
+import { icon, emptyIllustration } from '../util/icons.js';
 import { confettiBurst } from '../util/motion.js';
 
 export function renderFavoriten(root) {
@@ -96,10 +96,10 @@ export function renderFavoriten(root) {
 
   if (favs.length === 0) {
     view.appendChild(el('div', { class: 'empty-state' },
-      el('span', { class: 'emoji' }, '💫'),
-      el('div', {}, 'Noch keine Favoriten markiert.'),
-      el('div', { style: { marginTop: '8px', color: 'var(--text-muted)' } }, 'Klicke auf das ♡ Symbol bei einem Ausdruck, um ihn hier zu speichern.'),
-      el('button', { class: 'btn btn-primary', style: { marginTop: '20px' }, onClick: () => go('#/entdecken') }, 'Dialekte erkunden')
+      emptyIllustration('heart'),
+      el('h3', {}, 'Noch keine Favoriten markiert'),
+      el('div', { class: 'empty-meta' }, 'Klicke auf das ♡ Symbol bei einem Ausdruck, um ihn hier zu speichern.'),
+      el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, 'Dialekte erkunden')
     ));
   } else {
     const grid = el('div', { class: 'expr-grid' });

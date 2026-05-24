@@ -40,3 +40,29 @@ export function icon(name, opts) {
   const fn = icons[name];
   return fn ? fn(opts) : svg('<circle cx="12" cy="12" r="9"/>', opts);
 }
+
+// Animated empty-state illustration. Pass one of: 'heart', 'search', 'map', 'sparkles'.
+// Returns an SVG that combines a soft blob background + a stroked shape on top.
+export function emptyIllustration(kind = 'heart') {
+  const shapeMap = {
+    heart:    '<path class="e-shape" d="M50 70 32 52a8 8 0 1 1 11.3-11.3L50 47.4l6.7-6.7A8 8 0 1 1 68 52z"/>',
+    search:   '<circle class="e-shape" cx="44" cy="44" r="14"/><path class="e-shape" d="m54 54 12 12"/>',
+    map:      '<path class="e-shape" d="m30 30 12-4 16 4 12-4v40l-12 4-16-4-12 4z"/><path class="e-shape" d="M42 26v40M58 30v40"/>',
+    sparkles: '<path class="e-shape" d="m50 30 4 12 12 4-12 4-4 12-4-12-12-4 12-4z"/><path class="e-shape" d="m70 60 2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>'
+  };
+  const inner = shapeMap[kind] || shapeMap.heart;
+  const s = document.createElementNS(SVG_NS, 'svg');
+  s.classList.add('empty-illustration');
+  s.setAttribute('viewBox', '0 0 100 100');
+  s.innerHTML = `
+    <defs>
+      <linearGradient id="emptyGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="oklch(72% 0.22 295)"/>
+        <stop offset="100%" stop-color="oklch(78% 0.20 340)"/>
+      </linearGradient>
+    </defs>
+    <path class="e-blob" d="M50 5c20 0 40 13 40 35S70 95 50 95 10 82 10 50 30 5 50 5z"/>
+    ${inner}
+  `;
+  return s;
+}
