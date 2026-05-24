@@ -3732,6 +3732,54 @@ html.is-speaking .fc-big-speak {
   box-shadow: 0 0 6px var(--brand);
 }
 
+/* ============================================================ */
+/* Iteration 19 — PWA install chip                                */
+/* ============================================================ */
+
+.install-chip {
+  position: fixed;
+  bottom: 100px;
+  right: var(--sp-4);
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: 99px;
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  color: white;
+  border: 0;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg), 0 12px 30px color-mix(in oklab, var(--brand) 40%, transparent);
+  animation: chipIn .55s var(--ease-spring);
+}
+.install-chip:hover { transform: translateY(-2px); }
+.install-chip-icon { font-size: 1.2rem; }
+.install-chip-close {
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,.22);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.install-chip-close:hover {
+  background: rgba(255,255,255,.4);
+}
+@keyframes chipIn {
+  from { transform: translateY(20px) scale(.9); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+@media (display-mode: standalone) {
+  .install-chip { display: none !important; }
+}
+
 /* High-contrast mode (Windows) */
 @media (forced-colors: active) {
   .btn, .icon-btn, .nav-link, .dialekt-card,
