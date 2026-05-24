@@ -1,9 +1,9 @@
-// Smart-Recommendations: leitet aus dem Lernstand und Verlauf
-// drei Bucket-Listen ab, die als "Heute lernen"-Vorschläge dienen.
+// Smart-Recommendations: leitet aus Lernstand + SRS-Daten Bucket-Listen ab.
 
 import { state } from '../store/state.js';
 import { ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { STATUS_HARD, STATUS_MEDIUM, STATUS_LEARNED } from '../store/learning.js';
+import { getDueCards } from '../store/srs.js';
 import { shuffle } from './random.js';
 
 function keyFor(a) { return `${a.dialektId}.${a.id}`; }
@@ -13,20 +13,26 @@ function annotate(a) {
   return {
     ...a,
     stand: entry?.stand ?? 0,
-    last: entry?.last ?? 0
+    last: entry?.last ?? 0,
+    interval: entry?.interval ?? 0,
+    lapses: entry?.lapses ?? 0,
+    due: entry?.due ?? null
   };
 }
 
 export function getRecommendations(limit = 6) {
   const annotated = ALLE_AUSDRUECKE.map(annotate);
 
-  // 1. Wiederholen: Karten mit "schwer" — gewichtet nach Zeit seit letztem Versuch
+  // 0. Heute fällig — höchste Priorität, basiert auf SM-2
+  const due = getDueCards(ALLE_AUSDRUECKE).slice(0, limit);
+
+  // 1. Wiederholen: viele Lapses oder Stand "schwer"
   const hard = annotated
-    .filter((x) => x.stand === STATUS_HARD)
-    .sort((a, b) => a.last - b.last)
+    .filter((x) => x.stand === STATUS_HARD || x.lapses >= 2)
+    .sort((a, b) => (b.lapses - a.lapses) || (a.last - b.last))
     .slice(0, limit);
 
-  // 2. Fast-gelernt: "mittel"-Karten, die einen weiteren Schubs brauchen
+  // 2. Fast-gelernt: "mittel"
   const almost = annotated
     .filter((x) => x.stand === STATUS_MEDIUM)
     .sort((a, b) => a.last - b.last)
@@ -35,7 +41,7 @@ export function getRecommendations(limit = 6) {
   // 3. Neu entdecken: nie gesehen
   const fresh = shuffle(annotated.filter((x) => x.stand === 0)).slice(0, limit);
 
-  return { hard, almost, fresh };
+  return { due, hard, almost, fresh };
 }
 
 export function getRecentDialects(limit = 4) {

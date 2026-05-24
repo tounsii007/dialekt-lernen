@@ -11,3 +11,7 @@ export { registerStreak, getStreak, getStreakHeatmap, getActiveDays } from './st
 export { saveQuizResult, getQuizHistory, getQuizGenauigkeit } from './store/quiz.js';
 export { getDailySeed } from './store/daily.js';
 export { ACHIEVEMENTS, evaluateAchievements, markDialectVisited, getVisitedDialects } from './store/achievements.js';
+export {
+  reviewCard, getCardSrs, getDueCards, getSrsStats,
+  RATING_HARD, RATING_MED, RATING_EASY
+} from './store/srs.js';

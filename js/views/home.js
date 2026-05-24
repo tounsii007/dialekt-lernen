@@ -135,9 +135,10 @@ function renderDashboard() {
   if (!hasReco && !hasRecent && totalActivity === 0) return null;
 
   const buckets = [
-    { key: 'hard',   title: 'Wiederholen',  hint: 'Schwer gefallene Karten',  items: rec.hard,   color: 'var(--warm)' },
-    { key: 'almost', title: 'Fast geschafft', hint: 'Mittel — noch eine Runde', items: rec.almost, color: 'var(--brand)' },
-    { key: 'fresh',  title: 'Neu entdecken', hint: 'Noch unbekannte Ausdrücke', items: rec.fresh,  color: 'var(--accent)' }
+    { key: 'due',    title: 'Heute fällig',    hint: 'Spaced-Repetition empfiehlt',   items: rec.due,    color: 'var(--pink)' },
+    { key: 'hard',   title: 'Wiederholen',     hint: 'Karten mit häufigen Patzern',  items: rec.hard,   color: 'var(--warm)' },
+    { key: 'almost', title: 'Fast geschafft',  hint: 'Mittel — noch eine Runde',     items: rec.almost, color: 'var(--brand)' },
+    { key: 'fresh',  title: 'Neu entdecken',   hint: 'Noch unbekannte Ausdrücke',    items: rec.fresh,  color: 'var(--accent)' }
   ].filter(b => b.items.length > 0);
 
   const section = el('section', { class: 'section dashboard-section', dataset: { reveal: '' } },
