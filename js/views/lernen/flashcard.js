@@ -28,21 +28,89 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     el('div', { class: 'fc-counter' }, `${session.idx + 1} / ${total}`)
   ));
 
-  const card = el('div', { class: 'flashcard' + (session.flipped ? ' is-flipped' : '') });
+  const mode = session.mode || 'normal';
+  const card = el('div', { class: 'flashcard mode-' + mode + (session.flipped ? ' is-flipped' : '') });
   const inner = el('div', { class: 'flashcard-inner' });
 
-  inner.appendChild(el('div', { class: 'flashcard-face front', onClick: () => onFlip(card) },
-    el('div', { class: 'fc-label' }, `${c.dialektFlag} ${c.dialektName}`),
-    el('div', { class: 'fc-expr is-speakable' }, c.ausdruck),
-    el('div', { class: 'fc-hint' }, 'Klicken / Leertaste umdrehen · ziehen zum Bewerten')
-  ));
+  // Front/Back content variiert nach Modus
+  const front = el('div', { class: 'flashcard-face front', onClick: () => onFlip(card) });
+  const back = el('div', { class: 'flashcard-face back', onClick: () => onFlip(card), style: { background: `linear-gradient(135deg, ${c.dialektFarbe} 0%, ${c.dialektFarbe}cc 100%)` } });
 
-  inner.appendChild(el('div', { class: 'flashcard-face back', onClick: () => onFlip(card), style: { background: `linear-gradient(135deg, ${c.dialektFarbe} 0%, ${c.dialektFarbe}cc 100%)` } },
-    el('div', { class: 'fc-label' }, 'Bedeutung'),
-    el('div', { class: 'fc-hd' }, c.hochdeutsch),
-    el('div', { class: 'fc-meaning' }, c.bedeutung),
-    el('div', { class: 'fc-hint' }, 'Wie war\'s? Bewerte unten · oder wische →')
-  ));
+  if (mode === 'reverse') {
+    // Hochdeutsch zuerst, Dialekt-Ausdruck als Antwort
+    front.appendChild(el('div', { class: 'fc-label' }, 'Hochdeutsch · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-expr' }, c.hochdeutsch));
+    front.appendChild(el('div', { class: 'fc-hint' }, 'Welcher Ausdruck im Dialekt?'));
+    back.appendChild(el('div', { class: 'fc-label' }, 'Antwort'));
+    back.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else if (mode === 'audio') {
+    // Nur Hören → dann antworten
+    front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-audio-only' },
+      el('button', {
+        class: 'fc-big-speak',
+        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck); },
+        title: 'Anhören'
+      },
+        icon('speaker', { size: 48 }),
+        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören')
+      )
+    ));
+    front.appendChild(el('div', { class: 'fc-hint' }, 'Hör genau hin — Karte umdrehen für Auflösung'));
+    back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
+    back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
+    back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+    // Auto-play beim Erscheinen
+    setTimeout(() => speak(c.ausdruck), 200);
+  } else if (mode === 'type') {
+    // Tipp-Modus: User tippt die Hochdeutsch-Übersetzung
+    front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
+    const input = el('input', {
+      class: 'fc-type-input',
+      type: 'text',
+      placeholder: 'Antwort eintippen…',
+      autocomplete: 'off',
+      spellcheck: 'false'
+    });
+    const feedback = el('div', { class: 'fc-type-feedback' });
+    front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
+      input, feedback,
+      el('button', {
+        class: 'btn btn-primary',
+        onClick: () => {
+          const ok = checkTypedAnswer(input.value, c.hochdeutsch);
+          const distance = levenshteinSimple(normalizeForType(input.value), normalizeForType(c.hochdeutsch));
+          feedback.classList.remove('is-ok', 'is-close', 'is-wrong');
+          if (ok) feedback.classList.add('is-ok');
+          else if (distance <= 2) feedback.classList.add('is-close');
+          else feedback.classList.add('is-wrong');
+          feedback.textContent = ok ? '✓ Richtig — ' + c.hochdeutsch
+            : distance <= 2 ? '◐ Fast — ' + c.hochdeutsch
+            : '✗ ' + c.hochdeutsch;
+          onFlip(card);
+        }
+      }, 'Prüfen')
+    ));
+    setTimeout(() => input.focus(), 80);
+    back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+    back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else {
+    // Klassisch
+    front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
+    front.appendChild(el('div', { class: 'fc-hint' }, 'Klicken / Leertaste umdrehen · ziehen zum Bewerten'));
+    back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
+    back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+    back.appendChild(el('div', { class: 'fc-hint' }, 'Wie war\'s? Bewerte unten · oder wische →'));
+  }
+
+  inner.appendChild(front);
+  inner.appendChild(back);
 
   card.appendChild(inner);
 
@@ -86,6 +154,40 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
 function rateAndPersist(card, stand, session, onRate) {
   setLernstand(card.dialektId, card.id, stand);
   onRate(stand);
+}
+
+function normalizeForType(s) {
+  return String(s || '').toLowerCase()
+    .normalize('NFKD').replace(/[̀-ͯ]/g, '')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9 ]+/g, ' ')
+    .replace(/\s+/g, ' ').trim();
+}
+
+function levenshteinSimple(a, b) {
+  if (a === b) return 0;
+  if (!a || !b) return Math.max(a.length, b.length);
+  const m = a.length, n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+    }
+  }
+  return dp[m][n];
+}
+
+function checkTypedAnswer(user, expected) {
+  const u = normalizeForType(user);
+  const e = normalizeForType(expected);
+  if (!u) return false;
+  if (u === e) return true;
+  // Akzeptiere kleine Tippfehler je nach Länge
+  const maxDist = e.length <= 5 ? 1 : e.length <= 10 ? 2 : 3;
+  return levenshteinSimple(u, e) <= maxDist;
 }
 
 function speakControl(c) {

@@ -43,7 +43,7 @@ export function renderLernen(root, params) {
   root.appendChild(view);
 }
 
-function startSession({ source }) {
+function startSession({ source, mode = 'normal' }) {
   let cards = [];
   let title = '';
   if (source === 'all') {
@@ -57,6 +57,7 @@ function startSession({ source }) {
   }
   setSession({
     title,
+    mode,
     cards: shuffle(cards),
     idx: 0,
     flipped: false,

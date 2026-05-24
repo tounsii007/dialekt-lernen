@@ -1,6 +1,14 @@
 // Karteikarten-Modus · Auswahl-Bildschirm
 import { el } from '../../util.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
+import { icon } from '../../util/icons.js';
+
+const MODES = [
+  { id: 'normal',  icon: 'cards',    title: 'Klassisch',    desc: 'Dialekt → Hochdeutsch' },
+  { id: 'reverse', icon: 'refresh',  title: 'Umgekehrt',    desc: 'Hochdeutsch → Dialekt' },
+  { id: 'type',    icon: 'keyboard', title: 'Tippen',       desc: 'Antwort eintippen (mit Toleranz)' },
+  { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',    desc: 'Hör zu, dann antworte' }
+];
 
 export function renderSetup(onStart) {
   const container = el('div', {});
@@ -8,16 +16,45 @@ export function renderSetup(onStart) {
   container.appendChild(el('div', { class: 'section-head' },
     el('div', {},
       el('h2', {}, '🃏 Karteikarten lernen'),
-      el('div', { class: 'lede' }, 'Wähle eine Quelle und lerne im eigenen Tempo. Wische, klicke oder nutze die Pfeiltasten.')
+      el('div', { class: 'lede' }, 'Wähle Modus + Quelle. Wische, klicke oder nutze die Pfeiltasten.')
     )
   ));
+
+  // Modus-Switcher (gespeichert im sessionStorage)
+  let currentMode = (() => {
+    try { return sessionStorage.getItem('dialekto:learnMode') || 'normal'; } catch { return 'normal'; }
+  })();
+
+  const modeRow = el('div', { class: 'learn-mode-row' });
+  function renderModes() {
+    modeRow.innerHTML = '';
+    MODES.forEach((m) => {
+      const btn = el('button', {
+        class: 'learn-mode' + (currentMode === m.id ? ' is-active' : ''),
+        onClick: () => {
+          currentMode = m.id;
+          try { sessionStorage.setItem('dialekto:learnMode', currentMode); } catch {}
+          renderModes();
+        }
+      },
+        el('span', { class: 'learn-mode-icon' }, icon(m.icon, { size: 22 })),
+        el('span', { class: 'learn-mode-text' },
+          el('strong', {}, m.title),
+          el('span', {}, m.desc)
+        )
+      );
+      modeRow.appendChild(btn);
+    });
+  }
+  renderModes();
+  container.appendChild(modeRow);
 
   const opts = el('div', { class: 'dialekt-grid' });
 
   const allCard = el('button', {
     class: 'dialekt-card',
     style: { '--dc': '#8338ec' },
-    onClick: () => onStart({ source: 'all' })
+    onClick: () => onStart({ source: 'all', mode: currentMode })
   },
     el('span', { class: 'dc-flag' }, '🌍'),
     el('div', { class: 'dc-name' }, 'Alle Dialekte'),
@@ -34,7 +71,7 @@ export function renderSetup(onStart) {
     const c = el('button', {
       class: 'dialekt-card',
       style: { '--dc': d.farbe },
-      onClick: () => onStart({ source: d.id })
+      onClick: () => onStart({ source: d.id, mode: currentMode })
     },
       el('span', { class: 'dc-flag' }, d.flag),
       el('div', { class: 'dc-name' }, d.name),

@@ -3161,6 +3161,157 @@ html.is-speaking .daily {
   color: var(--text-muted);
 }
 
+/* ============================================================ */
+/* Iteration 11 — Lern-Modi                                       */
+/* ============================================================ */
+
+.learn-mode-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-5);
+}
+.learn-mode {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-elev) 88%, transparent),
+      color-mix(in oklab, var(--bg-elev) 72%, transparent));
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--t-fast) var(--ease-spring);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+.learn-mode::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  opacity: 0;
+  transition: opacity var(--t-med) var(--ease);
+  z-index: -1;
+}
+.learn-mode.is-active::before { opacity: 1; }
+.learn-mode.is-active {
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 8px 24px color-mix(in oklab, var(--brand) 35%, transparent);
+}
+.learn-mode:hover:not(.is-active) { transform: translateY(-2px); border-color: var(--brand); }
+.learn-mode-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in oklab, var(--brand) 18%, transparent);
+  color: var(--brand);
+  flex-shrink: 0;
+  transition: all var(--t-fast) var(--ease);
+}
+.learn-mode.is-active .learn-mode-icon {
+  background: rgba(255, 255, 255, 0.22);
+  color: white;
+}
+.learn-mode-text { display: flex; flex-direction: column; line-height: 1.2; }
+.learn-mode-text strong { font-weight: 700; font-size: 0.95rem; }
+.learn-mode-text span { font-size: 0.78rem; opacity: 0.8; }
+
+/* Type-Modus Input */
+.fc-type-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+  width: 100%;
+  max-width: 360px;
+}
+.fc-type-input {
+  width: 100%;
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: 14px;
+  border: 2px solid var(--border);
+  background: color-mix(in oklab, var(--bg-elev) 90%, transparent);
+  font-size: 1.1rem;
+  font-family: var(--font-display);
+  text-align: center;
+  color: var(--text);
+  outline: none;
+  transition: all var(--t-fast) var(--ease);
+}
+.fc-type-input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--brand) 20%, transparent);
+}
+.fc-type-feedback {
+  text-align: center;
+  font-size: 0.9rem;
+  min-height: 1.4em;
+  font-weight: 600;
+  transition: color var(--t-fast) var(--ease);
+}
+.fc-type-feedback.is-ok    { color: var(--accent); }
+.fc-type-feedback.is-close { color: var(--warm); }
+.fc-type-feedback.is-wrong { color: hsl(0 80% 60%); }
+
+/* Audio-Only Modus */
+.fc-audio-only {
+  display: grid;
+  place-items: center;
+  margin: var(--sp-5) 0;
+}
+.fc-big-speak {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  border: 0;
+  color: white;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  cursor: pointer;
+  box-shadow: 0 14px 40px color-mix(in oklab, var(--brand) 40%, transparent);
+  transition: all var(--t-fast) var(--ease-spring);
+  animation: bigSpeakPulse 2.5s var(--ease) infinite;
+  font-family: inherit;
+}
+.fc-big-speak:hover {
+  transform: scale(1.06);
+  box-shadow: 0 20px 50px color-mix(in oklab, var(--brand) 55%, transparent);
+}
+.fc-big-speak svg { display: block; }
+.fc-big-speak-hint {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 600;
+}
+@keyframes bigSpeakPulse {
+  0%, 100% { box-shadow: 0 14px 40px color-mix(in oklab, var(--brand) 40%, transparent); }
+  50%      { box-shadow: 0 14px 40px color-mix(in oklab, var(--brand) 40%, transparent),
+                          0 0 0 12px color-mix(in oklab, var(--brand) 18%, transparent); }
+}
+html.is-speaking .fc-big-speak {
+  animation: bigSpeakActive 0.6s var(--ease) infinite;
+}
+@keyframes bigSpeakActive {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.04); }
+}
+
 
 
 
