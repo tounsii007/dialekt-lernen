@@ -51,7 +51,10 @@ function withDefaults(loaded) {
                     ? loaded.achievements : {},
     onboarded:    !!loaded.onboarded,
     preset:       typeof loaded.preset === 'string' ? loaded.preset : 'default',
-    notes:        loaded.notes && typeof loaded.notes === 'object' ? loaded.notes : {}
+    notes:        loaded.notes && typeof loaded.notes === 'object' ? loaded.notes : {},
+    xp:           loaded.xp && typeof loaded.xp === 'object'
+                    ? { total: 0, log: [], ...loaded.xp }
+                    : { total: 0, log: [] }
   };
 }
 

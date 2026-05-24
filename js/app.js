@@ -12,6 +12,8 @@ import { initSpotlight, initScrollProgress, initMagnetic, initTilt } from './uti
 import { startOnboarding, resetOnboarding } from './util/onboarding.js';
 import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 import { initPwa } from './util/pwa.js';
+import { initXpHud, renderXpBar } from './util/xp-hud.js';
+import { getXp } from './store/xp.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const ADD_DIALECT_HINT_TEXT =
@@ -67,6 +69,10 @@ function init() {
   initNav();
   initRouter();
   initPwa(toast);
+  initXpHud();
+  // XP-Balken in der Topbar befüllen
+  const xpSlot = document.getElementById('xpBarSlot');
+  if (xpSlot) xpSlot.appendChild(renderXpBar(getXp()));
   // Onboarding-Tour beim ersten Besuch (kleines Delay, damit Layout steht).
   setTimeout(() => startOnboarding(), 800);
   // Console-Helfer + Footer-Link, um die Tour erneut zu starten.

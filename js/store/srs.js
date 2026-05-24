@@ -16,6 +16,7 @@
 
 import { state, persist, favKey } from './state.js';
 import { registerStreak } from './streak.js';
+import { awardXp, XP } from './xp.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -97,6 +98,9 @@ export function reviewCard(dialektId, ausdruckId, rating) {
   state.gelernt[key] = record;
   persist();
   registerStreak();
+  // XP-Award je nach Bewertung
+  const xpAmount = rating === RATING_EASY ? XP.cardLearned : XP.cardReviewed;
+  awardXp(xpAmount, rating === RATING_EASY ? 'card-learned' : 'card-reviewed');
   return record;
 }
 

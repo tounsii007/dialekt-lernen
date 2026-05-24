@@ -2,6 +2,7 @@
 
 import { state, persist } from './state.js';
 import { registerStreak } from './streak.js';
+import { awardXp, XP } from './xp.js';
 
 const MAX_HISTORY = 50;
 
@@ -23,6 +24,9 @@ export function saveQuizResult(score, total, dialektId) {
   state.lernStats.korrekt += safeScore;
   persist();
   registerStreak();
+  // XP: je korrekter Antwort + Bonus für Perfekt-Quiz
+  if (safeScore > 0) awardXp(safeScore * XP.quizCorrect, 'quiz-correct');
+  if (safeTotal > 0 && safeScore === safeTotal) awardXp(XP.quizPerfect, 'quiz-perfect');
 }
 
 export function getQuizHistory() {
