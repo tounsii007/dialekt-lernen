@@ -72,3 +72,13 @@ function init() {
 }
 
 init();
+
+// Globaler Error-Handler — fängt unerwartete Fehler und zeigt einen freundlichen Toast,
+// anstatt den User auf einer kaputten Seite stehen zu lassen.
+window.addEventListener('error', (e) => {
+  console.error('[Dialekto]', e.error || e.message);
+  toast('Ein unerwarteter Fehler ist aufgetreten — die Seite läuft weiter.', 'info', 2400);
+});
+window.addEventListener('unhandledrejection', (e) => {
+  console.error('[Dialekto] unhandled', e.reason);
+});

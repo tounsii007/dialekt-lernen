@@ -108,6 +108,45 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Globale Fokus-Ringe — WCAG AA */
+:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--brand) 80%, transparent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+button:focus-visible,
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--brand) 90%, transparent);
+  outline-offset: 3px;
+}
+/* Skip-Link für Screenreader / Tastatur */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  padding: var(--sp-2) var(--sp-4);
+  border-radius: 99px;
+  background: var(--brand);
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  z-index: 1200;
+  transition: top var(--t-fast) var(--ease);
+}
+.skip-link:focus { top: 12px; }
+
+/* Screen-Reader-only Helper */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  white-space: nowrap; border: 0;
+}
+
 html { scroll-behavior: smooth; }
 
 body {
@@ -3493,6 +3532,90 @@ html.is-speaking .fc-big-speak {
   background: var(--dc);
   color: white;
   transform: scale(1.08);
+}
+
+/* ============================================================ */
+/* Iteration 14 — Print stylesheet                                */
+/* ============================================================ */
+
+@media print {
+  /* Backgrounds & decorations weg, hoher Kontrast, kein Schatten */
+  .bg-stack, .scroll-progress, .topbar, .footer,
+  .toast-container, .search-overlay, .onboard-overlay,
+  .confetti-layer, .menu-toggle, .nav,
+  .data-tools-section, .dashboard-section,
+  .hero-cta, .preview-card, .hero-preview,
+  .quiz-bar, .flashcard-controls, .fc-rating,
+  .fc-btn, .fc-speak, .expr-actions, .icon-btn,
+  .btn, .chip-row, .expr-search,
+  .compare-cell-speak {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .app { max-width: 100%; padding: 0; }
+  .view { animation: none !important; }
+  .dialekt-card, .expr-card, .compare-cell,
+  .card, .stat-card, .dash-card, .achievement {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    background: white !important;
+    color: black !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    transform: none !important;
+    animation: none !important;
+  }
+  .expr-card,
+  .dialekt-card {
+    page-break-inside: avoid;
+  }
+  .hero h1, .section-head h2, .compare-group-title {
+    color: black !important;
+    background: none !important;
+    -webkit-text-fill-color: black !important;
+  }
+  .expr-text, .expr-hd, .expr-meaning {
+    color: black !important;
+  }
+  /* Lernkarten-Druckmodus: Vorder- + Rückseite untereinander */
+  .flashcard {
+    height: auto !important;
+    perspective: none !important;
+    page-break-after: always;
+  }
+  .flashcard-inner { transform: none !important; }
+  .flashcard-face {
+    position: relative !important;
+    inset: auto !important;
+    backface-visibility: visible !important;
+    transform: none !important;
+    margin-bottom: 12px;
+    background: white !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+  }
+  /* URL anzeigen bei Links — gut für Papier-Backup */
+  a[href^="http"]::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.8em;
+    color: #555;
+  }
+}
+
+/* High-contrast mode (Windows) */
+@media (forced-colors: active) {
+  .btn, .icon-btn, .nav-link, .dialekt-card,
+  .achievement, .dash-card, .stat-card,
+  .compare-cell, .chip {
+    border: 1px solid CanvasText !important;
+  }
+  .nav-link.is-active, .chip.is-active {
+    background: Highlight !important;
+    color: HighlightText !important;
+  }
 }
 
 

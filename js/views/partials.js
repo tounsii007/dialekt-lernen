@@ -28,6 +28,8 @@ export function renderExpressionCard(a, dialekt) {
   const favBtn = el('button', {
     class: 'expr-action' + (fav ? ' is-active' : ''),
     title: fav ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen',
+    'aria-pressed': fav ? 'true' : 'false',
+    'aria-label': fav ? 'Aus Favoriten entfernen' : 'Zu Favoriten hinzufügen',
     onClick: (e) => {
       e.stopPropagation();
       const added = toggleFavorit(dialekt.id, a.id);
@@ -40,6 +42,8 @@ export function renderExpressionCard(a, dialekt) {
   const learnBtn = el('button', {
     class: 'expr-action' + (stand >= 3 ? ' is-learned' : ''),
     title: stand >= 3 ? 'Als nicht gelernt markieren' : 'Als gelernt markieren',
+    'aria-pressed': stand >= 3 ? 'true' : 'false',
+    'aria-label': stand >= 3 ? 'Als nicht gelernt markieren' : 'Als gelernt markieren',
     onClick: (e) => {
       e.stopPropagation();
       const next = stand >= 3 ? 0 : 3;
@@ -52,6 +56,7 @@ export function renderExpressionCard(a, dialekt) {
   const speakBtn = el('button', {
     class: 'expr-action',
     title: 'Anhören',
+    'aria-label': `„${a.ausdruck}" anhören`,
     onClick: (e) => { e.stopPropagation(); speak(a.ausdruck); }
   }, el('span', { html: '🔊' }));
 

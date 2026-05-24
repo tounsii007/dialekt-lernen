@@ -18,11 +18,28 @@ import { renderVergleich } from './views/vergleich.js';
 
 const DEFAULT_ROUTE = 'home';
 
+const ROUTE_LABELS = {
+  home:      'Startseite',
+  entdecken: 'Dialekte entdecken',
+  lernen:    'Karteikarten lernen',
+  quiz:      'Quiz',
+  vergleich: 'Dialekt-Vergleich',
+  favoriten: 'Favoriten und Statistiken',
+  dialekt:   'Dialekt-Details',
+  share:     'Geteiltes Quiz-Resultat'
+};
+
 function updateActiveNav(route) {
   const active = route === '' ? DEFAULT_ROUTE : route;
   $$('.nav-link').forEach(a => {
     a.classList.toggle('is-active', a.dataset.route === active);
   });
+  // Routenwechsel für Screen Reader ansagen
+  const announcer = $('#routeAnnouncer');
+  if (announcer) {
+    const label = ROUTE_LABELS[active] || active;
+    announcer.textContent = `Bereich gewechselt: ${label}`;
+  }
 }
 
 function renderRoute(app, route, segs, params) {
