@@ -3312,6 +3312,57 @@ html.is-speaking .fc-big-speak {
   50%      { transform: scale(1.04); }
 }
 
+/* ============================================================ */
+/* Iteration 12 — Data tools & share view                         */
+/* ============================================================ */
+
+.data-tools-row {
+  display: flex;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-elev) 90%, transparent),
+      color-mix(in oklab, var(--bg-elev) 75%, transparent));
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.data-tools-row .btn {
+  font-size: 0.88rem;
+  padding: var(--sp-2) var(--sp-4);
+}
+.danger-btn {
+  color: hsl(0 80% 55%) !important;
+}
+.danger-btn:hover {
+  background: color-mix(in oklab, hsl(0 80% 60%) 12%, transparent) !important;
+}
+
+/* Share view */
+.share-eyebrow {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 99px;
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-3);
+  box-shadow: 0 6px 18px color-mix(in oklab, var(--brand) 35%, transparent);
+}
+.share-view .quiz-result {
+  animation: shareIn .7s var(--ease-spring);
+}
+@keyframes shareIn {
+  from { opacity: 0; transform: scale(.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
 
 
 

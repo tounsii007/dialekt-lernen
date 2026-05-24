@@ -13,6 +13,7 @@ import { renderDialektDetail } from './views/dialektDetail.js';
 import { renderLernen, resetLernSession } from './views/lernen.js';
 import { renderQuiz, resetQuizSession } from './views/quiz.js';
 import { renderFavoriten } from './views/favoriten.js';
+import { renderShare } from './views/share.js';
 
 const DEFAULT_ROUTE = 'home';
 
@@ -38,6 +39,8 @@ function renderRoute(app, route, segs, params) {
       return renderQuiz(app);
     case 'favoriten':
       return renderFavoriten(app);
+    case 'share':
+      return renderShare(app, segs[1]);
     default:
       return renderHome(app);
   }

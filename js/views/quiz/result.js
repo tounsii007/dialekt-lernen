@@ -1,7 +1,8 @@
 // Quiz · Ergebnis-Bildschirm mit animiertem Score-Ring
-import { el, go } from '../../util.js';
-import { saveQuizResult } from '../../store.js';
+import { el, go, toast } from '../../util.js';
+import { saveQuizResult, encodeQuizShare } from '../../store.js';
 import { confettiBurst, animateCounter } from '../../util/motion.js';
+import { sfx } from '../../util/sounds.js';
 
 export function renderQuizResult(finished, { onRetry, onAnother }) {
   const total = finished.questions.length;
@@ -45,6 +46,7 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
       el('div', { style: { display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '24px' } },
         el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => onRetry(finished) }, 'Nochmal'),
         el('button', { class: 'btn btn-secondary', onClick: onAnother }, 'Anderes Quiz'),
+        el('button', { class: 'btn btn-secondary', onClick: () => shareResult(score, total, finished.source) }, '🔗 Teilen'),
         el('button', { class: 'btn btn-ghost', onClick: () => go('#/lernen') }, 'Karteikarten lernen')
       )
     )
@@ -59,4 +61,29 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
   }, 200);
 
   return wrap;
+}
+
+function shareResult(score, total, source) {
+  sfx.click();
+  const token = encodeQuizShare({ score, total, source });
+  if (!token) { toast('Share-Link konnte nicht erstellt werden.', 'info', 1600); return; }
+  const url = `${window.location.origin}${window.location.pathname}#/share/${token}`;
+  if (navigator.share) {
+    navigator.share({
+      title: 'Mein Dialekto-Quiz-Resultat',
+      text: `Ich habe ${score}/${total} im Dialekto-Quiz!`,
+      url
+    }).catch(() => fallbackClipboard(url));
+  } else {
+    fallbackClipboard(url);
+  }
+}
+
+function fallbackClipboard(url) {
+  try {
+    navigator.clipboard.writeText(url);
+    toast('Link kopiert 📋', 'success', 1800);
+  } catch {
+    toast('Link: ' + url, 'info', 4000);
+  }
 }

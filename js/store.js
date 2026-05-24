@@ -15,3 +15,8 @@ export {
   reviewCard, getCardSrs, getDueCards, getSrsStats,
   RATING_HARD, RATING_MED, RATING_EASY
 } from './store/srs.js';
+export {
+  exportState, exportStateAsString, downloadStateFile,
+  importState, resetAllData,
+  encodeQuizShare, decodeQuizShare
+} from './store/transfer.js';
