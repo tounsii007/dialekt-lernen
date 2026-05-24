@@ -16,6 +16,7 @@ import { initXpHud, renderXpBar } from './util/xp-hud.js';
 import { getXp } from './store/xp.js';
 import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
+import { initGoalEvents } from './util/daily-goal.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const ADD_DIALECT_HINT_TEXT =
@@ -74,6 +75,7 @@ function init() {
   initNetwork(toast);
   initXpHud();
   initRipple();
+  initGoalEvents(toast);
   // XP-Balken in der Topbar befüllen
   const xpSlot = document.getElementById('xpBarSlot');
   if (xpSlot) xpSlot.appendChild(renderXpBar(getXp()));

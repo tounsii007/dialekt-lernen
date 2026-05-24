@@ -17,6 +17,7 @@
 import { state, persist, favKey } from './state.js';
 import { registerStreak } from './streak.js';
 import { awardXp, XP } from './xp.js';
+import { incrementGoalProgress, isGoalMet, getGoalTarget } from './goals.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -101,6 +102,15 @@ export function reviewCard(dialektId, ausdruckId, rating) {
   // XP-Award je nach Bewertung
   const xpAmount = rating === RATING_EASY ? XP.cardLearned : XP.cardReviewed;
   awardXp(xpAmount, rating === RATING_EASY ? 'card-learned' : 'card-reviewed');
+  // Tages-Lernziel tracken
+  const newProgress = incrementGoalProgress(1);
+  const target = getGoalTarget();
+  if (newProgress === target) {
+    // Exakt erreicht — Event auslösen
+    try {
+      document.dispatchEvent(new CustomEvent('dialekto:goalmet', { detail: { target } }));
+    } catch {}
+  }
   return record;
 }
 

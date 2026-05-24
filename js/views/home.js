@@ -6,6 +6,7 @@ import { pickSeeded } from '../util.js';
 import { renderDialektCard } from './partials.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getRecommendations, getRecentDialects, getActivitySeries } from '../util/recommendations.js';
+import { renderGoalWidget } from '../util/daily-goal.js';
 
 export function renderHome(root) {
   root.innerHTML = '';
@@ -202,6 +203,19 @@ function renderDashboard() {
   }
 
   section.appendChild(dashGrid);
+
+  // Tägliches Lernziel-Widget
+  const goalSection = el('div', { class: 'section', dataset: { reveal: '' } },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, 'Heutiges Ziel'),
+        el('div', { class: 'lede' }, 'Passe dein tägliches Lernpensum an — bleib im Rhythmus!')
+      )
+    ),
+    renderGoalWidget()
+  );
+  section.appendChild(goalSection);
+
   return section;
 }
 

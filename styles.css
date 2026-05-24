@@ -5130,5 +5130,125 @@ html.is-speaking .is-speakable {
     ) 0 0 / 100% 100%;
 }
 
+/* ============================================================ */
+/* Iteration 26 — Tägliche Lernziele                           */
+/* ============================================================ */
+
+.goal-widget {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  padding: var(--sp-5);
+  border-radius: var(--r-xl);
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--brand) 8%, var(--bg-elev)),
+      color-mix(in oklab, var(--accent) 5%, var(--bg-elev)));
+  border: 1px solid color-mix(in oklab, var(--brand) 18%, var(--border));
+  flex-wrap: wrap;
+  gap: var(--sp-4);
+}
+.goal-widget.goal-met {
+  border-color: color-mix(in oklab, var(--accent) 35%, var(--border));
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--accent) 10%, var(--bg-elev)),
+      color-mix(in oklab, var(--brand) 5%, var(--bg-elev)));
+}
+
+.goal-ring-svg {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+.goal-ring-text {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.goal-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  flex: 1;
+  min-width: 160px;
+}
+.goal-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+}
+.goal-progress {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.goal-selector {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: var(--sp-1);
+}
+.goal-opt {
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all var(--t-fast) var(--ease);
+}
+.goal-opt:hover { border-color: var(--brand); color: var(--brand); }
+.goal-opt.is-active {
+  background: color-mix(in oklab, var(--brand) 15%, var(--bg-soft));
+  border-color: color-mix(in oklab, var(--brand) 50%, transparent);
+  color: var(--brand);
+}
+
+/* 7-day mini history */
+.goal-history {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  height: 52px;
+  align-self: flex-end;
+  margin-left: auto;
+}
+.goal-hist-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  height: 100%;
+}
+.goal-hist-bar {
+  flex: 1;
+  width: 10px;
+  border-radius: 4px;
+  background: color-mix(in oklab, var(--bc, var(--brand)) 40%, var(--border));
+  align-self: flex-end;
+  height: calc(var(--bh, 0.1) * 38px + 4px);
+  min-height: 4px;
+  transition: height 0.6s var(--ease-spring), background 0.3s var(--ease);
+}
+.goal-hist-bar:hover {
+  background: var(--bc, var(--brand));
+}
+.goal-hist-day {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .goal-history { display: none; }
+  .goal-widget { gap: var(--sp-3); }
+}
+
 
 

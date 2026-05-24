@@ -54,7 +54,10 @@ function withDefaults(loaded) {
     notes:        loaded.notes && typeof loaded.notes === 'object' ? loaded.notes : {},
     xp:           loaded.xp && typeof loaded.xp === 'object'
                     ? { total: 0, log: [], ...loaded.xp }
-                    : { total: 0, log: [] }
+                    : { total: 0, log: [] },
+    goals:        loaded.goals && typeof loaded.goals === 'object'
+                    ? { target: 10, progress: {}, reminderShown: {}, ...loaded.goals }
+                    : { target: 10, progress: {}, reminderShown: {} }
   };
 }
 
