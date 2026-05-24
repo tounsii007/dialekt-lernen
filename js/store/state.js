@@ -49,7 +49,8 @@ function withDefaults(loaded) {
     visited:      Array.isArray(loaded.visited) ? loaded.visited : [],
     achievements: loaded.achievements && typeof loaded.achievements === 'object'
                     ? loaded.achievements : {},
-    onboarded:    !!loaded.onboarded
+    onboarded:    !!loaded.onboarded,
+    preset:       typeof loaded.preset === 'string' ? loaded.preset : 'default'
   };
 }
 

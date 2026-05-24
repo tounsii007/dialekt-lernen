@@ -20,3 +20,4 @@ export {
   importState, resetAllData,
   encodeQuizShare, decodeQuizShare
 } from './store/transfer.js';
+export { PRESETS, getPreset, setPreset, applyPreset } from './store/presets.js';
