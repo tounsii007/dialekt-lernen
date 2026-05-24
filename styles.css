@@ -4926,5 +4926,62 @@ html.is-speaking .is-speakable {
   .karte-stats-row { grid-template-columns: 1fr 1fr; }
 }
 
+/* ============================================================ */
+/* Iteration 23 — Netzwerk-Status-Banner                       */
+/* ============================================================ */
+
+.network-banner {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-120%);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border-radius: 0 0 var(--r-lg) var(--r-lg);
+  font-size: 0.82rem;
+  font-weight: 600;
+  pointer-events: none;
+  transition: transform 0.38s var(--ease-spring);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px hsl(0 0% 0% / .2);
+}
+.network-banner.is-visible {
+  transform: translateX(-50%) translateY(0);
+}
+.network-offline {
+  background: color-mix(in oklab, hsl(0 70% 50%) 18%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, hsl(0 70% 50%) 35%, transparent);
+  border-top: none;
+  color: hsl(0 70% 65%);
+}
+.network-online {
+  background: color-mix(in oklab, var(--accent) 14%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, var(--accent) 30%, transparent);
+  border-top: none;
+  color: var(--accent);
+}
+.network-slow {
+  background: color-mix(in oklab, var(--warm) 15%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, var(--warm) 30%, transparent);
+  border-top: none;
+  color: var(--warm);
+}
+.nb-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  animation: nbPulse 1.6s ease-in-out infinite;
+}
+.network-offline .nb-dot { background: hsl(0 70% 60%); }
+.network-online  .nb-dot { background: var(--accent); }
+.network-slow    .nb-dot { background: var(--warm); }
+@keyframes nbPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.75); }
+}
+
 
 

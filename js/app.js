@@ -14,6 +14,7 @@ import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 import { initPwa } from './util/pwa.js';
 import { initXpHud, renderXpBar } from './util/xp-hud.js';
 import { getXp } from './store/xp.js';
+import { initNetwork } from './util/network.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const ADD_DIALECT_HINT_TEXT =
@@ -69,6 +70,7 @@ function init() {
   initNav();
   initRouter();
   initPwa(toast);
+  initNetwork(toast);
   initXpHud();
   // XP-Balken in der Topbar befüllen
   const xpSlot = document.getElementById('xpBarSlot');
