@@ -5483,5 +5483,188 @@ html.is-speaking .is-speakable {
   white-space: nowrap;
 }
 
+/* ============================================================ */
+/* Iteration 28 — Verbesserte Session-Zusammenfassung          */
+/* ============================================================ */
+
+.summary-view {
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  padding: var(--sp-4) 0 var(--sp-8);
+}
+
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  flex-wrap: wrap;
+}
+.summary-ring-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+.summary-donut {
+  width: 100px;
+  height: 100px;
+}
+.summary-ring-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.summary-ring-pct {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--text);
+}
+.summary-ring-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.summary-header-text h2 {
+  font-size: 1.4rem;
+  margin-bottom: var(--sp-2);
+}
+.summary-header-text p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* XP Earned Row */
+.summary-xp-earned {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--brand) 8%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, var(--brand) 18%, var(--border));
+  flex-wrap: wrap;
+}
+.summary-xp-num {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--brand);
+}
+.summary-xp-unit {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.summary-xp-bar {
+  flex: 1;
+  height: 5px;
+  border-radius: 99px;
+  background: var(--border);
+  overflow: hidden;
+  min-width: 60px;
+}
+.summary-xp-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  transition: width 1s var(--ease-spring);
+}
+.summary-xp-level {
+  font-size: 0.75rem;
+  color: var(--brand);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Quick stats */
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+}
+.summary-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--sp-3);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+}
+.summary-stat-icon { color: var(--text-muted); }
+.summary-stat-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.summary-stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Rating breakdown */
+.summary-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+}
+.summary-rating-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px;
+  align-items: center;
+  gap: var(--sp-3);
+}
+.summary-rating-label { font-size: 0.82rem; font-weight: 600; color: var(--text-muted); }
+.summary-rating-bar {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--border);
+  overflow: hidden;
+}
+.summary-rating-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.8s var(--ease-spring);
+}
+.summary-rating-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* CTA */
+.summary-cta {
+  display: flex;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 460px) {
+  .summary-header { flex-direction: column; text-align: center; align-items: center; }
+  .summary-cta { flex-direction: column; }
+  .summary-cta .btn { width: 100%; }
+}
+
 
 
