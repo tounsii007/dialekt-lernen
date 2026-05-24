@@ -4983,5 +4983,46 @@ html.is-speaking .is-speakable {
   50%       { opacity: 0.6; transform: scale(0.75); }
 }
 
+/* ============================================================ */
+/* Iteration 24 — Erweiterte Suche: Filter & Trending          */
+/* ============================================================ */
+
+.cmdp-filter-row {
+  display: flex;
+  gap: 6px;
+  padding: 8px 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: nowrap;
+}
+.cmdp-filter-row::-webkit-scrollbar { display: none; }
+
+.cmdp-filter-chip {
+  flex-shrink: 0;
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1.5px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all var(--t-fast) var(--ease);
+  white-space: nowrap;
+}
+.cmdp-filter-chip:hover {
+  border-color: color-mix(in oklab, var(--fc, var(--brand)) 60%, transparent);
+  background: color-mix(in oklab, var(--fc, var(--brand)) 10%, var(--bg-soft));
+  color: var(--text);
+}
+.cmdp-filter-chip.is-active {
+  background: color-mix(in oklab, var(--fc, var(--brand)) 18%, var(--bg-soft));
+  border-color: color-mix(in oklab, var(--fc, var(--brand)) 55%, transparent);
+  color: color-mix(in oklab, var(--fc, var(--brand)) 85%, var(--text));
+  font-weight: 700;
+}
+
 
 

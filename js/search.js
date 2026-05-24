@@ -13,6 +13,11 @@ const DEBOUNCE_MS = 120;
 const RECENT_KEY = 'dialekto:recent-search';
 const RECENT_MAX = 5;
 
+// Trending searches shown when palette is empty
+const TRENDING = ['Servus', 'Moin', 'Digger', 'Babbel', 'Oida', 'geil', 'Grüß Gott'];
+
+let activeDialektFilter = null;
+
 let overlay;
 let searchInput;
 let results;
@@ -43,6 +48,10 @@ function commands() {
       run: () => go('#/quiz') },
     { id: 'cmd:entdecken', icon: 'map',      label: 'Dialekte entdecken',        meta: 'Übersicht aller Dialekte', kbd: 'E',
       run: () => go('#/entdecken') },
+    { id: 'cmd:karte',     icon: 'globe',    label: 'Dialekt-Karte öffnen',      meta: 'Geografische Übersicht',   kbd: 'K',
+      run: () => go('#/karte') },
+    { id: 'cmd:vergleich', icon: 'refresh',  label: 'Dialekte vergleichen',      meta: 'Gemeinsamkeiten finden',
+      run: () => go('#/vergleich') },
     { id: 'cmd:favoriten', icon: 'heart',    label: 'Favoriten öffnen',          meta: 'Statistiken & Markiertes',  kbd: 'F',
       run: () => go('#/favoriten') },
     { id: 'cmd:theme',     icon: 'sparkles', label: 'Hell / Dunkel umschalten',  meta: 'Theme wechseln',           kbd: 'T',
@@ -70,8 +79,21 @@ function toDialectItem(d) {
 }
 
 function ausdruckMatches(query) {
-  if (!query) return [];
-  return fuzzyAusdruecke(query, { limit: MAX_AUSDRUECKE, threshold: 0.25 }).map((a) => ({
+  if (!query && !activeDialektFilter) return [];
+  let results = query
+    ? fuzzyAusdruecke(query, { limit: MAX_AUSDRUECKE, threshold: 0.25 })
+    : [];
+  if (activeDialektFilter) {
+    results = results.filter(a => a.dialektId === activeDialektFilter);
+    if (!results.length && !query) {
+      // Show first 10 from filtered dialect
+      const d = DIALEKTE.find(x => x.id === activeDialektFilter);
+      if (d) results = d.ausdruecke.slice(0, MAX_AUSDRUECKE).map(a => ({
+        ...a, dialektId: d.id, dialektName: d.name, dialektFlag: d.flag, dialektFarbe: d.farbe
+      }));
+    }
+  }
+  return results.map((a) => ({
     id: `a:${a.dialektId}:${a.id}`,
     icon: null,
     flag: a.dialektFlag,
@@ -79,6 +101,16 @@ function ausdruckMatches(query) {
     meta: `↦ ${a.hochdeutsch} · ${a.dialektName}`,
     colour: a.dialektFarbe,
     run: () => go(`#/dialekt/${a.dialektId}`),
+  }));
+}
+
+function trendingItems() {
+  return TRENDING.map(q => ({
+    id: `trend:${q}`,
+    icon: 'flame',
+    label: q,
+    meta: 'Trend-Suche',
+    run: () => { searchInput.value = q; renderSearchResults(q); searchInput.focus(); }
   }));
 }
 
@@ -138,6 +170,29 @@ function activate(item) {
   closeSearch();
 }
 
+function renderDialektFilterRow() {
+  const row = el('div', { class: 'cmdp-filter-row' });
+  // "Alle" chip
+  const allChip = el('button', {
+    class: 'cmdp-filter-chip' + (!activeDialektFilter ? ' is-active' : ''),
+    onClick: () => { activeDialektFilter = null; renderDialektFilterRow(); renderSearchResults(searchInput.value); }
+  }, 'Alle');
+  row.appendChild(allChip);
+  DIALEKTE.forEach(d => {
+    const chip = el('button', {
+      class: 'cmdp-filter-chip' + (activeDialektFilter === d.id ? ' is-active' : ''),
+      style: { '--fc': d.farbe },
+      onClick: () => { activeDialektFilter = d.id; renderDialektFilterRow(); renderSearchResults(searchInput.value); }
+    }, d.flag + ' ' + d.name);
+    row.appendChild(chip);
+  });
+  // Replace or insert
+  const existing = results.previousElementSibling?.classList.contains('cmdp-filter-row')
+    ? results.previousElementSibling : null;
+  if (existing) existing.replaceWith(row);
+  else results.insertAdjacentElement('beforebegin', row);
+}
+
 function renderSearchResults(query) {
   results.innerHTML = '';
   flatItems = [];
@@ -145,16 +200,23 @@ function renderSearchResults(query) {
   const needle = normalize(query);
   const raw = (query || '').trim();
 
+  renderDialektFilterRow();
+
   const groups = [];
-  if (!needle) {
+  if (!needle && !activeDialektFilter) {
     const recent = recentMatches();
-    if (recent.length) groups.push(['Zuletzt', recent]);
+    if (recent.length) groups.push(['Zuletzt gesucht', recent]);
+    groups.push(['🔥 Trending', trendingItems()]);
   }
-  const cmds = commandMatches(needle);
-  if (cmds.length) groups.push(['Aktionen', cmds]);
+  if (!activeDialektFilter) {
+    const cmds = commandMatches(needle);
+    if (cmds.length) groups.push(['Aktionen', cmds]);
+  }
   // Dialekte: ohne Query alle ersten paar; mit Query fuzzy.
-  const dials = dialectMatches(raw);
-  if (dials.length) groups.push(['Dialekte', dials]);
+  if (!activeDialektFilter) {
+    const dials = dialectMatches(raw);
+    if (dials.length) groups.push(['Dialekte', dials]);
+  }
   const ausds = ausdruckMatches(raw);
   if (ausds.length) groups.push(['Ausdrücke', ausds]);
 
@@ -195,6 +257,7 @@ function onKeydown(e) {
 }
 
 export function openSearch() {
+  activeDialektFilter = null;
   overlay.classList.add('is-open');
   overlay.setAttribute('aria-hidden', 'false');
   searchInput.value = '';
