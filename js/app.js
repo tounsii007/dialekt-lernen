@@ -17,6 +17,7 @@ import { getXp } from './store/xp.js';
 import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
 import { initGoalEvents } from './util/daily-goal.js';
+import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const ADD_DIALECT_HINT_TEXT =
@@ -76,6 +77,7 @@ function init() {
   initXpHud();
   initRipple();
   initGoalEvents(toast);
+  initShortcutsOverlay();
   // XP-Balken in der Topbar befüllen
   const xpSlot = document.getElementById('xpBarSlot');
   if (xpSlot) xpSlot.appendChild(renderXpBar(getXp()));
