@@ -2,6 +2,7 @@ import { el, normalize } from '../util.js';
 import { DIALEKTE } from '../../data/dialekte.js';
 import { renderDialektCard } from './partials.js';
 import { emptyIllustration } from '../util/icons.js';
+import { fuzzyDialekte } from '../util/search-index.js';
 
 export function renderEntdecken(root) {
   root.innerHTML = '';
@@ -29,10 +30,8 @@ export function renderEntdecken(root) {
   const grid = el('div', { class: 'dialekt-grid' });
   function render(filter = '') {
     grid.innerHTML = '';
-    const n = normalize(filter);
-    const items = DIALEKTE.filter(d =>
-      !n || normalize(d.name).includes(n) || normalize(d.region).includes(n) || normalize(d.bundesland).includes(n)
-    );
+    const raw = (filter || '').trim();
+    const items = raw ? fuzzyDialekte(raw, { threshold: 0.2, limit: 30 }) : DIALEKTE;
     if (!items.length) {
       grid.appendChild(el('div', { class: 'empty-state', style: { gridColumn: '1 / -1' } },
         emptyIllustration('search'),

@@ -5,6 +5,7 @@ import { renderExpressionCard } from './partials.js';
 import { markDialectVisited } from '../store.js';
 import { getLernstand } from '../store/learning.js';
 import { icon, emptyIllustration } from '../util/icons.js';
+import { buildIndex, searchIndex } from '../util/fuzzy.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -97,17 +98,24 @@ export function renderDialektDetail(root, dialektId) {
 
   let activeCat = 'all';
   let term = '';
+  // Lokaler Fuzzy-Index pro Dialekt
+  const localIdx = buildIndex(d.ausdruecke, [
+    { key: 'ausdruck',    weight: 3.0 },
+    { key: 'hochdeutsch', weight: 2.0 },
+    { key: 'bedeutung',   weight: 1.0 }
+  ]);
 
   function render() {
     grid.innerHTML = '';
-    const n = normalize(term);
-    const items = d.ausdruecke.filter(a => {
-      if (activeCat !== 'all' && a.kategorie !== activeCat) return false;
-      if (!n) return true;
-      return normalize(a.ausdruck).includes(n)
-        || normalize(a.hochdeutsch).includes(n)
-        || normalize(a.bedeutung).includes(n);
-    });
+    const raw = term.trim();
+    let pool = activeCat === 'all' ? d.ausdruecke : d.ausdruecke.filter(a => a.kategorie === activeCat);
+    let items;
+    if (!raw) {
+      items = pool;
+    } else {
+      const matches = new Set(searchIndex(localIdx, raw, { threshold: 0.2, limit: 500 }).map(r => r.rec));
+      items = pool.filter(a => matches.has(a));
+    }
     if (!items.length) {
       grid.appendChild(el('div', { class: 'empty-state' },
         el('span', { class: 'emoji' }, '🔎'),

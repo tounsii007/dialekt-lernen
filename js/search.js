@@ -4,6 +4,7 @@
 import { $, $$, el, debounce, normalize, go } from './util.js';
 import { ALLE_AUSDRUECKE, DIALEKTE } from '../data/dialekte.js';
 import { icon } from './util/icons.js';
+import { fuzzyDialekte, fuzzyAusdruecke } from './util/search-index.js';
 
 const MAX_DIALECTS = 5;
 const MAX_AUSDRUECKE = 10;
@@ -51,38 +52,34 @@ function commands() {
   ];
 }
 
-function dialectMatches(needle) {
-  return DIALEKTE
-    .filter((d) => !needle || normalize(d.name).includes(needle) || normalize(d.region).includes(needle) || normalize(d.bundesland).includes(needle))
-    .slice(0, MAX_DIALECTS)
-    .map((d) => ({
-      id: `d:${d.id}`,
-      icon: null,
-      flag: d.flag,
-      label: d.name,
-      meta: `${d.region} · ${d.ausdruecke.length} Ausdrücke`,
-      colour: d.farbe,
-      run: () => go(`#/dialekt/${d.id}`),
-    }));
+function dialectMatches(query) {
+  if (!query) return DIALEKTE.slice(0, MAX_DIALECTS).map(toDialectItem);
+  return fuzzyDialekte(query, { limit: MAX_DIALECTS, threshold: 0.25 }).map(toDialectItem);
 }
 
-function ausdruckMatches(needle) {
-  if (!needle) return [];
-  return ALLE_AUSDRUECKE
-    .filter((a) =>
-      normalize(a.ausdruck).includes(needle)
-      || normalize(a.hochdeutsch).includes(needle)
-      || normalize(a.bedeutung).includes(needle))
-    .slice(0, MAX_AUSDRUECKE)
-    .map((a) => ({
-      id: `a:${a.dialektId}:${a.id}`,
-      icon: null,
-      flag: a.dialektFlag,
-      label: a.ausdruck,
-      meta: `↦ ${a.hochdeutsch} · ${a.dialektName}`,
-      colour: a.dialektFarbe,
-      run: () => go(`#/dialekt/${a.dialektId}`),
-    }));
+function toDialectItem(d) {
+  return {
+    id: `d:${d.id}`,
+    icon: null,
+    flag: d.flag,
+    label: d.name,
+    meta: `${d.region} · ${d.ausdruecke.length} Ausdrücke`,
+    colour: d.farbe,
+    run: () => go(`#/dialekt/${d.id}`),
+  };
+}
+
+function ausdruckMatches(query) {
+  if (!query) return [];
+  return fuzzyAusdruecke(query, { limit: MAX_AUSDRUECKE, threshold: 0.25 }).map((a) => ({
+    id: `a:${a.dialektId}:${a.id}`,
+    icon: null,
+    flag: a.dialektFlag,
+    label: a.ausdruck,
+    meta: `↦ ${a.hochdeutsch} · ${a.dialektName}`,
+    colour: a.dialektFarbe,
+    run: () => go(`#/dialekt/${a.dialektId}`),
+  }));
 }
 
 function commandMatches(needle) {
@@ -146,6 +143,7 @@ function renderSearchResults(query) {
   flatItems = [];
   activeIndex = 0;
   const needle = normalize(query);
+  const raw = (query || '').trim();
 
   const groups = [];
   if (!needle) {
@@ -154,9 +152,10 @@ function renderSearchResults(query) {
   }
   const cmds = commandMatches(needle);
   if (cmds.length) groups.push(['Aktionen', cmds]);
-  const dials = dialectMatches(needle);
+  // Dialekte: ohne Query alle ersten paar; mit Query fuzzy.
+  const dials = dialectMatches(raw);
   if (dials.length) groups.push(['Dialekte', dials]);
-  const ausds = ausdruckMatches(needle);
+  const ausds = ausdruckMatches(raw);
   if (ausds.length) groups.push(['Ausdrücke', ausds]);
 
   if (!groups.length) {
