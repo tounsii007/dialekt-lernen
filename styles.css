@@ -5666,5 +5666,172 @@ html.is-speaking .is-speakable {
   .summary-cta .btn { width: 100%; }
 }
 
+/* ============================================================ */
+/* Iteration 29 — Dark Mode Refinements & Glassmorphism        */
+/* ============================================================ */
+
+/* Improved glassmorphism on cards */
+.card,
+.dialekt-card,
+.stat-card,
+.dash-card {
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in oklab, var(--bg-elev) 94%, transparent) 0%,
+      color-mix(in oklab, var(--bg-soft) 88%, transparent) 100%
+    ) !important;
+  backdrop-filter: blur(12px) saturate(1.15);
+  -webkit-backdrop-filter: blur(12px) saturate(1.15);
+}
+
+/* Dark mode: deeper cards, richer shadows */
+[data-theme="dark"] .card,
+[data-theme="dark"] .dialekt-card,
+[data-theme="dark"] .stat-card {
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in oklab, var(--bg-elev) 85%, transparent) 0%,
+      color-mix(in oklab, var(--bg-soft) 75%, transparent) 100%
+    ) !important;
+  box-shadow:
+    0 1px 0 hsl(0 0% 100% / .04) inset,
+    var(--shadow-md);
+}
+
+/* Topbar: stronger blur in dark mode */
+[data-theme="dark"] .topbar {
+  background: color-mix(in oklab, var(--bg) 85%, transparent);
+  backdrop-filter: blur(24px) saturate(1.3);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Search overlay: better glass */
+.search-panel.cmdp-panel {
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in oklab, var(--bg-elev) 92%, transparent),
+      color-mix(in oklab, var(--bg-soft) 85%, transparent)
+    );
+  backdrop-filter: blur(20px) saturate(1.3);
+  box-shadow:
+    0 0 0 1px var(--border),
+    0 32px 80px hsl(0 0% 0% / .3),
+    0 8px 30px hsl(0 0% 0% / .15);
+}
+
+/* Topbar actions: icon buttons polish */
+.icon-btn {
+  border-radius: var(--r-md);
+  padding: 8px;
+  background: transparent;
+  border: 1.5px solid transparent;
+  transition:
+    background var(--t-fast) var(--ease),
+    border-color var(--t-fast) var(--ease),
+    transform var(--t-fast) var(--ease-spring),
+    box-shadow var(--t-fast) var(--ease);
+}
+.icon-btn:hover {
+  background: var(--bg-soft);
+  border-color: var(--border);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px hsl(0 0% 0% / .1);
+}
+
+/* Smooth theme transition */
+html {
+  color-scheme: light dark;
+  transition:
+    background-color var(--t-med) var(--ease),
+    color var(--t-med) var(--ease);
+}
+
+/* Footer: glass morphism */
+.footer {
+  background: color-mix(in oklab, var(--bg) 80%, transparent) !important;
+  backdrop-filter: blur(12px);
+}
+
+/* Improved flashcard glass */
+.flashcard-face.front {
+  background:
+    linear-gradient(
+      155deg,
+      color-mix(in oklab, var(--bg-elev) 95%, transparent) 0%,
+      color-mix(in oklab, var(--bg-soft) 85%, transparent) 100%
+    );
+  backdrop-filter: blur(12px);
+}
+
+/* Toast: richer glass */
+.toast {
+  backdrop-filter: blur(16px) saturate(1.2);
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in oklab, var(--bg-elev) 90%, transparent),
+      color-mix(in oklab, var(--bg-soft) 85%, transparent)
+    ) !important;
+  border: 1px solid var(--border);
+  box-shadow:
+    0 1px 0 hsl(0 0% 100% / .06) inset,
+    0 16px 48px hsl(0 0% 0% / .2);
+}
+
+/* Skeleton improved shimmer */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton-card,
+.skeleton-line {
+  background:
+    linear-gradient(
+      90deg,
+      var(--bg-soft) 0%,
+      color-mix(in oklab, var(--bg-soft) 70%, var(--bg-elev)) 40%,
+      color-mix(in oklab, var(--brand) 5%, var(--bg-soft)) 60%,
+      var(--bg-soft) 100%
+    )
+    0 0 / 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+
+/* Better onboarding spotlight */
+.onboard-card {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in oklab, var(--bg-elev) 96%, transparent),
+      color-mix(in oklab, var(--brand) 4%, var(--bg-elev))
+    );
+  backdrop-filter: blur(24px) saturate(1.4);
+  border: 1px solid color-mix(in oklab, var(--brand) 25%, var(--border));
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, var(--brand) 20%, transparent),
+    0 32px 80px hsl(0 0% 0% / .35),
+    0 0 40px color-mix(in oklab, var(--brand) 20%, transparent);
+}
+
+/* XP chip: refined */
+.xp-chip {
+  background: color-mix(in oklab, var(--accent) 14%, var(--bg-elev));
+  border: 1.5px solid color-mix(in oklab, var(--accent) 35%, transparent);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 16px color-mix(in oklab, var(--accent) 25%, transparent);
+}
+
+/* Install chip: improved */
+.install-chip {
+  backdrop-filter: blur(16px) saturate(1.3);
+  border: 1px solid color-mix(in oklab, var(--brand) 25%, var(--border));
+  box-shadow:
+    0 8px 32px hsl(0 0% 0% / .2),
+    0 0 0 1px color-mix(in oklab, var(--brand) 12%, transparent);
+}
+
 
 
