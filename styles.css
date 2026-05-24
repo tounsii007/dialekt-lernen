@@ -5024,5 +5024,111 @@ html.is-speaking .is-speakable {
   font-weight: 700;
 }
 
+/* ============================================================ */
+/* Iteration 25 — Ripple-Effekte & Micro-Interaktionen         */
+/* ============================================================ */
+
+/* Ripple: Elterncontainer braucht position:relative und overflow:hidden */
+.btn,
+.fc-mc-opt,
+.karte-bubble,
+.dash-chip,
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-wave {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, hsl(0 0% 100% / .35) 0%, transparent 70%);
+  transform: scale(0);
+  animation: rippleExpand var(--ripple-dur, 0.55s) cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes rippleExpand {
+  to { transform: scale(1); opacity: 0; }
+}
+
+/* Enhanced card hover: subtle lift + glow using data-spotlight trick */
+.card:hover,
+.stat-card:hover,
+.dash-card:hover {
+  transform: translateY(-2px) scale(1.005);
+}
+
+/* Dialekt card: shimmer on hover */
+.dialekt-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    hsl(0 0% 100% / .06) 50%,
+    transparent 80%
+  );
+  transform: translateX(-100%);
+  transition: transform 0s;
+  pointer-events: none;
+}
+.dialekt-card:hover::after {
+  transform: translateX(100%);
+  transition: transform 0.5s ease;
+}
+
+/* Expression card: accent line on left grows */
+.expression-card {
+  border-left-width: 3px;
+  transition: border-left-width var(--t-fast) var(--ease),
+              transform var(--t-fast) var(--ease-spring),
+              box-shadow var(--t-fast) var(--ease);
+}
+.expression-card:hover {
+  border-left-width: 5px;
+  transform: translateX(3px);
+}
+
+/* Active press feedback for all interactive elements */
+.btn:active     { transform: scale(0.96); }
+.btn-primary:active { filter: brightness(1.08); }
+.icon-btn:active { transform: scale(0.88); }
+
+/* Smooth underline on nav links via animated gradient */
+.nav-link span {
+  background: linear-gradient(currentColor, currentColor) no-repeat bottom center;
+  background-size: 0% 2px;
+  transition: background-size 0.25s var(--ease);
+  padding-bottom: 2px;
+}
+.nav-link:hover span,
+.nav-link.is-active span {
+  background-size: 100% 2px;
+}
+
+/* Glowing input focus for search */
+.expr-search:focus-within {
+  box-shadow:
+    0 0 0 3px color-mix(in oklab, var(--brand) 22%, transparent),
+    0 4px 16px color-mix(in oklab, var(--brand) 12%, transparent);
+}
+
+/* Card spotlight enhanced: radial glow follows cursor (--mx/--my set by JS) */
+.card[data-spotlight] {
+  --cx: 50%;
+  --cy: 50%;
+}
+.card[data-spotlight]:hover {
+  box-shadow:
+    0 0 0 1px color-mix(in oklab, var(--brand) 18%, var(--border)),
+    0 16px 40px hsl(0 0% 0% / .18),
+    radial-gradient(
+      circle 200px at var(--cx) var(--cy),
+      color-mix(in oklab, var(--brand) 8%, transparent) 0%,
+      transparent 100%
+    ) 0 0 / 100% 100%;
+}
+
 
 
