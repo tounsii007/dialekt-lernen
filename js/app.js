@@ -82,3 +82,22 @@ window.addEventListener('error', (e) => {
 window.addEventListener('unhandledrejection', (e) => {
   console.error('[Dialekto] unhandled', e.reason);
 });
+
+// Dev-Validator: console.log('dialekto.validate()') oder Ctrl+Shift+V
+import('./util/schema.js').then((m) => {
+  window.dialektoValidate = m.logValidationReport;
+  // Auf Localhost automatisch ein Mini-Report im Log.
+  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+    const { summary } = m.logValidationReport();
+    if (summary.errors > 0) {
+      toast(`Validator: ${summary.errors} Fehler in den Daten`, 'info', 3500);
+    }
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'v') {
+      e.preventDefault();
+      const r = m.logValidationReport();
+      toast(`${r.summary.errors} Fehler · ${r.summary.warnings} Warnungen · ${r.summary.info} Infos`, 'info', 3000);
+    }
+  });
+}).catch(() => {});
