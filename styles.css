@@ -3363,6 +3363,138 @@ html.is-speaking .fc-big-speak {
   to   { opacity: 1; transform: scale(1); }
 }
 
+/* ============================================================ */
+/* Iteration 13 — Vergleichs-View                                 */
+/* ============================================================ */
+
+.compare-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+.compare-group {
+  position: relative;
+  padding: var(--sp-5);
+  border-radius: var(--r-xl);
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-elev) 92%, transparent),
+      color-mix(in oklab, var(--bg-elev) 78%, transparent));
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  isolation: isolate;
+}
+.compare-group::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--brand) 14%, transparent),
+    transparent 60%);
+  z-index: -1;
+  opacity: .6;
+}
+.compare-group-head {
+  margin-bottom: var(--sp-4);
+}
+.compare-group-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: 6px;
+}
+.compare-group-cat {
+  padding: 4px 12px;
+  border-radius: 99px;
+  background: color-mix(in oklab, var(--brand) 18%, transparent);
+  color: var(--brand);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.compare-group-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+.compare-group-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-3);
+}
+.compare-cell {
+  --dc: var(--brand);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-md);
+  background: color-mix(in oklab, var(--bg-soft) 60%, transparent);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--dc);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease-spring), box-shadow var(--t-fast) var(--ease);
+  position: relative;
+}
+.compare-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px color-mix(in oklab, var(--dc) 28%, transparent);
+}
+.compare-cell-flag {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.compare-cell-content {
+  flex: 1;
+  min-width: 0;
+}
+.compare-cell-name {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.compare-cell-expr {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2px;
+  word-break: break-word;
+}
+.compare-cell-speak {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: color-mix(in oklab, var(--dc) 12%, transparent);
+  border: 1px solid color-mix(in oklab, var(--dc) 25%, transparent);
+  color: var(--dc);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all var(--t-fast) var(--ease);
+}
+.compare-cell-speak:hover {
+  background: var(--dc);
+  color: white;
+  transform: scale(1.08);
+}
+
 
 
 

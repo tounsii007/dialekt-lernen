@@ -14,6 +14,7 @@ import { renderLernen, resetLernSession } from './views/lernen.js';
 import { renderQuiz, resetQuizSession } from './views/quiz.js';
 import { renderFavoriten } from './views/favoriten.js';
 import { renderShare } from './views/share.js';
+import { renderVergleich } from './views/vergleich.js';
 
 const DEFAULT_ROUTE = 'home';
 
@@ -41,6 +42,8 @@ function renderRoute(app, route, segs, params) {
       return renderFavoriten(app);
     case 'share':
       return renderShare(app, segs[1]);
+    case 'vergleich':
+      return renderVergleich(app);
     default:
       return renderHome(app);
   }
