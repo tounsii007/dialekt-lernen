@@ -15,6 +15,7 @@ import { renderEntdecken } from './views/entdecken.js';
 import { renderDialektDetail } from './views/dialektDetail.js';
 import { renderFavoriten } from './views/favoriten.js';
 import { renderKarte } from './views/karte.js';
+import { renderStatistiken } from './views/statistiken.js';
 
 const DEFAULT_ROUTE = 'home';
 
@@ -25,8 +26,9 @@ const ROUTE_LABELS = {
   quiz:      'Quiz',
   vergleich: 'Dialekt-Vergleich',
   favoriten: 'Favoriten und Statistiken',
-  karte:     'Dialekt-Karte',
-  dialekt:   'Dialekt-Details',
+  karte:        'Dialekt-Karte',
+  statistiken:  'Lernstatistiken',
+  dialekt:      'Dialekt-Details',
   share:     'Geteiltes Quiz-Resultat'
 };
 
@@ -99,6 +101,8 @@ async function renderRoute(app, route, segs, params) {
       return renderFavoriten(app);
     case 'karte':
       return renderKarte(app);
+    case 'statistiken':
+      return renderStatistiken(app);
     case 'lernen': {
       if (!lernenModule) {
         showSkeleton(app, 'flashcard');
