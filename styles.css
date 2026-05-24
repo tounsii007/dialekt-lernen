@@ -4724,5 +4724,207 @@ html.is-speaking .is-speakable {
   .fc-mc-options { grid-template-columns: 1fr; }
 }
 
+/* ============================================================ */
+/* Iteration 22 — Dialekt-Karte                                */
+/* ============================================================ */
+
+.karte-stage {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto var(--sp-8);
+  aspect-ratio: 100 / 105;
+  user-select: none;
+}
+
+.karte-bg-svg,
+.karte-lines-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.karte-country {
+  fill: color-mix(in oklab, var(--bg-soft) 80%, transparent);
+  stroke: var(--border);
+  stroke-width: 0.6;
+  transition: fill var(--t-med) var(--ease);
+}
+.karte-country.de { fill: color-mix(in oklab, var(--brand) 6%, var(--bg-soft)); }
+.karte-country.at { fill: color-mix(in oklab, hsl(210 70% 55%) 8%, var(--bg-soft)); }
+.karte-country.ch { fill: color-mix(in oklab, hsl(0 70% 50%) 8%, var(--bg-soft)); }
+
+.karte-line {
+  stroke: var(--border);
+  stroke-width: 0.4;
+  stroke-dasharray: 2 2;
+  opacity: 0.5;
+}
+
+/* Dialect bubbles */
+.karte-bubble {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background:
+    radial-gradient(circle at 35% 35%,
+      color-mix(in oklab, var(--dc) 22%, var(--bg-elev)),
+      color-mix(in oklab, var(--dc) 8%, var(--bg-elev)));
+  border: 2px solid color-mix(in oklab, var(--dc) 40%, var(--border));
+  box-shadow:
+    0 4px 20px color-mix(in oklab, var(--dc) 25%, transparent),
+    0 0 0 0 color-mix(in oklab, var(--dc) 40%, transparent);
+  cursor: pointer;
+  transition: transform var(--t-fast) var(--ease-spring),
+              box-shadow var(--t-fast) var(--ease),
+              border-color var(--t-fast) var(--ease);
+  z-index: 2;
+}
+.karte-bubble:hover,
+.karte-bubble:focus-visible {
+  transform: translate(-50%, -50%) scale(1.28);
+  box-shadow:
+    0 8px 30px color-mix(in oklab, var(--dc) 40%, transparent),
+    0 0 0 6px color-mix(in oklab, var(--dc) 20%, transparent);
+  border-color: var(--dc);
+  z-index: 10;
+}
+.karte-bubble:hover .karte-tooltip { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); pointer-events: auto; }
+
+.karte-flag { line-height: 1; }
+
+/* Progress ring */
+.karte-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: conic-gradient(
+    color-mix(in oklab, var(--dc) 60%, transparent) calc(var(--ring-progress, 0) * 360deg),
+    transparent 0
+  );
+  opacity: 0.7;
+  animation: karteRingPulse 2.5s ease-in-out infinite;
+}
+@keyframes karteRingPulse {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1; }
+}
+
+/* Tooltip */
+.karte-tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease-spring);
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--bg-elev) 96%, transparent),
+      color-mix(in oklab, var(--dc) 6%, var(--bg-elev)));
+  border: 1px solid color-mix(in oklab, var(--dc) 30%, var(--border));
+  border-radius: var(--r-lg);
+  padding: 8px 14px;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px hsl(0 0% 0% / .25);
+  z-index: 20;
+  min-width: 130px;
+}
+.karte-tooltip-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+.karte-tooltip-region {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.karte-tooltip-stat {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: color-mix(in oklab, var(--dc) 80%, var(--text));
+  margin-top: 4px;
+}
+
+/* Legend */
+.karte-legend {
+  position: absolute;
+  bottom: var(--sp-2);
+  right: var(--sp-2);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: color-mix(in oklab, var(--bg-elev) 88%, transparent);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 8px 12px;
+  backdrop-filter: blur(8px);
+}
+.karte-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.karte-legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.karte-legend-new      { background: var(--border); }
+.karte-legend-progress { background: var(--accent); opacity: 0.7; }
+
+/* Stats row */
+.karte-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-3);
+  margin-top: var(--sp-4);
+}
+.karte-stat-card {
+  background:
+    linear-gradient(135deg,
+      color-mix(in oklab, var(--bg-elev) 88%, transparent),
+      color-mix(in oklab, var(--bg-soft) 80%, transparent));
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-4);
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+.karte-stat-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+.karte-stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .karte-stats-row { grid-template-columns: 1fr 1fr; }
+}
+
 
 
