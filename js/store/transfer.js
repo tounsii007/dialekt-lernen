@@ -20,7 +20,9 @@ export function exportState() {
       lernStats:    state.lernStats,
       visited:      state.visited,
       achievements: state.achievements,
-      onboarded:    state.onboarded
+      onboarded:    state.onboarded,
+      preset:       state.preset,
+      notes:        state.notes
     }
   };
 }
@@ -103,6 +105,8 @@ export function importState(jsonOrObject, { strategy = 'replace' } = {}) {
       if (Array.isArray(d.visited)) state.visited = d.visited;
       if (d.achievements) state.achievements = d.achievements;
       if (d.onboarded != null) state.onboarded = !!d.onboarded;
+      if (d.preset)       state.preset       = d.preset;
+      if (d.notes)        state.notes        = d.notes;
     }
 
     persist();

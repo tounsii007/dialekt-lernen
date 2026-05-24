@@ -3685,6 +3685,53 @@ html.is-speaking .fc-big-speak {
   font-weight: 600;
 }
 
+/* ============================================================ */
+/* Iteration 18 — Inline-Notes pro Karte                          */
+/* ============================================================ */
+
+.expr-note {
+  margin-top: var(--sp-2);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--t-med) var(--ease);
+}
+.expr-note.has-note,
+.expr-note.is-open {
+  max-height: 200px;
+}
+.expr-note-input {
+  width: 100%;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg-soft) 60%, transparent);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  font-style: italic;
+  resize: vertical;
+  min-height: 48px;
+  outline: none;
+  transition: border-color var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease);
+}
+.expr-note-input::placeholder { color: var(--text-muted); opacity: .8; }
+.expr-note-input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand) 20%, transparent);
+}
+.expr-action[title="Notiz"] {
+  position: relative;
+}
+.expr-action.is-active[title="Notiz"]::after {
+  content: '';
+  position: absolute;
+  top: 4px; right: 4px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 6px var(--brand);
+}
+
 /* High-contrast mode (Windows) */
 @media (forced-colors: active) {
   .btn, .icon-btn, .nav-link, .dialekt-card,

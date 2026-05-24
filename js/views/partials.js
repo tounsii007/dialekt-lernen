@@ -1,6 +1,6 @@
 import { el, go, speak, escapeHtml, toast } from '../util.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
-import { isFavorit, toggleFavorit, getLernstand, setLernstand } from '../store.js';
+import { isFavorit, toggleFavorit, getLernstand, setLernstand, getNote, setNote } from '../store.js';
 
 export function renderDialektCard(d) {
   return el('button', {
@@ -60,6 +60,32 @@ export function renderExpressionCard(a, dialekt) {
     onClick: (e) => { e.stopPropagation(); speak(a.ausdruck); }
   }, el('span', { html: '🔊' }));
 
+  const note = getNote(dialekt.id, a.id);
+  const noteArea = el('textarea', {
+    class: 'expr-note-input',
+    placeholder: 'Eigene Notiz hinzufügen…',
+    maxlength: 280,
+    rows: 2
+  });
+  noteArea.value = note;
+  const noteWrap = el('div', { class: 'expr-note' + (note ? ' has-note' : '') }, noteArea);
+  noteArea.addEventListener('blur', () => {
+    const v = noteArea.value;
+    setNote(dialekt.id, a.id, v);
+    noteWrap.classList.toggle('has-note', !!v.trim());
+  });
+
+  const noteBtn = el('button', {
+    class: 'expr-action' + (note ? ' is-active' : ''),
+    title: 'Notiz',
+    'aria-label': 'Notiz bearbeiten',
+    onClick: (e) => {
+      e.stopPropagation();
+      noteWrap.classList.toggle('is-open');
+      if (noteWrap.classList.contains('is-open')) setTimeout(() => noteArea.focus(), 50);
+    }
+  }, el('span', { html: '📝' }));
+
   return el('article', { class: 'expr-card', dataset: { id: a.id, cat: a.kategorie } },
     el('div', { class: 'expr-head' },
       el('div', {},
@@ -73,9 +99,10 @@ export function renderExpressionCard(a, dialekt) {
       el('strong', {}, '„' + a.beispiel + '"'),
       a.beispiel_hd || ''
     ) : null,
+    noteWrap,
     el('div', { class: 'expr-foot' },
       el('span', { class: 'region-tag' }, dialekt.flag + ' ' + dialekt.name),
-      el('div', { class: 'expr-actions' }, speakBtn, favBtn, learnBtn)
+      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn)
     )
   );
 }

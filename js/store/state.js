@@ -50,7 +50,8 @@ function withDefaults(loaded) {
     achievements: loaded.achievements && typeof loaded.achievements === 'object'
                     ? loaded.achievements : {},
     onboarded:    !!loaded.onboarded,
-    preset:       typeof loaded.preset === 'string' ? loaded.preset : 'default'
+    preset:       typeof loaded.preset === 'string' ? loaded.preset : 'default',
+    notes:        loaded.notes && typeof loaded.notes === 'object' ? loaded.notes : {}
   };
 }
 
