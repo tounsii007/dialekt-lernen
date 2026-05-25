@@ -15,7 +15,8 @@ export const KATEGORIEN = {
   arbeit:      { id: 'arbeit',      label: 'Arbeit & Beruf',        icon: '💼' },
   sport:       { id: 'sport',       label: 'Sport & Freizeit',      icon: '⚽' },
   musik:       { id: 'musik',       label: 'Musik & Unterhaltung',  icon: '🎵' },
-  koerper:     { id: 'koerper',     label: 'Körper & Gesundheit',   icon: '💪' }
+  koerper:     { id: 'koerper',     label: 'Körper & Gesundheit',   icon: '💪' },
+  feiern:      { id: 'feiern',      label: 'Feste & Bräuche',       icon: '🎉' }
 };
 
 export const KATEGORIE_LIST = Object.values(KATEGORIEN);
