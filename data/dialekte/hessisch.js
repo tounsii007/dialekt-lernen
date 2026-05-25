@@ -2602,6 +2602,276 @@ export default {
       beispiel: 'Mei Tankwart erinnert sich an jeden Stammkunden.',
       beispiel_hd: 'Mein Tankstellenbetreiber erinnert sich an jeden Stammkunden.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'h-291',
+      ausdruck: 'Babbele',
+      hochdeutsch: 'reden / quatschen',
+      bedeutung: '„Babbele" bedeutet im Hessischen reden, schwätzen, plaudern. Sehr universell verwendet: „Mer babbele nochmal" für „Wir reden später nochmal". „Babbel net!" für „Quatsch keinen Unsinn!". Auch substantivisch: „der Babbel" für jemanden, der gerne redet. „Babbelei" ist endloses Geschwätz. Stammt vom mittelhochdeutschen „babbeln" — lautmalerisch für undeutliches Reden. Tief im hessischen Wortschatz verwurzelt. Klingt liebevoll bis spöttisch je nach Kontext.',
+      beispiel: 'Mer babbele schon den ganzen Abend.',
+      beispiel_hd: 'Wir reden schon den ganzen Abend.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-292',
+      ausdruck: 'Net wahr',
+      hochdeutsch: 'nicht wahr?',
+      bedeutung: '„Net wahr" ist DAS hessische Bekräftigungs-Partikel — angehängt an Aussagen, um Zustimmung zu erwarten. „Des is\' gut, net wahr?". Drückt nichts wirklich Hessen-spezifisches aus, aber der hessische Tonfall macht es zum Marker. Vergleichbar mit „ne?" oder „odda?". In hessischen Gesprächen alle paar Sätze einmal verwendet. Charakteristisches Element der hessischen Gesprächs-Melodie. Touristen erkennen Hessen sofort an „net wahr".',
+      beispiel: 'Der Apfelwein is\' lecker, net wahr?',
+      beispiel_hd: 'Der Apfelwein ist lecker, nicht wahr?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-293',
+      ausdruck: 'A weng',
+      hochdeutsch: 'ein wenig / ein bisschen',
+      bedeutung: '„A weng" ist hessisch für „ein wenig" — universale Mengenangabe. „A weng Salz" für eine Prise Salz. „A weng warten" für kurz warten. „A weng Geld" für etwas Geld. Drückt hessische Bescheidenheit und Verharmlosung aus. Stammt vom „wenig". Sehr häufig verwendet im hessischen Alltag, auch in Kombinationen wie „a klee weng" (ein klein wenig) für noch kleinere Mengen. Charakteristisch hessische Wortbildung.',
+      beispiel: 'Wartest a weng — i komm gleich!',
+      beispiel_hd: 'Wartest ein wenig — ich komme gleich!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-294',
+      ausdruck: 'Bobbelche',
+      hochdeutsch: 'Baby / kleines Kind',
+      bedeutung: 'Das „Bobbelche" ist hessisch für ein Baby oder Kleinkind — liebevolle Anrede. „Mei klees Bobbelche" für „mein kleines Baby". Diminutiv von „Bobbel", was wiederum Variation von „Puppe" sein könnte. Großeltern verwenden es oft für Enkelkinder. „Bobbelche im Wagen" als typische Familien-Szene. Klingt zärtlich und beschützend. In Volkslied und Kindergebrochen omnipräsent. Symbol für hessische Familien-Wärme.',
+      beispiel: 'Mei klees Bobbelche schläft jetzt.',
+      beispiel_hd: 'Mein kleines Baby schläft jetzt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-295',
+      ausdruck: 'Murmelle',
+      hochdeutsch: 'flüstern / leise reden',
+      bedeutung: '„Murmelle" ist hessisch für leise reden, flüstern oder murmeln. „Was murmelst du da vor dich hin?". Lautmalerei für undeutliches Reden. Im Gegensatz zu „babbele" (laut quatschen) ist „murmelle" leise und intim. Bei Liebeserklärungen, Geheimnissen oder schlechtem Gewissen. „Murmel-Gebet" als religiöses Bittgebet. Klingt zärtlich. Wird oft mit „in sich hinein" kombiniert: „in sich hinein murmelle" für stilles Selbstgespräch.',
+      beispiel: 'Was murmelst du da in deinen Bart hinein?',
+      beispiel_hd: 'Was murmelst du da in deinen Bart hinein?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-296',
+      ausdruck: 'Frenne',
+      hochdeutsch: 'Fragen / Wissbegierde',
+      bedeutung: '„Frenne" ist hessisch für viel und ausgiebig fragen, neugierig sein. „D\'Kinder frennen den ganzen Tag" für die ständigen Kinder-Fragen. „Frenne-Bua" ist ein neugieriger Junge. Stammt vermutlich von „forschen" oder mittelhochdeutschen Formen. Drückt liebevolle Spott über kindliche oder erwachsene Neugier aus. Manchmal auch negativ: jemand frennt zu viel — wird als aufdringlich empfunden. Hessische Sprache der täglichen Sozialkommunikation.',
+      beispiel: 'D\'Kinder frennen den ganzen Tag „warum?".',
+      beispiel_hd: 'Die Kinder fragen den ganzen Tag „warum?".',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-297',
+      ausdruck: 'Watt',
+      hochdeutsch: 'was',
+      bedeutung: '„Watt" ist die hessische Aussprache von „was" — vor allem in Nordhessen und im Westerwald-Raum. „Watt machst du da?". Im Gegensatz zur süddeutschen „wos"-Aussprache. Klingt fast norddeutsch (Westfalen-Einfluss). Auch im Frankfurter Hessisch hörbar, dort eher „wassu?" (was du?). „Wattn?" als hessische Variante von „Was?" (Erstaunen). Charakteristisches Lautmerkmal hessischer Dialekt-Variation.',
+      beispiel: 'Watt machst du da im Wäldsche?',
+      beispiel_hd: 'Was machst du da im Wäldchen?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-298',
+      ausdruck: 'Hawwe',
+      hochdeutsch: 'haben',
+      bedeutung: '„Hawwe" ist hessische Variante von „haben" — typisch frankfurterisch und oberhessisch. „I hawwe nix" für „ich habe nichts". „Ham mir noch was?" wird zu „hawwe mer noch was?". Stammt von der niederdeutschen Beeinflussung über Frankfurt — Sprachmischung über Jahrhunderte. Wird oft mit anderen hessischen Partikeln kombiniert: „hawwe mer doch", „hawwe se gesagt". Sehr typisch — Touristen lernen es als erstes hessisches Wort.',
+      beispiel: 'I hawwe heut noch Termin beim Doktor.',
+      beispiel_hd: 'Ich habe heute noch Termin beim Doktor.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-299',
+      ausdruck: 'Aach',
+      hochdeutsch: 'auch',
+      bedeutung: '„Aach" ist hessische Aussprache von „auch" — sehr verbreitet im Frankfurter Hessisch. „I will aach mitkommen" für „ich will auch mitkommen". Klangcharakteristisch — der „au"-Diphthong wird zu „aa" zusammengezogen. Auch in Kombinationen: „aach noch" (auch noch), „aach mol" (auch mal). Ein hessisches Markenzeichen — wer „aach" sagt, ist eindeutig Hesse. In Volkslied und Mundart-Komödie zentraler Lautmerkmal.',
+      beispiel: 'I komm aach mit nach Sachsenhause.',
+      beispiel_hd: 'Ich komme auch mit nach Sachsenhausen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-300',
+      ausdruck: 'Ach was!',
+      hochdeutsch: 'Ach was!',
+      bedeutung: '„Ach was!" ist universeller hessischer Ausruf der Verwunderung, Empörung oder Begeisterung. Multifunktional je nach Tonfall: „Ach was, Schnaps zum Apfelwein? Bin ich Bauer?" (Empörung). „Ach was, die hat Geburtstag? Glückwunsch!" (Überraschung). „Ach was, Frankfurt gegen Bayern? Wir gewinnen!" (Begeisterung). Hessische Lautcharakteristik — wird gedehnt ausgesprochen, oft mit Hand-Gesten begleitet. Charakteristisch hessisch.',
+      beispiel: 'Ach was — d\'Lottozahlen sind richtig!',
+      beispiel_hd: 'Ach was — die Lottozahlen sind richtig!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-301',
+      ausdruck: 'Mer',
+      hochdeutsch: 'wir / man',
+      bedeutung: '„Mer" ist hessische Variante von „wir" oder „man". „Mer geh\'n in Wirtschaft" für „wir gehen in die Wirtschaft". „Des macht mer net" für „das macht man nicht". Charakteristische hessische Pronomen-Vereinfachung. Stammt vom alten deutschen „mir" (wir). Sehr typisch — wird oft mehrfach pro Satz verwendet: „Mer hawwe mer mal überlegt, dass mer mol nach Sachsenhause gehen". Hessische Sprach-Identität.',
+      beispiel: 'Mer geh\'n morgen in d\'Schule.',
+      beispiel_hd: 'Wir gehen morgen in die Schule.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-302',
+      ausdruck: 'Sich aach',
+      hochdeutsch: 'sich auch / sicher auch',
+      bedeutung: '„Sich aach" ist hessisches Bekräftigungs-Idiom — Mischung aus „sich auch" und „sicher auch". „Sich aach, des werd gut!" für „Klar, das wird gut!". Drückt Selbstverständlichkeit und Zustimmung aus. Wird oft am Satz-Anfang verwendet, manchmal als Antwort: „Geht\'s dir gut?" — „Sich aach!". Hessische Sprach-Charakteristik. Klingt locker und entspannt. Schwer ins Hochdeutsche zu übersetzen — die Bedeutung liegt im Tonfall.',
+      beispiel: 'Sich aach komm i mit auf\'n Apfelwein!',
+      beispiel_hd: 'Sicher komme ich mit auf einen Apfelwein!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-303',
+      ausdruck: 'Babbedeckel',
+      hochdeutsch: 'Bierdeckel',
+      bedeutung: 'Der „Babbedeckel" ist hessische Bezeichnung für Bierdeckel — Pappuntersetzer für Apfelwein-Gläser oder Biergläser in der Wirtschaft. „Babbe" (Pappe) + „Deckel". Wird auch metaphorisch verwendet: „a flacher Babbedeckel" für etwas Dünnes, Unbedeutendes. Frankfurter Wirtschaften haben oft Eintracht-Babbedeckel. Sammler-Objekte für manche. „Babbedeckel-Sammlung" als Hobby. Symbol für hessische Wirtschaftskultur und Alltagsgegenstände.',
+      beispiel: 'Bring mer noch a paar Babbedeckel für d\'Geripptes.',
+      beispiel_hd: 'Bring mir noch ein paar Bierdeckel für die Geripptes.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-304',
+      ausdruck: 'Schnurrn',
+      hochdeutsch: 'schnurren / zufrieden sein',
+      bedeutung: '„Schnurrn" bedeutet im Hessischen zufrieden sein, sich behaglich fühlen — wie eine schnurrende Katze. „Der schnurrt vor Zufriedenheit". Lautmalerei vom Katzen-Schnurren. Wird verwendet, um tiefe Behaglichkeit zu beschreiben — nach gutem Essen, beim Apfelwein, im warmen Bett. „Sich schnurren machen" bedeutet sich entspannen. Klingt liebevoll, fast kindlich. Hessische Sprache der täglichen Befindlichkeit. Auch metaphorisch: ein Motor „schnurrt" wenn er gut läuft.',
+      beispiel: 'Nach\'em Mittagessen schnurrt der Opa auf\'m Sofa.',
+      beispiel_hd: 'Nach dem Mittagessen schnurrt der Opa auf dem Sofa.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-305',
+      ausdruck: 'Krätschl',
+      hochdeutsch: 'kleiner Mensch / Knirps',
+      bedeutung: 'Ein „Krätschl" ist im Hessischen ein kleiner Mensch — meist ein Kind oder klein gewachsener Erwachsener. „A klees Krätschl" für ein klein gewachsenes Kind. Liebevolle Verniedlichung. Auch leicht spöttisch: „der oide Krätschl" für jemand, der sich aufspielt obwohl klein. Stammt vermutlich vom „Kratze" (Reibahlen). In hessischer Kindheits-Sprache verbreitet. Großeltern verwenden es oft für Enkel. Symbol für hessische Wärme im Spott.',
+      beispiel: 'Wat\'n nettes Krätschl, dei klee Schwester!',
+      beispiel_hd: 'Was für ein nettes Knirps, deine kleine Schwester!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-306',
+      ausdruck: 'Schmackes',
+      hochdeutsch: 'Wucht / Kraft / Schwung',
+      bedeutung: '„Schmackes" beschreibt im Hessischen Wucht, Kraft, Energie oder Schwung. „A Schlag mit Schmackes" für einen kraftvollen Schlag. „Mit Schmackes durchstarten" für mit voller Energie loslegen. Im Sport, beim Arbeiten, beim Tanzen verwendet. „Eintracht-Schmackes" als Fan-Begriff. Auch metaphorisch: „a Idee mit Schmackes" für eine wirkungsvolle Idee. Hessisches Sprachbild mit kräftiger Konnotation. Drückt Aktivität und Begeisterung aus.',
+      beispiel: 'Mit Schmackes hat die Eintracht gespielt!',
+      beispiel_hd: 'Mit Wucht hat die Eintracht gespielt!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-307',
+      ausdruck: 'Tuwacka',
+      hochdeutsch: 'Tabak',
+      bedeutung: '„Tuwacka" ist hessisch für Tabak — meist Pfeifen-Tabak. Stammt vom mittelhochdeutschen Lehnwort, das in Hessen Variante „Tuwacka" entwickelt hat. „A Pfeifche Tuwacka" für eine Pfeife Tabak. Auch metaphorisch: „so a Tuwacka!" als hessischer Ausruf der Empörung über etwas Schlechtes (wie Tabak schmeckt schlecht?). Im hessischen Sprachgebrauch der älteren Generation üblich. Heute selten — Pfeifenraucher werden weniger.',
+      beispiel: 'Mei Großvater rauchte immer Tuwacka.',
+      beispiel_hd: 'Mein Großvater rauchte immer Tabak.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-308',
+      ausdruck: 'Zackeli',
+      hochdeutsch: 'klein und flink',
+      bedeutung: '„Zackeli" beschreibt im Hessischen einen kleinen, flinken, lebhaften Menschen — meist ein Kind. „Sei doch nicht so zackeli!" als Ermahnung an unruhiges Kind. Stammt vom „Zacke" oder „zackern" (zappeln). „A Zackeli" als Kompliment für Behendigkeit, aber auch Spott über Hyperaktivität. Im hessischen Familienleben verwendet. Klingt liebevoll. Auch als Charakterisierung: „der is\' so a Zackeli" für einen rastlosen, ungeduldigen Menschen.',
+      beispiel: 'Mei Klee is\' so a Zackeli — keine Minute still.',
+      beispiel_hd: 'Mein Kleines ist so ein Zappelphilipp — keine Minute still.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-309',
+      ausdruck: 'Maul halten',
+      hochdeutsch: 'still sein',
+      bedeutung: '„Maul halten" ist hessisch-derbe Aufforderung, still zu sein. „Halt dei Maul!" als direkte Anweisung. Hessische Direktheit ungeschönt — keine Höflichkeit, klare Ansage. Im Gegensatz zu „sei bitte ruhig" sehr direkt. Wird in hessischen Familien, unter Kollegen, im Sport-Vereinsleben verwendet. Manchmal liebevoll-spöttisch: „Halt doch dei Maul, du Tunichtgut!". Trotz Härte oft mit Augenzwinkern. Klassisches Beispiel hessischer Direktheit.',
+      beispiel: 'Halt endlich dei Maul, i kann mich nicht konzentrieren!',
+      beispiel_hd: 'Halt endlich den Mund, ich kann mich nicht konzentrieren!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-310',
+      ausdruck: 'Grappa-Reste',
+      hochdeutsch: 'gemixte Schnaps-Reste',
+      bedeutung: '„Grappa-Reste" ist hessische Bezeichnung für die Reste verschiedener Schnaps-Flaschen, die zusammen getrunken werden. Tradition in Sachsenhäuser Apfelwein-Wirtschaften — gegen Mitternacht werden die Reste verschiedener Schnäpse gemischt und ausgeschenkt. Charakteristisch hessisch — nichts wird verschwendet. „A Grappa-Reste, bittsche!" als spätabendliche Bestellung. Hessische Sparsamkeit trifft hessische Lebensfreude. Symbol für unkonventionelle Apfelwein-Wirtschaftskultur.',
+      beispiel: 'Z\'mitternacht gibt\'s Grappa-Reste im Atschel.',
+      beispiel_hd: 'Zur Mitternacht gibt es gemixte Schnaps-Reste im Atschel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-311',
+      ausdruck: 'Schau',
+      hochdeutsch: 'so wie es ist / na ja',
+      bedeutung: '„Schau" ist hessische Füllpartikel — meist am Satzanfang oder als Antwort verwendet. „Schau, des is\' halt so" für „so wie es ist, ist es eben". Drückt resignierende Zustimmung aus. Vergleichbar mit norddeutschem „nu ja" oder bayrischem „naja". Wird oft mit Schulterzucken kombiniert. Hessische Lakonie pur. Klingt entspannt und ergeben. Wer „schau" sagt, akzeptiert die Realität ohne weiter zu diskutieren. Hessische Lebensphilosophie.',
+      beispiel: 'Schau, des Leben is\' halt net immer fair.',
+      beispiel_hd: 'Naja, das Leben ist halt nicht immer fair.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-312',
+      ausdruck: 'Wässerche',
+      hochdeutsch: 'Wässerchen / Wasser',
+      bedeutung: 'Das „Wässerche" ist hessische Diminutiv-Form von Wasser — meist als „a Wässerche" bestellt im Restaurant oder im Glas auf dem Esstisch. Klingt zärtlich, höflich, fast schon übertrieben bescheiden — „nur a Wässerche, bittsche!". Auch metaphorisch: „a klees Wässerche" für ein paar Tropfen. Hessische Sprachlichkeit der Bescheidenheit. In gehobenen Wirtschaften, beim Doktor, bei der Schwiegermutter — überall, wo man nicht zu viel fordern will.',
+      beispiel: 'A Wässerche zum Essen, bittsche!',
+      beispiel_hd: 'Ein Wässerchen zum Essen, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-313',
+      ausdruck: 'Knust',
+      hochdeutsch: 'Brotanschnitt / Endstück',
+      bedeutung: 'Der „Knust" ist hessisch für das Endstück eines Brotlaibes — meist mit dicker Kruste. „Den Knust gibst dem Vater" als hessische Tradition: das beste Stück (mit Kruste) bekommt der Familienvater. Wird mit Butter und Salz oder Schmalz gegessen. Symbol für hessische Brot-Tradition und Familienhierarchie. Auch metaphorisch: „der Knust" für etwas Hartes, Schweres zu Knabbern. In norddeutschen Dialekten ähnlich verwendet, hessisch übernommen.',
+      beispiel: 'Der Knust mit Schmalz is\' was Feines.',
+      beispiel_hd: 'Das Brotendstück mit Schmalz ist etwas Feines.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-314',
+      ausdruck: 'Hellebraunes',
+      hochdeutsch: 'helles Bier',
+      bedeutung: '„Hellebraunes" ist hessische Verniedlichung von „helles Bier" oder „Pilsner". „A Hellebraunes, bittsche!" als Bestellung beim Wirt. Drückt Vertrautheit und liebevolle Bestell-Routine aus. Im Gegensatz zum „Dunkelbraunen" (Schwarzbier oder Stout). Hessische Sprachfreude — viele Wörter werden mit -es-Endung zu Substantiven mit Eigenidentität. „Schoppe Hellebraunes" wird oft kombiniert. Wirtshaus-Sprache der älteren Generation.',
+      beispiel: 'A Hellebraunes und a Schnaps, bittsche!',
+      beispiel_hd: 'Ein helles Bier und einen Schnaps, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-315',
+      ausdruck: 'Geh fott',
+      hochdeutsch: 'geh weg / hau ab',
+      bedeutung: '„Geh fott" ist hessische Aufforderung, sich zu entfernen. „Fott" für „fort". „Geh fott mit dei Scherz!" als Ablehnung von Witzelei. Auch metaphorisch: „Des is\' geh-fott!" für etwas Unwahres oder Unsinniges. „Ach geh fott!" als typisch hessischer Ausdruck der Verwunderung („das kann nicht sein!"). Multifunktional. Klingt direkt aber nicht beleidigend. Hessische Direktheit in idiomatischer Form. Wird mit Hand-Gesten unterstützt.',
+      beispiel: 'Geh fott, des kann nicht stimmen!',
+      beispiel_hd: 'Geh weg, das kann nicht stimmen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-316',
+      ausdruck: 'Hopfe',
+      hochdeutsch: 'Hopfen',
+      bedeutung: '„Hopfe" ist hessische Aussprache von „Hopfen" — Bestandteil des Bieres. „Hopfen und Malz, Gott erhalt\'s!" als hessisches Brauspruch. Im Vogelsberg gab es früher Hopfenanbau. „Hopfe-Vögele" ist eine Vogelart, die zwischen Hopfenstangen lebt. Klingt heimelig und bauerntümlich. In hessischen Brauereien-Wirtschaften omnipräsent — die Marken-Sprüche der hessischen Biere drehen sich oft um Hopfe und Malz. Symbol für hessische Brauer-Tradition.',
+      beispiel: 'A guats Bier kommt von Hopfe und Malz.',
+      beispiel_hd: 'Ein gutes Bier kommt von Hopfen und Malz.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-317',
+      ausdruck: 'Stadtschnack',
+      hochdeutsch: 'Stadt-Geschwätz',
+      bedeutung: '„Stadtschnack" ist hessisch für Klatsch und Tratsch in der Stadt — was die Leute reden, oft gerüchteweise. „Hessen-Schmäh" trifft auf „Schnack" (Geschwätz). „Was is\' der neue Stadtschnack?" als Frage nach den neuesten Gerüchten. In Frankfurter Apfelwein-Wirtschaften und Sachsenhäuser Stuben omnipräsent. Hessen lieben den Stadtschnack — er hält die Stadt lebendig. Symbol für hessische Sozial-Kommunikation. Klingt vertraulich, intim.',
+      beispiel: 'Im Atschel hörst du den ganzen Stadtschnack.',
+      beispiel_hd: 'Im Atschel hörst du das ganze Stadt-Geschwätz.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-318',
+      ausdruck: 'Klamotten',
+      hochdeutsch: 'Kleidung',
+      bedeutung: '„Klamotten" ist umgangssprachlich für Kleidung — in Hessen sehr verbreitet. „Schicke Klamotten" für tolle Kleidung. „Klamotten kaufen" als Sams-tags-Aktivität. Stammt vom Wort „Klamotte" (eigentlich Geröll, später auch „alte Klamotten" für altes Zeug). Hessische Verwendung sehr lässig — Mütter erinnern Kinder: „Zieh dir vernünftige Klamotten an!". In Frankfurter Shopping-Kultur (Zeil!) zentral. Sprache der jüngeren Generation.',
+      beispiel: 'I hol mer auf der Zeil neue Klamotten.',
+      beispiel_hd: 'Ich hole mir auf der Zeil neue Kleidung.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-319',
+      ausdruck: 'Schnütz',
+      hochdeutsch: 'Schnauze / Mund',
+      bedeutung: 'Die „Schnütz" ist hessisch für die Schnauze, den Mund — meist liebevoll oder spöttisch. „Mach die Schnütz auf!" für „mach den Mund auf!". „A süße Schnütz" für ein süßes Babylein. Klingt zärtlich und derb zugleich — typisch hessisch. Im Volksmund auch für tierische Schnauzen verwendet. Stammt vom mittelhochdeutschen „snuze". Im hessischen Familienleben omnipräsent — Eltern verwenden es liebevoll, Streitende derb.',
+      beispiel: 'Mach mol die Schnütz auf, dann gib i dir den Bissen.',
+      beispiel_hd: 'Mach mal die Schnauze auf, dann gebe ich dir den Bissen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-320',
+      ausdruck: 'Schunkeln',
+      hochdeutsch: 'sich rhythmisch wiegen',
+      bedeutung: '„Schunkeln" ist die kollektive hessische Tradition — auf Volksfesten, in Apfelwein-Wirtschaften, bei Eintracht-Spielen wiegt man sich rhythmisch zur Musik, oft Arm in Arm mit den Nachbarn. „Schunkel-Lieder" gehören zum Sachsenhäuser Repertoire. „Bei dem Lied muss man schunkeln!" als hessisches Imperativ. Vergleichbar mit rheinischer Karnevals-Tradition. Symbol für hessische Gemeinschafts-Erfahrung. Touristen erleben das im Apfelwein-Express oder in Sachsenhausen.',
+      beispiel: 'Bei „Ich han nur Zeit" wird gschunkelt!',
+      beispiel_hd: 'Bei „Ich habe nur Zeit" wird geschunkelt!',
+      kategorie: 'feiern'
     }
   ]
 };
