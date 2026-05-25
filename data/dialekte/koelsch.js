@@ -2090,6 +2090,276 @@ export default {
       beispiel: 'Der OB bekommt jedes Jahr Dutzende Orden!',
       beispiel_hd: 'Der OB bekommt jedes Jahr Dutzende Orden!',
       kategorie: 'alltag'
+    },
+    {
+      id: 'k-236',
+      ausdruck: 'Ehrenfeld',
+      hochdeutsch: 'Ehrenfeld (Kölner Stadtteil)',
+      bedeutung: '„Ehrenfeld" ist ein hippes Kölner Veedel im Westen — multikulturell, kreativ, lebhaft. Türkische Community, Hipster, Studenten. „Helios-Gelände" als Kreativ-Hub. Venloer Straße als Hauptstraße mit Cafés, Spätis, Galerien. „Ehrenfeld-Style" als Lebensgefühl. Symbol für Kölns Wandel: vom Arbeiterviertel zum Kreativ-Bezirk. Heute zunehmend gentrifiziert, aber noch bezahlbar. Ehrenfelder sind stolz auf ihr Veedel.',
+      beispiel: 'Im Ehrenfeld findste die geilsten Späti!',
+      beispiel_hd: 'Im Ehrenfeld findest du die geilsten Spätkäufe!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-237',
+      ausdruck: 'Nippes',
+      hochdeutsch: 'Nippes (Kölner Stadtteil)',
+      bedeutung: '„Nippes" ist Kölner Veedel im Norden — bürgerlich, gepflegt, mit Tradition. „Nippeser Tante-Emma-Läden" als nostalgisches Symbol. Neusser Straße als Hauptachse. Sebastiankirche als Wahrzeichen. „Nippeser Klüngel" als lokales Netzwerk. Nippes-Bewohner als „Nippeser" mit eigener Identität. Im Karneval mit eigenem Veedelszug. Symbol für klassisches Kölner Wohnviertel.',
+      beispiel: 'In Nippes wohnen die echten Kölner!',
+      beispiel_hd: 'In Nippes wohnen die echten Kölner!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-238',
+      ausdruck: 'Südstadt',
+      hochdeutsch: 'Südstadt (Kölner Stadtteil)',
+      bedeutung: 'Die „Südstadt" ist Kölner Veedel südlich der Innenstadt — alternativ, jung, Kreativ. „Severinstraße" („Vringsveedel") und Chlodwigplatz als Treffpunkte. Studenten-Hochburg. Karnevals-Hochburg mit eigenen Vereinen. „Südstadt-Kölsch" als spezifische Sprachvariante. Bahnhof Süd als Verkehrsknoten. Symbol für Kölner Alternative-Szene. Im Wandel: Gentrifizierung läuft seit den 2000ern.',
+      beispiel: 'In der Südstadt gibt\'s die besten Brauhäuser!',
+      beispiel_hd: 'In der Südstadt gibt es die besten Brauhäuser!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-239',
+      ausdruck: 'Vringsveedel',
+      hochdeutsch: 'Severinsviertel (Südstadt)',
+      bedeutung: '„Vringsveedel" ist der kölsche Name für das Severinsviertel in der Südstadt — eines der ältesten Kölner Veedel. Severinstraße als Hauptachse, Severinskirche als Wahrzeichen. „Vringsveedel-Identität" mit kölscher Tradition. Karnevals-Hochburg mit eigenen Veedelszöch. Heute teils gentrifiziert, aber kölsche Brauhäuser noch erhalten. Symbol für Kölner Veedel-Patriotismus.',
+      beispiel: 'Et Vringsveedel is\' echt kölsch!',
+      beispiel_hd: 'Das Severinsviertel ist echt kölsch!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-240',
+      ausdruck: 'Deutz',
+      hochdeutsch: 'Deutz (Kölner Stadtteil)',
+      bedeutung: '„Deutz" ist Kölner Veedel rechtsrheinisch — von der Innenstadt durch den Rhein getrennt. „Lanxess Arena" als Veranstaltungs-Highlight. „Messe Deutz" als Geschäftsviertel. Deutzer Brücke verbindet mit der Innenstadt. „Schäl Sick" als kölsche Spottbezeichnung für die „schiefe Seite" des Rheins. Deutzer sehen sich als „andere Kölner". Symbol für Kölner Rheinüberquerungs-Geschichte.',
+      beispiel: 'In Deutz is\' die Lanxess Arena.',
+      beispiel_hd: 'In Deutz ist die Lanxess Arena.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-241',
+      ausdruck: 'Schäl Sick',
+      hochdeutsch: 'Schiefe Seite (rechtsrheinisches Köln)',
+      bedeutung: '„Schäl Sick" ist kölsche Spottbezeichnung für das rechtsrheinische Köln — wörtlich „schiefe Seite". Stammt aus dem 19. Jahrhundert, als die linksrheinische Innenstadt sich höher stellte. Deutz, Mülheim, Kalk als „Schäl-Sick"-Veedel. Heute ironisch verwendet. Schäl-Sick-Bewohner sagen selbst: „Mir sin uss dr Schäl Sick!". Symbol für Kölner Lokalrivalitäten. Die Rheinüberquerung war jahrhundertelang Identitäts-Grenze.',
+      beispiel: 'Ick wohne uss dr Schäl Sick!',
+      beispiel_hd: 'Ich wohne auf der schiefen Seite!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-242',
+      ausdruck: 'Mülheim',
+      hochdeutsch: 'Mülheim (Kölner Stadtteil)',
+      bedeutung: '„Mülheim" ist Kölner Veedel rechtsrheinisch — ehemalige eigenständige Stadt, 1914 eingemeindet. „Mülheimer Brücke" als Architektur-Wahrzeichen. Multikulturell mit großer türkischer Community. „Keupstraße" als „Klein-Istanbul". Industriestandort mit Schiff-Werften früher. Mülheimer-Identität: eigenständig, stolz, „nicht ganz Köln". Symbol für rechtsrheinisches Köln und multikulturelle Stadt-Geschichte.',
+      beispiel: 'In Mülheim is\' die Keupstraße.',
+      beispiel_hd: 'In Mülheim ist die Keupstraße.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-243',
+      ausdruck: 'Belgisches Viertel',
+      hochdeutsch: 'Belgisches Viertel',
+      bedeutung: 'Das „Belgische Viertel" ist Kölner Hipster-Bezirk in der Innenstadt — Brüsseler Straße, Brüsseler Platz, Antwerpener Straße. Benannt nach belgischen Städten. Cafés, Restaurants, Galerien, Modeläden. Treffpunkt der jungen Kölner Szene. „Belgisches Viertel"-Style als Köln-Cool. Im Wandel: Gentrifizierung extrem fortgeschritten. Symbol für Kölner Urbanität und Gastronomie. Auch international bekannt.',
+      beispiel: 'Im Belgischen Viertel gibt\'s die besten Cafés.',
+      beispiel_hd: 'Im Belgischen Viertel gibt es die besten Cafés.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-244',
+      ausdruck: 'Stadtteil',
+      hochdeutsch: 'Stadtteil (im Kölner Sinne)',
+      bedeutung: 'Der „Stadtteil" ist in Köln offizielle Verwaltungseinheit — 86 Stadtteile in 9 Stadtbezirken. Im Gegensatz zum „Veedel" mehr administrativ. Köln-Bewohner identifizieren sich mit dem Veedel, weniger mit dem Stadtteil. „Stadtteil-Bibliothek", „Stadtteil-Konferenz" als Verwaltungs-Begriffe. Symbol für Kölner Stadt-Struktur. Touristen lernen die wichtigsten Stadtteile: Innenstadt, Ehrenfeld, Lindenthal, Nippes, Mülheim, Deutz.',
+      beispiel: 'Köln hat 86 Stadtteile in 9 Bezirken.',
+      beispiel_hd: 'Köln hat 86 Stadtteile in 9 Bezirken.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-245',
+      ausdruck: 'Lindenthal',
+      hochdeutsch: 'Lindenthal (Kölner Stadtteil)',
+      bedeutung: '„Lindenthal" ist gehobener Kölner Stadtteil westlich der Innenstadt — Villen, Park, Universität. „Stadtwald" und „Decksteiner Weiher" als Naherholungsgebiet. Wohnort der Kölner Bourgeoisie. Köln-Lindenthal als bürgerliche Vorzeige-Adresse. Symbol für gehobenes Kölner Wohnviertel. Im Gegensatz zu rauen Veedeln wie Ehrenfeld oder Mülheim mehr konservativ und teurer.',
+      beispiel: 'In Lindenthal wohnen die Kölner Schickis.',
+      beispiel_hd: 'In Lindenthal wohnen die Kölner Schickeria.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-246',
+      ausdruck: 'Innenstadt',
+      hochdeutsch: 'Kölner Innenstadt',
+      bedeutung: 'Die „Innenstadt" ist Kölner Stadt-Zentrum — vom Dom umschlossen, mit Schildergasse als Einkaufsstraße. „Hohe Straße" und „Schildergasse" als Hauptachsen. Römisch-Germanisches Museum, Wallraf-Richartz-Museum als Kultur-Highlights. Touristen-Hotspot. „Innenstadt-Bewohner" haben höchste Mieten. Symbol für Kölner Geschichte und Tourismus. Bei Karneval extrem überfüllt.',
+      beispiel: 'D\'Innenstadt is\' am Wochenende immer voll.',
+      beispiel_hd: 'Die Innenstadt ist am Wochenende immer voll.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-247',
+      ausdruck: 'Rodenkirchen',
+      hochdeutsch: 'Rodenkirchen (Kölner Stadtteil)',
+      bedeutung: '„Rodenkirchen" ist Kölner Stadtteil im Süden — Rheinpromenade, Wohngebiete, Strandbad. „Rodenkirchener Brücke" verbindet mit der Schäl Sick. Wohnort vieler Familien. „Rodenkirchen Strand" als Naherholungsgebiet am Rhein. Symbol für Kölner Familien-Viertel. Im Sommer Sonnenanbeter am Rhein. Etwas ruhiger als Innenstadt-Veedel.',
+      beispiel: 'Im Sommer is\' der Rodenkirchener Strand voll.',
+      beispiel_hd: 'Im Sommer ist der Rodenkirchener Strand voll.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-248',
+      ausdruck: 'Chorweiler',
+      hochdeutsch: 'Chorweiler (Kölner Stadtteil)',
+      bedeutung: '„Chorweiler" ist Kölner Großwohnsiedlung im Norden — in den 1970er Jahren gebaut für 100.000 Bewohner. Plattenbau-Hochhäuser, multikulturell, sozial herausfordernd. „Chorweiler" als kölnische Plattenbau-Hochburg. Symbol für Kölner Großwohnungsbau und multikulturelle Realität. Eigene Identität: „Chorweiler-Bewohner" sind stolz auf ihre Heimat trotz negativer Stereotype.',
+      beispiel: 'Chorweiler is\' die größte Großwohnsiedlung Kölns.',
+      beispiel_hd: 'Chorweiler ist die größte Großwohnsiedlung Kölns.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-249',
+      ausdruck: 'Kölner Dom',
+      hochdeutsch: 'Kölner Dom (Wahrzeichen)',
+      bedeutung: 'Der „Kölner Dom" ist Kölns Wahrzeichen und UNESCO-Welterbe seit 1996 — Bauzeit 1248-1880, 632 Jahre! Mit 157m Höhe längste Zeit höchstes Gebäude der Welt. Im 2. Weltkrieg fast unbeschadet geblieben — Wunder. „Mer losse dr Dom in Kölle" als kölnische Identitäts-Hymne. Touristen-Magnet Nummer 1. Symbol für Köln weltweit. „Ohne Dom kein Köln!". 533 Stufen zum Südturm.',
+      beispiel: 'Der Kölner Dom is\' UNESCO-Welterbe!',
+      beispiel_hd: 'Der Kölner Dom ist UNESCO-Welterbe!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-250',
+      ausdruck: 'Heumarkt',
+      hochdeutsch: 'Heumarkt (Kölner Platz)',
+      bedeutung: 'Der „Heumarkt" ist zentraler Kölner Platz in der Innenstadt — direkt am Dom. Sessions-Eröffnung 11.11. findet hier statt. Reiterdenkmal Wilhelm III. Touristen-Hotspot. Im Sommer Open-Air-Veranstaltungen. Symbol für Kölner Karnevals-Tradition und Touristen-Magnet. Bei Großveranstaltungen tausende Menschen.',
+      beispiel: '11.11. um 11:11 — Heumarkt wird gerockt!',
+      beispiel_hd: '11.11. um 11:11 — Heumarkt wird gerockt!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-251',
+      ausdruck: 'Hohenzollernbrücke',
+      hochdeutsch: 'Hohenzollernbrücke (Rhein-Brücke)',
+      bedeutung: 'Die „Hohenzollernbrücke" ist Kölns berühmteste Rhein-Brücke — Eisenbahn- und Fußgängerbrücke. „Liebesschlösser" am Geländer als romantische Tradition (Tonnen-schwer!). Vom Dom direkt zu erreichen. Über 1.000 Züge pro Tag. Symbol für Kölner Rheinüberquerung und romantische Stadt-Tradition. Foto-Motiv Nummer 1. Im 2. Weltkrieg gesprengt, danach wieder aufgebaut.',
+      beispiel: 'An der Hohenzollernbrücke hängen tausende Liebesschlösser.',
+      beispiel_hd: 'An der Hohenzollernbrücke hängen tausende Liebesschlösser.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-252',
+      ausdruck: 'Rheinauhafen',
+      hochdeutsch: 'Rheinauhafen (modernes Köln)',
+      bedeutung: 'Der „Rheinauhafen" ist modernes Kölner Stadtviertel — ehemaliger Industriehafen, ab 2002 zu Wohn- und Geschäftsviertel umgebaut. „Kranhäuser" als architektonisches Highlight (drei Kran-förmige Hochhäuser). Schokoladenmuseum als Touristen-Hotspot. Symbol für Kölner Wandel: vom Industrieort zur modernen Stadt. Rheinpromenade beliebt für Spaziergänge.',
+      beispiel: 'Die Kranhäuser im Rheinauhafen sind sehenswert!',
+      beispiel_hd: 'Die Kranhäuser im Rheinauhafen sind sehenswert!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-253',
+      ausdruck: 'Veedels-Patriotismus',
+      hochdeutsch: 'Stadtteil-Patriotismus',
+      bedeutung: 'Der „Veedels-Patriotismus" ist Kölner Identitäts-Merkmal — stärkere Verbundenheit mit dem eigenen Veedel als mit der Stadt insgesamt. „Ich bin Ehrenfelder, nicht Kölner!" als Bekenntnis. Veedel-Identität wird im Karneval gefeiert. Symbol für Kölner Lokalstolz und Veedel-Kultur. Jeder Kölner kann seine Veedel-Herkunft sofort nennen. Touristen verstehen dieses Konzept oft nicht.',
+      beispiel: 'Veedels-Patriotismus geht tiefer als Lokalstolz.',
+      beispiel_hd: 'Veedels-Patriotismus geht tiefer als Lokalstolz.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-254',
+      ausdruck: 'Kölner Ringe',
+      hochdeutsch: 'Kölner Ringe (Innenstadt-Ring)',
+      bedeutung: 'Die „Kölner Ringe" sind Innenstadt-Ringstraße — Hohenzollernring, Hansaring, Theodor-Heuss-Ring. Ehemals Festungsanlage, heute Verkehrsachse. „Ring" als Treffpunkt für Karneval, Demos, Großveranstaltungen. Symbol für Kölner Stadt-Struktur und historische Festungsanlage. „Am Ring wohnen" als gehobene Adresse.',
+      beispiel: 'D\'Kölner Ringe sind die Hauptverkehrsadern.',
+      beispiel_hd: 'Die Kölner Ringe sind die Hauptverkehrsadern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-255',
+      ausdruck: 'Kalk',
+      hochdeutsch: 'Kalk (Kölner Stadtteil)',
+      bedeutung: '„Kalk" ist Kölner Stadtteil rechtsrheinisch — ehemaliges Industriegebiet, heute im Wandel. „Kalk-Karree" als Einkaufszentrum. Multikulturell mit großer türkischer Community. „Kalk" als kölscher Begriff für „rau, ungehobelt". Symbol für Kölner Arbeiter-Tradition und Multi-Kulti. Im Wandel: Gentrifizierung kommt langsam. Eigenständige Kalker-Identität.',
+      beispiel: 'In Kalk is\' Multi-Kulti zu Hause.',
+      beispiel_hd: 'In Kalk ist Multi-Kulti zu Hause.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-256',
+      ausdruck: 'Sülz',
+      hochdeutsch: 'Sülz (Kölner Stadtteil)',
+      bedeutung: '„Sülz" ist Kölner Stadtteil in Lindenthal — bürgerlich, gepflegt, mit Tradition. „Decksteiner Weiher" als Naherholungsgebiet. Universitäts-Bezirk mit vielen Studenten. „Sülz-Tante" als kölsches Klischee für die etwas snobistische Sülz-Frau. Symbol für gehobenes Kölner Wohnviertel. Im Gegensatz zu raueren Veedeln wie Mülheim oder Kalk mehr konservativ.',
+      beispiel: 'In Sülz wohnen viele Akademiker.',
+      beispiel_hd: 'In Sülz wohnen viele Akademiker.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-257',
+      ausdruck: 'Lokalmatador',
+      hochdeutsch: 'Lokaler Held',
+      bedeutung: 'Der „Lokalmatador" ist kölnerische Bezeichnung für einen lokalen Helden — meist im Karneval, im Sport oder als Wirt einer berühmten Brauhaus. Stammt vom Stierkampf-Begriff „Matador". Drückt Kölner Wertschätzung für lokale Persönlichkeiten aus. „Lokalmatador im Brauhaus" als typische Karriere. Symbol für Kölner Veedel-Patriotismus und Lokal-Identität.',
+      beispiel: 'Im Brauhaus is\' der Wirt der Lokalmatador.',
+      beispiel_hd: 'Im Brauhaus ist der Wirt der lokale Held.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-258',
+      ausdruck: 'Veedels-Tour',
+      hochdeutsch: 'Stadtteil-Rundgang',
+      bedeutung: 'Die „Veedels-Tour" ist Kölner Touristik-Konzept — geführter Rundgang durch ein bestimmtes Kölner Veedel (Ehrenfeld, Nippes, Belgisches Viertel). Touristen lernen Kölner Identität abseits der Wahrzeichen kennen. „Veedels-Tour-Guides" als kölnische Touristik-Berufe. Symbol für Kölner Veedel-Kultur und Tourismus-Diversifizierung. Beliebt bei zweit- und dritt-Besuchern.',
+      beispiel: 'Die Veedels-Tour durch Ehrenfeld is\' spitze!',
+      beispiel_hd: 'Die Veedels-Tour durch Ehrenfeld ist spitze!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-259',
+      ausdruck: 'Kölner Karneval Brauchtum',
+      hochdeutsch: 'Kölner Karneval-Tradition',
+      bedeutung: 'Das „Kölner Karneval Brauchtum" ist UNESCO-Welterbe-Kandidat — über 200 Jahre alte Tradition mit Karnevalsvereinen, Dreigestirn, Rosenmontagszug. „Brauchtum" wird in jedem Veedel gepflegt. Symbol für Kölner Identitäts-Pflege und Karneval als kulturelles Erbe. Internationale Anerkennung. Touristen aus aller Welt reisen für das Brauchtum nach Köln.',
+      beispiel: 'Et Kölner Karneval Brauchtum is\' weltberühmt!',
+      beispiel_hd: 'Das Kölner Karneval Brauchtum ist weltberühmt!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-260',
+      ausdruck: 'Kölner Original',
+      hochdeutsch: 'Echter Kölner Charakter',
+      bedeutung: 'Ein „Kölner Original" ist eine charakteristische Kölner Persönlichkeit — meist alteingesessen, mit kölscher Schnauze, eigenem Stil und unverwechselbarer Identität. „Kölner Originale" wie Willi Ostermann, Trude Herr, Jürgen von Manger. Im Volksmund auch für gewöhnliche Kölner mit besonderem Charakter verwendet. Symbol für Kölner Charakter-Stolz und Identitäts-Bewahrung.',
+      beispiel: 'Der oide Wirt is\' n echtes Kölner Original.',
+      beispiel_hd: 'Der alte Wirt ist ein echtes Kölner Original.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-261',
+      ausdruck: 'Pittermännchen',
+      hochdeutsch: 'Kleines Kölsch-Fass',
+      bedeutung: 'Das „Pittermännchen" ist kleines Kölsch-Fass mit 10 Litern Inhalt — perfekt für Hausparty oder kleine Feier. Wird vom Brauhaus geliefert mit Zapfanlage. Klassisches Kölner Geburtstags- oder Karnevals-Gastgeschenk. „A Pittermännchen für die Party!" als Standard-Bestellung. Symbol für Kölner Bier-Kultur und Feier-Tradition. Pittermännchen-Lieferdienst als kölnische Spezialität.',
+      beispiel: 'Z\'meiner Geburtstagsparty hol ich a Pittermännchen!',
+      beispiel_hd: 'Zu meiner Geburtstagsparty hole ich ein Pittermännchen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-262',
+      ausdruck: 'Kranzgesellschaft',
+      hochdeutsch: 'Kranz-Gesellschaft (Brauchtum)',
+      bedeutung: 'Die „Kranzgesellschaft" ist Kölner Karnevals-Tradition — Trinkgesellschaft mit ritualisiertem Bier-Trinken. „Kranzbruder" als Mitglied. Tradition seit dem 17. Jahrhundert. „Kranzfest" als jährliche Feier. Symbol für Kölner Brauchtum-Pflege und Trink-Kultur. Heute meist nostalgische Tradition in kölschen Brauhäusern.',
+      beispiel: 'D\'Kranzgesellschaft trifft sich jeden Donnerstag.',
+      beispiel_hd: 'Die Kranzgesellschaft trifft sich jeden Donnerstag.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-263',
+      ausdruck: 'Kölscher Tonfall',
+      hochdeutsch: 'Kölnische Sprach-Melodie',
+      bedeutung: 'Der „Kölsche Tonfall" ist charakteristisch — singende Melodie, weiche Konsonanten, fast französisch klingende Vokale. „Klingt wie Französisch" als touristisches Erstaunen. Tonfall wird auch von ehemaligen Kölnern beibehalten („Mer hört dat noch nach 30 Jahre!"). Symbol für Kölner Identität jenseits des Vokabulars. Touristen erkennen Kölner sofort am Tonfall.',
+      beispiel: 'Den kölschen Tonfall erkennt man sofort.',
+      beispiel_hd: 'Den kölnischen Tonfall erkennt man sofort.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-264',
+      ausdruck: 'Kölner Eiskeller',
+      hochdeutsch: 'Kölner Eiskeller (historischer Begriff)',
+      bedeutung: '„Kölner Eiskeller" sind historische Kühl-Räume aus dem 19. Jahrhundert — wo Bier vor Kühlmaschinen gelagert wurde. Manche Brauhäuser haben noch authentische Eiskeller (Päffgen, Sion). Heute Touristen-Attraktion. Symbol für Kölner Brauerei-Geschichte. „Eiskeller-Tour" als Kölner Spezialangebot. Authentisches Erlebnis für Bier-Liebhaber.',
+      beispiel: 'Im Päffgen kannst du noch die Eiskeller besichtigen.',
+      beispiel_hd: 'Im Päffgen kannst du noch die Eiskeller besichtigen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-265',
+      ausdruck: 'Kölner Heimattag',
+      hochdeutsch: 'Kölner Heimat-Feiertag',
+      bedeutung: 'Der „Kölner Heimattag" ist Tradition — jährliches Treffen ehemaliger Kölner aus aller Welt. „Pingstdienstag" als Termin. Erinnerung an die Kölner Wurzeln. Symbol für Kölner Diaspora und Heimat-Verbundenheit. Karnevals-Lieder werden gesungen, Bier getrunken. „Einmal Kölner, immer Kölner!" als Motto. Auch im Ausland gibt es Kölner Heimat-Vereine.',
+      beispiel: 'Z\'Heimattag treffen sich Kölner aus aller Welt!',
+      beispiel_hd: 'Zum Heimattag treffen sich Kölner aus aller Welt!',
+      kategorie: 'feiern'
     }
   ]
 };
