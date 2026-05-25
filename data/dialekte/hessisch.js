@@ -2872,6 +2872,276 @@ export default {
       beispiel: 'Bei „Ich han nur Zeit" wird gschunkelt!',
       beispiel_hd: 'Bei „Ich habe nur Zeit" wird geschunkelt!',
       kategorie: 'feiern'
+    },
+    {
+      id: 'h-321',
+      ausdruck: 'Kerb',
+      hochdeutsch: 'Kirmes / Kirchweih',
+      bedeutung: 'Die „Kerb" ist hessisches Dorf-/Stadtfest — Kirchweih oder Kirmes. Jeder hessische Ort hat seine eigene Kerb mit traditionellem Ablauf: Kerb-Burschen (junge Männer) und Kerb-Mädchen organisieren Festumzug, Tanz, Schießbude, Bratwurst, Bier und Apfelwein. „Kerb-Vater" als Spitzname für den Hauptorganisator. Höhepunkt: das Aufstellen des „Kerb-Baums" auf dem Dorfplatz. Wenn die Kerb vorbei ist, wird der Kerb-Baum „beerdigt". Symbol für hessisches Dorfleben.',
+      beispiel: 'Z\'Sommer is\' wieder Kerb in unserm Dorf.',
+      beispiel_hd: 'Zum Sommer ist wieder Kirmes in unserem Dorf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-322',
+      ausdruck: 'Maibaum',
+      hochdeutsch: 'Maibaum',
+      bedeutung: 'Der „Maibaum" ist hessische Volkstradition — am 1. Mai wird auf dem Dorfplatz ein hoher Baumstamm (oft Tanne) aufgestellt, geschmückt mit Bändern und Kränzen. Junge Männer beschützen ihn gegen Diebstahl durch Nachbardörfer. „Maibaum-Klau" ist beliebtes Schabernack-Ritual. Wer einen Maibaum stiehlt, muss vom bestohlenen Dorf mit Bier und Wurst ausgelöst werden. Symbol für hessische Frühlings-Tradition und Dorf-Konkurrenz.',
+      beispiel: 'Am 1. Mai wird der Maibaum auf\'m Dorfplatz aufgestellt.',
+      beispiel_hd: 'Am 1. Mai wird der Maibaum auf dem Dorfplatz aufgestellt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-323',
+      ausdruck: 'Fastnacht',
+      hochdeutsch: 'Fastnacht (Karneval)',
+      bedeutung: 'Die „Fastnacht" ist hessischer Karneval — vor allem im Süden und Westen Hessens stark ausgeprägt. Mainz und Frankfurt haben eigene Fastnacht-Tradition. „Helau" als Hessen-Schlachtruf (im Gegensatz zum kölnischen „Alaaf"). Höhepunkte: Weiberfastnacht, Rosenmontag-Umzug, Aschermittwoch. Hessische Fastnacht ist organisiert in Fastnachts-Vereinen mit Prinzenpaar, Garde, Funken. Lustige Hessen-Witze, politische Büttenreden, Trinkfeste. Symbol für hessischen Karneval.',
+      beispiel: 'In der Fastnacht-Zeit gibt\'s Helau in ganz Südhessen.',
+      beispiel_hd: 'In der Karneval-Zeit gibt es Helau in ganz Südhessen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-324',
+      ausdruck: 'Helau!',
+      hochdeutsch: 'Helau! (hessischer Karnevalsruf)',
+      bedeutung: '„Helau!" ist DER hessisch-rheinhessische Karnevalsruf — im Gegensatz zum kölnischen „Alaaf". Wird in Mainz, Frankfurt, Wiesbaden, Darmstadt während der Fastnacht gerufen. Etymologie unklar — vielleicht von „Hell auf" oder „Halleluja". Drückt Karnevalsfreude und Gemeinschaftsgefühl aus. „Mainzer Helau" und „Frankfurter Helau" sind eigenständige Traditionen. Drei Helau-Rufe als hessisches Standard-Begrüßungsritual zur Fastnachtszeit. Symbol für hessische Karneval-Identität.',
+      beispiel: 'Helau! Helau! Helau! — die Hessen feiern Fastnacht.',
+      beispiel_hd: 'Helau! Helau! Helau! — die Hessen feiern Karneval.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-325',
+      ausdruck: 'Büttenrede',
+      hochdeutsch: 'Karnevals-Rede',
+      bedeutung: 'Die „Büttenrede" ist hessische Karnevalstradition — humorvolle, oft politische Rede aus einer Bütt (Holzfass). Berühmte Büttenredner: Lothar Müller-Westerhagen, Jürgen Becker. Wird im Frankfurter Fernsehen übertragen („Mainzer Fastnacht im ZDF"). Themen: Politiker, lokale Skandale, Nachbar-Streitigkeiten. Reim und Rhythmus pflicht. „Büttenredner" werden Karnevals-Stars. Symbol für hessischen Karnevals-Witz. Klassisches Format der hessischen Mundart-Komik.',
+      beispiel: 'Die Büttenrede vom Müller war wieder Spitze!',
+      beispiel_hd: 'Die Karnevals-Rede vom Müller war wieder Spitze!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-326',
+      ausdruck: 'Närrische Wochen',
+      hochdeutsch: 'Karnevalszeit',
+      bedeutung: 'Die „närrischen Wochen" sind die offizielle Karnevalszeit in Hessen — vom 11.11. um 11:11 Uhr bis Aschermittwoch. „Sessions-Eröffnung" am 11.11. als großes Fest. Während dieser Zeit gilt eine andere Welt: Politik wird verspottet, Hierarchien werden umgedreht, alle dürfen Verkleidung tragen. Hessische Karnevalsvereine (KKV, Karneval-Klub-Verband) organisieren Sitzungen mit Prinzenpaar, Tanzgarde und Büttenreden. Symbol für hessisches Brauchtum.',
+      beispiel: 'In den närrischen Wochen wird drei Monate gefeiert.',
+      beispiel_hd: 'In den närrischen Wochen wird drei Monate gefeiert.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-327',
+      ausdruck: 'Prinzessin',
+      hochdeutsch: 'Karnevals-Prinzessin',
+      bedeutung: 'Die „Prinzessin" ist Karnevals-Hauptdarstellerin — wird jährlich aus den Vereinsmitgliedern gewählt. Trägt ein Krönchen, prachtvolle Kleidung und vertritt den Karnevalsverein offiziell. Mainzer Prinzessin, Frankfurter Prinzessin, Darmstädter Prinzessin — jede Stadt hat ihre eigene. Ehrenamt mit hohem Prestige. „Prinzessin-Wahl" ist Höhepunkt der Saison. Symbol für hessische Karnevals-Glamour. Touristen und Medien lieben die Prinzessinnen.',
+      beispiel: 'Die Mainzer Prinzessin trägt schöne Trachtenkleider.',
+      beispiel_hd: 'Die Mainzer Prinzessin trägt schöne Trachtenkleider.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-328',
+      ausdruck: 'Wirthsche Kerb',
+      hochdeutsch: 'Wirthsche Kerb (Frankfurter Trad.)',
+      bedeutung: 'Die „Wirthsche Kerb" ist eine Frankfurt-Sachsenhäuser Tradition — am Wochenende vor dem 11. November findet in der Wirths-Wirtschaft (Frankfurter Apfelwein-Lokal) die letzte Kerb des Jahres statt. Vergleichbar mit dem rheinischen Saisonschluss. Sachsenhäuser Apfelwein-Wirte versammeln sich, es gibt Tanz, Lieder und Stimmungsmusik. Touristen-Magnet. Symbol für Frankfurter Sommer- und Herbst-Tradition. Klassisches Beispiel für lokal verankerte Bräuche.',
+      beispiel: 'Bei der Wirthsche Kerb singen alle hessischen Lieder.',
+      beispiel_hd: 'Bei der Wirthsche Kerb singen alle hessischen Lieder.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-329',
+      ausdruck: 'Wäldercher',
+      hochdeutsch: 'kleine Wälder',
+      bedeutung: '„Wäldercher" ist hessische Diminutiv-Plural von „Wald" — kleine Wäldchen, Hain. „Mer geh\'n durch d\'Wäldercher" für Spaziergang durch mehrere Wäldchen. In hessischer Landschaft typisch: viele kleine, gepflegte Wäldchen zwischen Feldern. „Wäldercher" als landschaftliches Element — schöner als ein Großwald, weil überschaubarer. In Volkslied und Mundart-Liedern verbreitet. Symbol für hessische Landschafts-Sprache.',
+      beispiel: 'In den Wäldercher sind im Frühjahr viele Schneeglöckchen.',
+      beispiel_hd: 'In den Wäldchen sind im Frühjahr viele Schneeglöckchen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-330',
+      ausdruck: 'Schluckwasser',
+      hochdeutsch: 'Schluckwasser / Aperitif',
+      bedeutung: 'Das „Schluckwasser" ist hessisch für einen ersten kleinen Trunk als Aperitif — meist Schnaps vor dem Essen. „A klees Schluckwasser zum Anfang" als hessisches Ritual. Stammt von „Schluck" + „Wasser" — wobei das Wasser hier ironisch klein und harmlos klingt, obwohl es eigentlich Schnaps ist. Hessische Sprachfreude. Auch metaphorisch: „a Schluckwasser zum Mut anfassen" für einen Mutmach-Schluck. Im Wirtshaus-Sprachgebrauch der älteren Generation.',
+      beispiel: 'A klees Schluckwasser bevor wir essen!',
+      beispiel_hd: 'Ein kleines Schluckwasser bevor wir essen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-331',
+      ausdruck: 'Geburtstag',
+      hochdeutsch: 'Geburtstag',
+      bedeutung: 'Der „Geburtstag" hat in Hessen eigene Bräuche — Erwachsene laden zur „Geburtstags-Feier" mit hessischer Bewirtung: Apfelwein, Bier, Bratwurst, Handkäse mit Musik. „Geburtstagsständchen" wird oft gesungen. Bei runden Geburtstagen (50, 60, 70) gibt\'s große Familienfeste mit Verwandtschaft aus ganz Hessen. „Geburtstags-Sträußchen" als typisches Geschenk. Symbol für hessische Familien-Tradition und Gastfreundschaft.',
+      beispiel: 'Z\'meinem 50. Geburtstag kamen alle Verwandten.',
+      beispiel_hd: 'Zu meinem 50. Geburtstag kamen alle Verwandten.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-332',
+      ausdruck: 'Weihnachtsmarkt',
+      hochdeutsch: 'Weihnachtsmarkt',
+      bedeutung: 'Der „Weihnachtsmarkt" ist hessische Tradition — vor allem der Frankfurter Weihnachtsmarkt am Römerberg gilt als einer der ältesten Deutschlands (seit 1393!). Bratwurst, Glühwein, Lebkuchenherzen, Reibekuchen. Auch in Marburg, Kassel, Wiesbaden, Limburg große Weihnachtsmärkte. „Apfelwein heiß mit Zimt" als hessische Spezialität auf dem Weihnachtsmarkt. Symbol für hessischen Winter-Genuss und Tourismus.',
+      beispiel: 'Auf\'m Frankfurter Weihnachtsmarkt gibt\'s heißen Apfelwein.',
+      beispiel_hd: 'Auf dem Frankfurter Weihnachtsmarkt gibt es heißen Apfelwein.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-333',
+      ausdruck: 'Glühebbelwoi',
+      hochdeutsch: 'heißer Apfelwein',
+      bedeutung: '„Glühebbelwoi" ist die hessische Variante des Glühweins — heißer Apfelwein mit Zimt, Nelken, Sternanis, Zitronenschale. Wird auf Weihnachtsmärkten serviert. Frankfurter Spezialität, die langsam deutschlandweit bekannt wird. Süßer und milder als Glühwein, perfekt für Apfelwein-Liebhaber im Winter. Auch im Apfelwein-Express im Winter ausgeschenkt. Symbol für hessische Winter-Tradition und Apfelwein-Kreativität.',
+      beispiel: 'Im Winter trinkt man Glühebbelwoi mit Zimt.',
+      beispiel_hd: 'Im Winter trinkt man heißen Apfelwein mit Zimt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-334',
+      ausdruck: 'Spätzleshaus',
+      hochdeutsch: 'Spezielles Wirtshaus',
+      bedeutung: 'Das „Spätzleshaus" ist hessischer Begriff für ein speziales Wirtshaus mit eigener Atmosphäre — meist mit eigenem Charakter, Stammtisch, traditionellem Essen. „Mer geh\'n ins Spätzleshaus" für „wir gehen in unsere Stammkneipe". Nicht zu verwechseln mit dem schwäbischen Spätzle-Konzept. Hessischer Sprachgebrauch für Vertrautheit. Auch als Witz: „Mei Spätzleshaus is\' im Eltzbachtal" als Geheimtipp. Symbol für hessische Wirtshaus-Kultur.',
+      beispiel: 'Treffen wir uns im Spätzleshaus um die Ecke?',
+      beispiel_hd: 'Treffen wir uns in der Stammkneipe um die Ecke?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-335',
+      ausdruck: 'Lebkuche',
+      hochdeutsch: 'Lebkuchen',
+      bedeutung: '„Lebkuche" ist hessische Aussprache von „Lebkuchen" — Weihnachtsgebäck aus Honig, Gewürzen und Mehl. „Hessische Lebkuche" ist regional besonders: mit Honig vom Vogelsberg oder Apfelmus statt Sirup. „Lebkuchenherzen" auf Volksfesten und Weihnachtsmärkten. Auch metaphorisch: „a süßes Lebkuche" für eine liebenswerte Person. In Frankfurter Konditoreien als Weihnachtsspezialität bekannt. Symbol für hessische Weihnachts-Tradition.',
+      beispiel: 'Z\'Weihnachten gibt\'s frisches Lebkuche von der Tante.',
+      beispiel_hd: 'Zu Weihnachten gibt es frischen Lebkuchen von der Tante.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-336',
+      ausdruck: 'Hessisches Weihnachten',
+      hochdeutsch: 'hessische Weihnachts-Tradition',
+      bedeutung: '„Hessisches Weihnachten" hat eigene Rituale — am 24. um 17 Uhr Bescherung, Festtagsessen mit Karpfen oder Gans, hessische Lieder am Weihnachtsbaum singen. Mit Familienverwandtschaft aus ganz Hessen. „Hessischer Weihnachts-Witz" ist eigene Tradition. Weihnachtskrippen-Tradition besonders im katholischen Hessen-Süd. Apfelwein-Familien servieren Glühebbelwoi unter dem Tannenbaum. Symbol für hessische Familien-Werte und Tradition.',
+      beispiel: 'Hessisches Weihnachten ohne Apfelwein? Geht net!',
+      beispiel_hd: 'Hessisches Weihnachten ohne Apfelwein? Geht nicht!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-337',
+      ausdruck: 'Schoppe-Sänger',
+      hochdeutsch: 'Apfelwein-Sänger',
+      bedeutung: '„Schoppe-Sänger" sind Sachsenhäuser Volksmusiker — singen Apfelwein-Trinklieder in Sachsenhäuser Apfelwein-Wirtschaften. Tradition seit dem 19. Jahrhundert. Bekannte Lieder: „Schmeißt nau die Hosenträger weg!", „Ich han nur Zeit". Schoppe-Sänger reisen zwischen Wirtschaften, animieren das Publikum zum Mitsingen und Schunkeln. Berufsmusiker mit eigenem Kostüm (oft Schlosser-Hemd, Schiebermütze). Symbol für hessische Volkskultur und Apfelwein-Tradition.',
+      beispiel: 'Im Atschel singen heut die Schoppe-Sänger!',
+      beispiel_hd: 'Im Atschel singen heute die Apfelwein-Sänger!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-338',
+      ausdruck: 'Bornheimer Mitt',
+      hochdeutsch: 'Bornheimer Mittagessen / Wirtshaus',
+      bedeutung: '„Bornheimer Mitt" ist Frankfurter Bornheim-Tradition — das Mittagessen in den traditionellen Bornheimer Apfelwein-Wirtschaften. „Bornheimer Mitt" als Selbstbezeichnung der Bornheimer Gastronomie. Bekannte Wirtschaften: „Zum Fichtekränzi", „Bornheimer Hang". Sonntags-Mitt mit Familie, Apfelwein und Schnitzel. Symbol für Frankfurter Bornheim-Identität. Bornheimer sind stolz auf ihre Wirtshaus-Tradition gegen die Sachsenhäuser Konkurrenz.',
+      beispiel: 'Sonntags geh\'n mir auf die Bornheimer Mitt.',
+      beispiel_hd: 'Sonntags gehen wir auf das Bornheimer Mittagessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-339',
+      ausdruck: 'Kerb-Bursche',
+      hochdeutsch: 'Kirmes-Bursche (junger Mann)',
+      bedeutung: 'Die „Kerb-Burschen" sind die jungen Männer eines hessischen Dorfes, die die Kerb organisieren — Aufstellen des Maibaums, Festumzug, Tanzabende. Tradition über Generationen vererbt. Wer Kerb-Bursche wird, muss zwischen 16 und 30 Jahre alt, ledig und im Dorf wohnhaft sein. „Kerb-Burschen-Heft" als Buch der Tradition. Wird oft mit Frauen-Pendant „Kerb-Mädchen" kombiniert. Symbol für hessische Dorf-Jugend und Brauchtums-Pflege.',
+      beispiel: 'D\'Kerb-Burschen organisieren d\'Fest seit Jahrzehnten.',
+      beispiel_hd: 'Die Kirmes-Burschen organisieren das Fest seit Jahrzehnten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-340',
+      ausdruck: 'Erntedank',
+      hochdeutsch: 'Erntedankfest',
+      bedeutung: 'Das „Erntedank" ist hessisches Bauern-Fest — meist am ersten Sonntag im Oktober. Kirchen werden mit Ernte-Gaben geschmückt (Getreide, Obst, Gemüse). Festumzug durch das Dorf, traditioneller Erntedank-Gottesdienst. Apfelwein-Verkostung der neuen Ernte. „Hessischer Erntedank" verbindet christliche Tradition mit bäuerlicher Identität. Symbol für hessische Landwirtschaft. Symbolik vor allem im ländlichen Vogelsberg und Wetterau.',
+      beispiel: 'Z\'Erntedank schmückt mer d\'Kirche mit Korngarben.',
+      beispiel_hd: 'Zu Erntedank schmückt man die Kirche mit Korngarben.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-341',
+      ausdruck: 'Buntling',
+      hochdeutsch: 'kleiner bunter Mensch / Kind',
+      bedeutung: 'Ein „Buntling" ist im Hessischen ein lustig-bunt gekleideter Mensch — meist ein Kind im Karneval oder ein extrovertierter Erwachsener. „A bunter Buntling" als doppelmoppliche Verstärkung. Liebevoll-spöttisch verwendet. Im Vogelsberg auch für extrovertierte Persönlichkeiten verwendet. Stammt vom „bunt sein". Symbol für hessische Lebensfreude und liebevollen Umgang mit Auffälligkeit. Klingt nicht beleidigend.',
+      beispiel: 'Was bist du heut für a Buntling?',
+      beispiel_hd: 'Was bist du heute für ein bunter Vogel?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-342',
+      ausdruck: 'Sankt-Martin',
+      hochdeutsch: 'St. Martin (11.11.)',
+      bedeutung: '„Sankt-Martin" ist hessische Tradition — am 11.11. wird St. Martin (Sankt Martin von Tours) gefeiert. Kinder ziehen mit selbstgebastelten Laternen durchs Dorf, singen Martins-Lieder. Höhepunkt: das Martins-Feuer und das Verteilen von „Martins-Brezeln". Hessischer Brauch: ein Bursche reitet als St. Martin auf einem Pferd voran. Karneval beginnt am gleichen Tag um 11:11 Uhr. Symbol für hessische Kinder-Tradition und christliches Brauchtum.',
+      beispiel: 'Z\'Sankt-Martin ziehen d\'Kinder mit Laternen durchs Dorf.',
+      beispiel_hd: 'Zu Sankt-Martin ziehen die Kinder mit Laternen durchs Dorf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-343',
+      ausdruck: 'Wäldsche-Picknick',
+      hochdeutsch: 'Picknick im kleinen Wald',
+      bedeutung: 'Das „Wäldsche-Picknick" ist hessische Sommer-Tradition — Familien-Picknick in einem nahegelegenen Wäldchen. Mitgebracht: Decke, Korb mit Brotzeit, Apfelwein-Bembel, Obst. „Wir machen e Wäldsche-Picknick" als typische Wochenend-Planung. Im Vogelsberg, Taunus oder Odenwald besonders verbreitet. Symbol für hessische Naturnähe und Familien-Aktivitäten. Klassische Kindheits-Erinnerung vieler Hessen.',
+      beispiel: 'Am Sonntag machen wir e Wäldsche-Picknick im Taunus.',
+      beispiel_hd: 'Am Sonntag machen wir ein Wäldchen-Picknick im Taunus.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-344',
+      ausdruck: 'Frühschoppe',
+      hochdeutsch: 'Frühschoppen',
+      bedeutung: 'Der „Frühschoppe" ist hessische Sonntagsmorgen-Tradition — Männer treffen sich vor dem Mittagessen zum ersten Apfelwein oder Bier in der Stammkneipe. „Wir gehen auf\'n Frühschoppe" ist klassische Männer-Aktivität. „Politik-Frühschoppe" mit ZDF-Sendung „Internationaler Frühschoppen" (1952-1987) war legendär. Mütter wissen Bescheid: Vater kommt erst nachmittags zurück. Symbol für hessisches Männer-Sozialleben und Wirtshaus-Tradition.',
+      beispiel: 'Mei Vater is\' am Sonntag immer auf\'m Frühschoppe.',
+      beispiel_hd: 'Mein Vater ist am Sonntag immer auf dem Frühschoppen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-345',
+      ausdruck: 'Hocketse-Festle',
+      hochdeutsch: 'kleines Hocketse-Fest',
+      bedeutung: '„Hocketse-Festle" ist hessisch-schwäbisches Mini-Fest in einem Dorf — meist im Sommer, organisiert von Sport-, Schützen- oder Musikverein. Bier, Wurst, Live-Musik, Tanz. Kleinere Variante der großen Kerb. „Hocketse-Festle" als Stiftungsfest oder Saisonabschluss. Beim Ortsverein-Picknick. Symbol für hessisch-südliche Vereins-Tradition. Wird oft mit Karten-Verkauf an die Dorf-Gemeinschaft kombiniert.',
+      beispiel: 'Am Wochenend is\' wieder Hocketse-Festle vom Sportverein.',
+      beispiel_hd: 'Am Wochenende ist wieder Hocketse-Fest vom Sportverein.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-346',
+      ausdruck: 'Bornheimer Hang',
+      hochdeutsch: 'Bornheimer Hang (Eintracht-Stadion)',
+      bedeutung: 'Der „Bornheimer Hang" ist das alte Eintracht-Frankfurt-Stadion (1925-1955), heute Heimat des FSV Frankfurt. Lag am Bornheimer Berg. Heute touristisches Ziel für Eintracht-Fans und Sport-Historiker. „Auf\'m Bornheimer Hang" als nostalgische Erinnerung. Stadium-Tradition vor der Commerzbank-Arena. Symbol für Frankfurter Fußball-Geschichte und Bornheimer Identität. Vereinsfans pilgern hierher.',
+      beispiel: 'Mei Großvater hat noch Eintracht auf\'m Bornheimer Hang gesehen.',
+      beispiel_hd: 'Mein Großvater hat noch Eintracht auf dem Bornheimer Hang gesehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-347',
+      ausdruck: 'Glasewacht',
+      hochdeutsch: 'Glaswächter / Glasbrand-Aufsicht',
+      bedeutung: 'Die „Glasewacht" war in hessischen Glasbläserei-Dörfern (Vogelsberg, Spessart) die Nachtwache bei den Schmelzöfen. Glasbläserei war Hessens historische Industrie — Schmelzöfen durften nicht ausgehen. „Glasewächter" war ehrenamtlich, oft alte Männer. Heute Begriff für „jemand, der nachts wacht oder aufmerksam ist". „Wie eine Glasewacht" für sehr aufmerksam sein. Symbol für hessisches Handwerker-Erbe.',
+      beispiel: 'Der Hausmeister is\' eine echte Glasewacht.',
+      beispiel_hd: 'Der Hausmeister ist ein echter Wächter.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-348',
+      ausdruck: 'Kirschblütenfest',
+      hochdeutsch: 'Kirschblütenfest',
+      bedeutung: 'Das „Kirschblütenfest" ist hessisches Frühlings-Fest — vor allem im Maintal und an der Bergstraß. Wenn die Kirschblüten weiß-rosa blühen (Mitte April), wird gefeiert. „Bergsträßer Kirschblütenfest" mit Kirschbier, Kirschkuchen, Kirsch-Schnaps. Tradition seit dem Mittelalter. Touristen-Magnet. Symbol für hessischen Frühling und Obstbau-Tradition. Bestes Programm: Spaziergang durch blühende Kirschplantagen mit Schnapsverkostung.',
+      beispiel: 'Z\'Kirschblütenfest is\' d\'Bergstraß rosa.',
+      beispiel_hd: 'Zur Kirschblütenfestzeit ist die Bergstraße rosa.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-349',
+      ausdruck: 'Pfingstkönig',
+      hochdeutsch: 'Pfingst-König (alte hessische Tradition)',
+      bedeutung: 'Der „Pfingstkönig" ist alte hessische Brauchtums-Tradition — am Pfingstmontag wird in manchen Dörfern ein junger Mann zum „Pfingstkönig" gewählt. Er trägt eine grüne Birkenkrone und reitet vor dem Pfingstumzug. Tradition seit dem 18. Jahrhundert. Heute nur noch in wenigen Dörfern (Bachgau, Spessart) gepflegt. Junger Mann muss tapfer, geselllig und im Dorf beliebt sein. Symbol für hessisches Brauchtum und Dorf-Hierarchien.',
+      beispiel: 'D\'Wahl zum Pfingstkönig is\' große Ehre.',
+      beispiel_hd: 'Die Wahl zum Pfingstkönig ist große Ehre.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-350',
+      ausdruck: 'Hessen-Tanz',
+      hochdeutsch: 'hessischer Volkstanz',
+      bedeutung: 'Der „Hessen-Tanz" sind hessische Volkstänze — meist Polka, Walzer oder Schwälmer Tanz. Auf hessischen Trachtenfesten, Kerb und Hochzeiten getanzt. „Hessen-Tanz-Verein" pflegt regionale Tänze. „Schwälmer Trachtentanz" mit dem rot-grünen Trachten ist berühmt. Im Vogelsberg und Spessart eigene Tanz-Variationen. Touristen können auf Trachtenfesten mittanzen. Symbol für hessisches Brauchtum und Tanz-Tradition.',
+      beispiel: 'Auf der Kerb wird Hessen-Tanz getanzt.',
+      beispiel_hd: 'Auf der Kirmes wird hessischer Volkstanz getanzt.',
+      kategorie: 'musik'
     }
   ]
 };
