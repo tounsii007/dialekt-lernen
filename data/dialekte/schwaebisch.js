@@ -1319,6 +1319,276 @@ export default {
       beispiel: 'S\'Schwobaland isch und bleibt mei Heimat.',
       beispiel_hd: 'Das Schwabenland ist und bleibt meine Heimat.',
       kategorie: 'orte'
+    },
+    {
+      id: 'sw-151',
+      ausdruck: 'Spätzlespresse',
+      hochdeutsch: 'Spätzlepresse',
+      bedeutung: 'Die „Spätzlespresse" ist DAS Küchenwerkzeug schwäbischer Hausfrauen — eine Lochform, durch die der Teig in heißes Wasser gepresst wird. Schwäbische Spätzle sind Identitätssymbol: handgeschabt vom Brett gilt als noch authentischer als geprest. Mit Käse („Käsknöpfle"), zu Linsen oder als Beilage zum Rinderbraten. Jede Familie hat ihr eigenes Rezept. Bei Hochzeiten bekommt das Brautpaar oft eine Spätzlespresse geschenkt — Symbol für die kulinarische Identität.',
+      beispiel: 'Ohne d\'Spätzlespresse wird\'s nix mit\'em Sonntagsessen.',
+      beispiel_hd: 'Ohne die Spätzlepresse wird das nichts mit dem Sonntagsessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-152',
+      ausdruck: 'Maultäschle',
+      hochdeutsch: 'Maultaschen',
+      bedeutung: 'Die „Maultäschle" sind die schwäbischen Maultaschen — gefüllte Teigtaschen mit Brät aus Fleisch, Spinat, Zwiebeln und Brotkrumen. Legendär als „Herrgottsbescheißerle": Mönche sollen Fleisch in Teig versteckt haben, um die Fastenzeit zu umgehen. Ob in der Brühe als Suppe, gebraten mit Zwiebeln, oder als „Maultäschle in Soß" — eines der wichtigsten Gerichte der schwäbischen Küche. Heute auch tiefgekühlt in jedem Supermarkt erhältlich.',
+      beispiel: 'Z\'Mittag gibt\'s Maultäschle in der Brieh.',
+      beispiel_hd: 'Zu Mittag gibt es Maultaschen in der Brühe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-153',
+      ausdruck: 'Kehrwoche',
+      hochdeutsch: 'Reinigungspflicht im Treppenhaus',
+      bedeutung: 'Die „Kehrwoche" ist eine schwäbische Institution — die Pflicht, einmal pro Woche das Treppenhaus oder den Gehweg vor dem Haus zu reinigen. In Mietshäusern rotiert die Pflicht zwischen den Parteien. Wer dran ist, hängt ein Kehrwoche-Schild an die Tür. Die Schwaben nehmen ihre Kehrwoche extrem ernst — Verstöße führen zu Nachbarschaftsdramen. Symbol für schwäbische Ordnungsliebe und Pflichtbewusstsein. Wer die Kehrwoche schludert, gilt als undeutsch.',
+      beispiel: 'Diese Woch han mir Kehrwoche, da muss s\'Treppähaus blitzeblank sei.',
+      beispiel_hd: 'Diese Woche haben wir Kehrwoche, da muss das Treppenhaus blitzeblank sein.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-154',
+      ausdruck: 'Schaffer',
+      hochdeutsch: 'fleißiger Arbeiter',
+      bedeutung: 'Ein „Schaffer" ist im Schwäbischen ein fleißiger, harter Arbeiter — Inbegriff schwäbischen Arbeitsethos. „Schaffe, schaffe, Häusle baue" ist der schwäbische Lebensmotto-Klassiker. Die Schwaben gelten als arbeitsam, sparsam und fleißig — Eigenschaften, die in der wirtschaftlich erfolgreichen Region Baden-Württemberg manifestiert sind. Mercedes, Porsche, Bosch — alles in Schwabenland gegründet von „Schaffern". Der Schaffer ist Held der schwäbischen Tugendlehre.',
+      beispiel: 'Mei Vatter war sei Lebtag a echter Schaffer.',
+      beispiel_hd: 'Mein Vater war sein Leben lang ein echter Arbeiter.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-155',
+      ausdruck: 'Häusle baue',
+      hochdeutsch: 'Eigenheim bauen',
+      bedeutung: 'Das „Häusle baue" ist der schwäbische Lebenstraum — eigenes Haus statt Miete, mit Garten und Garage. Verbunden mit dem Sprichwort „Schaffe, schaffe, Häusle baue, und net nach de Mädle gschaue" (Arbeite, arbeite, baue ein Haus, und schau nicht den Mädchen nach). Symbol für schwäbische Sparsamkeit und Lebensziel. Viele schwäbische Familien sparen Jahrzehnte aufs Eigenheim. Der Eigenheim-Anteil in Baden-Württemberg ist deutschlandweit einer der höchsten.',
+      beispiel: 'Mir wend halt au mal e Häusle baue.',
+      beispiel_hd: 'Wir wollen halt auch mal ein Häuschen bauen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-156',
+      ausdruck: 'Briagle',
+      hochdeutsch: 'Brötchen / Brot',
+      bedeutung: 'Das „Briagle" ist im Schwäbischen das Brötchen oder Brot — Diminutiv von „Brot". Beim Bäcker bestellt man „a Briagle mit Butter und Käs". In Stuttgart und Umgebung allgegenwärtig. Im Norden Württembergs wird auch „Weckle" gesagt. Schwäbische Bäcker sind berühmt für ihre Vielfalt: Seele, Wibele, Krapfen, Brezel. Die „Schwarzwälder Briagle" ist ein bekannter Klassiker. Brot ist im Schwäbischen Identität — keine Mahlzeit ohne.',
+      beispiel: 'I hett gern zwoi Briagle mit Marmelade.',
+      beispiel_hd: 'Ich hätte gern zwei Brötchen mit Marmelade.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-157',
+      ausdruck: 'Hocketse',
+      hochdeutsch: 'Dorffest mit Sitzgelegenheiten',
+      bedeutung: 'Die „Hocketse" ist ein typisches schwäbisches Dorffest — wörtlich „Hocken-Sitzung" oder „Sitzgelegenheit". Vereins-, Sport- oder Feuerwehrfest mit Bänken, Tischen, Bier, Wurst, Spätzle und Live-Musik. Findet meist im Sommer im Festzelt oder unter Pavillons statt. Jedes Dorf hat seine eigene Hocketse — von der Liederkranz-Hocketse bis zur Schützenhocketse. Höhepunkt schwäbischer Geselligkeit. Inbegriff der gemütlichen, bodenständigen Festkultur.',
+      beispiel: 'Am Wochenend isch d\'Hocketse vom Sportverein.',
+      beispiel_hd: 'Am Wochenende ist das Fest vom Sportverein.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'sw-158',
+      ausdruck: 'Dächle',
+      hochdeutsch: 'kleines Dach / Vordach',
+      bedeutung: 'Das „Dächle" ist im Schwäbischen das kleine Dach — meist das Vordach eines Hauses, die Überdachung der Haustür oder eine Markise. Diminutiv von „Dach", typisch schwäbisch mit -le-Endung. „Sich unter\'s Dächle stellen" bedeutet sich vor Regen schützen. Schwäbische Häuser haben oft sehr aufwendig gestaltete Dächle — Symbol für handwerkliche Qualität und Liebe zum Detail. Auch metaphorisch für Schutz und Geborgenheit.',
+      beispiel: 'Bei dem Regen müsse mir uns unter\'s Dächle stelle.',
+      beispiel_hd: 'Bei dem Regen müssen wir uns unter das Vordach stellen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-159',
+      ausdruck: 'Gschmackle',
+      hochdeutsch: 'Beigeschmack / verdächtig',
+      bedeutung: 'Ein „Gschmackle" ist im Schwäbischen ein unangenehmer Beigeschmack oder eine verdächtige Sache — etwas, was nicht ganz koscher wirkt. „Die Sach hat a Gschmackle" bedeutet, dass etwas zwielichtig oder fragwürdig ist. Diminutiv von „Geschmack". Wird oft im politischen oder geschäftlichen Kontext verwendet. Schwäbische Skepsis pur — die Schwaben sind misstrauisch gegenüber zu schönen Angeboten und drücken das mit dem Gschmackle aus.',
+      beispiel: 'Des Geschäft hat a Gschmackle — i würd des net macha.',
+      beispiel_hd: 'Das Geschäft hat einen Beigeschmack — ich würde das nicht machen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-160',
+      ausdruck: 'Käpsele',
+      hochdeutsch: 'kluger Kopf / Genie',
+      bedeutung: 'Ein „Käpsele" ist ein cleverer, schlauer Mensch — meist ein junger Tüftler oder ein gewiefter Geschäftsmann. „A echts Käpsele" wird mit Anerkennung gesagt. Diminutiv von „Käppi" oder „Köpfle". Drückt die schwäbische Wertschätzung für Intelligenz, Erfindungsgeist und Tüfteltum aus. Die schwäbische Erfinder-Tradition (Daimler, Bosch, Zeiss) speist sich aus dieser Wertschätzung. Auch ironisch für jemanden, der sich für besonders klug hält.',
+      beispiel: 'Der Sohn vom Bauer is\' a echts Käpsele.',
+      beispiel_hd: 'Der Sohn vom Bauer ist ein echter kluger Kopf.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-161',
+      ausdruck: 'Mädle',
+      hochdeutsch: 'Mädchen',
+      bedeutung: '„Mädle" ist im Schwäbischen jedes Mädchen oder junge Frau — Diminutiv von „Mädchen". „A fesch Mädle" ist ein hübsches Mädchen. In Liebesliedern und schwäbischer Mundart-Literatur omnipräsent. „Schaffe, schaffe, Häusle baue, und net nach de Mädle gschaue" warnt davor, sich von Mädchen ablenken zu lassen. Plural: „Mädle" (gleich wie Singular) oder „Mädles". Liebevoll und respektvoll zugleich.',
+      beispiel: 'A so a fesch Mädle hat der Karle gheirat\'.',
+      beispiel_hd: 'So ein hübsches Mädchen hat der Karl geheiratet.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-162',
+      ausdruck: 'Brunzkachl',
+      hochdeutsch: 'Nachttopf / kleiner Mensch',
+      bedeutung: 'Die „Brunzkachl" ist im Schwäbischen wörtlich der Nachttopf (zum Urinieren), aber häufiger als humorvoller Schimpfwort verwendet — für einen kleinen, nichtigen Menschen. „Du Brunzkachl!" ist ein liebevoll-derber Ausruf. Auch für unfreundliche, unangenehme Charaktere: „A oide Brunzkachl". Stammt vom alemannischen „brunzen" (urinieren) und „Kachel" (Tonschale). Wird im Württembergischen oft humorvoll eingesetzt, ohne wirklich verletzend zu sein.',
+      beispiel: 'Ach du oide Brunzkachl, du!',
+      beispiel_hd: 'Ach du alter Trottel, du!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-163',
+      ausdruck: 'Knöpfle',
+      hochdeutsch: 'Knopf / Spätzle-Variante',
+      bedeutung: '„Knöpfle" hat zwei Bedeutungen im Schwäbischen: 1) Diminutiv von „Knopf" — ein kleiner Knopf an Kleidung. 2) Eine Spätzle-Variante: dickere, runde Teigknöpfchen, oft als Käsknöpfle (mit Käse überbacken). „Knöpfle" sind die kürzere, mundgerechtere Variante der langen Spätzle. Spezialität in vielen schwäbischen Wirtschaften. Im Allgäu auch sehr verbreitet. Beide Bedeutungen friedlich nebeneinander im Sprachgebrauch.',
+      beispiel: 'Z\'Mittag gibt\'s Käsknöpfle mit Zwiebla.',
+      beispiel_hd: 'Zu Mittag gibt es Käse-Knöpfle mit Zwiebeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-164',
+      ausdruck: 'Dialler',
+      hochdeutsch: 'Dachdecker / Schornsteinfeger',
+      bedeutung: 'Der „Dialler" ist im Schwäbischen umgangssprachlich der Dachdecker (regional auch Schornsteinfeger). Stammt von „Dial" (Dach, Decke). Schwäbische Handwerkstradition: Dachdecker waren früher wichtige Dorffiguren, die Häuser über Generationen pflegten. Heute spezialisierter Handwerksberuf. „A guater Dialler" wird im Dorf geschätzt — ein schlampiger Dachdecker führt zu Generationen-Problemen.',
+      beispiel: 'Mir brauchet a Dialler für\'s neue Dach.',
+      beispiel_hd: 'Wir brauchen einen Dachdecker für das neue Dach.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-165',
+      ausdruck: 'Knöpfla',
+      hochdeutsch: 'Klopfer / Türklopfer',
+      bedeutung: 'Der „Knöpfla" ist im Schwäbischen der Türklopfer — meist ein metallisches Element an der Haustür. Stammt von „Klopfen". Alte schwäbische Häuser haben aufwendige Knöpfla aus Messing oder Eisen. „Anklopfen" bedeutet damit den traditionellen Klang vor dem Eintreten. Heute meist durch Klingel ersetzt, aber als historisches Detail in Altbauten erhalten. Auch als Verkleinerung verwendet für jeden kleinen Klopf-Mechanismus.',
+      beispiel: 'Der Knöpfla an der oide Tür isch e Erbstück.',
+      beispiel_hd: 'Der Türklopfer an der alten Tür ist ein Erbstück.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-166',
+      ausdruck: 'Mostkrug',
+      hochdeutsch: 'Mostkrug',
+      bedeutung: 'Der „Mostkrug" ist im Schwäbischen der traditionelle Steinzeug-Krug für Most (Apfel- und Birnenmost). Im Streuobstwiesen-Schwabenland ist Most ein wichtiges Getränk — frisch gepresst aus Streuobst. „Mostsaison" ist im Herbst, wenn die Äpfel reif sind. Schwäbische Bauern haben eigene Mostkeller. „A guater Most" ist Wertobjekt im Dorf. Der Mostkrug auf der Brotzeitbank symbolisiert schwäbische Bodenständigkeit und Streuobst-Tradition.',
+      beispiel: 'Zur Brotzeit gibt\'s a Mostkrug aus\'em Keller.',
+      beispiel_hd: 'Zur Brotzeit gibt es einen Mostkrug aus dem Keller.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-167',
+      ausdruck: 'Schwäbeln',
+      hochdeutsch: 'schwäbisch sprechen',
+      bedeutung: '„Schwäbeln" bedeutet schwäbisch sprechen — mit den typischen Lautmerkmalen wie -le-Endungen, „isch" statt „ist", verschluckten Endungen. „Der schwäbelt aber ordentlich!" ist ein Hinweis auf starken Dialekt. In Hochdeutsch-Kreisen oft mit Augenzwinkern verwendet. Die Schwaben selber sind stolz darauf zu schwäbeln — Symbol für Heimatbewusstsein. Manche „verlernen" ihn nach Umzügen, andere pflegen ihn als Identität.',
+      beispiel: 'Die ganze Familie schwäbelt unverkennbar.',
+      beispiel_hd: 'Die ganze Familie spricht unverkennbar schwäbisch.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-168',
+      ausdruck: 'Stuttgarter Schickeria',
+      hochdeutsch: 'Stuttgarter High Society',
+      bedeutung: 'Die „Stuttgarter Schickeria" ist die High Society der Landeshauptstadt — meist mit Mercedes-Benz, Porsche oder Bosch-Hintergrund. Schwäbisches Industrie-Establishment mit Villa auf dem Killesberg oder in Degerloch. Wird halb-spöttisch halb-stolz erwähnt: schwäbischer Reichtum, der gerne diskret bleibt. Im Gegensatz zur ostentativen Schickeria anderer Städte sind die Stuttgarter sparsam reich — Old Money in Lederhosen.',
+      beispiel: 'Auf der Wengerter-Party war die ganze Stuttgarter Schickeria.',
+      beispiel_hd: 'Auf der Weinbauer-Party war die ganze Stuttgarter High Society.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-169',
+      ausdruck: 'Drüber-naus',
+      hochdeutsch: 'darüber hinaus / extrem',
+      bedeutung: '„Drüber-naus" bedeutet im Schwäbischen „über alle Grenzen hinaus" oder „extrem". „Drüber-naus glücklich" ist überglücklich. „Drüber-naus müd" ist hundemüde. Verbindet „drüber" mit „naus" (hinaus). Schwäbische Steigerungsform für Zustände und Gefühle. Wird oft positiv verwendet: „Drüber-naus schee" ist wunderschön. Aber auch negativ: „Drüber-naus teuer" ist viel zu teuer. Charakteristische schwäbische Wortbildung.',
+      beispiel: 'Der war drüber-naus glücklich über s\'Geschenk.',
+      beispiel_hd: 'Er war überglücklich über das Geschenk.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-170',
+      ausdruck: 'Hennegacker',
+      hochdeutsch: 'Hühnergegacker / Geschnatter',
+      bedeutung: '„Hennegacker" ist das Gegacker von Hühnern und im übertragenen Sinn der lebhafte Tratsch einer Gruppe — meist von Frauen, die laut durcheinander reden. „A Hennegacker wie auf\'em Bauernhof!" beschreibt eine lärmende Gesellschaft. Lautmalerei mit liebevoller, nicht beleidigender Note. In Volksstücken und Heimatkomödien beliebt. Symbol für ländlich-lebhafte Geselligkeit. Auch metaphorisch: ein unproduktives Meeting voller Tratsch.',
+      beispiel: 'Beim Kaffeekränzle gab\'s a Hennegacker wia selten.',
+      beispiel_hd: 'Beim Kaffeekränzchen gab es ein Gegacker wie selten.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-171',
+      ausdruck: 'Lällabäbbel',
+      hochdeutsch: 'Trottel / nichtsnutziger Mensch',
+      bedeutung: '„Lällabäbbel" ist eine schwäbische Beleidigung für einen Trottel, einen unbeholfenen oder dummen Menschen. Stammt von „lällen" (lallen, schlecht sprechen) und „bäbbeln" (kleben, undeutlich reden). Klingt liebevoll-derb und ist meist nicht ernst gemeint. „Du Lällabäbbel, du!" wird oft mit Augenzwinkern gesagt. Tief im schwäbischen Sprachschatz verwurzelt. Karl Valentin und schwäbische Mundartdichter haben es kultiviert.',
+      beispiel: 'So a Lällabäbbel, der vergisst seine eigene Geburtstag!',
+      beispiel_hd: 'So ein Trottel, der vergisst seinen eigenen Geburtstag!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-172',
+      ausdruck: 'Riemleslupf',
+      hochdeutsch: 'Schnaps / scharfer Trunk',
+      bedeutung: 'Der „Riemleslupf" ist im Schwäbischen ein Schnaps oder scharfer Schnapsbecher — meist Obstbrand wie Zwetschgen-, Birnen- oder Williams-Brand. „Riemles" sind Riemen, „lupf" das Anheben — also der „Riemen-Lupf", das Anheben des Trinkbechers. Schwäbischer Schnapsbecher-Klassiker. „A klees Riemleslupf zum Verdauen" gehört nach dem zünftigen Essen. Familienschnaps oft selbstgebrannt, manchmal jahrzehntelang gereift im Keller.',
+      beispiel: 'Nach\'em Maultäschle gibt\'s a Riemleslupf.',
+      beispiel_hd: 'Nach den Maultaschen gibt es einen Schnaps.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-173',
+      ausdruck: 'Verklicke',
+      hochdeutsch: 'erklären / verklickern',
+      bedeutung: '„Verklicke" bedeutet im Schwäbischen jemandem etwas geduldig erklären, sodass er es endlich versteht. „I muss em des amol verklicke" — ich muss ihm das mal verklickern. Stammt vom „klicken" — sich gedanklich zurechtklicken. Schwäbische Pädagogen-Vokabel: Erklärungen brauchen Zeit, vor allem für sture Köpfe. Auch ironisch: „Dem isch nix zu verklicke" bedeutet, jemand ist beratungsresistent. Tief im schwäbischen Erziehungs-Sprachschatz.',
+      beispiel: 'I hab em dreimal verklickt, aber er kapiert\'s net.',
+      beispiel_hd: 'Ich habe ihm dreimal erklärt, aber er kapiert es nicht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-174',
+      ausdruck: 'Räddich',
+      hochdeutsch: 'Rettich',
+      bedeutung: 'Der „Räddich" ist der schwäbische Rettich — meist weißer oder schwarzer Winterrettich, in Scheiben mit Salz als Brotzeit. Schwäbisch ausgesprochen klingt es derber als hochdeutsch. „Schaff me an Räddich an d\'Brotzeit" ist klassisch. Auch als „Räddichschäler" — der spezielle Schäler dafür. In Württemberg gilt der frische Rettich vom Markt als Statussymbol für gesundes Leben. Wirtshäuser servieren ihn oft kostenlos zur Brotzeit.',
+      beispiel: 'Zu der Brotzeit nimmsch a Stück Räddich.',
+      beispiel_hd: 'Zu der Brotzeit nimmst du ein Stück Rettich.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-175',
+      ausdruck: 'Lumpenheft',
+      hochdeutsch: 'Schmierheft',
+      bedeutung: 'Das „Lumpenheft" ist im Schwäbischen das Schmierheft oder Konzeptheft — ein einfaches Schreibheft für Notizen, Rechnungen oder Entwürfe. „In\'s Lumpenheft schreiben" bedeutet etwas vorläufig notieren. Stammt von „Lumpen" (alte Stoffreste, aus denen Papier hergestellt wurde). Schule und Büro waren das natürliche Zuhause des Lumpenhefts. Heute durch Smartphone-Notizen weitgehend ersetzt, aber im schwäbischen Wortschatz noch lebendig.',
+      beispiel: 'I notier mer des erst mal in\'s Lumpenheft.',
+      beispiel_hd: 'Ich notier mir das erst mal in das Schmierheft.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-176',
+      ausdruck: 'Schwobamadle',
+      hochdeutsch: 'schwäbisches Mädchen',
+      bedeutung: 'Das „Schwobamadle" ist das schwäbische Mädchen — Inbegriff sparsamer, fleißiger, bodenständiger Weiblichkeit. „A echts Schwobamadle weiß, was a guater Spätzleteig kostet". Wird in Volksliedern, Schlagern und Heimatkomödien gefeiert. Klischee, aber auch Selbstbild: das Schwobamadle als ideale Hausfrau, Mutter und Geschäftsfrau zugleich. Heute oft ironisch verwendet, aber mit positiver Konnotation. Schwäbische Frauenidentität in einem Wort.',
+      beispiel: 'A echts Schwobamadle macht\'s beste Maultäschle.',
+      beispiel_hd: 'Ein echtes schwäbisches Mädchen macht die besten Maultaschen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-177',
+      ausdruck: 'Auskochet',
+      hochdeutsch: 'verbraucht / abgekocht',
+      bedeutung: '„Auskochet" beschreibt im Schwäbischen einen erschöpften, abgekochten Zustand — wie ein Topf, der zu lange auf dem Herd stand. „Bin total auskochet von dem Tag" bedeutet hundemüde. Auch für Gegenstände: „Mei alter Pulli isch auskochet" (verschlissen, abgenutzt). Stammt vom „Kochen" — etwas zu lange erhitzen. Bildlich für emotionale oder physische Erschöpfung. Charakteristisch schwäbisch in seiner bodenständigen Bildhaftigkeit.',
+      beispiel: 'Nach der Wanderung war i komplett auskochet.',
+      beispiel_hd: 'Nach der Wanderung war ich komplett erschöpft.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-178',
+      ausdruck: 'Hosenträger',
+      hochdeutsch: 'Hosenträger (Trachtenelement)',
+      bedeutung: 'Der „Hosenträger" gehört in Schwaben traditionell zur Lederhose oder zur Bauernhose. Meist schwarz oder braun aus Leder, mit verzierten Beschlägen. Beim Trachtenfest, beim Bierfest oder bei der Hochzeit unverzichtbar. „Mit Hosenträger isch a Schwob a kompletter Schwob". Auch im modernen Sinn: Hosenträger als bequeme Alternative zum Gürtel. Schwäbische Mode konservativ — traditionelle Träger werden über Generationen vererbt.',
+      beispiel: 'Zur Trachtenfeier ohne Hosenträger? Geht net!',
+      beispiel_hd: 'Zur Trachtenfeier ohne Hosenträger? Geht nicht!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-179',
+      ausdruck: 'Schopfen',
+      hochdeutsch: 'Schopf / kleines Gebäude',
+      bedeutung: 'Der „Schopfen" ist im Schwäbischen ein kleiner Anbau oder Schuppen — meist für Holz, Werkzeug oder Fahrräder. Stammt vom mittelhochdeutschen „schopf" (Vorbau). Schwäbische Bauernhöfe haben oft mehrere Schopfen rund um den Hof. „In den Schopfen gehen" bedeutet etwas aus dem Schuppen holen. Auch als Kleingarten-Häuschen verbreitet. Symbol für schwäbische Ordnungsliebe: jedes Werkzeug hat seinen Platz im Schopfen.',
+      beispiel: 'D\'Säg liegt im Schopfen hinter\'em Haus.',
+      beispiel_hd: 'Die Säge liegt im Schuppen hinter dem Haus.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-180',
+      ausdruck: 'Schmotzig Dunschtig',
+      hochdeutsch: 'Schmutziger Donnerstag (Fastnacht)',
+      bedeutung: 'Der „Schmotzig Dunschtig" ist der Donnerstag vor Aschermittwoch — Auftakt der Schwäbisch-Alemannischen Fastnacht. „Schmotzig" bedeutet hier nicht schmutzig sondern „fettig" — vom Schmalzgebackenen, das traditionell gegessen wird. In Rottweil, Villingen, Schramberg und vielen anderen Orten beginnt die Fastnacht mit dem „Hemdglonker"-Umzug. Schwäbisch-Alemannische Fastnacht ist tief verwurzelt — älter und ernsthafter als der rheinische Karneval.',
+      beispiel: 'Am Schmotzig Dunschtig fängt d\'Fastnacht richtig an.',
+      beispiel_hd: 'Am Schmutzigen Donnerstag fängt die Fastnacht richtig an.',
+      kategorie: 'feiern'
     }
   ]
 };
