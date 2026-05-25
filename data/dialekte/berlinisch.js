@@ -1783,6 +1783,276 @@ export default {
       beispiel: 'Egal woher du kommst — wenn du hier wohnst, biste Berliner.',
       beispiel_hd: 'Egal woher du kommst — wenn du hier wohnst, bist du Berliner.',
       kategorie: 'menschen'
+    },
+    {
+      id: 'b-201',
+      ausdruck: 'Molle',
+      hochdeutsch: 'Ein Glas Bier',
+      bedeutung: 'Eine „Molle" ist im Berlinischen ein Glas Bier — meistens ein helles Lagerbier. „Eene Molle mit Korn" ist die klassische Berliner Bestellung (Bier mit Schnapsbeigabe). Der Ausdruck kommt aus dem Berliner Eckkneipen-Slang des 19. Jahrhunderts und ist ein echtes Berliner Original. In Kreuzberger und Friedrichshainer Eckkneipen noch immer gebräuchlich — der Hipster sagt „craft beer", der echte Berliner sagt „Molle".',
+      beispiel: 'Bring ma noch ne Molle, Wirt!',
+      beispiel_hd: 'Bring mir noch ein Bier, Wirt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-202',
+      ausdruck: 'Eckenbeißer',
+      hochdeutsch: 'Kantiger Berliner',
+      bedeutung: 'Ein „Eckenbeißer" ist im Berlinischen ein echter, kantiger Berliner — einer, der mit seinen scharfen Ecken und Kanten dort sitzt, wo es weh tut. Mundtrocken, direkt, nicht immer höflich, aber immer ehrlich. „Berliner Schnauze" in Reinform. Der Ausdruck ist halb spöttisch, halb bewundernd. Solche Eckenbeißer trifft man in jeder Eckkneipe, am Späti-Tresen oder beim Bezirksamt.',
+      beispiel: 'Mein Opa is so ein richtiger Eckenbeißer, immer raus mit der Wahrheit!',
+      beispiel_hd: 'Mein Opa ist so ein richtiger kantiger Typ, immer raus mit der Wahrheit!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-203',
+      ausdruck: 'Schicki-Micki',
+      hochdeutsch: 'Schickimicki / Edel-Spießer',
+      bedeutung: '„Schicki-Micki" ist im Berlinischen ein Lebensstil der eher oberflächlichen, modisch-trendigen Schickeria — meistens in Charlottenburg oder Mitte angesiedelt. Der Begriff hat einen spöttisch-abwertenden Beiklang. „So eene Schicki-Micki-Bar" ist eine Bar für „Hipster mit Geld". Der echte Berliner Kreuzberger oder Friedrichshainer hat für Schicki-Micki nicht viel übrig.',
+      beispiel: 'In diesem Schicki-Micki-Laden kost\'n Kaffee fünf Euro!',
+      beispiel_hd: 'In diesem Edel-Spießer-Laden kostet ein Kaffee fünf Euro!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-204',
+      ausdruck: 'Buletten-Bude',
+      hochdeutsch: 'Imbissstand',
+      bedeutung: 'Die „Buletten-Bude" ist im Berlinischen die kleine Imbissbude — der Snack-Klassiker der Hauptstadt. Hier gibt es Buletten (Frikadellen) mit Kartoffelsalat, Currywurst mit Pommes, Bockwurst mit Schrippe. Berlin hat unzählige Buletten-Buden, von der Currywurst-Konnopke in Prenzlauer Berg (legendär seit 1930) bis zu Witty\'s am Wittenbergplatz. Die Berliner Imbisskultur ist Stadtgeschichte.',
+      beispiel: 'An der Eck is eene super Buletten-Bude!',
+      beispiel_hd: 'An der Ecke ist ein super Imbissstand!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-205',
+      ausdruck: 'Bemme',
+      hochdeutsch: 'Belegtes Brot / Schnitte',
+      bedeutung: 'Eine „Bemme" ist im Berlinischen wie im Sächsischen ein belegtes Brot, eine Schnitte. „Mama macht mir ne Bemme für die Schule." Der Ausdruck wandert mit den ostdeutschen Vorfahren — viele Berliner haben sächsisch-thüringische Wurzeln. Auch übertragen: „so ne Bemme!" für etwas Großartiges oder „dicke Bemme" für etwas Auffälliges. Klassische DDR-Schule-Erinnerung.',
+      beispiel: 'Hier hast ne Bemme mit Wurst für die Pause.',
+      beispiel_hd: 'Hier hast du eine Brotzeit mit Wurst für die Pause.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-206',
+      ausdruck: 'Knatsch',
+      hochdeutsch: 'Streit / Krach',
+      bedeutung: '„Knatsch" ist im Berlinischen Streit, Krach oder eine ernste Auseinandersetzung. „Wat is denn los? Habt ihr Knatsch?" Das Wort hat einen lautmalerischen Klang — wie etwas Klebriges, Unangenehmes. Berliner sind direkt und scheuen sich nicht vor offenem Knatsch. „Knatsch mit dem Vermieter" ist nichts Ungewöhnliches in der Wohnungsnotstadt Berlin. Hauptsache, man redet drüber.',
+      beispiel: 'Wir hatten Knatsch mit\'m Nachbarn wegen der lauten Musik.',
+      beispiel_hd: 'Wir hatten Streit mit dem Nachbarn wegen der lauten Musik.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-207',
+      ausdruck: 'Knackpunkt',
+      hochdeutsch: 'Kernpunkt / Knackpunkt',
+      bedeutung: 'Der „Knackpunkt" ist im Berlinischen wie im Hochdeutschen der entscheidende Kernpunkt einer Sache — das, woran alles hängt. „Det is der Knackpunkt vom Janzen!" Berliner verwenden den Ausdruck häufig in Diskussionen, um auf das Wesentliche zu zeigen. Die direkte, sachliche Art der Berliner Diskussionskultur kommt hier zum Tragen — am Knackpunkt entscheidet sich alles.',
+      beispiel: 'Det is der Knackpunkt — ohne Geld geht nüscht.',
+      beispiel_hd: 'Das ist der Knackpunkt — ohne Geld geht nichts.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-208',
+      ausdruck: 'Wuppdich',
+      hochdeutsch: 'Im Handumdrehen / Ruck-zuck',
+      bedeutung: '„Wuppdich" ist eine berlinerische Lautmalerei für eine plötzliche, schnelle Bewegung — „im Handumdrehen". „Und wuppdich, war\'s weg!". Das Wort klingt selbst nach einer schnellen Aktion. Verwendet beim Erzählen von schnellen Ereignissen, Tricks oder unverhofften Wendungen. Eine sehr berlinerische Wortschöpfung mit Charme — drastisch, knapp und voller Bewegung.',
+      beispiel: 'Wuppdich, schon war der Brief in der Post!',
+      beispiel_hd: 'Im Handumdrehen war der Brief in der Post!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-209',
+      ausdruck: 'Plempe',
+      hochdeutsch: 'Dünnes Getränk / Plörre',
+      bedeutung: '„Plempe" ist im Berlinischen ein dünnes, geschmackloses Getränk — meistens schlecht gemachter Kaffee oder verwässertes Bier. „Wat is denn det für ne Plempe?" Der Ausdruck hat einen lautmalerischen Klang — wie etwas, das herumplempert. Berliner sind in Geschmacksfragen direkt und nehmen kein Blatt vor den Mund. Eine echte Plempe wird ohne Umschweife benannt.',
+      beispiel: 'Det is doch keen Bier, det is Plempe!',
+      beispiel_hd: 'Das ist doch kein Bier, das ist Plörre!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-210',
+      ausdruck: 'Det jeht uff keene Kuhhaut',
+      hochdeutsch: 'Das geht auf keine Kuhhaut',
+      bedeutung: '„Det jeht uff keene Kuhhaut" ist die berlinerische Variante der bekannten Redewendung „Das geht auf keine Kuhhaut" — etwas ist so ungeheuerlich, dass es nicht mal auf eine Kuhhaut passen würde (alte Pergament-Vorstellung). Im Berlinischen wird sie bei besonders empörenden Ereignissen verwendet. Der Ausdruck zeigt die Berliner Vorliebe für drastische, bildhafte Sprache.',
+      beispiel: 'Wat der wieder verzapft hat, det jeht uff keene Kuhhaut!',
+      beispiel_hd: 'Was der wieder gemacht hat, das geht auf keine Kuhhaut!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-211',
+      ausdruck: 'Bregen',
+      hochdeutsch: 'Hirn / Verstand',
+      bedeutung: 'Der „Bregen" ist im Berlinischen das Hirn oder der Verstand — meist scherzhaft-derb gebraucht. „Hast du keenen Bregen?" (Hast du kein Hirn?). Auch im Sinne von Nachdenken: „Det muss ich erst mal bebreegen" (das muss ich erst mal überdenken). Vom niederdeutschen „Brägen" für das Gehirn abgeleitet. Eine direkte, drastische Berliner Bezeichnung.',
+      beispiel: 'Mensch, benutze doch mal deinen Bregen!',
+      beispiel_hd: 'Mensch, benutze doch mal deinen Verstand!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-212',
+      ausdruck: 'Spinatwachtel',
+      hochdeutsch: 'Alte Schreckschraube',
+      bedeutung: 'Eine „Spinatwachtel" ist im Berlinischen eine alte, unsympathische Frau — meist eine zickige, unfreundliche Nachbarin oder Bekannte. Der Ausdruck ist drastisch, aber typisch berlinerisch direkt. „Die olle Spinatwachtel von nebenan!" Spinat hier vermutlich wegen der Vorstellung von etwas Faserigem, Zähem. Eine derbe Berliner Wortschöpfung, die heute weniger gebraucht wird als früher, aber noch nicht ausgestorben ist.',
+      beispiel: 'Die olle Spinatwachtel von oben macht immer Stress.',
+      beispiel_hd: 'Die alte Schreckschraube von oben macht immer Stress.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-213',
+      ausdruck: 'Augustusburger',
+      hochdeutsch: 'Hauptbahnhof-Schlafplatz',
+      bedeutung: 'Eigentlich „abkacken" — Berliner Slang für müde sein oder einnicken. „Ick kacke uff der Couch ab" bedeutet, ich schlafe auf der Couch ein. Auch übertragen: „abkacken im Job" (im Job scheitern), „abkacken in der Prüfung". Der Ausdruck ist derbe und gehört zur jüngeren Berliner Umgangssprache. Sehr direkt und ohne Schnörkel.',
+      beispiel: 'Nach der langen Schicht bin ick auf der Couch abjekackt.',
+      beispiel_hd: 'Nach der langen Schicht bin ich auf der Couch eingeschlafen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-214',
+      ausdruck: 'Wessi',
+      hochdeutsch: 'Westdeutscher / West-Berliner',
+      bedeutung: 'Ein „Wessi" ist im Berlinischen und ostdeutschen Sprachgebrauch ein Westdeutscher — analog zum „Ossi" für Ostdeutsche. Die Begriffe entstanden nach der Wiedervereinigung 1990 und reflektieren die fortdauernde mentale Trennung. Berlin als „Hauptstadt der Wiedervereinigung" ist Ground Zero dieser Begriffe. Heute oft humorvoll, manchmal noch immer mit unterschwelligen Spannungen behaftet. Wichtige soziale Kategorie der Berliner Geschichte.',
+      beispiel: 'Mein Freund ist Wessi und meine Familie kommt aus Ostberlin.',
+      beispiel_hd: 'Mein Freund ist Westdeutscher und meine Familie kommt aus Ostberlin.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-215',
+      ausdruck: 'Ostalgie',
+      hochdeutsch: 'Nostalgie für die DDR',
+      bedeutung: '„Ostalgie" ist die wehmütige Erinnerung an die DDR — ein Phänomen, das nach der Wiedervereinigung entstand. Trabbi, Sandmännchen, Ampelmännchen, Spreewald-Gurken, Vita Cola, Rotkäppchen-Sekt — alles wird mit Wehmut gepflegt. In Berlin gibt es die DDR-Museen, Trabbi-Touren, Ostalgie-Restaurants. Eine wichtige Berliner Kultur-Strömung, die zeigt, dass Erinnerung subjektiv ist.',
+      beispiel: 'Die Trabbi-Tour ist pure Ostalgie!',
+      beispiel_hd: 'Die Trabbi-Tour ist pure DDR-Nostalgie!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-216',
+      ausdruck: 'Hartz IV',
+      hochdeutsch: 'Hartz-IV-Empfänger / Arbeitslosengeld II',
+      bedeutung: '„Hartz IV" ist im Berlinischen ein vielgenutzter Ausdruck — die Grundsicherung für Arbeitslose nach den Hartz-Reformen 2005. Berlin hat eine hohe Hartz-IV-Quote, besonders in Bezirken wie Neukölln, Marzahn-Hellersdorf oder Spandau. Der Begriff hat Kult-Status in Comedy und Filmen (z.B. „Vier Hartz Vier" mit den Comedian-Helden). 2023 wurde Hartz IV durch das „Bürgergeld" ersetzt — der Name lebt aber weiter.',
+      beispiel: 'In dem Kiez leben viele Hartz-IV-Familien.',
+      beispiel_hd: 'In dem Viertel leben viele Hartz-IV-Familien.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-217',
+      ausdruck: 'Sülze',
+      hochdeutsch: 'Dummes Gerede / Sülze (Speise)',
+      bedeutung: '„Sülze" hat im Berlinischen zwei Bedeutungen: einerseits die kalte Speise aus Fleisch in Aspik, andererseits umgangssprachlich „dummes Gerede" oder „weichgespültes Zeug". „Red doch keine Sülze!" sagt der direkte Berliner zu jemandem, der herumdruckst oder ausweicht. Die zweite Bedeutung kommt von der Vorstellung, dass Sülze formlos und schwabbelig ist — wie das Gerede ohne klare Aussage.',
+      beispiel: 'Red keine Sülze, sag was Sache is!',
+      beispiel_hd: 'Red keinen Quatsch, sag was Sache ist!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-218',
+      ausdruck: 'Trabbi-Tour',
+      hochdeutsch: 'Trabant-Stadtrundfahrt',
+      bedeutung: 'Die „Trabbi-Tour" ist eine Berliner Touristen-Attraktion: in einem alten Trabant (DDR-Auto) durch die Stadt fahren, selbst lenken, DDR-Atmosphäre erleben. Verschiedene Anbieter (Trabi-Safari, Trabi-World) bieten geführte Touren an — Brandenburger Tor, East Side Gallery, Karl-Marx-Allee. Eine humorvolle, etwas nostalgische Art, Berlin zu erkunden. Die kleinen blechernen Trabbis sind Botschafter der DDR-Geschichte.',
+      beispiel: 'Für Touristen is die Trabbi-Tour ein Highlight.',
+      beispiel_hd: 'Für Touristen ist die Trabbi-Tour ein Highlight.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-219',
+      ausdruck: 'Berliner Schnauze',
+      hochdeutsch: 'Berliner Direktheit / Berliner Schnauze',
+      bedeutung: 'Die „Berliner Schnauze" ist sprichwörtlich — die direkte, schlagfertige, manchmal ruppige Art der Berliner zu sprechen. „Berliner Schnauze hat das Herz auf der Zunge." Berliner sagen, was sie denken, ohne langes Drumherum — manchmal sehr direkt, aber meistens nicht böse gemeint. Eine Kulturmarke der Hauptstadt, die Touristen erst irritiert und dann liebgewinnen.',
+      beispiel: 'Berliner Schnauze hin oder her — er meint\'s nich böse.',
+      beispiel_hd: 'Berliner Schnauze hin oder her — er meint es nicht böse.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-220',
+      ausdruck: 'Wochenendrebell',
+      hochdeutsch: 'Wochenend-Berliner',
+      bedeutung: 'Ein „Wochenendrebell" ist ein Berliner Begriff für jemanden, der unter der Woche brav im Beruf, am Wochenende dann aber feiern, ausgehen, sich austoben geht — typisch Berlin. Berlins berühmtes Club-Wochenende (Freitag bis Sonntag durchgehend) zieht Tausende an. Berghain, Watergate, Sisyphos, Salon zur Wilden Renate — die Clubs sind die Tempel der Wochenend-Rebellion. Eine sehr berlinerische Lebensform.',
+      beispiel: 'Unter der Woche brav, am Wochenende dann der Berliner Wochenendrebell.',
+      beispiel_hd: 'Unter der Woche brav, am Wochenende dann der Berliner Wochenend-Feierer.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-221',
+      ausdruck: 'Bötteldepfand',
+      hochdeutsch: 'Pfandgeld auf Flaschen',
+      bedeutung: 'Das „Bötteldepfand" ist das Pfandgeld auf Pfandflaschen — in Berlin sehr präsent, weil viele Menschen Pfandflaschen sammeln, um sich etwas dazuzuverdienen. Die „Pfandflaschen-Sammler" sind eine sozial relevante Berliner Erscheinung. In Spätis, Supermärkten und an Pfandautomaten werden täglich Tausende Flaschen zurückgegeben. Ein wichtiges System, das Recycling und sozialen Ausgleich verbindet.',
+      beispiel: 'Vergiss det Bötteldepfand für die Cola-Flaschen nich!',
+      beispiel_hd: 'Vergiss das Pfandgeld für die Cola-Flaschen nicht!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'b-222',
+      ausdruck: 'Klotüre',
+      hochdeutsch: 'Toilettentür',
+      bedeutung: 'Die „Klotüre" ist im Berlinischen die Toilettentür — die Aussprache vereinfacht „Klo-Türe". Auch übertragen in Wendungen wie „auf\'s Klo gehen" als alltäglicher Ausdruck. Berliner sprechen nüchtern und ohne Verklemmung über solche Dinge. „Das Klo is da hinten" ist eine typische Berliner Auskunft im Café oder in der Kneipe. Direkte Funktionalität ohne Umschweife.',
+      beispiel: 'Wo is hier die Klotüre?',
+      beispiel_hd: 'Wo ist hier die Toilettentür?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-223',
+      ausdruck: 'Det is mir Wurscht',
+      hochdeutsch: 'Das ist mir egal',
+      bedeutung: '„Det is mir Wurscht" ist die berlinerische Variante von „Das ist mir egal" — die Wurst als Symbol für etwas Beliebiges, Austauschbares. Berliner verwenden den Ausdruck häufig und in vielen Kontexten. „Wurscht-Egal" oder „is mir piepe" sind verwandte Wendungen. Eine entspannte Lebensphilosophie: nicht jedes Detail muss diskutiert werden.',
+      beispiel: 'Wat wir heut Abend machen? Is mir Wurscht.',
+      beispiel_hd: 'Was wir heute Abend machen? Ist mir egal.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-224',
+      ausdruck: 'Knust',
+      hochdeutsch: 'Endstück vom Brot',
+      bedeutung: 'Der „Knust" ist im Berlinischen das Endstück eines Brotes — die knusprige Ecke, die manche lieben und andere meiden. „Wer kriegt den Knust?" In manchen Familien ist das Endstück heiß begehrt, in anderen wird es weggegeben. Auch im übertragenen Sinn: „der Knust vom Tag" ist der harte, schwere Teil der Arbeit. Ein gemütliches, hausbackenes Berliner Wort.',
+      beispiel: 'Ick mag immer den Knust am liebsten!',
+      beispiel_hd: 'Ich mag immer das Endstück vom Brot am liebsten!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-225',
+      ausdruck: 'Hauptstadtflair',
+      hochdeutsch: 'Hauptstadt-Atmosphäre',
+      bedeutung: 'Das „Hauptstadtflair" ist das, was Berlin von anderen Städten unterscheidet — die Mischung aus Politik, Kultur, Subkultur, Multikulti und entspannter Anarchie. „Hauptstadtflair" findet man am Brandenburger Tor genauso wie in einer Kreuzberger Eckkneipe oder einem Mitte-Klub. Diplomaten, Hartz-IV-Empfänger, Künstler, Touristen — alle teilen sich die Stadt. Berlin als Schmelztiegel mit eigener Identität.',
+      beispiel: 'Berlin hat einfach dieses besondere Hauptstadtflair.',
+      beispiel_hd: 'Berlin hat einfach diese besondere Hauptstadt-Atmosphäre.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-226',
+      ausdruck: 'Schmöker',
+      hochdeutsch: 'Dickes Buch',
+      bedeutung: 'Ein „Schmöker" ist im Berlinischen wie im Hochdeutschen ein dickes Buch, in dem man stundenlang lesen kann — meistens spannend und unterhaltsam. Die Berliner Lese-Tradition ist groß: Internationales Literaturfestival, viele kleine Buchläden, Antiquariate. Der „Berlin-Schmöker" — Romane, die in Berlin spielen — ist ein eigenes Genre. Berlin als Literaturstadt zwischen Brecht, Kästner und Tilman Birr.',
+      beispiel: 'Der neue Roman is\'n echter Schmöker — kann ick nich aus der Hand legen.',
+      beispiel_hd: 'Der neue Roman ist ein echter Schmöker — kann ich nicht aus der Hand legen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-227',
+      ausdruck: 'Späti-Kultur',
+      hochdeutsch: 'Spätkauf-Kultur',
+      bedeutung: 'Die „Späti-Kultur" ist ein Berliner Phänomen — die kleinen Spätkauf-Läden („Spätis"), die abends und nachts offen haben und neben Lebensmitteln auch Bier, Wein und Süßigkeiten verkaufen. Vor dem Späti steht oft eine Bank zum Trinken („Späti-Bier"). Sozialer Treffpunkt der Berliner Jugend. Politisch umstritten (Sonntagsöffnungsverbot), aber kulturell unverzichtbar. Hipster-Romantik und alteingesessene Kiezstruktur in einem.',
+      beispiel: 'Am Freitagabend treffen wir uns vorm Späti aufm Kiez.',
+      beispiel_hd: 'Am Freitagabend treffen wir uns vor dem Spätkauf im Viertel.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-228',
+      ausdruck: 'Berliner Originale',
+      hochdeutsch: 'Berliner Originale (typische Persönlichkeiten)',
+      bedeutung: '„Berliner Originale" sind die typischen Berliner Charaktere — Eckenbeißer, Pfandsammler, Eckkneipen-Wirte, alte Damen mit Hut, junge Hipster mit Bart. Berlin ist berühmt für seine vielen lebendigen Originale, die das Stadtbild prägen. Filme wie „Berlin Alexanderplatz" oder „Christiane F." haben sie portraitiert. Im modernen Berlin werden viele alte Originale durch Gentrifizierung verdrängt — eine traurige Entwicklung für die Stadt-Identität.',
+      beispiel: 'Berlin lebt von seinen Originalen!',
+      beispiel_hd: 'Berlin lebt von seinen typischen Persönlichkeiten!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-229',
+      ausdruck: 'Mauerstadt',
+      hochdeutsch: 'Stadt mit der Mauer (Berlin geteilt)',
+      bedeutung: 'Die „Mauerstadt" — so nannte man Berlin von 1961 bis 1989, als die Berliner Mauer die Stadt teilte. Heute ist die Mauer Geschichte, aber ihre Spuren prägen die Stadt: East Side Gallery, Mauergedenkstätte Bernauer Straße, Mauerpark, Checkpoint Charlie. Touristen kommen, um Mauer-Geschichte zu erleben. Berliner leben mit der Mauergeschichte als Teil ihrer Identität. „Mauer im Kopf" ist die metaphorische Fortsetzung.',
+      beispiel: 'Die Mauerstadt-Geschichte prägt Berlin bis heute.',
+      beispiel_hd: 'Die Mauerstadt-Geschichte prägt Berlin bis heute.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-230',
+      ausdruck: 'Berliner Senat',
+      hochdeutsch: 'Berliner Senat (Stadtregierung)',
+      bedeutung: 'Der „Berliner Senat" ist die Regierung des Bundeslandes Berlin — bestehend aus dem Regierenden Bürgermeister und 10 Senatorinnen/Senatoren. Berlin ist Stadtstaat (wie Hamburg und Bremen) — Stadt und Bundesland zugleich. Der Senat regiert vom Roten Rathaus aus. Berliner haben ein meist amüsiert-resigniertes Verhältnis zur Stadtpolitik: „Berliner Schlendrian", „Bauarbeiten" und „BVG-Pannen" sind Dauerthemen.',
+      beispiel: 'Der Berliner Senat hat schon wieder eine neue Verordnung erlassen.',
+      beispiel_hd: 'Der Berliner Senat hat schon wieder eine neue Verordnung erlassen.',
+      kategorie: 'arbeit'
     }
   ]
 };
