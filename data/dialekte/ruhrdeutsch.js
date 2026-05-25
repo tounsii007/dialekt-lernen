@@ -410,6 +410,51 @@ export default {
       beispiel: 'Hast du das Tor gesehen? Hammer, oder?!',
       beispiel_hd: 'Hast du das Tor gesehen? Wahnsinn, oder?!',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-046',
+      ausdruck: 'Trinkhalle',
+      hochdeutsch: 'Kiosk / Büdchen / Spätkauf',
+      bedeutung: 'Die Trinkhalle — im Ruhrpott auch „Büdchen" oder schlicht „Kiosk" — ist weit mehr als ein Lebensmittelladen: Sie ist das soziale Herzstück des Stadtviertels. Hier kauft man Zigaretten, Zeitungen und Kaltgetränke, erfährt die Neuigkeiten aus dem Viertel und redet über den BVB. Die Trinkhalle ist eine Institution, die den Zusammenhalt im Ruhrgebiet lebendig hält — und oft bis tief in die Nacht geöffnet ist.',
+      beispiel: 'Treff mich an der Trinkhalle — ich hol uns zwei Bier.',
+      beispiel_hd: 'Triff mich am Kiosk — ich hole uns zwei Bier.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-047',
+      ausdruck: 'aufm Pott',
+      hochdeutsch: 'Im Ruhrgebiet / Hier bei uns',
+      bedeutung: '„Aufm Pott" heißt: hier bei uns im Ruhrgebiet. „Der Pott" ist die liebevolle Selbstbezeichnung für die Region — nicht abwertend, sondern mit Stolz gemeint. Wer „aufm Pott" groß geworden ist, gehört zur Gemeinschaft der Ruhrpottler, die ihre Heimat trotz aller Wandlungen treu verbunden bleiben. „Aufm Pott läuft des anner als woanders" gilt als stolze Aussage über die eigene Einzigartigkeit.',
+      beispiel: 'Aufm Pott kennt jeder jeden — des macht die Heimat aus.',
+      beispiel_hd: 'Im Ruhrgebiet kennt jeder jeden — das macht die Heimat aus.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-048',
+      ausdruck: 'Schicht im Schacht',
+      hochdeutsch: 'Feierabend / Schluss / Ende der Arbeit',
+      bedeutung: '„Schicht im Schacht" war der Ruf des Steigers, wenn die Arbeitsschicht unter Tage beendet war: Die Bergleute konnten ans Tageslicht. Heute verwendet man die Redewendung allgemein für das Ende einer Sache — Feierabend, Schluss, alles erledigt. Sie steht für den Ruhrpott-Humor: kurz, direkt, mit einem Augenzwinkern. Wer „Schicht im Schacht" sagt, meint: jetzt ist Ruhe, jetzt haben wir's geschafft.',
+      beispiel: 'Schicht im Schacht, Leute — der Tag ist rum und wir sind fertig!',
+      beispiel_hd: 'Feierabend, Leute — der Tag ist rum und wir sind fertig!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-049',
+      ausdruck: 'Currywurst',
+      hochdeutsch: 'Currywurst (Ruhrpott-Kultessen)',
+      bedeutung: 'Die Currywurst ist nicht nur in Berlin bekannt — im Ruhrgebiet ist sie genauso Kult. Gebratene oder gedämpfte Bratwurst, abgeschnitten oder am Stück, mit Ketchup und Currypulver. An Imbissen neben Zechen und Stahlwerken war die Currywurst das Arbeitermittagessen schlechthin. In Bochum gibt es sogar ein Deutsches Currywurst-Museum-Ableger, und Dortmund führt die eigene Currywurst-Tradition mit Stolz fort.',
+      beispiel: 'Eine Currywurst mit Pommes nach der Schicht — das ist Ruhrpott.',
+      beispiel_hd: 'Eine Currywurst mit Pommes nach der Schicht — das ist Ruhrpott.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-050',
+      ausdruck: 'Zechensiedlung',
+      hochdeutsch: 'Bergarbeitersiedlung / Colonie',
+      bedeutung: 'Die Zechensiedlungen (auch „Colonien") sind ein prägendes Architekturmerkmal des Ruhrgebiets: Von Bergbaugesellschaften gebaute Arbeitersiedlungen mit einheitlichen Backsteinhäusern, Gärten und Gemeinschaftseinrichtungen. Sie entstanden ab den 1850er Jahren, um Bergleute in der Nähe der Zechen anzusiedeln. Heute stehen viele dieser Siedlungen unter Denkmalschutz und sind begehrte Wohngebiete — Gelsenkirchen-Bismarck, Dortmund-Hörde, Essen-Altenessen.',
+      beispiel: 'Meine Oma hat noch in der Zechensiedlung gewohnt — rote Backsteinhäuser, Gärten, alles ordentlich.',
+      beispiel_hd: 'Meine Oma hat noch in der Bergarbeitersiedlung gewohnt — rote Backsteinhäuser, Gärten, alles ordentlich.',
+      kategorie: 'orte'
     }
   ]
 };

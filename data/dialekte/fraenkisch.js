@@ -3,12 +3,12 @@
 export default {
   id: 'fraenkisch',
   name: 'Fränkisch',
-  region: 'Franken (Unter-, Mittel-, Oberfranken)',
-  bundesland: 'Bayern (Franken)',
-  flag: '🏰',
-  farbe: '#e76f51',
-  beschreibung: 'Fränkisch ist der Dialekt der historischen Region Franken im Norden Bayerns und gehört zur mitteldeutschen Sprachgruppe — trotz der bayerischen Zugehörigkeit sehr verschieden vom Bairischen. Gesprochen in Nürnberg, Würzburg, Bamberg und Umgebung. Charakteristisch sind die weichen Konsonanten, das gerollte R, das gedehnte „a" und der besondere Tonfall.',
-  sprecher: 'ca. 3,5 Mio.',
+  region: 'Franken (Nordbayern, Würzburg, Nürnberg, Bamberg, Coburg)',
+  bundesland: 'Bayern (Nordbayern)',
+  flag: '🦅',
+  farbe: '#f77f00',
+  beschreibung: 'Fränkisch ist eine mitteldeutsche Dialektgruppe, die im Gegensatz zum Bairischen im nördlichen Bayern, in Thüringen und Teilen Sachsens gesprochen wird. Markante Merkmale sind das gerollte R, das offene „a" und die einzigartigen Intonationsmuster. Nürnberg, Würzburg und Bamberg sind die Zentren dieses lebendigen Dialekts.',
+  sprecher: 'ca. 6 Mio.',
   ausdruecke: [
     {
       id: 'fr-001',
@@ -33,6 +33,8 @@ export default {
       ausdruck: 'Hawwe mir',
       hochdeutsch: 'Haben wir',
       bedeutung: 'Fränkische Form des Verbs „haben" in der ersten Person Plural. Typisch für das Fränkische ist das „h" am Anfang, das im Hochdeutschen nach „wir" fehlt. Ein Merkmal, das Fränkisch klar vom benachbarten Bairischen unterscheidet.',
+      beispiel: 'Hawwe mir des net schon letscht Woch besprochen?',
+      beispiel_hd: 'Haben wir das nicht schon letzte Woche besprochen?',
       kategorie: 'alltag'
     },
     {
@@ -58,6 +60,8 @@ export default {
       ausdruck: 'Frankn',
       hochdeutsch: 'Franken (die Region)',
       bedeutung: 'Die fränkische Eigenbezeichnung für die historische Region Franken, die heute auf die Regierungsbezirke Ober-, Mittel- und Unterfranken aufgeteilt ist. Franken haben eine starke regionale Identität und betonen gerne, dass sie keine Bayern sind — obwohl sie politisch zu Bayern gehören.',
+      beispiel: 'In Frankn lebt man gut — guder Wein, guds Bier, guds Essa!',
+      beispiel_hd: 'In Franken lebt man gut — guter Wein, gutes Bier, gutes Essen!',
       kategorie: 'orte'
     },
     {
@@ -206,6 +210,8 @@ export default {
       ausdruck: 'Heee?',
       hochdeutsch: 'Wie bitte? / Was sagst du?',
       bedeutung: 'Der typisch fränkische Nachfrage-Ausruf, oft gedehnt und mit steigender Intonation. Kann echtes Nichtverstehen signalisieren, aber auch Überraschung oder leichte Empörung. Der Tonfall macht den Unterschied: ein kurzes „He?" ist Nachfrage, ein langes „Heeee?" ist Verwunderung.',
+      beispiel: 'Heee? Des hab ich jetzt nedd verstanden!',
+      beispiel_hd: 'Wie bitte? Das habe ich jetzt nicht verstanden!',
       kategorie: 'redensart'
     },
     {
@@ -213,6 +219,8 @@ export default {
       ausdruck: 'Krischla',
       hochdeutsch: 'Sauerkirschen / Kirschen',
       bedeutung: 'Die fränkische Bezeichnung für Sauerkirschen oder Kirschen allgemein. Franken ist ein bedeutendes Kirschenanbaugebiet, und die Kirschen spielen eine wichtige Rolle in der regionalen Küche: Kirschwasser, Kirschkuchen, Kirschmarmelade. In der Fränkischen Schweiz gibt es traditionell Kirschenanbau seit Jahrhunderten.',
+      beispiel: 'Im Sommer gibt\'s frische Krischla direkt vom Baum.',
+      beispiel_hd: 'Im Sommer gibt es frische Kirschen direkt vom Baum.',
       kategorie: 'essen'
     },
     {
@@ -229,6 +237,8 @@ export default {
       ausdruck: 'Spitz',
       hochdeutsch: 'Schnapsglas / kleines Stamperl',
       bedeutung: 'Im Fränkischen ist ein „Spitz" ein kleines Glas Schnaps oder Korn — die fränkische Version des bayerischen Stamperls. In Franken gibt es eine lange Tradition von Obstbränden und Tresterbränden, vor allem aus Frankenwein. Ein Spitz nach dem Essen gilt als verdauungsfördernd.',
+      beispiel: 'Nach dem Schäuferla noch an Spitz — des muss sein!',
+      beispiel_hd: 'Nach dem Schäufele noch ein Schnapsgläschen — das muss sein!',
       kategorie: 'essen'
     },
     {
@@ -254,6 +264,8 @@ export default {
       ausdruck: 'Dalkert',
       hochdeutsch: 'Trottel / Dummkopf',
       bedeutung: 'Eine fränkische Bezeichnung für einen ungeschickten, tölpelhaften Menschen. Weniger scharf als andere Schimpfwörter, eher humorvoll-tadelnd gemeint. „Du Dalkert!" wird gerne unter Freunden oder in der Familie bei kleinen Missgeschicken benutzt. Das Wort kommt von „dalken" (tölpeln, ungeschickt sein).',
+      beispiel: 'Du Dalkert, des Glas hättest du doch net da hinstelln solln!',
+      beispiel_hd: 'Du Trottel, das Glas hättest du doch nicht da hinstellen sollen!',
       kategorie: 'schimpf'
     },
     {
@@ -261,6 +273,8 @@ export default {
       ausdruck: 'Dräck',
       hochdeutsch: 'Dreck / Schmutz',
       bedeutung: 'Die fränkische Aussprache von „Dreck", wobei das „e" leicht geöffnet und das „r" gerollt wird. Typisch fränkisch. Kann wörtlich Schmutz bedeuten, aber auch übertragen für Wertloses oder Schlechtes: „Des is doch aller Dräck!" (Das ist doch wertlos!).',
+      beispiel: 'Des is doch aller Dräck, was der da erzählt!',
+      beispiel_hd: 'Das ist doch alles Unsinn, was der da erzählt!',
       kategorie: 'alltag'
     },
     {
@@ -328,7 +342,7 @@ export default {
       ausdruck: 'Christkindlesmarkt',
       hochdeutsch: 'Nürnberger Christkindlesmarkt',
       bedeutung: 'Der Nürnberger Christkindlesmarkt ist einer der bekanntesten und ältesten Weihnachtsmärkte der Welt, urkundlich erwähnt seit 1628. Das Christkind als Marktöffnerin — eine blonde, gekrönte Figur — ist ein Nürnberger Alleinstellungsmerkmal. Der Markt auf dem Hauptmarkt zieht jährlich zwei Millionen Besucher an.',
-      beispiel: 'Auf'm Christkindlesmarkt gibt\'s Glühwein und Lebkuchen.',
+      beispiel: 'Auf\'m Christkindlesmarkt gibt\'s Glühwein und Lebkuchen.',
       beispiel_hd: 'Auf dem Christkindlesmarkt gibt es Glühwein und Lebkuchen.',
       kategorie: 'musik'
     },
@@ -367,6 +381,8 @@ export default {
       ausdruck: 'Altmühltal',
       hochdeutsch: 'Altmühltal (Flusslandschaft)',
       bedeutung: 'Das Altmühltal ist eine der schönsten Flusslandschaften Frankens, wo die Altmühl durch tiefe Kalksteintäler mäandert. Der Altmühltal-Radweg zählt zu Deutschlands beliebtesten Fahrradrouten. Solnhofener Kalkplatten, auf denen Archaeopteryx-Fossilien gefunden wurden, stammen aus dieser Region. Das Tal verbindet Naturschönheit mit geologischer Geschichte.',
+      beispiel: 'Im Altmühltal Rad fahren mit der ganzen Familie — des is Urlaub!',
+      beispiel_hd: 'Im Altmühltal Rad fahren mit der ganzen Familie — das ist Urlaub!',
       kategorie: 'natur'
     },
     {
@@ -410,7 +426,7 @@ export default {
       ausdruck: 'Fränkische Schweiz',
       hochdeutsch: 'Fränkische Schweiz (Landschaft in Oberfranken)',
       bedeutung: 'Die Fränkische Schweiz ist eine Kalksteinlandschaft in Oberfranken zwischen Forchheim, Bayreuth und Bamberg — benannt nach der Schweiz wegen ihrer zerklüfteten Felslandschaft. Sie gilt als Region mit der höchsten Brauereidichte der Welt: Auf engstem Raum gibt es über 200 Brauereien. Burgen, Höhlen (Teufelshöhle, Sophienhöhle), Kletterfelsen und idyllische Täler machen sie zum Wanderparadies. Im Herbst leuchten Hopfengärten in Goldgelb.',
-      beispiel: 'In der Fränkische Schweiz gibt's an jeder Ecke a neue Brauerei.',
+      beispiel: 'In der Fränkische Schweiz gibt\'s an jeder Ecke a neue Brauerei.',
       beispiel_hd: 'In der Fränkischen Schweiz gibt es an jeder Ecke eine neue Brauerei.',
       kategorie: 'natur'
     }
