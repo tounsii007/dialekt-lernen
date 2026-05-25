@@ -455,6 +455,231 @@ export default {
       beispiel: 'Meine Oma hat noch in der Zechensiedlung gewohnt — rote Backsteinhäuser, Gärten, alles ordentlich.',
       beispiel_hd: 'Meine Oma hat noch in der Bergarbeitersiedlung gewohnt — rote Backsteinhäuser, Gärten, alles ordentlich.',
       kategorie: 'orte'
+    },
+    {
+      id: 'ru-051',
+      ausdruck: 'Schimanski',
+      hochdeutsch: 'Horst Schimanski (Tatort-Kommissar)',
+      bedeutung: 'Horst Schimanski (gespielt von Götz George) war der Duisburger Tatort-Kommissar, der von 1981 bis 1991 das Bild des Ruhrgebiets im Fernsehen prägte. Mit seiner Jeansjacke, dem Halbleger und seiner unverblümten Art repräsentierte er den Ruhrpott-Mann par excellence. Sein berühmtes „Scheiße!" und die rauen Methoden machten ihn zur Kultfigur. Auch nach seinem Tod 2016 bleibt Schimanski Symbol des Ruhrgebiets.',
+      beispiel: 'Schimi war wie\'n Vater fürn Pott — n echter Kerl.',
+      beispiel_hd: 'Schimanski war wie ein Vater fürs Ruhrgebiet — ein echter Kerl.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-052',
+      ausdruck: 'Tatort',
+      hochdeutsch: 'Tatort (Krimireihe)',
+      bedeutung: 'Der Tatort ist Deutschlands populärste Krimireihe — seit 1970 jeden Sonntag um 20:15 Uhr im Ersten. Das Ruhrgebiet hat eigene Tatort-Teams: Dortmund mit Faber, Bönisch & Co., früher Schimanski in Duisburg. Die Ruhrpott-Tatorte zeigen authentisch das industrielle Erbe, die Arbeiterviertel und die direkte Mentalität der Region. Sonntag Abend versammelt der Tatort Millionen vor dem Fernseher.',
+      beispiel: 'Sonntag Abend Tatort gucken — Ruhrpott-Pflicht.',
+      beispiel_hd: 'Sonntag Abend Tatort schauen — Ruhrpott-Pflicht.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-053',
+      ausdruck: 'Bochum total',
+      hochdeutsch: 'Open-Air-Festival in Bochum',
+      bedeutung: 'Bochum Total ist Europas größtes kostenloses Innenstadt-Festival, das jährlich Anfang Juli in der Bochumer Innenstadt stattfindet. Auf mehreren Bühnen treten 100+ Bands auf — Indie, Rock, Pop. 800.000 Besucher kommen aus dem ganzen Ruhrgebiet. Das Festival ist Symbol für Bochums Musikszene und das junge, kreative Ruhrgebiet. Nach Herbert Grönemeyers Hymne „Bochum" ist Bochum Total das zweitwichtigste Bochum-Erlebnis.',
+      beispiel: 'Auf Bochum Total triffst die ganze Pott-Szene — verrückt!',
+      beispiel_hd: 'Auf Bochum Total triffst du die ganze Ruhrpott-Szene — verrückt!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-054',
+      ausdruck: 'Grönemeyer',
+      hochdeutsch: 'Herbert Grönemeyer (Musiker, „Bochum")',
+      bedeutung: 'Herbert Grönemeyer (geb. 1956 in Göttingen, aufgewachsen in Bochum) ist Deutschlands erfolgreichster deutschsprachiger Musiker — sein Album „Mensch" (2002) ist mit über 4 Millionen verkauften Exemplaren das meistverkaufte deutsche Album aller Zeiten. Sein Hit „Bochum" (1984) wurde inoffizielle Hymne der Ruhrgebietsstadt. Sein engagierter Stil und seine Verbundenheit zum Pott machen ihn zur Ruhrpott-Ikone.',
+      beispiel: 'Bochum, ich komm aus dir — wer kennt nich diesen Song?',
+      beispiel_hd: 'Bochum, ich komme aus dir — wer kennt nicht diesen Song?',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-055',
+      ausdruck: 'Westfalenstadion',
+      hochdeutsch: 'Signal Iduna Park (BVB-Stadion)',
+      bedeutung: 'Das Westfalenstadion — heute offiziell Signal Iduna Park — ist die Heimat von Borussia Dortmund. Mit 81.365 Plätzen ist es Deutschlands größtes Fußballstadion. Die berühmte Südtribüne („Gelbe Wand") mit 25.000 Stehplätzen ist die größte stehende Tribüne Europas und bietet eine der intensivsten Atmosphären im Weltfußball. Champions League-Spiele hier sind legendär — Reporter weltweit kommen für die Stimmung.',
+      beispiel: 'Auf der Gelben Wand stehen — des isch a Erlebnis.',
+      beispiel_hd: 'Auf der Gelben Wand stehen — das ist ein Erlebnis.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-056',
+      ausdruck: 'Veltins-Arena',
+      hochdeutsch: 'Stadion von Schalke 04',
+      bedeutung: 'Die Veltins-Arena (früher Arena AufSchalke) ist das Stadion des FC Schalke 04 in Gelsenkirchen. Mit 62.271 Plätzen ist sie eines der modernsten Stadien Europas — mit verschiebbarem Dach und Innenfeld, das nach draußen geschoben werden kann. Die Arena wurde 2001 eröffnet und beherbergte mehrere WM-Spiele 2006. Auch wenn Schalke aktuell in der 2. Liga spielt — die Veltins-Arena bleibt Wallfahrtsort der königsblauen Fans.',
+      beispiel: 'In der Veltins-Arena ist die Stimmung immer kochend, ob 1. oder 2. Liga.',
+      beispiel_hd: 'In der Veltins-Arena ist die Stimmung immer kochend, ob 1. oder 2. Liga.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-057',
+      ausdruck: 'Zollverein',
+      hochdeutsch: 'Zeche Zollverein (UNESCO-Welterbe)',
+      bedeutung: 'Die Zeche Zollverein in Essen ist das wohl bekannteste Symbol des Strukturwandels im Ruhrgebiet. Bis 1986 die größte Steinkohlenzeche der Welt, ist sie heute UNESCO-Welterbe (seit 2001) und ein Kulturzentrum mit Museen, Restaurants und Veranstaltungen. Die Bauhaus-Architektur des Förderturms ist Ikone. Die Doppelbockturm-Silhouette ist das Wahrzeichen des Ruhrgebiets schlechthin.',
+      beispiel: 'Auf Zollverein gehts heut zur Ausstellung — Industriekultur pur.',
+      beispiel_hd: 'Auf Zollverein gehen wir heute zur Ausstellung — Industriekultur pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-058',
+      ausdruck: 'Landschaftspark Nord',
+      hochdeutsch: 'Duisburg-Nord (alter Hochofen)',
+      bedeutung: 'Der Landschaftspark Duisburg-Nord ist ein einzigartiges Symbol für den Strukturwandel des Ruhrgebiets — auf dem Gelände eines stillgelegten Hochofenwerks entstand ein riesiger öffentlicher Park mit erhaltenen Industriekolossen. Die Hochöfen kann man besteigen, in alten Gasometern wird getaucht (!), und nachts wird das ganze Areal spektakulär farbig beleuchtet. Ein Vorzeigeprojekt der IBA Emscher Park.',
+      beispiel: 'Im Landschaftspark Nord kannst du in alten Gasometern tauchen!',
+      beispiel_hd: 'Im Landschaftspark Nord kannst du in alten Gasometern tauchen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-059',
+      ausdruck: 'Tiger und Turtle',
+      hochdeutsch: 'Landmarke Duisburg (begehbare Achterbahn)',
+      bedeutung: '„Tiger und Turtle — Magic Mountain" ist eine begehbare Stahlskulptur in Duisburg, geöffnet 2011. Sie sieht aus wie eine Achterbahn — Besucher können sie aber zu Fuß begehen (außer den Looping, der nur gucken). Die Aussicht über das Ruhrgebiet ist atemberaubend. Ein modernes Symbol für die kreative Neuerfindung der Industrieregion. Bei Nacht beleuchtet ist sie spektakulär.',
+      beispiel: 'Wenn de Sonn untergeht, leuchtet Tiger und Turtle gelb.',
+      beispiel_hd: 'Wenn die Sonne untergeht, leuchtet Tiger und Turtle gelb.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-060',
+      ausdruck: 'Kappes',
+      hochdeutsch: 'Weißkohl / Sauerkraut',
+      bedeutung: '„Kappes" ist im Ruhrpott und Rheinland das Wort für Weißkohl. Aus dem Lateinischen „caput" (Kopf — der Kohlkopf). Sauerkraut, eingelegter Weißkohl, ist ein zentrales Element der Ruhrpott- und rheinischen Küche. Reibekuchen mit Kappes, Eintopf mit Kappes, gekochter Kappes mit Speck — die Variationen sind endlos. „Schief gewickelt sein wie ein Kappes" — eine Redensart für Verwirrung.',
+      beispiel: 'Heute Eintopf mit Kappes und Speck — typisch Ruhrpott.',
+      beispiel_hd: 'Heute Eintopf mit Weißkohl und Speck — typisch Ruhrpott.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-061',
+      ausdruck: 'Pommes Schranke',
+      hochdeutsch: 'Pommes mit Ketchup und Mayo',
+      bedeutung: '„Pommes Schranke" ist die Ruhrpott-Spezial-Bestellung an der Frittenbude: Pommes mit halb Mayo, halb Ketchup — die roten und gelben Streifen erinnern an die geschlossene Bahnschranke. Eine ikonische Imbissbestellung des Reviers. „Pommes rot-weiß" ist die Standard-Variante. Imbissbuden („Frittenschmieden") sind soziale Knotenpunkte im Ruhrpott, oft direkt vor Fußballstadien oder Trinkhallen.',
+      beispiel: 'Einmal Pommes Schranke, bitte — und ne Currywurst dazu!',
+      beispiel_hd: 'Einmal Pommes mit Ketchup und Mayo, bitte — und eine Currywurst dazu!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-062',
+      ausdruck: 'Vatertag',
+      hochdeutsch: 'Vatertag im Ruhrpott (Bollerwagen-Tour)',
+      bedeutung: 'Der Vatertag (Christi Himmelfahrt) ist im Ruhrgebiet eine eigene Institution: Männergruppen ziehen mit einem Bollerwagen voller Bier durch die Natur, von einer Trinkstation zur nächsten. Das endet meistens spät und feuchtfröhlich. Eine deutschlandweit verbreitete Tradition, im Ruhrpott aber besonders ausgeprägt. „Vatertagstour" gehört zum Männerjahr wie das Bier zum Pott.',
+      beispiel: 'Vatertag heute? Da is Bollerwagen-Tour mit den Kumpels!',
+      beispiel_hd: 'Vatertag heute? Da ist Bollerwagen-Tour mit den Freunden!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-063',
+      ausdruck: 'Düsseldorf',
+      hochdeutsch: 'Düsseldorf (NRW-Landeshauptstadt)',
+      bedeutung: 'Düsseldorf — manchmal abfällig als „Schickimicki-Stadt" vom Ruhrpott unterschieden — ist die Landeshauptstadt Nordrhein-Westfalens, Sitz vieler Versicherungen und der Königsallee. Düsseldorf und das Ruhrgebiet haben eine traditionelle Rivalität: Düsseldorf gilt als elegant, der Pott als bodenständig. Das Düsseldorfer Altbier vs. Kölsch in Köln und Helles im Pott — alle haben ihre Eigenheiten.',
+      beispiel: 'Düsseldorf is Pott-Konkurrenz — aber wir bleiben Ruhrpott-Original.',
+      beispiel_hd: 'Düsseldorf ist Ruhrpott-Konkurrenz — aber wir bleiben Ruhrpott-Original.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-064',
+      ausdruck: 'Datt is',
+      hochdeutsch: 'Das ist (ruhrdeutsche Aussprache)',
+      bedeutung: '„Datt" ist die Ruhrpott-Variante von „das" — mit dem charakteristischen Doppel-T statt dem Hochdeutschen „das". Begleitet von einem rollenden Tonfall und der typischen direkten Aussprache. „Datt is doch klar!", „Datt geht so nich!". Das Wort ist Markenzeichen des Ruhrdeutschen — wer „datt" sagt, identifiziert sich als Pottmensch. Ein kleines Wort mit großer Identität.',
+      beispiel: 'Datt is doch klar wie Kloßbrühe!',
+      beispiel_hd: 'Das ist doch glasklar!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-065',
+      ausdruck: 'dasse',
+      hochdeutsch: 'Dass du (ruhrdeutsche Aussprache)',
+      bedeutung: '„Dasse" ist im Ruhrpott die zusammengezogene Form von „dass du" — mit dem typisch verschluckten „du". „Mein\' dasse jetzt schon gehs?" — „Meinst du, dass du jetzt schon gehst?". Diese Verschmelzung kommt aus dem schnellen, direkten Sprechstil des Ruhrpotts. Die Sprache ist effizient — keine unnötigen Silben.',
+      beispiel: 'Glaubse echt, dasse das schaffs?',
+      beispiel_hd: 'Glaubst du echt, dass du das schaffst?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-066',
+      ausdruck: 'nach Aldi gehen',
+      hochdeutsch: 'Zu Aldi gehen (typische Ruhrpott-Grammatik)',
+      bedeutung: 'Im Ruhrpott sagt man „ich geh nach Aldi" statt „zu Aldi" — eine grammatikalische Eigenheit, die das Hochdeutsche umgeht. Auch: „nach Schalke gehen" (zu Schalke). Diese Präposition macht das Ruhrdeutsch zum unverwechselbaren Regiolekt. Sprachwissenschaftler studieren diese „Ruhrpott-Grammatik" als Erbe slawischer und niederdeutscher Einflüsse.',
+      beispiel: 'Ich geh schnell nach Aldi — brauchst du was?',
+      beispiel_hd: 'Ich gehe schnell zu Aldi — brauchst du etwas?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-067',
+      ausdruck: 'Tachchen!',
+      hochdeutsch: 'Tag (informelle Begrüßung)',
+      bedeutung: '„Tachchen" ist eine warme, freundliche Ruhrpott-Begrüßung — eine verniedlichte Form von „Tach" (Tag). Es klingt herzlich, ohne kindisch zu sein. Verwendet zwischen Bekannten und Nachbarn beim Vorbeikommen, beim Einkaufen oder am Kiosk. Die Verkleinerungsform „-chen" macht die Begrüßung weicher und persönlicher — typisch Ruhrpott-Direktheit mit menschlichem Touch.',
+      beispiel: 'Tachchen, Frau Schmidt — wie geht\'s denn so?',
+      beispiel_hd: 'Hallo, Frau Schmidt — wie geht es Ihnen?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ru-068',
+      ausdruck: 'Frittenbude',
+      hochdeutsch: 'Frittenbude / Imbiss',
+      bedeutung: 'Die „Frittenbude" ist im Ruhrpott die klassische Imbiss-Institution: Pommes, Currywurst, Schaschlik, Schnitzel-Brötchen. Oft als rote Bude an Straßenecken, vor Stadien oder neben der Trinkhalle. Die „Pommesfrau" oder der „Pommesmann" kennt jeden Stammkunden mit Namen und Lieblingsbestellung. Treffpunkt der Arbeiter nach der Schicht, Treffpunkt der Fans nach dem Spiel.',
+      beispiel: 'Nach\'m Spiel noch schnell zur Frittenbude — Pommes-Currywurst-Sache.',
+      beispiel_hd: 'Nach dem Spiel noch schnell zur Frittenbude — Pommes-Currywurst-Sache.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-069',
+      ausdruck: 'Ringen',
+      hochdeutsch: 'Ringen (Pott-Traditionssport)',
+      bedeutung: 'Das Ringen ist im Ruhrgebiet ein traditionsreicher Sport — fast jedes größere Dorf hat einen Ringerverein. Die Bochumer Ringergebiet ist deutschlandweit erfolgreich, die KSV Aalen-Aalen-Athletik-Köln-Mühlheim sind Ringerligen-Top-Vereine. Bergleute hatten früher die körperliche Substanz für diesen Kraftsport. Heute kämpft Ringen mit dem Nachwuchsmangel, aber die Vereinstradition lebt.',
+      beispiel: 'Mein Opa war Ringer — fünfmal westdeutscher Meister.',
+      beispiel_hd: 'Mein Opa war Ringer — fünfmal westdeutscher Meister.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-070',
+      ausdruck: 'Bergmannsstrophe',
+      hochdeutsch: 'Steigerlied / Bergmannshymne',
+      bedeutung: 'Das „Glück Auf! Der Steiger kommt!" ist die berühmteste deutsche Bergmannshymne — eine Volkslied, das seit dem 17. Jahrhundert in allen deutschen Bergbauregionen gesungen wird. Im Ruhrgebiet ist es identitätsstiftend: bei Beerdigungen von Bergleuten, bei Festen, bei Vereinstreffen. Schalke 04 spielt es bei Heimspielen. „Steiger" war der Aufsichtsbeamte unter Tage — der Vorgesetzte der Bergleute.',
+      beispiel: 'Beim Stadtfest singt jeder „Glück auf, der Steiger kommt" mit.',
+      beispiel_hd: 'Beim Stadtfest singt jeder „Glück auf, der Steiger kommt" mit.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-071',
+      ausdruck: 'Bottroper',
+      hochdeutsch: 'Bottroper / aus Bottrop',
+      bedeutung: 'Bottroper sind die Bewohner Bottrops — einer 117.000-Einwohner-Stadt im westlichen Ruhrgebiet. Heimat des Movie Parks Germany (ehemals Warner Bros. Movie World) und der Halde Beckstraße mit dem berühmten „Tetraeder" (Aussichtsplattform). Die Stadt zeigt den Strukturwandel: Zechen sind geschlossen, Logistik und Dienstleistung übernehmen. Bottrop ist authentischer Ruhrpott, weniger touristisch als Essen oder Dortmund.',
+      beispiel: 'In Bottrop kannst du auf den Tetraeder steigen — geile Aussicht.',
+      beispiel_hd: 'In Bottrop kannst du auf den Tetraeder steigen — tolle Aussicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-072',
+      ausdruck: 'Karneval Pottstil',
+      hochdeutsch: 'Karneval im Ruhrgebiet (anders als Köln)',
+      bedeutung: 'Karneval im Ruhrgebiet hat einen eigenen Stil — herzlicher und proletarischer als in Köln, weniger touristisch. Städte wie Dorsten, Recklinghausen und Bottrop feiern ihren Karneval mit Sitzungen, Rosenmontagszügen und der berühmten Bergmannstradition. Die „Bergmännischen Garden" tragen historische Bergmannsuniformen. Pottkarneval ist Karneval ohne Schickimicki, mit echten Menschen und ehrlichem Bier.',
+      beispiel: 'Karneval im Pott isch authentischer als Köln — keine Touristen.',
+      beispiel_hd: 'Karneval im Pott ist authentischer als Köln — keine Touristen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-073',
+      ausdruck: 'Schalker Gefühl',
+      hochdeutsch: 'Identifikation mit Schalke 04',
+      bedeutung: 'Das „Schalker Gefühl" ist ein Begriff der Schalke 04-Fans — eine fast religiöse Bindung an den Verein, unabhängig von sportlichem Erfolg. Schalke 04 ist mehr als ein Fußballverein: er ist ein Stück Gelsenkirchener Identität, Bergmannsverein, Arbeiterklub. Die Vereinsfarben (königsblau-weiß) und das Schalker Wappen mit dem Kreuz tragen Generationen weiter. „Auf Schalke" zu gehen — Heimspielbesuch — ist Lebensaufgabe.',
+      beispiel: 'Egal ob 1. oder 2. Liga: Schalker Gefühl bleibt für immer.',
+      beispiel_hd: 'Egal ob 1. oder 2. Liga: Schalker Gefühl bleibt für immer.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-074',
+      ausdruck: 'BVB-Liebe',
+      hochdeutsch: 'Identifikation mit Borussia Dortmund',
+      bedeutung: 'BVB-Liebe ist die schwarz-gelbe Hingabe der Borussia Dortmund-Fans — gegründet 1909, achtmaliger Deutscher Meister. Die Borussia steht für Leidenschaft, Tradition und die Stadt Dortmund. Spieler wie Marco Reus, Mats Hummels, Erling Haaland sind/waren Idole. Die „Borussia Familie" mit ihren 200.000 Vereinsmitgliedern ist die zweitgrößte Mitgliederfamilie eines deutschen Sportvereins (nach Bayern).',
+      beispiel: 'BVB-Liebe is lebenslang — egal was passiert.',
+      beispiel_hd: 'BVB-Liebe ist lebenslang — egal was passiert.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-075',
+      ausdruck: 'Bergmannssarg',
+      hochdeutsch: 'Bergmannsbeerdigung mit Helm und Schlägel',
+      bedeutung: 'Die Bergmannsbeerdigung im Ruhrgebiet folgt eigenen Traditionen: Auf dem Sarg liegen oft Bergmannshelm und „Schlägel und Eisen" (das Symbol des Bergbaus). Bergleute in historischen Uniformen begleiten den Sarg, das Steigerlied wird gesungen. Diese Tradition zeigt: Auch wenn die Zechen geschlossen sind, lebt die Bergmannskultur weiter — und ehrt ihre Toten mit einem Ritual, das tief in der Ruhrgebiets-Identität verankert ist.',
+      beispiel: 'Bei der Bergmannssarg liegt Helm und Schlägel — Respekt vor dem Beruf.',
+      beispiel_hd: 'Bei der Bergmannsbeerdigung liegen Helm und Schlägel — Respekt vor dem Beruf.',
+      kategorie: 'arbeit'
     }
   ]
 };

@@ -457,6 +457,231 @@ export default {
       beispiel: 'Der Winzer aus dem Kaiserstuhl kennt jeden Rebstock mit Name.',
       beispiel_hd: 'Der Winzer aus dem Kaiserstuhl kennt jeden Rebstock mit Namen.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'al-051',
+      ausdruck: 'SC Freiburg',
+      hochdeutsch: 'SC Freiburg (Fußballverein)',
+      bedeutung: 'Der SC Freiburg ist Südbadens Fußballverein — gegründet 1904. Mit Trainer Christian Streich (2011-2024) galt er als der sympathischste Bundesligist Deutschlands. Vereinsfarben rot-schwarz. Heimstadion: das neu erbaute Europa-Park Stadion. Bekannt für nachhaltiges Wirtschaften, gute Nachwuchsarbeit und faire Spielweise — die „Breisgau-Brasilianer" sind ein modernes Modell für deutschen Fußball.',
+      beispiel: 'De SC Freiburg isch en Verein zum Liebe — mit Herz und Verstand.',
+      beispiel_hd: 'Der SC Freiburg ist ein Verein zum Lieben — mit Herz und Verstand.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-052',
+      ausdruck: 'Europa-Park',
+      hochdeutsch: 'Europa-Park Rust (größter Vergnügungspark)',
+      bedeutung: 'Der Europa-Park in Rust (Baden) ist Deutschlands größter Freizeitpark und nach Disneyland Paris der zweitbeliebteste Europas. Gegründet 1975 von Familie Mack — wirtschaftlich eines der erfolgreichsten Familienunternehmen Süddeutschlands. Mit 18 Themenbereichen aus europäischen Ländern, über 100 Attraktionen und 5,7 Millionen Besuchern jährlich. Liegt zwischen Freiburg und Strasbourg — auch französische und Schweizer Familien kommen.',
+      beispiel: 'Im Europa-Park sind d\'Achterbahnen weltklasse.',
+      beispiel_hd: 'Im Europa-Park sind die Achterbahnen weltklasse.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-053',
+      ausdruck: 'Karlsruher SC',
+      hochdeutsch: 'Karlsruher Sport-Club (Fußballverein)',
+      bedeutung: 'Der Karlsruher SC ist Nordbadens Traditionsverein — gegründet 1894. Spielte über 30 Jahre in der Bundesliga, ist aber seit den 2000ern ein klassischer „Aufzugsverein" zwischen 1. und 2. Liga. Heimstadion: das Wildparkstadion. Berühmte Spieler: Oliver Kahn (Torwartlegende), Mehmet Scholl, Sean Dundee. „Liebe gewinnt!" ist der KSC-Schlachtruf — Verein mit treuer Fanbasis trotz wechselhafter Karriere.',
+      beispiel: 'De KSC isch immer in mein Herz, egal wo er spielt.',
+      beispiel_hd: 'Der KSC ist immer in meinem Herzen, egal wo er spielt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-054',
+      ausdruck: 'Markgräfler Wii',
+      hochdeutsch: 'Markgräfler Wein',
+      bedeutung: 'Der Markgräfler Wein wird im Markgräflerland zwischen Freiburg und Basel angebaut — historisch das Land der Markgrafen von Baden. Die wichtigste Rebsorte ist der Gutedel (in der Schweiz „Chasselas") — eine in Deutschland fast nur hier angebaute Sorte. Mild, blumig, niedriger Alkohol. Auch Spätburgunder und Müller-Thurgau gedeihen hervorragend. Die Winzergenossenschaften in Ehrenkirchen, Müllheim und Auggen sind weltweit anerkannt.',
+      beispiel: 'En Markgräfler Gutedel — leicht, fein und süffig.',
+      beispiel_hd: 'Ein Markgräfler Gutedel — leicht, fein und süffig.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-055',
+      ausdruck: 'Gutedel',
+      hochdeutsch: 'Gutedel-Wein (alemannische Spezialrebe)',
+      bedeutung: 'Der Gutedel ist die alemannische Lieblingsrebe — eine der ältesten Weinreben Europas, schon zu Zeiten der Phönizier kultiviert. Im Markgräflerland wird er als trockener Weißwein ausgebaut — mild, blumig, niedrige Säure. In der Schweiz heißt er Chasselas (Fendant), in Frankreich Chasselas. Der Markgräfler Gutedel hat geschützte Ursprungsbezeichnung und gilt als perfekter Sommerwein.',
+      beispiel: 'En kühler Gutedel im Garte am Sommerabend — Markgräfler Lebensgefühl.',
+      beispiel_hd: 'Ein kühler Gutedel im Garten am Sommerabend — Markgräfler Lebensgefühl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-056',
+      ausdruck: 'Hexenfeuer',
+      hochdeutsch: 'Hexenfeuer (Brauchtumstradition)',
+      bedeutung: 'Das Hexenfeuer ist eine alemannische Tradition — in der Walpurgisnacht (30. April) und am Funkensonntag (erster Sonntag nach Fasnet) werden große Feuer auf Bergen entzündet. Die Tradition geht auf vorchristliche Frühlingsbräuche zurück und symbolisierte die Vertreibung der Wintergeister. Heute wird sie noch in vielen schwarzwälder Dörfern gepflegt. Familien wandern abends mit Fackeln zum Feuerplatz.',
+      beispiel: 'Am Funkensonntag brennen im Schwarzwald die Hexenfeuer.',
+      beispiel_hd: 'Am Funkensonntag brennen im Schwarzwald die Hexenfeuer.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-057',
+      ausdruck: 'Schemenrennen',
+      hochdeutsch: 'Larvenmaskenrennen (Fasnet-Tradition)',
+      bedeutung: 'Das Schemenrennen ist eine alemannische Fasnet-Tradition in Imst (Tirol) und Telfs — alle 4-5 Jahre maskierte Männer rennen durch die Stadt, verfolgt von „Roller" und „Scheller". UNESCO-Welterbe. Eine wilde, ursprüngliche Form der Fasnet. Die Schemen-Masken sind kunsthandwerkliche Meisterwerke, oft Jahrhunderte alt. Eine archaische, atemberaubende Tradition, die nur alle paar Jahre stattfindet.',
+      beispiel: 'S\'Schemenrennen passiert nur alle paar Johr — Wahnsinn zum Anschauen.',
+      beispiel_hd: 'Das Schemenrennen passiert nur alle paar Jahre — Wahnsinn zum Anschauen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-058',
+      ausdruck: 'Kuckucksuhr',
+      hochdeutsch: 'Schwarzwälder Kuckucksuhr',
+      bedeutung: 'Die Schwarzwälder Kuckucksuhr ist das bekannteste Exportprodukt des alemannischen Raums — eine mechanische Wanduhr mit einem hervorspringenden hölzernen Kuckuck, der zur vollen Stunde ruft. Erfunden um 1730 in Schönwald im Schwarzwald von Franz Anton Ketterer. Echte Schwarzwälder Uhren sind nach dem Verein VdS zertifiziert. Das Uhrenmuseum in Furtwangen zeigt die Geschichte. Weltweiter Kult — besonders bei amerikanischen und japanischen Touristen.',
+      beispiel: 'E Schwarzwälder Kuckucksuhr — die isch im Wohnzimmer Pflicht.',
+      beispiel_hd: 'Eine Schwarzwälder Kuckucksuhr — die ist im Wohnzimmer Pflicht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-059',
+      ausdruck: 'Glashütte',
+      hochdeutsch: 'Schwarzwälder Glashütte',
+      bedeutung: 'Die Glashüttentradition im Schwarzwald geht ins Mittelalter zurück — der Holzreichtum machte das Glasblasen hier möglich. Die Glashütte Höhenmoos und die Wolfacher Glashütte sind noch in Betrieb. Schwarzwälder Glaskunst — Trinkgläser, Vasen, Christbaumschmuck — ist seit Jahrhunderten Exportgut. Heute pflegen wenige Familienbetriebe diese Handwerkskunst. Mundgeblasenes Schwarzwald-Glas ist Sammlerstück.',
+      beispiel: 'In der Wolfacher Glashütte kannst du mer beim Blasen zuschauen.',
+      beispiel_hd: 'In der Wolfacher Glashütte kannst du beim Glasblasen zusehen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-060',
+      ausdruck: 'Schwarzwaldverein',
+      hochdeutsch: 'Schwarzwaldverein (Wanderverein)',
+      bedeutung: 'Der Schwarzwaldverein ist Deutschlands traditionsreicher Wanderverein — gegründet 1864 in Freiburg. Er pflegt 24.000 km Wanderwege im Schwarzwald und stellt die Wegweiser, Schutzhütten und Karten zur Verfügung. Mit über 67.000 Mitgliedern eine der größten Wanderorganisationen Europas. Der „Westweg" (Pforzheim-Basel) und der „Mittelweg" sind seine bekanntesten Fernwanderwege. Schwarzwald-Wandern wird durch ihn organisiert und beschildert.',
+      beispiel: 'D\'Wege im Schwarzwald isch alli vum Schwarzwaldverein beschildert.',
+      beispiel_hd: 'Die Wege im Schwarzwald sind alle vom Schwarzwaldverein beschildert.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-061',
+      ausdruck: 'Donaueschingen',
+      hochdeutsch: 'Donaueschingen (Donauquelle)',
+      bedeutung: 'Donaueschingen ist eine Stadt am Südrand des Schwarzwalds und gilt als Donauquelle — hier vereinigen sich Brigach und Breg zur Donau. Im Schlosspark gibt es einen offiziellen „Donauquelle"-Brunnen, der dem Stadtwerk gehört. Donaueschingen ist berühmt für die Donaueschinger Musiktage (modernes klassisches Festival) und das Schloss der Fürstenberg-Familie. Hier wird auch das berühmte Fürstenberg-Bier gebraut.',
+      beispiel: 'In Donaueschingen entspringt die Donau — und reist bis ans Schwarze Meer.',
+      beispiel_hd: 'In Donaueschingen entspringt die Donau — und reist bis ans Schwarze Meer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-062',
+      ausdruck: 'Konstanzer Konzil',
+      hochdeutsch: 'Konstanzer Konzil 1414-1418',
+      bedeutung: 'Das Konstanzer Konzil (1414–1418) war eines der wichtigsten Ereignisse des Spätmittelalters — hier wurde das Schisma der katholischen Kirche beendet, drei rivalisierende Päpste abgesetzt und Martin V. zum neuen Papst gewählt. Auch der Reformator Jan Hus wurde hier verbrannt. Konstanz war für 4 Jahre das politische Zentrum Europas. Heute erinnert die Imperia-Statue im Hafen (eine satirische Hure mit Papst und Kaiser in den Händen) an die Zeit.',
+      beispiel: 'Im Konstanzer Konzil entschied sich Europa\'s Schicksal.',
+      beispiel_hd: 'Im Konstanzer Konzil entschied sich Europas Schicksal.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-063',
+      ausdruck: 'Bodensee-Schifffahrt',
+      hochdeutsch: 'Weisse Flotte Bodensee',
+      bedeutung: 'Die Bodensee-Schifffahrt ist eine traditionsreiche Verbindung zwischen Deutschland, Österreich und der Schweiz — die „Weisse Flotte" der BSB (Bodensee-Schiffsbetriebe) bedient seit 1824 die wichtigsten Ufer-Orte. Konstanz, Meersburg, Friedrichshafen, Lindau, Bregenz, Romanshorn — alle sind per Schiff verbunden. Eine Schifffahrt im Sommer mit Blick auf Alpen, Mainau und Reichenau ist Bodensee-Klassiker.',
+      beispiel: 'Mit em Schiff vum Konschtanz no Meersburg — Schweizer Aussicht inkluschef.',
+      beispiel_hd: 'Mit dem Schiff von Konstanz nach Meersburg — Schweizer Aussicht inklusive.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-064',
+      ausdruck: 'Mainau',
+      hochdeutsch: 'Blumeninsel Mainau',
+      bedeutung: 'Die Blumeninsel Mainau im Bodensee ist eine subtropische Gartenwelt — 45 Hektar mit Palmen, Schmetterlingshaus, Rosengarten und seltenen Bäumen. Im Besitz der schwedischen Adelsfamilie Bernadotte. Das Schloss Mainau und die einzigartige Pflanzenwelt ziehen jährlich Millionen Touristen an. Im Sommer ein Blütenmeer, im Winter mit der Mainau-Blumen-Show. Eine der Top-Sehenswürdigkeiten am Bodensee.',
+      beispiel: 'Im Sommer blüht d\'Mainau — wie en tropischer Garten.',
+      beispiel_hd: 'Im Sommer blüht die Mainau — wie ein tropischer Garten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-065',
+      ausdruck: 'Reichenau',
+      hochdeutsch: 'Insel Reichenau (UNESCO-Welterbe)',
+      bedeutung: 'Die Insel Reichenau im Bodensee ist UNESCO-Welterbe — schon seit dem 7. Jahrhundert eine bedeutende Klosterinsel. Das Benediktinerkloster war im Mittelalter ein Zentrum der christlichen Kultur und der Buchmalerei. Heute drei romanische Kirchen (St. Maria und Markus, St. Peter und Paul, St. Georg) zu bewundern. Die Reichenau ist auch Deutschlands größtes Gemüseanbaugebiet — die „Reichenauer Salate" sind berühmt.',
+      beispiel: 'D\'Reichenau isch wo d\'Mönche dem Gemüse zwischen die Kirche pflanze.',
+      beispiel_hd: 'Die Reichenau ist, wo die Mönche dem Gemüse zwischen den Kirchen pflanzen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-066',
+      ausdruck: 'Lörrach',
+      hochdeutsch: 'Lörrach (Stadt bei Basel)',
+      bedeutung: 'Lörrach ist die südlichste Stadt Baden-Württembergs — nur wenige Kilometer von Basel entfernt. 50.000 Einwohner. Im Dreiländereck Deutschland-Schweiz-Frankreich gelegen, ist Lörrach eine Schmelztiegelstadt. Viele Schweizer arbeiten hier, viele Lörracher pendeln zur Arbeit nach Basel. Berühmt: das Burghof-Festival, die Hebelschule (nach dem alemannischen Dichter Johann Peter Hebel benannt). Tor zum Markgräflerland.',
+      beispiel: 'Lörrach isch fasch Schwiiz — und doch noch deutsche Heimat.',
+      beispiel_hd: 'Lörrach ist fast Schweiz — und doch noch deutsche Heimat.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-067',
+      ausdruck: 'Weil am Rhein',
+      hochdeutsch: 'Weil am Rhein (Vitra-Stadt)',
+      bedeutung: 'Weil am Rhein ist die südwestlichste Stadt Deutschlands, direkt am Dreiländereck. Berühmt für den Vitra Design Campus mit Bauten von Frank Gehry, Zaha Hadid, Tadao Ando — eine Pilgerstätte für Architekten und Designer. Das Vitra Design Museum zeigt die Geschichte des Möbeldesigns. Weil am Rhein ist auch deutsche Heimat der Schweizer Pendler — die Tram aus Basel fährt bis hierher.',
+      beispiel: 'Vitra in Weil — Architekturwallfahrt für Designliebhaber.',
+      beispiel_hd: 'Vitra in Weil — Architekturwallfahrt für Designliebhaber.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-068',
+      ausdruck: 'Hebel',
+      hochdeutsch: 'Johann Peter Hebel (Dichter)',
+      bedeutung: 'Johann Peter Hebel (1760–1826) ist der bedeutendste alemannische Dichter — geboren in Basel, aufgewachsen in Hausen im Wiesental. Seine „Alemannische Gedichte" (1803) sind klassische Werke der Mundartdichtung. Auch sein „Schatzkästlein des rheinischen Hausfreundes" mit kurzen Geschichten ist berühmt. Hebel war Theologe, Lehrer und gilt als Brücke zwischen Aufklärung und Romantik. In Lörrach gibt es ihm zu Ehren das Hebelfest.',
+      beispiel: 'Hebels „Alemannische Gedichte" — die sin\'s Herz vum Dialekt.',
+      beispiel_hd: 'Hebels „Alemannische Gedichte" — die sind das Herz des Dialekts.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-069',
+      ausdruck: 'Spargel',
+      hochdeutsch: 'Badischer Spargel',
+      bedeutung: 'Der badische Spargel — vor allem aus der Rheinebene um Schwetzingen und Lampertheim — gilt als bester Spargel Deutschlands. Die sandigen Böden und das milde Klima sind ideal. Die Spargelzeit (Mitte April bis 24. Juni) ist heilig: täglich frischer Spargel, mit zerlassener Butter, Sauce Hollandaise oder einfach mit Salzkartoffeln. Schwetzingen nennt sich „Spargelhauptstadt der Welt" — mit Spargelmuseum und Spargelfest.',
+      beispiel: 'Frischer badischer Spargel mit Schinken und Kartoffeln — Mai-Klassiker.',
+      beispiel_hd: 'Frischer badischer Spargel mit Schinken und Kartoffeln — Mai-Klassiker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-070',
+      ausdruck: 'Belchen',
+      hochdeutsch: 'Belchen (Berg im Südschwarzwald)',
+      bedeutung: 'Der Belchen ist mit 1414 m einer der höchsten Berge des Südschwarzwalds — keltisches Heiligtum (sein Name kommt vom keltischen Gott Belenus). Bei klarem Wetter sieht man von hier Alpen, Vogesen, Schwarzwald und Jura — eine vier-Massiv-Aussicht. Die Belchen-Therme in Sulzburg, die Belchenseilbahn und die Belchen-Markthalle sind regionale Anziehungspunkte. Wandern, Wintersport und Aussicht in einem.',
+      beispiel: 'Vum Belchen siehst d\'Alpen, d\'Vogese und d\'Jura.',
+      beispiel_hd: 'Vom Belchen siehst du die Alpen, die Vogesen und den Jura.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-071',
+      ausdruck: 'Feldberg',
+      hochdeutsch: 'Feldberg (höchster Berg im Schwarzwald)',
+      bedeutung: 'Der Feldberg ist mit 1493 m der höchste Berg im Schwarzwald — und der höchste deutsche Berg außerhalb der Alpen. Im Winter Skigebiet mit 14 Liftanlagen, im Sommer Wanderparadies. Der Feldsee am Fuße ist ein klarer Bergsee. Bei klarem Wetter ist die Aussicht von oben spektakulär — Vogesen, Alpen und Schwäbische Alb. Symbol für den Hochschwarzwald und beliebtes Ausflugsziel der Freiburger.',
+      beispiel: 'Im Winter Ski auf\'m Feldberg — im Sommer wandern.',
+      beispiel_hd: 'Im Winter Ski auf dem Feldberg — im Sommer wandern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-072',
+      ausdruck: 'Hinterzarten',
+      hochdeutsch: 'Hinterzarten (Wintersportort)',
+      bedeutung: 'Hinterzarten ist ein berühmter Wintersportort im Hochschwarzwald — Heimat zahlreicher deutscher Skispringer, darunter Sven Hannawald und Severin Freund. Die Skisprungschanze „Adler-Schanze" zählt zu Deutschlands besten Trainingsanlagen. Im Sommer Wanderparadies und Kuhrort. Eine charmante Schwarzwald-Gemeinde mit traditionellem Bauernhaus-Charme und alemannisch-badischem Charakter.',
+      beispiel: 'Aus Hinterzarten kommen viele unsre Skispringer — Schwarzwald als Sportregion.',
+      beispiel_hd: 'Aus Hinterzarten kommen viele unserer Skispringer — Schwarzwald als Sportregion.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-073',
+      ausdruck: 'Titisee',
+      hochdeutsch: 'Titisee (See im Schwarzwald)',
+      bedeutung: 'Der Titisee — etwa 60 km östlich von Freiburg — ist mit 1,3 km² der größte natürliche See im Schwarzwald. Glasklar, eingebettet zwischen bewaldeten Hügeln, von eiszeitlicher Entstehung. Im Sommer Wassersport (Tretboot, Schwimmen, Segeln), im Winter teilweise zugefroren. Der Ort Titisee-Neustadt ist beliebte Touristen-Destination mit Geschäften, Restaurants und Hotels. Häufiges Postkartenmotiv.',
+      beispiel: 'Tretboot auf\'m Titisee — Schwarzwald-Klassiker.',
+      beispiel_hd: 'Tretboot auf dem Titisee — Schwarzwald-Klassiker.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-074',
+      ausdruck: 'Black Forest',
+      hochdeutsch: 'Englische Bezeichnung für Schwarzwald',
+      bedeutung: 'Der „Black Forest" ist die englische Bezeichnung für den Schwarzwald — international ein bekannter Tourismusbegriff. Der „Black Forest Cake" (Schwarzwälder Kirschtorte) ist weltberühmt. Englischsprachige Touristen kennen Black Forest oft besser als die deutschen Begriffe. Die Marke „Black Forest" wird auch für Schwarzwälder Schinken, Kuckucksuhren und Bollenhüte exportiert. Globales Schwarzwald-Branding.',
+      beispiel: 'Touristen kennen unsi Heimat oft als Black Forest — net als Schwarzwald.',
+      beispiel_hd: 'Touristen kennen unsere Heimat oft als Black Forest — nicht als Schwarzwald.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-075',
+      ausdruck: 'Heimet',
+      hochdeutsch: 'Heimat (alemannisch)',
+      bedeutung: '„Heimet" ist die alemannische und schweizerdeutsche Form von „Heimat" — ein zentrales Wort der alemannischen Identität. „Mei Heimet isch im Schwarzwald" — diese Verbindung zwischen Mensch und Landschaft, zwischen Sprache und Boden, ist tief verwurzelt. Im Lied „Heimweh" geht es um die Sehnsucht nach der Heimet. Ein emotionsgeladenes Wort, das die alemannische Verwurzelung in Land und Tradition ausdrückt.',
+      beispiel: 'Mei Heimet isch dort, wo de Wald rauscht und d\'Bächli plätschern.',
+      beispiel_hd: 'Meine Heimat ist dort, wo der Wald rauscht und die Bächlein plätschern.',
+      kategorie: 'gefuehle'
     }
   ]
 };

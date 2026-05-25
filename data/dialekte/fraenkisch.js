@@ -429,6 +429,231 @@ export default {
       beispiel: 'In der Fränkische Schweiz gibt\'s an jeder Ecke a neue Brauerei.',
       beispiel_hd: 'In der Fränkischen Schweiz gibt es an jeder Ecke eine neue Brauerei.',
       kategorie: 'natur'
+    },
+    {
+      id: 'fr-051',
+      ausdruck: '1. FC Nürnberg',
+      hochdeutsch: '1. FC Nürnberg (Fußballverein „Der Club")',
+      bedeutung: 'Der 1. FC Nürnberg, liebevoll „Der Club" genannt, ist Frankens bekanntester Fußballverein — gegründet 1900, neunmaliger deutscher Meister (allerdings der letzte Titel von 1968). Heimstadion: das Max-Morlock-Stadion. Spieler wie Max Morlock und Stefan Reuter sind Vereinslegenden. Der Club hat zwar viele Auf- und Abstiege erlebt, bleibt aber Identitätskern Nürnbergs. „Auf gehts, Glubb!" ist der fränkische Schlachtruf.',
+      beispiel: 'Mein Opa ist sein Lebn lang Club-Fan gewesn — durch dick und dünn.',
+      beispiel_hd: 'Mein Opa ist sein Leben lang Club-Fan gewesen — durch dick und dünn.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-052',
+      ausdruck: 'Bratwurst-Glöckle',
+      hochdeutsch: 'Berühmte Nürnberger Bratwursthütte',
+      bedeutung: 'Die „Bratwurst-Glöckle" ist eine traditionelle Bratwursthütte direkt unter dem Glockenturm der Sebalduskirche in Nürnberg. Seit 1313 (!) werden hier Nürnberger Rostbratwürste gegrillt — eine der ältesten Imbisstraditionen der Welt. Drei oder sechs der kleinen Würstchen im Zinnschälchen mit Sauerkraut sind Kult. Generationen von Nürnbergern und Touristen haben hier ihr Bratwurst-Erlebnis. Eine echte Nürnberger Institution.',
+      beispiel: 'Im Bratwurst-Glöckle haben schon Kaiser gegessen!',
+      beispiel_hd: 'Im Bratwurst-Glöckle haben schon Kaiser gegessen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-053',
+      ausdruck: 'Kaiserburg',
+      hochdeutsch: 'Nürnberger Kaiserburg',
+      bedeutung: 'Die Nürnberger Kaiserburg thront über der Altstadt — eine der bedeutendsten Reichsburgen des Heiligen Römischen Reiches. Seit dem 11. Jahrhundert empfingen hier Kaiser und Könige (insgesamt 33 Kaiser von Konrad III. bis Karl V.) Gäste. Der Sinwellturm (Bergfried, 1200) und die Doppelkapelle sind Highlights. Der tiefe Burgbrunnen mit 50 Metern ist eine technische Meisterleistung. Heute Museum und Wahrzeichen Nürnbergs.',
+      beispiel: 'Auf der Kaiserburg kannst du die Schätze vergangener Zeiten sehn.',
+      beispiel_hd: 'Auf der Kaiserburg kannst du die Schätze vergangener Zeiten sehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-054',
+      ausdruck: 'Wagner',
+      hochdeutsch: 'Richard Wagner (Bayreuther Festspiele)',
+      bedeutung: 'Richard Wagner (1813–1883) wählte das fränkische Bayreuth als Standort für sein Festspielhaus — das einzige Theater der Welt, das nur für seine Werke gebaut wurde. Seit 1876 finden hier die Bayreuther Festspiele statt — das wichtigste Wagner-Festival weltweit. Tickets sind 10 Jahre im Voraus ausgebucht. „Tannhäuser", „Tristan und Isolde", „Der Ring des Nibelungen" werden hier in einzigartiger Akustik aufgeführt. Wagner-Pilgerstätte.',
+      beispiel: 'Ein Wagner in Bayreuth zu erleben — des is ein Lebensziel für Klassikfans.',
+      beispiel_hd: 'Ein Wagner in Bayreuth zu erleben — das ist ein Lebensziel für Klassikfans.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-055',
+      ausdruck: 'Bayreuther Festspielhaus',
+      hochdeutsch: 'Bayreuther Festspielhaus (Wagner-Theater)',
+      bedeutung: 'Das Bayreuther Festspielhaus auf dem Grünen Hügel — 1876 nach Wagners Plänen erbaut — ist ein architektonisches Unikat: Der Orchestergraben ist verdeckt, die Akustik ist unvergleichlich, die Sitze sind hölzern und unbequem (Wagner wollte keinen Komfort, der vom Werk ablenkt). Tickets werden über eine Warteliste vergeben — Geduld von 10+ Jahren ist nötig. Eines der spirituellsten Theatererlebnisse der Welt.',
+      beispiel: 'Im Bayreuther Festspielhaus sitzt mer 4 Stunden auf hartem Holz — und liebts.',
+      beispiel_hd: 'Im Bayreuther Festspielhaus sitzt man 4 Stunden auf hartem Holz — und liebt es.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-056',
+      ausdruck: 'Würzburg',
+      hochdeutsch: 'Würzburg (Stadt am Main, UNESCO-Welterbe)',
+      bedeutung: 'Würzburg ist die fränkische Universitätsstadt am Main — bekannt für die Residenz (UNESCO-Welterbe, Tiepolo-Fresko), die Festung Marienberg auf dem Berg, die Alte Mainbrücke mit Heiligenstatuen und die Würzburger Weine. Mit 130.000 Einwohnern eine charmante Mittelstadt. Im Zweiten Weltkrieg fast komplett zerstört, dann mit großem Aufwand wieder aufgebaut. Die Universität gehört zu den ältesten in Deutschland.',
+      beispiel: 'In Würzburg trinkst du Frankenwein auf der Alten Brück — herrlich!',
+      beispiel_hd: 'In Würzburg trinkst du Frankenwein auf der Alten Brücke — herrlich!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-057',
+      ausdruck: 'Residenz',
+      hochdeutsch: 'Würzburger Residenz (UNESCO-Welterbe)',
+      bedeutung: 'Die Würzburger Residenz ist eines der bedeutendsten Schlösser des Barock — erbaut 1720–1744 von Balthasar Neumann für die Würzburger Fürstbischöfe. Das Treppenhaus mit dem 600 m² großen Deckenfresko von Giovanni Battista Tiepolo gilt als bedeutendstes Deckengemälde der Welt. Seit 1981 UNESCO-Welterbe. Im Krieg schwer zerstört, das Fresko überlebte wundersamerweise. Heute eines der meistbesuchten Schlösser Deutschlands.',
+      beispiel: 'Tiepolos Fresko in der Würzburger Residenz isch Weltklasse.',
+      beispiel_hd: 'Tiepolos Fresko in der Würzburger Residenz ist Weltklasse.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-058',
+      ausdruck: 'Coburg',
+      hochdeutsch: 'Coburg (Stadt in Oberfranken)',
+      bedeutung: 'Coburg ist eine historische Residenzstadt in Oberfranken — bis 1918 Hauptstadt des Herzogtums Sachsen-Coburg-Gotha. Die Veste Coburg, „Fränkische Krone", ist eine der größten Burgen Deutschlands. Coburg ist berühmt für seine Beziehung zum europäischen Hochadel: Prinz Albert (Coburg) heiratete Königin Victoria, womit die Coburger weltweit verbreitet wurden. Heute fragwürdig: AfD-Stadt. Aber historisch und kulturell bedeutend.',
+      beispiel: 'Auf der Veste Coburg lebte Martin Luther a Zeit lang.',
+      beispiel_hd: 'Auf der Veste Coburg lebte Martin Luther eine Zeit lang.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-059',
+      ausdruck: 'Bocksbeutel',
+      hochdeutsch: 'Bocksbeutel (Frankenwein-Flasche)',
+      bedeutung: 'Der Bocksbeutel ist die charakteristische bauchig-flache Weinflasche des Frankenweins — eine geschützte Flaschenform, die ausschließlich für fränkische Qualitätsweine reserviert ist. Die Form geht auf das mittelalterliche Trinkgefäß zurück. Mit 0,75 Liter Inhalt steht der Bocksbeutel für Frankenwein-Tradition — Silvaner, Müller-Thurgau, Bacchus. Im Bocksbeutel-Stadl-Restaurant in Würzburg ist es Heimstatt der fränkischen Weinkultur.',
+      beispiel: 'En guter Frankenwein muss im Bocksbeutel sein — sonst isses ka echter.',
+      beispiel_hd: 'Ein guter Frankenwein muss im Bocksbeutel sein — sonst ist es keiner echter.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-060',
+      ausdruck: 'Silvaner',
+      hochdeutsch: 'Silvaner (Frankenwein-Rebsorte)',
+      bedeutung: 'Der Silvaner ist die klassische Frankenwein-Rebsorte — bereits 1659 erstmals in Franken urkundlich erwähnt. Würzig, mineralisch, mit Nuancen von Birne und Heu. Die fränkischen Weingüter im Maintal (Castell, Bürgerspital Würzburg, Iphofen) produzieren weltbekannte Silvaner. Im Bocksbeutel wird er traditionell serviert. Mit der GG-Klassifikation (Grosses Gewächs) zählt er zu Deutschlands Spitzenweinen. Pasta-Begleiter par excellence.',
+      beispiel: 'En trockner Silvaner zu Spargel — fränkischer Frühlingsgenuss.',
+      beispiel_hd: 'Ein trockener Silvaner zu Spargel — fränkischer Frühlingsgenuss.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-061',
+      ausdruck: 'Rauchbier',
+      hochdeutsch: 'Rauchbier (Bamberger Spezialität)',
+      bedeutung: 'Rauchbier ist eine Bamberger Bierspezialität — das Malz wird über Buchenholz-Feuer geräuchert, was dem Bier einen unverwechselbaren Rauchgeschmack verleiht. Die Brauerei Schlenkerla in der Bamberger Altstadt braut das berühmteste Rauchbier seit 1405 (!). Der Geschmack ist gewöhnungsbedürftig — manche finden ihn an Schinken erinnernd. Wer einmal hängengeblieben ist, kann nicht mehr ohne.',
+      beispiel: 'Schlenkerla-Rauchbier in Bamberg — fränkisches Bier-Unikum.',
+      beispiel_hd: 'Schlenkerla-Rauchbier in Bamberg — fränkisches Bier-Unikum.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-062',
+      ausdruck: 'Kellerbier',
+      hochdeutsch: 'Kellerbier (Fränkische Bierspezialität)',
+      bedeutung: 'Kellerbier ist ein ungespundetes, naturtrübes Bier, das direkt vom Brauereikeller serviert wird — ein urfränkischer Klassiker. Vor allem in den Bierkellern der Fränkischen Schweiz (Forchheim, Bamberg) wird Kellerbier im Holzfass gelagert und im Biergarten direkt aus dem Keller serviert. Niedrige Säure, sanft moussierend, mit einem leicht hefigen Geschmack. Beste Begleitung: ein Schäuferla.',
+      beispiel: 'Auf\'m Forchheimer Kellerwald a Kellerbier — Frankenglück pur.',
+      beispiel_hd: 'Auf dem Forchheimer Kellerwald ein Kellerbier — Frankenglück pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-063',
+      ausdruck: 'Ungespundeter',
+      hochdeutsch: 'Ungespundetes Bier (Fasskeller-Bier)',
+      bedeutung: '„Ungespundeter" ist ein nicht-pressurisiertes Bier, das direkt aus dem offenen Holzfass im Keller serviert wird — daher milder und weicher als modernes Bier mit künstlicher Kohlensäure. Diese fränkische Brautradition wird in den Kellerwäldern um Bamberg und Forchheim noch heute gepflegt. „En Seidla Ungespundeter" zu einem Schäufela oder einem Wurstbrot ist fränkische Esskultur in Reinform.',
+      beispiel: 'Noch en Seidla Ungespundeter, biddscheen.',
+      beispiel_hd: 'Noch ein Krug Kellerbier, bitte.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-064',
+      ausdruck: 'Erlanger Bergkirchweih',
+      hochdeutsch: 'Bergkirchweih (zweitältestes Volksfest Bayerns)',
+      bedeutung: 'Die Erlanger Bergkirchweih, im Volksmund „Berg", ist mit über 1,5 Millionen Besuchern eines der größten Bierfeste in Süddeutschland — nach dem Oktoberfest. Sie findet seit 1755 jährlich Pfingsten im Erlanger Burgberg statt. Auf dem Berg gibt es Bierkeller (alle ungespundet!), Brotzeit, Karussells und einen besonderen volksnahen Charakter. Vom Tisch aus genießt man die Aussicht über Erlangen.',
+      beispiel: 'Auf de Berg geht jeder Erlanger — Pflichttermin im Juni.',
+      beispiel_hd: 'Auf den Berg geht jeder Erlanger — Pflichttermin im Juni.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-065',
+      ausdruck: 'Lebkuchen-Schmidt',
+      hochdeutsch: 'Nürnberger Lebkuchen-Hersteller',
+      bedeutung: 'Lebkuchen-Schmidt aus Nürnberg ist die wohl bekannteste Marke für Nürnberger Elisenlebkuchen — gegründet 1927. Die handsignierten Lebkuchendosen, die rechtzeitig zur Weihnachtszeit deutschlandweit verschickt werden, sind Kult. Echte Nürnberger Elisenlebkuchen müssen mindestens 25% Nüsse enthalten, viel höher als gewöhnliche Lebkuchen. Die Tradition geht auf das mittelalterliche Nürnberg zurück — Honig, Gewürze und Klosterrezepte.',
+      beispiel: 'Zu Weihnachten gibts a Dose Lebkuchen-Schmidt von der Oma.',
+      beispiel_hd: 'Zu Weihnachten gibt es eine Dose Lebkuchen-Schmidt von der Oma.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-066',
+      ausdruck: 'Christkind',
+      hochdeutsch: 'Nürnberger Christkind (Marktöffner)',
+      bedeutung: 'Das Nürnberger Christkind ist eine alle zwei Jahre neu gewählte Jugendliche (16-19 Jahre alt) aus Nürnberg, die als blond-gelocktes Christkind mit goldener Krone und weiß-goldenem Gewand den weltberühmten Christkindlesmarkt eröffnet. Eine Nürnberger Tradition seit 1948. Die Wahl ist hoch begehrt — tausende Mädchen bewerben sich. Das Christkind verkündet vom Balkon der Frauenkirche den Prolog: „Ihr Männer und Frauen ...".',
+      beispiel: 'Wenn s\'Christkind den Prolog spricht, beginnt für uns Weihnachten.',
+      beispiel_hd: 'Wenn das Christkind den Prolog spricht, beginnt für uns Weihnachten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-067',
+      ausdruck: 'Käthe Wohlfahrt',
+      hochdeutsch: 'Rothenburger Weihnachtsdorf',
+      bedeutung: 'Das Käthe Wohlfahrt Weihnachtsdorf in Rothenburg ob der Tauber ist eine fränkische Tourismusattraktion — ein riesiges Geschäft für Weihnachtsschmuck und -figuren, geöffnet das ganze Jahr. Gegründet 1964, ist es ein Pilgerort für deutsch-amerikanische Touristen und Asiaten. Die handgeschnitzten Schwibbögen, Räuchermännchen und Christbaumkugeln sind Souvenirs aus „echtem Deutschland". Käthe Wohlfahrt verkörpert deutsche Weihnachts-Romantik weltweit.',
+      beispiel: 'In Rothenburg findest du Käthe Wohlfahrt — Weihnachten im Juli!',
+      beispiel_hd: 'In Rothenburg findest du Käthe Wohlfahrt — Weihnachten im Juli!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-068',
+      ausdruck: 'Rothenburg',
+      hochdeutsch: 'Rothenburg ob der Tauber',
+      bedeutung: 'Rothenburg ob der Tauber ist die wohl meistphotographierte Stadt Deutschlands — eine fast vollständig erhaltene mittelalterliche Stadt mit ihrer Stadtmauer, Türmen, Toren und Fachwerkhäusern. Im Krieg sollte sie zerstört werden, wurde aber durch einen amerikanischen Generalsdiplomatisches Geschick gerettet. Heute Pilgerstätte japanischer und amerikanischer Touristen. Burgermeisters-Trunk-Legende und Schneeballen sind weitere Markenzeichen.',
+      beispiel: 'In Rothenburg fühlsts du dich wie im Mittelalter — krass!',
+      beispiel_hd: 'In Rothenburg fühlst du dich wie im Mittelalter — krass!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-069',
+      ausdruck: 'Lederhosn-Wandern',
+      hochdeutsch: 'Fränkische Wanderkultur (oft in Tracht)',
+      bedeutung: 'In Franken wird auch beim Wandern oft Tracht getragen — Lederhose oder Trachtenrock, Wadenstrümpfe und Hut. Die fränkischen Wandervereine pflegen diese Tradition besonders im Frankenwald, der Fränkischen Schweiz und der Frankenalb. Wandern ist hier Pflicht — bei jedem Wetter, mit Brotzeit und einem Schluck Frankenwein. Auf den Bierkellern und Brotzeitstationen am Wanderweg trifft sich die fränkische Gemeinschaft.',
+      beispiel: 'In der Fränkischen Schweiz wandern manche noch in Lederhosn.',
+      beispiel_hd: 'In der Fränkischen Schweiz wandern manche noch in Lederhose.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-070',
+      ausdruck: 'Walberla',
+      hochdeutsch: 'Walberla (Berg in der Fränk. Schweiz)',
+      bedeutung: 'Das Walberla ist der bekannteste Berg der Fränkischen Schweiz — eine 532 m hohe Kalkstein-Tafelbergkuppe mit der Walpurgis-Kapelle. Jedes Jahr Anfang Mai findet hier das traditionelle „Walberla-Fest" statt — Wallfahrt und Volksfest in einem. Familien aus ganz Mittelfranken pilgern auf den Berg, oft in Tracht, und feiern den Frühlingsbeginn mit Bier und Brotzeit. Eine echt fränkische Tradition.',
+      beispiel: 'Aufs Walberla pilgern d\'Erlanger jedes Jahr im Mai.',
+      beispiel_hd: 'Aufs Walberla pilgern die Erlanger jedes Jahr im Mai.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-071',
+      ausdruck: 'Schorsch',
+      hochdeutsch: 'Kosename für Georg (fränkisch typisch)',
+      bedeutung: '„Schorsch" ist im Fränkischen (und Hessischen, Pfälzischen) die volkstümliche Form von Georg — sehr verbreitet als Vorname und Spitzname. „Schorsch" klingt herzlich, bodenständig, typisch fränkisch. In Franken kennt jeder einen Schorsch. Der Name hat eine fast komödiantische Qualität — perfekt für Geschichten und Witze. Schorsch Glanzberger und Schorsch Glanzler sind klassische fränkische Namensformen.',
+      beispiel: 'Mein Onkel Schorsch ist a echter Franke — und a Original!',
+      beispiel_hd: 'Mein Onkel Georg ist ein echter Franke — und ein Original!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-072',
+      ausdruck: 'Mariendarstellung',
+      hochdeutsch: 'Maria mit Kind (fränkische Kunst)',
+      bedeutung: 'Die Mariendarstellung ist ein Hauptmotiv der fränkischen Kunst — Tilman Riemenschneider (1460–1531) aus Heiligenstadt schuf in Würzburg unvergleichliche Mariendarstellungen aus Holz und Stein. Seine Schnitzwerke in der Marienkapelle (Würzburg), der Herrgottskirche (Creglingen) und vielen fränkischen Kirchen sind Meisterwerke der spätmittelalterlichen Bildhauerkunst. Riemenschneider gilt als wichtigster deutscher Bildhauer seiner Zeit.',
+      beispiel: 'Riemenschneider-Madonnen — fränkische Kunstweltklasse.',
+      beispiel_hd: 'Riemenschneider-Madonnen — fränkische Kunstweltklasse.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-073',
+      ausdruck: 'Pegnitz',
+      hochdeutsch: 'Pegnitz (Fluss durch Nürnberg)',
+      bedeutung: 'Die Pegnitz ist Nürnbergs Fluss — sie durchquert die Altstadt und teilt sie in Sankt Sebald (Nordstadt) und Sankt Lorenz (Südstadt). Beide Stadtteile haben jeweils ihre eigene Kirche. Berühmt: die Pegnitzbrücken wie die Maxbrücke und der Henkersteg. Die Pegnitz mündet später in die Regnitz und damit über den Main in den Rhein. Das Pegnitzufer ist Lieblings-Spaziergang der Nürnberger.',
+      beispiel: 'An der Pegnitz spazieren — Nürnberg von seiner schönsten Seite.',
+      beispiel_hd: 'An der Pegnitz spazieren — Nürnberg von seiner schönsten Seite.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-074',
+      ausdruck: 'Glubb',
+      hochdeutsch: 'Spitzname für 1. FC Nürnberg',
+      bedeutung: '„Der Glubb" ist die liebevolle fränkische Bezeichnung für den 1. FC Nürnberg — vom Wort „Club" mit dem typisch fränkischen „g" am Anfang. Fans rufen „Auf gehts, Glubb!" und die Vereinszeitschrift heißt „Glubb-Zeitung". Der Name unterstreicht die unverwechselbar fränkische Identität des Vereins — kein Plastikclub, sondern eine Familie mit über 120 Jahren Geschichte. Wer „Glubb" sagt, ist Insider.',
+      beispiel: 'Glubb-Fan in dritter Generation — des is Familie!',
+      beispiel_hd: 'Glubb-Fan in dritter Generation — das ist Familie!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-075',
+      ausdruck: 'Würschdla',
+      hochdeutsch: 'Würstchen (Verkleinerungsform)',
+      bedeutung: '„Würschdla" sind die fränkischen Würstchen — vor allem die berühmten Nürnberger Bratwürstchen, kleiner und feiner als andere deutsche Würste. Das fränkische Diminutiv „-la" (statt „-lein") macht das Wort verniedlicht und liebevoll. Auch „Bratwürschdla" oder „Wirschdla" gehören in den Wortschatz. Drei Bratwürschdla auf Sauerkraut sind die klassische fränkische Mahlzeit — schnell, lecker, traditionell.',
+      beispiel: 'Sechs Würschdla mit Senf, biddscheen.',
+      beispiel_hd: 'Sechs Würstchen mit Senf, bitte.',
+      kategorie: 'essen'
     }
   ]
 };
