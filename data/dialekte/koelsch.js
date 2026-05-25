@@ -1325,6 +1325,231 @@ export default {
       beispiel: '„En unserem Veedel" — und alle singen mit.',
       beispiel_hd: '„En unserem Veedel" — und alle singen mit.',
       kategorie: 'musik'
+    },
+    {
+      id: 'k-151',
+      ausdruck: 'St. Aposteln',
+      hochdeutsch: 'Basilika St. Aposteln',
+      bedeutung: 'St. Aposteln am Neumarkt ist eine der zwölf großen romanischen Kirchen Kölns — Wahrzeichen kölscher Kirchenarchitektur des 11. Jahrhunderts. Die markante Doppelturm-Front ist Stadt-Ikone. Im Krieg zerstört, originalgetreu wieder aufgebaut. Die kölschen Romanik-Kirchen (St. Maria im Kapitol, Groß St. Martin, St. Severin etc.) sind UNESCO-Welterbe-Anwärter. Kölsche Sakralgeschichte.',
+      beispiel: 'St. Aposteln am Neumarkt — kölsche Romanik pur.',
+      beispiel_hd: 'St. Aposteln am Neumarkt — kölsche Romanik pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-152',
+      ausdruck: 'Großbasilika',
+      hochdeutsch: 'Groß St. Martin (Romanische Kirche)',
+      bedeutung: 'Groß St. Martin am Fischmarkt ist eine der berühmtesten romanischen Kirchen Kölns — markante Vierungstürme aus dem 12. Jahrhundert. Die Silhouette mit dem Kleeblatt-Grundriss ist Kölner Postkarten-Klassiker. Im Krieg schwer beschädigt, erst 1985 wieder eröffnet. Im Schatten des Doms gelegen, aber kunsthistorisch ebenso bedeutsam. Pilgerort für Architektur-Liebhaber.',
+      beispiel: 'Groß St. Martin steht im Schatten vom Dom, aber ist genauso schön.',
+      beispiel_hd: 'Groß St. Martin steht im Schatten vom Dom, aber ist genauso schön.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-153',
+      ausdruck: 'Loss mer singe',
+      hochdeutsch: 'Lass uns singen (Karneval-Aufruf)',
+      bedeutung: '„Loss mer singe!" ist die kölsche Aufforderung zum gemeinsamen Singen — besonders bei Karneval. Auch der Name der wichtigsten Karnevalslied-Nachwuchs-Förderung („Loss mer singe e.V."). Neue Karnevalslieder werden hier getestet — wenn das Publikum mitsingen kann, hat das Lied Chance, ein Hit zu werden. Kölsche Lieder-Demokratie.',
+      beispiel: '„Loss mer singe!" — und ganz Kölle stimmt ein.',
+      beispiel_hd: '„Lass uns singen!" — und ganz Köln stimmt ein.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-154',
+      ausdruck: 'Heinrich Böll',
+      hochdeutsch: 'Heinrich Böll (Nobelpreisträger aus Köln)',
+      bedeutung: 'Heinrich Böll (1917-1985) — geboren in Köln — war einer der wichtigsten deutschen Schriftsteller der Nachkriegszeit. Nobelpreis für Literatur 1972. Sein Werk „Ansichten eines Clowns", „Gruppenbild mit Dame", „Die verlorene Ehre der Katharina Blum" sind Klassiker. Politisch engagiert, oft kritisch. Die Heinrich-Böll-Stiftung der Grünen trägt seinen Namen. Köln\'s bedeutendster Schriftsteller.',
+      beispiel: 'Böll war Köln\'s schreibende Stimme — kritisch und brilliant.',
+      beispiel_hd: 'Böll war Kölns schreibende Stimme — kritisch und brillant.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-155',
+      ausdruck: 'Jürgen Becker',
+      hochdeutsch: 'Jürgen Becker (Kölner Kabarettist)',
+      bedeutung: 'Jürgen Becker ist Kölns bekanntester politisch-satirischer Kabarettist — seit 1983 in den Mitternachtsspitzen (WDR) zu sehen. Spitzname „Der Mitschnitt". Verkörpert kölsche Direktheit und Wortwitz. Mit Erkennungssprüchen wie „Schönen guten Abend, wer in seinem Lehnstuhl heut Abend sitzt ..." gilt er als kölsche Comedy-Legende. Bekannt für seinen scharfen, aber herzlichen Stil.',
+      beispiel: 'Jürgen Becker mit seinen Mitternachtsspitzen — Kölner Kabarett-Klassiker.',
+      beispiel_hd: 'Jürgen Becker mit seinen Mitternachtsspitzen — Kölner Kabarett-Klassiker.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-156',
+      ausdruck: 'Wolfgang Niedecken',
+      hochdeutsch: 'Wolfgang Niedecken (BAP-Frontmann)',
+      bedeutung: 'Wolfgang Niedecken (geb. 1951) ist der Frontmann von BAP — Kölns erfolgreichste Rockband (seit 1976). Die Band singt fast ausschließlich auf Kölsch. Hits wie „Verdamp lang her", „Kristallnaach" und „Et jitt kein Wood" sind Kult. Niedecken ist auch als Maler und politischer Aktivist bekannt. BAP hat das Kölsch zu einer rock-tauglichen Sprache gemacht — ein historischer Akt.',
+      beispiel: 'BAP hat\'s Kölsch zur Rocksprache gemacht — historisch.',
+      beispiel_hd: 'BAP hat das Kölsch zur Rocksprache gemacht — historisch.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-157',
+      ausdruck: 'Wim Wenders',
+      hochdeutsch: 'Wim Wenders (Filmregisseur aus Düsseldorf, Köln-Bezug)',
+      bedeutung: 'Wim Wenders (geb. 1945) — eigentlich Düsseldorfer — verbrachte prägende Jahre in Köln. Sein „Der Himmel über Berlin" (1987) ist ein internationaler Filmklassiker. Wenders gehört zur deutschen Filmavantgarde, dreht meist auf Englisch. Auch wenn er Düsseldorfer ist, hat er das Kölner Kino-Spirit geprägt. Berliner Filmgeschichte mit hessischem Touch.',
+      beispiel: 'Wim Wenders\' Filme — wie poetisches Wandern.',
+      beispiel_hd: 'Wim Wenders\' Filme — wie poetisches Wandern.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-158',
+      ausdruck: 'WDR',
+      hochdeutsch: 'Westdeutscher Rundfunk (Köln)',
+      bedeutung: 'Der Westdeutsche Rundfunk (WDR) ist Deutschlands größte ARD-Anstalt — Sitz Köln. Mit über 4.000 Mitarbeitern. Produziert Tatort-Folgen mit Kölner Kommissaren, „Mitternachtsspitzen", „Aktuelle Stunde". Das WDR-Funkhaus am Wallrafplatz ist Architekturikone (mit der „Schmuckwand"). Heute wichtige kulturelle Institution Kölns. Auch der WDR-Kindersender KiKa kommt aus Köln/Erfurt.',
+      beispiel: 'Der WDR macht den besten Karnevalsstream — Köln-pur.',
+      beispiel_hd: 'Der WDR macht den besten Karnevalsstream — Köln-pur.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-159',
+      ausdruck: 'Funkhaus Wallrafplatz',
+      hochdeutsch: 'WDR Funkhaus Wallrafplatz',
+      bedeutung: 'Das WDR Funkhaus am Wallrafplatz in Köln ist deutsche Mediengeschichte — gebaut 1948-1952 von Peter Friedrich Schneider. Das nüchterne Nachkriegs-Funkhaus war Wirkungsstätte vieler bedeutender Journalisten und Moderatoren. Architektonisch eines der wichtigsten Werke der Nachkriegszeit. Heute Hauptsitz des WDR. Wallrafplatz ist auch Treffpunkt für Kölner Kulturinteressierte.',
+      beispiel: 'Vom Funkhaus Wallrafplatz aus läuft Kölle\'s Medien-Welt.',
+      beispiel_hd: 'Vom Funkhaus Wallrafplatz aus läuft Kölns Medien-Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-160',
+      ausdruck: 'Schokoladen-Imhoff',
+      hochdeutsch: 'Hans Imhoff (Schokoladen-Pionier)',
+      bedeutung: 'Hans Imhoff (1922-2007) war Kölns Schokoladen-König — gründete 1972 die Stollwerck AG (mit der Marke Sarotti) und 1993 das Schokoladenmuseum am Rhein. Sein Unternehmen produzierte über 20% aller Schokoladen in Deutschland. Privatphilanthrop und Förderer des Kölner Sports. Sein Schokoladenbrunnen (3 m hoch, 200 kg Schokolade!) im Museum ist Kult. Süße Kölner Wirtschaftsgeschichte.',
+      beispiel: 'Hans Imhoff hat Köln zur Schokoladen-Hauptstadt gemacht.',
+      beispiel_hd: 'Hans Imhoff hat Köln zur Schokoladen-Hauptstadt gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-161',
+      ausdruck: 'Kölner Zoo',
+      hochdeutsch: 'Kölner Zoo (Tierpark)',
+      bedeutung: 'Der Kölner Zoo in Riehl wurde 1860 gegründet — einer der ältesten Zoos Deutschlands. Mit dem Elefantenpark, dem Hippodrom und dem Tropenhaus eines der schönsten zoologischen Gärten Deutschlands. Berühmt: die Roten Schlangenhalsschildkröten und die Asien-Erlebniswelt. Hennes der Geißbock (FC-Maskottchen) lebt hier seit 1950. Beliebt bei Familien — über 1,8 Mio. Besucher jährlich.',
+      beispiel: 'In den Kölner Zoo geht jeder Kölner mal mit den Enkelkindern.',
+      beispiel_hd: 'In den Kölner Zoo geht jeder Kölner mal mit den Enkelkindern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-162',
+      ausdruck: 'Aachen',
+      hochdeutsch: 'Aachen (Karls-Stadt, Köln-Nähe)',
+      bedeutung: 'Aachen — westlich von Köln an der Grenze zu Belgien und den Niederlanden — war Karl des Großen Residenz. Der Aachener Dom (UNESCO-Welterbe) beherbergt sein Grab. Die Aachener Karlspreis wird jährlich an europäische Persönlichkeiten verliehen. Aachen und Köln sind beide Rheinländer, aber kulturell unterschiedlich. Aachen ist mehr „Öcher Mundart" als Kölsch.',
+      beispiel: 'Aachener Dom — wo Karl der Große begraben isch.',
+      beispiel_hd: 'Aachener Dom — wo Karl der Große begraben ist.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-163',
+      ausdruck: 'Karlspreis',
+      hochdeutsch: 'Karlspreis zu Aachen',
+      bedeutung: 'Der Internationale Karlspreis zu Aachen — seit 1950 jährlich am Christi-Himmelfahrts-Tag verliehen — ehrt Personen, die sich um die europäische Einigung verdient gemacht haben. Preisträger: Winston Churchill, Konrad Adenauer, Henry Kissinger, Helmut Kohl, Tony Blair, Bill Clinton, Emmanuel Macron. Symbol für deutsch-europäische Versöhnung. Rheinländischer Beitrag zur Weltpolitik.',
+      beispiel: 'Der Karlspreis — höchste Auszeichnung für Europäer.',
+      beispiel_hd: 'Der Karlspreis — höchste Auszeichnung für Europäer.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-164',
+      ausdruck: 'Ottostraße',
+      hochdeutsch: 'Otto-Wels-Straße (Kölner Studenten-Adresse)',
+      bedeutung: 'Die Ottostraße in Köln-Ehrenfeld ist eine kultige Studenten-Wohnadresse — billig, lebendig, multikulturell. Türkische, arabische und kölsche Communities mischen sich. Späti, Imbiss, Hipster-Café — alles in einer Straße. Die Ottostraße ist die ehrliche Antwort auf das gentrifizierte Belgische Viertel. Kölsche Realität ohne Schnörkel.',
+      beispiel: 'In der Ottostraße wohnt halb Köln in WGs.',
+      beispiel_hd: 'In der Ottostraße wohnt halb Köln in WGs.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-165',
+      ausdruck: 'Schäl Sick',
+      hochdeutsch: 'Schäle Seite (rechtsrheinisches Köln)',
+      bedeutung: 'Die „Schäl Sick" — wörtlich „schiefe Seite" — ist die kölsche Bezeichnung für die rechtsrheinische Seite (Deutz, Mülheim, Kalk, Porz). Historisch wurde diese Seite als minderwertig betrachtet — weil die wichtigeren Stadtteile linksrheinisch lagen. Heute eher liebevoll-ironisch gemeint. Wer „auf der Schäl Sick" wohnt, ist trotzdem echter Kölner.',
+      beispiel: 'Auf der Schäl Sick wohnen — Mülheim, Kalk und stolz drauf.',
+      beispiel_hd: 'Auf der rechtsrheinischen Seite wohnen — Mülheim, Kalk und stolz drauf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-166',
+      ausdruck: 'Schlachten Pott',
+      hochdeutsch: 'Kölscher Karneval-Kessel',
+      bedeutung: 'Der „Schlachten Pott" ist ein humorvoller Karnevalsbegriff für einen großen Kessel, in dem alle „eingerühren" werden — die Karnevalisten als bunte Mischung. Symbolisch: Köln ist ein Schmelztiegel der Kulturen, Religionen, Berufe. Im Karneval kommen alle zusammen. Eine alte kölsche Metapher mit politischem Unterton: Köln ist tolerant, multikulti, herzlich.',
+      beispiel: 'Karneval is\' der schlachte Pott — alle koche zusammen.',
+      beispiel_hd: 'Karneval ist der schlachte Pott — alle kochen zusammen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-167',
+      ausdruck: 'Schoofs-Sitzung',
+      hochdeutsch: 'Klein-Sitzung (sehr informelle Karneval-Sitzung)',
+      bedeutung: 'Eine „Schoofs-Sitzung" ist eine sehr informelle, oft private Karnevalssitzung — im Wohnzimmer, im Hinterzimmer einer Eckkneipe, in einem Vereinsheim. Kein großes Programm, kein Dreigestirn — einfach Freunde, die im Karneval zusammen feiern. Diese Mini-Sitzungen sind das Herz des kölschen Karnevals: ungeschönt, herzlich, lokal.',
+      beispiel: 'En Schoofs-Sitzung beim Friedhelm — ehrliche Karnevals-Stimmung.',
+      beispiel_hd: 'Eine Schoofs-Sitzung beim Friedhelm — ehrliche Karnevals-Stimmung.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-168',
+      ausdruck: 'Kamelle un Strüssjer',
+      hochdeutsch: 'Süßigkeiten und Blumensträußchen',
+      bedeutung: 'Beim Rosenmontagszug rufen die Kinder „Kamelle un Strüssjer!" — Süßigkeiten und Blumensträußchen. Diese werden von den Wagen ins Publikum geworfen. 300 Tonnen Süßigkeiten, 700.000 Blumensträußchen pro Rosenmontagszug. Eine traditionelle Karnevalspraxis mit gesellschaftlicher Bedeutung: die Mächtigen (auf den Wagen) versorgen das Volk (am Straßenrand). Kölsche Karnevalspolitik.',
+      beispiel: '„Kamelle un Strüssjer!" — Kinderruf vom Karnevalsrand.',
+      beispiel_hd: '„Süßigkeiten und Blumensträußchen!" — Kinderruf vom Karnevalsrand.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-169',
+      ausdruck: 'Vrang',
+      hochdeutsch: 'Spitzname für Karnevalsverein',
+      bedeutung: '„De Vrang" oder „Vränge" sind kölsche Spitznamen für Karnevalsgesellschaften — abgeleitet von „Vorrang" oder „Frunschaff" (Freundschaft). Jeder Karnevalsverein hat seinen eigenen Spitznamen. Die „Roten Funken" sind „de Funke", die „Blauen Funken" auch usw. Insider-Wissen für kölsche Karnevalisten. Hilft, sich in der komplexen kölschen Karnevalsszene zurechtzufinden.',
+      beispiel: 'Bei den Funken sin\' meine Frünn — gute Vränge!',
+      beispiel_hd: 'Bei den Funken sind meine Freunde — gute Karnevalsvereine!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-170',
+      ausdruck: 'Kölscher Wein',
+      hochdeutsch: 'Kölscher Weinbau (existiert kaum)',
+      bedeutung: 'Im Gegensatz zur Mosel oder zum Rheingau hat Köln keinen eigenen Weinbau — das Klima ist zu rau, der Boden nicht geeignet. Trotzdem gibt es heute experimentelle Weinbau-Projekte im Kölner Umland (Köln-Worringen). Kölner trinken hauptsächlich Mosel-Riesling und Rotwein aus Italien. Kölsch (das Bier) ist und bleibt das Hauptgetränk. Wein ist hier sekundär.',
+      beispiel: 'Kölscher Weinbau? Den gibt\'s eigentlich net — wir trinken Bier.',
+      beispiel_hd: 'Kölscher Weinbau? Den gibt es eigentlich nicht — wir trinken Bier.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-171',
+      ausdruck: 'Em Roten Funken',
+      hochdeutsch: 'Bei den Roten Funken (Karnevalsverein)',
+      bedeutung: 'Die „Kölsche Roten Funken Artillerie von 1823" sind Kölns ältester und renommiertester Karnevalsverein — gegründet 1823. Sie tragen rote Husarenuniformen mit weißer Verbrämung. Ihre Tanzcorps gehört zu den besten Karnevalsgarden. Mitglied zu werden ist eine Lebensauszeichnung — Generationen lange Wartelisten. Ein Symbol kölscher Karnevalstradition und gesellschaftlicher Verflechtung.',
+      beispiel: 'Em Rote Funke is\' Pflicht für Karnevalsjeck — wenn du Glück hast.',
+      beispiel_hd: 'Bei den Roten Funken ist Pflicht für Karnevalsjeck — wenn du Glück hast.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-172',
+      ausdruck: 'Wickelfest',
+      hochdeutsch: 'Wickelfest (Kölner Frühlingsfest)',
+      bedeutung: 'Das Wickelfest ist eine traditionelle kölsche Frühlings-Veranstaltung in den Veedeln — die Wäsche wird ausgewickelt, die Sommerkleidung kommt heraus, die Nachbarn treffen sich. Ein einfaches Volksfest, das Gemeinschaft fördert. Heute weniger verbreitet, aber in einigen kölschen Veedeln noch lebendig. Symbol für die kölsche Nachbarschaftskultur.',
+      beispiel: 'Beim Wickelfest treffen sich alle Veedel-Bewohner — schön.',
+      beispiel_hd: 'Beim Wickelfest treffen sich alle Veedel-Bewohner — schön.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-173',
+      ausdruck: 'Dom-Bauhütte',
+      hochdeutsch: 'Dombauhütte Köln',
+      bedeutung: 'Die Dombauhütte am Kölner Dom ist eine der ältesten Bauhütten Deutschlands — seit 1248 (Baubeginn des Doms) durchgehend tätig. Heute restaurieren hier Steinmetze, Bildhauer und Glasmaler permanent den Dom — er wird nie ganz „fertig". Das traditionelle Handwerk wird hier weitergegeben. UNESCO-anerkanntes immaterielles Kulturerbe. Die Dombauhütte ist Kölner Lebensaufgabe.',
+      beispiel: 'In der Dombauhütte schaffe sie seit 800 Jahre — kölsche Tradition.',
+      beispiel_hd: 'In der Dombauhütte schaffen sie seit 800 Jahren — kölsche Tradition.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-174',
+      ausdruck: 'Schull- un Veedelszöch',
+      hochdeutsch: 'Schul- und Stadtteilzüge (Karnevalsfreitag)',
+      bedeutung: 'Die „Schull- un Veedelszöch" sind kleinere Karnevalsumzüge am Karnevalsfreitag — Schulen und Stadtteile zeigen ihre Karnevalskreativität. Mit selbstgebastelten Motivwagen, Tanzgruppen und Musikkapellen. Eine warm-herzige Vorstufe zum Rosenmontagszug. Hier zeigen Schulkinder ihre kreativen Beiträge — meistens politisch oder sozialkritisch, wie es Kölner Tradition ist.',
+      beispiel: 'D\'Schull- un Veedelszöch sin\' wo Schulkinder Kreativität zeigen.',
+      beispiel_hd: 'Die Schul- und Veedelszöch sind wo Schulkinder Kreativität zeigen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-175',
+      ausdruck: 'Drink doch ene mit',
+      hochdeutsch: 'Trink doch einen mit (Bläck Fööss Lied)',
+      bedeutung: '„Drink doch ene mit" ist Bläck Fööss\' bekanntester Karnevalshit — 1973 erschienen. Das Lied über einen einsamen alten Mann, der eingeladen wird, ein Bier mit anderen zu teilen, wurde zur Hymne kölscher Solidarität. Spielt mit der Sozialthematik: niemand soll allein sein. Heute jeder Kölner kann den Text mit. Bei Beerdigungen kölscher Originale wird das Lied gespielt. Kölsche Menschlichkeit pur.',
+      beispiel: 'Drink doch ene mit — Bläck Fööss-Hymne der Solidarität.',
+      beispiel_hd: 'Trink doch einen mit — Bläck Fööss-Hymne der Solidarität.',
+      kategorie: 'musik'
     }
   ]
 };
