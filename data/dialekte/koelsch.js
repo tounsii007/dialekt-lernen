@@ -1820,6 +1820,276 @@ export default {
       beispiel: 'In Kölle hat jeder seine Liebe für sein Veedel.',
       beispiel_hd: 'In Köln hat jeder seine Liebe für sein Viertel.',
       kategorie: 'orte'
+    },
+    {
+      id: 'k-206',
+      ausdruck: 'Alaaf!',
+      hochdeutsch: 'Alaaf! (Kölner Karnevalsruf)',
+      bedeutung: '„Alaaf!" ist DER Kölner Karnevalsruf — im Gegensatz zum rheinhessischen „Helau" (Mainz, Düsseldorf). „Kölle Alaaf!" als kompletter Schlachtruf, dreimal gerufen. Stammt von „all-af" („alles ab/herunter mit dem Hut") — eine alte Höflichkeitsgeste. Wird in der gesamten Karnevalszeit (11.11. bis Aschermittwoch) verwendet, Höhepunkt am Rosenmontag. Düsseldorfer und Kölner streiten sich seit Generationen: Alaaf gegen Helau. Symbol für Kölner Karnevals-Identität.',
+      beispiel: 'Kölle Alaaf! Kölle Alaaf! Kölle Alaaf!',
+      beispiel_hd: 'Köln Alaaf! Köln Alaaf! Köln Alaaf!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-207',
+      ausdruck: 'Dreigestirn',
+      hochdeutsch: 'Dreigestirn (Karnevalstrio)',
+      bedeutung: 'Das „Dreigestirn" ist die heilige Karnevals-Trinität Kölns — Prinz, Bauer und Jungfrau (immer von einem Mann gespielt!). Wird jährlich aus den Kölner Karnevalsvereinen gewählt. „Sien Tollität" (Prinz) ist Hauptperson, „Sien Deftigkeit" (Bauer) Symbol für Bodenständigkeit, „Ihre Lieblichkeit" (Jungfrau) Symbol für die Stadt Köln. Höhepunkte: Sessionseröffnung 11.11., Rosenmontagszug. Symbol für Kölner Karnevals-Hierarchie und Tradition seit 1823.',
+      beispiel: 'Et Dreigestirn ist die Krönung vum Karneval!',
+      beispiel_hd: 'Das Dreigestirn ist die Krönung vom Karneval!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-208',
+      ausdruck: 'Rosenmontag',
+      hochdeutsch: 'Rosenmontag (Karnevalshöhepunkt)',
+      bedeutung: 'Der „Rosenmontag" ist Kölns größter Karnevals-Tag — Rosenmontagszug durch die Stadt mit hunderttausenden Besuchern, Wagen, Marschmusik. „Kamelle" (Süßigkeiten) und „Strüssjer" (Blumensträuße) werden in die Menge geworfen. Schulen und viele Büros geschlossen. Symbol für Kölner Karneval. Touristen aus aller Welt strömen nach Köln.',
+      beispiel: 'Z\'Rosenmontag wird in Kölle gefeiert!',
+      beispiel_hd: 'Zum Rosenmontag wird in Köln gefeiert!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-209',
+      ausdruck: 'Karnevalszug',
+      hochdeutsch: 'Karnevalsumzug',
+      bedeutung: 'Der „Karnevalszug" ist Kölner Tradition seit 1823 — Festumzug mit dekorierten Wagen, Marschmusik, Tanzgruppen, Karnevalsvereinen, Hofstaat. Über 12.000 Aktive im Rosenmontagszug. Themen-Wagen über Politik und Gesellschaft. Wagen werden monatelang gebaut. Symbol für Kölner Karnevals-Industrie und Tradition.',
+      beispiel: 'Et Karnevalszug zieht vorbei!',
+      beispiel_hd: 'Der Karnevalszug zieht vorbei!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-210',
+      ausdruck: 'Kamelle',
+      hochdeutsch: 'Kamelle (Karneval-Süßigkeiten)',
+      bedeutung: '„Kamelle!" — DAS Karneval-Wort schlechthin. Beim Rosenmontagszug werfen die Wagenbesatzungen Süßigkeiten in die Zuschauermenge. Wer „Kamelle!" ruft, wird vielleicht erhört. Bonbons, Schokolade, Karamellen — alles ist Kamelle. Kinder sammeln Kamelle in Tüten. Stammt von französisch „caramelle".',
+      beispiel: 'Kamelle! Kamelle! Wirf mir was rüber!',
+      beispiel_hd: 'Süßigkeiten! Süßigkeiten! Wirf mir was rüber!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-211',
+      ausdruck: 'Strüssjer',
+      hochdeutsch: 'Sträuß (kleine Blumensträuße)',
+      bedeutung: '„Strüssjer" sind kleine Blumensträußchen, die im Karnevalszug in die Menge geworfen werden — neben Kamelle. Stammt vom Diminutiv „Sträußchen". Strüssjer sind oft als Wertschätzung gemeint („für die Damen"), während Kamelle für alle ist. Wer ein Strüssjer fängt, darf sich „auserwählt" fühlen.',
+      beispiel: 'Strüssjer und Kamelle für alle!',
+      beispiel_hd: 'Sträußchen und Süßigkeiten für alle!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-212',
+      ausdruck: 'Bützen',
+      hochdeutsch: 'Karnevals-Küsschen',
+      bedeutung: '„Bützen" ist Kölner Karneval-Tradition — Küsschen auf die Wange, vor allem während der Karnevalszeit. „Komm, dat mer uns bütze!" als Aufforderung. Frauen mit roter Lippenstift hinterlassen oft Spuren. Sehr verbreitet bei Karnevalsumzügen und in Brauhäusern. Symbol für Kölner Karnevals-Geselligkeit.',
+      beispiel: 'Komm, dat mer uns bütze!',
+      beispiel_hd: 'Komm, lass uns küssen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-213',
+      ausdruck: 'Bütt',
+      hochdeutsch: 'Bütt (Karnevals-Redestand)',
+      bedeutung: 'Die „Bütt" ist die Karnevals-Rede-Bütt — ein hölzernes Fass, von dem aus Karnevals-Redner ihre Büttenreden halten. Tradition seit dem 19. Jahrhundert. Klassische Büttenredner: politische Spötter, Comedians. Wird im Kölner Fernsehen übertragen. „Aus der Bütt" als Redner-Karriere-Bezeichnung.',
+      beispiel: 'Der Büttenredner steht in der Bütt!',
+      beispiel_hd: 'Der Karnevalsredner steht in der Bütt!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-214',
+      ausdruck: 'Sessions-Eröffnung',
+      hochdeutsch: 'Sessionseröffnung 11.11.',
+      bedeutung: 'Die „Sessions-Eröffnung" am 11. November um 11:11 Uhr ist Karnevals-Startschuss in Köln. Auf dem Heumarkt versammeln sich Tausende Kölner in Kostümen, das Dreigestirn wird vorgestellt. „Elf elf elf elf elf!" als Schlachtruf der Karneval-Zahlen. Symbol für Kölner Karnevals-Tradition seit 1823.',
+      beispiel: '11.11. um 11:11 — Karneval kann beginnen!',
+      beispiel_hd: '11.11. um 11:11 — Karneval kann beginnen!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-215',
+      ausdruck: 'Weiberfastnacht',
+      hochdeutsch: 'Weiberfastnacht (Donnerstag)',
+      bedeutung: 'Die „Weiberfastnacht" am Donnerstag vor Aschermittwoch ist Frauen-Karnevals-Tag — Frauen schneiden Krawatten ab, „besetzen" Rathäuser und Büros. Tradition seit dem Mittelalter. „Weiber" haben die Macht, Männer-Krawatten-Schnitt als symbolische Entmachtung. Symbol für rheinischen Karneval und Frauen-Power.',
+      beispiel: 'Z\'Weiberfastnacht sind die Frauen am Zug!',
+      beispiel_hd: 'Zur Weiberfastnacht sind die Frauen am Zug!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-216',
+      ausdruck: 'Tollität',
+      hochdeutsch: 'Seine Tollität (Karnevalsprinz)',
+      bedeutung: '„Tollität" — „Sien Tollität" — ist offizieller Titel des Karnevalsprinzen im Dreigestirn. „Toll" für „verrückt, närrisch" — im Karnevals-Sinn positiv. Der Prinz vertritt das Dreigestirn offiziell, hält Reden, trägt Krone und Marschallstab. Jährliche Auswahl ist große Ehre. Symbol für Kölner Karneval-Hierarchie.',
+      beispiel: 'Sien Tollität winkt der Menge zu!',
+      beispiel_hd: 'Seine Tollität winkt der Menge zu!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-217',
+      ausdruck: 'Funken',
+      hochdeutsch: 'Funken (Karnevals-Garde)',
+      bedeutung: '„Funken" sind die Karnevals-Garden in Köln — uniformierte Korps mit historischen Uniformen, Marschmusik, Tanzeinlagen. „Rote Funken" (gegründet 1823 — älteste Garde), „Blaue Funken", „Grüne Funken", „Schwarze Funken". Jede Garde mit eigener Uniform und Tradition. Im Karnevalszug Spitzenposition.',
+      beispiel: 'D\'Rote Funken marschieren vorbei!',
+      beispiel_hd: 'Die Roten Funken marschieren vorbei!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-218',
+      ausdruck: 'Funkenmariechen',
+      hochdeutsch: 'Funkenmariechen (Tanzgardistin)',
+      bedeutung: 'Das „Funkenmariechen" ist die Tanzgardistin in einer Karnevals-Funken-Garde — eine junge Frau, die in farbiger Uniform akrobatisch tanzt. Tradition seit dem 19. Jahrhundert. Schwere Sport-Disziplin: Spagat, Sprünge, Akrobatik. „Funkenmariechen-Wahl" als jährliche Karnevals-Ehre.',
+      beispiel: 'Et Funkenmariechen tanzt wie ein Engel!',
+      beispiel_hd: 'Das Funkenmariechen tanzt wie ein Engel!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-219',
+      ausdruck: 'Aschermittwoch',
+      hochdeutsch: 'Aschermittwoch (Karneval-Ende)',
+      bedeutung: '„Aschermittwoch" ist Karneval-Ende — der Tag nach Rosenmontag. „Aschermittwoch is alles vorbei" — kölscher Klassiker-Song. Karneval-Vereine versammeln sich zur „Nubbel-Verbrennung". Aschermittwoch in kölschen Kirchen mit Aschekreuz. Symbol für melancholischen Übergang zur Fastenzeit.',
+      beispiel: 'Z\'Aschermittwoch is alles vorbei!',
+      beispiel_hd: 'Zum Aschermittwoch ist alles vorbei!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-220',
+      ausdruck: 'Nubbel',
+      hochdeutsch: 'Nubbel (Karnevals-Sündenbock)',
+      bedeutung: 'Der „Nubbel" ist eine Stoffpuppe, die in Karnevals-Kneipen hängt — Symbol für alle Karnevals-Sünden. Am Aschermittwoch wird der Nubbel feierlich verbrannt — alle Sünden werden ihm angelastet. Tradition mit kirchlich-katholischer Sühne-Logik. „Et Nubbel-Verbrennen" als Karneval-Schluss-Ritual.',
+      beispiel: 'Z\'Aschermittwoch wird der Nubbel verbrannt!',
+      beispiel_hd: 'Zum Aschermittwoch wird der Nubbel verbrannt!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-221',
+      ausdruck: 'Karnevalslied',
+      hochdeutsch: 'Karnevalslied',
+      bedeutung: '„Karnevalslieder" sind kölnische Identitäts-Hymnen — von Höhner, Bläck Fööss, Brings, Räuber, Klüngelköpp. „Viva Colonia" (Höhner), „Mer losse dr Dom in Kölle" (Bläck Fööss). Beim Karneval werden Hunderte Lieder mitgesungen. Symbol für rheinische Musik-Tradition.',
+      beispiel: 'Bei „Mer losse dr Dom in Kölle" wird mitgesungen!',
+      beispiel_hd: 'Bei „Mer lassen den Dom in Köln" wird mitgesungen!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-222',
+      ausdruck: 'Schull- un Veedelszöch',
+      hochdeutsch: 'Schul- und Veedel-Umzüge',
+      bedeutung: 'Die „Schull- un Veedelszöch" sind die kleineren Karnevalsumzüge der einzelnen Veedel und Schulen — am Karnevalssamstag. Über 100 kleine Züge in ganz Köln. Authentischer und intimer als der Rosenmontagszug. „Veedels-Identität" wird hier gefeiert.',
+      beispiel: 'D\'Schull- un Veedelszöch gehen durch alle Veedel!',
+      beispiel_hd: 'Die Schul- und Veedel-Umzüge gehen durch alle Stadtviertel!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-223',
+      ausdruck: 'Karnevalsverein',
+      hochdeutsch: 'Karnevalsverein (KG)',
+      bedeutung: 'Der „Karnevalsverein" — KG für „Karnevalsgesellschaft" — ist Kölner Gesellschafts-Institution. Über 100 KGs in Köln registriert. Beispiele: „Prinzen-Garde", „Rote Funken", „Treuer Husar". Jeder Veedel hat seine Karnevalsvereine. KG-Eintritt oft Familien-Tradition über Generationen.',
+      beispiel: 'Et is im Karnevalsverein „Treuer Husar"!',
+      beispiel_hd: 'Er ist im Karnevalsverein „Treuer Husar"!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-224',
+      ausdruck: 'Karnevalssitzung',
+      hochdeutsch: 'Karnevalssitzung',
+      bedeutung: 'Die „Karnevalssitzung" ist die offizielle Karnevals-Veranstaltung in Köln — meist 4-stündige Show mit Büttenreden, Tanzgarden, Karnevalsliedern. Stattfindet in Sälen wie „Sartory-Saal", „Gürzenich", „Maritim Hotel". Hofstaat des Dreigestirns präsentiert sich. Tickets oft Monate im Voraus ausverkauft.',
+      beispiel: 'D\'Karnevalssitzung im Gürzenich is\' immer ausverkauft!',
+      beispiel_hd: 'Die Karnevalssitzung im Gürzenich ist immer ausverkauft!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-225',
+      ausdruck: 'Karnevalsbauer',
+      hochdeutsch: 'Karnevalsbauer (Dreigestirn)',
+      bedeutung: 'Der „Karnevalsbauer" — „Sien Deftigkeit" — vertritt im Dreigestirn die bodenständige Bauern-Tradition. Trägt traditionelle Bauerntracht mit Hut und Heugabel. Symbol für Kölner Bodenständigkeit. Im Gegensatz zum eleganten Prinzen rustikal-bürgerlich. „Bauer schützt die Stadt" als symbolische Aufgabe.',
+      beispiel: 'Der Karnevalsbauer is\' der bodenständige Schutz!',
+      beispiel_hd: 'Der Karnevalsbauer ist der bodenständige Schutz!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-226',
+      ausdruck: 'Karnevalsjungfrau',
+      hochdeutsch: 'Karnevalsjungfrau (Dreigestirn)',
+      bedeutung: 'Die „Karnevalsjungfrau" — „Ihre Lieblichkeit" — ist die Symbolfigur der Stadt Köln im Dreigestirn — immer von einem Mann gespielt! Tradition geht auf preußische Zensur zurück (1823: Frauen durften nicht öffentlich auftreten). Heute Kult-Tradition. Symbol für Kölner Karneval-Subversion und Humor.',
+      beispiel: 'Ihre Lieblichkeit, die Jungfrau, hat n echter Mann gespielt!',
+      beispiel_hd: 'Ihre Lieblichkeit, die Jungfrau, hat ein echter Mann gespielt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-227',
+      ausdruck: 'Karnevalskostüm',
+      hochdeutsch: 'Karnevalskostüm',
+      bedeutung: 'Das „Karnevalskostüm" ist Pflicht in Köln — wer ohne Kostüm zum Karneval geht, gilt als „Speznase" (Spielverderber). Beliebte Themen: Tiere, Märchenfiguren, Politiker-Parodien. Viele Kölner haben mehrere Kostüme. „Im Kostüm darf man alles!" als Karneval-Lebensgefühl.',
+      beispiel: 'Ohne Kostüm geht et net zum Karneval!',
+      beispiel_hd: 'Ohne Kostüm geht es nicht zum Karneval!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-228',
+      ausdruck: 'Karneval im WDR',
+      hochdeutsch: 'WDR-Karneval-Übertragung',
+      bedeutung: '„Karneval im WDR" ist seit 1955 deutsche Fernseh-Tradition — der Westdeutsche Rundfunk überträgt Karnevals-Sitzungen, Rosenmontagszug und Karneval-Höhepunkte. WDR-Karneval-Moderatoren wie Edgar Lehmann sind Kult. Karneval-Hits werden hier deutschlandweit bekannt.',
+      beispiel: 'Karneval im WDR — jedes Jahr eine Tradition!',
+      beispiel_hd: 'Karneval im WDR — jedes Jahr eine Tradition!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-229',
+      ausdruck: 'Pappnase',
+      hochdeutsch: 'Pappnase (Karnevals-Symbol)',
+      bedeutung: 'Die „Pappnase" ist Symbol des Karnevals — rote Plastiknase, die Männer (und manchmal Frauen) als Karnevals-Verkleidung tragen. Klassisches Karnevals-Accessoire. Im Karneval-Wirtschaftshandel allgegenwärtig. Auch übertragen: „Pappnase" als spöttische Bezeichnung für übertrieben verkleidete.',
+      beispiel: 'Mit Pappnase und Konfetti geh\'n mer zum Zug!',
+      beispiel_hd: 'Mit Pappnase und Konfetti gehen wir zum Umzug!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-230',
+      ausdruck: 'Brauchtum',
+      hochdeutsch: 'Karnevals-Brauchtum',
+      bedeutung: 'Das „Karnevals-Brauchtum" ist Kölner Identitäts-Kern — seit über 200 Jahren gepflegte Karneval-Traditionen. „Kölner Brauchtum" wird gegen alle Modernisierungs-Versuche verteidigt. „Kölnischer Karneval gehört zum UNESCO-Welterbe!" als Forderung der Karneval-Vereine.',
+      beispiel: 'Et Karnevals-Brauchtum muss bewahrt werden!',
+      beispiel_hd: 'Das Karnevals-Brauchtum muss bewahrt werden!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-231',
+      ausdruck: 'Karnevalshits',
+      hochdeutsch: 'Karnevalshits (Lieder)',
+      bedeutung: '„Karnevalshits" sind die populärsten Karnevals-Lieder — werden jährlich im Karneval gespielt und mitgesungen. Klassiker: „Viva Colonia" (Höhner), „En unserem Veedel" (Bläck Fööss), „Polonäse Blankenese". Neue Hits jedes Jahr von Karnevals-Bands. „Karnevals-Hit-Parade" auf WDR.',
+      beispiel: '„Viva Colonia" — Kölns größter Karnevalshit!',
+      beispiel_hd: '„Viva Colonia" — Kölns größter Karnevalshit!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-232',
+      ausdruck: 'Karnevalssaison',
+      hochdeutsch: 'Karnevalssession',
+      bedeutung: 'Die „Karnevalssaison" oder „Session" beginnt am 11.11. und endet am Aschermittwoch — also etwa drei Monate Karneval pro Jahr in Köln. Karneval-Vereine bereiten sich das ganze Jahr darauf vor. Touristen-Industrie boomt in dieser Zeit. Köln verdient Hunderte Millionen Euro mit Karneval.',
+      beispiel: 'D\'Karnevalssession dauert drei Monate!',
+      beispiel_hd: 'Die Karnevalssession dauert drei Monate!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-233',
+      ausdruck: 'Karnevals-Hochburg',
+      hochdeutsch: 'Karnevalshochburg (Köln)',
+      bedeutung: '„Karnevals-Hochburg" ist Köln-Selbstbezeichnung — Köln gilt als wichtigste deutsche Karnevalsstadt (neben Mainz und Düsseldorf). Größter Rosenmontagszug Deutschlands, längste Karnevals-Tradition, meiste Karneval-Vereine. Mainzer und Düsseldorfer streiten sich mit Kölnern um den Titel.',
+      beispiel: 'Köln is\' die Karnevals-Hochburg Deutschlands!',
+      beispiel_hd: 'Köln ist die Karnevalshochburg Deutschlands!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-234',
+      ausdruck: 'Karnevalsmuseum',
+      hochdeutsch: 'Karnevalsmuseum',
+      bedeutung: 'Das „Karnevalsmuseum" ist Kölner Institution — bewahrt Karnevals-Geschichte mit Kostümen, Wagen, Orden, historischen Dokumenten. Im „Kölner Karnevalsmuseum" am Maarweg. Über 1.000 Orden, hunderte Kostüme. Zeigt 200 Jahre Karneval-Tradition. Beliebt bei Touristen außerhalb der Karnevals-Saison.',
+      beispiel: 'Im Karnevalsmuseum sieht man die alten Wagen!',
+      beispiel_hd: 'Im Karnevalsmuseum sieht man die alten Wagen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-235',
+      ausdruck: 'Orden',
+      hochdeutsch: 'Karnevals-Orden',
+      bedeutung: 'Der „Orden" ist Karnevals-Auszeichnung — verzierte Medaille mit Karnevals-Motiven, Datum, Vereinsnamen. Karnevals-Vereine verteilen jährlich Orden an Mitglieder, Gäste, Politiker. Sammler-Objekt. „Orden-Tauschen" als Karneval-Tradition. Jeder Karnevals-Verein hat eigene Orden. Bekannte Karneval-Persönlichkeiten haben Hunderte Orden.',
+      beispiel: 'Der OB bekommt jedes Jahr Dutzende Orden!',
+      beispiel_hd: 'Der OB bekommt jedes Jahr Dutzende Orden!',
+      kategorie: 'alltag'
     }
   ]
 };
