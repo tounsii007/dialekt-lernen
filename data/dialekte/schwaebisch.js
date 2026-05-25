@@ -644,6 +644,231 @@ export default {
       beispiel: 'En Stuttgarter Hofbräu mit Hopfen und Malz — schwäbisches Bier!',
       beispiel_hd: 'Ein Stuttgarter Hofbräu mit Hopfen und Malz — schwäbisches Bier!',
       kategorie: 'essen'
+    },
+    {
+      id: 'sw-076',
+      ausdruck: 'Reutlingen',
+      hochdeutsch: 'Reutlingen (Stadt am Albtrauf)',
+      bedeutung: 'Reutlingen ist eine schwäbische Mittelstadt mit 117.000 Einwohnern am Fuße der Schwäbischen Alb. Ehemalige Freie Reichsstadt. Berühmt: die schmalste Straße der Welt, die „Spreuerhofstraße" mit 31 cm Breite (Guinness-Buch). Die Marienkirche (gotisch, 73 m hoch) prägt die Silhouette. Industrie-Standort der Textilbranche und Mittelstandshochburg.',
+      beispiel: 'In Reutlingen gibt\'s die schmalste Gass\'der Welt.',
+      beispiel_hd: 'In Reutlingen gibt es die schmalste Gasse der Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-077',
+      ausdruck: 'Schwäbisch Hall',
+      hochdeutsch: 'Schwäbisch Hall (Salzstadt)',
+      bedeutung: 'Schwäbisch Hall ist eine charmante 40.000-Einwohner-Stadt im Kochertal mit reicher Salzgewinnungstradition (daher der Name „Hall" = altes Wort für Salz). Berühmt: die Treppenstufen vor St. Michael, das Hällisch-Fränkische Museum, die Freilichtspiele im Sommer. Auch Sitz der Bausparkasse Schwäbisch Hall. Schwäbisch-fränkische Mischzone.',
+      beispiel: 'In Schwäbisch Hall sitzt mer aufd Treppe vor d\'Kirch.',
+      beispiel_hd: 'In Schwäbisch Hall sitzt man auf den Treppen vor der Kirche.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-078',
+      ausdruck: 'Ulm',
+      hochdeutsch: 'Ulm (Stadt mit höchstem Kirchturm der Welt)',
+      bedeutung: 'Ulm an der Donau ist mit 127.000 Einwohnern eine bedeutende schwäbische Stadt. Der Ulmer Münster hat mit 161,5 m den höchsten Kirchturm der Welt. Albert Einstein wurde hier 1879 geboren. Die Stadt liegt an der Sprachgrenze zwischen Schwäbisch und Bairisch. Berühmt: das Fischerviertel und der Spruch „In Ulm, um Ulm und um Ulm herum".',
+      beispiel: 'Der Ulmer Münster hat den höchsten Turm vo der Welt.',
+      beispiel_hd: 'Der Ulmer Münster hat den höchsten Turm der Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-079',
+      ausdruck: 'Heidenheim',
+      hochdeutsch: 'Heidenheim an der Brenz',
+      bedeutung: 'Heidenheim an der Brenz ist eine schwäbische Industriestadt mit 50.000 Einwohnern am östlichen Rand der Schwäbischen Alb. Sitz der Voith-Konzerne (Papiermaschinen, Wasserkraft). Schloss Hellenstein dominiert die Silhouette. Auch 1. FC Heidenheim ist ein Bundesliga-Phänomen — der „Dorfverein" im Profifußball.',
+      beispiel: 'Der 1. FC Heidenheim — Schwabens Sensation in der Bundesliga.',
+      beispiel_hd: 'Der 1. FC Heidenheim — Schwabens Sensation in der Bundesliga.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-080',
+      ausdruck: 'Heilbronn',
+      hochdeutsch: 'Heilbronn (Stadt am Neckar)',
+      bedeutung: 'Heilbronn ist die viertgrößte Stadt Baden-Württembergs am Neckar mit 126.000 Einwohnern. Bedeutender Weinbau (größte Weinstadt Baden-Württembergs), Industriezentrum (Audi, Bechtle, Schwarz-Gruppe = Lidl/Kaufland). Bekannt für die experimenta (Wissenschaftsmuseum) und das Käthchenhaus (aus Heinrich von Kleists „Käthchen von Heilbronn").',
+      beispiel: 'In Heilbronn gibt\'s den meischda Wein in ganz Baden-Württemberg.',
+      beispiel_hd: 'In Heilbronn gibt es den meisten Wein in ganz Baden-Württemberg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-081',
+      ausdruck: 'Aalen',
+      hochdeutsch: 'Aalen (Stadt im Ostalbkreis)',
+      bedeutung: 'Aalen liegt am östlichen Rand der Schwäbischen Alb — 68.000 Einwohner. Bedeutendster römischer Standort Süddeutschlands: das Limesmuseum dokumentiert das größte Reiterkastell nördlich der Alpen. Heute Hochschulstandort und Werkzeugindustrie. Tor zum Härtsfeld und beliebter Naherholungsort.',
+      beispiel: 'In Aalen warn die Römer scho da — vor 2000 Jahr!',
+      beispiel_hd: 'In Aalen waren die Römer schon da — vor 2000 Jahren!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-082',
+      ausdruck: 'Esslingen',
+      hochdeutsch: 'Esslingen am Neckar',
+      bedeutung: 'Esslingen am Neckar ist eine 95.000-Einwohner-Stadt direkt östlich von Stuttgart. Die gut erhaltene mittelalterliche Altstadt mit Burg, Fachwerkhäusern und Stadtmauer ist eine der schönsten Süddeutschlands. Der Esslinger Mittelaltermarkt zur Weihnachtszeit ist legendär. Daimler-Standort und Hochschulstadt.',
+      beispiel: 'Der Mittelaltermarkt in Esslingen isch a Weihnachtshöhepunkt.',
+      beispiel_hd: 'Der Mittelaltermarkt in Esslingen ist ein Weihnachtshöhepunkt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-083',
+      ausdruck: 'Ludwigsburg',
+      hochdeutsch: 'Ludwigsburg (Barockstadt)',
+      bedeutung: 'Ludwigsburg nördlich von Stuttgart ist mit 96.000 Einwohnern die größte Barockstadt Deutschlands. Das Residenzschloss („Schwäbisches Versailles") mit 452 Räumen ist das größte erhaltene Barockschloss Deutschlands. Im Schlosspark findet jährlich das Blühende Barock und der Kürbisausstellung statt. Auch Filmakademie Baden-Württemberg.',
+      beispiel: 'Ludwigsburg isch unser schwäbisches Versailles.',
+      beispiel_hd: 'Ludwigsburg ist unser schwäbisches Versailles.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-084',
+      ausdruck: 'Häussermann',
+      hochdeutsch: 'Häussermann (Schwäbischer Kabarettist)',
+      bedeutung: 'Volker Häussermann (geb. 1937) prägte als „der dichtende Schwabe" die schwäbische Kabarett-Szene und Mundartlyrik. Mit Werken wie „I sag\'s ja" und „Schwäbisch für Anfänger" wurde er zur Stimme schwäbischer Selbstreflexion und sanften Spotts. Seine Texte sind Pflichtlektüre für jeden, der die schwäbische Seele verstehen will.',
+      beispiel: 'Häussermann hat\'s Schwäbische zur Kunschtform gmacht.',
+      beispiel_hd: 'Häussermann hat das Schwäbische zur Kunstform gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-085',
+      ausdruck: 'Christoph Sonntag',
+      hochdeutsch: 'Christoph Sonntag (Stuttgarter Kabarettist)',
+      bedeutung: 'Christoph Sonntag (geb. 1962) ist Stuttgarts bekanntester Mundart-Kabarettist. Mit beißendem Spott über schwäbische Eigenheiten und süddeutsche Politik füllt er seit den 1990ern die Säle. Sein Buch „Sonntag schreibt" und seine Bühnenshows „Bezahlt!" sind Kult. Verkörpert die kritische, selbstironische Seite des Schwabentums.',
+      beispiel: 'Christoph Sonntag bringt Schwoba zum Lacha — und zum Nachdenka.',
+      beispiel_hd: 'Christoph Sonntag bringt Schwaben zum Lachen — und zum Nachdenken.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-086',
+      ausdruck: 'Häuslebauer',
+      hochdeutsch: 'Häuslebauer (Eigenheimbesitzer)',
+      bedeutung: 'Der „Häuslebauer" ist das schwäbische Lebensziel par excellence — der Mensch, der sein eigenes Haus baut. Die Mentalität „Schaffe, schaffe, Häusle baue" ist tief im Schwabentum verwurzelt. Eigenheimquote in Baden-Württemberg ist eine der höchsten Deutschlands. Schwaben sparen jahrelang und bauen oft selbst mit, mit Verwandtschaft und Nachbarschaft.',
+      beispiel: 'Mei Vatter isch en echter Häuslebauer — hat alles selbschdgmacht.',
+      beispiel_hd: 'Mein Vater ist ein echter Häuslebauer — hat alles selbstgemacht.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-087',
+      ausdruck: 'Sparbüchsle',
+      hochdeutsch: 'Spardose (schwäbisches Symbol)',
+      bedeutung: 'Das „Sparbüchsle" ist mehr als nur eine Spardose — es ist Symbol der schwäbischen Sparsamkeit. Schwäbische Kinder bekommen früh ein Sparbüchsle und lernen, Geld nicht auszugeben. Das Wort enthält das typische schwäbische „-le" Diminutiv. Jedes Pfund wird zweimal umgedreht. Bausparkasse Schwäbisch Hall — Symbol der Spar-Mentalität — ist nicht zufällig in Schwaben.',
+      beispiel: 'Des Mädle hat scho a Sparbüchsle mit am Hunderter drin.',
+      beispiel_hd: 'Das Mädchen hat schon eine Spardose mit hundert Euro drin.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-088',
+      ausdruck: 'Putzfimmel',
+      hochdeutsch: 'Putzwahn / übertriebene Sauberkeit',
+      bedeutung: 'Der „Putzfimmel" ist die schwäbische Putzleidenschaft, die sich in der berüchtigten Kehrwoche manifestiert. Schwäbische Hausfrauen (und zunehmend auch -männer) sind dafür berühmt, jeden Winkel zu schrubben. Die Putzkultur ist tief verwurzelt — Schwaben gelten als die saubersten Deutschen. „A schwäbisches Haus isch a sauberes Haus."',
+      beispiel: 'Mei Oma hat en Putzfimmel — bei der kannscht vom Boden esse.',
+      beispiel_hd: 'Meine Oma hat einen Putzwahn — bei der kannst du vom Boden essen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-089',
+      ausdruck: 'Pingelig',
+      hochdeutsch: 'Pingelig (übergenau)',
+      bedeutung: '„Pingelig" ist ein typisch schwäbisches Attribut — übergenau, kleinkariert, perfektionistisch. Im Beruf eine Tugend (Daimler, Bosch, Porsche!), im Privatleben oft anstrengend. Der schwäbische Hang zum Detail hat die Region wirtschaftlich erfolgreich gemacht. „Sei net so pingelig!" ist gleichzeitig Lob und Tadel.',
+      beispiel: 'Mei Chef isch pingelig — aber dadurch isch alles perfekt.',
+      beispiel_hd: 'Mein Chef ist pingelig — aber dadurch ist alles perfekt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-090',
+      ausdruck: 'Saustall',
+      hochdeutsch: 'Saustall (Unordnung)',
+      bedeutung: '„Saustall" ist ein klassisches schwäbisches Schimpfwort für ein unordentliches Zimmer oder eine chaotische Situation. Im Kontext der schwäbischen Putzkultur ist es eine harte Verurteilung. „Räum endlich dein Saustall auf!" ist Standardspruch schwäbischer Eltern. Auch politisch verwendet: „Des isch a Saustall, was die da mache!"',
+      beispiel: 'Dei Zimmer isch a richtiger Saustall — räum auf!',
+      beispiel_hd: 'Dein Zimmer ist ein richtiger Saustall — räum auf!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-091',
+      ausdruck: 'Stocherkahn',
+      hochdeutsch: 'Stocherkahn (Tübinger Tradition)',
+      bedeutung: 'Der Stocherkahn ist die Tübinger Spezial-Bootsfahrt auf dem Neckar — ein flaches Holzboot, das mit einem langen Holzstab durch das flache Wasser gestochert wird (wie in Cambridge oder Venedig). Studenten der Universität Tübingen halten Stocherkahn-Rennen ab. Im Sommer Touristenmagnet. Ein Pflichtprogramm bei jedem Tübingen-Besuch.',
+      beispiel: 'En Stocherkahn auf\'m Neckar — Tübinger Sommer pur.',
+      beispiel_hd: 'Ein Stocherkahn auf dem Neckar — Tübinger Sommer pur.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'sw-092',
+      ausdruck: 'Filderstadt',
+      hochdeutsch: 'Filderstadt (Filder-Spargel-Hauptstadt)',
+      bedeutung: 'Filderstadt südlich von Stuttgart ist 46.000-Einwohner-Stadt auf der fruchtbaren Filder-Hochebene. Berühmt für das Filderkraut (Spitzkohl) und Spargelanbau. Die Filderhalle ist Veranstaltungszentrum. Auch der Stuttgarter Flughafen liegt teilweise auf Filderstädter Gebiet. Pendlerstadt im Stuttgarter Speckgürtel.',
+      beispiel: 'Filderkraut von der Filder — kein Sauerkraut isch besser.',
+      beispiel_hd: 'Filderkraut von der Filder — kein Sauerkraut ist besser.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-093',
+      ausdruck: 'Bernd Kohlhepp',
+      hochdeutsch: 'Bernd Kohlhepp (Schwäbischer Kabarettist)',
+      bedeutung: 'Bernd Kohlhepp (geb. 1961) ist einer der profiliertesten schwäbischen Kabarettisten der Gegenwart. Mit seiner Figur „Herr Hämmerle" und seinen Mundartstücken schmunzelt er über schwäbische Eigenheiten — Geiz, Pingeligkeit, Vereinsmeierei. Schauspieler, Kabarettist, Mundartautor in einer Person. Pflichtkonzerte in jeder Stadthalle Württembergs.',
+      beispiel: 'Bernd Kohlhepps Herr Hämmerle — schwäbische Seele in Person.',
+      beispiel_hd: 'Bernd Kohlhepps Herr Hämmerle — schwäbische Seele in Person.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-094',
+      ausdruck: 'Vereinsmeier',
+      hochdeutsch: 'Vereinsmeier (überaktives Vereinsmitglied)',
+      bedeutung: 'Der „Vereinsmeier" ist im Schwäbischen das übereifrige, alles regelnde Vereinsmitglied — typisch für die ausgeprägte schwäbische Vereinskultur. Schwaben sind in Sport-, Gesang-, Musik-, Schützen- und Heimatvereinen organisiert wie keine andere Region. Der Vereinsmeier sitzt im Vorstand, kontrolliert alles und nimmt sein Amt sehr ernst.',
+      beispiel: 'Mei Onkel isch a echter Vereinsmeier — drei Vorständsposten.',
+      beispiel_hd: 'Mein Onkel ist ein echter Vereinsmeier — drei Vorstandsposten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-095',
+      ausdruck: 'Maultäschle',
+      hochdeutsch: 'Maultäschchen (Kosename)',
+      bedeutung: 'Das „Maultäschle" ist die liebevolle Verkleinerungsform von Maultaschen — auch als Kosename für kleine Kinder verwendet. „Du bisch a süß Maultäschle!" ist ein typisch schwäbisches Kompliment für ein liebes Kind. Zeigt die kulinarisch-emotionale Verbindung der Schwaben zu ihrer Nationalspeise. Maultaschen sind Identität.',
+      beispiel: 'Komm her, mei klein Maultäschle, i hab Schoki für dich.',
+      beispiel_hd: 'Komm her, mein kleines Maultäschchen, ich habe Schokolade für dich.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-096',
+      ausdruck: 'Mönsheim',
+      hochdeutsch: 'Mönsheim (Weinort im Strohgäu)',
+      bedeutung: 'Mönsheim ist eine 3.000-Einwohner-Gemeinde im Enzkreis westlich von Stuttgart. Klassisches schwäbisches Weindorf im Heckengäu mit reichem mittelalterlichen Erbe. Lokale Weingenossenschaft und Mönsheimer Storchenturm sind Wahrzeichen. Repräsentativ für die vielen kleinen, charmanten Weinorte des württembergischen Weinlandes.',
+      beispiel: 'In Mönsheim wachst guter Trollinger an de Hänge.',
+      beispiel_hd: 'In Mönsheim wächst guter Trollinger an den Hängen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-097',
+      ausdruck: 'Hocker',
+      hochdeutsch: 'Hocker (klassisches Sitzmöbel)',
+      bedeutung: 'Der „Hocker" ist im Schwäbischen weit mehr als nur ein einfaches Sitzmöbel — er ist ein Lebensgefühl. Vom Küchenhocker beim Vesper über den Werkstatthocker beim Tüfteln bis zum Gartenhocker bei der Kehrwoche-Pause. Pragmatisch, robust, nicht hoch — der Hocker steht für schwäbische Schlichtheit und Funktionalität. Oft jahrzehntelang im Familienbesitz.',
+      beispiel: 'Setz di auf den Hocker, dann gibt\'s a Most.',
+      beispiel_hd: 'Setz dich auf den Hocker, dann gibt es einen Most.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-098',
+      ausdruck: 'Ehinger',
+      hochdeutsch: 'Bewohner von Ehingen (Donau)',
+      bedeutung: 'Ehinger sind die Bewohner von Ehingen (Donau), einer 26.000-Einwohner-Stadt nahe Ulm. Ehingen ist „Bierkulturstadt" mit fünf Brauereien auf engem Raum — höchste Brauereidichte in Süddeutschland. Auch Heimat der Liebherr-Mischbetonpumpen. Typische schwäbische Mittelstadt mit Tradition, Wirtschaftskraft und Bodenständigkeit.',
+      beispiel: 'Ehinger sin\'stolz auf ihre fünf Brauereien.',
+      beispiel_hd: 'Ehinger sind stolz auf ihre fünf Brauereien.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-099',
+      ausdruck: 'Bauer',
+      hochdeutsch: 'Bauer (Landwirt im schwäbischen Sinne)',
+      bedeutung: 'Der „Bauer" ist im Schwäbischen mehr als nur ein Landwirt — er ist Symbol für Bodenständigkeit, harte Arbeit und Generationen-Verwurzelung. Schwäbische Bauernhöfe werden oft seit Jahrhunderten in Familienhand gehalten. „Bauernschlau" ist eine schwäbische Tugend: pragmatische Klugheit ohne akademisches Theater. Auch Familiename in vielen Schwabenfamilien.',
+      beispiel: 'Mei Großvater war Bauer — und stolz drauf bis ans End.',
+      beispiel_hd: 'Mein Großvater war Bauer — und stolz darauf bis ans Ende.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-100',
+      ausdruck: 'Tüftler',
+      hochdeutsch: 'Tüftler (schwäbischer Erfinder)',
+      bedeutung: 'Der schwäbische „Tüftler" ist der Erfinder-Typ, der in der Garage oder Werkstatt unermüdlich an Lösungen arbeitet. Gottlieb Daimler, Robert Bosch, Ferdinand Porsche — alle Tüftler. Die schwäbische Tüftler-Tradition hat die Region zur Hochburg deutscher Ingenieurskunst gemacht. „Tüftler-Geist" ist die schwäbische Mischung aus Beharrlichkeit, Genauigkeit und Pragmatismus.',
+      beispiel: 'Schwaben sin\'die besten Tüftler — Daimler und Bosch sin\'der Beweis.',
+      beispiel_hd: 'Schwaben sind die besten Tüftler — Daimler und Bosch sind der Beweis.',
+      kategorie: 'arbeit'
     }
   ]
 };

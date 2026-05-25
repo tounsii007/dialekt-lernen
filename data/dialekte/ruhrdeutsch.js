@@ -680,6 +680,231 @@ export default {
       beispiel: 'Bei der Bergmannssarg liegt Helm und Schlägel — Respekt vor dem Beruf.',
       beispiel_hd: 'Bei der Bergmannsbeerdigung liegen Helm und Schlägel — Respekt vor dem Beruf.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-076',
+      ausdruck: 'Duisburg',
+      hochdeutsch: 'Duisburg (Stadt am Rhein)',
+      bedeutung: 'Duisburg ist mit 500.000 Einwohnern die fünftgrößte Stadt NRWs und beherbergt den größten Binnenhafen Europas — den „Duisport". Die Stahlindustrie (Thyssenkrupp) prägt die Stadt. Berühmt: das Landschaftspark Duisburg-Nord, das Lehmbruck-Museum und die Duisburger Innenhafen-Promenade. Heimat der MSV Duisburg „Zebras" und Schauplatz des tragischen Loveparade-Unglücks 2010.',
+      beispiel: 'Duisburg is Pott pur — Stahl, Hafen und MSV.',
+      beispiel_hd: 'Duisburg ist Ruhrgebiet pur — Stahl, Hafen und MSV.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-077',
+      ausdruck: 'Gelsenkirchen',
+      hochdeutsch: 'Gelsenkirchen (Schalke-Stadt)',
+      bedeutung: 'Gelsenkirchen mit 260.000 Einwohnern ist Heimat des FC Schalke 04 und der Veltins-Arena. Einst „Stadt der tausend Feuer" wegen der Zechen, heute eine der ärmsten Großstädte Deutschlands — Hartz-IV-Quote über 20%. Aber: stolze Bergmannstradition, ZOOM Erlebniswelt, Schalkes Heimstadion. „Auf Schalke" ist Pilgerziel der königsblauen Fans.',
+      beispiel: 'Gelsenkirchen lebt fürn Schalke — mehr braucht\'s nich.',
+      beispiel_hd: 'Gelsenkirchen lebt für den Schalke — mehr braucht es nicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-078',
+      ausdruck: 'Hagen',
+      hochdeutsch: 'Hagen (Tor zum Sauerland)',
+      bedeutung: 'Hagen mit 188.000 Einwohnern liegt am Südrand des Ruhrgebiets und gilt als „Tor zum Sauerland". Bekannt: das Westfälische Freilichtmuseum, der Künstlerort Hohenhagen mit Hagener Impuls (Karl Ernst Osthaus). Die Stadt hat den höchsten Punkt unter Tage im deutschen Bergbau gehabt — das Bergbau-Erbe ist auch hier prägend.',
+      beispiel: 'Hagen is dat Tor zum Sauerland — und hat Industriegeschichte.',
+      beispiel_hd: 'Hagen ist das Tor zum Sauerland — und hat Industriegeschichte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-079',
+      ausdruck: 'Wuppertal',
+      hochdeutsch: 'Wuppertal (Stadt mit Schwebebahn)',
+      bedeutung: 'Wuppertal mit 360.000 Einwohnern ist berühmt für die Schwebebahn — seit 1901 fährt sie 13 km über der Wupper. Einziges öffentliches Verkehrsmittel dieser Art weltweit. Heimat des Bayer-Konzerns, der Pina Bausch und des Tanztheaters. Friedrich Engels wurde hier 1820 geboren. Liegt am östlichen Rand des Ruhrgebiets.',
+      beispiel: 'Mit\'er Schwebebahn übern Fluss — Wuppertal halt!',
+      beispiel_hd: 'Mit der Schwebebahn über den Fluss — Wuppertal halt!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-080',
+      ausdruck: 'Wattenscheid',
+      hochdeutsch: 'Wattenscheid (Bochumer Stadtteil)',
+      bedeutung: 'Wattenscheid war bis 1975 eigenständige Stadt, dann nach Bochum eingemeindet — bis heute pflegen Wattenscheider ihre eigene Identität. Der SG Wattenscheid 09 (kurz „Watter") war jahrzehntelang Profi-Verein, spielte in der Bundesliga. Heimat von Heike Drechsler (Olympiasiegerin im Weitsprung). Stadtteil mit Stolz und Eigensinn.',
+      beispiel: 'Wattenscheider sind keine Bochumer — basta!',
+      beispiel_hd: 'Wattenscheider sind keine Bochumer — basta!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-081',
+      ausdruck: 'Recklinghausen',
+      hochdeutsch: 'Recklinghausen (Festspielstadt)',
+      bedeutung: 'Recklinghausen mit 115.000 Einwohnern ist Sitz der Ruhrfestspiele — seit 1947 eines der ältesten und wichtigsten Theaterfestivals Europas. Idee: Künstler und Arbeiter zusammenbringen. Das Festspielhaus wurde 1965 eröffnet. Auch Eisarena Recklinghausen ist bekannt. Wirtschaftlich vom Strukturwandel stark betroffen.',
+      beispiel: 'Bei de Ruhrfestspiele in Recklinghausen siehste Welttheater.',
+      beispiel_hd: 'Bei den Ruhrfestspielen in Recklinghausen siehst du Welttheater.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-082',
+      ausdruck: 'Castrop-Rauxel',
+      hochdeutsch: 'Castrop-Rauxel (Bezeichnung wie Doppelname)',
+      bedeutung: 'Castrop-Rauxel mit 73.000 Einwohnern entstand 1926 durch Zusammenschluss zweier Gemeinden — daher der charakteristische Doppelname. Berühmt durch Loriots Stadtteil-Sketch „Die Höxter". Heimat des Olympiastützpunkts Westfalen für Boxen. Bekannt für das Stadtmotto „Stadt im Zentrum der Vest". Ausgeprägter Ruhrpott-Charme.',
+      beispiel: 'Castrop-Rauxel — der Name allein is schon Ruhrpott-Kabarett.',
+      beispiel_hd: 'Castrop-Rauxel — der Name allein ist schon Ruhrpott-Kabarett.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-083',
+      ausdruck: 'Herne',
+      hochdeutsch: 'Herne (Industriestadt im Pott)',
+      bedeutung: 'Herne mit 156.000 Einwohnern ist eine der am dichtesten besiedelten Städte Deutschlands. Im 19. Jahrhundert wuchs die kleine Bauernsiedlung durch den Bergbau explosionsartig. Bekannt: die Cranger Kirmes — eines der größten Volksfeste Deutschlands (4 Millionen Besucher jährlich). Heimat des FC Schalke 04-Anhangs „Westkurve". Charmant industriell.',
+      beispiel: 'Cranger Kirmes in Herne — größte Volksfest im Pott!',
+      beispiel_hd: 'Cranger Kirmes in Herne — größtes Volksfest im Ruhrgebiet!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-084',
+      ausdruck: 'Manni Breuckmann',
+      hochdeutsch: 'Manni Breuckmann (WDR-Sportreporter)',
+      bedeutung: 'Manni Breuckmann (geb. 1951 in Witten) ist DIE Stimme des Ruhrpotts in Sachen Fußball — über 30 Jahre WDR-Reporter, Konferenzsprecher der ARD-Bundesliga-Sendung. Sein direkter, witziger, authentischer Stil mit Ruhrpott-Akzent machte ihn zur Kultfigur. „Goldene Hand"-Träger. Generationen von Fußballfans wuchsen mit seiner Stimme auf.',
+      beispiel: 'Manni Breuckmann — Pott-Stimme bei Bundesliga-Konferenz!',
+      beispiel_hd: 'Manni Breuckmann — Ruhrpott-Stimme bei der Bundesliga-Konferenz!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-085',
+      ausdruck: 'Frank Goosen',
+      hochdeutsch: 'Frank Goosen (Bochumer Schriftsteller)',
+      bedeutung: 'Frank Goosen (geb. 1966 in Bochum) ist der wohl bekannteste literarische Chronist des Ruhrgebiets. Romane wie „Liegen lernen" (2000) und „Sommerfest" (2017) erzählen humorvoll und liebevoll vom Pott-Leben. Sein Bochum, sein Pott — authentisch dokumentiert. Auch Tresenleser bei Kabarett-Veranstaltungen. VfL-Bochum-Fan durch und durch.',
+      beispiel: 'Frank Goosen — der Schriftsteller vom Pott für\'n Pott.',
+      beispiel_hd: 'Frank Goosen — der Schriftsteller vom Ruhrgebiet für das Ruhrgebiet.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-086',
+      ausdruck: 'Herbert Knebel',
+      hochdeutsch: 'Herbert Knebel (Kabarettfigur)',
+      bedeutung: 'Herbert Knebel ist eine fiktive Kabarettfigur, gespielt von Uwe Lyko (geb. 1954 in Essen). Der „Mann mit der schwarzen Lederjacke" hat seit den 1980ern Generationen mit seinen Geschichten aus dem Ruhrpott zum Lachen gebracht. „Affentheater" und „Knebel TV" sind Kult. Verkörpert den klassischen Pottmensch: derb, direkt, herzlich, mit unfreiwilligem Humor.',
+      beispiel: 'Herbert Knebel — der typische Pott-Mensch auf der Bühne!',
+      beispiel_hd: 'Herbert Knebel — der typische Ruhrpott-Mensch auf der Bühne!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-087',
+      ausdruck: 'Ralf Husmann',
+      hochdeutsch: 'Ralf Husmann (Drehbuchautor „Stromberg")',
+      bedeutung: 'Ralf Husmann (geb. 1964) ist ein bekannter deutscher Drehbuchautor und Showrunner aus dem Ruhrgebiet. Schöpfer der Erfolgsserie „Stromberg" (2004-2012), einer deutschen Adaption von „The Office". Auch „Mord mit Aussicht" und „Beste Schwestern" stammen aus seiner Feder. Verkörpert den intelligenten, beißenden Ruhrpott-Humor in der modernen Fernsehunterhaltung.',
+      beispiel: 'Stromberg von Ralf Husmann — schwarzer Pott-Humor pur.',
+      beispiel_hd: 'Stromberg von Ralf Husmann — schwarzer Ruhrpott-Humor pur.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-088',
+      ausdruck: 'Strukturwandel',
+      hochdeutsch: 'Strukturwandel (Zechenende, Neuanfang)',
+      bedeutung: 'Der „Strukturwandel" ist DAS politische und gesellschaftliche Schlüsselwort für das Ruhrgebiet seit den 1960ern: der Wandel von Kohle und Stahl zu Dienstleistung, Bildung und Kultur. Mit der Schließung der letzten Zeche 2018 endete eine 200-jährige Ära. Universitäten (Bochum, Dortmund, Essen-Duisburg), IT, Logistik prägen die neue Zeit. Trauma und Chance zugleich.',
+      beispiel: 'Der Strukturwandel hat ganze Generationen veränderd.',
+      beispiel_hd: 'Der Strukturwandel hat ganze Generationen verändert.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-089',
+      ausdruck: 'Emscher',
+      hochdeutsch: 'Emscher (Fluss durchs Ruhrgebiet)',
+      bedeutung: 'Die Emscher fließt 83 km mitten durchs Ruhrgebiet — bis vor wenigen Jahren Europas größte offene Abwasserkanal („Köttelbecke"). Seit 1991 läuft das Emscher-Umbau-Großprojekt: Renaturierung, unterirdische Kläranlagen, der Fluss wird wieder sauber. Symbol für ökologischen Strukturwandel. Bis 2021 wurde sie offiziell „abwasserfrei".',
+      beispiel: 'D\'Emscher is sauber jetz — endlich wieder Fluss un keine Köttelbecke.',
+      beispiel_hd: 'Die Emscher ist sauber jetzt — endlich wieder Fluss und keine Kloake.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-090',
+      ausdruck: 'RVR',
+      hochdeutsch: 'Regionalverband Ruhr',
+      bedeutung: 'Der Regionalverband Ruhr (RVR) ist der Zusammenschluss von 53 Städten und Kreisen des Ruhrgebiets — gegründet 1920 als „Siedlungsverband Ruhrkohlenbezirk". Größter Kommunalverband Deutschlands mit 5,1 Millionen Einwohnern. Verantwortlich für Regionalplanung, Naherholung (Halden, Routen), Kultur. RVR-Schilder mit weißem Tigertor sind Wahrzeichen.',
+      beispiel: 'Der RVR sorgt dafür, dass die Region zusammen denkt.',
+      beispiel_hd: 'Der RVR sorgt dafür, dass die Region zusammen denkt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-091',
+      ausdruck: 'Pott-Liebe',
+      hochdeutsch: 'Liebe zum Ruhrgebiet',
+      bedeutung: '„Pott-Liebe" ist die fast schon religiöse Verbundenheit der Ruhrgebietsbewohner mit ihrer Heimat. Anders als andere Regionen, die einzelne Städte verehren, lieben Pottmenschen die ganze Region — von Duisburg bis Dortmund, von Essen bis Bottrop. Diese Pott-Liebe entstand in den Bergbau-Generationen, als Solidarität überlebenswichtig war. Heute Lebenshaltung.',
+      beispiel: 'Pott-Liebe — die hörd nie auf, egal wohin man zieht.',
+      beispiel_hd: 'Pott-Liebe — die hört nie auf, egal wohin man zieht.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-092',
+      ausdruck: 'Pottoriginal',
+      hochdeutsch: 'Echter Ruhrpott-Charakter',
+      bedeutung: 'Ein „Pottoriginal" ist ein authentischer Ruhrpott-Mensch mit ausgeprägter Persönlichkeit — meist im Alter mit Lebenserfahrung. Direkte Sprache, derber Humor, herzlicher Kern. Sie sitzen in der Trinkhalle, am Stammtisch oder vor der Frittenbude. Pottoriginale werden im ganzen Stadtteil gekannt. Mit dem Strukturwandel werden sie weniger — aber sie sind das kulturelle Gedächtnis des Reviers.',
+      beispiel: 'Onkel Heinz is\'n echtes Pottoriginal — den kennen alle inner Bude.',
+      beispiel_hd: 'Onkel Heinz ist ein echtes Ruhrpott-Original — den kennen alle in der Kneipe.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-093',
+      ausdruck: 'Helga',
+      hochdeutsch: 'Helga (typischer Pott-Frauenname)',
+      bedeutung: '„Helga" ist ein klassischer Frauenname der Generation 1950er/60er-Jahre — im Ruhrpott besonders häufig vertreten. Heute eher selten neugeboren, aber Helga-Generationen prägen Kioske, Frittenbuden und Vereinsbüros. Steht stellvertretend für die starken Pott-Frauen, die während der Bergbau-Zeit den Alltag managten, während ihre Männer unter Tage waren. Symbol weiblicher Pott-Härte.',
+      beispiel: 'Helga an der Trinkhalle kennt jeden Stammkunden mit Namen.',
+      beispiel_hd: 'Helga am Kiosk kennt jeden Stammkunden mit Namen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-094',
+      ausdruck: 'Schalke-Hymne',
+      hochdeutsch: '„Blau und Weiß, wie lieb ich dich"',
+      bedeutung: 'Die Schalker Vereinshymne „Blau und Weiß, wie lieb ich dich" wird vor jedem Heimspiel in der Veltins-Arena gesungen — 62.000 Stimmen gemeinsam. Komposition aus dem Repertoire der Volksmusik, mit Schalke-Text. Gänsehaut-Moment für jeden königsblauen Fan. Verbunden mit dem 1934er-Meistertitel-Schalke und der Tradition als Bergmannsverein. Mehr als ein Lied — eine Religion.',
+      beispiel: 'Wenn 62.000 die Schalke-Hymne singen, fließen Tränen.',
+      beispiel_hd: 'Wenn 62.000 die Schalke-Hymne singen, fließen Tränen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-095',
+      ausdruck: 'Pillemann',
+      hochdeutsch: 'Penis (Ruhrpott-Slang)',
+      bedeutung: '„Pillemann" ist im Ruhrpott der scherzhaft-derbe Ausdruck für den Penis. Kein scharfes Schimpfwort, sondern eher humorvoll-anatomisch. Wird oft in Witzen und in der Männersprache verwendet. Zeigt die direkte, unverklemmte Art des Ruhrpotts beim Sprechen über alltägliche Dinge — auch unter der Gürtellinie. Im Karneval und Stammtischwitz beliebt.',
+      beispiel: 'Mach kein Theater wegen so\'m Pillemann — is halt nur n Witz.',
+      beispiel_hd: 'Mach kein Theater wegen sowas — ist halt nur ein Witz.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-096',
+      ausdruck: 'Pommesgabel',
+      hochdeutsch: 'Holzgabel für Pommes',
+      bedeutung: 'Die „Pommesgabel" ist die kleine Holzgabel, die zur Currywurst und Pommes an der Frittenbude gereicht wird — meist 2-zinkig, einmal verwendbar. Eine ikonische Komponente des Ruhrpott-Imbiss-Erlebnisses. Wer im Pott Pommes ohne Pommesgabel isst, gilt als Tourist. Symbol des praktisch-bodenständigen Genusses ohne Schickimicki. Mit Pommes Schranke und Currywurst ein Set.',
+      beispiel: 'Ohne Pommesgabel keine richtigen Pommes — auch wenn\'s scheiße fürs Klima is.',
+      beispiel_hd: 'Ohne Pommesgabel keine richtigen Pommes — auch wenn es schlecht für das Klima ist.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-097',
+      ausdruck: 'Knipsen',
+      hochdeutsch: 'Fotografieren (Ruhrpott-Slang)',
+      bedeutung: '„Knipsen" ist im Ruhrpott das Fotografieren — von „Knipser" für eine billige Kompaktkamera. Heute scherzhaft für jeden Smartphone-Knipser. „Mach mal n\'Foto, knips!" Auch verwendet für unbedacht-schnelles Handeln: „Der hat\'s einfach durchgeknipst." Zeigt den humorvoll-leichten Umgang der Pottmenschen mit moderner Technik.',
+      beispiel: 'Komm her, ich knips dich kurz vor\'m BVB-Schild!',
+      beispiel_hd: 'Komm her, ich fotografiere dich kurz vor dem BVB-Schild!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-098',
+      ausdruck: 'Ne dat',
+      hochdeutsch: 'Nein das (Ruhrpott-Verneinung)',
+      bedeutung: '„Ne dat" ist die typisch ruhrpötterische Verneinung — kurz, knapp, direkt. „Ne, dat geht so nich" oder „Ne dat is doch Quatsch". Das Wort „ne" als Verneinung kommt aus dem Niederdeutschen, das „dat" ersetzt das hochdeutsche „das". Ein klassisches Beispiel für die Verschmelzung niederdeutscher Einflüsse mit dem Hochdeutschen — Markenzeichen des Ruhrpott-Dialekts.',
+      beispiel: 'Wars du heut beim Bäcker? — Ne dat hab ich vergessen.',
+      beispiel_hd: 'Warst du heute beim Bäcker? — Nein, das habe ich vergessen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-099',
+      ausdruck: 'Mantaplatte',
+      hochdeutsch: 'Currywurst mit Pommes und Getränk',
+      bedeutung: 'Die „Mantaplatte" ist ein humorvoller Ruhrpott-Begriff aus den 80ern für die Komplett-Bestellung an der Frittenbude: Currywurst, Pommes und ein Bier. Benannt nach dem Opel Manta — dem Kultauto der Ruhrpott-Macho-Szene. Der Manta-Fahrer kam vom Stahlwerk und aß nach Schicht seine Mantaplatte. Heute scherzhaft für das klassische Imbiss-Menü.',
+      beispiel: 'Eine Mantaplatte bitte — Currywurst, Pommes, Pils!',
+      beispiel_hd: 'Eine Mantaplatte bitte — Currywurst, Pommes, Pils!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-100',
+      ausdruck: 'Doppelkopf',
+      hochdeutsch: 'Doppelkopf (Kartenspiel der Bergleute)',
+      bedeutung: 'Doppelkopf — kurz „Doko" — ist DAS Kartenspiel des Ruhrgebiets. Vier Spieler, 48 Karten, komplexe Regeln. Bergleute spielten es nach der Schicht in der Trinkhalle oder zu Hause. Heute pflegen Doko-Stammtische die Tradition in jeder Pott-Stadt. Mehr als Karten — soziales Ritual, Generationen-Bindung, Alltagspoesie. Wer Doko spielt, gehört zum Pott.',
+      beispiel: 'Donnerstag is Doko-Abend bei uns — Tradition seit 30 Jahren.',
+      beispiel_hd: 'Donnerstag ist Doko-Abend bei uns — Tradition seit 30 Jahren.',
+      kategorie: 'sport'
     }
   ]
 };

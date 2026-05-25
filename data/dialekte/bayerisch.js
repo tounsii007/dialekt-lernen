@@ -650,6 +650,231 @@ export default {
       beispiel: 'Bei dem Föhn hab i wieder a Föhnkopfweh.',
       beispiel_hd: 'Bei dem Föhn habe ich wieder Föhn-Kopfschmerzen.',
       kategorie: 'natur'
+    },
+    {
+      id: 'by-076',
+      ausdruck: 'Wadlbeißer',
+      hochdeutsch: 'Streithahn / aggressiver Kerl',
+      bedeutung: 'Ein „Wadlbeißer" ist im Bairischen ein streitlustiger, aggressiver Mensch — wörtlich einer, der einem in die Wadln (Waden) beißt wie ein kleiner Hund. Das Bild ist treffend: nicht groß, aber zäh und unangenehm. In der bayerischen Politik wird der Begriff oft für aufmüpfige Hinterbänkler verwendet. Auch im Sport: ein zäher, kämpferischer Spieler kann ein Wadlbeißer sein.',
+      beispiel: 'Der is a richtiger Wadlbeißer — der gibt nia auf!',
+      beispiel_hd: 'Der ist ein richtiger Streithahn — der gibt nie auf!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-077',
+      ausdruck: 'Pfundskerl',
+      hochdeutsch: 'Toller Kerl / Prachtkerl',
+      bedeutung: 'Ein „Pfundskerl" ist ein durch und durch sympathischer, verlässlicher und tüchtiger Mann — das höchste bayerische Lob für einen Kerl. Das Wort „pfund" stammt aus dem Münzwesen und bedeutet hier „wertvoll" oder „erstklassig". Ein Pfundskerl ist hilfsbereit, ehrlich und immer da, wenn man ihn braucht. Die weibliche Form wäre „Pfundsweib".',
+      beispiel: 'Da Sepp is a echta Pfundskerl — auf den is Verlass!',
+      beispiel_hd: 'Der Sepp ist ein echter Prachtkerl — auf den ist Verlass!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-078',
+      ausdruck: 'Schuach',
+      hochdeutsch: 'Schuhe',
+      bedeutung: 'Das bairische Wort für Schuhe — Singular wie Plural gleich. Die typische Vokalverschiebung „uh" zu „ua" ist hörbar. „Mei Schuach drucken" heißt „meine Schuhe drücken". Beim Schuhplattler werden ja die Schuach geschlagen — das Wort gehört zum bairischen Grundwortschatz. Auch zusammengesetzt: „Bergschuach" (Wanderschuhe), „Haferlschuach" (Trachtenschuhe).',
+      beispiel: 'Mei Schuach san nass — der Regen war zu stark.',
+      beispiel_hd: 'Meine Schuhe sind nass — der Regen war zu stark.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-079',
+      ausdruck: 'Vogerl',
+      hochdeutsch: 'Vögelchen / kleiner Vogel',
+      bedeutung: 'Die Verkleinerungsform von Vogel — typisch bairisch mit dem -erl-Suffix. „A Vogerl" ist ein kleines, niedliches Vögelchen. Übertragen auch für junge Mädchen liebevoll gebraucht: „A liabs Vogerl". Im Wirtshaus kennt man auch das „Vogerlsalat" — den Feldsalat, der im Frühjahr besonders zart ist. Das Diminutiv mit „-erl" ist eines der charakteristischen Bairisch-Merkmale.',
+      beispiel: 'A kloans Vogerl singt im Garten — der Frühling kummt!',
+      beispiel_hd: 'Ein kleines Vögelchen singt im Garten — der Frühling kommt!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-080',
+      ausdruck: 'Bockerl',
+      hochdeutsch: 'Tannen-/Fichtenzapfen',
+      bedeutung: 'Im Bairischen ist das „Bockerl" der Tannen- oder Fichtenzapfen, den man im Wald findet. Kinder sammeln Bockerl zum Spielen und Basteln, Erwachsene zum Anheizen des Ofens. Auch das berühmte „Bockerlbahnerl" — die historische Schmalspurbahn ins Bayerwald-Gebiet — heißt so nach den vielen Zapfen, die auf den Schienen lagen. Ein urbairisches Wort mit großem Charme.',
+      beispiel: 'Im Wald hamma a ganz\'n Sack voll Bockerl gsammelt.',
+      beispiel_hd: 'Im Wald haben wir einen ganzen Sack voller Tannenzapfen gesammelt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-081',
+      ausdruck: 'Reibradl',
+      hochdeutsch: 'Reibekuchen / Kartoffelpuffer',
+      bedeutung: 'Das „Reibradl" ist im Bayerischen der Kartoffelpuffer oder Reibekuchen — geriebene Kartoffeln mit Ei und Mehl, in der Pfanne knusprig gebraten. Wird mit Apfelmus oder herzhaft mit Sauerkraut serviert. In manchen Regionen Bayerns heißen sie auch „Erdäpfelpuffer" oder „Bachuran". Die kleine, kreisrunde Form gab dem Gericht den Namen — ein „Radl" für die Pfanne.',
+      beispiel: 'A Reibradl mit Apfelmus — des is mei Lieblingsessn!',
+      beispiel_hd: 'Ein Reibekuchen mit Apfelmus — das ist mein Lieblingsessen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-082',
+      ausdruck: 'Kasspatzn',
+      hochdeutsch: 'Käsespätzle',
+      bedeutung: 'Die „Kasspatzn" sind die bayerisch-schwäbische Antwort auf Käsenudeln: Spätzle (kleine Eierteignudeln) werden mit reichlich geriebenem Bergkäse vermischt und mit gerösteten Zwiebeln getoppt. Ein deftiges Gericht der bayerischen und allgäuerischen Berghütten-Küche. Wenn die Kasspatzn richtig sind, ziehen Käsefäden beim Servieren, die man mit der Gabel aufnehmen muss — Teil der Kasspatzn-Etikette.',
+      beispiel: 'A Portion Kasspatzn nach\'m Bergwandern — herrlich!',
+      beispiel_hd: 'Eine Portion Käsespätzle nach dem Bergwandern — herrlich!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-083',
+      ausdruck: 'Krautwickerl',
+      hochdeutsch: 'Kohlrouladen',
+      bedeutung: 'Die „Krautwickerl" sind die bayerische Version der Kohlrouladen — Hackfleisch in Weiß- oder Sauerkrautblätter gewickelt, in Brühe geschmort und mit Kartoffelpüree serviert. Ein klassisches Sonntagsessen der bayerischen Hausmannskost. Jede bayerische Großmutter hat ihr eigenes Rezept, das gehütet wird wie ein Schatz. Der Plural endet typisch bairisch auf „-l" statt „-n".',
+      beispiel: 'Bei der Oma gibt\'s am Sonntag Krautwickerl — Tradition!',
+      beispiel_hd: 'Bei der Oma gibt es am Sonntag Kohlrouladen — Tradition!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-084',
+      ausdruck: 'Königssee',
+      hochdeutsch: 'Königssee (Fjordsee bei Berchtesgaden)',
+      bedeutung: 'Der Königssee bei Berchtesgaden ist einer der schönsten Seen der Bayerischen Alpen — ein tiefer Fjordsee, eingebettet zwischen steilen Felswänden des Watzmann-Massivs. Türkisgrünes, glasklares Wasser, das in Deutschland einzigartig ist. Mit den Elektrobooten geht es zur Wallfahrtskirche St. Bartholomä — das Postkartenmotiv schlechthin. Bei der Echo-Stelle bläst der Schiffer in die Trompete, und das Echo schallt mehrfach zurück.',
+      beispiel: 'Am Königssee fahrn ma mit\'m Elektroboot nach Sankt Bartholomä.',
+      beispiel_hd: 'Am Königssee fahren wir mit dem Elektroboot nach Sankt Bartholomä.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-085',
+      ausdruck: 'Garmisch-Partenkirchen',
+      hochdeutsch: 'Garmisch-Partenkirchen (Wintersportort)',
+      bedeutung: 'Garmisch-Partenkirchen ist Bayerns bekanntester Wintersportort — Austragungsort der Olympischen Winterspiele 1936 und alljährlich des Neujahrsskispringens (Vierschanzentournee). Die Zugspitze und das Wettersteingebirge bilden eine dramatische Kulisse. Berühmt: das Garmischer Olympia-Skistadion, die Partnachklamm und die Wank-Bahn. Im Sommer Wandermekka, im Winter Skiparadies.',
+      beispiel: 'Z\' Garmisch hammer beim Skispringen mitgfiebert.',
+      beispiel_hd: 'In Garmisch haben wir beim Skispringen mitgefiebert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-086',
+      ausdruck: 'Berchtesgaden',
+      hochdeutsch: 'Berchtesgaden (Alpenort)',
+      bedeutung: 'Berchtesgaden ist ein Markt im äußersten Südosten Bayerns, am Fuße des Watzmanns gelegen. Das Berchtesgadener Land mit dem Königssee, dem Kehlstein („Eagle\'s Nest") und dem Salzbergwerk ist eines der schönsten Alpengebiete Deutschlands. Historisch belastet durch den Obersalzberg, wo Hitler sein „Berghof"-Domizil hatte. Heute Touristenmagnet und Ausgangspunkt für Bergwanderungen im Nationalpark Berchtesgaden.',
+      beispiel: 'In Berchtesgaden besuchen ma s\' Salzbergwerk — sehr spannend!',
+      beispiel_hd: 'In Berchtesgaden besuchen wir das Salzbergwerk — sehr spannend!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-087',
+      ausdruck: 'Mittenwald',
+      hochdeutsch: 'Mittenwald (Geigenbauer-Ort)',
+      bedeutung: 'Mittenwald ist ein malerisches Alpenstädtchen zwischen Karwendel und Wettersteingebirge — berühmt für seinen Geigenbau seit dem 17. Jahrhundert. Matthias Klotz brachte 1685 die Kunst des Geigenbaus aus Cremona mit. Bis heute fertigen Geigenbauer in Mittenwald hochwertige Streichinstrumente. Die bunten Lüftlmalereien an den Häuserfassaden sind weltberühmt. Auch Karwendelbahn-Station und Wandermekka.',
+      beispiel: 'In Mittenwald san die Geigenbauer no\' wia vor 300 Jahren tätig.',
+      beispiel_hd: 'In Mittenwald sind die Geigenbauer noch wie vor 300 Jahren tätig.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-088',
+      ausdruck: 'Hofbräuhaus',
+      hochdeutsch: 'Münchner Hofbräuhaus',
+      bedeutung: 'Das Hofbräuhaus am Platzl in München ist das bekannteste Wirtshaus der Welt — 1589 vom bayerischen Herzog Wilhelm V. gegründet. Mit Plätzen für über 3.500 Gäste, einer Blaskapelle, Lederhosen-Kellnern und literweise Bier ist es bayerisches Klischee in Reinkultur. Internationale Touristenmagnet, aber trotzdem authentisch. Das Lied „In München steht ein Hofbräuhaus" ist weltberühmt. Hier wird der Maßkrug rituell gehoben.',
+      beispiel: 'Im Hofbräuhaus a Maß trinken und die Kapelle hör\'n — Münchnerisch!',
+      beispiel_hd: 'Im Hofbräuhaus eine Maß trinken und die Kapelle hören — Münchnerisch!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-089',
+      ausdruck: 'Pumuckl',
+      hochdeutsch: 'Pumuckl (Kobold-Figur von Ellis Kaut)',
+      bedeutung: 'Der Pumuckl ist eine berühmte bayerische Kinderbuch- und Hörspielfigur — erfunden von der Münchner Autorin Ellis Kaut, mit der Stimme von Hans Clarin unsterblich geworden. Der freche, rothaarige Kobold lebt beim Schreinermeister Eder in München und reimt unentwegt. Die Geschichten sind ein Stück bayerischer Kulturidentität, der Pumuckl Inbegriff bayerischer Schalkhaftigkeit. Eine ganze Generation wuchs mit ihm auf.',
+      beispiel: 'Ois Kind hab i jed\' Pumuckl-Folge ang\'hört — herrlich war\'s.',
+      beispiel_hd: 'Als Kind habe ich jede Pumuckl-Folge angehört — herrlich war es.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-090',
+      ausdruck: 'Markus Söder',
+      hochdeutsch: 'Markus Söder (Ministerpräsident Bayerns)',
+      bedeutung: 'Markus Söder (geb. 1967 in Nürnberg) ist seit 2018 bayerischer Ministerpräsident und CSU-Vorsitzender seit 2019. Bekannt für seine medienwirksamen Inszenierungen — Kostüme, Foto-Termine in Bergen und Wirtshäusern — und seine Bayern-zentrierte Politik. Lebt mit Familie am Tegernsee. Häufiger Kandidat für die Kanzlerkandidatur der Union. In Bayern polarisierende Figur — geliebt und gehasst gleichermaßen.',
+      beispiel: 'Da Söder is wieder mal in Lederhosn unterwegs — typisch.',
+      beispiel_hd: 'Der Söder ist wieder mal in Lederhose unterwegs — typisch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-091',
+      ausdruck: 'Polt',
+      hochdeutsch: 'Gerhard Polt (Kabarettist)',
+      bedeutung: 'Gerhard Polt (geb. 1942) ist Bayerns berühmtester Kabarettist — geboren in München. Seine satirischen Monologe und Sketche über den bayerischen Spießbürger sind Kult. „Fast wia im richtigen Leben" und „Mei is des ärgerlich" sind Klassiker. Polt seziert mit unbestechlichem Auge bayerische und deutsche Befindlichkeiten. Zusammen mit den Well-Buam (Biermösl Blosn) tourte er jahrzehntelang. Eine Ikone des bayerischen Humors.',
+      beispiel: 'Da Polt is fei a bisserl wia da bayerische Karl Valentin.',
+      beispiel_hd: 'Der Polt ist schon ein bisschen wie der bayerische Karl Valentin.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-092',
+      ausdruck: 'Heuwagen',
+      hochdeutsch: 'Heuwagen (Wiesn-Karussell)',
+      bedeutung: 'Auf der Wiesn (Oktoberfest) ist der „Heuwagen" ein berühmtes Fahrgeschäft — ein altmodisches Holzkarussell, das wie ein Bauernwagen aussieht und mit lustigen Liedern und reichlich Bier befahren wird. Eine bayerische Variante der „Wilde Maus" oder ähnlich. Auf vielen bayerischen Volksfesten gibt es Heuwagen-artige Fahrgeschäfte. Symbol für die bäuerlichen Wurzeln des Oktoberfestes als ursprüngliches Erntedankfest.',
+      beispiel: 'Mit\'m Heuwagen auf der Wiesn — des is a echte Gaudi!',
+      beispiel_hd: 'Mit dem Heuwagen auf der Wiesn — das ist ein echter Spaß!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-093',
+      ausdruck: 'Schmaizler',
+      hochdeutsch: 'Schnupftabak',
+      bedeutung: 'Der „Schmaizler" ist im Bairischen der traditionelle Schnupftabak — ein feinkörniger Tabak, der in die Nase gezogen wird. Schmaizler-Genuss ist tief in der ländlichen bayerischen Kultur verwurzelt, vor allem unter älteren Männern. Beim „Schmaizler-Schnupfen-Wettbewerb" auf manchen bayerischen Festen wird der größte Niesreflex prämiert. Die kleine Tabakdose ist oft kunstvoll verziert.',
+      beispiel: 'Da Großvater nimmt nach\'m Essen no\' an Schmaizler.',
+      beispiel_hd: 'Der Großvater nimmt nach dem Essen noch einen Schnupftabak.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-094',
+      ausdruck: 'Ofengwiagn',
+      hochdeutsch: 'Hängebauch über dem Hosenbund',
+      bedeutung: '„Ofengwiagn" — wörtlich „Ofenwiege" — ist die bairische Bezeichnung für den charakteristischen Bauchring, der bei manchen Männern über den Hosenbund hängt. Das Wort bezieht sich darauf, dass der Bauch wie eine Wiege vor dem Ofen hängt. Ein humorvoll-derbes Wort, das ohne echte Boshaftigkeit verwendet wird, oft selbstironisch. Bayerische Bierkultur und gute Küche fordern ihren Tribut.',
+      beispiel: 'Vom vielen Weißbier krieg i no\' an richtigen Ofengwiagn.',
+      beispiel_hd: 'Vom vielen Weißbier bekomme ich noch einen richtigen Hängebauch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-095',
+      ausdruck: 'Aiblinger Bier',
+      hochdeutsch: 'Bier aus Bad Aibling',
+      bedeutung: 'Das Aiblinger Bier wird in der Brauerei Maxlrain bei Bad Aibling im Mangfalltal gebraut — eine der ältesten Brauereien Bayerns (gegründet 1636). Bekannt für ihre untergärigen Biere und die ungewöhnliche Brautradition mit eigenem Brunnen. Bad Aibling selbst ist ein Moorheilbad im oberbayerischen Voralpenland — beliebter Kurort und Filmkulisse für die TV-Serie „Die Rosenheim-Cops".',
+      beispiel: 'Bei mei\'m Bruda in Bad Aibling trink ma immer s\' Aiblinger.',
+      beispiel_hd: 'Bei meinem Bruder in Bad Aibling trinken wir immer das Aiblinger.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-096',
+      ausdruck: 'Kloster Andechs',
+      hochdeutsch: 'Kloster Andechs (Wallfahrtsort & Brauerei)',
+      bedeutung: 'Das Kloster Andechs auf dem „Heiligen Berg" über dem Ammersee ist eines der ältesten Wallfahrtsklöster Bayerns (gegründet im 11. Jahrhundert). Berühmt für seine eigene Klosterbrauerei mit dem legendären Andechser Doppelbock und sein urige Klostergasthaus. Der Aufstieg zum Kloster ist beliebter Wandertag der Münchner — oben werden Maß und Brotzeit serviert. Spiritualität und Bierkultur in Vollendung vereint.',
+      beispiel: 'Nach\'m Wandern aufs Andechs Kloster a Doppelbock — Pflichtprogramm!',
+      beispiel_hd: 'Nach dem Wandern auf das Kloster Andechs ein Doppelbock — Pflichtprogramm!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-097',
+      ausdruck: 'Schalk',
+      hochdeutsch: 'Schalk / Schelm',
+      bedeutung: 'Ein „Schalk" ist ein humorvoll-witziger Mensch mit Hang zum kleinen Streich — nicht bösartig, aber mit funkelnden Augen und unverhofften Pointen. „Den Schalk im Nacken haben" beschreibt jemanden, der gleich einen Witz machen wird. Im Bairischen liebt man diese Art von Mensch — der Bayer schätzt den schalkhaften Witz mehr als groben Spott. Eng verwandt mit dem Lausbubentum.',
+      beispiel: 'Da Onkel hat den Schalk im Nacken — pass auf, was er gleich macht!',
+      beispiel_hd: 'Der Onkel hat den Schalk im Nacken — pass auf, was er gleich macht!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-098',
+      ausdruck: 'pressiern',
+      hochdeutsch: 'Pressieren / eilig haben / drücken',
+      bedeutung: 'Das bairische Verb „pressiern" bedeutet „eilig haben" oder „drücken" — vom französischen „presser". „Es pressiert mi" heißt „ich habe es eilig" oder „es drängt mich". Ein typisch bairisches Verb mit französischer Wurzel — die Sprache hat viele solche Lehnwörter behalten. „Pressiert\'s?" ist die Frage „Hast du es eilig?".',
+      beispiel: 'Es pressiert mi, i muass auf\'n Zug!',
+      beispiel_hd: 'Ich habe es eilig, ich muss auf den Zug!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-099',
+      ausdruck: 'Watschnbaam',
+      hochdeutsch: 'Streitsüchtiger Mensch',
+      bedeutung: 'Ein „Watschnbaam" — wörtlich „Ohrfeigenbaum" — ist im Bairischen jemand, der schnell Ohrfeigen verteilt oder ständig Streit anfängt. Das Bild ist saftig: ein Baum, von dem Watschn (Ohrfeigen) fallen wie Äpfel. „A echter Watschnbaam" ist eine derbe Charakterisierung für einen aggressiven Zeitgenossen, der lieber zuschlägt als diskutiert. Heute meist scherzhaft verwendet.',
+      beispiel: 'Mit dem oidn Watschnbaam streit i mi liaber net.',
+      beispiel_hd: 'Mit dem alten Streithammel streite ich mich lieber nicht.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-100',
+      ausdruck: 'Wuid',
+      hochdeutsch: 'Wild / verrückt / ungestüm',
+      bedeutung: 'Das bairische Wort „wuid" entspricht dem hochdeutschen „wild" — aber im Bairischen hat es eine breitere Bedeutung. Es kann „ungestüm", „verrückt", „toll" oder „aufgeregt" heißen. „Des is wuid!" ist begeisterte Zustimmung. „A wuide Hetz" ist ein wilder, ausgelassener Spaß. Junge Leute verwenden es als positiver Verstärker — ähnlich dem Schweizer „huere" oder dem norddeutschen „mega".',
+      beispiel: 'Des Konzert gestern war so wuid — i hab no\' Ohrensausen!',
+      beispiel_hd: 'Das Konzert gestern war so wild — ich habe noch Ohrensausen!',
+      kategorie: 'gefuehle'
     }
   ]
 };

@@ -652,6 +652,231 @@ export default {
       beispiel: 'Das isch en schöne Tag, gäll?',
       beispiel_hd: 'Das ist ein schöner Tag, nicht wahr?',
       kategorie: 'redensart'
+    },
+    {
+      id: 'ch-076',
+      ausdruck: 'Schwinge',
+      hochdeutsch: 'Schwingen (Schweizer Ringkampf)',
+      bedeutung: 'Schwingen ist der Schweizer Nationalsport — eine traditionelle Ringkampf-Form, bei der die Kämpfer („Schwinger") in kurzen Hosen aus grobem Stoff um die Hüften ringen. Sieger wird, wer den Gegner auf den Rücken zwingt und dabei beide Schulterblätter berührt. Das Eidgenössische Schwing- und Älplerfest („Eidgenössisches") findet alle drei Jahre statt — der Sieger („Schwingerkönig") wird Nationalheld. Im Sägemehl-Ring wird der Sport heute wie vor 200 Jahren ausgetragen.',
+      beispiel: 'S\'Eidgenössische isch grösser als s\'Cup-Final.',
+      beispiel_hd: 'Das Eidgenössische ist grösser als das Cup-Finale.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-077',
+      ausdruck: 'Hornusse',
+      hochdeutsch: 'Hornussen (Schweizer Mannschaftssport)',
+      bedeutung: 'Hornussen ist ein einzigartig schweizerischer Mannschaftssport — vor allem im Emmental und Mittelland beliebt. Mit einer langen Peitsche („Stecken") wird ein Plastikgeschoss („Nouss") über ein Spielfeld geschlagen — die gegnerische Mannschaft versucht, das Nouss mit grossen Holzbrettern („Schindeln") aus der Luft zu fangen. Ein bizarrer Mix aus Hockey, Cricket und Baseball. UNESCO-Kulturerbe der Schweiz.',
+      beispiel: 'Mer gönd am Sunntig zum Hornusse — willsch mitcho?',
+      beispiel_hd: 'Wir gehen am Sonntag zum Hornussen — willst du mitkommen?',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-078',
+      ausdruck: 'Zermatt',
+      hochdeutsch: 'Zermatt (Bergdorf am Matterhorn)',
+      bedeutung: 'Zermatt im Wallis ist eines der berühmtesten Bergdörfer der Welt — am Fuße des Matterhorns, autofrei und nur mit der Bahn erreichbar. Bekannt für mondänen Wintersport (Skigebiet 365 Tage offen am Theodulgletscher), berühmte Hotels und das ikonische Matterhorn-Postkartenmotiv. Im Sommer Bergsteiger-Mekka — die Hörnlihütte am Matterhorn-Fuss ist Pflichtstation. Die Gornergratbahn führt zur 3089 m hohen Aussichtsplattform.',
+      beispiel: 'I Zermatt cha mer s\'ganz Jahr Ski fahre.',
+      beispiel_hd: 'In Zermatt kann man das ganze Jahr Ski fahren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-079',
+      ausdruck: 'Jungfrau',
+      hochdeutsch: 'Jungfrau (Berg im Berner Oberland)',
+      bedeutung: 'Die Jungfrau (4158 m) ist einer der berühmtesten Berge der Schweizer Alpen — zusammen mit Eiger und Mönch bildet sie das Berner Dreigestirn. Die Jungfraubahn fährt auf 3454 m zum Jungfraujoch — der höchstgelegene Bahnhof Europas („Top of Europe"). Die UNESCO-Welterbe-Region Jungfrau-Aletsch ist die grösste Gletscherregion der Alpen. Der Aletschgletscher ist über 22 km lang.',
+      beispiel: 'Vo Interlaken aus gseht mer Eiger, Mönch und Jungfrau.',
+      beispiel_hd: 'Von Interlaken aus sieht man Eiger, Mönch und Jungfrau.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-080',
+      ausdruck: 'Eiger',
+      hochdeutsch: 'Eiger (Berg mit berühmter Nordwand)',
+      bedeutung: 'Der Eiger (3967 m) im Berner Oberland ist berühmt für seine Nordwand — eine der gefährlichsten und ikonischsten Kletterwände der Welt. Erstdurchsteigung 1938. Die „Mordwand" forderte unzählige Bergsteiger-Opfer. Heinrich Harrer (Erstdurchsteiger) wurde mit dem Buch und Film „Sieben Jahre in Tibet" weltberühmt. Heute klettern täglich Bergsteiger in die Wand. Aus dem Berner Oberland-Tal sieht man die gewaltige Wand direkt aufragen.',
+      beispiel: 'D\'Eigernordwand isch der Mythos vo de Bergsteiger.',
+      beispiel_hd: 'Die Eigernordwand ist der Mythos der Bergsteiger.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-081',
+      ausdruck: 'Vierwaldstättersee',
+      hochdeutsch: 'Vierwaldstättersee (See in Zentralschweiz)',
+      bedeutung: 'Der Vierwaldstättersee ist einer der schönsten Seen der Schweiz — eingebettet zwischen den vier Urkantonen Uri, Schwyz, Unterwalden und Luzern (daher der Name). Mit seiner verzweigten Form, den steilen Bergen und der Rütliwiese ist er Wiege der Eidgenossenschaft. Historische Dampfschiffe verkehren auf dem See. Luzern mit der Kapellbrücke ist die wichtigste Stadt am See. Mark Twain liebte den See — er nannte ihn das schönste Schauspiel der Welt.',
+      beispiel: 'Mit em Dampfschiff über de Vierwaldstättersee — traumhaft.',
+      beispiel_hd: 'Mit dem Dampfschiff über den Vierwaldstättersee — traumhaft.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-082',
+      ausdruck: 'Heidi',
+      hochdeutsch: 'Heidi (Schweizer Kinderbuch-Heldin)',
+      bedeutung: 'Heidi ist die berühmteste Schweizer Buchfigur überhaupt — erfunden von Johanna Spyri (1827–1901), die ihr Buch „Heidis Lehr- und Wanderjahre" 1880 veröffentlichte. Die Geschichte des Waisenmädchens, das beim Alpöhi in den Bündner Bergen aufwächst, wurde in über 50 Sprachen übersetzt und unzählige Male verfilmt — japanische Anime-Version besonders berühmt. Das Heididorf in Maienfeld ist Touristenattraktion.',
+      beispiel: 'Heidi und der Alpöhi — d\'Schwiiz im Kinderbuech.',
+      beispiel_hd: 'Heidi und der Alpöhi — die Schweiz im Kinderbuch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-083',
+      ausdruck: 'Wilhelm Tell',
+      hochdeutsch: 'Wilhelm Tell (Schweizer Nationalheld)',
+      bedeutung: 'Wilhelm Tell ist der legendäre Schweizer Nationalheld — soll im 14. Jahrhundert mit der Armbrust einen Apfel vom Kopf seines Sohnes geschossen und damit gegen den habsburgischen Vogt Gessler aufbegehrt haben. Friedrich Schillers Drama „Wilhelm Tell" (1804) machte ihn weltberühmt. Die Tellsplatte am Vierwaldstättersee ist sein angeblicher Sprung-Ort. Ob Tell wirklich existiert hat, ist umstritten — als Symbol für Schweizer Freiheit jedenfalls bleibt er.',
+      beispiel: 'De Wilhelm Tell het em Gessler Trotz boote.',
+      beispiel_hd: 'Der Wilhelm Tell hat dem Gessler getrotzt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-084',
+      ausdruck: 'Capuns',
+      hochdeutsch: 'Bündner Capuns (Mangoldrouladen)',
+      bedeutung: 'Capuns sind eine Bündner Spezialität: Spätzleteig mit Speckwürfeln und Salsiz (Bündner Rohwurst) wird in Mangoldblätter gerollt, in Brühe pochiert und dann mit Käse-Sahne-Sauce überbacken. Ein deftiges Gericht aus der Berggastronomie. Capuns sind so typisch Graubünden wie das Bündnerfleisch oder die Nusstorte. Jedes Bergdorf hat seine eigene Rezeptvariation. UNESCO-Anwärter für immaterielles Kulturerbe.',
+      beispiel: 'I Graubünde gits Capuns — viel besser als jede Pasta.',
+      beispiel_hd: 'In Graubünden gibt es Capuns — viel besser als jede Pasta.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-085',
+      ausdruck: 'Vacherin',
+      hochdeutsch: 'Vacherin Mont d\'Or (Schweizer Weichkäse)',
+      bedeutung: 'Der Vacherin Mont d\'Or ist eine Schweizer Weichkäse-Spezialität aus dem Waadtländer Jura — nur von Mitte August bis März produziert. Im Holzring aus Fichtenrinde gereift, hat er einen unverwechselbar harzigen Geschmack. Klassisch wird er erwärmt aus seiner Holzschachtel mit Brot oder Pellkartoffeln gegessen — „Boîte chaude". Eine winterliche Delikatesse, die in der Schweiz fast einen Kultstatus hat. Konkurrent vom französischen Vacherin du Haut-Doubs.',
+      beispiel: 'Im Winter en warme Vacherin mit Härdöpfel — Hochgenuss.',
+      beispiel_hd: 'Im Winter ein warmer Vacherin mit Pellkartoffeln — Hochgenuss.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-086',
+      ausdruck: 'Lauberhorn',
+      hochdeutsch: 'Lauberhorn (Skirennen in Wengen)',
+      bedeutung: 'Das Lauberhornrennen in Wengen (Berner Oberland) ist das längste Skirennen der Welt — über 4,5 km lang. Seit 1930 wird hier jedes Jahr im Januar gefahren. Die Abfahrtsstrecke ist legendär: das Hundschopf, der Brüggli-S, die Kernen-S. Geschwindigkeiten bis zu 160 km/h. Schweizer Sieger wie Bernhard Russi, Pirmin Zurbriggen oder Beat Feuz sind Nationalhelden. Das Lauberhornrennen zieht 50.000 Zuschauer an.',
+      beispiel: 'S\'Lauberhornrennen isch d\'Hochzyt vo de Schwiizer Ski-Fans.',
+      beispiel_hd: 'Das Lauberhornrennen ist die Hochzeit der Schweizer Ski-Fans.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-087',
+      ausdruck: 'Adelboden',
+      hochdeutsch: 'Adelboden (Skiort im Berner Oberland)',
+      bedeutung: 'Adelboden im Berner Oberland ist berühmt für das alljährliche Riesenslalom-Skirennen am Chuenisbärgli — eine der schwierigsten Pisten im Weltcup. Das Dorf liegt malerisch zwischen den Bergen, mit historischer Kirche und traditionellen Holzhäusern. Im Sommer Wandermekka, im Winter eines der schönsten Skigebiete der Schweiz. Marco Odermatt und früher Pirmin Zurbriggen kämpften hier um Weltcup-Punkte.',
+      beispiel: 'Z\'Adelboden gits jedes Jahr das härteste Riesetorlauf-Rennen.',
+      beispiel_hd: 'In Adelboden gibt es jedes Jahr das härteste Riesenslalom-Rennen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-088',
+      ausdruck: 'St. Moritz',
+      hochdeutsch: 'St. Moritz (Mondäner Skiort im Engadin)',
+      bedeutung: 'St. Moritz im Oberengadin ist DER mondäne Schweizer Skiort — zweimaliger Austragungsort der Olympischen Winterspiele (1928, 1948). Über 5000 Sonnenstunden pro Jahr, der charakteristische „Champagner-Klima" auf 1856 m. Die Luxushotels (Badrutt\'s Palace, Kulm Hotel) gehören zu den weltbesten. Wintersport, Cresta Run, Schneepolo, Skikjöring und Pferderennen auf dem zugefrorenen See. Treffpunkt der Reichen und Berühmten der Welt.',
+      beispiel: 'Z\'St. Moritz triffsch d\'Welt-Elite uf de Pischte.',
+      beispiel_hd: 'In St. Moritz triffst du die Welt-Elite auf der Piste.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-089',
+      ausdruck: 'Davos',
+      hochdeutsch: 'Davos (Bergstadt & WEF-Treffpunkt)',
+      bedeutung: 'Davos in Graubünden ist die höchstgelegene Stadt Europas (1560 m) — bekannt als Kurort gegen Tuberkulose im 19. Jahrhundert (Thomas Mann setzte hier seinen „Zauberberg" an) und heute weltweit als Treffpunkt des World Economic Forum (WEF). Jeden Januar treffen sich Staats- und Regierungschefs, CEOs und Aktivisten zum „Davos Forum". Auch beliebter Skiort und Heimat des HC Davos (Spengler Cup im Eishockey).',
+      beispiel: 'Im Januar isch z\'Davos s\'WEF — d\'ganz Welt isch do.',
+      beispiel_hd: 'Im Januar ist in Davos das WEF — die ganze Welt ist da.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-090',
+      ausdruck: 'Bürgenstock',
+      hochdeutsch: 'Bürgenstock (Luxus-Resort)',
+      bedeutung: 'Der Bürgenstock am Vierwaldstättersee ist ein berühmtes Luxus-Resort auf einem Felsplateau, 500 m über dem See. Audrey Hepburn lebte hier 14 Jahre. Sophia Loren ebenso. Heute betrieben von katarischen Investoren mit fünf Hotels und der höchsten Aussenlift Europas — der Hammetschwand-Lift bringt Besucher 152 m hoch auf den Felsen. Atemberaubender Blick auf den See und die Schweizer Alpen.',
+      beispiel: 'Vom Bürgenstock siehsch über de See bis zu de Berge.',
+      beispiel_hd: 'Vom Bürgenstock siehst du über den See bis zu den Bergen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-091',
+      ausdruck: 'Schwiizer Armee',
+      hochdeutsch: 'Schweizer Armee (Milizsystem)',
+      bedeutung: 'Die Schweizer Armee ist eine Milizarmee — jeder männliche Schweizer Bürger ist wehrpflichtig und absolviert die Rekrutenschule (RS) mit anschliessenden jährlichen Wiederholungskursen (WK). Das Sturmgewehr (Stgw 90) wird nach der RS mit nach Hause genommen — typisch Schweizer Bürgerwehr-Konzept. Der Militärdienst hat sozial-integrative Funktion. Frauen können freiwillig dienen. Die Armee ist im Volk fest verwurzelt.',
+      beispiel: 'I mues nächscht Wuche i de WK — drei Wuche Militär.',
+      beispiel_hd: 'Ich muss nächste Woche in den WK — drei Wochen Militär.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-092',
+      ausdruck: 'Reduit',
+      hochdeutsch: 'Reduit (Schweizer Alpenfestung)',
+      bedeutung: 'Das Réduit war die strategische Idee der Schweizer Armee im Zweiten Weltkrieg — sich bei einem Angriff in die Alpenfestungen zurückzuziehen und die Pässe zu verteidigen. General Henri Guisan verkündete diese Strategie 1940 am Rütli — der berühmte „Rütli-Rapport". Riesige Bunkeranlagen wurden im Gotthardmassiv gebaut. Heute sind manche Festungen Museen. Das Réduit-Konzept gilt als Mythos der Schweizer Eigenständigkeit.',
+      beispiel: 'D\'Réduit-Strategie het d\'Schwiiz vor de Nazis bewahrt.',
+      beispiel_hd: 'Die Réduit-Strategie hat die Schweiz vor den Nazis bewahrt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-093',
+      ausdruck: 'Johanna Spyri',
+      hochdeutsch: 'Johanna Spyri (Heidi-Autorin)',
+      bedeutung: 'Johanna Spyri (1827–1901) war eine Zürcher Schriftstellerin, die mit „Heidis Lehr- und Wanderjahre" (1880) und „Heidi kann brauchen, was es gelernt hat" (1881) weltberühmt wurde. Die Geschichte des Schweizer Waisenmädchens in den Bündner Bergen ist eines der meistübersetzten deutschsprachigen Kinderbücher. Spyri war Tochter eines Arztes und schrieb über 50 weitere Bücher, aber Heidi überschattet alles. Ihre Berge-und-Käse-Sehnsucht prägt das Schweizer Image weltweit.',
+      beispiel: 'D\'Johanna Spyri het d\'Schwiiz weltweit bekannt gmacht — mit Heidi.',
+      beispiel_hd: 'Die Johanna Spyri hat die Schweiz weltweit bekannt gemacht — mit Heidi.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-094',
+      ausdruck: 'Migros-Kind',
+      hochdeutsch: 'Migros-Kind (Schweizer Kindheits-Begriff)',
+      bedeutung: 'Ein „Migros-Kind" ist ein typisch Schweizer Kindheits-Konzept: ein Kind, das beim Migros-Einkauf brav neben dem Wagen geht, einen M-Budget-Schokoriegel als Belohnung bekommt und sich freut, wenn die Mutter den 10er-Stempel für die Migros-Punkte einlöst. Steht für eine typisch bürgerlich-bescheidene Schweizer Kindheit der 1980er und 90er Jahre. Inzwischen leicht ironisch verwendet.',
+      beispiel: 'Mer sind halt Migros-Chinder gsi — kei Coop, kei Aldi.',
+      beispiel_hd: 'Wir sind halt Migros-Kinder gewesen — kein Coop, kein Aldi.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-095',
+      ausdruck: 'Birchermüesli',
+      hochdeutsch: 'Birchermüesli (Original-Schweizer Müsli)',
+      bedeutung: 'Das Birchermüesli ist das Original-Müesli — erfunden vom Schweizer Arzt Maximilian Bircher-Benner um 1900 in seinem Sanatorium auf dem Zürichberg. Originalrezept: über Nacht eingeweichte Haferflocken, geriebener Apfel, Zitronensaft, Honig, Mandeln, Kondensmilch. Bircher-Benner glaubte an die heilende Kraft von Rohkost. Das Müesli verbreitete sich weltweit. Heute Frühstücks-Klassiker — Schweizer Beitrag zur Weltküche.',
+      beispiel: 'En Birchermüesli am Morge — gsund und feissig.',
+      beispiel_hd: 'Ein Birchermüesli am Morgen — gesund und sättigend.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-096',
+      ausdruck: 'Schweizer Taschenmesser',
+      hochdeutsch: 'Schweizer Offiziersmesser (Victorinox)',
+      bedeutung: 'Das Schweizer Taschenmesser (oder „Offiziersmesser") ist ein weltweit bekanntes Schweizer Produkt — vor allem die rote Victorinox-Variante mit dem weissen Kreuz. Erfunden 1891 von Karl Elsener für die Schweizer Armee. Das klassische Modell hat Messer, Schraubenzieher, Korkenzieher, Schere und vieles mehr in einem Werkzeug. Symbol für Schweizer Präzision, Vielseitigkeit und Qualität. Auf jedem Schweizer Bauernhof, in jedem Pfadfinder-Rucksack vorhanden.',
+      beispiel: 'Mit em Victorinox bisch für alli Notfäll gwappnet.',
+      beispiel_hd: 'Mit dem Victorinox bist du für alle Notfälle gewappnet.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-097',
+      ausdruck: 'Bobsleigh',
+      hochdeutsch: 'Bobsleigh (Schweizer Wintersport-Tradition)',
+      bedeutung: 'Der Bobsleigh-Sport hat in der Schweiz eine lange Tradition — die St. Moritz Olympia Bob Run ist die älteste Bobbahn der Welt (1903) und wird jedes Jahr neu aus Schnee und Eis gebaut. Auch Cresta Run für Skeleton ist legendär. Schweizer Bobsleigh-Athleten wie Beat Hefti haben mehrfach olympisches Gold geholt. Die St. Moritz-Bahn wird neben den professionellen Athleten auch von Touristen befahren — eine wilde Fahrt.',
+      beispiel: 'Z\'St. Moritz cha mer i ne richtige Bob iisitze.',
+      beispiel_hd: 'In St. Moritz kann man in einen echten Bob einsteigen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-098',
+      ausdruck: 'HC Davos',
+      hochdeutsch: 'HC Davos (Eishockey-Club)',
+      bedeutung: 'Der HC Davos ist einer der erfolgreichsten Schweizer Eishockeyclubs — 31-facher Schweizer Meister. Berühmt vor allem für den Spengler Cup, das älteste Eishockey-Turnier der Welt (seit 1923), das traditionell zwischen Weihnachten und Neujahr in Davos ausgetragen wird. Im Vaillant Arena spielen seit Jahrzehnten Schweizer und internationale Stars. Die Davoser Atmosphäre beim Spengler Cup ist legendär. Eishockey ist Schweizer Nationalsport Nummer zwei.',
+      beispiel: 'De Spengler Cup z\'Davos — Eishockey-Trübel pur.',
+      beispiel_hd: 'Der Spengler Cup in Davos — Eishockey-Trubel pur.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-099',
+      ausdruck: 'Stgw 90',
+      hochdeutsch: 'Sturmgewehr 90 (Schweizer Armeegewehr)',
+      bedeutung: 'Das Sturmgewehr 90 (Stgw 90) ist die Standardwaffe der Schweizer Armee seit 1990 — hergestellt von SIG Sauer. Jeder männliche Schweizer Soldat nimmt nach der Rekrutenschule sein Gewehr mit nach Hause und behält es bis zur Entlassung aus der Armeepflicht. Diese Tradition macht die Schweiz zu einem der waffenreichsten Länder Europas, ohne dass es zu hoher Waffenkriminalität kommt. Symbol für das Schweizer Vertrauen in die Bürger-Miliz.',
+      beispiel: 'Mis Stgw 90 staht im Schrank — wie bi jedem Schwiizer.',
+      beispiel_hd: 'Mein Stgw 90 steht im Schrank — wie bei jedem Schweizer.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-100',
+      ausdruck: 'Hörnli',
+      hochdeutsch: 'Hörnli (kleine gebogene Pasta)',
+      bedeutung: 'Hörnli sind eine schweizerische Pasta-Form — kleine, gebogene Röhren, ähnlich den italienischen Maccheroni. Sie sind die Grundlage zahlreicher Schweizer Gerichte, allen voran „Älplermagronen" (Hörnli mit Kartoffeln, Käse, Speck und Apfelmus). Auch „Hörnli mit Hackfleisch" ist ein Schweizer Familien-Klassiker. Der Name stammt von der hornartig gebogenen Form. Aus jedem Schweizer Vorratsschrank nicht wegzudenken.',
+      beispiel: 'Hörnli mit Ghackets und Apfelmues — mis Lieblingsgricht!',
+      beispiel_hd: 'Hörnli mit Hackfleisch und Apfelmus — mein Lieblingsgericht!',
+      kategorie: 'essen'
     }
   ]
 };

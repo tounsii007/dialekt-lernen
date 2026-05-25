@@ -646,6 +646,231 @@ export default {
       beispiel: 'Am Zentralfriedhof liegt halb Wien — und alle Habsburger.',
       beispiel_hd: 'Auf dem Zentralfriedhof liegt halb Wien — und alle Habsburger.',
       kategorie: 'orte'
+    },
+    {
+      id: 'w-076',
+      ausdruck: 'Karl Kraus',
+      hochdeutsch: 'Karl Kraus (Wiener Satiriker und Kritiker)',
+      bedeutung: 'Karl Kraus (1874–1936) war Wiens berühmtester Sprachkritiker und Satiriker — Herausgeber der legendären Zeitschrift „Die Fackel", die er fast allein verfasste. Sein Werk „Die letzten Tage der Menschheit" über den Ersten Weltkrieg gilt als Meisterwerk des Anti-Kriegs-Theaters. Kraus war gefürchtet für seine scharfe Zunge und attackierte Journalisten, Politiker und die Wiener Gesellschaft mit präziser Wortgewalt. Inkarnation des kritischen Wiener Geistes.',
+      beispiel: 'Karl Kraus hot d\'Wiener Presse erbarmungslos zerlegt.',
+      beispiel_hd: 'Karl Kraus hat die Wiener Presse erbarmungslos zerlegt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-077',
+      ausdruck: 'Hundertwasser',
+      hochdeutsch: 'Friedensreich Hundertwasser (Künstler)',
+      bedeutung: 'Friedensreich Hundertwasser (1928–2000) war einer der bekanntesten österreichischen Künstler des 20. Jahrhunderts. Sein bunter, organischer Stil mit gewundenen Linien, leuchtenden Farben und Spiralen ist unverwechselbar. In Wien hat er das berühmte Hundertwasserhaus (Wohnbau) und das KunstHausWien geschaffen. Hundertwasser war auch ökologischer Vordenker und Vorkämpfer für die „Baummiete" (Bäume statt Mieter). Sein Grab liegt unter einem Tulpenbaum in Neuseeland.',
+      beispiel: 'S\'Hundertwasserhaus is\' a Touristenmagnet — krumm und bunt.',
+      beispiel_hd: 'Das Hundertwasserhaus ist ein Touristenmagnet — krumm und bunt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-078',
+      ausdruck: 'Klimt',
+      hochdeutsch: 'Gustav Klimt (Jugendstil-Maler)',
+      bedeutung: 'Gustav Klimt (1862–1918) ist der berühmteste Maler des Wiener Jugendstils — Mitbegründer der Wiener Secession. Seine goldverzierten Gemälde wie „Der Kuss" (1908, Belvedere) und das „Bildnis Adele Bloch-Bauer I" sind Ikonen. Klimt malte sinnliche Frauenporträts und mythologische Szenen mit Goldblatt und exotischen Mustern. Die Geschichte seiner geraubten Bilder (Adele) wurde in „Frau in Gold" verfilmt. Wiener Jahrhundertwende pur.',
+      beispiel: 'Der Kuss vom Klimt im Belvedere — des is Wien.',
+      beispiel_hd: 'Der Kuss von Klimt im Belvedere — das ist Wien.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-079',
+      ausdruck: 'Egon Schiele',
+      hochdeutsch: 'Egon Schiele (Expressionist)',
+      bedeutung: 'Egon Schiele (1890–1918) war Klimts genialer Schüler und einer der wichtigsten Expressionisten. Seine ekstatischen, oft nackten Selbstporträts und seine ausgemergelten, sinnlichen Frauenfiguren brachen mit allen Konventionen. Schiele starb mit nur 28 Jahren an der Spanischen Grippe — wenige Tage nach seiner schwangeren Frau Edith. Sein Werk im Leopold Museum (im MuseumsQuartier) zieht jährlich Hunderttausende an. Wiener Avantgarde der Moderne.',
+      beispiel: 'Im Leopold-Museum siehst die schönsten Schieles.',
+      beispiel_hd: 'Im Leopold-Museum siehst du die schönsten Schieles.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-080',
+      ausdruck: 'Naschmarkt',
+      hochdeutsch: 'Wiener Naschmarkt',
+      bedeutung: 'Der Naschmarkt zwischen dem 4. und 6. Wiener Bezirk ist der bekannteste Markt Wiens — ein 1,5 km langer Marktstrang mit Obst, Gemüse, Käse, Fischen, Gewürzen und zahllosen Imbissen. Multikulturell mit türkischen, asiatischen und nahöstlichen Ständen. Am Samstag findet hier auch der berühmte Flohmarkt statt. Lebendiger Treffpunkt für Wiener und Touristen. Otto Wagner gestaltete die anliegenden Häuser im Jugendstil.',
+      beispiel: 'Am Samstag is\' der Flohmarkt am Naschmarkt — a Abenteuer.',
+      beispiel_hd: 'Am Samstag ist der Flohmarkt am Naschmarkt — ein Abenteuer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-081',
+      ausdruck: 'Donauturm',
+      hochdeutsch: 'Wiener Donauturm',
+      bedeutung: 'Der Donauturm im 22. Bezirk Wiens ist mit 252 Metern das höchste Bauwerk Österreichs — erbaut 1964 für die Wiener Internationale Gartenschau. Auf 150 Meter Höhe gibt es ein Drehrestaurant, das in 39 oder 26 Minuten eine ganze Runde dreht — bei klarem Wetter sieht man bis nach Bratislava. Beliebter Aussichtspunkt mit Bungee-Jumping vom Turm für Mutige. Symbol der modernen Donaustadt-Skyline.',
+      beispiel: 'Vom Donauturm hast a Wahnsinns Aussicht über Wien.',
+      beispiel_hd: 'Vom Donauturm hast du eine Wahnsinns-Aussicht über Wien.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-082',
+      ausdruck: 'Albertina',
+      hochdeutsch: 'Albertina (Wiener Kunstmuseum)',
+      bedeutung: 'Die Albertina am Albertinaplatz im 1. Bezirk ist eines der bedeutendsten Kunstmuseen Wiens — bekannt für eine der größten Grafiksammlungen der Welt (1,5 Mio. Werke). Sie zeigt Werke von Dürer (der berühmte „Feldhase"), Rubens, Monet, Klimt, Picasso und Andy Warhol. Im prächtigen Palais Habsburg-Lothringen untergebracht. Die Albertina-Schau wechselt regelmäßig mit großen Sonderausstellungen.',
+      beispiel: 'In der Albertina hängt der Dürer-Feldhase — Pflicht!',
+      beispiel_hd: 'In der Albertina hängt der Dürer-Feldhase — Pflicht!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-083',
+      ausdruck: 'Belvedere',
+      hochdeutsch: 'Schloss Belvedere',
+      bedeutung: 'Das Schloss Belvedere im 3. Wiener Bezirk ist ein barockes Doppelschloss (Oberes und Unteres Belvedere), 1714–1723 für Prinz Eugen von Savoyen erbaut. Heute zeigt das Obere Belvedere Klimts „Der Kuss" und österreichische Malerei. Im Marmorsaal des Oberen Belvedere wurde 1955 der Staatsvertrag unterzeichnet, der Österreichs Unabhängigkeit besiegelte. Eine der schönsten Barockanlagen Europas mit weitem Garten.',
+      beispiel: 'Im Belvedere is\' der berühmte Kuss vom Klimt z\'sehen.',
+      beispiel_hd: 'Im Belvedere ist der berühmte Kuss von Klimt zu sehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-084',
+      ausdruck: 'Spanische Hofreitschule',
+      hochdeutsch: 'Spanische Hofreitschule (Wiener Tradition)',
+      bedeutung: 'Die Spanische Hofreitschule in der Wiener Hofburg ist die älteste und wohl berühmteste klassische Reitschule der Welt — seit über 450 Jahren werden hier Lipizzaner-Hengste in der „Hohen Schule" der klassischen Dressur trainiert. Die Aufführungen in der barocken Winterreitschule mit Mozart-Klängen sind ein einzigartiges Erlebnis. UNESCO-Kulturerbe. Die Lipizzaner werden im Gestüt Piber in der Steiermark gezogen.',
+      beispiel: 'D\'Lipizzaner in der Hofreitschule tanzen wia in der Oper.',
+      beispiel_hd: 'Die Lipizzaner in der Hofreitschule tanzen wie in der Oper.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-085',
+      ausdruck: 'Wiener Sängerknaben',
+      hochdeutsch: 'Wiener Sängerknaben (Knabenchor)',
+      bedeutung: 'Die Wiener Sängerknaben sind einer der berühmtesten Knabenchöre der Welt — gegründet 1498 von Kaiser Maximilian I. Über 500 Jahre Tradition. Heute besteht der Chor aus vier Chorgruppen mit insgesamt 100 Buben (9 bis 14 Jahre). Sie touren weltweit, treten sonntags in der Wiener Hofburgkapelle auf und sind musikalische Botschafter Österreichs. Joseph Haydn und Franz Schubert sangen einst als Sängerknaben.',
+      beispiel: 'D\'Wiener Sängerknaben treten am Sonntag in der Hofkapelln auf.',
+      beispiel_hd: 'Die Wiener Sängerknaben treten am Sonntag in der Hofkapelle auf.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-086',
+      ausdruck: 'Apfelstrudel',
+      hochdeutsch: 'Wiener Apfelstrudel',
+      bedeutung: 'Der Wiener Apfelstrudel ist die wohl bekannteste österreichische Mehlspeise — ein hauchdünner, gezogener Strudelteig gefüllt mit geriebenen Äpfeln, Rosinen, Zimt und gerösteten Semmelbröseln. Echte Strudelmeister können den Teig so dünn ziehen, dass man eine Zeitung durchlesen kann. Wird warm mit Vanillesauce oder Schlagobers serviert. In jedem Wiener Kaffeehaus auf der Karte — der Maßstab für gute Konditorei.',
+      beispiel: 'A frischer Apfelstrudel mit Schlagobers — Himmel auf Erden!',
+      beispiel_hd: 'Ein frischer Apfelstrudel mit Schlagsahne — Himmel auf Erden!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-087',
+      ausdruck: 'Vanillekipferl',
+      hochdeutsch: 'Vanillekipferl (Weihnachtsgebäck)',
+      bedeutung: 'Vanillekipferl sind das berühmteste Wiener Weihnachtsgebäck — halbmondförmige Plätzchen aus Mürbeteig mit Mandel oder Haselnuss, in Vanille-Puderzucker gewälzt. Sie sollen an die türkische Niederlage vor Wien 1683 erinnern (die Halbmondform). Jede Wiener Familie hat ein eigenes Rezept, das streng gehütet wird. In der Adventszeit duftet ganz Wien nach Vanille — Vanillekipferl gehören in jede Keksdose.',
+      beispiel: 'Ohne Vanillekipferl is\' kein wienerisches Christkindl.',
+      beispiel_hd: 'Ohne Vanillekipferl ist kein wienerisches Weihnachten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-088',
+      ausdruck: 'Topfen',
+      hochdeutsch: 'Topfen (Quark österreichisch)',
+      bedeutung: 'Im Wienerischen heißt der Quark „Topfen" — ein zentrales Element der österreichischen Mehlspeisen-Kultur. Topfenstrudel, Topfenpalatschinken, Topfenknödel, Topfenkrapferl, Topfentorte — die Verwendungen sind endlos. Der Wiener Topfen ist meist trockener und kräftiger im Geschmack als deutscher Quark. Wer in Wien „Quark" sagt, outet sich sofort als Nicht-Wiener.',
+      beispiel: 'A Topfenstrudl mit Vanillesoß — die schönste Mehlspeis.',
+      beispiel_hd: 'Ein Topfenstrudel mit Vanillesauce — die schönste Mehlspeise.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-089',
+      ausdruck: 'Marillenknödel',
+      hochdeutsch: 'Marillenknödel (Aprikosenknödel)',
+      bedeutung: 'Marillenknödel sind eine wienerische Spezialität — eine ganze Marille (Aprikose) wird mit Zucker in einen Knödel aus Topfen- oder Kartoffelteig eingehüllt, gekocht und in gerösteten Bröseln gewälzt. Wird mit Staubzucker bestäubt serviert. Eine Hauptmahlzeit, kein Dessert — Wiener essen gerne Süßes als Mittag- oder Abendessen. Die Marillenknödel-Saison ist Sommer, wenn die Wachauer Marillen reif sind.',
+      beispiel: 'Im Sommer Marillenknödel mit Wachauer Marillen — Genuss pur!',
+      beispiel_hd: 'Im Sommer Marillenknödel mit Wachauer Aprikosen — Genuss pur!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-090',
+      ausdruck: 'Zwetschgenröster',
+      hochdeutsch: 'Zwetschgenröster (Pflaumenkompott)',
+      bedeutung: 'Der Zwetschgenröster ist ein wienerisches Pflaumenkompott — Zwetschken (Pflaumen) werden mit Zucker, Zimt und manchmal Rotwein eingekocht, bis sie eine sirupartige Konsistenz haben. Klassische Beilage zum Kaiserschmarrn, zu Topfenknödeln und Palatschinken. Im Herbst, wenn die Zwetschgen reif sind, wird in vielen Wiener Haushalten Zwetschgenröster auf Vorrat eingekocht und in Gläsern für den Winter gelagert.',
+      beispiel: 'Kaiserschmarrn ohne Zwetschgenröster geht gar nicht!',
+      beispiel_hd: 'Kaiserschmarrn ohne Zwetschgenröster geht gar nicht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-091',
+      ausdruck: 'Donaukanal',
+      hochdeutsch: 'Wiener Donaukanal',
+      bedeutung: 'Der Donaukanal ist ein Seitenarm der Donau, der mitten durch Wien fließt — vom Nußdorfer Wehr bis zur Donau bei Albern. Die Ufer wurden in den letzten Jahren zur beliebten Sommer-Hotspot-Zone: Strandbars wie das Tel Aviv Beach, Graffitiwände, Radwege und Open-Air-Konzerte. Die historische Otto-Wagner-Schleuse Nußdorf ist Jugendstil-Architektur. Der Donaukanal ist Wiens junges, urbanes Wohnzimmer im Freien.',
+      beispiel: 'Am Donaukanal sitzen im Sommer alle Wiener — drinks und chillen.',
+      beispiel_hd: 'Am Donaukanal sitzen im Sommer alle Wiener — Drinks und Chillen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-092',
+      ausdruck: 'Käsekrainer',
+      hochdeutsch: 'Käsekrainer (Wurst mit Käsestücken)',
+      bedeutung: 'Die Käsekrainer ist eine wienerische Wurstspezialität — eine Brühwurst aus Schweinefleisch mit eingelegten Käsestückchen. Beim Anschneiden quillt geschmolzener Käse heraus, was sie unter Wienern „Eitrige" oder „Schoaße" („Schwarze") nennen lässt — der berühmte „Würstelstand-Slang". Wird mit Senf, Kren (Meerrettich) und Semmel serviert. An jedem Wiener Würstelstand erhältlich. Ein Kultprodukt mit eigenem Vokabular.',
+      beispiel: 'A Eitrige mit Buckel und an 16er Blech — bitte!',
+      beispiel_hd: 'Eine Käsekrainer mit Semmel und eine Ottakringer-Bier-Dose — bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-093',
+      ausdruck: 'Wienerlied',
+      hochdeutsch: 'Wienerlied (Musikgattung)',
+      bedeutung: 'Das Wienerlied ist eine eigenständige Musikgattung — meist im Walzertakt, mit Wiener Dialekttexten, oft mit der Schrammelmusik-Besetzung (Zwei Geigen, Akkordeon, Kontragitarre). Themen sind das Wiener Leben, der Heurige, der Tod, die Liebe und der Schmäh — immer mit einer Mischung aus Melancholie und Lebensfreude. Berühmte Interpreten: Hermann Leopoldi, Karl Hodina, Heinz Holliger, Wolfgang Ambros, Roland Neuwirth. Wiener Volkskunst.',
+      beispiel: 'Beim Heurigen wird a Wienerlied gsungen — herzzerreißend.',
+      beispiel_hd: 'Beim Heurigen wird ein Wienerlied gesungen — herzzerreißend.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-094',
+      ausdruck: 'Bosna',
+      hochdeutsch: 'Bosna (Wurst-Spezialität)',
+      bedeutung: 'Die Bosna ist eine Wiener Würstel-Spezialität, ursprünglich aus Salzburg, aber in Wien sehr beliebt: zwei kleine Bratwürste in einer langen weißen Semmel mit Zwiebeln, Senf, Currypulver und manchmal Ketchup. Mit reichlich Pfeffer und scharfer Soße. Ein Mitternachts-Snack nach langen Wirtshausabenden. Der Name „Bosna" kommt vermutlich aus der bosnischen Cevapcici-Tradition. Schnellgenuss mit Charakter.',
+      beispiel: 'Auf\'m Nachhauseweg no a Bosna vom Würstelstand!',
+      beispiel_hd: 'Auf dem Nachhauseweg noch eine Bosna vom Würstelstand!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-095',
+      ausdruck: 'Burenwurst',
+      hochdeutsch: 'Burenwurst (Wurst-Spezialität)',
+      bedeutung: 'Die Burenwurst ist eine traditionelle Wiener Wurstspezialität — eine grobe Brühwurst aus Schweinefleisch und Speck, geräuchert und gebrüht. Klassiker am Wiener Würstelstand: Burenwurst mit Senf, Kren (Meerrettich) und Semmel. Die Wurst wird oft heiß in heißem Wasser oder Brühe vorgewärmt serviert. Eine bodenständige, würzige Wurst — kein Schnickschnack, einfach gut. Der Name „Buren" hat nichts mit Südafrika zu tun.',
+      beispiel: 'A Burenwurst mit Süßem Senf — Wiener Hausmannskost.',
+      beispiel_hd: 'Eine Burenwurst mit süßem Senf — Wiener Hausmannskost.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-096',
+      ausdruck: 'Stephansdom',
+      hochdeutsch: 'Stephansdom (Wiener Wahrzeichen)',
+      bedeutung: 'Der Stephansdom — liebevoll „Steffl" genannt — ist Wiens wichtigstes Wahrzeichen und einer der bedeutendsten gotischen Bauten Mitteleuropas. Der 137 m hohe Südturm dominiert die Wiener Skyline. Im Krieg 1945 schwer beschädigt — das Dach mit den bunten Ziegelmustern brannte aus. Wiederaufgebaut durch alle Bundesländer. Mozart heiratete hier, Beethoven hörte hier Glocken. Inmitten des Touristen-Trubels am Stephansplatz.',
+      beispiel: 'Der Steffl is\' der Mittelpunkt von Wien — von do aus geht alles.',
+      beispiel_hd: 'Der Stephansdom ist der Mittelpunkt von Wien — von dort aus geht alles.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-097',
+      ausdruck: 'Cafetier',
+      hochdeutsch: 'Wiener Kaffeehaus-Wirt',
+      bedeutung: 'Der „Cafetier" (französisch: Kaffeehausbesitzer) ist eine eigene Figur in der Wiener Kultur — Wirt, Psychologe, Sittenwächter und Familienoberhaupt in einem. Die Cafetiers traditioneller Wiener Kaffeehäuser wie das Hawelka, das Central oder das Sperl wurden selbst zu Legenden. Sie kannten ihre Gäste, wussten alles über das Wiener Geschehen und prägten die Atmosphäre. Heute eine fast aussterbende Spezies.',
+      beispiel: 'Der oide Cafetier kennt jedn Gast beim Namen seit 30 Jahren.',
+      beispiel_hd: 'Der alte Cafetier kennt jeden Gast beim Namen seit 30 Jahren.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-098',
+      ausdruck: 'Otto Wagner',
+      hochdeutsch: 'Otto Wagner (Jugendstil-Architekt)',
+      bedeutung: 'Otto Wagner (1841–1918) war Wiens wichtigster Jugendstil-Architekt — Schöpfer der Wiener Stadtbahn (heute U4 und U6 Stationen), der Postsparkasse, der Kirche am Steinhof und der Majolika-Häuser. Sein Stil verband klassische Eleganz mit moderner Funktion und Ornament. Wagner war Lehrer einer ganzen Architekten-Generation (Joseph Maria Olbrich, Adolf Loos studierten bei ihm). Sein Werk prägt das moderne Wien.',
+      beispiel: 'D\'Postsparkasse vom Otto Wagner is\' Architektur-Geschichte.',
+      beispiel_hd: 'Die Postsparkasse von Otto Wagner ist Architektur-Geschichte.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-099',
+      ausdruck: 'Adolf Loos',
+      hochdeutsch: 'Adolf Loos (Architekt, „Ornament und Verbrechen")',
+      bedeutung: 'Adolf Loos (1870–1933) war einer der einflussreichsten Wiener Architekten und Pioniere der modernen Architektur. Sein berühmter Essay „Ornament und Verbrechen" (1908) verdammte Verzierungen als Rückschritt — eine revolutionäre These. Seine Bauten wie das Looshaus am Michaelerplatz (das Kaiser Franz Joseph als „Haus ohne Augenbrauen" hasste) und die American Bar sind Meilensteine der Architekturgeschichte. Wiener Moderne pur.',
+      beispiel: 'S\'Looshaus am Michaelerplatz hat den Kaiser g\'ärgert.',
+      beispiel_hd: 'Das Looshaus am Michaelerplatz hat den Kaiser geärgert.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-100',
+      ausdruck: 'Riesenrad',
+      hochdeutsch: 'Wiener Riesenrad',
+      bedeutung: 'Das Wiener Riesenrad im Prater ist Wiens Wahrzeichen schlechthin — erbaut 1897 zum 50. Thronjubiläum von Kaiser Franz Joseph I. von Walter Bassett. Mit 64,75 m Höhe einst eines der größten Riesenräder der Welt — heute Touristenmagnet und Filmkulisse. Berühmt durch den Orson-Welles-Film „Der dritte Mann" (1949). Eine Fahrt dauert 12 Minuten und bietet einen 360°-Blick über Wien — Pflichtprogramm bei jedem Wien-Besuch.',
+      beispiel: 'A Fahrt mit\'m Riesenrad bei Sunnenuntergang — magisch!',
+      beispiel_hd: 'Eine Fahrt mit dem Riesenrad bei Sonnenuntergang — magisch!',
+      kategorie: 'orte'
     }
   ]
 };

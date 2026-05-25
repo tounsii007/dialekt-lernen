@@ -628,6 +628,231 @@ export default {
       beispiel: 'De Oma is hütt en bisschen tüdelig — aber dat is nich slim.',
       beispiel_hd: 'Die Oma ist heute ein bisschen verwirrt — aber das ist nicht schlimm.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-076',
+      ausdruck: 'Borkum',
+      hochdeutsch: 'Borkum (größte Ostfriesische Insel)',
+      bedeutung: 'Borkum ist mit 31 km² die größte der sieben Ostfriesischen Inseln. Hochseeklima durch die Nordsee-Lage macht sie zum Heilbad — die Reizklima-Therapie hilft bei Atemwegserkrankungen. Die Insel ist autofrei (nur Anwohner-PKWs zugelassen), und die Inselbahn vom Hafen ins Dorf gehört zur Tradition. Sonnenuntergänge am Strand sind legendär.',
+      beispiel: 'Op Borkum is de Luft so frisch, dor word man as nieboorn.',
+      beispiel_hd: 'Auf Borkum ist die Luft so frisch, da wird man wie neugeboren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-077',
+      ausdruck: 'Norderney',
+      hochdeutsch: 'Norderney (Ostfriesische Insel)',
+      bedeutung: 'Norderney ist das zweitgrößte Eiland Ostfrieslands und Deutschlands ältestes Seebad (seit 1797). Die mondäne Insel war im 19. Jahrhundert Sommerresidenz des hannoverschen Königshauses. Heinrich Heine, Theodor Fontane und Otto von Bismarck waren hier zur Kur. Heute Mischung aus Tradition und modernem Strandurlaub.',
+      beispiel: 'Op Norderney hett al de Kaiser Sommerfrische maakt.',
+      beispiel_hd: 'Auf Norderney hat schon der Kaiser Sommerfrische gemacht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-078',
+      ausdruck: 'Spiekeroog',
+      hochdeutsch: 'Spiekeroog (autofreie Insel)',
+      bedeutung: 'Spiekeroog ist eine der kleinsten Ostfriesischen Inseln und komplett autofrei — kein einziges Privatauto. Kutschen und Fahrräder beherrschen das Bild. Die historische Inselkirche von 1696 mit Schiffsmodellen unter der Decke ist berühmt. Spiekeroog gilt als „Perle der Nordsee" und ist UNESCO-Weltnaturerbe-Bestandteil.',
+      beispiel: 'Op Spiekeroog gifft dat keen Autos — bloots Peer un Roder.',
+      beispiel_hd: 'Auf Spiekeroog gibt es keine Autos — bloß Pferde und Räder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-079',
+      ausdruck: 'Helgoland',
+      hochdeutsch: 'Helgoland (Hochseeinsel)',
+      bedeutung: 'Helgoland ist Deutschlands einzige Hochseeinsel — 70 km vor der Küste, rote Sandsteinfelsen, einzigartige Flora und Fauna. Bis 1890 britisch, dann gegen Sansibar getauscht. Im Zweiten Weltkrieg fast komplett zerstört. Heute zollfrei: Einkaufsparadies für Touristen. Die Lange Anna (Felsnadel) ist Wahrzeichen, Trottellummen und Basstölpel brüten auf den Klippen.',
+      beispiel: 'Op Helgoland kannst du tollfree Schnaps un Tabak köpen.',
+      beispiel_hd: 'Auf Helgoland kannst du zollfrei Schnaps und Tabak kaufen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-080',
+      ausdruck: 'Husum',
+      hochdeutsch: 'Husum (graue Stadt am Meer)',
+      bedeutung: 'Husum an der Nordseeküste ist die „graue Stadt am Meer", wie Theodor Storm sie nannte. 23.000 Einwohner, Hafenstadt mit Tradition. Berühmt: die Krokuswiese im Schlosspark mit 4 Millionen Krokussen im Frühling. Storm-Geburtshaus heute Museum. Husum war Hauptort Nordfrieslands und ist Tor zu den Halligen.',
+      beispiel: 'In Husum is jümmers en lütt Wind un en groot Geschicht.',
+      beispiel_hd: 'In Husum ist immer ein leichter Wind und eine große Geschichte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-081',
+      ausdruck: 'Kiel',
+      hochdeutsch: 'Kiel (Landeshauptstadt Schleswig-Holstein)',
+      bedeutung: 'Kiel ist die Landeshauptstadt Schleswig-Holsteins, Marinestützpunkt und Universitätsstadt. 250.000 Einwohner. Die Kieler Woche im Juni ist eine der größten Segelveranstaltungen der Welt — über 3 Millionen Besucher. Der Kanal (Nord-Ostsee-Kanal) endet hier — der meistbefahrene künstliche Wasserweg der Welt.',
+      beispiel: 'To Kieler Woch koomt Seglers ut de heele Welt.',
+      beispiel_hd: 'Zur Kieler Woche kommen Segler aus der ganzen Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-082',
+      ausdruck: 'Lübeck',
+      hochdeutsch: 'Lübeck (Königin der Hanse, UNESCO)',
+      bedeutung: 'Lübeck war jahrhundertelang die „Königin der Hanse" und mächtigste Stadt Norddeutschlands. UNESCO-Welterbe seit 1987. Berühmt: das Holstentor (auf alter 50-DM-Note), das Heilige-Geist-Hospital, die Backsteingotik der Sieben-Türme-Silhouette. Heimat Thomas Manns („Buddenbrooks") und Marzipan-Hauptstadt (Niederegger).',
+      beispiel: 'Lübeck — dor wess ik jümmers de Buddenbrooks lopen.',
+      beispiel_hd: 'Lübeck — da glaube ich immer die Buddenbrooks laufen zu sehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-083',
+      ausdruck: 'Rostock',
+      hochdeutsch: 'Rostock (Hansestadt an der Ostsee)',
+      bedeutung: 'Rostock ist die größte Stadt Mecklenburg-Vorpommerns und alte Hansestadt an der Ostsee. Heimat einer der ältesten Universitäten Nordeuropas (gegründet 1419). Die Hanse Sail im August ist das größte Traditionsschiffsfestival der Ostsee. Warnemünde, der Strand-Ortsteil mit seinem Leuchtturm, ist beliebtes Reiseziel.',
+      beispiel: 'In Rostock is de Hanse Sail dat groote Hööchpunkt.',
+      beispiel_hd: 'In Rostock ist die Hanse Sail das große Highlight.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-084',
+      ausdruck: 'Stralsund',
+      hochdeutsch: 'Stralsund (UNESCO-Hansestadt)',
+      bedeutung: 'Stralsund ist eine der besterhaltenen Backsteingotik-Städte Europas und seit 2002 UNESCO-Welterbe (zusammen mit Wismar). Die Altstadt mit Rathaus und Nikolaikirche ist mittelalterlich geprägt. Das Ozeaneum am Hafen ist eines der modernsten Aquarien Europas. Tor zur Insel Rügen.',
+      beispiel: 'Stralsund hett de schöönste Backsteingotik in\'n Norden.',
+      beispiel_hd: 'Stralsund hat die schönste Backsteingotik im Norden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-085',
+      ausdruck: 'Wismar',
+      hochdeutsch: 'Wismar (UNESCO-Hansestadt)',
+      bedeutung: 'Wismar an der Ostsee gehörte 200 Jahre zu Schweden und behielt deshalb eine eigene Identität. UNESCO-Welterbe seit 2002. Die Wassertorturm-Silhouette über dem Alten Hafen ist Postkartenmotiv. F.W. Murnaus „Nosferatu" wurde teilweise hier gedreht — die Stadt diente als Kulisse für die deutsche Filmgeschichte.',
+      beispiel: 'Wismar weer mol swedisch — un dat süht man noch hüüt.',
+      beispiel_hd: 'Wismar war einmal schwedisch — und das sieht man noch heute.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-086',
+      ausdruck: 'Cuxhaven',
+      hochdeutsch: 'Cuxhaven (Nordseebad an der Elbmündung)',
+      bedeutung: 'Cuxhaven liegt direkt an der Elbmündung in die Nordsee — strategisch wichtiger Hafen, größtes Nordseeheilbad Deutschlands. Die „Kugelbake" markiert offiziell die Grenze zwischen Elbe und Nordsee. Beliebtes Ausflugsziel der Hamburger. Wattwanderungen, Kuren, Fischfang prägen die Stadt.',
+      beispiel: 'Vun de Kugelbake in Cuxhaven hest du dat End vun de Elv.',
+      beispiel_hd: 'Von der Kugelbake in Cuxhaven hast du das Ende der Elbe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-087',
+      ausdruck: 'Bremerhaven',
+      hochdeutsch: 'Bremerhaven (Auswandererhafen)',
+      bedeutung: 'Bremerhaven war im 19. und frühen 20. Jahrhundert der wichtigste Auswandererhafen Europas — Millionen Deutsche reisten von hier nach Amerika. Das Deutsche Auswandererhaus dokumentiert diese Geschichte. Heute größter Autoumschlaghafen Europas. Klimahaus und Deutsches Schifffahrtsmuseum sind weitere Attraktionen.',
+      beispiel: 'Vun Bremerhaven sünd Millionen no Amerika utwannerd.',
+      beispiel_hd: 'Von Bremerhaven sind Millionen nach Amerika ausgewandert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-088',
+      ausdruck: 'Otto Waalkes',
+      hochdeutsch: 'Otto Waalkes (ostfriesischer Comedian)',
+      bedeutung: 'Otto Waalkes (geb. 1948 in Emden) ist einer der erfolgreichsten deutschen Komiker. Mit seinen „Ottifanten" und den frühen Comedy-Filmen prägte er ab den 1970ern den Humor einer Generation. „Otto — Der Film" (1985) war der erfolgreichste deutsche Film aller Zeiten zur damaligen Zeit. Ostfriesischer Akzent und absurder Humor sind sein Markenzeichen.',
+      beispiel: 'Otto Waalkes hett de Oostfreesn-Witze populär maakt.',
+      beispiel_hd: 'Otto Waalkes hat die Ostfriesen-Witze populär gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-089',
+      ausdruck: 'Hans Albers',
+      hochdeutsch: 'Hans Albers (Hamburger Schauspieler & Sänger)',
+      bedeutung: 'Hans Albers (1891–1960) war Hamburgs berühmtester Schauspieler und Sänger — der „blonde Hans". Sein Lied „Auf der Reeperbahn nachts um halb eins" ist Hamburger Hymne. Filme wie „Münchhausen" und „Große Freiheit Nr. 7" machten ihn unsterblich. Sein Denkmal vor dem Hamburger Hauptbahnhof zeigt ihn mit Schiffermütze.',
+      beispiel: 'Hans Albers — dat is de Stimm vun Hamborg.',
+      beispiel_hd: 'Hans Albers — das ist die Stimme von Hamburg.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-090',
+      ausdruck: 'Knut',
+      hochdeutsch: 'Knut (Eisbär des Berliner Zoos)',
+      bedeutung: 'Knut (2006–2011) war der weltberühmte Eisbär des Berliner Zoos, der von einem Tierpfleger aufgezogen wurde, nachdem ihn seine Mutter verstoßen hatte. Sein Name ist ein klassischer norddeutscher Wikinger-Name und wird bis heute in Schleswig-Holstein häufig vergeben. Knuts Geschichte rührte die Welt — er starb plötzlich mit nur vier Jahren.',
+      beispiel: 'De Iesbeer Knut har de heele Welt in\'n Bann.',
+      beispiel_hd: 'Der Eisbär Knut hatte die ganze Welt in seinem Bann.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-091',
+      ausdruck: 'Buttermilch',
+      hochdeutsch: 'Buttermilch (norddeutsches Getränk)',
+      bedeutung: 'Buttermilch ist ein traditionelles norddeutsches Getränk — leicht säuerlich, fettarm, erfrischend. Sie entsteht beim Buttern als Nebenprodukt. Auf dem Land gehört Buttermilch zum Frühstück oder zur Vesper. „Saure Buttermilch" wird oft mit Zucker und Schwarzbrot kombiniert. Lange ein Arme-Leute-Getränk, heute Reformkost.',
+      beispiel: 'En Glaas Buddermelk to\'n Eten — dat is gesund.',
+      beispiel_hd: 'Ein Glas Buttermilch zum Essen — das ist gesund.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-092',
+      ausdruck: 'Friesenrose',
+      hochdeutsch: 'Friesenrose (typische Heckenrose)',
+      bedeutung: 'Die Friesenrose (Rosa rugosa) ist eine wilde Heckenrose, die an den norddeutschen Küsten allgegenwärtig wächst — von Sylt bis Rügen. Die rosa Blüten und dicken roten Hagebutten prägen die Dünenlandschaft. Aus den Hagebutten wird Marmelade gekocht, der Tee gilt als Erkältungsmittel. Symbol für die karge Schönheit des Nordens.',
+      beispiel: 'De Friesenrosen blöht an alle Düünen vun de Nordsee.',
+      beispiel_hd: 'Die Friesenrosen blühen an allen Dünen der Nordsee.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-093',
+      ausdruck: 'Backsteingotik',
+      hochdeutsch: 'Norddeutsche Backsteingotik (Architekturstil)',
+      bedeutung: 'Die Backsteingotik ist DER Architekturstil des hanseatischen Norddeutschlands — gotische Kathedralen, Rathäuser und Stadttore aus dem charakteristischen roten Ziegelstein, weil im Norden kein Naturstein verfügbar war. Lübeck, Stralsund, Wismar und Greifswald sind Beispielstädte. Holstentor und Marienkirche Lübeck sind Ikonen dieses 800 Jahre alten Stils.',
+      beispiel: 'De Backsteingotik is dat Wohrteken vun de Hanse.',
+      beispiel_hd: 'Die Backsteingotik ist das Wahrzeichen der Hanse.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-094',
+      ausdruck: 'Hanse-Kontor',
+      hochdeutsch: 'Hanse-Kontor (Handelsniederlassung)',
+      bedeutung: 'Die Hanse-Kontore waren befestigte Handelsniederlassungen der Hanse in fremden Ländern — Stalhof London, Tyske Bryggen Bergen, Peterhof Nowgorod. Hier lebten die hanseatischen Kaufleute oft jahrelang. Norddeutsche Hanseaten beherrschten so den nordeuropäischen Handel vom 12. bis ins 17. Jahrhundert. Begründung des hanseatischen Reichtums.',
+      beispiel: 'In de Hanse-Kontore is dat Geld no Hamborg un Lübeck flott.',
+      beispiel_hd: 'In den Hanse-Kontoren ist das Geld nach Hamburg und Lübeck geflossen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-095',
+      ausdruck: 'Schipper',
+      hochdeutsch: 'Schiffer / Kapitän',
+      bedeutung: 'Der „Schipper" ist im Plattdeutschen der Schiffer oder Kapitän eines kleineren Schiffs. „Schipperhose" und „Schipperjacke" sind die traditionelle Bekleidung. Bis ins 20. Jahrhundert war Schipper ein angesehener Beruf in den Hafenstädten. Heute eher selten — Containerschiffe brauchen weniger Schipper. Romantisch verklärtes Berufsbild.',
+      beispiel: 'Mien Grootvadder weer Schipper op de Elv.',
+      beispiel_hd: 'Mein Großvater war Schiffer auf der Elbe.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-096',
+      ausdruck: 'Sünn-up',
+      hochdeutsch: 'Sonnenaufgang',
+      bedeutung: '„Sünn-up" ist Plattdeutsch für Sonnenaufgang — ein poetisches Wort, das die Schönheit des Morgens an der Nordsee einfängt. Wenn die Sünn over de See up geiht, ist das Schauspiel unvergesslich. Fischer und Bauern stehen traditionell mit der Sünn-up auf, um die Arbeit zu beginnen. Die Sonnenaufgänge am Wattenmeer sind weltberühmt.',
+      beispiel: 'To Sünn-up an\'n Strand — schöner geiht\'t nich.',
+      beispiel_hd: 'Zum Sonnenaufgang am Strand — schöner geht es nicht.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-097',
+      ausdruck: 'Klönsnack',
+      hochdeutsch: 'Gemütliche Plauderei',
+      bedeutung: 'Der „Klönsnack" ist eine gemütliche, lockere Plauderei — länger und entspannter als ein Smalltalk, aber kürzer als ein tiefes Gespräch. Bei Tee und Keks am Küchentisch, am Gartenzaun oder beim Bäcker. Der Klönsnack ist ein wichtiger sozialer Kitt im Norden. „Sik to\'n Klönsnack tosamenholen" — sich zum Plaudern treffen.',
+      beispiel: 'Wi hebben us gistern to\'n Klönsnack bi Mudder droopen.',
+      beispiel_hd: 'Wir haben uns gestern zur Plauderei bei Mutter getroffen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-098',
+      ausdruck: 'Glückstadt',
+      hochdeutsch: 'Glückstadt (Heringsstadt an der Elbe)',
+      bedeutung: 'Glückstadt an der Elbe wurde 1617 vom dänischen König Christian IV. als Konkurrenz zu Hamburg gegründet — der Name war Programm. Heute kleine Stadt mit 11.000 Einwohnern, aber berühmt für die „Glückstädter Matjes" (eingelegte Heringe), die zu den besten Deutschlands zählen. Jährliches Matjes-Festival im Juni.',
+      beispiel: 'Glückstädter Matjes — de beste in Düütschland.',
+      beispiel_hd: 'Glückstädter Matjes — die besten in Deutschland.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-099',
+      ausdruck: 'Schnoor',
+      hochdeutsch: 'Schnoorviertel (Bremer Altstadt)',
+      bedeutung: 'Das Schnoor ist Bremens ältestes Viertel — ein verwinkeltes Gassengewirr aus dem 15./16. Jahrhundert. Der Name kommt von den Tauen („Schnüren"), die hier früher gefertigt wurden. Heute Touristenmagnet mit Galerien, kleinen Geschäften und Cafés. Eine der besterhaltenen mittelalterlichen Altstädte Norddeutschlands.',
+      beispiel: 'Dör dat Schnoor in Bremen löppt man as in en Märken.',
+      beispiel_hd: 'Durch das Schnoor in Bremen läuft man wie in einem Märchen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-100',
+      ausdruck: 'Buddelschiff',
+      hochdeutsch: 'Schiff in der Flasche',
+      bedeutung: 'Das Buddelschiff — ein Modellschiff in einer Glasflasche — ist eine norddeutsche Seemannskunst. Auf langen Seereisen bauten Matrosen kleine Schiffe und stellten sie in Flaschen, deren Hals viel zu eng erscheint. Die Masten werden flach eingeführt und nachher aufgerichtet — das Geheimnis des Buddelschiffbauers. Beliebte Souvenirs aus norddeutschen Hafenstädten.',
+      beispiel: 'En Buddelscheep op\'n Schosteen — typisch Seemannshuus.',
+      beispiel_hd: 'Ein Buddelschiff auf dem Schornstein — typisches Seemannshaus.',
+      kategorie: 'alltag'
     }
   ]
 };
