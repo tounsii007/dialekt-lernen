@@ -2053,6 +2053,276 @@ export default {
       beispiel: 'Der Berliner Senat hat schon wieder eine neue Verordnung erlassen.',
       beispiel_hd: 'Der Berliner Senat hat schon wieder eine neue Verordnung erlassen.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'b-231',
+      ausdruck: 'Prenzlberg',
+      hochdeutsch: 'Prenzlauer Berg (Berliner Kiez)',
+      bedeutung: 'Der „Prenzlberg" ist Berliner Kurzform für Prenzlauer Berg — ehemals DDR-Künstlerviertel, heute hippes Familienviertel mit Bio-Märkten, Cafés und Kinderwagen-Mafia. „Gentrifizierung" hat den Kiez verändert. Kollwitzplatz, Helmholtzplatz und Mauerpark als Treffpunkte. Berliner Schnauze trifft auf zugezogene Schwaben („Schwaben-Pack" als spöttische Bezeichnung). Symbol für Berlin-Wandel: vom rauen Künstlerkiez zum teuren Familienkiez.',
+      beispiel: 'Im Prenzlberg gibts mehr Bio-Märkte als Kneipen.',
+      beispiel_hd: 'Im Prenzlauer Berg gibt es mehr Bio-Märkte als Kneipen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-232',
+      ausdruck: 'Kreuzberg',
+      hochdeutsch: 'Kreuzberg (Berliner Bezirk)',
+      bedeutung: '„Kreuzberg" ist DER alternative Bezirk Berlins — multikulti, links, kreativ, Demo-Hochburg. Türkische Community, Hipster, Künstler, Punks — alles unter einem Dach. „SO 36" als Postleitzahlen-Kult-Bezirk. Oranienstraße, Bergmannstraße, Görlitzer Park („Görli") als Treffpunkte. 1. Mai-Demos legendär. Heute durch Gentrifizierung im Wandel. Symbol für Berlin-Underground und multikulturelle Identität. Kreuzberger sind stolz auf ihre Authentizität.',
+      beispiel: 'In Kreuzberg gibts den besten Döner Berlins.',
+      beispiel_hd: 'In Kreuzberg gibt es den besten Döner Berlins.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-233',
+      ausdruck: 'Friedrichshain',
+      hochdeutsch: 'Friedrichshain (Berliner Bezirk)',
+      bedeutung: '„Friedrichshain" — Ex-Ost-Berliner Bezirk, heute Techno-Hochburg mit Berghain, RAW-Gelände, Boxhagener Platz. Junge, alternative Szene. Frankfurter Tor und Karl-Marx-Allee als historische Achse. Friedrichshain-Kreuzberg sind seit 2001 ein gemeinsamer Bezirk. Symbol für Berlin-Ost-Identität und Underground-Kultur. „Friedrichshain forever" als Bekenntnis. Mit Kreuzberg große Rivalität: F-Hain gegen X-Berg.',
+      beispiel: 'Im Friedrichshain gehen wir aufs Berghain feiern.',
+      beispiel_hd: 'In Friedrichshain gehen wir aufs Berghain feiern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-234',
+      ausdruck: 'Berghain',
+      hochdeutsch: 'Berghain (Techno-Club)',
+      bedeutung: 'Das „Berghain" ist DER bekannteste Techno-Club der Welt — Friedrichshain, ehemaliges Heizkraftwerk. Sven Marquardt als legendärer Türsteher. „Berlin techno scene"-Synonym. Drei Tage durchgehend geöffnet (Freitag bis Montag). Bestens dokumentierter „strenger Tür-Style" — wer reinkommt ist unvorhersehbar. Symbol für Berliner Nachtleben und internationale Techno-Kultur. Touristen pilgern aus aller Welt — die meisten kommen nicht rein.',
+      beispiel: 'Ins Berghain reinzukommen ist wie ein Lotto-Gewinn.',
+      beispiel_hd: 'Ins Berghain reinzukommen ist wie ein Lotto-Gewinn.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-235',
+      ausdruck: 'Hauptstadt-Mafia',
+      hochdeutsch: 'Hauptstadt-Klüngel',
+      bedeutung: '„Hauptstadt-Mafia" ist berlinerische Bezeichnung für Berliner Politik-Klüngel — die Verflechtungen zwischen Politik, Lobbyismus und Verwaltung. Wer in Berlin Karriere machen will, muss „dazu gehören". Begriff drückt Skepsis gegenüber Hauptstadt-Establishment aus. „Berliner Filz" als Synonym. Berlin als politisch-kulturelles Zentrum hat eigene Insider-Strukturen. Symbol für Berliner Politik-Realität. Im Volksmund weit verbreitet.',
+      beispiel: 'Die Hauptstadt-Mafia macht alles unter sich aus.',
+      beispiel_hd: 'Der Hauptstadt-Klüngel macht alles unter sich aus.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-236',
+      ausdruck: 'Schwabe',
+      hochdeutsch: 'Schwabe (zugezogener Berliner)',
+      bedeutung: '„Schwabe" ist berlinerische Bezeichnung für jeden zugezogenen Berliner — egal aus welcher Region. Stereotyp: ordnungsliebend, sparsam, mit Lastenrad und Bio-Markt-Affinität. „Schwaben-Pack" als spöttische Sammelbezeichnung. Vor allem im Prenzlauer Berg verbreitet. Konflikt zwischen alteingesessenen Berlinern und Zugezogenen ist Berlin-Folklore. „Spätzle gegen Bulette" als kulturelle Auseinandersetzung. Wolfgang Thierse hatte einmal Trouble wegen Schwaben-Witzen.',
+      beispiel: 'Die Schwaben haben den ganzen Prenzlberg gentrifiziert.',
+      beispiel_hd: 'Die Schwaben haben den ganzen Prenzlauer Berg gentrifiziert.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-237',
+      ausdruck: 'Späti',
+      hochdeutsch: 'Spätkauf / Spätverkaufsstelle',
+      bedeutung: 'Der „Späti" ist Berliner Institution — Spätverkaufsstelle, die bis spät in die Nacht offen hat. „Späti um die Ecke" ist Berliner Alltag. Bier, Zigaretten, Bockwurst, Chips — alles, was nachts noch fehlt. Spätis sind oft Familienbetriebe mit Migrationshintergrund. Berliner Senats-Debatte über Sonntags-Öffnung von Spätis. Symbol für Berliner 24/7-Mentalität und Multi-Kulti. Im Vergleich zu anderen Bundesländern (Sonntagsruhe!) ein Privileg.',
+      beispiel: 'Hol mal noch zwei Bier vom Späti.',
+      beispiel_hd: 'Hol mal noch zwei Bier vom Spätkauf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-238',
+      ausdruck: 'BVG',
+      hochdeutsch: 'Berliner Verkehrsbetriebe',
+      bedeutung: 'Die „BVG" — Berliner Verkehrsbetriebe — sind das öffentliche Nahverkehrssystem Berlins: U-Bahn, S-Bahn, Tram, Bus. Berühmt für ihre selbstironischen Werbespots („Weil wir dich lieben"). „BVG-Pannen" sind tägliche Realität. „Igitte!" als Berliner-typische Reaktion auf BVG-Verspätungen. Aber: Berliner lieben ihre BVG trotzdem. Symbol für Berliner Stadtleben. BVG-Tarif-Zonen A, B, C — wer als Tourist drei Tickets kauft, ist verdächtig zugezogen.',
+      beispiel: 'Die BVG kommt heut wieder mal nicht.',
+      beispiel_hd: 'Die BVG kommt heute wieder mal nicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-239',
+      ausdruck: 'Zickenkrieg',
+      hochdeutsch: 'Streit unter Frauen',
+      bedeutung: '„Zickenkrieg" ist berlinerische Bezeichnung für Streit unter Frauen — meist um Männer, Mode oder Status. Frauenzeitschriften-Slang in Berlin geboren. Klingt derb-direkt, im Frauenfeminismus heute kritisiert. Wird mit Hand-Geste begleitet (Streit-Bewegung). Auch metaphorisch für andere Konflikte verwendet. Berliner Direktheit pur. In Sat.1-Frauen-Daily-Soaps als beliebtes Drehbuchelement. Symbol für berliner Pop-Kultur-Sprache.',
+      beispiel: 'Im Büro gabs heut wieder Zickenkrieg.',
+      beispiel_hd: 'Im Büro gab es heute wieder Streit unter Frauen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-240',
+      ausdruck: 'Wessi',
+      hochdeutsch: 'Westdeutscher',
+      bedeutung: '„Wessi" ist berlinerische (und ostdeutsche) Bezeichnung für Westdeutschen — seit der Wiedervereinigung 1990. Im Gegensatz zum „Ossi" (Ostdeutscher). Drückt Klischees aus: Wessi als arrogant, geldfixiert, Großspurig. „Wessi-Schnack" als Westdeutsch-Tradition. Heute schwächer geworden, aber im Berliner Alltag immer noch verwendet. Symbol für innerdeutsche Identitäts-Spannungen. Junge Berliner verstehen den Begriff oft nicht mehr.',
+      beispiel: 'Der neue Chef ist a typischer Wessi.',
+      beispiel_hd: 'Der neue Chef ist ein typischer Westdeutscher.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-241',
+      ausdruck: 'Ossi',
+      hochdeutsch: 'Ostdeutscher',
+      bedeutung: '„Ossi" ist berlinerische Bezeichnung für Ostdeutschen — seit der Wiedervereinigung. Im Gegensatz zum „Wessi". Klischees: Ossi als bodenständig, sparsam, DDR-nostalgisch („Ostalgie"). „Ossi-Schnauze" als spezifische Lebensart. Berliner Ost-Bezirke (Friedrichshain, Pankow, Marzahn) haben spezifische Ossi-Identität. Symbol für Ost-Identität und Selbstbewusstsein. Heute oft selbstironisch verwendet: „Ich bin halt Ossi!".',
+      beispiel: 'Mein Opa is\' a echter Ossi — DDR-Sozialisation.',
+      beispiel_hd: 'Mein Opa ist ein echter Ossi — DDR-Sozialisation.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-242',
+      ausdruck: 'Brandenburger Tor',
+      hochdeutsch: 'Brandenburger Tor (Wahrzeichen)',
+      bedeutung: 'Das „Brandenburger Tor" ist Berlins (und Deutschlands) bekanntestes Wahrzeichen — neoklassizistisch, 1788-1791 erbaut. Symbol der deutschen Teilung (1961-1989 stand Mauer davor), heute Symbol der Einheit. „Quadriga" mit Siegesgöttin auf dem Tor. Pariser Platz davor. Touristen-Magnet. Hinter dem Tor: Tiergarten, Reichstag, Brandenburger Tor — Berlins Politik-Achse. Jährliche Silvester-Feier mit hunderttausenden Menschen.',
+      beispiel: 'Zum Brandenburger Tor müssen alle Touristen.',
+      beispiel_hd: 'Zum Brandenburger Tor müssen alle Touristen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-243',
+      ausdruck: 'Reichstag',
+      hochdeutsch: 'Reichstag (Bundestag)',
+      bedeutung: 'Der „Reichstag" ist Sitz des Deutschen Bundestages — 1894 als Reichstagsgebäude eröffnet, 1933 brannte er. Berühmte Sir-Norman-Foster-Glaskuppel (1999) bietet Aussicht über Berlin. Touristen-Hotspot. „Reichstag besteigen" als Berlin-Programm. Berliner haben pragmatisches Verhältnis: einerseits stolz auf das Wahrzeichen, andererseits skeptisch wegen Politiker-Beziehungen. Christo verhüllte den Reichstag 1995 — Berliner Kult-Moment.',
+      beispiel: 'Wir gehen auf den Reichstag und schauen über Berlin.',
+      beispiel_hd: 'Wir gehen auf den Reichstag und schauen über Berlin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-244',
+      ausdruck: 'Berliner Bär',
+      hochdeutsch: 'Berliner Bär (Wappentier)',
+      bedeutung: 'Der „Berliner Bär" ist Wappentier Berlins — schwarz auf weißem Schild, rot-bewehrt. Seit dem 13. Jahrhundert verwendet. „Buddy Bears" — bunte Bärenskulpturen — sind Berlin-Tourist-Souvenir. „Goldener Bär" als Berlinale-Filmpreis. Berliner sind stolz auf ihren Bär — auch wenn er als Tier längst aus Berlin verschwunden ist. Symbol für Berliner Identität. Auf Flaggen, Wappen, Souvenirs allgegenwärtig.',
+      beispiel: 'Der Berliner Bär is\' auf jeder Hauptstadt-Postkarte.',
+      beispiel_hd: 'Der Berliner Bär ist auf jeder Hauptstadt-Postkarte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-245',
+      ausdruck: 'Berliner Schnauze',
+      hochdeutsch: 'Berliner Schnauze (direktes Reden)',
+      bedeutung: 'Die „Berliner Schnauze" ist Berliner Identitäts-Markenzeichen — direktes, oft derbes Reden mit hintergründigem Humor. „Berlin hat ne Schnauze, aber och n Herz". Berliner Schnauze-Klassiker: Helmut Schmidt war Berliner Stil, Edmund Stoiber nicht. Touristen erschrecken sich über die direkten Berliner. Symbol für berliner Charakter. Wird oft mit dem rheinischen Frohsinn und bayrischer Gemütlichkeit kontrastiert.',
+      beispiel: 'Mit Berliner Schnauze gesagt: Det jeht so nich!',
+      beispiel_hd: 'Mit Berliner Schnauze gesagt: Das geht so nicht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-246',
+      ausdruck: 'Detlef',
+      hochdeutsch: 'Detlef (typischer Berliner Name)',
+      bedeutung: '„Detlef" ist klassischer Berliner Männername — vor allem 1960er-Geburtsjahrgänge. Witze über „Detlef" gehören zu Berliner Humor: der nervige Nachbar, der stoische Handwerker, der trinkfeste Kollege. „Detlef Soost", „Detlef D! Soost" — Berliner Promis. Symbol für berliner Generations-Identität. Heute selten als Babyname, aber als Klischee-Figur lebendig. „Ach, Detlef!" als Ausruf der genervten Resignation.',
+      beispiel: 'Ach, Detlef hat schon wieder seinen Wagen abgestellt.',
+      beispiel_hd: 'Ach, Detlef hat schon wieder seinen Wagen abgestellt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-247',
+      ausdruck: 'Berolina',
+      hochdeutsch: 'Berolina (Personifikation Berlins)',
+      bedeutung: 'Die „Berolina" ist die mythische Personifikation Berlins — eine Frauenfigur mit Bärenwappen. Die 7,5m hohe Berolina-Statue stand 1895-1942 auf dem Alexanderplatz. Heute als Symbol in Wappen, Werbung, Touristikbezeichnungen verwendet. „Hotel Berolina" als klassischer Berlin-Name. Ähnlich der Bavaria in München. Symbol für Berliner Geschichte und Identität. Junge Berliner kennen den Begriff oft nicht mehr — eher Wissens-Item für Heimat-Fans.',
+      beispiel: 'D\'Berolina war früher auf\'m Alex der Berliner Symbol.',
+      beispiel_hd: 'Die Berolina war früher auf dem Alexanderplatz das Berliner Symbol.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-248',
+      ausdruck: 'Alex',
+      hochdeutsch: 'Alexanderplatz (Berliner Treffpunkt)',
+      bedeutung: 'Der „Alex" ist Berliner Kurzform für Alexanderplatz — DDR-Hauptplatz, heute Touristen-Hotspot mit Fernsehturm und Weltzeituhr. „Treffen wir uns am Alex" ist Standard-Verabredung. Architektonisch oft kritisiert (Plattenbauten), aber funktional als Verkehrsknoten. Christian Lindenberg sang über „Alexanderplatz". Symbol für Berlin-Ost-Geschichte und Touristen-Magnet. Der Alex ist abends meiden — voller Trinker und Drogentätigen.',
+      beispiel: 'Treffen wir uns um drei am Alex?',
+      beispiel_hd: 'Treffen wir uns um drei am Alexanderplatz?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-249',
+      ausdruck: 'Fernsehturm',
+      hochdeutsch: 'Berliner Fernsehturm',
+      bedeutung: 'Der „Fernsehturm" ist Berlins höchstes Bauwerk — 368m, am Alexanderplatz. 1969 von der DDR als Symbol der sozialistischen Stadt errichtet. Drehrestaurant in 207m Höhe, Aussichtsplattform in 203m. Touristen-Hotspot. „Papst-Rache" als Spitzname (das Glaskreuz reflektiert die Sonne — angeblich Vatikan-Botschaft an die atheistische DDR). Symbol für Berliner Skyline. Auch in der Werbung für Berlin omnipräsent.',
+      beispiel: 'Vom Fernsehturm siehst du ganz Berlin.',
+      beispiel_hd: 'Vom Fernsehturm siehst du ganz Berlin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-250',
+      ausdruck: 'Charlotte',
+      hochdeutsch: 'Charlottenburg (Berliner Bezirk)',
+      bedeutung: '„Charlotte" ist Berliner Kurzform für Charlottenburg — westlicher Bezirk, ehemaliges West-Berlin-Zentrum. Kurfürstendamm („Ku\'damm") als Einkaufsstraße, Schloss Charlottenburg, Berliner Operette. Bürgerliches Ambiente, etwas konservativer als Ost-Bezirke. „West-Berliner Provinz" als spöttische Bezeichnung. Charlottenburger sind etwas alteingesessen. Symbol für West-Berliner Identität. Heute durch Gentrifizierung wieder begehrt.',
+      beispiel: 'In Charlotte wohnen die Schickimickis.',
+      beispiel_hd: 'In Charlottenburg wohnen die Reichen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-251',
+      ausdruck: 'Tiergarten',
+      hochdeutsch: 'Tiergarten (Berliner Park)',
+      bedeutung: 'Der „Tiergarten" ist Berlins größter innerstädtischer Park — 210 Hektar, zwischen Brandenburger Tor und Schloss Charlottenburg. Siegessäule als Wahrzeichen im Zentrum. Sommer-Picknick-Wiese der Berliner. Demonstrationen am Großen Stern. Berliner Zoo am Rand. „Loveparade" zog hier 1989 erstmals durch (vor Verschiebung). Symbol für Berliner Grünflächen und Erholung in der Hauptstadt. Touristen genießen ihn neben den Wahrzeichen.',
+      beispiel: 'Im Tiergarten machen wir Picknick.',
+      beispiel_hd: 'Im Tiergarten machen wir Picknick.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-252',
+      ausdruck: 'Siegessäule',
+      hochdeutsch: 'Siegessäule (Berliner Wahrzeichen)',
+      bedeutung: 'Die „Siegessäule" ist Berliner Wahrzeichen — 67m hoch, im Tiergarten am Großen Stern. „Goldelse" (Goldene Else) als liebevoller Spitzname für die Goldfigur Viktoria. Erbaut 1873 zur Erinnerung an die preußischen Siege. Aussichtsplattform in 51m Höhe. „Christopher Street Day"-Endpunkt. Symbol für Berliner Geschichte. Aussicht wundervoll, aber 285 Stufen müssen erklommen werden.',
+      beispiel: 'Goldelse auf der Siegessäule winkt uns zu.',
+      beispiel_hd: 'Goldelse auf der Siegessäule winkt uns zu.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-253',
+      ausdruck: 'Berliner Mauer',
+      hochdeutsch: 'Berliner Mauer',
+      bedeutung: 'Die „Berliner Mauer" stand 1961-1989 — trennte West- und Ost-Berlin auf 155 km. 100+ Menschen wurden bei Fluchtversuchen erschossen. 9. November 1989: Mauerfall, Beginn der deutschen Wiedervereinigung. East Side Gallery (1,3 km Reststück) heute Touristen-Galerie. Mauer-Reste an verschiedenen Stellen erhalten. Symbol für Berliner Geschichte und deutsche Einheit. Ältere Berliner haben tief eingebrannte Erinnerungen — junge kennen Mauer nur aus Büchern.',
+      beispiel: 'D\'Mauer war jahrelang Berliner Realität.',
+      beispiel_hd: 'Die Mauer war jahrelang Berliner Realität.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-254',
+      ausdruck: 'East Side Gallery',
+      hochdeutsch: 'East Side Gallery (Mauerstück)',
+      bedeutung: 'Die „East Side Gallery" ist das längste erhaltene Stück der Berliner Mauer — 1,3 km in Friedrichshain. 118 Künstler bemalten die Mauer 1990 mit politischen Motiven. Berühmtester Kunstwerk: „Mein Gott, hilf mir, diese tödliche Liebe zu überleben" (Bruderkuss Honecker-Breschnew) von Dmitri Vrubel. Touristen-Hotspot. 2009 wegen Wohnungsbau-Plänen umstritten. Symbol für Berliner Mauer-Verarbeitung. Open-Air-Kunst der größten Art.',
+      beispiel: 'An der East Side Gallery treffen sich alle Berlin-Touristen.',
+      beispiel_hd: 'An der East Side Gallery treffen sich alle Berlin-Touristen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-255',
+      ausdruck: 'Checkpoint Charlie',
+      hochdeutsch: 'Checkpoint Charlie (Ex-Grenze)',
+      bedeutung: '„Checkpoint Charlie" war Hauptübergang zwischen Ost- und West-Berlin 1961-1990 — von US-Amerikanern bewacht. Heute Touristen-Hotspot mit Replik-Wachhütte und Schauspielern in Uniformen (umstritten). „You are now leaving the American sector" — Schild noch erhalten. Mauer-Museum daneben. Symbol für Kalten Krieg und Berliner Teilung. Heute Disneyfizierte Touristen-Falle, aber historisch bedeutsam.',
+      beispiel: 'Am Checkpoint Charlie machen wir Foto.',
+      beispiel_hd: 'Am Checkpoint Charlie machen wir Foto.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-256',
+      ausdruck: 'Volksbühne',
+      hochdeutsch: 'Volksbühne (Theater)',
+      bedeutung: 'Die „Volksbühne" am Rosa-Luxemburg-Platz ist Berlins berühmtestes Theater — gegründet 1914 durch Bürgerinitiative „dem Volk gehört das Theater". Frank Castorf prägte das Theater 1992-2017. Heute weiter avantgardistische Inszenierungen. „Volksbühnen-Style": lange, provokative Stücke. Symbol für Berliner Theater-Kultur. International gefeiert. Junge Berliner pilgern hin, Touristen finden\'s zu lang. Eingang flankiert von Räuber-Statuen.',
+      beispiel: 'Heut Abend gehen wir in d\'Volksbühne.',
+      beispiel_hd: 'Heute Abend gehen wir in die Volksbühne.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-257',
+      ausdruck: 'Pankow',
+      hochdeutsch: 'Pankow (Berliner Bezirk)',
+      bedeutung: '„Pankow" ist nördlicher Berliner Bezirk — ehemalige DDR-Hauptstadt-Funktion (Honecker-Regierungssitz „Schloss Pankow"). Bürgerlich-grün, mit Prenzlauer Berg fusioniert. Pankow-Heinersdorf für Stadtrand-Atmosphäre. „Mein altes Pankow" als Heimat-Bezeichnung der Berliner. Band „Pankow" als DDR-Rock-Klassiker. Symbol für Berliner Ost-Bezirke. Heute zunehmend gentrifiziert wie Prenzlberg.',
+      beispiel: 'In Pankow wohnt die Ost-Berliner Bourgeoisie.',
+      beispiel_hd: 'In Pankow wohnt die Ost-Berliner Bourgeoisie.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-258',
+      ausdruck: 'Neukölln',
+      hochdeutsch: 'Neukölln (Berliner Bezirk)',
+      bedeutung: '„Neukölln" ist südlicher Berliner Bezirk — multikulti, jung, hipsterig. Karl-Marx-Straße als Hauptstraße. Türkische, arabische, deutsche Kulturen mischen sich. Tempelhofer Feld (Ex-Flughafen) als Highlight. „Neukölln Unlimited" als Filmschauplatz. Symbol für Berlin-Multi-Kulti. Gentrifizierung läuft, aber langsamer als in Kreuzberg/Prenzlberg. „Reuterkiez" als hipster Sub-Bezirk. Neuköllner sind direkt und herzlich.',
+      beispiel: 'In Neukölln gibt\'s die geilsten Späti-Klos.',
+      beispiel_hd: 'In Neukölln gibt es die geilsten Spätkauf-Toiletten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-259',
+      ausdruck: 'Wedding',
+      hochdeutsch: 'Wedding (Berliner Bezirk)',
+      bedeutung: '„Wedding" ist nördlicher Berliner Bezirk — Arbeiterklasse, multikulti, im Aufschwung. „Der Wedding kommt!" als Hipster-Slogan seit 2010er-Jahren. Volkspark Rehberge, Müllerstraße, Leopoldplatz. „Roter Wedding" wegen sozialdemokratisch-kommunistischer Tradition. Symbol für Berlin-Wandel: vom abgehängten Bezirk zur kommenden Adresse. Bezahlbarer Wohnraum noch verfügbar. Touristen meiden ihn — Locals lieben ihn.',
+      beispiel: 'Im Wedding gibt\'s die besten Falafel Berlins.',
+      beispiel_hd: 'Im Wedding gibt es die besten Falafel Berlins.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-260',
+      ausdruck: 'Mauerpark',
+      hochdeutsch: 'Mauerpark (Park und Flohmarkt)',
+      bedeutung: 'Der „Mauerpark" zwischen Prenzlberg und Wedding ist Berliner Kult-Park — auf dem Streifen der ehemaligen Berliner Mauer. Sonntags Flohmarkt, Open-Air-Karaoke „Bearpit Karaoke" mit Joe Hatchiban. Picknick-Wiese mit Blick auf Skyline. Symbol für Berlin-Wandel: aus Todesstreifen wird Treffpunkt. Touristen-Magnet. Im Sommer überfüllt, im Winter leer. „Mauerpark forever!" als Berliner Gemeinschaftsgefühl.',
+      beispiel: 'Sonntags Mauerpark — Flohmarkt und Karaoke!',
+      beispiel_hd: 'Sonntags Mauerpark — Flohmarkt und Karaoke!',
+      kategorie: 'feiern'
     }
   ]
 };
