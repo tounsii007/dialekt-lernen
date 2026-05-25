@@ -425,6 +425,456 @@ export default {
       beispiel: 'Seit er de Job velong hät, es der en richtich Ävebäätche.',
       beispiel_hd: 'Seit er den Job verloren hat, ist der ein richtiger Faulenzer.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'k-051',
+      ausdruck: 'Kölle Alaaf!',
+      hochdeutsch: 'Hoch lebe Köln!',
+      bedeutung: 'Der vollständige kölsche Schlachtruf, der im Karneval und bei jedem Anlass kölscher Identität gerufen wird. „Alaaf" leitet sich vom mittelhochdeutschen „al af" (alles ab, alles weg) ab — Köln über alles. Bei Karnevalssitzungen erschallt der Ruf dreimal hintereinander, immer lauter werdend.',
+      beispiel: 'Kölle Alaaf — dreimol hoch und immer höher!',
+      beispiel_hd: 'Köln Alaaf — dreimal hoch und immer höher!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-052',
+      ausdruck: 'Funke',
+      hochdeutsch: 'Karnevalssoldat / Rote Funken',
+      bedeutung: 'Die Funken sind die traditionellen Karnevalssoldaten Kölns — die Roten Funken (gegründet 1823) sind das älteste Korps und tragen rote Uniformen mit weißen Beinkleidern. Sie persiflieren die preußische Stadtsoldaten-Tradition und gehören zu den ehrwürdigsten Karnevalsgesellschaften. Ein Funke zu sein, ist eine kölsche Ehre.',
+      beispiel: 'Mer Pap es bei de Rude Funke — sing ganzes Leve lang.',
+      beispiel_hd: 'Mein Vater ist bei den Roten Funken — sein ganzes Leben lang.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-053',
+      ausdruck: 'Bläck Fööss',
+      hochdeutsch: 'Barfuß / Kölner Karnevalsband',
+      bedeutung: 'Die Bläck Fööss (wörtlich „Barfüße") sind eine der bekanntesten Kölner Karnevalsbands, gegründet 1970. Ihre Lieder wie „Drink doch eine met" oder „Mer losse d\'r Dom in Kölle" sind kölsches Kulturgut. Sie singen über Alltag, Veedel und kölsche Lebensart — mit warmer Mundart und viel Herz.',
+      beispiel: 'De Bläck Fööss singen op jeder Sitzung — un alle singe met.',
+      beispiel_hd: 'Die Bläck Fööss singen auf jeder Sitzung — und alle singen mit.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-054',
+      ausdruck: 'Höhner',
+      hochdeutsch: 'Hühner / Kölner Karnevalsband',
+      bedeutung: 'Die Höhner sind eine der erfolgreichsten Karnevalsbands Kölns — gegründet 1972 und bekannt für Hits wie „Viva Colonia" und „Echte Fründe". Der Name „Höhner" (Hühner) stammt aus einer scherzhaften Selbstbezeichnung. Ihre Auftritte füllen Stadien, und ihre Lieder sind feste Bestandteile jeder kölschen Feier.',
+      beispiel: 'Bei „Viva Colonia" sing de janze Stadion met.',
+      beispiel_hd: 'Bei „Viva Colonia" singt das ganze Stadion mit.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-055',
+      ausdruck: 'Brings',
+      hochdeutsch: 'Kölner Rockband',
+      bedeutung: 'Brings ist eine Kölner Band, die seit 1990 kölsche Rockmusik macht. Ihre größten Hits „Kölsche Jung" und „Superjeile Zick" sind kölsche Hymnen geworden. Die Brüder Peter und Stephan Brings verbinden Rock mit kölscher Mundart und Karnevalsmusik. Ihre Songs erzählen Geschichten aus dem Veedel.',
+      beispiel: 'Brings spillt hück Ovend op de Domplatz — komm met!',
+      beispiel_hd: 'Brings spielt heute Abend auf dem Domplatz — komm mit!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-056',
+      ausdruck: 'Müllemer Böötche',
+      hochdeutsch: 'Mülheimer Brücke / Lied',
+      bedeutung: 'Das „Müllemer Böötche" ist ein altes Kölner Volkslied über das Fährboot, das früher Kölner nach Mülheim brachte, bevor die Mülheimer Brücke gebaut wurde. Heute ist es ein Klassiker des kölschen Liedguts und wird oft auf Sitzungen gesungen. Die Melodie ist melancholisch-fröhlich, typisch für die kölsche Mundart-Musik.',
+      beispiel: 'Et Müllemer Böötche fährt hin un her — singe mer all met.',
+      beispiel_hd: 'Das Mülheimer Boot fährt hin und her — singen wir alle mit.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-057',
+      ausdruck: 'FC Kölle',
+      hochdeutsch: '1. FC Köln',
+      bedeutung: 'Der 1. FC Köln — kölsch „FC Kölle" — ist der wichtigste Fußballverein der Stadt, gegründet 1948. Die Vereinsfarben Rot-Weiß und das Maskottchen Hennes der Geißbock sind kölsche Identität. „Mer stonn zo dir, FC Kölle" ist die Vereinshymne und gleichzeitig Bekenntnis der Fans. Egal ob Auf- oder Abstieg — der FC ist Heimat.',
+      beispiel: 'Mer stonn zo dir, FC Kölle — egal wat passeet!',
+      beispiel_hd: 'Wir stehen zu dir, 1. FC Köln — egal was passiert!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'k-058',
+      ausdruck: 'Müngersdorfer Stadion',
+      hochdeutsch: 'RheinEnergieStadion / Heimstadion des FC Köln',
+      bedeutung: 'Das Müngersdorfer Stadion (heute offiziell RheinEnergieStadion) ist die Heimstätte des 1. FC Köln im Stadtteil Müngersdorf. Es fasst über 50.000 Zuschauer und ist eines der atmosphärischsten Stadien Deutschlands. Bei Heimspielen brennt die Süd vor Stimmung, und „Hennes" der Geißbock läuft mit dem Team ein.',
+      beispiel: 'Samstag fahre mer ins Müngersdorfer — der FC spillt!',
+      beispiel_hd: 'Samstag fahren wir ins Müngersdorfer Stadion — der FC spielt!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'k-059',
+      ausdruck: 'Rhing',
+      hochdeutsch: 'Rhein',
+      bedeutung: 'Der Rhing ist die kölsche Form des Rheins — Lebensader der Stadt und kulturelles Herzstück. Köln liegt am linken Rheinufer und blickt seit zwei Jahrtausenden auf den Strom. Die Rheinpromenade, die Rheinkilometer und das jährliche Höhenfeuerwerk „Kölner Lichter" am Rhing prägen das kölsche Lebensgefühl. „Am Rhing geboren" ist ein Bekenntnis.',
+      beispiel: 'Am Rhing ze sitze un en Kölsch ze drinke — dat es Heimat.',
+      beispiel_hd: 'Am Rhein zu sitzen und ein Kölsch zu trinken — das ist Heimat.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-060',
+      ausdruck: 'Hohenzollernbrück',
+      hochdeutsch: 'Hohenzollernbrücke',
+      bedeutung: 'Die Hohenzollernbrücke ist die meistbefahrene Eisenbahnbrücke Deutschlands und verbindet den Hauptbahnhof mit der rechten Rheinseite. Berühmt sind die zehntausenden Liebesschlösser, die Paare am Brückengeländer befestigen. Mit dem Dom im Hintergrund ist sie eines der meistfotografierten Motive Kölns.',
+      beispiel: 'Op de Hohenzollernbrück hänge Tausende Schlösser — jedes erzählt en Geschichte.',
+      beispiel_hd: 'Auf der Hohenzollernbrücke hängen Tausende Schlösser — jedes erzählt eine Geschichte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-061',
+      ausdruck: 'Kölner Lichter',
+      hochdeutsch: 'Höhenfeuerwerk am Rhein',
+      bedeutung: 'Die Kölner Lichter sind eines der größten Musikfeuerwerke Europas, das jährlich im Sommer am Rhein veranstaltet wird. Hunderttausende Zuschauer säumen die Rheinufer, ein riesiger Schiffskonvoi fährt unter den Brücken hindurch, während Feuerwerk und Musik den Himmel erleuchten. Es ist das größte Open-Air-Event der Stadt.',
+      beispiel: 'Bei de Kölner Lichter es de Rhing voll vun Schepp un Lück.',
+      beispiel_hd: 'Bei den Kölner Lichtern ist der Rhein voll von Schiffen und Leuten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-062',
+      ausdruck: 'Ehrenfeld',
+      hochdeutsch: 'Kölner Stadtteil Ehrenfeld',
+      bedeutung: 'Ehrenfeld ist einer der lebendigsten Stadtteile Kölns — multikulturell, kreativ und voller Kneipen, Cafés und Konzertlocations. Die Venloer Straße ist die Hauptschlagader des Veedels. In Ehrenfeld wohnen viele Studenten, Künstler und junge Familien. Der Stadtteil hat in den letzten Jahren einen großen Aufschwung erlebt.',
+      beispiel: 'En Ehrenfeld es immer wat loss — Tag un Naach.',
+      beispiel_hd: 'In Ehrenfeld ist immer etwas los — Tag und Nacht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-063',
+      ausdruck: 'Nippes',
+      hochdeutsch: 'Kölner Stadtteil Nippes',
+      bedeutung: 'Nippes ist ein traditionsreiches Kölner Veedel mit gründerzeitlicher Bausubstanz, kleinen Geschäften und einer engen Nachbarschaftsgemeinschaft. Der Name kommt vom alten Hofnamen „op den Nippes". Heute ist Nippes ein beliebtes Wohnviertel — bürgerlich, gemütlich und kölsch durch und durch. Der Wochenmarkt am Wilhelmplatz ist legendär.',
+      beispiel: 'En Nippes wohnt mer jot un fühlt sich daheim.',
+      beispiel_hd: 'In Nippes wohnt man gut und fühlt sich zu Hause.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-064',
+      ausdruck: 'Sülz',
+      hochdeutsch: 'Kölner Stadtteil Sülz',
+      bedeutung: 'Sülz ist ein bürgerlich-akademisches Veedel im Kölner Süden, beliebt bei Familien und Studenten der Universität. Die Sülzburgstraße ist die zentrale Achse mit ihren Cafés und Geschäften. Der Stadtteil grenzt an Lindenthal und den Stadtwald und gilt als eines der grünsten Veedel Kölns. Im Sommer sitzt man in den Cafés und genießt das Leben.',
+      beispiel: 'En Sülz triff mer sich em Café un palavert öm de Welt.',
+      beispiel_hd: 'In Sülz trifft man sich im Café und plaudert über die Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-065',
+      ausdruck: 'Mülheim',
+      hochdeutsch: 'Kölner Stadtteil Mülheim',
+      bedeutung: 'Mülheim ist ein großer rechtsrheinischer Stadtteil Kölns mit langer industrieller Geschichte. Heute findet man hier eine Mischung aus Arbeiterkultur, multikulturellem Leben und Kreativwirtschaft. Die Mülheimer Brücke verbindet ihn mit der linksrheinischen Innenstadt. Im Stadtteil gibt es viele Türmen, Theater und Industriedenkmäler.',
+      beispiel: 'Mülheim es de Schäl Sick — awer voller Leve.',
+      beispiel_hd: 'Mülheim ist die rechte Rheinseite — aber voller Leben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-066',
+      ausdruck: 'Deutz',
+      hochdeutsch: 'Kölner Stadtteil Deutz',
+      bedeutung: 'Deutz liegt direkt rechtsrheinisch gegenüber der Kölner Altstadt und ist über die Hohenzollernbrücke und Deutzer Brücke verbunden. Hier befinden sich die KölnMesse, die Lanxess-Arena und der Bahnhof Köln Messe/Deutz. Vom Deutzer Rheinufer hat man den besten Blick auf den Dom und die Kölner Skyline.',
+      beispiel: 'Vun Deutz uss süht mer de Dom em scheenste Licht.',
+      beispiel_hd: 'Von Deutz aus sieht man den Dom im schönsten Licht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-067',
+      ausdruck: 'Kalk',
+      hochdeutsch: 'Kölner Stadtteil Kalk',
+      bedeutung: 'Kalk ist ein rechtsrheinischer Stadtteil mit langer Arbeiter- und Industriegeschichte. In den letzten Jahrzehnten hat sich Kalk zu einem multikulturellen, kreativen Veedel entwickelt. Die Kalker Hauptstraße und das Köln Arcaden Einkaufszentrum prägen das Bild. Kalk ist Beispiel für den Strukturwandel in Köln.',
+      beispiel: 'Kalk wandelt sich — un dat es jod so.',
+      beispiel_hd: 'Kalk wandelt sich — und das ist gut so.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-068',
+      ausdruck: 'Kamelle',
+      hochdeutsch: 'Karnevalsbonbons / Süßigkeiten',
+      bedeutung: 'Kamelle sind die Bonbons und Süßigkeiten, die beim Rosenmontagszug von den Wagen ins Publikum geworfen werden. Der Ruf „Kamelle!" gehört zu jedem Umzug. Kinder sammeln stundenlang in mitgebrachten Tüten und Beuteln. Heutzutage werden auch Schokolade, Kekse und kleine Spielzeuge geworfen — alle zusammen heißen „Kamelle".',
+      beispiel: 'De Pänz hann hück Ovend en Beutel voll Kamelle!',
+      beispiel_hd: 'Die Kinder haben heute Abend einen Beutel voll Bonbons!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-069',
+      ausdruck: 'Strüßje',
+      hochdeutsch: 'Blumenstrauß im Karneval',
+      bedeutung: 'Strüßjer sind kleine Blumensträußchen, die beim Rosenmontagszug von den Wagen geworfen werden. Sie sind traditionell Teil des Wurfmaterials und werden besonders gerne gefangen. Wer ein Strüßje erwischt, gilt für den Karneval als gesegnet. Auch beim Geisterzug und anderen Karnevalsumzügen sind Strüßjer beliebt.',
+      beispiel: 'Hück hann ich e Strüßje vum Wagen jefange!',
+      beispiel_hd: 'Heute habe ich einen Blumenstrauß vom Wagen gefangen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-070',
+      ausdruck: 'Weiberfastnacht',
+      hochdeutsch: 'Donnerstag vor Rosenmontag',
+      bedeutung: 'Weiberfastnacht (Wieverfastelovend) ist der Donnerstag vor Rosenmontag und der offizielle Beginn des Straßenkarnevals in Köln. Traditionell stürmen Frauen das Rathaus, der Oberbürgermeister wird symbolisch entmachtet, und die Krawatten der Männer werden abgeschnitten. Es ist der Tag, an dem das närrische Treiben auf die Straße zieht.',
+      beispiel: 'An Wieverfastelovend kütt jed Mann ohne Krawatt heim.',
+      beispiel_hd: 'An Weiberfastnacht kommt jeder Mann ohne Krawatte heim.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-071',
+      ausdruck: 'Aschermittwoch',
+      hochdeutsch: 'Aschermittwoch / Ende des Karnevals',
+      bedeutung: 'Der Aschermittwoch markiert das Ende des Kölner Karnevals und den Beginn der Fastenzeit. Symbolisch wird der „Nubbel" — eine lebensgroße Strohpuppe — verbrannt, um alle Sünden der Karnevalszeit auf ihn abzuwälzen. Mit Fischessen in den Brauhäusern und stiller Trauer um die fünfte Jahreszeit endet das närrische Treiben.',
+      beispiel: 'Am Äschermettwoch es alles vorbei — bis zum nächste Joahr!',
+      beispiel_hd: 'Am Aschermittwoch ist alles vorbei — bis zum nächsten Jahr!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-072',
+      ausdruck: 'Nubbel',
+      hochdeutsch: 'Strohpuppe / Karnevalsymbol',
+      bedeutung: 'Der Nubbel ist eine lebensgroße Strohpuppe, die während des Karnevals vor Brauhäusern und Kneipen hängt. Am Karnevalsdienstag um Mitternacht wird er feierlich verbrannt — und mit ihm symbolisch alle Sünden, die während des Karnevals begangen wurden. „Wer war\'s? — De Nubbel!" lautet die rituelle Antwort.',
+      beispiel: 'De Nubbel weed jeschuldig jefunge — wie immer!',
+      beispiel_hd: 'Der Nubbel wird schuldig gefunden — wie immer!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-073',
+      ausdruck: 'Sitzung',
+      hochdeutsch: 'Karnevalssitzung',
+      bedeutung: 'Die Karnevalssitzung ist die typisch kölsche Form des Saalkarnevals: ein mehrstündiges Bühnenprogramm mit Büttenrednern, Tanzkorps, Bands und Sketchen. Die Sitzungen der großen Gesellschaften wie Rote Funken oder Treuer Husaren sind legendär. Frauen tragen Kostüme, Männer Anzug und Orden — eine Mischung aus Tradition und Albernheit.',
+      beispiel: 'En Sitzung dauert vier Stunden un mer lacht sich kapott.',
+      beispiel_hd: 'Eine Sitzung dauert vier Stunden und man lacht sich kaputt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-074',
+      ausdruck: 'Bütt',
+      hochdeutsch: 'Rednerpult im Karneval',
+      bedeutung: 'Die Bütt ist das Rednerpult in Form eines Fasses, von dem aus die Büttenredner auf Karnevalssitzungen ihre Reime und politischen Glossen vortragen. Die Büttenrede ist eine eigene Kunstform — pointiert, satirisch und immer in Versform. Berühmte Büttenredner werden über die Karnevalszeit hinaus bekannt und treten jahrelang auf.',
+      beispiel: 'Wenn de Tünnes en de Bütt steht, beult de Saal.',
+      beispiel_hd: 'Wenn der Tünnes in der Bütt steht, bebt der Saal.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-075',
+      ausdruck: 'Tünnes un Schäl',
+      hochdeutsch: 'Kölner Komikerpaar / Volksfiguren',
+      bedeutung: 'Tünnes und Schäl sind die berühmtesten kölschen Volksfiguren — ein Komikerduo aus dem Hänneschen-Puppentheater. Tünnes ist der gutmütige, runde Bauer, Schäl der schmale, schlitzohrige Stadtmensch. Ihre Dialoge und Witze sind Teil des kölschen Kulturerbes. Eine Skulptur von Tünnes und Schäl steht im Martinsviertel.',
+      beispiel: 'Tünnes un Schäl mache de bess Witz vun Kölle.',
+      beispiel_hd: 'Tünnes und Schäl machen die besten Witze von Köln.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-076',
+      ausdruck: 'Hänneschen',
+      hochdeutsch: 'Kölner Stockpuppentheater',
+      bedeutung: 'Das Hänneschen-Theater ist das traditionelle Kölner Stockpuppentheater, gegründet 1802. Die Hauptfigur Hänneschen ist der freche Kölner Junge, umgeben von Tünnes, Schäl, Bärbelchen und anderen Volksfiguren. Die Stücke sind auf Kölsch und vermitteln Kölner Geschichte und Lebensweisheit. Generationen von Kölnern wachsen mit dem Hänneschen auf.',
+      beispiel: 'De Pänz jonn ins Hänneschen un singe op Kölsch met.',
+      beispiel_hd: 'Die Kinder gehen ins Hänneschen und singen auf Kölsch mit.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-077',
+      ausdruck: 'Heimatovend',
+      hochdeutsch: 'Heimatabend',
+      bedeutung: 'Der Heimatovend ist eine kölsche Veranstaltungsform — meist im Veedel organisiert, mit kölscher Musik, Mundartlesungen, Tanz und Brauchtumspflege. Heimatovende werden von Karnevalsgesellschaften, Bürgervereinen oder Pfarreien veranstaltet. Sie sind weniger groß als Karnevalssitzungen, aber genauso wichtig für die kölsche Kultur und Identität.',
+      beispiel: 'Am Samschdag es Heimatovend em Pfarrsaal — kumm doch ouch met!',
+      beispiel_hd: 'Am Samstag ist Heimatabend im Pfarrsaal — komm doch auch mit!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-078',
+      ausdruck: 'Krätzje',
+      hochdeutsch: 'Kurzer Witz / kölsche Kürzestgeschichte',
+      bedeutung: 'Ein Krätzje ist eine kurze, pointierte kölsche Geschichte oder ein Witz, oft in Reimform. Krätzjer werden auf Sitzungen, am Stammtisch oder bei Familienfeiern erzählt. Sie haben eine lange Tradition und sind Teil der kölschen Erzählkultur. Die Pointe ist meist anzüglich-harmlos und endet mit kölschem Lachen.',
+      beispiel: 'De Onkel hät en jedem Fess en Krätzje em Klemmer.',
+      beispiel_hd: 'Der Onkel hat bei jedem Fest einen Witz auf Lager.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-079',
+      ausdruck: 'Mähschen',
+      hochdeutsch: 'Mädchen / junge Frau (verniedlicht)',
+      bedeutung: 'Mähschen ist die kölsche Verniedlichungsform von Mädchen — herzlich, freundlich und unbeschwert. Es wird für kleine Mädchen, aber auch für junge Frauen verwendet, immer mit Sympathie und nie abwertend. Die Endung „-schen" ist typisch für die kölsche Verniedlichung und macht aus jedem Wort etwas Liebenswertes.',
+      beispiel: 'Dat Mähschen vum Bäcker es immer su fründlich.',
+      beispiel_hd: 'Das Mädchen vom Bäcker ist immer so freundlich.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-080',
+      ausdruck: 'Fott',
+      hochdeutsch: 'Hintern / Po',
+      bedeutung: 'Fott ist der kölsche Ausdruck für Hintern oder Po — direkt, deftig und unverblümt, wie der Kölner Humor allgemein. Das Wort taucht in vielen kölschen Wendungen auf: „op de Fott setze" (sich hinsetzen) oder „op de Fott jevalle" (auf den Hintern gefallen). Stippeföttche ist der bekannteste karnevalistische Tanz mit diesem Wort.',
+      beispiel: 'Setz dich op ding Fott un trink dat Kölsch!',
+      beispiel_hd: 'Setz dich auf deinen Hintern und trink das Kölsch!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-081',
+      ausdruck: 'Köpp',
+      hochdeutsch: 'Kopf / Köpfe',
+      bedeutung: 'Köpp ist die kölsche Form von Kopf — singular und plural gleichlautend. Es taucht in vielen Wendungen auf: „dat geiht mer op de Köpp" (das geht mir auf den Kopf) oder „Köpp huh!" (Kopf hoch!). Der Kölner spricht oft von „Köpp" wenn er an gesunden Menschenverstand erinnert: „Benutz ding Köpp!".',
+      beispiel: 'Benutz mol ding Köpp, dann klappt et och!',
+      beispiel_hd: 'Benutze mal deinen Kopf, dann klappt es auch!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-082',
+      ausdruck: 'Föttche',
+      hochdeutsch: 'Füßchen / kleine Füße',
+      bedeutung: 'Föttche ist die kölsche Verniedlichung von „Fuß" — kleine Füße, oft auf Kinder bezogen. „Mer dun de Pänz de Föttche an" (Wir ziehen den Kindern die Schuhe an) ist eine alltägliche kölsche Wendung. Die Verniedlichung zeigt die warme, fürsorgliche Seite der kölschen Mundart.',
+      beispiel: 'De Pänz hann kalde Föttche — mer dun ihne warme Socke an.',
+      beispiel_hd: 'Die Kinder haben kalte Füße — wir ziehen ihnen warme Socken an.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-083',
+      ausdruck: 'Schnüss',
+      hochdeutsch: 'Mund / Schnauze',
+      bedeutung: 'Schnüss ist das kölsche Wort für Mund, oft im Sinne von „Klappe halten". „Halt de Schnüss!" ist deftig, aber unter Freunden nicht beleidigend gemeint. Das Wort hat eine derbe, aber herzliche Note und ist typisch für die direkte kölsche Art. Auch positiv: „En jrooße Schnüss han" (ein großes Mundwerk haben).',
+      beispiel: 'Halt mol kort de Schnüss un loss mich verzälle!',
+      beispiel_hd: 'Halt mal kurz den Mund und lass mich erzählen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-084',
+      ausdruck: 'Knoll',
+      hochdeutsch: 'Nase / Knolle',
+      bedeutung: 'Knoll ist der kölsche Ausdruck für eine große Nase — meist humorvoll-deftig gemeint. Eine „rote Knoll" deutet auf zu viel Kölsch hin. Auch in Wendungen wie „op de Knoll falle" (auf die Nase fallen) ist das Wort lebendig. Der Begriff zeigt die kölsche Liebe für derbe, bildhafte Sprache.',
+      beispiel: 'Nach drei Kölsch krieg ich en rude Knoll!',
+      beispiel_hd: 'Nach drei Kölsch bekomme ich eine rote Nase!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-085',
+      ausdruck: 'Dösbaddel',
+      hochdeutsch: 'Dummkopf / Tölpel',
+      bedeutung: 'Dösbaddel ist ein gutmütiges kölsches Schimpfwort für jemanden, der nicht ganz so schnell denkt — ähnlich wie „Schussel" oder „Dummkopf". Es wird unter Freunden mit einem Augenzwinkern verwendet und ist nicht ernst gemeint. Der Begriff kombiniert „dösig" (träge) mit „Baddel" (Tropf).',
+      beispiel: 'Du Dösbaddel, du häs widder de Schlössel verjesse!',
+      beispiel_hd: 'Du Dummkopf, du hast wieder den Schlüssel vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-086',
+      ausdruck: 'Plüschprumm',
+      hochdeutsch: 'Faulpelz / träger Mensch',
+      bedeutung: 'Plüschprumm ist ein liebevoll-spöttisches kölsches Wort für einen Faulpelz oder einen trägen Menschen. Wörtlich etwa „Plüschpflaume" — jemand, der weich und träge wie eine Pflaume in Plüsch sitzt. Das Wort zeigt den kölschen Humor: Selbst beim Schimpfen bleibt man bildreich und herzlich.',
+      beispiel: 'Du Plüschprumm, jetz stand emol op!',
+      beispiel_hd: 'Du Faulpelz, jetzt steh mal auf!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-087',
+      ausdruck: 'kölsche Kavalier',
+      hochdeutsch: 'höflicher Kölner Mann',
+      bedeutung: 'Der kölsche Kavalier ist ein Idealtypus: höflich, charmant, gesellig — der typische Kölner, der weiß, wie man sich benimmt. Er hält Türen auf, lädt zum Kölsch ein und ist immer für ein nettes Wort zu haben. Der kölsche Kavalier ist Teil des Selbstbildes der Stadt und wird in Liedern und Volksfiguren verehrt.',
+      beispiel: 'En richtiger kölsche Kavalier lädt de Mädsche immer en.',
+      beispiel_hd: 'Ein richtiger Kölner Kavalier lädt die Mädchen immer ein.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-088',
+      ausdruck: 'Oma',
+      hochdeutsch: 'Großmutter (kölsch ausgesprochen)',
+      bedeutung: 'Oma ist auch im Kölschen die Großmutter — meist mit langem, gedehntem „O" ausgesprochen. Die Kölner Oma ist eine Institution: Sie kocht Riefkooche, näht Karnevalskostüme und kennt jede Geschichte des Veedels. In der kölschen Familie ist die Oma das Gedächtnis und die Seele der Verwandtschaft.',
+      beispiel: 'Bei Oma jit et hück Himmel un Ääd!',
+      beispiel_hd: 'Bei Oma gibt es heute Himmel und Erde!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-089',
+      ausdruck: 'Opa',
+      hochdeutsch: 'Großvater (kölsch)',
+      bedeutung: 'Der kölsche Opa ist meist Vereinsmensch, FC-Fan und Stammgast im Brauhaus. Er erzählt Geschichten von früher, vom Karneval und von der Zeit der Trümmerfrauen. Die Beziehung zwischen Enkel und Opa ist im Kölschen oft besonders herzlich — der Opa nimmt sich Zeit und ist mit kölschem Humor gesegnet.',
+      beispiel: 'Mer Opa verzällt immer vum Karneval vun fröher.',
+      beispiel_hd: 'Mein Opa erzählt immer vom Karneval von früher.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-090',
+      ausdruck: 'Tant',
+      hochdeutsch: 'Tante',
+      bedeutung: 'Die Tant ist die kölsche Form von Tante — oft eine prägende Figur in der Großfamilie. Berühmt ist die „Tant Käthe" aus dem Karnevalslied der Höhner. Die kölsche Tant ist meist herzlich, manchmal eigenwillig und immer für eine Geschichte gut. In erweiterten Familien ist sie oft die Ansprechpartnerin für alle Pänz.',
+      beispiel: 'Mer Tant es immer für en Kölsch ze han.',
+      beispiel_hd: 'Meine Tante ist immer für ein Kölsch zu haben.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-091',
+      ausdruck: 'Vatter',
+      hochdeutsch: 'Vater',
+      bedeutung: 'Vatter ist die kölsche Variante von Vater — eine traditionelle Bezeichnung, die im Veedel und in den älteren Generationen noch lebendig ist. „De Vatter" ist im kölschen Familienleben oft die Autorität, aber auch der humorvolle Erzähler am Stammtisch. Heute sagen viele Kinder „Papa", aber „Vatter" hat noch eine warme, vertraute Note.',
+      beispiel: 'Mer Vatter es Funke bei de Rude — sing Stolz!',
+      beispiel_hd: 'Mein Vater ist Funke bei den Roten — sein Stolz!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-092',
+      ausdruck: 'Mamm',
+      hochdeutsch: 'Mutter',
+      bedeutung: 'Mamm ist die kölsche Form von Mutter — herzlich und unmittelbar. Die kölsche Mamm steht traditionell im Mittelpunkt der Familie, kocht das Sonntagsessen und hält die Familie zusammen. „Mamm" wird oft das ganze Leben lang benutzt, auch von erwachsenen Kindern, die ihre Mutter besuchen.',
+      beispiel: 'Mamm kocht hück de bess Riefkooche!',
+      beispiel_hd: 'Mama kocht heute die besten Reibekuchen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-093',
+      ausdruck: 'Lange Tünn',
+      hochdeutsch: 'Hochhaus Lange Tünn — Kölner Wahrzeichen',
+      bedeutung: 'Die Lange Tünn ist der Spitzname des Colonia-Hochhauses in Köln-Mülheim, das von 1973 bis zu seiner Sprengung 1991 das höchste Wohnhaus Kölns war. „Lange Tünn" steht im Kölschen sowohl für das Hochhaus als auch metaphorisch für etwas sehr Großes oder Langes. Auch eine bekannte Kölner Persönlichkeit trug diesen Spitznamen.',
+      beispiel: 'De Lang Tünn künnt mer nit verfehle — su huh wor dat.',
+      beispiel_hd: 'Den Langen Tünn konnte man nicht verfehlen — so hoch war das.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-094',
+      ausdruck: 'Eierfeld',
+      hochdeutsch: 'Spitzname für Ehrenfeld',
+      bedeutung: 'Eierfeld ist der scherzhafte kölsche Spitzname für den Stadtteil Ehrenfeld. Der Name spielt mit der ähnlichen Lautgebung und ist ein gutmütiger Insider-Witz unter Kölnern. Eierfeldler nehmen es mit Humor — kölsche Selbstironie gehört zur Identität. Die Eier-Fööss und ähnliche Wortspiele sind Teil der kölschen Sprachkultur.',
+      beispiel: 'En „Eierfeld" wohne ich joht — egal wie mer et nennt.',
+      beispiel_hd: 'In „Eierfeld" wohne ich gut — egal wie man es nennt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-095',
+      ausdruck: 'Mettwöörtchen',
+      hochdeutsch: 'Mettwurst / kleine Wurst',
+      bedeutung: 'Mettwöörtchen ist die kölsche Verniedlichung von Mettwurst — eine kleine, gewürzte Wurst, die im Brauhaus zur Vesper gereicht wird. Mit Senfpott und Brötchen ist das Mettwöörtchen ein klassischer Brauhaus-Snack. In der kölschen Esskultur sind kleine Portionen mit großer Geschmacksintensität Tradition.',
+      beispiel: 'Twee Mettwöörtchen un en Pott Senf, Köbes!',
+      beispiel_hd: 'Zwei Mettwürstchen und einen Topf Senf, Kellner!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-096',
+      ausdruck: 'Eiergewuesch',
+      hochdeutsch: 'Eierkuchen / Rührei-Variante',
+      bedeutung: 'Eiergewuesch ist ein deftiges kölsches Frühstücksgericht — Rührei mit Speck, Zwiebeln und Kräutern, oft in der Pfanne serviert. „Gewuesch" bedeutet „Gemenge" oder „Durcheinander" — das Wort beschreibt die rustikale Art der Zubereitung. Im Brauhaus und beim sonntäglichen Frühstück ist Eiergewuesch eine beliebte Speise.',
+      beispiel: 'Sonndag morje jit et bei us Eiergewuesch met Speck.',
+      beispiel_hd: 'Sonntagmorgen gibt es bei uns Eierkuchen mit Speck.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-097',
+      ausdruck: 'Kranzkölsch',
+      hochdeutsch: 'Kölsch im Kranz serviert',
+      bedeutung: 'Das Kranzkölsch ist die typische Servierart im Kölner Brauhaus: Der Köbes trägt einen runden „Kranz" mit bis zu 18 Kölschstangen — kreisförmig in einem speziellen Tablett angeordnet. So kann er effizient viele Gäste auf einmal bedienen. Der Anblick eines vollen Kranzkölsch ist Brauhauskultur in Reinform.',
+      beispiel: 'De Köbes kütt met dem Kranzkölsch — alle hann jetz nochmol!',
+      beispiel_hd: 'Der Kellner kommt mit dem Kölschkranz — alle haben jetzt nochmal!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-098',
+      ausdruck: 'Klüngel',
+      hochdeutsch: 'Vetternwirtschaft / Kölner Beziehungssystem',
+      bedeutung: 'Der kölsche Klüngel ist das berühmt-berüchtigte System persönlicher Beziehungen und Gefälligkeiten, das Köln im Guten wie im Schlechten prägt. „Man kennt sich, man hilft sich" lautet das Prinzip. In der Politik führte der Klüngel zu Skandalen, im Alltag macht er das Leben menschlicher. „Et hätt noch immer jot jejange — durch Klüngel" sagt der Spott.',
+      beispiel: 'En Kölle löppt vüles üvver de Klüngel.',
+      beispiel_hd: 'In Köln läuft vieles über den Klüngel.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-099',
+      ausdruck: 'Wä?',
+      hochdeutsch: 'Wer? / Nicht wahr?',
+      bedeutung: '„Wä?" ist eine typisch kölsche Frageform am Satzende — ähnlich dem schwäbischen „gell" oder dem hochdeutschen „nicht wahr?". Es lädt zur Bestätigung ein und ist ein wichtiges Merkmal des kölschen Gesprächsstils. „Dat hät et nit jejovve, wä?" — eine Bestätigung wird erwartet.',
+      beispiel: 'Dat es jot, wä? — Ich saj doch!',
+      beispiel_hd: 'Das ist gut, nicht wahr? — Ich sag doch!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-100',
+      ausdruck: 'Mer losse d\'r Dom in Kölle',
+      hochdeutsch: 'Wir lassen den Dom in Köln',
+      bedeutung: 'Eines der bekanntesten kölschen Lieder, geschrieben von den Bläck Fööss. Der Titel ist ein Bekenntnis zur Heimat: Egal, was die Welt bietet — der Dom und Köln bleiben für den echten Kölner unverrückbar. Das Lied wird als inoffizielle Hymne der Auswanderer und Heimkehrer gesungen und endet jede große Sitzung.',
+      beispiel: 'Egal wo ich bin — mer losse d\'r Dom in Kölle.',
+      beispiel_hd: 'Egal wo ich bin — wir lassen den Dom in Köln.',
+      kategorie: 'musik'
     }
   ]
 };

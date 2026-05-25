@@ -427,6 +427,231 @@ export default {
       beispiel: 'En echter Appenzeller Käs isch s\'Schärfste, was d\'Schweiz hät.',
       beispiel_hd: 'Ein echter Appenzeller Käse ist das Würzigste, was die Schweiz hat.',
       kategorie: 'essen'
+    },
+    {
+      id: 'ch-051',
+      ausdruck: 'Migros',
+      hochdeutsch: 'Migros (grösste Supermarktkette)',
+      bedeutung: 'Die Migros ist die grösste Supermarktkette der Schweiz, gegründet 1925 von Gottlieb Duttweiler. Sie ist als Genossenschaft organisiert und gehört faktisch ihren Kunden. Migros verkauft keinen Alkohol und keinen Tabak — eine Tradition seit Gründung. „M-Budget" ist die preiswerte Eigenmarke, „M-Classic" die mittlere. Migros ist mehr als ein Supermarkt — sie ist Teil der Schweizer Identität.',
+      beispiel: 'I gang schnäll in d\'Migros go iichaufe.',
+      beispiel_hd: 'Ich gehe schnell in die Migros einkaufen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-052',
+      ausdruck: 'Coop',
+      hochdeutsch: 'Coop (zweitgrösste Supermarktkette)',
+      bedeutung: 'Coop ist die zweitgrösste Supermarktkette der Schweiz und der grosse Rivale der Migros. Im Gegensatz zur Migros verkauft Coop Alkohol und hat eine breite Bio-Linie („Naturaplan"). Die Coop-Genossenschaft hat über 2,5 Millionen Mitglieder. Schweizer haben oft eine Lieblings-Kette — entweder Migros oder Coop — und diese Wahl sagt viel über sie aus.',
+      beispiel: 'Lieber Coop als Migros — wäg em Wii.',
+      beispiel_hd: 'Lieber Coop als Migros — wegen des Weins.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-053',
+      ausdruck: 'Postauto',
+      hochdeutsch: 'Postauto (gelber Schweizer Bus)',
+      bedeutung: 'Das gelbe Postauto ist eine Schweizer Institution — es verbindet seit 1906 abgelegene Bergdörfer mit dem Rest des Landes. Das berühmte Postauto-Horn (drei Töne: Cis-E-A) ertönt vor Kurven auf engen Bergstrassen. Heute betreibt die Postauto AG über 900 Linien. Ein Postauto-Trip durch die Alpen — etwa über die Furka oder das Glaubenbielen — ist ein authentisches Schweizer Erlebnis.',
+      beispiel: 'Mit em Postauto über de Furkapass — des isch en Traum.',
+      beispiel_hd: 'Mit dem Postauto über den Furkapass — das ist ein Traum.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-054',
+      ausdruck: 'SBB',
+      hochdeutsch: 'Schweizerische Bundesbahnen',
+      bedeutung: 'Die SBB (Schweizerische Bundesbahnen) ist das nationale Eisenbahnunternehmen — pünktlich, sauber und mit dichtem Netz. Über 3000 km Schienennetz verbinden auch kleinste Dörfer. Die SBB-Pünktlichkeit ist legendär (über 90% der Züge sind pünktlich). Das GA (Generalabonnement) berechtigt zur unbegrenzten Nutzung. Schweizer Pendler lieben und manchmal hassen die SBB — aber sie ist Teil des Selbstverständnisses.',
+      beispiel: 'D\'SBB chunt immer pünktlich — meischtens, oder?',
+      beispiel_hd: 'Die SBB kommt immer pünktlich — meistens, oder?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-055',
+      ausdruck: 'Älplermagronen',
+      hochdeutsch: 'Bauernbohnen-Kartoffel-Makkaroni-Gericht',
+      bedeutung: '„Älplermagronen" ist ein traditionelles Schweizer Bergbauernessen: Makkaroni, Kartoffeln, Zwiebeln, Speck und Käse — alles zusammen gekocht und mit Apfelmus serviert. Stammt aus den Älplerhütten, wo die wenigen verfügbaren Zutaten kreativ kombiniert wurden. Heute ist es Komfortessen in der ganzen Deutschschweiz — billig, sättigend und unwiderstehlich. Echte Älplermagronen gibt es nur ohne Béchamelsauce!',
+      beispiel: 'Bi minere Grosi gits am Mittwuch Älplermagrone — herrlich.',
+      beispiel_hd: 'Bei meiner Grossmutter gibt es am Mittwoch Älplermagronen — herrlich.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-056',
+      ausdruck: 'Älpler',
+      hochdeutsch: 'Älpler / Sennen (Bergbauer)',
+      bedeutung: 'Der „Älpler" oder „Senn" ist der Schweizer Bergbauer, der den Sommer auf der Alm verbringt — er pflegt das Vieh, melkt Kühe und produziert Alpkäse direkt in der Sennhütte. Eine traumhaft-harte Existenz, geprägt von früh aufstehen, Wetterabhängigkeit und Einsamkeit. Im September folgt die Alpabfahrt (das Schweizer Pendant zum Almabtrieb). Die Älpler-Kultur ist Teil des Schweizer Selbstverständnisses und UNESCO-Erbe.',
+      beispiel: 'De Senn obe uf de Alp lebt drei Monet ohni Stress.',
+      beispiel_hd: 'Der Senn oben auf der Alm lebt drei Monate ohne Stress.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-057',
+      ausdruck: 'Jodel',
+      hochdeutsch: 'Jodler / Alpiner Naturjodel',
+      bedeutung: 'Das Jodeln ist eine alpine Gesangskunst, bei der schnell zwischen Brust- und Kopfstimme gewechselt wird — ohne Worte. Ursprünglich Kommunikationsmittel zwischen Alpsennen über die Berghänge hinweg, ist es heute eine eigenständige Musikform. Es gibt den „Naturjodel" (improvisiert, kunstvoll) und das „Jodellied" (mit Text). Schweizer Jodlerklubs pflegen die Tradition. Der Jodel ist UNESCO-Kulturerbe.',
+      beispiel: 'D\'Jodel-Lieder vo de Tüchersfeld sind weltweit bekannt.',
+      beispiel_hd: 'Die Jodel-Lieder aus dem Toggenburg sind weltweit bekannt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-058',
+      ausdruck: 'Roger Federer',
+      hochdeutsch: 'Roger Federer (Tennis-Legende)',
+      bedeutung: 'Roger Federer (geb. 1981 in Basel) ist mit 20 Grand-Slam-Titeln einer der grössten Tennisspieler aller Zeiten und gilt als Schweizer Nationalheld. Bekannt für sein elegantes, scheinbar mühelos wirkendes Spiel. 2022 trat er zurück — sein Abschiedsspiel am Laver Cup mit Rafael Nadal als Doppelpartner sorgte für emotionale Szenen. Federer steht für Schweizer Werte: Bescheidenheit, Qualität, internationale Klasse.',
+      beispiel: 'Wenn de Federer gspilt het, het d\'Schwiiz uffgehört z\'schaffe.',
+      beispiel_hd: 'Wenn Federer gespielt hat, hat die Schweiz aufgehört zu arbeiten.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-059',
+      ausdruck: 'Toblerone',
+      hochdeutsch: 'Toblerone (dreieckige Schokolade)',
+      bedeutung: 'Die Toblerone ist die berühmteste Schweizer Schokoladenmarke — 1908 von Theodor Tobler und Emil Baumann in Bern erfunden. Das dreieckige Prisma soll die Matterhorn-Spitze symbolisieren, im Bären-Stadt-Wappen versteckt ist sogar ein Bär. Honig und Mandelstückchen machen die Originalrezeptur aus. Im Genfer Flughafen wird Toblerone in riesigen Mengen als Mitbringsel gekauft — Schweizer Schokolade weltweit Markenbotschafter.',
+      beispiel: 'En Toblerone als Mitbringsel — das chunt immer guet aa.',
+      beispiel_hd: 'Eine Toblerone als Mitbringsel — das kommt immer gut an.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-060',
+      ausdruck: 'Bahnhofstrasse',
+      hochdeutsch: 'Zürcher Bahnhofstrasse (Luxus-Einkaufsstrasse)',
+      bedeutung: 'Die Zürcher Bahnhofstrasse ist eine der teuersten Einkaufsstrassen der Welt — 1,4 km vom Hauptbahnhof bis zum Bürkliplatz am Zürichsee. Hier reihen sich Luxusboutiquen (Bucherer, Cartier, Tiffany) und Schweizer Grossbanken (UBS, Credit Suisse — heute UBS). Die Bahnhofstrasse ist autofrei und ein Symbol des Schweizer Wohlstands. Unter der Strasse: die Goldbarren der Banken in den Tresoren.',
+      beispiel: 'D\'Bahnhofstrasse — schaue ja, kaufe wenn me chönnt.',
+      beispiel_hd: 'Die Bahnhofstrasse — schauen ja, kaufen wenn man könnte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-061',
+      ausdruck: 'Zürichsee',
+      hochdeutsch: 'Zürichsee (See bei Zürich)',
+      bedeutung: 'Der Zürichsee erstreckt sich südöstlich von Zürich — 40 km lang, von der Stadt bis ins Linthgebiet. Die wohlhabende „Goldküste" (rechtes Ufer mit Sonnenseite) und das „Pfnüselchüschte" (linkes Ufer, kühler und feuchter) — die ungleichen Ufer sind ein Wiener Witz. Im Sommer ist Schwimmen im glasklaren Wasser populär, im Winter sind die Spaziergänge mit Alpenpanorama berühmt. Das Schiff Polybahn nach Rapperswil ist ein Klassiker.',
+      beispiel: 'Im Summer go schwimme im Zürisee — herrlich klares Wasser.',
+      beispiel_hd: 'Im Sommer schwimmen gehen im Zürichsee — herrlich klares Wasser.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-062',
+      ausdruck: 'Matterhorn',
+      hochdeutsch: 'Matterhorn (Schweizer Symbol-Berg)',
+      bedeutung: 'Das Matterhorn (4478 m) ist der bekannteste Berg der Alpen und das nationale Symbol der Schweiz. Mit seiner unverwechselbaren Pyramidenform thront es über Zermatt im Wallis. Erste Besteigung 1865 durch Edward Whymper — der Triumph wurde zur Tragödie, als vier seiner Gefährten beim Abstieg abstürzten. Heute ist es einer der meistphotographierten Berge der Welt. Es ziert auch die Toblerone-Verpackung.',
+      beispiel: 'S\'Matterhorn isch dr Liib-Berg vo de Schwiiz.',
+      beispiel_hd: 'Das Matterhorn ist der Lieblings-Berg der Schweiz.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-063',
+      ausdruck: 'Sechseläuten',
+      hochdeutsch: 'Zürcher Frühlingsfest mit Böögg-Verbrennung',
+      bedeutung: 'Das Sechseläuten ist das Zürcher Frühlingsfest am dritten Montag im April. Höhepunkt: Die Verbrennung des „Böögg" (eine Schneemann-Strohpuppe) um 18:00 Uhr (sechs Glockenschläge — daher der Name). Je schneller der Kopf explodiert, desto besser der kommende Sommer (laut Volksglaube). Die Zünfte ziehen in historischen Kostümen durch die Stadt. Ein UNESCO-Kulturerbe und Zürichs grösstes Fest.',
+      beispiel: 'Am Sechseläute brennt de Böögg — und mir hoffe uf en heisse Summer.',
+      beispiel_hd: 'Am Sechseläuten brennt der Böögg — und wir hoffen auf einen heissen Sommer.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-064',
+      ausdruck: 'Bundesrat',
+      hochdeutsch: 'Schweizer Bundesrat (siebenköpfige Regierung)',
+      bedeutung: 'Der Schweizer Bundesrat besteht aus sieben gleichberechtigten Mitgliedern, die zusammen das Staatsoberhaupt bilden — ein einzigartiges Modell weltweit. Jedes Jahr wechselt der Bundespräsident, aber alle sieben sind gleichberechtigt. Sie werden von der Vereinigten Bundesversammlung gewählt. Die Konkordanz (Zauberformel) sorgt für proportionale Vertretung der Parteien. Bundesräte werden mit „Frau Bundesrätin" oder „Herr Bundesrat" angesprochen.',
+      beispiel: 'De Bundesrat tagt am Mittwuch — sibe Köpf, eis Land.',
+      beispiel_hd: 'Der Bundesrat tagt am Mittwoch — sieben Köpfe, ein Land.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-065',
+      ausdruck: 'Schwiizer Franke',
+      hochdeutsch: 'Schweizer Franken (CHF)',
+      bedeutung: 'Der Schweizer Franken (CHF) ist eine der stärksten Währungen der Welt — ein Symbol für Stabilität und Wohlstand. Die Banknoten zeigen Schweizer Persönlichkeiten und Themen: Le Corbusier, Sophie Taeuber-Arp, Alberto Giacometti. Die Schweizerische Nationalbank (SNB) hat über Jahre den Franken-Kurs künstlich an den Euro gebunden — 2015 sorgte die Aufhebung für Schockwellen. Schweizer haben fast schon eine emotionale Beziehung zu ihrer Währung.',
+      beispiel: 'En Stutz isch en Franke — heissts au noch hütt.',
+      beispiel_hd: 'Ein Stutz ist ein Franken — heisst es auch noch heute.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ch-066',
+      ausdruck: 'Stutz',
+      hochdeutsch: 'Franken (umgangssprachlich)',
+      bedeutung: '„Stutz" ist die Schweizer Umgangssprache für Franken — wie „Euros" zu „Euros" umgangssprachlich „Kohle" sein können. Niemand sagt „kosten zwanzig Schweizer Franken" — alle sagen „zwanzig Stutz". Der Begriff stammt vom mittelalterlichen „Stutzgulden" oder „Schtutzer". Bei Verhandlungen, Gehältern und Preisen ist „Stutz" das alltägliche Wort. Eine Million Stutz sind eine „Mio".',
+      beispiel: 'S\'het zwänzg Stutz gchoschtet — gar nid teuer für d\'Schwiiz.',
+      beispiel_hd: 'Es hat zwanzig Franken gekostet — gar nicht teuer für die Schweiz.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ch-067',
+      ausdruck: 'Tessin',
+      hochdeutsch: 'Kanton Tessin (italienischsprachige Schweiz)',
+      bedeutung: 'Das Tessin ist der südlichste, italienischsprachige Kanton der Schweiz — mediterranes Klima, Palmen, Granitberge und italienische Lebensart. Lugano, Locarno, Bellinzona und Ascona am Lago Maggiore sind Hauptorte. Über den Gotthard erreicht man eine andere Welt. Wein, Polenta, Risotto, Mortadella — die Tessiner Küche ist italienisch geprägt. Ein Lieblings-Ferienziel der Deutschschweizer.',
+      beispiel: 'Im Tessin chunsch i d\'Sunne und chunnsch i Italie — fasch.',
+      beispiel_hd: 'Im Tessin kommst du in die Sonne und kommst nach Italien — fast.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-068',
+      ausdruck: 'Bündner',
+      hochdeutsch: 'Bündner (aus Graubünden) / Bündnerfleisch',
+      bedeutung: '„Bündner" bezeichnet einen Bewohner des Kantons Graubünden — und auch das berühmte „Bündnerfleisch": getrocknetes, luftgehärtetes Rindfleisch, das hauchdünn geschnitten serviert wird. Im Engadin und in Davos wird es bis heute traditionell hergestellt. Graubünden ist dreisprachig (Deutsch, Italienisch, Rätoromanisch) und hat mit St. Moritz, Davos und Arosa weltberühmte Skigebiete. Die Bündner gelten als zäh und naturverbunden.',
+      beispiel: 'En Teller Bündnerfleisch und en Stück Käs — schwiizerischer Apero.',
+      beispiel_hd: 'Ein Teller Bündnerfleisch und ein Stück Käse — schweizerischer Apero.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-069',
+      ausdruck: 'Berchtoldstag',
+      hochdeutsch: '2. Januar / Berchtoldstag (Feiertag)',
+      bedeutung: 'Der Berchtoldstag (2. Januar) ist in vielen Schweizer Kantonen ein zusätzlicher Feiertag nach Neujahr — ideal, um das neue Jahr ruhig anzugehen. Er ist nach Berchtold I., dem Gründer Berns (1191), benannt. In manchen Kantonen wird er traditionell mit Nüssen, Glücksbringern und Familientreffen gefeiert. In der modernen Schweiz dient er vor allem als zusätzlicher freier Tag.',
+      beispiel: 'Am Berchtoldstag mached mir nüt — eifach uusrueh.',
+      beispiel_hd: 'Am Berchtoldstag machen wir nichts — einfach ausruhen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-070',
+      ausdruck: '1. August',
+      hochdeutsch: 'Schweizer Nationalfeiertag',
+      bedeutung: 'Der 1. August ist der Schweizer Bundesfeiertag — Erinnerung an den Rütlischwur von 1291, mit dem die Urkantone Uri, Schwyz und Unterwalden die Eidgenossenschaft gründeten. Am Vorabend brennen überall die Höhenfeuer auf den Bergen, gefolgt von Feuerwerken. Die Schweiz feiert ihre Unabhängigkeit, Direkte Demokratie und Neutralität. Bundesräte halten Reden, Lampions schmücken die Häuser.',
+      beispiel: 'Am erschte Auguscht mached mir Cervelats bräggle und Höhefür.',
+      beispiel_hd: 'Am ersten August machen wir Cervelats grillen und Höhenfeuer.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-071',
+      ausdruck: 'Cailler',
+      hochdeutsch: 'Cailler (älteste Schweizer Schokoladenmarke)',
+      bedeutung: 'Cailler ist die älteste noch existierende Schweizer Schokoladenmarke, gegründet 1819 von François-Louis Cailler in Vevey. Daniel Peter (Cailler\'s Schwiegersohn) erfand 1875 die Milchschokolade — eine Schweizer Weltinnovation. Heute gehört Cailler zu Nestlé, wird aber noch im Werk in Broc (Greyerz) hergestellt. Die Sorte „Branches" (Schokoladenstangen) ist Kult. Eine Schokoladen-Tour durch Broc ist ein touristisches Muss.',
+      beispiel: 'Cailler-Schokolade — die hät no de richtig Schmeck.',
+      beispiel_hd: 'Cailler-Schokolade — die hat noch den richtigen Geschmack.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-072',
+      ausdruck: 'Engadin',
+      hochdeutsch: 'Engadin (Hochtal in Graubünden)',
+      bedeutung: 'Das Engadin ist ein hochalpines Tal in Graubünden — vom Maloja-Pass bis zum österreichischen Vinschgau. Es teilt sich in das Oberengadin (St. Moritz, Pontresina, Sils) und das Unterengadin (Scuol, Zernez). Klare Bergseen, viel Sonne und das einzigartige Sgraffito-Häuserschmuck machen es zur Postkarten-Region. St. Moritz ist Synonym für mondäne Wintersportgesellschaft, das Engadin gleichzeitig Naturparadies.',
+      beispiel: 'Im Engadin im Winter — minus zwänzg Grad und Sunneschiin.',
+      beispiel_hd: 'Im Engadin im Winter — minus zwanzig Grad und Sonnenschein.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-073',
+      ausdruck: 'Ovomaltine',
+      hochdeutsch: 'Ovomaltine (Schweizer Getränkepulver)',
+      bedeutung: 'Ovomaltine ist ein Pulver aus Malz, Milch, Eiern und Kakao, das in Wasser oder Milch gerührt wird — 1904 in Bern entwickelt. Ursprünglich als Stärkungsgetränk für Kranke und Sportler gedacht, ist es heute Schweizer Frühstücksinstitution. „Mit Ovomaltine kannst du es nicht besser, aber länger" — der Werbespruch ist legendär. Die rote Dose ist Designikone. Ein Stück Schweizer Pop-Kultur.',
+      beispiel: 'En Tasse Ovomaltine am Morge — und de Tag chan choo.',
+      beispiel_hd: 'Eine Tasse Ovomaltine am Morgen — und der Tag kann kommen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-074',
+      ausdruck: 'Käppi',
+      hochdeutsch: 'Mütze / Kappe',
+      bedeutung: '„Käppi" ist die schweizerdeutsche Verkleinerungsform von „Kappe" (Mütze) — mit dem charakteristischen -i-Diminutiv. Ein Käppi schützt den Kopf vor Sonne und Kälte und ist als Marken-Artikel auch ein Modestatement. Schweizer Kinder bekommen früh ein Käppi mit Stickereien — meist mit dem Namen — und tragen es stolz. Eine kleine, aber sympathische Vokabel des Schweizerdeutschen.',
+      beispiel: 'Vergiss dis Käppi nid — d\'Sunne brennt hütt.',
+      beispiel_hd: 'Vergiss deine Mütze nicht — die Sonne brennt heute.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-075',
+      ausdruck: 'gäll',
+      hochdeutsch: 'Nicht wahr? / Oder?',
+      bedeutung: '„Gäll" ist die schweizerdeutsche Variante von „gell" und „nicht wahr" — eine Rückversicherungspartikel am Satzende. Sie wird im ganzen schweizerdeutschen Raum verwendet und drückt aus, dass man Zustimmung erwartet. Im Schweizerdeutschen klingt sie weicher als das deutsche „nicht wahr": „Du chunnsch mit, gäll?" Die Partikel ist so allgegenwärtig wie das Schweizer Wetter — überall und immer.',
+      beispiel: 'Das isch en schöne Tag, gäll?',
+      beispiel_hd: 'Das ist ein schöner Tag, nicht wahr?',
+      kategorie: 'redensart'
     }
   ]
 };

@@ -425,6 +425,231 @@ export default {
       beispiel: 'Obacht, da liegt a Stein — pass auf, dass du ned fällst!',
       beispiel_hd: 'Vorsicht, da liegt ein Stein — pass auf, dass du nicht fällst!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'by-051',
+      ausdruck: 'Hawara',
+      hochdeutsch: 'Freund / Kumpel',
+      bedeutung: 'Der „Hawara" ist im Bairischen der enge Freund, der treue Begleiter. Das Wort stammt vermutlich vom hebräischen „chaver" (Gefährte) und gelangte über das Rotwelsche ins Bairische. „Mei Hawara" sagt man liebevoll über jemanden, dem man vertraut. Im Gegensatz zum nüchternen „Freund" trägt „Hawara" eine warme, kameradschaftliche Note.',
+      beispiel: 'Da Sepp is mei bester Hawara — auf den kann i mi voi verlassn.',
+      beispiel_hd: 'Der Sepp ist mein bester Freund — auf den kann ich mich voll verlassen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-052',
+      ausdruck: 'Lausbua',
+      hochdeutsch: 'Schlingel / Lausbub',
+      bedeutung: 'Ein „Lausbua" ist ein Junge, der Unfug treibt — aber auf liebenswerte, schalkhafte Weise. Der Begriff kommt von „Laus" (das Insekt) und „Bua" (Junge), bezeichnet aber keinen verlausten Jungen, sondern einen frechen, lebendigen Kerl mit spitzbübischem Humor. In Bayern haftet dem Wort eine gewisse Zärtlichkeit an — Lausbubenstreiche sind Teil einer ordentlichen bairischen Kindheit.',
+      beispiel: 'A rechter Lausbua bist du — aber a liaba!',
+      beispiel_hd: 'Ein rechter Schlingel bist du — aber ein lieber!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-053',
+      ausdruck: 'Lederhosn',
+      hochdeutsch: 'Lederhose (Tracht)',
+      bedeutung: 'Die Lederhosn ist DAS Symbol bayerischer Tracht — aus Hirsch- oder Rindsleder gefertigt, mit traditionellen Stickereien (Hirschmotive, Eichenlaub) verziert. Eine echte Lederhose wird Jahrzehnte getragen und gewinnt mit jeder Patina an Wert. Die kurze Form (oberhalb des Knies) ist in Oberbayern üblich, die Kniebundhose („Bundhose") trägt man eher in Niederbayern. Bei der Wiesn ein Muss.',
+      beispiel: 'A echte Lederhosn muss erst Patina krieg\'n, dann is sie schee.',
+      beispiel_hd: 'Eine echte Lederhose muss erst Patina bekommen, dann ist sie schön.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-054',
+      ausdruck: 'Tracht',
+      hochdeutsch: 'Traditionelle bayerische Kleidung',
+      bedeutung: 'Die Tracht umfasst die traditionelle bayerische Kleidung mit regionalen Varianten: Miesbacher Tracht, Werdenfelser Tracht, Chiemgauer Tracht. Jede Region hat ihre eigene Farbgebung, Stickerei und ihren eigenen Hut. Bei Festen, Hochzeiten, Kirtagen und Beerdigungen wird Tracht getragen — sie ist nicht Kostüm, sondern bekenntnishafte Heimatkleidung. Trachtenvereine pflegen das Erbe.',
+      beispiel: 'Beim Trachtenumzug seng\'s mit ihrer ganzen Pracht.',
+      beispiel_hd: 'Beim Trachtenumzug zeigen sie sich in ihrer ganzen Pracht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-055',
+      ausdruck: 'Hax\'n',
+      hochdeutsch: 'Bein / Fuß / Schenkel',
+      bedeutung: 'Die „Hax\'n" sind im Bairischen die Beine — von „Hachse" (mhd. hahse = Kniebeuge). Im Plural verwendet, oft als deftiger Ersatz für „Beine": „Sei nimmt d\'Hax\'n unter d\'Arm" (sie nimmt die Beine unter die Arme = sie läuft schnell). Bei Tieren ist die Hax\'n auch der ganze Schenkel — daher „Schweinshax\'n" für die Schweineschulter, ein klassisches bayerisches Wirtshausgericht.',
+      beispiel: 'Mei Hax\'n tun weh nach dem langa Marsch.',
+      beispiel_hd: 'Meine Beine tun weh nach dem langen Marsch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-056',
+      ausdruck: 'Goschn',
+      hochdeutsch: 'Mund (derb)',
+      bedeutung: 'Die „Goschn" ist im Bairischen der Mund — derber, lauter, ungehobelter als das standarddeutsche „Mund". Die berühmte „bayerische Goschn" steht für die direkte, ungeschönte Art zu reden. „Halt dei Goschn!" ist eine grobe Aufforderung zum Schweigen, „a freche Goschn habn" beschreibt jemanden, der gerne und vorlaut redet. Es ist nicht unbedingt beleidigend, aber niemals fein.',
+      beispiel: 'Hoid amoi dei Goschn, du redst zuviel!',
+      beispiel_hd: 'Halt mal den Mund, du redest zu viel!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-057',
+      ausdruck: 'Trumm',
+      hochdeutsch: 'Großes Stück / Riesending',
+      bedeutung: 'Ein „Trumm" ist ein außerordentlich großes Stück von etwas — ein „Trumm Brot" ist ein gewaltiger Brotlaib, ein „Trumm Kerl" ein riesiger Mann, ein „Trumm Hund" ein gewaltiger Hund. Das Wort drückt Verwunderung über die Größe aus. Im Plural „Trümma" hat es auch die Bedeutung „Trümmer". Bairisch ist es ein universelles Wort für „etwas Großes".',
+      beispiel: 'Schau dir des Trumm Auto an — passt ja in koa Parklücke!',
+      beispiel_hd: 'Schau dir das Riesending von Auto an — passt ja in keine Parklücke!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-058',
+      ausdruck: 'Saupreiß',
+      hochdeutsch: 'Preuße (scherzhaft-abwertend)',
+      bedeutung: '„Saupreiß" ist die berühmte bayerische Bezeichnung für Norddeutsche, insbesondere für Preußen. Aus „Sau" (Schwein) und „Preiß" (Preuße) zusammengesetzt, klingt es derber als es heute meist gemeint ist — ein scherzhaftes Schimpfwort mit historischem Hintergrund (Bayern verlor 1866 gegen Preußen). Heute meist humorvoll für Norddeutsche allgemein verwendet. Echte Bayern können das Wort mit allen Tonlagen aussprechen.',
+      beispiel: 'Der Saupreiß versteht koa Wort von dem, was i sag!',
+      beispiel_hd: 'Der Preuße versteht kein Wort von dem, was ich sage!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-059',
+      ausdruck: 'Goaßmaß',
+      hochdeutsch: 'Bier-Cola-Mix mit Kirschlikör',
+      bedeutung: 'Die „Goaßmaß" (auch „Goaß") ist ein bayerischer Mix: Helles Bier mit Cola und einem Schuss Kirschlikör — insgesamt ein Liter. Eine Wiesn-Spezialität, die in den letzten Jahren stark in Mode kam. Der Name „Goaßmaß" kommt vermutlich vom Reibmuster der Geißfellhose oder dem Vergleich mit der mehrgipfeligen Bergziege („Goaß" = Geiß). Stark und süß zugleich — Vorsicht ist geboten.',
+      beispiel: 'A Goaßmaß auf der Wiesn — aber Obacht, des hat\'s in sich!',
+      beispiel_hd: 'Eine Goaßmaß auf der Wiesn — aber Vorsicht, das hat es in sich!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-060',
+      ausdruck: 'Obatzda',
+      hochdeutsch: 'Bayerischer Käseaufstrich',
+      bedeutung: '„Obatzda" (oder „Obatzter") ist die berühmte bayerische Käsezubereitung: zerdrückter reifer Camembert oder Brie mit Butter, Paprika, Salz, Pfeffer, Kümmel und gehackten Zwiebeln vermengt. Erfunden in den 1920er Jahren in Bayreuth oder am Tegernsee — die Erfindung wird heiß umstritten. Wird zur Brotzeit mit Brezn und Radieserl gereicht. Geschützte geografische Bezeichnung.',
+      beispiel: 'A Brezn mit Obatzda — bairische Brotzeit pur.',
+      beispiel_hd: 'Eine Brezel mit Obatzda — bayerische Brotzeit pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-061',
+      ausdruck: 'Brez\'n',
+      hochdeutsch: 'Brezel',
+      bedeutung: 'Die „Brez\'n" ist eines der wichtigsten Symbole der bayerischen Backkunst — ein in Natronlauge getauchter Hefeteig in der charakteristischen Form. Die Form symbolisiert verschränkte Arme (mittelalterliche Bittstellung). In Bayern ist die Brezn dunkel, fast schwarz an den Stellen, wo sie dicker ist, und wird traditionell mit der Weißwurst zum Frühstück gegessen. Salz ist Pflicht.',
+      beispiel: 'A frische Brez\'n mit Butter zum Weißwürschtl — perfekt!',
+      beispiel_hd: 'Eine frische Brezel mit Butter zur Weißwurst — perfekt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-062',
+      ausdruck: 'Schweinshax\'n',
+      hochdeutsch: 'Schweinehaxe (knusprige Schweineschulter)',
+      bedeutung: 'Die „Schweinshax\'n" ist das bayerische Nationalgericht schlechthin: eine im Ofen gegarte und knusprig gebackene Schweineschulter mit Schwartenstück. Außen rösch, innen saftig — serviert mit Knödel und Krautsalat. Eine ganze Hax\'n wiegt locker ein Kilo. In jedem bayerischen Wirtshaus auf der Karte. Beim Schneiden der knusprigen Schwarte entsteht das berühmte Krachen.',
+      beispiel: 'A Schweinshax\'n mit zwoa Knödel — des hoit mi den ganzen Tag.',
+      beispiel_hd: 'Eine Schweinehaxe mit zwei Knödeln — das hält mich den ganzen Tag.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-063',
+      ausdruck: 'Knödl',
+      hochdeutsch: 'Knödel / Kloß',
+      bedeutung: 'Der „Knödl" ist die bayerische Beilage par excellence: ein runder Kloß aus Kartoffeln, Semmeln oder einer Mischung. Es gibt den „Erdäpfelknödl" (Kartoffelknödel), den „Semmelknödl" (mit altem Brot) und den „gemischten" Knödl. Süße Varianten: Marillen- oder Topfenknödl. Eine Knödelhälfte mit Sauce zu schwenken, ist hohe bayerische Esskunst. In Bayern und Österreich Grundnahrungsmittel.',
+      beispiel: 'Zwoa Knödl zu mein Schweinebraten, bittschön!',
+      beispiel_hd: 'Zwei Knödel zu meinem Schweinebraten, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-064',
+      ausdruck: 'Maibaum',
+      hochdeutsch: 'Maibaum (Volksfesttradition)',
+      bedeutung: 'Der Maibaum ist ein hoher, geschmückter Baumstamm, der am 1. Mai im Dorfzentrum aufgestellt wird — bunte Bänder, Zunftschilder und der grüne Wipfel zeigen die Vielfalt des Ortes. Beim „Maibaum-Klauen" versuchen Nachbardörfer den Baum zu stehlen — er wird dann gegen Bier und Brotzeit zurückgegeben. Eine zentrale bayerische Brauchtumstradition, die die Dorfgemeinschaft stärkt.',
+      beispiel: 'Pass auf den Maibaum auf — sonst klauen ihn d\'Nachbarn!',
+      beispiel_hd: 'Pass auf den Maibaum auf — sonst stehlen ihn die Nachbarn!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-065',
+      ausdruck: 'Almabtrieb',
+      hochdeutsch: 'Almabtrieb (Viehrückkehr ins Tal)',
+      bedeutung: 'Der „Almabtrieb" ist das traditionelle Herabtreiben der Kühe von der Sommeralm ins Tal, meist Ende September. Hat das Vieh die Sommerwochen ohne Unglück überstanden, werden die Kühe besonders festlich geschmückt — mit Blumen, Kränzen und großen Glocken („Glockenkühe"). Im Dorf werden sie gefeiert. Ein zentrales bayerisch-alpenländisches Brauchtumsereignis, das Touristen anlockt.',
+      beispiel: 'Beim Almabtrieb hat jede Kuh an Blumenkranz aufm Kopf.',
+      beispiel_hd: 'Beim Almabtrieb hat jede Kuh einen Blumenkranz auf dem Kopf.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-066',
+      ausdruck: 'Wirtshaus',
+      hochdeutsch: 'Gasthaus / Wirtschaft / Lokal',
+      bedeutung: 'Das „Wirtshaus" ist die Seele jedes bayerischen Ortes — Treffpunkt, Stammtisch, Festsaal und Esslokal in einem. Hier wird gegessen, getrunken, diskutiert und Karten gespielt. Die „Stammtisch-Kultur" — der reservierte Tisch für eine feste Gruppe von Stammgästen — ist hochheilig. Ein gutes Wirtshaus hat einen Wirt mit Charakter, eine ehrliche bayerische Karte und ein kühles Helles aus dem Holzfass.',
+      beispiel: 'Treff ma uns am Freitag im Wirtshaus, wia immer.',
+      beispiel_hd: 'Treffen wir uns am Freitag im Wirtshaus, wie immer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-067',
+      ausdruck: 'Goaßlschnalzn',
+      hochdeutsch: 'Peitschenknallen (Volkskunst)',
+      bedeutung: 'Das „Goaßlschnalzn" ist eine alpenländische Volkskunst: Mit einer langen Lederpeitsche („Goaßl") werden rhythmische Knallgeräusche erzeugt — solo oder in Gruppen. Ursprünglich verwendeten Hirten die Goaßl, um das Vieh zu lenken; heute ist das Goaßlschnalzn ein eigenständiger Brauchtumssport mit Vereinen und Wettkämpfen. Bei Festumzügen oder beim Almabtrieb gibt es Goaßlschnalzn-Vorführungen — laut und beeindruckend.',
+      beispiel: 'Beim Almtanz wird gschnalzt, dass es bis ins Tal hallt.',
+      beispiel_hd: 'Beim Almtanz wird geknallt, dass es bis ins Tal hallt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-068',
+      ausdruck: 'Schuhplattler',
+      hochdeutsch: 'Bayerischer Volkstanz',
+      bedeutung: 'Der „Schuhplattler" ist der traditionelle bayerisch-tirolerische Volkstanz: Männer schlagen rhythmisch auf Schuhe, Knie und Oberschenkel — eine kraftvolle, virtuose Choreografie. Ursprünglich war der Schuhplattler ein Werbetanz junger Burschen, heute wird er von Trachtenvereinen gepflegt. Auf Volksfesten, Hochzeiten und beim Bezirksmusikfest gehört der Schuhplattler dazu. Frauen tanzen dabei einen ruhigeren Reigen.',
+      beispiel: 'Auf da Hochzeit ham\'s an gscheiten Schuhplattler hingelegt.',
+      beispiel_hd: 'Auf der Hochzeit haben sie einen ordentlichen Schuhplattler hingelegt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-069',
+      ausdruck: 'Tegernsee',
+      hochdeutsch: 'Tegernsee (See in Oberbayern)',
+      bedeutung: 'Der Tegernsee ist einer der schönsten Seen Oberbayerns, eingebettet zwischen den Voralpen 50 km südlich von München. Die Region rund um den See gilt als Bayerns Promi- und Hochpreis-Ecke: Familie Söder hat dort gewohnt, viele Münchner Künstler und Unternehmer haben hier Häuser. Die Tegernseer Brauerei produziert eines der bekanntesten bayerischen Hellen. Bei klarem Wetter spiegeln sich die Berge im Wasser.',
+      beispiel: 'Am Tegernsee schwimmen, wandern und a kühles Helles trinken — perfekt!',
+      beispiel_hd: 'Am Tegernsee schwimmen, wandern und ein kühles Helles trinken — perfekt!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-070',
+      ausdruck: 'Chiemsee',
+      hochdeutsch: 'Chiemsee (Bayerns Meer)',
+      bedeutung: 'Der Chiemsee — wegen seiner Größe „Bayerisches Meer" genannt — ist der drittgrößte See Deutschlands. Mit drei Inseln (Herreninsel mit Schloss Herrenchiemsee von Ludwig II., Fraueninsel mit dem berühmten Kloster und Krautinsel) ist er ein Ausflugsparadies. Die alte Chiemseebahn und die historischen Raddampfer fahren noch heute. Im Sommer voll von Seglern, Surfern und Badenden.',
+      beispiel: 'Mit\'m Dampfer auf d\'Herreninsel zum Schloss — des ist Pflicht.',
+      beispiel_hd: 'Mit dem Dampfer auf die Herreninsel zum Schloss — das ist Pflicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-071',
+      ausdruck: 'Zugspitze',
+      hochdeutsch: 'Zugspitze (höchster Berg Deutschlands)',
+      bedeutung: 'Die Zugspitze (2962 m) ist der höchste Berg Deutschlands und liegt im Wettersteingebirge an der Grenze zu Österreich. Erreichbar mit der Zahnradbahn von Garmisch oder mit der Seilbahn vom Eibsee. Auf dem Gipfel: das deutsche Gipfelkreuz, ein Bergrestaurant, ein Wetterturm und bei klarem Wetter Sicht auf vier Länder. Im Winter Skigebiet mit Gletscherbahn. Das schwarz-weiß-blaue Gipfelpanorama ist Bayerns Wahrzeichen.',
+      beispiel: 'Auf der Zugspitz\' siehst du bis ins Tirol nei.',
+      beispiel_hd: 'Auf der Zugspitze siehst du bis nach Tirol hinein.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-072',
+      ausdruck: 'FC Bayern',
+      hochdeutsch: 'FC Bayern München (Fußballclub)',
+      bedeutung: 'Der FC Bayern München ist mit über 32 deutschen Meistertiteln, sechs Champions-League-Titeln und einem Jahresumsatz von über 800 Mio. Euro der erfolgreichste deutsche Fußballverein. Gegründet 1900, spielt der Verein in der Allianz Arena (Fröttmaning). Spieler wie Beckenbauer, Müller, Maier, Rummenigge, Lahm und heute Müller, Kimmich, Musiala sind Legenden. „Mia san mia" ist das Vereinsmotto und Lebensgefühl.',
+      beispiel: 'Mia san mia — der FC Bayern is mei Verein!',
+      beispiel_hd: 'Wir sind wir — der FC Bayern ist mein Verein!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-073',
+      ausdruck: 'Allianz Arena',
+      hochdeutsch: 'Stadion des FC Bayern (Fröttmaning)',
+      bedeutung: 'Die Allianz Arena im Münchner Norden (Fröttmaning) ist das Heimstadion des FC Bayern, eröffnet 2005. Mit ihrer berühmten Außenhaut aus 2.874 rautenförmigen ETFE-Folienkissen kann sie in den Farben rot (Bayern), weiß und blau leuchten. 75.000 Plätze. Eines der modernsten Stadien Europas und Wahrzeichen Münchens. Auch Heimstadion der deutschen Nationalmannschaft bei wichtigen Spielen.',
+      beispiel: 'D\'Allianz Arena leuchtet rot — heut spielt da FCB!',
+      beispiel_hd: 'Die Allianz Arena leuchtet rot — heute spielt der FCB!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-074',
+      ausdruck: 'Münchner Kindl',
+      hochdeutsch: 'Münchner Kindl (Stadtwappen-Figur)',
+      bedeutung: 'Das „Münchner Kindl" ist die Wappenfigur Münchens: ein junger Mönch im schwarzen Habit, das auf das Stadtgründungsdatum von 1158 zurückgeht. Der Name München kommt von „Mönchen" (bei den Mönchen). Bei der Wiesn führt traditionell ein „Münchner Kindl" auf dem Pferd den Festzug an. Die Figur ist im Stadtwappen, auf Trambahnen, auf Briefen — überall in München präsent. Symbol für Stadtidentität.',
+      beispiel: 'S\'Münchner Kindl reitet vorne weg bei der Wiesn-Parade.',
+      beispiel_hd: 'Das Münchner Kindl reitet vorne weg bei der Wiesn-Parade.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-075',
+      ausdruck: 'Föhn',
+      hochdeutsch: 'Föhn (warmer Fallwind)',
+      bedeutung: 'Der „Föhn" ist ein warmer, trockener Fallwind, der von den Alpen herab ins bayerische Vorland weht. Er bringt extrem klare Sicht (man kann die Alpen aus 100 km entfernt sehen) und ungewöhnlich hohe Temperaturen — auch im Winter. Aber er macht vielen Menschen Kopfschmerzen, lethargisch oder reizbar („Föhnkrank"). Wenn die Münchner über schlechte Laune klagen, ist oft der Föhn schuld.',
+      beispiel: 'Bei dem Föhn hab i wieder a Föhnkopfweh.',
+      beispiel_hd: 'Bei dem Föhn habe ich wieder Föhn-Kopfschmerzen.',
+      kategorie: 'natur'
     }
   ]
 };

@@ -442,6 +442,456 @@ export default {
       beispiel: 'Was du da redest, is nur Buchstabensupp — ich verstehs ned!',
       beispiel_hd: 'Was du da redest, ist nur Kauderwelsch — ich verstehe es nicht!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'h-051',
+      ausdruck: 'Grie Soß',
+      hochdeutsch: 'Grüne Soße (Frankfurter Spezialität)',
+      bedeutung: 'Die Frankfurter Grüne Soße ist das wohl berühmteste Gericht Hessens — eine kalte Soße aus sieben frischen Kräutern: Borretsch, Kerbel, Kresse, Petersilie, Pimpinelle, Sauerampfer und Schnittlauch. Klassisch wird sie zu gekochten Eiern und Pellkartoffeln serviert. Goethe soll sie geliebt haben, und das jährliche Grüne-Soße-Festival im Mai zieht Tausende nach Frankfurt.',
+      beispiel: 'Zu Ostern gibts bei uns immer Grie Soß mit Eiern und Grumbeere.',
+      beispiel_hd: 'Zu Ostern gibt es bei uns immer Grüne Soße mit Eiern und Kartoffeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-052',
+      ausdruck: 'Geripptes',
+      hochdeutsch: 'geriffeltes Apfelweinglas',
+      bedeutung: 'Das traditionelle, geriffelte Glas, in dem in Frankfurt der Ebbelwoi serviert wird — die Rauten an der Außenseite haben einen praktischen Hintergrund: Mit fettigen Wurst- und Handkäs-Fingern rutscht das Glas so nicht aus der Hand. Das Geripptes fasst genau 0,25 Liter und ist ein Frankfurter Kulturgut. Wer in Sachsenhausen ein Geripptes bestellt, gehört dazu.',
+      beispiel: 'En Bembel und vier Geripptes, biddesche!',
+      beispiel_hd: 'Einen Bembel und vier geriffelte Gläser, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-053',
+      ausdruck: 'Sachsenhausen',
+      hochdeutsch: 'Sachsenhausen (Frankfurter Stadtteil)',
+      bedeutung: 'Sachsenhausen ist der südlich des Mains gelegene Stadtteil Frankfurts und das Herz der Apfelwein-Kultur. In den engen Gassen rund um die Klappergasse reihen sich traditionelle Ebbelwoi-Wirtschaften mit langen Holzbänken aneinander. Hier wird seit Jahrhunderten Apfelwein gekeltert und in Bembeln serviert — Sachsenhausen ist hessisches Lebensgefühl pur.',
+      beispiel: 'Gehn mer heut Owend nach Sachsenhausen, en Schoppe trinke!',
+      beispiel_hd: 'Gehen wir heute Abend nach Sachsenhausen, ein Glas Apfelwein trinken!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-054',
+      ausdruck: 'Eintracht',
+      hochdeutsch: 'Eintracht Frankfurt (Fußballverein)',
+      bedeutung: 'Eintracht Frankfurt — kurz „Eintracht" oder „die Adler" — ist der Fußballverein der Mainmetropole und Identifikationsobjekt der Frankfurter. Gegründet 1899, spielen sie im Deutsche-Bank-Park (früher Waldstadion). Der UEFA-Cup-Sieg 2022 in Sevilla löste in Frankfurt einen Freudentaumel aus. „SGE — Schwarz-Weiß bis zum Tod!" lautet der Schlachtruf.',
+      beispiel: 'Am Samstag spielt die Eintracht — da muss ich ins Stadion!',
+      beispiel_hd: 'Am Samstag spielt Eintracht Frankfurt — da muss ich ins Stadion!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'h-055',
+      ausdruck: 'FFM',
+      hochdeutsch: 'Frankfurt am Main',
+      bedeutung: 'FFM ist die liebevoll-knappe Abkürzung für Frankfurt am Main, die Mainmetropole und Finanzhauptstadt Deutschlands. Mit ihren Wolkenkratzern — „Mainhattan" — bietet sie eine einzigartige Skyline. Sitz der Europäischen Zentralbank, größter deutscher Flughafen und Heimat der Frankfurter Buchmesse. Echte Hessen sagen oft einfach „die Stadt", wenn sie Frankfurt meinen.',
+      beispiel: 'Morgen muss ich nach FFM, wegen dem Termin in der Bank.',
+      beispiel_hd: 'Morgen muss ich nach Frankfurt, wegen des Termins in der Bank.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-056',
+      ausdruck: 'Goethe',
+      hochdeutsch: 'Johann Wolfgang von Goethe',
+      bedeutung: 'Johann Wolfgang von Goethe (1749–1832) ist Frankfurts berühmtester Sohn und einer der bedeutendsten deutschen Dichter überhaupt. Geboren am Großen Hirschgraben, verbrachte er hier seine Jugend und schrieb Werke wie „Götz von Berlichingen" und „Die Leiden des jungen Werthers". Das Goethehaus ist heute Museum, und die Goethe-Universität trägt seinen Namen. Goethe liebte angeblich Frankfurter Grüne Soße.',
+      beispiel: 'Goethe is der bekannteste Frankfurter — auch wenn er in Weimar gestorben is.',
+      beispiel_hd: 'Goethe ist der bekannteste Frankfurter — auch wenn er in Weimar gestorben ist.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-057',
+      ausdruck: 'Buchmess',
+      hochdeutsch: 'Frankfurter Buchmesse',
+      bedeutung: 'Die Frankfurter Buchmesse ist die weltgrößte Buchmesse und findet jedes Jahr im Oktober statt. Mit ihren Wurzeln im 15. Jahrhundert (kurz nach Gutenbergs Erfindung) ist sie die älteste Messe ihrer Art. Verleger aus aller Welt handeln hier Lizenzen, und das Publikum strömt am Wochenende ins Messegelände. Der Friedenspreis des Deutschen Buchhandels wird traditionell zur Buchmesse verliehen.',
+      beispiel: 'Im Oktober is wieder Buchmess — die ganze Stadt is voll.',
+      beispiel_hd: 'Im Oktober ist wieder Buchmesse — die ganze Stadt ist voll.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-058',
+      ausdruck: 'Bornheim',
+      hochdeutsch: 'Bornheim (Frankfurter Stadtteil)',
+      bedeutung: 'Bornheim ist ein lebendiger Frankfurter Stadtteil östlich der Altstadt und gilt als das „Dorf in der Stadt". Mit der Berger Straße als belebter Einkaufs- und Ausgehmeile bietet Bornheim eine Mischung aus Tradition und Moderne. Die Bornheimer haben einen eigenen Stolz und nennen sich „Lustige Bornheimer". Der Bornheimer Hang bietet einen schönen Blick auf die Skyline.',
+      beispiel: 'Heut Abend gehn mer in Bornheim Pizza esse — die Berger is voll am Leben.',
+      beispiel_hd: 'Heute Abend gehen wir in Bornheim Pizza essen — die Berger Straße ist voll am Leben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-059',
+      ausdruck: 'Wiesbaden',
+      hochdeutsch: 'Wiesbaden (Landeshauptstadt Hessens)',
+      bedeutung: 'Wiesbaden ist die Landeshauptstadt Hessens und eine der ältesten Kurstädte Europas. Bekannt für seine 26 heißen Quellen, das Spielcasino (das angeblich Dostojewskij zu seinem Roman „Der Spieler" inspirierte) und das Kurhaus. Die Wiesbadener gelten als etwas vornehmer und feiner als die Frankfurter — das Wiesbadener Hessisch klingt entsprechend gemäßigter.',
+      beispiel: 'In Wiesbaden gehn die Reiche in die Therme baade.',
+      beispiel_hd: 'In Wiesbaden gehen die Reichen in die Therme baden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-060',
+      ausdruck: 'Kassel',
+      hochdeutsch: 'Kassel (nordhessische Großstadt)',
+      bedeutung: 'Kassel ist die größte Stadt Nordhessens und Heimat der documenta — der weltweit wichtigsten Ausstellung für zeitgenössische Kunst, die alle fünf Jahre stattfindet. Die Stadt der Brüder Grimm bietet den weltberühmten Bergpark Wilhelmshöhe mit Herkules-Statue (UNESCO-Welterbe). Das Kasselerische unterscheidet sich deutlich vom südhessischen Frankfurterisch.',
+      beispiel: 'Zur documenta kummen Künstler aus der ganzen Welt nach Kassel.',
+      beispiel_hd: 'Zur documenta kommen Künstler aus der ganzen Welt nach Kassel.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-061',
+      ausdruck: 'Schwälmer Land',
+      hochdeutsch: 'Schwalm (Region in Nordhessen)',
+      bedeutung: 'Das Schwälmer Land in Nordhessen ist eine traditionsreiche Region, bekannt für ihre einzigartige Tracht — die roten Schwälmer Hauben und die langen Trachtenröcke sind weltbekannt. Hier sollen die Brüder Grimm die Inspiration für Rotkäppchen gefunden haben. Die Schwälmer pflegen ihre Bräuche bis heute und tragen die Tracht zu Festen und kirchlichen Anlässen.',
+      beispiel: 'Die Schwälmer Tracht is weltbekannt — die rote Hauben kennt jeder.',
+      beispiel_hd: 'Die Schwälmer Tracht ist weltbekannt — die roten Hauben kennt jeder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-062',
+      ausdruck: 'Taunus',
+      hochdeutsch: 'Taunus (Mittelgebirge)',
+      bedeutung: 'Der Taunus ist das Mittelgebirge nordwestlich von Frankfurt mit dem Großen Feldberg als höchster Erhebung (881 m). Die nobleren Frankfurter Vororte wie Kronberg, Königstein und Bad Homburg liegen am Taunushang. Der Limes verlief durch den Taunus — die Saalburg ist ein rekonstruiertes Römerkastell. Beliebtes Wandergebiet und Naherholungsraum für Frankfurter.',
+      beispiel: 'Sonntags fahre mer immer in den Taunus wandern.',
+      beispiel_hd: 'Sonntags fahren wir immer in den Taunus wandern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-063',
+      ausdruck: 'Vogelsberg',
+      hochdeutsch: 'Vogelsberg (Mittelgebirge)',
+      bedeutung: 'Der Vogelsberg in Mittelhessen ist das größte zusammenhängende Vulkangebiet Mitteleuropas — wenn auch lange erloschen. Mit seinen weiten Hochflächen, Mooren und dem Hoherodskopf (764 m) als höchstem Gipfel ist er ein einsames, ursprüngliches Mittelgebirge. Im Winter gibt es Skigebiete, im Sommer ist es Wanderparadies. Die Vogelsberger gelten als besonders bodenständig.',
+      beispiel: 'Im Vogelsberg is es im Winter manchmal kälter als auf der Zugspitze.',
+      beispiel_hd: 'Im Vogelsberg ist es im Winter manchmal kälter als auf der Zugspitze.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-064',
+      ausdruck: 'Wetterau',
+      hochdeutsch: 'Wetterau (Region nördlich von Frankfurt)',
+      bedeutung: 'Die Wetterau ist eine fruchtbare Beckenlandschaft nördlich von Frankfurt, eine der ältesten Kulturlandschaften Deutschlands. Schon Römer und Kelten siedelten hier wegen der ertragreichen Böden. Heute ist die Wetterau Pendlerregion und Kornkammer Hessens. Die Wetterauer haben ihren eigenen Dialekt, der zwischen mittel- und südhessisch vermittelt.',
+      beispiel: 'In der Wetterau wachse die beste Zwiebele Hessens.',
+      beispiel_hd: 'In der Wetterau wachsen die besten Zwiebeln Hessens.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-065',
+      ausdruck: 'Bergstraß',
+      hochdeutsch: 'Bergstraße (südhessische Region)',
+      bedeutung: 'Die Hessische Bergstraße ist eine alte Handelsstraße entlang des Odenwald-Hangs zwischen Darmstadt und Heppenheim. Wegen des milden Klimas blüht hier im Frühjahr alles als erstes in Deutschland — die „deutsche Riviera". Wein- und Obstanbau prägen die Landschaft. Bensheim, Heppenheim und Zwingenberg sind charmante Fachwerkstädtchen.',
+      beispiel: 'An der Bergstraß blühe die Mandelbäum schon im Februar.',
+      beispiel_hd: 'An der Bergstraße blühen die Mandelbäume schon im Februar.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-066',
+      ausdruck: 'Rüdesheim',
+      hochdeutsch: 'Rüdesheim am Rhein',
+      bedeutung: 'Rüdesheim ist die wohl bekannteste Weinstadt am Rhein und liegt im hessischen Rheingau. Die Drosselgasse mit ihren Weinlokalen, das Niederwalddenkmal hoch über dem Rheintal (mit der Germania-Statue), und der Asbach-Uralt-Weinbrand machen Rüdesheim weltberühmt. Touristen aus aller Welt strömen hier ins Mittelrheintal, das UNESCO-Welterbe ist.',
+      beispiel: 'In Rüdesheim trinkt mer Asbach mit Kaffe — des is Tradition!',
+      beispiel_hd: 'In Rüdesheim trinkt man Asbach mit Kaffee — das ist Tradition!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-067',
+      ausdruck: 'Hessenpark',
+      hochdeutsch: 'Hessenpark (Freilichtmuseum)',
+      bedeutung: 'Der Hessenpark in Neu-Anspach am Taunusrand ist Hessens größtes Freilichtmuseum. Über 100 historische Gebäude aus ganz Hessen — Fachwerkhäuser, Mühlen, Kirchen, Werkstätten — wurden hier originalgetreu wieder aufgebaut. Besucher können traditionelles hessisches Dorfleben erleben, Handwerker bei der Arbeit beobachten und alte Backes-Brote kaufen.',
+      beispiel: 'Im Hessenpark kann mer sehen, wie unsre Großeltern noch gelebt habbe.',
+      beispiel_hd: 'Im Hessenpark kann man sehen, wie unsere Großeltern noch gelebt haben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-068',
+      ausdruck: 'Hessischer Rundfunk',
+      hochdeutsch: 'Hessischer Rundfunk (HR)',
+      bedeutung: 'Der Hessische Rundfunk (HR) ist die öffentlich-rechtliche Rundfunkanstalt für Hessen mit Sitz in Frankfurt. Bekannt sind Sendungen wie „Hallo Hessen", die hessischen Tatort-Folgen und „Die Hessen-Schau". HR3 ist einer der beliebtesten Radiosender Hessens. Der HR pflegt aktiv den hessischen Dialekt mit Mundart-Sendungen wie „Bei Bachmann".',
+      beispiel: 'Den Hessischen Rundfunk hör ich jeden Morge im Auto.',
+      beispiel_hd: 'Den Hessischen Rundfunk höre ich jeden Morgen im Auto.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-069',
+      ausdruck: 'Bei mir net!',
+      hochdeutsch: 'Bei mir nicht! / Nicht mit mir!',
+      bedeutung: 'Ein typisch hessischer Ausruf der Ablehnung — wenn jemand etwas vorschlägt oder behauptet, was man nicht akzeptieren möchte. „Bei mir net!" macht klar: Da bin ich raus, das mache ich nicht mit. Klingt resolut und unmissverständlich, aber durch den hessischen Tonfall niemals wirklich aggressiv. Ein Klassiker des hessischen Selbstbehauptung.',
+      beispiel: 'Du willst, dass ich des bezahl? Bei mir net!',
+      beispiel_hd: 'Du willst, dass ich das bezahle? Nicht mit mir!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-070',
+      ausdruck: 'Gude!',
+      hochdeutsch: 'Hallo! / Guten Tag!',
+      bedeutung: 'Die ultrakurze hessische Begrüßung — abgeleitet von „guten Tag", aber radikal verkürzt zu einer einzigen Silbe. „Gude" funktioniert zu jeder Tageszeit, von morgens bis abends, und drückt herzliche Vertrautheit aus. Manchmal wird die Begrüßung sogar nur als „Gude!" hingeworfen, ohne dass das angesprochene Gegenüber direkt antworten muss.',
+      beispiel: 'Gude, wie gehts? — Aach gude, kanns ned klage.',
+      beispiel_hd: 'Hallo, wie gehts? — Auch hallo, kann nicht klagen.',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'h-071',
+      ausdruck: 'Frankforter Worschtche',
+      hochdeutsch: 'Frankfurter Würstchen',
+      bedeutung: 'Die original Frankfurter Würstchen sind seit 1860 EU-geschützt — nur in Frankfurt am Main und Umgebung darf das Original hergestellt werden. Die schlanken, im Buchenholz geräucherten Brühwürste aus Schweinefleisch werden traditionell nur in heißem Wasser erhitzt, nicht gekocht. Mit Senf und Brot oder Kartoffelsalat sind sie ein hessischer Klassiker — und Vorbild für die amerikanischen Hot Dogs.',
+      beispiel: 'Zum Mittag gibts Frankforter Worschtche mit Kartoffelsalat.',
+      beispiel_hd: 'Zum Mittag gibt es Frankfurter Würstchen mit Kartoffelsalat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-072',
+      ausdruck: 'Glubschauche',
+      hochdeutsch: 'Glupschaugen / große starrende Augen',
+      bedeutung: 'Bezeichnung für jemanden mit auffällig großen, hervortretenden Augen oder dafür, jemanden mit weit aufgerissenen Augen anzustarren. „Mach kaa Glubschauche!" sagt man zu jemandem, der ungläubig oder dümmlich starrt. Das Wort kombiniert „glubschen" (starren) mit „Auche" (hessisch für Augen) und ist liebevoll-spöttisch gemeint.',
+      beispiel: 'Was machste denn für Glubschauche? Hast du en Geischt gsehe?',
+      beispiel_hd: 'Was machst du denn für Glupschaugen? Hast du ein Gespenst gesehen?',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-073',
+      ausdruck: 'Kerb',
+      hochdeutsch: 'Kirchweihfest / Dorffest',
+      bedeutung: 'Die hessische Kerb (von Kirchweih) ist das wichtigste Dorffest in vielen hessischen Gemeinden. Ursprünglich der Jahrestag der Kirchweihe, ist die Kerb heute mehrtägiges Volksfest mit Festzelt, Karussell, „Kerwemädchen" und Kerwepaaren. Höhepunkt ist oft das „Kerwausgrabe" — das symbolische Ausgraben einer Strohpuppe zu Beginn und ihr Begraben am Ende. Hessisches Brauchtum pur.',
+      beispiel: 'Am Wochenend is bei uns Kerb — komm doch vorbei!',
+      beispiel_hd: 'Am Wochenende ist bei uns Kirchweih — komm doch vorbei!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-074',
+      ausdruck: 'Quetschekuche',
+      hochdeutsch: 'Zwetschgenkuchen',
+      bedeutung: 'Der hessische Quetschekuche (Zwetschgenkuchen) ist im Spätsommer und Herbst ein Klassiker auf jedem Kaffeetisch. Ein Blechkuchen aus Hefeteig oder Mürbeteig, dicht belegt mit halbierten, entsteinten Zwetschgen und oft mit Streuseln oder Zimt-Zucker bestreut. Manche hessische Hausfrauen behaupten, der beste Quetschekuche werde mit Hefeteig gebacken.',
+      beispiel: 'Mit Schlagsahne is der Quetschekuche unschlagbar!',
+      beispiel_hd: 'Mit Schlagsahne ist der Zwetschgenkuchen unschlagbar!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-075',
+      ausdruck: 'Bach',
+      hochdeutsch: 'Bach (im Frankfurter Lokalkolorit: Main)',
+      bedeutung: 'In Frankfurt nennt man den Main liebevoll-augenzwinkernd „de Bach" — was die Frankfurter mit milder Selbstironie sehen: Der Main ist natürlich kein Bach, sondern ein Strom. Die Hibbdebach-Dribbdebach-Unterscheidung (siehe h-007) baut darauf auf. Auch außerhalb Frankfurts ist „Bach" das normale Wort für einen kleinen Fluss.',
+      beispiel: 'Mer gehn am Bach spaziere — der Main is heut so schön.',
+      beispiel_hd: 'Wir gehen am Main spazieren — der Main ist heute so schön.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-076',
+      ausdruck: 'Lumbe',
+      hochdeutsch: 'Lumpen / liederlicher Mensch',
+      bedeutung: 'Ein „Lumbe" ist eigentlich ein Lumpen (alter Stofffetzen), wird im Hessischen aber häufig übertragen für einen liederlichen, unzuverlässigen Menschen verwendet. „Du aler Lumbe!" kann milde tadelnd, aber auch wirklich schimpfend gemeint sein. In manchen Gegenden ist es fast schon ein liebevoller Ausdruck unter Freunden.',
+      beispiel: 'Der aler Lumbe hat mir schon wieder ned zurückgerufe!',
+      beispiel_hd: 'Der alte Lump hat mir schon wieder nicht zurückgerufen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-077',
+      ausdruck: 'kaputt',
+      hochdeutsch: 'kaputt / müde / erschöpft',
+      bedeutung: 'Im hessischen Sprachgebrauch wird „kaputt" nicht nur für defekte Gegenstände, sondern auch für erschöpfte Menschen verwendet. „Ich bin total kaputt!" bedeutet, dass man völlig fertig ist nach einem anstrengenden Tag. Das Wort kommt vom französischen „capot" (geschlagen, besiegt) — wer kaputt ist, hat schlicht keine Reserven mehr.',
+      beispiel: 'Nach der Schaffer am Bau bin ich abends echt kaputt.',
+      beispiel_hd: 'Nach der Arbeit am Bau bin ich abends echt erschöpft.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-078',
+      ausdruck: 'Bei!',
+      hochdeutsch: 'Hi! / Hey! (Begrüßung)',
+      bedeutung: 'Eine kurze, lockere hessische Begrüßung unter Vertrauten — vor allem im Frankfurter Raum üblich. „Bei!" wird oft mit „Gude!" kombiniert oder allein verwendet, besonders unter jungen Leuten. Die Begrüßung ist informell und herzlich, kann aber auch als Aufmerksamkeitsruf dienen: „Bei, hörste mer zu?".',
+      beispiel: 'Bei, alles fit?',
+      beispiel_hd: 'Hey, alles gut?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'h-079',
+      ausdruck: 'Bappe',
+      hochdeutsch: 'Papa / Vater',
+      bedeutung: 'Die hessisch-liebevolle Bezeichnung für den Vater — entspricht dem hochdeutschen „Papa", klingt aber breiter und weicher. „Mei Bappe" ist die typische Anrede für den eigenen Vater im hessischen Familienleben. Das Wort verbindet Wärme und Respekt und ist von Generation zu Generation überliefert. Bei kleinen Kindern: „Bei zum Bappe!"',
+      beispiel: 'Mei Bappe baut grad an seinem Häusche im Garten.',
+      beispiel_hd: 'Mein Papa baut gerade an seinem Häuschen im Garten.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-080',
+      ausdruck: 'Mamme',
+      hochdeutsch: 'Mama / Mutter',
+      bedeutung: 'Das hessische Gegenstück zum „Bappe" — die liebevolle Bezeichnung für die Mutter. „Mei Mamme" hat einen warmen, vertrauten Klang und drückt die enge Familienbindung der Hessen aus. Großmütter werden oft „Großmamme" oder einfach „Oma" genannt. Bei kleinen Kindern: „Bei zur Mamme!" ist häufig das erste Wort.',
+      beispiel: 'Mei Mamme kocht die beste Grie Soß weit und breit.',
+      beispiel_hd: 'Meine Mama kocht die beste Grüne Soße weit und breit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-081',
+      ausdruck: 'Frankforter Schoppe-Pedder',
+      hochdeutsch: 'Frankfurter Apfelweinkenner',
+      bedeutung: 'Ein „Schoppe-Pedder" (Schoppen-Peter) ist ein eingefleischter Frankfurter Apfelweinkenner und Stammgast in den Sachsenhäuser Wirtschaften — meist ein älterer Herr, der über jede Sorte Bescheid weiß und genau seine Lieblingswirtschaft hat. Der Schoppe-Pedder ist eine Frankfurter Institution: humorvoll, schlagfertig und immer mit einem Geripptes in der Hand.',
+      beispiel: 'Mei Opa war en echter Schoppe-Pedder — der kannte jeden Wirt persönlich.',
+      beispiel_hd: 'Mein Opa war ein echter Apfelweinkenner — der kannte jeden Wirt persönlich.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-082',
+      ausdruck: 'Klaane',
+      hochdeutsch: 'die Kleine / das kleine Mädchen',
+      bedeutung: 'Liebevolle hessische Bezeichnung für ein kleines Mädchen oder die jüngste Tochter — auch als Kosename für die Partnerin im Gebrauch. „Mei Klaane" hat einen sehr zärtlichen Klang. Bei größeren Familien differenziert man oft: „die Klaane" (die jüngste Tochter), „die Mittler" und „die Groß" (die älteste).',
+      beispiel: 'Mei Klaane geht jetzt schon in die Schul!',
+      beispiel_hd: 'Meine Kleine geht jetzt schon in die Schule!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-083',
+      ausdruck: 'Frühschoppe',
+      hochdeutsch: 'Frühschoppen / Vormittagsapfelwein',
+      bedeutung: 'Der hessische Frühschoppe ist ein traditioneller Vormittagsbesuch in der Apfelweinwirtschaft, meist am Sonntag nach dem Kirchgang. Ein bis zwei Schoppen Ebbelwoi mit Brezel oder Handkäs gehören dazu. Heute ist der Frühschoppe vor allem ein Männerritual — die Hessen sagen gerne: „En guder Frühschoppe ersetzt en ganze Therapie."',
+      beispiel: 'Sonntags um elf is bei mir Frühschoppe in Sachsenhause.',
+      beispiel_hd: 'Sonntags um elf ist bei mir Frühschoppen in Sachsenhausen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-084',
+      ausdruck: 'Bobbes',
+      hochdeutsch: 'Hintern / Po',
+      bedeutung: 'Eine humorvoll-zärtliche hessische Bezeichnung für den Hintern — vor allem bei Kindern und in entspannter Familienatmosphäre verwendet. „Setz dei Bobbes hin!" ist eine freundlich-direkte Aufforderung zum Hinsetzen. Das Wort ist weich und harmlos und kommt in keiner gehobenen Konversation, aber ständig im Alltag vor.',
+      beispiel: 'Setz dei Bobbes hin und iss endlich!',
+      beispiel_hd: 'Setz dich endlich hin und iss!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-085',
+      ausdruck: 'Pleitegeier',
+      hochdeutsch: 'Pleitegeier / drohende Pleite',
+      bedeutung: 'Der „Pleitegeier" ist eine bildhafte Metapher für drohende finanzielle Schwierigkeiten oder den finanziellen Ruin. „Der Pleitegeier kreist über mir" sagt man, wenn die Schulden überhand nehmen. Das Wort ist im gesamten deutschen Sprachraum bekannt, hat aber im hessischen Kaufmannskontext (Frankfurt als Finanzplatz) eine besondere Resonanz.',
+      beispiel: 'Wenn ich noch mehr ausgib, kreist gleich der Pleitegeier!',
+      beispiel_hd: 'Wenn ich noch mehr ausgebe, droht die Pleite!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-086',
+      ausdruck: 'Schniefnas',
+      hochdeutsch: 'Schnupfennase / verschnupfter Mensch',
+      bedeutung: 'Eine liebevoll-spöttische hessische Bezeichnung für jemanden mit verstopfter, schniefender Nase — meist im Winter bei Erkältungswelle. „Du klaaner Schniefnas!" ist mitfühlend und neckend zugleich. Das Wort kombiniert „schniefen" (durch die Nase ziehen) mit „Nas" und gehört zum hessischen Gesundheitsvokabular.',
+      beispiel: 'Mei Klaane is schon wieder en Schniefnas — der dritte Schnupfe im Winter!',
+      beispiel_hd: 'Meine Kleine hat schon wieder Schnupfen — der dritte im Winter!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-087',
+      ausdruck: 'Räs',
+      hochdeutsch: 'ranzig / sehr reif (Käse)',
+      bedeutung: '„Räs" beschreibt im hessischen Sprachgebrauch einen Käse, der sehr reif, würzig und scharf im Geschmack ist — besonders Handkäs mit Musik wird so beschrieben. Ein „räser Käs" ist nichts für Kostverächter. Das Wort hat eine positive Konnotation für Käseliebhaber — je räser, desto besser! Der Begriff ist verwandt mit dem schwäbischen „räs".',
+      beispiel: 'Der Handkäs is heut richtig räs — genau wie ich ihn mag!',
+      beispiel_hd: 'Der Handkäse ist heute richtig würzig — genau wie ich ihn mag!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-088',
+      ausdruck: 'Adventszeit',
+      hochdeutsch: 'Adventszeit / Vorweihnachtszeit',
+      bedeutung: 'Die Adventszeit hat in Hessen eine besondere Bedeutung — die Weihnachtsmärkte in Frankfurt (Römerberg), Wiesbaden (Sternschnuppenmarkt) und Marburg gehören zu den schönsten Deutschlands. Glühwein, Bethmännchen (Frankfurter Marzipangebäck) und Bratwurst gehören dazu. Der Frankfurter Weihnachtsmarkt ist einer der ältesten Deutschlands, urkundlich seit 1393 belegt.',
+      beispiel: 'In der Adventszeit gehe mer jedes Wochenend uff den Weihnachtsmarkt.',
+      beispiel_hd: 'In der Adventszeit gehen wir jedes Wochenende auf den Weihnachtsmarkt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-089',
+      ausdruck: 'Bethmännche',
+      hochdeutsch: 'Bethmännchen (Frankfurter Marzipangebäck)',
+      bedeutung: 'Bethmännchen sind kleine Marzipanküchlein mit drei halben Mandeln rundherum, eine Frankfurter Weihnachtsspezialität. Sie wurden angeblich vom Konditor des Bankiers Bethmann erfunden — die drei Mandeln symbolisieren die drei Söhne. Heute gibt es sie in jeder Frankfurter Bäckerei zur Adventszeit. Süß, mandelig und mit knuspriger Oberseite.',
+      beispiel: 'Zur Adventszeit dürfen Bethmännche nicht fehle!',
+      beispiel_hd: 'Zur Adventszeit dürfen Bethmännchen nicht fehlen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-090',
+      ausdruck: 'Brieselche',
+      hochdeutsch: 'Brezel (verkleinert)',
+      bedeutung: 'Die hessische Verkleinerungsform von Brezel — ein „Brieselche" ist ein kleines, niedliches Brezel. Brezeln gehören in Hessen zu jedem Frühstück und Abendessen, oft mit Butter oder als Beilage zum Apfelwein. In Sachsenhausen werden Brezelverkäufer mit großen Körben durch die Apfelweinwirtschaften ziehen — ein Brieselche zum Geripptes ist Tradition.',
+      beispiel: 'En Brieselche zum Schoppe, des is Frankforter Lebensgefühl!',
+      beispiel_hd: 'Eine Brezel zum Apfelweinglas, das ist Frankfurter Lebensgefühl!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-091',
+      ausdruck: 'Schäfer',
+      hochdeutsch: 'Schäfer (Beruf)',
+      bedeutung: 'Der Schäfer ist in den hessischen Mittelgebirgen — besonders in der Rhön und im Vogelsberg — noch ein lebendiger Beruf. Hessische Schäfer hüten ihre Herden auf den Hochweiden und Wacholderheiden. Die Rhönschafe sind eine traditionelle hessische Rasse. Das Schäferleben ist hart, aber der Beruf wird in Hessen aktiv erhalten als Kulturlandschaftspflege.',
+      beispiel: 'In der Rhön gibts noch echte Schäfer, die im Sommer mit ihre Schaf wandere.',
+      beispiel_hd: 'In der Rhön gibt es noch echte Schäfer, die im Sommer mit ihren Schafen wandern.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-092',
+      ausdruck: 'Mei Lieber!',
+      hochdeutsch: 'Meine Güte! / Mein Lieber!',
+      bedeutung: 'Ein hessischer Ausruf der Überraschung, des Erstaunens oder der freundlichen Begrüßung. „Mei Lieber!" wird ausgesprochen wie eine kleine Ode an die Verwunderung. Kann auch als direkte Anrede gemeint sein („Mei Lieber, was machst du da?") oder als alleinstehender Ausruf bei Überraschung. Sehr typisch für ältere Hessen.',
+      beispiel: 'Mei Lieber, des wars vielleicht en Tag!',
+      beispiel_hd: 'Meine Güte, das war vielleicht ein Tag!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-093',
+      ausdruck: 'Bach runner',
+      hochdeutsch: 'den Bach hinunter / kaputt gehen',
+      bedeutung: 'Eine bildhafte hessische Redewendung für etwas, das verloren geht, kaputt geht oder schlecht endet. „Des geht den Bach runner!" bedeutet, dass etwas in die Brüche geht oder ein Projekt scheitert. Im Frankfurter Lokalkolorit hat „Bach" eine doppelte Bedeutung — auch der Main wird so genannt (siehe h-075). Ein häufig benutzter Ausdruck.',
+      beispiel: 'Wenn des so weidergeht, geht die Firma den Bach runner.',
+      beispiel_hd: 'Wenn das so weitergeht, geht die Firma den Bach hinunter.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-094',
+      ausdruck: 'Schorle',
+      hochdeutsch: 'Schorle (Wein- oder Apfelweinschorle)',
+      bedeutung: 'Die hessische Schorle ist meist eine Apfelweinschorle — Ebbelwoi gemischt mit Mineralwasser, im Sommer das ideale Erfrischungsgetränk. „Sauer-Gespritzte" nennt man die saure Variante, „Süß-Gespritzte" die Version mit Limonade. In den Frankfurter Wirtschaften wird die Mischung im Verhältnis 50:50 angesetzt. Eine Schorle ist leichter als reiner Apfelwein.',
+      beispiel: 'Im Sommer trink ich am liebsten en Sauer-Gespritzte.',
+      beispiel_hd: 'Im Sommer trinke ich am liebsten eine saure Apfelweinschorle.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-095',
+      ausdruck: 'Vorm Lade',
+      hochdeutsch: 'vor dem Laden / vor der Türe',
+      bedeutung: 'Eine typisch hessische Ortsangabe — „vorm Lade" bedeutet vor dem Geschäft oder Wirtshaus. Klassisch ist „die Bank vorm Lade" — der Sitzplatz vor der Apfelweinwirtschaft, wo die Stammgäste im Sommer Bier oder Apfelwein trinken und das Treiben beobachten. Ein soziales Zentrum kleiner hessischer Orte.',
+      beispiel: 'Komm, mer setze uns vorm Lade — dort isses am gemütlichste!',
+      beispiel_hd: 'Komm, wir setzen uns vor das Wirtshaus — dort ist es am gemütlichsten!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-096',
+      ausdruck: 'Pellkartoffele',
+      hochdeutsch: 'Pellkartoffeln',
+      bedeutung: 'Pellkartoffeln sind in Hessen Standard-Beilage zu Grüner Soße, Handkäs und vielen anderen Gerichten. Mit Schale gekocht, dann gepellt und manchmal noch warm mit Salz, Butter oder Quark serviert. „Grumbeere mit der Pell" sagen ältere Hessen. Die Kartoffel ist seit dem 18. Jahrhundert hessisches Grundnahrungsmittel — der „Kartoffelkrieg" von 1778 spielte teilweise auf hessischem Gebiet.',
+      beispiel: 'Zur Grie Soß gehöre einfach warme Pellkartoffele dazu!',
+      beispiel_hd: 'Zur Grünen Soße gehören einfach warme Pellkartoffeln dazu!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-097',
+      ausdruck: 'Halbe',
+      hochdeutsch: 'halber Liter Bier',
+      bedeutung: 'Die „Halbe" ist im hessischen Wirtshaus die Standardbestellung für Bier — ein halber Liter. Anders als in Bayern (wo die „Maß" zu einem Liter Standard ist) und ähnlich wie in Franken trinkt der Hesse seine Halbe. Die Frankfurter Wirtschaftsleute haben sich auch hier von ihren bayerischen Nachbarn distanziert — Apfelwein und Halbe statt Maß sind hessische Norm.',
+      beispiel: 'Drei Halbe Pils, biddesche!',
+      beispiel_hd: 'Drei halbe Liter Pils, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-098',
+      ausdruck: 'Sauwedder',
+      hochdeutsch: 'Sauwetter / schlechtes Wetter',
+      bedeutung: 'Eine deftige hessische Bezeichnung für miserables Wetter — Regen, Sturm, Kälte oder alles zusammen. „Sauwedder" verbindet das Wort „Sau" (als Verstärkung) mit „Wedder" (hessische Aussprache von Wetter). Der Ausdruck ist im gesamten deutschen Sprachraum verbreitet, klingt aber im hessischen Mund besonders kernig.',
+      beispiel: 'So en Sauwedder, da bleib mer doch im Haus!',
+      beispiel_hd: 'So ein Sauwetter, da bleibt man doch im Haus!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-099',
+      ausdruck: 'Babbelwasser',
+      hochdeutsch: 'Alkohol / Schwatzdrink',
+      bedeutung: 'Eine humorvolle hessische Bezeichnung für alkoholische Getränke — meist Apfelwein oder Bier — die einen zum Reden bringen. Die Verbindung von „babbeln" (reden) und „Wasser" (Trinken) macht klar: Wenn das Babbelwasser fließt, hört das Reden nicht mehr auf. Selbstironisch gemeint — Hessen wissen um ihre Vorliebe fürs Schwätzchen.',
+      beispiel: 'Nach drei Schoppe Babbelwasser hört der nimmer auf zu rede!',
+      beispiel_hd: 'Nach drei Gläsern Apfelwein hört der nicht mehr auf zu reden!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-100',
+      ausdruck: 'Hessebabb',
+      hochdeutsch: 'Hessenstolz / Hessenliebe',
+      bedeutung: 'Ein selbstironisch-stolzer hessischer Begriff für den ausgeprägten Heimatstolz der Hessen. Der „Hessebabb" mag sein Land über alles — Ebbelwoi, Grie Soß, Eintracht Frankfurt, der Vogelsberg und das hemdsärmelige Wesen seiner Landsleute. „Ich bin halt en echter Hessebabb!" ist Bekenntnis und Liebeserklärung an die Heimat zugleich. Hessisches Identitätsgefühl in einem Wort.',
+      beispiel: 'Ich bin Hessebabb durch und durch — Frankfurt is meine Heimat!',
+      beispiel_hd: 'Ich bin Hesse durch und durch — Frankfurt ist meine Heimat!',
+      kategorie: 'menschen'
     }
   ]
 };

@@ -421,6 +421,231 @@ export default {
       beispiel: 'Weiß du, Oma — i mog di einfach.',
       beispiel_hd: 'Weißt du, Oma — ich mag dich einfach.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-051',
+      ausdruck: 'Würstelstand',
+      hochdeutsch: 'Wiener Wurstkiosk',
+      bedeutung: 'Der Würstelstand ist eine wienerische Institution: ein kleiner Kiosk, an dem Burenwurst, Käsekrainer, Bosna und Frankfurter mit Senf und Semmel verkauft werden. Klassiker wie der „Bitzinger" am Albertinaplatz oder am Schwedenplatz sind Treffpunkte für Politiker, Künstler, Studenten und Taxifahrer. Hier wird der wienerische Schmäh in Reinkultur zelebriert.',
+      beispiel: 'Geh\'ma noch auf an Käsekrainer zum Würstelstand?',
+      beispiel_hd: 'Gehen wir noch auf eine Käsekrainer zum Würstelstand?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-052',
+      ausdruck: 'Sandler',
+      hochdeutsch: 'Obdachloser / Stadtstreicher',
+      bedeutung: 'Der „Sandler" ist im Wienerischen ein Obdachloser oder ein Mensch, der auf der Straße lebt. Der Begriff kommt vom Sand, auf dem Sandler früher schliefen, oder vom Wort „sandeln" (im Sand spielen, untätig sein). Wienerisch wird das Wort meist ohne abwertende Tonlage gebraucht — eher mit einer Mischung aus Mitleid und Verständnis für gescheiterte Existenzen. Teil des Wiener Stadtcharakters.',
+      beispiel: 'Am Karlsplatz sitzt a Sandler, dem hab i was geben.',
+      beispiel_hd: 'Am Karlsplatz sitzt ein Obdachloser, dem habe ich etwas gegeben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-053',
+      ausdruck: 'Bobo',
+      hochdeutsch: 'Bohemian Bourgeois / urbaner Hipster',
+      bedeutung: '„Bobo" ist ein moderner wienerischer Begriff für die urbane, gut situierte Bohemian-Bourgeois-Klasse — Akademiker mit Bartöl, Bio-Latte, Lastenrad und einer Wohnung im 7. Bezirk. Das Wort kommt aus dem Englischen, hat sich aber typisch wienerisch eingefärbt mit leicht ironischem Unterton. Die Wiener Bobo-Kultur konzentriert sich um die Neubaugasse, Mariahilfer Straße und das Karmeliterviertel.',
+      beispiel: 'In Neubau triffst überall Bobos mitm Lastenrad und Cold Brew.',
+      beispiel_hd: 'In Neubau triffst du überall Bobos mit Lastenrad und Cold Brew.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-054',
+      ausdruck: 'Tachinieren',
+      hochdeutsch: 'Faulenzen / Blau machen',
+      bedeutung: '„Tachinieren" ist wienerisch für faulenzen, nichts tun, dem Müßiggang frönen. Das Wort hat einen sympathischen Klang — Tachinieren ist kein Vorwurf, sondern eine respektable wienerische Lebenskunst. Der Kaffeehausbesucher, der drei Stunden an einem Einspänner sitzt und Zeitung liest, betreibt hohes Tachinieren. Goethe nannte das „edler Müßiggang" — der Wiener nennt es Tachinieren.',
+      beispiel: 'I hab heut den ganzen Tag tachiniert — herrlich!',
+      beispiel_hd: 'Ich habe heute den ganzen Tag gefaulenzt — herrlich!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-055',
+      ausdruck: 'Watschn',
+      hochdeutsch: 'Ohrfeige',
+      bedeutung: 'Die „Watschn" ist die Ohrfeige — ein urwienerisches Wort, das auch in Bayern verwendet wird. In Wien hat die Watschn allerdings eine besondere kulturelle Tiefe: Sie ist das Symbol für direkte erzieherische Konsequenz, früher selbstverständlich, heute meist nur noch metaphorisch („Da hab i mir a Watschn ghoid"). In Wiener Liedern, Witzen und Sprichwörtern omnipräsent. „A gscheide Watschn" wäre eine kräftige Ohrfeige.',
+      beispiel: 'Du gehörst eigentlich a Watschn — aber des is heut nimma erlaubt.',
+      beispiel_hd: 'Du gehörst eigentlich eine Ohrfeige — aber das ist heute nicht mehr erlaubt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-056',
+      ausdruck: 'Stephansdom',
+      hochdeutsch: 'Wiener Stephansdom',
+      bedeutung: 'Der Stephansdom — liebevoll „Steffl" genannt — ist das gotische Wahrzeichen Wiens am Stephansplatz im 1. Bezirk. Der 137 Meter hohe Südturm dominiert die Wiener Skyline. Das Dach ist mit 230.000 bunten Ziegeln gedeckt, die den Doppeladler darstellen. Im Krieg 1945 schwer beschädigt, wurde der Dom in einem nationalen Kraftakt wieder aufgebaut. Mehr als nur eine Kirche — ein nationales Symbol.',
+      beispiel: 'Der Steffl is so a Wahrzeichen wie da Eiffelturm in Paris.',
+      beispiel_hd: 'Der Stephansdom ist so ein Wahrzeichen wie der Eiffelturm in Paris.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-057',
+      ausdruck: 'Schönbrunn',
+      hochdeutsch: 'Schloss Schönbrunn',
+      bedeutung: 'Schloss Schönbrunn ist die ehemalige Sommerresidenz der Habsburger im 13. Bezirk Wiens. Mit über 1.400 Zimmern, dem Tiergarten Schönbrunn (ältester Zoo der Welt, gegründet 1752), der Gloriette und den Gärten ist es UNESCO-Welterbe und Wiens meistbesuchte Sehenswürdigkeit. Hier wurden Marie Antoinette und Kaiserin Sisi groß. Heute beliebter Ort für Spaziergänge, Konzerte und Schlossbesuche.',
+      beispiel: 'Sonntags geh ma immer in Schönbrunn spaziern.',
+      beispiel_hd: 'Sonntags gehen wir immer in Schönbrunn spazieren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-058',
+      ausdruck: 'Hofburg',
+      hochdeutsch: 'Wiener Hofburg (Kaiserpalast)',
+      bedeutung: 'Die Hofburg im Zentrum Wiens war ab dem 13. Jahrhundert die Hauptresidenz der Habsburger und ist heute Sitz des österreichischen Bundespräsidenten. Mit ihren 18 Trakten, 19 Höfen und 2.600 Räumen ist sie eines der größten Palastensembles der Welt. Hier residieren auch die Spanische Hofreitschule, die Kaiserlichen Schatzkammer und mehrere Museen. Die Hofburg verkörpert die kaiserliche Geschichte Österreichs.',
+      beispiel: 'Beim Opernball fahren d\'Limousinen vor die Hofburg vor.',
+      beispiel_hd: 'Beim Opernball fahren die Limousinen vor die Hofburg vor.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-059',
+      ausdruck: 'Naschmarkt',
+      hochdeutsch: 'Wiener Naschmarkt (großer Markt)',
+      bedeutung: 'Der Naschmarkt ist Wiens größter und bekanntester Markt, gelegen entlang der Wienzeile zwischen 4. und 6. Bezirk. Auf 2,3 Hektar gibt es alles: Obst, Gemüse, Käse, Fisch, Gewürze aus aller Welt sowie zahlreiche Restaurants und Imbisse. Am Samstag findet zusätzlich der Flohmarkt statt. Der Name kommt nicht vom Naschen, sondern vom „Asch" (Holzeimer für Milch). Multikulturell und lebendig.',
+      beispiel: 'Am Naschmarkt kriegst alles — von türkischem Honig bis japanischem Sake.',
+      beispiel_hd: 'Am Naschmarkt bekommst du alles — von türkischem Honig bis japanischem Sake.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-060',
+      ausdruck: 'Mozart',
+      hochdeutsch: 'Wolfgang Amadeus Mozart',
+      bedeutung: 'Wolfgang Amadeus Mozart (1756–1791) verbrachte fast die Hälfte seines Lebens in Wien — hier komponierte er „Die Hochzeit des Figaro", „Don Giovanni", „Die Zauberflöte" und seine letzten Sinfonien. Wien ist voller Mozart-Spuren: Mozarthaus in der Domgasse, sein Grab am St. Marxer Friedhof, das Mozart-Denkmal im Burggarten. Die Mozartkugeln (eigentlich aus Salzburg) sind weltberühmt. Mozart und Wien gehören untrennbar zusammen.',
+      beispiel: 'In Wien gibt\'s an jeder Eck a Mozart-Konzert für Touristen.',
+      beispiel_hd: 'In Wien gibt es an jeder Ecke ein Mozart-Konzert für Touristen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-061',
+      ausdruck: 'Walzer',
+      hochdeutsch: 'Wiener Walzer',
+      bedeutung: 'Der Wiener Walzer ist Österreichs musikalisches Aushängeschild — entstanden im frühen 19. Jahrhundert, perfektioniert von der Strauß-Dynastie (Johann Strauß Vater, Johann Strauß Sohn). „An der schönen blauen Donau" ist die heimliche Hymne Österreichs. Der Wiener Walzer wird im Dreivierteltakt mit 60 Takten pro Minute getanzt — schneller und beschwingter als andere Walzer-Stile. Beim Opernball Pflicht.',
+      beispiel: 'A echter Wiener Walzer is so schwindlig wia Karussell fahren.',
+      beispiel_hd: 'Ein echter Wiener Walzer ist so schwindlig wie Karussellfahren.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-062',
+      ausdruck: 'Rapid Wien',
+      hochdeutsch: 'SK Rapid Wien (Fußballclub)',
+      bedeutung: 'Der SK Rapid Wien — gegründet 1899 — ist Österreichs Rekordmeister mit 32 Titeln. Die Vereinsfarben grün-weiß, der „Block West" der Fanblock, das Allianz Stadion in Wien-Hütteldorf das Zuhause. Der „Rapid-Viertelstunde" — die letzten 15 Minuten, in denen Rapid traditionell aufdreht — ist ein Wiener Sportmythos. Erbitterter Stadtrivale: FK Austria Wien. Das Wiener Derby ist eines der ältesten und emotionalsten Europas.',
+      beispiel: 'Heut spielt da Rapid — i geh in Block West!',
+      beispiel_hd: 'Heute spielt Rapid — ich gehe in den Block West!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-063',
+      ausdruck: 'U-Bahn',
+      hochdeutsch: 'Wiener U-Bahn / U-Bahn-Linien',
+      bedeutung: 'Die Wiener U-Bahn umfasst fünf Linien (U1, U2, U3, U4, U6) und bringt Wiener und Touristen quer durch die Stadt. Das Wiener Liniennetz gilt als eines der besten der Welt. Die historische Stadtbahn (heute U4) wurde 1898 von Otto Wagner gebaut — die Stationen sind Jugendstil-Kunstwerke. Die Wiener U-Bahn ist Lebensader der Stadt — 24 Stunden am Wochenende geöffnet.',
+      beispiel: 'Steigst am Schwedenplatz in die U1 ein, des is am schnellsten.',
+      beispiel_hd: 'Steig am Schwedenplatz in die U1 ein, das ist am schnellsten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-064',
+      ausdruck: 'Donau',
+      hochdeutsch: 'Donau / Wiener Donauinsel',
+      bedeutung: 'Die Donau durchfließt Wien und ist Lebensader, Erholungsgebiet und Symbol zugleich. Die Donauinsel — 21 km lang — entstand in den 1970er Jahren als Hochwasserschutz und ist heute Wiens größte Erholungsfläche. Jährlich findet hier das Donauinselfest statt — Europas größtes Open-Air-Festival mit Gratis-Eintritt. Auch die Alte Donau (ein Altarm) ist beliebtes Sommerbadegebiet.',
+      beispiel: 'Im Sommer geh ma an die Donauinsel grillen und schwimmen.',
+      beispiel_hd: 'Im Sommer gehen wir an die Donauinsel grillen und schwimmen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'w-065',
+      ausdruck: 'Kabarettist',
+      hochdeutsch: 'Wiener Kabarett-Tradition',
+      bedeutung: 'Das Wiener Kabarett ist eine Hochform der Bühnenkunst — geprägt von Schmäh, Selbstironie und politischer Schärfe. Größen wie Karl Farkas, Helmut Qualtinger („Der Herr Karl"), Werner Schneyder, Andreas Vitásek und heute Josef Hader haben das Genre geprägt. Wiener Kabarett ist niemals nur lustig — immer auch melancholisch, gesellschaftskritisch und tief in der Wiener Mentalität verwurzelt.',
+      beispiel: 'A guater Kabarettist muss in Wien lachen und weinen lassn.',
+      beispiel_hd: 'Ein guter Kabarettist muss in Wien lachen und weinen lassen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-066',
+      ausdruck: 'Buschenschank',
+      hochdeutsch: 'Heurigen-Lokal (mit Buschen geschmückt)',
+      bedeutung: 'Der Buschenschank ist ein traditionelles wienerisches und niederösterreichisches Lokal, in dem ein Winzer den eigenen Wein und kalte Speisen ausschenken darf. Das Wort kommt vom „Buschen" — einem Föhrenstrauch, der über der Tür den geöffneten Heurigen anzeigt. „Ausg\'steckt is\'" bedeutet: der Buschenschank ist offen. In Grinzing, Sievering, Stammersdorf und Nußdorf findet man die typischen Wiener Buschenschanken.',
+      beispiel: 'Heut Abend ausg\'steckt is — ma gehen in Buschenschank!',
+      beispiel_hd: 'Heute Abend ist geöffnet — wir gehen in den Buschenschank!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-067',
+      ausdruck: 'Falco',
+      hochdeutsch: 'Falco (Wiener Popstar)',
+      bedeutung: 'Hans Hölzel alias Falco (1957–1998) war Wiens größter Popstar — der erste deutschsprachige Musiker mit einem Nr. 1 Hit in den USA („Rock Me Amadeus", 1986). Seine Mischung aus Wiener Schmäh, Rap und Synthesizer war einzigartig. „Jeanny", „Der Kommissar", „Out of the Dark" — Klassiker. Falco starb 1998 bei einem Autounfall in der Dominikanischen Republik. In Wien gibt es Falco-Denkmäler, sein Grab am Zentralfriedhof ist Pilgerstätte.',
+      beispiel: 'Falco war Wien pur — schräg, intelligent und immer cool.',
+      beispiel_hd: 'Falco war Wien pur — schräg, intelligent und immer cool.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-068',
+      ausdruck: 'Sigmund Freud',
+      hochdeutsch: 'Sigmund Freud (Begründer der Psychoanalyse)',
+      bedeutung: 'Sigmund Freud (1856–1939) lebte 47 Jahre in Wien, hauptsächlich in der Berggasse 19 (heute Sigmund-Freud-Museum). Hier entwickelte er die Psychoanalyse, die Konzepte des Unterbewussten, des Ödipuskomplexes und der Traumdeutung. Die Wiener Kultur — mit ihrer Mischung aus Glanz und Melancholie, Höflichkeit und Aggression — bot ihm reiches Material. 1938 musste er vor den Nazis nach London fliehen.',
+      beispiel: 'In der Berggasse 19 hat Freud seine berühmten Couch-Sitzungen abghoidn.',
+      beispiel_hd: 'In der Berggasse 19 hat Freud seine berühmten Couch-Sitzungen abgehalten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-069',
+      ausdruck: 'Punsch',
+      hochdeutsch: 'Wiener Punsch / Glühwein (Weihnachtsmarkt)',
+      bedeutung: 'Auf den Wiener Christkindlmärkten (am Rathausplatz, in Schönbrunn, am Spittelberg) ist Punsch das wärmende Getränk der Wahl — meist mit Rum, Tee, Zucker und Gewürzen. Anders als deutscher Glühwein wird Wiener Punsch oft stärker und süßer gemacht. Der Punschkrapfen — ein rosa-rot glasierter Kuchen mit Rum-Aroma — ist ein wienerisches Konditoreigeheimnis. Punsch gehört zum Wiener Winter.',
+      beispiel: 'Auf\'m Christkindlmarkt a Punsch — und es is gleich warm im Herzen.',
+      beispiel_hd: 'Auf dem Christkindlmarkt einen Punsch — und es ist gleich warm im Herzen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-070',
+      ausdruck: 'Krapfen',
+      hochdeutsch: 'Krapfen / Berliner / Faschingskrapfen',
+      bedeutung: 'Der Wiener Krapfen ist ein gefüllter Hefeteigball, in Schmalz ausgebacken und mit Staubzucker bestreut. Klassische Füllung ist Marillenmarmelade (Aprikose), aber auch Vanille, Schoko und Powidl (Pflaumen) sind beliebt. Zur Faschingszeit isst ganz Österreich Krapfen — der Faschingskrapfen ist Pflichttradition. Die besten Krapfen bekommt man bei Aida, Demel oder am Wiener Heumarkt.',
+      beispiel: 'Im Fasching essen mir täglich drei Krapfen — da nimmst zu, aber wurscht!',
+      beispiel_hd: 'Im Fasching essen wir täglich drei Krapfen — da nimmst du zu, aber egal!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-071',
+      ausdruck: 'Habsburger',
+      hochdeutsch: 'Habsburger Kaiserdynastie',
+      bedeutung: 'Die Habsburger waren die mächtigste Dynastie Mitteleuropas — von 1273 bis 1918 stellten sie Könige und Kaiser. Wien war ab 1438 ihre Hauptstadt. Kaiserin Maria Theresia, Kaiser Joseph II., Franz Joseph I. und Kaiserin Sisi prägen das Wiener Stadtbild bis heute mit ihren Schlössern, Denkmälern und Mausoleen. Nach dem Ersten Weltkrieg endete die Monarchie 1918. Aber die habsburgische Atmosphäre lebt in Wien weiter.',
+      beispiel: 'In Wien siehst überall die Habsburger — Denkmäler, Wappen, Schlösser.',
+      beispiel_hd: 'In Wien siehst du überall die Habsburger — Denkmäler, Wappen, Schlösser.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-072',
+      ausdruck: 'Sisi',
+      hochdeutsch: 'Kaiserin Elisabeth von Österreich',
+      bedeutung: 'Elisabeth von Österreich-Ungarn (1837–1898), liebevoll „Sisi" genannt, war die Frau Kaiser Franz Josephs I. und die schillerndste Habsburgerin. Wegen ihrer Schönheit, ihrer Unkonventionalität und ihres tragischen Schicksals (sie wurde 1898 in Genf ermordet) wurde sie zur europäischen Popfigur. Die Sissi-Filme der 1950er Jahre mit Romy Schneider machten sie weltberühmt — wenn auch romantisiert. In Wien sind ihr ganze Museen gewidmet.',
+      beispiel: 'Sisi war so geliebt, dass sich Wien noch heut über sie freut.',
+      beispiel_hd: 'Sisi war so geliebt, dass sich Wien noch heute über sie freut.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-073',
+      ausdruck: 'Beuschel',
+      hochdeutsch: 'Beuschel (Innereien-Gericht)',
+      bedeutung: '„Beuschel" ist ein klassisches wienerisches Gericht aus Lunge und Herz vom Kalb, fein geschnitten und in einer Rahmsauce mit Kapern und Essiggurken serviert. Dazu gibt es einen Semmelknödel oder ein „Servierbrot". Beuschel galt früher als Arme-Leute-Essen, ist heute aber eine begehrte Spezialität in traditionellen Wiener Beisln. Die richtige Zubereitung erfordert Geduld — viele Beisl rühmen sich ihres „besten Beuschels".',
+      beispiel: 'A guats Beuschel mit Knödel — des is ehrliche Wiener Küche.',
+      beispiel_hd: 'Ein gutes Beuschel mit Knödel — das ist ehrliche Wiener Küche.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-074',
+      ausdruck: 'Schmäh führn',
+      hochdeutsch: 'Witzeln / Mit Charme reden',
+      bedeutung: '„Schmäh führn" ist die Kunst des wienerischen Charme-Geplänkels — ein humorvolles, schlagfertiges Reden, das nicht plump witzig, sondern subtil ironisch ist. Wer „Schmäh führt", flirtet, spielt, neckt — immer mit dem nötigen Augenzwinkern. Es ist eine Sozialtechnik: Wo der Norddeutsche direkt ist, schlängelt sich der Wiener mit Schmäh durchs Leben. „Den Schmäh ham\'s drauf" ist hohes Lob.',
+      beispiel: 'Mit\'m Wiener musst aufpassen — der führt immer an Schmäh.',
+      beispiel_hd: 'Mit einem Wiener musst du aufpassen — der hat immer einen Spruch parat.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-075',
+      ausdruck: 'Zentralfriedhof',
+      hochdeutsch: 'Wiener Zentralfriedhof',
+      bedeutung: 'Der Wiener Zentralfriedhof im 11. Bezirk ist mit 2,5 Mio. Bestatteten einer der größten Friedhöfe Europas — und ein wienerisches Kuriosum: er ist Ausflugsziel, Liebespaarrendezvous und Touristenmagnet. Hier liegen Beethoven, Schubert, Strauß, Brahms, Falco und unzählige andere. Die Ehrengräber-Allee ist beeindruckend. Wolfgang Ambros sang das berühmte „Es lebe der Zentralfriedhof" — eine wienerische Hymne an die Vergänglichkeit.',
+      beispiel: 'Am Zentralfriedhof liegt halb Wien — und alle Habsburger.',
+      beispiel_hd: 'Auf dem Zentralfriedhof liegt halb Wien — und alle Habsburger.',
+      kategorie: 'orte'
     }
   ]
 };
