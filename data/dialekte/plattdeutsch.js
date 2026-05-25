@@ -919,11 +919,11 @@ export default {
     },
     {
       id: 'p-108',
-      ausdruck: 'Labskaus',
-      hochdeutsch: 'Labskaus (norddeutsches Seemannsgericht)',
-      bedeutung: '„Labskaus" ist DAS norddeutsche Seemannsgericht — eine Mischung aus Pökelfleisch, Kartoffeln, Roter Bete und Zwiebeln, zu einem rosafarbenen Brei zerstampft, mit Spiegelei, Rollmops und Gewürzgurke serviert. Sieht ungewöhnlich aus, schmeckt fantastisch. Ursprung im Hafen: schwer transportable Reste wurden zerstampft, sodass auch Zahnlose noch satt wurden. Klassiker der Hamburger und Bremer Speisekarten. Norddeutsche Identität auf dem Teller.',
-      beispiel: 'Labskaus mit Spegelei und Rollmops — Pflichtprogramm in Hamburg!',
-      beispiel_hd: 'Labskaus mit Spiegelei und Rollmops — Pflichtprogramm in Hamburg!',
+      ausdruck: 'Birnen Bohnen Speck',
+      hochdeutsch: 'Birnen, Bohnen und Speck',
+      bedeutung: '„Birnen, Bohnen und Speck" ist DAS norddeutsche Sommergericht — gekochte grüne Bohnen mit ganzen Kochbirnen und Speck. Die süss-salzige Kombination ist Geschmackserlebnis pur. Stammt aus der Bauernküche Schleswig-Holsteins und Niedersachsens. Wird zwischen Juli und September gekocht, wenn Bohnen und Birnen Saison haben. Klassiker der norddeutschen Hausmannskost. Süss-deftige Kombination, die Süddeutsche oft befremdet — Norddeutsche schwärmen davon.',
+      beispiel: 'Birnen, Bohnen un Speck — Sommerklassiker bi uns!',
+      beispiel_hd: 'Birnen, Bohnen und Speck — Sommerklassiker bei uns!',
       kategorie: 'essen'
     },
     {
@@ -991,12 +991,12 @@ export default {
     },
     {
       id: 'p-116',
-      ausdruck: 'Sturmflut',
-      hochdeutsch: 'Sturmflut (Naturphänomen)',
-      bedeutung: 'Die „Sturmflut" ist das prägende Naturphänomen der norddeutschen Küste — wenn Sturm und Springflut zusammenkommen, drohen Deichbrüche. Die schlimmsten der Geschichte: „Grote Mandränke" 1362 mit Zehntausenden Toten, „Manndränke" 1634, „Hamburg-Sturmflut" 1962 (315 Tote). Helmut Schmidt wurde damals zum Krisen-Manager. Heute schützen moderne Deiche. Die Sturmflut bleibt das Albtraum-Szenario der Küste — kollektive Erinnerung.',
-      beispiel: 'Bi de Sturmflut 1962 hett Hamborg unner Water stahn.',
-      beispiel_hd: 'Bei der Sturmflut 1962 hat Hamburg unter Wasser gestanden.',
-      kategorie: 'natur'
+      ausdruck: 'Strandkorb',
+      hochdeutsch: 'Strandkorb (norddeutsche Erfindung)',
+      bedeutung: 'Der „Strandkorb" ist die norddeutsche Erfindung schlechthin — 1882 vom Rostocker Korbflechter Wilhelm Bartelmann auf Wunsch einer rheumakranken Adligen geschaffen. Schützt vor Wind, Sonne und neugierigen Blicken am Strand. Heute gibt es zwei Hauptformen: Ostsee-Form (offener) und Nordsee-Form (geschlossener). Strandkörbe werden tageweise gemietet oder gekauft. Symbol für deutschen Urlaub an der Küste. Norddeutsches Welterbe.',
+      beispiel: 'In mienem Strandkorf bin ich Köning vom Strand!',
+      beispiel_hd: 'In meinem Strandkorb bin ich König vom Strand!',
+      kategorie: 'alltag'
     },
     {
       id: 'p-117',
@@ -1018,12 +1018,12 @@ export default {
     },
     {
       id: 'p-119',
-      ausdruck: 'Köm',
-      hochdeutsch: 'Köm (norddeutscher Kümmelschnaps)',
-      bedeutung: 'Der „Köm" ist der norddeutsche Kümmelschnaps — klassisch zwischen 28 und 38 Prozent, mit kräftigem Kümmel-Aroma. Wird zur Verdauung getrunken, zum Bauernfrühstück oder als „Lütt un Lütt" (kleines Bier mit kleinem Köm) in der Hamburger Hafenkneipe. Berühmte Marken: Helbing aus Hamburg (seit 1836), Bommerlunder aus Flensburg. Der Köm gehört zur norddeutschen Trinkkultur wie der Hering zum Fischbrot. Bodenständig pur.',
-      beispiel: 'En Lütt un Lütt — Bier mit Köm, hamburger Tradition.',
-      beispiel_hd: 'Ein Lütt un Lütt — Bier mit Köm, hamburgerische Tradition.',
-      kategorie: 'essen'
+      ausdruck: 'Elphi',
+      hochdeutsch: 'Elbphilharmonie (Hamburger Konzerthaus)',
+      bedeutung: 'Die „Elphi" — Spitzname für die Elbphilharmonie — ist Hamburgs neues Wahrzeichen, eröffnet 2017 nach 10 Jahren Bauzeit und horrender Kostenüberschreitung (789 Mio. statt geplanter 77 Mio.). Architekten Herzog & de Meuron. Auf einem alten Kaispeicher thront die wellenförmige Glasfassade 110 m hoch. Beste Konzertakustik der Welt. Die „Plaza" (37 m hoch) ist kostenlos zugänglich — Touristenmagnet. Hamburg-Symbol der Moderne.',
+      beispiel: 'Vun de Elphi-Plaza hett man Blick op den ganzen Hoofen.',
+      beispiel_hd: 'Von der Elphi-Plaza hat man Blick auf den ganzen Hafen.',
+      kategorie: 'orte'
     },
     {
       id: 'p-120',

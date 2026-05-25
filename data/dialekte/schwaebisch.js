@@ -908,11 +908,11 @@ export default {
     },
     {
       id: 'sw-105',
-      ausdruck: 'Knöpfle',
-      hochdeutsch: 'Knöpfle (kleine Spätzle)',
-      bedeutung: 'Die „Knöpfle" sind die kleineren, runderen Verwandten der Spätzle — durch eine „Knöpfle-Presse" oder ein „Spätzle-Sieb mit großen Löchern" geformt. Im Allgäu heißen sie auch „Spatzen" oder „Krautspätzle". Klassisch zu Käsespätzle (Allgäuer Käsknöpfle), aber auch als Beilage. „Knöpfle" sind dichter und kompakter als die langen Spätzle — beide gehören zum schwäbischen Standardrepertoire. Schwäbische Pastakunst pur.',
-      beispiel: 'Im Allgäu gibt\'s Käsknöpfle — mit\'m Schmelz vom Heimat-Käs!',
-      beispiel_hd: 'Im Allgäu gibt es Käsknöpfle — mit dem Schmelz vom Heimat-Käse!',
+      ausdruck: 'Gaisburger Marsch',
+      hochdeutsch: 'Gaisburger Marsch (schwäbisches Eintopfgericht)',
+      bedeutung: 'Der „Gaisburger Marsch" ist ein deftiges schwäbisches Eintopfgericht aus Stuttgart-Gaisburg: Rindfleisch in Brühe, mit Kartoffeln, Spätzle und Zwiebeln. Legende: Im 19. Jh. mussten Stuttgarter Soldaten zur Strafe nach Gaisburg marschieren — der Eintopf war ihre Belohnung. Wird oft am Sonntag oder als Wintergericht serviert. Stuttgarter Identitätsgericht — wer das Original isst, weiß was Schwäbisch ist.',
+      beispiel: 'Am Sonntag gibt\'s bei Oma Gaisburger Marsch — herrlich!',
+      beispiel_hd: 'Am Sonntag gibt es bei Oma Gaisburger Marsch — herrlich!',
       kategorie: 'essen'
     },
     {
@@ -998,11 +998,11 @@ export default {
     },
     {
       id: 'sw-115',
-      ausdruck: 'Hohenzollern',
-      hochdeutsch: 'Burg Hohenzollern',
-      bedeutung: 'Die „Burg Hohenzollern" auf dem Berg Hohenzollern (855 m, bei Hechingen, Baden-Württemberg) ist Stammsitz des preussischen Königshauses Hohenzollern. Die heutige neogotische Burg wurde 1850–1867 erbaut — eine der schönsten Schlossanlagen Deutschlands. Bei klarem Wetter weithin sichtbar als Silhouette auf dem Albtrauf. Heute Museum und Touristenmagnet — mit der originalen preussischen Königskrone. Schwäbisches Wahrzeichen mit Welt-Geschichte.',
-      beispiel: 'D\'Hohenzollern thront wia a Märchaschloss überm Albtrauf.',
-      beispiel_hd: 'Die Hohenzollern thront wie ein Märchenschloss über dem Albtrauf.',
+      ausdruck: 'Lichtenstein',
+      hochdeutsch: 'Schloss Lichtenstein (Schwäbische Alb)',
+      bedeutung: 'Das „Schloss Lichtenstein" auf der Schwäbischen Alb (bei Reutlingen) ist das „Märchenschloss Württembergs" — erbaut 1840–1842 vom Grafen Wilhelm von Württemberg, inspiriert vom Roman „Lichtenstein" (1826) von Wilhelm Hauff. Auf einem 250 m hohen Felssporn thront das neugotische Schloss spektakulär über dem Albtal. Sammlung mittelalterlicher Waffen und Rüstungen. Heute Touristen-Magnet und Filmkulisse. Schwäbischer Romantik-Klassiker.',
+      beispiel: 'S\'Schloss Lichtenstein isch a echts Märchaschloss.',
+      beispiel_hd: 'Das Schloss Lichtenstein ist ein echtes Märchenschloss.',
       kategorie: 'orte'
     },
     {
@@ -1070,12 +1070,12 @@ export default {
     },
     {
       id: 'sw-123',
-      ausdruck: 'Wengerter',
-      hochdeutsch: 'Wengerter (Weinbauer)',
-      bedeutung: 'Der „Wengerter" ist im Schwäbischen der Weinbauer — vom mittelalterlichen „Wengert" (Weinberg). Schwäbischer Weinbau hat Tradition seit dem 8. Jh., bewirtschaftet vor allem das Neckartal, Remstal, Kocher- und Jagsttal. Berühmte Wengerter-Orte: Stuttgart-Stadt, Esslingen, Ludwigsburg, Heilbronn. Wengerter sind echte Berufs-Charaktere: hart arbeitend, wettergegerbt, mit ausgeprägtem Sinn für Tradition. Schwäbische Wein-Kultur in Person.',
-      beispiel: 'Mei Onkel isch Wengerter mit a am Neckar.',
-      beispiel_hd: 'Mein Onkel ist Weinbauer mit einem Weinberg am Neckar.',
-      kategorie: 'arbeit'
+      ausdruck: 'Wachturm',
+      hochdeutsch: 'Wachturm / Stadtwächter-Tradition',
+      bedeutung: 'Der „Wachturm" oder „Türmer" ist in vielen schwäbischen Kleinstädten noch lebendige Tradition: In Esslingen, Schwäbisch Hall und Nürtingen rufen Turmbläser noch heute zu festlichen Anlässen vom Stadtturm. Das Esslinger Burgtor mit Glocke und Wächterhaus ist Sinnbild der wehrhaften Bürgerstadt. „Auf den Wachturm steigen" — schwäbische Tradition seit dem Mittelalter. Schwäbisches Brauchtum lebt auch in Türmen weiter.',
+      beispiel: 'In Esslingen bläst no immer da Türmer vom Wachturm.',
+      beispiel_hd: 'In Esslingen bläst noch immer der Türmer vom Wachturm.',
+      kategorie: 'orte'
     },
     {
       id: 'sw-124',

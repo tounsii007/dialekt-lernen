@@ -948,12 +948,12 @@ export default {
     },
     {
       id: 's-109',
-      ausdruck: 'Soljanka',
-      hochdeutsch: 'Soljanka (Suppe DDR-Klassiker)',
-      bedeutung: 'Die „Soljanka" ist eine säuerlich-scharfe Suppe russisch-ukrainischer Herkunft, die in der DDR zum Restaurant-Klassiker wurde. Mit Wurst, Schinken, Gurken, Tomatenmark, Kapern und Zitrone. In jedem DDR-Lokal Standard-Gericht — fester Speiseplan-Bestandteil. Hat die Wende überlebt und ist in ostdeutschen Restaurants und Bahnhofsgaststätten noch immer beliebt. Mit Sauerrahm und Brot ein Wintergericht der ostdeutschen Identität.',
-      beispiel: 'Eene heiße Soljanka im Winter — geht nüscht drüber.',
-      beispiel_hd: 'Eine heiße Soljanka im Winter — geht nichts drüber.',
-      kategorie: 'essen'
+      ausdruck: 'Knusperhäuschen',
+      hochdeutsch: 'Knusperhäuschen (Hänsel-und-Gretel-Folklore)',
+      bedeutung: 'Das „Knusperhäuschen" aus dem Märchen „Hänsel und Gretel" (Brüder Grimm) ist in der sächsisch-thüringischen Folklore besonders verankert — die Geschichte spielt vermutlich im Thüringer Wald oder Erzgebirge. Bäcker stellen zur Weihnachtszeit kleine Pfefferkuchen-Häuschen aus, die nach dem Vorbild gebaut sind. Symbol für die Volksmärchen-Tradition, die das Erzgebirge und Sachsen geprägt hat. Kindheitskultur mit dunkler Tiefe.',
+      beispiel: 'Ze Weihnachten bauen mir a Knusperhäuschen aus Pfefferkuchen.',
+      beispiel_hd: 'Zu Weihnachten bauen wir ein Knusperhäuschen aus Pfefferkuchen.',
+      kategorie: 'redensart'
     },
     {
       id: 's-110',

@@ -907,11 +907,11 @@ export default {
     },
     {
       id: 'ch-104',
-      ausdruck: 'Zermatt',
-      hochdeutsch: 'Zermatt (Walliser Bergdorf)',
-      bedeutung: 'Zermatt am Fuss des Matterhorns ist der berühmteste Walliser Bergort. Autofrei seit 1947 — nur Elektrofahrzeuge, Pferdekutschen und Schienen. Skigebiet bis 3.899 m (höchstes Skigebiet Europas), Gornergrat-Bahn mit Matterhorn-Panorama. Treffpunkt der internationalen Schickeria, Bergsteiger, Skifahrer. Edward Whymper bestieg 1865 erstmals das Matterhorn — Beginn des Alpinismus-Booms. Tourismus-Wunder im Hochpreissegment.',
-      beispiel: 'Z\'Zermatt fahret nur elektrischi Autos — ke Diesel!',
-      beispiel_hd: 'In Zermatt fahren nur elektrische Autos — kein Diesel!',
+      ausdruck: 'Saas-Fee',
+      hochdeutsch: 'Saas-Fee (Walliser Gletscherdorf)',
+      bedeutung: 'Saas-Fee im Saastal (Wallis) ist die „Perle der Alpen" — autofreies Dorf auf 1.800 m, umgeben von 13 Viertausendern. Bekannt für ganzjährigen Gletscherskilauf, das höchste Drehrestaurant Welt (Allalin, 3500 m) und Bergsteiger-Tradition. Anders als das mondäne Zermatt familiärer und naturverbundener — ein „echtes" Walliser Dorf mit alten Steinhütten und Trockenmauern. Geheimtipp unter Skifahrern und Bergliebhabern.',
+      beispiel: 'Saas-Fee isch d\'Perle vo de Walliser Alpe!',
+      beispiel_hd: 'Saas-Fee ist die Perle der Walliser Alpen!',
       kategorie: 'orte'
     },
     {

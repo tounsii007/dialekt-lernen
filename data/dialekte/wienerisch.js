@@ -874,11 +874,11 @@ export default {
     },
     {
       id: 'w-101',
-      ausdruck: 'Beisl',
-      hochdeutsch: 'Beisl (Wiener Kneipe)',
-      bedeutung: 'Das „Beisl" ist die Wiener Eckkneipe — gemütliche, oft verrauchte Lokalität, in der die wichtigsten Wiener Lebensentscheidungen getroffen werden. Vom jiddischen „bajis" (Haus). Kleinerer und einfacher als ein Wirtshaus. Beim Beislwirt herrscht eine eigene Etikette: erst grüßen, dann bestellen. Klassiker: „Plachutta", „Pfarrwirt", „Glacis Beisl". Wiener Kultur in Reinkultur — auch UNESCO-würdig.',
-      beispiel: 'Beim Beisl ums Eck wird heut\' Tarock g\'spielt.',
-      beispiel_hd: 'Beim Beisl ums Eck wird heute Tarock gespielt.',
+      ausdruck: 'Konditorei',
+      hochdeutsch: 'Wiener Konditorei',
+      bedeutung: 'Die „Konditorei" ist in Wien fast ein Heiligtum — Orte wie Demel, Sluka, Aida, Heiner und Gerstner sind UNESCO-würdige Institutionen. Hofzuckerbäckereien lieferten an Kaiser und Adel — die k.u.k. Tradition der süßen Verführung lebt fort. Sachertorten, Dobostorten, Esterhazy, Punschkrapfen, Mohnstrudel. Die Wiener Konditorei ist Kulturgut — wie das Kaffeehaus eine eigene Lebensphilosophie der Verlangsamung.',
+      beispiel: 'In jeder Wiener Konditorei gibt\'s a Spezialitätn.',
+      beispiel_hd: 'In jeder Wiener Konditorei gibt es eine Spezialität.',
       kategorie: 'orte'
     },
     {
@@ -919,11 +919,11 @@ export default {
     },
     {
       id: 'w-106',
-      ausdruck: 'Würstelstand',
-      hochdeutsch: 'Würstelstand (Wiener Imbiss)',
-      bedeutung: 'Der „Würstelstand" ist die Wiener Imbiss-Institution — kleine, oft 24/7 geöffnete Buden mit klassischen Wiener Spezialitäten: Käsekrainer, Burenwurst, Bosna, Frankfurter. Wichtige Etikette: bestellen, mit „A Bier" zur Wurst, schnell essen, weitergehen. Berühmte Würstelstände: „Bitzinger" hinter der Albertina, „Zum Goldenen Würstel". Wiener Lebensgefühl mitten in der Nacht. Auch UNESCO-würdige Wiener Kultur.',
-      beispiel: 'Nach\'m Theater no schnell zum Würstelstand!',
-      beispiel_hd: 'Nach dem Theater noch schnell zum Würstelstand!',
+      ausdruck: 'Eitrige',
+      hochdeutsch: 'Eitrige (Spitzname Käsekrainer)',
+      bedeutung: 'Die „Eitrige" ist der wenig appetitliche, aber liebevolle Spitzname für die Käsekrainer-Wurst am Wiener Würstelstand. Der Käse sprudelt beim Reinbeißen heraus — daher der Name. Beim Würstelstand bestellt man die berühmte Kombination: „A Eitrige mit an Buckel und an 16er-Blech, scharf!" — Käsekrainer mit Brotende und Ottakringer-Bier mit Senf. Wiener Würstelstand-Slang als eigene Subkultur — ohne Übersetzung kein Verstehen.',
+      beispiel: 'A Eitrige mit\'n Buckel — Würstelstand-Klassiker!',
+      beispiel_hd: 'Eine Käsekrainer mit Brotende — Würstelstand-Klassiker!',
       kategorie: 'essen'
     },
     {
