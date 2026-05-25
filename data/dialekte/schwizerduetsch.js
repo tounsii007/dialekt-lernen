@@ -1597,6 +1597,276 @@ export default {
       beispiel: 'Wenn i lang im Uusland bi, han i scho mol Heimwee.',
       beispiel_hd: 'Wenn ich lange im Ausland bin, habe ich schon manchmal Heimweh.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-181',
+      ausdruck: 'Röschti',
+      hochdeutsch: 'Rösti (Kartoffel-Spezialität)',
+      bedeutung: 'Die „Röschti" ist DAS Schweizer Nationalgericht — geriebene und gebratene Kartoffeln, knusprig außen, weich innen. Stammt ursprünglich aus der Deutschschweiz, heute international bekannt. „Röstigraben" als kultureller Begriff für die Grenze zwischen Deutschschweiz und Romandie. Wird mit Spiegelei, Käse oder als Beilage serviert. Symbol für Schweizer Esskultur. Jede Schweizer Familie hat ihr eigenes Rösti-Rezept.',
+      beispiel: 'Röschti mit Spiegelei zum Zmittag!',
+      beispiel_hd: 'Rösti mit Spiegelei zum Mittagessen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-182',
+      ausdruck: 'Fondue',
+      hochdeutsch: 'Käsefondue',
+      bedeutung: 'Das „Fondue" ist Schweizer Nationalgericht Nummer 1 — geschmolzener Käse (Vacherin, Gruyère) in dem Brotwürfel getunkt werden. „Wer das Brot verliert, muss eine Runde Wein zahlen!" Tradition seit dem 18. Jahrhundert. „Caquelon" als Topf, „Rechaud" als Brennstelle. Symbol für Schweizer Geselligkeit. In der Wintersaison Klassiker. Auch Fleischfondue oder Schokoladenfondue verbreitet.',
+      beispiel: 'Zum Znacht gibts Fondue mit Vacherin.',
+      beispiel_hd: 'Zum Abendessen gibt es Fondue mit Vacherin.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-183',
+      ausdruck: 'Raclette',
+      hochdeutsch: 'Raclette (Käse-Spezialität)',
+      bedeutung: 'Das „Raclette" ist Schweizer Käse-Spezialität aus dem Wallis — geschmolzener Käse über Pellkartoffeln, Cornichons und Silberzwiebeln. Tradition seit dem 13. Jahrhundert. „Raclette-Käse" wird über offenem Feuer geschmolzen, traditionell. Heute mit Raclette-Grill als Familien-Essen. Symbol für Schweizer Bergküche. Mit Weißwein serviert.',
+      beispiel: 'Raclette mit der Familie an Silvester!',
+      beispiel_hd: 'Raclette mit der Familie an Silvester!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-184',
+      ausdruck: 'Müesli',
+      hochdeutsch: 'Müsli (Schweizer Erfindung)',
+      bedeutung: 'Das „Müesli" wurde 1900 vom Schweizer Arzt Maximilian Bircher-Benner erfunden — Haferflocken mit Äpfeln, Nüssen, Honig, Milch. „Bircher-Müesli" als Originalname. Symbol für Schweizer Gesundheitsbewusstsein und Reformkost-Tradition. Heute weltweit als „Muesli" bekannt. „Müesli zum Zmorge" als Schweizer Standard. Bircher-Benner-Klinik in Zürich legendär.',
+      beispiel: 'Müesli zum Zmorge — gsund und feiss!',
+      beispiel_hd: 'Müsli zum Frühstück — gesund und sättigend!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-185',
+      ausdruck: 'Cervelat',
+      hochdeutsch: 'Cervelat (Schweizer Wurst)',
+      bedeutung: 'Der „Cervelat" ist DIE Schweizer Wurst — kurze, dicke Brühwurst, oft gegrillt oder roh gegessen. „Cervelat-Schweiz" — Symbol für Schweizer Esskultur. Beim Bergwandern, beim Grillieren, beim Apero allgegenwärtig. Stammt aus dem 16. Jahrhundert. „Cervelat-Crisis" wenn der brasilianische Lieferant für Wursthüllen ausfiel (2006). Symbol für Schweizer Identität.',
+      beispiel: 'A Cervelat zum Grillieren am Wochenend!',
+      beispiel_hd: 'Eine Cervelat zum Grillen am Wochenende!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-186',
+      ausdruck: 'Toblerone',
+      hochdeutsch: 'Toblerone (Schweizer Schokolade)',
+      bedeutung: 'Die „Toblerone" ist berühmte Schweizer Schokolade — dreieckig wie das Matterhorn, mit Mandelnougat. 1908 in Bern erfunden von Theodor Tobler. Symbol für Schweizer Schokolade-Tradition. Auf jedem Schweizer Flughafen-Duty-Free. Touristen-Souvenir Nummer 1. „Toblerone-Crisis" 2016 als die Stückchen kleiner wurden — Schweizer Drama.',
+      beispiel: 'A Toblerone aus em Duty-Free!',
+      beispiel_hd: 'Eine Toblerone aus dem Duty-Free!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-187',
+      ausdruck: 'Lindt',
+      hochdeutsch: 'Lindt (Schokolade-Marke)',
+      bedeutung: '„Lindt" ist berühmte Schweizer Schokolade-Marke — gegründet 1845 in Zürich. „Lindor"-Kugeln als Bestseller. Schweizer Schokolade-Premium-Marke. Lindt-Werk in Kilchberg als Touristen-Magnet. Symbol für Schweizer Schokolade-Qualität. „Lindt-Boutique" als Verkaufsstandort weltweit. Im Vergleich zu Toblerone teurer und feiner.',
+      beispiel: 'Lindor-Kugeln — typisch Schweizer Geschenk!',
+      beispiel_hd: 'Lindor-Kugeln — typisch Schweizer Geschenk!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-188',
+      ausdruck: 'Apfeltüechli',
+      hochdeutsch: 'Apfelkrapfen / Apfelküchlein',
+      bedeutung: 'Das „Apfeltüechli" ist Schweizer Süßspeise — Apfelringe in Teig getaucht und in heißem Fett ausgebacken. Mit Zucker und Zimt bestreut. Tradition seit Jahrhunderten. Klassisch zum Sonntags-Zvieri. Symbol für Schweizer Hausmannskost und Süßspeisen-Tradition. „Apfeltüechli mit Vanillesoße" als Variante. Im Vergleich zu deutschen Apfelküchlein etwas dicker.',
+      beispiel: 'Apfeltüechli zum Zvieri mit Zucker und Zimt!',
+      beispiel_hd: 'Apfelkrapfen zum Vesper mit Zucker und Zimt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-189',
+      ausdruck: 'Bratwurscht',
+      hochdeutsch: 'Bratwurst (St. Galler)',
+      bedeutung: 'Die „Bratwurscht" — vor allem die St. Galler Bratwurst — ist Schweizer Spezialität. Weisslich, fein gewürzt, mit Senf (auf Schweizerisch eine Sünde — sie wird NUR ohne Senf gegessen!). „Bratwurschtli mit Bürli" als typische Mahlzeit. Symbol für Schweizer Esskultur. Touristen lernen die St. Galler Regel: kein Senf!',
+      beispiel: 'A Bratwurscht ohne Senf, bitte!',
+      beispiel_hd: 'Eine Bratwurst ohne Senf, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-190',
+      ausdruck: 'Sackmesser',
+      hochdeutsch: 'Schweizer Taschenmesser',
+      bedeutung: 'Das „Sackmesser" — Schweizer Taschenmesser, weltberühmt „Swiss Army Knife" — wurde 1891 von Karl Elsener erfunden (Victorinox). Mit Klinge, Schraubenzieher, Korkenzieher, Schere und mehr. Symbol für Schweizer Präzision und Erfindergeist. Jedes Schweizer Kind bekommt eines. Auch international Kultobjekt. „Sackmesser in der Hosentasche" als Schweizer Identität.',
+      beispiel: 'Mit em Sackmesser chasch alles repariere!',
+      beispiel_hd: 'Mit dem Taschenmesser kannst du alles reparieren!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-191',
+      ausdruck: 'Postauto',
+      hochdeutsch: 'Postauto (Schweizer Bus)',
+      bedeutung: 'Das „Postauto" ist legendärer gelber Schweizer Bus — fährt zuverlässig in jedes Bergdorf. Tradition seit 1906. „Postauto-Dreiklangshorn" („Du-da-do") als Symbol — von Rossinis Wilhelm Tell. Schweizer Pünktlichkeit auf Rädern. Symbol für Schweizer Verkehrs-Infrastruktur und Erreichbarkeit. Touristen lieben es. Auch in den höchsten Alpenpässen.',
+      beispiel: 's\'Postauto fahrt sogar i jedes Bergdorf!',
+      beispiel_hd: 'Das Postauto fährt sogar in jedes Bergdorf!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-192',
+      ausdruck: 'Schwiizer Bank',
+      hochdeutsch: 'Schweizer Bank',
+      bedeutung: 'Die „Schwiizer Bank" ist Symbol für Schweizer Bankgeheimnis und Finanzplatz — UBS, Credit Suisse, Privatbanken in Zürich und Genf. „Numbered Account" als Klischee. Schweizer Bankgeheimnis 1934 gesetzlich verankert, 2018 für Steuersachen abgeschafft. Symbol für Schweizer Finanzwesen. „Schwiizer Bank" als sicherer Hafen. Heute reformiert, aber Klischee bleibt.',
+      beispiel: 'Mei Vata hat is Konto uf de Schwiizer Bank.',
+      beispiel_hd: 'Mein Vater hat sein Konto auf der Schweizer Bank.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-193',
+      ausdruck: 'Frankenstärke',
+      hochdeutsch: 'Schweizer Franken (stark)',
+      bedeutung: 'Die „Frankenstärke" ist Schweizer Wirtschafts-Phänomen — der Schweizer Franken (CHF) als sicherer Hafen in Krisen. „CHF ist die härteste Währung Europas". Schweizer Exporteure leiden unter der Frankenstärke. Symbol für Schweizer Finanz-Identität. Schweizerische Nationalbank (SNB) kämpft mit Wechselkursen. „1 Franken = 1 Euro" als historischer Marker.',
+      beispiel: 'Die Frankenstärke macht Tourismus teuer.',
+      beispiel_hd: 'Die Frankenstärke macht Tourismus teuer.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-194',
+      ausdruck: 'Alphorn',
+      hochdeutsch: 'Alphorn',
+      bedeutung: 'Das „Alphorn" ist Schweizer Nationalinstrument — bis zu 4m langes Holzblasinstrument. Ursprünglich zur Verständigung zwischen Almhirten. Heute Touristen-Folklore und Konzert-Instrument. „Alphorn-Konzerte" auf Bergen und in Kursälen. Symbol für Schweizer Bergtradition. Bekannt durch Werbung („Ricola"). Klingt majestätisch und melancholisch.',
+      beispiel: 'Das Alphorn klingt durch d\'Berge!',
+      beispiel_hd: 'Das Alphorn klingt durch die Berge!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-195',
+      ausdruck: 'Jodel',
+      hochdeutsch: 'Jodel (Gesangstechnik)',
+      bedeutung: 'Der „Jodel" ist Schweizer Gesangstradition — schneller Wechsel zwischen Brust- und Kopfstimme. Tradition aus dem 18. Jahrhundert. „Jodel-Klubs" in vielen Schweizer Dörfern. „Jodelfest" als Volksfest. Symbol für Schweizer Bergkultur und Volksmusik. Auch in Tirol und Bayern verbreitet, aber Schweizer Jodel-Stil ist eigen. Heinrich Hediger als bekannter Jodler.',
+      beispiel: 'Im Jodelchörli sind 40 Sänger.',
+      beispiel_hd: 'Im Jodelchörle sind 40 Sänger.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-196',
+      ausdruck: 'Sennenhund',
+      hochdeutsch: 'Bernhardiner / Sennenhund',
+      bedeutung: 'Der „Sennenhund" — vor allem Berner Sennenhund und Bernhardiner — ist Schweizer Hunderasse. Bernhardiner als legendärer Rettungshund am Sankt-Gotthard-Pass. „Barry der Bernhardiner" rettete 40 Menschenleben. Symbol für Schweizer Treue und Bergwelt. Berner Sennenhund als Familienhund weltweit beliebt. Tradition als Schutz- und Zughund auf Schweizer Bauernhöfen.',
+      beispiel: 'Der Bernhardiner Barry isch a Held!',
+      beispiel_hd: 'Der Bernhardiner Barry ist ein Held!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-197',
+      ausdruck: 'Bundesrat',
+      hochdeutsch: 'Schweizer Bundesrat (Regierung)',
+      bedeutung: 'Der „Bundesrat" ist die siebenköpfige Schweizer Regierung — Kollegialprinzip, jährlich rotierende Präsidentschaft. Bekannte Bundesräte: Adolf Ogi, Christoph Blocher, Doris Leuthard. Symbol für Schweizer Konsens-Demokratie und politische Stabilität. „Bundesrat-Wahl" alle 4 Jahre durch das Parlament. Schweizer Politik durch Direktdemokratie geprägt.',
+      beispiel: 'Der Bundesrat hat 7 Mitglieder.',
+      beispiel_hd: 'Der Bundesrat hat 7 Mitglieder.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-198',
+      ausdruck: 'Volksabstimmung',
+      hochdeutsch: 'Volksabstimmung',
+      bedeutung: 'Die „Volksabstimmung" ist Schweizer Demokratie-Markenzeichen — 4× pro Jahr stimmen Schweizer über Sachfragen ab. Direktdemokratie weltweit einzigartig. „Volksinitiative" für Bürgeranträge. Stimmpflicht in einigen Kantonen. Symbol für Schweizer politische Beteiligung. Bekannte Abstimmungen: Frauenstimmrecht 1971 (spät!), Minarettverbot 2009.',
+      beispiel: 'Z\'nächst Wuche is wieder Volksabstimmung.',
+      beispiel_hd: 'In der nächsten Woche ist wieder Volksabstimmung.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-199',
+      ausdruck: 'Kanton',
+      hochdeutsch: 'Kanton (Schweizer Bundesland)',
+      bedeutung: 'Der „Kanton" ist Schweizer Bundesland — 26 Kantone in der Schweiz, jeder mit eigener Verfassung, Parlament, Regierung. „Kanton-Patriotismus" stärker als nationaler Patriotismus. „Mei Heimatkanton" als Identitäts-Marker. Symbol für Schweizer Föderalismus. „Kantönligeist" als negativer Begriff für übertriebenen Lokalpatriotismus.',
+      beispiel: 'Im Kanton Zürich isch alles teurer.',
+      beispiel_hd: 'Im Kanton Zürich ist alles teurer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-200',
+      ausdruck: 'Sechseläuten',
+      hochdeutsch: 'Sechseläuten (Zürcher Frühlingsfest)',
+      bedeutung: '„Sechseläuten" ist Zürcher Frühlingsfest — am dritten Montag im April wird der „Böögg" (Schneemann) auf dem Sechseläutenplatz verbrannt. Je schneller der Kopf des Bööggs explodiert, desto schöner wird der Sommer. Tradition seit 1818. Symbol für Zürcher Identität. Festumzug mit den Zürcher Zünften. Stadt-Feiertag. Touristen-Magnet.',
+      beispiel: 'Z\'Sechseläuten verbrenne mer de Böögg!',
+      beispiel_hd: 'Zum Sechseläuten verbrennen wir den Böögg!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-201',
+      ausdruck: 'Streetparade',
+      hochdeutsch: 'Streetparade (Zürcher Techno-Parade)',
+      bedeutung: 'Die „Streetparade" ist Zürcher Techno-Parade — größte Techno-Parade Europas. Tradition seit 1992. 800.000 Besucher am zweiten Samstag im August. „Love Mobiles" mit DJs ziehen am Zürichsee entlang. Symbol für Zürcher Underground und internationale Techno-Szene. Friedlich und multikulturell. Touristen-Magnet.',
+      beispiel: 'Z\'Streetparade isch jährlich a Mega-Event!',
+      beispiel_hd: 'Zur Streetparade ist jährlich ein Mega-Event!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-202',
+      ausdruck: 'Bundesbrief',
+      hochdeutsch: 'Bundesbrief (Schweizer Gründung)',
+      bedeutung: 'Der „Bundesbrief" von 1291 ist Schweizer Gründungsdokument — Bund der Urkantone Uri, Schwyz, Unterwalden. Wilhelm-Tell-Mythos darum gebaut. „Rütlischwur" als legendärer Schwur auf der Rütliwiese. 1. August als Schweizer Nationalfeiertag. Symbol für Schweizer Nationalgeschichte. Im Bundesbrief-Museum in Schwyz ausgestellt.',
+      beispiel: 'Der Bundesbrief isch s\'Gründungsdokument vu d\'Schwiiz.',
+      beispiel_hd: 'Der Bundesbrief ist das Gründungsdokument der Schweiz.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-203',
+      ausdruck: 'Wilhelm Tell',
+      hochdeutsch: 'Wilhelm Tell (Schweizer Nationalheld)',
+      bedeutung: '„Wilhelm Tell" ist Schweizer Nationalheld — legendärer Armbrustschütze, der den Apfel auf dem Kopf seines Sohnes schoss. Symbol für Schweizer Freiheitsliebe gegen Habsburger Tyrannei. Friedrich Schiller schrieb das berühmte Drama. Rossinis Wilhelm-Tell-Ouvertüre weltberühmt. Symbol für Schweizer Mythos. Historisch nicht eindeutig belegt, aber kulturell zentral.',
+      beispiel: 'Wilhelm Tell hat de Apfel vum Sohn gschosse!',
+      beispiel_hd: 'Wilhelm Tell hat den Apfel vom Sohn geschossen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-204',
+      ausdruck: 'Rütlischwur',
+      hochdeutsch: 'Rütlischwur (Schweizer Mythos)',
+      bedeutung: 'Der „Rütlischwur" ist legendärer Schwur auf der Rütliwiese 1291 — drei Schweizer Eidgenossen schwören Bund gegen Habsburger. „Eidgenosse" als Begriff stammt von hier. Symbol für Schweizer Demokratie-Tradition und Freiheits-Mythos. Touristen besuchen die Rütliwiese am Vierwaldstättersee. Historisch fraglich, kulturell zentral.',
+      beispiel: 'Der Rütlischwur isch a Schweizer Mythos!',
+      beispiel_hd: 'Der Rütlischwur ist ein Schweizer Mythos!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-205',
+      ausdruck: 'Glunggi',
+      hochdeutsch: 'Pfütze / Lache',
+      bedeutung: 'Die „Glunggi" ist Schweizer Wort für Pfütze oder Lache — kleine Wasseransammlung nach Regen. Lautmalerisch (gluck-glucksen). „Steig nid i d\'Glunggi!" als Mutter-Mahnung an Kinder. Symbol für Schweizer Sprach-Eigenheiten. Im Hochdeutschen unbekannt — touristen müssen es lernen.',
+      beispiel: 'D\'Chind springet in d\'Glunggi!',
+      beispiel_hd: 'Die Kinder springen in die Pfütze!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-206',
+      ausdruck: 'Bsetzistei',
+      hochdeutsch: 'Kopfsteinpflaster',
+      bedeutung: '„Bsetzistei" ist Schweizer Wort für Kopfsteinpflaster — typisch in Altstädten wie Bern, Zürich, Luzern. „Über Bsetzistei laufen" macht müde. Symbol für Schweizer Altstadt-Charme. Touristen finden\'s romantisch, Anwohner manchmal lästig (Lärm, Pflege). Im Hochdeutschen weniger gebräuchlich.',
+      beispiel: 'Mit High Heels uf em Bsetzistei isch hart!',
+      beispiel_hd: 'Mit High Heels auf dem Kopfsteinpflaster ist hart!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-207',
+      ausdruck: 'Pendlerverkehr',
+      hochdeutsch: 'Pendlerverkehr (Schweiz-typisch)',
+      bedeutung: 'Der „Pendlerverkehr" ist Schweizer Wirtschafts-Realität — täglich pendeln Schweizer in andere Kantone zur Arbeit. „Pendler-Halbtax" als Bahn-Vergünstigung. Bahn-Pünktlichkeit wichtig. Symbol für Schweizer Arbeitskultur und ÖV-Tradition. „Pendler-Stress" als Schweizer Lebensthema. Im Vergleich zu Deutschland mehr ÖV-orientiert.',
+      beispiel: 'Pendlerverkehr in Zürich isch immer voll!',
+      beispiel_hd: 'Pendlerverkehr in Zürich ist immer voll!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-208',
+      ausdruck: 'Skiferien',
+      hochdeutsch: 'Skiferien (Schweiz)',
+      bedeutung: 'Die „Skiferien" sind Schweizer Winterurlaubs-Tradition — in den Alpen Ski fahren. Schweizer Schulen haben 2 Wochen Sportferien für Skifahren. „Skihüsli" als Familien-Tradition. Symbol für Schweizer Berg- und Winter-Identität. Davos, St. Moritz, Zermatt als Top-Destinationen. Auch internationale Touristen kommen.',
+      beispiel: 'Skiferien in St. Moritz mit der Familie!',
+      beispiel_hd: 'Skiferien in St. Moritz mit der Familie!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-209',
+      ausdruck: 'Bergbahn',
+      hochdeutsch: 'Bergbahn',
+      bedeutung: 'Die „Bergbahn" ist Schweizer Verkehrs-Symbol — Zahnradbahn, Seilbahn, Sessellift, Gondelbahn. Schweizer Bergbahn-Netz weltweit dichteste. „Gornergrat-Bahn", „Pilatusbahn", „Jungfraubahn" als legendäre Strecken. Symbol für Schweizer Ingenieurskunst. Touristen lieben es. Auch im Winter-Skigebiet allgegenwärtig.',
+      beispiel: 'Mit der Bergbahn ufs Jungfraujoch!',
+      beispiel_hd: 'Mit der Bergbahn aufs Jungfraujoch!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-210',
+      ausdruck: 'Helvetia',
+      hochdeutsch: 'Helvetia (lateinische Schweiz)',
+      bedeutung: '„Helvetia" ist lateinische Bezeichnung für die Schweiz — auf Münzen, Briefmarken, offiziellen Dokumenten. Auch als weibliche Personifikation der Schweiz dargestellt (mit Speer und Schild). „Confoederatio Helvetica" als lateinische Vollform. „CH" als Länderkennung kommt davon. Symbol für Schweizer Identität in der Neutralität.',
+      beispiel: 'Auf Schwiizer Münzen steht Helvetia.',
+      beispiel_hd: 'Auf Schweizer Münzen steht Helvetia.',
+      kategorie: 'orte'
     }
   ]
 };
