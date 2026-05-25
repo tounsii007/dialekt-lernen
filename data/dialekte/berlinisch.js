@@ -2863,6 +2863,276 @@ export default {
       beispiel: 'Berliner Pflanze for life — auch wenn Hertha verliert!',
       beispiel_hd: 'Echter Berliner ein Leben lang — auch wenn Hertha verliert!',
       kategorie: 'menschen'
+    },
+    {
+      id: 'b-321',
+      ausdruck: 'Currywurst',
+      hochdeutsch: 'Currywurst',
+      bedeutung: 'Die „Currywurst" ist Berlins kulinarisches Wahrzeichen — Bratwurst mit Curry-Tomaten-Soße. 1949 von Herta Heuwer in Charlottenburg erfunden. „Mit oder ohne Darm?" als entscheidende Frage (mit Darm = klassisch, ohne Darm = moderner). „Mit Pommes" als Standard-Beilage. „Curry 36" am Mehringdamm und „Konnopke" am Eberswalder als Berliner Currywurst-Tempel. Symbol für Berlin und norddeutsche Schnellimbiss-Kultur. Berliner Identitäts-Speise.',
+      beispiel: 'Eine Currywurst mit Pommes, bittsche!',
+      beispiel_hd: 'Eine Currywurst mit Pommes, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-322',
+      ausdruck: 'Döner',
+      hochdeutsch: 'Döner Kebab',
+      bedeutung: 'Der „Döner" — Döner Kebab — ist Berliner Kult-Essen. 1972 in Berlin „erfunden" (vom türkisch-stämmigen Kadir Nurman). „Mit alles" als Standard-Bestellung (Salat, Tomaten, Gurken, Zwiebeln, Soße). Berliner Döner gilt weltweit als Original. Kreuzberg, Neukölln und Wedding als Döner-Hochburgen. „Der beste Döner Berlins" als endlose Berliner Diskussion. Symbol für multikulturelle Berliner Esskultur und Türkisch-Deutsche Integration.',
+      beispiel: 'A Döner mit alles, schaaarf!',
+      beispiel_hd: 'Ein Döner mit allem, scharf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-323',
+      ausdruck: 'Berliner',
+      hochdeutsch: 'Berliner (Pfannkuchen)',
+      bedeutung: 'Der „Berliner" — auch „Pfannkuchen" in Berlin selbst genannt — ist gefülltes Hefegebäck mit Marmelade. In Süddeutschland heißt er „Krapfen", im Rheinland „Berliner", in Berlin selbst „Pfannkuchen". Verwechslungspotenzial groß. Klassisch zu Silvester gegessen. „Berliner Senf-Lotterie" — ein Pfannkuchen wird mit Senf gefüllt. Symbol für berliner Backtradition. Kennedy sagte „Ich bin ein Berliner" — Berliner sagen: technisch richtig, aber witzig.',
+      beispiel: 'Z\'Silvester gibt\'s Berliner mit Pflaumenmus.',
+      beispiel_hd: 'Zu Silvester gibt es Berliner mit Pflaumenmus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-324',
+      ausdruck: 'Schrippe',
+      hochdeutsch: 'Brötchen (Berliner Wort)',
+      bedeutung: 'Die „Schrippe" ist Berlins Bezeichnung für Brötchen — Norddeutsch-Berliner Standard. In Hamburg „Rundstück", in Frankfurt „Brötchen", in Wien „Semmel". „A Schrippe mit Butter und Wurst" als Berliner Standard-Frühstück. Schrippen kommen aus der Bäckerei „Schrippe-Bäcker". Berliner unterscheiden zwischen „Schrippe" (rund) und „Stulle" (Brot-Scheibe). Symbol für Berliner Bäcker-Tradition und Norddeutsche Sprachverbindung.',
+      beispiel: 'Hol mir noch a paar Schrippen vom Bäcker.',
+      beispiel_hd: 'Hol mir noch ein paar Brötchen vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-325',
+      ausdruck: 'Eisbein',
+      hochdeutsch: 'Eisbein (Schweinshaxe)',
+      bedeutung: 'Das „Eisbein" ist Berliner Spezialität — gekochte Schweinshaxe mit Sauerkraut, Erbspüree und Senf. In Süddeutschland heißt es „Schweinshaxe" und wird gebraten — Berliner Variante ist gekocht. „Wirts-Eisbein" mit Bier und Korn. Symbol für berliner deftige Esskultur. Typisches Berliner Wirtshaus-Essen. Heute meist von Touristen bestellt — Berliner essen es eher selten. Klassisches Sonntagsmahl im 19./20. Jahrhundert.',
+      beispiel: 'Eisbein mit Sauerkraut und Erbspüree, bittsche!',
+      beispiel_hd: 'Eisbein mit Sauerkraut und Erbspüree, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-326',
+      ausdruck: 'Bockwurst',
+      hochdeutsch: 'Bockwurst',
+      bedeutung: 'Die „Bockwurst" ist Berlins Standard-Wurst — gekocht, mit Senf serviert. In jeder Berliner Imbissbude erhältlich. „A Bockwurst mit Senf und Brötchen" als günstiges Mittagessen. Symbol für berliner Schnellimbiss-Kultur. Klassisches Bahnhofs-Essen. „Bockwurst-Verkäufer" als Berliner Traditions-Beruf. Berliner Bockwurst gilt als beste in Deutschland. Touristen vergleichen Berliner Bockwurst mit Frankfurter Würstchen.',
+      beispiel: 'A Bockwurst mit Senf, bittsche!',
+      beispiel_hd: 'Eine Bockwurst mit Senf, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-327',
+      ausdruck: 'Berliner Weisse',
+      hochdeutsch: 'Berliner Weisse (Bier)',
+      bedeutung: 'Die „Berliner Weisse" ist Berlins Original-Bier — leichtes, saures Weißbier mit Sirup (Himbeere oder Waldmeister). „Mit Schuss" als klassische Bestellung. In Berlin seit dem 16. Jahrhundert. Heute Renaissance: viele neue Berliner Brauereien stellen Berliner Weisse her. „Berliner Weisse mit Schuss" als Berliner Sommer-Getränk. Symbol für berliner Brauerei-Tradition. Touristen probieren es als Berlin-Spezialität.',
+      beispiel: 'Eine Berliner Weisse mit grünem Schuss, bittsche!',
+      beispiel_hd: 'Eine Berliner Weisse mit grünem Schuss, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-328',
+      ausdruck: 'Berliner Pilsner',
+      hochdeutsch: 'Berliner Pilsner (Bier)',
+      bedeutung: 'Das „Berliner Pilsner" ist Berlins meistverkauftes Bier — seit 1902 in Schöneberg gebraut. „Berliner Pilsner Brauerei" als Berliner Marke. „A Berliner Pilsner, bittsche!" als Berliner Standard-Bestellung. Konkurrenz zu Schultheiss (auch Berlin) und Beck\'s (Bremen). Symbol für Berliner Brauerei-Industrie. Berliner sind stolz auf ihr Lokal-Bier. „Berliner Pilsner Pokal" als Sport-Event-Sponsor.',
+      beispiel: 'Drei Berliner Pilsner, bittsche!',
+      beispiel_hd: 'Drei Berliner Pilsner, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-329',
+      ausdruck: 'Schultheiss',
+      hochdeutsch: 'Schultheiss (Berliner Bier-Marke)',
+      bedeutung: '„Schultheiss" ist klassische Berliner Bier-Marke — seit 1842 in Berlin gebraut. „Schultheiss-Brauerei" als Berliner Industrie-Symbol. Vor allem in Ost-Berlin populär (DDR-Zeit). Heute Teil der Radeberger Gruppe. „Mein Schultheiss" als Berliner Identitäts-Bier. Symbol für Berliner Brauerei-Tradition und Ost-Berliner Bier-Kultur. Im Späti immer verfügbar. Berliner Eckkneipen-Standard.',
+      beispiel: 'A kühles Schultheiss zum Feierabend.',
+      beispiel_hd: 'Ein kühles Schultheiss zum Feierabend.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-330',
+      ausdruck: 'Berliner Korn',
+      hochdeutsch: 'Berliner Korn (Schnaps)',
+      bedeutung: 'Der „Berliner Korn" ist Berliner Standard-Schnaps — klar, hochprozentig. „Korn zum Bier" als klassische Bestellung in Berliner Kneipen. „Berliner Korn-Brennerei" als historische Tradition. Mit Bockwurst und Bier als Berliner Brotzeit-Trinität. Symbol für berliner Wirtshaus-Kultur. Im Gegensatz zu süddeutschem Obstbrand oder bayerischen Schnaps mehr neutral-funktional. Berliner trinken Korn, wenn\'s schnell warm werden soll.',
+      beispiel: 'A Korn zum Bier, bittsche!',
+      beispiel_hd: 'Ein Korn zum Bier, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-331',
+      ausdruck: 'Berliner Sülze',
+      hochdeutsch: 'Berliner Sülze',
+      bedeutung: 'Die „Berliner Sülze" ist klassische Berliner Spezialität — Aspik mit Schweinefleisch, Essig-Sud und Gewürzen. „Sülze mit Bratkartoffeln" als Berliner Mittagessen. Hat polarisierende Wirkung — Berliner lieben es, Touristen schauen skeptisch. Symbol für berliner traditionelle Kulinarik. Heute selten in Wirtshäusern, eher als Großmutter-Rezept. „Wer keine Sülze mag, ist kein echter Berliner!" als Berliner Witz.',
+      beispiel: 'Sülze mit Bratkartoffeln und Essiggurken!',
+      beispiel_hd: 'Sülze mit Bratkartoffeln und Essiggurken!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-332',
+      ausdruck: 'Hackepeter',
+      hochdeutsch: 'Mett (rohes Hackfleisch)',
+      bedeutung: '„Hackepeter" ist Berliner Wort für Mett — rohes Hackfleisch mit Zwiebeln und Salz. Auf Brötchen oder zum Brot gegessen. „Hackepeter-Brötchen" als Berliner Frühstück (gewagt!). Symbol für berliner Esskultur und Direktheit beim Essen. Heute aus Hygiene-Gründen seltener — aber in traditionellen Berliner Bäckereien noch erhältlich. „Hackepeter-Igel" als Partygebäck (mit Zwiebel-Stiften als Stacheln).',
+      beispiel: 'A Hackepeter-Brötchen mit Zwiebeln zum Frühstück.',
+      beispiel_hd: 'Ein Mett-Brötchen mit Zwiebeln zum Frühstück.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-333',
+      ausdruck: 'Kartoffelpuffer',
+      hochdeutsch: 'Kartoffelpuffer / Reibekuchen',
+      bedeutung: '„Kartoffelpuffer" ist Berliner Bezeichnung für Reibekuchen — geriebene Kartoffeln, in Fett gebraten. „Mit Apfelmus oder Lachs" als süße oder herzhafte Variante. Auf Weihnachtsmärkten allgegenwärtig. Im Rheinland „Reibekuchen", in Süddeutschland „Kartoffelpuffer" — beides in Berlin verwendet. Symbol für berlinisch-norddeutsche Esskultur. Klassisches Winter-Essen. „Kartoffelpuffer-Bude" als Berliner Volksfest-Standard.',
+      beispiel: 'Kartoffelpuffer mit Apfelmus, bittsche!',
+      beispiel_hd: 'Kartoffelpuffer mit Apfelmus, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-334',
+      ausdruck: 'Königsberger Klopse',
+      hochdeutsch: 'Königsberger Klopse',
+      bedeutung: '„Königsberger Klopse" sind ostpreußische Fleischklöße in Kapern-Sahnen-Soße — heute in Berlin als regionale Spezialität bekannt. Stammen aus Königsberg (heute Kaliningrad). „Klopse mit Salzkartoffeln und Roter Bete" als klassische Berliner Variante. Symbol für deutsche Vertriebenen-Esskultur, die in Berlin Heimat fand. Berliner Wirtshäuser servieren sie als Sonntagsmahl. Mit Kapern als unverwechselbarem Geschmacks-Element.',
+      beispiel: 'Sonntags gibt\'s Königsberger Klopse.',
+      beispiel_hd: 'Sonntags gibt es Königsberger Klopse.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-335',
+      ausdruck: 'Senf',
+      hochdeutsch: 'Senf (Berliner Würze)',
+      bedeutung: 'Der „Senf" ist Berliner Standard-Würzmittel — zu Bockwurst, Currywurst, Eisbein. „Mit Senf!" als Berliner Bestell-Zusatz. Klassisch: süßer Senf zur Weißwurst (bayrisch) — Berliner essen meist scharfen Senf. „Berliner Currywurst-Senf" als spezielle Mischung. Auch metaphorisch: „Seinen Senf dazugeben" als Berliner Spruch für ungebetene Meinung. Symbol für berliner Esskultur und Direktheit.',
+      beispiel: 'Mit Senf und Pommes, bittsche!',
+      beispiel_hd: 'Mit Senf und Pommes, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-336',
+      ausdruck: 'Berliner Stulle',
+      hochdeutsch: 'Berliner belegtes Brot',
+      bedeutung: 'Die „Stulle" — im Berlin auch „Berliner Stulle" — ist Schnitt-Brot mit Belag. „Brot, Butter, Wurst, Käse" als Standard-Variante. „Stulle in die Schule" als Berliner Kinder-Erinnerung. Stulle-Box (Brotdose) als Berliner Schulalltag. Diskussion: Stulle vs. Bemme (sächsisch) vs. Bröttken (norddeutsch) vs. Brötchen (südländisch). Symbol für Berliner Pausenmahlzeit-Tradition. Berliner Wort für das eigentliche „belegtes Brot".',
+      beispiel: 'Hol dir ne Stulle für die Pause.',
+      beispiel_hd: 'Hol dir ein belegtes Brot für die Pause.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-337',
+      ausdruck: 'Berliner Schnaps',
+      hochdeutsch: 'Berliner Schnaps (klar)',
+      bedeutung: '„Berliner Schnaps" ist Sammelbegriff für klare Berliner Spirituosen — Korn, Wodka, Gin. „A Berliner Schnaps zum Verdauen" als Berliner Sonntagsessen-Abschluss. „Berliner Edel-Brand" als gehobene Variante. In Berliner Kneipen und Eckläden allgegenwärtig. Symbol für berliner Trinkkultur und Apero-Tradition. Berliner Schnaps unterscheidet sich von süddeutschem Obstbrand: meist neutral-funktional, ohne Frucht-Aromen.',
+      beispiel: 'A Berliner Schnaps nach\'m Essen!',
+      beispiel_hd: 'Ein Berliner Schnaps nach dem Essen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-338',
+      ausdruck: 'Berliner Kindl',
+      hochdeutsch: 'Berliner Kindl (Bier-Marke)',
+      bedeutung: 'Das „Berliner Kindl" ist Berlins älteste Bier-Marke — seit 1872. „Berliner Kindl Pils", „Berliner Kindl Weisse" als Hauptprodukte. Logo: kleines Mädchen mit Berliner Bär. Heute Teil der Radeberger Gruppe, aber als Berlin-Marke vertrieben. Symbol für Berliner Brauerei-Tradition. „Kindl-Bühne Wuhlheide" als Open-Air-Konzert-Sponsor. Berliner sind stolz auf ihre lokalen Biere — Kindl gilt als „echter Berliner".',
+      beispiel: 'A Berliner Kindl zum Eintracht-Spiel!',
+      beispiel_hd: 'Ein Berliner Kindl zum Eintracht-Spiel!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-339',
+      ausdruck: 'Spreewald-Suppe',
+      hochdeutsch: 'Spreewald-Kartoffelsuppe',
+      bedeutung: 'Die „Spreewald-Suppe" ist regionale Spezialität aus dem Spreewald (Brandenburg, östlich Berlins) — Kartoffelsuppe mit Speck, Würstchen und Gurken-Beilage. In Berliner Wirtshäusern als Sonntags-Suppe. „Spreewald-Touren" mit Suppen-Verkostung als Berliner Wochenend-Programm. Symbol für berlinisch-brandenburgische Esskultur. Klassisches Winter-Essen. Im Gegensatz zu süddeutscher Kartoffelsuppe mehr deftig und ländlich.',
+      beispiel: 'Spreewald-Suppe im Winter — was Wunder!',
+      beispiel_hd: 'Spreewald-Suppe im Winter — was Wunder!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-340',
+      ausdruck: 'Berliner Wirtshauskultur',
+      hochdeutsch: 'Berliner Wirtshaus-Tradition',
+      bedeutung: 'Die „Berliner Wirtshauskultur" ist spezifische Berliner Tradition — Eckkneipen, Stammgäste, derbe Sprüche, einfaches Essen, viel Bier und Korn. „Berliner Eckkneipe" als Institution. Berliner-typische Wirtshäuser: „Zur Letzten Instanz" (älteste Berliner Kneipe, 1621), „Diener Tattersall", „Schlossklause". Im Gegensatz zur süddeutschen Apfelwein-Wirtschaft oder bayrischen Wirtschaft mehr arbeitnehmer-fokussiert. Symbol für berliner Sozialleben und Klassen-Tradition.',
+      beispiel: 'Die Berliner Wirtshauskultur is\' bedroht.',
+      beispiel_hd: 'Die Berliner Wirtshauskultur ist bedroht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-341',
+      ausdruck: 'Berliner Snack',
+      hochdeutsch: 'Berliner Schnellimbiss-Essen',
+      bedeutung: 'Der „Berliner Snack" ist Sammelbegriff für berliner Schnellimbiss-Essen — Currywurst, Döner, Bockwurst, Berliner. „Berliner Snack-Kultur" als Tourist-Attraktion. Berliner sind stolz auf ihre Vielfalt von schnellem, günstigem Essen. Imbissbuden überall — vom Späti bis zur Curry-Bude. Symbol für Berliner Schnelllebigkeit und multikulturelle Esskultur. Im Gegensatz zu süddeutschem Slow-Food-Konzept mehr funktional.',
+      beispiel: 'Berliner Snack — Currywurst und Döner, basta!',
+      beispiel_hd: 'Berliner Snack — Currywurst und Döner, basta!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-342',
+      ausdruck: 'Berliner Eckkneipe',
+      hochdeutsch: 'Berliner Eckkneipe (Wirtshaus)',
+      bedeutung: 'Die „Berliner Eckkneipe" ist Berliner Institution — kleine Kneipe an einer Straßenecke, mit Stammgästen, einfachem Essen, derben Sprüchen. Charakteristisch: Holztisch-Atmosphäre, Bier-Reklamen, Berliner Originale am Tresen. „Mei Stammkneipe an der Ecke" als typische Berliner Aussage. Symbol für berliner Sozialleben und Klassen-Tradition. Heute bedroht durch Gentrifizierung — viele Eckkneipen werden zu Hipster-Cafés.',
+      beispiel: 'In meiner Eckkneipe kennt mich jeder.',
+      beispiel_hd: 'In meiner Eckkneipe kennt mich jeder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-343',
+      ausdruck: 'Berliner Spezialität',
+      hochdeutsch: 'Berliner Spezialität',
+      bedeutung: '„Berliner Spezialität" ist Sammelbegriff für berlinerische Kulinarik — Currywurst, Eisbein, Berliner, Sülze, Hackepeter, Königsberger Klopse, Bockwurst, Schrippen. Touristen-Programm: Berliner Spezialitäten probieren. Berliner sind stolz auf ihre Esskultur, auch wenn manche Spezialitäten polarisieren. Symbol für berliner kulinarische Identität. Im Gegensatz zu „Berliner Snack" eher gehobene Tradition.',
+      beispiel: 'Touristen probieren immer Berliner Spezialitäten.',
+      beispiel_hd: 'Touristen probieren immer Berliner Spezialitäten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-344',
+      ausdruck: 'Berliner Frühstück',
+      hochdeutsch: 'Berliner Frühstück',
+      bedeutung: 'Das „Berliner Frühstück" ist klassisch — Brötchen (Schrippe), Butter, Wurst, Käse, Marmelade, Kaffee, Berliner Kindl (für die Mutigen). Familien-Frühstück am Sonntag mit Verwandtschaft. „Berliner Brunch" als modernere Variante mit mehr Variation. „Berliner Sektfrühstück" als gehobene Sonntags-Tradition. Symbol für berlinerische Familien-Wertschätzung des Frühstücks. Wird im Gegensatz zum knappen süddeutschen Frühstück als ausgedehnte Mahlzeit zelebriert.',
+      beispiel: 'Sonntags machen wir Berliner Frühstück.',
+      beispiel_hd: 'Sonntags machen wir Berliner Frühstück.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-345',
+      ausdruck: 'Kreuzberger Nächte',
+      hochdeutsch: 'Kreuzberger Nächte (Lied + Tradition)',
+      bedeutung: '„Kreuzberger Nächte" ist Berliner Klassiker — Lied von „Gebrüder Blattschuss" 1978: „Kreuzberger Nächte sind lang, lang, lang …". Symbol für berliner Nachtleben und Kreuzberg-Tradition. Wird auf Volksfesten und in Berliner Kneipen mitgeschunkelt. Kreuzberger sind stolz: „Kreuzberger Nächte forever!". Im Berliner Repertoire seit Generationen. Bezieht sich auf die lange Berliner Nacht-Wirtschaftskultur.',
+      beispiel: '„Kreuzberger Nächte sind lang, lang, lang…"',
+      beispiel_hd: '„Kreuzberger Nächte sind lang, lang, lang…"',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-346',
+      ausdruck: 'Berliner Pilsette',
+      hochdeutsch: 'Berliner Pilsette (Kult-Wein)',
+      bedeutung: 'Die „Berliner Pilsette" ist alternativer Berliner Trink-Klassiker — Pilsner mit Tomatensaft. In Berliner Späti-Kultur und in alternativen Bars beliebt. Klingt seltsam, ist aber überraschend trinkbar. „Pilsette mit n Schuss Wodka" als verstärkende Variante. Symbol für berliner Mix-Getränke-Kreativität. Im Gegensatz zu süddeutscher Bier-Reinheit wird in Berlin gerne mit Bier experimentiert. Berliner Hipster-Bar-Spezialität.',
+      beispiel: 'A Berliner Pilsette zum Späti-Snack!',
+      beispiel_hd: 'Eine Berliner Pilsette zum Spätkauf-Snack!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-347',
+      ausdruck: 'Berliner Café-Kultur',
+      hochdeutsch: 'Berliner Café-Kultur',
+      bedeutung: 'Die „Berliner Café-Kultur" ist spezifische Berliner Tradition — von alten Wiener-Stil-Cafés (Café Einstein, Café Anna Blume) bis zu Hipster-Latte-Bars (Berlin-Mitte, Prenzlberg). „Berliner Café" als Lebensgefühl: stundenlang sitzen, lesen, schreiben, diskutieren. Symbol für berliner intellektuelles Leben und Tageskultur. Berliner Schriftsteller, Journalisten, Studenten als Café-Stammgäste. Im Gegensatz zu schnellen italienischen Cafés mehr Zeit-Element.',
+      beispiel: 'Im Café Einstein verbringen wir Stunden.',
+      beispiel_hd: 'Im Café Einstein verbringen wir Stunden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-348',
+      ausdruck: 'Berliner Markt',
+      hochdeutsch: 'Berliner Wochenmarkt',
+      bedeutung: 'Der „Berliner Markt" ist Berliner Institution — Wochenmärkte in jedem Bezirk mit frischen Lebensmitteln, türkischen Spezialitäten, multi-kulturellen Ständen. „Türkenmarkt am Maybachufer" als berühmt-multikultureller Markt. „Boxhagener Markt" in Friedrichshain als Hipster-Markt. „Winterfeldtmarkt" in Schöneberg als bürgerlicher Markt. Symbol für berlinische Lokal-Versorgung und Multi-Kulti. Berliner kaufen frisch beim Wochenmarkt — Supermarkt nur für Notfälle.',
+      beispiel: 'Samstag gehen wir auf den Berliner Markt.',
+      beispiel_hd: 'Samstag gehen wir auf den Berliner Wochenmarkt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-349',
+      ausdruck: 'Berliner Reibekuchen',
+      hochdeutsch: 'Berliner Reibekuchen',
+      bedeutung: '„Berliner Reibekuchen" sind Berlins Variante des klassischen deutschen Reibekuchens — geriebene Kartoffeln, in Pfanne gebraten. „Mit Apfelmus" als süße, „mit Lachs" als herzhafte Variante. Auf Weihnachtsmärkten allgegenwärtig. Im Vergleich zur süddeutschen „Kartoffelpuffer"-Tradition mehr Berlin-spezifisch dünn. Symbol für berliner Winter-Essen und Volksfest-Kultur. Berliner Reibekuchen-Buden auf jedem Weihnachtsmarkt.',
+      beispiel: 'Reibekuchen mit Apfelmus auf\'m Weihnachtsmarkt!',
+      beispiel_hd: 'Reibekuchen mit Apfelmus auf dem Weihnachtsmarkt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-350',
+      ausdruck: 'Berliner Klassiker',
+      hochdeutsch: 'Berliner Klassiker (Tradition)',
+      bedeutung: '„Berliner Klassiker" ist Sammelbegriff für berlinische Traditionen — von Currywurst bis Berliner Pilsner, von Berliner Schnauze bis Mauerpark. Wird in Touristikbeschreibungen verwendet. „Berliner Klassiker erleben" als Tourist-Programm. Symbol für berlinische Identitäts-Pflege. Berliner sind stolz auf ihre Klassiker — auch wenn sie polarisieren. Im Gegensatz zu süddeutscher Tradition mehr urban und multikulturell.',
+      beispiel: 'Die Berliner Klassiker — von Currywurst bis Mauerpark.',
+      beispiel_hd: 'Die Berliner Klassiker — von Currywurst bis Mauerpark.',
+      kategorie: 'feiern'
     }
   ]
 };
