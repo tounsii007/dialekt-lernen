@@ -907,6 +907,231 @@ export default {
       beispiel: 'Mir Badener simma Schlemmer — gut esse und gut trinke.',
       beispiel_hd: 'Wir Badener sind Schlemmer — gut essen und gut trinken.',
       kategorie: 'menschen'
+    },
+    {
+      id: 'al-101',
+      ausdruck: 'Schwarzwaldhaus',
+      hochdeutsch: 'Schwarzwälder Bauernhaus (Architektur)',
+      bedeutung: 'Das Schwarzwaldhaus ist eine der bekanntesten Bauernhausformen Deutschlands — ein massives Holz-Stein-Gebäude mit weit heruntergezogenem Walmdach aus Stroh oder Holzschindeln, das fast bis zum Boden reicht. Wohnstube, Stall, Tenne und Scheune unter einem Dach — alles auf engstem Raum für rauhes Bergklima. Drei Haupttypen: Kinzigtäler, Gutachtäler und Heidegger Haus. Das Vogtsbauernhof-Freilichtmuseum in Gutach zeigt mehrere Originalbauten.',
+      beispiel: 'En richtiges Schwarzwaldhaus mit Strohdach — des isch alemannisches Kulturerbe.',
+      beispiel_hd: 'Ein richtiges Schwarzwaldhaus mit Strohdach — das ist alemannisches Kulturerbe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-102',
+      ausdruck: 'Hexe',
+      hochdeutsch: 'Hexe (alemannische Sagenfigur)',
+      bedeutung: 'Die Hexe ist in alemannischen Sagen eine zentrale Figur — geheimnisvolle Frauen mit Naturkenntnissen, die zwischen Heilung und Schadenszauber stehen. Im Schwarzwald und auf der Schwäbischen Alb gibt es Hunderte von Hexensagen. Die Walpurgisnacht (30. April) und das Hexenfeuer zur Vertreibung böser Geister sind alte Bräuche. In der Fasnet treten Hexenfiguren auf — Holzmasken mit langer Nase, Reisigbesen und schwarzem Umhang.',
+      beispiel: 'D\'Hex isch durch d\'Strasse gflogen — Fasnetzauber!',
+      beispiel_hd: 'Die Hexe ist durch die Straße geflogen — Fasnetzauber!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-103',
+      ausdruck: 'Wilde Jagd',
+      hochdeutsch: 'Wilde Jagd (alemannische Sage)',
+      bedeutung: 'Die „Wilde Jagd" ist eine alemannische Sage — ein gespenstischer Reiterzug, der nachts über Schwarzwald und Hochrhein zieht. Angeführt von „Wuetes" oder „Wuetesher" (Vorläufer Wodans). Wer ihm begegnet, soll Unheil erfahren oder verstummen. Besonders in Rauhnächten (zwischen Weihnachten und Dreikönig) erscheint sie. Die Sage ist im gesamten alemannischen Raum verbreitet — vom Schwarzwald bis ins Elsass und nach Vorarlberg.',
+      beispiel: 'In de Rauhnächt hört man d\'Wilde Jagd durch d\'Tannen rauschen.',
+      beispiel_hd: 'In den Rauhnächten hört man die Wilde Jagd durch die Tannen rauschen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-104',
+      ausdruck: 'Auerhahn',
+      hochdeutsch: 'Auerhahn (Schwarzwälder Großvogel)',
+      bedeutung: 'Der Auerhahn ist der größte Hühnervogel Europas und im Schwarzwald vom Aussterben bedroht — nur noch etwa 200 Exemplare leben in den höheren Schwarzwald-Lagen. Sein Balztanz im Frühjahr ist ein Naturschauspiel. Wahrzeichen des Schwarzwalds, im Wappen vieler Gemeinden. Schutzprojekte versuchen die Population zu stabilisieren. Wer einen Auerhahn in freier Wildbahn sieht, gehört zu den wenigen Glücklichen.',
+      beispiel: 'Im Schwarzwald gibt\'s kaum noch Auerhähne — die brauchen unberührte Wälder.',
+      beispiel_hd: 'Im Schwarzwald gibt es kaum noch Auerhähne — die brauchen unberührte Wälder.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-105',
+      ausdruck: 'Luchs',
+      hochdeutsch: 'Luchs (Schwarzwald-Raubkatze)',
+      bedeutung: 'Der Luchs kehrt langsam in den Schwarzwald zurück — nachdem er Anfang des 20. Jahrhunderts ausgerottet wurde. Seit den 1980er Jahren wandern einzelne Tiere aus der Schweiz und den Vogesen ein. Größte Raubkatze Europas, scheue Einzelgänger. Sichtungen sind selten und werden gemeldet. Tierschutzprojekte fördern die Rückkehr. Der Luchs als Symbol für eine intakte Schwarzwald-Wildnis.',
+      beispiel: 'Ein Luchs im Schwarzwald — heute fast wie en Sechs-Richtige im Lotto.',
+      beispiel_hd: 'Ein Luchs im Schwarzwald — heute fast wie sechs Richtige im Lotto.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-106',
+      ausdruck: 'Wildkatze',
+      hochdeutsch: 'Wildkatze (Schwarzwald-Bewohnerin)',
+      bedeutung: 'Die europäische Wildkatze lebt versteckt in den Schwarzwald-Wäldern — keine verwilderte Hauskatze, sondern eine eigenständige Art. Größer und stämmiger als Hauskatzen, mit buschigem Schwanz. Nach langer Abwesenheit kehrt sie zurück, vor allem in den Naturpark Südschwarzwald. Wildbiologen freuen sich über jeden bestätigten Nachweis. Symbol für die Erholung der Schwarzwald-Wildnis.',
+      beispiel: 'D\'Wildkatz isch zurück im Schwarzwald — wir freuen uns.',
+      beispiel_hd: 'Die Wildkatze ist zurück im Schwarzwald — wir freuen uns.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-107',
+      ausdruck: 'Hohlbeil',
+      hochdeutsch: 'Hohlbeil (Schwarzwälder Holzwerkzeug)',
+      bedeutung: 'Das Hohlbeil ist ein traditionelles alemannisches Holzwerkzeug — ein spezielles Beil mit halbrunder Klinge zum Aushöhlen von Mulden, Trögen und Holzschüsseln. Schwarzwälder Schnitzer und Wagner nutzten es jahrhundertelang. Heute pflegen wenige Handwerker die Tradition. Im Schwarzwälder Trachten- und Heimatmuseum in Haslach sind alte Hohlbeile ausgestellt. Symbol für die handwerkliche Holzkultur des Alemannischen.',
+      beispiel: 'Mit em Hohlbeil schnitzt mer en Holztrog für d\'Kühe.',
+      beispiel_hd: 'Mit dem Hohlbeil schnitzt man einen Holztrog für die Kühe.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-108',
+      ausdruck: 'Schnitzerei',
+      hochdeutsch: 'Schwarzwälder Holzschnitzerei',
+      bedeutung: 'Die Schwarzwälder Holzschnitzerei hat eine jahrhundertealte Tradition — ursprünglich für Möbel, Kruzifixe und Fasnetmasken. Heute Lehrwerkstätten in Triberg und Furtwangen, Schnitzakademien für Touristen. Die Larvenmasken der Fasnet (Hexen, Teufel, Narren) sind weltweit gesammelte Kunstwerke. Ein Holzschnitzer braucht Jahre, um ein Lebenswerk zu schaffen. Die alemannische Holzkultur lebt durch diese Handwerker fort.',
+      beispiel: 'Schwarzwälder Schnitzerei isch echtes Handwerk — keine Massenware.',
+      beispiel_hd: 'Schwarzwälder Schnitzerei ist echtes Handwerk — keine Massenware.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-109',
+      ausdruck: 'Schwarzwaldbahn',
+      hochdeutsch: 'Schwarzwaldbahn (Bahnstrecke)',
+      bedeutung: 'Die Schwarzwaldbahn (Offenburg-Konstanz) ist eines der bedeutendsten Eisenbahnbauwerke Europas — eröffnet 1873. Sie überwindet 600 Höhenmeter durch 39 Tunnel und ist die spektakulärste Bahnstrecke Deutschlands. Erbaut von Robert Gerwig — eine technische Meisterleistung der Gründerzeit. Heute Tourismusbahn — die Fahrt von Hornberg über die Triberger Wasserfälle bis nach Sankt Georgen ist atemberaubend. Live-Geschichte erleben.',
+      beispiel: 'D\'Schwarzwaldbahn — die spektakulärste Bahnreise von ganz Deutschland.',
+      beispiel_hd: 'Die Schwarzwaldbahn — die spektakulärste Bahnreise von ganz Deutschland.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-110',
+      ausdruck: 'Höllentalbahn',
+      hochdeutsch: 'Höllentalbahn (Bahnstrecke Freiburg-Donaueschingen)',
+      bedeutung: 'Die Höllentalbahn von Freiburg über das Höllental nach Donaueschingen ist eine der dramatischsten Bahnstrecken Deutschlands — durch wilde Schluchten, über Viadukte und durch Tunnel. Steigungen bis 5,5 Prozent. Das Hirschsprung-Felsen-Wahrzeichen markiert die engste Stelle. Heute Touristenattraktion mit Panorama-Wagen im Sommer. Im Winter ist sie wichtige Verbindung zu den Skigebieten Hinterzarten und Titisee.',
+      beispiel: 'D\'Höllentalbahn fahrt dur die wildeste Schlucht im Schwarzwald.',
+      beispiel_hd: 'Die Höllentalbahn fährt durch die wildeste Schlucht im Schwarzwald.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-111',
+      ausdruck: 'Triberg',
+      hochdeutsch: 'Triberg (Wasserfälle und Kuckucksuhr-Stadt)',
+      bedeutung: 'Triberg im mittleren Schwarzwald ist berühmt für die Triberger Wasserfälle (163 m, höchste in Deutschland) und für die größte Kuckucksuhr der Welt. Mit 5.000 Einwohnern Touristenmagnet — vor allem Asiaten und Amerikaner kommen. Wallfahrtskirche Maria in der Tanne, Schwarzwaldmuseum, traditioneller Kurort. Das Schwarzwald-Image schlechthin: Tannen, Wasserfälle, Kuckucksuhren, Schwarzwälder Kirschtorte.',
+      beispiel: 'In Triberg gibt\'s d\'größte Kuckucksuhr der Welt — Touristen-Hammer.',
+      beispiel_hd: 'In Triberg gibt es die größte Kuckucksuhr der Welt — Touristen-Hammer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-112',
+      ausdruck: 'Schiltach',
+      hochdeutsch: 'Schiltach (Flößer-Stadt im Kinzigtal)',
+      bedeutung: 'Schiltach im Kinzigtal ist eines der schönsten erhaltenen Fachwerkstädte Deutschlands — historisches Flößerstädtchen, wo Schwarzwald-Stämme bis nach Holland geflößt wurden. Der Marktplatz mit den steilen Fachwerkhäusern ist ein Postkartenmotiv. Berühmt: Hansgrohe (Armaturen, Weltmarktführer) und das Hansgrohe Aquademie. 4.000 Einwohner, große Geschichte. Im Sommer Flößerfest.',
+      beispiel: 'Schiltach im Kinzigtal — Fachwerk-Idyll wie ausm Bilderbuch.',
+      beispiel_hd: 'Schiltach im Kinzigtal — Fachwerk-Idyll wie aus dem Bilderbuch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-113',
+      ausdruck: 'Wolfach',
+      hochdeutsch: 'Wolfach (Glashütten-Stadt im Kinzigtal)',
+      bedeutung: 'Wolfach im Kinzigtal ist berühmt für seine Dorotheenhütte — die einzige noch produzierende mundgeblasene Glashütte im Schwarzwald. Besucher können den Glasmachern bei der Arbeit zusehen. Bekannte Wolfacher Fasnet mit eigenen Narrenfiguren („Wohlauf"-Ruf). Auch Schnaps-Brennereien (Familie Alfred Schladerer) und das Schloss Wolfach. Eine kleine Stadt mit großer Tradition. Das Schwarzwälder Trachtenmuseum erzählt die Geschichte der Region.',
+      beispiel: 'In Wolfach kannst du d\'Glasbläser bei der Arbeit anschauen.',
+      beispiel_hd: 'In Wolfach kannst du die Glasbläser bei der Arbeit anschauen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-114',
+      ausdruck: 'Vorarlberg',
+      hochdeutsch: 'Vorarlberg (österreichisches Alemannien)',
+      bedeutung: 'Vorarlberg ist das westlichste Bundesland Österreichs und spricht reinstes Alemannisch — näher mit dem Schweizerdeutschen verwandt als mit dem österreichischen Hochdeutsch. Hauptstadt Bregenz am Bodensee, weitere Städte: Dornbirn, Feldkirch, Bludenz. Die Vorarlberger fühlen sich kulturell zu Bayern und der Schweiz hingezogen, weniger zu Wien. Wirtschaftsstark, naturschön, mit eigener Identität. Skigebiete wie Lech und Zürs sind weltbekannt.',
+      beispiel: 'In Vorarlberg sprechen sie a Alemannisch — fast wie wir im Schwarzwald.',
+      beispiel_hd: 'In Vorarlberg sprechen sie ein Alemannisch — fast wie wir im Schwarzwald.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-115',
+      ausdruck: 'Mulhouse',
+      hochdeutsch: 'Mulhouse / Mülhausen (Elsass)',
+      bedeutung: 'Mulhouse (Mülhausen) ist eine Industriestadt im Elsass — bis 1798 freie Republik (allianciert mit den Schweizer Eidgenossen). Heute 110.000 Einwohner, große Automobil-Tradition (Peugeot, Bugatti). Das Musée National de l\'Automobile (Sammlung Schlumpf) ist das größte Auto-Museum der Welt. Sprachgeschichtlich war Mulhouse über Jahrhunderte alemannischsprachig — heute nur noch Spurenreste, aber kulturelle Nähe zu Baden bleibt.',
+      beispiel: 'In Mulhouse trifft sich elsässische und alemannische Kultur.',
+      beispiel_hd: 'In Mulhouse trifft sich elsässische und alemannische Kultur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-116',
+      ausdruck: 'Strasbourg',
+      hochdeutsch: 'Strasbourg / Straßburg (Hauptstadt des Elsass)',
+      bedeutung: 'Strasbourg (Straßburg) ist die Hauptstadt des Elsass und Sitz des Europäischen Parlaments — eine Brücke zwischen deutscher und französischer Kultur. Das Straßburger Münster ist eines der bedeutendsten gotischen Bauwerke Europas. Petite France mit Fachwerkhäusern, Kanälen und elsässischem Charme zieht Millionen Touristen an. Historisch alemannischsprachig — heute ist das Elsässerdeutsch (eine alemannisch-fränkische Mischung) bedroht.',
+      beispiel: 'Strasbourg isch eine Stadt mit deutscher Seele und französischer Lebensart.',
+      beispiel_hd: 'Strasbourg ist eine Stadt mit deutscher Seele und französischer Lebensart.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-117',
+      ausdruck: 'Feldberg',
+      hochdeutsch: 'Feldberg (höchster Schwarzwald-Gipfel)',
+      bedeutung: 'Der Feldberg mit 1493 Metern ist der höchste Berg des Schwarzwalds und nördlich der Alpen außerhalb der Mittelgebirge. Skigebiet mit 28 Liften, Skihütten und schneesicherer Lage. Im Sommer Wanderparadies — der Feldsee, der Feldbergsteig, die Bismarckdenkmal-Aussicht. Klimatisch eine eigene Welt: oft Nebel und Schnee, während im Tal Sonne scheint. „Der Hausberg der Badener" — wichtig für die regionale Identität.',
+      beispiel: 'Auf\'m Feldberg gibt\'s im Winter den besten Schnee von Süddeutschland.',
+      beispiel_hd: 'Auf dem Feldberg gibt es im Winter den besten Schnee von Süddeutschland.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-118',
+      ausdruck: 'Skifahren',
+      hochdeutsch: 'Skifahren im Schwarzwald',
+      bedeutung: 'Das Skifahren hat im Schwarzwald eine lange Tradition — die erste Skischule Deutschlands wurde 1891 in Todtnau gegründet. Die Skigebiete Feldberg, Belchen, Schauinsland und Notschrei bieten Alpin- und Langlauf-Möglichkeiten. Im Vergleich zu den Alpen ist es bescheidener, aber familiär. Schwarzwälder Skifahrer sind stolz auf ihre lokalen Berge. Die FIS-Weltcup-Veranstaltungen in Schonach im Schwarzwald gehören zur Wintersport-Tradition.',
+      beispiel: 'Im Schwarzwald fängt jedes Kind mit em Skifahren am Feldberg an.',
+      beispiel_hd: 'Im Schwarzwald fängt jedes Kind mit dem Skifahren am Feldberg an.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-119',
+      ausdruck: 'Wintersport',
+      hochdeutsch: 'Wintersport im Schwarzwald',
+      bedeutung: 'Der Wintersport hat im Schwarzwald eine reiche Geschichte — Langlauf, Abfahrt, Rodeln, Skispringen. Die Schanze in Schonach veranstaltet die Vierschanzentournee-Tour. Loipen-Netz im Hochschwarzwald über 1.000 km. Skifahren ist Familientradition vieler alemannischer Familien. Im Winter wird der Schwarzwald zum Wintersportzentrum für Baden-Württemberg, das Elsass, die Nordschweiz und sogar Holländer. Hotels und Skischulen leben davon.',
+      beispiel: 'Wintersport im Schwarzwald — Tradition und Familienspaß.',
+      beispiel_hd: 'Wintersport im Schwarzwald — Tradition und Familienspaß.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-120',
+      ausdruck: 'Westweg',
+      hochdeutsch: 'Westweg (Fernwanderweg Pforzheim-Basel)',
+      bedeutung: 'Der Westweg ist der Klassiker unter den deutschen Fernwanderwegen — eröffnet 1900 vom Schwarzwaldverein. 285 km von Pforzheim durch den Schwarzwald nach Basel, überquert alle wichtigen Schwarzwald-Höhen einschließlich Feldberg und Belchen. Markierung: gelbe Raute auf weißem Grund. Klassisch zehn Etappen, mit Übernachtungen in Schwarzwaldhütten. Einer der schönsten Fernwanderwege Europas. Wer ihn schafft, ist ein echter Schwarzwald-Kenner.',
+      beispiel: 'Den Westweg laufen — Lebenstraum für jeden Schwarzwald-Wanderer.',
+      beispiel_hd: 'Den Westweg laufen — Lebenstraum für jeden Schwarzwald-Wanderer.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-121',
+      ausdruck: 'Mittelweg',
+      hochdeutsch: 'Mittelweg (Schwarzwald-Fernwanderweg)',
+      bedeutung: 'Der Mittelweg ist neben dem Westweg der zweite klassische Schwarzwald-Fernwanderweg — 230 km von Pforzheim über Wildbad, Freudenstadt, Triberg, Hornberg und Schaffhausen am Rheinfall. Markierung: schwarz-weiße Raute. Weniger anspruchsvoll als der Westweg, aber kulturell reicher — durchquert Städte und historische Orte. Auch ein Werk des Schwarzwaldvereins von 1903. Familienfreundlich, gut markiert, mit guter Infrastruktur.',
+      beispiel: 'D\'Mittelweg isch der gemütlichere Schwarzwald-Wanderweg — mit Kultur.',
+      beispiel_hd: 'Der Mittelweg ist der gemütlichere Schwarzwald-Wanderweg — mit Kultur.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-122',
+      ausdruck: 'Wandern',
+      hochdeutsch: 'Wandern (alemannische Lieblingsbeschäftigung)',
+      bedeutung: 'Wandern ist im alemannischen Raum mehr als Sport — es ist Lebensphilosophie. Schwarzwaldverein, Schwarzwald-Tourismus und unzählige Wandervereine pflegen die Tradition. Vom Familienspaziergang bis zum Westweg-Trekking — jeder Badener wandert. Mit dem Vesper-Rucksack und der Wanderkarte zieht man los. Berghütten, Brotzeitstuben und Aussichtspunkte gehören dazu. Die alemannische Antwort auf Stress und Hektik der Moderne.',
+      beispiel: 'Sonntag isch Wandertag — gehört zum alemannischen Lebensstil.',
+      beispiel_hd: 'Sonntag ist Wandertag — gehört zum alemannischen Lebensstil.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-123',
+      ausdruck: 'Loipe',
+      hochdeutsch: 'Langlauf-Loipe (Wintersport-Klassiker)',
+      bedeutung: 'Die Loipe ist die präparierte Langlaufstrecke — im Hochschwarzwald gibt es über 1.000 km gespurte Loipen. Klassische Diagonal- und Skating-Spuren. Der Hochschwarzwald-Touristik-Verband koordiniert die Pflege. Klassische Loipen-Reviere: Hinterzarten, Schluchsee, Bernau, Notschrei. Im Februar findet der Schwarzwald-Marathon statt — 100 km auf Skiern. Langlauf ist alemannischer Volkssport, von Kindergartenkindern bis zu Senioren.',
+      beispiel: 'D\'Loipe bei Hinterzarten isch im Winter ein Traum für Langläufer.',
+      beispiel_hd: 'Die Loipe bei Hinterzarten ist im Winter ein Traum für Langläufer.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-124',
+      ausdruck: 'Belchen',
+      hochdeutsch: 'Belchen (Schwarzwald-Berg, 1414 m)',
+      bedeutung: 'Der Belchen mit 1414 Metern ist nach dem Feldberg der zweithöchste Berg des Südschwarzwalds — einer der schönsten Aussichtsgipfel Deutschlands. Bei klarem Wetter sieht man die gesamte Alpenkette vom Mont Blanc bis zur Zugspitze, die Vogesen und die Schweizer Jura. Mit der Belchen-Seilbahn erreichbar. Heiliger Berg der Kelten — der Name kommt vom keltischen Sonnengott „Belenus". Sonnwendfeuer brennen hier zur Sommersonnwende.',
+      beispiel: 'Vom Belchen siehst du an klaren Tagen den Mont Blanc — Wahnsinn!',
+      beispiel_hd: 'Vom Belchen siehst du an klaren Tagen den Mont Blanc — Wahnsinn!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-125',
+      ausdruck: 'Glashütte Wolfach',
+      hochdeutsch: 'Dorotheenhütte (Schwarzwald-Glashütte)',
+      bedeutung: 'Die Dorotheenhütte in Wolfach ist die letzte aktive mundgeblasene Glashütte des Schwarzwalds — seit 1947 in Betrieb. Besucher können den Glasmachern bei der Arbeit zusehen: am 1400 Grad heißen Schmelzofen wird Glas zu Trinkgläsern, Vasen und Christbaumschmuck geblasen. Eine Tradition, die mehr als 800 Jahre zurückgeht. Die Wolfacher Glaskunst ist Sammlerstück, das Glasdorf zeigt drei Jahrhunderte Geschichte. Erlebnis-Industriekultur.',
+      beispiel: 'In der Dorotheenhütte bläsen sie Glas wie vor 300 Jahren.',
+      beispiel_hd: 'In der Dorotheenhütte blasen sie Glas wie vor 300 Jahren.',
+      kategorie: 'arbeit'
     }
   ]
 };

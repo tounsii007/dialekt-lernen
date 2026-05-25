@@ -877,6 +877,231 @@ export default {
       beispiel: 'Hörnli mit Ghackets und Apfelmues — mis Lieblingsgricht!',
       beispiel_hd: 'Hörnli mit Hackfleisch und Apfelmus — mein Lieblingsgericht!',
       kategorie: 'essen'
+    },
+    {
+      id: 'ch-101',
+      ausdruck: 'Wilhelm Tell',
+      hochdeutsch: 'Wilhelm Tell (Nationalheld)',
+      bedeutung: 'Wilhelm Tell ist der legendäre Nationalheld der Schweiz — laut Sage ein Bauer aus Uri, der sich um 1307 weigerte, den Hut des österreichischen Vogtes Gessler zu grüssen. Er musste seinem Sohn einen Apfel vom Kopf schiessen — und tötete später Gessler in der Hohlen Gasse. Symbol für Schweizer Freiheitskampf gegen Habsburg, verewigt in Friedrich Schillers Drama (1804). Tells Existenz ist historisch umstritten, sein Mythos jedoch unsterblich.',
+      beispiel: 'D\'Wilhelm-Tell-Sage isch tüüf in de Schwiizer Seele drin.',
+      beispiel_hd: 'Die Wilhelm-Tell-Sage ist tief in der Schweizer Seele drin.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-102',
+      ausdruck: 'Schwinge',
+      hochdeutsch: 'Schwingen (Schweizer Ringkampf)',
+      bedeutung: 'Das „Schwinge" ist der traditionelle Schweizer Volkssport — eine Ringkampfart, bei der zwei Männer in Zwilchhosen (Sägemehlhosen) auf einem mit Sägemehl gefüllten Ring kämpfen. Sieger ist, wer den Gegner auf den Rücken zwingt. Alle drei Jahre findet das „Eidgenössische Schwing- und Älplerfest" statt — der grösste Sportanlass der Schweiz mit über 50.000 Zuschauern. Der „Schwingerkönig" gilt als Nationalheld. Älter als der moderne Sport.',
+      beispiel: 'Am Eidgenössische Schwingfäscht git\'s e nöie Schwingerkönig.',
+      beispiel_hd: 'Am Eidgenössischen Schwingerfest gibt es einen neuen Schwingerkönig.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-103',
+      ausdruck: 'Hornusse',
+      hochdeutsch: 'Hornussen (alter Schweizer Volkssport)',
+      bedeutung: 'Das „Hornusse" ist ein einzigartiger Schweizer Mannschaftssport, vor allem im Emmental gespielt. Ein Spieler schlägt mit einer langen Peitsche („Stecken") einen kleinen Hartgummi-Puck („Nouss") von einer Rampe ab — bis zu 300 m weit. Die gegnerische Mannschaft („Hornusserstand") versucht, den Puck im Flug mit Holzschindeln („Schindle") abzuwehren. Existiert seit dem 17. Jahrhundert. Pure ländliche Schweizer Folklore.',
+      beispiel: 'Im Ämmital spielet sie sit Jahrhundert Hornusse.',
+      beispiel_hd: 'Im Emmental spielen sie seit Jahrhunderten Hornussen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-104',
+      ausdruck: 'Verbier',
+      hochdeutsch: 'Verbier (Skiort Wallis)',
+      bedeutung: 'Verbier im Wallis ist einer der berühmtesten Skiorte der Welt — Teil des Skigebiets „4 Vallées" mit 410 km Pisten. Berühmt für Freeride-Tourismus, das jährliche Verbier-Festival (klassische Musik) und den Xtreme Verbier (Freeride-Weltcup-Finale am Bec des Rosses). Treffpunkt der internationalen High Society — Prinz William und Kate haben hier ein Chalet gekauft. Schickeria-Skiort der Extraklasse.',
+      beispiel: 'Z\'Verbier triffsch d\'Hälfti vom Schwiizer Jetset.',
+      beispiel_hd: 'In Verbier triffst du die Hälfte vom Schweizer Jetset.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-105',
+      ausdruck: 'Sackmesser',
+      hochdeutsch: 'Schweizer Taschenmesser (Victorinox)',
+      bedeutung: 'Das „Sackmesser" ist das berühmte Schweizer Taschenmesser — Inbegriff schweizerischer Ingenieurskunst und Pragmatismus. Hauptsächlich von Victorinox (Ibach, Schwyz) seit 1884 hergestellt. Das klassische Offiziers-Sackmesser hat Klinge, Schraubendreher, Dosenöffner, Korkenzieher und mehr. Wird von der Schweizer Armee, der NASA und weltweit als Statussymbol verwendet. Das rot-weisse Kreuz ist Schweizer Markenzeichen schlechthin.',
+      beispiel: 'Es Sackmesser ghört zu jedem Schwiizer wie d\'Uhr.',
+      beispiel_hd: 'Ein Schweizer Taschenmesser gehört zu jedem Schweizer wie die Uhr.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-106',
+      ausdruck: 'Bündnerfleisch',
+      hochdeutsch: 'Bündnerfleisch (luftgetrocknet)',
+      bedeutung: 'Das „Bündnerfleisch" ist eine Spezialität aus Graubünden — luftgetrocknetes Rindfleisch, dünn geschnitten und mit Bergkräutern gewürzt. Die kalte Bergluft des Engadins gibt ihm den unverwechselbaren Geschmack. Wird auf einem Holzbrett serviert, klassisch mit Brot und Cornichons. Schweizer Antwort auf italienische Bresaola — aber kräftiger und würziger. Spezialitäten-Klassiker im Schweizer Apéro.',
+      beispiel: 'E Brättli mit Bündnerfleisch und Käs — perfekte Apéro.',
+      beispiel_hd: 'Ein Brett mit Bündnerfleisch und Käse — perfekter Apéro.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-107',
+      ausdruck: 'Rivella',
+      hochdeutsch: 'Rivella (Schweizer Nationalgetränk)',
+      bedeutung: 'Rivella ist DIE Schweizer Soft-Drink-Marke — ein einzigartiges Erfrischungsgetränk auf Basis von Milchserum, erfunden 1952 von Robert Barth. Es gibt vier Sorten: Rivella Rot (Original), Blau (Light), Grün (Grüntee) und Gelb (Soja). Im Ausland fast unbekannt, in der Schweiz Kult — wird mehr getrunken als Coca-Cola. Symbol der schweizerischen Eigenständigkeit auch im Getränkemarkt.',
+      beispiel: 'E Rivella nach em Sport — gohts nüt drüber.',
+      beispiel_hd: 'Ein Rivella nach dem Sport — geht nichts drüber.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-108',
+      ausdruck: 'Schoggi',
+      hochdeutsch: 'Schokolade',
+      bedeutung: 'Die „Schoggi" ist im Schweizerdeutschen die Schokolade — ein Land, das den Welt-Pro-Kopf-Verbrauch von Schokolade anführt (rund 11 kg pro Jahr!). Schweizer Schokoladen-Marken sind weltberühmt: Lindt, Toblerone, Nestlé Cailler, Frey, Sprüngli. Die Milch der Schweizer Bergkühe gibt der Schoggi ihren spezifischen Geschmack. Auch übertragen: „Schoggi-Job" ist ein traumhaft einfacher Job. Süsses Schweizer Identitätsmerkmal.',
+      beispiel: 'En Riegel Schoggi nach em Mittag — Pflichtprogramm.',
+      beispiel_hd: 'Einen Riegel Schokolade nach dem Mittagessen — Pflichtprogramm.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-109',
+      ausdruck: 'Heidiland',
+      hochdeutsch: 'Heidiland (Region Sarganserland)',
+      bedeutung: '„Heidiland" ist die touristische Marke für die Region rund um Maienfeld (Graubünden) — Heimat der Heidi-Geschichten von Johanna Spyri. Das Heididorf in Maienfeld ist ein nachgebautes Bauerndorf mit Heidi-Haus, Alm-Öhi-Hütte und Geissen. Touristenattraktion für asiatische Besucher, die die Heidi-Anime-Serie aus den 70ern lieben. Auch die A13 trägt das Logo „Heidiland". Touristisch erfolgreich, kulturell umstritten.',
+      beispiel: 'Z\'Heidiland chömed jedi Tag asiatischi Buscars.',
+      beispiel_hd: 'Ins Heidiland kommen jeden Tag asiatische Reisebusse.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-110',
+      ausdruck: 'Alpaufzug',
+      hochdeutsch: 'Alpaufzug (Almauftrieb)',
+      bedeutung: 'Der „Alpaufzug" ist im Frühsommer (Mai/Juni) ein traditionelles Schweizer Brauchtum: Die Bauern führen ihr Vieh — Kühe mit Blumenkränzen und grossen Glocken — von den Talhöfen auf die Sommeralpen. Begleitet von Senn, Hund, Familie und Touristen. Mehrere Stunden bis Tage langer Marsch durch das Dorf. Der „Alpabzug" im Herbst ist das Gegenstück. Pure Bergkultur, UNESCO-würdig.',
+      beispiel: 'De Alpaufzug isch es Spektakel mit Chuegloggä und Bluemächränz.',
+      beispiel_hd: 'Der Alpaufzug ist ein Spektakel mit Kuhglocken und Blumenkränzen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-111',
+      ausdruck: 'Föhn',
+      hochdeutsch: 'Föhn (warmer Bergwind)',
+      bedeutung: 'Der „Föhn" ist in der Schweiz ein warmer, trockener Fallwind aus den Alpen — besonders stark im Tessin und in den Innerschweizer Tälern. Bei Föhn ist die Sicht kristallklar — man sieht 100 km weit. Auslöser für Kopfschmerzen („Föhnchopfweh"), Migräne und schlechte Laune. Auch erhöhtes Lawinenrisiko im Winter. Wetter-Phänomen, das nicht nur Berner, sondern auch Walliser und Bündner mit Hass-Liebe beobachten.',
+      beispiel: 'Bi de Föhn gseht me d\'Bärge wie zum Aaglängä.',
+      beispiel_hd: 'Beim Föhn sieht man die Berge wie zum Anlangen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-112',
+      ausdruck: 'Glace',
+      hochdeutsch: 'Eis / Speiseeis',
+      bedeutung: 'Die „Glace" ist im Schweizerdeutschen das Speiseeis — französisches Lehnwort, das die deutsche „Eiscreme" verdrängt hat. „En Glace go ässä" ist Sommer-Pflichtprogramm. Berühmte Schweizer Glace-Marken: Mövenpick, Frisco. „Hörnliglace" ist Eis in der Waffeltüte. Im Tessin heisst es „Gelato". Auch übertragen: „Es isch mer Glace" — es ist mir egal (eher selten).',
+      beispiel: 'Bi dem Wätter gönd mir go en Glace ässä.',
+      beispiel_hd: 'Bei dem Wetter gehen wir Eis essen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-113',
+      ausdruck: 'Cervelat',
+      hochdeutsch: 'Cervelat (Schweizer Nationalwurst)',
+      bedeutung: 'Der „Cervelat" ist die Schweizer Nationalwurst — eine kurze, dicke Brühwurst aus Rind, Speck und Schwarte, mild geräuchert. Wird sowohl roh als auch gegrillt gegessen. Beim Grillieren werden die Enden kreuzweise eingeschnitten, sodass sie sich wie „Blumen" aufrollen. Klassischer Snack am Lagerfeuer, beim Picknick und im Schwimmbad. Wird etwa 160 Mio. Mal pro Jahr verkauft — zwei pro Schweizer.',
+      beispiel: 'Am Grill cha ich nüt ohni Cervelat.',
+      beispiel_hd: 'Am Grill kann ich nicht ohne Cervelat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-114',
+      ausdruck: 'Federer',
+      hochdeutsch: 'Roger Federer (Tennisspieler)',
+      bedeutung: 'Roger Federer (geb. 1981 in Basel) ist der wohl grösste Schweizer Sportler aller Zeiten — Tennisspieler mit 20 Grand-Slam-Titeln, 310 Wochen Weltranglistenerster und einem Spielstil von ausserweltlicher Eleganz. 2022 zurückgetreten. Symbol für Schweizer Präzision, Höflichkeit und Souveränität. Spricht im Interview Baseldütsch, Englisch, Französisch und Hochdeutsch — perfekte Schweizer Multilingualität. Nationalheld der Moderne.',
+      beispiel: 'De Federer isch en Stoiz vo de ganze Schwiiz.',
+      beispiel_hd: 'Der Federer ist ein Stolz der ganzen Schweiz.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-115',
+      ausdruck: 'Sennenhund',
+      hochdeutsch: 'Sennenhund (Bergbauernhund)',
+      bedeutung: 'Der „Sennenhund" — vor allem der Berner Sennenhund — ist DIE Schweizer Hunderasse. Gross, schwarz-weiss-braun, freundlich, beschützend. Stammt aus dem Berner Oberland, wo er Sennen bei der Arbeit unterstützte: Wachhund, Ziehhund (für kleine Karren), Treibhund. Es gibt vier Sennenhund-Rassen: Berner, Appenzeller, Entlebucher und Grosser Schweizer. Beliebter Familienhund weltweit. Schweizer Tierfolklore.',
+      beispiel: 'En Bärner Sennehund isch e gmüetlicher Familiehund.',
+      beispiel_hd: 'Ein Berner Sennenhund ist ein gemütlicher Familienhund.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-116',
+      ausdruck: 'Pöstler',
+      hochdeutsch: 'Briefträger / Postbote',
+      bedeutung: 'Der „Pöstler" ist im Schweizerdeutschen der Postbote — eine vertraute Figur in jedem Dorf. „Ds Pöstli" kommt täglich vorbei, kennt jeden Bewohner. In den Bergen lieferten Postangestellte einst per Maultier oder Schlitten — das gelbe Posthorn (Schweizer Posttaxi-Symbol) wurde dabei zur Ankündigung geblasen. Heute oft auf E-Bikes unterwegs. Die „Postauto"-Linien bringen den Pöstler bis ins entlegenste Tal.',
+      beispiel: 'De Pöstler bringt mir jeden Tag d\'Ziitig.',
+      beispiel_hd: 'Der Briefträger bringt mir jeden Tag die Zeitung.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-117',
+      ausdruck: 'Jodel',
+      hochdeutsch: 'Jodler (Alpengesang)',
+      bedeutung: 'Der „Jodel" ist die alpine Gesangstechnik mit schnellem Wechsel zwischen Brust- und Falsettstimme — UNESCO-Immaterielles Weltkulturerbe. Ursprünglich als Kommunikation zwischen Hirten über die Berge benutzt. Heute Volkskultur — jeden Sommer gibt es das Eidgenössische Jodelfest mit Tausenden Sängern. Jodelclub-Mitgliedschaft ist im ländlichen Raum noch immer Status. Schweizer Sound-Identität schlechthin.',
+      beispiel: 'Am Bärgli oben jodlet d\'Sennäli wunderschön.',
+      beispiel_hd: 'Am Berg oben jodeln die Sennen wunderschön.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-118',
+      ausdruck: 'Töff',
+      hochdeutsch: 'Motorrad',
+      bedeutung: 'Der „Töff" ist im Schweizerdeutschen das Motorrad — onomatopoetisches Wort vom „töf-töf"-Geräusch des Motors. Auch Mofa heisst „Töffli" oder „Vespa", Auto fast nie als Töff bezeichnet. „Töffler" sind Motorradfahrer. „Im Sommer schwingt jede Schwiizer ufs Töff" — Klischee, aber wahr. Auch das „Töff-Riibä-Lärm" ist im Sommer im Tessin oder Wallis konstantes Hintergrundgeräusch.',
+      beispiel: 'Min Töff staht draussä — schöns Wätter zum Fahrä.',
+      beispiel_hd: 'Mein Motorrad steht draussen — schönes Wetter zum Fahren.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-119',
+      ausdruck: 'Migros',
+      hochdeutsch: 'Migros (Supermarktkette)',
+      bedeutung: 'Migros ist die grösste Schweizer Supermarktkette — gegründet 1925 von Gottlieb Duttweiler als Genossenschaft. Über zwei Millionen Mitglieder, 30+ Prozent Marktanteil im Lebensmittelhandel. Verkauft keinen Alkohol und keine Zigaretten — ideologisches Erbe Duttweilers. Im Schweizer Alltag allgegenwärtig. „M-Budget" ist die Eigenmarke. Konkurrenz zum „Coop" — der ewige Schweizer Supermarkt-Streit, fast religiös.',
+      beispiel: 'Ich gönd in Migros, du gönd Coop — Glaubenssach.',
+      beispiel_hd: 'Ich gehe zu Migros, du zu Coop — Glaubenssache.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-120',
+      ausdruck: 'Apéro',
+      hochdeutsch: 'Apéro (Vor-Essen)',
+      bedeutung: 'Der „Apéro" ist die schweizerische Institution vor dem Abendessen — gemütliches Zusammensein mit Wein, Bier oder Champagner und kleinen Häppchen (Cervelat-Scheiben, Käsewürfel, Salzgebäck). Stammt aus dem französischen „apéritif", ist aber in der ganzen Schweiz verbreitet. „Apéro riche" (mit reichhaltigem Buffet) ersetzt oft das Abendessen. Ohne Apéro keine Schweizer Geschäfts-, Vereins- oder Privatfeier komplett.',
+      beispiel: 'Mer treffed üs am sechsi zum Apéro.',
+      beispiel_hd: 'Wir treffen uns um sechs zum Apéro.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-121',
+      ausdruck: 'Velo',
+      hochdeutsch: 'Fahrrad',
+      bedeutung: 'Das „Velo" ist im Schweizerdeutschen das Fahrrad — französisches Lehnwort, das die deutsche „Fahrrad" verdrängt hat. „Velofahre" ist in der Schweiz Alltag — selbst in den Bergen. Berühmte Veloevents: Tour de Suisse, der Cyclassics. Auch das „Velohelmsobligatorium" ist Schweizer Tradition. Stadt-Bern, Basel, Zürich sind sehr velofreundlich. Wer „Fahrrad" sagt, outet sich sofort als Deutscher.',
+      beispiel: 'Min Velo staht im Vorhuus — Helm nid vergässä!',
+      beispiel_hd: 'Mein Fahrrad steht im Vorhaus — Helm nicht vergessen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-122',
+      ausdruck: 'Putzfee',
+      hochdeutsch: 'Putzfrau / Reinigungsfee',
+      bedeutung: 'Die „Putzfee" ist im Schweizerdeutschen die Reinigungskraft — euphemistisch und positiver konnotiert als „Putzfrau". „Mini Putzfee chunnt jede Mittwuch" ist Schweizer Mittelstandsalltag. Der Begriff zeigt die schweizerische Haltung: Hausarbeit wird respektiert, Putzfrauen werden mit Tee und Schoggi bewirtet. Oft ehrenwerte Tätigkeit für Frauen aus Osteuropa oder Süditalien. Schweizer Höflichkeitskultur.',
+      beispiel: 'D\'Putzfee chunnt jede Mittwuch zum Putzä.',
+      beispiel_hd: 'Die Putzfee kommt jeden Mittwoch zum Putzen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-123',
+      ausdruck: 'Postauto',
+      hochdeutsch: 'Postauto (Postbus)',
+      bedeutung: 'Das „Postauto" ist der gelbe Schweizer Postbus — fährt in über 900 Linien die ganze Schweiz ab, bis in die entlegensten Bergtäler. Berühmt für das dreitönige Posthorn („tüü-ta-too"), das in engen Bergkurven gehupt wird — komponiert von Gioachino Rossini. Eine Fahrt mit dem Postauto über den Sustenpass oder Grimselpass gehört zu den schönsten Schweizer Reise-Erlebnissen. Service public in Reinkultur.',
+      beispiel: 'Mit em Postauto über de Sustenpass — Traumfahrt!',
+      beispiel_hd: 'Mit dem Postauto über den Sustenpass — Traumfahrt!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-124',
+      ausdruck: 'Banker',
+      hochdeutsch: 'Banker (Bankangestellter)',
+      bedeutung: 'Der „Banker" ist in der Schweiz ein traditioneller Beruf mit hohem Sozialstatus — vor allem in Zürich, Genf und Lugano. Die UBS und Credit Suisse (vor der Pleite 2023) waren weltweit tätig. Schweizer Banker stehen für Verschwiegenheit (das berühmte „Bankgeheimnis", inzwischen erodiert), Präzision und Diskretion. Klischee: dezenter Anzug, gepflegtes Aussehen, höfliche Distanz. Schweizer Identitätsmerkmal mit ambivalentem Ruf.',
+      beispiel: 'In de Bahnhofstrass laufed nume Banker mit Krawatte.',
+      beispiel_hd: 'In der Bahnhofstrasse laufen nur Banker mit Krawatte.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-125',
+      ausdruck: 'Heimatgfühl',
+      hochdeutsch: 'Heimatgefühl',
+      bedeutung: 'Das „Heimatgfühl" ist die tief verwurzelte schweizerische Identifikation mit Heimatort, Kanton und der ganzen Schweiz. Wird ausgelöst durch Alphornklang, den Anblick der Berge, das erste Schluck Rivella nach Auslandsreise oder die Stimme von Roger Federer. Trotz vielfältiger Sprachregionen ist das Schweizer Heimatgefühl überraschend stark — geeint durch Föderalismus, direkte Demokratie und gemeinsame Werte. Mehr als Nostalgie: gelebte Identität.',
+      beispiel: 'Wenn ich d\'Bärge gseh, han ich sofort Heimatgfühl.',
+      beispiel_hd: 'Wenn ich die Berge sehe, habe ich sofort Heimatgefühl.',
+      kategorie: 'gefuehle'
     }
   ]
 };
