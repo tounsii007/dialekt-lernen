@@ -1323,6 +1323,276 @@ export default {
       beispiel: 'Anton Günthers Lieder kennt im Erzgebirge jedes Kind.',
       beispiel_hd: 'Anton Günthers Lieder kennt im Erzgebirge jedes Kind.',
       kategorie: 'menschen'
+    },
+    {
+      id: 's-151',
+      ausdruck: 'Mor halt',
+      hochdeutsch: 'Aber/halt',
+      bedeutung: '„Mor halt" ist eine typische sächsische Füllpartikel — Mischung aus „aber" und „halt", die Resignation oder Akzeptanz ausdrückt. Wird oft am Satzanfang oder als rhetorische Pause verwendet: „Mor halt, was solls". Ähnlich dem norddeutschen „nu ja". Drückt eine bedächtige, ergebene Haltung aus — typisch sächsisch verschmitzt. Schwer ins Hochdeutsche zu übersetzen, weil die Bedeutung im Tonfall liegt.',
+      beispiel: 'Mor halt, das Wetter wird scho werden.',
+      beispiel_hd: 'Aber halt, das Wetter wird schon werden.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-152',
+      ausdruck: 'Bemme',
+      hochdeutsch: 'belegtes Brot / Stulle',
+      bedeutung: 'Die „Bemme" ist im Sächsischen das belegte Brot — meist mit Butter, Wurst, Käse oder Marmelade. In Kindheit und Schule omnipräsent: „Bemmenbüchse" für die Brotzeit-Box. „A Bemme mit Schmalz" ist ein klassisches Pausenbrot. Etymologie unklar, vielleicht slawisch. „Bemmernschmiere" ist die Belegstreichmasse. Bis heute in Sachsen täglicher Sprachgebrauch — keine Bemme in der Brotzeit-Büchse wäre undenkbar.',
+      beispiel: 'Pack dir e Bemme für die Pause ei!',
+      beispiel_hd: 'Pack dir ein belegtes Brot für die Pause ein!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-153',
+      ausdruck: 'Schniegel',
+      hochdeutsch: 'Stolz / Pomp',
+      bedeutung: '„Schniegel" beschreibt im Sächsischen aufgesetzten Stolz, ostentative Schickheit oder verspielten Putz. „Geschniegelt und gebügelt" ist eine bekannte Redewendung. Ein „geschniegelter Bursch" ist ein hochmütiger, übertrieben elegant gekleideter Mann. Im Erzgebirge auch positiv für sorgfältig gepflegt verwendet. Stammt vom alten Wort für Putzen und Schmücken. Klingt liebevoll-spöttisch.',
+      beispiel: 'Der Karl gönnt sich heut e geschniegeltes Hemd.',
+      beispiel_hd: 'Der Karl gönnt sich heute ein elegantes Hemd.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-154',
+      ausdruck: 'Klitsche',
+      hochdeutsch: 'Kneipe / kleines Geschäft',
+      bedeutung: 'Eine „Klitsche" ist im Sächsischen eine kleine, etwas heruntergekommene Kneipe oder ein winziges Geschäft. Liebevoll-pejorativ — keine Beleidigung, aber auch kein Kompliment. „A kleene Klitsche um die Ecke" beschreibt das beliebte Stammlokal mit Charakter. Stammt vom mittelhochdeutschen „klats" für „klatschend, schmierig". Auch für ungepflegte Wohnungen verwendet.',
+      beispiel: 'Geh\'m mor in die Klitsche an de Ecke, da gibt\'s gutes Bier.',
+      beispiel_hd: 'Gehen wir in die Kneipe an der Ecke, da gibt es gutes Bier.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-155',
+      ausdruck: 'Frischling',
+      hochdeutsch: 'Wildschwein-Junges / Anfänger',
+      bedeutung: '„Frischling" hat im Sächsischen zwei Bedeutungen: 1) Das junge Wildschwein, gestreift und neugierig — vor allem im Erzgebirge und der Lausitz bekannt. 2) Ein Anfänger, ein „Greenhorn" — neuer Mitarbeiter, Jungerwachsener im ersten Job, Lehrling. „A grüner Frischling" ist ein unbeholfener Neuling. Liebevoll, herablassend, aber nicht beleidigend gemeint. Hochsprachlich verbreitet, aber in Sachsen besonders gepflegt.',
+      beispiel: 'Der neue Lehrling is\' noch e richtiger Frischling.',
+      beispiel_hd: 'Der neue Lehrling ist noch ein richtiger Anfänger.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-156',
+      ausdruck: 'Drauchsala',
+      hochdeutsch: 'Durcheinander / Tohuwabohu',
+      bedeutung: '„Drauchsala" ist sächsisch für ein wirres Durcheinander, Chaos oder Lärm. Stammt vom slawischen „dracha" (Streit, Lärm). Wird oft beschrieben, wenn auf der Straße ein Stau ist, in der Küche alles drüber-und-drunter geht oder Kinder Lärm machen. „A Drauchsala wie auf dem Jahrmarkt" ist eine sprichwörtliche Übertreibung. Klingt eher liebevoll-bedauernd als verärgert.',
+      beispiel: 'In der Küche herrschte e Drauchsala mit den Gästen.',
+      beispiel_hd: 'In der Küche herrschte ein Tohuwabohu mit den Gästen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-157',
+      ausdruck: 'Bibbern',
+      hochdeutsch: 'zittern',
+      bedeutung: '„Bibbern" bedeutet im Sächsischen zittern — vor Kälte, Angst oder Aufregung. „Vor Kälte bibbern" ist die wörtliche Bedeutung. „Vor Angst bibbern" das Übertragene. Lautmalerei für das Klappern der Zähne. In Kindheitsgeschichten allgegenwärtig: „Mer bibberten vorm Lehrer". Auch positive Verwendung: „Vor Vorfreude bibbern" wenn Weihnachten naht. Tiefe sächsische Stammlautverbindung mit b-b.',
+      beispiel: 'Mer haben gebibbert wie Espenlaub auf dem Schulhof.',
+      beispiel_hd: 'Wir haben gezittert wie Espenlaub auf dem Schulhof.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-158',
+      ausdruck: 'Schlampe',
+      hochdeutsch: 'Schlampe (im sächsischen Kontext: schlampige Frau)',
+      bedeutung: 'In Sachsen bedeutet „Schlampe" historisch eine schlampige, unordentliche Person — nicht die heute gebräuchliche Beleidigung. Stammt vom mittelhochdeutschen „schlampen" (schlapp herabhängen). „A liederliche Schlampe" beschreibt jemanden, der das Haus nicht in Schuss hält. Heute zunehmend tabu wegen seiner zweideutigen Bedeutung. Manche ältere Sachsen verwenden es noch im traditionellen Sinne unbedenklich.',
+      beispiel: 'Bei der Frau Müller is\' alles e bissel die Schlampe.',
+      beispiel_hd: 'Bei der Frau Müller ist alles ein bisschen unordentlich.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-159',
+      ausdruck: 'Schnoddrig',
+      hochdeutsch: 'frech / vorlaut',
+      bedeutung: '„Schnoddrig" beschreibt einen frechen, vorlauten Ton — meist von jungen Leuten oder zickigen Verkäuferinnen. Drückt eine Mischung aus Schnodder (Rotz) und schnauben aus, also rotzig-frechen Tonfall. „A schnoddriger Bengel" ist ein vorlauter Junge, der nicht ans Wort denkt. Mehr unverschämt als wirklich böse — gehört zur sächsischen Direktheit. Norddeutsche Variante ist „schnoddrich".',
+      beispiel: 'Die Verkäuferin war wieder mal schnoddrig zu mir.',
+      beispiel_hd: 'Die Verkäuferin war wieder mal frech zu mir.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-160',
+      ausdruck: 'Zerwerfung',
+      hochdeutsch: 'Zerwürfnis / Streit',
+      bedeutung: '„Zerwerfung" ist im Sächsischen die ernsthafte Verstimmung, der Streit zwischen Freunden, Geschwistern oder Eheleuten. „A Zerwerfung gehabt" bedeutet, ein Zerwürfnis erlebt zu haben. Stärker als „Streit", schwächer als „Bruch". Klingt fast literarisch-altmodisch, hat im sächsischen Sprachschatz aber überlebt. Häufig in Heimatfilmen und Volksstücken aus Sachsen verwendet. Klingt nach unwiderruflichen Folgen.',
+      beispiel: 'Es gab e Zerwerfung zwischen den beiden Brüdern.',
+      beispiel_hd: 'Es gab ein Zerwürfnis zwischen den beiden Brüdern.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-161',
+      ausdruck: 'Stulle',
+      hochdeutsch: 'belegtes Brot / Stulle',
+      bedeutung: 'Die „Stulle" ist im sächsischen Norden (Leipzig, Dresden) das belegte Brot — südlich davon (Erzgebirge) eher „Bemme" genannt. Stammt vom mittelhochdeutschen „stollen" (Stütze). „A Stulle Schmalz" ist eine klassische Pausenmahlzeit. Im DDR-Sprachgebrauch absolut omnipräsent: jede Schultasche hatte ihre Stullenbüchse. Heute noch im Leipziger Volksmund häufig. Berlin und Brandenburg teilen den Begriff.',
+      beispiel: 'Mer haben uns e Stulle mit Leberwurscht gschmiert.',
+      beispiel_hd: 'Wir haben uns ein belegtes Brot mit Leberwurst geschmiert.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-162',
+      ausdruck: 'Eierschecke',
+      hochdeutsch: 'Eierschecke (Kuchen)',
+      bedeutung: 'Die „Eierschecke" ist DAS sächsische Kuchen-Wahrzeichen — ein dreischichtiger Quarkkuchen aus Mürbteig-Boden, Quarkschicht und Eier-Mandel-Kruste. Erfunden im 17. Jahrhundert in Dresden, gilt als „Königin der sächsischen Backwaren". Zur Kaffeezeit in jeder Konditorei zwischen Erzgebirge und Lausitz erhältlich. „Eierschecke mit Schlagsahne" ist Sonntags-Spezialität. Streit, welche Bäckerei die beste macht, geht durch ganz Sachsen.',
+      beispiel: 'Zum Sonntagskaffee gibt\'s Eierschecke mit Schlagsahne.',
+      beispiel_hd: 'Zum Sonntagskaffee gibt es Eierschecke mit Schlagsahne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-163',
+      ausdruck: 'Schippel',
+      hochdeutsch: 'kleine Menge',
+      bedeutung: 'Ein „Schippel" ist im Sächsischen eine kleine, oft handvolle Menge — meist von losen Dingen wie Kohle, Salz, Mehl oder kleinen Gegenständen. Stammt vom Wort „Schaufel" (Schippe). „E Schippel Salz" ist eine Prise. „A kleines Schippel Geld" ist ein kleines Vermögen, ironisch. Auch für Personen verwendet: „a Schippel Kinder" sind viele kleine Kinder. Charakteristisch sächsisch in Tonfall und Verwendung.',
+      beispiel: 'Tu noch e Schippel Salz in die Suppe.',
+      beispiel_hd: 'Tu noch eine Prise Salz in die Suppe.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-164',
+      ausdruck: 'Hutzenabend',
+      hochdeutsch: 'Erzgebirgischer Adventsabend',
+      bedeutung: 'Der „Hutzenabend" ist eine erzgebirgische Tradition — Adventsabend mit Erzählungen, Liedern, Klöppelarbeit und Bergbau-Geschichten. „Hutzen" bedeutet „auf Besuch gehen". Familien trafen sich in der Stube, sangen, spielten und arbeiteten. Heute als touristische Veranstaltung in Bergstädten wie Annaberg-Buchholz und Schneeberg gepflegt. Anton-Günther-Lieder, Schwibbögen, Pyramide und Räuchermännchen gehören dazu. Lebendiges Kulturerbe.',
+      beispiel: 'Am Hutzenabend wurd gesungen und Geschichten erzählt.',
+      beispiel_hd: 'Am Hutzenabend wurde gesungen und Geschichten erzählt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-165',
+      ausdruck: 'Schneppern',
+      hochdeutsch: 'plaudern / tratschen',
+      bedeutung: '„Schneppern" bedeutet im Sächsischen ausgiebig plaudern, klönen oder tratschen — meist in gemütlicher Runde bei Kaffee und Kuchen. Stammt vom „Schnabel" (schnattern). „Mer haben e bissel geschneppert" ist die Standardphrase nach einem Nachbarschaftsbesuch. Frauen-Klatsch wird „Klönschneppern" genannt. Liebevoll, nicht abwertend gemeint — gehört zum sächsischen Geselligkeitsritual.',
+      beispiel: 'Mer haben de ganzen Nachmittag geschneppert.',
+      beispiel_hd: 'Wir haben den ganzen Nachmittag geplaudert.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-166',
+      ausdruck: 'Olalol',
+      hochdeutsch: 'Mein Gott / Ach du meine Güte',
+      bedeutung: '„Olalol" ist ein typisch sächsischer Ausruf des Erstaunens, der Verwunderung oder leichter Empörung. Mehr Lautmalerei als echtes Wort, schwer zu schreiben. Wird oft gedehnt: „Olaaaalool!". Drückt eine bedächtige, oft humorvolle Reaktion auf Unerwartetes aus. Ähnlich dem norddeutschen „Hach!". In Volksstücken und sächsischer Komödie unverzichtbar. Lothar de Maizière (DDR-Politiker) hat es bekannt gemacht.',
+      beispiel: 'Olalol, das hätt ich nu wirklich nich gedacht!',
+      beispiel_hd: 'Mein Gott, das hätte ich nun wirklich nicht gedacht!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-167',
+      ausdruck: 'Tüddelband',
+      hochdeutsch: 'Spielzeug aus Schnur',
+      bedeutung: 'Das „Tüddelband" ist ein einfaches Spielzeug — eine Schnur, mit der Kinder zu zweit verschiedene Figuren bilden („Pyramide", „Wiege", „Stern"). Ein Spiel, das Generationen prägte, vor allem auf dem sächsischen Land. Heute oft vergessen, aber bei Erwachsenen mit Erinnerung an Kindheitsabende. Im Erzgebirge auch „Faden-Spiel" genannt. Symbol für kreatives, technikfreies Kinderspiel früherer Zeiten.',
+      beispiel: 'Frieher haben mer stundenlang mit dem Tüddelband gespielt.',
+      beispiel_hd: 'Früher haben wir stundenlang mit dem Faden-Spiel gespielt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-168',
+      ausdruck: 'Pille',
+      hochdeutsch: 'Ball / Fußball',
+      bedeutung: 'In Sachsen ist die „Pille" salopp der Fußball — vor allem im Volksmund verbreitet. „D\'Pille hingeschoben" bedeutet einen Pass spielen. „D\'Pille ins Netz hauen" heißt Tor schießen. Reporter und Fußballfans verwenden den Begriff besonders in Dresden und Leipzig. Stammt von „pillern" (kicken). Auch metaphorisch: „die Pille schlucken" für eine bittere Erkenntnis akzeptieren. Sächsischer Sport-Slang par excellence.',
+      beispiel: 'Hau die Pille rein, ihr Affenärsche!',
+      beispiel_hd: 'Hau den Ball ins Tor, ihr Trottel!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-169',
+      ausdruck: 'Pfingsten',
+      hochdeutsch: 'Pfingsten (in Sachsen besonders gefeiert)',
+      bedeutung: 'Pfingsten ist in Sachsen — besonders in Lausitz und Erzgebirge — ein bedeutendes Fest mit eigenen Bräuchen. „Pfingstmaibaum" wird aufgestellt, „Pfingstrosen" geschmückt, sorbische Pfingstreiter ziehen durch Wittichenau. „A Pfingstausflug" gehört zur Volkstradition: Wanderung, Picknick, Familienausflug. Drei Tage frei, weil Pfingstmontag und manchmal -dienstag dazugehören. Verbindet Religion mit Frühlings-Outdoor-Kultur.',
+      beispiel: 'Zu Pfingsten machen mer e Wanderung im Erzgebirge.',
+      beispiel_hd: 'Zu Pfingsten machen wir eine Wanderung im Erzgebirge.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-170',
+      ausdruck: 'Fettnäppchen',
+      hochdeutsch: 'Peinlicher Fauxpas',
+      bedeutung: '„Ins Fettnäppchen treten" bedeutet einen peinlichen sozialen Fauxpas zu begehen — meist durch eine unbedachte Bemerkung oder eine unpassende Frage. Im Sächsischen besonders gern verwendet, weil die direkte Art der Sachsen oft dazu führt. „Da haste ja ins Fettnäppchen getreten!" wird oft als Trost-Spott geäußert. Stammt aus der Küche: ins Fettnäppchen treten ruiniert sowohl Schuh als auch Inhalt. Universelles deutsches Idiom.',
+      beispiel: 'Mit der Bemerkung is\' er ja richtig ins Fettnäppchen getreten.',
+      beispiel_hd: 'Mit der Bemerkung ist er ja richtig in den Fettnapf getreten.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-171',
+      ausdruck: 'Schaffe',
+      hochdeutsch: 'arbeite / schuftet',
+      bedeutung: '„Schaffe" bedeutet im Sächsischen arbeiten, schuften, ackern. Stärker als „arbeiten" — beinhaltet harte körperliche oder ausdauernde Arbeit. „Ich schaffe nu acht Stunden!" als trotziger Ausruf. „A Schaffemann" ist ein harter Arbeiter. Sächsischer Arbeitsstolz und Fleiß-Ethos drücken sich darin aus. Hat einen leicht stoischen Unterton: man schafft, ohne zu jammern. Verwandt mit „schaffen" (kreieren), aber im sächsischen Kontext rein arbeitstechnisch.',
+      beispiel: 'Mer schaffe seit Tagn an dem Projekt.',
+      beispiel_hd: 'Wir arbeiten seit Tagen an dem Projekt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-172',
+      ausdruck: 'Zünftig',
+      hochdeutsch: 'ordentlich / kräftig',
+      bedeutung: '„Zünftig" beschreibt etwas Ordentliches, Kräftiges, Echtes — eine zünftige Mahlzeit ist herzhaft und füllt den Magen, eine zünftige Feier ist ausgelassen und mit viel Bier. Stammt vom „Zünften" (Handwerker-Innungen) und drückt traditionelle Tüchtigkeit aus. „A zünftiger Schluck Bier" ist ein kräftiger Bierzug. „Zünftig Feiern" heißt richtig in die Vollen gehen. Positive Konnotation, oft im Wirtshauskontext.',
+      beispiel: 'Heut Abend gibt\'s a zünftige Brotzeit mit Bier.',
+      beispiel_hd: 'Heute Abend gibt es eine ordentliche Brotzeit mit Bier.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-173',
+      ausdruck: 'Mucke',
+      hochdeutsch: 'Mücke / Musik / Auftrag',
+      bedeutung: '„Mucke" hat im Sächsischen mehrere Bedeutungen: 1) Mücke (das Insekt). 2) Musik, vor allem im Musiker-Slang: „A Mucke spielen" heißt einen Gig haben. 3) Nebenjob, kleiner Auftrag — „A Mucke nebenher" ist ein Zusatzeinkommen. Mehrdeutigkeit gehört zum sächsischen Wortspiel. „D\'Mucke macht den Stich" wird auch metaphorisch verwendet — eine kleine Sache macht den Unterschied.',
+      beispiel: 'Heut Abend hab ich noch e Mucke mit der Band.',
+      beispiel_hd: 'Heute Abend habe ich noch einen Musik-Auftrag mit der Band.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-174',
+      ausdruck: 'Erstma',
+      hochdeutsch: 'erst einmal',
+      bedeutung: '„Erstma" ist eine sächsische Kontraktion von „erst einmal" — fester Bestandteil des Sprachflusses. „Erstma ne Pause" steht für die Notwendigkeit einer Verschnaufpause. „Erstma kuck mer mal" ist die typische Reaktion auf Unerwartetes. Drückt eine bedächtige, nicht überstürzte Haltung aus. Sehr charakteristisch sächsisch, klingt freundlich-pragmatisch. Tief im sächsischen Alltagswortschatz verankert.',
+      beispiel: 'Erstma e Tasse Kaffee, dann sehen mer weiter.',
+      beispiel_hd: 'Erst einmal eine Tasse Kaffee, dann sehen wir weiter.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-175',
+      ausdruck: 'Pfundskerl',
+      hochdeutsch: 'toller Mensch',
+      bedeutung: '„Pfundskerl" ist ein höchstes Kompliment in Sachsen — ein toller, zuverlässiger, hilfsbereiter Mensch. Stammt vom „Pfund" als Gewichtsmaß (= solid, gewichtig). „A echter Pfundskerl" beschreibt jemanden, auf den man sich blind verlassen kann. Männlich konnotiert, aber „Pfundsfrau" auch möglich. Hochsprachlich, aber in Sachsen besonders herzlich verwendet. Drückt Wertschätzung und Anerkennung aus, ohne übertrieben zu wirken.',
+      beispiel: 'Der Hans is\' wirklich e Pfundskerl, hat mir gestern geholfen.',
+      beispiel_hd: 'Der Hans ist wirklich ein toller Mensch, hat mir gestern geholfen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-176',
+      ausdruck: 'Knülch',
+      hochdeutsch: 'unangenehmer Mensch',
+      bedeutung: 'Ein „Knülch" ist ein unangenehmer, oft etwas trottelig wirkender Mensch — meist männlich. „A komischer Knülch" beschreibt jemanden, der seltsam, unsympathisch oder lästig ist. Im Gegensatz zu „Pfundskerl" abwertend, aber nicht beleidigend — eher resignierende Charakterisierung. „So a Knülch wie der" wird oft mit Kopfschütteln gesagt. Stammt vom mittelhochdeutschen „knülen" (zerknüllen) — also einer, der einem auf die Nerven geht.',
+      beispiel: 'Was will der Knülch denn schon wieder hier?',
+      beispiel_hd: 'Was will der unangenehme Mensch denn schon wieder hier?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-177',
+      ausdruck: 'Krempel',
+      hochdeutsch: 'Kram / Zeug',
+      bedeutung: '„Krempel" ist im Sächsischen Kram, Zeug, Plunder — wertloser oder zumindest scheinbar nutzloser Besitz. „Den ganzen Krempel wegschmeißen" oder „A Haus voller Krempel". Stammt vom mittelhochdeutschen „krempel" (Schuster-Material). Wird oft etwas resigniert oder kritisch verwendet. Im positiven Sinn auch für Sammlung: „A Krempel an Sachen" für eine reiche Sammlung. Sächsischer Alltagsbegriff für Hausrat und Kleinkram.',
+      beispiel: 'Den ganzen Krempel im Keller müssen mer mal entrümpeln.',
+      beispiel_hd: 'Den ganzen Kram im Keller müssen wir mal entrümpeln.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-178',
+      ausdruck: 'Holperer',
+      hochdeutsch: 'Stolperer / Aussetzer',
+      bedeutung: 'Ein „Holperer" ist ein kleiner Aussetzer oder Stolperer — beim Sprechen, Singen, Vortragen. „Da hat er e Holperer drin gehabt" wird verständnisvoll gesagt. Auch für einen kleinen Verkehrsunfall oder eine fehlerhafte Bewegung verwendet. Stammt vom Verb „holpern" (über Unebenheiten fahren). Klingt fast liebevoll, nicht beschämend. Drückt aus: passiert eben mal, ist nicht schlimm.',
+      beispiel: 'Bei der Rede gab\'s e paar Holperer, aber sonst war\'s gut.',
+      beispiel_hd: 'Bei der Rede gab es ein paar Aussetzer, aber sonst war es gut.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-179',
+      ausdruck: 'Tippelei',
+      hochdeutsch: 'umständliches Gehen / Trippeln',
+      bedeutung: 'Die „Tippelei" ist ein umständliches, vorsichtiges, oft langsames Gehen — meist in zu engen Schuhen oder bei Glätte. Stammt vom „tippeln" (kleinschrittig gehen). „A Tippelei wie ein Storch" beschreibt jemand, der unbeholfen läuft. Ironisch oder herablassend, je nach Kontext. Sächsisch durchsetzt mit Diminutiv-Endungen: kleine, niedliche Handlung. Auch für unentschlossene Bewegungen oder zögerliches Tun verwendet.',
+      beispiel: 'Bei der Glätte gab\'s e richtige Tippelei nach Hause.',
+      beispiel_hd: 'Bei der Glätte gab es ein richtiges Trippeln nach Hause.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-180',
+      ausdruck: 'Mucksch',
+      hochdeutsch: 'eingeschnappt / beleidigt',
+      bedeutung: '„Mucksch" beschreibt im Sächsischen jemanden, der eingeschnappt, beleidigt oder schmollend ist. „Sei nicht so mucksch!" als typische Ermahnung. Vor allem Kinder werden so beschrieben, aber auch Erwachsene, die wegen Kleinigkeiten schmollen. Stammt vom Lautwort „muks" (kein Mucks). „Mucksch sein" gehört zur Charakterisierung sensibler Persönlichkeiten. Hat eine zarte, fast bemitleidende Note — keine harte Beleidigung.',
+      beispiel: 'Sei doch nicht gleich so mucksch, war doch nur Spaß!',
+      beispiel_hd: 'Sei doch nicht gleich so eingeschnappt, war doch nur Spaß!',
+      kategorie: 'gefuehle'
     }
   ]
 };
