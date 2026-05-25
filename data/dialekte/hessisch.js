@@ -2332,6 +2332,276 @@ export default {
       beispiel: 'Mit hessischer Direktheit gesagt: Des is\' Quatsch!',
       beispiel_hd: 'Mit hessischer Direktheit gesagt: Das ist Quatsch!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'h-261',
+      ausdruck: 'Kassel',
+      hochdeutsch: 'Kassel (Nordhessen-Hauptstadt)',
+      bedeutung: 'Kassel ist nordhessische Großstadt — ehemals kurfürstliche Residenz, heute Documenta-Stadt (alle 5 Jahre weltweit bedeutendste Kunstausstellung). Bergpark Wilhelmshöhe (UNESCO-Welterbe) mit Schloss, Herkules-Statue und Wasserspielen. Stadt der Brüder Grimm — sie lebten 30 Jahre hier. Kasselaner reden „Kasseläner Platt" mit eigenem Akzent. Symbol für nordhessische Kultur und Wissenschaft. Universitätsstadt (UniKassel).',
+      beispiel: 'Zur Documenta nach Kassel kommen Künstler aus der ganzen Welt.',
+      beispiel_hd: 'Zur Documenta nach Kassel kommen Künstler aus der ganzen Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-262',
+      ausdruck: 'Documenta',
+      hochdeutsch: 'Documenta (Kunstausstellung Kassel)',
+      bedeutung: 'Die „Documenta" ist DIE wichtigste Kunstausstellung der Welt — alle 5 Jahre in Kassel, gegründet 1955 von Arnold Bode. Zeigt zeitgenössische Kunst aus aller Welt für 100 Tage. „Documenta 15" (2022) hatte 738.000 Besucher. Kasselaner sind stolz: „mir habbe die Documenta!". Internationaler Tourismus-Magnet. Kunst-Skandale, politische Debatten — die Documenta ist immer kontrovers. Symbol für Kassel als Kunst-Weltmetropole.',
+      beispiel: 'D\'Documenta zieht Hunderttausende nach Kassel.',
+      beispiel_hd: 'Die Documenta zieht Hunderttausende nach Kassel.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-263',
+      ausdruck: 'Bergpark Wilhelmshöhe',
+      hochdeutsch: 'Bergpark Wilhelmshöhe (UNESCO-Welterbe)',
+      bedeutung: 'Der „Bergpark Wilhelmshöhe" ist UNESCO-Welterbe (seit 2013) — größter Bergpark Europas, 240 Hektar mit Wasserspielen, Schloss Wilhelmshöhe, Herkules-Statue (8m hoch), Pyramide, Romantischen Wasserfällen. Wasserspiele finden zweimal wöchentlich im Sommer statt — beeindruckende Kaskaden ohne Pumpen, nur durch natürliches Gefälle. Kassels größter Touristen-Magnet. Symbol für hessische Garten-Kunst und barocke Pracht.',
+      beispiel: 'Sonntags machen wir Spaziergang im Bergpark Wilhelmshöhe.',
+      beispiel_hd: 'Sonntags machen wir Spaziergang im Bergpark Wilhelmshöhe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-264',
+      ausdruck: 'Herkules',
+      hochdeutsch: 'Herkules (Kasseler Wahrzeichen)',
+      bedeutung: 'Der „Herkules" ist Kassels Wahrzeichen — 8m hohe Bronze-Statue auf 70m hohem Oktagon, gesamthöhe 70,5m. Errichtet 1714-1717 als Wahrzeichen des Bergparks. Symbol für kurfürstliche Stärke. Jeder Kasselaner kennt den Spruch „der Herkules schaut auf uns". Bei den Wasserspielen wird über das Oktagon Wasser gepumpt, das durch den Park stürzt. Bekanntes Foto-Motiv. Symbol für nordhessisches Selbstbewusstsein.',
+      beispiel: 'Der Herkules wacht über Kassel — immer schon.',
+      beispiel_hd: 'Der Herkules wacht über Kassel — immer schon.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-265',
+      ausdruck: 'Waldeck',
+      hochdeutsch: 'Waldeck (Region und Ort)',
+      bedeutung: '„Waldeck" ist nordhessische Region und Ort am Edersee — ehemals Fürstentum Waldeck-Pyrmont (bis 1929). Edersee ist drittgrößte Talsperre Deutschlands. Schloss Waldeck auf dem Bergrücken bietet spektakulärer Edersee-Blick. Wandergebiet im Nationalpark Kellerwald-Edersee (UNESCO-Buchenwald-Welterbe). Symbol für nordhessische Natur und Geschichte. Beliebtes Wochenend-Ziel der Kasselaner.',
+      beispiel: 'Am Edersee in Waldeck verbringen wir den Urlaub.',
+      beispiel_hd: 'Am Edersee in Waldeck verbringen wir den Urlaub.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-266',
+      ausdruck: 'Edersee',
+      hochdeutsch: 'Edersee (Talsperre)',
+      bedeutung: 'Der „Edersee" ist Hessens größter See — drittgrößte Talsperre Deutschlands (1908-1914 gebaut). Bei Niedrigwasser werden überflutete Dörfer („Eder-Atlantis") sichtbar — wahre Sensation. Eder-Staudamm wurde 1943 von britischen Bombern zerstört („Operation Chastise"), Wasser-Flutwelle tötete 1.700 Menschen. Heute beliebt für Segeln, Schwimmen, Wandern, Wildpark. Symbol für nordhessische Wasserwirtschaft und Tragik.',
+      beispiel: 'Bei Niedrigwasser sieht man im Edersee die alte Kirche.',
+      beispiel_hd: 'Bei Niedrigwasser sieht man im Edersee die alte Kirche.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-267',
+      ausdruck: 'Knüll',
+      hochdeutsch: 'Knüllgebirge (Mittelhessen)',
+      bedeutung: 'Der „Knüll" ist mittelhessisches Mittelgebirge — zwischen Schwalm und Fulda, höchster Berg „Eisenberg" (635m). Ländliche Region mit kleinen Dörfern, Streuobstwiesen, Buchenwäldern. „Knüller" sind die Einwohner — gelten als zurückhaltend, traditionsbewusst. „Knüllköppel" ist eine charakteristische Bergform. Wenig touristisch — echtes hessisches Hinterland. Wandergebiet für Eingeweihte. Symbol für hessische Bodenständigkeit.',
+      beispiel: 'Im Knüll wandert man stundenlang ohne Menschen zu treffen.',
+      beispiel_hd: 'Im Knüll wandert man stundenlang ohne Menschen zu treffen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-268',
+      ausdruck: 'Fulda',
+      hochdeutsch: 'Fulda (Stadt)',
+      bedeutung: 'Fulda ist osthessische Bischofsstadt — barocker Dom (1704-1712), Bonifatius-Grab. Bonifatius (672-754) brachte das Christentum nach Hessen, wurde hier begraben. Heute Sitz des katholischen Bistums Fulda. Schloss Fulda mit Klostergarten. Universitätsstadt mit Hochschule Fulda. Stadt der Gegenreformation und barocken Architektur. Fulda war auch DDR-Grenzstadt — „Fulda-Gap" galt im Kalten Krieg als wahrscheinlichste Invasionsroute der Sowjets.',
+      beispiel: 'Fulda is\' die schönste Barockstadt Hessens.',
+      beispiel_hd: 'Fulda ist die schönste Barockstadt Hessens.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-269',
+      ausdruck: 'Fulda-Gap',
+      hochdeutsch: 'Fulda-Gap (Kalter-Krieg-Begriff)',
+      bedeutung: 'Das „Fulda-Gap" war im Kalten Krieg der wahrscheinlichste Invasionsweg der Sowjets — Tal zwischen Fulda und Frankfurt galt als strategisch verwundbarste Stelle der NATO. US-Truppen waren bis 1990 in Fulda stationiert. Tausende NATO-Manöver hier simuliert. Heute Geschichte — aber älteren Hessen ist „Fulda-Gap" noch Begriff aus der Zeit. Symbol für hessische Lage im Zentrum Deutschlands. Touristen-Tour zu ehemaligen NATO-Stellungen heute möglich.',
+      beispiel: 'D\'Amerikaner standen am Fulda-Gap bereit.',
+      beispiel_hd: 'Die Amerikaner standen am Fulda-Gap bereit.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-270',
+      ausdruck: 'Niederhessisch',
+      hochdeutsch: 'Niederhessischer Dialekt',
+      bedeutung: '„Niederhessisch" ist der nordhessische Dialekt — gesprochen in Kassel, Hofgeismar, Bad Hersfeld. Im Gegensatz zum „Oberhessischen" (Frankfurt, Marburg, Gießen). Klingt anders: „ich" wird zu „ek" oder „ich" (nicht „isch"). Beeinflusst vom mitteldeutschen Sprachraum. Niederhessisch hat eigenen Wortschatz und Sprachmelodie — Kasselaner verstehen Frankfurter aber finden ihr Hessisch „komisch". Beide Varianten sind „Hessisch" — innerhalb von 200 km verschieden.',
+      beispiel: 'Niederhessisch is\' anders als Oberhessisch.',
+      beispiel_hd: 'Niederhessisch ist anders als Oberhessisch.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-271',
+      ausdruck: 'Mottl',
+      hochdeutsch: 'Murrkopf',
+      bedeutung: 'Der „Mottl" ist im Nordhessischen ein nörgelnder, mürrischer Mensch — meist älter, mit Gewohnheits-Frust. „Was bist du heut\' für e Mottl?". Drückt liebevollen Spott aus. Stammt vermutlich vom Wort „motzen" (nörgeln). Im Vogelsberg auch verwendet. Wer mottelt, beklagt sich permanent — über Wetter, Politik, Nachbarschaft. Hessische Charakterisierung — kein Schimpfwort, eher resignierende Beschreibung.',
+      beispiel: 'Mei Opa is\' im Alter zum Mottl geworden.',
+      beispiel_hd: 'Mein Opa ist im Alter zum Murrkopf geworden.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-272',
+      ausdruck: 'Klööppen',
+      hochdeutsch: 'Klöppeln',
+      bedeutung: '„Klööppen" ist nordhessisch für „klöppeln" — Spitzen-Handarbeit mit Klöppel-Stöcken. In nordhessischen Dörfern war Klöppeln traditionelle Hausarbeit. „Klööppe-Frau" oder „Klööpplerin" verdiente Geld mit Heimarbeit. Klöppel-Kissen sind in nordhessischen Stuben oft als Familienerbstücke vorhanden. Heute meist als Volkskunst-Hobby. Auch im Erzgebirge und Schwarzwald verbreitet. Symbol für hessische Frauen-Tradition und Handwerk.',
+      beispiel: 'D\'Großmutter hat den ganzen Winter geklööppt.',
+      beispiel_hd: 'Die Großmutter hat den ganzen Winter geklöppelt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-273',
+      ausdruck: 'Bratwurst',
+      hochdeutsch: 'Bratwurst (nordhessische Spezialität)',
+      bedeutung: 'Die „Bratwurst" ist nordhessisches Grundnahrungsmittel — vor allem die „Ahle Worscht" (alte Wurst) aus Schweinefleisch, luftgetrocknet, monatelang gereift. Nordhessen produziert weltweit beste Ahle Worscht. „Lüftungs-Hessen" sind die nordhessischen Bauern, die ihre Wurst luftig hängen lassen. „Worscht-Markt" ist in Marbach, Lichtenfels. Wird mit Brot, Senf und Bier serviert. Symbol für nordhessische Wurst-Identität.',
+      beispiel: 'Z\'Brotzeit gibt\'s Ahle Worscht und Bier.',
+      beispiel_hd: 'Zur Brotzeit gibt es Ahle Worscht und Bier.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-274',
+      ausdruck: 'Speckkuchen',
+      hochdeutsch: 'Speckkuchen (nordhessisch)',
+      bedeutung: 'Der „Speckkuchen" ist nordhessisches Bauerngericht — flacher Hefeteig mit Speck, Zwiebeln und saurer Sahne belegt, im Backofen gebacken. Ähnlich dem Elsässer Flammkuchen, aber mit dickerem Teig. Beliebt in nordhessischen Wirtschaften, vor allem in Waldeck und Schwalm. Auch zu Volksfesten serviert. „Speckkuchen-Abend" als familiäre Tradition. Symbol für nordhessische Bauernküche und Genuss.',
+      beispiel: 'Der Speckkuchen meiner Tante is\' der beste!',
+      beispiel_hd: 'Der Speckkuchen meiner Tante ist der beste!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-275',
+      ausdruck: 'Zwiwwelplootz',
+      hochdeutsch: 'Zwiebelkuchen',
+      bedeutung: '„Zwiwwelplootz" ist die nordhessische Bezeichnung für Zwiebelkuchen — flacher Hefeteig mit Zwiebeln, Speck und saurer Sahne. „Zwiwwel" für Zwiebel, „Plootz" für flaches Gebäck. Wird zu Federweißem (junger Wein) im Herbst gegessen. Saisonal-Speise zur Apfel-Erntezeit. „Plootz" stammt vom mittelhochdeutschen „platz" für flaches Gebäck. Symbol für nordhessische Herbst-Tradition und kulinarische Vielfalt.',
+      beispiel: 'Im Herbst gibt\'s Zwiwwelplootz mit Federweißem.',
+      beispiel_hd: 'Im Herbst gibt es Zwiebelkuchen mit Federweißem.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-276',
+      ausdruck: 'Diemel',
+      hochdeutsch: 'Diemel (Fluss in Nordhessen)',
+      bedeutung: 'Die „Diemel" ist nordhessischer Fluss — mündet bei Bad Karlshafen in die Weser. Diemelsee als Naherholungsgebiet. Diemel-Tal ist landschaftlich reizvoll, mit Fachwerkstädtchen wie Trendelburg (Rapunzel-Turm-Schauplatz der Grimm-Brüder). Schloss Trendelburg gilt als „Rapunzels Turm". Im Tal Streuobstwiesen, Forellen-Fischerei. Symbol für nordhessische Flusstäler und Märchenlandschaft.',
+      beispiel: 'D\'Diemel fließt durch die schönsten Fachwerkdörfer.',
+      beispiel_hd: 'Die Diemel fließt durch die schönsten Fachwerkdörfer.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-277',
+      ausdruck: 'Werra',
+      hochdeutsch: 'Werra (Fluss)',
+      bedeutung: 'Die „Werra" ist osthessisch-thüringischer Fluss — vereinigt sich bei Hann. Münden mit der Fulda zur Weser. Verläuft durch Bad Hersfeld, Eschwege. „Werra-Aue" ist landschaftliches Naherholungsgebiet. Wirtschaftsraum mit Kali-Bergbau (Werra-Salinen). Mythisches Land: hier traf Frau Holle (Grimm-Märchen) ihre Mägde. Symbol für hessisch-thüringische Grenze und gemeinsame Geschichte. Werra-Radweg ist beliebte Touristenroute.',
+      beispiel: 'Wir radeln den Werra-Radweg bis zur Weser.',
+      beispiel_hd: 'Wir radeln den Werra-Radweg bis zur Weser.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-278',
+      ausdruck: 'Frau Holle',
+      hochdeutsch: 'Frau Holle (Grimm-Märchen)',
+      bedeutung: '„Frau Holle" ist Märchen der Brüder Grimm — Hexe wirft Federkissen aus, wenn es schneit. Spielt am Hohen Meißner in Nordhessen — die „Frau-Holle-Quelle" auf dem Berg ist Touristenziel. Klassisches deutsches Märchen: faules Mädchen wird mit Pech bestraft, fleißiges mit Gold belohnt. „Frau-Holle-Pfad" ist Wanderweg. Symbol für hessisches Märchen-Erbe der Brüder Grimm. Wird im Winter mit Schnee allgegenwärtig zitiert.',
+      beispiel: 'Wenn\'s schneit, hat d\'Frau Holle\'s Bett geschüttelt.',
+      beispiel_hd: 'Wenn es schneit, hat Frau Holle das Bett geschüttelt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-279',
+      ausdruck: 'Hoher Meißner',
+      hochdeutsch: 'Hoher Meißner (Berg)',
+      bedeutung: 'Der „Hohe Meißner" ist nordhessischer Berg (754m) — angeblicher Wohnort der Frau Holle. Erloschener Basalt-Vulkan, beliebtes Wandergebiet im Naturpark Meißner-Kaufunger Wald. „Meißner-Plateau" ist Bergplateau auf 700m. 1913 trafen sich hier 5.000 Jugendliche zur Freideutschen Jugendbewegung — „Meißnertag" gilt als Gründungsereignis der modernen deutschen Jugendbewegung. Symbol für nordhessische Mythologie und Geschichte.',
+      beispiel: 'Auf\'m Hohen Meißner wohnt d\'Frau Holle.',
+      beispiel_hd: 'Auf dem Hohen Meißner wohnt Frau Holle.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-280',
+      ausdruck: 'Märchenstraße',
+      hochdeutsch: 'Deutsche Märchenstraße',
+      bedeutung: 'Die „Deutsche Märchenstraße" ist Touristikroute durch Hessen — von Hanau (Geburtsort der Grimm-Brüder) über Steinau, Marburg, Kassel bis nach Bremen (Bremer Stadtmusikanten). 600 km lang, verbindet 70 Orte mit Grimm-Bezug. Hessen profitiert massiv von der Märchen-Tourismus. „Märchen-Erlebnis" in Tracht ist Touristen-Programm. Symbol für hessische Marketing-Strategie auf Märchen-Basis. Beliebt bei japanischen und amerikanischen Touristen.',
+      beispiel: 'D\'Märchenstraße führt von Hanau bis Bremen durch Hessen.',
+      beispiel_hd: 'Die Märchenstraße führt von Hanau bis Bremen durch Hessen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-281',
+      ausdruck: 'Kasseler',
+      hochdeutsch: 'Kasseler (Schweinefleisch)',
+      bedeutung: '„Kasseler" ist gepökeltes und leicht geräuchertes Schweinefleisch — wurde im 19. Jahrhundert vom Kasseler Metzgermeister Cassel (oder einem fiktiven Vorbild) entwickelt. Heute deutschlandweit als „Kasseler" bekannt. Wird mit Sauerkraut oder Erbsenpüree serviert. „Kasseler vom Knochen" als Sonntagsbraten. Hessisches Erbe in deutscher Küche. Symbol für nordhessische kulinarische Tradition. Nicht zu verwechseln mit dem Stadtnamen.',
+      beispiel: 'Z\'Sonntag gibt\'s Kasseler mit Sauerkraut.',
+      beispiel_hd: 'Zum Sonntag gibt es Kasseler mit Sauerkraut.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-282',
+      ausdruck: 'Pumpernickel',
+      hochdeutsch: 'Pumpernickel (Roggenbrot)',
+      bedeutung: 'Der „Pumpernickel" ist westfälisches Vollkorn-Roggenbrot, aber in Nordhessen weit verbreitet. Über 24 Stunden im Ofen gebacken — daher die dunkle, fast schwarze Farbe. Süßlich-erdiger Geschmack. Wird mit Käse oder Wurst serviert. Nordhessische Variante mit Anis oder Kümmel gewürzt. „Pumpernickel-Brot" hat lange Haltbarkeit (mehrere Wochen). Symbol für nordhessisch-westfälische Brot-Tradition. Auch metaphorisch: ein „Pumpernickel" ist eine dunkle, stoische Person.',
+      beispiel: 'Pumpernickel mit Käs is\' a gute Brotzeit.',
+      beispiel_hd: 'Pumpernickel mit Käse ist eine gute Brotzeit.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-283',
+      ausdruck: 'Steinau',
+      hochdeutsch: 'Steinau an der Straße',
+      bedeutung: 'Steinau ist nordhessisches Städtchen — wichtiges Etappenziel auf der Märchenstraße. Die Brüder Grimm lebten hier in der Kindheit (1791-1798) im Amtshaus ihres Vaters. „Brüder Grimm-Haus" als Museum. Fachwerk-Altstadt aus dem 16. Jahrhundert. Schloss Steinau gilt als Kulisse für Grimm-Märchen. Hier sammelten die Brüder Grimm erste Märchen-Versionen von der Marie Hassenpflug. Symbol für hessisches Märchen-Erbe und Kindheits-Geschichte der Brüder Grimm.',
+      beispiel: 'In Steinau verbrachten d\'Brüder Grimm ihre Kindheit.',
+      beispiel_hd: 'In Steinau verbrachten die Brüder Grimm ihre Kindheit.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-284',
+      ausdruck: 'Hanau',
+      hochdeutsch: 'Hanau (Geburtsort der Brüder Grimm)',
+      bedeutung: 'Hanau ist osthessische Stadt — Geburtsort der Brüder Grimm (Jacob 1785, Wilhelm 1786). „Brüder-Grimm-Stadt" als offizieller Beiname. Hier beginnt die Deutsche Märchenstraße. Jährliche „Brüder-Grimm-Festspiele" im Schloss Philippsruhe. Auch Goldschmiede-Stadt seit dem 17. Jahrhundert — Hanauer Brand, Hanauer Schmuck. Heute wirtschaftlich bedeutender Industriestandort. Nordrhein-Westfalen ist gegenüber. Tragisches Ereignis 2020 (Hanauer Anschlag) erinnerte Deutschland.',
+      beispiel: 'In Hanau wurden d\'Brüder Grimm geboren.',
+      beispiel_hd: 'In Hanau wurden die Brüder Grimm geboren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-285',
+      ausdruck: 'Oberhess',
+      hochdeutsch: 'Oberhessisch',
+      bedeutung: '„Oberhessisch" ist die südliche hessische Dialekt-Variante — Frankfurt, Marburg, Gießen, Hessen-Süd. Im Gegensatz zum „Niederhessischen" (Kassel, Nordhessen). Klingt anders: typischere „isch"-Endungen, mehr „a"-Laute statt „e". Frankfurter Hessisch ist der bekannte Vertreter — durch Eintracht-Übertragungen und Karl-Wagner-Mundart-Sendungen deutschlandweit bekannt. „Oberhess" als Region: Vogelsberg, Hinterland, mit eigenem Wortschatz und Akzent.',
+      beispiel: 'In Oberhess sagen mir „isch" statt „ich".',
+      beispiel_hd: 'In Oberhessen sagen wir „isch" statt „ich".',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-286',
+      ausdruck: 'Eckmüller',
+      hochdeutsch: 'Müller an einer Wassermühle',
+      bedeutung: 'Der „Eckmüller" ist im hessischen Sprachgebrauch ein Müller an einer Wassermühle in einer Ecke des Tals — also nicht in der Dorfmitte, sondern abgelegen. Bezeichnet auch Charaktere mit etwas eigentümlichem, unangepasstem Wesen — der „Eckmüller im Tal" lebt für sich. Stammt aus der Zeit, als jede Wassermühle einen Familiennamen prägte (Mecklenburger Eckmüller wurde später deutscher Familienname). In hessischen Dorfgeschichten allgegenwärtig.',
+      beispiel: 'Beim oiden Eckmüller war\'s schon immer e bissel komisch.',
+      beispiel_hd: 'Beim alten Eckmüller war es schon immer ein bisschen komisch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-287',
+      ausdruck: 'Sauwetterstub',
+      hochdeutsch: 'Stube für Sauwetter',
+      bedeutung: 'Die „Sauwetterstub" ist eine spezielle Stube im hessischen Bauernhaus — wo man bei schlechtem Wetter saß, las, strickte oder sich erwärmte. Meist mit Kachelofen ausgestattet. Heute oft als „Wohnzimmer" gleichgesetzt. „Sich in die Sauwetterstub setzen" bedeutet sich vor dem Wetter zu verkriechen. Symbol für hessische Hausbau-Tradition und gemütliches Familienleben. In neuen Häusern selten — eher Erinnerungsbegriff der älteren Generation.',
+      beispiel: 'Bei Regen sitzen wir in der Sauwetterstub am Kachelofen.',
+      beispiel_hd: 'Bei Regen sitzen wir in der Wetterstube am Kachelofen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-288',
+      ausdruck: 'Mochln',
+      hochdeutsch: 'mucksen / nicht regen',
+      bedeutung: '„Mochln" ist nordhessisch für sich regen, etwas sagen oder reagieren. Meist verneint: „Net mochln!" für „nicht muxen, nichts sagen!". In Schlaf-Liedern und Mahnungen an Kinder verbreitet. „Ohne zu mochln" bedeutet ohne Beschwerde, klaglos. Lautmalerei für minimales Geräusch. Drückt hessische Strenge und Erwartung an Disziplin aus. Auch metaphorisch: „mochel ja nichts!" als Drohung.',
+      beispiel: 'Du sitzt da und mochelst keinen Ton!',
+      beispiel_hd: 'Du sitzt da und sagst keinen Ton!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-289',
+      ausdruck: 'Eschwege',
+      hochdeutsch: 'Eschwege (Stadt in Nordhessen)',
+      bedeutung: 'Eschwege ist nordhessische Stadt — am Werra-Fluss gelegen, im Werratal. Größte Stadt im Werra-Meißner-Kreis. Fachwerk-Altstadt mit ikonischem Brückentor. „Eschweger Schaller" ist ein historisches Karussell. Hier wurde der erste deutsche Bonbon hergestellt. „Eschweger Plündern" — alte Jahrmarkt-Tradition. Wirtschaftlich bedeutend mit Kabelwerk und Holzindustrie. Tor zum Werra-Meißner-Wandergebiet. Symbol für nordhessische Mittelstadt.',
+      beispiel: 'In Eschwege gibt\'s die schönste Fachwerk-Altstadt.',
+      beispiel_hd: 'In Eschwege gibt es die schönste Fachwerk-Altstadt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-290',
+      ausdruck: 'Tankwart',
+      hochdeutsch: 'Tankstellenbetreiber',
+      bedeutung: 'Der „Tankwart" ist im hessischen Sprachgebrauch der Tankstellenbetreiber oder -mitarbeiter. „Mei Tankwart" für „mein Tankstellenbetreiber". Hessische Adel-Bezeichnung für eigentlich einfachen Beruf — drückt Wertschätzung für regelmäßigen Kontakt aus. Tankwart kennt seine Kunden, weiß wer welches Auto fährt. In Dörfern oft auch Auto-Reparatur-Werkstatt. Symbol für hessisches Sozialleben und Geschäftsbeziehungen.',
+      beispiel: 'Mei Tankwart erinnert sich an jeden Stammkunden.',
+      beispiel_hd: 'Mein Tankstellenbetreiber erinnert sich an jeden Stammkunden.',
+      kategorie: 'arbeit'
     }
   ]
 };
