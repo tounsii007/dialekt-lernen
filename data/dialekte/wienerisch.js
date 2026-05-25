@@ -991,11 +991,11 @@ export default {
     },
     {
       id: 'w-114',
-      ausdruck: 'Powidl',
-      hochdeutsch: 'Powidl (Pflaumenmus)',
-      bedeutung: 'Der „Powidl" ist im Wienerischen das Pflaumenmus — vom tschechischen „povidla". Ohne Zucker gekochtes, sehr dunkles, fast schwarzes Pflaumenmus, das stundenlang einreduziert wird. Klassische Füllung für Powidltascherl, Buchteln, Krapfen und Knödel. Übertragen heißt „des is mir Powidl!" — das ist mir egal, das ist mir wurscht. Wiener Allzweck-Wort und Allzweck-Lebensmittel zugleich.',
-      beispiel: 'Des is mir vollkommen Powidl, wia\'s ausgeht.',
-      beispiel_hd: 'Das ist mir vollkommen egal, wie es ausgeht.',
+      ausdruck: 'Knödl',
+      hochdeutsch: 'Knödel (Wiener Spezialität)',
+      bedeutung: 'Der „Knödl" ist im Wienerischen der Knödel — kein einzelnes Gericht, sondern eine ganze Familie. Es gibt Marillenknödel (süß, mit Aprikose), Powidlknödel (mit Pflaumenmus), Topfenknödel (mit Quark), Semmelknödel (zum Braten), Erdäpfelknödel (Kartoffel). Wiener Knödel-Tradition ist UNESCO-würdig. Jede Wiener Großmutter hat ihr eigenes Geheimrezept. „A guater Knödl" ist Wiener Lebenskunst.',
+      beispiel: 'A Marillenknödl mit Bröselbutter — Sommer pur!',
+      beispiel_hd: 'Ein Marillenknödel mit Bröselbutter — Sommer pur!',
       kategorie: 'essen'
     },
     {
@@ -1045,12 +1045,12 @@ export default {
     },
     {
       id: 'w-120',
-      ausdruck: 'Kaffeehaus',
-      hochdeutsch: 'Wiener Kaffeehaus',
-      bedeutung: 'Das Wiener Kaffeehaus ist seit 2011 UNESCO-Immaterielles Weltkulturerbe — ein Ort, an dem „Zeit und Raum konsumiert werden, aber nur der Kaffee auf der Rechnung steht" (Alfred Polgar). Marmortische, Thonet-Stühle, Zeitungen am Holzhalter, Wasserglas zum Kaffee, niemand wird zur Eile gedrängt. Berühmte Vertreter: Central, Landtmann, Schwarzenberg, Sperl. Hier entstanden Kunst, Literatur und Politik des 20. Jahrhunderts.',
-      beispiel: 'Im Kaffeehaus sitz i gern stundenlang mit ana Zeitung.',
-      beispiel_hd: 'Im Kaffeehaus sitze ich gern stundenlang mit einer Zeitung.',
-      kategorie: 'orte'
+      ausdruck: 'Herr Ober',
+      hochdeutsch: 'Herr Ober (Wiener Kellner)',
+      bedeutung: 'Der „Herr Ober" ist die respektvolle Anrede des Wiener Kellners — im Kaffeehaus und Restaurant zwingend. Wiener Kellner sind oft schlagfertig, mürrisch-charmant und gelten als Inbegriff von „Wiener Schmäh". „Herr Ober, zahlen!" ist Standard. Berühmte Wiener Kellner-Sprüche wurden in Aphorismen verewigt. Die Konditorin heißt „Frau Konditorin", die Kellnerin „Frau Ober" — Wiener Etikette.',
+      beispiel: 'Herr Ober, no\'an Verlängerten und a Glas Wasser!',
+      beispiel_hd: 'Herr Ober, noch einen Verlängerten und ein Glas Wasser!',
+      kategorie: 'arbeit'
     },
     {
       id: 'w-121',
@@ -1063,11 +1063,11 @@ export default {
     },
     {
       id: 'w-122',
-      ausdruck: 'Tafelspitz',
-      hochdeutsch: 'Tafelspitz (gekochtes Rindfleisch)',
-      bedeutung: 'Der „Tafelspitz" ist ein Wiener Nationalgericht und das Lieblingsessen von Kaiser Franz Joseph I. — angeblich aß er es täglich. Ein Stück Rindfleisch aus dem Schwanzansatz, in Rindssuppe weichgekocht, klassisch serviert mit Apfelkren, Schnittlauchsoße, Rösterdäpfeln und Spinat. Im Wiener Plachutta-Restaurant Pflichtprogramm. Symbol der Wiener Bürgerküche — schlicht, aber kunstvoll zubereitet.',
-      beispiel: 'Im Plachutta gibt\'s den besten Tafelspitz vo Wien.',
-      beispiel_hd: 'Im Plachutta gibt es den besten Tafelspitz von Wien.',
+      ausdruck: 'Wiener Schnitzel',
+      hochdeutsch: 'Wiener Schnitzel (paniertes Kalbsschnitzel)',
+      bedeutung: 'Das echte „Wiener Schnitzel" muss vom Kalb sein — alles andere ist „Schnitzel Wiener Art" und ein Sakrileg. Dünn geklopft, mit Mehl, Ei und feinen Bröseln paniert, in viel Butterschmalz so gebraten, dass es „souffliert" (Falten wirft). Klassisch mit Petersilkartoffeln, Erdäpfelsalat und Zitronenscheibe. Streit um Herkunft: Mailand vs. Wien. UNESCO-würdiges Wiener Kulturgut. Pflichtprogramm bei jedem Wien-Besuch.',
+      beispiel: 'A Wiener Schnitzel vom Kalb — mit Zitrone und Preiselbeer\'!',
+      beispiel_hd: 'Ein Wiener Schnitzel vom Kalb — mit Zitrone und Preiselbeere!',
       kategorie: 'essen'
     },
     {
@@ -1090,11 +1090,11 @@ export default {
     },
     {
       id: 'w-125',
-      ausdruck: 'Wienerlied',
-      hochdeutsch: 'Wienerlied (Volkslied-Genre)',
-      bedeutung: 'Das „Wienerlied" ist ein eigenes musikalisches Genre — wehmütig-melancholische Lieder über Wien, das Leben, das Sterben, die Liebe und das Bier. Begleitet von Schrammel-Musik (zwei Geigen, Klarinette, Kontragitarre). Berühmte Sänger: Hans Moser, Karl Hodina, André Heller, Helmut Qualtinger. Das Lied „I hab di gern" oder „Mei Muatterl war a Weanerin" sind Klassiker. Wiener Identität in Tönen.',
-      beispiel: 'Beim Heurigen wird a echtes Wienerlied gsunga.',
-      beispiel_hd: 'Beim Heurigen wird ein echtes Wienerlied gesungen.',
+      ausdruck: 'Schrammelmusik',
+      hochdeutsch: 'Schrammelmusik (Wiener Volksmusik)',
+      bedeutung: 'Die „Schrammelmusik" ist die typische Wiener Volksmusik, benannt nach den Brüdern Johann und Josef Schrammel (1850er–1890er). Klassische Besetzung: zwei Geigen, Klarinette (oder Knopfharmonika) und Kontragitarre. Spielt im Heurigen, beim Wienerlied und in der Wiener Operette. Der Begriff steht für die Wiener Seele in Tönen — wehmütig, melancholisch, mit „Schmäh". UNESCO-würdiges Wiener Kulturgut. Lebt noch heute in Wiener Heurigenstuben.',
+      beispiel: 'A echte Schrammelmusik macht ma\'s Herz schwer.',
+      beispiel_hd: 'Eine echte Schrammelmusik macht einem das Herz schwer.',
       kategorie: 'musik'
     }
   ]

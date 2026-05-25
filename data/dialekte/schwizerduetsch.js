@@ -880,30 +880,30 @@ export default {
     },
     {
       id: 'ch-101',
-      ausdruck: 'Wilhelm Tell',
-      hochdeutsch: 'Wilhelm Tell (Nationalheld)',
-      bedeutung: 'Wilhelm Tell ist der legendäre Nationalheld der Schweiz — laut Sage ein Bauer aus Uri, der sich um 1307 weigerte, den Hut des österreichischen Vogtes Gessler zu grüssen. Er musste seinem Sohn einen Apfel vom Kopf schiessen — und tötete später Gessler in der Hohlen Gasse. Symbol für Schweizer Freiheitskampf gegen Habsburg, verewigt in Friedrich Schillers Drama (1804). Tells Existenz ist historisch umstritten, sein Mythos jedoch unsterblich.',
-      beispiel: 'D\'Wilhelm-Tell-Sage isch tüüf in de Schwiizer Seele drin.',
-      beispiel_hd: 'Die Wilhelm-Tell-Sage ist tief in der Schweizer Seele drin.',
-      kategorie: 'menschen'
+      ausdruck: 'Rütlischwur',
+      hochdeutsch: 'Rütlischwur (Schweizer Gründungssage)',
+      bedeutung: 'Der „Rütlischwur" ist die legendäre Gründungssage der Schweiz: 1291 sollen sich die Männer aus Uri, Schwyz und Unterwalden auf der Rütliwiese am Vierwaldstättersee versammelt und den ewigen Bund geschworen haben. In Schillers Wilhelm Tell: „Wir wollen sein ein einig Volk von Brüdern, in keiner Not uns trennen und Gefahr." Historisch eher symbolisch, kulturell zentral. Der Rütliboden ist Nationaldenkmal — politischer Wallfahrtsort.',
+      beispiel: 'De Rütlischwur isch das Gründigsmoment vo de Schwiiz.',
+      beispiel_hd: 'Der Rütlischwur ist das Gründungsmoment der Schweiz.',
+      kategorie: 'redensart'
     },
     {
       id: 'ch-102',
-      ausdruck: 'Schwinge',
-      hochdeutsch: 'Schwingen (Schweizer Ringkampf)',
-      bedeutung: 'Das „Schwinge" ist der traditionelle Schweizer Volkssport — eine Ringkampfart, bei der zwei Männer in Zwilchhosen (Sägemehlhosen) auf einem mit Sägemehl gefüllten Ring kämpfen. Sieger ist, wer den Gegner auf den Rücken zwingt. Alle drei Jahre findet das „Eidgenössische Schwing- und Älplerfest" statt — der grösste Sportanlass der Schweiz mit über 50.000 Zuschauern. Der „Schwingerkönig" gilt als Nationalheld. Älter als der moderne Sport.',
-      beispiel: 'Am Eidgenössische Schwingfäscht git\'s e nöie Schwingerkönig.',
-      beispiel_hd: 'Am Eidgenössischen Schwingerfest gibt es einen neuen Schwingerkönig.',
+      ausdruck: 'Steinstosse',
+      hochdeutsch: 'Steinstossen (Unspunnenstein werfen)',
+      bedeutung: 'Das „Steinstosse" ist eine traditionelle Schweizer Sportdisziplin: der „Unspunnenstein" (83,5 kg) wird so weit wie möglich geworfen. Disziplin am eidgenössischen Älplerfest in Unspunnen (Berner Oberland) seit 1805. Der Rekord liegt bei über 4 Metern. Der Originalstein wurde mehrmals geraubt — zuletzt 2005 von baskischen Separatisten. Symbol urtümlicher Schweizer Kraftproben. Mehr Tradition als Sport.',
+      beispiel: 'Am Unspunnefäscht wird de Stei gstosse.',
+      beispiel_hd: 'Am Unspunnenfest wird der Stein gestossen.',
       kategorie: 'sport'
     },
     {
       id: 'ch-103',
-      ausdruck: 'Hornusse',
-      hochdeutsch: 'Hornussen (alter Schweizer Volkssport)',
-      bedeutung: 'Das „Hornusse" ist ein einzigartiger Schweizer Mannschaftssport, vor allem im Emmental gespielt. Ein Spieler schlägt mit einer langen Peitsche („Stecken") einen kleinen Hartgummi-Puck („Nouss") von einer Rampe ab — bis zu 300 m weit. Die gegnerische Mannschaft („Hornusserstand") versucht, den Puck im Flug mit Holzschindeln („Schindle") abzuwehren. Existiert seit dem 17. Jahrhundert. Pure ländliche Schweizer Folklore.',
-      beispiel: 'Im Ämmital spielet sie sit Jahrhundert Hornusse.',
-      beispiel_hd: 'Im Emmental spielen sie seit Jahrhunderten Hornussen.',
-      kategorie: 'sport'
+      ausdruck: 'Saaserwii',
+      hochdeutsch: 'Saaserwein / Walliser Weisswein',
+      bedeutung: 'Der „Saaserwii" — auch „Heida" oder „Païen" genannt — ist eine alte Walliser Weisswein-Rebsorte, die in den höchstgelegenen Weinbergen Europas wächst (Visperterminen, bis 1150 m). Trocken, mineralisch, mit komplexer Aromatik. Eine der ältesten Rebsorten Europas — möglicherweise von den Römern eingeführt. Wallis ist Schweizer Weinkanton Nr. 1 mit Spezialitäten wie Heida, Cornalin, Humagne. Echte Schweizer Weintradition.',
+      beispiel: 'En Heida us Visperterminen — pures Wallis im Glas.',
+      beispiel_hd: 'Ein Heida aus Visperterminen — pures Wallis im Glas.',
+      kategorie: 'essen'
     },
     {
       id: 'ch-104',
@@ -934,21 +934,21 @@ export default {
     },
     {
       id: 'ch-107',
-      ausdruck: 'Rivella',
-      hochdeutsch: 'Rivella (Schweizer Nationalgetränk)',
-      bedeutung: 'Rivella ist DIE Schweizer Soft-Drink-Marke — ein einzigartiges Erfrischungsgetränk auf Basis von Milchserum, erfunden 1952 von Robert Barth. Es gibt vier Sorten: Rivella Rot (Original), Blau (Light), Grün (Grüntee) und Gelb (Soja). Im Ausland fast unbekannt, in der Schweiz Kult — wird mehr getrunken als Coca-Cola. Symbol der schweizerischen Eigenständigkeit auch im Getränkemarkt.',
-      beispiel: 'E Rivella nach em Sport — gohts nüt drüber.',
-      beispiel_hd: 'Ein Rivella nach dem Sport — geht nichts drüber.',
+      ausdruck: 'Ovomaltine',
+      hochdeutsch: 'Ovomaltine (Malzgetränk)',
+      bedeutung: '„Ovomaltine" — Spitzname „Ovi" — ist DAS Schweizer Schul-Frühstücksgetränk: ein Malzgetränk auf Basis von Gerstenmalz, Milch, Kakao und Zucker. Erfunden 1904 vom Berner Apotheker Albert Wander. „Mit Ovomaltine kann mans zwar nicht besser, aber länger" ist der berühmte Werbespruch. Auch als Schokolade (Ovo Crunchy) und Brotaufstrich. Generationen Schweizer Kinder wuchsen damit auf — Schweizer Marken-Identität schlechthin.',
+      beispiel: 'E heissi Ovo am Morge — Schwiizer Kindheit.',
+      beispiel_hd: 'Eine heisse Ovomaltine am Morgen — Schweizer Kindheit.',
       kategorie: 'essen'
     },
     {
       id: 'ch-108',
-      ausdruck: 'Schoggi',
-      hochdeutsch: 'Schokolade',
-      bedeutung: 'Die „Schoggi" ist im Schweizerdeutschen die Schokolade — ein Land, das den Welt-Pro-Kopf-Verbrauch von Schokolade anführt (rund 11 kg pro Jahr!). Schweizer Schokoladen-Marken sind weltberühmt: Lindt, Toblerone, Nestlé Cailler, Frey, Sprüngli. Die Milch der Schweizer Bergkühe gibt der Schoggi ihren spezifischen Geschmack. Auch übertragen: „Schoggi-Job" ist ein traumhaft einfacher Job. Süsses Schweizer Identitätsmerkmal.',
-      beispiel: 'En Riegel Schoggi nach em Mittag — Pflichtprogramm.',
-      beispiel_hd: 'Einen Riegel Schokolade nach dem Mittagessen — Pflichtprogramm.',
-      kategorie: 'essen'
+      ausdruck: 'Älpler',
+      hochdeutsch: 'Älpler (Bergbauer/Senn)',
+      bedeutung: 'Der „Älpler" ist der Schweizer Bergbauer, der den Sommer auf der Alp verbringt — mit den Kühen, im Senntum. Käst die Milch zu Alpkäse, kümmert sich um die Tiere, wohnt in einfachen Sennhütten. Lebensform mit Jahrhunderten Tradition, heute durch Subventionen erhalten. Älpler sind Schweizer Identitätsfiguren — kernige, naturverbundene Männer. Werden in Volksliedern und Filmen verehrt. „Älplerchilbi" ist das jährliche Fest nach Alpabzug.',
+      beispiel: 'De Älpler chunnt im Herbscht mit em Vieh vom Bärg.',
+      beispiel_hd: 'Der Älpler kommt im Herbst mit dem Vieh vom Berg.',
+      kategorie: 'arbeit'
     },
     {
       id: 'ch-109',
@@ -988,12 +988,12 @@ export default {
     },
     {
       id: 'ch-113',
-      ausdruck: 'Cervelat',
-      hochdeutsch: 'Cervelat (Schweizer Nationalwurst)',
-      bedeutung: 'Der „Cervelat" ist die Schweizer Nationalwurst — eine kurze, dicke Brühwurst aus Rind, Speck und Schwarte, mild geräuchert. Wird sowohl roh als auch gegrillt gegessen. Beim Grillieren werden die Enden kreuzweise eingeschnitten, sodass sie sich wie „Blumen" aufrollen. Klassischer Snack am Lagerfeuer, beim Picknick und im Schwimmbad. Wird etwa 160 Mio. Mal pro Jahr verkauft — zwei pro Schweizer.',
-      beispiel: 'Am Grill cha ich nüt ohni Cervelat.',
-      beispiel_hd: 'Am Grill kann ich nicht ohne Cervelat.',
-      kategorie: 'essen'
+      ausdruck: 'Zibele',
+      hochdeutsch: 'Zibelemärit (Berner Zwiebelmarkt)',
+      bedeutung: 'Der „Zibelemärit" ist der berühmte Berner Zwiebelmarkt — jedes Jahr am vierten Montag im November. Über 50 Tonnen Zwiebeln in kunstvollen Zöpfen geflochten, Glühwein, Zwiebelkuchen, Käsewähen. Über 800 Stände in der Berner Altstadt, 250.000 Besucher. Tradition seit dem 19. Jahrhundert. Touristisches Highlight und gleichzeitig echtes Volksfest der Berner. Mit Konfetti-Schlachten am Morgen — Schweizer Folklore pur.',
+      beispiel: 'Am Zibelemärit gits Zibelechueche und Glüehwii.',
+      beispiel_hd: 'Am Zibelemärit gibt es Zwiebelkuchen und Glühwein.',
+      kategorie: 'orte'
     },
     {
       id: 'ch-114',
