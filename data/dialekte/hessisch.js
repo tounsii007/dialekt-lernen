@@ -1792,6 +1792,276 @@ export default {
       beispiel: 'Wir Hessen — herzlich, ehrlich und immer mit Schmäh.',
       beispiel_hd: 'Wir Hessen — herzlich, ehrlich und immer mit Schmäh.',
       kategorie: 'menschen'
+    },
+    {
+      id: 'h-201',
+      ausdruck: 'Ebbelwoi-Express',
+      hochdeutsch: 'Apfelwein-Straßenbahn',
+      bedeutung: 'Der „Ebbelwoi-Express" ist eine Frankfurter Touristen-Institution — eine historische Straßenbahn, die durch die Stadt fährt und an Bord Ebbelwoi und Brezeln serviert. Eröffnet 1977, fährt heute jeden Samstag und Sonntag durch Frankfurt. Touristen und Frankfurter feiern an Bord mit Live-Musik und Hessen-Gesang. Symbol für Frankfurter Lebensfreude und Apfelwein-Kultur. Nicht zu verwechseln mit den Verkehrs-Straßenbahnen.',
+      beispiel: 'Am Wochenend fährt der Ebbelwoi-Express — komm mit!',
+      beispiel_hd: 'Am Wochenende fährt der Apfelwein-Express — komm mit!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-202',
+      ausdruck: 'Sachsenhausen',
+      hochdeutsch: 'Sachsenhausen (Frankfurter Stadtteil)',
+      bedeutung: 'Sachsenhausen, südlich des Mains, ist DAS Apfelwein-Viertel Frankfurts. Hier befinden sich die traditionellen Ebbelwoi-Wirtschaften wie „Zur Sonne", „Atschel", „Lorsbacher Thal" und „Wagner". Im Sommer sitzt man im Garten unter Kastanien. „Sachsenhäuser Hut" ist ein Promenadenort. Das Viertel hat sein eigenes Selbstbewusstsein — die Sachsenhäuser nennen sich selbst „die Hibbdebach" (auf dieser Seite des Bachs). Inbegriff hessischer Gemütlichkeit.',
+      beispiel: 'Heut Abend gehen mir nach Sachsenhausen aufn Ebbelwoi.',
+      beispiel_hd: 'Heute Abend gehen wir nach Sachsenhausen auf einen Apfelwein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-203',
+      ausdruck: 'Geripptes',
+      hochdeutsch: 'Apfelwein-Glas mit Rautenmuster',
+      bedeutung: 'Das „Geripptes" ist DAS Frankfurter Apfelwein-Glas — ein 0,3-Liter-Glas mit charakteristischen Rautenmuster (16 Rauten). Wurde im 19. Jahrhundert entwickelt, damit fettige Hände durch das Rippenprofil nicht abrutschten. Wird randvoll eingeschenkt — „der Apfelwein muss bis zum letzten Rippen reichen". Wer ein Geripptes leer trinkt, ist Frankfurter. Ikonisches Symbol Frankfurts, weltweit bekannt. Touristen kaufen es als Souvenir.',
+      beispiel: 'Bring mer noch e Geripptes Ebbelwoi!',
+      beispiel_hd: 'Bring mir noch ein Geripptes Apfelwein!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-204',
+      ausdruck: 'Stöffche',
+      hochdeutsch: 'Apfelwein (kosend)',
+      bedeutung: '„Stöffche" ist die kosend-liebevolle Bezeichnung für Apfelwein — vom „Stoff", was eigentlich Material bedeutet. Steht für die Vertrautheit der Frankfurter mit ihrem Ebbelwoi. „A klees Stöffche" ist ein kleines Glas Apfelwein. Wird oft mit „bittsche" („bittschön") kombiniert: „A klees Stöffche, bittsche!". Drückt Heimatgefühl und Genuss aus. In Apfelwein-Liedern und Frankfurter Volksgut omnipräsent.',
+      beispiel: 'A klees Stöffche zum Feierabend, bittsche!',
+      beispiel_hd: 'Ein kleines Stöffchen zum Feierabend, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-205',
+      ausdruck: 'Handkäs mit Musik',
+      hochdeutsch: 'Handkäse mit Marinade',
+      bedeutung: '„Handkäs mit Musik" ist DAS Frankfurter Nationalgericht — Sauermilchkäse in Marinade aus Essig, Öl, Zwiebeln, Kümmel und Pfeffer. „Mit Musik" weil die Zwiebeln später für Blähungen sorgen (= die Musik). Wird mit Brot und Ebbelwoi serviert. Stammt aus dem 18. Jahrhundert. Polarisierend: Hessen lieben es, Touristen schauen skeptisch. Bestes Beispiel hessischer kulinarischer Direktheit — riecht stark, schmeckt würzig.',
+      beispiel: 'Handkäs mit Musik zum Stöffche — des is Frankfurt!',
+      beispiel_hd: 'Handkäse mit Musik zum Apfelwein — das ist Frankfurt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-206',
+      ausdruck: 'Frankfurter Kranz',
+      hochdeutsch: 'Frankfurter Kranz (Torte)',
+      bedeutung: 'Der „Frankfurter Kranz" ist eine berühmte Buttercreme-Torte aus Frankfurt — ringförmig, mit Krokant, Vanille-Buttercreme und Kirschen. Erfunden im 18. Jahrhundert, als Frankfurt eine freie Reichsstadt war. Soll an die Kaiserkrönungen im Frankfurter Dom erinnern (kranzförmig wie eine Krone). Heute Konditorei-Klassiker in ganz Deutschland. Jede hessische Konditorei hat ihn — manche besser, manche schlechter. Familientortenrezept oft generationenübergreifend.',
+      beispiel: 'Zum Geburtstag gibt\'s Frankfurter Kranz von der Oma.',
+      beispiel_hd: 'Zum Geburtstag gibt es Frankfurter Kranz von der Oma.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-207',
+      ausdruck: 'Grie Soß',
+      hochdeutsch: 'Grüne Soße',
+      bedeutung: '„Grie Soß" ist Frankfurts kulinarisches Wahrzeichen — kalte Kräutersoße aus sieben Kräutern: Borretsch, Kerbel, Kresse, Petersilie, Pimpinelle, Sauerampfer, Schnittlauch. Wird mit gekochten Kartoffeln und Eiern serviert. Goethe liebte sie. „Grie-Soß-Festival" findet jährlich auf dem Roßmarkt statt. Die sieben Kräuter sind exakt definiert — eine Variation gilt als Sakrileg. Symbol für Frankfurter Kulinarik-Stolz.',
+      beispiel: 'Sonntags gibt\'s Grie Soß mit Kartoffeln und Eiern.',
+      beispiel_hd: 'Sonntags gibt es Grüne Soße mit Kartoffeln und Eiern.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-208',
+      ausdruck: 'Wertheimer',
+      hochdeutsch: 'Apfelwein-Schoppen-Ständer',
+      bedeutung: 'Der „Wertheimer" ist eine Frankfurter Apfelwein-Tradition — ein hölzernes Tablett mit Halterungen für mehrere Geripptes, sodass die Glas-Krüge nicht umfallen. Stammt aus der Zeit, als Frankfurter Wirtschaften eng waren. Heute Sammlerstück. Wird in Apfelwein-Lokalen oft als Deko verwendet. Erinnert an die Geselligkeit alter Sachsenhäuser Stuben. Auch als Souvenir-Artikel erhältlich.',
+      beispiel: 'Auf\'m Wertheimer kannste sechs Geripptes tragen.',
+      beispiel_hd: 'Auf dem Wertheimer kannst du sechs Geripptes tragen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-209',
+      ausdruck: 'Eintracht!',
+      hochdeutsch: 'Eintracht Frankfurt (Fußballverein)',
+      bedeutung: '„Eintracht!" ist der Schlachtruf der Eintracht-Frankfurt-Fans — ein Mantra in der Commerzbank-Arena. Eintracht Frankfurt wurde 1899 gegründet, gewann 1959 die Deutsche Meisterschaft, 1980 und 2022 den DFB-Pokal, und 2022 die Europa League. Hessischer Fußball-Identität pur. „Schwarz-weiß" sind die Vereinsfarben. Fans nennen sich „Schwarz-weißes Karussell". Die Bornheimer Hang ist die Heimstätte. Eintracht-Niederlagen gehören zum hessischen Lebenszyklus.',
+      beispiel: 'Eintracht! — geh\'mer ins Stadion, heut spielen wir gegen Bayern.',
+      beispiel_hd: 'Eintracht! — gehen wir ins Stadion, heute spielen wir gegen Bayern.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'h-210',
+      ausdruck: 'Adler',
+      hochdeutsch: 'Adler (Eintracht-Wappentier)',
+      bedeutung: 'Der „Adler" ist das Wappentier von Eintracht Frankfurt — schwarz-weiß stilisiert. Bezieht sich auf den Reichsadler aus der Zeit, als Frankfurt freie Reichsstadt war. „Mir san die Adler!" ist ein Eintracht-Sprechchor. Auch Spitzname für die Mannschaft: „die Adler" gewannen die Europa League. Tattoo-Motiv vieler Fans. Adler-Statue im Stadion. Symbol für Frankfurter Größe — historisch und sportlich. Die schwarz-weißen Adler-Trikots sind weltweit erkennbar.',
+      beispiel: 'Die Adler haben endlich mal wieder gewonnen!',
+      beispiel_hd: 'Die Adler (Eintracht) haben endlich mal wieder gewonnen!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'h-211',
+      ausdruck: 'Mainmetropole',
+      hochdeutsch: 'Main-Metropole (Frankfurt)',
+      bedeutung: '„Mainmetropole" ist die offizielle Eigenwerbung Frankfurts — die Stadt am Main. Wird in Touristik-Werbung und Geschäftspressemitteilungen verwendet. Frankfurt ist Banken-Hauptstadt Deutschlands („Bankfurt"), Messemetropole und Sitz der Europäischen Zentralbank. „Skyline am Main" ist das ikonische Bild. Die Hessen sind stolz auf ihre Mainmetropole — aber auch ein wenig spöttisch über die Banker-Imagepflege.',
+      beispiel: 'Die Mainmetropole ist Bankenhauptstadt und Messezentrum.',
+      beispiel_hd: 'Die Main-Metropole ist Bankenhauptstadt und Messezentrum.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-212',
+      ausdruck: 'Mainhattan',
+      hochdeutsch: 'Mainhattan (Frankfurter Skyline)',
+      bedeutung: '„Mainhattan" ist der humorvolle Spitzname für die Frankfurter Skyline — Anspielung auf Manhattan. Frankfurt hat die höchste Skyline Deutschlands: Commerzbank Tower (259m), Messeturm, EZB-Tower, MainTower. Vom Maintaunus aus gesehen erinnert die Silhouette an New York. Hessen sind stolz auf die Skyline — sie ist Deutschlands einzige echte Wolkenkratzer-Skyline. Auch als Marketing-Begriff verwendet. Nachts beleuchtet besonders fotogen.',
+      beispiel: 'Bei Sonnenuntergang schaust du dir die Mainhattan-Skyline an.',
+      beispiel_hd: 'Bei Sonnenuntergang schaust du dir die Mainhattan-Skyline an.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-213',
+      ausdruck: 'Hibbdebach',
+      hochdeutsch: 'Diesseits des Mains (Sachsenhausen-Sicht)',
+      bedeutung: '„Hibbdebach" ist die Sachsenhäuser Selbstbezeichnung — „hibb de Bach" („auf dieser Seite des Bachs/Mains"). Sachsenhausen liegt südlich des Mains. Frankfurt jenseits des Mains wird „Dribbdebach" („drüben dem Bach") genannt. Sachsenhäuser sehen sich als die echten Frankfurter, weil Apfelwein-Tradition hier zuhause ist. „Hibbdebach is Hessen, Dribbdebach is Bankfurt". Lokalpatriotismus, der nordwestlich des Mains nicht teilt.',
+      beispiel: 'Wir Hibbdebacher sind die echten Frankfurter!',
+      beispiel_hd: 'Wir Sachsenhäuser sind die echten Frankfurter!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-214',
+      ausdruck: 'Dribbdebach',
+      hochdeutsch: 'Jenseits des Mains (Frankfurter Innenstadt)',
+      bedeutung: '„Dribbdebach" ist die Sachsenhäuser Bezeichnung für die nördliche Frankfurter Innenstadt — „drüben dem Bach". Im Gegensatz zu „Hibbdebach" (Sachsenhausen). Dribbdebach ist Banken, Messe, Römer, Goethehaus. Klingt leicht spöttisch — die Sachsenhäuser sehen ihre Seite als gemütlicher. „Dribbdebacher" sind die anonymen Banker, „Hibbdebacher" die echten Frankfurter. Sprachliches Spiel mit alten Stadtteil-Rivalitäten.',
+      beispiel: 'Die Dribbdebacher sitzen den ganzen Tag im Büro.',
+      beispiel_hd: 'Die Frankfurter (Innenstadt) sitzen den ganzen Tag im Büro.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-215',
+      ausdruck: 'Höchst',
+      hochdeutsch: 'Höchst (Frankfurter Stadtteil)',
+      bedeutung: 'Höchst, westlich von Frankfurt, war bis 1928 eine eigenständige Stadt. Heute ein Frankfurter Stadtteil mit eigenem Charakter — Altstadt mit Fachwerk, Höchster Schloss, Chemie-Industriestandort (Höchst AG). Hat eigene Identität als „Höchster" — weder Frankfurter noch Vorortbewohner. Stolz auf die Höchster Porzellan-Manufaktur (gegründet 1746). „Bunter Höchster" wird auf Fastnacht gerufen. Spannungen mit Frankfurt: Höchster wollen oft als eigenständig wahrgenommen werden.',
+      beispiel: 'In Höchst gibt\'s noch alte Fachwerkhäuser zum Bestaunen.',
+      beispiel_hd: 'In Höchst gibt es noch alte Fachwerkhäuser zum Bestaunen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-216',
+      ausdruck: 'Bornheim',
+      hochdeutsch: 'Bornheim (Frankfurter Stadtteil)',
+      bedeutung: 'Bornheim, östlich vom Frankfurter Stadtzentrum, ist „dat lustige Dorf" — Spitzname für den eigenständigen Stadtteil. Hat eigene Apfelwein-Wirtschaften, kleine Geschäfte, Wochenmarkt am „Berger Straße". Bornheim wurde 1877 eingemeindet, behält aber dörflichen Charakter. „Bornheimer Hang" beherbergt das Eintracht-Stadion. „Bornheimer" pflegen ihre Tradition gegen die Frankfurter Gentrifizierung. Symbol für hessische Bodenständigkeit innerhalb der Großstadt.',
+      beispiel: 'Bornheim ist das lustige Dorf in Frankfurt.',
+      beispiel_hd: 'Bornheim ist das lustige Dorf in Frankfurt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-217',
+      ausdruck: 'Goethe-Stadt',
+      hochdeutsch: 'Goethe-Stadt (Frankfurt)',
+      bedeutung: '„Goethe-Stadt" ist Frankfurts Selbstbezeichnung als Geburtsort Johann Wolfgang von Goethes. Goethe wurde 1749 in Frankfurt geboren (heute Goethehaus am Großen Hirschgraben). Die Stadt pflegt Goethes Erbe — Goethe-Universität, Goethe-Denkmal, Goethe-Plakette. Frankfurter Tourismus baut massiv auf Goethe-Tourismus. Goethe selbst war ambivalent über Frankfurt — zog später nach Weimar. Hessen sind stolz auf ihren berühmtesten Sohn.',
+      beispiel: 'Frankfurt is die Goethe-Stadt — von hier kommt der Dichter!',
+      beispiel_hd: 'Frankfurt ist die Goethe-Stadt — von hier kommt der Dichter!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-218',
+      ausdruck: 'Römer',
+      hochdeutsch: 'Römer (Frankfurter Rathaus)',
+      bedeutung: 'Der „Römer" ist Frankfurts historisches Rathaus am Römerberg — drei verbundene gotische Häuser mit der ikonischen Stufengiebel-Front. Wurde seit dem 15. Jahrhundert als Rathaus genutzt. Der Kaisersaal beherbergt die Porträts aller deutschen Kaiser. Heute Treffpunkt: Eintracht-Spieler werden hier nach Titelgewinnen empfangen. Symbol Frankfurts. Auch Standort des Christkindlmarkts. Beliebtes Touristen- und Hochzeits-Ziel.',
+      beispiel: 'Am Römer treffen wir uns nach dem Eintracht-Sieg!',
+      beispiel_hd: 'Am Römer treffen wir uns nach dem Eintracht-Sieg!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-219',
+      ausdruck: 'Skyline',
+      hochdeutsch: 'Frankfurter Skyline',
+      bedeutung: 'Die „Skyline" ist Frankfurts Wahrzeichen — die einzige echte Wolkenkratzer-Skyline Deutschlands. Höchstes Gebäude: Commerzbank Tower (259m), gefolgt von Messeturm und MainTower. Best bestaunbar vom Maintaunus aus, vom Sachsenhäuser Mainufer oder von der Mainspitze. „Skyline-View" ist beliebtes Restaurant-Konzept. Bei Sonnenuntergang besonders fotogen. Auch international: Frankfurts Skyline ist neben Berliner Fernsehturm wohl Deutschlands meistfotografiertes Stadtsymbol.',
+      beispiel: 'Bei Sonnenuntergang ist die Skyline am schönsten.',
+      beispiel_hd: 'Bei Sonnenuntergang ist die Skyline am schönsten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-220',
+      ausdruck: 'Buchmesse',
+      hochdeutsch: 'Frankfurter Buchmesse',
+      bedeutung: 'Die „Buchmesse" ist DIE wichtigste Buchmesse der Welt — jeden Oktober in Frankfurt mit 7.000 Ausstellern aus 100 Ländern. Tradition seit 1949, wurzelt aber im 15. Jahrhundert. Verleihung des Friedenspreises des Deutschen Buchhandels in der Paulskirche während der Messe. Hessen sind stolz: „mir habbe die Buchmesse!". Internationales Medienereignis. Verlage stellen neue Bücher vor, Rechte werden gehandelt. Frankfurts Beitrag zur Weltliteratur.',
+      beispiel: 'Im Oktober kommen alle Verleger der Welt zur Buchmesse.',
+      beispiel_hd: 'Im Oktober kommen alle Verleger der Welt zur Buchmesse.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-221',
+      ausdruck: 'IAA',
+      hochdeutsch: 'Internationale Automobil-Ausstellung',
+      bedeutung: 'Die „IAA" — Internationale Automobil-Ausstellung — war jahrzehntelang in Frankfurt zuhause (1951-2021). Welt-Automobilmesse mit allen großen Herstellern. Wurde 2021 nach München verlegt, was Frankfurt schmerzlich traf. Hessen erinnern sich nostalgisch an die IAA-Zeit. „Mir habbe ja unsre Messe verloren!". Für Frankfurter ein Stück Identität. IAA-Hostessen, Auto-Premieren, internationale Presse — alles Geschichte heute. Wirtschaftlich bedeutender Verlust für Frankfurt.',
+      beispiel: 'Frieher war die IAA in Frankfurt — heute is\' in München.',
+      beispiel_hd: 'Früher war die IAA in Frankfurt — heute ist sie in München.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-222',
+      ausdruck: 'Hauptwache',
+      hochdeutsch: 'Hauptwache (Frankfurter Platz)',
+      bedeutung: 'Die „Hauptwache" ist Frankfurts zentraler Platz und U-Bahn-Knoten. Benannt nach dem barocken Wachhaus von 1730. Treffpunkt zwischen Goethe-Straße, Bockenheimer Anlage und Zeil. Heute moderne U-Bahn-Station unter dem historischen Wachhaus. „Treffen wir uns an der Hauptwache" ist Standard-Verabredung. Touristen-Magnet wegen der barocken Architektur. Wirtschaftlich bedeutsame Adresse — viele Bankzentralen in der Nähe. Symbol für Frankfurter Treffpunkt-Kultur.',
+      beispiel: 'Treffen wir uns um 18 Uhr an der Hauptwache?',
+      beispiel_hd: 'Treffen wir uns um 18 Uhr an der Hauptwache?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-223',
+      ausdruck: 'Zeil',
+      hochdeutsch: 'Zeil (Frankfurter Einkaufsstraße)',
+      bedeutung: 'Die „Zeil" ist Deutschlands umsatzstärkste Einkaufsstraße — Fußgängerzone in Frankfurts Zentrum, zwischen Hauptwache und Konstablerwache. 1,2 km lang. Galeria Karstadt, Kaufhof, MyZeil mit moderner Glasfassade. Während der Buchmesse und der Weihnachtszeit überfüllt. Hessen kommen zur Zeil zum Shopping aus dem ganzen Bundesland. Auch Treffpunkt für Demonstrationen. „Auf der Zeil shoppen" ist klassisches Frankfurter Wochenend-Programm.',
+      beispiel: 'Samstags geh ich gern auf der Zeil bummeln.',
+      beispiel_hd: 'Samstags gehe ich gerne auf der Zeil bummeln.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-224',
+      ausdruck: 'Bembelche',
+      hochdeutsch: 'kleiner Bembel',
+      bedeutung: 'Das „Bembelche" ist die Diminutiv-Form von Bembel — ein kleiner Apfelweinkrug. Wird oft als Souvenir verkauft oder als persönliches Geschenk verschenkt („A Bembelche für die Tante"). Klingt liebevoll-zärtlich. Auch metaphorisch verwendet für etwas Kleines, Zerbrechliches, Wertvolles. In Sachsenhäuser Apfelwein-Lokalen oft als Probier-Größe für Frauen oder Anfänger angeboten. Symbol für hessische Liebe zum Detail.',
+      beispiel: 'Hier hast a Bembelche für die Reise — viel Spaß!',
+      beispiel_hd: 'Hier hast du einen kleinen Bembel für die Reise — viel Spaß!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-225',
+      ausdruck: 'Wirt',
+      hochdeutsch: 'Wirt (Apfelwein-Wirt)',
+      bedeutung: 'Der „Wirt" ist mehr als nur ein Gastwirt — er ist die Seele der Sachsenhäuser Apfelwein-Wirtschaft. Kennt die Stammgäste mit Namen, weiß was sie trinken, ohne zu fragen. „Der oide Wirt" ist eine respektvolle Bezeichnung. Wenn ein Wirt einer Sachsenhäuser Wirtschaft stirbt, ist das ein Stadtteil-Ereignis. Symbol für hessische Gastfreundschaft und kontinuierliche Tradition. Familienwirtschaften oft über Generationen weitergegeben.',
+      beispiel: 'Der Wirt vom „Atschel" kennt mich seit zwanzig Jahren.',
+      beispiel_hd: 'Der Wirt vom „Atschel" kennt mich seit zwanzig Jahren.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-226',
+      ausdruck: 'Schoppe',
+      hochdeutsch: 'Schoppen (Apfelwein-Glas)',
+      bedeutung: 'Der „Schoppe" ist die hessische Bezeichnung für ein Glas Apfelwein — meist 0,25 oder 0,3 Liter (also ein Geripptes). „Mir geh\'n auf an Schoppe" ist klassische Verabredung. „Schoppe-Petze" sind die Frühaufsteher in Apfelwein-Wirtschaften. „Schoppe-Sänger" sind Volkssänger in Sachsenhausen, die zu Ebbelwoi-Liedern Apfelwein-Trinklieder vortragen. Symbol hessischer Geselligkeit. Auch metaphorisch: „auf an Schoppe" gehen heißt einen entspannten Abend planen.',
+      beispiel: 'Geh\'mer auf an Schoppe nach Sachsenhausen?',
+      beispiel_hd: 'Gehen wir auf einen Schoppen nach Sachsenhausen?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-227',
+      ausdruck: 'Hessen-Schmäh',
+      hochdeutsch: 'hessischer Witz',
+      bedeutung: '„Hessen-Schmäh" ist der charakteristische hessische Humor — direkter, ehrlicher Witz mit Bauernschläue. Hessen lachen über sich selbst und ihre Mitmenschen, oft mit hintergründigem Sarkasmus. Karl Wagner („Im Frühtau zu Berge"), Heinz Schenk („Zum blauen Bock"), Bodo Bach — alles Vertreter des Hessen-Schmähs. Im Gegensatz zum bayerischen oder kölnischen Humor weniger derb, aber genauso wirkungsvoll. Frankfurter Mundart-Komödie lebt davon.',
+      beispiel: 'Der Hessen-Schmäh — direkt, ehrlich und herzlich.',
+      beispiel_hd: 'Der hessische Witz — direkt, ehrlich und herzlich.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-228',
+      ausdruck: 'Mainfest',
+      hochdeutsch: 'Mainfest (Frankfurter Sommerfest)',
+      bedeutung: 'Das „Mainfest" ist eine der ältesten Frankfurter Volksfeste — am Mainufer in Sachsenhausen und auf dem Römerberg. Tradition seit dem 14. Jahrhundert. Anfang August mit Feuerwerk, Live-Musik, Bratwurst, Bier und Apfelwein. Höhepunkt: das Feuerwerk über dem Main, das tausende Frankfurter anzieht. Familientreffen und Touristen-Magnet. Symbol für Frankfurter Lebensfreude im Sommer.',
+      beispiel: 'Beim Mainfest treffen sich alle Frankfurter am Mainufer.',
+      beispiel_hd: 'Beim Mainfest treffen sich alle Frankfurter am Mainufer.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-229',
+      ausdruck: 'Apfelweinland',
+      hochdeutsch: 'Apfelweinland (Hessen)',
+      bedeutung: '„Apfelweinland" ist eine Selbstbezeichnung Hessens — wegen der weltweit einzigartigen Apfelweintradition. Hessen produziert 90% des deutschen Apfelweins. Apfelwein-Routen führen durch Streuobstwiesen, Apfelwein-Wirtschaften und Mostereien. „Hessisches Apfelwein-Museum" in Frankfurt. Im Apfelweinland gibt\'s eigene Apfelsorten, eigene Pressrezepte und eine eigene Kultur des Trinkens. Hessens Antwort auf Bayerns Bier-Identität.',
+      beispiel: 'Im Apfelweinland Hessen wächst der beste Apfel.',
+      beispiel_hd: 'Im Apfelweinland Hessen wächst der beste Apfel.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-230',
+      ausdruck: 'Hessentag',
+      hochdeutsch: 'Hessentag (Landesfest)',
+      bedeutung: 'Der „Hessentag" ist das größte und älteste Landesfest Deutschlands — gegründet 1961 von Ministerpräsident Georg August Zinn. Findet jährlich in einer anderen hessischen Stadt statt, dauert 10 Tage, zieht 1-2 Millionen Besucher an. Mit Festumzug, Live-Musik, Trachtenfest, Hessen-Kabarett. Jede hessische Stadt bewirbt sich, der Hessentag bringt Investitionen mit. Symbol für hessisches Selbstbewusstsein und Landesidentität. Politische Wahlkampfauftritte allgegenwärtig.',
+      beispiel: 'Der Hessentag bringt jedes Jahr eine andere Stadt ins Rampenlicht.',
+      beispiel_hd: 'Der Hessentag bringt jedes Jahr eine andere Stadt ins Rampenlicht.',
+      kategorie: 'feiern'
     }
   ]
 };
