@@ -433,7 +433,7 @@ export default {
       id: 'ru-048',
       ausdruck: 'Schicht im Schacht',
       hochdeutsch: 'Feierabend / Schluss / Ende der Arbeit',
-      bedeutung: '„Schicht im Schacht" war der Ruf des Steigers, wenn die Arbeitsschicht unter Tage beendet war: Die Bergleute konnten ans Tageslicht. Heute verwendet man die Redewendung allgemein für das Ende einer Sache — Feierabend, Schluss, alles erledigt. Sie steht für den Ruhrpott-Humor: kurz, direkt, mit einem Augenzwinkern. Wer „Schicht im Schacht" sagt, meint: jetzt ist Ruhe, jetzt haben wir's geschafft.',
+      bedeutung: '„Schicht im Schacht" war der Ruf des Steigers, wenn die Arbeitsschicht unter Tage beendet war: Die Bergleute konnten ans Tageslicht. Heute verwendet man die Redewendung allgemein für das Ende einer Sache — Feierabend, Schluss, alles erledigt. Sie steht für den Ruhrpott-Humor: kurz, direkt, mit einem Augenzwinkern. Wer „Schicht im Schacht" sagt, meint: jetzt ist Ruhe, jetzt haben wir es geschafft.',
       beispiel: 'Schicht im Schacht, Leute — der Tag ist rum und wir sind fertig!',
       beispiel_hd: 'Feierabend, Leute — der Tag ist rum und wir sind fertig!',
       kategorie: 'arbeit'
