@@ -20,8 +20,22 @@ import { initGoalEvents } from './util/daily-goal.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
+const SOUND_TOAST_MS = 1200;
+const ERROR_TOAST_MS = 2400;
+const VALIDATOR_TOAST_MS = 3000;
+const VALIDATOR_PROBLEMS_TOAST_MS = 3500;
+const ONBOARDING_BOOT_DELAY_MS = 800;
+
 const ADD_DIALECT_HINT_TEXT =
   'Dialekte können einfach in /data/dialekte/ als JS-Datei ergänzt werden — siehe README!';
+
+const TOUCH_QUERY = '(pointer: coarse)';
+
+const isTypingElement = (target) => {
+  if (!target) return false;
+  const tag = (target.tagName || '').toLowerCase();
+  return tag === 'input' || tag === 'textarea' || target.isContentEditable;
+};
 
 function initAddDialectHint() {
   $('#addDialectHint')?.addEventListener('click', () => {
@@ -30,113 +44,152 @@ function initAddDialectHint() {
 }
 
 function initRestartTour() {
-  $('#restartTour')?.addEventListener('click', () => {
+  const restartTour = () => {
     resetOnboarding();
     startOnboarding({ force: true });
-  });
+  };
+  $('#restartTour')?.addEventListener('click', restartTour);
+  // Console helper for testing the tour without re-clearing localStorage by hand.
+  window.dialektoStartTour = restartTour;
 }
 
 function initSoundToggle() {
   const btn = $('#soundToggle');
   if (!btn) return;
-  const sync = () => btn.classList.toggle('is-off', !isSoundEnabled());
-  sync();
-  btn.addEventListener('click', () => {
+
+  const syncIcon = () => btn.classList.toggle('is-off', !isSoundEnabled());
+  syncIcon();
+
+  const toggleSound = () => {
     const next = !isSoundEnabled();
     setSoundEnabled(next);
-    sync();
+    syncIcon();
     if (next) sfx.toggle();
-    toast(next ? 'Sounds an 🔊' : 'Sounds aus 🔇', 'info', 1200);
-  });
-  // Tastatur: M zum Stummschalten
+    toast(next ? 'Sounds an 🔊' : 'Sounds aus 🔇', 'info', SOUND_TOAST_MS);
+  };
+
+  btn.addEventListener('click', toggleSound);
+
+  // `M` toggles sound — same guard as the global shortcuts module.
   document.addEventListener('keydown', (e) => {
-    if (e.key.toLowerCase() === 'm' && !e.metaKey && !e.ctrlKey && !e.altKey) {
-      const tag = (e.target?.tagName || '').toLowerCase();
-      if (tag === 'input' || tag === 'textarea' || e.target?.isContentEditable) return;
-      btn.click();
-    }
+    if (e.key.toLowerCase() !== 'm') return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (isTypingElement(e.target)) return;
+    btn.click();
   });
 }
 
 function detectInputDevice() {
-  // Touch-Klasse ans body hängen — CSS nutzt das für adaptive Targets
-  const isTouch = window.matchMedia('(pointer: coarse)').matches;
-  document.body.classList.toggle('is-touch', isTouch);
-  // Aktualisieren wenn sich Input-Methode ändert (z.B. Bluetooth-Maus + Tablet)
-  window.matchMedia('(pointer: coarse)').addEventListener('change', (e) => {
-    document.body.classList.toggle('is-touch', e.matches);
-  });
+  // body.is-touch lets CSS scale up touch targets adaptively. Toggle on
+  // initial state and whenever the input modality changes (e.g. user
+  // pairs a Bluetooth mouse with their tablet mid-session).
+  const mql = window.matchMedia(TOUCH_QUERY);
+  const sync = (matches) => document.body.classList.toggle('is-touch', matches);
+  sync(mql.matches);
+  mql.addEventListener('change', (e) => sync(e.matches));
 }
 
 function initPaletteToggle() {
-  // Farbpaletten-Button öffnet Theme-Presets
   const btn = document.getElementById('paletteToggle');
   if (!btn) return;
   btn.addEventListener('click', () => {
-    import('./theme.js').then(m => {
-      if (typeof m.openThemePicker === 'function') m.openThemePicker();
-    }).catch(() => {});
+    import('./theme.js')
+      .then((m) => {
+        if (typeof m.openThemePicker === 'function') m.openThemePicker();
+      })
+      .catch(() => {});
   });
 }
 
+function mountXpBar() {
+  const xpSlot = document.getElementById('xpBarSlot');
+  if (xpSlot) xpSlot.appendChild(renderXpBar(getXp()));
+}
+
+function initErrorHandlers() {
+  window.addEventListener('error', (e) => {
+    console.error('[Dialekto]', e.error || e.message);
+    toast(
+      'Ein unerwarteter Fehler ist aufgetreten — die Seite läuft weiter.',
+      'info',
+      ERROR_TOAST_MS,
+    );
+  });
+  window.addEventListener('unhandledrejection', (e) => {
+    console.error('[Dialekto] unhandled', e.reason);
+  });
+}
+
+function initDevValidator() {
+  // Console helper: window.dialektoValidate()  OR  Ctrl+Shift+V
+  import('./util/schema.js')
+    .then((m) => {
+      window.dialektoValidate = m.logValidationReport;
+
+      const isLocalhost =
+        location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+      if (isLocalhost) {
+        const { summary } = m.logValidationReport();
+        if (summary.errors > 0) {
+          toast(
+            `Validator: ${summary.errors} Fehler in den Daten`,
+            'info',
+            VALIDATOR_PROBLEMS_TOAST_MS,
+          );
+        }
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (!e.ctrlKey || !e.shiftKey || e.key.toLowerCase() !== 'v') return;
+        e.preventDefault();
+        const r = m.logValidationReport();
+        toast(
+          `${r.summary.errors} Fehler · ${r.summary.warnings} Warnungen · ${r.summary.info} Infos`,
+          'info',
+          VALIDATOR_TOAST_MS,
+        );
+      });
+    })
+    .catch(() => {});
+}
+
 function init() {
+  // 1. Device + theme baseline before anything else paints
   detectInputDevice();
   initTheme();
+
+  // 2. Persistence + navigation core
+  registerStreak();
+  initRouter();
+  initNav();
   initSearch();
   initShortcuts();
+  initShortcutsOverlay();
+
+  // 3. UI buttons and toggles
   initAddDialectHint();
   initRestartTour();
   initSoundToggle();
   initPaletteToggle();
-  registerStreak();
+
+  // 4. Visual effects (run after layout exists)
   initScrollProgress();
   initSpotlight();
   initMagnetic();
   initTilt();
-  initNav();
-  initRouter();
+  initRipple();
+
+  // 5. Background services
   initPwa(toast);
   initNetwork(toast);
   initXpHud();
-  initRipple();
   initGoalEvents(toast);
-  initShortcutsOverlay();
-  // XP-Balken in der Topbar befüllen
-  const xpSlot = document.getElementById('xpBarSlot');
-  if (xpSlot) xpSlot.appendChild(renderXpBar(getXp()));
-  // Onboarding-Tour beim ersten Besuch (kleines Delay, damit Layout steht).
-  setTimeout(() => startOnboarding(), 800);
-  // Console-Helfer + Footer-Link, um die Tour erneut zu starten.
-  window.dialektoStartTour = () => { resetOnboarding(); startOnboarding({ force: true }); };
+  mountXpBar();
+
+  // 6. Onboarding — small delay so the layout has stabilized
+  setTimeout(() => startOnboarding(), ONBOARDING_BOOT_DELAY_MS);
 }
 
 init();
-
-// Globaler Error-Handler — fängt unerwartete Fehler und zeigt einen freundlichen Toast,
-// anstatt den User auf einer kaputten Seite stehen zu lassen.
-window.addEventListener('error', (e) => {
-  console.error('[Dialekto]', e.error || e.message);
-  toast('Ein unerwarteter Fehler ist aufgetreten — die Seite läuft weiter.', 'info', 2400);
-});
-window.addEventListener('unhandledrejection', (e) => {
-  console.error('[Dialekto] unhandled', e.reason);
-});
-
-// Dev-Validator: console.log('dialekto.validate()') oder Ctrl+Shift+V
-import('./util/schema.js').then((m) => {
-  window.dialektoValidate = m.logValidationReport;
-  // Auf Localhost automatisch ein Mini-Report im Log.
-  if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-    const { summary } = m.logValidationReport();
-    if (summary.errors > 0) {
-      toast(`Validator: ${summary.errors} Fehler in den Daten`, 'info', 3500);
-    }
-  }
-  document.addEventListener('keydown', (e) => {
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'v') {
-      e.preventDefault();
-      const r = m.logValidationReport();
-      toast(`${r.summary.errors} Fehler · ${r.summary.warnings} Warnungen · ${r.summary.info} Infos`, 'info', 3000);
-    }
-  });
-}).catch(() => {});
+initErrorHandlers();
+initDevValidator();
