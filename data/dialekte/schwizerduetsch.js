@@ -880,11 +880,11 @@ export default {
     },
     {
       id: 'ch-101',
-      ausdruck: 'Rütlischwur',
-      hochdeutsch: 'Rütlischwur (Schweizer Gründungssage)',
-      bedeutung: 'Der „Rütlischwur" ist die legendäre Gründungssage der Schweiz: 1291 sollen sich die Männer aus Uri, Schwyz und Unterwalden auf der Rütliwiese am Vierwaldstättersee versammelt und den ewigen Bund geschworen haben. In Schillers Wilhelm Tell: „Wir wollen sein ein einig Volk von Brüdern, in keiner Not uns trennen und Gefahr." Historisch eher symbolisch, kulturell zentral. Der Rütliboden ist Nationaldenkmal — politischer Wallfahrtsort.',
-      beispiel: 'De Rütlischwur isch das Gründigsmoment vo de Schwiiz.',
-      beispiel_hd: 'Der Rütlischwur ist das Gründungsmoment der Schweiz.',
+      ausdruck: 'Bundesbrief',
+      hochdeutsch: 'Bundesbrief (Schweizer Gründungsurkunde)',
+      bedeutung: 'Der „Bundesbrief" von 1291 ist die Gründungsurkunde der Eidgenossenschaft — Urkunde, in der sich die Männer von Uri, Schwyz und Unterwalden zum „ewigen Bund" verpflichteten. Heute im Bundesbriefmuseum in Schwyz aufbewahrt — Nationales Symbol Nr. 1. Geschrieben auf Pergament in Latein. Im Inhalt eher pragmatisch (gegenseitige Hilfe), in der Wirkung symbolisch (Schweizer Gründungsmythos). Verfassungsrechtlich umstritten, kulturell zentral.',
+      beispiel: 'De Bundesbrief vo 1291 isch s\'Original i Schwyz.',
+      beispiel_hd: 'Der Bundesbrief von 1291 ist das Original in Schwyz.',
       kategorie: 'redensart'
     },
     {
@@ -907,11 +907,11 @@ export default {
     },
     {
       id: 'ch-104',
-      ausdruck: 'Verbier',
-      hochdeutsch: 'Verbier (Skiort Wallis)',
-      bedeutung: 'Verbier im Wallis ist einer der berühmtesten Skiorte der Welt — Teil des Skigebiets „4 Vallées" mit 410 km Pisten. Berühmt für Freeride-Tourismus, das jährliche Verbier-Festival (klassische Musik) und den Xtreme Verbier (Freeride-Weltcup-Finale am Bec des Rosses). Treffpunkt der internationalen High Society — Prinz William und Kate haben hier ein Chalet gekauft. Schickeria-Skiort der Extraklasse.',
-      beispiel: 'Z\'Verbier triffsch d\'Hälfti vom Schwiizer Jetset.',
-      beispiel_hd: 'In Verbier triffst du die Hälfte vom Schweizer Jetset.',
+      ausdruck: 'Zermatt',
+      hochdeutsch: 'Zermatt (Walliser Bergdorf)',
+      bedeutung: 'Zermatt am Fuss des Matterhorns ist der berühmteste Walliser Bergort. Autofrei seit 1947 — nur Elektrofahrzeuge, Pferdekutschen und Schienen. Skigebiet bis 3.899 m (höchstes Skigebiet Europas), Gornergrat-Bahn mit Matterhorn-Panorama. Treffpunkt der internationalen Schickeria, Bergsteiger, Skifahrer. Edward Whymper bestieg 1865 erstmals das Matterhorn — Beginn des Alpinismus-Booms. Tourismus-Wunder im Hochpreissegment.',
+      beispiel: 'Z\'Zermatt fahret nur elektrischi Autos — ke Diesel!',
+      beispiel_hd: 'In Zermatt fahren nur elektrische Autos — kein Diesel!',
       kategorie: 'orte'
     },
     {
@@ -934,21 +934,21 @@ export default {
     },
     {
       id: 'ch-107',
-      ausdruck: 'Ovomaltine',
-      hochdeutsch: 'Ovomaltine (Malzgetränk)',
-      bedeutung: '„Ovomaltine" — Spitzname „Ovi" — ist DAS Schweizer Schul-Frühstücksgetränk: ein Malzgetränk auf Basis von Gerstenmalz, Milch, Kakao und Zucker. Erfunden 1904 vom Berner Apotheker Albert Wander. „Mit Ovomaltine kann mans zwar nicht besser, aber länger" ist der berühmte Werbespruch. Auch als Schokolade (Ovo Crunchy) und Brotaufstrich. Generationen Schweizer Kinder wuchsen damit auf — Schweizer Marken-Identität schlechthin.',
-      beispiel: 'E heissi Ovo am Morge — Schwiizer Kindheit.',
-      beispiel_hd: 'Eine heisse Ovomaltine am Morgen — Schweizer Kindheit.',
+      ausdruck: 'Käsewähe',
+      hochdeutsch: 'Käsewähe (Schweizer Quiche)',
+      bedeutung: 'Die „Käsewähe" ist die Schweizer Antwort auf die französische Quiche — flacher Kuchen aus Mürbeteig, gefüllt mit Käse, Eierguss und Sahne. Vor allem im Aargau, Solothurn und Basel beliebt. Wird mit verschiedenen Variationen serviert: „Zibelewähe" (Zwiebel), „Chrutwähe" (Mangold), „Speckwähe". Beim Bäcker frisch zu haben. Schweizer Frühlingsklassiker, oft zur Vesper. Pures Käsegenuss-Erlebnis aus dem Schweizer Käseland.',
+      beispiel: 'E heissi Käsewähe zur Vesper — perfekt!',
+      beispiel_hd: 'Eine heisse Käsewähe zur Vesper — perfekt!',
       kategorie: 'essen'
     },
     {
       id: 'ch-108',
-      ausdruck: 'Älpler',
-      hochdeutsch: 'Älpler (Bergbauer/Senn)',
-      bedeutung: 'Der „Älpler" ist der Schweizer Bergbauer, der den Sommer auf der Alp verbringt — mit den Kühen, im Senntum. Käst die Milch zu Alpkäse, kümmert sich um die Tiere, wohnt in einfachen Sennhütten. Lebensform mit Jahrhunderten Tradition, heute durch Subventionen erhalten. Älpler sind Schweizer Identitätsfiguren — kernige, naturverbundene Männer. Werden in Volksliedern und Filmen verehrt. „Älplerchilbi" ist das jährliche Fest nach Alpabzug.',
-      beispiel: 'De Älpler chunnt im Herbscht mit em Vieh vom Bärg.',
-      beispiel_hd: 'Der Älpler kommt im Herbst mit dem Vieh vom Berg.',
-      kategorie: 'arbeit'
+      ausdruck: 'Murmeli',
+      hochdeutsch: 'Murmeltier',
+      bedeutung: 'Das „Murmeli" ist das alpine Murmeltier — possierliches Tier mit pfeifendem Warnruf, das im Hochgebirge in Familien-Kolonien lebt. Halten Winterschlaf von Oktober bis April. Symbolfigur der Schweizer Alpen — auf Plakaten, in Werbungen, als Plüschtier. Murmelitierhornöl wird traditionell gegen Rheuma verwendet (umstritten). Schweizer Naturphilosophie: das Murmeltier zeigt, dass auch Faulenzen Tugend sein kann. Schweizer Berg-Wildlife pur.',
+      beispiel: 'Hoch obe pfiifet d\'Murmeli wenn me chunnt.',
+      beispiel_hd: 'Hoch oben pfeifen die Murmeltiere wenn man kommt.',
+      kategorie: 'natur'
     },
     {
       id: 'ch-109',
@@ -997,11 +997,11 @@ export default {
     },
     {
       id: 'ch-114',
-      ausdruck: 'Federer',
-      hochdeutsch: 'Roger Federer (Tennisspieler)',
-      bedeutung: 'Roger Federer (geb. 1981 in Basel) ist der wohl grösste Schweizer Sportler aller Zeiten — Tennisspieler mit 20 Grand-Slam-Titeln, 310 Wochen Weltranglistenerster und einem Spielstil von ausserweltlicher Eleganz. 2022 zurückgetreten. Symbol für Schweizer Präzision, Höflichkeit und Souveränität. Spricht im Interview Baseldütsch, Englisch, Französisch und Hochdeutsch — perfekte Schweizer Multilingualität. Nationalheld der Moderne.',
-      beispiel: 'De Federer isch en Stoiz vo de ganze Schwiiz.',
-      beispiel_hd: 'Der Federer ist ein Stolz der ganzen Schweiz.',
+      ausdruck: 'Hodler',
+      hochdeutsch: 'Ferdinand Hodler (Maler)',
+      bedeutung: 'Ferdinand Hodler (1853–1918) war einer der bedeutendsten Schweizer Maler — Pionier des Symbolismus und Jugendstils. Bekannt für monumentale Landschaftsbilder der Schweizer Alpen, allegorische Gemälde („Die Nacht", „Der Tag") und Historienbilder („Auszug der Jenaer Studenten"). Seine „Parallelismus"-Theorie prägte den Schweizer Modernismus. Heute auf der 200-Franken-Note verewigt. Schweizer Kunstgeschichte mit europäischer Strahlkraft.',
+      beispiel: 'De Hodler isch ufm 200er-Schiin — Schwiizer Stoiz!',
+      beispiel_hd: 'Der Hodler ist auf dem 200er-Schein — Schweizer Stolz!',
       kategorie: 'menschen'
     },
     {

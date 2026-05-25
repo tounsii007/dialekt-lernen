@@ -1067,12 +1067,12 @@ export default {
     },
     {
       id: 'by-122',
-      ausdruck: 'Hax\'n',
-      hochdeutsch: 'Schweinshaxe / Bein',
-      bedeutung: 'Die „Hax\'n" ist im Bairischen das Bein oder die Beinarbeit — und besonders die berühmte Schweinshaxe, das bayerische Festtagsgericht. Knusprig gebacken oder gegrillt, mit Sauerkraut und Knödel serviert. „A Hax\'n im Hofbräuhaus" gehört zum Standardrepertoire des Münchner Wirtshausbesuchs. Auch übertragen: „lange Haxen" für lange Beine. Bayerische Wirtshausküche pur — wer Hax\'n bestellt, weiß was er will.',
-      beispiel: 'A knuspige Hax\'n mit Knödel — Wahnsinn!',
-      beispiel_hd: 'Eine knusprige Schweinshaxe mit Knödel — Wahnsinn!',
-      kategorie: 'essen'
+      ausdruck: 'Wuzler',
+      hochdeutsch: 'Wuzler (Tischkicker)',
+      bedeutung: 'Der „Wuzler" ist im Bairischen und Österreichischen der Tischfußball-Apparat (Tischkicker). „A Runde Wuzln" gehört in jeder bayerischen Wirtshaus-Eckkneipe zum Standardrepertoire. Stammt von „wuzeln" — drehen, rollen. Der Wuzler ist sozialer Treffpunkt zwischen Generationen, wo Stammgäste Studenten besiegen und umgekehrt. Auch beim Volksfest in den Bierzelten beliebt. Bayerische Wirtshauskultur in spielerischer Form.',
+      beispiel: 'Komm, mir wuzln a Rundn am Tisch hinten!',
+      beispiel_hd: 'Komm, wir spielen eine Runde Tischkicker hinten!',
+      kategorie: 'sport'
     },
     {
       id: 'by-123',

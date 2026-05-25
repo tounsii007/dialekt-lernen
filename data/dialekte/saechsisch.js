@@ -921,12 +921,12 @@ export default {
     },
     {
       id: 's-106',
-      ausdruck: 'Pittiplatsch',
-      hochdeutsch: 'Pittiplatsch (DDR-Kinderfigur)',
-      bedeutung: '„Pittiplatsch" ist eine der berühmtesten DDR-Kinderfiguren — ein kleiner brauner Kobold mit Glatze, Gefährte der Ente Schnatterinchen und des Hundes Moppi. Seit 1962 im Sandmännchen-Vorprogramm. Sein Markenzeichen-Spruch: „Ach, du meine Nase!". Pittiplatsch ist die ostdeutsche Antwort auf Westkinderhelden — frech, klug, charmant. Generationenprägend, ein DDR-Symbol mit Kultcharakter, das Wendekind bis heute kennen.',
-      beispiel: '„Ach, du meine Nase!" — typisch Pittiplatsch.',
-      beispiel_hd: '„Ach, du meine Nase!" — typisch Pittiplatsch.',
-      kategorie: 'familie'
+      ausdruck: 'Dynamo',
+      hochdeutsch: 'Dynamo Dresden (Fussballverein)',
+      bedeutung: 'Der „SG Dynamo Dresden" — kurz „Dynamo" — ist der berühmteste sächsische Fussballverein, gegründet 1953. Acht DDR-Meisterschaften (1953–1989), heute in der 3. Liga. Die Fans („Dynamo-Familie") sind berüchtigt für ihre Leidenschaft und Treue, das Rudolf-Harbig-Stadion ist Hexenkessel. Auch Lokomotive Leipzig war bedeutender DDR-Club. Sächsische Fussballfolklore mit Mythos und Schmerz — Glanzzeit längst vergangen, aber Stolz lebendig.',
+      beispiel: 'Dynamo Dresden spielt heud Heimspiel im Rudolf-Harbig-Stadion.',
+      beispiel_hd: 'Dynamo Dresden spielt heute Heimspiel im Rudolf-Harbig-Stadion.',
+      kategorie: 'sport'
     },
     {
       id: 's-107',

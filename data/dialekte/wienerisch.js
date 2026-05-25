@@ -874,12 +874,12 @@ export default {
     },
     {
       id: 'w-101',
-      ausdruck: 'Demel',
-      hochdeutsch: 'Demel (Hofzuckerbäckerei)',
-      bedeutung: 'Die k.u.k. Hofzuckerbäckerei Demel am Kohlmarkt ist seit 1786 Wiens berühmteste Konditorei — einst Hoflieferant von Kaiser Franz Joseph und Sisi. Berühmt für Demel-Sachertorte (im legendären Streit mit dem Hotel Sacher), Demel-Annatorten und Pralinen. Die „Demelinerinnen" (Verkäuferinnen) sprechen Gäste konsequent in dritter Person an: „Was hätten Schöne?" — ein Relikt der Habsburger-Etikette. Touristenmagnet mit lebendiger Kultur.',
-      beispiel: 'Bei\'m Demel kauf i die beste Sachertortn vo Wien.',
-      beispiel_hd: 'Bei Demel kaufe ich die beste Sachertorte von Wien.',
-      kategorie: 'essen'
+      ausdruck: 'Beisl',
+      hochdeutsch: 'Beisl (Wiener Kneipe)',
+      bedeutung: 'Das „Beisl" ist die Wiener Eckkneipe — gemütliche, oft verrauchte Lokalität, in der die wichtigsten Wiener Lebensentscheidungen getroffen werden. Vom jiddischen „bajis" (Haus). Kleinerer und einfacher als ein Wirtshaus. Beim Beislwirt herrscht eine eigene Etikette: erst grüßen, dann bestellen. Klassiker: „Plachutta", „Pfarrwirt", „Glacis Beisl". Wiener Kultur in Reinkultur — auch UNESCO-würdig.',
+      beispiel: 'Beim Beisl ums Eck wird heut\' Tarock g\'spielt.',
+      beispiel_hd: 'Beim Beisl ums Eck wird heute Tarock gespielt.',
+      kategorie: 'orte'
     },
     {
       id: 'w-102',
@@ -892,12 +892,12 @@ export default {
     },
     {
       id: 'w-103',
-      ausdruck: 'Hawelka',
-      hochdeutsch: 'Café Hawelka (Künstlercafé)',
-      bedeutung: 'Das Café Hawelka in der Dorotheergasse ist ein legendäres Wiener Künstlercafé, gegründet 1939 von Leopold und Josefine Hawelka. Treffpunkt der Wiener Bohème: Friedensreich Hundertwasser, H.C. Artmann, Helmut Qualtinger und Andre Heller verkehrten hier. Eng, verraucht, plüschig — pure Patina. Berühmt für Frau Hawelkas Buchteln, frisch nach 22 Uhr serviert. Echtes Wien ohne touristische Glättung.',
-      beispiel: 'Im Hawelka gibt\'s die besten Buchteln vo Wien.',
-      beispiel_hd: 'Im Hawelka gibt es die besten Buchteln von Wien.',
-      kategorie: 'orte'
+      ausdruck: 'Beethoven',
+      hochdeutsch: 'Ludwig van Beethoven (in Wien)',
+      bedeutung: 'Ludwig van Beethoven (1770–1827), geboren in Bonn, lebte seine 35 produktivsten Jahre in Wien. Hier komponierte er seine 9 Sinfonien, Klaviersonaten, Streichquartette. Er wohnte über 60 Mal um — die Wiener nannten ihn „den Verrückten". Seine Wohnung im Pasqualatihaus und das Beethoven-Haus in Heiligenstadt sind heute Museen. Sein Begräbnis 1827 wurde zum Volkstrauertag — 20.000 Wiener begleiteten den Sarg. Wiener Musikgeschichte.',
+      beispiel: 'Da Beethoven hat seine 9 Symphonien hier in Wien g\'schrieben.',
+      beispiel_hd: 'Der Beethoven hat seine 9 Sinfonien hier in Wien geschrieben.',
+      kategorie: 'menschen'
     },
     {
       id: 'w-104',
@@ -919,12 +919,12 @@ export default {
     },
     {
       id: 'w-106',
-      ausdruck: 'Stephansdom',
-      hochdeutsch: 'Stephansdom (Wiener Wahrzeichen)',
-      bedeutung: 'Der Stephansdom („Steffl") ist Wiens Wahrzeichen schlechthin — die gotische Kathedrale im Herzen der Stadt, erbaut ab 1147, der Hauptturm 137 m hoch. Das bunte Dach mit Mosaiksteinen zeigt den österreichischen Doppeladler. Hier wurde Mozart 1791 beerdigt (in einem Armengrab). Die berühmte Pummerin im Nordturm ist die größte Glocke Österreichs. Der „Steffl" gehört zum Wiener Selbstverständnis wie der Schnitzel zum Mittagessen.',
-      beispiel: 'Vom Steffl aus siehst die ganze Innenstadt.',
-      beispiel_hd: 'Vom Stephansdom aus siehst du die ganze Innenstadt.',
-      kategorie: 'orte'
+      ausdruck: 'Würstelstand',
+      hochdeutsch: 'Würstelstand (Wiener Imbiss)',
+      bedeutung: 'Der „Würstelstand" ist die Wiener Imbiss-Institution — kleine, oft 24/7 geöffnete Buden mit klassischen Wiener Spezialitäten: Käsekrainer, Burenwurst, Bosna, Frankfurter. Wichtige Etikette: bestellen, mit „A Bier" zur Wurst, schnell essen, weitergehen. Berühmte Würstelstände: „Bitzinger" hinter der Albertina, „Zum Goldenen Würstel". Wiener Lebensgefühl mitten in der Nacht. Auch UNESCO-würdige Wiener Kultur.',
+      beispiel: 'Nach\'m Theater no schnell zum Würstelstand!',
+      beispiel_hd: 'Nach dem Theater noch schnell zum Würstelstand!',
+      kategorie: 'essen'
     },
     {
       id: 'w-107',
@@ -955,12 +955,12 @@ export default {
     },
     {
       id: 'w-110',
-      ausdruck: 'Schönbrunn',
-      hochdeutsch: 'Schloss Schönbrunn',
-      bedeutung: 'Schloss Schönbrunn war Sommerresidenz der Habsburger und ist heute UNESCO-Weltkulturerbe. Erbaut im 17./18. Jahrhundert mit 1441 Räumen — die berühmtesten: Spiegelsaal, Großer Salon, Hofburgkapelle. Hier wohnten Maria Theresia, Franz Joseph und Sisi. Park mit Gloriette, Neptunbrunnen und ältestem Zoo der Welt (Tiergarten Schönbrunn, 1752). Pflichtprogramm für jeden Wien-Touristen — 4 Mio. Besucher jährlich.',
-      beispiel: 'A Spaziergang dorch d\'Gloriette in Schönbrunn — herrlich!',
-      beispiel_hd: 'Ein Spaziergang durch die Gloriette in Schönbrunn — herrlich!',
-      kategorie: 'orte'
+      ausdruck: 'Heurigenmusik',
+      hochdeutsch: 'Heurigenmusik (Wiener Tradition)',
+      bedeutung: 'Die „Heurigenmusik" ist die spezielle musikalische Untermalung beim Heurigen — meist mit Schrammelquartett, manchmal mit Zither, Akkordeon und Gesang. Repertoire: alte Wienerlieder wie „I hab di gern" oder „Wien, du bist a Tafel voll Träume". Wandermusiker ziehen von Tisch zu Tisch — wer zuhört, gibt Trinkgeld. Wiener Tradition seit dem 19. Jahrhundert. Heute zunehmend rar — aber in echten Heurigen wie „Mayer am Pfarrplatz" noch lebendig.',
+      beispiel: 'Beim Heurigen spielt da Schrammel auf — Wiener Romantik.',
+      beispiel_hd: 'Beim Heurigen spielt die Schrammelmusik auf — Wiener Romantik.',
+      kategorie: 'musik'
     },
     {
       id: 'w-111',

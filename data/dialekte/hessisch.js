@@ -1567,6 +1567,231 @@ export default {
       beispiel: 'Hessenpolitik — immer mit Schmäh und Lokalkolorit.',
       beispiel_hd: 'Hessenpolitik — immer mit Schmäh und Lokalkolorit.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'h-176',
+      ausdruck: 'Hessenring',
+      hochdeutsch: 'Autobahnring um Frankfurt (A661/A3/A66)',
+      bedeutung: 'Der Hessenring ist der inoffizielle Begriff für den Autobahnring um Frankfurt — A3, A5, A66 und A661 umschließen das Rhein-Main-Gebiet. Mit dem Frankfurter Kreuz, einem der wichtigsten Autobahnknotenpunkte Europas. Pendler kennen die Staus „auf\'m Ring" — bis zu 200.000 Fahrzeuge täglich am Frankfurter Kreuz. Hessischer Verkehrsalltag.',
+      beispiel: 'Stau auf\'m Hessenring — typisch Berufsverkehr.',
+      beispiel_hd: 'Stau auf dem Hessenring — typisch Berufsverkehr.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-177',
+      ausdruck: 'Bad Vilbel',
+      hochdeutsch: 'Bad Vilbel (Mineralwasserstadt)',
+      bedeutung: 'Bad Vilbel nördlich von Frankfurt ist eine kleine Stadt, berühmt für ihre Mineralquellen — „Bad Vilbeler Wasser" gehört zu den bekanntesten Tafelwassern Hessens. Die Hassia-Quellen und die Vilbeler Burg prägen die Stadt. Mit den jährlichen Burgfestspielen, einem regional bedeutsamen Open-Air-Theater. Hessen-Wasserkultur in einer kleinen Stadt.',
+      beispiel: 'Bad Vilbeler Wasser — hessisches Mineralwasser-Original.',
+      beispiel_hd: 'Bad Vilbeler Wasser — hessisches Mineralwasser-Original.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-178',
+      ausdruck: 'Fulda',
+      hochdeutsch: 'Fulda (Bistumsstadt)',
+      bedeutung: 'Fulda im Osten Hessens ist ein historisches Bistum — Bonifatius (Apostel der Deutschen) gründete hier 744 das Kloster. Sein Grab im Fuldaer Dom ist Pilgerort. Der barocke Dom (1704-12) ist Wahrzeichen. Auch die Fulda-Konferenz der katholischen Bischöfe Deutschlands findet hier statt. Hessisches Sakralerbe in der Mitte Deutschlands.',
+      beispiel: 'Der Fuldaer Dom mit Bonifatius-Grab — hessisches Welterbe.',
+      beispiel_hd: 'Der Fuldaer Dom mit Bonifatius-Grab — hessisches Welterbe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-179',
+      ausdruck: 'Rhön',
+      hochdeutsch: 'Rhön (Mittelgebirge im Osten Hessens)',
+      bedeutung: 'Die Rhön ist ein Mittelgebirge im Dreiländereck Hessen-Bayern-Thüringen — mit der Wasserkuppe (950 m) als höchstem Punkt. Beliebt bei Gleitschirmfliegern (Wasserkuppe ist Wiege des Segelflugs). Auch Naturschutzgebiet mit Hochmooren, Hutweiden und seltenen Pflanzen. UNESCO-Biosphärenreservat. Hessische Naturlandschaft mit Charakter.',
+      beispiel: 'Auf der Wasserkuppe in der Rhön gleitsegeln — hessisches Bergerlebnis.',
+      beispiel_hd: 'Auf der Wasserkuppe in der Rhön gleitsegeln — hessisches Bergerlebnis.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-180',
+      ausdruck: 'Wasserkuppe',
+      hochdeutsch: 'Wasserkuppe (Gleitschirm-Mekka)',
+      bedeutung: 'Die Wasserkuppe (950 m) ist der höchste Berg in Hessen und die „Wiege des Segelflugs" — seit den 1920er Jahren Trainingsgebiet für Gleitschirm- und Segelflug. Mit dem Deutschen Segelflugmuseum. Im Winter Skigebiet, im Sommer Outdoor-Paradies. Auch Standort der Radarstation der Bundeswehr (NATO-relevant). Hessische Höhepunkte.',
+      beispiel: 'Auf der Wasserkuppe wurde das Segelfliegen erfunden.',
+      beispiel_hd: 'Auf der Wasserkuppe wurde das Segelfliegen erfunden.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-181',
+      ausdruck: 'Märchenstraße',
+      hochdeutsch: 'Deutsche Märchenstraße (hessisches Erbe)',
+      bedeutung: 'Die Deutsche Märchenstraße zieht sich 600 km durch Hessen und Niedersachsen — auf den Spuren der Brüder Grimm und ihrer Märchen. Hanau (Grimm-Geburtsstadt), Steinau (Grimm-Kindheit), Marburg (Grimm-Studium), Kassel (Grimm-Wirken), Sababurg (Dornröschen-Schloss). Touristisch beliebt bei Asiaten. Hessisches Kulturerbe als Themenstraße.',
+      beispiel: 'Die Märchenstraße — Hessens beliebteste Touri-Route.',
+      beispiel_hd: 'Die Märchenstraße — Hessens beliebteste Touri-Route.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-182',
+      ausdruck: 'Sababurg',
+      hochdeutsch: 'Sababurg (Dornröschenschloss)',
+      bedeutung: 'Schloss Sababurg in Nordhessen wird als „Dornröschen-Schloss" bezeichnet — die Brüder Grimm sollen hier Inspiration für ihr Märchen bekommen haben. Die Burg auf einem Berg ist heute Hotel und Restaurant, umgeben von Tierpark Sababurg (über 900 Jahre alter Park mit seltenen Haustierrassen). Märchenhafte hessische Idylle für Romantiker.',
+      beispiel: 'Im Schloss Sababurg übernachten — Dornröschen-Erlebnis.',
+      beispiel_hd: 'Im Schloss Sababurg übernachten — Dornröschen-Erlebnis.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-183',
+      ausdruck: 'Bad Wildungen',
+      hochdeutsch: 'Bad Wildungen (Kurstadt)',
+      bedeutung: 'Bad Wildungen ist Deutschlands größte Kurstadt — mit über 6 Millionen Übernachtungen jährlich. Berühmt für die Wildunger Quellen (Helenenquelle, König Otto Quelle). Auch der Geburtsort Wilhelm Heinrich Riehls, ethnographer der Hessen. Mit dem Schloss Friedrichstein und der historischen Altstadt. Hessisches Kurort-Lebensgefühl.',
+      beispiel: 'Bad Wildungen — wo Hessen entspannt und gesund werden.',
+      beispiel_hd: 'Bad Wildungen — wo Hessen entspannt und gesund werden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-184',
+      ausdruck: 'Edersee',
+      hochdeutsch: 'Edersee (Stausee in Hessen)',
+      bedeutung: 'Der Edersee in Waldeck-Frankenberg ist Deutschlands zweitgrößter Stausee — mit der Edertalsperre, einer der größten Talsperren Europas (Mauer 47 m hoch). Im Krieg von britischen Bombern angegriffen (Operation Chastise, 1943). Heute beliebt für Wassersport, Segeln und Schiffsrundfahrten. Mit dem Eder-Drei-Seen-Weg ein Wanderparadies. Hessische Naturidyll.',
+      beispiel: 'Am Edersee segeln — hessische Sommerfreuden.',
+      beispiel_hd: 'Am Edersee segeln — hessische Sommerfreuden.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-185',
+      ausdruck: 'Waldecker Land',
+      hochdeutsch: 'Waldecker Land (Region in Hessen)',
+      bedeutung: 'Das Waldecker Land im Nordwesten Hessens ist eine traditionsreiche Region — bis 1929 Fürstentum Waldeck. Geprägt von Wäldern, dem Edersee, dem Kellerwald (UNESCO-Welterbe Buchenwälder). Mit der Residenzstadt Bad Arolsen und Schloss Waldeck. Ländlich, naturreich, mit eigener Kultur. Hessens grünes Herz.',
+      beispiel: 'Im Waldecker Land bist du fast in einem anderen Hessen.',
+      beispiel_hd: 'Im Waldecker Land bist du fast in einem anderen Hessen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-186',
+      ausdruck: 'Wilhelmshöhe',
+      hochdeutsch: 'Bergpark Wilhelmshöhe (UNESCO-Welterbe)',
+      bedeutung: 'Der Bergpark Wilhelmshöhe in Kassel ist seit 2013 UNESCO-Welterbe — der größte Bergpark Europas mit der berühmten Herkules-Statue, dem Schloss Wilhelmshöhe und den weltgrößten künstlichen Wasserspielen. Wenn am Sonntag das Wasser läuft, fließt es 250 m über Kaskaden hinab — beeindruckendes Schauspiel seit 1714. Hessens Vorzeige-Park.',
+      beispiel: 'Sonntags die Wasserspiele auf Wilhelmshöhe — spektakulär.',
+      beispiel_hd: 'Sonntags die Wasserspiele auf Wilhelmshöhe — spektakulär.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-187',
+      ausdruck: 'Herkules',
+      hochdeutsch: 'Herkules-Statue (Wahrzeichen Kassel)',
+      bedeutung: 'Die Herkules-Statue auf dem Karlsberg in Kassel ist Hessens berühmtestes Denkmal — 11,3 m hoch, auf einer Pyramide und einem Oktogon. Erbaut 1701-17. Symbol für Stärke und Macht der Landgrafen von Hessen-Kassel. Heute UNESCO-Welterbe und Wahrzeichen Kassels. Vom Sockel der Statue beste Aussicht über die documenta-Stadt.',
+      beispiel: 'Der Herkules — Wahrzeichen Kassels seit 300 Jahren.',
+      beispiel_hd: 'Der Herkules — Wahrzeichen Kassels seit 300 Jahren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-188',
+      ausdruck: 'Geheimnis',
+      hochdeutsch: 'Hessisches Wissen (Insider)',
+      bedeutung: 'Hessen hat viele „Geheimnisse" — wenig bekannte Orte und Bräuche, die nur Einheimische kennen. Vom „Loreley der Hessen" (Lorelei am Rhein, eigentlich rheinland-pfälzisch, aber Hessen claimen sie) bis zu kleinen Schluchten, alten Brauhäusern und vergessenen Klöstern. Hessens „Geheimnisse" sind charme der Region. Insider-Wissen ist Stolz.',
+      beispiel: 'In Hessen gibt\'s viele Geheimnisse — frag die Alten.',
+      beispiel_hd: 'In Hessen gibt es viele Geheimnisse — frag die Alten.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-189',
+      ausdruck: 'Frankfurter Stadtbahn',
+      hochdeutsch: 'U-Bahn Frankfurt (RMV)',
+      bedeutung: 'Frankfurt hat eine besondere U-Bahn — die Stadtbahn fährt teilweise oberirdisch (Stadtbahn) und teilweise unterirdisch (U-Bahn). Das RMV-Netz (Rhein-Main-Verkehrsverbund) ist eines der größten Deutschlands. 9 U-Bahn-Linien, plus S-Bahn-Ring. Eine ständige Quelle des Frankfurter Stolzes — und der Frustration bei Verspätungen. Hessen-Mobilität.',
+      beispiel: 'Mit der U-Bahn kommst du in Frankfurt überall hin.',
+      beispiel_hd: 'Mit der U-Bahn kommst du in Frankfurt überall hin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-190',
+      ausdruck: 'Hessen-Burger',
+      hochdeutsch: 'Hessisches Burger-Restaurant',
+      bedeutung: 'Hessen hat seine eigene Burger-Kultur — von „Bembel & Burger" in Frankfurt bis zu lokalen Restaurants, die ungewöhnliche Kombinationen anbieten (Apfelwein-Burger, Grüne-Soße-Burger). Moderne hessische Gastronomie verbindet Tradition mit Innovation. Die hessische Esskultur ist heute oft unkonventionell und kreativ. Junges Hessen.',
+      beispiel: 'Heute Hessen-Burger — Tradition trifft Modernes.',
+      beispiel_hd: 'Heute Hessen-Burger — Tradition trifft Modernes.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-191',
+      ausdruck: 'Stoltze-Brunnen',
+      hochdeutsch: 'Friedrich-Stoltze-Brunnen Frankfurt',
+      bedeutung: 'Der Friedrich-Stoltze-Brunnen am Hühnermarkt in Frankfurt ehrt den hessischen Mundartdichter. Eine Bronze-Skulptur mit Stoltze und seinem charakteristischen Gerippten-Glas. Ein Symbol für die Pflege hessischer Mundart und Kultur. In der „Neuen Altstadt" rekonstruiert. Hessisches Stadtbild-Highlight.',
+      beispiel: 'Der Stoltze-Brunnen erinnert an unseren Mundartdichter.',
+      beispiel_hd: 'Der Stoltze-Brunnen erinnert an unseren Mundartdichter.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-192',
+      ausdruck: 'Neue Altstadt',
+      hochdeutsch: 'Frankfurt Neue Altstadt (Rekonstruktion)',
+      bedeutung: 'Die Neue Altstadt in Frankfurt wurde 2018 fertiggestellt — eine Rekonstruktion historischer Fachwerk- und Steinhäuser, die im Krieg zerstört wurden. 35 Häuser, 15 davon Reproduktionen. Mit der Goldenen Waage, dem Stoltze-Brunnen und engen Gassen. Eine Mischung aus Touristen-Magnet und historischer Wiederherstellung. Hessisches Wiederaufbau-Projekt der Spitzenklasse.',
+      beispiel: 'In der Neuen Altstadt erleben wir Frankfurt wie vor 1944.',
+      beispiel_hd: 'In der Neuen Altstadt erleben wir Frankfurt wie vor 1944.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-193',
+      ausdruck: 'Bembel-Kunst',
+      hochdeutsch: 'Frankfurter Bembel-Handwerk',
+      bedeutung: 'Die Bembel-Kunst ist hessisches Töpfer-Handwerk — die charakteristischen blau-grauen Steinzeug-Krüge werden von wenigen Manufakturen noch handgemacht. Original-Bembel kommen aus dem Westerwald (eigentlich Rheinland-Pfalz), aber Hessen verbindet sie mit ihrer Apfelweinkultur. Echte Bembel sind keine Massenware — Kennerstücke kosten 50-200 Euro.',
+      beispiel: 'En original Bembel — Familien-Erbstück.',
+      beispiel_hd: 'Ein original Bembel — Familien-Erbstück.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-194',
+      ausdruck: 'Hessischer Löwentaler',
+      hochdeutsch: 'Hessischer Löwentaler (Hessen-Münze)',
+      bedeutung: 'Der Löwentaler — historische Hessen-Münze — zeigt den blau-weiß gestreiften hessischen Löwen. Heute Sammlerstück und Souvenir. Auch der „Hessen-Taler" wurde zum 800-jährigen Hessen-Jubiläum 2013 herausgegeben. Hessisches Münzerbe für Numismatiker und Heimatfreunde. Stolz auf Hessen-Geschichte in Metall.',
+      beispiel: 'Den Löwentaler hab ich von Opa geerbt — alt und schön.',
+      beispiel_hd: 'Den Löwentaler habe ich von Opa geerbt — alt und schön.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-195',
+      ausdruck: 'Eppertshausen',
+      hochdeutsch: 'Eppertshausen (typisches Hessen-Dorf)',
+      bedeutung: 'Eppertshausen ist eine kleine hessische Gemeinde im Landkreis Darmstadt-Dieburg — 6.000 Einwohner, stellvertretend für hunderte ähnlicher Dörfer. Mit Apfelweinkultur, Vereinen, Schoppen-Tradition. Hessisches Dorfleben mit seinen charakteristischen Merkmalen — Bürgermeister kennen alle, Vereine sind aktiv, Kerb wird gefeiert. Hessisches Land in Reinkultur.',
+      beispiel: 'In Eppertshausen kennt jeder jeden — hessisches Dorfleben.',
+      beispiel_hd: 'In Eppertshausen kennt jeder jeden — hessisches Dorfleben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-196',
+      ausdruck: 'Hessenwall',
+      hochdeutsch: 'Wall-Stadtbefestigung (historisch)',
+      bedeutung: 'Der „Hessenwall" ist ein historischer Begriff für die Stadtbefestigungen vieler hessischer Städte — Marburg, Friedberg, Wetzlar haben noch erhaltene Wallanlagen. Im Mittelalter schützten sie die Bürgerschaft. Heute sind sie Parkanlagen und Wanderwege. Hessisches mittelalterliches Erbe als grüner Stadtring.',
+      beispiel: 'Auf\'m Hessenwall spazieren — hessische Stadtgeschichte.',
+      beispiel_hd: 'Auf dem Hessenwall spazieren — hessische Stadtgeschichte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-197',
+      ausdruck: 'Frankfurter Pferdemarkt',
+      hochdeutsch: 'Frankfurter Pferdemarkt (Festival)',
+      bedeutung: 'Der Frankfurter Pferdemarkt war historisch wichtig — heute lebt diese Tradition in jährlichen Pferdesportveranstaltungen und Reittourismus weiter. Auch die Frankfurter Pferderennbahn in Niederrad ist regional bedeutsam. Hessen pflegt seine reiterliche Tradition — von Großherzog Ludwig (Ludwigsburg) bis heute. Hessische Reitkultur.',
+      beispiel: 'Frankfurter Pferderennen — hessische Tradition mit modernem Anstrich.',
+      beispiel_hd: 'Frankfurter Pferderennen — hessische Tradition mit modernem Anstrich.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'h-198',
+      ausdruck: 'Schaffe schaffe',
+      hochdeutsch: 'Schaffen schaffen (hessische Variante)',
+      bedeutung: 'Auch wenn klassischerweise schwäbisch — „Schaffe schaffe" ist im hessischen Volksmund verbreitet als Ausdruck von Fleiß und Arbeitsethos. Eingewanderte Schwaben haben den Spruch mitgebracht. In Frankfurt sagt man eher „Babbeln un Schaffen" — Reden und Arbeiten. Hessen arbeiten anders als Schwaben, aber mit ähnlichem Ergebnis. Arbeitsethos der Region.',
+      beispiel: 'Schaffe schaffe — auch in Hessen, nicht nur in Schwaben.',
+      beispiel_hd: 'Schaffen schaffen — auch in Hessen, nicht nur in Schwaben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-199',
+      ausdruck: 'Hessische Bürgerwehr',
+      hochdeutsch: 'Hessische Demokratie-Aktion 1830',
+      bedeutung: 'Die Hessische Bürgerwehr 1830 war eine demokratische Bewegung in Hessen-Kassel — Bürger forderten Verfassung und Rechtsstaat. Eine wichtige Episode auf dem Weg zu deutscher Demokratie, lange vor 1848. Hessen war damit Pionierland für Bürgerrechte. Hessische Demokratie-Tradition wird heute noch gepflegt.',
+      beispiel: 'Die Hessische Bürgerwehr — Demokratie made in Hessen.',
+      beispiel_hd: 'Die Hessische Bürgerwehr — Demokratie made in Hessen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-200',
+      ausdruck: 'Wir Hessen',
+      hochdeutsch: 'Hessisches Selbstbewusstsein',
+      bedeutung: '„Wir Hessen" ist ein liebevoller Gemeinschaftsbegriff — drückt hessisches Selbstbewusstsein aus. Hessen sind sich ihrer Identität bewusst: Apfelweintrinker, Eintracht-Fans, Buchmesse-Besucher, ehrlich-direkt im Umgang. „Wir Hessen sind anders" — humorvoll-stolz ausgesprochen. Hessisches „Wir" ist tolerant und einladend — wer hier wohnt, ist dabei.',
+      beispiel: 'Wir Hessen — herzlich, ehrlich und immer mit Schmäh.',
+      beispiel_hd: 'Wir Hessen — herzlich, ehrlich und immer mit Schmäh.',
+      kategorie: 'menschen'
     }
   ]
 };

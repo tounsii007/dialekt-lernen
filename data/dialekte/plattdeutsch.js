@@ -1078,6 +1078,231 @@ export default {
       beispiel: 'En frisch Matjes-Heering mit Tüffel — dat smeckt!',
       beispiel_hd: 'Ein frischer Matjeshering mit Kartoffeln — das schmeckt!',
       kategorie: 'essen'
+    },
+    {
+      id: 'p-126',
+      ausdruck: 'St. Peter-Ording',
+      hochdeutsch: 'St. Peter-Ording (Nordsee-Halbinsel)',
+      bedeutung: 'St. Peter-Ording an der nordfriesischen Westküste ist eines der beliebtesten Nordseebäder Deutschlands — berühmt für den 12 km langen, 2 km breiten Sandstrand und die ikonischen Pfahlbauten-Restaurants. Hier werden die deutschen Meisterschaften im Strandsegeln und Kitesurfen ausgetragen. Über 3 Millionen Übernachtungen pro Jahr. Der Ortsteil „Ording" hat seinen Charakter als Fischerdorf bewahrt. Norddeutsches Strandparadies par excellence.',
+      beispiel: 'Op Sankt Peter-Ording is de Strand so wiet as dat Oog reckt.',
+      beispiel_hd: 'Auf St. Peter-Ording ist der Strand so weit das Auge reicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-127',
+      ausdruck: 'Storm-Husum',
+      hochdeutsch: 'Husum und Theodor Storm',
+      bedeutung: 'Husum, die „graue Stadt am Meer", wurde durch Theodor Storm (1817–1888) literarisch unsterblich. Der Norddeutsche Dichter wurde hier geboren, lebte hier als Amtsrichter und schrieb seine berühmtesten Novellen — darunter „Der Schimmelreiter" (1888). Sein Geburtshaus in der Wasserreihe ist heute Storm-Museum. Sein Lyrik-Hauptwerk „Die Stadt" („Am grauen Strand, am grauen Meer ...") ist Schulstoff. Husum atmet bis heute Storm-Atmosphäre — grau, melancholisch, schön.',
+      beispiel: 'Theodor Storm hett Husum to\'n Begripp maakt.',
+      beispiel_hd: 'Theodor Storm hat Husum zum Begriff gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-128',
+      ausdruck: 'Eckernförde',
+      hochdeutsch: 'Eckernförde (Fischfang-Hafenstadt)',
+      bedeutung: 'Eckernförde an der Ostsee ist eine charmante 22.000-Einwohner-Hafenstadt zwischen Kiel und Flensburg. Bekannt für die Eckernförder Sprotten (geräucherte Sardinen) — geschützte geografische Angabe seit 2007. Die Räuchereien an der Hafenpromenade sind Touristenmagnet. Auch die Mecklenburger Werft baut hier U-Boote. Der weiße Sandstrand der Borby-Halbinsel und die historische Altstadt machen Eckernförde zum Geheimtipp.',
+      beispiel: 'Eckernförder Sprotten ut de Räukerei — dat smeckt!',
+      beispiel_hd: 'Eckernförder Sprotten aus der Räucherei — das schmeckt!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-129',
+      ausdruck: 'Flensburg',
+      hochdeutsch: 'Flensburg (Hafenstadt an der dänischen Grenze)',
+      bedeutung: 'Flensburg ist die nördlichste Stadt Deutschlands — direkt an der dänischen Grenze. 90.000 Einwohner. Berühmt vor allem für drei Dinge: das Kraftfahrt-Bundesamt mit den „Flensburger Punkten" (Verkehrssündernregister), die Flensburger Brauerei mit dem charakteristischen Bügelverschluss-Bier und den dänischen Einfluss (zweisprachige Schilder, dänische Minderheit). Wunderschöne Förde, hanseatisches Stadtbild, multikulturelle Atmosphäre.',
+      beispiel: 'En Flensburger Pilsener mit Bügelverschluss — Pflicht!',
+      beispiel_hd: 'Ein Flensburger Pilsener mit Bügelverschluss — Pflicht!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-130',
+      ausdruck: 'Kieler Woche',
+      hochdeutsch: 'Kieler Woche (Segelregatta)',
+      bedeutung: 'Die Kieler Woche im Juni ist eine der größten Segelveranstaltungen der Welt — seit 1882. Über 5.000 Segler aus 50 Nationen treffen sich in der Kieler Förde. Begleitet von einem Volksfest mit über 3 Millionen Besuchern. Höhepunkt: die internationale Windjammer-Parade mit großen Segelschiffen. Olympische Segelwettbewerbe 1936 und 1972 fanden hier statt. Kiel-Sailing-Kultur und maritime Identität pur. Für eine Woche wird Kiel zur Welthauptstadt des Segelsports.',
+      beispiel: 'To Kieler Woch sünd Hunnertdusend Lüüd in de Stadt.',
+      beispiel_hd: 'Zur Kieler Woche sind Hunderttausende Leute in der Stadt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-131',
+      ausdruck: 'Ohnsorg-Theater',
+      hochdeutsch: 'Ohnsorg-Theater (Plattdeutsches Schauspielhaus)',
+      bedeutung: 'Das Ohnsorg-Theater in Hamburg ist das berühmteste plattdeutsche Theater Deutschlands — gegründet 1902 als „Niederdeutsche Bühne". Bekannt für plattdeutsche Komödien wie „Tratsch im Treppenhaus", „Das Hörrohr" und „Mein Mann, der fährt zur See". Heidi Kabel, Henry Vahl und Heinz Lanker waren Ohnsorg-Legenden. Seit den 1950ern werden die Stücke regelmäßig im Fernsehen übertragen — die ARD/NDR-Aufzeichnungen machten Plattdeutsch deutschlandweit verständlich. Norddeutsche Sprachpflege auf höchstem Niveau.',
+      beispiel: 'Heidi Kabel im Ohnsorg-Theater — dat weer noch Theater!',
+      beispiel_hd: 'Heidi Kabel im Ohnsorg-Theater — das war noch Theater!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-132',
+      ausdruck: 'Plattdüütsch Bibel',
+      hochdeutsch: 'Plattdeutsche Bibeln',
+      bedeutung: 'Die Plattdeutschen Bibel-Übersetzungen sind ein wichtiges Kulturgut Norddeutschlands. Die erste vollständige plattdeutsche Bibel — die „Lübecker Bibel" — erschien 1494, noch vor Luthers Übersetzung. Die moderne Übersetzung „De Bibel — Plattdüütsch" (1985 vollendet) machte das Plattdeutsche wieder als religiöse Sprache zugänglich. Plattdeutsche Gottesdienste finden noch heute in vielen norddeutschen Gemeinden statt. Bewahrung der Sprache durch Glauben.',
+      beispiel: 'De Pastoor predigt op Platt — dat hett en Atmosphäär.',
+      beispiel_hd: 'Der Pastor predigt auf Platt — das hat eine Atmosphäre.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-133',
+      ausdruck: 'Hannes Wader',
+      hochdeutsch: 'Hannes Wader (Plattdeutscher Liedermacher)',
+      bedeutung: 'Hannes Wader (geboren 1942 in Gadderbaum, heute Bielefeld) ist einer der bekanntesten deutschen Liedermacher — schrieb auch zahlreiche plattdeutsche Lieder, die das norddeutsche Liedgut bereicherten. Mit Liedern wie „Heute hier, morgen dort" und seinen plattdeutschen Volkslieder-Adaptationen prägte er die Folkmusik-Szene. Politisch links und gesellschaftskritisch. Plattdeutsche Lieder gehörten zu seinem festen Repertoire. Beitrag zur Bewahrung der niederdeutschen Sprache durch Musik.',
+      beispiel: 'Hannes Wader hett ok op Platt sungen — schöne Leeder.',
+      beispiel_hd: 'Hannes Wader hat auch auf Platt gesungen — schöne Lieder.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-134',
+      ausdruck: 'Manuel Andrack',
+      hochdeutsch: 'Manuel Andrack (Wanderautor & Comedian)',
+      bedeutung: 'Manuel Andrack (geboren 1965 in Köln) ist als Sidekick von Harald Schmidt in der „Harald Schmidt Show" bekannt geworden. Heute Bestseller-Autor von Wanderbüchern — vor allem über Norddeutschland und die Eifel. Mit seinem entspannt-norddeutschen Stil und Hannoveraner-Wurzeln (er lebt in Niedersachsen) bringt er die norddeutsche Natur und Mentalität einem breiten Publikum nahe. Seine Wanderführer sind augenzwinkernd und tiefgründig zugleich. Norddeutscher Lifestyle-Botschafter.',
+      beispiel: 'Manuel Andrack wannert ünner annern dör de Lüneborger Heide.',
+      beispiel_hd: 'Manuel Andrack wandert unter anderem durch die Lüneburger Heide.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-135',
+      ausdruck: 'Wencke Myhre',
+      hochdeutsch: 'Wencke Myhre (Norwegische Sängerin in Deutschland)',
+      bedeutung: 'Wencke Myhre (geboren 1947 in Oslo) ist eine norwegische Sängerin, die in den 1960er und 70er Jahren in Deutschland Star wurde — mit Hits wie „Beiß nicht gleich in jeden Apfel" (1968) und „Er hat ein knallrotes Gummiboot" (1970). Lebte lange in Hamburg und sang oft mit norddeutschem Einschlag. Vertrat Deutschland beim Eurovision Song Contest 1968. Symbol der deutsch-skandinavischen Musikbeziehungen und norddeutscher Schlager-Tradition.',
+      beispiel: 'Wencke Myhre hett Hamborg lang to ehr Tohuus maakt.',
+      beispiel_hd: 'Wencke Myhre hat Hamburg lange zu ihrem Zuhause gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-136',
+      ausdruck: 'Marteria',
+      hochdeutsch: 'Marteria (Rostocker Rapper)',
+      bedeutung: 'Marteria — bürgerlich Marten Laciny (geboren 1982 in Rostock) — ist einer der erfolgreichsten deutschen Rapper. Seine Heimatstadt Rostock und Mecklenburg-Vorpommern prägen seine Texte. Hits wie „Lila Wolken" (mit Yasha & Miss Platnum) und „Kids (2 Finger an den Kopf)" wurden Charterfolge. Verkörpert eine neue Generation norddeutscher Künstler, die zwischen Rostock-Underground und Mainstream pendeln. Hat den Norddeutschen Hip-Hop salonfähig gemacht.',
+      beispiel: 'Marteria — dat is de Stimm vun Rostock.',
+      beispiel_hd: 'Marteria — das ist die Stimme von Rostock.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-137',
+      ausdruck: 'Helene Fischer',
+      hochdeutsch: 'Helene Fischer (Schlagerstar mit norddeutschen Konzerten)',
+      bedeutung: 'Helene Fischer (geboren 1984 in Krasnojarsk, Russland) ist Deutschlands erfolgreichste Schlagersängerin. Ihre Mega-Konzerte in Hamburg, Hannover und Bremen sind regelmäßig ausverkauft. Mit Hits wie „Atemlos durch die Nacht" erreichte sie auch das norddeutsche Publikum. Die Helene-Fischer-Show im ZDF wird oft aus Hamburg gesendet — die Hansestadt ist Schlager-Hochburg. Norddeutsche Schlager-Affinität dank ihr auf neuem Höhepunkt.',
+      beispiel: 'Helene Fischer maakt jümmers in Hamborg en groot Konzert.',
+      beispiel_hd: 'Helene Fischer macht immer in Hamburg ein großes Konzert.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-138',
+      ausdruck: 'Krabbenfischerei',
+      hochdeutsch: 'Nordseekrabbenfischerei',
+      bedeutung: 'Die Nordseekrabbenfischerei ist die wirtschaftliche und kulturelle Grundlage vieler norddeutscher Küstenorte — von Greetsiel über Neuharlingersiel bis Cuxhaven. Die Krabbenkutter fahren zwei- bis dreimal täglich raus, ziehen Schleppnetze über den Meeresboden. Die Krabben werden an Bord gekocht und dann zum Pulen ins Ausland (Marokko, Niederlande) geschickt — eine umstrittene Praxis. EU-Quoten regeln die Fangmengen streng. Aussterbendes Handwerk mit jahrhundertelanger Tradition.',
+      beispiel: 'De Krabbenfischeree is dat Levenswark vun ganze Familien.',
+      beispiel_hd: 'Die Krabbenfischerei ist das Lebenswerk ganzer Familien.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-139',
+      ausdruck: 'Kutter-Tradition',
+      hochdeutsch: 'Kutter-Tradition (norddeutsche Fischerboote)',
+      bedeutung: 'Die Kutter-Tradition Norddeutschlands geht zurück bis ins 19. Jahrhundert — die ikonischen, oft bunt gestrichenen Holz- und Stahlboote sind Symbol der Küste. Greetsieler Sieltief und Neuharlingersiel haben besonders pittoreske Kutter-Häfen. Die Boote tragen oft Namen wie „Hoffnung", „Anna" oder „Nordstern". Bei stürmischer See bleiben sie im Hafen — und die roten und blauen Rümpfe spiegeln sich im Wasser. Touristenmagnet und Lebenswirklichkeit zugleich.',
+      beispiel: 'De Kutters in Greetsiel sünd dat schöönste Fotomotiv.',
+      beispiel_hd: 'Die Kutter in Greetsiel sind das schönste Fotomotiv.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-140',
+      ausdruck: 'Hering pökeln',
+      hochdeutsch: 'Heringspökelei (Konservierung)',
+      bedeutung: 'Das Hering-Pökeln war jahrhundertelang die wichtigste Konservierungsmethode im Norden — die Hanse wurde reich damit. Frisch gefangene Heringe wurden mit Salz eingelegt und in Fässern (Tonnen) verkauft. „Matjes" sind junge, noch nicht laichreife Heringe in milder Lake. Die Pökelei war Saisonarbeit von Sommer bis Herbst. Heute noch in Holland (besonders bei Glückstadt-Konkurrent Scheveningen) und in Glückstadt an der Elbe. Norddeutsches kulinarisches Welterbe.',
+      beispiel: 'Heering pökeln is en oolt Handwark in\'n Norden.',
+      beispiel_hd: 'Hering pökeln ist ein altes Handwerk im Norden.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-141',
+      ausdruck: 'Königsberger Klopse',
+      hochdeutsch: 'Königsberger Klopse (Ostpreußische Spezialität)',
+      bedeutung: 'Königsberger Klopse sind eine ostpreußische Spezialität, die nach der Vertreibung 1945 von Heimatvertriebenen nach Norddeutschland gebracht wurde — vor allem nach Schleswig-Holstein und Niedersachsen. Klopse aus Hack mit Sardellen, in Kapern-Sahne-Sauce serviert, dazu Salzkartoffeln und Rote Bete. Klassisches DDR-Restaurantgericht. Trotz Namen ostpreußisch heute fester Bestandteil norddeutscher Küche. Heimatküche und Erinnerung an verlorene Gebiete.',
+      beispiel: 'Königsberger Klopse mit Salzkantüffeln — Mudders Spezialität.',
+      beispiel_hd: 'Königsberger Klopse mit Salzkartoffeln — Mutters Spezialität.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-142',
+      ausdruck: 'Bratheringe',
+      hochdeutsch: 'Bratheringe (eingelegte gebratene Heringe)',
+      bedeutung: 'Bratheringe sind gebratene, in Essig-Zwiebel-Marinade eingelegte Heringe — ein norddeutscher Klassiker, der oft als Resteessen entstand. Wurden früher in jeder norddeutschen Familie selbst gemacht: Heringe in Mehl wenden, braten, in Glasbehälter mit Essigmarinade einlegen, mindestens 24 Stunden ziehen lassen. Mit Bratkartoffeln und Schwarzbrot serviert. In jeder norddeutschen Imbissbude und auf Hochzeiten ein Muss. Cremig, säuerlich, salzig — perfekte Kombination.',
+      beispiel: 'Brathering mit Bratkantüffeln — Sünndag-Mahltied.',
+      beispiel_hd: 'Bratheringe mit Bratkartoffeln — Sonntagsmahlzeit.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-143',
+      ausdruck: 'Pannfisch Detail',
+      hochdeutsch: 'Hamburger Pannfisch (Original-Rezeptur)',
+      bedeutung: 'Der Hamburger Pannfisch ist ein klassisches Resteessen aus dem Hamburger Hafen — gekochter Fisch vom Vortag wird in der Pfanne mit Zwiebeln und Bratkartoffeln aufgewärmt, dazu gibt es Senfsauce und Gurke. Verschiedene Fischsorten (Kabeljau, Seelachs, Scholle) werden klein geschnitten und gebraten. Die Senfsauce mit Schalotten und Sahne ist Geheimwaffe. Norddeutsche Resteküche zur kulinarischen Höchstform — Hamburger Pannfisch ist heute Touristen-Pflicht in jedem Fischrestaurant.',
+      beispiel: 'Pannfisch mit Senfsoß un Gurke — dat is Hamborg!',
+      beispiel_hd: 'Pannfisch mit Senfsauce und Gurke — das ist Hamburg!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-144',
+      ausdruck: 'Mecklenburger Seenplatte',
+      hochdeutsch: 'Mecklenburger Seenplatte (Naturparadies)',
+      bedeutung: 'Die Mecklenburger Seenplatte ist mit über 1.000 Seen das größte zusammenhängende Seengebiet Mitteleuropas. Müritz (größter Binnensee Deutschlands), Plauer See, Kummerower See — eingebettet in Wälder und sanfte Hügellandschaften. Müritz-Nationalpark ist UNESCO-Biosphärenreservat. Wasserwanderer, Hausbootfahrer, Angler und Vogelbeobachter (Kraniche!) lieben die Region. Auch Schlösser und Gutshäuser prägen das Bild. Norddeutsches Naturparadies — die „blaue Provinz".',
+      beispiel: 'Op de Mecklenborger Seenplatten kannst du Wken lang utspannen.',
+      beispiel_hd: 'Auf der Mecklenburger Seenplatte kannst du wochenlang entspannen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-145',
+      ausdruck: 'Müritz',
+      hochdeutsch: 'Müritz (größter Binnensee Deutschlands)',
+      bedeutung: 'Die Müritz in Mecklenburg-Vorpommern ist mit 117 km² der größte vollständig in Deutschland gelegene Binnensee — der Bodensee ist größer, gehört aber drei Ländern. „Müritz" stammt vom slawischen „morcze" (kleines Meer). Tatsächlich wirkt die Müritz wie ein Binnenmeer. Der Müritz-Nationalpark ist Heimat von Seeadlern, Fischadlern und Kranichen. Im Sommer Wassersport-Paradies, im Frühling und Herbst Vogelbeobachter-Eldorado. Norddeutsches Naturwunder.',
+      beispiel: 'De Müritz is so groot, dor süht man dat anner Oever nich.',
+      beispiel_hd: 'Die Müritz ist so groß, da sieht man das andere Ufer nicht.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-146',
+      ausdruck: 'Greetsiel',
+      hochdeutsch: 'Greetsiel (Ostfriesisches Fischerdorf)',
+      bedeutung: 'Greetsiel ist das schönste Fischerdorf Ostfrieslands — ein 1.500-Einwohner-Ort mit pittoreskem Krabbenkutter-Hafen, traditionellen Zwillingsmühlen (zwei Windmühlen nebeneinander!) und liebevoll restaurierter Backsteinarchitektur. Touristenmagnet vor allem im Sommer. Hier laufen die Krabbenkutter mit ihren bunten Rümpfen aus. Bekannt auch durch Klaus-Peter Wolfs „Friesland"-Krimis (verfilmt im ZDF). Ostfriesische Idylle in Reinkultur — Postkartenmotiv.',
+      beispiel: 'In Greetsiel staht de tau Möhlen tausammen — eenmalig.',
+      beispiel_hd: 'In Greetsiel stehen die zwei Mühlen zusammen — einmalig.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-147',
+      ausdruck: 'Plattdüütsch School',
+      hochdeutsch: 'Plattdeutsch in der Schule',
+      bedeutung: 'Plattdeutsch wird seit den 2000er Jahren in immer mehr norddeutschen Schulen als Wahlfach unterrichtet — in Niedersachsen, Schleswig-Holstein, Mecklenburg-Vorpommern und Hamburg. Die EU-Charta zur Regional- und Minderheitensprachen schützt Plattdeutsch als Regionalsprache. Über 150.000 Schüler lernen aktiv Plattdeutsch. Initiativen wie „Platt in de Schaul" und das „Institut für niederdeutsche Sprache" treiben die Revitalisierung voran. Sprachenrettung im Norden.',
+      beispiel: 'Mien Söhn lernt Platt in de Schaul — dat is eine schöne Sak.',
+      beispiel_hd: 'Mein Sohn lernt Plattdeutsch in der Schule — das ist eine schöne Sache.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-148',
+      ausdruck: 'Lüneburger Heide',
+      hochdeutsch: 'Lüneburger Heide (Naturpark)',
+      bedeutung: 'Die Lüneburger Heide in Niedersachsen ist eine der ältesten Kulturlandschaften Europas — 230 km² geschützte Heidefläche. Im August blüht die Heide lila — Hunderttausende kommen zum „Heideblütenfest". Heidschnucken (alte Schafrasse) und Imker (Heideblütenhonig) prägen die Region. Wilseder Berg ist mit 169 m höchste Erhebung. Wandern, Kutschenfahrten, Kremserfahrten. Auch der Heidedichter Hermann Löns prägte das Bild. Norddeutsches Naturidyll par excellence.',
+      beispiel: 'In\'n Augus\' blöht de Lüneborger Heid — purpurrot, wieder dat Oog kickt.',
+      beispiel_hd: 'Im August blüht die Lüneburger Heide — purpurrot, wohin das Auge schaut.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-149',
+      ausdruck: 'Rügen',
+      hochdeutsch: 'Rügen (Deutschlands größte Insel)',
+      bedeutung: 'Rügen ist mit 926 km² Deutschlands größte Insel — in der Ostsee vor Stralsund gelegen. Berühmt: die Kreidefelsen des Königsstuhls (Caspar David Friedrichs „Kreidefelsen auf Rügen"), das Seebad Binz mit Bäderarchitektur, der Jasmund-Nationalpark mit den ältesten Buchenwäldern Europas (UNESCO-Welterbe). 7,5 Mio. Übernachtungen jährlich. Auch Prora — die monumentale NS-Ferienanlage. Norddeutsche Ostsee-Schönheit in Reinform.',
+      beispiel: 'Op Rügen mutt man eens an de Kriedefelsens gohn.',
+      beispiel_hd: 'Auf Rügen muss man einmal zu den Kreidefelsen gehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-150',
+      ausdruck: 'Usedom',
+      hochdeutsch: 'Usedom (Sonneninsel der Ostsee)',
+      bedeutung: 'Usedom ist Deutschlands zweitgrößte Insel — geteilt mit Polen (östliches Drittel polnisch). „Sonneninsel" wegen ihrer 1.917 Sonnenstunden pro Jahr (deutscher Rekord). Die drei Kaiserbäder Heringsdorf, Ahlbeck und Bansin mit prächtiger Bäderarchitektur des 19. Jahrhunderts ziehen Touristen aus ganz Europa an. Die längste Strandpromenade Europas (12 km) verbindet die Orte. Peenemünde mit seiner V2-Geschichte ist Mahnmal. Norddeutsches Ostsee-Paradies.',
+      beispiel: 'Op Usedom schient de Sünn länger as anner Steden in Düütschland.',
+      beispiel_hd: 'Auf Usedom scheint die Sonne länger als anderswo in Deutschland.',
+      kategorie: 'orte'
     }
   ]
 };

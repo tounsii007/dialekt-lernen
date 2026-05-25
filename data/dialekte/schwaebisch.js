@@ -1094,6 +1094,231 @@ export default {
       beispiel: 'Wenn i d\'Alb sieh, krieg i sofort a Heimatgfühl.',
       beispiel_hd: 'Wenn ich die Alb sehe, kriege ich sofort ein Heimatgefühl.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-126',
+      ausdruck: 'Reutlinger Bier',
+      hochdeutsch: 'Reutlinger Brauerei (Volksbank Reutlingen)',
+      bedeutung: 'Die schwäbische Stadt Reutlingen hat eine lange Brauereitradition — die Reutlinger Brauerei wurde 1873 gegründet und produziert klassische schwäbische Biere wie Pils und Weizen. Auch die kleinere Privatbrauerei Härle in Reutlingen ist regional geschätzt. Während die schwäbischen Brauereien gegenüber den bayerischen Großbrauereien kleiner sind, pflegen sie eine eigenständige Tradition. Reutlinger Biere passen perfekt zur schwäbischen Vesper.',
+      beispiel: 'A Reutlinger Bier zur Vesper — schwäbisches Mittagessen.',
+      beispiel_hd: 'Ein Reutlinger Bier zur Vesper — schwäbisches Mittagessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-127',
+      ausdruck: 'Stuttgarter Hofbräu',
+      hochdeutsch: 'Stuttgarter Hofbräu (Brauerei)',
+      bedeutung: 'Das Stuttgarter Hofbräu ist die bekannteste Stuttgarter Brauerei — gegründet 1872. Mit dem markanten weiß-roten Logo und dem schwäbischen Pils gehört es zum Pflichtsortiment jeder Stuttgarter Kneipe. Auf dem Cannstatter Wasen ist Hofbräu eine der dominierenden Marken. Heute zur Radeberger Gruppe gehörend, hat sich Hofbräu seine schwäbische Identität bewahrt. Das Stuttgarter Hofbräu ist im Talkessel allgegenwärtig — schwäbisches Bier-Kulturerbe.',
+      beispiel: 'A Stuttgarter Hofbräu Pils — schwäbisches Lebensgfühl.',
+      beispiel_hd: 'Ein Stuttgarter Hofbräu Pils — schwäbisches Lebensgefühl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-128',
+      ausdruck: 'Stuttgarter Markthalle',
+      hochdeutsch: 'Stuttgarter Markthalle (Jugendstil-Markthalle)',
+      bedeutung: 'Die Stuttgarter Markthalle ist eine der schönsten Jugendstil-Markthallen Deutschlands — erbaut 1914 von Architekt Martin Elsaesser. Auf 3.500 m² verkaufen 30 Händler Spezialitäten aus aller Welt: schwäbische Maultaschen, italienischer Käse, französische Weine, asiatische Gewürze. Der riesige offene Innenraum mit Glasdach ist beeindruckend. Beliebtes Mittagessen-Ziel für Stuttgarter Bürohorden. Schwäbische Gastronomie-Tradition gepaart mit Welterbe-Architektur.',
+      beispiel: 'In de Stuttgarter Markthalle gibt\'s alles, was\'s Herz begehrt.',
+      beispiel_hd: 'In der Stuttgarter Markthalle gibt es alles, was das Herz begehrt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-129',
+      ausdruck: 'Mineralbad',
+      hochdeutsch: 'Stuttgarter Mineralbad (Heilquellen)',
+      bedeutung: 'Stuttgart hat die zweitgrößten Mineralwasservorkommen Europas (nach Budapest) — täglich sprudeln über 22 Millionen Liter aus 19 Heilquellen. Die berühmtesten Mineralbäder: Leuze, Berg, Cannstatt. Hier badet man im warmen, mineralhaltigen Wasser und entspannt nach harter schwäbischer Arbeit. Schon die Römer schätzten die Quellen vor 2000 Jahren. Stuttgarts Mineralbäder sind UNESCO-würdiges Bade-Erbe und gehören zur schwäbischen Wellnesskultur.',
+      beispiel: 'Am Sonntag gehe i ins Mineralbad — abschalten!',
+      beispiel_hd: 'Am Sonntag gehe ich ins Mineralbad — abschalten!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-130',
+      ausdruck: 'Mercedes-Benz Museum',
+      hochdeutsch: 'Mercedes-Benz Museum (Stuttgart)',
+      bedeutung: 'Das Mercedes-Benz Museum in Stuttgart-Untertürkheim ist eines der spektakulärsten Automobilmuseen der Welt — eröffnet 2006. Das von UN Studio entworfene Gebäude mit Doppelhelix-Form führt Besucher chronologisch durch 130 Jahre Automobilgeschichte. 160 Fahrzeuge auf 16.500 m². Highlights: der erste Daimler-Wagen (1886), Silberpfeile, Papamobile, Rennautos von Schumacher. Über 900.000 Besucher jährlich. Schwäbisches Wirtschaftserbe und Auto-Wallfahrtsstätte.',
+      beispiel: 'S\'Mercedes-Benz Museum — schwäbisches Automobilerbe.',
+      beispiel_hd: 'Das Mercedes-Benz Museum — schwäbisches Automobilerbe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-131',
+      ausdruck: 'Porsche Museum',
+      hochdeutsch: 'Porsche Museum (Zuffenhausen)',
+      bedeutung: 'Das Porsche Museum in Stuttgart-Zuffenhausen eröffnete 2009 — ein architektonisches Wunderwerk mit scheinbar schwebender Konstruktion. 80 Fahrzeuge auf 5.600 m², darunter alle wichtigen Porsche-Modelle vom Porsche 64 (1939) bis zum 918 Spyder. Direkt neben dem Stammwerk, wo der 911 produziert wird. Über 250.000 Besucher jährlich, darunter Auto-Enthusiasten aus aller Welt. Zusammen mit dem Mercedes-Museum macht Stuttgart zur Automobilhauptstadt — schwäbische Tüftler-Tradition pur.',
+      beispiel: 'S\'Porsche Museum in Zuffenhausen isch a Augenweide.',
+      beispiel_hd: 'Das Porsche Museum in Zuffenhausen ist eine Augenweide.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-132',
+      ausdruck: 'BMW-München',
+      hochdeutsch: 'BMW München (Schwabens Konkurrent)',
+      bedeutung: 'BMW (Bayerische Motoren Werke) in München ist der bayerische Pendant zu den schwäbischen Autobauern Mercedes-Benz und Porsche. Während Schwaben mit Stern und 911er glänzen, hat Bayern mit BMW und Audi (Ingolstadt) eigene Auto-Riesen. Zwischen schwäbischen und bayerischen Autobauern besteht freundschaftliche Konkurrenz. Schwaben sagen oft scherzhaft: „A Bayer fährt BMW, a Schwob fährt Mercedes — und beide reden des Hochdeutsch nit g\'scheit."',
+      beispiel: 'BMW isch München, Mercedes isch Stuttgart — fertig!',
+      beispiel_hd: 'BMW ist München, Mercedes ist Stuttgart — fertig!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-133',
+      ausdruck: 'Beethoven Bonn',
+      hochdeutsch: 'Beethoven (geboren in Bonn — kein Schwabe)',
+      bedeutung: 'Ludwig van Beethoven (1770–1827) wurde in Bonn geboren — und ist somit kein Schwabe, auch wenn manche Schwaben das gerne anders hätten. Seine Vertonung von Schillers „Ode an die Freude" als Schlusssatz der 9. Symphonie verbindet ihn aber mit dem schwäbischen Dichter. Die Europahymne basiert auf Beethovens Melodie zu Schillers Text — eine Verbindung zwischen rheinländischer Musik und schwäbischer Dichtkunst. Beethoven war Wahl-Wiener, kein Wahl-Stuttgarter.',
+      beispiel: 'Beethoven war kein Schwob — der war en Rheinländer!',
+      beispiel_hd: 'Beethoven war kein Schwabe — der war ein Rheinländer!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-134',
+      ausdruck: 'Schillerplatz',
+      hochdeutsch: 'Schillerplatz Stuttgart',
+      bedeutung: 'Der Schillerplatz im Herzen Stuttgarts ist der historische Stadtmittelpunkt — geschmückt mit dem Schiller-Denkmal von Bertel Thorvaldsen (1839). Hier befindet sich auch das Alte Schloss mit dem Württembergischen Landesmuseum und die Stiftskirche, in der die württembergischen Herzöge begraben liegen. Mittwochs und samstags findet hier der traditionelle Stuttgarter Wochenmarkt statt — schwäbische Marktatmosphäre pur. Der Schillerplatz ist Stuttgarts historisches Herz.',
+      beispiel: 'Am Schillerplatz isch immer was los — Markt oder Konzert.',
+      beispiel_hd: 'Am Schillerplatz ist immer etwas los — Markt oder Konzert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-135',
+      ausdruck: 'Schäferlauf',
+      hochdeutsch: 'Markgröninger Schäferlauf',
+      bedeutung: 'Der Markgröninger Schäferlauf ist eines der ältesten Volksfeste Schwabens — seit 1723 dokumentiert. Junge Schäferinnen und Schäfer laufen barfuß über ein Stoppelfeld — die Sieger werden Schäferkönig und -königin. Tradition geht zurück auf die schwäbische Schäferei der Schwäbischen Alb mit ihren Wacholderheiden. Das Fest ist immaterielles UNESCO-Kulturerbe. Der Lauf ist anspruchsvoll, schmerzhaft und ehrenhaft — schwäbische Tradition in Reinkultur.',
+      beispiel: 'Beim Markgröninger Schäferlauf rennen die Schäfer barfuß.',
+      beispiel_hd: 'Beim Markgröninger Schäferlauf rennen die Schäfer barfuß.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'sw-136',
+      ausdruck: 'Stuttgarter Frühlingsfest',
+      hochdeutsch: 'Stuttgarter Frühlingsfest (Wasen)',
+      bedeutung: 'Das Stuttgarter Frühlingsfest ist die schwäbische Antwort auf das Münchner Frühlingsfest — drei Wochen im April/Mai auf dem Cannstatter Wasen. Mit Festzelten, Karussells und der traditionellen Eröffnung durch den Stuttgarter Oberbürgermeister. Kleiner als das Cannstatter Volksfest im Herbst, aber genauso fröhlich. Schwabens „Volksfest-Trilogie": Frühlingsfest, Volksfest, Weihnachtsmarkt — drei Höhepunkte des schwäbischen Festjahres. Lederhose ist optional.',
+      beispiel: 'Aufs Frühlingsfest gehe i mit\'r Familie — gemütlich!',
+      beispiel_hd: 'Aufs Frühlingsfest gehe ich mit der Familie — gemütlich!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-137',
+      ausdruck: 'Strohgäu',
+      hochdeutsch: 'Strohgäu (Landschaft bei Stuttgart)',
+      bedeutung: 'Das Strohgäu nordwestlich von Stuttgart ist eine fruchtbare Lösshügellandschaft — eine der besten Ackerböden Süddeutschlands. Der Name kommt vom „Stroh" — die Region war jahrhundertelang Getreidekammer Württembergs. Heute Mischung aus Landwirtschaft (Spargel, Mais), Weinbau und Wohngebieten für Stuttgarter Pendler. Im Heckengäu schließen sich die Heckenlandschaften an. Schwäbische Kulturlandschaft mit langer Agrartradition.',
+      beispiel: 'Im Strohgäu wachst der beschte Spargel.',
+      beispiel_hd: 'Im Strohgäu wächst der beste Spargel.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-138',
+      ausdruck: 'Filderstadt Detail',
+      hochdeutsch: 'Filderstadt (Pendlerstadt)',
+      bedeutung: 'Filderstadt südlich von Stuttgart entstand 1975 aus dem Zusammenschluss von fünf Filder-Gemeinden — heute mit 46.000 Einwohnern eine der wichtigsten Pendlerstädte im Stuttgarter Speckgürtel. Berühmt für das Filderkraut (Spitzkohl) — geschützte geografische Angabe. Auch der Stuttgarter Flughafen und die Messe Stuttgart liegen teilweise auf Filderstädter Gebiet. Typische schwäbische Suburbia — modern, sauber, gut organisiert. Wirtschaftlich erfolgreich, kulturell durchmischt.',
+      beispiel: 'Vieli Filderstädter schaffen in Stuttgart.',
+      beispiel_hd: 'Viele Filderstädter arbeiten in Stuttgart.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-139',
+      ausdruck: 'Sindelfingen',
+      hochdeutsch: 'Sindelfingen (Mercedes-Benz-Werkstadt)',
+      bedeutung: 'Sindelfingen südwestlich von Stuttgart ist mit 64.000 Einwohnern die wichtigste Mercedes-Benz-Produktionsstätte — über 35.000 Mitarbeiter im Werk. Hier werden S-Klasse, E-Klasse und CLS gebaut. Ohne Mercedes wäre Sindelfingen eine andere Stadt — die Mercedes-Identität prägt alles. Auch der Sindelfinger Stadtteil Maichingen ist Mercedes-Industriegebiet. Schwabens Auto-Stadt par excellence — wenn Mercedes hustet, friert Sindelfingen.',
+      beispiel: 'In Sindelfingen wird d\'S-Klasse gebaut.',
+      beispiel_hd: 'In Sindelfingen wird die S-Klasse gebaut.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-140',
+      ausdruck: 'Böblingen',
+      hochdeutsch: 'Böblingen (Hightech-Standort)',
+      bedeutung: 'Böblingen südlich von Stuttgart hat 51.000 Einwohner und ist Hightech-Hochburg — IBM-Standort (Europazentrale), Hewlett-Packard, Daimler-Forschung. Auch Hochschule für Wirtschaft und Umwelt Nürtingen-Geislingen hat hier Standorte. Zusammen mit Sindelfingen bildet Böblingen einen Doppelkomplex der schwäbischen Industrie. Trotz Modernität bewahrt Böblingen schwäbische Tradition — Fachwerkhäuser in der Altstadt, schwäbische Vereinskultur.',
+      beispiel: 'In Böblingen sin\'die ganzen Hightech-Firmen.',
+      beispiel_hd: 'In Böblingen sind die ganzen Hightech-Firmen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-141',
+      ausdruck: 'Calw',
+      hochdeutsch: 'Calw (Hermann Hesses Geburtsstadt)',
+      bedeutung: 'Calw im Nordschwarzwald ist eine 24.000-Einwohner-Stadt — vor allem berühmt als Geburtsstadt von Hermann Hesse (1877). Sein Geburtshaus und das Hermann-Hesse-Museum sind Wallfahrtsorte für Hesse-Verehrer aus aller Welt, vor allem aus Japan und Südkorea. Hesse beschrieb seine Heimatstadt in „Unterm Rad" und „Hermann Lauscher". Die Fachwerk-Altstadt am Nagold-Fluss ist eine der schönsten Schwabens. Schwäbisches Kulturerbe par excellence.',
+      beispiel: 'In Calw isch der Hermann Hesse geboren — sin se stolz drauf.',
+      beispiel_hd: 'In Calw ist Hermann Hesse geboren — sind sie stolz darauf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-142',
+      ausdruck: 'Reutlinger Marktplatz',
+      hochdeutsch: 'Reutlinger Marktplatz (Tübinger Tor)',
+      bedeutung: 'Der Reutlinger Marktplatz ist das Herz der Stadt — dominiert vom historischen Rathaus und dem Reutlinger Marienkirche-Turm (73 m). Hier findet der traditionelle Reutlinger Wochenmarkt statt. Das Tübinger Tor (1235 erstmals erwähnt) am Rande des Marktplatzes ist Wahrzeichen. Reutlingen hat seine mittelalterliche Stadtmauer teilweise erhalten — ein Highlight schwäbischer Stadtgeschichte. Der Marktplatz ist sozialer Treffpunkt der Reutlinger.',
+      beispiel: 'Am Reutlinger Marktplatz isch jeden Samstag Markt.',
+      beispiel_hd: 'Am Reutlinger Marktplatz ist jeden Samstag Markt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-143',
+      ausdruck: 'Käpsele',
+      hochdeutsch: 'Käpsele (cleverer Mensch)',
+      bedeutung: '„Du bisch a Käpsele!" ist im Schwäbischen ein liebevolles Kompliment — bezeichnet eine clevere, pfiffige Person. Das „Käpsele" leitet sich vom „Köpfchen" ab und beschreibt jemanden mit Verstand und Geschick. Schwäbische Tüftler-Tradition verkörpert: Käpsele sind die Erfinder, Bastler, Problemlöser. Auch ironisch verwendet: „Du bisch mir a Käpsele!" — wenn jemand glaubt, besonders schlau zu sein. Schwäbisches Sprichwort, das Anerkennung und Augenzwinkern verbindet.',
+      beispiel: 'Du bisch a Käpsele — wie haschd des gelöst?',
+      beispiel_hd: 'Du bist ein cleveres Köpfchen — wie hast du das gelöst?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-144',
+      ausdruck: 'Schwäbisches Sprichwort',
+      hochdeutsch: 'Schwäbische Lebensweisheiten',
+      bedeutung: 'Die schwäbischen Sprichwörter sind Lebensphilosophie in einem Satz: „Mer kennat ällas außer Hochdeutsch" (Können alles außer Hochdeutsch), „Schaffe, schaffe, Häusle baue" (Arbeiten und sparen), „Sparen ist die schwäbischste Tugend". Diese Redewendungen prägen die schwäbische Identität und werden in jedem Werbeslogan, in jedem Kabarett-Programm aufgegriffen. Sie sind nicht nur Stereotype, sondern verkörpern tatsächliche Werte: Fleiß, Sparsamkeit, Bodenständigkeit, Tüftlerei.',
+      beispiel: '„Mer kennat ällas außer Hochdeutsch" — schwäbische Hymne!',
+      beispiel_hd: '„Wir können alles außer Hochdeutsch" — schwäbische Hymne!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-145',
+      ausdruck: 'Dinkelacker',
+      hochdeutsch: 'Dinkelacker (Stuttgarter Privatbrauerei)',
+      bedeutung: 'Die Dinkelacker-Privatbrauerei in Stuttgart wurde 1888 von Carl Dinkelacker gegründet und ist neben dem Hofbräu die wichtigste Stuttgarter Brauerei. CD-Pils (Carl Dinkelacker-Pils) und Schwabenbräu sind die Hauptmarken. Im Vergleich zu den bayerischen Konzern-Brauereien blieb Dinkelacker familiengeführt und schwäbisch-bodenständig. Die rot-weiß-blauen Dinkelacker-Schirmen prägen schwäbische Biergärten. Schwäbisches Bier-Erbe in dritter Generation.',
+      beispiel: 'A CD-Pils im Biergarten — Stuttgarter Sommerabend.',
+      beispiel_hd: 'Ein CD-Pils im Biergarten — Stuttgarter Sommerabend.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-146',
+      ausdruck: 'Heuberg',
+      hochdeutsch: 'Heuberg (Schwäbische Hochfläche)',
+      bedeutung: 'Der Heuberg ist die höchste Hochfläche der Schwäbischen Alb — über 1.000 Meter hoch, im Süden des Schwäbischen Alb-Massivs zwischen Tuttlingen und Albstadt. Karge Kalksteinlandschaft mit Wacholderheiden, Schafzucht und dem härtesten Klima Württembergs. „Heuberger" sind sprichwörtlich zäh und schweigsam. Die Wallfahrtsstätte Heiligenkreuztal und das Kloster Beuron prägen das Bild. Schwäbische Alb in ihrer rauhsten Form.',
+      beispiel: 'Auf\'m Heuberg pfeift\'s manchmal saustark.',
+      beispiel_hd: 'Auf dem Heuberg pfeift der Wind manchmal saustark.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-147',
+      ausdruck: 'Maultaschensuppe',
+      hochdeutsch: 'Maultaschen in der Brühe',
+      bedeutung: 'Die klassische schwäbische Servierform der Maultaschen: in einer kräftigen Rinder- oder Hühnerbrühe schwimmend, mit Schnittlauch bestreut. „Maultaschen in der Brüh" ist die ursprüngliche Form — gefüllt mit Brät, Spinat und Brötchenwürfeln, in der Brühe gegart. Im Sommer auch geröstet mit Zwiebeln serviert. Hausgemachte Maultaschen sind Familienritual — die Maultaschenherstellung wird über Generationen weitergegeben. Schwäbisches Soulfood par excellence.',
+      beispiel: 'Maultäscha in d\'Brüh — kein Mensch lehnt des ab!',
+      beispiel_hd: 'Maultaschen in der Brühe — kein Mensch lehnt das ab!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-148',
+      ausdruck: 'Sieben Schwaben',
+      hochdeutsch: 'Sieben Schwaben (Märchen-Figuren)',
+      bedeutung: 'Die „Sieben Schwaben" sind die berühmten Märchen-Figuren der Brüder Grimm — sieben tölpelhaft-mutige Schwaben, die mit einem langen Spieß bewaffnet auf Abenteuer ziehen. Allerlei (der Anführer), Seehasle, Nesselheinz, Geli, Marli, Veitli und Jockli. Das Märchen verspottet die schwäbische Sparsamkeit und Vorsicht. Heute Identifikationsfigur — vom „Schwabenstreich" bis zum „Sieben Schwaben"-Cocktail. Schwäbische Selbstironie auf höchstem Niveau.',
+      beispiel: 'D\'Sieben Schwaben sin\'in jedem Schwabenkind ein Begriff.',
+      beispiel_hd: 'Die Sieben Schwaben sind in jedem Schwabenkind ein Begriff.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-149',
+      ausdruck: 'Esslinger Weihnachtsmarkt',
+      hochdeutsch: 'Esslinger Mittelaltermarkt',
+      bedeutung: 'Der Esslinger Mittelaltermarkt zur Adventszeit ist Schwabens einzigartiger Weihnachtsmarkt — auf zwei Plätzen findet ein authentischer Mittelaltermarkt mit Schaustellern in historischer Kleidung statt. Gleichzeitig der klassische Weihnachtsmarkt mit Glühwein, Maronen, Stollen. Die Kombination macht den Markt deutschlandweit einzigartig. Ritter, Gaukler, Schwertkämpfer und Pestmusiker prägen die Atmosphäre. Über 700.000 Besucher pro Saison. Schwäbisches Advents-Highlight.',
+      beispiel: 'In Esslinga isch der schönste Weihnachtsmarkt von Schwoaba.',
+      beispiel_hd: 'In Esslingen ist der schönste Weihnachtsmarkt von Schwaben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-150',
+      ausdruck: 'Schwobaland',
+      hochdeutsch: 'Schwabenland (Heimatbezeichnung)',
+      bedeutung: 'Das „Schwobaland" ist die liebevoll-stolze Bezeichnung der Schwaben für ihre Heimat — Württemberg, Baden-Württemberg und das bayerische Schwaben. Die Schwaben pflegen ein starkes Heimatgefühl und sehen ihr Land als wirtschaftlich erfolgreich, kulturell reich und landschaftlich schön. „Mir sin\'em Schwobaland verwurzelt" — wir sind im Schwabenland verwurzelt — ist ein typischer schwäbischer Satz. Trotz Globalisierung und Zuwanderung bleibt schwäbische Identität lebendig. Heimat ist im Schwabenland mehr als nur Geographie.',
+      beispiel: 'S\'Schwobaland isch und bleibt mei Heimat.',
+      beispiel_hd: 'Das Schwabenland ist und bleibt meine Heimat.',
+      kategorie: 'orte'
     }
   ]
 };
