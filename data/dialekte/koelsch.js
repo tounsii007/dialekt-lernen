@@ -1550,6 +1550,276 @@ export default {
       beispiel: 'Drink doch ene mit — Bläck Fööss-Hymne der Solidarität.',
       beispiel_hd: 'Trink doch einen mit — Bläck Fööss-Hymne der Solidarität.',
       kategorie: 'musik'
+    },
+    {
+      id: 'k-176',
+      ausdruck: 'Krätzche',
+      hochdeutsch: 'Kleines Liedchen / Spottlied',
+      bedeutung: 'Ein „Krätzche" ist im Kölschen ein kleines, oft spöttisches Lied — meist in karnevalistischem Kontext gesungen. Die „Krätzcher-Sänger" treten in Sitzungen auf und nehmen mit kurzen Liedern aktuelle Themen aufs Korn. Bekannte Krätzcher-Sänger sind Willibert Pauels, Bernd Stelter. Die Tradition geht ins 19. Jahrhundert zurück — die Krätzcher sind kölsche Mini-Kabarett-Stücke mit Pointe.',
+      beispiel: 'Der Bernd Stelter singt herrliche Krätzcher in der Sitzung.',
+      beispiel_hd: 'Der Bernd Stelter singt herrliche Liedchen in der Sitzung.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-177',
+      ausdruck: 'Höös',
+      hochdeutsch: 'Hose',
+      bedeutung: '„Höös" ist die kölsche Form von „Hose" — mit dem typisch ripuarischen Wegfall des End-„e" und dem gedehnten „ö". „Zieh dich Höös an!" ist eine alltägliche Aufforderung. Auch in Komposita: „Lederhöös", „Knieböös". Der weiche Klang ist charakteristisch für das Kölsche, das insgesamt durch seine melodische, fast singende Aussprache auffällt. Ein echter Kölner Klang.',
+      beispiel: 'Wo es ming neue Höös?',
+      beispiel_hd: 'Wo ist meine neue Hose?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-178',
+      ausdruck: 'Müsje',
+      hochdeutsch: 'Mädchen / Junge Frau',
+      bedeutung: 'Ein „Müsje" ist im Kölschen ein junges Mädchen — die Verkleinerung mit „-je" ist typisch kölsch (während Wiener „-erl" und Schwaben „-le" sagen). „Süßes Müsje" ist ein nettes Mädchen. Auch in Wendungen: „Drei Müsjer" sind drei junge Frauen. Der Klang ist verspielt und kindlich-warm. Im Karneval werden viele „Müsjer" und „Junge" besungen — die kölsche Wertschätzung für die Jugend.',
+      beispiel: 'Schau ma das süße Müsje da drüben!',
+      beispiel_hd: 'Schau mal das süße Mädchen da drüben!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-179',
+      ausdruck: 'Et kütt wie et kütt',
+      hochdeutsch: 'Es kommt wie es kommt',
+      bedeutung: '„Et kütt wie et kütt" ist das dritte der berühmten „Kölschen Grundgesetze" — neben „Et es wie et es" und „Et hätt noch immer jot jejange". Die Wendung drückt die fatalistische, aber gelassene Lebenshaltung der Kölner aus: was passiert, passiert — keinen Grund zum Aufregen. Sie ist eine Lebensphilosophie, die mit dem Karneval, der Lebensfreude und der Toleranz der Stadt zusammenhängt. „Pragmatisch heiter."',
+      beispiel: 'Mach dir kei Kopp — et kütt wie et kütt.',
+      beispiel_hd: 'Mach dir keine Sorgen — es kommt wie es kommt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-180',
+      ausdruck: 'Möhn',
+      hochdeutsch: 'Tante / Ältere Frau',
+      bedeutung: 'Eine „Möhn" ist im Kölschen eine Tante oder eine ältere Frau — meist liebevoll-respektvoll gemeint. „Tant Möhn" ist die geliebte Tante. Auch in Komposita: „Möhneabend" ist der Frauen-Weiberfastnachts-Abend. Der Begriff hat eine warme, familiäre Note und gehört zur kölschen Familienkultur. Vom altdeutschen „mohne" für Mutter/Mutterschwester abgeleitet.',
+      beispiel: 'Heut komm ming Möhn zo Besuch.',
+      beispiel_hd: 'Heute kommt meine Tante zu Besuch.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-181',
+      ausdruck: 'Knies',
+      hochdeutsch: 'Schmutz / Dreck',
+      bedeutung: '„Knies" ist im Kölschen Schmutz, Dreck oder allgemein „unangenehmes Zeug". „Op de Stroß litt vill Knies" (Auf der Straße liegt viel Dreck). Auch übertragen: „Mach kei Knies!" (Stell dich nicht so an). Das Wort kommt aus dem Niederrheinischen und ist eng mit der Vorstellung von etwas Klebrigem, Unangenehmem verbunden. Eine drastische, lebendige Wortprägung.',
+      beispiel: 'Beim Karneval litt am nächste Morje vill Knies op de Stroß.',
+      beispiel_hd: 'Beim Karneval liegt am nächsten Morgen viel Dreck auf der Straße.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-182',
+      ausdruck: 'Hött dr Schnüss',
+      hochdeutsch: 'Halt den Mund / Sei still',
+      bedeutung: '„Hött dr Schnüss!" ist die kölsche, eher derbe Aufforderung zu schweigen — „Schnüss" ist das Maul, der Mund. „Hött" ist die kölsche Form von „halt". Nicht freundlich gemeint, aber im kölschen Tonfall klingt es noch immer weicher als die hochdeutsche Variante. Bei Streit zwischen Geschwistern oder im Karneval bei nervigen Bekannten zu hören. Der kölsche Schmäh erlaubt solche Direktheit.',
+      beispiel: 'Hött jetz endlich dr Schnüss, mer wille schlofe!',
+      beispiel_hd: 'Halt jetzt endlich den Mund, wir wollen schlafen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-183',
+      ausdruck: 'Söckelche',
+      hochdeutsch: 'Söckchen',
+      bedeutung: '„Söckelche" ist die kölsche Verkleinerungsform von „Socke" — Söckchen. Die kölsche Verkleinerung mit „-elche" ist sehr charmant und macht aus jedem Wort etwas Liebes. „Wo sin minge Söckelche?" Auch in der Karnevalsmode beliebt: „Bunte Söckelche" gehören zum Kostüm. Die rheinische Kultur der zärtlichen Verkleinerung zeigt sich in solchen Wörtern besonders schön.',
+      beispiel: 'Mama, wo sin ming neue Söckelche?',
+      beispiel_hd: 'Mama, wo sind meine neuen Söckchen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-184',
+      ausdruck: 'Quetschebüggel',
+      hochdeutsch: 'Akkordeon / Quetschkommode',
+      bedeutung: 'Der „Quetschebüggel" ist im Kölschen das Akkordeon — wortwörtlich „Quetsch-Beutel". Die humorvolle Bezeichnung beschreibt das Instrument anschaulich: ein Beutel zum Quetschen. In der kölschen Volksmusik unverzichtbar — von Klassikern wie Willi Ostermann bis modernen Karnevalsbands. Der Quetschebüggel begleitet jeden echten Karnevalsmarsch und gibt der Musik ihre charakteristische Note.',
+      beispiel: 'De Quetschebüggel spillt em Karneval an jedem Eck.',
+      beispiel_hd: 'Das Akkordeon spielt im Karneval an jeder Ecke.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-185',
+      ausdruck: 'Pingelich',
+      hochdeutsch: 'Pingelig / Pedantisch',
+      bedeutung: '„Pingelich" beschreibt im Kölschen einen übertrieben genauen, pedantischen Menschen — einer, der jedes Detail beachtet und nicht locker lassen kann. „Sei net so pingelich!" Im Karneval und in der kölschen Mentalität wird Pingeligkeit eher belächelt — die Kölner sind grundsätzlich lockerer und schauen mehr aufs Wesentliche. Das Wort kommt aus dem Niederländischen und hat im Rheinland Heimat gefunden.',
+      beispiel: 'Mer Kölner sin net so pingelich.',
+      beispiel_hd: 'Wir Kölner sind nicht so pedantisch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-186',
+      ausdruck: 'Bützcher',
+      hochdeutsch: 'Küsschen (mehrere)',
+      bedeutung: '„Bützcher" sind die Mehrzahl von „Bützje" — die kölschen Karnevalsküsschen, die in der närrischen Zeit jeden überall an die Wangen oder den Mund gedrückt werden. „Bützcher verdeile" ist eine kölsche Karnevalstradition. Anders als beim erotischen Kuss sind Bützcher harmlos und sozial — Ausdruck der allgemeinen Karnevals-Freundlichkeit. „Bützcher-Gefahr" ist die scherzhafte Warnung vor übermäßigen Karnevals-Küssen.',
+      beispiel: 'Em Karneval kreije mer all vill Bützcher!',
+      beispiel_hd: 'Im Karneval bekommen wir alle viele Küsschen!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-187',
+      ausdruck: 'Pittermännchen',
+      hochdeutsch: 'Kleines Fass (10-Liter-Kölsch-Fass)',
+      bedeutung: 'Das „Pittermännchen" ist ein kleines 10-Liter-Kölsch-Fass — typisch für Hausparties oder kleine Feiern. Größere Fässer heißen „Pitter" (50 Liter). Der Name kommt von „Peter" (Pittermännchen = kleiner Peter), möglicherweise nach einem berühmten Brauer. In Kölner Hauspartys ist das Pittermännchen ein zentrales Element — wer das Pittermännchen anzapft, ist Gastgeber.',
+      beispiel: 'Zo unserer Party hammer e Pittermännchen jezapt.',
+      beispiel_hd: 'Zu unserer Party haben wir ein 10-Liter-Kölsch-Fass angezapft.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-188',
+      ausdruck: 'Kütt nix',
+      hochdeutsch: 'Kommt nichts / Macht nichts',
+      bedeutung: '„Kütt nix" oder „Macht nix" ist die kölsche Antwort auf Entschuldigungen oder kleine Pannen — „Macht nichts", „Kein Problem". Eine entspannte, kölsche Reaktion, die Konflikte glättet. „Sorry, ich hab dich angerempelt!" — „Ach, kütt nix!" Die Grundhaltung dahinter: nicht jede Kleinigkeit muss zum Drama werden. Eine sehr kölsche Lebensphilosophie.',
+      beispiel: 'Et tut mer leid! — Ach, kütt nix!',
+      beispiel_hd: 'Es tut mir leid! — Ach, macht nichts!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-189',
+      ausdruck: 'Kappes',
+      hochdeutsch: 'Kohl / Weißkohl',
+      bedeutung: '„Kappes" ist im Kölschen und Rheinischen das Wort für Kohl, besonders Weißkohl. Vom lateinischen „caput" (Kopf), wegen der runden Form. Wichtige Zutat in der rheinischen Küche: Sauerkraut, Krautwickel, Kohlsuppe. Auch übertragen: „Kappes redn" bedeutet „Quatsch reden", „Unsinn erzählen". Die Bedeutung „dummes Zeug" stammt vermutlich aus der Beobachtung, dass auch Köpfe rund sein können.',
+      beispiel: 'Op Kappes han ich keine Lust — koch wat anderes!',
+      beispiel_hd: 'Auf Kohl habe ich keine Lust — koch was anderes!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-190',
+      ausdruck: 'Bläck Pinsche',
+      hochdeutsch: 'Nackter Hintern',
+      bedeutung: '„Bläck Pinsche" oder „Bläck Föttche" bezeichnet im Kölschen den nackten Hintern — etwa beim Karneval, wenn manche Narren ihre nackten Hinterteile zeigen. „Bläck" bedeutet „nackt" (vgl. Bläck Fööss = nackte Füße, die berühmte Kölner Band). Das Stippeföttche-Tänzchen verspottet diese Tradition humorvoll. Eine wesentliche Komponente des derben kölschen Karnevalshumors.',
+      beispiel: 'De Junge han ehre Bläck Pinsche jezeijt.',
+      beispiel_hd: 'Die Jungs haben ihre nackten Hinterteile gezeigt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-191',
+      ausdruck: 'Klüngeln',
+      hochdeutsch: 'Klüngeln / Vetternwirtschaft',
+      bedeutung: '„Klüngeln" ist im Kölschen der Vorgang des „Beziehungs-Pflegens" — auch bekannt als Vetternwirtschaft, Vitamin B oder gefällige Hilfe unter Kölnern. „Kölscher Klüngel" ist sprichwörtlich: man kennt sich, man hilft sich. „Häste schon mit dem geklüngelt?" Die Bedeutung schwankt zwischen freundschaftlicher Vermittlung und problematischer Korruption — beides ist im rheinischen Klüngel-System angelegt.',
+      beispiel: 'Ohne en bisschen Klüngel jeit hier nix.',
+      beispiel_hd: 'Ohne ein bisschen Vitamin B geht hier nichts.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-192',
+      ausdruck: 'Hetz',
+      hochdeutsch: 'Spaß / Vergnügen',
+      bedeutung: '„Hetz" ist im Kölschen Spaß oder Vergnügen — „Hammer Hetz!" (Haben wir Spaß!) oder „Et war e Hetz!" (Es war ein Spaß!). Im Karneval ein zentraler Begriff: ohne Hetz kein Karneval. Die kölsche Lebensfreude ist auf Hetz programmiert. Auch in zusammengesetzten Wörtern: „Karnevals-Hetz", „Hetz mache" (Spaß machen). Eine echte kölsche Lebenshaltung.',
+      beispiel: 'Em Karneval hammer ne mahre Hetz!',
+      beispiel_hd: 'Im Karneval haben wir einen mächtigen Spaß!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-193',
+      ausdruck: 'Quatschkopp',
+      hochdeutsch: 'Schwätzer / Plappermaul',
+      bedeutung: 'Ein „Quatschkopp" ist im Kölschen ein Schwätzer oder Plappermaul — einer, der unaufhörlich redet, oft ohne Inhalt. „Sei kei Quatschkopp!" Der Begriff ist eher freundlich-spöttisch als wirklich böse. Im Karneval gibt es viele Quatschköpp, die das Publikum unterhalten — die Büttenrede ist eine Form des wertgeschätzten Quatschens. Eine kölsche Wertschätzung für das gepflegte Reden.',
+      beispiel: 'Dr Heiner es e mahre Quatschkopp — der hört nie op!',
+      beispiel_hd: 'Der Heiner ist ein richtiger Schwätzer — der hört nie auf!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-194',
+      ausdruck: 'Pingsterochse',
+      hochdeutsch: 'Pfingstochse / Übergeschmückt',
+      bedeutung: 'Der „Pingsterochse" war im rheinischen Brauchtum der mit Blumen geschmückte Ochse, der zu Pfingsten durch die Dörfer geführt wurde. „Ujeschminkt wie e Pingsterochse" bedeutet übertrieben aufgetakelt, übergeschmückt — meistens auf modisch zu auffällige Frauen bezogen. Die Wendung lebt heute noch sprichwörtlich weiter, auch wenn die alte Tradition selbst weitgehend verschwunden ist.',
+      beispiel: 'Wer hat dich denn opgepuzt wie en Pingsterochse?',
+      beispiel_hd: 'Wer hat dich denn aufgemacht wie einen Pfingstochsen?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-195',
+      ausdruck: 'Plärre',
+      hochdeutsch: 'Weinen / Heulen',
+      bedeutung: '„Plärre" ist im Kölschen das Weinen — meist lautstark oder anhaltend. „Hör op zo plärre!" sagt man einem weinenden Kind. Auch substantivisch: „a richtige Plärre" ist ein heftiger Weinkrampf. Der Klang des Wortes selbst erinnert an das Geräusch des Weinens. Im Karneval auch übertragen: „Plärre-Gesang" für laute, schlechte Musik. Eine lebendige Lautmalerei.',
+      beispiel: 'Hör op zo plärre, et es doch nix passiert!',
+      beispiel_hd: 'Hör auf zu weinen, es ist doch nichts passiert!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-196',
+      ausdruck: 'Bauerei',
+      hochdeutsch: 'Schweinerei / Riesensauerei',
+      bedeutung: 'Eine „Bauerei" ist im Kölschen eine Schweinerei, eine Riesensauerei — entweder buchstäblich (Schmutz) oder übertragen (eine üble Sache, ein Skandal). „Wat e Bauerei!" Auch im Sinne von „eine miese Aktion". Klingt zwar nach „Bauer", hat aber wenig mit der Landwirtschaft zu tun — eher mit etwas Niedrigem, Unaufgeräumtem. Eine drastische kölsche Verurteilung.',
+      beispiel: 'Em Kinderzimmer es widder e Bauerei!',
+      beispiel_hd: 'Im Kinderzimmer ist wieder eine Schweinerei!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-197',
+      ausdruck: 'Schmuh',
+      hochdeutsch: 'Betrug / Schummelei',
+      bedeutung: '„Schmuh" ist im Kölschen Betrug, Schummelei oder allgemein unsaubere Geschäfte — „Mach kei Schmuh!" (Mach keine krummen Sachen). Vom jiddischen „schmu" abgeleitet. Auch milder gebraucht: „a bisschen Schmuh" ist eine kleine Mogelei, kein wirklicher Betrug. Der Klang ist warnend, aber nicht hochdramatisch. Eine ehrliche kölsche Direktheit beim Benennen von Unrecht.',
+      beispiel: 'Bei deine Steuererklärung mach kei Schmuh!',
+      beispiel_hd: 'Bei deiner Steuererklärung mach keinen Betrug!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-198',
+      ausdruck: 'Mainzelmännchen',
+      hochdeutsch: 'Kleine Zwerge / Heinzelmännchen',
+      bedeutung: 'Eigentlich sind die Heinzelmännchen die kölschen Zwerge, die nachts heimlich allerlei Arbeiten erledigten — bis sie vom Schneider gestört wurden und verschwanden. Die berühmte Heinzelmännchen-Skulptur am Heinzelmännchen-Brunnen ist eines der bekanntesten Kölner Wahrzeichen. „Bei uns waren ja wohl die Heinzelmännchen!" sagt man, wenn etwas unerwartet erledigt ist. Eine kölsche Wundervorstellung mit kulturellem Stellenwert.',
+      beispiel: 'Bei uns wäre wohl die Heinzelmännchen — die Wohnung es plötzlich sauber!',
+      beispiel_hd: 'Bei uns waren wohl die Heinzelmännchen — die Wohnung ist plötzlich sauber!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-199',
+      ausdruck: 'Karnevalsverein',
+      hochdeutsch: 'Karnevalsverein',
+      bedeutung: 'Der Karnevalsverein ist im kölschen Karneval die organisatorische Basis — über 100 Karnevalsvereine in Köln tragen den Karneval, von den Roten Funken (gegründet 1823, ältester Verein) bis zu den unzähligen kleinen Veedels-Vereinen. Jeder Verein hat eigene Traditionen, Lieder, Trachten. Die Vereinsmitgliedschaft ist eine lebenslange Verpflichtung — „einmal Funke, immer Funke". Soziale Säule der Stadt.',
+      beispiel: 'Min Vatter es schon 40 Johr im Karnevalsverein!',
+      beispiel_hd: 'Mein Vater ist schon 40 Jahre im Karnevalsverein!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-200',
+      ausdruck: 'Et es wie et es',
+      hochdeutsch: 'Es ist wie es ist',
+      bedeutung: '„Et es wie et es" ist das erste der berühmten „Kölschen Grundgesetze" — die Lebensphilosophie der Kölner: Akzeptiere die Realität, mach das Beste daraus, beklage dich nicht über das Unabänderliche. Verbunden mit „Et kütt wie et kütt" und „Et hätt noch immer jot jejange" bildet es die Trinität kölscher Gelassenheit. Diese pragmatische, optimistische Weltsicht macht den kölschen Charakter aus — und sie wird in Tassen, Kissen, Postkarten weltweit verkauft.',
+      beispiel: 'Et es wie et es — mer mache et Beste draus.',
+      beispiel_hd: 'Es ist wie es ist — wir machen das Beste daraus.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-201',
+      ausdruck: 'Mostert',
+      hochdeutsch: 'Senf',
+      bedeutung: 'Der „Mostert" ist im Kölschen der Senf — verwandt mit dem niederländischen „mosterd". Wird zum „Halve Hahn" (Käseroggenbrötchen) und zur Mettwurst serviert. Im Brauhaus steht der „Mostertpott" (Senftopf) immer am Tisch bereit. Die kölsche Senftradition reicht bis ins Mittelalter zurück — Köln war eine wichtige Handelsstadt für Gewürze. Im Brauhaus an jedem Tisch ein Muss.',
+      beispiel: 'Mer brauche noch Mostert zum Halve Hahn!',
+      beispiel_hd: 'Wir brauchen noch Senf zum Halve Hahn!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-202',
+      ausdruck: 'Schunkelliedche',
+      hochdeutsch: 'Schunkellied',
+      bedeutung: 'Ein „Schunkelliedche" ist ein Karnevalslied im langsamen Walzer-Rhythmus, bei dem die Menschen Arm in Arm im Saal hin und her schunkeln. Klassiker wie „Op de Aach" oder „Et Spanien-Lied" sind Schunkelliedcher. Die Verkleinerung „-liedche" gibt der Bezeichnung einen warmen, gemütlichen Klang. Schunkelliedcher sind das Herzstück der Karnevalssitzung — alle vereint im Schunkeln.',
+      beispiel: 'Jetz spille mer e Schunkelliedche!',
+      beispiel_hd: 'Jetzt spielen wir ein Schunkellied!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-203',
+      ausdruck: 'Wenn et Trömmelche jeit',
+      hochdeutsch: 'Wenn das Trommelchen geht (Karnevalshymne)',
+      bedeutung: '„Wenn et Trömmelche jeit" ist einer der bekanntesten Karnevalsklassiker — gespielt und gesungen seit Generationen. Das Trömmelche steht für den Beginn des Karnevalsumzugs: wenn die Trommeln einsetzen, beginnt der Marsch. Die Hymne wird in jedem Karnevalssaal gespielt. Verbindet die Generationen — Großeltern, Eltern, Enkel singen denselben Text. Symbol der kölschen Kontinuität durch die Generationen hindurch.',
+      beispiel: 'Wenn et Trömmelche jeit, fängt der Karneval ahn!',
+      beispiel_hd: 'Wenn das Trommelchen geht, fängt der Karneval an!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-204',
+      ausdruck: 'Kalauer',
+      hochdeutsch: 'Wortspiel / Flacher Witz',
+      bedeutung: 'Ein „Kalauer" ist im Kölschen wie im Hochdeutschen ein billiges Wortspiel oder ein flacher Witz mit doppelter Bedeutung. Der Begriff kommt von der Stadt Calau, deren Bewohner für solche Wortspiele berüchtigt waren. In der kölschen Büttenrede sind Kalauer ein wichtiges Stilmittel — manche Redner sind wahre Kalauer-Meister. Auch im Karneval beliebt: ein guter Kalauer wird mit „Kamelle!" belohnt.',
+      beispiel: 'Dr Bernd Stelter macht die besten Kalauer im Karneval.',
+      beispiel_hd: 'Der Bernd Stelter macht die besten Wortspiele im Karneval.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-205',
+      ausdruck: 'Geföhl für et Veedel',
+      hochdeutsch: 'Gefühl für das Viertel (Heimatverbundenheit)',
+      bedeutung: '„Geföhl für et Veedel" ist die kölsche Verbundenheit mit dem eigenen Stadtviertel (Veedel). Jeder Kölner ist nicht nur Kölner, sondern auch Ehrenfelder, Nippeser, Mülheimer, Deutzer — und identifiziert sich stark mit seinem Veedel. Die Veedels-Identität wird beim Karneval durch die „Schull- un Veedelszöch" gefeiert. „Veedels-Patriotismus" geht oft tiefer als allgemeiner Kölner Lokalstolz. Eine ganz besondere kölsche Lebensauffassung.',
+      beispiel: 'In Kölle hat jeder seine Liebe für sein Veedel.',
+      beispiel_hd: 'In Köln hat jeder seine Liebe für sein Viertel.',
+      kategorie: 'orte'
     }
   ]
 };
