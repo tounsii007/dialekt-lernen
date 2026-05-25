@@ -1117,6 +1117,231 @@ export default {
       beispiel: 'Mer redet ja Hessisch, weil mer net anders kann.',
       beispiel_hd: 'Wir reden ja Hessisch, weil wir nicht anders können.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'h-126',
+      ausdruck: 'Bad Homburg',
+      hochdeutsch: 'Bad Homburg vor der Höhe',
+      bedeutung: 'Bad Homburg im Taunus ist eine Kurstadt vor den Toren Frankfurts — bekannt für die Spielbank Bad Homburg, eine der ältesten Casinos Deutschlands (gegründet 1841). Dostojewski verspielte hier sein Vermögen. Die Stadt mit dem Schloss und dem Kurpark gilt als wohlhabend — viele Frankfurter Banker und Top-Manager wohnen hier. Der „Bad Homburger Hut" ist eine berühmte Hutform aus dieser Stadt.',
+      beispiel: 'In Bad Homburg wohnen die reichen Frankfurter.',
+      beispiel_hd: 'In Bad Homburg wohnen die reichen Frankfurter.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-127',
+      ausdruck: 'Limes',
+      hochdeutsch: 'Obergermanisch-Raetischer Limes (UNESCO)',
+      bedeutung: 'Der Obergermanisch-Raetische Limes ist die ehemalige Grenze des Römischen Reiches — verläuft 550 km durch Hessen, Baden-Württemberg und Bayern. UNESCO-Welterbe seit 2005. In Hessen liegen Saalburg (vollständig rekonstruiertes Römerkastell im Taunus), Feldberg-Kastell und der bekannte Limeswanderweg. Wer den Limes erwandert, lernt römische Geschichte hautnah kennen.',
+      beispiel: 'Auf der Saalburg sin no römische Mauern zu sehe.',
+      beispiel_hd: 'Auf der Saalburg sind noch römische Mauern zu sehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-128',
+      ausdruck: 'Saalburg',
+      hochdeutsch: 'Saalburg (rekonstruiertes Römerkastell)',
+      bedeutung: 'Die Saalburg im Taunus ist Deutschlands berühmtestes rekonstruiertes Römerkastell — Kaiser Wilhelm II. ließ es Ende des 19. Jahrhunderts originalgetreu wieder aufbauen. Heute Museum mit über 100.000 Besuchern jährlich. UNESCO-Welterbe als Teil des Limes. Schulklassen pilgern hierher — die Saalburg vermittelt römisches Lager-Leben authentisch. Mit Wallanlagen, Wachturm, römischen Ausstellungsstücken.',
+      beispiel: 'Mit der Klasse auf der Saalburg — Schulausflug-Klassiker.',
+      beispiel_hd: 'Mit der Klasse auf der Saalburg — Schulausflug-Klassiker.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-129',
+      ausdruck: 'Marburg',
+      hochdeutsch: 'Marburg (Universitätsstadt)',
+      bedeutung: 'Marburg an der Lahn ist eine der ältesten Universitätsstädte Deutschlands — die Philipps-Universität wurde 1527 als erste protestantische Universität gegründet. Die Brüder Grimm studierten hier Jura. Marburg liegt auf einem steilen Berghang — die Elisabethkirche (älteste rein gotische Kirche Deutschlands), das Marburger Schloss und das Schloss Wallenburg prägen das Stadtbild. Studenten machen 25% der Stadtbevölkerung aus.',
+      beispiel: 'In Marburg studiert man umgeben von Geschichte.',
+      beispiel_hd: 'In Marburg studiert man umgeben von Geschichte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-130',
+      ausdruck: 'Heinrich Heine',
+      hochdeutsch: 'Heinrich Heine (Dichter aus Düsseldorf, Frankfurt-Bezug)',
+      bedeutung: 'Heinrich Heine (1797-1856) — eigentlich Düsseldorfer — verbrachte prägende Jahre in Frankfurt am Main. Er lernte hier den jungen Goethe nicht direkt kennen, aber die Bankerstadt prägte seine Sicht auf das Bürgertum. Sein „Loreley" (1822) ist Weltkulturgut. Die Hessen claimen ihn für die Buchmesse-Mitarbeit und die kurze Frankfurter Episode. Hessen verbindet Banker- und Buchmenschen-Kultur.',
+      beispiel: 'Heines „Ich weiß nicht, was soll es bedeuten" — Loreley-Klassiker.',
+      beispiel_hd: 'Heines „Ich weiß nicht, was soll es bedeuten" — Loreley-Klassiker.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-131',
+      ausdruck: 'Friedrich Stoltze',
+      hochdeutsch: 'Friedrich Stoltze (hessischer Mundartdichter)',
+      bedeutung: 'Friedrich Stoltze (1816-1891) war Frankfurts berühmtester Mundartdichter — sein hessischer Witz und sein Sinn für Lokalkolorit machten ihn zur Frankfurter Legende. Sein Werk „Die Frankfurter Bibel" parodiert die Bibel ins Hessische. Die Stoltze-Stiftung pflegt sein Erbe. Auf seinem Grab im Frankfurter Hauptfriedhof versammeln sich noch heute Hessen-Liebhaber. Stoltze-Sätze sind in Frankfurt allgegenwärtig.',
+      beispiel: 'Stoltze hat dem Frankfurter Hessisch sein Profil gegeben.',
+      beispiel_hd: 'Stoltze hat dem Frankfurter Hessisch sein Profil gegeben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-132',
+      ausdruck: 'Battonn',
+      hochdeutsch: 'Battonn (Frankfurter Spitzname Stadtwappen)',
+      bedeutung: '„Battonn" bezieht sich auf den Frankfurter Stadtteil Bornheim und seine Bewohner — eine wienerisch-anmutende Verkleinerungsform mit „-onn"-Endung. Auch ein liebevoller Begriff für jemand aus Frankfurt-Bornheim. „En echte Battonn" ist jemand mit echter Bornheimer Mentalität — humorvoll, eckenkantig, herzlich. Der Begriff wird heute selten verwendet — Insider-Wissen für Frankfurter Originale.',
+      beispiel: 'Der ist en echte Battonn — Bornheimer durch und durch.',
+      beispiel_hd: 'Der ist ein echter Bornheimer — Bornheimer durch und durch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-133',
+      ausdruck: 'Ebbelwoi-Express',
+      hochdeutsch: 'Apfelwein-Straßenbahn (Touristenstraßenbahn)',
+      bedeutung: 'Der „Ebbelwoi-Express" ist Frankfurts Touristenattraktion: eine historische Straßenbahn-Garnitur, in der Apfelwein und Brezeln serviert werden während einer 70-minütigen Rundfahrt durch die Stadt. Eine Erfindung der Frankfurter Verkehrs Gesellschaft (VGF). Im Sommer pilgern Touristen und Hessen aus dem Umland zum Ebbelwoi-Express. Hessisches Kulturerbe auf Schienen.',
+      beispiel: 'Der Ebbelwoi-Express isch hessischer Tourismus pur.',
+      beispiel_hd: 'Der Ebbelwoi-Express ist hessischer Tourismus pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-134',
+      ausdruck: 'Heinz Schenk',
+      hochdeutsch: 'Heinz Schenk (Hessischer Volksschauspieler)',
+      bedeutung: 'Heinz Schenk (1924-2014) war einer der bekanntesten hessischen Volksschauspieler — durch die TV-Sendung „Zum Blauen Bock" (1957-1987) wurde er einem Millionenpublikum bekannt. „Et hat noch immer gut gegange" war sein Markenzeichen. Mit Schoppen-Gerippten in der Hand verkörperte er hessische Lebensart. Bis heute Erinnerungs-Ikone für ältere Hessen.',
+      beispiel: 'Heinz Schenk un sei Bembel — hessische Wohnzimmer-Legende.',
+      beispiel_hd: 'Heinz Schenk und sein Bembel — hessische Wohnzimmer-Legende.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-135',
+      ausdruck: 'Bei uns dahem',
+      hochdeutsch: 'TV-Serie aus Hessen',
+      bedeutung: 'Die TV-Comedy-Serie „Bei uns dahem" (HR) zeigt hessisches Familienleben in karikiert-realistischer Form — Generationen-Konflikte, Apfelweinkultur und Frankfurt-Alltag. Mit hessischem Dialekt und Augenzwinkern. Kult bei Hessen, weniger bekannt außerhalb. Solche Mundart-Comedies sind Kennzeichen hessischer TV-Kultur — der hr produziert sie liebevoll.',
+      beispiel: '„Bei uns dahem" wird mer all jeden Sonntag geguckt.',
+      beispiel_hd: '„Bei uns dahem" wird man jeden Sonntag geschaut.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-136',
+      ausdruck: 'Battenberg',
+      hochdeutsch: 'Battenberg (hessische Adelsfamilie)',
+      bedeutung: 'Die Battenbergs waren eine hessische Adelsfamilie, die später ins britische Königshaus einheiratete — sie wurden zu den Mountbattens. Prinz Philip, Ehemann von Queen Elizabeth II., gehörte zu dieser Familie. Die hessische Adelslinie hat damit die britische Monarchie geprägt. Eine wenig bekannte hessisch-britische Geschichte, die in Schloss Heiligenberg in Seeheim-Jugenheim besucht werden kann.',
+      beispiel: 'Die Battenbergs aus Hessen wurden zu Königen in England.',
+      beispiel_hd: 'Die Battenbergs aus Hessen wurden zu Königen in England.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-137',
+      ausdruck: 'Lahn',
+      hochdeutsch: 'Lahn (Fluss durch Hessen)',
+      bedeutung: 'Die Lahn ist ein 246 km langer Fluss, der durch Mittelhessen fließt — von Marburg über Wetzlar nach Limburg und weiter nach Rheinland-Pfalz. Die Lahn ist beliebte Kanu- und Wanderregion. Die Stadt Marburg liegt malerisch an der Lahn. Auch die Lahnauen mit der berühmten Fritzlarer Region prägt hessische Naturlandschaft. Die Lahn ist hessisches Wasser-Erbe.',
+      beispiel: 'Die Lahn entlang fahren mit\'m Kanu — Hessen pur.',
+      beispiel_hd: 'Die Lahn entlang fahren mit dem Kanu — Hessen pur.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-138',
+      ausdruck: 'Hauptbahnhof Frankfurt',
+      hochdeutsch: 'Frankfurter Hauptbahnhof (Drehkreuz)',
+      bedeutung: 'Der Frankfurter Hauptbahnhof ist mit über 500.000 Passagieren täglich Deutschlands zweitgrößter Bahnhof (nach München). Eröffnet 1888, mit drei riesigen Hallendächern. Wichtiger Knotenpunkt für ICE, Regionalzüge und S-Bahnen. Verbindung zum Frankfurter Flughafen in 11 Minuten. Vor dem Bahnhof: das Bahnhofsviertel mit Rotlichtmilieu und Drogenszene — das berüchtigte „Frankfurter Bahnhofsviertel".',
+      beispiel: 'Im Frankfurter Hauptbahnhof verlierst dich leicht.',
+      beispiel_hd: 'Im Frankfurter Hauptbahnhof verlierst du dich leicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-139',
+      ausdruck: 'Schoppen-Hannes',
+      hochdeutsch: 'Hannes mit dem Apfelwein-Glas',
+      bedeutung: 'Der „Schoppen-Hannes" ist eine traditionelle Frankfurter Karnevalsfigur — ein dicker, gemütlicher Mann mit Apfelwein-Glas und hessischer Schoppen-Mentalität. Verkörpert die Lokalpolitik mit Augenzwinkern. Eine Karikatur, die hessische Lebensart zelebriert: gemütlich, etwas träge, aber herzlich. Im Frankfurter Karneval immer dabei. Symbol für hessisches Lebensgefühl.',
+      beispiel: 'Der Schoppen-Hannes is am Karneval immer dabei.',
+      beispiel_hd: 'Der Schoppen-Hannes ist am Karneval immer dabei.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-140',
+      ausdruck: 'Hessischer Apfelwein',
+      hochdeutsch: 'Geschützte Marke „Hessischer Apfelwein"',
+      bedeutung: 'Der Begriff „Hessischer Apfelwein" ist EU-weit als geografische Angabe geschützt — nur Apfelwein aus Hessen darf so heißen. Säuerlich, klar, mit 5-7% Alkohol. Aus speziellen Mostäpfeln (Bittenfelder, Bohnapfel) gekeltert. Die Tradition geht bis ins Mittelalter zurück — Karl der Große ließ schon Apfelwein keltern. Hessen produziert über 40 Millionen Liter pro Jahr. Apfelwein ist hessisches Kulturerbe.',
+      beispiel: 'Echter hessischer Apfelwein muss aus Hessen kommen — sonst is\'er net echt.',
+      beispiel_hd: 'Echter hessischer Apfelwein muss aus Hessen kommen — sonst ist er nicht echt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-141',
+      ausdruck: 'Speierling',
+      hochdeutsch: 'Speierling (Baum für Apfelwein)',
+      bedeutung: 'Der Speierling — eine Eberesche-ähnliche Sorbaceae — liefert die berühmten Speierling-Beeren, die in hessischen Apfelwein gegeben werden. Sie verleihen ihm Gerbstoffe und seinen typisch herben Geschmack. Der Speierling-Baum ist heute selten — Speierlinge werden gezielt gepflanzt, um die Apfelwein-Tradition zu erhalten. Auch genießt der Speierling den Status eines Kulturbaums.',
+      beispiel: 'Ohne Speierling kein echter Ebbelwoi.',
+      beispiel_hd: 'Ohne Speierling kein echter Apfelwein.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-142',
+      ausdruck: 'Bembelfresser',
+      hochdeutsch: 'Spitzname für Apfelwein-Liebhaber',
+      bedeutung: '„Bembelfresser" ist die humorvolle Bezeichnung für jemand, der besonders viel Apfelwein aus dem Bembel trinkt — ein Frankfurter Original. Hier wird die liebevolle Hessen-Mentalität ausgedrückt: Wer den Bembel leerleert, gehört dazu. Niemals beleidigend gemeint, sondern als Zeichen von Trinkfestigkeit und Heimatliebe. Wer Bembelfresser ist, hat hessischen Stolz.',
+      beispiel: 'Der Otto isch en echter Bembelfresser — hessischer Trinker.',
+      beispiel_hd: 'Der Otto ist ein echter Bembelfresser — hessischer Trinker.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-143',
+      ausdruck: 'Geripptes',
+      hochdeutsch: 'Geripptes Apfelwein-Glas',
+      bedeutung: 'Das „Gerippte" ist das Frankfurter Standard-Apfelweinglas — ein 0,25- oder 0,3-Liter-Glas mit dem charakteristischen rautenförmigen Schliff. Der Schliff dient dazu, dass das Glas auch mit fettigen Händen sicher gehalten werden kann (Apfelweinwirtschaften servieren oft Brot und Käse). Ein Gerippte und ein Bembel sind das Frankfurter Trinkset. Niemand trinkt Apfelwein aus einem normalen Glas — das Gerippte ist Pflicht.',
+      beispiel: 'En Schoppe Ebbelwoi ausm Gerippte — typisch hessisch.',
+      beispiel_hd: 'Ein Schoppen Apfelwein aus dem Gerippten — typisch hessisch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-144',
+      ausdruck: 'Schunkel',
+      hochdeutsch: 'Schunkeln (Sitz-Tanzen am Tisch)',
+      bedeutung: 'Das „Schunkeln" — sich am Tisch unterhakend hin und her wiegen — ist eine hessische und allgemein-deutsche Tradition, vor allem auf Festen, in Apfelweinwirtschaften und beim Kerb. Bei hessischen Liedern wie „En Mool dahem an unsrem schee Frankfurt" wird automatisch geschunkelt. Eine harmlose, fröhliche Tradition, die Gemeinschaftsgefühl stiftet. Hessen schunkeln gerne und mit Hingabe.',
+      beispiel: 'Beim Kerb wird gschunkelt, dass die Bank wackelt.',
+      beispiel_hd: 'Beim Volksfest wird geschunkelt, dass die Bank wackelt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-145',
+      ausdruck: 'Kerb',
+      hochdeutsch: 'Kerb / Kerwe (hessisches Dorffest)',
+      bedeutung: 'Die „Kerb" oder „Kerwe" ist das hessische Pendant zum bayerischen Kirtag oder zur Kirchweih — ein traditionelles Dorf- oder Stadtfest. Findet meist im Herbst statt (zur Erntezeit). Mit Festumzug, Karussell, Bratwurstständen und natürlich Apfelwein. Die Kerb dauert 2-4 Tage. Jedes hessische Dorf hat seine Kerb, viele auch eigene Kerwe-Sprüche. Hessen lieben Kerbe.',
+      beispiel: 'Zur Kerb komm die ganze Verwandtschaft — Familienpflicht.',
+      beispiel_hd: 'Zur Kerb kommt die ganze Verwandtschaft — Familienpflicht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-146',
+      ausdruck: 'Kerbborsche',
+      hochdeutsch: 'Kerb-Burschen (junge Kerb-Organisatoren)',
+      bedeutung: 'Die „Kerbborsche" sind die jungen Männer eines hessischen Dorfes, die die Kerb organisieren und feiern — als Übergangsritus vom Jungen zum Mann. Sie tragen Trachten, errichten den Kerbbaum, halten die „Kerb-Rede" und kümmern sich ums Fest. Eine wichtige Tradition in vielen hessischen Dörfern. Wer mal Kerbborsche war, gehört zur Dorfgemeinschaft.',
+      beispiel: 'Als Kerbborsche hab i die schönschdr Erinnerunge.',
+      beispiel_hd: 'Als Kerbbursche habe ich die schönsten Erinnerungen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-147',
+      ausdruck: 'Hessen-Wappen',
+      hochdeutsch: 'Hessischer Löwe (Wappen)',
+      bedeutung: 'Das hessische Wappen zeigt den blau-weiß gestreiften „hessischen Löwen" — eines der ältesten erhaltenen Wappenbilder Europas. Die rot-blau gestreifte Löwenfigur stammt aus dem Hause Brabant (12. Jahrhundert). Heute ziert der Löwe das Wappen Hessens, die hessische Flagge, hessische Polizei und alle staatlichen Symbole. Beim Eintracht-Spiel werden Hessen-Flaggen geschwenkt.',
+      beispiel: 'Der hessische Löwe is auf jeder Hessen-Flagge.',
+      beispiel_hd: 'Der hessische Löwe ist auf jeder Hessen-Flagge.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-148',
+      ausdruck: 'Bauernregeln',
+      hochdeutsch: 'Hessische Bauernregeln',
+      bedeutung: 'Hessen hat eine reiche Tradition an Bauernregeln — Volksweisheiten über Wetter, Ernte und Jahreszeiten. „Märzenschnee tut den Saaten weh" oder „Aprilsonne und Frauengunst dauert nicht lang". Diese Reime wurden über Generationen weitergegeben. In ländlichen Regionen Hessens (Vogelsberg, Westerwald, Rhön) sind sie noch lebendig. Bäuerliche Mündlichkeit als Hessenerbe.',
+      beispiel: '„Mai-Regen bringt Segen" — alte hessische Bauernweisheit.',
+      beispiel_hd: '„Mai-Regen bringt Segen" — alte hessische Bauernweisheit.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-149',
+      ausdruck: 'Frankfurter Schule',
+      hochdeutsch: 'Frankfurter Schule (Philosophie)',
+      bedeutung: 'Die Frankfurter Schule ist eine philosophische Strömung — gegründet am Institut für Sozialforschung in Frankfurt (1923). Theodor W. Adorno, Max Horkheimer, Herbert Marcuse und Jürgen Habermas waren Hauptvertreter. Ihre Kritische Theorie analysierte Kapitalismus und Massenkultur. Weltweit einflussreich — auch heute. Frankfurt ist nicht nur Bankenstadt, sondern auch Philosophie-Hochburg.',
+      beispiel: 'Die Frankfurter Schule hat die Welt-Philosophie verändert.',
+      beispiel_hd: 'Die Frankfurter Schule hat die Welt-Philosophie verändert.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-150',
+      ausdruck: 'Hessen3',
+      hochdeutsch: 'Hessen 3 (TV-Fernsehprogramm)',
+      bedeutung: '„Hessen 3" — heute offiziell „hr-fernsehen" — ist das dritte Programm des Hessischen Rundfunks (HR). Mit Sendungen wie „herrlich ehrlich", „Hessenschau" (lokale Nachrichten), „Service: Reisen", „Maintower" oder „Friedrichs!". Für viele Hessen ist Hessen 3 der heimatliche Sender — informativ, unterhaltsam und mit deutlicher Hessen-Identität. Ältere Hessen schauen es täglich.',
+      beispiel: 'Die Hessenschau um 19:30 — Pflichttermin für jeden Hessen.',
+      beispiel_hd: 'Die Hessenschau um 19:30 — Pflichttermin für jeden Hessen.',
+      kategorie: 'musik'
     }
   ]
 };

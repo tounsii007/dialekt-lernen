@@ -1100,6 +1100,231 @@ export default {
       beispiel: 'Drei Stangen vom Päffgen — kölsche Erfrischung.',
       beispiel_hd: 'Drei Stangen vom Päffgen — kölsche Erfrischung.',
       kategorie: 'essen'
+    },
+    {
+      id: 'k-126',
+      ausdruck: 'Karnevalsfreitag',
+      hochdeutsch: 'Karnevalsfreitag (Karneval-Vortag)',
+      bedeutung: 'Der Karnevalsfreitag (Nelkensamstag-Vortag) ist Tag der ersten großen Sitzungen und der Schull- un Veedelszöch (Schul- und Stadtteilzüge). Hier zeigen Schulen und Stadtteile ihre Karnevalskreativität. Die Atmosphäre wird langsam aufgeheizt für die heißen Tage Sonntag-Dienstag. Wichtige Karnevalsgesellschaften wie Roten Funken proben ihre Programme. Beginn der intensiven Karnevalsphase.',
+      beispiel: 'Karnevalsfreitag is wo et erschd richtig losgeht.',
+      beispiel_hd: 'Karnevalsfreitag ist wo es erst richtig losgeht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-127',
+      ausdruck: 'Nubbelverbrennung',
+      hochdeutsch: 'Verbrennung des Karnevalssündenbocks',
+      bedeutung: 'Die „Nubbelverbrennung" am Faschingsdienstag Abend ist ein Kölner Karnevalsritual: Eine Strohpuppe (der „Nubbel") wird vor jeder Kneipe verbrannt — er symbolisiert alle Karnevals-Sünden der Session. Mit ihm gehen alle Verfehlungen in Flammen auf. Lustige Reden werden gehalten, anschließend startet die Aschermittwochs-Phase. Eine fast religiöse Karnevalstradition.',
+      beispiel: 'Heut Aabend wird der Nubbel verbrannt — Karnevalsschluss!',
+      beispiel_hd: 'Heute Abend wird der Nubbel verbrannt — Karnevalsschluss!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-128',
+      ausdruck: 'Kölner Karneval',
+      hochdeutsch: 'Kölner Karneval als Welterbe',
+      bedeutung: 'Der Kölner Karneval ist seit 2014 immaterielles Kulturerbe der UNESCO. Mit über 600 Jahren Geschichte (urkundlich erwähnt 1341) ist er einer der ältesten Karnevale der Welt. Die fünfte Jahreszeit beginnt am 11.11. um 11:11 Uhr und endet an Aschermittwoch. Über 100 Karnevalsgesellschaften, 14.000 aktive Teilnehmer, 5 Millionen Zuschauer beim Rosenmontagszug. Kölnischer Stolz.',
+      beispiel: 'Karneval ist Kölle\'s Lebensgefühl Nummer eins.',
+      beispiel_hd: 'Karneval ist Kölns Lebensgefühl Nummer eins.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-129',
+      ausdruck: 'Dat Wasser vun Kölle',
+      hochdeutsch: 'Das Wasser von Köln (Lied)',
+      bedeutung: '„Dat Wasser vun Kölle" ist ein berühmtes kölsches Karnevalslied der Bläck Fööss — eine humorvolle Hommage an das Trinkwasser des Rheins. Das Lied feiert kölsche Direktheit und Eigensinn — auch wenn das Rheinwasser umstritten ist, schmeckt es jedem Kölner. Inoffizielle Kölle-Hymne, wenn auch ironisch gemeint. Im Karneval Hit.',
+      beispiel: 'Dat Wasser vun Kölle — beste Karnevalshymne.',
+      beispiel_hd: 'Das Wasser von Köln — beste Karnevalshymne.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-130',
+      ausdruck: 'Stippeföttche',
+      hochdeutsch: 'Kölscher Karnevalstanz',
+      bedeutung: 'Das „Stippeföttche" (auch „Bützchengala") ist ein traditioneller kölscher Karnevalstanz: Zwei Tanzpaare drehen sich Rücken an Rücken und stoßen die Hinternseiten aneinander. Eine humorvoll-anzügliche Choreografie aus dem 19. Jahrhundert. Wird besonders in den Roten Funken (Karnevalsverein) zelebriert. Eine kölnische Spezialität, die sonst nirgends zu sehen ist.',
+      beispiel: 'Beim Stippeföttche kann jeder mitmachen — Spaß garantiert!',
+      beispiel_hd: 'Beim Stippeföttche kann jeder mitmachen — Spaß garantiert!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-131',
+      ausdruck: 'De Höhner mit den Hits',
+      hochdeutsch: 'Die Höhner mit Karnevalshits',
+      bedeutung: 'Die Höhner sind seit 1972 unverzichtbar im kölschen Karneval — mit unzähligen Hits wie „Viva Colonia" (2002), „Wenn nicht jetzt, wann dann?" (1992), „Die Karawane zieht weiter" (1981) und „Echte Fründe". Ihre Lieder werden bei jeder Karnevalssitzung gespielt — von kleinen Vereinssitzungen bis zur Live-Übertragung im WDR. Henning Krautmacher (bis 2020) prägte die Band als Frontmann.',
+      beispiel: '„Viva Colonia" — und Kölle explodiert vor Stimmung!',
+      beispiel_hd: '„Viva Colonia" — und Köln explodiert vor Stimmung!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-132',
+      ausdruck: 'Trude Herr',
+      hochdeutsch: 'Trude Herr (Kölner Volksschauspielerin)',
+      bedeutung: 'Trude Herr (1927-1991) war eine der bekanntesten Kölner Schauspielerinnen — Theater, Film, Comedy. Sie gründete das eigene Trude-Herr-Theater am Niederrhein. Ihre roller Verkörperung der Frankfurter Bürgerin, ihre Trinker-Stücke und ihre Gesangsdarbietungen sind unvergesslich. Ein Idol für Kölner Frauen und Symbol für kölsche Lebenslust. Ihr Grab in Köln-Müngersdorf ist Pilgerstätte.',
+      beispiel: 'Trude Herr hat mit ihrer Stimme ganz Kölle verzaubert.',
+      beispiel_hd: 'Trude Herr hat mit ihrer Stimme ganz Köln verzaubert.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-133',
+      ausdruck: 'Stunksitzung',
+      hochdeutsch: 'Kölner Alternativ-Karnevals-Sitzung',
+      bedeutung: 'Die „Stunksitzung" ist seit 1984 die Alternative zu den traditionellen Karnevalssitzungen — politisch, scharf, satirisch. In der Volksbühne am Rudolfplatz wird Karneval als gesellschaftskritische Comedy zelebriert. Karten sind monatelang im Voraus ausgebucht. Die Stunksitzung ist Kölns intellektuell-progressive Karnevalsadresse — sie kritisiert genau das, was traditionelle Sitzungen feiern. Brillante satirische Künstler.',
+      beispiel: 'Stunksitzung is wie Karneval, aber mit Hirn.',
+      beispiel_hd: 'Stunksitzung ist wie Karneval, aber mit Hirn.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-134',
+      ausdruck: 'Veedels-Sitzung',
+      hochdeutsch: 'Stadtteil-Karnevalssitzung',
+      bedeutung: 'Eine „Veedels-Sitzung" ist eine traditionelle Karnevalssitzung in einem Kölner Stadtteil (Veedel) — kleiner, gemütlicher und volksverbundener als die großen Show-Sitzungen. Lokale Bands, lokale Karnevalisten, lokales Publikum. Hier zeigt sich kölscher Karneval in seiner echten, ungeschönten Form. Kein Spektakel für Touristen, sondern Volkskultur. Jedes Veedel hat seine eigene Sitzung.',
+      beispiel: 'Veedels-Sitzung is wo de echte Kölle-Stimmung ist.',
+      beispiel_hd: 'Veedels-Sitzung ist wo die echte Köln-Stimmung ist.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-135',
+      ausdruck: 'Tanzcorps',
+      hochdeutsch: 'Tanzcorps (Karneval-Tanzgarde)',
+      bedeutung: 'Tanzcorps sind die traditionellen Tanzgarden der Karnevalsgesellschaften — Männer und Frauen in historischen Uniformen, die schwere Choreographien tanzen. Die Roten Funken haben ihr Tanzcorps, die Blauen Funken auch. Ein Tanzcorps zu besuchen kann eine Lebensaufgabe sein — die Bewerbungen sind eng begrenzt, die Tradition wird gelebt. Beim Rosenmontagszug tanzen sie in Reih und Glied.',
+      beispiel: 'Die Roten Funken-Tanzgarde is ne Legende inner Karnevalsszene.',
+      beispiel_hd: 'Die Roten Funken-Tanzgarde ist eine Legende in der Karnevalsszene.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-136',
+      ausdruck: 'Tünnes un Schäl',
+      hochdeutsch: 'Tünnes und Schäl (Kölner Volksfiguren)',
+      bedeutung: 'Tünnes und Schäl sind die beiden Hauptfiguren des Kölner Volksspiels und der Karikatur — der dicke, gemütliche Tünnes und der dünne, schlitzohrige Schäl. Sie verkörpern den kölschen Volkscharakter mit Witz, List und Humor. Ihre Anekdoten („Tünnes-Witze") sind kölsches Kulturgut. Statuen am Eigelstein und in vielen Kölner Lokalen. Sie sind Köln auf zwei Beinen.',
+      beispiel: 'Tünnes un Schäl-Witze sin kölsche Volksweisheit.',
+      beispiel_hd: 'Tünnes und Schäl-Witze sind kölsche Volksweisheit.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-137',
+      ausdruck: 'Heinzelmännchen',
+      hochdeutsch: 'Heinzelmännchen (Sagenfiguren)',
+      bedeutung: 'Die „Heinzelmännchen zu Köln" sind kleine Gnome aus der Kölner Sage — nachts halfen sie heimlich den Handwerkern und Bürgern, bis eine neugierige Schneiderfrau sie verscheuchte. Seitdem müssen die Kölner alles selbst erledigen. Eine berühmte Sage, die August Kopisch 1836 dichtete. Das Heinzelmännchen-Denkmal am Eigelstein erinnert daran. Heimlicher Wunschtraum: ihre Hilfe.',
+      beispiel: 'Die Heinzelmännchen kommen nimmer — mer müssen selber schaffe.',
+      beispiel_hd: 'Die Heinzelmännchen kommen nicht mehr — wir müssen selber arbeiten.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-138',
+      ausdruck: 'Eau de Cologne',
+      hochdeutsch: 'Kölnisch Wasser (4711)',
+      bedeutung: '„Eau de Cologne" — Kölnisch Wasser — ist eines der ältesten Parfums der Welt, 1709 in Köln erfunden von Johann Maria Farina. „4711" ist die Hausnummer der Glockengasse, in der die Produktion stattfand. Über 300 Jahre alte Marke. Frischer, zitrusartiger Duft. Im Mittelalter als Heilmittel verwendet. Heute weltweit als Kölner Souvenir vermarktet — die 4711-Häuser sind in Köln Wahrzeichen.',
+      beispiel: '4711-Kölnisch Wasser — Köln in einer Flasche.',
+      beispiel_hd: '4711-Kölnisch Wasser — Köln in einer Flasche.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-139',
+      ausdruck: 'Kölner Lichter-Fest',
+      hochdeutsch: 'Kölner Lichter (Rhein-Feuerwerk)',
+      bedeutung: 'Die „Kölner Lichter" sind das größte Pyrotechnik-Spektakel Deutschlands — jährlich am 12. Juli. 35 Minuten synchrones Feuerwerk auf dem Rhein, begleitet von Musik. Über 800.000 Zuschauer säumen die Ufer. Die Schiffe fahren in einem beleuchteten Konvoi. Kölner Lichter sind Sommer-Höhepunkt und Magnet für Touristen. Bestes Erlebnis: vom Rheinauhafen oder der Hohenzollernbrücke aus.',
+      beispiel: 'Bei den Kölner Lichtern is der Rhein in Flammen.',
+      beispiel_hd: 'Bei den Kölner Lichtern ist der Rhein in Flammen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-140',
+      ausdruck: 'Köln-Marathon',
+      hochdeutsch: 'Köln-Marathon (Massenlauf)',
+      bedeutung: 'Der Köln-Marathon ist seit 1997 jährlich im Oktober — 25.000 Läufer, 200.000 Zuschauer. Die Strecke führt durch die schönsten Teile Kölns: Dom, Hohenzollernbrücke, Rheinauhafen, Kalk und zurück. Berliner und Frankfurter Marathons sind größer, aber der Köln-Marathon hat den Karnevalscharakter — bunt, herzlich, mit Musik an jeder Ecke. Kölsche Sport-Kultur.',
+      beispiel: 'Den Köln-Marathon zu laufen, da kommt Karnevalsstimmung op.',
+      beispiel_hd: 'Den Köln-Marathon zu laufen, da kommt Karnevalsstimmung auf.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'k-141',
+      ausdruck: 'Mer han noch lang nit geneuch jesoffe',
+      hochdeutsch: 'Wir haben noch lang nicht genug getrunken',
+      bedeutung: 'Eine berühmte kölsche Karnevalsphrase — sie wird gerufen, wenn das Bier noch nicht ausgeht. „Mer han noch lang nit geneuch jesoffe" ist ein freundlich-aufmunternder Trinkspruch, kein Pflicht-Saufen. Kölsche Trinkkultur ist sozial, nicht extrem. Die Phrase wird auch ironisch verwendet, wenn man eigentlich gar nicht mehr will. Karneval auf seine kölsche Art.',
+      beispiel: 'Mer han noch lang nit geneuch jesoffe — Karneval geht weiter!',
+      beispiel_hd: 'Wir haben noch lang nicht genug getrunken — Karneval geht weiter!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-142',
+      ausdruck: 'Niemols allein',
+      hochdeutsch: 'Niemals allein (kölsches Lebensgefühl)',
+      bedeutung: '„Niemols allein" ist ein Lied der Höhner — und gleichzeitig ein kölsches Lebensgefühl: In Köln ist niemand allein. Die Gemeinschaft, der Veedel-Zusammenhalt, die Karnevalstradition — alles fördert Verbindung. „Niemols allein" ist auch ein Versprechen: Wer in Kölle wohnt, hat immer Menschen um sich, die ihn aufnehmen. Kölsche Solidarität in einem Satz.',
+      beispiel: 'In Kölle bist du niemols allein — Veedels-Garantie.',
+      beispiel_hd: 'In Köln bist du niemals allein — Veedel-Garantie.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-143',
+      ausdruck: 'Maintenor',
+      hochdeutsch: 'Schal-Maintenor (Eitler Mensch)',
+      bedeutung: 'Im Kölner Karneval ist „Maintenor" oder „Eitle-Schal" ein humorvoll-spöttischer Begriff für einen eitlen Mann, der sich zu wichtig nimmt. Im Karneval werden solche Typen mit Schunkeln und Sprüchen vom Sockel geholt. Kölsche Gleichmacherei: Niemand ist zu groß, niemand zu wichtig. Die soziale Ebene der kölschen Mentalität ist berühmt.',
+      beispiel: 'Sei kein Maintenor — schunkel einfach mit.',
+      beispiel_hd: 'Sei kein eitler Mensch — schunkel einfach mit.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-144',
+      ausdruck: 'Halv elf',
+      hochdeutsch: 'Halb elf (Karnevals-Uhrzeit)',
+      bedeutung: '„Halv elf" — 10:30 Uhr — ist die magische Karnevals-Uhrzeit in Köln, abgeleitet von der Karnevals-Zahl 11. Karnevalsveranstaltungen beginnen oft um 10:30 oder 11:11. Das „Drei mal Kölle Alaaf um halv elf" ist Pflicht-Choreografie. Eine Zeit, die nur Karnevalisten verstehen. Die Welt steht still für die fünfte Jahreszeit.',
+      beispiel: 'Um halv elf geht\'s los — Karnevalszeit!',
+      beispiel_hd: 'Um halb elf geht es los — Karnevalszeit!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'k-145',
+      ausdruck: 'Kalk',
+      hochdeutsch: 'Köln-Kalk (Stadtteil)',
+      bedeutung: 'Köln-Kalk ist ein rechtsrheinischer Stadtteil — ehemals Industrieviertel, heute multikulturell mit türkischer und arabischer Community. Die Kalk-Hauptstraße ist Einkaufsmeile. Der Stadtteil ist preisgünstiger als Innenstadt-Veedel und beliebt bei jungen Familien. „Kalker" haben ihren eigenen Stolz: bodenständig, direkt, ohne Schnickschnack. Echtes Köln abseits der Touristenrouten.',
+      beispiel: 'In Kalk wohnen — Köln ohne Pose.',
+      beispiel_hd: 'In Kalk wohnen — Köln ohne Pose.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-146',
+      ausdruck: 'Deutz',
+      hochdeutsch: 'Köln-Deutz (rechtsrheinischer Stadtteil)',
+      bedeutung: 'Köln-Deutz ist der rechtsrheinische Stadtteil direkt gegenüber der Innenstadt — verbunden über die Hohenzollernbrücke und die Deutzer Brücke. Hier sind das Tanzbrunnen-Festivalgelände, die Köln-Arena (Lanxess Arena) und der Rheinpark. Im Sommer rüber ans Deutzer Rheinufer, picknicken mit Domblick — Kölner Idylle. Auch wo das alte Köln-Triangle steht.',
+      beispiel: 'Vom Deutzer Rheinufer hat man den schönsten Domblick.',
+      beispiel_hd: 'Vom Deutzer Rheinufer hat man den schönsten Domblick.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-147',
+      ausdruck: 'KölnTriangle',
+      hochdeutsch: 'KölnTriangle (Hochhaus mit Aussicht)',
+      bedeutung: 'Das KölnTriangle in Deutz — ein 103 m hohes Bürohochhaus, eröffnet 2006 — bietet auf der Aussichtsplattform „Triangle Panorama" den schönsten Blick auf Dom und Innenstadt. Bei klarem Wetter sieht man Siebengebirge und Eifel. Eintritt günstig (5 Euro), Öffnungszeiten flexibel. Eine echte Geheimtipp für Touristen, die den klassischen Domblick erleben wollen.',
+      beispiel: 'Vom KölnTriangle aus is\' der Dom\' am schönsten.',
+      beispiel_hd: 'Vom KölnTriangle aus ist der Dom am schönsten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-148',
+      ausdruck: 'Belgisches Viertel',
+      hochdeutsch: 'Köln-Belgisches Viertel (Szene-Quartier)',
+      bedeutung: 'Das Belgische Viertel zwischen Friesenwall und Ehrenstraße ist Köln\'s trendiges Szene-Quartier — kleine Boutiquen, Designer-Läden, hippe Cafés und Restaurants. Die Straßen sind nach belgischen Städten benannt (Antwerpener Straße, Brüsseler Straße). Junges, kreatives Köln. Hier shoppen die Kölner, die nicht zu Touristen-Schoppen-Hannes gehören wollen.',
+      beispiel: 'Im Belgischen Viertel shoppen — Trendsetter-Pflicht.',
+      beispiel_hd: 'Im Belgischen Viertel shoppen — Trendsetter-Pflicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-149',
+      ausdruck: 'Kranenburg',
+      hochdeutsch: 'Karneval als Lebensphilosophie',
+      bedeutung: 'In Köln gilt der Spruch: „Wer in Kölle wohnt, der is\' jeck" — Karneval ist mehr als ein Fest, es ist eine Lebensphilosophie. Jeck sein bedeutet: locker sein, nicht alles ernst nehmen, mit dem Leben spielen. Karneval kompensiert vermeintlich harte Zeiten. In Köln muss man jeck sein können, sonst verliert man den Verstand. Karnevalsspirit das ganze Jahr.',
+      beispiel: 'Wer net jeck is\', kommt in Kölle nit klar.',
+      beispiel_hd: 'Wer nicht verrückt ist, kommt in Köln nicht klar.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-150',
+      ausdruck: 'In unserem Veedel',
+      hochdeutsch: 'In unserem Stadtviertel (Bläck Fööss Hymne)',
+      bedeutung: '„En unserem Veedel" ist Bläck Fööss\' bekanntestes Lied (1980) — eine Hymne an das kölsche Stadtviertel-Gefühl. Die Strophen erzählen vom Veedel-Alltag, von den Nachbarn, vom Bäcker, vom Wirt, von der Kirche. Eine emotionale Liebeserklärung an das Konzept Veedel. Pflichtlied auf jeder Karnevals-Sitzung. Hat über 4 Millionen verkaufte Singles. Kölsche Identität in einem Song.',
+      beispiel: '„En unserem Veedel" — und alle singen mit.',
+      beispiel_hd: '„En unserem Veedel" — und alle singen mit.',
+      kategorie: 'musik'
     }
   ]
 };
