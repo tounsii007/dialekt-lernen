@@ -2323,6 +2323,276 @@ export default {
       beispiel: 'Sonntags Mauerpark — Flohmarkt und Karaoke!',
       beispiel_hd: 'Sonntags Mauerpark — Flohmarkt und Karaoke!',
       kategorie: 'feiern'
+    },
+    {
+      id: 'b-261',
+      ausdruck: 'Trabi',
+      hochdeutsch: 'Trabant (DDR-Auto)',
+      bedeutung: 'Der „Trabi" — Trabant — war DAS Auto der DDR. 1957-1991 in Zwickau gebaut, 3,7 Mio. Stück. Zweitaktmotor mit blauem Rauch, Karosserie aus Duroplast (Plastik). „Pappschachtel auf Rädern" als spöttischer Beiname. Heute Kultauto: „Trabi-Safari" als Berlin-Touristenattraktion. Berliner Trabi-Witze („Wie verdoppelt man den Wert eines Trabis? — Tank vollmachen!"). Symbol für DDR-Lebensgefühl und Ost-Berliner Geschichte.',
+      beispiel: 'Mei Vata hatte n Trabi — zehn Jahre Wartezeit!',
+      beispiel_hd: 'Mein Vater hatte einen Trabant — zehn Jahre Wartezeit!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-262',
+      ausdruck: 'Bückware',
+      hochdeutsch: 'Mangelware (DDR-Begriff)',
+      bedeutung: '„Bückware" ist DDR-Begriff für Waren, die unter der Theke gehortet wurden — Verkäufer mussten sich „bücken", um sie hervorzuholen. Bananen, West-Schokolade, gute Strumpfhosen — alles Bückware. Wer „Beziehungen" hatte, kam ran. Heute nostalgisch verwendet: „Das gibts nur als Bückware!" für seltene Dinge. Symbol für DDR-Mangelwirtschaft. Ostalgie-Begriff der älteren Generation. Junge Berliner kennen ihn aus Ostalgie-Filmen.',
+      beispiel: 'Bananen waren in der DDR Bückware.',
+      beispiel_hd: 'Bananen waren in der DDR Mangelware.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-263',
+      ausdruck: 'Datsche',
+      hochdeutsch: 'Gartenlaube (DDR-Begriff)',
+      bedeutung: 'Die „Datsche" ist DDR-Begriff für Wochenend-Häuschen oder Gartenlaube im Schrebergarten. Stammt aus dem Russischen („Datscha"). „Auf die Datsche fahren" als DDR-Wochenend-Programm. Im Berliner Umland (Brandenburg) hunderttausende Datschen. Ostalgie-Symbol. Heute oft luxuriös ausgebaut. Im Gegensatz zur westdeutschen „Schrebergarten"-Bezeichnung. Symbol für Berliner Ost-Lebensart und Wochenend-Kultur.',
+      beispiel: 'Am Wochenende sind wir auf der Datsche.',
+      beispiel_hd: 'Am Wochenende sind wir auf der Gartenlaube.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-264',
+      ausdruck: 'Ostalgie',
+      hochdeutsch: 'DDR-Nostalgie',
+      bedeutung: '„Ostalgie" ist Nostalgie für DDR-Zeiten — meist humorvoll-romantisch. „Good Bye, Lenin!" (Film 2003) prägte den Begriff weltweit. Ostalgie-Shops verkaufen DDR-Produkte (Spreewald-Gurken, Vita-Cola, Florena-Creme, Rotkäppchen-Sekt). „Ostalgie-Partys" in Berliner Clubs. Symbol für ostdeutsche Identitäts-Bewahrung. Kritiker sagen: verklärt DDR-Diktatur. Berliner Ost-Bezirke (Friedrichshain, Pankow) als Ostalgie-Hochburgen.',
+      beispiel: 'Mei Tante hat richtig Ostalgie.',
+      beispiel_hd: 'Meine Tante hat richtig DDR-Nostalgie.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-265',
+      ausdruck: 'Ampelmännchen',
+      hochdeutsch: 'Ampelmännchen (Ost-Symbol)',
+      bedeutung: 'Das „Ampelmännchen" ist DDR-Designikone — die runden Fußgängerampel-Figuren mit Hut, designt 1961 von Karl Peglau. Nach der Wende drohten sie zu verschwinden, wurden aber gerettet und sind heute Berlin-Symbol. Ampelmännchen-Shops in Berlin verkaufen Souvenirs. „Ampelmann-Kultur" als Berlin-Identitäts-Element. Berliner Touristen-Hit. Symbol für Berliner Ost-Erbe und Design-Tradition. Auch in West-Berlin nun eingeführt.',
+      beispiel: 'D\'Ampelmännchen sind Berlins Touristen-Magnete.',
+      beispiel_hd: 'Die Ampelmännchen sind Berlins Touristen-Magnete.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-266',
+      ausdruck: 'Plattenbau',
+      hochdeutsch: 'Plattenbau (DDR-Wohnungstyp)',
+      bedeutung: 'Der „Plattenbau" ist DDR-typisches Wohnhaus aus Betonplatten — meist 10-12 Stockwerke, Massenfertigung. Marzahn als größte Plattenbau-Siedlung Berlins (60.000 Wohnungen). Wurde lange als Symbol für DDR-Tristesse gesehen, heute teils saniert und beliebt. „Plattenbau-Romantik" als ironische Bezeichnung. Symbol für DDR-Wohnungspolitik und sozialistische Architektur. Junge Berliner entdecken Plattenbauten als günstigen Wohnraum.',
+      beispiel: 'In Marzahn wohnen alle im Plattenbau.',
+      beispiel_hd: 'In Marzahn wohnen alle im Plattenbau.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-267',
+      ausdruck: 'Mauerfall',
+      hochdeutsch: 'Berliner Mauerfall (9.11.1989)',
+      bedeutung: 'Der „Mauerfall" am 9. November 1989 — Berliner Mauer öffnet sich, DDR-Bürger strömen nach West-Berlin. „Wahnsinn!" als Walter-Momper-Zitat. Welt-historisches Ereignis, das die deutsche Einheit einleitete. Tausende Ostdeutsche feiern auf dem Kurfürstendamm. Die Trabis im West-Berliner Verkehr — Symbol. Jahrestag jährlich am 9.11. mit Tag der Deutschen Einheit am 3.10. Berliner Schlüsselmoment. Junge Berliner kennen Mauerfall nur aus Geschichtsbüchern.',
+      beispiel: 'Mei Vata war beim Mauerfall in der ersten Reihe.',
+      beispiel_hd: 'Mein Vater war beim Mauerfall in der ersten Reihe.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-268',
+      ausdruck: 'Wir sind das Volk',
+      hochdeutsch: 'Wir sind das Volk (Wende-Spruch)',
+      bedeutung: '„Wir sind das Volk!" war Demo-Spruch der DDR-Bürgerrechts-Bewegung 1989 — Hauptdemonstration in Leipzig am 9. Oktober 1989. Drückte Macht-Anspruch des Volkes gegen SED-Diktatur aus. Heute auch von Pegida und AfD okkupiert (umstritten). Berliner Wende-Symbol. Im Geschichtsunterricht zentral. Symbol für friedliche Revolution und ostdeutsche Selbst-Ermächtigung. Mit „Wir sind ein Volk!" zur Wiedervereinigung erweitert.',
+      beispiel: '„Wir sind das Volk!" — der Spruch der Wende.',
+      beispiel_hd: '„Wir sind das Volk!" — der Spruch der Wende.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-269',
+      ausdruck: 'Stasi',
+      hochdeutsch: 'Ministerium für Staatssicherheit',
+      bedeutung: 'Die „Stasi" — MfS, Ministerium für Staatssicherheit — war DDR-Geheimdienst und Geheimpolizei (1950-1990). Überwachte 17 Millionen DDR-Bürger mit 91.000 Mitarbeitern und 173.000 IM (inoffizielle Mitarbeiter). Stasi-Zentrale in Lichtenberg (heute Stasi-Museum). „Stasi-Akten-Behörde" lässt Bürger ihre Akten einsehen. Symbol für DDR-Unterdrückung. Berliner Wende-Aufarbeitung zentral. „Stasi-Spitzel" als Vorwurf. Junge Berliner kennen Stasi aus „Das Leben der Anderen".',
+      beispiel: 'D\'Stasi hat halb Berlin überwacht.',
+      beispiel_hd: 'Die Stasi hat halb Berlin überwacht.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-270',
+      ausdruck: 'Pioniere',
+      hochdeutsch: 'Junge Pioniere (DDR-Jugendorganisation)',
+      bedeutung: 'Die „Pioniere" — Junge Pioniere — waren DDR-Kinderorganisation (6-14 Jahre). Blaue Halstücher (Jung-Pioniere), rote Halstücher (Thälmann-Pioniere). „Pionier-Lager" im Sommer als Sozialisations-Erlebnis. Pionier-Lieder, FDJ-Mitgliedschaft mit 14. „Für Frieden und Sozialismus, seid bereit!" — „Immer bereit!". Symbol für DDR-Erziehung und Massenorganisation. Ostalgie-Element. Junge Berliner kennen Pioniere aus Wende-Filmen.',
+      beispiel: 'Mei Großmutter war früher Pionier.',
+      beispiel_hd: 'Meine Großmutter war früher Pionier.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-271',
+      ausdruck: 'Konsum',
+      hochdeutsch: 'Konsum (DDR-Einkaufsgenossenschaft)',
+      bedeutung: 'Der „Konsum" — Konsumgenossenschaft — war DDR-Lebensmittelladen-Kette. Beliebter Spruch: „Im Konsum gibt\'s alles, was es nicht gibt". Symbol für DDR-Mangelwirtschaft. Heute existieren noch wenige Konsum-Läden (z.B. Konsum Dresden). „Konsum-Tante" als spöttische Bezeichnung. „Konsum-Knast" für Genossenschafts-Beitritt. Symbol für DDR-Alltag und Ost-Identität. Junge Berliner kennen Konsum nur als Brand-Nostalgie. Ostalgie-Klassiker.',
+      beispiel: 'Im Konsum gabs früher Vita-Cola.',
+      beispiel_hd: 'Im Konsum gab es früher Vita-Cola.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-272',
+      ausdruck: 'Westpaket',
+      hochdeutsch: 'Westpaket (Geschenk aus dem Westen)',
+      bedeutung: 'Das „Westpaket" war legendäres DDR-Geschenk — Verwandte aus dem Westen schickten Pakete mit Kaffee, Schokolade, Strumpfhosen, West-Magazinen, Schlangenwasser („4711") in die DDR. Wert: 30 D-Mark begrenzt. Eltern öffneten Pakete vorsichtig — eine Woche Vorfreude. Ostalgie-Symbol. Heute schicken West-Verwandte oft noch Pakete an ostdeutsche Verwandte (umgekehrt natürlich): „Ostpaket". Berliner Geschichts-Symbol für deutsche Teilung und Familien-Verbindungen.',
+      beispiel: 'Z\'Weihnachten gabs immer Westpaket von der Tante.',
+      beispiel_hd: 'Zu Weihnachten gab es immer Westpaket von der Tante.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-273',
+      ausdruck: 'Spreewald-Gurke',
+      hochdeutsch: 'Spreewaldgurke (DDR-Spezialität)',
+      bedeutung: 'Die „Spreewald-Gurke" ist DDR-Spezialität — eingelegte Gurken aus dem Spreewald (Brandenburg). Im Film „Good Bye, Lenin!" als Symbol für Ostalgie. Heute geschützte Ursprungsbezeichnung (EU). „Spreewälder Gurkenfass" als Genussmarken-Symbol. Im Berliner Konsum bis heute beliebt. Symbol für brandenburgisch-berlinische Esskultur. Mit deftiger Bratwurst kombiniert klassisch. Berliner kaufen sie mit Stolz: „Echte Spreewald, keine West-Imitation!".',
+      beispiel: 'Z\'Bratwurst gibts Spreewald-Gurke.',
+      beispiel_hd: 'Zur Bratwurst gibt es Spreewald-Gurke.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-274',
+      ausdruck: 'Vita-Cola',
+      hochdeutsch: 'Vita-Cola (DDR-Cola)',
+      bedeutung: 'Die „Vita-Cola" war DDR-Cola-Alternative zur Coca-Cola — seit 1957 in Thüringen produziert. Nach der Wende stark zurückgegangen, heute Ostalgie-Comeback. In Berliner Spätis und Ostalgie-Läden erhältlich. Geschmack: süßlicher als Coca-Cola, mit Vitaminen. „Vita-Cola statt Coke!" als Ostdeutscher Trotz-Slogan. Symbol für DDR-Konsum und Ost-Identität. Heute Marketing-Hit für Brand-Heritage.',
+      beispiel: 'Im Späti gibts Vita-Cola — Ostalgie!',
+      beispiel_hd: 'Im Spätkauf gibt es Vita-Cola — Ostalgie!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-275',
+      ausdruck: 'FKK',
+      hochdeutsch: 'Freikörperkultur',
+      bedeutung: '„FKK" — Freikörperkultur — war DDR-Hobby Nummer 1. Familien gingen nackt baden — am Plötzensee, am Müggelsee, an Brandenburger Seen. Geschützte Räume für freie Körperentfaltung im sonst restriktiven DDR-System. Nach der Wende stark zurückgegangen, junge Berliner kennen FKK kaum. Ostalgie-Klassiker. Berliner Sommer-Tradition bis heute am Strandbad Wannsee. Symbol für DDR-Lebensart. „FKK-Strand" als ostdeutsche Spezialität.',
+      beispiel: 'Frieher gabs am Wannsee viele FKK-Strände.',
+      beispiel_hd: 'Früher gab es am Wannsee viele FKK-Strände.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-276',
+      ausdruck: 'Sandmännchen',
+      hochdeutsch: 'Sandmännchen (Kinder-Sendung)',
+      bedeutung: 'Das „Sandmännchen" — Abendgruß des Kinderfernsehens — gab\'s in der DDR und der BRD. Ost-Sandmännchen (1959) und West-Sandmännchen (1959) waren Konkurrenz im Kalten Krieg. Heute sendet das Ost-Sandmännchen weiter (KIKA, MDR). „Sandmännchen-Lied" kennt jedes Berliner Kind. Ostalgie-Symbol. „Wir sind das Sandmännchen-Land!" als ironische Berliner Identitäts-Bekenntnis. Generations-Verbinder zwischen Ost und West.',
+      beispiel: 'D\'Kinder gucken jeden Abend Sandmännchen.',
+      beispiel_hd: 'Die Kinder gucken jeden Abend Sandmännchen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-277',
+      ausdruck: 'Broiler',
+      hochdeutsch: 'Brathähnchen (DDR-Begriff)',
+      bedeutung: 'Der „Broiler" war DDR-Begriff für Brathähnchen — anders als „Hähnchen" oder „Brathuhn" in der BRD. „Broiler-Bar" gab\'s in jeder DDR-Stadt. Nach der Wende lange tot, heute nostalgisch revived in Berliner Ost-Bezirken. „Broiler statt Chicken Wings!" als Ostalgie-Slogan. Symbol für DDR-Esskultur. Junge Berliner kennen den Begriff vielleicht aus Großmutter-Erzählungen oder Ostalgie-Filmen. Berlin-Marzahn hat eine echte Broiler-Bar wieder eröffnet.',
+      beispiel: 'In Marzahn gibts wieder Broiler.',
+      beispiel_hd: 'In Marzahn gibt es wieder Brathähnchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-278',
+      ausdruck: 'Berliner Republik',
+      hochdeutsch: 'Berliner Republik (politischer Begriff)',
+      bedeutung: 'Die „Berliner Republik" ist Bezeichnung für das vereinte Deutschland mit Berlin als Hauptstadt seit 1991 — im Gegensatz zur „Bonner Republik" (1949-1990). Drückt politisch-historisches Selbstbewusstsein aus. Berlin als Hauptstadt wieder im Zentrum der deutschen Politik. „Berliner Republik" als Konzept-Begriff in Politik und Medien. Junge Berliner kennen ihn aus Schule oder Talkshows. Symbol für deutsche Wiedervereinigung und politische Identität.',
+      beispiel: 'D\'Berliner Republik is\' ein anderes Deutschland.',
+      beispiel_hd: 'Die Berliner Republik ist ein anderes Deutschland.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-279',
+      ausdruck: 'Treuhand',
+      hochdeutsch: 'Treuhandanstalt (DDR-Abwicklung)',
+      bedeutung: 'Die „Treuhand" — Treuhandanstalt — wickelte 1990-1994 die DDR-Wirtschaft ab. 8.500 Betriebe wurden privatisiert oder geschlossen. 4 Mio. Arbeitsplätze gingen verloren. Schlüsselbegriff der Wende-Verarbeitung — bis heute kontrovers. „Die Treuhand hat alles kaputt gemacht!" als ostdeutscher Vorwurf. Symbol für ostdeutsche Wende-Bitterkeit. Junge Berliner kennen Treuhand aus Geschichtsunterricht. Begriff politisch aufgeladen.',
+      beispiel: 'D\'Treuhand hat den Vati arbeitslos gemacht.',
+      beispiel_hd: 'Die Treuhand hat den Vater arbeitslos gemacht.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-280',
+      ausdruck: 'IM',
+      hochdeutsch: 'Inoffizielle Mitarbeiter (Stasi)',
+      bedeutung: '„IM" — Inoffizieller Mitarbeiter — waren Stasi-Spitzel in der DDR. 173.000 Menschen bespitzelten ihre Mitbürger. Nach der Wende: Stasi-Akten-Aufarbeitung deckte viele auf. „IM-Vergangenheit" als ostdeutsches Trauma. Bekannte IM: Heinrich Fink, Manfred Stolpe. „Bist du IM gewesen?" als hartes Berliner Familien-Frage. Symbol für DDR-Überwachungsstaat. In Berliner Sprache als historischer Begriff verwendet.',
+      beispiel: 'Mei Großonkel war angeblich n IM.',
+      beispiel_hd: 'Mein Großonkel war angeblich ein IM.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-281',
+      ausdruck: 'Friedliche Revolution',
+      hochdeutsch: 'Friedliche Revolution 1989',
+      bedeutung: 'Die „Friedliche Revolution" ist offizieller Begriff für die DDR-Wende 1989-1990 — friedliche Demonstrationen, Mauerfall, Wiedervereinigung. „Wir sind das Volk!" als Schlachtruf. Die Berliner Demonstrationen am Alexanderplatz (4. November 1989) als Schlüsselmoment. Heute durch jährliche Gedenkveranstaltungen geehrt. Symbol für ostdeutsche Selbstbefreiung und friedlichen Wandel. Internationales Vorbild für friedliche politische Veränderung.',
+      beispiel: 'D\'Friedliche Revolution hat Deutschland verändert.',
+      beispiel_hd: 'Die Friedliche Revolution hat Deutschland verändert.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-282',
+      ausdruck: 'BRD',
+      hochdeutsch: 'Bundesrepublik Deutschland',
+      bedeutung: '„BRD" — Bundesrepublik Deutschland — war DDR-Begriff für Westdeutschland. In der BRD selbst meist „Bundesrepublik" oder einfach „Deutschland" genannt. Heute historischer Begriff für Westdeutschland 1949-1990. Berliner verwenden ihn nostalgisch oder akademisch. „BRD-Sozialisation" als ostdeutsche Distanzierung. Symbol für Kalter-Krieg-Vokabular. Junge Berliner verwenden BRD und DDR synonym mit West und Ost.',
+      beispiel: 'D\'Großeltern reden noch von BRD und DDR.',
+      beispiel_hd: 'Die Großeltern reden noch von BRD und DDR.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-283',
+      ausdruck: 'Schlange stehen',
+      hochdeutsch: 'in Schlange stehen / anstehen',
+      bedeutung: '„Schlange stehen" war DDR-Alltag — bei jedem Mangel-Artikel (Bananen, Strumpfhosen, Westwaren). Heute ironisch für lange Warteschlangen verwendet: „Vor der Berliner Behörde Schlange stehen!". Ostalgie-Begriff mit Negativ-Note. Auch positiv: „Vor\'m Berghain Schlange stehen" als Berliner Kult-Erlebnis. Symbol für DDR-Mangelwirtschaft und moderne Berliner Geduld. Junge Berliner verstehen den DDR-Bezug oft nicht mehr.',
+      beispiel: 'Vor\'m Bürgeramt müssen wir Stunden Schlange stehen.',
+      beispiel_hd: 'Vor dem Bürgeramt müssen wir Stunden in Schlange stehen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-284',
+      ausdruck: 'Intershop',
+      hochdeutsch: 'Intershop (West-Devisenladen in DDR)',
+      bedeutung: 'Der „Intershop" war DDR-Westwaren-Shop für Devisen — D-Mark, US-Dollar. Nur mit West-Geld zugänglich, das DDR-Bürger normalerweise nicht hatten. Westverwandte schickten D-Mark, dann konnten DDR-Bürger Intershop-Waren kaufen. Sehnsuchtsort für DDR-Konsumenten. Heute Ostalgie-Begriff. Symbol für DDR-Konsum-Asymmetrie. Junge Berliner kennen Intershop aus „Good Bye, Lenin!" oder Großeltern-Erzählungen.',
+      beispiel: 'Im Intershop gab\'s West-Schokolade gegen D-Mark.',
+      beispiel_hd: 'Im Intershop gab es West-Schokolade gegen D-Mark.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-285',
+      ausdruck: 'NVA',
+      hochdeutsch: 'Nationale Volksarmee (DDR-Armee)',
+      bedeutung: 'Die „NVA" — Nationale Volksarmee — war DDR-Armee 1956-1990. Wehrdienst für junge Männer (18 Monate) als gesellschaftliche Sozialisation. „NVA-Erfahrung" als Generationen-Marker. Berlin-Lichtenberg hatte das Hauptquartier. Nach der Wiedervereinigung in die Bundeswehr integriert. Heute historischer Begriff. „Bei der NVA war\'s …" als typische Großvater-Erzählung. Symbol für DDR-Männlichkeitsritual und sozialistische Erziehung.',
+      beispiel: 'Mei Opa war drei Jahre bei der NVA.',
+      beispiel_hd: 'Mein Opa war drei Jahre bei der NVA.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-286',
+      ausdruck: 'FDJ',
+      hochdeutsch: 'Freie Deutsche Jugend (DDR-Jugendorga.)',
+      bedeutung: 'Die „FDJ" — Freie Deutsche Jugend — war DDR-Jugendorganisation (14-25 Jahre). Blaue Hemden, gelbe Sonnen-Embleme, Marschlieder. „FDJ-Mitgliedschaft" war fast Pflicht für Karriere. „Jugendweihe" als sozialistische Konfirmations-Ersatz. Heute Erinnerungsbegriff. „FDJ-Sozialisation" als ostdeutsche Generations-Charakterisierung. Symbol für DDR-Jugend und Massenorganisation. Junge Berliner kennen FDJ aus Großeltern-Geschichten oder DDR-Filmen.',
+      beispiel: 'Mei Mutter war in der FDJ.',
+      beispiel_hd: 'Meine Mutter war in der FDJ.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-287',
+      ausdruck: 'Volkseigener Betrieb',
+      hochdeutsch: 'VEB (staatlicher DDR-Betrieb)',
+      bedeutung: '„Volkseigener Betrieb" — VEB — war Form der DDR-Staatsbetriebe. Alles gehörte „dem Volk" (also dem Staat). VEB Plastimat Wernigerode, VEB Sachsenring Zwickau (Trabi-Werk), VEB Pentacon Dresden (Kameras). Nach der Wende durch die Treuhand abgewickelt. Berliner Industrie hatte viele VEBs. Heute historischer Begriff. „Aus dem VEB" als ostdeutsche Karriere-Herkunft. Symbol für sozialistische Wirtschaft.',
+      beispiel: 'Mei Vater arbeitete im VEB Elektronik.',
+      beispiel_hd: 'Mein Vater arbeitete im VEB Elektronik.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-288',
+      ausdruck: 'Volkspolizist',
+      hochdeutsch: 'Vopo (DDR-Polizist)',
+      bedeutung: '„Vopo" oder „Volkspolizist" war Polizist in der DDR. Grüne Uniformen, andere Rangzeichen als BRD-Polizei. „Vopos an der Mauer" als bedrohliche Erinnerung — schossen auf Flüchtlinge. Nach der Wende in die Bundespolizei integriert. Heute historischer Begriff. Berliner Wende-Geschichten oft mit Vopos verbunden. „Vorsicht, Vopo!" als spielerische Warnung. Symbol für DDR-Staatsgewalt.',
+      beispiel: 'D\'Vopos waren früher überall.',
+      beispiel_hd: 'Die Vopos waren früher überall.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-289',
+      ausdruck: 'Lichtenberg',
+      hochdeutsch: 'Lichtenberg (Ost-Berliner Bezirk)',
+      bedeutung: '„Lichtenberg" ist östlicher Berliner Bezirk — ehemaliges DDR-Industriegebiet mit Stasi-Zentrale. Heute Stasi-Museum als Mahnung. Karlshorster Wohnviertel als Tschechow-Wohnort. Tierpark Friedrichsfelde (größter Berliner Tierpark). Multikulturelle Mischung. Symbol für Berliner Ost-Geschichte und Aufarbeitung. Im Wandel: Gentrifizierung kommt langsam. Bezahlbarer Wohnraum noch verfügbar.',
+      beispiel: 'In Lichtenberg is\' d\'Stasi-Zentrale.',
+      beispiel_hd: 'In Lichtenberg ist die Stasi-Zentrale.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-290',
+      ausdruck: 'Marzahn',
+      hochdeutsch: 'Marzahn (Ost-Berliner Bezirk)',
+      bedeutung: '„Marzahn" ist Berlins größter Plattenbau-Bezirk — in den 1980ern erbaut für 165.000 Bewohner. Symbol für DDR-Wohnungsbau-Massivität. Lange als sozialer Brennpunkt geschimpft, heute teils saniert und im Wandel. „Gärten der Welt" als grüner Hotspot. „Marzahn-Hellersdorf" Bezirk hat eigene Identität. Symbol für ostdeutsche Plattenbau-Heimat. Berliner Witze über Marzahn weit verbreitet. Marzahner sind stolz auf ihre Heimat.',
+      beispiel: 'Marzahn — größter Plattenbau-Bezirk Europas.',
+      beispiel_hd: 'Marzahn — größter Plattenbau-Bezirk Europas.',
+      kategorie: 'orte'
     }
   ]
 };
