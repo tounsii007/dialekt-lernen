@@ -52,6 +52,9 @@ jobs:
       - name: HTML syntax check (html-validate)
         run: npx --yes html-validate index.html
 
+      - name: Validate dialect datasets
+        run: node tools/validate-data.mjs
+
       - name: Static-serve smoke test
         run: |
           npx --yes http-server . -p 5173 &
