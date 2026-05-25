@@ -892,6 +892,231 @@ export default {
       beispiel: 'Ich bin Hessebabb durch und durch — Frankfurt is meine Heimat!',
       beispiel_hd: 'Ich bin Hesse durch und durch — Frankfurt ist meine Heimat!',
       kategorie: 'menschen'
+    },
+    {
+      id: 'h-101',
+      ausdruck: 'Kassel',
+      hochdeutsch: 'Kassel (Stadt in Nordhessen)',
+      bedeutung: 'Kassel ist die drittgrößte Stadt Hessens — bekannt für die documenta (eine der wichtigsten Kunstausstellungen der Welt, alle 5 Jahre) und den Bergpark Wilhelmshöhe (UNESCO-Welterbe). Die Brüder Grimm lebten hier und sammelten ihre Märchen. Mit der Karlsaue, dem Herkules-Denkmal und den Wasserspielen ist Kassel ein Kulturzentrum Nordhessens. KSV Hessen Kassel ist der lokale Fußballverein.',
+      beispiel: 'Zur documenta nach Kassel — Kunst auf höchstem Niveau.',
+      beispiel_hd: 'Zur documenta nach Kassel — Kunst auf höchstem Niveau.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-102',
+      ausdruck: 'documenta',
+      hochdeutsch: 'documenta (Weltkunstausstellung)',
+      bedeutung: 'Die documenta ist eine der weltweit wichtigsten Kunstausstellungen — alle 5 Jahre 100 Tage lang in Kassel. Gegründet 1955 von Arnold Bode. Sie zeigt zeitgenössische Kunst aus der ganzen Welt — Skulpturen, Performance, Video, Installation. Über 750.000 Besucher kommen jeweils. Die documenta-Fridericianum ist Hauptort, aber Werke verteilen sich über die ganze Stadt. Hessen ist stolz auf seine documenta.',
+      beispiel: 'documenta-Besucher sind in Kassel überall — auch in den seltsamsten Ecken.',
+      beispiel_hd: 'documenta-Besucher sind in Kassel überall — auch in den seltsamsten Ecken.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-103',
+      ausdruck: 'Brüder Grimm',
+      hochdeutsch: 'Jacob und Wilhelm Grimm',
+      bedeutung: 'Die Brüder Grimm — Jacob (1785-1863) und Wilhelm (1786-1859) — sind Hessens berühmteste Schriftsteller. In Hanau geboren, in Steinau aufgewachsen, in Marburg studiert. Sie sammelten die berühmten „Kinder- und Hausmärchen" (Aschenputtel, Rotkäppchen, Hänsel und Gretel) und schrieben das „Deutsche Wörterbuch". Die Deutsche Märchenstraße führt durch hessische Orte ihrer Wirkungsstätten. Weltkulturerbe.',
+      beispiel: 'Ohne die Brüder Grimm gäbs keine Märchen wie wir sie kennen.',
+      beispiel_hd: 'Ohne die Brüder Grimm gäbe es keine Märchen wie wir sie kennen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-104',
+      ausdruck: 'Wiesbaden',
+      hochdeutsch: 'Wiesbaden (Landeshauptstadt Hessens)',
+      bedeutung: 'Wiesbaden ist die Landeshauptstadt Hessens — eine elegante Kurstadt mit reicher Bädertradition. Berühmt: das Kurhaus mit dem Casino (Dostojewski verspielte hier sein Vermögen), die Kaiser-Friedrich-Therme und der historische Marktplatz. Auch Sitz der Hessischen Landesregierung. Im Gegensatz zum hektischen Frankfurt ist Wiesbaden gediegen und etwas alt-modisch — was den Charme der Stadt ausmacht.',
+      beispiel: 'In Wiesbaden in den Thermen baden — pure Erholung.',
+      beispiel_hd: 'In Wiesbaden in den Thermen baden — pure Erholung.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-105',
+      ausdruck: 'Rüdesheim',
+      hochdeutsch: 'Rüdesheim am Rhein',
+      bedeutung: 'Rüdesheim am Rhein ist eine Touristen-Hochburg an der Rheinschleife — bekannt für die Drosselgasse (eine 144 m lange Weinstraße mit Restaurants), die Niederwald-Statue (Germania-Denkmal) und Asbach Uralt (Weinbrand). Im Sommer drängen sich Touristen aus aller Welt durch die Gassen. Ehrlicher hessischer Rheingauer Riesling und der typische Lebensstil sind hier zu erleben.',
+      beispiel: 'In der Drosselgasse gehe i nur wegen dem Riesling.',
+      beispiel_hd: 'In die Drosselgasse gehe ich nur wegen des Rieslings.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-106',
+      ausdruck: 'Rheingau',
+      hochdeutsch: 'Rheingau (Weinregion)',
+      bedeutung: 'Der Rheingau ist eine der wichtigsten deutschen Weinregionen — am Rhein zwischen Wiesbaden und Lorch. Berühmt für Spätlese- und Auslese-Rieslinge. Schloss Johannisberg, Kloster Eberbach (mit „Steinberg") und Schloss Vollrads sind ikonische Weingüter. Der „Riesling-Sommer" Rheingau Musik Festival lockt Touristen. Die spätsommerliche Weinlese ist hier seit über 1.200 Jahren Tradition — Karl der Große ordnete den Weinbau hier an.',
+      beispiel: 'En guter Rheingau-Riesling — des isch hessischer Weingenuss pur.',
+      beispiel_hd: 'Ein guter Rheingau-Riesling — das ist hessischer Weingenuss pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-107',
+      ausdruck: 'Sachsenhausen',
+      hochdeutsch: 'Frankfurter Stadtteil mit Äppelwoi-Kultur',
+      bedeutung: 'Sachsenhausen ist der Frankfurter Apfelwein-Stadtteil — südlich des Mains gelegen. Hier reihen sich die traditionellen Apfelweinwirtschaften an („Adolf Wagner", „Atschel", „Apfelwein Wagner"). Mit dem charakteristischen Gerippten-Glas und dem Bembel (Krug) wird Äppelwoi serviert. Das Sachsenhäuser Bach-Viertel ist eine der beliebtesten Frankfurter Ausgehgegenden. Hessisches Lebensgefühl pur.',
+      beispiel: 'In Sachsenhausen trinkst du Ebbelwoi vom Bembel — Frankfurter Klassiker.',
+      beispiel_hd: 'In Sachsenhausen trinkst du Apfelwein aus dem Krug — Frankfurter Klassiker.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-108',
+      ausdruck: 'Bornheim',
+      hochdeutsch: 'Frankfurter Bornheim (Stadtteil)',
+      bedeutung: 'Bornheim ist ein traditioneller Frankfurter Stadtteil im Osten — bekannt als „Lustiges Dorf" wegen seiner Apfelweinkneipen, Eisdielen und entspannten Atmosphäre. Die Berger Straße ist die Hauptachse mit zahlreichen Lokalen. Bornheim hat einen dörflichen Charakter mitten in Frankfurt — fast alle Bornheimer kennen sich. Bornheimer-Fanblock-Hymne der Eintracht: „Bornheimer Lustiges Dorf".',
+      beispiel: 'In Bornheim auf der Berger Straße — Frankfurt von seiner gemütlichsten Seite.',
+      beispiel_hd: 'In Bornheim auf der Berger Straße — Frankfurt von seiner gemütlichsten Seite.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-109',
+      ausdruck: 'Hessischer Rundfunk',
+      hochdeutsch: 'Hessischer Rundfunk (hr)',
+      bedeutung: 'Der Hessische Rundfunk (hr) ist die ARD-Landesrundfunkanstalt für Hessen — gegründet 1948 in Frankfurt. Mit Sendern wie hr1, hr2-kultur, hr3, hr4, hr-Info und dem hr-fernsehen. Das hr-Funkhaus am Dornbusch (Frankfurt) ist Architekturikone. Der hr produziert auch Tatort-Folgen mit Frankfurter Kommissaren. Hessens mediale Stimme.',
+      beispiel: 'Der hr macht echt gute hessische Doku-Serien.',
+      beispiel_hd: 'Der hr macht echt gute hessische Doku-Serien.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-110',
+      ausdruck: 'Hessenpark',
+      hochdeutsch: 'Freilichtmuseum Hessenpark',
+      bedeutung: 'Der Hessenpark in Neu-Anspach (Taunus) ist Hessens großes Freilichtmuseum — 60 Hektar mit historischen Häusern, Kirchen, Mühlen und Werkstätten aus ganz Hessen, dort wieder aufgebaut. Besucher erleben hessisches Landleben der letzten Jahrhunderte. Handwerker zeigen traditionelle Künste (Schmieden, Töpfern, Bierbrauen). Ein einzigartiges Museum, das hessisches Erbe lebendig hält.',
+      beispiel: 'Im Hessenpark erlebst du Hessen aus 500 Jahren.',
+      beispiel_hd: 'Im Hessenpark erlebst du Hessen aus 500 Jahren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-111',
+      ausdruck: 'Vogelsberg',
+      hochdeutsch: 'Vogelsberg (größtes Vulkangebirge Europas)',
+      bedeutung: 'Der Vogelsberg in Mittelhessen ist Europas größtes erloschenes Vulkangebirge — entstanden vor 17 Millionen Jahren. Mit dem Hoherodskopf (763 m) als höchstem Berg. Heute ein Naturpark mit Wäldern, Hochmooren und Bauernhöfen. Berühmt: die schwarzbunten Vogelsberger Kühe und der „Vulkanradweg" auf ehemaligen Bahntrassen. Wandern, Radeln, Naturerlebnis — der Vogelsberg ist das hessische Mittelgebirge schlechthin.',
+      beispiel: 'Im Vogelsberg gibts noch ne Stille, die ne Stadt nie hat.',
+      beispiel_hd: 'Im Vogelsberg gibt es eine Stille, die eine Stadt nie hat.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-112',
+      ausdruck: 'Taunus',
+      hochdeutsch: 'Taunus (Mittelgebirge bei Frankfurt)',
+      bedeutung: 'Der Taunus ist Hessens beliebtestes Naherholungsgebiet — direkt vor den Toren Frankfurts. Mit dem Großen Feldberg (881 m) als höchstem Gipfel. Berühmt: die Saalburg (rekonstruiertes Römerkastell, UNESCO-Welterbe), Kronberg, Bad Homburg und die Kurorte. Frankfurter fahren am Wochenende „in den Taunus" — wandern, joggen, Kaffee trinken. Der Limes-Wanderweg führt durch ihn.',
+      beispiel: 'Am Wochenende geh ich in den Taunus — Frankfurter Therapie.',
+      beispiel_hd: 'Am Wochenende gehe ich in den Taunus — Frankfurter Therapie.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-113',
+      ausdruck: 'Eintracht-Hymne',
+      hochdeutsch: 'Im Herzen von Europa (Eintracht-Hymne)',
+      bedeutung: 'Die Eintracht-Hymne „Im Herzen von Europa" (gesungen vom hessischen Liedermacher Hans-Jürgen „Hänsel" Klotz) ist seit den 80er Jahren die offizielle Vereinshymne der Eintracht Frankfurt. Im Waldstadion (Deutsche Bank Park) singen 50.000 Fans bei jedem Heimspiel mit. „Eintracht Frankfurt, in unseren Herzen / Im Herzen von Europa." Pflicht-Karaoke für jeden Frankfurter Fan.',
+      beispiel: 'Wenn die SGE-Hymne läuft, krieg i Gänsehaut.',
+      beispiel_hd: 'Wenn die Eintracht-Hymne läuft, bekomme ich Gänsehaut.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'h-114',
+      ausdruck: 'Frankfurter Buchmesse',
+      hochdeutsch: 'Frankfurter Buchmesse (Weltmesse)',
+      bedeutung: 'Die Frankfurter Buchmesse ist die größte Buchmesse der Welt — seit 1949 jährlich im Oktober. Über 7.300 Aussteller aus 100 Ländern, 250.000 Besucher. Hier werden internationale Lizenzen verhandelt, neue Bücher vorgestellt, der Friedenspreis des Deutschen Buchhandels verliehen. Ehrengast ist jährlich ein anderes Land. Für die deutsche Buchbranche ist die Buchmesse das wichtigste Ereignis des Jahres.',
+      beispiel: 'Zur Buchmesse pilgern Autoren und Verlage nach Frankfurt.',
+      beispiel_hd: 'Zur Buchmesse pilgern Autoren und Verlage nach Frankfurt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-115',
+      ausdruck: 'Frankfurter Banken',
+      hochdeutsch: 'Frankfurt als Finanzmetropole',
+      bedeutung: 'Frankfurt ist Deutschlands Finanzmetropole und Sitz der Europäischen Zentralbank (EZB), der Deutschen Bundesbank und über 200 Banken. Die Frankfurter Skyline mit Wolkenkratzern wie Commerzbank Tower und Main Tower wird „Mainhattan" genannt. Der Standort macht Hessen wirtschaftsstark. Bankerwitze sind in Frankfurt Alltag: „Was sind drei Banker an einer Bar? Pflicht-Treffen."',
+      beispiel: 'Die Frankfurter Skyline isch wie Mini-Manhattan — Mainhattan.',
+      beispiel_hd: 'Die Frankfurter Skyline ist wie Mini-Manhattan — Mainhattan.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-116',
+      ausdruck: 'Frankfurter Flughafen',
+      hochdeutsch: 'Flughafen Frankfurt (Drehkreuz)',
+      bedeutung: 'Der Flughafen Frankfurt am Main (FRA) ist Deutschlands größter Flughafen und drittgrößter Europas — Drehkreuz der Lufthansa. Über 65 Millionen Passagiere jährlich. Der Flughafen ist Hessens größter Arbeitgeber (über 80.000 Beschäftigte). Die Hessen sind stolz darauf — und gleichzeitig genervt vom Fluglärm. Frankfurt-Hahn (im Hunsrück, eigentlich Rheinland-Pfalz) wird auch oft mit dem Flughafen Frankfurt verwechselt.',
+      beispiel: 'Frankfurt Flughafen — Tor zur Welt für viele Hessen.',
+      beispiel_hd: 'Frankfurt Flughafen — Tor zur Welt für viele Hessen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-117',
+      ausdruck: 'Mainhattan',
+      hochdeutsch: 'Frankfurter Skyline (Spitzname)',
+      bedeutung: '„Mainhattan" ist der ironische Spitzname für die Frankfurter Skyline — wegen der Wolkenkratzer und dem Main. Frankfurt hat die einzige deutsche Skyline, die mit New York mithalten kann. Der Main Tower mit Aussichtsplattform, der Messeturm, der Commerzbank-Tower (259 m) — alle prägen das Stadtbild. Bei klarem Wetter spektakulär. Mainhattan ist hessischer Stolz und Spott zugleich.',
+      beispiel: 'Mainhattan im Sonnenuntergang — Frankfurt von seiner besten Seite.',
+      beispiel_hd: 'Mainhattan im Sonnenuntergang — Frankfurt von seiner besten Seite.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-118',
+      ausdruck: 'Römer',
+      hochdeutsch: 'Frankfurter Römerberg (Rathaus)',
+      bedeutung: 'Der Römer am Römerberg ist Frankfurts historisches Rathaus — drei Patrizierhäuser, die seit 1405 als Rathaus dienen. Im Krieg zerstört, originalgetreu wieder aufgebaut. Vom Römer-Balkon werden Eintracht-Sieger geehrt und Bundeskanzler verkündet. Der Römerberg mit Fachwerkhäusern und Gerechtigkeitsbrunnen ist eine der schönsten Plätze Deutschlands — Bild-Postkartenmotiv.',
+      beispiel: 'Am Römerberg vor\'m Rathaus — Frankfurts historisches Herz.',
+      beispiel_hd: 'Am Römerberg vor dem Rathaus — Frankfurts historisches Herz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-119',
+      ausdruck: 'Frankfurter Würstchen',
+      hochdeutsch: 'Frankfurter Würstchen (Spezialität)',
+      bedeutung: 'Frankfurter Würstchen sind eine traditionelle Frankfurter Spezialität — feine, lange Brühwürste aus Schweinefleisch, in einem Naturdarm, leicht geräuchert. Die echten dürfen nur in einem Frankfurter Stadtgebiet hergestellt werden — geschützte geografische Angabe. Werden in heißem (nicht kochendem!) Wasser erwärmt — niemals gekocht! Klassische Beilagen: Brot, Senf und Kartoffelsalat.',
+      beispiel: 'Echte Frankfurter Würstchen — net kochen, nur erwärmen!',
+      beispiel_hd: 'Echte Frankfurter Würstchen — nicht kochen, nur erwärmen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-120',
+      ausdruck: 'Frankfurter Kranz',
+      hochdeutsch: 'Frankfurter Kranz (Buttercreme-Torte)',
+      bedeutung: 'Der Frankfurter Kranz ist eine klassische deutsche Torte, in Frankfurt erfunden — drei Schichten Sandkuchen, mit Buttercreme gefüllt, außen mit Krokantbröseln bestreut und mit roten Kirschen und Sahne dekoriert. Die runde Form mit dem Loch in der Mitte soll an die Krone der Kaiserkrönungen im Frankfurter Dom erinnern. Tradition seit dem 18. Jahrhundert. Im modernen Frankfurt seltener — aber Klassiker.',
+      beispiel: 'A frischer Frankfurter Kranz — des is Kaffeeklatsch-Klassiker.',
+      beispiel_hd: 'Ein frischer Frankfurter Kranz — das ist Kaffeeklatsch-Klassiker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-121',
+      ausdruck: 'Bethmännchen',
+      hochdeutsch: 'Bethmännchen (Marzipan-Plätzchen)',
+      bedeutung: 'Bethmännchen sind eine Frankfurter Spezialität — kleine, runde Marzipanplätzchen mit drei Mandelhälften außen. Erfunden 1838 vom Bankier Simon Moritz von Bethmann für seine vier Söhne — daher die ursprünglich vier Mandeln. Als ein Sohn starb, wurde nur noch mit drei Mandeln gebacken. Heute Frankfurter Weihnachtsbäckerei und ganzjährige Spezialität. Hessisches Marzipan-Erbe.',
+      beispiel: 'A Tüten Bethmännchen vom Bäcker — Frankfurter Genuss.',
+      beispiel_hd: 'Eine Tüte Bethmännchen vom Bäcker — Frankfurter Genuss.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-122',
+      ausdruck: 'Bembelche',
+      hochdeutsch: 'Bembel-Verkleinerung (kleiner Krug)',
+      bedeutung: 'Das „Bembelche" ist die hessische Verkleinerungsform von Bembel — ein kleiner Apfelweinkrug. Die hessische Diminutivendung „-che" (statt „-chen") ist liebevoll und alltäglich. Auch in Personennamen üblich: „Friedche" für Friedrich. Bembelche werden oft als Souvenirs verkauft — handgetöpfert mit dem charakteristischen blau-grauen Steinzeug-Muster. Hessisches Kulturgut.',
+      beispiel: 'En kleines Bembelche zum Mitnehmen — perfektes Mitbringsel.',
+      beispiel_hd: 'Ein kleines Bembel zum Mitnehmen — perfektes Mitbringsel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-123',
+      ausdruck: 'Gefillde',
+      hochdeutsch: 'Gefüllte Klöße (hessische Spezialität)',
+      bedeutung: 'Gefillde sind hessische gefüllte Kartoffelklöße — außen Kartoffelteig, innen Fleisch- oder Speckfüllung. Eine traditionelle hessische Mahlzeit, vor allem in Oberhessen und im Vogelsberg verbreitet. Werden meist mit Sauerkraut und brauner Soße serviert. Sättigend, deftig und typisch hessisch — Soulfood des Vogelsbergs. Die Großmütter haben die besten Rezepte, die nicht ausgeplaudert werden.',
+      beispiel: 'Mutters Gefillde mit Soß — hessisches Lieblingsessen.',
+      beispiel_hd: 'Mutters gefüllte Klöße mit Soße — hessisches Lieblingsessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-124',
+      ausdruck: 'Käseschnitten',
+      hochdeutsch: 'Käseschnitten (hessische Variante)',
+      bedeutung: 'Käseschnitten — eine hessische und nordhessische Spezialität: Brotscheiben mit Käse überbacken, oft mit Schinken, Ei oder Spargel. Einfaches Pendant zu schweizerischen Älplermagronen oder französischen Croque-Monsieur. Vor allem in Schulkantinen und einfachen Restaurants beliebt. Hessisches Comfort-Food — schnell, sättigend, lecker.',
+      beispiel: 'Heut Mittag Käseschnitten mit Salat — schnelle Hausmannskost.',
+      beispiel_hd: 'Heute Mittag Käseschnitten mit Salat — schnelle Hausmannskost.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-125',
+      ausdruck: 'Hessisch reden',
+      hochdeutsch: 'Hessen redet Hessisch',
+      bedeutung: 'Hessen sind nicht so verbissen wie Bayern oder Schwaben mit ihrem Dialekt — Hessisch wird mit Selbstironie und Humor gepflegt. Volker Bouffier, Roland Koch und viele andere Politiker haben offen Hessisch geredet. Die Comedy-Serien „Bei uns dahem", „Familie Heinz Becker" (eigentlich saarländisch, aber ähnlich) feiern hessische Mentalität. Hessen sind unkomplizierte Redner — niemals Krampf, immer Lockerheit.',
+      beispiel: 'Mer redet ja Hessisch, weil mer net anders kann.',
+      beispiel_hd: 'Wir reden ja Hessisch, weil wir nicht anders können.',
+      kategorie: 'redensart'
     }
   ]
 };

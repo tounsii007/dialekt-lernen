@@ -875,6 +875,231 @@ export default {
       beispiel: 'Egal wo ich bin — mer losse d\'r Dom in Kölle.',
       beispiel_hd: 'Egal wo ich bin — wir lassen den Dom in Köln.',
       kategorie: 'musik'
+    },
+    {
+      id: 'k-101',
+      ausdruck: 'Kölner Dom',
+      hochdeutsch: 'Kölner Dom (UNESCO-Welterbe)',
+      bedeutung: 'Der Kölner Dom (Hohe Domkirche St. Petrus) ist das Wahrzeichen Kölns und Deutschlands meistbesuchte Sehenswürdigkeit (6 Mio. Besucher jährlich). Bau-Beginn 1248, fertiggestellt 1880 — 632 Jahre Baugeschichte! Mit 157,4 m war er 1880 das höchste Gebäude der Welt. UNESCO-Welterbe. Reliquien der Heiligen Drei Könige seit 1164. Die 533 Stufen zum Südturm bieten Panoramablick über Köln.',
+      beispiel: 'Vom Kölner Dom siehste ganz Kölle und den Rhein.',
+      beispiel_hd: 'Vom Kölner Dom siehst du ganz Köln und den Rhein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-102',
+      ausdruck: 'Hohenzollernbrücke',
+      hochdeutsch: 'Hohenzollernbrücke (Liebesschloss-Brücke)',
+      bedeutung: 'Die Hohenzollernbrücke führt direkt am Dom über den Rhein — die meistbefahrene Eisenbahnbrücke Deutschlands (über 1.200 Züge täglich!). Berühmt für die tausenden Liebesschlösser, die Paare am Geländer anbringen. Im Zweiten Weltkrieg gesprengt, wurde sie 1948 wieder aufgebaut. Mit der Reiterstatue von Kaiser Wilhelm II. an einer Seite ein klassischer Köln-Postkartenmotiv mit dem Dom im Hintergrund.',
+      beispiel: 'Auf der Hohenzollernbrück hänge ich noch ein Liebesschloss auf.',
+      beispiel_hd: 'Auf der Hohenzollernbrücke hänge ich noch ein Liebesschloss auf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-103',
+      ausdruck: 'Karnevalsprinz',
+      hochdeutsch: 'Prinz Karneval (Karnevalsregent)',
+      bedeutung: 'Der Kölner Karnevalsprinz ist das offizielle Oberhaupt der Sessionszeit. Jedes Jahr wird ein neuer Prinz gewählt (zusammen mit Bauer und Jungfrau zum „Dreigestirn"). Bei der Proklamation am 11.11. wird er offiziell ins Amt gehoben. Der Prinz besucht in seiner Session über 400 Veranstaltungen, Schulen und Krankenhäuser. Ehrenamt mit hohem Aufwand — und Stolz für jeden echten Kölner.',
+      beispiel: 'Der neue Prinz hat in seiner Session 400 Veranstaltungen.',
+      beispiel_hd: 'Der neue Prinz hat in seiner Session 400 Veranstaltungen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-104',
+      ausdruck: 'Elfter Elfter',
+      hochdeutsch: '11.11. (Beginn des Karnevals)',
+      bedeutung: 'Der „Elfte Elfte" — 11. November um 11:11 Uhr — ist der offizielle Beginn der Karnevalssession in Köln. Tausende Jecken füllen den Heumarkt und Alter Markt, das neue Dreigestirn wird proklamiert, die ersten Karnevalslieder erklingen. Eine inoffizielle Volksversammlung. Auch wenn die „heiße Phase" erst an Weiberfastnacht beginnt — der Elfte Elfte gibt den Auftakt.',
+      beispiel: 'Am 11.11. um 11:11 — Kölle is jeck!',
+      beispiel_hd: 'Am 11.11. um 11:11 — Köln ist verrückt!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-105',
+      ausdruck: 'Weiberfastnacht',
+      hochdeutsch: 'Weiberfastnacht (Donnerstag vor Aschermittwoch)',
+      bedeutung: 'Die Weiberfastnacht (Wieverfastelovend) eröffnet den „Straßenkarneval" — der Donnerstag vor Rosenmontag. Frauen stürmen das Rathaus, schneiden Männern die Krawatten ab (Symbol für Macht). Bei diesem Ritual gibt es Bützchen (Küsschen) als Entschuldigung. Eine Tradition seit dem Mittelalter, die heute alle Frauen feiern. Schulen und Behörden schließen — die Stadt ist im Karnevalsfieber.',
+      beispiel: 'An Weiberfastnacht heißt es: Krawatte ab und Bützchen!',
+      beispiel_hd: 'An Weiberfastnacht heißt es: Krawatte ab und Küsschen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-106',
+      ausdruck: 'Rosenmontagszug',
+      hochdeutsch: 'Rosenmontagszug (Karnevals-Hauptzug)',
+      bedeutung: 'Der Kölner Rosenmontagszug ist der Höhepunkt der Karnevalssession — der größte Karnevalsumzug Deutschlands mit 12.000 Teilnehmern, 130 Motivwagen, 100 Musikkapellen. Über eine Million Zuschauer säumen die 6,5 km lange Strecke. „Kamelle!" rufen die Kinder — 300 Tonnen Süßigkeiten und 700.000 Blumensträußchen werden ins Publikum geworfen. Live-Übertragung im WDR. Köln-Hochfest.',
+      beispiel: 'Beim Rosenmontagszug schmeisst der Wagen Kamelle wie verrückt!',
+      beispiel_hd: 'Beim Rosenmontagszug wirft der Wagen Süßigkeiten wie verrückt!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-107',
+      ausdruck: 'Bläck Fööss',
+      hochdeutsch: 'Bläck Fööss (Kölsche Mundartgruppe)',
+      bedeutung: 'Die Bläck Fööss (auf hochdeutsch „nackte Füße") sind seit 1970 Köln\'s berühmteste Mundartgruppe — Begründer der modernen Kölner Karnevalsmusik. Ihre Hits wie „Drink doch ene mit", „Mer losse d\'r Dom in Kölle", „En unserem Veedel" sind kölsches Kulturerbe. Sie singen über das einfache Leben, Heimatliebe und Solidarität. Mehr als 5 Mio. verkaufte Tonträger. Eine Institution.',
+      beispiel: 'Bei den Bläck Fööss-Konzerten singt ganz Kölle mit.',
+      beispiel_hd: 'Bei den Bläck Fööss-Konzerten singt ganz Köln mit.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-108',
+      ausdruck: 'Höhner',
+      hochdeutsch: 'Höhner (kölsche Karnevalsband)',
+      bedeutung: 'Die Höhner (Hühner) sind seit 1972 eine der erfolgreichsten kölschen Karnevalsbands — mit Hits wie „Viva Colonia" (inoffizielle Karnevalshymne), „Wenn nicht jetzt, wann dann?", „Die Karawane zieht weiter". Ihre Musik mischt Mundart, Rock und Pop. Die Höhner sind weltweit unterwegs und treten regelmäßig auf großen Karnevalssitzungen auf. Kölscher Klassiker.',
+      beispiel: '„Viva Colonia" — wenn das anfängt, springt jeder Jecke.',
+      beispiel_hd: '„Viva Colonia" — wenn das anfängt, springt jeder Karnevalist.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-109',
+      ausdruck: 'Brings',
+      hochdeutsch: 'Brings (kölsche Rockband)',
+      bedeutung: 'Brings sind seit 1991 eine kölsche Rockband, gegründet von den Brüdern Brings. Mit Hits wie „Superjeilezick", „Kölsche Jung" und „Polka, Polka" sind sie eine Karnevalsband mit Rock-Power. Brings ist die Brücke zwischen Karneval und modernem Pop. Bei Konzerten herrscht Ausnahmezustand — Brings-Konzerte sind wie kleine Karnevalssitzungen.',
+      beispiel: 'Brings-Konzert is wie Karneval auf Speed — Hammer-Stimmung.',
+      beispiel_hd: 'Brings-Konzert ist wie Karneval auf Speed — Hammer-Stimmung.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-110',
+      ausdruck: 'Geißbock Hennes',
+      hochdeutsch: 'Geißbock Hennes (Maskottchen 1. FC Köln)',
+      bedeutung: 'Der Geißbock „Hennes" ist das lebende Maskottchen des 1. FC Köln seit 1950. Heute lebt Hennes IX (geboren 2014) im Kölner Zoo und begleitet die Mannschaft zu jedem Heimspiel. Der Name geht zurück auf Trainerlegende Hennes Weisweiler. Hennes ist Kult — auf Trikots, Fanartikeln und in der Vereinsgeschichte. Wenn Hennes ins Stadion einläuft, jubelt das ganze Müngersdorf.',
+      beispiel: 'Hennes der Neunte — der heimliche Star vom FC.',
+      beispiel_hd: 'Hennes der Neunte — der heimliche Star vom FC.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'k-111',
+      ausdruck: '1. FC Köln',
+      hochdeutsch: '1. FC Köln (Bundesligaverein)',
+      bedeutung: 'Der 1. FC Köln — der „Effzeh" — wurde 1948 gegründet und ist Kölns Traditionsverein. Spieler wie Lukas Podolski sind hier groß geworden. Vereinsfarben rot-weiß. Heimstadion: das RheinEnergieStadion in Köln-Müngersdorf. Vereinshymne: „Mer stonn zo dir, FC Kölle" — gesungen von Höhner. Die Identifikation der Kölner mit ihrem Verein ist legendär. „Spielt der FC, schließt die Stadt!"',
+      beispiel: 'Lukas Podolski isses Kölle-Idol schlechthin.',
+      beispiel_hd: 'Lukas Podolski ist das Kölle-Idol schlechthin.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'k-112',
+      ausdruck: 'Bonn',
+      hochdeutsch: 'Bonn (ehemalige Bundeshauptstadt)',
+      bedeutung: 'Bonn — südlich von Köln am Rhein — war 1949–1990 die Bundeshauptstadt der BRD. Heute Universitätsstadt mit 330.000 Einwohnern, UN-Standort und Sitz vieler Bundesbehörden (Bundesrechnungshof, BfArM). Beethoven wurde hier 1770 geboren. Das Beethoven-Haus ist Pilgerort. Bonn ist gediegener und ruhiger als Köln — die zwei Rheinstädte ergänzen sich.',
+      beispiel: 'Bonn war früher Hauptstadt — heute relaxteres Kölner Geschwister.',
+      beispiel_hd: 'Bonn war früher Hauptstadt — heute relaxteres Kölner Geschwister.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-113',
+      ausdruck: 'Düsseldorf-Rivalität',
+      hochdeutsch: 'Köln vs. Düsseldorf (ewige Rivalität)',
+      bedeutung: 'Die Rivalität zwischen Köln und Düsseldorf ist legendär — Kölsch (Köln) vs. Alt (Düsseldorf), 1. FC Köln vs. Fortuna Düsseldorf, Karneval vs. Altstadt. Beide Städte am Rhein, 40 km voneinander, aber kulturell wie verfeindet. Kölner und Düsseldorfer betreiben gegenseitige Sticheleien fast als Sport. „Tölzer" ist die kölsche Bezeichnung für Düsseldorfer — als hartes Schimpfwort gemeint.',
+      beispiel: 'Düsseldorf? Da fahren wir Kölner ungern hin.',
+      beispiel_hd: 'Düsseldorf? Da fahren wir Kölner ungern hin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-114',
+      ausdruck: 'Veedel',
+      hochdeutsch: 'Kölner Stadtviertel',
+      bedeutung: '„Veedel" ist das kölsche Wort für Stadtviertel — und ein zentrales Konzept der Kölner Identität. Jeder Kölner gehört zu seinem Veedel: Nippes, Sülz, Mülheim, Ehrenfeld, Kalk, Deutz. Jedes Veedel hat sein eigenes Karnevalskorps, seinen Stamm-Eckkneipen und seinen Charakter. Das Lied „En unserem Veedel" (Bläck Fööss) ist eine Hymne an das Stadtviertel-Gefühl.',
+      beispiel: 'En unserem Veedel kennt jeder jeden — Heimatgefühl pur.',
+      beispiel_hd: 'In unserem Stadtviertel kennt jeder jeden — Heimatgefühl pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-115',
+      ausdruck: 'Ehrenfeld',
+      hochdeutsch: 'Köln-Ehrenfeld (Kreativviertel)',
+      bedeutung: 'Ehrenfeld ist Kölns kreatives Stadtviertel — ehemals Arbeiterviertel, heute Hipster-Hochburg. Künstler, Designer, Start-ups, vegane Cafés und alternative Clubs prägen das Viertel. Multikulturell (türkisch-deutsche Wurzeln), preiswert (im Vergleich zu anderen Vierteln) und mit guter Bahnanbindung. Ehrenfeld ist „das andere Köln" — anti-establishment und doch echt kölsch.',
+      beispiel: 'In Ehrenfeld trifft sich die Kölner Kreativszene.',
+      beispiel_hd: 'In Ehrenfeld trifft sich die Kölner Kreativszene.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-116',
+      ausdruck: 'Nippes',
+      hochdeutsch: 'Köln-Nippes (Stadtviertel)',
+      bedeutung: 'Nippes ist ein traditionelles Kölner Stadtviertel im Norden — Arbeiterviertel mit Mehrfamilienhäusern, Eckkneipen und Markthalle. Der Wilhelmplatz ist Treffpunkt. Nippes hat seinen eigenen Karnevalsverein („Nippeser Bürgerwehr") und ist Heimat einiger berühmter Kölner Bands. Wenn auch nicht so trendy wie Ehrenfeld, hat Nippes Charme und echte Kölner Lebensart.',
+      beispiel: 'Nippes is wie n großes Dorf in der Großstadt.',
+      beispiel_hd: 'Nippes ist wie ein großes Dorf in der Großstadt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-117',
+      ausdruck: 'Rheinauhafen',
+      hochdeutsch: 'Rheinauhafen (umgebauter Hafen)',
+      bedeutung: 'Der Rheinauhafen ist ein moderner Stadtteil im Süden der Kölner Altstadt — auf dem Gelände eines ehemaligen Industriehafens. Die markanten „Kranhäuser" (drei Hochhäuser in Kranform) sind das Wahrzeichen. Mit Schokoladenmuseum, Sportmuseum und vielen Restaurants. Tagsüber Bürostandort, abends Ausgehmeile. Symbol für Kölns Strukturwandel — vom Industrie- zum Kreativstandort.',
+      beispiel: 'Die Kranhäuser am Rheinauhafen — moderne Wahrzeichen.',
+      beispiel_hd: 'Die Kranhäuser am Rheinauhafen — moderne Wahrzeichen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-118',
+      ausdruck: 'Schokoladenmuseum',
+      hochdeutsch: 'Imhoff Schokoladenmuseum',
+      bedeutung: 'Das Schokoladenmuseum im Rheinauhafen ist eines der beliebtesten Museen Kölns — gegründet 1993 von Schokoladenfabrikant Hans Imhoff. Mit einem 3 m hohen Schokoladenbrunnen, Live-Produktion und einer historischen Sammlung. Über 600.000 Besucher jährlich. Im Foyer steht ein originalgetreuer 3,5-Tonnen-Schokoladen-Tropenbaum. Süße Pilgerstätte für Schokoladenliebhaber.',
+      beispiel: 'Im Schokoladenmuseum kannst du heisse Schokolade kosten.',
+      beispiel_hd: 'Im Schokoladenmuseum kannst du heiße Schokolade kosten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-119',
+      ausdruck: 'Kölner Lichter',
+      hochdeutsch: 'Kölner Lichter (Feuerwerk am Rhein)',
+      bedeutung: '„Kölner Lichter" ist Kölns größtes Feuerwerk-Event — jährlich im Juli am Rheinufer. Bis zu 800.000 Zuschauer säumen die Ufer. Schiffe fahren in einem beleuchteten Konvoi den Rhein hinauf, gefolgt von einem 35-minütigen Synchron-Feuerwerk. Pyrotechnik der Spitzenklasse. Die Hochhäuser am Hafen leuchten farbig. Ein magisches Spektakel — viele Kölner machen Picknick am Rheinufer.',
+      beispiel: 'Bei den Kölner Lichtern is der Rhein wie verzaubert.',
+      beispiel_hd: 'Bei den Kölner Lichtern ist der Rhein wie verzaubert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-120',
+      ausdruck: 'Müngersdorf',
+      hochdeutsch: 'Köln-Müngersdorf (Stadtteil mit Stadion)',
+      bedeutung: 'Müngersdorf ist ein westlicher Kölner Stadtteil — bekannt für das RheinEnergieStadion (FC Köln) und den Müngersdorfer Stadtwald (Kölns „grüne Lunge"). Die Müngersdorfer Heide ist ein beliebtes Naherholungsgebiet. Beim FC-Heimspiel ist hier Karnevalsstimmung. Sonst eher ruhige, mittelständische Wohngegend mit viel Grün. Ein klassischer westlicher Kölner Stadtteil.',
+      beispiel: 'Am Wochenende grilln im Müngersdorfer Stadtwald — Familienspaß.',
+      beispiel_hd: 'Am Wochenende grillen im Müngersdorfer Stadtwald — Familienspaß.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-121',
+      ausdruck: 'Reibekuchen',
+      hochdeutsch: 'Reibekuchen / Kartoffelpuffer',
+      bedeutung: 'Reibekuchen sind Köln\'s Kartoffelpuffer — rohe Kartoffeln gerieben, mit Zwiebeln, Eiern und Mehl in der Pfanne goldbraun gebraten. Werden mit Apfelmus oder Schwarzbrot gegessen. In Köln gibt es Reibekuchen-Buden, die nur am Wochenende öffnen — die Schlangen sind lang. Auch beim Karneval und auf Weihnachtsmärkten unverzichtbar. „Reibekuchen mit Apfelmus" ist kölsche Klassikermahlzeit.',
+      beispiel: 'Frische Reibekuchen mit Apfelmus — wie bei Oma.',
+      beispiel_hd: 'Frische Reibekuchen mit Apfelmus — wie bei Oma.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-122',
+      ausdruck: 'Himmel un Äd',
+      hochdeutsch: 'Himmel und Erde (Kartoffel-Apfel-Gericht)',
+      bedeutung: '„Himmel un Äd" (Himmel und Erde) ist ein klassisches kölsches Gericht — Kartoffelpüree (Erde) und Apfelmus (Himmel), serviert mit Blutwurst und gerösteten Zwiebeln. Der süße Apfel kontrastiert mit dem deftigen Püree und der herzhaften Wurst. Eine bodenständige, ehrliche kölsche Hausmannskost — heute weniger verbreitet, aber in traditionellen Kölsch-Lokalen noch zu finden.',
+      beispiel: 'Himmel un Äd mit Blootworsch — kölsche Hausmannskost pur.',
+      beispiel_hd: 'Himmel und Erde mit Blutwurst — kölsche Hausmannskost pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-123',
+      ausdruck: 'Kölner Brauhaus',
+      hochdeutsch: 'Brauhaus (Kölsch-Lokal)',
+      bedeutung: 'Das Kölner Brauhaus ist eine Institution — Lokale wie Päffgen, Sünner, Früh, Gaffel haben oft eigene Brauereien. Hier wird Kölsch direkt vom Fass in das schmale „Kölsch-Glas" (0,2 l) gezapft und vom „Köbes" (Kellner) auf einem Tablett serviert. Solange das Glas nicht umgedreht wird, kommt das nächste Kölsch automatisch. Die Strichliste auf dem Bierdeckel wächst.',
+      beispiel: 'Im Päffgen am Tresen — kölsche Brauhauskultur pur.',
+      beispiel_hd: 'Im Päffgen am Tresen — kölsche Brauhauskultur pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-124',
+      ausdruck: 'Köbes',
+      hochdeutsch: 'Köbes (Kellner im Brauhaus)',
+      bedeutung: 'Der „Köbes" ist der Kellner im Kölner Brauhaus — eine eigene Personenkategorie. Er trägt eine blaue Schürze, hat oft einen Lederbeutel um den Hals und ist berühmt für seinen rauen, aber herzlichen Tonfall. „Wat wellste? En Kölsch?" Ein guter Köbes weiß alles über die Stammgäste, zapft mehrere Gläser gleichzeitig und hat eine Schlagfertigkeit, die nur in Köln zu finden ist.',
+      beispiel: 'Der Köbes hat immer en Spruch parat — Kölner Pubkultur.',
+      beispiel_hd: 'Der Köbes hat immer einen Spruch parat — Kölner Kneipenkultur.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-125',
+      ausdruck: 'Stange',
+      hochdeutsch: 'Kölsch-Glas (0,2 Liter, schlank)',
+      bedeutung: 'Die „Stange" ist das schmale, zylindrische 0,2-Liter-Glas, in dem Kölsch traditionell ausgeschenkt wird. Eng, schlank und elegant. Der Grund: kleine Mengen, damit das Bier immer frisch ist — Kölsch verliert schnell seinen Geschmack. Im Brauhaus serviert der Köbes meist mehrere Stangen gleichzeitig auf einem Tablett („Kranz"). Wer eine andere Form bestellt, ist kein Kölner!',
+      beispiel: 'Drei Stangen vom Päffgen — kölsche Erfrischung.',
+      beispiel_hd: 'Drei Stangen vom Päffgen — kölsche Erfrischung.',
+      kategorie: 'essen'
     }
   ]
 };

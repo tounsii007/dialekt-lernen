@@ -883,6 +883,231 @@ export default {
       beispiel: 'Bis morjen denn — Tschüssikowski!',
       beispiel_hd: 'Bis morgen denn — Tschüss!',
       kategorie: 'begruessung'
+    },
+    {
+      id: 'b-101',
+      ausdruck: 'East Side Gallery',
+      hochdeutsch: 'East Side Gallery (Mauer-Open-Air-Galerie)',
+      bedeutung: 'Die East Side Gallery ist der längste erhaltene Abschnitt der Berliner Mauer — 1,3 km am Spreeufer in Friedrichshain. Nach dem Mauerfall 1990 bemalten 118 Künstler aus 21 Ländern die Mauer mit politischen Botschaften. Das berühmteste Bild: Honecker und Breschnew küssen sich („Mein Gott, hilf mir, diese tödliche Liebe zu überleben"). Touristenmagnet und Symbol der Wiedervereinigung.',
+      beispiel: 'Det Brudderkuss-Bild an der East Side Gallery is jeweltweit bekannt.',
+      beispiel_hd: 'Das Bruderkuss-Bild an der East Side Gallery ist weltweit bekannt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-102',
+      ausdruck: 'Checkpoint Charlie',
+      hochdeutsch: 'Checkpoint Charlie (ehemaliger Grenzübergang)',
+      bedeutung: 'Der Checkpoint Charlie an der Friedrichstraße war der berühmteste Grenzübergang zwischen West- und Ost-Berlin (1961-1990). Hier eskalierte 1961 die Konfrontation zwischen US- und Sowjet-Panzern. Heute steht nur noch eine Nachbildung der Wachhäuschen — Touristenmagnet, aber kommerzialisiert. Das Mauermuseum Checkpoint Charlie zeigt Geschichten gelungener und gescheiterter Fluchten.',
+      beispiel: 'Am Checkpoint Charlie steht heute ein Schauspieler-GI.',
+      beispiel_hd: 'Am Checkpoint Charlie steht heute ein Schauspieler-GI.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-103',
+      ausdruck: 'Berghain',
+      hochdeutsch: 'Berghain (legendärer Techno-Club)',
+      bedeutung: 'Das Berghain in Friedrichshain ist der berühmteste Technoclub der Welt — in einem ehemaligen Heizkraftwerk untergebracht. Die strenge Türpolitik („Sven-Marquardt-Effekt") ist legendär: viele werden ohne Begründung abgewiesen. Wer reinkommt, erlebt 24-Stunden-Partys mit weltbesten DJs. Berlin ist Techno-Hauptstadt und das Berghain ihre Kathedrale. UNESCO erklärte Berliner Clubkultur 2021 zum Kulturerbe.',
+      beispiel: 'Mit Sven Marquardt an der Tür — vor\'m Berghain biste nüschts.',
+      beispiel_hd: 'Mit Sven Marquardt an der Tür — vor dem Berghain bist du nichts.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-104',
+      ausdruck: 'Spreewald',
+      hochdeutsch: 'Spreewald (Naturlandschaft mit Spreewaldgurken)',
+      bedeutung: 'Der Spreewald südöstlich von Berlin ist ein einzigartiges Naturreservat — die Spree teilt sich hier in 1.575 km Wasserstraßen und Fließe. UNESCO-Biosphärenreservat. Bekannt für die Spreewaldgurken (geschützte Herkunftsbezeichnung), die typischen Kahnfahrten mit dem Stocherkahn und die sorbische Tradition. Beliebtes Ausflugsziel für Berliner Wochenend-Trips.',
+      beispiel: 'Eine Kahnfahrt durchn Spreewald mit Spreewaldgurken — Berliner Sommer.',
+      beispiel_hd: 'Eine Kahnfahrt durch den Spreewald mit Spreewaldgurken — Berliner Sommer.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-105',
+      ausdruck: 'Volkspark Friedrichshain',
+      hochdeutsch: 'Volkspark Friedrichshain',
+      bedeutung: 'Der Volkspark Friedrichshain ist Berlins ältester öffentlicher Park — angelegt 1846 als Geschenk an die Berliner. Mit dem Märchenbrunnen, dem Trümmerberg „Mont Klamott" (aus Kriegstrümmern) und der Freilichtbühne ist er ein typischer Berliner Volkspark. Im Sommer Treffpunkt von Familien, Joggern, Slackliner und Grill-Crews. Im Winter Rodelhang. Berliner Lebensgefühl pur.',
+      beispiel: 'Sonntag im Volkspark grillen — Berlin-Klassiker.',
+      beispiel_hd: 'Sonntag im Volkspark grillen — Berlin-Klassiker.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-106',
+      ausdruck: 'Tempelhof',
+      hochdeutsch: 'Tempelhofer Feld (ehemaliger Flughafen)',
+      bedeutung: 'Das Tempelhofer Feld ist eine der größten innerstädtischen Freiflächen der Welt — das ehemalige Flugfeld des Flughafens Tempelhof (geschlossen 2008). 303 Hektar Asphaltpisten und Wiesen wurden 2010 für die Öffentlichkeit geöffnet. Heute: Skater, Drachenflieger, Inliner, Picknickfamilien, Urban-Farming-Projekte. Bei den Berlinern fast schon ein Heiligtum — Versuche der Bebauung wurden mehrfach abgelehnt.',
+      beispiel: 'Auf Tempelhof Inliner fahren — kilometerweit ohne Verkehr.',
+      beispiel_hd: 'Auf Tempelhof Inliner fahren — kilometerweit ohne Verkehr.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-107',
+      ausdruck: 'Mauerpark',
+      hochdeutsch: 'Mauerpark (ehemaliger Todesstreifen)',
+      bedeutung: 'Der Mauerpark zwischen Prenzlauer Berg und Wedding entstand auf dem ehemaligen Mauer-Todesstreifen. Sonntags findet hier der berühmte Flohmarkt statt — chaotisch, riesig und multikulturell. Im Park-Amphitheater steigt das legendäre „Bearpit Karaoke" — ein irischer Comedian organisiert Karaoke mit hunderten Zuschauern. Berlin-Sonntag pur.',
+      beispiel: 'Sonntag Mauerpark Flohmarkt — kult Berlin-Erlebnis.',
+      beispiel_hd: 'Sonntag Mauerpark Flohmarkt — Kult-Berlin-Erlebnis.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-108',
+      ausdruck: 'Späti',
+      hochdeutsch: 'Spätverkaufsstelle / Kiosk',
+      bedeutung: 'Der „Späti" (Spätverkauf) ist eine Berliner Institution — kleine Kioske, die bis tief in die Nacht oder 24/7 geöffnet haben. Hier kauft man Bier, Zigaretten, Snacks, Klopapier. Treffpunkt für nächtliche Spaziergänger und Partygänger. Berlin hat die höchste Spätidichte Deutschlands. Mit Sitzgelegenheit vor der Tür („Späti-Bank") sind sie Mikro-Treffpunkte des Stadtviertels.',
+      beispiel: 'Beim Späti um die Ecke kriegste alles, auch um 3 Uhr nachts.',
+      beispiel_hd: 'Beim Späti um die Ecke bekommst du alles, auch um 3 Uhr nachts.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-109',
+      ausdruck: 'Müggelsee',
+      hochdeutsch: 'Großer Müggelsee (Berlins größter See)',
+      bedeutung: 'Der Große Müggelsee im Osten Berlins ist mit 7,4 km² der größte See der Hauptstadt. Im Sommer Badeparadies, im Winter zugefroren begehbar. Die Müggelturm-Aussicht bietet Blick über halb Berlin. Mit dem Müggelsee-Dampfer kann man Rundfahrten machen. Beliebt bei Berlinern für Erholung — kostenlose Strände, Wassersport, Restaurants am Ufer. Berlin ist „Stadt am Wasser".',
+      beispiel: 'Im Sommer baden gehen am Müggelsee — Berliner Strand.',
+      beispiel_hd: 'Im Sommer baden gehen am Müggelsee — Berliner Strand.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-110',
+      ausdruck: 'Späti-Bier',
+      hochdeutsch: 'Bier aus dem Späti / Wegbier',
+      bedeutung: 'Das „Späti-Bier" ist das Berliner Wegbier — eine Flasche, die man im Späti kauft und unterwegs trinkt (in Berlin legal). Sterni (Sternburg) ist die günstigste Marke — Kult bei Studenten und Touristen. Wer in Berlin einen Sterni in der Hand hat, gehört dazu. Das offene Flaschenbier auf dem Heimweg ist Teil des Berliner Lebensgefühls — chaotisch, frei und ungezwungen.',
+      beispiel: 'Hol uns mal en Späti-Bier — ick brauch ne Sterni!',
+      beispiel_hd: 'Hol uns mal ein Späti-Bier — ich brauche ein Sternburg!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-111',
+      ausdruck: 'Funkturm',
+      hochdeutsch: 'Funkturm Berlin (Wahrzeichen)',
+      bedeutung: 'Der Berliner Funkturm — 1926 erbaut, 150 m hoch — steht auf dem Messegelände am Kaiserdamm. Er ist ein Wahrzeichen West-Berlins und sieht aus wie ein kleiner Eiffelturm. Die Aussichtsplattform und das Restaurant in 55 m Höhe bieten Blick über Berlin. Im Gegensatz zum Berliner Fernsehturm (Alex) ist der Funkturm ein Symbol der 20er Jahre — Bauhaus-Architektur und Wirtschaftswunder-Stolz vereint.',
+      beispiel: 'Vom Funkturm hat man ne andere Sicht auf Berlin als vom Alex.',
+      beispiel_hd: 'Vom Funkturm hat man eine andere Sicht auf Berlin als vom Alex.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-112',
+      ausdruck: 'Fernsehturm',
+      hochdeutsch: 'Berliner Fernsehturm am Alex',
+      bedeutung: 'Der Berliner Fernsehturm am Alexanderplatz ist mit 368 m Deutschlands höchstes Bauwerk — DDR-Prestigeobjekt, eröffnet 1969. Die Kugel in 207 m Höhe beherbergt das Drehrestaurant „Sphere", das sich in 30 Minuten um sich selbst dreht. Bei klarem Wetter bis 80 km Sicht. Der Turm war einst Symbol DDR-Macht, ist heute Touristenmagnet. Spitzname: „Telespargel".',
+      beispiel: 'Vom Telespargel siehste bis nach Brandenburg.',
+      beispiel_hd: 'Vom Fernsehturm siehst du bis nach Brandenburg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-113',
+      ausdruck: 'KaDeWe',
+      hochdeutsch: 'Kaufhaus des Westens (Luxuskaufhaus)',
+      bedeutung: 'Das KaDeWe (Kaufhaus des Westens) am Wittenbergplatz ist nach Harrods das zweitgrößte Kaufhaus Europas. Eröffnet 1907, mit 60.000 m² Verkaufsfläche. Berühmt: die Feinschmecker-Etage in der 6. Etage mit über 1.300 Käsesorten und Delikatessen aus aller Welt. Das KaDeWe steht für West-Berliner Luxus und Konsumkultur — auch im DDR-Berlin ein begehrtes Ziel für Reisende.',
+      beispiel: 'Im KaDeWe gibts Trüffel für 5000 Euro das Kilo!',
+      beispiel_hd: 'Im KaDeWe gibt es Trüffel für 5000 Euro das Kilo!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-114',
+      ausdruck: 'Berliner Mauer',
+      hochdeutsch: 'Berliner Mauer (1961-1989)',
+      bedeutung: 'Die Berliner Mauer trennte 28 Jahre lang (1961-1989) Ost- und West-Berlin — 156 km lang, mit Wachtürmen, Todesstreifen und mindestens 140 Maueropfern. Errichtet von der DDR-Führung am 13. August 1961, gefallen am 9. November 1989. Der Mauerfall war eines der wichtigsten Ereignisse des 20. Jahrhunderts. Heute erinnern Reste und Mauerstreifen-Markierungen im Asphalt an die Trennung.',
+      beispiel: 'Mei Eltern haben den Mauerfall noch live erlebt — unvergessen.',
+      beispiel_hd: 'Meine Eltern haben den Mauerfall noch live erlebt — unvergessen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-115',
+      ausdruck: 'Mauerfall',
+      hochdeutsch: '9. November 1989',
+      bedeutung: 'Der Mauerfall am 9. November 1989 war eines der bedeutendsten historischen Ereignisse — ausgelöst durch eine versehentlich falsch verkündete Reise-Erleichterung von Günter Schabowski. Tausende Ost-Berliner stürmten zur Mauer, Grenzposten ließen sie passieren. Trabbis fuhren über den Ku\'damm, Westler und Ostler umarmten sich. Der Tag markierte das Ende der DDR und der Teilung Deutschlands.',
+      beispiel: 'Der 9. November 89 war Wahnsinn — die Mauer war auf einmal wech.',
+      beispiel_hd: 'Der 9. November 89 war Wahnsinn — die Mauer war auf einmal weg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-116',
+      ausdruck: 'Trabbi',
+      hochdeutsch: 'Trabant (DDR-Auto)',
+      bedeutung: 'Der Trabant — kurz „Trabbi" — war das ikonische DDR-Auto, in Berlin allgegenwärtig. Mit Duroplast-Karosserie und Zweitakt-Motor war er nicht das beste Auto, aber zugleich Identitäts-Statussymbol der DDR. Beim Mauerfall 1989 stockten Trabbis in endlosen Kolonnen über die Grenzen Richtung Westen. Heute beliebter Oldtimer — die „Trabbi-Safari" ist Touristen-Erlebnis durch Berlin.',
+      beispiel: 'Mein Opa hat noch n Trabbi inner Garage — Liebhaberstück.',
+      beispiel_hd: 'Mein Opa hat noch einen Trabbi in der Garage — Liebhaberstück.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-117',
+      ausdruck: 'David Bowie',
+      hochdeutsch: 'David Bowie in Berlin (Hansa-Studios)',
+      bedeutung: 'David Bowie lebte 1976-1978 in West-Berlin (in Schöneberg, Hauptstraße 155) — eine seiner kreativsten Phasen. Er nahm im Hansa-Studio am Potsdamer Platz seine „Berliner Trilogie" auf: „Low", „Heroes", „Lodger". Sein Song „Heroes" (1977) ist eine Hymne über zwei Liebende an der Mauer. Bowie revolutionierte Pop und brachte Berlin musikalisch in die Welt. Memoriam-Plakette an seiner Wohnung.',
+      beispiel: 'Bowie hat in West-Berlin „Heroes" geschrieben — Hommage an die Mauer.',
+      beispiel_hd: 'Bowie hat in West-Berlin „Heroes" geschrieben — Hommage an die Mauer.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-118',
+      ausdruck: 'Liebesperlen',
+      hochdeutsch: 'Berliner Liebesperlen (Streuselsüßigkeit)',
+      bedeutung: 'Liebesperlen sind kleine, bunte Zuckerperlen — eine berlinerische Süßigkeit aus den 50er Jahren. Sie wurden in kleinen Papierröllchen verkauft („Liebesperlen-Röllchen") und sind ein klassisches Kindheitserinnerungs-Symbol für DDR- und West-Berliner. Heute Retro-Süßigkeit. „Liebesperlen" steht symbolisch für Berliner Naschkultur und Kindheit der 70er Jahre.',
+      beispiel: 'Liebesperlen-Röllchen vom Kiosk — Kindheitserinnerung.',
+      beispiel_hd: 'Liebesperlen-Röllchen vom Kiosk — Kindheitserinnerung.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-119',
+      ausdruck: 'Quark mit Leinöl',
+      hochdeutsch: 'DDR-Klassiker (Quark mit Leinöl)',
+      bedeutung: 'Quark mit Leinöl, Pellkartoffeln und Kümmel — das ist DDR-Comfort-Food und in Berlin noch sehr lebendig. Eine schlichte, aber gehaltvolle Mahlzeit aus Arbeiterzeiten. Das Leinöl gibt einen nussigen Geschmack, der Quark ist säuerlich-frisch. In Berliner Eckkneipen und ostdeutschen Restaurants noch zu finden. Symbol für ostdeutsche Esstradition.',
+      beispiel: 'Pellkartoffeln mit Quark und Leinöl — Ostberliner Hausmannskost.',
+      beispiel_hd: 'Pellkartoffeln mit Quark und Leinöl — Ostberliner Hausmannskost.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-120',
+      ausdruck: 'Halbe Hähnchen',
+      hochdeutsch: 'Goldbroiler (DDR-Hähnchen)',
+      bedeutung: 'Das „Hähnchen" oder „Halbe Hähnchen" ist ein Berliner und ostdeutscher Klassiker — in der DDR „Goldbroiler" genannt. Knusprig gebratenes halbes Hähnchen mit Salz, Paprika und Knoblauch. Wird in Imbissbuden und auf Festen angeboten. Der „Goldbroiler" ist DDR-Nostalgie pur — bis heute ein Berliner Soulfood-Klassiker. Mit Brötchen und Bier perfekt.',
+      beispiel: 'Halbet Hähnchen für 3 Euro — Berliner Volksspeise.',
+      beispiel_hd: 'Halbes Hähnchen für 3 Euro — Berliner Volksspeise.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-121',
+      ausdruck: 'Berliner Bär',
+      hochdeutsch: 'Berliner Bär (Stadtwappen-Symbol)',
+      bedeutung: 'Der Berliner Bär ist seit dem 13. Jahrhundert Berlins Wappentier — Symbol der Stadt seit 800 Jahren. Bunte Bären-Skulpturen schmücken die Stadt („United Buddy Bears"). Der Goldene Bär ist der Hauptpreis der Berlinale (Filmfestspiele). Der Bär steht für Berliner Stärke und Eigenständigkeit. Aufgemalt, in Bronze, als Statue — er ist überall in der Hauptstadt zu sehen.',
+      beispiel: 'Der Berliner Bär isn Stadtwahrzeichen seit 800 Jahren.',
+      beispiel_hd: 'Der Berliner Bär ist Stadtwahrzeichen seit 800 Jahren.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-122',
+      ausdruck: 'Berlinale',
+      hochdeutsch: 'Berlinale (Internationale Filmfestspiele)',
+      bedeutung: 'Die Berlinale (Internationale Filmfestspiele Berlin) sind eines der wichtigsten Filmfestivals der Welt — neben Cannes und Venedig. Jährlich im Februar in Berlin. Der „Goldene Bär" und der „Silberne Bär" sind die Hauptpreise. Über 400.000 Tickets werden verkauft — die Berlinale ist eines der publikumsstärksten Festivals. Politische Filme stehen oft im Mittelpunkt, was die Berlinale einzigartig macht.',
+      beispiel: 'Bei der Berlinale stehen Hollywood-Stars am Potsdamer Platz.',
+      beispiel_hd: 'Bei der Berlinale stehen Hollywood-Stars am Potsdamer Platz.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-123',
+      ausdruck: 'Currywurst-Museum',
+      hochdeutsch: 'Berliner Currywurst-Museum',
+      bedeutung: 'Berlin behauptet, die Currywurst sei dort 1949 von Herta Heuwer erfunden worden. Ihr ursprünglicher Imbiss „Imbiss Heuwer" stand am Stuttgarter Platz. 2009 eröffnete das Deutsche Currywurst-Museum in Mitte — über die Geschichte und Kultur der Currywurst. Berliner und Bochumer streiten bis heute, wer die echte Currywurst hat. In Berlin gehört sie zum Stadtbild wie das Brandenburger Tor.',
+      beispiel: 'Berlin oder Bochum — woher kommt die Currywurst wirklich?',
+      beispiel_hd: 'Berlin oder Bochum — woher kommt die Currywurst wirklich?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-124',
+      ausdruck: 'Pommes mit Allem',
+      hochdeutsch: 'Pommes mit Currysauce und Ketchup',
+      bedeutung: '„Pommes mit allem" ist die Berliner Bestellung an der Imbissbude: Pommes mit Currysauce und Ketchup, manchmal auch mit Mayo. Im Gegensatz zum Ruhrpott (Pommes Schranke) hat Berlin seine eigene Pommes-Kultur. „Curry mit Pommes Schranke" mit halb Mayo, halb Ketchup. Die Pommes-Mayo-Ketchup-Combo ist Berlin-Essential.',
+      beispiel: 'Einmal Currywurst mit Pommes mit allem, bitte!',
+      beispiel_hd: 'Einmal Currywurst mit Pommes mit allem, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-125',
+      ausdruck: 'Lange Nacht der Museen',
+      hochdeutsch: 'Lange Nacht der Museen Berlin',
+      bedeutung: 'Die Lange Nacht der Museen ist ein Berliner Event seit 1997 — zweimal jährlich öffnen über 80 Museen ihre Türen bis tief in die Nacht. Ein Sammel-Ticket berechtigt zum Besuch aller Häuser und zur kostenlosen Nutzung von Shuttle-Bussen. Tausende Berliner und Touristen ziehen von Museum zu Museum. Berlin hat die zweithöchste Museumsdichte Europas — und macht sie zugänglich.',
+      beispiel: 'In der Langen Nacht schaffe i 5 Museen — kosmischer Marathon!',
+      beispiel_hd: 'In der Langen Nacht schaffe ich 5 Museen — kultureller Marathon!',
+      kategorie: 'musik'
     }
   ]
 };
