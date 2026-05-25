@@ -10,6 +10,7 @@ const MAX_DIALECTS = 5;
 const MAX_AUSDRUECKE = 10;
 const FOCUS_DELAY_MS = 50;
 const DEBOUNCE_MS = 120;
+const FUZZY_THRESHOLD = 0.25;
 const RECENT_KEY = 'dialekto:recent-search';
 const RECENT_MAX = 5;
 
@@ -69,7 +70,7 @@ function commands() {
 
 function dialectMatches(query) {
   if (!query) return DIALEKTE.slice(0, MAX_DIALECTS).map(toDialectItem);
-  return fuzzyDialekte(query, { limit: MAX_DIALECTS, threshold: 0.25 }).map(toDialectItem);
+  return fuzzyDialekte(query, { limit: MAX_DIALECTS, threshold: FUZZY_THRESHOLD }).map(toDialectItem);
 }
 
 function toDialectItem(d) {
@@ -86,19 +87,28 @@ function toDialectItem(d) {
 
 function ausdruckMatches(query) {
   if (!query && !activeDialektFilter) return [];
+
   let results = query
-    ? fuzzyAusdruecke(query, { limit: MAX_AUSDRUECKE, threshold: 0.25 })
+    ? fuzzyAusdruecke(query, { limit: MAX_AUSDRUECKE, threshold: FUZZY_THRESHOLD })
     : [];
+
   if (activeDialektFilter) {
-    results = results.filter(a => a.dialektId === activeDialektFilter);
+    results = results.filter((a) => a.dialektId === activeDialektFilter);
+    // Filter active but empty query → show the first N from that dialect
     if (!results.length && !query) {
-      // Show first 10 from filtered dialect
-      const d = DIALEKTE.find(x => x.id === activeDialektFilter);
-      if (d) results = d.ausdruecke.slice(0, MAX_AUSDRUECKE).map(a => ({
-        ...a, dialektId: d.id, dialektName: d.name, dialektFlag: d.flag, dialektFarbe: d.farbe
-      }));
+      const dialekt = DIALEKTE.find((x) => x.id === activeDialektFilter);
+      if (dialekt) {
+        results = dialekt.ausdruecke.slice(0, MAX_AUSDRUECKE).map((a) => ({
+          ...a,
+          dialektId: dialekt.id,
+          dialektName: dialekt.name,
+          dialektFlag: dialekt.flag,
+          dialektFarbe: dialekt.farbe,
+        }));
+      }
     }
   }
+
   return results.map((a) => ({
     id: `a:${a.dialektId}:${a.id}`,
     icon: null,
@@ -141,7 +151,7 @@ function renderGroup(title, items) {
   return el('div', { class: 'cmdp-group' },
     el('div', { class: 'cmdp-group-title' }, title),
     el('div', { class: 'cmdp-group-items' },
-      ...items.map((item, i) => renderItem(item, i))
+      ...items.map((item) => renderItem(item))
     )
   );
 }
@@ -217,12 +227,11 @@ function renderSearchResults(query) {
   if (!activeDialektFilter) {
     const cmds = commandMatches(needle);
     if (cmds.length) groups.push(['Aktionen', cmds]);
-  }
-  // Dialekte: ohne Query alle ersten paar; mit Query fuzzy.
-  if (!activeDialektFilter) {
+
     const dials = dialectMatches(raw);
     if (dials.length) groups.push(['Dialekte', dials]);
   }
+
   const ausds = ausdruckMatches(raw);
   if (ausds.length) groups.push(['Ausdrücke', ausds]);
 
