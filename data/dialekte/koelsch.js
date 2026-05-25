@@ -2360,6 +2360,276 @@ export default {
       beispiel: 'Z\'Heimattag treffen sich Kölner aus aller Welt!',
       beispiel_hd: 'Zum Heimattag treffen sich Kölner aus aller Welt!',
       kategorie: 'feiern'
+    },
+    {
+      id: 'k-266',
+      ausdruck: 'Köbes',
+      hochdeutsch: 'Kölscher Kellner',
+      bedeutung: 'Der „Köbes" ist der traditionelle Kölner Brauhaus-Kellner — mit blauer Schürze, weißem Hemd, oft mit Berliner Schnauze. Stammt vom Vornamen „Jakob" (Köb). Bekannt für seine direkte Art: bestellt nicht, sondern bekommt automatisch ein Kölsch nach dem anderen. „Mer brauchen kein\' Speisekarte beim Köbes!". Symbol für Kölner Brauhauskultur und Trink-Ritual. Touristen sind oft schockiert von der direkten Art.',
+      beispiel: 'Der Köbes bringt schon das nächste Kölsch!',
+      beispiel_hd: 'Der Kellner bringt schon das nächste Kölsch!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-267',
+      ausdruck: 'Stange',
+      hochdeutsch: 'Kölsch-Glas (0,2 Liter)',
+      bedeutung: 'Die „Stange" ist das klassische Kölsch-Glas — schlankes Stangenglas mit 0,2 Litern. Standard-Größe in Kölner Brauhäusern. „Eine Stange, bitte!" als Bestellung. Im Gegensatz zu süddeutschem Maßkrug klein, deutlich kleiner. Wird im „Kranz" auf dem Tablett serviert (12 Stangen). Symbol für Kölner Bier-Tradition. Köln-spezifische Glas-Form, gesetzlich geschützt. Touristen sind oft überrascht von der kleinen Größe.',
+      beispiel: 'Mer bestellen nur Stangen!',
+      beispiel_hd: 'Wir bestellen nur Stangen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-268',
+      ausdruck: 'Kranz',
+      hochdeutsch: 'Kranz (Kölsch-Tablett)',
+      bedeutung: 'Der „Kranz" ist das runde Holz-Tablett mit Löchern für 12 Kölsch-Stangen — getragen vom Köbes. Tradition seit dem 19. Jahrhundert. „Im Kranz" werden Kölsch-Bestellungen serviert. „Kranz tragen" als Köbes-Fertigkeit (12 volle Stangen sind schwer!). Symbol für Kölner Brauhaus-Effizienz. Beim Servieren wird leise „Kölsch!" gerufen.',
+      beispiel: 'Der Köbes kommt mit\'m Kranz voller Kölsch!',
+      beispiel_hd: 'Der Kellner kommt mit dem Tablett voller Kölsch!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-269',
+      ausdruck: 'Bierdeckel',
+      hochdeutsch: 'Bierdeckel (mit Strichen)',
+      bedeutung: 'Der „Bierdeckel" im Kölner Brauhaus dient als Zähler — jedes Kölsch wird mit einem Strich vermerkt. Wer keinen Bierdeckel mehr will, legt das Glas darauf — Köbes versteht. „Strich auf\'n Bierdeckel" als Standard-Bestell-Sprache. Symbol für Kölner Brauhaus-Effizienz. Touristen müssen das Prinzip lernen — kein Bestellen mit Worten nötig. Ein typisches Kölner Detail.',
+      beispiel: 'Vier Striche auf\'m Bierdeckel — das nächste kommt!',
+      beispiel_hd: 'Vier Striche auf dem Bierdeckel — das nächste kommt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-270',
+      ausdruck: 'Päffgen',
+      hochdeutsch: 'Päffgen (Brauhaus)',
+      bedeutung: '„Päffgen" ist eines der ältesten Kölner Brauhäuser — seit 1883 in Ehrenfeld, eigene Brauerei. „Päffgen-Kölsch" gilt als eines der besten Kölner Biere. Authentische Brauhaus-Atmosphäre, Holzbänke, Bratwurst, „Halver Hahn". Touristen-Hotspot, aber auch Kölner Stammgäste. Symbol für authentisches Kölner Brauhaus. „Im Päffgen schmeckt\'s am besten!".',
+      beispiel: 'Im Päffgen gibt\'s das beste Kölsch!',
+      beispiel_hd: 'Im Päffgen gibt es das beste Kölsch!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-271',
+      ausdruck: 'Sion',
+      hochdeutsch: 'Sion (Brauhaus + Kölsch)',
+      bedeutung: '„Sion" ist Kölner Brauhaus und Kölsch-Marke — gegründet 1318! Wahrhaft historisch. „Brauhaus Sion" in der Innenstadt nahe dem Dom. „Sion Kölsch" als Hauptmarke. Mittelalterliche Atmosphäre. Symbol für Kölner Bier-Geschichte. Eines der ältesten Brauereien Deutschlands. Touristen-Magnet wegen Geschichte und Nähe zum Dom.',
+      beispiel: 'Sion gibt\'s seit 1318!',
+      beispiel_hd: 'Sion gibt es seit 1318!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-272',
+      ausdruck: 'Früh',
+      hochdeutsch: 'Früh (Brauhaus + Kölsch)',
+      bedeutung: '„Früh" ist Kölner Brauhaus und Kölsch-Marke — „Brauhaus Früh am Dom" als Hauptlokal direkt neben dem Dom. „Früh Kölsch" als sehr populäre Marke. Touristen-Hotspot mit traditioneller Kölner Atmosphäre. Großer Bier-Garten im Sommer. Symbol für Kölner Brauerei-Tradition und Touristen-Wirtschaft. „Mer geh\'n ins Früh nach dem Dom!".',
+      beispiel: 'Nach\'m Dom gehen wir ins Früh am Dom!',
+      beispiel_hd: 'Nach dem Dom gehen wir ins Früh am Dom!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-273',
+      ausdruck: 'Gaffel',
+      hochdeutsch: 'Gaffel (Brauerei)',
+      bedeutung: '„Gaffel" ist Kölner Brauerei — seit 1908. „Gaffel Kölsch" als bekannte Marke. „Gaffel Brauhaus" als Kult-Lokal mit moderner Brauhaus-Atmosphäre. Gehört zu den größeren Kölner Brauereien. Symbol für Kölner Brauerei-Industrie. Auch in Veranstaltungs-Sponsoring präsent. Beim Karneval allgegenwärtig.',
+      beispiel: 'Gaffel ist mein Lieblings-Kölsch!',
+      beispiel_hd: 'Gaffel ist mein Lieblings-Kölsch!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-274',
+      ausdruck: 'Reissdorf',
+      hochdeutsch: 'Reissdorf (Brauerei)',
+      bedeutung: '„Reissdorf" ist Kölner Brauerei — seit 1894. „Reissdorf Kölsch" als beliebte Marke. Familienunternehmen in 4. Generation. „Brauhaus Reissdorf" in der Severinstraße (Vringsveedel). Symbol für kleinere, traditionelle Kölner Brauerei. Im Gegensatz zu großen Konzernen mehr handwerklich-familiär. Kölner trinken oft „ihre" Marke.',
+      beispiel: 'Mei Vatter trinkt nur Reissdorf!',
+      beispiel_hd: 'Mein Vater trinkt nur Reissdorf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-275',
+      ausdruck: 'Mühlen',
+      hochdeutsch: 'Mühlen Kölsch (Brauerei)',
+      bedeutung: '„Mühlen" ist Kölner Brauerei — „Mühlen Kölsch" als bekannte Marke. „Brauhaus Mühlen Kölsch" in der Innenstadt. Eines der bekannteren Kölner Biere. Gehört zur Mühlen-Gruppe (Aktien-Brauerei). Symbol für mittelgroße Kölner Brauerei-Marke. Im Karneval allgegenwärtig. Tradition und Moderne kombiniert.',
+      beispiel: 'A Mühlen Kölsch zum Halve Hahn!',
+      beispiel_hd: 'Ein Mühlen Kölsch zum Halve Hahn!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-276',
+      ausdruck: 'Dom',
+      hochdeutsch: 'Dom Kölsch (Brauerei)',
+      bedeutung: '„Dom" ist Kölner Brauerei — „Dom Kölsch" als Marke. Im Karneval und am Dom allgegenwärtig. „Dom-Bier" als touristen-orientierte Marke. Mit dem Namen „Dom" perfekt für die Touristen-Wirtschaft. Symbol für kölnische Marken-Strategie mit Wahrzeichen-Bezug. Wird oft in Touristen-Lokalen serviert.',
+      beispiel: 'Touristen trinken oft Dom Kölsch.',
+      beispiel_hd: 'Touristen trinken oft Dom Kölsch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-277',
+      ausdruck: 'Halver Hahn',
+      hochdeutsch: 'Halver Hahn (Kölner Käse-Brötchen)',
+      bedeutung: 'Der „Halver Hahn" ist Kölner Spezialität — Roggenbrötchen mit Holländerkäse, Senf, Zwiebel-Ringen, Gurken. KEIN Hähnchen! Klassisch zum Kölsch in jedem Brauhaus serviert. „Mer hatten Halver Hahn und Kölsch — typisch Köln!". Symbol für Kölner Brauhaus-Esskultur. Touristen sind oft enttäuscht (kein Fleisch!), Kölner lieben es.',
+      beispiel: 'Halver Hahn und ein Kölsch, bitte!',
+      beispiel_hd: 'Halver Hahn und ein Kölsch, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-278',
+      ausdruck: 'Hämchen',
+      hochdeutsch: 'Eisbein (Kölner Spezialität)',
+      bedeutung: 'Das „Hämchen" ist Kölner Spezialität — gekochte Schweinshaxe (= Eisbein) mit Sauerkraut und Erbspüree. Tradition seit dem Mittelalter. In Brauhäusern als deftige Hauptmahlzeit. „Hämchen mit Kölsch" als Kölner Klassiker. Symbol für Kölner Brauhaus-Esskultur. Im Gegensatz zur süddeutschen gebratenen Schweinshaxe gekocht und zarter.',
+      beispiel: 'A Hämchen mit Sauerkraut, bittsche!',
+      beispiel_hd: 'Ein Hämchen mit Sauerkraut, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-279',
+      ausdruck: 'Himmel un Ääd',
+      hochdeutsch: 'Himmel und Erde (Kartoffel-Apfel)',
+      bedeutung: '„Himmel un Ääd" ist Kölner Spezialität — Kartoffelpüree (Erde) mit Apfelmus (Himmel), dazu Blutwurst und Zwiebeln. Stammt aus dem rheinischen Bauern-Essen. „Himmel un Ääd mit Flönz" als klassische Variante. Symbol für Kölner Hausmannskost. „Süß und herzhaft, wie das Leben!". Im Brauhaus als Tagesgericht.',
+      beispiel: 'Z\'Mittag gibt\'s Himmel un Ääd mit Flönz!',
+      beispiel_hd: 'Zum Mittag gibt es Himmel und Erde mit Blutwurst!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-280',
+      ausdruck: 'Flönz',
+      hochdeutsch: 'Blutwurst (kölsch)',
+      bedeutung: '„Flönz" ist kölscher Name für Blutwurst — wichtige Zutat in „Himmel un Ääd". „Flönz mit Senf" als Brauhaus-Snack. Wird auch alleine gegessen, mit Brot. Klassische Bauern-Wurst. Symbol für Kölner Bauern-Erbe und einfache Kost. Auch metaphorisch: „A bisschen Flönz" für etwas Geringfügiges.',
+      beispiel: 'Bring mer Flönz mit Senf!',
+      beispiel_hd: 'Bring mir Blutwurst mit Senf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-281',
+      ausdruck: 'Sauerbraten',
+      hochdeutsch: 'Rheinischer Sauerbraten',
+      bedeutung: 'Der „Rheinische Sauerbraten" ist Kölner Spezialität — Rindfleisch in Essig-Lebkuchen-Soße, mit Rosinen und Apfelkraut. Klassisches Sonntagsessen. „Mit Knödeln und Apfelmus" serviert. Süß-sauer-Geschmack typisch rheinisch. Symbol für Kölner Sonntagsesskultur. Brauhaus-Klassiker. Tradition seit Karl dem Großen (angeblich).',
+      beispiel: 'Sonntags gibt\'s Rheinischen Sauerbraten!',
+      beispiel_hd: 'Sonntags gibt es Rheinischen Sauerbraten!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-282',
+      ausdruck: 'Mettbrötchen',
+      hochdeutsch: 'Mett-Brötchen',
+      bedeutung: 'Das „Mettbrötchen" ist Kölner Frühstücks-Klassiker — Brötchen mit rohem Hackfleisch und Zwiebeln. „Mettbrötchen mit Salz" als typisches Bäckerei-Angebot. Symbol für Kölner Direktheit beim Essen. Heute aus Hygiene-Gründen seltener — aber in traditionellen Kölner Bäckereien noch erhältlich. „Mett-Igel" als Partygebäck.',
+      beispiel: 'A Mettbrötchen vom Bäcker zum Frühstück!',
+      beispiel_hd: 'Ein Mettbrötchen vom Bäcker zum Frühstück!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-283',
+      ausdruck: 'Reibekuchen',
+      hochdeutsch: 'Reibekuchen (kölsch)',
+      bedeutung: '„Reibekuchen" sind Kölner Spezialität — geriebene Kartoffeln, in Pfanne gebraten, mit Apfelmus oder Rübenkraut. „Mit Lachs" als gehobene Variante. Auf Karnevalsmärkten allgegenwärtig. „Reibekuchen-Bude" als Karnevals-Stand. Symbol für Kölner Winter-Essen und Volksfest-Kultur. Im Vergleich zu Berliner „Kartoffelpuffer"-Tradition dünner und knuspriger.',
+      beispiel: 'Reibekuchen mit Apfelmus auf\'m Markt!',
+      beispiel_hd: 'Reibekuchen mit Apfelmus auf dem Markt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-284',
+      ausdruck: 'Mostert',
+      hochdeutsch: 'Senf (kölsch)',
+      bedeutung: 'Der „Mostert" ist kölscher Name für Senf — verwandt mit niederländisch „mosterd". Wird zum „Halve Hahn" und zur Mettwurst serviert. Im Brauhaus steht der „Mostertpott" am Tisch bereit. Kölner Senftradition reicht bis ins Mittelalter zurück. Symbol für Kölner Brauhauskultur. „Ohne Mostert kein Halve Hahn!".',
+      beispiel: 'Mer brauchen noch Mostert zum Halve Hahn!',
+      beispiel_hd: 'Wir brauchen noch Senf zum Halve Hahn!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-285',
+      ausdruck: 'Klatschkäs',
+      hochdeutsch: 'Klatschkäse / Quark',
+      bedeutung: 'Der „Klatschkäs" ist kölscher Name für Quark — wird mit Zwiebeln, Kümmel und Schnittlauch zu Pellkartoffeln serviert. „Klatschkäs mit Salzkartoffeln" als Brauhaus-Klassiker. Auch zu Schwarzbrot beliebt. Symbol für Kölner Brauhaus-Esskultur und einfache Kost. Spezifisch kölscher Begriff — in anderen Regionen „Quark" oder „Topfen".',
+      beispiel: 'Klatschkäs mit Pellkartoffeln und Salz!',
+      beispiel_hd: 'Quark mit Pellkartoffeln und Salz!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-286',
+      ausdruck: 'Bier-Garten',
+      hochdeutsch: 'Bier-Garten',
+      bedeutung: 'Der „Bier-Garten" ist Kölner Brauhaus-Tradition — Gartenbereich mit Bänken, Tischen, oft unter Kastanien-Bäumen. „Früh am Dom" und „Päffgen" haben berühmte Bier-Gärten. Im Sommer von Mai bis September geöffnet. „Bier-Garten-Saison" als Kölner Sommer-Highlight. Symbol für Kölner Outdoor-Lebensfreude. Touristen lieben es.',
+      beispiel: 'Im Sommer sitzt mer im Bier-Garten!',
+      beispiel_hd: 'Im Sommer sitzt man im Bier-Garten!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-287',
+      ausdruck: 'Hopfenbitter',
+      hochdeutsch: 'Hopfenbitter (Schnaps)',
+      bedeutung: 'Der „Hopfenbitter" ist Kölner Kräuter-Schnaps — bitterer Likör aus Hopfen, Anis, Wermut. Als Verdauungs-Schnaps nach dem Brauhaus-Essen. „Hopfenbitter zum Verdauen" als Brauhaus-Klassiker. Symbol für Kölner Brauhaus-Tradition. Im Gegensatz zu süddeutschen Obstbränden mehr bitter-medizinisch. „Mer trinken kein Schnaps, mer trinken Medizin!".',
+      beispiel: 'A Hopfenbitter zum Verdauen, bittsche!',
+      beispiel_hd: 'Ein Hopfenbitter zum Verdauen, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-288',
+      ausdruck: 'Brauhaus-Tour',
+      hochdeutsch: 'Brauhaus-Rundgang',
+      bedeutung: 'Die „Brauhaus-Tour" ist Kölner Touristik-Konzept — geführter Rundgang durch mehrere Kölner Brauhäuser mit Bier-Verkostung. „Vier Brauhäuser in vier Stunden" als typisches Programm. Touristen lernen Kölner Bier-Kultur kennen. Symbol für Kölner Brauhaus-Tourismus. Beliebt bei Junggesellinnen-Abschieden und Firmen-Events.',
+      beispiel: 'Wir machen heut a Brauhaus-Tour!',
+      beispiel_hd: 'Wir machen heute eine Brauhaus-Tour!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-289',
+      ausdruck: 'Kölsch-Konvention',
+      hochdeutsch: 'Kölsch-Konvention (Marken-Schutz)',
+      bedeutung: 'Die „Kölsch-Konvention" ist gesetzlicher Schutz für Kölsch — Bier darf nur als „Kölsch" verkauft werden, wenn es in oder um Köln gebraut wird. Sechs-Punkt-Charakteristik: hell, helle Hopfen, obergärig, gefiltert, hochvergoren, in Stangen serviert. Seit 1985 in Kraft. Symbol für Kölner Bier-Identität und gesetzlichen Schutz. Düsseldorfer Altbier hat ähnliche Konvention.',
+      beispiel: 'Kölsch darf nur in Köln gebraut werden!',
+      beispiel_hd: 'Kölsch darf nur in Köln gebraut werden!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-290',
+      ausdruck: 'Obergärig',
+      hochdeutsch: 'obergärig (Brauverfahren)',
+      bedeutung: '„Obergärig" ist das Brauverfahren von Kölsch — Hefe steigt während der Gärung nach oben (im Gegensatz zu „untergärig"). Untergäriges Bier (Pils, Helles) braut man bei 4-9°C, obergäriges (Kölsch, Alt, Weizen) bei 15-20°C. „Obergärig" als Kölsch-Qualitäts-Merkmal. Symbol für Kölner Brauerei-Tradition. Touristen lernen das beim Brauhaus-Besuch.',
+      beispiel: 'Kölsch is\' obergärig gebraut!',
+      beispiel_hd: 'Kölsch ist obergärig gebraut!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-291',
+      ausdruck: 'Reinheitsgebot',
+      hochdeutsch: 'Bayerisches Reinheitsgebot',
+      bedeutung: 'Das „Reinheitsgebot" ist 1516 in Bayern erlassenes Gesetz — Bier darf nur aus Wasser, Malz, Hopfen und Hefe bestehen. Auch in Kölner Brauereien strenge Tradition. „Reinheitsgebot eingehalten" als Qualitäts-Marker. Symbol für deutsche Brau-Qualität. Touristen sind beeindruckt: das älteste Lebensmittelgesetz der Welt!',
+      beispiel: 'Kölsch wird nach dem Reinheitsgebot gebraut!',
+      beispiel_hd: 'Kölsch wird nach dem Reinheitsgebot gebraut!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-292',
+      ausdruck: 'Sünner',
+      hochdeutsch: 'Sünner (Brauerei, älteste in Köln)',
+      bedeutung: '„Sünner" ist Kölns älteste noch existierende Brauerei — seit 1830 in Deutz. Familienbetrieb in 6. Generation. „Sünner Kölsch" als traditionelle Marke. Brauhaus mit historischer Atmosphäre und eigenem Brauerei-Museum. Symbol für Kölner Brauerei-Geschichte und Tradition. Im Gegensatz zu großen Konzernen mehr handwerklich. Touristen lieben die Geschichte.',
+      beispiel: 'Sünner ist die älteste Kölner Brauerei!',
+      beispiel_hd: 'Sünner ist die älteste Kölner Brauerei!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-293',
+      ausdruck: 'Kölsch-Liebhaber',
+      hochdeutsch: 'Kölsch-Liebhaber',
+      bedeutung: 'Der „Kölsch-Liebhaber" ist jemand, der Kölsch liebt und verteidigt — gegen Pils, Alt, Helles oder Weizen. Kölner sind oft fanatisch in ihrer Bier-Liebe. „Düsseldorfer Alt ist kein Bier!" als typischer Kommentar. Symbol für Kölner Bier-Patriotismus. Im Gegensatz zu süddeutschen Bayern-Verbänden ähnlicher Identifikation. „Mein Kölsch is\' meine Religion!".',
+      beispiel: 'A echter Kölsch-Liebhaber trinkt kein Pils!',
+      beispiel_hd: 'Ein echter Kölsch-Liebhaber trinkt kein Pils!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-294',
+      ausdruck: 'Brauhaus-Sprache',
+      hochdeutsch: 'Brauhaus-Sprache (Köbes-Schnack)',
+      bedeutung: 'Die „Brauhaus-Sprache" ist Kölner Brauhaus-Slang — Köbes mit direkter Art, Gäste mit kölschen Sprüchen. „Kölsch un Köbes" als untrennbares Paar. „Brauhaus-Witze" zwischen Köbes und Stammgästen. Symbol für Kölner Brauhauskultur und Sprach-Tradition. Touristen lernen die Brauhaus-Sprache als Köln-Erlebnis kennen.',
+      beispiel: 'D\'Brauhaus-Sprache lernt mer beim Trinken!',
+      beispiel_hd: 'Die Brauhaus-Sprache lernt man beim Trinken!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-295',
+      ausdruck: 'Kölscher Brauhaus-Tag',
+      hochdeutsch: 'Kölner Brauhaus-Tag',
+      bedeutung: 'Der „Kölsche Brauhaus-Tag" ist jährliches Fest der Kölner Brauereien — meist im Mai. Verkostungen, Brauerei-Touren, Spezial-Aktionen. „Brauhaus-Pass" für ermäßigte Verkostungen. Symbol für Kölner Brauerei-Tourismus und Marken-Marketing. Beliebt bei Touristen und Kölner Bier-Fans. Geht durch alle Veedel.',
+      beispiel: 'Z\'Brauhaus-Tag besuchen wir alle Kölner Brauereien!',
+      beispiel_hd: 'Zum Brauhaus-Tag besuchen wir alle Kölner Brauereien!',
+      kategorie: 'feiern'
     }
   ]
 };
