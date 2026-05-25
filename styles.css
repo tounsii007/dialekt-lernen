@@ -6101,5 +6101,61 @@ html {
 .mobile-nav-center.is-active { color: var(--brand); }
 .mobile-nav-center.is-active::before { display: none; }
 
+/* ============================================================ */
+/* Iteration 33 — Animated Word Carousel in Hero               */
+/* ============================================================ */
+
+.word-carousel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 99px;
+  background: color-mix(in oklab, var(--brand) 8%, var(--bg-elev));
+  border: 1.5px solid color-mix(in oklab, var(--brand) 18%, var(--border));
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--sp-4);
+  cursor: default;
+  user-select: none;
+}
+.carousel-prefix {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+.carousel-flag {
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: transform 0.3s var(--ease-spring);
+}
+.carousel-word {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 1.05rem;
+  display: inline-block;
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.carousel-word.carousel-exit {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.carousel-word.carousel-enter {
+  animation: carouselIn 0.38s var(--ease-spring) both;
+}
+@keyframes carouselIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.92); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.carousel-name {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 2px 8px;
+  background: var(--bg-soft);
+  border-radius: 99px;
+  white-space: nowrap;
+}
+
 
 

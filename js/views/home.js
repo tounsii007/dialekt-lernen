@@ -23,7 +23,12 @@ export function renderHome(root) {
         el('span', { html: '✨' }),
         'Deutsche Sprachvielfalt entdecken'
       ),
-      el('h1', { html: 'Lerne Dialekte aus <span class="grad">ganz Deutschland</span>.' }),
+      el('h1', {},
+        'Lerne Dialekte aus ',
+        el('span', { class: 'grad' }, 'ganz Deutschland'),
+        '.'
+      ),
+      buildWordCarousel(),
       el('p', {}, 'Vom Frankfurter „Ei guude" bis zum Wiener „Schmäh": Tauche ein in regionale Ausdrücke, lerne mit Karteikarten und teste dich im Quiz — alles erklärt auf Hochdeutsch.'),
       el('div', { class: 'hero-cta' },
         el('button', { class: 'btn btn-primary', dataset: { magnetic: '16' }, onClick: () => go('#/entdecken') },
@@ -246,4 +251,52 @@ function renderDailyExpression() {
       )
     )
   );
+}
+
+function buildWordCarousel() {
+  // Sample of expressive dialect words to cycle through
+  const WORDS = [
+    { word: 'Ei guude!', flag: '🎭', name: 'Hessisch' },
+    { word: 'Moin!',     flag: '⛵', name: 'Plattdeutsch' },
+    { word: 'Servus!',   flag: '🥨', name: 'Bayerisch' },
+    { word: 'Jeck!',     flag: '🎉', name: 'Kölsch' },
+    { word: 'Digger!',   flag: '🐼', name: 'Berlinisch' },
+    { word: 'Oidà!',     flag: '🏔️', name: 'Wienerisch' },
+    { word: 'Grüezi!',   flag: '🏔️', name: 'Schweizerdeutsch' },
+    { word: 'Goggelmo!', flag: '🦊', name: 'Sächsisch' }
+  ];
+
+  let idx = 0;
+  const wordEl = el('span', { class: 'carousel-word' }, WORDS[0].word);
+  const flagEl = el('span', { class: 'carousel-flag' }, WORDS[0].flag);
+  const nameEl = el('span', { class: 'carousel-name' }, WORDS[0].name);
+  const wrap = el('div', { class: 'word-carousel', ariaLive: 'polite' },
+    el('span', { class: 'carousel-prefix' }, 'z.B. '),
+    flagEl, wordEl, nameEl
+  );
+
+  let interval;
+  function advance() {
+    wordEl.classList.add('carousel-exit');
+    setTimeout(() => {
+      idx = (idx + 1) % WORDS.length;
+      wordEl.textContent = WORDS[idx].word;
+      flagEl.textContent = WORDS[idx].flag;
+      nameEl.textContent = WORDS[idx].name;
+      wordEl.classList.remove('carousel-exit');
+      wordEl.classList.add('carousel-enter');
+      setTimeout(() => wordEl.classList.remove('carousel-enter'), 400);
+    }, 250);
+  }
+
+  // Start cycling after mount
+  setTimeout(() => {
+    interval = setInterval(advance, 2800);
+  }, 1800);
+
+  // Pause on hover
+  wrap.addEventListener('mouseenter', () => clearInterval(interval));
+  wrap.addEventListener('mouseleave', () => { interval = setInterval(advance, 2800); });
+
+  return wrap;
 }
