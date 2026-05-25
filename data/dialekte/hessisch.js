@@ -2062,6 +2062,276 @@ export default {
       beispiel: 'Der Hessentag bringt jedes Jahr eine andere Stadt ins Rampenlicht.',
       beispiel_hd: 'Der Hessentag bringt jedes Jahr eine andere Stadt ins Rampenlicht.',
       kategorie: 'feiern'
+    },
+    {
+      id: 'h-231',
+      ausdruck: 'Marburg',
+      hochdeutsch: 'Marburg an der Lahn',
+      bedeutung: 'Marburg ist mittelhessische Universitätsstadt mit Bergcharakter — Philipps-Universität gegründet 1527 als erste protestantische Universität der Welt. Heinrich Heine, Friedrich Carl von Savigny und die Brüder Grimm studierten oder lehrten hier. Steile Gassen, Schloss auf dem Berg, Elisabethkirche (älteste rein-gotische Kirche Deutschlands). „Marburg, wo Studenten die Treppe hochkriechen". Symbol für mittelhessische Bildungs-Tradition. Hessische Identität jenseits der Mainmetropole.',
+      beispiel: 'Marburg ist die schönste Studentenstadt im Land.',
+      beispiel_hd: 'Marburg ist die schönste Studentenstadt im Land.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-232',
+      ausdruck: 'Gießen',
+      hochdeutsch: 'Gießen an der Lahn',
+      bedeutung: 'Gießen ist mittelhessische Universitätsstadt — Justus-Liebig-Universität gegründet 1607, benannt nach dem Chemiker Justus Liebig (Erfinder des Kunstdüngers). „Gießener Anzeiger" ist regionale Tageszeitung. Stadt der Wissenschaft und Medizin — Universitätsklinikum. Im 2. Weltkrieg stark zerstört, danach modern wiederaufgebaut. Studenten-Hochburg. „Mittelhessen-Hauptstadt" Selbstbezeichnung. Konkurriert sportlich-akademisch mit Marburg.',
+      beispiel: 'Mei Sohn studiert in Gießen Medizin.',
+      beispiel_hd: 'Mein Sohn studiert in Gießen Medizin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-233',
+      ausdruck: 'Lahnaue',
+      hochdeutsch: 'Lahnaue (Mittelhessen-Landschaft)',
+      bedeutung: 'Die „Lahnaue" ist die Auenlandschaft entlang der Lahn — Mittelhessens prägende Flusslandschaft. Verläuft durch Marburg, Gießen, Wetzlar, Limburg. Beliebt für Radwanderungen (Lahn-Radweg, 250 km), Kanu-Touren, Naturbeobachtung. Lahnaue als Naturschutzgebiet seit 2008. Bezeichnet auch das spezifische Lebensgefühl der Lahnauen-Bewohner: ländlich-mittelhessisch, mit Liebe zu Wandern und Bratwurst-Stand am Fluss. Hessens grüne Seite.',
+      beispiel: 'Am Wochenend radeln wir durch die Lahnaue.',
+      beispiel_hd: 'Am Wochenende radeln wir durch die Lahnaue.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-234',
+      ausdruck: 'Wetzlar',
+      hochdeutsch: 'Wetzlar (Optik-Stadt)',
+      bedeutung: 'Wetzlar ist mittelhessische Stadt — Welt-Hauptstadt der Optik. Leica-Kameras, Zeiss Microscopes, Optische Industrie. Goethe lebte hier während seines Praktikums am Reichskammergericht (1772) — schrieb hier „Werthers Leiden". Wetzlarer Dom mit gotischer Architektur. „Wetzlarer Optiktage" jährliche Fachmesse. Bekannte Wetzlarer: Hugo Junkers (Flugzeugbau). Spaß-Spitzname: „die Wetzlarer Linse" für Brillen und Objektive. Symbol mittelhessischer Industrietradition.',
+      beispiel: 'In Wetzlar wurde die erste Leica gebaut.',
+      beispiel_hd: 'In Wetzlar wurde die erste Leica gebaut.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-235',
+      ausdruck: 'Bachgauer',
+      hochdeutsch: 'Bachgauer Region',
+      bedeutung: 'Der „Bachgau" ist eine mittelhessische Landschaft südlich des Odenwalds — eingebettet zwischen Aschaffenburg und Darmstadt. Ländliche Region mit Obstbau, Apfelwein-Tradition (sogar mehr als in Frankfurt!), Trachten und Volksmusik. „Bachgauer" sind die Einwohner — als verschmitzt, freundlich und apfelwein-trinkfest bekannt. „Bachgauer Singspiel" ist regionale Theater-Tradition. Bachgau-Trachtenverein pflegt regionale Identität. Wenig touristisch — hessisches Hinterland.',
+      beispiel: 'Die Bachgauer machen den besten Apfelwein der Welt.',
+      beispiel_hd: 'Die Bachgauer machen den besten Apfelwein der Welt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-236',
+      ausdruck: 'Vogelsberg',
+      hochdeutsch: 'Vogelsberg (Mittelgebirge)',
+      bedeutung: 'Der „Vogelsberg" ist größtes erloschenes Vulkanmassiv Mitteleuropas — mittelhessisches Mittelgebirge mit 773m Höhe (Hoherodskopf). Ländliche Region mit Streuobstwiesen, Wandern, Skifahren im Winter. „Vogelsberger Trachten-Verein" pflegt regionale Bräuche. Im Winter zur Skihütte, im Sommer zu Wanderpfaden. Ländlich-bodenständig — der Gegensatz zur Frankfurter Mainhattan. Symbol für hessisches Hinterland. Beliebtes Wochenend-Ziel der Frankfurter.',
+      beispiel: 'Im Winter geh\'n wir auf\'n Vogelsberg Ski fahren.',
+      beispiel_hd: 'Im Winter gehen wir auf den Vogelsberg Ski fahren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-237',
+      ausdruck: 'Rhön',
+      hochdeutsch: 'Rhön (Mittelgebirge)',
+      bedeutung: 'Die „Rhön" ist östliches hessisches Mittelgebirge — UNESCO-Biosphärenreservat seit 1991. „Land der offenen Fernen" wegen weiter Aussicht. Hessen, Bayern und Thüringen treffen sich hier. Wasserkuppe (950m, Hessens höchster Berg) ist Wiege des Segelflugs. „Rhöner Streuselkuchen" ist regionale Spezialität. Schäferei-Tradition (Rhönschafe). Ländlich, ruhig, naturnah. Beliebt für Wandern, Mountainbiken, Drachenfliegen. Auch UNESCO-Sternenpark — wenig Lichtverschmutzung.',
+      beispiel: 'In der Rhön gibt\'s die beste Aussicht von Hessen.',
+      beispiel_hd: 'In der Rhön gibt es die beste Aussicht von Hessen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-238',
+      ausdruck: 'Wasserkuppe',
+      hochdeutsch: 'Wasserkuppe (höchster Berg Hessens)',
+      bedeutung: 'Die „Wasserkuppe" ist mit 950m Hessens höchster Berg — in der Rhön gelegen. Wiege des Segelflugs in Deutschland (seit 1920er Jahren). Segelflugmuseum, Modellflug-Tradition. Im Winter Skifahren auf Hessens einzigem nennenswerten Skigebiet. Auf dem Gipfel: Aussichtsplattform, Radom (alte Radaranlage). Symbol für hessische Naturschönheit jenseits der Großstädte. „Auf die Wasserkuppe" ist klassischer Wochenend-Ausflug der Frankfurter.',
+      beispiel: 'Von der Wasserkuppe siehst du bis nach Thüringen.',
+      beispiel_hd: 'Von der Wasserkuppe siehst du bis nach Thüringen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-239',
+      ausdruck: 'Limburg',
+      hochdeutsch: 'Limburg an der Lahn',
+      bedeutung: 'Limburg ist mittelhessische Bischofsstadt — gotischer Limburger Dom (1235) mit ikonischen sieben Türmen. Fachwerk-Altstadt aus dem 14. Jahrhundert. Limburger Käse (mit Kümmel) ist regionales Produkt. Bahnknotenpunkt: Schnellbahn-Strecke Frankfurt-Köln passiert hier. Tebartz-van-Elst-Skandal (2012-13) machte Limburg negativ berühmt („Protz-Bischof"). Trotz Skandals: Stadt mit Charme und Geschichte. Westhessisches Tor zu Westerwald und Taunus.',
+      beispiel: 'Der Limburger Dom is\' der schönste Hessen.',
+      beispiel_hd: 'Der Limburger Dom ist der schönste Hessens.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-240',
+      ausdruck: 'Taunus',
+      hochdeutsch: 'Taunus (Mittelgebirge nördlich Frankfurts)',
+      bedeutung: 'Der „Taunus" ist hessisches Mittelgebirge nördlich von Frankfurt — beliebtes Wochenend-Ausflugsgebiet der Frankfurter. Großer Feldberg (881m), Kleiner Feldberg, Saalburg (Römerkastell), Bad Homburg, Königstein. Reich an römischer Geschichte (Limes-Wall). Heute Wanderparadies, Skihütte im Winter. Wohnort der Frankfurter Banker (Kronberg, Königstein — die teuerste Wohngegend Deutschlands). „Auf\'n Taunus" ist Standard-Wochenend-Programm.',
+      beispiel: 'Am Sonntag wandern wir auf\'n Taunus.',
+      beispiel_hd: 'Am Sonntag wandern wir in den Taunus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-241',
+      ausdruck: 'Saalburg',
+      hochdeutsch: 'Saalburg (römisches Kastell)',
+      bedeutung: 'Die „Saalburg" ist ein rekonstruiertes römisches Kastell am Limes im Taunus — UNESCO-Welterbe seit 2005. Wurde im 19. Jahrhundert wiederaufgebaut, ist heute Freilichtmuseum. Zeigt römische Militärarchitektur an der nördlichen Grenze des Imperiums. Beliebt für Schulausflüge und Familientouren. Symbol für hessische Geschichte — von römischer Zeit bis heute. Saalburg-Museum mit nachgebauter römischer Lebenswelt.',
+      beispiel: 'Mit der Klasse machten wir Ausflug zur Saalburg.',
+      beispiel_hd: 'Mit der Klasse machten wir Ausflug zur Saalburg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-242',
+      ausdruck: 'Bad Homburg',
+      hochdeutsch: 'Bad Homburg vor der Höhe',
+      bedeutung: 'Bad Homburg ist mondäne Kurstadt am Taunus-Fuß — Sitz der Privatbank Hauck Aufhäuser, Konzernzentralen, Spielbank-Casino. „Hessisches Bath" wegen heißer Mineralquellen. Kurpark mit klassizistischen Bauten. Bekannter Sport-Resort: Bad Homburg Tennis Open. Wohnort vieler Frankfurter Banker. „Hut von Bad Homburg" — der Homburger Hut ist weltberühmtes Modeaccessoire. Kombination aus Wellness, Wirtschaft und Tradition.',
+      beispiel: 'In Bad Homburg gehen die Frankfurter ins Kurbad.',
+      beispiel_hd: 'In Bad Homburg gehen die Frankfurter ins Kurbad.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-243',
+      ausdruck: 'Steinhäger',
+      hochdeutsch: 'Steinhäger (Klarer Schnaps)',
+      bedeutung: '„Steinhäger" ist Wacholderschnaps — eigentlich aus Westfalen, aber in Hessen als „Korn"-Variante beliebt. Wird zum Bier als Korn bestellt: „A Pils und a Steinhäger, bittsche!". Auch zu Brotzeit und Apfelwein. Im hessischen Sprachgebrauch verwendet. Bekanntes Bauernschnäpschen. „Steinhäger-Glas" ist eigene kleine Glasform. Stammt vom Steinhäger Schloss in Steinhagen (Westfalen), in Hessen jedoch übernommen ins regionale Apfelwein-Sortiment.',
+      beispiel: 'A Steinhäger zum Bier, bittsche!',
+      beispiel_hd: 'Ein Steinhäger zum Bier, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-244',
+      ausdruck: 'Bergstraß',
+      hochdeutsch: 'Bergstraße (Weinregion Südhessens)',
+      bedeutung: 'Die „Bergstraß" ist Südhessens Weinregion — entlang des östlichen Oberrhein-Talrands von Darmstadt bis Heidelberg. Mildes Klima (Mittagstemperatur 12°C, „deutsche Toskana"), Mandelblüte im Februar. Riesling und Auxerrois als Hauptrebsorten. „Bergsträßer Wein-Wanderweg" ist beliebtes Tourist-Ziel. „Heppenheim" als Hauptort. Symbol für hessische Wein-Identität (selten — Hessen ist vorrangig Apfelwein-Land). Konzentriert auf 70 km² beste Weinanbauflächen.',
+      beispiel: 'An der Bergstraß wächst der beste Riesling Hessens.',
+      beispiel_hd: 'An der Bergstraße wächst der beste Riesling Hessens.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-245',
+      ausdruck: 'Odenwald',
+      hochdeutsch: 'Odenwald (Mittelgebirge)',
+      bedeutung: 'Der „Odenwald" ist südhessisches Mittelgebirge — verteilt sich auf Hessen, Bayern und Baden-Württemberg. Höchster Berg: Katzenbuckel (626m). Reich an Sagen — Siegfried wurde im Odenwald von Hagen ermordet (Nibelungenlied). Burgen wie Burg Frankenstein (inspirierte angeblich Mary Shelley). „Odenwälder" gelten als bodenständig, etwas eigen, sehr heimat-verbunden. Beliebt für Wandern, Erlbach-Tropfsteinhöhle. Hessens „dunkler" Wald.',
+      beispiel: 'Im Odenwald spukt es noch — sagen die Alten.',
+      beispiel_hd: 'Im Odenwald spukt es noch — sagen die Alten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-246',
+      ausdruck: 'Schwarzwurz',
+      hochdeutsch: 'Schwarzwurzel',
+      bedeutung: 'Die „Schwarzwurz" ist die Schwarzwurzel — auch „Winter-Spargel" genannt. Wurzelgemüse mit erdig-nussigem Geschmack. In Mittelhessen traditionelles Wintergemüse — wird mit Sahne-Béchamel oder als „Schwarzwurz-Suppe" zubereitet. Beliebt zu Wild und Braten. „Schwarzwurz schälen" ist mühsam (Saft schwarz auf Händen). In hessischen Bauernküchen ein Klassiker. Heute meist tiefgefroren oder eingelegt.',
+      beispiel: 'Z\'Weihnachten gibt\'s Schwarzwurz mit Béchamel-Soß.',
+      beispiel_hd: 'Zu Weihnachten gibt es Schwarzwurzel mit Béchamel-Soße.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-247',
+      ausdruck: 'Hauwerk',
+      hochdeutsch: 'mittelhessischer Bauernhof',
+      bedeutung: '„Hauwerk" ist die mittelhessische Bezeichnung für einen Bauernhof oder ein Anwesen — vor allem in Vogelsberg und Hinterland verwendet. Stammt vom „Hofwerk", einer alten Wirtschaftseinheit. „Mei Hauwerk" für „mein Hof". Drückt Bodenständigkeit und Heimatverbundenheit aus. In Volkslied und Volksmusik allgegenwärtig. Heute selten im aktiven Wortschatz, aber in mittelhessischen Heimatfilmen und Mundart-Theater präsent.',
+      beispiel: 'Mei Hauwerk geht von einer Generation zur nächsten.',
+      beispiel_hd: 'Mein Bauernhof geht von einer Generation zur nächsten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-248',
+      ausdruck: 'Marburger Bart',
+      hochdeutsch: 'Marburger Vollbart',
+      bedeutung: 'Der „Marburger Bart" ist Spitzname für die akademisch-bärtige Erscheinung der Marburger Professoren und Studenten — meist Vollbart, oft grau-meliert. „A echter Marburger Bart" als wohlwollender Spott. Stammt aus dem 19. Jahrhundert, als bärtige Universitätsprofessoren das Stadtbild prägten. Heute noch als Klischee verwendet. Auch metaphorisch: ein „Marburger Bart" deutet auf einen Akademiker oder eine intellektuelle Person hin.',
+      beispiel: 'Der oide Professor hat noch a Marburger Bart.',
+      beispiel_hd: 'Der alte Professor hat noch einen Marburger Vollbart.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-249',
+      ausdruck: 'Eelisabeth',
+      hochdeutsch: 'Heilige Elisabeth (von Thüringen-Marburg)',
+      bedeutung: 'Die „heilige Elisabeth" (1207-1231) ist die Schutzpatronin Marburgs — ungarische Königstochter, lebte in Marburg, gründete Hospital, pflegte Aussätzige. Wurde 1235 heiliggesprochen. Marburger Elisabethkirche (1235-1283) ist erste reine Gotik-Kirche Deutschlands. „Elisabeth-Wallfahrten" im Mittelalter brachten Wohlstand. Heute Symbol mittelhessischer christlicher Tradition. Wallfahrer aus aller Welt besuchen ihr Grab.',
+      beispiel: 'D\'heilige Elisabeth liegt in Marburg begraben.',
+      beispiel_hd: 'Die heilige Elisabeth liegt in Marburg begraben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-250',
+      ausdruck: 'Hütte',
+      hochdeutsch: 'Hütte (im Hessischen)',
+      bedeutung: 'Die „Hütte" hat in Hessen mehrere Bedeutungen: 1) Wanderhütte im Vogelsberg/Taunus/Rhön — beliebter Wochenendziel. 2) Studentenbude — „seine Hütte" für die kleine Wohnung. 3) Werkstatt-Schuppen — „Vater is\' in seiner Hütte am Werkeln". Diminutiv von „Haus", aber spezifisch hessisch verwendet. „Hütten-Wirtschaft" ist eine einfache Berggaststätte. Symbol für hessische Wander-Tradition und studentisches Wohnen.',
+      beispiel: 'In meiner Hütte hab ich kaum Platz für die Bücher.',
+      beispiel_hd: 'In meiner Bude habe ich kaum Platz für die Bücher.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-251',
+      ausdruck: 'Brüder Grimm',
+      hochdeutsch: 'Brüder Grimm (Märchen-Sammler)',
+      bedeutung: 'Die „Brüder Grimm" (Jacob 1785-1863, Wilhelm 1786-1859) sind hessische National-Helden — Sprachforscher und Märchen-Sammler. Geboren in Hanau, lebten in Steinau, Kassel, Marburg, Göttingen, Berlin. Sammelten ab 1812 die berühmten Kinder- und Hausmärchen („Hänsel und Gretel", „Rotkäppchen", „Aschenputtel"). Begründeten die Germanistik mit Deutscher Grammatik und Deutschem Wörterbuch. „Deutsche Märchenstraße" führt durch Hessen. Symbol für hessisches kulturelles Erbe.',
+      beispiel: 'D\'Brüder Grimm sammelten Märchen in Hessen.',
+      beispiel_hd: 'Die Brüder Grimm sammelten Märchen in Hessen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-252',
+      ausdruck: 'Schwälmer Tracht',
+      hochdeutsch: 'Schwälmer Tracht',
+      bedeutung: 'Die „Schwälmer Tracht" ist eine der berühmtesten deutschen Volkstrachten — aus der Schwalm (Nordhessen). Frauen tragen rote Röcke (Verheiratete) oder grüne (Unverheiratete), schwarze Schürzen, weißes Kopftuch. Männer in schwarzem Tuchanzug und Zylinder. Inspirierte das Aussehen des „Rotkäppchens" der Brüder Grimm — die Schwälmer Tracht ist DAS Rotkäppchen-Original. Heute zu Schwälmer Hochzeitstrachten-Festen getragen. Symbol für nordhessische Tradition.',
+      beispiel: 'Die Schwälmer Tracht is\' Rotkäppchens Original.',
+      beispiel_hd: 'Die Schwälmer Tracht ist Rotkäppchens Original.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-253',
+      ausdruck: 'Schwalm',
+      hochdeutsch: 'Schwalm (nordhessische Region)',
+      bedeutung: 'Die „Schwalm" ist eine nordhessische Region — Flachland zwischen Vogelsberg und Knüllgebirge. Berühmt für die Schwälmer Tracht und das „Rotkäppchen". Ländlich-bäuerlich, mit Streuobstwiesen und Pferdezucht. Schwälmer Bauern gelten als bodenständig, ehrlich, etwas eigen. „Mei Großmutter kommt aus der Schwalm" als hessische Stammvater-Verweisung. Treysa und Schwalmstadt als Hauptorte. Symbol für hessische Landwirtschaft und Tradition.',
+      beispiel: 'In der Schwalm wächst der beste Hafer Hessens.',
+      beispiel_hd: 'In der Schwalm wächst der beste Hafer Hessens.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-254',
+      ausdruck: 'Wäldsche',
+      hochdeutsch: 'kleiner Wald / Wäldchen',
+      bedeutung: '„Wäldsche" ist mittelhessischer Diminutiv für Wald — ein kleiner Wald oder Hain. „Mir geh\'n in\'s Wäldsche" für „wir gehen in den Wald". Klingt liebevoll-zärtlich. Auch metaphorisch: ein „Wäldsche von Bürokratie" für viel Bürokratie. In mittelhessischer Kindheits-Sprache allgegenwärtig — Großeltern erzählten Geschichten „aus\'m Wäldsche". Symbol für hessische Naturnähe und liebevollen Umgang mit Sprache.',
+      beispiel: 'Im Wäldsche haben wir als Kinder Beeren gesammelt.',
+      beispiel_hd: 'Im Wäldchen haben wir als Kinder Beeren gesammelt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-255',
+      ausdruck: 'Backes',
+      hochdeutsch: 'Dorf-Backhaus',
+      bedeutung: 'Das „Backes" ist das dorfgemeinschaftliche Backhaus — typisch für mittelhessische Dörfer (Vogelsberg, Rhön, Knüll). Bauern brachten ihren Brotteig hin, wurde gemeinschaftlich gebacken. Soziales Treff-Punkt-Gebäude. Heute oft restauriert als Volksfest-Stätte: „Backes-Fest" mit gebackenem Brot, Bratwurst, Hausschnaps. Symbol für hessische Dorfgemeinschaft und alte Bauernzeit. Manche Dörfer haben noch funktionierende Backes — Backtage mit Vereins-Bewirtung.',
+      beispiel: 'Beim Backes-Fest gibt\'s frisches Bauernbrot.',
+      beispiel_hd: 'Beim Backes-Fest gibt es frisches Bauernbrot.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-256',
+      ausdruck: 'Schäferhund',
+      hochdeutsch: 'Deutscher Schäferhund (aus Hessen)',
+      bedeutung: 'Der „Schäferhund" — Deutscher Schäferhund — wurde 1899 von Max von Stephanitz in Hessen entwickelt (Karlsruhe, Mannheim, später Wachen, Hessen-Süd). Stephanitz züchtete den Schäferhund als universellen Dienst- und Familienhund. Heute eine der bekanntesten Hunderassen der Welt. Hessisches Stolz: „Der Schäferhund kommt aus Hessen!". In hessischen Familien beliebt als Schutzhund. Auch in Volkslied und Witzen vertreten — der treue „Hund vom Hof".',
+      beispiel: 'Mei Schäferhund is\' a hessischer Original.',
+      beispiel_hd: 'Mein Schäferhund ist ein hessisches Original.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-257',
+      ausdruck: 'Lahnberg',
+      hochdeutsch: 'Marburger Lahnberge',
+      bedeutung: 'Die „Lahnberge" sind die Hügel um Marburg — Standort des Universitätsklinikums, der naturwissenschaftlichen Fakultäten und vieler Studentenwohnheime. „Auf\'m Lahnberg" ist Marburger Standardphrase. Verbunden mit der Innenstadt durch die Lahnberg-Bahn (Standseilbahn). Studenten studieren „auf\'m Lahnberg", wohnen „inner Innenstadt". Symbolische Trennung zwischen akademischer und sozialer Welt Marburgs. Markante Marburger Topographie.',
+      beispiel: 'D\'Medizinstudenten lernen alle auf\'m Lahnberg.',
+      beispiel_hd: 'Die Medizinstudenten lernen alle auf den Lahnbergen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-258',
+      ausdruck: 'Spätzlepfanne',
+      hochdeutsch: 'Käsespätzle (in Hessen)',
+      bedeutung: '„Spätzlepfanne" ist die hessische Variante der Käsespätzle — Eierteig-Nudeln mit Käse überbacken. Eigentlich schwäbisch, aber in hessischen Wirtschaften (vor allem im südlichen Bachgau und an der Bergstraß) sehr beliebt. „Hessische Spätzlepfanne" mit Speck und Zwiebeln zubereitet. Wird als deftige Hauptmahlzeit serviert, oft im Winter. Adaptation einer Nachbar-Tradition mit hessischer Note. Beliebt in Wirtshäusern an der hessisch-baden-württembergischen Grenze.',
+      beispiel: 'Z\'Mittag gibt\'s Spätzlepfanne mit Salat.',
+      beispiel_hd: 'Zu Mittag gibt es Käsespätzle mit Salat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-259',
+      ausdruck: 'Apfelwein-Route',
+      hochdeutsch: 'Apfelwein-Wander-Route',
+      bedeutung: 'Die „Apfelwein-Route" ist ein hessisches Tourismus-Programm — Routen durch Apfelwein-Wirtschaften, Mostereien und Streuobstwiesen. Mehrere markierte Routen in Sachsenhausen, Bachgau und Vogelsberg. Wanderung mit Ebbelwoi-Verkostung. „Apfelwein-Pass" für gesammelte Stempel als Souvenir. Familienprogramm: Erwachsene trinken Ebbelwoi, Kinder Apfelschorle. Symbol für hessische Tourismus-Strategie. Beliebt im Herbst zur Apfel-Erntezeit.',
+      beispiel: 'Auf der Apfelwein-Route besuchen wir drei Wirtschaften.',
+      beispiel_hd: 'Auf der Apfelwein-Route besuchen wir drei Wirtschaften.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-260',
+      ausdruck: 'Hessische Direktheit',
+      hochdeutsch: 'hessische Direktheit',
+      bedeutung: '„Hessische Direktheit" ist ein hessisches Selbstverständnis — Hessen reden offen, ehrlich, manchmal ungehobelt, aber immer authentisch. Im Gegensatz zur norddeutschen Reserviertheit oder bayerischen Gemütlichkeit. „Sag, wie\'s is\'!" ist hessisches Motto. Hessische Direktheit wird oft mit Schmäh kombiniert — ehrlich sein, aber liebevoll. Politiker, Journalisten und Manager aus Hessen sind dafür bekannt. Symbol für hessisches Charakter-Profil.',
+      beispiel: 'Mit hessischer Direktheit gesagt: Des is\' Quatsch!',
+      beispiel_hd: 'Mit hessischer Direktheit gesagt: Das ist Quatsch!',
+      kategorie: 'redensart'
     }
   ]
 };
