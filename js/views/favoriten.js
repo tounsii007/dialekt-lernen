@@ -73,6 +73,7 @@ export function renderFavoriten(root) {
     bestQuiz: history.reduce((m, h) => Math.max(m, Math.round((h.score / h.total) * 100)), 0),
     visitedCount: getVisitedDialects().length,
     totalDialects: DIALEKTE.length,
+    totalAvailable: DIALEKTE.reduce((sum, d) => sum + d.ausdruecke.length, 0),
     favCount: favs.length
   });
   view.appendChild(achView);

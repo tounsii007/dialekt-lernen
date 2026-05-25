@@ -1558,6 +1558,231 @@ export default {
       beispiel: '„Wir sind das Volk" — Parole, die die DDR ins Wanken brachte.',
       beispiel_hd: '„Wir sind das Volk" — Parole, die die DDR ins Wanken brachte.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'b-176',
+      ausdruck: 'Pankow',
+      hochdeutsch: 'Pankow (nordberliner Bezirk)',
+      bedeutung: 'Pankow ist Berlins nördlichster Bezirk — mit Prenzlauer Berg, Weißensee und Pankow-Mitte. Früher Wohnort der DDR-Spitzenpolitiker (Majakowskiring). „Pankow" wurde auch zur Bezeichnung für die DDR-Regierung benutzt (Udo Lindenberg: „Sonderzug nach Pankow"). Heute multikulturell und familienfreundlich. Schloss Schönhausen, Mauerpark, Weißensee — alles Pankow.',
+      beispiel: 'Udo Lindenbergs Sonderzug nach Pankow — DDR-Geschichte im Song.',
+      beispiel_hd: 'Udo Lindenbergs Sonderzug nach Pankow — DDR-Geschichte im Song.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-177',
+      ausdruck: 'Charlottenburg',
+      hochdeutsch: 'Charlottenburg (West-Berliner Edel-Bezirk)',
+      bedeutung: 'Charlottenburg ist West-Berlins traditionell wohlhabender Bezirk — mit dem Schloss Charlottenburg (eines der wichtigsten Hohenzollern-Schlösser), dem Kurfürstendamm, KaDeWe und der Deutschen Oper. Olympiastadion, Funkturm, Messegelände — alles Charlottenburg. Im Westen vornehm-bürgerlich, im Norden eher Arbeiterklasse. Berlin-West-Identität.',
+      beispiel: 'In Charlottenburg wohnen die alten West-Berliner Familien.',
+      beispiel_hd: 'In Charlottenburg wohnen die alten West-Berliner Familien.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-178',
+      ausdruck: 'Schloss Charlottenburg',
+      hochdeutsch: 'Schloss Charlottenburg',
+      bedeutung: 'Schloss Charlottenburg ist das größte Schloss Berlins — erbaut Ende des 17. Jahrhunderts für Königin Sophie Charlotte. Die berühmte Goldene Galerie, die Porzellankammer und der Schlossgarten ziehen Touristen an. Im Krieg schwer beschädigt, originalgetreu wieder aufgebaut. Mit dem Mausoleum der preußischen Königin Luise und dem Belvedere im Park. Berlins königliches Erbe.',
+      beispiel: 'Schloss Charlottenburg im Sommer — königlicher Spaziergang.',
+      beispiel_hd: 'Schloss Charlottenburg im Sommer — königlicher Spaziergang.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-179',
+      ausdruck: 'Kudamm',
+      hochdeutsch: 'Kurfürstendamm (Einkaufsmeile)',
+      bedeutung: 'Der Kurfürstendamm — kurz „Kudamm" — ist West-Berlins berühmteste Einkaufsstraße. 3,5 km lang, mit Edel-Boutiquen, Restaurants, Cafés. Die Kaiser-Wilhelm-Gedächtniskirche (kriegszerstört) ist am Anfang. Früher Berliner Champs-Élysées-Pendant. Heute weniger glamourös als die Friedrichstraße, aber traditionell. Berliner mögen den Kudamm.',
+      beispiel: 'Auf\'n Kudamm Schaufenstershopping — West-Berliner Tradition.',
+      beispiel_hd: 'Auf dem Kudamm Schaufensterbummel — West-Berliner Tradition.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-180',
+      ausdruck: 'Gedächtniskirche',
+      hochdeutsch: 'Kaiser-Wilhelm-Gedächtniskirche',
+      bedeutung: 'Die Kaiser-Wilhelm-Gedächtniskirche am Breitscheidplatz ist West-Berliner Wahrzeichen — die Ruine des im Krieg zerstörten Hauptturms wurde absichtlich nicht wieder aufgebaut, als Mahnmal. Der „hohle Zahn" steht neben der neuen achteckigen Kirche von Egon Eiermann. Symbol für Berlins Geschichte: Zerstörung, Erinnerung, Neuanfang. Klassische Berliner Architektur-Geschichte.',
+      beispiel: 'Der hohle Zahn der Gedächtniskirche — Mahnmal.',
+      beispiel_hd: 'Der hohle Zahn der Gedächtniskirche — Mahnmal.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-181',
+      ausdruck: 'Mauerstreifen',
+      hochdeutsch: 'Berliner Mauer-Todesstreifen',
+      bedeutung: 'Der „Mauerstreifen" — der ehemalige Todesstreifen zwischen den zwei Mauerwänden — ist heute in Berlin als grüne Mauerwege erhalten. Markiert mit einer Doppelreihe von Pflastersteinen im Asphalt. Der „Berliner Mauerweg" — 160 km Fahrradweg um West-Berlin entlang der ehemaligen Mauer — ist heute beliebte Wanderroute. Geschichte zum Anfassen.',
+      beispiel: 'Den Mauerweg radeln — Berlin-Geschichte mit Fahrrad erleben.',
+      beispiel_hd: 'Den Mauerweg radeln — Berlin-Geschichte mit Fahrrad erleben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-182',
+      ausdruck: 'Tempodrom',
+      hochdeutsch: 'Tempodrom (Berliner Veranstaltungshaus)',
+      bedeutung: 'Das Tempodrom am Anhalter Bahnhof ist Berlins charakteristisches Veranstaltungshaus — die zwei zeltförmigen Hallen erinnern an einen Sportzirkus. Eröffnet 2001 (nach jahrelanger Verzögerung), für Konzerte, Comedy und Events. Berliner Architekturikone der 2000er. Mit der historischen Stadtgrenze (S-Bahnring) im Hintergrund.',
+      beispiel: 'Im Tempodrom war ich auf nem grandiosen Konzert.',
+      beispiel_hd: 'Im Tempodrom war ich auf einem grandiosen Konzert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-183',
+      ausdruck: 'Sigmund Freud',
+      hochdeutsch: 'Sigmund Freud (Bezug zu Berlin)',
+      bedeutung: 'Sigmund Freud — eigentlich Wiener — hatte enge Verbindungen nach Berlin. Sein Sohn Ernst war hier Architekt, viele Freud-Schüler arbeiteten in Berlin. Das Berliner Psychoanalytische Institut (1920 gegründet) war Weltzentrum. Die Berliner Stadt-Therapie-Kultur ist auch Freud-Erbe. Berliner Intellektuelle und Therapeuten bewahren das Erbe.',
+      beispiel: 'Berliner Therapeuten sind oft Freud-Schüler.',
+      beispiel_hd: 'Berliner Therapeuten sind oft Freud-Schüler.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-184',
+      ausdruck: 'Brecht',
+      hochdeutsch: 'Bertolt Brecht (Theaterautor)',
+      bedeutung: 'Bertolt Brecht (1898-1956) — geboren in Augsburg, ab 1949 in Ost-Berlin — gründete mit Helene Weigel das Berliner Ensemble. Sein „Dreigroschenoper", „Mutter Courage" und „Galileo Galilei" prägen das Welttheater. Brecht-Haus in der Chausseestraße ist heute Museum. Sein politisches Theater und seine episches Verfremden revolutionierten die Bühne. Berliner Hochkultur.',
+      beispiel: 'Brechts Dreigroschenoper — Berliner Theatergeschichte.',
+      beispiel_hd: 'Brechts Dreigroschenoper — Berliner Theatergeschichte.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-185',
+      ausdruck: 'Helene Weigel',
+      hochdeutsch: 'Helene Weigel (Brechts Ehefrau, Theaterleiterin)',
+      bedeutung: 'Helene Weigel (1900-1971) — Brechts Ehefrau und Schauspielerin — leitete das Berliner Ensemble nach Brechts Tod. Ihre Darstellung der Mutter Courage gilt als ikonisch. Sie war jüdische Wienerin, ging ins Exil und kehrte mit Brecht nach Ost-Berlin zurück. Eine starke Frau im Berliner Theater-Olymp. Helene-Weigel-Platz ehrt sie.',
+      beispiel: 'Helene Weigel als Mutter Courage — Theatergeschichte.',
+      beispiel_hd: 'Helene Weigel als Mutter Courage — Theatergeschichte.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-186',
+      ausdruck: 'KaDeWe-Feinschmecker',
+      hochdeutsch: 'KaDeWe Gourmet-Etage',
+      bedeutung: 'Die 6. Etage des KaDeWe — die „Feinschmecker-Etage" — ist Europas größte Delikatessen-Abteilung mit 7.000 m². Über 1.300 Käsesorten, 1.700 Wurst- und Schinken-Sorten, frischer Fisch, exotische Früchte aus aller Welt. Hier kann man Sterne-Restaurants in Mini-Form genießen. Touristen lieben die Etage, Berliner Schickeria pendelt regelmäßig. Berliner Luxus pur.',
+      beispiel: 'Im KaDeWe-Feinschmecker findest jede Spezialität der Welt.',
+      beispiel_hd: 'Im KaDeWe-Feinschmecker findest du jede Spezialität der Welt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-187',
+      ausdruck: 'Russische Botschaft',
+      hochdeutsch: 'Russische Botschaft Unter den Linden',
+      bedeutung: 'Die Russische Botschaft Unter den Linden ist eines der größten Botschaftsgebäude Europas — erbaut in den 1950ern im Stil des sozialistischen Klassizismus. Riesige Anlage mit Park, Konsulat, Kulturzentrum. Politisch heute höchst umstritten — Symbol der diplomatischen Spannungen zwischen Deutschland und Russland. Berliner Lage in der Geopolitik.',
+      beispiel: 'Die russische Botschaft is\' eines der größten Berlins.',
+      beispiel_hd: 'Die russische Botschaft ist eines der größten Berlins.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-188',
+      ausdruck: 'Französische Botschaft',
+      hochdeutsch: 'Französische Botschaft (Pariser Platz)',
+      bedeutung: 'Die Französische Botschaft am Pariser Platz — direkt am Brandenburger Tor — wurde 2003 neu erbaut von Architekt Christian de Portzamparc. Modernistisch im Vergleich zu den preußischen Gebäuden ringsum. Symbol für deutsch-französische Freundschaft. Bei besonderen Anlässen werden hier deutsch-französische Treffen abgehalten. Berliner Diplomatie-Architektur.',
+      beispiel: 'Die französische Botschaft is\' Symbol für deutsch-französische Freundschaft.',
+      beispiel_hd: 'Die französische Botschaft ist Symbol für deutsch-französische Freundschaft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-189',
+      ausdruck: 'Berliner Eisbär',
+      hochdeutsch: 'Knut (Berliner Zoo-Eisbär 2006-2011)',
+      bedeutung: 'Knut (2006-2011) war ein Berliner Eisbär, der in den Berliner Zoo geboren und von einem Tierpfleger handaufgezogen wurde. Sein süßes Aussehen machte ihn zur weltweiten Sensation — er war auf Magazincovern, in Filmen, auf T-Shirts. Knut starb tragisch jung an Hirnerkrankung. Berlin hat ein Knut-Denkmal im Zoo. Berliner Tierliebe als Pop-Phänomen.',
+      beispiel: 'Knut hat Berlin weltweit bekannt gemacht.',
+      beispiel_hd: 'Knut hat Berlin weltweit bekannt gemacht.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-190',
+      ausdruck: 'Bärenzwinger',
+      hochdeutsch: 'Berliner Bärenzwinger (historisch)',
+      bedeutung: 'Der Berliner Bärenzwinger im Köllnischen Park (Mitte) hielt von 1939 bis 2015 die offiziellen „Wappenbären" der Stadt. Die Tiere mit Namen wie Schnute und Maxi waren lebende Stadtsymbole. Nach Protest gegen die nicht-artgerechte Haltung wurde der Zwinger 2015 geschlossen. Heute ein Stück Berliner Stadtgeschichte. Berliner Bär nur noch symbolisch.',
+      beispiel: 'Im Bärenzwinger sind keine Bären mehr — aus Tierwohl-Gründen.',
+      beispiel_hd: 'Im Bärenzwinger sind keine Bären mehr — aus Tierwohl-Gründen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-191',
+      ausdruck: 'Berliner Mauer-Park',
+      hochdeutsch: 'Mauerpark Sonntagsflohmarkt',
+      bedeutung: 'Der Mauerpark-Sonntag ist Berliner Pop-Kultur — riesiger Flohmarkt mit Vintage, Selbstgemachtem, Kunst und kulinarischen Köstlichkeiten. Daneben das „Bearpit Karaoke" im Amphitheater, wo Hunderte Zuschauer den Künstlern zujubeln. Eine Mischung aus alter DDR-Subkultur und neuer Berlin-Hipsterness. Im Sommer Pflicht-Termin für Touristen.',
+      beispiel: 'Sonntag Mauerpark Flohmarkt mit Bearpit Karaoke — Berliner Sonntag.',
+      beispiel_hd: 'Sonntag Mauerpark Flohmarkt mit Bearpit Karaoke — Berliner Sonntag.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-192',
+      ausdruck: 'Berliner Senat',
+      hochdeutsch: 'Berliner Senat (Landesregierung)',
+      bedeutung: 'Der Berliner Senat ist die Landesregierung des Stadtstaates Berlin — anders als in Bundesländern mit Ministerien hat Berlin „Senatsverwaltungen" (z.B. für Verkehr, Bildung). Geleitet vom Regierenden Bürgermeister. Sitz im Roten Rathaus. Berliner Politik ist besonders — kleines Land, große Probleme (Mietendeckel, BER, Verwaltungschaos). Eine eigenständige politische Welt.',
+      beispiel: 'Der Berliner Senat — Politik ohne Bundesland-Allüren.',
+      beispiel_hd: 'Der Berliner Senat — Politik ohne Bundesland-Allüren.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-193',
+      ausdruck: 'Rotes Rathaus',
+      hochdeutsch: 'Rotes Rathaus (Berliner Rathaus)',
+      bedeutung: 'Das Rote Rathaus am Alexanderplatz ist Berlins Rathaus — erbaut 1869, Backstein-Architektur mit charakteristischer roter Fassade. Sitz des Regierenden Bürgermeisters und des Berliner Senats. Der Berliner „Bär" über dem Eingang. Drinnen die berühmten Diele mit Berlin-Geschichts-Wandmalereien. Touristen können kostenlos das Foyer und manche Säle besuchen.',
+      beispiel: 'Im Rote Rathaus sitzt der Bürgermeister.',
+      beispiel_hd: 'Im Roten Rathaus sitzt der Bürgermeister.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-194',
+      ausdruck: 'Nikolaiviertel',
+      hochdeutsch: 'Nikolaiviertel (älteste Berliner Siedlung)',
+      bedeutung: 'Das Nikolaiviertel an der Spree ist Berlins ältester erhaltener Stadtteil — Gründungsbereich der Stadt im 13. Jahrhundert. Nach DDR-Wiederaufbau in den 1980ern (zur 750-Jahr-Feier Berlins). Mit der Nikolaikirche, dem Knoblauchhaus und dem Ephraim-Palais. Heute Touristen-Viertel mit Restaurants, Kunsthandwerk und Berliner Bär-Souvenirläden. Berlin-Kompakt-Tour.',
+      beispiel: 'Im Nikolaiviertel siehst du Berlin auf 2 Hektar.',
+      beispiel_hd: 'Im Nikolaiviertel siehst du Berlin auf 2 Hektar.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-195',
+      ausdruck: 'Berliner Verkehrsbetriebe',
+      hochdeutsch: 'BVG (Berliner Verkehrsbetriebe)',
+      bedeutung: 'Die BVG (Berliner Verkehrsbetriebe) ist Berlins ÖPNV-Unternehmen — U-Bahn, Bus, Tram, Fähre. Mit der ironischen Werbe-Kampagne „Weil wir dich lieben" hat die BVG ihre Image gewandelt: chaotisch, aber lustig. Bekannt: die singende Stimme an den U-Bahn-Stationen, die manchmal Witze macht. Berliner haben hassgeliebte Beziehung zur BVG.',
+      beispiel: 'Die BVG ist chaotisch — aber wir lieben sie trotzdem.',
+      beispiel_hd: 'Die BVG ist chaotisch — aber wir lieben sie trotzdem.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-196',
+      ausdruck: 'Weil wir dich lieben',
+      hochdeutsch: 'BVG-Werbekampagne',
+      bedeutung: '„Weil wir dich lieben" ist die berühmte BVG-Werbekampagne seit 2015 — selbstironisch, hipster-affin, oft viral. Mit Werbespots, die die Berliner BVG-Realität (Verspätung, Chaos) mit Humor präsentieren. Die Kampagne machte die BVG zu einem Kult-Phänomen. Junge Berliner haben BVG-Schwarz-Gelb-Looks. Beste deutsche Verkehrsbetriebs-Werbung der letzten Jahre.',
+      beispiel: '„Weil wir dich lieben" — beste deutsche Werbekampagne.',
+      beispiel_hd: '„Weil wir dich lieben" — beste deutsche Werbekampagne.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-197',
+      ausdruck: 'Berliner Wasserwerke',
+      hochdeutsch: 'Berliner Wasserwerke (BWB)',
+      bedeutung: 'Die Berliner Wasserbetriebe (BWB) versorgen 4 Millionen Menschen mit Trinkwasser — das aus dem reichen Berliner Grundwasser stammt. Berliner Wasser ist hochwertig (kein Filter nötig). Charakteristisch: das oft kalkhaltige Wasser kann Wasserkocher verschmutzen. Berliner sind stolz auf ihr Wasser — „besser als Mineralwasser". Stadtinfrastruktur der Spitzenklasse.',
+      beispiel: 'Berliner Wasser is\' so gut — direkt vom Hahn trinken.',
+      beispiel_hd: 'Berliner Wasser ist so gut — direkt vom Hahn trinken.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-198',
+      ausdruck: 'Berliner Müll',
+      hochdeutsch: 'Berliner Mülltrennung-Realität',
+      bedeutung: 'Die Berliner Mülltrennung ist legendär chaotisch — manchmal mit gelben Säcken, manchmal mit Tonnen, manchmal mit Sonderregeln pro Bezirk. Berliner sind keine Mülltrenner-Profis (im Vergleich zu süddeutschen Städten). Aber die Stadtreinigung BSR macht trotzdem einen guten Job. Mit dem „BSR-Müllmann-Kalender" — Werbeskizzen-Comedy-Klassiker.',
+      beispiel: 'Mülltrennung in Berlin — Geheimnis der Wenigen.',
+      beispiel_hd: 'Mülltrennung in Berlin — Geheimnis der Wenigen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-199',
+      ausdruck: 'Tegeler See',
+      hochdeutsch: 'Tegeler See (Erholungsgebiet)',
+      bedeutung: 'Der Tegeler See im Norden Berlins ist ein beliebtes Naherholungsgebiet — Wassersport, Strandbad, Schiffstouren. Auch berühmt durch die „Tegeler Insel" — wo die Berliner Tegelseebrauerei stand. Mit dem ehemaligen Flughafen Tegel im Hintergrund (geschlossen 2020). Im Sommer Berliner Hochburg für Familien und Sportler. Hauptstadt-Natur.',
+      beispiel: 'Tegeler See im Sommer — Berliner Strand-Alternative.',
+      beispiel_hd: 'Tegeler See im Sommer — Berliner Strand-Alternative.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-200',
+      ausdruck: 'Ick bin Berliner',
+      hochdeutsch: 'Berliner Selbstbekenntnis',
+      bedeutung: '„Ick bin Berliner" ist Berlins lokales Selbstbekenntnis — der typisch berlinerische Stolz auf die Hauptstadt. Egal woher man ursprünglich kommt: Wer in Berlin lebt, ist Berliner. Berlin ist Stadt der Multikulti, der Zuwanderer, der ehemaligen West- und Ost-Bewohner. „Berliner sein" ist eine Wahl, kein Geburtsrecht. Berliner Identität — offen, frech, herzlich.',
+      beispiel: 'Egal woher du kommst — wenn du hier wohnst, biste Berliner.',
+      beispiel_hd: 'Egal woher du kommst — wenn du hier wohnst, bist du Berliner.',
+      kategorie: 'menschen'
     }
   ]
 };
