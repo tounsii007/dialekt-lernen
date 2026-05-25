@@ -1303,6 +1303,276 @@ export default {
       beispiel: 'Op Usedom schient de Sünn länger as anner Steden in Düütschland.',
       beispiel_hd: 'Auf Usedom scheint die Sonne länger als anderswo in Deutschland.',
       kategorie: 'orte'
+    },
+    {
+      id: 'p-151',
+      ausdruck: 'Schietwetter',
+      hochdeutsch: 'Mistwetter / schlechtes Wetter',
+      bedeutung: '„Schietwetter" ist im Plattdeutschen das berüchtigte schlechte Wetter — Regen, Wind, Sturm und Kälte gleichzeitig. „Schiet" bedeutet „Mist, Scheiße" und ist im Plattdeutschen kein Tabu-Wort, sondern alltäglicher Ausdruck. „Bei Schietwetter blifft man tohuus" ist klassisch. An der Nordseeküste ist Schietwetter Alltag, vor allem im November. Die Norddeutschen tragen es mit Humor und einer Tasse Pharisäer (Kaffee mit Rum).',
+      beispiel: 'Bi düt Schietwetter geiht man besser nich rut.',
+      beispiel_hd: 'Bei diesem Mistwetter geht man besser nicht raus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-152',
+      ausdruck: 'Klaben',
+      hochdeutsch: 'Klaben (Stollen-ähnliches Gebäck)',
+      bedeutung: 'Der „Klaben" ist ein traditionelles norddeutsches Weihnachtsgebäck — vor allem in Bremen und im Bremer Land. Ähnlich dem Stollen, aber dichter, dunkler und mit mehr Trockenfrüchten (Rosinen, Korinthen, Zitronat, Mandeln). Wird vor Weihnachten gebacken und über mehrere Wochen gelagert, damit er „durchzieht". Mit Butter bestrichen serviert. Der „Bremer Klaben" hat den Status einer geschützten regionalen Spezialität (g.g.A.).',
+      beispiel: 'Mien Mudder backt elk Jahr en groten Klaben.',
+      beispiel_hd: 'Meine Mutter backt jedes Jahr einen großen Klaben.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-153',
+      ausdruck: 'Mors',
+      hochdeutsch: 'Hintern / Po',
+      bedeutung: '„Mors" ist im Plattdeutschen der Hintern — derb-direkt, aber im Norddeutschen nicht tabu. „En Tritt in den Mors kriegen" bedeutet einen Tritt in den Hintern bekommen. Auch in Sprichwörtern: „Du kannst mi mal an de Mors lecken" ist die plattdeutsche Variante des Götz-Zitats. Im Hochdeutschen würde es vulgärer klingen, im Plattdeutschen gehört es zum Alltagsgebrauch. Charakteristische plattdeutsche Direktheit.',
+      beispiel: 'He hett en Mors as twee Eemers.',
+      beispiel_hd: 'Er hat einen Hintern wie zwei Eimer.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-154',
+      ausdruck: 'Klönschnack',
+      hochdeutsch: 'Plauderei / gemütliches Gespräch',
+      bedeutung: 'Der „Klönschnack" ist DAS norddeutsche Sozialphänomen — gemütliches, ausgedehntes Plaudern in entspannter Atmosphäre. „Klönen" heißt plaudern, „Schnack" das Gerede. Findet statt am Gartenzaun, in der Kneipe, beim Kaffeekränzchen oder über den Tresen hinweg. „En lütten Klönschnack" gehört zu jedem Besuch dazu. Hochdeutsche besucher müssen oft lernen, dass „kurz auf einen Klönschnack" gerne mehrere Stunden bedeutet. Norddeutsche Geselligkeit pur.',
+      beispiel: 'Komm rin för en lütten Klönschnack!',
+      beispiel_hd: 'Komm rein für eine kleine Plauderei!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-155',
+      ausdruck: 'Krabbenpulen',
+      hochdeutsch: 'Krabben pulen',
+      bedeutung: '„Krabbenpulen" ist die meditative Beschäftigung, frische Nordseekrabben (Garnelen) von Hand zu schälen — eine norddeutsche Geduldsprüfung. „Een Pund Krabben pulen duurt en Stunn" (Ein Pfund Krabben pulen dauert eine Stunde). Auf Krabbenkuttern in Büsum, Cuxhaven und Greetsiel werden täglich Tonnen gepult. Die Krabben sind klein und fummelig, aber das Ergebnis legendär: „Krabbenbrot mit Spiegelei" ist eine ostfriesische Spezialität. Familienritual am Sonntag.',
+      beispiel: 'Wi sitten den heelen Namiddag bi\'t Krabbenpulen.',
+      beispiel_hd: 'Wir sitzen den ganzen Nachmittag beim Krabbenpulen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-156',
+      ausdruck: 'Klabautermann',
+      hochdeutsch: 'Schiffsgeist',
+      bedeutung: 'Der „Klabautermann" ist der Schiffsgeist der norddeutschen und nordfriesischen Mythologie — ein hilfsbereiter Hausgeist auf Schiffen. Stammt vom plattdeutschen „klabastern" (lärmen). Der Klabautermann sorgt für die Sicherheit der Mannschaft, wenn man ihn freundlich behandelt; wer sich ihm gegenüber respektlos verhält, dem droht Unglück. Wird in Seemanns-Erzählungen und norddeutscher Folklore gepflegt. Heute auch metaphorisch für Pechsträhnen oder unerklärliche Probleme verwendet.',
+      beispiel: 'De Klabautermann mütt vandaag wat anstellen — nix klappt!',
+      beispiel_hd: 'Der Klabautermann muss heute etwas anstellen — nichts klappt!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-157',
+      ausdruck: 'Pannfisch',
+      hochdeutsch: 'Pfannfisch (Resteessen)',
+      bedeutung: '„Pannfisch" ist ein hamburgisches Gericht — Bratfisch-Reste vom Vortag werden mit Bratkartoffeln, Speck und Senfsoße aufgewärmt. Klassisches „Resteessen" aus der Zeit, als nichts weggeworfen wurde. Heute ein gefeiertes Gericht in Hamburger Traditionsgaststätten wie der Oberhafenkantine. „Pannfisch mit Senfsoße un Bratkartüffeln" ist der Klassiker. Symbol für hamburgische Sparsamkeit und Kreativität in der Küche.',
+      beispiel: 'Mütter mokt vandaag Pannfisch ut de Resten.',
+      beispiel_hd: 'Mutter macht heute Pannfisch aus den Resten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-158',
+      ausdruck: 'Schnacker',
+      hochdeutsch: 'Schwätzer / Quasseltante',
+      bedeutung: 'Ein „Schnacker" oder „Schnackerin" ist im Plattdeutschen jemand, der gerne und viel redet — von „schnacken" (reden). Liebevoll bis spöttisch: ein guter Schnacker kann jedoch eine ganze Runde unterhalten. Der „lütte Schnacker" ist auch eine Bezeichnung für ein redseliges Kind. Plural: „Schnackers". In norddeutschen Dörfern gehört der Schnacker fest zum sozialen Inventar — meist am Stammtisch oder beim Kaffeekränzchen.',
+      beispiel: 'Tante Hilde is en richtige Schnackerin.',
+      beispiel_hd: 'Tante Hilde ist eine richtige Quasseltante.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-159',
+      ausdruck: 'Buddel',
+      hochdeutsch: 'Flasche',
+      bedeutung: 'Die „Buddel" ist die plattdeutsche Flasche — meist Bier, Schnaps oder Wasser. „En Buddel Köm" ist eine Flasche Korn. „Buddelschiff" ist ein Schiff in der Flasche, eine norddeutsche Handwerks-Tradition. „Aus der Buddel trinken" als rustikale Geste. Die Bremer Stadtmusikanten halten in vielen Darstellungen Buddeln in der Pfote. Auch metaphorisch: „Sich an de Buddel hängen" bedeutet zu viel trinken. Allgegenwärtig im norddeutschen Sprachschatz.',
+      beispiel: 'Wo is de Buddel Köm vun gistern bleven?',
+      beispiel_hd: 'Wo ist die Flasche Korn von gestern geblieben?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-160',
+      ausdruck: 'Snuten un Poten',
+      hochdeutsch: 'Schnauze und Pfoten',
+      bedeutung: 'Die „Snuten un Poten" sind im Plattdeutschen die Schnauze und Pfoten (von Tieren) — wörtlich, aber auch redensartlich für die ganze äußere Erscheinung. „Sien Snuten un Poten hett he ümmer in d\'Bidder" beschreibt jemanden, der ständig in alles seine Hände steckt. Im Hamburgischen auch eine traditionelle Spezialität: Snuten un Poten als Brei aus Schweineschnauze und -pfoten, herzhaft und sehr deftig. Heute selten serviert.',
+      beispiel: 'Hool dien Snuten un Poten aus mien Sachen!',
+      beispiel_hd: 'Halt deine Schnauze und Pfoten aus meinen Sachen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-161',
+      ausdruck: 'Kabuff',
+      hochdeutsch: 'Verschlag / kleiner Raum',
+      bedeutung: 'Ein „Kabuff" ist im Plattdeutschen ein kleiner, oft beengter Raum — ein Verschlag, eine winzige Wohnung oder ein Abstellraum. „He wahnt in en lütten Kabuff" beschreibt jemandes klein-bescheidene Wohnsituation. Stammt vom mittelhochdeutschen „kavuff" oder vom Französischen „cabuche" (Hütte). Hat eine pejorative Note, aber auch eine gewisse heimelige Konnotation. In Hafenvierteln und alten Stadtteilen waren Kabuffs früher häufig.',
+      beispiel: 'Mien Studenten-Wahnung war en richtigen Kabuff.',
+      beispiel_hd: 'Meine Studentenwohnung war ein richtiger Verschlag.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-162',
+      ausdruck: 'Lütt un lütt',
+      hochdeutsch: 'Bier mit Köm (Kornschnaps)',
+      bedeutung: '„Lütt un lütt" ist die hamburger Bezeichnung für ein kleines Bier mit einem kleinen Korn — die klassische Hafenarbeiter-Kombination. Wörtlich: „Klein und klein". Wird in einem Zug runtergespült. In traditionellen Hafenkneipen wie der „Aalkate" oder dem „Onkel Otto" auch heute noch beliebt. „En Lütt un lütt to\'n Fierabend" gehört zur Hamburger Arbeiter-Kultur. Friedrich Hebbel und Theodor Storm haben es in ihren Werken erwähnt.',
+      beispiel: 'Een Lütt un lütt to\'n Fierabend!',
+      beispiel_hd: 'Ein kleines Bier mit Korn zum Feierabend!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-163',
+      ausdruck: 'Buschen',
+      hochdeutsch: 'Strauß / Bündel',
+      bedeutung: 'Ein „Buschen" ist im Plattdeutschen ein Strauß oder Bündel — meist von Blumen, Kräutern oder Zweigen. „En Buschen Tulpen" für einen Tulpenstrauß. „Buschen vun Petersilie" für ein Petersilien-Bund. Stammt vom mittelhochdeutschen „bosch" (Busch). Auch metaphorisch für eine Gruppe: „En Buschen Kinner" sind viele Kinder. Charakteristische plattdeutsche Mengen-Beschreibung mit eindringlich-konkreter Bildlichkeit.',
+      beispiel: 'Hool een Buschen Blomen för dien Mudder.',
+      beispiel_hd: 'Hol einen Strauß Blumen für deine Mutter.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-164',
+      ausdruck: 'Düt un dat',
+      hochdeutsch: 'Dies und das',
+      bedeutung: '„Düt un dat" ist die plattdeutsche Variante von „dies und das" — ein lockerer Sammelbegriff für verschiedene unbestimmte Dinge oder Themen. „Wi snacken över düt un dat" bedeutet, wir reden über verschiedene Dinge. Drückt eine entspannte, ungezwungene Haltung aus. „Dat geiht so düt un dat" ist die Antwort auf „Wie geht\'s?" — ein bisschen so, ein bisschen so. Norddeutsche Lakonie pur.',
+      beispiel: 'Wi hebbt över düt un dat snackt.',
+      beispiel_hd: 'Wir haben über dies und das geredet.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-165',
+      ausdruck: 'Lütt Dirn',
+      hochdeutsch: 'kleines Mädchen',
+      bedeutung: '„Lütt Dirn" ist im Plattdeutschen das kleine Mädchen — Diminutiv-Anrede für Töchter, Enkelinnen oder kleine Mädchen allgemein. „Komm her, mien lütt Dirn" ist eine zärtliche Anrede. „Dirn" stammt vom mittelhochdeutschen „dierne" (Magd, junges Mädchen), das im Hochdeutschen pejorativ wurde, im Plattdeutschen aber liebevoll geblieben ist. In Volksliedern und norddeutscher Literatur omnipräsent. Symbol für familiäre Wärme.',
+      beispiel: 'Wat is mit di los, mien lütt Dirn?',
+      beispiel_hd: 'Was ist mit dir los, mein kleines Mädchen?',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-166',
+      ausdruck: 'Suttje',
+      hochdeutsch: 'leise / gemütlich',
+      bedeutung: '„Suttje" beschreibt im Plattdeutschen einen leisen, gemütlichen, gelassenen Zustand — „Suttje an\'t Werk gahn" bedeutet ruhig und bedächtig zur Arbeit gehen. „Suttje" ist ein Tugend-Wort: nicht hetzen, nicht poltern, mit Bedacht agieren. Stammt vom alten norddeutschen „suttisch" (sanft). Im Hamburgischen besonders beliebt: „Suttje, suttje, dat löppt all" — beruhigend gemeint. Drückt norddeutsche Gelassenheit aus.',
+      beispiel: 'Suttje, suttje, dat löppt all!',
+      beispiel_hd: 'Ruhig, ruhig, das läuft schon!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-167',
+      ausdruck: 'Pott',
+      hochdeutsch: 'Topf / Schiff',
+      bedeutung: '„Pott" hat im Plattdeutschen zwei Bedeutungen: 1) Topf, Kessel — „Wat is in den Pott?" ist eine Kochfrage. 2) Schiff — vor allem Frachter oder Fischkutter. „En oler Pott" ist ein altes Schiff, oft liebevoll gemeint. Hamburgisch: „Vun Pott to Pott" bedeutet von Schiff zu Schiff. Norddeutsche Maritimkultur durchzieht den Sprachgebrauch. Auch metaphorisch: „in een Pott smieten" heißt zusammenwerfen.',
+      beispiel: 'Wat\'n grötten Pott liggt dor in\'n Hafen!',
+      beispiel_hd: 'Was für ein großes Schiff liegt da im Hafen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-168',
+      ausdruck: 'Bregen',
+      hochdeutsch: 'Gehirn / Verstand',
+      bedeutung: '„Bregen" ist im Plattdeutschen das Gehirn — wörtlich anatomisch, aber häufiger im übertragenen Sinn als Verstand. „He hett kien Bregen" bedeutet er hat keinen Verstand. „Bregenklöterig" ist verrückt oder durcheinander. Im Norden auch als Gericht: gebratenes Kalbsbregen — heute selten. Karl-Heinz Boese hat den Begriff in Hamburg-Krimis bekannt gemacht. Charakteristisch plattdeutsche Direktheit: über das Gehirn wird wie über jeden anderen Körperteil gesprochen.',
+      beispiel: 'Bruuk mal dien Bregen, dat is doch ganz einfach!',
+      beispiel_hd: 'Benutz mal dein Gehirn, das ist doch ganz einfach!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-169',
+      ausdruck: 'Bröttken',
+      hochdeutsch: 'Brötchen',
+      bedeutung: 'Das „Bröttken" oder „Brötschen" ist im Plattdeutschen das Brötchen — kleine Variante von „Brot". Im Norden wird beim Bäcker „En Bröttken mit Butter" bestellt. Unterschiedliche Bezeichnungen je nach Region: in Hamburg „Schrippen" (Berlin-Einfluss), in Bremen „Rundstück", in Hannover „Bröttken". Hamburger Sonderform: „Franzbrötchen" ist eine süße Spezialität. Frühstücksbrötchen sind im Norden „de eerste Mahltied" (die erste Mahlzeit).',
+      beispiel: 'Hool noch en paar Bröttken vun\'n Bäcker.',
+      beispiel_hd: 'Hol noch ein paar Brötchen vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-170',
+      ausdruck: 'Vagels',
+      hochdeutsch: 'Vögel',
+      bedeutung: '„Vagels" sind im Plattdeutschen die Vögel — von Möwen bis Spatzen. „Vagelfangen" war früher Hobby und Beruf. „En Vagel hebben" bedeutet verrückt sein. Norddeutsche Vagels-Welt ist reich: Möwen (Möven), Spreeen (Stare), Buchfinken, Drosseln. „Vagelköppigkeit" ist Vergesslichkeit oder Verspieltheit. Das Plattdeutsche pflegt einen reichen Wortschatz für die Vogelwelt — Erbe der Küstennähe und der jahrhundertealten Beobachtungstradition.',
+      beispiel: 'De Möwen-Vagels schreien dat ganze Jahr.',
+      beispiel_hd: 'Die Möwen schreien das ganze Jahr.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-171',
+      ausdruck: 'Düümlang',
+      hochdeutsch: 'eine ganze Weile',
+      bedeutung: '„Düümlang" bedeutet im Plattdeutschen „eine ganze Weile" oder „seit langer Zeit" — wörtlich „Daumen-lang", also so lang wie ein Daumen. „Ick hebb di düümlang nich seehn" bedeutet, ich habe dich seit langem nicht gesehen. Charakteristische plattdeutsche Maßangabe mit Körperteil-Bezug. Klingt liebevoll und vertraut. Auch: „düümliek" für „ähnlich, gleichartig". Tief im plattdeutschen Wortschatz verwurzelt.',
+      beispiel: 'Ick hebb mien Nachber düümlang nich seehn.',
+      beispiel_hd: 'Ich habe meinen Nachbarn seit langem nicht gesehen.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-172',
+      ausdruck: 'Sien Senf dorto geven',
+      hochdeutsch: 'seinen Senf dazugeben',
+      bedeutung: '„Sien Senf dorto geven" bedeutet ungefragt seine Meinung sagen — meist mit leicht abwertender Konnotation. „Müttgt mosst ümmer dien Senf dorto geven!" wird als Vorwurf an Besserwisser gerichtet. Im Plattdeutschen behält das Sprichwort den scharfen Beigeschmack des Senfs. Stammt aus der Zeit, als Senf zu allem gegeben wurde, ob gewünscht oder nicht. Universelles deutsches Idiom, im Plattdeutschen besonders direkt verwendet.',
+      beispiel: 'Du musst ook ümmer dien Senf dorto geven!',
+      beispiel_hd: 'Du musst auch immer deinen Senf dazugeben!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-173',
+      ausdruck: 'Plietsch',
+      hochdeutsch: 'schlau / clever',
+      bedeutung: '„Plietsch" beschreibt im Plattdeutschen einen schlauen, cleveren, oft etwas durchtriebenen Menschen — meist anerkennend gemeint. „He is plietsch" ist ein Kompliment für Geschäftssinn oder Tüchtigkeit. Stammt aus dem Niederländischen („pluis" — fein, sauber). Im Gegensatz zu „dösig" (dumm). Norddeutsche Wertschätzung für praktische Intelligenz. Auch: „plietsch wie en Eichhörnchen" für besonders flinke, schlaue Personen.',
+      beispiel: 'De Lütte is mol richtig plietsch — kapeert ganz gau.',
+      beispiel_hd: 'Der Kleine ist mal richtig schlau — kapiert ganz schnell.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-174',
+      ausdruck: 'Hüsken',
+      hochdeutsch: 'kleines Haus',
+      bedeutung: 'Das „Hüsken" ist im Plattdeutschen das kleine Haus — Diminutiv von „Huus" (Haus). Klein, gemütlich, oft mit Reetdach. „Mien lütt Hüsken an de Geest" ist ein klassischer Wunsch. In Friesland und Mecklenburg-Vorpommern stehen tausende Hüsken aus dem 18. und 19. Jahrhundert. Symbol für norddeutsche Heimat und Bodenständigkeit. Auch metaphorisch: das eigene kleine Reich, in dem man sich wohlfühlt.',
+      beispiel: 'Ick wahn in en lütten Hüsken op\'t Land.',
+      beispiel_hd: 'Ich wohne in einem kleinen Haus auf dem Land.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-175',
+      ausdruck: 'Achterbleeven',
+      hochdeutsch: 'zurückgeblieben sein',
+      bedeutung: '„Achterbleeven" bedeutet im Plattdeutschen „hinterher hinken" oder „zurückgeblieben sein" — zeitlich, geistig oder örtlich. „He is en bietken achterbleeven" beschreibt jemanden, der nicht ganz auf dem aktuellen Stand ist. Stammt von „achter" (hinten) und „bleeven" (bleiben). Liebevoll bis spöttisch verwendet. Auch positiv: „Achterbleeven" als Erbschaft hinterlassen. Plattdeutsche Vielseitigkeit eines einzigen Wortes.',
+      beispiel: 'De Tied is ehn voor un wi sünd achterbleeven.',
+      beispiel_hd: 'Die Zeit ist vorbei und wir sind zurückgeblieben.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-176',
+      ausdruck: 'Snut',
+      hochdeutsch: 'Schnauze / Mund',
+      bedeutung: '„Snut" ist im Plattdeutschen die Schnauze oder der Mund — derb-direkt verwendet für Mensch und Tier. „Hool dien Snut!" bedeutet halt deinen Mund. „En grote Snut hebben" beschreibt einen Großmaul. „Vor de Snut" ist „direkt vor dem Gesicht". Charakteristische norddeutsche Direktheit ohne Tabu. „Snutenpulen" ist auch die fummelige Beschäftigung mit dem Bart oder der Nase. Allgegenwärtig im Plattdeutschen.',
+      beispiel: 'Hool endlich dien Snut, du schnackst to veel!',
+      beispiel_hd: 'Halt endlich den Mund, du redest zu viel!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-177',
+      ausdruck: 'Bullerjan',
+      hochdeutsch: 'lärmender Mensch',
+      bedeutung: 'Ein „Bullerjan" ist im Plattdeutschen ein lärmender, polternder Mensch — meist mit lauter Stimme und ungeduldigem Auftreten. Stammt von „bollern" (poltern, lärmen). Im Gegensatz zum „suttje"-Menschen. Norddeutsche Charakterisierung — kein Schimpfwort, aber auch kein Kompliment. „Junges, was\'n Bullerjan!" ist eine typische Reaktion auf einen geräuschvollen Auftritt. Auch ein Bezirk in Schleswig-Holstein heißt „Bullerjan".',
+      beispiel: 'De Karl is en Bullerjan, ümmer veel Schrei.',
+      beispiel_hd: 'Der Karl ist ein Polterer, immer viel Geschrei.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-178',
+      ausdruck: 'Sünd-Tüünig',
+      hochdeutsch: 'Unsinn / Quatsch',
+      bedeutung: '„Sünd-Tüünig" ist plattdeutsch für Unsinn, Blödsinn, Quatsch — oft auch als „Tüünkraam" verwendet. „Vertell keen Sünd-Tüünig!" bedeutet erzähl keinen Unsinn. Stammt vom alten norddeutschen „tün" (Zaun, Geflecht — Wirrwarr). Auch als „tüünig" allein verwendet: verdreht, verwirrt. Norddeutscher Sprachschatz für allerlei Albernheiten — meist liebevoll-belustigt eingesetzt, selten beleidigend.',
+      beispiel: 'Wat\'n Sünd-Tüünig snackst du dor!',
+      beispiel_hd: 'Was für einen Unsinn redest du da!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-179',
+      ausdruck: 'Wattlöper',
+      hochdeutsch: 'Wattläufer',
+      bedeutung: 'Ein „Wattlöper" ist jemand, der auf das Wattenmeer geht — meist barfuß bei Niedrigwasser. Tradition an der Nordseeküste mit eigenen geführten Wanderungen über kilometerweite Wattflächen zu den Halligen oder Inseln. Wattwanderungen sind UNESCO-Weltnaturerbe seit 2009. Der Wattlöper kennt die Gezeiten genau — ein Fehler kann tödlich enden, wenn die Flut zu schnell kommt. Symbol für die spezielle Beziehung der Norddeutschen zum Meer.',
+      beispiel: 'De Wattlöpers gahn von Cuxhaven na de Insel Neuwerk.',
+      beispiel_hd: 'Die Wattläufer gehen von Cuxhaven zur Insel Neuwerk.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-180',
+      ausdruck: 'Düüsterbüük',
+      hochdeutsch: 'Düstermensch / Schwarzseher',
+      bedeutung: 'Ein „Düüsterbüük" ist im Plattdeutschen ein düsterer, pessimistischer Mensch — wörtlich „Düster-Bauch". „Mok kien Düüsterbüük!" bedeutet werd nicht so pessimistisch. Charakteristische plattdeutsche Charakterisierung mit anatomischem Bezug. Norddeutsche Lebensweisheit: gegen den Düüsterbüük helfen Klönschnack, ein Pharisäer und ein bisschen Wattenwind. Auch als Selbstbezeichnung verwendet: „Ick bin vandaag en richtigen Düüsterbüük."',
+      beispiel: 'Wat\'n Düüsterbüük büst du vandaag!',
+      beispiel_hd: 'Was für ein Schwarzseher bist du heute!',
+      kategorie: 'menschen'
     }
   ]
 };
