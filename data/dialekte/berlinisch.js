@@ -1333,6 +1333,231 @@ export default {
       beispiel: 'En Spaziergang im Tiergarten — die beste Therapie.',
       beispiel_hd: 'Ein Spaziergang im Tiergarten — die beste Therapie.',
       kategorie: 'natur'
+    },
+    {
+      id: 'b-151',
+      ausdruck: 'Siegessäule',
+      hochdeutsch: 'Siegessäule (Berliner Wahrzeichen)',
+      bedeutung: 'Die Siegessäule am Großen Stern im Tiergarten ist mit 67 m Berlins bekanntestes Wahrzeichen — errichtet 1873 zur Erinnerung an die preußischen Siege. Die „Goldelse" — vergoldete Viktoria-Statue auf der Spitze — ist Berlin-Postkarten-Klassiker. 285 Stufen führen zur Aussichtsplattform mit Panoramablick. Im Loveparade-Soundtrack der 90er Jahre Hauptort. Auch Drehort von „Der Himmel über Berlin".',
+      beispiel: 'Von der Siegessäule kann man bis nach Brandenburg sehen.',
+      beispiel_hd: 'Von der Siegessäule kann man bis nach Brandenburg sehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-152',
+      ausdruck: 'Bötzow-Brauerei',
+      hochdeutsch: 'Bötzow-Brauerei (Berliner Brauerei-Tradition)',
+      bedeutung: 'Die Bötzow-Brauerei in Prenzlauer Berg gehörte zu den berühmtesten Berliner Brauereien des 19. Jahrhunderts — 1864 gegründet, 1949 stillgelegt. Heute ist das Brauereigelände Mahnmal der Berliner Industriekultur. Es gibt Pläne, sie wiederzueröffnen. Berlin hatte einst hunderte Brauereien — heute sind nur wenige übrig (Berliner Kindl, Berliner Pilsner, Schultheiss).',
+      beispiel: 'Berlin war früher Brauerei-Hauptstadt — heute Späti-Bier-Hauptstadt.',
+      beispiel_hd: 'Berlin war früher Brauerei-Hauptstadt — heute Späti-Bier-Hauptstadt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-153',
+      ausdruck: 'Volksbühne',
+      hochdeutsch: 'Volksbühne am Rosa-Luxemburg-Platz',
+      bedeutung: 'Die Volksbühne ist Berlins legendäres Theater — gegründet 1914, lag in Ost-Berlin. Frank Castorf machte sie 1992-2017 weltberühmt mit innovativen, oft skandalösen Inszenierungen. Berliner Avantgarde-Theater par excellence. Charakteristisch: das Rosa-Luxemburg-Statue vor dem Gebäude. Nach Castorf ging es turbulent zu — heute wieder etabliert unter Renè Pollesch.',
+      beispiel: 'Volksbühne — wo Berlin politisch und experimentell wird.',
+      beispiel_hd: 'Volksbühne — wo Berlin politisch und experimentell wird.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-154',
+      ausdruck: 'Schaubühne',
+      hochdeutsch: 'Schaubühne am Lehniner Platz',
+      bedeutung: 'Die Schaubühne in Charlottenburg ist Berlins zweites international gefeiertes Theater — geleitet seit 1999 von Thomas Ostermeier. Im ehemaligen Bauhaus-Kino auf dem Kurfürstendamm. Berühmt für moderne Klassiker-Inszenierungen (Ibsen, Shakespeare). Gastspiele in der ganzen Welt. Tourneen nach New York, Tokio, Sao Paulo. Berliner Bühnenkunst auf Weltniveau.',
+      beispiel: 'Ostermeiers Hamlet inner Schaubühne is\' Pflicht.',
+      beispiel_hd: 'Ostermeiers Hamlet in der Schaubühne ist Pflicht.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-155',
+      ausdruck: 'Babelsberg',
+      hochdeutsch: 'Filmstudio Babelsberg (Potsdam)',
+      bedeutung: 'Das Filmstudio Babelsberg in Potsdam (vor Berlin) ist das älteste Filmstudio der Welt — gegründet 1912. Hier entstanden „Metropolis" (Fritz Lang), „Der Blaue Engel" (mit Marlene Dietrich), heute Hollywood-Produktionen wie „Inglourious Basterds" und „Matrix Resurrections". Tom Cruise, Quentin Tarantino, George Clooney drehen hier. Babelsberg ist deutsches Hollywood.',
+      beispiel: 'In Babelsberg drehte Quentin Tarantino „Inglourious Basterds".',
+      beispiel_hd: 'In Babelsberg drehte Quentin Tarantino „Inglourious Basterds".',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-156',
+      ausdruck: 'Potsdamer Platz',
+      hochdeutsch: 'Potsdamer Platz (Neubauplatz)',
+      bedeutung: 'Der Potsdamer Platz war 1920 Europas verkehrsreichster Platz, im Krieg vollständig zerstört, in der DDR im Mauerstreifen. Nach der Wende erfolgte einer der größten Neubauten Europas — die heutige Skyline mit Sony Center, DB Tower, Beisheim Center. Heute Touristen-Magnet, aber auch Berliner Hass-Liebes-Objekt: zu modern, zu künstlich. Trotzdem Symbol für Berliner Wiederaufbau.',
+      beispiel: 'Der Potsdamer Platz is\' wie New York-Light in Berlin.',
+      beispiel_hd: 'Der Potsdamer Platz ist wie New York-Light in Berlin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-157',
+      ausdruck: 'Sony Center',
+      hochdeutsch: 'Sony Center am Potsdamer Platz',
+      bedeutung: 'Das Sony Center mit der charakteristischen Glaskuppel ist Hauptattraktion am Potsdamer Platz — eröffnet 2000. Architekt Helmut Jahn. Das Forum mit den Springbrunnen und der freitragenden, lichtdurchfluteten Kuppel ist Wahrzeichen. Bis 2017 hatte Sony Europe Hauptsitz hier. Heute Bürohochhäuser, Restaurants und das Filmmuseum. Architektonisches Symbol für modernes Berlin.',
+      beispiel: 'Die Sony-Center-Kuppel leuchtet abends in allen Farben.',
+      beispiel_hd: 'Die Sony-Center-Kuppel leuchtet abends in allen Farben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-158',
+      ausdruck: 'Bahnhof Friedrichstraße',
+      hochdeutsch: 'Bahnhof Friedrichstraße (ehem. Grenzbahnhof)',
+      bedeutung: 'Der Bahnhof Friedrichstraße in Berlin-Mitte war zu Mauerzeiten der berühmt-berüchtigte „Tränenpalast" — wo sich Familien zwischen Ost und West trennen mussten. Heute Museum und Mahnmal. Architektonisch eines der wichtigsten Berliner Bahnhöfe. Direkter Knotenpunkt für S-Bahn, U-Bahn, ICE. Geschichts-Touristen-Magnet.',
+      beispiel: 'Im Tränenpalast wurde Geschichte geschrieben.',
+      beispiel_hd: 'Im Tränenpalast wurde Geschichte geschrieben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-159',
+      ausdruck: 'Eberswalder Straße',
+      hochdeutsch: 'Eberswalder Straße (Konnopke-Currywurst)',
+      bedeutung: 'Die Eberswalder Straße in Prenzlauer Berg ist berühmt für „Konnopkes Imbiss" — Berlins älteste Currywurst-Bude (seit 1930). Hier soll angeblich die Currywurst erfunden worden sein (umstritten mit Heuwer in Charlottenburg). Direkt unter der U-Bahn-Hochstrecke gelegen, ist die Konnopke-Bude Pilgerstätte für Currywurst-Liebhaber. Kult bei DDR-Nostalgikern und Touristen.',
+      beispiel: 'Konnopke an der Eberswalder — Berliner Currywurst-Legende.',
+      beispiel_hd: 'Konnopke an der Eberswalder — Berliner Currywurst-Legende.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-160',
+      ausdruck: 'Berliner Philharmonie',
+      hochdeutsch: 'Berliner Philharmonie (Konzerthaus)',
+      bedeutung: 'Die Berliner Philharmonie am Tiergarten ist Heimat der Berliner Philharmoniker — gegründet 1882. Das Konzerthaus, erbaut 1963 von Hans Scharoun, ist architektonisch revolutionär: das Orchester sitzt in der Mitte, Zuhörer rundherum. Akustisch eines der besten Konzerthäuser der Welt. Karajan, Abbado, Rattle und Petrenko leiteten das Orchester. Klassikmekka.',
+      beispiel: 'Die Berliner Philharmoniker sin\' Weltspitze.',
+      beispiel_hd: 'Die Berliner Philharmoniker sind Weltspitze.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-161',
+      ausdruck: 'Staatsoper',
+      hochdeutsch: 'Staatsoper Unter den Linden',
+      bedeutung: 'Die Staatsoper Unter den Linden — Berlins Hauptoper — wurde 1742 von Friedrich dem Großen eröffnet und ist eines der ältesten Opernhäuser Europas. Generalmusikdirektor Daniel Barenboim prägte sie 30 Jahre lang. Nach langer Sanierung 2017 wiedereröffnet. Mit den klassischen Opern-Klassikern und avantgardistischen Produktionen. Berliner Hochkultur-Pflicht.',
+      beispiel: 'Wagner inner Staatsoper — unvergleichlicher Klang.',
+      beispiel_hd: 'Wagner in der Staatsoper — unvergleichlicher Klang.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-162',
+      ausdruck: 'Deutsche Oper',
+      hochdeutsch: 'Deutsche Oper Berlin (Charlottenburg)',
+      bedeutung: 'Die Deutsche Oper Berlin in Charlottenburg ist Berlins westliches Opernhaus — gegründet 1912, im Krieg zerstört, 1961 neu erbaut. Mit dem berühmten Foyer im 60er-Jahre-Brutalismus-Stil. Christof Loy und andere Top-Regisseure inszenierten hier. Mit 1.865 Plätzen das größte Opernhaus Deutschlands. Charlottenburger Hochkultur.',
+      beispiel: 'Die Deutsche Oper macht oft modernere Inszenierungen.',
+      beispiel_hd: 'Die Deutsche Oper macht oft modernere Inszenierungen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-163',
+      ausdruck: 'Friedrichstadt-Palast',
+      hochdeutsch: 'Friedrichstadt-Palast (größtes Theater Europas)',
+      bedeutung: 'Der Friedrichstadt-Palast in Mitte ist Europas größte Revue-Bühne — mit dem größten Theaterring der Welt (60 m Durchmesser). Hier laufen aufwändigste Show-Produktionen mit 100+ Tänzern, spektakulärer Technik und 3D-Effekten. Die berühmte Girlsreihe „The Lipsticks" zelebriert klassische Revue-Kultur. Im April-Mai jedes Jahres Premiere einer neuen Show.',
+      beispiel: 'Im Friedrichstadt-Palast strahlt der Glamour wie in Las Vegas.',
+      beispiel_hd: 'Im Friedrichstadt-Palast strahlt der Glamour wie in Las Vegas.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-164',
+      ausdruck: 'Berliner Ensemble',
+      hochdeutsch: 'Berliner Ensemble (BE)',
+      bedeutung: 'Das Berliner Ensemble am Bertolt-Brecht-Platz — gegründet 1949 von Bertolt Brecht und Helene Weigel — ist Berlins Brecht-Theater. Das Programm konzentriert sich auf Brecht-Stücke („Mutter Courage", „Dreigroschenoper") und politisches Theater. Architektonisch im Theatersaal mit dem markanten Eisernen Vorhang. Brechts Vermächtnis wird hier gepflegt — manchmal traditionell, manchmal radikal neu.',
+      beispiel: 'Brechts „Dreigroschenoper" inner BE — Klassiker pur.',
+      beispiel_hd: 'Brechts „Dreigroschenoper" im Berliner Ensemble — Klassiker pur.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-165',
+      ausdruck: 'Zoologischer Garten',
+      hochdeutsch: 'Berliner Zoo (ältester Deutschlands)',
+      bedeutung: 'Der Zoo Berlin in Charlottenburg ist Deutschlands ältester Zoo (gegründet 1844) und mit über 20.000 Tieren einer der artenreichsten der Welt. Berühmt: Eisbär Knut (2006-2011), der weltweit Furore machte. Das Aquarium nebenan ist eines der spektakulärsten Europas. Der „Bahnhof Zoo" und der Roman von Christiane F. „Wir Kinder vom Bahnhof Zoo" haben den Stadtteil unsterblich gemacht.',
+      beispiel: 'Im Zoo Berlin live die seltensten Tiere bewundern.',
+      beispiel_hd: 'Im Zoo Berlin die seltensten Tiere live bewundern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-166',
+      ausdruck: 'Tierpark',
+      hochdeutsch: 'Tierpark Friedrichsfelde (Ost-Berlin)',
+      bedeutung: 'Der Tierpark Berlin in Friedrichsfelde wurde 1955 in der DDR als „Anti-West-Zoo" gegründet. Mit 160 Hektar Europas größter Tierpark. Heute parallel zum Berliner Zoo betrieben (Förderverein Berlin). Tiere haben hier mehr Platz. Beliebt bei Familien. Der Tierpark zeigt die Berliner Doppelstruktur: West-Zoo und Ost-Tierpark, beide bedeutend.',
+      beispiel: 'Im Tierpark haben Elefanten viel mehr Platz als im Zoo.',
+      beispiel_hd: 'Im Tierpark haben Elefanten viel mehr Platz als im Zoo.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-167',
+      ausdruck: 'Berlin Hauptbahnhof',
+      hochdeutsch: 'Berlin Hbf (modernster Bahnhof Europas)',
+      bedeutung: 'Der Berliner Hauptbahnhof, eröffnet 2006 zur Fußball-WM, ist Europas größter Kreuzungsbahnhof — vier Bahnsteig-Ebenen kreuzen sich. Eine Glaskathedrale aus Stahl und Glas, entworfen von Meinhard von Gerkan. 320.000 Reisende pro Tag. Knotenpunkt für ICE, Regional, S-Bahn. Berliner Bahnhof-Architektur der Spitzenklasse.',
+      beispiel: 'Vom Hauptbahnhof aus geht\'s schnell überall hin in Berlin.',
+      beispiel_hd: 'Vom Hauptbahnhof aus geht es schnell überall hin in Berlin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-168',
+      ausdruck: 'Bundeskanzleramt',
+      hochdeutsch: 'Bundeskanzleramt (Berlin)',
+      bedeutung: 'Das Bundeskanzleramt am Spreebogen ist Sitz des Bundeskanzlers seit 2001 — entworfen von Axel Schultes und Charlotte Frank. Spitzname: „Waschmaschine" wegen der charakteristischen Rundungen. Mit der Bundesarchiv-Zentrale und dem Paul-Löbe-Haus bildet es das politische Zentrum Deutschlands. Olaf Scholz arbeitet hier — vorher Merkel, Schröder, Kohl.',
+      beispiel: '„Die Waschmaschine" — Spitzname für das Kanzleramt.',
+      beispiel_hd: '„Die Waschmaschine" — Spitzname für das Kanzleramt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-169',
+      ausdruck: 'Holocaust-Mahnmal',
+      hochdeutsch: 'Denkmal für die ermordeten Juden Europas',
+      bedeutung: 'Das Holocaust-Mahnmal zwischen Brandenburger Tor und Potsdamer Platz besteht aus 2.711 Betonquadern in einem Stellengitter-Muster — entworfen 2005 von Peter Eisenman. Direkt darunter das Informationszentrum mit Dokumentation der nationalsozialistischen Verbrechen. Berlin zeigt damit Verantwortung für die deutsche Geschichte. Touristisch besucht, aber niemals als Selfie-Spot — Würde gefordert.',
+      beispiel: 'Ein Besuch im Holocaust-Mahnmal — Pflicht für jeden Berlin-Touristen.',
+      beispiel_hd: 'Ein Besuch im Holocaust-Mahnmal — Pflicht für jeden Berlin-Touristen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-170',
+      ausdruck: 'Topographie des Terrors',
+      hochdeutsch: 'Dokumentationszentrum (Gestapo-Gelände)',
+      bedeutung: 'Die „Topographie des Terrors" ist ein Dokumentationszentrum auf dem ehemaligen Gestapo- und SS-Gelände in Mitte. Das Gebäude zeigt deutsche NS-Geschichte mit Bildern, Dokumenten und einem teilweise erhaltenen Mauerstreifen. Über 1 Million Besucher jährlich. Hier wird Berliner Geschichte ungeschönt aufgearbeitet — wichtig für Bildung und Erinnerung.',
+      beispiel: 'In der Topographie des Terrors lernst du die dunkelste deutsche Geschichte.',
+      beispiel_hd: 'In der Topographie des Terrors lernst du die dunkelste deutsche Geschichte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-171',
+      ausdruck: 'Sammelpunkt',
+      hochdeutsch: 'Berliner Treffpunkt',
+      bedeutung: 'Berliner haben oft besondere „Sammelpunkte" für Treffen — die Weltzeituhr am Alex, die Siegessäule, die Goldelse, der Bayerische Platz, das Brandenburger Tor. Diese Orte sind in der Berliner Kultur fest verankert: „Treffen wir uns am Alex um 18 Uhr." Ohne weitere Erklärung verstanden. Sozialgeographische Anker einer Großstadt.',
+      beispiel: 'Treffen wir uns am Alex unter der Weltzeituhr.',
+      beispiel_hd: 'Treffen wir uns am Alex unter der Weltzeituhr.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-172',
+      ausdruck: 'Weltzeituhr',
+      hochdeutsch: 'Berliner Weltzeituhr am Alex',
+      bedeutung: 'Die Weltzeituhr am Alexanderplatz, errichtet 1969 von Erich John, ist ein DDR-Designikon. Die rotierende Säule zeigt die aktuelle Uhrzeit in 148 Städten weltweit. Über ihr ein stilisiertes Sonnensystem. Treffpunkt-Klassiker für Berliner. Auch architektonisch interessant — sozialistischer Pop-Brutalismus. Survival der DDR-Zeit.',
+      beispiel: 'Unter der Weltzeituhr — Berliner Treffpunkt seit über 50 Jahren.',
+      beispiel_hd: 'Unter der Weltzeituhr — Berliner Treffpunkt seit über 50 Jahren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-173',
+      ausdruck: 'Berliner Stollen',
+      hochdeutsch: 'Berliner Christstollen',
+      bedeutung: 'Im Gegensatz zum berühmten Dresdner Stollen hat Berlin auch eine eigene Stollen-Tradition — feiner Hefeteig mit Mandeln, Rosinen, Zitronat. Berliner Stollen ist meist heller und weniger dicht als der sächsische. Wird in der Weihnachtszeit von Berliner Bäckern gebacken — alte Adresse: „Bäckerei Wiener Conditorei Caffeehaus" in Charlottenburg. Stille Berliner Backtradition.',
+      beispiel: 'Berliner Stollen ist anders als der Dresdner — feiner.',
+      beispiel_hd: 'Berliner Stollen ist anders als der Dresdner — feiner.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-174',
+      ausdruck: 'Ampelmännchen',
+      hochdeutsch: 'Ostdeutsches Ampelmännchen',
+      bedeutung: 'Das Ampelmännchen — die DDR-Version der Fußgängerampel, entworfen 1961 von Karl Peglau — überlebte die Wende und wurde zu einer der wichtigsten Marken Berlins. Mit Hut und ausgestreckten Armen freundlicher als die Wessi-Ampelmännchen. T-Shirts, Tassen, Souvenirs überall. Mehrere Ampelmännchen-Stores in Berlin. Eines der wenigen DDR-Symbole, das den Westen erobert hat.',
+      beispiel: 'Das Ampelmännchen is\' Berlin pur — auch im Westen.',
+      beispiel_hd: 'Das Ampelmännchen ist Berlin pur — auch im Westen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-175',
+      ausdruck: 'Wir sind das Volk',
+      hochdeutsch: 'Wendeparole (1989)',
+      bedeutung: '„Wir sind das Volk!" war die zentrale Parole der friedlichen Revolution in der DDR 1989 — bei den Montagsdemonstrationen in Leipzig, Berlin und anderen Städten gerufen. Sie verlangte Demokratie und führte zum Fall der Mauer. Später wandelte sich die Parole zu „Wir sind ein Volk!" — Forderung nach Wiedervereinigung. Geschichtsträchtige Berliner Worte.',
+      beispiel: '„Wir sind das Volk" — Parole, die die DDR ins Wanken brachte.',
+      beispiel_hd: '„Wir sind das Volk" — Parole, die die DDR ins Wanken brachte.',
+      kategorie: 'redensart'
     }
   ]
 };
