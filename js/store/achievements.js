@@ -17,6 +17,8 @@ export const ACHIEVEMENTS = [
     check: (s) => s.gelerntCount >= 200 },
   { id: 'fiveHundred', icon: '💎', title: '500 gelernt',    desc: 'Fünfhundert Ausdrücke — Mundartmeister!',
     check: (s) => s.gelerntCount >= 500 },
+  { id: 'thousand',    icon: '🌟', title: '1000 gelernt',   desc: 'Eintausend Ausdrücke — Dialekt-Legende!',
+    check: (s) => s.gelerntCount >= 1000 },
 
   // Streak
   { id: 'streak3',  icon: '🔥', title: '3-Tage-Streak',  desc: 'Drei Tage in Folge gelernt.',
