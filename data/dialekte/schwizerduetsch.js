@@ -1024,11 +1024,11 @@ export default {
     },
     {
       id: 'ch-117',
-      ausdruck: 'Jodel',
-      hochdeutsch: 'Jodler (Alpengesang)',
-      bedeutung: 'Der „Jodel" ist die alpine Gesangstechnik mit schnellem Wechsel zwischen Brust- und Falsettstimme — UNESCO-Immaterielles Weltkulturerbe. Ursprünglich als Kommunikation zwischen Hirten über die Berge benutzt. Heute Volkskultur — jeden Sommer gibt es das Eidgenössische Jodelfest mit Tausenden Sängern. Jodelclub-Mitgliedschaft ist im ländlichen Raum noch immer Status. Schweizer Sound-Identität schlechthin.',
-      beispiel: 'Am Bärgli oben jodlet d\'Sennäli wunderschön.',
-      beispiel_hd: 'Am Berg oben jodeln die Sennen wunderschön.',
+      ausdruck: 'Alphornblasä',
+      hochdeutsch: 'Alphornblasen',
+      bedeutung: 'Das „Alphornblasä" — das Spielen auf dem 3-4 m langen Alphorn — ist neben dem Jodeln Schweizer Sound-Symbol Nr. 1. Das Holz-Blasinstrument ohne Klappen erzeugt nur die Naturtonreihe. Ursprünglich zur Verständigung zwischen Alpen und Tal, heute Folklore. Jedes Jahr eidgenössisches Alphorntreffen — Hunderte spielen gemeinsam auf dem Bergpass. UNESCO-würdige Volkskultur. Bei Hochzeiten, Touristen-Empfängen und Bergfeierabenden zu hören.',
+      beispiel: 'Am Morge fruh erklingt s\'Alphorn vom Bärg.',
+      beispiel_hd: 'Am Morgen früh erklingt das Alphorn vom Berg.',
       kategorie: 'musik'
     },
     {
@@ -1042,12 +1042,12 @@ export default {
     },
     {
       id: 'ch-119',
-      ausdruck: 'Migros',
-      hochdeutsch: 'Migros (Supermarktkette)',
-      bedeutung: 'Migros ist die grösste Schweizer Supermarktkette — gegründet 1925 von Gottlieb Duttweiler als Genossenschaft. Über zwei Millionen Mitglieder, 30+ Prozent Marktanteil im Lebensmittelhandel. Verkauft keinen Alkohol und keine Zigaretten — ideologisches Erbe Duttweilers. Im Schweizer Alltag allgegenwärtig. „M-Budget" ist die Eigenmarke. Konkurrenz zum „Coop" — der ewige Schweizer Supermarkt-Streit, fast religiös.',
-      beispiel: 'Ich gönd in Migros, du gönd Coop — Glaubenssach.',
-      beispiel_hd: 'Ich gehe zu Migros, du zu Coop — Glaubenssache.',
-      kategorie: 'alltag'
+      ausdruck: 'Beck',
+      hochdeutsch: 'Bäcker / Bäckerei',
+      bedeutung: 'Der „Beck" ist im Schweizerdeutschen der Bäcker — Berufsstand mit hohem Sozialstatus. Schweizer Bäckereien sind klein, lokal und qualitätsbewusst. Berühmt für Zopf (Hefebrot), Bürli, Weggli, Nussgipfel und Buttergipfel. Jedes Dorf hat seinen „Dorfbeck" — sozialer Treffpunkt am Morgen. „Beim Beck go Brot reichä" ist Schweizer Familien-Ritual. Trotz Industrie-Konkurrenz halten sich Kleinbäcker durch Qualität und Tradition.',
+      beispiel: 'Ich gönd schnell zum Beck go Bürli reichä.',
+      beispiel_hd: 'Ich gehe schnell zum Bäcker, Brötchen holen.',
+      kategorie: 'arbeit'
     },
     {
       id: 'ch-120',
@@ -1060,11 +1060,11 @@ export default {
     },
     {
       id: 'ch-121',
-      ausdruck: 'Velo',
-      hochdeutsch: 'Fahrrad',
-      bedeutung: 'Das „Velo" ist im Schweizerdeutschen das Fahrrad — französisches Lehnwort, das die deutsche „Fahrrad" verdrängt hat. „Velofahre" ist in der Schweiz Alltag — selbst in den Bergen. Berühmte Veloevents: Tour de Suisse, der Cyclassics. Auch das „Velohelmsobligatorium" ist Schweizer Tradition. Stadt-Bern, Basel, Zürich sind sehr velofreundlich. Wer „Fahrrad" sagt, outet sich sofort als Deutscher.',
-      beispiel: 'Min Velo staht im Vorhuus — Helm nid vergässä!',
-      beispiel_hd: 'Mein Fahrrad steht im Vorhaus — Helm nicht vergessen!',
+      ausdruck: 'Tram',
+      hochdeutsch: 'Strassenbahn',
+      bedeutung: 'Das „Tram" ist in Zürich, Basel, Bern und Genf die Strassenbahn — Schweizer Standardverkehrsmittel der Städte. Pünktlich, sauber, dicht getaktet — bekannt für Schweizer Verlässlichkeit. Die Zürcher VBZ und die Basler BVB sind Eckpfeiler des öffentlichen Verkehrs. „Mit em Tram zum Hauptbahnhof" — Stadt-Alltag pur. Auch die alten Trams (1930er) fahren als Touristen-Attraktion noch heute. Schweizer Verkehrsmittel-Stolz.',
+      beispiel: 'Mit em Tram bin ich i 10 Minute am Bahnhof.',
+      beispiel_hd: 'Mit der Strassenbahn bin ich in 10 Minuten am Bahnhof.',
       kategorie: 'alltag'
     },
     {
@@ -1078,11 +1078,11 @@ export default {
     },
     {
       id: 'ch-123',
-      ausdruck: 'Postauto',
-      hochdeutsch: 'Postauto (Postbus)',
-      bedeutung: 'Das „Postauto" ist der gelbe Schweizer Postbus — fährt in über 900 Linien die ganze Schweiz ab, bis in die entlegensten Bergtäler. Berühmt für das dreitönige Posthorn („tüü-ta-too"), das in engen Bergkurven gehupt wird — komponiert von Gioachino Rossini. Eine Fahrt mit dem Postauto über den Sustenpass oder Grimselpass gehört zu den schönsten Schweizer Reise-Erlebnissen. Service public in Reinkultur.',
-      beispiel: 'Mit em Postauto über de Sustenpass — Traumfahrt!',
-      beispiel_hd: 'Mit dem Postauto über den Sustenpass — Traumfahrt!',
+      ausdruck: 'Gotthard',
+      hochdeutsch: 'Gotthard (Alpenpass & Tunnel)',
+      bedeutung: 'Der „Gotthard" ist der berühmteste Alpenpass der Schweiz — 2106 m hoch, Verbindung zwischen Deutsch- und Italienischsprachiger Schweiz. Strategisch zentral seit dem Mittelalter. Heute existieren drei Tunnel: Eisenbahn-Tunnel (1882), Strassentunnel (1980) und Gotthard-Basistunnel (2016, mit 57 km der längste Eisenbahntunnel der Welt). Auf dem Pass das berühmte Suworow-Denkmal — Symbol Schweizer Ingenieurskunst und Geschichte.',
+      beispiel: 'D\'Reis dur de Gotthard-Tunnel daurt nur 17 Minute.',
+      beispiel_hd: 'Die Reise durch den Gotthard-Tunnel dauert nur 17 Minuten.',
       kategorie: 'orte'
     },
     {

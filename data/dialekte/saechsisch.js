@@ -921,11 +921,11 @@ export default {
     },
     {
       id: 's-106',
-      ausdruck: 'Sandmännchen',
-      hochdeutsch: 'Sandmännchen (DDR-Kinderfigur)',
-      bedeutung: 'Das „Sandmännchen" — vollständig „Unser Sandmännchen" — ist die berühmteste Kinderfigur des DDR-Fernsehens, seit 1959 ausgestrahlt vom Deutschen Fernsehfunk (Adlershof, später Babelsberg). Jeden Abend um 19:00 brachte das Sandmännchen mit seinen Fahrzeugen (Düsenflieger, Mondrakete, Trabi etc.) den Kindern Sand in die Augen. Hat die Wende überlebt und läuft bis heute. Generationenprägend für Ostdeutsche.',
-      beispiel: 'Ohne Sandmännchen ging ich als Kind nich ins Bett.',
-      beispiel_hd: 'Ohne Sandmännchen ging ich als Kind nicht ins Bett.',
+      ausdruck: 'Pittiplatsch',
+      hochdeutsch: 'Pittiplatsch (DDR-Kinderfigur)',
+      bedeutung: '„Pittiplatsch" ist eine der berühmtesten DDR-Kinderfiguren — ein kleiner brauner Kobold mit Glatze, Gefährte der Ente Schnatterinchen und des Hundes Moppi. Seit 1962 im Sandmännchen-Vorprogramm. Sein Markenzeichen-Spruch: „Ach, du meine Nase!". Pittiplatsch ist die ostdeutsche Antwort auf Westkinderhelden — frech, klug, charmant. Generationenprägend, ein DDR-Symbol mit Kultcharakter, das Wendekind bis heute kennen.',
+      beispiel: '„Ach, du meine Nase!" — typisch Pittiplatsch.',
+      beispiel_hd: '„Ach, du meine Nase!" — typisch Pittiplatsch.',
       kategorie: 'familie'
     },
     {
@@ -948,20 +948,20 @@ export default {
     },
     {
       id: 's-109',
-      ausdruck: 'Quark',
-      hochdeutsch: 'Quark / Topfen',
-      bedeutung: 'Der „Quark" ist sächsisches Grundnahrungsmittel — viel beliebter als in Süddeutschland (wo es „Topfen" heisst). Wird zu Pellkartoffeln, zum Brot oder als „Quarkkeulchen" (frittierte Quark-Kartoffel-Bällchen) gegessen. Auch übertragen: „red kein\' Quark!" — rede keinen Unsinn! „Das ist Quark!" — das ist Blödsinn. Der Sachse hat ein liebevolles Verhältnis zum Quark — kulinarisch wie sprachlich.',
-      beispiel: 'Red doch kein\' Quark, du weeßt das doch besser!',
-      beispiel_hd: 'Rede doch keinen Unsinn, du weißt das doch besser!',
+      ausdruck: 'Soljanka',
+      hochdeutsch: 'Soljanka (Suppe DDR-Klassiker)',
+      bedeutung: 'Die „Soljanka" ist eine säuerlich-scharfe Suppe russisch-ukrainischer Herkunft, die in der DDR zum Restaurant-Klassiker wurde. Mit Wurst, Schinken, Gurken, Tomatenmark, Kapern und Zitrone. In jedem DDR-Lokal Standard-Gericht — fester Speiseplan-Bestandteil. Hat die Wende überlebt und ist in ostdeutschen Restaurants und Bahnhofsgaststätten noch immer beliebt. Mit Sauerrahm und Brot ein Wintergericht der ostdeutschen Identität.',
+      beispiel: 'Eene heiße Soljanka im Winter — geht nüscht drüber.',
+      beispiel_hd: 'Eine heiße Soljanka im Winter — geht nichts drüber.',
       kategorie: 'essen'
     },
     {
       id: 's-110',
-      ausdruck: 'Schwibbogen',
-      hochdeutsch: 'Schwibbogen (Erzgebirgische Lichterbogen)',
-      bedeutung: 'Der „Schwibbogen" ist eine traditionelle erzgebirgische Lichterbogen-Dekoration mit Holzfiguren, beleuchtet von Kerzen oder elektrischen Lichtern. Stammt aus der Bergbau-Tradition: Wenn im Winter die Bergleute nach langer Schicht aus dem Schacht stiegen, brannte zuhause schon das Licht. Erste Schwibbögen wurden 1740 in Johanngeorgenstadt aus Metall geschmiedet. Heute Holz-Volkskunst aus Seiffen — fester Bestandteil sächsischer Weihnachten.',
-      beispiel: 'Jeds Fenster im Erzgebirge hat\'n Schwibbogen ze Weihnachten.',
-      beispiel_hd: 'Jedes Fenster im Erzgebirge hat einen Schwibbogen zu Weihnachten.',
+      ausdruck: 'Nußknacker',
+      hochdeutsch: 'Erzgebirgischer Nussknacker',
+      bedeutung: 'Der „Nußknacker" ist eine berühmte erzgebirgische Holzfigur — traditionell als König, Soldat oder Bergmann dargestellt, mit beweglichem Mund zum Knacken von Nüssen. Aus Seiffen seit dem 19. Jahrhundert. Symbol für die Auflehnung gegen die Obrigkeit (Bergmänner stellten Adlige als Nussknacker dar). Tschaikowskys Ballett „Der Nussknacker" (1892) basiert auf einem Hoffmann-Märchen mit erzgebirgischem Ursprung. Sächsische Volkskunst weltweit bekannt.',
+      beispiel: 'Da Nußknacker aus Seiffn is\'a Weihnachtsklassikr.',
+      beispiel_hd: 'Der Nussknacker aus Seiffen ist ein Weihnachtsklassiker.',
       kategorie: 'alltag'
     },
     {
@@ -975,11 +975,11 @@ export default {
     },
     {
       id: 's-112',
-      ausdruck: 'Spreewald',
-      hochdeutsch: 'Spreewald (Naturlandschaft)',
-      bedeutung: 'Der Spreewald in der Niederlausitz (teils in Sachsen, teils in Brandenburg) ist eine einzigartige Auenlandschaft mit über 1000 km natürlicher und künstlicher Wasserläufe („Fließen"). UNESCO-Biosphärenreservat. Berühmt für Kahnfahrten, Spreewaldgurken (geschützte Herkunftsbezeichnung), die sorbisch-wendische Kultur und die Tracht. Heimat des verfilmten „Krabat" (Otfried Preußler). Touristisches Highlight Ostdeutschlands.',
-      beispiel: 'Eene Kahnfahrt dorch\'n Spreewald — wunderschön!',
-      beispiel_hd: 'Eine Kahnfahrt durch den Spreewald — wunderschön!',
+      ausdruck: 'Hellerau',
+      hochdeutsch: 'Gartenstadt Hellerau (Dresden)',
+      bedeutung: '„Hellerau" am Stadtrand Dresdens ist die erste deutsche Gartenstadt (1909 gegründet) — Welt-Pionier moderner Wohnreform. Architekt: Richard Riemerschmid, Konzept inspiriert von der englischen Garden-City-Bewegung. Das Festspielhaus war Treffpunkt der europäischen Avantgarde: Mary Wigman, Émile Jaques-Dalcroze, Le Corbusier waren hier zu Gast. Heute lebendiges Kulturzentrum und denkmalgeschütztes Quartier. Verstecktes Juwel Sachsens.',
+      beispiel: 'Hellerau is\'ne weltgeschichtliche Gartenstadt.',
+      beispiel_hd: 'Hellerau ist eine weltgeschichtliche Gartenstadt.',
       kategorie: 'orte'
     },
     {
@@ -1038,11 +1038,11 @@ export default {
     },
     {
       id: 's-119',
-      ausdruck: 'Karl May',
-      hochdeutsch: 'Karl May (Schriftsteller)',
-      bedeutung: 'Karl May (1842–1912), geboren in Hohenstein-Ernstthal (Sachsen), war der berühmteste deutsche Abenteuerschriftsteller — Schöpfer von Winnetou, Old Shatterhand, Kara Ben Nemsi. Über 100 Mio. Bücher verkauft. Hatte selbst nie die fernen Länder besucht, die er beschrieb. Sein Haus „Villa Shatterhand" in Radebeul ist heute Karl-May-Museum. Generationen deutscher Kinder lernten durch ihn Lesen und Träumen. Sächsischer Welt-Erfolg.',
-      beispiel: 'Karl May hab ich als Kind verschlungen — Winnetou über alles!',
-      beispiel_hd: 'Karl May habe ich als Kind verschlungen — Winnetou über alles!',
+      ausdruck: 'Lutter',
+      hochdeutsch: 'Martin Luther (Reformator)',
+      bedeutung: 'Martin Luther (1483–1546) wirkte zwar in Wittenberg, aber prägte ganz Sachsen — die Reformation startete 1517 in der Schlosskirche zu Wittenberg, damals zum sächsischen Kurfürstentum gehörig. Luther übersetzte die Bibel auf der Wartburg, predigte in Leipzig und Dresden. Sein Schutzherr war Friedrich der Weise von Sachsen. Ohne sächsische Unterstützung wäre die Reformation gescheitert. Sächsisches Erbe von Weltgeltung — UNESCO-Welterbe.',
+      beispiel: 'Ohne sächs\'sche Hilfe hädde Lutter nüscht ausgerichd.',
+      beispiel_hd: 'Ohne sächsische Hilfe hätte Luther nichts ausgerichtet.',
       kategorie: 'menschen'
     },
     {

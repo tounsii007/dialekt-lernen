@@ -1100,6 +1100,231 @@ export default {
       beispiel: 'Wenn i d\'Berg sieg, kriag i sofort a Hoamatgfui.',
       beispiel_hd: 'Wenn ich die Berge sehe, kriege ich sofort ein Heimatgefühl.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-126',
+      ausdruck: 'Trachtenverein',
+      hochdeutsch: 'Trachtenverein',
+      bedeutung: 'Der „Trachtenverein" ist eine bayerische Institution zur Pflege von Volkstanz, Tracht und Brauchtum. Im 19. Jahrhundert von Joseph Vogl gegründet (Bayerischer Trachten- und Heimatverband, 1890). Heute gibt es tausende Vereine in Bayern, von Berchtesgaden bis Aschaffenburg. Mitglieder treffen sich zu Tänzen, Festen und Umzügen — die Tracht wird mit Stolz und Akribie gepflegt. Mehr als Folklore: gelebter Heimatkult, oft generationenübergreifend.',
+      beispiel: 'Mei Opa is\' scho 60 Jahr beim Trachtenverein.',
+      beispiel_hd: 'Mein Opa ist schon 60 Jahre beim Trachtenverein.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-127',
+      ausdruck: 'Goaßltanz',
+      hochdeutsch: 'Goaßltanz (Peitschentanz)',
+      bedeutung: 'Der „Goaßltanz" oder „Goaßlschnalzen" ist ein traditioneller bayerisch-tirolerischer Brauchtanz, bei dem die Männer mit langen Peitschen (Goaßln) rhythmisch knallen. Stammt vom alpenländischen Fuhrmannswesen — die Knechte ließen ihre Peitschen schnalzen, um auf sich aufmerksam zu machen. Heute kunstvoller Männertanz mit Tracht, oft auf Volksfesten und Almabtrieben. Die Schnalzer-Vereine pflegen die Kunst bis heute. Akustisch beeindruckend, technisch schwierig — Tradition mit Lärm.',
+      beispiel: 'Beim Almabtrieb hör ma scho von weitem den Goaßltanz.',
+      beispiel_hd: 'Beim Almabtrieb hört man schon von weitem den Peitschentanz.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-128',
+      ausdruck: 'Watzmann',
+      hochdeutsch: 'Watzmann (Berg)',
+      bedeutung: 'Der „Watzmann" ist mit 2.713 m der dritthöchste Berg Deutschlands und Hauptgipfel der Berchtesgadener Alpen. Markant mit seinem dreigipfligen Massiv über dem Königssee. Die Sage erzählt vom grausamen König Watzmann, der mit Familie versteinert wurde — die „Watzmann-Familie" (kleinere Gipfel) bestätigt das im Volksglauben. Tödlich für viele Bergsteiger (Watzmann-Ostwand). Symbol Bayerns wie der Hofbräuhaus-Schriftzug. Auch in Wolfgang Ambros\' Oper „Der Watzmann ruft" verewigt.',
+      beispiel: 'Der Watzmann is der König vo de Berchtesgadener Berg.',
+      beispiel_hd: 'Der Watzmann ist der König der Berchtesgadener Berge.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-129',
+      ausdruck: 'Andechser',
+      hochdeutsch: 'Andechser Klosterbier',
+      bedeutung: 'Das „Andechser" Bier kommt vom Kloster Andechs am „Heiligen Berg" über dem Ammersee. Seit 1455 brauen die Benediktinermönche dort — bis heute reines bayerisches Klosterbier nach Reinheitsgebot. Bekannt sind der „Doppelbock Dunkel" (über 7%) und das Weißbier. Andechs ist Wallfahrtsort, Brauereibetrieb und Touristenmagnet zugleich. „Auf Andechs gehen" heißt: Bergauf wandern, dann im Klosterbiergarten einkehren. Klassischer bayerischer Sonntagsausflug.',
+      beispiel: 'Heut fahr ma nach Andechs auf a Maß.',
+      beispiel_hd: 'Heute fahren wir nach Andechs auf eine Maß.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-130',
+      ausdruck: 'Hofbräuhaus',
+      hochdeutsch: 'Hofbräuhaus (Münchner Wirtshaus)',
+      bedeutung: 'Das „Hofbräuhaus" am Platzl in München ist das berühmteste Wirtshaus der Welt. Gegründet 1589 von Herzog Wilhelm V., 1828 für die Öffentlichkeit geöffnet. „In München steht ein Hofbräuhaus" — das Lied kennt jeder. Drei Etagen, Schwemme mit 1.300 Plätzen, Blaskapelle, Riesen-Maßkrüge — Touristenmagnet und Symbol bayerischer Lebensart. Lenin trank hier (angeblich), Mozart komponierte hier. Mehr Show als echte Münchner Gastronomie — aber kulturell unverzichtbar.',
+      beispiel: 'Im Hofbräuhaus singan d\'Touristen am lautesten.',
+      beispiel_hd: 'Im Hofbräuhaus singen die Touristen am lautesten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-131',
+      ausdruck: 'Marienplatz',
+      hochdeutsch: 'Marienplatz (Münchner Hauptplatz)',
+      bedeutung: 'Der „Marienplatz" ist seit 1158 das pulsierende Herz Münchens — Marktplatz, Versammlungsort und Touristenmagnet zugleich. Benannt nach der Mariensäule (1638) zum Dank für die Verschonung von der schwedischen Belagerung im Dreißigjährigen Krieg. Hier stehen das Neue Rathaus (mit dem berühmten Glockenspiel, das täglich um 11 und 12 Uhr Touristen versammelt) und das Alte Rathaus. Bei FC-Bayern-Triumphen feiern hier hunderttausende Fans. Münchner Identitätszentrum.',
+      beispiel: 'Treff ma uns am Marienplatz um zwölfe?',
+      beispiel_hd: 'Treffen wir uns am Marienplatz um zwölf?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-132',
+      ausdruck: 'BMW',
+      hochdeutsch: 'BMW (Bayerische Motoren Werke)',
+      bedeutung: '„BMW" — Bayerische Motoren Werke — gegründet 1916 in München als Flugmotorenhersteller. Heute einer der prestigeträchtigsten Automobilkonzerne der Welt. Das blau-weiße Logo erinnert an einen drehenden Propeller vor bayerischem Himmel. Das BMW-Hochhaus (Vierzylinder) und die BMW-Welt am Olympiapark sind Münchner Wahrzeichen. „A BMW fahrn" gilt in Bayern als Statussymbol par excellence. Größter privater Arbeitgeber Münchens. Bayerische Industriestolz.',
+      beispiel: 'Mei Schwager arbeit\' beim BMW im Werk.',
+      beispiel_hd: 'Mein Schwager arbeitet bei BMW im Werk.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-133',
+      ausdruck: 'Siemensianer',
+      hochdeutsch: 'Siemens-Mitarbeiter',
+      bedeutung: 'Der „Siemensianer" ist Mitarbeiter des Siemens-Konzerns mit Sitz in München. Werner von Siemens gründete 1847 die Firma in Berlin, seit 1953 ist München Hauptsitz. Siemens steht für deutsche Ingenieurskunst — Energie, Medizintechnik, Mobilität. In München mit dem prägnanten Hauptgebäude am Wittelsbacherplatz. „Beim Siemens" zu arbeiten gilt traditionell als sicher und prestigeträchtig. Bayerisches Wirtschaftsschwergewicht neben BMW und Audi.',
+      beispiel: 'A echter Siemensianer geht spät hoam.',
+      beispiel_hd: 'Ein echter Siemens-Mitarbeiter geht spät heim.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-134',
+      ausdruck: 'Bavarian Humor',
+      hochdeutsch: 'bayerischer Humor',
+      bedeutung: 'Der „Bayerische Humor" ist trocken, direkt, oft derb und liebt das Doppelbödige. Karl Valentin und Liesl Karlstadt prägten den Münchner Wortwitz früh, später Gerhard Polt, Bully Herbig und die „Goldenen Zitronen". Im Gegensatz zum norddeutschen Sarkasmus oder Wiener Schmäh: bayerischer Humor ist erdverbunden, oft mit Wirtshausszene. Auch Loriot (gebürtig aus Brandenburg, aber wahlbayerisch) prägte den feinen Spott. Bayerisches Lachen ist meist mit Schmunzeln gemischt.',
+      beispiel: 'Den Bavarian Humor versteht ned a jeder.',
+      beispiel_hd: 'Den bayerischen Humor versteht nicht jeder.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-135',
+      ausdruck: 'Heimatfilm',
+      hochdeutsch: 'Heimatfilm',
+      bedeutung: 'Der „Heimatfilm" ist ein typisch bayerisch-österreichisches Genre der Nachkriegszeit. Stars wie Hans Albers, Heinz Rühmann und vor allem Hansi Knetzer-Hinterseer ritten durch Alpen, sangen Volkslieder und retteten Sennerinnen. Höhepunkt in den 1950ern und 60ern. Heute oft belächelt (Stichwort „Schwarzwaldklinik" oder „Forsthaus Falkenau"), aber bayerisch-kulturell prägend. Auch Edgar-Reitz-„Heimat"-Trilogie zeigt anderes Niveau. Gefühlswelt zwischen Berggipfel, Trachtenkleid und Sehnsucht.',
+      beispiel: 'D\'Oma schaut am Sonntag immer no a Heimatfilm.',
+      beispiel_hd: 'Die Oma schaut am Sonntag immer noch einen Heimatfilm.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-136',
+      ausdruck: 'Maibaumstehlen',
+      hochdeutsch: 'Maibaum-Klauen',
+      bedeutung: 'Das „Maibaumstehlen" ist ein zentrales Brauchtum vor dem 1. Mai. Junge Burschen der Nachbargemeinde versuchen, vor dem Aufstellen den Maibaum zu „stehlen" — meist nachts, manchmal mit großem Aufwand. Wird der Baum erbeutet, muss die Heimatgemeinde ihn mit Bier und Brotzeit auslösen. Strenge ungeschriebene Regeln gelten: Der Baum darf nur bewacht, nicht verteidigt mit Gewalt werden. Mehr Theater als Diebstahl — pures bayerisches Brauchtumsspiel mit jahrhundertealter Tradition.',
+      beispiel: 'D\'Burschen aus Oberau haben unsern Maibaum g\'stohlen!',
+      beispiel_hd: 'Die Burschen aus Oberau haben unseren Maibaum gestohlen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-137',
+      ausdruck: 'Trachtenball',
+      hochdeutsch: 'Trachtenball',
+      bedeutung: 'Der „Trachtenball" ist gesellschaftlicher Höhepunkt im bayerisch-österreichischen Winterhalbjahr. Während im Wiener Adel der „Opernball" stattfindet, tanzt Bayern in voller Tracht — Dirndl, Lederhose, Joppe. Klassischer Auftritt der Trachtenvereine, mit Standardrepertoire (Boarischer, Zwiefacher, Walzer, Polka). In München der „Oberlandler Ball" oder der „Kocherlball". Sehr ernst genommen, mit strengen Tracht-Vorschriften. Hier vermischt sich Brauchtum mit Hochkultur — Bayerns gesellschaftliche Selbstvergewisserung.',
+      beispiel: 'Aufm Trachtenball geht\'s zua wia in da Operette.',
+      beispiel_hd: 'Auf dem Trachtenball geht es zu wie in der Operette.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-138',
+      ausdruck: 'Aiwanger',
+      hochdeutsch: 'Hubert Aiwanger (Politiker)',
+      bedeutung: '„Aiwanger" — Hubert Aiwanger (geb. 1971) — ist Vorsitzender der Freien Wähler Bayern und stellvertretender Ministerpräsident. Mit seinem Niederbayerischen Dialekt, Lederhosen-Auftritten und volkstümlicher Rhetorik wurde er Symbolfigur einer eigenständigen bayerischen Politik abseits der CSU. 2023 in einer Flugblatt-Affäre involviert. Liebt es, im Wirtshaus zu reden und im Bierzelt zu donnern. Polarisiert zwischen Volksnähe und Skandalträchtigkeit. Aktuelle bayerische Politikfigur.',
+      beispiel: 'Der Aiwanger redt halt, wie eahm der Schnabel g\'wachsn is.',
+      beispiel_hd: 'Der Aiwanger redet halt, wie ihm der Schnabel gewachsen ist.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-139',
+      ausdruck: 'Goggomobil',
+      hochdeutsch: 'Goggomobil (Kleinstauto)',
+      bedeutung: 'Das „Goggomobil" wurde 1955 bei Hans Glas in Dingolfing (Niederbayern) gebaut — der Klassiker der bayerischen Kleinstauto-Ära. Mit 250-cm³-Zweitakter brachte es bis 80 km/h. Sehr beliebt im Wirtschaftswunder, bis 1969 produziert. Heute Kultobjekt unter Oldtimer-Fans. Die Glas-Werke wurden 1966 von BMW übernommen — bayerische Industriegeschichte pur. „Goggo fahrn" bezeichnet auch heute noch eher gemächliche, behäbige Fortbewegung.',
+      beispiel: 'Mei Großvater hat no a Goggomobil g\'fahrn.',
+      beispiel_hd: 'Mein Großvater ist noch ein Goggomobil gefahren.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-140',
+      ausdruck: 'Lederhosen-Wettbewerb',
+      hochdeutsch: 'Lederhosen-Wettbewerb',
+      bedeutung: 'Bei „Lederhosen-Wettbewerben" auf Volksfesten und Trachtentreffen wird die schönste, älteste oder originellste Krachlederne prämiert. Beurteilt werden Patina (je älter, desto besser), Stickerei, Hosenträger und der traditionsgemäße „Sitz". Eine echte Lederhose wird oft 30+ Jahre getragen — Flecken zählen als Auszeichnung. In München gibt\'s eigene „Patina-Wettbewerbe". Ein gut eingelaufenes Stück gilt als bayerisches Erbe — wird oft vom Vater an den Sohn weitergegeben.',
+      beispiel: 'Beim Trachtenfest hat da Sepp den Lederhosen-Wettbewerb g\'wonnen.',
+      beispiel_hd: 'Beim Trachtenfest hat der Sepp den Lederhosen-Wettbewerb gewonnen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-141',
+      ausdruck: 'Almhüttn',
+      hochdeutsch: 'Almhütte',
+      bedeutung: 'Die „Almhüttn" sind die einfachen Holzhütten der Almbauern in den bayerischen Bergen. Im Sommer wohnt die „Sennerin" oben mit den Kühen und macht Almkäse und Almbutter. Im Winter stehen die Hütten verlassen. Heute oft Skihüttn oder Hochzeitsbude — bewirtschaftete Almhüttn sind Wanderziel mit Brotzeit und Schnaps. Romantisierte Vorstellung in Schlagern und Heimatfilmen — die echte Almwirtschaft ist harte Arbeit. Bayerisches Bergland-Symbol par excellence.',
+      beispiel: 'Auf der Almhüttn gibt\'s die beste Brotzeit weit und breit.',
+      beispiel_hd: 'Auf der Almhütte gibt es die beste Vesper weit und breit.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-142',
+      ausdruck: 'Berchtesgadner Salinen',
+      hochdeutsch: 'Berchtesgadener Salzbergwerke',
+      bedeutung: 'Die „Berchtesgadner Salinen" sind seit 1517 in Betrieb — ältestes aktives Salzbergwerk Deutschlands. Das „weiße Gold" machte Berchtesgaden im Mittelalter reich. Heute Touristenattraktion mit Untertage-Führung, Rutschen, Floßfahrt auf Salzsee. Salz wird weiterhin gewonnen für Lebensmittel und Industrie. Kulturhistorisch eng mit dem Erzbischof von Salzburg und dem Münchner Hof verknüpft — bayerische Wirtschaftsgeschichte zum Anfassen. Im Sommer immer ausgebucht.',
+      beispiel: 'Mit de Kinder waren ma in de Berchtesgadner Salinen.',
+      beispiel_hd: 'Mit den Kindern waren wir in den Berchtesgadener Salzbergwerken.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-143',
+      ausdruck: 'Bad Kissingen',
+      hochdeutsch: 'Heilbad Bad Kissingen',
+      bedeutung: '„Bad Kissingen" in Unterfranken (Bayern) ist eines der berühmtesten deutschen Heilbäder. Seit dem 16. Jahrhundert genutzt, im 19. Jahrhundert Weltkurort. Kaiser Wilhelm I., Bismarck, Tolstoi, Theodor Fontane kurten hier. 2021 UNESCO-Welterbe als „Great Spa Town of Europe". Klassische Kuranlagen, Trinkbrunnen, Wandelhallen — das Wasser ist eisen- und natriumhaltig. Heute Tagungsort und Wellness-Destination. Bayerns vornehmstes Heilbad.',
+      beispiel: 'Da Opa fahrt jed\'s Jahr nach Bad Kissingen zur Kur.',
+      beispiel_hd: 'Der Opa fährt jedes Jahr nach Bad Kissingen zur Kur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-144',
+      ausdruck: 'Münchner Kindl',
+      hochdeutsch: 'Münchner Kindl (Wappenfigur)',
+      bedeutung: 'Das „Münchner Kindl" ist Münchens Wappenfigur — ein Mönch mit schwarzer Kutte, Bibel und roten Schuhen. Erinnert an die Stadtgründung durch Mönche („München" = „bei den Mönchen"). Seit dem Mittelalter Stadtwappen, heute meist als kindliche Figur dargestellt. Beim Oktoberfest-Einzug reitet ein „Münchner Kindl" — meist eine junge Frau im Mönchsgewand. Auf Plakaten, Reklame und im Hofbräuhaus-Logo allgegenwärtig. Münchner Identitätssymbol Nummer eins.',
+      beispiel: 'Aufm Plakat ist scho wieder s\' Münchner Kindl drauf.',
+      beispiel_hd: 'Auf dem Plakat ist schon wieder das Münchner Kindl drauf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-145',
+      ausdruck: 'Schweinshaxn-Wettessen',
+      hochdeutsch: 'Schweinshaxen-Wettessen',
+      bedeutung: 'Bei „Schweinshaxn-Wettessen" auf bayerischen Volksfesten geht es darum, möglichst viele Schweinshaxen in kürzester Zeit zu verspeisen. Eine Haxe wiegt 1–1,5 kg, der Rekord liegt bei über 3 kg in 30 Minuten. Mehr Spektakel als Sport, oft mit Bier-Sponsoring. Klassiker auf Wiesn-Imitaten und kleineren Volksfesten. Bayerisches Pendant zur amerikanischen „Hot Dog Eating Contest"-Kultur. Beweis dafür, dass Bayern und Fleisch eine besondere Beziehung pflegen.',
+      beispiel: 'Beim Schweinshaxn-Wettessen hat da Schorsch drei Haxn g\'schafft.',
+      beispiel_hd: 'Beim Schweinshaxen-Wettessen hat der Schorsch drei Haxen geschafft.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-146',
+      ausdruck: 'Wiesn-Hit',
+      hochdeutsch: 'Oktoberfest-Schlager',
+      bedeutung: 'Der „Wiesn-Hit" ist der Schlager, der jährlich auf dem Oktoberfest die Massen in den Bierzelten zum Schunkeln bringt. Klassiker: „Ein Prosit der Gemütlichkeit", „Hey Baby", „Skandal im Sperrbezirk", „Cordula Grün". Mickie Krause, Andreas Gabalier, DJ Ötzi liefern jährlich Nachschub. Bands wie Münchner Zwietracht spielen 5x am Tag, alle in Tracht. Die Wiesn-Hits dominieren später das ganze Jahr Volksfeste und Après-Ski. Bayerisches Massenkultur-Phänomen.',
+      beispiel: 'Den heurigen Wiesn-Hit kannst nimmer hören.',
+      beispiel_hd: 'Den diesjährigen Oktoberfest-Schlager kannst du nicht mehr hören.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-147',
+      ausdruck: 'Schuhplatteln',
+      hochdeutsch: 'Schuhplatteln (Volkstanz)',
+      bedeutung: 'Das „Schuhplatteln" ist der ikonischste bayerisch-tirolerische Männertanz. Die Tänzer schlagen rhythmisch auf Schuhe, Schenkel und Hose, während die „Dirndl" sich elegant drehen. Stammt vermutlich aus alpinen Balzritualen — ursprünglich Werben der Burschen um die Mädchen. Heute hochtechnischer Vereinstanz mit strenger Choreographie. In jeder bayerischen Trachtenvereins-Vorführung Pflichtprogramm. Touristenklischee und gleichzeitig echte Volkskunst — bayerische Identität in Bewegung.',
+      beispiel: 'Beim Schuhplatteln muass ma aufpassn, dass ma kane Watschn kriagt.',
+      beispiel_hd: 'Beim Schuhplatteln muss man aufpassen, dass man keine Ohrfeige kriegt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-148',
+      ausdruck: 'Bairische Etikette',
+      hochdeutsch: 'bayerische Etikette',
+      bedeutung: 'Die „Bairische Etikette" hat eigene, ungeschriebene Regeln: „Griaß Gott" beim Eintreten, „Pfiat\'s eich" beim Gehen, „A Maß, bittschön" beim Bierholen, und niemals die Lederhose waschen. Beim Wirtshausbesuch geht der Mann zur Stammkneipe, beim Frühschoppen wird kein Brot bestellt. Beim Trachtentanz keine Sneaker. Bayerischer Anstand mischt katholisches Brauchtum mit Wirtshauskultur. Wer das nicht beherrscht, bleibt für immer „Zuagroaster" (Zugezogener).',
+      beispiel: 'A echter Bayer kennt d\'bairische Etikette aus\'m Effeff.',
+      beispiel_hd: 'Ein echter Bayer kennt die bayerische Etikette aus dem Effeff.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-149',
+      ausdruck: 'Bavarian One',
+      hochdeutsch: 'Bavaria One (Raumfahrtinitiative)',
+      bedeutung: '„Bavaria One" war 2018 die belächelte Raumfahrt-Vision von Ministerpräsident Markus Söder — Bayern als Hightech-Standort der Raumfahrt. Sofort entstand internationaler Spott (auch in „Heute Show" und „Late Show"), weil Söder bei der Verkündung etwas zu pathetisch wirkte. Trotz des Spotts wurden tatsächlich Forschungsgelder mobilisiert, u.a. für die TU München. Heute ist „Bavaria One" das Synonym für überambitionierte CSU-Symbolpolitik. Bayerischer Politik-Insider-Witz.',
+      beispiel: 'Den Söder mit seim Bavaria One — Wahnsinn!',
+      beispiel_hd: 'Den Söder mit seinem Bavaria One — Wahnsinn!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-150',
+      ausdruck: 'Bayernhymne',
+      hochdeutsch: 'Bayernhymne',
+      bedeutung: 'Die „Bayernhymne" („Gott mit dir, du Land der Bayern") ist das offizielle Lied des Freistaats Bayern, Text 1860 von Michael Öchsner. Wird bei staatlichen Anlässen, Sportveranstaltungen und CSU-Parteitagen gesungen. Im Gegensatz zur Deutschen Nationalhymne sehr emotional gepflegt — viele Bayern kennen sie auswendig. Drei Strophen, die letzte besonders pathetisch („Heil unserm König"). Wird auch in Fußballstadien (FC Bayern!) gesungen. Bayerns musikalische Selbstvergewisserung.',
+      beispiel: 'Bei jedem Heimspiel singt\'s ganze Stadion d\'Bayernhymne.',
+      beispiel_hd: 'Bei jedem Heimspiel singt das ganze Stadion die Bayernhymne.',
+      kategorie: 'musik'
     }
   ]
 };

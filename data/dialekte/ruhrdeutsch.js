@@ -1130,6 +1130,231 @@ export default {
       beispiel: 'Der Kalle is\'n bisschen Halbacht — aber n guter Kerl.',
       beispiel_hd: 'Der Kalle ist ein bisschen verschroben — aber ein guter Kerl.',
       kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-126',
+      ausdruck: 'Wattenscheid',
+      hochdeutsch: 'Stadtteil von Bochum (mit eigener Identität)',
+      bedeutung: 'Wattenscheid ist seit 1975 ein Stadtteil von Bochum — aber die Wattenscheider selbst sehen das anders: „Mir sind Wattenscheider, nicht Bochumer!" Eigene Innenstadt, eigene Geschichte, eigene Fußballtradition (SG Wattenscheid 09, einmal Bundesliga). Die Eingemeindung 1975 ist bis heute Stoff für Lokalpatriotismus. Wer in Wattenscheid groß wird, betont die eigenständige Herkunft. Klassischer Pott-Stolz auf den Stadtteil.',
+      beispiel: 'Ich bin aus Wattenscheid — nich aus Bochum, dat is wat anneres!',
+      beispiel_hd: 'Ich bin aus Wattenscheid — nicht aus Bochum, das ist etwas anderes!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-127',
+      ausdruck: 'Festspielhaus',
+      hochdeutsch: 'Ruhrfestspielhaus Recklinghausen',
+      bedeutung: 'Das Ruhrfestspielhaus in Recklinghausen ist eines der wichtigsten Theater des Ruhrgebiets — Sitz der Ruhrfestspiele, die seit 1947 stattfinden. Gegründet wurden sie als Dank der Bergleute, die im Winter 1946 mit Kohle gegen Theateraufführungen tauschten — Kunst gegen Wärme. Heute renommiertes Festival mit internationalem Programm. Symbol für die Verbindung von Arbeiterkultur und Hochkultur im Pott. Mai bis Juni Festival-Zeit.',
+      beispiel: 'Die Ruhrfestspiele inne Recklinghausen sind Theater für Arbeiter — gegründet mit Kohle.',
+      beispiel_hd: 'Die Ruhrfestspiele in Recklinghausen sind Theater für Arbeiter — gegründet mit Kohle.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-128',
+      ausdruck: 'Mülheim-Ruhr',
+      hochdeutsch: 'Mülheim an der Ruhr (Pott-Stadt)',
+      bedeutung: 'Mülheim an der Ruhr liegt zwischen Duisburg und Essen direkt an der Ruhr — mit 170.000 Einwohnern eine der kleineren Pott-Städte, aber mit eigenem Charakter. Sitz von Aldi Süd (Stammhaus der Brüder Albrecht), Camera Obscura im Wasserturm, Theater an der Ruhr. Etwas gehobener als andere Pott-Städte, gilt als „grüne Stadt am Fluss". Die Mülheimer wirken im Pott-Vergleich gediegener — was ihnen freundlichen Spott einbringt.',
+      beispiel: 'Mülheim is\'n bisschen feiner als der Rest vom Pott — aber trotzdem dabei.',
+      beispiel_hd: 'Mülheim ist ein bisschen feiner als der Rest vom Pott — aber trotzdem dabei.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-129',
+      ausdruck: 'Centro',
+      hochdeutsch: 'CentrO Oberhausen (Einkaufszentrum)',
+      bedeutung: 'Das CentrO in Oberhausen ist eines der größten Einkaufszentren Europas — 1996 auf dem Gelände des stillgelegten Thyssen-Stahlwerks eröffnet. Symbolisch: Wo früher Stahl floss, fließt heute der Konsum. 250 Geschäfte, Coca-Cola-Oase, Sea Life, Gasometer. Für viele Pottler das Wochenendziel, für andere das Symbol des Strukturwandels — gut oder schlecht, je nach Sichtweise. Tatsache: Ohne CentrO wäre Oberhausen heute weniger.',
+      beispiel: 'Samstag fährt halb Pott ins CentrO — shoppen wo früher Stahl gekocht wurde.',
+      beispiel_hd: 'Samstag fährt halb Ruhrgebiet ins CentrO — shoppen, wo früher Stahl gekocht wurde.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-130',
+      ausdruck: 'Hagen',
+      hochdeutsch: 'Hagen (Tor zum Sauerland)',
+      bedeutung: 'Hagen am südöstlichen Rand des Ruhrgebiets gilt als „Tor zum Sauerland" — Übergang vom industriellen Pott zur grünen Mittelgebirgslandschaft. 188.000 Einwohner, Sitz der Fernuniversität Hagen (Deutschlands einzige staatliche Fernuni). Berühmt: Karl Ernst Osthaus Museum, Walgemüt-Park. Hagener gelten als bodenständig und etwas zurückhaltender als die zentralen Pottler. Die Stadt war stark betroffen von der Hochwasserkatastrophe 2021.',
+      beispiel: 'Hagen is\'s Tor zum Sauerland — halb Pott, halb Sauerländer.',
+      beispiel_hd: 'Hagen ist das Tor zum Sauerland — halb Pott, halb Sauerländer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-131',
+      ausdruck: 'Schwebebahn-Skandal',
+      hochdeutsch: 'Wuppertaler Schwebebahn 1950 — der Elefant Tuffi',
+      bedeutung: 'Der berühmteste Schwebebahn-Vorfall: 1950 sprang der kleine Zirkuselefant Tuffi aus einem Werbe-Fahrzeug der Wuppertaler Schwebebahn in die Wupper — fiel 12 Meter, überlebte unverletzt. Bilder gingen um die Welt, Wuppertal wurde zur „Elefanten-Stadt". Eine Tuffi-Statue erinnert heute an den Stunt. Die Schwebebahn ist nicht nur Technik, sondern Geschichte voller skurriler Anekdoten. Bis heute fahren Touristen extra für die Tuffi-Geschichte.',
+      beispiel: 'Tuffi der Elefant ist 1950 ausse Schwebebahn gesprungen — Wuppertaler Legende.',
+      beispiel_hd: 'Tuffi der Elefant ist 1950 aus der Schwebebahn gesprungen — Wuppertaler Legende.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-132',
+      ausdruck: 'Manni Breuckmann',
+      hochdeutsch: 'Manfred Breuckmann (WDR-Reporter)',
+      bedeutung: 'Manfred „Manni" Breuckmann (1951-2024) war über 40 Jahre WDR-Sportreporter und DIE Stimme des Ruhrpott-Fußballs in der Konferenzschaltung der Bundesliga. Sein lakonischer, trockener Ruhrpott-Witz, gemixt mit Sachverstand, machte ihn zur Kultfigur. „Tor in Dortmund!" mit seiner Stimme — Pott-Sound pur. 2009 Henri-Nannen-Preis. Sein Tod im Mai 2024 wurde im ganzen Ruhrgebiet betrauert — eine Ära ging zu Ende.',
+      beispiel: 'Manni Breuckmanns Stimme — dat war Bundesliga-Konferenz für Generationen.',
+      beispiel_hd: 'Manni Breuckmanns Stimme — das war Bundesliga-Konferenz für Generationen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-133',
+      ausdruck: 'Lokalzeit',
+      hochdeutsch: 'WDR-Regionalsendung (Lokalzeit Ruhr / Dortmund)',
+      bedeutung: 'Die „Lokalzeit" des WDR ist die wichtigste Regional-Nachrichtensendung im Ruhrgebiet — getrennt für Ruhr, Dortmund, Duisburg und das Bergische Land. 19:30 Uhr, direkt vor der Tagesschau. Berichte über Stadtteil-Politik, Kriminalität, Vereinsleben, BVB und Schalke. Für viele Pottmenschen das tägliche Fenster zur Heimat. Moderiert von vertrauten Gesichtern, die im Pott bekannter sind als jeder Bundespolitiker. Pflichttermin im Wohnzimmer.',
+      beispiel: 'Halb sieben Lokalzeit guckn — dat is bei Vatter Pflichttermin.',
+      beispiel_hd: 'Halb sieben Lokalzeit schauen — das ist bei Vater Pflichttermin.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-134',
+      ausdruck: 'Frank Goosen',
+      hochdeutsch: 'Frank Goosen (Bochumer Autor und Kabarettist)',
+      bedeutung: 'Frank Goosen (geb. 1966 in Bochum) ist DER Chronist des modernen Ruhrgebiets — Autor („Liegen lernen", „Pokorny lacht"), Kabarettist und VfL-Bochum-Fanatiker. Seine Bücher fangen die Pott-Mentalität, die Bochumer Eckkneipen und die Familiengeschichten der Nach-Bergbau-Generation ein. Mit Tresenlesen-Kollege Jochen Malmsheimer prägte er das Ruhrpott-Kabarett. Seine Romane spielen meist in seinem geliebten Bochum.',
+      beispiel: 'Frank Goosens Bochum-Bücher — Pott-Literatur, die jeder gelesen haben sollte.',
+      beispiel_hd: 'Frank Goosens Bochum-Bücher — Pott-Literatur, die jeder gelesen haben sollte.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-135',
+      ausdruck: 'Herbert Knebel',
+      hochdeutsch: 'Herbert Knebel (Kunstfigur von Uwe Lyko)',
+      bedeutung: 'Herbert Knebel ist die berühmteste Kunstfigur des Essener Kabarettisten Uwe Lyko (geb. 1954) — ein graumelierter Pott-Rentner mit Schiebermütze, Brille und Igittigittigitt-Sprüchen über alles Moderne. Seit den 1980er Jahren in der WDR-Sendung „Herbert Knebels Affentheater" und auf Theaterbühnen. Verkörpert die etwas mufflige, aber liebenswerte Pott-Rentner-Mentalität. Sätze wie „Da kann man ja nur den Kopf schütteln" sind Kult.',
+      beispiel: 'Herbert Knebel mit seinem Igittigittigitt — Pott-Kabarett in Reinkultur.',
+      beispiel_hd: 'Herbert Knebel mit seinem Igittigittigitt — Pott-Kabarett in Reinkultur.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-136',
+      ausdruck: 'Karl Konietzny',
+      hochdeutsch: 'Pott-Original / Bergmannstyp',
+      bedeutung: 'Karl Konietzny — der Name steht stellvertretend für tausende polnischstämmige Bergmannsfamilien im Ruhrgebiet. Ab 1880 wanderten massenhaft polnische Bergleute (Ruhrpolen) ins Revier — sie machten zeitweise ein Viertel der Bevölkerung aus. Nachnamen auf -ski, -czyk und -ny sind heute noch häufig. Konietzny ist Sinnbild für die polnische Wurzel des Pottlers — Maloche, Familie, katholische Volksfrömmigkeit. Pott-Identität ist immer auch polnische Identität.',
+      beispiel: 'Mein Opa hieß Konietzny — Bergmann mit polnischen Wurzeln, typisch Pott.',
+      beispiel_hd: 'Mein Opa hieß Konietzny — Bergmann mit polnischen Wurzeln, typisch Pott.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-137',
+      ausdruck: 'Gelbe Wand',
+      hochdeutsch: 'BVB-Fanchoreografie (Südtribüne)',
+      bedeutung: 'Die „Gelbe Wand" ist die berühmte Südtribüne im Signal-Iduna-Park — 25.000 stehende Fans, größte Stehtribüne Europas. Vor jedem Spiel werden gigantische Choreografien aus Bildern, Bannern und Konfetti gestaltet, die monatelang von Fan-Gruppen wie „The Unity" und „Desperados" geplant werden. Bei Champions-League-Spielen sind die Choreos weltweit berühmt — selbst gegnerische Trainer wie Pep Guardiola haben sie gefeiert. Pott-Fußballkultur auf Weltniveau.',
+      beispiel: 'Die Gelbe Wand mit Choreo — das schönste Stadion-Bild der Welt.',
+      beispiel_hd: 'Die Gelbe Wand mit Choreo — das schönste Stadion-Bild der Welt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-138',
+      ausdruck: 'Schalke-Mythos',
+      hochdeutsch: 'Königsblauer Mythos (FC Schalke 04)',
+      bedeutung: 'Der Schalke-Mythos lebt von siebenmaliger deutscher Meisterschaft (zuletzt 1958), UEFA-Cup 1997, treuesten Fans der Welt und der Verbundenheit zur Bergbau-Tradition. „Wir sind Schalker" ist mehr als Vereinszugehörigkeit — es ist Identität, oft über Generationen vererbt. Trotz Abstiege und Krisen bleiben über 160.000 Mitglieder. Die Veltins-Arena ist königsblaue Wallfahrtsstätte. „Glück auf Schalke!" verbindet Bergmannstradition mit Fußballglauben.',
+      beispiel: 'Schalke is nich Verein — Schalke is Familie, Glaube, Heimat.',
+      beispiel_hd: 'Schalke ist nicht Verein — Schalke ist Familie, Glaube, Heimat.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-139',
+      ausdruck: 'Pommes-Mayo',
+      hochdeutsch: 'Pommes mit Mayonnaise (Pott-Standard)',
+      bedeutung: 'Pommes-Mayo ist der Ruhrpott-Standard an der Frittenbude — Pommes frites mit großzügigem Schlag Mayonnaise, oft kombiniert mit Currywurst. Im Vergleich zu „Pommes rot-weiß" (mit Ketchup und Mayo) oder „Pommes Schranke" (gleicher Mix) die pure Form. An jedem Imbiss, vor jedem Stadion, neben jeder Trinkhalle. Die richtige Mayo ist Geschmackssache — manche schwören auf Thomy, andere auf Heinz. Ein Pott-Klassiker.',
+      beispiel: 'Pommes-Mayo nach\'m Spiel — Pflichtprogramm im Pott.',
+      beispiel_hd: 'Pommes mit Mayo nach dem Spiel — Pflichtprogramm im Pott.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-140',
+      ausdruck: 'Manta-Witz',
+      hochdeutsch: 'Opel-Manta-Witze (Pott-Humor)',
+      bedeutung: 'Die Manta-Witze waren in den 1980er Jahren das beliebteste Witzgenre im Ruhrgebiet — sie zielten auf den klischeehaften Opel-Manta-Fahrer: Fuchsschwanz an der Antenne, Friseuse als Beifahrerin, mehr Mut als Verstand. Filme wie „Manta — Der Film" (1991) mit Til Schweiger machten den Mythos populär. Im Pott war der Manta DAS Auto der Arbeiterjugend — günstig, schnell, mit dickem Spoiler. Heute Kult, damals Lebensstil.',
+      beispiel: 'Manta-Witze waren früher der Pott-Humor schlechthin — Friseuse und Fuchsschwanz.',
+      beispiel_hd: 'Manta-Witze waren früher der Pott-Humor schlechthin — Friseuse und Fuchsschwanz.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-141',
+      ausdruck: 'Pottliebe',
+      hochdeutsch: 'Liebe zum Ruhrgebiet (Heimatgefühl)',
+      bedeutung: 'Die „Pottliebe" ist das tiefe, oft unerklärliche Heimatgefühl der Ruhrgebietsbewohner — eine Mischung aus Stolz, Trotz und Zuneigung trotz aller Hässlichkeit. Grönemeyer hat es in „Bochum" perfekt eingefangen: „Du bist keine Schönheit, aber...". Pottler ziehen weg und kommen zurück. Sie schimpfen über den Pott, aber lassen niemand anderem schimpfen. Diese Liebe verbindet alle Generationen, alle Herkünfte, alle Stadtteile. Pottliebe ist Identität.',
+      beispiel: 'Pottliebe is, wenn de wegziehst und doch immer zurück willst.',
+      beispiel_hd: 'Pottliebe ist, wenn du wegziehst und doch immer zurück willst.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-142',
+      ausdruck: 'Steigerlied',
+      hochdeutsch: '„Glück auf, der Steiger kommt" (Bergmanns-Hymne)',
+      bedeutung: 'Das Steigerlied „Glück auf, der Steiger kommt" ist die offizielle Hymne des deutschen Bergbaus — und insbesondere des Ruhrgebiets. Entstanden im 16. Jahrhundert im sächsischen Erzgebirge, übernommen vom Ruhrbergbau. Es wird bei Schalke-Heimspielen vor jedem Anstoß gesungen — eines der bewegendsten Stadion-Rituale Deutschlands. Auch bei Beerdigungen ehemaliger Bergleute Pflicht. Der Steiger war der Vorarbeiter im Schacht. Ende des Bergbaus 2018 machte das Lied noch wichtiger.',
+      beispiel: 'Bei Schalke vor\'m Anpfiff: Steigerlied — Gänsehaut für jeden Pottler.',
+      beispiel_hd: 'Bei Schalke vor dem Anpfiff: Steigerlied — Gänsehaut für jeden Pottler.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-143',
+      ausdruck: 'Karneval-Verteidiger',
+      hochdeutsch: 'Sicherheits-Notruf vor Bochumer Karneval',
+      bedeutung: 'Der „Karneval-Verteidiger" ist ein humorvoller Pott-Ausdruck für jemand, der dem rheinischen Karneval-Wahn standhält und beim Bier in der Eckkneipe sitzt, während alle anderen verkleidet rumlaufen. Im Pott ist Karneval anders — bodenständiger, weniger pompös. Echte Pottler verteidigen ihre Ruhe vor dem „Helau-Wahnsinn". Eine Mischung aus Selbstironie und stillem Stolz auf die Pott-Eigenart.',
+      beispiel: 'Karneval? Ich bin Karneval-Verteidiger — bleib in der Eckkneipe.',
+      beispiel_hd: 'Karneval? Ich bin Karneval-Verteidiger — bleibe in der Eckkneipe.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-144',
+      ausdruck: 'Tante-Emma-Pott',
+      hochdeutsch: 'kleiner Lebensmittelladen im Stadtteil',
+      bedeutung: 'Der „Tante-Emma-Pott" ist die liebevolle Pott-Variante des klassischen Tante-Emma-Ladens — ein kleiner Lebensmittelladen, oft an der Straßenecke, geführt von einer Familie. Die Inhaberin kennt jeden Kunden, schreibt an, gibt Tipps. Im Pott haben polnische, türkische und kurdische Familien diese Tradition übernommen und erweitert. Wo das Tante-Emma-Geschäft stirbt, stirbt ein Stück Pott-Nachbarschaft. Aldi und Rewe können den Plausch nicht ersetzen.',
+      beispiel: 'Der Tante-Emma-Pott an der Ecke kennt mich seit ich Kind war.',
+      beispiel_hd: 'Der Tante-Emma-Laden an der Ecke kennt mich, seit ich Kind war.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-145',
+      ausdruck: 'Halde Hoheward',
+      hochdeutsch: 'Halde Hoheward (Herten/Recklinghausen)',
+      bedeutung: 'Die Halde Hoheward zwischen Herten und Recklinghausen ist mit 152 Metern eine der höchsten Bergehalden Europas — auf dem Plateau steht das spektakuläre „Horizontobservatorium", zwei riesige Stahlbögen, die die Sonnenwenden und Tagundnachtgleichen markieren. Begehbare Sonnenuhr. Aussichtspunkt über das ganze Ruhrgebiet — bei klarem Wetter sieht man von Köln bis Münster. Vorzeigeprojekt der Renaturierung — wo Abraum lag, ist Erholung.',
+      beispiel: 'Von der Halde Hoheward siehste den ganzen Pott — schönster Aussichtspunkt.',
+      beispiel_hd: 'Von der Halde Hoheward siehst du das ganze Ruhrgebiet — schönster Aussichtspunkt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-146',
+      ausdruck: 'Pott-Hochzeit',
+      hochdeutsch: 'Hochzeit im Ruhrgebiet-Stil',
+      bedeutung: 'Die Pott-Hochzeit ist eine eigene Spielart — meistens katholisch-polnisch geprägt, mit großer Familie (alle 80 Cousins eingeladen), Vereinslokal statt Schloss, Schäufele und Pommes statt Tafelspitz, polnischer Musik und Bier statt Champagner. Der Tag dauert bis morgens, alle tanzen mit Onkel Karli und Tante Helga, am Sonntag ist Restl-Essen. Authentisch, bodenständig, herzlich — und garantiert ohne Schickimicki. So feiert der Pott.',
+      beispiel: 'Pott-Hochzeit — 200 Leute, polnische Musik, Schäufele und Bier bis morgens.',
+      beispiel_hd: 'Pott-Hochzeit — 200 Leute, polnische Musik, Schäufele und Bier bis morgens.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-147',
+      ausdruck: 'Maloche-Stolz',
+      hochdeutsch: 'Stolz auf harte Arbeit (Pott-Ethos)',
+      bedeutung: 'Der Maloche-Stolz ist der Kern der Pott-Identität — der Stolz auf ehrliche, harte Arbeit, oft körperlich, oft schmutzig, immer wertvoll. Im Pott zählt nicht der Akademikertitel, sondern was du mit deinen Händen geleistet hast. Der Bergmann, der Stahlarbeiter, der Hafenarbeiter — sie haben Deutschland aufgebaut. Diese Wertschätzung von körperlicher Arbeit unterscheidet den Pott bis heute von der gefühlten Akademiker-Welt anderer Regionen. Würde durch Maloche.',
+      beispiel: 'Mein Vatter hat malocht — und dat war mehr wert als jedes Diplom.',
+      beispiel_hd: 'Mein Vater hat malocht — und das war mehr wert als jedes Diplom.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-148',
+      ausdruck: 'Pott-Solidarität',
+      hochdeutsch: 'Zusammenhalt in der Nachbarschaft',
+      bedeutung: 'Die Pott-Solidarität ist die berühmte Hilfsbereitschaft im Ruhrgebiet — wenn ein Nachbar Hilfe braucht, ist man da, ohne zu fragen. Wurzelt in der Bergmanns-Tradition: Unter Tage war man aufeinander angewiesen. Heute zeigt sie sich beim Umzug, in der Krankheit, bei Stadtteil-Festen. „Im Pott lässt man niemand alleine" — das ist mehr als Spruch, das ist gelebte Praxis. Diese Solidarität hat alle Strukturkrisen überstanden.',
+      beispiel: 'Pott-Solidarität — wenn was is, sind die Nachbarn da. Ohne zu fragen.',
+      beispiel_hd: 'Pott-Solidarität — wenn was ist, sind die Nachbarn da. Ohne zu fragen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-149',
+      ausdruck: 'Strukturwandel',
+      hochdeutsch: 'Transformation nach Bergbau und Stahl',
+      bedeutung: 'Der Strukturwandel beschreibt den schmerzhaften Wandel des Ruhrgebiets nach dem Ende von Bergbau (2018) und Stahlindustrie (ab 1980er). Zechen wurden zu Kulturzentren (Zollverein), Stahlwerke zu Parks (Landschaftspark Nord), Halden zu Aussichtspunkten. Hunderttausende Arbeiter mussten sich neu orientieren — viele Familien betroffen. Heute Dienstleistungsregion, IT-Standort, Universitätsregion. Erfolgreich, aber mit Verlustgefühl. Strukturwandel ist Pott-Schicksal.',
+      beispiel: 'Strukturwandel — Kohle weg, aber Pott noch da. Anders, aber da.',
+      beispiel_hd: 'Strukturwandel — Kohle weg, aber Ruhrgebiet noch da. Anders, aber da.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-150',
+      ausdruck: 'Glück Auf für Immer',
+      hochdeutsch: 'Bergmannsgruß als ewiges Symbol',
+      bedeutung: '„Glück Auf für Immer" — am 21. Dezember 2018 wurde mit der Zeche Prosper-Haniel in Bottrop die letzte Steinkohlenzeche Deutschlands geschlossen. 150 Jahre Bergbau im Pott gingen zu Ende. Das Steigerlied wurde gesungen, Bergleute weinten. „Glück Auf" bleibt aber ewiger Gruß — bei Schalke, bei Familienfeiern, bei Beerdigungen. Der Bergmann ist gegangen, aber sein Geist und sein Gruß leben weiter im Pott. Ein ganzes Zeitalter hat die Erinnerung geprägt — und prägt weiter.',
+      beispiel: 'Glück Auf für Immer — die Zechen sind weg, der Gruß bleibt für ewig.',
+      beispiel_hd: 'Glück Auf für Immer — die Zechen sind weg, der Gruß bleibt für ewig.',
+      kategorie: 'arbeit'
     }
   ]
 };
