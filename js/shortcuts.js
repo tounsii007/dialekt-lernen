@@ -4,23 +4,15 @@
 import { cycleTheme } from './store.js';
 import { openSearch, closeSearch, isSearchOpen } from './search.js';
 
-// Lazy-handle: nur falls die Module bereits geladen wurden, sonst no-op.
-async function delegateLernKey(e) {
-  try {
-    const m = await import('./views/lernen.js');
-    m.handleLernKey?.(e);
-  } catch {}
-}
-async function delegateQuizKey(e) {
-  try {
-    const m = await import('./views/quiz.js');
-    m.handleQuizKey?.(e);
-  } catch {}
-}
-
 const SEARCH_KEYS = new Set(['s', 'S', '/']);
 const THEME_KEYS = new Set(['t', 'T']);
 const TYPING_TAGS = new Set(['INPUT', 'TEXTAREA']);
+
+/** View-modal keys forwarded to the Lern/Quiz screen when one is mounted. */
+function isViewKey(key) {
+  if (key === ' ' || key.startsWith('Arrow')) return true;
+  return key >= '1' && key <= '4';
+}
 
 function isTyping(target) {
   if (!target) return false;
@@ -28,7 +20,23 @@ function isTyping(target) {
   return target.isContentEditable === true;
 }
 
+/**
+ * Lazy-loaded view-key forwarder. Imports the view module only if it's
+ * available — if the view isn't currently mounted (and thus its module
+ * hasn't been imported elsewhere), the dynamic import is a no-op and
+ * the catch swallows the failure.
+ */
+async function delegateViewKey(modulePath, handlerName, e) {
+  try {
+    const m = await import(modulePath);
+    m[handlerName]?.(e);
+  } catch {
+    // View not loaded — nothing to forward to.
+  }
+}
+
 function onKeydown(e) {
+  // Escape closes the search overlay even from inside an input.
   if (e.key === 'Escape' && isSearchOpen()) {
     closeSearch();
     return;
@@ -40,14 +48,15 @@ function onKeydown(e) {
     openSearch();
     return;
   }
+
   if (THEME_KEYS.has(e.key)) {
     cycleTheme();
     return;
   }
-  // Nur Tasten, die in den Lern-/Quiz-Modus relevant sind, delegieren.
-  if (e.key === ' ' || e.key.startsWith('Arrow') || (e.key >= '1' && e.key <= '4')) {
-    delegateLernKey(e);
-    delegateQuizKey(e);
+
+  if (isViewKey(e.key)) {
+    delegateViewKey('./views/lernen.js', 'handleLernKey', e);
+    delegateViewKey('./views/quiz.js', 'handleQuizKey', e);
   }
 }
 
