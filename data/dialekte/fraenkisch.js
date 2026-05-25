@@ -654,6 +654,231 @@ export default {
       beispiel: 'Sechs Würschdla mit Senf, biddscheen.',
       beispiel_hd: 'Sechs Würstchen mit Senf, bitte.',
       kategorie: 'essen'
+    },
+    {
+      id: 'fr-076',
+      ausdruck: 'Erlangen',
+      hochdeutsch: 'Erlangen (Universitätsstadt)',
+      bedeutung: 'Erlangen ist eine 116.000-Einwohner-Universitätsstadt im Mittelfränkischen. Sitz der Friedrich-Alexander-Universität und großer Standort der Siemens AG. Bekannt: die barocke Hugenotten-Altstadt (Schloss, Schlossgarten), die Bergkirchweih und der Schlossgarten-Konzerte. Hat eine der höchsten Akademiker-Quoten Deutschlands. Innovativ und gleichzeitig fränkisch-bodenständig.',
+      beispiel: 'In Erlangen forsche se bei Siemens an die Zukunft.',
+      beispiel_hd: 'In Erlangen forschen sie bei Siemens an der Zukunft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-077',
+      ausdruck: 'Forchheim',
+      hochdeutsch: 'Forchheim (Tor zur Fränkischen Schweiz)',
+      bedeutung: 'Forchheim mit 32.000 Einwohnern ist Tor zur Fränkischen Schweiz und hat das wohl höchste Bierkeller-Aufkommen Deutschlands — der „Kellerwald" mit über 20 traditionellen Bierkellern unter Eichen. Die Annafest im Juli, eines der ältesten Volksfeste Bayerns. Schöne Fachwerk-Altstadt mit Rathaus und Kaiserpfalz. Bier-Pilgerort der Frankenliebhaber.',
+      beispiel: 'Im Forchheimer Kellerwald a Seidla — Frankenglück pur.',
+      beispiel_hd: 'Im Forchheimer Kellerwald ein Krug Bier — Frankenglück pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-078',
+      ausdruck: 'Bayreuth',
+      hochdeutsch: 'Bayreuth (Wagner-Stadt)',
+      bedeutung: 'Bayreuth mit 73.000 Einwohnern ist die Wagner-Stadt schlechthin — Sitz der Bayreuther Festspiele seit 1876. Auch sonst kulturhistorisch reich: das Markgräfliche Opernhaus (UNESCO-Welterbe), das Eremitage-Schloss der Markgräfin Wilhelmine. Universität Bayreuth ist jung und innovativ. Liegt im Bayreuther Land, einer hügeligen Landschaft Oberfrankens.',
+      beispiel: 'Bayreuth lebt jedes Jahr im Sommer vom Wagner-Festival.',
+      beispiel_hd: 'Bayreuth lebt jedes Jahr im Sommer vom Wagner-Festival.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-079',
+      ausdruck: 'Hof',
+      hochdeutsch: 'Hof (Stadt im Frankenwald)',
+      bedeutung: 'Hof an der Saale mit 47.000 Einwohnern ist die nordöstlichste Stadt Bayerns — direkt an der Grenze zu Sachsen und Thüringen. Bekannt: die Internationalen Hofer Filmtage (Mai), eines der wichtigsten deutschen Filmfestivals. Die Stadt ist klimatisch rauer als das übrige Franken („Bayerisch Sibirien"). Industriestadt mit Strukturwandel-Geschichte.',
+      beispiel: 'Hof is das Tor zum Frankenwald — und manchmal a a bissle eiskalt.',
+      beispiel_hd: 'Hof ist das Tor zum Frankenwald — und manchmal auch ein bisschen eiskalt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-080',
+      ausdruck: 'Schweinfurt',
+      hochdeutsch: 'Schweinfurt (Industriestadt am Main)',
+      bedeutung: 'Schweinfurt mit 54.000 Einwohnern ist Industriestandort der Wälzlagerindustrie (SKF, FAG, Schaeffler) — Weltmarkt. Im Zweiten Weltkrieg massiv bombardiert wegen der Kugellager-Produktion. Geburtsstadt von Friedrich Rückert (Dichter). Heimat der Bratwurst „Schweinfurter Bratworscht". Echtes Arbeiter-Franken am Main.',
+      beispiel: 'In Schweinfurt baun se die Wälzlager für die ganz Welt.',
+      beispiel_hd: 'In Schweinfurt bauen sie die Wälzlager für die ganze Welt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-081',
+      ausdruck: 'Aschaffenburg',
+      hochdeutsch: 'Aschaffenburg („Bayerisches Nizza")',
+      bedeutung: 'Aschaffenburg mit 71.000 Einwohnern liegt im Nordwesten Bayerns am Main, fast schon hessische Grenze. Bekannt als „Bayerisches Nizza" wegen des milden Klimas. Berühmt: Schloss Johannisburg (Renaissance), das Pompejanum (Ludwig I. ließ ein römisches Haus nachbauen). Mischzone zwischen fränkischem und hessischem Dialekt. Industrie- und Bildungsstadt.',
+      beispiel: 'Aschaffenburg nennt mer\'s Bayrische Nizza — wegen dem milden Klima.',
+      beispiel_hd: 'Aschaffenburg nennt man das Bayerische Nizza — wegen dem milden Klima.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-082',
+      ausdruck: 'Ansbach',
+      hochdeutsch: 'Ansbach (Mittelfränkische Residenzstadt)',
+      bedeutung: 'Ansbach mit 42.000 Einwohnern ist die Hauptstadt Mittelfrankens und einstige Markgrafenresidenz. Berühmt: die Markgrafen-Residenz (Rokoko), die Markgrafen-Theater. Heimat des Bachwoche Ansbach (eines der wichtigsten Bach-Festivals weltweit). Auch militärisch bedeutend — US-Militärstandort seit 1945. Charmante kleine Barockstadt im fränkischen Stil.',
+      beispiel: 'Die Bachwoche in Ansbach is\'s wichtigste fränkische Klassikfest.',
+      beispiel_hd: 'Die Bachwoche in Ansbach ist das wichtigste fränkische Klassikfest.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-083',
+      ausdruck: 'Schwabach',
+      hochdeutsch: 'Schwabach (Goldschlägerstadt)',
+      bedeutung: 'Schwabach südlich von Nürnberg mit 41.000 Einwohnern ist die deutsche Hauptstadt des Goldschlägerhandwerks — Blattgold wird hier seit Jahrhunderten von Hand hergestellt. Über 80% des deutschen Blattgolds kommt aus Schwabach. Auch die Schwabacher Schrift (Vorgänger der Frakturschrift) trägt ihren Namen. Charmante kleine Stadt mit großem Handwerksgewicht.',
+      beispiel: 'In Schwabach wird das Goldblatt für die Kirchen gschlogn.',
+      beispiel_hd: 'In Schwabach wird das Blattgold für die Kirchen geschlagen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-084',
+      ausdruck: 'Iphofen',
+      hochdeutsch: 'Iphofen (Weinort in Unterfranken)',
+      bedeutung: 'Iphofen mit 4.500 Einwohnern ist eines der bedeutendsten fränkischen Weinorte — sieben Weinlagen mit Topweinen (Julius-Echter-Berg, Kalb, Kronsberg). Das mittelalterliche Stadtbild mit Stadtmauer, Türmen und Fachwerkhäusern ist hervorragend erhalten. Knauf-Konzern hat hier seinen Sitz. Kunst- und Weinstadt — kleines Juwel des Maindreiecks.',
+      beispiel: 'A Silvaner aus Iphofen — fränkische Spitzenweinlage.',
+      beispiel_hd: 'Ein Silvaner aus Iphofen — fränkische Spitzenweinlage.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-085',
+      ausdruck: 'Volkach',
+      hochdeutsch: 'Volkach (Maindreieck-Weinort)',
+      bedeutung: 'Volkach mit 8.500 Einwohnern liegt malerisch in einer Mainschleife („Mainviereck") und ist Frankenwein-Hochburg. Die Wallfahrtskirche Maria im Weingarten mit der berühmten Madonna im Rosenkranz von Tilman Riemenschneider ist Pilgerort. Jährliches Weinfest, charmante Altstadt, beste Frankenweine. Lebensgefühl auf dem Mainviereck.',
+      beispiel: 'Volkach im Mainviereck — Weingarten und Riemenschneider.',
+      beispiel_hd: 'Volkach im Mainviereck — Weingarten und Riemenschneider.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-086',
+      ausdruck: 'Steigerwald',
+      hochdeutsch: 'Steigerwald (Mittelgebirge)',
+      bedeutung: 'Der Steigerwald ist ein Mittelgebirge zwischen Würzburg und Bamberg — hügelige Buchenwälder, Streuobstwiesen, Weinberge am Rand. Naturpark mit zahlreichen Wanderwegen. Berühmt: die Schwanberg-Klosteranlage, das Kloster Ebrach (Zisterzienser-Erbe). Eine ruhige, ursprüngliche Landschaft, die vom Tourismus noch verschont ist — fränkische Geheimnis-Region.',
+      beispiel: 'Im Steigerwald wandern is wie a Zeitreise — Stille, Wald und Tradition.',
+      beispiel_hd: 'Im Steigerwald wandern ist wie eine Zeitreise — Stille, Wald und Tradition.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-087',
+      ausdruck: 'Spessart',
+      hochdeutsch: 'Spessart (Mittelgebirge in Unterfranken)',
+      bedeutung: 'Der Spessart ist Deutschlands größtes zusammenhängendes Laubwaldgebiet — 2.440 km² Buchen- und Eichenwald zwischen Aschaffenburg und Würzburg. Bekannt durch Wilhelm Hauffs Märchen „Das Wirtshaus im Spessart". Räubergeschichten, Köhlertradition, dichte Wälder. Heute Wanderparadies und Naturpark. Eine der ursprünglichsten Landschaften Mitteleuropas.',
+      beispiel: 'Im Spessart spukt\'s ned mehr — aber wandern kann mer wunderschön.',
+      beispiel_hd: 'Im Spessart spukt es nicht mehr — aber wandern kann man wunderschön.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-088',
+      ausdruck: 'Rhön',
+      hochdeutsch: 'Rhön (Mittelgebirge — „Land der offenen Fernen")',
+      bedeutung: 'Die Rhön ist ein Mittelgebirge zwischen Bayern, Hessen und Thüringen — UNESCO-Biosphärenreservat. Besondere offene Hochflächen mit Schafhaltung, vulkanische Berge wie Wasserkuppe (höchster Berg, 950 m). „Land der offenen Fernen" wegen der weiten Aussichten. Bekannt: Rhöner Schafe, Rhöner Wurst, Segelflug von der Wasserkuppe. Authentisch ländliches Franken.',
+      beispiel: 'Auf der Wasserkuppe in der Rhön weht der Wind über die Hochfläche.',
+      beispiel_hd: 'Auf der Wasserkuppe in der Rhön weht der Wind über die Hochfläche.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-089',
+      ausdruck: 'Hassberge',
+      hochdeutsch: 'Haßberge (Mittelgebirge)',
+      bedeutung: 'Die Haßberge sind ein Mittelgebirge im Norden Unterfrankens zwischen Coburg und Schweinfurt. Wenig touristisch erschlossen, dafür ursprünglich. Berühmt: das Schloss Bettenburg, der „Burgenwinkel" mit zahlreichen mittelalterlichen Ruinen. Eine der Geheimtipp-Regionen Frankens für Wanderer und Liebhaber stiller Landschaften. Naturpark Haßberge.',
+      beispiel: 'In de Hassberge findest noch echte Stille — kaum Touristen.',
+      beispiel_hd: 'In den Haßbergen findest du noch echte Stille — kaum Touristen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-090',
+      ausdruck: 'Tilman Riemenschneider',
+      hochdeutsch: 'Tilman Riemenschneider (Bildschnitzer)',
+      bedeutung: 'Tilman Riemenschneider (ca. 1460-1531) ist der bedeutendste fränkische Bildhauer und einer der wichtigsten deutschen Künstler überhaupt. Geboren in Heiligenstadt (Thüringen), wirkte er hauptsächlich in Würzburg. Seine Holzschnitzwerke (Marienaltar in Creglingen, Heilig-Blut-Altar in Rothenburg, Madonna in Volkach) sind Weltkunst. Auch Würzburger Bürgermeister — wurde im Bauernkrieg gefoltert.',
+      beispiel: 'Riemenschneiders Madonnen sind Weltkunst aus Franken.',
+      beispiel_hd: 'Riemenschneiders Madonnen sind Weltkunst aus Franken.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-091',
+      ausdruck: 'Veit Stoß',
+      hochdeutsch: 'Veit Stoß (Nürnberger Bildhauer)',
+      bedeutung: 'Veit Stoß (ca. 1450-1533) war ein berühmter Nürnberger Bildhauer und Maler. Sein Marienaltar in der Krakauer Marienkirche (1477-1489) gilt als Meisterwerk des Spätmittelalters. Auch der Englische Gruß in der Nürnberger Lorenzkirche stammt von ihm. Sein Leben war turbulent — er wurde wegen Fälschung gebrandmarkt. Trotzdem unsterblich als Künstlergenie.',
+      beispiel: 'Veit Stoß hat den Englischen Gruß in St. Lorenz geschnitzt.',
+      beispiel_hd: 'Veit Stoß hat den Englischen Gruß in St. Lorenz geschnitzt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-092',
+      ausdruck: 'Peter Vischer',
+      hochdeutsch: 'Peter Vischer (Nürnberger Bronzegießer)',
+      bedeutung: 'Peter Vischer der Ältere (ca. 1455-1529) war der berühmteste Nürnberger Bronzegießer der Renaissance. Sein Hauptwerk: das Sebaldusgrab in der Sebalduskirche Nürnberg — eine Meisterleistung der Bronzegusskunst mit lebensgroßen Heiligenfiguren und Apostelfiguren. Vischer hat sich selbst als kleine Figur in einer Schürze eingefügt — Markenzeichen seiner Werkstatt. Renaissance-Genie.',
+      beispiel: 'Das Sebaldusgrab von Peter Vischer is Renaissance-Kunst in Bronze.',
+      beispiel_hd: 'Das Sebaldusgrab von Peter Vischer ist Renaissance-Kunst in Bronze.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-093',
+      ausdruck: 'Walther von der Vogelweide',
+      hochdeutsch: 'Walther von der Vogelweide (Minnesänger)',
+      bedeutung: 'Walther von der Vogelweide (ca. 1170-1230) ist der berühmteste Minnesänger des deutschen Mittelalters. Seine Herkunft ist umstritten — Franken (Würzburg-Region), Tirol oder Bayern. Sein Grab soll in Würzburg liegen, im Lusamgärtchen am Dom. Schrieb über Liebe, Politik und Religion — ein universeller mittelalterlicher Dichter. Heute Schulstoff.',
+      beispiel: 'Walther von der Vogelweide liegt im Würzburger Lusamgärtchen.',
+      beispiel_hd: 'Walther von der Vogelweide liegt im Würzburger Lusamgärtchen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-094',
+      ausdruck: 'Marktbreit',
+      hochdeutsch: 'Marktbreit (Mainfränkische Kleinstadt)',
+      bedeutung: 'Marktbreit am Main mit 4.000 Einwohnern ist eine der schönsten erhaltenen mittelalterlichen Kleinstädte Frankens. Pittoreske Fachwerkhäuser, das Maintor, die Mainbrücke und der berühmte Schwedische Kanzler im Schloss machen sie zum Anziehungspunkt. Tor zum Maindreieck. Auch berühmt durch die Asthma-Forschung Robert Kochs.',
+      beispiel: 'Marktbreit — Fachwerk-Idyll am Main, fränkische Postkarte.',
+      beispiel_hd: 'Marktbreit — Fachwerk-Idyll am Main, fränkische Postkarte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-095',
+      ausdruck: 'Maintal',
+      hochdeutsch: 'Maintal (Weinlandschaft)',
+      bedeutung: 'Das Maintal ist die zentrale Weinlandschaft Frankens — vom Spessart bis zum Steigerwald. Die Mainschleifen bilden charakteristische Landschaftsbilder. Hier wachsen die besten Frankenweine: Würzburger Stein, Volkacher Ratsherr, Iphofener Julius-Echter-Berg. Auch Tourismusroute „Mainradweg" — von der Quelle bei Bayreuth bis zur Mündung in Mainz.',
+      beispiel: 'Im Maintal wachsn die besten fränkischen Wein.',
+      beispiel_hd: 'Im Maintal wachsen die besten fränkischen Weine.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-096',
+      ausdruck: 'Marktheidenfeld',
+      hochdeutsch: 'Marktheidenfeld (Mainfränkische Stadt)',
+      bedeutung: 'Marktheidenfeld am Main mit 11.000 Einwohnern liegt im Maindreieck. Bekannt für Warema (Markisenhersteller, Weltmarktführer) und Bürkert (Mess- und Regeltechnik). Schöne mittelalterliche Altstadt mit historischer Mainbrücke. Im Spessart-Westen gelegen, klassisches mainfränkisches Mittelstadt-Idyll. Wirtschaftlich überraschend stark für die Größe.',
+      beispiel: 'Marktheidenfeld is klein, aber mit weltbekannten Firmen.',
+      beispiel_hd: 'Marktheidenfeld ist klein, aber mit weltbekannten Firmen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-097',
+      ausdruck: 'Wertheim',
+      hochdeutsch: 'Wertheim (Stadt am Mainzusammenfluss)',
+      bedeutung: 'Wertheim mit 22.000 Einwohnern liegt am Zusammenfluss von Main und Tauber — sehr malerisch. Die Burgruine Wertheim thront hoch über der Stadt. Bekannt: das Glasmuseum, das Outlet-Center (Designer Outlet Wertheim — eines der größten Deutschlands). Mischzone fränkisch-badisch. Liegt im Main-Tauber-Kreis (Baden-Württemberg), aber kulturell fränkisch geprägt.',
+      beispiel: 'In Wertheim kannst du shoppen und Burgruine angucken — beides in einem Tag.',
+      beispiel_hd: 'In Wertheim kannst du shoppen und Burgruine angucken — beides in einem Tag.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-098',
+      ausdruck: 'Coburg-Stadt',
+      hochdeutsch: 'Coburg (Veste-Stadt)',
+      bedeutung: 'Coburg-Stadt ist die historische Residenzstadt der Herzöge von Sachsen-Coburg-Gotha. Die Veste Coburg, „Fränkische Krone", ist eine der mächtigsten Burgen Deutschlands — Martin Luther verbrachte hier 1530 ein halbes Jahr während des Augsburger Reichstags. Über die Coburger Linie kamen Hochadelige nach Europa — Prinz Albert heiratete Victoria. Berühmt: Coburger Bratwurst.',
+      beispiel: 'Coburg hat Hochadel und Bratwurst — beides gleichermaßen stolz.',
+      beispiel_hd: 'Coburg hat Hochadel und Bratwurst — beides gleichermaßen stolz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-099',
+      ausdruck: 'Federweißer',
+      hochdeutsch: 'Federweißer (Junger fränkischer Wein)',
+      bedeutung: 'Federweißer ist im Herbst der noch gärende, junge Wein — leicht süß, leicht prickelnd, niedrigprozentig. Im Fränkischen serviert man ihn mit Zwiebelkuchen als saisonale Spezialität von September bis Oktober. „Federweißer-Saison" ist gesellschaftliches Ereignis — Familien und Freunde treffen sich beim Winzer. Achtung: Der Wein gärt im Magen weiter! Locker trinken, sonst gibt\'s Bauchschmerzen.',
+      beispiel: 'Federweißer und Zwiebelkuchen — fränkischer Herbst-Klassiker.',
+      beispiel_hd: 'Federweißer und Zwiebelkuchen — fränkischer Herbst-Klassiker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-100',
+      ausdruck: 'Kärwa-Bua',
+      hochdeutsch: 'Kirchweihbub (Festburschen)',
+      bedeutung: 'Die „Kärwa-Buam" (oder „Kärwabuam") sind die ungeheirateten jungen Männer eines fränkischen Dorfes, die die Kirchweih organisieren — Bierzelt aufstellen, Kärwabaum (Maibaum) ausgraben, Tanz organisieren, Tradition pflegen. Eine ehrenvolle Aufgabe, die Generationen weitergegeben wird. Mit ihrem Kärwa-Heiß bringen sie die Mädchen zum Tanzen. Echtes fränkisches Volkstum, das in vielen Dörfern bis heute lebendig ist.',
+      beispiel: 'D\'Kärwabuam stellen morgen den Kärwabaum auf.',
+      beispiel_hd: 'Die Kirchweihbuben stellen morgen den Kirchweihbaum auf.',
+      kategorie: 'redensart'
     }
   ]
 };

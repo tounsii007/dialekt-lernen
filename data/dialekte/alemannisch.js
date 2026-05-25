@@ -682,6 +682,231 @@ export default {
       beispiel: 'Mei Heimet isch dort, wo de Wald rauscht und d\'Bächli plätschern.',
       beispiel_hd: 'Meine Heimat ist dort, wo der Wald rauscht und die Bächlein plätschern.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-076',
+      ausdruck: 'Funkenfeuer',
+      hochdeutsch: 'Funkenfeuer (alemannisches Frühjahrsbrauchtum)',
+      bedeutung: 'Das Funkenfeuer ist eine alemannische und vorarlbergische Brauchtumsfeier am ersten Sonntag nach Aschermittwoch — riesige Holztürme („Funken") werden auf Hügeln aufgebaut und entzündet. Symbolik: Vertreibung des Winters und Begrüßung des Frühlings. Eine Funken-Hexe aus Stroh thront auf der Spitze und explodiert. Familien wandern abends zum Funkenplatz, Glühwein und Wurst inklusive. UNESCO-Kulturerbe seit 2010.',
+      beispiel: 'Am Funkesunntig brennen im Alpenraum die Funke — Frühlingsfest pur.',
+      beispiel_hd: 'Am Funkensonntag brennen im Alpenraum die Funkenfeuer — Frühlingsfest pur.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-077',
+      ausdruck: 'Funkenmarschall',
+      hochdeutsch: 'Funkenmarschall (Bauleiter des Funkens)',
+      bedeutung: 'Der Funkenmarschall ist der Anführer des Funkenbaus — eine ehrenvolle Position in der alemannisch-vorarlbergischen Tradition. Er organisiert den Bau des Funkenturms (oft 30 m hoch!), koordiniert die Holzsammlung, plant die Zündung. Eine traditionelle Männerarbeit, die Wochen vor dem Funkensonntag beginnt. Junge Männer werden so in die Dorfgemeinschaft eingeführt — ein Initiationsritual.',
+      beispiel: 'Der Funkenmarschall trägt schwere Verantwortung — sein Funke muss perfekt brennen.',
+      beispiel_hd: 'Der Funkenmarschall trägt schwere Verantwortung — sein Funkenfeuer muss perfekt brennen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-078',
+      ausdruck: 'Funkenringer',
+      hochdeutsch: 'Funkenringer (Wettkampf um den Funken)',
+      bedeutung: 'In manchen alemannischen Dörfern gibt es das „Funkenringen" — junge Männer versuchen, das Holz des Funkens zu „stehlen", bevor er offiziell entzündet wird. Eine spielerische Tradition mit ernstem Hintergrund: Die Funken-Buben müssen ihr Werk verteidigen, oft mit Übernachtung am Funkenplatz. Dorfbubsfreundschaften werden hier geknüpft oder Feindschaften geboren — alles im Geist des Brauchtums.',
+      beispiel: 'D\'Funkenringer machen jedes Jahr im Februar Stress um den Funken.',
+      beispiel_hd: 'Die Funkenringer machen jedes Jahr im Februar Aufruhr um den Funken.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-079',
+      ausdruck: 'Kirschwasser-Brennerei',
+      hochdeutsch: 'Schwarzwälder Schnapsbrennerei',
+      bedeutung: 'Im Schwarzwald gibt es über 14.000 traditionelle Schnapsbrennereien — Privatpersonen mit Brennrecht. Jeder größere Hof hat seine eigene kleine Brennerei, in der Kirschwasser, Williamsbirne, Mirabelle, Zwetschge und Apfel destilliert werden. Diese „Schnapsbrenner" sind Kulturschatz — der Schwarzwald hat die höchste Dichte privater Brennereien Europas. Jeder Edelbrand erzählt seine Geschichte.',
+      beispiel: 'Jeder Schwarzwälder Hof hat sei eigne Brennerei für Kirschwasser.',
+      beispiel_hd: 'Jeder Schwarzwälder Hof hat seine eigene Brennerei für Kirschwasser.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-080',
+      ausdruck: 'Edelbrand',
+      hochdeutsch: 'Edelbrand (hochwertiger Schwarzwälder Schnaps)',
+      bedeutung: 'Der „Edelbrand" ist die Krönung der Schwarzwälder Brennkunst — hochwertige Obstbrände aus reinen Früchten ohne Zusätze. Im Gegensatz zum Geist (Obstmazerat) wird der Edelbrand aus vergorenen Früchten destilliert. Berühmte Edelbrände: Mirabelle, Williamsbirne, Wildkirsche, Zwetschge. Schwarzwälder Edelbrenner haben mehrmals Welt-Spirituosen-Wettbewerbe gewonnen. Premium-Qualität als Kulturgut.',
+      beispiel: 'En guter Edelbrand vom Schwarzwald — Aroma in Reinform.',
+      beispiel_hd: 'Ein guter Edelbrand vom Schwarzwald — Aroma in Reinform.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-081',
+      ausdruck: 'Schwarzwaldhaus',
+      hochdeutsch: 'Schwarzwaldhaus (traditioneller Bauernhof)',
+      bedeutung: 'Das Schwarzwaldhaus ist der charakteristische Bauerntyp des Schwarzwalds — ein massives Holzhaus mit tief heruntergezogenem Walmdach (oft mit Stroh oder Schindeln gedeckt). Mensch und Vieh leben unter einem Dach. Das Heu wird über die „Hocheinfahrt" auf den Heuboden gefahren. Die Vogtsbauernhöfe bei Gutach (Freilichtmuseum) zeigen die Vielfalt: Hotzenhaus, Heidenhaus, Gutacher Haus.',
+      beispiel: 'En altes Schwarzwaldhaus mit Stroh-Dach — fast wie im Märchen.',
+      beispiel_hd: 'Ein altes Schwarzwaldhaus mit Stroh-Dach — fast wie im Märchen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-082',
+      ausdruck: 'Allgäuer Käse',
+      hochdeutsch: 'Allgäuer Käse (Bergkäse, Emmentaler)',
+      bedeutung: 'Der Allgäuer Käse ist eines der wichtigsten Exportgüter der alemannisch-schwäbischen Region — vor allem Allgäuer Bergkäse, Emmentaler und Weißlacker. Über 1.800 Bauernhöfe produzieren Allgäuer Käse, viele direkt auf der Alm. Geschützte Ursprungsbezeichnung. Die Käserezepte gehen oft Jahrhunderte zurück. Allgäuer Bauern haben den Käse zur Kunst entwickelt — von der Almwirtschaft zum Weltprodukt.',
+      beispiel: 'Allgäuer Bergkäs aus de Senne — kräftig im Geschmack.',
+      beispiel_hd: 'Allgäuer Bergkäse aus der Sennerei — kräftig im Geschmack.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-083',
+      ausdruck: 'Tannzapfeln',
+      hochdeutsch: 'Tannenzapfen / -früchte',
+      bedeutung: 'Die „Tannzapfeln" — Tannenzapfen — sind im alemannischen Sprachraum vielseitig: Brennmaterial, Weihnachtsdekoration, in der Pelletheizung als Grundstoff. Eine alte Tradition: Wenn die Tannzapfeln im September „chnottern" (knattern), kündigt sich der Herbst an. Auch in Volksliedern und Märchen tauchen Tannzapfeln auf. Im Schwarzwald sammelt jede Familie sie für die Weihnachtsdekoration.',
+      beispiel: 'Im Herbst sammeln d\'Kinder Tannzapfeln im Wald.',
+      beispiel_hd: 'Im Herbst sammeln die Kinder Tannenzapfen im Wald.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-084',
+      ausdruck: 'Maibaum',
+      hochdeutsch: 'Maibaum (Frühjahrstradition)',
+      bedeutung: 'Der Maibaum ist eine alemannische Frühjahrs-Tradition — am 1. Mai wird ein hoher, geschmückter Baum im Dorfzentrum aufgestellt. Die Maibaum-Errichtung ist ehrenvolle Männerarbeit. In manchen Dörfern wird der Maibaum von Nachbardörfern „gestohlen" — eine spielerische Rivalität mit Tradition. Junge Männer tanzen mit den Mädchen um den Maibaum. Symbol für Fruchtbarkeit und Gemeinschaft.',
+      beispiel: 'Am ersten Mai stell\'mer den Maibaum auf — Tradition seit Jahrhunderten.',
+      beispiel_hd: 'Am ersten Mai stellen wir den Maibaum auf — Tradition seit Jahrhunderten.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-085',
+      ausdruck: 'Vorarlbergerisch',
+      hochdeutsch: 'Vorarlberger Dialekt',
+      bedeutung: 'Vorarlbergerisch ist die alemannische Mundart Vorarlbergs (Österreich) — sprachlich näher am Schweizerdeutschen und Schwäbischen als am übrigen Österreichisch. Vorarlberg gehörte historisch zum alemannischen Raum (Habsburger Gebiet, aber kulturell schweizerisch-süddeutsch). Walgau, Bregenzerwald und Montafon haben jeweils ihre Mundartvarianten. Identitätsstiftend gegenüber dem „bayerisch" geprägten Restösterreich.',
+      beispiel: 'Vorarlbergerisch klingt fast wie Schweizerdütsch — kein Wunder.',
+      beispiel_hd: 'Vorarlbergerisch klingt fast wie Schweizerdeutsch — kein Wunder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-086',
+      ausdruck: 'Walliserdeutsch',
+      hochdeutsch: 'Walserdeutsch (höchstalemannisch)',
+      bedeutung: 'Das Walliser/Walser-Deutsch ist die archaischste Variante des Höchstalemannischen — gesprochen von den Walsern, einer ethnischen Gruppe, die im 13./14. Jahrhundert aus dem Schweizer Wallis nach Vorarlberg, Liechtenstein und Norditalien auswanderte. Klein-Walsertal in Vorarlberg ist eine deutsche Sprachinsel, nur über Österreich erreichbar. Hier wird ein urtümliches Walserdeutsch gepflegt — Erbe alpiner Pioniere.',
+      beispiel: 'Im Klein-Walsertal sprechen sie noch Walserdeutsch — uraltes Alemannisch.',
+      beispiel_hd: 'Im Klein-Walsertal sprechen sie noch Walserdeutsch — uraltes Alemannisch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-087',
+      ausdruck: 'Elsässerditsch',
+      hochdeutsch: 'Elsässerdeutsch (alemannischer Dialekt im Elsass)',
+      bedeutung: 'Das Elsässerditsch ist die alemannische Mundart des französischen Elsass — eng verwandt mit dem badischen und südpfälzischen Dialekt. Bis zum Zweiten Weltkrieg Hauptsprache im Elsass, heute durch französische Sprachpolitik stark zurückgedrängt. Junge Elsässer sprechen es kaum noch. Der Kulturkreis OLCA kämpft um den Erhalt. Eine bedrohte Sprachvariante mit jahrhundertealter Tradition.',
+      beispiel: 'Mei Großmuetter aus Strasbourg hät no Elsässerditsch g\'schwätzt.',
+      beispiel_hd: 'Meine Großmutter aus Straßburg hat noch Elsässerdeutsch gesprochen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-088',
+      ausdruck: 'Tübinger Hochalemannisch',
+      hochdeutsch: 'Tübinger Mundart (Übergangsdialekt)',
+      bedeutung: 'Das Tübinger Hochalemannisch ist eine Mischzone-Mundart zwischen Schwäbisch und Hochalemannisch — südwestlich der Schwäbischen Alb gesprochen. Charakteristisch: stärkere Lautverschiebung des „k" zu „ch" als im Standardschwäbisch („Chind" statt „Kind"). Auch der Singsang ist alemannischer geprägt. Tübinger Studenten und Akademiker pflegen oft eine literarisch verfeinerte Form.',
+      beispiel: 'In Tübinge schwätzen se a bissle mehr alemannisch als in Stuttgart.',
+      beispiel_hd: 'In Tübingen sprechen sie ein bisschen mehr alemannisch als in Stuttgart.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-089',
+      ausdruck: 'Triberger Wasserfälle',
+      hochdeutsch: 'Triberger Wasserfälle (höchste Wasserfälle Deutschlands)',
+      bedeutung: 'Die Triberger Wasserfälle sind die höchsten Wasserfälle Deutschlands — 163 m Fallhöhe in 7 Stufen. Die Gutach stürzt durch eine wilde, romantische Felsenschlucht. Seit 1827 erschlossen, war die Romantik-Pilgerstätte. Heute Touristenmagnet mit fast 500.000 Besuchern jährlich. Auch der „Schwarzwaldweg" beginnt hier. Naturschauspiel mitten im Schwarzwald.',
+      beispiel: 'In Triberg fallt das Wasser 163 Meter — Deutschlands höchster Wasserfall.',
+      beispiel_hd: 'In Triberg fällt das Wasser 163 Meter — Deutschlands höchster Wasserfall.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-090',
+      ausdruck: 'Schwarzwaldbahn',
+      hochdeutsch: 'Schwarzwaldbahn (Historische Bahnstrecke)',
+      bedeutung: 'Die Schwarzwaldbahn von Offenburg nach Konstanz ist eine der ersten Gebirgsbahnen Europas — eröffnet 1873. Sie überwindet 600 m Höhenunterschied auf 149 km mit 39 Tunneln und spektakulären Viadukten. Ingenieursleistung des 19. Jahrhunderts. Heute touristische Attraktion — die Fahrt durch die Schwarzwaldlandschaft ist legendär. Verbindet die Rheinebene mit dem Bodensee.',
+      beispiel: 'D\'Schwarzwaldbahn isch ein technisches Wunderwerk vum 19. Jahrhundert.',
+      beispiel_hd: 'Die Schwarzwaldbahn ist ein technisches Wunderwerk des 19. Jahrhunderts.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-091',
+      ausdruck: 'Furtwangen',
+      hochdeutsch: 'Furtwangen (Uhrenstadt im Schwarzwald)',
+      bedeutung: 'Furtwangen im Schwarzwald mit 9.000 Einwohnern ist DIE deutsche Uhrenstadt — das Deutsche Uhrenmuseum zeigt 8.000 Exponate aus drei Jahrhunderten Uhrengeschichte. Hier wurde die Schwarzwälder Uhrenindustrie geboren. Die Hochschule Furtwangen ist Spezialist für Mikrotechnik, Medizintechnik und Informatik — moderne Fortsetzung der Präzisionstradition. Auch Donauquelle (Breg-Quelle).',
+      beispiel: 'In Furtwange isch das Uhrenmuseum — Schwarzwälder Uhrengeschichte pur.',
+      beispiel_hd: 'In Furtwangen ist das Uhrenmuseum — Schwarzwälder Uhrengeschichte pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-092',
+      ausdruck: 'Schramberg',
+      hochdeutsch: 'Schramberg (Schwarzwälder Uhrenstadt)',
+      bedeutung: 'Schramberg im Schwarzwald mit 21.000 Einwohnern ist Heimat der Junghans-Uhren — der größten Uhrenfabrik Europas in den 1900er Jahren. Heute noch Junghans-Standort, weltberühmt für die „Max Bill"-Designerlinie. Auch Marken Sick (Industriesensoren) und Trumpf-Werkzeugmaschinen haben Wurzeln hier. Klassische Schwarzwälder Industriestadt mit Tradition und Hightech.',
+      beispiel: 'Junghans aus Schramberg — Max Bill\'s Uhrendesign weltweit bekannt.',
+      beispiel_hd: 'Junghans aus Schramberg — Max Bills Uhrendesign ist weltweit bekannt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-093',
+      ausdruck: 'Wiesental',
+      hochdeutsch: 'Wiesental (Tal im Südschwarzwald)',
+      bedeutung: 'Das Wiesental im Südschwarzwald folgt dem Fluss Wiese von Todtnauberg bis nach Lörrach/Basel. Eine der schönsten Schwarzwald-Landschaften — sanfte Hügel, alemannische Bauernhöfe, Weinberge im unteren Teil. Heimat des alemannischen Dichters Johann Peter Hebel (Hausen im Wiesental). Bekannt: Schopfheim, Zell, Schönau. Das obere Wiesental ist Skigebiet (Belchen, Feldberg).',
+      beispiel: 'S\'Wiesental isch d\'Heimet von Hebel und seiner alemannische Gedichte.',
+      beispiel_hd: 'Das Wiesental ist die Heimat von Hebel und seinen alemannischen Gedichten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-094',
+      ausdruck: 'Hotzenwald',
+      hochdeutsch: 'Hotzenwald (Hochfläche im Südschwarzwald)',
+      bedeutung: 'Der Hotzenwald ist eine raue, abgelegene Hochfläche im Südschwarzwald zwischen Wehratal und Hochrhein — Heimat der „Hotzen", einer eigensinnigen alemannischen Bevölkerungsgruppe. Bis ins 18. Jahrhundert eigene Volkskultur mit den „Hotzenkriegen" gegen Habsburg. Heute ruhige, ländliche Region mit traditioneller Hotzentracht und alemannischer Mundart. Echtes Geheimnis-Alemannien.',
+      beispiel: 'Im Hotzewald lebt noch a alte alemannische Kultur.',
+      beispiel_hd: 'Im Hotzenwald lebt noch eine alte alemannische Kultur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-095',
+      ausdruck: 'St. Blasien',
+      hochdeutsch: 'St. Blasien (Klosterstadt mit Dom)',
+      bedeutung: 'St. Blasien im Hochschwarzwald mit 4.000 Einwohnern hat einen der größten Kuppelbauten Europas — den Dom St. Blasien (1772-1783, drittgrößter Kuppeldurchmesser nach Petersdom und Pantheon). Heute Jesuitenkolleg. Auch Kurort für Lungenkranke (Asthma) wegen der reinen Höhenluft. Eine architektonisch bemerkenswerte Klosterstadt mitten in der Schwarzwald-Wildnis.',
+      beispiel: 'Der Dom in St. Blasien isch der dritt-größte Kuppelbau Europas.',
+      beispiel_hd: 'Der Dom in St. Blasien ist der drittgrößte Kuppelbau Europas.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-096',
+      ausdruck: 'Schluchsee',
+      hochdeutsch: 'Schluchsee (Stausee im Schwarzwald)',
+      bedeutung: 'Der Schluchsee im Hochschwarzwald ist der größte See Baden-Württembergs — ursprünglich natürlicher See, in den 1930er Jahren durch Staumauer erhöht für Wasserkraft. 7,3 km lang, in 930 m Höhe. Im Sommer Wassersport (Segeln, Schwimmen, Tauchen), im Winter teilweise zugefroren. Beliebtes Ausflugs- und Urlaubsziel. Der Bonndorfer Schluchsteig-Wanderweg führt rundherum.',
+      beispiel: 'Am Schluchsee schwimmen im Sommer und im Winter Wanderwege.',
+      beispiel_hd: 'Am Schluchsee schwimmen im Sommer und im Winter Wanderwege.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-097',
+      ausdruck: 'Höchenschwand',
+      hochdeutsch: 'Höchenschwand (höchster Luftkurort)',
+      bedeutung: 'Höchenschwand im Südschwarzwald ist mit 1.008 m der höchstgelegene Luftkurort Deutschlands („Dorf am Himmel"). Berühmt für die einzigartige Aussicht über die Alpenkette — bei klarem Wetter sieht man die gesamte Schweizer Alpenkette. Kurort für Atemwegspatienten. Die Höhenlage und das alpine Klima machen Höchenschwand zu einem Genesungsort. Kleinst-Gemeinde mit 2.500 Einwohnern.',
+      beispiel: 'Vu Höchenschwand siehst d\'Alpen wie auf m\'Postkarten.',
+      beispiel_hd: 'Von Höchenschwand siehst du die Alpen wie auf der Postkarte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-098',
+      ausdruck: 'Bahn-Schienenbus',
+      hochdeutsch: 'Schienenbus (Schwarzwald-Nebenstrecken)',
+      bedeutung: 'Der Schienenbus war jahrzehntelang das Verkehrsmittel auf den vielen Schwarzwald-Nebenstrecken — kleine, robuste Dieseltriebwagen für gebirgige Strecken. Im Volksmund „Roter Brummer" oder „Uerdinger Schienenbus" (nach dem Hersteller). Vereinen Tradition mit Geschichte. Auf der Sauschwänzlebahn und der Wutachtalbahn fahren historische Schienenbusse noch heute — Touristenattraktion.',
+      beispiel: 'Mit\'em alten Schienenbus dur den Schwarzwald — Romantik pur.',
+      beispiel_hd: 'Mit dem alten Schienenbus durch den Schwarzwald — Romantik pur.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-099',
+      ausdruck: 'Kraut',
+      hochdeutsch: 'Kraut (Sauerkraut, badisch)',
+      bedeutung: 'Das „Kraut" ist im alemannisch-badischen Raum das Sauerkraut — gehört zu fast jedem traditionellen Gericht. Filderkraut, badisches Kraut, Hotzenwälder Kraut — jede Region hat ihre Variante. Mit Speck, Wein und Zwiebeln gekocht ist es eine Vitamin-C-Bombe. Im Winter unverzichtbar zu Schäufele, Bratwurst oder Schweinebraten. Nahrungstradition seit Jahrhunderten.',
+      beispiel: 'En badisches Kraut mit Speck und Wein — Wintergericht!',
+      beispiel_hd: 'Ein badisches Kraut mit Speck und Wein — Wintergericht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-100',
+      ausdruck: 'Schlemmer',
+      hochdeutsch: 'Schlemmer (Genießer)',
+      bedeutung: 'Der „Schlemmer" ist im Alemannischen jemand, der gutes Essen und Trinken zu schätzen weiß — Genießer im positivsten Sinn. Im Schwarzwald, Markgräflerland und am Bodensee ist die Schlemmer-Kultur tief verwurzelt: Edelbrände, Spätburgunder, Wildgerichte, Schwarzwälder Schinken, Kirschtorte. „Mir simma Schlemmer!" sagt man stolz. Das alemannische Lebensgefühl: gut essen, gut trinken, gut leben.',
+      beispiel: 'Mir Badener simma Schlemmer — gut esse und gut trinke.',
+      beispiel_hd: 'Wir Badener sind Schlemmer — gut essen und gut trinken.',
+      kategorie: 'menschen'
     }
   ]
 };
