@@ -1329,6 +1329,276 @@ export default {
       beispiel: 'Mir sind Franken — net Bayern! Das is wichtig zu wissen.',
       beispiel_hd: 'Wir sind Franken — nicht Bayern! Das ist wichtig zu wissen.',
       kategorie: 'menschen'
+    },
+    {
+      id: 'fr-151',
+      ausdruck: 'Allmächd!',
+      hochdeutsch: 'Mein Gott! / Allmächtiger!',
+      bedeutung: '„Allmächd!" oder „Allmächd Goddla!" ist der wohl charakteristischste fränkische Ausruf des Erstaunens, Schreckens oder Bedauerns. Eine Kurzform von „Allmächtiger Gott!". In Nürnberg, Erlangen und Bamberg an jeder Straßenecke zu hören. Der Ausdruck reicht von leichtem „Ach herrje" bis zu „Um Himmels Willen!" — je nach Tonfall. Ein echter Franke kommt ohne dieses Wort kaum durch den Tag.',
+      beispiel: 'Allmächd! Hab i jetzt den Schlüssel vergessen!',
+      beispiel_hd: 'Mein Gott! Habe ich jetzt den Schlüssel vergessen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'fr-152',
+      ausdruck: 'Bambala',
+      hochdeutsch: 'Kleinkind',
+      bedeutung: 'Ein „Bambala" ist im Fränkischen ein Kleinkind, ein Baby oder ein kleines Mädchen — die Verkleinerung klingt warmherzig und vertraut. Verwandt mit dem italienischen „bambino", was auf die Handelsbeziehungen Nürnbergs nach Italien zurückzuführen sein könnte. „Mei Bambala" sagt die Oma liebevoll zum Enkel. Ein echtes Schmuckwort des Fränkischen.',
+      beispiel: 'Schau dir des Bambala mal an — wie süß!',
+      beispiel_hd: 'Schau dir das Kleinkind mal an — wie süß!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-153',
+      ausdruck: 'Saggradi!',
+      hochdeutsch: 'Verdammt nochmal!',
+      bedeutung: '„Saggradi!" ist ein fränkischer Fluch — eine entschärfte Form von „Sakrament!" (das katholische Sakrament wird zum Fluchwort). Auch als „Saggrament noamol!" zu hören. Der Ausdruck zeigt die katholische Prägung Frankens (besonders in Würzburg und Bamberg), wo religiöse Begriffe in Flüche umgewandelt wurden. Mild bis derb, je nach Lage.',
+      beispiel: 'Saggradi, jetzt is mir der Kaffee umgefalln!',
+      beispiel_hd: 'Verdammt nochmal, jetzt ist mir der Kaffee umgefallen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'fr-154',
+      ausdruck: 'Buddabäääm',
+      hochdeutsch: 'Butterbirne',
+      bedeutung: 'Eine „Buddabäääm" ist im Fränkischen eine besonders weiche, süße Birne — die „Butterbirne". Aber das Wort wird auch übertragen für einen weichlichen, sentimentalen Menschen verwendet: „Sei kei Buddabäääm!" Die fränkische Aussprache mit dem gedehnten „ää" macht das Wort besonders charakteristisch. Lautmalerisch klingt es nach etwas Süßem, Sanftem.',
+      beispiel: 'Die Buddabäääm sind heuer besonders süß.',
+      beispiel_hd: 'Die Butterbirnen sind dieses Jahr besonders süß.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-155',
+      ausdruck: 'Schmarrn',
+      hochdeutsch: 'Quatsch / Unsinn',
+      bedeutung: '„Schmarrn" ist im Fränkischen wie im Bayerischen das Wort für Unsinn oder Quatsch — „Red kei Schmarrn!". Ursprünglich ein süßes Gericht (Kaiserschmarrn), dann übertragen auf alles Wirre und Verzerrte. „Saudummer Schmarrn" ist eine intensive Steigerung. Auch in der fränkischen Küche bekannt als „Buchweizenschmarrn" oder „Apfelschmarrn".',
+      beispiel: 'Was redst du da für an Schmarrn?',
+      beispiel_hd: 'Was redest du da für einen Quatsch?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-156',
+      ausdruck: 'Wammerla',
+      hochdeutsch: 'Bauch / Wämmschen',
+      bedeutung: 'Das „Wammerla" ist im Fränkischen die Verkleinerungsform von „Wamme" — der Bauch, besonders das Bauchfleisch oder ein hervorstehender Bauch. „En Wammerla ahält" bedeutet einen Bierbauch bekommen. Auch in der Metzgerei: „Wammerl" ist das durchwachsene Bauchfleisch vom Schwein, das gepökelt und geräuchert wird — eine fränkische Spezialität.',
+      beispiel: 'Vom viele Bier hat er a ganz schöns Wammerla griegt.',
+      beispiel_hd: 'Vom vielen Bier hat er einen ganz schönen Bauch bekommen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-157',
+      ausdruck: 'Bassd!',
+      hochdeutsch: 'Passt! / In Ordnung!',
+      bedeutung: '„Bassd!" ist die kurze fränkische Zustimmung — ein Wort, das alles sagt. Es bedeutet „In Ordnung", „Geht klar", „Akzeptiert". Längere Versionen: „Bassd scho", „Bassd so". Das „p" wird zum „b" verschoben (typische fränkisch-bayerische Konsonantenschwächung). Mit hochgezogener Augenbraue gesprochen kann es auch leicht skeptische Zustimmung bedeuten — typisch fränkische Vielschichtigkeit.',
+      beispiel: 'Treffen mir uns um sechs? — Bassd!',
+      beispiel_hd: 'Treffen wir uns um sechs? — Passt!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-158',
+      ausdruck: 'Hutzelbrot',
+      hochdeutsch: 'Früchtebrot (mit getrockneten Birnen)',
+      bedeutung: 'Das „Hutzelbrot" ist ein traditionelles fränkisches Weihnachtsgebäck aus „Hutzeln" (getrocknete Birnen), Nüssen, Feigen, Dörrpflaumen und Gewürzen. Es wird in der Adventszeit gebacken und reift einige Tage, bis es sein volles Aroma entwickelt. Besonders in der Fränkischen Schweiz und im Steigerwald eine Spezialität — oft als Geschenk zu Nikolaus oder Weihnachten überreicht.',
+      beispiel: 'Zu Weihnachten gibt\'s a echts fränkischs Hutzelbrot.',
+      beispiel_hd: 'Zu Weihnachten gibt es ein echtes fränkisches Hutzelbrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-159',
+      ausdruck: 'Worschdsuppm',
+      hochdeutsch: 'Wurstsuppe',
+      bedeutung: 'Die „Worschdsuppm" ist eine fränkische Spezialität — die kräftige Brühe, in der Würste gekocht wurden, wird mit Brot, Zwiebeln und manchmal Eiern gegessen. Besonders nach der Hausschlachtung war die Wurstsuppe das erste Mahl, das die Helfer bekamen. Heute eine deftige Vorspeise oder als Abendessen mit kräftigem Bauernbrot serviert. „Worscht" ist die fränkische Form von „Wurst".',
+      beispiel: 'Nach der Schlachtung gibt\'s a heiße Worschdsuppm.',
+      beispiel_hd: 'Nach der Schlachtung gibt es eine heiße Wurstsuppe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-160',
+      ausdruck: 'Zenndla',
+      hochdeutsch: 'Zähnchen / Kleiner Zahn',
+      bedeutung: '„Zenndla" ist die fränkische Verkleinerung von „Zähne" — kleine Zähne oder Milchzähne bei Kindern. „Die ersten Zenndla kommen" sagt man, wenn ein Baby zu zahnen beginnt. Auch übertragen: „Knoblauch-Zenndla" sind Knoblauchzehen. Die fränkische Verkleinerung mit „-la" macht das Wort warmherzig und kindgerecht.',
+      beispiel: 'Unser Kleiner hat scho die ersten Zenndla.',
+      beispiel_hd: 'Unser Kleiner hat schon die ersten Zähnchen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-161',
+      ausdruck: 'Krapfn',
+      hochdeutsch: 'Krapfen / Berliner / Pfannkuchen',
+      bedeutung: 'Der „Krapfn" ist im Fränkischen das traditionelle Faschingsgebäck — ein in Fett ausgebackenes Hefeteig-Gebäck, gefüllt mit Marmelade und mit Puderzucker bestäubt. In Mittelfranken auch „Faschingskrapfen" genannt. Bekannt aus der Faschingstradition: bei den „Krapfen-Bällen" wird tüchtig geschmaust. Anders als die norddeutschen Berliner sind fränkische Krapfen meist runder und etwas süßer.',
+      beispiel: 'In der Faschingszeit gibt\'s Krapfn an jeder Egg.',
+      beispiel_hd: 'In der Faschingszeit gibt es Krapfen an jeder Ecke.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-162',
+      ausdruck: 'Dischbedirn',
+      hochdeutsch: 'Diskutieren / Streiten',
+      bedeutung: '„Dischbedirn" ist die fränkische Verballhornung von „Disputieren" — leidenschaftlich diskutieren oder streiten. Das Wort hat etwas Spöttisches, weil es das gehobene Fremdwort fränkisch zurechtbiegt. „Sie hen wieder dischbedirt!" sagt man über Eheleute, die sich gestritten haben. Die typisch fränkische Konsonantenschwächung (b statt p) macht das Wort gemütlicher als sein hochdeutsches Pendant.',
+      beispiel: 'Die zwa hen scho wieder den ganzen Tag dischbedirt.',
+      beispiel_hd: 'Die zwei haben schon wieder den ganzen Tag diskutiert.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-163',
+      ausdruck: 'Saumäßich',
+      hochdeutsch: 'Sehr / Saumäßig',
+      bedeutung: '„Saumäßich" ist im Fränkischen ein häufiges Verstärkungswort und bedeutet „sehr", „außerordentlich" oder „extrem". „Saumäßich guad" (sehr gut), „saumäßich kalt" (sehr kalt). Die wörtliche Bedeutung „wie eine Sau" ist verblasst, der Ausdruck wird heute völlig wertneutral verwendet. Typisches Beispiel für die fränkische Liebe zu drastischen Steigerungen.',
+      beispiel: 'Heut is saumäßich kalt draußen.',
+      beispiel_hd: 'Heute ist es extrem kalt draußen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-164',
+      ausdruck: 'Naa!',
+      hochdeutsch: 'Nein!',
+      bedeutung: '„Naa" ist die fränkische Form von „Nein" — mit kurzem oder langem „a", je nach Lage. Ein „Naa!" mit Nachdruck ist endgültig. „Naa, naa" (doppelt) drückt Mitleid oder Bedauern aus („Schade!"). Der Ausdruck unterscheidet sich vom bayerischen „Naa" durch eine etwas weichere Aussprache. Charakteristisch für die fränkische Mundart, die viel mit kurzen Vokalen und harten Konsonanten arbeitet.',
+      beispiel: 'Magst no a Bier? — Naa, ich muss heim.',
+      beispiel_hd: 'Magst du noch ein Bier? — Nein, ich muss heim.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-165',
+      ausdruck: 'Gschmäggle',
+      hochdeutsch: 'Geschmäckle / Üblicher Beigeschmack',
+      bedeutung: 'Ein „Gschmäggle" hat etwas, wenn es einen unangenehmen Beigeschmack hat — entweder buchstäblich (Essen, das nicht ganz frisch ist) oder übertragen (eine zweifelhafte Sache mit moralisch fragwürdigem Hintergrund). „Die Sach hat a Gschmäggle" bedeutet: das ist verdächtig. Eine wunderbare Wortprägung, die im Fränkischen wie im Schwäbischen gleichermaßen gebraucht wird.',
+      beispiel: 'Die Geschichte mit dem Vertrag hat a Gschmäggle.',
+      beispiel_hd: 'Die Geschichte mit dem Vertrag hat einen üblen Beigeschmack.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-166',
+      ausdruck: 'Houch',
+      hochdeutsch: 'Hoch',
+      bedeutung: '„Houch" ist die fränkische Aussprache von „hoch" — mit dem charakteristischen Diphthong „ou", der den Klang weicher und volltönender macht. Das Phänomen heißt „fränkische Diphthongierung". „Houch obm" (hoch oben), „houch fliegen". Diese Aussprache ist im ostfränkischen Raum (Bamberg, Bayreuth, Coburg) besonders ausgeprägt und unterscheidet das Fränkische deutlich vom Bayerischen.',
+      beispiel: 'Der Vogl fliegt ganz houch am Himml.',
+      beispiel_hd: 'Der Vogel fliegt ganz hoch am Himmel.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-167',
+      ausdruck: 'Kärwa',
+      hochdeutsch: 'Kirchweih / Dorffest',
+      bedeutung: 'Die „Kärwa" (oder „Kärwe") ist das große Dorffest in Franken — die Kirchweih. Sie findet in jedem fränkischen Dorf einmal im Jahr statt, mit Festzug, Tanz, Bratwürsten, Bier und dem traditionellen „Kärwa-Baum" (Kirchweihbaum), der von den Burschen aufgestellt wird. Die „Kärwasburschen" sind die jungen Männer, die das Fest organisieren. Höhepunkt: das „Aufstellen vom Bauern" (Strohpuppe).',
+      beispiel: 'Am Sonntag is bei uns Kärwa — alle sind eingeladen!',
+      beispiel_hd: 'Am Sonntag ist bei uns Kirchweih — alle sind eingeladen!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'fr-168',
+      ausdruck: 'Goggerla',
+      hochdeutsch: 'Hahn / Kleiner Hahn',
+      bedeutung: 'Ein „Goggerla" ist im Fränkischen ein junger oder kleiner Hahn — Verkleinerung von „Gockel". Auch übertragen für eitle, stolze Männer verwendet: „der Goggerla" ist einer, der wie ein Hahn herumstolziert. Auf vielen fränkischen Bauernhöfen ist der Goggerla der morgendliche Wecker. Die Verkleinerung „-la" zeigt die typisch fränkische Vorliebe für gemütliche Wortformen.',
+      beispiel: 'Der Goggerla weckt uns jeden Morgen um vier.',
+      beispiel_hd: 'Der Hahn weckt uns jeden Morgen um vier.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-169',
+      ausdruck: 'Soadl',
+      hochdeutsch: 'Schmutzig / Schlampig',
+      bedeutung: '„Soadl" oder „soadlich" bedeutet im Fränkischen „schmutzig", „dreckig" oder übertragen „schlampig", „nachlässig". „Du bist heut soadl angezogen!" ist eine milde Kritik an unordentlicher Kleidung. Auch für moralisch fragwürdige Handlungen: „a soadla Sach" ist eine zweifelhafte Geschichte. Verwandt mit „sudln" (schmieren, schmutzen). Klingt durch das gedehnte „oa" sehr fränkisch.',
+      beispiel: 'Putz dir die Schuh, die sind ganz soadl.',
+      beispiel_hd: 'Putz dir die Schuhe, die sind ganz dreckig.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-170',
+      ausdruck: 'Aff!',
+      hochdeutsch: 'Tor! / Dummkopf!',
+      bedeutung: '„Aff!" ist im Fränkischen ein häufiges, eher mildes Schimpfwort für jemanden, der sich gerade dumm angestellt hat. Eine Steigerung ist „Saggrischer Aff!" oder „Du Aff!". Im Tonfall ist es meistens nicht böse gemeint, sondern eher Ausdruck von Kopfschütteln über jemandes Verhalten. Auch unter Freunden gebräuchlich, ähnlich wie „Du Depp!". Aus dem mittelhochdeutschen „affe" (Affe).',
+      beispiel: 'Du Aff, jetzt hast den Bus verpasst!',
+      beispiel_hd: 'Du Tor, jetzt hast du den Bus verpasst!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'fr-171',
+      ausdruck: 'Hetschä',
+      hochdeutsch: 'Hagebutte',
+      bedeutung: 'Eine „Hetschä" ist im Fränkischen eine Hagebutte — die rote Frucht der Wildrose. Sie wird zu Marmelade, Tee oder Likör verarbeitet. Die scharfen Härchen im Inneren sind das berüchtigte „Juckpulver", mit dem Kinder Streiche spielten. „Hetschäpetschä" ist ein liebevoller Reim, der Kinder zum Lachen bringt. Wortlich vom mittelhochdeutschen „hagedorn" (Hagedorn).',
+      beispiel: 'Im Herbst sammler mir Hetschä für die Marmelad.',
+      beispiel_hd: 'Im Herbst sammeln wir Hagebutten für die Marmelade.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-172',
+      ausdruck: 'Bossla',
+      hochdeutsch: 'Flasche / Kleine Flasche',
+      bedeutung: 'Ein „Bossla" oder „Bossler" ist im Fränkischen eine kleine Flasche, oft eine Schnapsflasche oder Bierflasche. „A Bossla Schnaps" ist die Reisration des fränkischen Bauern. Das Wort kommt vom italienischen „bottiglia" und zeigt den Einfluss des Handels über die Alpen. Die fränkische Verkleinerung verleiht der „Bossla" einen warmen, vertrauten Klang.',
+      beispiel: 'Hol mal a Bossla Bier aus dem Keller.',
+      beispiel_hd: 'Hol mal eine Flasche Bier aus dem Keller.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-173',
+      ausdruck: 'Schäuferla-Sauce',
+      hochdeutsch: 'Dunkle Bratensauce zum Schäuferla',
+      bedeutung: 'Die Schäuferla-Sauce ist das Geheimnis eines echten fränkischen Schäuferla: eine dunkle, kräftige Bratensauce aus Schweineschulter-Knochen, Wurzelgemüse, Zwiebeln, dunklem Bier und Brühe. Stundenlang reduziert, bis sie sirupartig glänzt. Sie wird über die Kruste gegossen — aber Vorsicht: zu viel Sauce ruiniert die berühmte Kruste! Jede fränkische Wirtin hat ihr eigenes Rezept.',
+      beispiel: 'Die Schäuferla-Sauce muss dunkel und kräftig sein.',
+      beispiel_hd: 'Die Schäuferla-Sauce muss dunkel und kräftig sein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-174',
+      ausdruck: 'Buwafüäß',
+      hochdeutsch: 'Jungenfüße / Schweißfüße',
+      bedeutung: '„Buwafüäß" sind im Fränkischen wörtlich „Bubenfüße", übertragen aber meistens „Schweißfüße". Der Ausdruck spielt humorvoll auf die nicht immer rosigen Hygienegewohnheiten von Halbwüchsigen an. „Mach d\'Fenster auf, da riecht\'s nach Buwafüäß!" ist ein klassischer Satz aus dem fränkischen Familienleben. Das gedehnte „üäß" macht das Wort lautmalerisch lebendig.',
+      beispiel: 'Pfui, da stinkt\'s nach Buwafüäß!',
+      beispiel_hd: 'Pfui, da stinkt es nach Schweißfüßen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-175',
+      ausdruck: 'Wuddl',
+      hochdeutsch: 'Karotten / Mohrrübe',
+      bedeutung: '„Wuddl" oder „Wuddla" ist im Fränkischen die Karotte oder Mohrrübe. Vom mittelhochdeutschen „murha" abgeleitet, das auch zur hochdeutschen „Möhre" wurde. In der fränkischen Küche werden Wuddln in vielen Gerichten verwendet: in der Brühe, als Beilage, oder roh geschnipselt im Salat. „Wuddla-Suppm" ist eine traditionelle Karottensuppe mit Ingwer und Sahne.',
+      beispiel: 'Zum Sonntagsbraten gibt\'s glasierte Wuddl.',
+      beispiel_hd: 'Zum Sonntagsbraten gibt es glasierte Karotten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-176',
+      ausdruck: 'Brogger',
+      hochdeutsch: 'Brocken / Großes Stück',
+      bedeutung: 'Ein „Brogger" ist im Fränkischen ein großer Brocken — von Brot, Käse, Stein oder anderem. Auch übertragen: „a saumäßiger Brogger" ist ein großes Problem oder eine schwere Aufgabe. „Da hast a Brogger zum Beißen!" sagt man, wenn jemand vor einer harten Nuss steht. Verwandt mit dem hochdeutschen „Brocken" — fränkisch mit weicherem Konsonanten.',
+      beispiel: 'Gib mir a Brogger Brot zum Mittag.',
+      beispiel_hd: 'Gib mir einen Brocken Brot zum Mittag.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-177',
+      ausdruck: 'Babbm',
+      hochdeutsch: 'Mund / Klappe',
+      bedeutung: 'Die „Babbm" ist im Fränkischen die salopp-derbe Bezeichnung für den Mund. „Halt d\'Babbm!" ist die fränkische Aufforderung „Halt den Mund!". Verwandt mit dem bayerischen „Bappn". Wenn jemand „a große Babbm hat", redet er zu viel oder vorlaut. Im Tonfall meistens grob, aber nicht immer böse gemeint — Familienmitglieder verwenden das Wort untereinander oft scherzhaft.',
+      beispiel: 'Jetzt halt amal d\'Babbm, ich kann nimmer zuhörn!',
+      beispiel_hd: 'Jetzt halt mal die Klappe, ich kann nicht mehr zuhören!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-178',
+      ausdruck: 'Mistgabbel',
+      hochdeutsch: 'Mistgabel / Heugabel',
+      bedeutung: 'Die „Mistgabbel" ist im Fränkischen die Heugabel oder Mistgabel — ein Werkzeug, das auf jedem Bauernhof zu finden ist. Sie wurde früher auch als Symbol für Aufstand verwendet (Bauernkrieg). Sprichwörtlich: „mit der Mistgabbel vertreiben" — jemanden grob aus dem Haus jagen. In der fränkischen Landwirtschaft auch im 21. Jahrhundert noch unverzichtbares Werkzeug.',
+      beispiel: 'Hol die Mistgabbel ausm Stall.',
+      beispiel_hd: 'Hol die Heugabel aus dem Stall.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-179',
+      ausdruck: 'Häs',
+      hochdeutsch: 'Schlecht angezogen',
+      bedeutung: '„Häs" oder „häss" bedeutet im Fränkischen „hässlich", „garstig" — aber auch „schlecht angezogen", „unordentlich". „A häss\'s Gwand" ist ein hässliches Kleid. „Häs aussehen" beschreibt einen ungepflegten Zustand. Das Wort kann scharf oder milde gebraucht werden — vor allem im Familienkreis als Mahnung an die Kleiderwahl der Kinder. Vom mittelhochdeutschen „hass" (hassenswert).',
+      beispiel: 'Zieh dich um — so kannst nicht in d\'Kirche gehn, das is z\'häs!',
+      beispiel_hd: 'Zieh dich um — so kannst du nicht in die Kirche gehen, das ist zu hässlich!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-180',
+      ausdruck: 'Schorschla',
+      hochdeutsch: 'Kleiner Georg / Lieber Georg',
+      bedeutung: 'Das „Schorschla" ist im Fränkischen die Verkleinerung von „Schorsch" (Georg) — ein liebevoller Kosename für jemanden, der so heißt. Aber auch ein Sammelname für „typische Franken" — wie „der Otto" oder „der Hans". „Mei Schorschla" sagt die Frau zum Mann, die Oma zum Enkel. Georg ist seit Jahrhunderten einer der häufigsten Namen in Franken — Schutzpatron vieler Kirchen und Stadtteile.',
+      beispiel: 'Mei Schorschla, jetzt iß dei Würschdla auf!',
+      beispiel_hd: 'Mein lieber Georg, jetzt iss dein Würstchen auf!',
+      kategorie: 'familie'
     }
   ]
 };

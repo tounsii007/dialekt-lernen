@@ -1321,6 +1321,276 @@ export default {
       beispiel: 'Im Café Central hat da Trotzki Schach g\'spielt.',
       beispiel_hd: 'Im Café Central hat Trotzki Schach gespielt.',
       kategorie: 'orte'
+    },
+    {
+      id: 'w-151',
+      ausdruck: 'Wuzzler',
+      hochdeutsch: 'Tischfußball / Kicker',
+      bedeutung: 'Der „Wuzzler" ist im Wienerischen der Tischfußball, auch Kicker genannt. In Wiener Beisln und Studentenkneipen steht oft ein Wuzzler in der Ecke — beliebt zwischen Bier und Schnitzel. Das Wort „wuzln" bedeutet „drehen, rollen" — passend zur Spielbewegung. Profis spielen den Wuzzler als Sport: es gibt sogar österreichische Wuzzler-Meisterschaften. Eine charmante Wiener Spracherfindung.',
+      beispiel: 'Spü ma a Partie Wuzzler im Beisl?',
+      beispiel_hd: 'Spielen wir eine Partie Tischfußball in der Kneipe?',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-152',
+      ausdruck: 'Hawi',
+      hochdeutsch: 'Freund / Kumpel',
+      bedeutung: '„Hawi" ist im Wienerischen die Kurzform von „Hawara" — der Freund, der Kumpel. „Servas Hawi!" ist eine typisch wienerische Begrüßung unter männlichen Freunden. Auch in der Variante „Hawerl". Der Ausdruck kommt aus dem Jiddischen („chawer" = Kamerad) und zeigt den Einfluss der jüdischen Sprache auf das Wienerische — viele Wörter haben ihren Ursprung in der vielsprachigen k.u.k.-Monarchie.',
+      beispiel: 'Servas Hawi, wia geht\'s da?',
+      beispiel_hd: 'Hallo Freund, wie geht es dir?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-153',
+      ausdruck: 'Schmatten',
+      hochdeutsch: 'Quatsch / Unsinn',
+      bedeutung: '„Schmatten" ist wienerisch für Quatsch oder Unsinn — meist abwertend gebraucht. Vom jiddischen „schmate" (Lumpen, Lappen). „Red kan Schmatten!" sagt der Wiener zu jemandem, der Blödsinn redet. Eine derbere Variante von „Quatsch". Auch in der Form „Schmattes" für jüdische Trinkgelder oder kleine Geschenke verwendet — die Bedeutung hat sich gewandelt.',
+      beispiel: 'Wos redst du füran Schmatten?',
+      beispiel_hd: 'Was redest du für einen Unsinn?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-154',
+      ausdruck: 'Bisschen',
+      hochdeutsch: 'Bisschen',
+      bedeutung: '„A Bisscherl" (kleines bisschen) ist im Wienerischen mit zarter Verkleinerungsform — das wienerische „-erl" macht aus jedem Wort etwas Liebes und Sympathisches. „Komm, gib ma a Bisscherl davon!" Die wienerische „-erl"-Form (statt hochdeutsch „-chen") ist ein Markenzeichen des Dialekts: „Heferl, Sackerl, Krügerl, Hunderl, Maderl". Sie verleiht der Sprache einen gemütlichen, einladenden Ton.',
+      beispiel: 'Geh, gib ma no a Bisscherl Schlagobers drauf.',
+      beispiel_hd: 'Geh, gib mir noch ein bisschen Sahne drauf.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-155',
+      ausdruck: 'Hoanzn',
+      hochdeutsch: 'Übel mitspielen / Drangsalieren',
+      bedeutung: '„Hoanzn" ist wienerisch für „drangsalieren", „schikanieren", „auf den Arm nehmen". „Den hams gscheit g\'hoanzt!" (Den haben sie ordentlich gequält). Auch im Sinne von Hänseln und Ärgern verwendet. Der Ausdruck kommt aus der Schulhof-Sprache, hat aber Eingang ins Erwachsenen-Vokabular gefunden — besonders im Sport, wenn der Gegner gnadenlos abgezogen wird.',
+      beispiel: 'Rapid hat die Austria gscheit g\'hoanzt!',
+      beispiel_hd: 'Rapid hat die Austria ordentlich abgezogen!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-156',
+      ausdruck: 'Käfertaler',
+      hochdeutsch: 'Käfertal (Schimpfwort für Wiener Aussenbezirke)',
+      bedeutung: 'Ein „Käfertaler" oder „Aus\'n Hinterhof" ist im Wienerischen oft abwertend für jemanden aus den Wiener Außenbezirken (Floridsdorf, Liesing, Donaustadt). Die Innenstadt-Wiener (1.-9. Bezirk) entwickelten historisch ein leichtes Überlegenheitsgefühl gegenüber den Bewohnern der Vorstädte und Arbeiterbezirke. Heute oft selbstironisch verwendet: „I bin a Käfertaler, na und?". Soziologisch interessant.',
+      beispiel: 'Aus welchem Bezirk bist? — Aus Floridsdorf, a Käfertaler halt.',
+      beispiel_hd: 'Aus welchem Bezirk bist du? — Aus Floridsdorf, eben aus dem Außenbezirk.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-157',
+      ausdruck: 'Tschapperl',
+      hochdeutsch: 'Tölpel / Tollpatsch',
+      bedeutung: 'Ein „Tschapperl" ist im Wienerischen ein sympathischer, aber etwas unbeholfener Mensch — ein liebenswerter Tollpatsch. „Mein Tschapperl!" sagt die Mama liebevoll zum etwas linkischen Kind. Auch übertragen für Erwachsene, die in einer Situation hilflos wirken. Der Ausdruck ist nie wirklich böse — er drückt eher Mitleid und Zuneigung aus. Eine warmherzige Beschreibung.',
+      beispiel: 'Du bist a echts Tschapperl heut, gell?',
+      beispiel_hd: 'Du bist heute ein echter Tollpatsch, oder?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-158',
+      ausdruck: 'Pamperletsch',
+      hochdeutsch: 'Pampig / Frech',
+      bedeutung: '„Pamperletsch" oder „pampig" beschreibt im Wienerischen freches, vorlautes, respektloses Verhalten — meistens bei Kindern oder Jugendlichen. „Sei net so pamperletsch!" Auch ein „Pamperletsch" als Substantiv für eine freche Person. Der Klang des Wortes spiegelt die Bedeutung wider — es klingt selbst „pampig" durch die häufigen Verschluss-Konsonanten. Ein lebendiges wienerisches Wort.',
+      beispiel: 'Der Bursch is heut wieder so pamperletsch!',
+      beispiel_hd: 'Der Junge ist heute wieder so frech!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-159',
+      ausdruck: 'Schaberndak',
+      hochdeutsch: 'Streich / Schabernack',
+      bedeutung: 'Der „Schaberndak" ist im Wienerischen ein Streich, ein Possen oder ein lustiger Streich — verwandt mit „Schabernack". „Mach kane Schaberndaks!" Mit dem charakteristisch wienerischen „d" am Ende klingt das Wort fast tänzerisch. Im Wiener Kabarett und in der Volkskomödie ist der Schaberndak ein wichtiges Element — typisch für die wienerische Liebe zum gepflegten Schmäh.',
+      beispiel: 'Die Kinder haben wieder a Schaberndak gmacht.',
+      beispiel_hd: 'Die Kinder haben wieder einen Streich gemacht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-160',
+      ausdruck: 'Pfropfn',
+      hochdeutsch: 'Stopfen / Korken',
+      bedeutung: 'Der „Pfropfn" ist im Wienerischen der Korken einer Weinflasche oder ein Stopfen. „Mach den Pfropfn aussa!" ist die Aufforderung, den Wein zu öffnen. Übertragen auch für einen verstopften Hals oder dichten Verkehr: „A Pfropfn am Gürtel!" (Stau auf dem Gürtel — der Wiener Ringstraße der Vorstädte). Das wienerische „pf" ist typisch — fast hervorgezischt.',
+      beispiel: 'Wo is der Pfropfnzieher, ich krieg den Wein net auf.',
+      beispiel_hd: 'Wo ist der Korkenzieher, ich bekomme den Wein nicht auf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-161',
+      ausdruck: 'Fetzn',
+      hochdeutsch: 'Lappen / Schweres Buch / Knaller',
+      bedeutung: 'Ein „Fetzn" ist im Wienerischen mehrdeutig: ein Putzlappen, ein dickes Buch („So a Fetzn musst du lesen!"), oder etwas Großartiges („Des is a Fetzn von a Wein!"). Auch eine üble Sache: „a Fetzn Lüge" (eine dicke Lüge). Die Mehrdeutigkeit ist typisch wienerisch — das gleiche Wort kann je nach Kontext sehr Unterschiedliches bedeuten. Der Tonfall entscheidet.',
+      beispiel: 'Der neue Roman von ihm is a echta Fetzn!',
+      beispiel_hd: 'Der neue Roman von ihm ist ein echter Schmöker!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-162',
+      ausdruck: 'Gschnas',
+      hochdeutsch: 'Maskenball / Kostümfest',
+      bedeutung: 'Das „Gschnas" ist im Wienerischen ein Maskenball, besonders im Fasching. Berühmt sind die historischen „Künstlergschnasen" der Wiener Sezession (Anfang 20. Jh.), bei denen sich Klimt, Schiele und ihre Freunde verkleideten und feierten. Auch heute noch beliebt: jeder Fasching hat seine Gschnasen — in der Sofiensälen, der Hofburg, in Tanzschulen. Eine wienerische Festkultur, in der Verkleidung und Schmäh sich treffen.',
+      beispiel: 'Am Faschingsdienstag gibt\'s im Hotel a großes Gschnas.',
+      beispiel_hd: 'Am Faschingsdienstag gibt es im Hotel einen großen Maskenball.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-163',
+      ausdruck: 'Reindling',
+      hochdeutsch: 'Rohrnudeln / Auflauf',
+      bedeutung: 'Der „Reindling" ist ein traditioneller Hefeteig-Auflauf aus Kärnten und Wien — gefüllt mit Rosinen, Zimt, Zucker und manchmal Nüssen. Wird zu Ostern, Weihnachten oder besonderen Anlässen gebacken. In Wien oft als süßes Hauptgericht („Mehlspeisen"-Tradition) serviert. Das Wort kommt von „Rein" (großer Topf) — gebacken im großen Topf. Eine Spezialität der altösterreichischen Küche.',
+      beispiel: 'Zu Ostern gibt\'s an echten Kärntner Reindling.',
+      beispiel_hd: 'Zu Ostern gibt es einen echten Kärntner Reindling.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-164',
+      ausdruck: 'Tachles redn',
+      hochdeutsch: 'Klartext sprechen',
+      bedeutung: '„Tachles redn" bedeutet im Wienerischen „Klartext sprechen", „direkt und ehrlich reden ohne Beschönigung". „Jetzt redn wir Tachles!" — Schluss mit dem Drumherum. Aus dem Jiddischen „tachles" (Zweck, Sinn). Ein Begriff, der die jiddisch-deutsche Sprachvermischung im alten Wien zeigt. Bei Geschäften, bei Beziehungen, bei Politik — wenn es ernst wird, sagt der Wiener „Tachles!".',
+      beispiel: 'So, jetzt redn ma Tachles: Wieviel kost\'s?',
+      beispiel_hd: 'So, jetzt sprechen wir Klartext: Wie viel kostet es?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-165',
+      ausdruck: 'Hadern',
+      hochdeutsch: 'Lumpen / Putzlappen',
+      bedeutung: '„Hadern" ist im Wienerischen ein alter Lumpen oder Putzlappen. „Hadern und Watschn" war eine alte Spielsache für Kinder. Auch das Verb „hadern" (zaudern, zögern) im Hochdeutschen kommt von dieser Wurzel. Im Wienerischen mehr als Substantiv gebräuchlich: „Gib mir an Hadern, ich muss aufwischen!". Das „Hadernsammler" war ein Beruf — ähnlich dem rheinischen Klüngelskerl.',
+      beispiel: 'Hol an feuchten Hadern, hier is wos auf\'n Boden.',
+      beispiel_hd: 'Hol einen feuchten Lappen, hier ist etwas auf dem Boden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-166',
+      ausdruck: 'Gschnaperter',
+      hochdeutsch: 'Geschwätziger Mensch',
+      bedeutung: 'Ein „Gschnaperter" oder „Gschnopperter" ist im Wienerischen ein redseliger Mensch, einer, der nicht aufhört zu plaudern. „A G\'schnopperte" für Frauen. Der Begriff kommt von „schnappern" (schnattern, plappern). Meist gutmütig-spöttisch gebraucht — Wiener wissen, dass viele von ihnen selbst zum Plaudern neigen. Ein Wesensmerkmal des Wieners: Reden ist Leben.',
+      beispiel: 'Die Frieda is a echte G\'schnopperte!',
+      beispiel_hd: 'Die Frieda ist eine echte Plaudertasche!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-167',
+      ausdruck: 'Knoder',
+      hochdeutsch: 'Geld (umgangssprachlich)',
+      bedeutung: '„Knoder" ist im Wienerischen die saloppe Bezeichnung für Geld — „Wieviel Knoder kost\'s?". Auch „Kies", „Marie", „Moos", „Mäuse" sind wienerische Synonyme. Die Sprache der Wiener Gauner und Vorstadt-Boheme war reich an Geld-Synonymen, viele aus dem Jiddischen oder Rotwelsch. Heute eher in der Umgangssprache, mit einem leicht abwertenden Beiklang — vielleicht weil Geld auch im katholischen Wien immer etwas Anrüchiges hatte.',
+      beispiel: 'I hob kan Knoder mehr in der Tasch\'n.',
+      beispiel_hd: 'Ich habe kein Geld mehr in der Tasche.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'w-168',
+      ausdruck: 'Damischer',
+      hochdeutsch: 'Dummer / Verwirrter',
+      bedeutung: 'Ein „Damischer" ist im Wienerischen einer, der „damisch" (dumm, verwirrt, schwindlig) ist. „I bin ganz damisch im Kopf!" sagt man bei Schwindel oder Kopfschmerzen. Als Schimpfwort: „Du Damischer!" (Du Dummkopf). Auch in Verbindung: „a damische Sach" (eine verwirrende Sache). Vom mittelhochdeutschen „tâmesch" (taub, betäubt) abgeleitet — also „wie betäubt".',
+      beispiel: 'I bin ganz damisch von dem ganzen Krach.',
+      beispiel_hd: 'Ich bin ganz benommen von dem ganzen Lärm.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-169',
+      ausdruck: 'Schmankerl',
+      hochdeutsch: 'Leckerbissen / Spezialität',
+      bedeutung: 'Ein „Schmankerl" ist im Wienerischen und Bayerischen ein besonderer Leckerbissen, eine kulinarische Spezialität — oder auch eine besondere Geschichte, eine Anekdote. „Heut hab ich a Schmankerl für di!" Im weiteren Sinne alles Besondere, Außergewöhnliche. Wien hat unzählige Schmankerl: Sacher-Torte, Kaiserschmarrn, Schnitzel, Kaffeehauskultur. Das Wort selbst klingt schon nach etwas Köstlichem.',
+      beispiel: 'Das Apfelstrudel-Rezept von der Oma is a echts Schmankerl.',
+      beispiel_hd: 'Das Apfelstrudel-Rezept von der Oma ist eine echte Spezialität.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-170',
+      ausdruck: 'Hutsch\'n',
+      hochdeutsch: 'Schaukel / Spielplatzwippe',
+      bedeutung: 'Die „Hutsch\'n" ist im Wienerischen die Kinderschaukel — vom Verb „hutsch\'n" (schaukeln). Auf jedem Wiener Spielplatz steht eine Hutsch\'n, und Wiener Kinder lieben sie. Auch übertragen: „auf der Hutsch\'n sein" — schwanken, hin und her gerissen sein. Eine fröhliche, kindliche Erinnerung steckt im Wort: das warme Wiener Familienleben.',
+      beispiel: 'D\'Kinder spielen am liebsten auf der Hutsch\'n.',
+      beispiel_hd: 'Die Kinder spielen am liebsten auf der Schaukel.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-171',
+      ausdruck: 'Schwammerl',
+      hochdeutsch: 'Pilz',
+      bedeutung: 'Die „Schwammerl" sind im Wienerischen die Pilze — egal welche Art. „Schwammerlsuach\'n" (Pilze suchen) ist beliebte Wiener Wochenend-Aktivität in den Wäldern um Wien (Lainzer Tiergarten, Wienerwald). Berühmt sind die Wiener Eierschwammerl (Pfifferlinge) — die im Sommer auf den Märkten verkauft werden. In Wiener Schnitzeln, in Saucen, in Risotto — die Schwammerl gehören zur Wiener Küche.',
+      beispiel: 'Schwammerl-Saison! Komm, mir gehn in Wienerwald!',
+      beispiel_hd: 'Pilz-Saison! Komm, wir gehen in den Wienerwald!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'w-172',
+      ausdruck: 'Zwetschken',
+      hochdeutsch: 'Zwetschgen',
+      bedeutung: '„Zwetschken" ist die wienerische Form von „Zwetschgen" — die blauen Sommerpflaumen. In Wiener Mehlspeisen unverzichtbar: Zwetschkenröster (gedünstete Zwetschgen mit Zimt), Zwetschkenknödel (in Teig gehüllte Zwetschgen), Zwetschkenkuchen. Auch der Zwetschkenschnaps („Zwetschken-Schnaps", „Slibowitz") ist beliebt. Die Marillen-Wachau und die Zwetschken-Steiermark sind östliche Obstparadiese Österreichs.',
+      beispiel: 'Heute gibt\'s Zwetschkenknödl mit Zimt-Bröserln.',
+      beispiel_hd: 'Heute gibt es Zwetschgenknödel mit Zimt-Bröseln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-173',
+      ausdruck: 'Mistkübel',
+      hochdeutsch: 'Mülleimer',
+      bedeutung: 'Der „Mistkübel" ist im Wienerischen der Mülleimer — wörtlich „Mist-Kübel". „Hau das in Mistkübel!" Auch der „Mistplatz" ist die Sondermüll-Sammelstelle. Wien-typisch ist die historische „Mistkübler" — die Müllabfuhr — die mit ihren Wagen durch die Stadt zog. Heute gibt es das berühmte „Wiener System" mit unterschiedlichen Tonnen — aber das Wort „Mistkübel" bleibt.',
+      beispiel: 'Tu das Verpackungspapier in den Mistkübel!',
+      beispiel_hd: 'Tu das Verpackungspapier in den Mülleimer!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-174',
+      ausdruck: 'Bockerl',
+      hochdeutsch: 'Bockshorn / Schneckchen',
+      bedeutung: 'Das „Bockerl" ist im Wienerischen die Frühlingsblüte der Esche oder ein gedrehtes Gebäck (z.B. „Mohnbockerl") — Hörnchen-förmiges Süßgebäck mit Mohn- oder Nussfüllung. „Bockerl" auch für die Locken eines Kindes: „Schau die süßen Bockerl in seine Haare!". Das Wort hat eine süße, gemütliche Aura und passt zur Wiener Konditoreikunst.',
+      beispiel: 'Bei der Konditorei gibt\'s die besten Mohnbockerl.',
+      beispiel_hd: 'Bei der Konditorei gibt es die besten Mohn-Hörnchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-175',
+      ausdruck: 'Bagage',
+      hochdeutsch: 'Gesindel / Pack',
+      bedeutung: 'Die „Bagage" ist im Wienerischen abwertend für eine Gruppe von Leuten — Gesindel, Pack, Pöbel. „Diese Bagage hat das ganze Beisl verwüstet!". Vom französischen „bagage" (Gepäck), das durch das Wiener Militärwesen kam. Auch verwendet für die Familie in scherzhaft-grobem Ton: „Meine ganze Bagage kommt heut zum Essen!". Ein typisch wienerisches Wort mit sozialer Schärfe.',
+      beispiel: 'Wos is denn dort für a Bagage?',
+      beispiel_hd: 'Was ist denn dort für ein Gesindel?',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-176',
+      ausdruck: 'Gschamster Diener!',
+      hochdeutsch: 'Ergebenster Diener! (höfliche Grußformel)',
+      bedeutung: '„Gschamster Diener!" (Gehorsamster Diener) ist eine altwienerische, sehr höfliche Grußformel — heute meist ironisch oder scherzhaft verwendet. Stammt aus der k.u.k.-Zeit, als unterwürfige Höflichkeit gegenüber Höhergestellten Sitte war. Im modernen Wien klingt es nostalgisch-witzig: ein Mann bückt sich vor einer Dame mit „Gschamster Diener, gnädige Frau!" und alle lachen. Ein lebendiges Stück Sprachgeschichte.',
+      beispiel: 'Gschamster Diener, gnä\' Frau, derfan ma Eahna helfen?',
+      beispiel_hd: 'Ergebenster Diener, gnädige Frau, dürfen wir Ihnen helfen?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'w-177',
+      ausdruck: 'Goschn',
+      hochdeutsch: 'Mund / Maul',
+      bedeutung: 'Die „Goschn" ist im Wienerischen das Maul oder der Mund — derb-saloppe Bezeichnung. „Halt die Goschn!" (Halt den Mund!) ist ungehobelt, aber nicht selten zu hören. Auch in Wendungen: „a große Goschn ham" (ein großes Maul haben, vorlaut sein), „auf die Goschn fallen" (Pech haben). Eine spezifisch wienerische Klangfarbe — direkt, ohne Schnörkel, aber auch ohne tiefe Bosheit.',
+      beispiel: 'Halt jetzt amol die Goschn!',
+      beispiel_hd: 'Halt jetzt mal den Mund!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-178',
+      ausdruck: 'Tschocherl',
+      hochdeutsch: 'Kleine, urige Kneipe',
+      bedeutung: 'Das „Tschocherl" ist im Wienerischen eine kleine, urige Beisl-Kneipe — meist in den Außenbezirken, mit Stammkundschaft und ohne Schnickschnack. Bier vom Hahn, einfache Speisen, eine Theke mit drei oder vier Stammgästen. „Tschocherl" hat einen warmen, intimen Klang — hier kennt man sich. Im 21. Jahrhundert verschwinden viele Tschocherln zugunsten von Hipster-Bars, aber die echten Wiener Tschocherln werden geschätzt und besucht.',
+      beispiel: 'Am Eck is no a klans Tschocherl mit echtm Pilsner.',
+      beispiel_hd: 'An der Ecke ist noch eine kleine Kneipe mit echtem Pilsner.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-179',
+      ausdruck: 'Hunds-',
+      hochdeutsch: 'Verstärkungspräfix („hunds-")',
+      bedeutung: '„Hunds-" ist im Wienerischen ein häufiges Verstärkungspräfix vor Adjektiven, um Intensität auszudrücken — analog zum Hund als Sinnbild für etwas Niedriges oder Extremes. „Hunds-kalt" (sehr kalt), „hunds-müd" (sehr müde), „hunds-gemein" (sehr gemein). Die Konstruktion ist sehr wienerisch und gibt der Aussage eine drastische, lebendige Note. Auch „hunds-elend" (sehr elend, krank) ist üblich.',
+      beispiel: 'Heut bin i hunds-müd, i geh schlafen.',
+      beispiel_hd: 'Heute bin ich sehr müde, ich gehe schlafen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-180',
+      ausdruck: 'Bahöl',
+      hochdeutsch: 'Lärm / Aufregung',
+      bedeutung: 'Der „Bahöl" oder „Bahel" ist im Wienerischen ein großer Lärm, ein Aufruhr, ein Trubel — meist negativ gemeint. „Wos ist denn das für a Bahöl?" Auch im Sinne von „Aufregung um nichts": „Mach kan Bahöl!" Vom hebräischen „bohel" (verwirrt) oder „bahala" (Schrecken). Wieder ein Beispiel für die jiddischen Einflüsse im Wienerischen — die multikulturelle Sprachgeschichte Wiens.',
+      beispiel: 'Wos is denn das für a Bahöl auf der Gass\'n?',
+      beispiel_hd: 'Was ist denn das für ein Lärm auf der Straße?',
+      kategorie: 'gefuehle'
     }
   ]
 };

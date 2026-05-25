@@ -1327,6 +1327,276 @@ export default {
       beispiel: 'I de Schwiz wird über alles abgschtimmt.',
       beispiel_hd: 'In der Schweiz wird über alles abgestimmt.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-151',
+      ausdruck: 'Hoi zäme!',
+      hochdeutsch: 'Hallo zusammen!',
+      bedeutung: '„Hoi zäme!" ist die schweizerische Begrüßung für mehrere Personen — „zäme" bedeutet „zusammen". Beim Betreten eines Raumes mit mehreren Leuten verwendet — informell, freundlich, unkompliziert. Die schweizerische Begrüßungskultur kennt viele Abstufungen: „Grüezi" (formell), „Hoi" (unter Freunden), „Sali" (locker). „Hoi zäme" ist die häufigste Form unter Bekannten in einer Gruppensituation.',
+      beispiel: 'Hoi zäme! Wie gaht\'s öich?',
+      beispiel_hd: 'Hallo zusammen! Wie geht es euch?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-152',
+      ausdruck: 'Schaffe',
+      hochdeutsch: 'Arbeiten',
+      bedeutung: '„Schaffe" ist im Schweizerdeutschen das alltägliche Wort für „arbeiten" — das hochdeutsche „arbeiten" wird selten verwendet. „I schaffe i de Bank" (Ich arbeite in der Bank). Das Wort hat einen praktischen, handwerklichen Klang, der zur Schweizer Arbeitsethik passt. „Schaffisch hüt?" ist die typische Frage. Das Substantiv ist „d\'Schaffi" oder „d\'Arbet". Im Alemannischen Raum (auch Schwaben) ähnlich gebräuchlich.',
+      beispiel: 'I muess morn früeh wieder go schaffe.',
+      beispiel_hd: 'Ich muss morgen früh wieder arbeiten gehen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-153',
+      ausdruck: 'Stei',
+      hochdeutsch: 'Stein',
+      bedeutung: '„Stei" ist die schweizerdeutsche Form von „Stein" — durch Wegfall des End-„n". In den Bergen omnipräsent, in Redensarten häufig: „En Stei vom Härz falle" (ein Stein vom Herzen fallen), „chli Steiwiifer" (Wein, der wenig wert ist). Das Steinwerfen („Steistosse") ist eine traditionelle Schweizer Sportart bei Schwingfesten. Steine spielen in der alpinen Kultur eine wichtige Rolle.',
+      beispiel: 'En grosse Stei isch vom Härz gfalle.',
+      beispiel_hd: 'Ein großer Stein ist vom Herzen gefallen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-154',
+      ausdruck: 'Schniposa',
+      hochdeutsch: 'Schnitzel-Pommes-Salat',
+      bedeutung: '„Schniposa" ist das schweizerische Kinder- und Studentenlieblingsessen: Schnitzel, Pommes, Salat — die klassische Restaurant-Beilagen-Kombination. Das Akronym hat sich besonders in den 80ern und 90ern in der Studentensprache eingebürgert. In jedem Restaurant zu bestellen, immer ein Hit bei Kindern. Eine pragmatische Wortschöpfung, die zeigt, wie der Schweizer mit Sprache spielt.',
+      beispiel: 'Für d\'Chind häts Schniposa gä.',
+      beispiel_hd: 'Für die Kinder gab es Schnitzel-Pommes-Salat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-155',
+      ausdruck: 'Glacé',
+      hochdeutsch: 'Eis / Speiseeis',
+      bedeutung: '„Glacé" (vom Französischen) ist im Schweizerdeutschen das Speiseeis — wird in der ganzen Schweiz so genannt, auch in der Deutschschweiz. „Es Glacé go ässe" ist die klassische Sommer-Verabredung. Die Schweizer Glacé-Kultur ist hochentwickelt: Mövenpick (gegründet 1948 in Zürich) ist weltweit bekannt, daneben kleine handwerkliche Gelaterias. Die französische Sprachprägung zeigt den welschen Einfluss.',
+      beispiel: 'Im Summer ässe mir all Tag es Glacé.',
+      beispiel_hd: 'Im Sommer essen wir jeden Tag ein Eis.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-156',
+      ausdruck: 'Es lit Schnee',
+      hochdeutsch: 'Es liegt Schnee',
+      bedeutung: '„Es lit Schnee" ist die schweizerdeutsche Wetterbeschreibung im Winter — „lit" ist die Form von „liegt". In einem Bergland wie der Schweiz spielt der Schnee eine zentrale Rolle: Skifahren, Tourismus, Lawinengefahr, Wasserkraft. „Es het g\'schniit" (es hat geschneit) oder „es schniit" (es schneit) sind tägliche Berichte im Winter. Schnee ist Schweizer Identität.',
+      beispiel: 'Hüt morn lit Schnee uf de Strass.',
+      beispiel_hd: 'Heute Morgen liegt Schnee auf der Straße.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-157',
+      ausdruck: 'Verreckt!',
+      hochdeutsch: 'Verdammt! / Mist!',
+      bedeutung: '„Verreckt!" ist der schweizerdeutsche Fluch der Empörung oder des Ärgers — eine derbere Form als „verdammt!". Auch in Steigerung: „So es verreckts Züg!" (So ein verdammtes Zeug!). Im Tonfall meistens nicht böse, sondern Ausdruck der Frustration. Der Schweizer flucht selten und wenn, dann nicht so derb wie der Deutsche — „verreckt" ist eine relativ harmlose Version.',
+      beispiel: 'Verreckt, jitz hani de Zug verpasst!',
+      beispiel_hd: 'Verdammt, jetzt habe ich den Zug verpasst!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-158',
+      ausdruck: 'Chrüsimüsi',
+      hochdeutsch: 'Durcheinander / Wirrwarr',
+      bedeutung: '„Chrüsimüsi" ist im Schweizerdeutschen ein liebevolles Wort für ein heilloses Durcheinander — wörtlich „Kraut und Mus", also alles zusammengemischt. Auch das Wort hat einen wirren, verspielten Klang. „I min Chopf isch es Chrüsimüsi" — in meinem Kopf herrscht Chaos. Eines der wunderbaren schweizerdeutschen Wörter, das durch Lautmalerei den Inhalt selbst illustriert.',
+      beispiel: 'I dem Büro isch es es richtigs Chrüsimüsi!',
+      beispiel_hd: 'In diesem Büro herrscht ein richtiges Durcheinander!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-159',
+      ausdruck: 'Tütschi',
+      hochdeutsch: 'Eierstoßen (Brauch zu Ostern)',
+      bedeutung: 'Das „Tütschi" oder „Eiertütschen" ist ein schweizerischer Osterbrauch: Bemalte hartgekochte Eier werden gegeneinander geschlagen — wessen Ei zerbricht, hat verloren. Wessen Ei am Ende ganz bleibt, ist der „Tütschi-König". In vielen Familien Tradition am Ostersonntag-Frühstück. Auch in anderen Regionen verbreitet, aber in der Schweiz besonders gepflegt — kommerzielle Tütschi-Wettbewerbe gibt es sogar.',
+      beispiel: 'Am Ostersunntig hämmer mit de Chind Tütschi gmacht.',
+      beispiel_hd: 'Am Ostersonntag haben wir mit den Kindern Eierstoßen gemacht.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-160',
+      ausdruck: 'Schlitten',
+      hochdeutsch: 'Schlitten / Auto (umgangssprachlich)',
+      bedeutung: 'Der „Schlitten" ist im Schweizerdeutschen sowohl das Wintersportgerät als auch umgangssprachlich das Auto („en geile Schlitten" — ein cooles Auto). Schlittenfahren ist ein Schweizer Volkssport — viele Berge haben präparierte Schlittelbahnen. Berühmt ist die „Rodelbahn auf dem Bürgenstock" oder die Big Pintenfritz in Grindelwald. „Schlittele" (schlitteln) ist das Verb dazu.',
+      beispiel: 'Mer gönd uf de Berg go schlittele.',
+      beispiel_hd: 'Wir gehen auf den Berg zum Schlittenfahren.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-161',
+      ausdruck: 'Bünzli',
+      hochdeutsch: 'Spießer / Kleinbürger',
+      bedeutung: 'Ein „Bünzli" ist im Schweizerdeutschen ein typischer Schweizer Spießer — übertrieben ordentlich, sparsam, kleinkariert, fixiert auf Ordnung und Sicherheit. Der Begriff hat eine selbstironische Note: Schweizer wissen, dass viele von ihnen Bünzli-Züge haben. „So es Bünzli-Hus" (so ein Spießer-Haus) mit perfektem Vorgarten und Lebensbäumchen. Ein literarisch viel beschriebener Schweizer Charaktertyp.',
+      beispiel: 'Mi Nachbar isch en richtige Bünzli — alles muess akkurat sii.',
+      beispiel_hd: 'Mein Nachbar ist ein richtiger Spießer — alles muss akkurat sein.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-162',
+      ausdruck: 'Wytertue',
+      hochdeutsch: 'Weitermachen',
+      bedeutung: '„Wytertue" ist die schweizerdeutsche Form von „weitertun" — also weitermachen, fortfahren. „Mir tüend wyter!" oder „Mach wyter!" (Mach weiter). Das Verb „tue" (tun) wird im Schweizerdeutschen viel öfter als im Hochdeutschen verwendet und bildet zahlreiche Komposita. „Wyter" ist die schweizerdeutsche Form von „weiter". Eine alltägliche, oft verwendete Wendung im Berufsleben.',
+      beispiel: 'Jetz tüend mer eifach wyter und luege spöter.',
+      beispiel_hd: 'Jetzt machen wir einfach weiter und schauen später.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-163',
+      ausdruck: 'Beizli',
+      hochdeutsch: 'Kleine Beiz / Kleines Restaurant',
+      bedeutung: 'Das „Beizli" ist die Verkleinerung von „Beiz" — ein kleines, gemütliches Restaurant oder eine Wirtschaft. „Beiz" stammt vom hebräischen „bait" (Haus). Schweizer Beizli sind unprätentiös, mit Holzvertäfelung, Stammtisch und einer Karte mit Klassikern: Cordon Bleu, Älplermagronen, Fondue. Treffpunkt für Stammgäste, oft ein Familienbetrieb über Generationen. Eine zentrale Institution der Schweizer Gastrokultur.',
+      beispiel: 'Mer gönd zum Znacht is Beizli ums Egg.',
+      beispiel_hd: 'Wir gehen zum Abendessen ins kleine Restaurant um die Ecke.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-164',
+      ausdruck: 'Pfnüsel',
+      hochdeutsch: 'Schnupfen',
+      bedeutung: 'Der „Pfnüsel" ist im Schweizerdeutschen der Schnupfen — vom Geräusch „pfnusen" (schniefen) abgeleitet. Eine wunderbar lautmalerische Wortprägung: man hört dem Wort den verstopften Atem an. „I ha en Pfnüsel" ist Standard im Winter. Eine humorvolle Variante: „Pfnüsel-Saison" bezeichnet die Erkältungszeit. Eines der charakteristischsten Wörter des Schweizerdeutschen.',
+      beispiel: 'I bliib hüt deheim — ich han en Pfnüsel.',
+      beispiel_hd: 'Ich bleibe heute zu Hause — ich habe Schnupfen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ch-165',
+      ausdruck: 'Hudigäggeler',
+      hochdeutsch: 'Volkstümliche Musik',
+      bedeutung: '„Hudigäggeler" ist die schweizerdeutsche, oft scherzhaft-abwertende Bezeichnung für volkstümliche Musik (Ländler, Schlager im Trachten-Stil). Der Klang des Wortes selbst karikiert den schunkelnden Rhythmus dieser Musik. Beliebte Hudigäggeler-Interpreten: Oesch\'s die Dritten, Calimeros. Im urbanen Zürich oft belächelt, in den Landregionen ein wichtiger Teil der Musikkultur. Tribute-Konzerte ziehen Tausende an.',
+      beispiel: 'I de Beiz lauft de ganz Abig Hudigäggeler.',
+      beispiel_hd: 'In der Kneipe läuft den ganzen Abend volkstümliche Musik.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-166',
+      ausdruck: 'es gaht',
+      hochdeutsch: 'es geht / es passt',
+      bedeutung: '„Es gaht" ist die schweizerdeutsche Standard-Antwort auf „Wie gaht\'s?" — wörtlich „es geht". Aber nicht enthusiastisch wie „bestens!", sondern zurückhaltend, schweizerisch bescheiden: alles in Ordnung, aber kein Grund zum Schwärmen. Der Schweizer Understatement-Klassiker. Auch als Bestätigung verwendet: „Es gaht!" (Es passt, es geht in Ordnung).',
+      beispiel: 'Wie gaht\'s? — Merci, es gaht.',
+      beispiel_hd: 'Wie geht\'s? — Danke, es geht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-167',
+      ausdruck: 'Värs',
+      hochdeutsch: 'Vers / Strophe (Spruch)',
+      bedeutung: 'Ein „Värs" ist im Schweizerdeutschen ein Spruch, ein Vers oder eine kurze Geschichte — auch eine Episode aus dem Leben. „Erzähl mer en Värs!" (Erzähl mir was!). Beim Sechseläuten in Zürich werden traditionelle „Värs" rezitiert. In der schweizerdeutschen Mundartdichtung (Mani Matter, Endo Anaconda) ist der „Värs" eine zentrale Form. Auch in der Kindersprache: Reime, kleine Verse zum Aufsagen.',
+      beispiel: 'Chasch mer en lustige Värs verzelle?',
+      beispiel_hd: 'Kannst du mir eine lustige Geschichte erzählen?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-168',
+      ausdruck: 'Es Säuli',
+      hochdeutsch: 'Ein Schweinchen / Schmutzfink',
+      bedeutung: '„Es Säuli" ist die schweizerdeutsche Verkleinerung von „Sau" — entweder buchstäblich ein kleines Schwein oder übertragen ein schmutziges Kind („du chliis Säuli, jitz bisch ganz dreckig!"). Auch in der Kindersprache: „Säulispiel" (etwas Schmutzigwerden). Der Ausdruck ist liebevoll-spöttisch, nicht beleidigend. Sehr typisch für die schweizerische Vorliebe für Verkleinerungsformen mit „-li".',
+      beispiel: 'Du chliis Säuli, gang dich go wäsche!',
+      beispiel_hd: 'Du kleines Schweinchen, geh dich waschen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-169',
+      ausdruck: 'Üse Bundi',
+      hochdeutsch: 'Unser Bundesrat',
+      bedeutung: '„Üse Bundi" ist die liebevolle, fast familiäre Bezeichnung für „unseren Bundesrat" — die siebenköpfige Schweizer Regierung. Die Schweiz hat statt eines Präsidenten ein Kollektiv von sieben gleichrangigen Bundesräten, die im Jahresturnus den Vorsitz wechseln (Bundespräsident). Diese kollektive Führung ist Teil der schweizerischen Konsens-Demokratie. Schweizer sprechen oft mit Wohlwollen-Spott über „üse Bundi".',
+      beispiel: 'Üse Bundi het hüt wieder es Communiqué uusegä.',
+      beispiel_hd: 'Unser Bundesrat hat heute wieder ein Communiqué herausgegeben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-170',
+      ausdruck: 'Chrampfe',
+      hochdeutsch: 'Hart arbeiten / Schuften',
+      bedeutung: '„Chrampfe" ist im Schweizerdeutschen die harte, schweißtreibende Arbeit — schuften, malochen. „Mer händ de ganz Tag gchrampfet!". Verwandt mit dem hochdeutschen „Krampf" (Anstrengung, Mühe). Es bezeichnet körperlich anstrengende Arbeit auf dem Bau, in der Landwirtschaft oder im Handwerk. Die Schweizer Berufsethik schätzt das „Chrampfe" — wer chrampft, ist ein anständiger Mensch.',
+      beispiel: 'Hüt händ mir uf dem Bauplatz wirklich gchrampfet.',
+      beispiel_hd: 'Heute haben wir auf der Baustelle wirklich geschuftet.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-171',
+      ausdruck: 'Glungne',
+      hochdeutsch: 'Gelungen / Witziger Kerl',
+      bedeutung: '„Glungne" oder „de glungne Cheib" ist im Schweizerdeutschen ein witziger, origineller, sympathischer Mensch — wörtlich „der Gelungene". Oft positiv-anerkennend gebraucht: „En glungne Typ!" (Ein cooler Typ!). Auch ironisch möglich. Der Ausdruck zeigt die schweizerische Wertschätzung für Originalität und Humor mit Substanz, nicht für Klamauk. Eine sehr charakteristische schweizerdeutsche Wendung.',
+      beispiel: 'Dä Hans isch wirklich en glungne!',
+      beispiel_hd: 'Der Hans ist wirklich ein witziger Kerl!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-172',
+      ausdruck: 'Bsetzistei',
+      hochdeutsch: 'Kopfsteinpflaster',
+      bedeutung: '„Bsetzistei" ist im Schweizerdeutschen das Kopfsteinpflaster — die Pflastersteine in alten Stadtkernen. „Bsetzt" bedeutet „mit Steinen besetzt". In Zürichs Altstadt, in Bern, in Luzern und vielen anderen Schweizer Städten ist der Bsetzistei Teil des historischen Stadtbildes. Schwer zu gehen mit High Heels, aber unbestreitbar charmant. Wird in vielen Schweizer Volksliedern besungen — Symbol der alten Stadt.',
+      beispiel: 'De Bsetzistei i de Altstadt isch wunderschön.',
+      beispiel_hd: 'Das Kopfsteinpflaster in der Altstadt ist wunderschön.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-173',
+      ausdruck: 'Käseraffler',
+      hochdeutsch: 'Käsereibe',
+      bedeutung: 'Die „Käseraffler" ist die schweizerdeutsche Käsereibe — ein zentrales Küchenwerkzeug in einem Land, das jährlich pro Kopf 21 kg Käse isst. Vom Sbrinz über Greyerzer bis zum Vacherin: vieles wird gerafft (gerieben). Spezialgerät: der „Girolle" für Tête de Moine, mit dem dünne Käserosen gehobelt werden. Ohne Käseraffler keine Älplermagronen, keine Spätzli, keine Gratins. Eine alltägliche Selbstverständlichkeit.',
+      beispiel: 'Hol mer chli d\'Käseraffler us em Chuchischrank.',
+      beispiel_hd: 'Hol mir mal die Käsereibe aus dem Küchenschrank.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-174',
+      ausdruck: 'Mutz',
+      hochdeutsch: 'Bär (besonders Berner Wappentier)',
+      bedeutung: 'Der „Mutz" ist im Berner Dialekt der Bär — das Wappentier der Stadt Bern und des Kantons. Im Berner Bärenpark leben heute echte Bären (zwei Familien) als Botschafter ihrer Wappen-Symbolik. „Mutz" wird auch als Kosename verwendet — „mi Mutzli" (mein Kleiner). Bern ist die Stadt der Mutzen: Wappen, Pralinen, Briefe — alles bärisch.',
+      beispiel: 'I Bärn lebed Mutze i mitte vo de Stadt.',
+      beispiel_hd: 'In Bern leben Bären mitten in der Stadt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-175',
+      ausdruck: 'Schmöggelig',
+      hochdeutsch: 'Wohlriechend / Lecker duftend',
+      bedeutung: '„Schmöggelig" oder „smöckelt guet" beschreibt im Schweizerdeutschen einen angenehmen, appetitanregenden Geruch — meistens vom Essen. „Es smöckt schmöggelig nach frischem Brot!". Das Wort kommt von „schmöcke" (riechen, schmecken — beides im Schweizerdeutschen). Ein anschauliches, sinnliches Wort, das Vorfreude auf Köstliches weckt. Auch beim Garten: „D\'Rose schmöggelt herrlich!".',
+      beispiel: 'I de Chuchi schmöggelt es nach frische Brötli.',
+      beispiel_hd: 'In der Küche duftet es nach frischen Brötchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-176',
+      ausdruck: 'Hösle',
+      hochdeutsch: 'Hosen / Beinkleider',
+      bedeutung: '„Hösle" ist die schweizerdeutsche Verkleinerungsform von „Hosen" — Hose, Höschen. Eltern verwenden das Wort gerne in der Kindersprache: „Zieh dini Hösle aa!". Auch im Erwachsenenleben gebraucht — „neui Hösle" sind die neuen Hosen. Die typisch schweizerdeutsche Verkleinerung mit „-le" oder „-li" macht aus jedem Kleidungsstück etwas Vertrautes und Liebevolles.',
+      beispiel: 'Wo sind mini neue Hösle?',
+      beispiel_hd: 'Wo sind meine neuen Hosen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-177',
+      ausdruck: 'Räbeliechtli',
+      hochdeutsch: 'Rübenlaterne (Brauch zu Allerheiligen)',
+      bedeutung: 'Das „Räbeliechtli" ist eine schweizerische Tradition: aus Räben (Speiserüben) werden Laternen geschnitzt — ähnlich wie Halloween-Kürbisse, aber älter und schweizerischer Provenienz. Im November ziehen Kinder mit ihren Räbeliechtli in Umzügen durch die Dörfer und Städte und singen Räbeliechtli-Lieder. Eine bezaubernde Herbsttradition, besonders im Zürcher Raum und Mittelland gepflegt.',
+      beispiel: 'D\'Chind händ scho ihri Räbeliechtli gschnitzt.',
+      beispiel_hd: 'Die Kinder haben schon ihre Rübenlaternen geschnitzt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-178',
+      ausdruck: 'Bachab',
+      hochdeutsch: 'Den Bach hinunter / Verloren',
+      bedeutung: '„Bachab gah" bedeutet im Schweizerdeutschen „den Bach hinunter gehen" — also scheitern, verloren gehen, kaputtgehen. „D\'Firma isch bachab" — die Firma ist pleite. Wörtlich: was im Bach (Bach) abwärts (ab) treibt, kommt nicht zurück. Ein bildhaftes Sprichwort aus der bergigen Schweiz, wo Bäche reichlich vorhanden sind. Pessimistische, aber realistische Lebensweisheit.',
+      beispiel: 'D\'ganz Investition isch bachab gange.',
+      beispiel_hd: 'Die ganze Investition ist den Bach hinunter gegangen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-179',
+      ausdruck: 'Sackgäld',
+      hochdeutsch: 'Taschengeld',
+      bedeutung: 'Das „Sackgäld" ist im Schweizerdeutschen das Taschengeld — wörtlich „Sack-Geld", weil es in die (Hosen-)Sack-Tasche kommt. Schweizer Kinder bekommen oft schon früh ein wöchentliches Sackgäld, um den Umgang mit Geld zu lernen — die berühmte schweizerische Finanzdisziplin beginnt im Kinderzimmer. Auch unter Erwachsenen: „mis Sackgäld" für Bargeld, das im Geldbeutel steckt.',
+      beispiel: 'Mini Tochter chriegt jede Wuche es Sackgäld.',
+      beispiel_hd: 'Meine Tochter bekommt jede Woche ein Taschengeld.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ch-180',
+      ausdruck: 'Heimwee',
+      hochdeutsch: 'Heimweh',
+      bedeutung: '„Heimwee" wurde 1688 vom Schweizer Arzt Johannes Hofer als medizinischer Begriff geprägt — für die schwermütige Sehnsucht der Schweizer Söldner nach ihren Bergen. Das Wort ist also eine Schweizer Wortschöpfung, die in viele Sprachen gewandert ist (engl. „homesickness", franz. „mal du pays"). Bis ins 19. Jahrhundert galt Heimwee als ernste Krankheit, an der Soldaten sterben konnten. Heute Schweizer Kulturgut.',
+      beispiel: 'Wenn i lang im Uusland bi, han i scho mol Heimwee.',
+      beispiel_hd: 'Wenn ich lange im Ausland bin, habe ich schon manchmal Heimweh.',
+      kategorie: 'gefuehle'
     }
   ]
 };

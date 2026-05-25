@@ -1355,6 +1355,276 @@ export default {
       beispiel: 'Glück Auf für Immer — die Zechen sind weg, der Gruß bleibt für ewig.',
       beispiel_hd: 'Glück Auf für Immer — die Zechen sind weg, der Gruß bleibt für ewig.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-151',
+      ausdruck: 'Wat soll dat denn?',
+      hochdeutsch: 'Was soll das denn?',
+      bedeutung: '„Wat soll dat denn?" ist die klassische Ruhrpott-Frage bei Unverständnis oder Empörung. Das „was" wird zu „wat", das „das" zu „dat" — typische Ruhrgebiets-Konsonantenschwächung. Der Satz kann von echter Verwirrung bis zu wütender Anklage reichen — Tonfall und Gesichtsausdruck entscheiden. Im Ruhrpott trägt man Herz auf der Zunge: wenn was nicht passt, sagt man das auch.',
+      beispiel: 'Wat soll dat denn — du hast mir die Pommes geklaut!',
+      beispiel_hd: 'Was soll das denn — du hast mir die Pommes geklaut!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-152',
+      ausdruck: 'Hömma!',
+      hochdeutsch: 'Hör mal! / Hey du!',
+      bedeutung: '„Hömma!" ist die Ruhrpott-Aufforderung zum Hinhören — eine Kontraktion aus „Hör mal!". Sie wird benutzt, um die Aufmerksamkeit zu bekommen oder eine Geschichte anzukündigen. „Hömma, ich erzähl dir wat!" leitet eine Story ein. Ohne „Hömma" funktioniert kein Pottgespräch. Der Tonfall variiert zwischen freundlich-vertraut und drohend-mahnend — alles in einem Wort.',
+      beispiel: 'Hömma, hass\'e die neue Currywurst-Bude gesehen?',
+      beispiel_hd: 'Hör mal, hast du die neue Currywurst-Bude gesehen?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-153',
+      ausdruck: 'Boah ey!',
+      hochdeutsch: 'Wow! / Krass!',
+      bedeutung: '„Boah ey!" ist der typische Ruhrpott-Ausruf des Erstaunens, der Empörung oder der Überraschung. Eine Erweiterung von „Boah!", das durch das angehängte „ey" verstärkt wird. „Boah ey, dat is geil!" ist Begeisterung, „Boah ey, dat geht doch nich!" ist Empörung. Die Kombination klingt ganz nach den 80er Jahren Ruhrpott, als Manta-Witze und Pottslang ihre Hochzeit hatten.',
+      beispiel: 'Boah ey, dat war ein geiles Spiel von Schalke!',
+      beispiel_hd: 'Wow, das war ein geiles Spiel von Schalke!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-154',
+      ausdruck: 'Pommes Schranke',
+      hochdeutsch: 'Pommes mit Mayo und Ketchup',
+      bedeutung: '„Pommes Schranke" ist im Ruhrpott der Klassiker der Frittenbude: Pommes mit Mayonnaise UND Ketchup — gestreift wie eine Bahnschranke (daher der Name). „Pommes rot-weiß" ist die andere Bezeichnung. Bestellungen sind ritualisiert: „Eine Pommes Schranke und eine Currywurst, bidde!". Der Frittenbuden-Besuch nach der Schule, nach der Schicht oder nach dem Stadionbesuch gehört zum Pottleben wie das Steigerlied zum Bergmann.',
+      beispiel: 'Eine Pommes Schranke und eine Cola, bidde!',
+      beispiel_hd: 'Eine Portion Pommes mit Mayo und Ketchup und eine Cola, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-155',
+      ausdruck: 'Pillemann',
+      hochdeutsch: 'Penis (umgangssprachlich)',
+      bedeutung: 'Der „Pillemann" ist im Ruhrpott die umgangssprachliche, eher kindliche Bezeichnung für den Penis. Eltern erklären kleinen Kindern: „Das ist dein Pillemann!". Auch in der Pottkomik (Herbert Knebel, Tana Schanzara) immer wieder zu hören. Der Ausdruck ist mild und harmlos — nicht vulgär. Verwandt mit den niederdeutschen Wortprägungen, die im Ruhrgebiet aufgehen.',
+      beispiel: 'Der Kleine hat seinen Pillemann entdeckt.',
+      beispiel_hd: 'Der Kleine hat seinen Penis entdeckt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-156',
+      ausdruck: 'Klüngelskerl',
+      hochdeutsch: 'Lumpensammler / Altmetallhändler',
+      bedeutung: 'Der „Klüngelskerl" war im Ruhrpott und Rheinland der Mann, der mit Pferd und Wagen durch die Straßen fuhr und Lumpen, Altmetall, Knochen und alte Sachen einsammelte — die Vorform des heutigen Schrotthandels. „Klüngels" sind alte Stoffe. Der Ruf „Lumpen, Knochen, Altpapier!" hallte durch die Pottstraßen. Heute fast verschwunden, aber das Wort „Klüngelskerl" lebt als Erinnerung weiter — auch für moderne Schrotthändler verwendet.',
+      beispiel: 'Früher kam jede Woche der Klüngelskerl bei uns vorbei.',
+      beispiel_hd: 'Früher kam jede Woche der Lumpensammler bei uns vorbei.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-157',
+      ausdruck: 'Mutterns',
+      hochdeutsch: 'Mutters / Bei Mutter',
+      bedeutung: '„Mutterns" ist im Ruhrpott die genitive Form von „Mutter" — „bei Mutterns" bedeutet „bei den Eltern". Auch „Vaterns" für „bei Vater". Die Form ist typisch für die kommunikative Pott-Sprache, die viele Vereinfachungen und Verschmelzungen kennt. „Wir gehen morgen zu Mutterns essen" ist eine typische Familien-Verabredung. Der Ausdruck ist warm und vertraut.',
+      beispiel: 'Am Sonntag gehen wir zu Mutterns Mittag essen.',
+      beispiel_hd: 'Am Sonntag gehen wir zu Mutter Mittag essen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-158',
+      ausdruck: 'Pommes Spezial',
+      hochdeutsch: 'Pommes mit Mayo, Ketchup und Zwiebeln',
+      bedeutung: '„Pommes Spezial" ist die Steigerung der „Pommes Schranke" — mit zusätzlich rohen Zwiebelwürfeln obendrauf. Manche Buden machen noch Curry-Soße dazu. Diese Variante ist im Pott Standard und wird ohne weiteres Erklären verstanden. Die Frittenbuden-Kultur des Ruhrgebiets ist ein wichtiger Teil der lokalen Identität: einfaches, ehrliches Essen, das satt macht und schmeckt.',
+      beispiel: 'Pommes Spezial, dafür liebe ich den Pott!',
+      beispiel_hd: 'Pommes mit Mayo, Ketchup und Zwiebeln, dafür liebe ich den Pott!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-159',
+      ausdruck: 'Halbe',
+      hochdeutsch: 'Halbes Brötchen / Halbe Portion',
+      bedeutung: 'Eine „Halbe" ist im Ruhrpott meistens ein halbes Brötchen mit Aufschnitt — der Klassiker bei der Frühstückspause auf der Maloche oder in der Pause. „Eine Halbe mit Mett und Zwiebeln" oder „Eine Halbe mit Käse" sind typische Bestellungen am Bäcker. Auch ein halbes Bier kann eine „Halbe" sein. Das Wort spart Zeit — und Zeit ist Geld, besonders im arbeitsamen Pott.',
+      beispiel: 'Hol mir mal eine Halbe mit Mett vom Bäcker.',
+      beispiel_hd: 'Hol mir mal ein halbes Brötchen mit Mett vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-160',
+      ausdruck: 'Wattebällchen',
+      hochdeutsch: 'Wattebällchen / Verweichlichter',
+      bedeutung: 'Ein „Wattebällchen" ist im Ruhrpott jemand, der zu zart, zu weichlich oder überempfindlich ist — keiner mit „Pott-Mentalität". „Stell dich nich so an, du Wattebällchen!" sagt der Pottmensch zu jemandem, der jammert. Der harte Bergmannsalltag hat eine bestimmte Vorstellung von „Hart sein" geschaffen: ein echter Pottmensch beißt die Zähne zusammen und macht weiter. Das Wattebällchen tut das nicht.',
+      beispiel: 'Stell dich nich so an, du Wattebällchen — ist doch nur a Kratzer!',
+      beispiel_hd: 'Stell dich nicht so an, du Weichei — ist doch nur ein Kratzer!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-161',
+      ausdruck: 'Stulle',
+      hochdeutsch: 'Belegtes Brot / Schnitte',
+      bedeutung: 'Eine „Stulle" ist im Ruhrpott eine belegte Brotscheibe — mit Wurst, Käse, Schmalz oder Marmelade. Das Wort kommt aus dem Niederdeutschen und ist im ganzen Norden verbreitet. Die „Maloche-Stulle" war das, was der Bergmann mit zur Schicht in die Grube nahm: dick belegt, sättigend, in der Frühstückspause mit der Brotzeitdose ausgepackt. Heute ist die Stulle ein nostalgisches Symbol der Pottkultur.',
+      beispiel: 'Pack dir eine Stulle für die Pause ein.',
+      beispiel_hd: 'Pack dir eine Brotzeit für die Pause ein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-162',
+      ausdruck: 'Pömpel',
+      hochdeutsch: 'Saugnapf / Klobürste-Hilfe',
+      bedeutung: 'Der „Pömpel" ist im Ruhrpott der Saugnapf, mit dem man verstopfte Abflüsse oder Klos wieder freibekommt. Auch metaphorisch: jemand, der „pömpelt", drückt sich durch, ohne viel Gehirn einzusetzen. „Klo-Pömpel" ist das volle Wort. Im Pott ist der Pömpel ein selbstverständliches Haushaltsutensil, das ungeschmückt seinen Zweck erfüllt — wie alles im Pott.',
+      beispiel: 'Hol mal den Pömpel, dat Klo is wieder verstopft!',
+      beispiel_hd: 'Hol mal den Saugnapf, das Klo ist wieder verstopft!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-163',
+      ausdruck: 'Pöter',
+      hochdeutsch: 'Po / Gesäß',
+      bedeutung: 'Der „Pöter" ist im Ruhrpott und im Rheinland der Po oder das Gesäß — eine harmlose, oft scherzhafte Bezeichnung. „Hau ab auf deinen Pöter!" (Setz dich!). Vom niederdeutschen „Pötjer" abgeleitet. Eltern verwenden das Wort gerne in der Kindersprache: „Wisch dir den Pöter ab!". Der Klang ist gemütlich-bodenständig — sehr Pott.',
+      beispiel: 'Setz dich endlich auf deinen Pöter!',
+      beispiel_hd: 'Setz dich endlich auf deinen Po!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-164',
+      ausdruck: 'Wat geht ab?',
+      hochdeutsch: 'Wie geht\'s? / Was ist los?',
+      bedeutung: '„Wat geht ab?" ist die jugendliche Pott-Begrüßung — eine Frage nach dem aktuellen Stand der Dinge. Sie ersetzt heute oft das traditionelle „Glück auf" oder „Tach". „Wat geht ab im Pott?" oder verkürzt „Wat geht?" — Antwort meistens: „Nix, alles ruhig" oder „Geht so". Eine lockere, unaufgeregte Form der Kommunikation, die typisch ist für die unkomplizierte Pottmentalität.',
+      beispiel: 'Tach Alter! Wat geht ab?',
+      beispiel_hd: 'Hey Alter! Was ist los?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ru-165',
+      ausdruck: 'Anne Bude',
+      hochdeutsch: 'An der Bude / An der Trinkhalle',
+      bedeutung: '„Anne Bude" steht im Ruhrpott für „an der Trinkhalle" — der zentrale soziale Treffpunkt vieler Pottviertel. Die Trinkhalle (auch „Büdchen" genannt) ist nicht nur Verkaufsstelle für Bier, Süßigkeiten und Zeitungen, sondern auch Treffpunkt für Plaudereien. „Mir treffen uns anne Bude" ist die klassische Pott-Verabredung. Die Verschmelzung von „an der" zu „anne" ist typisch Pott.',
+      beispiel: 'Wir treffen uns um sieben anne Bude.',
+      beispiel_hd: 'Wir treffen uns um sieben an der Trinkhalle.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-166',
+      ausdruck: 'Bömmel',
+      hochdeutsch: 'Pferdeschwanz (Frisur) / Bommel',
+      bedeutung: 'Ein „Bömmel" ist im Ruhrpott ein Haarbüschel oder Pferdeschwanz — auch der Bommel an einer Mütze. „Mach dir mal n Bömmel" sagt die Mutter zur Tochter mit offenen Haaren. Im weiteren Sinne auch alle möglichen kleinen Anhängsel, Quasten, Verzierungen. Das Wort ist warm und alltagstauglich, kommt aus dem niederdeutschen „bommel" für eine kleine Kugel.',
+      beispiel: 'Bind dir n Bömmel, damit dir die Haare nich ins Gesicht falln.',
+      beispiel_hd: 'Bind dir einen Pferdeschwanz, damit dir die Haare nicht ins Gesicht fallen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-167',
+      ausdruck: 'Datt is mir wurscht',
+      hochdeutsch: 'Das ist mir egal',
+      bedeutung: '„Datt is mir wurscht" oder „Wurschtegal" ist die Pott-Form von „Das ist mir egal". Wurst wird hier zum Symbol für Gleichgültigkeit — vielleicht weil Wurst etwas Beliebiges, Austauschbares ist? Die Wendung kommt im ganzen deutschsprachigen Raum vor, aber im Ruhrpott klingt sie durch die typische Aussprache „datt" und „wurscht" besonders bodenständig.',
+      beispiel: 'Was ich heut Abend mache? Datt is mir wurscht.',
+      beispiel_hd: 'Was ich heute Abend mache? Das ist mir egal.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-168',
+      ausdruck: 'Möp',
+      hochdeutsch: 'Mops / Plumper Mensch',
+      bedeutung: 'Ein „Möp" ist im Ruhrpott eine etwas dicke, plumpe Person — oft liebevoll-spöttisch gemeint, nicht böse. Auch für Tiere (besonders kleine Hunde wie Möpse). „Komm her, mein Möpchen" sagt die Oma zum etwas pummeligen Enkel. Der Ausdruck ist mild und gehört zur Pott-Sprache mit ihrer Vorliebe für direkte, aber nicht herzlose Bezeichnungen. Pott-Humor erlaubt sich solche Freiheiten unter Vertrauten.',
+      beispiel: 'Mein kleiner Möp, was hast du wieder angestellt?',
+      beispiel_hd: 'Mein kleiner Mops, was hast du wieder angestellt?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-169',
+      ausdruck: 'Bottroper Jungs',
+      hochdeutsch: 'Jungs aus Bottrop',
+      bedeutung: '„Bottroper Jungs" — Bottrop war die letzte Steinkohlenstadt Deutschlands, hier schloss 2018 mit Prosper-Haniel die allerletzte Zeche. Die „Bottroper Jungs" sind die letzten Bergleute, die ihren Beruf ausgeübt haben. Aber auch übertragen: junge Männer aus Bottrop, die zu ihrer Stadt stehen. Bottrop ist eine eigenständige Pott-Persönlichkeit zwischen Essen, Oberhausen und Gelsenkirchen — kleine Stadt, großes Herz.',
+      beispiel: 'Die Bottroper Jungs sind die letzten Bergleute Deutschlands gewesen.',
+      beispiel_hd: 'Die Bottroper Jungs sind die letzten Bergleute Deutschlands gewesen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-170',
+      ausdruck: 'Knappe',
+      hochdeutsch: 'Bergmann / Junger Bergmann',
+      bedeutung: 'Der „Knappe" war im Bergbau der ausgebildete Bergmann nach mehrjähriger Lehre — ein Stolzbegriff, der mit Können und Ehre verbunden war. Schalke 04 nennt sich „Knappenverein" wegen seiner Bergmannswurzeln (Gründung 1904 in Gelsenkirchen). „Knappe" leitet sich vom mittelhochdeutschen „knappe" (Bursche) ab. Im Pott noch heute ein Ehrentitel — Knappen-Hochzeit, Knappen-Tracht, Knappen-Lied — der Bergmannsgeist lebt weiter.',
+      beispiel: 'Mein Opa war ein stolzer Knappe auf der Zeche Consolidation.',
+      beispiel_hd: 'Mein Opa war ein stolzer Bergmann auf der Zeche Consolidation.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-171',
+      ausdruck: 'Hinnich',
+      hochdeutsch: 'Hinten / Dahinter',
+      bedeutung: '„Hinnich" ist die Pott-Form für „hinten" oder „dahinter" — eine vereinfachte Aussprache des hochdeutschen „hinter". „Hinnich der Tür", „hinnich uns". Auch in Komposita: „hinnich rum" (hinten herum). Die Wortverkürzung ist typisch für die effiziente Pott-Sprache, die wenig auf gehobenen Sprachstil gibt und alles geradeaus sagt — kurz, knackig, verständlich.',
+      beispiel: 'Stell dat Rad hinnich die Garage.',
+      beispiel_hd: 'Stell das Rad hinter die Garage.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-172',
+      ausdruck: 'Mackel',
+      hochdeutsch: 'Makel / Fehler',
+      bedeutung: 'Ein „Mackel" ist im Ruhrpott ein Schönheitsfehler oder eine kleine Schwäche an Sachen oder Menschen. „Dat Auto hat n Mackel an der Tür" — eine Delle. „Jeder Mensch hat seine Mackel" ist Pott-Philosophie: Niemand ist perfekt, und das ist auch gut so. Vom mittelhochdeutschen „mackel" (Fleck, Makel). Die Verkleinerungsform macht den Ausdruck weniger streng als das hochdeutsche „Makel".',
+      beispiel: 'Dat Auto is gut, hat nur n kleinen Mackel anner Tür.',
+      beispiel_hd: 'Das Auto ist gut, hat nur einen kleinen Makel an der Tür.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-173',
+      ausdruck: 'Schrumpelchen',
+      hochdeutsch: 'Kleiner Schrumpel / Liebkosung',
+      bedeutung: 'Ein „Schrumpelchen" ist im Pott eine zärtliche Verkleinerungsform — sowohl für etwas leicht Verschrumpeltes (eine alte Erdbeere, ein Bonbon) als auch als Kosewort: „Mein Schrumpelchen" sagt die Oma liebevoll zum Enkel. Das Wort hat einen warmen, ungewöhnlichen Klang, der die Erfindungsfreude der Pottsprache zeigt. Diminutiv mit Herz.',
+      beispiel: 'Komm her, mein Schrumpelchen, ich gib dir n Bonbon.',
+      beispiel_hd: 'Komm her, mein Kleines, ich gebe dir ein Bonbon.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-174',
+      ausdruck: 'Maloche-Bude',
+      hochdeutsch: 'Arbeitsstätte / Job',
+      bedeutung: 'Die „Maloche-Bude" ist im Ruhrpott der Arbeitsplatz — die Fabrik, das Büro, die Werkstatt. „Auf der Maloche-Bude" bedeutet „auf der Arbeit". Der Ausdruck verbindet zwei urpottige Wörter: „Maloche" (harte Arbeit) und „Bude" (Hütte, Bau). Damit wird der Arbeitsplatz zur eigenen kleinen Welt, die ihre Eigenheiten hat. Mit dem Strukturwandel sind die Bergwerke „Buden" zu Büros geworden — der Begriff bleibt.',
+      beispiel: 'Ich muss morgen früh wieder zur Maloche-Bude.',
+      beispiel_hd: 'Ich muss morgen früh wieder zur Arbeit.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-175',
+      ausdruck: 'Bullenhitze',
+      hochdeutsch: 'Drückende Hitze',
+      bedeutung: 'Eine „Bullenhitze" ist im Pott eine ungewöhnliche, drückende Sommerhitze — schwül, schweißtreibend, kaum aushaltbar. Der Bulle als Bild für etwas Massives, Bedrückendes. „Heut is wieder Bullenhitze!" ist ein häufiger Sommer-Stoßseufzer im Pott. In den ehemaligen Bergwerken war die Hitze noch viel drückender — eine echte Bullenhitze. Heute ist es das Klima, das uns ins Schwitzen bringt.',
+      beispiel: 'Bei der Bullenhitze geh ich nich vor die Tür.',
+      beispiel_hd: 'Bei der drückenden Hitze gehe ich nicht vor die Tür.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-176',
+      ausdruck: 'Pott-Romantik',
+      hochdeutsch: 'Romantik des Ruhrgebiets',
+      bedeutung: '„Pott-Romantik" ist die nostalgische Liebe zur alten Industrie-Welt des Ruhrgebiets: rauchende Schlote, leuchtende Stahlwerke bei Nacht, Halden im Sonnenuntergang, Trinkhallen-Atmosphäre, Schalker-Hymne unter Tausenden. Es ist die Romantik der Arbeit, nicht der Idylle. Künstler wie Grönemeyer („Bochum"), Frank Goosen oder die Comedy von Herbert Knebel haben sie populär gemacht. Eine Romantik aus Staub, Stahl und Solidarität.',
+      beispiel: 'Wenn die Lichter im Stahlwerk angehn, dat is Pott-Romantik.',
+      beispiel_hd: 'Wenn die Lichter im Stahlwerk angehen, das ist Pott-Romantik.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-177',
+      ausdruck: 'Trinker-Tour',
+      hochdeutsch: 'Kneipentour',
+      bedeutung: 'Die „Trinker-Tour" ist im Ruhrpott die Kneipentour — am Wochenende von Eckkneipe zu Eckkneipe ziehen, mit den Kumpels ein Bier nach dem anderen. Klassische Pott-Kneipen sind klein, urig, mit Pils vom Hahn und Bockwurst auf der Theke. Bochumer „Bermuda-Dreieck", Dortmunder Kreuzviertel — überall im Pott gibt\'s Kneipen-Reviere. Die Trinker-Tour ist sozialer als der Begriff vermuten lässt: man trifft Freunde, redet, lacht.',
+      beispiel: 'Samstagabend machen wir wieder ne Trinker-Tour durchs Bermuda-Dreieck.',
+      beispiel_hd: 'Samstagabend machen wir wieder eine Kneipentour durchs Bermuda-Dreieck.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-178',
+      ausdruck: 'Plörre',
+      hochdeutsch: 'Dünner Kaffee / Schlechtes Getränk',
+      bedeutung: '„Plörre" ist im Ruhrpott die abwertende Bezeichnung für dünnen, lasch gebrühten Kaffee — oder auch jedes andere geschmacklose Getränk. „Was ist dat denn für ne Plörre?" ist die typische Frage, wenn jemand schlechten Kaffee serviert bekommt. Der Pott-Kaffee muss kräftig und stark sein, sonst ist es eben „Plörre". Das Wort hat einen lautmalerischen Klang — wie etwas Wässriges, Schales.',
+      beispiel: 'Was haste denn da gekocht — dat is doch Plörre!',
+      beispiel_hd: 'Was hast du denn da gekocht — das ist doch dünner Kaffee!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-179',
+      ausdruck: 'Klamotten',
+      hochdeutsch: 'Kleidung',
+      bedeutung: '„Klamotten" ist im Ruhrpott (und weit darüber hinaus) das umgangssprachliche Wort für „Kleidung". „Zieh dir andere Klamotten an!" oder „Ich brauch neue Klamotten". Im Pott klingt der Ausdruck besonders bodenständig und unprätentiös — kein Mensch im Pott sagt „Garderobe" oder „Bekleidung". Klamotten sind funktional: zum Anziehen, zum Schwitzen, zum Maloche-Verrichten. Stil ist Nebensache, Hauptsache praktisch.',
+      beispiel: 'Wo haste denn diese geilen Klamotten her?',
+      beispiel_hd: 'Wo hast du denn diese geile Kleidung her?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-180',
+      ausdruck: 'Pott-Sommer',
+      hochdeutsch: 'Sommer im Ruhrgebiet',
+      bedeutung: 'Der „Pott-Sommer" hat seinen eigenen Charakter: Stadtfeste, Open-Air-Konzerte, Schwebebahn-Fahrten, Halden besteigen, Phoenix-See, „Bochum total", „Ruhrtriennale". Das Ruhrgebiet hat sich vom Industrie-Wüstenland zum grünen, kulturreichen Sommer-Paradies gewandelt. Über 50% Grünfläche, hunderte Open-Airs, Festivals — der Pott-Sommer ist heute lebendiger als je zuvor. Der Strukturwandel als Sommererlebnis.',
+      beispiel: 'Der Pott-Sommer ist voll von Festivals und Stadtfesten.',
+      beispiel_hd: 'Der Sommer im Ruhrgebiet ist voll von Festivals und Stadtfesten.',
+      kategorie: 'feiern'
     }
   ]
 };

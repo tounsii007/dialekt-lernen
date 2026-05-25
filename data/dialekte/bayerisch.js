@@ -1595,6 +1595,276 @@ export default {
       beispiel: 'Zum Kaffee gibt\'s a Stück Zwetschgendatschi mit Schlagrahm.',
       beispiel_hd: 'Zum Kaffee gibt es ein Stück Pflaumenkuchen mit Schlagsahne.',
       kategorie: 'essen'
+    },
+    {
+      id: 'by-181',
+      ausdruck: 'Pfundsg\'fui',
+      hochdeutsch: 'Großartiges Gefühl / Pfundsgefühl',
+      bedeutung: '„Pfundsg\'fui" ist im Bayerischen ein großartiges, herrliches Gefühl — wenn alles passt und man richtig zufrieden ist. „Heut hob i a Pfundsg\'fui!" Der Ausdruck verbindet „Pfund" (alte Mengeneinheit) als Verstärkung mit „Gefühl". Bayern haben ein gutes Gespür für ihre Stimmungen und beschreiben sie gerne plastisch. „Pfunds-" als Präfix gibt es auch in „Pfundskerl" (großartiger Mensch).',
+      beispiel: 'Nach am guadn Essn und am Bier hob i a Pfundsg\'fui!',
+      beispiel_hd: 'Nach einem guten Essen und einem Bier habe ich ein großartiges Gefühl!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-182',
+      ausdruck: 'Heier',
+      hochdeutsch: 'Heuer / Dieses Jahr',
+      bedeutung: '„Heier" oder „heuer" ist im Bayerischen die Bezeichnung für „dieses Jahr". „Heier hammer a guade Ernt" (Dieses Jahr haben wir eine gute Ernte). Vom althochdeutschen „hiu jaru" (in diesem Jahr) abgeleitet. Im Hochdeutschen weitgehend verschwunden, im Bayerischen, Österreichischen und Schweizerdeutschen aber noch fester Bestandteil. Zeigt die altertümlich-konservative Sprachschicht des Bayerischen.',
+      beispiel: 'Heier san d\'Äpfe besonders süaß.',
+      beispiel_hd: 'Dieses Jahr sind die Äpfel besonders süß.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-183',
+      ausdruck: 'Bähnhof',
+      hochdeutsch: 'Bahnhof',
+      bedeutung: 'Der „Bähnhof" ist die bayerische Aussprache von „Bahnhof" — mit der typischen Diphthongierung des „a" zu „äh". Auch „Hauptbähnhof" für den Hauptbahnhof. „I versteh nur Bähnhof" ist die bayerische Variante der Redewendung „ich verstehe nur Bahnhof" (gar nichts verstehen). In München ist der Hauptbahnhof zentrales Knotenpunkt. Auch „Bähnhofsvorplatz" wird häufig gebraucht. Klassische bayerische Aussprache.',
+      beispiel: 'Mir treffn uns am Bähnhof um drei.',
+      beispiel_hd: 'Wir treffen uns am Bahnhof um drei.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-184',
+      ausdruck: 'Zwiderwurz\'n',
+      hochdeutsch: 'Widerspenstige Person / Brummbär',
+      bedeutung: 'Eine „Zwiderwurz\'n" ist im Bayerischen ein zwiespältiger, missmutiger, widerspenstiger Mensch — wörtlich „Widerwurz". Die „Zwiderwurz\'n" (Bitterwurz) ist eine bittere Heilpflanze, und der Vergleich mit einem unangenehmen Menschen liegt nahe. „Mei Schwoga is so a Zwiderwurz\'n!" Häufig für ältere, mürrische Personen verwendet. Eine plastische, charakteristisch bayerische Beschreibung.',
+      beispiel: 'D\'Nachbarin is a richtige Zwiderwurz\'n!',
+      beispiel_hd: 'Die Nachbarin ist eine richtige Widerspenstige!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-185',
+      ausdruck: 'Hosnscheißer',
+      hochdeutsch: 'Hosenscheißer / Feigling',
+      bedeutung: 'Ein „Hosnscheißer" ist im Bayerischen wie im Hochdeutschen ein Feigling — einer, der bei Angst „in die Hose macht". „Sei koa Hosnscheißer!" Etwas drastisch, aber gebräuchlich, besonders unter Männern und in Sportkontexten. Im Bayerischen klingt das Wort durch die typische Aussprache („Hosn") und das gerollte „r" besonders deftig. Mild bis derb, je nach Kontext und Tonfall.',
+      beispiel: 'Spring endlich vom 3-Meter-Brett, du Hosnscheißer!',
+      beispiel_hd: 'Spring endlich vom 3-Meter-Brett, du Feigling!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-186',
+      ausdruck: 'Stamperl',
+      hochdeutsch: 'Kleines Schnapsglas',
+      bedeutung: 'Ein „Stamperl" ist im Bayerischen das kleine Schnapsglas — etwa 2 cl Inhalt. „A Stamperl Obstla" ist der klassische Abschluss eines bayerischen Essens. Der Begriff stammt vom „stampfen" oder „stempeln" — also wenn das Glas energisch auf den Tisch gestellt wird. In jedem bayerischen Wirtshaus stehen Stamperln am Tresen bereit. Der Verkleinerungsform „-erl" macht die Trinkgewohnheit gemütlich.',
+      beispiel: 'Auf den Schreck a Stamperl Obstla!',
+      beispiel_hd: 'Auf den Schreck ein Schnäpschen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-187',
+      ausdruck: 'Gschtod',
+      hochdeutsch: 'Gestalt / Aussehen',
+      bedeutung: 'Die „Gschtod" oder „G\'stod" ist im Bayerischen die Gestalt, das Aussehen, die äußere Erscheinung eines Menschen. „A guade G\'stod" ist ein stattliches Aussehen. „Wos a G\'stod!" — Was für eine Erscheinung! Der Ausdruck zeigt die bayerische Wertschätzung für äußere Stattlichkeit und körperliche Präsenz, besonders in traditionellen Kontexten wie Trachten-Festen oder Schuhplattler-Auftritten.',
+      beispiel: 'Der Bua hot a echte Bauern-G\'stod!',
+      beispiel_hd: 'Der Junge hat eine echte Bauern-Statur!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-188',
+      ausdruck: 'Goaßmichl',
+      hochdeutsch: 'Sturer Bock / Ziegen-Michel',
+      bedeutung: 'Ein „Goaßmichl" ist im Bayerischen ein sturer, eigensinniger Mensch — wörtlich „Ziegen-Michel". Die Ziege („Goaß") gilt im Bayerischen als Sinnbild für Sturheit. „So a Goaßmichl is der!" sagt man über jemanden, der nicht von seiner Meinung abrücken will. Mit liebevoller Resignation oder echtem Ärger gebraucht. Eine sehr charakteristische bayerische Personenbeschreibung.',
+      beispiel: 'Mei Voda is a richtiga Goaßmichl, wennsa wos in Kopf hot!',
+      beispiel_hd: 'Mein Vater ist ein richtiger Sturkopf, wenn er sich was in den Kopf gesetzt hat!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-189',
+      ausdruck: 'Schnackerl',
+      hochdeutsch: 'Schluckauf',
+      bedeutung: 'Das „Schnackerl" ist im Bayerischen und Österreichischen der Schluckauf — die unwillkürlichen Zwerchfellzuckungen. „I hob a Schnackerl!" Der Klang des Wortes ist selbst lautmalerisch — wie das Geräusch des Schluckaufs. Hausmittel-Empfehlungen reichen von „a Glasl Wassa trinken" bis „erschrecken lassen". Eine warmherzige, alltagsnahe Wortprägung der bayerischen Mundart.',
+      beispiel: 'I hob scho an ganzen Tag a Schnackerl!',
+      beispiel_hd: 'Ich habe schon den ganzen Tag Schluckauf!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-190',
+      ausdruck: 'Spitzbua',
+      hochdeutsch: 'Schlitzohr / Schelm',
+      bedeutung: 'Ein „Spitzbua" (auch „Spitzbub") ist im Bayerischen ein schlitzohriger, gewitzter Junge oder Mann — meist liebevoll-spöttisch gemeint. „Du Spitzbua, du!" sagt die Oma zum frechen Enkel. Auch in der Konditorei: „Spitzbuben" sind klassische Marmeladenkekse mit drei Löchern. Der Ausdruck hat Wärme und drückt eher Bewunderung für die Schlauheit aus als echte Kritik.',
+      beispiel: 'Du Spitzbua, hosd mi scho wieder reingelegt!',
+      beispiel_hd: 'Du Schlitzohr, hast mich schon wieder reingelegt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-191',
+      ausdruck: 'Foiß',
+      hochdeutsch: 'Fuß',
+      bedeutung: '„Foiß" ist die bayerische Aussprache von „Fuß" — mit dem typisch bayerischen „oi" statt dem hochdeutschen „u". „Mir tuat der Foiß weh" (mir tut der Fuß weh). Auch in Komposita: „Foißboi" für Fußball. Die Lautverschiebung „u" → „oi" ist eines der Hauptmerkmale des Bayerischen und macht den Klang weicher und runder. Charakteristische Mundart.',
+      beispiel: 'Mei Foiß is g\'schwoin vom langn Steh.',
+      beispiel_hd: 'Mein Fuß ist geschwollen vom langen Stehen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-192',
+      ausdruck: 'Weißbier',
+      hochdeutsch: 'Weizenbier',
+      bedeutung: 'Das „Weißbier" oder „Weizn" ist Bayerns Stolz: ein helles, obergäriges Bier aus Weizenmalz, leicht süßlich, fruchtig, mit typischer Banane-Nelken-Note. Beim Schenken wichtig: Glas schräg halten, langsam einschenken, Schaum-Krone zelebrieren. Bekannte Sorten: Erdinger, Schneider Weisse, Weihenstephaner (älteste Brauerei der Welt, gegründet 1040). Zur Weißwurst-Frühstück das passende Begleitgetränk.',
+      beispiel: 'A frisches Weißbier mit Weißwurscht — des is Bayern!',
+      beispiel_hd: 'Ein frisches Weizenbier mit Weißwurst — das ist Bayern!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-193',
+      ausdruck: 'Pumperer',
+      hochdeutsch: 'Schwerer Brummer / Brummer',
+      bedeutung: 'Ein „Pumperer" ist im Bayerischen ein schwerer, kompakter Brummer — entweder ein schwerer Mensch oder etwas Gewichtiges. Auch „Pumpergama" als steigernde Form. Vom Verb „pumpern" (klopfen, hämmern). Die Bedeutung schwingt zwischen körperlich-statthaft und etwas plump. Im Tonfall mehr beschreibend als wertend. Eine plastische bayerische Wortprägung.',
+      beispiel: 'Der neue Trecker is a echter Pumperer!',
+      beispiel_hd: 'Der neue Traktor ist ein echter Brummer!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-194',
+      ausdruck: 'Bairische Mass',
+      hochdeutsch: 'Bayerische Maß (1 Liter Bier)',
+      bedeutung: 'Die „Bairische Mass" ist das berühmte Litermaß bayerischen Biers — der Maßkrug, in dem auf dem Oktoberfest und in jedem bayerischen Biergarten Bier serviert wird. „A Mass Helles" ist die klassische Bestellung. Das Wiegen der Maß (Maß-Eiche), korrekt eingeschenkt mit Schaum, ist Wirtshaus-Kunst. Die Mass-Tradition geht ins 19. Jahrhundert zurück und ist UNESCO-Kulturerbe.',
+      beispiel: 'Auf da Wiesn drinkn mir a Mass nach da andern.',
+      beispiel_hd: 'Auf der Wiesn trinken wir eine Maß nach der anderen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-195',
+      ausdruck: 'Hutsch',
+      hochdeutsch: 'Schaukel',
+      bedeutung: 'Die „Hutsch" ist im Bayerischen die Schaukel — vom Verb „hutschen" (schaukeln). Auf jedem Spielplatz unverzichtbar. Auch das „Hutschpferd" ist das Schaukelpferd. Der Ausdruck ist warm und kindlich, mit dem typischen bayerischen Wegfall des End-„e" („Hutsch" statt „Hutsche"). Bayerische Kinder lieben das Hutschn — und auch viele Erwachsene haben sich diese Liebe bewahrt.',
+      beispiel: 'D\'Kinder spielen am Spielplatz auf der Hutsch.',
+      beispiel_hd: 'Die Kinder spielen am Spielplatz auf der Schaukel.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-196',
+      ausdruck: 'Tracht\'nfest',
+      hochdeutsch: 'Trachtenfest',
+      bedeutung: 'Das „Tracht\'nfest" ist im Bayerischen ein Fest, bei dem Tracht (Lederhose, Dirndl, Tracht) getragen wird. Es gibt viele Trachtenvereine („Heimat- und Trachtenverein"), die regelmäßig Feste veranstalten. Höhepunkt ist der Trachten- und Schützenzug auf der Wiesn (München), mit über 9000 Teilnehmern. Trachtenfeste sind Identitätsstiftung — sie pflegen alte Bräuche und Tänze (Schuhplattler, Volkstanz).',
+      beispiel: 'Am Sonntag is\'s große Tracht\'nfest im Dorf.',
+      beispiel_hd: 'Am Sonntag ist das große Trachtenfest im Dorf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-197',
+      ausdruck: 'Bua',
+      hochdeutsch: 'Bub / Junge',
+      bedeutung: 'Der „Bua" ist im Bayerischen der Junge oder der Bub — eine zentrale Bezeichnung im bayerischen Familienleben. „Mei Bua" sagt die Mutter liebevoll. Mehrzahl: „Buam" (Jungen, junge Männer). Auch übertragen für junge Männer in einer Gruppe: „d\'Buam san eingangen" (die Jungs sind gekommen). Vom mittelhochdeutschen „buobe" abgeleitet. Eines der ureigensten bayerischen Wörter.',
+      beispiel: 'Mei Bua kummt heut zu Besuch.',
+      beispiel_hd: 'Mein Junge kommt heute zu Besuch.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-198',
+      ausdruck: 'Goaß',
+      hochdeutsch: 'Ziege',
+      bedeutung: 'Die „Goaß" ist im Bayerischen die Ziege — das berühmte Bergland-Tier. In den bayerischen Alpen wird Goaßmilch zu Käse verarbeitet, und das Goaßlschnalzen ist ein traditioneller Brauch (mit der Goaßl, einer langen Peitsche). Übertragen: „a alte Goaß" für eine zickige ältere Frau (eher abwertend). Auch in der „Goaßmaß" — ein Bier mit Cola und Kirschlikör. Vielseitig im bayerischen Wortschatz.',
+      beispiel: 'D\'Goaßmilch is besonders gsund.',
+      beispiel_hd: 'Die Ziegenmilch ist besonders gesund.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-199',
+      ausdruck: 'Sauber',
+      hochdeutsch: 'Schön / Hübsch (Person)',
+      bedeutung: '„Sauber" hat im Bayerischen oft eine besondere Bedeutung: nicht nur „rein", sondern auch „schön", „hübsch" oder „stattlich" — meist auf Personen bezogen. „A saubers Madl!" ist ein schönes Mädchen. „A saubere Tracht" ist eine schöne, gepflegte Tracht. Die Bedeutung „sauber = schön" zeigt die bayerische Wertschätzung für Gepflegtheit als ästhetisches Ideal.',
+      beispiel: 'D\'Resi is heut wieder a saubers Madl!',
+      beispiel_hd: 'Die Resi ist heute wieder ein schönes Mädchen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-200',
+      ausdruck: 'Hoam',
+      hochdeutsch: 'Heim / Heimat',
+      bedeutung: '„Hoam" ist die bayerische Form von „Heim" — das Zuhause, die Heimat. „I geh hoam!" (Ich gehe nach Hause). Der Diphthong „oa" macht den Klang weich und gemütlich. Auch im Substantiv „Hoamat" (Heimat) — ein zentraler bayerischer Begriff. Die Liebe zur Hoamat ist ein wesentlicher Teil der bayerischen Identität — Hoamatfilme, Hoamatlieder, Hoamatabende sind beliebt. Sehr emotional besetztes Wort.',
+      beispiel: 'Es is Zeit, dass\'ma hoam gehn!',
+      beispiel_hd: 'Es ist Zeit, dass wir nach Hause gehen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-201',
+      ausdruck: 'Hudriwudri',
+      hochdeutsch: 'Hektischer Mensch / Wirbelwind',
+      bedeutung: 'Ein „Hudriwudri" ist im Bayerischen ein hektischer, zappeliger Mensch — einer, der nie zur Ruhe kommt und immer in Bewegung ist. „So a Hudriwudri kannst nia in da Stub\'n haltn!" Der Klang des Wortes spiegelt die Bedeutung wider — wie etwas Wirbelndes, Hin-und-her-Bewegtes. Die Doppelung „hudri-wudri" verstärkt den Eindruck. Eine wunderbar lautmalerische bayerische Wortschöpfung.',
+      beispiel: 'Der Bua is a echter Hudriwudri — hat\'s nimmer im Sitz!',
+      beispiel_hd: 'Der Junge ist ein echter Wirbelwind — hält es nicht mehr im Sitzen aus!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-202',
+      ausdruck: 'Wadschinken',
+      hochdeutsch: 'Schinken / Wadenschinken',
+      bedeutung: 'Der „Wadschinken" ist im Bayerischen der saftige Schinken vom Schweinshintern — eine Spezialität auf dem Brotzeitbrett. „Mit Wadschinken und Käs schmeckt\'s am bestn." Der Ausdruck spielt mit „Wad\'n" (Wade) und „Schinken". In jedem bayerischen Metzger zu finden, oft selbst geräuchert. Klassischer Bestandteil der bayerischen Brotzeit, neben Leberkäs, Obatzda und Brez\'n.',
+      beispiel: 'A guads Brotzeitbrett mit Wadschinken und Radi!',
+      beispiel_hd: 'Ein gutes Brotzeitbrett mit Wadenschinken und Rettich!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-203',
+      ausdruck: 'Saupreiß',
+      hochdeutsch: 'Preuße (abwertend)',
+      bedeutung: 'Der „Saupreiß" ist im Bayerischen die humorvoll-abwertende Bezeichnung für einen Norddeutschen oder generell jemanden, der nicht aus Bayern stammt. Ein historischer Begriff, der die jahrhundertelangen Spannungen zwischen Bayern und Preußen widerspiegelt. „Sauer-" und „Preuße" verbinden sich zur Schimpfformel. Heute meist humorvoll gebraucht — wenn auch nicht immer harmlos. Ein Wort mit kulturhistorischem Gewicht.',
+      beispiel: 'Der neue Chef is a Saupreiß aus Hamburg!',
+      beispiel_hd: 'Der neue Chef ist ein Preuße aus Hamburg!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-204',
+      ausdruck: 'Schmalznudel',
+      hochdeutsch: 'Schmalznudel / Auszogne',
+      bedeutung: 'Die „Schmalznudel" (auch „Auszogne") ist ein bayerisches Hefeteig-Gebäck — flach ausgezogen, in Schmalz schwimmend gebacken, mit Puderzucker bestreut. Klassisches Festtagsgebäck, besonders zur Kirchweih, am Volksfest oder zu Weihnachten. In der Münchner „Schmalznudel"-Kult-Bäckerei am Viktualienmarkt eine Institution. Sieht aus wie ein Doughnut, schmeckt aber unverwechselbar bayerisch.',
+      beispiel: 'Bei der Kirchweih gibt\'s die besten Schmalznudeln!',
+      beispiel_hd: 'Bei der Kirchweih gibt es die besten Schmalznudeln!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-205',
+      ausdruck: 'Allerseelen',
+      hochdeutsch: 'Allerseelentag (2. November)',
+      bedeutung: '„Allerseelen" ist im katholisch geprägten Bayern ein wichtiger Tag — am 2. November werden die Verstorbenen geehrt, Friedhöfe besucht, Gräber mit Kerzen geschmückt. In vielen bayerischen Dörfern und Städten ist Allerseelen ein stiller Tag der Familie und der Erinnerung. Verbunden mit „Allerheiligen" (1. November), das in Bayern Feiertag ist. Eine zentrale katholische Tradition.',
+      beispiel: 'An Allerseelen besuchen wir d\'Gräber unserer Vorfahren.',
+      beispiel_hd: 'An Allerseelen besuchen wir die Gräber unserer Vorfahren.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-206',
+      ausdruck: 'Bairische Ruh',
+      hochdeutsch: 'Bayerische Gelassenheit',
+      bedeutung: 'Die „Bairische Ruh" ist ein zentraler bayerischer Wesenszug — die gemütliche, entspannte Lebenseinstellung. „Mit der bairischen Ruh nimm ma alles!" Der Bayer lässt sich nicht hetzen, nimmt sich Zeit für Brotzeit, Bier, Bekannte. Auch in Stress-Situationen: „a g\'mahde Wiesn" (eine gemähte Wiese — alles entspannt). Die Ruhe als Lebensphilosophie, die im modernen Schnellzeitalter zunehmend geschätzt wird.',
+      beispiel: 'Mit der bairischen Ruh klappt alles besser.',
+      beispiel_hd: 'Mit der bayerischen Gelassenheit klappt alles besser.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-207',
+      ausdruck: 'Hosnträger',
+      hochdeutsch: 'Hosenträger / Mann mit Hosenträgern',
+      bedeutung: 'Der „Hosnträger" ist im Bayerischen ein traditionelles Kleidungsstück zur Lederhose — meist mit Edelweiß oder Hirsch-Stickerei. Auch der Mann, der Hosenträger zur Tracht trägt, kann „Hosnträger" genannt werden. Im modernen Geschäftsleben tragen viele bayerische Geschäftsmänner Hosenträger zum Anzug. Symbol für bayerische Tradition und manchmal auch konservative Männlichkeit.',
+      beispiel: 'Zur Lederhosn trog i meine alten Hosnträger.',
+      beispiel_hd: 'Zur Lederhose trage ich meine alten Hosenträger.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-208',
+      ausdruck: 'Boazn',
+      hochdeutsch: 'Schäbige Kneipe',
+      bedeutung: 'Eine „Boazn" ist im Bayerischen eine schäbige, urige, manchmal heruntergekommene Kneipe — meist klein, mit treuer Stammkundschaft, billiges Bier, einfache Speisen. Vom italienischen „bottega" abgeleitet. Die Münchner Boazn-Kultur ist legendär: orte wie das „Schumann\'s" (heute edel), aber auch viele kleine Boazn im Glockenbachviertel oder am Gärtnerplatz. Wesentlicher Teil des bayerischen Nachtlebens.',
+      beispiel: 'Geh mer no schnell in d\'Boazn am Eck!',
+      beispiel_hd: 'Gehen wir noch schnell in die kleine Kneipe um die Ecke!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-209',
+      ausdruck: 'Schorsch',
+      hochdeutsch: 'Georg (bayerischer Name)',
+      bedeutung: 'Der „Schorsch" ist die bayerische Kurz- und Koseform von „Georg" — der häufigste Männername in Bayern über Jahrhunderte. Der Heilige Georg ist Patron vieler bayerischer Kirchen und Bruderschaften. „Schorschla" als Verkleinerung. Auch als Symbol für den „typischen Bayern": der zünftige Schorsch in Lederhose mit Bier. Schorsche gibt\'s in jedem Dorf, jeder Familie. Ein urbayerisches Identitätswort.',
+      beispiel: 'Wo is denn da Schorsch wieder? Im Wirtshaus?',
+      beispiel_hd: 'Wo ist denn der Georg wieder? Im Wirtshaus?',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-210',
+      ausdruck: 'Mia san mia',
+      hochdeutsch: 'Wir sind wir',
+      bedeutung: '„Mia san mia" ist DER bayerische Wahlspruch und Identitäts-Slogan — wörtlich „Wir sind wir". Drückt das selbstbewusste, manchmal trotzige bayerische Selbstverständnis aus: wir sind anders, wir sind Bayern, wir machen es nach unserer Art. Auch als FC Bayern München-Schlachtruf bekannt. Auf Tassen, T-Shirts, Bierdeckeln zu finden. Symbol bayerischer Eigenständigkeit innerhalb Deutschlands. Ein Markenzeichen Bayerns.',
+      beispiel: 'Mia san mia — und stoiz darauf!',
+      beispiel_hd: 'Wir sind wir — und stolz darauf!',
+      kategorie: 'menschen'
     }
   ]
 };

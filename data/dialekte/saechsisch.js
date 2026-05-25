@@ -1593,6 +1593,276 @@ export default {
       beispiel: 'Sei doch nicht gleich so mucksch, war doch nur Spaß!',
       beispiel_hd: 'Sei doch nicht gleich so eingeschnappt, war doch nur Spaß!',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 's-181',
+      ausdruck: 'Babschamoddel',
+      hochdeutsch: 'Hampelmann / Albernes Wesen',
+      bedeutung: 'Ein „Babschamoddel" ist im Sächsischen ein alberner, kindischer oder grimassierender Mensch — wörtlich „Babsch-Modell". „Sei kein Babschamoddel!" ist eine Mahnung an albernes Verhalten. Der Klang des Wortes ist selbst spielerisch und macht aus der Kritik einen warmen Spott. Typisch sächsische Wortprägung mit lautmalerischem Charakter, die Sprachfreude und Humor vereint.',
+      beispiel: 'Mach kein Babschamoddel, dat war mein letzter Stollen!',
+      beispiel_hd: 'Mach keinen Hampelmann, das war mein letzter Stollen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-182',
+      ausdruck: 'Bautzner',
+      hochdeutsch: 'Bautzner Senf',
+      bedeutung: 'Der „Bautzner" ist DER sächsische Senf — seit 1850 in Bautzen produziert. Mittelscharf, würzig, mit dem charakteristischen blau-roten Etikett. In der DDR Kult und einer der wenigen Markenartikel, die nach 1989 überlebt haben. Zur Bratwurst, zum Eisbein oder einfach aufs Brot mit Wurst — Bautzner Senf ist sächsisches Lebensgefühl. Heute gehört die Marke zu Develey, aber die Produktion bleibt in Bautzen.',
+      beispiel: 'Zur Bratwurst gibts nur den echten Bautzner Senf!',
+      beispiel_hd: 'Zur Bratwurst gibt es nur den echten Bautzner Senf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-183',
+      ausdruck: 'Wuschelich',
+      hochdeutsch: 'Wuschelig / Zerzaust',
+      bedeutung: '„Wuschelich" ist im Sächsischen das Adjektiv für „wuschelig", „zerzaust" — meistens auf Haare bezogen. „Du has heute aber wuschelige Haare!" Vom Verb „wuscheln" (durcheinanderbringen). Auch übertragen: „a wuschelicher Kopp" für jemanden, der durcheinander ist. Klangvoll-weiches sächsisches Wort, das die freundliche Lautfärbung des Dialekts widerspiegelt.',
+      beispiel: 'Komm mal her, deine Haare sin ja janz wuschelich!',
+      beispiel_hd: 'Komm mal her, deine Haare sind ja ganz wuschelig!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-184',
+      ausdruck: 'Heizdeggn',
+      hochdeutsch: 'Heizdecke / Elektrische Decke',
+      bedeutung: 'Die „Heizdeggn" ist im Sächsischen die elektrische Wärmedecke — ein Klassiker der DDR-Zeit und auch heute noch beliebt. Bei der typischen Erzgebirgskälte unverzichtbar im Winter. „Schalt die Heizdeggn ein, mir is kalt!" Auch übertragen für jemanden, der zu nah kuschelt: „Du bist ja meine Heizdeggn!" Eine warme, hausgebackene Wortprägung.',
+      beispiel: 'In Winter ohne meine Heizdeggn — das geht ja gar nich!',
+      beispiel_hd: 'Im Winter ohne meine Heizdecke — das geht gar nicht!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-185',
+      ausdruck: 'Pfundkerl',
+      hochdeutsch: 'Pfundskerl / Großartiger Mensch',
+      bedeutung: 'Ein „Pfundkerl" (oder „Pfundskerl") ist im Sächsischen ein großartiger, verlässlicher Mensch — wörtlich jemand „wie ein Pfund" (also schwer, beständig). „Der Heinz is\'n richt\'gen Pfundkerl!" Höchstes Lob im sächsischen Beziehungsleben — bedeutet Vertrauenswürdigkeit, Hilfsbereitschaft und Charakterstärke. Auch in anderen Dialekten verbreitet, aber im Sächsischen besonders herzlich gemeint.',
+      beispiel: 'Mein Schwager is\'n Pfundkerl — der hilft immer aus.',
+      beispiel_hd: 'Mein Schwager ist ein Pfundskerl — der hilft immer aus.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-186',
+      ausdruck: 'Klitsche',
+      hochdeutsch: 'Schäbiger Laden / Bruchbude',
+      bedeutung: 'Eine „Klitsche" ist im Sächsischen ein schäbiger, heruntergekommener Laden oder ein Gebäude in schlechtem Zustand. „Das is ja\'ne richtige Klitsche!" Häufig spöttisch-abwertend, aber manchmal auch liebevoll für etwas Urig-Verlebtes. Das Wort hat einen drastischen, lautmalerischen Klang. Auch für kleine Geschäfte verwendet, die nicht viel hermachen, aber Tradition haben.',
+      beispiel: 'In dieser Klitsche kauf ich nicht mehr ein!',
+      beispiel_hd: 'In dieser Bruchbude kaufe ich nicht mehr ein!',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-187',
+      ausdruck: 'Doog',
+      hochdeutsch: 'Teig',
+      bedeutung: '„Doog" ist die sächsische Aussprache von „Teig" — mit der charakteristischen Aussprache des „ei" als „oog" oder „oa". „Der Doog muss aufgeh\'n" sagt die Großmutter beim Stollenbacken. Klangvoll und gemütlich, typisch sächsisch. In der reichen Backtradition Sachsens — Stollen, Eierschecke, Quarkkeulchen, Pulsnitzer Pfefferkuchen — spielt der „Doog" eine zentrale Rolle.',
+      beispiel: 'Der Stollendoog muss noch zwei Stunden ruh\'n.',
+      beispiel_hd: 'Der Stollenteig muss noch zwei Stunden ruhen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-188',
+      ausdruck: 'Jiebsche',
+      hochdeutsch: 'Jübchen / Magenstoß / Schüttler',
+      bedeutung: 'Ein „Jiebsche" oder „Jüpsche" ist im Sächsischen ein kleiner Magenstoß, ein Schluckauf oder das Schluckaufgefühl. „Ich hab\'n Jiebsche!" Das Wort hat einen lautmalerischen Klang — wie das Geräusch des Hickauf. Norddeutsche kennen das als „Schluckauf", Bayern als „Schnackerl", Sachsen eben als „Jiebsche". Eine warme, kindliche Wortprägung.',
+      beispiel: 'Schon den ganzen Tag hab ich dieses Jiebsche!',
+      beispiel_hd: 'Schon den ganzen Tag habe ich diesen Schluckauf!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-189',
+      ausdruck: 'Mährdsche',
+      hochdeutsch: 'Märchen',
+      bedeutung: '„Mährdsche" ist die sächsische Aussprache von „Märchen". Sachsen ist ein Land der Märchen: Karl May erzählte fantastische Geschichten, die Gebrüder Schumann sammelten Volksmärchen, das Erzgebirge ist voll mystischer Sagen. „Erzähl mir noch\'n Mährdsche!" sagt das Kind vorm Schlafen. Das Wort selbst klingt schon nach Geschichte und Tradition.',
+      beispiel: 'Großmutter erzählt am Abend immer ein Mährdsche.',
+      beispiel_hd: 'Großmutter erzählt am Abend immer ein Märchen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-190',
+      ausdruck: 'Hutzenabend',
+      hochdeutsch: 'Hutzenabend / Erzgebirgischer Gemeinschaftsabend',
+      bedeutung: 'Der „Hutzenabend" ist eine erzgebirgische Tradition — gemeinschaftliches Beisammensein in der dunklen Jahreszeit, ursprünglich der gemeinsame Klöppel-Abend der Spitzenklöppler-Frauen. Heute kulturelle Veranstaltungen mit Volksmusik, Lesungen und Erzählungen in der Bergmannstradition. Findet man besonders in Annaberg-Buchholz, Schwarzenberg und Oberwiesenthal. UNESCO-Kulturerbe der Erzgebirgischen Klöppel- und Volkskultur.',
+      beispiel: 'Im Erzgebirge gibts im November viele Hutzenabende.',
+      beispiel_hd: 'Im Erzgebirge gibt es im November viele Hutzenabende.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-191',
+      ausdruck: 'Karuselllöwe',
+      hochdeutsch: 'Karusselllöwe (Spielzeug)',
+      bedeutung: 'Der „Karuselllöwe" ist eine ostdeutsche Spielzeug-Ikone — der mechanische Löwe auf dem Kinderkarussell. Ein DDR-Klassiker, der heute noch in vielen ostdeutschen Volksfest-Karussellen zu finden ist. Auch übertragen: „sich wie\'n Karuselllöwe fühlen" — sich wie im Kreis drehen, überfordert sein. Erinnerung an die einfachen, herzlichen Vergnügungen einer ganzen Generation.',
+      beispiel: 'Auf dem Rummel mein Lieblingsplatz: der Karuselllöwe!',
+      beispiel_hd: 'Auf dem Jahrmarkt mein Lieblingsplatz: der Karusselllöwe!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-192',
+      ausdruck: 'Räschen',
+      hochdeutsch: 'Regen',
+      bedeutung: '„Räschen" ist die sächsische Aussprache von „Regen" — mit dem typischen weichen Klang. „Es Räschend draußen!" Auch das Verb: „räschen" für regnen. Sachsen kennt Regen in allen Variationen, vom kurzen Sommerregen bis zum stundenlangen Erzgebirgs-Schauer. Die sprachliche Verniedlichung „Räschen" lässt das Wetter sympathischer klingen — als wäre der Regen ein freundliches kleines Wesen.',
+      beispiel: 'Nim den Schirm mit, es räschet schon den janzen Tach!',
+      beispiel_hd: 'Nimm den Schirm mit, es regnet schon den ganzen Tag!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-193',
+      ausdruck: 'Schlomp',
+      hochdeutsch: 'Schlampig gekleidet / Schlampe',
+      bedeutung: '„Schlomp" oder „schlompig" beschreibt im Sächsischen einen schlampigen, ungepflegten Zustand — meist auf Kleidung oder Wohnung bezogen. „Du sihst so schlomp aus!" Auch substantivisch: „a Schlomp" für eine unordentliche Person. Eine direkte, lautmalerische Bezeichnung. Im sächsischen Spannungsfeld zwischen Hochkultur (Dresden) und Bergmannstradition entstanden viele solche bodenständigen Wörter.',
+      beispiel: 'Jeh dich umziehen, du läufst rum wie a Schlomp!',
+      beispiel_hd: 'Geh dich umziehen, du läufst rum wie ein Schlampen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-194',
+      ausdruck: 'Soundso',
+      hochdeutsch: 'Soundso / Dingsbums',
+      bedeutung: '„Soundso" ist im Sächsischen ein Platzhalter für Namen, die einem gerade nicht einfallen — „Wie heißt nochma der Soundso?" Eine charmante, alltägliche Wendung für die typischen Erinnerungslücken. Auch in der DDR-Zeit häufig gebraucht: „Der Soundso vom Betrieb hat erzählt..." Macht das Erzählen leichter, wenn der Name fehlt, ohne dass die Geschichte abreißt.',
+      beispiel: 'Hat dir der Soundso schon erzählt, wat passiert is?',
+      beispiel_hd: 'Hat dir der Dingsbums schon erzählt, was passiert ist?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-195',
+      ausdruck: 'Hopsekind',
+      hochdeutsch: 'Hopsasa-Kind / Quirliges Kind',
+      bedeutung: 'Ein „Hopsekind" ist im Sächsischen ein lebhaftes, hüpfendes, energiegeladenes Kind — voller Bewegungsfreude. „Der Junge is\'n richtiges Hopsekind!" Mit liebevoller Wärme gebraucht. Die Verbindung von „hopsen" (hüpfen) und „Kind" ergibt eine plastische, kindgerechte Beschreibung. Sachsen pflegt viele solche zärtlichen Diminutiv-Bezeichnungen für Kinder.',
+      beispiel: 'Mein Enkel is\'n Hopsekind, der kann nich stillsitzen.',
+      beispiel_hd: 'Mein Enkel ist ein quirliges Kind, der kann nicht stillsitzen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-196',
+      ausdruck: 'Streuselbappel',
+      hochdeutsch: 'Streuselkuchen / Streusel-Person',
+      bedeutung: 'Der „Streuselbappel" hat zwei Bedeutungen: einerseits ein leckerer Streuselkuchen (sächsische Spezialität!), andererseits scherzhaft eine Person, die ständig krümelt oder Spuren hinterlässt. „Pass auf, dass die Streusel nicht überall liegen, du Streuselbappel!" Dresdner Streuselkuchen mit Hefeteig, Butterstreuseln und Puderzucker ist ein Klassiker der sächsischen Konditorei.',
+      beispiel: 'Zum Kaffee gibts heut\'n schönen Streuselbappel.',
+      beispiel_hd: 'Zum Kaffee gibt es heute einen schönen Streuselkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-197',
+      ausdruck: 'Quotschen',
+      hochdeutsch: 'Tratschen / Klatschen',
+      bedeutung: '„Quotschen" ist im Sächsischen das Klatschen, Tratschen — das lustvolle Reden über andere Menschen. „Die quotschen den janzen Tach!" Die Geräuschmalerei „quotsch-quotsch" passt zum Plappern. Eine wichtige soziale Aktivität in sächsischen Kaffeerunden und auf Marktplätzen. Mit liebevollem Spott gebraucht — der sächsische Klatsch ist meist warmherzig, nicht boshaft.',
+      beispiel: 'Beim Frisör quotschen sie immer den janzen Vormittag.',
+      beispiel_hd: 'Beim Frisör tratschen sie immer den ganzen Vormittag.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-198',
+      ausdruck: 'Pärlnse',
+      hochdeutsch: 'Perlen / Glaskugeln',
+      bedeutung: '„Pärlnse" ist die sächsische Aussprache und Pluralform von „Perlen" — Glasperlen für Schmuck oder Christbaumschmuck. In Lauscha (Thüringen) und auch in Sachsen wurde traditionell Christbaumschmuck aus Glas hergestellt. „Schöne Pärlnse für Oma!" Ein typisch sächsisches Wort, das die Klangmelodie und Vokalfärbung des Dialekts zeigt.',
+      beispiel: 'Großmutter hat noch die alten Pärlnse aus DDR-Zeiten.',
+      beispiel_hd: 'Großmutter hat noch die alten Perlen aus DDR-Zeiten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-199',
+      ausdruck: 'Schnudderbutscher',
+      hochdeutsch: 'Schnupfen / Triefnase',
+      bedeutung: 'Ein „Schnudderbutscher" ist im Sächsischen jemand mit verschnupfter Nase — wörtlich „Schnodder-Butscher" (etwa: Rotznase). Liebevoll gebraucht, oft an Kindern: „Mein kleiner Schnudderbutscher!". Vor allem im Winter unvermeidlich. Eine plastische, lautmalerische sächsische Wortschöpfung mit warmer, fast zärtlicher Konnotation, die das Bemitleidende mit dem Liebevollen verbindet.',
+      beispiel: 'Komm her, mein kleiner Schnudderbutscher, ich putz dir die Nase.',
+      beispiel_hd: 'Komm her, mein kleiner Schnupfennäschen, ich putz dir die Nase.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-200',
+      ausdruck: 'Glubschauchen',
+      hochdeutsch: 'Glubschaugen / Große Augen',
+      bedeutung: '„Glubschauchen" ist im Sächsischen wie im Hessischen die Bezeichnung für besonders große, hervortretende Augen. „Mach nicht so Glubschauchen!" Häufig humorvoll oder leicht spöttisch gebraucht. Auch bei Tieren — Frösche, Babys haben oft Glubschauchen. Die sächsische Form mit „auchen" statt „augen" zeigt die typische Vokalfärbung. Charmant und plastisch.',
+      beispiel: 'Was machste\'n für Glubschauchen?',
+      beispiel_hd: 'Was machst du denn für Glubschaugen?',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-201',
+      ausdruck: 'Plinse',
+      hochdeutsch: 'Plinse (sächsischer Pfannkuchen)',
+      bedeutung: 'Die „Plinse" ist die sächsische und Lausitzer Variante des Pfannkuchens — dünner als bayerische Pfannkuchen, oft mit Marmelade, Zucker oder herzhaft gefüllt. Ein Klassiker der sorbischen und sächsischen Küche. „Plinse mit Apfelmus" ist Kindernachmittags-Spezial. Auch der Plural ist beliebt: „Drei Plinsen, bitteschön!". Bodenständige sächsische Komfortküche.',
+      beispiel: 'Heut Nachmittag jibt\'s Plinsen mit Apfelmus!',
+      beispiel_hd: 'Heute Nachmittag gibt es Pfannkuchen mit Apfelmus!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-202',
+      ausdruck: 'Lapsch',
+      hochdeutsch: 'Schlapp / Schlaff',
+      bedeutung: '„Lapsch" oder „lapschich" bedeutet im Sächsischen „schlapp", „schlaff", „müde". „Ich bin heut ganz lapsch!" sagt man bei Erschöpfung oder leichtem Unwohlsein. Auch für Gegenstände: „a lapschiger Lappen" — ein labbriger Stofflappen. Eine lautmalerische sächsische Wortprägung, die durch das offene „ap" und den Zischlaut die Bedeutung sinnlich vermittelt.',
+      beispiel: 'Nach dem Spaziergang in der Hitze bin ich ganz lapsch.',
+      beispiel_hd: 'Nach dem Spaziergang in der Hitze bin ich ganz schlapp.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-203',
+      ausdruck: 'Hippe',
+      hochdeutsch: 'Eishippe / Eistüte',
+      bedeutung: 'Die „Hippe" ist im Sächsischen die Eishippe — die knusprige Eistüte. „Eine Hippe Erdbeer, bitte!" Auch das Hippeblech (Backblech für Hippen) ist bekannt. Die Hippentradition geht im Erzgebirge weit zurück — handgefertigte, gerollte Waffeln aus Eiern, Zucker, Mehl und Butter. Heute industriell, aber in einigen sächsischen Konditoreien immer noch handgefertigt.',
+      beispiel: 'Im Sommer hol ich mir am Stand immer ne Hippe.',
+      beispiel_hd: 'Im Sommer hole ich mir am Stand immer eine Eistüte.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-204',
+      ausdruck: 'Aff',
+      hochdeutsch: 'Rausch / Vollrausch',
+      bedeutung: 'Einen „Aff" haben bedeutet im Sächsischen, betrunken zu sein — einen Rausch haben. „Der hat\'n richtigen Aff vom gestrigen Abend!" Auch in der Wendung „sich\'n Aff antrinken". Vom Affen als Sinnbild für komisches, kontrolllos Verhalten abgeleitet. Eher derber, aber sehr alltäglicher Ausdruck — kein Hauen und Stechen, eher milder Tadel oder Selbstironie.',
+      beispiel: 'Letzte Nacht hab ich mir\'n schönen Aff anjetrunken!',
+      beispiel_hd: 'Letzte Nacht habe ich mir einen schönen Rausch angetrunken!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-205',
+      ausdruck: 'Tschüsskowski',
+      hochdeutsch: 'Tschüss (russisch-klingende Variante)',
+      bedeutung: '„Tschüsskowski" ist ein scherzhafter, leicht ironischer Abschiedsgruß im Sächsischen — mit der Endung „-kowski" wie russische Namen. Reminiszenz an die DDR-Zeit mit den russischen Einflüssen. „Tschüssikowski" auch in anderen ostdeutschen Regionen. Drückt eine herzlich-spöttische Verabschiedung aus, mit historischer Note. Heute eher nostalgisch oder mit Augenzwinkern verwendet.',
+      beispiel: 'Bis morgen denn — tschüsskowski!',
+      beispiel_hd: 'Bis morgen denn — tschüss!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 's-206',
+      ausdruck: 'Eierkuchen',
+      hochdeutsch: 'Eierkuchen (DDR-Pfannkuchen)',
+      bedeutung: 'Der „Eierkuchen" ist im Sächsischen und ostdeutschen Sprachgebrauch der Pfannkuchen — anders als in Berlin, wo „Pfannkuchen" der Berliner ist. Eine kulinarische und sprachliche Verwirrung. „Eierkuchen mit Zucker und Zitrone" oder „Eierkuchen mit Speck" sind klassische sächsische Mahlzeiten. Die DDR-Variante des Pfannkuchens war oft etwas dicker und sättigender — Studentenfutter.',
+      beispiel: 'Sonntag früh gibt\'s Eierkuchen mit Apfelmus!',
+      beispiel_hd: 'Sonntag früh gibt es Pfannkuchen mit Apfelmus!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-207',
+      ausdruck: 'Sägewerksmeister',
+      hochdeutsch: 'Sägewerksmeister / Schnarcher',
+      bedeutung: 'Ein „Sägewerksmeister" ist im Sächsischen humorvoll-spöttisch jemand, der sehr laut schnarcht — der nächtliche Lärm klingt wie eine arbeitende Säge. „Mein Mann is\'n richtiger Sägewerksmeister!" Eine plastische, bildhafte Wortprägung mit warmen Augenzwinkern. Auch in vielen anderen deutschen Dialekten in ähnlicher Form bekannt — der schnarchende Partner ist ein universelles Schicksal.',
+      beispiel: 'Mein Großvater war\'n Sägewerksmeister allerersten Ranges!',
+      beispiel_hd: 'Mein Großvater war ein Schnarcher allerersten Ranges!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-208',
+      ausdruck: 'Hopplah',
+      hochdeutsch: 'Hoppla! / Vorsicht!',
+      bedeutung: '„Hopplah!" ist im Sächsischen ein häufiger Ausruf der Überraschung, des Erschreckens oder der Warnung — „Hoppla, fast wär\'s passiert!" Auch wenn jemand fast hingefallen wäre. Mit dem typischen sächsischen Langvokal und der weichen Aussprache klingt der Ausruf weniger schroff als das hochdeutsche „Hoppla". Eine warme, sympathische Reaktionsform.',
+      beispiel: 'Hopplah, fast hätt ich die Vase umjeschmissen!',
+      beispiel_hd: 'Hoppla, fast hätte ich die Vase umgeschmissen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-209',
+      ausdruck: 'Wurschtblatt',
+      hochdeutsch: 'Wurstbrot / Wurst-Stulle',
+      bedeutung: 'Das „Wurschtblatt" ist im Sächsischen ein Wurstbrot — wörtlich „Wurstblatt", weil das Brot wie ein Blatt ist und die Wurst darauf liegt. „Pack dir\'n Wurschtblatt für die Pause ein!" In Sachsen mit Bautzner Senf oder Quark belegt. Klassischer Imbiss in der Schule, beim Wandern oder unterwegs. Eine bodenständige sächsische Mahlzeit.',
+      beispiel: 'Für die Pause hat Mutter mir\'n Wurschtblatt jeschmiert.',
+      beispiel_hd: 'Für die Pause hat Mutter mir ein Wurstbrot geschmiert.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-210',
+      ausdruck: 'Pohlheirad',
+      hochdeutsch: 'Bullerjan / Eisenofen',
+      bedeutung: 'Ein „Pohlheirad" oder „Pohlheiradoffn" ist ein traditioneller eiserner Heizofen — der Bullerjan, ein im Erzgebirge und in Skandinavien beliebter rechteckiger Ofen mit Röhren oben und unten. Das Wort „Pohlheirad" ist nicht standardisiert, aber im Volksmund weit verbreitet. Ein Symbol für die kalten Erzgebirgswinter und die Wärme der Stube. Heute auch wieder als nostalgische Heizung im Trend.',
+      beispiel: 'Der Pohlheirad in der Werkstatt heizt richtig schön.',
+      beispiel_hd: 'Der Bullerjan in der Werkstatt heizt richtig schön.',
+      kategorie: 'alltag'
     }
   ]
 };

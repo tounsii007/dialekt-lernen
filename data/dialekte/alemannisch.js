@@ -1357,6 +1357,276 @@ export default {
       beispiel: 'Mir Alemannen — vom Schwarzwald bis Vorarlberg — sind eine Familie.',
       beispiel_hd: 'Wir Alemannen — vom Schwarzwald bis Vorarlberg — sind eine Familie.',
       kategorie: 'menschen'
+    },
+    {
+      id: 'al-151',
+      ausdruck: 'Bähnli',
+      hochdeutsch: 'Kleine Bahn / Straßenbahn',
+      bedeutung: 'Das „Bähnli" ist die alemannische Verkleinerungsform für „Bahn" und bezeichnet meistens die Straßenbahn oder kleinere Schmalspurbahnen wie die Mittenwaldbahn oder Schwarzwaldbahnen. In Freiburg fährt man mit dem „Bähnli" durch die Altstadt, und in Basel ist die „Drämmli" (Tram) ein Symbol des Stadtbildes. Die Verkleinerung drückt im Alemannischen Vertrautheit aus.',
+      beispiel: 'Mit em Bähnli simmer in zehn Minute am Münster.',
+      beispiel_hd: 'Mit der Straßenbahn sind wir in zehn Minuten am Münster.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-152',
+      ausdruck: 'Bobbele',
+      hochdeutsch: 'Baby / Säugling',
+      bedeutung: 'Das „Bobbele" ist im Alemannischen die Bezeichnung für ein Baby oder einen Säugling — eine zärtliche Verniedlichung, die in Südbaden, der Schweiz und im Elsass verbreitet ist. Sie kann auch metaphorisch für jemand sehr Zartes, Empfindliches verwendet werden. Das doppelte „bb" und das gedehnte „ele" geben dem Wort eine warmherzige, kuschelige Note.',
+      beispiel: 'Schau mal s\'Bobbele — wie es lacht!',
+      beispiel_hd: 'Schau mal das Baby — wie es lacht!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-153',
+      ausdruck: 'Brägel',
+      hochdeutsch: 'Bratkartoffeln',
+      bedeutung: 'Der „Brägel" oder „Brägeli" sind im Alemannischen Bratkartoffeln, oft mit Zwiebeln und Speck. In Südbaden und der Schweiz ein klassisches Abendessen, das mit Wurstsalat oder Spiegelei serviert wird. Die Kartoffeln werden gekocht, abgekühlt, in Scheiben geschnitten und dann in der Pfanne knusprig gebraten. Ein echter „Brägel" muss außen kross und innen weich sein.',
+      beispiel: 'Heut\' Abend gibt\'s Brägel mit Spiegelei und Salat.',
+      beispiel_hd: 'Heute Abend gibt es Bratkartoffeln mit Spiegelei und Salat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-154',
+      ausdruck: 'Hoorig',
+      hochdeutsch: 'Haarig / Verzwickt',
+      bedeutung: '„Hoorig" bedeutet im Alemannischen wörtlich „haarig", wird aber meist im übertragenen Sinn für „kompliziert", „verzwickt" oder „heikel" verwendet. Eine „hoorige Situation" ist eine, in der man vorsichtig sein muss. Während der Fasnet ist „Hoorig" auch ein Narrenruf: „Hoorig, hoorig isch d\'Katz!" — ein Schlachtruf der Fasnetnarren in Rottweil und Villingen.',
+      beispiel: 'Des isch jetzt e hoorige Sach mit em Vertrag.',
+      beispiel_hd: 'Das ist jetzt eine verzwickte Sache mit dem Vertrag.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-155',
+      ausdruck: 'Hudel',
+      hochdeutsch: 'Lappen / Lumpen',
+      bedeutung: 'Ein „Hudel" ist im Alemannischen ein alter Lappen oder ein Lumpen — der Putzhudel zum Aufwischen, der Tellerhudel zum Abtrocknen. Übertragen kann ein „Hudel" auch ein unordentlicher, schlampiger Mensch sein. Das Verb „hudle" bedeutet hudeln, also etwas hastig und schlampig machen — daher das geflügelte Wort: „Was schnell gschafft isch, isch g\'hudlet."',
+      beispiel: 'Gib mir mal en Hudel, ich muss schnell wische.',
+      beispiel_hd: 'Gib mir mal einen Lappen, ich muss schnell wischen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-156',
+      ausdruck: 'Bähämbel',
+      hochdeutsch: 'Trottel / Tollpatsch',
+      bedeutung: 'Ein „Bähämbel" ist im südbadischen Alemannisch ein ungeschickter, etwas tollpatschiger Mensch — meist nicht böse gemeint, sondern liebevoll spöttisch. Das Wort hat keine eindeutige Etymologie, klingt aber durch die Doppelung von „äm" wie aus einer kindlichen Sprachwelt. Verwandt mit „Bobbele" in der Klangfärbung — beides klingt warm und gemütlich, selbst wenn es Spott meint.',
+      beispiel: 'Du Bähämbel, jetzt hesch d\'Milch verschüttet!',
+      beispiel_hd: 'Du Tollpatsch, jetzt hast du die Milch verschüttet!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'al-157',
+      ausdruck: 'Goggolori',
+      hochdeutsch: 'Spinnerei / Unsinn',
+      bedeutung: '„Goggolori" ist alemannisch-bayerisch für Unsinn, Quatsch oder einen verworrenen Plan. Im Volkstheater ist der „Goggolori" eine literarische Figur (Wilhelm Friedrich Hauffs Märchen) — ein Kobold, der den Menschen Streiche spielt. „Mach koi Goggolori!" ist eine Aufforderung, vernünftig zu bleiben. Klingt durch das doppelte „go" wie ein Singsang und vermittelt etwas Verspieltes.',
+      beispiel: 'Was isch des für e Goggolori — des kann jo gar net funktioniere!',
+      beispiel_hd: 'Was ist das für ein Unsinn — das kann ja gar nicht funktionieren!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-158',
+      ausdruck: 'Müesli',
+      hochdeutsch: 'Müsli (Frühstücksflocken)',
+      bedeutung: 'Das „Müesli" wurde 1900 vom Schweizer Arzt Maximilian Bircher-Benner für die Patienten seines Sanatoriums in Zürich erfunden — als gesunde Vollkost mit Haferflocken, geriebenem Apfel, Nüssen und Joghurt. Das Wort ist alemannische Verkleinerung von „Mues" (Brei). Heute weltweit als „Müsli" bekannt, aber im Alemannischen bleibt es das „Müesli" — und im Bircher-Müesli traditionell mit Apfel, nicht mit Beeren.',
+      beispiel: 'Zum Zmorge gibt\'s e Müesli mit frische Beeri.',
+      beispiel_hd: 'Zum Frühstück gibt es ein Müsli mit frischen Beeren.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-159',
+      ausdruck: 'Spätzlebrett',
+      hochdeutsch: 'Spätzle-Brett',
+      bedeutung: 'Das Spätzlebrett ist ein traditionelles alemannisch-schwäbisches Küchenwerkzeug: ein flaches Holzbrett mit Griff, auf dem der Spätzleteig ausgestrichen und mit einem Schaber dünn ins kochende Wasser geschabt wird. Im Gegensatz zur modernen Spätzlepresse erfordert das Brett Können und Erfahrung — gute Spätzle-Macher schaben mit einer ruhigen Hand und gleichmäßigem Rhythmus. Ein Familienerbstück in vielen alemannischen Haushalten.',
+      beispiel: 'D\'Oma macht d\'Spätzle no mit em Brett — des isch echt!',
+      beispiel_hd: 'Die Oma macht die Spätzle noch mit dem Brett — das ist echt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-160',
+      ausdruck: 'Briigel',
+      hochdeutsch: 'Kleines Brötchen',
+      bedeutung: 'Das „Briigel" ist im Alemannischen ein kleines Brötchen oder ein Brotbrocken — auch im Sinne von „kleines Stück Brot". In der Bäckersprache gibt es „Briigeli", kleine knusprige Brötchen, die zum Vesper gereicht werden. Verwandt mit „Bröckle" (Bröckchen). Der Ausdruck zeigt die alemannische Vorliebe für Verkleinerungsformen, die alles Gemütliche und Hausgemachte ausdrücken.',
+      beispiel: 'Magsch no e Briigel mit Butter und Marmelade?',
+      beispiel_hd: 'Magst du noch ein Brötchen mit Butter und Marmelade?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-161',
+      ausdruck: 'Stube',
+      hochdeutsch: 'Wohnzimmer / Gaststube',
+      bedeutung: 'Die „Stube" ist im Alemannischen das Wohnzimmer oder die gemütliche Gaststube. Traditionell mit Kachelofen, Eckbank und Herrgottswinkel ausgestattet. In Gaststätten ist die „Stube" der Hauptraum — die „Wirtsstube", „Bauernstube" oder „Schwarzwaldstube" als kulinarische Institution. Das Wort drückt etwas Heimeliges, Warmes aus: hier wird geredet, gegessen, gefeiert. „Stuben-arrest" hat hier einen freundlicheren Klang.',
+      beispiel: 'Komm doch in d\'Stube, da isch\'s warm.',
+      beispiel_hd: 'Komm doch ins Wohnzimmer, da ist es warm.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-162',
+      ausdruck: 'Goofe',
+      hochdeutsch: 'Kinder',
+      bedeutung: '„Goofe" ist alemannisch und schweizerdeutsch für „Kinder" — meist mehrere Kinder, manchmal auch nur ein einzelnes („Goof"). Der Ausdruck klingt freundlich-vertraut, kann aber je nach Tonfall auch leicht abschätzig wirken („die Goofe machen wieder Lärm!"). In der Familie verwendet, ist es ein liebevolles Sammelwort für den eigenen Nachwuchs.',
+      beispiel: 'D\'Goofe sind scho widder am Tobe!',
+      beispiel_hd: 'Die Kinder sind schon wieder am Toben!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-163',
+      ausdruck: 'Häfeli',
+      hochdeutsch: 'Töpfchen / Kindergarten (Schweiz)',
+      bedeutung: 'Im Alemannischen und besonders im Schweizerdeutschen ist „Häfeli" sowohl ein kleines Töpfchen als auch der erste Kindergartenjahr. In Basel und Zürich gehen die Kinder ins „Häfeli" — das ist die jüngere Stufe vor dem „Chindsgi". Wortlich „kleiner Hafen/Topf", weil dort die Kinder noch in Häfen sitzen. In Südbaden eher als Küchenbegriff für kleine Töpfe.',
+      beispiel: 'Unser Kleiner geht jetzt scho ins Häfeli.',
+      beispiel_hd: 'Unser Kleiner geht jetzt schon in den Kindergarten.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-164',
+      ausdruck: 'Brut',
+      hochdeutsch: 'Brot',
+      bedeutung: '„Brut" ist die alemannische Aussprache von „Brot" — das „o" wird zu einem „u" geschoben, was den weichen Klang des Alemannischen ausmacht. In Südbaden, dem Elsass und der Schweiz spricht man von „Brut", „Schwarzbrut", „Weißbrut". Das Brot hat im Alemannischen einen besonderen Stellenwert: zum Vesper, zum Wein, zum Käse — Brut isch eigentlich überall dabei.',
+      beispiel: 'Hol no e Brut beim Bäcker, mir sind ausverkauft.',
+      beispiel_hd: 'Hol noch ein Brot beim Bäcker, wir sind ausverkauft.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-165',
+      ausdruck: 'Pflümli',
+      hochdeutsch: 'Pflaumenbrand / Zwetschgenwasser',
+      bedeutung: '„Pflümli" ist der alemannische und schweizerische Schnaps aus Pflaumen oder Zwetschgen — ein klarer, fruchtiger Obstbrand mit hohem Alkoholgehalt (meist 40 %). In Südbaden ist „Pflümli" der typische Digestif nach dem Essen oder das Wärmemittel bei Erkältung. Die kleinen alemannischen Brennereien produzieren ihn aus eigenen Früchten — ein traditionsreiches Handwerk im Schwarzwald.',
+      beispiel: 'Nach em Esse gibt\'s en Pflümli zum Verdaue.',
+      beispiel_hd: 'Nach dem Essen gibt es einen Pflaumenbrand zum Verdauen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-166',
+      ausdruck: 'Hüseli',
+      hochdeutsch: 'Häuschen',
+      bedeutung: 'Das „Hüseli" ist die alemannisch-schweizerische Verkleinerung von „Haus" — ein kleines Häuschen, oft mit liebevoller Konnotation. „E Hüseli im Grüne" beschreibt das Idealbild eines Zuhauses in der Natur. Die Verkleinerungsform mit „-eli" ist typisch alemannisch und kommt von der Schweiz bis ins Elsass vor. Sie drückt Wärme, Vertrautheit und Sympathie aus.',
+      beispiel: 'Mir hen es chlises Hüseli am Bergli.',
+      beispiel_hd: 'Wir haben ein kleines Häuschen am Berg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-167',
+      ausdruck: 'Tüpfli',
+      hochdeutsch: 'Tüpfchen / Pünktchen',
+      bedeutung: 'Ein „Tüpfli" ist alemannisch für ein Pünktchen oder ein winziges Detail. „S\'i-Tüpfli" (das i-Pünktchen) ist die letzte feine Kleinigkeit, die ein Werk vervollständigt — „das Tüpfelchen auf dem i". Im Schweizerdeutschen ist „tüpflisch" ein Adjektiv für jemanden, der pedantisch genau ist. Ein „Tüpflischiisser" ist ein Pedant — herrlich bildhafte alemannische Wortschöpfung.',
+      beispiel: 'Des isch s\'Tüpfli uf em i — perfekt!',
+      beispiel_hd: 'Das ist das Tüpfelchen auf dem i — perfekt!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-168',
+      ausdruck: 'Föhn',
+      hochdeutsch: 'Föhnwind',
+      bedeutung: 'Der „Föhn" ist im Alemannischen Raum (Schwarzwald, Schweiz, Vorarlberg) ein warmer, trockener Fallwind aus den Alpen, der besonders im Frühjahr und Herbst auftritt. Er kann Schnee schmelzen, Sicht klären und Kopfschmerzen verursachen — die „Föhnkrankheit" ist ein bekanntes Phänomen. „Föhntag" bedeutet ungewöhnlich klare Sicht auf die Berge — bei Föhn sieht man vom Bodensee bis zu den Alpen.',
+      beispiel: 'Heut isch Föhn — d\'Alpen sind so klar zum sehe!',
+      beispiel_hd: 'Heute ist Föhn — die Alpen sind so klar zu sehen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-169',
+      ausdruck: 'Bise',
+      hochdeutsch: 'Kalter Nordostwind',
+      bedeutung: 'Die „Bise" ist im Alemannischen ein kalter, schneidender Nordost-Wind, der besonders im Winter und Frühjahr über dem Bodensee und am Hochrhein weht. Sie kann tagelang anhalten und ist gefürchtet, weil sie die Temperaturen empfindlich kalt macht („Bisenkälte"). Das Wort kommt vom althochdeutschen „bisa" (Sturmwind) und ist im ganzen alemannischen Raum gebräuchlich.',
+      beispiel: 'D\'Bise pfeift heut — zieh dir was Warmes an!',
+      beispiel_hd: 'Der Nordostwind pfeift heute — zieh dir was Warmes an!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-170',
+      ausdruck: 'Gschpusi',
+      hochdeutsch: 'Liebschaft / Flirt',
+      bedeutung: 'Ein „Gschpusi" ist im Alemannischen und Bayerischen eine Liebschaft, ein Flirt oder ein heimlicher Liebhaber. Das Wort stammt vom italienischen „sposa" (Braut/Verlobte) und kam über die Söldner ins Alemannische. Ein „Gschpusi haben" bedeutet, eine kleine, oft heimliche Affäre zu pflegen. Der Klang ist verspielt und macht aus dem Wort eine kleine sprachliche Schmunzelei.',
+      beispiel: 'Hesch wieder en neue Gschpusi?',
+      beispiel_hd: 'Hast du wieder einen neuen Flirt?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-171',
+      ausdruck: 'Müllerhof',
+      hochdeutsch: 'Mühlenhof',
+      bedeutung: 'Der „Müllerhof" oder „Müllerei" sind im Schwarzwald typische Bauernhöfe mit eigener Wassermühle — viele wurden zu Museumshöfen umgebaut, wie das Vogtsbauernhof-Museum in Gutach. Sie zeigen die alemannische Bauernkultur des 16.-19. Jahrhunderts: das Vieh im Erdgeschoss, die Familie im ersten Stock, der Heuvorrat unter dem mächtigen Walmdach. Architektonische Symbole des Schwarzwald.',
+      beispiel: 'Am Wochenend\' fahre mir zum Müllerhof ins Museum.',
+      beispiel_hd: 'Am Wochenende fahren wir zum Müllerhof ins Museum.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-172',
+      ausdruck: 'Fasnetdiischtig',
+      hochdeutsch: 'Fastnachts-Dienstag',
+      bedeutung: 'Der „Fasnetdiischtig" ist der Höhepunkt der schwäbisch-alemannischen Fasnet — der Dienstag vor Aschermittwoch. In Rottweil, Villingen, Elzach und vielen anderen Hochburgen findet an diesem Tag der große Narrensprung statt: Tausende Narren in historischen Häs ziehen durch die Stadt. Anders als die rheinische Karneval ist die schwäbisch-alemannische Fasnet ernster, traditioneller, mit jahrhundertealten Figuren und Riten.',
+      beispiel: 'Am Fasnetdiischtig isch d\'ganze Stadt uf de Bei.',
+      beispiel_hd: 'Am Fastnachts-Dienstag ist die ganze Stadt auf den Beinen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-173',
+      ausdruck: 'Strähle',
+      hochdeutsch: 'Kämmen',
+      bedeutung: '„Strähle" ist alemannisch für „kämmen" oder „durchkämmen" — die Haare strählen, die Wolle strählen. Verwandt mit dem hochdeutschen „Strähne". In der Landwirtschaft wird das Vieh „gstrählt" (gestriegelt), und beim Wäschewaschen werden die Fasern „durchgstrählt". Ein Wort, das die feine, sorgfältige Bewegung des Durchkämmens lautmalerisch einfängt.',
+      beispiel: 'D\'Mama strählt em Kind d\'Haare.',
+      beispiel_hd: 'Die Mama kämmt dem Kind die Haare.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-174',
+      ausdruck: 'Schnudderchatz',
+      hochdeutsch: 'Erkältetes Kind / Rotznase',
+      bedeutung: 'Eine „Schnudderchatz" ist im Alemannischen und Schweizerdeutschen ein erkältetes Kind mit triefender Nase — wortwörtlich eine „Schnupfen-Katze". Der Ausdruck ist liebevoll-spöttisch gemeint und zeigt die alemannische Freude an bildhaften zusammengesetzten Wörtern. Auch erwachsene Verschnupfte können als „Schnudderchatz" bezeichnet werden — meistens vom besorgten Partner.',
+      beispiel: 'Du bisch jo e richtigi Schnudderchatz — bleib im Bett!',
+      beispiel_hd: 'Du bist ja eine richtige Rotznase — bleib im Bett!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-175',
+      ausdruck: 'Chatz',
+      hochdeutsch: 'Katze',
+      bedeutung: '„Chatz" ist die alemannische und schweizerdeutsche Form für „Katze" — das „K" wird zum charakteristischen „Ch" (gesprochen wie das Ach-Laut). Der Wandel von „k" zu „ch" ist eines der Erkennungsmerkmale des Alemannischen. Eine „Chatz" ist nicht nur das Tier, sondern auch metaphorisch ein wendiger, eigensinniger Mensch. Auch in Redensarten: „d\'Chatz im Sack chaufe" (die Katze im Sack kaufen).',
+      beispiel: 'Mir hen e schwarzi Chatz im Hus.',
+      beispiel_hd: 'Wir haben eine schwarze Katze im Haus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-176',
+      ausdruck: 'Chuchichäschtli',
+      hochdeutsch: 'Küchenschränkchen',
+      bedeutung: 'Das „Chuchichäschtli" ist das berühmteste alemannisch-schweizerdeutsche Wort — der Shibboleth-Test für Mundartfähigkeit. Wortlich „Küchenschränkchen", besteht es aus drei „Ch"-Lauten, die ein nichtschweizerischer Sprecher meistens nicht korrekt aussprechen kann. Auch in Südbaden gebraucht, wenn auch mit weicherer Aussprache. Touristen werden gerne gebeten, dieses Wort nachzusprechen — und scheitern oft daran.',
+      beispiel: 'Stell d\'Gläser ins Chuchichäschtli!',
+      beispiel_hd: 'Stell die Gläser ins Küchenschränkchen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-177',
+      ausdruck: 'Zwiebelkuche',
+      hochdeutsch: 'Zwiebelkuchen',
+      bedeutung: 'Der „Zwiebelkuche" ist eine alemannisch-schwäbische Spezialität, besonders im Herbst gegessen mit „Neuem Wein" (Federweißer). Ein Hefeteig wird belegt mit gedünsteten Zwiebeln, Speck, Eiern und Saurer Sahne, dann gebacken. In Südbaden und am Kaiserstuhl wird der Zwiebelkuche traditionell zur Weinlese serviert — die Wärme des Ofens und der süffige neue Wein vertragen sich perfekt.',
+      beispiel: 'Im Herbst gibt\'s Zwiebelkuche mit neuem Wii.',
+      beispiel_hd: 'Im Herbst gibt es Zwiebelkuchen mit neuem Wein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-178',
+      ausdruck: 'Glunke',
+      hochdeutsch: 'Klumpen / Brocken',
+      bedeutung: 'Eine „Glunke" ist im Alemannischen ein Klumpen, ein zusammengeballter Brocken — von Erde, Schnee, Teig oder Schmutz. Auch übertragen: „e Glunke Geld" ist eine größere Summe. Das Wort hat einen eher derben Klang, drückt aber bildhaft eine schwere, kompakte Masse aus. In Südbaden auch für einen ungeschickten, behäbigen Menschen verwendet.',
+      beispiel: 'Da hängt e große Glunke Schnee am Dach.',
+      beispiel_hd: 'Da hängt ein großer Klumpen Schnee am Dach.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-179',
+      ausdruck: 'Gschwellti',
+      hochdeutsch: 'Pellkartoffeln',
+      bedeutung: '„Gschwellti" sind im Alemannischen und Schweizerdeutschen Pellkartoffeln — in der Schale gekochte Kartoffeln, die mit der Hand geschält und gegessen werden. Traditionell zum Käse („Chäs mit Gschwellti") oder mit Quark serviert. In der Schweiz ein nationales Gericht, in Südbaden besonders im Sommer beliebt — einfach, ehrlich, deftig. Das Wort kommt von „schwellen" (Kartoffeln schwellen beim Kochen).',
+      beispiel: 'Heut Abend gibt\'s Gschwellti mit em frische Chäs.',
+      beispiel_hd: 'Heute Abend gibt es Pellkartoffeln mit frischem Käse.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-180',
+      ausdruck: 'Lueg!',
+      hochdeutsch: 'Schau! / Sieh mal!',
+      bedeutung: '„Lueg!" ist die alemannische Aufforderung „Schau!" — vom mittelhochdeutschen „luogen" (schauen). Der Imperativ wird im ganzen alemannischen Raum verwendet, von Südbaden bis ins Wallis. Längere Form: „Lueg amol!" (Schau mal!). Mit gespreiztem Ton drückt es Erstaunen, Aufmerksamkeit oder Warnung aus. Eines der charakteristischsten Wörter des Alemannischen — Schweizer Touristen erkennt man am „Lueg!".',
+      beispiel: 'Lueg amol — was für e schöne Sonneuntergang!',
+      beispiel_hd: 'Schau mal — was für ein schöner Sonnenuntergang!',
+      kategorie: 'redensart'
     }
   ]
 };
