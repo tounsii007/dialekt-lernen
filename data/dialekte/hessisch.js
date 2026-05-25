@@ -3142,6 +3142,276 @@ export default {
       beispiel: 'Auf der Kerb wird Hessen-Tanz getanzt.',
       beispiel_hd: 'Auf der Kirmes wird hessischer Volkstanz getanzt.',
       kategorie: 'musik'
+    },
+    {
+      id: 'h-351',
+      ausdruck: 'Digga',
+      hochdeutsch: 'Kumpel / Alter',
+      bedeutung: '„Digga" ist hessisch-jugendsprachliche Anrede für Freunde — vor allem in Frankfurt verbreitet. Stammt aus dem hamburgischen „Digger", in Hessen aber etabliert. „Was geht, Digga?" als Standard-Begrüßung. Junge Hessen verwenden es als universelle Anrede. Im Gegensatz zur älteren Generation, die „Schorsch" oder „Hansi" sagt. Beispiel für moderne Hessen-Jugendsprache. Symbol für urbane Frankfurt-Identität der jüngeren Generation.',
+      beispiel: 'Was machst du heut Abend, Digga?',
+      beispiel_hd: 'Was machst du heute Abend, Kumpel?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-352',
+      ausdruck: 'Geil',
+      hochdeutsch: 'toll / super',
+      bedeutung: '„Geil" ist hessisch-jugendsprachlich für „toll", „super", „cool" — verbreitet in der jüngeren Generation. Anders als die ältere Verwendung als „lüstern" hat „geil" als Verstärker heute keine sexuelle Konnotation mehr. „Voll geil!" für „Klasse!". Hessen sind sprachlich offen für jugendsprachliche Adaptionen. Auch in Werbung verwendet („Geile Preise!"). Symbol für moderne hessische Umgangssprache. Mütter klagen oft über die Verwendung.',
+      beispiel: 'Des Konzert war voll geil!',
+      beispiel_hd: 'Das Konzert war voll super!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-353',
+      ausdruck: 'Auf jeden',
+      hochdeutsch: 'auf jeden Fall',
+      bedeutung: '„Auf jeden" ist verkürzte hessisch-jugendsprachliche Variante von „auf jeden Fall". „Auf jeden komm i mit!" für „Auf jeden Fall komme ich mit!". Drückt 100% Zustimmung aus. Hessische Sprachfreude — Wörter werden gekürzt für mehr Lebendigkeit. Im Gegensatz zur älteren Generation, die ausführlich spricht. „Auf jeden, Digga!" als doppelte Verstärkung. Symbol für moderne hessische Effizienz im Sprechen.',
+      beispiel: 'Auf jeden geh i morgen Abend in d\'Wirtschaft.',
+      beispiel_hd: 'Auf jeden Fall gehe ich morgen Abend in die Wirtschaft.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-354',
+      ausdruck: 'Krass',
+      hochdeutsch: 'krass / heftig',
+      bedeutung: '„Krass" ist universeller Jugend-Verstärker für „intensiv", „heftig", „beeindruckend". In Hessen sehr verbreitet. „Des is krass!" kann positiv (super) oder negativ (schlimm) gemeint sein — je nach Kontext und Tonfall. „Krass derbe" als verstärkende Doppelung. Mütter klagen, dass Kinder „nur noch krass" sagen. Hessische jüngere Generation verwendet es täglich. Symbol für moderne jugendliche Hessen-Sprache.',
+      beispiel: 'Der Eintracht-Sieg war krass!',
+      beispiel_hd: 'Der Eintracht-Sieg war heftig (super)!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-355',
+      ausdruck: 'Lan',
+      hochdeutsch: 'Mann / Junge',
+      bedeutung: '„Lan" ist hessisch-jugendsprachliche Anrede, stammt aus dem türkischen „lan" („Mann"). In Frankfurt durch die multikulturelle Jugend verbreitet. „Was geht, Lan?" als Standard-Begrüßung. Drückt Vertrautheit und gleiches Niveau aus. Mehr verbreitet in städtischen Vierteln (Sachsenhausen, Bornheim, Höchst) als in ländlichen Gegenden. Symbol für hessische multikulturelle Sprache und Integration. Wird auch von deutschen Jugendlichen verwendet.',
+      beispiel: 'Was machst du heut, Lan?',
+      beispiel_hd: 'Was machst du heute, Mann?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-356',
+      ausdruck: 'Voll der/die/das',
+      hochdeutsch: 'völlig der/die/das',
+      bedeutung: '„Voll der X" ist hessisch-jugendsprachliche Verstärkung — „Voll der gute Apfelwein!" für „Wirklich guter Apfelwein!". „Voll die Stimmung!" für tolle Stimmung. „Voll das Theater!" für viel Aufregung. Konstruktion mit Artikel und Substantiv — modern, lebendig, jugendlich. Ältere Hessen finden\'s ungewohnt. „Voll der Spaß!" als ironische Wendung. Symbol für moderne hessische Adjektiv-Verstärkung.',
+      beispiel: 'Voll der gute Apfelwein heut!',
+      beispiel_hd: 'Wirklich guter Apfelwein heute!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-357',
+      ausdruck: 'Diggi',
+      hochdeutsch: 'kleiner Kumpel',
+      bedeutung: '„Diggi" ist Diminutiv-Variante von „Digga" — noch zärtlicher, oft für kleinere Kinder oder vertraute Freunde verwendet. „Komm her, Diggi!" als liebevolle Anrede. In Frankfurt-Bornheim und Sachsenhausen häufig zu hören. Drückt enge Freundschaft oder familiäre Vertrautheit aus. Hessische Sprach-Innovation — Diminutiv-Variation populärer Jugend-Anreden. Symbol für moderne hessische Wärme im Slang.',
+      beispiel: 'Mei Diggi, des is\' ja unglaublich!',
+      beispiel_hd: 'Mein Kumpel, das ist ja unglaublich!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-358',
+      ausdruck: 'Bombe!',
+      hochdeutsch: 'super / fantastisch',
+      bedeutung: '„Bombe!" ist hessisch-jugendsprachlicher Begeisterungsausruf — „Voll Bombe!" für „Absolut super!". Drückt extreme positive Bewertung aus. Stammt vom „Knaller" (Bombe als Symbol für überwältigend). „Des is\' Bombe!" als allgemeine Anerkennung. In Frankfurt-Slang sehr beliebt, vor allem in Sport- und Musik-Kontexten. Symbol für moderne hessische Verstärkung. Im Gegensatz zu „doof" oder „mies".',
+      beispiel: 'Der neue Song is\' voll Bombe!',
+      beispiel_hd: 'Der neue Song ist absolut super!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-359',
+      ausdruck: 'Verkackt',
+      hochdeutsch: 'verloren / kaputt',
+      bedeutung: '„Verkackt" ist hessisch-jugendsprachliche Bezeichnung für „etwas schiefgegangen ist" — „Des is\' verkackt!" für „Das ist kaputt/schlecht gelaufen". Stammt vom derberen „verkacken" (verlieren, verderben). Im Sport oft verwendet: „Eintracht hat verkackt!". Auch metaphorisch für misslungene Pläne. Mütter mahnen Kinder: „So spricht man nicht!". Trotzdem im jugendlichen Hessen-Sprach weit verbreitet. Symbol für direkte jugendliche Bewertung.',
+      beispiel: 'Mei Klassenarbeit hab i total verkackt.',
+      beispiel_hd: 'Meine Klassenarbeit habe ich total versaut.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-360',
+      ausdruck: 'Bratzeit',
+      hochdeutsch: 'Brotzeit (umgangssprachlich)',
+      bedeutung: '„Bratzeit" ist hessisch-jugendsprachliche Verballhornung von „Brotzeit" — meist mit Augenzwinkern verwendet. „Auf in die Bratzeit!" für „auf zur Pause/Mahlzeit". Im Kontext mit Hessen-Schmäh und Selbstironie. Drückt liebevolle Distanz zur älteren Generation aus, die „Brotzeit" ernst meint. Modern-hessische Sprachfreude. Auch metaphorisch: „Sich zur Bratzeit machen" für sich entspannen. Symbol für junge hessische Wortspielfreude.',
+      beispiel: 'Komm, mer machen Bratzeit!',
+      beispiel_hd: 'Komm, machen wir Brotzeit!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-361',
+      ausdruck: 'Geht ab',
+      hochdeutsch: 'geht los / startet',
+      bedeutung: '„Geht ab" ist hessisch-jugendsprachlich für „etwas geht los, beginnt mit voller Power". „Heut Abend geht ab!" für „heute Abend ist Party!". „Die Eintracht geht ab!" als Fan-Begeisterung. Drückt Energie und Erwartung aus. Stammt vom „abgehen" (loslegen). Im hessischen Sport- und Party-Kontext verbreitet. Mütter verstehen es als Warnung: das Kind plant etwas Lautes. Symbol für moderne hessische Aktion-Sprache.',
+      beispiel: 'Heut Abend geht ab im Atschel!',
+      beispiel_hd: 'Heute Abend geht es ab im Atschel!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-362',
+      ausdruck: 'Chillen',
+      hochdeutsch: 'entspannen',
+      bedeutung: '„Chillen" ist hessisch-jugendsprachliche Anglizismus für „entspannen". „Mer chillen heut Abend in der Wirtschaft" für „wir entspannen heute Abend in der Wirtschaft". Drückt moderne hessische Lässigkeit aus. Mütter klagen: „Was heißt chillen? Wir sagen entspannen!". Trotzdem im Sprachgebrauch der jüngeren Generation universell. Hessen integrieren Anglizismen in den Dialekt. Symbol für moderne hessische Sprachmischung.',
+      beispiel: 'Lasst uns mol chillen am Mainufer.',
+      beispiel_hd: 'Lasst uns mal entspannen am Mainufer.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-363',
+      ausdruck: 'Was geht?',
+      hochdeutsch: 'wie geht\'s? / was ist los?',
+      bedeutung: '„Was geht?" ist hessisch-jugendsprachliche Standard-Begrüßung — vergleichbar mit englischem „What\'s up?". „Was geht, Digga?" als Eingangsfrage. Drückt lockere Interesse aus. Im Gegensatz zur älteren „Wie geht\'s?" lockerer und weniger förmlich. Hessische Jugend verwendet es täglich. Im Frankfurt-Slang etabliert. Symbol für moderne hessische Anrede. Antwort meist: „Geht so", „Voll geil", oder „Nix Besonderes".',
+      beispiel: 'Was geht, Digga? Was machst du heut?',
+      beispiel_hd: 'Was ist los, Kumpel? Was machst du heute?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'h-364',
+      ausdruck: 'Boah',
+      hochdeutsch: 'Wow / Oh',
+      bedeutung: '„Boah" ist hessisch-jugendsprachlicher Ausruf der Verwunderung, Bewunderung oder Empörung. „Boah, des is\' krass!" als allgemeine Reaktion. Wird mit verschiedenen Tonfällen verwendet — von Bewunderung („Boah, gut!") bis zu Empörung („Boah, nervig!"). Lautmalerei für intensive Emotion. In hessischer Jugendsprache omnipräsent. Mütter sagen: „Sag nicht ständig Boah!". Symbol für moderne hessische emotionale Reaktionen.',
+      beispiel: 'Boah, der Sieg war echt knapp!',
+      beispiel_hd: 'Wow, der Sieg war echt knapp!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-365',
+      ausdruck: 'Sahne',
+      hochdeutsch: 'super / klasse',
+      bedeutung: '„Sahne" ist hessisch-jugendsprachliche Bewertung für „klasse, super". „Voll Sahne!" als Verstärkung. Anders als die ältere Verwendung (Milchprodukt) heute Synonym für „toll". Stammt vermutlich von „Sahnehäubchen" (Sahne als Krönung). Im Frankfurt-Slang etabliert, vor allem unter Eintracht-Fans. „Sahne-Tor" für ein perfektes Tor. Hessische Sprachfreude — alltägliche Wörter werden zu Bewertungen. Symbol für moderne hessische Verstärkung.',
+      beispiel: 'Voll Sahne, der neue Stürmer!',
+      beispiel_hd: 'Voll klasse, der neue Stürmer!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-366',
+      ausdruck: 'Atze',
+      hochdeutsch: 'Bruder / Kumpel',
+      bedeutung: '„Atze" ist hessisch-jugendsprachliche Anrede für engen Freund — „Was geht, Atze?". Stammt vom alten deutschen „Atze" (älterer Bruder, eng verbundener Mann). In Frankfurter Jugendsprache als Synonym für „Digga" verwendet. Drückt brüderliche Vertrautheit aus. „Mei Atze" als „mein Bester". Im sportlichen Kontext (Eintracht-Fans) und in der städtischen Jugendsprache. Symbol für hessische multikulturelle Anreden-Vielfalt.',
+      beispiel: 'Komm, Atze, mer geh\'n auf\'n Apfelwein.',
+      beispiel_hd: 'Komm, Bruder, wir gehen auf einen Apfelwein.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-367',
+      ausdruck: 'Voll der Hessen',
+      hochdeutsch: 'echter Hesse',
+      bedeutung: '„Voll der Hessen" ist Selbstcharakterisierung der jüngeren Generation — drückt hessische Identität mit modernem Selbstbewusstsein aus. „I bin halt voll der Hessen!" als ironische Verstärkung. Verbindet jugend-sprachliche „voll der X"-Konstruktion mit traditioneller Hessen-Identität. Symbol für moderne hessische Selbstwahrnehmung — bodenständig und urban zugleich. Auch in Werbespots verwendet.',
+      beispiel: 'I bin voll der Hessen — Apfelwein muss sein!',
+      beispiel_hd: 'Ich bin voll der Hesse — Apfelwein muss sein!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-368',
+      ausdruck: 'Wallah',
+      hochdeutsch: 'wirklich / ehrlich',
+      bedeutung: '„Wallah" ist hessisch-multikulturelle Beteuerung — stammt aus dem Arabischen „wallahi" (bei Gott). In Frankfurt durch die multikulturelle Jugend etabliert. „Wallah, des stimmt!" für „Wirklich, das stimmt!". Drückt Wahrheit und Beteuerung aus. Mehr verbreitet in städtischen Vierteln (Bockenheim, Höchst, Bornheim). Symbol für hessische multikulturelle Sprache. Wird auch von deutschen Jugendlichen verwendet, manchmal mit ironischer Note.',
+      beispiel: 'Wallah, des is\' Wahrheit!',
+      beispiel_hd: 'Ehrlich, das ist Wahrheit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-369',
+      ausdruck: 'Hessebabbler',
+      hochdeutsch: 'hessisch sprechender Mensch',
+      bedeutung: '„Hessebabbler" ist humorvolle Selbstbezeichnung — „einer, der babbelt wie a Hesse". Kann liebevoll oder spöttisch gemeint sein. In Komödien und Mundart-Theater verwendet. Drückt Stolz auf den Dialekt aus. „A echter Hessebabbler" für jemand mit starkem hessischen Akzent. Im Frankfurter Selbstbild positiv. Symbol für hessische Mundart-Identität. Wird auch als Markenname von Bratwurst-Imbissen verwendet („Hessebabbler-Wurst").',
+      beispiel: 'Mei Opa is\' a echter Hessebabbler.',
+      beispiel_hd: 'Mein Opa ist ein echter Hesse-Plauderer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-370',
+      ausdruck: 'Banane!',
+      hochdeutsch: 'Quatsch! / Unsinn!',
+      bedeutung: '„Banane!" ist hessisch-umgangssprachlicher Ausruf der Ablehnung — „Banane, des is\' doch Quatsch!". Stammt vom „alles Banane" für „alles Mist". Klingt liebevoll-spöttisch, keine harte Beleidigung. Vergleichbar mit „Quatsch mit Soße!". Wird mit Hand-Geste begleitet — Wedeln. In hessischen Diskussionen verbreitet. Symbol für hessische Lockerheit beim Widersprechen. Mütter sagen liebevoll: „Banane, mei Schatz!".',
+      beispiel: 'Banane! Des hat nix mit der Wahrheit zu tun!',
+      beispiel_hd: 'Quatsch! Das hat nichts mit der Wahrheit zu tun!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-371',
+      ausdruck: 'Komplett crazy',
+      hochdeutsch: 'völlig verrückt',
+      bedeutung: '„Komplett crazy" ist hessisch-jugendsprachliches Anglizismus für „völlig verrückt". „Des is\' komplett crazy!" als Verstärkung. Drückt Überraschung oder Unverständnis aus. Im hessischen Frankfurt-Slang etabliert. Mütter klagen: „Sag verrückt, nicht crazy!". Trotzdem im jugendlichen Wortschatz universell. Symbol für moderne hessische Anglizismen-Integration. Hessische Sprachoffenheit für englische Lehnwörter.',
+      beispiel: 'Des Wochenend war komplett crazy!',
+      beispiel_hd: 'Das Wochenende war völlig verrückt!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-372',
+      ausdruck: 'Kollege',
+      hochdeutsch: 'Kollege / Freund',
+      bedeutung: '„Kollege" ist hessisch-jugendsprachliche Anrede für engen Freund — vergleichbar mit Digga, Atze, Lan. „Was geht, Kollege?" als Begrüßung. Stammt vom Arbeitsumfeld, aber semantisch erweitert. In Frankfurter Jugendsprache als universelle männliche Anrede. „Mei Kollege" für „mein Bester". Im sportlichen und kulturellen Kontext verbreitet. Symbol für hessische Anredevielfalt. Kann auch ironisch gemeint sein.',
+      beispiel: 'Hey Kollege, wann sehen wir uns wieder?',
+      beispiel_hd: 'Hey Kollege, wann sehen wir uns wieder?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-373',
+      ausdruck: 'Bombenstimmung',
+      hochdeutsch: 'tolle Stimmung',
+      bedeutung: '„Bombenstimmung" ist hessisch-umgangssprachlich für „tolle Stimmung" — auf Volksfesten, Konzerten, Sport-Events. „Im Stadion herrschte Bombenstimmung!" als Eintracht-Fan-Bewertung. Drückt extreme positive Atmosphäre aus. „Bombe" + „Stimmung" — typisch hessische Verstärkungs-Wortbildung. Symbol für hessische Lebensfreude und Fest-Kultur. Auch in Reisebericht-Sprache: „Auf Mallorca herrschte Bombenstimmung!".',
+      beispiel: 'Auf der Kerb war Bombenstimmung bis spät in d\'Nacht.',
+      beispiel_hd: 'Auf der Kirmes war tolle Stimmung bis spät in die Nacht.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-374',
+      ausdruck: 'Mach\'s gut',
+      hochdeutsch: 'Tschüss / mach\'s gut',
+      bedeutung: '„Mach\'s gut" ist hessische Standard-Verabschiedung — neutraler als „Pfiat di" (südländisch), wärmer als „Tschüss". Wird unter Freunden, Kollegen, Familien verwendet. Drückt aufrichtige Wunsch nach Wohlergehen aus. „Mach\'s gut, mei Liaba!" als hessische Variation. Symbol für hessische Mittel-Ebene zwischen Förmlichkeit und Intimität. Universell verwendbar. Auch im Geschäftsleben akzeptiert.',
+      beispiel: 'Mach\'s gut, wir sehen uns nächste Woche!',
+      beispiel_hd: 'Mach\'s gut, wir sehen uns nächste Woche!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'h-375',
+      ausdruck: 'Bro',
+      hochdeutsch: 'Bruder / Kumpel',
+      bedeutung: '„Bro" ist hessisch-jugendsprachliche Kurzform von „Bruder" — Anglizismus, der durch US-Hip-Hop in den hessischen Slang gekommen ist. „Was geht, Bro?" als Standardanrede unter jüngeren Männern. Drückt brüderliche Vertrautheit aus. In Frankfurt-Sachsenhausen und Bornheim verbreitet. Im Gegensatz zu „Digga" oder „Atze" stärker amerikanisiert. Symbol für hessische multikulturelle Sprach-Adaptation. Wird auch ironisch verwendet.',
+      beispiel: 'Was geht, Bro? Hast du Lust auf Ebbelwoi?',
+      beispiel_hd: 'Was geht, Bruder? Hast du Lust auf Apfelwein?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-376',
+      ausdruck: 'Bombe drauf',
+      hochdeutsch: 'gute Laune',
+      bedeutung: '„Bombe drauf" ist hessisch-jugendsprachlich für „gute Laune haben". „I hab heut Bombe drauf!" für „ich habe heute Top-Laune!". Verstärkung durch „Bombe". Drückt Energie und Optimismus aus. Im Frankfurter Jugendslang verbreitet. Mütter erkennen daran, dass das Kind gut gelaunt ist. Vergleichbar mit „I hab heut a guter Tag". Symbol für moderne hessische Selbstbewertung und Energie-Sprache.',
+      beispiel: 'I hab heut Bombe drauf — Eintracht hat gewonnen!',
+      beispiel_hd: 'Ich habe heute gute Laune — Eintracht hat gewonnen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-377',
+      ausdruck: 'Klamotten checken',
+      hochdeutsch: 'Kleidung prüfen / Mode checken',
+      bedeutung: '„Klamotten checken" ist hessisch-jugendsprachlich für „die Kleidung prüfen" — meist vor Ausgehen oder vor Party. „Lass mer noch d\'Klamotten checken!" als Bestätigung der Mode-Tauglichkeit. Anglizismus „check" + hessisches „Klamotten". Drückt Selbstinszenierung und Mode-Bewusstsein aus. In Frankfurt-Sachsenhausen-Jugendkultur verbreitet. Symbol für moderne hessische Mode-Sprache. Beziehungsweise besonders in der Frankfurter Modeszene.',
+      beispiel: 'Vor\'m Ausgehen müssen mer noch d\'Klamotten checken.',
+      beispiel_hd: 'Vor dem Ausgehen müssen wir noch die Kleidung checken.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-378',
+      ausdruck: 'Frankfurter Brett',
+      hochdeutsch: 'Frankfurter Bart-Stil',
+      bedeutung: 'Das „Frankfurter Brett" ist Vollbart-Mode der Frankfurter Hipster — gestylter Vollbart, oft kombiniert mit Sidecut, Mütze und Apfelwein. In Bornheim und im Westend (Frankfurts Hipster-Viertel) verbreitet. „Ein Brett tragen" für gestylten Vollbart. Frankfurter Identität-Detail. Auch in Werbung für hessisches Bier oder Apfelwein verwendet. Symbol für moderne urbane hessische Mode-Identität.',
+      beispiel: 'Der Hipster mit\'m Frankfurter Brett trinkt Ebbelwoi.',
+      beispiel_hd: 'Der Hipster mit dem Frankfurter Bart trinkt Apfelwein.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-379',
+      ausdruck: 'Hessenraum',
+      hochdeutsch: 'Hessen-Region',
+      bedeutung: '„Hessenraum" ist offizielle Bezeichnung für die Region Hessen — vor allem in Politik und Wirtschaft verwendet. „Im Hessenraum gibt\'s viele mittelständische Unternehmen". Wird auch von hessischen Politikern und Marketing-Strategen verwendet, um regionale Identität zu betonen. Im Gegensatz zum simplen „Hessen" mit offiziellerem, professionellerem Klang. Symbol für hessische Wirtschafts- und Marketing-Sprache. Auch in Statistiken und Wirtschaftsberichten.',
+      beispiel: 'Im Hessenraum wachsen die KMUs am stärksten.',
+      beispiel_hd: 'In der Hessen-Region wachsen die KMUs am stärksten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-380',
+      ausdruck: 'Hessen for life',
+      hochdeutsch: 'Hessen ein Leben lang',
+      bedeutung: '„Hessen for life" ist hessisch-jugendsprachlicher Identitäts-Slogan — vor allem in Eintracht-Fan-Kreisen und auf T-Shirts. Verbindet hessische Heimat-Treue mit englischer Sprachform. „Hessen for life, baby!" als Bekenntnis. Drückt unzerbrechliche regionale Loyalität aus. Im Frankfurter Stadion oft als Banner zu sehen. Symbol für moderne hessische Identität — sprachlich modern, kulturell traditionell. Hessen-Stolz neuer Generation.',
+      beispiel: 'Hessen for life — auch wenn d\'Eintracht verliert!',
+      beispiel_hd: 'Hessen ein Leben lang — auch wenn die Eintracht verliert!',
+      kategorie: 'menschen'
     }
   ]
 };
