@@ -1325,6 +1325,276 @@ export default {
       beispiel: 'Bei jedem Heimspiel singt\'s ganze Stadion d\'Bayernhymne.',
       beispiel_hd: 'Bei jedem Heimspiel singt das ganze Stadion die Bayernhymne.',
       kategorie: 'musik'
+    },
+    {
+      id: 'by-151',
+      ausdruck: 'Dirndlgwand',
+      hochdeutsch: 'Dirndlkleid',
+      bedeutung: 'Das „Dirndlgwand" ist das traditionelle Frauenkleid in Bayern und Österreich — bestehend aus Mieder, Bluse, Rock und Schürze. Ursprünglich Arbeitskleidung der Landdienstmädchen, heute festliche Tracht für Oktoberfest, Hochzeiten und Trachtenfeste. Die Position der Schürzenschleife signalisiert den Beziehungsstatus (links = ledig, rechts = vergeben, hinten = Witwe oder Bedienung).',
+      beispiel: 'D\'Resi hat a wunderschöns Dirndlgwand zum Trachtenfest anghabt.',
+      beispiel_hd: 'Die Resi hatte ein wunderschönes Dirndlkleid zum Trachtenfest an.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-152',
+      ausdruck: 'Watschn',
+      hochdeutsch: 'Ohrfeige',
+      bedeutung: 'Eine „Watschn" ist eine kräftige Ohrfeige. Im Bayerischen oft humorvoll-derb verwendet — eine „bayerische Watschn" gilt als unverwechselbar herzhaft. Auch im übertragenen Sinn: „dei Watschn baumlt" bedeutet eine Niederlage oder einen Dämpfer. Im Wirtshaus früher auch als Strafe für unkooperatives Verhalten beim Kartenspiel.',
+      beispiel: 'Wenn du no a mal so frech bist, kriegst a Watschn!',
+      beispiel_hd: 'Wenn du noch einmal so frech bist, kriegst du eine Ohrfeige!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-153',
+      ausdruck: 'Bussi',
+      hochdeutsch: 'Küsschen',
+      bedeutung: 'Ein „Bussi" ist ein liebevolles Küsschen — auf die Wange, Stirn oder den Mund. Sehr verbreitet zur Begrüßung und Verabschiedung in Bayern und Österreich, vor allem in Familie und Freundeskreis. „Bussi-Bussi-Gesellschaft" ist eine abwertende Bezeichnung für die High Society. Diminutiv von „Buss" (Kuss). Auch in Liebesbriefen üblich: „Ganz liebe Bussi!"',
+      beispiel: 'Gib der Oma a Bussi zum Abschied!',
+      beispiel_hd: 'Gib der Oma ein Küsschen zum Abschied!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-154',
+      ausdruck: 'Brotzeit',
+      hochdeutsch: 'Brotzeit / Brotmahlzeit',
+      bedeutung: '„Brotzeit" ist die bayerische Zwischenmahlzeit — meist am Vormittag oder Nachmittag, mit Brot, Käse, Wurst, Radi, eingelegten Gurken und natürlich einer Maß Bier. Mehr als nur ein Snack: ein gesellschaftliches Ritual. Auf Wanderungen, Baustellen, im Garten — die Brotzeit gehört zum bayerischen Lebensgefühl. Brotzeit-Brettl: das Holzbrett, auf dem alles serviert wird.',
+      beispiel: 'Um zehni machma a zünftige Brotzeit auf der Alm.',
+      beispiel_hd: 'Um zehn machen wir eine zünftige Brotzeit auf der Alm.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-155',
+      ausdruck: 'Bua',
+      hochdeutsch: 'Junge / Bursche',
+      bedeutung: 'Der „Bua" ist im Bayerischen jeder männliche Jugendliche oder junge Mann — von schulpflichtig bis weit über 30. Anrede unter Freunden („Bua, kumm hera!"), zärtlich für den eigenen Sohn („mei Bua") oder als spöttischer Hinweis auf Unreife. Plural: „Buam" oder „Buabn". Mädchen sind dagegen „Madl". Tief im bayerischen Sprachgebrauch verwurzelt.',
+      beispiel: 'D\'Buam san scho zum Baden am Bach.',
+      beispiel_hd: 'Die Jungs sind schon zum Baden am Bach.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-156',
+      ausdruck: 'Madl',
+      hochdeutsch: 'Mädchen / junge Frau',
+      bedeutung: 'Das „Madl" ist im Bayerischen jedes Mädchen oder junge Frau — von Kindheit bis Hochzeit. Liebevoll und respektvoll zugleich. „A fesches Madl" ist ein hübsches Mädchen, ein „Diandl" oft ein altmodischeres Synonym. In Volksliedern, Schlagern und auf Trachtenfesten allgegenwärtig: „Bayrisch Madl", „Mei Madl", „Schean is mei Madl". Auch in Liebesbriefen: „Liebes Madl…"',
+      beispiel: 'A fesches Madl, dei Schwester!',
+      beispiel_hd: 'Ein hübsches Mädchen, deine Schwester!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-157',
+      ausdruck: 'Hax\'n',
+      hochdeutsch: 'Schweinshaxe / Bein',
+      bedeutung: 'Die „Hax\'n" ist im Bayerischen sowohl die berühmte Schweinshaxe (knusprig gebraten, mit Sauerkraut und Knödel) als auch das Bein eines Menschen. „Hax\'n her!" bedeutet „komm her!" oder „Beweg dich!". In der Küche legendär: die bayerische Schweinshaxe gilt als Krönung der Wirtshausküche, oft mit Bier und Senf serviert. „Sich auf d\'Hax\'n machen" heißt sich auf den Weg machen.',
+      beispiel: 'Heut Mittag gibt\'s a knusprige Schweinshax\'n.',
+      beispiel_hd: 'Heute Mittag gibt es eine knusprige Schweinshaxe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-158',
+      ausdruck: 'Bazi',
+      hochdeutsch: 'Schlitzohr / Schelm',
+      bedeutung: 'Ein „Bazi" ist im Bayerischen ein liebenswerter Schlitzohr — clever, frech, charmant und nicht immer ganz ehrlich. Kann zärtlich gemeint sein („du Bazi du!") oder leicht abwertend für einen Halunken. In der Münchner Mundart auch synonym für Münchner („Münchner Bazi"). Karl Valentin und Karl Stranzinger haben den Bazi-Typ kultiviert. Herkunft unklar, wahrscheinlich von „Lumpazi".',
+      beispiel: 'Der Hansi is\' a echter Bazi — aber a sympathischer!',
+      beispiel_hd: 'Der Hansi ist ein echter Schlitzohr — aber ein sympathischer!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-159',
+      ausdruck: 'Goaß',
+      hochdeutsch: 'Ziege',
+      bedeutung: 'Die „Goaß" ist die Ziege — im Bayerischen oft Symbol für ländliche Idylle und Almwirtschaft. „Da Goaßhirt" ist der Ziegenhirte, ein traditioneller Beruf in den Alpen. Im übertragenen Sinn: „du oide Goaß!" als (gar nicht so) liebevolle Anrede. „Goaßmaß" ist außerdem ein bayerisches Mischgetränk aus Cola, Kirschlikör und einer Maß Bier — ein wahrer Knockout.',
+      beispiel: 'Auf der Alm hat\'s no a paar Goaßn ghabt.',
+      beispiel_hd: 'Auf der Alm hat es noch ein paar Ziegen gegeben.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-160',
+      ausdruck: 'Schmankerl',
+      hochdeutsch: 'Leckerei / Spezialität',
+      bedeutung: 'Ein „Schmankerl" ist eine besondere kulinarische Köstlichkeit — meist eine bayerische Spezialität wie Apfelstrudel, Kaiserschmarrn oder Dampfnudeln. Auch im übertragenen Sinn: ein „echtes Schmankerl" ist etwas Besonderes, ein Highlight. „Schmankerl-Tour" ist eine kulinarische Reise durch Bayern. Stammt vom mittelhochdeutschen „smackvol" (lecker). Wird oft auf Speisekarten als Verlockung verwendet.',
+      beispiel: 'A echts bayrisches Schmankerl: Kaiserschmarrn mit Zwetschgenrösta.',
+      beispiel_hd: 'Eine echte bayerische Leckerei: Kaiserschmarrn mit Zwetschgenrösta.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-161',
+      ausdruck: 'Trumm',
+      hochdeutsch: 'großes Stück',
+      bedeutung: 'Ein „Trumm" ist ein großes, klobiges Stück von irgendetwas — ein „Trumm Brot", ein „Trumm Kuchen", ein „Trumm Mannsbild". Drückt Größe und oft auch Schwere oder Wuchtigkeit aus. „A oarechts Trumm" ist ein riesiges Exemplar. Auch für Menschen: „a wuchtiges Trumm" ist ein kräftig gebauter Mann. Im positiven wie negativen Sinn verwendbar. Stammt vom mittelhochdeutschen „trum" (Stück, Klotz).',
+      beispiel: 'Hau dir a Trumm Brot ab, du wirst Hunger ham.',
+      beispiel_hd: 'Schneid dir ein großes Stück Brot ab, du wirst Hunger haben.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-162',
+      ausdruck: 'Stüberl',
+      hochdeutsch: 'Stube / kleine Gaststätte',
+      bedeutung: 'Das „Stüberl" ist eine kleine, gemütliche Gaststube oder ein einladendes Wohnzimmer. Diminutiv von „Stube". In Bayern bezeichnet es oft die heimelige Atmosphäre einer Dorfgaststätte mit Holzvertäfelung, Kachelofen und Stammtisch. „Aufs Stüberl gehen" bedeutet ins Wirtshaus gehen. Auch in Hotelnamen verbreitet („Müllerstüberl"). Inbegriff bayerischer Gemütlichkeit und Geselligkeit.',
+      beispiel: 'Treffma uns nach der Arbeit beim Wirt im Stüberl?',
+      beispiel_hd: 'Treffen wir uns nach der Arbeit beim Wirt in der Stube?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-163',
+      ausdruck: 'Lederhosen',
+      hochdeutsch: 'Lederhose',
+      bedeutung: 'Die „Lederhosen" sind die traditionelle Männertracht in Bayern und Tirol — meist aus Hirsch- oder Gämsleder, mit Hosenträgern und kunstvollen Stickereien. Ursprünglich Arbeitskleidung der Bergbauern und Jäger. Heute Trachtensymbol bei Oktoberfest, Hochzeiten und Trachtenfesten. Je älter und speckiger, desto authentischer („no nia gwaschn" wird stolz erzählt). Kurze, mittlere und Kniebund-Variante.',
+      beispiel: 'D\'Lederhosen vom Opa is\' scho hundert Jahr oid.',
+      beispiel_hd: 'Die Lederhose vom Opa ist schon hundert Jahre alt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-164',
+      ausdruck: 'Ratschkathl',
+      hochdeutsch: 'Klatschtante / Plaudertasche',
+      bedeutung: 'Eine „Ratschkathl" ist eine ausgesprochene Plaudertasche — meist weiblich, dorftratschig, mit ausgeprägter Neugier auf Nachbarsangelegenheiten. „Ratschen" bedeutet im Bayerischen ausgiebig schwätzen oder klatschen. Der Begriff ist liebevoll-spöttisch: keine echte Beleidigung, aber auch kein Kompliment. Männlich wäre „Ratschkathlbua" (selten) oder „Schmatzbruada". Charakterfigur im bayerischen Dorf.',
+      beispiel: 'Bei der Maria im Tante-Emma-Lädle treffen sich alle Ratschkathln.',
+      beispiel_hd: 'Bei der Maria im Tante-Emma-Lädchen treffen sich alle Klatschtanten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-165',
+      ausdruck: 'Sauwetter',
+      hochdeutsch: 'sehr schlechtes Wetter',
+      bedeutung: '„Sauwetter" ist ein extrem schlechtes Wetter — Regen, Sturm, Kälte, Schnee gemixt. „Sau-" als Verstärkungspräfix ist typisch bayerisch (Sauglück, Sauhitz, Saukälte, Sauarbeit). Geht zurück auf das Schwein als Symbol für „grob" und „dreckig" im Bauerntum. Wenn es „sau-saukalt" ist, ist es extrem kalt. Bayrisch durch und durch: prägnant, derb, treffend.',
+      beispiel: 'Heut is\' a Sauwetter, da bleibma daheim.',
+      beispiel_hd: 'Heute ist ein Sauwetter, da bleiben wir zuhause.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-166',
+      ausdruck: 'Spezi',
+      hochdeutsch: 'Freund / Cola-Mischgetränk',
+      bedeutung: '„Spezi" hat im Bayerischen zwei Bedeutungen: 1) Ein guter Freund, Kumpel („mei beste Spezi"). 2) Das Mischgetränk aus Cola und Orangenlimonade (in anderen Regionen „Mezzo-Mix"). Wortspielerei: der „Spezi-Spezi" ist ein Freund, der gerne Spezi trinkt. Stammt vom italienischen „specie" (Art). Der „Spezi" als Freund ist liebevoll, der Spezi als Getränk allgegenwärtig in Bayern.',
+      beispiel: 'I geh mit meim Spezi a Spezi trinken.',
+      beispiel_hd: 'Ich gehe mit meinem Freund eine Cola-Mix trinken.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-167',
+      ausdruck: 'Liederlich',
+      hochdeutsch: 'liederlich / nachlässig',
+      bedeutung: '„Liederlich" beschreibt im Bayerischen einen Menschen, der seine Pflichten oder seine Erscheinung vernachlässigt — schlampig im Haushalt, unkonzentriert bei der Arbeit, unordentlich im Auftreten. Stärker als hochdeutsch „nachlässig", mit moralischem Beigeschmack. „Liederlicher Hund" ist ein häufiger Vorwurf an unzuverlässige Männer. Frauen sind „liederlich" wenn sie das Haus nicht in Schuss halten.',
+      beispiel: 'Der Bub is\' so liederlich, ständig versumpft er Termine.',
+      beispiel_hd: 'Der Junge ist so nachlässig, ständig vergisst er Termine.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-168',
+      ausdruck: 'Hupfdohle',
+      hochdeutsch: 'unruhiges Kind / Wirbelwind',
+      bedeutung: 'Eine „Hupfdohle" ist ein quirliges, kaum zu bändigendes Kind — meist ein Mädchen, das ständig herumtollt, hüpft und nicht stillsitzen kann. „Hupfen" ist bayerisch für hüpfen, die „Dohle" ist eigentlich ein Vogel. Die Wortkombination beschreibt das hopsende Wesen. Liebevoll-spöttisch, oft von Großeltern für die Enkel verwendet. Synonym: „Quirl", „Zappelphilipp" (für Buben).',
+      beispiel: 'Mei Madl is\' a richtige Hupfdohle — keine Minute still!',
+      beispiel_hd: 'Mein Mädchen ist ein richtiger Wirbelwind — keine Minute still!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-169',
+      ausdruck: 'Resch',
+      hochdeutsch: 'knusprig / kross',
+      bedeutung: '„Resch" beschreibt im Bayerischen die perfekte Knusprigkeit — ein resches Brot, eine resche Hax\'n, ein resches Brötchen. Die Bayern haben einen ausgeprägten Sinn für Texturen beim Essen: das Brot muss außen resch und innen weich sein, der Schweinebraten resch gebraten, die Brezn resch gebacken. „Reschern" bedeutet knuspern. Auch das Wort „Reschkrust\'n" für die knusprige Brotrinde leitet sich davon ab.',
+      beispiel: 'Der Schweinsbratn is\' resch wia muss er sei!',
+      beispiel_hd: 'Der Schweinebraten ist knusprig wie er sein muss!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-170',
+      ausdruck: 'Rotzbua',
+      hochdeutsch: 'Lausbub / frecher Junge',
+      bedeutung: 'Ein „Rotzbua" ist ein frecher, vorlauter Junge mit Hang zu Schabernack und kleinen Frechheiten. Wörtlich: ein „Rotz-Junge" — also einer, der noch nicht trocken hinter den Ohren ist. Liebevoll gemeint, wenn Großeltern ihre Enkel so nennen, schärfer wenn fremde Erwachsene es als Anrede für nichtsnutzige Jugendliche verwenden. Die weibliche Form „Rotzgöre" ist ähnlich gemeint. Stammt aus dem Mittelhochdeutschen.',
+      beispiel: 'So a Rotzbua wia der Hansi macht ständig Streich.',
+      beispiel_hd: 'So ein Lausbub wie der Hansi macht ständig Streiche.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-171',
+      ausdruck: 'Loabbrot',
+      hochdeutsch: 'Laib Brot',
+      bedeutung: 'Der „Loabbrot" oder „Loab" ist ein ganzer, ungeschnittener Laib Brot — meist Bauernbrot aus Roggen und Sauerteig. In bayerischen Dörfern bis heute traditionsreich: jeden Samstag wurde gebacken, der Loab hielt eine Woche. „Vom Loab a Scheiberl runter" bedeutet eine Scheibe vom Laib abschneiden. Beim Brotkaufen sagt man „I hätt gern an Loab Bauernbrot". Symbol für Bodenständigkeit und Hausmannskost.',
+      beispiel: 'Hol amol an frischen Loab beim Bäcker!',
+      beispiel_hd: 'Hol mal einen frischen Laib beim Bäcker!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-172',
+      ausdruck: 'Sauglück',
+      hochdeutsch: 'Riesenglück',
+      bedeutung: '„Sauglück" bezeichnet ein unverschämtes, riesengroßes Glück — oft unerwartet und schwer zu fassen. „Sau-" als Verstärkungspräfix typisch bayerisch (siehe Sauwetter, Sauhitz). „Da hast a Sauglück ghabt!" wird gesagt, wenn jemand knapp einem Unglück entgangen ist oder zufällig auf einen Riesen-Gewinn gestoßen ist. Synonym: „Ramsch", „Schwein gehabt". Drückt Verwunderung und Anerkennung zugleich aus.',
+      beispiel: 'A Sauglück, dass\'d des Lotto-Ticket aufghoben hast!',
+      beispiel_hd: 'Ein Riesenglück, dass du das Lotto-Ticket aufgehoben hast!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-173',
+      ausdruck: 'Pfiat di',
+      hochdeutsch: 'Tschüss / Behüt dich Gott',
+      bedeutung: '„Pfiat di" ist die traditionelle bayerische Verabschiedung — Kurzform von „Behüt dich Gott" („Gott behüte dich"). Wird unter Bekannten und Freunden verwendet, meist mit nachgesetztem Namen: „Pfiat di, Hansi!". Förmlicher: „Pfiat eich" (Plural). Hat eine warme, beinahe rührende Note und drückt mehr Verbundenheit aus als das gewöhnliche „Tschüss". Auch in Trauerreden und Abschiedsgrüßen üblich.',
+      beispiel: 'Pfiat di, mei Liaba — bis nächste Wochn!',
+      beispiel_hd: 'Tschüss, mein Lieber — bis nächste Woche!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-174',
+      ausdruck: 'Kraxn',
+      hochdeutsch: 'Korb / Rückentrage',
+      bedeutung: 'Die „Kraxn" ist ein Tragekorb oder eine Rückentrage — traditionell für Wäsche, Holz, Heu oder Almgüter. Wurde von Almbauern und Sennerinnen verwendet, um Schwergut über die Berge zu schleppen. Heute meist als Hüttenausstattung oder Wanderdeko. „Auf d\'Kraxn nehmen" bedeutet etwas auf den Rücken laden. Im übertragenen Sinn: „a schwere Kraxn" ist eine schwere Last oder Aufgabe.',
+      beispiel: 'D\'Sennerin hat d\'Kraxn voller Käs zum Bauernmarkt tragn.',
+      beispiel_hd: 'Die Sennerin hat den Korb voller Käse zum Bauernmarkt getragen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-175',
+      ausdruck: 'Halbe',
+      hochdeutsch: 'halber Liter Bier',
+      bedeutung: 'Eine „Halbe" ist ein Bierkrug mit 0,5 Liter Inhalt — die mittlere Größe zwischen „Seidla" (0,33l) und „Maß" (1l). In Wirtshäusern, vor allem im fränkisch geprägten Bayern, wird Bier oft in Halben ausgeschenkt. Auf dem Oktoberfest dominiert die Maß, aber daheim und in der Stammkneipe ist die Halbe Standard. Bestellung: „A Halbe Helles, bittschön". Die Halbe ist quasi das bayerische Glas Wein.',
+      beispiel: 'Bring ma a Halbe Helles, bittschön!',
+      beispiel_hd: 'Bring mir einen halben Liter Helles, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-176',
+      ausdruck: 'Saupreiß',
+      hochdeutsch: 'Norddeutscher / Berliner (abwertend)',
+      bedeutung: 'Der „Saupreiß" ist die bayerische Spottbezeichnung für Norddeutsche, vor allem Berliner und Preußen. „Sau-" als Verstärker, „Preiß" für Preuße. Mehr Klischee-Polemik als echter Hass — die Bayern haben ein hassgeliebtes Verhältnis zu „den Preußen". Stammt aus der Reichseinigung 1871, als das katholisch-konservative Bayern unter preußische Herrschaft kam. Heute ironisch verwendet, oft selbstironisch.',
+      beispiel: 'A Saupreiß is\' a Saupreiß — aber net jeder is\' a schlechter.',
+      beispiel_hd: 'Ein Norddeutscher ist ein Norddeutscher — aber nicht jeder ist ein schlechter.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-177',
+      ausdruck: 'Knödel',
+      hochdeutsch: 'Knödel',
+      bedeutung: 'Der „Knödel" ist DAS bayerische Beilagen-Symbol — Semmelknödel zum Schweinebraten, Kartoffelknödel zur Gans, Leberknödel in der Suppe, Topfenknödel als Dessert. Stammt vom mittelhochdeutschen „knode" (Knoten). Im Bayerischen gibt es Dutzende Varianten, jede Familie hat ihr eigenes Rezept. Streit darüber, ob halb-halb (Kartoffel + Semmel) der bessere Knödel ist als reine Sorten, kann Generationen entzweien. Beilage und Hauptgericht zugleich.',
+      beispiel: 'Zwoa Knödel zum Schweinsbratn, bittschön!',
+      beispiel_hd: 'Zwei Knödel zum Schweinebraten, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-178',
+      ausdruck: 'Habidere',
+      hochdeutsch: 'Sehr verbunden / Habe die Ehre',
+      bedeutung: '„Habidere" ist eine höfliche, fast schon altertümliche bayerische Begrüßung oder Verabschiedung — Kurzform von „Habe die Ehre" (Sie zu begrüßen). Wird vor allem von älteren Generationen verwendet und in Trachtenkreisen gepflegt. Drückt Respekt und vornehme Höflichkeit aus. Mehr als nur „Hallo", weniger als ein Kompliment — die exakte Stufe zwischen formell und herzlich. Bei förmlichen Anlässen mit Hut: „Habi(d)ere, gnä Frau!"',
+      beispiel: 'Habidere, Frau Doktor! Schee, dass\'s vorbeischaut\'n.',
+      beispiel_hd: 'Habe die Ehre, Frau Doktor! Schön, dass Sie vorbeischauen.',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-179',
+      ausdruck: 'Hocker',
+      hochdeutsch: 'Schemel / Sitzhocker',
+      bedeutung: 'Der „Hocker" ist im Bayerischen ein dreibeiniger oder vierbeiniger Sitzhocker — meist aus Holz, ohne Lehne, oft im Hauseingang oder vor der Brotzeit-Bank. In Almhütten und Bauernhäusern unverzichtbar. „Sich auf an Hocker setzen" oder „an Hocker rüberziehen" sind alltägliche Phrasen. Auch metaphorisch: „auf m Hocker" sitzen für eine wackelige Position. Der „Melkschemel" ist eine Spezialform für den Stall.',
+      beispiel: 'Setz di auf an Hocker und ratschma a bisl!',
+      beispiel_hd: 'Setz dich auf einen Hocker und plaudern wir ein bisschen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-180',
+      ausdruck: 'Zwetschgendatschi',
+      hochdeutsch: 'Pflaumenkuchen',
+      bedeutung: 'Der „Zwetschgendatschi" ist DER bayerisch-fränkische Hefekuchen mit Pflaumen — flach ausgebreitet, mit halbierten Zwetschgen belegt und mit Zimt-Zucker bestreut. „Datschi" stammt von „datschen" (drücken, breitdrücken), weil der Teig flachgedrückt wird. Saisonklassiker im Herbst, wenn die Zwetschgen reif sind. Mit Schlagsahne ein Genuss. Streit ob Hefeteig oder Mürbteig der echte Datschi ist, geht durch ganz Bayern.',
+      beispiel: 'Zum Kaffee gibt\'s a Stück Zwetschgendatschi mit Schlagrahm.',
+      beispiel_hd: 'Zum Kaffee gibt es ein Stück Pflaumenkuchen mit Schlagsahne.',
+      kategorie: 'essen'
     }
   ]
 };
