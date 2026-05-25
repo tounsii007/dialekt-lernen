@@ -13,6 +13,9 @@ import koelsch         from './dialekte/koelsch.js';
 import plattdeutsch    from './dialekte/plattdeutsch.js';
 import schwizerduetsch from './dialekte/schwizerduetsch.js';
 import wienerisch      from './dialekte/wienerisch.js';
+import fraenkisch      from './dialekte/fraenkisch.js';
+import ruhrdeutsch     from './dialekte/ruhrdeutsch.js';
+import alemannisch     from './dialekte/alemannisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -23,7 +26,10 @@ export const DIALEKTE = [
   koelsch,
   plattdeutsch,
   schwizerduetsch,
-  wienerisch
+  wienerisch,
+  fraenkisch,
+  ruhrdeutsch,
+  alemannisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup

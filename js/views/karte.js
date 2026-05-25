@@ -10,13 +10,16 @@ import { icon } from '../util/icons.js';
 const GEO = {
   plattdeutsch:   { x: 52, y: 10, label: 'Norden' },
   berlinisch:     { x: 76, y: 26, label: 'Nordosten' },
+  ruhrdeutsch:    { x: 36, y: 36, label: 'Ruhrgebiet' },
   saechsisch:     { x: 73, y: 44, label: 'Osten' },
+  fraenkisch:     { x: 62, y: 60, label: 'Nordbayern' },
   hessisch:       { x: 50, y: 52, label: 'Mitte' },
-  koelsch:        { x: 36, y: 46, label: 'Westen' },
-  schwaebisch:    { x: 52, y: 72, label: 'Südwesten' },
+  koelsch:        { x: 34, y: 48, label: 'Rheinland' },
+  schwaebisch:    { x: 52, y: 74, label: 'Südwesten' },
+  alemannisch:    { x: 40, y: 83, label: 'Oberrhein' },
   bayerisch:      { x: 70, y: 80, label: 'Süden' },
-  wienerisch:     { x: 92, y: 84, label: 'Österreich' },
-  schwizerduetsch:{ x: 50, y: 94, label: 'Schweiz' }
+  wienerisch:     { x: 91, y: 84, label: 'Österreich' },
+  schwizerduetsch:{ x: 50, y: 95, label: 'Schweiz' }
 };
 
 export function renderKarte(root) {
@@ -160,14 +163,21 @@ function buildConnectionLines() {
 
   const connections = [
     ['plattdeutsch', 'berlinisch'],
+    ['plattdeutsch', 'ruhrdeutsch'],
     ['berlinisch', 'saechsisch'],
+    ['ruhrdeutsch', 'koelsch'],
+    ['ruhrdeutsch', 'hessisch'],
+    ['saechsisch', 'fraenkisch'],
     ['saechsisch', 'hessisch'],
     ['hessisch', 'koelsch'],
+    ['hessisch', 'fraenkisch'],
+    ['fraenkisch', 'bayerisch'],
     ['hessisch', 'schwaebisch'],
     ['schwaebisch', 'bayerisch'],
+    ['schwaebisch', 'alemannisch'],
+    ['alemannisch', 'schwizerduetsch'],
     ['bayerisch', 'wienerisch'],
-    ['bayerisch', 'schwizerduetsch'],
-    ['schwaebisch', 'schwizerduetsch']
+    ['bayerisch', 'schwizerduetsch']
   ];
 
   connections.forEach(([a, b]) => {

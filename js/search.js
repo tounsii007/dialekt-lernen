@@ -14,7 +14,11 @@ const RECENT_KEY = 'dialekto:recent-search';
 const RECENT_MAX = 5;
 
 // Trending searches shown when palette is empty
-const TRENDING = ['Servus', 'Moin', 'Digger', 'Babbel', 'Oida', 'geil', 'Grüß Gott'];
+const TRENDING = [
+  'Servus', 'Moin', 'Digger', 'Babbel', 'Oida',
+  'Bassd scho', 'Glück auf', 'Grüezi', 'Ei guude',
+  'Kehrwoche', 'Schmarrn', 'Nu freilich', 'Kumpel'
+];
 
 let activeDialektFilter = null;
 

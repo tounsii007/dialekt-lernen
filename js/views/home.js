@@ -116,9 +116,9 @@ export function renderHome(root) {
 
 function renderHeroPreview() {
   const samples = [
-    { dialekt: 'Hessisch',  farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!',          depth: '1.4' },
-    { dialekt: 'Berlinisch', farbe: '#f4a261', ausdruck: 'Icke',       meaning: 'Ich',             depth: '1.0' },
-    { dialekt: 'Bayerisch',  farbe: '#0077b6', ausdruck: 'Servus',     meaning: 'Hallo / Tschüss', depth: '1.7' }
+    { dialekt: 'Hessisch',   farbe: '#e63946', ausdruck: 'Ei guude!',   meaning: 'Hallo!',           depth: '1.4' },
+    { dialekt: 'Ruhrdeutsch',farbe: '#e36414', ausdruck: 'Glück auf!',  meaning: 'Bergmannsgruß',    depth: '1.0' },
+    { dialekt: 'Bayerisch',  farbe: '#0077b6', ausdruck: 'Servus',      meaning: 'Hallo / Tschüss',  depth: '1.7' }
   ];
   return el('div', { class: 'hero-preview', dataset: { pointerParallax: '' } },
     ...samples.map(s => el('div', { class: 'preview-card', dataset: { ppDepth: s.depth } },
@@ -256,14 +256,18 @@ function renderDailyExpression() {
 function buildWordCarousel() {
   // Sample of expressive dialect words to cycle through
   const WORDS = [
-    { word: 'Ei guude!', flag: '🎭', name: 'Hessisch' },
-    { word: 'Moin!',     flag: '⛵', name: 'Plattdeutsch' },
-    { word: 'Servus!',   flag: '🥨', name: 'Bayerisch' },
-    { word: 'Jeck!',     flag: '🎉', name: 'Kölsch' },
-    { word: 'Digger!',   flag: '🐼', name: 'Berlinisch' },
-    { word: 'Oidà!',     flag: '🏔️', name: 'Wienerisch' },
-    { word: 'Grüezi!',   flag: '🏔️', name: 'Schweizerdeutsch' },
-    { word: 'Goggelmo!', flag: '🦊', name: 'Sächsisch' }
+    { word: 'Ei guude!',        flag: '🦁', name: 'Hessisch' },
+    { word: 'Moin!',            flag: '⚓', name: 'Plattdeutsch' },
+    { word: 'Servus!',          flag: '🥨', name: 'Bayerisch' },
+    { word: 'Kölle Alaaf!',     flag: '🎭', name: 'Kölsch' },
+    { word: 'Icke dit det!',    flag: '🐻', name: 'Berlinisch' },
+    { word: 'Leiwand!',         flag: '🎻', name: 'Wienerisch' },
+    { word: 'Grüezi mitenand!', flag: '🏔️', name: 'Schwizerdütsch' },
+    { word: 'Nu freilich!',     flag: '⚪', name: 'Sächsisch' },
+    { word: 'Bassd scho!',      flag: '🦅', name: 'Fränkisch' },
+    { word: 'Glück auf!',       flag: '⚒️', name: 'Ruhrdeutsch' },
+    { word: 'Heimelig!',        flag: '🌲', name: 'Alemannisch' },
+    { word: 'Kehrwoche!',       flag: '🧹', name: 'Schwäbisch' }
   ];
 
   let idx = 0;

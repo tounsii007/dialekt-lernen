@@ -8,8 +8,9 @@ import { sfx, vibrate } from '../../util/sounds.js';
 import { createWaveform } from '../../util/waveform.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
-const SWIPE_THRESHOLD = 110;
-const ROTATE_FACTOR = 0.06;
+const SWIPE_THRESHOLD = 100;
+const ROTATE_FACTOR  = 0.06;
+const VELOCITY_BOOST = 0.45; // Boost für schnelle Wischgesten (px/ms)
 
 export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, onFlip }) {
   const c = session.cards[session.idx];
@@ -250,17 +251,22 @@ function bindDrag(card, onRate) {
   let dx = 0, dy = 0;
   let dragging = false;
   let pointerId = null;
+  let lastMoveTime = 0;
+  let lastMoveX = 0, lastMoveY = 0;
+  let velX = 0, velY = 0;
+
+  // Adaptiver Threshold: auf kleinen Bildschirmen etwas niedriger
+  const threshold = () => Math.min(SWIPE_THRESHOLD, window.innerWidth * 0.27);
 
   const setTransform = (x, y) => {
     const rot = x * ROTATE_FACTOR;
     card.style.setProperty('--drag-x', x.toFixed(1) + 'px');
     card.style.setProperty('--drag-y', y.toFixed(1) + 'px');
     card.style.setProperty('--drag-rot', rot.toFixed(2) + 'deg');
-    // Cue opacity
-    const absX = Math.abs(x);
-    card.classList.toggle('drag-right', x >  SWIPE_THRESHOLD * 0.35);
-    card.classList.toggle('drag-left',  x < -SWIPE_THRESHOLD * 0.35);
-    card.classList.toggle('drag-up',    y < -SWIPE_THRESHOLD * 0.45 && absX < 60);
+    const t = threshold();
+    card.classList.toggle('drag-right', x >  t * 0.35);
+    card.classList.toggle('drag-left',  x < -t * 0.35);
+    card.classList.toggle('drag-up',    y < -t * 0.45 && Math.abs(x) < 60);
   };
 
   const reset = () => {
@@ -268,23 +274,37 @@ function bindDrag(card, onRate) {
     card.style.setProperty('--drag-x', '0px');
     card.style.setProperty('--drag-y', '0px');
     card.style.setProperty('--drag-rot', '0deg');
+    card.style.touchAction = '';
   };
 
   card.addEventListener('pointerdown', (e) => {
-    if (e.target.closest('.flashcard-face')?.tagName === 'BUTTON') return;
+    if (e.target.closest('button, input, select, textarea')) return;
     dragging = true;
     pointerId = e.pointerId;
     startX = e.clientX; startY = e.clientY;
-    dx = dy = 0;
+    dx = dy = velX = velY = 0;
+    lastMoveX = e.clientX; lastMoveY = e.clientY;
+    lastMoveTime = e.timeStamp;
+    // Wichtig für Mobile: scroll-Konflikte verhindern
+    card.style.touchAction = 'none';
     card.setPointerCapture(pointerId);
     card.classList.add('is-dragging');
   });
+
   card.addEventListener('pointermove', (e) => {
-    if (!dragging) return;
+    if (!dragging || e.pointerId !== pointerId) return;
+    const now = e.timeStamp;
+    const dt = Math.max(1, now - lastMoveTime);
+    velX = (e.clientX - lastMoveX) / dt;
+    velY = (e.clientY - lastMoveY) / dt;
+    lastMoveX = e.clientX;
+    lastMoveY = e.clientY;
+    lastMoveTime = now;
     dx = e.clientX - startX;
     dy = e.clientY - startY;
     setTransform(dx, dy);
   }, { passive: true });
+
   const finish = (cancel = false) => {
     if (!dragging) return;
     dragging = false;
@@ -293,29 +313,39 @@ function bindDrag(card, onRate) {
       pointerId = null;
     }
     if (cancel) { reset(); return; }
+
+    const t = threshold();
     const absX = Math.abs(dx);
     const absY = Math.abs(dy);
+    // Velocity-Boost: schnelle Wischgeste zählt auch bei kürzerem Weg
+    const effectiveDx = dx + velX * (1 / VELOCITY_BOOST) * t;
+    const effectiveDy = dy + velY * (1 / VELOCITY_BOOST) * t;
+    const effAbsX = Math.abs(effectiveDx);
+    const effAbsY = Math.abs(effectiveDy);
+
     let rated = false;
-    if (absX > SWIPE_THRESHOLD && absX >= absY) {
-      // fly off and rate
-      const dir = dx > 0 ? 1 : -1;
+
+    if (effAbsX > t && effAbsX >= effAbsY) {
+      const dir = effectiveDx > 0 ? 1 : -1;
       card.classList.add(dir > 0 ? 'is-flying-right' : 'is-flying-left');
       sfx.swipe();
       vibrate(dir > 0 ? [10, 30, 10] : 8);
       setTimeout(() => onRate(dir > 0 ? 3 : 1), 250);
       rated = true;
-    } else if (-dy > SWIPE_THRESHOLD * 0.85) {
+    } else if (-effectiveDy > t * 0.8 && effAbsX < effAbsY) {
       card.classList.add('is-flying-up');
       sfx.swipe();
       vibrate(12);
       setTimeout(() => onRate(2), 250);
       rated = true;
     }
+
     if (!rated) reset();
   };
-  card.addEventListener('pointerup', () => finish(false));
-  card.addEventListener('pointercancel', () => finish(true));
-  card.addEventListener('lostpointercapture', () => finish(true));
+
+  card.addEventListener('pointerup',           () => finish(false));
+  card.addEventListener('pointercancel',        () => finish(true));
+  card.addEventListener('lostpointercapture',   () => finish(true));
 }
 
 function buildMcChoices(card, allExpr, count = 4) {

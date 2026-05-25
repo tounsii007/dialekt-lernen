@@ -58,13 +58,36 @@ function initSoundToggle() {
   });
 }
 
+function detectInputDevice() {
+  // Touch-Klasse ans body hängen — CSS nutzt das für adaptive Targets
+  const isTouch = window.matchMedia('(pointer: coarse)').matches;
+  document.body.classList.toggle('is-touch', isTouch);
+  // Aktualisieren wenn sich Input-Methode ändert (z.B. Bluetooth-Maus + Tablet)
+  window.matchMedia('(pointer: coarse)').addEventListener('change', (e) => {
+    document.body.classList.toggle('is-touch', e.matches);
+  });
+}
+
+function initPaletteToggle() {
+  // Farbpaletten-Button öffnet Theme-Presets
+  const btn = document.getElementById('paletteToggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    import('./theme.js').then(m => {
+      if (typeof m.openThemePicker === 'function') m.openThemePicker();
+    }).catch(() => {});
+  });
+}
+
 function init() {
+  detectInputDevice();
   initTheme();
   initSearch();
   initShortcuts();
   initAddDialectHint();
   initRestartTour();
   initSoundToggle();
+  initPaletteToggle();
   registerStreak();
   initScrollProgress();
   initSpotlight();

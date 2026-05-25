@@ -6157,5 +6157,208 @@ html {
   white-space: nowrap;
 }
 
+/* ============================================================ */
+/* MOBILE TOUCH & ACCESSIBILITY IMPROVEMENTS                     */
+/* Touch targets ≥ 44px, overflow fixes, thumb zones            */
+/* ============================================================ */
+
+/* Global: alle interaktiven Elemente mind. 44px Ziel-Fläche */
+.btn, .fc-rate, .fc-btn, .nav-link, .mobile-nav-item,
+.dash-chip, .icon-btn, .goal-opt, .expr-action,
+.daily-action, .karte-bubble, .cmdp-filter-chip {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Rating-Buttons auf kleinen Schirmen vollbreite */
+@media (max-width: 480px) {
+  .fc-rating {
+    flex-direction: row;
+    gap: 6px;
+    width: 100%;
+  }
+  .fc-rate {
+    flex: 1;
+    padding: 12px 8px;
+    font-size: 0.82rem;
+    min-height: 48px;
+    border-radius: var(--r-md);
+  }
+  .flashcard {
+    max-width: 100vw;
+    margin: 0 -4px;
+    border-radius: var(--r-lg);
+  }
+  .flashcard-stage {
+    padding: 0 4px;
+  }
+  .fc-expr {
+    font-size: clamp(1.5rem, 7vw, 2.6rem);
+    word-break: break-word;
+    hyphens: auto;
+  }
+  .fc-meaning {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  .hero h1 {
+    font-size: clamp(1.6rem, 7vw, 3rem);
+  }
+  .hero-cta {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .hero-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .section-head {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dash-card-cta {
+    width: 100%;
+  }
+  .daily {
+    padding: 20px 16px;
+  }
+  .daily-expr {
+    font-size: clamp(1.4rem, 6.5vw, 2rem);
+    word-break: break-word;
+  }
+  .view {
+    padding-left: var(--sp-3);
+    padding-right: var(--sp-3);
+  }
+  .dialekt-grid {
+    grid-template-columns: 1fr;
+  }
+  .search-panel {
+    margin: 8px;
+    max-height: calc(100dvh - 100px);
+  }
+  .quiz-options {
+    grid-template-columns: 1fr;
+  }
+  .compare-table {
+    font-size: 0.8rem;
+  }
+  .stats-big-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra-kleine Schirme (< 360px) */
+@media (max-width: 360px) {
+  .fc-rate {
+    font-size: 0.75rem;
+    padding: 10px 4px;
+  }
+  .topbar-inner {
+    padding: 0 8px;
+  }
+  .brand-sub { display: none; }
+  .hero-stats {
+    gap: 12px;
+  }
+  .hero-stat-num {
+    font-size: 1.6rem;
+  }
+  .hero-stat-label {
+    font-size: 0.65rem;
+  }
+}
+
+/* Verbesserte Flashcard-Swipe-Hints auf Touch-Geräten */
+@media (hover: none) and (pointer: coarse) {
+  /* Touch-Geräte: Hint-Texte sichtbarer machen */
+  .fc-hint {
+    opacity: 0.85;
+    font-size: 0.8rem;
+  }
+  .fc-swipe-cue {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+  /* Kein Hover-Effekt nötig — tap reicht */
+  .card:hover {
+    transform: none;
+  }
+  .btn:hover {
+    transform: none;
+  }
+  /* Active-Feedback für Touch statt Hover */
+  .btn:active { transform: scale(0.97); }
+  .fc-rate:active { transform: scale(0.95); }
+  .fc-mc-opt:active { transform: scale(0.97); }
+  .dash-chip:active { transform: scale(0.96); }
+  /* Größere Tipper-Bereiche */
+  .fc-mc-opt {
+    min-height: 52px;
+    padding: 14px 16px;
+  }
+  .quiz-opt {
+    min-height: 54px;
+    padding: 16px 20px;
+  }
+}
+
+/* Landscape-Modus auf kleinen Schirmen */
+@media (max-height: 500px) and (orientation: landscape) {
+  .mobile-nav { display: none; }
+  .main, .app { padding-bottom: 0; }
+  .flashcard { max-height: 65vh; }
+  .fc-face { padding: 16px; }
+  .hero { padding: 40px 0; }
+}
+
+/* Safe-Area für neuere iPhones (Notch + Dynamic Island) */
+.topbar-inner {
+  padding-left: max(var(--sp-4), env(safe-area-inset-left));
+  padding-right: max(var(--sp-4), env(safe-area-inset-right));
+}
+
+/* Scrollbalken auf Mobile ausblenden */
+@media (pointer: coarse) {
+  .cmdp-results::-webkit-scrollbar,
+  .chip-row::-webkit-scrollbar,
+  .expr-list::-webkit-scrollbar { width: 0; height: 0; }
+}
+
+/* Touch-Klasse: .is-touch am body gesetzt von JS */
+body.is-touch .card:hover { transform: none; box-shadow: var(--shadow-md); }
+body.is-touch .btn { transition-duration: 80ms; }
+body.is-touch .nav-link:hover::after { width: 0; }
+/* Auf Touch kein Cursor-Pointer nötig, aber trotzdem für Barrierefreiheit */
+body.is-touch [role="button"] { cursor: default; }
+
+/* Verbesserter Fokus-Ring (Keyboard + Touch) */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+button:focus:not(:focus-visible) { outline: none; }
+
+/* Text-Overflow global */
+.expr-title, .dialekt-name, .dash-item-expr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+/* Neue Dialekt-Kategorie-Badges (für neue Kategorien) */
+.cat-familie { --cat-color: #f4a261; }
+.cat-arbeit  { --cat-color: #457b9d; }
+.cat-sport   { --cat-color: #2a9d8f; }
+.cat-musik   { --cat-color: #9d4edd; }
+.cat-koerper { --cat-color: #e76f51; }
+
+.dialekt-grid {
+  /* Verbessert: min 280px statt 260px für bessere mobile Lesbarkeit */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
 
 
