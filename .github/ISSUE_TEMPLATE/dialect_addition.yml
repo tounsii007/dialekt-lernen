@@ -1,0 +1,60 @@
+name: Neuer Dialekt / neue Ausdrücke
+description: Vorschlag für einen neuen Dialekt oder ergänzende Ausdrücke
+title: "[Data] "
+labels: ["data", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Wir freuen uns über Vorschläge für neue Dialekte oder Ergänzungen zu bestehenden! Bitte nutze möglichst dieses Formular.
+
+        Tipp: Wenn du den PR direkt machen willst, siehe [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) — neue Dialekte sind eine Datei in `data/dialekte/`.
+
+  - type: input
+    id: dialect
+    attributes:
+      label: Dialekt
+      placeholder: Fränkisch, Eifeler Platt, Niederbayerisch, …
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Art des Beitrags
+      options:
+        - "Neuer Dialekt (komplett neu)"
+        - "Neue Ausdrücke (zu existierendem Dialekt)"
+        - "Korrektur (existierender Ausdruck falsch)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expressions
+    attributes:
+      label: Ausdrücke
+      description: Bitte je Zeile ein Ausdruck — Format `dialekt | hochdeutsch | bedeutung | kategorie`
+      placeholder: |
+        Bassd scho | Passt schon | Universale fränkische Zustimmung | redensart
+        Servus | Hallo/Tschüss | Universeller Gruß im Süden | begruessung
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Quellen
+      description: Idealerweise gedruckte Wörterbücher oder Wikipedia-Artikel — nicht nur "habe ich oft gehört"
+      placeholder: |
+        - Wikipedia "Fränkische Dialekte"
+        - "Fränkisches Wörterbuch" (Müller, 2018)
+    validations:
+      required: true
+
+  - type: input
+    id: native
+    attributes:
+      label: Bist du Native Speaker?
+      placeholder: Ja, gebürtig aus / Nein, aber ich kenne…
+    validations:
+      required: true

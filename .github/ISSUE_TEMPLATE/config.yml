@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security Vulnerability
+    url: https://github.com/tounsii007/dialekt-lernen/security/advisories/new
+    about: "Sicherheitslücke? Bitte privat melden — nicht als öffentliches Issue."
