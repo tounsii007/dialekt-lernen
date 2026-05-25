@@ -865,11 +865,11 @@ export default {
     },
     {
       id: 'p-102',
-      ausdruck: 'Hans Albers',
-      hochdeutsch: 'Hans Albers (Schauspieler & Sänger)',
-      bedeutung: 'Hans Albers (1891–1960) war Hamburgs berühmtester Schauspieler und Sänger — der blonde Hans, das Hamburger Original. Unsterbliche Hits wie „La Paloma", „Auf der Reeperbahn nachts um halb eins" und „Junge, komm bald wieder" prägten ein Jahrhundert. Trotz seines Status\' verweigerte er sich teilweise dem Nazi-Regime. Sein Hamburger Schmäh und seine Reeperbahn-Lieder sind bis heute lebendig. Norddeutsches Kulturdenkmal.',
-      beispiel: '„Auf de Reeperbahn nachts um halb eins" — Hans Albers!',
-      beispiel_hd: '„Auf der Reeperbahn nachts um halb eins" — Hans Albers!',
+      ausdruck: 'Storm',
+      hochdeutsch: 'Theodor Storm (Dichter aus Husum)',
+      bedeutung: 'Theodor Storm (1817–1888), geboren in Husum (Nordfriesland), war der bedeutendste norddeutsche Lyriker und Erzähler. Sein berühmtester Text: „Der Schimmelreiter" — eine Novelle über die Macht des Wassers und der Naturgewalt. Auch Gedichte wie „Die Stadt" („Am grauen Strand, am grauen Meer") prägten das norddeutsche Selbstbild. Husum trägt den Beinamen „Graue Stadt am Meer". Norddeutsche Literatur in Weltrang.',
+      beispiel: 'Theodor Storm hett d\'graue Nordsee in Verse fangt.',
+      beispiel_hd: 'Theodor Storm hat die graue Nordsee in Verse gefangen.',
       kategorie: 'menschen'
     },
     {
@@ -919,11 +919,11 @@ export default {
     },
     {
       id: 'p-108',
-      ausdruck: 'Rollmops',
-      hochdeutsch: 'Rollmops (gerollter Hering)',
-      bedeutung: 'Der „Rollmops" ist DIE norddeutsche Fischspezialität: ein saurer Hering, mit Zwiebel und Gewürzgurke gefüllt, zu einer Rolle aufgewickelt und mit einem Holzstäbchen fixiert. In Essigmarinade eingelegt. Wird als Katerfrühstück nach durchzechten Nächten geschworen — die Säure hilft angeblich gegen den Kater. Klassischer Snack auf Hamburger Fischmärkten und in jedem norddeutschen Imbiss. Norddeutsche Küchen-Folklore.',
-      beispiel: 'Na de Hochtied hölpt en Rollmops gegen den Kater.',
-      beispiel_hd: 'Nach der Hochzeit hilft ein Rollmops gegen den Kater.',
+      ausdruck: 'Labskaus',
+      hochdeutsch: 'Labskaus (norddeutsches Seemannsgericht)',
+      bedeutung: '„Labskaus" ist DAS norddeutsche Seemannsgericht — eine Mischung aus Pökelfleisch, Kartoffeln, Roter Bete und Zwiebeln, zu einem rosafarbenen Brei zerstampft, mit Spiegelei, Rollmops und Gewürzgurke serviert. Sieht ungewöhnlich aus, schmeckt fantastisch. Ursprung im Hafen: schwer transportable Reste wurden zerstampft, sodass auch Zahnlose noch satt wurden. Klassiker der Hamburger und Bremer Speisekarten. Norddeutsche Identität auf dem Teller.',
+      beispiel: 'Labskaus mit Spegelei und Rollmops — Pflichtprogramm in Hamburg!',
+      beispiel_hd: 'Labskaus mit Spiegelei und Rollmops — Pflichtprogramm in Hamburg!',
       kategorie: 'essen'
     },
     {
@@ -937,12 +937,12 @@ export default {
     },
     {
       id: 'p-110',
-      ausdruck: 'Friesennerz',
-      hochdeutsch: 'Friesennerz (gelbe Regenjacke)',
-      bedeutung: 'Der „Friesennerz" ist die typisch norddeutsche, knallgelbe Regenjacke aus PVC-beschichtetem Stoff. Eigentlich Berufskleidung von Fischern und Seeleuten, ist sie in den 70ern zum Mode-Statement geworden und bis heute Symbol der Küste. Wer auf Sylt, Föhr oder in Bremerhaven im Friesennerz spaziert, zeigt Heimatverbundenheit. Klassiker neben dem norddeutschen Pendant — der schwarzen Mütze (Prinz-Heinrich-Mütze).',
-      beispiel: 'In\'n Friesennerz kannst du den Sturm utholn.',
-      beispiel_hd: 'Im Friesennerz kannst du den Sturm aushalten.',
-      kategorie: 'alltag'
+      ausdruck: 'Krabben',
+      hochdeutsch: 'Nordseekrabben (Granat)',
+      bedeutung: '„Krabben" oder „Granat" sind die kleinen, rosafarbenen Nordseekrabben aus dem Wattenmeer — eine norddeutsche Delikatesse. Werden frisch gefangen, gekocht und meist von Hand gepult („Krabben pulen") — eine zeitaufwendige Tätigkeit, die viele Norddeutsche meisterlich beherrschen. Klassiker: Krabbenbrot, Krabbensalat oder Pannfisch mit Krabben. Touristen-Magnet in Büsum, Greetsiel und Sylt. Norddeutsches Welterbe der Küstenküche.',
+      beispiel: 'Frische Krabben op Schwarzbrot mit Butter — ohh!',
+      beispiel_hd: 'Frische Krabben auf Schwarzbrot mit Butter — ohh!',
+      kategorie: 'essen'
     },
     {
       id: 'p-111',
@@ -991,12 +991,12 @@ export default {
     },
     {
       id: 'p-116',
-      ausdruck: 'Klabautermann',
-      hochdeutsch: 'Klabautermann (Schiffsgeist)',
-      bedeutung: 'Der „Klabautermann" ist ein freundlicher Schiffsgeist aus der norddeutschen Seemanns-Folklore — wohnt in jedem Schiff, hilft beim Trimmen der Segel und warnt vor Gefahren. Wenn er das Schiff verlässt, ist es dem Untergang geweiht. Stammt aus mittelalterlicher Schiffersage, lebt in Liedern, Sagen und Tausenden Kinderbüchern. Wird oft als kleiner alter Mann mit Pfeife und gelbem Ölzeug dargestellt. Maritime Folklore in Reinkultur.',
-      beispiel: 'De Klabautermann is ut\'n Schipp gohn — dat is böös Teken!',
-      beispiel_hd: 'Der Klabautermann ist aus dem Schiff gegangen — das ist ein böses Zeichen!',
-      kategorie: 'redensart'
+      ausdruck: 'Sturmflut',
+      hochdeutsch: 'Sturmflut (Naturphänomen)',
+      bedeutung: 'Die „Sturmflut" ist das prägende Naturphänomen der norddeutschen Küste — wenn Sturm und Springflut zusammenkommen, drohen Deichbrüche. Die schlimmsten der Geschichte: „Grote Mandränke" 1362 mit Zehntausenden Toten, „Manndränke" 1634, „Hamburg-Sturmflut" 1962 (315 Tote). Helmut Schmidt wurde damals zum Krisen-Manager. Heute schützen moderne Deiche. Die Sturmflut bleibt das Albtraum-Szenario der Küste — kollektive Erinnerung.',
+      beispiel: 'Bi de Sturmflut 1962 hett Hamborg unner Water stahn.',
+      beispiel_hd: 'Bei der Sturmflut 1962 hat Hamburg unter Wasser gestanden.',
+      kategorie: 'natur'
     },
     {
       id: 'p-117',
@@ -1018,12 +1018,12 @@ export default {
     },
     {
       id: 'p-119',
-      ausdruck: 'Plietsch',
-      hochdeutsch: 'Schlau / gewitzt',
-      bedeutung: '„Plietsch" ist im Plattdeutschen ein wichtiges Adjektiv: schlau, gewitzt, pfiffig — aber positiv konnotiert, nicht hinterlistig. „He is\'n plietschen Buurn" — er ist ein gewitzter Bauer. „Plietsch" ist Lob für jemanden, der Lebensklugheit und Bauernschläue verbindet. Anders als „falsch" oder „schlitzohrig" ist „plietsch" reine Anerkennung. Norddeutsche Tugend: nicht akademisch klug, aber praxisbezogen schlau.',
-      beispiel: 'De Lütte is plietsch — de kümmt überall mit kloor.',
-      beispiel_hd: 'Der Kleine ist clever — der kommt überall klar.',
-      kategorie: 'menschen'
+      ausdruck: 'Köm',
+      hochdeutsch: 'Köm (norddeutscher Kümmelschnaps)',
+      bedeutung: 'Der „Köm" ist der norddeutsche Kümmelschnaps — klassisch zwischen 28 und 38 Prozent, mit kräftigem Kümmel-Aroma. Wird zur Verdauung getrunken, zum Bauernfrühstück oder als „Lütt un Lütt" (kleines Bier mit kleinem Köm) in der Hamburger Hafenkneipe. Berühmte Marken: Helbing aus Hamburg (seit 1836), Bommerlunder aus Flensburg. Der Köm gehört zur norddeutschen Trinkkultur wie der Hering zum Fischbrot. Bodenständig pur.',
+      beispiel: 'En Lütt un Lütt — Bier mit Köm, hamburger Tradition.',
+      beispiel_hd: 'Ein Lütt un Lütt — Bier mit Köm, hamburgerische Tradition.',
+      kategorie: 'essen'
     },
     {
       id: 'p-120',

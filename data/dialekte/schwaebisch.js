@@ -899,20 +899,20 @@ export default {
     },
     {
       id: 'sw-104',
-      ausdruck: 'Bosch',
-      hochdeutsch: 'Robert Bosch (Erfinder & Firma)',
-      bedeutung: 'Robert Bosch (1861–1942) war einer der größten schwäbischen Tüftler — Gründer der gleichnamigen Firma (1886 in Stuttgart). Erfindungen: Magnetzünder, Bremstechnik, später Haushaltsgeräte und IT. Heute weltgrößter Automobilzulieferer mit über 400.000 Mitarbeitern. Bosch war für seine soziale Einstellung berühmt — Achtstundentag, Lohnerhöhungen, ohne ihn wäre VW nie groß geworden. Schwäbisches Ingenieurs-Vorbild bis heute.',
-      beispiel: 'Mei Großvater hat 40 Jahr bei Bosch g\'schafft.',
-      beispiel_hd: 'Mein Großvater hat 40 Jahre bei Bosch gearbeitet.',
+      ausdruck: 'Zeppelin',
+      hochdeutsch: 'Graf Zeppelin (Konstanzer Erfinder)',
+      bedeutung: 'Graf Ferdinand von Zeppelin (1838–1917), geboren in Konstanz, erfand die nach ihm benannten Luftschiffe — die „Zeppeline". 1900 startete „LZ 1" über dem Bodensee. In den 20er-Jahren waren Zeppeline Symbol deutscher Ingenieurskunst und überquerten den Atlantik. Die Hindenburg-Katastrophe 1937 beendete die Ära. Heute existieren wieder moderne Zeppeline NT, gebaut am Bodensee. Schwäbische Erfinder-Legende.',
+      beispiel: 'Da Graf Zeppelin hat\'s Luftschiff erfundn.',
+      beispiel_hd: 'Der Graf Zeppelin hat das Luftschiff erfunden.',
       kategorie: 'menschen'
     },
     {
       id: 'sw-105',
-      ausdruck: 'Spätzle',
-      hochdeutsch: 'Spätzle (schwäbische Eierteigware)',
-      bedeutung: 'Die „Spätzle" sind DIE schwäbische Beilage — Eierteigware aus Mehl, Eiern, Wasser und Salz, durch ein Spätzle-Sieb („Spätzlehobel" oder „Spätzlepresse") in kochendes Wasser geschabt. „Knöpfle" sind die kleineren, „Spatzen" die größeren Varianten. Wird zu allem gegessen: Linsen, Gulasch, Käsespätzle, Rahmsoße. Eine schwäbische Hausfrau, die keine Spätzle „von der Hand schaben" kann, gilt als nicht voll ausgebildet. Schwäbisches Welterbe.',
-      beispiel: 'Mei Oma schabt d\'Spätzla noch alles von der Hand.',
-      beispiel_hd: 'Meine Oma schabt die Spätzle noch alle von der Hand.',
+      ausdruck: 'Knöpfle',
+      hochdeutsch: 'Knöpfle (kleine Spätzle)',
+      bedeutung: 'Die „Knöpfle" sind die kleineren, runderen Verwandten der Spätzle — durch eine „Knöpfle-Presse" oder ein „Spätzle-Sieb mit großen Löchern" geformt. Im Allgäu heißen sie auch „Spatzen" oder „Krautspätzle". Klassisch zu Käsespätzle (Allgäuer Käsknöpfle), aber auch als Beilage. „Knöpfle" sind dichter und kompakter als die langen Spätzle — beide gehören zum schwäbischen Standardrepertoire. Schwäbische Pastakunst pur.',
+      beispiel: 'Im Allgäu gibt\'s Käsknöpfle — mit\'m Schmelz vom Heimat-Käs!',
+      beispiel_hd: 'Im Allgäu gibt es Käsknöpfle — mit dem Schmelz vom Heimat-Käse!',
       kategorie: 'essen'
     },
     {
@@ -926,11 +926,11 @@ export default {
     },
     {
       id: 'sw-107',
-      ausdruck: 'Trollinger',
-      hochdeutsch: 'Trollinger (schwäbischer Rotwein)',
-      bedeutung: 'Der „Trollinger" ist der schwäbische Nationalwein — ein leichter, fruchtiger Rotwein, hauptsächlich im Neckartal angebaut. Trinkt sich leicht — „Trollinger trinkt sich wie\'s Wasser" — und gehört zu jeder schwäbischen Vesper. Auch als „Trollinger mit Lemberger" als Cuvée verbreitet. Der Schwabe trinkt seinen Wein gerne aus dem „Viertele"-Glas. Bodenständiger als der bayerische Bier-Kult, aber genauso identitätsstiftend.',
-      beispiel: 'A Viertele Trollinger zur Vesper — Pflichtprogramm.',
-      beispiel_hd: 'Ein Viertel Trollinger zur Vesper — Pflichtprogramm.',
+      ausdruck: 'Lemberger',
+      hochdeutsch: 'Lemberger (kräftiger Rotwein)',
+      bedeutung: 'Der „Lemberger" ist der kräftigere schwäbische Rotwein — tiefdunkel, würzig, mit Lagerpotenzial. Aus der Rebsorte Blaufränkisch, die in Württemberg seit dem 19. Jh. „Lemberger" heißt. Anders als der leichte Trollinger ist der Lemberger ein Wein für besondere Anlässe. Beliebte Cuvée: „Trollinger mit Lemberger" — der schwäbische Klassiker. Auch als Spätlese und Eiswein ausgebaut. Württemberg ist Lemberger-Hochburg Deutschlands.',
+      beispiel: 'A Glas Lemberger zum Rinderbraten — passt!',
+      beispiel_hd: 'Ein Glas Lemberger zum Rinderbraten — passt!',
       kategorie: 'essen'
     },
     {
@@ -944,11 +944,11 @@ export default {
     },
     {
       id: 'sw-109',
-      ausdruck: 'Brezel',
-      hochdeutsch: 'Schwäbische Brezel',
-      bedeutung: 'Die „schwäbische Brezel" (Laugenbrezel) ist neben Spätzle das wichtigste schwäbische Backwerk — knusprig braun, mit grobem Salz bestreut. Im Gegensatz zur bayerischen Brezn ist die schwäbische dünner an den Ärmchen und dicker im Bauch. Klassische Begleitung zum Frühstück, zur Vesper, zum Bier. Stuttgarter „Brez\'gugl" — die einzelne Brezel — wird im Vorbeigehen verspeist. Wird auch zum „Brez\'lkönig" — den die Region kürt.',
-      beispiel: 'A frische Brez\'l mit Butter — Frühstück!',
-      beispiel_hd: 'Eine frische Brezel mit Butter — Frühstück!',
+      ausdruck: 'Seele',
+      hochdeutsch: 'Seele (Oberschwäbisches Brot)',
+      bedeutung: 'Die „Seele" ist ein längliches, knuspriges Oberschwäbisches Brot mit Kümmel und grobem Salz — eine Spezialität aus Weingarten und Umgebung. Aussen knusprig, innen luftig-locker. Wird zur Vesper, zum Wein oder als Snack gegessen. „Seelen" wurden traditionell am Allerseelentag (2. November) gebacken — daher der Name. Heute ganzjährig in oberschwäbischen Bäckereien. Schwäbisches Brot-Erbe.',
+      beispiel: 'A frische Seele aus em Backofa — knuspert!',
+      beispiel_hd: 'Eine frische Seele aus dem Backofen — knuspert!',
       kategorie: 'essen'
     },
     {
@@ -971,12 +971,12 @@ export default {
     },
     {
       id: 'sw-112',
-      ausdruck: 'Kehrwoche',
-      hochdeutsch: 'Kehrwoche (Putzpflicht)',
-      bedeutung: 'Die „Kehrwoche" ist die schwäbische Putz-Institution: In Mehrfamilienhäusern rotiert die Pflicht, Treppenhaus, Bürgersteig und Hof zu reinigen. Wer „Kehrwoche hat", muss am Samstag früh wischen und kehren. Streng geregelt, gnadenlos kontrolliert von Nachbarn. Wer schludert, wird zum Sozialfeind. Schwabens Ruf für Putzwahn und Ordnung hat hier seine Wurzeln. Verfilmt von Felix Huby in der Reihe „Häberle und Pfleiderer".',
-      beispiel: 'Saubere Kehrwoche! I hab gestern dreimal gefegt.',
-      beispiel_hd: 'Saubere Kehrwoche! Ich habe gestern dreimal gefegt.',
-      kategorie: 'alltag'
+      ausdruck: 'Fasnet',
+      hochdeutsch: 'Schwäbisch-Alemannische Fastnacht',
+      bedeutung: 'Die „Fasnet" ist die schwäbisch-alemannische Fastnacht — viel älter und urtümlicher als der rheinische Karneval. Mit kunstvoll geschnitzten Holzmasken („Larven"), Glocken und gruseligen Figuren wie Hexen, Hansel und Spättle. Hochburgen: Rottweil, Villingen, Überlingen, Schwäbisch Gmünd. Jede Stadt hat ihre eigenen Figuren und Traditionen. UNESCO-würdiges Kulturgut. Im Gegensatz zum Köln-Karneval mehr Tradition als Party.',
+      beispiel: 'D\'Rottweiler Fasnet isch ältr als de Kölner Karneval.',
+      beispiel_hd: 'Die Rottweiler Fasnacht ist älter als der Kölner Karneval.',
+      kategorie: 'redensart'
     },
     {
       id: 'sw-113',
@@ -998,11 +998,11 @@ export default {
     },
     {
       id: 'sw-115',
-      ausdruck: 'Häusle',
-      hochdeutsch: 'Häuschen / Eigenheim',
-      bedeutung: 'Das „Häusle" ist das schwäbische Lebensziel — das Eigenheim, gebaut mit harter Arbeit und schwäbischer Sparsamkeit. „Schaffe, schaffe, Häusle baue" ist der Lebensplan jeder Schwabenfamilie. Wer kein Häusle hat, gilt als nicht ganz angekommen. Wird oft über Jahrzehnte gebaut, mit eigenen Händen ausgebaut, an Kinder und Enkel weitergegeben. Schwäbisches Stoffidentitätsmerkmal — mehr als nur Immobilie.',
-      beispiel: 'Mit fufzg hand mir des Häusle endlich abbezahlt.',
-      beispiel_hd: 'Mit fünfzig haben wir das Häuschen endlich abbezahlt.',
+      ausdruck: 'Hohenzollern',
+      hochdeutsch: 'Burg Hohenzollern',
+      bedeutung: 'Die „Burg Hohenzollern" auf dem Berg Hohenzollern (855 m, bei Hechingen, Baden-Württemberg) ist Stammsitz des preussischen Königshauses Hohenzollern. Die heutige neogotische Burg wurde 1850–1867 erbaut — eine der schönsten Schlossanlagen Deutschlands. Bei klarem Wetter weithin sichtbar als Silhouette auf dem Albtrauf. Heute Museum und Touristenmagnet — mit der originalen preussischen Königskrone. Schwäbisches Wahrzeichen mit Welt-Geschichte.',
+      beispiel: 'D\'Hohenzollern thront wia a Märchaschloss überm Albtrauf.',
+      beispiel_hd: 'Die Hohenzollern thront wie ein Märchenschloss über dem Albtrauf.',
       kategorie: 'orte'
     },
     {
@@ -1061,30 +1061,30 @@ export default {
     },
     {
       id: 'sw-122',
-      ausdruck: 'Mädle',
-      hochdeutsch: 'Mädchen (schwäbisch)',
-      bedeutung: 'Das „Mädle" ist im Schwäbischen das Mädchen — wärmer und vertraulicher als das hochdeutsche „Mädchen". „Schwabamädle" sind sprichwörtlich klug, fleißig und schön. Im Spruch „Schaffe, schaffe, Häusle baue, ond net nach de Mädle schaue" wird das Mädle als Versuchung dargestellt. Auch Kosewort: „Mei Mädle" für Tochter oder Partnerin. Schwäbische Wärme in einem Wort.',
-      beispiel: 'D\'Mädle isch heut zur Schul gange.',
-      beispiel_hd: 'Das Mädchen ist heute zur Schule gegangen.',
+      ausdruck: 'Großmuatter',
+      hochdeutsch: 'Großmutter / Oma',
+      bedeutung: 'Die „Großmuatter" oder „Oma" ist im Schwäbischen wie überall die geliebte Familienälteste — aber im Schwäbischen besonders mit Spätzle-Können, Kehrwoche-Disziplin und Häkelkunst verbunden. „Oma\'s Spätzle" sind das ultimative Lob, „Oma\'s Maultaschen" ein Heiligtum. Schwäbische Großmütter geben Werte und Rezepte über Generationen weiter. Werden „Großmuatter", „Großmama" oder einfach „Oma" genannt. Familien-Anker mit Vesper-Berge.',
+      beispiel: 'Bei mei\'r Großmuatter gibt\'s am Sonntag Maultaschen.',
+      beispiel_hd: 'Bei meiner Großmutter gibt es am Sonntag Maultaschen.',
       kategorie: 'familie'
     },
     {
       id: 'sw-123',
-      ausdruck: 'Bua',
-      hochdeutsch: 'Bub / Junge (schwäbisch)',
-      bedeutung: 'Der „Bua" ist im Schwäbischen der Junge oder Sohn. „Mei Bua" ist liebevolle Bezeichnung für den eigenen Sohn — in jedem Alter, auch wenn er schon Großvater ist. „A schaffger Bua" ist ein fleißiger Junge — höchstes Lob. „D\'Buabe" — die Jungs — werden oft als Gruppe angesprochen. Schwäbische Vater-Sohn-Beziehung ist herzlich-bodenständig. Der „Schwabenbua" — Stereotyp und Realität.',
-      beispiel: 'Mei Bua arbeitet bei Daimler in Sindelfinge.',
-      beispiel_hd: 'Mein Sohn arbeitet bei Daimler in Sindelfingen.',
-      kategorie: 'familie'
+      ausdruck: 'Wengerter',
+      hochdeutsch: 'Wengerter (Weinbauer)',
+      bedeutung: 'Der „Wengerter" ist im Schwäbischen der Weinbauer — vom mittelalterlichen „Wengert" (Weinberg). Schwäbischer Weinbau hat Tradition seit dem 8. Jh., bewirtschaftet vor allem das Neckartal, Remstal, Kocher- und Jagsttal. Berühmte Wengerter-Orte: Stuttgart-Stadt, Esslingen, Ludwigsburg, Heilbronn. Wengerter sind echte Berufs-Charaktere: hart arbeitend, wettergegerbt, mit ausgeprägtem Sinn für Tradition. Schwäbische Wein-Kultur in Person.',
+      beispiel: 'Mei Onkel isch Wengerter mit a am Neckar.',
+      beispiel_hd: 'Mein Onkel ist Weinbauer mit einem Weinberg am Neckar.',
+      kategorie: 'arbeit'
     },
     {
       id: 'sw-124',
-      ausdruck: 'Tübingen',
-      hochdeutsch: 'Tübingen (Universitätsstadt)',
-      bedeutung: 'Tübingen am Neckar ist Schwabens berühmteste Universitätsstadt — die Eberhard-Karls-Universität wurde 1477 gegründet, eine der ältesten Deutschlands. Friedrich Hölderlin lebte hier im Hölderlinturm seine letzten 36 Jahre. Heute Studenten-Idylle mit altem Stadtbild, Stocherkahnrennen auf dem Neckar und grün-alternativer Politik. Das schwäbische Heidelberg — schöner, kleiner, ehrlicher. Wahlheimat von Boris Palmer.',
-      beispiel: 'In Tübingen isch d\'Welt no in Ordnung.',
-      beispiel_hd: 'In Tübingen ist die Welt noch in Ordnung.',
-      kategorie: 'orte'
+      ausdruck: 'Bodensee',
+      hochdeutsch: 'Bodensee (Schwäbisches Meer)',
+      bedeutung: 'Der „Bodensee" — auch „Schwäbisches Meer" genannt — ist Deutschlands grösster See und der drittgrösste Mitteleuropas. Grenze zwischen Deutschland, Österreich und der Schweiz. Berühmt für die Insel Mainau (Blumeninsel), die Klosterinsel Reichenau (UNESCO-Welterbe), die Pfahlbauten von Unteruhldingen. Konstanz und Friedrichshafen sind die grössten deutschen Bodensee-Städte. Ferienparadies mit Alpenpanorama. Schwäbisches Stück Wasser-Identität.',
+      beispiel: 'Im Sommer schwimm ma im Bodensee — wia\'s Meer!',
+      beispiel_hd: 'Im Sommer schwimmen wir im Bodensee — wie das Meer!',
+      kategorie: 'natur'
     },
     {
       id: 'sw-125',

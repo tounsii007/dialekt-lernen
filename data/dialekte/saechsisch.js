@@ -1098,6 +1098,231 @@ export default {
       beispiel: 'Mei Großvater hat 30 Jahr in der Wismut gearbeit.',
       beispiel_hd: 'Mein Großvater hat 30 Jahre in der Wismut gearbeitet.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 's-126',
+      ausdruck: 'Otto Mücke',
+      hochdeutsch: 'Otto Mücke (Sächsisches Original)',
+      bedeutung: 'Otto Mücke ist eine berühmte sächsische Original-Figur — verkörpert durch den Kabarettisten Walter Sparbier und später als Inbegriff des typischen Sachsen popularisiert. Mit Hut, Schnauzer und kernigem Sächsisch verkörpert er den liebenswerten Spießer. Heute Synonym für sächsische Eigenheiten und Lebensart. Solche Original-Gestalten wie Otto Mücke pflegen das Sächsische in Sprache und Habitus weiter.',
+      beispiel: 'A echter Otto Mücke — mit Hut und Schnauzer.',
+      beispiel_hd: 'Ein echter Otto Mücke — mit Hut und Schnauzer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-127',
+      ausdruck: 'Olaf Schubert',
+      hochdeutsch: 'Olaf Schubert (Dresdner Kabarettist)',
+      bedeutung: 'Olaf Schubert (geboren 1967 in Plauen) ist einer der bekanntesten sächsischen Kabarettisten — mit Pullunder, kindlicher Stimme und naiv-philosophischem Witz. Seine Shows „Schuberts Welt" und „Olaf Schubert und seine Freunde" füllen Hallen in ganz Deutschland. Spielt mit dem Sächsisch-Stereotyp und macht es zugleich liebenswert. Seine Bemerkungen über den Alltag haben Kultstatus. Plauen und Dresden sind stolz auf ihren Olaf.',
+      beispiel: 'Olaf Schubert hat\'s Sächsische deutschlandweit salonfähig gemacht.',
+      beispiel_hd: 'Olaf Schubert hat das Sächsische deutschlandweit salonfähig gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-128',
+      ausdruck: 'Tom Pauls',
+      hochdeutsch: 'Tom Pauls (Sächsischer Schauspieler & Kabarettist)',
+      bedeutung: 'Tom Pauls (geboren 1959 in Dresden) ist einer der profiliertesten sächsischen Kabarettisten und Schauspieler — bekannt für seine Bühnenrolle als „Ilse Bähnert" (eine ältere sächsische Dame). Mit seinem „Pauls Salon" in Pirna pflegt er die sächsische Mundart und Kultur. Auch als Filmschauspieler („Nikolaikirche", „Sonnenallee") bekannt. Verkörpert mit Witz und Wärme die sächsische Seele. Ehrenbürger der Stadt Pirna.',
+      beispiel: 'Tom Pauls als Ilse Bähnert — sächsisches Kabarett pur.',
+      beispiel_hd: 'Tom Pauls als Ilse Bähnert — sächsisches Kabarett pur.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-129',
+      ausdruck: 'Bergmannslied',
+      hochdeutsch: 'Erzgebirgisches Bergmannslied',
+      bedeutung: 'Die Bergmannslieder des Erzgebirges sind ein bedeutender Teil der sächsischen Volksmusik — entstanden aus der jahrhundertelangen Bergbau-Tradition. Bekannte Lieder: „Glück auf, der Steiger kommt", „Steigerlied", „Bergmannsgruß". Werden bei Bergparaden und in Bergmannschor-Konzerten gesungen. Das Steigerlied gilt als „inoffizielle Hymne des Bergbaus" und ist UNESCO-Welterbe der immateriellen Kultur. Bewahren das Andenken an die harte Arbeit unter Tage.',
+      beispiel: 'Beim Bergmannschor singt mer noch d\'alten Lieder.',
+      beispiel_hd: 'Beim Bergmannschor singt man noch die alten Lieder.',
+      kategorie: 'musik'
+    },
+    {
+      id: 's-130',
+      ausdruck: 'Pulsnitzer Lebkuchen',
+      hochdeutsch: 'Pulsnitzer Lebkuchen (Detail-Tradition)',
+      bedeutung: 'Die Pulsnitzer Lebkuchen-Manufakturen pflegen eine 500-jährige Backtradition — jede der acht traditionellen Bäckereien hat eigene Geheimrezepte, die nur an die nächste Generation weitergegeben werden. Die berühmten Sorten: Spitzkuchen, Eiserkuchen, gefüllte Lebkuchen mit Marzipan oder Marmelade. Die EU-geschützte geografische Angabe garantiert Qualität. Im Pfefferkuchenmuseum Pulsnitz kann man den Bäckern bei der Arbeit zuschauen.',
+      beispiel: 'D\'Pulsnitzer Spitzkuchen sin\'a Spezialität.',
+      beispiel_hd: 'Die Pulsnitzer Spitzkuchen sind eine Spezialität.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-131',
+      ausdruck: 'Wernesgrüner Pils',
+      hochdeutsch: 'Wernesgrüner Pilsner Legende',
+      bedeutung: 'Das Wernesgrüner Pils aus dem Vogtland ist seit 1436 dokumentiert — eine der ältesten Brauereien Deutschlands. „Pilsner Legende" heißt die Hauptmarke — schlankes, malziges Pils mit feiner Hopfennote. Die Brauerei im sächsischen Wernesgrün gehörte zur DDR-Zeit zu den wenigen erlaubten Privatbrauereien (Carl-Ludwig-Brauerei) und stand für Qualität trotz Mangelwirtschaft. Nach der Wende erfolgreich modernisiert. Heute zur Bitburger-Gruppe. Sächsisches Bier-Kulturerbe.',
+      beispiel: 'A Wernesgrüner schmeckt nach echtem Vogtland.',
+      beispiel_hd: 'Ein Wernesgrüner schmeckt nach echtem Vogtland.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-132',
+      ausdruck: 'Radeberger Pilsner',
+      hochdeutsch: 'Radeberger Pilsner (sächsische Pils-Legende)',
+      bedeutung: 'Das Radeberger Pilsner aus Radeberg bei Dresden ist seit 1872 Deutschlands ältestes Pilsener — als erstes deutsches Pils nach böhmischem Vorbild gebraut. Reichskanzler Bismarck trank es im Berliner Hofbräu, König Friedrich August III. erklärte es 1905 zum Hofbier. Markante hopfenbittere Note, schlank im Charakter. Heute Flaggschiff der Radeberger Gruppe (Deutschlands größte Brauereigruppe). Symbol sächsischer Braukunst und Tradition.',
+      beispiel: 'A Radeberger Pils — des trinkt schon Bismarck gehabt.',
+      beispiel_hd: 'Ein Radeberger Pils — das hat schon Bismarck getrunken.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-133',
+      ausdruck: 'Mendelssohn-Bartholdy',
+      hochdeutsch: 'Felix Mendelssohn Bartholdy (Leipziger Komponist)',
+      bedeutung: 'Felix Mendelssohn Bartholdy (1809–1847) war einer der bedeutendsten Komponisten der Romantik und prägte das Leipziger Musikleben entscheidend. Von 1835 bis zu seinem Tod war er Gewandhauskapellmeister in Leipzig und gründete 1843 das erste deutsche Konservatorium (heute Hochschule für Musik und Theater „Felix Mendelssohn Bartholdy"). Werke wie das Violinkonzert e-Moll, die „Hebriden"-Ouvertüre und das Oratorium „Elias" sind Weltliteratur. Sein Wohnhaus in Leipzig ist heute Mendelssohn-Museum.',
+      beispiel: 'Mendelssohn hat Leipzig zur Musikhauptstadt gemacht.',
+      beispiel_hd: 'Mendelssohn hat Leipzig zur Musikhauptstadt gemacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-134',
+      ausdruck: 'Schiller in Leipzig',
+      hochdeutsch: 'Friedrich Schiller in Leipzig',
+      bedeutung: 'Friedrich Schiller (1759–1805) verbrachte 1785 entscheidende Monate in Leipzig und im Vorort Gohlis — hier entstand seine berühmte Ode „An die Freude", die Beethoven später als Schlusschor seiner 9. Symphonie vertonte (heute die Europahymne). Das Schillerhaus in Leipzig-Gohlis ist das einzige originale Schiller-Wohnhaus, das öffentlich zugänglich ist. In Leipzig fand Schiller bei Christian Gottfried Körner und seinen Freunden eine Zuflucht vor seinen finanziellen Schwierigkeiten.',
+      beispiel: 'Schiller hat in Leipzig „Freude, schöner Götterfunken" geschrieben.',
+      beispiel_hd: 'Schiller hat in Leipzig „Freude, schöner Götterfunken" geschrieben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-135',
+      ausdruck: 'Wagner-Geburtsstadt',
+      hochdeutsch: 'Richard Wagner — geboren in Leipzig',
+      bedeutung: 'Richard Wagner (1813–1883) wurde am 22. Mai 1813 in Leipzig geboren — in der Brühlgasse 88. Der Schöpfer von „Tannhäuser", „Lohengrin", „Tristan und Isolde" und dem „Ring des Nibelungen" verbrachte seine ersten Lebensjahre in Sachsen, studierte in Leipzig Komposition. Später war er Hofkapellmeister in Dresden (1843–1849), bis er nach der Mai-Revolution fliehen musste. Das Wagner-Denkmal und Museum in Leipzig würdigen den größten Sohn der Stadt. Sachsen prägte sein Frühwerk entscheidend.',
+      beispiel: 'Richard Wagner is\'a Leipziger Junge — wussten viele nich.',
+      beispiel_hd: 'Richard Wagner ist ein Leipziger Junge — wussten viele nicht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-136',
+      ausdruck: 'Thomaskirche',
+      hochdeutsch: 'Thomaskirche Leipzig (Bach-Wirkungsstätte)',
+      bedeutung: 'Die Thomaskirche in Leipzig war 27 Jahre lang Wirkungsstätte von Johann Sebastian Bach (1723–1750) als Thomaskantor. Hier komponierte er die meisten seiner Kirchenkantaten, die h-Moll-Messe und die Matthäus-Passion. Sein Grab befindet sich seit 1950 im Chor der Kirche — eine Wallfahrtsstätte für Musikliebhaber aus aller Welt. Die Thomaner singen heute noch wöchentlich Motetten in der Kirche. Das berühmte Bach-Denkmal vor der Thomaskirche ist Fotomotiv.',
+      beispiel: 'In der Thomaskirsch liegt der Bach begraben.',
+      beispiel_hd: 'In der Thomaskirche liegt Bach begraben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-137',
+      ausdruck: 'Karl-Marx-Monument',
+      hochdeutsch: 'Karl-Marx-Monument Chemnitz („Nischel")',
+      bedeutung: 'Das Karl-Marx-Monument in Chemnitz — eine 7,1 Meter hohe Bronzeskulptur des Marx-Kopfes — wurde 1971 vom sowjetischen Bildhauer Lew Kerbel geschaffen und ist nach dem Mount Rushmore die zweitgrößte Porträtskulptur der Welt. Die Chemnitzer nennen sie liebevoll-ironisch „Nischel" (sächsisch für Kopf). Trotz der Rückbenennung von Karl-Marx-Stadt in Chemnitz 1990 blieb das Monument stehen und ist heute Wahrzeichen und Touristenattraktion. Sozialistisches Erbe und Pop-Art-Ikone zugleich.',
+      beispiel: 'Der Nischel in Chemnitz isch deutschlandweit berühmt.',
+      beispiel_hd: 'Der „Nischel" in Chemnitz ist deutschlandweit berühmt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-138',
+      ausdruck: 'Aha!',
+      hochdeutsch: 'Aha! (sächsischer Ausruf)',
+      bedeutung: '„Aha!" ist im sächsischen Sprachgebrauch ein universaler Ausruf — vom plötzlichen Erkennen bis zur skeptischen Bestätigung. Mit der typischen sächsischen Melodik wird es zu einer Kunstform: hochgezogen klingt es überrascht, tief gesprochen abwartend-skeptisch, mit Lächeln zustimmend. Das „Aha!" gehört zu den ersten Wörtern, die Nicht-Sachsen am Klang des Dialekts erkennen. Auch Stilmittel sächsischer Kabarettisten wie Olaf Schubert. Mehr als ein Wort — ein ganzes Lebensgefühl.',
+      beispiel: 'Aha! — Jetz iss dir des Licht uffgegange.',
+      beispiel_hd: 'Aha! — Jetzt ist dir das Licht aufgegangen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-139',
+      ausdruck: 'Räucherkerzen',
+      hochdeutsch: 'Räucherkerzen-Fertigung (Crottendorf, Erzgebirge)',
+      bedeutung: 'Die Räucherkerzen-Fertigung im Erzgebirge — vor allem in Crottendorf und Umgebung — ist seit 1856 dokumentiert. Aus Kohlestaub, Sägespänen, Tragantgummi und natürlichen Aromen (Weihrauch, Sandelholz, Myrrhe) werden die kleinen Räucherkegel gepresst. Im Räuchermännchen oder Räucherhäuschen abgebrannt, verströmen sie den unverwechselbaren Weihnachtsduft sächsischer Stuben. Die Firma Crottendorfer ist Marktführer. UNESCO-würdiges Handwerk und sächsisches Kulturerbe.',
+      beispiel: 'D\'Crottendorfer Räucherkerzen riechen nach Weihnachten.',
+      beispiel_hd: 'Die Crottendorfer Räucherkerzen riechen nach Weihnachten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-140',
+      ausdruck: 'Erzgebirgsverein',
+      hochdeutsch: 'Erzgebirgsverein (Heimatverein)',
+      bedeutung: 'Der Erzgebirgsverein wurde 1878 in Schneeberg gegründet und ist heute mit über 12.000 Mitgliedern in über 130 Ortsgruppen einer der größten regionalen Heimatvereine Deutschlands. Pflegt erzgebirgische Mundart, Traditionen, Wanderwege und Bergmannskultur. Organisiert die berühmten Bergparaden in Annaberg, Schneeberg und Marienberg. Auch die Bewahrung der Volkskunst (Schwibbögen, Räuchermännchen, Bergmannsfiguren) ist Vereinsanliegen. Sächsische Heimatpflege auf höchstem Niveau.',
+      beispiel: 'Mei Großvater is\'im Erzgebirgsverein — sin\'a richtige Heimatleut.',
+      beispiel_hd: 'Mein Großvater ist im Erzgebirgsverein — sind richtige Heimatleute.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-141',
+      ausdruck: 'Plauener Stickerei',
+      hochdeutsch: 'Plauener Stickerei (filigrane Stickkunst Detail)',
+      bedeutung: 'Die Plauener Stickerei und Spitze ist eine weltweit einzigartige Stickerei-Tradition aus Plauen im Vogtland — entwickelt im 19. Jahrhundert. Die Spitzentauflösung in Säurebädern war eine Plauener Erfindung. Plauener Spitze ziert Brautkleider weltweit, einschließlich royaler Hochzeiten. Das Plauener Spitzenmuseum dokumentiert die Tradition. Der Stickerei-Boom Ende des 19. Jahrhunderts machte Plauen zur reichsten Stadt Sachsens — bis zur Weltwirtschaftskrise 1929. Heute kleine, aber feine Manufakturen.',
+      beispiel: 'Plauener Spitze auf\'m Brautkleid — schwerwiegend!',
+      beispiel_hd: 'Plauener Spitze auf dem Brautkleid — schwerwiegend!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-142',
+      ausdruck: 'Cottbuser Brauerei',
+      hochdeutsch: 'Cottbuser Brauerei (Lausitzer Bier)',
+      bedeutung: 'Die Cottbuser Brauerei in der Lausitz hat eine lange Tradition — bereits 1492 wird das Brauwesen in Cottbus erwähnt. Die heutige Cottbuser Aktien-Brauerei produziert traditionelle Lausitzer Biere mit lokalem Hopfen und Wasser aus dem Spreewald. In der DDR-Zeit ein wichtiges Versorgungsunternehmen, nach der Wende erfolgreich privatisiert. Die Marken „Cottbuser" und „Lausitzer" sind in Ostdeutschland geschätzt. Sorbisches Erbe spiegelt sich in zweisprachigen Etiketten wider.',
+      beispiel: 'In der Lausitz trinkt mer gern a Cottbuser Bier.',
+      beispiel_hd: 'In der Lausitz trinkt man gern ein Cottbuser Bier.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-143',
+      ausdruck: 'Niederlausitzer Sorben',
+      hochdeutsch: 'Niederlausitzer Sorben (Wenden)',
+      bedeutung: 'Die Niederlausitzer Sorben — auch „Wenden" genannt — sind die nördliche Variante des sorbischen Volkes, vor allem im Cottbuser Raum und Spreewald angesiedelt. Sprechen Niedersorbisch (verschieden vom Obersorbisch in Bautzen). Eigene Trachten, Bräuche wie das Vogelhochzeit-Fest am 25. Januar und das Zampern (Fastnachtsbrauch). Die niedersorbische Sprache ist stark gefährdet — nur noch wenige tausend aktive Sprecher. UNESCO-Welterbe der bedrohten Sprachen. Sächsisch-brandenburgisches Kulturerbe.',
+      beispiel: 'D\'Niederlausitzer Sorben feiern\'s Zampern im Frühjahr.',
+      beispiel_hd: 'Die Niederlausitzer Sorben feiern das Zampern im Frühjahr.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-144',
+      ausdruck: 'Bockwurscht',
+      hochdeutsch: 'Bockwurst (sächsische Imbiss-Klassik)',
+      bedeutung: 'Die Bockwurscht — sächsische Aussprache der Bockwurst — ist klassisches Imbissfutter in Sachsen. Heiß im Wasser erwärmt, mit scharfem Bautz\'ner Senf serviert, dazu ein Brötchen. An jedem Bahnhof, in jeder Markthalle, an jeder Imbissbude. In der DDR war die Bockwurscht Massenware und Statussymbol — eine Bockwurscht mit Brötchen war Sonntags-Luxus. Heute kulinarisches Symbol ostdeutscher Identität. Ohne Senf undenkbar.',
+      beispiel: 'A Bockwurscht mit Bautz\'ner Senf — Mittag fertig!',
+      beispiel_hd: 'Eine Bockwurst mit Bautzner Senf — Mittag fertig!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-145',
+      ausdruck: 'Pfaffe',
+      hochdeutsch: 'Pfarrer (sächsisch-derb)',
+      bedeutung: 'Der „Pfaffe" ist im Sächsischen die mild-spöttische Bezeichnung für den Pfarrer oder Geistlichen — leicht abwertend, aber selten wirklich böse gemeint. In der DDR-Zeit, als die Kirche unter Druck stand, bekam das Wort einen ironisch-respektvollen Beiklang. Sachsen ist trotz Säkularisierung eine Region mit reicher Kirchenmusik-Tradition (Thomaner, Kreuzchor). Der „Pfaffe" gehört dazu — manchmal verspottet, oft geschätzt.',
+      beispiel: 'Der Pfaffe in unserer Kirche hält schöne Predigten.',
+      beispiel_hd: 'Der Pfarrer in unserer Kirche hält schöne Predigten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-146',
+      ausdruck: 'Schwarzbier',
+      hochdeutsch: 'Schwarzbier (Köstritzer)',
+      bedeutung: 'Das Köstritzer Schwarzbier aus Bad Köstritz in Thüringen (an der Grenze zu Sachsen) hat eine 480-jährige Tradition — seit 1543 dokumentiert. Tiefdunkles, mild-süßliches Bier mit Röstmalz-Aroma. Johann Wolfgang von Goethe trank es zur Linderung seiner Krankheit. Auch Otto von Bismarck schätzte das „dunkle Gold". Heute eine der bekanntesten Marken Deutschlands. Sächsisch-thüringisches Bier-Kulturerbe. Das Schwarzbier wird oft mit Cola als „Bismarck" gemischt.',
+      beispiel: 'A Köstritzer Schwarzbier — des isch was Bsondres.',
+      beispiel_hd: 'Ein Köstritzer Schwarzbier — das ist etwas Besonderes.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-147',
+      ausdruck: 'Soljanka',
+      hochdeutsch: 'Soljanka (DDR-Suppenklassiker)',
+      bedeutung: 'Die Soljanka ist eine säuerlich-pikante Suppe russischen Ursprungs, die in der DDR zur Kultsuppe wurde — auf jeder Speisekarte zu finden. Mit Salzgurken, Tomaten, Wurst, Speck, Paprika und Zitrone zubereitet. Auch Sahne wird oft zugegeben. In Sachsen besonders beliebt — sächsische Wirtshäuser servieren oft eine Hauseigene Variante. Postsozialistisches Comfort-Food, das auch nach der Wende beliebt blieb. Heute Symbol ostdeutscher Esskultur.',
+      beispiel: 'A Schüssel Soljanka mit Sahne — DDR-Klassiker!',
+      beispiel_hd: 'Eine Schüssel Soljanka mit Sahne — DDR-Klassiker!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-148',
+      ausdruck: 'Pittiplatsch',
+      hochdeutsch: 'Pittiplatsch (DDR-Sandmännchen-Figur)',
+      bedeutung: 'Pittiplatsch der Liebe (kurz „Pitti") ist eine der berühmtesten DDR-Sandmännchen-Figuren — eine kleine Kobold-Puppe mit Glubschaugen. Seit 1962 im DDR-Fernsehen. Zusammen mit Schnatterinchen (Ente) und Moppi (Hund) bildeten sie das Trio des „Abendgrußes". Pittis Markenspruch „Ach, du meine Nase!" wurde Kult. Generationenprägend für Ostdeutsche — fast jeder Sachse zwischen 30 und 60 ist mit Pittiplatsch aufgewachsen. Nach der Wende erhalten, heute Kult-Figur und Souvenir.',
+      beispiel: 'Pittiplatsch hat als Kind jeden Abend mei Bett besucht.',
+      beispiel_hd: 'Pittiplatsch hat als Kind jeden Abend mein Bett besucht.',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-149',
+      ausdruck: 'Volksmusik Erzgebirge',
+      hochdeutsch: 'Erzgebirgische Volksmusik (Bergleute-Lieder)',
+      bedeutung: 'Die erzgebirgische Volksmusik ist eine der reichsten regionalen Musiktraditionen Deutschlands — mit eigenen Liedern, Tanzformen und Instrumenten. Berühmte Vertreter: Anton Günther (1876–1937, Volksdichter und Komponist von „Da drubn afn Beraga"), die Erzgebirgsensembles und Bergmannschöre. Klassische Lieder: „Da drubn af\'n Beraga", „Ufm Sandhübel", „Mei Vaterhaus". Heute lebendig in Chören, Musikvereinen und beim Erzgebirgsverein. Sächsisch-erzgebirgisches immaterielles Kulturerbe.',
+      beispiel: 'D\'erzgebirgische Volksmusik geht ins Herz.',
+      beispiel_hd: 'Die erzgebirgische Volksmusik geht ins Herz.',
+      kategorie: 'musik'
+    },
+    {
+      id: 's-150',
+      ausdruck: 'Anton Günther',
+      hochdeutsch: 'Anton Günther (Erzgebirgischer Volksdichter)',
+      bedeutung: 'Anton Günther (1876–1937) aus Gottesgab im Erzgebirge ist der bekannteste Mundartdichter Sachsens — schrieb über 200 Lieder in erzgebirgischer Mundart, darunter „Da drubn afn Beraga" („Da oben auf dem Berge"), „Feieromd" und „Mei Hamit". Seine Lieder sind volkstümliche Hymnen des Erzgebirges und werden bis heute in Chören und beim Bergmannschor gesungen. Tragisches Ende: Verzweifelt über die politischen Verhältnisse, nahm er sich 1937 das Leben. Bleibt unerreichtes Vorbild der erzgebirgischen Liedkunst.',
+      beispiel: 'Anton Günthers Lieder kennt im Erzgebirge jedes Kind.',
+      beispiel_hd: 'Anton Günthers Lieder kennt im Erzgebirge jedes Kind.',
+      kategorie: 'menschen'
     }
   ]
 };

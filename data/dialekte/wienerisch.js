@@ -1096,6 +1096,231 @@ export default {
       beispiel: 'A echte Schrammelmusik macht ma\'s Herz schwer.',
       beispiel_hd: 'Eine echte Schrammelmusik macht einem das Herz schwer.',
       kategorie: 'musik'
+    },
+    {
+      id: 'w-126',
+      ausdruck: 'Kraus-Polemik',
+      hochdeutsch: 'Karl Kraus / Wiener Polemik',
+      bedeutung: 'Karl Kraus (1874–1936) war der schärfste Polemiker Wiens — Herausgeber der Zeitschrift „Die Fackel" (1899–1936), die er ab 1911 fast allein verfasste. Seine Lesungen im Mittleren Konzerthaussaal füllten Säle. „Die letzten Tage der Menschheit" — 800 Seiten Anti-Kriegs-Drama. Wiener Kaffeehauskultur, jüdische Aufklärung, schonungslose Sprachkritik. Sein Witz war so scharf, dass selbst Freunde fürchteten, ihn zu treffen. Heute Synonym für intellektuelle Wiener Polemik.',
+      beispiel: 'Da Kraus war so scharf wia a Wiener Schnitzelmesser.',
+      beispiel_hd: 'Der Kraus war so scharf wie ein Wiener Schnitzelmesser.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-127',
+      ausdruck: 'Schiele',
+      hochdeutsch: 'Egon Schiele (Maler)',
+      bedeutung: 'Egon Schiele (1890–1918) — Wiener Expressionist, Schüler und Freund Gustav Klimts. Verkörperung der „Wiener Moderne" zwischen Eros und Tod. Seine eckigen, oft selbst-zerrütteten Aktstudien provozierten die Bürgerlichkeit. 1912 wegen „Erregung öffentlichen Ärgernisses" inhaftiert. Starb mit 28 an der Spanischen Grippe — drei Tage nach seiner Frau Edith. Heute Wiener Museumsgold im Leopold Museum und Albertina. Wien-Kunst-Ikone neben Klimt.',
+      beispiel: 'Im Leopold Museum hängt da meiste Schiele weltweit.',
+      beispiel_hd: 'Im Leopold Museum hängt der meiste Schiele weltweit.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-128',
+      ausdruck: 'Otto Wagner',
+      hochdeutsch: 'Otto Wagner (Architekt)',
+      bedeutung: 'Otto Wagner (1841–1918) — der Stadtarchitekt Wiens um 1900, Vater der Moderne. Plante die Wiener Stadtbahn (heute U-Bahn-Linie U4 und U6), die Postsparkasse, die Kirche am Steinhof. Sein Slogan: „Etwas Unpraktisches kann nicht schön sein." Übergang vom Historismus zur Moderne, Vorläufer von Bauhaus und Funktionalismus. Lehrer von Adolf Loos und Joseph Olbrich. Wiens Stadtbild trägt seine Handschrift bis heute. Architektur als Sozialprogramm.',
+      beispiel: 'D\'Karlsplatz-Pavillons vom Wagner sind a Wiener Wahrzeichen.',
+      beispiel_hd: 'Die Karlsplatz-Pavillons von Wagner sind ein Wiener Wahrzeichen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-129',
+      ausdruck: 'Loos',
+      hochdeutsch: 'Adolf Loos (Architekt)',
+      bedeutung: 'Adolf Loos (1870–1933) — Wiener Architekt, prägte mit „Ornament und Verbrechen" (1908) die Moderne. Sein Loos-Haus am Michaelerplatz (1910) provozierte den Kaiser, weil ohne Schmuck. Das berühmte „Café Museum" (1899) — heute Café Loos. Schöpfer der Adolf-Loos-Bar (American Bar) am Kärntnerdurchgang. Vorläufer von Le Corbusier und Mies van der Rohe. Lebte zwischen Wien und Paris. Wiener Beitrag zur Weltmoderne.',
+      beispiel: 'In der Loos-Bar trinkst koan schlechten Cocktail.',
+      beispiel_hd: 'In der Loos-Bar trinkst du keinen schlechten Cocktail.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-130',
+      ausdruck: 'Sezession',
+      hochdeutsch: 'Wiener Sezession',
+      bedeutung: 'Die „Wiener Sezession" (1897) war die Wiener Künstlervereinigung der Jugendstil-Moderne — Gründer waren Klimt, Kolo Moser, Otto Wagner, Josef Olbrich. Das berühmte „Secessionsgebäude" am Karlsplatz mit der goldenen Blätterkuppel („Krauthappel") steht heute noch. Motto: „Der Zeit ihre Kunst, der Kunst ihre Freiheit". Beherbergt Klimts „Beethovenfries" (1902). Wegmarke der europäischen Kunstgeschichte. Wiens Antwort auf das akademische Establishment.',
+      beispiel: 'D\'Sezession glanzt no immer goldn am Karlsplatz.',
+      beispiel_hd: 'Die Sezession glänzt noch immer golden am Karlsplatz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-131',
+      ausdruck: 'Belvedere',
+      hochdeutsch: 'Schloss Belvedere',
+      bedeutung: 'Das „Belvedere" — Oberes und Unteres Belvedere — ist der barocke Schlosskomplex Prinz Eugens von Savoyen, erbaut 1714–1723 von Lucas von Hildebrandt. Heute beherbergt es Österreichs wichtigste Kunstsammlung: Klimts „Kuss", Schieles Selbstbildnisse, Kokoschka. Der Garten gilt als Höhepunkt des Wiener Barocks. 1955 wurde im Marmorsaal der Staatsvertrag unterzeichnet (Österreich-Souveränität). Wiens Top-3-Touristenziel neben Schönbrunn und Stephansdom.',
+      beispiel: 'Im Belvedere is da Klimt-Kuss z\' bewundern.',
+      beispiel_hd: 'Im Belvedere ist der Klimt-Kuss zu bewundern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-132',
+      ausdruck: 'Schönbrunner Schlosspark',
+      hochdeutsch: 'Schönbrunner Schlosspark',
+      bedeutung: 'Der „Schönbrunner Schlosspark" ist die barocke Gartenanlage von Schloss Schönbrunn — Wiens kaiserliche Sommerresidenz. Auf einem Hügel die Gloriette (1775), darunter Brunnen, Statuen, Labyrinth und der älteste Zoo der Welt (Tiergarten Schönbrunn, 1752). UNESCO-Welterbe seit 1996. Maria Theresia und Franz Joseph residierten hier. Heute 5 Millionen Besucher jährlich. Beim „Sommernachtskonzert" der Wiener Philharmoniker verwandelt sich das Schloss in eine Open-Air-Bühne.',
+      beispiel: 'Aufm Schönbrunner Schlosspark spaziert ma am Sonntag.',
+      beispiel_hd: 'Im Schönbrunner Schlosspark spaziert man am Sonntag.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-133',
+      ausdruck: 'Wiener Eis',
+      hochdeutsch: 'Wiener Eis (Eissalons)',
+      bedeutung: 'Das „Wiener Eis" hat eine lange Tradition — die ersten italienischen Eismacher kamen im 19. Jahrhundert. Heute kämpfen die Wiener Eissalons (Tichy am Reumannplatz, Eis-Greissler, Schwedeneis am Schwedenplatz) um Plätze in den Sommer-Bestenlisten. Spezialität: „Marillenknödel-Eis" und „Mozartkugel-Eis". Im Sommer Schlangen um den Block. Stark italienisch geprägt, aber mit Wiener Geschmacksvarianten. Wiener Sommer-Ritual seit Generationen.',
+      beispiel: 'Beim Tichy steht ma Schlang\' für a Eis.',
+      beispiel_hd: 'Beim Tichy steht man Schlange für ein Eis.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-134',
+      ausdruck: 'Demel',
+      hochdeutsch: 'Konditorei Demel',
+      bedeutung: 'Die „K.u.K. Hofzuckerbäckerei Demel" am Kohlmarkt (gegründet 1786) ist neben Sacher die berühmteste Wiener Konditorei. Eleganz im Empire-Stil, weiße Bedienung mit Spitzenhäubchen. Bekannt für Annatorte, Cremeschnitten und den ewigen „Sachertorten-Krieg" mit dem Hotel Sacher (Demel hatte die Originalrezeptur 1888 erworben). Touristenmagnet, aber qualitativ erstklassig. Bei Demel zu sitzen ist Wiener Kaiserzeit-Inszenierung. Café-Konditorei-Geschichte pur.',
+      beispiel: 'Im Demel kostet a Stückerl Torte a Vermögen.',
+      beispiel_hd: 'Im Demel kostet ein Stück Torte ein Vermögen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-135',
+      ausdruck: 'Hawelka',
+      hochdeutsch: 'Café Hawelka',
+      bedeutung: 'Das „Café Hawelka" am Dorotheergasse (gegründet 1939) ist die Wiener Künstlerkneipen-Legende schlechthin. Helmut Qualtinger, H.C. Artmann, Friedensreich Hundertwasser, später Falco — alle waren Stammgäste. Das Inventar wirkt unverändert seit 1955: Holzstühle, vergilbtes Licht, dichter Rauch (vor Rauchverbot). Spezialität: Buchteln um Mitternacht. Leopold Hawelka starb 2011 mit 100 Jahren. Weit mehr als ein Café — Wiener Subkulturmuseum.',
+      beispiel: 'Im Hawelka triffst no echte Wiener Originale.',
+      beispiel_hd: 'Im Hawelka triffst du noch echte Wiener Originale.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-136',
+      ausdruck: 'Wiener Würstel',
+      hochdeutsch: 'Wiener vs. Frankfurter Würstchen',
+      bedeutung: 'Die Sprachverwirrung: Was in Deutschland „Wiener Würstchen" heißt, nennen die Wiener „Frankfurter" — und umgekehrt! Beide bezeichnen dünne Brühwurstpaare. Die Wiener Variante (Schweinefleisch, milder) wurde tatsächlich 1805 von einem Frankfurter Metzger in Wien erfunden. Am Würstelstand sind sie das Pflichtprogramm: „A Frankfurter mit\'m Eitrigen" (also mit scharfem Senf). Wiener Kuriosität, die Bestellungen kompliziert macht. Wurst-Diplomatie.',
+      beispiel: 'A Paar Frankfurter, bittschön — net Wiener!',
+      beispiel_hd: 'Ein Paar Frankfurter, bitte — nicht Wiener!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-137',
+      ausdruck: 'Wiener Kongress',
+      hochdeutsch: 'Wiener Kongress 1814/15',
+      bedeutung: 'Der „Wiener Kongress" (September 1814 – Juni 1815) ordnete Europa nach dem Sturz Napoleons neu. Initiator: Fürst Metternich. Repräsentanten aller europäischen Mächte tagten in Wien — Talleyrand für Frankreich, Wellington für England, Hardenberg für Preußen. „Der Kongress tanzt, aber er kommt nicht voran" — Wiener Witz über die endlosen Bälle. Dauerhafte Friedensordnung bis 1914. Wien als europäisches Zentrum. Geschichtsbuch-Klassiker.',
+      beispiel: 'Beim Wiener Kongress hat man mehr tanzt als verhandelt.',
+      beispiel_hd: 'Beim Wiener Kongress hat man mehr getanzt als verhandelt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-138',
+      ausdruck: 'Maria Theresia',
+      hochdeutsch: 'Maria Theresia (Kaiserin)',
+      bedeutung: 'Maria Theresia (1717–1780) — Erzherzogin von Österreich, „Mutter" der Habsburger-Monarchie. Mutter von 16 Kindern (darunter Marie Antoinette und Joseph II.). Führte mit Pragmatischer Sanktion das weibliche Erbrecht durch. Reformierte Verwaltung, Schule (allgemeine Schulpflicht 1774), Militär und Wirtschaft. Tabakmonopol, Kartoffelanbau, Volkszählung — alles ihr Werk. Schloss Schönbrunn ist ihr Sommer-Wahnsinn. Wiens und Österreichs prägende Kaiserin. „Maria-Theresien-Taler" hieß noch lange die Währung.',
+      beispiel: 'A Maria Theresia hat Österreich modernisiert.',
+      beispiel_hd: 'Eine Maria Theresia hat Österreich modernisiert.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-139',
+      ausdruck: 'Franz Joseph',
+      hochdeutsch: 'Kaiser Franz Joseph I.',
+      bedeutung: 'Franz Joseph I. (1830–1916) — Kaiser von Österreich-Ungarn, regierte 68 Jahre (1848–1916). Verheiratet mit Elisabeth („Sisi"). Verkörperung des langlebigen Habsburg-Mythos. Pflichtversessen, früh aufstehend, einfach lebend (Tafelspitz statt Luxus). Tragisch: Bruder Maximilian in Mexiko erschossen, Sohn Rudolf Mayerling-Selbstmord, Frau Sisi 1898 ermordet. Sein Tod 1916 leitete das Ende der Habsburger-Monarchie ein. Wien lebt noch heute vom Franz-Joseph-Image: Schönbrunn, Hofburg, Sisi-Museum.',
+      beispiel: 'Da Franz Joseph hat 68 Jahr lang regiert — a Rekord.',
+      beispiel_hd: 'Franz Joseph hat 68 Jahre lang regiert — ein Rekord.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-140',
+      ausdruck: 'Karlsplatz',
+      hochdeutsch: 'Karlsplatz (Verkehrsknoten)',
+      bedeutung: 'Der „Karlsplatz" ist Wiens größter Verkehrsknotenpunkt — U1, U2, U4, dazu Bahnhof Wien Mitte in Laufnähe. Hier steht die barocke Karlskirche (1737), die Sezession, das Wien Museum, die Musikuniversität. Otto Wagners legendäre Stadtbahn-Pavillons (1898) am Karlsplatz sind Jugendstil-Ikonen. Im Sommer „Popfest Wien" als Festival. Lange Zeit Drogen-Treffpunkt der 90er — heute aufgewertet. Wiener Stadtraum mit Geschichte und Gegenwart.',
+      beispiel: 'Am Karlsplatz steigt ma ständig um.',
+      beispiel_hd: 'Am Karlsplatz steigt man ständig um.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-141',
+      ausdruck: 'Burgtheater',
+      hochdeutsch: 'Burgtheater',
+      bedeutung: 'Das „Burgtheater" am Dr.-Karl-Lueger-Ring ist eines der wichtigsten deutschsprachigen Sprechtheater weltweit. Gegründet 1741 von Maria Theresia, neues Haus 1888. Riesige Doppeltreppe von Klimt-Brüdern ausgemalt. „Die Burg" sagen die Wiener kurz. Direktor Claus Peymann sorgte 1986–99 für Skandale (Bernhard, Jelinek). Eintritt ins Burgtheater ist gesellschaftliches Ritual. Standardrepertoire: Schiller, Nestroy, Schnitzler, Bernhard. Bühne des deutschsprachigen Theaters.',
+      beispiel: 'Beim Burgtheater muss ma im Frack erscheinen.',
+      beispiel_hd: 'Beim Burgtheater muss man im Frack erscheinen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-142',
+      ausdruck: 'Volksoper',
+      hochdeutsch: 'Wiener Volksoper',
+      bedeutung: 'Die „Volksoper" am Währinger Gürtel ist Wiens „zweite Oper" — Spielstätte für Operette, Spielopern und Musicals. Gegründet 1898 als Kaiser-Jubiläums-Stadttheater. Hier wird Strauß-Operette (Fledermaus, Zigeunerbaron) traditionell gespielt, dazu Musical (Sound of Music). Lockere Atmosphäre als an der Staatsoper, mit Wiener Schmäh. Marcel Prawy verfilmte hier Operette und prägte das Image. Wiener Operetten-Heimat seit dem 20. Jahrhundert. Touristisch unterschätzt, kulturell wichtig.',
+      beispiel: 'In der Volksoper wird d\'Operette gepflegt.',
+      beispiel_hd: 'In der Volksoper wird die Operette gepflegt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-143',
+      ausdruck: 'Musikverein',
+      hochdeutsch: 'Wiener Musikverein',
+      bedeutung: 'Der „Musikverein" am Karlsplatz, eröffnet 1870, beherbergt den „Goldenen Saal" — den klangschönsten Konzertsaal der Welt. Wiener Philharmoniker, Wiener Symphoniker spielen hier. Jährliches Welt-Highlight: das „Neujahrskonzert" der Wiener Philharmoniker, weltweit im Fernsehen übertragen (über 100 Länder, 50 Mio. Zuschauer). Bauarchitekt: Theophil Hansen. Ein Sitzplatz im Goldenen Saal ist kulturelles Privileg. Wiener Musikmekka.',
+      beispiel: 'Im Musikverein hat\'s d\'beste Akustik vom Planeten.',
+      beispiel_hd: 'Im Musikverein hat es die beste Akustik vom Planeten.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-144',
+      ausdruck: 'Wiener Festwochen',
+      hochdeutsch: 'Wiener Festwochen',
+      bedeutung: 'Die „Wiener Festwochen" (gegründet 1951) sind das große Mai–Juni-Festival Wiens — Theater, Musik, Tanz, Performance, alles international. Eröffnung am Rathausplatz traditionell mit Riesen-Konzert und Live-Übertragung. Programm spielt von Burgtheater bis Halle G im MuseumsQuartier. Künstlerische Leitung wechselt — wurde von Markus Hinterhäuser, Frie Leysen u.a. geprägt. Eines der wichtigsten europäischen Festivals neben Avignon, Edinburgh und Salzburg. Wiener Kulturhöhepunkt.',
+      beispiel: 'D\'Wiener Festwochen sind heuer wieder Weltklasse.',
+      beispiel_hd: 'Die Wiener Festwochen sind heuer wieder Weltklasse.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-145',
+      ausdruck: 'Donauinselfest',
+      hochdeutsch: 'Donauinselfest',
+      bedeutung: 'Das „Donauinselfest" auf der Wiener Donauinsel ist Europas größtes Open-Air-Festival mit freiem Eintritt — bis zu 3 Millionen Besucher an drei Tagen im Juni. Gegründet 1984 von der SPÖ (politisch organisiert, parteiunabhängiges Lineup). Über 600 Stunden Programm auf rund 13 Bühnen — Rock, Pop, Volksmusik, DJ-Sets. Niki Lauda und Falco haben hier gespielt. Wiener Sommer-Pflichttermin. Politisch oft umstritten (SPÖ-Inszenierung?), kulturell unverzichtbar.',
+      beispiel: 'Am Donauinselfest san immer Millionen vo Leit.',
+      beispiel_hd: 'Beim Donauinselfest sind immer Millionen Leute.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-146',
+      ausdruck: 'Karlskirche',
+      hochdeutsch: 'Karlskirche',
+      bedeutung: 'Die „Karlskirche" am Karlsplatz, erbaut 1737 von Johann Bernhard Fischer von Erlach, ist das Meisterwerk des Wiener Barocks. Kaiser Karl VI. ließ sie als Dank für das Ende der Pest 1713 errichten. Zwei seitliche Säulen erinnern an Trajanssäule und Marc-Aurel-Säule — Wiener Synkretismus zwischen Antike und Christentum. Inneres mit Kuppelfresken von J.M. Rottmayr. Heute auch Konzert-Schauplatz (Vivaldi-Konzerte). UNESCO-Welterbe als Teil der Wiener Innenstadt.',
+      beispiel: 'D\'Karlskirche schaut aus wia a kleines Vatikan.',
+      beispiel_hd: 'Die Karlskirche schaut aus wie ein kleines Vatikan.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-147',
+      ausdruck: 'Servitenkirche',
+      hochdeutsch: 'Servitenkirche (Wien-Alsergrund)',
+      bedeutung: 'Die „Servitenkirche Maria Verkündigung" im 9. Bezirk (Alsergrund) ist die einzige Wiener Kirche im italienischen Frühbarock, erbaut 1651–1670. Sie steht im malerischen Servitenviertel — einer ruhigen Ecke mit Kopfsteinpflaster, Boutiquen und Cafés. Das Viertel ist Wiener Geheimtipp, fast schon mediterran wirkend. Innerhalb der Servitenkirche befindet sich die Peregrini-Kapelle, beliebt für stille Andacht. Beispiel der weniger bekannten, aber charmanten Wiener Sakralarchitektur.',
+      beispiel: 'Im Servitenviertel um d\'Servitenkirche is\' a Gusto.',
+      beispiel_hd: 'Im Servitenviertel um die Servitenkirche ist es schön.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-148',
+      ausdruck: 'Stadtbahn-Pavillon',
+      hochdeutsch: 'Otto-Wagner-Stadtbahn-Pavillon',
+      bedeutung: 'Die „Stadtbahn-Pavillons" am Karlsplatz, erbaut 1898 von Otto Wagner, sind Jugendstil-Architekturikonen. Ursprünglich Eingänge zur Wiener Stadtbahn (heute U-Bahn-Linien U4 und U6). Mit floralen Mustern, Schmiedeeisen und der für Wien typischen Eleganz. Der eine Pavillon beherbergt heute ein Otto-Wagner-Museum, der andere ein Café. Geretteter Stadtbild-Schatz. Im Kontrast zum klassizistischen Karlskirchen-Ensemble — Wiener Architektur in Schichten.',
+      beispiel: 'Am Karlsplatz fotografieren d\'Touristen d\'Stadtbahn-Pavillons.',
+      beispiel_hd: 'Am Karlsplatz fotografieren die Touristen die Stadtbahn-Pavillons.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-149',
+      ausdruck: 'Hofburgkapelle',
+      hochdeutsch: 'Hofburgkapelle',
+      bedeutung: 'Die „Hofburgkapelle" in der Wiener Hofburg ist seit 1296 Wiener Königsgottesdienstort. Hier singen sonntags die Wiener Sängerknaben mit Mitgliedern der Wiener Philharmoniker und des Staatsopernchores im Hochamt — über 500 Jahre Tradition. Karten begehrt, Atmosphäre intim. Hayden, Mozart, Schubert komponierten Messen speziell für die Hofburgkapelle. Wiener Musikgeschichte im Original. Touristisches Insider-Erlebnis.',
+      beispiel: 'In der Hofburgkapelle singen d\'Wiener Sängerknaben.',
+      beispiel_hd: 'In der Hofburgkapelle singen die Wiener Sängerknaben.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-150',
+      ausdruck: 'Café Central',
+      hochdeutsch: 'Café Central',
+      bedeutung: 'Das „Café Central" am Herrengasse (gegründet 1876, Ferstel-Palais) war das intellektuelle Zentrum Wiens um 1900 — Stefan Zweig, Hugo von Hofmannsthal, Egon Friedell, Adolf Loos, Leo Trotzki (im Schach bekannter „Herr Bronstein") trafen sich hier täglich. Die berühmte Aufschrift „Café Central — Stefan Zweig\'s Stammtisch" markiert noch heute den Platz. Hohe Säulen, Kaffee bei Klavierbegleitung. Touristisch geworden, aber kulturhistorisch unverzichtbar. Wiener Kaffeehaus-Mythos in Reinkultur.',
+      beispiel: 'Im Café Central hat da Trotzki Schach g\'spielt.',
+      beispiel_hd: 'Im Café Central hat Trotzki Schach gespielt.',
+      kategorie: 'orte'
     }
   ]
 };

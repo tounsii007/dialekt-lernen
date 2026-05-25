@@ -1132,6 +1132,231 @@ export default {
       beispiel: 'In der Dorotheenhütte bläsen sie Glas wie vor 300 Jahren.',
       beispiel_hd: 'In der Dorotheenhütte blasen sie Glas wie vor 300 Jahren.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'al-126',
+      ausdruck: 'Triberger Wasserfälle',
+      hochdeutsch: 'Höchste Wasserfälle Deutschlands (163 m)',
+      bedeutung: 'Die Triberger Wasserfälle in Triberg im Schwarzwald sind mit 163 Metern Höhe (über sieben Stufen) die höchsten naturbelassenen Wasserfälle Deutschlands. Die Gutach stürzt durch eine bewaldete Granitschlucht. Im Sommer ein Touristenmagnet, im Winter zauberhaft mit Eiszapfen. Der Wanderweg ist gut ausgebaut, mit Aussichtspunkten und der Möglichkeit, fast bis zum Wasserfall heranzugehen. Eichhörnchen kommen erstaunlich nahe — sie sind an Besucher gewöhnt.',
+      beispiel: 'D\'Triberger Wasserfälle im Frühling — wenn d\'Schneeschmelze richtig brausen.',
+      beispiel_hd: 'Die Triberger Wasserfälle im Frühling — wenn die Schneeschmelze richtig braust.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-127',
+      ausdruck: 'Schwarzwaldhochstraße',
+      hochdeutsch: 'Schwarzwaldhochstraße (Panoramastraße)',
+      bedeutung: 'Die Schwarzwaldhochstraße (B 500) führt 60 km von Baden-Baden nach Freudenstadt auf dem Höhenkamm des Nordschwarzwalds — eine der schönsten Panoramastraßen Deutschlands. 1932 als touristische Route angelegt. Aussichtspunkte: Hohe Möser, Mummelsee, Hornisgrinde, Schliffkopf. Im Winter mit Wintersportgebieten. Berühmte Hotels wie das Bühler Hof oder das Schliffkopfhotel. Bei klarem Wetter sieht man die Vogesen, die Alpen und das Rheintal. Klassische Bus- und Motorradtour.',
+      beispiel: 'D\'Schwarzwaldhochstraße fahren — Panorama-Kino auf der Straße.',
+      beispiel_hd: 'Die Schwarzwaldhochstraße fahren — Panorama-Kino auf der Straße.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-128',
+      ausdruck: 'Hornberger Schießen',
+      hochdeutsch: 'Hornberger Schießen (sprichwörtliches Spektakel)',
+      bedeutung: 'Das „Hornberger Schießen" ist ein Sprichwort für eine groß angekündigte Sache, die mit Pomp beginnt aber kläglich endet. Hornberg im Kinzigtal wollte 1564 den württembergischen Herzog mit Salutkanonen empfangen — als die Späher den Staub einer Kutsche meldeten, schossen sie alle Vorräte ab. Doch es war nur eine Viehkutsche. Als der Herzog tatsächlich kam, war kein Pulver mehr da. „Das geht aus wie das Hornberger Schießen" ist heute deutsches Sprichwort. Hornberger Heimatfest erinnert daran.',
+      beispiel: 'Die ganze Sach ging aus wie\'s Hornberger Schießen — viel Lärm um nix.',
+      beispiel_hd: 'Die ganze Sache ging aus wie das Hornberger Schießen — viel Lärm um nichts.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-129',
+      ausdruck: 'Höllentalbahn-Detail',
+      hochdeutsch: 'Hirschsprung-Felsen (engste Stelle der Bahnstrecke)',
+      bedeutung: 'Der Hirschsprung-Felsen im Höllental ist die engste Stelle der Höllentalbahn — nur 9 Meter breit zwischen den steilen Felswänden. Die Sage: Ein Hirsch sprang von einer Felswand zur anderen, um Jägern zu entkommen. Eine Hirschstatue erinnert daran. Die Bahnstrecke Freiburg-Donaueschingen wurde 1887 fertiggestellt und musste das Tal durch Tunnel und über Viadukte überwinden. Der Hirschsprung ist eines der berühmtesten Schwarzwald-Postkartenmotive. Geologisches und legendäres Wunder.',
+      beispiel: 'Am Hirschsprung im Höllental — der Hirsch hat\'s gesprungen, sagt d\'Sage.',
+      beispiel_hd: 'Am Hirschsprung im Höllental — der Hirsch ist gesprungen, sagt die Sage.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-130',
+      ausdruck: 'Hinterzartener Schanze',
+      hochdeutsch: 'Adler-Skistadion Hinterzarten (Skisprung-Mekka)',
+      bedeutung: 'Das Adler-Skistadion in Hinterzarten ist die wichtigste Skisprungschanze im deutschen Süden — Trainingszentrum vieler Olympia-Skispringer (Sven Hannawald, Martin Schmitt). Die Hochfirstschanze ist eine FIS-zertifizierte Großschanze. Schwarzwald-Skifahrer-Tradition: Hier wurde 1891 die erste Skischule Deutschlands gegründet. Bei FIS-Wettkämpfen kommen tausende Zuschauer. Hinterzarten ist heute ein bekannter Schwarzwald-Kurort mit Wintersport-Geschichte.',
+      beispiel: 'In Hinterzarten haben Sven Hannawald und d\'Olympiasieger trainiert.',
+      beispiel_hd: 'In Hinterzarten haben Sven Hannawald und die Olympiasieger trainiert.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-131',
+      ausdruck: 'Belchen-Seilbahn',
+      hochdeutsch: 'Belchen-Seilbahn (1414-m-Gipfel)',
+      bedeutung: 'Die Belchen-Seilbahn führt in 12 Minuten vom Tal auf den 1414 Meter hohen Belchen — der zweithöchste Berg des Südschwarzwalds. Eröffnet 2001, ersetzte sie die Bergstraße und schützte den Naturschutz. Auf dem Gipfel: 360-Grad-Panorama mit Mont Blanc, Schweizer Alpen, Vogesen und Schwarzwald. Berghotel Belchen für Übernachtungen. Heiliger Berg der Kelten — der Name „Belchen" leitet sich vom keltischen Sonnengott Belenus ab. Sommer-Wanderparadies.',
+      beispiel: 'Mit der Belchen-Seilbahn nuff — und du siehst d\'Alpen wie auf einer Karte.',
+      beispiel_hd: 'Mit der Belchen-Seilbahn hinauf — und du siehst die Alpen wie auf einer Karte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-132',
+      ausdruck: 'Münstertal',
+      hochdeutsch: 'Münstertal (Klosterruine St. Trudpert)',
+      bedeutung: 'Das Münstertal ist ein malerisches Schwarzwaldtal zwischen Belchen und Staufen — durchquert vom Klemmbach. Berühmt für die Klosterruine St. Trudpert (gegründet im 7. Jahrhundert vom irischen Wandermissionar Trudpert), heute Wallfahrtsort. Schöne Wanderwege, Bergweiden mit Schwarzwaldkühen, traditionelle Bauernhöfe. Bergbau-Geschichte: Im Mittelalter wurde hier Silber abgebaut. Das Münstertal ist eine alemannische Idylle abseits des Massentourismus.',
+      beispiel: 'Im Münstertal isch alemannische Idylle — Klosterruine und Bergwiesen.',
+      beispiel_hd: 'Im Münstertal ist alemannische Idylle — Klosterruine und Bergwiesen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-133',
+      ausdruck: 'Schluchsee',
+      hochdeutsch: 'Schluchsee (größter Schwarzwald-See)',
+      bedeutung: 'Der Schluchsee im Südschwarzwald ist mit 5 km² der größte See des Schwarzwalds — ein Stausee auf 930 Metern Höhe. Beliebt für Wassersport: Segeln, Surfen, Schwimmen, Tauchen, Stand-Up-Paddling. Im Sommer Temperaturen bis 23 Grad. Rund um den See ein 18 km langer Wanderweg. Im Winter Eisfischen und Skifahren. Wahrzeichen ist das markante Hotel- und Kurort-Ensemble. Familienurlaub im Schwarzwald spielt sich oft am Schluchsee ab.',
+      beispiel: 'Am Schluchsee macht ma im Sommer Wassersport — höher gelegener Badesee in Deutschland.',
+      beispiel_hd: 'Am Schluchsee macht man im Sommer Wassersport — höher gelegener Badesee in Deutschland.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'al-134',
+      ausdruck: 'Höchenschwand',
+      hochdeutsch: 'Höchenschwand („höchstes Dorf Deutschlands")',
+      bedeutung: 'Höchenschwand auf 1015 Metern Höhe ist eines der höchstgelegenen Dörfer Deutschlands — Selbstbezeichnung: „Das höchste Dorf Europas". Im Südschwarzwald nahe der Schweizer Grenze, 2.500 Einwohner. Heilklimatischer Kurort, bekannt für Höhensonne und Bergluft. Tuberkulose-Sanatorien hatten hier ihre Blütezeit. Heute Tourismus und Kuraufenthalte. Panoramablick auf die Schweizer Alpen, die Rheinebene und die Vogesen. Stille und Höhenluft als alemannische Spezialität.',
+      beispiel: 'Höchenschwand — höchstes Dorf, klarste Luft, schönste Aussicht.',
+      beispiel_hd: 'Höchenschwand — höchstes Dorf, klarste Luft, schönste Aussicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-135',
+      ausdruck: 'St. Blasien',
+      hochdeutsch: 'St. Blasien (Dom-Stadt im Hochschwarzwald)',
+      bedeutung: 'St. Blasien im Südschwarzwald beherbergt einen der größten Kuppelbauten Europas — den St.-Blasius-Dom mit 36 Meter Durchmesser (drittgrößte Kirchenkuppel Deutschlands nach Petersdom-ähnlichen Maßstäben). Erbaut 1768-1783 vom Architekten Pierre-Michel d\'Ixnard im klassizistischen Stil. Das ehemalige Benediktinerkloster ist heute Jesuitenkolleg. St. Blasien war jahrhundertelang ein geistliches Zentrum der Region. Atemberaubende Akustik, beliebter Konzertort.',
+      beispiel: 'Der Dom vo St. Blasien — Kuppel so groß wie d\'Frauenkirche in München.',
+      beispiel_hd: 'Der Dom von St. Blasien — Kuppel so groß wie die Frauenkirche in München.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-136',
+      ausdruck: 'Furtwangen-Uhrenmuseum',
+      hochdeutsch: 'Deutsches Uhrenmuseum Furtwangen',
+      bedeutung: 'Das Deutsche Uhrenmuseum in Furtwangen ist das wichtigste Uhrenmuseum der Welt — über 8.000 Exponate aus 1.200 Jahren Zeitmessung. Gegründet 1852 von Robert Gerwig (auch Erbauer der Schwarzwaldbahn). Furtwangen ist das traditionelle Zentrum der Schwarzwälder Uhrenindustrie — Kuckucksuhren, Lackschilduhren, Atomuhren. Die Hochschule Furtwangen führt die Tradition fort. Im Museum lernt man, wie der Schwarzwald die Welt das Zeitmessen lehrte. Pflichttermin für Technikfreunde.',
+      beispiel: 'Im Furtwanger Uhrenmuseum lernsch d\'Geschichte vom Schwarzwälder Uhrwerk.',
+      beispiel_hd: 'Im Furtwanger Uhrenmuseum lernst du die Geschichte des Schwarzwälder Uhrwerks.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-137',
+      ausdruck: 'Schramberg',
+      hochdeutsch: 'Schramberg (Uhrenstadt im Schwarzwald)',
+      bedeutung: 'Schramberg im mittleren Schwarzwald — 21.000 Einwohner — ist berühmt für die Junghans-Uhrenfabrik, einst die größte Uhrenfabrik der Welt. Junghans-Architektur des Bauhaus-Architekten Heinrich Lersch ist denkmalgeschützt. Heute Junghans-Terrassenbau-Museum. Außerdem: das Schloss Schramberg, das Berneckkraftwerk (eines der ältesten Wasserkraftwerke Deutschlands). Wirtschaftlich strukturschwach nach der Uhrenkrise, aber mit reicher Industriegeschichte. Heimatkultur lebendig.',
+      beispiel: 'Schramberg isch d\'Uhrenstadt — Junghans hat von hier d\'Welt verkauft.',
+      beispiel_hd: 'Schramberg ist die Uhrenstadt — Junghans hat von hier die Welt verkauft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-138',
+      ausdruck: 'Rottweil-Fasnet',
+      hochdeutsch: 'Rottweiler Fasnet (älteste deutsche Fastnacht)',
+      bedeutung: 'Die Rottweiler Fasnet ist die älteste schwäbisch-alemannische Fasnet — erstmals urkundlich 1394 erwähnt. Berühmteste Narrenfiguren: Schantle, Federahannes, Gschell, Biß, Hexen. Höhepunkt: der „Narrensprung" am Fasnetmontag, wo hunderte Schantles durch die Hauptstraße ziehen. Aufwendige handgeschnitzte Holzmasken, kunstvolle Häs (Kostüme) — manche über 200 Jahre alt, vererbt von Generation zu Generation. UNESCO-immaterielles Kulturerbe. Rottweil zu Fasnet ist Pflicht für alemannische Identität.',
+      beispiel: 'D\'Rottweiler Fasnet — d\'älteste in ganz Deutschland, mit handgeschnitzten Larven.',
+      beispiel_hd: 'Die Rottweiler Fasnet — die älteste in ganz Deutschland, mit handgeschnitzten Larven.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-139',
+      ausdruck: 'Schwarzwald-Kuckucksuhr',
+      hochdeutsch: 'Original Schwarzwälder Kuckucksuhr',
+      bedeutung: 'Die Original Schwarzwälder Kuckucksuhr — erfunden um 1730 in Schönwald — ist eines der bekanntesten deutschen Produkte weltweit. Ein hölzerner Kuckuck springt zu jeder vollen Stunde aus dem Häuschen und ruft so oft wie die Uhrzeit. Echte Schwarzwälder Uhren tragen das VdS-Zertifikat (Verein die Schwarzwalduhr). Drei Stile: Bahnhäusle (mit Wasserrad), Chalet-Stil (mit Tanzpaaren), Jagdstil (mit Hirschkopf). In Japan und USA besonders gesammelt. Symbol des Schwarzwalds weltweit.',
+      beispiel: 'A echte Schwarzwald-Kuckucksuhr mit VdS-Zertifikat — Lebenswerk im Wohnzimmer.',
+      beispiel_hd: 'Eine echte Schwarzwald-Kuckucksuhr mit VdS-Zertifikat — Lebenswerk im Wohnzimmer.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-140',
+      ausdruck: 'Eldena-Klosterruine',
+      hochdeutsch: 'Klosterruine im Schwarzwald (Kontext: Caspar David Friedrich)',
+      bedeutung: 'Die Kloster-Ruinen im Schwarzwald sind beliebte Motive der romantischen Malerei — wie etwa Allerheiligen im Nordschwarzwald, einst Prämonstratenser-Kloster (gegründet 1196), heute malerische Ruine im Lierbachtal. Wasserfälle direkt daneben. Caspar David Friedrich war von solchen Schwarzwald-Klosterruinen inspiriert. Die Ruine Allerheiligen mit den Wasserfällen ist eines der schönsten Naturdenkmäler Badens — Pilgerstätte für Romantik-Liebhaber. Ein Stück Geschichte mitten in der Natur.',
+      beispiel: 'D\'Klosterruine Allerheiligen mit dem Wasserfall — Romantik pur.',
+      beispiel_hd: 'Die Klosterruine Allerheiligen mit dem Wasserfall — Romantik pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-141',
+      ausdruck: 'Bodensee-Apfelplantagen',
+      hochdeutsch: 'Bodensee-Obstplantagen (mildestes Klima)',
+      bedeutung: 'Das Bodensee-Klima ist mild genug für ausgedehnte Apfelplantagen — die Region um Friedrichshafen, Meersburg und Konstanz ist eines der wichtigsten Obstanbaugebiete Deutschlands. Im April blühen Millionen Apfelbäume — die „Bodensee-Apfelblüte" zieht Touristen an. Hauptsorten: Elstar, Gala, Boskoop, Rubinette. Auch Birnen, Zwetschgen, Kirschen. Streuobstwiesen prägen die Landschaft. Die Obstbauern haben Direktvermarktung perfektioniert — Apfelsaft, Most, Apfelbrand. Eine wirtschaftliche Säule der Region.',
+      beispiel: 'D\'Bodensee-Apfelplantagen im April — wie ein rosa-weißer Teppich.',
+      beispiel_hd: 'Die Bodensee-Apfelplantagen im April — wie ein rosa-weißer Teppich.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-142',
+      ausdruck: 'Most',
+      hochdeutsch: 'Most (alemannisches Apfelgetränk)',
+      bedeutung: 'Der Most ist im alemannischen Raum ein zentrales Getränk — fermentierter Apfelsaft, leicht alkoholisch (4-6%). Jeder Bauer mit Obstwiese hatte traditionell seinen eigenen Most im Keller. In den „Mostkellern" (Mostschänken) wird er ausgeschenkt. Unterschied zum Apfelwein: Most ist herber, weniger süß. Im Markgräflerland und am Bodensee blüht die Mostkultur. „Möstle-Trinker" sind die Stammgäste. Streuobstwiesen werden durch Most-Verarbeitung erhalten. Alemannische Bauernkultur in einem Glas.',
+      beispiel: 'Im Bauernhof gibt\'s Most ausm Keller — wie früher die Bauern.',
+      beispiel_hd: 'Im Bauernhof gibt es Most aus dem Keller — wie früher die Bauern.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-143',
+      ausdruck: 'Schäfle',
+      hochdeutsch: 'Schaf (alemannische Diminutivform)',
+      bedeutung: 'Das „Schäfle" ist die alemannische Verkleinerungsform von „Schaf" — herzlich und ländlich gemeint. Im Schwarzwald und auf der Schwäbischen Alb gibt es noch zahlreiche Schafhalter, die ihre Tiere auf den steilen Berghängen weiden lassen. Die Schwarzwaldschafe sind eine bedrohte Rasse. Schäfle-Schmaus (Lammbraten) ist ein traditionelles alemannisches Gericht. Auch im Sprachgebrauch: „Du bisch a Schäfle" — sanfte, etwas naive Person. Alemannische Tier-Diminutive sind beliebt.',
+      beispiel: 'Auf der Bergweide grase die Schäfle den ganzen Sommer.',
+      beispiel_hd: 'Auf der Bergweide grasen die Schafe den ganzen Sommer.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-144',
+      ausdruck: 'Hofgut',
+      hochdeutsch: 'Bauernhof / landwirtschaftlicher Betrieb',
+      bedeutung: 'Das „Hofgut" ist im alemannischen Raum die Bezeichnung für einen größeren landwirtschaftlichen Betrieb mit Wohngebäuden, Ställen und Wirtschaftsgebäuden. Im Schwarzwald oft als geschlossener Schwarzwaldhof gebaut. Viele Hofgüter werden seit Jahrhunderten in derselben Familie bewirtschaftet — manche seit über 500 Jahren. Heute oft mit Ferienwohnungen kombiniert (Urlaub auf dem Bauernhof). Die alemannische Höfekultur prägt die Landschaft und das Selbstverständnis der Bauern.',
+      beispiel: 'S\'Hofgut isch seit 500 Jahre in der Familie — Tradition pur.',
+      beispiel_hd: 'Das Hofgut ist seit 500 Jahren in der Familie — Tradition pur.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-145',
+      ausdruck: 'Älpler',
+      hochdeutsch: 'Bergbauer / Senner (alemannisch)',
+      bedeutung: 'Der „Älpler" ist im alemannischen Raum ein Bergbauer oder Senner, der den Sommer mit dem Vieh auf den Alpweiden verbringt. Im Südschwarzwald und in Vorarlberg lebendige Tradition. Die Älpler hüten das Vieh, melken die Kühe und stellen Käse und Butter direkt auf der Alm her. Im Herbst kommt das Vieh in feierlichem Almabtrieb ins Tal — eine kulturelle Pflicht. Das Älpler-Leben ist hart, aber stolz. Verbindung zur Natur und zur Tradition pur.',
+      beispiel: 'Der Älpler verbringt den Sommer mit\'m Vieh auf der Alm — alemannische Tradition.',
+      beispiel_hd: 'Der Älpler verbringt den Sommer mit dem Vieh auf der Alm — alemannische Tradition.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-146',
+      ausdruck: 'Bermatinger Kirsche',
+      hochdeutsch: 'Kirschen aus dem Bodensee-Hinterland',
+      bedeutung: 'Die Bermatinger Kirsche (auch „Markdorfer Kirsche") aus dem Hinterland des Bodensees ist eine besonders geschätzte regionale Sorte — durch das milde Klima besonders aromatisch. Bermatingen, Markdorf und Salem sind Kirschorte. Im Juni das traditionelle Kirschfest. Aus den Kirschen wird auch der Bodensee-Kirschbrand destilliert. Die Kirschbäume blühen Mitte April — ein touristisches Highlight. Streuobstwiesen mit alten Kirschbäumen sind Heimat seltener Vögel.',
+      beispiel: 'D\'Bermatinger Kirschn im Juni — frischer geht\'s nimmer.',
+      beispiel_hd: 'Die Bermatinger Kirschen im Juni — frischer geht es nicht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-147',
+      ausdruck: 'Schwarzwälder Schinken',
+      hochdeutsch: 'Schwarzwälder Schinken (geschützte Spezialität)',
+      bedeutung: 'Der Schwarzwälder Schinken ist eine geschützte Ursprungsbezeichnung (g.g.A.) — nur im Schwarzwald über Tannenholz geräucherter Schinken darf so genannt werden. Tiefrote Farbe, kräftiges Aroma, leicht süßlicher Geschmack durch das Räuchern. Die Schinken werden über mehrere Wochen gepökelt und dann mehrfach mit Tannen- und Fichtenrauch geräuchert. Berühmte Hersteller: Adler-Schwarzwaldhof, Hans Adler, Schiessle. Frühstück mit Schwarzwälder Schinken und Bauernbrot — alemannischer Genuss schlechthin.',
+      beispiel: 'Schwarzwälder Schinken aufs Bauernbrot — der schmeckt nach Tannenrauch.',
+      beispiel_hd: 'Schwarzwälder Schinken auf das Bauernbrot — der schmeckt nach Tannenrauch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-148',
+      ausdruck: 'Schäppel',
+      hochdeutsch: 'Schwarzwälder Brautkrone',
+      bedeutung: 'Der Schäppel ist die berühmte Schwarzwälder Brautkrone — ein kunstvoller, hoher Kopfschmuck aus Glasperlen, Spiegelchen und farbigen Bändern. Wurde traditionell von Bräuten und unverheirateten Frauen zu hohen Festen getragen. Manche historische Schäppel wiegen mehrere Kilo und sind Familienerbstücke seit Jahrhunderten. In St. Georgen, Triberg und Furtwangen gibt es noch Schäppel-Trägerinnen zu großen Anlässen. Kunsthandwerkliches Meisterwerk und Symbol weiblicher alemannischer Tradition.',
+      beispiel: 'Der Schäppel der Schwarzwälder Braut wiegt manchmal vier Kilo.',
+      beispiel_hd: 'Der Schäppel der Schwarzwälder Braut wiegt manchmal vier Kilo.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-149',
+      ausdruck: 'Mainau-Insel',
+      hochdeutsch: 'Insel Mainau im Bodensee (Blumeninsel)',
+      bedeutung: 'Die Insel Mainau im Bodensee ist eine der schönsten Garteninseln Europas — auf 45 Hektar gedeihen durch das milde Bodensee-Klima Palmen, Orchideen, Schmetterlinge. Eigentümer ist die Familie Bernadotte (schwedischer Adel). Tulpenblüte im April, Rosenblüte im Juni, Dahlienblüte im Herbst. Größter Schmetterlingsgarten Deutschlands. Über 1,2 Millionen Besucher jährlich. Verbunden mit dem Festland durch eine Brücke. Ein botanisches Paradies mitten im alemannischen Sprachraum.',
+      beispiel: 'D\'Mainau im Frühling — Tulpenpracht wie in Holland.',
+      beispiel_hd: 'Die Mainau im Frühling — Tulpenpracht wie in Holland.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-150',
+      ausdruck: 'Alemannische Identität',
+      hochdeutsch: 'Alemannisches Selbstbewusstsein',
+      bedeutung: 'Die alemannische Identität verbindet vier Länder: Südbaden, Schweiz, Vorarlberg und das Elsass. Diese sprachlich und kulturell zusammenhängende Region wurde im 19. Jahrhundert politisch zerteilt, aber das alemannische Bewusstsein bleibt stark. Gemeinsam: Dialekt, Mentalität, Bräuche (Fasnet, Maibaum, Hexenfeuer), Küche (Wähe, Maultaschen, Käsknöpfle). Alemannische Mundartdichter wie Johann Peter Hebel oder Carl Spitteler haben Identität geschaffen. „Mir reden Alemannisch!" ist Selbstbekenntnis. Eine grenzüberschreitende Kulturgemeinschaft mit über 10 Millionen Sprechern.',
+      beispiel: 'Mir Alemannen — vom Schwarzwald bis Vorarlberg — sind eine Familie.',
+      beispiel_hd: 'Wir Alemannen — vom Schwarzwald bis Vorarlberg — sind eine Familie.',
+      kategorie: 'menschen'
     }
   ]
 };

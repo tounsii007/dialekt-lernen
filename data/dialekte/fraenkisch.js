@@ -1104,6 +1104,231 @@ export default {
       beispiel: 'Tschuldigung wegen dem Wartn. — Ach bassd schoo, mach dir koan Stress.',
       beispiel_hd: 'Entschuldigung wegen dem Warten. — Ach passt schon, mach dir keinen Stress.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'fr-126',
+      ausdruck: 'Würzburger Hofbräu',
+      hochdeutsch: 'Würzburger Hofbräu (Traditionsbrauerei)',
+      bedeutung: 'Das Würzburger Hofbräu ist eine der ältesten Brauereien Frankens — 1643 als fürstbischöfliche Hofbrauerei gegründet. Hauptsitz in der Würzburger Höchberger Straße, bekannt für das Würzburger Hofbräu Pils und das Bayerisch Hell. Die Hofbräu-Hütten mit Biergärten in Würzburg sind beliebte Treffpunkte für Studenten und Einheimische. Tradition trifft moderne Braukunst — fränkische Bierkultur in 380 Jahren bewahrt. Auch außerhalb Frankens beliebt.',
+      beispiel: 'A Maß Würzburger Hofbräu im Biergarten — fränkischer Sommer pur.',
+      beispiel_hd: 'Eine Maß Würzburger Hofbräu im Biergarten — fränkischer Sommer pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-127',
+      ausdruck: 'Fränkisches Brot',
+      hochdeutsch: 'Fränkisches Bauernbrot (Tradition)',
+      bedeutung: 'Das fränkische Brot ist berühmt — kräftige Sauerteig-Brote mit Roggen, Weizen und Kümmel, in Holzöfen gebacken. Die fränkischen Bäcker pflegen alte Rezepte, oft seit Generationen. Berühmte Sorten: Fränkisches Bauernbrot, Pumpernickel, Steinmetz-Brot. Die Krume ist dunkel und feucht, die Kruste knusprig. „A guads fränkisches Brot mit Salzbutter" ist ein einfacher, aber unschlagbarer Genuss. Bei der Brotzeit unverzichtbar.',
+      beispiel: 'En Laib fränkisches Brot mit Salzbutter — einfacher gehts nich, besser auch nich.',
+      beispiel_hd: 'Ein Laib fränkisches Brot mit Salzbutter — einfacher geht es nicht, besser auch nicht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-128',
+      ausdruck: 'Mainfränkisches Museum',
+      hochdeutsch: 'Museum für Frankens Geschichte (Festung Marienberg)',
+      bedeutung: 'Das Mainfränkische Museum auf der Festung Marienberg in Würzburg ist das wichtigste Museum für fränkische Kunst und Geschichte. Es beherbergt die größte Sammlung von Tilman Riemenschneider-Skulpturen weltweit — der späte gotische Meister wirkte ab 1483 in Würzburg. Auch fränkische Volkskunst, Weinbau-Geschichte, Mainfischerei werden gezeigt. Die Festung selbst ist über 1.000 Jahre alt. Pflichtbesuch für jeden, der Franken verstehen will.',
+      beispiel: 'Im Mainfränkischen Museum sieht ma Riemenschneiders schönste Madonna.',
+      beispiel_hd: 'Im Mainfränkischen Museum sieht man Riemenschneiders schönste Madonna.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-129',
+      ausdruck: 'Käpsele',
+      hochdeutsch: 'kluger, gewitzter Mensch (fränkisches Lob)',
+      bedeutung: 'Ein „Käpsele" ist im Fränkischen ein cleverer, gewitzter Mensch — jemand, der die Dinge clever angeht, ohne sich was vormachen zu lassen. Stammt vom italienischen „capo" (Kopf) und meint „Köpfchen-Träger". Ist positiv gemeint, manchmal mit leichtem Augenzwinkern. Würzburger sind besonders stolz auf ihre Käpsele-Mentalität — pragmatisch, weltklug, mit fränkischem Mutterwitz. „Die is a Käpsele!" ist hohes Lob.',
+      beispiel: 'Die Anna is a echtes Käpsele — die lässt sich nix vormachen.',
+      beispiel_hd: 'Die Anna ist ein echtes Käpsele — die lässt sich nichts vormachen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-130',
+      ausdruck: 'Schweinekrim',
+      hochdeutsch: 'Schweinfurt-Spitzname (Industriestadt)',
+      bedeutung: 'Schweinfurt — von Einheimischen scherzhaft „Schweinekrim" genannt — ist die fränkische Industriestadt am Main mit 53.000 Einwohnern. Sitz der Weltkonzerne FAG (Wälzlager), Schaeffler, Bosch Rexroth. Im Zweiten Weltkrieg massiv bombardiert wegen der Kugellager-Produktion. Wirtschaftlich stark, kulturell mit dem Theater am Roßmarkt und der Kunsthalle. Die Schweinfurter sind stolze Industriearbeiter und gelten als bodenständig. Nicht zu verwechseln mit Schwerin!',
+      beispiel: 'In der Schweinekrim ham se die ganze Wälzlager-Welt erfunden.',
+      beispiel_hd: 'In Schweinfurt haben sie die ganze Wälzlager-Welt erfunden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-131',
+      ausdruck: 'Schloss Johannisburg',
+      hochdeutsch: 'Schloss Johannisburg Aschaffenburg',
+      bedeutung: 'Das Schloss Johannisburg in Aschaffenburg ist eine der bedeutendsten Renaissance-Anlagen Deutschlands — 1605-1614 erbaut für die Mainzer Erzbischöfe-Kurfürsten. Mit vier identischen Ecktürmen wirkt es wie eine perfekte Festung. Im Inneren: Pompejanum (Rekonstruktion eines römischen Hauses), Schlosskapelle, Gemäldegalerie mit Cranach-Werken. Aschaffenburg liegt im westlichsten Unterfranken am Main — fränkische Stadt mit Verbindung nach Hessen.',
+      beispiel: 'Schloss Johannisburg in Aschaffenburg — Renaissance-Pracht am Main.',
+      beispiel_hd: 'Schloss Johannisburg in Aschaffenburg — Renaissance-Pracht am Main.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-132',
+      ausdruck: 'Wertheim',
+      hochdeutsch: 'Wertheim am Main (Outlet-Stadt)',
+      bedeutung: 'Wertheim am Main liegt an der Grenze zwischen Franken (Bayern) und Baden-Württemberg — strenggenommen badisch, sprachlich aber fränkisch geprägt. Berühmt für die mittelalterliche Burgruine, das historische Glasmuseum und das große „Wertheim Village" Designer-Outlet — eines der größten Outlet-Center Deutschlands. Wertheim ist ein Bindeglied zwischen Frankenland und Tauberfranken. Die Wertheimer sprechen ein Übergangsdialekt.',
+      beispiel: 'Nach Wertheim fahren ma zum Shoppen ins Outlet — günstige Markenklamotten.',
+      beispiel_hd: 'Nach Wertheim fahren wir zum Shoppen ins Outlet — günstige Markenkleidung.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-133',
+      ausdruck: 'Marktbreit',
+      hochdeutsch: 'Marktbreit (Mainfähre, ältester Mainübergang)',
+      bedeutung: 'Marktbreit ist ein malerisches Mainstädtchen mit 4.000 Einwohnern im Landkreis Kitzingen — historischer Mainübergang mit alter Fähre. Das Renaissance-Rathaus von 1579 ist eines der schönsten Frankens. Schöner Hafen, Fachwerkhäuser, viel Stille. Hier wurde Alois Alzheimer 1864 geboren — der Entdecker der nach ihm benannten Krankheit. Ein Geheimtipp für Touristen, die das authentische, ruhige Franken suchen.',
+      beispiel: 'Marktbreit am Main — ein verstecktes Juwel mit Renaissance-Rathaus.',
+      beispiel_hd: 'Marktbreit am Main — ein verstecktes Juwel mit Renaissance-Rathaus.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-134',
+      ausdruck: 'Veitshöchheim',
+      hochdeutsch: 'Veitshöchheim (Hofgarten und Karneval)',
+      bedeutung: 'Veitshöchheim bei Würzburg ist berühmt für zwei Dinge: den barocken Rokoko-Hofgarten der Würzburger Fürstbischöfe (einer der schönsten Deutschlands) und „Fastnacht in Franken" — die jährliche Karnevals-TV-Sendung aus der Mainfrankensäle, die seit 1987 Millionen vor den Fernseher zieht. Stars wie Peter Kuhn und Volkmar Halbleib treten dort auf. Veitshöchheim ist damit Synonym für fränkischen Karneval-Humor. Mainfränkische Pflichtsendung.',
+      beispiel: '„Fastnacht in Franken" aus Veitshöchheim — jeder Franke schauts.',
+      beispiel_hd: '„Fastnacht in Franken" aus Veitshöchheim — jeder Franke schaut es.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-135',
+      ausdruck: 'Hofgarten',
+      hochdeutsch: 'Veitshöchheimer Rokoko-Hofgarten',
+      bedeutung: 'Der Hofgarten in Veitshöchheim ist einer der wichtigsten Rokoko-Gärten Deutschlands — 1763 für die Würzburger Fürstbischöfe angelegt. 130 Sandsteinfiguren der Hofbildhauer Wagner und Materno Bossi, künstliche Grotten, Wasserspiele, ein See mit Schloss-Pavillon. Symmetrisch-streng angelegt, aber spielerisch im Detail. Im Sommer Schauplatz von Konzerten. Für Würzburger ein Naherholungsgebiet, für Touristen ein barockes Juwel.',
+      beispiel: 'Im Veitshöchheimer Hofgarten spaziert ma zwischen Sandsteinfigürchen.',
+      beispiel_hd: 'Im Veitshöchheimer Hofgarten spaziert man zwischen Sandsteinfiguren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-136',
+      ausdruck: 'Maintrilogie',
+      hochdeutsch: 'Mainfränkische Weinlagen (Stein, Pfaffenberg, Lengfelder Berg)',
+      bedeutung: 'Die Maintrilogie umfasst die drei berühmtesten Würzburger Weinlagen: Würzburger Stein (eines der bekanntesten deutschen Weingüter, ältester urkundlich erwähnter Weinberg von 779), Würzburger Pfaffenberg und Würzburger Innere Leiste. Diese Südhänge über dem Main produzieren Silvaner, Riesling und Müller-Thurgau auf Spitzenniveau. „Vom Stein" zu trinken ist für Frankenwein-Liebhaber wie ein Pilgerritt. Der Würzburger Stein ist sogar 1990 zum „Berg des Jahres" gekürt worden.',
+      beispiel: 'En Silvaner vom Würzburger Stein — Spitzenwein der Maintrilogie.',
+      beispiel_hd: 'Ein Silvaner vom Würzburger Stein — Spitzenwein der Maintrilogie.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-137',
+      ausdruck: 'Stadtmauer',
+      hochdeutsch: 'Würzburger Stadtmauer (mittelalterliche Befestigung)',
+      bedeutung: 'Die Würzburger Stadtmauer ist eine der eindrucksvollsten erhaltenen mittelalterlichen Stadtbefestigungen Deutschlands — über 4 km lang, mit zahlreichen Türmen, Toren und Wehrgängen. Erbaut ab dem 13. Jahrhundert, sicherte sie die freie Reichsstadt gegen Angriffe. Heute kann man weite Teile begehen. Wichtige Tore: das Spitäle-Tor, das Hauger Tor. Die Stadtmauer-Wanderung gehört zu den schönsten Spaziergängen Würzburgs. Atmosphäre wie im Mittelalter.',
+      beispiel: 'Die Würzburger Stadtmauer entlang laufa — Geschichte hautnah.',
+      beispiel_hd: 'Die Würzburger Stadtmauer entlang laufen — Geschichte hautnah.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-138',
+      ausdruck: 'Mainfischerei',
+      hochdeutsch: 'Traditionelles fränkisches Fischerhandwerk',
+      bedeutung: 'Die Mainfischerei hat in Würzburg, Schweinfurt und Bamberg eine jahrhundertealte Tradition — die Mainfischer fingen Aal, Hecht, Karpfen und Zander für die Märkte. Heute gibt es nur noch wenige Berufsfischer am Main, die ihre Tradition pflegen. Der „Mainfischer" Räucherkarpfen ist eine fränkische Delikatesse. Das Würzburger Mainfischerfest im Sommer erinnert an diese alte Berufsgruppe. Wassersport und Fischerei am Main bleiben fränkische Identität.',
+      beispiel: 'Mainfischer-Tradition — frischer Karpfen direkt vom Fluss.',
+      beispiel_hd: 'Mainfischer-Tradition — frischer Karpfen direkt vom Fluss.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-139',
+      ausdruck: 'Hesselberg-Fest',
+      hochdeutsch: 'Mittelfränkisches Bergfest',
+      bedeutung: 'Das Hesselbergfest ist das große mittelfränkische Bergfest auf dem 689 m hohen Hesselberg bei Wassertrüdingen. Bauernmarkt, Mittelalter-Spektakel, Konzerte, Drachenfliegen. Im Sommer locken die Aussichtsplattform und der Steig auf die „Wallburg-Reste" tausende Wanderer. Nach der NS-Zeit musste der „Frankenberg" sich neu erfinden — heute ein Symbol für demokratische Volkskultur in Mittelfranken. Die Bauern aus der Hahnenkamm-Region feiern hier.',
+      beispiel: 'Aufs Hesselbergfest gehen alle Mittelfranken — Bauernmarkt und Aussicht.',
+      beispiel_hd: 'Auf das Hesselbergfest gehen alle Mittelfranken — Bauernmarkt und Aussicht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-140',
+      ausdruck: 'Berga-Brauerei',
+      hochdeutsch: 'Brauerei Berga (Fränkische Schweiz)',
+      bedeutung: 'Die Brauerei Berga in Bad Rodach bei Coburg ist eine traditionelle oberfränkische Familienbrauerei — gegründet 1864. Klassische Spezialitäten: Berga Hell, Berga Pils, Berga Bock. Mit der höchsten Brauereidichte der Welt in der Fränkischen Schweiz und Oberfranken ist Berga eine von hunderten kleinen Brauereien, die ihre regionale Identität bewahrt haben. Stolz: handwerklich gebraut, regional vertrieben, mit lokalem Hopfen und Malz.',
+      beispiel: 'A Seidla Berga im Wirtshausgartn — fränkisches Bierglück.',
+      beispiel_hd: 'Ein Krug Berga im Wirtshausgarten — fränkisches Bierglück.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-141',
+      ausdruck: 'Spalter Hopfen',
+      hochdeutsch: 'Spalter Hopfen (Weltklasse-Hopfen)',
+      bedeutung: 'Der Spalter Hopfen aus dem mittelfränkischen Spalt ist einer der hochwertigsten Hopfen weltweit — gehört zu den vier weltweit anerkannten „Edel-Hopfen-Sorten" (zusammen mit Tettnanger, Hallertauer und Saazer). Die Anbaufläche umfasst nur 400 Hektar, aber die Qualität ist legendär. Aroma: blumig, würzig, mit feinen Zitrusnoten. Premium-Brauereien weltweit zahlen Spitzenpreise. Die Spalter Bauern sind stolz auf ihren Hopfen — manchmal mehr wert als Gold.',
+      beispiel: 'Spalter Hopfen — der beste der Welt für edle Pilsbiere.',
+      beispiel_hd: 'Spalter Hopfen — der beste der Welt für edle Pilsbiere.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-142',
+      ausdruck: 'Spalt',
+      hochdeutsch: 'Spalt (Hopfenstadt in Mittelfranken)',
+      bedeutung: 'Spalt im Landkreis Roth ist die fränkische Hopfenstadt — Zentrum des weltberühmten Spalter Hopfenanbaus seit dem 8. Jahrhundert. Im Spalter HopfenBierGut-Museum erfährt man alles über Hopfen und Bier. Die Stadt mit 5.000 Einwohnern hat ihre eigene Brauerei (Stadtbrauerei Spalt — eine der ältesten kommunalen Brauereien Deutschlands). Im September Hopfenfest und Erntedank. Wer Bier wirklich versteht, war in Spalt.',
+      beispiel: 'In Spalt riecht\'s im September nach Hopfen — die Erntezeit beginnt.',
+      beispiel_hd: 'In Spalt riecht es im September nach Hopfen — die Erntezeit beginnt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-143',
+      ausdruck: 'Forchheim',
+      hochdeutsch: 'Forchheim (Tor zur Fränkischen Schweiz)',
+      bedeutung: 'Forchheim ist die Tor-Stadt zur Fränkischen Schweiz — 32.000 Einwohner, historisches Fachwerk, Kaiserpfalz aus dem 14. Jahrhundert. Berühmt für den Forchheimer „Annafest" — eines der größten Volksfeste Oberfrankens, mit den 23 Bierkellern im Kellerwald. Hier wird Kellerbier direkt aus dem Berg serviert — fränkische Tradition pur. Die Forchheimer sind stolz auf ihre Brautradition: die Brauerei-Dichte im Landkreis Forchheim ist die höchste der Welt.',
+      beispiel: 'Aufs Forchheimer Annafest gehen alle Oberfranken — Kellerbier-Paradies.',
+      beispiel_hd: 'Auf das Forchheimer Annafest gehen alle Oberfranken — Kellerbier-Paradies.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-144',
+      ausdruck: 'Annafest',
+      hochdeutsch: 'Forchheimer Annafest (Volksfest)',
+      bedeutung: 'Das Forchheimer Annafest ist das wichtigste Volksfest Oberfrankens — seit 1840 jährlich im Juli auf dem Kellerwald. 23 Bierkeller, in denen Kellerbier direkt aus dem Berg ausgeschenkt wird, Tausende von Bierbänken unter Eichen und Buchen. Eine Million Besucher in 11 Tagen. Anders als das Münchner Oktoberfest familiär und gemütlich, kein Bierzelt-Lärm. „Auf de Keller geh" ist Forchheimer Lebensgefühl im Sommer.',
+      beispiel: 'Auf\'m Annafest sitzt ma unterm Baum und trinkt Kellerbier — Frankenglück.',
+      beispiel_hd: 'Auf dem Annafest sitzt man unter dem Baum und trinkt Kellerbier — Frankenglück.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-145',
+      ausdruck: 'Frankenwald-Naturpark',
+      hochdeutsch: 'Naturpark Frankenwald (Oberfranken)',
+      bedeutung: 'Der Naturpark Frankenwald umfasst 102.500 Hektar Mittelgebirge in Oberfranken — vom Frankenwald bis zur thüringischen Grenze. Ausgedehnte Fichten- und Buchenwälder, klare Bäche (Saale, Rodach, Steinach), Hochmoore. Wander- und Mountainbike-Paradies. Floßfahrten auf der Wilden Rodach sind ein Highlight. Strukturschwache Region — wirtschaftlich nicht reich, landschaftlich ein Schatz. Wer Ruhe sucht, findet sie hier. Der Frankenwald ist der „grüne Lungen" Frankens.',
+      beispiel: 'Im Frankenwald-Naturpark wandert ma tagelang ohne jemand zu treffen.',
+      beispiel_hd: 'Im Frankenwald-Naturpark wandert man tagelang, ohne jemand zu treffen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-146',
+      ausdruck: 'Mainfranken-Wein',
+      hochdeutsch: 'Frankenwein-Anbaugebiet (Mainfranken)',
+      bedeutung: 'Mainfranken ist DAS Weinbaugebiet Frankens — entlang des Mains von Aschaffenburg bis Bamberg. 6.000 Hektar Anbaufläche, 3.500 Winzer, 50% Müller-Thurgau, 25% Silvaner, dazu Bacchus, Domina, Spätburgunder. Klima: kontinental mit warmen Tagen und kühlen Nächten — ideal für trockene, mineralische Weine. Die Bocksbeutel-Flasche ist das ikonische Erkennungszeichen. Mit der GG-Klassifikation gehören Spitzenweine zu Deutschlands besten. Mainfranken-Wein ist Identität.',
+      beispiel: 'Mainfranken-Wein im Bocksbeutel — keine andere Region hat das.',
+      beispiel_hd: 'Mainfranken-Wein im Bocksbeutel — keine andere Region hat das.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-147',
+      ausdruck: 'Hafele',
+      hochdeutsch: 'kleiner Topf / Kochgefäß (fränkisch)',
+      bedeutung: 'Ein „Hafele" ist im Fränkischen ein kleiner Topf oder Kochgefäß — Diminutiv von „Hafen" (Topf, vom mittelhochdeutschen). Davon leitet sich auch der Würzburger „Hafenmarkt" ab, wo früher Töpferware verkauft wurde. „Die Suppn im Hafele auf\'n Herd stelln" — alltägliche fränkische Küchensprache. Das Wort zeigt, wie konservativ fränkische Mundart alte Begriffe bewahrt. Heute selten geworden, aber bei der Oma noch lebendig.',
+      beispiel: 'Stell des Hafele mit der Suppn aufn Herd — wird Zeit zum Esse.',
+      beispiel_hd: 'Stell den kleinen Topf mit der Suppe auf den Herd — es wird Zeit zum Essen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-148',
+      ausdruck: 'Würzburger Bratwurst',
+      hochdeutsch: 'Würzburger Bratwurst (anders als Nürnberger)',
+      bedeutung: 'Die Würzburger Bratwurst ist anders als die Nürnberger Rostbratwurst — größer, dicker, grober gewürzt. Sie wird vor allem mit Sauerkraut und Brötchen serviert, nicht in der kleinen 7-9-cm-Version. Würzburger pochen darauf: „Wir haben unsere eigene Bratwurst!" Auch wenn die Nürnberger weltberühmt sind, hat die Würzburger ihre treuen Liebhaber. Die unterschiedlichen Bratwurst-Traditionen sind ein Stück fränkischer Lokalpatriotismus.',
+      beispiel: 'A Würzburger Bratwurst is wat anneres als die kleine Nürnberger.',
+      beispiel_hd: 'Eine Würzburger Bratwurst ist etwas anderes als die kleine Nürnberger.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-149',
+      ausdruck: 'Pressack',
+      hochdeutsch: 'Presssack (fränkische Wurstspezialität)',
+      bedeutung: 'Der Pressack ist eine fränkische und bayerische Wurstspezialität — eine Sülze aus Schweinekopf-Fleisch, Schwarte, Blut und Gewürzen, in einen Schweinemagen gepresst. Es gibt roten Pressack (mit Blut) und weißen Pressack (ohne Blut). Wird in Scheiben geschnitten und mit Essig, Öl, Zwiebeln und Bauernbrot als Brotzeit serviert. Eine traditionelle Resteverwertung, die heute als Delikatesse geschätzt wird. Bei jeder fränkischen Brotzeit dabei.',
+      beispiel: 'Roter Pressack mit Zwiebeln und Essig — fränkische Brotzeit-Pflicht.',
+      beispiel_hd: 'Roter Pressack mit Zwiebeln und Essig — fränkische Brotzeit-Pflicht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-150',
+      ausdruck: 'Fränkische Identität',
+      hochdeutsch: 'Fränkisches Selbstbewusstsein („Mir san net bayerisch")',
+      bedeutung: 'Die fränkische Identität ist stark — Franken sind politisch zu Bayern, fühlen sich aber kulturell als eigener Volksstamm. „Mir sind Frangen, net Bayern!" ist Standardsatz. Eigene Sprache, eigene Küche (Schäuferla statt Schweinshaxe), eigener Wein (Frankenwein statt bayerisches Bier), eigene Geschichte (Freie Reichsstädte). Bayerische Regierung in München gilt manchen als Fremdherrschaft. Bayerischer Rundfunk hat eigenen Studio Franken. Diese Eigenständigkeit prägt das fränkische Selbstbewusstsein bis heute.',
+      beispiel: 'Mir sind Franken — net Bayern! Das is wichtig zu wissen.',
+      beispiel_hd: 'Wir sind Franken — nicht Bayern! Das ist wichtig zu wissen.',
+      kategorie: 'menschen'
     }
   ]
 };

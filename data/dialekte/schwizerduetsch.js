@@ -1102,6 +1102,231 @@ export default {
       beispiel: 'Wenn ich d\'Bärge gseh, han ich sofort Heimatgfühl.',
       beispiel_hd: 'Wenn ich die Berge sehe, habe ich sofort Heimatgefühl.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-126',
+      ausdruck: 'Wilhelm Tell',
+      hochdeutsch: 'Wilhelm Tell',
+      bedeutung: '„Wilhelm Tell" ist der legendäre Schweizer Nationalheld aus Uri, der laut Sage 1307 mit einem Pfeil den Apfel vom Kopf seines Sohnes schoss. Friedrich Schillers Drama (1804) machte ihn weltberühmt. Historisch wohl Mythos, aber identitätsstiftend für die Eidgenossenschaft. Symbol für Freiheit, Mut und Widerstand gegen Tyrannei (Vogt Gessler). In Altdorf steht das Tell-Denkmal, jedes Jahr Tellspiele in Interlaken und Altdorf. Schweizer Gründungsmythos par excellence.',
+      beispiel: 'Jede Sommer chunnt mer i d\'Tell-Spiel uf Interlake.',
+      beispiel_hd: 'Jeden Sommer kommt man zu den Tell-Spielen nach Interlaken.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-127',
+      ausdruck: 'Heidi',
+      hochdeutsch: 'Heidi (Roman)',
+      bedeutung: '„Heidi" — Johanna Spyris Romanfigur (1880) — ist das weltbekannte Schweizer Bergmädchen, das beim Alpöhi auf der Alm aufwächst. Geschichte um Heimweh, Bergliebe und Freundschaft mit Peter und Klara. In über 70 Sprachen übersetzt, mehrfach verfilmt (legendärer Anime 1974, neuer Spielfilm 2015). Heidiland im Toggenburg/Maienfeld ist Touristenort. Heidi prägt das internationale Schweiz-Bild stärker als jede Tourismuskampagne. Naive Berg-Romantik als Schweizer Exportgut.',
+      beispiel: 'D\'Heidi-Gschicht chännt jedes Chind uf de Wält.',
+      beispiel_hd: 'Die Heidi-Geschichte kennt jedes Kind auf der Welt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-128',
+      ausdruck: 'Rütlischwur',
+      hochdeutsch: 'Rütli-Schwur',
+      bedeutung: 'Der „Rütlischwur" auf der Rütli-Wiese am Vierwaldstättersee gilt als Gründungsakt der Eidgenossenschaft 1291. Die Abgesandten der Urkantone Uri, Schwyz und Unterwalden schworen den Ewigen Bund gegen die Habsburger. Friedrich Schiller verewigte die Szene im Wilhelm Tell. 1. August (Bundesfeiertag) wird die Rütli-Wiese zum Pilgerort. Politische Reden, Höhenfeuer, Glockengeläut. Bundesrat besucht offiziell. Mehr Symbol als historisch belegt — aber prägend für Schweizer Selbstverständnis.',
+      beispiel: 'Am erste Augschte gohts ufs Rütli.',
+      beispiel_hd: 'Am ersten August geht es aufs Rütli.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-129',
+      ausdruck: 'Schwingen-WM',
+      hochdeutsch: 'Eidgenössisches Schwingfest',
+      bedeutung: 'Das „Eidgenössische Schwingfest" (kurz „ESAF") findet alle drei Jahre statt — der Höhepunkt des Schwingens, der Schweizer Nationalsportart. Über 250 Schwinger ringen in Sägemehlringen, die Gewinner werden zum „Schwingerkönig" gekrönt. Bis zu 350.000 Zuschauer am Wochenende — größtes Sport-Open-Air Europas! Der Preis: ein lebender Muni (Stier). Brienz, Burgdorf, Estavayer-le-Lac waren Austragungsorte. Mehr Volksfest als Wettkampf — Schweizer Tradition pur.',
+      beispiel: 'Bim ESAF chunnt ds halbi Land z\'säme.',
+      beispiel_hd: 'Beim Eidgenössischen kommt das halbe Land zusammen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-130',
+      ausdruck: 'Hornusser',
+      hochdeutsch: 'Hornusser (Nationalsport)',
+      bedeutung: '„Hornussen" ist ein einzigartiger Schweizer Nationalsport, ähnlich Cricket/Baseball — vor allem im Berner Mittelland gespielt. Ein Spieler („Stöcker") schlägt mit langer Rute eine Hartgummi-Nuss (Hornuss) Richtung Gegner-Mannschaft, die mit Schindeln (Schaufeln) den Flug abwehren muss. Stammt aus dem 17. Jahrhundert. Höhepunkt ist das „Eidgenössische Hornusserfest". Klingt skurril, ist ernsthafter Sport mit Vereinen und Liga. Schweizer Volkssport-Eigenheit.',
+      beispiel: 'Im Bärnbiet wird no Hornuss gschpilt.',
+      beispiel_hd: 'Im Berner Land wird noch Hornussen gespielt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-131',
+      ausdruck: 'HC Davos',
+      hochdeutsch: 'HC Davos (Eishockey)',
+      bedeutung: 'Der „HC Davos" (HCD, gegründet 1921) ist der traditionsreichste Schweizer Eishockey-Verein. 31 Schweizermeister-Titel — Rekord! Spielt im Vaillant Arena Davos. Jedes Jahr Gastgeber des „Spengler Cups" (seit 1923), das älteste internationale Eishockeyturnier der Welt — Heimspiel zwischen Weihnachten und Neujahr. Internationale Stars wie Joe Thornton und Henrik Zetterberg spielten hier. Schweizer Eishockey-Hochburg. Wintersport-Tradition.',
+      beispiel: 'Am Spengler Cup spielt jedes Jahr de HC Davos.',
+      beispiel_hd: 'Am Spengler Cup spielt jedes Jahr der HC Davos.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-132',
+      ausdruck: 'Verbier',
+      hochdeutsch: 'Verbier (Skiort)',
+      bedeutung: '„Verbier" im Walliser Bagnes-Tal ist einer der mondänsten Schweizer Skiorte — verbunden mit den „Vier Tälern" (4 Vallées), 410 km Pisten. International für Off-Piste und Freeride berühmt. Verbier Festival (klassische Musik im Sommer) lockt Pianisten wie Daniil Trifonov. James Blunt hat hier ein Haus. Im Winter trifft sich der internationale Jetset — Madonna, Diana Ross waren zu Gast. Sehr teuer, sehr exklusiv. Schweizer Wintersport-Glamour.',
+      beispiel: 'I Verbier triffsch d\'Jet-Set im Schnee.',
+      beispiel_hd: 'In Verbier triffst du den Jet-Set im Schnee.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-133',
+      ausdruck: 'Lauberhorn',
+      hochdeutsch: 'Lauberhornrennen Wengen',
+      bedeutung: 'Das „Lauberhornrennen" in Wengen (Berner Oberland) ist mit 4,5 km die längste und mit über 160 km/h die schnellste Abfahrt im Ski-Weltcup. Findet jedes Jahr im Januar statt — Pflichttermin für Skifans. Berühmte Streckenabschnitte: Hundschopf, Wasserstation, Hannegg-Schuss, Ziel-S. Sieger wie Pirmin Zurbriggen, Beat Feuz, Didier Cuche sind Schweizer Helden. Live-TV-Spektakel. Schweizer Ski-Geschichte im Schauspiel.',
+      beispiel: 'D\'Lauberhornabfahrt isch d\'gföhrlichschti im Weltcup.',
+      beispiel_hd: 'Die Lauberhornabfahrt ist die gefährlichste im Weltcup.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-134',
+      ausdruck: 'Adelboden-Slalom',
+      hochdeutsch: 'Adelboden Riesenslalom',
+      bedeutung: 'Der „Adelboden-Riesenslalom" am Chuenisbärgli (Berner Oberland) ist eine der prestigereichsten Ski-Weltcup-Rennen. Findet jährlich im Januar statt. Die Strecke gilt als technisch anspruchsvollste im Riesenslalom-Weltcup — steile Wände, „Adelboden-Welle" am Schluss. Marcel Hirscher (Österreicher) gewann hier 7 Mal. Schweizer Sieger: Daniel Albrecht, Carlo Janka, Marco Odermatt. Über 20.000 Zuschauer säumen den Hang. Hochalpine Skikultur in Reinkultur.',
+      beispiel: 'Z\'Adelbode am Chuenisbärgli isch immer voll.',
+      beispiel_hd: 'In Adelboden am Chuenisbärgli ist immer voll.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-135',
+      ausdruck: 'Bob-WM',
+      hochdeutsch: 'Bobsleigh / Bobfahren',
+      bedeutung: 'Der „Bob" oder „Bobsleigh" ist ein Schweizer Wintersport-Erbe — St. Moritz hat seit 1904 die einzige natürliche Eisbahn der Welt (Olympia Bob Run St. Moritz–Celerina). Erfindung um 1860 in St. Moritz durch englische Touristen. Mehrfach Olympia-Austragungsort (1928, 1948). Vierer- und Zweier-Bob, bis 145 km/h schnell. Schweizer Erfolge: Hiltebrand-Brüder, Beat Hefti. Skelet und Cresta-Run als „Verwandte". Schweizer Wintersport-Innovation.',
+      beispiel: 'I Sankt Moritz fahrsch ufm einzige Natur-Bob-Run.',
+      beispiel_hd: 'In Sankt Moritz fährst du auf dem einzigen Natur-Bob-Run.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-136',
+      ausdruck: 'Capuns',
+      hochdeutsch: 'Bündner Capuns',
+      bedeutung: '„Capuns" sind das Bündner Nationalgericht — Mangoldblätter, gefüllt mit Spätzle-Teig, Bündnerfleisch und Salsiz, in Bouillon gekocht, dann mit Béchamel und Käse überbacken. Bauernküche aus Graubünden, sehr deftig. Jedes Tal hat eigenes Rezept. Wird in Bergrestaurants und Heidi-Hütten serviert. Klassiker im Bündnerland-Tourismus. Aufwendig in der Zubereitung — wer Capuns kocht, kocht Liebe. Schweizer Bergküche par excellence.',
+      beispiel: 'I de Bündner Hütte gits di beschte Capuns.',
+      beispiel_hd: 'In den Bündner Hütten gibt es die besten Capuns.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-137',
+      ausdruck: 'Bürli',
+      hochdeutsch: 'Schweizer Brötchen',
+      bedeutung: 'Das „Bürli" ist das Schweizer Standard-Brötchen — rund, mit Mehl bestäubt, knusprige Kruste, weicher Teig. Wird zur „Znünibürli" (Pausenbrot) oder beim Frühstück verzehrt. Variationen: „Mehlsuppe-Bürli", „Sesam-Bürli", „Doppelweggli". Schweizer Bäckereien wie Hiestand oder Schwarzenbach pflegen die Tradition. Im Vergleich zum deutschen Brötchen weicher, runder, robuster. Identifikationssymbol des Schweizer Frühstücks. Mit Butter und Konfi: Wochenend-Standard.',
+      beispiel: 'Zum Zmorge git\'s frischi Bürli.',
+      beispiel_hd: 'Zum Frühstück gibt es frische Bürli.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-138',
+      ausdruck: 'Tessiner Risotto',
+      hochdeutsch: 'Tessiner Risotto',
+      bedeutung: 'Der „Tessiner Risotto" ist die südschweizerische Variante des italienischen Klassikers. Tessin liegt südlich der Alpen, italienischsprachig — daher mediterrane Küche mit Schweizer Note. Klassisch: Risotto mit Steinpilzen (Funghi porcini) und Merlot del Ticino, abgeschmeckt mit Sbrinz oder Parmigiano. Die Reisanbauten im Magadinotal nahe Locarno sind die nördlichsten Europas. Wird im „Grotto" (Tessiner Wirtshaus) serviert. Schweiz-Italien-Kulinarik-Brücke.',
+      beispiel: 'Im Tessin git\'s de beschti Risotto vo de Schwiz.',
+      beispiel_hd: 'Im Tessin gibt es den besten Risotto der Schweiz.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-139',
+      ausdruck: 'Berner Platte',
+      hochdeutsch: 'Berner Platte',
+      bedeutung: 'Die „Berner Platte" ist das deftige Berner Nationalgericht — Sauerkraut und/oder Bohnen mit Schweinefleisch, Speck, Würsten, Zungen und manchmal Rauchschinken. Erfunden 1798 nach der Schlacht von Neuenegg als Siegesessen. Heute klassisch im Restaurant Schmiedstube in Bern. Riesige Portion, oft für 2 Personen. Schweizer Pendant zum Berner Geschnetzelten, aber rustikaler. Volkstümliche Berner Wirtshausküche im Original. Sättigend, nicht für schwache Mägen.',
+      beispiel: 'A Bärner Platte chasch nid alei verputze.',
+      beispiel_hd: 'Eine Berner Platte kannst du nicht allein verputzen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-140',
+      ausdruck: 'Bundesfeier',
+      hochdeutsch: 'Schweizer Bundesfeier (1. August)',
+      bedeutung: 'Die „Bundesfeier" am 1. August ist der Schweizer Nationalfeiertag, eingeführt 1891 zum 600-jährigen Jubiläum der Eidgenossenschaft. Höhenfeuer auf jedem Berg, Lampions, Bundesrats-Rede auf der Rütli-Wiese und in den Gemeinden. Cervelat-Bratwurst grillen, Schweizerfahnen schwenken, Glockengeläut um 20 Uhr. Bürgerlich gefeiert, weniger pathetisch als andere Nationalfeiern. Schweizer Bundesidentität in einer Nacht. Private und öffentliche Feuerwerke (mittlerweile reglementiert).',
+      beispiel: 'Am erste Augschte mached mir Höhefüür.',
+      beispiel_hd: 'Am ersten August machen wir Höhenfeuer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-141',
+      ausdruck: 'Bundeshaus',
+      hochdeutsch: 'Bundeshaus Bern',
+      bedeutung: 'Das „Bundeshaus" in Bern (eröffnet 1902) ist Sitz des Schweizer Parlaments und Bundesrats. Im Florenz-Renaissance-Stil mit grüner Kuppel über der Altstadt. Drinnen die berühmte Kuppelhalle mit Bundeshaus-Spruch „Unus pro omnibus, omnes pro uno". Der Bundesplatz davor mit den 26 Wasserspielen (für jeden Kanton) wird oft für Demonstrationen genutzt. Im Sommer Open-Air-Kino auf dem Platz. Schweizer Demokratie-Zentrum. Politisch und architektonisch zentral.',
+      beispiel: 'Ds Bundeshus z\'Bärn isch s\'Härz vo de Schwiz.',
+      beispiel_hd: 'Das Bundeshaus in Bern ist das Herz der Schweiz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-142',
+      ausdruck: 'Einstein in Bern',
+      hochdeutsch: 'Albert Einstein in Bern',
+      bedeutung: 'Albert Einstein lebte 1903–1909 in Bern — als Beamter im Eidgenössischen Patentamt. Hier verfasste er 1905 seine berühmten vier Aufsätze („Annus Mirabilis"), darunter die Relativitätstheorie. Wohnte in der Kramgasse 49 (heute Einstein-Haus-Museum). Sein Bürofenster im Patentamt am Genfergässli kann besichtigt werden. Berner Lokalfaktum mit weltgeschichtlichem Gewicht — wo sonst entstand Relativitätstheorie über Wurstwaren? Schweizer Wissenschaftsstolz.',
+      beispiel: 'I de Chramgass het de Einstein gwohnt.',
+      beispiel_hd: 'In der Kramgasse hat Einstein gewohnt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-143',
+      ausdruck: 'Mani Matter',
+      hochdeutsch: 'Mani Matter (Liedermacher)',
+      bedeutung: '„Mani Matter" (1936–1972) war der wichtigste Schweizer Liedermacher des 20. Jahrhunderts — Berner Mundart-Chansonnier. Studierte Jurist, schrieb hintersinnige Lieder mit Schweizer Witz. „Hemmige", „Dr Sidi Abdel Assar vo el Hama", „Bim Coiffeur" — Kult-Songs. Starb mit 36 bei Autounfall. Sein Werk: 80 Lieder, alle Kulturgut. Schweizer Pendant zu Brassens. Bis heute in Schulen gelernt. Mani-Matter-Erbe wird vom Mani-Matter-Förderpreis gewahrt.',
+      beispiel: 'D\'Mani-Matter-Lieder chännt jedes Bärner Chind.',
+      beispiel_hd: 'Die Mani-Matter-Lieder kennt jedes Berner Kind.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-144',
+      ausdruck: 'Mundart-Rock',
+      hochdeutsch: 'Schweizer Mundartmusik',
+      bedeutung: 'Die „Schwiizerdeutschi Mundartmusik" erlebte ab den 70ern einen Boom — Polo Hofer und seine Schmetterband begründeten Berndeutsch-Rock. Stephan Eicher, Patent Ochsner, Züri West, Plüsch, Bligg — Mundart ist heute Mainstream. Festivals wie Gurten-Festival oder Open Air Frauenfeld haben Schweizer Acts groß rausgekommen lassen. Im Gegensatz zu Hochdeutsch-Pop: Mundart wirkt authentisch, regional, lokalpatriotisch. Schweizer Selbstvergewisserung in Tönen. Identitätskunst.',
+      beispiel: 'I de Schwiz lauft me Mundart-Rock im Radio.',
+      beispiel_hd: 'In der Schweiz läuft Mundart-Rock im Radio.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-145',
+      ausdruck: 'Hörnli',
+      hochdeutsch: 'Hörnli (Schweizer Pasta)',
+      bedeutung: '„Hörnli" sind kleine, gebogene Schweizer Hartweizen-Nudeln — Pendant zu italienischen Maccheroni, aber dicker und gröber. Klassisch verarbeitet in „Älplermagronen" — Schweizer Bergerngericht mit Hörnli, Kartoffeln, Käse, Speck und Apfelmus. Schulkantine-Standard. Eigentlich Bauern-Aufessensgericht aus der Käsewirtschaft. Heute Symbol der Schweizer Hausmannskost — günstig, sättigend, kindgerecht. „Hörnli mit Hackfleisch" als Klassiker. Schweizer Pasta-Tradition.',
+      beispiel: 'Hörnli mit Ghackets isch s\'Schwiizer Lieblingsässe.',
+      beispiel_hd: 'Hörnli mit Hackfleisch ist das Schweizer Lieblingsessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-146',
+      ausdruck: 'Älplerchilbi',
+      hochdeutsch: 'Älplerchilbi (Hirtenfest)',
+      bedeutung: 'Die „Älplerchilbi" ist das Schweizer Almabtriebs-Fest — gefeiert im Herbst, wenn das Vieh von den Alpen zurück ins Tal kommt. Wichtig in Innerschweiz (Engelberg, Stoos, Rigi). Auflauf der Sennen in Tracht, Käsesegnung, Älplerchilbi-Lieder, Reisen-Käse-Wagen. Die Kühe tragen Blumenkrone und Glocken. Volksfest mit Kirche und Wirtschaft. Eingebettet in jahrhundertealte Hirtentradition. Wichtige Brauchtumsveranstaltung. Tourismus-Magnet und gleichzeitig echte Tradition.',
+      beispiel: 'Im Herbscht chunsch zu de Älplerchilbi i d\'Innerschwiz.',
+      beispiel_hd: 'Im Herbst kommst du zu den Älplerchilbi-Festen in die Innerschweiz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-147',
+      ausdruck: 'Federer',
+      hochdeutsch: 'Roger Federer',
+      bedeutung: 'Roger Federer (geb. 1981 in Basel) ist Schweizer Tennislegende — 20 Grand Slams, 310 Wochen Weltranglistenerster, 8x Wimbledon. Spielte 2003–2022 im Spitzentennis. Verkörperung Schweizer Eleganz, Höflichkeit, mehrsprachiger Charme (Mundart, Hochdeutsch, Englisch, Französisch). Über Sport hinaus: Symbolfigur der Schweiz weltweit. Nach Karriereende gefeiert wie ein Staatsoberhaupt. „RF" als Marke. Schweizer Botschafter Nummer eins. Mehr als Tennis: Schweiz-Synonym.',
+      beispiel: 'De Federer isch de bescht Schwiizer Botschafter wo\'s gits.',
+      beispiel_hd: 'Federer ist der beste Schweizer Botschafter, den es gibt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-148',
+      ausdruck: 'Sankt Gotthard',
+      hochdeutsch: 'Gotthard-Pass / Tunnel',
+      bedeutung: 'Der „Gotthard" ist Pass und Tunnel — Schweizer Verkehrsherzstück durch die Alpen. Pass schon im Mittelalter zentral für Nord-Süd-Verkehr. Bahntunnel 1882 eröffnet (Erstweltverbindung), Strassentunnel 1980, Basistunnel 2016 (mit 57 km der längste Eisenbahntunnel der Welt). Verbindet Deutschschweiz mit Tessin und Italien. Stau am Gotthard ist Schweizer Sommer-Plage. Auch in der Bundeshymne „Trittst im Morgenrot daher" erwähnt. Schweizer Identitäts- und Verkehrssymbol.',
+      beispiel: 'Vor de Sommerferie git\'s am Gotthard Stau.',
+      beispiel_hd: 'Vor den Sommerferien gibt es am Gotthard Stau.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-149',
+      ausdruck: 'Älplermagronen',
+      hochdeutsch: 'Älplermagronen',
+      bedeutung: '„Älplermagronen" sind das schweizerische Bauern-Nationalgericht — gekochte Hörnli (Pasta) und Kartoffeln, vermischt mit Sahne und Bergkäse (oft Sbrinz oder Greyerzer), getoppt mit Röstzwiebeln. Beilage: hausgemachtes Apfelmus. Bauerngericht aus der Resteküche der Alphütten — günstig, sättigend, simpel. Hauptmahlzeit in Skigebieten und Berghütten. „Magronen" mit Apfelmus klingt komisch, schmeckt fantastisch. Schweizer Comfort Food. Wintersportler-Liebling.',
+      beispiel: 'I de Bärghütte git\'s di beschti Älplermagrone.',
+      beispiel_hd: 'In den Berghütten gibt es die besten Älplermagronen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-150',
+      ausdruck: 'Direkti Demokratie',
+      hochdeutsch: 'Direkte Demokratie',
+      bedeutung: 'Die „Direkti Demokratie" ist das Schweizer Politik-Kernmerkmal — Bürger entscheiden in Volksabstimmungen direkt über Sachfragen (4x pro Jahr). Volksinitiativen (100\'000 Unterschriften) und Referenden (50\'000) erlauben Bürgereinfluss auf Verfassungs- und Gesetzesebene. Weltweit einzigartig in dieser Intensität — über 600 Abstimmungen seit 1848. Gemeindeebene oft direkt über Versammlung. Trotz Langsamkeit Stabilitätsfaktor. Schweizer Politikidentität: nicht Repräsentation, sondern Mitbestimmung. „Souverän" ist das Volk.',
+      beispiel: 'I de Schwiz wird über alles abgschtimmt.',
+      beispiel_hd: 'In der Schweiz wird über alles abgestimmt.',
+      kategorie: 'arbeit'
     }
   ]
 };
