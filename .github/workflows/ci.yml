@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate JS + HTML + JSON
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Parse-check all ES modules with node --check
+        run: |
+          fail=0
+          while IFS= read -r -d '' f; do
+            if ! node --check "$f"; then
+              echo "::error file=$f::Syntax error"
+              fail=1
+            fi
+          done < <(find data js -name '*.js' -print0)
+          exit $fail
+
+      - name: Validate JSON files
+        run: |
+          fail=0
+          while IFS= read -r -d '' f; do
+            if ! node -e "JSON.parse(require('fs').readFileSync('$f','utf-8'))"; then
+              echo "::error file=$f::Invalid JSON"
+              fail=1
+            fi
+          done < <(find . -name '*.json' -not -path './node_modules/*' -print0)
+          exit $fail
+
+      - name: HTML syntax check (html-validate)
+        run: npx --yes html-validate index.html
+
+      - name: Static-serve smoke test
+        run: |
+          npx --yes http-server . -p 5173 &
+          server_pid=$!
+          sleep 3
+          # Index must serve a 200 with the expected title
+          curl -fsS http://localhost:5173/ | grep -q 'Dialekto' || (echo "Index missing 'Dialekto'"; exit 1)
+          # data/dialekte.js must serve a 200 (no 404 from broken paths)
+          curl -fsS http://localhost:5173/data/dialekte.js > /dev/null
+          kill $server_pid
