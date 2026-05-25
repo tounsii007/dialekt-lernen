@@ -3133,6 +3133,276 @@ export default {
       beispiel: 'Die Berliner Klassiker — von Currywurst bis Mauerpark.',
       beispiel_hd: 'Die Berliner Klassiker — von Currywurst bis Mauerpark.',
       kategorie: 'feiern'
+    },
+    {
+      id: 'b-351',
+      ausdruck: 'Digga',
+      hochdeutsch: 'Kumpel / Alter (Berliner)',
+      bedeutung: '„Digga" ist in Berlin universelle Anrede der jüngeren Generation — vor allem in Kreuzberg, Neukölln, Wedding. „Was geht, Digga?" als Standard-Begrüßung. Stammt aus Hamburg, in Berlin etabliert. Junge Berliner verwenden es als universelle Anrede. Im Hip-Hop und Multi-Kulti-Szene zentral. Symbol für moderne berliner Jugendsprache. Wird mit Atze, Bro, Lan und Kollege synonym verwendet.',
+      beispiel: 'Was machst du heut, Digga?',
+      beispiel_hd: 'Was machst du heute, Kumpel?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-352',
+      ausdruck: 'Lan',
+      hochdeutsch: 'Mann / Junge (türkisch)',
+      bedeutung: '„Lan" ist berliner-multikulturelle Anrede aus dem türkischen — bedeutet wörtlich „Mann". In Kreuzberg, Neukölln und Wedding durch türkisch-stämmige Berliner verbreitet. „Was geht, Lan?" als Standard-Anrede. Wird auch von deutschen Berlinern verwendet. Drückt Vertrautheit und gleiche Augenhöhe aus. Symbol für berliner multikulturelle Integration in der Sprache. Junge Berliner ohne Migrationshintergrund finden den Begriff cool.',
+      beispiel: 'Was läuft, Lan? Kommst mit?',
+      beispiel_hd: 'Was läuft, Mann? Kommst mit?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-353',
+      ausdruck: 'Bro',
+      hochdeutsch: 'Bruder / Kumpel',
+      bedeutung: '„Bro" ist berliner-amerikanische Anrede — Kurzform von „Brother", durch Hip-Hop in Berlin etabliert. „Was geht, Bro?" als Standard-Anrede unter jüngeren Männern. Drückt brüderliche Vertrautheit aus. In Kreuzberg-Hipster-Szene und Multi-Kulti-Jugend verbreitet. Vergleichbar mit Digga, Atze, Lan, Kollege. Symbol für berliner Anglizismen-Integration. Wird auch ironisch verwendet, vor allem von älteren Berlinern.',
+      beispiel: 'Was machst du, Bro?',
+      beispiel_hd: 'Was machst du, Bruder?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-354',
+      ausdruck: 'Krass',
+      hochdeutsch: 'krass / heftig',
+      bedeutung: '„Krass" ist universeller berliner Jugend-Verstärker — „Det is\' krass!" für „Das ist heftig/extrem". Kann positiv (super) oder negativ (schlimm) sein, je nach Tonfall. „Krass derbe" als Doppel-Verstärkung. Mütter klagen: „Kinder sagen nur noch krass!". Im Berliner Jugendsprache etabliert. Symbol für moderne berliner Bewertungs-Sprache. Junge Berliner verwenden es täglich. Auch in Werbung und Medien omnipräsent.',
+      beispiel: 'Det Konzert war krass!',
+      beispiel_hd: 'Das Konzert war heftig (super)!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-355',
+      ausdruck: 'Mega',
+      hochdeutsch: 'mega / super',
+      bedeutung: '„Mega" ist berliner Jugend-Verstärker — „Det is\' mega!" für „Das ist super/groß/beeindruckend". Stammt von griechisch „megas" (groß). In Werbung etabliert („Mega-Sale"). Berliner Jugendliche verwenden es als universelle positive Bewertung. „Mega geil", „Mega Bombe", „Mega knorke" als Steigerungs-Variationen. Symbol für moderne berliner positive Sprache. Vergleichbar mit „voll", „krass", „voll geil".',
+      beispiel: 'Det neue Lokal is\' mega!',
+      beispiel_hd: 'Das neue Lokal ist super!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-356',
+      ausdruck: 'Wallah',
+      hochdeutsch: 'wirklich / ehrlich (arabisch)',
+      bedeutung: '„Wallah" ist berliner-multikulturelle Beteuerung — stammt vom arabischen „wallahi" (bei Gott). In Kreuzberg, Neukölln und Wedding durch arabisch-stämmige Berliner verbreitet. „Wallah, det stimmt!" für „Wirklich, das stimmt!". Drückt Wahrheit und Beteuerung aus. Wird auch von deutschen Berlinern verwendet. Symbol für berliner multikulturelle Sprache. Manchmal ironisch verwendet. „Wallah, Lan!" als doppelte Verstärkung.',
+      beispiel: 'Wallah, det is\' Wahrheit!',
+      beispiel_hd: 'Wirklich, das ist Wahrheit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-357',
+      ausdruck: 'Yallah',
+      hochdeutsch: 'Los geht\'s / komm (arabisch)',
+      bedeutung: '„Yallah" ist berliner-multikulturelle Aufforderung aus dem Arabischen — bedeutet „Los!", „Komm!", „Vorwärts!". In Berliner Multi-Kulti-Jugend verbreitet. „Yallah, Atze!" als Aufruf zum Aufbruch. Drückt Energie und Aktion aus. Wird in Kreuzberg, Neukölln und Wedding täglich verwendet. Symbol für berliner multikulturelle Integration. Auch deutsche Berliner verwenden es. „Yallah!" als Schlachtruf zum Loslegen.',
+      beispiel: 'Yallah, Lan! Mer müssen los!',
+      beispiel_hd: 'Los, Mann! Wir müssen los!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-358',
+      ausdruck: 'Schwitzen',
+      hochdeutsch: 'sich anstrengen / nervös sein',
+      bedeutung: '„Schwitzen" ist berliner-jugendsprachlich für „sich anstrengen, nervös sein, unter Druck stehen". „Ick schwitze gerade!" für „ich bin gerade unter Druck". Stammt von der körperlichen Reaktion auf Stress. Im Berliner Hip-Hop und Schul-Slang etabliert. „Lass mer mal schwitzen!" für „Lass uns ackern!". Symbol für moderne berliner Stress-Sprache. Vergleichbar mit „lecker schwitzen" — sich richtig anstrengen.',
+      beispiel: 'Vor der Klassenarbeit schwitz ich krass!',
+      beispiel_hd: 'Vor der Klassenarbeit bin ich krass nervös!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-359',
+      ausdruck: 'Rein in die Vollen',
+      hochdeutsch: 'sich voll einbringen',
+      bedeutung: '„Rein in die Vollen!" — Berliner Aufruf zur vollen Aktivität. Stammt von „in die Vollen gehen" (alles geben). „Mer müssen rein in die Vollen!" als Berliner Motivation. Drückt Berliner Pragmatismus und Tatendrang aus. Wird im Sport, im Job, bei Plänen verwendet. „Vollgas!" als Synonym. Symbol für berliner Aktivitäts-Sprache. Im Gegensatz zu süddeutscher Bedachtsamkeit mehr Entschlossenheit.',
+      beispiel: 'Heut Abend gehen wir rein in die Vollen!',
+      beispiel_hd: 'Heute Abend geben wir alles!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-360',
+      ausdruck: 'Voll der Berliner',
+      hochdeutsch: 'echter Berliner',
+      bedeutung: '„Voll der Berliner!" ist berliner Selbstcharakterisierung — drückt berlinische Identität mit modernem Selbstbewusstsein aus. „Ick bin halt voll der Berliner!" als ironische Verstärkung. Verbindet jugendsprachliche „voll der X"-Konstruktion mit traditioneller Berlin-Identität. Symbol für moderne berliner Selbstwahrnehmung — urban, multikulturell, selbstbewusst. Auch in Werbung und auf T-Shirts verwendet.',
+      beispiel: 'Ick bin voll der Berliner — Späti muss sein!',
+      beispiel_hd: 'Ich bin voll der Berliner — Spätkauf muss sein!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-361',
+      ausdruck: 'Boah ey',
+      hochdeutsch: 'Wow / Boah ey',
+      bedeutung: '„Boah ey" ist berliner-jugendsprachlicher Ausruf der Verwunderung — „Boah ey, det is\' krass!". Doppelung „Boah" + „ey" als Verstärkung. Drückt überraschtes Anerkennen oder Empörung aus. Im Berliner Jugendsprache omnipräsent. Mütter sagen: „Sag nicht ständig Boah ey!". Trotzdem im Wortschatz universell. Symbol für moderne berliner emotionale Sprache. Auch in Sat.1-Sendungen verwendet.',
+      beispiel: 'Boah ey, det is\' ja unglaublich!',
+      beispiel_hd: 'Boah ey, das ist ja unglaublich!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-362',
+      ausdruck: 'Chillen',
+      hochdeutsch: 'entspannen',
+      bedeutung: '„Chillen" ist berliner-jugendsprachlicher Anglizismus für „entspannen". „Mer chillen heut Abend am Görli" für „wir entspannen heute Abend am Görlitzer Park". Drückt berlinische Lässigkeit aus. Mütter klagen: „Was heißt chillen? Wir sagen entspannen!". Trotzdem im jugendlichen Sprachgebrauch universell. Berliner integrieren Anglizismen in den Dialekt. Symbol für moderne berliner Sprachmischung. Mit „chillig" auch adjektivisch.',
+      beispiel: 'Lass uns am Mauerpark chillen.',
+      beispiel_hd: 'Lass uns am Mauerpark entspannen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-363',
+      ausdruck: 'Penner',
+      hochdeutsch: 'Penner / Obdachloser',
+      bedeutung: 'Der „Penner" ist berliner-jugendsprachliche derbe Bezeichnung für Obdachlose oder vernachlässigte Menschen — drückt Berliner Direktheit aus. Wird vor allem in Berlin-S-Bahn und U-Bahn verwendet. Auch metaphorisch: „Du Penner!" als Schimpfwort für jemanden, der schlampig ist. Klingt derb, im Berliner Wortgebrauch nicht extrem beleidigend. Symbol für berliner Direktheit. Mütter mahnen Kinder: „So spricht man nicht!".',
+      beispiel: 'Am Bahnhof sitzen viele Penner.',
+      beispiel_hd: 'Am Bahnhof sitzen viele Obdachlose.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-364',
+      ausdruck: 'Geht ab',
+      hochdeutsch: 'geht los / startet',
+      bedeutung: '„Geht ab" ist berliner-jugendsprachlich für „etwas geht los, beginnt mit voller Power". „Heut Abend geht ab im Berghain!" für „heute Abend ist Party!". Drückt Energie und Erwartung aus. Im berliner Sport- und Party-Kontext verbreitet. Mütter verstehen es als Warnung: das Kind plant etwas Lautes. Symbol für moderne berliner Aktions-Sprache. Vergleichbar mit „Vollgas geben" oder „Vollen Einsatz zeigen".',
+      beispiel: 'Im Berghain geht heut Abend mega ab!',
+      beispiel_hd: 'Im Berghain geht heute Abend mega ab!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-365',
+      ausdruck: 'Was geht ab?',
+      hochdeutsch: 'Was läuft? / Was ist los?',
+      bedeutung: '„Was geht ab?" ist berliner-jugendsprachliche Standard-Begrüßung — vergleichbar mit englischem „What\'s up?". „Was geht ab, Digga?" als Eingangsfrage. Drückt lockere Interesse aus. Im Gegensatz zur älteren „Wie geht\'s?" lockerer und weniger förmlich. Berliner Jugend verwendet es täglich. Im Hip-Hop und Multi-Kulti-Szene zentral. Symbol für moderne berliner Anrede. Antwort meist: „Nix", „Voll geil" oder „Alles fett".',
+      beispiel: 'Was geht ab, Atze? Wat machste heute?',
+      beispiel_hd: 'Was läuft, Bruder? Was machst du heute?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'b-366',
+      ausdruck: 'Sahne',
+      hochdeutsch: 'super / klasse',
+      bedeutung: '„Sahne" ist berliner-jugendsprachliche Bewertung für „klasse, super". „Voll Sahne!" als Verstärkung. Anders als die ältere Verwendung (Milchprodukt) heute Synonym für „toll". Stammt vermutlich von „Sahnehäubchen" (Sahne als Krönung). Im Berlin-Slang etabliert. „Sahne-Tor" für ein perfektes Tor (Hertha-Fan-Sprache). Berliner Sprachfreude — alltägliche Wörter werden zu Bewertungen. Symbol für moderne berliner Verstärkung.',
+      beispiel: 'Voll Sahne, der neue Stürmer von Hertha!',
+      beispiel_hd: 'Voll klasse, der neue Stürmer von Hertha!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-367',
+      ausdruck: 'Asphalt',
+      hochdeutsch: 'Straße / Stadt-Atmosphäre',
+      bedeutung: '„Asphalt" ist berliner-jugendsprachliche Bezeichnung für das urbane Berliner Leben — Straße, Stadt, raue Atmosphäre. „Asphalt-Cowboys" für berliner Stadtbewohner. „Berliner Asphalt" als Symbol für urbane Identität. Stammt vom Material der Straßen. Drückt Berliner Stadt-Stolz aus. Im Gegensatz zu „Land" oder „Suburbia". Symbol für berliner Urbanität. Junge Berliner identifizieren sich mit „Asphalt-Berlin" gegenüber „Grünes Berlin".',
+      beispiel: 'Ick bin n Asphalt-Kind, mer geh nie aufs Land!',
+      beispiel_hd: 'Ich bin ein Asphalt-Kind, ich gehe nie aufs Land!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-368',
+      ausdruck: 'Hertha',
+      hochdeutsch: 'Hertha BSC (Fußballverein)',
+      bedeutung: '„Hertha" ist Berlins traditioneller Fußballverein — Hertha Berliner Sport-Club, gegründet 1892. Spielt im Olympiastadion (1936). „Ha Ho He, Hertha BSC!" als Fan-Schlachtruf. Blau-Weiß als Vereinsfarben. Hertha-Fans als „Ostkurve" bekannt. In Berlin spaltet das Stadion: Hertha oder Union Berlin. „Hertha forever!" als Bekenntnis. Symbol für berliner Fußball-Identität. Junge Berliner sind oft Hertha-Fans oder Union-Fans — selten beides.',
+      beispiel: 'Ha Ho He, Hertha BSC!',
+      beispiel_hd: 'Ha Ho He, Hertha BSC!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-369',
+      ausdruck: 'Union',
+      hochdeutsch: 'Union Berlin (Fußballverein)',
+      bedeutung: 'Der „1. FC Union Berlin" ist Berlins zweiter Fußballverein — gegründet 1966 in Köpenick. „Eisern Union!" als Fan-Schlachtruf. „Alte Försterei" als Stadium (mit Schweißarbeit der Fans erbaut). Rot-Weiß als Farben. Union-Fans gelten als die treuesten Deutschlands. Im Gegensatz zu Hertha mehr Lokal-Verbundenheit. Symbol für berliner Köpenick-Identität und Fan-Kultur. „Eisern" als Identitätsbegriff.',
+      beispiel: 'Eisern Union! Köpenick lebt!',
+      beispiel_hd: 'Eisern Union! Köpenick lebt!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-370',
+      ausdruck: 'Hertha vs Union',
+      hochdeutsch: 'Berlin-Derby',
+      bedeutung: 'Das „Berlin-Derby" zwischen Hertha BSC und 1. FC Union Berlin ist DAS Fußball-Ereignis Berlins. „Hertha vs Union" spaltet die Stadt — West-Berlin (Hertha) vs Ost-Berlin (Union). Hertha aus Charlottenburg, Union aus Köpenick. Spiele oft mit Atmosphäre von Vereinen aus den 70ern. Symbol für berliner Fußball-Spaltung und Lokalrivalitäten. „Mein Verein, dein Verein, nur ein Verein!" als Berliner Fan-Witz.',
+      beispiel: 'Berlin-Derby — Hertha vs Union, voll geil!',
+      beispiel_hd: 'Berlin-Derby — Hertha vs Union, voll geil!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-371',
+      ausdruck: 'Tegel',
+      hochdeutsch: 'Tegel (ehemaliger Berliner Flughafen)',
+      bedeutung: '„Tegel" — Flughafen Berlin-Tegel — war von 1948 bis 2020 in Betrieb. „TXL" als IATA-Code. Klein, sechseckig, dezentral. Berliner liebten ihn für seine kurze Wege („Direkt vom Auto zum Flugzeug"). Nach Eröffnung des BER (Berlin Brandenburg Airport) 2020 geschlossen. Heute Konversionsprojekt mit Wohnungen und Hochschule. Symbol für berliner Verkehrs-Wandel. Tegel-Nostalgie weit verbreitet bei älteren Berlinern.',
+      beispiel: 'Vom Tegel waren wir in 15 Minuten am Gate.',
+      beispiel_hd: 'Vom Tegel waren wir in 15 Minuten am Gate.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-372',
+      ausdruck: 'BER',
+      hochdeutsch: 'Berlin Brandenburg Airport',
+      bedeutung: 'Der „BER" — Berlin Brandenburg Airport „Willy Brandt" — ist seit 2020 in Betrieb, sollte 2011 eröffnen. Berlin-Klassiker für Bau-Verzögerung und Skandale. 7 Milliarden Euro statt 1,2 Milliarden geplant. „BER" als Synonym für „endlose Verzögerung" in der deutschen Sprache. Berliner Pendant-Witz: „Wann öffnet der BER? — Wenn die Erde kalt geworden ist!". Symbol für berliner Bau-Realität.',
+      beispiel: 'Der BER hat zwölf Jahre auf sich warten lassen.',
+      beispiel_hd: 'Der BER hat zwölf Jahre auf sich warten lassen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-373',
+      ausdruck: 'Berlinale',
+      hochdeutsch: 'Berlinale (Filmfestival)',
+      bedeutung: 'Die „Berlinale" ist Berlins großes Filmfestival — eines der drei A-Festivals der Welt (mit Cannes und Venedig). Jährlich im Februar. „Goldener Bär" als Hauptpreis. Roter Teppich am Potsdamer Platz. Internationale Filmstars in Berlin. Symbol für berliner Kultur und Film-Tradition. Berliner sind stolz: „Mir habbe die Berlinale!". Touristen-Magnet im Februar. Berlinale-Goers als Berliner Subkultur.',
+      beispiel: 'Bei der Berlinale sieht man immer Hollywood-Stars.',
+      beispiel_hd: 'Bei der Berlinale sieht man immer Hollywood-Stars.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-374',
+      ausdruck: 'Loveparade',
+      hochdeutsch: 'Loveparade (legendäre Techno-Parade)',
+      bedeutung: 'Die „Loveparade" war Berlins legendäre Techno-Parade — 1989 von Dr. Motte ins Leben gerufen, lief auf der Kurfürstenstraße / Tiergarten / Brandenburger Tor. Höhepunkt 1999 mit 1,5 Millionen Teilnehmern. 2010 katastrophale Massenpanik in Duisburg, danach abgesagt. Heute Techno-Geschichte. Berliner Techno-Identität entstanden hier. Symbol für berliner Underground-Tradition. „Loveparade-Generation" als kulturelle Selbstbezeichnung.',
+      beispiel: 'D\'Loveparade war Berlins größtes Techno-Fest.',
+      beispiel_hd: 'Die Loveparade war Berlins größtes Techno-Fest.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-375',
+      ausdruck: 'Techno',
+      hochdeutsch: 'Berliner Techno-Szene',
+      bedeutung: 'Der „Techno" ist Berlins musikalisch-kulturelle Identität — seit den 1990er-Jahren weltweit führend. Berghain, Tresor, KitKat, Sisyphos als legendäre Clubs. „Berliner Techno-Sound" als globale Marke. Wochenend-Partys von Freitag bis Montag normal. Techno-Touristen aus aller Welt. Symbol für berliner Underground und globale Musikkultur. Berliner Techno-Identität: hart, dunkel, intellektuell. Im Gegensatz zu Trance oder Electronic Dance Music.',
+      beispiel: 'Berliner Techno is\' weltweit Kultur.',
+      beispiel_hd: 'Berliner Techno ist weltweit Kultur.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-376',
+      ausdruck: 'Berliner Mutter',
+      hochdeutsch: 'klassische Berliner Mutter',
+      bedeutung: 'Die „Berliner Mutter" ist klassische Berliner Frauenfigur — direkt, fürsorglich, mit Schnauze und Liebe. „Berliner Mutter-Typ" als kulturelles Klischee. „Komm mal her, mei Jung!" als typische Aufforderung. Verteidigt ihre Kinder mit Berliner Direktheit. Symbol für berliner Familienmuster. Wird in TV-Serien und Berliner Kultur oft idealisiert. „Berliner Mutter forever!" als Bekenntnis. Klassische Berliner Sozialfigur.',
+      beispiel: 'Mei Berliner Mutter sagt immer, wat sie denkt.',
+      beispiel_hd: 'Meine Berliner Mutter sagt immer, was sie denkt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-377',
+      ausdruck: 'Kollege',
+      hochdeutsch: 'Kollege / Freund',
+      bedeutung: '„Kollege" ist berliner-jugendsprachliche Anrede für engen Freund — vergleichbar mit Digga, Atze, Lan, Bro. „Was geht, Kollege?" als Begrüßung. Stammt vom Arbeitsumfeld, aber semantisch erweitert. In Berliner Jugendsprache als universelle männliche Anrede. „Mei Kollege" für „mein Bester". Im sportlichen und kulturellen Kontext verbreitet. Symbol für berliner Anredevielfalt. Kann auch ironisch gemeint sein, z.B. bei Diskussionen.',
+      beispiel: 'Hey Kollege, kommst du heut Abend?',
+      beispiel_hd: 'Hey Kollege, kommst du heute Abend?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-378',
+      ausdruck: 'Smombie',
+      hochdeutsch: 'Smartphone-Zombie',
+      bedeutung: 'Der „Smombie" ist berliner-jugendsprachlich für „Smartphone-Zombie" — jemand, der ständig aufs Handy schaut. Wort-Bildung aus „Smartphone" + „Zombie". 2015 Jugendwort des Jahres. „Berliner Smombies" als negative Charakterisierung von Smartphone-süchtigen Berlinern. Vor allem an Berliner Bahnhöfen, im Café, beim Gehen. Symbol für moderne Smartphone-Kritik. Mütter mahnen Kinder: „Sei kein Smombie!".',
+      beispiel: 'Diese Smombies in der U-Bahn merken nix mehr!',
+      beispiel_hd: 'Diese Smombies in der U-Bahn merken nichts mehr!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-379',
+      ausdruck: 'Berlin for life',
+      hochdeutsch: 'Berlin ein Leben lang',
+      bedeutung: '„Berlin for life" ist berliner-jugendsprachlicher Identitäts-Slogan — Berlin-Treue mit englischer Sprach-Mischung. Vor allem auf T-Shirts, in Tattoos und in Hertha/Union-Fan-Kreisen. „Berlin for life, Atze!" als Bekenntnis. Drückt unzerbrechliche berliner Loyalität aus. Symbol für moderne berliner Identität. Wird auch als Souvenir verkauft. Berlin-Stolz neuer Generation. Im Gegensatz zu „Berliner Pflanze" mehr international klingend.',
+      beispiel: 'Berlin for life, auch wenn d\'Mieten steigen!',
+      beispiel_hd: 'Berlin ein Leben lang, auch wenn die Mieten steigen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-380',
+      ausdruck: 'Berliner Hauptstadt-Schnauze',
+      hochdeutsch: 'Berliner Schnauze als Hauptstadt-Sprache',
+      bedeutung: 'Die „Berliner Hauptstadt-Schnauze" ist Berlin-Spezifika — die berlinerische Direktheit, die in der politischen Hauptstadt zur „Hauptstadt-Sprache" wird. „In Berlin sagt man, was man denkt!" als Selbstverständnis. Politische Reden, Talkshows und Medien werden oft als „Hauptstadt-Schnauze" wahrgenommen. Symbol für Berlin als Polit-Zentrum und Berliner Identität. Berliner Direktheit als deutsche Hauptstadt-Eigenschaft. Touristen erleben sie täglich.',
+      beispiel: 'Berliner Hauptstadt-Schnauze — ehrlich und direkt!',
+      beispiel_hd: 'Berliner Hauptstadt-Schnauze — ehrlich und direkt!',
+      kategorie: 'redensart'
     }
   ]
 };
