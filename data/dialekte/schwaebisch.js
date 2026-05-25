@@ -419,6 +419,231 @@ export default {
       beispiel: 'Trinkscht noch a Viertele mit mir?',
       beispiel_hd: 'Trinkst du noch ein Viertel Wein mit mir?',
       kategorie: 'essen'
+    },
+    {
+      id: 'sw-051',
+      ausdruck: 'VfB Stuttgart',
+      hochdeutsch: 'VfB Stuttgart (Fußballclub)',
+      bedeutung: 'Der VfB Stuttgart — gegründet 1893 — ist Schwabens größter Fußballverein. Fünfmaliger deutscher Meister, dreimaliger Pokalsieger. Spielort: die MHPArena (ehemals Mercedes-Benz Arena) in Bad Cannstatt. Berühmte Spieler: Jürgen Klinsmann, Hansi Müller, Mario Gomez, heute Serhou Guirassy. Vereinsfarben rot-weiß. „Hier in der Region steht der VfB ganz oben" — schwäbische Sportreligion.',
+      beispiel: 'Wenn der VfB spielt, do is mei Sonntag gerettet.',
+      beispiel_hd: 'Wenn der VfB spielt, ist mein Sonntag gerettet.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'sw-052',
+      ausdruck: 'Daimler',
+      hochdeutsch: 'Daimler (Mercedes-Benz)',
+      bedeutung: 'Daimler — heute Mercedes-Benz Group — ist Stuttgarts wichtigster Arbeitgeber und Symbol schwäbischen Wirtschaftserfolgs. 1886 erfand Gottlieb Daimler in Cannstatt das erste Automobil. Das Stuttgarter Werk Untertürkheim ist Stammwerk. „Beim Daimler arbeiten" ist für Schwaben ein Lebenslang-Statussymbol. Der dreizackige Stern ist Weltmarke. Mercedes-Limousinen und LKWs sind schwäbische Identität auf Rädern.',
+      beispiel: 'Mei Vater hat 40 Jahr beim Daimler gschafft — und is stolz drauf.',
+      beispiel_hd: 'Mein Vater hat 40 Jahre beim Daimler gearbeitet — und ist stolz darauf.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-053',
+      ausdruck: 'Bosch',
+      hochdeutsch: 'Robert Bosch GmbH',
+      bedeutung: 'Bosch ist nach Daimler Stuttgarts zweitwichtigster Konzern — gegründet 1886 von Robert Bosch. Bekannt für Zündkerzen, Haushaltsgeräte, Werkzeuge und Auto-Zulieferung. Bosch gehört zu 92% der Robert Bosch Stiftung — eine schwäbische Besonderheit, die Bosch zu einem eher gemeinwohlorientierten Konzern macht. Die Bosch-Zentrale ist in Gerlingen bei Stuttgart. Schwäbisches Tüftler-Erbe in Reinkultur.',
+      beispiel: 'I hab a Bosch-Bohrmaschine — die hält ewig.',
+      beispiel_hd: 'Ich habe eine Bosch-Bohrmaschine — die hält ewig.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-054',
+      ausdruck: 'Porsche',
+      hochdeutsch: 'Porsche (Stuttgarter Sportwagenhersteller)',
+      bedeutung: 'Porsche ist Stuttgarts dritter großer Automobilkonzern — gegründet 1931 von Ferdinand Porsche. Das Werk in Zuffenhausen produziert die berühmten 911er. Das Porsche-Museum in Zuffenhausen mit seiner spektakulären Architektur ist ein Tourismus-Magnet. Wer „beim Porsche arbeitet", hat besondere Anerkennung. Der 911 ist Symbol deutsch-schwäbischer Ingenieurskunst.',
+      beispiel: 'En Porsche fahre? Des isch der Traum von viele Schwoba.',
+      beispiel_hd: 'Einen Porsche fahren? Das ist der Traum von vielen Schwaben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-055',
+      ausdruck: 'Stuttgart 21',
+      hochdeutsch: 'Stuttgart 21 (Großbahnhof-Projekt)',
+      bedeutung: 'Stuttgart 21 ist Deutschlands kontroversestes Bahnprojekt — der oberirdische Stuttgarter Hauptbahnhof soll in einen Tiefbahnhof umgebaut werden. Geplant seit 1994, ursprünglich 2,5 Milliarden Euro veranschlagt, mittlerweile bei über 11 Milliarden. Der „Schwarze Donnerstag" 2010 mit Polizeieinsatz gegen Demonstranten in der Stuttgarter Schlossgarten ist Symbol des Bürgerwiderstands. Eröffnung wiederholt verschoben.',
+      beispiel: 'S21 wird halt nie fertig — typisch Stuttgart.',
+      beispiel_hd: 'Stuttgart 21 wird halt nie fertig — typisch Stuttgart.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-056',
+      ausdruck: 'Cannstatter Volksfest',
+      hochdeutsch: 'Stuttgarter Volksfest (Wasen)',
+      bedeutung: 'Das Cannstatter Volksfest (ugs. „die Wasen") ist Schwabens Antwort auf das Oktoberfest — das zweitgrößte Bierfest Deutschlands mit über 4 Millionen Besuchern jährlich. Es findet seit 1818 statt, ursprünglich als Erntedankfest. Heute mit Festzelten, Fahrgeschäften und der berühmten 26-Meter-hohen Fruchtsäule. Die Schwaben gehen in Lederhose und Dirndl — aber: Krug-Maß heißt hier „Krug", nicht „Maß"!',
+      beispiel: 'Aufs Volksfest? Selbstverständlich gehe i auf de Wasen!',
+      beispiel_hd: 'Aufs Volksfest? Selbstverständlich gehe ich auf den Wasen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-057',
+      ausdruck: 'Schwäbische Alb',
+      hochdeutsch: 'Schwäbische Alb (Mittelgebirge)',
+      bedeutung: 'Die Schwäbische Alb ist ein Mittelgebirge im Süden Baden-Württembergs, das Geologen als „Schwäbisches Karst-Hochland" feiern. Geprägt von Kalkstein, Höhlen, Schäferei und uralten Wacholderheiden. Auf der Alb stehen mittelalterliche Burgen wie Hohenzollern, Lichtenstein, Teck. Das UNESCO-Welterbe der ältesten Kunst (Vogelherd-Höhle, Hohle Fels) liegt hier. Die Hohenzollern-Burg gilt als „schönste Burg Deutschlands".',
+      beispiel: 'Uf der Alb gibt\'s die schönschdr Aussicht über s\'ganze Schwabaland.',
+      beispiel_hd: 'Auf der Alb gibt es die schönste Aussicht über das ganze Schwabenland.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-058',
+      ausdruck: 'Schiller',
+      hochdeutsch: 'Friedrich Schiller (Dichter)',
+      bedeutung: 'Friedrich Schiller (1759–1805) ist Schwabens berühmtester Dichter — geboren in Marbach am Neckar, gestorben in Weimar. „Die Räuber", „Wilhelm Tell", „Don Carlos", „Maria Stuart" — Klassiker der deutschen Literatur. Mit Goethe begründete er die Weimarer Klassik. In Marbach steht das Deutsche Literaturarchiv mit Schillers handschriftlichem Nachlass. Schwaben sind stolz auf ihren Dichter — wenn auch Goethe später populärer wurde.',
+      beispiel: 'Schiller war en Schwob — viele wissen des net.',
+      beispiel_hd: 'Schiller war ein Schwabe — viele wissen das nicht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-059',
+      ausdruck: 'Hegel',
+      hochdeutsch: 'Georg Wilhelm Friedrich Hegel (Philosoph)',
+      bedeutung: 'Georg Wilhelm Friedrich Hegel (1770–1831) — geboren in Stuttgart — ist einer der einflussreichsten Philosophen aller Zeiten. Seine „Phänomenologie des Geistes", „Wissenschaft der Logik" und die Rechtsphilosophie haben die Philosophie bis heute geprägt. Hegel besuchte gemeinsam mit Hölderlin und Schelling das berühmte „Tübinger Stift". Die schwäbische Bildungstradition mit ihren Stipendiatenseminaren brachte Weltphilosophen hervor.',
+      beispiel: 'Hegel hat in Tübingen sei Philosophie geboren — mer sin stolz drauf.',
+      beispiel_hd: 'Hegel hat in Tübingen seine Philosophie geboren — wir sind stolz darauf.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-060',
+      ausdruck: 'Hölderlin',
+      hochdeutsch: 'Friedrich Hölderlin (Dichter)',
+      bedeutung: 'Friedrich Hölderlin (1770–1843) ist Schwabens lyrischer Dichter — geboren in Lauffen am Neckar, gestorben in Tübingen. Seine Hymnen, Oden und der Roman „Hyperion" prägen die deutsche Lyrik. Die letzten 36 Jahre seines Lebens verbrachte er im „Hölderlin-Turm" am Neckar, geistig verwirrt aber dichtend. Der Turm ist heute Hölderlin-Museum und Tübingens Wahrzeichen. „Wer dem Wind und der See nicht trauet ..."',
+      beispiel: 'Im Hölderlinturm in Tübingen kann mer den Dichter ahnen.',
+      beispiel_hd: 'Im Hölderlinturm in Tübingen kann man den Dichter ahnen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-061',
+      ausdruck: 'Tübingen',
+      hochdeutsch: 'Tübingen (Universitätsstadt)',
+      bedeutung: 'Tübingen ist Schwabens Universitätsstadt — gegründet 1477. Die Eberhard Karls Universität Tübingen ist eine der ältesten Universitäten Europas. Die Altstadt mit dem Hölderlinturm, dem Schloss Hohentübingen und der Stiftskirche ist Weltkulturerbe-würdig. Tübingen gilt als linksalternativ — von Boris Palmer (Grüne) regiert. Stocherkahn-Touren auf dem Neckar sind touristisches Muss.',
+      beispiel: 'In Tübingen do leuchtet de Frühling übers Wassr.',
+      beispiel_hd: 'In Tübingen leuchtet der Frühling übers Wasser.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-062',
+      ausdruck: 'Hohenzollern',
+      hochdeutsch: 'Burg Hohenzollern',
+      bedeutung: 'Die Burg Hohenzollern bei Hechingen ist eine der bekanntesten deutschen Burgen — Stammsitz der Hohenzollern-Dynastie, die später König von Preußen und deutsche Kaiser wurden. Im 19. Jahrhundert in seiner heutigen Form als „Märchenburg" wieder aufgebaut. Steht majestätisch auf einem 855 m hohen Bergkegel und ist von weitem sichtbar. Eines der meistphotographierten Schlösser Deutschlands.',
+      beispiel: 'Die Burg Hohenzollern leuchtet aufm Berg — sehr beeindruckend.',
+      beispiel_hd: 'Die Burg Hohenzollern leuchtet auf dem Berg — sehr beeindruckend.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-063',
+      ausdruck: 'Knöpfle',
+      hochdeutsch: 'Knöpfle (kleine Spätzle)',
+      bedeutung: '„Knöpfle" sind die kleineren, runden Geschwister der Spätzle — kurze, knopf-ähnliche Teignocken aus Mehl, Eiern und Wasser. Während Spätzle länglich sind, sind Knöpfle eher rund. Sie werden meist als „Käsknöpfle" (mit Käse überbacken und Röstzwiebeln) serviert. Eine alemannische und schwäbische Spezialität. In Allgäu und Vorarlberg ist Käsknöpfle Nationalgericht.',
+      beispiel: 'Käsknöpfle mit Röstzwiebel — des isch a Festmahl!',
+      beispiel_hd: 'Käsespätzle mit Röstzwiebeln — das ist ein Festmahl!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-064',
+      ausdruck: 'Schwäbischer Gruß',
+      hochdeutsch: 'Götz-Zitat („Leck mi am Arsch!")',
+      bedeutung: 'Der „Schwäbische Gruß" — entstanden aus Goethes Götz von Berlichingen — ist die berühmteste schwäbische Beleidigung: „Leck mi am Arsch!" oder ausgeführt: „Er aber, sag\'s ihm, er kann mich am Arsch lecken!" Eigentlich derb, hat es im schwäbischen Sprachgebrauch eine gewisse Hofform angenommen — fast eine Vertraulichkeitsfloskel zwischen Freunden. Niemals ernst gemeint, aber immer kraftvoll.',
+      beispiel: 'Wenn dich a Schwob „leck mi am Arsch" sait, isch des fast schon a Lob.',
+      beispiel_hd: 'Wenn dich ein Schwabe „leck mich am Arsch" sagt, ist das fast schon ein Lob.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-065',
+      ausdruck: 'Spätzle-Brett',
+      hochdeutsch: 'Holzbrett zum Spätzle-Schaben',
+      bedeutung: 'Das Spätzle-Brett ist das traditionelle schwäbische Küchenwerkzeug zum Spätzle-Machen: ein flaches Holzbrett, auf dem der Teig aufgestrichen und mit einem Messer in dünne Streifen ins kochende Wasser geschabt wird. Echte schwäbische Großmütter machen Spätzle nur mit dem Brett — die moderne Spätzlespresse gilt als unfein. Das gekonnte „Schaben" ist hohe schwäbische Esskunst. Es erfordert Übung und Erfahrung.',
+      beispiel: 'Spätzle vom Brett schmeckent ganz anders als aus der Press.',
+      beispiel_hd: 'Spätzle vom Brett schmecken ganz anders als aus der Presse.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-066',
+      ausdruck: 'Stuttgart',
+      hochdeutsch: 'Stuttgart (Hauptstadt Baden-Württembergs)',
+      bedeutung: 'Stuttgart ist die schwäbische Hauptstadt — Landeshauptstadt Baden-Württembergs. 630.000 Einwohner, Sitz von Mercedes-Benz, Porsche, Bosch. Die Stadt liegt in einem Talkessel und hat 18 Stadtbezirke. Berühmt: der Schlossplatz, der Fernsehturm (1955 erster Fernsehturm weltweit), das Neue Schloss, die Wilhelma (Zoo). Stuttgart hat eine ausgeprägte Wirtschaftskraft und gleichzeitig schwäbisches Understatement.',
+      beispiel: 'Stuttgart isch s\'Herz vo Schwoaba — wirtschaftlich und kulturell.',
+      beispiel_hd: 'Stuttgart ist das Herz von Schwaben — wirtschaftlich und kulturell.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-067',
+      ausdruck: 'Heimspiel',
+      hochdeutsch: 'Schwäbisch reden zu Hause',
+      bedeutung: 'In Schwaben sagt man „Heimspiel" für die Situation, wenn man unter Schwaben ist und endlich wieder Schwäbisch reden darf — ohne sich für den Dialekt rechtfertigen zu müssen. Schwaben sind sich bewusst, dass ihr Dialekt im Norden Deutschlands manchmal belächelt wird, und genießen die „Heimspiel"-Atmosphäre, wenn sie unter ihresgleichen sind. Ein Wort voller Identität und Stolz.',
+      beispiel: 'Wenn i bei uns dahoam bin, isch des immer Heimspiel.',
+      beispiel_hd: 'Wenn ich bei uns daheim bin, ist das immer ein Heimspiel.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-068',
+      ausdruck: 'Bissle',
+      hochdeutsch: 'Bisschen / Ein wenig',
+      bedeutung: '„Bissle" ist die schwäbische und alemannische Variante von „Bisschen" — ein klassisches Diminutiv mit dem charakteristischen „-le". Ein „Bissle Geduld", „a Bissle hier", „a Bissle dort" — das Wort zieht sich durch den schwäbischen Alltag. Es drückt die schwäbische Vorsicht und Bescheidenheit aus: niemand will übertreiben, alles wird klein gemacht. Auch „Bisselei" als Tätigkeit (rumprokeln).',
+      beispiel: 'I muss noch a Bissle Saure Trauben kaufa.',
+      beispiel_hd: 'Ich muss noch ein bisschen saure Trauben kaufen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-069',
+      ausdruck: 'Net hudla',
+      hochdeutsch: 'Nicht hetzen / Sich Zeit lassen',
+      bedeutung: '„Net hudla" ist eine schwäbische Lebensweisheit — „nicht hetzen", sondern alles in Ruhe machen. „Hudla" kommt von „hudeln" (hastig machen). Schwaben sind berühmt für ihren Pragmatismus, der Zeit braucht — Qualität geht vor Schnelligkeit. „Net hudla, schaffe!" ist die schwäbische Maxime: nicht hetzen, aber dafür ordentlich arbeiten. Eine Haltung, die in der Daimler-, Bosch- und Porsche-Werkstätten gepflegt wird.',
+      beispiel: 'Net hudla — alles in Ruhe, und denn wird\'s au gut.',
+      beispiel_hd: 'Nicht hetzen — alles in Ruhe, und dann wird es auch gut.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-070',
+      ausdruck: 'Wengerter',
+      hochdeutsch: 'Winzer / Weinbauer',
+      bedeutung: 'Der „Wengerter" ist im Schwäbischen der Weinbauer — vom „Wengert" (Weinberg). Das württembergische Weinland mit seinen Hängen am Neckar und Remsbach hat eine 1000-jährige Weinbautradition. Wengerter sind bodenständige, oft traditionalistische Familienunternehmer. Die Trollinger-Rebe (auch Vernatsch genannt) ist die württembergische Lieblingssorte. Schwabens Wein wird selten exportiert — die Schwaben trinken ihn lieber selbst.',
+      beispiel: 'Der Wengerter ennan im Tal macht den besten Trollinger.',
+      beispiel_hd: 'Der Winzer unten im Tal macht den besten Trollinger.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-071',
+      ausdruck: 'Mausele',
+      hochdeutsch: 'Liebesbezeichnung / Mäuschen',
+      bedeutung: '„Mausele" ist im Schwäbischen ein Kosewort — wörtlich „kleines Mäuschen". Es ist eine zärtliche Anrede für Lebenspartner, Kinder, Enkelkinder. Das schwäbische „-le" macht das hochdeutsche „Maus" liebevoll und verkleinert. „Mei Mausele" sagt eine Großmutter zu ihrem Enkelkind. Klingt für Nicht-Schwaben gewöhnungsbedürftig, aber in Schwaben absolut normal und herzlich.',
+      beispiel: 'Komm her, mei Mausele — i hab dir was mitgebracht.',
+      beispiel_hd: 'Komm her, mein Mäuschen — ich habe dir etwas mitgebracht.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-072',
+      ausdruck: 'Bietigheim',
+      hochdeutsch: 'Bietigheim-Bissingen (typische Schwobenstadt)',
+      bedeutung: 'Bietigheim-Bissingen ist eine typische schwäbische Mittelstadt nördlich von Stuttgart mit 43.000 Einwohnern. Charakteristisch sind die gut erhaltene Fachwerk-Altstadt, der traditionelle Bietigheimer Pferdemarkt und der Wirtschaftsstandort mit vielen mittelständischen Unternehmen. Stellvertretend für viele schwäbische Städte, die zwischen Tradition und industrieller Moderne balancieren — das schwäbische Erfolgsmodell.',
+      beispiel: 'Bietigheim isch a echte Schwobestadt — modern und doch traditionell.',
+      beispiel_hd: 'Bietigheim ist eine echte Schwabenstadt — modern und doch traditionell.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-073',
+      ausdruck: 'Hokerle',
+      hochdeutsch: 'Hocker / Schemel',
+      bedeutung: '„Hokerle" ist ein kleiner Hocker oder Schemel — ein typisch schwäbisches Möbelstück. Schwaben sitzen gerne auf Hokerle in der Küche, im Garten, beim Reparieren. Das schwäbische Diminutiv „-le" macht das Wort liebevoll. Wer auf einem Hokerle sitzt, ist meist in einer Arbeitspose — schwäbische Praktikabilität pur. Auch als Bezeichnung für ein zwanglos-gemütliches Sitzen.',
+      beispiel: 'Setz di uf des Hokerle, dann kann ma reda.',
+      beispiel_hd: 'Setz dich auf den Hocker, dann können wir reden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-074',
+      ausdruck: 'Brügelimaier',
+      hochdeutsch: 'Streitsüchtiger Mensch',
+      bedeutung: '„Brügelimaier" ist im Schwäbischen ein streitsüchtiger, händelsuchender Mensch — abgeleitet vom „Brügel" (großer Stock). Wer als „Brügelimaier" gilt, sucht überall den Streit. Der Begriff ist humorvoll-abwertend und beschreibt einen Charaktertyp, den jeder kennt: den Quertreiber, den ewigen Nörgler. In schwäbischen Geschichten und Witzen ist der Brügelimaier eine archetypische Figur.',
+      beispiel: 'Der is en richtige Brügelimaier — der streitet sich mit jedem.',
+      beispiel_hd: 'Der ist ein richtiger Streithammel — der streitet sich mit jedem.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-075',
+      ausdruck: 'Hopfen und Malz',
+      hochdeutsch: 'Schwäbisches Brauereierbe',
+      bedeutung: 'Das Hopfen- und Malzland Schwaben hat eine lange Brauereitradition — die Tettnang-Hopfen-Region am Bodensee ist Weltmarktführerin im Aromahopfen. Die schwäbischen Brauereien — Stuttgarter Hofbräu, Dinkelacker, Schwaben-Bräu — sind kleiner als bayerische Großbrauereien, aber traditionsreich. „Hopfen und Malz, Gott erhalt\'s" — ein schwäbischer Bierbäuerspruch. Das schwäbische Pils-Land ist weniger bekannt als Bayern, aber qualitativ hochwertig.',
+      beispiel: 'En Stuttgarter Hofbräu mit Hopfen und Malz — schwäbisches Bier!',
+      beispiel_hd: 'Ein Stuttgarter Hofbräu mit Hopfen und Malz — schwäbisches Bier!',
+      kategorie: 'essen'
     }
   ]
 };

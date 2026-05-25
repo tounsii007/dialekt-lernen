@@ -403,6 +403,231 @@ export default {
       beispiel: 'Nächste Woch is Heringsschmaus — all de Frünn koomt tosamen.',
       beispiel_hd: 'Nächste Woche ist Heringsessen — alle Freunde kommen zusammen.',
       kategorie: 'essen'
+    },
+    {
+      id: 'p-051',
+      ausdruck: 'Labskaus',
+      hochdeutsch: 'Labskaus (norddeutsche Spezialität)',
+      bedeutung: 'Labskaus ist das klassische Seemannsgericht Norddeutschlands — Pökelfleisch mit Kartoffeln, Roter Bete und Zwiebeln zu einem rosafarbenen Brei zerstampft, garniert mit Spiegelei, Rollmops und Gewürzgurke. Ursprünglich Schiffskost (jahrhundertelang haltbar gepökelt), heute Hamburger Restaurantklassiker. Das Aussehen ist gewöhnungsbedürftig, der Geschmack legendär. „Labskaus" ist Hamburger Identität pur.',
+      beispiel: 'Bi\'n Hafenmeister gifft dat dat beste Labskaus.',
+      beispiel_hd: 'Beim Hafenmeister gibt es das beste Labskaus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-052',
+      ausdruck: 'Rollmops',
+      hochdeutsch: 'Rollmops (eingelegter Hering)',
+      bedeutung: 'Der Rollmops ist ein eingelegtes Heringsfilet, gerollt um eine Gewürzgurke und mit Zwiebeln, Senfkörnern und Lorbeer in Essig eingelegt. Er ist seit dem 19. Jahrhundert ein norddeutscher Klassiker — ursprünglich Berliner Erfindung, aber heute überall an der Küste zu Hause. Beliebter Katerfresser: nach durchzechter Nacht angeblich heilsam. Mit Schwarzbrot und Schnaps perfekt.',
+      beispiel: 'En Rollmops na de Fier — dat hölpt jümmers.',
+      beispiel_hd: 'Ein Rollmops nach der Feier — das hilft immer.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-053',
+      ausdruck: 'Wattenmeer',
+      hochdeutsch: 'Wattenmeer (UNESCO-Welterbe)',
+      bedeutung: 'Das Wattenmeer entlang der Nordseeküste ist mit über 11.500 km² das größte zusammenhängende Wattenmeergebiet der Welt — seit 2009 UNESCO-Weltnaturerbe. Bei Ebbe liegt es trocken, bei Flut wird es überschwemmt. Heimat von Seehunden, Schweinswalen und 10 Millionen Zugvögeln. Wattwanderungen mit zertifizierten Wattführern sind ein unvergessliches Erlebnis. Niemals ohne Führer ins Watt!',
+      beispiel: 'Bi de Ebb kannst du dörch dat Watt gahn — aber pass op de Floot op!',
+      beispiel_hd: 'Bei Ebbe kannst du durch das Watt gehen — aber pass auf die Flut auf!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-054',
+      ausdruck: 'Hamburger SV',
+      hochdeutsch: 'Hamburger Sport-Verein (Fußballclub)',
+      bedeutung: 'Der Hamburger SV — kurz HSV — ist Hamburgs Traditionsverein, gegründet 1887. Bis 2018 war der HSV als einziger Verein durchgehend in der Bundesliga seit deren Gründung 1963. Die berühmte Stadionuhr im Volksparkstadion zählte die Jahre der Erstligazugehörigkeit. Nach dem Abstieg 2018 in die 2. Liga: ein Trauma für die HSV-Fans. „Nur der HSV!" bleibt der Schlachtruf der Anhänger.',
+      beispiel: 'De HSV mutt mol wedder no baven — wi hoopt op nächst Johr.',
+      beispiel_hd: 'Der HSV muss mal wieder nach oben — wir hoffen auf nächstes Jahr.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-055',
+      ausdruck: 'St. Pauli',
+      hochdeutsch: 'FC St. Pauli (Kult-Fußballclub)',
+      bedeutung: 'Der FC St. Pauli ist Hamburgs Kult-Fußballverein mit Totenkopf-Flagge und linksalternativem Image — ein „Kiezclub" mit weltweiter Fangemeinde. Heimstadion: das Millerntor-Stadion am Heiligengeistfeld. St. Pauli steht für Antifaschismus, Tierschutz und Multikulti. Das gilt als das politischste Fußballclub Deutschlands. „Aufstieg und Abstieg" sind Teil der Vereinsgeschichte — Hauptsache, Pauli bleibt Pauli.',
+      beispiel: 'St. Pauli is mehr as Football — dat is en Lebensgefühl.',
+      beispiel_hd: 'St. Pauli ist mehr als Fußball — das ist ein Lebensgefühl.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-056',
+      ausdruck: 'Reeperbahn',
+      hochdeutsch: 'Hamburger Reeperbahn (Vergnügungsmeile)',
+      bedeutung: 'Die Reeperbahn ist Hamburgs berühmteste Straße — die „sündigste Meile der Welt" auf St. Pauli. Hier gibt es Theater, Bars, Clubs, Erotikgewerbe und Restaurants. Der Name kommt von „Reeper" (Seiler) — hier wurden früher Schiffstaue gefertigt. Die Beatles spielten in den 60ern in den Clubs der Reeperbahn ihre ersten Konzerte. Das Reeperbahnfestival ist heute eines der wichtigsten Musikfestivals Europas.',
+      beispiel: 'Op de Reeperbahn nachts um halv eens — Hans Albers sungn.',
+      beispiel_hd: 'Auf der Reeperbahn nachts um halb eins — Hans Albers sang es.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-057',
+      ausdruck: 'Speicherstadt',
+      hochdeutsch: 'Hamburger Speicherstadt (UNESCO-Welterbe)',
+      bedeutung: 'Die Hamburger Speicherstadt ist der größte zusammenhängende Lagerhauskomplex der Welt — auf Eichenpfählen gebaut, mit rotbacksteinerner Architektur im Stil der norddeutschen Backsteingotik. Errichtet 1883–1927 als zollfreies Lager für Kaffee, Tee, Gewürze und Orientteppiche. Seit 2015 UNESCO-Welterbe. Heute beherbergt sie das Speicherstadtmuseum, das Internationale Maritime Museum und die HafenCity nebenan.',
+      beispiel: 'In de Speicherstadt rüükt dat noch immer no Kaffee un Krütt.',
+      beispiel_hd: 'In der Speicherstadt riecht es noch immer nach Kaffee und Gewürzen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-058',
+      ausdruck: 'Elbphilharmonie',
+      hochdeutsch: 'Elbphilharmonie (Konzerthaus)',
+      bedeutung: 'Die Elbphilharmonie — kurz „Elphi" — ist Hamburgs spektakuläres Konzerthaus auf einem alten Kaispeicher in der HafenCity. Eröffnet 2017 nach 10 Jahren Bauzeit und 866 Millionen Euro Kosten. Die wellenförmige Glasarchitektur wirkt wie ein Schiff. Die Akustik des Großen Saals zählt zu den besten der Welt. Die Plaza in 37 Meter Höhe ist eine öffentliche Aussichtsterrasse mit Blick über Hafen und Stadt.',
+      beispiel: 'Vun de Elphi-Plaza hest du de besten Utsicht op de Elv.',
+      beispiel_hd: 'Von der Elphi-Plaza hast du den besten Ausblick auf die Elbe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-059',
+      ausdruck: 'Ostfriesland',
+      hochdeutsch: 'Ostfriesland (Region in Niedersachsen)',
+      bedeutung: 'Ostfriesland ist die nordwestlichste Region Niedersachsens an der Nordsee — flache Marschlandschaft mit Deichen, Schafen und friesischen Inseln (Borkum, Juist, Norderney, Baltrum, Langeoog, Spiekeroog, Wangerooge). Die Ostfriesen haben einen eigenen Humor, eine eigene Sprache (Plattdeutsch und Ostfriesisches Niederdeutsch) und einen weltweit höchsten Teekonsum (300 Liter pro Kopf jährlich). Ostfriesentee ist Kult.',
+      beispiel: 'In Oostfreesland drinkst du Tee mit Kluntje und Sahne.',
+      beispiel_hd: 'In Ostfriesland trinkst du Tee mit Kandiszucker und Sahne.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-060',
+      ausdruck: 'Ostfriesentee',
+      hochdeutsch: 'Ostfriesische Teezeremonie',
+      bedeutung: 'Die ostfriesische Teezeremonie ist UNESCO-Welterbe — schwarzer Assam-Tee, in einer feinen Porzellankanne aufgebrüht und mit „Kluntje" (großen Kandiszuckerkristallen) und Sahne serviert. Die Sahne wird nicht gerührt — sie bildet wolkige Strukturen. Drei Tassen sind Pflicht (sonst gilt man als unhöflich). Ostfriesen trinken durchschnittlich 300 Liter Tee pro Jahr — mehr als die Briten! Tee gehört zum ostfriesischen Lebensgefühl.',
+      beispiel: 'Drei Tassen Tee bi de Oma — anners gehst nich los.',
+      beispiel_hd: 'Drei Tassen Tee bei der Oma — anders gehst du nicht los.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-061',
+      ausdruck: 'Grünkohl',
+      hochdeutsch: 'Grünkohl (Norddeutscher Winterklassiker)',
+      bedeutung: 'Grünkohl ist DAS norddeutsche Wintergericht — der ostfriesische, niedersächsische und schleswig-holsteinische Grünkohl-Geheimrezept variiert von Familie zu Familie. Gekocht mit Pinkel (Grützwurst), Mettenden, Kassler und Speck. Erst nach dem ersten Frost geerntet, weil der Frost den Kohl süß macht. Grünkohlwanderungen mit Boßeln (Stoßkugelspiel) und ausgiebigem Essen sind soziale Highlights des Winters.',
+      beispiel: 'Sünndach gifft Grünkohl mit Pinkel — kümm vörbi!',
+      beispiel_hd: 'Sonntag gibt es Grünkohl mit Pinkel — komm vorbei!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-062',
+      ausdruck: 'Krabbenbrötchen',
+      hochdeutsch: 'Brötchen mit Nordseekrabben',
+      bedeutung: 'Das Krabbenbrötchen ist eine schlichte aber königliche Spezialität der Nordseeküste — ein frisches Brötchen, dick belegt mit Nordseekrabben (genauer: kleinen rosa Granat) und ein Klacks Remoulade. Die Krabben werden in der Nordsee gefangen, in den Niederlanden und Marokko von Hand gepult und dann nach Deutschland zurück verschifft — was die hohen Preise erklärt. Ein gutes Krabbenbrötchen kostet 8-12 Euro — und ist jeden Cent wert.',
+      beispiel: 'En Krabbenbrödchen an de Strand — Sommerglück pur.',
+      beispiel_hd: 'Ein Krabbenbrötchen am Strand — Sommerglück pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-063',
+      ausdruck: 'Kutter',
+      hochdeutsch: 'Krabbenkutter / Fischerboot',
+      bedeutung: 'Der Krabbenkutter ist das ikonische Fischerboot der Nordseeküste — 8-15 Meter lang, oft in leuchtenden Farben gestrichen, mit dem typischen Galgen über dem Heck zum Heben der Netze. In Häfen wie Greetsiel, Neuharlingersiel oder Cuxhaven sehen Touristen die Kutter im Hafen. Die Krabbenfischerei ist hart — vor allem im Winter — und durch EU-Quoten reglementiert. Aussterbendes Handwerk.',
+      beispiel: 'De Kutter koomt mit fang vun Garnal trügg vun de See.',
+      beispiel_hd: 'Der Kutter kommt mit einem Fang von Garnelen zurück von der See.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-064',
+      ausdruck: 'Friesennerz',
+      hochdeutsch: 'Friesennerz (gelber Regenmantel)',
+      bedeutung: 'Der „Friesennerz" ist die spöttisch-liebevolle Bezeichnung für den gelben Regenmantel der Norddeutschen — speziell der Friesen. Bei jedem norddeutschen Wetter (also ständig) sieht man Menschen im gelben Regen-Outfit von Helly Hansen, Driza-Bone oder ähnlichen Marken. Der Friesennerz ist Symbol für die norddeutsche Pragmatik: Praktisch vor Schönheit, Funktion vor Mode. Touristen erkennt man trotzdem.',
+      beispiel: 'Ohne Friesennerz kannst du in Norddütschland nich rumlopen.',
+      beispiel_hd: 'Ohne Regenmantel kannst du in Norddeutschland nicht herumlaufen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-065',
+      ausdruck: 'Boßeln',
+      hochdeutsch: 'Boßeln (Norddeutscher Volkssport)',
+      bedeutung: 'Boßeln ist ein traditioneller norddeutscher Volkssport — eine Mischung aus Bowling und Wandern. Eine Gruppe rollt eine Kugel oder Kunststoff-Kugel auf einer Landstraße. Wer am weitesten kommt, gewinnt. Zwischendurch wird Bier oder Schnaps getrunken — der gesellige Charakter steht im Vordergrund. Beim Grünkohlessen ist Boßeln ein Muss. Auch der Beweis: man kann selbst beim Sport noch trinken.',
+      beispiel: 'No\'n Grünkohl gahn wi noch boßeln — kammt nü mit?',
+      beispiel_hd: 'Nach dem Grünkohl gehen wir noch boßeln — kommst du noch mit?',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-066',
+      ausdruck: 'Hamborg',
+      hochdeutsch: 'Hamburg (auf Plattdeutsch)',
+      bedeutung: '„Hamborg" ist die plattdeutsche Form für Hamburg. Mit fast 2 Millionen Einwohnern Deutschlands zweitgrößte Stadt — eine Hansestadt mit über 1000 Jahren Geschichte. Hafen, Elbe, Alster, Reeperbahn, Speicherstadt: Hamburg vereint maritime Tradition mit moderner Großstadt. Die Hanseaten sind stolz auf ihre Unabhängigkeit (Stadtstaat) und ihren norddeutschen Pragmatismus. Das „Hamborger Veermaster"-Shantylied ist ein Klassiker.',
+      beispiel: 'In Hamborg gifft dat dat best Fischbrödchen.',
+      beispiel_hd: 'In Hamburg gibt es das beste Fischbrötchen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-067',
+      ausdruck: 'Bremen',
+      hochdeutsch: 'Bremen (Hansestadt)',
+      bedeutung: 'Bremen ist Deutschlands kleinster Stadtstaat und mit Bremerhaven Heimat des nordwestdeutschen Hafens. Hansestadt mit über 1200 Jahren Geschichte. Berühmt: der Roland (Stadtmarkenzeichen seit 1404), die Bremer Stadtmusikanten (Grimms Märchen-Figuren), das Schnoorviertel und die Böttcherstraße. Werder Bremen ist der lokale Fußballverein. Bremer sind klassisch norddeutsch: zurückhaltend, herzlich, mit eigenem Stolz.',
+      beispiel: 'In Bremen mut wi de Stadtmusikanten aankucken — bringt Glück.',
+      beispiel_hd: 'In Bremen müssen wir die Stadtmusikanten anschauen — bringt Glück.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-068',
+      ausdruck: 'Werder Bremen',
+      hochdeutsch: 'SV Werder Bremen (Fußballclub)',
+      bedeutung: 'Werder Bremen ist Bremens Fußballverein, gegründet 1899 — viermaliger deutscher Meister. Heimstadion: das Weserstadion an der Weser. Der Verein gilt als sympathischer norddeutscher Außenseiter mit Tradition. Vereinsfarben grün-weiß. Trainerlegenden wie Otto Rehhagel und Spieler wie Marco Bode prägten die erfolgreichen Jahre. „Lebenslang grün-weiß" ist der Fan-Schlachtruf.',
+      beispiel: 'Werder spielt sünndach to Huus — mut ich hin.',
+      beispiel_hd: 'Werder spielt Sonntag zu Hause — muss ich hin.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-069',
+      ausdruck: 'Köm',
+      hochdeutsch: 'Korn / Kümmelschnaps',
+      bedeutung: '„Köm" ist auf Plattdeutsch der Korn — klarer Schnaps aus Getreide, oft mit Kümmel aromatisiert („Kümmelköm"). Er ist Teil der norddeutschen Trinkkultur, oft begleitend zu einem Bier („Lütt un Lütt"). Hamburger und Bremer trinken ihn zum Frühstück (mit Granatsplitter — also Korn mit gemahlenem Pfeffer) oder als Magenbitter nach dem Essen. „En lütt Köm" ist die norddeutsche Antwort auf den bayerischen Schnaps.',
+      beispiel: 'En lütt Köm passt no\'n fettes Eten jümmers.',
+      beispiel_hd: 'Ein kleiner Korn passt nach einem fetten Essen immer.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-070',
+      ausdruck: 'Lütt un Lütt',
+      hochdeutsch: 'Bier und Korn (klassisches Hamburger Getränkeduo)',
+      bedeutung: '„Lütt un Lütt" (wörtlich: „Klein und Klein") ist Hamburgs Klassiker-Getränk: ein kleines Bier (typisch Astra) und ein kleiner Köm (Korn) zusammen serviert. Eine Hafenarbeiter-Tradition aus dem 19. Jahrhundert, die heute in Kult-Bars wie der „Stockenwiete" oder im St. Pauli Kiez überlebt. Die ideale Pause nach einer harten Schicht — günstig, hochprozentig und identitätsstiftend. Touristen wundern sich, Hamburger lachen.',
+      beispiel: 'Ein Lütt un Lütt an de Theke — Hamburger Stamm-Tradition.',
+      beispiel_hd: 'Ein Bier mit Korn an der Theke — Hamburger Stamm-Tradition.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-071',
+      ausdruck: 'Sylt',
+      hochdeutsch: 'Sylt (Nordsee-Insel)',
+      bedeutung: 'Sylt ist die nördlichste Insel Deutschlands — eine 38 km lange Nordsee-Insel an der dänischen Grenze. Berühmt für die endlosen Sandstrände, das Dorf Kampen mit Promi-Villen, das Promi-Lokal „Sansibar" und den Wattenmeer. Sylt ist Synonym für deutsches Luxus-Strandleben — die Immobilienpreise sind die höchsten in Deutschland. Der Hindenburg-Damm verbindet die Insel seit 1927 mit dem Festland.',
+      beispiel: 'Op Sylt geht\'t ümmer en bisschen edler — aber de Strand is dor wirklich schön.',
+      beispiel_hd: 'Auf Sylt geht es immer ein bisschen edler — aber der Strand ist da wirklich schön.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-072',
+      ausdruck: 'Klabautermann',
+      hochdeutsch: 'Klabautermann (Schiffskobold)',
+      bedeutung: 'Der Klabautermann ist ein Schiffskobold der norddeutschen Seemannssagen — ein hilfsbereiter Hausgeist, der das Schiff bewacht und Unglück abwendet. Erscheint er aber sichtbar, bedeutet das den Untergang. Die Sage stammt aus dem Mittelalter und ist in Hamburg, Bremen und an der gesamten norddeutschen Küste lebendig. „Klabautermann" wird oft auch scherzhaft für rumpelnde, polternde Menschen verwendet.',
+      beispiel: 'De Klabautermann hett dat Scheep beschütt — segget de Seelü.',
+      beispiel_hd: 'Der Klabautermann hat das Schiff beschützt — sagen die Seeleute.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-073',
+      ausdruck: 'Theodor Storm',
+      hochdeutsch: 'Theodor Storm (Schriftsteller, „Schimmelreiter")',
+      bedeutung: 'Theodor Storm (1817–1888) war Schleswig-Holsteins berühmtester Schriftsteller. Sein Werk „Der Schimmelreiter" (1888) — über den Deichgrafen Hauke Haien, der die Naturgewalten herausfordert — ist Schulstoff in ganz Deutschland. Storm lebte in Husum, das er „die graue Stadt am Meer" nannte. Sein Geburtshaus in Husum ist heute Storm-Museum. Norddeutsche Wehmut, Sturmflut und das Meer prägen seine Werke.',
+      beispiel: 'De Schimmelriter vun Storm mut man eens leest hebben.',
+      beispiel_hd: 'Den Schimmelreiter von Storm muss man einmal gelesen haben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-074',
+      ausdruck: 'Schiet',
+      hochdeutsch: 'Scheiße / Mist (mildes Schimpfwort)',
+      bedeutung: '„Schiet" ist Plattdeutsch für „Scheiße" oder „Mist" — wird aber milder verwendet als das hochdeutsche Pendant. Es drückt Verärgerung, Enttäuschung oder Pech aus, ohne wirklich grob zu sein. „So\'n Schiet!" ist ein typisch norddeutscher Ausruf. Das berühmteste Beispiel: „Schietwedder" — schlechtes Wetter. Schiet gehört zum norddeutschen Alltagsvokabular wie das Bier zum Hafenviertel.',
+      beispiel: 'So\'n Schiet — jümmers wenn ick Tied heff, regent dat!',
+      beispiel_hd: 'So ein Mist — immer wenn ich Zeit habe, regnet es!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-075',
+      ausdruck: 'Tüdelig',
+      hochdeutsch: 'Verwirrt / durcheinander',
+      bedeutung: '„Tüdelig" ist Plattdeutsch für verwirrt, vergesslich oder durcheinander — meist liebevoll für ältere Menschen verwendet, die gerade einen Verlustanfall haben. Es ist ein zärtliches Wort, das die menschliche Schwäche nicht verurteilt, sondern annimmt. Auch jüngere Menschen können „tüdelig" sein, wenn sie aufgeregt oder müde sind. Das Wort „Tüdelkram" bezeichnet wirre Geschwätz oder Quatsch.',
+      beispiel: 'De Oma is hütt en bisschen tüdelig — aber dat is nich slim.',
+      beispiel_hd: 'Die Oma ist heute ein bisschen verwirrt — aber das ist nicht schlimm.',
+      kategorie: 'gefuehle'
     }
   ]
 };
