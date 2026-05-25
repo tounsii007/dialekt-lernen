@@ -2593,6 +2593,276 @@ export default {
       beispiel: 'Marzahn — größter Plattenbau-Bezirk Europas.',
       beispiel_hd: 'Marzahn — größter Plattenbau-Bezirk Europas.',
       kategorie: 'orte'
+    },
+    {
+      id: 'b-291',
+      ausdruck: 'Det jeht ab wie Schmidts Katze',
+      hochdeutsch: 'Das geht ab wie Schmidts Katze',
+      bedeutung: '„Det jeht ab wie Schmidts Katze" — Berliner Spruch für „das geht richtig ab, mit voller Power". Bezieht sich auf einen sprichwörtlichen Berliner Schmidt, dessen Katze besonders flink war. Wird im Sport, bei Partys, bei Geschäften verwendet. Klassische Berliner Schnauze-Redewendung. Klingt locker und energiegeladen. Drückt positive Begeisterung über Geschwindigkeit oder Lebendigkeit aus.',
+      beispiel: 'Det Konzert jing ab wie Schmidts Katze!',
+      beispiel_hd: 'Das Konzert ging ab wie Schmidts Katze!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-292',
+      ausdruck: 'Berliner Pflanze',
+      hochdeutsch: 'echter Berliner',
+      bedeutung: '„Berliner Pflanze" ist Selbstbezeichnung des waschechten Berliners — geboren und aufgewachsen in Berlin. „Ich bin n echter Berliner Pflanze!" als Identitäts-Bekenntnis. Drückt Stolz auf Berliner Wurzeln aus. Im Gegensatz zu „Zugezogenen". Wird mit „dritte Generation Berliner" verstärkt. Symbol für Berliner Identität. Berliner Pflanzen erkennt man an Schnauze, Dialekt und Berlin-Geschichts-Wissen.',
+      beispiel: 'Ick bin Berliner Pflanze in dritter Generation!',
+      beispiel_hd: 'Ich bin echter Berliner in dritter Generation!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-293',
+      ausdruck: 'Berliner Klima',
+      hochdeutsch: 'wechselhaftes Berliner Wetter',
+      bedeutung: '„Berliner Klima" ist berüchtigt — von 30°C-Hitze zu 5°C-Regen am gleichen Tag. „Wenn dir det Wetter in Berlin nicht passt, warte fünf Minuten!". Berliner haben drei Jacken-Klima-Strategie: immer eine dabei. „April-Wetter" als Berliner Standard. Symbol für berlinische Wetterunbeständigkeit. Lokales Lokalkolorit. Touristen werden gewarnt, immer Regenschirm und Sonnenbrille mitzunehmen.',
+      beispiel: 'Det Berliner Klima — heut Sommer, morgen Winter!',
+      beispiel_hd: 'Das Berliner Klima — heute Sommer, morgen Winter!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-294',
+      ausdruck: 'Knorke',
+      hochdeutsch: 'super / klasse',
+      bedeutung: '„Knorke" ist altberlinischer Begriff für „super, klasse, geil". Veraltet, aber bei der älteren Generation noch lebendig. „Det is\' ja knorke!" als Begeisterungsausruf. In der Berliner Schlager-Tradition omnipräsent. Stammt aus dem 19. Jahrhundert, Etymologie unklar — vielleicht von jiddisch. „Knorke" als Berliner Identitäts-Marker. Junge Berliner verwenden es oft ironisch. Symbol für klassische Berliner Sprache.',
+      beispiel: 'Det neue Lokal is\' knorke!',
+      beispiel_hd: 'Das neue Lokal ist super!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-295',
+      ausdruck: 'Atze',
+      hochdeutsch: 'Bruder / Kumpel (Berliner Slang)',
+      bedeutung: 'Wie auch im Hessischen, „Atze" als Anrede für Freunde — in Berlin besonders verbreitet. „Was geht, Atze?" als Standard-Begrüßung. Drückt brüderliche Vertrautheit aus. Im Kreuzberger und Neuköllner Hip-Hop-Slang etabliert. „Atze Schröder" als Berliner Comedy-Figur. Vergleichbar mit „Digga" oder „Bro". Symbol für Berliner Anredevielfalt. Wird von älteren und jüngeren Berlinern verwendet.',
+      beispiel: 'Komm, Atze, mer trinken n Bier.',
+      beispiel_hd: 'Komm, Bruder, wir trinken ein Bier.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-296',
+      ausdruck: 'Det is\' mir Latte',
+      hochdeutsch: 'Das ist mir egal',
+      bedeutung: '„Det is\' mir Latte" — Berliner Ausdruck für „das ist mir egal". Drückt Gleichgültigkeit aus. Vergleichbar mit „mir wurscht" oder „mir egal". Stammt von „Lattenzaun" — also so flach, dass es keine Bedeutung hat. Lockerer Tonfall, keine wirkliche Ablehnung. Berliner Schnauze pur. In Diskussionen oder Entscheidungs-Situationen verwendet. „Wo gehen wir essen? — Det is\' mir Latte!".',
+      beispiel: 'Wo wir essen? Det is\' mir Latte!',
+      beispiel_hd: 'Wo wir essen? Das ist mir egal!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-297',
+      ausdruck: 'Nu mach mal halblang',
+      hochdeutsch: 'Jetzt übertreib mal nicht',
+      bedeutung: '„Nu mach mal halblang!" als Berliner Ermahnung zur Mäßigung — wenn jemand übertreibt, sich aufregt oder zu enthusiastisch ist. Drückt Berliner Pragmatismus aus. Klingt liebevoll-spöttisch. „Halblang" für die halbe Geschwindigkeit. In Diskussionen, bei Streitigkeiten, bei Plänen verwendet. „Nu mach mal halblang, mei Atze!" als Berliner Mäßigungs-Aufforderung. Symbol für Berliner Realismus.',
+      beispiel: 'Nu mach mal halblang — det wird schon!',
+      beispiel_hd: 'Jetzt übertreib mal nicht — das wird schon!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-298',
+      ausdruck: 'Det wird schon',
+      hochdeutsch: 'Das wird schon',
+      bedeutung: '„Det wird schon" — Berliner Pragmatismus-Spruch für „das klappt schon, keine Sorge". Drückt entspannte Berliner Hoffnungs-Haltung aus. Wird bei Sorgen, Plänen, Unsicherheiten verwendet. Klingt beruhigend und optimistisch. „Det wird schon, mei Atze!" als Berliner Trost-Formel. Im Gegensatz zur süddeutschen Hektik. Symbol für Berliner Lebensphilosophie: nicht zu viel Stress, sondern entspannte Zuversicht.',
+      beispiel: 'Det wird schon — mach dir kein\' Kopp!',
+      beispiel_hd: 'Das wird schon — mach dir keine Sorgen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-299',
+      ausdruck: 'Mach dir kein\' Kopp',
+      hochdeutsch: 'Mach dir keine Sorgen',
+      bedeutung: '„Mach dir kein\' Kopp!" — Berliner Trost-Formel für „mach dir keine Sorgen". Drückt entspannte Berliner Lebensart aus. Wird unter Freunden, in Konfliktsituationen, bei Sorgen verwendet. Klingt herzlich und beruhigend. „Kopp" als Berlinerische Aussprache von „Kopf". Symbol für Berliner Pragmatismus und emotionale Direktheit. Universell verwendbar. Auch ironisch: wenn jemand wirklich grund zur Sorge hat, wird es manchmal als sarkastischer Trost benutzt.',
+      beispiel: 'Mach dir kein\' Kopp — det wird wieder!',
+      beispiel_hd: 'Mach dir keine Sorgen — das wird wieder!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-300',
+      ausdruck: 'Berliner Luft',
+      hochdeutsch: 'Berliner Luft (Lied + Identität)',
+      bedeutung: 'Die „Berliner Luft" ist Berlins inoffizielle Hymne — von Paul Lincke 1922 komponiert. „Das macht die Berliner Luft, Luft, Luft, so mit ihrem holden Duft, Duft, Duft …". Wird auf Volksfesten, Eintracht-Spielen, Konzerten gespielt. Berliner singen mit. Symbol für Berliner Identität und Selbstbewusstsein. Touristen lernen das Lied als Berlin-Klassiker. Auch metaphorisch: „Berliner Luft" für die Berliner Atmosphäre, Lebensart.',
+      beispiel: '„Det macht die Berliner Luft, Luft, Luft…"',
+      beispiel_hd: '„Das macht die Berliner Luft, Luft, Luft…"',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-301',
+      ausdruck: 'Bulette',
+      hochdeutsch: 'Frikadelle / Bulette',
+      bedeutung: 'Die „Bulette" ist Berliner Bezeichnung für die Frikadelle — Hackfleischklops. „Mit Senf und Kartoffelsalat" als Berliner Klassiker. „Bulette mit Salat" als günstiges Mittagessen. Stammt vom französischen „boulette" (Kügelchen). In Berliner Imbissen und Wirtshäusern omnipräsent. „Lieber ne Bulette als nix" als Berliner Spruch. Symbol für Berliner Esskultur. Touristen probieren Buletten als Berlin-Spezialität. Verschiedene Berliner Konditoreien streiten sich um die beste.',
+      beispiel: 'A Bulette mit Kartoffelsalat zum Mittag!',
+      beispiel_hd: 'Eine Frikadelle mit Kartoffelsalat zum Mittag!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-302',
+      ausdruck: 'Pissnelke',
+      hochdeutsch: 'arrogante Person',
+      bedeutung: '„Pissnelke" ist berliner abwertende Bezeichnung für eine arrogante, eingebildete Person — meist weiblich gemeint. Klingt derb, aber im Berliner Sprachgebrauch nicht extrem beleidigend. „So\' ne Pissnelke!" als Berliner Schimpfwort. Drückt Berliner Direktheit aus. Wird bei eingebildeten Verkäuferinnen, oberflächlichen Touristen oder Schwaben verwendet. Symbol für Berliner Verachtung von Hochnäsigkeit. Mütter mahnen Kinder: „So spricht man nicht!".',
+      beispiel: 'Diese Verkäuferin is\' ne Pissnelke!',
+      beispiel_hd: 'Diese Verkäuferin ist eine arrogante Person!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-303',
+      ausdruck: 'Pomadenhengst',
+      hochdeutsch: 'Schönling / eingebildet schöner Mann',
+      bedeutung: '„Pomadenhengst" ist berliner Spottbezeichnung für einen eingebildet schönen, übergestylten Mann — mit zu viel Pomade im Haar. Klassische Berliner Verachtung von Eitelkeit. „So\' n Pomadenhengst!" als typisches Schimpfwort. Stammt aus dem 19. Jahrhundert, als Pomade Modeartikel war. Heute auch metaphorisch für Hipster mit übertrieben gestyltem Haar. Symbol für Berliner Pragmatismus und Skepsis gegenüber Schönheits-Inszenierung.',
+      beispiel: 'Der neue Kollege is\' n richtiger Pomadenhengst!',
+      beispiel_hd: 'Der neue Kollege ist ein richtiger Schönling!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-304',
+      ausdruck: 'Det jeht uff keine Kuhhaut',
+      hochdeutsch: 'Das geht auf keine Kuhhaut',
+      bedeutung: '„Det jeht uff keine Kuhhaut" — Berliner Spruch für „das ist unglaublich, das übersteigt alle Vorstellungen". Bezieht sich darauf, dass die mittelalterliche Schreibhaut (Pergament) aus Kuhhaut zu klein wäre, um alle Verfehlungen zu notieren. Drückt extreme Empörung oder Verwunderung aus. „Wat der getan hat, det jeht uff keine Kuhhaut!" Klassische Berliner Schnauze-Redewendung.',
+      beispiel: 'Wat der Politiker gesagt hat, det jeht uff keine Kuhhaut!',
+      beispiel_hd: 'Was der Politiker gesagt hat, das geht auf keine Kuhhaut!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-305',
+      ausdruck: 'Berliner Mädel',
+      hochdeutsch: 'Berliner Mädchen',
+      bedeutung: 'Das „Berliner Mädel" ist berlinerische Selbstbezeichnung für Frauen aus Berlin — meist mit positiver Note. „Frecher Mund, weiches Herz" als Klischee. In Volksliedern und Schlagern besungen. „Ick bin n echtes Berliner Mädel!" als Identitäts-Bekenntnis. Berliner Frauen werden für ihre direkte Art, ihr Selbstbewusstsein und ihren Humor gerühmt. Symbol für berliner weibliche Identität. Im Gegensatz zu süddeutschen oder norddeutschen Frauen oft als „rauer" wahrgenommen.',
+      beispiel: 'Det Berliner Mädel hat ne Schnauze!',
+      beispiel_hd: 'Das Berliner Mädchen hat eine Schnauze!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-306',
+      ausdruck: 'Ick',
+      hochdeutsch: 'ich (Berliner Aussprache)',
+      bedeutung: '„Ick" ist DIE berlinerische Aussprache von „ich" — charakteristisches Lautmerkmal. „Ick bin Berliner!" wie Kennedy 1963 sagte (eigentlich falsche Aussprache, aber Berliner mögen es). Universal verwendet — kein Berliner sagt „ich". Auch in Kombinationen: „Ick weeß", „Ick komm", „Ick hab". Symbol für Berliner Dialekt-Identität. Touristen lernen es als erstes berlinerisches Wort.',
+      beispiel: 'Ick weeß, wat ick will!',
+      beispiel_hd: 'Ich weiß, was ich will!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-307',
+      ausdruck: 'Det',
+      hochdeutsch: 'das (Berliner Aussprache)',
+      bedeutung: '„Det" ist Berliner Aussprache von „das" — wie „ick" für „ich". „Det jeht so nich!" für „Das geht so nicht!". Charakteristisches Lautmerkmal. „Det" wird in fast jedem Berliner Satz verwendet. Auch in Wortkombinationen: „Detjenige" für „derjenige". Symbol für Berliner Sprach-Identität. Wird oft mit „dit" verwechselt — beide existieren je nach Generation und Bezirk. „Dit is\' Berlin!" als Berliner Identitäts-Spruch.',
+      beispiel: 'Det is\' n richtiger Berliner!',
+      beispiel_hd: 'Das ist ein richtiger Berliner!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-308',
+      ausdruck: 'Watt n Ding!',
+      hochdeutsch: 'Was für ein Ding!',
+      bedeutung: '„Watt n Ding!" — Berliner Ausruf der Verwunderung, Bewunderung oder Empörung. „Watt" als berlinerische Aussprache von „was", „n Ding" für „ein Ding". Multifunktional je nach Tonfall. „Watt n Ding!" für „Unglaublich!" oder „Was für ein Mist!". Vergleichbar mit „Wow!" oder „Boah!". Berliner Schnauze pur. Wird mit Hand-Gesten begleitet. Symbol für Berliner emotionale Direktheit.',
+      beispiel: 'Watt n Ding! Det hätt ick nicht gedacht!',
+      beispiel_hd: 'Was für ein Ding! Das hätte ich nicht gedacht!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-309',
+      ausdruck: 'Berliner Pomp',
+      hochdeutsch: 'Berliner Prunkbedürfnis',
+      bedeutung: '„Berliner Pomp" ist ironische Selbstbezeichnung der berlinischen Prunkmissionarie — Berliner können laut, übertrieben und prahlerisch sein. „Mit Berliner Pomp aufgetreten" für ein extravagantes Verhalten. Stammt aus der preußischen Zeit, wo Berliner Hofhaltung als prunkvoll galt. Heute oft ironisch verwendet. Symbol für berlinische Selbstinszenierung. Im Gegensatz zur süddeutschen Gemütlichkeit. Berliner Pomp trifft auf Berliner Schnauze.',
+      beispiel: 'Der Senator trat mit Berliner Pomp auf.',
+      beispiel_hd: 'Der Senator trat mit Berliner Pomp auf.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-310',
+      ausdruck: 'Dit is\' Berlin!',
+      hochdeutsch: 'Das ist Berlin!',
+      bedeutung: '„Dit is\' Berlin!" — Berliner Identitäts-Spruch für „das ist typisch Berlin, hier passiert alles". Drückt Berliner Stolz und Selbstverständnis aus. Wird bei seltsamen Berliner Phänomenen verwendet: U-Bahn-Pannen, Café-Schlangen, Verkehrschaos, Demonstrationen. „Dit is\' Berlin, Baby!" als coole Variante. Symbol für Berliner Lebensgefühl: alles ist möglich, nichts ist normal. Berliner Resignation und Stolz zugleich.',
+      beispiel: 'BVG kommt zwei Stunden zu spät — dit is\' Berlin!',
+      beispiel_hd: 'BVG kommt zwei Stunden zu spät — das ist Berlin!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-311',
+      ausdruck: 'Det weeß keene Sau',
+      hochdeutsch: 'Das weiß keine Sau',
+      bedeutung: '„Det weeß keene Sau" — Berliner Spruch für „das weiß niemand". „Sau" als verstärkende Berliner Vulgär-Verstärkung. Drückt Ratlosigkeit oder Geheimnis aus. „Wer hat det getan? Det weeß keene Sau!". Berliner Schnauze pur. Mütter mahnen Kinder, das nicht zu sagen, aber in Berliner Alltagssprache omnipräsent. Symbol für berliner direkte Sprache. Klingt derber als süddeutsche oder norddeutsche Varianten.',
+      beispiel: 'Wo der Schlüssel hin is\', weeß keene Sau!',
+      beispiel_hd: 'Wo der Schlüssel hin ist, weiß keine Sau!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-312',
+      ausdruck: 'Berliner Beton',
+      hochdeutsch: 'Plattenbau-Architektur',
+      bedeutung: '„Berliner Beton" ist sarkastische Bezeichnung für die graue Plattenbau-Architektur Berlins — vor allem Ost-Bezirke. „Berliner Beton-Wüste" als noch derbere Variante. Manche Berliner lieben den Beton-Brutalismus (Architektur-Fans), andere finden ihn hässlich. „Berliner Beton-Republik" als spöttische Bezeichnung. Symbol für Berliner Wandel von der Geschichts-Stadt zur modernen Hauptstadt. Junge Berliner finden Beton oft cool — Großeltern weniger.',
+      beispiel: 'Diese ganzen Plattenbauten — pure Berliner Beton-Wüste!',
+      beispiel_hd: 'Diese ganzen Plattenbauten — pure Berliner Beton-Wüste!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-313',
+      ausdruck: 'Ditt is\' n Ding',
+      hochdeutsch: 'Das ist ein Ding',
+      bedeutung: '„Ditt is\' n Ding!" — Berliner Ausruf der Verwunderung über etwas Erstaunliches. „Ditt" als berlinerische Aussprache von „das ist". Drückt überraschtes Anerkennen aus. Klassisches Berliner Schnauze-Idiom. Wird oft mit Hand-Gesten begleitet (Hand vor den Mund). „Ditt is\' n Ding, Mann!" als verstärkende Variante. Symbol für Berliner Sprach-Charakter. Vergleichbar mit „Watt n Ding!" mit ähnlicher Bedeutung.',
+      beispiel: 'Ditt is\' n Ding! Wer hätt det gedacht?',
+      beispiel_hd: 'Das ist ein Ding! Wer hätte das gedacht?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-314',
+      ausdruck: 'Janz schön knorke',
+      hochdeutsch: 'ganz schön super',
+      bedeutung: '„Janz schön knorke" — Berliner Steigerung von „knorke" (super). „Janz" als berlinerische Aussprache von „ganz". Drückt erhöhte Anerkennung aus. „Det Konzert war janz schön knorke!". Berliner Schnauze pur — klassische Berliner Wertungs-Sprache. Wird von älteren Generationen verwendet. Junge Berliner sagen eher „voll geil" oder „mega". Symbol für klassische Berliner Bewertungs-Sprache.',
+      beispiel: 'Det Essen war janz schön knorke!',
+      beispiel_hd: 'Das Essen war ganz schön super!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-315',
+      ausdruck: 'Mach mal langsam',
+      hochdeutsch: 'Mach mal langsam',
+      bedeutung: '„Mach mal langsam" ist Berliner Ermahnung zur Entschleunigung — wenn jemand zu schnell handelt, zu enthusiastisch ist oder zu früh entscheidet. „Mach mal langsam, mei Atze!" als typische Berliner Beruhigungs-Aufforderung. Drückt berliner Pragmatismus aus: erst nachdenken, dann handeln. Wird in Diskussionen, bei Plänen, bei Käufen verwendet. Symbol für Berliner Bedachtsamkeit. Im Gegensatz zur süddeutschen Hektik oder norddeutschen Entscheidungsschnelligkeit.',
+      beispiel: 'Mach mal langsam — überleg det noch mal!',
+      beispiel_hd: 'Mach mal langsam — überleg das noch mal!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-316',
+      ausdruck: 'Stadtkind',
+      hochdeutsch: 'echter Stadtbewohner',
+      bedeutung: '„Stadtkind" ist berliner Selbstbezeichnung für echten Stadt-Aufgewachsenen — kann nichts mit Natur, Landleben, Bauernhöfen anfangen. „Ich bin n echtes Stadtkind!" als Identitäts-Bekenntnis. Drückt Berliner Stadt-Identität aus. Im Gegensatz zu „Landei" (jemand vom Land). Stadtkinder finden Spinnen eklig, kennen keine Kühe und glauben, Milch käme aus dem Supermarkt. Symbol für Berliner Urbanität. Selbstironisch verwendet.',
+      beispiel: 'Ick bin Stadtkind — Berge mag ick nicht!',
+      beispiel_hd: 'Ich bin Stadtkind — Berge mag ich nicht!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-317',
+      ausdruck: 'Jeh mir uff\'n Senkel',
+      hochdeutsch: 'Geh mir auf die Nerven',
+      bedeutung: '„Jeh mir uff\'n Senkel!" — Berliner Aufforderung, jemanden in Ruhe zu lassen, weil er nervt. „Senkel" als Berliner Slang für die Nerven oder den Geist. „Jeh" als berlinerische Aussprache von „geh". Drückt Berliner Direktheit beim Genervt-sein aus. Wird unter Geschwistern, Kollegen, in Genervt-Situationen verwendet. Klingt liebevoll-derb. Symbol für Berliner emotionale Direktheit. Mütter und Kinder verwenden es oft.',
+      beispiel: 'Jeh mir uff\'n Senkel — ick mach gerade Hausaufgaben!',
+      beispiel_hd: 'Geh mir auf die Nerven — ich mache gerade Hausaufgaben!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-318',
+      ausdruck: 'Berliner Original',
+      hochdeutsch: 'echter Berliner Charakter',
+      bedeutung: 'Ein „Berliner Original" ist eine charakteristische Berliner Persönlichkeit — meist alteingesessen, mit Berliner Schnauze, eigenem Stil und unverwechselbarer Identität. „Berliner Originale" wie Helmut Schmidt, Helmut Kohl (für die Berlin-Zeit), Friedrich Hollaender. Im Volksmund auch für gewöhnliche Berliner mit besonderem Charakter verwendet. „Mei Großvater is\' n echtes Berliner Original!". Symbol für Berliner Charakter-Stolz und Identitäts-Bewahrung.',
+      beispiel: 'Der oide Wirt is\' n echtes Berliner Original.',
+      beispiel_hd: 'Der alte Wirt ist ein echtes Berliner Original.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-319',
+      ausdruck: 'Mach mal n Punkt',
+      hochdeutsch: 'Komm zur Sache / hör auf',
+      bedeutung: '„Mach mal n Punkt!" — Berliner Aufforderung, eine Sache zu beenden oder auf den Punkt zu kommen. „Punkt" als Symbol für Schluss. Wird in Diskussionen verwendet, wenn jemand zu lange redet, oder als Schluss-Aufforderung. „Mach mal n Punkt mit dem Geschwätz!". Drückt Berliner Pragmatismus aus: Effizienz vor Geschwätz. Symbol für Berliner Direktheit. Klingt freundlich-bestimmt.',
+      beispiel: 'Mach mal n Punkt mit der Diskussion!',
+      beispiel_hd: 'Mach mal Schluss mit der Diskussion!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-320',
+      ausdruck: 'Berliner Pflanze for life',
+      hochdeutsch: 'echter Berliner ein Leben lang',
+      bedeutung: '„Berliner Pflanze for life" ist moderner Berliner Identitäts-Slogan — Berliner Stolz mit englischer Sprach-Mischung. Vor allem bei jungen Berlinern und auf T-Shirts. Drückt unzerbrechliche Berliner Loyalität aus. „Berliner Pflanze for life, Atze!" als Identitäts-Bekenntnis. Symbol für moderne Berliner Identität — sprachlich modern, kulturell traditionell. In Hertha-Fan-Kreisen verbreitet. Berlin-Stolz neuer Generation.',
+      beispiel: 'Berliner Pflanze for life — auch wenn Hertha verliert!',
+      beispiel_hd: 'Echter Berliner ein Leben lang — auch wenn Hertha verliert!',
+      kategorie: 'menschen'
     }
   ]
 };
