@@ -1599,6 +1599,276 @@ export default {
       beispiel: 'Mei Schorschla, jetzt iß dei Würschdla auf!',
       beispiel_hd: 'Mein lieber Georg, jetzt iss dein Würstchen auf!',
       kategorie: 'familie'
+    },
+    {
+      id: 'fr-181',
+      ausdruck: 'Aff-Daa',
+      hochdeutsch: 'Faulpelz / Affe',
+      bedeutung: 'Ein „Aff-Daa" ist im Fränkischen ein Faulpelz oder ein Tagedieb — wörtlich „Affe-Tag" (jemand, der den Tag wie ein Affe vertrödelt). Mit etwas Augenzwinkern gebraucht. „Du Aff-Daa, jetz schaff mol wos!" Eine plastische, fränkische Wortprägung, die das gemütliche Müßiggehen kritisiert. Verwandt mit den anderen fränkischen „Aff"-Beleidigungen (Aff, Sappradment-Aff).',
+      beispiel: 'Mei Sohn isch a richtiger Aff-Daa am Sunntig!',
+      beispiel_hd: 'Mein Sohn ist ein richtiger Faulpelz am Sonntag!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'fr-182',
+      ausdruck: 'Mou',
+      hochdeutsch: 'Muss',
+      bedeutung: '„Mou" ist die fränkische Form von „muss" — mit dem typisch fränkischen Diphthong „ou". „I mou zum Doktor" (Ich muss zum Doktor). Eine der charakteristischsten fränkischen Aussprachen, die auch das Wort „houch" (hoch) prägt. Im ostfränkischen Raum (Bamberg, Bayreuth, Coburg) besonders ausgeprägt. Ein Erkennungsmerkmal des Dialekts.',
+      beispiel: 'I mou jetzt heim gehn.',
+      beispiel_hd: 'Ich muss jetzt heimgehen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-183',
+      ausdruck: 'Drumbedaa',
+      hochdeutsch: 'Trompete',
+      bedeutung: 'Die „Drumbedaa" ist die fränkische Lautmalerei für Trompete — wie das Geräusch des Instruments selbst. Im fränkischen Karneval und bei Trachtenfesten unverzichtbar. „D\'Drumbedaa hat losgeblasn!" Eine charmante, kindliche Wortbildung, die fränkische Sprachfreude zeigt. Auch im Faschingsumzug die Drumbedaa-Kapelle gehört dazu.',
+      beispiel: 'Im Faschingszug hat d\'Drumbedaa-Kapelle gespielt.',
+      beispiel_hd: 'Im Faschingszug hat die Trompeten-Kapelle gespielt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-184',
+      ausdruck: 'Roudla',
+      hochdeutsch: 'Rote Beete',
+      bedeutung: 'Die „Roudla" sind im Fränkischen Rote Beete (Rote Rüben) — das dunkelrote Gemüse, das im Salat oder als Beilage geschätzt wird. „Roudla-Salat mit Meerrettich" ist ein fränkischer Klassiker. Auch der „Roudla-Saft" als gesundes Getränk. Das fränkische „ou" und das „dla" am Ende sind typische Lautmerkmale. Bodenständiges fränkisches Gemüse mit langer Tradition.',
+      beispiel: 'Zum Schäuferla gibt\'s a Schüssl Roudla-Salat.',
+      beispiel_hd: 'Zum Schäuferla gibt es eine Schüssel Rote-Beete-Salat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-185',
+      ausdruck: 'Putzmappel',
+      hochdeutsch: 'Putzlappen',
+      bedeutung: 'Der „Putzmappel" ist im Fränkischen der Putzlappen — der feuchte Lappen zum Wischen. „Hol mol an feuchten Putzmappel!" Eine charakteristisch fränkische Bildung mit dem Verkleinerungs-Klang „-appel". Auch andere Lappen werden so bezeichnet. Praktisches Haushaltswort, das die alltägliche, sachliche Sprache der Franken zeigt.',
+      beispiel: 'Wo isch der Putzmappel? D\'Küchn isch dreckig.',
+      beispiel_hd: 'Wo ist der Putzlappen? Die Küche ist dreckig.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-186',
+      ausdruck: 'Bauschd',
+      hochdeutsch: 'Brust / Busen',
+      bedeutung: '„Bauschd" ist im Fränkischen die Brust — sowohl die männliche Brust als auch der weibliche Busen. „I drück mei Enkel an d\'Bauschd!" Eine warme, direkte Bezeichnung. Auch in Komposita: „Bauschd-Tee" (Brust-Tee bei Husten). Die plastische, klangvolle Aussprache mit „au" zeigt die typische fränkische Vokalmelodie.',
+      beispiel: 'D\'Oma hat den Enkel an d\'Bauschd gedrückt.',
+      beispiel_hd: 'Die Oma hat den Enkel an die Brust gedrückt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-187',
+      ausdruck: 'Bambach',
+      hochdeutsch: 'Bambach (kleiner Bach)',
+      bedeutung: '„Bambach" ist im Fränkischen ein kleiner Bach oder ein Wasserarm — auch als Eigenname für viele Bachläufe im fränkischen Land. „Mer fahre an Bambach zum Picknick." Die fränkische Mittelgebirgs-Landschaft ist von vielen kleinen Bachläufen durchzogen. Auch das berühmte „Bambach-Wässerla" ist sprichwörtlich für ein klares, frisches Wasser.',
+      beispiel: 'Am Bambach hen mir als Kinder gespielt.',
+      beispiel_hd: 'Am Bach haben wir als Kinder gespielt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-188',
+      ausdruck: 'Bawerbu',
+      hochdeutsch: 'Hosenträger',
+      bedeutung: 'Die „Bawerbu" sind im Fränkischen die Hosenträger — auch „Bawerbügeli" oder „Hosenträgele" genannt. Bei der traditionellen Fränkischen Bauerntracht unverzichtbar. „A schöne Bawerbu zum Sonntagshemd!" Im modernen Franken auch wieder modisch, besonders bei Trachtenträgern und Bauern. Eine klangvolle Wortprägung mit alemannisch-bayerischen Anklängen.',
+      beispiel: 'Mei Großvater trog stets seine Bawerbu zur Tracht.',
+      beispiel_hd: 'Mein Großvater trug stets seine Hosenträger zur Tracht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-189',
+      ausdruck: 'Goggela',
+      hochdeutsch: 'Eier (Kinderwort)',
+      bedeutung: 'Die „Goggela" sind im Fränkischen ein Kinderwort für Eier — besonders Ostereier. „D\'Kinder suchen Goggela im Garten!" Eine zärtliche, kindliche Bezeichnung. Auch in Komposita: „Goggela-Suche" zu Ostern. Die fränkische Liebe zur kindlichen Sprache spiegelt sich in vielen solchen Verkleinerungsformen wider — eine generationenübergreifende Tradition.',
+      beispiel: 'Zu Ostern verstecken mir Goggela im Garten.',
+      beispiel_hd: 'Zu Ostern verstecken wir Eier im Garten.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'fr-190',
+      ausdruck: 'Brummelich',
+      hochdeutsch: 'Mürrisch / Brummig',
+      bedeutung: '„Brummelich" beschreibt im Fränkischen einen mürrischen, brummigen, schlecht gelaunten Menschen. „Der Vatter isch heut wieder ganz brummelich!" Lautmalerisch wie das Brummen eines Bären. Eine warme, fast liebevolle Charakterisierung — der Brummelich ist nicht böse, nur unfreundlich. Familienmitglieder kennen ihre Brummelich-Tage und lassen sie geschehen.',
+      beispiel: 'Lass den Opa in Ruh, der isch heut brummelich.',
+      beispiel_hd: 'Lass den Opa in Ruhe, der ist heute mürrisch.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'fr-191',
+      ausdruck: 'Käsehaut',
+      hochdeutsch: 'Käserinde / Käsedeckel',
+      bedeutung: 'Die „Käsehaut" ist im Fränkischen die Rinde eines Käses — die feste Außenschicht, die manche essen, andere wegwerfen. „D\'Käsehaut isch des Bescht!" sagen die Fränkischen Käseliebhaber. In Franken gibt es viele eigene Käsesorten — Würzburger Schichtkäse, fränkische Quarkkäse. Die Käsekultur ist tief verwurzelt.',
+      beispiel: 'Iß auch d\'Käsehaut, die schmeckt am beschten!',
+      beispiel_hd: 'Iss auch die Käserinde, die schmeckt am besten!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-192',
+      ausdruck: 'Schoofseckl',
+      hochdeutsch: 'Schafskopf / Dummer Mensch',
+      bedeutung: 'Ein „Schoofseckl" ist im Fränkischen eine eher derbe Beleidigung für einen dummen Menschen — wörtlich „Schafs-Sack/Schafs-Hodensack". „Du Schoofseckl, jetz hast wieder ois falsch gmacht!" Mild bis derb, je nach Kontext. Verwandt mit dem schwäbisch-bayerischen „Schafseckl". Eine traditionelle ländliche Beleidigung mit Vieh-Bezug.',
+      beispiel: 'Du Schoofseckl, des stand doch in der Anleitung!',
+      beispiel_hd: 'Du Schafskopf, das stand doch in der Anleitung!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'fr-193',
+      ausdruck: 'Stinkmorchl',
+      hochdeutsch: 'Stinkmorchel (Pilz) / Übler Geruch',
+      bedeutung: 'Die „Stinkmorchl" ist eigentlich ein Pilz (Phallus impudicus), wird aber im Fränkischen auch für etwas oder jemanden mit üblem Geruch verwendet. „Du Stinkmorchl, putz dir d\'Zähn!" Im fränkischen Wald wächst die echte Stinkmorchel — riecht nach Aas, lockt Fliegen an. Das übertragene Schimpfwort hat seine bildliche Drastik aus dieser Pilz-Realität.',
+      beispiel: 'Mach\'s Fenster auf, hier stinkt\'s wie a Stinkmorchl!',
+      beispiel_hd: 'Mach das Fenster auf, hier stinkt es wie eine Stinkmorchel!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-194',
+      ausdruck: 'Hawale',
+      hochdeutsch: 'Schnell / Eilig',
+      bedeutung: '„Hawale" oder „hawal" bedeutet im Fränkischen „schnell", „eilig", „hurtig" — bayerisch verwandt mit „hawalla" oder „hawe". „Mach hawale, mir kommen z\'spät!" Der Klang des Wortes ist selbst dynamisch und treibend. Auch in der Wendung „hawale machen" (sich beeilen). Eine typisch fränkische Aufforderung zur Geschwindigkeit.',
+      beispiel: 'Mach hawale, der Zug fährt gleich!',
+      beispiel_hd: 'Mach schnell, der Zug fährt gleich!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-195',
+      ausdruck: 'Zoddelhoor',
+      hochdeutsch: 'Zottelige Haare',
+      bedeutung: 'Die „Zoddelhoor" sind im Fränkischen ungekämmte, zottelige Haare — wirr und ungepflegt. „Geh dich kämma, du host scho wieder Zoddelhoor!" Auch übertragen für einen langhaarigen, oft als unordentlich empfundenen Typ. Eine plastische, hörbar struppige Wortprägung. Die Beobachtung der Haare ist im fränkischen Familienleben Alltag.',
+      beispiel: 'Mit den Zoddelhoor gehst nicht aus em Haus!',
+      beispiel_hd: 'Mit den zotteligen Haaren gehst du nicht aus dem Haus!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-196',
+      ausdruck: 'Käska',
+      hochdeutsch: 'Käserei / Käse-Geschäft',
+      bedeutung: 'Die „Käska" oder „Käsa" ist im Fränkischen die Käserei oder das Käsegeschäft — meist klein, mit eigener Produktion und großer regionaler Vielfalt. In der Fränkischen Schweiz und im Steigerwald gibt es viele kleine Käsereien. „D\'Käska im Dorf hat den besten Bergkäs!" Eine wichtige Lebensmitteleinrichtung mit handwerklicher Tradition.',
+      beispiel: 'In der Käska gibt\'s den frischen Bergkäs aus der Region.',
+      beispiel_hd: 'In der Käserei gibt es den frischen Bergkäse aus der Region.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-197',
+      ausdruck: 'Schmeggla',
+      hochdeutsch: 'Schmecken / Genießen',
+      bedeutung: '„Schmeggla" ist im Fränkischen das genießerische Schmecken — das langsame, bewusste Kosten einer Speise. „Lass dir des auf der Zung schmeggla!" Auch übertragen: „die Sach schmeggla mer scho!" (die Sache schmeckt mir schon — also: gefällt mir). Eine warme, sinnliche fränkische Wortprägung mit dem typischen „eggla"-Suffix.',
+      beispiel: 'Des Schäuferla muss mer langsam schmeggla.',
+      beispiel_hd: 'Das Schäuferla muss man langsam genießen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-198',
+      ausdruck: 'Babbedeckl',
+      hochdeutsch: 'Pappdeckel / Bierdeckel',
+      bedeutung: 'Der „Babbedeckl" ist im Fränkischen der Pappdeckel oder Bierdeckel — der runde Untersetzer aus Karton, der das Bier vor dem Tisch schützt. In Franken auch oft als Notizzettel verwendet: Adressen, Telefonnummern, Witze werden auf den Babbedeckl gekritzelt. „Schreib\'s auf den Babbedeckl!" Eine ironisch-praktische fränkische Lösung.',
+      beispiel: 'Auf dem Babbedeckl hat er die Telefonnummer notiert.',
+      beispiel_hd: 'Auf dem Bierdeckel hat er die Telefonnummer notiert.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-199',
+      ausdruck: 'Schneckanudl',
+      hochdeutsch: 'Schneckennudel (Gebäck)',
+      bedeutung: 'Die „Schneckanudl" ist im Fränkischen eine süße Hefenudel in Schneckenform — meist mit Mohn, Nuss oder Rosinen gefüllt. Eine traditionelle fränkisch-bayerische Bäckerei-Spezialität. „Bei der fränkischen Bäckerei gibt\'s die besten Schneckanudln!" Klassisches Sonntagsfrühstücks-Gebäck. Die plastische Schneckenform wird im Wort fränkisch eingefangen.',
+      beispiel: 'Zum Frühstück a Schneckanudl mit Kaffee!',
+      beispiel_hd: 'Zum Frühstück eine Schneckennudel mit Kaffee!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-200',
+      ausdruck: 'Kindla',
+      hochdeutsch: 'Kindchen / Kleines Kind',
+      bedeutung: '„Kindla" ist im Fränkischen die Verkleinerungsform von „Kind" — Kindchen. „Mei Kindla schloft scho!" Die typische fränkische Verkleinerung mit „-la" gibt dem Wort warme, zärtliche Färbung. Auch in Komposita: „Christkindla" (das Christkind, das in Nürnberg Weltruhm hat). Eine herzige fränkische Wortprägung für die Allerkleinsten.',
+      beispiel: 'Komm her, mei Kindla, ich erzähl dir wos.',
+      beispiel_hd: 'Komm her, mein Kindchen, ich erzähle dir was.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-201',
+      ausdruck: 'Hawekuachn',
+      hochdeutsch: 'Haferkuchen / Hafergebäck',
+      bedeutung: 'Der „Hawekuachn" ist im Fränkischen ein Kuchen aus Haferflocken — eine rustikale, nahrhafte Mehlspeise. „Mei Oma macht den besten Hawekuachn!" In der einfachen Landküche Frankens ein Klassiker, der heute wieder als gesundes „Trend-Food" entdeckt wird. Mit Honig, Nüssen und Trockenfrüchten verfeinert.',
+      beispiel: 'Zum Kaffee gibt\'s a Stück Hawekuachn.',
+      beispiel_hd: 'Zum Kaffee gibt es ein Stück Haferkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-202',
+      ausdruck: 'Hellmondog',
+      hochdeutsch: 'Hellmondtag (sehr früh aufstehen)',
+      bedeutung: '„Hellmondog" beschreibt im Fränkischen einen sehr frühen Morgen — wenn der Mond noch hell am Himmel steht. „I bin scho seit Hellmondog wach!" Eine poetische, charakteristische fränkische Wortprägung. Drückt aus, wie schwierig es manchmal ist, früh aufzustehen, und gleichzeitig wie früh die Bauern und Arbeiter ihren Tag begonnen haben.',
+      beispiel: 'Auf der Wallfahrt sind mir scho seit Hellmondog unterwegs.',
+      beispiel_hd: 'Auf der Wallfahrt sind wir schon seit dem hellen Mond unterwegs.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'fr-203',
+      ausdruck: 'Schwammerlsuchn',
+      hochdeutsch: 'Pilze suchen',
+      bedeutung: 'Das „Schwammerlsuchn" ist im Fränkischen das Pilze-Sammeln im Wald — eine beliebte Herbstaktivität. „Schwammerl" sind Pilze, „suchn" das Suchen. In der Fränkischen Schweiz, im Steigerwald, im Spessart gibt es ausgedehnte Wälder mit reichem Pilzaufkommen — Steinpilze, Pfifferlinge, Maronen. „Am Wuchenend gen mir Schwammerlsuchn!" Eine bayerisch-fränkische Tradition.',
+      beispiel: 'Im Herbst gehen mir am liebsten Schwammerlsuchn.',
+      beispiel_hd: 'Im Herbst gehen wir am liebsten Pilze suchen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-204',
+      ausdruck: 'Bröselsupp',
+      hochdeutsch: 'Brösel-Suppe (Bröselbrei in Brühe)',
+      bedeutung: 'Die „Bröselsupp" ist eine traditionelle fränkische Suppe — eine klare Brühe mit Brösel-Klößchen (Brösel mit Ei und etwas Mehl zu kleinen Klößchen verbunden). „Bei Krankheit gibt\'s a wärmende Bröselsupp!" Eine einfache, magenfreundliche Suppe für Kinder und Kranke. Schmackhafte fränkische Hausmannskost, die heute wieder beliebter wird.',
+      beispiel: 'Wenn mer krank isch, mocht d\'Mama a Bröselsupp.',
+      beispiel_hd: 'Wenn man krank ist, macht die Mama eine Brösel-Suppe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-205',
+      ausdruck: 'Hutscha',
+      hochdeutsch: 'Schaukel',
+      bedeutung: 'Die „Hutscha" ist im Fränkischen die Schaukel — vom Verb „hutschn" (schaukeln). Auf jedem fränkischen Spielplatz und in vielen Gärten. „D\'Kinder spielen am liebsten auf der Hutscha!" Auch das „Hutschapferd" (Schaukelpferd) — ein klassisches Kinderspielzeug. Eine warme, kindliche Wortprägung mit klangvollem Diminutiv.',
+      beispiel: 'Im Garten hen mir a neue Hutscha aufgebaut.',
+      beispiel_hd: 'Im Garten haben wir eine neue Schaukel aufgebaut.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-206',
+      ausdruck: 'Müggla',
+      hochdeutsch: 'Mücke',
+      bedeutung: 'Die „Müggla" sind im Fränkischen die Mücken — die kleinen Stechmücken, die im Sommer plagen. „D\'Müggla beißen heut wieder!" Die Verkleinerungsform „-gla" gibt dem lästigen Insekt eine etwas gemütlichere Note. Im fränkischen Sommer mit seinen vielen Bachläufen und Weihern sind die Müggla allgegenwärtig. Praktische Tipps gegen Müggla werden von Generation zu Generation weitergegeben.',
+      beispiel: 'Mach\'s Fenster zu, die Müggla kommen rein!',
+      beispiel_hd: 'Mach das Fenster zu, die Mücken kommen rein!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-207',
+      ausdruck: 'Schnurrbarter',
+      hochdeutsch: 'Schnurrbart-Träger',
+      bedeutung: 'Ein „Schnurrbarter" ist im Fränkischen ein Mann mit Schnurrbart — eine charakteristische fränkische Beschreibung. Der Schnurrbart ist in Franken traditionell ein Männlichkeits-Symbol, besonders bei älteren Generationen. „Mei Großvater wor a stolzer Schnurrbarter!" Heute auch wieder modern, dank Hipster-Bart-Renaissance. Eine prägnante fränkische Personencharakterisierung.',
+      beispiel: 'Im Frankenheim leben no viele Schnurrbarter.',
+      beispiel_hd: 'In Franken leben noch viele Schnurrbart-Träger.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-208',
+      ausdruck: 'Vesperbrettla',
+      hochdeutsch: 'Brotzeitbrett / Vesperbrett',
+      bedeutung: 'Das „Vesperbrettla" ist im Fränkischen das Brotzeitbrett — ein hölzernes Servierbrett mit Brot, Wurst, Käse, Gurken, Radi, Senf. „Bei uns gibt\'s am Wuchenend a zünftigs Vesperbrettla!" Im fränkischen Gasthaus und zu Hause Standard. Die fränkische Brotzeit-Kultur ist eng mit der bayerischen verwandt — gesellig, deftig, herzhaft.',
+      beispiel: 'Beim Frankenwein gibt\'s a Vesperbrettla mit Bratwürschdla.',
+      beispiel_hd: 'Beim Frankenwein gibt es ein Brotzeitbrett mit Bratwürstchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-209',
+      ausdruck: 'Hallodri',
+      hochdeutsch: 'Hallodri / Tunichtgut',
+      bedeutung: 'Ein „Hallodri" ist im Fränkischen ein leichtsinniger, unverantwortlicher Mensch — ein Tunichtgut, der nichts ernst nimmt. „Mei Bruder isch a richtiger Hallodri!" Mit warmem Augenzwinkern gebraucht, manchmal aber auch ernsthaft. Verwandt mit dem bayerischen „Halodri". Eine charmant-charakteristische fränkische Personenbeschreibung.',
+      beispiel: 'Auf den Hallodri kannst dich net verlassn.',
+      beispiel_hd: 'Auf den Hallodri kannst du dich nicht verlassen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-210',
+      ausdruck: 'Knack-und-Beck',
+      hochdeutsch: 'Bäckerei mit Snacks (modern)',
+      bedeutung: 'Eine moderne fränkische Bezeichnung für die Bäckereien, die neben Brot auch Snacks anbieten — Brezeln, belegte Brötchen, Kuchen zum Mitnehmen. „Knack" steht für die Bissigkeit, „Beck" ist der fränkische Bäcker. In den fränkischen Städten allgegenwärtig — Frühstücks- und Snack-Versorgung. Eine zeitgemäße Wortbildung mit traditioneller fränkischer Färbung.',
+      beispiel: 'Beim Knack-und-Beck hol i mer\'n Kaffee zum Mitnehmen.',
+      beispiel_hd: 'Bei der Snack-Bäckerei hole ich mir einen Kaffee zum Mitnehmen.',
+      kategorie: 'orte'
     }
   ]
 };
