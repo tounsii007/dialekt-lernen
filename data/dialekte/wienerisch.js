@@ -685,11 +685,11 @@ export default {
     },
     {
       id: 'w-080',
-      ausdruck: 'Naschmarkt',
-      hochdeutsch: 'Wiener Naschmarkt',
-      bedeutung: 'Der Naschmarkt zwischen dem 4. und 6. Wiener Bezirk ist der bekannteste Markt Wiens — ein 1,5 km langer Marktstrang mit Obst, Gemüse, Käse, Fischen, Gewürzen und zahllosen Imbissen. Multikulturell mit türkischen, asiatischen und nahöstlichen Ständen. Am Samstag findet hier auch der berühmte Flohmarkt statt. Lebendiger Treffpunkt für Wiener und Touristen. Otto Wagner gestaltete die anliegenden Häuser im Jugendstil.',
-      beispiel: 'Am Samstag is\' der Flohmarkt am Naschmarkt — a Abenteuer.',
-      beispiel_hd: 'Am Samstag ist der Flohmarkt am Naschmarkt — ein Abenteuer.',
+      ausdruck: 'MuseumsQuartier',
+      hochdeutsch: 'MuseumsQuartier Wien',
+      bedeutung: 'Das MuseumsQuartier (MQ) im 7. Bezirk ist eines der grössten Kulturareale der Welt — 60.000 m² mit Leopold Museum, mumok (Museum moderner Kunst), Kunsthalle Wien, Tanzquartier, Architekturzentrum und vielen Cafés. Eröffnet 2001 in den ehemaligen kaiserlichen Hofstallungen. Die bunten „Enzis"-Sitzmöbel im Innenhof sind Kult — im Sommer Treffpunkt für junge Wiener. Eine geniale Kombination aus Barockfassade und moderner Kunst.',
+      beispiel: 'Im MQ chillen am Abend alle jungen Wiener auf die Enzis.',
+      beispiel_hd: 'Im MQ chillen am Abend alle jungen Wiener auf den Enzis.',
       kategorie: 'orte'
     },
     {
@@ -829,11 +829,11 @@ export default {
     },
     {
       id: 'w-096',
-      ausdruck: 'Stephansdom',
-      hochdeutsch: 'Stephansdom (Wiener Wahrzeichen)',
-      bedeutung: 'Der Stephansdom — liebevoll „Steffl" genannt — ist Wiens wichtigstes Wahrzeichen und einer der bedeutendsten gotischen Bauten Mitteleuropas. Der 137 m hohe Südturm dominiert die Wiener Skyline. Im Krieg 1945 schwer beschädigt — das Dach mit den bunten Ziegelmustern brannte aus. Wiederaufgebaut durch alle Bundesländer. Mozart heiratete hier, Beethoven hörte hier Glocken. Inmitten des Touristen-Trubels am Stephansplatz.',
-      beispiel: 'Der Steffl is\' der Mittelpunkt von Wien — von do aus geht alles.',
-      beispiel_hd: 'Der Stephansdom ist der Mittelpunkt von Wien — von dort aus geht alles.',
+      ausdruck: 'Karlskirche',
+      hochdeutsch: 'Karlskirche (Wiener Barockkirche)',
+      bedeutung: 'Die Karlskirche am Karlsplatz im 4. Wiener Bezirk ist eines der bedeutendsten Barockbauwerke nördlich der Alpen — erbaut 1716–1737 von Johann Bernhard Fischer von Erlach. Kaiser Karl VI. ließ sie als Dankeschön für das Ende der Pestepidemie 1713 bauen. Die ovale Kuppel und die beiden Triumphsäulen sind unverwechselbar. Im Sommer Konzert-Aufführungen (Vivaldi, Mozart). Mit dem Panoramaaufzug bis unter die Kuppel-Fresken — eindrucksvoll.',
+      beispiel: 'D\'Karlskirche is\' a Meisterwerk vom Barock.',
+      beispiel_hd: 'Die Karlskirche ist ein Meisterwerk des Barock.',
       kategorie: 'orte'
     },
     {
@@ -871,6 +871,231 @@ export default {
       beispiel: 'A Fahrt mit\'m Riesenrad bei Sunnenuntergang — magisch!',
       beispiel_hd: 'Eine Fahrt mit dem Riesenrad bei Sonnenuntergang — magisch!',
       kategorie: 'orte'
+    },
+    {
+      id: 'w-101',
+      ausdruck: 'Demel',
+      hochdeutsch: 'Demel (Hofzuckerbäckerei)',
+      bedeutung: 'Die k.u.k. Hofzuckerbäckerei Demel am Kohlmarkt ist seit 1786 Wiens berühmteste Konditorei — einst Hoflieferant von Kaiser Franz Joseph und Sisi. Berühmt für Demel-Sachertorte (im legendären Streit mit dem Hotel Sacher), Demel-Annatorten und Pralinen. Die „Demelinerinnen" (Verkäuferinnen) sprechen Gäste konsequent in dritter Person an: „Was hätten Schöne?" — ein Relikt der Habsburger-Etikette. Touristenmagnet mit lebendiger Kultur.',
+      beispiel: 'Bei\'m Demel kauf i die beste Sachertortn vo Wien.',
+      beispiel_hd: 'Bei Demel kaufe ich die beste Sachertorte von Wien.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-102',
+      ausdruck: 'Sacher',
+      hochdeutsch: 'Hotel Sacher / Sachertorte',
+      bedeutung: 'Das Hotel Sacher gegenüber der Staatsoper ist Wiens nobelstes Traditionshotel und Heimat der „Original Sacher-Torte". 1832 erfand der 16-jährige Lehrling Franz Sacher die berühmte Schokoladentorte mit Marillenmarmelade für Fürst Metternich. Ein jahrzehntelanger Rechtsstreit mit Demel um das Original wurde 1963 beigelegt. Eine Sachertorte mit Schlag im Café Sacher — Wiener Pflichtprogramm.',
+      beispiel: 'A Sachertortn mit Schlag im Café Sacher — geheh!',
+      beispiel_hd: 'Eine Sachertorte mit Schlag im Café Sacher — geht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-103',
+      ausdruck: 'Hawelka',
+      hochdeutsch: 'Café Hawelka (Künstlercafé)',
+      bedeutung: 'Das Café Hawelka in der Dorotheergasse ist ein legendäres Wiener Künstlercafé, gegründet 1939 von Leopold und Josefine Hawelka. Treffpunkt der Wiener Bohème: Friedensreich Hundertwasser, H.C. Artmann, Helmut Qualtinger und Andre Heller verkehrten hier. Eng, verraucht, plüschig — pure Patina. Berühmt für Frau Hawelkas Buchteln, frisch nach 22 Uhr serviert. Echtes Wien ohne touristische Glättung.',
+      beispiel: 'Im Hawelka gibt\'s die besten Buchteln vo Wien.',
+      beispiel_hd: 'Im Hawelka gibt es die besten Buchteln von Wien.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-104',
+      ausdruck: 'Lipizzaner',
+      hochdeutsch: 'Lipizzaner (Pferdezucht Spanische Hofreitschule)',
+      bedeutung: 'Die Lipizzaner sind eine alte österreichische Pferderasse, gezüchtet seit 1580 im slowenischen Lipica (damals Habsburger Reich). Berühmt durch die Spanische Hofreitschule in Wien, wo sie die klassische Reitkunst „Hohe Schule" vorführen — Levade, Capriole, Courbette. Lipizzaner werden schwarz geboren und werden im Laufe der Jahre weiß — meist erst mit 6-10 Jahren komplett. UNESCO-Weltkulturerbe der Reitkunst.',
+      beispiel: 'In der Hofreitschule kann ma d\'Lipizzaner bewundern.',
+      beispiel_hd: 'In der Hofreitschule kann man die Lipizzaner bewundern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'w-105',
+      ausdruck: 'Sängerknaben',
+      hochdeutsch: 'Wiener Sängerknaben',
+      bedeutung: 'Die Wiener Sängerknaben sind ein berühmter Knabenchor mit über 500-jähriger Tradition — gegründet 1498 von Kaiser Maximilian I. Joseph Haydn, Franz Schubert und Anton Bruckner waren als Knaben Mitglieder. Heute vier separate Chöre mit zusammen rund 100 Jungen im Alter von 9-14 Jahren. Singen Sonntag in der Hofburgkapelle bei der Messe und touren weltweit. Wiener Kultur-Export von Weltrang.',
+      beispiel: 'D\'Wiener Sängerknaben singen am Sunntag in da Hofburg.',
+      beispiel_hd: 'Die Wiener Sängerknaben singen am Sonntag in der Hofburg.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-106',
+      ausdruck: 'Naschmarkt',
+      hochdeutsch: 'Naschmarkt (großer Wiener Markt)',
+      bedeutung: 'Der Naschmarkt im 6. Bezirk ist Wiens größter und beliebtester Markt — seit dem 16. Jahrhundert. Auf 2,3 km lang reichen sich Obst- und Gemüsestände, Falafel-Buden, Sushi-Imbisse, Käse- und Wurstläden. Eine kulinarische Weltreise mitten in Wien. Am Samstag öffnet zusätzlich der Flohmarkt — Antiquitäten und Trödel pur. Hier mischen sich Wiener Hausfrauen, Touristen, Hipster und Künstler.',
+      beispiel: 'Am Naschmarkt kriagst alles — von Falafel bis Foie gras.',
+      beispiel_hd: 'Am Naschmarkt kriegst du alles — von Falafel bis Foie gras.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-107',
+      ausdruck: 'Topfengolatsche',
+      hochdeutsch: 'Topfengolatsche (Quark-Plundertasche)',
+      bedeutung: 'Die „Topfengolatsche" ist eine klassische Wiener Mehlspeise: ein quadratisches Plundergebäck, gefüllt mit süßem Topfen (Quark) und Rosinen. Das Wort „Golatsche" stammt vom tschechischen „koláč" (Kuchen) — Erbe der k.u.k. Vielvölkerwanderung. Wird in jeder Wiener Bäckerei zum Frühstückskaffee gereicht. Auch als „Apfel-" oder „Powidlgolatsche" mit Pflaumenmus. Süßer Wiener Klassiker mit böhmischen Wurzeln.',
+      beispiel: 'A Topfengolatschn zum Melange — Frühstücksritual.',
+      beispiel_hd: 'Eine Topfengolatsche zum Melange — Frühstücksritual.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-108',
+      ausdruck: 'Falco',
+      hochdeutsch: 'Falco (Sänger)',
+      bedeutung: 'Falco (1957–1998, eigentlich Johann Hölzel) war Österreichs international erfolgreichster Popstar — Wiener Sohn mit Welthits wie „Rock Me Amadeus" (1985, weltweit Nr. 1), „Der Kommissar" und „Jeanny". Sein Mix aus Rap, Pop und Wiener Schmäh war einzigartig. Tragisch früh verstorben bei einem Autounfall in der Dominikanischen Republik. Ist bis heute Kult — der Falco-Kult prägt Wiens Selbstbild.',
+      beispiel: '„Rock Me Amadeus" — Falco bleibt unsterblich.',
+      beispiel_hd: '„Rock Me Amadeus" — Falco bleibt unsterblich.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-109',
+      ausdruck: 'Tschick',
+      hochdeutsch: 'Zigarette',
+      bedeutung: 'Der „Tschick" ist im Wienerischen die Zigarette — wahrscheinlich vom italienischen „cicca" (Kippe) abgeleitet. Auch „Tschickern" bedeutet rauchen. „Auf an Tschick gehn" — kurz rauchen gehen. Wolf Haas\' berühmter Roman „Tschick" hat den Begriff über Wien hinaus bekannt gemacht. In Wiener Beisln gehört der Tschick zur Lebenswelt — auch wenn das Rauchverbot 2019 die Kultur verändert hat.',
+      beispiel: 'I geh schnell auf an Tschick rauf.',
+      beispiel_hd: 'Ich gehe schnell auf eine Zigarette raus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-110',
+      ausdruck: 'Hofburg',
+      hochdeutsch: 'Hofburg (Kaiserresidenz)',
+      bedeutung: 'Die Wiener Hofburg war über 600 Jahre lang die Hauptresidenz der Habsburger — vom 13. Jahrhundert bis 1918. Eine riesige Anlage mit über 2.600 Räumen in 18 Trakten — gewachsen über Jahrhunderte mit verschiedenen Architekturstilen. Heute Amtssitz des Bundespräsidenten, Sitz der Nationalbibliothek, der Spanischen Hofreitschule und Veranstaltungsort des Wiener Opernballs. Das politische und kulturelle Herz Österreichs.',
+      beispiel: 'In da Hofburg sitzt da Bundespräsident.',
+      beispiel_hd: 'In der Hofburg sitzt der Bundespräsident.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-111',
+      ausdruck: 'G\'spritzter',
+      hochdeutsch: 'Spritzer (Wein mit Mineralwasser)',
+      bedeutung: 'Der „G\'spritzte" ist das Wiener Sommer-Getränk schlechthin: Weißwein (meist Grüner Veltliner) gemischt mit Mineralwasser, etwa 1:1. Wird im Heurigen, im Beisl und auf Straßenfesten getrunken. „Sauer g\'spritzt" mit Mineralwasser, „süß g\'spritzt" mit Limonade. Erfunden, um den Wein länger genießen zu können — Wiener Kompromiss zwischen Lebensgenuss und Mäßigung.',
+      beispiel: 'A G\'spritzten, bittschön — sauer!',
+      beispiel_hd: 'Einen Spritzer, bitte — sauer!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-112',
+      ausdruck: 'Wirti',
+      hochdeutsch: 'Wirt / Gastwirt (Wienerisch)',
+      bedeutung: 'Der „Wirti" ist im Wienerischen der Wirt des Beisls oder Wirtshauses — eine Schlüsselfigur der Wiener Gesellschaft. Er kennt seine Stammgäste, ihre Geschichten und ihre Liebsten. Der Wirti ist Vertrauter, Psychologe und Kreditgeber zugleich. „Beim Wirti um\'s Eck" ist Standard-Treffpunkt. Verkleinerungsform „-i" zeigt die Wiener Vertraulichkeit — selbst Autoritäten werden so liebevoll-spöttisch eingeordnet.',
+      beispiel: 'Da Wirti kennt mi seit zwanzig Jahr.',
+      beispiel_hd: 'Der Wirt kennt mich seit zwanzig Jahren.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-113',
+      ausdruck: 'Krampus',
+      hochdeutsch: 'Krampus (Begleiter des Nikolaus)',
+      bedeutung: 'Der Krampus ist im Alpenraum die finstere Schreckgestalt, die am 5. Dezember die unartigen Kinder bestraft — Gegenstück zum gütigen Nikolaus. Halb Teufel, halb Bock, mit Hörnern, Rute, Glocken und langer Zunge. Bei „Krampusläufen" ziehen verkleidete junge Männer durch die Straßen und erschrecken Passanten. Pure Folklore mit heidnischen Wurzeln. In Wien zahmer als in Tirol — aber präsent.',
+      beispiel: 'Da Krampus kummt heut zu di — wennst bös warst!',
+      beispiel_hd: 'Der Krampus kommt heute zu dir — wenn du böse warst!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-114',
+      ausdruck: 'Powidl',
+      hochdeutsch: 'Powidl (Pflaumenmus)',
+      bedeutung: 'Der „Powidl" ist im Wienerischen das Pflaumenmus — vom tschechischen „povidla". Ohne Zucker gekochtes, sehr dunkles, fast schwarzes Pflaumenmus, das stundenlang einreduziert wird. Klassische Füllung für Powidltascherl, Buchteln, Krapfen und Knödel. Übertragen heißt „des is mir Powidl!" — das ist mir egal, das ist mir wurscht. Wiener Allzweck-Wort und Allzweck-Lebensmittel zugleich.',
+      beispiel: 'Des is mir vollkommen Powidl, wia\'s ausgeht.',
+      beispiel_hd: 'Das ist mir vollkommen egal, wie es ausgeht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-115',
+      ausdruck: 'Hetz',
+      hochdeutsch: 'Spaß / Vergnügen',
+      bedeutung: 'Die „Hetz" ist im Wienerischen der Spaß, das Vergnügen — von der „Hatz" (Verfolgung). „A Hetz haben" heißt sich amüsieren. „A Mordshetz" ist riesiger Spaß. „Nur a Hetz" entschuldigt einen Streich. Wiener Lebensphilosophie: Nichts soll zu ernst werden, alles ist letztlich „nur a Hetz". Auch in der Wendung „aus Hetz" — aus Jux, aus Spaß. Kernwort der Wiener Mentalität.',
+      beispiel: 'Mir hams ghabt a Hetz gestern beim Heurigen!',
+      beispiel_hd: 'Wir hatten gestern einen Riesenspaß beim Heurigen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-116',
+      ausdruck: 'Sissi',
+      hochdeutsch: 'Sisi / Kaiserin Elisabeth',
+      bedeutung: 'Kaiserin Elisabeth (1837–1898), Spitzname „Sisi" (oder „Sissi" durch die Romy-Schneider-Filme), war die schöne, scheue, exzentrische Frau von Kaiser Franz Joseph I. Berühmt für ihre 1,50 m langen Haare, ihre 50 cm Taille, ihre Reisesucht und ihren tragischen Tod durch einen Anarchisten-Anschlag in Genf. Bis heute ein Wiener Mythos — Sisi-Museum in der Hofburg, Sisi-Tassen und endlose Filme. Wiener Kult.',
+      beispiel: 'D\'Sisi war\'a tragische Figur, net so harmlos wia im Film.',
+      beispiel_hd: 'Die Sisi war eine tragische Figur, nicht so harmlos wie im Film.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-117',
+      ausdruck: 'Tschuschn',
+      hochdeutsch: 'Abwertend: Ausländer (südosteuropäisch)',
+      bedeutung: '„Tschuschn" ist ein abwertender Wiener Ausdruck für Menschen aus Südosteuropa, besonders dem ehemaligen Jugoslawien. Der Begriff wird heute zu Recht als rassistisch eingestuft, hat aber eine komplexe Geschichte: Manche Communities haben das Wort selbstironisch zurückerobert. In der berühmten „Tschuschen-Comedy" wird das Wort als Selbstbezeichnung satirisch verwendet. Schwierige Vergangenheit der Wiener Sprache.',
+      beispiel: 'Des Wort sollt ma heut nimma in den Mund nehmen.',
+      beispiel_hd: 'Das Wort sollte man heute nicht mehr in den Mund nehmen.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-118',
+      ausdruck: 'Hochzeitsuppe',
+      hochdeutsch: 'Wiener Hochzeitssuppe',
+      bedeutung: 'Die Wiener „Hochzeitsuppe" ist eine klare Rindssuppe mit speziellen Einlagen: Frittaten, Leberknödel, Markknödel, Backerbsen — alles zusammen serviert. Klassisch zur Hochzeit oder zu festlichen Anlässen. Geht zurück auf die k.u.k. Hochzeitstradition. Auch zur normalen Sonntagssuppe können mehrere Einlagen kombiniert werden — der Wiener nennt sie dann auch „Hochzeitsuppe". Klassiker der Wiener Festtagsküche.',
+      beispiel: 'A guate Hochzeitsuppe mit Leberknödel und Frittaten.',
+      beispiel_hd: 'Eine gute Hochzeitssuppe mit Leberknödel und Frittaten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-119',
+      ausdruck: 'Wuiderer',
+      hochdeutsch: 'Wilderer / Wildschütz',
+      bedeutung: 'Der „Wuiderer" ist im österreichischen Volksglauben und in Volksliedern eine romantisierte Figur — der Wilderer, der dem Adel oder dem Staat das Wild raubt. In Liedern wie „Es war einmal ein Jäger" oder dem „Wildschütz Jennerwein" wird er als Volksheld besungen. Im realen Leben war Wilderei lange ein Kapitalverbrechen, mit Galgen bedroht. Heute reines Folklore-Motiv in Liedern und Filmen.',
+      beispiel: 'Das Wildschütz-Lied erzählt vo am tragischen Wuiderer.',
+      beispiel_hd: 'Das Wildschütz-Lied erzählt von einem tragischen Wilderer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-120',
+      ausdruck: 'Kaffeehaus',
+      hochdeutsch: 'Wiener Kaffeehaus',
+      bedeutung: 'Das Wiener Kaffeehaus ist seit 2011 UNESCO-Immaterielles Weltkulturerbe — ein Ort, an dem „Zeit und Raum konsumiert werden, aber nur der Kaffee auf der Rechnung steht" (Alfred Polgar). Marmortische, Thonet-Stühle, Zeitungen am Holzhalter, Wasserglas zum Kaffee, niemand wird zur Eile gedrängt. Berühmte Vertreter: Central, Landtmann, Schwarzenberg, Sperl. Hier entstanden Kunst, Literatur und Politik des 20. Jahrhunderts.',
+      beispiel: 'Im Kaffeehaus sitz i gern stundenlang mit ana Zeitung.',
+      beispiel_hd: 'Im Kaffeehaus sitze ich gern stundenlang mit einer Zeitung.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-121',
+      ausdruck: 'Krügerl',
+      hochdeutsch: 'Krügerl (halber Liter Bier)',
+      bedeutung: 'Das „Krügerl" ist im österreichischen Bier-Vokabular ein halber Liter Bier — Standardmaß im Beisl. Im Gegensatz zum bayerischen „Maß" (1 Liter) oder dem deutschen „großen Bier" (0,4-0,5 l) ist das Krügerl exakt 0,5 Liter. „A Seidl" (0,3 l) ist die kleinere Variante, „a Pfiff" (0,1 l) das Mini-Bier. Wiener Biersprache hat ihre eigene Präzision — wer „a Bier" bestellt, gilt als Tourist.',
+      beispiel: 'A Krügerl, bittschön — Märzen!',
+      beispiel_hd: 'Ein Krügerl, bitte — Märzen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-122',
+      ausdruck: 'Tafelspitz',
+      hochdeutsch: 'Tafelspitz (gekochtes Rindfleisch)',
+      bedeutung: 'Der „Tafelspitz" ist ein Wiener Nationalgericht und das Lieblingsessen von Kaiser Franz Joseph I. — angeblich aß er es täglich. Ein Stück Rindfleisch aus dem Schwanzansatz, in Rindssuppe weichgekocht, klassisch serviert mit Apfelkren, Schnittlauchsoße, Rösterdäpfeln und Spinat. Im Wiener Plachutta-Restaurant Pflichtprogramm. Symbol der Wiener Bürgerküche — schlicht, aber kunstvoll zubereitet.',
+      beispiel: 'Im Plachutta gibt\'s den besten Tafelspitz vo Wien.',
+      beispiel_hd: 'Im Plachutta gibt es den besten Tafelspitz von Wien.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-123',
+      ausdruck: 'Tschocherl',
+      hochdeutsch: 'Tschocherl (kleines verrauchtes Lokal)',
+      bedeutung: 'Das „Tschocherl" ist im Wienerischen ein winziges, oft heruntergekommenes Beisl oder eine Eckkneipe — Gegenstück zum gehobenen Café oder Restaurant. Hier wird billig getrunken, geraucht (früher) und gequatscht. „Im Tschocherl an der Eck" — Wiener Lebenswelt par excellence. Wolfgang Ambros besang die Wiener Tschocherl in seinen Liedern. Heute zunehmend verdrängt durch Hipster-Bars — aber noch nicht verloren.',
+      beispiel: 'Im Tschocherl am Eck zum Würstelstand — schau ma kurz vorbei.',
+      beispiel_hd: 'Im kleinen Eckbeisl gleich am Würstelstand — schauen wir kurz vorbei.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-124',
+      ausdruck: 'Pülcher',
+      hochdeutsch: 'Pülcher (kleinkrimineller Gauner)',
+      bedeutung: 'Der „Pülcher" ist im Wienerischen ein kleiner Gauner, ein Tagedieb, ein Kleinkrimineller — eine Wiener Spezifikation des „Strizzi". Halb verlottert, halb charmant — gehört zur Wiener Folklore wie der Würstelstand. Im 19. Jahrhundert echte Sozialgestalt — heute mehr literarische Figur. Helmut Qualtinger spielte den Pülcher in vielen Sketchen. Wiener Schmäh in seiner derbsten Form.',
+      beispiel: 'Da Sepp is\'a Pülcher — aber mit Herz!',
+      beispiel_hd: 'Der Sepp ist ein kleiner Gauner — aber mit Herz!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-125',
+      ausdruck: 'Wienerlied',
+      hochdeutsch: 'Wienerlied (Volkslied-Genre)',
+      bedeutung: 'Das „Wienerlied" ist ein eigenes musikalisches Genre — wehmütig-melancholische Lieder über Wien, das Leben, das Sterben, die Liebe und das Bier. Begleitet von Schrammel-Musik (zwei Geigen, Klarinette, Kontragitarre). Berühmte Sänger: Hans Moser, Karl Hodina, André Heller, Helmut Qualtinger. Das Lied „I hab di gern" oder „Mei Muatterl war a Weanerin" sind Klassiker. Wiener Identität in Tönen.',
+      beispiel: 'Beim Heurigen wird a echtes Wienerlied gsunga.',
+      beispiel_hd: 'Beim Heurigen wird ein echtes Wienerlied gesungen.',
+      kategorie: 'musik'
     }
   ]
 };

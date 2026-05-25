@@ -875,6 +875,231 @@ export default {
       beispiel: 'Des Konzert gestern war so wuid — i hab no\' Ohrensausen!',
       beispiel_hd: 'Das Konzert gestern war so wild — ich habe noch Ohrensausen!',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-101',
+      ausdruck: 'Ozapft is!',
+      hochdeutsch: 'Es ist angezapft!',
+      bedeutung: 'Der berühmteste bairische Satz der Welt — gesprochen vom Münchner Oberbürgermeister beim ersten Schlag in das Fass auf der Wiesn. Der Spruch eröffnet seit 1950 (eingeführt von OB Thomas Wimmer) offiziell das Oktoberfest. Je weniger Schläge der OB für den Anstich braucht, desto besser das politische Omen — Rekordhalter ist Christian Ude mit zwei Schlägen. Ein Satz, der weltweit für bayerisches Lebensgefühl steht.',
+      beispiel: '„Ozapft is!" — und a halbe Million Leit jubeln auf der Wiesn.',
+      beispiel_hd: '„Es ist angezapft!" — und eine halbe Million Leute jubeln auf der Wiesn.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-102',
+      ausdruck: 'Goggerl',
+      hochdeutsch: 'Hahn / Henne',
+      bedeutung: 'Das „Goggerl" ist das bairische Wort für ein Huhn oder einen Hahn — eine lautmalerische Bildung vom typischen Hühnergeräusch („gock gock"). Auch das Diminutiv „Goggerl" für ein kleines Hühnchen wird oft liebevoll verwendet. In ländlichen Regionen Bayerns gehören Hühner zum Hof wie die Kühe. Der Spruch „Mei Goggerl legt heid wieder a Oa" ist Inbegriff bäuerlicher Idylle.',
+      beispiel: 'D\'Goggerln laffan im Garten umanand.',
+      beispiel_hd: 'Die Hühner laufen im Garten herum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-103',
+      ausdruck: 'Hutschpferd',
+      hochdeutsch: 'Schaukelpferd',
+      bedeutung: 'Das „Hutschpferd" ist im Bairischen das Schaukelpferd — vom Verb „hutschn" (schaukeln). Es war das klassische Kinderspielzeug auf bayerischen Bauernhöfen und gehört zur Kindheits-Folklore. Heute oft als nostalgisches Symbol für unbeschwerte Kindertage. Das Verb „hutschn" wird auch allgemein für „wiegen" oder „schaukeln" verwendet — „a Kind aufm Schoß hutschn".',
+      beispiel: 'Da Bua hutscht aufm Hutschpferd vom Opa.',
+      beispiel_hd: 'Der Junge schaukelt auf dem Schaukelpferd vom Opa.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-104',
+      ausdruck: 'Söder',
+      hochdeutsch: 'Markus Söder (Ministerpräsident Bayern)',
+      bedeutung: 'Markus Söder (geb. 1967) ist seit 2018 Ministerpräsident von Bayern und seit 2019 Vorsitzender der CSU. Bekannt für seine Wandlungsfähigkeit, seine Liebe zu Bratwürsten und Faschings-Kostümen sowie seine starke Medienpräsenz. Im bayerischen Volksmund häufig Ziel von Spott und Bewunderung gleichermaßen. Hat das Bild des „bayerischen Landesvaters" modernisiert und für TikTok-Generation angepasst.',
+      beispiel: 'Da Söder hat scho wieder a neues Kostüm anghabt im Fasching.',
+      beispiel_hd: 'Der Söder hat schon wieder ein neues Kostüm im Fasching angehabt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-105',
+      ausdruck: 'Watschnbaam',
+      hochdeutsch: 'Ohrfeigenbaum / Streithammel',
+      bedeutung: 'Der „Watschnbaam" — wörtlich „Ohrfeigenbaum" — ist im Bairischen jemand, der ständig Ohrfeigen (Watschn) einfängt oder verteilt. Das saftige Bild: ein Baum, von dem Watschn fallen wie Äpfel. Wird sowohl für aggressive Streithähne als auch für unverschämte Frechdachse verwendet, die „a Watschn verdient hätten". Heute meist scherzhaft und mit einem Augenzwinkern gemeint. Klassisches bairisches Sprachbild.',
+      beispiel: 'Der Lausbua is a echter Watschnbaam!',
+      beispiel_hd: 'Der Lausbube ist ein echter Frechdachs!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-106',
+      ausdruck: 'Polt',
+      hochdeutsch: 'Gerhard Polt (Kabarettist)',
+      bedeutung: 'Gerhard Polt (geb. 1942) ist Bayerns berühmtester Kabarettist und Satiriker. Mit Sketchen wie „Mai Ling", „Der Mann am Fenster" oder „Pension Schöller" hat er das bayerische Spießertum, den Kleinbürger und den Bürokraten unsterblich karikiert. Seine Figuren sprechen ein durchgehendes Bairisch — Polt hat dem Dialekt literarischen Rang verliehen. Mit Gisela Schneeberger und den Well-Brüdern eine bayerische Kultur-Institution.',
+      beispiel: 'Da Polt is\'a Genie — wia\'a den oide Spießa nachmacht!',
+      beispiel_hd: 'Der Polt ist ein Genie — wie er den alten Spießer nachmacht!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-107',
+      ausdruck: 'Wadelboatzn',
+      hochdeutsch: 'Wadenbeißer (kleiner aggressiver Hund/Mensch)',
+      bedeutung: 'Der „Wadelboatzn" — auch „Wadlbeißer" — ist im Bairischen ursprünglich ein kleiner, kläffender Hund, der den Leuten in die Waden beißt. Übertragen wird der Begriff für streitsüchtige, aggressive Personen verwendet — meist kleine, energische Charaktere, die immer Ärger suchen. In der Politik werden so auch unbequeme Querulanten genannt. Liebevoll-spöttisch gemeint, nicht wirklich beleidigend.',
+      beispiel: 'Der oide Wadelboatzn streit halt einfach gern.',
+      beispiel_hd: 'Der alte Wadenbeißer streitet halt einfach gern.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-108',
+      ausdruck: 'Aibling',
+      hochdeutsch: 'Bad Aibling (Stadt in Oberbayern)',
+      bedeutung: 'Bad Aibling im Landkreis Rosenheim ist ein bayerischer Kurort, weltbekannt aus der ZDF-Serie „Die Rosenheim-Cops" und der Komödie „Aibling Cops". Berühmt für sein Moorbad und die nahe gelegene Bundesnachrichtendienst-Abhörstation. Liegt malerisch im bayerischen Voralpenland. Inbegriff der bayerischen Kleinstadt-Idylle, die durch Krimi-Serien Kultstatus erreicht hat.',
+      beispiel: 'In Bad Aibling drehn\'s d\'Rosenheim-Cops.',
+      beispiel_hd: 'In Bad Aibling drehen sie die Rosenheim-Cops.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-109',
+      ausdruck: 'Fluchtbier',
+      hochdeutsch: 'Fluchtbier (heimliches Schnellbier)',
+      bedeutung: 'Das „Fluchtbier" ist eine bayerische Wirtshaus-Tradition: das letzte schnell heruntergetrunkene Bier vor dem Aufbruch — oft heimlich vor der Frau zu Hause oder vor der Sperrstunde. Stammt aus der Zeit, als Frauen nicht ins Wirtshaus kamen und Männer rasch noch eines vor dem Heimweg trinken mussten. Wird heute scherzhaft für jedes hastig getrunkene Bier verwendet. Kulturelles Zeugnis bayerischer Wirtshaus-Mentalität.',
+      beispiel: 'Auf a Fluchtbier no, dann gehn ma!',
+      beispiel_hd: 'Auf ein Fluchtbier noch, dann gehen wir!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-110',
+      ausdruck: 'Kraxn',
+      hochdeutsch: 'Tragegestell aus Holz / Schrottkarren',
+      bedeutung: 'Die „Kraxn" ist ursprünglich ein hölzernes Rückentragegestell, mit dem bayerische Bauern und Sennen Lasten transportierten. Im übertragenen Sinne bezeichnet „Kraxn" auch ein altes, klappriges Auto („mit der oidn Kraxn fahr i nimma!") oder eine schäbige Konstruktion. „Aufkraxln" heißt heute noch „auf den Berg steigen". Lebendiger Begriff zwischen Tradition und modernem Spott.',
+      beispiel: 'Mit dera oidn Kraxn fahrst no? Schmeiß as weg!',
+      beispiel_hd: 'Mit dieser alten Schrottkarre fährst du noch? Wirf sie weg!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-111',
+      ausdruck: 'Russ',
+      hochdeutsch: 'Russ (Bier mit Zitronenlimonade)',
+      bedeutung: 'Der „Russ" ist ein bayerisches Biermischgetränk: Weißbier zur Hälfte mit Zitronenlimonade aufgespritzt. Erfunden Anfang des 20. Jahrhunderts in München. Ähnlich dem Radler, aber mit Weißbier statt Helles. Beliebt im Sommer, da es leichter und süßer schmeckt als pures Weißbier. „A Russ, bittschön!" ist eine Standard-Bestellung in jedem bayerischen Biergarten an heißen Tagen. Klassiker der bayerischen Trinkkultur.',
+      beispiel: 'Bei der Hitz lieber a Russ als a Weißbier pur.',
+      beispiel_hd: 'Bei der Hitze lieber ein Russ als ein Weißbier pur.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-112',
+      ausdruck: 'Drachenstich',
+      hochdeutsch: 'Drachenstich Furth im Wald',
+      bedeutung: 'Der „Drachenstich" in Furth im Wald (Oberpfalz) ist das älteste deutsche Volksschauspiel, erstmals 1590 erwähnt. Jährlich im August wird die Sage vom heiligen Georg, der den Drachen erschlug, aufgeführt. Der mechanische Drache ist 15,5 m lang, wiegt 11 Tonnen — der größte vierbeinige Roboter der Welt. Hunderte Statisten in mittelalterlichen Kostümen. Bayerische Volkskultur und Touristen-Spektakel zugleich.',
+      beispiel: 'In Furth im Wald is jeds Jahr da Drachenstich a Wahnsinn.',
+      beispiel_hd: 'In Furth im Wald ist jedes Jahr der Drachenstich der Wahnsinn.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-113',
+      ausdruck: 'Spotzl',
+      hochdeutsch: 'Spatzerl / Kleines (Kosewort)',
+      bedeutung: 'Das „Spotzl" oder „Spatzl" ist ein bayerisches Kosewort, abgeleitet vom Spatzen — einem kleinen, lebhaften Vogel. Wird vor allem für Frauen, Mädchen oder Kinder als Zärtlichkeitsbezeichnung verwendet. „Mei Spotzl" ist liebevolle Anrede zwischen Partnern. Auch im Wirtshaus hört man ältere Kellnerinnen sagen „Was wuist denn, Spatzl?" zu jüngeren Gästen. Wärme und Vertrautheit pur.',
+      beispiel: 'Hallo Spotzl, was machst denn du do?',
+      beispiel_hd: 'Hallo Spatzerl, was machst denn du da?',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-114',
+      ausdruck: 'Schuachplattler',
+      hochdeutsch: 'Schuhplattler (Volkstanz)',
+      bedeutung: 'Der „Schuachplattler" ist ein traditioneller bayerisch-tirolerischer Volkstanz, bei dem Männer in Lederhosen rhythmisch auf ihre Schuhe, Knie und Schenkel klatschen. Stammt aus dem 19. Jahrhundert, wurzelt aber in alten Balzritualen. Wird heute von Trachtenvereinen gepflegt und gehört zu jedem zünftigen bayerischen Fest. „A guter Plattler" beherrscht über 100 verschiedene Schläge — eine echte Kunstform.',
+      beispiel: 'Beim Volksfest hams an wahnsinns Schuachplattler aufg\'führt.',
+      beispiel_hd: 'Beim Volksfest haben sie einen wahnsinns Schuhplattler aufgeführt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-115',
+      ausdruck: 'Walpurgisnacht',
+      hochdeutsch: 'Walpurgisnacht (30. April)',
+      bedeutung: 'Die Nacht vom 30. April auf den 1. Mai gilt im bayerischen Volksglauben als Hexennacht, in der böse Geister umgehen. Junge Burschen ziehen durchs Dorf und treiben „Lausbubenstreiche": Gartentüren werden ausgehängt, Schubkarren auf Dächer gehoben, Sachen umgestellt. Stammt aus heidnischen Frühlings-Bräuchen. In manchen Dörfern wird auch ein Maibaum aufgestellt — bayerisch-bairische Folklore in Reinkultur.',
+      beispiel: 'In da Walpurgisnacht treibns hier ois Lausbubenstreich.',
+      beispiel_hd: 'In der Walpurgisnacht treiben sie hier allerhand Lausbubenstreiche.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-116',
+      ausdruck: 'Reibekuacha',
+      hochdeutsch: 'Reibekuchen / Kartoffelpuffer',
+      bedeutung: 'Die „Reibekuacha" sind die bayerische Variante des Kartoffelpuffers — aus geriebenen rohen Kartoffeln, Ei und Mehl in der Pfanne knusprig gebraten. Werden oft mit Apfelmus serviert. Auf jedem bayerischen Volksfest unverzichtbar — der Duft nach Reibekuachen gehört zum Wiesn-Erlebnis wie der Bierdunst. Auch zuhause beliebt als deftiges Hausmannskost-Gericht. Süß oder herzhaft genießbar.',
+      beispiel: 'Reibekuacha mit Apfelmus — des is wia bei Oma!',
+      beispiel_hd: 'Reibekuchen mit Apfelmus — das ist wie bei Oma!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-117',
+      ausdruck: 'Bavaria',
+      hochdeutsch: 'Bavaria-Statue München',
+      bedeutung: 'Die „Bavaria" ist eine 18 Meter hohe bronzene Frauenstatue auf der Theresienhöhe in München, oberhalb der Theresienwiese. Erschaffen 1843–1850 von Ludwig Schwanthaler im Auftrag von König Ludwig I. Die personifizierte weibliche Symbolfigur des Freistaates Bayern. Im Inneren ist eine Treppe — Besucher können in den Kopf hinaufsteigen und durch die Augen auf das Oktoberfest hinabblicken. Wahrzeichen Münchens neben Frauenkirche.',
+      beispiel: 'Vo da Bavaria aus siehst die ganze Wiesn.',
+      beispiel_hd: 'Von der Bavaria aus siehst du die ganze Wiesn.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-118',
+      ausdruck: 'Resi',
+      hochdeutsch: 'Resi (Kosename für Theresa)',
+      bedeutung: 'Die „Resi" ist die bayerische Koseform für Theresa — der häufigste Frauenname im historischen Bayern, benannt nach Königin Therese, der Frau von König Ludwig I. Die Theresienwiese in München (Ort des Oktoberfestes) ist nach ihr benannt. „D\'Resi" ist in der bayerischen Volkskultur fast schon ein Archetyp — die kernige, lebensfrohe Wirtin oder Bäuerin. Auch berühmt durch das Lied „Resi, i hol di mit\'m Traktor ab".',
+      beispiel: 'D\'Resi vom Wirtshaus is\'a wahnsinns Frau.',
+      beispiel_hd: 'Die Resi vom Wirtshaus ist eine wahnsinns Frau.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-119',
+      ausdruck: 'Föhn',
+      hochdeutsch: 'Föhn (warmer Alpenwind)',
+      bedeutung: 'Der „Föhn" ist ein warmer, trockener Fallwind, der vom Alpenkamm in den bayerischen Voralpenraum weht. Bei Föhnwetter sieht man die Alpenkette zum Greifen nah — auch in 100 km Entfernung. Berüchtigt für Kopfschmerzen, Migräne und Müdigkeit („Föhnkrank"). Viele Bayern fluchen über den Föhn, andere genießen das warme Wetter mitten im Winter. Bayerisches Wetterphänomen par excellence.',
+      beispiel: 'Bei Föhn siehst d\'Berg, aber kriagst Kopfweh.',
+      beispiel_hd: 'Bei Föhn siehst du die Berge, aber kriegst Kopfschmerzen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-120',
+      ausdruck: 'Wadlbiss',
+      hochdeutsch: 'Wadenbiss (Volkstanz-Spaß)',
+      bedeutung: 'Beim „Wadlbiss" handelt es sich um eine bayerische Brauchtums-Späßerei — beim Schuachplattler oder Volkstanz wird scherzhaft in die Wade des Tanzpartners gezwickt oder gebissen. Auch im Übertragenen Sinn: kleine Sticheleien und neckische Bemerkungen zwischen Freunden. Bayerische Männerfreundschaften zeigen sich oft durch solche derben Späße. Heute eher Folklore als gelebte Praxis.',
+      beispiel: 'Sei vorsichtig beim Tanz, sonst gibt\'s a Wadlbiss!',
+      beispiel_hd: 'Sei vorsichtig beim Tanz, sonst gibt es einen Wadenbiss!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-121',
+      ausdruck: 'Kruzifix!',
+      hochdeutsch: 'Kruzifix! (Fluch)',
+      bedeutung: 'Der typisch bairische Fluch „Kruzifix!" — oder noch derber „Kruzitürken!" — ist ein klassischer Stoßseufzer der Verärgerung oder Überraschung. Stammt aus der katholischen Volksfrömmigkeit, ist aber zur Stoßphrase verkommen. „Kruzifix nochamoi!" ist Standard-Ausruf, wenn etwas schiefgeht. Wird heute meist scherzhaft verwendet, ohne religiöse Verbindung. Klassiker bayerischer Wirtshaus-Sprache.',
+      beispiel: 'Kruzifix, schon wieder is da Schlüssel weg!',
+      beispiel_hd: 'Verflixt, schon wieder ist der Schlüssel weg!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-122',
+      ausdruck: 'Tracht',
+      hochdeutsch: 'Tracht (Dirndl & Lederhose)',
+      bedeutung: 'Die bayerische „Tracht" — Dirndl für Frauen, Lederhose für Männer — ist mehr als ein Kostüm. Sie ist Ausdruck regionaler Identität und Stolzes. Jede Region hat ihre eigene Variante (Miesbacher, Werdenfelser, Chiemgauer Tracht etc.). Auf der Wiesn ist Tracht heute Pflicht. Die „Dirndlschleife" verrät den Beziehungsstatus: links = ledig, rechts = vergeben, hinten = Witwe. Bayerische Mode-Folklore par excellence.',
+      beispiel: 'Auf da Wiesn geh i nur in Tracht.',
+      beispiel_hd: 'Auf die Wiesn gehe ich nur in Tracht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-123',
+      ausdruck: 'Boazn',
+      hochdeutsch: 'Spelunke / einfaches Wirtshaus',
+      bedeutung: 'Die „Boazn" ist im Münchner Bairisch eine kleine, einfache Eckkneipe — oft heruntergekommen, aber kultig. Im Gegensatz zum gepflegten Wirtshaus ist die Boazn der Ort, wo Stammgäste am Tresen sitzen, der Wirt jeden mit Namen kennt und das Bier billig ist. Berühmte Münchner Boazn wie das „Tagträumer" oder „Trachtenvogl" haben Kult-Status. „A\'Hoiwe in da Boazn" — pure Münchner Lebensart.',
+      beispiel: 'In da Boazn an der Eck triff i mi mit\'m Sepp.',
+      beispiel_hd: 'In der Spelunke an der Ecke treffe ich mich mit dem Sepp.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-124',
+      ausdruck: 'Bussi',
+      hochdeutsch: 'Küsschen / Kuss',
+      bedeutung: 'Das „Bussi" ist im Bairischen und Österreichischen das Küsschen — ein zärtlicher Wangenkuss zur Begrüßung oder Verabschiedung. „Bussi geben" gehört zu den selbstverständlichen Familien-Ritualen. „Bussi-Bussi-Gesellschaft" ist spöttisch für oberflächliche Wiener Schickeria. Auch SMS-Schlussformel: „Bussi, dei Mama". Wärme und Familiarität in einem Wort. Verbreitet im gesamten süddeutschen Raum.',
+      beispiel: 'Gib da Oma a Bussi, bevor du gehst!',
+      beispiel_hd: 'Gib der Oma ein Küsschen, bevor du gehst!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-125',
+      ausdruck: 'Hoamatgfui',
+      hochdeutsch: 'Heimatgefühl',
+      bedeutung: 'Das „Hoamatgfui" ist das tief verwurzelte Heimatgefühl der Bayern — ein Gemisch aus Stolz, Verbundenheit und Sehnsucht nach den Bergen, dem Bier, der Sprache und den Bräuchen. Wird oft beim Klang einer Blaskapelle, beim Anblick der Alpen oder beim ersten Schluck Weißbier nach langer Abwesenheit ausgelöst. Bayerische Identität ist intensiver als anderswo in Deutschland — das „Hoamatgfui" ist ihr Kern. Mehr als Nostalgie: gelebte Kultur.',
+      beispiel: 'Wenn i d\'Berg sieg, kriag i sofort a Hoamatgfui.',
+      beispiel_hd: 'Wenn ich die Berge sehe, kriege ich sofort ein Heimatgefühl.',
+      kategorie: 'gefuehle'
     }
   ]
 };

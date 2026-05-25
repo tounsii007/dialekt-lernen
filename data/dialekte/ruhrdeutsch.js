@@ -905,6 +905,231 @@ export default {
       beispiel: 'Donnerstag is Doko-Abend bei uns — Tradition seit 30 Jahren.',
       beispiel_hd: 'Donnerstag ist Doko-Abend bei uns — Tradition seit 30 Jahren.',
       kategorie: 'sport'
+    },
+    {
+      id: 'ru-101',
+      ausdruck: 'Schalker Markt',
+      hochdeutsch: 'Schalker Markt (Stadtteil-Zentrum Gelsenkirchen)',
+      bedeutung: 'Der Schalker Markt ist das Herz des Stadtteils Schalke in Gelsenkirchen — historisches Zentrum mit Markttagen, Eckkneipen und der Schalker Meile. Hier wurde 1904 der FC Schalke 04 als Westfalia Schalke gegründet. Königsblaue Geschichte überall: Schalke-Souvenirs, alte Bergmannsfamilien, jeder kennt jeden. Ein authentisches Ruhrpott-Quartier mit Identität und Stolz.',
+      beispiel: 'Am Schalker Markt findse jede Schalke-Devotionalie, die\'s gibt.',
+      beispiel_hd: 'Am Schalker Markt findest du jedes Schalke-Souvenir, das es gibt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-102',
+      ausdruck: 'Borsigplatz',
+      hochdeutsch: 'Borsigplatz (BVB-Gründungsort Dortmund)',
+      bedeutung: 'Der Borsigplatz in Dortmund-Nord ist die Wiege von Borussia Dortmund — 1909 in der Wirtschaft „Zum Wildschütz" gegründet. Bis heute Pilgerstätte: Nach jedem Meistertitel fährt der BVB mit dem Cabrio über den Platz. Arbeiterviertel mit Migrationsgeschichte, geprägt von der ehemaligen Borsig-Lokomotivfabrik. Schwarz-gelbe Wandbilder zieren die Häuser. Heiliger Boden.',
+      beispiel: 'Am Borsigplatz schlägt das schwarz-gelbe Herz seit 1909.',
+      beispiel_hd: 'Am Borsigplatz schlägt das schwarz-gelbe Herz seit 1909.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-103',
+      ausdruck: 'Westfalenpark',
+      hochdeutsch: 'Westfalenpark Dortmund (Stadtpark)',
+      bedeutung: 'Der Westfalenpark in Dortmund ist mit 70 Hektar einer der größten Innenstadtparks Europas — 1959 zur Bundesgartenschau angelegt. Wahrzeichen: der 209 Meter hohe Florianturm mit Drehrestaurant und Aussichtsplattform. Rosarium mit 3.000 Rosenarten, Seebühne, Sommerkonzerte, Lichterfest. Naherholung für Dortmunder — Spaziergänge, Picknick, Familienausflüge. Grüne Oase mitten im Pott.',
+      beispiel: 'Sonntag gehts in Westfalenpark — Florianturm und Eis essen.',
+      beispiel_hd: 'Sonntag geht es in den Westfalenpark — Florianturm und Eis essen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-104',
+      ausdruck: 'Phoenix-See',
+      hochdeutsch: 'Phoenix-See Dortmund (Stadtsee auf Stahlwerksgelände)',
+      bedeutung: 'Der Phoenix-See in Dortmund-Hörde ist ein 24 Hektar großer künstlicher See, der 2010 auf dem Gelände des ehemaligen Hoesch-Stahlwerks Phoenix-Ost geflutet wurde. Beispielhafter Strukturwandel: Wo Hochöfen rauchten, segeln heute Boote. Rundweg, Restaurants, Wohnviertel im noblen Stil. Manche Pottmenschen sehen den See als Verrat an der Industriegeschichte — andere als Hoffnungszeichen.',
+      beispiel: 'Am Phoenix-See trinkt man Aperol wo früher Stahl gegossen wurde.',
+      beispiel_hd: 'Am Phoenix-See trinkt man Aperol, wo früher Stahl gegossen wurde.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-105',
+      ausdruck: 'Ruhrpott-Karneval',
+      hochdeutsch: 'Karneval im Ruhrgebiet (anders als Köln)',
+      bedeutung: 'Der Ruhrpott-Karneval ist eine eigene Spielart — bodenständiger und weniger pompös als der Kölner. Statt Mariechen und Funkengarden gibt es Vereinsfeste, Karnevalssitzungen in Mehrzweckhallen und derbe Büttenreden über Maloche und Politik. Die Bochumer und Recklinghäuser Karnevalsgesellschaften pflegen die Tradition. Im Pott säuft man Bier, nicht Kölsch — und lacht über sich selbst.',
+      beispiel: 'Karneval im Pott — kein Kölsch, sondern Pils und derbe Sprüche.',
+      beispiel_hd: 'Karneval im Ruhrgebiet — kein Kölsch, sondern Pils und derbe Sprüche.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-106',
+      ausdruck: 'Büdchenkönig',
+      hochdeutsch: 'Trinkhallen-Inhaber als Stadtteil-Original',
+      bedeutung: 'Der „Büdchenkönig" ist die Persönlichkeit hinter dem Tresen einer Trinkhalle — meist seit Jahrzehnten im Viertel verwurzelt, kennt jeden Stammkunden, jeden Tratsch, jeden Liebeskummer. Er verkauft nicht nur Bier und Lottoscheine, sondern hört zu, vermittelt und gibt Lebensweisheiten. Ein Stadtteil-Original, das oft persönlicher ist als jeder Therapeut. Die Trinkhalle als zweites Zuhause.',
+      beispiel: 'Onkel Manni is Büdchenkönig aufm Wickingplatz seit 40 Jahren.',
+      beispiel_hd: 'Onkel Manni ist Trinkhallen-Inhaber auf dem Wickingplatz seit 40 Jahren.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-107',
+      ausdruck: 'Eckkneipe',
+      hochdeutsch: 'Eckkneipe (klassische Pott-Kneipe)',
+      bedeutung: 'Die Eckkneipe ist die klassische Ruhrpott-Wirtschaft an der Straßenecke — kleine, oft verrauchte Gaststätte mit Stammtisch, Theke, Dartautomat und immer dem gleichen Wirt. Hier trifft man sich nach der Schicht, hört Schlager und diskutiert über BVB und Schalke. Mit jeder Eckkneipen-Schließung stirbt ein Stück Ruhrpott-Kultur. Die wenigen verbliebenen sind Museum und Sozialraum zugleich.',
+      beispiel: 'Inner Eckkneipe um die Ecke kennt mich jeder.',
+      beispiel_hd: 'In der Eckkneipe um die Ecke kennt mich jeder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-108',
+      ausdruck: 'Hüttenarbeiter',
+      hochdeutsch: 'Stahlarbeiter (Hochofen, Walzwerk)',
+      bedeutung: 'Der Hüttenarbeiter war neben dem Bergmann der zweite große Beruf des Ruhrgebiets — er arbeitete am Hochofen, am Konverter oder im Walzwerk der Stahlhütten. Bei Hitze, Lärm und Lebensgefahr formte er den Stahl, der Deutschland aufbaute. Krupp, Thyssen, Hoesch — diese Namen sind mit den Hüttenarbeitern verwoben. Heute eine fast ausgestorbene Berufsgruppe, aber stolze Erinnerung in Familien.',
+      beispiel: 'Mein Opa war Hüttenarbeiter bei Thyssen in Duisburg.',
+      beispiel_hd: 'Mein Opa war Stahlarbeiter bei Thyssen in Duisburg.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-109',
+      ausdruck: 'Vatter',
+      hochdeutsch: 'Vater (Ruhrpott-Form)',
+      bedeutung: 'Der „Vatter" ist im Ruhrpott die liebevoll-direkte Bezeichnung für den Vater — etwas derber und herzlicher als das hochdeutsche „Vater". Die Doppel-T-Aussprache ist typisch fürs Niederdeutsche, das im Pott noch nachklingt. Der Vatter ist die Autoritätsperson im Haus, oft Bergmann oder Stahlarbeiter, gibt seine Lebensweisheiten in knappen Sätzen weiter. Familienpatriarch in der traditionellen Pott-Familie.',
+      beispiel: 'Mein Vatter hat immer gesagt: Maloche, dann wird das wat!',
+      beispiel_hd: 'Mein Vater hat immer gesagt: Arbeite hart, dann wird das was!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-110',
+      ausdruck: 'Mutter',
+      hochdeutsch: 'Mutter (im Ruhrpott zentrale Figur)',
+      bedeutung: 'Die „Mutter" ist im Ruhrpott die heimliche Chefin der Familie — während der Vatter unter Tage malochte, hielt sie zu Hause alles zusammen. Sie kochte, putzte, erzog die Kinder und verwaltete die schmale Lohntüte. Mutter-Figuren wie Tante Erna, Helga oder Inge prägen ganze Stadtteile. Die Pott-Mutter ist herzlich, streng und unverwüstlich — das wahre Rückgrat der Bergmanns-Familien.',
+      beispiel: 'Mutter hat den Haushalt geschmissen, während Vatter inne Grube war.',
+      beispiel_hd: 'Mutter hat den Haushalt geschmissen, während Vater in der Grube war.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-111',
+      ausdruck: 'Oma',
+      hochdeutsch: 'Großmutter (Ruhrpott-Familienzentrum)',
+      bedeutung: 'Die „Oma" ist im Ruhrpott die Hüterin der Familientraditionen — sie kocht den Sonntagsbraten, erzählt von der Maloche der Großeltern und behütet die Enkel. Wenn der Vatter nachts Schicht hatte und die Mutter arbeitete, war Oma da. Häkelt Topflappen, schimpft auf den Müll und schenkt heimlich Süßes. Generationen-Bindung in Reinkultur. Eine Pott-Oma ist Goldwert.',
+      beispiel: 'Bei Oma gibts immer Reibekuchen und ne Mark fürs Sparschwein.',
+      beispiel_hd: 'Bei Oma gibt es immer Reibekuchen und eine Mark für das Sparschwein.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-112',
+      ausdruck: 'Grönemeyer-Hymne',
+      hochdeutsch: 'Bochum von Herbert Grönemeyer',
+      bedeutung: 'Die Grönemeyer-Hymne „Bochum" (1984) ist mehr als ein Lied — sie ist die offizielle Erkennungsmelodie des ganzen Ruhrpotts. „Du bist keine Schönheit, vor Arbeit ganz grau" beschreibt das Ruhrgebiet ehrlich und liebevoll zugleich. Beim VfL Bochum wird sie vor jedem Spiel gespielt, 30.000 singen mit. Hat es sogar in den Bochumer Stadtrat geschafft — offizielles Bekenntnis zur Identität.',
+      beispiel: 'Bei „Bochum, ich komm aus dir" weinen sogar gestandene Männer.',
+      beispiel_hd: 'Bei „Bochum, ich komme aus dir" weinen sogar gestandene Männer.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-113',
+      ausdruck: 'Westernhagen',
+      hochdeutsch: 'Marius Müller-Westernhagen (Düsseldorf-Pott-Connection)',
+      bedeutung: 'Marius Müller-Westernhagen (geb. 1948 in Düsseldorf) ist zwar gebürtiger Düsseldorfer, aber sein Sound aus „Sexy", „Freiheit" und „Mit Pfefferminz bin ich dein Prinz" prägt auch das Ruhrgebiet. Seine raue, gerade Art passt zur Pott-Mentalität. Konzerte in der Schalke-Arena oder im Westfalenstadion sind Massenereignisse. Brücke zwischen Rheinland und Pott durch direkte, ehrliche Rockmusik.',
+      beispiel: 'Westernhagen-Konzert inne Schalke-Arena — 60.000 singen mit.',
+      beispiel_hd: 'Westernhagen-Konzert in der Schalke-Arena — 60.000 singen mit.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-114',
+      ausdruck: 'BAP-Sound',
+      hochdeutsch: 'BAP-Connection ins Ruhrgebiet',
+      bedeutung: 'Obwohl BAP aus Köln stammt, hat ihr Sound auch im Ruhrgebiet eine treue Fangemeinde — die Mischung aus Rock, sozialkritischen Texten und Mundart spricht auch Pottmenschen an. Wolfgang Niedeckens Stimme klingt nach Arbeitermilieu und harten Wahrheiten. „Verdamp lang her" wird auch inne Pott-Kneipe gesungen. Brücke zwischen Kölner und Ruhrpott-Kultur über die Mundart-Rock-Schiene.',
+      beispiel: 'BAP-Konzert in der Westfalenhalle — Pott und Köln in Eintracht.',
+      beispiel_hd: 'BAP-Konzert in der Westfalenhalle — Pott und Köln in Eintracht.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ru-115',
+      ausdruck: 'dat',
+      hochdeutsch: 'das (Ruhrpott-Form)',
+      bedeutung: '„Dat" ist die typisch ruhrpötterische Form von „das" — ein eindeutiges Merkmal des Dialekts, das aus dem Niederdeutschen stammt. Ohne „dat" gibt es keinen echten Ruhrpott-Klang: „Dat is dat", „Dat geht net", „Wat is dat denn?". Wer im Pott groß wird, sagt es automatisch. Norddeutsche Eltern haben es vererbt, polnische und tschechische Migranten haben es übernommen. Identitätsmerkmal.',
+      beispiel: 'Dat is doch klar — wat willste machen?',
+      beispiel_hd: 'Das ist doch klar — was willst du machen?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-116',
+      ausdruck: 'wat',
+      hochdeutsch: 'was (Ruhrpott-Form)',
+      bedeutung: '„Wat" ist im Ruhrpott die Form von „was" — wie „dat" aus dem Niederdeutschen entstanden. „Wat willste?", „Wat is los?", „Wat soll dat?". Das W-Wort prägt jeden Pott-Dialog. Die Aussprache mit hartem T statt weichem S macht den Klang direkt und ehrlich. Wer „was" sagt statt „wat", ist entweder zugezogen oder steht für Hochdeutsch. Im Pott regiert „wat".',
+      beispiel: 'Wat hasse denn gemacht heute? — Ach, dat üblich.',
+      beispiel_hd: 'Was hast du denn heute gemacht? — Ach, das Übliche.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-117',
+      ausdruck: 'datt',
+      hochdeutsch: 'das (extreme Ruhrpott-Form)',
+      bedeutung: '„Datt" mit doppeltem T ist die besonders harte, betonte Form von „dat" — wenn ein Pottmensch nachdrücklich sein will. „Datt iss so!", „Datt geht garnich!". Die Verdoppelung des T zeigt Emphase, manchmal auch Empörung. Sprachwissenschaftlich eine Verstärkungsform, im Alltag ein Ausdruck der Pott-Direktheit. Wer „datt" sagt, meint es ernst.',
+      beispiel: 'Datt machst du jetzt nich nochmal, klar?',
+      beispiel_hd: 'Das machst du jetzt nicht noch einmal, klar?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-118',
+      ausdruck: 'Dödel',
+      hochdeutsch: 'Trottel (gemäßigtes Pott-Schimpfwort)',
+      bedeutung: 'Ein „Dödel" ist im Ruhrpott ein liebenswerter Trottel — jemand, der ungeschickt oder begriffsstutzig ist, aber kein böser Mensch. Eher freundliches als scharfes Schimpfwort, oft unter Freunden oder in der Familie. „Du Dödel!" sagt man, wenn jemand was Dummes getan hat. Der Pott pflegt diese gemäßigten Schimpfwörter, die mehr Hänselei als Beleidigung sind.',
+      beispiel: 'Du Dödel, hast die Schlüssel wieder vergessen!',
+      beispiel_hd: 'Du Trottel, hast die Schlüssel wieder vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-119',
+      ausdruck: 'Pinöckel',
+      hochdeutsch: 'kleiner ungeschickter Mensch (Ruhrpott-Wort)',
+      bedeutung: 'Ein „Pinöckel" ist im Ruhrpott ein kleiner, oft ungeschickter Mensch — meist liebevoll-tadelnd gemeint. Kann auch für ein Kind verwendet werden, das gerade etwas anstellt. Klingt absurd und ist genau deshalb so beliebt: die Lautmalerei macht den Spott freundlich. Pott-Schimpfwörter sind selten richtig böse — meistens schwingt Zuneigung mit.',
+      beispiel: 'Komm her, du kleiner Pinöckel — wat hast du angestellt?',
+      beispiel_hd: 'Komm her, du kleiner Frechdachs — was hast du angestellt?',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-120',
+      ausdruck: 'Schwebebahn',
+      hochdeutsch: 'Wuppertaler Schwebebahn (Hängebahn)',
+      bedeutung: 'Die Wuppertaler Schwebebahn ist eine technische Sensation und das Wahrzeichen Wuppertals — eröffnet 1901, fährt sie in 8 bis 12 Metern Höhe über die Wupper. 13,3 km lang, das älteste elektrische Hängebahnsystem der Welt. Wuppertal selbst gilt als „Tor zum Ruhrgebiet" — bergisches Land mit Pott-Anschluss. Touristen aus aller Welt kommen für die einzigartige Fahrerfahrung.',
+      beispiel: 'Wer in Wuppertal war und nich Schwebebahn gefahren is, war nich richtig da.',
+      beispiel_hd: 'Wer in Wuppertal war und nicht Schwebebahn gefahren ist, war nicht richtig da.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-121',
+      ausdruck: 'Düsseldorf-Rivalität',
+      hochdeutsch: 'Pott gegen Düsseldorf (Mentalitätsstreit)',
+      bedeutung: 'Die Rivalität zwischen Ruhrpott und Düsseldorf ist legendär — die Pottler sehen die Düsseldorfer als arrogant, schickimicki und überheblich; die Düsseldorfer sehen den Pott als grau, ungehobelt und altmodisch. Königsallee gegen Trinkhalle. Fortuna gegen BVB und Schalke. Altbier gegen Pils. Im Fußball, im Karneval, im Lebensstil — die Konkurrenz zwischen NRW-Metropolen ist herzhaft.',
+      beispiel: 'Düsseldorf? Nee, da fahr ich nich freiwillig hin — zu schicki.',
+      beispiel_hd: 'Düsseldorf? Nein, da fahre ich nicht freiwillig hin — zu schick.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-122',
+      ausdruck: 'Pott-Ehrlichkeit',
+      hochdeutsch: 'Direktheit und Aufrichtigkeit (Pott-Tugend)',
+      bedeutung: 'Die Pott-Ehrlichkeit ist die wichtigste Tugend des Ruhrpottlers — kein um den heißen Brei reden, kein Falsches Lächeln, kein Schickimicki. Wer im Pott was zu sagen hat, sagt es direkt ins Gesicht. Das wirkt manchmal hart, ist aber gemeint als Zeichen von Respekt: Du bist mir wichtig genug für die Wahrheit. Diese Direktheit prägt jeden Arbeitsplatz, jede Kneipe, jede Familie im Revier.',
+      beispiel: 'Pott-Ehrlichkeit — wir reden Klartext, da gibts nix zu beschönigen.',
+      beispiel_hd: 'Pott-Ehrlichkeit — wir reden Klartext, da gibt es nichts zu beschönigen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-123',
+      ausdruck: 'Schnauze',
+      hochdeutsch: 'Mund / direkte Sprache (Pott-Eigenschaft)',
+      bedeutung: 'Die „Schnauze" ist im Pott die direkte, ungeschönte Sprache — eine berühmte Charaktereigenschaft. „Die hat ne Schnauze!" ist ein Kompliment: Die Person sagt, was Sache ist. Auch „Schnauze halten!" ist eine derbe Aufforderung zu schweigen. Wer im Pott seine Schnauze einsetzen kann, gewinnt Respekt. Mit der Schnauze überlebt man im Kohleflöz und auf der Hütte.',
+      beispiel: 'Die Frau hat ne Schnauze — die sagt jedem die Meinung.',
+      beispiel_hd: 'Die Frau hat eine Schnauze — die sagt jedem die Meinung.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-124',
+      ausdruck: 'Ruhrpott-Mentalität',
+      hochdeutsch: 'Lebenseinstellung des Reviers',
+      bedeutung: 'Die Ruhrpott-Mentalität vereint Direktheit, Herzlichkeit, Solidarität und Pragmatismus. Geformt durch die harte Arbeit unter Tage und auf der Hütte, durch Migration aus Polen und Italien, durch Strukturkrisen und Wiederaufbau. Pottmenschen helfen sich gegenseitig, schimpfen auf alles und meinen es trotzdem gut. Wer einmal Pottmentalität erlebt hat, weiß: Es geht nicht um Geld, sondern um Würde und Gemeinschaft.',
+      beispiel: 'Ruhrpott-Mentalität — Schnauze, Herz und Zusammenhalt in einem.',
+      beispiel_hd: 'Ruhrpott-Mentalität — Direktheit, Herz und Zusammenhalt in einem.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-125',
+      ausdruck: 'Halbacht',
+      hochdeutsch: 'Vatersohn / Sonderling (Pott-Schimpfwort)',
+      bedeutung: 'Ein „Halbacht" ist im Ruhrpott jemand, der nicht ganz auf der Höhe ist — leicht verschroben, sonderbar oder nicht ganz dicht. Der Ausdruck kommt vermutlich von einer Uhrenangabe („halb acht" = nicht voll, nicht richtig). Gemäßigtes Schimpfwort, eher kopfschüttelnd als verletzend gemeint. Im Pott kennt man genug Halbachte — Charaktere, die jeder im Viertel kennt und die zum Lokalkolorit gehören.',
+      beispiel: 'Der Kalle is\'n bisschen Halbacht — aber n guter Kerl.',
+      beispiel_hd: 'Der Kalle ist ein bisschen verschroben — aber ein guter Kerl.',
+      kategorie: 'schimpf'
     }
   ]
 };

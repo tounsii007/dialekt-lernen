@@ -879,6 +879,231 @@ export default {
       beispiel: 'D\'Kärwabuam stellen morgen den Kärwabaum auf.',
       beispiel_hd: 'Die Kirchweihbuben stellen morgen den Kirchweihbaum auf.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'fr-101',
+      ausdruck: 'Müller-Thurgau',
+      hochdeutsch: 'Müller-Thurgau (fränkische Weißweinrebe)',
+      bedeutung: 'Der Müller-Thurgau ist eine der meistangebauten Weißweinrebsorten Frankens — 1882 vom Schweizer Hermann Müller aus dem Thurgau gezüchtet. Leicht, blumig, niedrige Säure, früh reif. Perfekt für den fränkischen Trinkanlass: zum Schäuferla, zum Vesper, zur Brotzeit. Auf Lössböden im Maintal gedeiht er hervorragend. In der QbA-Klasse ein zuverlässiger Alltagswein, in höheren Qualitäten überraschend elegant.',
+      beispiel: 'En frischer Müller-Thurgau im Sommer auf\'m Weinberg — herrlich.',
+      beispiel_hd: 'Ein frischer Müller-Thurgau im Sommer auf dem Weinberg — herrlich.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-102',
+      ausdruck: 'Bacchus',
+      hochdeutsch: 'Bacchus (fränkische Aromasorte)',
+      bedeutung: 'Der Bacchus ist eine in Franken besonders verbreitete Weißweinrebsorte — 1933 in Geilweilerhof aus Silvaner, Riesling und Müller-Thurgau gezüchtet. Sehr aromatisch mit Noten von Holunder, Muskat und exotischen Früchten. Wird oft als Cuvée-Partner oder als typischer „Heuriger-Wein" zum Federweißen ausgebaut. Trotz seiner Aromatik bleibt er trocken und elegant. Fränkische Spezialität, kaum außerhalb Frankens zu finden.',
+      beispiel: 'Bacchus passt perfekt zum Spargel — fränkische Spätlese-Magie.',
+      beispiel_hd: 'Bacchus passt perfekt zum Spargel — fränkische Spätlese-Magie.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-103',
+      ausdruck: 'Domina',
+      hochdeutsch: 'Domina (fränkische Rotweinrebe)',
+      bedeutung: 'Die Domina ist eine fränkische Rotweinrebe — 1927 in Geilweilerhof aus Portugieser und Spätburgunder gezüchtet. Tiefdunkler Wein mit fülligem Geschmack, Aromen von dunklen Beeren und Schokolade. Robuster Wachstumscharakter macht sie auf fränkischen Böden ideal. Wird gerne im Eichenfass ausgebaut. Im Maindreieck und in der Frankenwein-Region gewinnt sie zunehmend Anhänger — fränkische Antwort auf internationale Rotweine.',
+      beispiel: 'En kräftiger Domina zum Wildbraten — fränkische Rotweinkunst.',
+      beispiel_hd: 'Ein kräftiger Domina zum Wildbraten — fränkische Rotweinkunst.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-104',
+      ausdruck: 'Frauenkloster',
+      hochdeutsch: 'Fränkisches Frauenkloster (Tradition)',
+      bedeutung: 'Frankens Frauenklöster prägten die Region geistlich und wirtschaftlich. Berühmt: Kloster Kitzingen (Liobakloster), Kloster Wechterswinkel, Kloster Tückelhausen. Viele wurden in der Reformation oder Säkularisation aufgelöst, einige sind aktive Klöster geblieben. Sie führten Hospitäler, Schulen und Weingüter. Bürgerspital Würzburg und Juliusspital sind Nachfahren der klösterlichen Wein- und Sozialtradition.',
+      beispiel: 'Die fränkische Frauenklöster ham viel Wein und Weisheit hinterlassen.',
+      beispiel_hd: 'Die fränkischen Frauenklöster haben viel Wein und Weisheit hinterlassen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-105',
+      ausdruck: 'Würzburger Hofkeller',
+      hochdeutsch: 'Würzburger Hofkeller (historisches Weingut)',
+      bedeutung: 'Der Staatliche Hofkeller Würzburg unter der Residenz ist eines der ältesten und bedeutendsten Weingüter Deutschlands — gegründet 1128 durch die Würzburger Fürstbischöfe. 120 Hektar Weinberge in besten Lagen wie Würzburger Stein. Die Fassweinkeller unter der Residenz sind 4.000 m² groß — einzigartige Atmosphäre. Geführte Verkostungen sind Pflichtprogramm für Weinliebhaber. Geschichte schmecken.',
+      beispiel: 'Im Würzburger Hofkeller probier ma Wein wo schon Kaiser tranken.',
+      beispiel_hd: 'Im Würzburger Hofkeller probiert man Wein, den schon Kaiser tranken.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-106',
+      ausdruck: 'Bürgerspital',
+      hochdeutsch: 'Bürgerspital Würzburg (Weingut und Sozialstiftung)',
+      bedeutung: 'Das Bürgerspital zum Heiligen Geist in Würzburg ist eine 1316 gegründete Sozialstiftung — bis heute Pflegeheim mit Klinik und gleichzeitig eines der besten Weingüter Frankens (110 Hektar). Die Lagen Stein, Pfaffenberg und Würzburger Pfaffenstuhl gehören dazu. Erträge finanzieren die Altenpflege — Stiftungswirtschaft seit 700 Jahren. Im Bürgerspital-Weinstuben in der Altstadt verkostet man frische Frankenweine.',
+      beispiel: 'Im Bürgerspital trinkt man Wein, dessen Erlös Senioren hilft.',
+      beispiel_hd: 'Im Bürgerspital trinkt man Wein, dessen Erlös Senioren hilft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-107',
+      ausdruck: 'Hesselberg',
+      hochdeutsch: 'Hesselberg (höchster Berg Mittelfrankens)',
+      bedeutung: 'Der Hesselberg mit 689 Metern ist der höchste Berg Mittelfrankens — im Landkreis Ansbach gelegen, weithin sichtbar in der Hahnenkamm-Region. Heiliger Berg der Hermunduren, später Kultort. Die NS-Zeit missbrauchte ihn als „Frankenberg" für Großkundgebungen — heute mahnt eine Gedenkstätte. Im Sommer Drachenflieger-Mekka, Wandermöglichkeiten und herrlicher Ausblick übers Frankenland.',
+      beispiel: 'Vom Hesselberg siehst du an klaren Tagen bis nach Württemberg.',
+      beispiel_hd: 'Vom Hesselberg siehst du an klaren Tagen bis nach Württemberg.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-108',
+      ausdruck: 'Walberla',
+      hochdeutsch: 'Walberla (Berg in der Fränkischen Schweiz)',
+      bedeutung: 'Das Walberla (eigentlich Ehrenbürg, 532 m) ist der heilige Berg der Fränkischen Schweiz — weithin sichtbar zwischen Forchheim und Kirchehrenbach. Der Name leitet sich von der Walburgiskapelle ab. Am ersten Maiwochenende findet das Walberlafest statt — eines der ältesten Volksfeste Frankens. Wandern, Bierkeller, Aussicht — ein fränkisches Heiligtum. Geologisch ein typischer Jurazeit-Zeugenberg.',
+      beispiel: 'Aufs Walberla zum Mai-Fest — fränkische Tradition seit Jahrhunderten.',
+      beispiel_hd: 'Auf das Walberla zum Mai-Fest — fränkische Tradition seit Jahrhunderten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-109',
+      ausdruck: 'Doktor Eisenbarth',
+      hochdeutsch: 'Doktor Eisenbarth (fränkische Sage)',
+      bedeutung: 'Johann Andreas Eisenbarth (1663-1727), der legendäre Wanderchirurg aus Oberfranken, ist Held des bekannten Spottlieds „Ich bin der Doktor Eisenbarth". In Wirklichkeit ein angesehener Mediziner seiner Zeit, in der Sage als Quacksalber verspottet. Bayreuth und Hannoversch Münden streiten um sein Grab. Symbol fränkischer Volksmedizin und Marktschreierei. Im Lied: „Glory, Viktoria, Glory, Viktoria!"',
+      beispiel: 'Ich bin der Doktor Eisenbarth — fränkisches Spottlied bis heute bekannt.',
+      beispiel_hd: 'Ich bin der Doktor Eisenbarth — fränkisches Spottlied bis heute bekannt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-110',
+      ausdruck: 'Frankenwald',
+      hochdeutsch: 'Frankenwald (Mittelgebirge in Oberfranken)',
+      bedeutung: 'Der Frankenwald ist ein Mittelgebirge in Oberfranken — sanfte Höhen bis 800 m, ausgedehnte Fichtenwälder, klare Bäche. Grenzgebiet zum Thüringer Wald und Vogtland. Naturpark Frankenwald bietet Wanderwege, Floßfahrten auf der Saale und Wintersport. Kronach (Cranach-Stadt), Kulmbach (Bier-Hauptstadt) und Hof sind die wichtigsten Städte. Wirtschaftlich strukturschwach, landschaftlich wunderschön und ursprünglich.',
+      beispiel: 'Im Frankenwald wanderst du Stunden, ohne jemand zu treffen.',
+      beispiel_hd: 'Im Frankenwald wanderst du Stunden, ohne jemand zu treffen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-111',
+      ausdruck: 'Vadder',
+      hochdeutsch: 'Vater (fränkische Form)',
+      bedeutung: 'Der „Vadder" ist im Fränkischen die familiäre Bezeichnung für den Vater — etwas lieber und bodenständiger als das hochdeutsche „Vater". Die T-Verdopplung zeigt den fränkischen Hang zur Verstärkung weicher Konsonanten. Vadder ist der Familienpatriarch — meist Handwerker, Bauer oder Beamter, gibt Lebensweisheiten in knappen fränkischen Sätzen weiter. Generationen-Brücke in der traditionellen fränkischen Familie.',
+      beispiel: 'Mei Vadder hat immer gsagt: Erst die Arbeit, dann des Vergnügen.',
+      beispiel_hd: 'Mein Vater hat immer gesagt: Erst die Arbeit, dann das Vergnügen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-112',
+      ausdruck: 'Muddi',
+      hochdeutsch: 'Mutter (fränkische Koseform)',
+      bedeutung: '„Muddi" ist die fränkische Koseform für Mutter — herzlich, vertraut, kindlich. Wird auch von Erwachsenen liebevoll für die eigene Mutter verwendet. Im Gegensatz zum bayerischen „Mutta" klingt fränkisches Muddi weicher und intimer. Die fränkische Mutter ist die Hüterin der Familientraditionen, kocht das Schäuferla zum Sonntag und hält die Familie zusammen. Familienzentrum schlechthin.',
+      beispiel: 'Muddi backt den besten Lebkuchen weit und breit.',
+      beispiel_hd: 'Mutter backt den besten Lebkuchen weit und breit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-113',
+      ausdruck: 'Oma',
+      hochdeutsch: 'Großmutter (fränkische Familienfigur)',
+      bedeutung: 'Die „Oma" ist im Fränkischen die Hüterin der Familientraditionen — sie kennt die alten Rezepte, die Geschichten der Vorfahren und die Mundart-Sprichwörter. Oft im selben Haus oder gleich nebenan wohnend, ist sie der Babysitter, Köchin und Vertraute der Enkel. Eine fränkische Oma macht Schäuferla, Klöß und Krapfen besser als jeder Sternekoch. Generationenbindung ist in Franken stark — Oma ist Kult.',
+      beispiel: 'Bei Oma gibts immer Brotzeit und a Glas Most.',
+      beispiel_hd: 'Bei Oma gibt es immer Brotzeit und ein Glas Most.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-114',
+      ausdruck: 'Saubär',
+      hochdeutsch: 'unordentlicher Mensch (fränkisches Schimpfwort)',
+      bedeutung: 'Ein „Saubär" ist im Fränkischen ein unordentlicher, schmutziger Mensch — wörtlich „Schweinebär". Mittelstarkes Schimpfwort, meist in der Familie oder unter Freunden verwendet, wenn jemand mit dreckigen Schuhen ins Haus kommt oder sein Zimmer verwüstet. „Du Saubär!" ruft die Muddi entrüstet, wenn die Kinder im Matsch gespielt haben. Mehr Augenrollen als echte Verärgerung.',
+      beispiel: 'Du Saubär, schau dich mal an — wo warst denn?',
+      beispiel_hd: 'Du Saubär, schau dich mal an — wo warst denn?',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'fr-115',
+      ausdruck: 'Schaffix',
+      hochdeutsch: 'fleißiger Mensch (fränkisches Lob)',
+      bedeutung: 'Ein „Schaffix" ist im Fränkischen ein besonders fleißiger, tüchtiger Mensch — abgeleitet von „schaffen" (arbeiten). „Der is a richtiger Schaffix!" ist ein hohes Lob für jemand, der nicht jammert, sondern anpackt. In Franken zählt Fleiß und Pflichtbewusstsein viel mehr als Reichtum oder Bildung — der Schaffix wird respektiert. Klassisch handwerkliche Tugend, die in Franken hochgehalten wird.',
+      beispiel: 'Die Anna is a echter Schaffix — von früh bis spät am Arbeiten.',
+      beispiel_hd: 'Die Anna ist eine echte Arbeiterin — von früh bis spät am Arbeiten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-116',
+      ausdruck: 'Handi',
+      hochdeutsch: 'Handy (fränkische Aussprache)',
+      bedeutung: 'Das „Handi" ist im Fränkischen die liebevoll-vereinfachte Form des Wortes „Handy" — die englische Y-Endung wird zur kindlichen i-Endung. Zeigt, wie Fränkisch moderne Anglizismen sanft in den Dialekt integriert. Auch ältere Generationen sagen „Handi" — eine sprachliche Verniedlichung der manchmal feindseligen Technik. Charme der fränkischen Lautmalerei trifft modernes Leben.',
+      beispiel: 'Wo isch mei Handi? Ich hab\'s wieder verlegt.',
+      beispiel_hd: 'Wo ist mein Handy? Ich habe es wieder verlegt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-117',
+      ausdruck: 'Auto',
+      hochdeutsch: 'Auto (fränkischer Stolz)',
+      bedeutung: 'In Franken wird das Auto besonders ernst genommen — das eigene Fahrzeug ist Status, Identität und Liebhaberei. Nürnberg und Ingolstadt sind Auto-Zentren mit MAN und Audi. Fränkische Männer pflegen ihre Autos akribisch, waschen sie sonntags und parken sie sorgsam in der Garage. „Mei Audi" oder „mei Beemwehr" wird oft mit Vornamen genannt — fast wie ein Familienmitglied. Stolzer Pragmatismus.',
+      beispiel: 'Mei Audi steht in der Garach — mit Liebe gepflegt.',
+      beispiel_hd: 'Mein Audi steht in der Garage — mit Liebe gepflegt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-118',
+      ausdruck: 'Internet',
+      hochdeutsch: 'Internet (im modernen Franken)',
+      bedeutung: 'Das Internet hat auch in Franken Einzug gehalten — die ältere Generation steht ihm oft skeptisch gegenüber („Des hammer doch früher au ned braucht!"), die Jugend nutzt es selbstverständlich. Erlangen ist mit Siemens und der Friedrich-Alexander-Universität ein wichtiger IT-Standort. Auch die fränkische Wirtschaft (Schaeffler, Adidas, Puma) ist digital. Die Spannung zwischen Tradition und Moderne prägt das fränkische Leben.',
+      beispiel: 'Ohne Internet komm i jetzt au ned mehr klar — gibt halt ned anders.',
+      beispiel_hd: 'Ohne Internet komme ich jetzt auch nicht mehr klar — es geht halt nicht anders.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-119',
+      ausdruck: 'Heißmann',
+      hochdeutsch: 'Volker Heißmann (fränkischer Kabarettist)',
+      bedeutung: 'Volker Heißmann (geb. 1969) ist einer der bekanntesten fränkischen Kabarettisten — als „Waltraud Heißmann" in Frauenkleidern tritt er mit seinem Partner Martin Rassau im Comödie Fürth auf. Bayerischer Kabarettpreis und Deutscher Kleinkunstpreis. Sein boulevardesker Humor mit fränkischer Mundart und Verkleidungskunst füllt seit über 25 Jahren Säle. Symbol für die lebendige fränkische Unterhaltungskultur.',
+      beispiel: 'Heißmann in Frauenklamotten — fränkisches Kabarett pur.',
+      beispiel_hd: 'Heißmann in Frauenkleidern — fränkisches Kabarett pur.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-120',
+      ausdruck: 'Lippert',
+      hochdeutsch: 'Wolfgang Lippert (fränkischer Schlagerstar)',
+      bedeutung: 'Wolfgang Lippert (geb. 1952 in Plauen) ist zwar gebürtiger Sachse, aber durch jahrzehntelange Auftritte fester Bestandteil der fränkischen Unterhaltungswelt. „Erna kommt!" wurde Hit. Als Showmoderator und Schlagersänger prägte er das fränkische Fernsehen. Heute oft auf Volksfesten und in Bierzelten zu sehen. Sein bodenständiger Stil passt zur fränkischen Mentalität — keine Allüren, sondern Volkstümlichkeit.',
+      beispiel: 'Lippert auf der Kärwa — Schlager und Stimmung garantiert.',
+      beispiel_hd: 'Lippert auf der Kirchweih — Schlager und Stimmung garantiert.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-121',
+      ausdruck: 'Drud',
+      hochdeutsch: 'Hexe / böser Geist (fränkische Sage)',
+      bedeutung: 'Die „Drud" (oder „Trude") ist in fränkischen Volkssagen ein böser Geist oder eine Hexe, die nachts auf der Brust schlafender Menschen sitzt und Albträume verursacht. Volksglauben aus dem Mittelalter, in fränkischen Dörfern lange lebendig. „Druddrücken" beschreibt das Gefühl der Schlafparalyse. Schutz boten Drudenfuß-Symbole (Pentagramm) an Türen. Sagenmotive aus dem fränkischen Volksglauben.',
+      beispiel: 'Die Drud hat mich heut Nacht geritten — schlecht geschlafen.',
+      beispiel_hd: 'Die Druddrücken-Hexe hat mich heute Nacht geritten — schlecht geschlafen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-122',
+      ausdruck: 'Wilde Jagd',
+      hochdeutsch: 'Wilde Jagd (fränkische Mythologie)',
+      bedeutung: 'Die „Wilde Jagd" ist ein zentraler Mythos im fränkischen Volksglauben — ein gespenstischer Jagdzug, der nachts über die Felder zieht, angeführt vom „Wodan" oder dem Teufel. Wer ihm begegnet, soll Unheil erfahren oder mitgerissen werden. Die Sage ist im Frankenwald, Steigerwald und Spessart noch lebendig. Erzählt von Großeltern an Enkel weitergegeben. Heutige Heavy-Metal-Bands und Folkloristen halten das Motiv lebendig.',
+      beispiel: 'In stürmischen Nächten zieht die Wilde Jagd übers Feld — sagt die Oma.',
+      beispiel_hd: 'In stürmischen Nächten zieht die Wilde Jagd über das Feld — sagt die Oma.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-123',
+      ausdruck: 'Spessart',
+      hochdeutsch: 'Spessart (Mittelgebirge in Unterfranken)',
+      bedeutung: 'Der Spessart ist ein Mittelgebirge im westlichen Unterfranken — dichteste Eichen- und Buchenwälder Deutschlands. Berüchtigt durch Wilhelm Hauffs „Wirtshaus im Spessart" und die historischen Räuberbanden. Heute Naturpark mit ruhigen Tälern, Burgruinen und Wanderwegen. Mespelbrunn, Lohr, Aschaffenburg sind die wichtigsten Spessart-Städte. Die Schweinfurter Wirtschaft profitierte historisch vom Spessart-Holz.',
+      beispiel: 'Im Spessart soll\'s früher Räuber gegeben haben — wia in der Sage.',
+      beispiel_hd: 'Im Spessart soll es früher Räuber gegeben haben — wie in der Sage.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-124',
+      ausdruck: 'Brotzeit',
+      hochdeutsch: 'Fränkische Brotzeit (Vesper)',
+      bedeutung: 'Die fränkische Brotzeit ist ein heiliges Ritual — meist nachmittags oder abends. Bauernbrot, Fränkische Bratwurst, Pressack, Leberkäs, Käse, Gurken, Senf, eingelegte Zwiebeln. Dazu ein Seidla Kellerbier oder ein Schoppen Frankenwein. Im Sommer im Wirtshausgarten, im Winter in der Stube. Mehr als eine Mahlzeit — soziales Ereignis, Familienzeit, Genuss. In jedem fränkischen Wirtshaus selbstverständlich.',
+      beispiel: 'A zünftige Brotzeit mit Pressack und Bier — fränkisches Glück.',
+      beispiel_hd: 'Eine zünftige Brotzeit mit Pressack und Bier — fränkisches Glück.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-125',
+      ausdruck: 'Bassd schoo',
+      hochdeutsch: 'Passt schon (verstärkte Form)',
+      bedeutung: '„Bassd schoo" mit gedehntem „oo" ist die verstärkte fränkische Form von „bassd scho" — fränkische Gelassenheit auf höchstem Niveau. Bedeutet so viel wie „ist völlig in Ordnung" oder „macht überhaupt nichts". Wird gesagt, wenn jemand sich entschuldigt, wenn etwas schiefläuft oder wenn man großzügig sein will. Die Dehnung des Vokals zeigt fränkische Wärme und Toleranz. Wahre fränkische Lebenskunst in einem Wort.',
+      beispiel: 'Tschuldigung wegen dem Wartn. — Ach bassd schoo, mach dir koan Stress.',
+      beispiel_hd: 'Entschuldigung wegen dem Warten. — Ach passt schon, mach dir keinen Stress.',
+      kategorie: 'redensart'
     }
   ]
 };
