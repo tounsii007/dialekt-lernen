@@ -1342,6 +1342,231 @@ export default {
       beispiel: 'Die Hessenschau um 19:30 — Pflichttermin für jeden Hessen.',
       beispiel_hd: 'Die Hessenschau um 19:30 — Pflichttermin für jeden Hessen.',
       kategorie: 'musik'
+    },
+    {
+      id: 'h-151',
+      ausdruck: 'Aschermittwoch',
+      hochdeutsch: 'Aschermittwoch / Ende Karneval',
+      bedeutung: 'Der Aschermittwoch beendet die hessisch-rheinische Karnevalssaison — der Tag, an dem die Fastenzeit beginnt. „An Aschermittwoch ist alles vorbei" ist eine alte hessische Redensart. In hessischen Apfelweinlokalen gibt es Heringessen als Tradition. Ein nachdenklicher Tag nach der Narrenzeit — Buße tun, fasten, sich besinnen. Hessisches Kirchenjahr-Highlight.',
+      beispiel: 'Am Aschermittwoch is alles vorbei — Fastenzeit beginnt.',
+      beispiel_hd: 'Am Aschermittwoch ist alles vorbei — Fastenzeit beginnt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-152',
+      ausdruck: 'Wäldche',
+      hochdeutsch: 'Stadtwald (Frankfurter Wäldchen)',
+      bedeutung: 'Das „Frankfurter Wäldche" ist Frankfurts Stadtwald — mit 4.800 Hektar einer der größten Stadtwälder Europas. Naherholungsgebiet für Frankfurter: Joggen, Wandern, Pilze sammeln, Picknicken. Der Goetheturm im Wald ist nach einem Brand 2017 wieder neu erbaut worden. „Mer geh ins Wäldche" ist hessischer Standardspruch fürs Wochenend-Naturerlebnis.',
+      beispiel: 'Sonntags ins Wäldche — Frankfurter Tradition.',
+      beispiel_hd: 'Sonntags ins Stadtwald — Frankfurter Tradition.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-153',
+      ausdruck: 'Mainufer',
+      hochdeutsch: 'Frankfurter Mainufer',
+      bedeutung: 'Das Frankfurter Mainufer mit dem Museumsufer auf der Sachsenhäuser Seite ist eines der schönsten Stadt-Spaziergänge. Über die alte Mainbrücke (Eiserner Steg) verbindet es Altstadt und Sachsenhausen. Hier finden im Sommer das Museumsuferfest und das Mainfest statt. Wassertaxis fahren Touristen. Frankfurter joggen am Main, picknicken auf den Treppen. Hessisches Flussfeeling.',
+      beispiel: 'Am Mainufer joggen — beste Frankfurter Therapie.',
+      beispiel_hd: 'Am Mainufer joggen — beste Frankfurter Therapie.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-154',
+      ausdruck: 'Museumsufer',
+      hochdeutsch: 'Sachsenhäuser Museumsufer',
+      bedeutung: 'Das Museumsufer am Sachsenhäuser Mainufer ist Frankfurts kulturelle Magistrale — 15 Museen auf engstem Raum: Städel (Gemälde), Liebieghaus (Skulpturen), Kommunikationsmuseum, Filmmuseum, Architekturmuseum etc. Eine einzigartige Konzentration deutscher Kulturschätze. Die jährlichen „Museumsuferfest" lockt 3 Millionen Besucher. Hessens Hochkultur-Konzentration.',
+      beispiel: 'Am Museumsufer ein Jahr lang Museen besuchen — Frankfurter Programm.',
+      beispiel_hd: 'Am Museumsufer ein Jahr lang Museen besuchen — Frankfurter Programm.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-155',
+      ausdruck: 'Städel Museum',
+      hochdeutsch: 'Städel Museum (Gemäldegalerie)',
+      bedeutung: 'Das Städel Museum am Frankfurter Museumsufer ist Deutschlands ältestes bürgerliches Kunstmuseum — gegründet 1815 von Johann Friedrich Städel. Berühmte Werke: Tischbeins „Goethe in der Campagna", Vermeers „Geograph", Botticelli, Rembrandt, Picasso, Beckmann. Über 380.000 Besucher jährlich. Das modernisierte Gebäude (2012 erweitert) ist architektonisch beeindruckend. Hessens Kulturkrone.',
+      beispiel: 'Im Städel hängt das berühmteste Goethe-Bild.',
+      beispiel_hd: 'Im Städel hängt das berühmteste Goethe-Bild.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-156',
+      ausdruck: 'Goethe-Haus',
+      hochdeutsch: 'Goethe-Geburtshaus Frankfurt',
+      bedeutung: 'Das Goethe-Haus im Großen Hirschgraben ist Goethes Geburtshaus — geboren am 28. August 1749. Im Krieg zerstört, originalgetreu wieder aufgebaut. Heute Museum mit Goethes Originalmöbeln. Das Goethe-Museum nebenan zeigt seine Wirkung. Ein Pilgerort für deutsche Literaturliebhaber. Hessens stolzester Sohn — wenn auch Goethe mehr in Weimar als in Frankfurt verbrachte.',
+      beispiel: 'Goethe-Haus besichtigen — Pflicht für jeden Frankfurt-Besucher.',
+      beispiel_hd: 'Goethe-Haus besichtigen — Pflicht für jeden Frankfurt-Besucher.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-157',
+      ausdruck: 'Frankfurter Schule',
+      hochdeutsch: 'Philosophie-Schule am Main',
+      bedeutung: 'Die Frankfurter Schule ist eine philosophische Bewegung — entstanden am 1923 gegründeten Institut für Sozialforschung. Adorno, Horkheimer, Marcuse, Habermas waren Hauptvertreter. Die „Kritische Theorie" prägt bis heute Soziologie, Politikwissenschaft, Philosophie weltweit. Frankfurt war intellektuelles Zentrum — und Hessen damit weltgeistig bedeutend. Studenten pilgern noch heute zum IfS.',
+      beispiel: 'Adorno und die Frankfurter Schule — hessische Geistesgeschichte.',
+      beispiel_hd: 'Adorno und die Frankfurter Schule — hessische Geistesgeschichte.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-158',
+      ausdruck: 'Paulskirche',
+      hochdeutsch: 'Paulskirche (Wiege der deutschen Demokratie)',
+      bedeutung: 'Die Paulskirche in Frankfurt ist die „Wiege der deutschen Demokratie" — hier tagte 1848/49 das erste deutsche Parlament der Nationalversammlung. Die Frankfurter Verfassung wurde hier verfasst (auch wenn sie scheiterte). Heute Ehrenraum und Symbol für Demokratie. Bundesregierung und Bundestag treffen sich hier zu wichtigen Anlässen. Hessen ist Demokratie-Geburtsstätte.',
+      beispiel: 'In der Paulskirche wurde die deutsche Demokratie geboren.',
+      beispiel_hd: 'In der Paulskirche wurde die deutsche Demokratie geboren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-159',
+      ausdruck: 'Hessenstreich',
+      hochdeutsch: 'Hessen-Mentalität (auch andere bekam man so)',
+      bedeutung: 'Der „Hessenstreich" ist eine humorvolle Bezeichnung für hessische Originalität, oft mit einem Augenzwinkern: Wer einen Hessenstreich vollführt, hat etwas typisch Hessisches gemacht — bauernschlau, ehrlich-direkt, mit Lokalstolz. Die Hessen sind bekannt für ihre Direktheit und ihren Humor, der manchmal subversiv ist. Politische Hessenstreiche gibt\'s viele in der Landesgeschichte.',
+      beispiel: 'Roland Koch hat oft Hessenstreiche gemacht — Politik mit Lokalcolorit.',
+      beispiel_hd: 'Roland Koch hat oft Hessenstreiche gemacht — Politik mit Lokalcolorit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-160',
+      ausdruck: 'Wetterau',
+      hochdeutsch: 'Wetterau (fruchtbare Ebene)',
+      bedeutung: 'Die Wetterau ist eine fruchtbare Ebene nördlich von Frankfurt — der „Korngrund Hessens". Bekannt für Zuckerrüben, Weizen, Zwiebeln und seit Neuestem Spargel. Bad Vilbel, Friedberg und Butzbach sind Hauptorte. Die Wetterauer sind als bodenständig und freundlich bekannt. Geologisch interessant: kalkhaltige Böden mit Brunnenwasser, das in Mineralwasser-Quellen mündet (Vilbeler Wasser).',
+      beispiel: 'In der Wetterau wächst das beste hessische Brot.',
+      beispiel_hd: 'In der Wetterau wächst das beste hessische Brot.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-161',
+      ausdruck: 'Bergstraße',
+      hochdeutsch: 'Hessische Bergstraße (Weinregion)',
+      bedeutung: 'Die Hessische Bergstraße ist eine kleine Weinregion am östlichen Rand der Rheinebene zwischen Darmstadt und Heppenheim — sehr mildes Klima dank Mainzer-Niederung-Schutz. Die Bergstraße ist „Deutschlands Frühlings-Garten" — Mandelbäume blühen hier als erstes, Obstbäume folgen. Die Weine: Riesling, Müller-Thurgau und Burgunder. Heppenheim und Bensheim sind die Wein-Zentren.',
+      beispiel: 'Im Frühjahr blüht die Bergstraße — Apfelbäume und Mandeln.',
+      beispiel_hd: 'Im Frühjahr blüht die Bergstraße — Apfelbäume und Mandeln.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-162',
+      ausdruck: 'Hanau',
+      hochdeutsch: 'Hanau (Geburtsstadt der Brüder Grimm)',
+      bedeutung: 'Hanau ist die Geburtsstadt der Brüder Grimm — bekannt für Goldschmiedekunst und das Märchen-Erbe der Grimm-Brüder. Das Nationaldenkmal der Brüder Grimm steht auf dem Marktplatz. Hanau ist auch Industriestadt (Heraeus-Metall-Konzern) und liegt am Main. Die hessische Pioniertradition wird hier gepflegt — von Märchen bis Hightech. Stadtgrenze zu Frankfurt-Ost.',
+      beispiel: 'In Hanau wurden die Brüder Grimm geboren — Märchenstadt.',
+      beispiel_hd: 'In Hanau wurden die Brüder Grimm geboren — Märchenstadt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-163',
+      ausdruck: 'Friedrichsdorf',
+      hochdeutsch: 'Friedrichsdorf (Zwieback-Hauptstadt)',
+      bedeutung: 'Friedrichsdorf im Taunus ist berühmt für seine Zwieback-Tradition — die Brandt-Zwieback-Fabrik produziert hier seit 1912 die berühmten Brandt-Zwieback. Auch berühmt: das Philantropinum (eine pädagogische Anstalt des 18. Jahrhunderts). Der Ort wurde 1687 von französischen Hugenotten gegründet, die vor Religionsverfolgung flohen. Hessische Toleranz-Geschichte.',
+      beispiel: 'Brandt-Zwieback gibt\'s seit 100 Jahren aus Friedrichsdorf.',
+      beispiel_hd: 'Brandt-Zwieback gibt es seit 100 Jahren aus Friedrichsdorf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-164',
+      ausdruck: 'Darmstadt',
+      hochdeutsch: 'Darmstadt (Wissenschaftsstadt)',
+      bedeutung: 'Darmstadt ist die „Wissenschaftsstadt" Hessens — TU Darmstadt (eine der besten technischen Universitäten Deutschlands), GSI (Forschungszentrum für Schwerionenforschung — hat 7 chemische Elemente entdeckt!), ESA-Kontrollzentrum. Die Mathildenhöhe (UNESCO-Welterbe) zeigt das Jugendstil-Erbe. Auch Darmstädter Echo und SV Darmstadt 98. Hessens intellektuelles Zentrum.',
+      beispiel: 'In Darmstadt entstehen neue chemische Elemente — Wissenschafts-Hochburg.',
+      beispiel_hd: 'In Darmstadt entstehen neue chemische Elemente — Wissenschafts-Hochburg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-165',
+      ausdruck: 'Mathildenhöhe',
+      hochdeutsch: 'Mathildenhöhe Darmstadt (UNESCO-Welterbe)',
+      bedeutung: 'Die Mathildenhöhe in Darmstadt ist seit 2021 UNESCO-Welterbe — eine Künstlerkolonie um 1900 mit Jugendstil-Bauten, dem Hochzeitsturm, der Russischen Kapelle und Künstlerateliers. Großherzog Ernst Ludwig von Hessen-Darmstadt rief die Kolonie ins Leben — Maler, Architekten, Designer wirkten hier. Eine der bedeutendsten Künstler-Kolonien Europas. Hessens Jugendstil-Hauptstadt.',
+      beispiel: 'Die Mathildenhöhe in Darmstadt — Jugendstil pur.',
+      beispiel_hd: 'Die Mathildenhöhe in Darmstadt — Jugendstil pur.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-166',
+      ausdruck: 'TU Darmstadt',
+      hochdeutsch: 'Technische Universität Darmstadt',
+      bedeutung: 'Die TU Darmstadt — eine der besten technischen Universitäten Deutschlands — wurde 1877 gegründet. Excellence-Initiative-Mitglied. Über 25.000 Studierende. Bekannt für Maschinenbau, Elektrotechnik, Informatik, Materialwissenschaften. Die TU prägt Darmstadt als Wissenschafts-Hub und macht Hessen zur Technik-Region. Mit der Goethe-Universität (Frankfurt) und der Justus-Liebig-Uni (Gießen) ein hessisches Hochschul-Triumvirat.',
+      beispiel: 'TU Darmstadt — wenn du Ingenieur werden willst.',
+      beispiel_hd: 'TU Darmstadt — wenn du Ingenieur werden willst.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-167',
+      ausdruck: 'Justus-Liebig',
+      hochdeutsch: 'Justus von Liebig (Chemiker aus Gießen)',
+      bedeutung: 'Justus von Liebig (1803-1873) war einer der bedeutendsten Chemiker des 19. Jahrhunderts — er arbeitete in Gießen. Begründer der modernen organischen Chemie und der Düngemittelchemie. Erfand das „Liebigsche Minimumgesetz" (Pflanzenwachstum), den Liebig-Kühler und die Massenherstellung von Düngemitteln. Die Justus-Liebig-Universität Gießen trägt seinen Namen. Hessens größter Wissenschaftler.',
+      beispiel: 'Ohne Justus von Liebig gäb\'s keine moderne Landwirtschaft.',
+      beispiel_hd: 'Ohne Justus von Liebig gäbe es keine moderne Landwirtschaft.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-168',
+      ausdruck: 'Gießen',
+      hochdeutsch: 'Gießen (Universitätsstadt)',
+      bedeutung: 'Gießen ist eine hessische Universitätsstadt — die Justus-Liebig-Universität (gegründet 1607) ist die zweitälteste in Hessen. Mit über 27.000 Studenten ist Gießen die studentenreichste Stadt Deutschlands (Studenten-zu-Einwohner-Quote). Charakteristisch: das Mathematische Institut, die Liebig-Apotheke und der Schiffenberger Wald. Hessens junge, intellektuelle Mittelstadt.',
+      beispiel: 'Gießen is studentisch — überall Cafés und Bibliotheken.',
+      beispiel_hd: 'Gießen ist studentisch — überall Cafés und Bibliotheken.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-169',
+      ausdruck: 'Hessen-Liedel',
+      hochdeutsch: 'Hessisches Volkslied',
+      bedeutung: 'Hessische Volkslieder werden im Hessenparrk, auf hessischen Festen und in der Familie weiter getragen. „Wir Hessen sind ein froh Geschlecht" und „Wo der Main entlang strömt" sind klassische Hessenlieder. Friedrich Stoltze hat viele Lieder geschrieben. Hessisches Liedgut ist weniger bekannt als bayerisches, aber identitätsstiftend für Hessen.',
+      beispiel: '„Bei uns dahem" — typisches Hessisch-Lied.',
+      beispiel_hd: '„Bei uns daheim" — typisches Hessisch-Lied.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-170',
+      ausdruck: 'Hessisches Wörterbuch',
+      hochdeutsch: 'Wörterbuch hessischer Mundart',
+      bedeutung: 'Das Hessische Wörterbuch (mehrbändig) der Phil.-hist. Klasse Mainz dokumentiert systematisch den hessischen Wortschatz seit 1965. Über 70.000 Stichwörter. Eine wissenschaftliche Großtat — vergleichbar mit dem schwäbischen oder bayerischen Wörterbuch. Hessen-Forscher und Sprachwissenschaftler nutzen es. Das Dialekterbe wird so für die Zukunft bewahrt.',
+      beispiel: 'Im Hessischen Wörterbuch findest jedes verloren gegangene Wort.',
+      beispiel_hd: 'Im Hessischen Wörterbuch findest du jedes verloren gegangene Wort.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-171',
+      ausdruck: 'Brüder Grimm-Werk',
+      hochdeutsch: 'Deutsches Wörterbuch (Grimm)',
+      bedeutung: 'Die Brüder Grimm aus Hanau und Kassel begannen das „Deutsche Wörterbuch" — das größte deutschsprachige Wörterbuch der Welt. 1838 begonnen, 1961 (!) fertig — über 123 Jahre Arbeitszeit, 32 Bände, ~400.000 Wörter. Eine wissenschaftliche Leistung historischer Dimension. Die Brüder Grimm haben nicht nur Märchen gesammelt, sondern auch die deutsche Sprache wissenschaftlich erfasst. Hessisches Sprachgut.',
+      beispiel: 'Das Deutsche Wörterbuch der Brüder Grimm — Lebenswerk.',
+      beispiel_hd: 'Das Deutsche Wörterbuch der Brüder Grimm — Lebenswerk.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-172',
+      ausdruck: 'Sechsbacher',
+      hochdeutsch: 'Sechs Apfelweine (hessische Trinkrunde)',
+      bedeutung: '„En Sechsbacher" ist im Frankfurter Apfelweinwirtschaftsbetrieb ein humorvoller Ausdruck für sechs Schoppen Apfelwein — etwa eine 0,3-Liter-Schoppen-Sitzung von 1,8 Litern. Beweis für hessische Trinkfestigkeit. „Hessen können was vertragen" ist ein liebevoll-stolzer Selbstbild. Apfelwein-Trinken ist Sport, Kunst und Sozialaktivität in einem.',
+      beispiel: 'En Sechsbacher heut Abend — Frankfurter Trinkleistung.',
+      beispiel_hd: 'Sechs Apfelweine heute Abend — Frankfurter Trinkleistung.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-173',
+      ausdruck: 'Saure Rippche',
+      hochdeutsch: 'Saure Rippchen (hessische Spezialität)',
+      bedeutung: '„Saure Rippche" oder „Saure Rippchen" sind hessische gepökelte und in Essig-Marinade eingelegte Schweinerippen, anschließend gegart. Eine traditionelle Frankfurter Hausmannskost, oft mit Sauerkraut und Kartoffeln serviert. Die Sauer-Note kommt vom Essig. Eine kräftige, würzige hessische Mahlzeit — perfekt nach langer Arbeit und zum Apfelwein.',
+      beispiel: 'Saure Rippche mit Sauerkraut — hessische Magenfreude.',
+      beispiel_hd: 'Saure Rippchen mit Sauerkraut — hessische Magenfreude.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-174',
+      ausdruck: 'Kasseler',
+      hochdeutsch: 'Kasseler (gepökeltes Fleisch)',
+      bedeutung: '„Kasseler" — manchmal auch „Kassler" — ist gepökeltes und leicht geräuchertes Schweinefleisch, das wahrscheinlich nach dem Berliner Fleischer „Cassel" benannt wurde (nicht nach der Stadt Kassel!). Die Verwechslung führt zu Diskussionen — die Hessen aus Kassel claimen es trotzdem. Wird oft mit Sauerkraut, Püree oder Schmorlinsen serviert. Hessisches Wintergericht.',
+      beispiel: 'Kasseler mit Sauerkraut und Püree — Winterklassiker.',
+      beispiel_hd: 'Kasseler mit Sauerkraut und Püree — Winterklassiker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-175',
+      ausdruck: 'Hessenpoltik',
+      hochdeutsch: 'Hessen-Politik (CDU-Hochburg)',
+      bedeutung: 'Hessen ist seit Jahrzehnten politisch ein Bundesland im Wechsel — von Hans Karry (SPD) über Roland Koch (CDU), Volker Bouffier (CDU) bis Boris Rhein (CDU). Jeder Hessenpräsident hat seine eigene hessische Note. Hessische Politik gilt als humorvoll-pragmatisch. Die Hessenrunde im hr ist Pflicht für politik-interessierte Hessen. Politik mit hessischem Schmäh.',
+      beispiel: 'Hessenpolitik — immer mit Schmäh und Lokalkolorit.',
+      beispiel_hd: 'Hessenpolitik — immer mit Schmäh und Lokalkolorit.',
+      kategorie: 'arbeit'
     }
   ]
 };
