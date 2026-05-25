@@ -914,20 +914,20 @@ export default {
     },
     {
       id: 'by-105',
-      ausdruck: 'Watschnbaam',
-      hochdeutsch: 'Ohrfeigenbaum / Streithammel',
-      bedeutung: 'Der „Watschnbaam" — wörtlich „Ohrfeigenbaum" — ist im Bairischen jemand, der ständig Ohrfeigen (Watschn) einfängt oder verteilt. Das saftige Bild: ein Baum, von dem Watschn fallen wie Äpfel. Wird sowohl für aggressive Streithähne als auch für unverschämte Frechdachse verwendet, die „a Watschn verdient hätten". Heute meist scherzhaft und mit einem Augenzwinkern gemeint. Klassisches bairisches Sprachbild.',
-      beispiel: 'Der Lausbua is a echter Watschnbaam!',
-      beispiel_hd: 'Der Lausbube ist ein echter Frechdachs!',
-      kategorie: 'schimpf'
+      ausdruck: 'Christkindlmarkt',
+      hochdeutsch: 'Münchner Christkindlmarkt',
+      bedeutung: 'Der „Christkindlmarkt" am Münchner Marienplatz gehört zu den ältesten und schönsten Weihnachtsmärkten Deutschlands — erstmals 1310 erwähnt als „Nikolaimarkt". Glühwein, Lebkuchen, gebrannte Mandeln, Krippenfiguren und Zinngießer-Stände — über 160 Buden vor dem Rathaus. Das Christkindl erscheint persönlich zur Eröffnung. Auch der „Mittelaltermarkt" am Wittelsbacherplatz und der Schwabinger Markt sind Kult. Bayerisches Weihnachtsgefühl pur.',
+      beispiel: 'Am Christkindlmarkt am Marienplatz duftet\'s nach Glühwein.',
+      beispiel_hd: 'Am Christkindlmarkt am Marienplatz duftet es nach Glühwein.',
+      kategorie: 'orte'
     },
     {
       id: 'by-106',
-      ausdruck: 'Polt',
-      hochdeutsch: 'Gerhard Polt (Kabarettist)',
-      bedeutung: 'Gerhard Polt (geb. 1942) ist Bayerns berühmtester Kabarettist und Satiriker. Mit Sketchen wie „Mai Ling", „Der Mann am Fenster" oder „Pension Schöller" hat er das bayerische Spießertum, den Kleinbürger und den Bürokraten unsterblich karikiert. Seine Figuren sprechen ein durchgehendes Bairisch — Polt hat dem Dialekt literarischen Rang verliehen. Mit Gisela Schneeberger und den Well-Brüdern eine bayerische Kultur-Institution.',
-      beispiel: 'Da Polt is\'a Genie — wia\'a den oide Spießa nachmacht!',
-      beispiel_hd: 'Der Polt ist ein Genie — wie er den alten Spießer nachmacht!',
+      ausdruck: 'Strauß',
+      hochdeutsch: 'Franz Josef Strauß (Politiker)',
+      bedeutung: 'Franz Josef Strauß (1915–1988) war einer der wichtigsten und umstrittensten bayerischen Politiker — Ministerpräsident, CSU-Vorsitzender und Kanzlerkandidat. Bekannt für seine derbe Rhetorik, seinen scharfen Verstand und seine Vorliebe für Bier. Der Münchner Flughafen trägt seinen Namen. Sein „Wir sind im 21. Jahrhundert" zementierte das bayerische Selbstbewusstsein. Polarisierende Figur — bis heute Vorbild oder Schreckgespenst, je nach politischer Sichtweise.',
+      beispiel: 'Da Strauß war a politisches Schwergewicht.',
+      beispiel_hd: 'Der Strauß war ein politisches Schwergewicht.',
       kategorie: 'menschen'
     },
     {
@@ -1031,20 +1031,20 @@ export default {
     },
     {
       id: 'by-118',
-      ausdruck: 'Resi',
-      hochdeutsch: 'Resi (Kosename für Theresa)',
-      bedeutung: 'Die „Resi" ist die bayerische Koseform für Theresa — der häufigste Frauenname im historischen Bayern, benannt nach Königin Therese, der Frau von König Ludwig I. Die Theresienwiese in München (Ort des Oktoberfestes) ist nach ihr benannt. „D\'Resi" ist in der bayerischen Volkskultur fast schon ein Archetyp — die kernige, lebensfrohe Wirtin oder Bäuerin. Auch berühmt durch das Lied „Resi, i hol di mit\'m Traktor ab".',
-      beispiel: 'D\'Resi vom Wirtshaus is\'a wahnsinns Frau.',
-      beispiel_hd: 'Die Resi vom Wirtshaus ist eine wahnsinns Frau.',
-      kategorie: 'familie'
+      ausdruck: 'Wuiderer',
+      hochdeutsch: 'Wilderer (bayerische Volksfigur)',
+      bedeutung: 'Der „Wuiderer" — auch „Wildschütz" — ist in der bayerisch-österreichischen Folklore eine romantisierte Volksfigur. Der wohl berühmteste war Georg „Girgl" Jennerwein (1848–1877), erschossen am Schliersee — sein Tod wurde im „Jennerwein-Lied" besungen. Wuiderer galten als Rebellen gegen den Adel, der Wald als Privileg der Reichen. Heute Folklore-Motiv in vielen Volksliedern und Heimatfilmen. Bayerischer Robin Hood.',
+      beispiel: 'Da Jennerwein war da berühmteste Wuiderer Bayerns.',
+      beispiel_hd: 'Der Jennerwein war der berühmteste Wilderer Bayerns.',
+      kategorie: 'menschen'
     },
     {
       id: 'by-119',
-      ausdruck: 'Föhn',
-      hochdeutsch: 'Föhn (warmer Alpenwind)',
-      bedeutung: 'Der „Föhn" ist ein warmer, trockener Fallwind, der vom Alpenkamm in den bayerischen Voralpenraum weht. Bei Föhnwetter sieht man die Alpenkette zum Greifen nah — auch in 100 km Entfernung. Berüchtigt für Kopfschmerzen, Migräne und Müdigkeit („Föhnkrank"). Viele Bayern fluchen über den Föhn, andere genießen das warme Wetter mitten im Winter. Bayerisches Wetterphänomen par excellence.',
-      beispiel: 'Bei Föhn siehst d\'Berg, aber kriagst Kopfweh.',
-      beispiel_hd: 'Bei Föhn siehst du die Berge, aber kriegst Kopfschmerzen.',
+      ausdruck: 'Hagebutten',
+      hochdeutsch: 'Hagebutten / Hetscherl',
+      bedeutung: 'Die „Hagebutten" — bayerisch auch „Hetscherl" oder „Hiffen" — sind die roten Früchte der Heckenrose, die im Herbst leuchten. Werden zu Marmelade, Tee, Sirup und Schnaps verarbeitet. Sehr reich an Vitamin C — bayerische Großmütter machten daraus Wintervorrat. In Volksliedern als Bild für die karge Schönheit des Spätherbsts. Symbol für die wilde Natur der bayerischen Hecken und Waldränder.',
+      beispiel: 'Im Herbst pflück ma Hagebutten fier Marmelade.',
+      beispiel_hd: 'Im Herbst pflücken wir Hagebutten für Marmelade.',
       kategorie: 'natur'
     },
     {
@@ -1067,12 +1067,12 @@ export default {
     },
     {
       id: 'by-122',
-      ausdruck: 'Tracht',
-      hochdeutsch: 'Tracht (Dirndl & Lederhose)',
-      bedeutung: 'Die bayerische „Tracht" — Dirndl für Frauen, Lederhose für Männer — ist mehr als ein Kostüm. Sie ist Ausdruck regionaler Identität und Stolzes. Jede Region hat ihre eigene Variante (Miesbacher, Werdenfelser, Chiemgauer Tracht etc.). Auf der Wiesn ist Tracht heute Pflicht. Die „Dirndlschleife" verrät den Beziehungsstatus: links = ledig, rechts = vergeben, hinten = Witwe. Bayerische Mode-Folklore par excellence.',
-      beispiel: 'Auf da Wiesn geh i nur in Tracht.',
-      beispiel_hd: 'Auf die Wiesn gehe ich nur in Tracht.',
-      kategorie: 'alltag'
+      ausdruck: 'Hax\'n',
+      hochdeutsch: 'Schweinshaxe / Bein',
+      bedeutung: 'Die „Hax\'n" ist im Bairischen das Bein oder die Beinarbeit — und besonders die berühmte Schweinshaxe, das bayerische Festtagsgericht. Knusprig gebacken oder gegrillt, mit Sauerkraut und Knödel serviert. „A Hax\'n im Hofbräuhaus" gehört zum Standardrepertoire des Münchner Wirtshausbesuchs. Auch übertragen: „lange Haxen" für lange Beine. Bayerische Wirtshausküche pur — wer Hax\'n bestellt, weiß was er will.',
+      beispiel: 'A knuspige Hax\'n mit Knödel — Wahnsinn!',
+      beispiel_hd: 'Eine knusprige Schweinshaxe mit Knödel — Wahnsinn!',
+      kategorie: 'essen'
     },
     {
       id: 'by-123',
@@ -1085,12 +1085,12 @@ export default {
     },
     {
       id: 'by-124',
-      ausdruck: 'Bussi',
-      hochdeutsch: 'Küsschen / Kuss',
-      bedeutung: 'Das „Bussi" ist im Bairischen und Österreichischen das Küsschen — ein zärtlicher Wangenkuss zur Begrüßung oder Verabschiedung. „Bussi geben" gehört zu den selbstverständlichen Familien-Ritualen. „Bussi-Bussi-Gesellschaft" ist spöttisch für oberflächliche Wiener Schickeria. Auch SMS-Schlussformel: „Bussi, dei Mama". Wärme und Familiarität in einem Wort. Verbreitet im gesamten süddeutschen Raum.',
-      beispiel: 'Gib da Oma a Bussi, bevor du gehst!',
-      beispiel_hd: 'Gib der Oma ein Küsschen, bevor du gehst!',
-      kategorie: 'familie'
+      ausdruck: 'Marterl',
+      hochdeutsch: 'Marterl (Wegkreuz)',
+      bedeutung: 'Das „Marterl" ist ein typisch bayerisch-tirolerisches Wegkreuz mit kleinem Bild — meist zum Gedenken an einen tödlichen Unfall an dieser Stelle. Stammt vom mittelhochdeutschen „marter" (Marter, Leiden). Findet sich an Wanderwegen, Bergpfaden und entlang von Straßen. Volkskunst, oft handgemalt, mit Inschrift und Heiligen. Zeugnis tiefer Volksfrömmigkeit und Bergland-Folklore. Auch literarisch in Volksstücken verewigt.',
+      beispiel: 'Am Wandersteig steht no a oides Marterl.',
+      beispiel_hd: 'Am Wanderweg steht noch ein altes Marterl.',
+      kategorie: 'orte'
     },
     {
       id: 'by-125',

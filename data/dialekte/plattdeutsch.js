@@ -853,6 +853,231 @@ export default {
       beispiel: 'En Buddelscheep op\'n Schosteen — typisch Seemannshuus.',
       beispiel_hd: 'Ein Buddelschiff auf dem Schornstein — typisches Seemannshaus.',
       kategorie: 'alltag'
+    },
+    {
+      id: 'p-101',
+      ausdruck: 'Otto',
+      hochdeutsch: 'Otto Waalkes (Komiker aus Emden)',
+      bedeutung: 'Otto Waalkes (geb. 1948 in Emden) ist der berühmteste ostfriesische Komiker — bekannt für seine Ottifanten, seine Filme („Otto — Der Film") und seinen unverwechselbaren ostfriesischen Humor. Hat den Ostfriesen-Witz salonfähig gemacht und einer ganzen Generation beigebracht, über Ostfriesen zu lachen — und mit ihnen. Lebt heute in Hamburg. Symbol für norddeutsche Selbstironie und Lebensfreude. Otto ist Kult.',
+      beispiel: 'Mit Otto sien Spröök kümmt jümmer all een Lachen.',
+      beispiel_hd: 'Mit Ottos Sprüchen kommt einem immer ein Lachen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-102',
+      ausdruck: 'Hans Albers',
+      hochdeutsch: 'Hans Albers (Schauspieler & Sänger)',
+      bedeutung: 'Hans Albers (1891–1960) war Hamburgs berühmtester Schauspieler und Sänger — der blonde Hans, das Hamburger Original. Unsterbliche Hits wie „La Paloma", „Auf der Reeperbahn nachts um halb eins" und „Junge, komm bald wieder" prägten ein Jahrhundert. Trotz seines Status\' verweigerte er sich teilweise dem Nazi-Regime. Sein Hamburger Schmäh und seine Reeperbahn-Lieder sind bis heute lebendig. Norddeutsches Kulturdenkmal.',
+      beispiel: '„Auf de Reeperbahn nachts um halb eins" — Hans Albers!',
+      beispiel_hd: '„Auf der Reeperbahn nachts um halb eins" — Hans Albers!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-103',
+      ausdruck: 'Lübecker Marzipan',
+      hochdeutsch: 'Lübecker Marzipan',
+      bedeutung: 'Das Lübecker Marzipan ist eine geschützte Spezialität aus Mandeln, Zucker und Rosenwasser — seit dem 15. Jahrhundert in Lübeck hergestellt. Niederegger ist die berühmteste Marke (seit 1806). Im Lübecker Café Niederegger gibt es Marzipan in allen Formen: Schweinchen, Brote, Rosen, Holstentore. Mandelanteil mindestens 70 Prozent — das macht die Qualität aus. Norddeutsches Welterbe der Süßwarenkunst.',
+      beispiel: 'Lübecker Marzipan vun Niederegger — dat smeckt nich.',
+      beispiel_hd: 'Lübecker Marzipan von Niederegger — das schmeckt nicht zu toppen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-104',
+      ausdruck: 'Reetdach',
+      hochdeutsch: 'Reetdach (Schilfrohrdach)',
+      bedeutung: 'Das „Reetdach" — aus Schilfrohr (Reet) gedeckt — ist die typische Bedachung norddeutscher Bauernhäuser, vor allem an der Nord- und Ostseeküste. Hält 50–100 Jahre, ist atmungsaktiv und natürlich isolierend. Die Reetdachdecker („Dackdecker") sind hoch geschätzte Handwerker. Vor allem auf Sylt, Föhr und Rügen prägen Reetdachhäuser das Landschaftsbild. Romantisch, teuer und Status-Symbol. UNESCO-würdiges Handwerk.',
+      beispiel: 'Op Sylt hett bald jedes Huus en Reetdack.',
+      beispiel_hd: 'Auf Sylt hat fast jedes Haus ein Reetdach.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-105',
+      ausdruck: 'Klönen',
+      hochdeutsch: 'Klönen (gemütlich plaudern)',
+      bedeutung: '„Klönen" ist im Plattdeutschen die gemütliche, unverbindliche Unterhaltung — der norddeutsche Smalltalk mit Tiefgang. Findet statt am Gartenzaun, am Stammtisch, im „Klönsnack" beim Friseur. Der „Klönschnack" ist die zugehörige Tätigkeit. Auch „de Klönsabend" — der gemütliche Abend mit Freunden. Norddeutsche Variante der Gemütlichkeit ohne Kitsch. Lebendige Tradition trotz Smartphone-Zeitalter.',
+      beispiel: 'Wi staht an\'n Tuun un kloont wat över dat Wedder.',
+      beispiel_hd: 'Wir stehen am Zaun und plaudern über das Wetter.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-106',
+      ausdruck: 'Bützen',
+      hochdeutsch: 'Bützchen / Küsschen',
+      bedeutung: 'Das „Bützen" ist im Norddeutschen das Wangenküsschen zur Begrüßung — auch „Bützchen" oder „Bützke". Wird unter Freunden, Familie und manchmal auch zwischen Geschäftspartnern getauscht. Im Karneval (in den katholischen Teilen Norddeutschlands) ist das „Bützchen" besonders verbreitet. Im strengeren Plattdeutsch-Bereich eher als Familienbrauch. Ostfriesen sind eher zurückhaltend mit Bützchen — Mecklenburger lockerer.',
+      beispiel: 'Gif Oma noch en Bütz, ehr du geihst!',
+      beispiel_hd: 'Gib Oma noch ein Küsschen, bevor du gehst!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-107',
+      ausdruck: 'Schimmelreiter',
+      hochdeutsch: 'Schimmelreiter (Storm-Novelle / Sage)',
+      bedeutung: 'Der „Schimmelreiter" ist die berühmteste norddeutsche Sage — verewigt in Theodor Storms Novelle (1888). Erzählt die Geschichte des Deichgrafen Hauke Haien aus Nordfriesland, der gegen die Naturgewalten und den Aberglauben kämpft. Sein weißer Schimmel reitet noch heute durchs Watt — wer ihn sieht, wem droht die Flut. Klassiker der Norddeutschen Literatur, mehrfach verfilmt. Symbol für die Auseinandersetzung mit Sturmflut und Vergänglichkeit.',
+      beispiel: 'De Schimmelrieder is mehr as bloots en Spoekgeschicht.',
+      beispiel_hd: 'Der Schimmelreiter ist mehr als bloß eine Spukgeschichte.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-108',
+      ausdruck: 'Rollmops',
+      hochdeutsch: 'Rollmops (gerollter Hering)',
+      bedeutung: 'Der „Rollmops" ist DIE norddeutsche Fischspezialität: ein saurer Hering, mit Zwiebel und Gewürzgurke gefüllt, zu einer Rolle aufgewickelt und mit einem Holzstäbchen fixiert. In Essigmarinade eingelegt. Wird als Katerfrühstück nach durchzechten Nächten geschworen — die Säure hilft angeblich gegen den Kater. Klassischer Snack auf Hamburger Fischmärkten und in jedem norddeutschen Imbiss. Norddeutsche Küchen-Folklore.',
+      beispiel: 'Na de Hochtied hölpt en Rollmops gegen den Kater.',
+      beispiel_hd: 'Nach der Hochzeit hilft ein Rollmops gegen den Kater.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-109',
+      ausdruck: 'Buschwindröschen',
+      hochdeutsch: 'Buschwindröschen (Frühlingsblume)',
+      bedeutung: 'Das „Buschwindröschen" (Anemone nemorosa) ist die typische norddeutsche Frühlingsblume — bedeckt im April die Buchenwälder mit weißen Blüten-Teppichen. Indikator für alte, naturnahe Wälder. Vom Aussterben bedrohte Schmetterlinge brauchen sie. In norddeutschen Landschaftsschutzgebieten wie der Lüneburger Heide oder dem Sachsenwald massenweise. Symbol für Frühlingserwachen im Norden.',
+      beispiel: 'In\'n Boom blöt jüst de Buschwindrööschen.',
+      beispiel_hd: 'Im Wald blühen gerade die Buschwindröschen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-110',
+      ausdruck: 'Friesennerz',
+      hochdeutsch: 'Friesennerz (gelbe Regenjacke)',
+      bedeutung: 'Der „Friesennerz" ist die typisch norddeutsche, knallgelbe Regenjacke aus PVC-beschichtetem Stoff. Eigentlich Berufskleidung von Fischern und Seeleuten, ist sie in den 70ern zum Mode-Statement geworden und bis heute Symbol der Küste. Wer auf Sylt, Föhr oder in Bremerhaven im Friesennerz spaziert, zeigt Heimatverbundenheit. Klassiker neben dem norddeutschen Pendant — der schwarzen Mütze (Prinz-Heinrich-Mütze).',
+      beispiel: 'In\'n Friesennerz kannst du den Sturm utholn.',
+      beispiel_hd: 'Im Friesennerz kannst du den Sturm aushalten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-111',
+      ausdruck: 'Pannfisch',
+      hochdeutsch: 'Pannfisch (Pfannenfisch)',
+      bedeutung: 'Der „Pannfisch" ist ein klassisches Hamburger Gericht — eigentlich ein Resteessen: Filets von verschiedenen Fischsorten (Scholle, Kabeljau, Seelachs) in der Pfanne gebraten, mit Bratkartoffeln, Senfsauce und Gurke serviert. Ursprünglich aus dem Hamburger Hafen — was an gekochtem Fisch übrigblieb, kam am nächsten Tag in die Pfanne. Heute Touristen-Klassiker in jedem Hamburger Fischrestaurant. Norddeutsche Resteküche par excellence.',
+      beispiel: 'Pannfisch mit Bratkantüffeln un Senfsoß — Pflichtprogramm.',
+      beispiel_hd: 'Pannfisch mit Bratkartoffeln und Senfsoße — Pflichtprogramm.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-112',
+      ausdruck: 'Watt',
+      hochdeutsch: 'Wattenmeer',
+      bedeutung: 'Das „Watt" ist das Wattenmeer — die einzigartige Küstenlandschaft an der Nordsee, bei Ebbe begehbar, bei Flut überflutet. UNESCO-Weltnaturerbe seit 2009. Lebensraum für Millionen Zugvögel, Krebse, Muscheln, Würmer. „Wattwandern" ist beliebter Touristensport — am besten mit ortskundigem Wattführer, denn die Flut kommt schneller als man denkt. Norddeutsches Naturwunder, kulturprägend für die Küstenbewohner.',
+      beispiel: 'En Wattwannerung mit\'n Plattdüütschen Führer — geihl!',
+      beispiel_hd: 'Eine Wattwanderung mit einem plattdeutschen Führer — geil!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-113',
+      ausdruck: 'Niederdeutsch',
+      hochdeutsch: 'Niederdeutsches Theater',
+      bedeutung: 'Das „Niederdeutsche Theater" oder „Plattdüütsch Theater" — vor allem das Ohnsorg-Theater in Hamburg (gegründet 1902) — bewahrt die plattdeutsche Sprache auf der Bühne. Heinz Rühmann, Heidi Kabel, Henry Vahl spielten hier Klassiker wie „Tratsch im Treppenhaus" und „Das Hörrohr". In den 70ern brachte das ZDF die Aufführungen ins Wohnzimmer — Millionen verstanden Plattdeutsch zum ersten Mal. Norddeutsche Sprachpflege par excellence.',
+      beispiel: 'Dat Ohnsorg-Theater speelt noch ümmer op Platt.',
+      beispiel_hd: 'Das Ohnsorg-Theater spielt noch immer auf Platt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-114',
+      ausdruck: 'Pharisäer',
+      hochdeutsch: 'Pharisäer (Kaffee mit Rum)',
+      bedeutung: 'Der „Pharisäer" ist ein nordfriesisches Heißgetränk: starker Kaffee mit braunem Rum (oder Asbach), Sahnehaube obendrauf. Der Sinn: Die Sahne verbirgt den Alkohol — so konnte man bei der Sonntagskaffeetafel heimlich vor dem strengen Pastor trinken. Wenn die Frau des Pfarrers den Rum entdeckte, soll sie gerufen haben: „Oh, Ihr Pharisäer!" — daher der Name. Norddeutsche Trinkkultur mit Humor.',
+      beispiel: 'En Pharisäer to\'n Sünndag — keen Pastor süht dat!',
+      beispiel_hd: 'Ein Pharisäer zum Sonntag — kein Pastor sieht das!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-115',
+      ausdruck: 'Schluck',
+      hochdeutsch: 'Schluck (kurzer Schnaps)',
+      bedeutung: 'Der „Schluck" ist im Norddeutschen der kurze, kräftige Schnaps zur Verdauung — meist Korn, Kümmel oder Aquavit. „Wat to\'n Schluck nehmen" gehört zum norddeutschen Bauernfrühstück, zur Beerdigung, zur Hochzeit. „Lütt un Lütt" ist die Hamburger Variante: kleines Bier mit kleinem Köm. Schluck ist soziales Schmiermittel und kulturelle Konstante an der Küste. Ohne Schluck kein norddeutsches Fest.',
+      beispiel: 'Komm, ick gööt di noch en Schluck in!',
+      beispiel_hd: 'Komm, ich gieße dir noch einen Schluck ein!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-116',
+      ausdruck: 'Klabautermann',
+      hochdeutsch: 'Klabautermann (Schiffsgeist)',
+      bedeutung: 'Der „Klabautermann" ist ein freundlicher Schiffsgeist aus der norddeutschen Seemanns-Folklore — wohnt in jedem Schiff, hilft beim Trimmen der Segel und warnt vor Gefahren. Wenn er das Schiff verlässt, ist es dem Untergang geweiht. Stammt aus mittelalterlicher Schiffersage, lebt in Liedern, Sagen und Tausenden Kinderbüchern. Wird oft als kleiner alter Mann mit Pfeife und gelbem Ölzeug dargestellt. Maritime Folklore in Reinkultur.',
+      beispiel: 'De Klabautermann is ut\'n Schipp gohn — dat is böös Teken!',
+      beispiel_hd: 'Der Klabautermann ist aus dem Schiff gegangen — das ist ein böses Zeichen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-117',
+      ausdruck: 'Möwen',
+      hochdeutsch: 'Möwen (Küstenvögel)',
+      bedeutung: 'Die „Möwen" sind die typischen Küstenvögel im Norden — Silbermöwe, Heringsmöwe, Lachmöwe. Sehr soziale Tiere, leben in Schwärmen, sind allgegenwärtig in Hafenstädten. Berüchtigt für ihre Frechheit: Sie klauen Pommes vom Teller, schreien laut und kacken auf Autos. Norddeutsche Hassliebe: Die Möwe gehört zur Küste wie Bier zur Brotzeit. Mehrere Möwen-Lieder gehören zum norddeutschen Kulturgut.',
+      beispiel: 'De Möwen hebbt mi de Fischbrötchen wegklaut!',
+      beispiel_hd: 'Die Möwen haben mir das Fischbrötchen geklaut!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-118',
+      ausdruck: 'Reepschläger',
+      hochdeutsch: 'Reepschläger (Seiler)',
+      bedeutung: 'Der „Reepschläger" war im historischen Norddeutschland der Seiler — Handwerker, der Taue („Reep") für Schiffe herstellte. Sehr wichtiger Beruf in den Hafenstädten Hamburg, Bremen, Lübeck. Die berühmte „Reeperbahn" in Hamburg hieß so, weil hier die Reepschläger ihre langen Seile zogen — die Straße ist deshalb so lang gerade. Heute fast ausgestorbener Beruf. Aber der Name lebt in Hamburgs Vergnügungsviertel weiter.',
+      beispiel: 'De Reeperbahn hett ehr Naam vun de Reepschläger.',
+      beispiel_hd: 'Die Reeperbahn hat ihren Namen von den Reepschlägern.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-119',
+      ausdruck: 'Plietsch',
+      hochdeutsch: 'Schlau / gewitzt',
+      bedeutung: '„Plietsch" ist im Plattdeutschen ein wichtiges Adjektiv: schlau, gewitzt, pfiffig — aber positiv konnotiert, nicht hinterlistig. „He is\'n plietschen Buurn" — er ist ein gewitzter Bauer. „Plietsch" ist Lob für jemanden, der Lebensklugheit und Bauernschläue verbindet. Anders als „falsch" oder „schlitzohrig" ist „plietsch" reine Anerkennung. Norddeutsche Tugend: nicht akademisch klug, aber praxisbezogen schlau.',
+      beispiel: 'De Lütte is plietsch — de kümmt überall mit kloor.',
+      beispiel_hd: 'Der Kleine ist clever — der kommt überall klar.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-120',
+      ausdruck: 'Smartphone',
+      hochdeutsch: 'Smartphone (auf Platt: dat Daddelding)',
+      bedeutung: 'Das „Smartphone" hat auch im Plattdeutschen einen eigenen Begriff — scherzhaft „dat Daddelding" (das Daddel-Ding) oder „de Tüddelkasten". Junge Plattsprecher übernehmen oft direkt die englischen Wörter. Ältere Generation prägt eigene Begriffe: „Mien Daddelding piept ümmer" — „Mein Smartphone piept immer". Plattdeutsch zeigt sich vital im Umgang mit der modernen Technik durch humorvolle Anpassung.',
+      beispiel: 'Mien Daddelding hett wedder kien Saft mehr.',
+      beispiel_hd: 'Mein Smartphone hat wieder keinen Saft mehr.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-121',
+      ausdruck: 'Friesenstolz',
+      hochdeutsch: 'Friesenstolz',
+      bedeutung: 'Der „Friesenstolz" ist das ausgeprägte Selbstbewusstsein der Ostfriesen, Nordfriesen und Saterfriesen — gepaart mit einer gewissen Sturheit (auch positiv gemeint). „En echte Fries gifft nich op" — ein echter Friese gibt nicht auf. Wurzelt in der jahrhundertelangen Tradition der „Friesischen Freiheit" — die Friesen unterstanden lange keinem Lehnsherrn. Bis heute spürbares Identitätsmerkmal in den Marschlandschaften. Tugend, nicht Macke.',
+      beispiel: 'De Friesenstolz höllt ehr opp\'n richtigen Padd.',
+      beispiel_hd: 'Der Friesenstolz hält sie auf dem richtigen Pfad.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-122',
+      ausdruck: 'Heesterhuus',
+      hochdeutsch: 'Heesterhaus / Tor-Haus',
+      bedeutung: 'Das „Heesterhuus" ist ein traditionelles norddeutsches Bauernhaus mit dem charakteristischen Vorbau („Heester") — Eingangsbereich mit Treppenstufen unter einem überdachten Vordach. Schützt vor Regen und Wind, ist sozialer Treffpunkt vor dem Haus. Vor allem in Schleswig-Holstein und im Emsland verbreitet. Architektur, die den Witterungen der Küste angepasst ist. Heimatschutz-Idylle pur.',
+      beispiel: 'Vör\'n Heesterhuus sitt de oll Bauer un rookt sien Pief.',
+      beispiel_hd: 'Vor dem Heesterhaus sitzt der alte Bauer und raucht seine Pfeife.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-123',
+      ausdruck: 'Heimatleed',
+      hochdeutsch: 'Heimatlied (norddeutsches Lied)',
+      bedeutung: 'Das „Heimatleed" — das norddeutsche Heimatlied — ist Ausdruck der tiefen Verbundenheit mit dem Norden, dem Meer und dem Land. Berühmte Beispiele: „Wo de Nordseewellen trecken an den Strand", „Schleswig-Holstein meerumschlungen", „An de Eck steiht\'n Jung mit\'n Tüddelband". Werden auf Hochzeiten, Beerdigungen und beim Klönschnack gesungen. Identifikationsstifter trotz moderner Beats und Streamingdiensten.',
+      beispiel: 'Bi en Heimatleed kümmt mi jümmer dat Watter in d\'Oogen.',
+      beispiel_hd: 'Bei einem Heimatlied kommt mir immer das Wasser in die Augen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-124',
+      ausdruck: 'Bötel',
+      hochdeutsch: 'Bötel (Schweinshaxe gepökelt)',
+      bedeutung: 'Der „Bötel" ist eine norddeutsche Spezialität: gepökelte und gekochte Schweinshaxe, klassisch mit Schmorkohl (Sauerkohl) und Erbspüree serviert. Berliner Variante heißt „Eisbein", in Schleswig-Holstein und Mecklenburg „Bötel". Wird in jeder norddeutschen Gaststätte zum Winteressen angeboten. Deftig, kalorienreich, geeignet für kalte Nordwind-Tage. Klassiker der norddeutschen Hausmannskost — kein Mensch wird hungrig vom Tisch.',
+      beispiel: 'Bötel mit Schmoorkohl — dat hölpt gegen den Sturm.',
+      beispiel_hd: 'Bötel mit Schmorkohl — das hilft gegen den Sturm.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-125',
+      ausdruck: 'Hering',
+      hochdeutsch: 'Hering (norddeutscher Brotfisch)',
+      bedeutung: 'Der „Hering" — auf Platt „Heering" — ist seit dem Mittelalter der wichtigste Speisefisch des Nordens. Die Hanse wurde reich durch Heringshandel mit Skandinavien. Wird in zahlreichen Varianten zubereitet: Matjes, Bismarckhering, Rollmops, Brathering, Sahnehering. Der „Heringsmarkt" war früher die wichtigste Handels-Tradition. Auch übertragen: „Pack di wie en Hering" — eng zusammengepfercht. Norddeutsches Welterbe der Fischkultur.',
+      beispiel: 'En frisch Matjes-Heering mit Tüffel — dat smeckt!',
+      beispiel_hd: 'Ein frischer Matjeshering mit Kartoffeln — das schmeckt!',
+      kategorie: 'essen'
     }
   ]
 };

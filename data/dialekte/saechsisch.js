@@ -873,6 +873,231 @@ export default {
       beispiel: 'S\'Völkerschlachtdenkmal — a riesige Sache, beeindruckend!',
       beispiel_hd: 'Das Völkerschlachtdenkmal — eine riesige Sache, beeindruckend!',
       kategorie: 'orte'
+    },
+    {
+      id: 's-101',
+      ausdruck: 'Schütz',
+      hochdeutsch: 'Heinrich Schütz (Komponist)',
+      bedeutung: 'Heinrich Schütz (1585–1672) war der bedeutendste deutsche Barockkomponist vor Johann Sebastian Bach — Hofkapellmeister in Dresden über 50 Jahre lang. Brachte die italienische Madrigalkunst nach Deutschland und schuf geistliche Vokalmusik von Weltrang („Symphoniae sacrae"). Geboren in Köstritz, gestorben in Dresden. Sein Wirken machte Dresden zur „deutschen Musik-Metropole" des 17. Jahrhunderts. Vater der deutschen Musiktradition.',
+      beispiel: 'Da Schütz hat in Dresd\'n de\' deitsche Musig grindet.',
+      beispiel_hd: 'Der Schütz hat in Dresden die deutsche Musik gegründet.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-102',
+      ausdruck: 'Schumann',
+      hochdeutsch: 'Robert & Clara Schumann (Komponisten)',
+      bedeutung: 'Robert Schumann (1810–1856), geboren in Zwickau, war einer der wichtigsten Komponisten der deutschen Romantik. Mit seiner Frau Clara Schumann (geb. Wieck, 1819–1896), einer der berühmtesten Pianistinnen ihrer Zeit, bildete er das berühmteste Künstlerpaar des 19. Jahrhunderts. Beide lebten zeitweise in Leipzig und Dresden. Robert litt an psychischen Erkrankungen und endete in einer Bonner Anstalt. Sächsische Musikgeschichte par excellence.',
+      beispiel: 'S\'Schumann-Haus in Zwickau is\'a Pilgerstätte fier Musig-Liebhaber.',
+      beispiel_hd: 'Das Schumann-Haus in Zwickau ist eine Pilgerstätte für Musik-Liebhaber.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-103',
+      ausdruck: 'Bautz\'n',
+      hochdeutsch: 'Bautzen / Budyšin (sorbische Hauptstadt)',
+      bedeutung: 'Bautzen (sorbisch Budyšin) in der Oberlausitz ist das politische und kulturelle Zentrum der sorbischen Minderheit in Sachsen. Berühmt für sein historisches Stadtbild mit 17 Türmen, den Bautzener Senf (gelb, scharf) und den traditionellen Bautzner Wurstmarkt. Auch traurig bekannt für die DDR-Stasi-Haftanstalt „Bautzen II". Heute lebendige zweisprachige Stadt mit Sorben-Schulen und der Sorbisch-Wendischen Folklore.',
+      beispiel: 'In Bautz\'n hörste manchmal noch a sorbisches Wort.',
+      beispiel_hd: 'In Bautzen hörst du manchmal noch ein sorbisches Wort.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-104',
+      ausdruck: 'Pfefferkuchen',
+      hochdeutsch: 'Pulsnitzer Pfefferkuchen',
+      bedeutung: 'Der Pfefferkuchen aus Pulsnitz und Bautzen ist eine sächsische Spezialität, die seit dem 16. Jahrhundert gebacken wird. Anders als Nürnberger Lebkuchen ist der sächsische Pfefferkuchen heller, weicher und stark mit Gewürzen aromatisiert (Anis, Zimt, Nelken). Wird ganzjährig produziert und gegessen, aber besonders zur Weihnachtszeit. Pulsnitz nennt sich stolz „Pfefferkuchenstadt". Echtes sächsisches Erbe — UNESCO-würdig.',
+      beispiel: 'Pulsnitzer Pfefferkuchen schmecken besser als Nirnberger.',
+      beispiel_hd: 'Pulsnitzer Pfefferkuchen schmecken besser als Nürnberger.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-105',
+      ausdruck: 'Trabi',
+      hochdeutsch: 'Trabant (DDR-Auto)',
+      bedeutung: 'Der „Trabi" (Trabant) war das berühmteste Auto der DDR — gebaut von 1957 bis 1991 in Zwickau (Sachsen). Karosserie aus Duroplast (gepresster Baumwollabfall), Zweitaktmotor mit 26 PS, blauer Qualm und unverkennbares Knattern. Wartezeiten von bis zu 15 Jahren! Heute Kultobjekt, Symbol der DDR und der Wiedervereinigung. Trabi-Touren durch Berlin sind Touristen-Attraktion. „Mein Trabi, mein Schatz!"',
+      beispiel: 'Mei Großvater hat 15 Jahre auf seinen Trabi gewartet.',
+      beispiel_hd: 'Mein Großvater hat 15 Jahre auf seinen Trabi gewartet.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-106',
+      ausdruck: 'Sandmännchen',
+      hochdeutsch: 'Sandmännchen (DDR-Kinderfigur)',
+      bedeutung: 'Das „Sandmännchen" — vollständig „Unser Sandmännchen" — ist die berühmteste Kinderfigur des DDR-Fernsehens, seit 1959 ausgestrahlt vom Deutschen Fernsehfunk (Adlershof, später Babelsberg). Jeden Abend um 19:00 brachte das Sandmännchen mit seinen Fahrzeugen (Düsenflieger, Mondrakete, Trabi etc.) den Kindern Sand in die Augen. Hat die Wende überlebt und läuft bis heute. Generationenprägend für Ostdeutsche.',
+      beispiel: 'Ohne Sandmännchen ging ich als Kind nich ins Bett.',
+      beispiel_hd: 'Ohne Sandmännchen ging ich als Kind nicht ins Bett.',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-107',
+      ausdruck: 'Räuchermännel',
+      hochdeutsch: 'Räuchermann (Erzgebirgische Volkskunst)',
+      bedeutung: 'Das „Räuchermännel" ist eine erzgebirgische Holzfigur, in deren Bauch eine Räucherkerze gesteckt wird — der Rauch steigt durch den Mund empor. Typische Figuren: Bergmann, Förster, Räuber, Pilzfrau. Wird seit dem 19. Jahrhundert in Seiffen und Umgebung handgefertigt. Klassische Weihnachts-Dekoration, die in jedes sächsische Wohnzimmer gehört. UNESCO-würdige Volkskunst. Zusammen mit Schwibbögen und Pyramiden Erzgebirgs-Folklore.',
+      beispiel: 'Jeds Jahr ze Weihnachten stell ich mei Räuchermännel hin.',
+      beispiel_hd: 'Jedes Jahr zu Weihnachten stelle ich mein Räuchermännchen hin.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-108',
+      ausdruck: 'Wendelstein',
+      hochdeutsch: 'Wendelstein (Berg im Vogtland)',
+      bedeutung: 'Der Wendelstein in der Sächsischen Schweiz ist Teil des Elbsandsteingebirges — ein Klettersteig und Aussichtspunkt. Nicht zu verwechseln mit dem bayerischen Wendelstein. Die Sächsische Schweiz mit Bastei, Königstein, Lilienstein ist eines der schönsten Mittelgebirge Deutschlands. Berühmt für die markanten Sandsteinfelsen, durch die seit Caspar David Friedrich Generationen von Romantikern wanderten. Sächsisches Naturparadies.',
+      beispiel: 'In der Sächsischen Schweiz kannste tagelang wandern.',
+      beispiel_hd: 'In der Sächsischen Schweiz kannst du tagelang wandern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-109',
+      ausdruck: 'Quark',
+      hochdeutsch: 'Quark / Topfen',
+      bedeutung: 'Der „Quark" ist sächsisches Grundnahrungsmittel — viel beliebter als in Süddeutschland (wo es „Topfen" heisst). Wird zu Pellkartoffeln, zum Brot oder als „Quarkkeulchen" (frittierte Quark-Kartoffel-Bällchen) gegessen. Auch übertragen: „red kein\' Quark!" — rede keinen Unsinn! „Das ist Quark!" — das ist Blödsinn. Der Sachse hat ein liebevolles Verhältnis zum Quark — kulinarisch wie sprachlich.',
+      beispiel: 'Red doch kein\' Quark, du weeßt das doch besser!',
+      beispiel_hd: 'Rede doch keinen Unsinn, du weißt das doch besser!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-110',
+      ausdruck: 'Schwibbogen',
+      hochdeutsch: 'Schwibbogen (Erzgebirgische Lichterbogen)',
+      bedeutung: 'Der „Schwibbogen" ist eine traditionelle erzgebirgische Lichterbogen-Dekoration mit Holzfiguren, beleuchtet von Kerzen oder elektrischen Lichtern. Stammt aus der Bergbau-Tradition: Wenn im Winter die Bergleute nach langer Schicht aus dem Schacht stiegen, brannte zuhause schon das Licht. Erste Schwibbögen wurden 1740 in Johanngeorgenstadt aus Metall geschmiedet. Heute Holz-Volkskunst aus Seiffen — fester Bestandteil sächsischer Weihnachten.',
+      beispiel: 'Jeds Fenster im Erzgebirge hat\'n Schwibbogen ze Weihnachten.',
+      beispiel_hd: 'Jedes Fenster im Erzgebirge hat einen Schwibbogen zu Weihnachten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-111',
+      ausdruck: 'Stollen',
+      hochdeutsch: 'Dresdner Christstollen',
+      bedeutung: 'Der „Dresdner Christstollen" ist DAS sächsische Weihnachtsgebäck — geschützte Herkunftsbezeichnung seit 2010. Ein schwerer, butter- und rosinenreicher Hefekuchen, mit Mandelstollen, kandierten Früchten, Zitronat und reichlich Puderzucker. Wird vier Wochen vor Weihnachten gebacken, damit er nachreifen kann. Der Dresdner Stollenmarkt im Advent ist legendär — der „Riesenstollen" wiegt mehrere Tonnen. Sächsisches Welterbe der Backkunst.',
+      beispiel: 'Ohne Dresdner Stollen ze Weihnachten — geht gar nich!',
+      beispiel_hd: 'Ohne Dresdner Stollen zu Weihnachten — geht gar nicht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-112',
+      ausdruck: 'Spreewald',
+      hochdeutsch: 'Spreewald (Naturlandschaft)',
+      bedeutung: 'Der Spreewald in der Niederlausitz (teils in Sachsen, teils in Brandenburg) ist eine einzigartige Auenlandschaft mit über 1000 km natürlicher und künstlicher Wasserläufe („Fließen"). UNESCO-Biosphärenreservat. Berühmt für Kahnfahrten, Spreewaldgurken (geschützte Herkunftsbezeichnung), die sorbisch-wendische Kultur und die Tracht. Heimat des verfilmten „Krabat" (Otfried Preußler). Touristisches Highlight Ostdeutschlands.',
+      beispiel: 'Eene Kahnfahrt dorch\'n Spreewald — wunderschön!',
+      beispiel_hd: 'Eine Kahnfahrt durch den Spreewald — wunderschön!',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-113',
+      ausdruck: 'Eierschecke',
+      hochdeutsch: 'Eierschecke (Dresdner Spezialität)',
+      bedeutung: 'Die „Eierschecke" ist DIE sächsische Kuchen-Spezialität, besonders in Dresden, Freiberg und Leipzig beliebt. Ein dreischichtiger Kuchen aus Mürbeteigboden, Quarkschicht und einer eiergelben Schaumschicht obendrauf. Die Quarkschicht macht sie cremig, die obere Schicht goldbraun. Original ohne Rosinen, je nach Region variieren die Zutaten. Wird auf jedem Familienfest, an Sonntagen und in jedem sächsischen Café serviert.',
+      beispiel: 'Ne Tasse Kaffee unde Eierschecke — Sonntagsritual!',
+      beispiel_hd: 'Eine Tasse Kaffee und Eierschecke — Sonntagsritual!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-114',
+      ausdruck: 'Ampelmännchen',
+      hochdeutsch: 'Ostdeutsches Ampelmännchen',
+      bedeutung: 'Das ostdeutsche „Ampelmännchen" — entworfen 1961 vom Verkehrspsychologen Karl Peglau — ist mit seinem markanten Hut zum Kult-Symbol geworden. Nach der Wende sollte es abgeschafft werden, doch ostdeutscher Bürgerprotest rettete es. Heute auch in Westdeutschland eingesetzt und auf Souvenirs, T-Shirts und Schokoladenfiguren zu finden. Symbol für ostdeutsche Identität und schöne DDR-Erinnerung — nicht alles war schlecht.',
+      beispiel: 'S\'Ampelmännchen ham\'se nach der Wende behalten — Gott sei Dank!',
+      beispiel_hd: 'Das Ampelmännchen haben sie nach der Wende behalten — Gott sei Dank!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-115',
+      ausdruck: 'Wahnsinn',
+      hochdeutsch: 'Wahnsinn (1989-Ausruf)',
+      bedeutung: '„Wahnsinn!" — gesprochen im sächsischen Singsang — wurde während der Friedlichen Revolution 1989/90 zum geflügelten Wort. Tausende Sachsen riefen es bei der Maueröffnung, als sie zum ersten Mal in den Westen reisten. Schon vorher in Leipzig: „Wahnsinn, wir sind das Volk!" Symbol für die ostdeutsche Begeisterung und Verwirrung nach dem Mauerfall. Bis heute typisch sächsischer Ausruf der freudigen Überraschung.',
+      beispiel: 'Wahnsinn! Heud ham mer Glick g\'habt!',
+      beispiel_hd: 'Wahnsinn! Heute haben wir Glück gehabt!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-116',
+      ausdruck: 'Bautzner',
+      hochdeutsch: 'Bautz\'ner Senf',
+      bedeutung: 'Der „Bautz\'ner Senf" ist DER ostdeutsche Senf — gegründet 1834 in Bautzen. Sehr scharf, leuchtend gelb, mittelgrob — Geschmacksprofil unverkennbar. Wird zu Wurst, Eisbein und Bockwurst gegessen. Westdeutsche „Düsseldorfer Senf"-Esser werden im Osten skeptisch beäugt. Marke überlebte die Wende durch ostdeutsche Markentreue. Heute bundesweit verbreitet, aber kulturelles Symbol für Ostdeutschland geblieben.',
+      beispiel: 'Ohne Bautz\'ner Senf isn Bockwurscht halt nüscht.',
+      beispiel_hd: 'Ohne Bautzner Senf ist eine Bockwurst halt nichts.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-117',
+      ausdruck: 'Heidschnucke',
+      hochdeutsch: 'Heidschnucke (Schafrasse)',
+      bedeutung: 'Die „Heidschnucke" ist eine alte Schafrasse, die ursprünglich in der Lüneburger Heide weidet, aber auch in sächsischen Heidelandschaften vorkommt. Robust, anspruchslos, mit graubraunem Wollvlies und drehbaren Hörnern. Hält die Heide kurz und biodiversitätsreich — Symbol nachhaltiger Landschaftspflege. Fleisch der Heidschnucke ist Delikatesse mit kräftigem Geschmack. Beliebt in Slow-Food-Restaurants.',
+      beispiel: 'Heidschnucken-Bratn is\'a echte Delikatesse.',
+      beispiel_hd: 'Heidschnucken-Braten ist eine echte Delikatesse.',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-118',
+      ausdruck: 'Mucke',
+      hochdeutsch: 'Mücke / Job (Slang)',
+      bedeutung: 'Die „Mucke" hat im Sächsischen zwei Bedeutungen: Erstens der Insekt (Mücke) — „die Mucken zwicken wieder!". Zweitens Slang für Job, Gig, Auftrag — vor allem in der Musikszene. „A Mucke spielen" heißt einen Auftritt absolvieren. „Eine schöne Mucke" ist ein guter, gut bezahlter Job. Auch übertragen: kleinere Beschäftigung oder Nebenarbeit. Spezialwort der sächsisch-thüringischen Musiker- und Künstlerszene.',
+      beispiel: 'Heud Abnd hab ich noch ne Mucke in Leipzig.',
+      beispiel_hd: 'Heute Abend habe ich noch einen Gig in Leipzig.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-119',
+      ausdruck: 'Karl May',
+      hochdeutsch: 'Karl May (Schriftsteller)',
+      bedeutung: 'Karl May (1842–1912), geboren in Hohenstein-Ernstthal (Sachsen), war der berühmteste deutsche Abenteuerschriftsteller — Schöpfer von Winnetou, Old Shatterhand, Kara Ben Nemsi. Über 100 Mio. Bücher verkauft. Hatte selbst nie die fernen Länder besucht, die er beschrieb. Sein Haus „Villa Shatterhand" in Radebeul ist heute Karl-May-Museum. Generationen deutscher Kinder lernten durch ihn Lesen und Träumen. Sächsischer Welt-Erfolg.',
+      beispiel: 'Karl May hab ich als Kind verschlungen — Winnetou über alles!',
+      beispiel_hd: 'Karl May habe ich als Kind verschlungen — Winnetou über alles!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-120',
+      ausdruck: 'Klempner',
+      hochdeutsch: 'Klempner / Installateur',
+      bedeutung: 'Der „Klempner" ist im sächsischen Sprachgebrauch der Sanitär-Installateur — anders als im Hochdeutschen, wo es eher der Blechschmied ist. „Den Klempner rufen" bei Rohrbruch ist sächsischer Alltag. Klassischer ostdeutscher Handwerksberuf, oft Familientradition. „Klempner-Witze" — über die ewig zu spät kommenden, teuren Handwerker — sind sächsisches Kabarettmaterial. Berufsstand mit hohem Sozialstatus, aber komplizierter Reputation.',
+      beispiel: 'Der Klempner kommt erst nächste Woche — typisch.',
+      beispiel_hd: 'Der Klempner kommt erst nächste Woche — typisch.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-121',
+      ausdruck: 'Bergmännel',
+      hochdeutsch: 'Bergmännchen (Erzgebirgische Volkskunst)',
+      bedeutung: 'Das „Bergmännel" ist eine erzgebirgische Holzfigur in Bergmanns-Uniform — Symbol für die jahrhundertelange Bergbau-Tradition in Sachsen. Wird zusammen mit dem „Engel" (Symbol für die Frauen, die zu Hause warten) als Lichterträger zur Weihnachtszeit aufgestellt. Erinnert an die Zeit, als der Erzbergbau in Annaberg, Schneeberg und Freiberg blühte. UNESCO-Welterbe „Montanregion Erzgebirge".',
+      beispiel: 'Im Erzgebirge hat jeds Hous a Bergmännel im Fenster.',
+      beispiel_hd: 'Im Erzgebirge hat jedes Haus ein Bergmännchen im Fenster.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-122',
+      ausdruck: 'Riesa',
+      hochdeutsch: 'Riesa (Stadt in Sachsen)',
+      bedeutung: 'Riesa an der Elbe ist eine sächsische Mittelstadt — bekannt als „Stadt der Stahl- und Nudelwerke". Hier wird die berühmte „Riesa-Nudel" produziert (auch wenn die Firma längst Teil eines Konzerns ist). Sportstadt mit Tradition: SC Riesa (Eishockey), aber auch traurige Berühmtheit als Standort der NPD-Bundesgeschäftsstelle. Industriegeschichte sächsischer Provinzstädte zwischen DDR-Erbe und Gegenwart.',
+      beispiel: 'Riesa-Nudeln warn ze DDR-Zeit\'n Massenware.',
+      beispiel_hd: 'Riesa-Nudeln waren zu DDR-Zeiten Massenware.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-123',
+      ausdruck: 'Heeschen',
+      hochdeutsch: 'Häschen (Kosewort)',
+      bedeutung: 'Das „Heeschen" ist im Sächsischen das verniedlichte Häschen — Kosewort für geliebte Menschen, vor allem zwischen Partnern und in Familien. „Mei Heeschen" zeigt Wärme und Zuneigung. Die sächsische Verniedlichungs-Endung „-schen" macht aus jedem Wort ein liebevolles Kosewort: Mauseschen, Schatzeschen, Bärsche. Charakteristisches Element der sächsischen Beziehungssprache — wärmer als die meisten Hochdeutsch-Variante.',
+      beispiel: 'Komm her, mei Heeschen, gib mir n Kuss!',
+      beispiel_hd: 'Komm her, mein Häschen, gib mir einen Kuss!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-124',
+      ausdruck: 'Lurchi',
+      hochdeutsch: 'Lurchi (Salamander-Werbefigur)',
+      bedeutung: '„Lurchi" ist die berühmte Salamander-Schuhe-Werbefigur — entwickelt 1937 von dem in Erlangen geborenen Heinrich Werner. Die Lurchi-Heftchen waren auch in der DDR begehrte Kindheits-Lektüre — auch wenn Salamander-Schuhe für DDR-Bürger fast unerreichbar waren. Die Reime „Salamander lebe hoch" sind Generationen vertraut. Nostalgisches Symbol für Schuhe-Kauf-Erlebnisse im 20. Jahrhundert.',
+      beispiel: 'Als Kind hab\' ich jeds Lurchi-Heft verschlungen.',
+      beispiel_hd: 'Als Kind habe ich jedes Lurchi-Heft verschlungen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-125',
+      ausdruck: 'Wismut',
+      hochdeutsch: 'Wismut (Uran-Bergbau DDR)',
+      bedeutung: 'Die SDAG „Wismut" war die sowjetisch-deutsche Aktiengesellschaft, die zwischen 1947 und 1990 in Sachsen und Thüringen Uran für sowjetische Atomwaffen abbaute — der drittgrößte Uranproduzent der Welt. Über 400.000 Menschen arbeiteten unter brutalen Bedingungen. Hinterließ Bergschäden und gesundheitliche Spätfolgen (Wismut-Krebs). Heute laufende Sanierung. Tragisches Kapitel sächsischer Wirtschafts- und Sozialgeschichte.',
+      beispiel: 'Mei Großvater hat 30 Jahr in der Wismut gearbeit.',
+      beispiel_hd: 'Mein Großvater hat 30 Jahre in der Wismut gearbeitet.',
+      kategorie: 'arbeit'
     }
   ]
 };

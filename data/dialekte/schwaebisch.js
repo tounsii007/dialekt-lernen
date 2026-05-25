@@ -869,6 +869,231 @@ export default {
       beispiel: 'Schwaben sin\'die besten Tüftler — Daimler und Bosch sin\'der Beweis.',
       beispiel_hd: 'Schwaben sind die besten Tüftler — Daimler und Bosch sind der Beweis.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-101',
+      ausdruck: 'Schaffe',
+      hochdeutsch: 'Arbeiten (schwäbische Lebensphilosophie)',
+      bedeutung: '„Schaffe, schaffe, Häusle baue" — der berühmte schwäbische Lebensspruch. Das Verb „schaffe" steht für die schwäbische Arbeitsethik: fleißig, gewissenhaft, sparsam. Schwaben sehen Arbeit als Identität und Tugend, nicht als Last. „Net schaffe is g\'fährlich" — Müßiggang ist gefährlich. Diese Mentalität hat Baden-Württemberg zum reichsten Bundesland gemacht. Klischee und Realität in einem.',
+      beispiel: 'Schaffe, schaffe, Häusle baue — und net nach de Mädle schaue!',
+      beispiel_hd: 'Arbeiten, arbeiten, Haus bauen — und nicht den Mädchen nachschauen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-102',
+      ausdruck: 'Linsa',
+      hochdeutsch: 'Linsen mit Spätzle',
+      bedeutung: '„Linsa mit Spätzla ond Saitawürschtle" (Linsen mit Spätzle und Saitenwürstchen) ist DAS schwäbische Nationalgericht. Klassische Hausmannskost: Linsensuppe, dazu hausgemachte Spätzle und Wiener Würstchen („Saitenwürstchen"). Wird mit einem Schuss Essig verfeinert. In jedem schwäbischen Wirtshaus zu finden. Sättigend, günstig, traditionell — alles, was der Schwabe liebt. Der Spruch „Linsa mit Spätzla" ist mehr als Speise — er ist Identität.',
+      beispiel: 'Heut gibt\'s Linsa mit Spätzla — mei Lieblings\'gricht!',
+      beispiel_hd: 'Heute gibt es Linsen mit Spätzle — mein Lieblingsgericht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-103',
+      ausdruck: 'Maultaschenstreit',
+      hochdeutsch: 'Maultaschen-Streit (Origin-Debatte)',
+      bedeutung: 'Der „Maultaschenstreit" ist die schwäbische Debatte um die Herkunft der Maultaschen. Eine Legende: Im 17. Jh. erfanden Maulbronner Klosterbrüder die „Herrgottsbescheißerle", um in der Fastenzeit heimlich Fleisch zu essen — durch den Teig „bescheissen" sie den Herrgott. Tübingen reklamiert die Erfindung. Heute geschützte geographische Angabe „Schwäbische Maultaschen". Schwäbischer Heimatstolz par excellence.',
+      beispiel: 'Tübingen ond Maulbronn streitet ums Erfinderrecht.',
+      beispiel_hd: 'Tübingen und Maulbronn streiten ums Erfinderrecht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-104',
+      ausdruck: 'Bosch',
+      hochdeutsch: 'Robert Bosch (Erfinder & Firma)',
+      bedeutung: 'Robert Bosch (1861–1942) war einer der größten schwäbischen Tüftler — Gründer der gleichnamigen Firma (1886 in Stuttgart). Erfindungen: Magnetzünder, Bremstechnik, später Haushaltsgeräte und IT. Heute weltgrößter Automobilzulieferer mit über 400.000 Mitarbeitern. Bosch war für seine soziale Einstellung berühmt — Achtstundentag, Lohnerhöhungen, ohne ihn wäre VW nie groß geworden. Schwäbisches Ingenieurs-Vorbild bis heute.',
+      beispiel: 'Mei Großvater hat 40 Jahr bei Bosch g\'schafft.',
+      beispiel_hd: 'Mein Großvater hat 40 Jahre bei Bosch gearbeitet.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-105',
+      ausdruck: 'Spätzle',
+      hochdeutsch: 'Spätzle (schwäbische Eierteigware)',
+      bedeutung: 'Die „Spätzle" sind DIE schwäbische Beilage — Eierteigware aus Mehl, Eiern, Wasser und Salz, durch ein Spätzle-Sieb („Spätzlehobel" oder „Spätzlepresse") in kochendes Wasser geschabt. „Knöpfle" sind die kleineren, „Spatzen" die größeren Varianten. Wird zu allem gegessen: Linsen, Gulasch, Käsespätzle, Rahmsoße. Eine schwäbische Hausfrau, die keine Spätzle „von der Hand schaben" kann, gilt als nicht voll ausgebildet. Schwäbisches Welterbe.',
+      beispiel: 'Mei Oma schabt d\'Spätzla noch alles von der Hand.',
+      beispiel_hd: 'Meine Oma schabt die Spätzle noch alle von der Hand.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-106',
+      ausdruck: 'Stuagert',
+      hochdeutsch: 'Stuttgart',
+      bedeutung: '„Stuagert" — auch „Schduagerd" geschrieben — ist die schwäbische Aussprache von Stuttgart, der Landeshauptstadt Baden-Württembergs. Stadt im Talkessel, umgeben von Weinbergen. Heimat von Daimler, Porsche, Bosch — Hauptstadt der deutschen Autoindustrie. Mit dem „Stuttgart 21"-Bahnhofsbau jahrelang im Streit. Schwäbische Identität: ländlich-bodenständig und High-Tech-modern zugleich. Die VfB-Fans singen: „Hier gibt\'s nur ein VfB!"',
+      beispiel: 'I komm aus Stuagert — ond ja, mir kennet net Hochdeutsch.',
+      beispiel_hd: 'Ich komme aus Stuttgart — und ja, wir können nicht Hochdeutsch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-107',
+      ausdruck: 'Trollinger',
+      hochdeutsch: 'Trollinger (schwäbischer Rotwein)',
+      bedeutung: 'Der „Trollinger" ist der schwäbische Nationalwein — ein leichter, fruchtiger Rotwein, hauptsächlich im Neckartal angebaut. Trinkt sich leicht — „Trollinger trinkt sich wie\'s Wasser" — und gehört zu jeder schwäbischen Vesper. Auch als „Trollinger mit Lemberger" als Cuvée verbreitet. Der Schwabe trinkt seinen Wein gerne aus dem „Viertele"-Glas. Bodenständiger als der bayerische Bier-Kult, aber genauso identitätsstiftend.',
+      beispiel: 'A Viertele Trollinger zur Vesper — Pflichtprogramm.',
+      beispiel_hd: 'Ein Viertel Trollinger zur Vesper — Pflichtprogramm.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-108',
+      ausdruck: 'Cannstatter',
+      hochdeutsch: 'Cannstatter Wasen (Volksfest)',
+      bedeutung: 'Der „Cannstatter Wasen" ist das größte schwäbische Volksfest — das „bayerische Oktoberfest" auf schwäbisch. Gegründet 1818 von König Wilhelm I. als Erntedankfest in Bad Cannstatt. Heute drei Wochen lang Bierzelte, Karussells, Riesenrad — über 4 Mio. Besucher. Das Wahrzeichen: die 26 m hohe „Fruchtsäule". Schwabens Antwort auf München — kleiner, aber genauso fröhlich. „Wasenrummel" ist schwäbischer Vergnügungs-Highlight im Herbst.',
+      beispiel: 'Auf\'n Wasa goht\'s am Wochaend — Lederhos\' aa!',
+      beispiel_hd: 'Auf den Wasen gehen wir am Wochenende — Lederhose auch!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-109',
+      ausdruck: 'Brezel',
+      hochdeutsch: 'Schwäbische Brezel',
+      bedeutung: 'Die „schwäbische Brezel" (Laugenbrezel) ist neben Spätzle das wichtigste schwäbische Backwerk — knusprig braun, mit grobem Salz bestreut. Im Gegensatz zur bayerischen Brezn ist die schwäbische dünner an den Ärmchen und dicker im Bauch. Klassische Begleitung zum Frühstück, zur Vesper, zum Bier. Stuttgarter „Brez\'gugl" — die einzelne Brezel — wird im Vorbeigehen verspeist. Wird auch zum „Brez\'lkönig" — den die Region kürt.',
+      beispiel: 'A frische Brez\'l mit Butter — Frühstück!',
+      beispiel_hd: 'Eine frische Brezel mit Butter — Frühstück!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-110',
+      ausdruck: 'Schwabenstreich',
+      hochdeutsch: 'Schwabenstreich (gemeinsame Aktion)',
+      bedeutung: 'Der „Schwabenstreich" wurde 2010 bei den Protesten gegen Stuttgart 21 erfunden: Jeden Tag um 19 Uhr lärmten Demonstranten gemeinsam mit Trillerpfeifen, Kochtöpfen und Vuvuzelas — eine Minute lang. Stammt von den „Sieben Schwaben" der Märchen. Heute Symbol für schwäbische Bürgerrechtsbewegung und kreative Demokratie. Wurde von anderen Protestbewegungen übernommen — vom Schwabenland in die ganze Welt.',
+      beispiel: 'Vor 19 Uhr noch Schwabenstreich gege Stuttgart 21.',
+      beispiel_hd: 'Vor 19 Uhr noch Schwabenstreich gegen Stuttgart 21.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-111',
+      ausdruck: 'Saitenwurscht',
+      hochdeutsch: 'Saitenwurst (Wiener Würstchen)',
+      bedeutung: 'Die „Saitenwurscht" ist im Schwäbischen das Wiener Würstchen — länger und dünner, mit Naturdarm. „Saiten" wie bei der Violine, weil die Würste lang und gerade sind. Zu Linsen und Spätzle ein Muss. Werden in heißem Wasser warm gemacht („sieden", nicht kochen, sonst platzen sie). Auch als „Rote" bekannt. Schwäbisches Standardrepertoire jeder Brotzeit und Vesper. Bodenständig wie der Schwabe selbst.',
+      beispiel: 'Linsa ohne Saitewurscht? Net im Schwabeland!',
+      beispiel_hd: 'Linsen ohne Saitenwurst? Nicht im Schwabenland!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-112',
+      ausdruck: 'Kehrwoche',
+      hochdeutsch: 'Kehrwoche (Putzpflicht)',
+      bedeutung: 'Die „Kehrwoche" ist die schwäbische Putz-Institution: In Mehrfamilienhäusern rotiert die Pflicht, Treppenhaus, Bürgersteig und Hof zu reinigen. Wer „Kehrwoche hat", muss am Samstag früh wischen und kehren. Streng geregelt, gnadenlos kontrolliert von Nachbarn. Wer schludert, wird zum Sozialfeind. Schwabens Ruf für Putzwahn und Ordnung hat hier seine Wurzeln. Verfilmt von Felix Huby in der Reihe „Häberle und Pfleiderer".',
+      beispiel: 'Saubere Kehrwoche! I hab gestern dreimal gefegt.',
+      beispiel_hd: 'Saubere Kehrwoche! Ich habe gestern dreimal gefegt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-113',
+      ausdruck: 'Schwöbisch',
+      hochdeutsch: 'Schwäbischer Stolz',
+      bedeutung: 'Der schwäbische Stolz speist sich aus dem Bewusstsein, viel zu leisten und wenig darüber zu sprechen. „Mir kennat ällas außer Hochdeutsch" — wir können alles außer Hochdeutsch — ist der berühmte Werbespruch des Landes Baden-Württemberg. Bezeichnet das schwäbische Selbstbewusstsein: Tüftler, Erfinder, fleißig, sparsam, mit eigenem Dialekt. Touristen-Slogan, der zur Lebensphilosophie wurde. Schwäbische Identität in einem Satz.',
+      beispiel: '„Mir kennat ällas außer Hochdeutsch" — des trifft\'s!',
+      beispiel_hd: '„Wir können alles außer Hochdeutsch" — das trifft\'s!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-114',
+      ausdruck: 'Hesse',
+      hochdeutsch: 'Hermann Hesse (Schriftsteller aus Calw)',
+      bedeutung: 'Hermann Hesse (1877–1962), geboren in Calw im Schwarzwald, ist Schwabens berühmtester Schriftsteller und Nobelpreisträger (1946). Werke wie „Steppenwolf", „Siddhartha", „Demian" und „Das Glasperlenspiel" sind Weltliteratur. Wuchs schwäbisch auf, schrieb aber hochdeutsch. Die 60er Jugend in den USA entdeckte ihn neu — Hesse-Boom. Calw ehrt ihn mit Museum und Hesse-Festival. Schwäbisches Genie mit Weltgeltung.',
+      beispiel: 'Hermann Hesse hat dem Schwabaland Nobelpreis bracht.',
+      beispiel_hd: 'Hermann Hesse hat dem Schwabenland Nobelpreis gebracht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-115',
+      ausdruck: 'Häusle',
+      hochdeutsch: 'Häuschen / Eigenheim',
+      bedeutung: 'Das „Häusle" ist das schwäbische Lebensziel — das Eigenheim, gebaut mit harter Arbeit und schwäbischer Sparsamkeit. „Schaffe, schaffe, Häusle baue" ist der Lebensplan jeder Schwabenfamilie. Wer kein Häusle hat, gilt als nicht ganz angekommen. Wird oft über Jahrzehnte gebaut, mit eigenen Händen ausgebaut, an Kinder und Enkel weitergegeben. Schwäbisches Stoffidentitätsmerkmal — mehr als nur Immobilie.',
+      beispiel: 'Mit fufzg hand mir des Häusle endlich abbezahlt.',
+      beispiel_hd: 'Mit fünfzig haben wir das Häuschen endlich abbezahlt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-116',
+      ausdruck: 'Schwarzwald',
+      hochdeutsch: 'Schwarzwald (Mittelgebirge)',
+      bedeutung: 'Der „Schwarzwald" ist Deutschlands größtes Mittelgebirge — im Südwesten Baden-Württembergs. 160 km lang, dichte Tannenwälder, idyllische Täler, Kuckucksuhren, Schwarzwälder Schinken und Kirschtorte. Hier entspringt die Donau. Auch literarisch verewigt: „Schwarzwaldmädel"-Filme, Hebels Alemannische Gedichte. Tourismus-Magnet — Wandern, Wintersport, Wellness. Schwabe und Badener streiten sich, wem der Schwarzwald gehört. Beiden — aber sie sagen es nie zu.',
+      beispiel: 'Im Schwarzwald koscht\'s Wandern noch nix.',
+      beispiel_hd: 'Im Schwarzwald kostet das Wandern noch nichts.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-117',
+      ausdruck: 'Hocketse',
+      hochdeutsch: 'Hocketse (Straßenfest)',
+      bedeutung: 'Die „Hocketse" ist das schwäbische Stadtteil-Sommerfest — Bewohner sitzen draußen auf Bierbänken („hocken"), trinken Trollinger und essen Maultaschen. Nachbarn lernen sich kennen, Bands spielen, Kinder spielen. „Hocketse" leitet sich vom „hocken" ab — gemütliches Sitzen ist hier Pflicht. Jedes schwäbische Dorf hat seine eigene Hocketse-Tradition. Sommer-Folklore, die Identität stiftet. Kein Tourismus, sondern echte Nachbarschaft.',
+      beispiel: 'Am Samstag isch wieder Hocketse beim Sportverein.',
+      beispiel_hd: 'Am Samstag ist wieder Hocketse beim Sportverein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-118',
+      ausdruck: 'Gscheid',
+      hochdeutsch: 'Gescheit / klug',
+      bedeutung: '„Gscheid" ist im Schwäbischen ein wichtiges Universalwort: gescheit, klug, vernünftig, ordentlich, richtig. „A gscheids Vesper" ist ein ordentliches Frühstück. „Schwätz net so gscheid!" — rede nicht so klug daher! „Gscheidle" ist ironisch — Klugscheißer, Besserwisser. „Net gscheid sei" heißt „nicht ganz bei Trost sein". Schwäbische Allzweck-Vokabel mit Sub-Bedeutungen, die Außenseiter selten alle verstehen.',
+      beispiel: 'Sei doch gscheid ond denk noch a moal nach!',
+      beispiel_hd: 'Sei doch gescheit und denke nochmal nach!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-119',
+      ausdruck: 'Mostbirne',
+      hochdeutsch: 'Mostbirne (Mostobstbaum)',
+      bedeutung: 'Die „Mostbirne" ist die schwäbisch-allgäuische Saftbirne — kleine, herbe Birnensorten, die nicht zum Essen taugen, aber hervorragenden Most ergeben. Auf den schwäbischen Streuobstwiesen Hochstamm-Tradition. Heute UNESCO-würdiges Kulturerbe der Region. „Mostbirnenfest" in vielen Dörfern. Der Schwabe sagt mit Stolz: „Aus a Mostbirne kann ma nur Most mache!" — und Most ist nationale Spezialität.',
+      beispiel: 'Aus a Mostbirne wird der beste Most im Allgäu.',
+      beispiel_hd: 'Aus einer Mostbirne wird der beste Most im Allgäu.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-120',
+      ausdruck: 'Goggolore',
+      hochdeutsch: 'Gockel / Hahn (schwäbisch)',
+      bedeutung: 'Der „Goggolore" oder „Gockel" ist im Schwäbischen der Hahn — das Symbol des Hofes und der Bauernromantik. „Im Dorf kräht no a Goggolore" — im Dorf kräht noch ein Gockel — ist Inbegriff ländlicher Idylle. Auch übertragen für aufgeplusterte, eitle Männer: „Der is a Goggolore" — der ist ein Wichtigtuer. Schwäbisches Tierbild mit doppelter Bedeutung. Liebevoll-ironisch.',
+      beispiel: 'Im Dorf kräht morgens no a Goggolore.',
+      beispiel_hd: 'Im Dorf kräht morgens noch ein Gockel.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-121',
+      ausdruck: 'Muggaseggle',
+      hochdeutsch: 'Muggaseggele (winzige Maßeinheit)',
+      bedeutung: 'Das „Muggaseggele" ist die kleinste schwäbische Maßeinheit — ein winziger Tropfen, ein Hauch, ein Hinweis. „A Muggaseggele Salz" ist eine ganz kleine Prise. Wörtlich „das Glied einer männlichen Stubenfliege" — eine drastisch-komische Bildung, die seit dem 19. Jh. dokumentiert ist. 2009 zum „schönsten schwäbischen Wort" gewählt. Schwäbische Untertreibungs-Kunst pur. Inbegriff der schwäbischen Sprachkreativität.',
+      beispiel: 'Gib no a Muggaseggele Pfeffer in d\'Suppe.',
+      beispiel_hd: 'Gib noch ein winziges bisschen Pfeffer in die Suppe.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'sw-122',
+      ausdruck: 'Mädle',
+      hochdeutsch: 'Mädchen (schwäbisch)',
+      bedeutung: 'Das „Mädle" ist im Schwäbischen das Mädchen — wärmer und vertraulicher als das hochdeutsche „Mädchen". „Schwabamädle" sind sprichwörtlich klug, fleißig und schön. Im Spruch „Schaffe, schaffe, Häusle baue, ond net nach de Mädle schaue" wird das Mädle als Versuchung dargestellt. Auch Kosewort: „Mei Mädle" für Tochter oder Partnerin. Schwäbische Wärme in einem Wort.',
+      beispiel: 'D\'Mädle isch heut zur Schul gange.',
+      beispiel_hd: 'Das Mädchen ist heute zur Schule gegangen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-123',
+      ausdruck: 'Bua',
+      hochdeutsch: 'Bub / Junge (schwäbisch)',
+      bedeutung: 'Der „Bua" ist im Schwäbischen der Junge oder Sohn. „Mei Bua" ist liebevolle Bezeichnung für den eigenen Sohn — in jedem Alter, auch wenn er schon Großvater ist. „A schaffger Bua" ist ein fleißiger Junge — höchstes Lob. „D\'Buabe" — die Jungs — werden oft als Gruppe angesprochen. Schwäbische Vater-Sohn-Beziehung ist herzlich-bodenständig. Der „Schwabenbua" — Stereotyp und Realität.',
+      beispiel: 'Mei Bua arbeitet bei Daimler in Sindelfinge.',
+      beispiel_hd: 'Mein Sohn arbeitet bei Daimler in Sindelfingen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-124',
+      ausdruck: 'Tübingen',
+      hochdeutsch: 'Tübingen (Universitätsstadt)',
+      bedeutung: 'Tübingen am Neckar ist Schwabens berühmteste Universitätsstadt — die Eberhard-Karls-Universität wurde 1477 gegründet, eine der ältesten Deutschlands. Friedrich Hölderlin lebte hier im Hölderlinturm seine letzten 36 Jahre. Heute Studenten-Idylle mit altem Stadtbild, Stocherkahnrennen auf dem Neckar und grün-alternativer Politik. Das schwäbische Heidelberg — schöner, kleiner, ehrlicher. Wahlheimat von Boris Palmer.',
+      beispiel: 'In Tübingen isch d\'Welt no in Ordnung.',
+      beispiel_hd: 'In Tübingen ist die Welt noch in Ordnung.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-125',
+      ausdruck: 'Heimatgfühl',
+      hochdeutsch: 'Heimatgefühl (schwäbisch)',
+      bedeutung: 'Das „Heimatgfühl" ist die tief verwurzelte schwäbische Verbundenheit mit Land, Sprache und Leuten. Wird ausgelöst durch den Anblick der Schwäbischen Alb, den Klang einer Brezelverkäuferin auf dem Markt oder den ersten Bissen Maultaschen nach langer Abwesenheit. Schwäbische Identität ist stark — mit dem Stolz auf Tüftler, schöne Landschaft und der eigenen Sprache. Trotz Globalisierung lebendig wie eh und je.',
+      beispiel: 'Wenn i d\'Alb sieh, krieg i sofort a Heimatgfühl.',
+      beispiel_hd: 'Wenn ich die Alb sehe, kriege ich sofort ein Heimatgefühl.',
+      kategorie: 'gefuehle'
     }
   ]
 };

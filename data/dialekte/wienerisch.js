@@ -919,11 +919,11 @@ export default {
     },
     {
       id: 'w-106',
-      ausdruck: 'Naschmarkt',
-      hochdeutsch: 'Naschmarkt (großer Wiener Markt)',
-      bedeutung: 'Der Naschmarkt im 6. Bezirk ist Wiens größter und beliebtester Markt — seit dem 16. Jahrhundert. Auf 2,3 km lang reichen sich Obst- und Gemüsestände, Falafel-Buden, Sushi-Imbisse, Käse- und Wurstläden. Eine kulinarische Weltreise mitten in Wien. Am Samstag öffnet zusätzlich der Flohmarkt — Antiquitäten und Trödel pur. Hier mischen sich Wiener Hausfrauen, Touristen, Hipster und Künstler.',
-      beispiel: 'Am Naschmarkt kriagst alles — von Falafel bis Foie gras.',
-      beispiel_hd: 'Am Naschmarkt kriegst du alles — von Falafel bis Foie gras.',
+      ausdruck: 'Stephansdom',
+      hochdeutsch: 'Stephansdom (Wiener Wahrzeichen)',
+      bedeutung: 'Der Stephansdom („Steffl") ist Wiens Wahrzeichen schlechthin — die gotische Kathedrale im Herzen der Stadt, erbaut ab 1147, der Hauptturm 137 m hoch. Das bunte Dach mit Mosaiksteinen zeigt den österreichischen Doppeladler. Hier wurde Mozart 1791 beerdigt (in einem Armengrab). Die berühmte Pummerin im Nordturm ist die größte Glocke Österreichs. Der „Steffl" gehört zum Wiener Selbstverständnis wie der Schnitzel zum Mittagessen.',
+      beispiel: 'Vom Steffl aus siehst die ganze Innenstadt.',
+      beispiel_hd: 'Vom Stephansdom aus siehst du die ganze Innenstadt.',
       kategorie: 'orte'
     },
     {
@@ -937,29 +937,29 @@ export default {
     },
     {
       id: 'w-108',
-      ausdruck: 'Falco',
-      hochdeutsch: 'Falco (Sänger)',
-      bedeutung: 'Falco (1957–1998, eigentlich Johann Hölzel) war Österreichs international erfolgreichster Popstar — Wiener Sohn mit Welthits wie „Rock Me Amadeus" (1985, weltweit Nr. 1), „Der Kommissar" und „Jeanny". Sein Mix aus Rap, Pop und Wiener Schmäh war einzigartig. Tragisch früh verstorben bei einem Autounfall in der Dominikanischen Republik. Ist bis heute Kult — der Falco-Kult prägt Wiens Selbstbild.',
-      beispiel: '„Rock Me Amadeus" — Falco bleibt unsterblich.',
-      beispiel_hd: '„Rock Me Amadeus" — Falco bleibt unsterblich.',
+      ausdruck: 'Qualtinger',
+      hochdeutsch: 'Helmut Qualtinger (Schauspieler/Kabarettist)',
+      bedeutung: 'Helmut Qualtinger (1928–1986) — kurz „Quasi" — war Wiens berühmtester Kabarettist, Schauspieler und Mahner. Sein „Der Herr Karl" (1961) war eine schonungslose Abrechnung mit dem Wiener Spießer der NS-Zeit. Setzte mit Carl Merz und Gerhard Bronner das Wiener Kabarett auf höchstes Niveau. Spielte den „Bockerer" und den „Aufbahrer". Wiener Originalität in Person — kritisch, schwarzhumorig, tragisch.',
+      beispiel: '„Der Herr Karl" vom Qualtinger — Pflichtlektüre.',
+      beispiel_hd: '„Der Herr Karl" vom Qualtinger — Pflichtlektüre.',
       kategorie: 'menschen'
     },
     {
       id: 'w-109',
-      ausdruck: 'Tschick',
-      hochdeutsch: 'Zigarette',
-      bedeutung: 'Der „Tschick" ist im Wienerischen die Zigarette — wahrscheinlich vom italienischen „cicca" (Kippe) abgeleitet. Auch „Tschickern" bedeutet rauchen. „Auf an Tschick gehn" — kurz rauchen gehen. Wolf Haas\' berühmter Roman „Tschick" hat den Begriff über Wien hinaus bekannt gemacht. In Wiener Beisln gehört der Tschick zur Lebenswelt — auch wenn das Rauchverbot 2019 die Kultur verändert hat.',
-      beispiel: 'I geh schnell auf an Tschick rauf.',
-      beispiel_hd: 'Ich gehe schnell auf eine Zigarette raus.',
-      kategorie: 'alltag'
+      ausdruck: 'Tschecherl-Wirt',
+      hochdeutsch: 'Tschecherl-Wirt (Stehbeisl-Wirt)',
+      bedeutung: 'Der „Tschecherl-Wirt" ist der Inhaber eines kleinen Wiener Stehbeisls — meist eines verrauchten Eckbeisls mit Stammkundschaft. Stand bis 2019 für Wiener Lebensart, der Schank-Bereich war ein Wohnzimmer ohne Sitze. Tschecherl-Wirte kennen ihre Gäste seit Jahrzehnten, wissen jede Geschichte, geben Kredit. Verschwindende Berufsgruppe — aber Symbol für ursprüngliche Wiener Kultur. Lebt in Filmen und Romanen weiter.',
+      beispiel: 'Da Tschecherl-Wirt kennt mei Schwiegermutter.',
+      beispiel_hd: 'Der Tschecherl-Wirt kennt meine Schwiegermutter.',
+      kategorie: 'arbeit'
     },
     {
       id: 'w-110',
-      ausdruck: 'Hofburg',
-      hochdeutsch: 'Hofburg (Kaiserresidenz)',
-      bedeutung: 'Die Wiener Hofburg war über 600 Jahre lang die Hauptresidenz der Habsburger — vom 13. Jahrhundert bis 1918. Eine riesige Anlage mit über 2.600 Räumen in 18 Trakten — gewachsen über Jahrhunderte mit verschiedenen Architekturstilen. Heute Amtssitz des Bundespräsidenten, Sitz der Nationalbibliothek, der Spanischen Hofreitschule und Veranstaltungsort des Wiener Opernballs. Das politische und kulturelle Herz Österreichs.',
-      beispiel: 'In da Hofburg sitzt da Bundespräsident.',
-      beispiel_hd: 'In der Hofburg sitzt der Bundespräsident.',
+      ausdruck: 'Schönbrunn',
+      hochdeutsch: 'Schloss Schönbrunn',
+      bedeutung: 'Schloss Schönbrunn war Sommerresidenz der Habsburger und ist heute UNESCO-Weltkulturerbe. Erbaut im 17./18. Jahrhundert mit 1441 Räumen — die berühmtesten: Spiegelsaal, Großer Salon, Hofburgkapelle. Hier wohnten Maria Theresia, Franz Joseph und Sisi. Park mit Gloriette, Neptunbrunnen und ältestem Zoo der Welt (Tiergarten Schönbrunn, 1752). Pflichtprogramm für jeden Wien-Touristen — 4 Mio. Besucher jährlich.',
+      beispiel: 'A Spaziergang dorch d\'Gloriette in Schönbrunn — herrlich!',
+      beispiel_hd: 'Ein Spaziergang durch die Gloriette in Schönbrunn — herrlich!',
       kategorie: 'orte'
     },
     {
