@@ -1591,6 +1591,276 @@ export default {
       beispiel: 'Wos is denn das für a Bahöl auf der Gass\'n?',
       beispiel_hd: 'Was ist denn das für ein Lärm auf der Straße?',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-181',
+      ausdruck: 'Schmäh',
+      hochdeutsch: 'Wiener Charme / Witz',
+      bedeutung: 'Der „Wiener Schmäh" ist Wiener Identitäts-Markenzeichen — der charmante, oft ironische Witz mit hintergründiger Tiefe. „Schmäh führen" als Wiener Lebenskunst. Im Gegensatz zur bayerischen Direktheit eleganter, in seinem Spott freundlicher. Touristen finden ihn schwer zu durchschauen. Symbol für Wiener Lebensart. „Ohne Schmäh ist kein echter Wiener!".',
+      beispiel: 'Der Wiener Schmäh — charmant und hintergründig!',
+      beispiel_hd: 'Der Wiener Schmäh — charmant und hintergründig!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-182',
+      ausdruck: 'Wiener Schnitzel',
+      hochdeutsch: 'Wiener Schnitzel',
+      bedeutung: 'Das „Wiener Schnitzel" ist Wiener Nationalgericht — paniertes Kalbsschnitzel, in Schmalz gebraten. Original aus Kalbfleisch, „Wiener Art" aus Schweinefleisch. „Mit Erdäpfelsalat" als Standard-Beilage. Tradition seit dem 19. Jahrhundert. Symbol für Wiener Esskultur. In Wiener Beisln klassisch. Touristen müssen es probieren. Streit mit Mailand um die wahre Herkunft.',
+      beispiel: 'A Wiener Schnitzel mit Erdäpfelsalat!',
+      beispiel_hd: 'Ein Wiener Schnitzel mit Kartoffelsalat!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-183',
+      ausdruck: 'Sachertorte',
+      hochdeutsch: 'Sachertorte',
+      bedeutung: 'Die „Sachertorte" ist Wiener Konditorei-Klassiker — Schokoladentorte mit Marillenmarmelade und Schokoladenglasur, 1832 von Franz Sacher erfunden. Hotel Sacher und Demel streiten um die Original-Rezeptur (entschieden 1965: nur Sacher darf „Original-Sachertorte" verkaufen). „Mit Schlag" als Wiener Standard-Beilage. Symbol für Wiener Konditorei-Tradition.',
+      beispiel: 'A Stück Sachertorte mit Schlag, bittsche!',
+      beispiel_hd: 'Ein Stück Sachertorte mit Schlagsahne, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-184',
+      ausdruck: 'Apfelstrudel',
+      hochdeutsch: 'Wiener Apfelstrudel',
+      bedeutung: 'Der „Apfelstrudel" ist Wiener Süßspeisen-Klassiker — Strudelteig mit Äpfeln, Rosinen, Zimt, Brösel. Auf Wiener Kaffeehaus-Karte allgegenwärtig. „Mit Vanillesoße" als Standard. Tradition aus dem 18. Jahrhundert, türkischer Einfluss. Symbol für Wiener Esskultur. Touristen-Favorit. „Mit Schlag oder Eis" als Wahl.',
+      beispiel: 'Apfelstrudel mit Vanillesoße im Kaffeehaus!',
+      beispiel_hd: 'Apfelstrudel mit Vanillesoße im Kaffeehaus!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-185',
+      ausdruck: 'Kaffeehaus',
+      hochdeutsch: 'Wiener Kaffeehaus',
+      bedeutung: 'Das „Wiener Kaffeehaus" ist UNESCO-Weltkulturerbe (seit 2011) — Tradition seit 1683. „Stundenlang sitzen mit einer Melange" als Wiener Lebenskunst. Berühmte Kaffeehäuser: Café Central, Café Sacher, Café Demel, Café Hawelka. Symbol für Wiener Lebensart und intellektuelles Leben. Wiener Schriftsteller, Politiker, Künstler trafen sich hier. „Café Central" als Lieblings-Café von Trotzki.',
+      beispiel: 'Im Kaffeehaus sitzt mer stundenlang!',
+      beispiel_hd: 'Im Kaffeehaus sitzt man stundenlang!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-186',
+      ausdruck: 'Melange',
+      hochdeutsch: 'Melange (Wiener Kaffee)',
+      bedeutung: 'Die „Melange" ist DER Wiener Kaffee — Espresso mit aufgeschäumter Milch, gleiches Verhältnis. „A Melange, bittsche!" als Wiener Standard-Bestellung. Im Gegensatz zum Café au Lait stärker. Symbol für Wiener Kaffeekultur. In jedem Wiener Kaffeehaus erhältlich. Touristen müssen es probieren — der Kellner serviert mit einem Glas Wasser.',
+      beispiel: 'A Melange, bittsche!',
+      beispiel_hd: 'Eine Melange, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-187',
+      ausdruck: 'Heuriger',
+      hochdeutsch: 'Heuriger (Weinlokal)',
+      bedeutung: 'Der „Heurige" ist Wiener Weinlokal-Tradition — vor allem in den Heurigendörfern Grinzing, Heiligenstadt, Nußdorf. „Heuriger Wein" = Wein des aktuellen Jahres. „Buschen-Heuriger" für offene Tage (mit Buschen am Eingang). Tradition aus dem 18. Jahrhundert. Symbol für Wiener Wein-Kultur. „Aufs Heurige geh\'n" als Wiener Wochenend-Programm.',
+      beispiel: 'Heut Abend geh\'mer aufs Heurige!',
+      beispiel_hd: 'Heute Abend gehen wir aufs Weinlokal!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-188',
+      ausdruck: 'Würstelstand',
+      hochdeutsch: 'Würstelstand',
+      bedeutung: 'Der „Würstelstand" ist Wiener Institution — Imbiss-Stand mit Burenwurst, Käsekrainer, Bratwurst, Wiener. „Auf an Würstel und a Bier zum Würstelstand!". Klassisch am Schwedenplatz, am Stephansplatz, vor der Albertina. Symbol für Wiener Schnellimbiss-Kultur. Nachts beliebt bei Studenten und Partygängern. „Würstelmann" als Wiener Beruf.',
+      beispiel: 'Nachts geh\'n wir zum Würstelstand!',
+      beispiel_hd: 'Nachts gehen wir zum Würstelstand!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-189',
+      ausdruck: 'Käsekrainer',
+      hochdeutsch: 'Käsekrainer (Wiener Wurst)',
+      bedeutung: 'Die „Käsekrainer" ist Wiener Wurst-Spezialität — Bratwurst gefüllt mit Käse, der beim Beißen herausquillt. Am Würstelstand klassisch. „Mit Senf und Kren" als Standard. Symbol für Wiener Imbiss-Kultur. Wer als Tourist nach Wien kommt, muss eine Käsekrainer probieren. Liebevoll auch „Eitrige" genannt (wegen des Käses).',
+      beispiel: 'A Käsekrainer mit Senf!',
+      beispiel_hd: 'Eine Käsekrainer mit Senf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-190',
+      ausdruck: 'Stephansdom',
+      hochdeutsch: 'Stephansdom (Wiener Wahrzeichen)',
+      bedeutung: 'Der „Stephansdom" ist Wiens Wahrzeichen — gotische Kathedrale mit dem 137m hohen Südturm (genannt „Steffl"). Tradition seit dem 12. Jahrhundert. Im 2. Weltkrieg schwer beschädigt, danach restauriert. „Pummerin" als größte Glocke Österreichs. Symbol für Wien weltweit. Touristen-Magnet Nummer 1. Im Karneval, an Silvester Tradition.',
+      beispiel: 'Der Stephansdom — Wiens Wahrzeichen!',
+      beispiel_hd: 'Der Stephansdom — Wiens Wahrzeichen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-191',
+      ausdruck: 'Schönbrunn',
+      hochdeutsch: 'Schloss Schönbrunn',
+      bedeutung: '„Schönbrunn" ist Wiener Schloss und UNESCO-Weltkulturerbe — Sommerresidenz der Habsburger. 1.441 Zimmer, Gloriette, Schönbrunner Tiergarten (ältester Zoo der Welt!). Sissi und Franz Joseph wohnten hier. Symbol für Wiener kaiserliche Tradition. Touristen-Hotspot. Jährlich 8 Millionen Besucher. Konzerte im Schloss.',
+      beispiel: 'In Schönbrunn wohnte d\'Sissi!',
+      beispiel_hd: 'In Schönbrunn wohnte die Sissi!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-192',
+      ausdruck: 'Hofburg',
+      hochdeutsch: 'Hofburg (Wiener Stadtschloss)',
+      bedeutung: 'Die „Hofburg" ist Wiener Stadtschloss — ehemalige Habsburger Winterresidenz. Heute Sitz des österreichischen Bundespräsidenten. „Spanische Hofreitschule" mit Lipizzanern. Sisi-Museum. Symbol für Wiener kaiserliche Tradition und österreichische Geschichte. Touristen-Magnet. Im Karneval als Veranstaltungsort beliebt.',
+      beispiel: 'Die Hofburg is\' das Wiener Stadtschloss!',
+      beispiel_hd: 'Die Hofburg ist das Wiener Stadtschloss!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-193',
+      ausdruck: 'Prater',
+      hochdeutsch: 'Wiener Prater (Vergnügungspark)',
+      bedeutung: 'Der „Prater" ist Wiener Vergnügungspark mit dem berühmten Riesenrad — gebaut 1897. „Würstelprater" als Vergnügungsteil, „Grüner Prater" als Erholungsgebiet. Riesenrad im Film „Der dritte Mann" (Orson Welles). Symbol für Wiener Freizeit-Tradition. Touristen-Hotspot. Im Sommer beliebt. Älter als jeder andere europäische Vergnügungspark.',
+      beispiel: 'Mit\'m Riesenrad im Prater fahren!',
+      beispiel_hd: 'Mit dem Riesenrad im Prater fahren!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-194',
+      ausdruck: 'Riesenrad',
+      hochdeutsch: 'Wiener Riesenrad',
+      bedeutung: 'Das „Riesenrad" im Prater ist Wiener Wahrzeichen — gebaut 1897, 64,75m hoch. Im 2. Weltkrieg fast zerstört, danach wieder aufgebaut. Berühmt durch „Der dritte Mann" mit Orson Welles. „Riesenrad-Fahrt" als touristisches Wien-Programm. Symbol für Wiener Tradition und Filmgeschichte. Aussicht auf ganz Wien.',
+      beispiel: 'Vom Riesenrad siehst du ganz Wien!',
+      beispiel_hd: 'Vom Riesenrad siehst du ganz Wien!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-195',
+      ausdruck: 'Walzer',
+      hochdeutsch: 'Wiener Walzer',
+      bedeutung: 'Der „Wiener Walzer" ist Tanz-Tradition und UNESCO-Weltkulturerbe — Drei-Viertel-Takt, schnelle Drehungen. „Donauwalzer" von Strauss als Hymne. „Wiener Opernball" mit Walzer-Eröffnung. Tradition seit dem 19. Jahrhundert. Symbol für Wiener Musiktradition. Walzer-Unterricht in Wien Pflicht-Programm für höhere Schüler.',
+      beispiel: 'Beim Wiener Opernball wird Walzer getanzt!',
+      beispiel_hd: 'Beim Wiener Opernball wird Walzer getanzt!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-196',
+      ausdruck: 'Opernball',
+      hochdeutsch: 'Wiener Opernball',
+      bedeutung: 'Der „Wiener Opernball" ist Wiens größtes Gesellschafts-Ereignis — jährlich im Februar in der Staatsoper. Eröffnung mit dem Donauwalzer, Debütanten-Walzer. Politiker, Prominenz, Adel. Internationale Live-Übertragung. Symbol für Wiener Tradition und Glamour. Kontroverse um Politik-Anwesenheit (Burschenschafter, FPÖ). Touristen-Sensation.',
+      beispiel: 'Der Opernball is\' Wiens größtes Ball!',
+      beispiel_hd: 'Der Opernball ist Wiens größter Ball!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-197',
+      ausdruck: 'Sissi',
+      hochdeutsch: 'Kaiserin Elisabeth („Sissi")',
+      bedeutung: '„Sissi" ist Spitzname für Kaiserin Elisabeth (1837-1898) — Ehefrau von Kaiser Franz Joseph. Symbol für Wiener kaiserliche Romantik. Berühmte Sissi-Filme mit Romy Schneider (1955-1958). „Sissi-Museum" in der Hofburg. Touristen-Magnet. Ihre Schönheit und tragisches Schicksal (Ermordung 1898 in Genf) machten sie zur Legende.',
+      beispiel: 'D\'Sissi war Österreichs schönste Kaiserin!',
+      beispiel_hd: 'Die Sissi war Österreichs schönste Kaiserin!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-198',
+      ausdruck: 'Franz Joseph',
+      hochdeutsch: 'Kaiser Franz Joseph I.',
+      bedeutung: 'Kaiser „Franz Joseph" I. (1830-1916) regierte Österreich-Ungarn 68 Jahre lang — der zweitlängste Regent Europas. Ehemann von Sisi. Wiener Identitäts-Symbol für kaiserliche Tradition. „Franz-Joseph-Kaffee" im Sacher. Sein Tod 1916 läutete den Untergang der Donaumonarchie ein. Symbol für österreichische k.u.k.-Geschichte.',
+      beispiel: 'Kaiser Franz Joseph regierte 68 Jahre!',
+      beispiel_hd: 'Kaiser Franz Joseph regierte 68 Jahre!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-199',
+      ausdruck: 'k.u.k.',
+      hochdeutsch: 'kaiserlich und königlich (Habsburger)',
+      bedeutung: '„k.u.k." steht für „kaiserlich und königlich" — Bezeichnung der Doppelmonarchie Österreich-Ungarn (1867-1918). „K.u.k.-Monarchie", „k.u.k.-Beamte" als Schlüsselbegriffe. Symbol für Wiener Habsburger-Geschichte und multinationale Tradition. In Wiener Lokalen oft als nostalgischer Bezug verwendet. „K.u.k. Hofzuckerbäckerei Demel" als historischer Markenname.',
+      beispiel: 'D\'k.u.k.-Monarchie war ein Vielvölkerstaat!',
+      beispiel_hd: 'Die k.u.k.-Monarchie war ein Vielvölkerstaat!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-200',
+      ausdruck: 'Beisl',
+      hochdeutsch: 'Beisl (Wiener Gasthaus)',
+      bedeutung: 'Das „Beisl" ist klassisches Wiener Gasthaus — einfaches, urgemütliches Lokal mit Wiener Spezialitäten. „Auf an Beisl-Besuch!" als Wiener Tradition. Wiener Beisln: „Schweizerhaus", „Plachutta", „Figlmüller" (Wiener Schnitzel-Tempel). Symbol für Wiener Esskultur und Lokalkolorit. Im Gegensatz zu schicken Restaurants mehr authentisch.',
+      beispiel: 'Im Beisl gibts a echtes Wiener Schnitzel!',
+      beispiel_hd: 'Im Beisl gibt es ein echtes Wiener Schnitzel!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-201',
+      ausdruck: 'Wiener G\'spritzter',
+      hochdeutsch: 'Weißwein mit Sprudel',
+      bedeutung: 'Der „G\'spritzter" ist Wiener Weinschorle — Weißwein mit Sprudelwasser. „A G\'spritzter, bittsche!" als Wiener Standard-Bestellung. „Wiener Mischung" mit verschiedenen Wein-Verhältnissen. Symbol für Wiener Trink-Kultur. Im Heurigen klassisch. Touristen müssen es probieren. Im Sommer besonders beliebt.',
+      beispiel: 'A G\'spritzter zum Salat, bittsche!',
+      beispiel_hd: 'Ein Gespritzter zum Salat, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-202',
+      ausdruck: 'Tafelspitz',
+      hochdeutsch: 'Tafelspitz (Wiener Spezialität)',
+      bedeutung: 'Der „Tafelspitz" ist Wiener Klassiker — gekochtes Rindfleisch (Tafelspitz vom Rind) mit Apfel-Kren, Schnittlauchsoße, Erdäpfelpüree. Lieblingsessen von Kaiser Franz Joseph. Plachutta als Tafelspitz-Restaurant berühmt. Symbol für Wiener gehobene Esskultur. Aufwendig: 3-Gang-Menü mit Suppe, Fleisch, Beilagen.',
+      beispiel: 'Tafelspitz war Franz Joseph\'s Lieblingsessen!',
+      beispiel_hd: 'Tafelspitz war Franz Joseph\'s Lieblingsessen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-203',
+      ausdruck: 'Kaiserschmarrn',
+      hochdeutsch: 'Kaiserschmarrn',
+      bedeutung: 'Der „Kaiserschmarrn" ist Wiener Süßspeise — zerrissene, karamellisierte Eierpfannkuchen mit Rosinen und Zwetschgenröster. Lieblingsspeise von Kaiser Franz Joseph (deshalb „Kaiser"). Symbol für Wiener Süßspeisen-Tradition. „Mit Zwetschgenröster" als Standard. Wird heiß serviert, mit Puderzucker. In Wiener Beisln klassisch.',
+      beispiel: 'Kaiserschmarrn mit Zwetschgenröster!',
+      beispiel_hd: 'Kaiserschmarrn mit Zwetschgenröster!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-204',
+      ausdruck: 'Wiener Werkstätten',
+      hochdeutsch: 'Wiener Werkstätten (Design-Tradition)',
+      bedeutung: 'Die „Wiener Werkstätten" waren österreichische Designer-Genossenschaft (1903-1932) — Gesamtkunstwerk-Konzept. Josef Hoffmann, Koloman Moser als Gründer. Möbel, Schmuck, Textilien, Architektur. Symbol für Wiener Jugendstil und Design-Geschichte. Heute legendär bei Sammlern. „Wiener Moderne" als Stil-Begriff.',
+      beispiel: 'Die Wiener Werkstätten prägten den Jugendstil!',
+      beispiel_hd: 'Die Wiener Werkstätten prägten den Jugendstil!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-205',
+      ausdruck: 'Klimt',
+      hochdeutsch: 'Gustav Klimt (Wiener Maler)',
+      bedeutung: 'Gustav Klimt (1862-1918) ist Wiens bekanntester Maler — „Der Kuss" (1908) als Welt-bekanntestes Werk. „Wiener Secession" als Künstler-Bewegung. Belvedere-Museum hat die größte Klimt-Sammlung. Symbol für Wiener Jugendstil und Klimts goldene Periode. „Klimt-Souvenirs" überall in Wien. Touristen-Magnet.',
+      beispiel: '„Der Kuss" von Klimt im Belvedere!',
+      beispiel_hd: '„Der Kuss" von Klimt im Belvedere!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-206',
+      ausdruck: 'Schönberg',
+      hochdeutsch: 'Arnold Schönberg (Wiener Komponist)',
+      bedeutung: 'Arnold Schönberg (1874-1951) war Wiener Komponist — Begründer der „Zweiten Wiener Schule" und der Zwölftonmusik. Mit Anton Webern und Alban Berg revolutionierte er die klassische Musik. „Verklärte Nacht" als bekanntes Werk. Symbol für Wiener Musikgeschichte und 20.-Jahrhundert-Moderne. Im Nationalsozialismus emigriert.',
+      beispiel: 'Schönberg revolutionierte d\'klassische Musik!',
+      beispiel_hd: 'Schönberg revolutionierte die klassische Musik!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-207',
+      ausdruck: 'Freud',
+      hochdeutsch: 'Sigmund Freud (Wiener Psychoanalytiker)',
+      bedeutung: 'Sigmund Freud (1856-1939) ist Wiens berühmtester Wissenschaftler — Begründer der Psychoanalyse. „Freud-Sofa" als Symbol für Therapie. Berggasse 19 als sein Wohnort (heute Freud-Museum). „Wiener Schule der Psychoanalyse". Symbol für Wiener Geistesgeschichte. Im Nationalsozialismus emigriert. Touristen besuchen Freud-Museum.',
+      beispiel: 'Freud begründete d\'Psychoanalyse in Wien!',
+      beispiel_hd: 'Freud begründete die Psychoanalyse in Wien!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-208',
+      ausdruck: 'Mahler',
+      hochdeutsch: 'Gustav Mahler (Wiener Komponist)',
+      bedeutung: 'Gustav Mahler (1860-1911) war Wiener Komponist und Dirigent — Direktor der Wiener Hofoper. Bekannt für seine monumentalen Symphonien. „Die Auferstehung" (2. Symphonie) als bekanntes Werk. Symbol für Wiener spätromantische Musik. Heute weltweit aufgeführt. „Wiener Philharmoniker" pflegen sein Werk.',
+      beispiel: 'Mahler\'s Symphonien sind monumental!',
+      beispiel_hd: 'Mahler\'s Symphonien sind monumental!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-209',
+      ausdruck: 'Bundesländer',
+      hochdeutsch: 'Österreichische Bundesländer',
+      bedeutung: 'Die „Bundesländer" sind die 9 Teile Österreichs: Burgenland, Kärnten, Niederösterreich, Oberösterreich, Salzburg, Steiermark, Tirol, Vorarlberg, Wien. Wien als Bundesland und Bundeshauptstadt zugleich. Föderalismus mit eigenen Landtagen. Symbol für österreichische politische Struktur. Wiener verstehen sich oft als „Stadt-Bundesland" mit eigener Identität.',
+      beispiel: 'Wien is\' Bundesland und Hauptstadt zugleich!',
+      beispiel_hd: 'Wien ist Bundesland und Hauptstadt zugleich!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-210',
+      ausdruck: 'Donau',
+      hochdeutsch: 'Donau (Wiener Fluss)',
+      bedeutung: 'Die „Donau" ist Wiens Fluss — und zweitlängster Fluss Europas. „Donaukanal" als Stadt-Fluss-Arm. „An der schönen blauen Donau" — Strauss-Walzer als Wien-Hymne. „Donauinsel" als Wiens Freizeit-Insel. Im Sommer Picknick-Wiese. „Donauinselfest" als größtes Open-Air-Festival Europas (frei zugänglich). Symbol für Wien.',
+      beispiel: 'An der Donau zum Picknick!',
+      beispiel_hd: 'An der Donau zum Picknick!',
+      kategorie: 'natur'
     }
   ]
 };
