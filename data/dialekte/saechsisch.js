@@ -650,6 +650,229 @@ export default {
       beispiel: 'Auf der Annaberger Kät kann ma sich noch wie früher fühlen.',
       beispiel_hd: 'Auf der Annaberger Kät kann man sich noch wie früher fühlen.',
       kategorie: 'redensart'
+    },
+    {
+      id: 's-076',
+      ausdruck: 'Pulsnitzer',
+      hochdeutsch: 'Pulsnitzer Pfefferkuchen',
+      bedeutung: 'Pulsnitzer Pfefferkuchen aus der Lausitzer Stadt Pulsnitz sind eine der traditionsreichsten sächsischen Weihnachtsspezialitäten — seit 1558 werden in Pulsnitz Pfefferkuchen gebacken. Die geschützte geografische Angabe garantiert die Qualität. Berühmte Pulsnitzer Pfefferkuchenbäcker pflegen heute noch das Handwerk. Klassische Sorten: glasiert, mit Schokolade überzogen, mit Marmelade gefüllt. Im Advent unverzichtbar in jedem sächsischen Haushalt.',
+      beispiel: 'A Pulsnitzer Pfefferkuchen schmeckt nach Weihnachten.',
+      beispiel_hd: 'Ein Pulsnitzer Pfefferkuchen schmeckt nach Weihnachten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-077',
+      ausdruck: 'Heinrich Schütz',
+      hochdeutsch: 'Heinrich Schütz (sächsischer Barockkomponist)',
+      bedeutung: 'Heinrich Schütz (1585–1672) war Sachsens grosser Barockkomponist — Hofkapellmeister in Dresden und einer der wichtigsten deutschen Komponisten vor Bach. Geboren in Köstritz, wirkte er fast 60 Jahre in Dresden. Seine geistliche Musik (Psalmen, Passionen, Weihnachtshistorie) prägte die deutsche Kirchenmusik. Schütz studierte bei Giovanni Gabrieli in Venedig und brachte die italienische Barockmusik nach Deutschland. Sein Schaffen ist Grundstein der deutschen Musikgeschichte.',
+      beispiel: 'Vor Bach gab\'s den Schütz — auch a großer sächsischer Musiker.',
+      beispiel_hd: 'Vor Bach gab es den Schütz — auch ein großer sächsischer Musiker.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-078',
+      ausdruck: 'Carl Maria von Weber',
+      hochdeutsch: 'Carl Maria von Weber (Komponist, „Freischütz")',
+      bedeutung: 'Carl Maria von Weber (1786–1826) war ein bedeutender deutscher Komponist der Romantik — von 1817 bis zu seinem Tod Kapellmeister der Dresdner Hofoper. Sein berühmtestes Werk: „Der Freischütz" (1821), das als erste deutsche romantische Nationaloper gilt. Mit dem „Wolfsschluchtszene" schuf er ein Meilenstein der Operngeschichte. Webers Wohnhaus in Hosterwitz bei Dresden ist heute Museum. Sein Grab befindet sich in Dresden.',
+      beispiel: 'Der Freischütz vom Weber — sächsische Opern-Geschichte.',
+      beispiel_hd: 'Der Freischütz von Weber — sächsische Operngeschichte.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-079',
+      ausdruck: 'Robert Schumann',
+      hochdeutsch: 'Robert Schumann (sächsischer Komponist)',
+      bedeutung: 'Robert Schumann (1810–1856) gehört zu Sachsens grössten Komponisten — geboren in Zwickau, studierte in Leipzig, lebte und wirkte in Dresden. Mit seiner Frau Clara Schumann (geborene Wieck), einer der bedeutendsten Pianistinnen ihrer Zeit, bildete er ein berühmtes Künstlerpaar. Werke wie „Kinderszenen", „Dichterliebe" und sein Klavierkonzert in A-Moll sind Meilensteine der Romantik. Schumann litt unter psychischen Krisen und starb in einer Nervenheilanstalt.',
+      beispiel: 'Robert und Clara Schumann — eine sächsische Musiker-Liebe.',
+      beispiel_hd: 'Robert und Clara Schumann — eine sächsische Musiker-Liebe.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-080',
+      ausdruck: 'Görlitz',
+      hochdeutsch: 'Görlitz („Görliwood")',
+      bedeutung: 'Görlitz an der polnischen Grenze ist Sachsens östlichste Stadt — wegen ihrer hervorragend erhaltenen historischen Altstadt liebevoll „Görliwood" genannt. Zahlreiche Filme wurden hier gedreht: „Grand Budapest Hotel", „Inglourious Basterds", „Der Vorleser", „In 80 Tagen um die Welt". Die Stadt hat über 4000 Baudenkmäler aus sechs Jahrhunderten erhalten — vom Gotik bis zum Jugendstil. Zusammen mit dem polnischen Zgorzelec bildet sie eine Europastadt.',
+      beispiel: 'Görlitz isch wie a Filmkulisse — überall werden Filme gedreht.',
+      beispiel_hd: 'Görlitz ist wie eine Filmkulisse — überall werden Filme gedreht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-081',
+      ausdruck: 'Bautzener Senf',
+      hochdeutsch: 'Bautzener Senf (sächsische Speise-Spezialität)',
+      bedeutung: 'Der Bautzener Senf aus der Lausitz-Stadt Bautzen ist DER Senf Ostdeutschlands — seit 1866 wird er in Bautzen hergestellt. Die scharfe, würzige Variante (mittelscharfer Senf) ist die bekannteste. Während des DDR-Mangels war Bautzener Senf eine fast mythische Ressource — heute ist er weltweit erhältlich. Bei einer Thüringer Bratwurst, einem Kassler oder zur Wurst-Brotzeit gehört Bautzener Senf einfach dazu — sächsisch-lausitzische Tradition.',
+      beispiel: 'A Bratwurscht ohne Bautzner Senf — undenkbar!',
+      beispiel_hd: 'Eine Bratwurst ohne Bautzener Senf — undenkbar!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-082',
+      ausdruck: 'Radeberger',
+      hochdeutsch: 'Radeberger (sächsisches Pilsbier)',
+      bedeutung: 'Das Radeberger Pilsner aus der Stadt Radeberg (zwischen Dresden und Bautzen) ist Deutschlands ältestes Pilsener — seit 1872 gebraut. „Das Pilsner von Bismarck" — der Reichskanzler trank Radeberger im Hofbräu Berlin. König Friedrich August III. von Sachsen erklärte es zum Hofbier. Das schlanke, hopfenbittere Pils ist Sachsens stolzes Exportbier und hat in der DDR und nach der Wende den Markt erobert. Heute zur Radeberger Gruppe gehörend.',
+      beispiel: 'A frisches Radeberger Pils — nu ja, des is\' was Feines!',
+      beispiel_hd: 'Ein frisches Radeberger Pils — na ja, das ist etwas Feines!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-083',
+      ausdruck: 'Wernesgrüner',
+      hochdeutsch: 'Wernesgrüner (sächsisches Bier aus dem Vogtland)',
+      bedeutung: 'Wernesgrüner Pilsner Legende ist eines der ältesten und beliebtesten Biere Sachsens — seit 1436 wird im Vogtland-Dorf Wernesgrün gebraut. Über die DDR-Zeit hinaus hat sich Wernesgrüner einen festen Platz im sächsischen Biermarkt gesichert. Die Brauerei zählt zu den traditionsreichsten Familienbrauereien Deutschlands. Klares, schlankes Pils mit angenehmer Hopfennote. „Bitte ein Wernesgrüner!" hört man in jedem sächsischen Wirtshaus.',
+      beispiel: 'Im Vogtland gehört a Wernesgrüner zur Hütte.',
+      beispiel_hd: 'Im Vogtland gehört ein Wernesgrüner zur Hütte.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-084',
+      ausdruck: 'Freiberg',
+      hochdeutsch: 'Freiberg (sächsische Bergbau-Stadt)',
+      bedeutung: 'Freiberg im Erzgebirgsvorland ist Sachsens älteste Bergbaustadt — Silber-Bergbau seit 1168. Hier wurde 1765 die Bergakademie Freiberg gegründet, eine der ältesten technischen Universitäten der Welt. Bekannte Absolventen: Alexander von Humboldt, Werner von Siemens. Die historische Altstadt mit dem Dom, dem Schloss Freudenstein (Mineralienschatzkammer Terra Mineralia) und den Bergmannshäusern ist UNESCO-Welterbe Montanregion Erzgebirge.',
+      beispiel: 'In Freiberg studiert ma Bergbau und Geologie.',
+      beispiel_hd: 'In Freiberg studiert man Bergbau und Geologie.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-085',
+      ausdruck: 'Chemnitz',
+      hochdeutsch: 'Chemnitz (Kulturhauptstadt 2025)',
+      bedeutung: 'Chemnitz (1953–1990 Karl-Marx-Stadt) ist die drittgrösste Stadt Sachsens und 2025 Europäische Kulturhauptstadt zusammen mit Nova Gorica. Bekannt für ihre Industriegeschichte (Maschinenbau, Textilien) und den weltberühmten 7-Meter-hohen Karl-Marx-Kopf im Stadtzentrum (von Lev Kerbel). Trotz schwerer Kriegsschäden und Sozialismus-Architektur erlebt Chemnitz heute eine kulturelle Wiedergeburt. Das Museum Gunzenhauser zeigt eine bedeutende Expressionisten-Sammlung.',
+      beispiel: 'Chemnitz isch 2025 Kulturhauptstadt — wer hätt\' das gedacht?',
+      beispiel_hd: 'Chemnitz ist 2025 Kulturhauptstadt — wer hätte das gedacht?',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-086',
+      ausdruck: 'Karl-Marx-Stadt',
+      hochdeutsch: 'Karl-Marx-Stadt (DDR-Name von Chemnitz)',
+      bedeutung: 'Von 1953 bis 1990 hiess Chemnitz „Karl-Marx-Stadt" — eine sozialistische Umbenennung zum 70. Todestag von Karl Marx. Mit der friedlichen Revolution 1989 entschieden sich die Bürger per Volksabstimmung für die Rückkehr zum historischen Namen Chemnitz. Der riesige Karl-Marx-Kopf im Stadtzentrum (sächsisch „Nischel" genannt — „der Nischel") blieb stehen und ist heute Wahrzeichen mit ironischem Beigeschmack. Ein Stück deutscher Geschichte.',
+      beispiel: 'Mei Großvater sagt heut noch Karl-Marx-Stadt — Gewohnheit.',
+      beispiel_hd: 'Mein Großvater sagt heute noch Karl-Marx-Stadt — Gewohnheit.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-087',
+      ausdruck: 'Spreewald',
+      hochdeutsch: 'Spreewald (Region mit Wasserkanälen)',
+      bedeutung: 'Der Spreewald ist eine einzigartige Landschaft im südlichen Brandenburg/Lausitz — die Spree fächert sich in über 1000 km Wasserkanäle auf. Die sorbische Minderheit prägt die Region kulturell. Mit dem Spreewaldkahn (traditionelle Kahnfahrt) erreicht man die Dörfer Lübben, Lehde und Burg. Bekannt: Spreewaldgurken (geschützte geografische Angabe), sorbische Tracht und Osterbräuche. Eine Märchenlandschaft.',
+      beispiel: 'Mit\'m Kahn durch\'n Spreewald — ruhig und idyllisch.',
+      beispiel_hd: 'Mit dem Kahn durch den Spreewald — ruhig und idyllisch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-088',
+      ausdruck: 'Spreewaldgurken',
+      hochdeutsch: 'Spreewaldgurken (Salzgurken)',
+      bedeutung: 'Spreewaldgurken sind ein DDR-Mythos und Kult-Produkt — seit der Wende EU-weit geschützte geografische Angabe. Die Gurken werden im Spreewald in Salzlake mit Kräutern (Dill, Senfkörner, Lorbeer) eingelegt. Im Film „Good Bye, Lenin!" spielen Spreewaldgurken eine zentrale Rolle als Ost-Identitäts-Symbol. Heute weltweit beliebt — vor allem als Nostalgie-Produkt. Verschiedene Sorten: Salzdill, Knoblauch, Senfgurken.',
+      beispiel: 'Spreewaldgurken zu Pellkartoffeln — DDR-Klassiker.',
+      beispiel_hd: 'Spreewaldgurken zu Pellkartoffeln — DDR-Klassiker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-089',
+      ausdruck: 'Pumphut',
+      hochdeutsch: 'Pumphut (sächsisch-lausitzischer Sagenheld)',
+      bedeutung: 'Pumphut ist ein sagenhafter Schalk und Streichmacher der sächsisch-lausitzischen Volkssage — ein Müller-Bursche mit Zauberkraft, der ungerechte Müller bestraft und armen Leuten hilft. Sein breitkrempiger Hut ist sein Markenzeichen. Die Pumphut-Sagen wurden vielfach gesammelt und für Kinderbücher und Trickfilme adaptiert. Eine Robin-Hood-artige Figur der Oberlausitz, die in der DDR besonders populär war. Symbol für gerechten Schalk.',
+      beispiel: 'D\'Pumphut-Geschichten ham wir als Kinder geliebt.',
+      beispiel_hd: 'Die Pumphut-Geschichten haben wir als Kinder geliebt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-090',
+      ausdruck: 'Tagebau',
+      hochdeutsch: 'Braunkohle-Tagebau (Lausitz)',
+      bedeutung: 'Die Lausitz und das Mitteldeutsche Revier sind seit Jahrzehnten Deutschlands wichtigste Braunkohle-Tagebau-Regionen — gigantische Schaufelradbagger fördern Braunkohle aus offenen Gruben. Tagebau Welzow-Süd, Tagebau Nochten, Tagebau Reichwalde sind aktive Gruben. Im Strukturwandel werden diese Tagebaue bis 2038 geschlossen — die Region steht vor enormen wirtschaftlichen Herausforderungen. Die ehemaligen Tagebaulöcher werden zu Seen geflutet (Lausitzer Seenland).',
+      beispiel: 'In der Lausitz sieht ma noch riesige Tagebau-Bagger.',
+      beispiel_hd: 'In der Lausitz sieht man noch riesige Tagebau-Bagger.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-091',
+      ausdruck: 'Clara Schumann',
+      hochdeutsch: 'Clara Schumann (Pianistin)',
+      bedeutung: 'Clara Schumann (geborene Wieck, 1819–1896) war eine der bedeutendsten Pianistinnen des 19. Jahrhunderts — geboren in Leipzig, als Wunderkind ausgebildet. Mit 15 Jahren bereits Konzertstar in Wien und Paris. Ihre Ehe mit Robert Schumann war eine der berühmtesten Künstlerverbindungen der Musikgeschichte. Sie unterstützte Brahms in seinem Aufstieg. Komponierte selbst hervorragende Werke — Lieder, Klavierwerke. Ihr Konterfei zierte den letzten 100-DM-Schein.',
+      beispiel: 'D\'Clara Schumann is\' auch a Sachsen — geboren in Leipzig.',
+      beispiel_hd: 'Clara Schumann ist auch eine Sächsin — geboren in Leipzig.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-092',
+      ausdruck: 'Thomanerchor',
+      hochdeutsch: 'Thomanerchor Leipzig (Knabenchor)',
+      bedeutung: 'Der Thomanerchor Leipzig ist einer der ältesten und berühmtesten Knabenchöre der Welt — gegründet 1212, mehr als 800 Jahre alte Geschichte. Berühmtester Thomaskantor: Johann Sebastian Bach (1723–1750). Heute besteht der Chor aus etwa 90 Thomanern (9–18 Jahre), die in der Thomasschule unterrichtet werden. Wöchentliche Motetten in der Thomaskirche sind ein Höhepunkt des Leipziger Musiklebens. Welt-Tourneen.',
+      beispiel: 'Der Thomanerchor singt jedn Freitag in der Thomaskirche.',
+      beispiel_hd: 'Der Thomanerchor singt jeden Freitag in der Thomaskirche.',
+      kategorie: 'musik'
+    },
+    {
+      id: 's-093',
+      ausdruck: 'Kreuzchor',
+      hochdeutsch: 'Dresdner Kreuzchor (Knabenchor)',
+      bedeutung: 'Der Dresdner Kreuzchor ist ein weltberühmter Knabenchor mit 800-jähriger Geschichte — gegründet im 13. Jahrhundert. Die Kruzianer (so heißen die Chormitglieder) sind in der Kreuzschule untergebracht und werden in der berühmten Tradition geschult. Der Kreuzchor singt regelmäßig in der Kreuzkirche am Altmarkt Dresden — der grössten evangelischen Kirche Sachsens. Tourneen weltweit, viele Aufnahmen. Konkurrent zum Leipziger Thomanerchor — beide auf höchstem Niveau.',
+      beispiel: 'Dresden hat den Kreuzchor, Leipzig die Thomaner.',
+      beispiel_hd: 'Dresden hat den Kreuzchor, Leipzig die Thomaner.',
+      kategorie: 'musik'
+    },
+    {
+      id: 's-094',
+      ausdruck: 'Striezelmarkt',
+      hochdeutsch: 'Dresdner Striezelmarkt (Weihnachtsmarkt)',
+      bedeutung: 'Der Dresdner Striezelmarkt ist Deutschlands ältester Weihnachtsmarkt — erstmals erwähnt 1434. Auf dem Altmarkt Dresden findet er jedes Jahr im Advent statt. Der Name kommt vom „Striezel", einem Vorgänger des heutigen Stollens. Beim alljährlichen Stollenfest wird ein riesiger Christstollen durch die Stadt gefahren und verkauft. Räuchermännchen, Pyramiden, Pfefferkuchen, Glühwein — der Striezelmarkt ist sächsischer Advent in Reinkultur. Über 2 Millionen Besucher jährlich.',
+      beispiel: 'Auf\'m Striezelmarkt riecht\'s nach Stollen und Glühwein.',
+      beispiel_hd: 'Auf dem Striezelmarkt riecht es nach Stollen und Glühwein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-095',
+      ausdruck: 'Meißen',
+      hochdeutsch: 'Meißen (Porzellan-Stadt)',
+      bedeutung: 'Meißen an der Elbe ist die älteste Stadt Sachsens und Heimat des berühmten Meißener Porzellans — Europas älteste Porzellanmanufaktur (gegründet 1710 unter August dem Starken). Die gekreuzten blauen Schwerter sind das Markenzeichen. In der Albrechtsburg, dem ältesten Schloss Deutschlands, wurde das Porzellan-Geheimnis von Johann Friedrich Böttger entwickelt. Heute ist Meißen UNESCO-Weltkulturerbe-Kandidat. Auch der Meißener Wein wird hier seit dem 12. Jahrhundert angebaut.',
+      beispiel: 'Meißner Porzellan mit den blauen Schwertern — Weltklasse.',
+      beispiel_hd: 'Meißner Porzellan mit den blauen Schwertern — Weltklasse.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-096',
+      ausdruck: 'Pulsnitzer Pfefferkuchen',
+      hochdeutsch: 'Pulsnitzer Pfefferkuchen (geschützte sächsische Spezialität)',
+      bedeutung: 'Pulsnitzer Pfefferkuchen aus der Stadt Pulsnitz (zwischen Bautzen und Dresden) sind seit 1558 dokumentiert — die älteste Pfefferkuchen-Tradition Deutschlands. Acht Pfefferkuchenbäcker pflegen heute noch das Handwerk in Pulsnitz. EU-geschützte geografische Angabe seit 2010. Klassische Sorten: Glasierter Pfefferkuchen, Schoko-Pfefferkuchen, Marmelade-Pfefferkuchen, Spitzkuchen. Im Adventszeit unverzichtbar. Das jährliche Pfefferkuchenfest in Pulsnitz lockt Tausende.',
+      beispiel: 'Pulsnitzer Pfefferkuchen ham mer schon im November im Schrank.',
+      beispiel_hd: 'Pulsnitzer Pfefferkuchen haben wir schon im November im Schrank.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-097',
+      ausdruck: 'Görliwood',
+      hochdeutsch: 'Görlitz als Filmkulisse („Görliwood")',
+      bedeutung: '„Görliwood" ist der ironische Spitzname für Görlitz wegen seiner Beliebtheit als Filmkulisse. Filme wie „Grand Budapest Hotel" (Wes Anderson), „Inglourious Basterds" (Tarantino), „Der Vorleser" (mit Kate Winslet) und „Around the World in 80 Days" wurden in Görlitz gedreht. Die perfekt erhaltene Altstadt mit über 4000 Baudenkmälern — Gotik, Renaissance, Barock, Jugendstil — bietet jede Architektur-Epoche. Filmcrews lieben die Stadt für ihre Authentizität.',
+      beispiel: 'In Görliwood drehen die Hollywood-Stars — Görlitz halt.',
+      beispiel_hd: 'In Görliwood drehen die Hollywood-Stars — Görlitz halt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-098',
+      ausdruck: 'Sandgreafen',
+      hochdeutsch: 'Sandgreafen (Volkssagen-Figur)',
+      bedeutung: 'In manchen sächsischen Volkssagen tauchen die „Sandgreafen" auf — geheimnisvolle Wesen, die im sandigen Boden der Lausitz und Oberlausitz hausen sollen. Sie graben unsichtbare Tunnel und verkörpern manchmal Verlust und Vergänglichkeit. Diese regionalen Sagengestalten sind weniger bekannt als Pumphut, gehören aber zum reichen Schatz sächsisch-lausitzischer Mythologie. Heute werden sie in der Volkskunde gepflegt und in regionalen Kinderbüchern wiederbelebt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-099',
+      ausdruck: 'Pillnitz',
+      hochdeutsch: 'Schloss Pillnitz (Dresdner Sommerschloss)',
+      bedeutung: 'Schloss Pillnitz an der Elbe östlich von Dresden war das Sommerschloss der sächsischen Kurfürsten und Könige — 1720er Jahre. Eine einzigartige Mischung aus chinesisch inspirierter Architektur (Chinoiserie) und barocker Pracht. Direkt am Elbufer gelegen, mit großem Schlosspark. Im Schloss befindet sich das Kunstgewerbemuseum. Das Bergpalais, das Wasserpalais und das Neue Palais bilden ein Ensemble. Die berühmte 230 Jahre alte Kamelie blüht jedes Jahr im Frühling.',
+      beispiel: 'In Pillnitz blüht im März die ältest Kamelie Deutschlands.',
+      beispiel_hd: 'In Pillnitz blüht im März die älteste Kamelie Deutschlands.',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-100',
+      ausdruck: 'Völkerschlacht',
+      hochdeutsch: 'Völkerschlachtdenkmal Leipzig',
+      bedeutung: 'Das Völkerschlachtdenkmal in Leipzig erinnert an die Völkerschlacht von 1813 — die grösste Schlacht der Napoleonischen Kriege, bei der eine Allianz aus Preussen, Russland, Österreich und Schweden Napoleon entscheidend besiegte. Über 600.000 Soldaten kämpften, 100.000 starben. Das 91 Meter hohe Denkmal wurde 1913 zum 100. Jahrestag eingeweiht — eines der grössten Denkmäler Europas. Symbol deutsch-nationalen Pathos der Wilhelminischen Ära. Heute Touristenattraktion und Mahnmal.',
+      beispiel: 'S\'Völkerschlachtdenkmal — a riesige Sache, beeindruckend!',
+      beispiel_hd: 'Das Völkerschlachtdenkmal — eine riesige Sache, beeindruckend!',
+      kategorie: 'orte'
     }
   ]
 };

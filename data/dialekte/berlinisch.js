@@ -1108,6 +1108,231 @@ export default {
       beispiel: 'In der Langen Nacht schaffe i 5 Museen — kosmischer Marathon!',
       beispiel_hd: 'In der Langen Nacht schaffe ich 5 Museen — kultureller Marathon!',
       kategorie: 'musik'
+    },
+    {
+      id: 'b-126',
+      ausdruck: 'Pergamonmuseum',
+      hochdeutsch: 'Pergamonmuseum (Museumsinsel)',
+      bedeutung: 'Das Pergamonmuseum auf der Museumsinsel zeigt monumentale Bauwerke der Antike: den Pergamonaltar, das Ischtar-Tor aus Babylon und das Markttor von Milet. Eröffnet 1930, ist es eines der meistbesuchten Museen Deutschlands. Derzeit wegen Sanierung teilweise geschlossen (bis 2027/30). Auf der Museumsinsel (UNESCO-Welterbe) stehen außerdem Alte Nationalgalerie, Bode-Museum, Neues Museum und Altes Museum.',
+      beispiel: 'Auf der Museumsinsel verbringst leicht n ganzen Tag.',
+      beispiel_hd: 'Auf der Museumsinsel verbringst du leicht einen ganzen Tag.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-127',
+      ausdruck: 'Friedrichstraße',
+      hochdeutsch: 'Friedrichstraße (zentrale Berliner Achse)',
+      bedeutung: 'Die Friedrichstraße zieht sich 3,5 km durch Berlin-Mitte — von der Friedrichstraße-Station bis zum Mehringplatz. Eine der historischsten Straßen Berlins mit Galeries Lafayette, dem Friedrichstadt-Palast (größte Revuebühne Europas) und dem ehemaligen Checkpoint Charlie. Eine elegante Einkaufs- und Geschäftsmeile, die nach der Wende wieder zur Lebensader Berlins wurde.',
+      beispiel: 'Auf der Friedrichstraße shoppen — wat Eleganteres jibt\'s nich.',
+      beispiel_hd: 'Auf der Friedrichstraße einkaufen — etwas Eleganteres gibt es nicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-128',
+      ausdruck: 'Unter den Linden',
+      hochdeutsch: 'Unter den Linden (Prachtboulevard)',
+      bedeutung: 'Unter den Linden ist Berlins historischer Prachtboulevard — vom Brandenburger Tor bis zur Spree (1,5 km). Hier reihen sich Humboldt-Universität, Deutsches Historisches Museum (Zeughaus), Berliner Dom und Staatsoper. Die Lindenbäume in der Mitte gaben der Straße ihren Namen. Auf Postkarten und in Filmen ist „Unter den Linden" Synonym für klassisches Berlin der Weimarer Zeit.',
+      beispiel: 'Unter den Linden spaziern — wie damals in den goldenen Zwanzigern.',
+      beispiel_hd: 'Unter den Linden spazieren — wie damals in den goldenen Zwanzigern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-129',
+      ausdruck: 'Charité',
+      hochdeutsch: 'Charité Berlin (Universitätsklinik)',
+      bedeutung: 'Die Charité ist Europas größtes Universitätsklinikum — Mitte Berlin, mit über 3.000 Betten und 17.000 Mitarbeitern. Gegründet 1710 als Pestkrankenhaus. Berühmte Mediziner: Robert Koch, Rudolf Virchow, Christian Drosten (Corona). Mehrere Nobelpreisträger. In der ZDF-Serie „Charité" verfilmt. Ein Wahrzeichen deutscher Spitzenmedizin und Symbol für Berliner Wissenschaft.',
+      beispiel: 'Mei Bruder studiert Medizin an der Charité.',
+      beispiel_hd: 'Mein Bruder studiert Medizin an der Charité.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-130',
+      ausdruck: 'Olympiastadion',
+      hochdeutsch: 'Berliner Olympiastadion',
+      bedeutung: 'Das Olympiastadion in Charlottenburg wurde 1936 für die Olympischen Sommerspiele erbaut — Architekt Werner March. Mit 74.000 Plätzen. Heute Heimspielort von Hertha BSC und Austragungsort des DFB-Pokalfinales. WM-Finale 2006 fand hier statt. Architektonisch sehr beeindruckend, geschichtlich belastet (NS-Bauwerk). Eines der bekanntesten Stadien Deutschlands.',
+      beispiel: 'Im Olympiastadion zum DFB-Pokalfinale — Berlin Klassiker.',
+      beispiel_hd: 'Im Olympiastadion zum DFB-Pokalfinale — Berlin Klassiker.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-131',
+      ausdruck: 'Hertha BSC',
+      hochdeutsch: 'Hertha BSC Berlin (Fußballverein)',
+      bedeutung: 'Hertha BSC ist Berlins ältester und größter Fußballverein — gegründet 1892, blau-weiße Farben, „Die alte Dame". Heimstadion: Olympiastadion. Zweimaliger deutscher Meister (1930, 1931). Aktuell in der 2. Liga. Sebastian Kehl, Marko Pantelić und Salomon Kalou waren Hertha-Größen. Die Fans haben eine emotionale, manchmal frustrierende Beziehung zu „ihrer alten Dame".',
+      beispiel: 'Hertha is mei Verein — auch wenn et nich immer rund läuft.',
+      beispiel_hd: 'Hertha ist mein Verein — auch wenn es nicht immer rund läuft.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-132',
+      ausdruck: 'Union Berlin',
+      hochdeutsch: '1. FC Union Berlin (Köpenick)',
+      bedeutung: 'Der 1. FC Union Berlin ist der „Eiserne Union" aus Köpenick — gegründet 1906, rot-weiße Farben. Hauptverein Ost-Berlins, mit treuer Fanbasis. 2019 erstmals Bundesliga-Aufstieg, 2021/22 sogar in die Conference League. Heimstadion: An der Alten Försterei. Im Gegensatz zu Hertha gilt Union als „bodenständig", „echt" und mit Kult-Charakter. Die Wende für den Ostberliner Klub.',
+      beispiel: 'Union spielt in der Alten Försterei — Stehplätze und Glühwein.',
+      beispiel_hd: 'Union spielt in der Alten Försterei — Stehplätze und Glühwein.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-133',
+      ausdruck: 'Eisbärn',
+      hochdeutsch: 'Eisbären Berlin (Eishockey)',
+      bedeutung: 'Die Eisbären Berlin sind Berlins erfolgreichster Eishockey-Verein — neunmaliger Deutscher Meister in der DEL. Heimspielort: Uber Arena (ehemals Mercedes-Benz Arena) am Ostbahnhof. Über 14.000 Zuschauer-Kapazität. Vereinsmaskottchen ist der Eisbär „Bully". Die Fans sind treu und laut. Im Berliner Sportkalender Pflichttermin neben Hertha und Alba Berlin.',
+      beispiel: 'Heute Eisbären-Spiel inner Uber Arena — Stimmung pur!',
+      beispiel_hd: 'Heute Eisbären-Spiel in der Uber Arena — Stimmung pur!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-134',
+      ausdruck: 'Alba Berlin',
+      hochdeutsch: 'Alba Berlin (Basketball)',
+      bedeutung: 'Alba Berlin ist Berlins erfolgreichster Basketball-Club — elffacher deutscher Meister, achtfacher DBB-Pokalsieger. Heimspielort: Uber Arena. Spielen in der Basketball-Bundesliga und der Euroleague. Bekannt für aggressives Pressing und schnelles Spiel. Trainer Israel Gonzalez. Bei Heimspielen ist die Atmosphäre legendär. Berlin liebt seine Albatross-Truppe.',
+      beispiel: 'Alba kann gegen Bayern München gewinnen — Berliner Basketball-Macht.',
+      beispiel_hd: 'Alba kann gegen Bayern München gewinnen — Berliner Basketball-Macht.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-135',
+      ausdruck: 'BER',
+      hochdeutsch: 'Flughafen Berlin-Brandenburg (BER)',
+      bedeutung: 'Der BER (Flughafen Berlin-Brandenburg „Willy Brandt") wurde nach über 14 Jahren Bauzeit (statt geplanter 5) endlich 2020 eröffnet. Kostete 7,3 Milliarden Euro (statt geplanter 2). Symbol für deutsches Bürokratie-Versagen und Großprojekt-Chaos. Aber jetzt funktioniert er: 25 Millionen Passagiere/Jahr, Drehkreuz für easyJet und Lufthansa. Ersetzte Tegel und Schönefeld.',
+      beispiel: 'BER hat uns 14 Jahre Lebenszeit gekostet — aber jetzt fliegen wir!',
+      beispiel_hd: 'BER hat uns 14 Jahre Lebenszeit gekostet — aber jetzt fliegen wir!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-136',
+      ausdruck: 'Tegel',
+      hochdeutsch: 'TXL (geschlossener Flughafen)',
+      bedeutung: 'Der Flughafen Tegel (TXL „Otto Lilienthal") war Berlins Hauptflughafen von 1974 bis 2020. Charakteristisch das sechseckige Hauptgebäude des Architekten Meinhard von Gerkan. Beliebt bei Berlinern wegen kurzer Wege. 2020 mit Eröffnung des BER endgültig geschlossen — viele trauerten dem nahen Flughafen nach. Das Areal wird nun zu Wohngebieten und einer Hochschule entwickelt.',
+      beispiel: 'Tegel war hammer — direkter Flughafen mitten in der Stadt.',
+      beispiel_hd: 'Tegel war hammer — direkter Flughafen mitten in der Stadt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-137',
+      ausdruck: 'Berlin Marathon',
+      hochdeutsch: 'Berlin Marathon (Weltklasse-Laufen)',
+      bedeutung: 'Der Berlin Marathon ist neben Boston, London, Chicago, New York und Tokio einer der „World Marathon Majors". Seit 1974, jährlich Ende September. Bekannt für seine flache, schnelle Strecke — hier wurden zahlreiche Weltrekorde aufgestellt. Eliud Kipchoge stellte 2018 hier den damaligen Weltrekord auf (2:01:39). Über 47.000 Läufer aus 150 Ländern, eine Million Zuschauer. Berliner Sport-Highlight.',
+      beispiel: 'Ich lauf den Berlin Marathon — dat is mei Lebenstraum!',
+      beispiel_hd: 'Ich laufe den Berlin Marathon — das ist mein Lebenstraum!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-138',
+      ausdruck: 'Christopher Street Day',
+      hochdeutsch: 'CSD Berlin (Pride Parade)',
+      bedeutung: 'Der Christopher Street Day in Berlin ist eine der größten Pride-Paraden Europas — jährlich im Juli mit über 750.000 Teilnehmern. Die Demonstration für LGBTQ+-Rechte zieht durch Berlin-Mitte und endet mit großer Abschlusskundgebung am Brandenburger Tor. Politische Forderungen treffen auf bunte Festivalstimmung. Berlin ist eine der queersten Städte weltweit — auch ohne CSD.',
+      beispiel: 'Beim CSD is Berlin n riesiges, buntes Liebesfest.',
+      beispiel_hd: 'Beim CSD ist Berlin ein riesiges, buntes Liebesfest.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-139',
+      ausdruck: 'Karneval der Kulturen',
+      hochdeutsch: 'Karneval der Kulturen (Pfingsten)',
+      bedeutung: 'Der Karneval der Kulturen ist Berlins multikulturelles Großereignis — jährlich an Pfingsten in Kreuzberg. Bunte Umzüge mit Trommlern, Tänzern und Musikern aus 80+ Ländern. Anders als der rheinische Karneval feiert er kulturelle Vielfalt, nicht traditionelles Brauchtum. Eine Million Besucher kommen jährlich. Symbol für Berlins multikulturelle Seele und gegen Rassismus.',
+      beispiel: 'Beim Karneval der Kulturen tanzen alle aufm Mehringdamm.',
+      beispiel_hd: 'Beim Karneval der Kulturen tanzen alle auf dem Mehringdamm.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-140',
+      ausdruck: 'Wannsee',
+      hochdeutsch: 'Berliner Wannsee (Erholungsgebiet)',
+      bedeutung: 'Der Wannsee im Südwesten Berlins ist ein beliebtes Naherholungsgebiet — eigentlich eine Spree-Erweiterung. Mit dem berühmten Strandbad Wannsee (eines der größten Binnen-Strandbäder Europas, eröffnet 1907). Hier wurde 1942 die Wannsee-Konferenz (Holocaust-Planung) abgehalten — heute Gedenkstätte. „Pack die Badehose ein" ist das Berliner Sommer-Klassiker-Lied über den Wannsee.',
+      beispiel: 'Pack die Badehose ein, nimm dei klein Schwesterlein — Sommer am Wannsee!',
+      beispiel_hd: 'Pack die Badehose ein, nimm dein kleines Schwesterlein — Sommer am Wannsee!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-141',
+      ausdruck: 'Müller-Wohlfahrt',
+      hochdeutsch: 'Müller-Wohlfahrt (FCB-Mannschaftsarzt aus Berlin)',
+      bedeutung: 'Hans-Wilhelm Müller-Wohlfahrt — geboren in Bensheim, aber Berlin-Kult — ist Deutschlands berühmtester Sportarzt. Von 1977 bis 2015 (mit Unterbrechungen) FC-Bayern-Arzt. Spitzname „Mull". Behandelte Becker, Beckenbauer und unzählige Spitzensportler. Sein Praxisstandort an der Münchner Lindenstraße ist legendär. Auch wenn er in München arbeitet — Berlin claimt ihn als Promi-Verbindung.',
+      beispiel: 'Wenn die Müller-Wohlfahrt nicht hilft, hilft keiner mehr.',
+      beispiel_hd: 'Wenn der Müller-Wohlfahrt nicht hilft, hilft keiner mehr.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-142',
+      ausdruck: 'Marlene Dietrich',
+      hochdeutsch: 'Marlene Dietrich (Berliner Filmlegende)',
+      bedeutung: 'Marlene Dietrich (1901-1992) — geboren in Schöneberg, Berlin — war eine der größten Filmlegenden des 20. Jahrhunderts. Ihre Rolle als „Lola Lola" in „Der Blaue Engel" (1930) machte sie weltberühmt. Ging dann nach Hollywood, blieb aber Berlinerin. Ihre raue, sinnliche Stimme und ihre androgyne Eleganz prägten den Stil der 30er. Posthum 1992 zurück nach Berlin, begraben in Friedenau.',
+      beispiel: 'Marlene Dietrich is Berlin pur — rough, klassisch und unverwechselbar.',
+      beispiel_hd: 'Marlene Dietrich ist Berlin pur — rauh, klassisch und unverwechselbar.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-143',
+      ausdruck: 'Hertha-Lied',
+      hochdeutsch: 'Hertha BSC Vereinslied',
+      bedeutung: 'Das Hertha-Lied „Nur nach Hause" — geschrieben von Frank Zander — ist die offizielle Vereinshymne von Hertha BSC. Bei jedem Heimspiel im Olympiastadion gesungen, ist es eine emotionale Hymne über Heimat und Vereinstreue. „Nur nach Hause, nur nach Hause gehn wir nicht ..." Die Hertha-Fans singen es mit Tränen in den Augen, besonders bei Abstiegskämpfen oder Aufstiegsmomenten.',
+      beispiel: '„Nur nach Hause" — dann wissen wir: Hertha hat gewonnen!',
+      beispiel_hd: '„Nur nach Hause" — dann wissen wir: Hertha hat gewonnen!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-144',
+      ausdruck: 'Berliner Schnauze',
+      hochdeutsch: 'Berliner Schnauze (Direktheit)',
+      bedeutung: 'Die „Berliner Schnauze" ist die berühmte Frechheit und Direktheit der Berliner — schlagfertig, ungeschönt und manchmal grob, aber selten boshaft. Im Berliner Witz wird sie liebevoll überspitzt: ein Berliner Taxifahrer, der dem Kanzler die Meinung sagt. Diese Mentalität ist ein Markenzeichen — andere Deutsche sind manchmal überfordert von der direkten Berliner Art. Liebenswert ehrlich.',
+      beispiel: 'Mit der Berliner Schnauze kommste durch jede Bürokratie.',
+      beispiel_hd: 'Mit der Berliner Schnauze kommst du durch jede Bürokratie.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-145',
+      ausdruck: 'Bützchen',
+      hochdeutsch: 'Küsschen (auch berlinerisch)',
+      bedeutung: '„Bützchen" ist eigentlich kölsch, hat aber auch in Berlin Einzug gehalten — kleine Küsschen, oft als Begrüßung oder Abschied. In Berlin meist nur unter Freunden und Familie. Anders als in Köln nicht so ritualisiert. Die jüngere, multikulturelle Berliner Generation hat den Begriff übernommen — als Ausdruck von Wärme und Verbindung. Berliner sind nicht immer kalt!',
+      beispiel: 'Komm her, Mama — ick geb dir n Bützchen.',
+      beispiel_hd: 'Komm her, Mama — ich gebe dir ein Küsschen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-146',
+      ausdruck: 'Schöneberg',
+      hochdeutsch: 'Berlin-Schöneberg (Stadtteil)',
+      bedeutung: 'Schöneberg ist ein traditioneller West-Berliner Stadtteil — Geburtsort von Marlene Dietrich und David Bowies Berliner Heimat. Das Schöneberger Rathaus ist wo John F. Kennedy 1963 seine „Ich bin ein Berliner"-Rede hielt. Der Wittenbergplatz mit KaDeWe gehört zum Stadtteil. Schöneberg ist queer, kreativ und mit Geschichte aufgeladen — eines der diversesten Berliner Viertel.',
+      beispiel: 'Schöneberg is wo die Geschichte und Gegenwart sich treffen.',
+      beispiel_hd: 'Schöneberg ist wo die Geschichte und Gegenwart sich treffen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-147',
+      ausdruck: 'Kennedy',
+      hochdeutsch: 'JFK „Ich bin ein Berliner" (1963)',
+      bedeutung: 'Am 26. Juni 1963 hielt US-Präsident John F. Kennedy seine berühmte Rede am Schöneberger Rathaus mit dem Satz „Ich bin ein Berliner" — Solidaritätserklärung für das durch die Mauer eingeschlossene West-Berlin. 450.000 Menschen jubelten ihm zu. Die kulturhistorische Bedeutung dieses Moments ist unermesslich. Die berühmte „Berliner = Pfannkuchen"-Anekdote ist übrigens ein Mythos — die Rede war gramatisch korrekt.',
+      beispiel: '„Ich bin ein Berliner!" — Kennedys Solidaritätswort von 1963.',
+      beispiel_hd: '„Ich bin ein Berliner!" — Kennedys Solidaritätswort von 1963.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-148',
+      ausdruck: 'Kotti',
+      hochdeutsch: 'Kottbusser Tor (Kreuzberger Knotenpunkt)',
+      bedeutung: '„Kotti" — der Kottbusser Tor in Kreuzberg — ist ein berüchtigter und kultiger Berliner Knotenpunkt: U-Bahn-Station, Verkehrsknoten, Drogen-Hotspot und kreativer Treffpunkt zugleich. Der „Kotti" ist Symbol für das raue, ungeschönt-multikulturelle Kreuzberger Leben. Hier treffen sich Hipster, türkische Familien, Junkies, Touristen und Punks. Hassgeliebt von den Berlinern.',
+      beispiel: 'Am Kotti is immer wat los — gut oder schlecht.',
+      beispiel_hd: 'Am Kottbusser Tor ist immer etwas los — gut oder schlecht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-149',
+      ausdruck: 'Görli',
+      hochdeutsch: 'Görlitzer Park (Kreuzberg)',
+      bedeutung: 'Der „Görli" — Görlitzer Park in Kreuzberg — ist Berlins berüchtigster Park: nach der Wende auf einem ehemaligen Bahngelände entstanden, ist er heute Treffpunkt für Familien, Drogenhändler und Polizei. Trotz seines Rufs ist er ein lebendiges Stück Kreuzberger Realität — multikulturell, chaotisch und lebendig. Die „Görli-Diskussion" über Sicherheit und sozialem Frieden ist Berliner Dauerthema.',
+      beispiel: 'Im Görli grillen — aber pass auf, wo du sitzt.',
+      beispiel_hd: 'Im Görlitzer Park grillen — aber pass auf, wo du sitzt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-150',
+      ausdruck: 'Tiergarten',
+      hochdeutsch: 'Tiergarten (Berlins Central Park)',
+      bedeutung: 'Der Tiergarten — 210 Hektar großer Park im Herzen Berlins — ist Berlins Central Park. Ursprünglich kurfürstliches Jagdgebiet, seit dem 18. Jahrhundert öffentlicher Park. Mit der Siegessäule in der Mitte, dem Englischen Garten, dem Tierpark Zoo. Im Sommer Treffpunkt für Jogger, Picknicker, Familien. Berlins grüne Oase zwischen Brandenburger Tor und Charlottenburg — bei jedem Wetter belebt.',
+      beispiel: 'En Spaziergang im Tiergarten — die beste Therapie.',
+      beispiel_hd: 'Ein Spaziergang im Tiergarten — die beste Therapie.',
+      kategorie: 'natur'
     }
   ]
 };
