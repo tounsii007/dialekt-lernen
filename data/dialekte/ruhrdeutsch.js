@@ -1625,6 +1625,276 @@ export default {
       beispiel: 'Der Pott-Sommer ist voll von Festivals und Stadtfesten.',
       beispiel_hd: 'Der Sommer im Ruhrgebiet ist voll von Festivals und Stadtfesten.',
       kategorie: 'feiern'
+    },
+    {
+      id: 'ru-181',
+      ausdruck: 'Schnüss',
+      hochdeutsch: 'Mund / Schnauze',
+      bedeutung: 'Die „Schnüss" ist im Ruhrpott die salopp-direkte Bezeichnung für den Mund — verwandt mit dem kölschen „Schnüss". „Halt deine Schnüss!" ist die Ruhrpott-Aufforderung zu schweigen. Auch in Wendungen: „eine große Schnüss haben" (vorlaut sein), „auf die Schnüss fallen" (Pech haben). Direkt, derb, aber im Pott-Tonfall nicht durchweg böse — typische Pott-Kommunikation.',
+      beispiel: 'Halt mol die Schnüss, ich kann nich mehr zuhörn!',
+      beispiel_hd: 'Halt mal den Mund, ich kann nicht mehr zuhören!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-182',
+      ausdruck: 'Klatsche',
+      hochdeutsch: 'Ohrfeige / Schlag',
+      bedeutung: 'Eine „Klatsche" ist im Ruhrpott eine Ohrfeige — wörtlich „etwas Klatschendes". „Pass auf, sonst gibt\'s ne Klatsche!" Eine handgreifliche Drohung, die heute meist nur noch verbal verwendet wird. Früher in der Erziehung leider Realität. Der Ausdruck hat einen lautmalerischen Klang, der die Bedeutung sinnlich vermittelt.',
+      beispiel: 'Pass uff, sonst krisste ne Klatsche!',
+      beispiel_hd: 'Pass auf, sonst kriegst du eine Ohrfeige!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-183',
+      ausdruck: 'Mottek',
+      hochdeutsch: 'Hammer',
+      bedeutung: 'Der „Mottek" ist im Ruhrpott der Hammer — vom polnischen „młotek" (Hammer). Reflektiert die polnischen Einflüsse durch die vielen polnischen Bergarbeiter, die im 19. und frühen 20. Jahrhundert in den Pott kamen („Ruhrpolen"). „Gib mir mal\'n Mottek!" Im Pott sind viele Wörter polnischer Herkunft Standard — der Pott als Schmelztiegel der Sprachen.',
+      beispiel: 'Hol mal\'n Mottek ausm Werkzeugkasten.',
+      beispiel_hd: 'Hol mal einen Hammer aus dem Werkzeugkasten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-184',
+      ausdruck: 'Lametta',
+      hochdeutsch: 'Lametta / Christbaum-Glitzer',
+      bedeutung: '„Lametta" ist im Pott der silberne Christbaum-Schmuck — sehr beliebt in den 70ern und 80ern, heute aus Umweltgründen weniger verwendet. „Früher haben mer den ganzen Baum mit Lametta zugehängt!" Nostalgische Erinnerung an die Pott-Weihnacht. Auch übertragen für übertriebenen Schmuck oder Dekoration. Eine warm-erinnerungsvolle Wortprägung.',
+      beispiel: 'Auf Omas Christbaum war so viel Lametta wie Tannennadeln!',
+      beispiel_hd: 'Auf Omas Christbaum war so viel Lametta wie Tannennadeln!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-185',
+      ausdruck: 'Schmadder',
+      hochdeutsch: 'Matsch / Brei',
+      bedeutung: 'Der „Schmadder" ist im Ruhrpott eine schmierige, breiige Masse — Matsch im Garten, breiges Essen, klebrige Substanz. „Das Wetter is\'n richtigen Schmadder!" (kalt und nass). Auch übertragen: „red kein Schmadder!" (red keinen Quatsch). Eine plastische, lautmalerische Pott-Wortprägung. Drastisch und direkt — Pott-Sprache eben.',
+      beispiel: 'Bei dem Schmadder geh ich nich vor die Tür!',
+      beispiel_hd: 'Bei diesem Matschwetter gehe ich nicht vor die Tür!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-186',
+      ausdruck: 'Dröhnung',
+      hochdeutsch: 'Schwung / Energie',
+      bedeutung: 'Eine „Dröhnung" ist im Ruhrpott ein kräftiger Schwung, eine Dosis Energie. „Ich brauch noch ne Dröhnung Kaffee, dann geht\'s!" Auch im Sinne von „bekommen": „der hat ne Dröhnung gekriegt" (eine ordentliche Portion). Vom Verb „dröhnen" abgeleitet. Eine kraftvolle, lautmalerische Pott-Wortprägung — der Pott liebt drastische Bilder.',
+      beispiel: 'Erst noch ne Dröhnung Kaffee, dann fang ich an!',
+      beispiel_hd: 'Erst noch eine Dosis Kaffee, dann fange ich an!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-187',
+      ausdruck: 'Knäppchen',
+      hochdeutsch: 'Brotende / Endstück',
+      bedeutung: 'Das „Knäppchen" oder „Knust" ist im Ruhrpott das Endstück eines Brotes — die knusprige Ecke, die manche lieben und andere meiden. „Wer kriegt dat Knäppchen?" In manchen Pott-Familien ist es heiß begehrt, in anderen wird\'s an die Hunde verfüttert. Auch in der Wendung „dat Knäppchen vom Tag" — der harte Teil der Arbeit.',
+      beispiel: 'Ich nehm immer dat Knäppchen, dat is\'s Beste!',
+      beispiel_hd: 'Ich nehme immer das Brotende, das ist das Beste!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-188',
+      ausdruck: 'Lümmel',
+      hochdeutsch: 'Lümmel / Rüpel',
+      bedeutung: 'Ein „Lümmel" ist im Ruhrpott ein flegelhafter, ungezogener Junge — meist von Eltern oder Lehrern verwendet. „Du Lümmel, jetzt setz dich endlich hin!" Mild bis ernsthaft, je nach Tonfall. Verwandt mit dem hochdeutschen „Lümmel". Im Pott-Tonfall klingt es etwas weicher als in anderen Dialekten — Pott-Kritik mit Augenzwinkern.',
+      beispiel: 'Du Lümmel, hol jetz endlich dein Zimmer aufräum!',
+      beispiel_hd: 'Du Lümmel, geh jetzt endlich dein Zimmer aufräumen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-189',
+      ausdruck: 'Tüddelich',
+      hochdeutsch: 'Verwirrt / Wirr im Kopf',
+      bedeutung: '„Tüddelich" oder „tüddelig" beschreibt im Ruhrpott jemanden, der verwirrt, durcheinander oder leicht senil ist. „Die Oma is mit ihre Jahre etwas tüddelig geworden." Eine warme, mitfühlende Charakterisierung — keine harte Kritik, sondern liebevoll-bemitleidend. Auch für sich selbst gebraucht: „Heut bin ich ganz tüddelig im Kopf!" Vom niederdeutschen „tüddel" (verworren) abgeleitet.',
+      beispiel: 'Die Oma wird langsam etwas tüddelich.',
+      beispiel_hd: 'Die Oma wird langsam etwas verwirrt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-190',
+      ausdruck: 'Klüse',
+      hochdeutsch: 'Augen',
+      bedeutung: 'Die „Klüsen" sind im Ruhrpott die Augen — eine derbe, aber liebevoll-direkte Bezeichnung. „Mach deine Klüsen auf!" Vom seemännischen „Klüse" (das Loch im Schiffsrumpf für Anker) übertragen aus der Hafenarbeitersprache. Der Pott war als Industrieregion auch mit der Seefahrt verbunden (Duisburg, Binnenhafen). Plastisch, kantig — wie der Pott selbst.',
+      beispiel: 'Mach deine Klüsen auf, dat is doch klar!',
+      beispiel_hd: 'Mach deine Augen auf, das ist doch klar!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-191',
+      ausdruck: 'Quirl',
+      hochdeutsch: 'Quirl / Unruhiger Mensch',
+      bedeutung: 'Ein „Quirl" ist im Ruhrpott jemand, der nie still sitzt — unruhig, hibbelig, ständig in Bewegung. „Du bist ja\'n richtigen Quirl heut!" Auch der eigentliche Küchen-Quirl ist gemeint. Mit liebevoller Beobachtung gebraucht. Kinder sind besonders oft „Quirle" — die Pott-Eltern wissen das und nehmen\'s gelassen.',
+      beispiel: 'Setz dich endlich hin, du bist ja\'n Quirl!',
+      beispiel_hd: 'Setz dich endlich hin, du bist ja ein Wirbelwind!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-192',
+      ausdruck: 'Dröppken',
+      hochdeutsch: 'Tröpfchen',
+      bedeutung: 'Ein „Dröppken" ist im Ruhrpott ein Tröpfchen — meistens auf Getränke bezogen. „Nimmt noch\'n Dröppken vom Schnaps!" Eine warme Verkleinerungsform mit dem typischen Pott-Klang. Auch übertragen: „a kleines Dröppken Liebe" für etwas Wenig, aber Wertvolles. Plattdeutsche Wurzeln zeigen sich in solchen Diminutivformen.',
+      beispiel: 'Nimm noch\'n Dröppken Kaffee!',
+      beispiel_hd: 'Nimm noch ein Tröpfchen Kaffee!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-193',
+      ausdruck: 'Wattekopp',
+      hochdeutsch: 'Wattekopf / Trottel',
+      bedeutung: 'Ein „Wattekopp" ist im Ruhrpott ein Dummkopf — wörtlich „Watte-Kopf" (weicher, leerer Kopf). „Du Wattekopp, dat steht doch in der Anleitung!" Mild bis ernsthaft, je nach Kontext. Verwandt mit dem hochdeutschen „Wattekopf". Eine plastische, bildhafte Pott-Beleidigung mit Augenzwinkern.',
+      beispiel: 'Du Wattekopp, dat hast du falsch gemacht!',
+      beispiel_hd: 'Du Wattekopf, das hast du falsch gemacht!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-194',
+      ausdruck: 'Lichtschalter',
+      hochdeutsch: 'Lichtschalter / Wechselhafter Mensch',
+      bedeutung: 'Ein „Lichtschalter" ist im Ruhrpott jemand, der seine Meinung oder Stimmung schnell wechselt — wie der Lichtschalter, der an und aus geht. „Bei dem weiß man nie, der is wien Lichtschalter!" Eine moderne, bildhafte Pott-Wortprägung. Die Pott-Sprache ist erfinderisch und passt sich modernen Realitäten an — Lichtschalter gibt\'s seit ein paar Generationen Standard.',
+      beispiel: 'Mein Chef is wie\'n Lichtschalter, mal so, mal so.',
+      beispiel_hd: 'Mein Chef ist wie ein Lichtschalter, mal so, mal so.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-195',
+      ausdruck: 'Buddel',
+      hochdeutsch: 'Flasche',
+      bedeutung: 'Die „Buddel" ist im Ruhrpott die Flasche — meistens eine Bierflasche oder Schnapsflasche. Vom niederdeutschen „buddel" (Flasche, vom englischen „bottle"). „Hol mol\'n Buddel Bier ausm Kühlschrank!" Eine alltagsnahe, bodenständige Pott-Bezeichnung. Auch in Wendungen: „ne ganze Buddel weggesoffen" (eine ganze Flasche getrunken).',
+      beispiel: 'Hol noch\'n Buddel Bier ausm Keller!',
+      beispiel_hd: 'Hol noch eine Flasche Bier aus dem Keller!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-196',
+      ausdruck: 'Mache mer',
+      hochdeutsch: 'Machen wir / Wird gemacht',
+      bedeutung: '„Mache mer" ist im Ruhrpott die Zustimmung zu einer Vereinbarung — „Machen wir!", „Wird gemacht!". Eine kurze, pragmatische Pott-Reaktion. „Treffen mer uns um sechs? — Mache mer!" Die Pott-Sprache liebt knappe, effiziente Wendungen — kein langes Drumherum, sondern direkt zur Sache. Eine charakteristische Pott-Zusage.',
+      beispiel: 'Treffen mer uns morgen? — Mache mer!',
+      beispiel_hd: 'Treffen wir uns morgen? — Machen wir!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-197',
+      ausdruck: 'Räuberbande',
+      hochdeutsch: 'Wilde Kinderschar',
+      bedeutung: 'Eine „Räuberbande" ist im Ruhrpott eine wilde, lärmige Schar von Kindern oder Jugendlichen — meist liebevoll-spöttisch gemeint. „D\'Räuberbande ist wieder da!" Eltern und Großeltern beobachten die Räuberbanden ihrer Kinder mit gemischten Gefühlen. Im Pott der 50er, 60er Jahre waren Räuberbanden Standard — die Straße als Spielplatz.',
+      beispiel: 'Hier kommt die Räuberbande zum Mittagessen!',
+      beispiel_hd: 'Hier kommt die wilde Kinderschar zum Mittagessen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-198',
+      ausdruck: 'Schraubenzieher',
+      hochdeutsch: 'Schraubenzieher / Schrauber',
+      bedeutung: 'Der „Schraubenzieher" ist im Ruhrpott der Klassiker des Werkzeugs — kein Pott-Haushalt ohne Schraubenzieher. „Gib mir mal\'n Schraubenzieher, ich muss wat reparieren!" In der Arbeiterkultur des Potts ist Werkzeug-Handwerk Männer-Sache und wird mit Stolz beherrscht. Auch der Drink „Schraubenzieher" (Wodka mit Orangensaft) ist beliebt.',
+      beispiel: 'Im Werkzeugkasten liegt der Schraubenzieher.',
+      beispiel_hd: 'Im Werkzeugkasten liegt der Schraubenzieher.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-199',
+      ausdruck: 'Frikadelle',
+      hochdeutsch: 'Frikadelle / Bulette',
+      bedeutung: 'Die „Frikadelle" ist im Ruhrpott ein Klassiker der bürgerlichen Küche — Hackfleischklößchen, paniert oder unpaniert, in der Pfanne gebraten. „Heut Abend gibt\'s Frikadellen mit Kartoffelsalat!" Im Pott klassische Sonntags- oder Festtagsmahlzeit. Verwandt mit der Berliner „Bulette". Bodenständige Pott-Küche in Reinkultur.',
+      beispiel: 'Mutters Frikadellen sind die besten der Welt!',
+      beispiel_hd: 'Mutters Frikadellen sind die besten der Welt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-200',
+      ausdruck: 'Hauklotz',
+      hochdeutsch: 'Hackklotz / Grober Mensch',
+      bedeutung: 'Ein „Hauklotz" ist im Ruhrpott ursprünglich der Hackklotz zum Holzspalten — übertragen aber ein grober, unsensibler Mensch. „Der is\'n richtigen Hauklotz, der versteht kein Wort!" Eine drastische Pott-Charakterisierung. Plastisch und bildhaft — die Pott-Sprache liebt solche handfesten Vergleiche aus der Werkstatt und vom Bau.',
+      beispiel: 'Mit dem Hauklotz kann man nich reden!',
+      beispiel_hd: 'Mit dem groben Kerl kann man nicht reden!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-201',
+      ausdruck: 'Schissbüx',
+      hochdeutsch: 'Hosenscheißer / Feigling',
+      bedeutung: 'Eine „Schissbüx" ist im Ruhrpott ein Feigling — wörtlich „Schiss-Buchse" (Schiss-Hose). „Sei keine Schissbüx, spring jetzt!" Etwas derb, aber im Pott-Tonfall mit Augenzwinkern. Eine plastische, bildhafte Beleidigung mit Wirkungstreffer. Verwandt mit „Hosenscheißer". Drastisch wie der Pott-Humor.',
+      beispiel: 'Komm endlich vom 3-Meter-Brett, du Schissbüx!',
+      beispiel_hd: 'Komm endlich vom 3-Meter-Brett, du Feigling!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-202',
+      ausdruck: 'Klappe',
+      hochdeutsch: 'Mund / Klappe',
+      bedeutung: 'Die „Klappe" ist im Ruhrpott der Mund — meist in Aufforderungs-Wendungen. „Halt die Klappe!" ist die direkte Pott-Aufforderung zu schweigen. Auch milder: „Mach deine Klappe auf!" (sag was). Verwandt mit dem hochdeutschen „Klappe" (z.B. Film-Klappe). Eine knappe, effiziente Pott-Wortprägung — typisch direkt.',
+      beispiel: 'Jetz halt die Klappe und hör zu!',
+      beispiel_hd: 'Jetzt halt den Mund und hör zu!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-203',
+      ausdruck: 'Anwischen',
+      hochdeutsch: 'Anschmuggeln / Heimlich nähern',
+      bedeutung: '„Anwischen" bedeutet im Ruhrpott sich heimlich anschleichen oder unauffällig vorbeischleichen. „Pass auf, da wischt einer an!" Im Pott der Bergwerks-Solidarität war Misstrauen gegen Fremde verbreitet. „Der hat mich heimlich angewischt!" — der hat mich plötzlich überrascht. Eine plastische, bildhafte Pott-Wortprägung.',
+      beispiel: 'Plötzlich ist der von hinten angewischt!',
+      beispiel_hd: 'Plötzlich ist der von hinten angeschlichen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-204',
+      ausdruck: 'Pottdeckel',
+      hochdeutsch: 'Topfdeckel / Schalker-Mütze',
+      bedeutung: 'Der „Pottdeckel" ist im Ruhrpott ein Topfdeckel — meist auf der Bratpfanne oder dem Kochtopf. Auch metaphorisch für eine flache Mütze (Schiebermütze), die wie ein Pottdeckel aussieht. „Setz deinen Pottdeckel auf, draußen is kalt!" Eine plastische, lautmalerische Pott-Wortprägung mit doppelter Bedeutung. Eine alltägliche Pott-Realität.',
+      beispiel: 'Bei dem Wind setzt jeder seinen Pottdeckel auf!',
+      beispiel_hd: 'Bei diesem Wind setzt jeder seine Mütze auf!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-205',
+      ausdruck: 'Pinöckel',
+      hochdeutsch: 'Penis / Kleinkind-Anatomie',
+      bedeutung: 'Der „Pinöckel" ist im Ruhrpott eine kindliche Bezeichnung für den Penis — meist in der Erziehung von Kleinkindern verwendet. „Wisch dir noch den Pinöckel ab!" Eine harmlose, nicht vulgäre Bezeichnung mit warmem Diminutiv-Klang. Verwandt mit „Pillemann". Die Pott-Sprache hat viele solche zärtlichen Wörter aus dem familiären Bereich.',
+      beispiel: 'Der Kleine hat seinen Pinöckel entdeckt.',
+      beispiel_hd: 'Der Kleine hat seinen Penis entdeckt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-206',
+      ausdruck: 'Schwofen',
+      hochdeutsch: 'Tanzen',
+      bedeutung: '„Schwofen" ist im Ruhrpott das Tanzen — meistens informell, im Discoclub oder bei der Hochzeit. „Komm, mer gehn schwofen!" Vom hochdeutschen „schwofen" abgeleitet. Eine fröhliche, lockere Pott-Bezeichnung. Im Pott gehört Tanzen zur Lebensfreude — bei jeder Feier, bei jedem Open-Air. Klassische Pott-Geselligkeit.',
+      beispiel: 'Am Wochenende gehn mer wieder schwofen!',
+      beispiel_hd: 'Am Wochenende gehen wir wieder tanzen!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-207',
+      ausdruck: 'Klamotten-Kiste',
+      hochdeutsch: 'Kleider-Kiste / Garderobe',
+      bedeutung: 'Die „Klamotten-Kiste" ist im Ruhrpott die Garderobe — alle Kleidungsstücke einer Person. „In meiner Klamotten-Kiste hat sich was angesammelt!" Eine pragmatische, alltagsnahe Pott-Wortprägung. Verkleidet das hochkulturelle Wort „Garderobe" zu etwas Handfestem, Bodenständigem. Pott-typische Sprachpraxis.',
+      beispiel: 'Ich muss mal meine Klamotten-Kiste ausmisten.',
+      beispiel_hd: 'Ich muss mal meine Garderobe ausmisten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-208',
+      ausdruck: 'Bratenfett',
+      hochdeutsch: 'Bratenfett / Speck-Polster',
+      bedeutung: 'Das „Bratenfett" ist im Ruhrpott sowohl das Fett aus der Bratpfanne als auch übertragen das überflüssige Körperfett. „Du hast scho\'n bisschen Bratenfett angesetzt!" Eine direkte Pott-Beobachtung, aber meistens ohne Bosheit. Die Pott-Küche ist deftig, das schlägt sich am Bauch nieder. Auch in der Wendung „im eigenen Bratenfett schwimmen" — Pott-Wortspiel.',
+      beispiel: 'Im Alter setzt man Bratenfett an.',
+      beispiel_hd: 'Im Alter setzt man Bauchspeck an.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-209',
+      ausdruck: 'Pottdrache',
+      hochdeutsch: 'Pott-Drache / Zänkische Frau',
+      bedeutung: 'Eine „Pottdrache" ist im Ruhrpott eine streitsüchtige, zänkische Frau — wörtlich „Pott-Drache" (Drache aus dem Pott). „Die Frau is ne Pottdrache, mit der will keiner streiten!" Derb-bildhaft. Manchmal auch als Selbstbezeichnung mit Augenzwinkern: „Ich bin halt ne Pottdrache, wenn ich angegriffen werde!" Eine charakteristische Pott-Personencharakterisierung.',
+      beispiel: 'Mit der Pottdrache leg dich besser nich an!',
+      beispiel_hd: 'Mit der zänkischen Frau leg dich besser nicht an!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-210',
+      ausdruck: 'Mauk',
+      hochdeutsch: 'Sauerei / Schmiererei',
+      bedeutung: '„Mauk" ist im Ruhrpott eine Sauerei, eine Schmiererei, eine unappetitliche Sache. „Wat ist denn das für\'n Mauk?" Auch übertragen für eine üble Geschichte: „die ganze Mauk hat zu nichts geführt". Lautmalerisch hörbar das Unangenehme. Eine drastische, direkte Pott-Wortprägung, die ohne Umschweife zur Sache kommt.',
+      beispiel: 'Im Kühlschrank is\'n richtiger Mauk!',
+      beispiel_hd: 'Im Kühlschrank ist eine richtige Sauerei!',
+      kategorie: 'alltag'
     }
   ]
 };
