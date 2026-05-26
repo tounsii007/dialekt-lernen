@@ -101,7 +101,12 @@ export function reviewCard(dialektId, ausdruckId, rating) {
   registerStreak();
   // XP-Award je nach Bewertung
   const xpAmount = rating === RATING_EASY ? XP.cardLearned : XP.cardReviewed;
-  awardXp(xpAmount, rating === RATING_EASY ? 'card-learned' : 'card-reviewed');
+  const xpReason = rating === RATING_EASY ? 'card-learned' : 'card-reviewed';
+  awardXp(xpAmount, xpReason);
+  // Wöchentliche Challenges tracken (lazy import, um Zyklen zu vermeiden).
+  try {
+    import('./challenges.js').then(m => m.trackCardReview(dialektId, ausdruckId, xpReason)).catch(() => {});
+  } catch {}
   // Tages-Lernziel tracken
   const newProgress = incrementGoalProgress(1);
   const target = getGoalTarget();

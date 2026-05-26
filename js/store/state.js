@@ -57,7 +57,15 @@ function withDefaults(loaded) {
                     : { total: 0, log: [] },
     goals:        loaded.goals && typeof loaded.goals === 'object'
                     ? { target: 10, progress: {}, reminderShown: {}, ...loaded.goals }
-                    : { target: 10, progress: {}, reminderShown: {} }
+                    : { target: 10, progress: {}, reminderShown: {} },
+    decks:        Array.isArray(loaded.decks) ? loaded.decks : [],
+    suggestions:  Array.isArray(loaded.suggestions) ? loaded.suggestions : [],
+    challenges:   loaded.challenges && typeof loaded.challenges === 'object'
+                    ? { week: null, progress: {}, completed: [], ...loaded.challenges,
+                        progress: (loaded.challenges.progress && typeof loaded.challenges.progress === 'object') ? loaded.challenges.progress : {},
+                        completed: Array.isArray(loaded.challenges.completed) ? loaded.challenges.completed : [] }
+                    : { week: null, progress: {}, completed: [] },
+    longGoals:    Array.isArray(loaded.longGoals) ? loaded.longGoals : []
   };
 }
 

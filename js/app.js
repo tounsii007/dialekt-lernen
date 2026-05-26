@@ -12,6 +12,7 @@ import { initSpotlight, initScrollProgress, initMagnetic, initTilt } from './uti
 import { startOnboarding, resetOnboarding } from './util/onboarding.js';
 import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 import { initPwa } from './util/pwa.js';
+import { initNotifications } from './store/notifications.js';
 import { initXpHud, renderXpBar } from './util/xp-hud.js';
 import { getXp } from './store/xp.js';
 import { initNetwork } from './util/network.js';
@@ -192,6 +193,7 @@ function init() {
 
   // 5. Background services
   initPwa(toast);
+  initNotifications();
   initNetwork(toast);
   initXpHud();
   initGoalEvents(toast);

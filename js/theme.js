@@ -1,28 +1,61 @@
 // Dialekto · Theme-Umschalter
-// Klick-Logik für den Theme-Button (Hell/Dunkel/Auto).
+// Klick-Logik für den Theme-Button (Hell/Dunkel/Auto/Hoher Kontrast),
+// den Dyslexie-Schrift-Toggle und den Sprach-Umschalter.
 
 import { $, toast } from './util.js';
-import { applyTheme, cycleTheme, applyPreset, PRESETS, setPreset, getPreset } from './store.js';
+import {
+  applyTheme, cycleTheme,
+  applyTypography, getTypography, toggleDyslexicFont,
+  applyPreset, PRESETS, setPreset, getPreset
+} from './store.js';
 import { sfx } from './util/sounds.js';
+import { initI18n, t } from './util/i18n.js';
 
-const THEME_LABELS = {
-  light: 'Hell',
-  dark: 'Dunkel',
-  auto: 'Automatisch'
+const THEME_LABELS_KEYS = {
+  light:    'theme.light',
+  dark:     'theme.dark',
+  auto:     'theme.auto',
+  contrast: 'theme.contrast'
 };
 
 const THEME_TOAST_MS = 1200;
 
 export function initTheme() {
   applyTheme();
+  applyTypography();
   applyPreset();
+  // Sprach-Toggle früh initialisieren — er gehört nicht streng zum Theme,
+  // teilt sich aber die "UI-Chrome"-Lebenszyklus-Stelle.
+  initI18n();
+
   const btn = $('#themeToggle');
-  if (!btn) return;
-  btn.addEventListener('click', () => {
-    const next = cycleTheme();
-    toast(`Modus: ${THEME_LABELS[next] ?? next}`, 'info', THEME_TOAST_MS);
-  });
+  if (btn) {
+    btn.addEventListener('click', () => {
+      const next = cycleTheme();
+      const label = t(THEME_LABELS_KEYS[next] || next);
+      toast(`Modus: ${label}`, 'info', THEME_TOAST_MS);
+    });
+  }
+
+  initDyslexicToggle();
   initPresetPicker();
+}
+
+function initDyslexicToggle() {
+  const btn = $('#dyslexicToggle');
+  if (!btn) return;
+  const syncState = () => {
+    const active = getTypography() === 'dyslexic';
+    btn.classList.toggle('is-active', active);
+    btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+  };
+  syncState();
+  btn.addEventListener('click', () => {
+    const next = toggleDyslexicFont();
+    syncState();
+    const msg = next === 'dyslexic' ? t('toast.dyslexic.on') : t('toast.dyslexic.off');
+    toast(msg, 'info', THEME_TOAST_MS);
+  });
 }
 
 function initPresetPicker() {

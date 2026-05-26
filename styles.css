@@ -6965,3 +6965,537 @@ img, svg, video {
   background: #ef4444;
   animation: pron-pulse 0.8s ease-in-out infinite;
 }
+
+/* ============================================================ */
+/* A11y · Hoher Kontrast & Dyslexie-freundliche Typografie       */
+/* ============================================================ */
+
+/* Hoher-Kontrast-Theme — WCAG AAA ≥7:1 für Kerntext.
+   Bewusst pure Schwarz/Weiß-Basis + Signal-Gelb/Cyan für Brand/Accent;
+   keine Halbtransparenz, damit Linien klar lesbar bleiben. */
+[data-theme="contrast"] {
+  --bg:             #000;
+  --bg-elev:        #000;
+  --bg-soft:        #0a0a0a;
+  --surface:        #000;
+  --surface-strong: #000;
+  --text:           #fff;
+  --text-soft:      #fff;
+  --text-muted:     #e5e5e5;
+  --border:         #fff;
+  --border-strong:  #fff;
+
+  --brand:    #ffff00; /* Signal-Gelb */
+  --brand-2:  #ffff00;
+  --brand-3:  #ffff00;
+  --brand-soft: rgba(255, 255, 0, 0.25);
+  --accent:   #00ffff; /* Signal-Cyan */
+  --accent-2: #00ffff;
+  --accent-soft: rgba(0, 255, 255, 0.25);
+  --warm:     #ffa500;
+  --pink:     #ff69b4;
+
+  --grad-brand: linear-gradient(135deg, #ffff00, #00ffff);
+  --grad-cool:  linear-gradient(135deg, #00ffff, #ffffff);
+  --grad-warm:  linear-gradient(135deg, #ffa500, #ffff00);
+
+  --shadow-sm: 0 0 0 1px #fff;
+  --shadow-md: 0 0 0 2px #fff;
+  --shadow-lg: 0 0 0 2px #fff;
+  --glow:      0 0 0 2px #ffff00;
+}
+
+/* Im Kontrast-Modus stören dekorative Background-Layer die Lesbarkeit. */
+[data-theme="contrast"] .bg-stack,
+[data-theme="contrast"] .bg-aurora,
+[data-theme="contrast"] .bg-orbs,
+[data-theme="contrast"] .bg-grain,
+[data-theme="contrast"] .bg-vignette {
+  display: none;
+}
+
+/* Buttons & Cards bekommen einen klar sichtbaren Rahmen. */
+[data-theme="contrast"] .btn,
+[data-theme="contrast"] .card,
+[data-theme="contrast"] .icon-btn,
+[data-theme="contrast"] .nav-link,
+[data-theme="contrast"] input,
+[data-theme="contrast"] select,
+[data-theme="contrast"] textarea {
+  border: 2px solid #fff !important;
+  background: #000 !important;
+  color: #fff !important;
+}
+
+[data-theme="contrast"] .btn-primary,
+[data-theme="contrast"] .nav-link.is-active {
+  background: #ffff00 !important;
+  color: #000 !important;
+  border-color: #ffff00 !important;
+}
+
+[data-theme="contrast"] :focus-visible {
+  outline: 4px solid #ffff00 !important;
+  outline-offset: 4px !important;
+}
+
+[data-theme="contrast"] a { color: #00ffff; text-decoration: underline; }
+[data-theme="contrast"] a:visited { color: #ff69b4; }
+
+/* Dyslexie-freundliche Typografie:
+   - OpenDyslexic (falls installiert) oder Comic Sans MS als Fallback
+     mit ähnlich offenen Buchstabenformen
+   - Erhöhter Letter/Word-Spacing + entspannte Zeilenhöhe nach BDA-Empfehlung
+   Falls Font nicht installiert: System-Font mit erhöhtem Spacing übernimmt das. */
+[data-typography="dyslexic"] body,
+[data-typography="dyslexic"] .btn,
+[data-typography="dyslexic"] input,
+[data-typography="dyslexic"] textarea,
+[data-typography="dyslexic"] select {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', 'Verdana', sans-serif;
+  letter-spacing: 0.05em;
+  word-spacing: 0.15em;
+  line-height: 1.8;
+}
+[data-typography="dyslexic"] h1,
+[data-typography="dyslexic"] h2,
+[data-typography="dyslexic"] h3,
+[data-typography="dyslexic"] h4 {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', 'Verdana', sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+/* Bei Dyslexie keine kursiven Schriftschnitte — schwerer lesbar */
+[data-typography="dyslexic"] em,
+[data-typography="dyslexic"] i {
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Topbar-Toggle-Buttons: Sprache + Dyslexie */
+.lang-toggle,
+.dyslexic-toggle {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+.dyslexic-toggle {
+  font-family: 'OpenDyslexic', 'Comic Sans MS', 'Verdana', sans-serif;
+  font-size: 1rem;
+}
+.dyslexic-toggle.is-active {
+  background: var(--brand-soft);
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+/* ============================================================
+   SPIELE · Memory-Mini-Game
+   ============================================================ */
+
+.spiele-view { max-width: 1100px; margin: 0 auto; }
+
+.spiele-setup {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.spiele-dialekt-chips {
+  display: flex; flex-wrap: wrap; gap: var(--sp-2);
+  margin-top: var(--sp-2);
+}
+.spiele-chip {
+  display: inline-flex; align-items: center; gap: var(--sp-2);
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text-soft);
+  font-size: .9rem; font-weight: 500;
+  cursor: pointer;
+  transition: all var(--t-fast) var(--ease);
+}
+.spiele-chip:hover {
+  border-color: var(--dc, var(--brand));
+  color: var(--text);
+}
+.spiele-chip.is-on {
+  background: var(--dc, var(--brand));
+  border-color: transparent;
+  color: white;
+}
+.spiele-chip-flag { font-size: 1.1rem; }
+
+.spiele-difficulty-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-3);
+  margin-top: var(--sp-2);
+}
+.spiele-diff-card {
+  text-align: left;
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  border: 1.5px solid var(--border);
+  background: var(--bg-soft);
+  cursor: pointer;
+  transition: all var(--t-fast) var(--ease);
+}
+.spiele-diff-card:hover { border-color: var(--brand); transform: translateY(-2px); }
+.spiele-diff-card.is-on {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  box-shadow: 0 0 0 3px var(--brand-soft);
+}
+.spiele-diff-label {
+  font-family: var(--font-display);
+  font-size: 1.4rem; font-weight: 700;
+  color: var(--text);
+}
+.spiele-diff-desc {
+  font-size: .85rem; color: var(--text-muted);
+  margin-top: var(--sp-1);
+}
+
+.spiele-game { display: flex; flex-direction: column; gap: var(--sp-5); }
+
+.spiele-hud {
+  display: flex; flex-wrap: wrap; gap: var(--sp-5);
+  align-items: center;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-3) var(--sp-4);
+}
+.spiele-hud-stat { min-width: 90px; }
+.spiele-hud-label {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+}
+.spiele-hud-value {
+  font-family: var(--font-display);
+  font-size: 1.4rem; font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--mem-cols, 4), minmax(0, 1fr));
+  gap: var(--sp-3);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.memory-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  perspective: 900px;
+}
+.memory-card-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .55s var(--ease-spring);
+}
+.memory-card.is-flipped .memory-card-inner,
+.memory-card.is-matched .memory-card-inner {
+  transform: rotateY(180deg);
+}
+.memory-card-face {
+  position: absolute; inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--r-md);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: var(--sp-3);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.memory-card-back {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: white;
+  border: 1px solid transparent;
+}
+.memory-card-back-mark {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  opacity: .9;
+}
+.memory-card-front {
+  background: var(--bg-elev);
+  border: 1.5px solid var(--dc, var(--brand));
+  color: var(--text);
+  transform: rotateY(180deg);
+  gap: var(--sp-2);
+}
+.memory-card-flag { font-size: 1.2rem; opacity: .85; }
+.memory-card-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(.85rem, 1.4vw, 1.1rem);
+  line-height: 1.15;
+  word-break: break-word;
+  hyphens: auto;
+}
+.memory-card-side {
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--text-muted);
+}
+.memory-card.is-matched .memory-card-front {
+  background: linear-gradient(135deg, var(--dc, var(--brand)), var(--accent));
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255,255,255,.35), var(--shadow-md);
+}
+.memory-card.is-matched .memory-card-side { color: rgba(255,255,255,.85); }
+.memory-card:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; border-radius: var(--r-md); }
+
+.spiele-summary {
+  margin-top: var(--sp-5);
+  padding: var(--sp-6);
+  text-align: center;
+}
+.spiele-summary-row {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: var(--sp-6);
+  margin: var(--sp-4) 0;
+}
+.spiele-summary-label {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+}
+.spiele-summary-value {
+  font-family: var(--font-display);
+  font-size: 2rem; font-weight: 700;
+  color: var(--text);
+}
+.spiele-summary-actions {
+  display: flex; gap: var(--sp-3); justify-content: center; flex-wrap: wrap;
+  margin-top: var(--sp-4);
+}
+
+@media (max-width: 640px) {
+  .memory-grid { gap: var(--sp-2); }
+  .memory-card-text { font-size: .75rem; }
+  .spiele-hud { gap: var(--sp-3); }
+}
+
+/* ============================================================
+   SAMMLUNG · Ausdrücke-Pokédex
+   ============================================================ */
+
+.sammlung-view { max-width: 1200px; margin: 0 auto; }
+
+.sammlung-progress {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-sm);
+}
+.sammlung-progress-head {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  margin-bottom: var(--sp-3);
+}
+.sammlung-progress-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem; font-weight: 700;
+  color: var(--text);
+}
+.sammlung-progress-pill {
+  background: var(--brand-soft);
+  color: var(--brand);
+  padding: 6px 14px;
+  border-radius: var(--r-pill);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.sammlung-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 14px;
+  background: var(--bg-soft);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+.sammlung-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  border-radius: var(--r-pill);
+  transition: width var(--t-slow) var(--ease);
+}
+
+.sammlung-filters {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--sp-4);
+  box-shadow: var(--shadow-sm);
+}
+.sammlung-filter-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--sp-4);
+}
+.sammlung-filter-cell { display: flex; flex-direction: column; gap: var(--sp-2); }
+.sammlung-filter-label {
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+}
+.sammlung-select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: .95rem;
+  cursor: pointer;
+}
+.sammlung-select:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.sammlung-status-row { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
+.sammlung-status-btn {
+  padding: 8px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text-soft);
+  cursor: pointer;
+  font-size: .85rem; font-weight: 500;
+  transition: all var(--t-fast) var(--ease);
+}
+.sammlung-status-btn:hover { border-color: var(--brand); color: var(--text); }
+.sammlung-status-btn.is-on {
+  background: var(--brand);
+  color: white;
+  border-color: transparent;
+}
+.sammlung-meta { margin-top: var(--sp-3); font-size: .85rem; }
+
+.sammlung-grid-wrap { margin-top: var(--sp-5); }
+.sammlung-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-3);
+}
+
+.sammlung-card {
+  position: relative;
+  display: flex; flex-direction: column;
+  gap: var(--sp-2);
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--t-fast) var(--ease);
+  overflow: hidden;
+  min-height: 180px;
+}
+.sammlung-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--dc, var(--brand));
+}
+.sammlung-card-head {
+  display: flex; align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+}
+.sammlung-card-flag { font-size: 1.4rem; }
+.sammlung-card-cat {
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text-muted);
+}
+.sammlung-card-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem; font-weight: 700;
+  color: var(--text);
+  line-height: 1.15;
+}
+.sammlung-card-hd {
+  font-size: .9rem;
+  color: var(--text-soft);
+}
+.sammlung-card-foot {
+  margin-top: auto;
+  display: flex; align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-2);
+  padding-top: var(--sp-2);
+  border-top: 1px solid var(--border);
+}
+.sammlung-card-check {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Verborgene (locked) Karten — Silhouette-Optik */
+.sammlung-card.is-locked {
+  cursor: help;
+  background:
+    repeating-linear-gradient(135deg,
+      var(--bg-soft) 0 8px,
+      var(--bg-elev) 8px 16px);
+  border-style: dashed;
+  opacity: .85;
+}
+.sammlung-card.is-locked:hover {
+  opacity: 1;
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-sm);
+  transform: none;
+}
+.sammlung-card.is-locked .sammlung-card-flag,
+.sammlung-card.is-locked .sammlung-card-cat {
+  filter: blur(2px);
+  opacity: .6;
+}
+.sammlung-card-mystery {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-muted);
+  opacity: .35;
+  margin: var(--sp-2) 0;
+  user-select: none;
+}
+.sammlung-card-hint {
+  font-size: .8rem;
+  color: var(--text-muted);
+  text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .sammlung-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .sammlung-card { min-height: 160px; padding: var(--sp-3); }
+  .sammlung-card-text { font-size: 1.05rem; }
+  .sammlung-card-mystery { font-size: 2.4rem; }
+}

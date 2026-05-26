@@ -1,4 +1,4 @@
-import { el, go, speak } from '../util.js';
+import { el, go, speak, toast } from '../util.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { getStreak, getLernStats, getDailySeed, toggleFavorit, isFavorit } from '../store.js';
@@ -7,6 +7,12 @@ import { renderDialektCard } from './partials.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getRecommendations, getRecentDialects, getActivitySeries } from '../util/recommendations.js';
 import { renderGoalWidget } from '../util/daily-goal.js';
+import { getActiveChallengesWithProgress } from '../store/challenges.js';
+import { getLongGoals, addLongGoal, removeLongGoal } from '../store/long-goals.js';
+import {
+  startPomodoro, stopPomodoro, isPomodoroRunning, getPomodoroState,
+  POMODORO_DURATIONS, requestPomodoroNotificationPermission
+} from '../util/pomodoro.js';
 
 export function renderHome(root) {
   root.innerHTML = '';
@@ -67,6 +73,12 @@ export function renderHome(root) {
   // Personal dashboard — "Heute lernen" + Recent + Activity
   const dash = renderDashboard();
   if (dash) view.appendChild(dash);
+
+  // Wöchentliche Challenges
+  view.appendChild(renderChallengesSection());
+
+  // Langfristige Lernziele
+  view.appendChild(renderLongGoalsSection());
 
   // Daily expression
   const dailyWrap = renderDailyExpression();

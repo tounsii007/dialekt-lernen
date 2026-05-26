@@ -29,7 +29,10 @@ const ROUTE_LABELS = {
   karte:        'Dialekt-Karte',
   statistiken:  'Lernstatistiken',
   dialekt:      'Dialekt-Details',
-  share:     'Geteiltes Quiz-Resultat'
+  decks:        'Eigene Decks',
+  share:     'Geteiltes Quiz-Resultat',
+  spiele:    'Mini-Spiele',
+  sammlung:  'Ausdrücke-Sammlung'
 };
 
 // Lazy: erst beim Bedarf laden + danach gecached.
@@ -37,7 +40,10 @@ const lazyLoaders = {
   lernen:    () => import('./views/lernen.js'),
   quiz:      () => import('./views/quiz.js'),
   vergleich: () => import('./views/vergleich.js'),
-  share:     () => import('./views/share.js')
+  decks:     () => import('./views/decks.js'),
+  share:     () => import('./views/share.js'),
+  spiele:    () => import('./views/spiele.js'),
+  sammlung:  () => import('./views/sammlung.js')
 };
 const lazyCache = {};
 
@@ -127,6 +133,21 @@ async function renderRoute(app, route, segs, params) {
       const m = await loadLazy('share');
       if (!m) return;
       return m.renderShare(app, segs[1]);
+    }
+    case 'decks': {
+      const m = await loadLazy('decks');
+      if (!m) return;
+      return m.renderDecks(app);
+    }
+    case 'spiele': {
+      const m = await loadLazy('spiele');
+      if (!m) return;
+      return m.renderSpiele(app);
+    }
+    case 'sammlung': {
+      const m = await loadLazy('sammlung');
+      if (!m) return;
+      return m.renderSammlung(app);
     }
     default:
       return renderHome(app);

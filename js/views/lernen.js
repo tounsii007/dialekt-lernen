@@ -1,13 +1,14 @@
 // Karteikarten-Modus · Hauptkomponente
 // Orchestriert Setup → Flashcard → Summary; State liegt in ./lernen/state.js.
 
-import { el, go, shuffle } from '../util.js';
+import { el, go, shuffle, toast } from '../util.js';
 import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { getSession, setSession, clearSession } from './lernen/state.js';
 import { renderSetup } from './lernen/setup.js';
 import { renderFlashcard } from './lernen/flashcard.js';
 import { renderSummary } from './lernen/summary.js';
+import { getDeck } from '../store/decks.js';
 
 export function renderLernen(root, params) {
   root.innerHTML = '';
@@ -19,6 +20,8 @@ export function renderLernen(root, params) {
     root.appendChild(view);
     if (params?.dialekt) {
       setTimeout(() => startSession({ source: params.dialekt }), 50);
+    } else if (params?.deck) {
+      setTimeout(() => startSession({ source: 'deck:' + params.deck }), 50);
     }
     return;
   }

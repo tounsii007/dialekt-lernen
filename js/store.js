@@ -1,7 +1,10 @@
 // Barrel-Datei für den persistenten Store.
 // Bestehende Imports `import { … } from './store.js'` bleiben gültig.
 
-export { getTheme, setTheme, applyTheme, cycleTheme } from './store/theme.js';
+export {
+  getTheme, setTheme, applyTheme, cycleTheme,
+  getTypography, setTypography, applyTypography, toggleDyslexicFont
+} from './store/theme.js';
 export { isFavorit, toggleFavorit, getFavoriten } from './store/favorites.js';
 export {
   setLernstand, getLernstand, getLernStats,
