@@ -7,6 +7,68 @@ und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Hinzugefügt — Wave 2-4 Features
+
+**Audio-Lernmodi (5 neue Modi, gesamt 10):**
+- Aussprache-Check via Web Speech Recognition (`pron`) mit Levenshtein-toleranter Bewertung
+- Diktat-Modus (`diktat`) — TTS spielt Satz, User tippt mit
+- Hörverständnis (`hoeren`) — nur Audio + 4 MC-Optionen
+- Voice-Quiz (`voice-quiz`) — Hochdeutsch hören → Dialekt wählen
+- Existierende: Klassisch, Reverse, MC, Type, Cloze, Audio
+
+**Content & Discovery:**
+- **IPA-Lautschrift** (`js/util/ipa.js`) mit Dialekt-Overrides (Schweizer χ, Kölner j-statt-g)
+- **Idiom-Explorer** (`#/idiome`) — 290 Redensarten in 10 semantischen Clustern
+- **Mini-Lektionen** (`#/lektionen`) — 10 kurze Artikel über Dialekt-Geschichte
+- **Etymologie-Tab** in dialektDetail — Wortherkunft aus bedeutung extrahiert (479 Einträge)
+- **Cross-Linking „Siehe auch"** in dialektDetail über `related-expressions.js`
+
+**Mini-Spiele & Sammlung:**
+- **Memory-Spiel** (`#/spiele`) — 4×4 / 6×6 mit XP-Reward
+- **Sammlung / Pokédex** (`#/sammlung`) — freigeschaltete vs. silhouettierte Karten
+- **Hangman-Logik** (`util/hangman.js`) bereit für UI-Integration
+
+**Motivation & Rhythmus:**
+- **Wochenrückblick** in Statistiken (KPI-Cards, Sparkline, Top-Dialekte, Empfehlungen)
+- **Wöchentliche Challenges** (10 vorgefertigte, deterministische Wochen-Rotation)
+- **Pomodoro-Timer** (15/25/45/90 min) mit Notifications + Pomodoro-Indikator
+- **Langzeit-Lernziele** mit Deadlines + Progress-Tracking
+- **Avatar-System** (15 freischaltbar, Bedingungen an Level + Dialekt-Besuche)
+- **Saison-Modi** (Karneval/Wiesn/Advent) mit Home-Banner
+
+**Power-User:**
+- **Custom-Decks** (`#/decks`) — eigene Lern-Listen mit Farbe + Bulk-Add
+- **Bulk-Aktionen** in Favoriten (Multi-Select, Remove, Add-to-Deck)
+- **In-App-Editor** für Korrektur-Vorschläge → JSON-Export für GitHub-PR
+- **PDF-Export** der Statistiken via `window.print()` + print-only-stylesheet
+- **Share-Card 4 Formate**: square (1080×1080), portrait (1080×1350), story (1080×1920), landscape (1200×630)
+
+**Analytics & Insights:**
+- **Vergessenskurve** (Ebbinghaus-Modell) — Retention pro Karte + Cards-at-Risk
+- **Tageszeit-Heatmap** 7×24 — „wann lernst du am besten"
+- **Adaptive Empfehlungen** auf Home — KI-Vorschläge aus Schwächen + selten besuchten Dialekten
+
+**a11y & i18n:**
+- **DE/EN-Umschalter** (`🌐`-Toggle, ~50 UI-Strings)
+- **High-Contrast-Theme** (signal-gelb auf schwarz, AAA-Focus-Ring)
+- **Dyslexie-Modus** (OpenDyslexic-Schrift, erhöhtes Letter-/Word-Spacing)
+
+**Tech:**
+- **Web-Worker für SRS** (non-blocking SM-2 mit Sync-Fallback)
+- **IndexedDB-Migration** für Notizen (write-through mit localStorage-Fallback)
+- **WebGPU Voice-Visualization** (adapter+shader+RAF, Canvas2D-Fallback)
+- **Push-Notifications** (`util/push.js` + `store/notifications.js`)
+- **Manifest-Shortcuts** (4 PWA-Shortcuts: Daily, Lernen, Quiz, Vergleich)
+- **Daily-Widget-Focus** via `?daily=1` URL-Param
+
+**Polishing:**
+- Enter-Taste prüft im Cloze + Type-Modus
+- Themen-Lektionen mit Progress-Bar pro Kategorie
+- Router schluckt InvalidStateError/AbortError aus View-Transitions
+
+**Tests-Coverage:**
+- 63 → **107 Tests** (+44): cloze, hangman, ipa, pronunciation, season, share-card, related-expressions, etymology
+
 ## [2.0.0] — 2026-05-26
 
 Großes Release mit Schwachstellen-Audit + Behebung, neuen Features und

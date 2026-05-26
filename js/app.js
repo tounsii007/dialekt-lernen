@@ -129,7 +129,21 @@ function initErrorHandlers() {
     );
   });
   window.addEventListener('unhandledrejection', (e) => {
-    console.error('[Dialekto] unhandled', e.reason);
+    const reason = e.reason;
+    const name = reason?.name || '';
+    const msg = String(reason?.message || reason || '');
+    // View-Transition-API rejected promises beim schnellen Hash-Wechsel —
+    // harmlos und nicht der User-zeigbare Fehler.
+    if (
+      name === 'InvalidStateError' ||
+      name === 'AbortError' ||
+      msg.includes('Transition was aborted') ||
+      msg.includes('outdated')
+    ) {
+      e.preventDefault?.();
+      return;
+    }
+    console.error('[Dialekto] unhandled', reason);
   });
 }
 

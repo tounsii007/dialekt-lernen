@@ -4,33 +4,59 @@ Eine moderne, erweiterbare Web-App (PWA) zum Lernen deutscher Dialekte aus
 verschiedenen Bundesländern und Regionen. Komplett auf Hochdeutsch erklärt,
 ohne Backend — alle Daten bleiben lokal im Browser.
 
-**Stand: 12 Dialekte · 3.312 Ausdrücke**
+**Stand: 12 Dialekte · 3.342 Ausdrücke · 10 Lernmodi · 107 Tests**
 
 ## Features
 
-### Lernen & Wiederholen
+### Lernen & Wiederholen (10 Modi!)
 - **12 Dialekte** vorinstalliert: Hessisch, Berlinisch, Bayerisch, Sächsisch,
   Schwäbisch, Kölsch, Plattdeutsch, Schwizerdütsch, Wienerisch, Fränkisch,
   Ruhrdeutsch, Alemannisch
-- **Karteikarten-Modus** mit 3D-Flip-Animation, Drag-Bewertung
-  (leicht / mittel / schwer), Audio- und Tipp-Modus
+- **10 Karteikarten-Modi**:
+  Klassisch · Umgekehrt · Multiple Choice · Tippen (mit Levenshtein-Toleranz) ·
+  Lückentext · Audio · Aussprache (Speech Recognition) · Diktat ·
+  Hörverständnis · Voice-Quiz
 - **SM-2 Spaced-Repetition** — fällige Karten werden priorisiert,
   Easiness-Factor passt sich an (Anki-Style)
 - **Quiz** in drei Modi: Dialekt → Hochdeutsch, Hochdeutsch → Dialekt,
   Region erraten — mit Timer-Modus
+- **Themen-Lektionen** nach Kategorie quer durch alle Dialekte mit Progress-Bar
+- **Custom-Decks** — eigene Lern-Listen mit Farbe und Bulk-Add
+- **IPA-Lautschrift** zu jedem Ausdruck (mit Dialekt-Overrides)
 
 ### Discovery
 - **Vergleich** — gleicher Ausdruck quer durch alle Dialekte
 - **Karte** — geografische Übersicht
-- **Statistiken** — Quiz-Trend, Lern-Heatmap, Tages-Aktivität
+- **Idiom-Explorer** — 290 Redensarten in semantischen Clustern
+- **Mini-Lektionen** — 10 kurze Artikel über Dialekt-Geschichte
+- **Etymologie-Tab** — Wortherkunft pro Ausdruck (479 Einträge)
+- **Sammlung / Pokédex** — freischaltbare Karten-Übersicht
 - **Suche / Command-Palette** mit Fuzzy-Match (Tippfehler-tolerant)
+- **Cross-Linking** „Siehe auch" — verwandte Ausdrücke in dialektDetail
+
+### Spiele
+- **Memory** (4×4 oder 6×6) mit XP-Reward
+- **Hangman-Logik** (in `util/hangman.js`, UI optional)
 
 ### Engagement
 - **XP & Level-System** — Erfahrungspunkte für jede Lernaktion, 10 Level-Titel
 - **Achievements** — Meilensteine wie „Erste Karte", „7 Tage Streak"
+- **Avatare** — 15 freischaltbare Insignien an Level + Dialekt-Bedingungen
 - **Tagesziele** — 5 / 10 / 20 / 50 Karten pro Tag, Heatmap der Aktivität
+- **Wöchentliche Challenges** — 3 rotierende Challenges (deterministisch pro Woche) mit XP-Reward
+- **Langzeit-Ziele** — eigene Deadlines („200 Hessisch bis Weihnachten")
+- **Pomodoro-Timer** — 15/25/45/90 min Sessions mit Pause-Notifications
 - **Streak** — Anzahl aufeinanderfolgender Lerntage
 - **Daily Expression** — täglich wechselnder „Ausdruck des Tages"
+- **Saison-Modi** — Karneval / Wiesn / Advent mit Home-Banner und kuratierten Inhalten
+
+### Analytics & Insights
+- **Statistiken-Dashboard** — XP, Level, Streak, Quiz-Trend, Lern-Heatmap, SRS-Status
+- **Wochenrückblick** — KPI-Cards, Tages-Sparkline, Top-Dialekte, Empfehlungen
+- **Vergessenskurve** (Ebbinghaus) — Retention pro Karte + Cards-at-Risk
+- **Tageszeit-Heatmap** 7×24 — „wann lernst du am besten"
+- **Adaptive Empfehlungen** auf der Startseite (Schwächen + selten besucht)
+- **PDF-Export** der Statistiken via `window.print()`
 
 ### Audio & UX
 - **Sprach-spezifische TTS** — Schwizerdütsch nutzt `de-CH`-Stimme,
@@ -45,12 +71,25 @@ ohne Backend — alle Daten bleiben lokal im Browser.
 - **Responsive Design** für Mobile, Tablet und Desktop
 
 ### Datenschutz & Offline
-- **Lokal persistent** — alles im Browser (localStorage), kein Backend
+- **Lokal persistent** — alles im Browser (localStorage + IndexedDB für Notizen), kein Backend
 - **PWA** — installierbar, voll offline-fähig (Service Worker)
-- **Export / Import** — JSON-Backup, CSV/Anki-Export
+- **Manifest-Shortcuts** — 4 PWA-Shortcuts (Daily, Lernen, Quiz, Vergleich)
+- **Export / Import** — JSON-Backup, CSV/Anki-Export, PDF-Statistik-Druck
+- **Karte als Bild teilen** — 4 Formate (Quadrat, Portrait, Story, Landscape)
 - **Quiz-Sharing** — Ergebnis als kompaktes Token in der URL teilen
 - **„Korrektur melden"** — falsche Übersetzungen direkt aus der App
   an das GitHub-Repo melden
+- **In-App-Editor** — eigene Korrektur-Vorschläge lokal speichern + JSON-Export
+- **Push-Notifications** — optionale tägliche Lern-Erinnerung
+
+### Tech-Highlights
+- **Frameworkfrei** — Vanilla JS + ES Modules
+- **Zero Production-Dependencies** (nur `http-server` für Dev)
+- **107 Unit-Tests** (node --test, zero deps)
+- **Service Worker** mit Strategy-Mix + Auto-Update-Detection
+- **Web-Worker für SRS** (non-blocking SM-2, Sync-Fallback)
+- **WebGPU Voice-Visualization** mit Canvas2D-Fallback
+- **CSP-Header** (`script-src 'self'`) + Referrer-Policy
 
 ## Tastatur-Shortcuts
 

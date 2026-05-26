@@ -197,7 +197,17 @@ export async function router() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   if (document.startViewTransition) {
-    document.startViewTransition(() => doRender(app, route, segs, params));
+    // Bei schnellem Hash-Wechsel kann die vorherige Transition abgebrochen werden
+    // → InvalidStateError. Das ist harmlos, also schlucken.
+    try {
+      const t = document.startViewTransition(() => doRender(app, route, segs, params));
+      // .finished kann mit AbortError rejecten; .ready kann mit InvalidStateError rejecten
+      t.ready?.catch(() => {});
+      t.finished?.catch(() => {});
+    } catch (e) {
+      // Falls die Transition gar nicht startet, direkt rendern
+      doRender(app, route, segs, params);
+    }
   } else {
     doRender(app, route, segs, params);
   }
