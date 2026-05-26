@@ -9,7 +9,7 @@ import { icon, emptyIllustration, sparkline } from '../util/icons.js';
 import { getQuizSparkline } from '../util/recommendations.js';
 import { confettiBurst } from '../util/motion.js';
 import { sfx } from '../util/sounds.js';
-import { downloadStateFile, importState, resetAllData, exportStateAsString } from '../store/transfer.js';
+import { downloadStateFile, importState, resetAllData, exportStateAsString, exportToCsv, downloadCsvFile } from '../store/transfer.js';
 import { toast } from '../util.js';
 import { getXp, getXpLog, xpToNextLevel, getLevelTitle } from '../store/xp.js';
 
@@ -185,6 +185,29 @@ function renderDataTools() {
           }
         }
       }, '📋 In Zwischenablage'),
+      el('button', {
+        class: 'btn btn-secondary', dataset: { magnetic: '10' },
+        onClick: () => {
+          const favs = getFavoriten();
+          if (favs.length === 0) {
+            toast('Noch keine Favoriten — markiere zuerst Ausdrücke mit ♡', 'info', 2200);
+            return;
+          }
+          sfx.click();
+          const csv = exportToCsv(false, ALLE_AUSDRUECKE, getDialekt);
+          downloadCsvFile(csv, `dialekto-favoriten-${new Date().toISOString().slice(0, 10)}.csv`);
+          toast(`${favs.length} Favoriten als CSV exportiert 📊`, 'success', 1800);
+        }
+      }, '📊 Favoriten als CSV'),
+      el('button', {
+        class: 'btn btn-ghost', dataset: { magnetic: '10' },
+        onClick: () => {
+          sfx.click();
+          const csv = exportToCsv(true, ALLE_AUSDRUECKE, getDialekt);
+          downloadCsvFile(csv, `dialekto-alle-${new Date().toISOString().slice(0, 10)}.csv`);
+          toast(`${ALLE_AUSDRUECKE.length} Ausdrücke als CSV exportiert 📚`, 'success', 1800);
+        }
+      }, '📚 Alle als CSV (Anki)'),
       el('button', {
         class: 'btn btn-ghost danger-btn',
         onClick: () => {
