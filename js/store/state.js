@@ -65,7 +65,8 @@ function withDefaults(loaded) {
                         progress: (loaded.challenges.progress && typeof loaded.challenges.progress === 'object') ? loaded.challenges.progress : {},
                         completed: Array.isArray(loaded.challenges.completed) ? loaded.challenges.completed : [] }
                     : { week: null, progress: {}, completed: [] },
-    longGoals:    Array.isArray(loaded.longGoals) ? loaded.longGoals : []
+    longGoals:    Array.isArray(loaded.longGoals) ? loaded.longGoals : [],
+    notesIdbMigrated: !!loaded.notesIdbMigrated
   };
 }
 

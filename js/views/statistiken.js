@@ -2,7 +2,7 @@
 import { el, go } from '../util.js';
 import { getLernStats, getQuizGenauigkeit, getStreak, getActiveDays, getQuizHistory, getVisitedDialects } from '../store.js';
 import { getLernstand } from '../store/learning.js';
-import { DIALEKTE, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
+import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getXp, xpToNextLevel, getLevelTitle, getXpLog } from '../store/xp.js';
 import { getSrsStats } from '../store/srs.js';
@@ -10,16 +10,24 @@ import { getProgressHistory, getGoalTarget, getTodayProgress } from '../store/go
 import { getStreakHeatmap } from '../store/streak.js';
 import { getWeekReview } from '../util/week-review.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
+import { getOverallRetention, getCardsAtRisk } from '../util/forgetting-curve.js';
+import { getTimeHeatmap, describeBestSlot, dayName, hourLabel } from '../util/time-heatmap.js';
+import { printStatistiken, canPrint } from '../util/pdf-export.js';
 
 export function renderStatistiken(root) {
   root.innerHTML = '';
   const view = el('div', { class: 'view stats-view' });
 
-  view.appendChild(el('div', { class: 'section-head' },
+  view.appendChild(el('div', { class: 'section-head stats-toolbar' },
     el('div', {},
       el('h2', {}, '📊 Lernstatistiken'),
       el('div', { class: 'lede' }, 'Detaillierter Überblick über deinen gesamten Lernfortschritt.')
-    )
+    ),
+    canPrint() ? el('button', {
+      class: 'btn btn-secondary stats-print-btn',
+      title: 'Statistiken als PDF exportieren oder ausdrucken',
+      onClick: () => printStatistiken(),
+    }, '🖨️ PDF exportieren / drucken') : null
   ));
 
   // ── Overview Cards ──────────────────────────────────────────
@@ -132,10 +140,136 @@ export function renderStatistiken(root) {
     )
   ));
 
+  // ── Vergessenskurve ──────────────────────────────────────────
+  view.appendChild(renderForgettingCurveSection());
+
+  // ── Tageszeit-Heatmap ────────────────────────────────────────
+  view.appendChild(renderTimeHeatmapSection());
+
   // ── Wochenrückblick ──────────────────────────────────────────
   view.appendChild(renderWeekReview());
 
   root.appendChild(view);
+}
+
+// ── Sektion A: Vergessenskurve ─────────────────────────────────
+function renderForgettingCurveSection() {
+  const section = el('section', { class: 'section stats-forgetting', dataset: { reveal: '' } });
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '🧠 Vergessenskurve')));
+
+  const retention = getOverallRetention();
+  const atRisk = getCardsAtRisk(0.5);
+  const topRisk = atRisk.slice(0, 5);
+
+  if (retention == null) {
+    section.appendChild(el('div', { class: 'lede' },
+      'Sobald du ein paar Karten mit SRS bewertet hast, erscheint hier deine persönliche Vergessenskurve.'
+    ));
+    return section;
+  }
+
+  const pct = Math.round(retention * 100);
+  const color =
+    pct >= 80 ? 'var(--accent)' :
+    pct >= 60 ? 'var(--brand)' :
+    pct >= 40 ? 'var(--warm)' : 'var(--pink)';
+
+  const overview = el('div', { class: 'forgetting-overview' },
+    statBig('🧠', pct + '%', 'Gesamt-Retention', color),
+    statBig('⏰', String(atRisk.length), 'Karten brauchen bald Wiederholung', 'var(--warm)')
+  );
+  section.appendChild(overview);
+
+  if (topRisk.length === 0) {
+    section.appendChild(el('div', { class: 'lede', style: { marginTop: '12px' } },
+      'Super — aktuell ist keine Karte in akuter Vergessensgefahr. Weiter so!'
+    ));
+    return section;
+  }
+
+  section.appendChild(el('h4', { style: { marginTop: '16px' } }, 'Top 5: dringend wiederholen'));
+  const list = el('ul', { class: 'forgetting-list' });
+  for (const r of topRisk) {
+    const dialekt = getDialekt(r.dialektId);
+    const ausdr = dialekt?.ausdruecke?.find(a => a.id === r.id);
+    if (!ausdr || !dialekt) continue;
+    const retPct = Math.round(r.retention * 100);
+    const key = `${r.dialektId}.${r.id}`;
+    list.appendChild(el('li', {},
+      el('button', {
+        class: 'forgetting-row',
+        style: { '--dc': dialekt.farbe },
+        onClick: () => go('#/lernen?card=' + encodeURIComponent(key)),
+        title: `${dialekt.flag} ${dialekt.name} — Retention ${retPct}%`
+      },
+        el('span', { class: 'forgetting-flag' }, dialekt.flag),
+        el('span', { class: 'forgetting-text' },
+          el('span', { class: 'forgetting-expr' }, ausdr.ausdruck),
+          el('span', { class: 'forgetting-hd' }, ausdr.hochdeutsch)
+        ),
+        el('span', { class: 'forgetting-bar' },
+          el('span', { class: 'forgetting-bar-fill', style: { width: retPct + '%', background: retPct < 30 ? 'var(--pink)' : 'var(--warm)' } })
+        ),
+        el('span', { class: 'forgetting-pct' }, retPct + '%')
+      )
+    ));
+  }
+  section.appendChild(list);
+  return section;
+}
+
+// ── Sektion B: Tageszeit-Heatmap ───────────────────────────────
+function renderTimeHeatmapSection() {
+  const section = el('section', { class: 'section stats-timeheat', dataset: { reveal: '' } });
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '📅 Wann lernst du am besten?')));
+
+  const { matrix, maxCount, bestHour, bestDay } = getTimeHeatmap(90);
+
+  if (maxCount === 0) {
+    section.appendChild(el('div', { class: 'lede' },
+      'Noch zu wenig Daten — sobald du regelmäßig lernst, zeigen wir hier deinen Lern-Rhythmus.'
+    ));
+    return section;
+  }
+
+  const slot = describeBestSlot(bestHour, bestDay);
+  if (slot) {
+    section.appendChild(el('div', { class: 'lede', style: { marginBottom: '14px' } },
+      'Dein Top-Slot: ',
+      el('strong', {}, slot),
+      ` (${maxCount} Aktivität${maxCount === 1 ? '' : 'en'})`
+    ));
+  }
+
+  // 7×24-Grid: Spalten = Stunden, Zeilen = Wochentage (Mo zuerst, dann ... So)
+  const dayOrder = [1, 2, 3, 4, 5, 6, 0]; // Mo..So
+  const grid = el('div', { class: 'timeheat-grid', role: 'img', ariaLabel: 'Tageszeit-Heatmap der Lernaktivität' });
+
+  // Top-Label-Zeile (Stunden)
+  grid.appendChild(el('div', { class: 'timeheat-corner' }));
+  for (let h = 0; h < 24; h++) {
+    grid.appendChild(el('div', { class: 'timeheat-h-label' }, (h % 6 === 0) ? String(h).padStart(2, '0') : ''));
+  }
+
+  for (const d of dayOrder) {
+    grid.appendChild(el('div', { class: 'timeheat-d-label' }, dayName(d)));
+    for (let h = 0; h < 24; h++) {
+      const count = matrix[d][h];
+      const intensity = count > 0 ? Math.max(0.15, count / maxCount) : 0;
+      const isPeak = (d === bestDay && h === bestHour);
+      grid.appendChild(el('div', {
+        class: 'timeheat-cell' + (isPeak ? ' is-peak' : ''),
+        style: {
+          opacity: intensity > 0 ? String(0.25 + intensity * 0.75) : '0.08',
+          background: intensity > 0 ? 'var(--brand)' : 'var(--bg-soft)',
+        },
+        title: `${dayName(d)} ${hourLabel(h)} — ${count} Aktivität${count === 1 ? '' : 'en'}`
+      }));
+    }
+  }
+
+  section.appendChild(grid);
+  return section;
 }
 
 function renderWeekReview() {

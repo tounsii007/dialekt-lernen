@@ -19,7 +19,10 @@ const MODES = [
   { id: 'type',    icon: 'keyboard', title: 'Tippen',          desc: 'Antwort eintippen (mit Toleranz)' },
   { id: 'cloze',   icon: 'target',   title: 'Lückentext',      desc: 'Fehlendes Wort im Satz ergänzen' },
   { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',       desc: 'Hör zu, dann antworte' },
-  { id: 'pron',    icon: 'speaker',  title: 'Aussprache',      desc: 'Sprechen üben mit Mikrofon' }
+  { id: 'pron',    icon: 'speaker',  title: 'Aussprache',      desc: 'Sprechen üben mit Mikrofon' },
+  { id: 'diktat',    icon: 'speaker', title: 'Diktat',         desc: 'Hörsatz mit-tippen' },
+  { id: 'hoeren',    icon: 'speaker', title: 'Hörverständnis', desc: 'Nur hören, dann antworten' },
+  { id: 'voice-quiz', icon: 'speaker', title: 'Voice-Quiz',    desc: 'Hochdeutsch hören → Dialekt wählen' }
 ];
 
 export function renderSetup(onStart) {

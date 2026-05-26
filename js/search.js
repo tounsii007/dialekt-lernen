@@ -61,6 +61,8 @@ function commands() {
       run: () => go('#/vergleich') },
     { id: 'cmd:favoriten', icon: 'heart',    label: 'Favoriten öffnen',          meta: 'Statistiken & Markiertes',  kbd: 'F',
       run: () => go('#/favoriten') },
+    { id: 'cmd:decks',     icon: 'book',     label: 'Eigene Decks öffnen',       meta: 'Custom-Lern-Sammlungen',
+      run: () => go('#/decks') },
     { id: 'cmd:theme',     icon: 'sparkles', label: 'Hell / Dunkel umschalten',  meta: 'Theme wechseln',           kbd: 'T',
       run: () => document.getElementById('themeToggle')?.click() },
     { id: 'cmd:random',    icon: 'zap',      label: 'Zufälligen Dialekt öffnen', meta: 'Glücksrad',

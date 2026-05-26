@@ -142,6 +142,62 @@ export function getSrsStats(allCards) {
   return { due, learned, learning, fresh };
 }
 
+// Pure SM-2-Berechnung ohne State-Side-Effects.
+// Erwartet vorigen SRS-Record (oder null/undefined) und rating (1..3),
+// liefert einen neuen Record zurück. Kein localStorage, kein XP, kein
+// Streak — nur Mathematik. Wird auch vom Worker (`srs-worker.js`)
+// und vom Host-Wrapper (`srs-worker-host.js`) genutzt.
+//
+// Diese Funktion ist bewusst portabel: sie kann von einer Worker-Umgebung
+// importiert werden (ohne `state.js` zu laden), solange der Caller den
+// vorigen Record explizit übergibt.
+export function getSrsAlgorithm() {
+  return {
+    INIT_EF,
+    MIN_EF,
+    DAY_MS,
+    RATING_HARD,
+    RATING_MED,
+    RATING_EASY,
+    ratingToQuality,
+    ratingToStand,
+    /**
+     * @param {object|null} prev — voriger SRS-Record (ef/reps/interval/...) oder null.
+     * @param {1|2|3} rating
+     * @returns {{ef:number,reps:number,interval:number,due:number,lapses:number,last:number,stand:number}}
+     */
+    review(prev, rating) {
+      const now = Date.now();
+      const base = prev || {
+        ef: INIT_EF, reps: 0, interval: 0, due: now, lapses: 0, last: 0, stand: 0
+      };
+      const q = ratingToQuality(rating);
+      let { ef, reps, interval, lapses } = base;
+      if (q < 3) {
+        reps = 0;
+        interval = 1;
+        lapses += 1;
+      } else {
+        reps += 1;
+        if (reps === 1) interval = 1;
+        else if (reps === 2) interval = 6;
+        else interval = Math.max(1, Math.round(interval * ef));
+      }
+      ef = ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+      if (ef < MIN_EF) ef = MIN_EF;
+      return {
+        ef: Number(ef.toFixed(3)),
+        reps,
+        interval,
+        due: now + interval * DAY_MS,
+        lapses,
+        last: now,
+        stand: ratingToStand(rating)
+      };
+    }
+  };
+}
+
 // Migration: alle Legacy-Records bekommen EF/reps/interval/due zugeordnet.
 // Idempotent — kann auf jedem Start laufen.
 export function migrateLegacyEntries() {

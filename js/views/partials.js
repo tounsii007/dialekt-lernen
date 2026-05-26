@@ -3,6 +3,7 @@ import { KATEGORIEN } from '../../data/kategorien.js';
 import { isFavorit, toggleFavorit, getLernstand, setLernstand, getNote, setNote } from '../store.js';
 import { reportCorrection } from '../util/feedback.js';
 import { shareCard } from '../util/share-card.js';
+import { openSuggestEditModal } from './suggestEditModal.js';
 
 export function renderDialektCard(d) {
   return el('button', {
@@ -100,6 +101,16 @@ export function renderExpressionCard(a, dialekt) {
     }
   }, el('span', { html: '🚩' }));
 
+  const editBtn = el('button', {
+    class: 'expr-action expr-action-edit',
+    title: 'Korrektur vorschlagen (lokal speichern)',
+    'aria-label': `Korrektur für „${a.ausdruck}" vorschlagen`,
+    onClick: (e) => {
+      e.stopPropagation();
+      openSuggestEditModal(dialekt, a);
+    }
+  }, el('span', { html: '✎' }));
+
   const shareBtn = el('button', {
     class: 'expr-action expr-action-share',
     title: 'Karte als Bild teilen',
@@ -145,7 +156,7 @@ export function renderExpressionCard(a, dialekt) {
     noteWrap,
     el('div', { class: 'expr-foot' },
       el('span', { class: 'region-tag' }, dialekt.flag + ' ' + dialekt.name),
-      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn, shareBtn, reportBtn)
+      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn, shareBtn, editBtn, reportBtn)
     )
   );
 }

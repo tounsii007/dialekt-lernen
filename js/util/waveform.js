@@ -14,8 +14,38 @@ function rand(seed) {
   };
 }
 
-export function createWaveform(canvas, { bars = 28, color, glow = true } = {}) {
+export function createWaveform(canvas, { bars = 28, color, glow = true, useWebGpu = false } = {}) {
   if (!canvas || prefersReduced()) return { stop() {} };
+
+  // Optional: WebGPU-Variante probieren. Wenn nicht verfügbar oder Fehler,
+  // fällt der Code transparent auf Canvas2D zurück. Wir geben sofort ein
+  // Handle zurück, das einen no-op-stop() beinhaltet, bis WebGPU initialisiert
+  // ist — der Caller bekommt den echten stop() später via Property-Update.
+  if (useWebGpu) {
+    const handle = { stop() {} };
+    // Lazy import, damit Browser ohne WebGPU die Datei nicht ungenutzt laden.
+    import('./voice-viz-webgpu.js').then(({ createVoiceVizWebGpu }) => {
+      return createVoiceVizWebGpu(canvas, { color });
+    }).then((gpuHandle) => {
+      if (gpuHandle && typeof gpuHandle.stop === 'function') {
+        handle.stop = gpuHandle.stop.bind(gpuHandle);
+      } else {
+        // Fallback auf Canvas2D — wir starten den klassischen Renderer
+        // nachträglich und übernehmen dessen stop().
+        const fallback = createWaveformCanvas2d(canvas, { bars, color, glow });
+        handle.stop = fallback.stop.bind(fallback);
+      }
+    }).catch(() => {
+      const fallback = createWaveformCanvas2d(canvas, { bars, color, glow });
+      handle.stop = fallback.stop.bind(fallback);
+    });
+    return handle;
+  }
+
+  return createWaveformCanvas2d(canvas, { bars, color, glow });
+}
+
+function createWaveformCanvas2d(canvas, { bars = 28, color, glow = true } = {}) {
   const ctx = canvas.getContext('2d');
   const dpr = window.devicePixelRatio || 1;
 

@@ -18,6 +18,7 @@ import { getXp } from './store/xp.js';
 import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
 import { initGoalEvents } from './util/daily-goal.js';
+import { initChallenges } from './store/challenges.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
@@ -197,6 +198,11 @@ function init() {
   initNetwork(toast);
   initXpHud();
   initGoalEvents(toast);
+  initChallenges();
+  document.addEventListener('dialekto:challengeComplete', (e) => {
+    const { label, xp } = e.detail || {};
+    toast(`🏆 Challenge abgeschlossen: ${label} (+${xp} XP)`, 'success', 3200);
+  });
   mountXpBar();
   mountFooterMeta();
 

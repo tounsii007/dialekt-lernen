@@ -35,22 +35,23 @@ export function getAdaptiveRecommendations(limit = 10) {
     });
   }
 
-  // 2) Weak Kategorien (basierend auf Quiz-Historie)
-  const quizHistory = (state.quiz && state.quiz.history) || [];
+  // 2) Weak Kategorien — Heuristik über state.gelernt (Lapses & Stand).
+  //    Karten mit vielen Lapses oder Stand=HARD signalisieren schwache Kategorien.
   const katStats = {};
-  for (const h of quizHistory) {
-    if (!h?.itemRef) continue;
-    const [dialektId, id] = h.itemRef.split(':');
-    const ausdr = ALLE_AUSDRUECKE.find(a => a.dialektId === dialektId && a.id === id);
-    if (!ausdr) continue;
-    const k = ausdr.kategorie;
-    katStats[k] = katStats[k] || { correct: 0, total: 0 };
-    katStats[k].total++;
-    if (h.correct) katStats[k].correct++;
+  for (const a of ALLE_AUSDRUECKE) {
+    const key = `${a.dialektId}.${a.id}`;
+    const entry = (state.gelernt || {})[key];
+    if (!entry) continue;
+    const k = a.kategorie;
+    katStats[k] = katStats[k] || { reviewed: 0, struggled: 0 };
+    katStats[k].reviewed++;
+    const lapses = entry.lapses || 0;
+    const stand = entry.stand || 0;
+    if (lapses >= 2 || stand === 1) katStats[k].struggled++;
   }
   const weakKats = Object.entries(katStats)
-    .filter(([, s]) => s.total >= 3 && s.correct / s.total < 0.6)
-    .sort((a, b) => (a[1].correct / a[1].total) - (b[1].correct / b[1].total))
+    .filter(([, s]) => s.reviewed >= 3 && s.struggled / s.reviewed >= 0.4)
+    .sort((a, b) => (b[1].struggled / b[1].reviewed) - (a[1].struggled / a[1].reviewed))
     .map(([k]) => k);
 
   for (const k of weakKats.slice(0, 2)) {
@@ -62,17 +63,22 @@ export function getAdaptiveRecommendations(limit = 10) {
       seen.add(`${c.dialektId}:${c.id}`);
       recs.push({
         entry: c,
-        reason: `Schwache Kategorie „${c.kategorie}" — Quiz-Trefferquote unter 60%`,
+        reason: `Schwache Kategorie „${c.kategorie}" — viele Patzer/Lapses`,
         priority: 2,
       });
     }
   }
 
-  // 3) Selten besuchte Dialekte
-  const visited = (state.visitedDialects) || {};
+  // 3) Selten besuchte Dialekte. state.visited ist ein Array von Dialekt-IDs
+  //    (Reihenfolge = Besuchsreihenfolge). Wir zählen Vorkommen.
+  const visitedArr = Array.isArray(state.visited) ? state.visited : [];
+  const visitedCount = visitedArr.reduce((acc, id) => {
+    acc[id] = (acc[id] || 0) + 1;
+    return acc;
+  }, {});
   const allDialektIds = [...new Set(ALLE_AUSDRUECKE.map(a => a.dialektId))];
   const rareDialekte = allDialektIds
-    .filter(d => (visited[d] || 0) < 2)
+    .filter(d => (visitedCount[d] || 0) < 2)
     .sort(() => Math.random() - 0.5)
     .slice(0, 2);
 
@@ -92,8 +98,10 @@ export function getAdaptiveRecommendations(limit = 10) {
   }
 
   // 4) Bis Limit auffüllen mit zufälligen Karten
-  while (recs.length < limit) {
+  let guard = 0;
+  while (recs.length < limit && guard++ < limit * 8) {
     const c = ALLE_AUSDRUECKE[Math.floor(Math.random() * ALLE_AUSDRUECKE.length)];
+    if (!c) break;
     const key = `${c.dialektId}:${c.id}`;
     if (seen.has(key)) continue;
     seen.add(key);

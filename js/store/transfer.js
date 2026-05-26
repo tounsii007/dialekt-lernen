@@ -266,6 +266,8 @@ export function resetAllData({ keepTheme = true } = {}) {
   state.notes = {};
   state.xp = { total: 0, log: [] };
   state.goals = { target: 10, progress: {}, reminderShown: {} };
+  if (Array.isArray(state.decks)) state.decks = [];
+  if (Array.isArray(state.suggestions)) state.suggestions = [];
   if (keepTheme) state.theme = theme;
   persist();
 }

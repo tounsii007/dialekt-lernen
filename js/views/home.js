@@ -13,14 +13,26 @@ import {
   startPomodoro, stopPomodoro, isPomodoroRunning, getPomodoroState,
   POMODORO_DURATIONS, requestPomodoroNotificationPermission
 } from '../util/pomodoro.js';
+import {
+  getCurrentSeason, getSeasonInfo, getSeasonalGreeting,
+  getSeasonalExpressions, getSeasonStartHref
+} from '../util/season.js';
+import { getAdaptiveRecommendations } from '../util/adaptive-plan.js';
 
-export function renderHome(root) {
+export function renderHome(root, params = {}) {
   root.innerHTML = '';
   const view = el('div', { class: 'view' });
 
   const stats = getLernStats();
   const streak = getStreak();
   const totalExpr = ALLE_AUSDRUECKE.length;
+  const dailyFocus = !!(params && (params.daily === '1' || params.daily === 1 || params.daily === true));
+
+  // Seasonal banner — wenn aktuell eine Saison läuft, ganz oben einblenden.
+  const seasonId = getCurrentSeason();
+  if (seasonId) {
+    view.appendChild(renderSeasonBanner(seasonId));
+  }
 
   // Hero
   view.appendChild(el('section', { class: 'hero' },
@@ -74,6 +86,10 @@ export function renderHome(root) {
   const dash = renderDashboard();
   if (dash) view.appendChild(dash);
 
+  // Adaptiver Lernplan — „Heute empfohlen"
+  const recoSection = renderAdaptiveRecommendationsSection();
+  if (recoSection) view.appendChild(recoSection);
+
   // Wöchentliche Challenges
   view.appendChild(renderChallengesSection());
 
@@ -81,9 +97,21 @@ export function renderHome(root) {
   view.appendChild(renderLongGoalsSection());
 
   // Daily expression
-  const dailyWrap = renderDailyExpression();
+  const dailyWrap = renderDailyExpression(dailyFocus);
   dailyWrap.setAttribute('data-reveal', '');
   view.appendChild(dailyWrap);
+  if (dailyFocus) {
+    // Daily-Karte ist über Manifest-Shortcut (./#/?daily=1) aufgerufen worden:
+    // sanft scrollen + temporäre Highlight-Klasse.
+    setTimeout(() => {
+      const el = dailyWrap.querySelector('.daily');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.classList.add('daily-focus-highlight');
+        setTimeout(() => el.classList.remove('daily-focus-highlight'), 3200);
+      }
+    }, 120);
+  }
 
   // Dialekt grid
   const sec = el('section', { class: 'section', dataset: { reveal: '' } },
@@ -236,17 +264,24 @@ function renderDashboard() {
   return section;
 }
 
-function renderDailyExpression() {
+function renderDailyExpression(focus = false) {
   const seed = getDailySeed();
   const expr = pickSeeded(ALLE_AUSDRUECKE, seed);
   if (!expr) return el('div');
+  // Wenn via Manifest-Shortcut (daily=1) aufgerufen: größere Karten-Variante
+  // mit Beispiel-Satz und prominenteren Aktionen.
+  const dailyClasses = 'daily' + (focus ? ' daily-large' : '');
   return el('section', { class: 'section' },
-    el('div', { class: 'daily' },
+    el('div', { class: dailyClasses },
       el('div', { class: 'daily-content' },
-        el('span', { class: 'daily-eyebrow' }, '☀️ Ausdruck des Tages'),
+        el('span', { class: 'daily-eyebrow' }, focus ? '🌟 Heutiger Ausdruck' : '☀️ Ausdruck des Tages'),
         el('div', { class: 'daily-expr' }, expr.ausdruck),
         el('div', { class: 'daily-hd' }, '↦ ' + expr.hochdeutsch),
         el('div', { class: 'daily-meaning' }, expr.bedeutung),
+        focus && expr.beispiel ? el('div', { class: 'daily-example' },
+          el('div', { class: 'daily-example-dialect' }, '„' + expr.beispiel + '"'),
+          expr.beispiel_hd ? el('div', { class: 'daily-example-hd' }, '↦ ' + expr.beispiel_hd) : null
+        ) : null,
         el('div', { class: 'daily-foot' },
           el('span', { class: 'daily-source' }, `${expr.dialektFlag} ${expr.dialektName}`),
           el('div', { class: 'daily-actions' },
@@ -259,10 +294,61 @@ function renderDailyExpression() {
               onClick: () => go(`#/dialekt/${expr.dialektId}`)
             }, el('span', { html: '→' }))
           )
-        )
+        ),
+        focus ? el('div', { class: 'daily-cta-row', style: { marginTop: '14px', display: 'flex', gap: '10px', flexWrap: 'wrap' } },
+          el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' },
+            onClick: () => go('#/lernen')
+          }, 'Karteikarten starten →'),
+          el('button', { class: 'btn btn-secondary', dataset: { magnetic: '10' },
+            onClick: () => go(`#/dialekt/${expr.dialektId}`)
+          }, `${expr.dialektFlag} ${expr.dialektName} öffnen`)
+        ) : null
       )
     )
   );
+}
+
+// ----------------------------------------------------------------------------
+// Saison-Banner (Karneval / Wiesn / Advent)
+// ----------------------------------------------------------------------------
+function renderSeasonBanner(seasonId) {
+  const info = getSeasonInfo(seasonId);
+  if (!info) return el('div');
+  const greeting = getSeasonalGreeting();
+  const expressions = getSeasonalExpressions(undefined, 5);
+  const href = getSeasonStartHref();
+
+  const banner = el('section', { class: `season-banner season-${info.id}`, dataset: { reveal: '' },
+    style: { '--season-accent': info.accent } },
+    el('div', { class: 'season-banner-head' },
+      el('span', { class: 'season-emoji', 'aria-hidden': 'true' }, info.emoji),
+      el('div', { class: 'season-meta' },
+        el('div', { class: 'season-title' }, info.title),
+        el('div', { class: 'season-greeting' }, greeting || info.label)
+      ),
+      el('button', {
+        class: 'btn btn-primary season-cta',
+        dataset: { magnetic: '12' },
+        onClick: () => go(href)
+      }, 'Saison-Lektion starten →')
+    ),
+    expressions.length ? el('div', { class: 'season-list' },
+      el('div', { class: 'season-list-title' }, `Top ${expressions.length} Begriffe:`),
+      el('ul', { class: 'season-chips' },
+        ...expressions.map(a => el('li', {},
+          el('button', {
+            class: 'season-chip',
+            onClick: () => go(`#/dialekt/${a.dialektId}`),
+            title: `${a.hochdeutsch} — ${a.dialektName}`
+          },
+            el('span', { class: 'season-chip-expr' }, a.ausdruck),
+            el('span', { class: 'season-chip-meta' }, `${a.dialektFlag} ${a.dialektName}`)
+          )
+        ))
+      )
+    ) : null
+  );
+  return banner;
 }
 
 function buildWordCarousel() {
@@ -315,4 +401,325 @@ function buildWordCarousel() {
   wrap.addEventListener('mouseleave', () => { interval = setInterval(advance, 2800); });
 
   return wrap;
+}
+
+// ----------------------------------------------------------------------------
+// Wöchentliche Challenges
+// ----------------------------------------------------------------------------
+function renderChallengesSection() {
+  const challenges = getActiveChallengesWithProgress();
+
+  const section = el('section', { class: 'section', dataset: { reveal: '' } },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, 'Diese Woche'),
+        el('div', { class: 'lede' }, 'Drei Mini-Challenges — neu jeden Montag.')
+      ),
+      el('button', {
+        class: 'btn btn-ghost btn-pomodoro-toggle',
+        title: 'Pomodoro-Lern-Session starten',
+        onClick: openPomodoroPicker
+      }, isPomodoroRunning() ? '⏸ Pomodoro stoppen' : '⏱ Pomodoro starten')
+    )
+  );
+
+  const grid = el('div', { class: 'challenge-grid' });
+  for (const c of challenges) {
+    grid.appendChild(renderChallengeCard(c));
+  }
+  section.appendChild(grid);
+  return section;
+}
+
+function renderChallengeCard(c) {
+  const pct = c.target > 0 ? Math.min(1, c.current / c.target) * 100 : 0;
+  const card = el('article', { class: 'challenge-card' + (c.done ? ' is-done' : ''), dataset: { spotlight: '' } },
+    el('div', { class: 'challenge-card-head' },
+      el('div', { class: 'challenge-card-title' }, c.label),
+      el('span', { class: 'challenge-card-xp' }, `+${c.xp} XP`)
+    ),
+    c.hint ? el('div', { class: 'challenge-card-hint' }, c.hint) : null,
+    el('div', { class: 'challenge-progress' },
+      el('div', {
+        class: 'challenge-progress-bar',
+        style: { width: pct.toFixed(0) + '%' }
+      })
+    ),
+    el('div', { class: 'challenge-progress-meta' },
+      el('span', {}, `${c.current} / ${c.target}`),
+      c.done ? el('span', { class: 'challenge-done' }, '✓ erledigt') : null
+    )
+  );
+  return card;
+}
+
+// ----------------------------------------------------------------------------
+// Lernziele (Long-term Goals)
+// ----------------------------------------------------------------------------
+function renderLongGoalsSection() {
+  const section = el('section', { class: 'section', dataset: { reveal: '' } });
+  const head = el('div', { class: 'section-head' },
+    el('div', {},
+      el('h2', {}, 'Deine Lernziele'),
+      el('div', { class: 'lede' }, 'Langfristige Ziele — z.B. „bis Dezember 100 bayerische Ausdrücke".')
+    ),
+    el('button', {
+      class: 'btn btn-secondary',
+      onClick: () => openAddLongGoalDialog(section)
+    }, '+ Ziel hinzufügen')
+  );
+  section.appendChild(head);
+
+  const body = el('div', { class: 'long-goal-list' });
+  refreshLongGoalsBody(body);
+  section.appendChild(body);
+  return section;
+}
+
+function refreshLongGoalsBody(body) {
+  body.innerHTML = '';
+  const goals = getLongGoals();
+  if (!goals.length) {
+    body.appendChild(el('div', { class: 'long-goal-empty' },
+      'Noch keine Lernziele gesetzt. Klick auf „+ Ziel hinzufügen", um anzufangen.'));
+    return;
+  }
+  for (const g of goals) {
+    body.appendChild(renderLongGoalRow(g, body));
+  }
+}
+
+function renderLongGoalRow(g, body) {
+  const pct = (g.progress * 100).toFixed(0);
+  const deadlineLabel = g.deadline
+    ? (g.daysLeft != null && g.daysLeft >= 0
+        ? `${g.deadline} (noch ${g.daysLeft} Tage)`
+        : `${g.deadline} (fällig)`)
+    : 'ohne Deadline';
+
+  return el('article', { class: 'long-goal-row' + (g.done ? ' is-done' : '') },
+    el('div', { class: 'long-goal-head' },
+      el('div', { class: 'long-goal-label' }, g.label),
+      el('button', {
+        class: 'long-goal-remove',
+        title: 'Ziel entfernen',
+        onClick: () => {
+          if (!confirm(`Ziel „${g.label}" wirklich löschen?`)) return;
+          removeLongGoal(g.id);
+          refreshLongGoalsBody(body);
+        }
+      }, '✕')
+    ),
+    el('div', { class: 'long-goal-meta' },
+      el('span', {}, `${g.current} / ${g.target}`),
+      el('span', { class: 'long-goal-deadline' }, deadlineLabel)
+    ),
+    el('div', { class: 'long-goal-progress' },
+      el('div', {
+        class: 'long-goal-progress-bar',
+        style: { width: pct + '%' }
+      })
+    ),
+    g.done ? el('div', { class: 'long-goal-done' }, '🎉 Ziel erreicht!') : null
+  );
+}
+
+function openAddLongGoalDialog(section) {
+  // Inline-Dialog direkt im Section — kein extra Modal-Framework.
+  const list = section.querySelector('.long-goal-list');
+  if (!list) return;
+  // Falls schon ein offenes Formular: schließen.
+  const existing = section.querySelector('.long-goal-form');
+  if (existing) { existing.remove(); return; }
+
+  const labelInput = el('input', {
+    type: 'text', class: 'long-goal-input',
+    placeholder: 'z.B. „Bis Dezember 100 bayerische Ausdrücke"',
+    maxlength: '120'
+  });
+  const targetInput = el('input', {
+    type: 'number', class: 'long-goal-input long-goal-input-num',
+    min: '1', max: '5000', value: '50',
+    placeholder: 'Anzahl'
+  });
+  const deadlineInput = el('input', {
+    type: 'date', class: 'long-goal-input'
+  });
+  const dialektSelect = el('select', { class: 'long-goal-input' },
+    el('option', { value: '' }, 'Alle Dialekte'),
+    ...DIALEKTE.map(d => el('option', { value: d.id }, `${d.flag} ${d.name}`))
+  );
+  const kategorieSelect = el('select', { class: 'long-goal-input' },
+    el('option', { value: '' }, 'Alle Kategorien'),
+    ...Object.values(KATEGORIEN).map(k =>
+      el('option', { value: k.id }, `${k.icon} ${k.label}`))
+  );
+
+  const form = el('div', { class: 'long-goal-form' },
+    el('div', { class: 'long-goal-form-row' },
+      el('label', {}, 'Bezeichnung'), labelInput
+    ),
+    el('div', { class: 'long-goal-form-row long-goal-form-row-split' },
+      el('label', {}, 'Zielzahl'), targetInput,
+      el('label', {}, 'Deadline'), deadlineInput
+    ),
+    el('div', { class: 'long-goal-form-row long-goal-form-row-split' },
+      el('label', {}, 'Dialekt'), dialektSelect,
+      el('label', {}, 'Kategorie'), kategorieSelect
+    ),
+    el('div', { class: 'long-goal-form-actions' },
+      el('button', { class: 'btn btn-primary', onClick: () => {
+        const label = labelInput.value.trim();
+        const target = Number(targetInput.value) || 0;
+        if (!label || target < 1) {
+          toast('Bitte Bezeichnung und gültige Zielzahl angeben.', 'info', 2400);
+          return;
+        }
+        addLongGoal({
+          label, target,
+          deadline: deadlineInput.value || null,
+          scope: {
+            dialektId: dialektSelect.value || null,
+            kategorie: kategorieSelect.value || null
+          }
+        });
+        form.remove();
+        refreshLongGoalsBody(list);
+      } }, 'Hinzufügen'),
+      el('button', { class: 'btn btn-ghost', onClick: () => form.remove() }, 'Abbrechen')
+    )
+  );
+
+  section.insertBefore(form, list);
+}
+
+// ----------------------------------------------------------------------------
+// Pomodoro: minimaler Picker + Indikator-Badge
+// ----------------------------------------------------------------------------
+let pomodoroIndicator = null;
+
+function ensurePomodoroIndicator() {
+  if (pomodoroIndicator && document.body.contains(pomodoroIndicator)) return pomodoroIndicator;
+  pomodoroIndicator = el('div', { class: 'pomodoro-indicator', role: 'status', ariaLive: 'polite' },
+    el('span', { class: 'pomodoro-indicator-phase' }, 'Fokus'),
+    el('span', { class: 'pomodoro-indicator-time' }, '00:00'),
+    el('button', {
+      class: 'pomodoro-indicator-stop', title: 'Pomodoro abbrechen',
+      onClick: () => {
+        stopPomodoro();
+        if (pomodoroIndicator?.parentNode) pomodoroIndicator.remove();
+        pomodoroIndicator = null;
+      }
+    }, '✕')
+  );
+  document.body.appendChild(pomodoroIndicator);
+  return pomodoroIndicator;
+}
+
+function updatePomodoroIndicator(snap) {
+  const indicator = ensurePomodoroIndicator();
+  const mm = String(Math.floor(snap.remainingMs / 60000)).padStart(2, '0');
+  const ss = String(Math.floor((snap.remainingMs % 60000) / 1000)).padStart(2, '0');
+  indicator.querySelector('.pomodoro-indicator-time').textContent = `${mm}:${ss}`;
+  const phaseEl = indicator.querySelector('.pomodoro-indicator-phase');
+  phaseEl.textContent = snap.phase === 'break' ? 'Pause' : 'Fokus';
+  indicator.classList.toggle('is-break', snap.phase === 'break');
+}
+
+function openPomodoroPicker() {
+  if (isPomodoroRunning()) {
+    stopPomodoro();
+    if (pomodoroIndicator?.parentNode) pomodoroIndicator.remove();
+    pomodoroIndicator = null;
+    toast('Pomodoro gestoppt', 'info', 1800);
+    return;
+  }
+  // Mini-Picker in einem Toast-ähnlichen Inline-Element
+  const existing = document.querySelector('.pomodoro-picker');
+  if (existing) { existing.remove(); return; }
+
+  const picker = el('div', { class: 'pomodoro-picker' },
+    el('div', { class: 'pomodoro-picker-title' }, 'Pomodoro-Session'),
+    el('div', { class: 'pomodoro-picker-row' },
+      ...POMODORO_DURATIONS.map(m => el('button', {
+        class: 'pomodoro-picker-btn' + (m === 25 ? ' is-default' : ''),
+        onClick: () => {
+          picker.remove();
+          requestPomodoroNotificationPermission().finally(() => {
+            startPomodoro({
+              minutes: m,
+              breakMinutes: 5,
+              onTick: updatePomodoroIndicator,
+              onPhaseChange: (phase, snap) => {
+                if (phase === 'stopped') return;
+                updatePomodoroIndicator(snap);
+              },
+              onComplete: () => {
+                if (pomodoroIndicator?.parentNode) pomodoroIndicator.remove();
+                pomodoroIndicator = null;
+              }
+            });
+            toast(`Pomodoro gestartet (${m} min)`, 'success', 1800);
+          });
+        }
+      }, `${m} min`))
+    ),
+    el('button', { class: 'btn btn-ghost', onClick: () => picker.remove() }, 'Abbrechen')
+  );
+  document.body.appendChild(picker);
+}
+
+// ----------------------------------------------------------------------------
+// Adaptiver Lernplan — Heute empfohlen
+// ----------------------------------------------------------------------------
+function renderAdaptiveRecommendationsSection() {
+  let recs = [];
+  try {
+    recs = getAdaptiveRecommendations(5);
+  } catch {
+    recs = [];
+  }
+  if (!recs || recs.length === 0) return null;
+
+  const section = el('section', { class: 'section adaptive-section', dataset: { reveal: '' } },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, '📈 Heute empfohlen'),
+        el('div', { class: 'lede' }, 'Personalisiert — Karten, die jetzt den meisten Lerneffekt bringen.')
+      ),
+      el('button', {
+        class: 'btn btn-primary',
+        dataset: { magnetic: '10' },
+        onClick: () => go('#/lernen?source=recommendations'),
+        title: 'Diese Empfehlungen direkt in einer Karteikarten-Session lernen'
+      }, 'Diese 5 jetzt lernen →')
+    )
+  );
+
+  const grid = el('div', { class: 'adaptive-grid' });
+  for (const rec of recs) {
+    const a = rec.entry;
+    if (!a) continue;
+    grid.appendChild(el('button', {
+      class: 'adaptive-card',
+      style: { '--dc': a.dialektFarbe || 'var(--brand)' },
+      dataset: { spotlight: '' },
+      onClick: () => go(`#/dialekt/${a.dialektId}`),
+      title: `${a.dialektFlag || ''} ${a.dialektName || ''} — ${a.hochdeutsch || ''}`
+    },
+      el('div', { class: 'adaptive-card-head' },
+        el('span', { class: 'adaptive-flag' }, a.dialektFlag || '🃏'),
+        el('span', { class: 'adaptive-priority', dataset: { p: String(rec.priority || 4) } },
+          rec.priority === 1 ? '🔥 Dringend' :
+          rec.priority === 2 ? '⚠️ Schwach' :
+          rec.priority === 3 ? '🆕 Neu' : '✨ Auffrischung'
+        )
+      ),
+      el('div', { class: 'adaptive-expr' }, a.ausdruck),
+      el('div', { class: 'adaptive-hd' }, '↦ ' + (a.hochdeutsch || '')),
+      el('div', { class: 'adaptive-reason' }, rec.reason)
+    ));
+  }
+  section.appendChild(grid);
+  return section;
 }

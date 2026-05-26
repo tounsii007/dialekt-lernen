@@ -6,6 +6,8 @@ import { markDialectVisited } from '../store.js';
 import { getLernstand } from '../store/learning.js';
 import { icon, emptyIllustration } from '../util/icons.js';
 import { buildIndex, searchIndex } from '../util/fuzzy.js';
+import { findRelatedExpressions } from '../util/related-expressions.js';
+import { extractEtymology, hasEtymology } from '../util/etymology.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -123,7 +125,15 @@ export function renderDialektDetail(root, dialektId) {
       ));
       return;
     }
-    items.forEach(a => grid.appendChild(renderExpressionCard(a, d)));
+    items.forEach(a => {
+      const cardWrap = el('div', { class: 'expr-card-wrap' });
+      cardWrap.appendChild(renderExpressionCard(a, d));
+      const etym = renderEtymologySection(a);
+      if (etym) cardWrap.appendChild(etym);
+      const related = renderRelatedSection(a, d);
+      if (related) cardWrap.appendChild(related);
+      grid.appendChild(cardWrap);
+    });
   }
   render();
 
@@ -136,4 +146,67 @@ export function renderDialektDetail(root, dialektId) {
   toolbar.querySelector('input').addEventListener('input', (e) => { term = e.target.value; render(); });
 
   root.appendChild(view);
+}
+
+// „Siehe auch": findet bis zu 5 verwandte Ausdrücke aus anderen Dialekten.
+function renderRelatedSection(a, dialekt) {
+  // Wir brauchen ein vollständiges Entry-Objekt mit dialektId/hochdeutsch.
+  const entry = {
+    dialektId: dialekt.id,
+    id: a.id,
+    hochdeutsch: a.hochdeutsch,
+    kategorie: a.kategorie,
+  };
+  let related;
+  try {
+    related = findRelatedExpressions(entry, 5);
+  } catch {
+    related = [];
+  }
+  if (!related || related.length === 0) return null;
+
+  const sec = el('div', { class: 'related-section', dataset: { reveal: '' } });
+  sec.appendChild(el('div', { class: 'related-head' },
+    el('span', { class: 'related-icon' }, '🔗'),
+    el('span', { class: 'related-title' }, 'Siehe auch')
+  ));
+  const list = el('div', { class: 'related-list' });
+  for (const rel of related) {
+    const re = rel.entry;
+    if (!re) continue;
+    list.appendChild(el('button', {
+      class: 'related-chip',
+      style: { '--dc': re.dialektFarbe || 'var(--brand)' },
+      onClick: () => go(`#/dialekt/${re.dialektId}`),
+      title: `${re.dialektFlag || ''} ${re.dialektName || ''} — ${rel.reason}`
+    },
+      el('span', { class: 'related-flag' }, re.dialektFlag || '🏷️'),
+      el('span', { class: 'related-expr' }, re.ausdruck),
+      el('span', { class: 'related-hd' }, re.hochdeutsch || ''),
+      el('span', { class: 'related-dialect' }, re.dialektName || '')
+    ));
+  }
+  sec.appendChild(list);
+  return sec;
+}
+
+// Etymologie-Bereich: zeigt extrahierte Wortherkunfts-Sätze aus dem Bedeutungs-Text
+// als ausklappbaren Panel unter der Karte. Wird nur gerendert, wenn Etymologie-
+// Hinweise gefunden wurden.
+function renderEtymologySection(a) {
+  if (!hasEtymology(a.bedeutung)) return null;
+  const sentences = extractEtymology(a.bedeutung);
+
+  const sec = el('details', { class: 'etymology-section' });
+  sec.appendChild(el('summary', { class: 'etymology-summary' },
+    el('span', { class: 'etymology-icon' }, '📜'),
+    el('span', { class: 'etymology-label' }, 'Etymologie'),
+    el('span', { class: 'etymology-count' }, `${sentences.length} Hinweis${sentences.length === 1 ? '' : 'e'}`)
+  ));
+  const list = el('div', { class: 'etymology-list' });
+  sentences.forEach(s => {
+    list.appendChild(el('div', { class: 'etymology-item' }, s));
+  });
+  sec.appendChild(list);
+  return sec;
 }

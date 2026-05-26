@@ -21,14 +21,22 @@ export function getTimeHeatmap(rangeDays = 90) {
     matrix[day][hour]++;
   }
 
-  // Auch SRS-Reviews einbeziehen, da die oft mehr Daten haben
-  const srsCards = (state.srs && state.srs.cards) || {};
-  for (const card of Object.values(srsCards)) {
-    if (!card?.lastReview) continue;
-    const ts = new Date(card.lastReview).getTime();
-    if (ts < cutoff) continue;
-    const d = new Date(ts);
-    matrix[d.getDay()][d.getHours()]++;
+  // Auch SRS-Reviews einbeziehen, da die oft mehr Daten haben.
+  // Echtes Storage liegt in state.gelernt (Feld `last`); state.srs.cards ist
+  // ein optionaler Worker-Cache mit `lastReview`. Beide werden unterstützt.
+  const sources = [
+    (state.srs && state.srs.cards) || {},
+    state.gelernt || {},
+  ];
+  for (const src of sources) {
+    for (const card of Object.values(src)) {
+      const ts = card?.lastReview
+        ? new Date(card.lastReview).getTime()
+        : (Number(card?.last) || 0);
+      if (!ts || ts < cutoff) continue;
+      const d = new Date(ts);
+      matrix[d.getDay()][d.getHours()]++;
+    }
   }
 
   // Finde Maximum + bester Slot

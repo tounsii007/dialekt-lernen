@@ -1,7 +1,8 @@
 import { el, go } from '../util.js';
 import {
   getFavoriten, getLernStats, getQuizGenauigkeit, getStreak, getQuizHistory,
-  getStreakHeatmap, getActiveDays, evaluateAchievements, getVisitedDialects
+  getStreakHeatmap, getActiveDays, evaluateAchievements, getVisitedDialects,
+  toggleFavorit
 } from '../store.js';
 import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
@@ -17,6 +18,10 @@ import {
   enableNotifications, disableNotifications
 } from '../store/notifications.js';
 import { showNotification } from '../util/push.js';
+import { getDecks, addToDeck } from '../store/decks.js';
+import { getSuggestions, removeSuggestion, exportSuggestionsAsJson, countSuggestions } from '../store/suggestions.js';
+import { openModal, confirmModal } from '../util/modal.js';
+import { openCreateDeckModal } from './decks.js';
 
 export function renderFavoriten(root) {
   root.innerHTML = '';
@@ -123,31 +128,413 @@ export function renderFavoriten(root) {
   // Daten-Tools (Export/Import/Reset)
   view.appendChild(renderDataTools());
 
-  // Favoriten
-  view.appendChild(el('div', { class: 'section-head', style: { marginTop: '40px' } },
-    el('div', {}, el('h2', {}, 'Deine Favoriten'))
-  ));
+  // Korrektur-Vorschläge (lokal)
+  view.appendChild(renderSuggestionsPanel(() => renderFavoriten(root)));
+
+  // Favoriten + Bulk-Aktionen
+  view.appendChild(renderFavoritenList(favs, () => renderFavoriten(root)));
+
+  root.appendChild(view);
+}
+
+// Favoriten-Liste mit optionalem Auswahl-Modus.
+function renderFavoritenList(favs, rerender) {
+  const wrap = el('section', { class: 'section favoriten-list-section', style: { marginTop: '40px' } });
 
   if (favs.length === 0) {
-    view.appendChild(el('div', { class: 'empty-state' },
+    wrap.appendChild(el('div', { class: 'section-head' },
+      el('div', {}, el('h2', {}, 'Deine Favoriten'))
+    ));
+    wrap.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('heart'),
       el('h3', {}, 'Noch keine Favoriten markiert'),
       el('div', { class: 'empty-meta' }, 'Klicke auf das ♡ Symbol bei einem Ausdruck, um ihn hier zu speichern.'),
       el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, 'Dialekte erkunden')
     ));
-  } else {
-    const grid = el('div', { class: 'expr-grid' });
-    favs.forEach(({ dialektId, ausdruckId }) => {
-      const d = getDialekt(dialektId);
-      if (!d) return;
-      const a = d.ausdruecke.find(x => x.id === ausdruckId);
-      if (!a) return;
-      grid.appendChild(renderExpressionCard(a, d));
-    });
-    view.appendChild(grid);
+    return wrap;
   }
 
-  root.appendChild(view);
+  // Lokaler Auswahl-State (nicht persistent).
+  let selectionMode = false;
+  const selectedKeys = new Set();
+  const keyOf = (dialektId, ausdruckId) => `${dialektId}.${ausdruckId}`;
+
+  const grid = el('div', { class: 'expr-grid' });
+  const head = el('div', { class: 'section-head', style: { alignItems: 'center', flexWrap: 'wrap', gap: '12px' } });
+  const toolbar = el('div', { class: 'card', style: { padding: '12px 16px', marginBottom: '16px', display: 'none', flexWrap: 'wrap', gap: '8px', alignItems: 'center' } });
+
+  function selectableKeys() {
+    return favs
+      .filter(({ dialektId, ausdruckId }) => {
+        const d = getDialekt(dialektId);
+        return d && d.ausdruecke.some(x => x.id === ausdruckId);
+      })
+      .map(({ dialektId, ausdruckId }) => keyOf(dialektId, ausdruckId));
+  }
+
+  function updateGridSelection() {
+    grid.querySelectorAll('.expr-card').forEach(card => {
+      const key = card.dataset.favKey;
+      const isSel = key && selectedKeys.has(key);
+      card.classList.toggle('is-bulk-selected', isSel);
+      const cb = card.querySelector('.bulk-checkbox input');
+      if (cb) cb.checked = isSel;
+      const wrap = card.querySelector('.bulk-checkbox');
+      if (wrap) wrap.style.display = selectionMode ? 'flex' : 'none';
+    });
+    updateCountLabel();
+  }
+
+  let countLabel = null;
+  function updateCountLabel() {
+    if (countLabel) countLabel.textContent = `${selectedKeys.size} ausgewählt`;
+  }
+
+  function renderHead() {
+    head.innerHTML = '';
+    head.appendChild(el('div', {}, el('h2', {}, 'Deine Favoriten')));
+    const toggleBtn = el('button', {
+      class: 'btn ' + (selectionMode ? 'btn-secondary' : 'btn-ghost'),
+      style: { padding: '6px 14px' },
+      onClick: () => {
+        selectionMode = !selectionMode;
+        if (!selectionMode) selectedKeys.clear();
+        toolbar.style.display = selectionMode ? 'flex' : 'none';
+        renderHead();
+        updateGridSelection();
+      }
+    }, selectionMode ? '✕ Auswahl beenden' : '☑ Auswahl-Modus');
+    head.appendChild(el('div', { style: { display: 'flex', gap: '8px' } }, toggleBtn));
+  }
+  renderHead();
+
+  // Toolbar-Aktionen
+  countLabel = el('span', { class: 'lede', style: { fontSize: '.85rem', flex: '1' } }, '0 ausgewählt');
+  toolbar.appendChild(countLabel);
+
+  toolbar.appendChild(el('button', {
+    class: 'btn btn-ghost', style: { padding: '6px 12px', fontSize: '.85rem' },
+    onClick: () => {
+      const all = selectableKeys();
+      all.forEach(k => selectedKeys.add(k));
+      updateGridSelection();
+    }
+  }, 'Alle auswählen'));
+
+  toolbar.appendChild(el('button', {
+    class: 'btn btn-ghost', style: { padding: '6px 12px', fontSize: '.85rem' },
+    onClick: () => {
+      const all = selectableKeys();
+      all.forEach(k => {
+        if (selectedKeys.has(k)) selectedKeys.delete(k);
+        else selectedKeys.add(k);
+      });
+      updateGridSelection();
+    }
+  }, 'Auswahl invertieren'));
+
+  toolbar.appendChild(el('button', {
+    class: 'btn btn-secondary', style: { padding: '6px 12px', fontSize: '.85rem' },
+    onClick: async () => {
+      if (selectedKeys.size === 0) { toast('Nichts ausgewählt', 'info', 1400); return; }
+      await openAddToDeckDialog(Array.from(selectedKeys), rerender);
+    }
+  }, '🗂️ Zu Deck hinzufügen'));
+
+  toolbar.appendChild(el('button', {
+    class: 'btn btn-ghost danger-btn', style: { padding: '6px 12px', fontSize: '.85rem' },
+    onClick: async () => {
+      if (selectedKeys.size === 0) { toast('Nichts ausgewählt', 'info', 1400); return; }
+      const n = selectedKeys.size;
+      const ok = await confirmModal({
+        title: 'Aus Favoriten entfernen?',
+        message: `${n} Ausdr${n === 1 ? 'uck' : 'ücke'} aus den Favoriten entfernen?`,
+        confirmLabel: 'Entfernen',
+        danger: true
+      });
+      if (!ok) return;
+      let removed = 0;
+      for (const key of selectedKeys) {
+        const [dialektId, ausdruckId] = key.split('.');
+        if (!dialektId || !ausdruckId) continue;
+        toggleFavorit(dialektId, ausdruckId); // toggles off, da Favorit
+        removed++;
+      }
+      selectedKeys.clear();
+      toast(`${removed} entfernt`, 'success', 1600);
+      rerender();
+    }
+  }, '🗑️ Aus Favoriten entfernen'));
+
+  wrap.appendChild(head);
+  wrap.appendChild(toolbar);
+
+  favs.forEach(({ dialektId, ausdruckId }) => {
+    const d = getDialekt(dialektId);
+    if (!d) return;
+    const a = d.ausdruecke.find(x => x.id === ausdruckId);
+    if (!a) return;
+
+    const card = renderExpressionCard(a, d);
+    const key = keyOf(dialektId, ausdruckId);
+    card.dataset.favKey = key;
+
+    // Checkbox-Overlay
+    const cb = el('input', {
+      type: 'checkbox',
+      'aria-label': 'In Auswahl',
+      onClick: (e) => {
+        e.stopPropagation();
+        if (cb.checked) selectedKeys.add(key); else selectedKeys.delete(key);
+        card.classList.toggle('is-bulk-selected', cb.checked);
+        updateCountLabel();
+      }
+    });
+    const cbWrap = el('label', {
+      class: 'bulk-checkbox',
+      style: {
+        position: 'absolute', top: '8px', left: '8px',
+        display: 'none', alignItems: 'center', justifyContent: 'center',
+        width: '28px', height: '28px',
+        background: 'var(--bg-elev)', borderRadius: '6px',
+        border: '1px solid var(--border)', zIndex: '5',
+        cursor: 'pointer'
+      },
+      onClick: (e) => e.stopPropagation()
+    }, cb);
+    card.style.position = card.style.position || 'relative';
+    card.prepend(cbWrap);
+
+    // Click toggling im Auswahl-Modus (außer auf Action-Buttons)
+    card.addEventListener('click', (e) => {
+      if (!selectionMode) return;
+      const t = e.target;
+      if (t.closest('.expr-action') || t.closest('.expr-note-input')) return;
+      cb.checked = !cb.checked;
+      if (cb.checked) selectedKeys.add(key); else selectedKeys.delete(key);
+      card.classList.toggle('is-bulk-selected', cb.checked);
+      updateCountLabel();
+    });
+
+    grid.appendChild(card);
+  });
+
+  wrap.appendChild(grid);
+  return wrap;
+}
+
+// Dialog zur Auswahl eines Decks (oder zum Neuanlegen).
+async function openAddToDeckDialog(selectedKeys, rerender) {
+  const decks = getDecks();
+
+  const refs = selectedKeys.map(k => {
+    const [dialektId, id] = k.split('.');
+    return { dialektId, id };
+  });
+
+  let selectedDeckId = decks[0]?.id || null;
+
+  const buildDeckList = () => {
+    if (decks.length === 0) {
+      return el('p', { class: 'lede' }, 'Du hast noch keine Decks. Lege jetzt eines an, um die Auswahl dort zu speichern.');
+    }
+    const list = el('div', { style: { display: 'grid', gap: '8px', maxHeight: '300px', overflowY: 'auto', padding: '4px' } });
+    decks.forEach(d => {
+      const row = el('label', {
+        style: {
+          display: 'flex', alignItems: 'center', gap: '10px',
+          padding: '10px 12px', borderRadius: 'var(--r-md)',
+          border: '1px solid var(--border)', cursor: 'pointer',
+          background: 'var(--bg-soft)'
+        }
+      },
+        el('input', {
+          type: 'radio', name: 'deckChoice', value: d.id,
+          checked: d.id === selectedDeckId,
+          onClick: () => { selectedDeckId = d.id; }
+        }),
+        el('span', { style: { width: '14px', height: '14px', borderRadius: '50%', background: d.color, flexShrink: '0' } }),
+        el('div', { style: { flex: '1' } },
+          el('div', { style: { fontWeight: '600' } }, d.name),
+          el('div', { class: 'lede', style: { fontSize: '.8rem' } },
+            `${d.expressionIds.length} Einträge`
+          )
+        )
+      );
+      list.appendChild(row);
+    });
+    return list;
+  };
+
+  const listWrap = el('div', {}, buildDeckList());
+
+  openModal({
+    title: `Zu Deck hinzufügen (${selectedKeys.length})`,
+    content: [
+      listWrap,
+      el('div', { style: { marginTop: '12px', display: 'flex', justifyContent: 'flex-end' } },
+        el('button', {
+          class: 'btn btn-ghost',
+          style: { padding: '6px 12px' },
+          onClick: () => {
+            openCreateDeckModal((newDeckId) => {
+              if (!newDeckId) return;
+              // Nach Anlegen: gleich hinzufügen
+              let added = 0;
+              for (const ref of refs) {
+                if (addToDeck(newDeckId, ref)) added++;
+              }
+              toast(`${added} zum neuen Deck hinzugefügt ✓`, 'success', 1800);
+              rerender();
+            });
+          }
+        }, '+ Neues Deck anlegen')
+      )
+    ],
+    actions: [
+      { label: 'Abbrechen', variant: 'ghost', onClick: () => {} },
+      {
+        label: 'Hinzufügen',
+        variant: 'primary',
+        onClick: () => {
+          if (!selectedDeckId) {
+            toast('Bitte ein Deck wählen oder neu anlegen', 'info', 1800);
+            return false;
+          }
+          let added = 0, skipped = 0;
+          for (const ref of refs) {
+            if (addToDeck(selectedDeckId, ref)) added++;
+            else skipped++;
+          }
+          const msg = skipped > 0
+            ? `${added} hinzugefügt · ${skipped} bereits vorhanden`
+            : `${added} hinzugefügt ✓`;
+          toast(msg, 'success', 1800);
+          rerender();
+        }
+      }
+    ]
+  });
+}
+
+// Panel: Übersicht aller eigenen Vorschläge + JSON-Export.
+function renderSuggestionsPanel(rerender) {
+  const list = getSuggestions();
+  const n = list.length;
+
+  const wrap = el('section', { class: 'section', dataset: { reveal: '' }, style: { marginTop: '24px' } });
+  wrap.appendChild(el('div', { class: 'section-head' },
+    el('div', {},
+      el('h2', {}, '✎ Deine Korrektur-Vorschläge'),
+      el('div', { class: 'lede' }, n === 0
+        ? 'Du hast noch keine Vorschläge gespeichert. Klicke an einer Karte auf das ✎-Symbol, um eine Korrektur vorzuschlagen.'
+        : `${n} lokal gespeicherte${n === 1 ? 'r Vorschlag' : ' Vorschläge'} — bereit zum Exportieren.`)
+    )
+  ));
+
+  if (n === 0) return wrap;
+
+  const actions = el('div', { class: 'data-tools-row', style: { marginBottom: '12px' } },
+    el('button', {
+      class: 'btn btn-primary', dataset: { magnetic: '10' },
+      onClick: () => {
+        const json = exportSuggestionsAsJson();
+        try {
+          const blob = new Blob([json], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          const stamp = new Date().toISOString().slice(0, 10);
+          a.href = url;
+          a.download = `dialekto-suggestions-${stamp}.json`;
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 100);
+          toast('JSON heruntergeladen ✓', 'success', 1600);
+        } catch {
+          toast('Download fehlgeschlagen', 'info', 1800);
+        }
+      }
+    }, '📥 Als JSON exportieren'),
+    el('button', {
+      class: 'btn btn-secondary', dataset: { magnetic: '10' },
+      onClick: async () => {
+        try {
+          await navigator.clipboard.writeText(exportSuggestionsAsJson());
+          toast('In Zwischenablage kopiert 📋', 'success', 1600);
+        } catch {
+          toast('Zwischenablage nicht verfügbar', 'info', 1600);
+        }
+      }
+    }, '📋 In Zwischenablage'),
+    el('button', {
+      class: 'btn btn-ghost danger-btn',
+      onClick: async () => {
+        const ok = await confirmModal({
+          title: 'Alle Vorschläge löschen?',
+          message: `${n} lokale Vorschläge wirklich entfernen?`,
+          confirmLabel: 'Alle löschen',
+          danger: true
+        });
+        if (!ok) return;
+        list.forEach(s => removeSuggestion(s.suggId));
+        toast('Alle Vorschläge gelöscht', 'success', 1400);
+        rerender();
+      }
+    }, '🗑️ Alle löschen')
+  );
+  wrap.appendChild(actions);
+
+  const ul = el('div', { style: { display: 'grid', gap: '10px' } });
+  list.forEach(s => {
+    const d = getDialekt(s.dialektId);
+    const a = d?.ausdruecke?.find(x => x.id === s.id);
+    const headerText = a
+      ? `${d.flag} ${d.name} · „${a.ausdruck}"`
+      : `${s.dialektId} · ${s.id}`;
+    const fieldLabels = {
+      ausdruck: 'Ausdruck',
+      hochdeutsch: 'Hochdeutsch',
+      beispiel: 'Beispiel',
+      beispiel_hd: 'Beispiel (Hochdeutsch)',
+      bedeutung: 'Bedeutung'
+    };
+
+    const card = el('div', { class: 'card', style: { padding: '12px 16px' } },
+      el('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '8px' } },
+        el('div', { style: { flex: '1' } },
+          el('div', { style: { fontWeight: '600', marginBottom: '4px' } }, headerText),
+          el('div', { class: 'lede', style: { fontSize: '.78rem' } },
+            `Feld: ${fieldLabels[s.field] || s.field} · ${new Date(s.createdAt).toLocaleString('de-DE')}`
+          )
+        ),
+        el('button', {
+          class: 'btn btn-ghost',
+          style: { padding: '4px 10px', fontSize: '.85rem' },
+          title: 'Vorschlag löschen',
+          onClick: () => {
+            removeSuggestion(s.suggId);
+            toast('Vorschlag entfernt', 'info', 1200);
+            rerender();
+          }
+        }, '✕')
+      ),
+      el('div', { style: { display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '8px', fontSize: '.85rem' } },
+        el('div', {},
+          el('div', { class: 'lede', style: { fontSize: '.72rem', textTransform: 'uppercase', letterSpacing: '.04em', marginBottom: '2px' } }, 'Aktuell'),
+          el('div', { style: { padding: '6px 8px', background: 'var(--bg-soft)', borderRadius: '6px', wordBreak: 'break-word' } }, s.currentValue || '—')
+        ),
+        el('div', {},
+          el('div', { class: 'lede', style: { fontSize: '.72rem', textTransform: 'uppercase', letterSpacing: '.04em', marginBottom: '2px', color: 'var(--brand)' } }, 'Vorschlag'),
+          el('div', { style: { padding: '6px 8px', background: 'color-mix(in oklab, var(--brand) 8%, var(--bg-elev))', borderRadius: '6px', wordBreak: 'break-word', borderLeft: '2px solid var(--brand)' } }, s.proposedValue || '—')
+        )
+      ),
+      s.note ? el('div', { class: 'lede', style: { fontSize: '.8rem', marginTop: '6px', fontStyle: 'italic' } }, `📝 ${s.note}`) : null
+    );
+    ul.appendChild(card);
+  });
+
+  wrap.appendChild(ul);
+  return wrap;
 }
 
 function renderDataTools() {

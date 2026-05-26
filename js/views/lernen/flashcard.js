@@ -194,6 +194,171 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else if (mode === 'diktat') {
+    // Diktat: TTS spielt Beispielsatz (Fallback: Ausdruck), User tippt mit
+    const dictText = (c.beispiel && c.beispiel.trim()) ? c.beispiel : c.ausdruck;
+    const playDict = () => { sfx.click(); speak(dictText, c.dialektLang || 'de-DE'); };
+    front.appendChild(el('div', { class: 'fc-label' }, '✍ Diktat · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-audio-only' },
+      el('button', {
+        class: 'fc-big-speak',
+        onClick: (e) => { e.stopPropagation(); playDict(); },
+        title: 'Anhören'
+      },
+        icon('speaker', { size: 48 }),
+        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören')
+      )
+    ));
+    front.appendChild(el('div', { class: 'fc-hint' }, 'Tippe ein, was du hörst:'));
+    const dictInput = el('input', {
+      class: 'fc-type-input',
+      type: 'text',
+      placeholder: 'Mitschreiben…',
+      autocomplete: 'off',
+      spellcheck: 'false'
+    });
+    const dictFeedback = el('div', { class: 'fc-type-feedback' });
+    const submitDict = () => {
+      if (dictFeedback.classList.contains('is-ok') ||
+          dictFeedback.classList.contains('is-close') ||
+          dictFeedback.classList.contains('is-wrong')) return;
+      const ok = checkTypedAnswer(dictInput.value, dictText);
+      const distance = levenshteinSimple(normalizeForType(dictInput.value), normalizeForType(dictText));
+      const tolerance = Math.max(2, Math.floor(normalizeForType(dictText).length / 6));
+      dictFeedback.classList.remove('is-ok', 'is-close', 'is-wrong');
+      if (ok) {
+        dictFeedback.classList.add('is-ok');
+        dictFeedback.textContent = '✓ Richtig — ' + dictText;
+        sfx.correct(); vibrate([10, 30, 10]);
+      } else if (distance <= tolerance) {
+        dictFeedback.classList.add('is-close');
+        dictFeedback.textContent = '◐ Fast — ' + dictText;
+        sfx.rate(2);
+      } else {
+        dictFeedback.classList.add('is-wrong');
+        dictFeedback.textContent = '✗ ' + dictText;
+        sfx.wrong();
+      }
+      onFlip(card);
+    };
+    dictInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); submitDict(); }
+    });
+    front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
+      dictInput, dictFeedback,
+      el('div', { style: { display: 'flex', gap: '8px', flexWrap: 'wrap' } },
+        el('button', {
+          class: 'btn btn-ghost',
+          onClick: (e) => { e.stopPropagation(); playDict(); },
+          title: 'Nochmal anhören'
+        }, '🔁 Nochmal anhören'),
+        el('button', { class: 'btn btn-primary', onClick: submitDict }, 'Prüfen ↵')
+      )
+    ));
+    setTimeout(() => { dictInput.focus(); playDict(); }, 200);
+    back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+    back.appendChild(el('div', { class: 'fc-expr' }, dictText));
+    back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + (c.beispiel_hd || c.hochdeutsch)));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else if (mode === 'hoeren') {
+    // Hörverständnis: Nur Audio (Ausdruck), 4 Optionen mit Hochdeutsch-Übersetzungen
+    front.appendChild(el('div', { class: 'fc-label' }, '👂 Hörverständnis · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-audio-only' },
+      el('button', {
+        class: 'fc-big-speak',
+        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
+        title: 'Anhören'
+      },
+        icon('speaker', { size: 48 }),
+        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören')
+      )
+    ));
+    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Was bedeutet das? Wähle die richtige Übersetzung:'));
+    const hChoices = buildMcChoices(c, ALLE_AUSDRUECKE);
+    const hRow = el('div', { class: 'fc-mc-options', onClick: (e) => e.stopPropagation() });
+    let hAnswered = false;
+    hChoices.forEach((opt) => {
+      const btn = el('button', {
+        class: 'fc-mc-opt',
+        onClick: () => {
+          if (hAnswered) return;
+          hAnswered = true;
+          const correct = opt.hochdeutsch === c.hochdeutsch;
+          hRow.querySelectorAll('.fc-mc-opt').forEach(b => {
+            if (b.dataset.answer === c.hochdeutsch) b.classList.add('mc-correct');
+          });
+          btn.classList.add(correct ? 'mc-correct' : 'mc-wrong');
+          if (correct) {
+            sfx.correct(); vibrate([10, 30, 10]);
+            confettiBurst(btn, { count: 40 });
+            setTimeout(() => { rateAndPersist(c, 3, session, onRate); }, 800);
+          } else {
+            sfx.wrong(); vibrate([12, 60, 12]);
+            setTimeout(() => { rateAndPersist(c, 1, session, onRate); }, 1200);
+          }
+        }
+      }, opt.hochdeutsch);
+      btn.dataset.answer = opt.hochdeutsch;
+      hRow.appendChild(btn);
+    });
+    front.appendChild(hRow);
+    // Auto-play beim Erscheinen
+    setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
+    back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
+    back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
+    back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else if (mode === 'voice-quiz') {
+    // Voice-Quiz: TTS spielt Hochdeutsch, User wählt passenden Dialekt-Ausdruck
+    const playHd = () => { sfx.click(); speak(c.hochdeutsch, 'de-DE'); };
+    front.appendChild(el('div', { class: 'fc-label' }, '🔊 Voice-Quiz · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-audio-only' },
+      el('button', {
+        class: 'fc-big-speak',
+        onClick: (e) => { e.stopPropagation(); playHd(); },
+        title: 'Hochdeutsch anhören'
+      },
+        icon('speaker', { size: 48 }),
+        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören (Hochdeutsch)')
+      )
+    ));
+    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Welcher Dialekt-Ausdruck passt?'));
+    const vChoices = buildMcChoices(c, ALLE_AUSDRUECKE);
+    const vRow = el('div', { class: 'fc-mc-options', onClick: (e) => e.stopPropagation() });
+    let vAnswered = false;
+    vChoices.forEach((opt) => {
+      const btn = el('button', {
+        class: 'fc-mc-opt',
+        onClick: () => {
+          if (vAnswered) return;
+          vAnswered = true;
+          const correct = opt.ausdruck === c.ausdruck && opt.id === c.id;
+          vRow.querySelectorAll('.fc-mc-opt').forEach(b => {
+            if (b.dataset.answer === c.ausdruck) b.classList.add('mc-correct');
+          });
+          btn.classList.add(correct ? 'mc-correct' : 'mc-wrong');
+          if (correct) {
+            sfx.correct(); vibrate([10, 30, 10]);
+            confettiBurst(btn, { count: 40 });
+            // Bonus: nach Auswahl Dialekt-Audio abspielen
+            setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 300);
+            setTimeout(() => { rateAndPersist(c, 3, session, onRate); }, 1400);
+          } else {
+            sfx.wrong(); vibrate([12, 60, 12]);
+            setTimeout(() => { rateAndPersist(c, 1, session, onRate); }, 1200);
+          }
+        }
+      }, opt.ausdruck);
+      btn.dataset.answer = opt.ausdruck;
+      vRow.appendChild(btn);
+    });
+    front.appendChild(vRow);
+    // Auto-play Hochdeutsch
+    setTimeout(() => speak(c.hochdeutsch, 'de-DE'), 200);
+    back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
+    back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
+    back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'pron') {
     // Aussprache-Check via Web Speech Recognition
     front.appendChild(el('div', { class: 'fc-label' }, '🎤 Aussprache · ' + c.dialektFlag + ' ' + c.dialektName));

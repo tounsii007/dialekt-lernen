@@ -32,8 +32,10 @@ function notify(title, body) {
       return;
     }
   } catch {}
-  // Fallback
-  toast(`${title} — ${body}`, 'info', 4200);
+  // Fallback — Toast (nur wenn DOM verfügbar)
+  if (typeof document !== 'undefined') {
+    try { toast(`${title} — ${body}`, 'info', 4200); } catch {}
+  }
 }
 
 export function requestPomodoroNotificationPermission() {
