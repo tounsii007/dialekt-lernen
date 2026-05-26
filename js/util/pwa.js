@@ -6,7 +6,34 @@ export function initPwa(toast) {
   // SW nur in https oder localhost (Browser-Vorgabe).
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js').catch(() => {});
+      navigator.serviceWorker.register('./sw.js').then((reg) => {
+        // Auf Update-Erkennung lauschen — wenn eine neuere SW-Version
+        // installiert wurde, dem User Bescheid geben.
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (!newWorker) return;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // Neue Version wartet — App neu laden zur Aktivierung.
+              if (toast) {
+                toast('Neue Version verfügbar — klicke hier zum Aktualisieren', 'info', 6000);
+              }
+            }
+          });
+        });
+      }).catch(() => {});
+
+      // Aktivierungs-Nachricht vom SW empfangen.
+      navigator.serviceWorker.addEventListener('message', (event) => {
+        if (event.data?.type === 'SW_ACTIVATED' && toast) {
+          // Nur Toast zeigen, wenn das Update tatsächlich was Neues war.
+          const prev = sessionStorage.getItem('dialekto:lastSwVersion');
+          if (prev && prev !== event.data.version) {
+            toast(`Aktualisiert auf v${event.data.version} ✓`, 'success', 2200);
+          }
+          try { sessionStorage.setItem('dialekto:lastSwVersion', event.data.version); } catch {}
+        }
+      });
     });
   }
 

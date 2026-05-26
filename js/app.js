@@ -18,6 +18,8 @@ import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
 import { initGoalEvents } from './util/daily-goal.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
+import { APP_VERSION_LABEL } from './version.js';
+import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const SOUND_TOAST_MS = 1200;
@@ -106,6 +108,15 @@ function mountXpBar() {
   if (xpSlot) xpSlot.appendChild(renderXpBar(getXp()));
 }
 
+function mountFooterMeta() {
+  const verEl = document.getElementById('appVersionLabel');
+  if (verEl) verEl.textContent = APP_VERSION_LABEL;
+  const statsEl = document.getElementById('dataStatsLabel');
+  if (statsEl) {
+    statsEl.textContent = `${DIALEKTE.length} Dialekte · ${ALLE_AUSDRUECKE.length.toLocaleString('de-DE')} Ausdrücke`;
+  }
+}
+
 function initErrorHandlers() {
   window.addEventListener('error', (e) => {
     console.error('[Dialekto]', e.error || e.message);
@@ -185,6 +196,7 @@ function init() {
   initXpHud();
   initGoalEvents(toast);
   mountXpBar();
+  mountFooterMeta();
 
   // 6. Onboarding — small delay so the layout has stabilized
   setTimeout(() => startOnboarding(), ONBOARDING_BOOT_DELAY_MS);

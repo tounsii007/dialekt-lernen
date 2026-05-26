@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#1a1a2e" />
   <meta name="description" content="Lerne deutsche Dialekte – Hessisch, Berlinisch, Bayerisch, Kölsch, Sächsisch, Plattdeutsch und mehr." />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <!-- CSP: Skripte nur von eigener Origin. Fonts dürfen von googleapis/gstatic geladen werden.
+       Inline-Styles werden vom App-Code genutzt (style-Attribute via el(...)), daher 'unsafe-inline' für style.
+       Bilder erlauben data:-URIs (Icons/Manifest). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'" />
   <title>Dialekto · Deutsche Dialekte lernen</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +21,13 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%A3%EF%B8%8F%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
+  <noscript>
+    <div class="noscript-banner" role="alert">
+      <strong>JavaScript ist deaktiviert.</strong>
+      Dialekto ist eine interaktive Lern-App und benötigt JavaScript.
+      Bitte aktiviere es und lade die Seite neu — alle Daten bleiben lokal in deinem Browser.
+    </div>
+  </noscript>
   <a class="skip-link" href="#app">Zum Inhalt springen</a>
   <div class="bg-stack" aria-hidden="true">
     <div class="bg-aurora">
@@ -121,7 +133,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <span>Dialekto · Mit ♥ für die deutsche Sprachvielfalt</span>
-      <span class="footer-meta">v1.0 · Erweiterbar · <button id="addDialectHint" class="link-btn">Eigenen Dialekt hinzufügen?</button> · <button id="restartTour" class="link-btn">Tour starten</button></span>
+      <span class="footer-meta"><span id="appVersionLabel">v…</span> · <span id="dataStatsLabel">… Ausdrücke</span> · <button id="addDialectHint" class="link-btn">Eigenen Dialekt hinzufügen?</button> · <button id="restartTour" class="link-btn">Tour starten</button></span>
     </div>
   </footer>
 
