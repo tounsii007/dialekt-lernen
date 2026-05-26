@@ -2,6 +2,7 @@ import { el, go, speak, escapeHtml, toast } from '../util.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { isFavorit, toggleFavorit, getLernstand, setLernstand, getNote, setNote } from '../store.js';
 import { reportCorrection } from '../util/feedback.js';
+import { shareCard } from '../util/share-card.js';
 
 export function renderDialektCard(d) {
   return el('button', {
@@ -99,6 +100,35 @@ export function renderExpressionCard(a, dialekt) {
     }
   }, el('span', { html: '🚩' }));
 
+  const shareBtn = el('button', {
+    class: 'expr-action expr-action-share',
+    title: 'Karte als Bild teilen',
+    'aria-label': `„${a.ausdruck}" als Bild teilen`,
+    onClick: async (e) => {
+      e.stopPropagation();
+      const btn = e.currentTarget;
+      btn.disabled = true;
+      try {
+        const payload = {
+          ausdruck: a.ausdruck,
+          hochdeutsch: a.hochdeutsch,
+          bedeutung: a.bedeutung,
+          beispiel: a.beispiel,
+          kategorie: a.kategorie,
+          dialektName: dialekt.name,
+          dialektFlag: dialekt.flag,
+          dialektFarbe: dialekt.farbe,
+        };
+        const result = await shareCard(payload);
+        toast(result === 'shared' ? 'Karte geteilt ✓' : 'Bild heruntergeladen ↓', 'success', 1600);
+      } catch (err) {
+        toast('Teilen fehlgeschlagen', 'error', 2000);
+      } finally {
+        btn.disabled = false;
+      }
+    }
+  }, el('span', { html: '📤' }));
+
   return el('article', { class: 'expr-card', dataset: { id: a.id, cat: a.kategorie } },
     el('div', { class: 'expr-head' },
       el('div', {},
@@ -115,7 +145,7 @@ export function renderExpressionCard(a, dialekt) {
     noteWrap,
     el('div', { class: 'expr-foot' },
       el('span', { class: 'region-tag' }, dialekt.flag + ' ' + dialekt.name),
-      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn, reportBtn)
+      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn, shareBtn, reportBtn)
     )
   );
 }

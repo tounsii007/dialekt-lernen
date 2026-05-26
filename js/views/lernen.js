@@ -3,6 +3,7 @@
 
 import { el, go, shuffle } from '../util.js';
 import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
+import { KATEGORIEN } from '../../data/kategorien.js';
 import { getSession, setSession, clearSession } from './lernen/state.js';
 import { renderSetup } from './lernen/setup.js';
 import { renderFlashcard } from './lernen/flashcard.js';
@@ -49,6 +50,14 @@ function startSession({ source, mode = 'normal' }) {
   if (source === 'all') {
     cards = ALLE_AUSDRUECKE.slice();
     title = 'Alle Dialekte';
+  } else if (typeof source === 'string' && source.startsWith('kategorie:')) {
+    // Themen-Lektion: Filter über alle Dialekte nach Kategorie
+    const katId = source.slice('kategorie:'.length);
+    const kat = KATEGORIEN[katId];
+    if (!kat) return;
+    cards = ALLE_AUSDRUECKE.filter(a => a.kategorie === katId);
+    if (cards.length === 0) return;
+    title = `${kat.icon} ${kat.label}`;
   } else {
     const d = getDialekt(source);
     if (!d) return;

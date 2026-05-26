@@ -1,13 +1,22 @@
 // Karteikarten-Modus · Auswahl-Bildschirm
 import { el } from '../../util.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
+import { KATEGORIE_LIST } from '../../../data/kategorien.js';
 import { icon } from '../../util/icons.js';
+
+// Themen-Farben (zyklisch über die Kategorien)
+const THEMEN_FARBEN = [
+  '#ef476f', '#06d6a0', '#118ab2', '#ffd166', '#8338ec',
+  '#fb5607', '#3a86ff', '#ff006e', '#06a77d', '#d62246',
+  '#7209b7', '#4cc9f0', '#f72585', '#4361ee', '#10b981', '#f59e0b'
+];
 
 const MODES = [
   { id: 'normal',  icon: 'cards',    title: 'Klassisch',       desc: 'Dialekt → Hochdeutsch' },
   { id: 'reverse', icon: 'refresh',  title: 'Umgekehrt',       desc: 'Hochdeutsch → Dialekt' },
   { id: 'mc',      icon: 'target',   title: 'Multiple Choice', desc: '4 Optionen — tippe die Bedeutung' },
   { id: 'type',    icon: 'keyboard', title: 'Tippen',          desc: 'Antwort eintippen (mit Toleranz)' },
+  { id: 'cloze',   icon: 'target',   title: 'Lückentext',      desc: 'Fehlendes Wort im Satz ergänzen' },
   { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',       desc: 'Hör zu, dann antworte' }
 ];
 
@@ -87,5 +96,43 @@ export function renderSetup(onStart) {
   });
 
   container.appendChild(opts);
+
+  // Themen-Lektionen — kuratierter Pfad nach Kategorie über alle Dialekte
+  container.appendChild(el('div', { class: 'section-head', style: { marginTop: '32px' } },
+    el('div', {},
+      el('h3', { style: { fontSize: '1.5rem' } }, '🎯 Themen-Lektionen'),
+      el('div', { class: 'lede' }, 'Fokussiert nach Kategorie — quer durch alle Dialekte.')
+    )
+  ));
+
+  const themen = el('div', { class: 'dialekt-grid' });
+  // Counts per kategorie über alle Dialekte
+  const countByKat = {};
+  ALLE_AUSDRUECKE.forEach(a => {
+    countByKat[a.kategorie] = (countByKat[a.kategorie] || 0) + 1;
+  });
+
+  KATEGORIE_LIST.forEach((kat, i) => {
+    const count = countByKat[kat.id] || 0;
+    if (count === 0) return;
+    const color = THEMEN_FARBEN[i % THEMEN_FARBEN.length];
+    const card = el('button', {
+      class: 'dialekt-card',
+      style: { '--dc': color },
+      onClick: () => onStart({ source: 'kategorie:' + kat.id, mode: currentMode })
+    },
+      el('span', { class: 'dc-flag' }, kat.icon),
+      el('div', { class: 'dc-name' }, kat.label),
+      el('div', { class: 'dc-region' }, 'Thema · alle Dialekte'),
+      el('div', { class: 'dc-desc' }, `Alle ${kat.label.toLowerCase().replace(/ &.*$/, '')}-Ausdrücke kompakt — perfekt für eine Themen-Session.`),
+      el('div', { class: 'dc-foot' },
+        el('span', { class: 'dc-count' }, `${count} Karten`),
+        el('span', { class: 'dc-arrow' }, el('span', { html: '→' }))
+      )
+    );
+    themen.appendChild(card);
+  });
+  container.appendChild(themen);
+
   return container;
 }

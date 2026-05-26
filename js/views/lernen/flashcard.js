@@ -6,6 +6,8 @@ import { confettiBurst } from '../../util/motion.js';
 import { icon } from '../../util/icons.js';
 import { sfx, vibrate } from '../../util/sounds.js';
 import { createWaveform } from '../../util/waveform.js';
+import { buildCloze } from '../../util/cloze.js';
+import { shareCard } from '../../util/share-card.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
 const SWIPE_THRESHOLD = 100;
@@ -66,6 +68,49 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     // Auto-play beim Erscheinen
     setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
+  } else if (mode === 'cloze') {
+    // Lückentext: Beispielsatz mit ausgeschnittenem Ausdruck
+    const { before, hidden, after, found } = buildCloze(c.beispiel || '', c.ausdruck);
+    const expected = found ? hidden : c.ausdruck;
+    front.appendChild(el('div', { class: 'fc-label' }, '✎ Lückentext · ' + c.dialektFlag + ' ' + c.dialektName));
+    if (found) {
+      const sentence = el('div', { class: 'fc-cloze-sentence' });
+      sentence.appendChild(document.createTextNode(before));
+      sentence.appendChild(el('span', { class: 'fc-cloze-blank' }, '_____'));
+      sentence.appendChild(document.createTextNode(after));
+      front.appendChild(sentence);
+    } else {
+      front.appendChild(el('div', { class: 'fc-cloze-sentence' }, (c.beispiel || '') + ' _____'));
+    }
+    front.appendChild(el('div', { class: 'fc-hint' }, 'Welches Wort fehlt? (Hochdeutsch: ' + c.hochdeutsch + ')'));
+    const clozeInput = el('input', {
+      class: 'fc-type-input',
+      type: 'text',
+      placeholder: 'Wort eingeben…',
+      autocomplete: 'off',
+      spellcheck: 'false'
+    });
+    const clozeFeedback = el('div', { class: 'fc-type-feedback' });
+    front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
+      clozeInput, clozeFeedback,
+      el('button', {
+        class: 'btn btn-primary',
+        onClick: () => {
+          const ok = checkTypedAnswer(clozeInput.value, expected);
+          const distance = levenshteinSimple(normalizeForType(clozeInput.value), normalizeForType(expected));
+          clozeFeedback.classList.remove('is-ok', 'is-close', 'is-wrong');
+          if (ok) { clozeFeedback.classList.add('is-ok'); clozeFeedback.textContent = '✓ Richtig — ' + expected; }
+          else if (distance <= 2) { clozeFeedback.classList.add('is-close'); clozeFeedback.textContent = '◐ Fast — ' + expected; }
+          else { clozeFeedback.classList.add('is-wrong'); clozeFeedback.textContent = '✗ ' + expected; }
+          onFlip(card);
+        }
+      }, 'Prüfen')
+    ));
+    setTimeout(() => clozeInput.focus(), 80);
+    back.appendChild(el('div', { class: 'fc-label' }, 'Vollständiger Satz'));
+    back.appendChild(el('div', { class: 'fc-cloze-full' }, c.beispiel || ''));
+    back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + (c.beispiel_hd || c.hochdeutsch)));
+    back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'type') {
     // Tipp-Modus: User tippt die Hochdeutsch-Übersetzung
     front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
@@ -178,7 +223,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     speakControl(c)
   ));
 
-  wrap.appendChild(el('div', { style: { textAlign: 'center', marginTop: '20px' } },
+  wrap.appendChild(el('div', { style: { textAlign: 'center', marginTop: '20px', display: 'flex', gap: '8px', justifyContent: 'center', flexWrap: 'wrap' } },
     el('button', {
       class: 'btn btn-ghost',
       onClick: () => {
@@ -186,7 +231,22 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
         toast(added ? 'Zu Favoriten hinzugefügt ♥' : 'Aus Favoriten entfernt', 'success', 1400);
         onRerender();
       }
-    }, fav ? '♥ Aus Favoriten' : '♡ Zu Favoriten')
+    }, fav ? '♥ Aus Favoriten' : '♡ Zu Favoriten'),
+    el('button', {
+      class: 'btn btn-ghost',
+      onClick: async (e) => {
+        e.currentTarget.disabled = true;
+        try {
+          const result = await shareCard(c);
+          toast(result === 'shared' ? 'Karte geteilt ✓' : 'Bild heruntergeladen ↓', 'success', 1600);
+        } catch (err) {
+          toast('Teilen fehlgeschlagen', 'error', 2000);
+        } finally {
+          e.currentTarget.disabled = false;
+        }
+      },
+      title: 'Karte als Bild teilen'
+    }, '📤 Teilen')
   ));
 
   return wrap;
