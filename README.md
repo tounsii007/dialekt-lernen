@@ -1,126 +1,259 @@
 # Dialekto · Deutsche Dialekte lernen
 
-Eine moderne, erweiterbare Web-App zum Lernen deutscher Dialekte aus verschiedenen Bundesländern und Regionen. Komplett auf Hochdeutsch erklärt.
+Eine moderne, erweiterbare Web-App (PWA) zum Lernen deutscher Dialekte aus
+verschiedenen Bundesländern und Regionen. Komplett auf Hochdeutsch erklärt,
+ohne Backend — alle Daten bleiben lokal im Browser.
+
+**Stand: 12 Dialekte · 3.312 Ausdrücke**
 
 ## Features
 
-- **9 Dialekte** vorinstalliert: Hessisch, Berlinisch, Bayerisch, Sächsisch, Schwäbisch, Kölsch, Plattdeutsch, Schweizerdeutsch, Wienerisch
-- **Karteikarten-Modus** mit 3D-Flip-Animation und Bewertung (leicht/mittel/schwer)
-- **Quiz** mit drei Modi: Dialekt → Hochdeutsch, Hochdeutsch → Dialekt, Region erraten
-- **Suchfunktion** über alle Ausdrücke und Bedeutungen
-- **Favoriten** zum Speichern wichtiger Ausdrücke
-- **Fortschritt** mit Streak-Zähler, Lernstatistik und Quiz-Verlauf
-- **Aussprache** über die Web Speech API (Browser-TTS)
-- **Hell-/Dunkel-Modus** (manuell oder automatisch nach Systemvorgabe)
+### Lernen & Wiederholen
+- **12 Dialekte** vorinstalliert: Hessisch, Berlinisch, Bayerisch, Sächsisch,
+  Schwäbisch, Kölsch, Plattdeutsch, Schwizerdütsch, Wienerisch, Fränkisch,
+  Ruhrdeutsch, Alemannisch
+- **Karteikarten-Modus** mit 3D-Flip-Animation, Drag-Bewertung
+  (leicht / mittel / schwer), Audio- und Tipp-Modus
+- **SM-2 Spaced-Repetition** — fällige Karten werden priorisiert,
+  Easiness-Factor passt sich an (Anki-Style)
+- **Quiz** in drei Modi: Dialekt → Hochdeutsch, Hochdeutsch → Dialekt,
+  Region erraten — mit Timer-Modus
+
+### Discovery
+- **Vergleich** — gleicher Ausdruck quer durch alle Dialekte
+- **Karte** — geografische Übersicht
+- **Statistiken** — Quiz-Trend, Lern-Heatmap, Tages-Aktivität
+- **Suche / Command-Palette** mit Fuzzy-Match (Tippfehler-tolerant)
+
+### Engagement
+- **XP & Level-System** — Erfahrungspunkte für jede Lernaktion, 10 Level-Titel
+- **Achievements** — Meilensteine wie „Erste Karte", „7 Tage Streak"
+- **Tagesziele** — 5 / 10 / 20 / 50 Karten pro Tag, Heatmap der Aktivität
+- **Streak** — Anzahl aufeinanderfolgender Lerntage
+- **Daily Expression** — täglich wechselnder „Ausdruck des Tages"
+
+### Audio & UX
+- **Sprach-spezifische TTS** — Schwizerdütsch nutzt `de-CH`-Stimme,
+  Wienerisch `de-AT`, Plattdeutsch `nds` (Fallback auf `de-DE`)
+- **Eigene Notizen** pro Ausdruck (max. 280 Zeichen)
+- **Favoriten** zum Sammeln wichtiger Ausdrücke
+- **Hell- / Dunkel-Modus** (manuell oder automatisch nach Systemvorgabe)
+- **Farb-Paletten** zum Anpassen des Designs
+- **Sound-Effekte** + Haptik bei Interaktion
+- **Onboarding-Tour** für neue User
 - **Tastatur-Shortcuts** für schnelle Navigation
 - **Responsive Design** für Mobile, Tablet und Desktop
-- **Lokal persistent**: Alles im Browser, kein Backend nötig
+
+### Datenschutz & Offline
+- **Lokal persistent** — alles im Browser (localStorage), kein Backend
+- **PWA** — installierbar, voll offline-fähig (Service Worker)
+- **Export / Import** — JSON-Backup, CSV/Anki-Export
+- **Quiz-Sharing** — Ergebnis als kompaktes Token in der URL teilen
+- **„Korrektur melden"** — falsche Übersetzungen direkt aus der App
+  an das GitHub-Repo melden
 
 ## Tastatur-Shortcuts
 
-| Taste       | Aktion                              |
-|-------------|-------------------------------------|
-| `S` oder `/`| Suche öffnen                        |
-| `T`         | Theme umschalten (hell/dunkel/auto) |
-| `Esc`       | Suche schließen                     |
-| `Leertaste` | Karteikarte umdrehen                |
-| `1`/`2`/`3` | Karte bewerten / Quiz-Antwort       |
-| `←`/`→`     | In Karteikarten navigieren          |
+| Taste        | Aktion                              |
+|--------------|-------------------------------------|
+| `S` / `/`    | Suche / Command-Palette öffnen      |
+| `T`          | Theme umschalten (hell / dunkel)    |
+| `M`          | Sounds ein/aus                      |
+| `Esc`        | Suche schließen                     |
+| `Leertaste`  | Karteikarte umdrehen                |
+| `1` / `2` / `3` | Karte bewerten / Quiz-Antwort    |
+| `←` / `→`    | In Karteikarten navigieren          |
+| `Ctrl+Shift+V` | Daten-Validator-Report im Browser |
 
-## Starten
+## Starten (Entwicklung)
 
 ```bash
-# Mit beliebigem statischen Webserver, z. B.:
+# Mit npm script (startet http-server auf Port 5173):
+npm run dev
+
+# Oder mit beliebigem statischen Webserver:
 npx http-server . -p 5173
-# oder
 python -m http.server 5173
 ```
 
 Anschließend `http://localhost:5173` im Browser öffnen.
 
-> Wichtig: Die App nutzt ES Modules — daher muss sie über einen Webserver geladen werden, nicht direkt per `file://`.
+> Wichtig: Die App nutzt ES Modules — daher muss sie über einen Webserver
+> geladen werden, nicht direkt per `file://`.
+
+## NPM-Scripts
+
+```bash
+npm run dev           # Lokaler Dev-Server (http-server, Port 5173)
+npm run validate      # Validiert alle Dialekt-Daten (Schema, IDs, Punktuation, …)
+npm run dedupe        # Entfernt Duplikate aus Dialekt-Daten
+npm run sync-version  # Spiegelt js/version.js → sw.js (Precache + Cache-Key)
+npm test              # Führt alle Unit-Tests aus (node --test)
+npm run ci            # validate + test (für CI-Pipelines)
+```
+
+## Release-Workflow
+
+1. App-Version in [`js/version.js`](js/version.js) bumpen (`APP_VERSION`).
+2. `npm run sync-version` ausführen — aktualisiert
+   [`sw.js`](sw.js) (Cache-Key, Precache-Liste).
+3. `npm run ci` — Validierung + Tests.
+4. Commit + Push.
 
 ## Neuen Dialekt hinzufügen
 
 Die App ist bewusst erweiterbar:
 
-1. Lege eine neue Datei in `data/dialekte/` an, z. B. `fraenkisch.js`.
+1. Lege eine neue Datei in [`data/dialekte/`](data/dialekte) an,
+   z. B. `meindialekt.js`.
 2. Füge die Daten im gleichen Schema wie die bestehenden Dialekte ein:
 
 ```js
-// data/dialekte/fraenkisch.js
+// data/dialekte/meindialekt.js
 export default {
-  id: 'fraenkisch',
-  name: 'Fränkisch',
-  region: 'Franken (Nordbayern)',
-  bundesland: 'Bayern',
-  flag: '🍺',
+  id: 'meindialekt',
+  name: 'Mein Dialekt',
+  region: 'Region X',
+  bundesland: 'Bundesland Y',
+  flag: '🦊',
   farbe: '#8b5cf6',
-  beschreibung: 'Fränkisch wird im Norden Bayerns gesprochen…',
-  sprecher: 'ca. 4 Mio.',
+  beschreibung: 'Mein Dialekt wird in … gesprochen. Charakteristisch sind …',
+  sprecher: 'ca. X Mio.',
+  lang: 'de-DE', // BCP-47 für TTS (de-DE, de-CH, de-AT, nds, …)
   ausdruecke: [
     {
-      id: 'fr-001',
-      ausdruck: 'Bassd scho',
-      hochdeutsch: 'Passt schon',
-      bedeutung: 'Universale fränkische Zustimmung, gelassen und freundlich.',
-      beispiel: 'Bassd scho, gell?',
-      beispiel_hd: 'Passt schon, oder?',
-      kategorie: 'redensart'
-    }
+      id: 'md-001',
+      ausdruck: 'Servus',
+      hochdeutsch: 'Hallo',
+      bedeutung: 'Universelle Begrüßung — mindestens 80 Zeichen Erklärung.',
+      beispiel: 'Servus, wie geht\'s?',
+      beispiel_hd: 'Hallo, wie geht es dir?',
+      kategorie: 'begruessung',
+    },
     // weitere Ausdrücke …
-  ]
+  ],
 };
 ```
 
-3. Importiere die Datei in `data/dialekte.js` und füge sie ins `DIALEKTE`-Array ein:
+3. Importiere die Datei in [`data/dialekte.js`](data/dialekte.js)
+   und füge sie ins `DIALEKTE`-Array ein:
 
 ```js
-import fraenkisch from './dialekte/fraenkisch.js';
-export const DIALEKTE = [/* … */, fraenkisch];
+import meindialekt from './dialekte/meindialekt.js';
+export const DIALEKTE = [/* … */, meindialekt];
 ```
 
-Die App rendert den neuen Dialekt automatisch in allen Views (Übersicht, Suche, Karteikarten, Quiz, …).
+4. `npm run validate` ausführen — prüft Schema, IDs, Kategorien, Punktuation.
+5. `npm run sync-version` — fügt die neue Datei zum Service-Worker-Precache hinzu.
+
+Die App rendert den neuen Dialekt automatisch in allen Views
+(Übersicht, Suche, Karteikarten, Quiz, …).
 
 ### Kategorien
 
-Verfügbare Kategorien (`a.kategorie`): siehe `data/kategorien.js`.
+Verfügbare Kategorien (`a.kategorie`): siehe
+[`data/kategorien.js`](data/kategorien.js).
 Neue Kategorien können dort einfach ergänzt werden.
 
 ## Projektstruktur
 
 ```
 dialekt-lernen/
-├── index.html                  # Einstiegspunkt
-├── styles.css                  # Design-System (CSS-Variablen für Theming)
+├── index.html               # Einstiegspunkt + CSP + noscript-Fallback
+├── styles.css               # Design-System (CSS-Variablen, Theming)
+├── manifest.webmanifest     # PWA-Manifest
+├── sw.js                    # Service Worker (auto-generierter Precache)
+├── package.json             # NPM-Scripts (zero deps in production)
+│
 ├── data/
-│   ├── kategorien.js           # Globale Kategorien
-│   ├── dialekte.js             # Zentrales Register aller Dialekte
-│   └── dialekte/               # Einzelne Dialekt-Datendateien
-│       ├── hessisch.js
-│       ├── berlinisch.js
+│   ├── kategorien.js        # Globale Kategorien
+│   ├── dialekte.js          # Zentrales Register aller Dialekte
+│   └── dialekte/            # Einzelne Dialekt-Datendateien
+│       ├── alemannisch.js
+│       ├── bayerisch.js
 │       └── …
-└── js/
-    ├── app.js                  # Hauptmodul: Router, Theme, Suche, Shortcuts
-    ├── store.js                # localStorage-Persistenz (Theme, Favoriten, Fortschritt)
-    ├── util.js                 # Hilfsfunktionen, DOM-Helper, Web Speech
-    └── views/
-        ├── home.js             # Startseite mit Hero, Daily Expression
-        ├── entdecken.js        # Dialekt-Übersicht
-        ├── dialektDetail.js    # Einzelner Dialekt mit Filter
-        ├── lernen.js           # Karteikarten-Modus
-        ├── quiz.js             # Multiple-Choice-Quiz
-        ├── favoriten.js        # Favoriten & Statistik
-        └── partials.js         # Wiederverwendbare Komponenten
+│
+├── js/
+│   ├── app.js               # Einstiegspunkt: Init-Reihenfolge
+│   ├── version.js           # Single-Source-of-Truth für die App-Version
+│   ├── router.js            # Hash-Router, lazy-loadet schwere Views
+│   ├── search.js            # Command-Palette
+│   ├── nav.js               # Navigation + Mobile-Nav
+│   ├── theme.js             # Theme + Paletten
+│   ├── shortcuts.js         # Globale Tastatur-Shortcuts
+│   ├── store.js             # Barrel-Export aller Store-Module
+│   ├── util.js              # Barrel-Export der Util-Module
+│   ├── store/               # Persistenter Zustand
+│   │   ├── state.js         # localStorage-Wrapper + Defaults
+│   │   ├── srs.js           # SM-2 Spaced-Repetition
+│   │   ├── xp.js            # XP & Level
+│   │   ├── goals.js         # Tagesziele
+│   │   ├── achievements.js  # Achievements
+│   │   ├── streak.js        # Streak-Tracking
+│   │   ├── transfer.js      # Export / Import / CSV / Quiz-Share
+│   │   └── …
+│   ├── util/                # Hilfs-Module
+│   │   ├── speech.js        # TTS mit Voice-Picker (lang-aware)
+│   │   ├── feedback.js      # „Korrektur melden"
+│   │   ├── fuzzy.js         # Fuzzy-Search-Index
+│   │   ├── pwa.js           # PWA-Setup + Update-Detection
+│   │   └── …
+│   └── views/               # Renderer pro Route
+│       ├── home.js
+│       ├── entdecken.js
+│       ├── dialektDetail.js
+│       ├── lernen.js → lernen/
+│       ├── quiz.js → quiz/
+│       ├── favoriten.js     # + Daten-Tools (Backup, CSV-Export)
+│       ├── statistiken.js
+│       ├── karte.js
+│       ├── vergleich.js
+│       └── partials.js      # Wiederverwendbare Komponenten
+│
+├── tests/                   # Unit-Tests (node --test)
+│   ├── transfer.test.js     # Export/Import/Reset/CSV/Quiz-Share
+│   ├── srs.test.js          # SM-2-Algorithmus
+│   ├── fuzzy.test.js        # Suche
+│   ├── feedback.test.js     # Issue-URL-Builder
+│   ├── speech.test.js       # Voice-Picker
+│   └── daily.test.js
+│
+└── tools/                   # Build- und Wartungs-Skripte
+    ├── validate.mjs         # Konsolidierter Daten-Validator
+    ├── validate-data.mjs    # Compat-Shim → validate.mjs
+    ├── dedupe.mjs           # Duplikat-Entferner
+    ├── sync-version.mjs     # Spiegelt version.js → sw.js + Precache
+    └── test.mjs             # Portabler Test-Runner
 ```
 
 ## Architektur
 
-- **Frameworkfrei**: Reines HTML/CSS/JavaScript mit ES Modules.
-- **Datengetrieben**: Dialekte und Kategorien sind reine Daten — die UI ergibt sich automatisch.
-- **Lokale Persistenz**: localStorage für Theme, Favoriten, Lernfortschritt.
-- **Web Standards**: `prefers-color-scheme`, Web Speech API, History/Hash-Router.
+- **Frameworkfrei** — reines HTML/CSS/JavaScript mit ES Modules
+- **Datengetrieben** — Dialekte und Kategorien sind reine Daten,
+  die UI ergibt sich automatisch
+- **Lokale Persistenz** — `localStorage` für Theme, Favoriten, SRS,
+  XP, Goals, Achievements, Notizen, Quiz-Verlauf
+- **PWA** — Service Worker mit Strategy-Mix:
+  - Navigation: network-first → cache fallback
+  - Statische Assets: stale-while-revalidate
+  - Bilder: cache-first mit LRU-Limit
+  - Fonts: stale-while-revalidate
+- **Sicherheit** — strikte CSP-Header (`script-src 'self'`, Fonts whitelisted),
+  Referrer-Policy `strict-origin-when-cross-origin`
+- **Web Standards** — `prefers-color-scheme`, Web Speech API mit
+  Voice-Picker, History/Hash-Router, View Transitions
+
+## Beitragen
+
+Inhaltliche Korrekturen (falsche Übersetzungen, Tippfehler, fehlende Beispiele)
+können direkt aus der App heraus gemeldet werden — der Flaggen-Button auf jeder
+Ausdrucks-Karte öffnet ein vor-ausgefülltes
+[GitHub-Issue](https://github.com/tounsii007/dialekt-lernen/issues/new).
+
+Code-Beiträge: Fork → Branch → PR. Bitte vorher `npm run ci` durchlaufen lassen.
+
+Details: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Lizenz
 
-Frei zur eigenen Nutzung und Erweiterung.
+Siehe [`LICENSE`](LICENSE).
