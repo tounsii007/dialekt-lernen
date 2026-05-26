@@ -5,13 +5,30 @@ Dialekto ist bewusst klein, datengetrieben und frameworkfrei. Der häufigste Bei
 ## Erste Schritte
 
 1. Repo forken und klonen
-2. Mit einem statischen Webserver starten:
+2. Dev-Server starten:
    ```bash
+   npm run dev
+   # oder direkt:
    npx http-server . -p 5173
-   # oder
-   python -m http.server 5173
    ```
-3. Im Browser `http://localhost:5173` öffnen — Live-Reload geht über Browser-Reload (es gibt absichtlich keinen Build-Step).
+3. Im Browser `http://localhost:5173` öffnen — Live-Reload geht über Browser-Reload.
+
+Es gibt absichtlich **keinen Bundler/Transpile-Step** in Production — die App
+läuft als ES-Module-Web-App direkt aus dem Repo. NPM-Scripts sind nur für
+Tests, Validator und Service-Worker-Sync nötig (Zero-Dep, Node ≥ 18).
+
+## NPM-Scripts
+
+```bash
+npm run dev           # Lokaler Dev-Server (Port 5173, no-cache)
+npm run validate      # Validiert alle Dialekt-Daten (Schema, Duplikate, Punktuation)
+npm test              # Führt alle Unit-Tests aus (node --test)
+npm run ci            # validate + test (für CI-Pipelines / Pre-Push)
+npm run dedupe        # Entfernt Duplikate aus Dialekt-Daten
+npm run sync-version  # Spiegelt js/version.js → sw.js (Cache-Key + Precache)
+```
+
+Vor einem PR bitte immer `npm run ci` durchlaufen lassen.
 
 ## Branch-Naming
 
@@ -63,23 +80,37 @@ In `data/kategorien.js` ergänzen — Icon (Emoji), Label, ID. Die App rendert a
 
 ## Tests
 
-Es gibt aktuell keine automatischen Tests. Vor einem PR bitte manuell prüfen:
+Es gibt **63 Unit-Tests** in `tests/` (node --test, keine Dependencies):
+
+```bash
+npm test
+```
+
+Tests decken ab: `transfer.js` (Backup/Restore/CSV), `srs.js` (SM-2-Algorithmus),
+`fuzzy.js` (Suche), `daily.js` (Tages-Seed), `feedback.js` (Issue-URL),
+`speech.js` (Voice-Picker), `cloze.js` (Lückentext), `share-card.js` (PNG-Export).
+
+Bei UI-Änderungen zusätzlich manuell prüfen:
 
 - [ ] Neuer Dialekt erscheint in der Übersicht
-- [ ] Karteikarten-Modus zeigt die Ausdrücke korrekt
+- [ ] Karteikarten-Modi (normal/reverse/mc/type/cloze/audio) funktionieren
 - [ ] Quiz funktioniert in allen drei Modi
 - [ ] Suche findet die neuen Ausdrücke
 - [ ] Favorit-Speicherung funktioniert
 - [ ] Hell- und Dunkelmodus sehen beide gut aus
-- [ ] Mobile-Layout (Browser DevTools, iPhone-Viewport) ist sauber
+- [ ] Mobile-Layout (320, 375, 768, 1024, 1920 px) ist sauber
+- [ ] Touch-Targets mindestens 44×44 auf coarse pointer
 
 ## Pull-Request-Checkliste
 
 - [ ] Branch ist von `main` abgeleitet
 - [ ] Commit-Messages folgen Conventional Commits
+- [ ] `npm run ci` läuft grün (Validator + Tests)
 - [ ] Manuelle Tests durchlaufen (s. o.)
 - [ ] `CHANGELOG.md` unter `## [Unreleased]` aktualisiert
-- [ ] Bei neuen Dialekten: mindestens 30 Ausdrücke quer durch ≥ 5 Kategorien
+- [ ] Bei neuen Dialekten: mindestens 30 Ausdrücke quer durch ≥ 5 Kategorien,
+      `lang`-Feld gesetzt (BCP-47), nach `data/dialekte.js` importiert
+- [ ] Bei neuen Assets: `npm run sync-version` ausgeführt (aktualisiert SW-Precache)
 - [ ] Keine `console.log()` im Produktiv-Code
 
 ## Sicherheit
