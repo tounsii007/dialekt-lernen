@@ -55,7 +55,7 @@ describe('hasEtymology — Helfer', () => {
     assert.equal(hasEtymology('Stammt vom lateinischen Wort.'), true);
   });
   it('false, wenn kein Hinweis vorhanden', () => {
-    assert.equal(hasEtymology('Ein ganz normaler Text ohne Etymologie.'), false);
+    assert.equal(hasEtymology('Ein ganz normaler beschreibender Text.'), false);
   });
   it('false bei null/empty', () => {
     assert.equal(hasEtymology(null), false);

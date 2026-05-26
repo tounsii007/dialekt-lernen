@@ -17,64 +17,74 @@ function getRedensarten() {
 }
 
 // Heuristische Cluster-Titel — gewählt anhand der hochdeutschen Bedeutung.
+// Wir matchen per Substring auf der normalisierten Form (lowercase, Umlaute
+// aufgelöst) — das ist toleranter als Word-Boundary-Regex.
 // Pro Cluster:
-//   • label: Anzeigentitel (auch Karten-Titel in der Übersicht)
-//   • emoji: kleine Identifikation
-//   • match(hd): liefert true, wenn die hochdeutsche Bedeutung in den Cluster passt
+//   • label:    Anzeigentitel
+//   • emoji:    kleines Symbol
+//   • keywords: Substrings, von denen mindestens einer passen muss
 const CLUSTER_DEFS = [
+  // Spezifische Cluster ZUERST — sonst klauen breite Cluster wie „verneinung"
+  // (matcht „nicht") die spezifischen Treffer wie „nicht wahr?".
+  {
+    id: 'fragen-anhang',
+    label: 'Frage-Anhängsel („gell, woll, ne?")',
+    emoji: '❔',
+    keywords: ['nicht wahr', 'oder?', '/ oder', 'oder ', 'gell', 'gelle', 'odda', 'wer? / nicht']
+  },
   {
     id: 'zustimmung',
     label: 'Ausdrücke der Zustimmung',
     emoji: '👍',
-    match: (hd) => /\b(passt|in ordnung|okay|alles klar|geht klar|einverstanden|stimmt|natuerlich|sicher doch|gerne|jawohl)\b/.test(hd),
+    keywords: ['passt', 'in ordnung', 'alles klar', 'okay', 'einverstanden', 'stimmt', 'sicher', 'jawohl', 'natuerlich', 'gerne']
   },
   {
-    id: 'begruessung',
-    label: 'Begrüßungs- & Abschieds-Redensarten',
-    emoji: '👋',
-    match: (hd) => /\b(hallo|guten tag|gruess gott|wie gehts|grueezi|moin|servus|tschuess|auf wiedersehen|pfueati|tschau|bis bald|ade)\b/.test(hd),
-  },
-  {
-    id: 'schimpf-mild',
-    label: 'Schimpfwörter (mild)',
-    emoji: '😤',
-    match: (hd) => /\b(dummkopf|trottel|tolpel|depp|narr|spinner|idiot|nervt|aergerlich|nervtoeter|esel|schaf)\b/.test(hd),
+    id: 'verneinung',
+    label: 'Verneinungen & „Geht nicht"',
+    emoji: '🚫',
+    keywords: ['nicht', 'nichts', 'keine', 'kein ', 'niemals', 'gar nichts', 'unmoeglich', 'auf keinen fall']
   },
   {
     id: 'erstaunen',
     label: 'Ausrufe des Erstaunens',
     emoji: '😲',
-    match: (hd) => /\b(mein gott|allmaechtig|um himmels willen|ach du|oh weh|um gottes willen|wahnsinn|krass|unglaublich|donnerwetter)\b/.test(hd),
+    keywords: ['mein gott', 'allmaechtig', 'um himmels willen', 'ach du', 'oh weh', 'um gottes willen', 'wahnsinn', 'krass', 'unglaublich', 'donnerwetter', 'verflixt', 'mannometer']
   },
   {
-    id: 'verneinung',
-    label: 'Verneinungen & Ablehnungen',
-    emoji: '🚫',
-    match: (hd) => /\b(nein|niemals|geht nicht|kein|nicht moeglich|auf keinen fall|unmoeglich|aufhoeren|niente)\b/.test(hd),
+    id: 'reden-schwatzen',
+    label: 'Reden, Schnacken, Schwätzen',
+    emoji: '🗣️',
+    keywords: ['reden', 'plappern', 'schwatzen', 'quatschen', 'schnacken', 'erzaehlen', 'quatsch', 'unsinn', 'witz', 'witze', 'schnauze', 'plaudern']
   },
   {
-    id: 'zeit-wetter',
+    id: 'menschen-charakter',
+    label: 'Über Menschen & Charakter',
+    emoji: '🧑',
+    keywords: ['mensch', 'kerl', 'typ', 'frau', 'mann', 'kind', 'nachbar', 'kollege', 'fremder', 'liebling', 'streber', 'aengstlich', 'verrueckt', 'spinner', 'narr', 'trottel', 'depp', 'idiot']
+  },
+  {
+    id: 'wetter-zeit',
     label: 'Wetter & Zeit',
     emoji: '🌦️',
-    match: (hd) => /\b(regen|sonne|wetter|kalt|warm|nass|frostig|stuermisch|nieselt|matschig|morgen|gestern|heute|spaeter)\b/.test(hd),
+    keywords: ['regen', 'sonne', 'wetter', 'kalt', 'warm', 'nass', 'frostig', 'stuermisch', 'nieselt', 'matschig', 'morgen', 'gestern', 'heute', 'spaeter', 'gleich', 'sofort', 'frueher']
   },
   {
-    id: 'liebe',
-    label: 'Liebe & Zuneigung',
-    emoji: '💚',
-    match: (hd) => /\b(liebling|schatz|herzchen|freundin|freund|verliebt|gern haben|ich liebe|ich mag)\b/.test(hd),
+    id: 'koerper-gefuehl',
+    label: 'Körper, Müdigkeit & Gefühle',
+    emoji: '😴',
+    keywords: ['muede', 'erschoepft', 'kaputt', 'krank', 'gesund', 'hunger', 'durst', 'satt', 'froh', 'traurig', 'aerger', 'wut', 'gluecklich']
   },
   {
-    id: 'essen',
-    label: 'Rund ums Essen',
+    id: 'essen-trinken',
+    label: 'Rund ums Essen & Trinken',
     emoji: '🍽️',
-    match: (hd) => /\b(hunger|essen|durst|trinken|lecker|satt|hungrig|kaese|brot|wurst|kartoffel|kuchen|hopfentee)\b/.test(hd),
+    keywords: ['essen', 'lecker', 'kaese', 'brot', 'wurst', 'bier', 'wein', 'kartoffel', 'kuchen', 'leckerei', 'futter']
   },
   {
-    id: 'mensch',
-    label: 'Über andere Menschen',
-    emoji: '🧑‍🤝‍🧑',
-    match: (hd) => /\b(typ|mensch|kerl|frau|mann|kind|nachbar|kollege|fremder|altchen|liebling)\b/.test(hd),
+    id: 'kultur-brauchtum',
+    label: 'Kultur & Brauchtum',
+    emoji: '🎭',
+    keywords: ['karneval', 'fasching', 'fasnet', 'maibaum', 'volksfest', 'oktoberfest', 'kirmes', 'kirchweih', 'sitzung']
   },
 ];
 
@@ -83,8 +93,14 @@ const FALLBACK_CLUSTER = { id: 'sonstige', label: 'Weitere Redensarten', emoji: 
 
 /**
  * Berechnet Cluster aus allen Redensarten.
- * Jeder Ausdruck landet in höchstens einem Cluster.
+ * Jeder Ausdruck landet in höchstens einem Cluster (erstes Match gewinnt).
+ * Wir nutzen Substring-Suche statt strikter Word-Boundary-Regex —
+ * das funktioniert robust auch mit zusammengesetzten Wörtern.
  */
+function matchesCluster(def, hdNorm) {
+  return def.keywords.some(kw => hdNorm.includes(kw));
+}
+
 function computeClusters() {
   const all = getRedensarten();
   const clusters = CLUSTER_DEFS.map(c => ({ ...c, items: [] }));
@@ -92,7 +108,7 @@ function computeClusters() {
 
   for (const a of all) {
     const hdNorm = normalize(a.hochdeutsch || '');
-    const cluster = clusters.find(c => c.match(hdNorm));
+    const cluster = clusters.find(c => matchesCluster(c, hdNorm));
     if (cluster) cluster.items.push(a);
     else fallback.items.push(a);
   }
