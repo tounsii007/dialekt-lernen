@@ -2134,6 +2134,276 @@ export default {
       beispiel: 'Heid am Abend gehn ma zum Stammtisch!',
       beispiel_hd: 'Heute Abend gehen wir zum Stammtisch!',
       kategorie: 'alltag'
+    },
+    {
+      id: 'by-271',
+      ausdruck: 'Maibaam',
+      hochdeutsch: 'Maibaum',
+      bedeutung: 'Der „Maibaam" ist das Herzstück des bayerischen Maibrauchtums — ein hoher, geschmückter Fichtenstamm, der am 1. Mai vom Nachbardorf bewacht oder gestohlen wird. „Heuer ham\'s uns den Maibaam wieder klaut!" Das Aufstellen ist Männersache, oft per Hand mit langen Stangen, das anschließende Wirtshausfest verbindet Generationen. Wer den Baum stiehlt, bekommt ihn nur gegen Bier und Brotzeit zurück.',
+      beispiel: 'Mia ham heuer den schensten Maibaam im Landkreis!',
+      beispiel_hd: 'Wir haben dieses Jahr den schönsten Maibaum im Landkreis!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-272',
+      ausdruck: 'Florianijünger',
+      hochdeutsch: 'Feuerwehrleute',
+      bedeutung: 'Die „Florianijünger" sind die freiwilligen Feuerwehrleute, benannt nach Heiliger Florian, dem Schutzpatron der Feuerwehr. „D\'Florianijünger ham\'s Dorffest gerett\', da hot\'s g\'brennt!" In Bayern hat fast jedes Dorf eine eigene freiwillige Feuerwehr mit Festzug, Tag der offenen Tür, Florianikapelle. Eine zentrale gesellschaftliche Säule im ländlichen Bayern — neben Schützenverein und Trachtenverein.',
+      beispiel: 'Die Florianijünger ham heid ihren Florianitag im Festzelt.',
+      beispiel_hd: 'Die Feuerwehrleute haben heute ihren Florianstag im Festzelt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-273',
+      ausdruck: 'Goaßlschnoizer',
+      hochdeutsch: 'Goaßlschnalzer (Peitschenknaller)',
+      bedeutung: 'Ein „Goaßlschnoizer" ist ein Volkskünstler, der mit der Peitsche („Goaßl") rhythmisch knallt — bei Festen, im Trachtenverein, oft in Reihen mit fünf bis zwölf Mann. „Beim Volksfest san d\'Goaßlschnoizer aus Garmisch dabei." Die Goaßl ist eine ledergeflochtene Peitsche, der Knall entsteht durch Überschallgeschwindigkeit der Spitze. Tradition geht auf die Fuhrleute des 19. Jahrhunderts zurück.',
+      beispiel: 'D\'Goaßlschnoizer ham an unglaublichen Rhythmus!',
+      beispiel_hd: 'Die Goaßlschnalzer haben einen unglaublichen Rhythmus!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-274',
+      ausdruck: 'Tanzlmusi',
+      hochdeutsch: 'Tanzmusik',
+      bedeutung: 'Die „Tanzlmusi" — die bayerische Tanzmusik, lebhafter und schneller als die intime Stubnmusi. „Bei da Hochzeit ham\'s a Tanzlmusi g\'spuit, da is koana auf dem Stuhl bliebn." Typisch sind Schwingschritte, Polkas, Walzer, Boarische und Zwiefache. Trio oder Quartett mit Klarinette, Quetschn, Bass und Gitarre. Tanzlmusi gehört zu jedem Wirtshausfest und jedem Trachtenball.',
+      beispiel: 'Bei da Tanzlmusi war ma bis um zwoa in da Fruah dabei.',
+      beispiel_hd: 'Bei der Tanzmusik waren wir bis um zwei in der Früh dabei.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-275',
+      ausdruck: 'Hackbrett',
+      hochdeutsch: 'Hackbrett',
+      bedeutung: 'Das „Hackbrett" ist ein altes Saiteninstrument der alpenländischen Volksmusik — wird mit zwei Schlägeln gespielt, hat 25 bis 30 Saiten. „Auf da Stubnmusi spuit d\'Resi a Hackbrett, dass d\'Wänd zittern." Charakteristisch für Zwiefache, Landler und meditative Volksmusik. Berühmt durch Loisachtaler Musikanten und Klostermarienberger Sänger. Schwierig zu lernen, aber wenn man es kann, beherrscht man ein Stück bayerische Kulturseele.',
+      beispiel: 'Mei Tochter lernt scho seit fünf Jahr Hackbrett spuin.',
+      beispiel_hd: 'Meine Tochter lernt schon seit fünf Jahren Hackbrett spielen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-276',
+      ausdruck: 'Quetschn',
+      hochdeutsch: 'Akkordeon / Steirische Harmonika',
+      bedeutung: 'Die „Quetschn" — auch „Ziach" — ist das wichtigste Tanzmusik-Instrument der Bayern und Österreicher. „Da Hans spuit a wahnsinnige Quetschn beim Hochzeitsfest." Die diatonische Harmonika hat 3, 4 oder 5 Reihen mit Helikonbässen. Volksmusiker wie Hubert von Goisern haben sie über Bayern hinaus bekannt gemacht. Wer Quetschn spielen kann, ist auf jeder Feier gefragt.',
+      beispiel: 'Hol d\'Quetschn, mia spuin a Boarischen!',
+      beispiel_hd: 'Hol das Akkordeon, wir spielen einen Boarischen!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-277',
+      ausdruck: 'Boarischer',
+      hochdeutsch: 'Bayerischer (Tanz)',
+      bedeutung: 'Der „Boarische" ist der bayerische Paartanz schlechthin — ein gemütlicher 2/4- oder 4/4-Takt, oft als „Bairische Polka" bezeichnet. „Der Boarische is leicht z\'lernen, aber schwer schee zum Tanzen." Wechselschritte, Drehungen, Wechsel der Position. Praktisch jede Festkapelle hat ihn im Repertoire, jede Trachtengruppe übt ihn. Eines der Grundgerüste der alpenländischen Tanzkultur.',
+      beispiel: 'Magst mit mir an Boarischen tanzn?',
+      beispiel_hd: 'Möchtest du mit mir einen Bayerischen tanzen?',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-278',
+      ausdruck: 'Kirta',
+      hochdeutsch: 'Kirchweih',
+      bedeutung: 'Da „Kirta" — auch „Kirwa" — ist das jährliche Dorffest zum Patrozinium der Kirche, eines der wichtigsten ländlichen Bayerntermine. „Am Kirta is in jedem Dorf was Großes los!" Mit Festzelt, Schießbude, Musik, Tanz, und obligatorischer Festbraut/Festburschen. Endet oft am Kirtamontag mit dem Kirta-Auskehren. Konkurriert seit Generationen mit dem Oktoberfest um Urlaubsplanung der Familien.',
+      beispiel: 'Da Kirta in Erding is heuer wieder a Wahnsinn!',
+      beispiel_hd: 'Die Kirchweih in Erding ist dieses Jahr wieder der Wahnsinn!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-279',
+      ausdruck: 'Faschingskrapfen',
+      hochdeutsch: 'Krapfen / Berliner',
+      bedeutung: 'Die „Faschingskrapfen" — gefüllt mit Marillenmarmelade oder Vanillecreme — sind das traditionelle Gebäck der bayerischen Faschingszeit. „Beim Bäcker sang d\'Faschingskrapfen heuer wieder a Gedicht!" Werden zwischen Dreikönig und Aschermittwoch in Mengen verzehrt. In manchen Familien wird in einen Krapfen Senf gefüllt — wer ihn erwischt, hat Pech und muss eine Runde bezahlen.',
+      beispiel: 'Frau Huber, drei Faschingskrapfen, bittschön!',
+      beispiel_hd: 'Frau Huber, drei Krapfen, bitte!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-280',
+      ausdruck: 'Da Brüada',
+      hochdeutsch: 'Der Bruder',
+      bedeutung: 'In Bayern wird „Bruder" zu „Brüada" — mit verschmolzenem „r" und gedehntem „a". „Mei Brüada is älter wia i, der mog mi gscheid argern." Die familiäre Anrede ist im Bairischen besonders herzlich und wird oft auf gute Freunde übertragen: „Servus Brüada!" Geschwister-Beziehungen sind in der bayerischen Erzähltradition zentral, vom Märchen bis zur Volksoper.',
+      beispiel: 'Mei Brüada heirat\'t am Samstag in Garmisch.',
+      beispiel_hd: 'Mein Bruder heiratet am Samstag in Garmisch.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-281',
+      ausdruck: 'Schwesta',
+      hochdeutsch: 'Schwester',
+      bedeutung: '„Schwesta" — bayerische Version der Schwester mit aufgeweichtem „r". „Mei kleine Schwesta is jetzt scho ban Studium in Minga." Auch zur Anrede für Frauen in Schwesternpflicht oder Klosterschwestern verwendet: „Die Schwesta vom Frauenwört". Die familienzentrierte bayerische Kultur betont enge Geschwisterbeziehungen, oft bis ins Erwachsenenalter im Familienverband.',
+      beispiel: 'Mei Schwesta hot a neugeborenes Bauerlbüaberl griagt!',
+      beispiel_hd: 'Meine Schwester hat einen neugeborenen kleinen Jungen bekommen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-282',
+      ausdruck: 'Großvada',
+      hochdeutsch: 'Großvater',
+      bedeutung: '„Großvada" — auch „Ahnl" oder „Anandl" — ist der Großvater, im bayerischen Familienbild eine zentrale Autoritätsfigur. „Mei Großvada hot no auf da Alm a Hütte ghabt." Oft Träger von Geschichten, Mundart und Brauchtum. In der traditionellen bayerischen Großfamilie lebte der Großvater im Austragstüberl auf demselben Hof — bis ins 20. Jahrhundert hinein üblich.',
+      beispiel: 'Mei Großvada hot mir s\'Maizfischen beibracht.',
+      beispiel_hd: 'Mein Großvater hat mir das Fliegenfischen beigebracht.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-283',
+      ausdruck: 'Schwiegavada',
+      hochdeutsch: 'Schwiegervater',
+      bedeutung: 'Da „Schwiegavada" — der angeheiratete Vater — spielt in der bayerischen Hof-Tradition eine besondere Rolle, vor allem als ehemaliger Hofbesitzer. „Mei Schwiegavada is a Wirt aus Augsburg." In Geschichten oft als strenge oder herzliche Figur, je nach Standes-Konstellation. Das Verhältnis zur Schwiegerfamilie ist im bayerischen Hochzeitsbrauchtum stark geregelt.',
+      beispiel: 'Mein Schwiegavada is ganz a g\'standener Mannsbild.',
+      beispiel_hd: 'Mein Schwiegervater ist ein ganz gestandener Kerl.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-284',
+      ausdruck: 'Bauerlbüaberl',
+      hochdeutsch: 'Kleiner Bauernjunge',
+      bedeutung: 'A „Bauerlbüaberl" ist ein kleiner Bauernjunge — die liebevolle Verkleinerungsform mit doppelter Diminuierung „-erl". „Schau hin, des is a richtiger Bauerlbüaberl, mit Latzhose und allem!" Die bayerische Sprache liebt Verkleinerungen, vor allem in der Familiensprache. „Bauerlmadl" ist die weibliche Form. Beide Begriffe stehen für ein authentisches, naturverbundenes Aufwachsen.',
+      beispiel: 'Mei kloana is no a richtigs Bauerlbüaberl, mit Strohhuat und allem.',
+      beispiel_hd: 'Mein Kleiner ist noch ein richtiger kleiner Bauernjunge, mit Strohhut und allem.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-285',
+      ausdruck: 'Sennerin',
+      hochdeutsch: 'Sennerin',
+      bedeutung: 'D\'„Sennerin" — die Frau, die im Sommer auf der Alm Kühe hütet, Milch verarbeitet und Käse macht. „D\'Sennerin auf da Krünalm hot an feinen Almkas." Eine der robustesten Frauenrollen der Bergkultur, oft auch in Volksliedern besungen. Tradition leider rückläufig — viele Almen werden heute industriell oder gar nicht mehr besömmert. Wenige authentische Sennerinnen sind kulturelle Schätze.',
+      beispiel: 'D\'Sennerin auf da Wallbergalm is scho seit zwanzig Jahr da.',
+      beispiel_hd: 'Die Sennerin auf der Wallbergalm ist schon seit zwanzig Jahren dort.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-286',
+      ausdruck: 'Wirtshausstammtisch',
+      hochdeutsch: 'Wirtshausstammtisch',
+      bedeutung: 'Da „Wirtshausstammtisch" — der regelmäßige Treffpunkt einer festen Männergruppe (oder mittlerweile gemischt) im Stamm-Wirtshaus. „Beim Stammtisch im Goldenen Hirschen wird über Politik und Vieh g\'redt." Eigene Reservierung, eigene Krüge an der Wand, oft seit Generationen. Die bayerische Wirtshauskultur ist ohne Stammtisch undenkbar — gesellschaftlicher Kitt im Dorf.',
+      beispiel: 'Beim Wirtshausstammtisch hot mei Vada seine festen Plätzerl.',
+      beispiel_hd: 'Beim Wirtshausstammtisch hat mein Vater seinen festen Platz.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-287',
+      ausdruck: 'Zimmerer',
+      hochdeutsch: 'Zimmermann',
+      bedeutung: 'Da „Zimmerer" — bayerische Aussprache von Zimmermann — ist einer der traditionsreichsten Handwerksberufe Bayerns. „Mei Vada is Zimmerer, der baut no echte Dachstühle." Mit der charakteristischen schwarzen Zunftkleidung, Wanderschaft, Schlagfertigkeit. Pfarrhäuser, Bauernhöfe, Heuschober — viele bayerische Holzbauten stehen seit Jahrhunderten. Der Beruf ist heute wieder gefragt.',
+      beispiel: 'A Zimmerer in da Wanderschaft, des is no a Lebensschule.',
+      beispiel_hd: 'Ein Zimmermann auf der Wanderschaft, das ist noch eine Lebensschule.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-288',
+      ausdruck: 'Schmied',
+      hochdeutsch: 'Schmied',
+      bedeutung: 'Da „Schmied" — Hufschmied, Grobschmied, Kunstschmied — gehört zu den ursprünglichsten Berufen Bayerns. „Beim Schmied in da Werkstatt hörst no des Hammerklingn." Viele Familiennamen tragen das Berufserbe (Schmied, Schmidt, Hufnagel). Kleine Schmieden sind heute Touristen-Attraktionen oder Spezialwerkstätten für Restaurierung. Tradition lebt im Bergbau-Heimatmuseum weiter.',
+      beispiel: 'Mein Großvada war Schmied im Dorf, des hat no was bedeutet.',
+      beispiel_hd: 'Mein Großvater war Schmied im Dorf, das hat noch etwas bedeutet.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-289',
+      ausdruck: 'Köiba',
+      hochdeutsch: 'Brauer',
+      bedeutung: 'Da „Köiba" — bayerische Bezeichnung für den Brauer, vom mittelhochdeutschen „köper". „Mei Onkel is Köiba in da Augustinerbrauerei in Minga." Bier-Brauen ist in Bayern Hochkultur und Lebensgrundlage zugleich, geregelt durch das Reinheitsgebot von 1516. Sechs Brauereien in München, Hunderte im ganzen Land. Der „Bierbrauer" ist die hochsprachliche Form, „Köiba" die alteingesessene mundartliche.',
+      beispiel: 'Da Köiba sagt, dees Bier muass no a zwei Wochen lang reifen.',
+      beispiel_hd: 'Der Brauer sagt, das Bier muss noch zwei Wochen lang reifen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-290',
+      ausdruck: 'Hax',
+      hochdeutsch: 'Bein',
+      bedeutung: 'D\'„Hax" — das Bein, vom mittelhochdeutschen „hahse" (Kniekehle). „Mei Hax tuat weh nach da langen Wanderei." Pluralform: „d\'Hax" (die Beine). Auch in „Schweinshaxn" — die berühmte gebratene Schweinshaxe — gleichen Stamms. Anatomisch verwandt mit „Watschen" und „Watsch" (Ohrfeige). Die bayerische Anatomie kennt eigene Bezeichnungen für fast jeden Körperteil.',
+      beispiel: 'I hob mir d\'Hax verstaucht beim Skifoarn.',
+      beispiel_hd: 'Ich habe mir das Bein verstaucht beim Skifahren.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-291',
+      ausdruck: 'Ranzn',
+      hochdeutsch: 'Bauch (umgangssprachlich)',
+      bedeutung: 'Da „Ranzn" — der Bauch, besonders der dicke Bierbauch. „Da Sepp hot an ordentlichen Ranzn nach dera Wirtshausrund." Auch verwendet für Tasche, Schultasche, Rucksack. Aus dem mittelhochdeutschen „ranze" (Schwanz, Wamme). Die bayerische Selbst-Ironie über den eigenen Bierbauch ist legendär. „Der Ranzn is da Beweis vom guaten Bier!"',
+      beispiel: 'I muass scho an Buckel aufstecken, sonst seng s\'mei Ranzn.',
+      beispiel_hd: 'Ich muss schon den Buckel hochziehen, sonst sehen sie meinen Bauch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-292',
+      ausdruck: 'Hatschn',
+      hochdeutsch: 'Lahm gehen / humpeln',
+      bedeutung: '„Hatschn" — humpelnd gehen, schleichend, mit kaputtem Bein. „Was hatschst denn so umanand, hast Schmerzen?" Auch übertragen verwendet für jemanden, der nicht vorankommt: „Des Projekt hatscht jetzt scho a halbes Jahr." Verwandt mit „Hatscher" (langer, mühsamer Weg) und „Hatschi" (jemand, der hatscht). Ein klassisches bayerisches Wort, das es ins Standarddeutsche nicht geschafft hat.',
+      beispiel: 'Da Oide hatscht scho seit Wochen rum, der muass zum Doktor.',
+      beispiel_hd: 'Der Alte humpelt schon seit Wochen herum, der muss zum Arzt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-293',
+      ausdruck: 'Hirnschmoiz',
+      hochdeutsch: 'Hirnschmalz / Kopfzerbrechen',
+      bedeutung: '„Hirnschmoiz" — wörtlich „Hirnschmalz", das geistige Pendant zum körperlichen Schmalz. „Da brauchst scho a bissl Hirnschmoiz für so a Mathematik!" Bedeutet konzentriertes Nachdenken, anstrengende geistige Arbeit. Liebevolle Selbstironie der bayerischen Sprache, die geistige Arbeit auf eine Stufe mit handwerklichem Schwitzen stellt. Wer Hirnschmoiz hat, hat Hirnreserven.',
+      beispiel: 'Lass mi nachdenken, dees brauchat a bissl Hirnschmoiz!',
+      beispiel_hd: 'Lass mich nachdenken, das braucht ein bisschen Köpfchen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-294',
+      ausdruck: 'Halbweg',
+      hochdeutsch: 'Halb voll / etwa zur Hälfte',
+      bedeutung: '„Halbweg" — auf halbem Wege, halbwegs, ungefähr. „D\'Mass is scho halbweg leer." Auch als Bewertung: „Es war halbweg in Ordnung." Die bayerische Sprache kennt viele solcher Mengenbegriffe: „a Wenge" (ein wenig), „a Schwung" (ein paar), „a Trumm" (viel). Praktisch für die ungefähren Mengen-Angaben im Alltag.',
+      beispiel: 'Mei Bierkrug is halbweg leer, da brauch ma a neie Rund!',
+      beispiel_hd: 'Mein Bierkrug ist halb voll, da brauchen wir eine neue Runde!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-295',
+      ausdruck: 'A Wenge',
+      hochdeutsch: 'Ein wenig',
+      bedeutung: '„A Wenge" — ein wenig, etwas, ein klein bisschen. „Magst no a Wenge Soß auf d\'Knödl?" Eines der häufigsten bayerischen Mengenwörter. „Wenge" kommt vom mittelhochdeutschen „wenec" (klein). Die Steigerung „a ordentliches Wenge" bedeutet wieder eine größere Menge — typische bayerische Umkehr-Logik. Wesentlich im Wirtshausjargon beim Bestellen.',
+      beispiel: 'A Wenge weniger Salz wär\'s ned schlecht gwesn.',
+      beispiel_hd: 'Ein wenig weniger Salz wäre nicht schlecht gewesen.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-296',
+      ausdruck: 'A Trumm',
+      hochdeutsch: 'Ein riesiges Stück / sehr viel',
+      bedeutung: '„A Trumm" — ein großes Stück, ein dicker Brocken. „Mei, was für a Trumm Brot is\'n des!" Vom mittelhochdeutschen „trum" (Endstück, Block). Steigerung: „A Mordstrumm" — etwas außergewöhnlich Großes. Wird sowohl wörtlich (großes Stück) als auch übertragen verwendet: „A Trumm Mannsbild" = ein großer kräftiger Mann. Ironisch oft bei „A Trumm Schmarrn".',
+      beispiel: 'A Trumm Schweinshaxn hot da Wirt aufgetragen!',
+      beispiel_hd: 'Ein riesiges Stück Schweinshaxe hat der Wirt aufgetragen!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-297',
+      ausdruck: 'Schützenverein',
+      hochdeutsch: 'Schützenverein',
+      bedeutung: 'Da „Schützenverein" — Hort der bayerischen Sport- und Festtradition seit Jahrhunderten. „I bin im Schützenverein St. Sebastian, mia ham an königlich-bayerischen Wettbewerb." Mit Schießstand, Fahnen, Königsschießen, Königstreffen. Jedes Dorf hat seinen Verein, die Königswürde wird einmal im Jahr ausgeschossen. Beim Münchner Oktoberfest ist der Schützen-Festzug der Auftakt.',
+      beispiel: 'Beim Schützenverein gibt\'s heid wieder a Königsschießen.',
+      beispiel_hd: 'Beim Schützenverein gibt es heute wieder ein Königsschießen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-298',
+      ausdruck: 'Trachtenpaar',
+      hochdeutsch: 'Trachtenpaar',
+      bedeutung: 'A „Trachtenpaar" — Mann und Frau in vollständiger bayerischer Tracht (Lederhose / Dirndl), Symbol der Heimatpflege. „Beim Trachtenfestzug san dreitausend Trachtenpaare dabei!" Tracht ist regional unterschiedlich — Miesbacher, Werdenfelser, Chiemgauer haben jeweils eigene Schnitte und Farben. Echte Tracht wird im Trachtenverein getragen, nicht zu verwechseln mit Karnevals-Lederhosen.',
+      beispiel: 'A schöns Trachtenpaar, des seng ma immer beim Festzug.',
+      beispiel_hd: 'Ein schönes Trachtenpaar, das sehen wir immer beim Festzug.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-299',
+      ausdruck: 'Haxl',
+      hochdeutsch: 'Beinchen (verniedlicht)',
+      bedeutung: '„Haxl" — die Verkleinerungsform von „Hax", liebevoll für kleine Beine (Kinder, Tiere) oder ironisch für die eigenen Beine. „D\'Kinder ham ihre Haxl verbrennt nach\'m Berglaufen!" Auch in der Redensart „D\'Haxl in d\'Höh werfen" — fröhlich tanzen, ausgelassen sein. Die Verniedlichung -erl/-l ist ein zentrales Stilelement der bayerischen Sprache.',
+      beispiel: 'Mei Hund hot so kurze Haxl, dass\'er kaum übern Baach kummt.',
+      beispiel_hd: 'Mein Hund hat so kurze Beinchen, dass er kaum über den Bach kommt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-300',
+      ausdruck: 'Volksfest',
+      hochdeutsch: 'Volksfest',
+      bedeutung: 'Da „Volksfest" — das mittelgroße bayerische Sommer- und Herbstfest, kleinere Variante des Oktoberfests. „Auf jedem Volksfest gibt\'s a Festzelt, a Riesenrad und mindestens drei Achterbahnen." Erlangen (Bergkirchweih), Straubing, Regensburg, Augsburg — jede größere Stadt hat ihr Volksfest. Festzug, Festbier, Festbraut, Bierproben, Schausteller — der ganze bayerische Kosmos kompakt.',
+      beispiel: 'Aufs Erdinger Volksfest gehn ma jedes Jahr im September.',
+      beispiel_hd: 'Aufs Erdinger Volksfest gehen wir jedes Jahr im September.',
+      kategorie: 'feiern'
     }
   ]
 };
