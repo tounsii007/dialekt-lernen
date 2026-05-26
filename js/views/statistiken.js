@@ -8,6 +8,8 @@ import { getXp, xpToNextLevel, getLevelTitle, getXpLog } from '../store/xp.js';
 import { getSrsStats } from '../store/srs.js';
 import { getProgressHistory, getGoalTarget, getTodayProgress } from '../store/goals.js';
 import { getStreakHeatmap } from '../store/streak.js';
+import { getWeekReview } from '../util/week-review.js';
+import { KATEGORIEN } from '../../data/kategorien.js';
 
 export function renderStatistiken(root) {
   root.innerHTML = '';
@@ -130,7 +132,103 @@ export function renderStatistiken(root) {
     )
   ));
 
+  // ── Wochenrückblick ──────────────────────────────────────────
+  view.appendChild(renderWeekReview());
+
   root.appendChild(view);
+}
+
+function renderWeekReview() {
+  const r = getWeekReview(7);
+  const section = el('div', { class: 'stats-section', dataset: { reveal: '' } });
+  section.appendChild(el('h3', {}, '📅 Wochenrückblick'));
+  section.appendChild(el('div', { class: 'lede' },
+    `Letzte 7 Tage (${r.period.start.label} – ${r.period.end.label})`
+  ));
+
+  // KPI-Karten
+  const grid = el('div', { class: 'wochenrueckblick-grid' });
+  grid.appendChild(wrCard('Aktive Tage', `${r.totals.activeDays}/${r.period.days}`,
+    r.totals.activeDays >= 5 ? 'Starke Lernwoche!' : 'Versuche mehr Routine.'));
+  grid.appendChild(wrCard('XP gesammelt', `+${r.totals.xp}`,
+    r.totals.xp > 0 ? 'Punkte verdient ⚡' : 'Diese Woche ruhig.'));
+  grid.appendChild(wrCard('Karten geübt', String(r.totals.cardsReviewed),
+    r.totals.cardsReviewed > 20 ? 'Solides Pensum 🃏' : 'Mehr Karteikarten ziehen!'));
+  if (r.totals.quizTotal > 0) {
+    grid.appendChild(wrCard('Quiz-Trefferquote', `${r.totals.quizAccuracy}%`,
+      `${r.totals.quizCorrect}/${r.totals.quizTotal} korrekt`));
+  }
+  section.appendChild(grid);
+
+  // Tagessparkline (kleines visuelles Element)
+  const maxActivity = Math.max(1, ...r.byDay.map(d => d.activity + d.cardsReviewed));
+  const sparkRow = el('div', { class: 'wr-spark-row', style: {
+    display: 'grid', gridTemplateColumns: `repeat(${r.byDay.length}, 1fr)`,
+    gap: '6px', alignItems: 'end', height: '80px', margin: '20px 0'
+  } });
+  r.byDay.forEach(d => {
+    const h = Math.max(4, Math.round((d.activity + d.cardsReviewed) / maxActivity * 70));
+    const isToday = d.key === r.period.end.key;
+    sparkRow.appendChild(el('div', { style: { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' } },
+      el('div', { style: {
+        width: '100%', height: h + 'px',
+        background: isToday ? 'var(--brand, #8b5cf6)' : 'rgba(139,92,246,0.3)',
+        borderRadius: '4px 4px 0 0',
+        transition: 'all 0.3s ease',
+      }, title: `${d.label}: ${d.activity + d.cardsReviewed} Aktionen` }),
+      el('div', { style: { fontSize: '11px', opacity: 0.7 } }, d.label.split(' ')[0])
+    ));
+  });
+  section.appendChild(sparkRow);
+
+  // Top-Dialekte diese Woche
+  if (r.topDialekte.length > 0) {
+    section.appendChild(el('h4', { style: { marginTop: '20px' } }, 'Top-Dialekte diese Woche'));
+    const dialRow = el('div', { style: { display: 'flex', gap: '12px', flexWrap: 'wrap' } });
+    r.topDialekte.forEach(d => {
+      dialRow.appendChild(el('div', {
+        class: 'wr-card',
+        style: { '--sc': d.farbe, minWidth: '160px', borderLeft: `4px solid ${d.farbe}` }
+      },
+        el('div', { class: 'wr-card-label' }, `${d.flag} ${d.name}`),
+        el('div', { class: 'wr-card-value' }, String(d.count)),
+        el('div', { class: 'wr-card-detail' }, 'Karten geübt')
+      ));
+    });
+    section.appendChild(dialRow);
+  }
+
+  // Empfehlungen für die nächste Woche
+  if (r.focusSuggestions.length > 0) {
+    section.appendChild(el('h4', { style: { marginTop: '20px' } }, '💡 Für die nächste Woche'));
+    const sugList = el('div', { style: { display: 'flex', flexDirection: 'column', gap: '10px' } });
+    r.focusSuggestions.forEach(s => {
+      sugList.appendChild(el('button', {
+        class: 'wr-card',
+        style: { textAlign: 'left', cursor: 'pointer', width: '100%' },
+        onClick: () => go('#/lernen?kategorie=' + s.kategorie),
+      },
+        el('div', { style: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '12px' } },
+          el('div', {},
+            el('div', { class: 'wr-card-label' }, `${s.icon} ${s.label}`),
+            el('div', { class: 'wr-card-detail' }, s.reason)
+          ),
+          el('span', { class: 'dc-arrow' }, '→')
+        )
+      ));
+    });
+    section.appendChild(sugList);
+  }
+
+  return section;
+}
+
+function wrCard(label, value, detail) {
+  return el('div', { class: 'wr-card' },
+    el('div', { class: 'wr-card-label' }, label),
+    el('div', { class: 'wr-card-value' }, value),
+    el('div', { class: 'wr-card-detail' }, detail)
+  );
 }
 
 function statBig(emoji, value, label, color) {

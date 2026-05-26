@@ -8,6 +8,8 @@ import { sfx, vibrate } from '../../util/sounds.js';
 import { createWaveform } from '../../util/waveform.js';
 import { buildCloze } from '../../util/cloze.js';
 import { shareCard } from '../../util/share-card.js';
+import { formatIpa } from '../../util/ipa.js';
+import { isPronunciationSupported, startListening, scorePronunciation } from '../../util/pronunciation.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
 const SWIPE_THRESHOLD = 100;
@@ -91,20 +93,24 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       spellcheck: 'false'
     });
     const clozeFeedback = el('div', { class: 'fc-type-feedback' });
+    const submitCloze = () => {
+      if (clozeFeedback.classList.contains('is-ok') ||
+          clozeFeedback.classList.contains('is-close') ||
+          clozeFeedback.classList.contains('is-wrong')) return; // schon geprüft
+      const ok = checkTypedAnswer(clozeInput.value, expected);
+      const distance = levenshteinSimple(normalizeForType(clozeInput.value), normalizeForType(expected));
+      clozeFeedback.classList.remove('is-ok', 'is-close', 'is-wrong');
+      if (ok) { clozeFeedback.classList.add('is-ok'); clozeFeedback.textContent = '✓ Richtig — ' + expected; sfx.correct(); vibrate([10, 30, 10]); }
+      else if (distance <= 2) { clozeFeedback.classList.add('is-close'); clozeFeedback.textContent = '◐ Fast — ' + expected; sfx.rate(2); }
+      else { clozeFeedback.classList.add('is-wrong'); clozeFeedback.textContent = '✗ ' + expected; sfx.wrong(); }
+      onFlip(card);
+    };
+    clozeInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); submitCloze(); }
+    });
     front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
       clozeInput, clozeFeedback,
-      el('button', {
-        class: 'btn btn-primary',
-        onClick: () => {
-          const ok = checkTypedAnswer(clozeInput.value, expected);
-          const distance = levenshteinSimple(normalizeForType(clozeInput.value), normalizeForType(expected));
-          clozeFeedback.classList.remove('is-ok', 'is-close', 'is-wrong');
-          if (ok) { clozeFeedback.classList.add('is-ok'); clozeFeedback.textContent = '✓ Richtig — ' + expected; }
-          else if (distance <= 2) { clozeFeedback.classList.add('is-close'); clozeFeedback.textContent = '◐ Fast — ' + expected; }
-          else { clozeFeedback.classList.add('is-wrong'); clozeFeedback.textContent = '✗ ' + expected; }
-          onFlip(card);
-        }
-      }, 'Prüfen')
+      el('button', { class: 'btn btn-primary', onClick: submitCloze }, 'Prüfen ↵')
     ));
     setTimeout(() => clozeInput.focus(), 80);
     back.appendChild(el('div', { class: 'fc-label' }, 'Vollständiger Satz'));
@@ -123,23 +129,27 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       spellcheck: 'false'
     });
     const feedback = el('div', { class: 'fc-type-feedback' });
+    const submitType = () => {
+      if (feedback.classList.contains('is-ok') ||
+          feedback.classList.contains('is-close') ||
+          feedback.classList.contains('is-wrong')) return; // schon geprüft
+      const ok = checkTypedAnswer(input.value, c.hochdeutsch);
+      const distance = levenshteinSimple(normalizeForType(input.value), normalizeForType(c.hochdeutsch));
+      feedback.classList.remove('is-ok', 'is-close', 'is-wrong');
+      if (ok) { feedback.classList.add('is-ok'); sfx.correct(); vibrate([10, 30, 10]); }
+      else if (distance <= 2) { feedback.classList.add('is-close'); sfx.rate(2); }
+      else { feedback.classList.add('is-wrong'); sfx.wrong(); }
+      feedback.textContent = ok ? '✓ Richtig — ' + c.hochdeutsch
+        : distance <= 2 ? '◐ Fast — ' + c.hochdeutsch
+        : '✗ ' + c.hochdeutsch;
+      onFlip(card);
+    };
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); submitType(); }
+    });
     front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
       input, feedback,
-      el('button', {
-        class: 'btn btn-primary',
-        onClick: () => {
-          const ok = checkTypedAnswer(input.value, c.hochdeutsch);
-          const distance = levenshteinSimple(normalizeForType(input.value), normalizeForType(c.hochdeutsch));
-          feedback.classList.remove('is-ok', 'is-close', 'is-wrong');
-          if (ok) feedback.classList.add('is-ok');
-          else if (distance <= 2) feedback.classList.add('is-close');
-          else feedback.classList.add('is-wrong');
-          feedback.textContent = ok ? '✓ Richtig — ' + c.hochdeutsch
-            : distance <= 2 ? '◐ Fast — ' + c.hochdeutsch
-            : '✗ ' + c.hochdeutsch;
-          onFlip(card);
-        }
-      }, 'Prüfen')
+      el('button', { class: 'btn btn-primary', onClick: submitType }, 'Prüfen ↵')
     ));
     setTimeout(() => input.focus(), 80);
     back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
@@ -184,10 +194,77 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+  } else if (mode === 'pron') {
+    // Aussprache-Check via Web Speech Recognition
+    front.appendChild(el('div', { class: 'fc-label' }, '🎤 Aussprache · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
+    front.appendChild(el('div', { class: 'expr-ipa' }, formatIpa(c.ausdruck, c.dialektId).replace(/^\/|\/$/g, '')));
+    if (!isPronunciationSupported()) {
+      front.appendChild(el('div', { class: 'fc-hint', style: { color: 'var(--warm, #fb923c)' } },
+        'Aussprache-Erkennung wird vom Browser nicht unterstützt. Versuche Chrome/Edge.'));
+      back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+      back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
+      back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+    } else {
+      const statusEl = el('div', { class: 'pron-check-status' }, 'Klicke das Mikrofon und sprich den Ausdruck.');
+      const micBtn = el('button', {
+        class: 'pron-mic-btn',
+        title: 'Aufnahme starten/stoppen',
+        onClick: (e) => {
+          e.stopPropagation();
+          if (micBtn.classList.contains('is-recording')) {
+            currentStop?.();
+            return;
+          }
+          micBtn.classList.add('is-recording');
+          statusEl.classList.remove('is-ok', 'is-wrong');
+          statusEl.classList.add('is-listening');
+          statusEl.textContent = 'Höre zu… sprich jetzt.';
+          let currentStop = startListening({
+            lang: c.dialektLang || 'de-DE',
+            onPartial: (t) => { statusEl.textContent = '… ' + t; },
+            onResult: ({ transcript, alternatives }) => {
+              const best = (alternatives || [transcript]).reduce((bestSoFar, alt) => {
+                const s = scorePronunciation(c.ausdruck, alt);
+                return s.score > bestSoFar.score ? { ...s, transcript: alt } : bestSoFar;
+              }, { score: 0, ok: false, transcript });
+              statusEl.classList.remove('is-listening');
+              statusEl.classList.add(best.ok ? 'is-ok' : 'is-wrong');
+              statusEl.textContent = best.ok
+                ? `✓ Gehört: „${best.transcript}" (${Math.round(best.score * 100)}%)`
+                : `✗ Gehört: „${best.transcript}" — versuche es nochmal`;
+              if (best.ok) {
+                sfx.correct(); vibrate([10, 30, 10]);
+                setTimeout(() => onFlip(card), 800);
+              } else {
+                sfx.wrong();
+              }
+            },
+            onError: (err) => {
+              statusEl.classList.remove('is-listening');
+              statusEl.classList.add('is-wrong');
+              statusEl.textContent = 'Fehler: ' + (err.message || err);
+              micBtn.classList.remove('is-recording');
+            },
+            onEnd: () => {
+              micBtn.classList.remove('is-recording');
+              statusEl.classList.remove('is-listening');
+            },
+          });
+        }
+      }, icon('speaker', { size: 22 }));
+      front.appendChild(el('div', { class: 'pron-check-row', onClick: (e) => e.stopPropagation() },
+        micBtn, statusEl
+      ));
+      back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+      back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
+      back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
+    }
   } else {
     // Klassisch
     front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
+    front.appendChild(el('div', { class: 'expr-ipa', title: 'Lautschrift (IPA)' }, formatIpa(c.ausdruck, c.dialektId).replace(/^\/|\/$/g, '')));
     front.appendChild(el('div', { class: 'fc-hint' }, 'Klicken / Leertaste umdrehen · ziehen zum Bewerten'));
     back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));

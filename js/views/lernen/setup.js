@@ -3,6 +3,7 @@ import { el } from '../../util.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 import { KATEGORIE_LIST } from '../../../data/kategorien.js';
 import { icon } from '../../util/icons.js';
+import { getLernstand, STATUS_LEARNED, STATUS_MEDIUM } from '../../store.js';
 
 // Themen-Farben (zyklisch über die Kategorien)
 const THEMEN_FARBEN = [
@@ -17,7 +18,8 @@ const MODES = [
   { id: 'mc',      icon: 'target',   title: 'Multiple Choice', desc: '4 Optionen — tippe die Bedeutung' },
   { id: 'type',    icon: 'keyboard', title: 'Tippen',          desc: 'Antwort eintippen (mit Toleranz)' },
   { id: 'cloze',   icon: 'target',   title: 'Lückentext',      desc: 'Fehlendes Wort im Satz ergänzen' },
-  { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',       desc: 'Hör zu, dann antworte' }
+  { id: 'audio',   icon: 'speaker',  title: 'Nur Audio',       desc: 'Hör zu, dann antworte' },
+  { id: 'pron',    icon: 'speaker',  title: 'Aussprache',      desc: 'Sprechen üben mit Mikrofon' }
 ];
 
 export function renderSetup(onStart) {
@@ -106,27 +108,39 @@ export function renderSetup(onStart) {
   ));
 
   const themen = el('div', { class: 'dialekt-grid' });
-  // Counts per kategorie über alle Dialekte
-  const countByKat = {};
+  // Counts und Lernstand-Aggregation pro Kategorie über alle Dialekte
+  const statsByKat = {};
   ALLE_AUSDRUECKE.forEach(a => {
-    countByKat[a.kategorie] = (countByKat[a.kategorie] || 0) + 1;
+    const s = statsByKat[a.kategorie] || (statsByKat[a.kategorie] = { total: 0, learned: 0, started: 0 });
+    s.total++;
+    const stand = getLernstand(a.dialektId, a.id);
+    if (stand >= STATUS_LEARNED) s.learned++;
+    else if (stand >= STATUS_MEDIUM) s.started++;
   });
 
   KATEGORIE_LIST.forEach((kat, i) => {
-    const count = countByKat[kat.id] || 0;
-    if (count === 0) return;
+    const stats = statsByKat[kat.id];
+    if (!stats || stats.total === 0) return;
     const color = THEMEN_FARBEN[i % THEMEN_FARBEN.length];
+    const pct = Math.round((stats.learned / stats.total) * 100);
+    const progressLabel = stats.learned > 0
+      ? `${stats.learned}/${stats.total} gelernt (${pct}%)`
+      : (stats.started > 0 ? `${stats.started}/${stats.total} angefangen` : `${stats.total} Karten`);
     const card = el('button', {
-      class: 'dialekt-card',
-      style: { '--dc': color },
-      onClick: () => onStart({ source: 'kategorie:' + kat.id, mode: currentMode })
+      class: 'dialekt-card thema-card',
+      style: { '--dc': color, '--progress': pct + '%' },
+      onClick: () => onStart({ source: 'kategorie:' + kat.id, mode: currentMode }),
+      'aria-label': `${kat.label}: ${progressLabel}`,
     },
       el('span', { class: 'dc-flag' }, kat.icon),
       el('div', { class: 'dc-name' }, kat.label),
       el('div', { class: 'dc-region' }, 'Thema · alle Dialekte'),
       el('div', { class: 'dc-desc' }, `Alle ${kat.label.toLowerCase().replace(/ &.*$/, '')}-Ausdrücke kompakt — perfekt für eine Themen-Session.`),
+      el('div', { class: 'thema-progress', title: progressLabel },
+        el('div', { class: 'thema-progress-bar', style: { width: pct + '%', background: color } })
+      ),
       el('div', { class: 'dc-foot' },
-        el('span', { class: 'dc-count' }, `${count} Karten`),
+        el('span', { class: 'dc-count' }, progressLabel),
         el('span', { class: 'dc-arrow' }, el('span', { html: '→' }))
       )
     );
