@@ -10,6 +10,7 @@ export default {
   farbe: '#e63946',
   beschreibung: 'Hessisch wird in weiten Teilen des Bundeslandes Hessen gesprochen. Besonders bekannt ist das Frankfurter Stadtmundart („Frankfurterisch") sowie das Mittelhessische rund um Gießen und Marburg. Charakteristisch sind das gerollte „R", weiche Konsonanten und der herzlich-rustikale Tonfall.',
   sprecher: 'ca. 4 Mio.',
+  lang: 'de-DE',
   ausdruecke: [
     {
       id: 'h-001',
@@ -43,6 +44,8 @@ export default {
       ausdruck: 'Schorsch',
       hochdeutsch: 'Georg',
       bedeutung: 'Hessische Variante des Vornamens Georg. Oft Inbegriff des typischen hessischen Mannes — gemütlich, bodenständig, mit Vorliebe für Äppelwoi.',
+      beispiel: 'Der Schorsch sitzt im Wirtshaus un trinkt sei Schoppe Ebbelwoi.',
+      beispiel_hd: 'Der Georg sitzt im Wirtshaus und trinkt seinen Schoppen Apfelwein.',
       kategorie: 'menschen'
     },
     {
@@ -68,6 +71,8 @@ export default {
       ausdruck: 'Hibbdebach un Dribbdebach',
       hochdeutsch: 'Diesseits und jenseits des Mains',
       bedeutung: 'In Frankfurt unterscheidet man zwischen „Hibbdebach" (diesseits des Mains, nördliches Ufer) und „Dribbdebach" (jenseits, südliches Ufer / Sachsenhausen). Ein typisches Frankfurter Lokalkolorit.',
+      beispiel: 'Mer wohne hibbdebach, awwer der Ebbelwoi is dribbdebach am beste.',
+      beispiel_hd: 'Wir wohnen nördlich des Mains, aber der Apfelwein ist südlich des Mains am besten.',
       kategorie: 'orte'
     },
     {
@@ -75,13 +80,8 @@ export default {
       ausdruck: 'Gelleworscht',
       hochdeutsch: 'Gelbe Wurst / Streitwurst',
       bedeutung: 'Wörtlich „gelbe Wurst". In Frankfurt eine traditionelle, milde Brühwurst. Umgangssprachlich auch für etwas Belangloses oder einen kleinen Streit verwendet.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'h-009',
-      ausdruck: 'Handkäs mit Musik',
-      hochdeutsch: 'Sauermilchkäse mit Zwiebelmarinade',
-      bedeutung: 'Hessische Spezialität: ein reifer Sauermilchkäse, übergossen mit einer Marinade aus Essig, Öl, Zwiebeln und Kümmel. Die „Musik" sind die Zwiebeln — sie sorgen später für „klingende" Verdauung.',
+      beispiel: 'Mach doch kaa Gelleworscht draus, des is doch ned so wichdig!',
+      beispiel_hd: 'Mach doch keine große Sache daraus, das ist doch nicht so wichtig!',
       kategorie: 'essen'
     },
     {
@@ -97,23 +97,18 @@ export default {
       id: 'h-011',
       ausdruck: 'Schwätzer',
       hochdeutsch: 'Vielredner / Schwätzer',
-      bedeutung: 'Jemand, der ununterbrochen oder oberflächlich redet. Kann gutmütig oder leicht abwertend gemeint sein, je nach Kontext.',
+      bedeutung: 'Ein „Schwätzer" ist jemand, der ununterbrochen oder oberflächlich redet. Kann gutmütig oder leicht abwertend gemeint sein, je nach Kontext. „En alder Schwätzer" hört man oft als Charakterisierung eines geschwätzigen Nachbarn.',
+      beispiel: 'Der Schorsch is en alde Schwätzer, dem sei Maul steht nie still.',
+      beispiel_hd: 'Der Georg ist ein alter Schwätzer, sein Mund steht nie still.',
       kategorie: 'menschen'
-    },
-    {
-      id: 'h-012',
-      ausdruck: 'aach',
-      hochdeutsch: 'auch',
-      bedeutung: 'Hessische Aussprache des Wortes „auch". Wird breit und gedehnt gesprochen — ein verlässliches Merkmal des Hessen-Akzents.',
-      beispiel: 'Ich kumm aach mit!',
-      beispiel_hd: 'Ich komme auch mit!',
-      kategorie: 'alltag'
     },
     {
       id: 'h-013',
       ausdruck: 'Daddrich',
       hochdeutsch: 'Tollpatschig / unbeholfen',
-      bedeutung: 'Beschreibung für jemanden, der etwas verträumt, ungeschickt oder schusselig ist. Nicht böse gemeint, eher amüsiert-mitfühlend.',
+      bedeutung: '„Daddrich" beschreibt jemanden, der etwas verträumt, ungeschickt oder schusselig ist. Nicht böse gemeint, eher amüsiert-mitfühlend. „Sei doch ned so daddrich!" ruft die Großmutter dem Enkel zu, der wieder en Bembel umgeworfen hat.',
+      beispiel: 'Sei doch ned so daddrich, sonst fällt der noch der Bembel um!',
+      beispiel_hd: 'Sei doch nicht so tollpatschig, sonst fällt dir noch der Apfelweinkrug um!',
       kategorie: 'menschen'
     },
     {
@@ -121,22 +116,15 @@ export default {
       ausdruck: 'Schwall',
       hochdeutsch: 'Lärm / Trubel',
       bedeutung: 'Bezeichnet großes Gerede, Aufregung oder Lärm. „Mach kaan Schwall!" = „Mach kein Theater!".',
+      beispiel: 'Mach kaan Schwall um die paar Euro, des is doch ned schlimm!',
+      beispiel_hd: 'Mach keinen Aufstand um die paar Euro, das ist doch nicht schlimm!',
       kategorie: 'alltag'
-    },
-    {
-      id: 'h-015',
-      ausdruck: 'Schoppe',
-      hochdeutsch: 'Glas (Apfelwein)',
-      bedeutung: 'Das traditionelle, geriffelte Glas für Apfelwein, fasst 0,25 Liter. „Geriffelt" deshalb, damit man es mit fettigen Händen besser halten kann.',
-      beispiel: 'Noch en Schoppe, bidde!',
-      beispiel_hd: 'Noch ein Glas (Apfelwein), bitte!',
-      kategorie: 'essen'
     },
     {
       id: 'h-016',
       ausdruck: 'gell',
       hochdeutsch: 'nicht wahr? / oder?',
-      bedeutung: 'Vergewisserungsfrage am Satzende, vergleichbar mit „ne?". Sehr typisch im südhessischen Raum.',
+      bedeutung: 'Das „gell" ist eine Vergewisserungsfrage am Satzende, vergleichbar mit „ne?". Sehr typisch im südhessischen Raum und in Frankfurt. „Des is doch klar, gell?" hört man im Bembel-Land an jedem Tisch.',
       beispiel: 'Des Wedder is herrlich, gell?',
       beispiel_hd: 'Das Wetter ist herrlich, nicht wahr?',
       kategorie: 'redensart'
@@ -146,6 +134,8 @@ export default {
       ausdruck: 'Krätsche',
       hochdeutsch: 'Krähe / freches Mädchen',
       bedeutung: 'Wörtlich eine Krähe; übertragen auch ein freches, vorlautes Mädchen. Liebevoll-spöttisch verwendet.',
+      beispiel: 'Die klaa Krätsche hat schon widder ihrer Mudder gewiderschproche!',
+      beispiel_hd: 'Die kleine Krähe hat schon wieder ihrer Mutter widersprochen!',
       kategorie: 'menschen'
     },
     {
@@ -248,15 +238,6 @@ export default {
       kategorie: 'schimpf'
     },
     {
-      id: 'h-029',
-      ausdruck: 'Backes',
-      hochdeutsch: 'Gemeindebackhaus',
-      bedeutung: 'Das traditionelle Dorfbackhaus, in dem früher die gesamte Dorfgemeinschaft gemeinschaftlich Brot backte. Der Backes war sozialer Treffpunkt und wirtschaftliche Notwendigkeit zugleich. In Hessen gibt es heute noch viele restaurierte Backeshäuser, die zu besonderen Anlässen genutzt werden.',
-      beispiel: 'Am Samstag backe mer wieder im alten Backes am Dorfplatz.',
-      beispiel_hd: 'Am Samstag backen wir wieder im alten Gemeindebackhaus am Dorfplatz.',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-030',
       ausdruck: 'Waldschlösschen',
       hochdeutsch: 'Waldgaststätte / Ausflugslokal im Wald',
@@ -288,6 +269,8 @@ export default {
       ausdruck: 'Mispel',
       hochdeutsch: 'Mispel (Frucht)',
       bedeutung: 'Die Mispel ist ein alter Obstbaum, der in Hessen noch häufig in Gärten und an Wegrändern wächst. Die Frucht wird erst nach dem ersten Frost genießbar (ein Vorgang, den man „bletting" nennt) und hat einen apfel-ähnlichen, süßlich-sauren Geschmack. In der hessischen Volksmedizin wurden Mispeln gegen Verdauungsbeschwerden verwendet.',
+      beispiel: 'Im Garten von der Oma stehe noch zwaa alde Mispelbäum.',
+      beispiel_hd: 'Im Garten von der Oma stehen noch zwei alte Mispelbäume.',
       kategorie: 'natur'
     },
     {
@@ -444,33 +427,6 @@ export default {
       kategorie: 'redensart'
     },
     {
-      id: 'h-051',
-      ausdruck: 'Grie Soß',
-      hochdeutsch: 'Grüne Soße (Frankfurter Spezialität)',
-      bedeutung: 'Die Frankfurter Grüne Soße ist das wohl berühmteste Gericht Hessens — eine kalte Soße aus sieben frischen Kräutern: Borretsch, Kerbel, Kresse, Petersilie, Pimpinelle, Sauerampfer und Schnittlauch. Klassisch wird sie zu gekochten Eiern und Pellkartoffeln serviert. Goethe soll sie geliebt haben, und das jährliche Grüne-Soße-Festival im Mai zieht Tausende nach Frankfurt.',
-      beispiel: 'Zu Ostern gibts bei uns immer Grie Soß mit Eiern und Grumbeere.',
-      beispiel_hd: 'Zu Ostern gibt es bei uns immer Grüne Soße mit Eiern und Kartoffeln.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'h-052',
-      ausdruck: 'Geripptes',
-      hochdeutsch: 'geriffeltes Apfelweinglas',
-      bedeutung: 'Das traditionelle, geriffelte Glas, in dem in Frankfurt der Ebbelwoi serviert wird — die Rauten an der Außenseite haben einen praktischen Hintergrund: Mit fettigen Wurst- und Handkäs-Fingern rutscht das Glas so nicht aus der Hand. Das Geripptes fasst genau 0,25 Liter und ist ein Frankfurter Kulturgut. Wer in Sachsenhausen ein Geripptes bestellt, gehört dazu.',
-      beispiel: 'En Bembel und vier Geripptes, biddesche!',
-      beispiel_hd: 'Einen Bembel und vier geriffelte Gläser, bitte!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'h-053',
-      ausdruck: 'Sachsenhausen',
-      hochdeutsch: 'Sachsenhausen (Frankfurter Stadtteil)',
-      bedeutung: 'Sachsenhausen ist der südlich des Mains gelegene Stadtteil Frankfurts und das Herz der Apfelwein-Kultur. In den engen Gassen rund um die Klappergasse reihen sich traditionelle Ebbelwoi-Wirtschaften mit langen Holzbänken aneinander. Hier wird seit Jahrhunderten Apfelwein gekeltert und in Bembeln serviert — Sachsenhausen ist hessisches Lebensgefühl pur.',
-      beispiel: 'Gehn mer heut Owend nach Sachsenhausen, en Schoppe trinke!',
-      beispiel_hd: 'Gehen wir heute Abend nach Sachsenhausen, ein Glas Apfelwein trinken!',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-054',
       ausdruck: 'Eintracht',
       hochdeutsch: 'Eintracht Frankfurt (Fußballverein)',
@@ -507,93 +463,12 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'h-058',
-      ausdruck: 'Bornheim',
-      hochdeutsch: 'Bornheim (Frankfurter Stadtteil)',
-      bedeutung: 'Bornheim ist ein lebendiger Frankfurter Stadtteil östlich der Altstadt und gilt als das „Dorf in der Stadt". Mit der Berger Straße als belebter Einkaufs- und Ausgehmeile bietet Bornheim eine Mischung aus Tradition und Moderne. Die Bornheimer haben einen eigenen Stolz und nennen sich „Lustige Bornheimer". Der Bornheimer Hang bietet einen schönen Blick auf die Skyline.',
-      beispiel: 'Heut Abend gehn mer in Bornheim Pizza esse — die Berger is voll am Leben.',
-      beispiel_hd: 'Heute Abend gehen wir in Bornheim Pizza essen — die Berger Straße ist voll am Leben.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-059',
-      ausdruck: 'Wiesbaden',
-      hochdeutsch: 'Wiesbaden (Landeshauptstadt Hessens)',
-      bedeutung: 'Wiesbaden ist die Landeshauptstadt Hessens und eine der ältesten Kurstädte Europas. Bekannt für seine 26 heißen Quellen, das Spielcasino (das angeblich Dostojewskij zu seinem Roman „Der Spieler" inspirierte) und das Kurhaus. Die Wiesbadener gelten als etwas vornehmer und feiner als die Frankfurter — das Wiesbadener Hessisch klingt entsprechend gemäßigter.',
-      beispiel: 'In Wiesbaden gehn die Reiche in die Therme baade.',
-      beispiel_hd: 'In Wiesbaden gehen die Reichen in die Therme baden.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-060',
-      ausdruck: 'Kassel',
-      hochdeutsch: 'Kassel (nordhessische Großstadt)',
-      bedeutung: 'Kassel ist die größte Stadt Nordhessens und Heimat der documenta — der weltweit wichtigsten Ausstellung für zeitgenössische Kunst, die alle fünf Jahre stattfindet. Die Stadt der Brüder Grimm bietet den weltberühmten Bergpark Wilhelmshöhe mit Herkules-Statue (UNESCO-Welterbe). Das Kasselerische unterscheidet sich deutlich vom südhessischen Frankfurterisch.',
-      beispiel: 'Zur documenta kummen Künstler aus der ganzen Welt nach Kassel.',
-      beispiel_hd: 'Zur documenta kommen Künstler aus der ganzen Welt nach Kassel.',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-061',
       ausdruck: 'Schwälmer Land',
       hochdeutsch: 'Schwalm (Region in Nordhessen)',
       bedeutung: 'Das Schwälmer Land in Nordhessen ist eine traditionsreiche Region, bekannt für ihre einzigartige Tracht — die roten Schwälmer Hauben und die langen Trachtenröcke sind weltbekannt. Hier sollen die Brüder Grimm die Inspiration für Rotkäppchen gefunden haben. Die Schwälmer pflegen ihre Bräuche bis heute und tragen die Tracht zu Festen und kirchlichen Anlässen.',
       beispiel: 'Die Schwälmer Tracht is weltbekannt — die rote Hauben kennt jeder.',
       beispiel_hd: 'Die Schwälmer Tracht ist weltbekannt — die roten Hauben kennt jeder.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-062',
-      ausdruck: 'Taunus',
-      hochdeutsch: 'Taunus (Mittelgebirge)',
-      bedeutung: 'Der Taunus ist das Mittelgebirge nordwestlich von Frankfurt mit dem Großen Feldberg als höchster Erhebung (881 m). Die nobleren Frankfurter Vororte wie Kronberg, Königstein und Bad Homburg liegen am Taunushang. Der Limes verlief durch den Taunus — die Saalburg ist ein rekonstruiertes Römerkastell. Beliebtes Wandergebiet und Naherholungsraum für Frankfurter.',
-      beispiel: 'Sonntags fahre mer immer in den Taunus wandern.',
-      beispiel_hd: 'Sonntags fahren wir immer in den Taunus wandern.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'h-063',
-      ausdruck: 'Vogelsberg',
-      hochdeutsch: 'Vogelsberg (Mittelgebirge)',
-      bedeutung: 'Der Vogelsberg in Mittelhessen ist das größte zusammenhängende Vulkangebiet Mitteleuropas — wenn auch lange erloschen. Mit seinen weiten Hochflächen, Mooren und dem Hoherodskopf (764 m) als höchstem Gipfel ist er ein einsames, ursprüngliches Mittelgebirge. Im Winter gibt es Skigebiete, im Sommer ist es Wanderparadies. Die Vogelsberger gelten als besonders bodenständig.',
-      beispiel: 'Im Vogelsberg is es im Winter manchmal kälter als auf der Zugspitze.',
-      beispiel_hd: 'Im Vogelsberg ist es im Winter manchmal kälter als auf der Zugspitze.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'h-064',
-      ausdruck: 'Wetterau',
-      hochdeutsch: 'Wetterau (Region nördlich von Frankfurt)',
-      bedeutung: 'Die Wetterau ist eine fruchtbare Beckenlandschaft nördlich von Frankfurt, eine der ältesten Kulturlandschaften Deutschlands. Schon Römer und Kelten siedelten hier wegen der ertragreichen Böden. Heute ist die Wetterau Pendlerregion und Kornkammer Hessens. Die Wetterauer haben ihren eigenen Dialekt, der zwischen mittel- und südhessisch vermittelt.',
-      beispiel: 'In der Wetterau wachse die beste Zwiebele Hessens.',
-      beispiel_hd: 'In der Wetterau wachsen die besten Zwiebeln Hessens.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-065',
-      ausdruck: 'Bergstraß',
-      hochdeutsch: 'Bergstraße (südhessische Region)',
-      bedeutung: 'Die Hessische Bergstraße ist eine alte Handelsstraße entlang des Odenwald-Hangs zwischen Darmstadt und Heppenheim. Wegen des milden Klimas blüht hier im Frühjahr alles als erstes in Deutschland — die „deutsche Riviera". Wein- und Obstanbau prägen die Landschaft. Bensheim, Heppenheim und Zwingenberg sind charmante Fachwerkstädtchen.',
-      beispiel: 'An der Bergstraß blühe die Mandelbäum schon im Februar.',
-      beispiel_hd: 'An der Bergstraße blühen die Mandelbäume schon im Februar.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-066',
-      ausdruck: 'Rüdesheim',
-      hochdeutsch: 'Rüdesheim am Rhein',
-      bedeutung: 'Rüdesheim ist die wohl bekannteste Weinstadt am Rhein und liegt im hessischen Rheingau. Die Drosselgasse mit ihren Weinlokalen, das Niederwalddenkmal hoch über dem Rheintal (mit der Germania-Statue), und der Asbach-Uralt-Weinbrand machen Rüdesheim weltberühmt. Touristen aus aller Welt strömen hier ins Mittelrheintal, das UNESCO-Welterbe ist.',
-      beispiel: 'In Rüdesheim trinkt mer Asbach mit Kaffe — des is Tradition!',
-      beispiel_hd: 'In Rüdesheim trinkt man Asbach mit Kaffee — das ist Tradition!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-067',
-      ausdruck: 'Hessenpark',
-      hochdeutsch: 'Hessenpark (Freilichtmuseum)',
-      bedeutung: 'Der Hessenpark in Neu-Anspach am Taunusrand ist Hessens größtes Freilichtmuseum. Über 100 historische Gebäude aus ganz Hessen — Fachwerkhäuser, Mühlen, Kirchen, Werkstätten — wurden hier originalgetreu wieder aufgebaut. Besucher können traditionelles hessisches Dorfleben erleben, Handwerker bei der Arbeit beobachten und alte Backes-Brote kaufen.',
-      beispiel: 'Im Hessenpark kann mer sehen, wie unsre Großeltern noch gelebt habbe.',
-      beispiel_hd: 'Im Hessenpark kann man sehen, wie unsere Großeltern noch gelebt haben.',
       kategorie: 'orte'
     },
     {
@@ -640,15 +515,6 @@ export default {
       beispiel: 'Was machste denn für Glubschauche? Hast du en Geischt gsehe?',
       beispiel_hd: 'Was machst du denn für Glupschaugen? Hast du ein Gespenst gesehen?',
       kategorie: 'koerper'
-    },
-    {
-      id: 'h-073',
-      ausdruck: 'Kerb',
-      hochdeutsch: 'Kirchweihfest / Dorffest',
-      bedeutung: 'Die hessische Kerb (von Kirchweih) ist das wichtigste Dorffest in vielen hessischen Gemeinden. Ursprünglich der Jahrestag der Kirchweihe, ist die Kerb heute mehrtägiges Volksfest mit Festzelt, Karussell, „Kerwemädchen" und Kerwepaaren. Höhepunkt ist oft das „Kerwausgrabe" — das symbolische Ausgraben einer Strohpuppe zu Beginn und ihr Begraben am Ende. Hessisches Brauchtum pur.',
-      beispiel: 'Am Wochenend is bei uns Kerb — komm doch vorbei!',
-      beispiel_hd: 'Am Wochenende ist bei uns Kirchweih — komm doch vorbei!',
-      kategorie: 'redensart'
     },
     {
       id: 'h-074',
@@ -730,15 +596,6 @@ export default {
       beispiel: 'Mei Klaane geht jetzt schon in die Schul!',
       beispiel_hd: 'Meine Kleine geht jetzt schon in die Schule!',
       kategorie: 'familie'
-    },
-    {
-      id: 'h-083',
-      ausdruck: 'Frühschoppe',
-      hochdeutsch: 'Frühschoppen / Vormittagsapfelwein',
-      bedeutung: 'Der hessische Frühschoppe ist ein traditioneller Vormittagsbesuch in der Apfelweinwirtschaft, meist am Sonntag nach dem Kirchgang. Ein bis zwei Schoppen Ebbelwoi mit Brezel oder Handkäs gehören dazu. Heute ist der Frühschoppe vor allem ein Männerritual — die Hessen sagen gerne: „En guder Frühschoppe ersetzt en ganze Therapie."',
-      beispiel: 'Sonntags um elf is bei mir Frühschoppe in Sachsenhause.',
-      beispiel_hd: 'Sonntags um elf ist bei mir Frühschoppen in Sachsenhausen.',
-      kategorie: 'alltag'
     },
     {
       id: 'h-084',
@@ -835,8 +692,8 @@ export default {
       ausdruck: 'Schorle',
       hochdeutsch: 'Schorle (Wein- oder Apfelweinschorle)',
       bedeutung: 'Die hessische Schorle ist meist eine Apfelweinschorle — Ebbelwoi gemischt mit Mineralwasser, im Sommer das ideale Erfrischungsgetränk. „Sauer-Gespritzte" nennt man die saure Variante, „Süß-Gespritzte" die Version mit Limonade. In den Frankfurter Wirtschaften wird die Mischung im Verhältnis 50:50 angesetzt. Eine Schorle ist leichter als reiner Apfelwein.',
-      beispiel: 'Im Sommer trink ich am liebsten en Sauer-Gespritzte.',
-      beispiel_hd: 'Im Sommer trinke ich am liebsten eine saure Apfelweinschorle.',
+      beispiel: 'Im Sommer trink ich am liebsten en Sauer-Gespritzte, also Ebbelwoi-Schorle mit Sprudel.',
+      beispiel_hd: 'Im Sommer trinke ich am liebsten eine saure Apfelweinschorle, also Apfelwein mit Sprudelwasser.',
       kategorie: 'essen'
     },
     {
@@ -894,33 +751,6 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 'h-101',
-      ausdruck: 'Kassel',
-      hochdeutsch: 'Kassel (Stadt in Nordhessen)',
-      bedeutung: 'Kassel ist die drittgrößte Stadt Hessens — bekannt für die documenta (eine der wichtigsten Kunstausstellungen der Welt, alle 5 Jahre) und den Bergpark Wilhelmshöhe (UNESCO-Welterbe). Die Brüder Grimm lebten hier und sammelten ihre Märchen. Mit der Karlsaue, dem Herkules-Denkmal und den Wasserspielen ist Kassel ein Kulturzentrum Nordhessens. KSV Hessen Kassel ist der lokale Fußballverein.',
-      beispiel: 'Zur documenta nach Kassel — Kunst auf höchstem Niveau.',
-      beispiel_hd: 'Zur documenta nach Kassel — Kunst auf höchstem Niveau.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-102',
-      ausdruck: 'documenta',
-      hochdeutsch: 'documenta (Weltkunstausstellung)',
-      bedeutung: 'Die documenta ist eine der weltweit wichtigsten Kunstausstellungen — alle 5 Jahre 100 Tage lang in Kassel. Gegründet 1955 von Arnold Bode. Sie zeigt zeitgenössische Kunst aus der ganzen Welt — Skulpturen, Performance, Video, Installation. Über 750.000 Besucher kommen jeweils. Die documenta-Fridericianum ist Hauptort, aber Werke verteilen sich über die ganze Stadt. Hessen ist stolz auf seine documenta.',
-      beispiel: 'documenta-Besucher sind in Kassel überall — auch in den seltsamsten Ecken.',
-      beispiel_hd: 'documenta-Besucher sind in Kassel überall — auch in den seltsamsten Ecken.',
-      kategorie: 'musik'
-    },
-    {
-      id: 'h-103',
-      ausdruck: 'Brüder Grimm',
-      hochdeutsch: 'Jacob und Wilhelm Grimm',
-      bedeutung: 'Die Brüder Grimm — Jacob (1785-1863) und Wilhelm (1786-1859) — sind Hessens berühmteste Schriftsteller. In Hanau geboren, in Steinau aufgewachsen, in Marburg studiert. Sie sammelten die berühmten „Kinder- und Hausmärchen" (Aschenputtel, Rotkäppchen, Hänsel und Gretel) und schrieben das „Deutsche Wörterbuch". Die Deutsche Märchenstraße führt durch hessische Orte ihrer Wirkungsstätten. Weltkulturerbe.',
-      beispiel: 'Ohne die Brüder Grimm gäbs keine Märchen wie wir sie kennen.',
-      beispiel_hd: 'Ohne die Brüder Grimm gäbe es keine Märchen wie wir sie kennen.',
-      kategorie: 'menschen'
-    },
-    {
       id: 'h-104',
       ausdruck: 'Wiesbaden',
       hochdeutsch: 'Wiesbaden (Landeshauptstadt Hessens)',
@@ -934,8 +764,8 @@ export default {
       ausdruck: 'Rüdesheim',
       hochdeutsch: 'Rüdesheim am Rhein',
       bedeutung: 'Rüdesheim am Rhein ist eine Touristen-Hochburg an der Rheinschleife — bekannt für die Drosselgasse (eine 144 m lange Weinstraße mit Restaurants), die Niederwald-Statue (Germania-Denkmal) und Asbach Uralt (Weinbrand). Im Sommer drängen sich Touristen aus aller Welt durch die Gassen. Ehrlicher hessischer Rheingauer Riesling und der typische Lebensstil sind hier zu erleben.',
-      beispiel: 'In der Drosselgasse gehe i nur wegen dem Riesling.',
-      beispiel_hd: 'In die Drosselgasse gehe ich nur wegen des Rieslings.',
+      beispiel: 'Nach Rüdesheim in die Drosselgasse fahr i nur wegen dem Riesling.',
+      beispiel_hd: 'Nach Rüdesheim in die Drosselgasse fahre ich nur wegen des Rieslings.',
       kategorie: 'orte'
     },
     {
@@ -948,33 +778,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'h-107',
-      ausdruck: 'Sachsenhausen',
-      hochdeutsch: 'Frankfurter Stadtteil mit Äppelwoi-Kultur',
-      bedeutung: 'Sachsenhausen ist der Frankfurter Apfelwein-Stadtteil — südlich des Mains gelegen. Hier reihen sich die traditionellen Apfelweinwirtschaften an („Adolf Wagner", „Atschel", „Apfelwein Wagner"). Mit dem charakteristischen Gerippten-Glas und dem Bembel (Krug) wird Äppelwoi serviert. Das Sachsenhäuser Bach-Viertel ist eine der beliebtesten Frankfurter Ausgehgegenden. Hessisches Lebensgefühl pur.',
-      beispiel: 'In Sachsenhausen trinkst du Ebbelwoi vom Bembel — Frankfurter Klassiker.',
-      beispiel_hd: 'In Sachsenhausen trinkst du Apfelwein aus dem Krug — Frankfurter Klassiker.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-108',
-      ausdruck: 'Bornheim',
-      hochdeutsch: 'Frankfurter Bornheim (Stadtteil)',
-      bedeutung: 'Bornheim ist ein traditioneller Frankfurter Stadtteil im Osten — bekannt als „Lustiges Dorf" wegen seiner Apfelweinkneipen, Eisdielen und entspannten Atmosphäre. Die Berger Straße ist die Hauptachse mit zahlreichen Lokalen. Bornheim hat einen dörflichen Charakter mitten in Frankfurt — fast alle Bornheimer kennen sich. Bornheimer-Fanblock-Hymne der Eintracht: „Bornheimer Lustiges Dorf".',
-      beispiel: 'In Bornheim auf der Berger Straße — Frankfurt von seiner gemütlichsten Seite.',
-      beispiel_hd: 'In Bornheim auf der Berger Straße — Frankfurt von seiner gemütlichsten Seite.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-109',
-      ausdruck: 'Hessischer Rundfunk',
-      hochdeutsch: 'Hessischer Rundfunk (hr)',
-      bedeutung: 'Der Hessische Rundfunk (hr) ist die ARD-Landesrundfunkanstalt für Hessen — gegründet 1948 in Frankfurt. Mit Sendern wie hr1, hr2-kultur, hr3, hr4, hr-Info und dem hr-fernsehen. Das hr-Funkhaus am Dornbusch (Frankfurt) ist Architekturikone. Der hr produziert auch Tatort-Folgen mit Frankfurter Kommissaren. Hessens mediale Stimme.',
-      beispiel: 'Der hr macht echt gute hessische Doku-Serien.',
-      beispiel_hd: 'Der hr macht echt gute hessische Doku-Serien.',
-      kategorie: 'musik'
-    },
-    {
       id: 'h-110',
       ausdruck: 'Hessenpark',
       hochdeutsch: 'Freilichtmuseum Hessenpark',
@@ -982,24 +785,6 @@ export default {
       beispiel: 'Im Hessenpark erlebst du Hessen aus 500 Jahren.',
       beispiel_hd: 'Im Hessenpark erlebst du Hessen aus 500 Jahren.',
       kategorie: 'orte'
-    },
-    {
-      id: 'h-111',
-      ausdruck: 'Vogelsberg',
-      hochdeutsch: 'Vogelsberg (größtes Vulkangebirge Europas)',
-      bedeutung: 'Der Vogelsberg in Mittelhessen ist Europas größtes erloschenes Vulkangebirge — entstanden vor 17 Millionen Jahren. Mit dem Hoherodskopf (763 m) als höchstem Berg. Heute ein Naturpark mit Wäldern, Hochmooren und Bauernhöfen. Berühmt: die schwarzbunten Vogelsberger Kühe und der „Vulkanradweg" auf ehemaligen Bahntrassen. Wandern, Radeln, Naturerlebnis — der Vogelsberg ist das hessische Mittelgebirge schlechthin.',
-      beispiel: 'Im Vogelsberg gibts noch ne Stille, die ne Stadt nie hat.',
-      beispiel_hd: 'Im Vogelsberg gibt es eine Stille, die eine Stadt nie hat.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'h-112',
-      ausdruck: 'Taunus',
-      hochdeutsch: 'Taunus (Mittelgebirge bei Frankfurt)',
-      bedeutung: 'Der Taunus ist Hessens beliebtestes Naherholungsgebiet — direkt vor den Toren Frankfurts. Mit dem Großen Feldberg (881 m) als höchstem Gipfel. Berühmt: die Saalburg (rekonstruiertes Römerkastell, UNESCO-Welterbe), Kronberg, Bad Homburg und die Kurorte. Frankfurter fahren am Wochenende „in den Taunus" — wandern, joggen, Kaffee trinken. Der Limes-Wanderweg führt durch ihn.',
-      beispiel: 'Am Wochenende geh ich in den Taunus — Frankfurter Therapie.',
-      beispiel_hd: 'Am Wochenende gehe ich in den Taunus — Frankfurter Therapie.',
-      kategorie: 'natur'
     },
     {
       id: 'h-113',
@@ -1038,24 +823,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'h-117',
-      ausdruck: 'Mainhattan',
-      hochdeutsch: 'Frankfurter Skyline (Spitzname)',
-      bedeutung: '„Mainhattan" ist der ironische Spitzname für die Frankfurter Skyline — wegen der Wolkenkratzer und dem Main. Frankfurt hat die einzige deutsche Skyline, die mit New York mithalten kann. Der Main Tower mit Aussichtsplattform, der Messeturm, der Commerzbank-Tower (259 m) — alle prägen das Stadtbild. Bei klarem Wetter spektakulär. Mainhattan ist hessischer Stolz und Spott zugleich.',
-      beispiel: 'Mainhattan im Sonnenuntergang — Frankfurt von seiner besten Seite.',
-      beispiel_hd: 'Mainhattan im Sonnenuntergang — Frankfurt von seiner besten Seite.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-118',
-      ausdruck: 'Römer',
-      hochdeutsch: 'Frankfurter Römerberg (Rathaus)',
-      bedeutung: 'Der Römer am Römerberg ist Frankfurts historisches Rathaus — drei Patrizierhäuser, die seit 1405 als Rathaus dienen. Im Krieg zerstört, originalgetreu wieder aufgebaut. Vom Römer-Balkon werden Eintracht-Sieger geehrt und Bundeskanzler verkündet. Der Römerberg mit Fachwerkhäusern und Gerechtigkeitsbrunnen ist eine der schönsten Plätze Deutschlands — Bild-Postkartenmotiv.',
-      beispiel: 'Am Römerberg vor\'m Rathaus — Frankfurts historisches Herz.',
-      beispiel_hd: 'Am Römerberg vor dem Rathaus — Frankfurts historisches Herz.',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-119',
       ausdruck: 'Frankfurter Würstchen',
       hochdeutsch: 'Frankfurter Würstchen (Spezialität)',
@@ -1065,30 +832,12 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'h-120',
-      ausdruck: 'Frankfurter Kranz',
-      hochdeutsch: 'Frankfurter Kranz (Buttercreme-Torte)',
-      bedeutung: 'Der Frankfurter Kranz ist eine klassische deutsche Torte, in Frankfurt erfunden — drei Schichten Sandkuchen, mit Buttercreme gefüllt, außen mit Krokantbröseln bestreut und mit roten Kirschen und Sahne dekoriert. Die runde Form mit dem Loch in der Mitte soll an die Krone der Kaiserkrönungen im Frankfurter Dom erinnern. Tradition seit dem 18. Jahrhundert. Im modernen Frankfurt seltener — aber Klassiker.',
-      beispiel: 'A frischer Frankfurter Kranz — des is Kaffeeklatsch-Klassiker.',
-      beispiel_hd: 'Ein frischer Frankfurter Kranz — das ist Kaffeeklatsch-Klassiker.',
-      kategorie: 'essen'
-    },
-    {
       id: 'h-121',
       ausdruck: 'Bethmännchen',
       hochdeutsch: 'Bethmännchen (Marzipan-Plätzchen)',
       bedeutung: 'Bethmännchen sind eine Frankfurter Spezialität — kleine, runde Marzipanplätzchen mit drei Mandelhälften außen. Erfunden 1838 vom Bankier Simon Moritz von Bethmann für seine vier Söhne — daher die ursprünglich vier Mandeln. Als ein Sohn starb, wurde nur noch mit drei Mandeln gebacken. Heute Frankfurter Weihnachtsbäckerei und ganzjährige Spezialität. Hessisches Marzipan-Erbe.',
       beispiel: 'A Tüten Bethmännchen vom Bäcker — Frankfurter Genuss.',
       beispiel_hd: 'Eine Tüte Bethmännchen vom Bäcker — Frankfurter Genuss.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'h-122',
-      ausdruck: 'Bembelche',
-      hochdeutsch: 'Bembel-Verkleinerung (kleiner Krug)',
-      bedeutung: 'Das „Bembelche" ist die hessische Verkleinerungsform von Bembel — ein kleiner Apfelweinkrug. Die hessische Diminutivendung „-che" (statt „-chen") ist liebevoll und alltäglich. Auch in Personennamen üblich: „Friedche" für Friedrich. Bembelche werden oft als Souvenirs verkauft — handgetöpfert mit dem charakteristischen blau-grauen Steinzeug-Muster. Hessisches Kulturgut.',
-      beispiel: 'En kleines Bembelche zum Mitnehmen — perfektes Mitbringsel.',
-      beispiel_hd: 'Ein kleines Bembel zum Mitnehmen — perfektes Mitbringsel.',
       kategorie: 'essen'
     },
     {
@@ -1119,39 +868,12 @@ export default {
       kategorie: 'redensart'
     },
     {
-      id: 'h-126',
-      ausdruck: 'Bad Homburg',
-      hochdeutsch: 'Bad Homburg vor der Höhe',
-      bedeutung: 'Bad Homburg im Taunus ist eine Kurstadt vor den Toren Frankfurts — bekannt für die Spielbank Bad Homburg, eine der ältesten Casinos Deutschlands (gegründet 1841). Dostojewski verspielte hier sein Vermögen. Die Stadt mit dem Schloss und dem Kurpark gilt als wohlhabend — viele Frankfurter Banker und Top-Manager wohnen hier. Der „Bad Homburger Hut" ist eine berühmte Hutform aus dieser Stadt.',
-      beispiel: 'In Bad Homburg wohnen die reichen Frankfurter.',
-      beispiel_hd: 'In Bad Homburg wohnen die reichen Frankfurter.',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-127',
       ausdruck: 'Limes',
       hochdeutsch: 'Obergermanisch-Raetischer Limes (UNESCO)',
       bedeutung: 'Der Obergermanisch-Raetische Limes ist die ehemalige Grenze des Römischen Reiches — verläuft 550 km durch Hessen, Baden-Württemberg und Bayern. UNESCO-Welterbe seit 2005. In Hessen liegen Saalburg (vollständig rekonstruiertes Römerkastell im Taunus), Feldberg-Kastell und der bekannte Limeswanderweg. Wer den Limes erwandert, lernt römische Geschichte hautnah kennen.',
-      beispiel: 'Auf der Saalburg sin no römische Mauern zu sehe.',
-      beispiel_hd: 'Auf der Saalburg sind noch römische Mauern zu sehen.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-128',
-      ausdruck: 'Saalburg',
-      hochdeutsch: 'Saalburg (rekonstruiertes Römerkastell)',
-      bedeutung: 'Die Saalburg im Taunus ist Deutschlands berühmtestes rekonstruiertes Römerkastell — Kaiser Wilhelm II. ließ es Ende des 19. Jahrhunderts originalgetreu wieder aufbauen. Heute Museum mit über 100.000 Besuchern jährlich. UNESCO-Welterbe als Teil des Limes. Schulklassen pilgern hierher — die Saalburg vermittelt römisches Lager-Leben authentisch. Mit Wallanlagen, Wachturm, römischen Ausstellungsstücken.',
-      beispiel: 'Mit der Klasse auf der Saalburg — Schulausflug-Klassiker.',
-      beispiel_hd: 'Mit der Klasse auf der Saalburg — Schulausflug-Klassiker.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-129',
-      ausdruck: 'Marburg',
-      hochdeutsch: 'Marburg (Universitätsstadt)',
-      bedeutung: 'Marburg an der Lahn ist eine der ältesten Universitätsstädte Deutschlands — die Philipps-Universität wurde 1527 als erste protestantische Universität gegründet. Die Brüder Grimm studierten hier Jura. Marburg liegt auf einem steilen Berghang — die Elisabethkirche (älteste rein gotische Kirche Deutschlands), das Marburger Schloss und das Schloss Wallenburg prägen das Stadtbild. Studenten machen 25% der Stadtbevölkerung aus.',
-      beispiel: 'In Marburg studiert man umgeben von Geschichte.',
-      beispiel_hd: 'In Marburg studiert man umgeben von Geschichte.',
+      beispiel: 'Am Limes auf der Saalburg sin no römische Mauern zu sehe.',
+      beispiel_hd: 'Am Limes auf der Saalburg sind noch römische Mauern zu sehen.',
       kategorie: 'orte'
     },
     {
@@ -1180,15 +902,6 @@ export default {
       beispiel: 'Der ist en echte Battonn — Bornheimer durch und durch.',
       beispiel_hd: 'Der ist ein echter Bornheimer — Bornheimer durch und durch.',
       kategorie: 'menschen'
-    },
-    {
-      id: 'h-133',
-      ausdruck: 'Ebbelwoi-Express',
-      hochdeutsch: 'Apfelwein-Straßenbahn (Touristenstraßenbahn)',
-      bedeutung: 'Der „Ebbelwoi-Express" ist Frankfurts Touristenattraktion: eine historische Straßenbahn-Garnitur, in der Apfelwein und Brezeln serviert werden während einer 70-minütigen Rundfahrt durch die Stadt. Eine Erfindung der Frankfurter Verkehrs Gesellschaft (VGF). Im Sommer pilgern Touristen und Hessen aus dem Umland zum Ebbelwoi-Express. Hessisches Kulturerbe auf Schienen.',
-      beispiel: 'Der Ebbelwoi-Express isch hessischer Tourismus pur.',
-      beispiel_hd: 'Der Ebbelwoi-Express ist hessischer Tourismus pur.',
-      kategorie: 'orte'
     },
     {
       id: 'h-134',
@@ -1272,30 +985,12 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 'h-143',
-      ausdruck: 'Geripptes',
-      hochdeutsch: 'Geripptes Apfelwein-Glas',
-      bedeutung: 'Das „Gerippte" ist das Frankfurter Standard-Apfelweinglas — ein 0,25- oder 0,3-Liter-Glas mit dem charakteristischen rautenförmigen Schliff. Der Schliff dient dazu, dass das Glas auch mit fettigen Händen sicher gehalten werden kann (Apfelweinwirtschaften servieren oft Brot und Käse). Ein Gerippte und ein Bembel sind das Frankfurter Trinkset. Niemand trinkt Apfelwein aus einem normalen Glas — das Gerippte ist Pflicht.',
-      beispiel: 'En Schoppe Ebbelwoi ausm Gerippte — typisch hessisch.',
-      beispiel_hd: 'Ein Schoppen Apfelwein aus dem Gerippten — typisch hessisch.',
-      kategorie: 'essen'
-    },
-    {
       id: 'h-144',
       ausdruck: 'Schunkel',
       hochdeutsch: 'Schunkeln (Sitz-Tanzen am Tisch)',
       bedeutung: 'Das „Schunkeln" — sich am Tisch unterhakend hin und her wiegen — ist eine hessische und allgemein-deutsche Tradition, vor allem auf Festen, in Apfelweinwirtschaften und beim Kerb. Bei hessischen Liedern wie „En Mool dahem an unsrem schee Frankfurt" wird automatisch geschunkelt. Eine harmlose, fröhliche Tradition, die Gemeinschaftsgefühl stiftet. Hessen schunkeln gerne und mit Hingabe.',
       beispiel: 'Beim Kerb wird gschunkelt, dass die Bank wackelt.',
       beispiel_hd: 'Beim Volksfest wird geschunkelt, dass die Bank wackelt.',
-      kategorie: 'redensart'
-    },
-    {
-      id: 'h-145',
-      ausdruck: 'Kerb',
-      hochdeutsch: 'Kerb / Kerwe (hessisches Dorffest)',
-      bedeutung: 'Die „Kerb" oder „Kerwe" ist das hessische Pendant zum bayerischen Kirtag oder zur Kirchweih — ein traditionelles Dorf- oder Stadtfest. Findet meist im Herbst statt (zur Erntezeit). Mit Festumzug, Karussell, Bratwurstständen und natürlich Apfelwein. Die Kerb dauert 2-4 Tage. Jedes hessische Dorf hat seine Kerb, viele auch eigene Kerwe-Sprüche. Hessen lieben Kerbe.',
-      beispiel: 'Zur Kerb komm die ganze Verwandtschaft — Familienpflicht.',
-      beispiel_hd: 'Zur Kerb kommt die ganze Verwandtschaft — Familienpflicht.',
       kategorie: 'redensart'
     },
     {
@@ -1324,15 +1019,6 @@ export default {
       beispiel: '„Mai-Regen bringt Segen" — alte hessische Bauernweisheit.',
       beispiel_hd: '„Mai-Regen bringt Segen" — alte hessische Bauernweisheit.',
       kategorie: 'natur'
-    },
-    {
-      id: 'h-149',
-      ausdruck: 'Frankfurter Schule',
-      hochdeutsch: 'Frankfurter Schule (Philosophie)',
-      bedeutung: 'Die Frankfurter Schule ist eine philosophische Strömung — gegründet am Institut für Sozialforschung in Frankfurt (1923). Theodor W. Adorno, Max Horkheimer, Herbert Marcuse und Jürgen Habermas waren Hauptvertreter. Ihre Kritische Theorie analysierte Kapitalismus und Massenkultur. Weltweit einflussreich — auch heute. Frankfurt ist nicht nur Bankenstadt, sondern auch Philosophie-Hochburg.',
-      beispiel: 'Die Frankfurter Schule hat die Welt-Philosophie verändert.',
-      beispiel_hd: 'Die Frankfurter Schule hat die Welt-Philosophie verändert.',
-      kategorie: 'arbeit'
     },
     {
       id: 'h-150',
@@ -1443,15 +1129,6 @@ export default {
       kategorie: 'natur'
     },
     {
-      id: 'h-162',
-      ausdruck: 'Hanau',
-      hochdeutsch: 'Hanau (Geburtsstadt der Brüder Grimm)',
-      bedeutung: 'Hanau ist die Geburtsstadt der Brüder Grimm — bekannt für Goldschmiedekunst und das Märchen-Erbe der Grimm-Brüder. Das Nationaldenkmal der Brüder Grimm steht auf dem Marktplatz. Hanau ist auch Industriestadt (Heraeus-Metall-Konzern) und liegt am Main. Die hessische Pioniertradition wird hier gepflegt — von Märchen bis Hightech. Stadtgrenze zu Frankfurt-Ost.',
-      beispiel: 'In Hanau wurden die Brüder Grimm geboren — Märchenstadt.',
-      beispiel_hd: 'In Hanau wurden die Brüder Grimm geboren — Märchenstadt.',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-163',
       ausdruck: 'Friedrichsdorf',
       hochdeutsch: 'Friedrichsdorf (Zwieback-Hauptstadt)',
@@ -1495,15 +1172,6 @@ export default {
       beispiel: 'Ohne Justus von Liebig gäb\'s keine moderne Landwirtschaft.',
       beispiel_hd: 'Ohne Justus von Liebig gäbe es keine moderne Landwirtschaft.',
       kategorie: 'menschen'
-    },
-    {
-      id: 'h-168',
-      ausdruck: 'Gießen',
-      hochdeutsch: 'Gießen (Universitätsstadt)',
-      bedeutung: 'Gießen ist eine hessische Universitätsstadt — die Justus-Liebig-Universität (gegründet 1607) ist die zweitälteste in Hessen. Mit über 27.000 Studenten ist Gießen die studentenreichste Stadt Deutschlands (Studenten-zu-Einwohner-Quote). Charakteristisch: das Mathematische Institut, die Liebig-Apotheke und der Schiffenberger Wald. Hessens junge, intellektuelle Mittelstadt.',
-      beispiel: 'Gießen is studentisch — überall Cafés und Bibliotheken.',
-      beispiel_hd: 'Gießen ist studentisch — überall Cafés und Bibliotheken.',
-      kategorie: 'orte'
     },
     {
       id: 'h-169',
@@ -1551,15 +1219,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'h-174',
-      ausdruck: 'Kasseler',
-      hochdeutsch: 'Kasseler (gepökeltes Fleisch)',
-      bedeutung: '„Kasseler" — manchmal auch „Kassler" — ist gepökeltes und leicht geräuchertes Schweinefleisch, das wahrscheinlich nach dem Berliner Fleischer „Cassel" benannt wurde (nicht nach der Stadt Kassel!). Die Verwechslung führt zu Diskussionen — die Hessen aus Kassel claimen es trotzdem. Wird oft mit Sauerkraut, Püree oder Schmorlinsen serviert. Hessisches Wintergericht.',
-      beispiel: 'Kasseler mit Sauerkraut und Püree — Winterklassiker.',
-      beispiel_hd: 'Kasseler mit Sauerkraut und Püree — Winterklassiker.',
-      kategorie: 'essen'
-    },
-    {
       id: 'h-175',
       ausdruck: 'Hessenpoltik',
       hochdeutsch: 'Hessen-Politik (CDU-Hochburg)',
@@ -1587,42 +1246,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'h-178',
-      ausdruck: 'Fulda',
-      hochdeutsch: 'Fulda (Bistumsstadt)',
-      bedeutung: 'Fulda im Osten Hessens ist ein historisches Bistum — Bonifatius (Apostel der Deutschen) gründete hier 744 das Kloster. Sein Grab im Fuldaer Dom ist Pilgerort. Der barocke Dom (1704-12) ist Wahrzeichen. Auch die Fulda-Konferenz der katholischen Bischöfe Deutschlands findet hier statt. Hessisches Sakralerbe in der Mitte Deutschlands.',
-      beispiel: 'Der Fuldaer Dom mit Bonifatius-Grab — hessisches Welterbe.',
-      beispiel_hd: 'Der Fuldaer Dom mit Bonifatius-Grab — hessisches Welterbe.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-179',
-      ausdruck: 'Rhön',
-      hochdeutsch: 'Rhön (Mittelgebirge im Osten Hessens)',
-      bedeutung: 'Die Rhön ist ein Mittelgebirge im Dreiländereck Hessen-Bayern-Thüringen — mit der Wasserkuppe (950 m) als höchstem Punkt. Beliebt bei Gleitschirmfliegern (Wasserkuppe ist Wiege des Segelflugs). Auch Naturschutzgebiet mit Hochmooren, Hutweiden und seltenen Pflanzen. UNESCO-Biosphärenreservat. Hessische Naturlandschaft mit Charakter.',
-      beispiel: 'Auf der Wasserkuppe in der Rhön gleitsegeln — hessisches Bergerlebnis.',
-      beispiel_hd: 'Auf der Wasserkuppe in der Rhön gleitsegeln — hessisches Bergerlebnis.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'h-180',
-      ausdruck: 'Wasserkuppe',
-      hochdeutsch: 'Wasserkuppe (Gleitschirm-Mekka)',
-      bedeutung: 'Die Wasserkuppe (950 m) ist der höchste Berg in Hessen und die „Wiege des Segelflugs" — seit den 1920er Jahren Trainingsgebiet für Gleitschirm- und Segelflug. Mit dem Deutschen Segelflugmuseum. Im Winter Skigebiet, im Sommer Outdoor-Paradies. Auch Standort der Radarstation der Bundeswehr (NATO-relevant). Hessische Höhepunkte.',
-      beispiel: 'Auf der Wasserkuppe wurde das Segelfliegen erfunden.',
-      beispiel_hd: 'Auf der Wasserkuppe wurde das Segelfliegen erfunden.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'h-181',
-      ausdruck: 'Märchenstraße',
-      hochdeutsch: 'Deutsche Märchenstraße (hessisches Erbe)',
-      bedeutung: 'Die Deutsche Märchenstraße zieht sich 600 km durch Hessen und Niedersachsen — auf den Spuren der Brüder Grimm und ihrer Märchen. Hanau (Grimm-Geburtsstadt), Steinau (Grimm-Kindheit), Marburg (Grimm-Studium), Kassel (Grimm-Wirken), Sababurg (Dornröschen-Schloss). Touristisch beliebt bei Asiaten. Hessisches Kulturerbe als Themenstraße.',
-      beispiel: 'Die Märchenstraße — Hessens beliebteste Touri-Route.',
-      beispiel_hd: 'Die Märchenstraße — Hessens beliebteste Touri-Route.',
-      kategorie: 'orte'
-    },
-    {
       id: 'h-182',
       ausdruck: 'Sababurg',
       hochdeutsch: 'Sababurg (Dornröschenschloss)',
@@ -1641,15 +1264,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'h-184',
-      ausdruck: 'Edersee',
-      hochdeutsch: 'Edersee (Stausee in Hessen)',
-      bedeutung: 'Der Edersee in Waldeck-Frankenberg ist Deutschlands zweitgrößter Stausee — mit der Edertalsperre, einer der größten Talsperren Europas (Mauer 47 m hoch). Im Krieg von britischen Bombern angegriffen (Operation Chastise, 1943). Heute beliebt für Wassersport, Segeln und Schiffsrundfahrten. Mit dem Eder-Drei-Seen-Weg ein Wanderparadies. Hessische Naturidyll.',
-      beispiel: 'Am Edersee segeln — hessische Sommerfreuden.',
-      beispiel_hd: 'Am Edersee segeln — hessische Sommerfreuden.',
-      kategorie: 'natur'
-    },
-    {
       id: 'h-185',
       ausdruck: 'Waldecker Land',
       hochdeutsch: 'Waldecker Land (Region in Hessen)',
@@ -1665,15 +1279,6 @@ export default {
       bedeutung: 'Der Bergpark Wilhelmshöhe in Kassel ist seit 2013 UNESCO-Welterbe — der größte Bergpark Europas mit der berühmten Herkules-Statue, dem Schloss Wilhelmshöhe und den weltgrößten künstlichen Wasserspielen. Wenn am Sonntag das Wasser läuft, fließt es 250 m über Kaskaden hinab — beeindruckendes Schauspiel seit 1714. Hessens Vorzeige-Park.',
       beispiel: 'Sonntags die Wasserspiele auf Wilhelmshöhe — spektakulär.',
       beispiel_hd: 'Sonntags die Wasserspiele auf Wilhelmshöhe — spektakulär.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'h-187',
-      ausdruck: 'Herkules',
-      hochdeutsch: 'Herkules-Statue (Wahrzeichen Kassel)',
-      bedeutung: 'Die Herkules-Statue auf dem Karlsberg in Kassel ist Hessens berühmtestes Denkmal — 11,3 m hoch, auf einer Pyramide und einem Oktogon. Erbaut 1701-17. Symbol für Stärke und Macht der Landgrafen von Hessen-Kassel. Heute UNESCO-Welterbe und Wahrzeichen Kassels. Vom Sockel der Statue beste Aussicht über die documenta-Stadt.',
-      beispiel: 'Der Herkules — Wahrzeichen Kassels seit 300 Jahren.',
-      beispiel_hd: 'Der Herkules — Wahrzeichen Kassels seit 300 Jahren.',
       kategorie: 'orte'
     },
     {
@@ -2230,7 +1835,7 @@ export default {
       ausdruck: 'Eelisabeth',
       hochdeutsch: 'Heilige Elisabeth (von Thüringen-Marburg)',
       bedeutung: 'Die „heilige Elisabeth" (1207-1231) ist die Schutzpatronin Marburgs — ungarische Königstochter, lebte in Marburg, gründete Hospital, pflegte Aussätzige. Wurde 1235 heiliggesprochen. Marburger Elisabethkirche (1235-1283) ist erste reine Gotik-Kirche Deutschlands. „Elisabeth-Wallfahrten" im Mittelalter brachten Wohlstand. Heute Symbol mittelhessischer christlicher Tradition. Wallfahrer aus aller Welt besuchen ihr Grab.',
-      beispiel: 'D\'heilige Elisabeth liegt in Marburg begraben.',
+      beispiel: 'D\'heilige Eelisabeth liegt in Marburg begraben.',
       beispiel_hd: 'Die heilige Elisabeth liegt in Marburg begraben.',
       kategorie: 'menschen'
     },
@@ -2446,8 +2051,8 @@ export default {
       ausdruck: 'Bratwurst',
       hochdeutsch: 'Bratwurst (nordhessische Spezialität)',
       bedeutung: 'Die „Bratwurst" ist nordhessisches Grundnahrungsmittel — vor allem die „Ahle Worscht" (alte Wurst) aus Schweinefleisch, luftgetrocknet, monatelang gereift. Nordhessen produziert weltweit beste Ahle Worscht. „Lüftungs-Hessen" sind die nordhessischen Bauern, die ihre Wurst luftig hängen lassen. „Worscht-Markt" ist in Marbach, Lichtenfels. Wird mit Brot, Senf und Bier serviert. Symbol für nordhessische Wurst-Identität.',
-      beispiel: 'Z\'Brotzeit gibt\'s Ahle Worscht und Bier.',
-      beispiel_hd: 'Zur Brotzeit gibt es Ahle Worscht und Bier.',
+      beispiel: 'Z\'Brotzeit gibt\'s nordhessische Bratwurst, des is Ahle Worscht, und a Bier.',
+      beispiel_hd: 'Zur Brotzeit gibt es nordhessische Bratwurst, das ist Ahle Worscht, und ein Bier.',
       kategorie: 'essen'
     },
     {
@@ -3355,7 +2960,7 @@ export default {
       ausdruck: 'Mach\'s gut',
       hochdeutsch: 'Tschüss / mach\'s gut',
       bedeutung: '„Mach\'s gut" ist hessische Standard-Verabschiedung — neutraler als „Pfiat di" (südländisch), wärmer als „Tschüss". Wird unter Freunden, Kollegen, Familien verwendet. Drückt aufrichtige Wunsch nach Wohlergehen aus. „Mach\'s gut, mei Liaba!" als hessische Variation. Symbol für hessische Mittel-Ebene zwischen Förmlichkeit und Intimität. Universell verwendbar. Auch im Geschäftsleben akzeptiert.',
-      beispiel: 'Mach\'s gut, wir sehen uns nächste Woche!',
+      beispiel: 'Mach\'s gut, mer sehe uns nächst Woch!',
       beispiel_hd: 'Mach\'s gut, wir sehen uns nächste Woche!',
       kategorie: 'begruessung'
     },
@@ -3411,6 +3016,267 @@ export default {
       bedeutung: '„Hessen for life" ist hessisch-jugendsprachlicher Identitäts-Slogan — vor allem in Eintracht-Fan-Kreisen und auf T-Shirts. Verbindet hessische Heimat-Treue mit englischer Sprachform. „Hessen for life, baby!" als Bekenntnis. Drückt unzerbrechliche regionale Loyalität aus. Im Frankfurter Stadion oft als Banner zu sehen. Symbol für moderne hessische Identität — sprachlich modern, kulturell traditionell. Hessen-Stolz neuer Generation.',
       beispiel: 'Hessen for life — auch wenn d\'Eintracht verliert!',
       beispiel_hd: 'Hessen ein Leben lang — auch wenn die Eintracht verliert!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-381',
+      ausdruck: 'Frankforterisch',
+      hochdeutsch: 'Frankfurterisch (Stadt-Dialekt)',
+      bedeutung: 'Das „Frankforterisch" ist der spezifische Frankfurter Stadtdialekt — eine Variante des Hessischen mit Bankenmetropolen-Einschlag. „I red Frankforterisch, kei Hessisch ausm Land!" Mit Wörtern wie Bembel, Schoppe, Handkäs aufgewachsen. Mehr Hochdeutsch durchsetzt als das Landhessisch. Im Volkstheater (Volkstheater Frankfurt) gepflegt. Frankfurter Stadtidentität.',
+      beispiel: 'Frankforterisch sprech ich nur noch mit der Familie.',
+      beispiel_hd: 'Frankfurterisch spreche ich nur noch mit der Familie.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-382',
+      ausdruck: 'Bembelmann',
+      hochdeutsch: 'Bembel-Träger / Apfelwein-Liebhaber',
+      bedeutung: 'Ein „Bembelmann" ist im Hessischen ein Apfelwein-Liebhaber, der seinen Bembel (Apfelweinkrug) immer dabei hat. „Der echte Bembelmann reist mit seinem Bembel!" Verbreitet in der hessischen Apfelweinkultur. Im Apfelwein-Express, in den Sachsenhäuser Wirtschaften, beim Hessentag — überall zu sehen. Symbol für die hessische Apfelwein-Identität.',
+      beispiel: 'Mei Onkel isch a echter Bembelmann!',
+      beispiel_hd: 'Mein Onkel ist ein echter Bembelmann!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-383',
+      ausdruck: 'Sachsenhäuser Apfelwein-Tour',
+      hochdeutsch: 'Sachsenhäuser Apfelwein-Tour',
+      bedeutung: 'Die „Sachsenhäuser Apfelwein-Tour" ist eine klassische Frankfurter Touren-Aktivität — von Apfelwein-Wirtschaft zu Apfelwein-Wirtschaft im Stadtteil Sachsenhausen ziehen. „Die Sachsenhäuser Apfelwein-Tour endet meist bei der Schlachten Pott!" Beliebte Junggesellenabschiede und Touristen-Ausflüge. Symbol für die Frankfurter Apfelwein-Kultur. Hessische Geselligkeitsform.',
+      beispiel: 'Zum Geburtstag macht mer Sachsenhäuser Apfelwein-Tour!',
+      beispiel_hd: 'Zum Geburtstag macht man Sachsenhäuser Apfelwein-Tour!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-384',
+      ausdruck: 'Worschdebrot',
+      hochdeutsch: 'Wurstbrot (hessisch)',
+      bedeutung: 'Das „Worschdebrot" ist im Hessischen das Wurstbrot — die typische Brotzeit-Mahlzeit zwischen den Hauptmahlzeiten. „Pack mer\'n Worschdebrot für die Pause!" Klassisch mit Hessischer Bratwurst, Lyoner oder Mortadella. Eine bodenständige hessische Speise. Mit dem charakteristischen hessischen „-de"-Suffix. Im Schulpausen-Kontext alltäglich.',
+      beispiel: 'Für die Brotzeit gibts a Worschdebrot mit Mostbirn.',
+      beispiel_hd: 'Für die Brotzeit gibt es ein Wurstbrot mit Mostbirne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-385',
+      ausdruck: 'Hessehosa',
+      hochdeutsch: 'Hessen-Hose / Trachten-Hose',
+      bedeutung: 'Die „Hessehosa" ist die traditionelle hessische Tracht-Hose — meist Lederhose oder Bauern-Hose mit Trägern. „Beim Hessentag tragen alle Hessehosa!" Verbreitet in der hessischen Trachten-Tradition. Heute oft nur noch bei Volksfesten und Trachtenfesten getragen. Mit Stolz und Augenzwinkern. Symbol für hessische Heimat-Identität.',
+      beispiel: 'Mei Großvater hat noch seine alte Hessehosa.',
+      beispiel_hd: 'Mein Großvater hat noch seine alte Hessen-Hose.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-386',
+      ausdruck: 'Mainmetropol-Hektik',
+      hochdeutsch: 'Mainmetropol-Hektik (Frankfurter Stress)',
+      bedeutung: 'Die „Mainmetropol-Hektik" ist die typische Frankfurter Großstadt-Hektik — Bankenmetropole, Verkehr, Termine. „In der Mainmetropol-Hektik vergeht die Zeit so schnell!" Im Gegensatz zur ländlich-hessischen Gemütlichkeit. Symbol für Frankfurts urbanen Charakter. Auch Begründung für viele Hessen, die Frankfurt verlassen. Hessische Soziologie.',
+      beispiel: 'Die Mainmetropol-Hektik stresst mich jeden Tag!',
+      beispiel_hd: 'Die Mainmetropol-Hektik stresst mich jeden Tag!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-387',
+      ausdruck: 'Hessenwurschd',
+      hochdeutsch: 'Hessen-Wurst',
+      bedeutung: 'Die „Hessenwurschd" ist eine traditionelle hessische Wurst — meist Bratwurst oder Mettwurst, regional unterschiedlich. „D\'Hessenwurschd gibts in vielen Sorten!" Hessische Metzgerei-Tradition. Auf Hessentagen und Volksfesten reichlich vertreten. Mit Bembel-Apfelwein die perfekte Kombination. Bodenständige hessische Esskultur.',
+      beispiel: 'Auf em Hessentag gibts Hessenwurschd zu jedem Bembel.',
+      beispiel_hd: 'Auf dem Hessentag gibt es Hessenwurst zu jedem Bembel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-388',
+      ausdruck: 'Vogelsbergler',
+      hochdeutsch: 'Vogelsbergler (Mensch aus dem Vogelsberg)',
+      bedeutung: 'Ein „Vogelsbergler" ist ein Mensch aus dem Vogelsberg — die mittelhessische Mittelgebirgsregion. „D\'Vogelsbergler sind a für si Sturheit bekannt!" Mit eigener Mundart-Variante. Vulkanische Landschaft, sanfte Berge, kleine Dörfer. Hessische Identität mit regionalem Akzent. Symbol für ländliches Hessen.',
+      beispiel: 'D\'Vogelsbergler hen ihr eigenes Hessisch.',
+      beispiel_hd: 'Die Vogelsbergler haben ihr eigenes Hessisch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-390',
+      ausdruck: 'Kuhdorf-Hessen',
+      hochdeutsch: 'Ländliches Hessen / Dorf-Hessen',
+      bedeutung: 'Das „Kuhdorf-Hessen" ist humorvoll-spöttisch das ländliche Hessen — kleine Dörfer, Bauernhöfe, weite Felder. „D\'Großstadtmenschen lachen über s\'Kuhdorf-Hessen!" Aber: viele Hessen sind stolz auf ihre ländliche Herkunft. Reflektiert die Spannung zwischen Frankfurter Banken-Welt und hessischer Land-Kultur. Mit Selbstironie verwendet.',
+      beispiel: 'Aus em Kuhdorf-Hessen kommt mei beschdes Essen!',
+      beispiel_hd: 'Aus dem ländlichen Hessen kommt mein bestes Essen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-391',
+      ausdruck: 'Goethehaus',
+      hochdeutsch: 'Goethe-Haus (Frankfurter Geburtshaus)',
+      bedeutung: 'Das „Goethehaus" ist Goethes Geburtshaus in Frankfurt — 1749 hier geboren, heute Museum am Großen Hirschgraben. „Im Goethehaus sieht man Goethes Kinderstube!" Im 2. Weltkrieg zerstört, originalgetreu wiederaufgebaut. Eine wichtige Frankfurter Kulturstätte. Pilgerstätte für Goethe-Liebhaber aus aller Welt. Symbol für Frankfurts Kultur-Erbe.',
+      beispiel: 'Im Goethehaus erfährt mer alles über sei Kindheit.',
+      beispiel_hd: 'Im Goethehaus erfährt man alles über seine Kindheit.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-392',
+      ausdruck: 'Hessenkollege',
+      hochdeutsch: 'Hessen-Kollege / Hessischer Freund',
+      bedeutung: 'Ein „Hessenkollege" ist im Hessischen der hessische Freund oder Arbeitskollege — meist mit langer Verbindung und Vertrauen. „Mei Hessenkollege hilft immer aus!" Eine warme, regionale Form der Freundschaftsbenennung. Reflektiert die hessische Wertschätzung für lange, treue Beziehungen. Wichtige Sozialform in der Arbeitswelt.',
+      beispiel: 'Mein Hessenkollege hilft mir immer beim Hausbau.',
+      beispiel_hd: 'Mein Hessenkollege hilft mir immer beim Hausbau.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-393',
+      ausdruck: 'Apfelwein-Sommer',
+      hochdeutsch: 'Apfelwein-Sommer (Hessen-Sommer)',
+      bedeutung: 'Der „Apfelwein-Sommer" ist die hessische Sommer-Tradition — Apfelwein-Wirtschaften im Freien, Bembel teilen, hessische Geselligkeit. „Im Apfelwein-Sommer ist die ganze Stadt entspannter!" Verbreitet in Sachsenhausen, Bornheim, im Apfelwein-Wirtschaftspark. Symbol für hessische Lebenslust und Sommer-Gemeinschaft. Klassische Frankfurter Tradition.',
+      beispiel: 'Im Apfelwein-Sommer trinkt mer jeden Abend Bembel.',
+      beispiel_hd: 'Im Apfelwein-Sommer trinkt man jeden Abend Bembel.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-394',
+      ausdruck: 'Hessischer Löwe',
+      hochdeutsch: 'Hessischer Löwe (Wappen)',
+      bedeutung: 'Der „Hessische Löwe" ist das traditionelle Wappentier von Hessen — ein silberner und roter aufrechter Löwe. „D\'Hessischen Löwen sieht mer auf jedem Hessen-Wappen!" Symbol für hessische Identität seit dem Mittelalter. Auf Polizeiuniformen, Beamten-Anstecknadeln, hessischen Trachten. Eine wichtige hessische Symbolik mit historischer Tiefe.',
+      beispiel: 'Auf jedem Hessen-Schild ist der hessische Löwe.',
+      beispiel_hd: 'Auf jedem Hessen-Schild ist der hessische Löwe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-395',
+      ausdruck: 'Hessen-Allianz',
+      hochdeutsch: 'Hessen-Allianz (politische Verbindung)',
+      bedeutung: 'Die „Hessen-Allianz" ist im Hessischen eine politische oder geschäftliche Verbindung — typische hessische Vernetzung zwischen Familien, Vereinen, Parteien. „D\'Hessen-Allianz öffnet viele Türen!" Reflektiert das hessische Netzwerk-Denken. Mit Anerkennung der Beziehungs-Wichtigkeit. Frankfurter Banker und hessische Landpolitiker pflegen ihre Hessen-Allianz.',
+      beispiel: 'Mit der Hessen-Allianz komm ich überall ran.',
+      beispiel_hd: 'Mit der Hessen-Allianz komme ich überall ran.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-396',
+      ausdruck: 'Rheingau-Riesling',
+      hochdeutsch: 'Rheingau-Riesling (Hessen-Wein)',
+      bedeutung: 'Der „Rheingau-Riesling" ist Hessens berühmter Weißwein — aus dem Rheingau zwischen Bingen und Wiesbaden. „A Rheingau-Riesling zum Käse — perfekt!" Eine der wichtigsten deutschen Weinregionen mit über 1000 Jahren Tradition. Klosterwein-Tradition (Eberbach). Auch international hoch geschätzt. Symbol für hessische Weinkultur.',
+      beispiel: 'Zum Abendessen trink ich gerne a Rheingau-Riesling.',
+      beispiel_hd: 'Zum Abendessen trinke ich gerne einen Rheingau-Riesling.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-397',
+      ausdruck: 'Hessenpark-Sonntag',
+      hochdeutsch: 'Hessenpark-Sonntag (Freilichtmuseum-Tag)',
+      bedeutung: 'Der „Hessenpark-Sonntag" ist ein klassischer hessischer Familien-Tag — Besuch im Hessenpark-Freilichtmuseum in Neu-Anspach im Taunus. „Am Hessenpark-Sonntag lernen d\'Kinder unsere Tradition!" Zeigt traditionelle hessische Architektur und Lebensweise. Historische Häuser aus ganz Hessen wieder aufgebaut. Wichtige hessische Bildungs-Tradition.',
+      beispiel: 'Am Wochenende machen wir Hessenpark-Sonntag mit den Kindern.',
+      beispiel_hd: 'Am Wochenende machen wir Hessenpark-Sonntag mit den Kindern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-398',
+      ausdruck: 'Frankfurter-Würschdsche',
+      hochdeutsch: 'Frankfurter-Würstchen',
+      bedeutung: 'Die „Frankfurter-Würschdsche" sind die original Frankfurter Würstchen — schlanke, aus reinem Schweinefleisch hergestellte Brühwürste. „A Frankfurter-Würschdsche zum Frühstück!" Geschützte Herkunftsbezeichnung. Klassisch mit Senf und Brot serviert. Welt-bekannt. Frankfurter Stadtsymbol. Hessische Wurstkultur mit internationaler Verbreitung.',
+      beispiel: 'Zum Frühstück gibts Frankfurter-Würschdsche mit Brötschen.',
+      beispiel_hd: 'Zum Frühstück gibt es Frankfurter Würstchen mit Brötchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-399',
+      ausdruck: 'Bornemer Schnauz',
+      hochdeutsch: 'Bornheimer Schnauze / Direktheit',
+      bedeutung: 'Die „Bornemer Schnauz" ist die direkte, manchmal etwas rüde Frankfurter Bornheimer Sprechweise — vergleichbar mit der Berliner Schnauze. „Die Bornemer Schnauz lernt mer schnell kennen!" Bornheim als Frankfurter Stadtteil hat eigene Charakterprägung. Mit Stolz oder Augenzwinkern erwähnt. Hessische Direktheit in Großstadt-Variante.',
+      beispiel: 'Mit der Bornemer Schnauz hörste schnell, was Sache is.',
+      beispiel_hd: 'Mit der Bornheimer Schnauze hörst du schnell, was Sache ist.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-400',
+      ausdruck: 'Hessisches Schunkel',
+      hochdeutsch: 'Hessisches Schunkellied',
+      bedeutung: 'Das „Hessische Schunkel" ist das hessische Volkslied im Schunkel-Rhythmus — meistens auf Festen, in Wirtschaften, beim Hessentag. „Beim Hessischen Schunkel verbinden sich Generationen!" Klassiker wie „Hessenliedel" oder „Frankfurter Bub". Symbol für hessische Geselligkeit und Tradition. Lebendig erhaltene Volkskultur.',
+      beispiel: 'Beim Hessischen Schunkel sind sich alle einig!',
+      beispiel_hd: 'Beim Hessischen Schunkel sind sich alle einig!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-401',
+      ausdruck: 'Schoppe-Pedder',
+      hochdeutsch: 'Schoppen-Petrus / Apfelwein-Stammgast',
+      bedeutung: 'Der „Schoppe-Pedder" ist im Hessischen ein Apfelwein-Stammgast — einer, der jeden Abend bei seinem Schoppen Apfelwein sitzt. „Der alte Schoppe-Pedder vom Eck-Beck!" Eine warme, humorvoll-augenzwinkernde Bezeichnung. Klassische Figur der hessischen Apfelwein-Wirtschaften. Mit liebevollem Respekt verwendet. Hessische Sozialfigur.',
+      beispiel: 'Beim Wirt am Eck sitzt jeden Abend a Schoppe-Pedder.',
+      beispiel_hd: 'Beim Wirt am Eck sitzt jeden Abend ein Schoppen-Petrus.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-402',
+      ausdruck: 'Hessischer Käse',
+      hochdeutsch: 'Hessischer Käse (Handkäs)',
+      bedeutung: 'Der „Hessische Käse" oder Handkäs ist eine hessische Käse-Spezialität — kleine, runde, kräftig riechende Sauermilchkäse. „A Hessischer Käse mit Musik!" Mit Zwiebeln, Essig, Öl, Pfeffer und Kümmel mariniert. Traditionell zum Apfelwein. Eine charakteristische hessische Speise. Geschützte Herkunftsbezeichnung. Symbol für hessische Esskultur.',
+      beispiel: 'Bei jedem Apfelwein-Schoppe gibts Hessischen Käse!',
+      beispiel_hd: 'Bei jedem Apfelwein-Schoppen gibt es Hessischen Käse!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-403',
+      ausdruck: 'Frankforter Sonderzeichen',
+      hochdeutsch: 'Frankfurter Sonderzeichen (Verkehrszeichen)',
+      bedeutung: 'Das „Frankforter Sonderzeichen" ist humorvoll die Tatsache, dass Frankfurter Verkehrsregeln eigene Auslegungen bekommen — die berühmte Frankfurter Rücksichtslosigkeit im Straßenverkehr. „D\'Frankforter Sonderzeichen kennen nur d\'Frankforter selbst!" Eine charmante hessische Selbstreflexion. Mit Augenzwinkern. Reflektiert Großstadt-Realität.',
+      beispiel: 'Mit dem Frankforter Sonderzeichen kommt mer schnell zur Arbeit.',
+      beispiel_hd: 'Mit dem Frankfurter Sonderzeichen kommt man schnell zur Arbeit.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-404',
+      ausdruck: 'Wetterau-Wein',
+      hochdeutsch: 'Wetterau-Wein (regionaler Wein)',
+      bedeutung: 'Der „Wetterau-Wein" ist Wein aus der hessischen Wetterau-Region — eine kleinere, aber traditionsreiche Weinregion zwischen Frankfurt und Gießen. „A Wetterau-Wein für d\'Familie!" Lokale Weinmacher pflegen alte Sorten. Heute mit dem touristischen „Wetterauer Weinpfad" erschlossen. Symbol für regionale hessische Weinkultur.',
+      beispiel: 'Zum Sonntagsessen trinken wir an Wetterau-Wein.',
+      beispiel_hd: 'Zum Sonntagsessen trinken wir einen Wetterau-Wein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-405',
+      ausdruck: 'Buchmess-Tag',
+      hochdeutsch: 'Buchmesse-Tag (Frankfurter Buchmesse)',
+      bedeutung: 'Der „Buchmess-Tag" ist der Tag der Frankfurter Buchmesse — die größte Buchmesse der Welt im Oktober. „Am Buchmess-Tag isch d\'ganze Stadt voller Verleger und Autoren!" 7.500 Aussteller, 285.000 Besucher jährlich. Internationale Literaturhauptstadt für 5 Tage. Symbol für Frankfurts Kulturhauptstadt-Funktion. Wichtige Frankfurter Tradition seit 1949.',
+      beispiel: 'Am Buchmess-Tag sind alle Hotels in Frankfurt ausgebucht.',
+      beispiel_hd: 'Am Buchmesse-Tag sind alle Hotels in Frankfurt ausgebucht.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-406',
+      ausdruck: 'Spessart-Sage',
+      hochdeutsch: 'Spessart-Sage (hessische Räubergeschichten)',
+      bedeutung: 'Die „Spessart-Sage" sind hessische Sagen aus dem Spessart — Räuber, Spukgeister, geheimnisvolle Wege. „Wilhelm Hauffs Spessart-Sage hat mich als Kind fasziniert!" Wilhelm Hauffs Märchen „Das Wirtshaus im Spessart" weltberühmt. Der Spessart als kulturreiche Naturlandschaft. Wichtige hessische Erzähltradition.',
+      beispiel: 'Im Spessart erzählen sie noch heut Spessart-Sagen.',
+      beispiel_hd: 'Im Spessart erzählen sie noch heute Spessart-Sagen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-407',
+      ausdruck: 'Hessen-Geschäft',
+      hochdeutsch: 'Hessen-Geschäft / Hessisches Geschäftsleben',
+      bedeutung: 'Das „Hessen-Geschäft" ist die traditionelle hessische Geschäftskultur — bodenständig, ehrlich, mit Beziehungspflege. „Mit em Hessen-Geschäft macht mer keine Halbheiten!" Reflektiert die hessische Wertschätzung für direkte Geschäftsbeziehungen. Im Gegensatz zur Frankfurter Banken-Welt mehr lokal-traditionell. Eine wichtige hessische Berufskultur.',
+      beispiel: 'Im Hessen-Geschäft zählt noch der Handschlag.',
+      beispiel_hd: 'Im Hessen-Geschäft zählt noch der Handschlag.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-408',
+      ausdruck: 'Bembel-Souvenir',
+      hochdeutsch: 'Bembel-Souvenir (Hessen-Andenken)',
+      bedeutung: 'Das „Bembel-Souvenir" ist das klassische Hessen-Andenken — der grau-blaue Apfelwein-Krug aus Steingut. „Touristen nehmen immer a Bembel-Souvenir mit!" Auch Mini-Bembel als Schlüsselanhänger. Symbol für hessische Identität in handwerklicher Form. Traditionell in der Bembel-Manufaktur Höhr-Grenzhausen hergestellt.',
+      beispiel: 'Zum Geburtstag schenk ich a Bembel-Souvenir aus Hessen.',
+      beispiel_hd: 'Zum Geburtstag schenk ich ein Bembel-Souvenir aus Hessen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-409',
+      ausdruck: 'Hessenfest-Sonntag',
+      hochdeutsch: 'Hessenfest-Sonntag',
+      bedeutung: 'Der „Hessenfest-Sonntag" ist der Höhepunkt eines hessischen Volksfestes — meist mit Festumzug, Live-Musik, Apfelwein, hessischen Spezialitäten. „Am Hessenfest-Sonntag sind alle hessischen Vereine vertreten!" Wichtige Volkskultur-Tradition. Verbindet die Region in fröhlicher Geselligkeit. Symbol für lebendiges hessisches Brauchtum.',
+      beispiel: 'Am Hessenfest-Sonntag is d\'ganze Familie zusammen.',
+      beispiel_hd: 'Am Hessenfest-Sonntag ist die ganze Familie zusammen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-410',
+      ausdruck: 'Hessisch-rund-um',
+      hochdeutsch: 'Hessisch rundherum (hessische Identität)',
+      bedeutung: '„Hessisch-rund-um" ist eine moderne hessische Identitäts-Wendung — alles, was hessisch ist: Sprache, Essen, Kultur, Mentalität. „Bei mir isch alles Hessisch-rund-um!" Mit Stolz und Augenzwinkern. Im Tourismus-Marketing oft verwendet. Symbol für hessische Selbstbewusstheit in der modernen Welt. Hessenstolz als Lebensphilosophie.',
+      beispiel: 'Hessisch-rund-um — so leb ich mei Leben!',
+      beispiel_hd: 'Hessisch rundherum — so lebe ich mein Leben!',
       kategorie: 'menschen'
     }
   ]

@@ -9,12 +9,15 @@ export default {
   farbe: '#9d4edd',
   beschreibung: 'Wienerisch ist die Stadtmundart der österreichischen Hauptstadt. Geprägt von Kaffeehauskultur, Operette und dem berühmten „Schmäh" — der wienerische Mix aus Charme, Witz und Ironie. Gehört zum mittelbairischen Sprachraum.',
   sprecher: 'ca. 2 Mio.',
+  lang: 'de-AT',
   ausdruecke: [
     {
       id: 'w-001',
       ausdruck: 'Servus / Grüß Gott',
       hochdeutsch: 'Hallo',
       bedeutung: 'Servus ist die universale, formelle wie informelle Begrüßung. „Grüß Gott" ist höflicher und traditioneller.',
+      beispiel: 'Servus hawara, wos mochst denn du do?',
+      beispiel_hd: 'Hallo Kumpel, was machst denn du hier?',
       kategorie: 'begruessung'
     },
     {
@@ -22,27 +25,17 @@ export default {
       ausdruck: 'Baba',
       hochdeutsch: 'Tschüss',
       bedeutung: 'Wiener Abschiedsformel. Lässig, freundschaftlich, lautet etwa „Pa-ba". Wird auch verlängert: „Bababa".',
+      beispiel: 'Baba, i muss jetzt ned länger bleiben!',
+      beispiel_hd: 'Tschüss, ich muss jetzt nicht länger bleiben!',
       kategorie: 'begruessung'
-    },
-    {
-      id: 'w-003',
-      ausdruck: 'Schmäh',
-      hochdeutsch: 'Witz / Charme / Schwindel',
-      bedeutung: 'Der wienerische Schmäh ist legendär — ein Mix aus Witz, Charme, leichter Manipulation und tiefer Ironie. „Hot a Schmäh, der Bua!" = „Hat einen Charme, der Junge!". „Schmäh führen" = jemanden gewitzt aufziehen.',
-      kategorie: 'redensart'
-    },
-    {
-      id: 'w-004',
-      ausdruck: 'Beisl',
-      hochdeutsch: 'Kneipe / Wirtshaus',
-      bedeutung: 'Eine traditionelle Wiener Kneipe oder Gaststätte — einfach, gemütlich, mit Schnitzel, Bier und Klassik-Wirts-Atmosphäre.',
-      kategorie: 'orte'
     },
     {
       id: 'w-005',
       ausdruck: 'Eierspeis',
       hochdeutsch: 'Rührei',
       bedeutung: 'Österreichisch für Rührei. Wird traditionell mit Schnittlauch und Schwarzbrot serviert.',
+      beispiel: 'Zum Frühstück mach i mir a Eierspeis mit Schnittlauch.',
+      beispiel_hd: 'Zum Frühstück mache ich mir ein Rührei mit Schnittlauch.',
       kategorie: 'essen'
     },
     {
@@ -50,6 +43,8 @@ export default {
       ausdruck: 'Marillen',
       hochdeutsch: 'Aprikosen',
       bedeutung: 'Aprikosen heißen in Österreich Marillen. „Marillenknödel" und „Marillenmarmelade" gehören zur Wiener Küche.',
+      beispiel: 'Im Sommer gibt\'s die besten Marillen aus der Wachau.',
+      beispiel_hd: 'Im Sommer gibt es die besten Aprikosen aus der Wachau.',
       kategorie: 'essen'
     },
     {
@@ -57,6 +52,8 @@ export default {
       ausdruck: 'Erdäpfel',
       hochdeutsch: 'Kartoffeln',
       bedeutung: 'Wörtlich „Erdäpfel" — die treffende österreichische Bezeichnung für Kartoffeln. Wer „Kartoffel" sagt, outet sich als Tourist.',
+      beispiel: 'Zum Schnitzel gibt\'s Erdäpfelsalat, ned Pommes!',
+      beispiel_hd: 'Zum Schnitzel gibt es Kartoffelsalat, nicht Pommes!',
       kategorie: 'essen'
     },
     {
@@ -64,6 +61,8 @@ export default {
       ausdruck: 'Sackerl',
       hochdeutsch: 'Tüte / Tragetasche',
       bedeutung: 'Verkleinerungsform von „Sack" — die typische Einkaufstüte. „A Sackerl Semmeln, bitte.".',
+      beispiel: 'Brauchen S\' a Sackerl dazu oder hawara, hast scho eins?',
+      beispiel_hd: 'Brauchen Sie eine Tüte dazu oder Kumpel, hast schon eine?',
       kategorie: 'alltag'
     },
     {
@@ -71,6 +70,8 @@ export default {
       ausdruck: 'Häferl',
       hochdeutsch: 'Tasse',
       bedeutung: 'Eine Tasse — meist groß, oft mit Henkel. „A Häferl Kaffee" ist eine Tasse Kaffee. Synonym auch für „Großmaul".',
+      beispiel: 'Magst a Häferl Kaffee, hawara?',
+      beispiel_hd: 'Magst du eine Tasse Kaffee, Kumpel?',
       kategorie: 'essen'
     },
     {
@@ -78,20 +79,17 @@ export default {
       ausdruck: 'Tschick',
       hochdeutsch: 'Zigarette',
       bedeutung: 'Wiener Slang für eine Zigarette. Auch ein berühmter österreichischer Roman von Wolfgang Herrndorf trägt diesen Titel.',
+      beispiel: 'Hast vielleicht a Tschick fia mi, hawara?',
+      beispiel_hd: 'Hast du vielleicht eine Zigarette für mich, Kumpel?',
       kategorie: 'alltag'
-    },
-    {
-      id: 'w-011',
-      ausdruck: 'Heuriger',
-      hochdeutsch: 'Junger Wein / Weinlokal',
-      bedeutung: 'Sowohl der junge Wein des Jahres als auch das Lokal, in dem dieser ausgeschenkt wird — meist beim Winzer in Wien-Grinzing oder Heiligenstadt. Ein „Heurigen-Besuch" ist Wiener Lebensart.',
-      kategorie: 'orte'
     },
     {
       id: 'w-012',
       ausdruck: 'Oasch',
       hochdeutsch: 'Arsch (vulgär)',
       bedeutung: 'Wienerisch für „Arsch" — wird oft als Ausruf verwendet: „Du Oasch!" (eher unter Freunden) oder „Oasch g\'hobt!" („Glück gehabt!" — wörtlich: „Hintern gehabt!").',
+      beispiel: 'Du Oasch, des host ned ernst gmeint, oder?',
+      beispiel_hd: 'Du Arsch, das hast du nicht ernst gemeint, oder?',
       kategorie: 'schimpf'
     },
     {
@@ -99,6 +97,8 @@ export default {
       ausdruck: 'Wuchtl',
       hochdeutsch: 'Brötchen / lustiger Spruch',
       bedeutung: 'Doppeldeutig: einerseits ein süßes Hefebrötchen, andererseits ein guter Spruch oder Witz. „A Wuchtl reißen" = einen Witz machen.',
+      beispiel: 'Der Hawara reißt im Beisl immer die besten Wuchtln.',
+      beispiel_hd: 'Der Kumpel reißt in der Kneipe immer die besten Witze.',
       kategorie: 'redensart'
     },
     {
@@ -106,6 +106,8 @@ export default {
       ausdruck: 'leiwand',
       hochdeutsch: 'super / toll',
       bedeutung: 'Wiener Slang für „toll" oder „großartig". „Des is leiwand!" — höchste Zustimmung.',
+      beispiel: 'Wos für a leiwander Schmäh, hawara!',
+      beispiel_hd: 'Was für ein toller Witz, Kumpel!',
       kategorie: 'gefuehle'
     },
     {
@@ -113,6 +115,8 @@ export default {
       ausdruck: 'Trafik',
       hochdeutsch: 'Tabakladen',
       bedeutung: 'Kiosk mit Tabakwaren, Lotto und Zeitungen — meist in winzigen Geschäften. Eine Wiener Institution.',
+      beispiel: 'I geh schnell in die Trafik, hol mir a Packerl Tschick.',
+      beispiel_hd: 'Ich gehe schnell in den Tabakladen, hole mir eine Packung Zigaretten.',
       kategorie: 'orte'
     },
     {
@@ -120,6 +124,8 @@ export default {
       ausdruck: 'Powidl',
       hochdeutsch: 'Pflaumenmus',
       bedeutung: 'Eingedickte Zwetschken (Pflaumen) als Fruchtaufstrich. In Powidltatschkerl oder Powidlbuchteln verarbeitet.',
+      beispiel: 'Powidltatschkerl mit Mohn san wos ganz Besonderes!',
+      beispiel_hd: 'Powidltaschkerl mit Mohn sind etwas ganz Besonderes!',
       kategorie: 'essen'
     },
     {
@@ -127,6 +133,8 @@ export default {
       ausdruck: 'Jause',
       hochdeutsch: 'Brotzeit',
       bedeutung: 'Eine Zwischenmahlzeit — vergleichbar mit der bayerischen Brotzeit. Wurst, Käse, Brot, oft mit Bier.',
+      beispiel: 'Um vier mach ma a Jause beim Heurigen, wos sagst?',
+      beispiel_hd: 'Um vier machen wir eine Brotzeit beim Heurigen, was sagst du?',
       kategorie: 'essen'
     },
     {
@@ -134,6 +142,8 @@ export default {
       ausdruck: 'Hawara',
       hochdeutsch: 'Kumpel / Freund',
       bedeutung: 'Wienerische Anrede unter Freunden. „Hawara, geh weida!" = „Komm schon, Kumpel!".',
+      beispiel: 'Hawara, geh ma am Abend ins Beisl auf a Bier?',
+      beispiel_hd: 'Kumpel, gehen wir am Abend in die Kneipe auf ein Bier?',
       kategorie: 'menschen'
     },
     {
@@ -330,6 +340,8 @@ export default {
       ausdruck: 'Tschuschenkapelle',
       hochdeutsch: 'Scherzhafter Begriff für eine bunte Musikgruppe',
       bedeutung: 'Ein umgangssprachlicher, heute oft als abwertend empfundener Wiener Ausdruck für eine bunt zusammengewürfelte Musikkapelle oder Gruppe, die laute, volkstümliche Musik spielt. Der Begriff spiegelt die Geschichte Wiens als Schmelztiegel der Donaumonarchie wider, in der Menschen aus Böhmen, Ungarn, Kroatien und anderen Kronländern zusammenkamen. Er wird heute vor allem selbstironisch oder im historischen Kontext verwendet.',
+      beispiel: 'Beim Heurigen spielt heut a richtige Tschuschenkapelle mit Schmäh.',
+      beispiel_hd: 'Beim Heurigen spielt heute eine richtige bunte Musikgruppe mit Charme.',
       kategorie: 'musik'
     },
     {
@@ -535,8 +547,8 @@ export default {
       ausdruck: 'U-Bahn',
       hochdeutsch: 'Wiener U-Bahn / U-Bahn-Linien',
       bedeutung: 'Die Wiener U-Bahn umfasst fünf Linien (U1, U2, U3, U4, U6) und bringt Wiener und Touristen quer durch die Stadt. Das Wiener Liniennetz gilt als eines der besten der Welt. Die historische Stadtbahn (heute U4) wurde 1898 von Otto Wagner gebaut — die Stationen sind Jugendstil-Kunstwerke. Die Wiener U-Bahn ist Lebensader der Stadt — 24 Stunden am Wochenende geöffnet.',
-      beispiel: 'Steigst am Schwedenplatz in die U1 ein, des is am schnellsten.',
-      beispiel_hd: 'Steig am Schwedenplatz in die U1 ein, das ist am schnellsten.',
+      beispiel: 'Mit da U-Bahn am Schwedenplatz einsteigen, des is am schnellsten.',
+      beispiel_hd: 'Mit der U-Bahn am Schwedenplatz einsteigen, das ist am schnellsten.',
       kategorie: 'orte'
     },
     {
@@ -688,8 +700,8 @@ export default {
       ausdruck: 'MuseumsQuartier',
       hochdeutsch: 'MuseumsQuartier Wien',
       bedeutung: 'Das MuseumsQuartier (MQ) im 7. Bezirk ist eines der grössten Kulturareale der Welt — 60.000 m² mit Leopold Museum, mumok (Museum moderner Kunst), Kunsthalle Wien, Tanzquartier, Architekturzentrum und vielen Cafés. Eröffnet 2001 in den ehemaligen kaiserlichen Hofstallungen. Die bunten „Enzis"-Sitzmöbel im Innenhof sind Kult — im Sommer Treffpunkt für junge Wiener. Eine geniale Kombination aus Barockfassade und moderner Kunst.',
-      beispiel: 'Im MQ chillen am Abend alle jungen Wiener auf die Enzis.',
-      beispiel_hd: 'Im MQ chillen am Abend alle jungen Wiener auf den Enzis.',
+      beispiel: 'Im MuseumsQuartier chillen am Abend alle jungen Wiener auf die Enzis.',
+      beispiel_hd: 'Im MuseumsQuartier chillen am Abend alle jungen Wiener auf den Enzis.',
       kategorie: 'orte'
     },
     {
@@ -708,15 +720,6 @@ export default {
       bedeutung: 'Die Albertina am Albertinaplatz im 1. Bezirk ist eines der bedeutendsten Kunstmuseen Wiens — bekannt für eine der größten Grafiksammlungen der Welt (1,5 Mio. Werke). Sie zeigt Werke von Dürer (der berühmte „Feldhase"), Rubens, Monet, Klimt, Picasso und Andy Warhol. Im prächtigen Palais Habsburg-Lothringen untergebracht. Die Albertina-Schau wechselt regelmäßig mit großen Sonderausstellungen.',
       beispiel: 'In der Albertina hängt der Dürer-Feldhase — Pflicht!',
       beispiel_hd: 'In der Albertina hängt der Dürer-Feldhase — Pflicht!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-083',
-      ausdruck: 'Belvedere',
-      hochdeutsch: 'Schloss Belvedere',
-      bedeutung: 'Das Schloss Belvedere im 3. Wiener Bezirk ist ein barockes Doppelschloss (Oberes und Unteres Belvedere), 1714–1723 für Prinz Eugen von Savoyen erbaut. Heute zeigt das Obere Belvedere Klimts „Der Kuss" und österreichische Malerei. Im Marmorsaal des Oberen Belvedere wurde 1955 der Staatsvertrag unterzeichnet, der Österreichs Unabhängigkeit besiegelte. Eine der schönsten Barockanlagen Europas mit weitem Garten.',
-      beispiel: 'Im Belvedere is\' der berühmte Kuss vom Klimt z\'sehen.',
-      beispiel_hd: 'Im Belvedere ist der berühmte Kuss von Klimt zu sehen.',
       kategorie: 'orte'
     },
     {
@@ -796,7 +799,7 @@ export default {
       ausdruck: 'Käsekrainer',
       hochdeutsch: 'Käsekrainer (Wurst mit Käsestücken)',
       bedeutung: 'Die Käsekrainer ist eine wienerische Wurstspezialität — eine Brühwurst aus Schweinefleisch mit eingelegten Käsestückchen. Beim Anschneiden quillt geschmolzener Käse heraus, was sie unter Wienern „Eitrige" oder „Schoaße" („Schwarze") nennen lässt — der berühmte „Würstelstand-Slang". Wird mit Senf, Kren (Meerrettich) und Semmel serviert. An jedem Wiener Würstelstand erhältlich. Ein Kultprodukt mit eigenem Vokabular.',
-      beispiel: 'A Eitrige mit Buckel und an 16er Blech — bitte!',
+      beispiel: 'A Käsekrainer (Eitrige) mit Buckel und an 16er Blech — bitte!',
       beispiel_hd: 'Eine Käsekrainer mit Semmel und eine Ottakringer-Bier-Dose — bitte!',
       kategorie: 'essen'
     },
@@ -828,30 +831,12 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'w-096',
-      ausdruck: 'Karlskirche',
-      hochdeutsch: 'Karlskirche (Wiener Barockkirche)',
-      bedeutung: 'Die Karlskirche am Karlsplatz im 4. Wiener Bezirk ist eines der bedeutendsten Barockbauwerke nördlich der Alpen — erbaut 1716–1737 von Johann Bernhard Fischer von Erlach. Kaiser Karl VI. ließ sie als Dankeschön für das Ende der Pestepidemie 1713 bauen. Die ovale Kuppel und die beiden Triumphsäulen sind unverwechselbar. Im Sommer Konzert-Aufführungen (Vivaldi, Mozart). Mit dem Panoramaaufzug bis unter die Kuppel-Fresken — eindrucksvoll.',
-      beispiel: 'D\'Karlskirche is\' a Meisterwerk vom Barock.',
-      beispiel_hd: 'Die Karlskirche ist ein Meisterwerk des Barock.',
-      kategorie: 'orte'
-    },
-    {
       id: 'w-097',
       ausdruck: 'Cafetier',
       hochdeutsch: 'Wiener Kaffeehaus-Wirt',
       bedeutung: 'Der „Cafetier" (französisch: Kaffeehausbesitzer) ist eine eigene Figur in der Wiener Kultur — Wirt, Psychologe, Sittenwächter und Familienoberhaupt in einem. Die Cafetiers traditioneller Wiener Kaffeehäuser wie das Hawelka, das Central oder das Sperl wurden selbst zu Legenden. Sie kannten ihre Gäste, wussten alles über das Wiener Geschehen und prägten die Atmosphäre. Heute eine fast aussterbende Spezies.',
       beispiel: 'Der oide Cafetier kennt jedn Gast beim Namen seit 30 Jahren.',
       beispiel_hd: 'Der alte Cafetier kennt jeden Gast beim Namen seit 30 Jahren.',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'w-098',
-      ausdruck: 'Otto Wagner',
-      hochdeutsch: 'Otto Wagner (Jugendstil-Architekt)',
-      bedeutung: 'Otto Wagner (1841–1918) war Wiens wichtigster Jugendstil-Architekt — Schöpfer der Wiener Stadtbahn (heute U4 und U6 Stationen), der Postsparkasse, der Kirche am Steinhof und der Majolika-Häuser. Sein Stil verband klassische Eleganz mit moderner Funktion und Ornament. Wagner war Lehrer einer ganzen Architekten-Generation (Joseph Maria Olbrich, Adolf Loos studierten bei ihm). Sein Werk prägt das moderne Wien.',
-      beispiel: 'D\'Postsparkasse vom Otto Wagner is\' Architektur-Geschichte.',
-      beispiel_hd: 'Die Postsparkasse von Otto Wagner ist Architektur-Geschichte.',
       kategorie: 'menschen'
     },
     {
@@ -1021,8 +1006,8 @@ export default {
       ausdruck: 'Tschuschn',
       hochdeutsch: 'Abwertend: Ausländer (südosteuropäisch)',
       bedeutung: '„Tschuschn" ist ein abwertender Wiener Ausdruck für Menschen aus Südosteuropa, besonders dem ehemaligen Jugoslawien. Der Begriff wird heute zu Recht als rassistisch eingestuft, hat aber eine komplexe Geschichte: Manche Communities haben das Wort selbstironisch zurückerobert. In der berühmten „Tschuschen-Comedy" wird das Wort als Selbstbezeichnung satirisch verwendet. Schwierige Vergangenheit der Wiener Sprache.',
-      beispiel: 'Des Wort sollt ma heut nimma in den Mund nehmen.',
-      beispiel_hd: 'Das Wort sollte man heute nicht mehr in den Mund nehmen.',
+      beispiel: '„Tschuschn" sollt ma heut nimma in den Mund nehmen.',
+      beispiel_hd: '„Tschuschn" sollte man heute nicht mehr in den Mund nehmen.',
       kategorie: 'schimpf'
     },
     {
@@ -1069,15 +1054,6 @@ export default {
       beispiel: 'A Wiener Schnitzel vom Kalb — mit Zitrone und Preiselbeer\'!',
       beispiel_hd: 'Ein Wiener Schnitzel vom Kalb — mit Zitrone und Preiselbeere!',
       kategorie: 'essen'
-    },
-    {
-      id: 'w-123',
-      ausdruck: 'Tschocherl',
-      hochdeutsch: 'Tschocherl (kleines verrauchtes Lokal)',
-      bedeutung: 'Das „Tschocherl" ist im Wienerischen ein winziges, oft heruntergekommenes Beisl oder eine Eckkneipe — Gegenstück zum gehobenen Café oder Restaurant. Hier wird billig getrunken, geraucht (früher) und gequatscht. „Im Tschocherl an der Eck" — Wiener Lebenswelt par excellence. Wolfgang Ambros besang die Wiener Tschocherl in seinen Liedern. Heute zunehmend verdrängt durch Hipster-Bars — aber noch nicht verloren.',
-      beispiel: 'Im Tschocherl am Eck zum Würstelstand — schau ma kurz vorbei.',
-      beispiel_hd: 'Im kleinen Eckbeisl gleich am Würstelstand — schauen wir kurz vorbei.',
-      kategorie: 'orte'
     },
     {
       id: 'w-124',
@@ -1165,8 +1141,8 @@ export default {
       ausdruck: 'Wiener Eis',
       hochdeutsch: 'Wiener Eis (Eissalons)',
       bedeutung: 'Das „Wiener Eis" hat eine lange Tradition — die ersten italienischen Eismacher kamen im 19. Jahrhundert. Heute kämpfen die Wiener Eissalons (Tichy am Reumannplatz, Eis-Greissler, Schwedeneis am Schwedenplatz) um Plätze in den Sommer-Bestenlisten. Spezialität: „Marillenknödel-Eis" und „Mozartkugel-Eis". Im Sommer Schlangen um den Block. Stark italienisch geprägt, aber mit Wiener Geschmacksvarianten. Wiener Sommer-Ritual seit Generationen.',
-      beispiel: 'Beim Tichy steht ma Schlang\' für a Eis.',
-      beispiel_hd: 'Beim Tichy steht man Schlange für ein Eis.',
+      beispiel: 'Fia a echtes Wiener Eis steht ma beim Tichy gern Schlang\'.',
+      beispiel_hd: 'Für ein echtes Wiener Eis steht man beim Tichy gern Schlange.',
       kategorie: 'essen'
     },
     {
@@ -1462,8 +1438,8 @@ export default {
       ausdruck: 'Gschnaperter',
       hochdeutsch: 'Geschwätziger Mensch',
       bedeutung: 'Ein „Gschnaperter" oder „Gschnopperter" ist im Wienerischen ein redseliger Mensch, einer, der nicht aufhört zu plaudern. „A G\'schnopperte" für Frauen. Der Begriff kommt von „schnappern" (schnattern, plappern). Meist gutmütig-spöttisch gebraucht — Wiener wissen, dass viele von ihnen selbst zum Plaudern neigen. Ein Wesensmerkmal des Wieners: Reden ist Leben.',
-      beispiel: 'Die Frieda is a echte G\'schnopperte!',
-      beispiel_hd: 'Die Frieda ist eine echte Plaudertasche!',
+      beispiel: 'Da Toni is a echter Gschnaperter — der redt ohne Pause!',
+      beispiel_hd: 'Der Toni ist eine echte Plaudertasche — der redet ohne Pause!',
       kategorie: 'menschen'
     },
     {
@@ -1602,48 +1578,12 @@ export default {
       kategorie: 'redensart'
     },
     {
-      id: 'w-182',
-      ausdruck: 'Wiener Schnitzel',
-      hochdeutsch: 'Wiener Schnitzel',
-      bedeutung: 'Das „Wiener Schnitzel" ist Wiener Nationalgericht — paniertes Kalbsschnitzel, in Schmalz gebraten. Original aus Kalbfleisch, „Wiener Art" aus Schweinefleisch. „Mit Erdäpfelsalat" als Standard-Beilage. Tradition seit dem 19. Jahrhundert. Symbol für Wiener Esskultur. In Wiener Beisln klassisch. Touristen müssen es probieren. Streit mit Mailand um die wahre Herkunft.',
-      beispiel: 'A Wiener Schnitzel mit Erdäpfelsalat!',
-      beispiel_hd: 'Ein Wiener Schnitzel mit Kartoffelsalat!',
-      kategorie: 'essen'
-    },
-    {
       id: 'w-183',
       ausdruck: 'Sachertorte',
       hochdeutsch: 'Sachertorte',
       bedeutung: 'Die „Sachertorte" ist Wiener Konditorei-Klassiker — Schokoladentorte mit Marillenmarmelade und Schokoladenglasur, 1832 von Franz Sacher erfunden. Hotel Sacher und Demel streiten um die Original-Rezeptur (entschieden 1965: nur Sacher darf „Original-Sachertorte" verkaufen). „Mit Schlag" als Wiener Standard-Beilage. Symbol für Wiener Konditorei-Tradition.',
       beispiel: 'A Stück Sachertorte mit Schlag, bittsche!',
       beispiel_hd: 'Ein Stück Sachertorte mit Schlagsahne, bitte!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'w-184',
-      ausdruck: 'Apfelstrudel',
-      hochdeutsch: 'Wiener Apfelstrudel',
-      bedeutung: 'Der „Apfelstrudel" ist Wiener Süßspeisen-Klassiker — Strudelteig mit Äpfeln, Rosinen, Zimt, Brösel. Auf Wiener Kaffeehaus-Karte allgegenwärtig. „Mit Vanillesoße" als Standard. Tradition aus dem 18. Jahrhundert, türkischer Einfluss. Symbol für Wiener Esskultur. Touristen-Favorit. „Mit Schlag oder Eis" als Wahl.',
-      beispiel: 'Apfelstrudel mit Vanillesoße im Kaffeehaus!',
-      beispiel_hd: 'Apfelstrudel mit Vanillesoße im Kaffeehaus!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'w-185',
-      ausdruck: 'Kaffeehaus',
-      hochdeutsch: 'Wiener Kaffeehaus',
-      bedeutung: 'Das „Wiener Kaffeehaus" ist UNESCO-Weltkulturerbe (seit 2011) — Tradition seit 1683. „Stundenlang sitzen mit einer Melange" als Wiener Lebenskunst. Berühmte Kaffeehäuser: Café Central, Café Sacher, Café Demel, Café Hawelka. Symbol für Wiener Lebensart und intellektuelles Leben. Wiener Schriftsteller, Politiker, Künstler trafen sich hier. „Café Central" als Lieblings-Café von Trotzki.',
-      beispiel: 'Im Kaffeehaus sitzt mer stundenlang!',
-      beispiel_hd: 'Im Kaffeehaus sitzt man stundenlang!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-186',
-      ausdruck: 'Melange',
-      hochdeutsch: 'Melange (Wiener Kaffee)',
-      bedeutung: 'Die „Melange" ist DER Wiener Kaffee — Espresso mit aufgeschäumter Milch, gleiches Verhältnis. „A Melange, bittsche!" als Wiener Standard-Bestellung. Im Gegensatz zum Café au Lait stärker. Symbol für Wiener Kaffeekultur. In jedem Wiener Kaffeehaus erhältlich. Touristen müssen es probieren — der Kellner serviert mit einem Glas Wasser.',
-      beispiel: 'A Melange, bittsche!',
-      beispiel_hd: 'Eine Melange, bitte!',
       kategorie: 'essen'
     },
     {
@@ -1656,78 +1596,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'w-188',
-      ausdruck: 'Würstelstand',
-      hochdeutsch: 'Würstelstand',
-      bedeutung: 'Der „Würstelstand" ist Wiener Institution — Imbiss-Stand mit Burenwurst, Käsekrainer, Bratwurst, Wiener. „Auf an Würstel und a Bier zum Würstelstand!". Klassisch am Schwedenplatz, am Stephansplatz, vor der Albertina. Symbol für Wiener Schnellimbiss-Kultur. Nachts beliebt bei Studenten und Partygängern. „Würstelmann" als Wiener Beruf.',
-      beispiel: 'Nachts geh\'n wir zum Würstelstand!',
-      beispiel_hd: 'Nachts gehen wir zum Würstelstand!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'w-189',
-      ausdruck: 'Käsekrainer',
-      hochdeutsch: 'Käsekrainer (Wiener Wurst)',
-      bedeutung: 'Die „Käsekrainer" ist Wiener Wurst-Spezialität — Bratwurst gefüllt mit Käse, der beim Beißen herausquillt. Am Würstelstand klassisch. „Mit Senf und Kren" als Standard. Symbol für Wiener Imbiss-Kultur. Wer als Tourist nach Wien kommt, muss eine Käsekrainer probieren. Liebevoll auch „Eitrige" genannt (wegen des Käses).',
-      beispiel: 'A Käsekrainer mit Senf!',
-      beispiel_hd: 'Eine Käsekrainer mit Senf!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'w-190',
-      ausdruck: 'Stephansdom',
-      hochdeutsch: 'Stephansdom (Wiener Wahrzeichen)',
-      bedeutung: 'Der „Stephansdom" ist Wiens Wahrzeichen — gotische Kathedrale mit dem 137m hohen Südturm (genannt „Steffl"). Tradition seit dem 12. Jahrhundert. Im 2. Weltkrieg schwer beschädigt, danach restauriert. „Pummerin" als größte Glocke Österreichs. Symbol für Wien weltweit. Touristen-Magnet Nummer 1. Im Karneval, an Silvester Tradition.',
-      beispiel: 'Der Stephansdom — Wiens Wahrzeichen!',
-      beispiel_hd: 'Der Stephansdom — Wiens Wahrzeichen!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-191',
-      ausdruck: 'Schönbrunn',
-      hochdeutsch: 'Schloss Schönbrunn',
-      bedeutung: '„Schönbrunn" ist Wiener Schloss und UNESCO-Weltkulturerbe — Sommerresidenz der Habsburger. 1.441 Zimmer, Gloriette, Schönbrunner Tiergarten (ältester Zoo der Welt!). Sissi und Franz Joseph wohnten hier. Symbol für Wiener kaiserliche Tradition. Touristen-Hotspot. Jährlich 8 Millionen Besucher. Konzerte im Schloss.',
-      beispiel: 'In Schönbrunn wohnte d\'Sissi!',
-      beispiel_hd: 'In Schönbrunn wohnte die Sissi!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-192',
-      ausdruck: 'Hofburg',
-      hochdeutsch: 'Hofburg (Wiener Stadtschloss)',
-      bedeutung: 'Die „Hofburg" ist Wiener Stadtschloss — ehemalige Habsburger Winterresidenz. Heute Sitz des österreichischen Bundespräsidenten. „Spanische Hofreitschule" mit Lipizzanern. Sisi-Museum. Symbol für Wiener kaiserliche Tradition und österreichische Geschichte. Touristen-Magnet. Im Karneval als Veranstaltungsort beliebt.',
-      beispiel: 'Die Hofburg is\' das Wiener Stadtschloss!',
-      beispiel_hd: 'Die Hofburg ist das Wiener Stadtschloss!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-193',
-      ausdruck: 'Prater',
-      hochdeutsch: 'Wiener Prater (Vergnügungspark)',
-      bedeutung: 'Der „Prater" ist Wiener Vergnügungspark mit dem berühmten Riesenrad — gebaut 1897. „Würstelprater" als Vergnügungsteil, „Grüner Prater" als Erholungsgebiet. Riesenrad im Film „Der dritte Mann" (Orson Welles). Symbol für Wiener Freizeit-Tradition. Touristen-Hotspot. Im Sommer beliebt. Älter als jeder andere europäische Vergnügungspark.',
-      beispiel: 'Mit\'m Riesenrad im Prater fahren!',
-      beispiel_hd: 'Mit dem Riesenrad im Prater fahren!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-194',
-      ausdruck: 'Riesenrad',
-      hochdeutsch: 'Wiener Riesenrad',
-      bedeutung: 'Das „Riesenrad" im Prater ist Wiener Wahrzeichen — gebaut 1897, 64,75m hoch. Im 2. Weltkrieg fast zerstört, danach wieder aufgebaut. Berühmt durch „Der dritte Mann" mit Orson Welles. „Riesenrad-Fahrt" als touristisches Wien-Programm. Symbol für Wiener Tradition und Filmgeschichte. Aussicht auf ganz Wien.',
-      beispiel: 'Vom Riesenrad siehst du ganz Wien!',
-      beispiel_hd: 'Vom Riesenrad siehst du ganz Wien!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'w-195',
-      ausdruck: 'Walzer',
-      hochdeutsch: 'Wiener Walzer',
-      bedeutung: 'Der „Wiener Walzer" ist Tanz-Tradition und UNESCO-Weltkulturerbe — Drei-Viertel-Takt, schnelle Drehungen. „Donauwalzer" von Strauss als Hymne. „Wiener Opernball" mit Walzer-Eröffnung. Tradition seit dem 19. Jahrhundert. Symbol für Wiener Musiktradition. Walzer-Unterricht in Wien Pflicht-Programm für höhere Schüler.',
-      beispiel: 'Beim Wiener Opernball wird Walzer getanzt!',
-      beispiel_hd: 'Beim Wiener Opernball wird Walzer getanzt!',
-      kategorie: 'musik'
-    },
-    {
       id: 'w-196',
       ausdruck: 'Opernball',
       hochdeutsch: 'Wiener Opernball',
@@ -1735,24 +1603,6 @@ export default {
       beispiel: 'Der Opernball is\' Wiens größtes Ball!',
       beispiel_hd: 'Der Opernball ist Wiens größter Ball!',
       kategorie: 'feiern'
-    },
-    {
-      id: 'w-197',
-      ausdruck: 'Sissi',
-      hochdeutsch: 'Kaiserin Elisabeth („Sissi")',
-      bedeutung: '„Sissi" ist Spitzname für Kaiserin Elisabeth (1837-1898) — Ehefrau von Kaiser Franz Joseph. Symbol für Wiener kaiserliche Romantik. Berühmte Sissi-Filme mit Romy Schneider (1955-1958). „Sissi-Museum" in der Hofburg. Touristen-Magnet. Ihre Schönheit und tragisches Schicksal (Ermordung 1898 in Genf) machten sie zur Legende.',
-      beispiel: 'D\'Sissi war Österreichs schönste Kaiserin!',
-      beispiel_hd: 'Die Sissi war Österreichs schönste Kaiserin!',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'w-198',
-      ausdruck: 'Franz Joseph',
-      hochdeutsch: 'Kaiser Franz Joseph I.',
-      bedeutung: 'Kaiser „Franz Joseph" I. (1830-1916) regierte Österreich-Ungarn 68 Jahre lang — der zweitlängste Regent Europas. Ehemann von Sisi. Wiener Identitäts-Symbol für kaiserliche Tradition. „Franz-Joseph-Kaffee" im Sacher. Sein Tod 1916 läutete den Untergang der Donaumonarchie ein. Symbol für österreichische k.u.k.-Geschichte.',
-      beispiel: 'Kaiser Franz Joseph regierte 68 Jahre!',
-      beispiel_hd: 'Kaiser Franz Joseph regierte 68 Jahre!',
-      kategorie: 'menschen'
     },
     {
       id: 'w-199',
@@ -1782,24 +1632,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'w-202',
-      ausdruck: 'Tafelspitz',
-      hochdeutsch: 'Tafelspitz (Wiener Spezialität)',
-      bedeutung: 'Der „Tafelspitz" ist Wiener Klassiker — gekochtes Rindfleisch (Tafelspitz vom Rind) mit Apfel-Kren, Schnittlauchsoße, Erdäpfelpüree. Lieblingsessen von Kaiser Franz Joseph. Plachutta als Tafelspitz-Restaurant berühmt. Symbol für Wiener gehobene Esskultur. Aufwendig: 3-Gang-Menü mit Suppe, Fleisch, Beilagen.',
-      beispiel: 'Tafelspitz war Franz Joseph\'s Lieblingsessen!',
-      beispiel_hd: 'Tafelspitz war Franz Joseph\'s Lieblingsessen!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'w-203',
-      ausdruck: 'Kaiserschmarrn',
-      hochdeutsch: 'Kaiserschmarrn',
-      bedeutung: 'Der „Kaiserschmarrn" ist Wiener Süßspeise — zerrissene, karamellisierte Eierpfannkuchen mit Rosinen und Zwetschgenröster. Lieblingsspeise von Kaiser Franz Joseph (deshalb „Kaiser"). Symbol für Wiener Süßspeisen-Tradition. „Mit Zwetschgenröster" als Standard. Wird heiß serviert, mit Puderzucker. In Wiener Beisln klassisch.',
-      beispiel: 'Kaiserschmarrn mit Zwetschgenröster!',
-      beispiel_hd: 'Kaiserschmarrn mit Zwetschgenröster!',
-      kategorie: 'essen'
-    },
-    {
       id: 'w-204',
       ausdruck: 'Wiener Werkstätten',
       hochdeutsch: 'Wiener Werkstätten (Design-Tradition)',
@@ -1807,15 +1639,6 @@ export default {
       beispiel: 'Die Wiener Werkstätten prägten den Jugendstil!',
       beispiel_hd: 'Die Wiener Werkstätten prägten den Jugendstil!',
       kategorie: 'arbeit'
-    },
-    {
-      id: 'w-205',
-      ausdruck: 'Klimt',
-      hochdeutsch: 'Gustav Klimt (Wiener Maler)',
-      bedeutung: 'Gustav Klimt (1862-1918) ist Wiens bekanntester Maler — „Der Kuss" (1908) als Welt-bekanntestes Werk. „Wiener Secession" als Künstler-Bewegung. Belvedere-Museum hat die größte Klimt-Sammlung. Symbol für Wiener Jugendstil und Klimts goldene Periode. „Klimt-Souvenirs" überall in Wien. Touristen-Magnet.',
-      beispiel: '„Der Kuss" von Klimt im Belvedere!',
-      beispiel_hd: '„Der Kuss" von Klimt im Belvedere!',
-      kategorie: 'menschen'
     },
     {
       id: 'w-206',
@@ -1854,13 +1677,535 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'w-210',
-      ausdruck: 'Donau',
-      hochdeutsch: 'Donau (Wiener Fluss)',
-      bedeutung: 'Die „Donau" ist Wiens Fluss — und zweitlängster Fluss Europas. „Donaukanal" als Stadt-Fluss-Arm. „An der schönen blauen Donau" — Strauss-Walzer als Wien-Hymne. „Donauinsel" als Wiens Freizeit-Insel. Im Sommer Picknick-Wiese. „Donauinselfest" als größtes Open-Air-Festival Europas (frei zugänglich). Symbol für Wien.',
-      beispiel: 'An der Donau zum Picknick!',
-      beispiel_hd: 'An der Donau zum Picknick!',
-      kategorie: 'natur'
+      id: 'w-211',
+      ausdruck: 'Pawlatschen',
+      hochdeutsch: 'Pawlatschen (Galerien im Innenhof)',
+      bedeutung: 'Die „Pawlatschen" sind die offenen Holzgalerien in den Wiener Innenhöfen — typisch für die alten Mietshäuser des 19. Jahrhunderts. „Im Innenhof haben wir die schönsten Pawlatschen!" Vom tschechischen „pavlač" (Galerie). Architektonisches Wiener Markenzeichen. In der Zwischenkriegszeit Schauplatz vieler Wiener Romane und Filme. Heute oft sanierungs-bedürftig.',
+      beispiel: 'Auf der Pawlatschen sieht man die ganze Nachbarschaft.',
+      beispiel_hd: 'Auf der Pawlatschen sieht man die ganze Nachbarschaft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-212',
+      ausdruck: 'Trottel-Wagerl',
+      hochdeutsch: 'Einkaufswagen',
+      bedeutung: 'Das „Trottel-Wagerl" ist im Wienerischen humorvoll der Einkaufswagen im Supermarkt — wörtlich „Trottel-Wagen", weil man oft mit ihm zusammenstößt oder Probleme hat. „Mir is wieder a Trottel-Wagerl entgleist!" Die Verkleinerung „-erl" macht die Spöttelei warm. Charmante wienerische Wortprägung mit Augenzwinkern.',
+      beispiel: 'Schau, schon wieder rollt mir das Trottel-Wagerl davon!',
+      beispiel_hd: 'Schau, schon wieder rollt mir der Einkaufswagen davon!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-213',
+      ausdruck: 'Bescherung',
+      hochdeutsch: 'Bescherung (Weihnachten)',
+      bedeutung: 'Die „Bescherung" ist in Wien die Weihnachts-Geschenke-Verteilung am Heiligen Abend — meist nach dem Festessen, mit Glöckchen-Ton. „D\'Bescherung is um sieben Uhr nach dem Essen!" Klassische katholische Wiener Familien-Tradition. Mit Christbaum, Krippe, Kekserl, Punsch. Symbol für intime Familienmomente in der schönsten Zeit des Jahres.',
+      beispiel: 'Nach dem Essen kommt die Bescherung!',
+      beispiel_hd: 'Nach dem Essen kommt die Bescherung!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-214',
+      ausdruck: 'Glasl',
+      hochdeutsch: 'Gläschen',
+      bedeutung: 'Das „Glasl" ist im Wienerischen die Verkleinerung von „Glas" — Gläschen. „Magst noch a Glasl Wein?" Verbreitet im Wiener Heurigen, im Café, beim Aperitif. Die typische Wiener Verkleinerung mit „-l" gibt dem Glas warmen Klang. Charmante Wiener Sprachpraxis im Trinkkontext. Eine alltägliche, gemütliche Wortprägung.',
+      beispiel: 'Nur a kleines Glasl Riesling für mich!',
+      beispiel_hd: 'Nur ein kleines Gläschen Riesling für mich!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-215',
+      ausdruck: 'Mostschädel',
+      hochdeutsch: 'Mostschädel / Most-Liebhaber',
+      bedeutung: 'Ein „Mostschädel" ist im Wienerischen jemand, der zu viel Most trinkt — meist aus dem Wachau oder Mostviertel. „Der Onkel war wieder a Mostschädel!" Mit Augenzwinkern oder ernsthaft gebraucht. Eine plastische, charakteristische wienerisch-niederösterreichische Bezeichnung. Verbunden mit der traditionellen Most-Kultur in Niederösterreich.',
+      beispiel: 'Beim Mostviertel-Heurigen wurde er zu nem Mostschädel.',
+      beispiel_hd: 'Beim Mostviertel-Heurigen wurde er zu einem Mostschädel.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-216',
+      ausdruck: 'Trottellerl',
+      hochdeutsch: 'Kleiner Tölpel',
+      bedeutung: 'Ein „Trottellerl" ist im Wienerischen ein kleiner Tölpel — die Verkleinerungsform von „Trottel". „Du Trottellerl, jetzt is alles voller Marmelad!" Mit warmem Spott und Augenzwinkern gebraucht — meistens an Kinder gerichtet. Die Wiener Liebe zu Verkleinerungsformen macht selbst eine Beleidigung freundlich. Familiäre Wortprägung.',
+      beispiel: 'Du kleines Trottellerl, jetz hast wieder ois verschüttet!',
+      beispiel_hd: 'Du kleiner Tölpel, jetzt hast du wieder alles verschüttet!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-217',
+      ausdruck: 'Sterz',
+      hochdeutsch: 'Sterz (Polenta-ähnliches Gericht)',
+      bedeutung: 'Der „Sterz" ist eine traditionelle österreichische Speise — körnig gebratener Buchweizen- oder Maisbrei mit Butter, manchmal mit Speck oder als Süßspeise. „Heut gibts Heidensterz mit Apfelkompott!" Im Wienerischen, Steierischen, Kärntnerischen beliebt. Bäuerliche Tradition mit langer Geschichte. Heute wieder als „Slow Food" entdeckt.',
+      beispiel: 'In dem Wirtshaus gibts noch echten Heidensterz!',
+      beispiel_hd: 'In dem Wirtshaus gibt es noch echten Heiden-Sterz!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-218',
+      ausdruck: 'Bissgurn',
+      hochdeutsch: 'Bissgurn / Streitsüchtige Frau',
+      bedeutung: 'Eine „Bissgurn" ist im Wienerischen eine streitsüchtige, zänkische Frau — wörtlich „Beiß-Gurke". Eine drastische, bildhafte Bezeichnung. „Mei Schwiegermutter is a richtige Bissgurn!" Mild bis ernsthaft je nach Kontext. Charakteristisch wienerische Personenbeschreibung mit Augenzwinkern. Auch übertragen für jeden zickigen Menschen.',
+      beispiel: 'Die Bissgurn von der Kassiererin hat mich angeschnauzt!',
+      beispiel_hd: 'Die zänkische Kassiererin hat mich angeschnauzt!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-219',
+      ausdruck: 'Sterzlbinder',
+      hochdeutsch: 'Krawatten-Träger',
+      bedeutung: 'Ein „Sterzlbinder" ist im Wienerischen humorvoll jemand, der ständig Krawatte trägt — meist Geschäftsmänner oder Beamte. „Im Büro sind die Sterzlbinder unter sich!" Eine plastische, leicht spöttische wienerische Charakterisierung. Verwandt mit dem Bild der formellen Wiener Geschäftswelt. Heute mit nostalgischem Beiklang.',
+      beispiel: 'Bei der Versicherung arbeiten nur Sterzlbinder.',
+      beispiel_hd: 'Bei der Versicherung arbeiten nur Krawatten-Träger.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-220',
+      ausdruck: 'Schlampampum',
+      hochdeutsch: 'Heimliche Liebschaft / Flirt',
+      bedeutung: 'Das „Schlampampum" ist im Wienerischen eine heimliche Liebschaft oder Flirt — vor allem in den Kaffeehäusern und beim Heurigen. „Die zwei haben a heimliches Schlampampum!" Lautmalerisch — wie etwas Verspieltes, Aufregendes. Eine charmante, augenzwinkernde wienerische Wortprägung. Verbreitet in der wienerischen Romankultur.',
+      beispiel: 'Der Geschäftsmann hat a Schlampampum mit der Sekretärin.',
+      beispiel_hd: 'Der Geschäftsmann hat eine heimliche Liebschaft mit der Sekretärin.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-221',
+      ausdruck: 'Spitzwecken',
+      hochdeutsch: 'Spitzwecken / Wiener Brötchen',
+      bedeutung: 'Der „Spitzwecken" ist eine wienerische Brötchen-Spezialität — länglich, spitz zulaufend, knusprig. „Zum Frühstück a frischer Spitzwecken mit Butter!" Klassisches Wiener Frühstücks-Gebäck. Auch als „Wachauer Laberl" bekannt. Die Wiener Bäckerei-Tradition ist weltberühmt. Eine bodenständige Bäckerei-Vokabel.',
+      beispiel: 'Drei Spitzwecken mit Schinken, bitte!',
+      beispiel_hd: 'Drei Spitzwecken mit Schinken, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-222',
+      ausdruck: 'Kaffeesieder',
+      hochdeutsch: 'Kaffeesieder / Wiener Kaffeehaus-Wirt',
+      bedeutung: 'Der „Kaffeesieder" ist im Wienerischen der Wirt eines klassischen Wiener Kaffeehauses — eine ehrenvolle Berufstradition seit Jahrhunderten. „Mei Onkel war Kaffeesieder im Café Central!" Auch der „Klub der Wiener Kaffeesieder" als Brancheninstitution. Symbol für die UNESCO-Weltkulturerbe Wiener Kaffeehauskultur.',
+      beispiel: 'D\'Wiener Kaffeesieder sind weltberühmt!',
+      beispiel_hd: 'Die Wiener Kaffeesieder sind weltberühmt!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-223',
+      ausdruck: 'Sterz-Wirt',
+      hochdeutsch: 'Sterz-Wirt / Heuriger-Wirt',
+      bedeutung: 'Der „Sterz-Wirt" ist im Wienerischen der traditionelle Heuriger-Wirt — oft ein Winzer, der seinen eigenen Wein und Hausmannskost serviert. „Beim Sterz-Wirt am Nußberg gibts den besten Heurigen!" Die Wiener Heurigen-Kultur ist UNESCO-Kulturerbe. Familienbetriebe seit Generationen. Klassische wienerische Geselligkeit.',
+      beispiel: 'Am Sonntag gehen wir zum Sterz-Wirt auf an G\'spritzten.',
+      beispiel_hd: 'Am Sonntag gehen wir zum Heurigen-Wirt auf einen G\'spritzten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-224',
+      ausdruck: 'Mehlspeis',
+      hochdeutsch: 'Mehlspeise / Süßes Hauptgericht',
+      bedeutung: 'Die „Mehlspeis" ist im Wienerischen die süße Hauptmahlzeit — typische Wiener Tradition, wo ein Süßspeise das Mittagessen sein kann (Kaiserschmarrn, Marillenknödel, Topfenstrudel). „Heut Mittag gibts Mehlspeis statt Fleisch!" UNESCO-Kulturerbe der wienerischen Mehlspeisen-Kultur. Eine eigene Welt mit eigenen Wirtshäusern.',
+      beispiel: 'Bei der Mehlspeis-Konditorei gibts die feinsten Süßspeisen.',
+      beispiel_hd: 'Bei der Mehlspeis-Konditorei gibt es die feinsten Süßspeisen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-226',
+      ausdruck: 'Sackerl-Geld',
+      hochdeutsch: 'Pfand-Geld auf Plastiksäcken',
+      bedeutung: 'Das „Sackerl-Geld" ist im Wienerischen das Geld für Plastiksäcke beim Einkauf — seit der österreichischen Umweltgesetzgebung obligatorisch. „A Sackerl-Geld brauch ich heut nicht, hab eigene Stoffsäcke!" Verbindet alte wienerische Wortbildung mit modernen Umweltthemen. Reflektiert den österreichischen Umweltbewusstsein-Trend.',
+      beispiel: 'Vergiss das Sackerl-Geld nich!',
+      beispiel_hd: 'Vergiss das Sack-Geld nicht!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'w-227',
+      ausdruck: 'Powidlsuppen',
+      hochdeutsch: 'Powidl-Suppe (Pflaumenkompott-Suppe)',
+      bedeutung: 'Die „Powidlsuppen" ist eine alte wienerische Süßspeise — eine Suppe aus Powidl (Pflaumenkompott) mit Zimt, Nelken und manchmal Mehlnockerln. „Bei Großmutter gabs Powidlsuppen!" Eine fast vergessene Tradition aus der k.u.k.-Küche. In manchen wienerischen Konditoreien noch zu finden. Mit nostalgischem Beiklang.',
+      beispiel: 'Im Café gibts noch echte Powidlsuppen!',
+      beispiel_hd: 'Im Café gibt es noch echte Pflaumenkompott-Suppe!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-228',
+      ausdruck: 'Tachinierer',
+      hochdeutsch: 'Faulenzer / Drücker (vor der Arbeit)',
+      bedeutung: 'Ein „Tachinierer" ist im Wienerischen ein Faulenzer — einer, der sich vor der Arbeit drückt. „Hör auf zu tachinieren und schaff was!" Verbreitet im wienerischen Arbeitsleben. Eine charakteristische wienerische Wortprägung mit Bezug auf das Militär (sich vor dem Dienst drücken). Heute auch im Alltag.',
+      beispiel: 'Der Tachinierer im Büro nervt mich!',
+      beispiel_hd: 'Der Faulenzer im Büro nervt mich!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-229',
+      ausdruck: 'Pension',
+      hochdeutsch: 'Pension / Rente',
+      bedeutung: 'Die „Pension" ist in Wien die Rente — österreichischer Sprachgebrauch, der sich von der deutschen „Rente" unterscheidet. „I bin scho in Pension!" In Wien wird die Pension oft als Verdienst nach langem Arbeitsleben gesehen. Die österreichische Pensionsstruktur ist traditionell sehr großzügig. Wichtige Lebensphase mit kulturellem Stellenwert.',
+      beispiel: 'Mit 65 bin ich endlich in Pension.',
+      beispiel_hd: 'Mit 65 bin ich endlich in Rente.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-230',
+      ausdruck: 'Karfiol',
+      hochdeutsch: 'Blumenkohl',
+      bedeutung: 'Der „Karfiol" ist im Wienerischen und Österreichischen der Blumenkohl — vom italienischen „cavolfiore". „Mit Karfiol-Suppe schmeckts gut!" Eine alltägliche Wiener Vokabel mit klingender italienischer Note. Die k.u.k.-Geschichte hat Wien viele italienische Lebensmittelnamen geschenkt: Karfiol, Marille (Aprikose), Powidl. Charmante Sprachgeschichte.',
+      beispiel: 'D\'Karfiol-Suppe is meine Lieblings!',
+      beispiel_hd: 'Die Blumenkohl-Suppe ist meine Lieblings!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-231',
+      ausdruck: 'Schmus',
+      hochdeutsch: 'Schmus / Schmeichelei',
+      bedeutung: 'Der „Schmus" ist im Wienerischen Schmeichelei oder schmeichlerisches Gerede. „Hör auf mit dem Schmus, sag was Sache is!" Verbreitet aus dem Jiddischen („schmuse" = plaudern, schmeicheln). Auch übertragen: „Schmus machen" (jemanden umschmeicheln). Eine charmante, wienerisch-jiddische Wortprägung mit langen Sprachwurzeln.',
+      beispiel: 'Mit dem Schmus erreichst bei mir nix!',
+      beispiel_hd: 'Mit der Schmeichelei erreichst du bei mir nichts!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-232',
+      ausdruck: 'Sterz-Schädel',
+      hochdeutsch: 'Sterz-Schädel / Dummer Kopf',
+      bedeutung: 'Ein „Sterz-Schädel" ist im Wienerischen ein dummer, schwer von Begriff Mensch — wörtlich „Sterz-Kopf" (so wenig Verstand wie ein Sterz-Topf). „Du Sterz-Schädel, das verstehst du nicht!" Eine plastische, drastische wienerische Beleidigung. Mit Augenzwinkern unter Freunden, mit Schärfe in ernsthaftem Kontext.',
+      beispiel: 'Du Sterz-Schädel, jetz schau halt mal hin!',
+      beispiel_hd: 'Du Dummkopf, jetzt schau halt mal hin!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-233',
+      ausdruck: 'Schani',
+      hochdeutsch: 'Schani (Wirt-Schani / Hans)',
+      bedeutung: 'Der „Schani" ist im Wienerischen die Kurzform für „Hans" oder „Johann" — auch als „Schani-Garten" (Gastgarten an der Straße). „Setz di in Schani-Garten!" Die Wiener Wirtshausgärten heißen Schani-Gärten. Eine charmante wienerische Kurzform mit lebendigem Bezug zur Gastronomie-Kultur. Symbol für lockere Wiener Sommer-Gemütlichkeit.',
+      beispiel: 'Im Sommer sitzen wir gern im Schani-Garten.',
+      beispiel_hd: 'Im Sommer sitzen wir gern im Gastgarten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-234',
+      ausdruck: 'Knöperl',
+      hochdeutsch: 'Knöpfchen / Klümpchen',
+      bedeutung: 'Ein „Knöperl" ist im Wienerischen ein kleines Knöpfchen oder Klümpchen — Verkleinerung von „Knopf". „Im Pudding sind Knöperl, ich hab schlecht gerührt!" Auch übertragen: „a Knöperl Mehl" (ein wenig Mehl). Die typisch wienerische Verkleinerung mit „-erl" gibt dem Wort warmen Klang. Eine alltägliche Vokabel.',
+      beispiel: 'Im Mehl warum sind so viele Knöperl?',
+      beispiel_hd: 'Im Mehl warum sind so viele Klümpchen?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-235',
+      ausdruck: 'Spitalbett',
+      hochdeutsch: 'Spitalbett / Krankenhausbett',
+      bedeutung: 'Das „Spitalbett" ist im Wienerischen das Krankenhausbett — österreichischer Begriff statt deutsch „Krankenhausbett". „Spital" ist österreichisch für Krankenhaus. „Im Spitalbett liegen!" Eine wichtige medizinische Vokabel im wienerischen Sprachgebrauch. Verbreitet in Gesundheitskontext und Alltagssprache. K.u.k.-Tradition.',
+      beispiel: 'Mei Opa liegt im Spitalbett im AKH Wien.',
+      beispiel_hd: 'Mein Opa liegt im Krankenhausbett im AKH Wien.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-236',
+      ausdruck: 'Schreberlgarten',
+      hochdeutsch: 'Schrebergarten / Kleingarten',
+      bedeutung: 'Der „Schreberlgarten" ist in Wien der Kleingarten — die kleinen Garten-Parzellen am Stadtrand. „Im Schreberlgarten bauen wir Tomaten an!" Wichtige Wiener Tradition seit dem 19. Jahrhundert. Heute mit langen Wartelisten — sehr begehrt im urbanen Wien. Soziale Institution mit Vereinsstrukturen und Familiensonntagen.',
+      beispiel: 'Am Wochenende fahren wir in unseren Schreberlgarten.',
+      beispiel_hd: 'Am Wochenende fahren wir in unseren Schrebergarten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-237',
+      ausdruck: 'Pratergold',
+      hochdeutsch: 'Pratergold (Wiener Spezialität)',
+      bedeutung: 'Das „Pratergold" ist eine Wiener Spezialität — ein Honig, der aus den Bienenstöcken im Wiener Prater (Wiener Großstadtpark) gewonnen wird. „A Glas Pratergold zum Frühstück!" Stadthonig wird in Wien zunehmend gewertschätzt. Reflektiert die Wiener Biodiversitäts-Tradition. Auch als Geschenk für Touristen beliebt.',
+      beispiel: 'Aus dem Prater kommt das beste Pratergold!',
+      beispiel_hd: 'Aus dem Prater kommt das beste Pratergold!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-238',
+      ausdruck: 'Sterz-Liebe',
+      hochdeutsch: 'Hingebungsvolle Liebe',
+      bedeutung: 'Die „Sterz-Liebe" ist im Wienerischen die innige, hingebungsvolle Liebe — bekannt aus dem berühmten Wiener Lied „Die G\'schicht mit dem Wiener" (Sterzlied). „Mit Sterz-Liebe geht alles!" Eine poetische, wienerische Wortprägung mit literarischem Hintergrund. Verbunden mit der wienerischen Romantik-Tradition. Charmant und tiefgründig.',
+      beispiel: 'Sie hat ihm a echte Sterz-Liebe entgegengebracht.',
+      beispiel_hd: 'Sie hat ihm eine echte hingebungsvolle Liebe entgegengebracht.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-239',
+      ausdruck: 'Tschocherlmusik',
+      hochdeutsch: 'Tschocherl-Musik / Wiener Kneipenmusik',
+      bedeutung: 'Die „Tschocherlmusik" ist die typische Musik in den kleinen Wiener Beisln (Tschocherln) — Akkordeon, Geige, Schrammelmusik, alte Wienerlieder. „In der Tschocherl spielt der alte Mann auf seinem Akkordeon!" Eine intime, nostalgische wienerische Musikform. Symbol für die alte Wiener Geselligkeit und Musikkultur.',
+      beispiel: 'Beim Heurigen hörte mer die Tschocherlmusik bis spät in d\'Nacht.',
+      beispiel_hd: 'Beim Heurigen hörten wir die Tschocherl-Musik bis spät in die Nacht.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-240',
+      ausdruck: 'Wiener Charme',
+      hochdeutsch: 'Wiener Charme',
+      bedeutung: 'Der „Wiener Charme" ist ein wichtiger Wiener Identitätsmarker — die charakteristische Mischung aus Höflichkeit, Schmäh, Charme und einer Prise Wehmut. „Wiener Charme öffnet jede Tür!" In der Welt der Diplomatie und Wirtschaft geschätzt. Eine kulturelle Marke Wiens. Verbindet die Habsburger-Tradition mit der modernen Großstadt-Kultur.',
+      beispiel: 'Mit Wiener Charme klappt jedes Geschäft!',
+      beispiel_hd: 'Mit Wiener Charme klappt jedes Geschäft!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-241',
+      ausdruck: 'Habidere',
+      hochdeutsch: 'Habe die Ehre',
+      bedeutung: 'Die „Habidere" ist eine sehr typische, lässig zusammengezogene wienerische Begrüßung aus „Habe die Ehre" — ein Überbleibsel der k.u.k.-Zeit, als die formelle Höflichkeitsfloskel zur Alltagsphrase wurde. „Habidere, Herr Doktor!" hört man noch heute beim Beisl, beim Wirten oder beim Trafikanten. Sie wird auch beim Abschied verwendet und ist Symbol für die Wiener Mischung aus Höflichkeit und Ironie. Im Gegensatz zum förmlichen Original klingt sie heute fast augenzwinkernd-nostalgisch.',
+      beispiel: 'Habidere, Frau Nachbarin, wie geht\'s denn so?',
+      beispiel_hd: 'Habe die Ehre, Frau Nachbarin, wie geht es Ihnen?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'w-242',
+      ausdruck: 'Bassena',
+      hochdeutsch: 'Wasserstelle im Stiegenhaus',
+      bedeutung: 'Die „Bassena" ist die alte Gemeinschaftswasserstelle im Stiegenhaus der typischen Wiener Zinshäuser aus der Gründerzeit, wo früher mehrere Mietparteien ihr Wasser holten. Aus dem italienischen „bacino" (Becken) entlehnt — ein Erbe der k.u.k.-Vielsprachigkeit. Die „Bassena" war auch sozialer Treffpunkt, daher der Begriff „Bassenatratsch" für den Klatsch unter Nachbarinnen. Heute meist nur mehr historisch, aber kulturell tief verwurzelt — Symbol des alten, gemeinschaftlichen Wien vor der Wohnungsmodernisierung.',
+      beispiel: 'Auf der Bassena hat\'s immer den schärfsten Tratsch geben.',
+      beispiel_hd: 'An der Wasserstelle gab es immer den schärfsten Klatsch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-243',
+      ausdruck: 'Tachinose',
+      hochdeutsch: 'Drückebergerei / Faulenzerei',
+      bedeutung: 'Die „Tachinose" ist die Kunst des Drückens vor der Arbeit — eine wienerische Steigerung von „tachinieren" mit pseudo-medizinischer Endung, als ob Faulheit eine Krankheit wäre. Der Schmäh dabei: Wiener nehmen die Faulheit mit Augenzwinkern als kulturelle Errungenschaft. „Heut hab i an akuten Anfall von Tachinose!" Wurde unter k.u.k.-Beamten zur hohen Kunst entwickelt — die berühmte „Wiener Bequemlichkeit" inklusive. Typisches Beispiel für den wienerischen Hang zur Selbstironie.',
+      beispiel: 'Der hot heut wieder a richtige Tachinose, schaut nur Löcher in d\'Luft.',
+      beispiel_hd: 'Der hat heute wieder einen richtigen Anfall von Faulenzerei, schaut nur Löcher in die Luft.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-244',
+      ausdruck: 'Pomali',
+      hochdeutsch: 'Langsam / gemächlich',
+      bedeutung: '„Pomali" kommt aus dem Tschechischen („pomalu" = langsam) und ist ein klassisches Erbe der k.u.k.-Vielvölkersprache. In Wien bedeutet es nicht nur „langsam", sondern auch „gemütlich, ohne Stress, ohne Hektik" — eine ganze Lebenshaltung. „Nur ned hudln, pomali!" ist fast schon ein wienerisches Motto. Spiegelt die berühmte Wiener Bequemlichkeit und das Misstrauen gegenüber preußischer Hektik wider. Wer im Kaffeehaus den Kellner anschnauzt, hört oft: „Pomali, der Herr, pomali!"',
+      beispiel: 'Geh pomali, mir hom eh Zeit!',
+      beispiel_hd: 'Geh langsam, wir haben sowieso Zeit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-245',
+      ausdruck: 'Pawlatschen-Hof',
+      hochdeutsch: 'Innenhof mit Außengang',
+      bedeutung: 'Der „Pawlatschen-Hof" ist der typische offene Innenhof in den alten Wiener Bassena-Häusern, umlaufen vom „Pawlatschen"-Außengang (aus tschechisch „pavlač"). Die Pawlatschenhäuser sind ein Wahrzeichen des alten Wien — heute teils denkmalgeschützt, teils saniert. Auch das berühmte „Pawlatschentheater" hatte hier seinen Ursprung — improvisierte Aufführungen auf den Gängen. Symbol für die soziale Dichte und Lebenslust der alten Wiener Vorstadt. Heute besonders im 8., 16. und 17. Bezirk erhalten.',
+      beispiel: 'Im 8. Bezirk gibt\'s no oide Pawlatschen-Höfe.',
+      beispiel_hd: 'Im 8. Bezirk gibt es noch alte Innenhöfe mit Außengängen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-246',
+      ausdruck: 'Fisolen',
+      hochdeutsch: 'grüne Bohnen',
+      bedeutung: 'In Wien und ganz Österreich heißen die grünen Bohnen „Fisolen" — vom italienischen „fagiolo" über das mittelhochdeutsche „phasol". Klassisches Erbe der k.u.k.-Küche, die viel italienisch beeinflusst war. „Fisolengulasch" und „Fisolen mit Erdäpfeln" sind Wiener Hausmannskost. Wer in Wien „grüne Bohnen" sagt, wird sofort als Piefke entlarvt. Wichtiger Bestandteil der österreichischen Küchen-Identität — wie auch Erdäpfel, Marillen und Karfiol.',
+      beispiel: 'Heut gibt\'s Fisolengulasch mit Erdäpfeln.',
+      beispiel_hd: 'Heute gibt es Bohnengulasch mit Kartoffeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-247',
+      ausdruck: 'Paradeiser',
+      hochdeutsch: 'Tomaten',
+      bedeutung: 'Die „Paradeiser" sind die wienerischen Tomaten — vom „Paradies-Apfel", da man früher glaubte, die rote Frucht stamme aus dem Paradies. Auch dies ein klassisches österreichisches Wort, das im Norddeutschen unverständlich ist. „A Paradeiser-Salat zum Schnitzel" ist Klassiker. Aus dem Wiener Speisekarten-Latein nicht wegzudenken. Wer beim Wirten „Tomaten" sagt, riskiert ein verständnisloses „Wos wolln Sie?" Symbol für die eigenständige österreichische Esskultur.',
+      beispiel: 'Hol ma vom Markt a Kilo Paradeiser für\'n Salat!',
+      beispiel_hd: 'Hol uns vom Markt ein Kilo Tomaten für den Salat!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-248',
+      ausdruck: 'Obers',
+      hochdeutsch: 'Sahne',
+      bedeutung: 'Der „Obers" (auch „Schlagobers" beim Schlagen) ist die wienerische Sahne — wörtlich „das Obere", weil sich die Sahne früher als Rahm oben auf der Milch absetzte. Im Wiener Kaffeehaus ist „Melange mit Obers" Standard. Beim Apfelstrudel oder Kaiserschmarrn darf der „Schlagobers" nicht fehlen. Auch Anlass für den Klassiker „Einspänner" (Mokka mit Schlagobers im Glas). Bayerisches Pendant: „Rahm". Wer „Sahne" sagt, outet sich als Deutscher.',
+      beispiel: 'A Melange mit extra viel Obers, bitte!',
+      beispiel_hd: 'Eine Melange mit extra viel Sahne, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-249',
+      ausdruck: 'Klescher',
+      hochdeutsch: 'Schlag / Ohrfeige',
+      bedeutung: 'Der „Klescher" ist die wienerische Bezeichnung für einen kräftigen Schlag oder eine saftige Ohrfeige — onomatopoetisch vom Geräusch eines Aufpralls. Auch im übertragenen Sinn: „Der hot an Klescher abkriagt" = jemand hat einen herben Rückschlag erlitten. In der Wiener Schule früher pädagogische Praxis, heute zum Glück Vergangenheit. „Klescher" gehört zur reichen wienerischen Wortfamilie für Gewalttätigkeiten — neben „Watschn", „Fotzn" und „Goschn-Tetscher". Drückt oft mehr Schmerz als echte Bosheit aus.',
+      beispiel: 'Wennst no a Wort sagst, kriagst an Klescher!',
+      beispiel_hd: 'Wenn du noch ein Wort sagst, bekommst du eine Ohrfeige!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-250',
+      ausdruck: 'Hupfauf',
+      hochdeutsch: 'Hampelmann / Wichtigtuer',
+      bedeutung: 'Der „Hupfauf" ist im Wienerischen ein unruhiger, aufgekratzter Mensch, der ständig herumspringt — wörtlich „der Hochspringende". Auch oft für Wichtigtuer oder Aufschneider verwendet: „A bleda Hupfauf is der!" Die Wiener schätzen Gelassenheit (siehe „pomali"), daher ist der hektische Hupfauf das Gegenteil des Ideals. Verwandt mit dem süddeutschen „Hupfdohle" für eine herumzappelnde Person. Typische wienerische Charaktertypologie — neben Trottl, Damischer, Tachinierer und Wuzzler.',
+      beispiel: 'Sei kein so a Hupfauf, setz di endlich hi!',
+      beispiel_hd: 'Sei kein solcher Hampelmann, setz dich endlich hin!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-251',
+      ausdruck: 'Powidltatschkerln',
+      hochdeutsch: 'Pflaumenmus-Teigtaschen',
+      bedeutung: '„Powidltatschkerln" sind eine süße Mehlspeise aus Erdäpfelteig, gefüllt mit „Powidl" (Zwetschgenmus) — eine wienerische Spezialität mit böhmischen Wurzeln (von tschechisch „povidla"). In Butterbröseln gewälzt, mit Staubzucker bestreut, oft serviert mit Zwetschkenröster. Eine klassische k.u.k.-Mehlspeise, die zeigt, wie sehr die Wiener Küche durch die böhmische und mährische Tradition geprägt wurde. „A Tatschkerl is a kloans Taschkerl" — Diminutiv. Heute oft in traditionellen Beisln und Heurigen-Lokalen zu finden.',
+      beispiel: 'Zur Jausen gab\'s Powidltatschkerln mit Schlagobers.',
+      beispiel_hd: 'Zur Brotzeit gab es Pflaumenmus-Teigtaschen mit Sahne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-252',
+      ausdruck: 'Strizzi',
+      hochdeutsch: 'Zuhälter / Halunke',
+      bedeutung: 'Der „Strizzi" war im alten Wien der Zuhälter, der „Lude" — heute meist umgangssprachlich für einen kleinen Ganoven, Halunken oder zwielichtigen Typ. Vom italienischen „strizzare" oder vom jiddischen „shtrootz" abgeleitet. Klassiker im Wiener Milieu der Vorstadt — neben „Pülcher", „Sandler" und „Zuhalter". Auch in zahlreichen Wienerliedern und in der Wiener Krimitradition verewigt (Helmut Qualtinger, Edmund Sackbauer). „A Strizzi vom Wienerberg" — die berühmten Wiener Halbweltgestalten.',
+      beispiel: 'Mit so an Strizzi solltst di ned einlassen!',
+      beispiel_hd: 'Mit so einem Halunken solltest du dich nicht einlassen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-253',
+      ausdruck: 'Rebläus\'l',
+      hochdeutsch: 'Erstes Glas neuer Wein',
+      bedeutung: 'Das „Rebläus\'l" (oder „Reblaus") ist im Wienerischen das erste, leichte Glas vom neuen Wein beim Heurigen — wenn der Most schon fast Wein ist, aber noch jung. Eine Wiener Heurigen-Spezialität, die nur kurz im Herbst verfügbar ist. Symbol für die rituelle Heurigen-Kultur Wiens — Sturm, Staubiger, Rebläus\'l, junger Wein, alter Wein. Verbunden mit Gesang („Wie ein Faden so dünn"), Schrammelmusik und gemütlichem Beisammensein im Schanigarten. Wienerisches Lebensgefühl pur.',
+      beispiel: 'Zum Auftakt vom Heurigen a Rebläus\'l, dann a G\'spritzten!',
+      beispiel_hd: 'Zum Auftakt beim Heurigen ein Glas Jungwein, dann eine Weinschorle!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-254',
+      ausdruck: 'Goschn-Tetscher',
+      hochdeutsch: 'Schlag auf den Mund',
+      bedeutung: 'Der „Goschn-Tetscher" ist ein kräftiger Schlag oder eine Ohrfeige direkt auf den Mund („Goschn") — eine deftige wienerische Drohformel. „Wennst die Goschn ned hoidst, kriagst an Goschn-Tetscher!" Heute meist nur mehr verbal als Drohung gebraucht, früher leider auch handfest praktiziert. Gehört zur reichen Wiener Vokabel-Familie für körperliche Auseinandersetzungen — neben „Watschn", „Klescher" und „Detsch\'n". Typisches Wiener Wort, das die Bildhaftigkeit der Sprache zeigt — mit drastisch-bildlicher Komik.',
+      beispiel: 'Pass auf, Bua, sonst gibt\'s an Goschn-Tetscher!',
+      beispiel_hd: 'Pass auf, Junge, sonst gibt es einen Schlag auf den Mund!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-255',
+      ausdruck: 'Pfundskerl',
+      hochdeutsch: 'prächtiger Kerl',
+      bedeutung: 'Der „Pfundskerl" ist im Wienerischen ein echter, zuverlässiger, „guter" Kerl — wörtlich „einer, der ein Pfund wert ist". Höchstes Wiener Lob für einen Mann: tüchtig, charakterstark, hilfsbereit. „Der Franzl is a echter Pfundskerl, auf den is Verlass!" Auch im Sport gebräuchlich — der „Rapid-Pfundskerl", der treue Tormann. Verwandt mit „Hawara" und „Hawi" (Freund), aber mit stärkerem Charakter-Bezug. Die Wienerin sagt: „Wenn i an Pfundskerl find, dann heirat i!"',
+      beispiel: 'Der Karli is a Pfundskerl, der hilft jedem.',
+      beispiel_hd: 'Der Karl ist ein prächtiger Kerl, der hilft jedem.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-256',
+      ausdruck: 'Kasperl',
+      hochdeutsch: 'Hanswurst / Hampelmann',
+      bedeutung: 'Der „Kasperl" geht im Wienerischen über das reine Kindertheater hinaus und bezeichnet einen Witzbold, Spaßvogel oder auch jemanden, den man nicht ernst nimmt. „Mach ned an Kasperl aus dir!" Verwandt mit dem Wiener Volkstheater und dem berühmten „Kasperltheater" — der Wiener Kasperl ist eine Mischung aus Spaßmacher und Sozialkritiker. Auch der Filmtitel „Mundl: Ein echter Wiener geht nicht unter" zeigt diese Tradition. Manchmal liebevoll, oft abwertend — typische wienerische Doppeldeutigkeit.',
+      beispiel: 'Geh, sei kein so a Kasperl, sei amoi ernst!',
+      beispiel_hd: 'Geh, sei kein solcher Hanswurst, sei einmal ernst!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-257',
+      ausdruck: 'Heuriger Lieferant',
+      hochdeutsch: 'Heuriger-Stammgast',
+      bedeutung: 'Der „Heurige Lieferant" ist im wienerischen Schmäh paradoxerweise nicht der, der den Heurigen beliefert, sondern der treue Stammgast, der den Heurigen mit seinem Konsum am Laufen hält. „Der Sepp is unser stammheuriger Lieferant!" Typisches Beispiel für den ironischen Wiener Wortwitz. Spiegelt die Heurigen-Kultur wider: Gemütlichkeit, Stammgäste, Schrammelmusik, Bratl, Sturm und G\'spritzter. Verbunden mit den klassischen Heurigen-Bezirken Grinzing, Heiligenstadt, Nußdorf und Stammersdorf.',
+      beispiel: 'Beim Mayer am Pfarrplatz bin i schon a heuriger Lieferant.',
+      beispiel_hd: 'Beim Mayer am Pfarrplatz bin ich schon ein Heuriger-Stammgast.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-258',
+      ausdruck: 'Wuzerl',
+      hochdeutsch: 'pummelige Person / Kügelchen',
+      bedeutung: 'Das „Wuzerl" ist im Wienerischen ein liebevoller Ausdruck für ein kleines, pummeliges, rundliches Kind oder Tier — vom „wuzeln" (kneten, rollen). „Schau dir des Wuzerl an!" über ein dickes Baby ist Kompliment, kein Schimpf. Auch für rundliche Süßspeisen verwendet: Knödel-Wuzerl, Mozartkugel-Wuzerl. Die Wiener haben viele zärtliche Diminutive für rundliche Wesen — „Mopperl", „Knöperl", „Bockerl", „Wuzerl". Spiegelt die wienerische Lust an Verniedlichungen und den entspannten Umgang mit Pummeligkeit wider.',
+      beispiel: 'Des kloane Wuzerl is heut zwa Kilo schwerer worden!',
+      beispiel_hd: 'Das kleine Pummelchen ist heute zwei Kilo schwerer geworden!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-259',
+      ausdruck: 'Tschocherl-Beisl',
+      hochdeutsch: 'kleine Vorstadtkneipe',
+      bedeutung: 'Das „Tschocherl-Beisl" ist im Wienerischen eine kleine, oft etwas zwielichtige Vorstadtkneipe, eine Spelunke — die Kombination zweier wienerischer Worttiefen für Kneipe. Tschocherl-Beisln waren früher die typischen Vorstadtkneipen mit Standlbier, Tarock-Spielern und Heurigenmusik. Heute teils nostalgisch in den alten Bezirken (Favoriten, Ottakring) erhalten. Mit „Tschocherlmusik" verwandt — der typischen Wiener Kneipenmusik. Symbol der „kleinen Leute"-Kultur Wiens, abseits der noblen Innenstadt-Kaffeehäuser.',
+      beispiel: 'Mir treffen uns nochher im Tschocherl-Beisl ums Eck.',
+      beispiel_hd: 'Wir treffen uns nachher in der kleinen Kneipe um die Ecke.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-260',
+      ausdruck: 'Speibsackerl',
+      hochdeutsch: 'Spucktüte / Kotztüte',
+      bedeutung: 'Das „Speibsackerl" ist die wienerische Bezeichnung für die Spucktüte, etwa im Flugzeug oder Bus — vom Wiener „speiben" (sich übergeben). Drastisches Bildwort mit typisch wienerischem Humor. Auch übertragen verwendet: „Wann i des sich, brauch i a Speibsackerl!" = wenn ich das sehe, wird mir schlecht. Verwandt mit dem österreichischen „speiben" für Erbrechen — etymologisch vom mittelhochdeutschen „spîwen". Wer Wienerisch verstehen will, muss die direkte, drastische Bildhaftigkeit der Sprache schätzen lernen.',
+      beispiel: 'Im Bus war mir gschissn schlecht, hot a Speibsackerl braucht.',
+      beispiel_hd: 'Im Bus war mir sehr schlecht, hätte eine Spucktüte gebraucht.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-261',
+      ausdruck: 'Faschiertes',
+      hochdeutsch: 'Hackfleisch',
+      bedeutung: 'Das „Faschierte" ist die österreichische Bezeichnung für Hackfleisch — vom französischen „farcir" (füllen) über das Wiener Küchenfranzösisch der k.u.k.-Zeit. „Faschierte Laibchen" sind die wienerischen Frikadellen, oft mit Erdäpfeln serviert. Auch das „faschierte Braten" — ein Hackbraten — ist Wiener Klassiker. Sprachliches Erbe der noblen Wiener Hofküche, die viel französisch beeinflusst war. Wer „Hackfleisch" sagt, riskiert in Wien ein verständnisloses „Hä?" — wie auch bei „Tomate", „Sahne", „Kartoffel". Symbol der eigenständigen österreichischen Küchen-Identität.',
+      beispiel: 'Heut gibt\'s faschierte Laibchen mit Erdäpfelpüree.',
+      beispiel_hd: 'Heute gibt es Frikadellen mit Kartoffelpüree.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-262',
+      ausdruck: 'Karenz',
+      hochdeutsch: 'Elternzeit / Mutterschutz',
+      bedeutung: 'Die „Karenz" ist in Österreich die offizielle Bezeichnung für die Elternzeit oder den Mutterschutz nach der Geburt — vom lateinischen „carere" (entbehren). Wienerischer und österreichischer Standardbegriff, in Deutschland eher unbekannt. „I bin in Karenz" sagt jede Wiener Mutter und jeder moderne Wiener Vater. Spiegelt die österreichische Familienpolitik mit ihren großzügigen Karenzregelungen wider. Auch ein Beispiel für die zahlreichen Latinismen und Bürokratismen, die der österreichische Sprachgebrauch aus der k.u.k.-Verwaltung übernommen hat.',
+      beispiel: 'Meine Schwoga is no a Joahr in Karenz mit ihrn Kloan.',
+      beispiel_hd: 'Meine Schwester ist noch ein Jahr in Elternzeit mit ihrem Kleinen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-263',
+      ausdruck: 'Ringelspiel',
+      hochdeutsch: 'Karussell',
+      bedeutung: 'Das „Ringelspiel" ist die wienerische und österreichische Bezeichnung für das Karussell — verbunden mit dem berühmten Wiener Prater und dessen historischen Ringelspielen aus dem 19. Jahrhundert. „Auf\'s Ringelspiel gehen" gehört zur Wiener Kindheit dazu. Das Calafati-Riesenrad, die Praterstraße, das Watschenmann und die Geisterbahn — alles Teil der Wiener Volksbelustigungskultur. Verewigt im berühmten Schlager „Im Prater blühn wieder die Bäume". Auch im übertragenen Sinn: „A wahres Ringelspiel" = eine verwirrende, sich drehende Situation.',
+      beispiel: 'Im Prater is jeder Sonntag a Ringelspiel-Fahrt drin.',
+      beispiel_hd: 'Im Prater ist jeden Sonntag eine Karussellfahrt drin.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-264',
+      ausdruck: 'Schmankerl-Stüberl',
+      hochdeutsch: 'gemütliche Speisestube',
+      bedeutung: 'Das „Schmankerl-Stüberl" ist die typische Wiener Bezeichnung für eine kleine, gemütliche Speisestube oder Spezialitätenrestaurant mit gehobener Hausmannskost. „Schmankerl" sind dabei die kulinarischen Köstlichkeiten — Tafelspitz, Beuschel, Krautfleckerl, Powidltatschkerln. Verbunden mit der Wiener Wirtshaus-Kultur, der „Beisl"-Tradition. „Im Schmankerl-Stüberl beim Plachutta gibt\'s den besten Tafelspitz Wiens!" Symbol für die Pflege der wienerischen Esskultur, die zwischen Hausmannskost und Hofküche steht. Heute oft touristisch vermarktet, aber kulturell echt verwurzelt.',
+      beispiel: 'Im Schmankerl-Stüberl gibt\'s a Beuschel, des is no wie früher!',
+      beispiel_hd: 'In der gemütlichen Speisestube gibt es ein Beuschel, das ist noch wie früher!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-265',
+      ausdruck: 'Plutzer',
+      hochdeutsch: 'Kürbis / dummer Mensch',
+      bedeutung: 'Der „Plutzer" hat im Wienerischen zwei Bedeutungen: erstens der Kürbis (vom slawischen „pluzer"), zweitens ein dummer, einfältiger Mensch („A Plutzer is der!" = ein hohler Schädel, eine leere Birne). Bildhaft als Vergleich des Kopfes mit dem hohlen Kürbis — wie auch „Mostschädel" oder „Sterz-Schädel". Klassisches Schimpfwort im wienerischen Vokabular. Auch der „Plutzerkrapfen" — eine Faschingsspezialität. Spiegelt die wienerische Lust am bildhaft-derben Schimpfen wider — neben Trottl, Tepp und Damischer.',
+      beispiel: 'Du Plutzer, wos host wieder vergessn?!',
+      beispiel_hd: 'Du Dummkopf, was hast du wieder vergessen?!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-266',
+      ausdruck: 'Bockerl-Bua',
+      hochdeutsch: 'kleiner Liebling (Knabe)',
+      bedeutung: 'Der „Bockerl-Bua" ist im Wienerischen ein zärtlicher Ausdruck für einen kleinen, lebhaften Buben — Kombination aus „Bockerl" (junger Bock) und „Bua" (Junge). „Mei Bockerl-Bua!" Liebevolle Diminutiv-Tradition Wiens — alles wird verkleinert: Wuzerl, Mopperl, Bockerl, Häferl, Krügerl. Drückt Zärtlichkeit und wienerische Gemütlichkeit aus. Verwandt mit der berühmten Wiener Wortbildungs-Lust, die jedem Substantiv ein „-erl" oder „-l" anhängen kann. Symbol für die emotionale Bindung an Kinder und Tiere.',
+      beispiel: 'Mei kloana Bockerl-Bua, kumm her zu mir!',
+      beispiel_hd: 'Mein kleiner Liebling, komm her zu mir!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-267',
+      ausdruck: 'Würschtl mit Saft',
+      hochdeutsch: 'Würstchen mit Senfsauce',
+      bedeutung: '„Würschtl mit Saft" ist die Wiener Würstelstand-Klassiker-Bestellung: Frankfurter oder Käsekrainer mit „Saft" (das ist die scharfe Senf-Sauce mit Kren). „A Eitrige mit Bugl und Buckerl, an Bugl und an 16er-Blech" — die berühmten Codes der Würstelstand-Sprache. Der Wiener Würstelstand ist Kulturinstitution wie das Kaffeehaus. Am Bitzinger beim Albertinaplatz, beim Leo am Hohen Markt, beim Hofer am Schottentor — Wiener Wahrzeichen. Symbol für das demokratische Wien, wo Generaldirektor und Müllarbeiter Seite an Seite knabbern.',
+      beispiel: 'Schnell beim Würschtl-Stand a Käsekrainer mit Saft!',
+      beispiel_hd: 'Schnell beim Würstchen-Stand eine Käsekrainer mit Senfsauce!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-268',
+      ausdruck: 'FK Austria Wien',
+      hochdeutsch: 'FK Austria Wien (Fußballclub)',
+      bedeutung: 'Der „FK Austria Wien" ist der traditionsreiche Wiener Fußballverein der Innenstadt-Bürger und Intellektuellen, gegründet 1911 — Erzrivale des „Rapid Wien" aus Hütteldorf. Die „Veilchen" (wegen der violetten Trikotfarbe) waren in der Zwischenkriegszeit Heimstätte der jüdischen Wiener Fußball-Aristokratie (Matthias Sindelar, der „Papierene"). Das berühmte „Wiener Derby" Austria gegen Rapid ist der älteste Fußball-Derbyklassiker des Kontinents. Symbol für die soziale Spaltung Wiens — Austria steht historisch für Innenstadt, Bürgertum und Kultur.',
+      beispiel: 'Am Sunndog spuit Austria gegen Rapid — des wird a Hetz!',
+      beispiel_hd: 'Am Sonntag spielt Austria gegen Rapid — das wird ein Spaß!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-269',
+      ausdruck: 'Johann Strauss',
+      hochdeutsch: 'Johann Strauss (Walzerkönig)',
+      bedeutung: 'Johann Strauss (Vater und Sohn) sind die wienerischen Walzerkönige — der „Donauwalzer" („An der schönen blauen Donau", 1867) ist die heimliche Hymne Wiens und Österreichs. Jedes Neujahrskonzert der Wiener Philharmoniker im Musikverein ist eine Strauss-Feier mit weltweitem Live-Publikum. Auch die „Fledermaus" — die populärste Operette aller Zeiten. Strauss vertonte das Wiener Lebensgefühl: Walzer, Schmäh, Schönheit, leichte Melancholie. „Wien, Wien, nur du allein" — Strauss-Reminiszenz. Symbol für das musikalische Wien neben Mozart, Beethoven, Schubert.',
+      beispiel: 'Zum Silvester hör i immer den Strauss-Walzer!',
+      beispiel_hd: 'Zum Silvester höre ich immer den Strauss-Walzer!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-270',
+      ausdruck: 'Aufzwickter',
+      hochdeutsch: 'Streit / Krach',
+      bedeutung: 'Der „Aufzwickte" oder das „Aufzwickn" bezeichnet in Wien einen Streit, eine handfeste Auseinandersetzung oder lautstarke Diskussion — vom „zwicken" (kneifen, zwacken). „Beim Heurigen gab\'s an wuiden Aufzwickten!" Auch in der Form „aufzwicken" als Verb: einen Streit anfangen, jemanden reizen. Wiener bevorzugen den verbalen, theatralischen Streit gegenüber dem stillen Groll — siehe „Bahöl", „Gschnas", „Hetz". Spiegelt die wienerische Vorliebe für lebhaft-bildhafte Konfliktbeschreibungen wider. Auch im Sport: „A schöner Aufzwickter am Spielfeld."',
+      beispiel: 'Gestern bei der Stammtischrunde gab\'s an oarchen Aufzwickten!',
+      beispiel_hd: 'Gestern bei der Stammtischrunde gab es einen heftigen Streit!',
+      kategorie: 'redensart'
     }
   ]
 };

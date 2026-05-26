@@ -9,6 +9,7 @@ export default {
   farbe: '#2d6a4f',
   beschreibung: 'Alemannisch ist eine oberrheinische Dialektgruppe, die in Südbaden, dem Schwarzwald, dem Elsass und Vorarlberg gesprochen wird. Nahe verwandt mit dem Schweizerdeutschen, aber stärker mit dem Badischen geprägt. Typisch sind das gesungene Heben und Senken der Stimme, das gedehnte „a" und eine ausgeprägte Gemütlichkeit im Ausdruck.',
   sprecher: 'ca. 4 Mio.',
+  lang: 'de-DE',
   ausdruecke: [
     {
       id: 'al-001',
@@ -272,15 +273,6 @@ export default {
       kategorie: 'redensart'
     },
     {
-      id: 'al-030',
-      ausdruck: 'Häs',
-      hochdeutsch: 'Kleidung / Gewand / Kostüm',
-      bedeutung: '„Häs" ist das alemannische Wort für Kleidung oder Gewand, besonders in Bezug auf das Fasnachtskostüm. Auf der Fasnet ist das Häs das aufwendig gefertigte, traditionelle Narrenkleid der jeweiligen Zunft. Der Begriff geht auf das mittelhochdeutsche „hese" zurück und zeigt, wie konservativ manche Dialektbegriffe sind.',
-      beispiel: 'Das Häs der Zunft wird von Generation zu Generation weitergegeben.',
-      beispiel_hd: 'Das Kostüm der Zunft wird von Generation zu Generation weitergegeben.',
-      kategorie: 'alltag'
-    },
-    {
       id: 'al-031',
       ausdruck: 'Mauli',
       hochdeutsch: 'Mund / Maul (kindlich)',
@@ -393,6 +385,8 @@ export default {
       ausdruck: 'Vogtei',
       hochdeutsch: 'Historische Herrschaft / Vogtei',
       bedeutung: 'Die Vogtei war im Mittelalter eine Verwaltungseinheit, in der ein Vogt (Verwalter) die Herrschaft ausübte. Im alemannischen Raum gibt es viele Orts- und Flurnamen, die auf alte Vogteien hinweisen. Das System der Vogteien war wichtig für die Verwaltung der zahlreichen Klöster und Adelsherrschaften in Südbaden.',
+      beispiel: 'D\'Vogtei isch hier scho im 13. Johrhundert bezeugt.',
+      beispiel_hd: 'Die Vogtei ist hier schon im 13. Jahrhundert bezeugt.',
       kategorie: 'orte'
     },
     {
@@ -412,15 +406,6 @@ export default {
       beispiel: 'Mir rede halt badisch — und des isch gut so!',
       beispiel_hd: 'Wir reden halt badisch — und das ist gut so!',
       kategorie: 'redensart'
-    },
-    {
-      id: 'al-046',
-      ausdruck: 'Bollenhut',
-      hochdeutsch: 'Traditioneller Schwarzwälder Kopfschmuck',
-      bedeutung: 'Der Bollenhut ist das bekannteste Symbol der Schwarzwälder Frauentracht — ein schwarzer Strohhut, auf dem 14 große Wollbollen aus rotem oder schwarzem Garn befestigt sind. Rote Bollen trägt die unverheiratete, schwarze die verheiratete Frau. Er stammt nur aus drei Gemeinden: Gutach, Kirnbach und Reichenbach im Kinzigtal. Durch Postkarten und Tourismuswerbung wurde er zum bekanntesten Symbol Badens weltweit.',
-      beispiel: 'Der Bollenhut isch kein Kitschartikel — es isch echtes Schwarzwälder Handwerk.',
-      beispiel_hd: 'Der Bollenhut ist kein Kitschartikel — es ist echtes Schwarzwälder Handwerk.',
-      kategorie: 'alltag'
     },
     {
       id: 'al-047',
@@ -481,8 +466,8 @@ export default {
       ausdruck: 'Karlsruher SC',
       hochdeutsch: 'Karlsruher Sport-Club (Fußballverein)',
       bedeutung: 'Der Karlsruher SC ist Nordbadens Traditionsverein — gegründet 1894. Spielte über 30 Jahre in der Bundesliga, ist aber seit den 2000ern ein klassischer „Aufzugsverein" zwischen 1. und 2. Liga. Heimstadion: das Wildparkstadion. Berühmte Spieler: Oliver Kahn (Torwartlegende), Mehmet Scholl, Sean Dundee. „Liebe gewinnt!" ist der KSC-Schlachtruf — Verein mit treuer Fanbasis trotz wechselhafter Karriere.',
-      beispiel: 'De KSC isch immer in mein Herz, egal wo er spielt.',
-      beispiel_hd: 'Der KSC ist immer in meinem Herzen, egal wo er spielt.',
+      beispiel: 'De Karlsruher SC isch immer in mein Herz, egal wo er spielt.',
+      beispiel_hd: 'Der Karlsruher SC ist immer in meinem Herzen, egal wo er spielt.',
       kategorie: 'sport'
     },
     {
@@ -630,24 +615,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'al-070',
-      ausdruck: 'Belchen',
-      hochdeutsch: 'Belchen (Berg im Südschwarzwald)',
-      bedeutung: 'Der Belchen ist mit 1414 m einer der höchsten Berge des Südschwarzwalds — keltisches Heiligtum (sein Name kommt vom keltischen Gott Belenus). Bei klarem Wetter sieht man von hier Alpen, Vogesen, Schwarzwald und Jura — eine vier-Massiv-Aussicht. Die Belchen-Therme in Sulzburg, die Belchenseilbahn und die Belchen-Markthalle sind regionale Anziehungspunkte. Wandern, Wintersport und Aussicht in einem.',
-      beispiel: 'Vum Belchen siehst d\'Alpen, d\'Vogese und d\'Jura.',
-      beispiel_hd: 'Vom Belchen siehst du die Alpen, die Vogesen und den Jura.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'al-071',
-      ausdruck: 'Feldberg',
-      hochdeutsch: 'Feldberg (höchster Berg im Schwarzwald)',
-      bedeutung: 'Der Feldberg ist mit 1493 m der höchste Berg im Schwarzwald — und der höchste deutsche Berg außerhalb der Alpen. Im Winter Skigebiet mit 14 Liftanlagen, im Sommer Wanderparadies. Der Feldsee am Fuße ist ein klarer Bergsee. Bei klarem Wetter ist die Aussicht von oben spektakulär — Vogesen, Alpen und Schwäbische Alb. Symbol für den Hochschwarzwald und beliebtes Ausflugsziel der Freiburger.',
-      beispiel: 'Im Winter Ski auf\'m Feldberg — im Sommer wandern.',
-      beispiel_hd: 'Im Winter Ski auf dem Feldberg — im Sommer wandern.',
-      kategorie: 'natur'
-    },
-    {
       id: 'al-072',
       ausdruck: 'Hinterzarten',
       hochdeutsch: 'Hinterzarten (Wintersportort)',
@@ -729,15 +696,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'al-081',
-      ausdruck: 'Schwarzwaldhaus',
-      hochdeutsch: 'Schwarzwaldhaus (traditioneller Bauernhof)',
-      bedeutung: 'Das Schwarzwaldhaus ist der charakteristische Bauerntyp des Schwarzwalds — ein massives Holzhaus mit tief heruntergezogenem Walmdach (oft mit Stroh oder Schindeln gedeckt). Mensch und Vieh leben unter einem Dach. Das Heu wird über die „Hocheinfahrt" auf den Heuboden gefahren. Die Vogtsbauernhöfe bei Gutach (Freilichtmuseum) zeigen die Vielfalt: Hotzenhaus, Heidenhaus, Gutacher Haus.',
-      beispiel: 'En altes Schwarzwaldhaus mit Stroh-Dach — fast wie im Märchen.',
-      beispiel_hd: 'Ein altes Schwarzwaldhaus mit Stroh-Dach — fast wie im Märchen.',
-      kategorie: 'orte'
-    },
-    {
       id: 'al-082',
       ausdruck: 'Allgäuer Käse',
       hochdeutsch: 'Allgäuer Käse (Bergkäse, Emmentaler)',
@@ -801,39 +759,12 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'al-089',
-      ausdruck: 'Triberger Wasserfälle',
-      hochdeutsch: 'Triberger Wasserfälle (höchste Wasserfälle Deutschlands)',
-      bedeutung: 'Die Triberger Wasserfälle sind die höchsten Wasserfälle Deutschlands — 163 m Fallhöhe in 7 Stufen. Die Gutach stürzt durch eine wilde, romantische Felsenschlucht. Seit 1827 erschlossen, war die Romantik-Pilgerstätte. Heute Touristenmagnet mit fast 500.000 Besuchern jährlich. Auch der „Schwarzwaldweg" beginnt hier. Naturschauspiel mitten im Schwarzwald.',
-      beispiel: 'In Triberg fallt das Wasser 163 Meter — Deutschlands höchster Wasserfall.',
-      beispiel_hd: 'In Triberg fällt das Wasser 163 Meter — Deutschlands höchster Wasserfall.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'al-090',
-      ausdruck: 'Schwarzwaldbahn',
-      hochdeutsch: 'Schwarzwaldbahn (Historische Bahnstrecke)',
-      bedeutung: 'Die Schwarzwaldbahn von Offenburg nach Konstanz ist eine der ersten Gebirgsbahnen Europas — eröffnet 1873. Sie überwindet 600 m Höhenunterschied auf 149 km mit 39 Tunneln und spektakulären Viadukten. Ingenieursleistung des 19. Jahrhunderts. Heute touristische Attraktion — die Fahrt durch die Schwarzwaldlandschaft ist legendär. Verbindet die Rheinebene mit dem Bodensee.',
-      beispiel: 'D\'Schwarzwaldbahn isch ein technisches Wunderwerk vum 19. Jahrhundert.',
-      beispiel_hd: 'Die Schwarzwaldbahn ist ein technisches Wunderwerk des 19. Jahrhunderts.',
-      kategorie: 'arbeit'
-    },
-    {
       id: 'al-091',
       ausdruck: 'Furtwangen',
       hochdeutsch: 'Furtwangen (Uhrenstadt im Schwarzwald)',
       bedeutung: 'Furtwangen im Schwarzwald mit 9.000 Einwohnern ist DIE deutsche Uhrenstadt — das Deutsche Uhrenmuseum zeigt 8.000 Exponate aus drei Jahrhunderten Uhrengeschichte. Hier wurde die Schwarzwälder Uhrenindustrie geboren. Die Hochschule Furtwangen ist Spezialist für Mikrotechnik, Medizintechnik und Informatik — moderne Fortsetzung der Präzisionstradition. Auch Donauquelle (Breg-Quelle).',
       beispiel: 'In Furtwange isch das Uhrenmuseum — Schwarzwälder Uhrengeschichte pur.',
       beispiel_hd: 'In Furtwangen ist das Uhrenmuseum — Schwarzwälder Uhrengeschichte pur.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'al-092',
-      ausdruck: 'Schramberg',
-      hochdeutsch: 'Schramberg (Schwarzwälder Uhrenstadt)',
-      bedeutung: 'Schramberg im Schwarzwald mit 21.000 Einwohnern ist Heimat der Junghans-Uhren — der größten Uhrenfabrik Europas in den 1900er Jahren. Heute noch Junghans-Standort, weltberühmt für die „Max Bill"-Designerlinie. Auch Marken Sick (Industriesensoren) und Trumpf-Werkzeugmaschinen haben Wurzeln hier. Klassische Schwarzwälder Industriestadt mit Tradition und Hightech.',
-      beispiel: 'Junghans aus Schramberg — Max Bill\'s Uhrendesign weltweit bekannt.',
-      beispiel_hd: 'Junghans aus Schramberg — Max Bills Uhrendesign ist weltweit bekannt.',
       kategorie: 'orte'
     },
     {
@@ -852,33 +783,6 @@ export default {
       bedeutung: 'Der Hotzenwald ist eine raue, abgelegene Hochfläche im Südschwarzwald zwischen Wehratal und Hochrhein — Heimat der „Hotzen", einer eigensinnigen alemannischen Bevölkerungsgruppe. Bis ins 18. Jahrhundert eigene Volkskultur mit den „Hotzenkriegen" gegen Habsburg. Heute ruhige, ländliche Region mit traditioneller Hotzentracht und alemannischer Mundart. Echtes Geheimnis-Alemannien.',
       beispiel: 'Im Hotzewald lebt noch a alte alemannische Kultur.',
       beispiel_hd: 'Im Hotzenwald lebt noch eine alte alemannische Kultur.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'al-095',
-      ausdruck: 'St. Blasien',
-      hochdeutsch: 'St. Blasien (Klosterstadt mit Dom)',
-      bedeutung: 'St. Blasien im Hochschwarzwald mit 4.000 Einwohnern hat einen der größten Kuppelbauten Europas — den Dom St. Blasien (1772-1783, drittgrößter Kuppeldurchmesser nach Petersdom und Pantheon). Heute Jesuitenkolleg. Auch Kurort für Lungenkranke (Asthma) wegen der reinen Höhenluft. Eine architektonisch bemerkenswerte Klosterstadt mitten in der Schwarzwald-Wildnis.',
-      beispiel: 'Der Dom in St. Blasien isch der dritt-größte Kuppelbau Europas.',
-      beispiel_hd: 'Der Dom in St. Blasien ist der drittgrößte Kuppelbau Europas.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'al-096',
-      ausdruck: 'Schluchsee',
-      hochdeutsch: 'Schluchsee (Stausee im Schwarzwald)',
-      bedeutung: 'Der Schluchsee im Hochschwarzwald ist der größte See Baden-Württembergs — ursprünglich natürlicher See, in den 1930er Jahren durch Staumauer erhöht für Wasserkraft. 7,3 km lang, in 930 m Höhe. Im Sommer Wassersport (Segeln, Schwimmen, Tauchen), im Winter teilweise zugefroren. Beliebtes Ausflugs- und Urlaubsziel. Der Bonndorfer Schluchsteig-Wanderweg führt rundherum.',
-      beispiel: 'Am Schluchsee schwimmen im Sommer und im Winter Wanderwege.',
-      beispiel_hd: 'Am Schluchsee schwimmen im Sommer und im Winter Wanderwege.',
-      kategorie: 'natur'
-    },
-    {
-      id: 'al-097',
-      ausdruck: 'Höchenschwand',
-      hochdeutsch: 'Höchenschwand (höchster Luftkurort)',
-      bedeutung: 'Höchenschwand im Südschwarzwald ist mit 1.008 m der höchstgelegene Luftkurort Deutschlands („Dorf am Himmel"). Berühmt für die einzigartige Aussicht über die Alpenkette — bei klarem Wetter sieht man die gesamte Schweizer Alpenkette. Kurort für Atemwegspatienten. Die Höhenlage und das alpine Klima machen Höchenschwand zu einem Genesungsort. Kleinst-Gemeinde mit 2.500 Einwohnern.',
-      beispiel: 'Vu Höchenschwand siehst d\'Alpen wie auf m\'Postkarten.',
-      beispiel_hd: 'Von Höchenschwand siehst du die Alpen wie auf der Postkarte.',
       kategorie: 'orte'
     },
     {
@@ -1627,6 +1531,816 @@ export default {
       beispiel: 'Lueg amol — was für e schöne Sonneuntergang!',
       beispiel_hd: 'Schau mal — was für ein schöner Sonnenuntergang!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'al-181',
+      ausdruck: 'Tüpflischiisser',
+      hochdeutsch: 'Pedant / Erbsenzähler',
+      bedeutung: 'Ein „Tüpflischiisser" ist im Alemannischen und Schweizerdeutschen ein extremer Pedant — wörtlich „Tüpfchen-Scheißer". Eine drastische, aber im Volksmund verbreitete Bezeichnung für jemanden, der jede Kleinigkeit penibel beachtet. „Mei Chef isch en richtige Tüpflischiisser!" Die Wortkombination ist typisch alemannisch — anschaulich, derb und treffsicher zugleich.',
+      beispiel: 'Sei doch kei Tüpflischiisser, lass mi mol mache!',
+      beispiel_hd: 'Sei doch kein Erbsenzähler, lass mich mal machen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-182',
+      ausdruck: 'Ladahüter',
+      hochdeutsch: 'Ladenhüter / Unverkäufliche Ware',
+      bedeutung: 'Ein „Ladahüter" ist im Alemannischen unverkäufliche Ware, die im Laden bleibt — wörtlich „Laden-Hüter". Auch übertragen für eine unverheiratete Frau (in älterer Bedeutung) oder allgemein etwas, was niemand will. „Des isch en richtige Ladahüter!" Wirtschaftliche Realität im Einzelhandel — manche Produkte fliegen vom Regal, andere bleiben Ladahüter.',
+      beispiel: 'Die Schuhe von letzter Saison sind richtige Ladahüter.',
+      beispiel_hd: 'Die Schuhe von letzter Saison sind richtige Ladenhüter.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-183',
+      ausdruck: 'Schmöker',
+      hochdeutsch: 'Dickes Buch / Schmöker',
+      bedeutung: 'Ein „Schmöker" ist im Alemannischen ein dickes, fesselndes Buch — meist Roman, Krimi oder Sachbuch. „Des isch en echte Schmöker, han i in zwei Tag durchgläse!" Verwandt mit „schmökern" (in Büchern lesen). Die alemannische Lesekultur ist ausgeprägt: viele kleine Buchläden, traditionsreiche Verlage. Der Schmöker ist Teil des gemütlichen Winterabends in der Stube.',
+      beispiel: 'I han mer en neue Schmöker für s\'Wuchenend kauft.',
+      beispiel_hd: 'Ich habe mir einen neuen Schmöker fürs Wochenende gekauft.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-184',
+      ausdruck: 'Bachfisch',
+      hochdeutsch: 'Backfisch / Halbwüchsiges Mädchen',
+      bedeutung: 'Ein „Bachfisch" ist im Alemannischen ein junges, halbwüchsiges Mädchen — der Begriff stammt aus der Fischerei: noch nicht reife Fische, die wieder ins Wasser zurückgeworfen werden, daher „Backfisch" (gewendet vom „back"). Heute eher veraltet, aber noch in der älteren Generation gebraucht. „A Bachfisch in dene Johre" beschreibt typische Pubertäts-Verhalten. Liebevoll-ironisch.',
+      beispiel: 'D\'Lisa isch jetzt im Bachfisch-Alter.',
+      beispiel_hd: 'Die Lisa ist jetzt im Backfisch-Alter.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-185',
+      ausdruck: 'Gugger',
+      hochdeutsch: 'Kuckuck / Schaut-Mal',
+      bedeutung: 'Der „Gugger" ist im Alemannischen sowohl der Kuckuck (Vogel) als auch metaphorisch der Neugierige, der überall hinschaut. „Du bisch jo en richtige Gugger!" Verwandt mit „guggen" (gucken, schauen). Im Schwarzwald, bekannt für Kuckucksuhren, hat das Wort doppelte Heimatbedeutung. Auch das berühmte „Gugger-Lied" — Kuckucks-Volkslied — ist im alemannischen Raum verbreitet.',
+      beispiel: 'Hörsch d\'Gugger schreie? Es Frühling isch do!',
+      beispiel_hd: 'Hörst du den Kuckuck schreien? Es Frühling ist da!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-186',
+      ausdruck: 'Loosl',
+      hochdeutsch: 'Lockerer Kerl / Loser',
+      bedeutung: 'Ein „Loosl" ist im Alemannischen ein lockerer, lebensfroher Kerl — aber auch leicht unzuverlässiger Typ. „Der Hans isch en richtige Loosl!" Mit warmem Augenzwinkern gebraucht. Der Loosl nimmt das Leben nicht zu schwer, ist sympathisch, aber nicht der Mann für ernste Verantwortung. Eine charmante alemannische Charakterisierung mit Doppelbedeutung.',
+      beispiel: 'Mei Bruder isch halt en Loosl — bei dem isch nix sicher.',
+      beispiel_hd: 'Mein Bruder ist halt ein lockerer Kerl — bei dem ist nichts sicher.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-187',
+      ausdruck: 'Hosaträger',
+      hochdeutsch: 'Hosenträger',
+      bedeutung: '„Hosaträger" sind im Alemannischen traditionelle Hosenträger — bei älteren Männern noch oft zur Tracht oder zum Sonntagsanzug getragen. In der Tracht der Schwarzwälder oder elsässischer Bauern sind sie kunstvoll bestickt mit Edelweiß, Tannen, Hirschen. Auch in der modernen Trachtenmode ein wichtiges Element. Symbol für solide handwerkliche Tradition.',
+      beispiel: 'D\'Grossvater trägt no immer Hosaträger zum Sunntigsgwand.',
+      beispiel_hd: 'Der Großvater trägt noch immer Hosenträger zum Sonntagsgewand.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-188',
+      ausdruck: 'Chnusperli',
+      hochdeutsch: 'Knusperli / Fischfilet paniert',
+      bedeutung: 'Die „Chnusperli" sind im Schweizerdeutsch und Alemannisch panierte, frittierte Fischfilets — meistens Egli (Flussbarsch). In schweizerischen und südbadischen Seerestaurants Spezialität: „Eglifilet im Bierteig" oder als „Chnusperli". Mit Pommes Frites und Tartar-Sauce serviert. Eine kulinarische Brücke zwischen Schweiz und Südbaden. Verbunden mit dem Wort „chnusperig" (knusprig).',
+      beispiel: 'Im Restaurant am See gibt\'s die beschte Chnusperli!',
+      beispiel_hd: 'Im Restaurant am See gibt es die besten Knusperli!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-189',
+      ausdruck: 'Schnudergoofe',
+      hochdeutsch: 'Schniefende Kinder',
+      bedeutung: '„Schnudergoofe" sind im Alemannischen schniefende Kinder mit Schnupfen — die liebevoll-derbe Bezeichnung für die kleinen Kranken. „Die Schnudergoofe blieben hüt deheim!" Wortzusammensetzung aus „Schnuder" (Schnupfen, Nasenrotz) und „Goofe" (Kinder). Eine plastische, kindgerechte Bezeichnung mit Augenzwinkern, die jeden Erkältungswinter ausdrückt.',
+      beispiel: 'D\'Schnudergoofe bringe ich hüt nit in d\'Schueli.',
+      beispiel_hd: 'Die Schnupfen-Kinder bringe ich heute nicht in die Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-190',
+      ausdruck: 'Tüfels-Chuchi',
+      hochdeutsch: 'Teufels-Küche / Schwierige Situation',
+      bedeutung: '„In d\'Tüfels-Chuchi cho" bedeutet im Alemannischen, in eine schwierige, unangenehme Lage zu kommen — wörtlich „in die Teufels-Küche kommen". „Da bisch in d\'Tüfels-Chuchi cho!" Eine bildhafte, drastische Wendung. Verwandt mit der hochdeutschen „in Teufels Küche kommen". Eine alte religiös-volkstümliche Vorstellung von Strafe und Schwierigkeit.',
+      beispiel: 'Wenn mer des net macht, chunsch in d\'Tüfels-Chuchi!',
+      beispiel_hd: 'Wenn man das nicht macht, kommt man in die Teufels-Küche!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-191',
+      ausdruck: 'Räbeli',
+      hochdeutsch: 'Räbchen / Kleiner Weinstock',
+      bedeutung: 'Das „Räbeli" ist im Alemannischen ein junger oder kleiner Weinstock. „Räb" ist die alemannische Form von „Rebe". Im Badischen, am Kaiserstuhl, im Markgräflerland und in der Schweiz ist der Räb (Weinbau) zentral. Junge Räbeli werden im Frühjahr gepflanzt — die Hoffnung auf zukünftige Weinernten. Verkleinerungsform „-li" gibt der jungen Pflanze Wärme.',
+      beispiel: 'Im Wengert pflanze mir neue Räbeli.',
+      beispiel_hd: 'Im Weingarten pflanzen wir neue Rebchen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-192',
+      ausdruck: 'Übermüatig',
+      hochdeutsch: 'Übermütig',
+      bedeutung: '„Übermüatig" ist im Alemannischen die Form von „übermütig" — mit dem typisch verlängerten „üa". „D\'Kinder sind hüt ganz übermüatig vom viele Schoggi!" Beschreibt die kindliche Übersteigerung von guter Laune zu Wildheit. Auch bei Erwachsenen, die zu viel getrunken haben: „Er isch übermüatig worde!" Eine plastische alemannische Charakterisierung der gefährlichen Grenzen zur Tollheit.',
+      beispiel: 'Pass uf, sei nit so übermüatig uf de Loipe!',
+      beispiel_hd: 'Pass auf, sei nicht so übermütig auf der Loipe!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-193',
+      ausdruck: 'Lismete',
+      hochdeutsch: 'Strickzeug / Gestricktes',
+      bedeutung: 'Die „Lismete" sind im Alemannischen Strickwerk, Strickzeug — von „lisme" (stricken). „Mer geh zum Lisme zur Nachbarin!" Die alemannische Frauen-Tradition des gemeinsamen Strickens in Strickrunden ist alt. Auch das „Lismet-Käppli" (Strickmütze) und „Lismet-Sock" (gestrickte Socken) gehören dazu. Eine warme, häusliche Tradition, die heute wieder modern wird (Slow-Living, Handarbeit).',
+      beispiel: 'D\'Oma sitzt am Fenster bei ihrer Lismete.',
+      beispiel_hd: 'Die Oma sitzt am Fenster bei ihrem Strickzeug.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-194',
+      ausdruck: 'Birli',
+      hochdeutsch: 'Birnchen / Glühbirne',
+      bedeutung: 'Ein „Birli" ist im Alemannischen sowohl ein kleines Birnchen (Frucht) als auch eine Glühbirne. „Wechsel mol s\'Birli, es leuchtet nimmer!" Die Verkleinerung mit „-li" lässt selbst das technische Gerät Birne warmherzig klingen. Verbreitet in Südbaden und der Schweiz. Eine typisch alemannische Diminutiv-Wortprägung, die alltägliche Dinge poetisch macht.',
+      beispiel: 'S\'Birli in de Küchi muess mer austuusche.',
+      beispiel_hd: 'Die Glühbirne in der Küche müssen wir austauschen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-195',
+      ausdruck: 'Müesleitarchen',
+      hochdeutsch: 'Müesli-Tarte',
+      bedeutung: 'Eine moderne alemannische Bezeichnung für Müesliegebäck oder eine süße Tarte mit Hafer, Nüssen, Trockenfrüchten — verwandt mit dem traditionellen Bircher-Müesli (siehe „Müesli"). „Zum Z\'morge gibt\'s Müesliegebäck mit Joghurt!" Eine Mischung aus Schweizer Müesli-Tradition und Trend-Bäckerei.',
+      beispiel: 'D\'Mama mocht jeden Sunntig a Müesliegebäck.',
+      beispiel_hd: 'Die Mama macht jeden Sonntag eine Müesli-Tarte.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-196',
+      ausdruck: 'Kapuzineli',
+      hochdeutsch: 'Kapuzinerkresse',
+      bedeutung: 'Die „Kapuzineli" ist die Kapuzinerkresse — eine im alemannischen Garten beliebte essbare Blume mit scharfem, pfefferigem Geschmack. Wird in Salaten verwendet oder als Garnitur. Auch der „Kapuzineli-Sirup" oder „Kapuzineli-Pesto" sind regionale Spezialitäten. Die orange-roten Blüten sind unverkennbar. Eine kulinarische und gartenkulturelle Tradition mit klangvollem Namen.',
+      beispiel: 'In de Salat tun mir frisch gepflückti Kapuzineli.',
+      beispiel_hd: 'In den Salat tun wir frisch gepflückte Kapuzinerkresse.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-197',
+      ausdruck: 'Pfnüselsuppe',
+      hochdeutsch: 'Erkältungssuppe',
+      bedeutung: 'Die „Pfnüselsuppe" ist die alemannisch-schweizerische Erkältungssuppe — eine wärmende, kräftige Brühe (oft Hühnerbrühe) mit viel Gemüse und Kräutern, die bei Pfnüsel (Schnupfen) helfen soll. Hausmittel-Klassiker, der von Großmüttern weitergegeben wird. „Wenn de Pfnüsel chunt, gibt\'s Pfnüselsuppe!" Verbindung von „Pfnüsel" (Schnupfen) und Suppe — eine plastische Wortprägung.',
+      beispiel: 'Bei Erkältung hilft d\'Mamas Pfnüselsuppe.',
+      beispiel_hd: 'Bei Erkältung hilft die Erkältungssuppe der Mama.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-198',
+      ausdruck: 'Schöggeli',
+      hochdeutsch: 'Schokoladentäfelchen / Pralinen',
+      bedeutung: 'Die „Schöggeli" sind im Alemannischen kleine Schokoladenstückchen — Pralinen, Schokoladentäfelchen, Schokoladenkugeln. Die Schweiz und Südbaden sind Schokoladen-Hochburgen (Cailler, Lindt, Ritter Sport). „A Schöggeli zum Kafi gehört dazu!" Die Verkleinerungsform unterstreicht die Sinnlichkeit des Genusses. Schweizer Schokoladenkultur ist Weltklasse.',
+      beispiel: 'Zum Espresso gibt\'s e Schöggeli vom Cailler.',
+      beispiel_hd: 'Zum Espresso gibt es eine Praline vom Cailler.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-199',
+      ausdruck: 'Schuelmeischter',
+      hochdeutsch: 'Schulmeister / Lehrer',
+      bedeutung: 'Der „Schuelmeischter" ist im Alemannischen der Lehrer — die alte, ehrwürdige Bezeichnung. Auch heute noch verwendet, manchmal mit leichter Ironie für jemanden, der sich besserwisserisch verhält. „Der Schuelmeischter im Dorf!" Im Schwarzwald, in der Schweiz und im Elsass wurde der Schuelmeischter über Jahrhunderte respektiert — heute oft mit nostalgischem Beiklang.',
+      beispiel: 'De ehemaligi Schuelmeischter wohnt no immer im Dorf.',
+      beispiel_hd: 'Der ehemalige Schulmeister wohnt noch immer im Dorf.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-200',
+      ausdruck: 'Zwiebackboda',
+      hochdeutsch: 'Zwiebackboden / Tortenboden',
+      bedeutung: 'Der „Zwiebackboda" ist im Alemannischen ein Tortenboden aus zerbröselten Zwiebäcken — eine schnelle, einfache Bäckerei-Technik. „Mit Quark, Sahne und Beeren oben drauf — fertig isch d\'Torte!" Eine alemannische Hausfrauen-Tradition für Sommer-Desserts. Auch als „Bröselboda" bekannt. Praktisch, lecker, ohne aufwendiges Backen.',
+      beispiel: 'D\'Erdbeertorte mit Zwiebackboda isch mei Lieblings!',
+      beispiel_hd: 'Die Erdbeertorte mit Zwiebackboden ist mein Liebling!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-201',
+      ausdruck: 'Lottensuppe',
+      hochdeutsch: 'Lottensuppe / Wassrige Suppe',
+      bedeutung: 'Eine „Lottensuppe" ist im Alemannischen eine sehr wässrige, geschmacksarme Suppe — abwertend gemeint. „Des isch jo kei Suppe, des isch e Lottensuppe!" Vom Begriff „Lotter" (etwas Wertloses) abgeleitet. Im sparsamen Haushalt der alten Zeit wurden Suppen oft mit Wasser gestreckt — daher die abwertende Bezeichnung für zu dünn geratene Suppen.',
+      beispiel: 'In dem Restaurant gibt\'s nur Lottensuppe!',
+      beispiel_hd: 'In dem Restaurant gibt es nur wässrige Suppe!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-202',
+      ausdruck: 'Tüchli',
+      hochdeutsch: 'Tüchlein / Taschentuch',
+      bedeutung: 'Das „Tüchli" ist im Alemannischen ein kleines Tuch — oft das Taschentuch, manchmal auch das Geschirrtuch oder ein dekoratives Tüchlein. „Hesch e Tüchli für mi?" fragt man bei einer laufenden Nase. Stoff-Tüchli sind im alemannischen Raum noch verbreiteter als anderswo — nachhaltige Tradition. Die Verkleinerungsform „-li" macht aus dem alltäglichen Tuch etwas Persönliches.',
+      beispiel: 'Gib mir es Tüchli, mei Nase laafft.',
+      beispiel_hd: 'Gib mir ein Taschentuch, meine Nase läuft.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-203',
+      ausdruck: 'Brösmeli',
+      hochdeutsch: 'Krümel / Bröselchen',
+      bedeutung: 'Die „Brösmeli" sind im Alemannischen die Krümel — kleine Brotkrumen oder Kuchenkrümel. „Pass uf, dass nit so vil Brösmeli auf de Tisch fallen!" Eine warme, kleinformatige Beschreibung dessen, was vom Essen übrig bleibt. Auch als Bezeichnung für etwas sehr Geringes: „nit e Brösmeli wert" (keinen Krümel wert). Klangvolle Verkleinerung mit „-eli".',
+      beispiel: 'D\'Vögel fresse d\'Brösmeli, die i en Garte streu.',
+      beispiel_hd: 'Die Vögel fressen die Krümel, die ich in den Garten streue.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-204',
+      ausdruck: 'Lampe-Bier',
+      hochdeutsch: 'Lampenbier (Trinken vor dem Schlafengehen)',
+      bedeutung: 'Das „Lampe-Bier" ist im Alemannischen das letzte Bier am Abend, bevor die Lampe ausgeht — das Schlummertrünkchen. „Mer trinken no e Lampe-Bier, dann gönd mer is Bett." Eine warme alemannische Trinktradition: gemütlich zum Abschluss des Tages, kein Übermaß. Verbunden mit dem Konzept des „Stammtisch" und der gemütlichen Wirtshausabende.',
+      beispiel: 'Komm, mir trinken no es Lampe-Bier!',
+      beispiel_hd: 'Komm, wir trinken noch ein Schlummerbier!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-205',
+      ausdruck: 'Gschnegglet',
+      hochdeutsch: 'Geschneckelt / Lockig (Haare)',
+      bedeutung: '„Gschnegglet" beschreibt im Alemannischen lockige, sich kringelnde Haare — wie die Form einer Schnecke (Schnägg). „Lueg ihre gschnegglete Haar!" Eine bildhafte, plastische Beschreibung mit lautmalerischem Charakter. Auch übertragen für etwas Kunstvoll-Verziertes: „a gschneggleti Glasur" auf einer Torte. Charmante alemannische Wortbildung.',
+      beispiel: 'D\'Lina hat so schöni gschnegglete Lockle.',
+      beispiel_hd: 'Die Lina hat so schöne gelockte Locken.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-206',
+      ausdruck: 'Gartehag',
+      hochdeutsch: 'Gartenzaun / Gartenheck',
+      bedeutung: 'Der „Gartehag" ist im Alemannischen der Gartenzaun oder die Gartenhecke — die Begrenzung des Grundstücks. „Über de Gartehag schwätze" ist die alemannische Form des nachbarlichen Plausches. Klassische Treffsituation in Schweizer und südbadischen Dörfern: Nachbarn lehnen am Hag und tauschen Neuigkeiten aus. Eine soziale Institution.',
+      beispiel: 'Mer hen über de Gartehag mit em Nachbar gschwätzt.',
+      beispiel_hd: 'Wir haben über den Gartenzaun mit dem Nachbarn geschwätzt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-207',
+      ausdruck: 'Stüpfle',
+      hochdeutsch: 'Steifen / Lustern',
+      bedeutung: '„Stüpfle" bedeutet im Alemannischen aufmerksam, lustern oder begierig hinschauen — wenn jemand mit den Augen etwas verfolgt. „Stüpfle nit so, des isch unhöflich!" Auch im Sinne von „auflauern", „nachstellen". Eine bildhafte, anschauliche Wortprägung. Wenn ein Hund eine Wurst stüpfelt — er guckt sie sehnsüchtig an. Verwandt mit dem Verb „lugen" (luge, lugte).',
+      beispiel: 'De Hund stüpfelt mei Wurst!',
+      beispiel_hd: 'Der Hund schaut lustern auf meine Wurst!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-208',
+      ausdruck: 'Härdöpfelstock',
+      hochdeutsch: 'Kartoffelpüree',
+      bedeutung: 'Der „Härdöpfelstock" ist im Alemannischen und Schweizerdeutschen das Kartoffelpüree — wörtlich „Erd-Apfel-Stock" (vom „Härdöpfel" = Kartoffel und „Stock" als Bezeichnung für Brei). Ein Klassiker der schweizerisch-alemannischen Küche, oft mit Käse oder Röstzwiebeln verfeinert. Beilage zu Braten, Würsten oder als Hauptgericht mit Apfelmus.',
+      beispiel: 'Zum Bratwurscht gits Härdöpfelstock.',
+      beispiel_hd: 'Zur Bratwurst gibt es Kartoffelpüree.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-209',
+      ausdruck: 'Chribli',
+      hochdeutsch: 'Krippe / Weihnachtskrippe',
+      bedeutung: 'Die „Chribli" ist im Alemannischen die Weihnachtskrippe — die Darstellung der Geburt Jesu mit Maria, Josef, Jesuskind, Hirten und Tieren. Im katholisch geprägten alemannischen Raum (Südbaden, Schwarzwald, Vorarlberg) ist die Krippe wichtiger Teil der Weihnachts-Tradition. Viele Familien haben handgeschnitzte Krippen aus Holz. In Kirchen aufwendige Krippen-Aufbauten.',
+      beispiel: 'Die Chribli vom Großvater steht im Wuhnzimmer.',
+      beispiel_hd: 'Die Krippe vom Großvater steht im Wohnzimmer.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-210',
+      ausdruck: 'Vesperbrot',
+      hochdeutsch: 'Brotzeit / Pausenbrot',
+      bedeutung: 'Das „Vesperbrot" ist im Alemannischen die Brotzeit zwischen Hauptmahlzeiten — meist nachmittags, mit Brot, Wurst, Käse, Gurken. Im Schwarzwald und am Bodensee Tradition: nach der Wanderung gibt\'s im Berggasthof ein deftiges Vesperbrot. Auch als Schulpausenbrot der Kinder. „Vesper" leitet sich vom kirchlichen Vesper-Gebet ab — die Pause zwischen Tag und Abend.',
+      beispiel: 'Nach der Wanderung gits es zünftigs Vesperbrot im Berggasthof.',
+      beispiel_hd: 'Nach der Wanderung gibt es eine zünftige Brotzeit im Berggasthof.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-211',
+      ausdruck: 'Wiibervolk',
+      hochdeutsch: 'Frauen / Weibervolk',
+      bedeutung: '„Wiibervolk" ist im Alemannischen die volkstümliche Sammelbezeichnung für „die Frauen" — alemannisch-derb, aber meist nicht abwertend. „D\'Wiibervolk goht ge ratsche!" (Die Frauen gehen plaudern). Eine traditionelle Bezeichnung aus der ländlich-bäuerlichen Welt. Im modernen Sprachgebrauch eher humorvoll-altmodisch verwendet, oft mit Augenzwinkern in Mundart-Theater und Volkstheater.',
+      beispiel: 'S\'Wiibervolk hockt scho am Kafitisch.',
+      beispiel_hd: 'Die Frauen sitzen schon am Kaffeetisch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-212',
+      ausdruck: 'Mannsbild',
+      hochdeutsch: 'Mannsbild / Stattlicher Mann',
+      bedeutung: 'Ein „Mannsbild" ist im Alemannischen ein stattlicher Mann — meist mit positiver Konnotation für körperliche Präsenz und männliche Ausstrahlung. „A richtiges Mannsbild!" Verwandt mit dem süddeutschen Sprachgebrauch. In der traditionellen alemannischen Kultur wurde körperliche Stattlichkeit hoch geschätzt — der Bauer, der Holzfäller, der Wengerter braucht Kraft.',
+      beispiel: 'Der nei Burgermeischter isch a richtiges Mannsbild.',
+      beispiel_hd: 'Der neue Bürgermeister ist ein richtiges Mannsbild.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-213',
+      ausdruck: 'Schnudere',
+      hochdeutsch: 'Schniefen / Schnupfen haben',
+      bedeutung: '„Schnudere" ist im Alemannischen das Schniefen oder Schnupfen-Haben — das Verb zu „Pfnüsel". „D\'Goofe schnudere alle!" In den feuchten Schwarzwald-Wintern und am Bodensee weit verbreitet. Eine lautmalerische, charakteristische Wortprägung. Auch übertragen für emotional bewegt sein: „I bin scho ganz am schnudere wenn i die Musig hör!"',
+      beispiel: 'D\'Goofe schnudere de ganz Winter.',
+      beispiel_hd: 'Die Kinder schniefen den ganzen Winter.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-214',
+      ausdruck: 'Hackbeil',
+      hochdeutsch: 'Hackbeil / Holzaxt',
+      bedeutung: 'Das „Hackbeil" ist im Alemannischen die Holzaxt zum Hacken von Brennholz — unverzichtbares Werkzeug im Schwarzwald, wo viele Häuser noch mit Holz geheizt werden. „Mer goh ge Holz hacke mit em Hackbeil!" Auch in der Wendung „mit em Hackbeil dreinschloh" (mit dem Hackbeil reinhauen) — entschieden handeln. Verbunden mit der ländlich-handwerklichen Schwarzwald-Tradition.',
+      beispiel: 'S\'Hackbeil isch im Schopf.',
+      beispiel_hd: 'Das Hackbeil ist im Schuppen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-215',
+      ausdruck: 'Schopf',
+      hochdeutsch: 'Schuppen / Stall',
+      bedeutung: 'Der „Schopf" ist im Alemannischen ein Schuppen, ein angebauter Nebenraum oder kleiner Stall — meist für Werkzeug, Holz oder Vieh. „Im Schopf hed Großvater alles ufghoben!" Eine typische Anbau-Architektur an Schwarzwaldhäuser. Auch im Tessin und in Vorarlberg gebräuchlich. Eine alte alemannisch-baulastige Bezeichnung mit klangvollem Wegfall des End-„e".',
+      beispiel: 'Stell s\'Holz in de Schopf, dass es trocknet.',
+      beispiel_hd: 'Stell das Holz in den Schuppen, dass es trocknet.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-216',
+      ausdruck: 'Tüchel',
+      hochdeutsch: 'Geschirrtuch',
+      bedeutung: 'Das „Tüchel" ist im Alemannischen das Geschirrtuch — auch als Vorratstuch zum Aufbewahren von Brot. „Der schöne Tüchel mit em Stickerei!" Traditionell handgestickt und gehäkelt — eine alte Frauen-Handarbeitstradition. Im Schwarzwald gibt es noch viele alte Tüchel-Sammlungen. Verkleinerungsform „-el" oder „-eli" macht das Wort warm und vertraut.',
+      beispiel: 'Hol mer e frischs Tüchel us em Schrank.',
+      beispiel_hd: 'Hol mir ein frisches Geschirrtuch aus dem Schrank.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-217',
+      ausdruck: 'Buggel',
+      hochdeutsch: 'Buckel / Rücken',
+      bedeutung: 'Der „Buggel" ist im Alemannischen der Buckel, der Rücken — meistens mit Bezug auf körperliche Beschwerden. „Min Buggel tuat mer weh vom viele Schaffe!" Auch übertragen: „den Buggel oben halten" (durchhalten, nicht aufgeben). Eine plastische, bodenständige Bezeichnung aus der bäuerlichen Arbeitswelt, wo der Rücken oft schwer beansprucht wurde.',
+      beispiel: 'I han\'s im Buggel vom Holzhacke.',
+      beispiel_hd: 'Ich hab\'s im Rücken vom Holzhacken.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-218',
+      ausdruck: 'Heugeisel',
+      hochdeutsch: 'Heumann / Knochiger Mensch',
+      bedeutung: 'Eine „Heugeisel" ist im Alemannischen ein knochiger, dünner Mensch — wörtlich „Heu-Geisel" (so dürr wie eine Heuwächterstange). „Der Bua isch a richtige Heugeisel!" Eine plastische, bildhafte Beschreibung aus dem bäuerlichen Erfahrungsbereich. Mild bis spöttisch gebraucht. Eine typische alemannische Charakterisierung mit Naturbezug.',
+      beispiel: 'Der isch jo a richtige Heugeisel worde, der Schorsch!',
+      beispiel_hd: 'Der ist ja ein richtiger Dünnmann geworden, der Schorsch!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-219',
+      ausdruck: 'Schöggeli-Glace',
+      hochdeutsch: 'Schokoladen-Eis',
+      bedeutung: 'Das „Schöggeli-Glace" ist im Alemannischen und Schweizerdeutschen das Schokoladeneis — Verbindung von „Schöggeli" (Schokolade) und „Glace" (Eis, vom Französischen). „Für d\'Goofe gibt\'s Schöggeli-Glace zum Z\'vieri!" Die schweizerisch-südbadische Eis-Kultur ist hochentwickelt, mit Marken wie Mövenpick und vielen kleinen Gelaterias.',
+      beispiel: 'Im Summer iss i geern Schöggeli-Glace.',
+      beispiel_hd: 'Im Sommer esse ich gern Schokoladen-Eis.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-220',
+      ausdruck: 'Schnauz',
+      hochdeutsch: 'Schnurrbart',
+      bedeutung: 'Der „Schnauz" ist im Alemannischen der Schnurrbart — eine charakteristische, knappe Bezeichnung mit dem typischen Wegfall des End-„bart". „Mei Großvater hat en stolze Schnauz!" Im Schwarzwald war der Schnauz lange Zeit männliches Standes-Symbol. Heute mit der Hipster-Bart-Renaissance auch wieder modern.',
+      beispiel: 'Mit em weiße Schnauz sieht er sehr würdig us.',
+      beispiel_hd: 'Mit dem weißen Schnurrbart sieht er sehr würdig aus.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-221',
+      ausdruck: 'Müller',
+      hochdeutsch: 'Müller',
+      bedeutung: 'Der „Müller" ist im Alemannischen der Müller — Beruf des Getreidemahlens in einer Mühle. Im Schwarzwald gab es früher viele Mühlen — der Vogtsbauernhof-Hof in Gutach zeigt eine. Heute meist verschwunden, aber der Familienname „Müller" ist häufig. „D\'Müllers" sind eine traditionsreiche Familien-Bezeichnung. Auch in vielen Volksliedern und Märchen.',
+      beispiel: 'D\'Familie Müller hat scho seit 200 Johr d\'Mühle.',
+      beispiel_hd: 'Die Familie Müller hat schon seit 200 Jahren die Mühle.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-222',
+      ausdruck: 'Wiibervolksvereinigung',
+      hochdeutsch: 'Frauenvereinigung / Damenkreis',
+      bedeutung: 'Die „Wiibervolksvereinigung" ist eine humorvolle alemannische Bezeichnung für einen Frauenkreis, Damenkreis oder die katholische Frauengemeinschaft im Dorf. „D\'Wiibervolksvereinigung trifft sich am Donnerstig!" Verbreitete soziale Institution in alemannischen Dörfern. Bewahrer von Traditionen, Bräuchen und Festen. Mit warmem Augenzwinkern verwendet.',
+      beispiel: 'D\'Mama goht jede Woche zur Wiibervolksvereinigung.',
+      beispiel_hd: 'Die Mama geht jede Woche zur Frauenvereinigung.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-223',
+      ausdruck: 'Rinki',
+      hochdeutsch: 'Krummer Kerl / Schiefer Mann',
+      bedeutung: 'Ein „Rinki" ist im Alemannischen jemand mit krummem oder schiefem Körperbau — meist liebevoll-spöttisch gebraucht. „Mei Großvater isch en alte Rinki von der Arbet!" Eine plastische, körperliche Charakterisierung mit warmer Note. Die Verkleinerung „-i" milkst die Bedeutung. Verwandt mit „rink" (krumm).',
+      beispiel: 'Vom viele Holzhacke isch er en richtige Rinki worde.',
+      beispiel_hd: 'Vom vielen Holzhacken ist er ein richtiger Krummer geworden.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-224',
+      ausdruck: 'Choger',
+      hochdeutsch: 'Schwerer Husten',
+      bedeutung: 'Der „Choger" ist im Alemannischen und Schweizerdeutschen ein schwerer, bellender Husten — lautmalerisch wie das Geräusch selbst. „Der hat en richt\'gen Choger!" Verwandt mit dem Verb „chogere" (heftig husten). Im Schwarzwald-Winter eine häufige Erscheinung. Eine plastische, lautmalerische Wortprägung mit drastischem Klang.',
+      beispiel: 'D\'Erkältung hat mer en saumäßigen Choger gebracht.',
+      beispiel_hd: 'Die Erkältung hat mir einen saumäßigen Husten gebracht.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-225',
+      ausdruck: 'Geißbock',
+      hochdeutsch: 'Ziegenbock',
+      bedeutung: 'Der „Geißbock" ist im Alemannischen der männliche Ziegenbock — auch übertragen für einen sturen, störrischen Mann. „Der isch en richt\'ger Geißbock!" In den alemannischen Bergen weit verbreitetes Tier, mit charakteristischem Geruch. Auch der Geißbock als FC-Kölner-Maskottchen ist berühmt. Im Schwarzwald ein wichtiges Nutztier für Milch und Käse.',
+      beispiel: 'Mit em Geißbock zu reden isch wie mit\'m Schorsch.',
+      beispiel_hd: 'Mit dem Ziegenbock zu reden ist wie mit dem Schorsch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-226',
+      ausdruck: 'Tüpfeli',
+      hochdeutsch: 'Tüpfchen / Pünktchen',
+      bedeutung: 'Das „Tüpfeli" ist im Alemannischen und Schweizerdeutschen ein winziges Pünktchen — verwandt mit dem hochdeutschen „Tüpfchen". „Sie hat es Tüpfeli im Auge!" oder „Tüpflischiisser" (Pedant). Die Verkleinerung „-eli" gibt dem Wort warmen Klang. Eine zarte alemannische Wortbildung für etwas sehr Kleines, Präzises.',
+      beispiel: 'Auf de Bluse hat sie e schöns Tüpfeli-Muschter.',
+      beispiel_hd: 'Auf der Bluse hat sie ein schönes Punkte-Muster.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-227',
+      ausdruck: 'Hörnli',
+      hochdeutsch: 'Hörnchen (Nudeln)',
+      bedeutung: 'Die „Hörnli" sind im Alemannischen und Schweizerdeutschen die Hörnchen-Nudeln — kleine, gebogene Pasta. „Hörnli und G\'hacktes" ist ein Schweizer Klassiker (Hörnchen-Nudeln mit Hackfleisch-Sauce). Auch „Älplermagrone" enthält Hörnli. Eine warme, häusliche Tradition mit Verkleinerungs-Endung. Im Allgäu und in der Schweiz weit verbreitet.',
+      beispiel: 'Zum Mittagessen gibt\'s Hörnli mit Hackfleischsauce.',
+      beispiel_hd: 'Zum Mittagessen gibt es Hörnchen-Nudeln mit Hackfleischsauce.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-228',
+      ausdruck: 'Berghütte',
+      hochdeutsch: 'Berghütte / Alpine Hütte',
+      bedeutung: 'Die „Berghütte" ist im Alemannischen die Berghütte oder Alpine Hütte — Gasthaus oder Schutzhütte in den Bergen. Im Schwarzwald, in den Vorarlberger Alpen, in der Schweiz unverzichtbar für Wanderer. „Am Wochenend\' wandere mir zur Berghütte!" Klassische Berghütten-Atmosphäre: Holz, Kachelofen, Kässpätzle, Bier. Symbol für alpinen Tourismus und Wandertradition.',
+      beispiel: 'Auf dem Berg gibt\'s a Berghütte mit deftigem Esse.',
+      beispiel_hd: 'Auf dem Berg gibt es eine Berghütte mit deftigem Essen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-229',
+      ausdruck: 'Plagööri',
+      hochdeutsch: 'Aufschneider / Großmaul',
+      bedeutung: 'Ein „Plagööri" ist im Alemannischen und Schweizerdeutschen ein Aufschneider, Angeber oder Großmaul — einer, der mit seinen Taten oder Besitz prahlt. „Der Hans isch en richt\'ge Plagööri!" Vom französischen „plagiaire" beeinflusst. Eine charakteristische schweizerisch-alemannische Personencharakterisierung. Mit klarem Spott gebraucht.',
+      beispiel: 'Mit em Plagööri kannst keine ernste Sach mache.',
+      beispiel_hd: 'Mit dem Aufschneider kannst du keine ernste Sache machen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-230',
+      ausdruck: 'Schwarzwaldtörtli',
+      hochdeutsch: 'Kleine Schwarzwälder Torte',
+      bedeutung: 'Das „Schwarzwaldtörtli" ist die Verkleinerungsform der berühmten Schwarzwälder Kirschtorte — einzelne Portionsstücke oder Mini-Versionen. „Zum Kafi gits e Schwarzwaldtörtli!" In den Schwarzwald-Konditoreien beliebt. Mit der typischen alemannischen Verkleinerung „-li" wird selbst die Welt-berühmte Torte zur gemütlichen Kafi-Begleitung.',
+      beispiel: 'Beim Kondidor gibt\'s die feinste Schwarzwaldtörtli.',
+      beispiel_hd: 'Beim Konditor gibt es die feinsten Mini-Schwarzwälder Torten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-231',
+      ausdruck: 'Wii-Brünneli',
+      hochdeutsch: 'Wein-Brunnen',
+      bedeutung: 'Das „Wii-Brünneli" ist im Alemannischen ein kleiner Wein-Brunnen — manchmal bei Weinfesten als Spaß-Installation oder als Symbol für reichen Weinanbau. „Beim Wii-Fest gits sogar es Wii-Brünneli!" Im Badischen, Markgräflerland und in der Schweiz mit ausgeprägtem Weinanbau. Eine fantasievolle, charmante alemannische Wortprägung.',
+      beispiel: 'Im Weingut hen sie es Wii-Brünneli für d\'Verkostung.',
+      beispiel_hd: 'Im Weingut haben sie einen Wein-Brunnen für die Verkostung.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-232',
+      ausdruck: 'Bodensee-Wasser',
+      hochdeutsch: 'Bodensee-Wasser',
+      bedeutung: 'Das „Bodensee-Wasser" ist das klare Trinkwasser aus dem Bodensee — versorgt rund 4 Millionen Menschen in Süddeutschland mit Trinkwasser. Eine technische Meisterleistung der Bodenseewasserversorgung. „Mir trinke s\'beschte Bodensee-Wasser!" Wichtiges Symbol für die Trinkwasser-Reinheit des größten alemannischen Sees.',
+      beispiel: 'Stuttgart trinkt s\'Bodensee-Wasser durch e lange Leitung.',
+      beispiel_hd: 'Stuttgart trinkt das Bodensee-Wasser durch eine lange Leitung.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-233',
+      ausdruck: 'Schiibledächer',
+      hochdeutsch: 'Spitze Dächer',
+      bedeutung: 'Die „Schiibledächer" sind im Alemannischen die spitzen Schwarzwaldhausdächer — die charakteristischen tiefgezogenen Walmdächer, die die Schwarzwaldhäuser unverwechselbar machen. Lange Dachüberhänge schützen das Haus vor Wetter und Schnee. „D\'Schwarzwald-Schiibledächer sind weltberühmt!" Ein architektonisches Symbol des Schwarzwalds.',
+      beispiel: 'D\'Schiibledächer im Schwarzwald sind Wahrzeichen.',
+      beispiel_hd: 'Die spitzen Dächer im Schwarzwald sind Wahrzeichen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-234',
+      ausdruck: 'Bach',
+      hochdeutsch: 'Bach / Wasserlauf',
+      bedeutung: 'Der „Bach" ist im Alemannischen sowohl der Wasserlauf als auch ein häufiger Familienname. Im Schwarzwald und in den Alpen gibt es unzählige Bächlein und Bachläufe. „Mer goh am Bach Forelle fange!" Auch übertragen: „den Bach runter goh" (scheitern). Auch in vielen Ortsnamen: Achberg, Bachhuus, Bachweger. Eine zentrale alemannische Naturbezeichnung.',
+      beispiel: 'Im Bach hinter em Huus schwimmen Forelle.',
+      beispiel_hd: 'Im Bach hinter dem Haus schwimmen Forellen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-235',
+      ausdruck: 'Lebkueche',
+      hochdeutsch: 'Lebkuchen',
+      bedeutung: 'Die „Lebkueche" sind im Alemannischen die Lebkuchen — Weihnachtsgebäck aus Honig, Nüssen, Mandeln und Gewürzen. „Z\'Wiehnacht backe mir traditionell Lebkueche!" Im Alemannischen Raum mit deutlicher Nürnberger Tradition. Die Schwarzwald-Familien backen oft eigene Lebkueche-Rezepte über Generationen weiter. Klassisches Weihnachtsgebäck.',
+      beispiel: 'D\'Großmuatter backt jedes Johr e ganzi Charge Lebkueche.',
+      beispiel_hd: 'Die Großmutter backt jedes Jahr eine ganze Charge Lebkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-236',
+      ausdruck: 'Rumpelbahn',
+      hochdeutsch: 'Holperige Straße / Rumpelpiste',
+      bedeutung: 'Die „Rumpelbahn" ist im Alemannischen eine holperige, unebene Straße — meist eine ländliche Wegstrecke voller Schlaglöcher. „Auf der Rumpelbahn schaukelt jedes Auto!" Lautmalerisch — der Klang spiegelt das Geräusch des Fahrzeugs wieder. Eine plastische, bodenständige Wortprägung. Im Schwarzwald mit seinen Wald- und Bergstraßen weit verbreitete Realität.',
+      beispiel: 'D\'Strooß zum Hof isch a richtige Rumpelbahn.',
+      beispiel_hd: 'Die Straße zum Hof ist eine richtige Rumpelpiste.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-237',
+      ausdruck: 'Sennerei',
+      hochdeutsch: 'Käserei (alpin)',
+      bedeutung: 'Die „Sennerei" ist im Alemannischen die alpine Käserei — wo aus Berg-Milch der Käse hergestellt wird. „In der Sennerei mer guggen kann, wie sie Käs mache!" Im Schwarzwald, im Allgäu, in Vorarlberg und in der Schweiz hochaktuelle Tradition. Sennereien sind oft touristisch erschlossen — Besuchern wird der Käse-Herstellungsprozess gezeigt. Symbol für regionale Lebensmittelkunst.',
+      beispiel: 'D\'Sennerei im Oberallgäu macht den beste Bergkäs.',
+      beispiel_hd: 'Die Käserei im Oberallgäu macht den besten Bergkäse.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-238',
+      ausdruck: 'Stürmiwetter',
+      hochdeutsch: 'Sturm / Stürmisches Wetter',
+      bedeutung: 'Das „Stürmiwetter" ist im Alemannischen stürmisches, windiges Wetter — typisch im Herbst und Frühjahr in den Schwarzwald-Tälern und am Bodensee. „Bei dem Stürmiwetter blieb i deheim!" Eine lautmalerische Wortprägung mit dynamischem Klang. Die Bewohner der alemannischen Gebiete sind an Wetterumschwünge gewöhnt — Föhn, Bise, Stürmiwetter wechseln sich ab.',
+      beispiel: 'Heut isch Stürmiwetter, hol d\'Wäsch rein!',
+      beispiel_hd: 'Heute ist stürmisches Wetter, hol die Wäsche rein!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-239',
+      ausdruck: 'Heugümper',
+      hochdeutsch: 'Grashüpfer / Heuschrecke',
+      bedeutung: 'Die „Heugümper" sind im Alemannischen und Schweizerdeutschen die Grashüpfer oder Heuschrecken — wörtlich „Heu-Springer". „Im Summer hört mer d\'Heugümper im Gras!" Eine charmante, lautmalerische Wortprägung. In den alemannischen Wiesen weit verbreitet — Symbol für Sommerwiesen und Insektenleben. Verbunden mit kindlichen Erinnerungen an warme Sommertage.',
+      beispiel: 'D\'Goofe versuchen, d\'Heugümper z\'fange.',
+      beispiel_hd: 'Die Kinder versuchen, die Grashüpfer zu fangen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-240',
+      ausdruck: 'Spechtli',
+      hochdeutsch: 'Specht (klein)',
+      bedeutung: 'Das „Spechtli" ist im Alemannischen die Verkleinerung von „Specht" — ein kleiner Specht oder generell der Buntspecht. Im Schwarzwald mit seinen ausgedehnten Wäldern weit verbreitet. „Hörsch s\'Spechtli klopfe?" Die Verkleinerung „-li" gibt dem Tier einen warmen, vertrauten Klang. Beobachtbarer Waldbewohner, der mit seinem Hämmern den Wald belebt.',
+      beispiel: 'S\'Spechtli klopft am Lindabaum.',
+      beispiel_hd: 'Der kleine Specht klopft am Lindenbaum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-241',
+      ausdruck: 'Grüezi mitenand',
+      hochdeutsch: 'Hallo zusammen / Grüß euch alle',
+      bedeutung: 'Die klassische alemannisch-schweizerische Begrüßung an eine Gruppe — „grüezi" leitet sich von „Gott grüße Euch" ab, „mitenand" bedeutet „miteinander", also „alle zusammen". Im südbadischen Raum und in Vorarlberg ebenso geläufig wie in der Schweiz. „Wenn mer in d\'Wirtschaft kommt, sait mer Grüezi mitenand!" Die Höflichkeit gegenüber dem Kollektiv ist tief verwurzelt. Wer eintritt, ohne zu grüßen, gilt als grob.',
+      beispiel: 'Grüezi mitenand, isch no Platz am Tisch?',
+      beispiel_hd: 'Hallo zusammen, ist noch Platz am Tisch?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'al-242',
+      ausdruck: 'Schwarzwälder Schinka',
+      hochdeutsch: 'Schwarzwälder Schinken',
+      bedeutung: 'Der „Schwarzwälder Schinka" ist die ikonische Spezialität des südbadischen Schwarzwalds — Rohschinken, der mit Tannenzweigen kalt geräuchert und luftgetrocknet wird. „Bring vom Metzger e Stück Schwarzwälder Schinka mit!" Geschützte Ursprungsbezeichnung seit 1997. Wird hauchdünn aufgeschnitten zur Vesper mit Bauernbrot und einem Glas Schwarzwälder Kirschwasser gereicht. Symbol regionaler Identität, das weltweit exportiert wird.',
+      beispiel: 'Zum Vesper gits Schwarzwälder Schinka mit Bauernbrot.',
+      beispiel_hd: 'Zur Brotzeit gibt es Schwarzwälder Schinken mit Bauernbrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-243',
+      ausdruck: 'Bibbeleskäs',
+      hochdeutsch: 'Quark mit Kräutern und Zwiebeln',
+      bedeutung: 'Der „Bibbeleskäs" ist eine alemannisch-elsässische Spezialität — Quark, gewürzt mit Schnittlauch, Petersilie, Knoblauch und Zwiebeln, oft mit etwas Sahne verfeinert. „Bibbele" bedeutet „Küken" — der Name spielt darauf an, dass früher der Quark in einem Tuch wie ein Küken aufgehängt wurde, um abzutropfen. „Gits heut Bibbeleskäs mit Brägele?" Klassisches Vesperessen in Südbaden und im Elsass, meist mit Bratkartoffeln serviert. Bauerngericht mit jahrhundertealter Tradition.',
+      beispiel: 'Mit Brägele schmeckt Bibbeleskäs am bescht.',
+      beispiel_hd: 'Mit Bratkartoffeln schmeckt der Kräuterquark am besten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-244',
+      ausdruck: 'Flammekueche',
+      hochdeutsch: 'Flammkuchen',
+      bedeutung: 'Der „Flammekueche" ist die elsässisch-alemannische Spezialität — ein dünner Brotteig, belegt mit Schmand, Zwiebeln und Speck, gebacken bei höchster Hitze im Holzofen. „Mer gehn am Wuchenend zum Flammekueche-Esse!" Ursprünglich Resteverwertung der Bäcker, um die Temperatur des Ofens zu testen, bevor das Brot gebacken wurde. Heute Aushängeschild der elsässischen Küche. Wird mit den Fingern gegessen und Glas für Glas Riesling oder Edelzwicker dazu getrunken.',
+      beispiel: 'Im Sommer Flammekueche im Hof — was gits Schöners?',
+      beispiel_hd: 'Im Sommer Flammkuchen im Hof — was gibt es Schöneres?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-245',
+      ausdruck: 'Bähnli-Fahrer',
+      hochdeutsch: 'Schwarzwaldbahn-Pendler',
+      bedeutung: 'Der „Bähnli-Fahrer" ist im Schwarzwald scherzhaft jemand, der täglich mit der Schwarzwaldbahn pendelt — von Triberg, Hornberg oder St. Georgen nach Offenburg oder Villingen. „Mei Schwager isch a Bähnli-Fahrer — jeden Tag um sechs am Bahnhof!" Die Schwarzwaldbahn ist seit 1873 in Betrieb und eine der ältesten Steilstrecken Europas. Die Bähnli-Fahrer pflegen ihre eigene Subkultur — sie kennen jede Kurve, jeden Tunnel.',
+      beispiel: 'D\'Bähnli-Fahrer treffen sich jeden Morge im selben Wagga.',
+      beispiel_hd: 'Die Schwarzwaldbahn-Pendler treffen sich jeden Morgen im selben Waggon.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-246',
+      ausdruck: 'Hagebuche',
+      hochdeutsch: 'Hainbuche / sehr widerstandsfähiger Mensch',
+      bedeutung: 'Die „Hagebuche" ist im Alemannischen wörtlich die Hainbuche, ein zähes, hartes Holz. Übertragen sagt man von einem widerstandsfähigen, harten Menschen: „Der isch e richtige Hagebuche!" Die Verbindung zur Holzeigenschaft — Hainbuche ist eines der härtesten heimischen Hölzer und wurde früher für Werkzeugstiele und Hackblöcke verwendet. Die Metapher ist alt und stammt aus der bäuerlichen Welt. Auch der Schimpf „hagebuche Antwort" für eine grobe, unfeine Antwort kommt davon.',
+      beispiel: 'Die Großmuetter isch e Hagebuche — neunzig und no munter!',
+      beispiel_hd: 'Die Großmutter ist sehr widerstandsfähig — neunzig und noch munter!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-247',
+      ausdruck: 'Narrosprung',
+      hochdeutsch: 'Narrensprung (Fasnetsumzug)',
+      bedeutung: 'Der „Narrosprung" ist der traditionelle Umzug der Narrenzünfte in der schwäbisch-alemannischen Fasnet — vor allem in Rottweil berühmt. „Am Rosamändig isch d\'r Narrosprung!" Die Narren springen, hüpfen und tanzen in ihren historischen Häs durch die Gassen, oft Stunden lang. Der Rottweiler Narrosprung ist UNESCO-Weltkulturerbe seit 2014. Tausende Narren in kostbar bemalten Holzmasken, jede Figur — Gschell, Federahannes, Bisscherer — mit eigener Choreografie und Sprüchen.',
+      beispiel: 'Am Faasnetmonteg gehn mer zum Narrosprung in Rottweil.',
+      beispiel_hd: 'Am Fastnachtsmontag gehen wir zum Narrensprung in Rottweil.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-248',
+      ausdruck: 'Vogtsbur',
+      hochdeutsch: 'Vogtsbauer (Schwarzwaldbauer)',
+      bedeutung: 'Der „Vogtsbur" ist im Schwarzwald der traditionelle Bauer eines großen Schwarzwaldhofs — der Vogtsbauernhof in Gutach ist das berühmteste Beispiel und gibt dem Freilichtmuseum seinen Namen. „Die Vogtsbure hen früher allem selber gmacht — Brot, Speck, Möbel!" Symbol für die Selbstversorgung und Robustheit der Schwarzwaldbevölkerung. Das massive Schindeldach und der Rauchfang prägen das Bild. Heute steht der Vogtsbauernhof als Wahrzeichen des Schwarzwaldes.',
+      beispiel: 'Mei Großvatter war e Vogtsbur im Gutachtal.',
+      beispiel_hd: 'Mein Großvater war ein Schwarzwaldbauer im Gutachtal.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-249',
+      ausdruck: 'Trottoir',
+      hochdeutsch: 'Gehweg / Bürgersteig',
+      bedeutung: 'Das „Trottoir" ist im Alemannischen, besonders in Südbaden, im Elsass und in der Schweiz das Wort für den Gehweg — direkt aus dem Französischen entlehnt. „Bliib uf em Trottoir, sunscht fahrt dir d\'r Vélo um!" Zeigt den jahrhundertelangen Einfluss des Französischen auf den südwestdeutschen Dialekt. Während im übrigen Deutschland „Bürgersteig" oder „Gehweg" üblich ist, hält sich „Trottoir" in der alemannischen Sprachregion hartnäckig — Identitätsmarker der Grenzregion.',
+      beispiel: 'D\'Kinder rennen über s\'Trottoir zum Schuelhof.',
+      beispiel_hd: 'Die Kinder rennen über den Gehweg zum Schulhof.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-250',
+      ausdruck: 'Velo',
+      hochdeutsch: 'Fahrrad',
+      bedeutung: 'Das „Velo" ist im Alemannischen das Fahrrad — wieder ein Lehnwort aus dem Französischen (vélocipède). „I fahr mit em Velo zur Arbet." In Südbaden, Vorarlberg und der Schweiz ist „Velo" das Standardwort, während weiter nördlich „Fahrrad" vorherrscht. Zeigt die enge sprachliche Verbindung zur Westschweiz und zum Elsass. Auch zusammengesetzt: Velolade (Fahrradladen), Veloweg (Fahrradweg). Sprachlicher Marker für alemannische Zugehörigkeit.',
+      beispiel: 'S\'Velo isch kaputt, i muess s\'flicke.',
+      beispiel_hd: 'Das Fahrrad ist kaputt, ich muss es flicken.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-251',
+      ausdruck: 'Riesling-Schorle',
+      hochdeutsch: 'Riesling mit Sprudelwasser',
+      bedeutung: 'Die „Riesling-Schorle" ist im Markgräflerland und Kaiserstuhl ein klassisches Sommergetränk — trockener Riesling mit Mineralwasser gemischt, oft halb-halb. „Bei dere Hitz schmeckt e Riesling-Schorle am beschte!" Das südbadische Weinanbaugebiet bringt seit dem 16. Jahrhundert hervorragende Weißweine hervor. Die Schorle hat den Vorteil, dass man sie auch nachmittags trinken kann, ohne gleich angeheitert zu werden. Wird gerne im Strausswirtschaft oder Heckenwirt zu deftigem Vesper getrunken.',
+      beispiel: 'E Riesling-Schorle und e Bibbeleskäs — perfekt!',
+      beispiel_hd: 'Ein Riesling mit Sprudel und ein Kräuterquark — perfekt!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-252',
+      ausdruck: 'Hexehüsli',
+      hochdeutsch: 'Hexenhäuschen',
+      bedeutung: 'Das „Hexehüsli" ist im Alemannischen ein kleines, oft schiefes oder geheimnisvoll wirkendes Häuschen — angelehnt an die Märchen-Hexenhäuser. „Im Schwarzwald gits Hexehüsli, wo no Holzbrennöfen drinhocken." Die Wortbildung mit der Verkleinerungsendung „-li" und dem Bezug zur Hexe spielt mit dem reichen Schwarzwälder Sagenschatz — von der Hexe im Hotzenwald bis zur Wilden Jagd. Manche Schwarzwälder Berghütten werden so spöttisch oder liebevoll genannt.',
+      beispiel: 'S\'Großmuetters Hütte isch e richtigs Hexehüsli!',
+      beispiel_hd: 'Großmutters Hütte ist ein richtiges Hexenhäuschen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-253',
+      ausdruck: 'Häs',
+      hochdeutsch: 'Narrenkostüm (Fasnet)',
+      bedeutung: 'Das „Häs" ist in der schwäbisch-alemannischen Fasnet das traditionelle Narrenkostüm — bestehend aus Maske (Larve), Gewand und Beiwerk. „Mei Häs hab i vom Großvatter geerbt." Jede Narrenzunft hat ihr eigenes, charakteristisches Häs — vom Rottweiler Gschell mit Federn bis zum Elzacher Schuttig mit Schneckenhaus-Hut. Die Holzmasken werden von Maskenschnitzern handgefertigt und vererben sich oft über Generationen. Der Wert eines Häs kann mehrere tausend Euro betragen.',
+      beispiel: 'Vor d\'r Faasnet wird s\'Häs auspackt und glüftet.',
+      beispiel_hd: 'Vor der Fastnacht wird das Narrenkostüm ausgepackt und gelüftet.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-254',
+      ausdruck: 'Larve',
+      hochdeutsch: 'Holzmaske (Fasnet)',
+      bedeutung: 'Die „Larve" ist in der alemannischen Fasnet die handgeschnitzte Holzmaske, die Teil des Häs ist — anders als die maschinellen Karnevalsmasken anderer Regionen. „D\'Larve isch s\'Herz vom Häs!" Maskenschnitzer wie die Familien Diebold oder Glemser in Rottweil sind weithin bekannt. Jede Figur — Gschell, Hexe, Narro, Schuttig — hat ihre charakteristische Larve mit eigenen Gesichtszügen. Die Larven werden bis ans Lebensende getragen und sind oft Familienerbstücke.',
+      beispiel: 'D\'Larve hab i bim Schnitzer in Triberg machen lasse.',
+      beispiel_hd: 'Die Holzmaske habe ich beim Schnitzer in Triberg machen lassen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-255',
+      ausdruck: 'Strausswirtschaft',
+      hochdeutsch: 'Saisonale Hofschank der Winzer',
+      bedeutung: 'Die „Strausswirtschaft" ist im südbadischen und Markgräfler Weinland eine traditionelle, saisonale Gaststätte des Winzers — gekennzeichnet durch einen Strauß oder Reisigbesen über der Tür. „Im Herbst gehn mer zur Strausswirtschaft am Tuniberg." Diese Form geht auf eine Verordnung Karls des Großen zurück und ist bis heute lebendig. Es gibt einfaches Vesper — Wurst, Käse, Bauernbrot — und natürlich den eigenen Wein. Maximal vier Monate im Jahr geöffnet, dafür mit familiärer Atmosphäre.',
+      beispiel: 'D\'Strausswirtschaft hen jetz uf — hesch Luscht?',
+      beispiel_hd: 'Die Strausswirtschaft hat jetzt auf — hast du Lust?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-256',
+      ausdruck: 'Kachelofen',
+      hochdeutsch: 'Kachelofen',
+      bedeutung: 'Der „Kachelofen" ist im Schwarzwald und in Vorarlberg der traditionelle, mit Keramikkacheln verkleidete Holzofen in der Stube. „Im Winter sitzt d\'Großmuetter beim Kachelofen und strickt." Der Kachelofen speichert die Wärme stundenlang und ist Mittelpunkt des winterlichen Familienlebens. In den alten Schwarzwaldhöfen oft kunstvoll bemalt — mit Blumen, Bibelszenen oder Sprüchen. Die Sitzbank am Kachelofen, das „Kunscht", war der wärmste und beliebteste Platz im Haus.',
+      beispiel: 'Am Kachelofen wird s\'Brot vom Vortag warm gmacht.',
+      beispiel_hd: 'Am Kachelofen wird das Brot vom Vortag warm gemacht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-257',
+      ausdruck: 'Sauschwänzlebahn',
+      hochdeutsch: 'Wutachtalbahn (kurvenreich)',
+      bedeutung: 'Die „Sauschwänzlebahn" ist der volkstümliche Name der Wutachtalbahn von Blumberg nach Weizen im südlichen Schwarzwald — wegen ihrer kurvenreichen Streckenführung, die wie ein Schweineschwänzchen aussieht. „Mer fahren mit d\'r Sauschwänzlebahn dur d\'Schluchten!" 1890 als strategische Eisenbahn gebaut, heute Museumsbahn mit historischen Dampfloks. Vier Tunnels, zwei Kehrtunnels und sechs Viadukte machen die 25 Kilometer zu einem technischen Meisterwerk und Touristenmagnet.',
+      beispiel: 'D\'Sauschwänzlebahn isch e Erlebnis für d\'Kinder.',
+      beispiel_hd: 'Die Wutachtalbahn ist ein Erlebnis für die Kinder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-258',
+      ausdruck: 'Stubete',
+      hochdeutsch: 'Gemütlicher Stuben-Abend mit Musik',
+      bedeutung: 'Die „Stubete" ist im südlichen Alemannischen und in der Schweiz ein zwangloses geselliges Beisammensein in der Stube — mit Volksmusik, Gespräch und Speis. „D\'Stubete bim Schorsch isch immer luschtig — er spielt Akkordeon!" Klassisches Element der alemannischen Geselligkeit, bei dem improvisierte Musik, Schwänke und Lieder vermischt werden. Oft mit Most, Wein und Vesper. In Vorarlberg auch Teil der Hochzeitsbräuche. Lebendiges Gegenstück zum modernen Vereinsleben.',
+      beispiel: 'Am Samschdig isch Stubete bim Wirtschaft Kreuz.',
+      beispiel_hd: 'Am Samstag ist Stubenabend beim Gasthaus Kreuz.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-259',
+      ausdruck: 'Zwätschge',
+      hochdeutsch: 'Zwetschge / langweiliger Mensch',
+      bedeutung: 'D\'„Zwätschge" ist im Alemannischen einerseits die Zwetschge — die längliche, dunkelblaue Pflaume —, andererseits scherzhaft ein langweiliger, fader Mensch. „Sei doch keine Zwätschge, kumm mit ins Wirtshus!" Die Doppelbedeutung ist alt — die Zwetschge gilt als unspektakulär, im Gegensatz zur Kirsche oder Aprikose. Im Schwarzwald werden Zwätschge zu Wäschdler, Datschi und natürlich Zwetschgenwasser verarbeitet. Volkstümlich oft mit Schimpf gepaart: „lahme Zwätschge", „Zwätschgepoppi".',
+      beispiel: 'Im Garte hängen d\'Zwätschge no a de Bäum.',
+      beispiel_hd: 'Im Garten hängen die Zwetschgen noch an den Bäumen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-260',
+      ausdruck: 'Gluschtig',
+      hochdeutsch: 'Appetitlich / mit Appetit',
+      bedeutung: 'D\'Wort „gluschtig" ist im Alemannischen und Schweizerdeutschen die Beschreibung für etwas Appetitliches oder den Zustand, Hunger oder Lust auf etwas zu haben. „Dr Flammekueche sieht gluschtig us!" Leitet sich vom mittelhochdeutschen „glust" (Begierde, Verlangen) ab. Wird sowohl für Speisen verwendet als auch übertragen — „es macht mi gluschtig drauf". Charmantes alemannisches Wort, das mit dem hochdeutschen „lecker" nur teilweise übersetzbar ist, weil es auch die Sehnsucht ausdrückt.',
+      beispiel: 'D\'Wäschdler sehn gluschtig us — gits glei a Stuck?',
+      beispiel_hd: 'Die Pflaumenkuchen sehen appetitlich aus — gibt es gleich ein Stück?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-261',
+      ausdruck: 'Schmotziger Dunschtig',
+      hochdeutsch: 'Schmutziger Donnerstag (Fasnet)',
+      bedeutung: 'Der „Schmotzige Dunschtig" ist in der schwäbisch-alemannischen Fasnet der Donnerstag vor Aschermittwoch — Beginn der „Hohen Tage". „Am Schmotzige Dunschtig werden d\'Schüeler ausgschult und d\'Rathäuser gstürmt!" „Schmotzig" bedeutet hier nicht „dreckig", sondern leitet sich von „Schmotz" (Fett, Schmalz) ab — der Tag, an dem die fetten Krapfen gebacken werden. Hochburgen: Rottweil, Villingen, Elzach. Die Narren befreien die Schüler aus den Schulen und stürmen das Rathaus.',
+      beispiel: 'Am Schmotzige Dunschtig schließe d\'Geschäft scho um zwölfe.',
+      beispiel_hd: 'Am Schmutzigen Donnerstag schließen die Geschäfte schon um zwölf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-262',
+      ausdruck: 'Mehlbeere',
+      hochdeutsch: 'Eberesche / Vogelbeere',
+      bedeutung: 'D\'„Mehlbeere" ist im Alemannischen die Frucht der Eberesche oder ein verwandter Strauch — die orange-roten Beeren waren früher Notnahrung und werden heute zu Marmelade und Likör verarbeitet. „Im Herbscht sin d\'Mehlbeere reif." Die Bezeichnung kommt vom mehligen Geschmack der Frucht, wenn sie gekocht ist. Im Schwarzwald häufige Baumart, deren rote Beeren auch wichtige Vogelnahrung sind — daher der zweite Name Vogelbeere. Im Volksglauben symbolische Pflanze gegen Hexerei.',
+      beispiel: 'D\'Vögel reißen sich um d\'Mehlbeere im Garte.',
+      beispiel_hd: 'Die Vögel reißen sich um die Vogelbeeren im Garten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-263',
+      ausdruck: 'Kirschtorte',
+      hochdeutsch: 'Schwarzwälder Kirschtorte',
+      bedeutung: 'D\'„Kirschtorte" ist in Südbaden meist die berühmte Schwarzwälder Kirschtorte — Schokoladenbiskuit mit Sahne, Sauerkirschen und Kirschwasser, garniert mit Schokoladenraspeln. „Bring zum Geburtstag e Kirschtorte mit!" Die Komposition kam in den 1930er Jahren auf und wurde durch den Konditor Josef Keller in Bad Godesberg berühmt. Heute eine der bekanntesten deutschen Mehlspeisen weltweit. Im Schwarzwald gibt es streng nach Originalrezept das echte „Kirschwasser im Teig" — sonst ist es eben keine Schwarzwälder.',
+      beispiel: 'Am Sunntig gits Kirschtorte zum Kaffee.',
+      beispiel_hd: 'Am Sonntag gibt es Schwarzwälder Kirschtorte zum Kaffee.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-264',
+      ausdruck: 'Wäschdler',
+      hochdeutsch: 'Zwetschgenkuchen',
+      bedeutung: 'D\'„Wäschdler" ist im südbadischen Alemannisch der Zwetschgendatschi oder Zwetschgenkuchen — ein flacher Hefekuchen mit halbierten Zwetschgen belegt, mit Zucker und Zimt bestreut. „Im September gits jede Sunntig Wäschdler mit Schlagsahne!" Klassischer Spätsommer-Sonntagskuchen, der die reiche Zwetschgenernte verarbeitet. Mit warmer Schlagsahne oder Vanillesoße ein Genuss. Der Name leitet sich vermutlich von „wäschen" ab — die Früchte wurden vor dem Belegen gewaschen — oder von einer mundartlichen Variante von „Wäsche".',
+      beispiel: 'D\'Mutter bachet jeden Sunntig im September Wäschdler.',
+      beispiel_hd: 'Die Mutter bäckt jeden Sonntag im September Zwetschgenkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-265',
+      ausdruck: 'Loosen',
+      hochdeutsch: 'Zuhören / Lauschen',
+      bedeutung: 'D\'„loosen" ist im Alemannischen und Schweizerdeutschen das Wort für aufmerksam zuhören oder lauschen. „Loos amol, wer kummt da grad d\'Stäge runter!" Verwandt mit dem englischen „listen" und dem altdeutschen „losen". Wird sowohl im Imperativ verwendet — „Loos!" als auch beschreibend. Charakteristisches alemannisches Wort, das in keinem anderen Dialektraum so verwendet wird. Markiert die alemannische Sprachzugehörigkeit eindeutig. Auch in Sprichwörtern: „Wer nit looset, kann nit lerne."',
+      beispiel: 'Loos doch amol, was i dir saga will!',
+      beispiel_hd: 'Hör doch mal zu, was ich dir sagen will!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-266',
+      ausdruck: 'Klepfer',
+      hochdeutsch: 'Knaller / Knallkörper',
+      bedeutung: 'Der „Klepfer" ist im Alemannischen ein Knallkörper oder Feuerwerksböller — wörtlich vom Geräusch „klepfen" (knallen) abgeleitet. „An Silvester werden d\'Klepfer auf d\'Stroß gworfe!" Auch in Vorarlberg geläufig. Übertragen kann „Klepfer" auch eine sensationelle Nachricht oder einen lauten Schlag meinen — „Das war e Klepfer!" Die Lautmalerei ist im Alemannischen besonders ausgeprägt. Im Volksbrauch werden Klepfer auch zum Vertreiben des Winters bei Fasnet verwendet.',
+      beispiel: 'D\'Buben hen Klepfer gworfe und sin ververvor.',
+      beispiel_hd: 'Die Jungen haben Knallkörper geworfen und sind verschwunden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-267',
+      ausdruck: 'Schaffe',
+      hochdeutsch: 'Arbeiten',
+      bedeutung: 'D\'Wort „schaffe" ist im Alemannischen das normale Wort für „arbeiten" — ohne den dramatischen Beiklang des hochdeutschen „schuften". „I muess go schaffe!" Bezeichnend für die alemannische Arbeitsethik, die in Sprichwörtern wie „Schaffe, schaffe, Häusle baue" sprichwörtlich geworden ist. Wird für jede Form von Tätigkeit gebraucht — Hausarbeit, Beruf, Garten. „Was schaffsch du?" ist die alemannische Standardfrage nach dem Beruf. Auch substantiviert: „d\'Schaffe" — die Arbeit, der Job.',
+      beispiel: 'Mei Mann schafft uf em Bau in Freiburg.',
+      beispiel_hd: 'Mein Mann arbeitet auf dem Bau in Freiburg.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-268',
+      ausdruck: 'Dotscher',
+      hochdeutsch: 'Tollpatschiger / unbeholfener Mensch',
+      bedeutung: 'Der „Dotscher" ist im südbadischen Alemannisch ein tollpatschiger, ungeschickter Mensch — jemand, der überall anstößt und Dinge fallen lässt. „Sei doch nit so a Dotscher, do isch s\'Glas an d\'Bode!" Wahrscheinlich von „dotsche" (klatschen, einen Klaps geben) abgeleitet. Wird meist gutmütig spöttisch verwendet, ohne tiefe Beleidigung. Auch das Verb „dotsche" für unbeholfen-laut auftreten. In Vorarlberg gibt es ähnliche Formen wie „Datschi" oder „Datschmichel".',
+      beispiel: 'Der Dotscher hat scho wieder d\'Vase umgworfa!',
+      beispiel_hd: 'Der Tollpatsch hat schon wieder die Vase umgeworfen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-269',
+      ausdruck: 'Heimat-Verein',
+      hochdeutsch: 'Heimatverein / Trachtenverein',
+      bedeutung: 'Der „Heimat-Verein" ist im Schwarzwald und im Markgräflerland eine zentrale Institution der dörflichen Gemeinschaft — Pflege von Tracht, Brauchtum, Volkstanz und Dialekt. „D\'r Heimat-Verein organisiert s\'Sommerfescht und d\'Lichterprozession!" In jedem Dorf gibt es mindestens einen — oft seit dem 19. Jahrhundert, als die Industrialisierung die alten Sitten bedrohte. Träger der Bollenhut-Tradition, der Trachtenfeste und der mundartlichen Pflege. Die Vereine sind generationenübergreifend organisiert.',
+      beispiel: 'D\'Großmuetter isch scho sechzig Johr im Heimat-Verein.',
+      beispiel_hd: 'Die Großmutter ist schon sechzig Jahre im Heimatverein.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-270',
+      ausdruck: 'Bollenhut',
+      hochdeutsch: 'Bollenhut (Schwarzwälder Tracht)',
+      bedeutung: 'Der „Bollenhut" ist die ikonische Kopfbedeckung der Schwarzwälder Frauentracht aus Gutach, Kirnbach und Hornberg — ein Strohhut mit großen, runden Wollkugeln („Bollen"). „Junge Frauen tragen rote Bolle, verheiratete schwarze!" Seit dem 18. Jahrhundert getragen, weltberühmt durch Postkarten und Tourismus. Die roten Bollen waren bis zur Hochzeit Zeichen der ledigen Frau. Die Tracht ist heute UNESCO-immaterielles Kulturerbe und wird bei Festen, Trauungen und Prozessionen getragen. Symbol des Schwarzwaldes schlechthin.',
+      beispiel: 'Bei d\'r Trachteprozesion träg sie ihre rote Bollenhut.',
+      beispiel_hd: 'Bei der Trachtenprozession trägt sie ihren roten Bollenhut.',
+      kategorie: 'feiern'
     }
   ]
 };

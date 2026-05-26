@@ -9,12 +9,15 @@ export default {
   farbe: '#d62828',
   beschreibung: 'Schweizerdeutsch ist keine einheitliche Sprache, sondern eine Sammlung alemannischer Mundarten. Im Schweizer Alltag dominant — Hochdeutsch wird nur geschrieben oder mit Ausländern gesprochen. Charakteristisch sind der Kehlkopflaut „ch", weiche Konsonanten und der singende Tonfall.',
   sprecher: 'ca. 5 Mio.',
+  lang: 'de-CH',
   ausdruecke: [
     {
       id: 'ch-001',
       ausdruck: 'Grüezi',
       hochdeutsch: 'Hallo (formell)',
       bedeutung: 'Die schweizerische Höflichkeitsbegrüßung. Im Plural: „Grüezi mitenand!". In Bern auch „Grüessech".',
+      beispiel: 'Grüezi mitenand, schön dass Sie da sind!',
+      beispiel_hd: 'Hallo zusammen, schön dass Sie da sind!',
       kategorie: 'begruessung'
     },
     {
@@ -22,6 +25,8 @@ export default {
       ausdruck: 'Merci vielmal',
       hochdeutsch: 'Vielen Dank',
       bedeutung: 'Schweizerdeutsche Dankesformel — französisches „merci" plus deutsches „vielmal". Sehr typisch für den frankophonen Einfluss.',
+      beispiel: 'Merci vielmal für d\'Hilf, gäll!',
+      beispiel_hd: 'Vielen Dank für die Hilfe!',
       kategorie: 'begruessung'
     },
     {
@@ -29,27 +34,26 @@ export default {
       ausdruck: 'Velo',
       hochdeutsch: 'Fahrrad',
       bedeutung: 'Schweizerdeutsch für Fahrrad (vom französischen „vélo"). In der ganzen Deutschschweiz Standard, kaum jemand sagt „Fahrrad".',
+      beispiel: 'Ich chum mit em Velo zur Arbeit.',
+      beispiel_hd: 'Ich komme mit dem Fahrrad zur Arbeit.',
       kategorie: 'alltag'
     },
     {
       id: 'ch-004',
       ausdruck: 'Znüni',
       hochdeutsch: 'Vormittagssnack',
-      bedeutung: 'Die Zwischenmahlzeit um 9 Uhr — ein Brötchen, Apfel oder Müsli. Wichtig im Schweizer Tagesablauf.',
+      bedeutung: 'Der „Znüni" ist die Schweizer Zwischenmahlzeit um 9 Uhr — ein Gipfeli, Apfel oder Müsli. Wichtig im Schweizer Tagesablauf und in vielen Betrieben fester Pausenbestandteil.',
+      beispiel: 'Hesch öich es Gipfeli zum Znüni gha?',
+      beispiel_hd: 'Hattet ihr ein Croissant als Vormittagssnack?',
       kategorie: 'essen'
     },
     {
       id: 'ch-005',
       ausdruck: 'Zvieri',
       hochdeutsch: 'Nachmittagssnack',
-      bedeutung: 'Die Zwischenmahlzeit um 16 Uhr. Schwester des „Znüni". Klassisch: Brot mit Käse oder Schokolade.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'ch-006',
-      ausdruck: 'Müesli',
-      hochdeutsch: 'Müsli',
-      bedeutung: 'Erfunden um 1900 vom Schweizer Arzt Bircher-Benner: Haferflocken, Milch, Apfel, Nüsse. Heute weltweites Frühstück.',
+      bedeutung: 'Der „Zvieri" ist die Schweizer Zwischenmahlzeit um 16 Uhr — Schwester des „Znüni". Klassisch: Brot mit Käse, Schoggi oder ein Stück Obst. Fester Bestandteil des Schweizer Alltags.',
+      beispiel: 'Zum Zvieri git\'s hüt Brot mit Schoggi.',
+      beispiel_hd: 'Als Nachmittagssnack gibt es heute Brot mit Schokolade.',
       kategorie: 'essen'
     },
     {
@@ -57,6 +61,8 @@ export default {
       ausdruck: 'Coiffeur',
       hochdeutsch: 'Friseur',
       bedeutung: 'Schweizerdeutsch (aus dem Französischen) für den Friseur/die Friseurin. Klassisches Helvetismus.',
+      beispiel: 'Ich gang am Samschtig zum Coiffeur.',
+      beispiel_hd: 'Ich gehe am Samstag zum Friseur.',
       kategorie: 'menschen'
     },
     {
@@ -64,13 +70,17 @@ export default {
       ausdruck: 'Trottoir',
       hochdeutsch: 'Bürgersteig / Gehweg',
       bedeutung: 'Aus dem Französischen — in der Schweiz Standardwort für den Gehweg. „Geh ufs Trottoir!".',
+      beispiel: 'D\'Velöfahrer söted nöd ufem Trottoir fahre.',
+      beispiel_hd: 'Die Fahrradfahrer sollten nicht auf dem Bürgersteig fahren.',
       kategorie: 'orte'
     },
     {
       id: 'ch-009',
       ausdruck: 'Chuchichäschtli',
       hochdeutsch: 'Küchenschrank',
-      bedeutung: 'Das berühmte „Stolper-Wort" — Test für jeden Nicht-Schweizer. Drei Kehlkopflaute hintereinander. Wer das aussprechen kann, gehört dazu.',
+      bedeutung: 'Das „Chuchichäschtli" (= Küchenschrank) ist das berühmte Schweizer Stolper-Wort — Test für jeden Nicht-Schweizer. Drei Kehlkopflaute hintereinander. Wer das aussprechen kann, gehört dazu.',
+      beispiel: 'Säg du das Wort „Chuchichäschtli" mal richtig us!',
+      beispiel_hd: 'Sprich du das Wort „Küchenschrank" auf Schweizerdeutsch mal richtig aus!',
       kategorie: 'orte'
     },
     {
@@ -87,6 +97,8 @@ export default {
       ausdruck: 'Tschüss / Adieu',
       hochdeutsch: 'Tschüss / Auf Wiedersehen',
       bedeutung: '„Adieu" (formell) oder „Tschüss/Tschau" (informell). Auch „Uf Widerluege" im Berndeutschen.',
+      beispiel: 'Adieu mitenand, bis morn!',
+      beispiel_hd: 'Tschüss zusammen, bis morgen!',
       kategorie: 'begruessung'
     },
     {
@@ -94,6 +106,8 @@ export default {
       ausdruck: 'Rüebli',
       hochdeutsch: 'Karotte / Möhre',
       bedeutung: 'Schweizerdeutsch für die Karotte. Auch in der „Rüeblitorte" — einer Schweizer Karottenkuchen-Spezialität.',
+      beispiel: 'D\'Rüeblitorte vo dä Grossmuetter isch d\'beschti.',
+      beispiel_hd: 'Der Karottenkuchen von der Großmutter ist der beste.',
       kategorie: 'essen'
     },
     {
@@ -101,6 +115,8 @@ export default {
       ausdruck: 'Gipfeli',
       hochdeutsch: 'Croissant',
       bedeutung: 'Schweizerdeutsches Wort für Croissant (= „Hörnchen"). Ein klassisches Frühstücksgebäck.',
+      beispiel: 'Zum Zmorge nimmt sie immer es Gipfeli mit Kaffi.',
+      beispiel_hd: 'Zum Frühstück nimmt sie immer ein Croissant mit Kaffee.',
       kategorie: 'essen'
     },
     {
@@ -108,6 +124,8 @@ export default {
       ausdruck: 'Schoggi',
       hochdeutsch: 'Schokolade',
       bedeutung: 'Eigentlich klar: Schoggi ist Schoggi. Schweizer Schokolade ist weltberühmt — Lindt, Toblerone, Cailler.',
+      beispiel: 'Magsch es Stückli Schoggi zum Kaffi?',
+      beispiel_hd: 'Magst du ein Stück Schokolade zum Kaffee?',
       kategorie: 'essen'
     },
     {
@@ -115,6 +133,8 @@ export default {
       ausdruck: 'es chunt scho guet',
       hochdeutsch: 'es kommt schon gut',
       bedeutung: 'Schweizerische Beruhigungsphrase — vergleichbar mit dem kölschen „Et hätt noch immer jot jejange". Eine gelassene Lebenshaltung.',
+      beispiel: 'Mach dir kei Sorge, es chunt scho guet!',
+      beispiel_hd: 'Mach dir keine Sorgen, es kommt schon gut!',
       kategorie: 'redensart'
     },
     {
@@ -122,6 +142,8 @@ export default {
       ausdruck: 'Stübli',
       hochdeutsch: 'Gaststube',
       bedeutung: 'Eine gemütliche Gaststube oder ein kleines Wirtshaus. Klein, persönlich, oft mit Stammtisch und regionaler Küche.',
+      beispiel: 'Mir gönd nachher no is Stübli für es Bier.',
+      beispiel_hd: 'Wir gehen nachher noch in die Gaststube für ein Bier.',
       kategorie: 'orte'
     },
     {
@@ -176,15 +198,6 @@ export default {
       bedeutung: 'Der Schweizer Zopf ist ein buttrig-weiches, geflochtenes Hefegebäck — das klassische Sonntagsfrühstücksbrot der Deutschschweiz. Traditionell wird er nur am Sonntag gegessen und frisch beim Bäcker gekauft. Die Flechtmuster variieren je nach Kanton. Zum Zopf gehört unbedingt reichlich Butter und manchmal Konfitüre.',
       beispiel: 'Am Sunntig gönd mir zum Bäcker und chaufe en Zopf.',
       beispiel_hd: 'Am Sonntag gehen wir zum Bäcker und kaufen einen Zopf.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'ch-023',
-      ausdruck: 'Cailler',
-      hochdeutsch: 'Schweizer Schokoladenmarke (aus Broc/Freiburg)',
-      bedeutung: 'Cailler ist eine der ältesten Schweizer Schokoladenmarken — 1819 in Corsier gegründet, heute in Broc im Kanton Freiburg produziert. Bekannt für die Rayon-Schokolade mit Honig und Mandeln. Die Cailler-Fabrik in Broc bietet eine beliebte Erlebnistour an, die durch die Geschichte der Schweizer Schokolade führt. Für viele Schweizer ist Cailler die Kindheits-Schokolade schlechthin.',
-      beispiel: 'Ich han en Cailler-Rayon als Dankeschön mitbrocht.',
-      beispiel_hd: 'Ich habe eine Cailler-Rayon als Dankeschön mitgebracht.',
       kategorie: 'essen'
     },
     {
@@ -354,6 +367,8 @@ export default {
       ausdruck: 'de Züriberg',
       hochdeutsch: 'Der Zürichberg (Wohnlage der Wohlhabenden)',
       bedeutung: 'Der Zürichberg ist der bewaldete Hügelzug östlich der Stadt Zürich — und eine der exklusivsten Wohnlagen der Schweiz. Villen, Botschaften und wohlhabende Familien prägen das Bild. „Am Züriberg wohne" ist ein Statussymbol. Das Wort steht im Volksmund für Reichtum, Abgehobenheit und die gesellschaftliche Elite Zürichs.',
+      beispiel: 'Är wohnt am Züriberg — natürli isch er rich.',
+      beispiel_hd: 'Er wohnt am Zürichberg — natürlich ist er reich.',
       kategorie: 'orte'
     },
     {
@@ -372,15 +387,6 @@ export default {
       bedeutung: 'Das Rütli ist eine Wiese am Vierwaldstättersee im Kanton Uri — der legendäre Gründungsort der Schweizer Eidgenossenschaft von 1291. Hier soll der Rütlischwur der Urkantone stattgefunden haben. Das Rütli ist heute Nationalheiligtum und Ausflugsziel, per Schiff erreichbar. Am 1. August (Nationalfeiertag) versammeln sich dort Bundesräte und Bürger zur Feier.',
       beispiel: 'Am Erstauguscht fahred mir übers See zum Rüütli.',
       beispiel_hd: 'Am Ersten August fahren wir über den See zum Rütli.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'ch-045',
-      ausdruck: 'Bahnhofstrasse',
-      hochdeutsch: 'Die Zürcher Bahnhofstrasse (Luxuseinkaufsmeile)',
-      bedeutung: 'Die Bahnhofstrasse in Zürich ist eine der teuersten Einkaufsstraßen der Welt — Luxusuhren, Banken, Modegeschäfte und der berühmte Sprüngli-Confiseur. Sie verbindet den Hauptbahnhof mit dem Zürichsee. „An de Bahnhofstrass go go luege" ist ein Erlebnis für Einheimische und Touristen gleichermaßen — auch wenn man sich das Kaufen oft nicht leisten kann oder will.',
-      beispiel: 'A de Bahnhofstross go schlecke isch tüürer als de ganz Urlaub.',
-      beispiel_hd: 'An der Bahnhofstrasse einkaufen ist teurer als der ganze Urlaub.',
       kategorie: 'orte'
     },
     {
@@ -409,15 +415,6 @@ export default {
       beispiel: 'Dä Luca isch so en geile Siech — der hilft immer.',
       beispiel_hd: 'Der Luca ist so ein toller Typ — der hilft immer.',
       kategorie: 'menschen'
-    },
-    {
-      id: 'ch-049',
-      ausdruck: 'Bundesrat',
-      hochdeutsch: 'Schweizer Kollegialregierung (7 Mitglieder)',
-      bedeutung: 'Der Schweizer Bundesrat besteht aus sieben Mitgliedern, die gemeinsam regieren — ohne Kanzler oder Premierminister. Das Präsidium rotiert jährlich. Dieses Kollegialprinzip ist einzigartig in der Welt und Ausdruck der Schweizer Konsensdemokratie. Bundesräte aller großen Parteien sitzen zusammen und müssen nach außen eine gemeinsame Linie vertreten — das Konkordanzprinzip.',
-      beispiel: 'De Bundesrat hät hüt über d\'Teuerung diskutiert.',
-      beispiel_hd: 'Der Bundesrat hat heute über die Teuerung diskutiert.',
-      kategorie: 'arbeit'
     },
     {
       id: 'ch-050',
@@ -463,15 +460,6 @@ export default {
       beispiel: 'D\'SBB chunt immer pünktlich — meischtens, oder?',
       beispiel_hd: 'Die SBB kommt immer pünktlich — meistens, oder?',
       kategorie: 'orte'
-    },
-    {
-      id: 'ch-055',
-      ausdruck: 'Älplermagronen',
-      hochdeutsch: 'Bauernbohnen-Kartoffel-Makkaroni-Gericht',
-      bedeutung: '„Älplermagronen" ist ein traditionelles Schweizer Bergbauernessen: Makkaroni, Kartoffeln, Zwiebeln, Speck und Käse — alles zusammen gekocht und mit Apfelmus serviert. Stammt aus den Älplerhütten, wo die wenigen verfügbaren Zutaten kreativ kombiniert wurden. Heute ist es Komfortessen in der ganzen Deutschschweiz — billig, sättigend und unwiderstehlich. Echte Älplermagronen gibt es nur ohne Béchamelsauce!',
-      beispiel: 'Bi minere Grosi gits am Mittwuch Älplermagrone — herrlich.',
-      beispiel_hd: 'Bei meiner Grossmutter gibt es am Mittwoch Älplermagronen — herrlich.',
-      kategorie: 'essen'
     },
     {
       id: 'ch-056',
@@ -708,33 +696,6 @@ export default {
       kategorie: 'natur'
     },
     {
-      id: 'ch-082',
-      ausdruck: 'Heidi',
-      hochdeutsch: 'Heidi (Schweizer Kinderbuch-Heldin)',
-      bedeutung: 'Heidi ist die berühmteste Schweizer Buchfigur überhaupt — erfunden von Johanna Spyri (1827–1901), die ihr Buch „Heidis Lehr- und Wanderjahre" 1880 veröffentlichte. Die Geschichte des Waisenmädchens, das beim Alpöhi in den Bündner Bergen aufwächst, wurde in über 50 Sprachen übersetzt und unzählige Male verfilmt — japanische Anime-Version besonders berühmt. Das Heididorf in Maienfeld ist Touristenattraktion.',
-      beispiel: 'Heidi und der Alpöhi — d\'Schwiiz im Kinderbuech.',
-      beispiel_hd: 'Heidi und der Alpöhi — die Schweiz im Kinderbuch.',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'ch-083',
-      ausdruck: 'Wilhelm Tell',
-      hochdeutsch: 'Wilhelm Tell (Schweizer Nationalheld)',
-      bedeutung: 'Wilhelm Tell ist der legendäre Schweizer Nationalheld — soll im 14. Jahrhundert mit der Armbrust einen Apfel vom Kopf seines Sohnes geschossen und damit gegen den habsburgischen Vogt Gessler aufbegehrt haben. Friedrich Schillers Drama „Wilhelm Tell" (1804) machte ihn weltberühmt. Die Tellsplatte am Vierwaldstättersee ist sein angeblicher Sprung-Ort. Ob Tell wirklich existiert hat, ist umstritten — als Symbol für Schweizer Freiheit jedenfalls bleibt er.',
-      beispiel: 'De Wilhelm Tell het em Gessler Trotz boote.',
-      beispiel_hd: 'Der Wilhelm Tell hat dem Gessler getrotzt.',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'ch-084',
-      ausdruck: 'Capuns',
-      hochdeutsch: 'Bündner Capuns (Mangoldrouladen)',
-      bedeutung: 'Capuns sind eine Bündner Spezialität: Spätzleteig mit Speckwürfeln und Salsiz (Bündner Rohwurst) wird in Mangoldblätter gerollt, in Brühe pochiert und dann mit Käse-Sahne-Sauce überbacken. Ein deftiges Gericht aus der Berggastronomie. Capuns sind so typisch Graubünden wie das Bündnerfleisch oder die Nusstorte. Jedes Bergdorf hat seine eigene Rezeptvariation. UNESCO-Anwärter für immaterielles Kulturerbe.',
-      beispiel: 'I Graubünde gits Capuns — viel besser als jede Pasta.',
-      beispiel_hd: 'In Graubünden gibt es Capuns — viel besser als jede Pasta.',
-      kategorie: 'essen'
-    },
-    {
       id: 'ch-085',
       ausdruck: 'Vacherin',
       hochdeutsch: 'Vacherin Mont d\'Or (Schweizer Weichkäse)',
@@ -742,15 +703,6 @@ export default {
       beispiel: 'Im Winter en warme Vacherin mit Härdöpfel — Hochgenuss.',
       beispiel_hd: 'Im Winter ein warmer Vacherin mit Pellkartoffeln — Hochgenuss.',
       kategorie: 'essen'
-    },
-    {
-      id: 'ch-086',
-      ausdruck: 'Lauberhorn',
-      hochdeutsch: 'Lauberhorn (Skirennen in Wengen)',
-      bedeutung: 'Das Lauberhornrennen in Wengen (Berner Oberland) ist das längste Skirennen der Welt — über 4,5 km lang. Seit 1930 wird hier jedes Jahr im Januar gefahren. Die Abfahrtsstrecke ist legendär: das Hundschopf, der Brüggli-S, die Kernen-S. Geschwindigkeiten bis zu 160 km/h. Schweizer Sieger wie Bernhard Russi, Pirmin Zurbriggen oder Beat Feuz sind Nationalhelden. Das Lauberhornrennen zieht 50.000 Zuschauer an.',
-      beispiel: 'S\'Lauberhornrennen isch d\'Hochzyt vo de Schwiizer Ski-Fans.',
-      beispiel_hd: 'Das Lauberhornrennen ist die Hochzeit der Schweizer Ski-Fans.',
-      kategorie: 'sport'
     },
     {
       id: 'ch-087',
@@ -870,15 +822,6 @@ export default {
       kategorie: 'arbeit'
     },
     {
-      id: 'ch-100',
-      ausdruck: 'Hörnli',
-      hochdeutsch: 'Hörnli (kleine gebogene Pasta)',
-      bedeutung: 'Hörnli sind eine schweizerische Pasta-Form — kleine, gebogene Röhren, ähnlich den italienischen Maccheroni. Sie sind die Grundlage zahlreicher Schweizer Gerichte, allen voran „Älplermagronen" (Hörnli mit Kartoffeln, Käse, Speck und Apfelmus). Auch „Hörnli mit Hackfleisch" ist ein Schweizer Familien-Klassiker. Der Name stammt von der hornartig gebogenen Form. Aus jedem Schweizer Vorratsschrank nicht wegzudenken.',
-      beispiel: 'Hörnli mit Ghackets und Apfelmues — mis Lieblingsgricht!',
-      beispiel_hd: 'Hörnli mit Hackfleisch und Apfelmus — mein Lieblingsgericht!',
-      kategorie: 'essen'
-    },
-    {
       id: 'ch-101',
       ausdruck: 'Bundesbrief',
       hochdeutsch: 'Bundesbrief (Schweizer Gründungsurkunde)',
@@ -901,8 +844,8 @@ export default {
       ausdruck: 'Saaserwii',
       hochdeutsch: 'Saaserwein / Walliser Weisswein',
       bedeutung: 'Der „Saaserwii" — auch „Heida" oder „Païen" genannt — ist eine alte Walliser Weisswein-Rebsorte, die in den höchstgelegenen Weinbergen Europas wächst (Visperterminen, bis 1150 m). Trocken, mineralisch, mit komplexer Aromatik. Eine der ältesten Rebsorten Europas — möglicherweise von den Römern eingeführt. Wallis ist Schweizer Weinkanton Nr. 1 mit Spezialitäten wie Heida, Cornalin, Humagne. Echte Schweizer Weintradition.',
-      beispiel: 'En Heida us Visperterminen — pures Wallis im Glas.',
-      beispiel_hd: 'Ein Heida aus Visperterminen — pures Wallis im Glas.',
+      beispiel: 'En Saaserwii us Visperterminen — pures Wallis im Glas.',
+      beispiel_hd: 'Ein Saaserwein aus Visperterminen — pures Wallis im Glas.',
       kategorie: 'essen'
     },
     {
@@ -1135,8 +1078,8 @@ export default {
       ausdruck: 'Schwingen-WM',
       hochdeutsch: 'Eidgenössisches Schwingfest',
       bedeutung: 'Das „Eidgenössische Schwingfest" (kurz „ESAF") findet alle drei Jahre statt — der Höhepunkt des Schwingens, der Schweizer Nationalsportart. Über 250 Schwinger ringen in Sägemehlringen, die Gewinner werden zum „Schwingerkönig" gekrönt. Bis zu 350.000 Zuschauer am Wochenende — größtes Sport-Open-Air Europas! Der Preis: ein lebender Muni (Stier). Brienz, Burgdorf, Estavayer-le-Lac waren Austragungsorte. Mehr Volksfest als Wettkampf — Schweizer Tradition pur.',
-      beispiel: 'Bim ESAF chunnt ds halbi Land z\'säme.',
-      beispiel_hd: 'Beim Eidgenössischen kommt das halbe Land zusammen.',
+      beispiel: 'A de Schwingen-WM chunnt ds halbi Land z\'säme.',
+      beispiel_hd: 'An der Schwingen-WM kommt das halbe Land zusammen.',
       kategorie: 'sport'
     },
     {
@@ -1146,15 +1089,6 @@ export default {
       bedeutung: '„Hornussen" ist ein einzigartiger Schweizer Nationalsport, ähnlich Cricket/Baseball — vor allem im Berner Mittelland gespielt. Ein Spieler („Stöcker") schlägt mit langer Rute eine Hartgummi-Nuss (Hornuss) Richtung Gegner-Mannschaft, die mit Schindeln (Schaufeln) den Flug abwehren muss. Stammt aus dem 17. Jahrhundert. Höhepunkt ist das „Eidgenössische Hornusserfest". Klingt skurril, ist ernsthafter Sport mit Vereinen und Liga. Schweizer Volkssport-Eigenheit.',
       beispiel: 'Im Bärnbiet wird no Hornuss gschpilt.',
       beispiel_hd: 'Im Berner Land wird noch Hornussen gespielt.',
-      kategorie: 'sport'
-    },
-    {
-      id: 'ch-131',
-      ausdruck: 'HC Davos',
-      hochdeutsch: 'HC Davos (Eishockey)',
-      bedeutung: 'Der „HC Davos" (HCD, gegründet 1921) ist der traditionsreichste Schweizer Eishockey-Verein. 31 Schweizermeister-Titel — Rekord! Spielt im Vaillant Arena Davos. Jedes Jahr Gastgeber des „Spengler Cups" (seit 1923), das älteste internationale Eishockeyturnier der Welt — Heimspiel zwischen Weihnachten und Neujahr. Internationale Stars wie Joe Thornton und Henrik Zetterberg spielten hier. Schweizer Eishockey-Hochburg. Wintersport-Tradition.',
-      beispiel: 'Am Spengler Cup spielt jedes Jahr de HC Davos.',
-      beispiel_hd: 'Am Spengler Cup spielt jedes Jahr der HC Davos.',
       kategorie: 'sport'
     },
     {
@@ -1234,8 +1168,8 @@ export default {
       ausdruck: 'Bundesfeier',
       hochdeutsch: 'Schweizer Bundesfeier (1. August)',
       bedeutung: 'Die „Bundesfeier" am 1. August ist der Schweizer Nationalfeiertag, eingeführt 1891 zum 600-jährigen Jubiläum der Eidgenossenschaft. Höhenfeuer auf jedem Berg, Lampions, Bundesrats-Rede auf der Rütli-Wiese und in den Gemeinden. Cervelat-Bratwurst grillen, Schweizerfahnen schwenken, Glockengeläut um 20 Uhr. Bürgerlich gefeiert, weniger pathetisch als andere Nationalfeiern. Schweizer Bundesidentität in einer Nacht. Private und öffentliche Feuerwerke (mittlerweile reglementiert).',
-      beispiel: 'Am erste Augschte mached mir Höhefüür.',
-      beispiel_hd: 'Am ersten August machen wir Höhenfeuer.',
+      beispiel: 'A de Bundesfeier mached mir Höhefüür und gränne Cervelats.',
+      beispiel_hd: 'An der Bundesfeier machen wir Höhenfeuer und grillen Cervelats.',
       kategorie: 'orte'
     },
     {
@@ -1324,8 +1258,8 @@ export default {
       ausdruck: 'Direkti Demokratie',
       hochdeutsch: 'Direkte Demokratie',
       bedeutung: 'Die „Direkti Demokratie" ist das Schweizer Politik-Kernmerkmal — Bürger entscheiden in Volksabstimmungen direkt über Sachfragen (4x pro Jahr). Volksinitiativen (100\'000 Unterschriften) und Referenden (50\'000) erlauben Bürgereinfluss auf Verfassungs- und Gesetzesebene. Weltweit einzigartig in dieser Intensität — über 600 Abstimmungen seit 1848. Gemeindeebene oft direkt über Versammlung. Trotz Langsamkeit Stabilitätsfaktor. Schweizer Politikidentität: nicht Repräsentation, sondern Mitbestimmung. „Souverän" ist das Volk.',
-      beispiel: 'I de Schwiz wird über alles abgschtimmt.',
-      beispiel_hd: 'In der Schweiz wird über alles abgestimmt.',
+      beispiel: 'Dank de direkti Demokratie wird i de Schwiz über alles abgschtimmt.',
+      beispiel_hd: 'Dank der direkten Demokratie wird in der Schweiz über alles abgestimmt.',
       kategorie: 'arbeit'
     },
     {
@@ -1608,48 +1542,12 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'ch-182',
-      ausdruck: 'Fondue',
-      hochdeutsch: 'Käsefondue',
-      bedeutung: 'Das „Fondue" ist Schweizer Nationalgericht Nummer 1 — geschmolzener Käse (Vacherin, Gruyère) in dem Brotwürfel getunkt werden. „Wer das Brot verliert, muss eine Runde Wein zahlen!" Tradition seit dem 18. Jahrhundert. „Caquelon" als Topf, „Rechaud" als Brennstelle. Symbol für Schweizer Geselligkeit. In der Wintersaison Klassiker. Auch Fleischfondue oder Schokoladenfondue verbreitet.',
-      beispiel: 'Zum Znacht gibts Fondue mit Vacherin.',
-      beispiel_hd: 'Zum Abendessen gibt es Fondue mit Vacherin.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'ch-183',
-      ausdruck: 'Raclette',
-      hochdeutsch: 'Raclette (Käse-Spezialität)',
-      bedeutung: 'Das „Raclette" ist Schweizer Käse-Spezialität aus dem Wallis — geschmolzener Käse über Pellkartoffeln, Cornichons und Silberzwiebeln. Tradition seit dem 13. Jahrhundert. „Raclette-Käse" wird über offenem Feuer geschmolzen, traditionell. Heute mit Raclette-Grill als Familien-Essen. Symbol für Schweizer Bergküche. Mit Weißwein serviert.',
-      beispiel: 'Raclette mit der Familie an Silvester!',
-      beispiel_hd: 'Raclette mit der Familie an Silvester!',
-      kategorie: 'essen'
-    },
-    {
       id: 'ch-184',
       ausdruck: 'Müesli',
       hochdeutsch: 'Müsli (Schweizer Erfindung)',
       bedeutung: 'Das „Müesli" wurde 1900 vom Schweizer Arzt Maximilian Bircher-Benner erfunden — Haferflocken mit Äpfeln, Nüssen, Honig, Milch. „Bircher-Müesli" als Originalname. Symbol für Schweizer Gesundheitsbewusstsein und Reformkost-Tradition. Heute weltweit als „Muesli" bekannt. „Müesli zum Zmorge" als Schweizer Standard. Bircher-Benner-Klinik in Zürich legendär.',
       beispiel: 'Müesli zum Zmorge — gsund und feiss!',
       beispiel_hd: 'Müsli zum Frühstück — gesund und sättigend!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'ch-185',
-      ausdruck: 'Cervelat',
-      hochdeutsch: 'Cervelat (Schweizer Wurst)',
-      bedeutung: 'Der „Cervelat" ist DIE Schweizer Wurst — kurze, dicke Brühwurst, oft gegrillt oder roh gegessen. „Cervelat-Schweiz" — Symbol für Schweizer Esskultur. Beim Bergwandern, beim Grillieren, beim Apero allgegenwärtig. Stammt aus dem 16. Jahrhundert. „Cervelat-Crisis" wenn der brasilianische Lieferant für Wursthüllen ausfiel (2006). Symbol für Schweizer Identität.',
-      beispiel: 'A Cervelat zum Grillieren am Wochenend!',
-      beispiel_hd: 'Eine Cervelat zum Grillen am Wochenende!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'ch-186',
-      ausdruck: 'Toblerone',
-      hochdeutsch: 'Toblerone (Schweizer Schokolade)',
-      bedeutung: 'Die „Toblerone" ist berühmte Schweizer Schokolade — dreieckig wie das Matterhorn, mit Mandelnougat. 1908 in Bern erfunden von Theodor Tobler. Symbol für Schweizer Schokolade-Tradition. Auf jedem Schweizer Flughafen-Duty-Free. Touristen-Souvenir Nummer 1. „Toblerone-Crisis" 2016 als die Stückchen kleiner wurden — Schweizer Drama.',
-      beispiel: 'A Toblerone aus em Duty-Free!',
-      beispiel_hd: 'Eine Toblerone aus dem Duty-Free!',
       kategorie: 'essen'
     },
     {
@@ -1680,24 +1578,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'ch-190',
-      ausdruck: 'Sackmesser',
-      hochdeutsch: 'Schweizer Taschenmesser',
-      bedeutung: 'Das „Sackmesser" — Schweizer Taschenmesser, weltberühmt „Swiss Army Knife" — wurde 1891 von Karl Elsener erfunden (Victorinox). Mit Klinge, Schraubenzieher, Korkenzieher, Schere und mehr. Symbol für Schweizer Präzision und Erfindergeist. Jedes Schweizer Kind bekommt eines. Auch international Kultobjekt. „Sackmesser in der Hosentasche" als Schweizer Identität.',
-      beispiel: 'Mit em Sackmesser chasch alles repariere!',
-      beispiel_hd: 'Mit dem Taschenmesser kannst du alles reparieren!',
-      kategorie: 'alltag'
-    },
-    {
-      id: 'ch-191',
-      ausdruck: 'Postauto',
-      hochdeutsch: 'Postauto (Schweizer Bus)',
-      bedeutung: 'Das „Postauto" ist legendärer gelber Schweizer Bus — fährt zuverlässig in jedes Bergdorf. Tradition seit 1906. „Postauto-Dreiklangshorn" („Du-da-do") als Symbol — von Rossinis Wilhelm Tell. Schweizer Pünktlichkeit auf Rädern. Symbol für Schweizer Verkehrs-Infrastruktur und Erreichbarkeit. Touristen lieben es. Auch in den höchsten Alpenpässen.',
-      beispiel: 's\'Postauto fahrt sogar i jedes Bergdorf!',
-      beispiel_hd: 'Das Postauto fährt sogar in jedes Bergdorf!',
-      kategorie: 'orte'
-    },
-    {
       id: 'ch-192',
       ausdruck: 'Schwiizer Bank',
       hochdeutsch: 'Schweizer Bank',
@@ -1725,33 +1605,6 @@ export default {
       kategorie: 'musik'
     },
     {
-      id: 'ch-195',
-      ausdruck: 'Jodel',
-      hochdeutsch: 'Jodel (Gesangstechnik)',
-      bedeutung: 'Der „Jodel" ist Schweizer Gesangstradition — schneller Wechsel zwischen Brust- und Kopfstimme. Tradition aus dem 18. Jahrhundert. „Jodel-Klubs" in vielen Schweizer Dörfern. „Jodelfest" als Volksfest. Symbol für Schweizer Bergkultur und Volksmusik. Auch in Tirol und Bayern verbreitet, aber Schweizer Jodel-Stil ist eigen. Heinrich Hediger als bekannter Jodler.',
-      beispiel: 'Im Jodelchörli sind 40 Sänger.',
-      beispiel_hd: 'Im Jodelchörle sind 40 Sänger.',
-      kategorie: 'musik'
-    },
-    {
-      id: 'ch-196',
-      ausdruck: 'Sennenhund',
-      hochdeutsch: 'Bernhardiner / Sennenhund',
-      bedeutung: 'Der „Sennenhund" — vor allem Berner Sennenhund und Bernhardiner — ist Schweizer Hunderasse. Bernhardiner als legendärer Rettungshund am Sankt-Gotthard-Pass. „Barry der Bernhardiner" rettete 40 Menschenleben. Symbol für Schweizer Treue und Bergwelt. Berner Sennenhund als Familienhund weltweit beliebt. Tradition als Schutz- und Zughund auf Schweizer Bauernhöfen.',
-      beispiel: 'Der Bernhardiner Barry isch a Held!',
-      beispiel_hd: 'Der Bernhardiner Barry ist ein Held!',
-      kategorie: 'natur'
-    },
-    {
-      id: 'ch-197',
-      ausdruck: 'Bundesrat',
-      hochdeutsch: 'Schweizer Bundesrat (Regierung)',
-      bedeutung: 'Der „Bundesrat" ist die siebenköpfige Schweizer Regierung — Kollegialprinzip, jährlich rotierende Präsidentschaft. Bekannte Bundesräte: Adolf Ogi, Christoph Blocher, Doris Leuthard. Symbol für Schweizer Konsens-Demokratie und politische Stabilität. „Bundesrat-Wahl" alle 4 Jahre durch das Parlament. Schweizer Politik durch Direktdemokratie geprägt.',
-      beispiel: 'Der Bundesrat hat 7 Mitglieder.',
-      beispiel_hd: 'Der Bundesrat hat 7 Mitglieder.',
-      kategorie: 'arbeit'
-    },
-    {
       id: 'ch-198',
       ausdruck: 'Volksabstimmung',
       hochdeutsch: 'Volksabstimmung',
@@ -1770,48 +1623,12 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'ch-200',
-      ausdruck: 'Sechseläuten',
-      hochdeutsch: 'Sechseläuten (Zürcher Frühlingsfest)',
-      bedeutung: '„Sechseläuten" ist Zürcher Frühlingsfest — am dritten Montag im April wird der „Böögg" (Schneemann) auf dem Sechseläutenplatz verbrannt. Je schneller der Kopf des Bööggs explodiert, desto schöner wird der Sommer. Tradition seit 1818. Symbol für Zürcher Identität. Festumzug mit den Zürcher Zünften. Stadt-Feiertag. Touristen-Magnet.',
-      beispiel: 'Z\'Sechseläuten verbrenne mer de Böögg!',
-      beispiel_hd: 'Zum Sechseläuten verbrennen wir den Böögg!',
-      kategorie: 'feiern'
-    },
-    {
       id: 'ch-201',
       ausdruck: 'Streetparade',
       hochdeutsch: 'Streetparade (Zürcher Techno-Parade)',
       bedeutung: 'Die „Streetparade" ist Zürcher Techno-Parade — größte Techno-Parade Europas. Tradition seit 1992. 800.000 Besucher am zweiten Samstag im August. „Love Mobiles" mit DJs ziehen am Zürichsee entlang. Symbol für Zürcher Underground und internationale Techno-Szene. Friedlich und multikulturell. Touristen-Magnet.',
       beispiel: 'Z\'Streetparade isch jährlich a Mega-Event!',
       beispiel_hd: 'Zur Streetparade ist jährlich ein Mega-Event!',
-      kategorie: 'feiern'
-    },
-    {
-      id: 'ch-202',
-      ausdruck: 'Bundesbrief',
-      hochdeutsch: 'Bundesbrief (Schweizer Gründung)',
-      bedeutung: 'Der „Bundesbrief" von 1291 ist Schweizer Gründungsdokument — Bund der Urkantone Uri, Schwyz, Unterwalden. Wilhelm-Tell-Mythos darum gebaut. „Rütlischwur" als legendärer Schwur auf der Rütliwiese. 1. August als Schweizer Nationalfeiertag. Symbol für Schweizer Nationalgeschichte. Im Bundesbrief-Museum in Schwyz ausgestellt.',
-      beispiel: 'Der Bundesbrief isch s\'Gründungsdokument vu d\'Schwiiz.',
-      beispiel_hd: 'Der Bundesbrief ist das Gründungsdokument der Schweiz.',
-      kategorie: 'feiern'
-    },
-    {
-      id: 'ch-203',
-      ausdruck: 'Wilhelm Tell',
-      hochdeutsch: 'Wilhelm Tell (Schweizer Nationalheld)',
-      bedeutung: '„Wilhelm Tell" ist Schweizer Nationalheld — legendärer Armbrustschütze, der den Apfel auf dem Kopf seines Sohnes schoss. Symbol für Schweizer Freiheitsliebe gegen Habsburger Tyrannei. Friedrich Schiller schrieb das berühmte Drama. Rossinis Wilhelm-Tell-Ouvertüre weltberühmt. Symbol für Schweizer Mythos. Historisch nicht eindeutig belegt, aber kulturell zentral.',
-      beispiel: 'Wilhelm Tell hat de Apfel vum Sohn gschosse!',
-      beispiel_hd: 'Wilhelm Tell hat den Apfel vom Sohn geschossen!',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'ch-204',
-      ausdruck: 'Rütlischwur',
-      hochdeutsch: 'Rütlischwur (Schweizer Mythos)',
-      bedeutung: 'Der „Rütlischwur" ist legendärer Schwur auf der Rütliwiese 1291 — drei Schweizer Eidgenossen schwören Bund gegen Habsburger. „Eidgenosse" als Begriff stammt von hier. Symbol für Schweizer Demokratie-Tradition und Freiheits-Mythos. Touristen besuchen die Rütliwiese am Vierwaldstättersee. Historisch fraglich, kulturell zentral.',
-      beispiel: 'Der Rütlischwur isch a Schweizer Mythos!',
-      beispiel_hd: 'Der Rütlischwur ist ein Schweizer Mythos!',
       kategorie: 'feiern'
     },
     {
@@ -1822,15 +1639,6 @@ export default {
       beispiel: 'D\'Chind springet in d\'Glunggi!',
       beispiel_hd: 'Die Kinder springen in die Pfütze!',
       kategorie: 'natur'
-    },
-    {
-      id: 'ch-206',
-      ausdruck: 'Bsetzistei',
-      hochdeutsch: 'Kopfsteinpflaster',
-      bedeutung: '„Bsetzistei" ist Schweizer Wort für Kopfsteinpflaster — typisch in Altstädten wie Bern, Zürich, Luzern. „Über Bsetzistei laufen" macht müde. Symbol für Schweizer Altstadt-Charme. Touristen finden\'s romantisch, Anwohner manchmal lästig (Lärm, Pflege). Im Hochdeutschen weniger gebräuchlich.',
-      beispiel: 'Mit High Heels uf em Bsetzistei isch hart!',
-      beispiel_hd: 'Mit High Heels auf dem Kopfsteinpflaster ist hart!',
-      kategorie: 'orte'
     },
     {
       id: 'ch-207',
@@ -1867,6 +1675,546 @@ export default {
       beispiel: 'Auf Schwiizer Münzen steht Helvetia.',
       beispiel_hd: 'Auf Schweizer Münzen steht Helvetia.',
       kategorie: 'orte'
+    },
+    {
+      id: 'ch-211',
+      ausdruck: 'Schmöckerli',
+      hochdeutsch: 'Kleines Buch / Schmöker',
+      bedeutung: 'Das „Schmöckerli" ist im Schweizerdeutschen ein kleines, gemütliches Buch zum Lesen — meist ein Roman oder eine spannende Geschichte. „Für die Bahnfahrt nehm i mer es Schmöckerli mit!" Die Schweiz hat eine starke Lesekultur — Migros-Klubschule-Bücher, Pestalozzi-Bibliotheken, viele kleine Buchhandlungen. Die Verkleinerung „-erli" macht das Buch zur intimen Begleitung.',
+      beispiel: 'I han mer es neues Schmöckerli für d\'Ferien chouft.',
+      beispiel_hd: 'Ich habe mir ein neues Büchlein für die Ferien gekauft.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-212',
+      ausdruck: 'Gigampfi',
+      hochdeutsch: 'Wippe / Schaukel',
+      bedeutung: 'Die „Gigampfi" ist im Schweizerdeutschen eine Wippe oder Schaukel — beliebtes Kinderspielzeug auf jedem Schweizer Spielplatz. „D\'Chind spilen uf de Gigampfi!" Eine lautmalerische, fröhliche Wortprägung. Auch übertragen: „uf de Gigampfi sitzen" (zwischen zwei Entscheidungen schwanken). Charmante schweizerdeutsche Doppelbedeutung.',
+      beispiel: 'D\'Goofe gönd id Gigampfi spilen.',
+      beispiel_hd: 'Die Kinder gehen auf die Wippe spielen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-213',
+      ausdruck: 'Buusi',
+      hochdeutsch: 'Katze (Kosewort)',
+      bedeutung: 'Die „Buusi" ist im Schweizerdeutschen eine zärtliche Bezeichnung für die Katze — vor allem als Kosewort beim Locken. „Buusi-Buusi, chum her!" Auch verallgemeinert für jedes schnurrende Tier. Eine warme, kindliche Wortprägung. Verbreitet in Schweizer Haushalten mit Katzen. Eine alternative liebevolle Form zur „Chatz".',
+      beispiel: 'Wo isch min Buusi? Chum her, ich hett es Fressi!',
+      beispiel_hd: 'Wo ist meine Mieze? Komm her, ich hab ein Fressen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-214',
+      ausdruck: 'Sürmel',
+      hochdeutsch: 'Spinner / Verrückter Mensch',
+      bedeutung: 'Ein „Sürmel" ist im Schweizerdeutschen ein verrückter, eigensinniger oder lustiger Mensch — meist mit warmem Spott gebraucht. „Mein Bruder isch a richt\'ge Sürmel!" Vom Verb „surmeln" (sich seltsam verhalten). Eine charmante, schweizerische Personencharakterisierung mit Augenzwinkern. Verbreitet in der Alltagssprache.',
+      beispiel: 'Was isch das für ä Sürmel?',
+      beispiel_hd: 'Was ist das für ein Spinner?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-215',
+      ausdruck: 'Glättisen',
+      hochdeutsch: 'Bügeleisen',
+      bedeutung: 'Das „Glättisen" ist im Schweizerdeutschen das Bügeleisen — vom Verb „glätte" (glätten, bügeln). „D\'Hosen muss ich no glätten mit em Glättisen!" Eine alltägliche, praktische Wortprägung. Verbreitet in Schweizer Haushalten. Verbunden mit der traditionellen Wäschepflege. Charakteristisch schweizerdeutsche Wortbildung.',
+      beispiel: 'Hol mer s\'Glättisen us em Schrank!',
+      beispiel_hd: 'Hol mir das Bügeleisen aus dem Schrank!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-216',
+      ausdruck: 'Schiibe',
+      hochdeutsch: 'Scheibe / Fensterscheibe',
+      bedeutung: 'Die „Schiibe" ist im Schweizerdeutschen die Scheibe — Fenster-, Brot-, oder Auto-Scheibe. „D\'Schiibe vom Auto isch dreckig!" Auch in Komposita: „Brotschiibe" (Brotscheibe), „Schibä-Wischer" (Scheibenwischer). Eine alltägliche schweizerische Vokabel mit klangvoller Doppel-„i"-Aussprache. Verbreitet in vielen Kontexten.',
+      beispiel: 'D\'Sunne schint dur d\'Schiibe.',
+      beispiel_hd: 'Die Sonne scheint durch die Scheibe.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-217',
+      ausdruck: 'Räbeliechtli-Umzug',
+      hochdeutsch: 'Rübenlaternen-Umzug (November-Brauch)',
+      bedeutung: 'Der „Räbeliechtli-Umzug" ist eine schweizerische Tradition im November — Kinder ziehen mit aus Speiserüben geschnitzten Laternen durch die Dörfer. „D\'Räbeliechtli-Umzüge sind viel älter als d\'Halloween-Kürbisse!" Ein Vorläufer von Halloween, aber genuin schweizerisch. Im Zürcher Raum besonders gepflegt. Charmante Herbsttradition.',
+      beispiel: 'Mer schnitze d\'Räbeliechtli für de Umzug.',
+      beispiel_hd: 'Wir schnitzen die Rübenlaternen für den Umzug.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-218',
+      ausdruck: 'Müesli-Frueschtuck',
+      hochdeutsch: 'Müsli-Frühstück',
+      bedeutung: 'Das „Müesli-Frueschtuck" ist die schweizerische Frühstücks-Tradition — Müsli mit Joghurt, Quark, frischen Beeren, Honig. „Zum Frueschtuck imer es Müesli-Frueschtuck!" Das Original-Bircher-Müesli wurde 1900 in Zürich erfunden — heute weltweit verbreitet. Im Schweizerischen Sprachgebrauch unverkennbar mit „Müesli" statt „Müsli".',
+      beispiel: 'Mit dem Müesli-Frueschtuck bin ich jeden Tag fit!',
+      beispiel_hd: 'Mit dem Müsli-Frühstück bin ich jeden Tag fit!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-219',
+      ausdruck: 'Bibeli',
+      hochdeutsch: 'Küken',
+      bedeutung: 'Die „Bibeli" sind im Schweizerdeutschen die Küken — die jungen, frisch geschlüpften Hühnchen. „D\'Henne hed Bibeli usgheckt!" Auf Schweizer Bauernhöfen klassische Beobachtung. Auch im Frühling auf vielen Wochenmärkten zu sehen. Die zärtliche Verkleinerung „-eli" macht aus den Küken etwas besonders Liebes. Verbunden mit ländlicher Frühlings-Tradition.',
+      beispiel: 'D\'Bibeli laufen alle der Henne hinterher.',
+      beispiel_hd: 'Die Küken laufen alle der Henne hinterher.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-220',
+      ausdruck: 'Apéro-Ricard',
+      hochdeutsch: 'Aperitif vor dem Essen',
+      bedeutung: 'Der „Apéro" oder „Apéro-Ricard" ist die schweizerische Aperitif-Kultur — ein kleines Getränk mit Snacks vor dem Hauptessen. „Mer hen zum Geburtstag a Apéro mit Häppchen!" Verbreitet in der Westschweiz und auch in der Deutschschweiz. Klassisch mit Weißwein, Champagner, Ricard oder Suze. Wichtige Schweizer Geselligkeitsform.',
+      beispiel: 'Zum Geburtstag offerieren wir Apéro mit Käse-Snacks.',
+      beispiel_hd: 'Zum Geburtstag offerieren wir Aperitif mit Käse-Snacks.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-221',
+      ausdruck: 'Sächsilüüte',
+      hochdeutsch: 'Sechseläuten (Zürcher Frühlingsfest)',
+      bedeutung: 'Das „Sächsilüüte" ist Zürichs großes Frühlingsfest — am dritten Montag im April. Höhepunkt: das Verbrennen des „Bööggs" (Schneemann mit Sprengstoff im Kopf). Wie lang der Kopf brennt, sagt das Wetter im Sommer voraus. „Im Sächsilüüte ziehen alle Zünfte durch d\'Stadt!" Eine zentrale Zürcher Tradition mit jahrhundertealter Geschichte.',
+      beispiel: 'Im Sächsilüüte brennt der Bööggs auf em Sechseläutenplatz.',
+      beispiel_hd: 'Im Sechseläuten brennt der Bööggs auf dem Sechseläutenplatz.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-222',
+      ausdruck: 'Wattwiler',
+      hochdeutsch: 'Wattwiler (Mensch aus Wattwil)',
+      bedeutung: 'Ein „Wattwiler" ist ein Mensch aus Wattwil im Kanton St. Gallen — auch übertragen für jeden Schweizer Kleinstadt-Bewohner. Beliebte Wortspiele mit dem Ortsnamen. „D\'Wattwiler sind a für si Sturheit bekannt!" Eine regional spezifische Bezeichnung mit charakteristisch schweizerischer Identitäts-Pflege.',
+      beispiel: 'Mein Frau isch a Wattwilerin aus em Toggenburg.',
+      beispiel_hd: 'Meine Frau ist eine Wattwilerin aus dem Toggenburg.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-223',
+      ausdruck: 'Schoggi-Marzipan',
+      hochdeutsch: 'Schokoladen-Marzipan',
+      bedeutung: 'Das „Schoggi-Marzipan" ist eine schweizerische Süßigkeiten-Spezialität — Marzipan, mit Schokolade überzogen. „Bei Sprüngli gits die feinste Schoggi-Marzipan!" Die Schweizer Schokoladen-Tradition ist Weltklasse — Lindt, Sprüngli, Läderach, Cailler. Auch Marzipan wird in der Schweiz auf höchstem Niveau hergestellt. Eine luxuriöse, traditionsreiche Konditorei-Kunst.',
+      beispiel: 'Zum Geburtstag schenk ich Schoggi-Marzipan vom Sprüngli.',
+      beispiel_hd: 'Zum Geburtstag schenk ich Schokoladen-Marzipan vom Sprüngli.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-224',
+      ausdruck: 'Zürichseetour',
+      hochdeutsch: 'Zürichsee-Schiffstour',
+      bedeutung: 'Die „Zürichseetour" ist eine klassische touristische und auch lokale Aktivität — mit dem Schiff über den Zürichsee fahren, vorbei an Villen, Bergen, malerischen Orten. „Im Summer mache mir a Zürichseetour mit em alten Schiff!" Auch die alten Dampfschiffe wie „Stadt Zürich" oder „Helvetia" fahren noch. Klassisches Schweizer Sommer-Erlebnis.',
+      beispiel: 'Mit der ganzen Familie machen wir a Zürichseetour.',
+      beispiel_hd: 'Mit der ganzen Familie machen wir eine Zürichsee-Schiffstour.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-225',
+      ausdruck: 'Pflümli-Schnaps',
+      hochdeutsch: 'Pflaumenschnaps',
+      bedeutung: 'Der „Pflümli-Schnaps" ist der schweizerische Pflaumenbrand — kraftvoll, klar, aromatisch. „Nach em Esse a Pflümli zum Verdauen!" Aus der eigenen Hausbrennerei oder von kleinen Schweizer Brennereien. Klassischer Digestif. Im Schwarzwald und der Schweiz tief verwurzelte Tradition der Obstbrennerei. Symbol für ländliche Handwerkskunst.',
+      beispiel: 'Nach em Käse-Fondue gits a Pflümli-Schnaps.',
+      beispiel_hd: 'Nach dem Käse-Fondue gibt es einen Pflaumenschnaps.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-226',
+      ausdruck: 'Pfäffer',
+      hochdeutsch: 'Pfeffer',
+      bedeutung: 'Der „Pfäffer" ist im Schweizerdeutschen der Pfeffer — mit der typischen Aussprache. „A bitzli Pfäffer zum Würze!" Eine alltägliche Vokabel mit kennzeichnender schweizerdeutscher Aussprache. Auch in Komposita: „Pfäffermöhli" (Pfeffermühle), „Pfäfferkuchen" (Pfefferkuchen). Verbreitet in der Schweizer Küche.',
+      beispiel: 'A bitzli Pfäffer in d\'Suppe!',
+      beispiel_hd: 'Ein bisschen Pfeffer in die Suppe!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-227',
+      ausdruck: 'Hösli',
+      hochdeutsch: 'Höschen',
+      bedeutung: 'Das „Hösli" ist im Schweizerdeutschen ein Höschen — die kleine Hose, meist Kinder- oder Damenhose. „Mei chliine hed neue Hösli!" Die typische schweizerdeutsche Verkleinerung mit „-li" gibt der Bekleidung warmen Klang. Verbreitet in der Familiensprache. Charmante, alltägliche Wortprägung.',
+      beispiel: 'D\'Hösli vom Baby sin so süüss!',
+      beispiel_hd: 'Die Höschen vom Baby sind so süß!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-228',
+      ausdruck: 'Suuser',
+      hochdeutsch: 'Sauser (neuer Wein)',
+      bedeutung: 'Der „Suuser" ist im Schweizerdeutschen der noch gärende, neue Wein (Federweißer, Sturm) — wird im Herbst beim Weinfest getrunken. „A frische Suuser zum Zwiebelkuchen!" Eine alkoholarme, prickelnde Spezialität, die nur kurz nach der Weinlese verfügbar ist. In den Schweizer Weinregionen (Wallis, Tessin, Genf) traditionelle Herbst-Spezialität.',
+      beispiel: 'Im Herbst trinken wir Suuser mit Zwiebelkuchen.',
+      beispiel_hd: 'Im Herbst trinken wir Federweißen mit Zwiebelkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-229',
+      ausdruck: 'Velo-Tour',
+      hochdeutsch: 'Fahrrad-Tour',
+      bedeutung: 'Die „Velo-Tour" ist eine schweizerische Lieblingsaktivität — Fahrrad-Tour durch die Schweizer Landschaft. „Velo" ist schweizerdeutsch für Fahrrad. „Am Wuchenend mache mir a Velo-Tour um de Zürichsee!" Die Schweiz hat ein hervorragend ausgebautes Velo-Routen-Netz (Veloland Schweiz). Symbol für umweltbewussten Tourismus.',
+      beispiel: 'Diese Wuche planen mir a längere Velo-Tour durch d\'Berge.',
+      beispiel_hd: 'Diese Woche planen wir eine längere Fahrrad-Tour durch die Berge.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-230',
+      ausdruck: 'Schlössli-Hotel',
+      hochdeutsch: 'Schlosshotel',
+      bedeutung: 'Das „Schlössli-Hotel" ist ein luxuriöses Schweizer Schloss-Hotel — viele alte Schweizer Schlösser sind heute Luxus-Hotels mit Spa, gehobener Küche. „Zum 25. Hochzeitstag fahre mir is Schlössli-Hotel!" Eine besondere Schweizer Tourismus-Tradition. Berühmte Beispiele: Schloss Lenzburg, Schloss Wartegg, Schlosshotel Tegerfelden.',
+      beispiel: 'Im Schlössli-Hotel werden mir wunderbar verwöhnt.',
+      beispiel_hd: 'Im Schlosshotel werden wir wunderbar verwöhnt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-231',
+      ausdruck: 'Älpli-Käs',
+      hochdeutsch: 'Alpkäse / Bergkäse',
+      bedeutung: 'Der „Älpli-Käs" ist der schweizerische Alpkäse — auf der Alm aus Bergmilch gemachter Käse, traditionell in offenen Kupferkessen über dem Feuer. „Echte Älpli-Käs gits nur direkt vom Sennen!" Eine der bekanntesten Schweizer Lebensmittel-Spezialitäten. AOP-geschützt (Appellation d\'Origine Protégée). Symbol für alpine Tradition und Handwerkskunst.',
+      beispiel: 'Im Alpkäse-Markt kaufen mir den frischen Älpli-Käs.',
+      beispiel_hd: 'Im Alpkäse-Markt kaufen wir den frischen Alpkäse.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-232',
+      ausdruck: 'Pyjama',
+      hochdeutsch: 'Pyjama / Schlafanzug',
+      bedeutung: 'Der „Pyjama" ist im Schweizerdeutschen der Schlafanzug — vom indischen „Pajama" abgeleitet. „Vor em Schlafen anziehen wir den Pyjama!" Eine moderne, international beeinflusste Vokabel mit französisch-schweizerischer Aussprache. Verbreitet in der Schweizer Alltagssprache. Auch im Hochdeutschen seit langem heimisch.',
+      beispiel: 'Im Winter trag i an gemütlichen Pyjama mit Bär drauf.',
+      beispiel_hd: 'Im Winter trage ich einen gemütlichen Pyjama mit Bär drauf.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-233',
+      ausdruck: 'Goldvreneli',
+      hochdeutsch: 'Goldvreneli (Schweizer Goldmünze)',
+      bedeutung: 'Das „Goldvreneli" ist die berühmte Schweizer Goldmünze — 20 Franken Gold, geprägt 1897-1949, mit dem Bildnis einer jungen Helvetia. „A Goldvreneli zur Hochzeit als Geschenk!" Heute Sammlerobjekt und Anlagegold. Symbol für Schweizer Wertbeständigkeit und Tradition. Auch heute noch verbreitet in Schweizer Sicherheits-Investments.',
+      beispiel: 'Zum 18. Geburtstag schenke d\'Eltern oft a Goldvreneli.',
+      beispiel_hd: 'Zum 18. Geburtstag schenken die Eltern oft ein Goldvreneli.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ch-234',
+      ausdruck: 'Gornier',
+      hochdeutsch: 'Gornergrat (Berg bei Zermatt)',
+      bedeutung: 'Der „Gornier" oder Gornergrat ist ein berühmter Schweizer Aussichtsberg bei Zermatt — 3.135 m hoch, mit Bahn erreichbar. „Vom Gornier siest du das Matterhorn perfekt!" Eine der spektakulärsten Aussichtsplattformen Europas. Verbunden mit dem Schweizer Berg-Tourismus und der Matterhorn-Geschichte. UNESCO-Tentativliste.',
+      beispiel: 'Vom Gornergrat aus isch s\'Matterhorn am schönsten zu sehen.',
+      beispiel_hd: 'Vom Gornergrat aus ist das Matterhorn am schönsten zu sehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-235',
+      ausdruck: 'Tellsplatte',
+      hochdeutsch: 'Tellsplatte (Wilhelm-Tell-Stätte)',
+      bedeutung: 'Die „Tellsplatte" ist am Vierwaldstättersee — wo Wilhelm Tell der Legende nach von Geßlers Schiff sprang. „Die Tellsplatte isch das Herz der Schweizer Geschichte!" Mit Kapelle (1880 von Wilhelm Sutter erbaut) und Tell-Spiele. Eine zentrale Schweizer Identitäts-Stätte. Symbol für die Schweizer Unabhängigkeit von den Habsburgern.',
+      beispiel: 'Bei der Tellsplatte stoppt das Schiff für die Wanderer.',
+      beispiel_hd: 'Bei der Tellsplatte stoppt das Schiff für die Wanderer.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-236',
+      ausdruck: 'Müesli-Käfer',
+      hochdeutsch: 'Müsli-Käfer / Gesundheitsfanatiker',
+      bedeutung: 'Ein „Müesli-Käfer" ist im Schweizerdeutschen humorvoll-spöttisch ein Gesundheitsfanatiker — einer, der ständig Müesli, Bio-Essen, vegan ist. „Mei Tochter isch a richtige Müesli-Käfer!" Eine moderne, charmante Bezeichnung mit Augenzwinkern. Reflektiert den Schweizer Trend zur Bio- und Gesundheitskost — Birchermüesli-Heimat eben.',
+      beispiel: 'D\'jungen sin heut all Müesli-Käfer.',
+      beispiel_hd: 'Die Jungen sind heute alle Müsli-Käfer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-237',
+      ausdruck: 'Stierecke',
+      hochdeutsch: 'Stiereck / Eckenbeißer',
+      bedeutung: 'Eine „Stierecke" ist im Schweizerdeutschen jemand, der wie ein Stier eckig und stur ist — meist kritisch gemeint. „Mei Schwoger isch a Stierecke, der gibt nie nach!" Eine plastische, bildhafte schweizerdeutsche Personencharakterisierung. Drastisch, aber im Schweizer Tonfall mit gewisser Anerkennung für Charakterstärke verbunden.',
+      beispiel: 'D\'Stierecke vom Büro lässt nie was gelten!',
+      beispiel_hd: 'Der Sturkopf vom Büro lässt nie was gelten!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-238',
+      ausdruck: 'Kollegenkreis',
+      hochdeutsch: 'Kollegenkreis / Freundeskreis',
+      bedeutung: 'Der „Kollegenkreis" ist im Schweizerdeutschen der engste berufliche und private Freundeskreis. „I muess mit minem Kollegenkreis bspreche!" Die Schweizer schätzen klar definierte soziale Strukturen — Vereine, Kollegenkreise, Stammtische. Wichtige Schweizer Sozialformen. Verbreitet in der Geschäftssprache und Privatleben.',
+      beispiel: 'Mit minem Kollegenkreis treffe mer üs jedes Mol nach em Apéro.',
+      beispiel_hd: 'Mit meinem Kollegenkreis treffen wir uns jedes Mal nach dem Aperitif.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-239',
+      ausdruck: 'Bricelets',
+      hochdeutsch: 'Bricelets (waadtländische Waffeln)',
+      bedeutung: 'Die „Bricelets" sind dünne, knusprige Waffeln aus der Westschweiz (Waadt) — traditionell mit dem Bricelets-Eisen über dem offenen Feuer gebacken. „Zur Weihnachts-Zeit gits Bricelets in der Schweiz!" Eine alte Schweizer Spezialität, die heute industriell hergestellt wird. Symbol für die welsche Süßwaren-Kultur, die auch in der Deutschschweiz beliebt ist.',
+      beispiel: 'Zu Weihnachten esse mir Bricelets mit a Tasse Tee.',
+      beispiel_hd: 'Zu Weihnachten essen wir Bricelets mit einer Tasse Tee.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-240',
+      ausdruck: 'Schwiizer Präzision',
+      hochdeutsch: 'Schweizer Präzision',
+      bedeutung: 'Die „Schwiizer Präzision" ist ein Markenzeichen der Schweiz — von der Uhrenindustrie (Rolex, Patek Philippe), über die Schweizer Armee bis zum Bankenwesen. „Schwiizer Präzision isch unser Welt-Markenname!" Mit Stolz gebraucht. Reflektiert das Schweizer Selbstverständnis: gründliche, qualitativ hochwertige Arbeit. Wirtschaftlicher Erfolgsfaktor.',
+      beispiel: 'D\'Schwiizer Präzision merkt mer bi alle unsere Produkte.',
+      beispiel_hd: 'Die Schweizer Präzision merkt man bei allen unseren Produkten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-241',
+      ausdruck: 'Tschegge',
+      hochdeutsch: 'kapieren, verstehen',
+      bedeutung: 'Das Verb „tschegge" (oder „tscheggä") bedeutet etwas verstehen, kapieren, durchschauen — eine Lehnübernahme aus dem Englischen „to check". In der Deutschschweiz seit den 1980er-Jahren bei der Jugend allgegenwärtig: „Häsch das tscheggt?" („Hast du das kapiert?"). Mittlerweile generationenübergreifend etabliert und sogar in der Werbung verwendet. Klassische Frage in Schulzimmern und beim Erklären komplizierter Sachverhalte. Zeigt die Offenheit des Schwiizerdütsch für englische Lehnwörter.',
+      beispiel: 'Ich tschegge nöd, wieso das so kompliziert sii muess.',
+      beispiel_hd: 'Ich verstehe nicht, warum das so kompliziert sein muss.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-242',
+      ausdruck: 'Pfupf',
+      hochdeutsch: 'Schwung, Elan, Energie',
+      bedeutung: 'Der „Pfupf" (auch „Pfupfä") beschreibt Schwung, Elan oder Energie — etwas, das mit Schmiss und Power gemacht wird. „Das Lied hät rächt e Pfupf!" Auch im Sinne von „kleiner Stoß" oder „Anstoß" verwendet: „Gib em es bitzli Pfupf!" Lautmalerisches Wort, das im Mundart-Rock und im Sport häufig auftaucht. Wenn etwas „kei Pfupf hät", ist es lahm und langweilig. Typisch schweizerischer Ausdruck für Vitalität und Drive.',
+      beispiel: 'Die neui Band hät rächt e Pfupf — das gaht ab!',
+      beispiel_hd: 'Die neue Band hat richtig Schwung — das geht ab!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-243',
+      ausdruck: 'Hoselupf',
+      hochdeutsch: 'Schwingen, Schwingerkampf',
+      bedeutung: 'Der „Hoselupf" ist die volkstümliche Bezeichnung für das Schwingen — den traditionellen Schweizer Nationalsport. Wörtlich „Hosenheben", weil die Schwinger sich gegenseitig an den Zwilchhosen packen und versuchen, den Gegner auf den Rücken zu werfen. Das Eidgenössische Schwing- und Älplerfest („ESAF") findet alle drei Jahre statt und zieht über 400.000 Zuschauer an. Der Sieger wird „Schwingerkönig" und gewinnt traditionell einen „Muni" (Zuchtstier). Hoselupf ist gelebte Schweizer Tradition.',
+      beispiel: 'Am ESAF git\'s die beschte Hoselupf vo de Schwiiz z\'gseh.',
+      beispiel_hd: 'Am ESAF gibt es die besten Schwingerkämpfe der Schweiz zu sehen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-244',
+      ausdruck: 'Föhnsturm',
+      hochdeutsch: 'Föhnsturm',
+      bedeutung: 'Der „Föhnsturm" ist ein heftiger Föhn-Wind, der vor allem in den Alpentälern (Wallis, Glarus, Innerschweiz) extreme Folgen hat: Temperaturanstieg von 20 Grad in wenigen Stunden, Schmelzwasser, Brandgefahr und sogenanntes „Föhnkrankheit" (Kopfweh, Müdigkeit). Historisch waren „Föhnstürm" gefürchtet: Im Mittelalter wurden bei Föhn keine Feuer gemacht (Brandverhütung). In Altdorf wurden früher die Glocken geläutet als Warnung. Heute noch ein wichtiges Wetterphänomen im Alpenraum.',
+      beispiel: 'Bi dem Föhnsturm hani schreckli Chopfweh.',
+      beispiel_hd: 'Bei diesem Föhnsturm habe ich schreckliche Kopfschmerzen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-245',
+      ausdruck: 'Maluege',
+      hochdeutsch: 'mal schauen, mal sehen',
+      bedeutung: 'Der typisch schweizerische Ausdruck „maluege" (oder „mer luegäd mal") bedeutet „mal schauen, wie es kommt" — eine zurückhaltende, abwartende Haltung, die als kulturelle Eigenheit der Schweizer gilt. „Maluege, öb das klappet." Diese Vorsicht und das Vermeiden vorschneller Festlegungen ist tief in der Schweizer Mentalität verankert (Direkte Demokratie, Konsensfindung, Neutralität). In Gesprächen Ausdruck von Höflichkeit und Pragmatismus zugleich.',
+      beispiel: 'Öb mir am Wuchenänd gönd? Maluege, wies Wätter wird.',
+      beispiel_hd: 'Ob wir am Wochenende gehen? Mal sehen, wie das Wetter wird.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-246',
+      ausdruck: 'Härdöpfel',
+      hochdeutsch: 'Kartoffel',
+      bedeutung: 'Der „Härdöpfel" ist die Schweizer Bezeichnung für die Kartoffel — wörtlich „Erdapfel" (vergleichbar mit dem österreichischen „Erdapfel" und dem französischen „pomme de terre"). Im 18. Jahrhundert über Wallis und Welschland in die Deutschschweiz gelangt. Grundlage zahlreicher Schweizer Nationalgerichte: Rösti, Älplermagronen, Härdöpfelstock (Kartoffelpüree), Gschwellti (Pellkartoffeln zu Käse). „Härdöpfel und Käs — eifach himmlisch!" Bei vielen Bauern in der Innerschweiz noch heute Hauptanbauprodukt.',
+      beispiel: 'Mir mached hüt Härdöpfelstock zur Wurscht.',
+      beispiel_hd: 'Wir machen heute Kartoffelpüree zur Wurst.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-247',
+      ausdruck: 'Müsterli',
+      hochdeutsch: 'Häuschen, kleines Haus',
+      bedeutung: 'Das „Müsterli" (Diminutiv von „Muster") wird im übertragenen Sinn für ein nettes, kleines, vorzeigbares Haus oder eine Wohnung verwendet — oft mit liebevoll-ironischem Unterton. „Sie hät es schöns Müsterli z\'Adliswil." Typisch schweizerische Verniedlichung mit „-li"-Endung. Im weiteren Sinne auch für jede vorbildliche, kleine Sache: „Das isch es Müsterli vo Sauberkeit." Spiegelt die Schweizer Vorliebe für Ordnung, Sauberkeit und ein gepflegtes Heim wider.',
+      beispiel: 'Sie händ sich es chliises Müsterli am Zürisee chauft.',
+      beispiel_hd: 'Sie haben sich ein kleines Häuschen am Zürichsee gekauft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-248',
+      ausdruck: 'Buebetrickli',
+      hochdeutsch: 'Bubentrick, fauler Trick',
+      bedeutung: 'Das „Buebetrickli" (wörtlich „Bubentrick") ist ein durchschauter, billiger Trick — etwas, das nur unerfahrene Buben (Jungen) versuchen würden. „Das isch doch nur es Buebetrickli, das gaht nöd dure!" Mit überlegenem, leicht spöttischem Unterton verwendet. Häufig im Sport (Fussball, Eishockey) für plumpe Täuschungsmanöver oder im Geschäftsleben für unprofessionelles Verhalten. Spiegelt die Schweizer Wertschätzung von Reife, Erfahrung und Geradlinigkeit wider.',
+      beispiel: 'Mit dem Buebetrickli chunsch bi mir nöd dure!',
+      beispiel_hd: 'Mit diesem Bubentrick kommst du bei mir nicht durch!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-249',
+      ausdruck: 'Müetti',
+      hochdeutsch: 'Mama, Mutti',
+      bedeutung: 'Die „Müetti" ist die zärtliche, kindersprachliche Bezeichnung für die Mutter in der Deutschschweiz — vergleichbar mit „Mami" oder „Mueti". „Müetti, chasch mir grad helfe?" Wird oft auch von Erwachsenen liebevoll im Familienkreis verwendet. In manchen Regionen (Bern, Wallis) auch „Müetti" für ältere Frau im Allgemeinen. Die Schweizer Familienkultur betont enge, herzliche Verbindungen — die „Müetti" ist meist Mittelpunkt des Familienlebens, auch nach dem Auszug der Kinder.',
+      beispiel: 'D\'Müetti macht am Sunntig immer en feine Zopf.',
+      beispiel_hd: 'Mama macht am Sonntag immer einen feinen Zopf.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-250',
+      ausdruck: 'Tüpflischiisser',
+      hochdeutsch: 'Pedant, Korinthenkacker',
+      bedeutung: 'Der „Tüpflischiisser" (wörtlich „Pünktchen-Scheisser") ist ein übertrieben pingeliger, kleinlicher Mensch, der auf jedes Detail achtet und jedes „Tüpfli" (Punkt) wichtig nimmt. „Mit dem Tüpflischiisser chasch nüt aaschtelle!" Klassisches Schweizer Schimpfwort mit einem Kern Selbstironie — die Schweizer wissen um ihren eigenen Ruf für Genauigkeit und Pingeligkeit (Pünktlichkeit der SBB, Sauberkeit, Bürokratie). Wird oft humorvoll-resignierend gebraucht.',
+      beispiel: 'Är isch en richtige Tüpflischiisser, jede Komma muess stimme.',
+      beispiel_hd: 'Er ist ein richtiger Pedant, jedes Komma muss stimmen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-251',
+      ausdruck: 'Grüsch',
+      hochdeutsch: 'Lärm, Krach',
+      bedeutung: 'Der „Grüsch" (oder „Grüschä") bedeutet Lärm, Krach, Aufregung — sowohl akustisch als auch im übertragenen Sinn. „Was isch das für en Grüsch da une?" Oft im Sinne von „viel Aufhebens um nichts": „En Grüsch um nüüt!" Wenn jemand „Grüsch macht", macht er Wirbel oder Theater. Typisch schweizerisch wird das Wort auch für mediale Aufregung verwendet — die Schweizer Kultur schätzt eher Zurückhaltung und Diskretion, weshalb „Grüsch" oft negativ konnotiert ist.',
+      beispiel: 'Mach doch nöd so en Grüsch wäge dene paar Stutz!',
+      beispiel_hd: 'Mach doch nicht so einen Lärm wegen dieser paar Franken!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-252',
+      ausdruck: 'Pfunzge',
+      hochdeutsch: 'verbeulen, beschädigen',
+      bedeutung: 'Das Verb „pfunzge" (oder „verpfunzge") bedeutet etwas verbeulen, beschädigen, kaputt machen — meist durch ungeschicktes Handhaben oder einen kleinen Unfall. „Ich han\'s Auto am Migros-Parkplatz pfunzget!" Wird oft mit leichter Selbstironie verwendet, wenn man einen Schaden eingesteht. Im weiteren Sinne auch für „durcheinanderbringen" oder „verpfuschen" einer Sache: „Är hät de Job total pfunzget." Klassisches lautmalerisches Schweizer Verb.',
+      beispiel: 'Ich han mer am Velo s\'Vorderrad pfunzget.',
+      beispiel_hd: 'Ich habe mir am Fahrrad das Vorderrad verbeult.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-253',
+      ausdruck: 'Chälti',
+      hochdeutsch: 'Kälte',
+      bedeutung: 'Die „Chälti" ist die schweizerdeutsche Bezeichnung für Kälte — ein im Winter allgegenwärtiges Thema im Alpenland. „Hüt isch e bitteri Chälti dussä!" Besonders in den Bergregionen (Engadin, Wallis) erreicht die Chälti im Januar oft -20°C oder kälter. „Die Chälti gaht eim dure Mark und Bei!" Auch metaphorisch verwendet für emotionale Kälte: „D\'Chälti zwüsche dene beidne isch z\'spüre." Wetter-Talk ist in der Schweiz Konversations-Klassiker.',
+      beispiel: 'Bi dere Chälti gohni nöd vor d\'Türe!',
+      beispiel_hd: 'Bei dieser Kälte gehe ich nicht vor die Tür!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-254',
+      ausdruck: 'Gschpürsch-mi',
+      hochdeutsch: 'überempfindlicher Mensch, Sensibelchen',
+      bedeutung: 'Der „Gschpürsch-mi" (wörtlich „Spürst-mich") ist ein übertrieben empfindsamer, sensibler Mensch, der jede Kleinigkeit persönlich nimmt. „Sii so en Gschpürsch-mi, isch au mühsam!" Klassisches Schweizer Spottwort, das die kulturelle Wertschätzung von Robustheit und Pragmatismus widerspiegelt. Wird oft humorvoll gebraucht. Verwandt mit „Mimose" im Hochdeutschen. Wer ständig beleidigt ist, gilt in der Schweiz als „Gschpürsch-mi" und wird damit liebevoll-spöttisch ausgegrenzt.',
+      beispiel: 'Sii so en Gschpürsch-mi! Das war doch nur en Spass!',
+      beispiel_hd: 'Sei kein Sensibelchen! Das war doch nur ein Spass!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-255',
+      ausdruck: 'Hoorgmüetlich',
+      hochdeutsch: 'sehr gemütlich, urgemütlich',
+      bedeutung: 'Das Wort „hoorgmüetlich" („haargemütlich") beschreibt eine besonders behagliche, urgemütliche Atmosphäre — wenn etwas so kuschelig und angenehm ist, dass es nicht besser sein könnte. „D\'Beiz isch hoorgmüetlich z\'Wienachte." Die Vorsilbe „hoor-" verstärkt das Adjektiv (vergleichbar mit „haargenau"). Die Gemütlichkeit ist ein wichtiger Kulturwert in der Schweiz — sei es im „Stübli", in der „Beiz" oder zu Hause am Cheminée. Klassisches Wohlfühl-Wort.',
+      beispiel: 'Bi de Grossmuetter isch\'s immer hoorgmüetlich.',
+      beispiel_hd: 'Bei der Grossmutter ist es immer urgemütlich.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-256',
+      ausdruck: 'Lottolöli',
+      hochdeutsch: 'Trottel, Dummerchen',
+      bedeutung: 'Der „Lottolöli" ist ein liebevoller, leicht spöttischer Ausdruck für einen Trottel oder Dummkopf — wörtlich „Lotto-Löli" (jemand, der wie ein blinder Lotto-Spieler agiert). „Löli" allein bedeutet schon Dummkopf, mit „Lotto-" wird es verstärkt. „Du bisch en richtige Lottolöli!" Wird unter Freunden und in der Familie ohne wirkliche Verärgerung verwendet — eher als zärtlicher Tadel. Beispiel für die Vorliebe des Schwiizerdütsch für reduplizierende, klangmalerische Schimpfwörter.',
+      beispiel: 'Ich han d\'Schlüssel im Auto vergässe — ich Lottolöli!',
+      beispiel_hd: 'Ich habe die Schlüssel im Auto vergessen — ich Trottel!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ch-257',
+      ausdruck: 'Sirup',
+      hochdeutsch: 'Sirup (Saftsirup, Konzentrat)',
+      bedeutung: 'Der „Sirup" ist in der Schweiz das beliebteste alkoholfreie Erfrischungsgetränk, vor allem für Kinder — meist „Himbeersirup" oder „Holundersirup". Mit Wasser aufgegossen, gibt es ihn in jeder Schweizer Familie und in jeder „Beiz". „Es Glas Sirup, bitte!" In den Bergrestaurants gehört der Holunder- oder Waldmeistersirup zum Standardangebot. Selbstgemachter „Sirup" aus dem eigenen Garten ist Familientradition. Auch der „Café-Sirup" (Sirup im Espresso) ist beliebt.',
+      beispiel: 'D\'Chind tüend immer en Himbeersirup zum Z\'Vieri ha.',
+      beispiel_hd: 'Die Kinder haben immer einen Himbeersirup zum Z\'Vieri.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-258',
+      ausdruck: 'Lehrerseminar',
+      hochdeutsch: 'Pädagogische Hochschule',
+      bedeutung: 'Das „Lehrerseminar" war traditionell die Ausbildungsstätte für Primarlehrer in der Schweiz — heute weitgehend ersetzt durch die „Pädagogischen Hochschulen" (PH). „Mini Müetti hät am Lehrerseminar Zug studiert." Die Schweiz hat ein hochdezentrales Bildungssystem: Jeder Kanton hat eigene Lehrpläne und Ausbildungswege. Lehrer geniessen hohes gesellschaftliches Ansehen und überdurchschnittliche Löhne. Schweizer Lehrerbildung gilt international als Vorbild — praxisnah, gründlich, mit hohem Anteil an Berufspraxis.',
+      beispiel: 'Vor 20 Jahr het mer no\'s Lehrerseminar gmacht.',
+      beispiel_hd: 'Vor 20 Jahren hat man noch das Lehrerseminar gemacht.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-259',
+      ausdruck: 'Buurefrau',
+      hochdeutsch: 'Bäuerin',
+      bedeutung: 'Die „Buurefrau" ist die Bäuerin — auf dem Schweizer Bauernhof traditionell die mitarbeitende Ehefrau des „Buurs". Schweizer Bauernhöfe sind meist Familienbetriebe in der dritten oder vierten Generation. Die Buurefrau ist verantwortlich für Haushalt, Kinder, oft auch Käserei, Hofladen und Agrotourismus. „D\'Buurefrau hät ihre eigene Hoflade." Die Schweizer Landwirtschaft ist klein strukturiert (Durchschnittsbetrieb 21 Hektar) und stark subventioniert. Wichtige Rolle für Landschaftspflege und Tourismus.',
+      beispiel: 'D\'Buurefrau verchauft de beschti Hofchäs vo de Region.',
+      beispiel_hd: 'Die Bäuerin verkauft den besten Hofkäse der Region.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-260',
+      ausdruck: 'Saumagge',
+      hochdeutsch: 'Bauchschmerzen, Übelkeit',
+      bedeutung: 'Der „Saumagge" („Saumagen") beschreibt heftige Bauchschmerzen oder Übelkeit — meist nach üppigem Essen oder zu viel Alkohol. „Ich han en Saumagge vom gschterige Fondue!" Im weiteren Sinne auch für „starken Hunger": „Ich han en Saumagge wie es Loch." Klassisch nach üppigen Schweizer Mahlzeiten wie Älplermagronen, Fondue oder Raclette. Drastische, derbe Ausdrucksweise — die schweizerische Bauernkultur kennt viele bildhafte Körperausdrücke. Verwandt mit „Saukopf" und „Sauhund" als Schimpfwörter.',
+      beispiel: 'Nach em Raclette hani jetz richtig Saumagge.',
+      beispiel_hd: 'Nach dem Raclette habe ich jetzt richtig Bauchschmerzen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ch-261',
+      ausdruck: 'Hagel',
+      hochdeutsch: 'Hagel (auch: verflixt, verdammt)',
+      bedeutung: '„Hagel" bedeutet wörtlich Hagel — das in den Alpen gefürchtete Wetterphänomen, das ganze Ernten und Weinberge zerstören kann. Im übertragenen Sinn als Fluch verwendet: „Hagel nomal!" oder „Verflixt und Hagel!" — ein eher harmloser, leicht altmodischer Ausdruck der Verärgerung. „Sich uufrege wie de Hagel" bedeutet sich sehr aufregen. Auch „Hagels-" als Verstärkung: „En Hagels-Sieg!" („Ein toller Sieg!"). Spiegelt die Bedeutung des Wetters für die schweizerische Landwirtschaft wider.',
+      beispiel: 'Hagel nomal, jetz isch d\'SBB scho widr z\'spaat!',
+      beispiel_hd: 'Verdammt nochmal, jetzt ist die SBB schon wieder zu spät!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ch-262',
+      ausdruck: 'Schwiizergeischt',
+      hochdeutsch: 'Schweizer Geist, Schweizer Mentalität',
+      bedeutung: 'Der „Schwiizergeischt" beschreibt die typisch schweizerische Mentalität: Pragmatismus, Konsensfindung, Bescheidenheit, Pünktlichkeit, direkte Demokratie, Mehrsprachigkeit und Neutralität. „Das isch ächte Schwiizergeischt!" Wird mit Stolz verwendet, wenn typisch Schweizerisches positiv hervorgehoben wird: zuverlässige Arbeit, gutes Handwerk, Verlässlichkeit, Heimatliebe. Auch beim 1. August (Bundesfeier) zentral. Der Schwiizergeischt unterscheidet sich klar von der deutschen oder österreichischen Mentalität.',
+      beispiel: 'D\'Pünktlichkeit vo de SBB — das isch Schwiizergeischt!',
+      beispiel_hd: 'Die Pünktlichkeit der SBB — das ist Schweizer Geist!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-263',
+      ausdruck: 'Älplerfescht',
+      hochdeutsch: 'Älplerfest, Alpfest',
+      bedeutung: 'Das „Älplerfescht" ist die traditionelle Feier der Älpler nach der Sommersaison auf der Alp — meist im September oder Oktober. Mit Alpabzug („Désalpe"), geschmückten Kühen, Älplerchilbi (Alpgottesdienst), Schwingen, Hornussen, Alphornblasen und reichlich Essen (Älplermagronen, Käse, Bratwurst). „Mir gönd zum Älplerfescht uf Stoos!" Wichtiger Bestandteil der schweizerischen Alpwirtschaft und Brauchtumspflege. Touristisch bekannt, aber primär ein Anlass für die lokale Bauerngemeinschaft.',
+      beispiel: 'Am Älplerfescht wird gschwunge und gjoodlet bis spaat in d\'Nacht.',
+      beispiel_hd: 'Am Älplerfest wird geschwungen und gejodelt bis spät in die Nacht.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-264',
+      ausdruck: 'Wochenmärt',
+      hochdeutsch: 'Wochenmarkt',
+      bedeutung: 'Der „Wochenmärt" ist der wöchentliche Markt in fast jeder Schweizer Stadt — meist samstags oder dienstags auf dem Hauptplatz. Bauern aus der Region verkaufen Gemüse, Käse, Fleisch, Blumen und Backwaren direkt an die Kunden. Bekannte Wochenmärte: Bürkliplatz Zürich, Bundesplatz Bern, Marktplatz Basel. „Am Samstig gani immer uf de Wochenmärt!" Wichtig für die regionale Landwirtschaft und gepflegte städtische Tradition. Trotz Migros und Coop bleibt der Wochenmärt beliebter Treffpunkt.',
+      beispiel: 'Am Wochenmärt gits de bescht Bauerechäs vom Emmental.',
+      beispiel_hd: 'Am Wochenmarkt gibt es den besten Bauernkäse vom Emmental.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-265',
+      ausdruck: 'Numero sechs',
+      hochdeutsch: 'Nummer sechs (umgangssprachlich für WC)',
+      bedeutung: '„Numero sechs" ist die scherzhafte, leicht euphemistische Schweizer Bezeichnung für die Toilette — angeblich aus der Hotellerie, wo das WC oft die Nummer 6 hatte. „Ich gani schnäll uf Numero sechs!" Klassisches Beispiel für die schweizerische Vorliebe für diskrete, charmante Umschreibungen statt direkter Worte. Wird vor allem in der älteren Generation und in gehobenen Kontexten verwendet. Andere Ausdrücke: „Hüsli" (Häuschen), „WC", „Lokus". Reflektiert Schweizer Höflichkeit.',
+      beispiel: 'Entschuldigung, wo isch hie Numero sechs?',
+      beispiel_hd: 'Entschuldigung, wo ist hier die Toilette?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-266',
+      ausdruck: 'Sone-Sunntig',
+      hochdeutsch: 'sonniger Sonntag',
+      bedeutung: 'Der „Sone-Sunntig" ist ein sonniger Sonntag — heilige Zeit für die Schweizer Sonntagskultur. Familie, Berge, Wanderung, Sonntagsbraten, dann gemütlicher Spaziergang. „Bi sone Sunntig muess mer uf d\'Bärge!" Sonntags ist in der Schweiz fast alles geschlossen (Ladenschluss-Gesetz) — dafür sind Bergbahnen, Restaurants in den Bergen und Wanderwege voll. Der Sonntag gilt als Familientag, an dem auch die Kinder von Schule und Sport frei haben. Schweizer Sonntagsruhe wird strikt eingehalten (kein Rasenmähen!).',
+      beispiel: 'Was für en herrliche Sone-Sunntig — uf zur Rigi!',
+      beispiel_hd: 'Was für ein herrlicher sonniger Sonntag — auf zur Rigi!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-267',
+      ausdruck: 'Pförtli',
+      hochdeutsch: 'Türchen, kleine Pforte',
+      bedeutung: 'Das „Pförtli" (Diminutiv von „Pforte") ist die kleine Tür oder das Gartentörchen — sehr verbreitet bei Schweizer Einfamilienhäusern mit ihrem typischen kleinen Vorgarten. „Mach s\'Pförtli z\'gut zue, susch chunnt d\'Chatz use!" Auch im übertragenen Sinn für den Adventskalender („Adväntschpförtli"). Spiegelt die Schweizer Vorliebe für „-li"-Diminutive wider, die fast jedes Substantiv liebevoll verkleinern können. Schweizer Vorgärten sind meist gepflegt mit Geranien und niedrigen Pförtli.',
+      beispiel: 'Vergiss nöd, s\'Gartepförtli z\'schliesse, wenn du gohsch!',
+      beispiel_hd: 'Vergiss nicht, das Gartentörchen zu schliessen, wenn du gehst!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-268',
+      ausdruck: 'Müggelsee',
+      hochdeutsch: 'kleiner Streit, Geplänkel',
+      bedeutung: '„Müggelsee" bezeichnet im Schwiizerdütsch einen kleinen Streit oder eine harmlose Auseinandersetzung — vergleichbar mit „Sturm im Wasserglas". „Mir händ no en chliine Müggelsee gha, aber jetz isch alles wieder guet!" Wird oft verwendet, um Konflikte zu verharmlosen — typisch schweizerische Konfliktscheue und Vorliebe für Versöhnung. Im weiteren Sinn jede kleinere Aufregung, die schnell vorübergeht. Reflektiert die Konsenskultur in Familie, Politik und Wirtschaft der Schweiz.',
+      beispiel: 'Mit em Nochber han ich gschtert en chliine Müggelsee gha.',
+      beispiel_hd: 'Mit dem Nachbarn hatte ich gestern einen kleinen Streit.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-269',
+      ausdruck: 'Wiehnachtsguetzli',
+      hochdeutsch: 'Weihnachtsplätzchen, Weihnachtsguzli',
+      bedeutung: 'Die „Wiehnachtsguetzli" sind die traditionellen Schweizer Weihnachtsplätzchen — Mailänderli (Buttergebäck), Brunsli (Schokoladenmakronen), Zimtsterne, Spitzbuben, Chräbeli (Anisgebäck), Lebkuchenherzen. Backen mit der ganzen Familie ab Mitte November ist Schweizer Tradition. „Mir backe hüt Wiehnachtsguetzli zäme!" Jedes Schweizer Haushalt hat seine eigenen Familienrezepte. Werden in schönen Blechdosen aufbewahrt und an Verwandte, Nachbarn und Lehrer verschenkt. Symbol der Schweizer Weihnachtsgemütlichkeit.',
+      beispiel: 'D\'Müetti hät 8 verschiedeni Sorte Wiehnachtsguetzli backe!',
+      beispiel_hd: 'Mama hat 8 verschiedene Sorten Weihnachtsplätzchen gebacken!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-270',
+      ausdruck: 'Cumulus',
+      hochdeutsch: 'Cumulus (Migros-Kundenkarte)',
+      bedeutung: 'Die „Cumulus" ist die Kundenkarte der Migros — der grössten Schweizer Detailhandelskette. Über vier Millionen Schweizer besitzen eine Cumulus-Karte und sammeln damit Punkte für Rabatte. „Häsch d\'Cumulus debii?" ist Standardfrage an jeder Migros-Kasse. Eingeführt 1997, ist Cumulus zum Synonym für Kundenbindung in der Schweiz geworden — die „Cumulus-Bons" werden vierteljährlich verschickt. Konkurrenz: „Supercard" von Coop. Die Karte ist Teil der Schweizer Alltagskultur und Identität.',
+      beispiel: 'Häsch d\'Cumulus dabii? Sösch verlüürsch d\'Pünkt!',
+      beispiel_hd: 'Hast du die Cumulus-Karte dabei? Sonst verlierst du die Punkte!',
+      kategorie: 'alltag'
     }
   ]
 };

@@ -9,6 +9,7 @@ export default {
   farbe: '#0077b6',
   beschreibung: 'Bayerisch (genauer: Bairisch) ist eine eigene Dialektgruppe im Süden Deutschlands und in Österreich. Charakteristisch sind das gedehnte „a", umlautstarke Vokale und ein reicher Wortschatz aus Brauchtum, Bier und Bergland.',
   sprecher: 'ca. 12 Mio. (mit Österreich)',
+  lang: 'de-DE',
   ausdruecke: [
     {
       id: 'by-001',
@@ -24,71 +25,35 @@ export default {
       ausdruck: 'Griaß Gott',
       hochdeutsch: 'Grüß Gott / Hallo',
       bedeutung: 'Die formellere, traditionelle Begrüßung im katholischen Bayern und Österreich. Auch wenn nicht religiös: Höflichkeitsformel zu jeder Tageszeit.',
+      beispiel: 'Griaß Gott, Herr Huber, wia geht\'s da?',
+      beispiel_hd: 'Grüß Gott, Herr Huber, wie geht es Ihnen?',
       kategorie: 'begruessung'
-    },
-    {
-      id: 'by-003',
-      ausdruck: 'Pfiat di',
-      hochdeutsch: 'Tschüss / Mach\'s gut',
-      bedeutung: 'Bairische Abschiedsformel, verkürzt aus „behüt\' dich Gott". „Pfiat eich" für mehrere, „pfiat enk" im Norden.',
-      kategorie: 'begruessung'
-    },
-    {
-      id: 'by-004',
-      ausdruck: 'Brotzeit',
-      hochdeutsch: 'Zwischenmahlzeit / Vesper',
-      bedeutung: 'Eine kalte Zwischenmahlzeit, oft mit Wurst, Käse, Brot, Radi und Bier. Mehr als ein Snack — ein bayerisches Kulturgut.',
-      beispiel: 'Bei der Brotzeit kummt ma z\'samm.',
-      beispiel_hd: 'Bei der Vesper kommt man zusammen.',
-      kategorie: 'essen'
     },
     {
       id: 'by-005',
       ausdruck: 'Mei!',
       hochdeutsch: 'Mein Gott! / Ach!',
       bedeutung: 'Universaler bayerischer Ausruf — kann Bewunderung, Mitgefühl oder leichten Ärger ausdrücken, je nach Tonfall. „Mei, is des schö!" oder „Mei, war ma des aanstrengend!".',
+      beispiel: 'Mei, is des a schöner Tag heid!',
+      beispiel_hd: 'Mein Gott, ist das heute ein schöner Tag!',
       kategorie: 'gefuehle'
-    },
-    {
-      id: 'by-006',
-      ausdruck: 'Schmankerl',
-      hochdeutsch: 'Leckerei / Spezialität',
-      bedeutung: 'Eine kulinarische Köstlichkeit oder besondere Annehmlichkeit. Wird auch übertragen für Erlebnisse verwendet: „A echt\'s Schmankerl, der Sonnenuntergang!".',
-      kategorie: 'essen'
-    },
-    {
-      id: 'by-007',
-      ausdruck: 'Bua',
-      hochdeutsch: 'Junge / Bursche',
-      bedeutung: 'Bairische Form für einen jungen Mann oder Sohn. Auch als Anrede unter Freunden: „He, Bua!".',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'by-008',
-      ausdruck: 'Madl',
-      hochdeutsch: 'Mädchen',
-      bedeutung: 'Bairische Form für ein Mädchen oder junge Frau. Verniedlichend, freundlich, gehört zur Standardanrede.',
-      kategorie: 'menschen'
     },
     {
       id: 'by-009',
       ausdruck: 'Damischer',
       hochdeutsch: 'Dummkopf / Verrückter',
       bedeutung: 'Halb scherzhaft, halb tadelnd: ein Mensch, der etwas Dummes oder Verrücktes tut. „Du Damischer!" ist eher liebevoll als beleidigend gemeint.',
+      beispiel: 'Du Damischer, des macht ma doch ned!',
+      beispiel_hd: 'Du Dummkopf, das macht man doch nicht!',
       kategorie: 'schimpf'
-    },
-    {
-      id: 'by-010',
-      ausdruck: 'Watschn',
-      hochdeutsch: 'Ohrfeige',
-      bedeutung: 'Ein Schlag mit der flachen Hand ins Gesicht. „Watschnbaum" = jemand, der schnell Ohrfeigen verteilt; „a Watschn fangen" = eine Ohrfeige bekommen.',
-      kategorie: 'gefuehle'
     },
     {
       id: 'by-011',
       ausdruck: 'Habedere',
       hochdeutsch: 'Hab\' die Ehre / Hallo',
       bedeutung: 'Sehr traditionelle, leicht altmodische Grußformel. Verkürzt aus „Habe die Ehre". Wirkt heute charmant und elegant.',
+      beispiel: 'Habedere, Frau Gräfin, derf i bitten?',
+      beispiel_hd: 'Hab\' die Ehre, Frau Gräfin, darf ich bitten?',
       kategorie: 'begruessung'
     },
     {
@@ -96,6 +61,8 @@ export default {
       ausdruck: 'Wammerl',
       hochdeutsch: 'Bauchspeck',
       bedeutung: 'Eine bayerische Bauchspeck-Spezialität, oft gewürzt und im Ganzen geräuchert oder gebraten. Klassiker beim Wirten und auf der Brotzeit.',
+      beispiel: 'A guads Wammerl mit Knödl, des is a Festessen!',
+      beispiel_hd: 'Ein gutes Bauchspeck mit Knödeln, das ist ein Festessen!',
       kategorie: 'essen'
     },
     {
@@ -112,20 +79,8 @@ export default {
       ausdruck: 'Dirndl',
       hochdeutsch: 'Tracht / Mädchen',
       bedeutung: 'Zweifach: das traditionelle bayerisch-österreichische Trachtenkleid, aber auch ein Mädchen — die Wörter sind verwandt.',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'by-015',
-      ausdruck: 'Spezi',
-      hochdeutsch: 'Freund / Cola-Mix',
-      bedeutung: 'Doppeldeutig! „Mei Spezi" = mein bester Freund / Kumpel. Aber „a Spezi" trinken = ein Cola-Orangenlimonade-Mischgetränk.',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'by-016',
-      ausdruck: 'Gschwoi',
-      hochdeutsch: 'Geschwollen / aufgeschwollen',
-      bedeutung: 'Beschreibt etwas, was aufgequollen oder geschwollen ist — auch übertragen für überheblich-aufgeblasenes Verhalten.',
+      beispiel: 'Mei, schau dir des fesche Dirndl o!',
+      beispiel_hd: 'Mein Gott, schau dir das hübsche Mädchen an!',
       kategorie: 'menschen'
     },
     {
@@ -133,6 +88,8 @@ export default {
       ausdruck: 'Boarisch',
       hochdeutsch: 'Bayerisch (auf bayerisch)',
       bedeutung: 'Die Eigenbezeichnung des Dialekts. „A boarischer Bua red boarisch" — ein bayerischer Junge spricht bayerisch.',
+      beispiel: 'Bei uns dahoam ren\'ma nur Boarisch.',
+      beispiel_hd: 'Bei uns zuhause sprechen wir nur Bayerisch.',
       kategorie: 'redensart'
     },
     {
@@ -140,6 +97,8 @@ export default {
       ausdruck: 'Resi',
       hochdeutsch: 'Theresia',
       bedeutung: 'Kurzform für Theresia — auch der Name, von dem das Oktoberfest seinen Festplatz hat („Theresienwiese", nach der Hochzeit von König Ludwig I. mit Therese von Sachsen-Hildburghausen, 1810).',
+      beispiel: 'D\'Resi bringt uns no a Maß.',
+      beispiel_hd: 'Die Resi bringt uns noch eine Maß.',
       kategorie: 'menschen'
     },
     {
@@ -150,13 +109,6 @@ export default {
       beispiel: 'I sog\'s dir fei!',
       beispiel_hd: 'Ich sag\'s dir wirklich!',
       kategorie: 'redensart'
-    },
-    {
-      id: 'by-020',
-      ausdruck: 'Hoibe',
-      hochdeutsch: 'Halbes Bier (0,5L)',
-      bedeutung: 'Ein halber Liter Bier, im Glas serviert. Die kleinere Schwester der Maß. „I nimm a Hoibe."',
-      kategorie: 'essen'
     },
     {
       id: 'by-021',
@@ -202,15 +154,6 @@ export default {
       beispiel: 'I kauf noch schnell drei Semmel beim Bäcker.',
       beispiel_hd: 'Ich kaufe noch schnell drei Brötchen beim Bäcker.',
       kategorie: 'essen'
-    },
-    {
-      id: 'by-026',
-      ausdruck: 'Bazi',
-      hochdeutsch: 'Schlingel / Schlawiner',
-      bedeutung: 'Eine liebevoll-spöttische Bezeichnung für einen durchtriebenen, aber charmanten Kerl. Der Bazi ist nicht bösartig — er ist einfach immer einen Schritt voraus und weiß es zu nutzen. In Bayern ist es oft eher ein Kompliment als eine Beleidigung.',
-      beispiel: 'Du oidar Bazi, wie hast du des wieder hingekriagt?',
-      beispiel_hd: 'Du alter Schlingel, wie hast du das wieder hingekriegt?',
-      kategorie: 'menschen'
     },
     {
       id: 'by-027',
@@ -366,19 +309,12 @@ export default {
       kategorie: 'gefuehle'
     },
     {
-      id: 'by-044',
-      ausdruck: 'Bussi',
-      hochdeutsch: 'Küsschen / Kuss',
-      bedeutung: 'Ein herzliches Küsschen zur Begrüßung oder zum Abschied — in Bayern und Österreich bei Frauen untereinander und zwischen Verwandten sehr verbreitet. „A Bussi geben" ist ein Ausdruck von Zuneigung und Herzlichkeit, der zum bayerischen Lebensgefühl gehört.',
-      beispiel: 'Tschüss Oma, gib mir noch a Bussi!',
-      beispiel_hd: 'Tschüss Oma, gib mir noch ein Küsschen!',
-      kategorie: 'gefuehle'
-    },
-    {
       id: 'by-045',
       ausdruck: 'Hias',
       hochdeutsch: 'Matthias',
       bedeutung: 'Die bairische Kurzform des Namens Matthias — ein sehr typischer bayerischer Vorname. Der „Hias" steht oft stellvertretend für den bodenständigen, ländlichen Bayern schlechthin. In der Literatur und im Volkstheater taucht er als Typus des ehrlichen, etwas naiven Landmanns auf.',
+      beispiel: 'Der Hias is a gscheider Bua aus\'m Dorf.',
+      beispiel_hd: 'Der Matthias ist ein kluger Junge aus dem Dorf.',
       kategorie: 'menschen'
     },
     {
@@ -463,15 +399,6 @@ export default {
       kategorie: 'alltag'
     },
     {
-      id: 'by-055',
-      ausdruck: 'Hax\'n',
-      hochdeutsch: 'Bein / Fuß / Schenkel',
-      bedeutung: 'Die „Hax\'n" sind im Bairischen die Beine — von „Hachse" (mhd. hahse = Kniebeuge). Im Plural verwendet, oft als deftiger Ersatz für „Beine": „Sei nimmt d\'Hax\'n unter d\'Arm" (sie nimmt die Beine unter die Arme = sie läuft schnell). Bei Tieren ist die Hax\'n auch der ganze Schenkel — daher „Schweinshax\'n" für die Schweineschulter, ein klassisches bayerisches Wirtshausgericht.',
-      beispiel: 'Mei Hax\'n tun weh nach dem langa Marsch.',
-      beispiel_hd: 'Meine Beine tun weh nach dem langen Marsch.',
-      kategorie: 'koerper'
-    },
-    {
       id: 'by-056',
       ausdruck: 'Goschn',
       hochdeutsch: 'Mund (derb)',
@@ -479,15 +406,6 @@ export default {
       beispiel: 'Hoid amoi dei Goschn, du redst zuviel!',
       beispiel_hd: 'Halt mal den Mund, du redest zu viel!',
       kategorie: 'koerper'
-    },
-    {
-      id: 'by-057',
-      ausdruck: 'Trumm',
-      hochdeutsch: 'Großes Stück / Riesending',
-      bedeutung: 'Ein „Trumm" ist ein außerordentlich großes Stück von etwas — ein „Trumm Brot" ist ein gewaltiger Brotlaib, ein „Trumm Kerl" ein riesiger Mann, ein „Trumm Hund" ein gewaltiger Hund. Das Wort drückt Verwunderung über die Größe aus. Im Plural „Trümma" hat es auch die Bedeutung „Trümmer". Bairisch ist es ein universelles Wort für „etwas Großes".',
-      beispiel: 'Schau dir des Trumm Auto an — passt ja in koa Parklücke!',
-      beispiel_hd: 'Schau dir das Riesending von Auto an — passt ja in keine Parklücke!',
-      kategorie: 'alltag'
     },
     {
       id: 'by-058',
@@ -575,8 +493,8 @@ export default {
       ausdruck: 'Goaßlschnalzn',
       hochdeutsch: 'Peitschenknallen (Volkskunst)',
       bedeutung: 'Das „Goaßlschnalzn" ist eine alpenländische Volkskunst: Mit einer langen Lederpeitsche („Goaßl") werden rhythmische Knallgeräusche erzeugt — solo oder in Gruppen. Ursprünglich verwendeten Hirten die Goaßl, um das Vieh zu lenken; heute ist das Goaßlschnalzn ein eigenständiger Brauchtumssport mit Vereinen und Wettkämpfen. Bei Festumzügen oder beim Almabtrieb gibt es Goaßlschnalzn-Vorführungen — laut und beeindruckend.',
-      beispiel: 'Beim Almtanz wird gschnalzt, dass es bis ins Tal hallt.',
-      beispiel_hd: 'Beim Almtanz wird geknallt, dass es bis ins Tal hallt.',
+      beispiel: 'Beim Almtanz hört ma s\'Goaßlschnalzn bis ins Tal nunter.',
+      beispiel_hd: 'Beim Almtanz hört man das Peitschenknallen bis ins Tal hinunter.',
       kategorie: 'musik'
     },
     {
@@ -602,8 +520,8 @@ export default {
       ausdruck: 'Chiemsee',
       hochdeutsch: 'Chiemsee (Bayerns Meer)',
       bedeutung: 'Der Chiemsee — wegen seiner Größe „Bayerisches Meer" genannt — ist der drittgrößte See Deutschlands. Mit drei Inseln (Herreninsel mit Schloss Herrenchiemsee von Ludwig II., Fraueninsel mit dem berühmten Kloster und Krautinsel) ist er ein Ausflugsparadies. Die alte Chiemseebahn und die historischen Raddampfer fahren noch heute. Im Sommer voll von Seglern, Surfern und Badenden.',
-      beispiel: 'Mit\'m Dampfer auf d\'Herreninsel zum Schloss — des ist Pflicht.',
-      beispiel_hd: 'Mit dem Dampfer auf die Herreninsel zum Schloss — das ist Pflicht.',
+      beispiel: 'Mit\'m Dampfer übern Chiemsee auf d\'Herreninsel — des ist Pflicht!',
+      beispiel_hd: 'Mit dem Dampfer über den Chiemsee auf die Herreninsel — das ist Pflicht!',
       kategorie: 'orte'
     },
     {
@@ -632,15 +550,6 @@ export default {
       beispiel: 'D\'Allianz Arena leuchtet rot — heut spielt da FCB!',
       beispiel_hd: 'Die Allianz Arena leuchtet rot — heute spielt der FCB!',
       kategorie: 'sport'
-    },
-    {
-      id: 'by-074',
-      ausdruck: 'Münchner Kindl',
-      hochdeutsch: 'Münchner Kindl (Stadtwappen-Figur)',
-      bedeutung: 'Das „Münchner Kindl" ist die Wappenfigur Münchens: ein junger Mönch im schwarzen Habit, das auf das Stadtgründungsdatum von 1158 zurückgeht. Der Name München kommt von „Mönchen" (bei den Mönchen). Bei der Wiesn führt traditionell ein „Münchner Kindl" auf dem Pferd den Festzug an. Die Figur ist im Stadtwappen, auf Trambahnen, auf Briefen — überall in München präsent. Symbol für Stadtidentität.',
-      beispiel: 'S\'Münchner Kindl reitet vorne weg bei der Wiesn-Parade.',
-      beispiel_hd: 'Das Münchner Kindl reitet vorne weg bei der Wiesn-Parade.',
-      kategorie: 'menschen'
     },
     {
       id: 'by-075',
@@ -760,15 +669,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'by-088',
-      ausdruck: 'Hofbräuhaus',
-      hochdeutsch: 'Münchner Hofbräuhaus',
-      bedeutung: 'Das Hofbräuhaus am Platzl in München ist das bekannteste Wirtshaus der Welt — 1589 vom bayerischen Herzog Wilhelm V. gegründet. Mit Plätzen für über 3.500 Gäste, einer Blaskapelle, Lederhosen-Kellnern und literweise Bier ist es bayerisches Klischee in Reinkultur. Internationale Touristenmagnet, aber trotzdem authentisch. Das Lied „In München steht ein Hofbräuhaus" ist weltberühmt. Hier wird der Maßkrug rituell gehoben.',
-      beispiel: 'Im Hofbräuhaus a Maß trinken und die Kapelle hör\'n — Münchnerisch!',
-      beispiel_hd: 'Im Hofbräuhaus eine Maß trinken und die Kapelle hören — Münchnerisch!',
-      kategorie: 'orte'
-    },
-    {
       id: 'by-089',
       ausdruck: 'Pumuckl',
       hochdeutsch: 'Pumuckl (Kobold-Figur von Ellis Kaut)',
@@ -859,15 +759,6 @@ export default {
       kategorie: 'alltag'
     },
     {
-      id: 'by-099',
-      ausdruck: 'Watschnbaam',
-      hochdeutsch: 'Streitsüchtiger Mensch',
-      bedeutung: 'Ein „Watschnbaam" — wörtlich „Ohrfeigenbaum" — ist im Bairischen jemand, der schnell Ohrfeigen verteilt oder ständig Streit anfängt. Das Bild ist saftig: ein Baum, von dem Watschn (Ohrfeigen) fallen wie Äpfel. „A echter Watschnbaam" ist eine derbe Charakterisierung für einen aggressiven Zeitgenossen, der lieber zuschlägt als diskutiert. Heute meist scherzhaft verwendet.',
-      beispiel: 'Mit dem oidn Watschnbaam streit i mi liaber net.',
-      beispiel_hd: 'Mit dem alten Streithammel streite ich mich lieber nicht.',
-      kategorie: 'schimpf'
-    },
-    {
       id: 'by-100',
       ausdruck: 'Wuid',
       hochdeutsch: 'Wild / verrückt / ungestüm',
@@ -880,7 +771,7 @@ export default {
       id: 'by-101',
       ausdruck: 'Ozapft is!',
       hochdeutsch: 'Es ist angezapft!',
-      bedeutung: 'Der berühmteste bairische Satz der Welt — gesprochen vom Münchner Oberbürgermeister beim ersten Schlag in das Fass auf der Wiesn. Der Spruch eröffnet seit 1950 (eingeführt von OB Thomas Wimmer) offiziell das Oktoberfest. Je weniger Schläge der OB für den Anstich braucht, desto besser das politische Omen — Rekordhalter ist Christian Ude mit zwei Schlägen. Ein Satz, der weltweit für bayerisches Lebensgefühl steht.',
+      bedeutung: '„Ozapft is!" — der berühmteste bairische Satz der Welt — wird vom Münchner Oberbürgermeister beim ersten Schlag in das Fass auf der Wiesn gerufen. Der Anzapf-Spruch eröffnet seit 1950 (eingeführt von OB Thomas Wimmer) offiziell das Oktoberfest. Je weniger Schläge der OB für den Anstich braucht, bis „Ozapft is!" gerufen werden kann, desto besser das politische Omen — Rekordhalter ist Christian Ude mit zwei Schlägen. Ein Satz, der weltweit für bayerisches Lebensgefühl steht.',
       beispiel: '„Ozapft is!" — und a halbe Million Leit jubeln auf der Wiesn.',
       beispiel_hd: '„Es ist angezapft!" — und eine halbe Million Leute jubeln auf der Wiesn.',
       kategorie: 'redensart'
@@ -1073,15 +964,6 @@ export default {
       beispiel: 'Komm, mir wuzln a Rundn am Tisch hinten!',
       beispiel_hd: 'Komm, wir spielen eine Runde Tischkicker hinten!',
       kategorie: 'sport'
-    },
-    {
-      id: 'by-123',
-      ausdruck: 'Boazn',
-      hochdeutsch: 'Spelunke / einfaches Wirtshaus',
-      bedeutung: 'Die „Boazn" ist im Münchner Bairisch eine kleine, einfache Eckkneipe — oft heruntergekommen, aber kultig. Im Gegensatz zum gepflegten Wirtshaus ist die Boazn der Ort, wo Stammgäste am Tresen sitzen, der Wirt jeden mit Namen kennt und das Bier billig ist. Berühmte Münchner Boazn wie das „Tagträumer" oder „Trachtenvogl" haben Kult-Status. „A\'Hoiwe in da Boazn" — pure Münchner Lebensart.',
-      beispiel: 'In da Boazn an der Eck triff i mi mit\'m Sepp.',
-      beispiel_hd: 'In der Spelunke an der Ecke treffe ich mich mit dem Sepp.',
-      kategorie: 'orte'
     },
     {
       id: 'by-124',
@@ -1345,15 +1227,6 @@ export default {
       kategorie: 'schimpf'
     },
     {
-      id: 'by-153',
-      ausdruck: 'Bussi',
-      hochdeutsch: 'Küsschen',
-      bedeutung: 'Ein „Bussi" ist ein liebevolles Küsschen — auf die Wange, Stirn oder den Mund. Sehr verbreitet zur Begrüßung und Verabschiedung in Bayern und Österreich, vor allem in Familie und Freundeskreis. „Bussi-Bussi-Gesellschaft" ist eine abwertende Bezeichnung für die High Society. Diminutiv von „Buss" (Kuss). Auch in Liebesbriefen üblich: „Ganz liebe Bussi!"',
-      beispiel: 'Gib der Oma a Bussi zum Abschied!',
-      beispiel_hd: 'Gib der Oma ein Küsschen zum Abschied!',
-      kategorie: 'gefuehle'
-    },
-    {
       id: 'by-154',
       ausdruck: 'Brotzeit',
       hochdeutsch: 'Brotzeit / Brotmahlzeit',
@@ -1361,15 +1234,6 @@ export default {
       beispiel: 'Um zehni machma a zünftige Brotzeit auf der Alm.',
       beispiel_hd: 'Um zehn machen wir eine zünftige Brotzeit auf der Alm.',
       kategorie: 'essen'
-    },
-    {
-      id: 'by-155',
-      ausdruck: 'Bua',
-      hochdeutsch: 'Junge / Bursche',
-      bedeutung: 'Der „Bua" ist im Bayerischen jeder männliche Jugendliche oder junge Mann — von schulpflichtig bis weit über 30. Anrede unter Freunden („Bua, kumm hera!"), zärtlich für den eigenen Sohn („mei Bua") oder als spöttischer Hinweis auf Unreife. Plural: „Buam" oder „Buabn". Mädchen sind dagegen „Madl". Tief im bayerischen Sprachgebrauch verwurzelt.',
-      beispiel: 'D\'Buam san scho zum Baden am Bach.',
-      beispiel_hd: 'Die Jungs sind schon zum Baden am Bach.',
-      kategorie: 'menschen'
     },
     {
       id: 'by-156',
@@ -1397,15 +1261,6 @@ export default {
       beispiel: 'Der Hansi is\' a echter Bazi — aber a sympathischer!',
       beispiel_hd: 'Der Hansi ist ein echter Schlitzohr — aber ein sympathischer!',
       kategorie: 'menschen'
-    },
-    {
-      id: 'by-159',
-      ausdruck: 'Goaß',
-      hochdeutsch: 'Ziege',
-      bedeutung: 'Die „Goaß" ist die Ziege — im Bayerischen oft Symbol für ländliche Idylle und Almwirtschaft. „Da Goaßhirt" ist der Ziegenhirte, ein traditioneller Beruf in den Alpen. Im übertragenen Sinn: „du oide Goaß!" als (gar nicht so) liebevolle Anrede. „Goaßmaß" ist außerdem ein bayerisches Mischgetränk aus Cola, Kirschlikör und einer Maß Bier — ein wahrer Knockout.',
-      beispiel: 'Auf der Alm hat\'s no a paar Goaßn ghabt.',
-      beispiel_hd: 'Auf der Alm hat es noch ein paar Ziegen gegeben.',
-      kategorie: 'natur'
     },
     {
       id: 'by-160',
@@ -1534,15 +1389,6 @@ export default {
       kategorie: 'begruessung'
     },
     {
-      id: 'by-174',
-      ausdruck: 'Kraxn',
-      hochdeutsch: 'Korb / Rückentrage',
-      bedeutung: 'Die „Kraxn" ist ein Tragekorb oder eine Rückentrage — traditionell für Wäsche, Holz, Heu oder Almgüter. Wurde von Almbauern und Sennerinnen verwendet, um Schwergut über die Berge zu schleppen. Heute meist als Hüttenausstattung oder Wanderdeko. „Auf d\'Kraxn nehmen" bedeutet etwas auf den Rücken laden. Im übertragenen Sinn: „a schwere Kraxn" ist eine schwere Last oder Aufgabe.',
-      beispiel: 'D\'Sennerin hat d\'Kraxn voller Käs zum Bauernmarkt tragn.',
-      beispiel_hd: 'Die Sennerin hat den Korb voller Käse zum Bauernmarkt getragen.',
-      kategorie: 'alltag'
-    },
-    {
       id: 'by-175',
       ausdruck: 'Halbe',
       hochdeutsch: 'halber Liter Bier',
@@ -1550,15 +1396,6 @@ export default {
       beispiel: 'Bring ma a Halbe Helles, bittschön!',
       beispiel_hd: 'Bring mir einen halben Liter Helles, bitte!',
       kategorie: 'essen'
-    },
-    {
-      id: 'by-176',
-      ausdruck: 'Saupreiß',
-      hochdeutsch: 'Norddeutscher / Berliner (abwertend)',
-      bedeutung: 'Der „Saupreiß" ist die bayerische Spottbezeichnung für Norddeutsche, vor allem Berliner und Preußen. „Sau-" als Verstärker, „Preiß" für Preuße. Mehr Klischee-Polemik als echter Hass — die Bayern haben ein hassgeliebtes Verhältnis zu „den Preußen". Stammt aus der Reichseinigung 1871, als das katholisch-konservative Bayern unter preußische Herrschaft kam. Heute ironisch verwendet, oft selbstironisch.',
-      beispiel: 'A Saupreiß is\' a Saupreiß — aber net jeder is\' a schlechter.',
-      beispiel_hd: 'Ein Norddeutscher ist ein Norddeutscher — aber nicht jeder ist ein schlechter.',
-      kategorie: 'menschen'
     },
     {
       id: 'by-177',
@@ -1655,7 +1492,7 @@ export default {
       ausdruck: 'Gschtod',
       hochdeutsch: 'Gestalt / Aussehen',
       bedeutung: 'Die „Gschtod" oder „G\'stod" ist im Bayerischen die Gestalt, das Aussehen, die äußere Erscheinung eines Menschen. „A guade G\'stod" ist ein stattliches Aussehen. „Wos a G\'stod!" — Was für eine Erscheinung! Der Ausdruck zeigt die bayerische Wertschätzung für äußere Stattlichkeit und körperliche Präsenz, besonders in traditionellen Kontexten wie Trachten-Festen oder Schuhplattler-Auftritten.',
-      beispiel: 'Der Bua hot a echte Bauern-G\'stod!',
+      beispiel: 'Der Bua hot a echte Bauern-Gschtod!',
       beispiel_hd: 'Der Junge hat eine echte Bauern-Statur!',
       kategorie: 'menschen'
     },
@@ -1795,15 +1632,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'by-203',
-      ausdruck: 'Saupreiß',
-      hochdeutsch: 'Preuße (abwertend)',
-      bedeutung: 'Der „Saupreiß" ist im Bayerischen die humorvoll-abwertende Bezeichnung für einen Norddeutschen oder generell jemanden, der nicht aus Bayern stammt. Ein historischer Begriff, der die jahrhundertelangen Spannungen zwischen Bayern und Preußen widerspiegelt. „Sauer-" und „Preuße" verbinden sich zur Schimpfformel. Heute meist humorvoll gebraucht — wenn auch nicht immer harmlos. Ein Wort mit kulturhistorischem Gewicht.',
-      beispiel: 'Der neue Chef is a Saupreiß aus Hamburg!',
-      beispiel_hd: 'Der neue Chef ist ein Preuße aus Hamburg!',
-      kategorie: 'schimpf'
-    },
-    {
       id: 'by-204',
       ausdruck: 'Schmalznudel',
       hochdeutsch: 'Schmalznudel / Auszogne',
@@ -1865,6 +1693,447 @@ export default {
       beispiel: 'Mia san mia — und stoiz darauf!',
       beispiel_hd: 'Wir sind wir — und stolz darauf!',
       kategorie: 'menschen'
+    },
+    {
+      id: 'by-211',
+      ausdruck: 'Bussi',
+      hochdeutsch: 'Küsschen',
+      bedeutung: 'Das „Bussi" ist im Bayerischen das Küsschen — eine zärtliche, alltägliche Verkleinerung. „A Bussi für d\'Oma!" Eine warme, familiäre Wortprägung, die im Bayerischen und Österreichischen gleichermaßen verbreitet ist. „Bussi-Bussi" als Begrüßung zwischen Frauen. Auch im Karneval und bei Festen wichtig — das Bussi gehört zur bayerischen Geselligkeitskultur.',
+      beispiel: 'Geh, gib der Oma a Bussi vor\'m Schlafa!',
+      beispiel_hd: 'Geh, gib der Oma ein Küsschen vor dem Schlafen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-213',
+      ausdruck: 'Trinkfest',
+      hochdeutsch: 'Trinkfest / Trinkbeständig',
+      bedeutung: '„Trinkfest" beschreibt im Bayerischen jemanden, der viel Bier trinken kann, ohne betrunken zu werden — eine respektierte Eigenschaft in der bayerischen Trinkkultur. „Mei Großvater war trinkfest, der konnt 10 Mass am Tag!" Im Bierland Bayern eine wichtige Sozialkompetenz, besonders auf dem Oktoberfest. Mit Bewunderung verwendet.',
+      beispiel: 'Bei der Wiesn-Saison muss man trinkfest sein.',
+      beispiel_hd: 'Bei der Wiesn-Saison muss man trinkfest sein.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-214',
+      ausdruck: 'Schnitz',
+      hochdeutsch: 'Schnitt / Scheibe / Klein',
+      bedeutung: 'Der „Schnitz" ist im Bayerischen ein Schnitt, eine Scheibe oder etwas Kleines. „A Schnitz Käs" ist ein Käsescheibchen, „a Schnitz Brot" ein Brotstück. Verbreitet im Süddeutschen Raum. Auch in Komposita: „Apfelschnitz" (Apfelscheibe), „Brotzeit-Schnitz". Eine kurze, knappe bayerische Wortprägung.',
+      beispiel: 'Schneid mer no a Schnitz Brot ab.',
+      beispiel_hd: 'Schneide mir noch ein Stück Brot ab.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-216',
+      ausdruck: 'Hoamatfilm',
+      hochdeutsch: 'Heimatfilm',
+      bedeutung: 'Der „Hoamatfilm" ist eine bayerische und österreichische Filmtradition — meist romantische Filme in alpiner Landschaft, mit Trachten, Volksmusik, einfachen Charakteren. Klassiker wie „Die Geierwally", „Der Förster vom Silberwald", „Schwarzwaldmädel" prägten Generationen. Heute oft nostalgisch verklärt, aber auch als kitschig kritisiert. Wichtiger Teil der bayerischen Kultur-Identität.',
+      beispiel: 'Am Sunntag-Nachmittag schaut Oma immer an Hoamatfilm.',
+      beispiel_hd: 'Am Sonntagnachmittag schaut Oma immer einen Heimatfilm.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-218',
+      ausdruck: 'Bratzl',
+      hochdeutsch: 'Frikadelle / Bulette (klein)',
+      bedeutung: 'Das „Bratzl" ist im Bayerischen eine kleine Frikadelle oder Bratlinge — auch als „Bratzerl" verkleinert. „A Bratzl mit Kartoffelsalat!" Eine bodenständige bayerische Mahlzeit. Im Wirtshaus, bei Picknicks, beim Kindergeburtstag. Die Verkleinerung „-l" gibt der Frikadelle warmen Klang. Verwandt mit dem Berliner „Bulette".',
+      beispiel: 'Für d\'Brotzeit hab i a paar Bratzl gemacht.',
+      beispiel_hd: 'Für die Brotzeit habe ich ein paar Frikadellen gemacht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-219',
+      ausdruck: 'Schoaf',
+      hochdeutsch: 'Schaf',
+      bedeutung: 'Das „Schoaf" ist im Bayerischen das Schaf — mit der charakteristischen bayerischen Aussprache (oa statt a). „A Schoaf auf der Alm!" In den bayerischen Alpen und im Voralpenland weit verbreitet. Wichtiges Nutztier für Wolle, Fleisch, Milch. Auch übertragen: „a Schoaf sein" (dümmlich, naiv sein). Eine klangvolle, charakteristische bayerische Tierbezeichnung.',
+      beispiel: 'Auf der Alm grasen d\'Schoaf den ganzen Sommer.',
+      beispiel_hd: 'Auf der Alm grasen die Schafe den ganzen Sommer.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-220',
+      ausdruck: 'Schmankerl-Tour',
+      hochdeutsch: 'Spezialitäten-Tour',
+      bedeutung: 'Die „Schmankerl-Tour" ist eine bayerische Genuss-Tour — von Wirtshaus zu Wirtshaus oder von Spezialität zu Spezialität. „Am Wochenende machen mir a Schmankerl-Tour durchs Allgäu!" Beliebt bei Touristen und Bayern selbst — Käse, Wurst, Brezn, Bier, Kuchen probieren. Eine wichtige Form bayerischer Geselligkeit und kulinarischer Erkundung.',
+      beispiel: 'Auf der Schmankerl-Tour probiern mir alle Spezialitäten.',
+      beispiel_hd: 'Auf der Spezialitäten-Tour probieren wir alle Spezialitäten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-221',
+      ausdruck: 'Brunnen',
+      hochdeutsch: 'Brunnen',
+      bedeutung: 'Der „Brunnen" ist im Bayerischen oft das Zentrum eines Dorfes oder Marktplatzes — die alte Wasserstelle, heute Schmuckstück. Berühmte bayerische Brunnen: Wittelsbacher Brunnen München, Drei-Röhren-Brunnen Salzburg-Nähe. Auch als Treffpunkt: „Am Brunnen treffen mir uns!" In ländlichen Gebieten noch immer wichtige Trinkwasserquelle.',
+      beispiel: 'Am Dorfbrunnen treffen sich die Leut zum Ratschen.',
+      beispiel_hd: 'Am Dorfbrunnen treffen sich die Leute zum Plaudern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-222',
+      ausdruck: 'Heimet',
+      hochdeutsch: 'Heimat (alemannisch-bayerisch)',
+      bedeutung: 'Die „Heimet" oder „Hoamat" ist im Bayerischen ein zentraler emotionaler Begriff — die Heimat als Ort und Gefühl. „Bayern is mei Hoamat!" Verbunden mit Landschaft, Sprache, Bräuchen, Familie. Hoamatfilme, Hoamatlieder, Hoamatabende sind beliebt. Die bayerische Hoamat-Identität ist stark und manchmal etwas verteidigend gegenüber dem Rest Deutschlands.',
+      beispiel: 'Wo ist dei Heimet? — In Niederbayern, freili!',
+      beispiel_hd: 'Wo ist deine Heimat? — In Niederbayern, klar!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-223',
+      ausdruck: 'Klausnknecht',
+      hochdeutsch: 'Klausenknecht (Begleiter des Nikolaus)',
+      bedeutung: 'Der „Klausnknecht" ist in den bayerischen Alpen-Regionen der Begleiter des Nikolaus (Kloas) — meistens furchteinflößend verkleidet, als Krampus oder Buttnmandl. „Am Nikolausabend kommt der Klausnknecht zu de Kinder!" Bezirklich verschieden — Pongauer Tresterer, Berchtesgadner Buttnmandl, Mittenwalder Schedderer. Wichtige alpine Tradition.',
+      beispiel: 'D\'Kinder fürchten sich vor\'m Klausnknecht.',
+      beispiel_hd: 'Die Kinder fürchten sich vor dem Klausenknecht.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-224',
+      ausdruck: 'Zwirbei',
+      hochdeutsch: 'Wirbel / Unruhe',
+      bedeutung: 'Der „Zwirbei" ist im Bayerischen ein Wirbel, eine Unruhe — entweder ein echter Wasserwirbel oder übertragen eine hektische, durcheinander geratene Situation. „Bei dem Zwirbei kann mer net konzentriert arbeiten!" Lautmalerisch mit dem rotierenden Klang. Eine plastische, dynamische bayerische Wortprägung.',
+      beispiel: 'In der Küchn is heut a Zwirbei wie noch nie.',
+      beispiel_hd: 'In der Küche ist heute ein Wirbel wie noch nie.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-226',
+      ausdruck: 'Hoibe',
+      hochdeutsch: 'Halbe (halbe Maß Bier)',
+      bedeutung: 'Die „Hoibe" ist im Bayerischen die halbe Maß Bier — also 0,5 Liter. Kleiner als die Mass (1 Liter), größer als die Stange (0,2 L). „A Hoibe Helles, bitte!" Im Wirtshaus eine häufige Bestellung — wenn die ganze Maß zu viel wäre. Die typische bayerische Aussprache („Hoibe" statt „Halbe") zeigt den Diphthong „oi".',
+      beispiel: 'A Hoibe und a Brezn, des passt für d\'Brotzeit!',
+      beispiel_hd: 'Eine Halbe und eine Brezel, das passt für die Brotzeit!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-227',
+      ausdruck: 'Hartsei',
+      hochdeutsch: 'Hartherzig',
+      bedeutung: '„Hartsei" oder „hartherzig" beschreibt im Bayerischen einen gefühlskalten, unbarmherzigen Menschen. „Sei net so hartsei mit deinem Bua!" Verbreiteter bayerischer Wertekanon: Herzlichkeit und Mitgefühl werden geschätzt, Hartsei verurteilt. Eine klare moralische Kategorisierung mit emotionaler Wirkung. Wird in religiös-kirchlichen Kontexten oft erwähnt.',
+      beispiel: 'Der Direktor is so hartsei zu seine Mitarbeiter.',
+      beispiel_hd: 'Der Direktor ist so hartherzig zu seinen Mitarbeitern.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-230',
+      ausdruck: 'Spotzn',
+      hochdeutsch: 'Spatzen / Frecher Mensch',
+      bedeutung: 'Die „Spotzn" sind im Bayerischen die Spatzen — die häufigen Stadtvögel. Auch übertragen für freche, lebhafte Kinder oder erwachsene Personen: „Du Spotzn!" Im Bayerischen bekannt das Lied „Spatzl, sing ein Liedl mir!". Die Verkleinerungsform „-n" gibt dem Wort weichen Klang. Eine plastische, bildhafte bayerische Charakterisierung.',
+      beispiel: 'D\'Spotzn pickn d\'Brösln vom Tisch.',
+      beispiel_hd: 'Die Spatzen picken die Krümel vom Tisch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-231',
+      ausdruck: 'Gschwoi',
+      hochdeutsch: 'Schwellung / Geschwulst',
+      bedeutung: 'Das „Gschwoi" ist im Bayerischen eine Schwellung, ein Bluterguss oder eine Beule. „Vom Sturz hab i a großes Gschwoi am Knie!" Eine drastische, plastische bayerische Wortprägung mit lautmalerischem Klang. Auch in Komposita: „Augn-Gschwoi" (Augenring). Verbunden mit der körperlichen Wahrnehmung von Schmerz und Schwellung.',
+      beispiel: 'D\'Beule am Kopf is a richtigs Gschwoi.',
+      beispiel_hd: 'Die Beule am Kopf ist eine richtige Schwellung.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-233',
+      ausdruck: 'Hax\'nbrater',
+      hochdeutsch: 'Haxn-Brater / Schweinshaxe-Wirt',
+      bedeutung: 'Der „Hax\'nbrater" ist im Bayerischen ein Wirt, der besonders gute Schweinshaxen brät — oder generell eine Hax\'n-spezialisierte Wirtschaft. „Im Hax\'nbrater an der Ecke gibts die beste Hax\'n vo München!" Eine ehrenvolle bayerische Berufsbezeichnung. Die berühmte „Schweinshax\'n" mit krosser Schwarte ist klassische bayerische Wirtshaus-Küche.',
+      beispiel: 'Der Hax\'nbrater hat heut wieder seine beste Form!',
+      beispiel_hd: 'Der Haxn-Brater hat heute wieder seine beste Form!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-235',
+      ausdruck: 'Watschnbam',
+      hochdeutsch: 'Schlagbaum / Boxstand',
+      bedeutung: 'Der „Watschnbam" ist im Bayerischen — etwas spielerisch — ein Boxstand auf dem Volksfest oder eine Person, die Ohrfeigen einsteckt. Vom „Watschn" (Ohrfeige) und „Bam" (Baum). „Auf der Wiesn gibts noch den alten Watschnbam!" Verbunden mit den traditionellen Volksfest-Vergnügungen. Heute aus Sicherheitsgründen seltener, aber als Wort lebt es weiter.',
+      beispiel: 'Beim Volksfest hatten wir früher den Watschnbam.',
+      beispiel_hd: 'Beim Volksfest hatten wir früher den Watschen-Stand.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-236',
+      ausdruck: 'Rotzgschicht',
+      hochdeutsch: 'Erkältung / Rotzige Geschichte',
+      bedeutung: 'Eine „Rotzgschicht" ist im Bayerischen eine schwere Erkältung mit Schnupfen — eine drastische, derbe Bezeichnung mit lautmalerischem Bezug. „I hab a richt\'ge Rotzgschicht!" Auch übertragen für eine üble, unangenehme Sache. Eine charakteristische bayerische Direktheit beim Benennen von Krankheiten. Mild bis drastisch je nach Tonfall.',
+      beispiel: 'Mit der Rotzgschicht bleib i im Bett.',
+      beispiel_hd: 'Mit der Erkältung bleibe ich im Bett.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-237',
+      ausdruck: 'Schmieranderl',
+      hochdeutsch: 'Schmierer / Faulpelz',
+      bedeutung: 'Ein „Schmieranderl" ist im Bayerischen jemand, der schlampig arbeitet — alles „verschmiert" und nicht ordentlich macht. „Du Schmieranderl, jetz schreib das nochmal sauber!" Mild bis ernsthaft. Eine plastische, bildhafte bayerische Charakterisierung. Verbreitet in Schul- und Arbeits-Kontexten. Die bayerische Wertschätzung für saubere Arbeit zeigt sich in solchen Bezeichnungen.',
+      beispiel: 'Schreib das nochmal, du Schmieranderl!',
+      beispiel_hd: 'Schreib das nochmal, du Schmierer!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-241',
+      ausdruck: 'Dahoam',
+      hochdeutsch: 'Daheim / zu Hause',
+      bedeutung: '„Dahoam" ist eines der gefühlsstärksten Wörter im Bayerischen — es bedeutet nicht nur „zu Hause", sondern auch Heimat, Geborgenheit, Zugehörigkeit. Die BR-Serie „Dahoam is Dahoam" hat den Begriff bundesweit bekannt gemacht. „Wo i her bin, des is mei Dahoam." Bairisch ausgesprochen mit langem „oa"-Diphthong, der typisch ist für den oberbayerischen Sprachraum. Mehr als nur ein Ort — ein Lebensgefühl.',
+      beispiel: 'Nach drei Wocha Urlaub is\' guad wieda dahoam zu sei.',
+      beispiel_hd: 'Nach drei Wochen Urlaub ist es gut, wieder zu Hause zu sein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-242',
+      ausdruck: 'Krautkrapferl',
+      hochdeutsch: 'Krautkrapfen (gefüllte Teigtaschen)',
+      bedeutung: 'Die „Krautkrapferl" sind eine traditionelle altbayerische Mehlspeise — Nudelteig wird mit Sauerkraut und Speck gefüllt, in Form gerollt und in der Pfanne goldbraun gebraten. Ein klassisches Arme-Leute-Essen aus der Oberpfalz und Niederbayern, das heute als bayerische Spezialität wiederentdeckt wird. „A guads Krautkrapferl macht satt und glücklich!" Oft mit Brühe oder grünem Salat serviert.',
+      beispiel: 'Bei der Oma gibt\'s am Sonntag Krautkrapferl mit Speck.',
+      beispiel_hd: 'Bei der Oma gibt es am Sonntag Krautkrapfen mit Speck.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-243',
+      ausdruck: 'Hoibbradl',
+      hochdeutsch: 'Halbgebackener / unfertiger Mensch',
+      bedeutung: '„Hoibbradl" — wörtlich „halbgebraten" — bezeichnet abwertend einen Menschen, der unreif, unfertig oder etwas einfältig wirkt. Das Bild stammt aus der Wirtshausküche: ein nicht durchgebratenes Hendl ist nicht genießbar. „Mit dem Hoibbradl kannst nix anfanga!" Die Beleidigung ist mittelschwer — nicht so derb wie „Depp", aber deutlich abschätzig. Typisch für die bildhafte bayerische Schimpfkultur.',
+      beispiel: 'So a Hoibbradl wia der wird nie ferdi mit\'m Studium.',
+      beispiel_hd: 'So ein Halbgebackener wie der wird nie fertig mit dem Studium.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-244',
+      ausdruck: 'Bussal',
+      hochdeutsch: 'Küsschen',
+      bedeutung: 'Das „Bussal" ist die altbayerische Verkleinerungsform von Kuss — zärtlich, herzlich, oft an Kinder, Enkel oder den Schatz gerichtet. Verwandt mit dem italienischen „bacio" und dem österreichischen „Bussi". „Gib der Oma a Bussal!" Im Bayerischen wird das „-al" als typische Diminutivendung sehr häufig verwendet — sie macht alles kleiner, niedlicher, vertrauter. Wärmend und liebevoll.',
+      beispiel: 'A Bussal zum Geburtstag, mei Liabste!',
+      beispiel_hd: 'Ein Küsschen zum Geburtstag, meine Liebste!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-245',
+      ausdruck: 'Hosnbodn',
+      hochdeutsch: 'Hosenboden / hinten setzen',
+      bedeutung: 'Der „Hosnbodn" ist wörtlich der Sitzteil der Hose — bildlich aber bedeutet „auf\'m Hosnbodn sitzn" so viel wie konzentriert lernen oder arbeiten. „Wennsd des Abitur willst, muasst di auf\'n Hosnbodn setzn!" Eine sehr bayerische Mahnung an Disziplin und Fleiß, gerne von Eltern und Lehrern verwendet. Die Redewendung verbindet Körperlichkeit mit geistiger Anstrengung.',
+      beispiel: 'Vor der Prüfung muass i mi richtig auf\'n Hosnbodn setzn.',
+      beispiel_hd: 'Vor der Prüfung muss ich mich richtig hinsetzen und lernen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-246',
+      ausdruck: 'Watschnpladdla',
+      hochdeutsch: 'Großhand zum Watschen',
+      bedeutung: 'Der „Watschnpladdla" ist die große flache Hand, die zur kräftigen Ohrfeige („Watschn") ausholt. Das Wort ist drohend-humorvoll: niemand will den Watschnpladdla zu spüren bekommen. „Pass auf, sonst spürst du meinen Watschnpladdla!" In der bayerischen Erziehungskultur früherer Zeiten war die Watschn ein verbreitetes pädagogisches Mittel — heute glücklicherweise meist nur noch sprichwörtlich.',
+      beispiel: 'Wennst no oamal frech wirst, kriagst du an Watschnpladdla!',
+      beispiel_hd: 'Wenn du noch einmal frech wirst, kriegst du eine Ohrfeige!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-247',
+      ausdruck: 'Goschert',
+      hochdeutsch: 'Vorlaut / frech / großmäulig',
+      bedeutung: '„Goschert" beschreibt einen Menschen, der ein loses Mundwerk hat — vorlaut, frech, manchmal auch sympathisch schlagfertig. Abgeleitet von der „Goschn" (Mund). „Des Madl is vielleicht goschert!" Kann je nach Tonfall bewundernd („die lässt sich nix gefallen") oder tadelnd („die hält ihren Mund nicht") gemeint sein. Typisch für die bayerische Mentalität: Direktheit wird oft positiv gewertet.',
+      beispiel: 'So a goscherter Bua, der hat auf alles a Antwort.',
+      beispiel_hd: 'So ein frecher Junge, der hat auf alles eine Antwort.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-248',
+      ausdruck: 'Stoabruch',
+      hochdeutsch: 'Steinbruch',
+      bedeutung: 'Der „Stoabruch" — bayerisch für Steinbruch — ist ein wichtiger Teil der bayerischen Landschaft, besonders im Jura-Gebiet von Solnhofen und Eichstätt, wo der berühmte Solnhofener Plattenkalk gebrochen wird. Auch sprichwörtlich: „Des is a Stoabruch", sagt man über eine schwere Arbeit. Der bayerische Bergbau und Steinabbau prägt die regionale Wirtschaft seit Jahrhunderten. Geologisch bedeutsam.',
+      beispiel: 'Im Stoabruch von Solnhofen findet man Fossilien.',
+      beispiel_hd: 'Im Steinbruch von Solnhofen findet man Fossilien.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-249',
+      ausdruck: 'Bockbieranstich',
+      hochdeutsch: 'Bockbieranstich (Starkbierfest)',
+      bedeutung: 'Der „Bockbieranstich" eröffnet die bayerische Starkbierzeit nach dem Aschermittwoch — eine fünfte Jahreszeit zwischen Fasching und Frühling. Berühmt ist der Anstich am Nockherberg in München mit der traditionellen Politiker-Derblecking durch den „Bruder Barnabas". Bockbiere wie Salvator, Triumphator und Maximator haben über 7% Alkohol. „Beim Bockbieranstich geht\'s wieder zünftig her!" Tiefe katholisch-bayerische Tradition.',
+      beispiel: 'Heuer gehen wir wieder zum Bockbieranstich auf\'n Nockherberg.',
+      beispiel_hd: 'Dieses Jahr gehen wir wieder zum Bockbieranstich auf den Nockherberg.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-250',
+      ausdruck: 'Hax\'nschuass',
+      hochdeutsch: 'Hexenschuss / Lumbago',
+      bedeutung: 'Der „Hax\'nschuass" ist im Bayerischen der plötzliche, stechende Rückenschmerz — der Hexenschuss. Das Wort kommt vom Glauben, Hexen würden ihre Pfeile auf Menschen schießen. „Heid hat mi der Hax\'nschuass derwischt, i kann mi koam mehr biagn!" Typische Beschwerde nach schwerer Arbeit oder falscher Bewegung. In Bayern kennt man dafür auch alte Hausmittel: Wärmflaschen, Franzbranntwein, Bettruhe.',
+      beispiel: 'Beim Holzhackn hat mi a richtiger Hax\'nschuass derwischt.',
+      beispiel_hd: 'Beim Holzhacken hat mich ein richtiger Hexenschuss erwischt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-251',
+      ausdruck: 'Trumpeter',
+      hochdeutsch: 'Großer Mensch / Wagenrad',
+      bedeutung: '„Trumpeter" — auch „Trumpeter-Semmel" — ist im Bayerischen ein besonders großes Brötchen oder umgangssprachlich auch ein massiver, kräftiger Mann. „Der is a wahrer Trumpeter, schau dir den o!" Die Bezeichnung verbindet Größe mit Wuchtigkeit. Auch als „Trumm" verbreitet. Eine sehr bayerische Vorliebe für bildstarke Beschreibungen körperlicher Statur.',
+      beispiel: 'So a Trumpeter wia der Sepp passt durch koan Türstock!',
+      beispiel_hd: 'So ein großer Kerl wie der Sepp passt durch keinen Türrahmen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-252',
+      ausdruck: 'Diandl',
+      hochdeutsch: 'Mädchen (Verkleinerungsform)',
+      bedeutung: 'Das „Diandl" ist die altbayerisch-österreichische Koseform von „Dirndl" und bezeichnet ein junges Mädchen — meist liebevoll-zärtlich. „Schau dir des hübsche Diandl an!" Bekannt aus zahllosen Volksliedern: „Wann i\'s Diandl ned hätt", „Es wird scho glei dumpa" etc. Die Endung „-andl" ist eine besonders weiche, lyrische Diminutivform, die im Hochdeutschen kein direktes Gegenstück hat.',
+      beispiel: 'Des Diandl tanzt heut mit\'m Hans beim Schuachplattler.',
+      beispiel_hd: 'Das Mädchen tanzt heute mit dem Hans beim Schuhplattler.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-253',
+      ausdruck: 'Habergoaß',
+      hochdeutsch: 'Habergeiß (Fabelwesen / Erntegeist)',
+      bedeutung: 'Die „Habergoaß" ist ein altbayerisch-alpenländisches Fabelwesen, ein Erntegeist aus den letzten Ähren des Haferfeldes. Bei den Bräuchen rund um die Erntezeit wurde die letzte Garbe oft als „Habergoaß" verkleidet, mit Hörnern und Fellen. „Pass auf, sonst kommt die Habergoaß!" Heute noch in oberbayerischen Perchtenläufen und Volksbräuchen lebendig. Verbindet vorchristliche Erntemythologie mit alpiner Volkskultur.',
+      beispiel: 'Die Habergoaß is im Wintermonat noch a beliebte Brauchtumsfigur.',
+      beispiel_hd: 'Die Habergeiß ist im Wintermonat noch eine beliebte Brauchtumsfigur.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-254',
+      ausdruck: 'Bauernschnapsen',
+      hochdeutsch: 'Bauernschnapsen (Kartenspiel)',
+      bedeutung: '„Bauernschnapsen" ist eine bayerisch-österreichische Variante des Kartenspiels Schnapsen — mit vier Spielern in zwei Teams. Klassisches Wirtshausspiel, das in Niederbayern und der Oberpfalz besonders gepflegt wird. „Heid Abend spuin ma Bauernschnapsn am Stammtisch!" Erfordert Strategie, Bluff und Kartenglück. Begleitet von einer Maß Bier und derben Sprüchen Teil des gesellschaftlichen Wirtshauslebens.',
+      beispiel: 'Beim Wirt sitzen scho die Manda und spuin Bauernschnapsen.',
+      beispiel_hd: 'Beim Wirt sitzen schon die Männer und spielen Bauernschnapsen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-255',
+      ausdruck: 'Stubnmusi',
+      hochdeutsch: 'Stubenmusik (Volksmusik im Wohnzimmer)',
+      bedeutung: 'Die „Stubnmusi" ist die intime Form der bayerisch-alpenländischen Volksmusik — gespielt zu Hause in der „Stub\'n" (Stube/Wohnzimmer), oft im Familienkreis. Typische Instrumente: Zither, Hackbrett, Gitarre, Harfe. Im Gegensatz zur lauten Blasmusik geht es um leise, intime Stücke. „Bei den Huber\'s spielt jeden Sonntag a Stubnmusi." Wichtige Säule der bayerischen Volksmusikpflege, gefördert vom Bayerischen Landesverein für Heimatpflege.',
+      beispiel: 'Im Advent ist die Stubnmusi besonders schön zum Zuhören.',
+      beispiel_hd: 'Im Advent ist die Stubenmusik besonders schön zum Zuhören.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-256',
+      ausdruck: 'Bachei',
+      hochdeutsch: 'Wange / Backe',
+      bedeutung: 'Das „Bachei" oder „Bacherl" ist die bayerische Verkleinerung für „Backe" (Wange) — oft liebevoll an Kinder oder Verliebte gerichtet. „Du hast aber rote Bacherl heut!" Auch in Komposita wie „Pfingstbacherl" (rote Wangen wie zu Pfingsten) verbreitet. Die rote Wange gilt im bayerischen Schönheitsideal als Zeichen von Gesundheit und Frische, oft besungen in Volksliedern.',
+      beispiel: 'Nach der Bergtour hat die Resi ganz rote Bachei.',
+      beispiel_hd: 'Nach der Bergtour hat die Resi ganz rote Wangen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-257',
+      ausdruck: 'Wamperl',
+      hochdeutsch: 'Bäuchlein',
+      bedeutung: 'Das „Wamperl" ist die liebevoll-spöttische bayerische Bezeichnung für einen kleinen Bauch — meist das Bierbauchchen, das nach vielen Maßen und Schweinshaxen entsteht. „A bisserl a Wamperl steht da Mannsbild!" Die Bezeichnung ist nicht beleidigend, sondern fast schon zärtlich — der bayerische Bierbauch gilt als Zeichen von Wohlstand und Lebensfreude. Verwandt mit „Wammerl" (Schweinebauch beim Schlachten).',
+      beispiel: 'Seit\'m Oktoberfest hat der Hans a ordentlichs Wamperl angsetzt.',
+      beispiel_hd: 'Seit dem Oktoberfest hat der Hans ein ordentliches Bäuchlein angesetzt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-258',
+      ausdruck: 'Vierschanzentournee',
+      hochdeutsch: 'Vierschanzentournee (Skispringen)',
+      bedeutung: 'Die „Vierschanzentournee" ist das berühmteste Skisprungereignis der Welt — mit zwei deutschen Etappen in Oberstdorf und Garmisch-Partenkirchen. Das Neujahrsspringen in Garmisch ist seit 1953 ein bayerisches Sportereignis von internationaler Bedeutung. „Am Neujahrstag sitzt halb Bayern vor\'m Fernseher!" Verbindet Wintersport, Tradition und nationale Sportbegeisterung. Skispringen ist tief in der bayerischen Wintersportkultur verwurzelt.',
+      beispiel: 'Am 1. Januar schauen wir traditionell die Vierschanzentournee.',
+      beispiel_hd: 'Am 1. Januar schauen wir traditionell die Vierschanzentournee.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-259',
+      ausdruck: 'Hennastoi',
+      hochdeutsch: 'Hühnerstall',
+      bedeutung: 'Der „Hennastoi" ist im Bayerischen der Hühnerstall — und bildlich auch ein unordentlicher Raum oder eine chaotische Versammlung. „In dei\'m Kinderzimmer schaut\'s aus wia in am Hennastoi!" Das Wort verbindet sich mit dem ländlichen bayerischen Alltag, in dem fast jeder Bauernhof seinen Hennastoi hatte. Das geschäftige Treiben der Hühner steht sprichwörtlich für Durcheinander und Geschnatter.',
+      beispiel: 'Räum amoi auf, des is ja ein Hennastoi do drinna!',
+      beispiel_hd: 'Räum mal auf, das ist ja ein Hühnerstall hier drinnen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-260',
+      ausdruck: 'Zwoa',
+      hochdeutsch: 'Zwei',
+      bedeutung: '„Zwoa" ist die altbayerische Aussprache von „zwei" mit dem typischen „oa"-Diphthong, der das Bayerische so charakteristisch klingen lässt. „Zwoa Maß Bier, bittschön!" Die Lautfolge „oa" statt „ei" ist eines der wichtigsten phonetischen Merkmale des Bairischen — auch in Wörtern wie „Stoa" (Stein), „hoam" (heim), „oans" (eins). Wer Bayerisch lernt, muss das „oa" beherrschen.',
+      beispiel: 'Zwoa Brez\'n und a Hoibe Weißbier, bittschön!',
+      beispiel_hd: 'Zwei Brezen und ein halbes Weißbier, bitte!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-261',
+      ausdruck: 'Heigeign',
+      hochdeutsch: 'Heugeige / Heuwender',
+      bedeutung: 'Die „Heigeign" ist ein altes bäuerliches Werkzeug — die Heugeige oder der Heuwender, mit dem das gemähte Gras zum Trocknen gewendet wurde. Heute meist nur noch in Heimatmuseen zu sehen. „Friaher hat ma de Heigeign no per Hand benutzt." Das Wort lebt in Redensarten weiter und erinnert an die mühsame Heuernte, die früher Wochen dauerte. Die Almwirtschaft prägt bis heute das oberbayerische Landschaftsbild.',
+      beispiel: 'Der Opa zeigt im Museum die alte Heigeign vor.',
+      beispiel_hd: 'Der Opa zeigt im Museum die alte Heugeige vor.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-262',
+      ausdruck: 'Schaffer',
+      hochdeutsch: 'Arbeiter / fleißiger Mensch',
+      bedeutung: 'Der „Schaffer" ist im Bayerischen jemand, der hart arbeitet — meist anerkennend gemeint. „Der Hans is a richtiger Schaffer, der ruht nia!" Auch als historischer Begriff für einen Aufseher oder Vorarbeiter verbreitet. Die bayerische Arbeitsethik schätzt Fleiß und Zupacken sehr hoch — wer ein „Schaffer" ist, genießt Respekt im Dorf und Wirtshaus. Verwandt mit „schaffen" im Sinne von „arbeiten".',
+      beispiel: 'Mit so ana Schaffer wia der Sepp wird die Scheunen schnell ferdi.',
+      beispiel_hd: 'Mit so einem Arbeiter wie dem Sepp wird die Scheune schnell fertig.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-263',
+      ausdruck: 'Ois guad',
+      hochdeutsch: 'Alles gut',
+      bedeutung: '„Ois guad" ist die typische bayerische Antwort auf die Frage „Wia geht\'s?" — gelassen, positiv, ohne viele Worte. Auch als Verabschiedung gebräuchlich: „Pfiat di — ois guad!" Drückt die bayerische Lebenshaltung der Gelassenheit aus: solange nichts richtig schlimm ist, ist alles in Ordnung. Eine Philosophie des entspannten Zufriedenseins. Bekannt auch durch den BR-Schlager-Hit von Andreas Gabalier.',
+      beispiel: 'Wia geht\'s da? — Ois guad bei mir, dank da!',
+      beispiel_hd: 'Wie geht es dir? — Alles gut bei mir, danke dir!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-264',
+      ausdruck: 'Hutzelbrot',
+      hochdeutsch: 'Hutzelbrot / Früchtebrot',
+      bedeutung: 'Das „Hutzelbrot" ist ein traditionelles bayerisch-schwäbisches Weihnachtsgebäck — ein dichtes Brot mit getrockneten Früchten (Hutzeln = Birnenstücke), Nüssen, Gewürzen. Wird zur Adventszeit gebacken und gerne mit Butter zum Kaffee gegessen. „Beim Christkindlmarkt verkaufen sie auch frisches Hutzelbrot." Eine winterliche Spezialität, die früher die wertvollen Trockenfrüchte des Sommers konservierte und in der dunklen Jahreszeit Wärme brachte.',
+      beispiel: 'In der Adventszeit duftet die Küche nach frischem Hutzelbrot.',
+      beispiel_hd: 'In der Adventszeit duftet die Küche nach frischem Hutzelbrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-265',
+      ausdruck: 'Bergerlebnis',
+      hochdeutsch: 'Bergerlebnis / Tourenerlebnis',
+      bedeutung: 'Das „Bergerlebnis" ist für Bayern weit mehr als nur eine Wanderung — es ist ein zentraler Bestandteil der oberbayerischen Identität. Vom Watzmann bis zur Zugspitze, von einer einfachen Almtour bis zur anspruchsvollen Klettertour: Berge sind „Heimat in groß". „Des Bergerlebnis am Gipfel kann ma nicht beschreibn!" Die Alpenvereine, die Bergrettung und die alpenländische Kultur prägen das bayerische Naturverständnis.',
+      beispiel: 'A schönes Bergerlebnis am Sonntag bringt die Akkus wieder voll.',
+      beispiel_hd: 'Ein schönes Bergerlebnis am Sonntag bringt die Akkus wieder voll.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-266',
+      ausdruck: 'Damischer Ritter',
+      hochdeutsch: 'Verrückter Kerl / Spinner',
+      bedeutung: 'Ein „damischer Ritter" ist im Bayerischen jemand, der etwas Verrücktes oder Unüberlegtes tut — meist in spöttisch-liebevoller Bedeutung. Stammt aus dem Bayerischen Adventstheater und der Volkskultur. „So a damischer Ritter, springt mitten im Winter in den See!" Verbindet „damisch" (verrückt) mit dem nostalgischen Bild des fahrenden Ritters. Eine typisch bayerische Charakterisierung mit ironisch-warmem Unterton.',
+      beispiel: 'Der Sepp is wirklich a damischer Ritter, der versteigt sich immer.',
+      beispiel_hd: 'Der Sepp ist wirklich ein verrückter Kerl, der verfährt sich immer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-267',
+      ausdruck: 'Tegernseer Heilbrunnen',
+      hochdeutsch: 'Tegernseer Heilbrunnen',
+      bedeutung: 'Die Region um den „Tegernseer Heilbrunnen" ist berühmt für ihre Mineralquellen — das Tegernseer Tal ist eines der traditionsreichsten Kurorte Bayerns. Das berühmte Tegernseer Bier wird seit 1675 vom Herzoglichen Brauhaus gebraut. „Am Tegernsee is\' nicht nur s\' Wasser g\'sund, sondern a s\' Bier!" Die Verbindung von Naturheilkunde, Kuranlagen und Brautradition prägt die Region. Beliebter Erholungsort der Münchner Stadtbevölkerung.',
+      beispiel: 'Am Wochenende fahren wir zum Tegernseer Heilbrunnen zum Kuren.',
+      beispiel_hd: 'Am Wochenende fahren wir zum Tegernseer Heilbrunnen zum Kuren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-268',
+      ausdruck: 'Eahna',
+      hochdeutsch: 'Ihnen (Höflichkeitsform)',
+      bedeutung: '„Eahna" ist die altbayerische Höflichkeitsform für „Ihnen" — wird verwendet, wenn man jemanden siezt. „Eahna geht\'s recht guad heid?" Die bayerische Anrede kennt feine Unterschiede zwischen Du und Sie, wobei die Sie-Form oft als „Eahna-Form" bezeichnet wird. Heute eher in der älteren Generation oder in traditionellen Wirtshäusern noch zu hören. Zeigt die Schichtung der bayerischen Sprache zwischen Vertraulichkeit und Höflichkeit.',
+      beispiel: 'Eahna a Maß Bier, gnä\' Herr?',
+      beispiel_hd: 'Ihnen eine Maß Bier, geehrter Herr?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-269',
+      ausdruck: 'Watschnbaam',
+      hochdeutsch: 'Ohrfeigenbaum (sprichwörtlich)',
+      bedeutung: 'Der „Watschnbaam" ist sprichwörtlich der Baum, an dem die Ohrfeigen wachsen — eine humorvoll-drohende bayerische Redewendung. „Pass auf, sonst schüttel ich den Watschnbaam!" Die Vorstellung, Watschn könnten wie Äpfel vom Baum geerntet werden, zeigt den bayerischen Humor selbst beim Drohen. Heute meist scherzhaft verwendet, früher gelegentlich auch ernst gemeint. Typisch für die bildreiche bayerische Sprache.',
+      beispiel: 'Wennst no oamal frech wirst, schüttel i\'n Watschnbaam!',
+      beispiel_hd: 'Wenn du noch einmal frech wirst, schüttle ich den Ohrfeigenbaum!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-270',
+      ausdruck: 'Heid',
+      hochdeutsch: 'Heute',
+      bedeutung: '„Heid" ist die altbayerische Aussprache von „heute" — eines der häufigsten Wörter im täglichen bayerischen Sprachgebrauch. „Heid is a schöner Tag, da gehn ma ins Wirtshaus!" Der „eu"-Laut wird im Bairischen typischerweise zu „ei", was sich auch in Wörtern wie „neid" (neu) oder „dei" (deu) zeigt. Eines der elementaren Wörter, das jeder Bayern-Besucher schnell lernt. Zentral für die zeitliche Orientierung im Bayerischen.',
+      beispiel: 'Heid am Abend gehn ma zum Stammtisch!',
+      beispiel_hd: 'Heute Abend gehen wir zum Stammtisch!',
+      kategorie: 'alltag'
     }
   ]
 };

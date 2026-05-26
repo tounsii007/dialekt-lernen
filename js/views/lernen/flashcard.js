@@ -52,7 +52,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
         class: 'fc-big-speak',
-        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck); },
+        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
         title: 'Anhören'
       },
         icon('speaker', { size: 48 }),
@@ -65,7 +65,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     // Auto-play beim Erscheinen
-    setTimeout(() => speak(c.ausdruck), 200);
+    setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
   } else if (mode === 'type') {
     // Tipp-Modus: User tippt die Hochdeutsch-Übersetzung
     front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
@@ -235,7 +235,7 @@ function speakControl(c) {
   const canvas = el('canvas', { class: 'fc-speak-canvas' });
   const btn = el('button', {
     class: 'fc-btn fc-speak',
-    onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck); },
+    onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
     title: 'Anhören'
   },
     el('div', { class: 'speak-icon' }, icon('speaker', { size: 20 })),

@@ -9,6 +9,7 @@ export default {
   farbe: '#f4a261',
   beschreibung: 'Berlinisch ist die Stadtmundart der deutschen Hauptstadt. Bekannt für die „Berliner Schnauze" — direkt, frech, schlagfertig. Typisch sind „ick" für „ich", „wat" für „was", „jut" für „gut" und das harte „j" statt „g".',
   sprecher: 'ca. 3 Mio.',
+  lang: 'de-DE',
   ausdruecke: [
     {
       id: 'b-001',
@@ -20,35 +21,12 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 'b-002',
-      ausdruck: 'Knorke',
-      hochdeutsch: 'Toll / super',
-      bedeutung: 'Klassisch berlinerisches Wort für „großartig" oder „prima". Schon Mitte des 20. Jahrhunderts populär, heute eher altmodisch-charmant.',
-      beispiel: 'Ditt is ja knorke!',
-      beispiel_hd: 'Das ist ja großartig!',
-      kategorie: 'gefuehle'
-    },
-    {
-      id: 'b-003',
-      ausdruck: 'Schrippe',
-      hochdeutsch: 'Brötchen',
-      bedeutung: 'Das typische Berliner Weizenbrötchen — länglich, knusprig, mit einem charakteristischen Einschnitt. Anderswo „Semmel" oder „Wecken".',
-      beispiel: 'Sechs Schrippen, bitte!',
-      beispiel_hd: 'Sechs Brötchen, bitte!',
-      kategorie: 'essen'
-    },
-    {
       id: 'b-004',
       ausdruck: 'Pfannkuchen',
       hochdeutsch: 'Berliner / Krapfen',
       bedeutung: 'Achtung Verwechslungsgefahr! In Berlin ist ein Pfannkuchen das, was sonst „Berliner" oder „Krapfen" heißt — ein süßes Hefegebäck mit Marmeladenfüllung. Eierkuchen heißen entsprechend nicht Pfannkuchen.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'b-005',
-      ausdruck: 'Bulette',
-      hochdeutsch: 'Frikadelle',
-      bedeutung: 'Berlinerisch für eine gebratene Hackfleischmasse. Stammt vom französischen „boulette" („Kügelchen"). Klassiker auf jedem Imbiss.',
+      beispiel: 'Hol ma ne Tüte Pfannkuchen vom Bäcker, ja?',
+      beispiel_hd: 'Hol mal eine Tüte Berliner vom Bäcker, ja?',
       kategorie: 'essen'
     },
     {
@@ -65,6 +43,8 @@ export default {
       ausdruck: 'Mensch Meier!',
       hochdeutsch: 'Mein Gott! / Donnerwetter!',
       bedeutung: 'Ausruf der Überraschung oder leichten Entrüstung. „Meier" steht stellvertretend für „irgendjemand" — ein alter, weit verbreiteter Familienname.',
+      beispiel: 'Mensch Meier, kiek dir det ma an!',
+      beispiel_hd: 'Mein Gott, schau dir das mal an!',
       kategorie: 'gefuehle'
     },
     {
@@ -72,6 +52,8 @@ export default {
       ausdruck: 'Ick liebe dir',
       hochdeutsch: 'Ich liebe dich',
       bedeutung: 'Berliner verwenden den Dativ, wo Hochdeutsch den Akkusativ verlangt — „dir" statt „dich". Ein klassischer Berliner Spruch: „Ick liebe dir, ick liebe dich, wie\'t richtig is, dit weeß ick nich."',
+      beispiel: 'Ick liebe dir, Schatzi — och wenn det falsch klingt!',
+      beispiel_hd: 'Ich liebe dich, Schatz — auch wenn das falsch klingt!',
       kategorie: 'redensart'
     },
     {
@@ -79,8 +61,8 @@ export default {
       ausdruck: 'Det / Ditt',
       hochdeutsch: 'Das',
       bedeutung: 'Berlinerische Form von „das". Wird oft mit „icke" und „kieke" zur Trias „icke, dette, kieke mal" kombiniert.',
-      beispiel: 'Det jeht so nich!',
-      beispiel_hd: 'Das geht so nicht!',
+      beispiel: 'Det jeht so nich — ditt is doch wat ganz anderet!',
+      beispiel_hd: 'Das geht so nicht — das ist doch was ganz anderes!',
       kategorie: 'alltag'
     },
     {
@@ -88,31 +70,17 @@ export default {
       ausdruck: 'Kiez',
       hochdeutsch: 'Stadtviertel / Nachbarschaft',
       bedeutung: 'Der eigene Wohnbezirk mit allem, was dazugehört — Kneipe, Späti, Bäcker, Spielplatz. In Berlin Identitätsstiftend: „Mein Kiez, meine Welt".',
+      beispiel: 'In meinem Kiez kennt jeder jeden.',
+      beispiel_hd: 'In meinem Viertel kennt jeder jeden.',
       kategorie: 'orte'
-    },
-    {
-      id: 'b-011',
-      ausdruck: 'Späti',
-      hochdeutsch: 'Spätkauf / Kiosk',
-      bedeutung: 'Der „Spätkauf" — ein Kiosk, der auch abends und nachts geöffnet hat. Berliner Institution für vergessene Einkäufe und spontane Bierrunden.',
-      beispiel: 'Ick jeh ma kurz zum Späti.',
-      beispiel_hd: 'Ich gehe mal kurz zum Spätkauf.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-012',
-      ausdruck: 'Atze',
-      hochdeutsch: 'Bruder / Kumpel',
-      bedeutung: 'Berlinerische Anrede unter Freunden oder Geschwistern. Stammt vermutlich aus dem Rotwelschen. Vergleichbar mit „Bro" oder „Alter".',
-      beispiel: 'Hey Atze, wat machste?',
-      beispiel_hd: 'Hey Kumpel, was machst du?',
-      kategorie: 'menschen'
     },
     {
       id: 'b-013',
       ausdruck: 'Pulle',
       hochdeutsch: 'Flasche',
       bedeutung: 'Berlinerisch für eine Flasche, vor allem für Bier oder Schnaps. „Volle Pulle" heißt „mit voller Kraft".',
+      beispiel: 'Hol ma ne Pulle Bier aus\'m Späti!',
+      beispiel_hd: 'Hol mal eine Flasche Bier aus dem Spätkauf!',
       kategorie: 'essen'
     },
     {
@@ -120,6 +88,8 @@ export default {
       ausdruck: 'Schnauze halten!',
       hochdeutsch: 'Sei still!',
       bedeutung: 'Die „Berliner Schnauze" ist legendär — direkt und schlagfertig. „Schnauze!" alleine ist als Aufforderung schon genug.',
+      beispiel: 'Schnauze halten, ick will fernsehen!',
+      beispiel_hd: 'Sei still, ich will fernsehen!',
       kategorie: 'gefuehle'
     },
     {
@@ -127,6 +97,8 @@ export default {
       ausdruck: 'Hauptstadt',
       hochdeutsch: 'Berlin',
       bedeutung: 'Wenn Berliner von „der Hauptstadt" sprechen, meinen sie sich selbst — egal wer zuhört.',
+      beispiel: 'In der Hauptstadt jeht det Leben erst nachts richtig los.',
+      beispiel_hd: 'In Berlin geht das Leben erst nachts richtig los.',
       kategorie: 'orte'
     },
     {
@@ -143,13 +115,8 @@ export default {
       ausdruck: 'Bockwurst mit Schrippe',
       hochdeutsch: 'Brühwurst mit Brötchen',
       bedeutung: 'Klassiker am Berliner Imbiss: heiße Bockwurst, scharfer Senf, knusprige Schrippe — einfach, günstig, perfekt.',
-      kategorie: 'essen'
-    },
-    {
-      id: 'b-018',
-      ausdruck: 'Berliner Luft',
-      hochdeutsch: 'Berliner Luft',
-      bedeutung: 'Eine pfefferminzgrüne Schnapsspezialität — und gleichzeitig ein Operetten-Schlager. Symbol für berlinerische Lebensart.',
+      beispiel: 'Eene Bockwurst mit Schrippe, bitte — mit scharfen Senf!',
+      beispiel_hd: 'Eine Bockwurst mit Brötchen, bitte — mit scharfem Senf!',
       kategorie: 'essen'
     },
     {
@@ -223,15 +190,6 @@ export default {
       beispiel: 'Ick jeh ma auf\'n Kiez, vielleicht treff ick jemanden.',
       beispiel_hd: 'Ich gehe mal ins Viertel, vielleicht treffe ich jemanden.',
       kategorie: 'orte'
-    },
-    {
-      id: 'b-027',
-      ausdruck: 'Currywurst',
-      hochdeutsch: 'Currywurst (Berlins Nationalgericht)',
-      bedeutung: 'Die Currywurst wurde 1949 von Herta Heuwer in Berlin-Charlottenburg erfunden — eine gebratene Wurst in Curryketchupsauce, mit Currypulver bestreut. Sie ist das Nationalgericht Berlins und wird jährlich millionenfach verkauft. Das Currywurst-Museum in Berlin zeugt von ihrer kulturellen Bedeutung.',
-      beispiel: 'Ohne Darm und mit Pommes, bitte — eine Currywurst!',
-      beispiel_hd: 'Ohne Darm und mit Pommes, bitte — eine Currywurst!',
-      kategorie: 'essen'
     },
     {
       id: 'b-028',
@@ -373,6 +331,8 @@ export default {
       ausdruck: 'Stralauer',
       hochdeutsch: 'Einwohner von Stralau / echt Berliner',
       bedeutung: 'Stralau ist eine Halbinsel im Berliner Bezirk Friedrichshain-Kreuzberg — und „Stralauer" ist eine alte, fast schon verschollene Bezeichnung für echte Ureinwohner Berlins. In der Berliner Volkskunde gilt der Stralauer Fischer als Urbild des ursprünglichen Berliners, bevor die Großstadt kam.',
+      beispiel: 'Mein Opa war noch n echter Stralauer, der hat hier jefischt.',
+      beispiel_hd: 'Mein Opa war noch ein echter Stralauer, der hat hier gefischt.',
       kategorie: 'orte'
     },
     {
@@ -398,6 +358,8 @@ export default {
       ausdruck: 'Schnodderigkeit',
       hochdeutsch: 'freche Direktheit / Unverfrorenheit',
       bedeutung: 'Die Schnodderigkeit ist die kultivierte Kunst der berlinerischen Direktheit — frech, schlagfertig, ohne Rücksicht auf soziale Feinheiten. Sie ist kein Zeichen von schlechter Erziehung, sondern der berühmte Berliner Charme. „Berliner Schnauze" und Schnodderigkeit gehören zusammen wie Schrippe und Bulette.',
+      beispiel: 'Mit seiner Schnodderigkeit hat er die janze Kneipe zum Lachen jebracht.',
+      beispiel_hd: 'Mit seiner frechen Direktheit hat er die ganze Kneipe zum Lachen gebracht.',
       kategorie: 'redensart'
     },
     {
@@ -446,33 +408,6 @@ export default {
       kategorie: 'gefuehle'
     },
     {
-      id: 'b-052',
-      ausdruck: 'Hertha BSC',
-      hochdeutsch: 'Berliner Fußballverein (West-Berlin-Traditionsverein)',
-      bedeutung: 'Hertha BSC ist der traditionsreichste Fußballverein Berlins, gegründet 1892. Die „Alte Dame" spielt im Olympiastadion und hat ihre Anhängerschaft vor allem im Westen der Stadt. Die Rivalität mit Union Berlin teilt die Stadt fußballerisch in West (Hertha) und Ost (Union). „Ha-Ho-He, Hertha BSC!" hallt durchs Olympiastadion.',
-      beispiel: 'Ick bin Hertha-Fan, seit ick denken kann.',
-      beispiel_hd: 'Ich bin Hertha-Fan, seit ich denken kann.',
-      kategorie: 'sport'
-    },
-    {
-      id: 'b-053',
-      ausdruck: 'Union Berlin',
-      hochdeutsch: '1. FC Union Berlin (Ost-Berliner Kultverein)',
-      bedeutung: 'Der 1. FC Union Berlin aus Köpenick ist der Kultverein des Berliner Ostens. Die „Eisernen" stiegen 2019 sensationell in die Bundesliga auf und qualifizierten sich sogar für die Champions League. Das Stadion An der Alten Försterei und die Fankultur — bekannt für das gemeinsame Weihnachtssingen — sind legendär. Union steht für Bodenständigkeit und Gemeinschaftsgefühl.',
-      beispiel: 'Eisern Union! Wir fahrn nach Köpenick!',
-      beispiel_hd: 'Eisern Union! Wir fahren nach Köpenick!',
-      kategorie: 'sport'
-    },
-    {
-      id: 'b-054',
-      ausdruck: 'BVG',
-      hochdeutsch: 'Berliner Verkehrsbetriebe',
-      bedeutung: 'Die BVG ist das öffentliche Nahverkehrsunternehmen Berlins und betreibt U-Bahn, Straßenbahn, Bus und Fähren. Berühmt-berüchtigt für ihre Verspätungen, aber auch für ihren selbstironischen Humor in Werbekampagnen („Weil wir dich lieben"). Die BVG ist Teil der Berliner Identität — man flucht über sie und liebt sie zugleich.',
-      beispiel: 'Die BVG hat schon wieder Verspätung — typisch!',
-      beispiel_hd: 'Die BVG hat schon wieder Verspätung — typisch!',
-      kategorie: 'orte'
-    },
-    {
       id: 'b-055',
       ausdruck: 'S-Bahn',
       hochdeutsch: 'Berliner S-Bahn (Schnellbahn)',
@@ -488,24 +423,6 @@ export default {
       bedeutung: 'Die Berliner U-Bahn ist mit über 150 km Streckennetz eine der größten Europas. Manche Linien wie die U1 fahren teilweise oberirdisch — die berühmte Hochbahn entlang der Skalitzer Straße in Kreuzberg ist ein Wahrzeichen. Jede Linie hat ihren eigenen Charakter: die U8 ist legendär für ihr buntes Publikum, die U6 verbindet Reinickendorf mit Tempelhof.',
       beispiel: 'Mit der U-Bahn bin ick in zehn Minuten am Alex.',
       beispiel_hd: 'Mit der U-Bahn bin ich in zehn Minuten am Alexanderplatz.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-057',
-      ausdruck: 'Alex',
-      hochdeutsch: 'Alexanderplatz',
-      bedeutung: 'Der Alexanderplatz, kurz „Alex", ist das berühmteste Platz im ehemaligen Ost-Berlin und nach dem russischen Zaren Alexander I. benannt. Mit dem Fernsehturm, der Weltzeituhr und der Urania-Weltuhr ist er Treffpunkt und Touristenmagnet. Alfred Döblins Roman „Berlin Alexanderplatz" hat ihn literarisch verewigt.',
-      beispiel: 'Wir treffen uns um 18 Uhr unter der Weltzeituhr am Alex.',
-      beispiel_hd: 'Wir treffen uns um 18 Uhr unter der Weltzeituhr am Alexanderplatz.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-058',
-      ausdruck: 'Brandenburger Tor',
-      hochdeutsch: 'Wahrzeichen Berlins',
-      bedeutung: 'Das Brandenburger Tor ist das berühmteste Wahrzeichen Berlins und seit 1791 ein Symbol für Frieden und seit der Wiedervereinigung 1989 ein Symbol für die deutsche Einheit. Auf seinem Dach steht die Quadriga mit der Siegesgöttin Viktoria. Neujahrsfeiern, Demonstrationen und Staatsbesuche finden hier statt — kein anderes Bauwerk repräsentiert Berlin so sehr.',
-      beispiel: 'Silvester am Brandenburger Tor — det is jedes Jahr was Besonderes.',
-      beispiel_hd: 'Silvester am Brandenburger Tor — das ist jedes Jahr was Besonderes.',
       kategorie: 'orte'
     },
     {
@@ -527,42 +444,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'b-061',
-      ausdruck: 'Schultheiss',
-      hochdeutsch: 'traditionelle Berliner Brauerei / Bier',
-      bedeutung: 'Schultheiss ist eine der traditionsreichsten Berliner Brauereien, gegründet 1842. Das Schultheiss-Pils war jahrzehntelang das Standardbier der Berliner Eckkneipen. Heute gehört die Marke zu Radeberger, aber der Name ist mit Berliner Bierkultur untrennbar verbunden. „Ein Schultheiss, bitte!" gehörte zur Berliner Standardbestellung.',
-      beispiel: 'Wirt, noch zwei Schultheiss bitte!',
-      beispiel_hd: 'Wirt, noch zwei Schultheiss-Bier bitte!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'b-062',
-      ausdruck: 'Berliner Kindl',
-      hochdeutsch: 'klassische Berliner Biermarke',
-      bedeutung: 'Berliner Kindl ist neben Schultheiss die zweite große Berliner Traditionsbrauerei, gegründet 1872. Das Maskottchen — ein lachendes Kind mit Bierkrug — ist Kult. Das Berliner Kindl Weisse ist eine berühmte Spezialität: ein säuerliches Weizenbier, traditionell mit Himbeer- oder Waldmeistersirup serviert („mit Schuss").',
-      beispiel: 'Ein Berliner Kindl Weisse mit Schuss, bitte!',
-      beispiel_hd: 'Ein Berliner Kindl Weisse mit Sirup, bitte!',
-      kategorie: 'essen'
-    },
-    {
-      id: 'b-063',
-      ausdruck: 'Friedrichshain',
-      hochdeutsch: 'Berliner Bezirk im Osten',
-      bedeutung: 'Friedrichshain ist ein lebendiger Bezirk im Osten Berlins, bekannt für seine Kneipenmeile rund um die Simon-Dach-Straße, die East Side Gallery und das Volkspark Friedrichshain. Nach der Wende wurde der Bezirk zum Hotspot der alternativen Szene und ist heute eine Mischung aus Studenten-, Künstler- und Touristenviertel. Die Frankfurter Allee mit ihren Stalinbauten prägt das Stadtbild.',
-      beispiel: 'Ick wohn in Friedrichshain, gleich am Boxi.',
-      beispiel_hd: 'Ich wohne in Friedrichshain, gleich am Boxhagener Platz.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-064',
-      ausdruck: 'Kreuzberg',
-      hochdeutsch: 'multikultureller Berliner Bezirk',
-      bedeutung: 'Kreuzberg ist Berlins berühmtester Bezirk — Symbol für Multikulturalität, alternative Lebensformen und politischen Aktivismus. SO36 (Kreuzberg 36) war zu Mauerzeiten ein Randviertel, heute ist es Trendviertel. Der Görlitzer Park, die Oranienstraße und der Maybachufer-Wochenmarkt sind Wahrzeichen. Der 1. Mai in Kreuzberg ist legendär für seine Demonstrationen und das MyFest.',
-      beispiel: 'In Kreuzberg gibts den besten Döner der Welt.',
-      beispiel_hd: 'In Kreuzberg gibt es den besten Döner der Welt.',
-      kategorie: 'orte'
-    },
-    {
       id: 'b-065',
       ausdruck: 'Prenzlauer Berg',
       hochdeutsch: 'gentrifizierter Berliner Stadtteil',
@@ -572,48 +453,12 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'b-066',
-      ausdruck: 'Neukölln',
-      hochdeutsch: 'südlicher Berliner Bezirk',
-      bedeutung: 'Neukölln ist einer der jüngsten und multikulturellsten Bezirke Berlins. Lange als sozialer Brennpunkt verschrien, hat sich Nord-Neukölln in den 2010er Jahren zum Hipster-Mekka entwickelt. Die Sonnenallee mit ihren arabischen Geschäften wird liebevoll „Gaza-Streifen" genannt. Der Tempelhofer Feld — das stillgelegte Flughafengelände — ist eines der schönsten Stadtparks Europas.',
-      beispiel: 'Neukölln is voll im Wandel — alles ändert sich.',
-      beispiel_hd: 'Neukölln ist voll im Wandel — alles ändert sich.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-067',
-      ausdruck: 'Wedding',
-      hochdeutsch: 'nördlicher Berliner Bezirk',
-      bedeutung: 'Wedding ist ein traditioneller Arbeiterbezirk im Norden Berlins, lange unterschätzt und nun „der nächste heiße Bezirk". „Der Wedding kommt" sagt man seit dreißig Jahren — und langsam stimmt es. Der Plötzensee, die Müllerstraße und der traditionsreiche AEG-Komplex prägen den Bezirk. Wedding war historisch das Zentrum der Berliner Arbeiterbewegung und der KPD.',
-      beispiel: 'Der Wedding kommt — sacht man seit zwanzig Jahren.',
-      beispiel_hd: 'Der Wedding kommt — sagt man seit zwanzig Jahren.',
-      kategorie: 'orte'
-    },
-    {
       id: 'b-068',
       ausdruck: 'Mitte',
       hochdeutsch: 'Berliner Stadtbezirk Mitte',
       bedeutung: 'Berlin-Mitte ist das historische und politische Zentrum der Hauptstadt mit Museumsinsel, Brandenburger Tor, Reichstag und Friedrichstraße. Hier liegt das Regierungsviertel mit Bundeskanzleramt und Reichstagsgebäude. Der Bezirk ist Touristenmagnet, Wirtschaftszentrum und Wohngebiet für Bessergestellte zugleich. Die Hackeschen Höfe sind ein architektonisches Juwel im Bezirk.',
       beispiel: 'In Mitte sind die Mieten kaum noch bezahlbar.',
       beispiel_hd: 'In Mitte sind die Mieten kaum noch bezahlbar.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-069',
-      ausdruck: 'Reichstag',
-      hochdeutsch: 'Sitz des Deutschen Bundestages',
-      bedeutung: 'Der Reichstag, 1894 vollendet und im Zweiten Weltkrieg ausgebrannt, ist seit 1999 wieder Sitz des Deutschen Bundestages. Die gläserne Kuppel von Norman Foster ist Wahrzeichen der demokratischen Transparenz und beliebtes Touristenziel. Christo und Jeanne-Claude verhüllten ihn 1995 — ein Kunstereignis, das Berlin und Deutschland prägte.',
-      beispiel: 'Auf der Reichstagskuppel hat man den besten Blick über Berlin.',
-      beispiel_hd: 'Auf der Reichstagskuppel hat man den besten Blick über Berlin.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-070',
-      ausdruck: 'Tegel',
-      hochdeutsch: 'ehemaliger Berliner Flughafen',
-      bedeutung: 'Der Flughafen Berlin-Tegel war von 1948 bis 2020 der wichtigste West-Berliner Flughafen mit seinem charakteristischen sechseckigen Terminalgebäude. Berliner liebten ihn für seine kurzen Wege — vom Taxi zum Gate in fünf Minuten. Nach der verspäteten Eröffnung des BER wurde Tegel geschlossen. Die Berliner trauerten — der BER hat es schwer, in die Herzen zu kommen.',
-      beispiel: 'Tegel war \'ne tolle Sache — schnell rein, schnell raus.',
-      beispiel_hd: 'Tegel war eine tolle Sache — schnell rein, schnell raus.',
       kategorie: 'orte'
     },
     {
@@ -642,15 +487,6 @@ export default {
       beispiel: 'Vom BER aus geht\'s schneller nach Mallorca als zum Alex.',
       beispiel_hd: 'Vom BER aus geht es schneller nach Mallorca als zum Alexanderplatz.',
       kategorie: 'orte'
-    },
-    {
-      id: 'b-074',
-      ausdruck: 'Eisbein',
-      hochdeutsch: 'gepökeltes Schweinshaxe',
-      bedeutung: 'Eisbein ist ein traditionelles Berliner Gericht: gepökelte und gekochte Schweinshaxe, serviert mit Sauerkraut, Erbspüree und Senf. Der Name kommt vom Knochen, der früher zu Schlittschuhen verarbeitet wurde. Eisbein ist deftig, mächtig und nichts für schwache Mägen — perfekt für den Winter und als Beweis berlinischer Bodenständigkeit.',
-      beispiel: 'Sonntags gibt\'s bei meiner Oma immer Eisbein mit Sauerkraut.',
-      beispiel_hd: 'Sonntags gibt es bei meiner Oma immer Eisbein mit Sauerkraut.',
-      kategorie: 'essen'
     },
     {
       id: 'b-075',
@@ -792,6 +628,8 @@ export default {
       ausdruck: 'Schniepel',
       hochdeutsch: 'kindlicher Penis',
       bedeutung: 'Die berlinerische Kindersprache für das männliche Glied — harmlos, verniedlichend und in Familien gebräuchlich. „Hast du dir den Schniepel gewaschen?" fragt die Berliner Mutter beim Baden. Das Wort ist deutlich harmloser als seine derberen Verwandten und gehört zur alltäglichen Familiensprache mit kleinen Kindern.',
+      beispiel: 'Hast du dir ooch den Schniepel sauber jemacht?',
+      beispiel_hd: 'Hast du dir auch den Penis sauber gemacht?',
       kategorie: 'koerper'
     },
     {
@@ -820,15 +658,6 @@ export default {
       beispiel: 'Komm, wir jehn auf\'n Rummel, det macht den Kindern Spaß!',
       beispiel_hd: 'Komm, wir gehen auf den Jahrmarkt, das macht den Kindern Spaß!',
       kategorie: 'orte'
-    },
-    {
-      id: 'b-094',
-      ausdruck: 'Karneval der Kulturen',
-      hochdeutsch: 'multikulturelles Berliner Straßenfest',
-      bedeutung: 'Der Karneval der Kulturen ist seit 1996 das größte multikulturelle Straßenfest Berlins. Jedes Pfingstwochenende ziehen Tausende Tänzer und Musiker aus über 100 Ländern durch Kreuzberg. Das Fest feiert die Vielfalt der Stadt mit ihren Bewohnern aus aller Welt. Es ist ein Berliner Gegenmodell zum klassischen Karneval und ein Stolz für die multikulturelle Stadt.',
-      beispiel: 'Pfingsten jehn wir zum Karneval der Kulturen tanzen.',
-      beispiel_hd: 'Pfingsten gehen wir zum Karneval der Kulturen tanzen.',
-      kategorie: 'musik'
     },
     {
       id: 'b-095',
@@ -885,33 +714,6 @@ export default {
       kategorie: 'begruessung'
     },
     {
-      id: 'b-101',
-      ausdruck: 'East Side Gallery',
-      hochdeutsch: 'East Side Gallery (Mauer-Open-Air-Galerie)',
-      bedeutung: 'Die East Side Gallery ist der längste erhaltene Abschnitt der Berliner Mauer — 1,3 km am Spreeufer in Friedrichshain. Nach dem Mauerfall 1990 bemalten 118 Künstler aus 21 Ländern die Mauer mit politischen Botschaften. Das berühmteste Bild: Honecker und Breschnew küssen sich („Mein Gott, hilf mir, diese tödliche Liebe zu überleben"). Touristenmagnet und Symbol der Wiedervereinigung.',
-      beispiel: 'Det Brudderkuss-Bild an der East Side Gallery is jeweltweit bekannt.',
-      beispiel_hd: 'Das Bruderkuss-Bild an der East Side Gallery ist weltweit bekannt.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-102',
-      ausdruck: 'Checkpoint Charlie',
-      hochdeutsch: 'Checkpoint Charlie (ehemaliger Grenzübergang)',
-      bedeutung: 'Der Checkpoint Charlie an der Friedrichstraße war der berühmteste Grenzübergang zwischen West- und Ost-Berlin (1961-1990). Hier eskalierte 1961 die Konfrontation zwischen US- und Sowjet-Panzern. Heute steht nur noch eine Nachbildung der Wachhäuschen — Touristenmagnet, aber kommerzialisiert. Das Mauermuseum Checkpoint Charlie zeigt Geschichten gelungener und gescheiterter Fluchten.',
-      beispiel: 'Am Checkpoint Charlie steht heute ein Schauspieler-GI.',
-      beispiel_hd: 'Am Checkpoint Charlie steht heute ein Schauspieler-GI.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-103',
-      ausdruck: 'Berghain',
-      hochdeutsch: 'Berghain (legendärer Techno-Club)',
-      bedeutung: 'Das Berghain in Friedrichshain ist der berühmteste Technoclub der Welt — in einem ehemaligen Heizkraftwerk untergebracht. Die strenge Türpolitik („Sven-Marquardt-Effekt") ist legendär: viele werden ohne Begründung abgewiesen. Wer reinkommt, erlebt 24-Stunden-Partys mit weltbesten DJs. Berlin ist Techno-Hauptstadt und das Berghain ihre Kathedrale. UNESCO erklärte Berliner Clubkultur 2021 zum Kulturerbe.',
-      beispiel: 'Mit Sven Marquardt an der Tür — vor\'m Berghain biste nüschts.',
-      beispiel_hd: 'Mit Sven Marquardt an der Tür — vor dem Berghain bist du nichts.',
-      kategorie: 'musik'
-    },
-    {
       id: 'b-104',
       ausdruck: 'Spreewald',
       hochdeutsch: 'Spreewald (Naturlandschaft mit Spreewaldgurken)',
@@ -939,24 +741,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'b-107',
-      ausdruck: 'Mauerpark',
-      hochdeutsch: 'Mauerpark (ehemaliger Todesstreifen)',
-      bedeutung: 'Der Mauerpark zwischen Prenzlauer Berg und Wedding entstand auf dem ehemaligen Mauer-Todesstreifen. Sonntags findet hier der berühmte Flohmarkt statt — chaotisch, riesig und multikulturell. Im Park-Amphitheater steigt das legendäre „Bearpit Karaoke" — ein irischer Comedian organisiert Karaoke mit hunderten Zuschauern. Berlin-Sonntag pur.',
-      beispiel: 'Sonntag Mauerpark Flohmarkt — kult Berlin-Erlebnis.',
-      beispiel_hd: 'Sonntag Mauerpark Flohmarkt — Kult-Berlin-Erlebnis.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-108',
-      ausdruck: 'Späti',
-      hochdeutsch: 'Spätverkaufsstelle / Kiosk',
-      bedeutung: 'Der „Späti" (Spätverkauf) ist eine Berliner Institution — kleine Kioske, die bis tief in die Nacht oder 24/7 geöffnet haben. Hier kauft man Bier, Zigaretten, Snacks, Klopapier. Treffpunkt für nächtliche Spaziergänger und Partygänger. Berlin hat die höchste Spätidichte Deutschlands. Mit Sitzgelegenheit vor der Tür („Späti-Bank") sind sie Mikro-Treffpunkte des Stadtviertels.',
-      beispiel: 'Beim Späti um die Ecke kriegste alles, auch um 3 Uhr nachts.',
-      beispiel_hd: 'Beim Späti um die Ecke bekommst du alles, auch um 3 Uhr nachts.',
-      kategorie: 'orte'
-    },
-    {
       id: 'b-109',
       ausdruck: 'Müggelsee',
       hochdeutsch: 'Großer Müggelsee (Berlins größter See)',
@@ -964,15 +748,6 @@ export default {
       beispiel: 'Im Sommer baden gehen am Müggelsee — Berliner Strand.',
       beispiel_hd: 'Im Sommer baden gehen am Müggelsee — Berliner Strand.',
       kategorie: 'natur'
-    },
-    {
-      id: 'b-110',
-      ausdruck: 'Späti-Bier',
-      hochdeutsch: 'Bier aus dem Späti / Wegbier',
-      bedeutung: 'Das „Späti-Bier" ist das Berliner Wegbier — eine Flasche, die man im Späti kauft und unterwegs trinkt (in Berlin legal). Sterni (Sternburg) ist die günstigste Marke — Kult bei Studenten und Touristen. Wer in Berlin einen Sterni in der Hand hat, gehört dazu. Das offene Flaschenbier auf dem Heimweg ist Teil des Berliner Lebensgefühls — chaotisch, frei und ungezwungen.',
-      beispiel: 'Hol uns mal en Späti-Bier — ick brauch ne Sterni!',
-      beispiel_hd: 'Hol uns mal ein Späti-Bier — ich brauche ein Sternburg!',
-      kategorie: 'essen'
     },
     {
       id: 'b-111',
@@ -984,39 +759,12 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'b-112',
-      ausdruck: 'Fernsehturm',
-      hochdeutsch: 'Berliner Fernsehturm am Alex',
-      bedeutung: 'Der Berliner Fernsehturm am Alexanderplatz ist mit 368 m Deutschlands höchstes Bauwerk — DDR-Prestigeobjekt, eröffnet 1969. Die Kugel in 207 m Höhe beherbergt das Drehrestaurant „Sphere", das sich in 30 Minuten um sich selbst dreht. Bei klarem Wetter bis 80 km Sicht. Der Turm war einst Symbol DDR-Macht, ist heute Touristenmagnet. Spitzname: „Telespargel".',
-      beispiel: 'Vom Telespargel siehste bis nach Brandenburg.',
-      beispiel_hd: 'Vom Fernsehturm siehst du bis nach Brandenburg.',
-      kategorie: 'orte'
-    },
-    {
       id: 'b-113',
       ausdruck: 'KaDeWe',
       hochdeutsch: 'Kaufhaus des Westens (Luxuskaufhaus)',
       bedeutung: 'Das KaDeWe (Kaufhaus des Westens) am Wittenbergplatz ist nach Harrods das zweitgrößte Kaufhaus Europas. Eröffnet 1907, mit 60.000 m² Verkaufsfläche. Berühmt: die Feinschmecker-Etage in der 6. Etage mit über 1.300 Käsesorten und Delikatessen aus aller Welt. Das KaDeWe steht für West-Berliner Luxus und Konsumkultur — auch im DDR-Berlin ein begehrtes Ziel für Reisende.',
       beispiel: 'Im KaDeWe gibts Trüffel für 5000 Euro das Kilo!',
       beispiel_hd: 'Im KaDeWe gibt es Trüffel für 5000 Euro das Kilo!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-114',
-      ausdruck: 'Berliner Mauer',
-      hochdeutsch: 'Berliner Mauer (1961-1989)',
-      bedeutung: 'Die Berliner Mauer trennte 28 Jahre lang (1961-1989) Ost- und West-Berlin — 156 km lang, mit Wachtürmen, Todesstreifen und mindestens 140 Maueropfern. Errichtet von der DDR-Führung am 13. August 1961, gefallen am 9. November 1989. Der Mauerfall war eines der wichtigsten Ereignisse des 20. Jahrhunderts. Heute erinnern Reste und Mauerstreifen-Markierungen im Asphalt an die Trennung.',
-      beispiel: 'Mei Eltern haben den Mauerfall noch live erlebt — unvergessen.',
-      beispiel_hd: 'Meine Eltern haben den Mauerfall noch live erlebt — unvergessen.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-115',
-      ausdruck: 'Mauerfall',
-      hochdeutsch: '9. November 1989',
-      bedeutung: 'Der Mauerfall am 9. November 1989 war eines der bedeutendsten historischen Ereignisse — ausgelöst durch eine versehentlich falsch verkündete Reise-Erleichterung von Günter Schabowski. Tausende Ost-Berliner stürmten zur Mauer, Grenzposten ließen sie passieren. Trabbis fuhren über den Ku\'damm, Westler und Ostler umarmten sich. Der Tag markierte das Ende der DDR und der Teilung Deutschlands.',
-      beispiel: 'Der 9. November 89 war Wahnsinn — die Mauer war auf einmal wech.',
-      beispiel_hd: 'Der 9. November 89 war Wahnsinn — die Mauer war auf einmal weg.',
       kategorie: 'orte'
     },
     {
@@ -1065,15 +813,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'b-121',
-      ausdruck: 'Berliner Bär',
-      hochdeutsch: 'Berliner Bär (Stadtwappen-Symbol)',
-      bedeutung: 'Der Berliner Bär ist seit dem 13. Jahrhundert Berlins Wappentier — Symbol der Stadt seit 800 Jahren. Bunte Bären-Skulpturen schmücken die Stadt („United Buddy Bears"). Der Goldene Bär ist der Hauptpreis der Berlinale (Filmfestspiele). Der Bär steht für Berliner Stärke und Eigenständigkeit. Aufgemalt, in Bronze, als Statue — er ist überall in der Hauptstadt zu sehen.',
-      beispiel: 'Der Berliner Bär isn Stadtwahrzeichen seit 800 Jahren.',
-      beispiel_hd: 'Der Berliner Bär ist Stadtwahrzeichen seit 800 Jahren.',
-      kategorie: 'menschen'
-    },
-    {
       id: 'b-122',
       ausdruck: 'Berlinale',
       hochdeutsch: 'Berlinale (Internationale Filmfestspiele)',
@@ -1114,8 +853,8 @@ export default {
       ausdruck: 'Pergamonmuseum',
       hochdeutsch: 'Pergamonmuseum (Museumsinsel)',
       bedeutung: 'Das Pergamonmuseum auf der Museumsinsel zeigt monumentale Bauwerke der Antike: den Pergamonaltar, das Ischtar-Tor aus Babylon und das Markttor von Milet. Eröffnet 1930, ist es eines der meistbesuchten Museen Deutschlands. Derzeit wegen Sanierung teilweise geschlossen (bis 2027/30). Auf der Museumsinsel (UNESCO-Welterbe) stehen außerdem Alte Nationalgalerie, Bode-Museum, Neues Museum und Altes Museum.',
-      beispiel: 'Auf der Museumsinsel verbringst leicht n ganzen Tag.',
-      beispiel_hd: 'Auf der Museumsinsel verbringst du leicht einen ganzen Tag.',
+      beispiel: 'Det Pergamonmuseum mit seinem Altar is een Höhepunkt der Museumsinsel.',
+      beispiel_hd: 'Das Pergamonmuseum mit seinem Altar ist ein Höhepunkt der Museumsinsel.',
       kategorie: 'orte'
     },
     {
@@ -1191,24 +930,6 @@ export default {
       kategorie: 'sport'
     },
     {
-      id: 'b-135',
-      ausdruck: 'BER',
-      hochdeutsch: 'Flughafen Berlin-Brandenburg (BER)',
-      bedeutung: 'Der BER (Flughafen Berlin-Brandenburg „Willy Brandt") wurde nach über 14 Jahren Bauzeit (statt geplanter 5) endlich 2020 eröffnet. Kostete 7,3 Milliarden Euro (statt geplanter 2). Symbol für deutsches Bürokratie-Versagen und Großprojekt-Chaos. Aber jetzt funktioniert er: 25 Millionen Passagiere/Jahr, Drehkreuz für easyJet und Lufthansa. Ersetzte Tegel und Schönefeld.',
-      beispiel: 'BER hat uns 14 Jahre Lebenszeit gekostet — aber jetzt fliegen wir!',
-      beispiel_hd: 'BER hat uns 14 Jahre Lebenszeit gekostet — aber jetzt fliegen wir!',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-136',
-      ausdruck: 'Tegel',
-      hochdeutsch: 'TXL (geschlossener Flughafen)',
-      bedeutung: 'Der Flughafen Tegel (TXL „Otto Lilienthal") war Berlins Hauptflughafen von 1974 bis 2020. Charakteristisch das sechseckige Hauptgebäude des Architekten Meinhard von Gerkan. Beliebt bei Berlinern wegen kurzer Wege. 2020 mit Eröffnung des BER endgültig geschlossen — viele trauerten dem nahen Flughafen nach. Das Areal wird nun zu Wohngebieten und einer Hochschule entwickelt.',
-      beispiel: 'Tegel war hammer — direkter Flughafen mitten in der Stadt.',
-      beispiel_hd: 'Tegel war hammer — direkter Flughafen mitten in der Stadt.',
-      kategorie: 'orte'
-    },
-    {
       id: 'b-137',
       ausdruck: 'Berlin Marathon',
       hochdeutsch: 'Berlin Marathon (Weltklasse-Laufen)',
@@ -1222,8 +943,8 @@ export default {
       ausdruck: 'Christopher Street Day',
       hochdeutsch: 'CSD Berlin (Pride Parade)',
       bedeutung: 'Der Christopher Street Day in Berlin ist eine der größten Pride-Paraden Europas — jährlich im Juli mit über 750.000 Teilnehmern. Die Demonstration für LGBTQ+-Rechte zieht durch Berlin-Mitte und endet mit großer Abschlusskundgebung am Brandenburger Tor. Politische Forderungen treffen auf bunte Festivalstimmung. Berlin ist eine der queersten Städte weltweit — auch ohne CSD.',
-      beispiel: 'Beim CSD is Berlin n riesiges, buntes Liebesfest.',
-      beispiel_hd: 'Beim CSD ist Berlin ein riesiges, buntes Liebesfest.',
+      beispiel: 'Beim Christopher Street Day is Berlin n riesiges, buntes Liebesfest.',
+      beispiel_hd: 'Beim Christopher Street Day ist Berlin ein riesiges, buntes Liebesfest.',
       kategorie: 'redensart'
     },
     {
@@ -1254,15 +975,6 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 'b-142',
-      ausdruck: 'Marlene Dietrich',
-      hochdeutsch: 'Marlene Dietrich (Berliner Filmlegende)',
-      bedeutung: 'Marlene Dietrich (1901-1992) — geboren in Schöneberg, Berlin — war eine der größten Filmlegenden des 20. Jahrhunderts. Ihre Rolle als „Lola Lola" in „Der Blaue Engel" (1930) machte sie weltberühmt. Ging dann nach Hollywood, blieb aber Berlinerin. Ihre raue, sinnliche Stimme und ihre androgyne Eleganz prägten den Stil der 30er. Posthum 1992 zurück nach Berlin, begraben in Friedenau.',
-      beispiel: 'Marlene Dietrich is Berlin pur — rough, klassisch und unverwechselbar.',
-      beispiel_hd: 'Marlene Dietrich ist Berlin pur — rauh, klassisch und unverwechselbar.',
-      kategorie: 'menschen'
-    },
-    {
       id: 'b-143',
       ausdruck: 'Hertha-Lied',
       hochdeutsch: 'Hertha BSC Vereinslied',
@@ -1270,15 +982,6 @@ export default {
       beispiel: '„Nur nach Hause" — dann wissen wir: Hertha hat gewonnen!',
       beispiel_hd: '„Nur nach Hause" — dann wissen wir: Hertha hat gewonnen!',
       kategorie: 'musik'
-    },
-    {
-      id: 'b-144',
-      ausdruck: 'Berliner Schnauze',
-      hochdeutsch: 'Berliner Schnauze (Direktheit)',
-      bedeutung: 'Die „Berliner Schnauze" ist die berühmte Frechheit und Direktheit der Berliner — schlagfertig, ungeschönt und manchmal grob, aber selten boshaft. Im Berliner Witz wird sie liebevoll überspitzt: ein Berliner Taxifahrer, der dem Kanzler die Meinung sagt. Diese Mentalität ist ein Markenzeichen — andere Deutsche sind manchmal überfordert von der direkten Berliner Art. Liebenswert ehrlich.',
-      beispiel: 'Mit der Berliner Schnauze kommste durch jede Bürokratie.',
-      beispiel_hd: 'Mit der Berliner Schnauze kommst du durch jede Bürokratie.',
-      kategorie: 'redensart'
     },
     {
       id: 'b-145',
@@ -1326,15 +1029,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'b-150',
-      ausdruck: 'Tiergarten',
-      hochdeutsch: 'Tiergarten (Berlins Central Park)',
-      bedeutung: 'Der Tiergarten — 210 Hektar großer Park im Herzen Berlins — ist Berlins Central Park. Ursprünglich kurfürstliches Jagdgebiet, seit dem 18. Jahrhundert öffentlicher Park. Mit der Siegessäule in der Mitte, dem Englischen Garten, dem Tierpark Zoo. Im Sommer Treffpunkt für Jogger, Picknicker, Familien. Berlins grüne Oase zwischen Brandenburger Tor und Charlottenburg — bei jedem Wetter belebt.',
-      beispiel: 'En Spaziergang im Tiergarten — die beste Therapie.',
-      beispiel_hd: 'Ein Spaziergang im Tiergarten — die beste Therapie.',
-      kategorie: 'natur'
-    },
-    {
       id: 'b-151',
       ausdruck: 'Siegessäule',
       hochdeutsch: 'Siegessäule (Berliner Wahrzeichen)',
@@ -1351,15 +1045,6 @@ export default {
       beispiel: 'Berlin war früher Brauerei-Hauptstadt — heute Späti-Bier-Hauptstadt.',
       beispiel_hd: 'Berlin war früher Brauerei-Hauptstadt — heute Späti-Bier-Hauptstadt.',
       kategorie: 'arbeit'
-    },
-    {
-      id: 'b-153',
-      ausdruck: 'Volksbühne',
-      hochdeutsch: 'Volksbühne am Rosa-Luxemburg-Platz',
-      bedeutung: 'Die Volksbühne ist Berlins legendäres Theater — gegründet 1914, lag in Ost-Berlin. Frank Castorf machte sie 1992-2017 weltberühmt mit innovativen, oft skandalösen Inszenierungen. Berliner Avantgarde-Theater par excellence. Charakteristisch: das Rosa-Luxemburg-Statue vor dem Gebäude. Nach Castorf ging es turbulent zu — heute wieder etabliert unter Renè Pollesch.',
-      beispiel: 'Volksbühne — wo Berlin politisch und experimentell wird.',
-      beispiel_hd: 'Volksbühne — wo Berlin politisch und experimentell wird.',
-      kategorie: 'musik'
     },
     {
       id: 'b-154',
@@ -1402,8 +1087,8 @@ export default {
       ausdruck: 'Bahnhof Friedrichstraße',
       hochdeutsch: 'Bahnhof Friedrichstraße (ehem. Grenzbahnhof)',
       bedeutung: 'Der Bahnhof Friedrichstraße in Berlin-Mitte war zu Mauerzeiten der berühmt-berüchtigte „Tränenpalast" — wo sich Familien zwischen Ost und West trennen mussten. Heute Museum und Mahnmal. Architektonisch eines der wichtigsten Berliner Bahnhöfe. Direkter Knotenpunkt für S-Bahn, U-Bahn, ICE. Geschichts-Touristen-Magnet.',
-      beispiel: 'Im Tränenpalast wurde Geschichte geschrieben.',
-      beispiel_hd: 'Im Tränenpalast wurde Geschichte geschrieben.',
+      beispiel: 'Am Bahnhof Friedrichstraße im Tränenpalast wurde Geschichte jeschrieben.',
+      beispiel_hd: 'Am Bahnhof Friedrichstraße im Tränenpalast wurde Geschichte geschrieben.',
       kategorie: 'orte'
     },
     {
@@ -1456,8 +1141,8 @@ export default {
       ausdruck: 'Berliner Ensemble',
       hochdeutsch: 'Berliner Ensemble (BE)',
       bedeutung: 'Das Berliner Ensemble am Bertolt-Brecht-Platz — gegründet 1949 von Bertolt Brecht und Helene Weigel — ist Berlins Brecht-Theater. Das Programm konzentriert sich auf Brecht-Stücke („Mutter Courage", „Dreigroschenoper") und politisches Theater. Architektonisch im Theatersaal mit dem markanten Eisernen Vorhang. Brechts Vermächtnis wird hier gepflegt — manchmal traditionell, manchmal radikal neu.',
-      beispiel: 'Brechts „Dreigroschenoper" inner BE — Klassiker pur.',
-      beispiel_hd: 'Brechts „Dreigroschenoper" im Berliner Ensemble — Klassiker pur.',
+      beispiel: 'Brechts „Dreigroschenoper" im Berliner Ensemble — Klassiker pur!',
+      beispiel_hd: 'Brechts „Dreigroschenoper" im Berliner Ensemble — Klassiker pur!',
       kategorie: 'musik'
     },
     {
@@ -1492,8 +1177,8 @@ export default {
       ausdruck: 'Bundeskanzleramt',
       hochdeutsch: 'Bundeskanzleramt (Berlin)',
       bedeutung: 'Das Bundeskanzleramt am Spreebogen ist Sitz des Bundeskanzlers seit 2001 — entworfen von Axel Schultes und Charlotte Frank. Spitzname: „Waschmaschine" wegen der charakteristischen Rundungen. Mit der Bundesarchiv-Zentrale und dem Paul-Löbe-Haus bildet es das politische Zentrum Deutschlands. Olaf Scholz arbeitet hier — vorher Merkel, Schröder, Kohl.',
-      beispiel: '„Die Waschmaschine" — Spitzname für das Kanzleramt.',
-      beispiel_hd: '„Die Waschmaschine" — Spitzname für das Kanzleramt.',
+      beispiel: 'Det Bundeskanzleramt nennen wa Berliner „die Waschmaschine".',
+      beispiel_hd: 'Das Bundeskanzleramt nennen wir Berliner „die Waschmaschine".',
       kategorie: 'arbeit'
     },
     {
@@ -1519,8 +1204,8 @@ export default {
       ausdruck: 'Sammelpunkt',
       hochdeutsch: 'Berliner Treffpunkt',
       bedeutung: 'Berliner haben oft besondere „Sammelpunkte" für Treffen — die Weltzeituhr am Alex, die Siegessäule, die Goldelse, der Bayerische Platz, das Brandenburger Tor. Diese Orte sind in der Berliner Kultur fest verankert: „Treffen wir uns am Alex um 18 Uhr." Ohne weitere Erklärung verstanden. Sozialgeographische Anker einer Großstadt.',
-      beispiel: 'Treffen wir uns am Alex unter der Weltzeituhr.',
-      beispiel_hd: 'Treffen wir uns am Alex unter der Weltzeituhr.',
+      beispiel: 'Unser Sammelpunkt is der Alex unter der Weltzeituhr.',
+      beispiel_hd: 'Unser Sammelpunkt ist der Alex unter der Weltzeituhr.',
       kategorie: 'orte'
     },
     {
@@ -1540,33 +1225,6 @@ export default {
       beispiel: 'Berliner Stollen ist anders als der Dresdner — feiner.',
       beispiel_hd: 'Berliner Stollen ist anders als der Dresdner — feiner.',
       kategorie: 'essen'
-    },
-    {
-      id: 'b-174',
-      ausdruck: 'Ampelmännchen',
-      hochdeutsch: 'Ostdeutsches Ampelmännchen',
-      bedeutung: 'Das Ampelmännchen — die DDR-Version der Fußgängerampel, entworfen 1961 von Karl Peglau — überlebte die Wende und wurde zu einer der wichtigsten Marken Berlins. Mit Hut und ausgestreckten Armen freundlicher als die Wessi-Ampelmännchen. T-Shirts, Tassen, Souvenirs überall. Mehrere Ampelmännchen-Stores in Berlin. Eines der wenigen DDR-Symbole, das den Westen erobert hat.',
-      beispiel: 'Das Ampelmännchen is\' Berlin pur — auch im Westen.',
-      beispiel_hd: 'Das Ampelmännchen ist Berlin pur — auch im Westen.',
-      kategorie: 'alltag'
-    },
-    {
-      id: 'b-175',
-      ausdruck: 'Wir sind das Volk',
-      hochdeutsch: 'Wendeparole (1989)',
-      bedeutung: '„Wir sind das Volk!" war die zentrale Parole der friedlichen Revolution in der DDR 1989 — bei den Montagsdemonstrationen in Leipzig, Berlin und anderen Städten gerufen. Sie verlangte Demokratie und führte zum Fall der Mauer. Später wandelte sich die Parole zu „Wir sind ein Volk!" — Forderung nach Wiedervereinigung. Geschichtsträchtige Berliner Worte.',
-      beispiel: '„Wir sind das Volk" — Parole, die die DDR ins Wanken brachte.',
-      beispiel_hd: '„Wir sind das Volk" — Parole, die die DDR ins Wanken brachte.',
-      kategorie: 'redensart'
-    },
-    {
-      id: 'b-176',
-      ausdruck: 'Pankow',
-      hochdeutsch: 'Pankow (nordberliner Bezirk)',
-      bedeutung: 'Pankow ist Berlins nördlichster Bezirk — mit Prenzlauer Berg, Weißensee und Pankow-Mitte. Früher Wohnort der DDR-Spitzenpolitiker (Majakowskiring). „Pankow" wurde auch zur Bezeichnung für die DDR-Regierung benutzt (Udo Lindenberg: „Sonderzug nach Pankow"). Heute multikulturell und familienfreundlich. Schloss Schönhausen, Mauerpark, Weißensee — alles Pankow.',
-      beispiel: 'Udo Lindenbergs Sonderzug nach Pankow — DDR-Geschichte im Song.',
-      beispiel_hd: 'Udo Lindenbergs Sonderzug nach Pankow — DDR-Geschichte im Song.',
-      kategorie: 'orte'
     },
     {
       id: 'b-177',
@@ -1702,15 +1360,6 @@ export default {
       beispiel: 'Sonntag Mauerpark Flohmarkt mit Bearpit Karaoke — Berliner Sonntag.',
       beispiel_hd: 'Sonntag Mauerpark Flohmarkt mit Bearpit Karaoke — Berliner Sonntag.',
       kategorie: 'redensart'
-    },
-    {
-      id: 'b-192',
-      ausdruck: 'Berliner Senat',
-      hochdeutsch: 'Berliner Senat (Landesregierung)',
-      bedeutung: 'Der Berliner Senat ist die Landesregierung des Stadtstaates Berlin — anders als in Bundesländern mit Ministerien hat Berlin „Senatsverwaltungen" (z.B. für Verkehr, Bildung). Geleitet vom Regierenden Bürgermeister. Sitz im Roten Rathaus. Berliner Politik ist besonders — kleines Land, große Probleme (Mietendeckel, BER, Verwaltungschaos). Eine eigenständige politische Welt.',
-      beispiel: 'Der Berliner Senat — Politik ohne Bundesland-Allüren.',
-      beispiel_hd: 'Der Berliner Senat — Politik ohne Bundesland-Allüren.',
-      kategorie: 'arbeit'
     },
     {
       id: 'b-193',
@@ -1897,8 +1546,8 @@ export default {
       ausdruck: 'Augustusburger',
       hochdeutsch: 'Hauptbahnhof-Schlafplatz',
       bedeutung: 'Eigentlich „abkacken" — Berliner Slang für müde sein oder einnicken. „Ick kacke uff der Couch ab" bedeutet, ich schlafe auf der Couch ein. Auch übertragen: „abkacken im Job" (im Job scheitern), „abkacken in der Prüfung". Der Ausdruck ist derbe und gehört zur jüngeren Berliner Umgangssprache. Sehr direkt und ohne Schnörkel.',
-      beispiel: 'Nach der langen Schicht bin ick auf der Couch abjekackt.',
-      beispiel_hd: 'Nach der langen Schicht bin ich auf der Couch eingeschlafen.',
+      beispiel: 'Der Augustusburger uffm Bahnhof war nach der langen Schicht ratzfatz abjekackt.',
+      beispiel_hd: 'Der Augustusburger auf dem Bahnhof war nach der langen Schicht ratzfatz eingeschlafen.',
       kategorie: 'alltag'
     },
     {
@@ -1909,15 +1558,6 @@ export default {
       beispiel: 'Mein Freund ist Wessi und meine Familie kommt aus Ostberlin.',
       beispiel_hd: 'Mein Freund ist Westdeutscher und meine Familie kommt aus Ostberlin.',
       kategorie: 'menschen'
-    },
-    {
-      id: 'b-215',
-      ausdruck: 'Ostalgie',
-      hochdeutsch: 'Nostalgie für die DDR',
-      bedeutung: '„Ostalgie" ist die wehmütige Erinnerung an die DDR — ein Phänomen, das nach der Wiedervereinigung entstand. Trabbi, Sandmännchen, Ampelmännchen, Spreewald-Gurken, Vita Cola, Rotkäppchen-Sekt — alles wird mit Wehmut gepflegt. In Berlin gibt es die DDR-Museen, Trabbi-Touren, Ostalgie-Restaurants. Eine wichtige Berliner Kultur-Strömung, die zeigt, dass Erinnerung subjektiv ist.',
-      beispiel: 'Die Trabbi-Tour ist pure Ostalgie!',
-      beispiel_hd: 'Die Trabbi-Tour ist pure DDR-Nostalgie!',
-      kategorie: 'gefuehle'
     },
     {
       id: 'b-216',
@@ -1945,15 +1585,6 @@ export default {
       beispiel: 'Für Touristen is die Trabbi-Tour ein Highlight.',
       beispiel_hd: 'Für Touristen ist die Trabbi-Tour ein Highlight.',
       kategorie: 'orte'
-    },
-    {
-      id: 'b-219',
-      ausdruck: 'Berliner Schnauze',
-      hochdeutsch: 'Berliner Direktheit / Berliner Schnauze',
-      bedeutung: 'Die „Berliner Schnauze" ist sprichwörtlich — die direkte, schlagfertige, manchmal ruppige Art der Berliner zu sprechen. „Berliner Schnauze hat das Herz auf der Zunge." Berliner sagen, was sie denken, ohne langes Drumherum — manchmal sehr direkt, aber meistens nicht böse gemeint. Eine Kulturmarke der Hauptstadt, die Touristen erst irritiert und dann liebgewinnen.',
-      beispiel: 'Berliner Schnauze hin oder her — er meint\'s nich böse.',
-      beispiel_hd: 'Berliner Schnauze hin oder her — er meint es nicht böse.',
-      kategorie: 'menschen'
     },
     {
       id: 'b-220',
@@ -2136,15 +1767,6 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 'b-240',
-      ausdruck: 'Wessi',
-      hochdeutsch: 'Westdeutscher',
-      bedeutung: '„Wessi" ist berlinerische (und ostdeutsche) Bezeichnung für Westdeutschen — seit der Wiedervereinigung 1990. Im Gegensatz zum „Ossi" (Ostdeutscher). Drückt Klischees aus: Wessi als arrogant, geldfixiert, Großspurig. „Wessi-Schnack" als Westdeutsch-Tradition. Heute schwächer geworden, aber im Berliner Alltag immer noch verwendet. Symbol für innerdeutsche Identitäts-Spannungen. Junge Berliner verstehen den Begriff oft nicht mehr.',
-      beispiel: 'Der neue Chef ist a typischer Wessi.',
-      beispiel_hd: 'Der neue Chef ist ein typischer Westdeutscher.',
-      kategorie: 'menschen'
-    },
-    {
       id: 'b-241',
       ausdruck: 'Ossi',
       hochdeutsch: 'Ostdeutscher',
@@ -2241,15 +1863,6 @@ export default {
       bedeutung: 'Der „Tiergarten" ist Berlins größter innerstädtischer Park — 210 Hektar, zwischen Brandenburger Tor und Schloss Charlottenburg. Siegessäule als Wahrzeichen im Zentrum. Sommer-Picknick-Wiese der Berliner. Demonstrationen am Großen Stern. Berliner Zoo am Rand. „Loveparade" zog hier 1989 erstmals durch (vor Verschiebung). Symbol für Berliner Grünflächen und Erholung in der Hauptstadt. Touristen genießen ihn neben den Wahrzeichen.',
       beispiel: 'Im Tiergarten machen wir Picknick.',
       beispiel_hd: 'Im Tiergarten machen wir Picknick.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'b-252',
-      ausdruck: 'Siegessäule',
-      hochdeutsch: 'Siegessäule (Berliner Wahrzeichen)',
-      bedeutung: 'Die „Siegessäule" ist Berliner Wahrzeichen — 67m hoch, im Tiergarten am Großen Stern. „Goldelse" (Goldene Else) als liebevoller Spitzname für die Goldfigur Viktoria. Erbaut 1873 zur Erinnerung an die preußischen Siege. Aussichtsplattform in 51m Höhe. „Christopher Street Day"-Endpunkt. Symbol für Berliner Geschichte. Aussicht wundervoll, aber 285 Stufen müssen erklommen werden.',
-      beispiel: 'Goldelse auf der Siegessäule winkt uns zu.',
-      beispiel_hd: 'Goldelse auf der Siegessäule winkt uns zu.',
       kategorie: 'orte'
     },
     {
@@ -2563,8 +2176,8 @@ export default {
       ausdruck: 'Volkseigener Betrieb',
       hochdeutsch: 'VEB (staatlicher DDR-Betrieb)',
       bedeutung: '„Volkseigener Betrieb" — VEB — war Form der DDR-Staatsbetriebe. Alles gehörte „dem Volk" (also dem Staat). VEB Plastimat Wernigerode, VEB Sachsenring Zwickau (Trabi-Werk), VEB Pentacon Dresden (Kameras). Nach der Wende durch die Treuhand abgewickelt. Berliner Industrie hatte viele VEBs. Heute historischer Begriff. „Aus dem VEB" als ostdeutsche Karriere-Herkunft. Symbol für sozialistische Wirtschaft.',
-      beispiel: 'Mei Vater arbeitete im VEB Elektronik.',
-      beispiel_hd: 'Mein Vater arbeitete im VEB Elektronik.',
+      beispiel: 'Mein Vatta arbeitete im Volkseigenen Betrieb Elektronik in Ost-Berlin.',
+      beispiel_hd: 'Mein Vater arbeitete im Volkseigenen Betrieb Elektronik in Ost-Berlin.',
       kategorie: 'arbeit'
     },
     {
@@ -2572,8 +2185,8 @@ export default {
       ausdruck: 'Volkspolizist',
       hochdeutsch: 'Vopo (DDR-Polizist)',
       bedeutung: '„Vopo" oder „Volkspolizist" war Polizist in der DDR. Grüne Uniformen, andere Rangzeichen als BRD-Polizei. „Vopos an der Mauer" als bedrohliche Erinnerung — schossen auf Flüchtlinge. Nach der Wende in die Bundespolizei integriert. Heute historischer Begriff. Berliner Wende-Geschichten oft mit Vopos verbunden. „Vorsicht, Vopo!" als spielerische Warnung. Symbol für DDR-Staatsgewalt.',
-      beispiel: 'D\'Vopos waren früher überall.',
-      beispiel_hd: 'Die Vopos waren früher überall.',
+      beispiel: 'Der Volkspolizist an der Mauer war für uns immer der Vopo schlechthin.',
+      beispiel_hd: 'Der Volkspolizist an der Mauer war für uns immer der Vopo schlechthin.',
       kategorie: 'arbeit'
     },
     {
@@ -3333,15 +2946,6 @@ export default {
       kategorie: 'orte'
     },
     {
-      id: 'b-373',
-      ausdruck: 'Berlinale',
-      hochdeutsch: 'Berlinale (Filmfestival)',
-      bedeutung: 'Die „Berlinale" ist Berlins großes Filmfestival — eines der drei A-Festivals der Welt (mit Cannes und Venedig). Jährlich im Februar. „Goldener Bär" als Hauptpreis. Roter Teppich am Potsdamer Platz. Internationale Filmstars in Berlin. Symbol für berliner Kultur und Film-Tradition. Berliner sind stolz: „Mir habbe die Berlinale!". Touristen-Magnet im Februar. Berlinale-Goers als Berliner Subkultur.',
-      beispiel: 'Bei der Berlinale sieht man immer Hollywood-Stars.',
-      beispiel_hd: 'Bei der Berlinale sieht man immer Hollywood-Stars.',
-      kategorie: 'feiern'
-    },
-    {
       id: 'b-374',
       ausdruck: 'Loveparade',
       hochdeutsch: 'Loveparade (legendäre Techno-Parade)',
@@ -3403,6 +3007,276 @@ export default {
       beispiel: 'Berliner Hauptstadt-Schnauze — ehrlich und direkt!',
       beispiel_hd: 'Berliner Hauptstadt-Schnauze — ehrlich und direkt!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'b-381',
+      ausdruck: 'Buletten-Schmiede',
+      hochdeutsch: 'Buletten-Schmiede / Imbiss',
+      bedeutung: 'Die „Buletten-Schmiede" ist im Berlinischen die kleine Imbiss-Bude, in der Buletten (Frikadellen) gemacht werden. „Bei Konnopke in Prenzlauer Berg gibts die beste Buletten-Schmiede!" Tief in der Berliner Imbiss-Kultur verwurzelt — seit den 50er Jahren Volksversorgung. Mit Berliner Senf, Brötchen, Kartoffelsalat serviert. Symbol für die bürgerliche Berliner Esskultur abseits der Currywurst.',
+      beispiel: 'In der Buletten-Schmiede an der Ecke gibts die besten!',
+      beispiel_hd: 'In der Imbiss-Bude an der Ecke gibt es die besten!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-382',
+      ausdruck: 'Pankow-Kid',
+      hochdeutsch: 'Pankow-Kind / Junger Berliner aus Pankow',
+      bedeutung: 'Ein „Pankow-Kid" ist im Berlinischen ein junger Berliner aus dem Bezirk Pankow — Mitte/Nord-Berlin, sehr beliebt bei jungen Familien. „Die Pankow-Kids sind die neuen Berliner Hipster!" Pankow umfasst Prenzlauer Berg, Weißensee, Buch und das namensgebende Pankow. Eine moderne, charakteristische Berliner Identitäts-Bezeichnung. Mit Augenzwinkern verwendet.',
+      beispiel: 'Die jungen Pankow-Kids ziehen alle nach Brandenburg.',
+      beispiel_hd: 'Die jungen Pankow-Kinder ziehen alle nach Brandenburg.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-383',
+      ausdruck: 'Kreuzberger Mischung',
+      hochdeutsch: 'Kreuzberger Mischung (multikulturell)',
+      bedeutung: 'Die „Kreuzberger Mischung" ist die charakteristische Multikulti-Atmosphäre von Berlin-Kreuzberg — Türken, Deutsche, Hipster, Künstler, Punks, Hartz-IV-Empfänger und Banker auf engem Raum. „Die Kreuzberger Mischung macht den Kiez aus!" Symbol für Berliner Toleranz und urbane Vielfalt. Im Bermuda-Dreieck von Görli, Kotti und Oranienplatz besonders ausgeprägt.',
+      beispiel: 'Die Kreuzberger Mischung ist einzigartig in Deutschland.',
+      beispiel_hd: 'Die Kreuzberger Mischung ist einzigartig in Deutschland.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-384',
+      ausdruck: 'Kotti-Connection',
+      hochdeutsch: 'Kotti-Connection (Drogen-/Szene-Bezug)',
+      bedeutung: 'Die „Kotti-Connection" ist im Berlinischen die Drogen- und Szene-Atmosphäre rund um den Kottbusser Tor in Kreuzberg — bekannt aus der TV-Serie „4 Blocks". „An der Kotti-Connection ist immer was los!" Berlin hat dieses Phänomen offen — Drogenhandel, soziale Probleme, Mischung mit Hipster-Kultur. Eine kontroverse, aber prägende Berliner Realität.',
+      beispiel: 'An der Kotti-Connection trifft jeder jeden.',
+      beispiel_hd: 'An der Kotti-Connection trifft jeder jeden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-385',
+      ausdruck: 'Tegel-Vermissen',
+      hochdeutsch: 'Tegel-Vermissen / Nostalgie für TXL',
+      bedeutung: 'Das „Tegel-Vermissen" ist eine Berliner Nostalgie für den alten Flughafen Tegel (TXL) — geschlossen 2020 nach Eröffnung des BER. „Tegel war so charmant, ich vermiss ihn!" Die berühmten sechseckigen Terminals, kurze Wege, klassische Hauptstadt-Atmosphäre. Im Vergleich zum chaotischen BER ein nostalgisches Symbol. Auch Touristen lernten Tegel zu lieben.',
+      beispiel: 'Ich hab\'n echtes Tegel-Vermissen — wir haben den Charme verloren.',
+      beispiel_hd: 'Ich habe ein echtes Tegel-Vermissen — wir haben den Charme verloren.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-386',
+      ausdruck: 'Görli-Picknick',
+      hochdeutsch: 'Görlitzer Park-Picknick',
+      bedeutung: 'Das „Görli-Picknick" ist im Berlinischen das Sommer-Picknick im Görlitzer Park (Kreuzberg) — beliebt bei jungen Familien, Hipstern, Touristen. „Im Sommer ist jeden Tag Görli-Picknick angesagt!" Trotz Drogen-Problemen ist der Görli ein beliebter Treffpunkt. Mit Spätis und Imbissbuden ringsherum. Berliner Stadt-Strand-Atmosphäre. Symbol für Kreuzberger Sommer-Kultur.',
+      beispiel: 'Am Wochenende machen wir Görli-Picknick mit der Crew!',
+      beispiel_hd: 'Am Wochenende machen wir Görlitzer Park-Picknick mit der Crew!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-387',
+      ausdruck: 'Friedrichshain-Bermuda',
+      hochdeutsch: 'Friedrichshainer Ausgehviertel',
+      bedeutung: 'Das „Friedrichshain-Bermuda" ist das Friedrichshainer Ausgehviertel zwischen Simon-Dahl-Straße, Boxhagener Platz und Karl-Marx-Allee. „Im Friedrichshain-Bermuda verlier ich mich am Wochenende!" Mit unzähligen Bars, Clubs, Eckkneipen. Berliner Nachtleben in Reinkultur. Auch andere Stadtteile haben ihr Bermuda (Mitte, Neukölln).',
+      beispiel: 'Letzte Nacht ham wir uns im Friedrichshain-Bermuda verloren!',
+      beispiel_hd: 'Letzte Nacht haben wir uns im Friedrichshain-Bermuda verloren!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-388',
+      ausdruck: 'Mauerblick',
+      hochdeutsch: 'Mauerblick (auf die Berliner Mauer-Reste)',
+      bedeutung: 'Der „Mauerblick" ist im Berlinischen der Blick auf die Berliner Mauer-Reste — East Side Gallery, Bernauer Straße, Mauerpark. „Touristen lieben den Mauerblick!" Eine emotionale Berliner Touristen-Attraktion. Auch für Berliner ein bewusster Erinnerungs-Akt. Mauer-Geschichte sichtbar gemacht. Im 21. Jahrhundert wichtig für die historische Bildung.',
+      beispiel: 'Mit dem Mauerblick verstehst du Berlin besser.',
+      beispiel_hd: 'Mit dem Mauerblick verstehst du Berlin besser.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-389',
+      ausdruck: 'BVG-Hass',
+      hochdeutsch: 'BVG-Hass / Frust mit der Berliner Verkehrsbetriebe',
+      bedeutung: 'Der „BVG-Hass" ist eine Berliner Realität — Wut auf die Berliner Verkehrsbetriebe wegen Verspätungen, Ausfällen, schmutzigen U-Bahnen. „Heut hab ich wieder BVG-Hass!" Ironischerweise lieben Berliner ihre BVG-Memes („Weil wir dich lieben"). Eine ambivalente Hass-Liebe. Symbol für Berliner Alltag.',
+      beispiel: 'Mit der S-Bahn-Verspätung steigert sich mein BVG-Hass.',
+      beispiel_hd: 'Mit der S-Bahn-Verspätung steigert sich mein BVG-Hass.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-390',
+      ausdruck: 'Späti-Tour',
+      hochdeutsch: 'Spätkauf-Tour / Späti-Krneipenbummel',
+      bedeutung: 'Die „Späti-Tour" ist im Berlinischen die nächtliche Tour von Späti zu Späti — meist mit Bier-Trinken an den Eingängen. „Am Freitag machen wir wieder Späti-Tour durch Neukölln!" Eine moderne Berliner Sub-Kultur, die die Späti-Kultur zelebriert. Sozialer als reine Kneipen-Tour, weil draußen vor dem Späti getrunken wird. Echtes Berliner Sommer-Erlebnis.',
+      beispiel: 'Die Späti-Tour durch Friedrichshain dauert die ganze Nacht.',
+      beispiel_hd: 'Die Späti-Tour durch Friedrichshain dauert die ganze Nacht.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'b-391',
+      ausdruck: 'Hauptstadt-Schmöker',
+      hochdeutsch: 'Hauptstadt-Schmöker (Berlin-Roman)',
+      bedeutung: 'Ein „Hauptstadt-Schmöker" ist im Berlinischen ein dicker Berlin-Roman — von Döblin („Berlin Alexanderplatz") über Tilman Birr bis zu modernen Bestsellern. „Der neue Berlin-Schmöker ist genial!" Berlin als Literatur-Stadt hat eine lange Tradition. Auch Krimis spielen oft in Berlin — Volker Kutscher, Wladimir Kaminer. Wichtiges Genre der deutschen Gegenwartsliteratur.',
+      beispiel: 'Auf dem Klo lese ich gerade nen Hauptstadt-Schmöker.',
+      beispiel_hd: 'Auf dem Klo lese ich gerade einen Hauptstadt-Schmöker.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-392',
+      ausdruck: 'Kiez-Wirt',
+      hochdeutsch: 'Kiez-Wirt / Stadtteil-Wirt',
+      bedeutung: 'Der „Kiez-Wirt" ist im Berlinischen der Wirt der Eckkneipe — meistens Kiez-Original mit eigenem Kult-Status. „Der Kiez-Wirt kennt jeden im Veedel!" Soziale Institution: hier wird geredet, geholfen, sich gestritten. Berliner Kiez-Identität konzentriert sich oft im Kiez-Wirt. Auch im Roman „Berlin Alexanderplatz" eine zentrale Figur.',
+      beispiel: 'Beim Kiez-Wirt um die Ecke kennt mich jeder.',
+      beispiel_hd: 'Beim Kiez-Wirt um die Ecke kennt mich jeder.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-393',
+      ausdruck: 'Hauptstadt-Hipster',
+      hochdeutsch: 'Hauptstadt-Hipster',
+      bedeutung: 'Der „Hauptstadt-Hipster" ist im Berlinischen die berüchtigte Berliner Hipster-Figur — Bart, Vintage-Kleidung, Bio-Café, Fixie-Fahrrad. „In Mitte und Prenzlauer Berg leben die Hauptstadt-Hipster!" Wird oft mit Augenzwinkern oder Spott verwendet. Auch selbstironisch von echten Hipstern. Berliner Sozialphänomen seit den 2000ern.',
+      beispiel: 'Im Café Liebling sitzen nur Hauptstadt-Hipster.',
+      beispiel_hd: 'Im Café Liebling sitzen nur Hauptstadt-Hipster.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-394',
+      ausdruck: 'Görli-Dealer',
+      hochdeutsch: 'Görlitzer Park-Drogendealer',
+      bedeutung: 'Der „Görli-Dealer" ist im Berlinischen die berüchtigte Drogen-Verkäufer-Figur im Görlitzer Park — eine ernste Berliner Realität. „Pass auf den Görli-Dealer auf!" Politisch umstritten. Auch in der Serie „4 Blocks" thematisiert. Symbol für Berliner Drogen-Problematik. Im 21. Jahrhundert immer noch ungelöstes Stadtproblem.',
+      beispiel: 'Im Görli sind ständig Görli-Dealer unterwegs.',
+      beispiel_hd: 'Im Görlitzer Park sind ständig Drogendealer unterwegs.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-395',
+      ausdruck: 'Bauhaus-Berlin',
+      hochdeutsch: 'Bauhaus-Berlin (Architektur)',
+      bedeutung: '„Bauhaus-Berlin" ist die Berliner Architektur-Tradition des Bauhauses — Walter Gropius lebte und arbeitete in Berlin. „Die Bauhaus-Berlin-Architektur prägt das Stadtbild!" Mit Bauten wie der Siemensstadt-Siedlung, dem Bauhaus-Archiv. UNESCO-Welterbe für die Berliner Modernismus-Siedlungen. Wichtige kulturelle und architektonische Tradition.',
+      beispiel: 'Die Bauhaus-Berlin-Siedlungen sind UNESCO-Welterbe.',
+      beispiel_hd: 'Die Bauhaus-Berlin-Siedlungen sind UNESCO-Welterbe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-396',
+      ausdruck: 'Späti-Bier-Kollektiv',
+      hochdeutsch: 'Späti-Bier-Kollektiv (Treffpunkt-Gemeinschaft)',
+      bedeutung: 'Das „Späti-Bier-Kollektiv" ist im Berlinischen die spontane Gemeinschaft, die abends vor einem Späti Bier trinkt — Nachbarn, Freunde, Zufallsbekannte. „Unser Späti-Bier-Kollektiv ist jeden Freitag dort!" Eine moderne Berliner Sozialform. Reflektiert die Berliner Geselligkeit ohne Programm — einfach zusammen sein.',
+      beispiel: 'Das Späti-Bier-Kollektiv trifft sich heut Abend.',
+      beispiel_hd: 'Das Späti-Bier-Kollektiv trifft sich heute Abend.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-397',
+      ausdruck: 'Spreepark-Memories',
+      hochdeutsch: 'Spreepark-Erinnerungen',
+      bedeutung: 'Die „Spreepark-Memories" sind im Berlinischen die Erinnerungen an den ehemaligen DDR-Vergnügungspark im Plänterwald — geschlossen 2002, heute Lost Place und kultur-archäologische Stätte. „Spreepark-Memories — eine ganze Generation hat hier gespielt!" Symbol für DDR-Kindheit und post-Wiedervereinigungs-Identität. Heute Kunst-Projekt.',
+      beispiel: 'Spreepark-Memories — viele Berliner haben dort als Kind gespielt.',
+      beispiel_hd: 'Spreepark-Memories — viele Berliner haben dort als Kind gespielt.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-398',
+      ausdruck: 'Berliner Halbzeit',
+      hochdeutsch: 'Berliner Halbzeit (Mittagspause)',
+      bedeutung: 'Die „Berliner Halbzeit" ist im Berlinischen die Mittagspause — meist nur 30 Minuten, hektisch, in der Imbiss-Bude. „In meiner Berliner Halbzeit ess ich immer Currywurst!" Reflektiert das schnelle Berliner Arbeitsleben. Anders als bei den Münchnern mit ihrer Stunden-Brotzeit. Symbol für Berliner Großstadt-Tempo.',
+      beispiel: 'In meiner Berliner Halbzeit hab ich nur Zeit für Pommes.',
+      beispiel_hd: 'In meiner Berliner Halbzeit habe ich nur Zeit für Pommes.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'b-399',
+      ausdruck: 'Mauer-Memorial',
+      hochdeutsch: 'Mauer-Gedenkstätte',
+      bedeutung: 'Das „Mauer-Memorial" ist die offizielle Berliner Mauer-Gedenkstätte an der Bernauer Straße — wichtigste historische Stätte zur Mauer-Geschichte. „Im Mauer-Memorial werden die Opfer der Mauer geehrt!" Mit Original-Mauer-Stück, Dokumentations-Zentrum, Außen-Ausstellung. Eine eindringliche, emotional bewegende Erinnerungs-Stätte. Pflicht-Besuch für Berlin-Touristen.',
+      beispiel: 'Im Mauer-Memorial wird die Mauer-Geschichte lebendig.',
+      beispiel_hd: 'Im Mauer-Memorial wird die Mauer-Geschichte lebendig.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-400',
+      ausdruck: 'Berliner Wasser',
+      hochdeutsch: 'Berliner Wasser (Trinkwasser)',
+      bedeutung: 'Das „Berliner Wasser" ist das Trinkwasser der Hauptstadt — kommt aus dem Brandenburger Hinterland, sehr kalkhaltig. „Berliner Wasser ist hart, aber gesund!" Berliner sind stolz auf ihre Trinkwasser-Qualität. Mit Berliner Wasserbetrieben gut kontrolliert. Auch übertragen: „Berliner Wasser" als Symbol für Berliner Eigenständigkeit.',
+      beispiel: 'Berliner Wasser kostet nichts und schmeckt direkt aus dem Hahn.',
+      beispiel_hd: 'Berliner Wasser kostet nichts und schmeckt direkt aus dem Hahn.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-401',
+      ausdruck: 'Wasserkippe',
+      hochdeutsch: 'Pissoir / Wasser-Kippe',
+      bedeutung: 'Die „Wasserkippe" ist im Berlinischen humorvoll-derbe Bezeichnung für die Toilette oder das Pissoir — vor allem in Kneipen und an Spätis. „Wo ist hier die Wasserkippe?" Eine plastische, drastische Berliner Wortprägung. Mild bis derb je nach Kontext. Charakteristisch direkte Berliner Sprachpraxis.',
+      beispiel: 'Wo ist hier die nächste Wasserkippe?',
+      beispiel_hd: 'Wo ist hier die nächste Toilette?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-402',
+      ausdruck: 'Mauerpark-Karaoke',
+      hochdeutsch: 'Mauerpark-Karaoke (Sonntags-Tradition)',
+      bedeutung: 'Die „Mauerpark-Karaoke" ist eine Berliner Sommer-Tradition — jeden Sonntag im Mauerpark Open-Air-Karaoke mit Hunderten von Zuschauern. „Beim Mauerpark-Karaoke jeden Sonntag!" Berlins moderne Volksfest-Tradition seit 2009. Bezahlt mit Spenden. Internationale Touristen-Attraktion. Symbol für Berliner Lebenslust.',
+      beispiel: 'Jeden Sonntag is Mauerpark-Karaoke ab 15 Uhr!',
+      beispiel_hd: 'Jeden Sonntag ist Mauerpark-Karaoke ab 15 Uhr!',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-403',
+      ausdruck: 'Brandenburger Wasser',
+      hochdeutsch: 'Brandenburger Wasser (Berliner Trinkwasser)',
+      bedeutung: 'Das „Brandenburger Wasser" ist das Trinkwasser, das aus Brandenburg nach Berlin geleitet wird — Berliner Wasser kommt aus dem Brandenburger Hinterland und Müggelsee. „Brandenburger Wasser fließt aus jedem Berliner Hahn!" Wichtige Wasser-Infrastruktur. Symbolisiert die Verbindung Berlin-Brandenburg. Politisch wichtig in der Hauptstadt-Region.',
+      beispiel: 'Berliner trinken eigentlich Brandenburger Wasser.',
+      beispiel_hd: 'Berliner trinken eigentlich Brandenburger Wasser.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-404',
+      ausdruck: 'Tiergartenmarsch',
+      hochdeutsch: 'Tiergarten-Marsch / Pride-Demo',
+      bedeutung: 'Der „Tiergartenmarsch" ist im Berlinischen ein Großmarsch durch den Tiergarten — meistens politische oder LGBT-Demonstrationen, kulminiert beim Brandenburger Tor. „Beim CSD-Tiergartenmarsch sind 500.000 Menschen unterwegs!" Berlin als Welthauptstadt der Demos. Symbol für politische Freiheit und Vielfalt.',
+      beispiel: 'Am CSD-Wochenende ist der große Tiergartenmarsch.',
+      beispiel_hd: 'Am CSD-Wochenende ist der große Tiergartenmarsch.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-405',
+      ausdruck: 'Berlin-Pflanze',
+      hochdeutsch: 'Berlin-Pflanze (echter Berliner)',
+      bedeutung: 'Die „Berlin-Pflanze" ist im Berlinischen ein echter, geborener Berliner — meist mit drei Generationen Berlin-Tradition. „Ich bin\'ne Berlin-Pflanze, hier geboren und aufgewachsen!" Eine warme, identitäts-bewusste Bezeichnung. Im Kontrast zu den vielen Zugezogenen, die nach Berlin gekommen sind. Mit Stolz verwendet.',
+      beispiel: 'Als Berlin-Pflanze kenn ich jeden Kiez hier!',
+      beispiel_hd: 'Als Berlin-Pflanze kenne ich jeden Kiez hier!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-406',
+      ausdruck: 'Hauptstadt-Job',
+      hochdeutsch: 'Hauptstadt-Job (Berliner Anstellung)',
+      bedeutung: 'Ein „Hauptstadt-Job" ist im Berlinischen eine Anstellung in der politischen Hauptstadt-Sphäre — Bundestag, Ministerien, Parteizentralen, NGOs, Botschaften. „Mit dem Hauptstadt-Job verdient man Berliner Mieten!" Berliner Arbeitsmarkt-Realität: viele leben gut von der Politik-Branche. Symbol für die Bundeshauptstadt-Funktion Berlins.',
+      beispiel: 'Mit meinem Hauptstadt-Job kann ich mir die Wohnung leisten.',
+      beispiel_hd: 'Mit meinem Hauptstadt-Job kann ich mir die Wohnung leisten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-407',
+      ausdruck: 'Reichstags-Kuppel',
+      hochdeutsch: 'Reichstags-Kuppel (Norman Foster)',
+      bedeutung: 'Die „Reichstags-Kuppel" ist die berühmte Glas-Kuppel auf dem Berliner Reichstagsgebäude — von Norman Foster 1999 erbaut. „Vom Reichstags-Kuppel hat man den besten Berlin-Ausblick!" Symbol für Wiedervereinigung und transparente Demokratie. Über 4 Millionen Besucher jährlich. Architektonisches Wahrzeichen.',
+      beispiel: 'Die Reichstags-Kuppel kann man gratis besichtigen.',
+      beispiel_hd: 'Die Reichstags-Kuppel kann man gratis besichtigen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-408',
+      ausdruck: 'Bär-Statue',
+      hochdeutsch: 'Bär-Statue (Berlin-Wahrzeichen)',
+      bedeutung: 'Die „Bär-Statue" sind die bunten Bären-Skulpturen, die seit 2001 weltweit als Berlin-Botschafter herumstehen — auch in Berliner Hotels, Parks, Bahnhöfen. „Bei jedem Berlin-Besuch fotografieren Touristen eine Bär-Statue!" Eine moderne Berliner Identitäts-Marke. United Buddy Bears als kunst- und Friedens-Projekt.',
+      beispiel: 'Am Brandenburger Tor steht eine Bär-Statue.',
+      beispiel_hd: 'Am Brandenburger Tor steht eine Bär-Statue.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-409',
+      ausdruck: 'Berlin schläft nie',
+      hochdeutsch: 'Berlin schläft nie (Stadt-Motto)',
+      bedeutung: '„Berlin schläft nie" ist Berlins inoffizielles Motto — die 24-Stunden-Stadt mit Spätis, Clubs, Bars, Bäckereien rund um die Uhr. „Wer um drei Uhr nachts noch was sucht, findet es in Berlin!" Berlin als deutsche New-York-Variante. Symbol für die Berliner Lebenslust und Großstadt-Energie. Anders als süddeutsche Städte mit ihrer Sperrstunde.',
+      beispiel: 'Berlin schläft nie — selbst um 4 Uhr morgens isn Späti offen!',
+      beispiel_hd: 'Berlin schläft nie — selbst um 4 Uhr morgens ist ein Späti offen!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-410',
+      ausdruck: 'Späti-Kanon',
+      hochdeutsch: 'Späti-Kanon (typischer Späti-Sortiment)',
+      bedeutung: 'Der „Späti-Kanon" ist im Berlinischen das klassische Späti-Sortiment — Bier, Limo, Eis, Schoki, Pizza, Sonderzeitschriften. „Der Späti-Kanon ist überall in Berlin gleich!" Eine moderne Berliner Beobachtung: die Spätis funktionieren wie kleine Mini-Supermärkte mit standardisiertem Angebot. Symbol für die Späti-Kultur als universelle Berliner Erscheinung.',
+      beispiel: 'Im Späti-Kanon findet jeder das Richtige!',
+      beispiel_hd: 'Im Späti-Sortiment findet jeder das Richtige!',
+      kategorie: 'essen'
     }
   ]
 };

@@ -1,6 +1,7 @@
 import { el, go, speak, escapeHtml, toast } from '../util.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { isFavorit, toggleFavorit, getLernstand, setLernstand, getNote, setNote } from '../store.js';
+import { reportCorrection } from '../util/feedback.js';
 
 export function renderDialektCard(d) {
   return el('button', {
@@ -57,7 +58,7 @@ export function renderExpressionCard(a, dialekt) {
     class: 'expr-action',
     title: 'Anhören',
     'aria-label': `„${a.ausdruck}" anhören`,
-    onClick: (e) => { e.stopPropagation(); speak(a.ausdruck); }
+    onClick: (e) => { e.stopPropagation(); speak(a.ausdruck, dialekt.lang || 'de-DE'); }
   }, el('span', { html: '🔊' }));
 
   const note = getNote(dialekt.id, a.id);
@@ -86,6 +87,18 @@ export function renderExpressionCard(a, dialekt) {
     }
   }, el('span', { html: '📝' }));
 
+  const reportBtn = el('button', {
+    class: 'expr-action expr-action-report',
+    title: 'Korrektur melden (öffnet GitHub-Issue)',
+    'aria-label': `Korrektur für „${a.ausdruck}" melden`,
+    onClick: (e) => {
+      e.stopPropagation();
+      const ok = reportCorrection(dialekt, a);
+      if (ok) toast('Issue-Formular geöffnet — danke fürs Helfen!', 'success', 2200);
+      else toast('Konnte nicht öffnen — Popup-Blocker?', 'info', 2400);
+    }
+  }, el('span', { html: '🚩' }));
+
   return el('article', { class: 'expr-card', dataset: { id: a.id, cat: a.kategorie } },
     el('div', { class: 'expr-head' },
       el('div', {},
@@ -102,7 +115,7 @@ export function renderExpressionCard(a, dialekt) {
     noteWrap,
     el('div', { class: 'expr-foot' },
       el('span', { class: 'region-tag' }, dialekt.flag + ' ' + dialekt.name),
-      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn)
+      el('div', { class: 'expr-actions' }, speakBtn, noteBtn, favBtn, learnBtn, reportBtn)
     )
   );
 }

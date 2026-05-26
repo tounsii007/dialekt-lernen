@@ -39,8 +39,20 @@ export const DIALEKT_INDEX = Object.fromEntries(
 
 // Aggregierte Liste aller Ausdrücke (über alle Dialekte)
 export const ALLE_AUSDRUECKE = DIALEKTE.flatMap(d =>
-  d.ausdruecke.map(a => ({ ...a, dialektId: d.id, dialektName: d.name, dialektFlag: d.flag, dialektFarbe: d.farbe }))
+  d.ausdruecke.map(a => ({
+    ...a,
+    dialektId: d.id,
+    dialektName: d.name,
+    dialektFlag: d.flag,
+    dialektFarbe: d.farbe,
+    dialektLang: d.lang || 'de-DE',
+  }))
 );
+
+// BCP-47-Sprache eines Dialekts — Fallback de-DE für Legacy-Daten.
+export function getDialektLang(dialektId) {
+  return DIALEKT_INDEX[dialektId]?.lang || 'de-DE';
+}
 
 export function getDialekt(id) {
   return DIALEKT_INDEX[id] || null;

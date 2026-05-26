@@ -240,7 +240,7 @@ function renderDailyExpression() {
           el('div', { class: 'daily-actions' },
             el('button', {
               class: 'daily-action', title: 'Anhören',
-              onClick: () => speak(expr.ausdruck)
+              onClick: () => speak(expr.ausdruck, expr.dialektLang || 'de-DE')
             }, el('span', { html: '🔊' })),
             el('button', {
               class: 'daily-action', title: 'Zum Dialekt',

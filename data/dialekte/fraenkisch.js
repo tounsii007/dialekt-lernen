@@ -9,12 +9,13 @@ export default {
   farbe: '#f77f00',
   beschreibung: 'Fränkisch ist eine mitteldeutsche Dialektgruppe, die im Gegensatz zum Bairischen im nördlichen Bayern, in Thüringen und Teilen Sachsens gesprochen wird. Markante Merkmale sind das gerollte R, das offene „a" und die einzigartigen Intonationsmuster. Nürnberg, Würzburg und Bamberg sind die Zentren dieses lebendigen Dialekts.',
   sprecher: 'ca. 6 Mio.',
+  lang: 'de-DE',
   ausdruecke: [
     {
       id: 'fr-001',
       ausdruck: 'Gell',
       hochdeutsch: 'Gell? / Nicht wahr? / Oder?',
-      bedeutung: 'Zustimmungspartikel am Satzende, die eine Bestätigung vom Gesprächspartner erwartet. Im Fränkischen weit verbreitet, ähnlich wie im Bayerischen und Hessischen, aber mit charakteristisch fränkischem Tonfall. Wird oft gedehnt gesprochen: „Geelll?".',
+      bedeutung: 'Das „Gell" ist eine Zustimmungspartikel am Satzende, die eine Bestätigung vom Gesprächspartner erwartet. Im Fränkischen weit verbreitet, ähnlich wie im Bayerischen und Hessischen, aber mit charakteristisch fränkischem Tonfall. „Gell" wird oft gedehnt gesprochen: „Geelll?".',
       beispiel: 'Des war a guuder Film, gell?',
       beispiel_hd: 'Das war ein guter Film, oder?',
       kategorie: 'redensart'
@@ -78,6 +79,8 @@ export default {
       ausdruck: 'Wärschbursch',
       hochdeutsch: 'Würzburg',
       bedeutung: 'Die fränkische Aussprache von Würzburg, der Hauptstadt Unterfrankens. Die Stadt liegt am Main und ist bekannt für die Residenz (UNESCO), den Frankenwein und die Römerbrücke. Das charakteristische Fränkisch zeigt sich in der Abschwächung und Dehnung der Vokale.',
+      beispiel: 'In Wärschbursch gibd\'s den bäschden Frankenwei am Mai.',
+      beispiel_hd: 'In Würzburg gibt es den besten Frankenwein am Main.',
       kategorie: 'orte'
     },
     {
@@ -94,6 +97,8 @@ export default {
       ausdruck: 'Fürth',
       hochdeutsch: 'Fürth',
       bedeutung: 'Fürth ist die Nachbarstadt Nürnbergs und hat eine eigene stolze Identität. Die Rivalität zwischen Nürnberg und Fürth ist legendär — der 1. FC Nürnberg gegen die SpVgg Greuther Fürth ist eines der traditionsreichsten deutschen Derbys. Fürther betonen stets: „Mir sein kaa Nämbercher!"',
+      beispiel: 'Mei Schorsch is a echder Fürther und net kaa Nämbercher.',
+      beispiel_hd: 'Mein Schorsch ist ein echter Fürther und kein Nürnberger.',
       kategorie: 'orte'
     },
     {
@@ -137,6 +142,8 @@ export default {
       ausdruck: 'Frankenwein',
       hochdeutsch: 'Frankenwein im Bocksbeutel',
       bedeutung: 'Der Wein aus Franken, bekannt durch die charakteristische bauchige Bocksbeutel-Flasche. Hauptanbaugebiet ist das Maindreieck rund um Würzburg mit dem Stein als bekanntester Lage. Silvaner, Müller-Thurgau und Bacchus sind typische fränkische Rebsorten. Der Wein ist trocken und mineralisch — wie die Franken selbst.',
+      beispiel: 'A guader Frankenwei im Bogsbeudel gheerd af jeden fränkischn Disch.',
+      beispiel_hd: 'Ein guter Frankenwein im Bocksbeutel gehört auf jeden fränkischen Tisch.',
       kategorie: 'essen'
     },
     {
@@ -153,6 +160,8 @@ export default {
       ausdruck: 'Äbbärn',
       hochdeutsch: 'Äpfel / Äppelbräuner',
       bedeutung: 'Im Fränkischen werden Äpfel oft einfach „Äbbärn" genannt, abgeleitet von einer alten regionalen Bezeichnung. In Franken gibt es eine reiche Streuobstwiesenkultur, und Apfelwein sowie Apfelbrand spielen eine wichtige Rolle in der regionalen Kulinarik neben dem allgegenwärtigen Bier und Frankenwein.',
+      beispiel: 'Im Herbschd sammler mer Äbbärn af der Schdreuobschdwiesn.',
+      beispiel_hd: 'Im Herbst sammeln wir Äpfel auf der Streuobstwiese.',
       kategorie: 'essen'
     },
     {
@@ -160,6 +169,8 @@ export default {
       ausdruck: 'Kerschdnsdallar',
       hochdeutsch: 'Kirschenstaller / Kirschauflauf',
       bedeutung: 'Ein traditioneller fränkischer Kirschauflauf oder Kirschkuchen, der vor allem in der Erntezeit mit frischen Sauerkirschen gebacken wird. Das Wort ist ein schönes Beispiel für die fränkische Lautfärbung: „Kirsch" wird zu „Kerschdn", „Staller" ist eine regionale Bezeichnung für einen Auflauf oder Brei.',
+      beispiel: 'Mei Oma machd den bäschden Kerschdnsdallar in ganz Frangen.',
+      beispiel_hd: 'Meine Oma macht den besten Kirschauflauf in ganz Franken.',
       kategorie: 'essen'
     },
     {
@@ -176,6 +187,8 @@ export default {
       ausdruck: 'Schnitz',
       hochdeutsch: 'Schnitzel / Stück / Schnitte',
       bedeutung: 'Im Fränkischen bedeutet „Schnitz" ein Stück oder eine Scheibe, kann aber auch das Schnitzel meinen. Das Wort ist verwandt mit dem Verb „schnitzen" und bezeichnet allgemein etwas Abgeschnittenes. In der Küche: ein Stück Brot, eine Scheibe Käse oder eben ein Schnitzel.',
+      beispiel: 'Gibsd mer no a Schnitz Brood, i hab Hunger.',
+      beispiel_hd: 'Gibst du mir noch ein Stück Brot, ich habe Hunger.',
       kategorie: 'essen'
     },
     {
@@ -282,6 +295,8 @@ export default {
       ausdruck: 'Hausdrachen',
       hochdeutsch: 'zänkische Ehefrau / Xanthippe',
       bedeutung: 'Ein fränkischer (und allgemein volkstümlicher) Begriff für eine strenge, zänkische Hausfrau, die ihrem Mann das Leben schwer macht. Der Drachen als mythisches Wesen steht hier für Schrecklichkeit und Unberechenbarkeit. Heute veraltend und sexistisch konnotiert, aber in der regionalen Volkssprache noch bekannt.',
+      beispiel: 'Der arme Schorsch had wieder amol Ärger mid seim Hausdrachen.',
+      beispiel_hd: 'Der arme Schorsch hat wieder einmal Ärger mit seiner zänkischen Ehefrau.',
       kategorie: 'schimpf'
     },
     {
@@ -289,6 +304,8 @@ export default {
       ausdruck: 'Schbundl',
       hochdeutsch: 'Schlampige Person / Schluderer',
       bedeutung: 'Im Fränkischen bezeichnet ein „Schbundl" eine unordentliche, schlampige oder liederliche Person. Das Wort klingt derb und wird entsprechend eingesetzt. Es kann auf eine unordentliche Arbeitsweise oder eine nachlässige Erscheinung anspielen. Im Kontext eher eine mittelstarke Beleidigung.',
+      beispiel: 'Du bisd vielleichd a Schbundl, du häsd des doch besser machn könna!',
+      beispiel_hd: 'Du bist vielleicht ein Schluderer, du hättest das doch besser machen können!',
       kategorie: 'schimpf'
     },
     {
@@ -301,19 +318,12 @@ export default {
       kategorie: 'alltag'
     },
     {
-      id: 'fr-035',
-      ausdruck: 'Houch',
-      hochdeutsch: 'Hoch / weit oben',
-      bedeutung: 'Die fränkische Aussprache von „hoch", wobei das „o" zu einem offenen „ou" gediphtongiert wird. Ein typisches Beispiel für den fränkischen Vokalismus. „Des is houch oben" beschreibt etwas Hochgelegenes und zeigt die charakteristische Lautverschiebung des Fränkischen.',
-      beispiel: 'Die Burg is houch oben auf dem Berg.',
-      beispiel_hd: 'Die Burg ist weit oben auf dem Berg.',
-      kategorie: 'natur'
-    },
-    {
       id: 'fr-036',
       ausdruck: 'Seggendorf',
       hochdeutsch: 'Kleines unbedeutendes Dorf / Kaff',
       bedeutung: 'Im Fränkischen steht „Seggendorf" (manchmal auch „Hinterdupfing" o.ä.) scherzhaft für ein kleines, unbedeutendes Dorf irgendwo in der Provinz. Es ist ein Ausdruck für Abgelegenheit und Bedeutungslosigkeit — ein Ort, von dem niemand gehört hat. Heute meist humorvoll eingesetzt.',
+      beispiel: 'Wo kummsd denn du her? — Aus irgendeim Seggendorf nahad Bamberch.',
+      beispiel_hd: 'Wo kommst du denn her? — Aus irgendeinem Kaff bei Bamberg.',
       kategorie: 'orte'
     },
     {
@@ -321,6 +331,8 @@ export default {
       ausdruck: 'Maid',
       hochdeutsch: 'Magd / Dienstmädchen',
       bedeutung: 'Veraltet, aber im fränkischen Sprachraum noch bekannt: die „Maid" war das Dienstmädchen oder die Magd auf dem Bauernhof. Im Mittelhochdeutschen bezeichnete „maget" allgemein eine Jungfrau oder unverheiratete Frau. Heute taucht das Wort noch in Flurnamen und Ortsnamen auf.',
+      beispiel: 'Frieher had jeder Bauernhof a Maid und an Knechd ghabd.',
+      beispiel_hd: 'Früher hatte jeder Bauernhof eine Magd und einen Knecht.',
       kategorie: 'arbeit'
     },
     {
@@ -328,6 +340,8 @@ export default {
       ausdruck: 'Knecht',
       hochdeutsch: 'Knecht / Geselle / Diener',
       bedeutung: 'Der Knecht war auf dem Bauernhof der männliche Arbeiter, das Pendant zur Maid. Im handwerklichen Bereich ist ein Geselle manchmal noch „Knecht" in alten Ausdrücken. Das Wort lebt fort in Figuren wie dem Knecht Ruprecht (Begleiter des Nikolaus), der im fränkischen Brauchtum eine wichtige Rolle spielt.',
+      beispiel: 'Der Knechd Ruprechd kummd zu Nikolaus mid der Rudn.',
+      beispiel_hd: 'Der Knecht Ruprecht kommt zu Nikolaus mit der Rute.',
       kategorie: 'arbeit'
     },
     {
@@ -335,6 +349,8 @@ export default {
       ausdruck: 'Hafenmarkt',
       hochdeutsch: 'Töpfermarkt / Markt am Hafen',
       bedeutung: 'Der Hafenmarkt in Würzburg am Main ist ein historischer Marktplatz, wo früher Töpferwaren (Hafen = Töpfe) gehandelt wurden. Solche Märkte waren im fränkischen Raum zentral für das Wirtschaftsleben. In Würzburg ist der Bereich am Main heute ein beliebter Treffpunkt und Veranstaltungsort.',
+      beispiel: 'Mer dreffd uns am Hafenmarkd auf an Schoppen Frankenwei.',
+      beispiel_hd: 'Wir treffen uns am Hafenmarkt auf einen Schoppen Frankenwein.',
       kategorie: 'orte'
     },
     {
@@ -351,6 +367,8 @@ export default {
       ausdruck: 'Hans Sachs',
       hochdeutsch: 'Hans Sachs (Meistersinger)',
       bedeutung: 'Hans Sachs (1494–1576) war der berühmteste Nürnberger Meistersinger, Schuhmacher und Dichter. Er schrieb über 6.000 Meisterlieder, Spruchdichtungen und Schwänke. Richard Wagner verewigt ihn in der Oper „Die Meistersinger von Nürnberg" (1868). Sachs ist ein Sinnbild für fränkische Bürgerlichkeit, Kunstsinn und Handwerk.',
+      beispiel: 'Hans Sachs is in Nämberch immer noch a bekannder Name.',
+      beispiel_hd: 'Hans Sachs ist in Nürnberg immer noch ein bekannter Name.',
       kategorie: 'musik'
     },
     {
@@ -358,6 +376,8 @@ export default {
       ausdruck: 'Dürer',
       hochdeutsch: 'Albrecht Dürer (Maler und Humanist)',
       bedeutung: 'Albrecht Dürer (1471–1528) ist Nürnbergs berühmtester Sohn: Maler, Zeichner, Kupferstecher und Humanist. Sein Selbstbildnis von 1500 gehört zu den ikonischsten Werken der Kunstgeschichte. Dürers Geburtshaus steht noch heute in der Nürnberger Altstadt und ist ein Pflichtbesuch. Er verbindet die fränkische Bürgerkultur mit dem Geist der Renaissance.',
+      beispiel: 'Im Dürerhaus in der Nämbercher Aldsdadd siehd mer, wie der Maeschder gleebd had.',
+      beispiel_hd: 'Im Dürerhaus in der Nürnberger Altstadt sieht man, wie der Meister gelebt hat.',
       kategorie: 'musik'
     },
     {
@@ -365,6 +385,8 @@ export default {
       ausdruck: 'Reichstädter',
       hochdeutsch: 'Bürger der Freien Reichsstadt',
       bedeutung: 'Ein Bewohner der Freien Reichsstadt Nürnberg, der direkt dem Kaiser und nicht einem Landesfürsten unterstand. Nürnberg war bis 1806 eine der bedeutendsten Freien Reichsstädte. Die reichsstädtische Tradition prägt noch heute den Nürnberger Bürgerstolz und das Selbstbewusstsein der fränkischen Metropole.',
+      beispiel: 'A echder Reichsdädder war immer schdolz af sei freie Schdadd.',
+      beispiel_hd: 'Ein echter Reichsstädter war immer stolz auf seine freie Stadt.',
       kategorie: 'menschen'
     },
     {
@@ -408,8 +430,8 @@ export default {
       ausdruck: 'Kirchweih',
       hochdeutsch: 'Kirchweihfest / Kärwa / Dorfkirmes',
       bedeutung: 'Die Kirchweih (fränkisch: „Kärwa") ist das wichtigste Dorffest Frankens — ursprünglich die jährliche Feier zum Jahrestag der Kirchenweihe, heute mehrtägiges Volksfest mit Bierzelt, Karussell, Volksmusik und traditionellen Speisen. Im September und Oktober finden tausende Kirchweihfeste statt — jedes Dorf hat seine eigene. Das Schäuferla, der Kloß und der Frankenwein sind Pflichtbestandteile. „Nürnberger Altstadtfest" und „Erlanger Bergkirchweih" sind die berühmtesten.',
-      beispiel: 'Zur Kärwa kummt die ganze Familie zamm — des isch Tradition.',
-      beispiel_hd: 'Zur Kirchweih kommt die ganze Familie zusammen — das ist Tradition.',
+      beispiel: 'Zur Kirchweih, oder wie mer sagt Kärwa, kummt die ganze Familie zamm — des isch Tradition.',
+      beispiel_hd: 'Zur Kirchweih, oder wie wir sagen Kärwa, kommt die ganze Familie zusammen — das ist Tradition.',
       kategorie: 'redensart'
     },
     {
@@ -435,8 +457,8 @@ export default {
       ausdruck: '1. FC Nürnberg',
       hochdeutsch: '1. FC Nürnberg (Fußballverein „Der Club")',
       bedeutung: 'Der 1. FC Nürnberg, liebevoll „Der Club" genannt, ist Frankens bekanntester Fußballverein — gegründet 1900, neunmaliger deutscher Meister (allerdings der letzte Titel von 1968). Heimstadion: das Max-Morlock-Stadion. Spieler wie Max Morlock und Stefan Reuter sind Vereinslegenden. Der Club hat zwar viele Auf- und Abstiege erlebt, bleibt aber Identitätskern Nürnbergs. „Auf gehts, Glubb!" ist der fränkische Schlachtruf.',
-      beispiel: 'Mein Opa ist sein Lebn lang Club-Fan gewesn — durch dick und dünn.',
-      beispiel_hd: 'Mein Opa ist sein Leben lang Club-Fan gewesen — durch dick und dünn.',
+      beispiel: 'Mein Opa ist sein Lebn lang Fan vom 1. FC Nürnberg gewesn — durch dick und dünn.',
+      beispiel_hd: 'Mein Opa ist sein Leben lang Fan vom 1. FC Nürnberg gewesen — durch dick und dünn.',
       kategorie: 'sport'
     },
     {
@@ -624,8 +646,8 @@ export default {
       ausdruck: 'Mariendarstellung',
       hochdeutsch: 'Maria mit Kind (fränkische Kunst)',
       bedeutung: 'Die Mariendarstellung ist ein Hauptmotiv der fränkischen Kunst — Tilman Riemenschneider (1460–1531) aus Heiligenstadt schuf in Würzburg unvergleichliche Mariendarstellungen aus Holz und Stein. Seine Schnitzwerke in der Marienkapelle (Würzburg), der Herrgottskirche (Creglingen) und vielen fränkischen Kirchen sind Meisterwerke der spätmittelalterlichen Bildhauerkunst. Riemenschneider gilt als wichtigster deutscher Bildhauer seiner Zeit.',
-      beispiel: 'Riemenschneider-Madonnen — fränkische Kunstweltklasse.',
-      beispiel_hd: 'Riemenschneider-Madonnen — fränkische Kunstweltklasse.',
+      beispiel: 'Die Mariendarstellung von Riemenschneider isch fränkische Kunstweltklasse.',
+      beispiel_hd: 'Die Mariendarstellung von Riemenschneider ist fränkische Kunstweltklasse.',
       kategorie: 'menschen'
     },
     {
@@ -662,15 +684,6 @@ export default {
       bedeutung: 'Erlangen ist eine 116.000-Einwohner-Universitätsstadt im Mittelfränkischen. Sitz der Friedrich-Alexander-Universität und großer Standort der Siemens AG. Bekannt: die barocke Hugenotten-Altstadt (Schloss, Schlossgarten), die Bergkirchweih und der Schlossgarten-Konzerte. Hat eine der höchsten Akademiker-Quoten Deutschlands. Innovativ und gleichzeitig fränkisch-bodenständig.',
       beispiel: 'In Erlangen forsche se bei Siemens an die Zukunft.',
       beispiel_hd: 'In Erlangen forschen sie bei Siemens an der Zukunft.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'fr-077',
-      ausdruck: 'Forchheim',
-      hochdeutsch: 'Forchheim (Tor zur Fränkischen Schweiz)',
-      bedeutung: 'Forchheim mit 32.000 Einwohnern ist Tor zur Fränkischen Schweiz und hat das wohl höchste Bierkeller-Aufkommen Deutschlands — der „Kellerwald" mit über 20 traditionellen Bierkellern unter Eichen. Die Annafest im Juli, eines der ältesten Volksfeste Bayerns. Schöne Fachwerk-Altstadt mit Rathaus und Kaiserpfalz. Bier-Pilgerort der Frankenliebhaber.',
-      beispiel: 'Im Forchheimer Kellerwald a Seidla — Frankenglück pur.',
-      beispiel_hd: 'Im Forchheimer Kellerwald ein Krug Bier — Frankenglück pur.',
       kategorie: 'orte'
     },
     {
@@ -755,15 +768,6 @@ export default {
       kategorie: 'natur'
     },
     {
-      id: 'fr-087',
-      ausdruck: 'Spessart',
-      hochdeutsch: 'Spessart (Mittelgebirge in Unterfranken)',
-      bedeutung: 'Der Spessart ist Deutschlands größtes zusammenhängendes Laubwaldgebiet — 2.440 km² Buchen- und Eichenwald zwischen Aschaffenburg und Würzburg. Bekannt durch Wilhelm Hauffs Märchen „Das Wirtshaus im Spessart". Räubergeschichten, Köhlertradition, dichte Wälder. Heute Wanderparadies und Naturpark. Eine der ursprünglichsten Landschaften Mitteleuropas.',
-      beispiel: 'Im Spessart spukt\'s ned mehr — aber wandern kann mer wunderschön.',
-      beispiel_hd: 'Im Spessart spukt es nicht mehr — aber wandern kann man wunderschön.',
-      kategorie: 'natur'
-    },
-    {
       id: 'fr-088',
       ausdruck: 'Rhön',
       hochdeutsch: 'Rhön (Mittelgebirge — „Land der offenen Fernen")',
@@ -818,15 +822,6 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 'fr-094',
-      ausdruck: 'Marktbreit',
-      hochdeutsch: 'Marktbreit (Mainfränkische Kleinstadt)',
-      bedeutung: 'Marktbreit am Main mit 4.000 Einwohnern ist eine der schönsten erhaltenen mittelalterlichen Kleinstädte Frankens. Pittoreske Fachwerkhäuser, das Maintor, die Mainbrücke und der berühmte Schwedische Kanzler im Schloss machen sie zum Anziehungspunkt. Tor zum Maindreieck. Auch berühmt durch die Asthma-Forschung Robert Kochs.',
-      beispiel: 'Marktbreit — Fachwerk-Idyll am Main, fränkische Postkarte.',
-      beispiel_hd: 'Marktbreit — Fachwerk-Idyll am Main, fränkische Postkarte.',
-      kategorie: 'orte'
-    },
-    {
       id: 'fr-095',
       ausdruck: 'Maintal',
       hochdeutsch: 'Maintal (Weinlandschaft)',
@@ -842,15 +837,6 @@ export default {
       bedeutung: 'Marktheidenfeld am Main mit 11.000 Einwohnern liegt im Maindreieck. Bekannt für Warema (Markisenhersteller, Weltmarktführer) und Bürkert (Mess- und Regeltechnik). Schöne mittelalterliche Altstadt mit historischer Mainbrücke. Im Spessart-Westen gelegen, klassisches mainfränkisches Mittelstadt-Idyll. Wirtschaftlich überraschend stark für die Größe.',
       beispiel: 'Marktheidenfeld is klein, aber mit weltbekannten Firmen.',
       beispiel_hd: 'Marktheidenfeld ist klein, aber mit weltbekannten Firmen.',
-      kategorie: 'orte'
-    },
-    {
-      id: 'fr-097',
-      ausdruck: 'Wertheim',
-      hochdeutsch: 'Wertheim (Stadt am Mainzusammenfluss)',
-      bedeutung: 'Wertheim mit 22.000 Einwohnern liegt am Zusammenfluss von Main und Tauber — sehr malerisch. Die Burgruine Wertheim thront hoch über der Stadt. Bekannt: das Glasmuseum, das Outlet-Center (Designer Outlet Wertheim — eines der größten Deutschlands). Mischzone fränkisch-badisch. Liegt im Main-Tauber-Kreis (Baden-Württemberg), aber kulturell fränkisch geprägt.',
-      beispiel: 'In Wertheim kannst du shoppen und Burgruine angucken — beides in einem Tag.',
-      beispiel_hd: 'In Wertheim kannst du shoppen und Burgruine angucken — beides in einem Tag.',
       kategorie: 'orte'
     },
     {
@@ -944,15 +930,6 @@ export default {
       kategorie: 'natur'
     },
     {
-      id: 'fr-108',
-      ausdruck: 'Walberla',
-      hochdeutsch: 'Walberla (Berg in der Fränkischen Schweiz)',
-      bedeutung: 'Das Walberla (eigentlich Ehrenbürg, 532 m) ist der heilige Berg der Fränkischen Schweiz — weithin sichtbar zwischen Forchheim und Kirchehrenbach. Der Name leitet sich von der Walburgiskapelle ab. Am ersten Maiwochenende findet das Walberlafest statt — eines der ältesten Volksfeste Frankens. Wandern, Bierkeller, Aussicht — ein fränkisches Heiligtum. Geologisch ein typischer Jurazeit-Zeugenberg.',
-      beispiel: 'Aufs Walberla zum Mai-Fest — fränkische Tradition seit Jahrhunderten.',
-      beispiel_hd: 'Auf das Walberla zum Mai-Fest — fränkische Tradition seit Jahrhunderten.',
-      kategorie: 'natur'
-    },
-    {
       id: 'fr-109',
       ausdruck: 'Doktor Eisenbarth',
       hochdeutsch: 'Doktor Eisenbarth (fränkische Sage)',
@@ -1029,8 +1006,8 @@ export default {
       ausdruck: 'Auto',
       hochdeutsch: 'Auto (fränkischer Stolz)',
       bedeutung: 'In Franken wird das Auto besonders ernst genommen — das eigene Fahrzeug ist Status, Identität und Liebhaberei. Nürnberg und Ingolstadt sind Auto-Zentren mit MAN und Audi. Fränkische Männer pflegen ihre Autos akribisch, waschen sie sonntags und parken sie sorgsam in der Garage. „Mei Audi" oder „mei Beemwehr" wird oft mit Vornamen genannt — fast wie ein Familienmitglied. Stolzer Pragmatismus.',
-      beispiel: 'Mei Audi steht in der Garach — mit Liebe gepflegt.',
-      beispiel_hd: 'Mein Audi steht in der Garage — mit Liebe gepflegt.',
+      beispiel: 'Mei Auto, a Audi, steht in der Garach — mit Liebe gepflegt.',
+      beispiel_hd: 'Mein Auto, ein Audi, steht in der Garage — mit Liebe gepflegt.',
       kategorie: 'alltag'
     },
     {
@@ -1869,6 +1846,546 @@ export default {
       beispiel: 'Beim Knack-und-Beck hol i mer\'n Kaffee zum Mitnehmen.',
       beispiel_hd: 'Bei der Snack-Bäckerei hole ich mir einen Kaffee zum Mitnehmen.',
       kategorie: 'orte'
+    },
+    {
+      id: 'fr-211',
+      ausdruck: 'Schäuferlasoß',
+      hochdeutsch: 'Schäuferla-Soße (dunkle Sauce)',
+      bedeutung: 'Die „Schäuferlasoß" ist der wichtigste Begleiter des fränkischen Schäuferla — eine dunkle, kräftige Bratensauce aus Knochen, Wurzelgemüse und dunklem Bier, stundenlang reduziert. „Ohne Schäuferlasoß is kei Schäuferla!" Jede fränkische Wirtin hat ihr eigenes geheimes Rezept. Sie wird über die Kruste gegossen — aber Vorsicht: zu viel Sauce ruiniert die berühmte Kruste!',
+      beispiel: 'D\'Schäuferlasoß muss dunkel und richtig kräftig sein.',
+      beispiel_hd: 'Die Schäuferla-Soße muss dunkel und richtig kräftig sein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-212',
+      ausdruck: 'Nemberch',
+      hochdeutsch: 'Nürnberg',
+      bedeutung: '„Nemberch" ist die fränkische Aussprache von „Nürnberg" — mit der charakteristischen Konsonantenschwächung (b statt g am Ende, etc.). „I fahr nach Nemberch in d\'Stadt!" Nürnberg ist die heimliche Hauptstadt Frankens — mit Burg, Christkindlesmarkt, Lebkuchen, 1. FC Nürnberg. Die Stadt ist Symbol fränkischer Identität.',
+      beispiel: 'Am Wochenend\' fahre mir nach Nemberch.',
+      beispiel_hd: 'Am Wochenende fahren wir nach Nürnberg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-213',
+      ausdruck: 'Worschtbrötla',
+      hochdeutsch: 'Wurst-Brötchen (mit Bratwurst)',
+      bedeutung: 'Das „Worschtbrötla" ist im Fränkischen das Bratwurst-Brötchen — meist mit den berühmten „3 im Weckla" (3 Nürnberger Bratwürste in einem Brötchen mit Senf). „Schnell a Worschtbrötla am Markt!" Eine fränkische Imbiss-Tradition, besonders auf dem Hauptmarkt in Nürnberg. Schnell, deftig, satt machend. Klassische fränkische Streetfood-Kultur.',
+      beispiel: 'Beim Bratwurst-Glöckle gibts die besten Worschtbrötla!',
+      beispiel_hd: 'Beim Bratwurst-Glöckle gibt es die besten Wurst-Brötchen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-214',
+      ausdruck: 'Bambachla',
+      hochdeutsch: 'Bambächlein / Kleiner Bach',
+      bedeutung: 'Das „Bambachla" ist die Verkleinerung von „Bach" — ein kleiner Bach oder Wasserlauf. „Am Bambachla hen mir als Kinder gespielt!" In der fränkischen Mittelgebirgs-Landschaft mit ihren vielen kleinen Bachläufen weit verbreitet. Die typische fränkische Verkleinerung „-la" gibt dem Naturobjekt warmen, vertrauten Klang. Kindheitserinnerungs-Wort.',
+      beispiel: 'Am Bambachla wachsen viele Kresse.',
+      beispiel_hd: 'Am kleinen Bach wachsen viele Kresse.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-215',
+      ausdruck: 'Buwala',
+      hochdeutsch: 'Bube / Junge (Diminutiv)',
+      bedeutung: 'Das „Buwala" ist im Fränkischen die Verkleinerung von „Bub" — ein kleiner Junge oder Bub. „Mei Buwala isch erst zwei Johr alt!" Die typische fränkische Verkleinerung „-ala" oder „-la" macht das Wort liebevoll-zärtlich. Verwandt mit „Madla" (Mädchen). Eine warme, familiäre Wortprägung für die jüngsten Familienmitglieder.',
+      beispiel: 'Komm her, mei Buwala, ich gib dir a Bussla.',
+      beispiel_hd: 'Komm her, mein Bübchen, ich gebe dir ein Küsschen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-216',
+      ausdruck: 'Karbatsch',
+      hochdeutsch: 'Karbatsche / Lederpeitsche',
+      bedeutung: 'Die „Karbatsch" ist im Fränkischen eine kurze Lederpeitsche — früher in der Landwirtschaft und beim Pferdetreiben verwendet. Auch übertragen: „mit der Karbatsch dahinter" (mit Druck arbeiten). „Mei Großvater hat scho als Bua a Karbatsch g\'habt!" Eine traditionelle, historische Wortprägung aus dem bäuerlichen Erfahrungsbereich.',
+      beispiel: 'D\'alte Karbatsch hängt im Stall.',
+      beispiel_hd: 'Die alte Karbatsche hängt im Stall.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-217',
+      ausdruck: 'Schweinsblut',
+      hochdeutsch: 'Schweineblut (Blutwurst-Zutat)',
+      bedeutung: 'Das „Schweinsblut" ist im Fränkischen die Hauptzutat für Blutwurst und Rotwurst — bei der Hausschlachtung gewonnen. „Aus Schweinsblut macht man dieblutige Blutwurst!" Die fränkische Wurst-Tradition ist alt und vielfältig. Auch übertragen: „I muss Schweinsblut sehen, sonst raste ich aus!" (Wut-Zustand). Eine drastische, ländliche Wortprägung.',
+      beispiel: 'Für die Blutwurst brauchen mir frisches Schweinsblut.',
+      beispiel_hd: 'Für die Blutwurst brauchen wir frisches Schweineblut.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-218',
+      ausdruck: 'Heißluftballon',
+      hochdeutsch: 'Heißluftballon',
+      bedeutung: 'Der „Heißluftballon" ist im Fränkischen eine beliebte Sommerattraktion — über das Altmühltal, die Fränkische Schweiz oder die Frankenalb schweben. „Mit em Heißluftballon iberm Steigerwald — des isch a Erlebnis!" Fränkische Landschaft eignet sich besonders gut: weite Täler, Burgen, Wälder von oben. Touristische Specialität.',
+      beispiel: 'Zum Geburtstag bekommt sie a Heißluftballon-Fahrt.',
+      beispiel_hd: 'Zum Geburtstag bekommt sie eine Heißluftballon-Fahrt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-219',
+      ausdruck: 'Brösla',
+      hochdeutsch: 'Brösel / Brotbrösel',
+      bedeutung: 'Die „Brösla" sind im Fränkischen die Brotbrösel — die Krümel, die beim Schneiden oder Essen abfallen. „D\'Brösla sammeln sich auf em Tisch!" Auch in der Küche: „Brösla für d\'Panade" (Paniermehl). In der fränkischen Konditorei: „Brösla-Kuchen" mit Streuseln obendrauf. Vielseitig in der Küche und im Alltag.',
+      beispiel: 'D\'Vögel fressen die Brösla im Garten.',
+      beispiel_hd: 'Die Vögel fressen die Brösel im Garten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-220',
+      ausdruck: 'Heugumber',
+      hochdeutsch: 'Heuwagen',
+      bedeutung: 'Der „Heugumber" ist im Fränkischen der Heuwagen — der Pferdewagen mit Heuladung, früher allgegenwärtig in der fränkischen Landwirtschaft. „Auf dem Heugumber hen mir als Kinder gespielt!" Heute eher nostalgisch — moderne Landwirtschaft nutzt Großballenpressen. Symbol für die traditionelle Heuernte und den ländlichen Sommer.',
+      beispiel: 'Früher saßen wir auf dem Heugumber bei der Heuernte.',
+      beispiel_hd: 'Früher saßen wir auf dem Heuwagen bei der Heuernte.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-221',
+      ausdruck: 'Sauma',
+      hochdeutsch: 'Schau mal',
+      bedeutung: '„Sauma" ist im Fränkischen die Verkürzung von „schau mal" — eine häufige Aufforderung in Gesprächen. „Sauma, der schöne Sonnenaufgang!" Die typisch fränkische Sprachpraxis der Verkürzung und Verschmelzung macht den Dialekt knapp und effizient. Wird oft kombiniert mit emotionalen Ausrufen: „Allmächd, sauma!".',
+      beispiel: 'Sauma, do drüben fliegt a Bussard!',
+      beispiel_hd: 'Schau mal, dort drüben fliegt ein Bussard!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-222',
+      ausdruck: 'Zwiefachi',
+      hochdeutsch: 'Zwiefacher (Volkstanz)',
+      bedeutung: 'Der „Zwiefachi" oder „Zwiefache" ist ein traditioneller fränkischer und bayerischer Volkstanz — mit wechselnden 3/4- und 2/4-Takten. „Beim Trachtenfest spielen sie an Zwiefachen!" Erfordert Geschicklichkeit beim Tanzen. UNESCO-Kulturerbe. In vielen Mundart-Bands und Trachten-Vereinen gepflegt. Wichtige fränkisch-bayerische Tanztradition.',
+      beispiel: 'Den Zwiefachi müssen mir lernen für den Trachtenball.',
+      beispiel_hd: 'Den Zwiefachen müssen wir lernen für den Trachtenball.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-223',
+      ausdruck: 'Kirschmichl',
+      hochdeutsch: 'Kirschmichel (Auflauf mit Kirschen)',
+      bedeutung: 'Der „Kirschmichl" ist ein traditionelles fränkisches Dessert — ein Auflauf aus altem Brot, Milch, Eiern, Zucker und Kirschen. „Aus dem alten Brot mach mer en Kirschmichl!" Eine Resteverwertungs-Spezialität, die heute wieder modern ist. In der Fränkischen Schweiz besonders beliebt — wo die Kirschen reichlich wachsen. Gemütliche Sonntagsküche.',
+      beispiel: 'Zum Sonntag-Nachmittag gibts Kirschmichl mit Vanillesoß.',
+      beispiel_hd: 'Zum Sonntag-Nachmittag gibt es Kirschmichel mit Vanillesoße.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-224',
+      ausdruck: 'Beerlasaft',
+      hochdeutsch: 'Beerensaft (z.B. Holunderbeer)',
+      bedeutung: 'Der „Beerlasaft" ist im Fränkischen ein hausgemachter Beerensaft — meistens aus Holunderbeeren, Schlehen, Hagebutten oder Brombeeren. „D\'Großmuatter mocht jedes Jahr Beerlasaft!" Hausmittel bei Erkältung — vitamin C-reich, warm getrunken. Auch als Sirup für Sprudel oder als Geschenk. Traditionelle fränkische Küche mit Natur-Bezug.',
+      beispiel: 'Bei Erkältung trink i an heißen Beerlasaft.',
+      beispiel_hd: 'Bei Erkältung trinke ich einen heißen Beerensaft.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-225',
+      ausdruck: 'Kanapee',
+      hochdeutsch: 'Sofa / Couch',
+      bedeutung: 'Das „Kanapee" ist im Fränkischen das Sofa — vom französischen „canapé" abgeleitet. „Streck dich aufs Kanapee, schlaf a bisserl!" Eine etwas altmodisch klingende Bezeichnung, die noch in der älteren Generation lebendig ist. Verwandt mit dem alemannischen und bayerischen Sprachgebrauch. Die französischen Wortwurzeln zeigen die alte deutsch-französische Kultur-Beziehung.',
+      beispiel: 'Auf dem alten Kanapee han ich als Kind geschlafen.',
+      beispiel_hd: 'Auf dem alten Sofa habe ich als Kind geschlafen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-226',
+      ausdruck: 'Bismuckerla',
+      hochdeutsch: 'Bisschen / Kleinigkeit',
+      bedeutung: '„Bismuckerla" oder „Mickerla" ist im Fränkischen eine winzige Menge — kleiner als „a Bisserl". „Gib mer nur a Bismuckerla davon!" Die typisch fränkische Verkleinerung mit „-erla" macht das schon kleine „bisschen" noch winziger. Ein zärtliches, sparsames Mass-Wort. Verbreitet bei der Beschreibung kleiner Zutaten-Mengen oder kleiner Forderungen.',
+      beispiel: 'A Bismuckerla Salz noch in d\'Suppe.',
+      beispiel_hd: 'Ein klein wenig Salz noch in die Suppe.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-227',
+      ausdruck: 'Beuschla',
+      hochdeutsch: 'Beuschel (Innereien-Ragout)',
+      bedeutung: 'Das „Beuschla" ist im Fränkischen ein traditionelles Innereien-Ragout — aus Lunge, Herz und Sahnesauce. „Heut gits Beuschla mit Knödeln!" Eine alte, traditionsreiche fränkisch-bayerisch-österreichische Spezialität. Heute eher selten zubereitet, aber in fränkischen Wirtshäusern noch zu finden. Deftige Gastronomiekost mit langer Geschichte.',
+      beispiel: 'In dem Wirtshaus gibts noch echtes Beuschla.',
+      beispiel_hd: 'In dem Wirtshaus gibt es noch echtes Beuschel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-228',
+      ausdruck: 'Frängiisch',
+      hochdeutsch: 'Fränkisch (Selbstbezeichnung)',
+      bedeutung: '„Frängiisch" ist die fränkische Aussprache von „Fränkisch" — die Sprache und der kulturelle Hintergrund Frankens. „I red Frängiisch, des isch mei Muttersproch!" Mit Stolz gebraucht. Wichtig für die fränkische Identität — Franken sind politisch zu Bayern, aber kulturell selbstständig. „Frängiisch reden" ist ein Statement.',
+      beispiel: 'In Frankn red mer Frängiisch und gut isses.',
+      beispiel_hd: 'In Franken redet man Fränkisch und gut ist es.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-229',
+      ausdruck: 'Pfingstreiter',
+      hochdeutsch: 'Pfingstreiter (Brauchtum)',
+      bedeutung: 'Die „Pfingstreiter" sind in vielen fränkischen Dörfern eine alte Pfingst-Tradition — junge Männer reiten zu Pfingsten geschmückt durch die Gemeinde. „Beim Pfingstreiter-Umzug isch dat ganze Dorf auf dem Bein!" Mit Trachten, geschmückten Pferden, Musik. Eine wichtige Frühlings-Tradition im katholischen Franken, die heute noch lebendig ist.',
+      beispiel: 'Am Pfingstmontag ziehen die Pfingstreiter durchs Dorf.',
+      beispiel_hd: 'Am Pfingstmontag ziehen die Pfingstreiter durchs Dorf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'fr-230',
+      ausdruck: 'Wodgr',
+      hochdeutsch: 'Wütender Mensch / Wuthahn',
+      bedeutung: 'Ein „Wodgr" oder „Wodger" ist im Fränkischen ein wütender, aufbrausender Mensch — einer, der schnell explodiert. „Pass auf, der Wodgr is heut wieder so geladen!" Mild bis ernsthaft. Eine plastische, klangvolle fränkische Wortprägung mit dynamischer Energie. Im Familien- und Arbeitsleben oft hilfreiche Charakterisierung.',
+      beispiel: 'Mei Schwoger isch a richtiger Wodgr, wenn er sich aufregt.',
+      beispiel_hd: 'Mein Schwager ist ein richtiger Wuthahn, wenn er sich aufregt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-231',
+      ausdruck: 'Bischngruabn',
+      hochdeutsch: 'Schweinkoben / Schweinegehege',
+      bedeutung: 'Der „Bischngruabn" ist im Fränkischen das Schweinegehege oder der Schweinekoben — wo die Schweine im Bauernhof gehalten werden. „D\'Schweindla hocken im Bischngruabn." Eine bäuerliche, traditionelle Wortprägung. Mit der modernen Landwirtschaft seltener geworden, aber in fränkischen Mundart-Erzählungen und auf Bauernhöfen noch lebendig.',
+      beispiel: 'Im Bischngruabn fressen die Schweindla ihr Futter.',
+      beispiel_hd: 'Im Schweinekoben fressen die Schweinchen ihr Futter.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-232',
+      ausdruck: 'Hoenick',
+      hochdeutsch: 'Honig',
+      bedeutung: 'Das „Hoenick" ist die fränkische Aussprache von „Honig" — mit charakteristischer Vokalfärbung. „A Brot mit Hoenick und Butter!" Imkereien sind in Franken traditionell wichtig — die fränkischen Bienen sammeln aus den vielen Streuobstwiesen und Bauern-Gärten. Eigene Honig-Marken werden in vielen Dörfern produziert. Süße Tradition.',
+      beispiel: 'D\'Imker geben uns immer frisches Hoenick.',
+      beispiel_hd: 'Der Imker gibt uns immer frischen Honig.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-233',
+      ausdruck: 'Bibbern',
+      hochdeutsch: 'Zittern / Bibbern',
+      bedeutung: '„Bibbern" ist im Fränkischen das Zittern vor Kälte oder Angst — wörtlich „bibbern". „I bibber wie a Espe!" Lautmalerisch mit dem hörbaren Zittern. Auch übertragen: „vor Angst bibbern". Verwandt mit dem hochdeutschen „bibbern". Eine plastische, körperliche Wortprägung mit emotionalem Bezug. Verbreitet im winterlichen Franken.',
+      beispiel: 'Bei der Kälte bibber ich richtig.',
+      beispiel_hd: 'Bei der Kälte zittere ich richtig.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-234',
+      ausdruck: 'Stiagn',
+      hochdeutsch: 'Treppen / Stiegen',
+      bedeutung: 'Die „Stiagn" sind im Fränkischen die Treppen — eine alte, dialektale Bezeichnung. „Geh d\'Stiagn nauf!" Vom mittelhochdeutschen „stiege" abgeleitet. Heute meist nur noch in den älteren Generationen, aber lebendig in Mundart-Theater und Volkstheater. Verwandt mit dem österreichischen Sprachgebrauch. Eine traditionelle fränkische Vokabel.',
+      beispiel: 'Die Stiagn nauf zum Schlafzimmer sind steil.',
+      beispiel_hd: 'Die Treppen nach oben zum Schlafzimmer sind steil.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-235',
+      ausdruck: 'Riedl',
+      hochdeutsch: 'Riedl (kleiner Hügel)',
+      bedeutung: 'Das „Riedl" ist im Fränkischen ein kleiner Hügel oder eine Erhebung — auch häufig als Ortsname und Familienname. „Auf em Riedl steht a alte Kapelle!" Die fränkische Mittelgebirgs-Landschaft ist voller kleiner Riedl, die das Landschaftsbild prägen. Eine bodenständige, naturbezogene Wortprägung.',
+      beispiel: 'Auf em Riedl is eine schöne Aussicht.',
+      beispiel_hd: 'Auf dem Hügel ist eine schöne Aussicht.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-236',
+      ausdruck: 'Hutzelweib',
+      hochdeutsch: 'Alte, dürre Frau',
+      bedeutung: 'Das „Hutzelweib" ist im Fränkischen eine alte, eingefallene Frau — wörtlich „Hutzel-Weib" (von Hutzeln = getrocknete Birnen, also dürr und runzlig). Eher abwertend gebraucht, manchmal aber auch liebevoll für die eigene Großmutter. „D\'alt Hutzelweib im Hof!" Eine plastische, drastische fränkische Personencharakterisierung.',
+      beispiel: 'D\'Großmuatter is a richtigs Hutzelweib mit ihren 90 Johr.',
+      beispiel_hd: 'Die Großmutter ist eine richtige alte Frau mit ihren 90 Jahren.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-237',
+      ausdruck: 'Pfarrerin',
+      hochdeutsch: 'Pfarrerin',
+      bedeutung: 'Die „Pfarrerin" ist im Fränkischen die evangelische Pfarrerin — im protestantischen Mittelfranken (Nürnberg-Region) seit Jahrzehnten gebräuchlich. „D\'Pfarrerin hat heut a schöne Predigt gehalten!" Franken ist religiös gemischt: Nordbayern, Mittelfranken protestantisch, Oberfranken katholisch. Die religiösen Strukturen prägen das Dorfleben.',
+      beispiel: 'D\'neie Pfarrerin im Dorf is sehr engagiert.',
+      beispiel_hd: 'Die neue Pfarrerin im Dorf ist sehr engagiert.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-238',
+      ausdruck: 'Bockwurschd',
+      hochdeutsch: 'Bockwurst',
+      bedeutung: 'Die „Bockwurschd" ist im Fränkischen die Bockwurst — eine Brühwurst, die im Wasser erwärmt wird. „A Bockwurschd mit Senf und Bröchen!" Im Gegensatz zur Bratwurst nicht gebraten, sondern nur erwärmt. Klassischer Imbiss am fränkischen Marktstand oder beim Volksfest. Schnell, deftig, sättigend. Wichtiger Teil der fränkischen Wurstkultur.',
+      beispiel: 'Zum schnellen Mittag a Bockwurschd!',
+      beispiel_hd: 'Zum schnellen Mittag eine Bockwurst!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-239',
+      ausdruck: 'Hopfastang',
+      hochdeutsch: 'Hopfenstange (Hopfengerüst)',
+      bedeutung: 'Die „Hopfastang" ist im Fränkischen das Hopfengerüst — die hohen Holz- oder Drahtgerüste, an denen Hopfen wächst. In der Hallertau (zwischen Franken und Bayern) und um Spalt (Mittelfranken) zentrales Element der Landschaft. „Im Sommer wachsen d\'Hopfen ganz nauf!" Im Frankenbier-Brauwesen unverzichtbar. Architektonisches Symbol der Hopfenanbaugebiete.',
+      beispiel: 'D\'Hopfastangen prägen d\'Landschaft im Hopfenanbau-Gebiet.',
+      beispiel_hd: 'Die Hopfenstangen prägen die Landschaft im Hopfenanbau-Gebiet.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-240',
+      ausdruck: 'Lebkuchenherz',
+      hochdeutsch: 'Lebkuchenherz',
+      bedeutung: 'Das „Lebkuchenherz" ist eine fränkisch-bayerische Volksfest-Tradition — herzförmige Lebkuchen mit Zuckerguss-Sprüchen, geschenkt an die oder den Geliebte/n. „A Lebkuchenherz mit ‚Ich liab di\' drauf!" Auf dem Christkindlesmarkt, der Wiesn, der Frankenwein-Fest. Bunte Bändchen zum Umhängen. Symbol für romantische Geste mit traditionellem Bezug.',
+      beispiel: 'Beim Volksfest hat er mir a Lebkuchenherz geschenkt.',
+      beispiel_hd: 'Beim Volksfest hat er mir ein Lebkuchenherz geschenkt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'fr-241',
+      ausdruck: 'Servus',
+      hochdeutsch: 'Hallo / Tschüss',
+      bedeutung: 'Der allgegenwärtige fränkisch-bayerische Universalgruß, der zugleich Begrüßung und Verabschiedung sein kann. Etymologisch stammt er vom lateinischen „servus" („Diener") — ursprünglich eine höfliche Demutsformel („Ich bin Dein Diener"). Heute völlig informell und in ganz Franken verbreitet, vom Würzburger Weindorf bis zum Nürnberger Christkindlesmarkt. Wird oft als „Servusla" verniedlicht. Klingt im fränkischen Mund weicher als beim Münchner Nachbarn.',
+      beispiel: 'Servus, wia gehd\'s dir denn heid?',
+      beispiel_hd: 'Hallo, wie geht es dir denn heute?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'fr-242',
+      ausdruck: 'Grüß Godd',
+      hochdeutsch: 'Grüß Gott / Guten Tag',
+      bedeutung: 'Die formelle fränkische Begrüßung, vor allem in ländlichen Gebieten und im katholischen Unter- und Oberfranken (Würzburg, Bamberg). Die fränkische Aussprache „Godd" mit doppeltem „d" statt „t" ist typisch — der weiche Konsonant ist ein klares Erkennungsmerkmal. Im Geschäft, beim Arzt oder bei älteren Leuten Pflicht, unter Jüngeren weicht es zunehmend dem lockeren „Servus". Wer es nicht sagt, gilt schnell als unhöflich oder ortsfremd.',
+      beispiel: 'Grüß Godd, Frau Müller, wia gehd\'s denn so?',
+      beispiel_hd: 'Grüß Gott, Frau Müller, wie geht es Ihnen denn?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'fr-243',
+      ausdruck: 'Bfiad di',
+      hochdeutsch: 'Behüt dich / Tschüss',
+      bedeutung: 'Die traditionelle fränkische Verabschiedungsformel, eine Verschleifung von „Behüt dich Gott". Heute oft als „Bfiad di Godd" oder kurz „Bfiad" gesprochen — ein wunderschönes Beispiel für die religiösen Wurzeln vieler fränkischer Alltagsformeln. Ältere Generationen verwenden es noch häufig, jüngere greifen meist zu „Servus" oder „Tschüss". In Dorfgemeinschaften und beim Verlassen eines Wirtshauses immer noch ein liebevoller Gruß. Klingt fast wie ein kleiner Segen.',
+      beispiel: 'Also dann, bfiad di, mir sehng uns am Sundoog!',
+      beispiel_hd: 'Also dann, tschüss, wir sehen uns am Sonntag!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'fr-244',
+      ausdruck: 'Bischberg',
+      hochdeutsch: 'Bischberg (Gemeinde bei Bamberg)',
+      bedeutung: 'Bischberg ist eine Marktgemeinde im Landkreis Bamberg, gelegen am Zusammenfluss von Regnitz und Main. Bekannt für seinen historischen Ortskern, die barocke Pfarrkirche St. Markus und seine traditionsreichen Brauereien. In der Region berühmt für das jährliche Bischberger Weinfest und die schöne Mainufer-Promenade. Auch ein wichtiger Knotenpunkt für Radfahrer am Main-Radweg. Die Bewohner werden „Bischbercher" genannt und sind stolz auf ihre fränkische Tradition.',
+      beispiel: 'Mir fahrn am Sundoog nach Bischberg an die Regnitz.',
+      beispiel_hd: 'Wir fahren am Sonntag nach Bischberg an die Regnitz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-245',
+      ausdruck: 'Kitzingen',
+      hochdeutsch: 'Kitzingen (Stadt am Main)',
+      bedeutung: 'Kitzingen ist eine Stadt im unterfränkischen Weinland, gelegen am Main zwischen Würzburg und Schweinfurt. Berühmt für seinen Weinbau (Silvaner, Müller-Thurgau), das Deutsche Fastnachtmuseum und seinen schiefen Falterturm. Hier wird einer der größten Faschingsumzüge Nordbayerns gefeiert. Das historische Zentrum mit der Marienkapelle und der Friedenskirche zeugt von wechselhafter Geschichte zwischen katholischer und evangelischer Konfession. „A Glasla Kitzinger Silvaner" gehört zum Frankenwein-Genuss.',
+      beispiel: 'In Kitzingen gibt\'s an wundabaarn Silvaner-Wei.',
+      beispiel_hd: 'In Kitzingen gibt es einen wunderbaren Silvaner-Wein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-246',
+      ausdruck: 'Blooch',
+      hochdeutsch: 'Pflug',
+      bedeutung: 'Der fränkische Ausdruck für den Pflug, ein zentrales Werkzeug der bäuerlichen Landwirtschaft, die das fränkische Land über Jahrhunderte geprägt hat. Die Aussprache mit langem „oo" ist typisch fränkisch — wo das Hochdeutsche „Pflug" sagt, weicht das Fränkische auf „Blooch". Heute meist nur noch in Sprichwörtern, beim alten Bauern oder bei landwirtschaftlichen Geräten zu hören. „A guader Blooch und a starks Ross" war einst der Stolz jeden fränkischen Bauern.',
+      beispiel: 'Der oide Bauer hat sein Blooch nu im Schopf stäih.',
+      beispiel_hd: 'Der alte Bauer hat seinen Pflug noch im Schuppen stehen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-247',
+      ausdruck: 'Hochstapler',
+      hochdeutsch: 'Hochstapler / Angeber',
+      bedeutung: 'Im Fränkischen wird das hochdeutsche „Hochstapler" mit besonderer Verachtung ausgesprochen — fast wie ein Schimpfwort. Bezeichnet jemanden, der mehr scheinen will als er ist, der mit fremdem Federn prahlt oder sich aufspielt. In der fränkischen Mentalität — geprägt von bodenständiger Bescheidenheit und Pragmatismus — gilt das als besonders verwerflich. „A richdiger Hochstapler" ist hier kein Bewunderungsobjekt, sondern Gegenstand spöttischen Tratschs am Stammtisch und in der Nachbarschaft.',
+      beispiel: 'Der is doch nix als a oider Hochstapler!',
+      beispiel_hd: 'Der ist doch nichts als ein alter Angeber!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-248',
+      ausdruck: 'Wamberla',
+      hochdeutsch: 'Bäuchlein',
+      bedeutung: 'Verniedlichungsform für den Bauch — typisch fränkisch mit dem Diminutiv „-la". Wird liebevoll verwendet, vor allem für das Bäuchlein von Babys, kleinen Kindern oder als scherzhafte Selbstbezeichnung nach einem üppigen fränkischen Schäuferla-Essen. Auch das „Bierbäuchla" eines Stammtisch-Veteranen kann ein „Wamberla" sein. Die Verkleinerungsendung verleiht selbst dem üppigsten Bauch eine gemütliche, fränkische Wärme — kein Vorwurf, sondern liebevolle Beschreibung.',
+      beispiel: 'Nach dem Schäuferla hab i scho a kloans Wamberla!',
+      beispiel_hd: 'Nach dem Schäuferla habe ich schon ein kleines Bäuchlein!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-249',
+      ausdruck: 'Goschn',
+      hochdeutsch: 'Mund / Maul',
+      bedeutung: 'Robustes fränkisches Wort für den Mund, oft mit deutlich abwertendem Unterton. „Halt dei Goschn!" ist ein klassischer Ausruf bei lautem Geschwätz. Stammt vermutlich aus dem mittelhochdeutschen Wortschatz und ist im gesamten süddeutsch-österreichischen Sprachraum verbreitet. Im Fränkischen besonders kräftig: Wenn jemand „a große Goschn hat", ist er ein Großmaul, ein Wichtigtuer. Auch der Spruch „Mit der Goschn ned hinterm Berg halten" beschreibt jemanden, der seine Meinung deutlich kundtut.',
+      beispiel: 'Halt amal dei Goschn und lass an annern aa redn!',
+      beispiel_hd: 'Halt mal deinen Mund und lass auch einen anderen reden!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'fr-250',
+      ausdruck: 'Heimadtla',
+      hochdeutsch: 'Heimat / Heimatchen',
+      bedeutung: 'Liebevolle, verniedlichte Form von „Heimat" — ein Wort voller fränkischer Identitätsstiftung. Das angefügte „-la" verleiht dem hehren Begriff eine warme, persönliche Note. Wird verwendet, wenn man von seinem Dorf, seiner Stadt, seinem Tal spricht, das man im Herzen trägt. Besonders bei Auswanderern oder Wegzüglern, die nach Jahren in ferner Stadt heimkehren und feststellen: „Mei Heimadtla bleibt mei Heimadtla." Drückt tiefe emotionale Verbundenheit mit der fränkischen Scholle aus.',
+      beispiel: 'Auch nach zwanzg Jahr in München bleibt Franken mei Heimadtla.',
+      beispiel_hd: 'Auch nach zwanzig Jahren in München bleibt Franken meine Heimat.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'fr-251',
+      ausdruck: 'Gfreid mi',
+      hochdeutsch: 'Es freut mich',
+      bedeutung: 'Fränkische Kurzform der hochdeutschen Wendung „Es freut mich". Wird verwendet, um Freude über eine Begegnung, ein Geschenk oder eine gute Nachricht auszudrücken. Charakteristisch ist die typisch fränkische Verschleifung — das „Es" fällt komplett weg, das „freut" wird zu „gfreid". Klingt in der gesprochenen Sprache fast wie ein einziges Wort. Höflichkeitsformel mit echter Wärme, oft beim Treffen alter Bekannter oder bei der Annahme eines unerwarteten Geschenks verwendet.',
+      beispiel: 'Gfreid mi, dass d\' kumma bist heid!',
+      beispiel_hd: 'Es freut mich, dass du heute gekommen bist!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'fr-252',
+      ausdruck: 'Bambärcher Zwiebeltreter',
+      hochdeutsch: 'Bamberger Spitzname',
+      bedeutung: 'Liebevoll-spöttischer Spitzname für die Bewohner Bambergs. Geht zurück auf den traditionellen Gemüseanbau im Bamberger „Gärtnerviertel", wo seit dem Mittelalter Spezialitäten wie der berühmte „Bamberger Hörnla" (eine alte Kartoffelsorte) und natürlich Zwiebeln angebaut wurden. „Treter" bezieht sich auf das stampfende Treten der Erde beim Anbau. Die Bamberger tragen den Namen heute mit Stolz — er ist Teil ihres Welterbe-Status als Stadt der Gemüsegärtner. UNESCO-anerkannt!',
+      beispiel: 'Die Bambärcher Zwiebeltreter san stolz auf ihr Gärtnerviertel.',
+      beispiel_hd: 'Die Bamberger sind stolz auf ihr Gärtnerviertel.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'fr-253',
+      ausdruck: 'Würzburcher Käppele',
+      hochdeutsch: 'Würzburger Käppele / Wallfahrtskirche',
+      bedeutung: 'Das Käppele ist die berühmte barocke Wallfahrtskirche „Mariä Heimsuchung" auf dem Nikolausberg über Würzburg — ein Meisterwerk von Balthasar Neumann (gleicher Architekt wie die Würzburger Residenz). Über die Stationen des Kreuzwegs steigt man zu einer der schönsten Aussichten auf die Stadt empor. Ein Symbol Würzburger Identität. Vor allem an Marienfeiertagen und zum traditionellen „Käppele-Wallfahrtstag" pilgern Tausende hierher. Für Würzburger ein heiliger Ort und beliebtes Ausflugsziel.',
+      beispiel: 'Mir geh\'n am Sundoog nauf zum Käppele!',
+      beispiel_hd: 'Wir gehen am Sonntag hinauf zum Käppele!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-254',
+      ausdruck: 'Ziebala',
+      hochdeutsch: 'Zwiebelchen',
+      bedeutung: 'Fränkische Verniedlichung für die Zwiebel — zentrale Zutat der fränkischen Küche, besonders im berühmten Zwiebelkuchen, der zur neuen Federweißer-Zeit im Herbst gegessen wird. Auch im „Hauszwetschgenkuchen mit Ziebala" oder als Beilage zum Schäuferla unverzichtbar. In Bamberg sogar Identitätsmerkmal — die „Zwiebeltreter" sind stolz auf ihre Tradition. Die Diminutivform „Ziebala" wird sowohl für die kleine Speisezwiebel als auch liebevoll für jede Zwiebel im Gericht verwendet.',
+      beispiel: 'A scharfs Ziebala gehört in jeds anständige Brotzeit-Brötla.',
+      beispiel_hd: 'Ein scharfes Zwiebelchen gehört in jedes anständige Brotzeit-Brötchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-255',
+      ausdruck: 'Blatschga',
+      hochdeutsch: 'Pfütze / Wasserlache',
+      bedeutung: 'Fränkisches Wort für eine kleine Pfütze oder Wasserlache, vor allem nach Regenfällen auf Feldwegen oder im Hof. Lautmalerisch — das „Blatsch" erinnert an das Geräusch, das entsteht, wenn man in die Pfütze tritt. Im Frankenland mit seinen ausgedehnten Wäldern und Wiesen ein vertrautes Phänomen. Kleine Kinder lieben es, durch jede „Blatschga" zu hüpfen, sehr zum Leidwesen der Mütter, die danach die dreckigen Stiefel putzen müssen. Auch übertragen für „Schlamassel" verwendet.',
+      beispiel: 'Pass auf, dass d\' nedd in die Blatschga drittst!',
+      beispiel_hd: 'Pass auf, dass du nicht in die Pfütze trittst!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-256',
+      ausdruck: 'Hutzel',
+      hochdeutsch: 'Getrocknete Frucht / Dörrobst',
+      bedeutung: 'Im Fränkischen Bezeichnung für getrocknete Früchte, besonders Birnen und Zwetschgen, die zur fränkischen Weihnachts- und Wintertradition gehören. „Hutzelbrot" — ein dunkles, würziges Früchtebrot mit Hutzeln, Nüssen und Gewürzen — ist ein traditionelles Weihnachtsgebäck der Region. „Hutzel" kann auch übertragen für eine kleine, schrumpelige alte Frau gebraucht werden („a oide Hutzel"). Die Tradition der Obst-Dörrung war früher überlebenswichtig für die fränkische Bauernküche.',
+      beispiel: 'D\'Oma macht heid Hutzelbrot mit allerlei gedrocknetn Hutzeln.',
+      beispiel_hd: 'Die Oma macht heute Hutzelbrot mit allerlei getrockneten Früchten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-257',
+      ausdruck: 'Glockabäjr',
+      hochdeutsch: 'Glockenbäcker / Brotbäcker',
+      bedeutung: 'Alte fränkische Berufsbezeichnung für den Bäcker, der traditionell mit der Glocke morgens das frische Brot ankündigte. Stammt aus einer Zeit, als der Bäcker noch durch die Dorfgassen zog und mit einem Handglöckchen die Hausfrauen rief. Heute nostalgisch — die meisten „Glockabäjr" sind verschwunden, aber in manchen fränkischen Dörfern erinnern sich die Älteren noch an den allmorgendlichen Glockenklang. Symbol für eine vergangene, ländliche Lebensweise.',
+      beispiel: 'Frieher kam noch der Glockabäjr ins Dorf mit frischa Semmeln.',
+      beispiel_hd: 'Früher kam noch der Glockenbäcker ins Dorf mit frischen Brötchen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'fr-258',
+      ausdruck: 'Hirschenwerd',
+      hochdeutsch: 'Hirschenwirt',
+      bedeutung: 'Traditioneller fränkischer Name für einen Gasthof mit dem Schild „Zum Hirschen". In jedem fränkischen Dorf gab es früher solche Gaststätten — der Hirsch war ein häufiges Wirtshausschild im Frankenland, oft mit jagdrechtlichem Hintergrund (herrschaftliche Jagd). Heute oft mit Brauereianbindung, bekannt für seine deftige fränkische Küche: Schäuferla, Bratwürschd, Kellerbier. Der „Hirschenwerd" ist meist auch das Zentrum dörflichen Gesellschaftslebens — Stammtisch, Vereinsversammlung, Hochzeit.',
+      beispiel: 'Beim Hirschenwerd gibt\'s heid Schäuferla mit Kloß!',
+      beispiel_hd: 'Beim Hirschenwirt gibt es heute Schäuferla mit Kloß!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'fr-259',
+      ausdruck: 'Backofa',
+      hochdeutsch: 'Backofen',
+      bedeutung: 'Fränkisches Wort für den Backofen, oft auch übertragen für eine sehr warme Umgebung verwendet („Hier drin ist\'s wie im Backofa"). In der traditionellen fränkischen Hauskultur war der Backofen — meist im Hof oder als gemeinschaftlicher Dorf-Backofen — von zentraler Bedeutung. Nur einmal pro Woche oder Monat wurde Brot gebacken, vorrätig für die ganze Familie. Der Geruch von frischem fränkischem Bauernbrot aus dem Backofa gehört zu den prägendsten Kindheitserinnerungen jedes Franken.',
+      beispiel: 'Mei Oma hat ihr Bauernbrot nu im alten Backofa gemacht.',
+      beispiel_hd: 'Meine Oma hat ihr Bauernbrot noch im alten Backofen gemacht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'fr-260',
+      ausdruck: 'Goldfasanerie',
+      hochdeutsch: 'Goldfasanerie',
+      bedeutung: 'Historische Fasanenzucht-Anlagen in den Schlossparks der fränkischen Fürstbischöfe und Markgrafen, vor allem in Bayreuth, Veitshöchheim und Würzburg. Die „Goldfasanerie" diente sowohl der höfischen Jagd als auch dem Prestige — exotische Fasanen waren ein Statussymbol des 18. Jahrhunderts. Heute teilweise als Parkanlagen erhalten. Die Bayreuther Goldfasanerie ist ein beliebtes Naherholungsgebiet mit altem Baumbestand. Erinnert an die glanzvolle Epoche der fränkischen Markgrafen-Höfe.',
+      beispiel: 'In da Goldfasanerie kannst herrlich spaziern gäih.',
+      beispiel_hd: 'In der Goldfasanerie kann man herrlich spazieren gehen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'fr-261',
+      ausdruck: 'Schwesterla',
+      hochdeutsch: 'Schwesterchen',
+      bedeutung: 'Verniedlichte Anrede für die Schwester, typisch fränkisch mit der Endung „-la". Wird sowohl liebevoll für die eigene Schwester (auch wenn sie längst erwachsen ist!) als auch für eine Krankenschwester verwendet („Schwesterla, kannst mir helfen?"). Drückt Vertrautheit und Zuneigung aus. In fränkischen Familien hört man die Diminutivform oft bis ins hohe Alter — „mei Schwesterla" sagt selbst die 80-jährige Großmutter noch über ihre 78-jährige Schwester. Klangbild typisch warm-fränkisch.',
+      beispiel: 'Mei Schwesterla kummt am Wochenend zu Besuch.',
+      beispiel_hd: 'Meine Schwester kommt am Wochenende zu Besuch.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-262',
+      ausdruck: 'Bruada',
+      hochdeutsch: 'Bruder',
+      bedeutung: 'Fränkische Aussprache von „Bruder" — typisch ist das offene „a" am Ende statt des hochdeutschen „er". Wird sowohl für den leiblichen Bruder als auch übertragen für einen guten Freund („A oida Bruada vo mir") verwendet. In fränkischen Familien ein wichtiges Verwandtschaftswort, oft mit besonderer Wärme ausgesprochen. „Mei großer Bruada" oder „mei kloana Bruada" sind Standardformeln. Auch in Sprichwörtern: „Bruada und Schwester san die nächsten Verwandten."',
+      beispiel: 'Mei großer Bruada wohnt mittlerweil in Nemberch.',
+      beispiel_hd: 'Mein großer Bruder wohnt mittlerweile in Nürnberg.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'fr-263',
+      ausdruck: 'Quetschn',
+      hochdeutsch: 'Akkordeon / Quetschkommode',
+      bedeutung: 'Liebevoll-spöttische fränkische Bezeichnung für das Akkordeon, das in der traditionellen fränkischen Volksmusik eine zentrale Rolle spielt. Der Name leitet sich vom „Quetschen" des Balgs ab. Auf jeder Kärwa, bei jedem Frankenwein-Fest und in vielen Wirtshäusern erklingt noch heute die Quetschn — meist mit fränkischen Volksliedern, Walzern oder Polkas. Eine „guade Quetschn" zu spielen, ist eine geschätzte Kunst. Der „Quetschn-Spieler" ist oft die Seele jeder fränkischen Feier.',
+      beispiel: 'Auf da Kärwa hat der Sepp wieda die Quetschn auspackt.',
+      beispiel_hd: 'Auf der Kirchweih hat der Sepp wieder das Akkordeon ausgepackt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'fr-264',
+      ausdruck: 'Glubberer',
+      hochdeutsch: 'Glubb-Fan / 1. FC Nürnberg-Fan',
+      bedeutung: 'Treuer Fan des 1. FC Nürnberg, auch liebevoll „Club" oder eben „Glubb" genannt. Glubberer zu sein ist eine Lebenseinstellung, geprägt von leidvoller Treue zum „Club mit den meisten Abstiegen aus der Bundesliga". Der typische Glubberer pflegt schwarzgalligen Humor und sagt Sprüche wie „Mir san mir!" oder „A echter Glubberer hält durch!". Zwischen Hoffnung auf den nächsten Aufstieg und Verzweiflung über den letzten Abstieg pendelt das Glubberer-Herz seit Jahrzehnten. Heimat: der Max-Morlock-Platz.',
+      beispiel: 'A echter Glubberer hält zu seim Club, auch wenn\'s nedd läuft.',
+      beispiel_hd: 'Ein echter Club-Fan hält zu seinem Verein, auch wenn es nicht läuft.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-265',
+      ausdruck: 'Spielfeldla',
+      hochdeutsch: 'Spielfeldchen / kleiner Bolzplatz',
+      bedeutung: 'Verniedlichung für ein kleines Spielfeld oder einen Bolzplatz, typisch fränkisch mit der Endung „-la". Bezeichnet meist die kleinen Fußballplätze in den Dörfern oder Stadtvierteln, auf denen Generationen fränkischer Kinder ihre ersten Tore geschossen haben. Auch die Plätze hinter den Sportheimen, auf denen die Jugendmannschaften trainieren. Das „Spielfeldla im Hinterhof" ist Sinnbild kindlicher Freiheit — wo Bolzschuhe, leere Mützen als Torpfosten und endlose Sommerabende zur fränkischen Fußballkultur gehören.',
+      beispiel: 'Mir treffn uns heid am Spielfeldla zum Kicka!',
+      beispiel_hd: 'Wir treffen uns heute am Bolzplatz zum Kicken!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'fr-266',
+      ausdruck: 'Bockbierfest',
+      hochdeutsch: 'Bockbierfest',
+      bedeutung: 'Traditionelle fränkische Frühjahrs- und Herbstfeier, bei der das namensgebende, stärkere Bockbier ausgeschenkt wird. Bock-, Doppelbock- und Maibockbiere gehören zur fränkischen Bierkultur. Viele Brauereien — von Bamberg bis Kulmbach, von Bayreuth bis Erlangen — feiern eigene Bockbierfeste, oft mit Blasmusik, Schäuferla und reichlich Brotzeit. „Star-Bock", „Salvator" oder „Maibock" sind beliebte Sorten. Der Anstich des ersten Fasses ist ein gesellschaftliches Ereignis — Bürgermeister und Brauereichefs in feierlichem Ornat.',
+      beispiel: 'Aufs Bockbierfest in Kulmbach freu i mi des ganze Jahr!',
+      beispiel_hd: 'Aufs Bockbierfest in Kulmbach freue ich mich das ganze Jahr!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'fr-267',
+      ausdruck: 'Goggolori',
+      hochdeutsch: 'Kobold / Spukgestalt',
+      bedeutung: 'Mystische Spukgestalt aus fränkisch-bayerischen Volkssagen, eine Art Kobold oder Berggeist. Der Goggolori treibt sein Unwesen in Wäldern, Höhlen und einsamen Berghängen — vor allem in der Fränkischen Schweiz und am Hesselberg. Hat Wilfried Hiller in seiner gleichnamigen Oper berühmt gemacht. Wird Kindern als gruseliges Wesen erzählt, das ungezogene Kinder holt. Auch übertragen für einen Menschen mit hinterlistigem oder unheimlichem Charakter verwendet. Symbol für die magisch-mystische Seite der fränkischen Volkskultur.',
+      beispiel: 'Im finsteren Wald solls da Goggolori herumtreiben.',
+      beispiel_hd: 'Im finsteren Wald soll der Kobold herumtreiben.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'fr-268',
+      ausdruck: 'Sapperlot',
+      hochdeutsch: 'Donnerwetter! / Verflixt!',
+      bedeutung: 'Klassischer fränkisch-bayerischer Ausruf der Überraschung, des Erstaunens oder leichten Ärgers — eine harmlose Verballhornung des französischen „sacré" (heilig). Gilt als gemäßigte Variante zu deftigeren Flüchen, kann von jung und alt, in der Kirche wie im Wirtshaus gleichermaßen verwendet werden. „Sapperlot, des hädd i nedd dacht!" ist ein typischer Ausruf bei unerwarteten Wendungen. Stammt aus dem 18. Jahrhundert, hatte einst leicht blasphemischen Beigeschmack, ist heute aber völlig harmlos. Klassiker des fränkischen Wortschatzes.',
+      beispiel: 'Sapperlot, des hädd i wirklich nedd erwart!',
+      beispiel_hd: 'Donnerwetter, das hätte ich wirklich nicht erwartet!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'fr-269',
+      ausdruck: 'Trottel',
+      hochdeutsch: 'Trottel / Dummkopf',
+      bedeutung: 'Klassisches fränkisches Schimpfwort für einen einfältigen, ungeschickten Menschen — wird aber meist in milder, fast liebevoller Form gebraucht („Ach, du oida Trottel!"). Im Gegensatz zu härteren Beleidigungen ist „Trottel" sozial akzeptiert und wird sogar selbstironisch verwendet, wenn man einen dummen Fehler macht. Die fränkische Aussprache rollt das R deutlich — „T-r-ottel" — und betont die erste Silbe stark. Wer im Frankenland „a richdiger Trottel" genannt wird, hat meist etwas Auffälliges angestellt, muss aber nicht persönlich beleidigt sein.',
+      beispiel: 'I oida Trottel hab\'s wieda mol vergessn!',
+      beispiel_hd: 'Ich alter Trottel habe es wieder mal vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'fr-270',
+      ausdruck: 'Wickeltisch',
+      hochdeutsch: 'Wickeltisch',
+      bedeutung: 'Im Fränkischen oft als „Wickltisch" ausgesprochen, mit verschlucktem „e". Bezeichnet das Möbelstück zum Wickeln des Babys — zentral in jeder Kinderzimmer-Einrichtung der jungen fränkischen Familie. Spielt im Alltagsleben der jungen Eltern eine entscheidende Rolle und ist oft Schauplatz lustiger Anekdoten („Beim Windelwechsln hat\'s an dolla Strahl gschossn!"). Im Sprichwort: „Vom Wickltisch in die große Welt" — Ausdruck für die wundersame Reise vom hilflosen Säugling zum erwachsenen Menschen. Symbolischer Ort des Beginnens.',
+      beispiel: 'Des klane Bambala liegt zfrieda auf m Wickeltisch.',
+      beispiel_hd: 'Das kleine Baby liegt zufrieden auf dem Wickeltisch.',
+      kategorie: 'familie'
     }
   ]
 };

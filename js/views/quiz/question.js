@@ -68,7 +68,7 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
     el('div', { style: { marginTop: '12px' } },
       el('button', {
         class: 'btn btn-ghost fc-speak', style: { padding: '6px 14px' },
-        onClick: () => speak(q.item.ausdruck)
+        onClick: () => speak(q.item.ausdruck, q.item.dialektLang || 'de-DE')
       },
         el('span', { class: 'speak-icon' }, icon('speaker', { size: 18 })),
         el('span', { class: 'speak-wave', html: '<i></i><i></i><i></i><i></i><i></i>' }),

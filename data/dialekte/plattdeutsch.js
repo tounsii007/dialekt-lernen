@@ -9,12 +9,15 @@ export default {
   farbe: '#1d3557',
   beschreibung: 'Plattdeutsch (Niederdeutsch) ist die historische Sprache Norddeutschlands. Sie hat eigene Grammatik und Wortschatz, ist mit dem Niederländischen und Englischen näher verwandt als mit dem Hochdeutschen. Offiziell als Regionalsprache anerkannt.',
   sprecher: 'ca. 2,6 Mio.',
+  lang: 'nds',
   ausdruecke: [
     {
       id: 'p-001',
       ausdruck: 'Moin',
       hochdeutsch: 'Hallo (zu jeder Tageszeit)',
       bedeutung: 'Der norddeutsche Universalgruß — verwendbar morgens, mittags, abends, nachts. Stammt von „mooi" (= „schön"), nicht von „Morgen". „Moin Moin" gilt im echten Norden schon als Geschwätz.',
+      beispiel: 'Moin, mien Jung, hest du al Klönschnack hatt?',
+      beispiel_hd: 'Hallo, mein Junge, hast du schon ein Schwätzchen gehalten?',
       kategorie: 'begruessung'
     },
     {
@@ -25,13 +28,6 @@ export default {
       beispiel: 'Wat\'n Schietwedder hüüt!',
       beispiel_hd: 'Was für ein Mistwetter heute!',
       kategorie: 'natur'
-    },
-    {
-      id: 'p-003',
-      ausdruck: 'Klönschnack',
-      hochdeutsch: 'Plauderei / Smalltalk',
-      bedeutung: 'Eine gemütliche, lockere Unterhaltung — beim Bäcker, am Gartenzaun, im Kaffeeklatsch. Wichtiger Bestandteil norddeutscher Geselligkeit.',
-      kategorie: 'alltag'
     },
     {
       id: 'p-004',
@@ -47,20 +43,17 @@ export default {
       ausdruck: 'Deern',
       hochdeutsch: 'Mädchen / Frau',
       bedeutung: 'Plattdeutsch für ein junges Mädchen oder eine junge Frau. „Lütte Deern" = „kleines Mädchen". Wird auch heute noch liebevoll verwendet.',
+      beispiel: 'Mien lütt Deern, kumm mol her!',
+      beispiel_hd: 'Mein kleines Mädchen, komm mal her!',
       kategorie: 'menschen'
     },
     {
       id: 'p-006',
       ausdruck: 'Jung',
       hochdeutsch: 'Junge',
-      bedeutung: 'Plattdeutsch für „Junge", parallel zum „Deern". „Lütte Jung" = „kleiner Junge".',
-      kategorie: 'menschen'
-    },
-    {
-      id: 'p-007',
-      ausdruck: 'Plietsch',
-      hochdeutsch: 'Schlau / pfiffig',
-      bedeutung: 'Beschreibung für eine clevere, gewitzte Person. Kein Genie, aber jemand, der Lebenslagen klug meistert. Kompliment im Norden.',
+      bedeutung: 'Plattdeutsch für „Junge", parallel zum „Deern" (Mädchen). „Lütte Jung" bedeutet „kleiner Junge", „mien Jung" liebevoll „mein Junge". In norddeutschen Familien Standard-Anrede für Söhne, auch Enkel. Hörbar verwandt mit dem englischen „young" — die niederdeutsch-englische Sprachverwandtschaft zeigt sich hier deutlich. Eines der ureigensten plattdeutschen Wörter.',
+      beispiel: 'Mien Jung, kumm mol her!',
+      beispiel_hd: 'Mein Junge, komm mal her!',
       kategorie: 'menschen'
     },
     {
@@ -68,6 +61,8 @@ export default {
       ausdruck: 'Tschüss',
       hochdeutsch: 'Tschüss / Auf Wiedersehen',
       bedeutung: 'Auch wenn längst Hochdeutsch: „Tschüss" stammt aus dem Norddeutschen und kommt vom spanischen „adiós" über das Plattdeutsche „atschüs".',
+      beispiel: 'Tschüss, ick mutt nu mol los na Huus!',
+      beispiel_hd: 'Tschüss, ich muss jetzt mal los nach Hause!',
       kategorie: 'begruessung'
     },
     {
@@ -75,6 +70,8 @@ export default {
       ausdruck: 'Fischbrötchen',
       hochdeutsch: 'Fischbrötchen',
       bedeutung: 'Norddeutsche Spezialität: frisches Brötchen mit Bismarck-, Brat- oder Räucherfisch, dazu Zwiebeln und Remoulade. Pflichtprogramm im Hafen.',
+      beispiel: 'An\'n Hafen gifft\'t dat beste Fischbrötchen vun ganz Hamborg.',
+      beispiel_hd: 'Am Hafen gibt es das beste Fischbrötchen von ganz Hamburg.',
       kategorie: 'essen'
     },
     {
@@ -82,13 +79,17 @@ export default {
       ausdruck: 'Snack',
       hochdeutsch: 'Gespräch / Plauderei',
       bedeutung: 'Im Plattdeutschen kein Essens-Snack, sondern eine Unterhaltung. „En lütten Snack" = ein kurzes Gespräch.',
+      beispiel: 'Wi hebbt en lütten Snack bi\'n Bäcker hatt.',
+      beispiel_hd: 'Wir hatten ein kleines Gespräch beim Bäcker.',
       kategorie: 'alltag'
     },
     {
       id: 'p-011',
       ausdruck: 'Kööken',
       hochdeutsch: 'Küche',
-      bedeutung: 'Plattdeutsches „Küche". Vergleichbar mit englisch „kitchen", dänisch „køkken".',
+      bedeutung: 'Plattdeutsches Wort für „Küche" — vergleichbar mit englisch „kitchen" und dänisch „køkken". Zeigt die niederdeutsche Sprachverwandtschaft mit dem Englischen und den nordischen Sprachen. In norddeutschen Bauernhöfen war die „Kööken" mit Kachelofen das Herzstück des Hauses — hier wurde gekocht, geredet, gegessen. Eine zentrale plattdeutsche Vokabel.',
+      beispiel: 'In de Kööken steiht een Kessel up\'n Herd.',
+      beispiel_hd: 'In der Küche steht ein Kessel auf dem Herd.',
       kategorie: 'orte'
     },
     {
@@ -96,6 +97,8 @@ export default {
       ausdruck: 'Hus',
       hochdeutsch: 'Haus',
       bedeutung: 'Plattdeutsches „Haus" — fast wie englisch „house" ausgesprochen. Wichtiges Wort: „rin in\'t Hus!" = „rein ins Haus!".',
+      beispiel: 'Kumm rin in\'t Hus, dat is büter koolt!',
+      beispiel_hd: 'Komm rein ins Haus, draußen ist es kalt!',
       kategorie: 'orte'
     },
     {
@@ -103,20 +106,17 @@ export default {
       ausdruck: 'Kröger',
       hochdeutsch: 'Gastwirt',
       bedeutung: 'Plattdeutsch für den Wirt einer Gaststätte (= „Krog"). Auch ein häufiger Familienname im Norden.',
+      beispiel: 'De Kröger tappt jümmers en frisches Beer för uns.',
+      beispiel_hd: 'Der Gastwirt zapft immer ein frisches Bier für uns.',
       kategorie: 'menschen'
-    },
-    {
-      id: 'p-014',
-      ausdruck: 'Buddel',
-      hochdeutsch: 'Flasche',
-      bedeutung: 'Norddeutsch für eine Flasche, vor allem mit Schiffsbezug („Buddelschiff" — Schiff in der Flasche).',
-      kategorie: 'essen'
     },
     {
       id: 'p-015',
       ausdruck: 'Sünn',
       hochdeutsch: 'Sonne',
       bedeutung: 'Plattdeutsches „Sonne" — wenn sie denn mal scheint. „Wenn de Sünn lacht, lacht ok de Norden."',
+      beispiel: 'Hüüt schient de Sünn — endlich kein Schiet mehr!',
+      beispiel_hd: 'Heute scheint die Sonne — endlich kein Mistwetter mehr!',
       kategorie: 'natur'
     },
     {
@@ -124,6 +124,8 @@ export default {
       ausdruck: 'Pütt',
       hochdeutsch: 'Eimer',
       bedeutung: 'Norddeutsch für einen Eimer oder ein Loch. Im Ruhrgebiet bezeichnet „Pütt" auch eine Zeche.',
+      beispiel: 'Holl mol den Pütt — wi mött Water halen.',
+      beispiel_hd: 'Hol mal den Eimer — wir müssen Wasser holen.',
       kategorie: 'alltag'
     },
     {
@@ -131,6 +133,8 @@ export default {
       ausdruck: 'Hummel Hummel — Mors Mors',
       hochdeutsch: 'Hamburger Gruß-Antwort',
       bedeutung: 'Klassischer Hamburger Stadtruf: „Hummel Hummel!" — Antwort: „Mors Mors!". Spielt auf den Hamburger Wasserträger Hummel an, von Kindern verspottet — Antwort: „Mors!" (Hintern).',
+      beispiel: 'In Hamborg röpst du „Hummel Hummel" un kriggst „Mors Mors" trüch!',
+      beispiel_hd: 'In Hamburg rufst du „Hummel Hummel" und bekommst „Mors Mors" zurück!',
       kategorie: 'redensart'
     },
     {
@@ -138,6 +142,8 @@ export default {
       ausdruck: 'Tüddelkram',
       hochdeutsch: 'Kleinkram / Plunder',
       bedeutung: 'Unnötiger Kleinkram, Krimskrams. „Bring dien Tüddelkram weg!" = „Räum deinen Kram weg!".',
+      beispiel: 'Bring dien Tüddelkram weg, hier is keen Platz mehr!',
+      beispiel_hd: 'Räum deinen Kram weg, hier ist kein Platz mehr!',
       kategorie: 'alltag'
     },
     {
@@ -159,13 +165,6 @@ export default {
       kategorie: 'redensart'
     },
     {
-      id: 'p-021',
-      ausdruck: 'Mors',
-      hochdeutsch: 'Hintern (kindlich)',
-      bedeutung: 'Das plattdeutsche Kinderwort für den Hintern — der berühmteste Mors in Hamburg ist der des Wasserträgers Hummel, auf den Kinder „Mors Mors!" riefen, wenn er sich bückte. Das Wort klingt harmlos und wurde und wird von Kindern benutzt, ohne dass Eltern einschreiten müssten. Es ist heute vor allem durch den Hamburger Ruf bekannt.',
-      kategorie: 'koerper'
-    },
-    {
       id: 'p-022',
       ausdruck: 'Knüüt',
       hochdeutsch: 'Knoten / kleiner Knirps',
@@ -184,15 +183,6 @@ export default {
       kategorie: 'gefuehle'
     },
     {
-      id: 'p-024',
-      ausdruck: 'Pott',
-      hochdeutsch: 'Topf / Hafen-Gefäß / norddeutsches Schiff',
-      bedeutung: '„Pott" bedeutet im Plattdeutschen zunächst einfach Topf oder Behälter — aber im Hamburger Slang ist ein „Pott" auch ein Schiff, oft scherzhaft für ein einfaches Frachtschiff. „In den sauren Pott beißen" heißt, etwas Unangenehmes tun müssen. Der Begriff drückt norddeutsche Bodenständigkeit aus und ist allgegenwärtig in Küche und Hafen.',
-      beispiel: 'De Pott kookt all, Mudder ropt to\'n Eten.',
-      beispiel_hd: 'Der Topf kocht schon, Mutter ruft zum Essen.',
-      kategorie: 'essen'
-    },
-    {
       id: 'p-025',
       ausdruck: 'Hagelslag',
       hochdeutsch: 'Schokoladenstreusel (auf Butterbrot)',
@@ -206,6 +196,8 @@ export default {
       ausdruck: 'Smörbrodt',
       hochdeutsch: 'Butterbrot / belegtes Brot (dänisch-norddeutsch)',
       bedeutung: 'Das Smörbrodt (nach dänischem Smørrebrød) ist im nordfriesischen und schleswig-holsteinischen Raum ein vertrautes Wort für das belegte Butterbrot — Zeugnis der langen kulturellen Verflechtung zwischen Dänemark und Norddeutschland. Es kann schlicht mit Butter und Käse oder aufwändig mit Lachs, Ei und Gurke belegt sein. Die Grenzregion hat ihre eigene gastronomische Identität bewahrt.',
+      beispiel: 'Mudder maakt en Smörbrodt mit Lachs un Ei to\'n Avend.',
+      beispiel_hd: 'Mutter macht ein Butterbrot mit Lachs und Ei zum Abend.',
       kategorie: 'essen'
     },
     {
@@ -231,7 +223,7 @@ export default {
       ausdruck: 'Deich',
       hochdeutsch: 'Deich (Hochwasserschutzwall)',
       bedeutung: 'Der Deich ist der wichtigste Schutzwall gegen das Meer — ohne ihn lägen weite Teile Norddeutschlands unter Wasser. Deichbau und -pflege war gemeinschaftliche Pflicht; wer seinen Deichabschnitt vernachlässigte, gefährdete alle. Theodor Storms Novelle „Der Schimmelreiter" hat den Deich zur literarischen Ikone gemacht. Im Plattdeutschen heißt es schlicht „Diek".',
-      beispiel: 'Op\'n Diek staht un den Wind in\'t Gesicht völen — dat is Norden.',
+      beispiel: 'Op\'n Deich (Diek) staht un den Wind in\'t Gesicht völen — dat is Norden.',
       beispiel_hd: 'Auf dem Deich stehen und den Wind im Gesicht spüren — das ist Norden.',
       kategorie: 'orte'
     },
@@ -249,22 +241,17 @@ export default {
       ausdruck: 'Möwe',
       hochdeutsch: 'Möwe',
       bedeutung: 'Die Möwe ist das Symbol der Nordseeküste — laut, dreist und allgegenwärtig. Im Plattdeutschen „Möv" oder „Möwe", sie stiehlt Pommes vom Teller und kreist über Fischerbooten. Für Norddeutsche ist ihr Schreien der Klang von Heimat, für Touristen manchmal ein Schock. Möwen folgen Schiffen weit aufs Meer hinaus.',
+      beispiel: 'De Möwe hett mi dat Fischbrötchen ut de Hand klaut!',
+      beispiel_hd: 'Die Möwe hat mir das Fischbrötchen aus der Hand geklaut!',
       kategorie: 'natur'
-    },
-    {
-      id: 'p-032',
-      ausdruck: 'Bullerjan',
-      hochdeutsch: 'Gemütlicher Holzofen / Dauerbrenner',
-      bedeutung: 'Ein Bullerjan ist ein bauchiger, gusseiserner Ofen, der Holz verbrennt und dabei bullert und knistert — der inbegriff von Gemütlichkeit in norddeutschen Ferienhäusern und Fischerhütten. Der Name ist lautmalerisch: man hört das Feuer im Bauch des Ofens bullern. Im Winter versammelt man sich um den Bullerjan und erzählt Dönekens.',
-      beispiel: 'Den Bullerjan ansmeten un Tee kooken — nu is de Aabend schön.',
-      beispiel_hd: 'Den Holzofen anmachen und Tee kochen — jetzt ist der Abend schön.',
-      kategorie: 'orte'
     },
     {
       id: 'p-033',
       ausdruck: 'Regen',
       hochdeutsch: 'Regen',
       bedeutung: 'Fast wie im Hochdeutschen, aber leicht anders ausgesprochen. Regen ist an der Nordseeküste kein Ausnahme-, sondern ein Dauerzustand — was auch das Schietwedder erklärt. In der Landwirtschaft der Marschregionen ist Regen jedoch lebensnotwendig für die fruchtbaren Böden. Norddeutsche Kinder lernen früh: Regen ist kein Grund, zuhause zu bleiben.',
+      beispiel: 'Bi uns regent\'t — wat sünst, wi sünd ja in\'n Norden.',
+      beispiel_hd: 'Bei uns regnet es — was sonst, wir sind ja im Norden.',
       kategorie: 'natur'
     },
     {
@@ -281,6 +268,8 @@ export default {
       ausdruck: 'Matrose',
       hochdeutsch: 'Matrose / Seemann',
       bedeutung: 'Im Plattdeutschen und in der Hamburger Seefahrtstradition war der Matrose das Rückgrat der Handelsmarine. Junge Männer aus Norddeutschland fuhren zur See, um die Welt zu sehen — und kehrten mit Geschichten, Souvenirs und manchmal fremden Sprachen zurück. Das Bild des Matrosen mit Ringelpullover und Mütze ist untrennbar mit Hamburg verbunden.',
+      beispiel: 'Mien Grootvadder weer Matrose op\'n grooten Frachter.',
+      beispiel_hd: 'Mein Großvater war Matrose auf einem großen Frachter.',
       kategorie: 'arbeit'
     },
     {
@@ -306,6 +295,8 @@ export default {
       ausdruck: 'Karnüffel',
       hochdeutsch: 'Altes norddeutsches Kartenspiel',
       bedeutung: 'Karnüffel ist eines der ältesten bekannten Kartenspiele der Welt — erstmals 1426 in Süddeutschland erwähnt, aber in Norddeutschland bis ins 20. Jahrhundert gespielt. Es war das Spiel der einfachen Leute: Bergleute, Seeleute und Bauern. Die Karten hatten feste Rangfolgen und das Spiel war für seinen „Karnüffel" — die mächtigste Karte — bekannt.',
+      beispiel: 'Mien Opa hett mit de Naverschap noch Karnüffel speelt.',
+      beispiel_hd: 'Mein Opa hat mit der Nachbarschaft noch Karnüffel gespielt.',
       kategorie: 'sport'
     },
     {
@@ -313,6 +304,8 @@ export default {
       ausdruck: 'Rüm Hart, klaar Kimming',
       hochdeutsch: 'Offenes Herz, freier Horizont',
       bedeutung: 'Der Wahlspruch Schleswig-Holsteins — auf Plattdeutsch — bedeutet wörtlich „Weites Herz, freie Kimming (Horizont)". Er drückt die norddeutsche Mentalität aus: Offenheit, Freiheitssinn und den Blick in die Ferne. Die „Kimming" ist der nautische Begriff für den Horizont auf dem Meer. Der Spruch steht auf dem Landeswappen und ist das Lebensmotto vieler Norddeutscher.',
+      beispiel: '„Rüm Hart, klaar Kimming" — so leevt man echt in\'n Norden.',
+      beispiel_hd: '„Offenes Herz, freier Horizont" — so lebt man echt im Norden.',
       kategorie: 'redensart'
     },
     {
@@ -329,6 +322,8 @@ export default {
       ausdruck: 'Kröpel',
       hochdeutsch: 'Humpelnder / Gehbehinderter (altertümlich)',
       bedeutung: 'Ein altes plattdeutsches Wort für jemanden, der humpelt oder an einer Gehbehinderung leidet — heute veraltet und nicht mehr gebräuchlich in neutralem Sinne. Es taucht in historischen Texten, Märchen und Volksliedern auf. Die Sprache des Plattdeutschen bewahrt viele solcher alten Wörter, die im Hochdeutschen längst verschwunden sind.',
+      beispiel: 'In dat ole Volkslied is vun en armen Kröpel de Reed.',
+      beispiel_hd: 'In dem alten Volkslied ist von einem armen Humpelnden die Rede.',
       kategorie: 'koerper'
     },
     {
@@ -336,6 +331,8 @@ export default {
       ausdruck: 'Witsch',
       hochdeutsch: 'Hexe / böse alte Frau',
       bedeutung: 'Im Plattdeutschen ist „Witsch" ein Schimpfwort für eine böse, zänkische oder unausstehliche alte Frau — der Klang ist abwertend, aber im Volksmund weit verbreitet. Hexenprozesse im 16. und 17. Jahrhundert fanden auch in Norddeutschland statt; der Begriff hat tiefe historische Wurzeln. Heute wird es selten und eher scherzhaft verwendet.',
+      beispiel: 'De ole Witsch vun nebenan keift mol wedder!',
+      beispiel_hd: 'Die alte Hexe von nebenan zankt mal wieder!',
       kategorie: 'schimpf'
     },
     {
@@ -343,6 +340,8 @@ export default {
       ausdruck: 'Pinkeln',
       hochdeutsch: 'Urinieren (kindlich)',
       bedeutung: 'Das kindliche, umgangssprachliche Wort für Urinieren — im ganzen norddeutschen Raum verbreitet und in alle deutschen Regionen übergegangen. Es ist eines der Wörter aus dem Plattdeutschen, die sich ins Hochdeutsche eingebürgert haben, ohne dass viele Menschen es wissen. Für Kinder ist es das normale Wort, für Erwachsene eher der scherzhafte Ausdruck.',
+      beispiel: 'De lütt Deern mutt mol pinkeln, holl mol an!',
+      beispiel_hd: 'Das kleine Mädchen muss mal Pipi, halt mal an!',
       kategorie: 'koerper'
     },
     {
@@ -350,6 +349,8 @@ export default {
       ausdruck: 'Dutt',
       hochdeutsch: 'Haarknoten / Dutt',
       bedeutung: 'Der Dutt ist der zusammengebundene Haarknoten im Nacken — auch im Hochdeutschen als „Dutt" bekannt, aber das Wort stammt aus dem Norddeutschen. Früher trugen Fischerinnen und Bäuerinnen ihren Dutt als praktische Frisur bei der Arbeit. Heute ist der Dutt modern und bei Männern wie Frauen gleichermaßen beliebt.',
+      beispiel: 'Mien Mudder bindt ehr Haar jümmers to\'n Dutt op.',
+      beispiel_hd: 'Meine Mutter bindet ihr Haar immer zum Dutt hoch.',
       kategorie: 'koerper'
     },
     {
@@ -393,6 +394,8 @@ export default {
       ausdruck: 'Aalsuppe',
       hochdeutsch: 'Hamburger Aalsuppe',
       bedeutung: 'Die Hamburger Aalsuppe ist eines der ältesten und eigenartigsten Gerichte der norddeutschen Küche — eine süß-saure Suppe mit Aal, Trockenfrüchten, Speck und Gemüse. Entgegen dem Namen enthielt die ursprüngliche Version manchmal gar keinen Aal: „Aalsuppe" könnte von „allens" (alles) abstammen — die Suppe aus allem, was der Vorrat hergab.',
+      beispiel: 'In Hamborg mutt man mol echte Aalsuppe versöken.',
+      beispiel_hd: 'In Hamburg muss man mal echte Aalsuppe probieren.',
       kategorie: 'essen'
     },
     {
@@ -436,8 +439,8 @@ export default {
       ausdruck: 'Hamburger SV',
       hochdeutsch: 'Hamburger Sport-Verein (Fußballclub)',
       bedeutung: 'Der Hamburger SV — kurz HSV — ist Hamburgs Traditionsverein, gegründet 1887. Bis 2018 war der HSV als einziger Verein durchgehend in der Bundesliga seit deren Gründung 1963. Die berühmte Stadionuhr im Volksparkstadion zählte die Jahre der Erstligazugehörigkeit. Nach dem Abstieg 2018 in die 2. Liga: ein Trauma für die HSV-Fans. „Nur der HSV!" bleibt der Schlachtruf der Anhänger.',
-      beispiel: 'De HSV mutt mol wedder no baven — wi hoopt op nächst Johr.',
-      beispiel_hd: 'Der HSV muss mal wieder nach oben — wir hoffen auf nächstes Jahr.',
+      beispiel: 'De Hamburger SV — kort HSV — mutt mol wedder no baven.',
+      beispiel_hd: 'Der Hamburger SV — kurz HSV — muss mal wieder nach oben.',
       kategorie: 'sport'
     },
     {
@@ -472,8 +475,8 @@ export default {
       ausdruck: 'Elbphilharmonie',
       hochdeutsch: 'Elbphilharmonie (Konzerthaus)',
       bedeutung: 'Die Elbphilharmonie — kurz „Elphi" — ist Hamburgs spektakuläres Konzerthaus auf einem alten Kaispeicher in der HafenCity. Eröffnet 2017 nach 10 Jahren Bauzeit und 866 Millionen Euro Kosten. Die wellenförmige Glasarchitektur wirkt wie ein Schiff. Die Akustik des Großen Saals zählt zu den besten der Welt. Die Plaza in 37 Meter Höhe ist eine öffentliche Aussichtsterrasse mit Blick über Hafen und Stadt.',
-      beispiel: 'Vun de Elphi-Plaza hest du de besten Utsicht op de Elv.',
-      beispiel_hd: 'Von der Elphi-Plaza hast du den besten Ausblick auf die Elbe.',
+      beispiel: 'Vun de Elbphilharmonie — de „Elphi\" — hest du de besten Utsicht op de Elv.',
+      beispiel_hd: 'Von der Elbphilharmonie — der „Elphi\" — hast du den besten Ausblick auf die Elbe.',
       kategorie: 'orte'
     },
     {
@@ -490,8 +493,8 @@ export default {
       ausdruck: 'Ostfriesentee',
       hochdeutsch: 'Ostfriesische Teezeremonie',
       bedeutung: 'Die ostfriesische Teezeremonie ist UNESCO-Welterbe — schwarzer Assam-Tee, in einer feinen Porzellankanne aufgebrüht und mit „Kluntje" (großen Kandiszuckerkristallen) und Sahne serviert. Die Sahne wird nicht gerührt — sie bildet wolkige Strukturen. Drei Tassen sind Pflicht (sonst gilt man als unhöflich). Ostfriesen trinken durchschnittlich 300 Liter Tee pro Jahr — mehr als die Briten! Tee gehört zum ostfriesischen Lebensgefühl.',
-      beispiel: 'Drei Tassen Tee bi de Oma — anners gehst nich los.',
-      beispiel_hd: 'Drei Tassen Tee bei der Oma — anders gehst du nicht los.',
+      beispiel: 'Drei Tassen Ostfriesentee bi de Oma — anners gehst nich los.',
+      beispiel_hd: 'Drei Tassen Ostfriesentee bei der Oma — anders gehst du nicht los.',
       kategorie: 'essen'
     },
     {
@@ -576,15 +579,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'p-070',
-      ausdruck: 'Lütt un Lütt',
-      hochdeutsch: 'Bier und Korn (klassisches Hamburger Getränkeduo)',
-      bedeutung: '„Lütt un Lütt" (wörtlich: „Klein und Klein") ist Hamburgs Klassiker-Getränk: ein kleines Bier (typisch Astra) und ein kleiner Köm (Korn) zusammen serviert. Eine Hafenarbeiter-Tradition aus dem 19. Jahrhundert, die heute in Kult-Bars wie der „Stockenwiete" oder im St. Pauli Kiez überlebt. Die ideale Pause nach einer harten Schicht — günstig, hochprozentig und identitätsstiftend. Touristen wundern sich, Hamburger lachen.',
-      beispiel: 'Ein Lütt un Lütt an de Theke — Hamburger Stamm-Tradition.',
-      beispiel_hd: 'Ein Bier mit Korn an der Theke — Hamburger Stamm-Tradition.',
-      kategorie: 'essen'
-    },
-    {
       id: 'p-071',
       ausdruck: 'Sylt',
       hochdeutsch: 'Sylt (Nordsee-Insel)',
@@ -592,15 +586,6 @@ export default {
       beispiel: 'Op Sylt geht\'t ümmer en bisschen edler — aber de Strand is dor wirklich schön.',
       beispiel_hd: 'Auf Sylt geht es immer ein bisschen edler — aber der Strand ist da wirklich schön.',
       kategorie: 'orte'
-    },
-    {
-      id: 'p-072',
-      ausdruck: 'Klabautermann',
-      hochdeutsch: 'Klabautermann (Schiffskobold)',
-      bedeutung: 'Der Klabautermann ist ein Schiffskobold der norddeutschen Seemannssagen — ein hilfsbereiter Hausgeist, der das Schiff bewacht und Unglück abwendet. Erscheint er aber sichtbar, bedeutet das den Untergang. Die Sage stammt aus dem Mittelalter und ist in Hamburg, Bremen und an der gesamten norddeutschen Küste lebendig. „Klabautermann" wird oft auch scherzhaft für rumpelnde, polternde Menschen verwendet.',
-      beispiel: 'De Klabautermann hett dat Scheep beschütt — segget de Seelü.',
-      beispiel_hd: 'Der Klabautermann hat das Schiff beschützt — sagen die Seeleute.',
-      kategorie: 'menschen'
     },
     {
       id: 'p-073',
@@ -769,7 +754,7 @@ export default {
       ausdruck: 'Buttermilch',
       hochdeutsch: 'Buttermilch (norddeutsches Getränk)',
       bedeutung: 'Buttermilch ist ein traditionelles norddeutsches Getränk — leicht säuerlich, fettarm, erfrischend. Sie entsteht beim Buttern als Nebenprodukt. Auf dem Land gehört Buttermilch zum Frühstück oder zur Vesper. „Saure Buttermilch" wird oft mit Zucker und Schwarzbrot kombiniert. Lange ein Arme-Leute-Getränk, heute Reformkost.',
-      beispiel: 'En Glaas Buddermelk to\'n Eten — dat is gesund.',
+      beispiel: 'En Glaas Buttermilch (Buddermelk) to\'n Eten — dat is gesund.',
       beispiel_hd: 'Ein Glas Buttermilch zum Essen — das ist gesund.',
       kategorie: 'essen'
     },
@@ -891,15 +876,6 @@ export default {
       kategorie: 'alltag'
     },
     {
-      id: 'p-105',
-      ausdruck: 'Klönen',
-      hochdeutsch: 'Klönen (gemütlich plaudern)',
-      bedeutung: '„Klönen" ist im Plattdeutschen die gemütliche, unverbindliche Unterhaltung — der norddeutsche Smalltalk mit Tiefgang. Findet statt am Gartenzaun, am Stammtisch, im „Klönsnack" beim Friseur. Der „Klönschnack" ist die zugehörige Tätigkeit. Auch „de Klönsabend" — der gemütliche Abend mit Freunden. Norddeutsche Variante der Gemütlichkeit ohne Kitsch. Lebendige Tradition trotz Smartphone-Zeitalter.',
-      beispiel: 'Wi staht an\'n Tuun un kloont wat över dat Wedder.',
-      beispiel_hd: 'Wir stehen am Zaun und plaudern über das Wetter.',
-      kategorie: 'alltag'
-    },
-    {
       id: 'p-106',
       ausdruck: 'Bützen',
       hochdeutsch: 'Bützchen / Küsschen',
@@ -967,8 +943,8 @@ export default {
       ausdruck: 'Niederdeutsch',
       hochdeutsch: 'Niederdeutsches Theater',
       bedeutung: 'Das „Niederdeutsche Theater" oder „Plattdüütsch Theater" — vor allem das Ohnsorg-Theater in Hamburg (gegründet 1902) — bewahrt die plattdeutsche Sprache auf der Bühne. Heinz Rühmann, Heidi Kabel, Henry Vahl spielten hier Klassiker wie „Tratsch im Treppenhaus" und „Das Hörrohr". In den 70ern brachte das ZDF die Aufführungen ins Wohnzimmer — Millionen verstanden Plattdeutsch zum ersten Mal. Norddeutsche Sprachpflege par excellence.',
-      beispiel: 'Dat Ohnsorg-Theater speelt noch ümmer op Platt.',
-      beispiel_hd: 'Das Ohnsorg-Theater spielt noch immer auf Platt.',
+      beispiel: 'Dat Ohnsorg-Theater speelt op Niederdeutsch — noch ümmer.',
+      beispiel_hd: 'Das Ohnsorg-Theater spielt auf Niederdeutsch — noch immer.',
       kategorie: 'musik'
     },
     {
@@ -1030,7 +1006,7 @@ export default {
       ausdruck: 'Smartphone',
       hochdeutsch: 'Smartphone (auf Platt: dat Daddelding)',
       bedeutung: 'Das „Smartphone" hat auch im Plattdeutschen einen eigenen Begriff — scherzhaft „dat Daddelding" (das Daddel-Ding) oder „de Tüddelkasten". Junge Plattsprecher übernehmen oft direkt die englischen Wörter. Ältere Generation prägt eigene Begriffe: „Mien Daddelding piept ümmer" — „Mein Smartphone piept immer". Plattdeutsch zeigt sich vital im Umgang mit der modernen Technik durch humorvolle Anpassung.',
-      beispiel: 'Mien Daddelding hett wedder kien Saft mehr.',
+      beispiel: 'Mien Smartphone („Daddelding\") hett wedder kien Saft mehr.',
       beispiel_hd: 'Mein Smartphone hat wieder keinen Saft mehr.',
       kategorie: 'alltag'
     },
@@ -1075,7 +1051,7 @@ export default {
       ausdruck: 'Hering',
       hochdeutsch: 'Hering (norddeutscher Brotfisch)',
       bedeutung: 'Der „Hering" — auf Platt „Heering" — ist seit dem Mittelalter der wichtigste Speisefisch des Nordens. Die Hanse wurde reich durch Heringshandel mit Skandinavien. Wird in zahlreichen Varianten zubereitet: Matjes, Bismarckhering, Rollmops, Brathering, Sahnehering. Der „Heringsmarkt" war früher die wichtigste Handels-Tradition. Auch übertragen: „Pack di wie en Hering" — eng zusammengepfercht. Norddeutsches Welterbe der Fischkultur.',
-      beispiel: 'En frisch Matjes-Heering mit Tüffel — dat smeckt!',
+      beispiel: 'En frisch Matjes-Hering (Heering) mit Tüffel — dat smeckt!',
       beispiel_hd: 'Ein frischer Matjeshering mit Kartoffeln — das schmeckt!',
       kategorie: 'essen'
     },
@@ -1357,15 +1333,6 @@ export default {
       beispiel: 'De Klabautermann mütt vandaag wat anstellen — nix klappt!',
       beispiel_hd: 'Der Klabautermann muss heute etwas anstellen — nichts klappt!',
       kategorie: 'gefuehle'
-    },
-    {
-      id: 'p-157',
-      ausdruck: 'Pannfisch',
-      hochdeutsch: 'Pfannfisch (Resteessen)',
-      bedeutung: '„Pannfisch" ist ein hamburgisches Gericht — Bratfisch-Reste vom Vortag werden mit Bratkartoffeln, Speck und Senfsoße aufgewärmt. Klassisches „Resteessen" aus der Zeit, als nichts weggeworfen wurde. Heute ein gefeiertes Gericht in Hamburger Traditionsgaststätten wie der Oberhafenkantine. „Pannfisch mit Senfsoße un Bratkartüffeln" ist der Klassiker. Symbol für hamburgische Sparsamkeit und Kreativität in der Küche.',
-      beispiel: 'Mütter mokt vandaag Pannfisch ut de Resten.',
-      beispiel_hd: 'Mutter macht heute Pannfisch aus den Resten.',
-      kategorie: 'essen'
     },
     {
       id: 'p-158',
@@ -1674,15 +1641,6 @@ export default {
       kategorie: 'koerper'
     },
     {
-      id: 'p-192',
-      ausdruck: 'Klaben',
-      hochdeutsch: 'Klaben / Bremer Weihnachtsbrot',
-      bedeutung: 'Der „Klaben" ist ein traditionelles Bremer Weihnachtsbrot — schwer, mit Rosinen, Mandeln, Orangeat und Zitronat. Im Gegensatz zum Stollen wird der Klaben nicht mit Puderzucker bestäubt, sondern in dicken Scheiben mit Butter gegessen. Die Familie Hagedorn in Bremen ist bekannt für ihren Klaben. Symbol der hanseatischen Backkultur, die ihre Tradition seit dem Mittelalter pflegt.',
-      beispiel: 'To Wiehnachten gifft\'t bi uns immer\'n Bremen Klaben.',
-      beispiel_hd: 'Zu Weihnachten gibt es bei uns immer einen Bremer Klaben.',
-      kategorie: 'essen'
-    },
-    {
       id: 'p-193',
       ausdruck: 'Ditscher',
       hochdeutsch: 'Berliner (Pfannkuchen)',
@@ -1809,15 +1767,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 'p-207',
-      ausdruck: 'Buschen',
-      hochdeutsch: 'Frauen mit Bauschen / Strauß',
-      bedeutung: 'Die „Buschen" sind in Norddeutschland Sträuße, Bündel von Blumen oder Pflanzen. Auch übertragen: „een Buschen Möten" ist ein Strauß Schwierigkeiten. In der traditionellen norddeutschen Kultur: „Maibuschen" werden in einigen Regionen am 1. Mai aufgestellt. Vom mittelniederdeutschen „busch" (Strauch, Bündel) abgeleitet. Klangvolles plattdeutsches Wort mit verschiedenen Bedeutungsebenen.',
-      beispiel: 'Ick heff di\'n schönen Buschen Blomen mitbrocht.',
-      beispiel_hd: 'Ich habe dir einen schönen Strauß Blumen mitgebracht.',
-      kategorie: 'natur'
-    },
-    {
       id: 'p-208',
       ausdruck: 'Snutenpinsel',
       hochdeutsch: 'Schnurrbart / Schnauzpinsel',
@@ -1843,6 +1792,501 @@ export default {
       beispiel: 'Verzeih, ick bin to laat! — Maakt nix, kumm rin!',
       beispiel_hd: 'Verzeih, ich bin zu spät! — Macht nichts, komm rein!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'p-211',
+      ausdruck: 'Bregenkasten',
+      hochdeutsch: 'Hirnkasten / Kopf',
+      bedeutung: 'Der „Bregenkasten" ist im Plattdeutschen humorvoll-derb der Kopf — wörtlich „Hirn-Kasten". „Hest du nix in dien Bregenkasten?" Eine plastische, bildhafte norddeutsche Wortprägung mit Anklang an die direkte hanseatische Sprachart. Verwandt mit „Bregen" (Hirn). Mild bis ernsthaft je nach Tonfall. Norddeutsche Direktheit in Wortbildung.',
+      beispiel: 'Denk doch mol mit dien Bregenkasten!',
+      beispiel_hd: 'Denk doch mal mit deinem Kopf!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-215',
+      ausdruck: 'Snickschnack',
+      hochdeutsch: 'Geschwätz / Unwichtiges Geschwafel',
+      bedeutung: '„Snickschnack" ist im Plattdeutschen unnützes Geschwätz, Geschwafel ohne Substanz. „Lat dien Snickschnack un kumm to\'t Wesen!" Verbreitet im niederdeutschen Sprachraum. Mit norddeutscher Direktheit gebraucht — Norddeutsche schätzen die klare, knappe Rede über das Schwafeln. Eine lautmalerische, plastische Wortprägung.',
+      beispiel: 'Hör up mit dien Snickschnack!',
+      beispiel_hd: 'Hör auf mit deinem Geschwätz!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-216',
+      ausdruck: 'Holsteiner',
+      hochdeutsch: 'Holsteiner / Mensch aus Holstein',
+      bedeutung: 'Ein „Holsteiner" ist ein Mensch aus Holstein (Schleswig-Holstein) — Charakter geprägt von der weiten Marschlandschaft, der Nordsee, dem ländlichen Leben. Auch das berühmte Holsteiner Pferd (Holsteiner-Pferdrasse) ist eine norddeutsche Marke. „Holsteiner Sturheit" ist sprichwörtlich. Eine regionale Identitätsbezeichnung mit kulturellen Konnotationen.',
+      beispiel: 'D\'Holsteiner sin dor for ehr Stur-Köppigkeit bekannt.',
+      beispiel_hd: 'Die Holsteiner sind für ihre Sturköpfigkeit bekannt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-217',
+      ausdruck: 'Hösen',
+      hochdeutsch: 'Hosen',
+      bedeutung: '„Hösen" ist die plattdeutsche Pluralform von „Hose" — Hosen. „Treck dien Hösen an!" Verwandt mit dem niederländischen „hozen". Eine alltägliche, plattdeutsche Form mit Wegfall des End-„e". In der traditionellen norddeutschen Tracht spielen Hosen eine wichtige Rolle — vor allem die wadenlangen Marschen-Hosen oder die typischen Friesennerz-Trachten.',
+      beispiel: 'Wo sünd mien neie Hösen?',
+      beispiel_hd: 'Wo sind meine neuen Hosen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-218',
+      ausdruck: 'Bookholt',
+      hochdeutsch: 'Buchenholz',
+      bedeutung: 'Das „Bookholt" ist im Plattdeutschen das Buchenholz — wichtiger Werkstoff in der norddeutschen Möbelherstellung. „Möbel ut Bookholt holt ewig!" Die alten norddeutschen Bauernschränke und -tische sind oft aus massivem Bookholt. Auch zum Räuchern (Bookholt-Räuche) wird es verwendet — bei Aalen, Schinken, Forellen. Wichtiger Werkstoff der hanseatischen Handwerkstradition.',
+      beispiel: 'De ole Schapp is ut Bookholt makt.',
+      beispiel_hd: 'Der alte Schrank ist aus Buchenholz gemacht.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-219',
+      ausdruck: 'Jüst',
+      hochdeutsch: 'Genau / Eben',
+      bedeutung: '„Jüst" bedeutet im Plattdeutschen „genau", „eben", „gerade" — eine häufig gebrauchte Bestätigungspartikel. „Jüst so heff ick dat ok dacht!" Verwandt mit dem niederländischen „juist". Eine kurze, präzise norddeutsche Wortprägung. In Gesprächen wichtige Zustimmungsformel — die norddeutsche Direktheit auch in der Sprachpraxis.',
+      beispiel: 'Jüst dat heff ick ok in den Sinn!',
+      beispiel_hd: 'Genau das habe ich auch im Sinn!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-220',
+      ausdruck: 'Pissoff',
+      hochdeutsch: 'Verdrücken / Verschwinden',
+      bedeutung: '„Pissoff" oder „pissoffe" bedeutet im Plattdeutschen sich verziehen, verschwinden — derbe norddeutsche Wendung. „Pissoff, ick will allen sien!" Vom Englischen „piss off" beeinflusst — die Hansestädte hatten immer enge Kontakte zu England. Eher derb, aber nicht aggressiv. Norddeutsche Direktheit ohne Schnörkel.',
+      beispiel: 'Pissoff endlich, ick mut alleen sien!',
+      beispiel_hd: 'Verschwinde endlich, ich muss allein sein!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-221',
+      ausdruck: 'Bookweten',
+      hochdeutsch: 'Buchweizen',
+      bedeutung: 'Der „Bookweten" ist im Plattdeutschen der Buchweizen — wichtiges Getreide der norddeutschen Lüneburger Heide und Mecklenburg. „Bookweten-Pannkoken" sind eine Spezialität! Aus den dreieckigen Körnern werden Pfannkuchen, Brot, Brei gemacht. Heute wieder als Bio-Lebensmittel beliebt. Traditionelle norddeutsche Hülsenfrucht.',
+      beispiel: 'Tum Frühstück gifft\'t Bookweten-Pannkoken.',
+      beispiel_hd: 'Zum Frühstück gibt es Buchweizen-Pfannkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-222',
+      ausdruck: 'Klabber',
+      hochdeutsch: 'Klatscher / Klappermaul',
+      bedeutung: 'Ein „Klabber" ist im Plattdeutschen ein Schwätzer, Plappermaul — einer, der unaufhörlich redet. „Hör up, du Klabber!" Lautmalerisch — wie das Klappern eines Maul-Schlages. Eine plastische, norddeutsche Charakterisierung. Mild bis ernsthaft je nach Tonfall. Norddeutsche Schätzung der knappen Rede macht den Klabber zur kritisierten Figur.',
+      beispiel: 'De Klabber redt sien ganzen Snack!',
+      beispiel_hd: 'Der Schwätzer redet seinen ganzen Quatsch!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-223',
+      ausdruck: 'Bröggen',
+      hochdeutsch: 'Brötchen',
+      bedeutung: 'Die „Bröggen" sind im Plattdeutschen die Brötchen — verkleinerte Form von „Brot". „Drei Bröggen, bitt\'!" In der norddeutschen Bäckerei vielfältig: Krustenbroggen, Roggenbroggen, Knipps. Verwandt mit dem hochdeutschen „Brötchen". Die plattdeutsche Sprachpraxis mit der „-gg"-Form ist charakteristisch.',
+      beispiel: 'Hol\'n paar Bröggen vom Bäcker.',
+      beispiel_hd: 'Hol ein paar Brötchen vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-225',
+      ausdruck: 'Aaltüfeln',
+      hochdeutsch: 'Aalpfanne / Aalgericht',
+      bedeutung: 'Die „Aaltüfeln" sind im Plattdeutschen Aalgerichte — meist gebraten oder geräuchert. „Aaltüfeln un Bookweten-Brot — dat is Heimat!" Aal ist eine norddeutsche Spezialität, besonders aus der Elbe oder dem Wattenmeer. Heute weniger gegessen wegen Aalbestand-Schutz. Traditionelle Hamburger und Mecklenburger Küche.',
+      beispiel: 'Bi Großmoder gifft\'t Aaltüfeln tum Sünndag.',
+      beispiel_hd: 'Bei Großmutter gibt es Aalgerichte zum Sonntag.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-226',
+      ausdruck: 'Knurrhahn',
+      hochdeutsch: 'Knurrhahn (Fisch)',
+      bedeutung: 'Der „Knurrhahn" ist ein norddeutscher Meeresfisch — bekannt für seine knurrenden Geräusche, die er mit den Schwimmblasen erzeugt. In der norddeutschen Küche zunehmend wieder beliebt, weil andere Fische überfischt sind. „Knurrhahn-Filet mit Bookweten-Pannkoken!" Eine bewusste Wiederentdeckung des heimischen Fisches.',
+      beispiel: 'Op em Fischmarkt giff\'t hüt frischen Knurrhahn.',
+      beispiel_hd: 'Auf dem Fischmarkt gibt es heute frischen Knurrhahn.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-227',
+      ausdruck: 'Snurrbart',
+      hochdeutsch: 'Schnurrbart',
+      bedeutung: 'Der „Snurrbart" ist im Plattdeutschen der Schnurrbart — eine alte norddeutsche Männlichkeits-Tradition. Hanseatische Reeder, Schiffer und Kaufleute trugen oft stolze Snurrbärte. „Mit em Snurrbart süht he ut as\'n richtigen Seebär!" Auch in der modernen Hipster-Bart-Renaissance wieder gefragt. Eine traditionelle norddeutsche Bezeichnung.',
+      beispiel: 'De Schipper hett\'n grooten Snurrbart.',
+      beispiel_hd: 'Der Schiffer hat einen großen Schnurrbart.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-228',
+      ausdruck: 'Wischiwaschi',
+      hochdeutsch: 'Wischiwaschi / Unklarheit',
+      bedeutung: '„Wischiwaschi" ist im Plattdeutschen wie im Hochdeutschen unklares, vages Gerede ohne Substanz. „Lat dat Wischiwaschi un kumm to\'t Wesen!" Lautmalerisch — wie etwas, das nicht greifbar ist. Norddeutsche Schätzung von Klarheit und Direktheit zeigt sich in der Kritik am Wischiwaschi. Verbreitete plattdeutsche Wendung.',
+      beispiel: 'Sien Erklärung was nur Wischiwaschi!',
+      beispiel_hd: 'Seine Erklärung war nur Wischiwaschi!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-229',
+      ausdruck: 'Schippermütz',
+      hochdeutsch: 'Schiffermütze',
+      bedeutung: 'Die „Schippermütz" ist die typische norddeutsche Schiffermütze — Holsteiner-Mütze, Friesennerz-Hut, Kapitäns-Mütze. „En richtigen Norddeutschen hett\'n Schippermütz!" Symbol für maritime Tradition und norddeutsche Identität. In Touristen-Geschäften am Hafen reichlich erhältlich. Auch im modernen Streetwear wieder modern.',
+      beispiel: 'Bi den Wind bruke ick mien Schippermütz.',
+      beispiel_hd: 'Bei dem Wind brauche ich meine Schiffermütze.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-230',
+      ausdruck: 'Klümpken',
+      hochdeutsch: 'Bonbon / Klümpchen',
+      bedeutung: 'Ein „Klümpken" ist im Plattdeutschen ein Bonbon oder kleines Klümpchen Süßes. „Ick gif di\'n Klümpken!" sagt die Oma zu den Enkeln. Die typische plattdeutsche Verkleinerung mit „-ken" gibt warmen Klang. Verwandt mit dem ostfriesischen „Klümpke". Eine charmante norddeutsche Süßigkeiten-Bezeichnung mit liebevollem Beiklang.',
+      beispiel: 'Vor em Schlapen gift\'t noch\'n Klümpken!',
+      beispiel_hd: 'Vor dem Schlafen gibt es noch ein Bonbon!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-231',
+      ausdruck: 'Krukenrad',
+      hochdeutsch: 'Krückenrad / Spinnrad',
+      bedeutung: 'Das „Krukenrad" ist im Plattdeutschen das Spinnrad — wichtiges Werkzeug der norddeutschen Frauenarbeit für Jahrhunderte. „Vor 100 Johr satz jede Hausfru op em Krukenrad!" Heute meist nur noch in Museen oder bei Brauchtumsveranstaltungen. Symbol der vorindustriellen Wollverarbeitung in der Marschlandschaft.',
+      beispiel: 'In em Museum is en olles Krukenrad utstellt.',
+      beispiel_hd: 'In dem Museum ist ein altes Spinnrad ausgestellt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-232',
+      ausdruck: 'Smacken',
+      hochdeutsch: 'Schmecken / Genießen',
+      bedeutung: '„Smacken" ist im Plattdeutschen das Verb „schmecken", aber auch „genießen". „Dat smackt mi gor good!" Norddeutsche Sinnlichkeit im Essen — auch wenn die norddeutsche Küche oft als schlicht gilt, gibt es Wertschätzung für gute Speisen. „Smacken-Brot" ist Brot, das besonders gut schmeckt. Lautmalerisch — passt zum genießerischen Schmatzen.',
+      beispiel: 'Dat Birn- un-Bohnen-Suppe smackt mi gor good!',
+      beispiel_hd: 'Die Birnen-und-Bohnen-Suppe schmeckt mir sehr gut!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-233',
+      ausdruck: 'Lütt Klüten',
+      hochdeutsch: 'Kleine Klöße',
+      bedeutung: '„Lütt Klüten" sind im Plattdeutschen kleine Klöße — meist Mehl- oder Kartoffel-Klümpchen, in Suppe oder Eintopf serviert. „Tum Suppe gift\'t lütt Klüten!" Eine traditionelle norddeutsche Beilage. Die Verkleinerung „lütt" (klein) macht die Klöße appetitlicher. Wichtiger Bestandteil der bodenständigen norddeutschen Küche.',
+      beispiel: 'In de Hochzeitssuppe sünd lütt Klüten.',
+      beispiel_hd: 'In der Hochzeitssuppe sind kleine Klöße.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-234',
+      ausdruck: 'Möhlenseil',
+      hochdeutsch: 'Mühlseil',
+      bedeutung: 'Das „Möhlenseil" ist im Plattdeutschen das Seil einer Mühle — zum Drehen der Mühlenflügel oder zum Hochziehen der Säcke. In den norddeutschen Mühlen-Landschaften (Schleswig-Holstein, Niedersachsen) wichtige Komponente. Heute meist nur noch in Mühlenmuseen funktionsfähig. Symbol der vorindustriellen Energieerzeugung.',
+      beispiel: 'In de Mühl moot dat Möhlenseil ümmer geschmeert ween.',
+      beispiel_hd: 'In der Mühle muss das Mühlseil immer geschmiert werden.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-235',
+      ausdruck: 'Krielwurst',
+      hochdeutsch: 'Krielwurst (Bremer Spezialität)',
+      bedeutung: 'Die „Krielwurst" ist eine Bremer Spezialität — eine Bregenwurst, die aus Schweinehirn, Kraut, Hafergrütze und Gewürzen hergestellt wird. „To Wiehnachten gift\'t Krielwurst mit Sauerkraut!" Heute selten, weil Hirn-Verarbeitung problematisch wurde. Klassische norddeutsche Wurst-Tradition aus der Vorindustriezeit.',
+      beispiel: 'D\'Krielwurst is\'n echtes Bremer Weihnachtsessen.',
+      beispiel_hd: 'Die Krielwurst ist ein echtes Bremer Weihnachtsessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-236',
+      ausdruck: 'Hambörger',
+      hochdeutsch: 'Hamburger (Mensch)',
+      bedeutung: 'Ein „Hambörger" ist im Plattdeutschen ein Mensch aus Hamburg — die plattdeutsche Eigenbezeichnung. „En richtigen Hambörger hett\'t Watter in\'t Blut!" Hamburg hat eine starke eigene Identität als Stadtstaat und Hansestadt. Die plattdeutsche Aussprache mit „ö" statt „u" ist charakteristisch. Auch in der Marke „Hambörger Frisch" für Bio-Lebensmittel.',
+      beispiel: 'Ick bin\'n Hambörger un proud darop!',
+      beispiel_hd: 'Ich bin ein Hamburger und stolz darauf!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-237',
+      ausdruck: 'Sünndagsspaziergang',
+      hochdeutsch: 'Sonntagsspaziergang',
+      bedeutung: 'Der „Sünndagsspaziergang" ist eine norddeutsche Tradition — am Sonntag zieht die Familie geschmückt durch die Stadt, an die Alster, am Strand. „Jeden Sünndag mokt wi\'n Sünndagsspaziergang!" Wichtige soziale Institution zum Sehen und Gesehenwerden. Verbreitet vor allem in den Hansestädten Hamburg, Bremen, Lübeck.',
+      beispiel: 'Tum Sünndagsspaziergang an de Alster!',
+      beispiel_hd: 'Zum Sonntagsspaziergang an die Alster!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-239',
+      ausdruck: 'Reuter',
+      hochdeutsch: 'Reuter (Heuwender)',
+      bedeutung: 'Der „Reuter" ist im Plattdeutschen ein Heuwender — Holzgestell, auf dem Heu zum Trocknen aufgehängt wird. Auch berühmt: Fritz Reuter (1810-1874), der wichtigste plattdeutsche Schriftsteller — „Ut mine Stromtid", „Mein Vatter sien Erste". Die plattdeutsche Literatur lebt durch Reuter. Doppelbedeutung mit kulturellem Tiefgang.',
+      beispiel: 'Fritz Reuter is de groote Vader vun unsen Plattdüütsch.',
+      beispiel_hd: 'Fritz Reuter ist der große Vater unseres Plattdeutschen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-240',
+      ausdruck: 'Knipsen',
+      hochdeutsch: 'Knipsen / Fotografieren',
+      bedeutung: '„Knipsen" ist im Plattdeutschen das Fotografieren — mit dem typischen plattdeutschen Geräuschanklang. „Ick knipse dat Foto vum Sünnenuntergang!" Lautmalerisch wie das Klicken der Kamera. Auch im Hochdeutschen verbreitet, aber im Plattdeutschen besonders heimisch. Eine moderne Wortprägung mit alten lautmalerischen Wurzeln.',
+      beispiel: 'Bi dat Hafen-Bild moot wi unbedingt knipsen!',
+      beispiel_hd: 'Bei diesem Hafen-Bild müssen wir unbedingt knipsen!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-241',
+      ausdruck: 'Moin moin',
+      hochdeutsch: 'Hallo / Guten Tag (verstärkt)',
+      bedeutung: 'Die Verdoppelung „Moin moin" gilt unter echten Norddeutschen schon als Geschwätz — ein einfaches „Moin" reicht völlig, egal ob morgens, mittags oder abends. Touristen und Süddeutsche verdoppeln gerne, weil sie es freundlicher finden, doch der echte Hanseate spart Worte. Das Wort kommt vom plattdeutschen „moi" (= schön, angenehm), nicht vom Morgen. Wer „Moin moin" sagt, outet sich oft als Zugezogener — der Klönschnack-Gegner Hamburger sagt nur „Moin" und nickt.',
+      beispiel: 'Wenn een „Moin moin" seggt, weet man — dat is keen Hanseat.',
+      beispiel_hd: 'Wenn jemand „Moin moin" sagt, weiß man — das ist kein Hanseat.',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'p-242',
+      ausdruck: 'Nordseekrabben',
+      hochdeutsch: 'Nordseegarnelen',
+      bedeutung: 'Die „Nordseekrabben" — eigentlich Garnelen, im Norddeutschen aber immer „Krabben" — sind das rosa-graue Gold der Küste. Gefangen von Krabbenkuttern aus Büsum, Greetsiel und Cuxhaven, anschließend an Bord sofort gekocht. Das mühsame „Pulen" (Schälen) ist Familientradition an Küchentischen von Friesland bis Mecklenburg. Frische Krabben aufs Schwarzbrot mit Butter und Spritzer Zitrone — das ist norddeutsche Schlichtheit auf höchstem Niveau. Heute werden viele Krabben leider nach Marokko zum Pulen geschickt — der echte Ostfriese pult selbst.',
+      beispiel: 'Frische Nordseekrabben mit Bött\'r — beter geiht\'t nich!',
+      beispiel_hd: 'Frische Nordseekrabben mit Butter — besser geht\'s nicht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-243',
+      ausdruck: 'Büx',
+      hochdeutsch: 'Hose',
+      bedeutung: '„Büx" ist das plattdeutsche Wort für Hose — verwandt mit dem englischen „breeches" und dem deutschen „Buchse". Stammt aus dem mittelniederdeutschen „buxe". In jedem Hamburger Hafenarbeiterhaushalt sagte man früher: „Treck di de Büx an, dat is koolt!" Auch Redensart: „He hett de Büx vull" — er hat Angst (wörtlich: Hose voll). Ein typisches plattdeutsches Wort, das noch heute in Norddeutschland regelmäßig fällt, besonders bei Älteren auf dem Lande.',
+      beispiel: 'Treck di de warme Büx an, buten is\'t bitterkoolt!',
+      beispiel_hd: 'Zieh dir die warme Hose an, draußen ist es bitterkalt!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-244',
+      ausdruck: 'Klock',
+      hochdeutsch: 'Uhr / Glocke',
+      bedeutung: '„Klock" bedeutet im Plattdeutschen sowohl Uhr als auch Glocke — beides hängt etymologisch zusammen. „Wat is de Klock?" fragt man statt „Wie spät ist es?". Stammt vom mittelniederländischen „clocke", verwandt mit englischem „clock". Auf jedem norddeutschen Kirchturm hängt eine Klock — und im Wohnzimmer der Großmutter tickt die alte Standklock. Ein Wort, das die jahrhundertealte hansische Verbindung zu England und den Niederlanden bezeugt — alle drei Sprachen teilen dieses Wort.',
+      beispiel: 'Wat is de Klock? — Klock veer al, höchste Tied för Tee!',
+      beispiel_hd: 'Wie spät ist es? — Schon vier Uhr, höchste Zeit für Tee!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-245',
+      ausdruck: 'Dwarsdriewer',
+      hochdeutsch: 'Querdenker / Eigenbrötler',
+      bedeutung: 'Ein „Dwarsdriewer" ist jemand, der quer treibt — wörtlich gegen den Strom schwimmt. Das norddeutsche Wort beschreibt Menschen, die alles anders machen müssen, nicht aus Bosheit, sondern aus stiller Sturheit. „Dwars" heißt quer, „driewen" treiben — das Bild stammt aus der Seefahrt: ein Schiff, das quer zum Wind treibt. Im friesischen Stolz ist der Dwarsdriewer durchaus respektiert — Eigensinn gilt als Tugend. Anders als der süddeutsche Sturkopf hat der norddeutsche Dwarsdriewer immer ein leises Lächeln dabei.',
+      beispiel: 'Min Naber is so\'n richtigen Dwarsdriewer — mookt allns anners.',
+      beispiel_hd: 'Mein Nachbar ist so ein richtiger Querdenker — macht alles anders.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-246',
+      ausdruck: 'Schnack mi nich an',
+      hochdeutsch: 'Erzähl mir nichts',
+      bedeutung: 'Die Redensart „Schnack mi nich an" ist die plattdeutsche Variante von „Komm mir nicht damit" oder „Erzähl keinen Quatsch". Ein klassischer norddeutscher Ausdruck der höflichen, aber bestimmten Ablehnung. Das Verb „schnacken" (= reden, plaudern) ist ein Kernwort der norddeutschen Sprache. Im Klönschnack-Land wird viel gesnackt, aber wenn einer Tüünkraam erzählt, kommt sofort die Antwort: „Schnack mi nich an!" Begleitet von kopfschüttelndem Lächeln und einem Schluck Köm.',
+      beispiel: 'Schnack mi nich an mit dien Snickschnack — dat glöövt keeneen!',
+      beispiel_hd: 'Erzähl mir nichts mit deinem Schnickschnack — das glaubt keiner!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-247',
+      ausdruck: 'Klockenslag',
+      hochdeutsch: 'Schlag der Uhr / Glockenschlag',
+      bedeutung: 'Der „Klockenslag" — wörtlich Glockenschlag — markiert in den norddeutschen Hafenstädten seit Jahrhunderten die Tageszeit. In Hamburg schlägt der Michel, in Lübeck die Marienkirche, in Bremen St. Petri. Pünktlich „op den Klockenslag" zu kommen ist hanseatische Tugend — Verspätung gilt als unhöflich. Auch im übertragenen Sinn: „He keem op den Klockenslag" heißt, jemand kam exakt zur richtigen Zeit. Die Verbindung von Hansezeit, Kirchturmglocken und norddeutscher Pünktlichkeit verdichtet sich in diesem Wort.',
+      beispiel: 'He keem op den Klockenslag — keen Minuut to laat.',
+      beispiel_hd: 'Er kam auf den Schlag — keine Minute zu spät.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-248',
+      ausdruck: 'Buddelschipp',
+      hochdeutsch: 'Buddelschiff (Schiff in der Flasche)',
+      bedeutung: 'Das „Buddelschipp" ist ein Schiff in einer Flasche — die mühsamste maritime Bastelarbeit, die es gibt. Erfunden im 19. Jahrhundert von Seeleuten, die auf langen Fahrten Beschäftigung suchten. Die Masten werden flachgelegt durch den engen Flaschenhals geschoben, dann mit Fäden aufgerichtet. Im Hamburger „Buddelschiff-Museum" und in Friesland gibt es noch heute Meister dieser Kunst. Ein Buddelschipp im Wohnzimmer war im Norden Statussymbol — der Hausherr war entweder Seemann oder hatte Geduld.',
+      beispiel: 'Min Grootvader hett tein Johr an dat Buddelschipp basselt.',
+      beispiel_hd: 'Mein Großvater hat zehn Jahre an dem Buddelschiff gebastelt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-249',
+      ausdruck: 'Knüppel ut\'n Sack',
+      hochdeutsch: 'Knüppel aus dem Sack',
+      bedeutung: 'Die Redensart „Knüppel ut\'n Sack" stammt aus dem norddeutschen Märchen „Tischlein deck dich". Wenn alle Stricke reißen, kommt der Knüppel aus dem Sack — also das harte Durchgreifen. Wird in Norddeutschland verwendet, wenn Geduld am Ende ist: „Nu kümmt de Knüppel ut\'n Sack!" Die Wendung ist dabei nie wörtlich gemeint, sondern bezeichnet entschlossenes Handeln nach langem Zögern. Plattdeutsche Märchen, gesammelt von den Brüdern Grimm, leben in solchen Redensarten weiter.',
+      beispiel: 'Wenn de nich höört, kümmt glieks de Knüppel ut\'n Sack!',
+      beispiel_hd: 'Wenn der nicht hört, kommt gleich der Knüppel aus dem Sack!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-250',
+      ausdruck: 'Smacht',
+      hochdeutsch: 'Hunger / Verlangen',
+      bedeutung: '„Smacht" bedeutet großen Hunger oder Verlangen — verwandt mit dem hochdeutschen „Schmacht". Im Norddeutschen sagt man „Ick heff Smacht" für „Ich habe Heißhunger". Auch übertragen: „Smacht na Heimat" — Sehnsucht nach Zuhause. Das Wort hat eine emotionale Tiefe, die das hochdeutsche „Hunger" nicht trifft — es schwingt Begierde, Verlangen, fast Verzweiflung mit. Stammt vom mittelniederdeutschen „smachten" — schmachten. In der norddeutschen Literatur, besonders bei Klaus Groth, taucht das Wort häufig auf.',
+      beispiel: 'Ick heff so\'n Smacht na Fischbrötchen, ick kunn allns geven!',
+      beispiel_hd: 'Ich habe so Heißhunger auf Fischbrötchen, ich könnte alles geben!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-251',
+      ausdruck: 'Dröög',
+      hochdeutsch: 'Trocken',
+      bedeutung: '„Dröög" heißt trocken — und beschreibt im Norddeutschen nicht nur das Wetter, sondern auch den berühmten norddeutschen Humor: „dröge" Witze, mit unbewegter Miene vorgetragen, wirken oft erst nach einer Sekunde. Otto Waalkes und Heinz Erhardt sind Meister des „drögen" Humors. Auch beim Wetter wichtig: Nach „Schietwedder" sehnt sich der Norddeutsche nach „dröög Wedder". Im Wattenmeer ist „dröög fallen" — das Trockenfallen bei Ebbe — ein zentraler Begriff. Ein Wort mit vielen Bedeutungsschattierungen.',
+      beispiel: 'Sien Humor is so dröög as de Lüneborger Heide in Juli.',
+      beispiel_hd: 'Sein Humor ist so trocken wie die Lüneburger Heide im Juli.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-252',
+      ausdruck: 'Hallig',
+      hochdeutsch: 'Hallig (kleine nordfriesische Insel)',
+      bedeutung: 'Eine „Hallig" ist eine kleine, undeichte Insel im nordfriesischen Wattenmeer — zehn an der Zahl: Hooge, Langeneß, Oland, Gröde, Habel, Hamburger Hallig, Norderoog, Süderoog, Süderoogsand, Nordstrandischmoor. Bei „Land unter" werden sie regelmäßig vom Meer überspült, nur die Warften mit den Häusern bleiben trocken. Auf den Halligen wohnen nur wenige hundert Menschen — eine eigene Welt aus Wind, Wasser und ewiger Weite. UNESCO-Weltkulturerbe und einmaliges Naturphänomen Norddeutschlands.',
+      beispiel: 'Op de Hallig Hooge süht man bi Floot blots de Warften.',
+      beispiel_hd: 'Auf der Hallig Hooge sieht man bei Flut nur die Warften.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-253',
+      ausdruck: 'Tüünkraam',
+      hochdeutsch: 'Unsinn / Quatsch',
+      bedeutung: '„Tüünkraam" ist das norddeutsche Wort für Unsinn, Geschwätz oder dummes Zeug. „Tüün" heißt Zaun, „Kraam" das Zeug — wörtlich also „Zaungeschwätz", das geistlose Gerede über den Gartenzaun hinweg. Verwandt mit „Tünkram" und „Tüünig". In Hamburg sagt man oft: „Wat is dat för\'n Tüünkraam!" wenn jemand offensichtlich Quatsch erzählt. Das Wort hat eine wunderbar abschätzige Note ohne grob zu sein — typisch norddeutsche Verbindung von Direktheit und höflicher Zurückhaltung.',
+      beispiel: 'Schnack keen Tüünkraam, dat kann doch gor nich angahn!',
+      beispiel_hd: 'Erzähl keinen Quatsch, das kann doch gar nicht sein!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-254',
+      ausdruck: 'Köter',
+      hochdeutsch: 'Hund (abwertend) / Kleinbauer',
+      bedeutung: '„Köter" hat im Plattdeutschen zwei Bedeutungen: Erstens abwertend für einen Hund — „so\'n lütten Köter". Zweitens historisch ein Kleinbauer ohne eigenes Land — der „Köter" wohnte in einer „Köthe" (Hütte) und arbeitete als Tagelöhner. In Schleswig-Holstein und Niedersachsen kennt man noch heute Hofnamen wie „Kötershof". Das Wort zeigt die historische soziale Schichtung des norddeutschen Bauernlandes. Heute überwiegt die Bedeutung „kleiner Hund" — meist liebevoll-abschätzig gemeint.',
+      beispiel: 'De lütte Köter blafft de ganze Tied — keen Ruh in\'t Huus!',
+      beispiel_hd: 'Der kleine Köter bellt die ganze Zeit — keine Ruhe im Haus!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-255',
+      ausdruck: 'Tofnacker',
+      hochdeutsch: 'Trottel / Dummkopf',
+      bedeutung: 'Ein „Tofnacker" ist im Plattdeutschen ein langsamer, etwas dümmlicher Mensch — wörtlich jemand, der „tof nackt", also dumm vor sich hin tippelt. Das Wort gehört in die reiche Sammlung norddeutscher Schimpfwörter für trübe Tassen — neben „Düssel", „Döskopp", „Drönkopp". Anders als süddeutsche Schimpfwörter haben die plattdeutschen Begriffe oft etwas Liebevoll-Mitleidiges. Wer einen anderen „Tofnacker" nennt, meint es selten richtig böse — eher kopfschüttelnd-amüsiert.',
+      beispiel: 'So\'n Tofnacker — versteiht ja keen Wort vun dat, wat ick segg!',
+      beispiel_hd: 'So ein Trottel — versteht ja kein Wort von dem, was ich sage!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-256',
+      ausdruck: 'Hoochtied',
+      hochdeutsch: 'Hochzeit',
+      bedeutung: '„Hoochtied" — wörtlich „hohe Zeit" — ist die plattdeutsche Hochzeit. Das Wort beschreibt nicht nur die Trauung, sondern jede besondere Festzeit im Jahreskreis. Die norddeutsche Hoochtied ist traditionell eine zwei- bis dreitägige Angelegenheit: Polterabend am Vorabend, Trauung am ersten Tag, Hoochtiedsfeest am zweiten. In Ostfriesland gehören Krintstuut (Korinthenbrot), Lütt un Lütt (Bier und Köm) und „Petting Schnacks" zum Programm. Heute oft kürzer, aber das Wort lebt — auch in Familienzeitungen wird die Hoochtied stolz angekündigt.',
+      beispiel: 'Up de Hoochtied vun Anke un Klaas warrt rejell föört.',
+      beispiel_hd: 'Auf der Hochzeit von Anke und Klaas wird ordentlich gefeiert.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'p-257',
+      ausdruck: 'Nüms',
+      hochdeutsch: 'Niemand',
+      bedeutung: '„Nüms" ist das plattdeutsche Wort für „niemand" — eine Verkürzung des mittelniederdeutschen „nüman". Verwandt mit dem englischen „none". Ein Wort, das im täglichen Sprachgebrauch ständig fällt: „Dor weer nüms" (da war niemand), „Nüms weet dat" (niemand weiß das). Die Plattdeutsche Liga kämpft seit Jahren um den Erhalt solcher Grundwörter — denn ohne „Nüms" und „Wüms" verliert die Sprache ihre Seele. Schulen in Schleswig-Holstein bieten heute wieder Plattdeutschunterricht, damit nicht „nüms" mehr die Sprache spricht.',
+      beispiel: 'Nüms weet, wo Klaas hen is — verschwunnen as in\'n Nevel.',
+      beispiel_hd: 'Niemand weiß, wo Klaas hin ist — verschwunden wie in den Nebel.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-258',
+      ausdruck: 'Föhntied',
+      hochdeutsch: 'Föhnzeit / Trockenzeit',
+      bedeutung: 'Die „Föhntied" beschreibt im norddeutschen Küstenraum die wenigen warmen, trockenen Tage im Frühsommer, wenn der Wind dreht und Hochdruckwetter bringt. Anders als im Alpenraum kein scharfer Fallwind, sondern eine trockene Schönwetterperiode. Bauern und Fischer warten auf die Föhntied — die Heuernte beginnt, Krabbenkutter laufen aus, das Heideblühen kündigt sich an. Ein liebevoll-spöttisches Wort: „Wi harrn drei Daag Föhntied, denn keem wedder Schietwedder!" — typischer Norddeutscher Galgenhumor.',
+      beispiel: 'In de korte Föhntied moot man\'t Heu rinkriegen.',
+      beispiel_hd: 'In der kurzen Föhnzeit muss man das Heu reinholen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-259',
+      ausdruck: 'Bisschen',
+      hochdeutsch: 'Tante / alte Frau (liebevoll)',
+      bedeutung: '„Bisschen" — auch „Beschen" oder „Beten" — ist in Teilen Norddeutschlands die Anrede für eine ältere Frau, oft die Tante oder eine liebgewonnene Nachbarin. Stammt nicht vom hochdeutschen „bisschen" (= ein wenig), sondern ist eine eigene Wurzel. In Ostfriesland sagt man auch „Bestje" oder „Beemoer" für die Großmutter. Solche Verwandtschaftsbezeichnungen verschwinden leider — heute sagen die Enkel meist „Oma" statt „Beemoer". Die plattdeutsche Familienkultur lebt in solchen Wörtern.',
+      beispiel: 'Bisschen Anke hett wedder Bookweten-Pannkoken backen.',
+      beispiel_hd: 'Tante Anke hat wieder Buchweizen-Pfannkuchen gebacken.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-260',
+      ausdruck: 'Wischmop',
+      hochdeutsch: 'Wischmopp / Putzlappen',
+      bedeutung: 'Der „Wischmop" ist im Plattdeutschen der Wischmopp — auch als Schimpfwort für eine ungepflegte Person verwendet: „He süht ut as\'n Wischmop!" Das Wort verbindet praktische Hausarbeit mit norddeutschem Spott. In der traditionellen friesischen Sauberkeitskultur — Sonnabend wurde noch im 20. Jahrhundert das ganze Haus „op Hoochglanz" gebracht — war der Wischmop heiliges Gerät. Heute überwiegt die übertragene Bedeutung. Verwandt mit dem englischen „mop", was die alte hansisch-englische Sprachverwandtschaft zeigt.',
+      beispiel: 'Krieg den Wischmop, in\'n Flur is allns natt vun de Stuvel!',
+      beispiel_hd: 'Hol den Wischmopp, im Flur ist alles nass von den Stiefeln!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-261',
+      ausdruck: 'Backbord',
+      hochdeutsch: 'Backbord (linke Schiffsseite)',
+      bedeutung: '„Backbord" ist die linke Seite eines Schiffes — beleuchtet rot, im Gegensatz zu „Steuerbord" (rechts, grün). Stammt vom altniederdeutschen „bak" (= Rücken) — der Steuermann stand am Steuerruder mit dem Rücken zur linken Seite. In jeder norddeutschen Hafenstadt gehört das Wort zum Grundvokabular — Kinder lernen es noch vor „links" und „rechts". Die Merkregel „BAckbord = lInks" (jeweils zwei Buchstaben) hilft Landratten. Hamburg, Bremen und Kiel atmen Schifffahrt — Backbord ist hier kein Fachbegriff, sondern Alltagssprache.',
+      beispiel: 'Backbord vörut süht man al de Lüchttorm vun Cuxhaven!',
+      beispiel_hd: 'Backbord voraus sieht man schon den Leuchtturm von Cuxhaven!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-262',
+      ausdruck: 'Steuerbord',
+      hochdeutsch: 'Steuerbord (rechte Schiffsseite)',
+      bedeutung: '„Steuerbord" ist die rechte Seite eines Schiffes — beleuchtet grün. Der Name kommt vom Steuerruder, das früher rechts am Heck befestigt war, da die meisten Steuermänner Rechtshänder waren. Daher musste das Schiff zum Anlegen mit der linken Seite (Backbord) zum Hafen — sonst wäre das Ruder im Weg gewesen. Das Wort gehört zum maritimen Erbe der Hanse und ist in jeder norddeutschen Familie selbstverständlich. Auch der HSV-Stadionname „Volksparkstadion" liegt sozusagen Steuerbord vom Hafen.',
+      beispiel: 'Steuerbord wenden! De Wind dreiht na West!',
+      beispiel_hd: 'Steuerbord wenden! Der Wind dreht nach West!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-263',
+      ausdruck: 'Stövers',
+      hochdeutsch: 'Stiefel',
+      bedeutung: '„Stövers" oder „Stuvels" sind im Plattdeutschen die Stiefel — verwandt mit dem niederländischen „stevels". Im wattenreichen Norden ohne Gummistövers undenkbar — der echte Wattläufer trägt sie noch heute. Auch berühmt: die „Friesennerz-und-Stövers"-Kombination als Inbegriff norddeutscher Schlechtwetterkleidung. In jedem Haus an der Küste stehen die Stövers am Eingang griffbereit. Das Wort hat sich gegen die hochdeutschen „Stiefel" lange behauptet — bei älteren Norddeutschen hört man es täglich.',
+      beispiel: 'Treck di de Stövers an, dat Watt is gliek wedder ünner Water!',
+      beispiel_hd: 'Zieh dir die Stiefel an, das Watt ist gleich wieder unter Wasser!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-264',
+      ausdruck: 'Achteruut',
+      hochdeutsch: 'Rückwärts / hinaus nach hinten',
+      bedeutung: '„Achteruut" heißt rückwärts oder „hinten hinaus" — ein urnorddeutsches Wort aus der Seemannssprache. „Achter" bedeutet hinten, „uut" hinaus. Auf dem Schiff der Befehl: „Achteruut!" — also rückwärts fahren. Im Alltag auch übertragen: „Dat geiht achteruut" — das geht zurück, das wird schlechter. Verwandt mit dem englischen „aft" (hinten) und „out" (hinaus). Die hansische Seeverbindung zu England zeigt sich in vielen solcher Wörter. Bis heute auf jedem Krabbenkutter zwischen Cuxhaven und Greifswald zu hören.',
+      beispiel: 'Mit dat Bedrieff geiht\'t dütt Johr achteruut.',
+      beispiel_hd: 'Mit dem Betrieb geht es dieses Jahr rückwärts.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-265',
+      ausdruck: 'Klabauter',
+      hochdeutsch: 'Klabauter (Schiffskobold)',
+      bedeutung: 'Der „Klabauter" ist der freundliche Schiffskobold der norddeutschen Seemannsmythen — eine Kurzform des „Klabautermanns". Er warnt die Mannschaft vor Sturm und Untergang, klopft an der Bordwand und repariert heimlich Schäden. Wer ihn sieht, dem droht der Tod — sein Erscheinen kündigt Schiffbruch an. Jeder echte Norddeutsche kennt die Geschichten — sie wurden im Ohnsorg-Theater und in Hans-Albers-Liedern verewigt. Auch übertragen für jemanden, der heimlich Unfug treibt: „Du bist mi vielleicht\'n Klabauter!"',
+      beispiel: 'De ole Seemann swor, he harr den Klabauter sehn.',
+      beispiel_hd: 'Der alte Seemann schwor, er hätte den Klabauter gesehen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-266',
+      ausdruck: 'Pökelfleesch',
+      hochdeutsch: 'Pökelfleisch / Salzfleisch',
+      bedeutung: '„Pökelfleesch" ist gepökeltes Fleisch — in der Hanse-Tradition seit Jahrhunderten das Grundnahrungsmittel der Seefahrt. Ohne Kühlung wurde Fleisch in Salzlake eingelegt, um es haltbar zu machen. Daraus entstanden Klassiker wie Labskaus (mit Pökelfleisch, Kartoffeln und Roter Bete), Bremer Knipp und Eintöpfe wie Birnen-Bohnen-Speck. Der charakteristische salzig-mürbe Geschmack ist bis heute Teil der norddeutschen Küche. „Een gut\'n Pott Pökelfleesch" gilt als deftiges Sonntagsessen, besonders im Winter.',
+      beispiel: 'För Labskaus brukst du fein Pökelfleesch ut\'n Pott.',
+      beispiel_hd: 'Für Labskaus brauchst du feines Pökelfleisch aus dem Topf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-267',
+      ausdruck: 'Hafencity',
+      hochdeutsch: 'HafenCity (Hamburger Stadtteil)',
+      bedeutung: 'Die „Hafencity" — auf Hochdeutsch HafenCity — ist Hamburgs jüngster Stadtteil, gebaut auf ehemaligen Hafenflächen. Mit der Elbphilharmonie als Wahrzeichen entstand ab den 2000er Jahren ein neuer urbaner Raum aus moderner Architektur, Wasserlagen und maritimer Geschichte. 157 Hektar groß — Europas größtes innerstädtisches Stadtentwicklungsprojekt. Plattdeutsche Hamburger nennen es manchmal spöttisch „de neie Speicherstadt" — eine Anspielung auf die historischen Speicher daneben. Symbol des modernen, aber traditionsbewussten Hamburg.',
+      beispiel: 'In de Hafencity sünd nu schon de besten Restaurants vun Hamborg.',
+      beispiel_hd: 'In der HafenCity sind nun schon die besten Restaurants von Hamburg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-268',
+      ausdruck: 'Schummerstün',
+      hochdeutsch: 'Dämmerstunde',
+      bedeutung: 'Die „Schummerstün" ist die Dämmerungsstunde — die magische Zeit zwischen Tag und Nacht, wenn das Licht weich wird und die Welt zur Ruhe kommt. In norddeutschen Bauernstuben war die Schummerstün früher die Zeit der Geschichten, des Strickzeugs und des stillen Klönschnacks am Kachelofen. Bevor elektrisches Licht da war, wurde diese Zwischenzeit bewusst gelebt — ohne Lampe, mit dem letzten Tageslicht. Ein Wort von großer Poesie, das in moderner Hektik fast verloren ging. Theodor Storm hat die Schummerstün in seinen Gedichten verewigt.',
+      beispiel: 'In de Schummerstün vertellt Opa wedder vun de ole Tied.',
+      beispiel_hd: 'In der Dämmerstunde erzählt Opa wieder von der alten Zeit.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-269',
+      ausdruck: 'Bregenklütje',
+      hochdeutsch: 'Hirnklöße / Dummkopf',
+      bedeutung: '„Bregenklütje" — wörtlich „Hirnklößchen" — ist ein liebevoll-spöttisches Schimpfwort für einen, der nicht ganz hell ist. „Bregen" heißt Hirn, „Klütje" sind kleine Klöße. Das Bild: jemand hat statt eines Gehirns nur kleine Klößchen im Kopf. Reiht sich ein in die plattdeutsche Schimpfwörter-Tradition, die mit Essensmetaphern arbeitet: „Bregenkasten" (Kopf), „Bregenfett" (Verstand). Nie wirklich böse gemeint — der norddeutsche Spott versteht es, mit einem Lächeln zu kränken. Im Hamburger Fischmarkt-Slang noch heute zu hören.',
+      beispiel: 'Du Bregenklütje, du hest dat Hus-Slötel wedder vergeten!',
+      beispiel_hd: 'Du Hirnklößchen, du hast den Hausschlüssel wieder vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-270',
+      ausdruck: 'Seebad',
+      hochdeutsch: 'Seebad',
+      bedeutung: 'Ein „Seebad" ist ein staatlich anerkannter Kurort an Nord- oder Ostsee. Die norddeutsche Bäderkultur entstand im 19. Jahrhundert — Heiligendamm 1793 als erstes deutsches Seebad. Bekannte Seebäder: Travemünde, Westerland (Sylt), Norderney, Wangerooge, Boltenhagen, Binz auf Rügen. Mit Bäderarchitektur, Strandkörben und Kurpromenaden prägen sie das Bild der norddeutschen Küste. Ein „Seebad" zu besuchen war im Kaiserreich Statussymbol — heute ist es Sommertradition für Millionen Norddeutsche und Touristen. Die Kurtaxe finanziert seitdem den Erhalt der Strände.',
+      beispiel: 'Wi föhrt jeden Sommer in dat Seebad Travemünde.',
+      beispiel_hd: 'Wir fahren jeden Sommer in das Seebad Travemünde.',
+      kategorie: 'orte'
     }
   ]
 };

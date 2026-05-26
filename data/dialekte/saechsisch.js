@@ -9,6 +9,7 @@ export default {
   farbe: '#2a9d8f',
   beschreibung: 'Das Obersächsische ist ein mitteldeutscher Dialekt, gesprochen in Sachsen und angrenzenden Regionen. Auffällig sind die weichen Konsonanten (kein hartes p, t, k), die Vokalfärbung und die unverwechselbare Melodik.',
   sprecher: 'ca. 4 Mio.',
+  lang: 'de-DE',
   ausdruecke: [
     {
       id: 's-001',
@@ -20,17 +21,12 @@ export default {
       kategorie: 'redensart'
     },
     {
-      id: 's-002',
-      ausdruck: 'Bemme',
-      hochdeutsch: 'Butterbrot / Stulle',
-      bedeutung: 'Eine belegte Brotschnitte — das klassische sächsische Pausenbrot. „Schnitterbemme" mit Wurst, „Schmalzbemme" mit Schweineschmalz.',
-      kategorie: 'essen'
-    },
-    {
       id: 's-003',
       ausdruck: 'Gugge da!',
       hochdeutsch: 'Schau mal!',
       bedeutung: 'Sächsisch für „Guck mal!". Wird oft mit ausgeprägter Vokalfärbung gesprochen — „Guggemal!" oder „Guggesdumal!".',
+      beispiel: 'Gugge da! Dor Nachbar hat sich nu och ä neies Audo geguft!',
+      beispiel_hd: 'Schau mal! Der Nachbar hat sich jetzt auch ein neues Auto gekauft!',
       kategorie: 'alltag'
     },
     {
@@ -38,6 +34,8 @@ export default {
       ausdruck: 'Heechgenisse',
       hochdeutsch: 'Hochgenüsse',
       bedeutung: 'Sächsisch für „Hochgenüsse" — ein anschauliches Beispiel für die typische Vokalverschiebung („o" wird „e", lang gedehnt). Wurde durch ein berühmtes DDR-Kabarett zur Legende.',
+      beispiel: 'Eierschegge mit ä Stiggschn Boomguchn — das sind ja nu wirklich Heechgenisse!',
+      beispiel_hd: 'Eierschecke mit einem Stückchen Baumkuchen — das sind ja wirklich Hochgenüsse!',
       kategorie: 'gefuehle'
     },
     {
@@ -54,6 +52,8 @@ export default {
       ausdruck: 'Heechgebirge',
       hochdeutsch: 'Hochgebirge / Berge',
       bedeutung: 'Liebevoll-ironische Bezeichnung für die sächsische Schweiz oder das Erzgebirge — keine wirklichen Hochgebirge, aber für Sachsen schon was.',
+      beispiel: 'Am Wochenende fahrn mor nuff ins Heechgebirge, ä bissel wandern.',
+      beispiel_hd: 'Am Wochenende fahren wir hinauf ins Hochgebirge, ein bisschen wandern.',
       kategorie: 'orte'
     },
     {
@@ -61,6 +61,8 @@ export default {
       ausdruck: 'Schniedelwutz',
       hochdeutsch: 'kleiner Penis (vulgär/scherzhaft)',
       bedeutung: 'Scherzhaft-vulgärer Ausdruck. Gehört zum derben sächsischen Humor — typisch zwischen Kumpels, nie ernst gemeint.',
+      beispiel: 'Och du Schniedelwutz, jetz halt mal die Gusche un hör zu!',
+      beispiel_hd: 'Ach du Quatschkopf, jetzt halt mal den Mund und hör zu!',
       kategorie: 'schimpf'
     },
     {
@@ -68,6 +70,8 @@ export default {
       ausdruck: 'Pärschnig',
       hochdeutsch: 'Pfirsich',
       bedeutung: 'Sächsische Aussprache des Wortes „Pfirsich" — „pf" wird zu „p", „i" wird zu „ä", Endung weich. Klassisches Lautbeispiel.',
+      beispiel: 'Hol mor mal noch ä Pärschnig vom Markd mit, ja nu!',
+      beispiel_hd: 'Hol mir mal noch einen Pfirsich vom Markt mit, ja!',
       kategorie: 'essen'
     },
     {
@@ -75,6 +79,8 @@ export default {
       ausdruck: 'Babscher',
       hochdeutsch: 'Pappe / Kuchen mit weichem Boden',
       bedeutung: 'Sächsisch für etwas Weiches, Pampiges. Auch eine Spezialität: ein Kuchen mit besonders weichem Boden.',
+      beispiel: 'Dor Boom is voller Babscher, da gibt\'s morgen frischen Kuchn!',
+      beispiel_hd: 'Der Baum ist voller weicher Früchte, da gibt es morgen frischen Kuchen!',
       kategorie: 'essen'
     },
     {
@@ -82,6 +88,8 @@ export default {
       ausdruck: 'mei!',
       hochdeutsch: 'oh! / ach!',
       bedeutung: 'Wie im Bairischen ein universaler Gefühlsausdruck — meistens mit längerer Betonung. „Meeei, is\' das schön!".',
+      beispiel: 'Mei, is\' dor Sonnenuntergang über dor Elbe heude schön!',
+      beispiel_hd: 'Oh, ist der Sonnenuntergang über der Elbe heute schön!',
       kategorie: 'gefuehle'
     },
     {
@@ -89,6 +97,8 @@ export default {
       ausdruck: 'Glemmbier',
       hochdeutsch: 'Beine / Glieder',
       bedeutung: 'Scherzhafte sächsische Bezeichnung für die Beine, z. B. „Da kriegste die Glemmbier hoch!" („Da bekommst du Energie!").',
+      beispiel: 'Nu, beweg mal deine Glemmbier, sonst kommn mor nie an!',
+      beispiel_hd: 'Na, beweg mal deine Beine, sonst kommen wir nie an!',
       kategorie: 'menschen'
     },
     {
@@ -96,6 +106,8 @@ export default {
       ausdruck: 'Färnseher',
       hochdeutsch: 'Fernseher',
       bedeutung: 'Klassische sächsische Aussprache von „Fernseher" mit gedehntem „ä". Ein beliebter Schnellsprech-Test.',
+      beispiel: 'Schalt mal dor Färnseher an, gleich kommt die Sportschau!',
+      beispiel_hd: 'Schalt mal den Fernseher an, gleich kommt die Sportschau!',
       kategorie: 'orte'
     },
     {
@@ -103,6 +115,8 @@ export default {
       ausdruck: 'Affenhitze',
       hochdeutsch: 'sehr heiß',
       bedeutung: 'Allgemeindeutsch, aber im Sächsischen besonders gern verwendet. „Ne Affnhitze is heude!".',
+      beispiel: 'Heude is\' wieder ä Affenhitze, da bleibt mor besser drinne sitzen.',
+      beispiel_hd: 'Heute ist wieder eine Affenhitze, da bleibt man besser drinnen sitzen.',
       kategorie: 'natur'
     },
     {
@@ -110,6 +124,8 @@ export default {
       ausdruck: 'Quark',
       hochdeutsch: 'Unsinn / Quark',
       bedeutung: 'Doppeldeutig: das Milchprodukt und Sächsisch für „Unsinn". „Mach kein Quark!" = „Mach keinen Unsinn!".',
+      beispiel: 'Mach doch kein\' Quark, du gennst dor doch besser!',
+      beispiel_hd: 'Mach doch keinen Unsinn, du kennst dich doch besser!',
       kategorie: 'gefuehle'
     },
     {
@@ -117,6 +133,8 @@ export default {
       ausdruck: 'Heedschebed',
       hochdeutsch: 'Hügelbett / Federbett',
       bedeutung: 'Sächsisch für ein dickes Federbett mit ausgeprägtem Volumen — gemütlich, weich, perfekt für den Winter.',
+      beispiel: 'Im Winter is\' nischt scheener als ä bissel im Heedschebed liegen.',
+      beispiel_hd: 'Im Winter ist nichts schöner als ein bisschen im Federbett zu liegen.',
       kategorie: 'orte'
     },
     {
@@ -124,6 +142,8 @@ export default {
       ausdruck: 'Plauze',
       hochdeutsch: 'Bauch',
       bedeutung: 'Bauch, besonders ein dicker. „Mach\' nich die Plauze voll!" = „Iss nicht so viel!". Stammt aus dem ostmitteldeutschen Sprachraum.',
+      beispiel: 'Mach dor doch nich so die Plauze voll mit Bemmen und Eierschecke!',
+      beispiel_hd: 'Mach dir doch nicht so den Bauch voll mit Brotscheiben und Eierschecke!',
       kategorie: 'menschen'
     },
     {
@@ -139,7 +159,7 @@ export default {
       id: 's-018',
       ausdruck: 'Gomm mol her!',
       hochdeutsch: 'Komm mal her!',
-      bedeutung: 'Klassische sächsische Aufforderung mit der typischen Konsonantenerweichung: das harte „K" wird zum weichen „G". Diese Lautverschiebung ist das markanteste Merkmal des Dialekts und zieht sich durch das gesamte Sächsische. Die Partikel „mol" (mal) macht die Aufforderung weicher und freundlicher.',
+      bedeutung: '„Gomm mol her!" ist die klassische sächsische Aufforderung mit der typischen Konsonantenerweichung: das harte „K" wird zum weichen „G". Diese Lautverschiebung ist das markanteste Merkmal des Dialekts und zieht sich durch das gesamte Sächsische. Die Partikel „mol" (mal) macht die Aufforderung weicher und freundlicher.',
       beispiel: 'Gomm mol her, ich zeig dir was!',
       beispiel_hd: 'Komm mal her, ich zeige dir etwas!',
       kategorie: 'begruessung'
@@ -248,6 +268,8 @@ export default {
       ausdruck: 'Zeisig',
       hochdeutsch: 'Grünfink / Leipziger',
       bedeutung: 'Der Zeisig ist eigentlich ein kleiner grüner Singvogel, wird aber im sächsischen Volksmund als liebevolle Bezeichnung für einen Leipziger verwendet. Die Herkunft ist unklar, möglicherweise bezieht sie sich auf die lebhafte, zwitschernde Art der Messestädter. Leipzig und seine Bewohner gelten in Sachsen als etwas weltoffener und schneller als der Rest des Landes.',
+      beispiel: 'Dor neie Gollege is\' ä Zeisig, der gommt nu von dor Messe.',
+      beispiel_hd: 'Der neue Kollege ist ein Leipziger, der kommt jetzt von der Messe.',
       kategorie: 'menschen'
     },
     {
@@ -309,6 +331,8 @@ export default {
       ausdruck: 'Rennsteig',
       hochdeutsch: 'Gebirgskamm Thüringer Wald',
       bedeutung: 'Der Rennsteig ist der historische Höhenkamm des Thüringer Waldes, der einst die Grenze zwischen sächsischen und fränkischen Herrschaftsgebieten bildete. Der Wanderweg entlang des Rennsteigs ist einer der bekanntesten Deutschlands und führt knapp 170 Kilometer durch dichte Wälder. Auf dem Rennsteig treffen sächsische, thüringische und fränkische Kultur aufeinander.',
+      beispiel: 'Im Urlaub wandern mor freilich ä Stiggschn auf dem Rennsteig.',
+      beispiel_hd: 'Im Urlaub wandern wir natürlich ein Stück auf dem Rennsteig.',
       kategorie: 'orte'
     },
     {
@@ -388,6 +412,8 @@ export default {
       ausdruck: 'Gorillakinn',
       hochdeutsch: 'starker Kinnbart',
       bedeutung: 'Scherzhafter sächsischer Begriff für einen besonders kräftigen oder ungepflegten Kinnbart. Das Wort kombiniert bildstark den Gorilla als Symbol für etwas Wildes, Ungebändigtes mit dem anatomischen Begriff. Im sächsischen Humor wird körperliche Erscheinung oft auf diese direkte, bildhafte Weise kommentiert.',
+      beispiel: 'Mit dem Gorillakinn musste mal ä bissel zum Friseur, ja nu!',
+      beispiel_hd: 'Mit dem Kinnbart musst du mal ein bisschen zum Friseur, jetzt wirklich!',
       kategorie: 'koerper'
     },
     {
@@ -494,8 +520,8 @@ export default {
       ausdruck: 'RB Leipzig',
       hochdeutsch: 'RasenBallsport Leipzig (Fußballclub)',
       bedeutung: 'RB Leipzig — offiziell „RasenBallsport Leipzig" — wurde 2009 vom Red Bull Konzern gegründet und stieg in nur 7 Jahren von der 5. in die 1. Bundesliga auf. Heimstadion: die Red Bull Arena (ehemals Zentralstadion). Vielen Fußballfans gilt RB als „Plastikclub" wegen der Konzernfinanzierung. Trotzdem ist RB heute fester Bundesliga-Top-Club mit Champions-League-Erfahrung. Sächsische Identität für Leipziger Fans.',
-      beispiel: 'Heute spielt RB gegen Bayern — des wird en spannendes Spiel.',
-      beispiel_hd: 'Heute spielt RB gegen Bayern — das wird ein spannendes Spiel.',
+      beispiel: 'Heute spielt RB Leipzig gegen Bayern — des wird en spannendes Spiel.',
+      beispiel_hd: 'Heute spielt RB Leipzig gegen Bayern — das wird ein spannendes Spiel.',
       kategorie: 'sport'
     },
     {
@@ -623,15 +649,6 @@ export default {
       beispiel: 'Aus Bautzen kommt der berühmte Senf — der schaarfe!',
       beispiel_hd: 'Aus Bautzen kommt der berühmte Senf — der scharfe!',
       kategorie: 'orte'
-    },
-    {
-      id: 's-073',
-      ausdruck: 'Schlomp',
-      hochdeutsch: 'Schlamm / Matsch',
-      bedeutung: '„Schlomp" ist sächsisch für Schlamm — eine Mischung aus Erde und Wasser, oft als unangenehme Konsistenz. Das Wort hat einen lautmalerischen Charakter („schlompig" bedeutet schlampig oder schmutzig). Im sächsischen Alltag: „Mei Schuhe sind voller Schlomp" — also voller Matsch nach dem Spaziergang. Ein typisch sächsisches Wort, das im Hochdeutschen so nicht vorkommt.',
-      beispiel: 'Nach\'m Regen war\'s n richtig\'n Schlomp im Garten.',
-      beispiel_hd: 'Nach dem Regen war es ein richtiger Matsch im Garten.',
-      kategorie: 'natur'
     },
     {
       id: 's-074',
@@ -854,6 +871,8 @@ export default {
       ausdruck: 'Sandgreafen',
       hochdeutsch: 'Sandgreafen (Volkssagen-Figur)',
       bedeutung: 'In manchen sächsischen Volkssagen tauchen die „Sandgreafen" auf — geheimnisvolle Wesen, die im sandigen Boden der Lausitz und Oberlausitz hausen sollen. Sie graben unsichtbare Tunnel und verkörpern manchmal Verlust und Vergänglichkeit. Diese regionalen Sagengestalten sind weniger bekannt als Pumphut, gehören aber zum reichen Schatz sächsisch-lausitzischer Mythologie. Heute werden sie in der Volkskunde gepflegt und in regionalen Kinderbüchern wiederbelebt.',
+      beispiel: 'Die Oma hat ms\' freilich von den Sandgreafen in der Lausitz erzählt.',
+      beispiel_hd: 'Die Oma hat uns natürlich von den Sandgrafen in der Lausitz erzählt.',
       kategorie: 'menschen'
     },
     {
@@ -942,8 +961,8 @@ export default {
       ausdruck: 'Wendelstein',
       hochdeutsch: 'Wendelstein (Berg im Vogtland)',
       bedeutung: 'Der Wendelstein in der Sächsischen Schweiz ist Teil des Elbsandsteingebirges — ein Klettersteig und Aussichtspunkt. Nicht zu verwechseln mit dem bayerischen Wendelstein. Die Sächsische Schweiz mit Bastei, Königstein, Lilienstein ist eines der schönsten Mittelgebirge Deutschlands. Berühmt für die markanten Sandsteinfelsen, durch die seit Caspar David Friedrich Generationen von Romantikern wanderten. Sächsisches Naturparadies.',
-      beispiel: 'In der Sächsischen Schweiz kannste tagelang wandern.',
-      beispiel_hd: 'In der Sächsischen Schweiz kannst du tagelang wandern.',
+      beispiel: 'Am Wendelstein in der Sächsischen Schweiz kannste tagelang klettern und wandern.',
+      beispiel_hd: 'Am Wendelstein in der Sächsischen Schweiz kannst du tagelang klettern und wandern.',
       kategorie: 'natur'
     },
     {
@@ -981,15 +1000,6 @@ export default {
       beispiel: 'Hellerau is\'ne weltgeschichtliche Gartenstadt.',
       beispiel_hd: 'Hellerau ist eine weltgeschichtliche Gartenstadt.',
       kategorie: 'orte'
-    },
-    {
-      id: 's-113',
-      ausdruck: 'Eierschecke',
-      hochdeutsch: 'Eierschecke (Dresdner Spezialität)',
-      bedeutung: 'Die „Eierschecke" ist DIE sächsische Kuchen-Spezialität, besonders in Dresden, Freiberg und Leipzig beliebt. Ein dreischichtiger Kuchen aus Mürbeteigboden, Quarkschicht und einer eiergelben Schaumschicht obendrauf. Die Quarkschicht macht sie cremig, die obere Schicht goldbraun. Original ohne Rosinen, je nach Region variieren die Zutaten. Wird auf jedem Familienfest, an Sonntagen und in jedem sächsischen Café serviert.',
-      beispiel: 'Ne Tasse Kaffee unde Eierschecke — Sonntagsritual!',
-      beispiel_hd: 'Eine Tasse Kaffee und Eierschecke — Sonntagsritual!',
-      kategorie: 'essen'
     },
     {
       id: 's-114',
@@ -1203,8 +1213,8 @@ export default {
       ausdruck: 'Karl-Marx-Monument',
       hochdeutsch: 'Karl-Marx-Monument Chemnitz („Nischel")',
       bedeutung: 'Das Karl-Marx-Monument in Chemnitz — eine 7,1 Meter hohe Bronzeskulptur des Marx-Kopfes — wurde 1971 vom sowjetischen Bildhauer Lew Kerbel geschaffen und ist nach dem Mount Rushmore die zweitgrößte Porträtskulptur der Welt. Die Chemnitzer nennen sie liebevoll-ironisch „Nischel" (sächsisch für Kopf). Trotz der Rückbenennung von Karl-Marx-Stadt in Chemnitz 1990 blieb das Monument stehen und ist heute Wahrzeichen und Touristenattraktion. Sozialistisches Erbe und Pop-Art-Ikone zugleich.',
-      beispiel: 'Der Nischel in Chemnitz isch deutschlandweit berühmt.',
-      beispiel_hd: 'Der „Nischel" in Chemnitz ist deutschlandweit berühmt.',
+      beispiel: 'Das Karl-Marx-Monument — der „Nischel" — in Chemnitz isch deutschlandweit berühmt.',
+      beispiel_hd: 'Das Karl-Marx-Monument — der „Nischel" — in Chemnitz ist deutschlandweit berühmt.',
       kategorie: 'orte'
     },
     {
@@ -1350,15 +1360,6 @@ export default {
       beispiel: 'Der Karl gönnt sich heut e geschniegeltes Hemd.',
       beispiel_hd: 'Der Karl gönnt sich heute ein elegantes Hemd.',
       kategorie: 'menschen'
-    },
-    {
-      id: 's-154',
-      ausdruck: 'Klitsche',
-      hochdeutsch: 'Kneipe / kleines Geschäft',
-      bedeutung: 'Eine „Klitsche" ist im Sächsischen eine kleine, etwas heruntergekommene Kneipe oder ein winziges Geschäft. Liebevoll-pejorativ — keine Beleidigung, aber auch kein Kompliment. „A kleene Klitsche um die Ecke" beschreibt das beliebte Stammlokal mit Charakter. Stammt vom mittelhochdeutschen „klats" für „klatschend, schmierig". Auch für ungepflegte Wohnungen verwendet.',
-      beispiel: 'Geh\'m mor in die Klitsche an de Ecke, da gibt\'s gutes Bier.',
-      beispiel_hd: 'Gehen wir in die Kneipe an der Ecke, da gibt es gutes Bier.',
-      kategorie: 'orte'
     },
     {
       id: 's-155',
@@ -1523,15 +1524,6 @@ export default {
       kategorie: 'essen'
     },
     {
-      id: 's-173',
-      ausdruck: 'Mucke',
-      hochdeutsch: 'Mücke / Musik / Auftrag',
-      bedeutung: '„Mucke" hat im Sächsischen mehrere Bedeutungen: 1) Mücke (das Insekt). 2) Musik, vor allem im Musiker-Slang: „A Mucke spielen" heißt einen Gig haben. 3) Nebenjob, kleiner Auftrag — „A Mucke nebenher" ist ein Zusatzeinkommen. Mehrdeutigkeit gehört zum sächsischen Wortspiel. „D\'Mucke macht den Stich" wird auch metaphorisch verwendet — eine kleine Sache macht den Unterschied.',
-      beispiel: 'Heut Abend hab ich noch e Mucke mit der Band.',
-      beispiel_hd: 'Heute Abend habe ich noch einen Musik-Auftrag mit der Band.',
-      kategorie: 'arbeit'
-    },
-    {
       id: 's-174',
       ausdruck: 'Erstma',
       hochdeutsch: 'erst einmal',
@@ -1604,15 +1596,6 @@ export default {
       kategorie: 'menschen'
     },
     {
-      id: 's-182',
-      ausdruck: 'Bautzner',
-      hochdeutsch: 'Bautzner Senf',
-      bedeutung: 'Der „Bautzner" ist DER sächsische Senf — seit 1850 in Bautzen produziert. Mittelscharf, würzig, mit dem charakteristischen blau-roten Etikett. In der DDR Kult und einer der wenigen Markenartikel, die nach 1989 überlebt haben. Zur Bratwurst, zum Eisbein oder einfach aufs Brot mit Wurst — Bautzner Senf ist sächsisches Lebensgefühl. Heute gehört die Marke zu Develey, aber die Produktion bleibt in Bautzen.',
-      beispiel: 'Zur Bratwurst gibts nur den echten Bautzner Senf!',
-      beispiel_hd: 'Zur Bratwurst gibt es nur den echten Bautzner Senf!',
-      kategorie: 'essen'
-    },
-    {
       id: 's-183',
       ausdruck: 'Wuschelich',
       hochdeutsch: 'Wuschelig / Zerzaust',
@@ -1674,15 +1657,6 @@ export default {
       beispiel: 'Großmutter erzählt am Abend immer ein Mährdsche.',
       beispiel_hd: 'Großmutter erzählt am Abend immer ein Märchen.',
       kategorie: 'redensart'
-    },
-    {
-      id: 's-190',
-      ausdruck: 'Hutzenabend',
-      hochdeutsch: 'Hutzenabend / Erzgebirgischer Gemeinschaftsabend',
-      bedeutung: 'Der „Hutzenabend" ist eine erzgebirgische Tradition — gemeinschaftliches Beisammensein in der dunklen Jahreszeit, ursprünglich der gemeinsame Klöppel-Abend der Spitzenklöppler-Frauen. Heute kulturelle Veranstaltungen mit Volksmusik, Lesungen und Erzählungen in der Bergmannstradition. Findet man besonders in Annaberg-Buchholz, Schwarzenberg und Oberwiesenthal. UNESCO-Kulturerbe der Erzgebirgischen Klöppel- und Volkskultur.',
-      beispiel: 'Im Erzgebirge gibts im November viele Hutzenabende.',
-      beispiel_hd: 'Im Erzgebirge gibt es im November viele Hutzenabende.',
-      kategorie: 'feiern'
     },
     {
       id: 's-191',
@@ -1863,6 +1837,537 @@ export default {
       beispiel: 'Der Pohlheirad in der Werkstatt heizt richtig schön.',
       beispiel_hd: 'Der Bullerjan in der Werkstatt heizt richtig schön.',
       kategorie: 'alltag'
+    },
+    {
+      id: 's-211',
+      ausdruck: 'Quark mit Glumpe',
+      hochdeutsch: 'Quark mit Leinöl',
+      bedeutung: '„Quark mit Glumpe" oder „Quark mit Leinöl" ist ein typisches sächsisches Frühstück oder Mittagessen — Quark mit grünem Leinöl, Kümmel, Salz, Kartoffeln dazu. „Heut Mittag gibts Quark mit Glumpe!" Klassisches Bauerngericht aus der Lausitz und dem Erzgebirge. Heute als gesundes „Trend-Food" wiederentdeckt. Eine bodenständige sächsische Tradition.',
+      beispiel: 'Zum Mittag bestell ich Pellkartoffeln mit Quark mit Glumpe.',
+      beispiel_hd: 'Zum Mittag bestelle ich Pellkartoffeln mit Quark und Leinöl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-212',
+      ausdruck: 'Ganzn',
+      hochdeutsch: 'Ganz / Sehr',
+      bedeutung: '„Ganzn" ist die sächsische Verstärkungsform von „ganz" — sehr, völlig, total. „Ich bin ganzn müde heut!" Mit dem typischen sächsischen Endungs-„n". Eine charakteristische, klangvolle sächsische Spracheigenheit. Verbreitet in der Alltagssprache. Gibt der Aussage emotionale Verstärkung. Verwandt mit „janz" und anderen sächsischen Variationen.',
+      beispiel: 'Heut bin ich ganzn fertich von der Arbet.',
+      beispiel_hd: 'Heute bin ich völlig fertig von der Arbeit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-213',
+      ausdruck: 'Heidschnucken',
+      hochdeutsch: 'Heidschnucken (Schafsrasse)',
+      bedeutung: 'Die „Heidschnucken" sind eine traditionelle norddeutsche und sächsische Schafsrasse — grau-schwarz, langhaarig, an die Heidelandschaft angepasst. „In der Lüneburger Heide weiden die Heidschnucken." Wichtiges Symbol der Heidelandschaft und der traditionellen Schafzucht. Auch das Fleisch ist eine regionale Spezialität.',
+      beispiel: 'Die Heidschnucken-Wolle ist besonders robust.',
+      beispiel_hd: 'Die Heidschnucken-Wolle ist besonders robust.',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-214',
+      ausdruck: 'Spuckmamn',
+      hochdeutsch: 'Spuckmännchen / Räuchermännchen',
+      bedeutung: 'Das „Spuckmamn" oder „Räuchermannel" ist im Erzgebirge die typische Holzfigur — innen hohl, mit Räucherkerze gefüllt, „spuckt" Rauch. „Zu Weihnachten stelle mer das Räuchermannel auf!" UNESCO-Kulturerbe der erzgebirgischen Volkskunst. In den Werkstätten von Seiffen, Olbernhau und Schwarzenberg handgefertigt. Traditionelle Weihnachts-Dekoration.',
+      beispiel: 'Im Advent steht das Spuckmamn im Fenster und qualmt vor sich hin.',
+      beispiel_hd: 'Im Advent steht das Räuchermännchen im Fenster und qualmt vor sich hin.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-215',
+      ausdruck: 'Babbel',
+      hochdeutsch: 'Mund / Plappermaul',
+      bedeutung: 'Die „Babbel" ist im Sächsischen das Maul oder der Mund — verwandt mit dem hessischen „Babbel". „Halt die Babbel!" Auch übertragen für Schwätzer: „Du Babbelkopp!" Eine drastische, lautmalerische sächsische Wortprägung. Mit warmen, weichen Klang trotz der harten Aussage. Sächsische Direktheit mit charakteristischem Tonfall.',
+      beispiel: 'Jetz halt mal die Babbel und hör zu!',
+      beispiel_hd: 'Jetzt halt mal den Mund und hör zu!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-216',
+      ausdruck: 'Kalauer',
+      hochdeutsch: 'Kalauer / Flacher Witz',
+      bedeutung: 'Der „Kalauer" ist im Sächsischen ein flaches, oft kindliches Wortspiel — benannt nach der Stadt Calau, deren Bewohner für solche Witze berüchtigt waren. „Mach keine Kalauer!" Im sächsischen Humor ein wichtiger Begriff — Sachsen lieben Wortspiele, gerade die schlechten. Olaf Schubert und andere sächsische Komiker pflegen die Kalauer-Kultur.',
+      beispiel: 'Olaf Schubert macht die besten Kalauer!',
+      beispiel_hd: 'Olaf Schubert macht die besten Kalauer!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-217',
+      ausdruck: 'Bregg',
+      hochdeutsch: 'Brett / Kleines Holz',
+      bedeutung: 'Das „Bregg" ist im Sächsischen ein Brett oder kleines Holzstück. „Schneid das Bregg in der Mitte!" Eine kurze, knappe sächsische Wortform mit Wegfall des End-„t". Auch in Komposita: „Schneidebregg" (Schneidebrett), „Schlachterbregg" (Wurst-Brett). Eine alltägliche, bodenständige sächsische Vokabel.',
+      beispiel: 'Leg die Wurst aufs Bregg!',
+      beispiel_hd: 'Leg die Wurst aufs Brett!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-218',
+      ausdruck: 'Frohschmaus',
+      hochdeutsch: 'Frohschmaus / Festessen',
+      bedeutung: 'Ein „Frohschmaus" ist im Sächsischen ein üppiges, festliches Essen — meist an Feiertagen oder Geburtstagen. „Heut isch Frohschmaus mit der ganzen Familie!" Eine altmodisch klingende, aber liebevolle Wortprägung. In der DDR-Zeit gab es viele kleine „Frohschmaus"-Tradition als Höhepunkte des Familienlebens. Heute mit nostalgischem Beiklang.',
+      beispiel: 'Zu Weihnachten haben wir\'n richtigen Frohschmaus.',
+      beispiel_hd: 'Zu Weihnachten haben wir einen richtigen Frohschmaus.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-219',
+      ausdruck: 'Schwippbogen',
+      hochdeutsch: 'Schwibbogen (Erzgebirge)',
+      bedeutung: 'Der „Schwippbogen" oder „Schwibbogen" ist eine erzgebirgische Lichtertradition — ein halbrunder, beleuchteter Holzbogen, der zur Adventszeit in die Fenster gestellt wird. „Im Erzgebirge hat jedes Fenster\'n Schwibbogen!" Symbol für die Bergmanns-Tradition (Hoffnung auf das Tageslicht nach der Schicht). UNESCO-Kulturerbe.',
+      beispiel: 'Der Schwippbogen leuchtet vom 1. Dezember bis Maria Lichtmess.',
+      beispiel_hd: 'Der Schwibbogen leuchtet vom 1. Dezember bis Maria Lichtmess.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-220',
+      ausdruck: 'Ostalgie',
+      hochdeutsch: 'Ostalgie / DDR-Nostalgie',
+      bedeutung: 'Die „Ostalgie" ist im Sächsischen besonders ausgeprägt — die nostalgische Erinnerung an die DDR. „Trabbi, Sandmännchen, Vita Cola — alles Ostalgie!" In Sachsen mit seiner starken DDR-Geschichte (Volkswagen-Stadt Zwickau, Industrie-Sachsen) ein wichtiges Phänomen. Museen, Tour-Anbieter, Kult-Produkte profitieren von der Ostalgie-Welle.',
+      beispiel: 'Im DDR-Museum in Dresden gibts pure Ostalgie!',
+      beispiel_hd: 'Im DDR-Museum in Dresden gibt es pure Ostalgie!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-221',
+      ausdruck: 'Klotscherla',
+      hochdeutsch: 'Kartoffelklöße (kleine)',
+      bedeutung: 'Die „Klotscherla" sind im Sächsischen kleine Kartoffelklöße — Verkleinerungsform von „Klops". „Zum Mittag gibts Klotscherla mit Sauerbraten!" Eine warme, sächsische Diminutiv-Wortprägung. Die klassische sächsische Sonntagsmahlzeit hat oft Klotscherla als Beilage. Hausgemachte Tradition. Verbreitet in der traditionellen sächsischen Küche.',
+      beispiel: 'Großmuatter macht die besten Klotscherla mit Speck.',
+      beispiel_hd: 'Großmutter macht die besten Kartoffelklöße mit Speck.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-222',
+      ausdruck: 'Rambo',
+      hochdeutsch: 'Großmaul / Angeber',
+      bedeutung: 'Ein „Rambo" ist im Sächsischen ein Angeber oder Großmaul — vom gleichnamigen Filmhelden. „Sei kein Rambo!" Mit Augenzwinkern gebraucht. Die Pop-Kultur hat sich auch in die sächsische Mundart eingeschlichen — moderne Wortbildungen mit traditioneller Tonfärbung. Sächsische Charakterisierung von Macho-Verhalten.',
+      beispiel: 'Spiel nich den Rambo, das beeindruckt keinen!',
+      beispiel_hd: 'Spiel nicht den Rambo, das beeindruckt keinen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-223',
+      ausdruck: 'Pferchen',
+      hochdeutsch: 'Pferdchen',
+      bedeutung: 'Das „Pferchen" ist im Sächsischen die Verkleinerung von „Pferd" — Pferdchen, kleines Pferd. „Auf dem Karussell sitzt mein Pferchen!" Auch als Kinderspielzeug („Hopf-Pferdchen"). Eine warme, kindliche Verkleinerungsform mit dem typischen sächsischen „chen"-Klang. Verbunden mit Kindheitserinnerungen.',
+      beispiel: 'Mei Kleiner liebt sei Hopf-Pferchen!',
+      beispiel_hd: 'Mein Kleiner liebt sein Schaukelpferd!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-224',
+      ausdruck: 'Bornkindl',
+      hochdeutsch: 'Christkind (Erzgebirgisch)',
+      bedeutung: 'Das „Bornkindl" ist im Erzgebirge das Christkind — eine Tradition, die mit dem berühmten Christkindlmarkt verbunden ist. „D\'Kinder warten aufs Bornkindl!" Anders als in Bayern, wo das Bornkindl im katholischen Kontext steht, ist es im protestantischen Erzgebirge oft eher figürliche Tradition mit Räuchermännchen und Pyramiden.',
+      beispiel: 'Beim Weihnachtsschein wartet jedes Kind aufs Bornkindl.',
+      beispiel_hd: 'Beim Weihnachtsschein wartet jedes Kind aufs Christkind.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-225',
+      ausdruck: 'Grabbel-Bumm',
+      hochdeutsch: 'Tausch-Buch / Krabbelbuch',
+      bedeutung: 'Das „Grabbel-Bumm" ist im Sächsischen eine Sammlung von Krabbelbildern oder eine Sammlung-Box — auch übertragen für ein Sammelsurium von Dingen. „In meiner Schublade is\'n richtigs Grabbel-Bumm!" Eine humorvolle, sächsische Wortprägung mit lautmalerischem Klang. Lebendige Wortbildung der Pott-Sprache mit Wortwitz.',
+      beispiel: 'In meinem Keller is\'n echtes Grabbel-Bumm.',
+      beispiel_hd: 'In meinem Keller ist ein echtes Sammelsurium.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-226',
+      ausdruck: 'Schniekert',
+      hochdeutsch: 'Schniekert / Frecher Mensch',
+      bedeutung: 'Ein „Schniekert" ist im Sächsischen ein frecher, freches Kind oder einer, der vorlaut ist. „Du Schniekert, sei jetz mal still!" Eine plastische, scharfe sächsische Bezeichnung. Verwandt mit „Schnoddernase" — das Schniekert hat oft auch ein lautes Mundwerk. Erzieherisches Familienwort mit erhöhter Schärfe.',
+      beispiel: 'Der kleine Schniekert antwortet immer freches Zeug!',
+      beispiel_hd: 'Der kleine Frechdachs antwortet immer freches Zeug!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-227',
+      ausdruck: 'Hutsche',
+      hochdeutsch: 'Schaukel',
+      bedeutung: 'Die „Hutsche" ist im Sächsischen die Schaukel — verwandt mit dem bayerischen und österreichischen „Hutsch". „D\'Kinder spielen auf der Hutsche!" Vom Verb „hutschen" (schaukeln). Auf jedem sächsischen Spielplatz und in vielen Gärten. Eine traditionelle, klangvolle Wortprägung mit kindlichen Assoziationen. Verbunden mit den freudvollen Erinnerungen an die eigene Kindheit.',
+      beispiel: 'Im Garten haben wir die alte Hutsche von Oma.',
+      beispiel_hd: 'Im Garten haben wir die alte Schaukel von Oma.',
+      kategorie: 'sport'
+    },
+    {
+      id: 's-228',
+      ausdruck: 'Tschau',
+      hochdeutsch: 'Tschau / Tschüss',
+      bedeutung: '„Tschau" ist im Sächsischen eine entspannte Abschiedsformel — vom italienischen „ciao" abgeleitet. „Bis morgen, tschau!" Im Sächsischen mit der typischen Aussprache. Auch in den Erweiterungen „Tschau-Tschau" oder „Tschüss-Tschau". Eine moderne, internationale Wortübernahme, die in die Mundart integriert wurde.',
+      beispiel: 'Wir sehn uns morgen — tschau!',
+      beispiel_hd: 'Wir sehen uns morgen — tschüss!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 's-229',
+      ausdruck: 'Bornkindlmarkt',
+      hochdeutsch: 'Christkindlmarkt (Striezelmarkt)',
+      bedeutung: 'Der „Bornkindlmarkt" oder Striezelmarkt ist Dresdens berühmter Weihnachtsmarkt — seit 1434 nachweisbar, ältester Weihnachtsmarkt Deutschlands. „Auf dem Striezelmarkt gibts den Original-Dresdner-Stollen!" Über 2 Millionen Besucher jährlich. Symbol der sächsischen Weihnachtskultur. Mit Pyramide, Schwippbogen, Räuchermännchen — alles erzgebirgische Volkskunst.',
+      beispiel: 'Im Advent gehe mer auf den Bornkindlmarkt — den Striezelmarkt — nach Dresden.',
+      beispiel_hd: 'Im Advent gehen wir auf den Christkindlmarkt — den Striezelmarkt — nach Dresden.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-230',
+      ausdruck: 'Lurch',
+      hochdeutsch: 'Lurch / Amphibie',
+      bedeutung: 'Der „Lurch" ist im Sächsischen die Amphibie (Frosch, Kröte, Salamander) — beliebter Garten- und Wald-Bewohner. Berühmt: „Lurchi" der DDR-Comic-Salamander aus Salamander-Schuhwerbung. „Im Teich wohnen viele Lurche!" Eine wichtige Naturbeobachtung in der sächsischen Mittelgebirgs-Landschaft. Lurche als Indikator für gesunde Ökosysteme.',
+      beispiel: 'Im Garten haben wir einen kleinen Teich für die Lurche.',
+      beispiel_hd: 'Im Garten haben wir einen kleinen Teich für die Lurche.',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-231',
+      ausdruck: 'Frigge',
+      hochdeutsch: 'Fritteuse',
+      bedeutung: 'Die „Frigge" ist im Sächsischen die Fritteuse — verkürzte, mundart-typische Aussprache. „Mach mer Pommes in der Frigge!" Eine moderne Wortübernahme mit sächsischer Klangfärbung. In der DDR-Zeit waren Fritteusen Luxusgut, heute Standard. Wird auch übertragen verwendet: „heiß wie ne Frigge!" (sehr heiß).',
+      beispiel: 'D\'Frigge is kaputt, kein Pommes heut!',
+      beispiel_hd: 'Die Fritteuse ist kaputt, keine Pommes heute!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-232',
+      ausdruck: 'Krippchen',
+      hochdeutsch: 'Krippe / Weihnachtskrippe',
+      bedeutung: 'Das „Krippchen" ist im Sächsischen die Weihnachtskrippe — die Darstellung der Geburt Jesu mit Maria, Josef, Jesuskind. „Im Erzgebirge schnitzt jeder Holzschnitzer ein Krippchen!" Die Erzgebirgische Krippen-Tradition ist berühmt — handgeschnitzte Figuren aus den Werkstätten Seiffens. Tradition der katholischen Bergbau-Familien.',
+      beispiel: 'Das Krippchen von meiner Oma is\'n echtes Erbstück.',
+      beispiel_hd: 'Die Krippe von meiner Oma ist ein echtes Erbstück.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-234',
+      ausdruck: 'Schimme',
+      hochdeutsch: 'Schimmel / Pilzbefall',
+      bedeutung: 'Der „Schimme" ist im Sächsischen der Schimmel — der ungewollte Pilzbefall auf Lebensmitteln oder an Wänden. „Auf dem Käse is Schimme!" Eine alltägliche, sächsische Spracheigenheit mit Wegfall des End-„l". Auch übertragen: „Schimme im Kopp" (verschimmelte Ideen). Pragmatische, knappe Pott-Bezeichnung mit Augenzwinkern.',
+      beispiel: 'Im Kühlschrank wächst Schimme auf den Sachen!',
+      beispiel_hd: 'Im Kühlschrank wächst Schimmel auf den Sachen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-235',
+      ausdruck: 'Knochenmühle',
+      hochdeutsch: 'Knochenmühle / Anstrengende Arbeit',
+      bedeutung: 'Eine „Knochenmühle" ist im Sächsischen eine sehr anstrengende, körperlich harte Arbeit — wie wenn jemand durch eine Mühle gedreht wird. „Die Arbeit auf der Baustelle is\'ne richtige Knochenmühle!" Eine drastische, bildhafte Pott-Wortprägung. Mit Anerkennung für harte Arbeit, aber auch Kritik an überlastenden Bedingungen.',
+      beispiel: 'Mein Job is\'ne richtige Knochenmühle.',
+      beispiel_hd: 'Mein Job ist eine richtige Knochenmühle.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-236',
+      ausdruck: 'Schneeflöckchen',
+      hochdeutsch: 'Schneeflöckchen',
+      bedeutung: 'Die „Schneeflöckchen" sind im Sächsischen die einzelnen Schneeflocken — auch im berühmten Kinderlied „Schneeflöckchen, Weißröckchen" verewigt. „Die ersten Schneeflöckchen fallen!" Im Erzgebirge mit seinen langen, schneereichen Wintern besonders wichtig. Auch metaphorisch: „du bist mein Schneeflöckchen" als Kosewort. Eine warme, poetische Wortprägung.',
+      beispiel: 'Die ersten Schneeflöckchen fallen schon!',
+      beispiel_hd: 'Die ersten Schneeflocken fallen schon!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-237',
+      ausdruck: 'Vesperbrot',
+      hochdeutsch: 'Brotzeit / Vesperbrot',
+      bedeutung: 'Das „Vesperbrot" ist im Sächsischen die Brotzeit zwischen den Hauptmahlzeiten — meistens nachmittags, mit Brot, Wurst, Käse, Quark, Gurken. „Tum Vesperbrot trink mer Kaffee dazu!" Eine bodenständige sächsische Tradition. Im Erzgebirge und in der Lausitz wichtig. Verbindet die Familie zur kleinen Pause am Nachmittag.',
+      beispiel: 'Beim Vesperbrot setzt sich die ganze Familie an den Tisch.',
+      beispiel_hd: 'Bei der Brotzeit setzt sich die ganze Familie an den Tisch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-238',
+      ausdruck: 'Pomeranze',
+      hochdeutsch: 'Bittere Orange / Lieblingsmädchen',
+      bedeutung: 'Die „Pomeranze" ist im Sächsischen eine bittere Orange, aber auch übertragen ein hübsches Mädchen. „Heut hab ich a Pomeranze gesehen!" Vom italienischen „pomerancia" abgeleitet. In Dresdner Mehlspeisen wird Pomeranzen-Schale verwendet. Doppelbedeutung mit kulinarischen und romantischen Konnotationen. Charmante sächsische Wortprägung.',
+      beispiel: 'Die Pomeranze von gestern Abend war ein Traum!',
+      beispiel_hd: 'Das Lieblingsmädchen von gestern Abend war ein Traum!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-239',
+      ausdruck: 'Schnapsdrossel',
+      hochdeutsch: 'Schnapsdrossel / Säufer',
+      bedeutung: 'Eine „Schnapsdrossel" ist im Sächsischen jemand, der gerne Schnaps trinkt. „Der Toni ist\'ne richtige Schnapsdrossel!" Mit Augenzwinkern oder ernsthaft gebraucht. Die Bildverbindung „Drossel-Trinkerin" zeigt die sächsische Lust an plastischen Wortbildungen. Pott- und Bergmannstradition mit harten Schnaps-Verhaltensweisen.',
+      beispiel: 'Mei Onkel war ne Schnapsdrossel ohne gleichen!',
+      beispiel_hd: 'Mein Onkel war eine Schnapsdrossel ohne gleichen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-240',
+      ausdruck: 'Verlackbusche',
+      hochdeutsch: 'Verlackbüchse / Lackdose',
+      bedeutung: 'Die „Verlackbusche" ist eine alte sächsische Bezeichnung für eine Lackdose oder kunstvoll bemalte Holzdose — Teil der erzgebirgischen Volkskunst. „Im Schrank steht\'ne alte Verlackbusche von Großmoeders Aussteuer!" Heute oft Sammlerstück. Symbol der traditionellen erzgebirgischen Handwerkskunst. Lebendig in Museen und Antiquitätenhandel.',
+      beispiel: 'In der Verlackbusche bewahr ich meine Erinnerungen auf.',
+      beispiel_hd: 'In der Lackdose bewahre ich meine Erinnerungen auf.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-241',
+      ausdruck: 'Gleeneste',
+      hochdeutsch: 'Kleinste / Jüngste',
+      bedeutung: 'Die „Gleeneste" ist im Sächsischen die liebevolle Bezeichnung für das jüngste oder kleinste Kind in der Familie — meist mit zärtlicher Betonung ausgesprochen. „Unsre Gleeneste fängt nu och in der Grippe an!" Die typisch sächsische Verschleifung von „Kleinste" zu „Gleeneste" zeigt die weiche Aussprache mit dem gequetschten K-Laut. In erzgebirgischen Familien oft als Kosename verwendet — manchmal auch für die Lieblingsenkelin. Drückt familiäre Wärme und Zuneigung aus.',
+      beispiel: 'Die Gleeneste hat heut ihren ersten Zahn gekriegt!',
+      beispiel_hd: 'Die Kleinste hat heute ihren ersten Zahn bekommen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-242',
+      ausdruck: 'Heelichowmd',
+      hochdeutsch: 'Heiligabend',
+      bedeutung: 'Der „Heelichowmd" ist im Erzgebirgischen die mundartliche Form von „Heiligabend" — der wichtigste Familienabend im Jahr. „Am Heelichowmd gehn mir in die Mette nach Seiffen!" Die Erzgebirger feiern traditionell mit Neunerlei-Essen, Räuchermännel auf der Fensterbank und Schwibbogen im Fenster. Nach der Mettenfeier am späten Abend versammelt sich die Familie. Tief in der bergmännischen Tradition verwurzelt — wenn die Hutzenstube zur Festkammer wird.',
+      beispiel: 'Am Heelichowmd kommt die ganze Verwandtschaft zsamm!',
+      beispiel_hd: 'Am Heiligabend kommt die ganze Verwandtschaft zusammen!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-243',
+      ausdruck: 'Hutzenmaad',
+      hochdeutsch: 'Hutzenmädchen / Mädchen vom Hutzenabend',
+      bedeutung: 'Eine „Hutzenmaad" ist im Erzgebirge das Mädchen, das beim traditionellen Hutzenabend mit dabei ist — die abendlichen Spinn- und Klöppelrunden der Frauen. „Die Hutzenmaad hat schon\'s Klöppeln gelernt!" Während die Männer auf der Schicht waren, trafen sich die Frauen zum Spinnen, Klöppeln und Singen. Die jungen Mädchen lernten dabei Handwerk und Lieder. Wichtiger Teil der erzgebirgischen Kulturtradition — heute noch in Heimatvereinen gepflegt.',
+      beispiel: 'Mei Großmoeder war ne flinke Hutzenmaad in ihrer Jugend.',
+      beispiel_hd: 'Meine Großmutter war ein flinkes Hutzenmädchen in ihrer Jugend.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-244',
+      ausdruck: 'Neunerlei',
+      hochdeutsch: 'Neunerlei / Erzgebirgisches Heiligabendessen',
+      bedeutung: 'Das „Neunerlei" ist das traditionelle Festmahl im Erzgebirge am Heiligabend — bestehend aus genau neun Speisen, die jeweils symbolische Bedeutung haben. „Beim Neunerlei darf die Bratwurscht nich fehl\'n!" Linsen für Kleingeld, Sauerkraut für gute Gesinnung, Klöße für Geld, Bratwurst für Kraft, Hering für Beständigkeit. Jede Speise muss probiert werden, sonst droht Unglück im neuen Jahr. Tief in der bergmännischen Tradition verwurzelt — Symbol der erzgebirgischen Esskultur.',
+      beispiel: 'Beim Neunerlei zu Weihnachten gibt\'s immer Linsen und Sauerkraut.',
+      beispiel_hd: 'Beim Neunerlei zu Weihnachten gibt es immer Linsen und Sauerkraut.',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-245',
+      ausdruck: 'Heeschnschnur',
+      hochdeutsch: 'Häkelschnur / Klöppelschnur',
+      bedeutung: 'Die „Heeschnschnur" ist im Erzgebirge die Klöppelschnur — wichtiges Werkzeug der traditionellen Klöppelarbeit aus Annaberg-Buchholz. „Die Heeschnschnur muss straff gespannt sein beim Klöppeln!" Die UNESCO hat das erzgebirgische Klöppeln als immaterielles Kulturerbe anerkannt. Aus den Klöppelschnüren entstehen die berühmten Spitzen aus Annaberg und Plauen. Generationen von Frauen haben dieses Handwerk an ihre Töchter weitergegeben. Heute noch lebendige Tradition.',
+      beispiel: 'Oma zeigt mir, wie man die Heeschnschnur richtig spannt.',
+      beispiel_hd: 'Oma zeigt mir, wie man die Klöppelschnur richtig spannt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-246',
+      ausdruck: 'Klöpplweib',
+      hochdeutsch: 'Klöpplerin',
+      bedeutung: 'Die „Klöpplweib" ist im Erzgebirge die Frau, die die berühmte Spitze klöppelt — meist in Heimarbeit über Jahrzehnte. „Mei Uroma war ne richtige Klöpplweib aus Annaberg!" Die Klöpplerinnen brachten oft das Hauptgeld in die Familie, wenn die Männer im Bergbau nicht genug verdienten. Heute gibt\'s die Klöppelschulen in Annaberg und Schneeberg. Die Schaufelmaschinen haben die Heimarbeit fast verdrängt, doch die Tradition lebt in Museen und Vereinen weiter.',
+      beispiel: 'Die Klöpplweib aus Schneeberg verkauft ihre Spitzen aufm Markt.',
+      beispiel_hd: 'Die Klöpplerin aus Schneeberg verkauft ihre Spitzen auf dem Markt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-247',
+      ausdruck: 'Maad',
+      hochdeutsch: 'Mädchen',
+      bedeutung: 'Die „Maad" ist im Erzgebirgischen und in Teilen Sachsens die alte Bezeichnung für ein Mädchen oder eine junge Frau. „Ach, du Maad, was machst\'n da?" Im Vogtland und Erzgebirge noch häufig zu hören, besonders bei älteren Sprechern. Aus dem althochdeutschen „magad" abgeleitet, verwandt mit „Magd". In Sagen und Volksliedern oft zu finden — die „schöne Maad vom Fichtelberg". Heute vorwiegend in Mundartlyrik und im häuslichen Sprachgebrauch lebendig.',
+      beispiel: 'Geh ma, du Maad, hilf der Mutter in der Stube!',
+      beispiel_hd: 'Geh mal, du Mädchen, hilf der Mutter in der Stube!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-248',
+      ausdruck: 'Bersch',
+      hochdeutsch: 'Bursche',
+      bedeutung: 'Der „Bersch" ist im Sächsischen der junge Mann oder Bursche — oft mit kameradschaftlichem oder leicht herablassendem Unterton verwendet. „Der Bersch hat heut wieder schee gearbeitet!" Im Erzgebirge wird das R fast nicht ausgesprochen, daher die typische sächsische Form „Bersch". Verwandt mit „Bursche", aber regional gefärbt. Oft in Wendungen wie „a guter Bersch" oder „a junger Bersch". Drückt eine gewisse Vertrautheit aus.',
+      beispiel: 'Der Bersch is fleißich, aus dem werd noch was!',
+      beispiel_hd: 'Der Bursche ist fleißig, aus dem wird noch etwas!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-249',
+      ausdruck: 'Hutsch',
+      hochdeutsch: 'Schaukel / Wiegen',
+      bedeutung: 'Die „Hutsch" ist im Sächsischen die Schaukel — sowohl die Spielzeugschaukel als auch das Wiegen eines Kindes. „Setz dich uff de Hutsch, ich schups dich!" Das Verb „hutschn" bedeutet schaukeln oder wiegen. In erzgebirgischen Kinderliedern oft zu hören: „Hutsch, hutsch, Reiter". Bezeichnet auch den sanften, wiegenden Gang. Mit dem typisch sächsischen weichen Tonfall ausgesprochen. Liebevolles Wort aus dem Familienleben.',
+      beispiel: 'Die Gleene will immer uff de Hutsch im Hof!',
+      beispiel_hd: 'Die Kleine will immer auf die Schaukel im Hof!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-250',
+      ausdruck: 'Pulverschnee',
+      hochdeutsch: 'Pulverschnee',
+      bedeutung: 'Der „Pulverschnee" ist im Erzgebirge der frische, leichte Schnee, der wie Puder vom Himmel rieselt — perfekt zum Skifahren am Fichtelberg. „Heut nacht hat\'s richtigen Pulverschnee gegeben!" Der Fichtelberg bei Oberwiesenthal ist mit 1215 Metern der höchste Berg Sachsens. Die Wintersportgebiete wie Klingenthal, Johanngeorgenstadt und Altenberg leben davon. Die Erzgebirger sind stolz auf ihren Schneereichtum. „Bei uns gibt\'s Schnee bis April!"',
+      beispiel: 'Mit dem Pulverschnee macht\'s Skifahren am Fichtelberg richtig Spaß!',
+      beispiel_hd: 'Mit dem Pulverschnee macht das Skifahren am Fichtelberg richtig Spaß!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-251',
+      ausdruck: 'Bumser',
+      hochdeutsch: 'Schlag / kräftiger Stoß',
+      bedeutung: 'Ein „Bumser" ist im Sächsischen ein kräftiger Schlag oder Stoß — lautmalerisch von „bums". „Der hat\'n ordentlichen Bumser an de Tür gegeben!" Auch übertragen für einen Misserfolg oder Schock verwendet: „Das war\'n richtigen Bumser für die Firma!" Im Fußball für einen gewaltigen Schuss: „Was\'n Bumser ins linke Eck!" Typisch sächsisch-derbe Wortprägung mit klangmalerischem Charakter. Lebendig im Alltag, besonders bei der älteren Generation.',
+      beispiel: 'Der Bumser ans Tor hat mich richtich erschreckt!',
+      beispiel_hd: 'Der kräftige Schlag an die Tür hat mich richtig erschreckt!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-252',
+      ausdruck: 'Dreschflegel',
+      hochdeutsch: 'Dreschflegel / grober Mensch',
+      bedeutung: 'Ein „Dreschflegel" ist im Sächsischen sowohl das traditionelle Dreschwerkzeug als auch ein grober, ungehobelter Mensch. „Der is\'n richtiger Dreschflegel, kennt keene Manieren!" Aus dem ländlichen Erbe stammendes Schimpfwort — der echte Dreschflegel war ein zweiteiliger Holzstab zum Dreschen des Getreides. Wer wie ein Dreschflegel benimmt, schlägt zu, ohne nachzudenken. Heute mehr scherzhaft als ernsthaft gebraucht. Zeigt die bäuerlichen Wurzeln vieler sächsischer Redensarten.',
+      beispiel: 'Was\'n Dreschflegel, der drängelt sich überall vor!',
+      beispiel_hd: 'Was für ein Grobian, der drängelt sich überall vor!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 's-253',
+      ausdruck: 'Eierkäse',
+      hochdeutsch: 'Quatsch / Unsinn',
+      bedeutung: 'Der „Eierkäse" ist im Sächsischen umgangssprachlich Unsinn oder Quatsch — oft in der Wendung „Das is doch alles Eierkäse!" „Red doch keen Eierkäse!" Etymologisch unklar, aber wohl von der unangenehmen Vorstellung einer Eier-Käse-Mischung abgeleitet. Wird auch als Ausruf des Unwillens verwendet: „Ach, Eierkäse!" Typisch sächsisch-humorvolle Wortprägung. Lebendig in der Alltagssprache, besonders bei älteren Generationen. Drückt Skepsis oder Ablehnung aus.',
+      beispiel: 'Was du da erzählst, is alles Eierkäse!',
+      beispiel_hd: 'Was du da erzählst, ist alles Quatsch!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-254',
+      ausdruck: 'Glabbordeggl',
+      hochdeutsch: 'Klappordeckel / Klappdeckel',
+      bedeutung: 'Der „Glabbordeggl" ist im Sächsischen scherzhaft ein Hut oder Deckel, der klappt — auch übertragen für einen Menschen mit dummem oder schwankendem Verhalten. „Der hat\'n Glabbordeggl uffm Kopp!" Mit der typisch sächsischen Verschleifung von K zu G und einem hörbaren Augenzwinkern. Manchmal auch für einen klappernden, alten Hut oder eine Kappe. Liebevoll-spöttische Wortprägung — zeigt die sächsische Vorliebe für plastische, klangvolle Wörter.',
+      beispiel: 'Setz doch nich den alten Glabbordeggl auf!',
+      beispiel_hd: 'Setz doch nicht den alten Klappdeckel auf!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-255',
+      ausdruck: 'Glunzn',
+      hochdeutsch: 'Glunse / Klümpchen',
+      bedeutung: 'Die „Glunzn" ist im Sächsischen ein Klümpchen oder ein kleiner Klumpen — meist von etwas Weichem wie Mehl, Soße oder Teig. „In der Soße sind lauter Glunzn!" Auch übertragen für eine träge, dickliche Person verwendet. Aus der bäuerlichen Küchentradition stammend — wenn die Mehlschwitze nicht glatt gerührt war. Typisch sächsisches Wort für unerwünschte Klümpchen. Heute noch in der Mundart und vor allem in alten Kochbüchern aus der Region zu finden.',
+      beispiel: 'In meim Pudding sind wieder Glunzn drin!',
+      beispiel_hd: 'In meinem Pudding sind wieder Klümpchen drin!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-256',
+      ausdruck: 'Heimliche Liebe',
+      hochdeutsch: 'Heimliche Liebe / Dresdner Backware',
+      bedeutung: 'Die „Heimliche Liebe" ist eine traditionelle Dresdner Backware — ein süßes Hefegebäck mit Rosinen und Mandeln, oft zur Adventszeit. „Zu Weihnachten gibt\'s bei uns immer Heimliche Liebe!" Der Name kommt vom süßen, verführerischen Geschmack. In sächsischen Bäckereien noch zu finden, besonders in Dresden und Meißen. Variante des Stollens, aber kleiner und alltäglicher. Symbol der sächsischen Backtradition mit poetischem Namen. Beliebt zum Kaffee am Nachmittag.',
+      beispiel: 'Hol mir bitte\'n Stück Heimliche Liebe vom Bäcker mit!',
+      beispiel_hd: 'Hol mir bitte ein Stück Heimliche Liebe vom Bäcker mit!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-257',
+      ausdruck: 'Helbing',
+      hochdeutsch: 'Halbe / halber Liter Bier',
+      bedeutung: 'Der „Helbing" ist im Sächsischen der halbe Liter Bier — die klassische Bestellung in der Kneipe. „Wirt, noch\'n Helbing bitte!" Mit der typisch sächsischen Endung -ing aus „Halbe" verschliffen. In den Brauereistädten Radeberg, Wernesgrün und Köstritz tief verankert. Sachsen hat eine reiche Bierkultur — die ersten urkundlichen Brauereierwähnungen stammen aus dem Mittelalter. Der Helbing ist Maßeinheit und Geselligkeitsritual zugleich. Drückt sächsische Gemütlichkeit am Wirtshaustisch aus.',
+      beispiel: 'Gib uns vier Helbing Radeberger, bitte!',
+      beispiel_hd: 'Gib uns vier halbe Liter Radeberger, bitte!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-258',
+      ausdruck: 'Hibsch',
+      hochdeutsch: 'hübsch',
+      bedeutung: 'Das sächsische „hibsch" ist die mundartliche Form von „hübsch" — mit dem typischen Übergang von Ü zu I. „Das is\'n hibsches Mädel!" Wird sowohl für Personen als auch für Gegenstände verwendet: „Was\'n hibsches Häusl!" Im Erzgebirge und in der Lausitz besonders ausgeprägt. Die typisch sächsische Vokalverschiebung — ähnlich wie „missn" für „müssen". Heute noch in der Alltagssprache lebendig, besonders bei Komplimenten oder Bewunderungsausrufen. Drückt Wohlwollen und Bewunderung aus.',
+      beispiel: 'Die hat\'n hibsches Kleidchen an heute!',
+      beispiel_hd: 'Die hat ein hübsches Kleidchen an heute!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-259',
+      ausdruck: 'Hiebsch und schiebsch',
+      hochdeutsch: 'hübsch und schief',
+      bedeutung: 'Die Wendung „hiebsch und schiebsch" ist eine typisch sächsische Redensart für etwas, das zwar nett aussieht, aber nicht ganz gerade oder perfekt ist. „Das Haus is hiebsch und schiebsch gebaut!" Drückt charmanten Schiefstand oder liebenswerte Unvollkommenheit aus. Wird auch ironisch verwendet für etwas, das nicht ganz stimmt. Zeigt die sächsische Vorliebe für reimende Doppelausdrücke. Häufig in der Alltagssprache mit augenzwinkerndem Ton verwendet. Volkstümlicher Charme.',
+      beispiel: 'Der Zaun is hiebsch und schiebsch, aber er hält!',
+      beispiel_hd: 'Der Zaun ist hübsch und schief, aber er hält!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-260',
+      ausdruck: 'Klappstulle',
+      hochdeutsch: 'Klappstulle / belegtes Brot',
+      bedeutung: 'Die „Klappstulle" ist im Sächsischen ein belegtes Brot, das man zuklappt — wie ein Sandwich. „Pack dir\'ne Klappstulle für unterwegs ein!" Klassisches Pausenbrot der Arbeiter, Bergleute und Schulkinder. Meist mit Wurst, Käse oder Schmalz belegt. „Stulle" ist die typisch ostdeutsche Bezeichnung für eine Brotscheibe. Im Erzgebirge oft mit Quark, Schmalz oder Rauchwurst. Symbol der einfachen, deftigen sächsischen Esskultur. Lebt in der Bergmanntradition fort.',
+      beispiel: 'Mei Vater hat immer drei Klappstulln mit aufn Bau genommen!',
+      beispiel_hd: 'Mein Vater hat immer drei Klappstullen mit auf den Bau genommen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-261',
+      ausdruck: 'Kniegrabber',
+      hochdeutsch: 'Kniegrübchen / Kniekehle',
+      bedeutung: 'Der „Kniegrabber" ist im Sächsischen die Kniekehle oder das Grübchen am Knie. „Mei Gleene hat süße Kniegrabber!" Liebevolle Bezeichnung, oft bei Kindern verwendet. Auch für die Stelle, wo man kitzelig ist. Die typisch sächsische Verbindung von Körperteil und Verniedlichungsform. „Grabber" leitet sich vom Wort „Grube" oder „Grubschen" ab. In der Familiensprache lebendig — besonders beim Liebkosen kleiner Kinder.',
+      beispiel: 'Beim Kitzeln am Kniegrabber lacht das Baby!',
+      beispiel_hd: 'Beim Kitzeln an der Kniekehle lacht das Baby!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-262',
+      ausdruck: 'Knottn',
+      hochdeutsch: 'Knoten / kleines Kind',
+      bedeutung: 'Der „Knottn" ist im Sächsischen sowohl ein Knoten als auch liebevoll ein kleines, kompaktes Kind. „Was\'n süßer Knottn!" Mit der typisch sächsischen Auslassung des Vokals zwischen den Konsonanten. Auch für einen kleinen, kräftigen Burschen verwendet. Drückt familiäre Zärtlichkeit aus. Im Erzgebirge und in der Oberlausitz besonders gebräuchlich. Verwandt mit „Knirps" oder „Wuchtbrumme", aber spezifisch sächsisch. Zeigt die plastische Bildhaftigkeit der Mundart.',
+      beispiel: 'Der kleine Knottn kann schon laufen!',
+      beispiel_hd: 'Das kleine kompakte Kind kann schon laufen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-263',
+      ausdruck: 'Lutschefantsch',
+      hochdeutsch: 'Lutscher / Bonbon',
+      bedeutung: 'Der „Lutschefantsch" ist im Sächsischen scherzhaft ein Lutscher oder ein süßes Bonbon — mit fantasievoller Wortspielerei. „Hol dir\'n Lutschefantsch ausm Glas!" Liebevolle Kinderwortprägung, die das einfache „Lutscher" verziert. Zeigt die sächsische Lust an wortspielerischen Verlängerungen. Erinnert an „Elefant", was die spielerische Note unterstreicht. In der Familiensprache besonders bei Kindern beliebt. Drückt sächsischen Humor und Wortwitz aus.',
+      beispiel: 'Wenn du brav bist, kriegste\'n Lutschefantsch!',
+      beispiel_hd: 'Wenn du brav bist, bekommst du einen Lutscher!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-264',
+      ausdruck: 'Mortzbrocken',
+      hochdeutsch: 'Mordsbrocken / Riesenstück',
+      bedeutung: 'Ein „Mortzbrocken" ist im Sächsischen ein riesiges Stück oder eine gewaltige Sache. „Das war\'n Mortzbrocken Arbeit!" Auch für große Personen oder Gegenstände verwendet: „Der Hund is\'n echter Mortzbrocken!" Die Vorsilbe „Mortz-" (von „Mord") verstärkt die Bedeutung enorm. Typisch sächsische Steigerungsform mit derbem Charakter. Drückt Bewunderung oder Ehrfurcht vor der Größe aus. Lebendig im Alltag, besonders bei körperlicher Arbeit oder im Sport.',
+      beispiel: 'Du hast a Mortzbrocken Kuchen gegessen!',
+      beispiel_hd: 'Du hast ein Riesenstück Kuchen gegessen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-265',
+      ausdruck: 'Nupsi',
+      hochdeutsch: 'Schnuller',
+      bedeutung: 'Der „Nupsi" ist im Sächsischen der liebevolle Kosename für den Schnuller eines Babys. „Wo is\'n der Nupsi vom Gleenen?" Aus dem Verb „nupseln" (saugen) abgeleitet. Generationen sächsischer Eltern haben ihren Kindern den „Nupsi" gegeben. Auch „Lutscher" oder „Lulli" sind regionale Varianten. Wichtiges Wort im Familienalltag mit kleinen Kindern. Drückt Zärtlichkeit und sächsische Verniedlichungstradition aus. Heute noch lebendig in jungen Familien.',
+      beispiel: 'Der Kleene findet seinen Nupsi nich mehr!',
+      beispiel_hd: 'Der Kleine findet seinen Schnuller nicht mehr!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-266',
+      ausdruck: 'Pinscheln',
+      hochdeutsch: 'leicht regnen / nieseln',
+      bedeutung: 'Das Verb „pinscheln" beschreibt im Sächsischen den leichten, feinen Regen — fast wie ein Nieseln. „Es pinschelt heut den ganzen Tag!" Typisches sächsisches Wetterwort für die nasskalten Tage im Frühling und Herbst. Im Erzgebirge mit seinem feuchten Mittelgebirgsklima besonders häufig zu erleben. „Pinscheln" klingt durch den weichen sächsischen Tonfall noch sanfter. Verwandt mit „pieseln". Schöne lautmalerische Naturbeschreibung in der sächsischen Mundart.',
+      beispiel: 'Es pinschelt schon den ganzen Vormittag!',
+      beispiel_hd: 'Es nieselt schon den ganzen Vormittag!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-267',
+      ausdruck: 'Quirevitt',
+      hochdeutsch: 'Quirlevitt / drehender Wirbel',
+      bedeutung: 'Der „Quirevitt" ist im Sächsischen ein drehender Wirbel oder ein lebhaftes, herumspringendes Kind. „Der Kleene is\'n richtiger Quirevitt!" Liebevolle, aber leicht erschöpfte Bezeichnung für quirlige Kinder oder hyperaktive Personen. Vom Verb „quirlen" abgeleitet — wer wie ein Quirl in Bewegung ist. Im Erzgebirge und Vogtland besonders gebräuchlich. Zeigt die sächsische Vorliebe für plastische, klangvolle Wortbildungen. Mit liebevollem Augenzwinkern verwendet.',
+      beispiel: 'Mit drei Kindern hab ich drei Quirevitts im Haus!',
+      beispiel_hd: 'Mit drei Kindern habe ich drei kleine Wirbelwinde im Haus!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-268',
+      ausdruck: 'Schiebock',
+      hochdeutsch: 'Schiebkarre / Schubkarre',
+      bedeutung: 'Der „Schiebock" ist im Sächsischen die alte Bezeichnung für die Schubkarre — wichtigstes Werkzeug im Garten und im Bergbau. „Hol mir den Schiebock ausm Schuppen!" Aus „schieben" und „Bock" zusammengesetzt — der Bock, den man schiebt. Spitzname für die Stadt Bautzen ist übrigens auch „Schiebock", was die Bautzener als Ehrenname tragen. Im Erzgebirge unentbehrlich für Holz, Kohle und Garten. Traditionsreiches sächsisches Handwerkswerkzeug.',
+      beispiel: 'Mit dem Schiebock fahr ich den Mist hintern Garten!',
+      beispiel_hd: 'Mit der Schubkarre fahre ich den Mist hinter den Garten!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-269',
+      ausdruck: 'Stocknudel',
+      hochdeutsch: 'sehr dünne Person',
+      bedeutung: 'Die „Stocknudel" ist im Sächsischen eine scherzhafte Bezeichnung für eine sehr dünne, schlanke Person. „Der is\'ne richtige Stocknudel, isst nie was!" Die Kombination aus „Stock" (dünn wie ein Stock) und „Nudel" (lang und schmal) ist typisch sächsische Bildersprache. Wird liebevoll-spöttisch verwendet, meist im Familien- oder Freundeskreis. Drückt Sorge oder amüsierte Bewunderung über die Schlankheit aus. Volkstümliche, klangvolle Wortprägung mit Augenzwinkern.',
+      beispiel: 'Iss doch mal was, du Stocknudel!',
+      beispiel_hd: 'Iss doch mal was, du dünner Hering!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-270',
+      ausdruck: 'Zucht und Ordnung',
+      hochdeutsch: 'Zucht und Ordnung / strenge Erziehung',
+      bedeutung: 'Die Wendung „Zucht und Ordnung" ist in Sachsen besonders im preußisch-sächsischen Erziehungsverständnis verankert — strenge, aber gerechte Erziehung. „Bei uns daheim herrscht Zucht und Ordnung!" Tief in der protestantischen Tradition Sachsens verwurzelt. Heute oft ironisch verwendet oder mit Nostalgie an die Großelternzeit. Auch in DDR-Zeiten als pädagogisches Leitwort verwendet. Drückt das sächsische Bedürfnis nach klaren Regeln und Strukturen aus. Generationsübergreifend bekannt.',
+      beispiel: 'Bei mir zu Hause gilt noch Zucht und Ordnung!',
+      beispiel_hd: 'Bei mir zu Hause gilt noch Zucht und Ordnung!',
+      kategorie: 'familie'
     }
   ]
 };

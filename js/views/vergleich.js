@@ -80,7 +80,7 @@ export function renderVergleich(root) {
           el('button', {
             class: 'compare-cell-speak',
             title: 'Anhören',
-            onClick: (e) => { e.stopPropagation(); sfx.click(); speak(it.ausdruck); }
+            onClick: (e) => { e.stopPropagation(); sfx.click(); speak(it.ausdruck, it.dialektLang || 'de-DE'); }
           }, icon('speaker', { size: 14 }))
         ))
       )
