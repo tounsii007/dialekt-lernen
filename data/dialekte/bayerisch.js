@@ -2674,6 +2674,276 @@ export default {
       beispiel: 'A Schreiner-Möbel hoit a Leben lang, da geht nix kaputt.',
       beispiel_hd: 'Ein Tischler-Möbelstück hält ein Leben lang, da geht nichts kaputt.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'by-331',
+      ausdruck: 'Schwoga',
+      hochdeutsch: 'Schwager',
+      bedeutung: 'Da „Schwoga" — bayerische Aussprache von „Schwager". „Mei Schwoga is a Schreiner aus Rosenheim." In der traditionellen bayerischen Großfamilie war die Schwager-Beziehung von zentraler Bedeutung — Geschäftspartner, Trinkfreund, Geschäftsführer. Hochzeiten zwischen Familien stärkten Schwager-Netzwerke. „Schwogerin" entsprechend die Schwägerin. Heute weniger bedeutsam, aber familiär noch fest verankert.',
+      beispiel: 'Mei Schwoga und i, mia fahr\'n alle Jahr in d\'Berg miteinander.',
+      beispiel_hd: 'Mein Schwager und ich, wir fahren jedes Jahr miteinander in die Berge.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-332',
+      ausdruck: 'Tant\'l',
+      hochdeutsch: 'Tante (verniedlicht)',
+      bedeutung: '„Tant\'l" ist die liebevolle bayerische Verkleinerungsform der Tante. „Mei Tant\'l Resi kummt am Sonntag zum Kaffee." Häufig für ältere, freundliche Frauen verwendet, auch wenn keine direkte Verwandtschaft besteht. Die Verkleinerungssilbe „-l" macht die Person besonders nahbar und sympathisch. Klassische Familien-Anrede in der bayerischen Verwandtschafts-Kultur.',
+      beispiel: 'Mei Tant\'l Resi backt die beste Sachertorte weit und breit.',
+      beispiel_hd: 'Meine Tante Resi backt die beste Sachertorte weit und breit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-333',
+      ausdruck: 'Vetter',
+      hochdeutsch: 'Cousin',
+      bedeutung: 'Da „Vetter" ist der bayerische Begriff für den Cousin. „Mei Vetter aus Garmisch is a guader Skifahrer." Im alten Bayern wurde der Begriff auch auf entfernte Verwandte angewendet, oder als freundliche Anrede für Männer ähnlichen Alters: „Servus, Vetter!" Heute spezifischer in der Familien-Verwendung. Weibliche Form ist „Base" für „Cousine".',
+      beispiel: 'Mei Vetter und i ham als Buam zsam Heuwender baut.',
+      beispiel_hd: 'Mein Cousin und ich haben als Jungen zusammen Heuwender gebaut.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-334',
+      ausdruck: 'Mama',
+      hochdeutsch: 'Mama / Mutter',
+      bedeutung: 'D\'„Mama" — die bayerische Mutter, herzlich, oft autoritativ, immer präsent. „D\'Mama hot scho a Brez\'n parat, wenn ma vom Schui kummt." In der bayerischen Familienhierarchie eine Schlüsselrolle, im Haushalt zentral. Auch alte Frauen werden manchmal „Mama" genannt: „Mama Gisela, die Wirtin vom Wirtshaus zur Post." Verkleinerung: „Mam\'l".',
+      beispiel: 'D\'Mama hot heid Sauerbraten kocht, lecker!',
+      beispiel_hd: 'Die Mama hat heute Sauerbraten gekocht, lecker!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-335',
+      ausdruck: 'Erbgut',
+      hochdeutsch: 'Erbe / Familienbesitz',
+      bedeutung: 'Da „Erbgut" — das Familienerbe, vor allem der bäuerliche Hof. „Bei uns wird des Erbgut immer dem Ältesten überlassen." In der bayerischen Bauerntradition entscheidend: der Bauernhof bleibt zusammen, geht an den ältesten Sohn (Anerben-Recht). Die jüngeren Kinder werden ausgezahlt oder bekommen einen Beruf vermittelt. „Erbgut" ist materiell, aber auch traditioneller Lebensweise.',
+      beispiel: 'A jeder Bua schaut, dass\'s Erbgut beim Hof zsam-bleibt.',
+      beispiel_hd: 'Ein jeder Junge schaut, dass das Erbe beim Hof zusammen bleibt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-336',
+      ausdruck: 'Zither',
+      hochdeutsch: 'Zither',
+      bedeutung: 'Die „Zither" ist ein klassisches bayerisch-alpenländisches Saiteninstrument — flach, mit 30+ Saiten, wird auf den Schoß gelegt. „D\'Zither braucht jahrelanges Üben, aber sie hot a unvergleichlicher Klang." Berühmt durch Anton Karas und das „Harry-Lime-Thema" aus dem Dritten Mann. In der bayerischen Stubnmusi unverzichtbar. Der Klang ist sanft, melancholisch, herzergreifend.',
+      beispiel: 'Mei Großmuada hot die Zither g\'spuit, wia da Tag lang war.',
+      beispiel_hd: 'Meine Großmutter hat die Zither gespielt, so lang der Tag war.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-337',
+      ausdruck: 'Volksmusi',
+      hochdeutsch: 'Volksmusik',
+      bedeutung: '„Volksmusi" ist das Sammelwort für die alpenländische Volksmusik aus Bayern, Österreich und Südtirol. „Im BR-Fernsehen kummt jed\'n Sonntag a Volksmusi-Sendung." Umfasst Stubnmusi, Tanzlmusi, Blasmusik, Almgesang, Jodler. Sendungen wie „Wirtshausmusikanten" oder „Musikantenstadl" haben die Volksmusi populär gemacht. Heute auch in modernen Variationen — Bandl, La Brass Banda — neu interpretiert.',
+      beispiel: 'D\'Volksmusi auf BR ist no\' echte Tradition, koa Schlager.',
+      beispiel_hd: 'Die Volksmusik auf BR ist noch echte Tradition, kein Schlager.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-338',
+      ausdruck: 'Almgesang',
+      hochdeutsch: 'Almgesang / Jodelgesang',
+      bedeutung: 'Da „Almgesang" — das gesungene Lied auf der Alm, oft jodelnd, ohne Text, mit hohem Stimmwechsel. „Wenn die Sennerin am Almgesang anstimmt, hört\'s sogar im Tal." Diente früher zur Verständigung über lange Distanzen — Wetterwarnungen, Hilferufe, Liebesgrüße. Heute pflegen Alpenchor-Gruppen den Almgesang als Brauchtum. Charakteristisch das schnelle Kopf-Bruststimmen-Wechseln.',
+      beispiel: 'Ban Almabtrieb hot d\'Sennerin a langes Almgesang aufgestimmt.',
+      beispiel_hd: 'Beim Almabtrieb hat die Sennerin einen langen Almgesang angestimmt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-339',
+      ausdruck: 'Marktl',
+      hochdeutsch: 'Wochenmarkt',
+      bedeutung: 's\'„Marktl" — der kleine Markt, meist Wochenmarkt im Dorf oder Stadtteil. „Am Marktl gibt\'s an frischen Käs vom Bauern direkt." Verkleinerung von „Markt". In bayerischen Städten wie München (Viktualienmarkt), Augsburg, Nürnberg jahrhundertelange Tradition. Bauern, Imker, Käserei-Frauen, Bäcker bieten direkt an. Wochenmärkte sind weiterhin sozialer Treffpunkt der Nachbarschaft.',
+      beispiel: 'Am Marktl in Bad Tölz krieg ich immer die besten Erdbeeren.',
+      beispiel_hd: 'Auf dem Wochenmarkt in Bad Tölz bekomme ich immer die besten Erdbeeren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-340',
+      ausdruck: 'Bahnsteig',
+      hochdeutsch: 'Bahnsteig',
+      bedeutung: 'Da „Bahnsteig" — bayerische Aussprache wie hochdeutsch, aber im Sprachgebrauch typisch. „Am Bahnsteig 4 fährt da Zug nach Salzburg ab." In Bayern hat fast jede Kleinstadt einen historischen Bahnhof aus der Königlich-Bayerischen-Staatseisenbahn-Zeit. Der Bahnsteig als sozialer Ort — Abschied, Wiedersehen, Wartesaal-Gespräche. Touristisch interessante Bahnhofs-Architektur in München, Augsburg, Würzburg.',
+      beispiel: 'Mia treff\'n uns am Bahnsteig 6, da fährt da ICE durch.',
+      beispiel_hd: 'Wir treffen uns am Bahnsteig 6, da fährt der ICE durch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-341',
+      ausdruck: 'Wochenend',
+      hochdeutsch: 'Wochenende',
+      bedeutung: 's\'„Wochenend" — die bayerische Aussprache von Wochenende ohne das End-„e". „Am Wochenend fahr\'n ma in d\'Berg." In der bayerischen Freizeit-Kultur traditionell für Familienzeit, Bergausflug, Wirtshausbesuch reserviert. „Sportwochenend", „Hochzeitswochenend", „Bergwochenend" sind Standard-Begriffe. Sonntags Frühschoppen, Mittagessen daheim oder in der Lieblings-Wirtschaft.',
+      beispiel: 'Am Wochenend gehn ma auf d\'Wallberg-Tour, dees Wetter passt.',
+      beispiel_hd: 'Am Wochenende gehen wir auf die Wallberg-Tour, das Wetter passt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-342',
+      ausdruck: 'Vesper',
+      hochdeutsch: 'Vesper / Abendessen',
+      bedeutung: 'D\'„Vesper" — das einfache, kalte Abendessen mit Brot, Wurst, Käse und vielleicht ein Bier. „A Vesper auf da Alm, des is no a Genuss." Oder die kirchliche Vesper, der abendliche Gottesdienst. In Bayern oft als Picknick auf einer Almhütte oder im Garten verzehrt. Schinken, Speck, Käse, Radi, Bier — die Vesper-Brett-Klassiker. Bayerischer Schwager des „Brotzeit".',
+      beispiel: 'A schöne Vesper auf da Almhütt\'n mit Bauernspeck und Bier!',
+      beispiel_hd: 'Eine schöne Vesper auf der Almhütte mit Bauernspeck und Bier!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-343',
+      ausdruck: 'Schmankerl-Tante',
+      hochdeutsch: 'Klatsch-Tante',
+      bedeutung: 'D\'„Schmankerl-Tante" — eine Person, die gerne Neuigkeiten und Klatsch verbreitet. „Die Schmankerl-Tante von gegen über wei\'s wieder ois." Im Dorfkontext oft die ältere Nachbarin am Gartenzaun, die mit Bezugen erzählt was sich in der Nachbarschaft tut. Der „Schmankerl"-Aspekt verweist auf die saftigen, manchmal übertriebenen Geschichten. Liebevoll-ironisch gemeint, ohne wirkliche Bösheit.',
+      beispiel: 'Frag die Frau Maier, die is die Schmankerl-Tante vom Dorf.',
+      beispiel_hd: 'Frag Frau Maier, sie ist die Klatsch-Tante vom Dorf.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-344',
+      ausdruck: 'Hot koan Wert mehr',
+      hochdeutsch: 'Hat keinen Sinn mehr',
+      bedeutung: '„Hot koan Wert mehr" — eine resignative bayerische Redewendung. „Reden mit dem Saukerl hot koan Wert mehr." Drückt aus, dass weitere Bemühungen sinnlos sind. Klassischer bayerischer Pragmatismus: Wenn ein Versuch scheitert, hört man auf. Wird oft am Stammtisch verwendet, wenn politische Diskussionen ins Nichts laufen. Stoische Akzeptanz der Realität als bayerische Tugend.',
+      beispiel: 'Mit dera Bürokratie hot\'s redn koan Wert mehr, mei!',
+      beispiel_hd: 'Mit dieser Bürokratie hat es reden keinen Sinn mehr, meine Güte!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-345',
+      ausdruck: 'Da is\'s aus',
+      hochdeutsch: 'Da ist Schluss',
+      bedeutung: '„Da is\'s aus" — eine endgültige Aussage: hier ist Schluss, keine Diskussion mehr. „Wenn d\'Frau zhaus rumschimpft, da is\'s aus mit\'m Skifoarn." Wird genutzt, wenn eine Autorität die Diskussion beendet. Klare bayerische Hierarchien — sei es im Familienleben, beim Stammtisch oder im Trachtenverein. Knappe, direkte Ansage ohne Möglichkeit der Verhandlung.',
+      beispiel: 'Wenn da Papa „nei" sagt, da is\'s aus, da diskutierst nimma.',
+      beispiel_hd: 'Wenn der Papa „nein" sagt, da ist Schluss, da diskutierst du nicht mehr.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-346',
+      ausdruck: 'Schee',
+      hochdeutsch: 'Schön',
+      bedeutung: '„Schee" — die altbayerische Aussprache von „schön", mit verschluckter „ö"-Aussprache zu „ee". „Des is a schee\'s Hauserl, des steht do scho lang." Eines der grundlegendsten bayerischen Adjektive, allgegenwärtig. „Schee gmacht!" als Anerkennung. „Schee dass\'st da bist." als Begrüßung. „Es war schee bei dir." als Abschied. Wird mit unterschiedlicher Intonation zur Lob-, Frage- oder Ironie-Form.',
+      beispiel: 'Schee dass\'st mi noch amoi besuchst, kumm rein!',
+      beispiel_hd: 'Schön dass du mich noch einmal besuchst, komm rein!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-347',
+      ausdruck: 'Jessas',
+      hochdeutsch: 'Jesus / Oh mein Gott',
+      bedeutung: '„Jessas" — bayerischer Stoßseufzer aus dem Namen Jesus, ohne wirkliche Religionsabsicht. „Jessas, was is denn passiert?" Drückt Überraschung, Schock oder Bedauern aus. Verwandt mit „Jessas Maria und Joseph" — voller Stoßseufzer der Heiligen Familie. Im katholisch geprägten Bayern alltäglich. „Jessas Mariand" als Steigerung. Stammt aus der barocken Volksfrömmigkeit.',
+      beispiel: 'Jessas, mei Kaffee is umgfallen!',
+      beispiel_hd: 'Oh mein Gott, mein Kaffee ist umgefallen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-348',
+      ausdruck: 'Hoid d\'Goschn',
+      hochdeutsch: 'Halt den Mund',
+      bedeutung: '„Hoid d\'Goschn" — direkte bayerische Aufforderung zur Ruhe. „Hoid d\'Goschn und hör endlich zu!" Mehr deftig als beleidigend, im Familienkontext oder bei Stammtisch-Hitze. Schärfere Variante: „Hoid d\'Goschn, du Riester!" Die bayerische Direktheit drückt sich in solchen Formeln aus, die auf Hochdeutsch unhöflich wirken — im Bairischen sind sie alltägliche Sprache.',
+      beispiel: 'Hoid d\'Goschn, du Trampel, i mög des Spui sehen!',
+      beispiel_hd: 'Halt den Mund, du Tollpatsch, ich möchte das Spiel sehen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-349',
+      ausdruck: 'Bergsteiger',
+      hochdeutsch: 'Bergsteiger',
+      bedeutung: 'A „Bergsteiger" ist mehr als ein Wanderer — ein Mensch, der ernsthaft, mit Klettertechnik, in die hohen bayerischen und alpinen Berge geht. „Da Bergsteiger braucht koa Sechsfach-Sicherung, wenn er weiß was er tut." Tradition mit der Watzmann-Erstbesteigung 1800 (oder ähnlich). Heute organisiert im DAV (Deutscher Alpenverein). Die bayerischen Berge sind das Trainingsgelände für Alpinisten weltweit.',
+      beispiel: 'Mei Vada war a leidenschaftlicher Bergsteiger, hot ois bestiegen.',
+      beispiel_hd: 'Mein Vater war ein leidenschaftlicher Bergsteiger, hat alles bestiegen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-350',
+      ausdruck: 'Schitouren',
+      hochdeutsch: 'Skitouren',
+      bedeutung: '„Schitouren" — das alpine Skigehen abseits der Pisten, mit Fellen unter den Skiern. „A Schitour im Karwendel, da spürst no die Stille der Berge." Anstrengend, technisch anspruchsvoll, im Winter Hochburg der bayerischen Outdoor-Kultur. Klassiker: Wallberg, Roßstein, Zugspitze. Lawinengefahr macht es zur Risiko-Aktivität. Heute Boom, daher Probleme mit überfüllten Routen.',
+      beispiel: 'Am Wochenend gehn ma a Schitour ins Karwendel.',
+      beispiel_hd: 'Am Wochenende gehen wir eine Skitour ins Karwendel.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-351',
+      ausdruck: 'Felsklettern',
+      hochdeutsch: 'Felsklettern',
+      bedeutung: '„Felsklettern" — der vertikale Sport am Naturfelsen, in Bayern besonders in den Voralpen und im Frankenjura beliebt. „D\'Frankenjura is\'a europäisches Top-Klettergebiet." Beginn in der bayerischen Klettertradition mit Hermann von Barth im 19. Jahrhundert. Heute Sport für alle Altersklassen, vom Sportkletterer bis zum Hochalpinen. Verbreitung durch Boulder-Hallen in jeder größeren Stadt.',
+      beispiel: 'Am Sonntag gehn ma Felsklettern in da Frankenjura.',
+      beispiel_hd: 'Am Sonntag gehen wir Felsklettern in der Fränkischen Schweiz.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-352',
+      ausdruck: 'Mountainbike',
+      hochdeutsch: 'Mountainbike',
+      bedeutung: 's\'„Mountainbike" — das Bergrad, in Bayern eine der populärsten Sport-Varianten. „A Mountainbike-Tour vom Tegernsee aus, des is\'a Erlebnis." Die bayerischen Berge bieten ideale Bedingungen — Forstwege, Singletrails, Downhill-Strecken. Kontroversen mit Wanderern wegen Trail-Sharing. Wettkämpfe wie der Salzkammergut-Trophy oder die TransAlp ziehen Tausende an.',
+      beispiel: 'Mit\'m Mountainbike um\'n Schliersee, des is so a 60-Kilometer-Tour.',
+      beispiel_hd: 'Mit dem Mountainbike um den Schliersee, das ist eine 60-Kilometer-Tour.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-353',
+      ausdruck: 'Pfia Gott',
+      hochdeutsch: 'Pfüat\' Gott (Abschied)',
+      bedeutung: '„Pfia Gott" — sehr verkürzte und verschluckte altbayerische Abschiedsformel. „Pfia Gott, lieber Hans, bis bald!" Eine besonders volkstümliche, ländliche Variante von „Pfüat di Gott". Wird beim Verabschieden zwischen Bekannten verwendet, oft am Wirtshaus-Ausgang. Klingt fast jodelhaft, der „Pfia"-Laut ist sehr charakteristisch. Generationenverbindende Abschiedsformel.',
+      beispiel: 'Pfia Gott, Burschen, mia sehen uns am Stammtisch!',
+      beispiel_hd: 'Pfüat\' Gott, Burschen, wir sehen uns am Stammtisch!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-354',
+      ausdruck: 'Grüaß di Gott',
+      hochdeutsch: 'Grüß dich Gott',
+      bedeutung: '„Grüaß di Gott" — herzliche bayerische Begrüßung mit religiöser Wurzel. „Grüaß di Gott, Sepp, schön dass\'st da bist!" Variante von „Griaß Gott" mit explizitem „dich". Wird oft beim Eintreten in Wirtshaus, Geschäft oder Wohnung verwendet. Der religiöse Bezug ist heute meist unbewusst — wird auch von Nicht-Katholiken verwendet. Sehr warme, persönliche Begrüßungsformel.',
+      beispiel: 'Grüaß di Gott, mei Lieba, kumm her und setz di!',
+      beispiel_hd: 'Grüß dich Gott, mein Lieber, komm her und setz dich!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-355',
+      ausdruck: 'Wia geht\'s wia steht\'s',
+      hochdeutsch: 'Wie geht\'s wie steht\'s',
+      bedeutung: '„Wia geht\'s wia steht\'s" — gereimte bayerische Begrüßungsfloskel, herzlich-spielerisch. „Wia geht\'s wia steht\'s, Hans? Lang ham mia uns nimma gsehn." Längere Variante des einfachen „Wia geht\'s?" Drückt aufrichtiges Interesse aus, lädt zum Erzählen ein. Klassische Formel beim Stammtisch oder beim zufälligen Treffen auf der Straße. Volksetümlich wirkende Reim-Eleganz.',
+      beispiel: 'Wia geht\'s wia steht\'s, Servus, alter Freund!',
+      beispiel_hd: 'Wie geht\'s wie steht\'s, hallo, alter Freund!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-356',
+      ausdruck: 'Wettergrundl',
+      hochdeutsch: 'Wettergrundlage / Großwetterlage',
+      bedeutung: 's\'„Wettergrundl" — die längerfristige Wetterlage. „D\'Bauern schauen aufs Wettergrundl, ned aufs Wetter heid." Bauern und Hüttenwirte beobachten klassische Indikatoren: Wolken-Form, Wind-Richtung, Tier-Verhalten. Bauernregeln basieren auf jahrhundertelanger Erfahrung. Der professionelle Wetterbericht ergänzt heute die traditionelle Wetter-Beobachtung. „A Wettergrundl-Wechsel kummt am Wochenend."',
+      beispiel: 'Des Wettergrundl wird übermorgen wechseln, sag i da.',
+      beispiel_hd: 'Die Wettergrundlage wird übermorgen wechseln, sage ich dir.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-357',
+      ausdruck: 'Bauernregeln',
+      hochdeutsch: 'Bauernregeln',
+      bedeutung: 'Die „Bauernregeln" — gereimte Weisheiten zur Wetter-Vorhersage. „Wenn da Hahn am Mist krätzt, am Donnerstag kummt\'s Wetter." Generationenüberlieferte Beobachtungen aus der bäuerlichen Lebenswelt. Manche sind statistisch belegt, andere folkloristische Sprüche. Berühmt: „Friert\'s im Dezember, dann is\'s no koid bis April." Tradition lebt im bayerischen Volksleben weiter, auch wenn Wetter-Apps sie verdrängen.',
+      beispiel: 'Mei Großvada hot Bauernregeln im Kopf, jede für jeden Heiligen.',
+      beispiel_hd: 'Mein Großvater hat Bauernregeln im Kopf, jede für jeden Heiligen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-358',
+      ausdruck: 'Hochnebel',
+      hochdeutsch: 'Hochnebel',
+      bedeutung: 'Da „Hochnebel" — eine bayerische Wetterlage, bei der eine Hochnebel-Decke das Voralpenland bedeckt, während auf den Bergen die Sonne scheint. „Bei Hochnebel solltest auf\'n Wendelstein, da is\'s schön." Klassische Inversionswetterlage im Winter. „Vom Hochnebel über die Sonne" — bayerischer Bergsport-Geheimtipp. Wetterbericht-Stamm-Vokabel der Münchner Wettergeografie.',
+      beispiel: 'Ban Hochnebel im Tal is\'s am Wendelstein traumhaft sonnig.',
+      beispiel_hd: 'Bei Hochnebel im Tal ist es am Wendelstein traumhaft sonnig.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-359',
+      ausdruck: 'Moosbruckn',
+      hochdeutsch: 'Moorboden / Hochmoor',
+      bedeutung: 'D\'„Moosbruckn" — das Hochmoor mit weichem Moos-Boden, vielen kleinen Wasserlöchern, oft schwer zu durchqueren. „Pass auf in da Moosbruckn, da kannst leicht einbrechen." Charakteristisch für das bayerische Voralpenland (Murnauer Moos, Erdinger Moos). Naturschutzgebiet, vielfältig in der Flora — Wollgras, Sonnentau, Latschen. Schaltzkohle wurde früher dort gestochen, heute reine Naturreservate.',
+      beispiel: 'In der Moosbruckn vom Murnauer Moos gibt\'s seltene Vögel.',
+      beispiel_hd: 'Im Hochmoor vom Murnauer Moos gibt es seltene Vögel.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-360',
+      ausdruck: 'Maibaum-Auswählen',
+      hochdeutsch: 'Maibaum-Auswählen',
+      bedeutung: 's\'„Maibaum-Auswählen" — das winterliche Auswählen des perfekten Fichtenstamms für den Maibaum. „D\'Burschen ham heut ihren Maibaum ausg\'wählt im Forst." Findet im Februar / März statt, der Stamm wird markiert, dann nach der Schneeschmelze gefällt. Im April mit traditioneller Technik gehobelt, blau-weiß gestrichen, geschmückt. Das Auswählen ist Männer-Tradition mit eigener Wirtshausfeier danach.',
+      beispiel: 'Bei uns ham d\'Burschen heid s\'Maibaum-Auswählen gmacht.',
+      beispiel_hd: 'Bei uns haben die Burschen heute das Maibaum-Auswählen gemacht.',
+      kategorie: 'feiern'
     }
   ]
 };
