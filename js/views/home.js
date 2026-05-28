@@ -128,9 +128,9 @@ export function renderHome(root, params = {}) {
   view.appendChild(sec);
 
   // Features section — animated stroke icons
-  view.appendChild(el('section', { class: 'section section-row', dataset: { reveal: '' } },
+  view.appendChild(el('section', { class: 'section section-row', dataset: { reveal: '' }, 'aria-label': 'App-Features-Übersicht' },
     el('div', { class: 'card', dataset: { spotlight: '' } },
-      el('div', { class: 'card-title' }, 'Was kannst du hier tun?'),
+      el('h2', { class: 'card-title' }, 'Was kannst du hier tun?'),
       el('ul', { class: 'feature-list' },
         el('li', {}, el('span', { class: 'fi' }, icon('book')),    el('div', {}, el('b', {}, 'Ausdrücke entdecken — '), 'Browse durch hunderte Wörter und Redewendungen aus allen Regionen.')),
         el('li', {}, el('span', { class: 'fi' }, icon('cards')),   el('div', {}, el('b', {}, 'Karteikarten — '), 'Lerne wie mit Anki: vorne der Dialekt, hinten die Bedeutung auf Hochdeutsch.')),
@@ -271,10 +271,10 @@ function renderDailyExpression(focus = false) {
   // Wenn via Manifest-Shortcut (daily=1) aufgerufen: größere Karten-Variante
   // mit Beispiel-Satz und prominenteren Aktionen.
   const dailyClasses = 'daily' + (focus ? ' daily-large' : '');
-  return el('section', { class: 'section' },
+  return el('section', { class: 'section', 'aria-label': 'Ausdruck des Tages' },
     el('div', { class: dailyClasses },
       el('div', { class: 'daily-content' },
-        el('span', { class: 'daily-eyebrow' }, focus ? '🌟 Heutiger Ausdruck' : '☀️ Ausdruck des Tages'),
+        el('h2', { class: 'daily-eyebrow' }, focus ? '🌟 Heutiger Ausdruck' : '☀️ Ausdruck des Tages'),
         el('div', { class: 'daily-expr' }, expr.ausdruck),
         el('div', { class: 'daily-hd' }, '↦ ' + expr.hochdeutsch),
         el('div', { class: 'daily-meaning' }, expr.bedeutung),

@@ -2404,6 +2404,276 @@ export default {
       beispiel: 'Aufs Erdinger Volksfest gehn ma jedes Jahr im September.',
       beispiel_hd: 'Aufs Erdinger Volksfest gehen wir jedes Jahr im September.',
       kategorie: 'feiern'
+    },
+    {
+      id: 'by-301',
+      ausdruck: 'Mei oh mei',
+      hochdeutsch: 'Mein Gott / Oh je',
+      bedeutung: '„Mei oh mei" ist die verstärkte Form des bayerischen Universalausrufs „Mei". „Mei oh mei, dees gibt\'s ja gar ned!" Wird bei Überraschung, Erstaunen, Mitgefühl, leichtem Schock oder auch nur als Pausenfüller verwendet. Die Wiederholung signalisiert: jetzt geht\'s wirklich um was. Eines der charmantesten bayerischen Wortspiele, das die Emotionalität des Sprechers ausdrückt ohne konkreten Inhalt.',
+      beispiel: 'Mei oh mei, wia da Bua scho gewachsn is!',
+      beispiel_hd: 'Oh je, wie der Junge schon gewachsen ist!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-302',
+      ausdruck: 'Au weh',
+      hochdeutsch: 'Au weh / Oh nein',
+      bedeutung: '„Au weh" ist der bayerische Schmerz-, Mitleid- und Bedauernsruf. „Au weh, hot er sich verletzt!" Geht zurück auf das mittelhochdeutsche „ouwe" (Klageruf). Auch ironisch: „Au weh, des wird teuer!" oder verstärkt: „Au weh zwiderwurzn". Die ganze Bandbreite menschlicher Anteilnahme in zwei Silben. Klang ist tief, lang gezogen, von Herzen.',
+      beispiel: 'Au weh, da steht ja koan einziger Wagen mehr da!',
+      beispiel_hd: 'Oh je, da steht ja kein einziger Wagen mehr da!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-303',
+      ausdruck: 'Furchtbar froh',
+      hochdeutsch: 'Sehr glücklich',
+      bedeutung: '„Furchtbar froh" ist eine typisch bayerische paradox anmutende Steigerung — „furchtbar" im Sinne von „außerordentlich", nicht „angsteinflößend". „I bin furchtbar froh, dass du kommen konnst!" Die Konstruktion mit negativ konnotierten Verstärkern für positive Aussagen ist im Bairischen weit verbreitet: „grauslich guat", „g\'fährlich schee", „dirrisch lieb". Sprachliche Untertreibung als kulturelle Eigenheit.',
+      beispiel: 'I bin furchtbar froh, dass mir uns wieder gsehn!',
+      beispiel_hd: 'Ich bin sehr glücklich, dass wir uns wiedergesehen haben!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-304',
+      ausdruck: 'Sappradi',
+      hochdeutsch: 'Donnerwetter / Verflixt',
+      bedeutung: '„Sappradi" — auch „Saperlott" — ist ein milder Fluchausdruck aus einer Verballhornung von „Sapperlott" oder „Sakrament". „Sappradi, jetzt hob i\'s vergessen!" Familienfreundlich, wird oft von älteren Generationen verwendet, statt eines echten Fluchs. Hat eine ironisch-altmodische Note und gehört zur Schicht der bayerischen Notlügen-Flüche. Verwandt mit „Kruzitürken" und „Himmiherrgott".',
+      beispiel: 'Sappradi, mei Brillen hob i schon wieder verloren!',
+      beispiel_hd: 'Verflixt, meine Brille habe ich schon wieder verloren!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-305',
+      ausdruck: 'Schiach',
+      hochdeutsch: 'Hässlich / unschön',
+      bedeutung: '„Schiach" — bayerische Variante des hochdeutschen „scheu", bedeutet aber „hässlich" oder „unschön". „A schiacher Tag heid, ganz vernebelt." Auch übertragen: „a schiachs Verhältnis", „a schiachs Gschicht". Der Komparativ ist „schiacha" (hässlicher), der Superlativ „am schiachstn" (am hässlichsten). Eines der grundlegenden Wertungs-Adjektive der bayerischen Alltagssprache.',
+      beispiel: 'Des is a schiacha Tag mit dem Schmuddelwetter.',
+      beispiel_hd: 'Das ist ein hässlicher Tag mit dem Schmuddelwetter.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-306',
+      ausdruck: 'Da geht da Hut hoch',
+      hochdeutsch: 'Das macht mich wütend',
+      bedeutung: '„Da geht da Hut hoch" ist eine bildhafte bayerische Redensart für aufsteigenden Ärger. „Wann i des hör, da geht da Hut hoch!" Stammt aus der Vorstellung, der Kopf werde so heiß vor Wut, dass der Hut hochfliegt. Mit Hutkultur des 19. Jahrhunderts verbunden. Heute noch in der mündlichen Tradition lebendig, besonders bei Stammtisch-Diskussionen über Politik oder Sport.',
+      beispiel: 'Bei dera Bürokratie geht da Hut hoch, sag i da!',
+      beispiel_hd: 'Bei dieser Bürokratie macht es mich wütend, sage ich dir!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-307',
+      ausdruck: 'Da legst di nieder',
+      hochdeutsch: 'Das ist unglaublich',
+      bedeutung: '„Da legst di nieder" — wörtlich „da legst du dich hin (vor Staunen)" — drückt höchste Verwunderung aus. „Da legst di nieder, was der Bua scho ois gschafft hot!" Wird zustimmend, anerkennend, manchmal auch ironisch verwendet. Eine sehr bildkräftige bayerische Steigerungsformel, die das Außergewöhnliche eines Sachverhalts unterstreicht. Klassische Stammtisch-Bemerkung.',
+      beispiel: 'Da legst di nieder, dees gibt\'s ja gar ned!',
+      beispiel_hd: 'Das ist unglaublich, das gibt es ja gar nicht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-308',
+      ausdruck: 'Hot Pulver',
+      hochdeutsch: 'Hat Energie / ist kräftig',
+      bedeutung: '„Hot Pulver" — wörtlich „hat Pulver" (wie Schießpulver) — bezeichnet jemanden mit viel Kraft, Energie oder Schwung. „Da Bua hot Pulver, der ko richtig zupackn." Auch im Sport: „D\'Mannschaft hot heid Pulver" — sie spielt mit viel Schwung. Geht zurück auf die Vorstellung der Munitions-Versorgung — wer Pulver hat, kann sich durchsetzen. Männliches Kompliment.',
+      beispiel: 'Der neue Kollege hot Pulver, der wird sich durchsetzn!',
+      beispiel_hd: 'Der neue Kollege hat Energie, der wird sich durchsetzen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-309',
+      ausdruck: 'Da kennst di aus',
+      hochdeutsch: 'Da blickst du durch / kennst dich aus',
+      bedeutung: '„Da kennst di aus" ist die bayerische Anerkennung für Expertise. „Bei da Quetschn kennt sie sich aus!" Wird in zwei Varianten verwendet: als Lob für Fachwissen oder ironisch, wenn jemand etwas Komplexes nicht versteht: „Beim Steuerrecht da kennst di aus!" Die Doppeldeutigkeit ist klassisch bayerischer Humor. Schließt oft die Hand-an-die-Stirn-Geste mit ein.',
+      beispiel: 'Beim Bier-Brauen kennt sich da Sepp gscheid aus!',
+      beispiel_hd: 'Beim Bier-Brauen kennt sich der Sepp ordentlich aus!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-310',
+      ausdruck: 'Wia\'s grad einfallt',
+      hochdeutsch: 'Wie es gerade einfällt',
+      bedeutung: '„Wia\'s grad einfallt" beschreibt eine improvisierende, ungeplante Vorgehensweise. „Da Maler hot oafach gmoit, wia\'s grad einfallt." Charakteristisch für die entspannte bayerische Lebensart: nicht alles muss durchgeplant sein, manchmal entscheidet die Eingebung. Auch leicht abwertend verwendet: jemand der nicht systematisch arbeitet. Drückt sowohl Spontanität als auch Unzuverlässigkeit aus.',
+      beispiel: 'Mei Bruada arbeit\'t halt wia\'s grad einfallt, des is sei Methode.',
+      beispiel_hd: 'Mein Bruder arbeitet halt wie es gerade einfällt, das ist seine Methode.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-311',
+      ausdruck: 'Trampel',
+      hochdeutsch: 'Tollpatschiger Mensch',
+      bedeutung: 'A „Trampel" ist eine schwerfällig-tollpatschige Person, oft groß und ungeschickt. „Du Trampel, schau halt wos d\'hinrennst!" Bezieht sich oft auf körperliche Ungeschicklichkeit. Liebevoll-vorwurfsvoll im Familienkreis verwendet. Vom Verb „trampeln" (schwerfällig gehen). Steigerung: „Riesentrampel". Eine der milderen bayerischen Schelten ohne ernste Beleidigungsabsicht.',
+      beispiel: 'Pass auf, du Trampel, du rennst grad in d\'Vase!',
+      beispiel_hd: 'Pass auf, du Tollpatsch, du rennst gerade in die Vase!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-312',
+      ausdruck: 'Mistvieh',
+      hochdeutsch: 'Mistvieh / Schimpfwort für Tiere oder Personen',
+      bedeutung: '„Mistvieh" ist ein bayerisches Schimpfwort, das auf Tiere wie Personen anwendbar ist. „Des Mistvieh hot mi schon wieder bissn!" Bei Personen meist liebevoll-genervt im Familienkontext: „Du Mistvieh, jetzt hob i di erwischt!" Bei Tieren oft ernsthaft, wenn sie ungehorsam sind oder Schäden anrichten. Standard-Vokabel bayerischer Bauern-Schimpfkultur.',
+      beispiel: 'Des Mistvieh vom Nachbar hot scho wieder mei\'n Garten ramponiert.',
+      beispiel_hd: 'Dieses Mistvieh vom Nachbarn hat schon wieder meinen Garten ruiniert.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-313',
+      ausdruck: 'Saukerl',
+      hochdeutsch: 'Hundsgemeiner Kerl',
+      bedeutung: '„Saukerl" — zusammengesetzt aus „Sau" und „Kerl" — bezeichnet einen unanständigen, schmutzigen oder boshaften Mann. „So a Saukerl, hot mei Geld behoidn!" Das Präfix „Sau-" verstärkt im Bairischen meist negativ („Sauwetter", „Saukälte", „Sauklau"), kann aber auch positiv verstärken („Saugaudi"). Beim „Saukerl" überwiegt der negative Sinn — ein eindeutiges Schimpfwort.',
+      beispiel: 'Was für a Saukerl, der hot mi total betrogn!',
+      beispiel_hd: 'Was für ein hundsgemeiner Kerl, der hat mich total betrogen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-314',
+      ausdruck: 'Schlamper',
+      hochdeutsch: 'Schlampiger Mensch',
+      bedeutung: 'A „Schlamper" ist ein unordentlicher, nachlässiger Mensch. „Der Schlamper hot scho wieder seine Hemmertasche dahoam vergessn." Weibliche Form: „Schlamperin". Im weitesten Sinn kann es auch eine moralisch leichtfertige Person bezeichnen. Aus dem mittelhochdeutschen „slampen" (schlaff sein, hängen). Die Unordnung kann körperlich, verbal oder geistig sein.',
+      beispiel: 'Mei Sohn is a Schlamper, sei Zimmer schaut grauenhaft aus.',
+      beispiel_hd: 'Mein Sohn ist ein schlampiger Mensch, sein Zimmer sieht grauenhaft aus.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-315',
+      ausdruck: 'Lump',
+      hochdeutsch: 'Schurke / Lümmel',
+      bedeutung: 'A „Lump" ist eine moralisch zwielichtige Person, oft ein Betrüger oder unverlässlicher Mann. „A Lump bist und a Lump bleibst!" Mittelhochdeutsch „lump" = Lumpen, Stofffetzen. Wurde übertragen auf Personen mit schlechtem Charakter. Im Bairischen oft mit dem Adjektiv „liederlich" verbunden: „a liederlicher Lump". Stärker als „Schlamper", aber milder als „Saukerl".',
+      beispiel: 'Der Wirt war a richtiger Lump, hot uns ned amoi a Bier ausgschenkt.',
+      beispiel_hd: 'Der Wirt war ein richtiger Schurke, hat uns nicht einmal ein Bier ausgeschenkt.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-316',
+      ausdruck: 'Brettl',
+      hochdeutsch: 'Ski / Snowboard',
+      bedeutung: '„Brettl" — das Brett, im Sport-Kontext die Skier oder das Snowboard. „D\'Brettl ham mir scho voriges Jahr gewachst." Bayern als Wintersport-Nation: „Brettl-Verleih", „Brettl-Lehrer", „Aufs Brettl gstellt". Verkleinerung von „Brett". Eine typische bayerische Verniedlichung selbst des Wintersport-Equipments. Geht zurück auf die schmalen Holzski der frühen Skifahrer-Zeit.',
+      beispiel: 'Mei Brettl ham scho a paar Saisons hinter sich, brauchat neie.',
+      beispiel_hd: 'Meine Skier haben schon ein paar Saisons hinter sich, brauchen neue.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-317',
+      ausdruck: 'Brettlhupfer',
+      hochdeutsch: 'Skirennfahrer (humorvoll)',
+      bedeutung: 'A „Brettlhupfer" ist die humorvolle bayerische Bezeichnung für einen Skirennfahrer oder Skifahrer allgemein. „D\'Brettlhupfer ham heid wieder Glück mit\'m Schnee." Setzt sich aus „Brettl" (Ski) und „Hupfer" (Springer) zusammen. Wird oft ironisch verwendet, wenn Skifahrer auf eisigen Pisten unkontrolliert hin-und-her-rutschen. Auch liebevoll für die eigenen Kinder im Schnee.',
+      beispiel: 'D\'Brettlhupfer aus Garmisch ham heid wieder a Gold-Medaillen gholt!',
+      beispiel_hd: 'Die Skirennfahrer aus Garmisch haben heute wieder eine Goldmedaille geholt!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-318',
+      ausdruck: 'Eisstockschiessn',
+      hochdeutsch: 'Eisstockschießen',
+      bedeutung: '„Eisstockschiessn" ist das bayerisch-alpenländische Pendant zum schottischen Curling — ein Mannschaftssport, bei dem Stöcke über glattes Eis Richtung Zielmarke geschoben werden. „Ban Eisstockschiessn brauchst koa Bayer, oba a guads Auge." Wird im Winter auf Naturweihern gespielt, im Sommer auf Asphaltbahnen. Vereine in fast jedem bayerischen Dorf. Bei Olympia bisher nicht im Programm, aber Heimatsport mit Tradition.',
+      beispiel: 'Am Sonntag spuin mia Eisstockschiessn auf\'m zugefrornen Weiher.',
+      beispiel_hd: 'Am Sonntag spielen wir Eisstockschießen auf dem zugefrorenen Weiher.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-319',
+      ausdruck: 'Bergwanderer',
+      hochdeutsch: 'Bergwanderer',
+      bedeutung: 'A „Bergwanderer" ist mehr als ein Spaziergänger — ein Mensch, der die bayerischen Berge ernst und planvoll besteigt. „A guater Bergwanderer hot immer a Brotzeit dabei." Mit Wanderstöcken, fester Schuhung, Karte, Kompass und Erste-Hilfe-Set. Mitgliedschaft im Alpenverein ist Standard. Die bayerische Berggesellschaft ist sozial gemischt — vom Bauern bis zum Professor wandert man gemeinsam.',
+      beispiel: 'Ois Bergwanderer kennt mei Vada jede Hütt\'n im Karwendel.',
+      beispiel_hd: 'Als Bergwanderer kennt mein Vater jede Hütte im Karwendel.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-320',
+      ausdruck: 'Pfüat di Gott',
+      hochdeutsch: 'Behüt\' dich Gott (Abschied)',
+      bedeutung: '„Pfüat di Gott" — vollständige altbayerische Abschiedsformel, von „Behüt\' dich Gott". „Pfüat di Gott und a glückliche Heimreise!" Die Kurzform „Pfiat di" ist alltäglicher, „Pfüat di Gott" ist herzlicher und förmlicher — besonders zu älteren Personen oder bei bedeutsamen Abschieden. Religiös geprägt, drückt es Schutz und Segenswunsch aus. In moderneren Kreisen seltener, in der Tracht- und Brauchtumskultur lebendig.',
+      beispiel: 'Pfüat di Gott, Großmuada, mia kemma bald wieder!',
+      beispiel_hd: 'Behüt\' dich Gott, Großmutter, wir kommen bald wieder!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-321',
+      ausdruck: 'Servus mitanand',
+      hochdeutsch: 'Hallo zusammen',
+      bedeutung: '„Servus mitanand" — die plurale Grußform aus „Servus" und „mitanand" (miteinander). „Servus mitanand, schee dass\'s da seid!" Wird zur Begrüßung größerer Gruppen verwendet: am Stammtisch, im Festzelt, bei Familienfeiern. Auch zum Abschied: „Servus mitanand, pfiat enk!" Eine warme, gemeinschaftsstiftende Formel, die niemanden ausschließt. Typisch für die kollektivistische bayerische Kultur.',
+      beispiel: 'Servus mitanand, jetzt geht\'s los mit\'m Frühschoppen!',
+      beispiel_hd: 'Hallo zusammen, jetzt geht es los mit dem Frühschoppen!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-322',
+      ausdruck: 'Schneetreibm',
+      hochdeutsch: 'Schneetreiben',
+      bedeutung: 'A „Schneetreibm" ist ein heftiger Schneefall mit Wind, der die Sicht stark einschränkt. „Bei dem Schneetreibm fahrst lieber gar ned!" Charakteristisch für die bayerischen Berghöhen im Winter. Kann sich zum Schneesturm steigern. Die bayerische Sprache hat viele präzise Begriffe für Wetterphänomene — Schneefall ist nicht gleich Schneefall.',
+      beispiel: 'Im Karwendel hot\'s a Schneetreibm, da brauchst Schneeketten.',
+      beispiel_hd: 'Im Karwendel gibt es ein Schneetreiben, da brauchst du Schneeketten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-323',
+      ausdruck: 'Gwitta',
+      hochdeutsch: 'Gewitter',
+      bedeutung: '„Gwitta" — die bayerische Aussprache von „Gewitter", mit verschluckten Vokalen. „A Gwitta kummt auf, hörst di Donna?" In Bayern oft heftige Sommergewitter mit Hagel, vor allem im Voralpenland. Die Landwirte beobachten Gwitter genau — Hagel kann die Ernte zerstören. Volksglaube und Sprichwörter ranken sich um den Gewitterhimmel: „Die schwarze Wand kommt!" Bauernregeln helfen beim Vorhersagen.',
+      beispiel: 'Schau, am Wettersteinkamm ziagt a Gwitta auf!',
+      beispiel_hd: 'Schau, am Wettersteinkamm zieht ein Gewitter auf!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-324',
+      ausdruck: 'Eiskoid',
+      hochdeutsch: 'Eiskalt',
+      bedeutung: '„Eiskoid" — die bayerische Aussprache von „eiskalt" mit charakteristischer „ai"-Verkleidung des „ei". „Heid is\'s eiskoid drauß\'n, zieh dir was Warmes an!" Auch übertragen verwendet: „Der Vertrag is eiskoid kalkuliert" oder „A eiskoide Reaktion". Die bayerische Lautlehre macht aus „kalt" → „koid", aus „alt" → „oid", aus „Wald" → „Woid". Ein klassisches phonetisches Bairisch-Merkmal.',
+      beispiel: 'Es is eiskoid heid, am Wetterstein ham\'s minus zehn Grad!',
+      beispiel_hd: 'Es ist eiskalt heute, am Wetterstein haben sie minus zehn Grad!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-325',
+      ausdruck: 'A Halba',
+      hochdeutsch: 'Eine halbe Maß (Bier)',
+      bedeutung: '„A Halba" — eine halbe Maß, also 0,5 Liter Bier. „A Halba und a Brez\'n, bittschön!" Das Standardmaß in den meisten Wirtshäusern außerhalb des Oktoberfests. Volle Maß = 1 Liter, Halba = 0,5 Liter, Seidl = 0,3 Liter. Die kompetente Bestellung beim bayerischen Wirt verlangt diese Differenzierung. Wer eine „Halba" bestellt, signalisiert: kein Touri, sondern jemand der das System kennt.',
+      beispiel: 'Frau Wirtin, bringen\'s mir a Halba mit a Mass Spezi!',
+      beispiel_hd: 'Frau Wirtin, bringen Sie mir eine halbe Maß mit einer Maß Spezi!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-326',
+      ausdruck: 'Stamp\'n',
+      hochdeutsch: 'Stampen / Schnapsglas',
+      bedeutung: '„Stamp\'n" — ein kleines Schnapsglas, Verkleinerungsform von „Stamper". „Bring uns no a Runde Stamp\'n, des war zach!" Wird für hochprozentige Spirituosen wie Obstler, Williamsbrand oder Schnaps verwendet. Bei Festen wird oft ein „Glasl" oder „Stamp\'n" zum Verdauen gereicht. Im Wirtshaus typisch nach einer schweren Mahlzeit. Klassisches bayerisches Trinkgefäß.',
+      beispiel: 'A Stamp\'n Obstler, dann is da Magen wieder beruhigt.',
+      beispiel_hd: 'Ein Schnapsglas Obstler, dann ist der Magen wieder beruhigt.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-327',
+      ausdruck: 'Drei Viertl',
+      hochdeutsch: 'Drei Viertel (Stunde / Liter)',
+      bedeutung: '„Drei Viertl" — drei Viertel, sowohl bei Zeit als auch bei Mengen. „Es is scho drei Viertl achte." Die altbayerische Zeit-Angabe ist „drei Viertl auf" oder „nach": „drei Viertl auf achte" = 7:45 Uhr. Auch bei Mengen: „drei Viertl Liter Sahne". Die bayerischen Zeit-Begriffe sind oft eigenständig und unterscheiden sich vom Hochdeutschen, das mehr „dreiviertel" als ein Wort schreibt.',
+      beispiel: 'Treffen ma uns um drei Viertl auf siebne in da Wirtschaft?',
+      beispiel_hd: 'Treffen wir uns um Viertel vor sieben in der Wirtschaft?',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-328',
+      ausdruck: 'A Maßerl',
+      hochdeutsch: 'Eine kleine Maß (Verkleinerung)',
+      bedeutung: '„A Maßerl" — die Verkleinerungsform der Maß, ironisch verwendet. „Bring ma no a Maßerl, da is so gschlampig wenig drinnen!" Tatsächlich wird auf dem Oktoberfest oft beklagt, dass die Maß zu wenig gefüllt ist (Schaum zählt nicht). Das „Maßerl" ist die humorvolle Beschwerde-Form. Echte Verkleinerung wäre die Halba. Liebevoll-vorwurfsvoll an die Bedienung gerichtet.',
+      beispiel: 'Frau Wirtin, des is a Maßerl, ned a richtige Mass!',
+      beispiel_hd: 'Frau Wirtin, das ist eine kleine Maß, keine richtige Maß!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-329',
+      ausdruck: 'Wirt-Beruf',
+      hochdeutsch: 'Gastwirt-Beruf',
+      bedeutung: 'Da „Wirt" — der Gastwirt — ist in Bayern eine zentrale gesellschaftliche Figur. „A guader Wirt kennt seine Gäst, seine Biera und seine Gschichtn." Der Wirtshausberuf wird oft über Generationen weitergegeben, viele Wirtshäuser sind über 200 Jahre alt. Der Wirt ist Beichtvater, Schiedsrichter, Politikvermittler. Beim Stammtisch sitzt er meist dabei und kommentiert mit. Tradition lebt — auch in der Sterbe-Phase der Dorfwirtshäuser.',
+      beispiel: 'Da neie Wirt vom Goldenen Hirschen is a sympathischer Bursch.',
+      beispiel_hd: 'Der neue Wirt vom Goldenen Hirschen ist ein sympathischer Bursche.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-330',
+      ausdruck: 'Schreiner',
+      hochdeutsch: 'Tischler',
+      bedeutung: 'Da „Schreiner" — bayerische Bezeichnung für den Tischler. „Mei Onkel is Schreiner, der hot die schönsten Möbelstücke baut." In Bayern Tradition mit jahrhundertealten Werkstätten. Die „Schreinerei" als Familienbetrieb war typisch in jedem Dorf, mit Lehrlings-Ausbildung. Heute oft spezialisiert auf Restaurierung von Bauernmöbeln, Sakraler Kunst oder Maßanfertigungen. Der Beruf ist eine der ältesten bayerischen Handwerks-Traditionen.',
+      beispiel: 'A Schreiner-Möbel hoit a Leben lang, da geht nix kaputt.',
+      beispiel_hd: 'Ein Tischler-Möbelstück hält ein Leben lang, da geht nichts kaputt.',
+      kategorie: 'arbeit'
     }
   ]
 };
