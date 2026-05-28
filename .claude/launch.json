@@ -4,7 +4,7 @@
     {
       "name": "dialekto",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["--yes", "http-server", ".", "-p", "5173", "-c-1", "--cors"],
+      "runtimeArgs": ["--yes", "http-server", ".", "-p", "5173", "-c-1", "--cors", "--gzip", "--brotli"],
       "port": 5173
     }
   ]

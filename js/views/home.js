@@ -82,19 +82,28 @@ export function renderHome(root, params = {}) {
     renderHeroPreview()
   ));
 
-  // Personal dashboard — "Heute lernen" + Recent + Activity
+  // Personal dashboard — "Heute lernen" + Recent + Activity (kritisch, sofort)
   const dash = renderDashboard();
   if (dash) view.appendChild(dash);
 
-  // Adaptiver Lernplan — „Heute empfohlen"
-  const recoSection = renderAdaptiveRecommendationsSection();
-  if (recoSection) view.appendChild(recoSection);
+  // Non-kritische Sektionen — via requestIdleCallback nachrendern (kein Long-Task)
+  const placeholders = {
+    reco: el('div', { class: 'home-section-placeholder' }),
+    challenges: el('div', { class: 'home-section-placeholder' }),
+    longGoals: el('div', { class: 'home-section-placeholder' }),
+  };
+  view.appendChild(placeholders.reco);
+  view.appendChild(placeholders.challenges);
+  view.appendChild(placeholders.longGoals);
 
-  // Wöchentliche Challenges
-  view.appendChild(renderChallengesSection());
-
-  // Langfristige Lernziele
-  view.appendChild(renderLongGoalsSection());
+  const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 16));
+  idle(() => {
+    const recoSection = renderAdaptiveRecommendationsSection();
+    if (recoSection) placeholders.reco.replaceWith(recoSection);
+    else placeholders.reco.remove();
+  });
+  idle(() => placeholders.challenges.replaceWith(renderChallengesSection()));
+  idle(() => placeholders.longGoals.replaceWith(renderLongGoalsSection()));
 
   // Daily expression
   const dailyWrap = renderDailyExpression(dailyFocus);

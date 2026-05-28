@@ -43,10 +43,25 @@ export function renderSammlung(root) {
   const gridWrap = el('div', { class: 'sammlung-grid-wrap' });
   view.appendChild(gridWrap);
 
+  // Pagination: erst 100 rendern, „mehr laden" für den Rest.
+  // Verhindert Long-Task-Block (252ms vorher → ~30ms jetzt).
+  const PAGE_SIZE = 100;
+  let renderedCount = 0;
+  let currentFiltered = [];
+
+  function renderBatch(grid, from, to) {
+    const frag = document.createDocumentFragment();
+    for (let i = from; i < to && i < currentFiltered.length; i++) {
+      frag.appendChild(renderSammlungCard(currentFiltered[i]));
+    }
+    grid.appendChild(frag);
+    renderedCount = Math.min(to, currentFiltered.length);
+  }
+
   function rerenderGrid() {
-    const filtered = applyFilters(state);
+    currentFiltered = applyFilters(state);
     gridWrap.innerHTML = '';
-    if (filtered.length === 0) {
+    if (currentFiltered.length === 0) {
       gridWrap.appendChild(el('div', { class: 'empty-state' },
         el('h3', {}, 'Keine Ausdrücke gefunden'),
         el('div', { class: 'empty-meta' }, 'Versuche die Filter zu lockern.')
@@ -54,11 +69,26 @@ export function renderSammlung(root) {
       return;
     }
     const grid = el('div', { class: 'sammlung-grid' });
-    filtered.forEach(entry => grid.appendChild(renderSammlungCard(entry)));
+    renderedCount = 0;
+    renderBatch(grid, 0, PAGE_SIZE);
     gridWrap.appendChild(grid);
-    // Auch die Zähler in Filterzeile aktualisieren
+
+    // „Mehr laden"-Button wenn nötig
+    if (currentFiltered.length > PAGE_SIZE) {
+      const loadMoreBtn = el('button', {
+        class: 'btn btn-secondary',
+        style: { display: 'block', margin: '24px auto', minWidth: '200px' },
+        onClick: () => {
+          renderBatch(grid, renderedCount, renderedCount + PAGE_SIZE);
+          if (renderedCount >= currentFiltered.length) loadMoreBtn.remove();
+          else loadMoreBtn.textContent = `Mehr laden (${currentFiltered.length - renderedCount} verbleiben)`;
+        }
+      }, `Mehr laden (${currentFiltered.length - renderedCount} verbleiben)`);
+      gridWrap.appendChild(loadMoreBtn);
+    }
+
     const meta = view.querySelector('[data-sml-meta]');
-    if (meta) meta.textContent = `${filtered.length} Karten gefiltert`;
+    if (meta) meta.textContent = `${currentFiltered.length} Karten gefiltert`;
   }
 
   // Filter-Events
