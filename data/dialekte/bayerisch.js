@@ -2944,6 +2944,339 @@ export default {
       beispiel: 'Bei uns ham d\'Burschen heid s\'Maibaum-Auswählen gmacht.',
       beispiel_hd: 'Bei uns haben die Burschen heute das Maibaum-Auswählen gemacht.',
       kategorie: 'feiern'
+    },
+    {
+      id: 'by-361',
+      ausdruck: 'Furchtbar guad',
+      hochdeutsch: 'Außerordentlich gut',
+      bedeutung: '„Furchtbar guad" — typisch bayerische Steigerung mit negativ-positivem Adjektiv-Paar. „Der Schweinsbraten war furchtbar guad!" Die paradoxe Konstruktion (furchtbar = eigentlich negativ, aber als Intensivierer positiv) ist charakteristisch für die bairische Sprachfreude. Verwandt mit „grauslich schee" oder „dirrisch hervorragend". Drückt höchste Anerkennung aus, ohne ins Schwülstige zu fallen.',
+      beispiel: 'D\'Knödel von dera Oma san furchtbar guad geraten!',
+      beispiel_hd: 'Die Knödel von dieser Oma sind außerordentlich gut geraten!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-362',
+      ausdruck: 'Heiliger Strohsack',
+      hochdeutsch: 'Heiliger Strohsack (Ausruf)',
+      bedeutung: '„Heiliger Strohsack" — bayerischer Stoßseufzer aus dem Bauernleben (Strohsack als Bett). „Heiliger Strohsack, was is jetzt los?" Ausruf bei Überraschung oder Schreck, mit nostalgisch-volkstümlichem Klang. Aus einer Zeit, als Strohsäcke die typische Schlafstätte waren, wurde der „heilige Strohsack" Synonym für Geheiligtes des Alltags. Heute fast nostalgisch verwendet — generationenverbindender Ausruf.',
+      beispiel: 'Heiliger Strohsack, der Hund hot s\'ganze Brot weggschnappt!',
+      beispiel_hd: 'Heiliger Strohsack, der Hund hat das ganze Brot weggeschnappt!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-363',
+      ausdruck: 'Da werd ma anders',
+      hochdeutsch: 'Da wird einem schlecht',
+      bedeutung: '„Da werd ma anders" — eine bayerische Redensart für Unwohlsein, Schwindel oder emotionalen Überdruss. „Wenn i des hör, da werd ma anders!" Wird verwendet bei körperlichem Unwohlsein (Schwindelgefühl, Übelkeit) als auch emotionaler Reaktion auf Schock-Nachrichten. Verstärkt: „Da werd ma ganz anders." Klassische Bairische, die Befindlichkeit indirekt ausdrückt.',
+      beispiel: 'Bei dera Hitzen werd ma anders, brauch a kühles Bier!',
+      beispiel_hd: 'Bei dieser Hitze wird einem schlecht, brauche ein kühles Bier!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-364',
+      ausdruck: 'Mei Zeit',
+      hochdeutsch: 'Meine Güte',
+      bedeutung: '„Mei Zeit" — bayerischer Stoßseufzer der Verwunderung oder leichter Entrüstung. „Mei Zeit, schau di amoi an!" Wird oft bei alten Bekannten verwendet, die man lange nicht gesehen hat, oder bei Überraschung über Veränderungen. Der zeitliche Bezug („Zeit") signalisiert: Wie konnte das nur kommen? Sehr volkstümlich, generationenübergreifend verwendet.',
+      beispiel: 'Mei Zeit, wia da Bua scho gewachsen is!',
+      beispiel_hd: 'Meine Güte, wie der Junge schon gewachsen ist!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-365',
+      ausdruck: 'Pumperlgsund',
+      hochdeutsch: 'Kerngesund',
+      bedeutung: '„Pumperlgsund" — wunderbar gesund, kerngesund, wie ein guter Pumper (Herzschlag). „Mei Großvada is mit 87 no\' pumperlgsund." Aus „Pumper" (Pumpe / Herz) und „gsund" (gesund). Die Vorstellung: ein kräftig schlagendes Herz garantiert Gesundheit. Wird bei Komplimenten über die Gesundheit verwendet, oder als Versicherung der eigenen Befindlichkeit. Charmante Bairische, die Vitalität ausdrückt.',
+      beispiel: 'A pumperlgsundes Madl, wia gemacht für d\'Berg!',
+      beispiel_hd: 'Ein kerngesundes Mädel, wie gemacht für die Berge!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-366',
+      ausdruck: 'Hot a Pleit\'n',
+      hochdeutsch: 'Hat einen Defekt / Verlust',
+      bedeutung: '„Hot a Pleit\'n" — wörtlich „hat eine Pleite", bayerisch verstanden als „Defekt" oder „Schaden". „Mei Auto hot a Pleit\'n, kummt ned amoi an." Wird im Sinn von technischem Defekt, finanzieller Verlust oder allgemeinem Pech verwendet. Aus dem Jiddischen „pleite" (Bankrott). Eine pragmatisch-emotionale Reaktion auf alltägliche Schäden. Häufig im Wirtshausgespräch über Autos, Geschäfte, Beziehungen.',
+      beispiel: 'Der Hans hot a Pleit\'n, sei Firma is bankrott.',
+      beispiel_hd: 'Der Hans hat einen Verlust, seine Firma ist bankrott.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-367',
+      ausdruck: 'G\'macht is g\'macht',
+      hochdeutsch: 'Getan ist getan',
+      bedeutung: '„G\'macht is g\'macht" — pragmatische bayerische Bestätigung einer abgeschlossenen Sache, ohne weitere Diskussion. „G\'macht is g\'macht, jetzt müssen ma damit lebn." Drückt Akzeptanz unumkehrbarer Situationen aus, in einer Mischung aus Schicksalsgelassenheit und Pragmatismus. Verwandt mit „Was sein muss, des muss sein." Klassische bayerische Lebensphilosophie in komprimierter Form.',
+      beispiel: 'D\'Hochzeit war teuer, oba g\'macht is g\'macht.',
+      beispiel_hd: 'Die Hochzeit war teuer, aber getan ist getan.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-368',
+      ausdruck: 'Wann i mei Ruah hab',
+      hochdeutsch: 'Wenn ich meine Ruhe habe',
+      bedeutung: '„Wann i mei Ruah hab" — bayerische Bedingung für Wohlbefinden. „Wann i mei Ruah hab, ko ma alles ertragen." Die „Ruah" (Ruhe) ist im bayerischen Lebensgefühl ein zentrales Gut — körperliche, geistige, gesellschaftliche Ruhe. „Bairische Ruh" als Lebensphilosophie. Wer seine Ruhe hat, ist im Reinen mit sich. Verwandt mit „Ko mi gern", aber positiver.',
+      beispiel: 'Wann i mei Ruah hab und a Maß, dann is mei Tag schee.',
+      beispiel_hd: 'Wenn ich meine Ruhe habe und eine Maß, dann ist mein Tag schön.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-369',
+      ausdruck: 'Holzknecht',
+      hochdeutsch: 'Holzfäller / Forstarbeiter',
+      bedeutung: 'A „Holzknecht" — der Holzfäller, traditionell im bayerischen Wald-Beruf. „Mei Großvada war Holzknecht im Karwendel-Forst." Harte körperliche Arbeit mit Axt, Säge, Pferden im Winterwald. Berufsgruppe mit eigener Tracht (Lederhose, Joppe), eigenen Liedern und Wirtschaften. Heute mechanisiert, aber Tradition lebt im Holzknechtmuseum (Ruhpolding) weiter. Charakter-prägende harte Männerarbeit.',
+      beispiel: 'A guader Holzknecht kennt jeden Baum im sei\'m Revier.',
+      beispiel_hd: 'Ein guter Holzfäller kennt jeden Baum in seinem Revier.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-370',
+      ausdruck: 'Köhler',
+      hochdeutsch: 'Köhler',
+      bedeutung: 'Da „Köhler" — Hersteller von Holzkohle, traditioneller bayerischer Waldberuf. „D\'Köhler ham im Wald die ganzen Sommer im Meiler gschlafen." Heute fast ausgestorbener Beruf, in Museumshöfen und Brauchtumsfesten noch zu sehen (z.B. in Bad Kötzting). Die Kohlenmeiler-Technik ist Welterbe der Forstwirtschaft. Der „schwarze Mann im Wald" gehört zur bayerischen Mythologie und Märchen-Tradition.',
+      beispiel: 'Beim Volkfest hot a Köhler an Meiler aufbaut zum Anschauen.',
+      beispiel_hd: 'Beim Volksfest hat ein Köhler einen Meiler aufgebaut zum Anschauen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-371',
+      ausdruck: 'Wandersmann',
+      hochdeutsch: 'Wandergeselle / Wandersmann',
+      bedeutung: 'A „Wandersmann" — traditioneller wandernder Handwerker, oder im weitesten Sinn ein Wanderer. „Wia da Wandersmann durch unsa Dorf zog, hat er a paar Stund\' Quartier gholt." Aus der Tradition der Walz, bei der Handwerker nach der Lehre auf Wanderschaft gehen. Heute noch in einigen Zünften lebendig (Zimmerer, Maurer, Bäcker). Volkslied-Tradition: „Wem Gott will rechte Gunst erweisen, den schickt er in die weite Welt..."',
+      beispiel: 'Da Wandersmann is heute kein Beruf mehr, oba a Lebensgfui.',
+      beispiel_hd: 'Der Wandersmann ist heute kein Beruf mehr, aber ein Lebensgefühl.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-372',
+      ausdruck: 'Stadl',
+      hochdeutsch: 'Scheune',
+      bedeutung: 'Da „Stadl" — die bayerische Scheune, größer und mehrfunktional als die einfache Scheune. „Im Stadl steht s\'Heu und a die alte Mähdrescher-Maschin." Aus dem althochdeutschen „stadal" (Standort, Lagerort). Heute oft umgebaut als Veranstaltungsort, Hochzeitsstadl, Konzertstadl. „Musikantenstadl" — TV-Sendung — ist namensgebend für das Hochzeitsfest in einem traditionell ausgestatteten Stadl.',
+      beispiel: 'Mia ham unsre Hochzeit im großen Stadl vom Onkel g\'feiert.',
+      beispiel_hd: 'Wir haben unsere Hochzeit in der großen Scheune vom Onkel gefeiert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-373',
+      ausdruck: 'Heubodn',
+      hochdeutsch: 'Heuboden',
+      bedeutung: 'Da „Heubodn" — der Lagerraum für Heu, meist im obersten Stock eines Bauernhofs. „Auf\'m Heubodn ham ma als Kinder Heu-Schaukel gspuit." Romantischer Ort der bayerischen Kindheit, mit Geruch von Heu, Holz und Geheimnissen. In alten Bauernhöfen, oft heute zu Gästewohnungen umgebaut. „Heuboden-Konzerte" sind populäre Sommer-Events in Bayern. Kulturelle Lokalität mit Tradition.',
+      beispiel: 'Mei Kindheit hot im Heubodn vom Großvada-Hof stattgfundn.',
+      beispiel_hd: 'Meine Kindheit hat im Heuboden vom Großvater-Hof stattgefunden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-374',
+      ausdruck: 'Tenne',
+      hochdeutsch: 'Tenne / Dreschboden',
+      bedeutung: 'D\'„Tenne" — der Dreschboden im Bauernhaus, traditionell der Ort, wo Korn gedroschen wurde. „Auf\'m Tenne hot ma fries die Garben mit Flegeln gedroschen." Auch Tanzfläche bei Bauernhochzeiten — die „Hochzeit-Tenne". Großer freier Raum mit holznaturhaftem Boden, oft mit zentralem Strohballen oder Tisch. In renovierten Höfen heute beliebter Event-Raum. „Tenne-Stunden" sind die Erinnerungen an Familien-Feiern.',
+      beispiel: 'Auf da Tenne is heid a Tanz, bei der Goldenen Hochzeit.',
+      beispiel_hd: 'Auf der Tenne ist heute ein Tanz, bei der Goldenen Hochzeit.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-375',
+      ausdruck: 'Bua-Madl',
+      hochdeutsch: 'Junge und Mädchen / Geschwister',
+      bedeutung: '„Bua-Madl" — die Standard-Bezeichnung für Geschwister, „Junge und Mädchen". „Mia ham vier Bua-Madl in unsra Familie." Komprimierte Form, die ohne Erklärung verstanden wird. Auch oft zur Begrüßung größerer Kinder-Gruppen: „Hallo Bua-Madl!" In Schule und Kindergarten allgegenwärtig. Spiegelt die bayerische Sprach-Ökonomie wider: viele Wörter werden kombiniert, verschmolzen, verkürzt.',
+      beispiel: 'D\'Buaben-Madln vom Trachtenverein san alle so freundlich.',
+      beispiel_hd: 'Die Jungen und Mädchen vom Trachtenverein sind alle so freundlich.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-376',
+      ausdruck: 'Onkel',
+      hochdeutsch: 'Onkel',
+      bedeutung: 'Da „Onkel" — bayerische Aussprache identisch mit hochdeutsch. „Mei Onkel Sepp is der Wirt vom Goldenen Hirschen." Im bayerischen Familienbild wichtige Figur, oft Lehrer/Mentor für die Neffen. Bei Hochzeiten haben Onkel oft Reden zu halten. „Onkelhaft" ist ein typisch bayerisches Adjektiv für „väterlich-freundlich". Die Anrede „Onkel + Vorname" bleibt oft bis ins Erwachsenenalter erhalten.',
+      beispiel: 'Mei Onkel Bernhard hot a Hütt\'n im Wendelstein-Gebiet.',
+      beispiel_hd: 'Mein Onkel Bernhard hat eine Hütte im Wendelstein-Gebiet.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-377',
+      ausdruck: 'Patenkind',
+      hochdeutsch: 'Patenkind',
+      bedeutung: 's\'„Patenkind" — das geistliche Pate-Kind, in Bayern noch starke Tradition. „Mei Patenkind kummt zum Geburtstag und kriegt a Goldketterl." Im katholischen Bayern Paten oft die zentralen Bezugspersonen außerhalb der Eltern. Bei Erstkommunion, Firmung, Hochzeit zentrale Rolle. Auch finanziell: Patenonkel und -tante geben Geld zu Festen, Geschenke, Erbschaften. Tradition lebt fort.',
+      beispiel: 'Mei Patenkind is jetzt scho 18, da werd\'s a Auto-Geschenk.',
+      beispiel_hd: 'Mein Patenkind ist jetzt schon 18, da wird es ein Auto-Geschenk.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-378',
+      ausdruck: 'Spazieren',
+      hochdeutsch: 'Spazieren',
+      bedeutung: '„Spazieren" — die langsame, gemütliche Fußrunde, in Bayern Sonntag-Tradition. „Nach\'m Mittagessen gehn ma a bissl spazieren." Nicht zu verwechseln mit Wanderern oder Bergsteigern — Spazieren ist explizit langsam, ohne Ziel, oft mit Halt am Wirtshaus. Eine bayerische Lebenskunst. Verben: „spaziern", Substantiv: „a Spazierl". Manchmal mit Hund, manchmal mit Familie.',
+      beispiel: 'Am Sonntag spazieren mia immer am Tegernsee entlang.',
+      beispiel_hd: 'Am Sonntag spazieren wir immer am Tegernsee entlang.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-379',
+      ausdruck: 'Hatscher',
+      hochdeutsch: 'Lange Tour / mühsamer Weg',
+      bedeutung: 'A „Hatscher" — eine lange, anstrengende Fußtour oder eine mühsame Aufgabe. „A Hatscher übern Pass, des is no a echter Tagestrip." Vom Verb „hatschn" (humpeln, schleichend gehen). Auch übertragen: „A Hatscher bis zur Heirat" (eine lange Beziehungs-Vorgeschichte). Bayerische Berggeher unterscheiden zwischen „Spazierl" (kurz), „Tour" (mittel), „Hatscher" (lang und anstrengend).',
+      beispiel: 'D\'Soiernspitze über\'n Höhenweg, des is a richtiger Hatscher.',
+      beispiel_hd: 'Die Soiernspitze über den Höhenweg, das ist ein richtiger langer Weg.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-380',
+      ausdruck: 'Vorabend',
+      hochdeutsch: 'Vorabend / Abend davor',
+      bedeutung: 'Da „Vorabend" — der Abend vor einem wichtigen Tag, oft mit eigenem Ritual. „Am Vorabend vom Maibaum-Aufstellen treffen sich die Burschen im Wirtshaus." Vor Weihnachten, Hochzeit, Volksfest gibt es typischerweise einen Vorabend mit Brauch-Ritualen. Auch der „heilige Vorabend" — Weihnachten. Klassisches bayerisches Konzept der gestaffelten Feier-Vorbereitung.',
+      beispiel: 'Am Vorabend vom Sankt-Florian-Tag treffen sich d\'Feuerwehrleut.',
+      beispiel_hd: 'Am Vorabend vom Sankt-Florians-Tag treffen sich die Feuerwehrleute.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-381',
+      ausdruck: 'Eichhörndl',
+      hochdeutsch: 'Eichhörnchen',
+      bedeutung: 's\'„Eichhörndl" — bayerische Verkleinerungsform des Eichhörnchens, mit liebevollem „-erl"-Suffix. „Im Garten hupft a Eichhörndl von Baum zu Baum." In bayerischen Wäldern überall verbreitet, charakteristisch mit rotem Fell. In Volksmärchen und Kinderliedern oft präsent. Verkleinerungen für Tiere sind im Bairischen typisch, drücken Sympathie aus: „Vögerl", „Bockerl", „Mauserl".',
+      beispiel: 'Mia ham im Garten oft a Eichhörndl, des klaut uns d\'Walnüss.',
+      beispiel_hd: 'Wir haben im Garten oft ein Eichhörnchen, das stiehlt uns die Walnüsse.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-382',
+      ausdruck: 'Birkenwald',
+      hochdeutsch: 'Birkenwald',
+      bedeutung: 'Da „Birkenwald" — Wald mit überwiegend Birken, charakteristisch für höhere Lagen und Ränder. „Da Birkenwald oberhalb vom Geroldsee, dort gibt\'s im Herbst tolle Pilze." In Bayern bevorzugte Pilz-Sammlung-Gebiete. Die helle Rinde der Birken ist visuell unverwechselbar. Birken-Tee und Birken-Honig sind regionale Spezialitäten. In Volkskunde mit Reinheit und Frühling verbunden — Pfingst-Birken-Schmuck.',
+      beispiel: 'Mia fahr\'n mid\'m Radl durch\'n Birkenwald bis zur Hütt\'n.',
+      beispiel_hd: 'Wir fahren mit dem Rad durch den Birkenwald bis zur Hütte.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-383',
+      ausdruck: 'Sauwetter-Tag',
+      hochdeutsch: 'Schlechtwetter-Tag',
+      bedeutung: 'A „Sauwetter-Tag" — Tag mit miserablem Wetter, der jede Outdoor-Planung verhindert. „Heid is a Sauwetter-Tag, mia bleiben dahoam und spuin Karten." Verstärkung des einfachen „Sauwetter". Charakteristisch für die bayerische Voralpenregion mit häufig wechselndem Wetter. Verbindet sich oft mit Wirtshaus-Besuchen, Familien-Spielen, Lesen. Trotzdem mit gewisser Akzeptanz akzeptiert — kein Wetter ist immer schön.',
+      beispiel: 'Bei dem Sauwetter-Tag is ma der Wirtshausbesuch nur recht.',
+      beispiel_hd: 'Bei dem Schlechtwetter-Tag ist mir der Wirtshausbesuch nur recht.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-384',
+      ausdruck: 'Dudelsack',
+      hochdeutsch: 'Dudelsack',
+      bedeutung: 'Da „Dudelsack" — traditionelles bayerisch-böhmisches Blasinstrument mit Luftsack. „Auf dem Hochzeitsfest hot a Dudelsack-Spuiler aufg\'spuit." Weniger verbreitet als in Schottland, aber im bayerischen Brauchtum vorhanden. Charakteristisch der monotone Bordun-Ton mit Melodie-Pfeife darüber. Anhänger in der Volkstmusi-Szene, vor allem in Niederbayern. Klang ist laut, durchdringend, melancholisch.',
+      beispiel: 'Beim Trachtenfest is wieder a Dudelsack-Spuiler dabei.',
+      beispiel_hd: 'Beim Trachtenfest ist wieder ein Dudelsack-Spieler dabei.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-385',
+      ausdruck: 'Heimat-Tag',
+      hochdeutsch: 'Heimat-Tag',
+      bedeutung: 'Da „Heimat-Tag" — jährliches lokales Fest zur Pflege der Heimattradition. „Am Heimat-Tag stelle ma die alten Bilder vom Dorf aus." Mit Festumzug, Trachten-Defilee, Volksmusik, Brotzeit-Stand. In Bayern jedes größere Dorf hat sein eigenes Datum, oft im Mai oder Juli. Heimat-Vereine organisieren — Pflege von Brauchtum, Sprache, Sitten. Generationenverbindender Anlass mit pädagogischer Funktion für die Jugend.',
+      beispiel: 'Am Heimat-Tag treffen sich alle Generationen vom Dorf.',
+      beispiel_hd: 'Am Heimat-Tag treffen sich alle Generationen vom Dorf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-386',
+      ausdruck: 'Wirtshaus-Schild',
+      hochdeutsch: 'Wirtshaus-Schild',
+      bedeutung: 's\'„Wirtshaus-Schild" — das traditionelle, oft kunstvoll geschmiedete Wirtschafts-Schild über dem Wirtshaus-Eingang. „A altes Wirtshaus-Schild mit Sankt Florian, dees is no Original." Klassische Motive: Heilige, Tiere, Symbole (Mond, Sonne, Stern). Aus der Zeit, als die meisten Bürger nicht lesen konnten — das Bild zeigte die Wirtschaft. Heute Sammelobjekt, Restaurierungs-Arbeit für Kunstschmiede.',
+      beispiel: 'A altes Wirtshaus-Schild von 1810, des is no a Schatzerl.',
+      beispiel_hd: 'Ein altes Wirtshaus-Schild von 1810, das ist noch ein kleiner Schatz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-387',
+      ausdruck: 'Sankt-Florian',
+      hochdeutsch: 'St. Florian (Heiliger der Feuerwehr)',
+      bedeutung: 'Da „Sankt-Florian" — Schutzpatron der Feuerwehr, in Bayern allgegenwärtig. „Da Sankt-Florian hängt über da Eingangstür von vielen Häusern." Der römische Soldat aus dem 3. Jahrhundert wird als Beschützer vor Feuer angerufen. Florianstag am 4. Mai ist Feuerwehrtag, mit Florian-Gottesdienst und Festzug. Sprichwort: „Heiliger Sankt Florian, verschon\' mein Haus, zünd\' andre an." Patron auch der Bierbrauer.',
+      beispiel: 'A Sankt-Florian-Statue is am Eingang vom Wirtshaus.',
+      beispiel_hd: 'Eine St. Florian-Statue ist am Eingang vom Wirtshaus.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-388',
+      ausdruck: 'Brauchtum',
+      hochdeutsch: 'Brauchtum / Tradition',
+      bedeutung: 's\'„Brauchtum" — die Gesamtheit der bayerischen Traditionen, Bräuche und kulturellen Praktiken. „A guats Brauchtum verbindet d\'Generationen." Umfasst religiöse Feste (Allerseelen, Fronleichnam), Volksfeste (Oktoberfest, Kirta), Mundart-Pflege, Trachten, Musik, Brauchspeisen. In Bayern lebendiger als in vielen anderen Regionen Deutschlands. Heimatvereine, Trachten-Vereine, Vereine zur Pflege der bairischen Mundart.',
+      beispiel: 'Mia pflegen Brauchtum, weil\'s unser Identität definiert.',
+      beispiel_hd: 'Wir pflegen Brauchtum, weil es unsere Identität definiert.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-389',
+      ausdruck: 'Schitzn-König',
+      hochdeutsch: 'Schützenkönig',
+      bedeutung: 'Da „Schitzn-König" — der jährliche Schützenkönig des Schützenvereins, gewählt durch das beste Treffen beim Königsschießen. „Da Sepp is heuer Schitzn-König, hot s\'Maximaltreffer geschossn." Trägt ein Jahr lang die Königskette, hat Repräsentations-Aufgaben, ist beim Festzug zentraler Punkt. Die Königswahl ist eines der wichtigsten Ereignisse im Vereinsjahr — mit Spannung erwartet, mit Feier abgeschlossen.',
+      beispiel: 'Da neie Schitzn-König wird am Sonntag prokladiert.',
+      beispiel_hd: 'Der neue Schützenkönig wird am Sonntag proklamiert.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-390',
+      ausdruck: 'Kraxlpfad',
+      hochdeutsch: 'Kletter-Pfad',
+      bedeutung: 'A „Kraxlpfad" — kletter-tauglicher Bergpfad mit Drahtsicherung oder Klettersteig-Charakter. „Da Karwendel-Westwand-Pfad is a echter Kraxlpfad." Setzt Schwindelfreiheit und körperliche Fitness voraus, aber keine Kletterausrüstung. Zwischen Wanderweg und Klettersteig angesiedelt. In Bayern in den Voralpen häufig. Kraxlpfade sind oft die spektakulärsten Routen mit großartigen Ausblicken.',
+      beispiel: 'Da Bayerische-Wald-Höhenpfad hot a paar Kraxlpfad-Stellen.',
+      beispiel_hd: 'Der Bayerische-Wald-Höhenpfad hat ein paar Kletter-Pfad-Stellen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-391',
+      ausdruck: 'Wadlbeißer-Politik',
+      hochdeutsch: 'Polternde Politik / harte Politik',
+      bedeutung: 'D\'„Wadlbeißer-Politik" — bayerischer Begriff für eine harte, oft theatralisch-volkstümliche Politikführung. „D\'Wadlbeißer-Politik vom Söder kennt jeder mittlerweile." Vor allem die CSU mit ihrer traditionell direkten, knurrigen Rhetorik. Hat ein eigenes Bairisch-Politikgeschmack, der landesweit oft kopiert wird. Verbindet Heimattradition mit modernem Konfrontationsstil. Eine bayerische Polit-Spezialität.',
+      beispiel: 'D\'CSU is bekannt für ihr\'n Wadlbeißer-Politik-Stil.',
+      beispiel_hd: 'Die CSU ist bekannt für ihren polternden Politik-Stil.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-392',
+      ausdruck: 'Wirtshaus-Lieder',
+      hochdeutsch: 'Wirtshaus-Lieder',
+      bedeutung: 'Die „Wirtshaus-Lieder" — traditionelle bayerische Lieder zum Mitsingen bei Wirtshaus-Geselligkeit. „Beim Frühschoppen werden d\'Wirtshaus-Lieder ausgepackt." Klassiker: „Solang der alte Peter", „Wer soll das bezahlen", „Im Münchner Hofbräuhaus". Repertoire ist standardisiert, jeder kennt die Texte. Heimatabend, Stammtisch, Volksfest — überall werden die gleichen Lieder gesungen. Kulturelles Identitäts-Element.',
+      beispiel: 'Bei jedem Wirtshausabend werden die alten Wirtshaus-Lieder gsunga.',
+      beispiel_hd: 'Bei jedem Wirtshausabend werden die alten Wirtshaus-Lieder gesungen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-393',
+      ausdruck: 'Hoamatlandl',
+      hochdeutsch: 'Heimatdorf',
+      bedeutung: 's\'„Hoamatlandl" — das Heimatdorf, mit liebevollem „-landl"-Suffix. „Mei Hoamatlandl is a Bergdorf im Allgäu." Konzept der starken bayerischen Heimat-Verbundenheit, das auch nach Auswanderung lebenslang bleibt. „Hoamatlandl-Treffen" sind organisierte Wiedersehen von Auswanderern. Das Konzept verbindet Geographie, Familie, Tradition und Sprache zu einem ganzheitlichen Heimat-Begriff.',
+      beispiel: 'Mei Hoamatlandl is mir lieber ois jede Großstadt.',
+      beispiel_hd: 'Mein Heimatdorf ist mir lieber als jede Großstadt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-394',
+      ausdruck: 'Heigl',
+      hochdeutsch: 'Heugabel (klein)',
+      bedeutung: 's\'„Heigl" — Verkleinerungsform der Heugabel, kleines Werkzeug für Heuwender und Bauern. „Greif des Heigl und bring d\'Heuschwaden zsammen." Bayerische Verkleinerungen sind allgegenwärtig: jedes Werkzeug, jedes Tier, jede Person bekommt ein „-erl", „-l" oder „-i". Ein Heigl ist klein, leicht, für Frauen und Kinder geeignet. Symbolisiert die feinen Differenzierungen der Bauernarbeit.',
+      beispiel: 'Mei Vada gibt mir s\'Heigl, dass i mid\'sammenkühlen helf.',
+      beispiel_hd: 'Mein Vater gibt mir die kleine Heugabel, damit ich beim Zusammenrechen helfe.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-395',
+      ausdruck: 'Sonntagsgwand',
+      hochdeutsch: 'Sonntagskleidung',
+      bedeutung: 's\'„Sonntagsgwand" — die feiertägliche Kleidung, oft die Tracht oder ein guter Anzug. „Mei Sonntagsgwand zieh ich nur fürn Kirchgang an." Traditionell unterschiedlich von der Werktags-Arbeitskleidung. Im konservativen Bayern wird der Unterschied noch gepflegt — wer „im Sonntagsgwand" geht, signalisiert Respekt vor dem Anlass. Bei Trachtenpaaren das volle Festtagsoutfit mit Hut und Schmuck.',
+      beispiel: 'Heid ziagh i mei Sonntagsgwand an, mia gehen ins Konzert.',
+      beispiel_hd: 'Heute ziehe ich mein Sonntagsgewand an, wir gehen ins Konzert.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-396',
+      ausdruck: 'Tante Resi',
+      hochdeutsch: 'Tante Resi (typische bayerische Tante)',
+      bedeutung: '„Tante Resi" — Stereotype-Bezeichnung der typischen bayerischen Tante: gemütlich, hilfsbereit, immer mit Kuchen und Geschichten parat. „Bei Tante Resi kriegt jeder seinen Apfelstrudl." Resi ist Kurzform von Theresia, einer der häufigsten bayerischen Frauennamen. Die Bezeichnung wird oft ironisch für irgendeine ältere Verwandte verwendet — jeder versteht, wer gemeint ist. Sympathische Stereotype.',
+      beispiel: 'Mei Tante Resi backt heid an Krapfen für\'s Patenkind.',
+      beispiel_hd: 'Meine Tante Resi bäckt heute Krapfen für das Patenkind.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-397',
+      ausdruck: 'Servus pfia di',
+      hochdeutsch: 'Tschüss und behüt dich',
+      bedeutung: '„Servus pfia di" — kombinierte bayerische Abschiedsformel, „Servus" und „pfia di" (behüt dich) zusammen. „Servus pfia di, mei Lieber, bis bald!" Doppelt verwendet, um besondere Herzlichkeit auszudrücken. Wird vor allem in Niederbayern und in Wirtshäusern verwendet, oft beim Abschied nach längerem Beisammensein. Verbindet zwei der wichtigsten bayerischen Begrüßungs-/Abschiedsformeln. Spielerisch-warm.',
+      beispiel: 'Servus pfia di, des war a schöner Abend, mia treffen uns wieder!',
+      beispiel_hd: 'Tschüss und behüt dich, das war ein schöner Abend, wir treffen uns wieder!',
+      kategorie: 'begruessung'
     }
   ]
 };
