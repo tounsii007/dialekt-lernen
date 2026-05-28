@@ -10,8 +10,8 @@ export const APP_VERSION = '2.0.0';
 export const APP_VERSION_LABEL = `v${APP_VERSION}`;
 
 // Datenstand: wird durch tools/sync-version.mjs gepflegt.
-export const DIALEKT_COUNT = 12;
-export const AUSDRUCK_COUNT = 3439;
+export const DIALEKT_COUNT = 13;
+export const AUSDRUCK_COUNT = 3509;
 
 // Repository — wird für „Korrektur melden"-Links genutzt.
 export const REPO_URL = 'https://github.com/tounsii007/dialekt-lernen';

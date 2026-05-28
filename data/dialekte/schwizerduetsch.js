@@ -2215,6 +2215,186 @@ export default {
       beispiel: 'Häsch d\'Cumulus dabii? Sösch verlüürsch d\'Pünkt!',
       beispiel_hd: 'Hast du die Cumulus-Karte dabei? Sonst verlierst du die Punkte!',
       kategorie: 'alltag'
+    },
+    {
+      id: 'ch-271',
+      ausdruck: 'Härdöpfu',
+      hochdeutsch: 'Kartoffeln (Berndeutsch)',
+      bedeutung: '„Härdöpfu" — der Berndeutsche und Westschweizer Begriff für Kartoffeln, wörtlich „Erdäpfel". „Härdöpfusalat zum Wurscht, das passt." In der Deutschschweiz hat fast jede Region eigenen Begriff: Zürichdeutsch „Härdöpfel", Berndeutsch „Härdöpfu", Walliserdeutsch „Härpfla". Die Kartoffel ist Schweizer Grundnahrungsmittel — Rösti, Härdöpfustock (Stampf), Gschwellti (Pellkartoffeln). Berndeutsche Aussprache ist besonders weich und gemütlich.',
+      beispiel: 'Hüt git\'s Härdöpfu mit Bratwurscht im Bistro!',
+      beispiel_hd: 'Heute gibt es Kartoffeln mit Bratwurst im Bistro!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-272',
+      ausdruck: 'Töffli',
+      hochdeutsch: 'Mofa / Moped',
+      bedeutung: 's\'„Töffli" — Schweizer Bezeichnung für Mofa, mit Verkleinerungsform. „Mit 14 hesch s\'erschti Töffli übercho." In der Schweiz traditionelles Verkehrsmittel für 14-Jährige (Mofa-Führerschein ab 14). Marken wie Puch, Tomos, Sachs. „Töffli-Buebe" sind die typischen jugendlichen Mofafahrer. Heute zunehmend durch E-Bikes ersetzt, aber Tradition hält sich. Verkleinerung von „Töff" (Motorrad). Klassiker der Schweizer Jugendkultur.',
+      beispiel: 'Mit em Töffli zur Schuel — das war hüt die Norm.',
+      beispiel_hd: 'Mit dem Mofa zur Schule — das war früher die Norm.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-273',
+      ausdruck: 'Posti',
+      hochdeutsch: 'Postauto / Postbus',
+      bedeutung: 's\'„Posti" — das berühmte gelbe Postauto / der Postbus der Schweizerischen Post. „S\'Posti chunt grad obenabe is Dorf." Tradition seit 1906, fährt auch in entlegene Bergdörfer mit unverwechselbarem dreiklang-Horn. Über 1000 PostAuto-Linien, vor allem im Berg- und Tourismusgebiet. „Posti-Tour" als Touristen-Erlebnis. Symbol der Schweizer Erschliessung — auch das hinterste Dorf hat Post-Anbindung.',
+      beispiel: 'S\'Posti fahrt jede zwei Stund hoch zum Bergdorf.',
+      beispiel_hd: 'Das Postauto fährt jede zwei Stunden hoch zum Bergdorf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-274',
+      ausdruck: 'Stägä',
+      hochdeutsch: 'Treppe',
+      bedeutung: 'D\'„Stägä" — Schweizerdeutsch für Treppe, mit charakteristischer „ä"-Aussprache. „D\'Stägä uffe zum Vorderhuus." Häufig in Wegbeschreibungen verwendet, sowohl im Haus als auch draussen. „D\'Stägä abe" (die Treppe runter), „d\'Stägä uffe" (hoch). Schweizer Berge bieten oft Treppen-Wanderungen mit hunderten Stufen. Verbindet sich mit „Stägähuus" (Treppenhaus). Klassisches Schweizer Wegbeschreibungs-Vokabular.',
+      beispiel: 'D\'Stägä isch chli stotzig, gang langsam!',
+      beispiel_hd: 'Die Treppe ist etwas steil, geh langsam!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-275',
+      ausdruck: 'Säntis',
+      hochdeutsch: 'Säntis (Appenzeller Berg)',
+      bedeutung: 'Da „Säntis" — markanter Berg im Alpstein-Massiv, 2502 m, Wahrzeichen der Ostschweiz. „Bi schönem Wätter gseht me vom Säntis bis zum Bodesee." Wettermast auf dem Gipfel ist die markante Silhouette. Bergrestaurant erreichbar mit der Säntisbahn. Symbol für Appenzeller Tradition, Käse, Wanderwege. Bei Föhnwetter sieht man den Säntis aus weit entfernten Regionen. Klassisches Schweizer Postkarten-Motiv.',
+      beispiel: 'Im Sommer fahrt mir mit em Velo zum Säntis.',
+      beispiel_hd: 'Im Sommer fahren wir mit dem Velo zum Säntis.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-276',
+      ausdruck: 'Käseschnitte',
+      hochdeutsch: 'Käseschnitte (überbackenes Käsebrot)',
+      bedeutung: 'D\'„Käseschnitte" — Schweizer Wohlfühl-Gericht: dickes Brot mit Käse überbacken, oft mit Schinken, Ei und Tomate. „A Käseschnitte mit Spiegelei zum Mittag, das wärmt." Variation des französischen Croque-Monsieur, in der Schweiz bodenständiger. Wirtshausklassiker, vor allem in den Bergen nach dem Skifahren oder Wandern. Mit Käse aus der Region — Greyerzer, Emmentaler oder Appenzeller. Schweizer Comfort Food.',
+      beispiel: 'Nach em Skifahre is\'a Käseschnitte mit Bier d\'beschti Belohnig.',
+      beispiel_hd: 'Nach dem Skifahren ist eine Käseschnitte mit Bier die beste Belohnung.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-277',
+      ausdruck: 'Cordon-bleu',
+      hochdeutsch: 'Cordon bleu (gefülltes Schnitzel)',
+      bedeutung: 's\'„Cordon-bleu" — gefülltes Schnitzel mit Schinken und Käse, paniert gebraten. „A Cordon-bleu vom Kalb mit Pommes, das isch Bistro-Klassik!" In der Schweiz besonders beliebt, oft als Riesenportion serviert. Variationen: vom Schwein, Pute oder Kalb. Aus der Westschweiz, mit französischem Namen und Pariser Kochtechnik. „Cordon-bleu-Wettessen" gibt es in einigen Restaurants. Standard auf jeder Schweizer Wirtshausspeisekarte.',
+      beispiel: 'A Cordon-bleu vom Schwii, dazue Pommes — das hed Power!',
+      beispiel_hd: 'Ein Cordon bleu vom Schwein, dazu Pommes — das hat Power!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-278',
+      ausdruck: 'Bärn',
+      hochdeutsch: 'Bern (Schweizer Hauptstadt)',
+      bedeutung: '„Bärn" — die Schweizerdeutsche Bezeichnung für Bern, die Schweizer Hauptstadt. „I bi z\'Bärn ufgwachse, das isch mi Stadt." Berndeutsch ist ein eigener Schweizer Dialekt mit gemütlicher, weicher Aussprache. Bern ist UNESCO-Welterbe-Altstadt, Sitz der Bundesversammlung, Heimat des Bärengrabens (mit Bären). Charakteristisch sind die Arkaden („Lauben") in der Altstadt — 6 km überdachte Einkaufsmeile.',
+      beispiel: 'I gang mit em Zug uf Bärn zum Bundeshus aluege.',
+      beispiel_hd: 'Ich fahre mit dem Zug nach Bern zum Bundeshaus anschauen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-279',
+      ausdruck: 'Lozärn',
+      hochdeutsch: 'Luzern (Schweizer Stadt)',
+      bedeutung: '„Lozärn" — die Schweizerdeutsche Form von Luzern, am Vierwaldstättersee. „Lozärn isch die schönsti Stadt in der ganze Schwiiz, wäg em See und de Bärgli." UNESCO-Welterbe mit Kapellbrücke, Wasserturm, Löwendenkmal. Tourismus-Hotspot mit Mark Twain als prominentem Bewunderer. Heimat des Lucerne Festival (Klassische Musik). Lozärnerdeutsch ist Innerschweizer Mundart mit eigenen Eigenheiten. Berg-, Wasser-, Kulturstadt vereint.',
+      beispiel: 'Z\'Lozärn häts viel Touriste — wäg em Pilatusberg.',
+      beispiel_hd: 'In Luzern hat es viele Touristen — wegen des Pilatusbergs.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-280',
+      ausdruck: 'Käserei',
+      hochdeutsch: 'Käserei',
+      bedeutung: 'D\'„Käserei" — die Schweizer Käseproduktionsstätte, oft in jedem Dorf vorhanden. „D\'Dorfkäserei macht no echte Greyerzer mit Hand." In der Schweiz ca. 500 Käsereien, viele klein und familiär geführt. Tradition seit dem Mittelalter. Die Milch der Sennen wird täglich frisch verarbeitet — Emmentaler, Greyerzer, Appenzeller, Tilsiter. Käsereien sind oft Touristen-Attraktionen mit Verkostung. Wichtiger Wirtschaftsfaktor für die Bergregionen.',
+      beispiel: 'In dr Dorfkäserei chasch zueluege wie d\'Chäs entstaht.',
+      beispiel_hd: 'In der Dorfkäserei kannst du zuschauen wie der Käse entsteht.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-281',
+      ausdruck: 'Wandertag',
+      hochdeutsch: 'Wandertag',
+      bedeutung: 'Da „Wandertag" — Schulpflicht-Wandertag in der Schweiz, einmal pro Jahr ist die ganze Klasse in den Bergen. „Em Wandertag heds nüd graggt, mir sind nass worde." Klassiker im Schweizer Schulsystem, prägt Generationen. Lehrer wählen Tour aus, oft 4-6 Stunden Wanderung. Picknick, Bergbahn, Aussichtspunkt — typisches Programm. Im Lehrplan verankert: Bewegung, Natur, soziales Erlebnis kombiniert.',
+      beispiel: 'Bi miim ersti Wandertag simer uffi Bärgli ufe.',
+      beispiel_hd: 'Bei meinem ersten Wandertag sind wir auf den Berg hoch.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-282',
+      ausdruck: 'Buurewurst',
+      hochdeutsch: 'Bauernwurst',
+      bedeutung: 'D\'„Buurewurst" — Schweizer Bauernwurst, dickes geräuchertes Wurstding aus Schweine- und Rindfleisch. „Buurewurst mit Härdöpfusalat, das isch Schwiizer Klassik." Variation der Bratwurst, aber gröber, würziger. Hergestellt von lokalen Metzgereien, mit unterschiedlichen Gewürzen pro Region. Klassiker auf Bauern-Wirtschaftshöfen und im Berggasthaus. Wichtig: nicht zu verwechseln mit der österreichischen oder deutschen Bratwurst — die Schweizer hat ihren eigenen Charakter.',
+      beispiel: 'I bestell a Buurewurst mit Senf und Brot, bitte.',
+      beispiel_hd: 'Ich bestelle eine Bauernwurst mit Senf und Brot, bitte.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-283',
+      ausdruck: 'Träf',
+      hochdeutsch: 'Treffen / Treffpunkt',
+      bedeutung: 'A „Träf" — Schweizer Bezeichnung für ein informelles Treffen oder den Treffpunkt selbst. „Mir hend a Träf am Samschtig im Bistro." Vom „treffen" (sich begegnen). Beliebt für regelmässige Stammtische, Vereins-Treffen, Schul-Klassentreffen. Sehr Schweizerisch entspannte Bezeichnung — kein offizielles Meeting, sondern lockeres Beisammensein. Oft mit Apéro verbunden. Klassisches Schweizer Geselligkeits-Vokabular.',
+      beispiel: 'Mir hend am Frytig a Träf vom Skiclub — chumsch au?',
+      beispiel_hd: 'Wir haben am Freitag ein Treffen vom Skiclub — kommst du auch?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-284',
+      ausdruck: 'Vorderhuus',
+      hochdeutsch: 'Vorderhaus (Hausvorderseite)',
+      bedeutung: 's\'„Vorderhuus" — Schweizer Bezeichnung für die Strasse-zugewandte Seite eines Hauses. „D\'Wohnig isch im Vorderhuus, mit Sicht uf d\'Bärge." Im Gegensatz zum „Hinterhuus" (Hofseite). In Schweizer Wohnungs-Anzeigen häufig verwendete Angabe. Spiegelt die genaue Schweizer Klassifizierung von Wohnlagen wider. Auch Bauplan-Vokabular bei Renovierungen. Klassisches Schweizer Immobilien-Vokabular.',
+      beispiel: 'D\'Stube isch im Vorderhuus, das gibt vil Liecht.',
+      beispiel_hd: 'Die Stube ist im Vorderhaus, das gibt viel Licht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-285',
+      ausdruck: 'Tröchnig',
+      hochdeutsch: 'Trocken',
+      bedeutung: '„Tröchnig" — Schweizer Aussprache von „trocken", weiche Konsonanten und „ig"-Endung. „D\'Wösch isch tröchnig — chasch sie abnä." Variationen: „tröchni" (Trockenheit), „tröchne" (trocknen). In den Bergen kann Föhn-Wetter zu „tröchniger" Luft führen — gut für Wäsche, schlecht für die Haut. Klassisches Wetterwort. Mit „nass" (feucht) das Antonym-Paar des Schweizer Tageswetters.',
+      beispiel: 'D\'Strasse isch jetzt tröchnig, chasch sicher fahre.',
+      beispiel_hd: 'Die Strasse ist jetzt trocken, kannst du sicher fahren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-286',
+      ausdruck: 'Stuune',
+      hochdeutsch: 'Staunen',
+      bedeutung: '„Stuune" — Schweizer Verb für „staunen", oft als Verwunderung über Schönheit. „I stuune über das Panorama vom Säntis." Auch Substantiv: „A Stuune" (ein Staunen). Häufig in Reisebeschreibungen und Wander-Erlebnissen. Die Schweizer Berg-Landschaft regt ständig zum Stuune an. Klassische Konnotation: positive Überraschung, Bewunderung. Auch reflexiv: „Sich verstuune" (sich verwundern). Schweizer Sprachwärme.',
+      beispiel: 'Am Pilatus muesch verstuune — sone Aussicht!',
+      beispiel_hd: 'Am Pilatus musst du staunen — solche Aussicht!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-287',
+      ausdruck: 'Goof',
+      hochdeutsch: 'Kind (Schweizerdeutsch)',
+      bedeutung: 'A „Goof" — Schweizerdeutsche Bezeichnung für ein Kind, vor allem ein lebhaftes oder ungezogenes. „Du chliine Goof, wo häsch das gleert?" Liebevoll-vorwurfsvoll verwendet, ähnlich dem deutschen „Lümmel". Plural: „d\'Goofe" (die Kinder). Aus dem Berndeutschen, aber in der ganzen Deutschschweiz verbreitet. Wird oft in Geschichten über lustige Kinder-Streiche verwendet. Klassische Familien- und Schul-Vokabel.',
+      beispiel: 'D\'Goofe spile draussen im Garte.',
+      beispiel_hd: 'Die Kinder spielen draussen im Garten.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-288',
+      ausdruck: 'Brünig',
+      hochdeutsch: 'Brünig (Schweizer Pass)',
+      bedeutung: 'Da „Brünig" — bekannter Schweizer Alpenpass zwischen Berner Oberland und Obwalden, 1008 m. „Mir fahret über de Brünig nach Interlaken." Wichtige Verkehrsverbindung mit Eisenbahn (Zentralbahn) und Strasse. Beim Brünigsattel die Wasserscheide zwischen Aare und Reuss. Pass mit moderater Höhe — nicht so spektakulär wie der Gotthard, aber wichtig für die regionale Vernetzung. Im Sommer beliebt für Velo-Touren, im Winter mit Schneeketten zu fahren.',
+      beispiel: 'Über de Brünig isch d\'Bahn — als Tourist a schönes Erlebnis.',
+      beispiel_hd: 'Über den Brünig ist die Bahn — als Tourist ein schönes Erlebnis.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-289',
+      ausdruck: 'Bistro',
+      hochdeutsch: 'Bistro (kleines Restaurant)',
+      bedeutung: 's\'„Bistro" — kleines, oft modernes Lokal in der Schweiz, weniger formell als ein Restaurant. „Mir gönd is Bistro um d\'Eggge, dort gits guate Cordon-bleus." Französischer Begriff, in der Schweiz fest etabliert. Im Gegensatz zur traditionellen „Wirtschaft" eher modern, oft mit Bistro-Tischen, kleiner Karte. Klassische Schweizer Mittagspause-Lokalität: Tagesmenü, schnell, gut. Verbreitet sowohl in Westschweiz (französischer Einfluss) als auch Ostschweiz.',
+      beispiel: 'S\'Bistro im Bahnhofbuffet hed a feines Tagesmenü.',
+      beispiel_hd: 'Das Bistro im Bahnhofbuffet hat ein feines Tagesmenü.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-290',
+      ausdruck: 'Bütschgi',
+      hochdeutsch: 'Apfelkrutsche / Kerngehäuse',
+      bedeutung: 's\'„Bütschgi" — Schweizerdeutscher Begriff für die Apfelkrutsche oder das Kerngehäuse eines Apfels. „Wirf nöd s\'Bütschgi uf de Bode, gib s\'mir." Liebevolle Verkleinerungsform. Wird oft an Kühe oder Pferde verfüttert, statt weggeworfen. In der traditionellen Schweizer Sparsamkeit kein Abfall ohne Wert. Klassisches Berndeutsches Wort, das in der ganzen Deutschschweiz verstanden wird. Beweis für die feinen Schweizer Verkleinerungen.',
+      beispiel: 'Mei Hund frisst gärn s\'Bütschgi vom Öpfel.',
+      beispiel_hd: 'Mein Hund frisst gerne das Kerngehäuse vom Apfel.',
+      kategorie: 'essen'
     }
   ]
 };

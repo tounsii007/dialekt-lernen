@@ -16,6 +16,7 @@ import wienerisch      from './dialekte/wienerisch.js';
 import fraenkisch      from './dialekte/fraenkisch.js';
 import ruhrdeutsch     from './dialekte/ruhrdeutsch.js';
 import alemannisch     from './dialekte/alemannisch.js';
+import pfaelzisch      from './dialekte/pfaelzisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -29,7 +30,8 @@ export const DIALEKTE = [
   wienerisch,
   fraenkisch,
   ruhrdeutsch,
-  alemannisch
+  alemannisch,
+  pfaelzisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup

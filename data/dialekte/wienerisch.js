@@ -2206,6 +2206,186 @@ export default {
       beispiel: 'Gestern bei der Stammtischrunde gab\'s an oarchen Aufzwickten!',
       beispiel_hd: 'Gestern bei der Stammtischrunde gab es einen heftigen Streit!',
       kategorie: 'redensart'
+    },
+    {
+      id: 'w-271',
+      ausdruck: 'Schanigarten',
+      hochdeutsch: 'Schanigarten (Gastgarten im Freien)',
+      bedeutung: 'Da „Schanigarten" — der Wiener Sommer-Gastgarten direkt vor dem Lokal, auf Gehsteig oder Platz. „Sobald\'s warm wird, sitzn wir nur no im Schanigarten." Benannt nach Johann „Schani" Tarrone, der im 18. Jahrhundert den ersten Gastgarten genehmigt bekam. Klassiker am Spittelberg, am Naschmarkt, in Grinzing. Saison von April bis Oktober. Synonym für entspannte Wiener Sommer-Lebensart, mit Schorle und kaltem Kaffee.',
+      beispiel: 'Im Mai sitzt ganz Wien im Schanigarten beim Kaffee.',
+      beispiel_hd: 'Im Mai sitzt ganz Wien im Gastgarten beim Kaffee.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-272',
+      ausdruck: 'Schmäh führen',
+      hochdeutsch: 'Witze machen / Schmäh treiben',
+      bedeutung: '„Schmäh führen" — kunstvoll Witze, ironische Bemerkungen und Wortspiele machen. „Der Hans führt an Schmäh, dass ma sich kugelt vor Lachen!" Der „Wiener Schmäh" ist eigene Kulturform — leicht zynisch, charmant, oft selbstironisch. Ein Mensch, der „a Schmäh führt", ist ein begnadeter Erzähler. Verbreitete Anerkennung: „Der hot an guten Schmäh." Zentrale Kompetenz im Wiener Gesellschaftsleben.',
+      beispiel: 'Der Toni führt scho wieder so an Schmäh, dass d\'Hetz nimma aufhört!',
+      beispiel_hd: 'Der Toni macht schon wieder solche Witze, dass die Belustigung nicht mehr aufhört!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-273',
+      ausdruck: 'Bramburi',
+      hochdeutsch: 'Kartoffeln (slawisch)',
+      bedeutung: '„Bramburi" — wienerisches Slangwort für Kartoffeln, aus dem Tschechischen „brambory". „Im Wirtshaus gibt\'s Bramburi-Salat zum Schnitzl." Spiegelt den starken slawischen Einfluss auf das Wienerische wider — Wien war Hauptstadt der habsburgischen Vielvölkermonarchie. Variation: „Erdäpfel" (offizieller österreichischer Begriff). „Bramburi" eher in der Slang-Sprache. Klassisches Beispiel für Wiens kulturelle Vielfalt.',
+      beispiel: 'A Kilo Bramburi vom Markt, dann mach i a guad\'s Gulasch.',
+      beispiel_hd: 'Ein Kilo Kartoffeln vom Markt, dann mache ich ein gutes Gulasch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-274',
+      ausdruck: 'Verlängerter',
+      hochdeutsch: 'Verlängerter (Kaffee mit mehr Wasser)',
+      bedeutung: 'A „Verlängerter" — die wienerische Kaffeevariation aus Espresso, der mit heißem Wasser verlängert wird. „A Verlängerter, bittschön, mit a Schale Milch." Etwas schwächer als ein Espresso, aber stärker als ein deutscher Filterkaffee. Klassische Kaffeehaus-Bestellung. Variationen: „Großer Verlängerter" (doppelter Espresso plus Wasser), „Verlängerter Brauner" (mit Milch). Wer Kaffeehaus-Kompetenz zeigen will, bestellt einen Verlängerten.',
+      beispiel: 'A Verlängerter und a Apfelstrudel — die perfekte Mehlspeis\'-Jause.',
+      beispiel_hd: 'Einen Verlängerten und einen Apfelstrudel — die perfekte Mehlspeisen-Jause.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-275',
+      ausdruck: 'Stamperl',
+      hochdeutsch: 'Schnapsglas (klein)',
+      bedeutung: 's\'„Stamperl" — das kleine Schnapsglas, fasst etwa 2 cl. „A Stamperl Obstler nach\'m Schweinsbraten, des hilft beim Verdauen." Klassisches Trinkgefäß in jedem Wiener Beisl und Heurigen. Variationen mit Spitz-, Glocke- oder geradem Profil. Wird für Obstler, Slibowitz, Kümmel oder hausgemachten Schnaps verwendet. Im Plural: „Wir trinken no a paar Stamperl" — Standard nach dem Essen oder bei Gefeierten.',
+      beispiel: 'No a Stamperl Marillen-Schnaps zum Abschluss, oder?',
+      beispiel_hd: 'Noch ein Schnapsglas Marillen-Schnaps zum Abschluss, oder?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-276',
+      ausdruck: 'Erdäpfelgulasch',
+      hochdeutsch: 'Kartoffel-Gulasch',
+      bedeutung: 's\'„Erdäpfelgulasch" — das einfache, vegetarische Wiener Gulasch aus Kartoffeln, Zwiebeln, Paprika und Majoran. „Erdäpfelgulasch mit Würstl, des is Wien fürn schmoien Geldbeutel." Studentenfutter, Arbeiterkost, Kinderessen. Im Gegensatz zum „Saftgulasch" (mit Fleisch) ein einfaches, gemütliches Gericht. Oft mit Bratwürstchen oder hartgekochten Eiern garniert. Klassiker der Wiener Hausmannskost — schnell zubereitet, sättigend.',
+      beispiel: 'Heut gibt\'s Erdäpfelgulasch mit a paar Frankfurter.',
+      beispiel_hd: 'Heute gibt es Kartoffel-Gulasch mit ein paar Frankfurtern.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-277',
+      ausdruck: 'Brettljause',
+      hochdeutsch: 'Brettljause (kalte Platte)',
+      bedeutung: 'D\'„Brettljause" — die wienerische kalte Brotzeit auf Holzbrett, mit Speck, Wurst, Käse, Aufstrichen, Essiggurkerln und Bauernbrot. „A Brettljause beim Heurigen, des is Wien pur." Variation in jedem Heurigen, oft mit lokalen Spezialitäten wie Liptauer, Bratlfettn oder Verhackertem. Zur Brettljause gehört unbedingt ein Glaserl Wein. Klassisches Sommer-Essen im Schanigarten oder Heurigengarten.',
+      beispiel: 'Mia bestellen a große Brettljause für drei Leut.',
+      beispiel_hd: 'Wir bestellen eine große Brettljause für drei Personen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-278',
+      ausdruck: 'G\'mahde Wiesn',
+      hochdeutsch: 'Gemähte Wiese (leichte Sache)',
+      bedeutung: '„G\'mahde Wiesn" — wienerisch für etwas Einfaches, eine sichere Sache. „Des Geschäft is a g\'mahde Wiesn, mach\' i mi heut no fertig." Bildlich: wie eine bereits gemähte Wiese, auf der man bequem gehen kann. Klassische Wiener Untertreibung — was eigentlich schwierig wäre, wird als selbstverständlich dargestellt. Drückt Lässigkeit und Selbstsicherheit aus. Im Sport-Kommentaren häufig: „A g\'mahde Wiesn für Rapid heut."',
+      beispiel: 'Da Prüfung is a g\'mahde Wiesn, hab i scho gemacht.',
+      beispiel_hd: 'Die Prüfung ist eine leichte Sache, habe ich schon gemacht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-279',
+      ausdruck: 'Tschecherl',
+      hochdeutsch: 'Tschecherl (kleines Wirtshaus)',
+      bedeutung: 's\'„Tschecherl" — sehr kleines, oft heruntergekommenes Wirtshaus, fast ein „Schmuddel-Beisl". „Im Tschecherl an der Ecke gibt\'s billiges Bier und a fragwürdige Pizza." Wienerische Selbstironie: Was eigentlich nicht hochwertig ist, wird liebevoll-spöttisch benannt. Verwandt mit „Beisl", aber abwertender. Oft sind Tschecherln Studentenkneipen oder Treffpunkte alter Stammkunden. Hat eigenen Charme im Wiener Nachtleben.',
+      beispiel: 'Gehen wir in\'s Tschecherl, des is billig und schmäht.',
+      beispiel_hd: 'Gehen wir ins Tschecherl, das ist billig und gemütlich.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-280',
+      ausdruck: 'Bidermeier',
+      hochdeutsch: 'Biedermeier (Stilepoche)',
+      bedeutung: 'Da „Bidermeier" — bürgerliche Stilepoche zwischen Wiener Kongress (1815) und Revolution (1848), Wiens „goldene" Periode. „A echtes Bidermeier-Möbel, des hot Geld." Charakteristisch: schlichte Eleganz, Sehnsucht nach Häuslichkeit, Familien-Idyll. Möbel, Bilder, Trachten aus dieser Zeit sind heute begehrte Sammelstücke. Wien war Zentrum: Schubert komponierte hier, Grillparzer schrieb. Bürgerliche Behaglichkeit als Lebensgefühl.',
+      beispiel: 'Mei Oma hot a echtes Bidermeier-Sekretär, des is unbezahlbar.',
+      beispiel_hd: 'Meine Oma hat ein echtes Biedermeier-Sekretär, das ist unbezahlbar.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-281',
+      ausdruck: 'Linzer Torte',
+      hochdeutsch: 'Linzer Torte',
+      bedeutung: 'D\'„Linzer Torte" — die berühmte österreichische Mürbeteig-Torte mit Johannisbeer- oder Marillenmarmelade-Füllung, mit charakteristischem Gitterboden. „A Linzer Torte mit Schlagobers, des is Kaffeehaus-Klassik." Aus Linz stammend (älteste namentlich erwähnte Torte der Welt, ab 1653), in Wien als Kaffeehaus-Mehlspeis kultiviert. Mit Zimt, Nelken, Mandeln aromatisiert. Wird traditionell zur Adventszeit gebacken.',
+      beispiel: 'Zur Weihnachtszeit gibt\'s bei uns immer a Linzer Torte.',
+      beispiel_hd: 'Zur Weihnachtszeit gibt es bei uns immer eine Linzer Torte.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-282',
+      ausdruck: 'Krot',
+      hochdeutsch: 'Krot (Gulden / Geld)',
+      bedeutung: 'D\'„Krot" — wienerischer Slangbegriff für Geld, besonders für Kleingeld. „Hast no a Krot übrig?" Variation: „Kröten" (Geld als Sammelbegriff). Wiener Wortschatz ist reich an Geld-Begriffen — „Marie" (Geld), „Knetn" (Geld), „Schotter" (Geld). Vom mittelhochdeutschen „krot" (Geld). Klassisches Stammtisch-Vokabular, vor allem nach drei Bier. Wienerischer Sprachreichtum beim Thema Geld.',
+      beispiel: 'A paar Kröten für die Bedienung, des g\'hört sich.',
+      beispiel_hd: 'Ein paar Kröten Trinkgeld für die Bedienung, das gehört sich.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-283',
+      ausdruck: 'Tröpferlbad',
+      hochdeutsch: 'Tröpferlbad (Volksbad)',
+      bedeutung: 's\'„Tröpferlbad" — Wiener Bezeichnung für die historischen Volksbäder, in denen Arbeiter und ärmere Wiener für ein paar Heller duschen konnten. „Friher san d\'Leut ins Tröpferlbad geh\'n, heut ham\'s eigene Duschen." Stadtgeschichtlich wichtig — Volkshygiene-Einrichtung von Bürgermeister Lueger. Heute praktisch verschwunden, viele zu Saunen oder Schwimmbädern umgebaut. Sprachlich noch lebendige Erinnerung an die soziale Stadtgeschichte.',
+      beispiel: 'Mei Großvada hot no ans Tröpferlbad in der Vorstadt erinnert.',
+      beispiel_hd: 'Mein Großvater hat sich noch an das Tröpferlbad in der Vorstadt erinnert.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-284',
+      ausdruck: 'Donauwalzer',
+      hochdeutsch: 'Donauwalzer (von Johann Strauß)',
+      bedeutung: 'Da „Donauwalzer" — der berühmteste österreichische Walzer, komponiert 1866 von Johann Strauß II., inoffizielle österreichische Hymne. „Beim Silvester-Konzert wird natürlich da Donauwalzer gespielt." Eröffnet jedes Neujahrskonzert der Wiener Philharmoniker, in der ganzen Welt bekannt. Original-Titel: „An der schönen blauen Donau". Pflichtprogramm bei jedem Wiener Ball, jeder bessere Tanzschüler kann ihn. Symbol Österreichs schlechthin.',
+      beispiel: 'Am Stephansplatz spuit a Strassenmusiker den Donauwalzer.',
+      beispiel_hd: 'Am Stephansplatz spielt ein Straßenmusiker den Donauwalzer.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-285',
+      ausdruck: 'Stiegenhaus',
+      hochdeutsch: 'Treppenhaus',
+      bedeutung: 's\'„Stiegenhaus" — wienerisch für Treppenhaus, charakteristisch für die Wiener Altbauten mit imposanten Stiegenaufgängen. „Im Stiegenhaus vom Jugendstil-Haus hot ma a herrliche Akustik." Wiens Gründerzeit-Bauten haben oft besonders schöne Stiegenhäuser mit Stuck, Mosaik, Holzhandlauf. In Wohnbau-Genossenschaften und Beamtenhäusern eher schlicht. Treffpunkt der Hausgemeinschaft beim Hineingehen, oft Ort kurzer Gespräche.',
+      beispiel: 'Im Stiegenhaus hängt no a Bild vom Kaiser, aus alten Zeiten.',
+      beispiel_hd: 'Im Treppenhaus hängt noch ein Bild vom Kaiser, aus alten Zeiten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-286',
+      ausdruck: 'Knofel',
+      hochdeutsch: 'Knoblauch',
+      bedeutung: 'Da „Knofel" — wienerischer Begriff für Knoblauch, von „Knoblauch" verkürzt. „Tu no a bissl mehr Knofel rein, des passt!" Zentrale Zutat in vielen wienerisch-böhmisch-ungarischen Gerichten — Gulasch, Liptauer, Knoblauchsuppe. „Knofelpresse" ist die Knoblauchpresse. Spiegelt den ungarisch-böhmischen Einfluss auf die Wiener Küche wider. Bei Stammgästen im Beisl gilt: ein bisschen Knofel-Geruch ist ein Beweis von gutem Essen.',
+      beispiel: 'A Schnitzl ohne Knofel — des is wie a Wirtshaus ohne Bier!',
+      beispiel_hd: 'Ein Schnitzel ohne Knoblauch — das ist wie ein Wirtshaus ohne Bier!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-287',
+      ausdruck: 'Spritzwein',
+      hochdeutsch: 'Spritzer / Weinschorle',
+      bedeutung: 'Da „Spritzwein" — der österreichische Weiß- oder Roséwein mit Sodawasser oder Mineralwasser gespritzt, das Standardgetränk im Heurigen. „A Spritzwein zur Brettljaus\'n, perfekt!" Häufig auch nur „Spritzer" genannt. Variation: „G\'spritzter" (allgemein), „Saurer G\'spritzter" (mit saurem Wasser), „Süßer" (mit Almdudler). Im Sommer das wichtigste Erfrischungsgetränk, im Schanigarten oder Heurigen. Wiener Trink-Standard.',
+      beispiel: 'Zwei Spritzwein und a Brettljause für den Tisch dort!',
+      beispiel_hd: 'Zwei Spritzer und eine Brettljause für den Tisch dort!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-288',
+      ausdruck: 'Beuschl',
+      hochdeutsch: 'Beuschel (Lungen-Gericht)',
+      bedeutung: 's\'„Beuschl" — wienerisches Innereien-Gericht aus Kalbslunge und -herz, in saurer Sahnesauce. „A Beuschl mit Knödel, des is altwienerische Küche." Traditionell aus der bürgerlichen Sparsamkeits-Küche entstanden: nichts vom Tier verschwenden. Mit Kapern, Senf, Essig gewürzt — säuerlich, deftig. Heute Spezialität in nostalgischen Beisln, nicht für jeden Geschmack. Klassisches Gericht der echten Wiener Küche.',
+      beispiel: 'A echtes Beuschl is nur in alten Beisln no zum krieg\'n.',
+      beispiel_hd: 'Ein echtes Beuschel ist nur in alten Beisln noch zu bekommen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-289',
+      ausdruck: 'Lieserl',
+      hochdeutsch: 'Lieserl (Kosename)',
+      bedeutung: '„Lieserl" — wienerische Verkleinerungsform von Elisabeth oder allgemein liebevoller Kosename für Frauen. „Mei Lieserl, was hosch denn da angstellt?" Auch namentlich verwendet: „D\'Lieserl vom Wirtshaus", „A Lieserl-Bier" (kleines Bier). Wiener Sprache liebt diese Verkleinerungen, die Vertrautheit und Wärme signalisieren. Generationsübergreifend, vor allem von älteren Wienern verwendet. Drückt liebevolle Nähe aus.',
+      beispiel: 'Mei Lieserl, du bisch hoit immer no a Madel für mich.',
+      beispiel_hd: 'Meine Lieserl, du bist halt immer noch ein Mädchen für mich.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-290',
+      ausdruck: 'Stiagn-Vorsteher',
+      hochdeutsch: 'Stiegenvorsteher (Hausmeister)',
+      bedeutung: 'Da „Stiagn-Vorsteher" — der historische wienerische Hausverwalter, zuständig für das Treppenhaus eines Wohnblocks. „Der Stiagn-Vorsteher hot scho wieder a Beschwerde wegen Lärm gemacht." Reglementiert nicht nur Sauberkeit, sondern auch das soziale Zusammenleben. Klassische Wiener Figur, oft etwas pingelig, mit langer Tradition. Heute meist durch Hausverwaltungsfirmen ersetzt, aber als Begriff noch lebendig in der Wiener Wohngeschichte.',
+      beispiel: 'Da Stiagn-Vorsteher hot sich beschwert, weil mei Hund laut war.',
+      beispiel_hd: 'Der Stiegenvorsteher hat sich beschwert, weil mein Hund laut war.',
+      kategorie: 'menschen'
     }
   ]
 };

@@ -50,6 +50,7 @@ const PRECACHE_URLS = [
   './data/dialekte/fraenkisch.js',
   './data/dialekte/hessisch.js',
   './data/dialekte/koelsch.js',
+  './data/dialekte/pfaelzisch.js',
   './data/dialekte/plattdeutsch.js',
   './data/dialekte/ruhrdeutsch.js',
   './data/dialekte/saechsisch.js',
