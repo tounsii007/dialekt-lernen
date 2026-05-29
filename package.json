@@ -14,6 +14,8 @@
     "test:integration": "node tools/test.mjs --filter=integration",
     "test:frontend": "node tools/test.mjs --filter=frontend",
     "a11y": "node tools/a11y-audit.mjs",
+    "bundle-analyze": "node tools/bundle-analyze.mjs",
+    "minify-css": "node tools/minify-css.mjs",
     "ci": "npm run validate && npm run a11y && npm test"
   },
   "engines": {

@@ -25,6 +25,7 @@ coverage/
 # Build artifacts (we have no build step, but just in case)
 dist/
 build/
+styles.min.css
 
 # Local env
 .env
