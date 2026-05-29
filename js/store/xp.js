@@ -2,27 +2,30 @@
 
 import { state, persist } from './state.js';
 
-// Kumuliertes XP-Limit je Level: level(n) = 50 * n * (n + 1)
-// Level 1 → 100  Level 2 → 300  Level 3 → 600  Level 4 → 1000 …
+// Kumuliertes XP-Limit je Level: xpForLevel(n) = 50 * n * (n + 1)
+// Das ist die XP-Schwelle, ab der Level n abgeschlossen ist (→ Aufstieg zu n+1).
+// Level 1 endet bei 100, Level 2 bei 300, Level 3 bei 600, Level 4 bei 1000 …
 export function xpForLevel(n) {
   return 50 * n * (n + 1);
 }
 
+// Aktuell erreichtes Level. Bereiche: Lv1 = [0,100), Lv2 = [100,300), Lv3 = [300,600) …
 export function levelForXp(xp) {
   let lvl = 1;
   while (xp >= xpForLevel(lvl)) lvl++;
-  return lvl - 1 || 1;
+  return lvl;
 }
 
 export function xpToNextLevel(xp) {
-  const lvl = levelForXp(xp);
-  const needed = xpForLevel(lvl + 1);
-  const base   = xpForLevel(lvl);
+  const lvl    = levelForXp(xp);
+  const base   = lvl > 1 ? xpForLevel(lvl - 1) : 0; // XP-Untergrenze des aktuellen Levels
+  const needed = xpForLevel(lvl);                   // XP-Schwelle zum nächsten Level
+  const span   = needed - base;
   return {
     level:    lvl,
     current:  xp - base,
-    needed:   needed - base,
-    progress: Math.min(1, (xp - base) / (needed - base))
+    needed:   span,
+    progress: span > 0 ? Math.min(1, Math.max(0, (xp - base) / span)) : 0
   };
 }
 

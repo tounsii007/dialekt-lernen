@@ -10,6 +10,9 @@
     "dedupe": "node tools/dedupe.mjs",
     "sync-version": "node tools/sync-version.mjs",
     "test": "node tools/test.mjs",
+    "test:coverage": "node tools/test.mjs --coverage",
+    "test:integration": "node tools/test.mjs --filter=integration",
+    "test:frontend": "node tools/test.mjs --filter=frontend",
     "ci": "npm run validate && npm test"
   },
   "engines": {
