@@ -65,8 +65,9 @@ describe('CSP Header', () => {
   });
 
   it("script-src 'self' (kein unsafe-eval)", () => {
-    const cspMatch = indexHtml.match(/Content-Security-Policy[^"']*content=["']([^"']+)["']/i);
-    assert.ok(cspMatch);
+    // Match: <meta http-equiv="Content-Security-Policy" content="...">
+    const cspMatch = indexHtml.match(/Content-Security-Policy["']\s+content=["']([^"']+)["']/i);
+    assert.ok(cspMatch, 'CSP-Content sollte extrahierbar sein');
     assert.doesNotMatch(cspMatch[1], /unsafe-eval/);
   });
 

@@ -6,18 +6,58 @@
 import { el } from './dom.js';
 
 let activeBackdrop = null;
+let activePanel = null;
+let lastFocused = null;
+
+const FOCUSABLE_SEL = [
+  'a[href]',
+  'button:not([disabled])',
+  'textarea:not([disabled])',
+  'input:not([disabled])',
+  'select:not([disabled])',
+  '[tabindex]:not([tabindex="-1"])',
+].join(',');
+
+function focusableInPanel() {
+  if (!activePanel || typeof activePanel.querySelectorAll !== 'function') return [];
+  return Array.from(activePanel.querySelectorAll(FOCUSABLE_SEL));
+}
 
 export function closeModal() {
   if (!activeBackdrop) return;
   const b = activeBackdrop;
+  const toRestore = lastFocused;
   activeBackdrop = null;
+  activePanel = null;
+  lastFocused = null;
   b.classList.remove('is-open');
   setTimeout(() => b.remove(), 300);
-  document.removeEventListener('keydown', onEsc);
+  document.removeEventListener('keydown', onKeydown);
+  // Fokus zurück auf das auslösende Element (vor dem Ausblenden, damit der
+  // Nutzer den Kontext nicht verliert).
+  if (toRestore && typeof toRestore.focus === 'function') {
+    try { toRestore.focus(); } catch { /* Element evtl. nicht mehr im DOM */ }
+  }
 }
 
-function onEsc(e) {
-  if (e.key === 'Escape') closeModal();
+// ESC schließt; Tab/Shift+Tab bleiben im Panel gefangen (Focus-Trap).
+function onKeydown(e) {
+  if (e.key === 'Escape') { closeModal(); return; }
+  if (e.key !== 'Tab' || !activePanel) return;
+
+  const items = focusableInPanel();
+  if (items.length === 0) { e.preventDefault(); return; }
+
+  const first = items[0];
+  const last = items[items.length - 1];
+  const active = (typeof document !== 'undefined') ? document.activeElement : null;
+  const inPanel = !!active && active !== activePanel && activePanel.contains(active);
+
+  if (e.shiftKey) {
+    if (!inPanel || active === first) { e.preventDefault(); last.focus(); }
+  } else {
+    if (!inPanel || active === last) { e.preventDefault(); first.focus(); }
+  }
 }
 
 /**
