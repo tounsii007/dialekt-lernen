@@ -71,4 +71,17 @@ describe('getLernStats', () => {
     assert.equal(s.inArbeit, 2);
     assert.equal(s.gesamt, 4);
   });
+
+  it('ignoriert korrupte Einträge (null/String/Array) ohne TypeError', () => {
+    setLernstand('hessisch', 'h-001', STATUS_LEARNED);
+    // Simuliert manipuliertes Backup / direkt editiertes localStorage.
+    state.gelernt['kaputt.null'] = null;
+    state.gelernt['kaputt.str']  = 'broken';
+    state.gelernt['kaputt.arr']  = [1, 2, 3];
+    let s;
+    assert.doesNotThrow(() => { s = getLernStats(); });
+    assert.equal(s.gelernt, 1);
+    assert.equal(s.inArbeit, 0);
+    assert.equal(s.gesamt, 1); // nur der echte Eintrag zählt
+  });
 });

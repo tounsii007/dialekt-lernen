@@ -96,6 +96,20 @@ describe('getStreakHeatmap', () => {
     const heat = getStreakHeatmap(1);
     assert.equal(heat[heat.length - 1].count, 5);
   });
+
+  it('Keys sind lückenlos aufeinanderfolgende Kalendertage (DST-sicher)', () => {
+    const heat = getStreakHeatmap(8);
+    const keys = heat.map(h => h.key);
+    // Keine Tagesdopplung — ms-Subtraktion vom fixen Anker kann an
+    // DST-Übergängen einen Kalendertag doppeln oder überspringen.
+    assert.equal(new Set(keys).size, keys.length, 'keine doppelten Tage');
+    for (let i = 1; i < keys.length; i++) {
+      const [y0, m0, d0] = keys[i - 1].split('-').map(Number);
+      const [y1, m1, d1] = keys[i].split('-').map(Number);
+      const diffDays = Math.round((new Date(y1, m1 - 1, d1) - new Date(y0, m0 - 1, d0)) / 86_400_000);
+      assert.equal(diffDays, 1, `${keys[i - 1]} → ${keys[i]} sollte genau 1 Tag sein`);
+    }
+  });
 });
 
 describe('getActiveDays', () => {

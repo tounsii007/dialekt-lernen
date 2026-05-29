@@ -172,6 +172,52 @@ describe('importState — strategy=merge', () => {
   });
 });
 
+describe('importState — Härtung gegen korrupte gelernt-Einträge', () => {
+  beforeEach(() => resetAllData());
+
+  // gelernt ist top-level ein Objekt → isValidShape lässt es durch.
+  // Die einzelnen korrupten Karten-Werte müssen separat gefiltert werden,
+  // sonst brechen sie später getLernstand()/reviewCard() mit TypeError.
+  it('replace: filtert korrupte Karten (null/String/Array) heraus', () => {
+    const snap = {
+      format: 'dialekto', version: 2,
+      data: { gelernt: {
+        'hessisch.h-001': { ef: 2.5, reps: 1, interval: 1, due: 0, last: 1000, stand: 3 },
+        'kaputt.null': null,
+        'kaputt.str': 'broken',
+        'kaputt.arr': [1, 2, 3],
+      } },
+    };
+    const r = importState(snap, { strategy: 'replace' });
+    assert.equal(r.ok, true);
+    assert.equal(Object.keys(state.gelernt).length, 1);
+    assert.ok(state.gelernt['hessisch.h-001']);
+    assert.equal(state.gelernt['kaputt.null'], undefined);
+    assert.equal(state.gelernt['kaputt.str'], undefined);
+    assert.equal(state.gelernt['kaputt.arr'], undefined);
+  });
+
+  it('merge: überspringt korrupte eingehende Karten', () => {
+    state.gelernt = { 'hessisch.h-001': { last: 1000, stand: 3 } };
+    const snap = {
+      format: 'dialekto', version: 2,
+      data: { gelernt: {
+        'hessisch.h-002': { last: 2000, stand: 3 }, // gültig → übernehmen
+        'kaputt.null': null,
+        'kaputt.str': 'broken',
+        'kaputt.arr': [1, 2, 3],
+      } },
+    };
+    const r = importState(snap, { strategy: 'merge' });
+    assert.equal(r.ok, true);
+    assert.ok(state.gelernt['hessisch.h-001']); // bestehend bleibt
+    assert.ok(state.gelernt['hessisch.h-002']); // neuer gültiger Eintrag
+    assert.equal(state.gelernt['kaputt.null'], undefined);
+    assert.equal(state.gelernt['kaputt.str'], undefined);
+    assert.equal(state.gelernt['kaputt.arr'], undefined);
+  });
+});
+
 describe('resetAllData — setzt ALLE Felder zurück (auch xp/goals/notes)', () => {
   it('XP, Goals, Notes, Preset werden zurückgesetzt', () => {
     seedState();

@@ -37,9 +37,10 @@ export function getLernstand(dialektId, ausdruckId) {
 }
 
 export function getLernStats() {
-  // Korrupte Einträge (null/Nicht-Objekt) ignorieren — z. B. aus manipulierten
+  // Korrupte Einträge (null/Nicht-Objekt/Array) ignorieren — z. B. aus manipulierten
   // Backups oder direkt editiertem localStorage —, sonst wirft .stand einen TypeError.
-  const entries = Object.values(state.gelernt || {}).filter(e => e && typeof e === 'object');
+  const entries = Object.values(state.gelernt || {})
+    .filter(e => e && typeof e === 'object' && !Array.isArray(e));
   const gelernt  = entries.filter(e => (e.stand ?? 0) >= STATUS_LEARNED).length;
   const inArbeit = entries.filter(e => (e.stand ?? 0) > STATUS_UNKNOWN && (e.stand ?? 0) < STATUS_LEARNED).length;
   return { gelernt, inArbeit, gesamt: entries.length };

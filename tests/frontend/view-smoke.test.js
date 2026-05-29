@@ -12,20 +12,6 @@ after(unmountDom);
 
 const { el } = await import('../../js/util/dom.js');
 
-async function smokeRender(modulePath, fnName, args = []) {
-  const mod = await import(modulePath);
-  assert.equal(typeof mod[fnName], 'function', `${fnName} sollte exportiert sein`);
-  const root = el('div');
-  // Render-Versuch — bei FakeDOM-Limit kein Fehler werfen.
-  try {
-    mod[fnName](root, ...args);
-  } catch (e) {
-    // FakeDOM unterstützt nicht alle Browser-APIs (SVG, Web Speech etc.) —
-    // wir akzeptieren das, solange der Modul-Import + die Funktion da sind.
-  }
-  return root;
-}
-
 describe('View-Module sind importable', () => {
   beforeEach(resetState);
 
@@ -75,22 +61,26 @@ describe('View-Module sind importable', () => {
   });
 });
 
-describe('Render-Smoke (FakeDOM, Fehler toleriert)', () => {
+describe('Render-Smoke: Views erzeugen Output (FakeDOM)', () => {
   beforeEach(resetState);
 
-  it('renderQuiz ohne aktives Quiz', async () => {
-    await assert.doesNotReject(async () => smokeRender('../../js/views/quiz.js', 'renderQuiz'));
-  });
+  // Diese Views rendern unter FakeDOM vollständig durch. Wir prüfen daher
+  // strikt: Aufruf wirft NICHT und erzeugt Inhalt. (Früher wurden hier alle
+  // Fehler verschluckt — der Test konnte nichts mehr fangen.)
+  async function expectRenders(modulePath, fnName, args = []) {
+    const mod = await import(modulePath);
+    assert.equal(typeof mod[fnName], 'function', `${fnName} sollte exportiert sein`);
+    const root = el('div');
+    mod[fnName](root, ...args); // wirft → Test schlägt fehl (gewollt)
+    assert.ok(root.childNodes.length > 0, `${fnName} sollte Inhalt rendern`);
+  }
 
-  it('renderEntdecken', async () => {
-    await assert.doesNotReject(async () => smokeRender('../../js/views/entdecken.js', 'renderEntdecken'));
-  });
+  it('renderQuiz ohne aktives Quiz erzeugt Setup-UI', () =>
+    expectRenders('../../js/views/quiz.js', 'renderQuiz'));
 
-  it('renderLernen', async () => {
-    await assert.doesNotReject(async () => smokeRender('../../js/views/lernen.js', 'renderLernen', [{}]));
-  });
+  it('renderLernen erzeugt Output', () =>
+    expectRenders('../../js/views/lernen.js', 'renderLernen', [{}]));
 
-  it('renderFavoriten', async () => {
-    await assert.doesNotReject(async () => smokeRender('../../js/views/favoriten.js', 'renderFavoriten'));
-  });
+  it('renderFavoriten erzeugt Output', () =>
+    expectRenders('../../js/views/favoriten.js', 'renderFavoriten'));
 });

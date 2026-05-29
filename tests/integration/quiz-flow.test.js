@@ -2,12 +2,12 @@
 //
 // Testet das Zusammenspiel von question-builder + state-Management.
 
-import { describe, it, beforeEach } from 'node:test';
+import { describe, it, beforeEach, before, after } from 'node:test';
 import assert from 'node:assert/strict';
 
 import { ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { buildQuestion } from '../../js/views/quiz/question-builder.js';
-import { resetState } from '../_setup.js';
+import { resetState, mountDom, unmountDom } from '../_setup.js';
 
 describe('buildQuestion — Multiple-Choice-Generierung', () => {
   beforeEach(resetState);
@@ -89,5 +89,43 @@ describe('Quiz-Flow: viele Fragen aus echten Daten', () => {
     // Bei Region-Modus ist die korrekte Antwort der Dialekt-Name
     assert.ok(q.correct);
     assert.ok(q.options.includes(q.correct));
+  });
+});
+
+describe('renderQuizQuestion — Antwort-Markierung über data-Flag', () => {
+  before(mountDom);
+  after(unmountDom);
+
+  // Sammelt alle gerenderten Antwort-Buttons aus dem FakeDOM-Baum.
+  // (querySelectorAll ist im Mock ein No-op → manuell traversieren.)
+  function collectOptions(node, out = []) {
+    if (node && node.className === 'quiz-option') out.push(node);
+    for (const c of (node?.childNodes || [])) collectOptions(c, out);
+    return out;
+  }
+
+  it('markiert genau die korrekte Option — auch bei Substring-Kollision', async () => {
+    const { renderQuizQuestion } = await import('../../js/views/quiz/question.js');
+    // "Hausmeister" enthält "Haus" als Substring — der frühere
+    // textContent.includes()-Match hätte hier die falsche Karte markiert.
+    const q = {
+      prompt: 'Haus', sub: '',
+      item: { ausdruck: 'Haus', dialektLang: 'de-DE' },
+      options: ['Hausmeister', 'Haus', 'Maus', 'Laus'],
+      correct: 'Haus',
+    };
+    const quiz = { questions: [q], idx: 0, score: 0, history: [], timerEnabled: false };
+    const wrap = renderQuizQuestion(quiz, { onAbort() {}, onAnswer() {} });
+
+    const buttons = collectOptions(wrap);
+    assert.equal(buttons.length, 4);
+
+    const flagged = buttons.filter(b => b.dataset.isCorrect === '1');
+    assert.equal(flagged.length, 1, 'genau eine Option ist als korrekt geflaggt');
+    assert.equal(flagged[0].dataset.opt, 'Haus');
+
+    // Der Substring-Treffer darf NICHT als korrekt markiert sein.
+    const hausmeister = buttons.find(b => b.dataset.opt === 'Hausmeister');
+    assert.equal(hausmeister.dataset.isCorrect, '0');
   });
 });
