@@ -14,9 +14,11 @@
     "test:integration": "node tools/test.mjs --filter=integration",
     "test:frontend": "node tools/test.mjs --filter=frontend",
     "a11y": "node tools/a11y-audit.mjs",
+    "security": "node tools/security-scan.mjs",
     "bundle-analyze": "node tools/bundle-analyze.mjs",
     "minify-css": "node tools/minify-css.mjs",
-    "ci": "npm run validate && npm run a11y && npm test"
+    "install-hooks": "node tools/install-hooks.mjs",
+    "ci": "npm run validate && npm run a11y && npm run security && npm test"
   },
   "engines": {
     "node": ">=18"
