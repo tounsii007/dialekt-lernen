@@ -12,10 +12,22 @@
   "categories": ["education", "books", "lifestyle"],
   "icons": [
     {
-      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='0.5' stop-color='%23ec4899'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='100' fill='url(%23g)'/%3E%3Cpath fill='white' d='M256 96c-90 0-156 70-156 152 0 53 27 100 70 130l-22 70 90-48c6 1 12 1 18 1 90 0 156-64 156-152S346 96 256 96z'/%3E%3Ccircle cx='196' cy='248' r='22' fill='%238b5cf6'/%3E%3Ccircle cx='256' cy='248' r='22' fill='%238b5cf6'/%3E%3Ccircle cx='316' cy='248' r='22' fill='%238b5cf6'/%3E%3C/svg%3E",
+      "src": "./icons/icon.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
   ],
   "shortcuts": [
