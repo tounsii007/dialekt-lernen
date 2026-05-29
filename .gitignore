@@ -1,0 +1,40 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# Tests
+coverage/
+.nyc_output/
+
+# Build artifacts (we have no build step, but just in case)
+dist/
+build/
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Local notes / drafts
+NOTES.md
+TODO.md
+*.draft.md
+
+# Lockfiles for npm-via-npx (no deps installed)
+package-lock.json

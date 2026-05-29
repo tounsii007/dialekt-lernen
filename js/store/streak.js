@@ -53,9 +53,11 @@ export function getStreakHeatmap(weeks = 16) {
   const total = weeks * 7;
   const out = [];
   for (let i = total - 1; i >= 0; i--) {
-    const d = new Date(today.getTime() - i * DAY_MS);
+    // Kalender-Arithmetik statt ms-Subtraktion — sonst kippt der Tag an
+    // DST-Übergängen (z. B. 25h-Tag) auf das falsche Datum.
+    const d = new Date(today.getFullYear(), today.getMonth(), today.getDate() - i);
     const key = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-    out.push({ date: new Date(d), key, count: days[key] || 0 });
+    out.push({ date: d, key, count: days[key] || 0 });
   }
   return out;
 }

@@ -86,6 +86,19 @@ function isValidShape(d) {
   return true;
 }
 
+// Behält aus einem Record nur Werte, die echte Objekte sind (kein null,
+// String, Array). isValidShape prüft nur die Top-Level-Form von `gelernt`;
+// einzelne korrupte Karten-Einträge würden sonst durchrutschen und später
+// getLernstand()/reviewCard() mit einem TypeError brechen.
+function sanitizeRecord(obj) {
+  const out = {};
+  if (!obj || typeof obj !== 'object') return out;
+  for (const [k, v] of Object.entries(obj)) {
+    if (v && typeof v === 'object' && !Array.isArray(v)) out[k] = v;
+  }
+  return out;
+}
+
 // Validiert und importiert ein Snapshot. Liefert {ok, error?}.
 // strategy:
 //   'replace' — überschreibt vorhandene Felder
@@ -129,7 +142,7 @@ function replaceImport(d) {
   // Skalare + reine Datenstrukturen — direkt übernehmen.
   if (d.theme != null) state.theme = d.theme;
   if (Array.isArray(d.favoriten)) state.favoriten = d.favoriten;
-  if (d.gelernt && typeof d.gelernt === 'object') state.gelernt = d.gelernt;
+  if (d.gelernt && typeof d.gelernt === 'object') state.gelernt = sanitizeRecord(d.gelernt);
   if (d.streak && typeof d.streak === 'object') {
     state.streak = {
       count: 0,
@@ -181,10 +194,13 @@ function mergeImport(d) {
   // gelernt — pro Karte: neueres Review gewinnt
   if (d.gelernt && typeof d.gelernt === 'object') {
     for (const k of Object.keys(d.gelernt)) {
-      const existing = state.gelernt[k];
       const incoming = d.gelernt[k];
+      // Korrupte Einträge (null, String, Array) überspringen — sonst landen
+      // sie in state.gelernt und brechen später getLernstand()/reviewCard().
+      if (!incoming || typeof incoming !== 'object' || Array.isArray(incoming)) continue;
+      const existing = state.gelernt[k];
       if (!existing) state.gelernt[k] = incoming;
-      else if ((incoming?.last || 0) > (existing.last || 0)) state.gelernt[k] = incoming;
+      else if ((incoming.last || 0) > (existing.last || 0)) state.gelernt[k] = incoming;
     }
   }
 

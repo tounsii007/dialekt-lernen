@@ -72,8 +72,10 @@ function answer(btn, chosen, correct, optsEl) {
   const quiz = getQuiz();
   if (!quiz) return;
   optsEl.querySelectorAll('.quiz-option').forEach(b => b.disabled = true);
+  // Exakter Treffer über das data-Flag — Substring-Match (textContent.includes)
+  // würde bei Optionen wie "Haus" / "Hausmeister" die falsche Karte markieren.
   const correctBtn = Array.from(optsEl.querySelectorAll('.quiz-option')).find(b =>
-    b.textContent.includes(correct)
+    b.dataset.isCorrect === '1'
   );
   const stage = document.querySelector('.quiz-stage');
   if (chosen === correct) {

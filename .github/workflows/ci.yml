@@ -14,8 +14,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  validate:
-    name: Validate JS + HTML + JSON
+  syntax-check:
+    name: Syntax & Format
     runs-on: ubuntu-latest
 
     steps:
@@ -52,13 +52,58 @@ jobs:
       - name: HTML syntax check (html-validate)
         run: npx --yes html-validate index.html
 
-      - name: Validate dialect datasets
-        run: node tools/validate-data.mjs
+  validate-data:
+    name: Validate Dialect Datasets
+    runs-on: ubuntu-latest
 
-      - name: Validate entries + run unit tests
-        run: npm run ci
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Static-serve smoke test
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate dialect data (schema, duplicates, plausibility)
+        run: node tools/validate.mjs
+
+  unit-tests:
+    name: Unit + Integration + Frontend Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run all tests with coverage
+        run: node tools/test.mjs --coverage
+
+      - name: Run integration tests separately (for visibility)
+        run: node tools/test.mjs --filter=integration
+
+      - name: Run frontend tests separately (for visibility)
+        run: node tools/test.mjs --filter=frontend
+
+  smoke-test:
+    name: Static-Serve Smoke Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Serve + curl smoke
         run: |
           npx --yes http-server . -p 5173 &
           server_pid=$!
@@ -67,4 +112,39 @@ jobs:
           curl -fsS http://localhost:5173/ | grep -q 'Dialekto' || (echo "Index missing 'Dialekto'"; exit 1)
           # data/dialekte.js must serve a 200 (no 404 from broken paths)
           curl -fsS http://localhost:5173/data/dialekte.js > /dev/null
+          # Service Worker must be present
+          curl -fsS http://localhost:5173/sw.js | grep -q 'PRECACHE_URLS' || (echo "SW missing precache"; exit 1)
+          # Manifest must be valid JSON
+          curl -fsS http://localhost:5173/manifest.webmanifest | node -e "JSON.parse(require('fs').readFileSync(0,'utf-8'))"
           kill $server_pid
+
+  security-scan:
+    name: Security & Quality Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check for accidentally committed secrets
+        run: |
+          # Sehr leichter Sekret-Check (echte Tools wie gitleaks wären besser)
+          if grep -rIE '(api[_-]?key|secret|password|token)["'\''=:]{1,3}[A-Za-z0-9]{20,}' \
+              --include='*.js' --include='*.json' --include='*.md' \
+              --exclude-dir=node_modules --exclude-dir=.git . ; then
+            echo "::warning::Possible secret-like patterns found — please review"
+          fi
+
+      - name: Check for console.log in production code (allowed in tools/, tests/)
+        run: |
+          # console.log only allowed in tools/, tests/, and js/util/network.js (warns appropriately)
+          violations=$(grep -rn 'console\.log' js/ --include='*.js' | grep -v 'tools/' | grep -v 'tests/' || true)
+          if [ -n "$violations" ]; then
+            echo "::warning::console.log in production code:"
+            echo "$violations"
+          fi

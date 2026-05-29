@@ -542,7 +542,16 @@ function renderDataTools() {
   fileInput.addEventListener('change', async (e) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    const text = await file.text();
+    let text;
+    try {
+      text = await file.text();
+    } catch {
+      // Datei nach Auswahl gelöscht / nicht lesbar — Reset, damit dieselbe
+      // Datei erneut ausgewählt werden kann (change feuert sonst nicht wieder).
+      e.target.value = '';
+      toast('Datei konnte nicht gelesen werden.', 'info', 3000);
+      return;
+    }
     const res = importState(text, { strategy: 'merge' });
     if (res.ok) {
       toast('Daten importiert & gemerged ✓ — Seite wird neu geladen', 'success', 2200);

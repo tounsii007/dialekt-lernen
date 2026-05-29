@@ -1,10 +1,16 @@
 # Dialekto · Deutsche Dialekte lernen
 
+[![CI](https://github.com/tounsii007/dialekt-lernen/actions/workflows/ci.yml/badge.svg)](https://github.com/tounsii007/dialekt-lernen/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
+[![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-377%20passing-success.svg)](tests/)
+[![PWA](https://img.shields.io/badge/PWA-ready-purple.svg)](manifest.webmanifest)
+
 Eine moderne, erweiterbare Web-App (PWA) zum Lernen deutscher Dialekte aus
 verschiedenen Bundesländern und Regionen. Komplett auf Hochdeutsch erklärt,
 ohne Backend — alle Daten bleiben lokal im Browser.
 
-**Stand: 12 Dialekte · 3.342 Ausdrücke · 10 Lernmodi · 107 Tests**
+**Stand: 13 Dialekte · 3.509 Ausdrücke · 10 Lernmodi · 377 Tests**
 
 ## Features
 
