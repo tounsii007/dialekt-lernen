@@ -12,6 +12,50 @@ const COLOR_PRESETS = [
   '#7209b7', '#4cc9f0', '#f72585', '#4361ee', '#10b981', '#f59e0b'
 ];
 
+const DECK_INPUT_STYLE = {
+  width: '100%', padding: '10px 14px', borderRadius: 'var(--r-md)',
+  border: '1px solid var(--border)', background: 'var(--bg-soft)',
+  color: 'var(--text)', fontSize: '1rem', marginBottom: '16px'
+};
+
+const FIELD_LABEL_STYLE = {
+  display: 'block', fontSize: '.85rem', color: 'var(--text-muted)', marginBottom: '6px'
+};
+
+// Text-Input für Deck-Namen — gemeinsam von Create- und Edit-Modal genutzt.
+function deckNameInput({ value = '', placeholder } = {}) {
+  const attrs = { type: 'text', value, style: DECK_INPUT_STYLE };
+  if (placeholder) attrs.placeholder = placeholder;
+  return el('input', attrs);
+}
+
+// Farb-Auswahl-Reihe. Liefert { row, getColor } — kapselt den Auswahl-State,
+// damit beide Modals nicht je eine eigene paint()-Kopie brauchen.
+function deckColorRow(initialColor) {
+  let selected = initialColor;
+  const row = el('div', { style: { display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' } });
+  function paint() {
+    row.innerHTML = '';
+    COLOR_PRESETS.forEach(c => {
+      row.appendChild(el('button', {
+        type: 'button',
+        'aria-label': `Farbe ${c}`,
+        title: c,
+        style: {
+          width: '28px', height: '28px', borderRadius: '50%',
+          background: c, cursor: 'pointer',
+          border: c === selected ? '3px solid var(--text)' : '2px solid var(--border)',
+          transform: c === selected ? 'scale(1.15)' : 'none',
+          transition: 'transform .15s, border .15s'
+        },
+        onClick: () => { selected = c; paint(); }
+      }));
+    });
+  }
+  paint();
+  return { row, getColor: () => selected };
+}
+
 export function renderDecks(root) {
   root.innerHTML = '';
   const view = el('div', { class: 'view' });
@@ -126,52 +170,22 @@ function renderDeckCard(deck) {
  * @param {{ initialName?: string }} [opts]
  */
 export function openCreateDeckModal(onCreated, { initialName = '' } = {}) {
-  let selectedColor = COLOR_PRESETS[Math.floor(Math.random() * COLOR_PRESETS.length)];
-
-  const nameInput = el('input', {
-    type: 'text',
-    placeholder: 'Name des Decks (z. B. „Wienerische Lieblinge")',
+  const nameInput = deckNameInput({
     value: initialName,
-    style: {
-      width: '100%', padding: '10px 14px', borderRadius: 'var(--r-md)',
-      border: '1px solid var(--border)', background: 'var(--bg-soft)',
-      color: 'var(--text)', fontSize: '1rem', marginBottom: '16px'
-    }
+    placeholder: 'Name des Decks (z. B. „Wienerische Lieblinge")'
   });
-
-  const colorRow = el('div', {
-    style: { display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' }
-  });
-
-  function paintSwatches() {
-    colorRow.innerHTML = '';
-    COLOR_PRESETS.forEach(c => {
-      const sw = el('button', {
-        type: 'button',
-        'aria-label': `Farbe ${c}`,
-        title: c,
-        style: {
-          width: '28px', height: '28px', borderRadius: '50%',
-          background: c, cursor: 'pointer',
-          border: c === selectedColor ? '3px solid var(--text)' : '2px solid var(--border)',
-          transform: c === selectedColor ? 'scale(1.15)' : 'none',
-          transition: 'transform .15s, border .15s'
-        },
-        onClick: () => { selectedColor = c; paintSwatches(); }
-      });
-      colorRow.appendChild(sw);
-    });
-  }
-  paintSwatches();
+  const { row: colorRow, getColor } = deckColorRow(
+    COLOR_PRESETS[Math.floor(Math.random() * COLOR_PRESETS.length)]
+  );
 
   let created = false;
 
   openModal({
     title: 'Neues Deck',
     content: [
-      el('label', { style: { display: 'block', fontSize: '.85rem', color: 'var(--text-muted)', marginBottom: '6px' } }, 'Name'),
+      el('label', { style: FIELD_LABEL_STYLE }, 'Name'),
       nameInput,
-      el('label', { style: { display: 'block', fontSize: '.85rem', color: 'var(--text-muted)', marginBottom: '6px' } }, 'Farbe'),
+      el('label', { style: FIELD_LABEL_STYLE }, 'Farbe'),
       colorRow,
       el('p', { class: 'lede', style: { fontSize: '.85rem' } },
         'Deck wird leer angelegt. Befülle es über die Favoriten-Seite mit Bulk-Aktionen oder über das ＋ Symbol an Ausdrücken.'
@@ -188,7 +202,7 @@ export function openCreateDeckModal(onCreated, { initialName = '' } = {}) {
             nameInput.focus();
             return false; // verhindere Schließen
           }
-          const id = createDeck({ name, color: selectedColor });
+          const id = createDeck({ name, color: getColor() });
           created = true;
           toast('Deck angelegt ✓', 'success', 1400);
           if (onCreated) onCreated(id);
@@ -202,46 +216,15 @@ export function openCreateDeckModal(onCreated, { initialName = '' } = {}) {
 }
 
 function openEditDeckModal(deck, onSaved) {
-  let selectedColor = deck.color;
-
-  const nameInput = el('input', {
-    type: 'text',
-    value: deck.name,
-    style: {
-      width: '100%', padding: '10px 14px', borderRadius: 'var(--r-md)',
-      border: '1px solid var(--border)', background: 'var(--bg-soft)',
-      color: 'var(--text)', fontSize: '1rem', marginBottom: '16px'
-    }
-  });
-
-  const colorRow = el('div', {
-    style: { display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' }
-  });
-  function paint() {
-    colorRow.innerHTML = '';
-    COLOR_PRESETS.forEach(c => {
-      const sw = el('button', {
-        type: 'button',
-        'aria-label': `Farbe ${c}`,
-        style: {
-          width: '28px', height: '28px', borderRadius: '50%',
-          background: c, cursor: 'pointer',
-          border: c === selectedColor ? '3px solid var(--text)' : '2px solid var(--border)',
-          transform: c === selectedColor ? 'scale(1.15)' : 'none'
-        },
-        onClick: () => { selectedColor = c; paint(); }
-      });
-      colorRow.appendChild(sw);
-    });
-  }
-  paint();
+  const nameInput = deckNameInput({ value: deck.name });
+  const { row: colorRow, getColor } = deckColorRow(deck.color);
 
   openModal({
     title: 'Deck bearbeiten',
     content: [
-      el('label', { style: { display: 'block', fontSize: '.85rem', color: 'var(--text-muted)', marginBottom: '6px' } }, 'Name'),
+      el('label', { style: FIELD_LABEL_STYLE }, 'Name'),
       nameInput,
-      el('label', { style: { display: 'block', fontSize: '.85rem', color: 'var(--text-muted)', marginBottom: '6px' } }, 'Farbe'),
+      el('label', { style: FIELD_LABEL_STYLE }, 'Farbe'),
       colorRow
     ],
     actions: [
@@ -251,7 +234,7 @@ function openEditDeckModal(deck, onSaved) {
         onClick: () => {
           const name = nameInput.value.trim();
           if (!name) { toast('Name darf nicht leer sein', 'info', 1600); return false; }
-          updateDeck(deck.id, { name, color: selectedColor });
+          updateDeck(deck.id, { name, color: getColor() });
           toast('Deck gespeichert ✓', 'success', 1400);
           if (onSaved) onSaved();
         }
