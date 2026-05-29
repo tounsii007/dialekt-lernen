@@ -538,7 +538,8 @@ function speakControl(c) {
   const btn = el('button', {
     class: 'fc-btn fc-speak',
     onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
-    title: 'Anhören'
+    title: 'Anhören',
+    'aria-label': `„${c.ausdruck}" anhören`,
   },
     el('div', { class: 'speak-icon' }, icon('speaker', { size: 20 })),
     canvas

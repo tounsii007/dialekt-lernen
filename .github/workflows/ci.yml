@@ -68,6 +68,22 @@ jobs:
       - name: Validate dialect data (schema, duplicates, plausibility)
         run: node tools/validate.mjs
 
+  a11y-audit:
+    name: A11y Audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run static a11y audit (HTML + CSS + JS button-pattern check)
+        run: node tools/a11y-audit.mjs
+
   unit-tests:
     name: Unit + Integration + Frontend Tests
     runs-on: ubuntu-latest

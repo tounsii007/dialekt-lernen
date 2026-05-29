@@ -68,6 +68,8 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
     el('div', { style: { marginTop: '12px' } },
       el('button', {
         class: 'btn btn-ghost fc-speak', style: { padding: '6px 14px' },
+        'aria-label': `„${q.item.ausdruck || q.prompt}" anhören`,
+        title: 'Anhören',
         onClick: () => speak(q.item.ausdruck, q.item.dialektLang || 'de-DE')
       },
         el('span', { class: 'speak-icon' }, icon('speaker', { size: 18 })),

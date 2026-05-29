@@ -13,7 +13,8 @@
     "test:coverage": "node tools/test.mjs --coverage",
     "test:integration": "node tools/test.mjs --filter=integration",
     "test:frontend": "node tools/test.mjs --filter=frontend",
-    "ci": "npm run validate && npm test"
+    "a11y": "node tools/a11y-audit.mjs",
+    "ci": "npm run validate && npm run a11y && npm test"
   },
   "engines": {
     "node": ">=18"
