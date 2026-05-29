@@ -55,6 +55,9 @@ jobs:
       - name: Validate dialect datasets
         run: node tools/validate-data.mjs
 
+      - name: Validate entries + run unit tests
+        run: npm run ci
+
       - name: Static-serve smoke test
         run: |
           npx --yes http-server . -p 5173 &
