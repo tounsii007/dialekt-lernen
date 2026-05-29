@@ -17,6 +17,18 @@
   --accent-soft: hsl(165 70% 50% / .12);
   --warm: hsl(28 95% 60%);
   --pink: hsl(335 85% 65%);
+
+  /* Semantic state colors — single source of truth for success/danger/warning/info.
+     *-soft variants are translucent fills for badges, hovers and toast backgrounds. */
+  --success: hsl(152 58% 42%);
+  --success-soft: hsl(152 58% 42% / .14);
+  --danger: hsl(0 78% 56%);
+  --danger-soft: hsl(0 78% 56% / .12);
+  --warning: hsl(38 92% 50%);
+  --warning-soft: hsl(38 92% 50% / .15);
+  --info: var(--brand);
+  --info-soft: var(--brand-soft);
+
   --grad-brand: linear-gradient(135deg, var(--brand), var(--brand-2) 55%, var(--pink));
   --grad-cool:  linear-gradient(135deg, var(--brand-3), var(--accent));
   --grad-warm:  linear-gradient(135deg, var(--warm), var(--pink));
@@ -108,6 +120,14 @@
   --shadow-md: 0 8px 30px rgba(0, 0, 0, .35), 0 2px 6px rgba(0, 0, 0, .2);
   --shadow-lg: 0 20px 60px rgba(0, 0, 0, .5), 0 8px 20px rgba(0, 0, 0, .3);
   --glow: 0 0 80px hsl(var(--brand-h) var(--brand-s) 60% / .4);
+
+  /* State colors — brighter on dark surfaces for AA contrast */
+  --success: hsl(152 55% 52%);
+  --success-soft: hsl(152 55% 52% / .16);
+  --danger: hsl(0 80% 66%);
+  --danger-soft: hsl(0 80% 66% / .16);
+  --warning: hsl(38 92% 60%);
+  --warning-soft: hsl(38 92% 60% / .18);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -125,6 +145,12 @@
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .15);
     --shadow-md: 0 8px 30px rgba(0, 0, 0, .35), 0 2px 6px rgba(0, 0, 0, .2);
     --shadow-lg: 0 20px 60px rgba(0, 0, 0, .5), 0 8px 20px rgba(0, 0, 0, .3);
+    --success: hsl(152 55% 52%);
+    --success-soft: hsl(152 55% 52% / .16);
+    --danger: hsl(0 80% 66%);
+    --danger-soft: hsl(0 80% 66% / .16);
+    --warning: hsl(38 92% 60%);
+    --warning-soft: hsl(38 92% 60% / .18);
   }
 }
 
@@ -1076,7 +1102,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--text);
 }
 .expr-action.is-active {
-  color: hsl(0 80% 60%);
+  color: var(--danger);
 }
 .expr-action.is-learned {
   color: var(--accent);
@@ -1320,7 +1346,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--text);
   transition: all var(--t-fast) var(--ease);
 }
-.fc-rate.hard:hover { background: hsl(0 80% 60%); color: white; border-color: transparent; }
+.fc-rate.hard:hover { background: var(--danger); color: white; border-color: transparent; }
 .fc-rate.med:hover { background: var(--warm); color: white; border-color: transparent; }
 .fc-rate.easy:hover { background: var(--accent); color: white; border-color: transparent; }
 
@@ -1401,10 +1427,10 @@ a { color: inherit; text-decoration: none; }
 }
 .quiz-option.is-correct .qo-letter { background: var(--accent); color: white; }
 .quiz-option.is-wrong {
-  border-color: hsl(0 80% 60%);
-  background: hsl(0 80% 60% / .12);
+  border-color: var(--danger);
+  background: var(--danger-soft);
 }
-.quiz-option.is-wrong .qo-letter { background: hsl(0 80% 60%); color: white; }
+.quiz-option.is-wrong .qo-letter { background: var(--danger); color: white; }
 .quiz-option:disabled { cursor: not-allowed; }
 
 .quiz-bar {
@@ -1720,8 +1746,10 @@ a { color: inherit; text-decoration: none; }
 @keyframes toastOut {
   to { opacity: 0; transform: translateX(20px); }
 }
-.toast.success { border-left: 4px solid var(--accent); }
-.toast.info { border-left: 4px solid var(--brand); }
+.toast.success { border-left: 4px solid var(--success); }
+.toast.info { border-left: 4px solid var(--info); }
+.toast.error { border-left: 4px solid var(--danger); }
+.toast.warning { border-left: 4px solid var(--warning); }
 
 /* ============================================================ */
 /* Footer                                                        */
@@ -3234,7 +3262,7 @@ html.is-speaking .daily {
   font-variant-numeric: tabular-nums;
 }
 .quiz-trend-delta.pos { background: color-mix(in oklab, var(--accent) 18%, transparent); color: var(--accent); }
-.quiz-trend-delta.neg { background: color-mix(in oklab, hsl(0 80% 60%) 18%, transparent); color: hsl(0 80% 55%); }
+.quiz-trend-delta.neg { background: color-mix(in oklab, var(--danger) 18%, transparent); color: var(--danger); }
 .quiz-trend-delta.neu { background: var(--bg-soft); color: var(--text-muted); }
 
 .quiz-trend .sparkline {
@@ -3261,7 +3289,7 @@ html.is-speaking .daily {
 }
 .quiz-history-pill.tone-good { border-left-color: var(--accent); }
 .quiz-history-pill.tone-okay { border-left-color: var(--warm); }
-.quiz-history-pill.tone-bad  { border-left-color: hsl(0 80% 60%); }
+.quiz-history-pill.tone-bad  { border-left-color: var(--danger); }
 .qhp-pct {
   font-family: var(--font-display);
   font-weight: 700;
@@ -3375,7 +3403,7 @@ html.is-speaking .daily {
 }
 .fc-type-feedback.is-ok    { color: var(--accent); }
 .fc-type-feedback.is-close { color: var(--warm); }
-.fc-type-feedback.is-wrong { color: hsl(0 80% 60%); }
+.fc-type-feedback.is-wrong { color: var(--danger); }
 
 /* Cloze-Modus / Lückentext */
 .fc-cloze-sentence {
@@ -3481,10 +3509,10 @@ html.is-speaking .fc-big-speak {
   padding: var(--sp-2) var(--sp-4);
 }
 .danger-btn {
-  color: hsl(0 80% 55%) !important;
+  color: var(--danger) !important;
 }
 .danger-btn:hover {
-  background: color-mix(in oklab, hsl(0 80% 60%) 12%, transparent) !important;
+  background: var(--danger-soft) !important;
 }
 
 /* Share view */
@@ -3948,7 +3976,7 @@ html.is-speaking .fc-big-speak {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-.cue-hard { left: var(--sp-5); color: hsl(0 80% 60%); border-color: hsl(0 80% 60% / .8); }
+.cue-hard { left: var(--sp-5); color: var(--danger); border-color: color-mix(in oklab, var(--danger) 80%, transparent); }
 .cue-easy { right: var(--sp-5); color: var(--accent);  border-color: color-mix(in oklab, var(--accent) 80%, transparent); }
 .cue-med  { left: 50%; transform: translateX(-50%) translateY(-8px) scale(.9); color: var(--warm); border-color: color-mix(in oklab, var(--warm) 80%, transparent); }
 .flashcard.drag-left  .cue-hard { opacity: 1; transform: translateY(0) scale(1); }
@@ -4086,7 +4114,7 @@ html.is-speaking .is-speakable {
   transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease-spring);
 }
 .qo-icon.ok { color: var(--accent); }
-.qo-icon.no { color: hsl(0 80% 60%); }
+.qo-icon.no { color: var(--danger); }
 .quiz-option.is-correct .qo-icon.ok { opacity: 1; transform: scale(1.1); }
 .quiz-option.is-wrong   .qo-icon.no { opacity: 1; transform: scale(1.1); }
 
@@ -4223,7 +4251,7 @@ html.is-speaking .is-speakable {
     transform var(--t-fast) var(--ease-spring);
 }
 .fc-rate:hover { transform: translateY(-2px); }
-.fc-rate.hard:hover { background: linear-gradient(135deg, hsl(0 80% 60%), hsl(345 80% 60%)); }
+.fc-rate.hard:hover { background: linear-gradient(135deg, var(--danger), hsl(345 80% 60%)); }
 .fc-rate.med:hover  { background: linear-gradient(135deg, var(--warm), hsl(38 90% 58%)); }
 .fc-rate.easy:hover { background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
 
@@ -6962,8 +6990,8 @@ img, svg, video {
   min-height: 36px;
   display: flex; align-items: center;
 }
-.pron-check-status.is-ok { background: rgba(34,197,94,0.18); color: #4ade80; }
-.pron-check-status.is-wrong { background: rgba(239,68,68,0.18); color: #f87171; }
+.pron-check-status.is-ok { background: var(--success-soft); color: var(--success); }
+.pron-check-status.is-wrong { background: var(--danger-soft); color: var(--danger); }
 .pron-check-status.is-listening {
   background: rgba(139,92,246,0.18); color: #c4b5fd;
   animation: pron-pulse 1s ease-in-out infinite;
@@ -6985,7 +7013,7 @@ img, svg, video {
 .pron-mic-btn:hover { transform: scale(1.08); }
 .pron-mic-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 .pron-mic-btn.is-recording {
-  background: #ef4444;
+  background: var(--danger);
   animation: pron-pulse 0.8s ease-in-out infinite;
 }
 
@@ -7678,9 +7706,9 @@ img, svg, video {
   transition: all var(--t-fast) var(--ease);
 }
 .long-goal-remove:hover {
-  background: color-mix(in oklab, #ef4444 14%, var(--bg-soft));
-  color: #ef4444;
-  border-color: #ef4444;
+  background: color-mix(in oklab, var(--danger) 14%, var(--bg-soft));
+  color: var(--danger);
+  border-color: var(--danger);
 }
 
 .long-goal-meta {
