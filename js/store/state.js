@@ -23,13 +23,35 @@ function loadAll() {
   }
 }
 
+// Verhindert Toast-Spam: nur einmal pro Sitzung über vollen Speicher warnen.
+let storageWarned = false;
+
+function isQuotaError(err) {
+  if (!err) return false;
+  // Browser melden Quota unterschiedlich: name, code (22 / 1014) oder Botschaft.
+  return (
+    err.name === 'QuotaExceededError' ||
+    err.name === 'NS_ERROR_DOM_QUOTA_REACHED' ||
+    err.code === 22 ||
+    err.code === 1014
+  );
+}
+
 function saveAll(value) {
   const store = safeStorage();
   if (!store) return;
   try {
     store.setItem(STORAGE_KEY, JSON.stringify(value));
-  } catch {
-    // Quota oder privacy-mode: stillschweigend ignorieren.
+  } catch (err) {
+    // Privacy-mode (Schreiben generell blockiert) → still ignorieren.
+    // Quota voll → einmalig warnen, damit der User nicht unbemerkt
+    // Fortschritt verliert (z. B. via Export ein Backup ziehen kann).
+    if (isQuotaError(err) && !storageWarned) {
+      storageWarned = true;
+      if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') {
+        window.dispatchEvent(new CustomEvent('dialekto:storage-full'));
+      }
+    }
   }
 }
 

@@ -119,6 +119,18 @@ function mountFooterMeta() {
   }
 }
 
+function initStorageWarning() {
+  // state.js feuert dies einmalig, wenn localStorage voll ist — sonst gingen
+  // Favoriten/Fortschritt/Notizen unbemerkt verloren.
+  window.addEventListener('dialekto:storage-full', () => {
+    toast(
+      'Speicher ist voll — neue Änderungen werden evtl. nicht gesichert. Exportiere ein Backup über die Favoriten-Seite.',
+      'error',
+      6000,
+    );
+  });
+}
+
 function initErrorHandlers() {
   window.addEventListener('error', (e) => {
     console.error('[Dialekto]', e.error || e.message);
@@ -224,6 +236,9 @@ function init() {
   setTimeout(() => startOnboarding(), ONBOARDING_BOOT_DELAY_MS);
 }
 
-init();
+// Fehler-Handler + Speicher-Warnung ZUERST registrieren, damit ein Fehler
+// während init() bereits abgefangen und dem User gezeigt wird.
 initErrorHandlers();
+initStorageWarning();
+init();
 initDevValidator();
