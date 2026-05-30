@@ -11,8 +11,10 @@ export function xpForLevel(n) {
 
 // Aktuell erreichtes Level. Bereiche: Lv1 = [0,100), Lv2 = [100,300), Lv3 = [300,600) …
 export function levelForXp(xp) {
+  // Guard gegen NaN/Infinity/negativ — sonst Endlosschleife bzw. NaN-Levels.
+  if (!Number.isFinite(xp) || xp <= 0) return 1;
   let lvl = 1;
-  while (xp >= xpForLevel(lvl)) lvl++;
+  while (xp >= xpForLevel(lvl) && lvl < 1000) lvl++;
   return lvl;
 }
 
@@ -47,10 +49,12 @@ export function getXp() {
 
 export function awardXp(amount, reason) {
   if (!state.xp || typeof state.xp !== 'object') state.xp = { total: 0, log: [] };
-  const before = state.xp.total;
-  state.xp.total = (state.xp.total || 0) + amount;
+  // Guard: nur endliche Zahlen addieren — kein NaN/Infinity in den XP-Stand.
+  const amt = Number.isFinite(amount) ? amount : 0;
+  const before = Number.isFinite(state.xp.total) ? state.xp.total : 0;
+  state.xp.total = before + amt;
   // Keep last 50 log entries
-  state.xp.log = [{ amount, reason, ts: Date.now() }, ...(state.xp.log || [])].slice(0, 50);
+  state.xp.log = [{ amount: amt, reason, ts: Date.now() }, ...(state.xp.log || [])].slice(0, 50);
   persist();
 
   const lvBefore = levelForXp(before);
