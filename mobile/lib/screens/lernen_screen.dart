@@ -95,6 +95,7 @@ class _LernenScreenState extends State<LernenScreen>
   Future<void> _rate(int rating) async {
     final card = _session[_index];
     await SrsStore.instance.review(card.key, rating);
+    if (!mounted) return; // Widget könnte während des await disposed worden sein
     _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
     if (_index + 1 >= _session.length) {
       setState(() => _finished = true);
