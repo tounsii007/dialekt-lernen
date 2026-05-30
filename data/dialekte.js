@@ -19,6 +19,7 @@ import alemannisch     from './dialekte/alemannisch.js';
 import pfaelzisch      from './dialekte/pfaelzisch.js';
 import tirolerisch     from './dialekte/tirolerisch.js';
 import saarlaendisch   from './dialekte/saarlaendisch.js';
+import ostfriesisch    from './dialekte/ostfriesisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -35,7 +36,8 @@ export const DIALEKTE = [
   alemannisch,
   pfaelzisch,
   tirolerisch,
-  saarlaendisch
+  saarlaendisch,
+  ostfriesisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup
