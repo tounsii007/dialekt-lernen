@@ -26,6 +26,7 @@ import steirisch       from './dialekte/steirisch.js';
 import kaerntnerisch   from './dialekte/kaerntnerisch.js';
 import thueringisch    from './dialekte/thueringisch.js';
 import mecklenburgisch from './dialekte/mecklenburgisch.js';
+import brandenburgisch from './dialekte/brandenburgisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -49,7 +50,8 @@ export const DIALEKTE = [
   steirisch,
   kaerntnerisch,
   thueringisch,
-  mecklenburgisch
+  mecklenburgisch,
+  brandenburgisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup
