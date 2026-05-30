@@ -3781,6 +3781,1086 @@ export default {
       beispiel: 'Du klein Schmölzbüggel, häs de widder am Streuselkooche jenasch?',
       beispiel_hd: 'Du kleines Pummelchen, hast du wieder am Streuselkuchen genascht?',
       kategorie: 'menschen'
+    },
+    {
+      id: 'k-466',
+      ausdruck: 'luure',
+      hochdeutsch: 'schauen / gucken',
+      bedeutung: 'Et Wood „luure" heiß op Kölsch esu vill wie „schauen" oder „gucken" un weed för et Beobachte un Hinsinn jebruch. „Luur ens, wä do kütt!" sät mer, wenn eine ankütt. Et es e jrundkölsches Alldagswood, dat mer ständig hührt, un et kann och „heimlich beobachte" oder „spinkse" bedügge — janz wie mer luurt.',
+      beispiel: 'Luur ens us em Finster, ob et schon rähnt!',
+      beispiel_hd: 'Schau mal aus dem Fenster, ob es schon regnet!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-467',
+      ausdruck: 'kalle',
+      hochdeutsch: 'reden / sprechen',
+      bedeutung: 'Et Verb „kalle" bedügg op Kölsch „reden" oder „schwätze" un es e zentrale Wood vum kölsche Alldag. „Mer kalle Platt!" sät mer met Stolz, wenn mer sing Mottersproch schwätz. „Wat kallste do för en Driss?" frög eine, dä Unsenn hührt. Wä vill un jän kallt, dä es e richtije Kölsche — et Kalle jehürt zer Stadt wie dr Dom.',
+      beispiel: 'Mer han de janze Ovend op dr Trapp jesässe un jekallt.',
+      beispiel_hd: 'Wir haben den ganzen Abend auf der Treppe gesessen und geredet.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-468',
+      ausdruck: 'Klaaf',
+      hochdeutsch: 'Gerede / Plauderei',
+      bedeutung: 'Dä „Klaaf" es op Kölsch et Jeschwätz, et Verzälle un et jemütliche Plaudere ungerenein. „Mer hatte ene schöne Klaaf an dr Thek." En Kölle es dr Klaaf en Levenskuns: Mer trifft sich, mer kallt, mer höört zo — un dat Janze nennt mer Klaaf. Et es mieh wie bloß Rede, et es Verbingung un Hätzlichkeit.',
+      beispiel: 'Bei nem Kölsch un nem schöne Klaaf verjeiht dr Ovend wie nix.',
+      beispiel_hd: 'Bei einem Kölsch und einer schönen Plauderei vergeht der Abend wie nichts.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-469',
+      ausdruck: 'fottschmieße',
+      hochdeutsch: 'wegwerfen / wegschmeißen',
+      bedeutung: 'Et Verb „fottschmieße" heiß op Kölsch „wegwerfen" un setz sich zesamme us „fott" (weg) un „schmieße" (werfen). „Dat kanns de fottschmieße, dat es kapott." Mer bruch et för all dat, wat mer nit mieh bruch un en de Tonn deit. E praktisch Alldagswood, dat mer en jedem kölsche Hushalt hührt, wenn jet fottjeschmesse weed.',
+      beispiel: 'Dä ahle Krom kanns de jetz endlich ens fottschmieße.',
+      beispiel_hd: 'Den alten Kram kannst du jetzt endlich mal wegwerfen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-470',
+      ausdruck: 'Driss',
+      hochdeutsch: 'Mist / Unsinn / Quatsch',
+      bedeutung: 'Dä „Driss" es op Kölsch e deftich Wood för Unsenn, Mist oder Krom, dä nix daugt. „Verzäll mer kein Driss!" sät mer, wenn eine Unsenn schwätz, un „Wat e Driss!" wenn jet daneejeht. Et es derb, ävver nit besonders schlimm — e janz alldäglich kölsch Schimpfwood, dat och leevevoll övver et Ärjernis vum Dag jesäht weed.',
+      beispiel: 'Hür op met däm Driss, mer han Wichtijeres ze dun!',
+      beispiel_hd: 'Hör auf mit dem Unsinn, wir haben Wichtigeres zu tun!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-471',
+      ausdruck: 'Knöttere',
+      hochdeutsch: 'Meckern / Nörgeln',
+      bedeutung: 'Et „Knöttere" es op Kölsch dat ständije Mecker un Nörjele övver Jott un de Welt. „Hür op ze knöttere!" sät mer zo eim, dä an allem jet ussetz. Wä knöttert, dä es nie zofridde un brummelt vör sich hin. E typisch kölsch Wood för en Eijenaat, die mer all kennt — dat Knöttere jehürt zom rheinische Levensjeföhl, och wenn et nervt.',
+      beispiel: 'Dä ahle Mann knöttert dr janze Dag övver et Wedder.',
+      beispiel_hd: 'Der alte Mann meckert den ganzen Tag über das Wetter.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-472',
+      ausdruck: 'Pief',
+      hochdeutsch: 'Pfeife / unfähiger Mensch',
+      bedeutung: 'En „Pief" es op Kölsch nit bloß en Tubbakspief, sondern och e Schimpfwood för ene unfähije oder lahme Mensch. „Dä es vielleich en Pief!" sät mer övver eine, dä nix op de Reih krütt. Et Wood weed leevevoll-spöttisch jebruch un drück us, dat eine nit besonders dauch — ohne ävver richtig böös ze sin.',
+      beispiel: 'Esu en Pief, dä krütt nit ens dat einfachste op de Reih.',
+      beispiel_hd: 'So eine Pfeife, der kriegt nicht mal das Einfachste auf die Reihe.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-473',
+      ausdruck: 'Wibbeldötz',
+      hochdeutsch: 'Zappelphilipp / unruhiges Kind',
+      bedeutung: 'En „Wibbeldötz" es op Kölsch e Pänz, dat nit stillsitze kann un ständig zappelt un wibbelt. „Esu ene Wibbeldötz, dä hält et kein Minutt op em Stohl us!" Et Wood setz sich us „wibbele" (zappeln) un „Dötz" (Kind) zesamme un weed leevevoll för quirlije, unruhije Pänz jebruch, die vör Energie nur su strotze.',
+      beispiel: 'Sitz endlich still, du klein Wibbeldötz, mer wolle esse!',
+      beispiel_hd: 'Sitz endlich still, du kleiner Zappelphilipp, wir wollen essen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-474',
+      ausdruck: 'Plörr',
+      hochdeutsch: 'dünner Kaffee / schlechtes Getränk',
+      bedeutung: 'De „Plörr" es op Kölsch e dünn, fad Jedränk — meistens ene schlechte, ze dünne Kaffee. „Dat es doch kein Kaffee, dat es Plörr!" beschwert mer sich. Et Wood drück us, dat e Jedränk nix dauch un nur wie jefärvt Wasser schmeck. E typisch kölsch Mecker-Wood för all dat, wat mer net richtig opjebröht es.',
+      beispiel: 'Bei dänne jitt et nur Plörr, do bliev mer leever beim Kölsch.',
+      beispiel_hd: 'Bei denen gibt es nur dünnen Kaffee, da bleibt man lieber beim Kölsch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-475',
+      ausdruck: 'Knaatschkopp',
+      hochdeutsch: 'Heulsuse / weinerlicher Mensch',
+      bedeutung: 'En „Knaatschkopp" es op Kölsch eine, dä ständig knaatsch, also quengelt, jammert oder kriesch. „Sei doch kein esu ene Knaatschkopp!" sät mer zo eim, dä wäje jeder Klengigkeit flennt. Et Wood weed besonders för Pänz jebruch, die vill kriesche, ävver och för Erwaßne, die ömmer am Jammere sin — leevevoll un spöttisch zojlich.',
+      beispiel: 'Dä klein Knaatschkopp kriesch, wann e nit dat lätzte Stöck Kooche krütt.',
+      beispiel_hd: 'Der kleine Heuler weint, wenn er nicht das letzte Stück Kuchen kriegt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-476',
+      ausdruck: 'Schäbbeltön',
+      hochdeutsch: 'schäbbiger Kerl / heruntergekommener Typ',
+      bedeutung: 'En „Schäbbeltön" es op Kölsch e Minsch, dä schäbbich, verkomme oder ärmlich erömläuf un sich nit pläg. „Luur dä Schäbbeltön do, dä süht us wie der Dud vun Ypern." Et Wood verbingk „schäbbich" met däm Name „Tön" (Anton) un beschriev spöttisch eine, dä uss däm Letzte erusjeht — derb, ävver mieh schmunzelnd wie böös jemeint.',
+      beispiel: 'Zeh dr ens jet Anständijes aan, du läufs eröm wie en Schäbbeltön!',
+      beispiel_hd: 'Zieh dir mal etwas Anständiges an, du läufst herum wie ein schäbbiger Kerl!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-477',
+      ausdruck: 'Hüppje',
+      hochdeutsch: 'kleiner Hüpfer / Hopser',
+      bedeutung: 'E „Hüppje" es op Kölsch e klein Sprüngsche oder Hopser, esu wie Pänz et maache, wann se sich freue. „Et Kind maht vör Freud e Hüppje." Et Verkleinerungswood kütt vun „hüppe" (hüpfen) un drück jet Klein, Leichtes, Frohes us — typisch för de Pänz, die vör luuter Freud nit op em Bode bliebe wolle.',
+      beispiel: 'Vör luuter Freud maht et Mädche e klei Hüppje övver de Pütz.',
+      beispiel_hd: 'Vor lauter Freude macht das Mädchen einen kleinen Hüpfer über die Pfütze.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-478',
+      ausdruck: 'Schävve',
+      hochdeutsch: 'altes Auto / Klapperkiste',
+      bedeutung: 'En „Schävve" es op Kölsch e ahl, klapprig Auto oder e Fahrzeug, dat nümmieh vill dauch. „Met dä ahle Schävve kütts de nit bes Düsseldorf!" Et Wood weed spöttisch för Kiste op Räder jebruch, die zwar noch fahre, ävver dänne mer et Alder aansüht un -hührt. E leevevoll Schimpfwood för dat treue ahle Vehikel.',
+      beispiel: 'Sing ahl Schävve sprüng nur noch met Aanschuppe aan.',
+      beispiel_hd: 'Sein altes Auto springt nur noch mit Anschieben an.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-479',
+      ausdruck: 'Frätzje',
+      hochdeutsch: 'kleines Gesicht / Gesichtchen',
+      bedeutung: 'E „Frätzje" es op Kölsch leevevoll e klei Jesich, meistens dat vun nem Pänz. „Su e söß Frätzje hätt dat Kind!" Et Verkleinerungswood vun „Fratz/Frätz" weed zärtlich för de Jesichter vun klein Pänz jebruch, ävver och för einen, dä e freches Jeseech zeht — ömmer met Wärme un en Naat Schmunzele.',
+      beispiel: 'Dat Bobbelche luurt mich met singem söße Frätzje aan.',
+      beispiel_hd: 'Das Baby schaut mich mit seinem süßen Gesichtchen an.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-480',
+      ausdruck: 'Pööz',
+      hochdeutsch: 'Pfütze / Matsch',
+      bedeutung: 'En „Pööz" es op Kölsch en Pütz oder en Matschloch op dr Stroß, besonders noh em Rähn. „Pass op, do es en deef Pööz!" warnt mer. De Pänz springe natürlich met Wonn meddenren erin. Et Wood jehürt zo däm typisch rheinische Schmuddelwedder, bei däm de Strooße voll Pööze stonn un mer trockene Fööß behalde will.',
+      beispiel: 'Dat Pänz es met beide Fööß en de Pööz jesprunge.',
+      beispiel_hd: 'Das Kind ist mit beiden Füßen in die Pfütze gesprungen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-481',
+      ausdruck: 'jovvele',
+      hochdeutsch: 'herumalbern / Unsinn machen',
+      bedeutung: 'Et Verb „jovvele" bedügg op Kölsch erömalbere, Spass maache un Unsenn driebe. „De Pänz jovvele de janze Nommedach em Jaade." Wä jovvelt, dä es ussjelasse un dollt eröm, ohne et besonders ernst ze nemme. E fröhlich kölsch Wood för dat ussjelasse Spille un Albere, dat besonders de Pänz jän maache.',
+      beispiel: 'De Pänz han em Jaade jejovvelt, bes et duster wood.',
+      beispiel_hd: 'Die Kinder haben im Garten herumgealbert, bis es dunkel wurde.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-482',
+      ausdruck: 'Lällbeck',
+      hochdeutsch: 'Schwätzer / Großmaul',
+      bedeutung: 'En „Lällbeck" es op Kölsch eine, dä de Lapp net halde kann un övver alles un jeden schwadroniert. „Dä Lällbeck verzällt et widder em janze Veedel!" Et Wood verbingk „lälle" (mit der Zunge schwätze) met „Beck" (Mund) un beschriev e Großmaul, dat ze vill un ze laut kallt — mieh spöttisch wie böös jemeint.',
+      beispiel: 'Verzäll däm Lällbeck nix, dat steiht morje em janze Veedel.',
+      beispiel_hd: 'Erzähl dem Schwätzer nichts, das steht morgen im ganzen Viertel.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-483',
+      ausdruck: 'Knubbele',
+      hochdeutsch: 'kuscheln / schmusen',
+      bedeutung: 'Et Verb „knubbele" bedügg op Kölsch kuschele un schmuse, sich aanschmieje un zärtlich sin. „Komm, mer knubbele e bessje op dr Couch." Et Wood weed leevevoll för dat enge Aanschmieje jebruch, besonders met Pänz oder em Partner. E warmes, hätzlich Wood för Närrde un Zärtlichkeit, wie et sich för et kölsche Hätz jehürt.',
+      beispiel: 'Ovends knubbele mer all zesamme op dr Couch un luure Fernsing.',
+      beispiel_hd: 'Abends kuscheln wir alle zusammen auf der Couch und schauen Fernsehen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-484',
+      ausdruck: 'Schtrunz',
+      hochdeutsch: 'Angeberei / Wichtigtuerei',
+      bedeutung: 'Dä „Schtrunz" es op Kölsch dat Aanjevve, et Protze un Wichtigdun. „Maach kein esu ene Schtrunz!" sät mer zo eim, dä sich opspillt. Wä schtrunzt, dä deit sich dicker wie e es un proht met däm, wat e hät. E typisch kölsch Wood, dat de Aanjeberei op de Schipp nimmt — denn dr Kölsche hält nix vun Bloof.',
+      beispiel: 'Loss dä Schtrunz, mer wesse all, dat de nit esu vill häs.',
+      beispiel_hd: 'Lass die Angeberei, wir wissen alle, dass du nicht so viel hast.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-485',
+      ausdruck: 'Bömmel',
+      hochdeutsch: 'Quaste / Bommel',
+      bedeutung: 'En „Bömmel" es op Kölsch en Quaste oder e Bömmelche, wie mer et an dr Mötz oder am Schal hät. „Ming Wintermötz hät ene decke Bömmel obbe drop." Besonders em Karneval sin Bömmele aan de Kostüm jän jesinn. Et Wood beschriev all dat runde, weiche Jebommel, dat baumelt un wibbelt — fröhlich un bunt.',
+      beispiel: 'Aan singer Narrekapp hange dree bunte Bömmel.',
+      beispiel_hd: 'An seiner Narrenkappe hängen drei bunte Bommeln.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-486',
+      ausdruck: 'Schmöck',
+      hochdeutsch: 'Zigarette / Glimmstängel',
+      bedeutung: 'En „Schmöck" es op Kölsch en Zigarett oder jet zo Rauche. „Häs de ens en Schmöck för mich?" frög mer ene Bekannte. Et Wood kütt vun „schmöke" (rauchen) un weed alldäglich för de Zigarett jebruch. Vör dr Dör vum Brauhaus stonn se zesamme un dampe ehr Schmöck — e Stöck kölsch Alldagskultur.',
+      beispiel: 'Hä jeit kort vör de Dör för en Schmöck ze rauche.',
+      beispiel_hd: 'Er geht kurz vor die Tür, um eine Zigarette zu rauchen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-487',
+      ausdruck: 'Wibbel',
+      hochdeutsch: 'Unruhe / Zappeligkeit',
+      bedeutung: 'Dä „Wibbel" es op Kölsch de Unruh un dat Jezappel, wenn eine nit stillsitze kann. „Dä hät vielleich ene Wibbel em Hingere!" sät mer övver eine, dä ständig erömrötsch. Et Wood drück de innerlich Unruh un dat Kribbele us, dat eine net stillhalde löt — besonders bei Pänz, ävver och bei nervöse Erwaßne.',
+      beispiel: 'Vör Opräjung hat hä ene Wibbel em Liev un kunnt nit stillsitze.',
+      beispiel_hd: 'Vor Aufregung hatte er eine Unruhe im Leib und konnte nicht stillsitzen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-488',
+      ausdruck: 'Plützje',
+      hochdeutsch: 'kleines Plätzchen / Stelle',
+      bedeutung: 'E „Plützje" es op Kölsch e klein Plätzche oder e jemütlich Eckche, wo mer sich hinsetze kann. „Komm, mer söke uns e schön Plützje en dr Sonn." Et Verkleinerungswood vun „Platz" weed för jeden lauschije Ort jebruch, an däm mer et sich bequem maache kann — em Brauhaus, em Jaade oder am Rhing.',
+      beispiel: 'Mer han uns e schön Plützje direk am Rhing jesök.',
+      beispiel_hd: 'Wir haben uns ein schönes Plätzchen direkt am Rhein gesucht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-489',
+      ausdruck: 'Schäch',
+      hochdeutsch: 'Bescheid / Mitteilung',
+      bedeutung: 'Et „Schäch" es op Kölsch en Naachrich oder e Beschäd, dat mer eim jiff. „Säg mer Schäch, wann de kütts!" Et Wood kütt vun „Beschäd sage" un weed alldäglich jebruch, wenn mer einem jet metdeile oder Beschäd jevve will. „Ich han em Schäch jesäht" heiß, mer hät einem Beschäd jejovve.',
+      beispiel: 'Säg mer rechtzitig Schäch, dann hole ich dich vum Bahnhoff aff.',
+      beispiel_hd: 'Sag mir rechtzeitig Bescheid, dann hole ich dich vom Bahnhof ab.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-490',
+      ausdruck: 'Quängel',
+      hochdeutsch: 'Quengelei / Nörgelei',
+      bedeutung: 'Dä „Quängel" es op Kölsch dat ständije Quengele un Jammere, besonders vun Pänz, die jet han wolle. „Hür op met däm Quängel!" sät de Mamm, wenn et Pänz net ophührt ze betteln. Et Wood beschriev dat näselich Drängele un Jammere, dat einem op de Nerve jeit — leevevoll-jenervt zojlich jesäht.',
+      beispiel: 'Dr janze Wäg dorch et Jeschäff jingk dat Quängel vum Pänz nit op.',
+      beispiel_hd: 'Den ganzen Weg durch das Geschäft hörte das Quengeln vom Kind nicht auf.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-491',
+      ausdruck: 'Quante',
+      hochdeutsch: 'Füße / große Füße',
+      bedeutung: 'De „Quante" sin op Kölsch de Fööß, besonders wenn se jet jrößer ussfalle. „Nemm ding Quante vum Desch!" sät de Mamm zo eim, dä de Fööß huhläg. Et Wood weed leevevoll-spöttisch för de Fööß jebruch un drück us, dat eine ordentlich jet aan de Fööß hät — typisch kölsch un met nem Schmunzele jesäht.',
+      beispiel: 'Met dinge jroße Quante kanns de kaum normale Schoh fenge.',
+      beispiel_hd: 'Mit deinen großen Füßen kannst du kaum normale Schuhe finden.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-492',
+      ausdruck: 'Strunk',
+      hochdeutsch: 'Kerl / grober Mensch',
+      bedeutung: 'En „Strunk" es op Kölsch e jrobe, ungehovelte Mensch, dä sich nit fein benimmp. „Esu ene Strunk hät kein Manere!" sät mer övver eine, dä sich danevve benimmp. Et Wood kütt eijentlich vum Kappes-Strunk un weed övverdrage för ene stiere, jrobe Kääl jebruch — derb, ävver mieh spöttisch wie böös.',
+      beispiel: 'Dä Strunk hät nit ens „Danke" jesäht, wie ich em jeholpe han.',
+      beispiel_hd: 'Der grobe Kerl hat nicht mal „Danke" gesagt, als ich ihm geholfen habe.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-493',
+      ausdruck: 'Strüvvel',
+      hochdeutsch: 'zerzauste Haare / Strubbelkopf',
+      bedeutung: 'De „Strüvvel" sin op Kölsch zerzaus, struvvelije Hoore, die kreuz un quer stonn. „Kämm dr ens de Strüvvel!" sät de Mamm morjens zom Pänz. Et Wood beschriev et widderspenstije, ungekämmte Hoor un weed leevevoll besonders för Pänz jebruch, die noch janz verschloofe met Strüvvel am Desch sitze.',
+      beispiel: 'Et Pänz kütt met dr Strüvvel us em Bett aan dr Frühstücksdesch.',
+      beispiel_hd: 'Das Kind kommt mit zerzausten Haaren aus dem Bett an den Frühstückstisch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-494',
+      ausdruck: 'verkasematuckele',
+      hochdeutsch: 'verschwenden / durchbringen',
+      bedeutung: 'Et Verb „verkasematuckele" bedügg op Kölsch jet verprasse, verschwende oder dorchbringe — meistens Jeld. „Dä hät sing janzes Erbe verkasematuckelt!" Et Wood es e schön lang, schmunzelig kölsch Wood för dat lottrije Ussjevve un Verprasse, ohne aan morje ze denke. E echte Klassiker em rheinische Wootschatz.',
+      beispiel: 'Singe janze Lohn hät hä em Brauhaus verkasematuckelt.',
+      beispiel_hd: 'Seinen ganzen Lohn hat er im Brauhaus verprasst.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-495',
+      ausdruck: 'Botz',
+      hochdeutsch: 'Hose',
+      bedeutung: 'De „Botz" es op Kölsch janz einfach de Hus. „Zeh dr en warme Botz aan, et es kalt drusse!" Et Wood es e ahl, urkölsch Bezeichnung för dat Kleidungsstöck un weed em Alldag noch jän jebruch. „En de Botz maache" heiß bildlich, sich vör Angs zo erschrecke — esu wie em Hochdütsche och.',
+      beispiel: 'Häng ding nass Botz övver dr Heizkörper, dann drüügt se bes morje.',
+      beispiel_hd: 'Häng deine nasse Hose über den Heizkörper, dann trocknet sie bis morgen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-496',
+      ausdruck: 'Maud',
+      hochdeutsch: 'schlechte Laune / Unmut',
+      bedeutung: 'De „Maud" es op Kölsch en mies, miesepetrije Stimmung oder schlechte Lull. „Dä hät vielleich en Maud hück!" sät mer övver eine, dä jriesjrämmich erömläuf. Wä de Maud hät, dä es net jot drop ze spreche un knöttert eröm. E typisch kölsch Wood för dat Brummelije un Verdroßne, dat eim ens övverkütt.',
+      beispiel: 'Loss dä en Roh, dä hät hück en richtije Maud.',
+      beispiel_hd: 'Lass den in Ruhe, der hat heute richtig schlechte Laune.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-497',
+      ausdruck: 'fuddele',
+      hochdeutsch: 'pfuschen / schummeln',
+      bedeutung: 'Et Verb „fuddele" bedügg op Kölsch schummele, pfusche oder beim Spille mojele. „Häs de jefuddelt?" frög mer ene, dä beim Karte komisch jewonne hät. Wä fuddelt, dä nimmp et nit esu jenau met dr Reejel un trickst e bessje. E typisch kölsch Wood för et klein Schummele, mieh spöttisch wie ernst jemeint.',
+      beispiel: 'Beim Kaate fuddelt hä, dat sich de Balke bieje.',
+      beispiel_hd: 'Beim Kartenspielen schummelt er, dass sich die Balken biegen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-498',
+      ausdruck: 'Klömpche',
+      hochdeutsch: 'Bonbon / Süßigkeit',
+      bedeutung: 'E „Klömpche" es op Kölsch e Bonbon oder e klein Süßigkeit. „Häs de e Klömpche för mich?" frög dat Pänz de Oma. Et Verkleinerungswood vun „Klump" weed leevevoll för Lutscher, Bonbons un all dat Söße jebruch, wat de Pänz su jän han — besonders en de Tasch vun dr Oma fingk mer ömmer e Klömpche.',
+      beispiel: 'De Oma hät för jedes Pänz e Klömpche en dr Schötz.',
+      beispiel_hd: 'Die Oma hat für jedes Kind ein Bonbon in der Schürze.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-499',
+      ausdruck: 'Drüppche',
+      hochdeutsch: 'kleiner Schluck / Tropfen',
+      bedeutung: 'E „Drüppche" es op Kölsch e klei Drüppche oder e winzige Schluck. „Nemm noch e Drüppche Kölsch!" lädt dr Köbes en. Et Verkleinerungswood vun „Drupp" (Tropfen) weed för de klein Menge jebruch — e Drüppche Melch em Kaffee, e Drüppche Schnaps zom Verdaue. Ömmer mit nem Augezwinkere jesäht, denn et bliev sälde bei eim.',
+      beispiel: 'Jiff mer noch e Drüppche Melch en dr Kaffee, dä es ze stark.',
+      beispiel_hd: 'Gib mir noch einen Tropfen Milch in den Kaffee, der ist zu stark.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-500',
+      ausdruck: 'Krätsch',
+      hochdeutsch: 'altes klatschsüchtiges Weib',
+      bedeutung: 'En „Krätsch" es op Kölsch en klatschsüchtige, zänkische Frau, die övver jeden tratsch. „Dat es vielleich en Krätsch, die weiß alles övver jeden!" Et Wood weed för en Klaafbas jebruch, die ständig am Tratsche es un et Veedel met Klatsch versorg — derb un spöttisch, ävver typisch fö de kölsche Eckkneip un et Höfche.',
+      beispiel: 'Vör dä ahle Krätsch kanns de nix verzälle, dat weiß glich et janze Hus.',
+      beispiel_hd: 'Vor dem alten Klatschweib kannst du nichts erzählen, das weiß gleich das ganze Haus.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-501',
+      ausdruck: 'Stuvve',
+      hochdeutsch: 'Stube / Wohnzimmer',
+      bedeutung: 'De „Stuvve" es op Kölsch de jode Stuff oder et Wohnzimmer, dä jode Ruum em Hus. „Mer setze en dr Stuvve un drinke ene Kaffee." Et Wood es en ahl, urkölsch Bezeichnung för dä Ruum, en däm mer Besök empfäng un et sich jemütlich maht. En de Stuvve kütt nur erin, wä jän jesinn es.',
+      beispiel: 'An Wihnachte versammelt sich de janze Famillich en dr jode Stuvve.',
+      beispiel_hd: 'An Weihnachten versammelt sich die ganze Familie in der guten Stube.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-502',
+      ausdruck: 'murkse',
+      hochdeutsch: 'pfuschen / schlecht arbeiten',
+      bedeutung: 'Et Verb „murkse" bedügg op Kölsch schlamperig schaffe, pfusche oder jet vermurkse. „Dä hät bei dr Reparatur jemurkst!" sät mer, wenn jet schlecht jemaht es. Wä murkst, dä arbeit ohne Sorgfalt un et kütt nix Janzes bei eruss. E typisch kölsch Wood för Pfuscharbeit, die mer ärjerlich fingk.',
+      beispiel: 'Dä Handwerker hät esu jemurkst, dat mer alles noch ens maache moss.',
+      beispiel_hd: 'Der Handwerker hat so gepfuscht, dass man alles noch mal machen muss.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-503',
+      ausdruck: 'Hösch',
+      hochdeutsch: 'sachte / langsam / ruhig',
+      bedeutung: 'Et Wood „hösch" heiß op Kölsch sachte, lvangsam oder ruhig — mer säht et, wenn eine sich beruhije oder et lanksam aanjonn soll. „Hösch, hösch, nit esu hektisch!" Et drück en jemütlich, jelosse Aat us, die typisch för de kölsche Levensaat es: Et hätt noch immer jot jejange, also maach et hösch.',
+      beispiel: 'Hösch ens, mer han doch Zigg jenoch för alles.',
+      beispiel_hd: 'Ganz ruhig, wir haben doch Zeit genug für alles.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-504',
+      ausdruck: 'hibbele',
+      hochdeutsch: 'nervös zappeln / aufgeregt sein',
+      bedeutung: 'Et Verb „hibbele" bedügg op Kölsch nervös erömzappele un vör Opräjung nit stillsitze künne. „Hür op ze hibbele, et weed schon klappe!" Wä hibbelt, dä es opjereg un voller Unruh, et kribbelt em en de Beng. E typisch kölsch Wood för dat ungedöldije Zappele, wenn mer op jet wade moss oder opjereg es.',
+      beispiel: 'Vör dr Prüfung hät hä dr janze Morje jehibbelt.',
+      beispiel_hd: 'Vor der Prüfung hat er den ganzen Morgen nervös gezappelt.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-505',
+      ausdruck: 'Möhnekrom',
+      hochdeutsch: 'altmodischer Kram / Plunder',
+      bedeutung: 'Dä „Möhnekrom" es op Kölsch ahle, altmodische Krom, wie en ahl Möhn (Tante) en op em Speicher hät. „Dä janze Möhnekrom kann fott!" Et Wood verbingk „Möhn" met „Krom" un beschriev verstaubte, ungenötzte Sache vun fröjer — leevevoll-spöttisch för dat, wat mer net mieh bruch, ävver doch net fottschmieße kann.',
+      beispiel: 'Op em Speicher litt noch dr janze Möhnekrom vun dr Uroma.',
+      beispiel_hd: 'Auf dem Speicher liegt noch der ganze altmodische Kram der Urgroßmutter.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-506',
+      ausdruck: 'Krade',
+      hochdeutsch: 'Kröte / unsympathischer Mensch',
+      bedeutung: 'En „Krade" es op Kölsch eijentlich en Kröt, weed ävver spöttisch och för ene unsympathische, jiftije Mensch jebruch. „Dat es vielleich en jiftije Krade!" sät mer övver einen, dä böös un zänkisch es. Et Wood weed leevevoll-derb jebruch un nimmp eine op de Schipp, dä sich net besonders fründlich benimmp.',
+      beispiel: 'Dä ahle Krade vun nevvenaan moppert övver jede Klengigkeit.',
+      beispiel_hd: 'Die alte Kröte von nebenan meckert über jede Kleinigkeit.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-507',
+      ausdruck: 'Strötzje',
+      hochdeutsch: 'kleine Sträußchen / Blümchen',
+      bedeutung: 'E „Strötzje" es op Kölsch e klei Sträußche oder e Bündche Blome. „Ich han dr e Strötzje vum Maat metjebrung." Et Verkleinerungswood weed leevevoll för en kleine Blomestruuß jebruch, wie mer en verschenk, öm einem en Freud ze maache. Esu e Strötzje seht mer besonders em Fröhjohr op alle Määt en Kölle.',
+      beispiel: 'Zom Muttertag krütt de Mamm e Strötzje frische Blome.',
+      beispiel_hd: 'Zum Muttertag bekommt die Mama ein Sträußchen frische Blumen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-508',
+      ausdruck: 'Knöll',
+      hochdeutsch: 'Knoten / Verknotung',
+      bedeutung: 'En „Knöll" es op Kölsch ene Knöddel oder Knote, dä sich net löse löt. „En dä Schnür es ene decke Knöll!" Et Wood weed för all dat Verknotete jebruch, wat sich verheddert hät — em Faden, en de Hoore oder bildlich och em Kopp, wenn mer net wigger weiß. E praktisch kölsch Alldagswood för verfitzte Sache.',
+      beispiel: 'En de Kett es ene Knöll, dä krije ich net mieh op.',
+      beispiel_hd: 'In der Kette ist ein Knoten, den kriege ich nicht mehr auf.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-509',
+      ausdruck: 'Plütsch',
+      hochdeutsch: 'Matsch / nasser Dreck',
+      bedeutung: 'De „Plütsch" es op Kölsch nasse Matsch, Schlamm oder Dreck, wie et noh em Rähn op dr Stroß litt. „Loof nit dorch de Plütsch, du versaus dr de Schoh!" Et Wood beschriev dat naß, matschige Jemansch un jehürt zo däm typisch rheinische Schmuddelwedder, bei däm de Strooße voller Plütsch un Pööze stonn.',
+      beispiel: 'Noh em Räjen es dr janze Wäg eine eenzije Plütsch.',
+      beispiel_hd: 'Nach dem Regen ist der ganze Weg ein einziger Matsch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-510',
+      ausdruck: 'Köttche',
+      hochdeutsch: 'kleiner Kerl / Zwerg',
+      bedeutung: 'E „Köttche" es op Kölsch e kleine Kääl oder e klei Pänz, dat noch net jroß es. „Su e Köttche un hät su en jroße Schnüss!" sät mer leevevoll övver e kleines, ävver freches Pänz. Et Verkleinerungswood weed zärtlich för klein Lück jebruch, die zwar net jroß sin, ävver doch ehre Mann stonn.',
+      beispiel: 'Dat klein Köttche kütt schon allein de Trapp eropp.',
+      beispiel_hd: 'Der kleine Kerl kommt schon allein die Treppe hinauf.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-511',
+      ausdruck: 'Botterblom',
+      hochdeutsch: 'Butterblume / Löwenzahn',
+      bedeutung: 'En „Botterblom" es op Kölsch en Botterblom oder Löwezahn, die jääl Blom op dr Wis. „De Wis es voller Botterblome!" freue sich de Pänz em Fröhjohr. Et Wood verbingk „Botter" (Butter) met „Blom" un beschriev de jääle Blome, die de Pänz unger et Kinn halde, öm ze luure, ov eine Botter mag.',
+      beispiel: 'Op dr Wis am Rhing blöhe em Mai duusend Botterblome.',
+      beispiel_hd: 'Auf der Wiese am Rhein blühen im Mai tausend Butterblumen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-512',
+      ausdruck: 'Verzällche',
+      hochdeutsch: 'Geschichtchen / Anekdote',
+      bedeutung: 'E „Verzällche" es op Kölsch e klei Jeschichtche oder en Anekdot, die mer sich verzällt. „Dä hät widder e schön Verzällche parat!" Et Verkleinerungswood vun „Verzäll" (Erzählung) weed för de klein, oft luschtije Jeschichte us em Levve jebruch, die mer sich am Stammdesch oder beim Klaaf erzällt — Hätz vum kölsche Beisamme.',
+      beispiel: 'Dr Opa hät zo jedem Aanlass e passend Verzällche us aler Zigg.',
+      beispiel_hd: 'Der Opa hat zu jedem Anlass ein passendes Geschichtchen aus alter Zeit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-513',
+      ausdruck: 'Knäue',
+      hochdeutsch: 'Knäuel / Wollknäuel',
+      bedeutung: 'E „Knäue" es op Kölsch e Knäuel, besonders e Wollknäuel zom Strecke. „De Katz hät et janze Knäue verfitzt!" Et Wood weed för dat opjewickelte Jarn un all dat Verknäuelte jebruch. Wenn de Oma am Strecke es, litt dat Knäue jän op em Schoß — un de Katz spillt natürlich domet.',
+      beispiel: 'De Oma sök ehr Knäue Woll, dat unger dr Stohl jeroll es.',
+      beispiel_hd: 'Die Oma sucht ihr Wollknäuel, das unter den Stuhl gerollt ist.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-514',
+      ausdruck: 'Höttche',
+      hochdeutsch: 'kleiner Hut / Hütchen',
+      bedeutung: 'E „Höttche" es op Kölsch e klei Hötche oder Höttsche, wie mer et om Kopp drägg. „Set dr e Höttche op, et es kalt!" Et Verkleinerungswood vun „Hot" (Hut) weed för all kleine Köppbedeckunge jebruch — vum schicke Höttche bes zer Narrekapp em Karneval. E nett kölsch Wood för dat, wat dr Kopp warm hält.',
+      beispiel: 'Et Mädche set dr för de Kerch e fein Höttche op.',
+      beispiel_hd: 'Das Mädchen setzt sich für die Kirche ein feines Hütchen auf.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-515',
+      ausdruck: 'Strunzaap',
+      hochdeutsch: 'eingebildeter Angeber',
+      bedeutung: 'En „Strunzaap" es op Kölsch ene eitle Aanjevver, dä sich vill op sich enbild. „Dä Strunzaap meint, hä wör jet Beßeres!" Et Wood verbingk „strunze" (angeben) met „Aap" (Affe) un beschriev ene Wichtigdoer, dä sich opspillt un protz. Derb un spöttisch nimmp et eine op de Schipp, dä sich ze dick maht.',
+      beispiel: 'Dä Strunzaap muss överall verzälle, wat hä all sich jeleist hät.',
+      beispiel_hd: 'Der eingebildete Angeber muss überall erzählen, was er sich alles geleistet hat.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-516',
+      ausdruck: 'Klaafbas',
+      hochdeutsch: 'Quasselstrippe / Klatschtante',
+      bedeutung: 'En „Klaafbas" es op Kölsch en Frau, die jän un vill kallt un tratsch. „Met dä Klaafbas kanns de stundelang am Zaun stonn!" Et Wood verbingk „klaafe" (reden) met „Bas" (Base/Tante) un beschriev en redselije Frau, die ömmer jet ze verzälle hät — leevevoll-spöttisch för de Klaaftante us em Veedel.',
+      beispiel: 'De Klaafbas vun nevvenaan weiß ömmer als et Eetste, wat passeet es.',
+      beispiel_hd: 'Die Klatschtante von nebenan weiß immer als Erste, was passiert ist.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-517',
+      ausdruck: 'jück',
+      hochdeutsch: 'juckt / reizt',
+      bedeutung: 'Et Wood „jück" heiß op Kölsch „juckt" un weed för dat Kribbele op dr Hut jebruch, ävver och bildlich. „Mich jück et en de Fingere!" sät mer, wenn mer Loss hät, jet ze dun. „Wat jück mich dat?" heiß, dat eim jet ejal es. E vielsiitig kölsch Wood, dat mer för et Jucke un för de Jleichjültigkeit jebruch.',
+      beispiel: 'Mich jück et en de Fingere, endlich widder ze danze.',
+      beispiel_hd: 'Es juckt mich in den Fingern, endlich wieder zu tanzen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-518',
+      ausdruck: 'Höppemötzje',
+      hochdeutsch: 'kleines Hüpfspiel / Hopser',
+      bedeutung: 'E „Höppemötzje" es op Kölsch e klei Hüpf-Spillche oder e fröhlich Hopser, wie Pänz et maache. „De Pänz maache op dr Stroß e Höppemötzje." Et Wood beschriev dat ussjelasse Springe un Hüppe, wann de Pänz vör Freud nit stillstonn künne — e fröhlich Bild us em kölsche Veedel, wo de Pänz drusse spille.',
+      beispiel: 'Op em Hoff maache de Pänz e Höppemötzje no et andere.',
+      beispiel_hd: 'Auf dem Hof machen die Kinder einen Hopser nach dem anderen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-519',
+      ausdruck: 'Drüsje',
+      hochdeutsch: 'kleines Mädchen / Dröppchen',
+      bedeutung: 'E „Drüsje" es op Kölsch leevevoll e klei Mädche oder e zierlich Pänz. „Su e söß Drüsje!" sät mer övver e niedlich, kleines Mädche. Et Verkleinerungswood weed zärtlich för janz klein, feine Mädcher jebruch un drück Wärme un Zuneigung us — typisch kölsch un voll Hätzlichkeit för dat klein Wäutsje.',
+      beispiel: 'Dat klein Drüsje hät vör luuter Freud jelaach un jekrieht zojlich.',
+      beispiel_hd: 'Das kleine Mädchen hat vor lauter Freude gelacht und geweint zugleich.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-520',
+      ausdruck: 'Schlawittche',
+      hochdeutsch: 'Kragen / Schlafittchen',
+      bedeutung: 'Et „Schlawittche" es op Kölsch dr Kraje oder Nacke, aan däm mer eine packt. „Ich pack dich am Schlawittche!" droht mer im Spass. Et Wood weed för dat Packe am Kraje jebruch, wenn mer eine zo fasse krütt — meistens scherzhaff jejenövver Pänz, die jet ussjefresse han un de mer kort am Schlawittche nimmp.',
+      beispiel: 'Dä Bengel woll fottlaufe, ävver ich han en am Schlawittche jepack.',
+      beispiel_hd: 'Der Lausbub wollte weglaufen, aber ich habe ihn am Kragen gepackt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-521',
+      ausdruck: 'jävve',
+      hochdeutsch: 'geben',
+      bedeutung: 'Et Verb „jävve" heiß op Kölsch „geben" un es e jrundläjend Alldagswood. „Kanns de mer ens et Salz jävve?" oder „Wat jitt et hück zo esse?" Et weed op alle Aate jebruch, för et Reiche, et Schenke un et Doheijevve. „Et jitt" heiß „es gibt" — e Wood, dat mer en Kölle dusendmol am Dag hührt, esu zentral es et.',
+      beispiel: 'Kanns de mer ens dat Boch do jävve, et litt direk nevve dr.',
+      beispiel_hd: 'Kannst du mir mal das Buch da geben, es liegt direkt neben dir.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-522',
+      ausdruck: 'Strunzdötz',
+      hochdeutsch: 'eingebildetes Kind / kleiner Angeber',
+      bedeutung: 'En „Strunzdötz" es op Kölsch e Pänz, dat sich opspillt un protz, e kleine Aanjevver. „Su ene Strunzdötz, dä muss met allem protze!" Et Wood verbingk „strunze" (angeben) met „Dötz" (Kind) un weed leevevoll-spöttisch för Pänz jebruch, die met ehre neue Sache övverall aanjevve un ze dick dun.',
+      beispiel: 'Dä klein Strunzdötz zeig sing neu Schoh em janze Veedel.',
+      beispiel_hd: 'Der kleine Angeber zeigt seine neuen Schuhe im ganzen Viertel.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-523',
+      ausdruck: 'knabbele',
+      hochdeutsch: 'knabbern / naschen',
+      bedeutung: 'Et Verb „knabbele" bedügg op Kölsch knabbere un nasche, jet Kleines esse. „Mer knabbele beim Fernsing e bessje Nösse." Wä knabbelt, dä knuspert aan jet Kleinem eröm, oft beim Zokucke oder zwischedurch. E nett kölsch Alldagswood för dat jemütliche Nasche vun Nösse, Chips oder Knabberkrom am Ovend.',
+      beispiel: 'Beim Fußballkucke knabbele mer ene janze Pott Nösse fott.',
+      beispiel_hd: 'Beim Fußballschauen knabbern wir einen ganzen Topf Nüsse weg.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-524',
+      ausdruck: 'Schmölle',
+      hochdeutsch: 'Schmollen / beleidigt sein',
+      bedeutung: 'Et „Schmölle" es op Kölsch dat Beleidigtsin un Trotze, wenn eim jet net pass. „Sitz nit do em Schmölle, kumm widder erus!" sät mer zo eim, dä bocksig es. Wä schmollt, dä zeht en Schipp un säht nix mieh. E typisch kölsch Wood, besonders för Pänz, die beleidigt en de Eck sitze un trotze.',
+      beispiel: 'Et Pänz sitz em Schmölle en singer Eck, wiel et kein Eis krijje.',
+      beispiel_hd: 'Das Kind schmollt in seiner Ecke, weil es kein Eis kriegt.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-525',
+      ausdruck: 'Möhneklaaf',
+      hochdeutsch: 'Klatsch der Tanten / Tratsch',
+      bedeutung: 'Dä „Möhneklaaf" es op Kölsch dr Tratsch un Klatsch, dä de Möhne (Tante) ungerenein verzälle. „Dr janze Möhneklaaf jeit mich nix aan!" Et Wood verbingk „Möhn" met „Klaaf" un beschriev dat Jeschwätz un Jetratsche, dat besonders aan Weiberfastnacht, wenn de Möhne ungerwägs sin, su richtig en Faat kütt.',
+      beispiel: 'An Wieverfastelovend jeit dr Möhneklaaf en jeder Eck eröm.',
+      beispiel_hd: 'An Weiberfastnacht geht der Tratsch der Tanten in jeder Ecke herum.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-526',
+      ausdruck: 'murmele',
+      hochdeutsch: 'murmeln / leise reden',
+      bedeutung: 'Et Verb „murmele" bedügg op Kölsch leis un undeutlich vör sich hin schwätze. „Dä murmelt jet en singe Baart eren." Wä murmelt, dä bromm su leis, dat mer en kaum versteiht. E nett kölsch Wood för dat jenuschelte, halvlaute Rede, wie mer et maht, wenn mer net direk ze einem sproche will oder vör sich hinbrummelt.',
+      beispiel: 'Dr ahle Mann murmelt jet vör sich hin, mer versteiht et net.',
+      beispiel_hd: 'Der alte Mann murmelt etwas vor sich hin, man versteht es nicht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-527',
+      ausdruck: 'Stüvvje',
+      hochdeutsch: 'Stäubchen / kleines bisschen',
+      bedeutung: 'E „Stüvvje" es op Kölsch e Stäubche oder e janz klei bessje vun jet. „Do litt noch e Stüvvje Stoff op dr Schaaf." Et Verkleinerungswood vun „Stuff" (Staub) weed för winzige Menge jebruch, esu klein wie e Stäubche. „Net e Stüvvje" heiß „üverhaup nix" — wenn jet janz un jar suuver es.',
+      beispiel: 'Op dr blank jepotzte Kommod litt net e Stüvvje mieh.',
+      beispiel_hd: 'Auf der blank geputzten Kommode liegt nicht ein Stäubchen mehr.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-528',
+      ausdruck: 'jaue',
+      hochdeutsch: 'rennen / schnell laufen',
+      bedeutung: 'Et Verb „jaue" bedügg op Kölsch flöck laufe, renne oder huze. „Ich moss jaue, söns verpass ich de Bahn!" Wä jaut, dä mäht sich flöck op de Beng un läuf, wat et Züg hält. E typisch kölsch Wood för et hastije Renne, wenn et pressiert un mer keine Aujenbleck mieh ze verliere hät.',
+      beispiel: 'Mer mosse jaue, de lätzte Bahn jeit en fünf Minutte.',
+      beispiel_hd: 'Wir müssen rennen, die letzte Bahn fährt in fünf Minuten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-529',
+      ausdruck: 'Plütschwedder',
+      hochdeutsch: 'Matschwetter / Regenwetter',
+      bedeutung: 'Et „Plütschwedder" es op Kölsch nass, matschig Schmuddelwedder met Räjen un Pööze. „Bei däm Plütschwedder bliev mer leever em Huus!" Et Wood verbingk „Plütsch" (Matsch) met „Wedder" un beschriev dat ekelhaft naße, jraue Räjenwedder, dat em rheinische Winter su jän hersch — Wedder för en Pittermännche em Brauhaus.',
+      beispiel: 'Bei däm Plütschwedder jeiht keine freiwillig vör de Dör.',
+      beispiel_hd: 'Bei dem Matschwetter geht keiner freiwillig vor die Tür.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-530',
+      ausdruck: 'Höppe',
+      hochdeutsch: 'Heuschrecke / Grashüpfer',
+      bedeutung: 'En „Höppe" es op Kölsch en Heuschreck oder Jrashüpper, dat Deerche, dat su flöck springe kann. „Op dr Wis hüpp en Höppe vun Halm zo Halm." Et Wood kütt vun „hüppe" (hüpfen) un weed för dat springende Insek jebruch. De Pänz freue sich, wann se em Sommer en Höppe op dr Wis fange künne.',
+      beispiel: 'Em hoge Jras kanns de de Höppe nur huze hüre, net sinn.',
+      beispiel_hd: 'Im hohen Gras kannst du die Heuschrecken nur zirpen hören, nicht sehen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-531',
+      ausdruck: 'Buberatz',
+      hochdeutsch: 'Durcheinander / Wirrwarr',
+      bedeutung: 'Dä „Buberatz" es op Kölsch e wüstes Dorchenander oder e Chaos. „Wat es dat hück widder för ene Buberatz!" sät mer, wenn alles dröv un dronner jeiht. Et Wood beschriev e Jewirr, en Unordnung oder e Tohuwabohu — typisch kölsch för Situatione, en dänne keine mieh dorchblick un alles wuselt.',
+      beispiel: 'En dr Köch wor noh dr Fier e Buberatz us Tellern un Jläser.',
+      beispiel_hd: 'In der Küche war nach der Feier ein Durcheinander aus Tellern und Gläsern.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-532',
+      ausdruck: 'murre',
+      hochdeutsch: 'murren / brummeln',
+      bedeutung: 'Et Verb „murre" bedügg op Kölsch unzofridde brommele un leis mecker. „Dä murrt övver de neu Reejel." Wä murrt, dä es net eenverstande un brummelt sing Unmot vör sich hin, ohne richtig laut ze wäde. E nett kölsch Wood för dat halvlaute Maule, wenn eim jet net pass, mer et ävver net direk ussproche will.',
+      beispiel: 'De Manns murre, ävver am Engk maache se et doch.',
+      beispiel_hd: 'Die Männer murren, aber am Ende machen sie es doch.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-533',
+      ausdruck: 'Knubbelbein',
+      hochdeutsch: 'kräftige Beine / Stampfer',
+      bedeutung: 'De „Knubbelbein" sin op Kölsch kräftije, mollije Bein, wie Pänz se han. „Su söße Knubbelbein hät dat Bobbelche!" sät de Oma. Et Wood verbingk „Knubbel" (Knubbel) met „Bein" un weed leevevoll för de runde, kräftije Beinche vun klein Pänz jebruch — voll Wärme un Zärtlichkeit för dä klein Wuselich.',
+      beispiel: 'Dat Bobbelche strampelt met singe söße Knubbelbein en de Luff.',
+      beispiel_hd: 'Das Baby strampelt mit seinen süßen kräftigen Beinchen in der Luft.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-534',
+      ausdruck: 'Krüsch',
+      hochdeutsch: 'wählerisch beim Essen',
+      bedeutung: 'Et Wood „krüsch" heiß op Kölsch wählerisch oder mäkelig beim Esse. „Sei nit esu krüsch, ess dr Teller leer!" sät de Mamm zom Pänz. Wä krüsch es, dä piddelt am Esse eröm un mag nur bestimmte Saache. E typisch kölsch Wood för Pänz un Erwaßne, die beim Esse heikel sin un net alles ze sich nemme.',
+      beispiel: 'Dat Pänz es esu krüsch, et össt nur Nudele met Tomatesoß.',
+      beispiel_hd: 'Das Kind ist so wählerisch, es isst nur Nudeln mit Tomatensoße.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-535',
+      ausdruck: 'Strötzelche',
+      hochdeutsch: 'winziges Sträußchen / Blümchen',
+      bedeutung: 'E „Strötzelche" es op Kölsch e janz klei Sträußche, e Hampvoll Blömcher. „Et Pänz hät mer e Strötzelche Jänseblömcher jepflöck." Et doppelt verkleinerte Wood drück besonders vill Zärtlichkeit us un weed för de klein, leeve Blomesträußcher jebruch, wie Pänz se vun dr Wis metbringe — e Jeschenk vum Hätze.',
+      beispiel: 'Et klein Mädche kütt met nem Strötzelche us em Jaade aanjelaufe.',
+      beispiel_hd: 'Das kleine Mädchen kommt mit einem winzigen Sträußchen aus dem Garten gelaufen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-536',
+      ausdruck: 'Lällmuul',
+      hochdeutsch: 'Schwätzmaul / Großmaul',
+      bedeutung: 'E „Lällmuul" es op Kölsch eine, dä de Klapp net halde kann un övver alles schwadroniert. „Dat Lällmuul muss övverall sing Senf dobei jevve!" Et Wood verbingk „lälle" (schwätze) met „Muul" (Mund) un beschriev e Großmaul, dat ze vill un ze laut kallt — derb un spöttisch, ävver typisch kölsch met nem Augezwinkere.',
+      beispiel: 'Dat Lällmuul kann eifach kein Jeheimnis för sich behalde.',
+      beispiel_hd: 'Das Großmaul kann einfach kein Geheimnis für sich behalten.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-537',
+      ausdruck: 'Quöll',
+      hochdeutsch: 'Quälerei / Plage',
+      bedeutung: 'De „Quöll" es op Kölsch en Quälerei, en Plog oder jet, wat einem et Levve schwer maht. „Dat es vielleich en Quöll met dänne Päädche!" Et Wood kütt vun „quöle" (quälen) un weed för all dat jebruch, wat einem Müh un Ärjernis bereit — en lästige Aufjab, en Krankheit oder e Pänz, dat eim op dr Pell litt.',
+      beispiel: 'De Hitz em Sommer es för de ahle Lück en richtije Quöll.',
+      beispiel_hd: 'Die Hitze im Sommer ist für die alten Leute eine richtige Plage.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-538',
+      ausdruck: 'Schävvekääl',
+      hochdeutsch: 'schäbbiger Kerl / Habenichts',
+      bedeutung: 'En „Schävvekääl" es op Kölsch e schäbbije, verkomme Kääl, dä nix hät un sich net pläg. „Dä Schävvekääl bettelt sich övverall dorch." Et Wood verbingk „schävve" (schäbbig) met „Kääl" un beschriev spöttisch eine, dä erunger es un sich jonn löt — derb, ävver mieh metleidig-schmunzelnd wie böös jemeint.',
+      beispiel: 'Dä Schävvekääl hät nit ens jet för en warm Mahlzick.',
+      beispiel_hd: 'Der schäbbige Kerl hat nicht mal etwas für eine warme Mahlzeit.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-539',
+      ausdruck: 'Bützelei',
+      hochdeutsch: 'Knutscherei / Küsserei',
+      bedeutung: 'De „Bützelei" es op Kölsch dat Bütze un Knutsche, besonders em Karneval, wann jeder jeden bütz. „Em Fastelovend jeit de Bützelei övverall loss!" Et Wood kütt vun „bütze" (küssen) un beschriev dat ussjelasse Küsse un Schmuse, dat zo dr fünfte Johreszigg jehürt wie de Kamelle un et Alaaf.',
+      beispiel: 'Aan Wieverfastelovend jeit en Kölle de Bützelei en jeder Kneip loss.',
+      beispiel_hd: 'An Weiberfastnacht geht in Köln die Küsserei in jeder Kneipe los.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-540',
+      ausdruck: 'Knöllebützje',
+      hochdeutsch: 'dicker Schmatzkuss',
+      bedeutung: 'E „Knöllebützje" es op Kölsch e decke, hätzliche Schmatzkuss, wie mer en de Pänz oder de Oma jiff. „Komm, jiff mer e Knöllebützje!" Et Wood verbingk dat Rundlich-Decke met „Bützje" (Küsschen) un beschriev ene besonders hätzliche, schmatzende Kuss — voll Wärme un Zärtlichkeit, wie et sich för et kölsche Hätz jehürt.',
+      beispiel: 'Et Pänz jitt dr Oma zom Afschied e deck Knöllebützje op de Backe.',
+      beispiel_hd: 'Das Kind gibt der Oma zum Abschied einen dicken Schmatzkuss auf die Wange.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-541',
+      ausdruck: 'schwaade',
+      hochdeutsch: 'schwatzen / reden',
+      bedeutung: 'Et Verb „schwaade" bedügg op Kölsch schwätze, kalle un verzälle. „Mer han noch lang an dr Eck jeschwaad." Wä schwaadt, dä kallt un plaudert jän un usjiebig. E typisch kölsch Wood, dat met „kalle" verwandt es un dat alldäglich Plaudere ungerenein beschriev — denn em Rheinland weed jän un vill jeschwaad.',
+      beispiel: 'De zwei Möhne han övver dr Zaun stundelang jeschwaad.',
+      beispiel_hd: 'Die zwei Tanten haben über den Zaun stundenlang geschwatzt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-542',
+      ausdruck: 'Jeckerei',
+      hochdeutsch: 'Narretei / verrücktes Treiben',
+      bedeutung: 'De „Jeckerei" es op Kölsch et närrische, verröckte Triebe, besonders em Karneval. „Em Fastelovend jeit de Jeckerei loss!" Et Wood kütt vun „Jeck" (Narr) un beschriev dat ussjelasse, fröhliche un e bessje verröckte Dun, dat zo dr fünfte Johreszigg jehürt — Jeckerei es de Säl vum kölsche Karneval.',
+      beispiel: 'Aan Wieverfastelovend fängk en Kölle de jroße Jeckerei aan.',
+      beispiel_hd: 'An Weiberfastnacht fängt in Köln das große närrische Treiben an.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-543',
+      ausdruck: 'jökele',
+      hochdeutsch: 'langsam fahren / zuckeln',
+      bedeutung: 'Et Verb „jökele" bedügg op Kölsch jemütlich un lanksam fahre oder zuckele. „Mer jökele met dr ahle Schävve dorch et Veedel." Wä jökelt, dä hät et net ielig un fähr janz jemütlich vör sich hin. E nett kölsch Wood för dat jelosse, lanksame Fahre oder Trödele, ohne Hatz un Hetz.',
+      beispiel: 'Met däm ahle Rädche jökele mer am Rhing entlang.',
+      beispiel_hd: 'Mit dem alten Fahrrad zuckeln wir am Rhein entlang.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-544',
+      ausdruck: 'Höppediz',
+      hochdeutsch: 'Springinsfeld / lebhaftes Kind',
+      bedeutung: 'En „Höppediz" es op Kölsch e lebhaff, springijes Pänz, dat keine Aujenbleck stillsteiht. „Su ene Höppediz, dä es net ze bändije!" Et Wood kütt vun „hüppe" (hüpfen) un beschriev e quirlich, ussjelasse Kind, dat ständig en Bewejung es — leevevoll för de Wuselije, die vör Levensfreud nur su sprudele.',
+      beispiel: 'Dä klein Höppediz spreng dr janze Dag dorch et Huus.',
+      beispiel_hd: 'Der kleine Springinsfeld springt den ganzen Tag durch das Haus.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-545',
+      ausdruck: 'Plütschloch',
+      hochdeutsch: 'Schlammloch / Matschpfütze',
+      bedeutung: 'E „Plütschloch" es op Kölsch e deef Matschloch oder en jroße Pööz voll Schlamm. „Pass op, do es e Plütschloch!" warnt mer. Et Wood verbingk „Plütsch" (Matsch) met „Loch" un beschriev en deef, naße Stell op dr Stroß oder em Wäg, en die mer net nintrede well — söns hät mer de Schoh voll Dreck.',
+      beispiel: 'Et Auto es met däm Rad direk en e Plütschloch jefahre.',
+      beispiel_hd: 'Das Auto ist mit dem Rad direkt in ein Schlammloch gefahren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-546',
+      ausdruck: 'Knabberkrom',
+      hochdeutsch: 'Knabberzeug / Snacks',
+      bedeutung: 'Dä „Knabberkrom" es op Kölsch all dat Klein zom Nasche — Chips, Nösse, Salzstängcher un dä janze Knabberkrom. „För hück Ovend han ich Knabberkrom besorg." Et Wood verbingk „knabbele" met „Krom" un beschriev dat, wat mer beim Fernsing oder beim Spilleovend zesamme wegknabbelt — jehürt zo nem jemütliche Ovend dozo.',
+      beispiel: 'Vör dr Film hole ich noch flöck e bessje Knabberkrom.',
+      beispiel_hd: 'Vor dem Film hole ich noch schnell ein bisschen Knabberzeug.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-547',
+      ausdruck: 'Klüngelei',
+      hochdeutsch: 'Vetternwirtschaft / Mauschelei',
+      bedeutung: 'De „Klüngelei" es op Kölsch dat Mauschele, et Sich-jejensiitig-Helfe un de Vetternwirtschaff — typisch för Kölle. „En Kölle löp vill övver Klüngelei." Et Wood kütt vum „Klüngel" un beschriev dat Netzwerk us Bekannte un Fründe, övver dat mer Saache rejelt. „Mer kennt sich, mer hilf sich" — dat es de kölsche Klüngelei.',
+      beispiel: 'Dä Job hät hä nur övver Klüngelei un jode Bekannte krijje.',
+      beispiel_hd: 'Den Job hat er nur über Vetternwirtschaft und gute Bekannte bekommen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-548',
+      ausdruck: 'Strötzelfrau',
+      hochdeutsch: 'Blumenverkäuferin',
+      bedeutung: 'En „Strötzelfrau" es op Kölsch en Frau, die Blome un Sträußcher verköff, besonders fröjer op dr Stroß un em Brauhaus. „De Strötzelfrau jingk vun Desch zo Desch." Et Wood verbingk „Strötzje" (Sträußchen) met „Frau" un erinnert aan de Zigg, als noch Bloomefraue dorch de Wirtschafte jingke un Strüßjer für de Mädcher aanbote.',
+      beispiel: 'Fröjer kom en jedem Brauhaus en Strötzelfrau met ehre Blome eröm.',
+      beispiel_hd: 'Früher kam in jedem Brauhaus eine Blumenverkäuferin mit ihren Blumen herum.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-549',
+      ausdruck: 'Quetschefuss',
+      hochdeutsch: 'Plattfuß / wunder Fuß',
+      bedeutung: 'En „Quetschefuss" es op Kölsch e wehe, jequetschte oder müde Foß, dä vum ville Loofe wéh deit. „Noh däm Zoch han ich ene richtije Quetschefuss!" Et Wood verbingk „quetsche" met „Foß" un beschriev de schmerzende Fööß, wie mer se noh nem lange Karnevalszoch oder nem Stadtbummel hät — platt jelaufe un müd.',
+      beispiel: 'Noh däm lange Rosenmontagszoch han ich zwei deck Quetschefööß.',
+      beispiel_hd: 'Nach dem langen Rosenmontagszug habe ich zwei dicke wunde Füße.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-550',
+      ausdruck: 'Drüsselich',
+      hochdeutsch: 'verträumt / verschlafen',
+      bedeutung: 'Et Wood „drüsselich" heiß op Kölsch verträumt, verschloofe oder net janz wach. „Dä süht hück su drüsselich us!" sät mer övver eine, dä noch verschloofe wirkt. Wä drüsselich es, dä es dösich, ze fröh op oder net janz bei dr Saach — e typisch kölsch Wood för dä verträumt-müde Zostand, besonders morjens.',
+      beispiel: 'Et Pänz sitz noch janz drüsselich un müd am Frühstücksdesch.',
+      beispiel_hd: 'Das Kind sitzt noch ganz verträumt und müde am Frühstückstisch.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-551',
+      ausdruck: 'Höppefuss',
+      hochdeutsch: 'unruhiges Bein / Wackelbein',
+      bedeutung: 'Ene „Höppefuss" hät op Kölsch eine, dä vör Unruh dat Bein net stillhalde kann un ständig wibbelt. „Dä hät ene Höppefuss, dat es jo net zom Aanluure!" Et Wood verbingk „hüppe" met „Foß" un beschriev dat nervös Wibbele met em Bein, wann eine net stillsitze kann — typisch bei Hibbelije un Unjedöldije.',
+      beispiel: 'Vör Opräjung hät hä ene Höppefuss un wackelt dr janze Zigg.',
+      beispiel_hd: 'Vor Aufregung hat er ein unruhiges Bein und wackelt die ganze Zeit.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-552',
+      ausdruck: 'Knöllevoss',
+      hochdeutsch: 'verschmitzter Schlaukopf',
+      bedeutung: 'En „Knöllevoss" es op Kölsch e verschmitzte, schlaue Mensch, dä et faustdick henger de Ohre hät. „Su ene Knöllevoss, dä hät doch jet ussjeheck!" Et Wood verbingk dat Knubbelije met „Voss" (Fuchs) un beschriev leevevoll-spöttisch eine, dä pfiffig un jeresse es un ömmer jet em Schilde föhrt.',
+      beispiel: 'Dä klein Knöllevoss hät de Schokolad us dr ovverste Schaaf jeholt.',
+      beispiel_hd: 'Der kleine Schlaukopf hat die Schokolade aus dem obersten Schrank geholt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-553',
+      ausdruck: 'jucke',
+      hochdeutsch: 'springen / tanzen',
+      bedeutung: 'Et Verb „jucke" bedügg op Kölsch springe, hüppe oder ussjelasse danze — besonders em Karneval. „Mer han de janze Naach jejuck un jedanz!" Wä juck, dä spreng vör Freud op un aff un kann net stillstonn. E fröhlich kölsch Wood för dat ussjelasse Hüppe un Schunkele, wann de Mussik spillt.',
+      beispiel: 'Wann de Bläck Fööss spille, juckt et janze Zelt vör Freud.',
+      beispiel_hd: 'Wenn die Bläck Fööss spielen, springt das ganze Zelt vor Freude.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-554',
+      ausdruck: 'Bützebroder',
+      hochdeutsch: 'Schmusebruder / Küsser',
+      bedeutung: 'En „Bützebroder" es op Kölsch eine, dä jän un vill bütz, besonders em Karneval. „Dä Bützebroder hät widder et janze Veedel jebütz!" Et Wood verbingk „bütze" (küssen) met „Broder" un beschriev leevevoll-spöttisch eine, dä em Fastelovend keine Backe ussläht un jeden ene Bützje jiff.',
+      beispiel: 'Em Karneval es dä Köbes ene richtije Bützebroder.',
+      beispiel_hd: 'Im Karneval ist der Kellner ein richtiger Schmusebruder.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-555',
+      ausdruck: 'Stüvvjeskrom',
+      hochdeutsch: 'Kleinkram / Krimskrams',
+      bedeutung: 'Dä „Stüvvjeskrom" es op Kölsch all dä klein Krimskrams un Kleinkrom, dä sich su aansammelt. „Räum ens dinge janze Stüvvjeskrom fott!" Et Wood verbingk dat Winzije (Stüvvje) met „Krom" un beschriev de ville klein Sächelcher, die erömlieje un Stoff fange — Plunder, dä keine bruch, ävver keine fottschmieße well.',
+      beispiel: 'En dr Schublad sammelt sich dr janze Stüvvjeskrom övver de Johre.',
+      beispiel_hd: 'In der Schublade sammelt sich der ganze Kleinkram über die Jahre.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-556',
+      ausdruck: 'Knaatschbacke',
+      hochdeutsch: 'Pausbacken / dicke Wangen',
+      bedeutung: 'De „Knaatschbacke" sin op Kölsch dicke, rundlich Backe, wie Pänz se han. „Su söße Knaatschbacke hät dat Bobbelche!" Et Wood verbingk dat Weiche met „Backe" un weed leevevoll för de mollije, runde Wänge vun klein Pänz jebruch, en die mer am leevste rinkniefe well — voll Wärme un Zärtlichkeit.',
+      beispiel: 'De Oma kniep dem Bobbelche leevevoll en de söße Knaatschbacke.',
+      beispiel_hd: 'Die Oma kneift dem Baby liebevoll in die süßen Pausbacken.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-557',
+      ausdruck: 'Höppekäfer',
+      hochdeutsch: 'Marienkäfer / Glückskäfer',
+      bedeutung: 'En „Höppekäfer" es op Kölsch e Marjenkäferche, dat klein rude Jlückskäferche met de schwaaze Pünktcher. „Op minger Hand sitz e Höppekäfer!" freue sich de Pänz. Et Wood weed leevevoll för dat Jlücksdeerche jebruch, dat — wie mer säht — Jlöck bringk, wann et eim op de Hand kütt un dann fottflüg.',
+      beispiel: 'E Höppekäfer es dem Mädche op dr Finger jekrabbelt.',
+      beispiel_hd: 'Ein Marienkäfer ist dem Mädchen auf den Finger gekrabbelt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-558',
+      ausdruck: 'Schävvich',
+      hochdeutsch: 'schäbbig / heruntergekommen',
+      bedeutung: 'Et Wood „schävvich" heiß op Kölsch schäbbich, abjenötz oder erunger. „Dä Mantel süht janz schävvich us!" sät mer övver e ahl, verschlisse Kleidungsstöck. Wat schävvich es, dat hät sing beßte Zigg henger sich un wirkt ärmlich oder verkomme — e typisch kölsch Wood för all dat Aljenötzte un Verbrauchte.',
+      beispiel: 'De ahle Sessel es esu schävvich, dä jehürt langsam fottjeschmesse.',
+      beispiel_hd: 'Der alte Sessel ist so schäbbig, der gehört langsam weggeworfen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-559',
+      ausdruck: 'Bützelözje',
+      hochdeutsch: 'kleines Küsschen',
+      bedeutung: 'E „Bützelözje" es op Kölsch e janz klei, zärtlich Küsschen, wie mer et nem Pänz jiff. „Komm, jiff mer flöck e Bützelözje!" Et doppelt verkleinerte Wood drück besonders vill Zärtlichkeit us un weed för de klein, leeve Küsscher jebruch, die mer ussjedeilt — voll Wärme un Hätzlichkeit, wie et zo Kölle jehürt.',
+      beispiel: 'Vör em Schloofe jitt et Pänz noch jedem e Bützelözje.',
+      beispiel_hd: 'Vor dem Schlafen gibt das Kind noch jedem ein kleines Küsschen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-560',
+      ausdruck: 'Knöllemädche',
+      hochdeutsch: 'rundliches Mädchen / Pummelchen',
+      bedeutung: 'E „Knöllemädche" es op Kölsch leevevoll e rundlich, mollig Mädche. „Su e leev Knöllemädche!" sät de Oma met Schmunzele. Et Wood verbingk dat Rundliche met „Mädche" un weed met Wärme un ohne Böshäit för e propper, mollig Mädche jebruch — mieh Koseform wie Schimpf, voller Hätzlichkeit.',
+      beispiel: 'Dat leev Knöllemädche hilf dr Oma jän en dr Köch.',
+      beispiel_hd: 'Das liebe rundliche Mädchen hilft der Oma gern in der Küche.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-561',
+      ausdruck: 'murmelisch',
+      hochdeutsch: 'undeutlich nuschelnd',
+      bedeutung: 'Et Wood „murmelisch" heiß op Kölsch undeutlich, jenuschelt oder schwer ze verstonn. „Dä kallt esu murmelisch, mer versteiht keine Ton!" Wä murmelisch schwätz, dä bromm su leis un undeutlich, dat mer kaum jet metkrütt. E nett kölsch Wood för dat jenuschelte, unverständliche Rede, dat einem op de Nerve jonn kann.',
+      beispiel: 'Am Telefon kallt dä esu murmelisch, dat ich nix verstonn.',
+      beispiel_hd: 'Am Telefon spricht der so undeutlich, dass ich nichts verstehe.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-562',
+      ausdruck: 'Strunzepänz',
+      hochdeutsch: 'angeberisches Kind',
+      bedeutung: 'E „Strunzepänz" es op Kölsch e Pänz, dat protz un aanjiff. „Dat Strunzepänz muss met allem protze, wat et hät!" Et Wood verbingk „strunze" (angeben) met „Pänz" (Kind) un weed leevevoll-spöttisch för Pänz jebruch, die met ehre neue Saache övverall aanjevve un sich opspille — ze dick dun för ehr Jröße.',
+      beispiel: 'Dat Strunzepänz erzällt jedem vun singer neue Spillkonsol.',
+      beispiel_hd: 'Das angeberische Kind erzählt jedem von seiner neuen Spielkonsole.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-563',
+      ausdruck: 'Höppemann',
+      hochdeutsch: 'Springmann / unruhiger Geselle',
+      bedeutung: 'En „Höppemann" es op Kölsch eine, dä ständig en Bewejung es un net stillsitze kann. „Dä Höppemann es ömmer am Wibbele!" Et Wood verbingk „hüppe" met „Mann" un beschriev leevevoll-spöttisch ene rastlose, zappelije Kääl, dä keine Aujenbleck Roh jiff un ständig eröm es — vor luuter Unruh.',
+      beispiel: 'Dä Höppemann kann nit ens beim Esse ruhig sitze bliebe.',
+      beispiel_hd: 'Der Springmann kann nicht mal beim Essen ruhig sitzen bleiben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-564',
+      ausdruck: 'Knöllebroder',
+      hochdeutsch: 'rundlicher Geselle / Dickerchen',
+      bedeutung: 'En „Knöllebroder" es op Kölsch leevevoll e rundliche, mollije Kääl, dä jän jot ess. „Su ene jemütliche Knöllebroder!" sät mer met Schmunzele. Et Wood verbingk dat Rundliche met „Broder" un weed met Wärme un ohne Böshäit för e propper, mollig Mannsbild jebruch — mieh Koseform wie Schimpf, voll Hätzlichkeit.',
+      beispiel: 'Dä jemütliche Knöllebroder sitz am leevste am Brauhausdesch.',
+      beispiel_hd: 'Der gemütliche Dickerchen sitzt am liebsten am Brauhaustisch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-565',
+      ausdruck: 'Plütschpott',
+      hochdeutsch: 'Matschloch / Pfütze',
+      bedeutung: 'En „Plütschpott" es op Kölsch en jroße Matschpütz oder e Loch voll naßem Dreck. „Et Auto stund bes aan de Felg em Plütschpott." Et Wood verbingk „Plütsch" (Matsch) met „Pott" (Topf/Loch) un beschriev en deef, naße Stell op nem Wäg, die noh em Rähn voll Schlamm steiht — do well mer net dorch.',
+      beispiel: 'No däm Räjen stund vör dr Dör e jroße Plütschpott.',
+      beispiel_hd: 'Nach dem Regen stand vor der Tür ein großes Matschloch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-566',
+      ausdruck: 'Schmant',
+      hochdeutsch: 'Sahne / Rahm',
+      bedeutung: 'Dä „Schmant" es op Kölsch de Sahn oder dr Rahm. „Op dr Kooche kütt noch e Klacks Schmant!" Et Wood es en ahl, urkölsch Bezeichnung för de Sahn un weed besonders beim Backe un Koche jebruch. E Stöck Streuselkooche met nem decke Klacks Schmant — dat es e echte kölsche Jenuss för zwescheduch.',
+      beispiel: 'Op de Wäffele packe mer noch ene decke Klacks Schmant drop.',
+      beispiel_hd: 'Auf die Waffeln packen wir noch einen dicken Klacks Sahne drauf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-567',
+      ausdruck: 'Botteramm',
+      hochdeutsch: 'Butterbrot / belegtes Brot',
+      bedeutung: 'En „Botteramm" es op Kölsch e Botterbrut oder e belaate Brut. „Maach mer ens en Botteramm met Kies!" Et Wood verbingk „Botter" (Butter) met „amm" (Schnitte) un beschriev de jode ahl Stulle, wie mer se met op de Arbeit oder en de Schull nimmp. En Botteramm met Flönz es e echte kölsche Klassiker.',
+      beispiel: 'För de Schull schmeer ich dem Pänz en Botteramm met Wurß.',
+      beispiel_hd: 'Für die Schule schmiere ich dem Kind ein Butterbrot mit Wurst.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-568',
+      ausdruck: 'Verdötsch',
+      hochdeutsch: 'verdutzt / verwirrt',
+      bedeutung: 'Et Wood „verdötsch" heiß op Kölsch verdutzt, verwirrt oder verdaddert. „Dä luurt janz verdötsch us dr Wäsch!" sät mer övver eine, dä baff un perplex es. Wä verdötsch es, dä weiß för ene Aujenbleck net, wie em jeschüht — typisch kölsch för dä verblüffte, verdatterte Jesichtsussdrock, wann eine övverrasch weed.',
+      beispiel: 'Wie ich dat hührt, han ich janz verdötsch jekuck.',
+      beispiel_hd: 'Als ich das hörte, habe ich ganz verdutzt geschaut.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-569',
+      ausdruck: 'Wamms',
+      hochdeutsch: 'Jacke / dicker Bauch',
+      bedeutung: 'E „Wamms" es op Kölsch en deck Jack oder e Wams, ävver och leevevoll dr deck Buch. „Zeh dr e warm Wamms aan!" oder „Dä hät sich e Wamms aanjefresse!" Et Wood weed för dat warme Kleidungsstöck jebruch, ävver och spöttisch för ene runde Buch — je nohdäm, en wat för nem Zesammehang mer et säht.',
+      beispiel: 'Bei dr Kält zeh dr leever noch e deck Wamms övver.',
+      beispiel_hd: 'Bei der Kälte zieh dir lieber noch eine dicke Jacke über.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-570',
+      ausdruck: 'Trönche',
+      hochdeutsch: 'Tränchen / kleine Träne',
+      bedeutung: 'E „Trönche" es op Kölsch e klei Träneche, wie et eim et Aug erunge läuf. „Do kütt jo e Trönche!" sät mer leevevoll, wann e Pänz krieht. Et Verkleinerungswood vun „Trön" (Träne) weed zärtlich jebruch, för de klein Tröncher us Freud oder Tror — besonders wann et Hätz jerührt es oder e Pänz sich wéh jedon hät.',
+      beispiel: 'Vör Rührung kom dr Oma e Trönche en et Auge.',
+      beispiel_hd: 'Vor Rührung kam der Oma ein Tränchen ins Auge.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-571',
+      ausdruck: 'huze',
+      hochdeutsch: 'sausen / flitzen',
+      bedeutung: 'Et Verb „huze" bedügg op Kölsch flöck sause, flitze oder hetze. „Dä es noch flöck zom Bäcker jehuz." Wä huzt, dä mäht sich rasch op de Beng un es flöck fott. E typisch kölsch Wood för et hastije Sause, wann et pressiert un mer ielisch vun eim Ort zom andere muss — esu flöck wie dr Wind.',
+      beispiel: 'Ich huz noch flöck en et Büdche, eh et zomaht.',
+      beispiel_hd: 'Ich sause noch schnell in den Kiosk, bevor er zumacht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-572',
+      ausdruck: 'Pingse',
+      hochdeutsch: 'Pickel / kleine Pustel',
+      bedeutung: 'En „Pingse" es op Kölsch e Pickel oder e klei Pustel op dr Hut. „Do häs de jo en deck Pingse op dr Nas!" Et Wood weed för de klein Hutunreinheite jebruch, övver die sich besonders de jonge Lück ärjere. En dicke Pingse direk vör nem wichtije Termin — dat es ärjerlich un passeet ömmer zer onpassende Zigg.',
+      beispiel: 'Vör em Foto hät hä ussjereechent en deck Pingse op dr Stirn.',
+      beispiel_hd: 'Vor dem Foto hat er ausgerechnet einen dicken Pickel auf der Stirn.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-573',
+      ausdruck: 'Lappe',
+      hochdeutsch: 'Schlappschwanz / weicher Typ',
+      bedeutung: 'En „Lappe" es op Kölsch e weiche, schlappe Mensch ohne Rückjrat. „Sei kein esu ene Lappe!" sät mer zo eim, dä sich nix traut. Et Wood weed för einen jebruch, dä keine Mut hät un sich övverall ducke löt — derb un spöttisch, ävver typisch kölsch för einen, dä net för sich enstonn kann.',
+      beispiel: 'Sei kein Lappe un säg endlich, wat de denkst!',
+      beispiel_hd: 'Sei kein Schlappschwanz und sag endlich, was du denkst!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-574',
+      ausdruck: 'Schmandbroder',
+      hochdeutsch: 'Schmeichler / Süßholzraspler',
+      bedeutung: 'En „Schmandbroder" es op Kölsch e Schmeichler, dä eim Honig öm de Muul schmiert. „Dä Schmandbroder will doch nur jet vun mir!" Et Wood verbingk „Schmant" (Sahne) met „Broder" un beschriev leevevoll-spöttisch eine, dä süß deit un schmeichelt, öm jet ze krijje — schmeerich wie Schmant un net janz ehrlich.',
+      beispiel: 'Dä Schmandbroder lobt dich nur, weil hä jet vun dr will.',
+      beispiel_hd: 'Der Schmeichler lobt dich nur, weil er etwas von dir will.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-575',
+      ausdruck: 'Schabau',
+      hochdeutsch: 'Schreck / Schock',
+      bedeutung: 'Ene „Schabau" es op Kölsch ene Schreck oder ene plötzliche Schock. „Du häs mer ävver ene Schabau enjejaht!" sät mer zo eim, dä einen erschreck hät. Et Wood beschriev dat plötzliche Erschrecke, wann eim jet övverrasch oder einen vun henge aanspring — typisch kölsch för dä Aujenbleck, wann et Hätz ene Sprung mäht.',
+      beispiel: 'Wie de Katz vum Schaaf sprung, han ich ene richtije Schabau krijje.',
+      beispiel_hd: 'Als die Katze vom Schrank sprang, habe ich einen richtigen Schreck bekommen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-576',
+      ausdruck: 'Doll',
+      hochdeutsch: 'Wut / Aufregung',
+      bedeutung: 'De „Doll" es op Kölsch de Wut, de Räjung oder dr Zorn. „Vör luuter Doll es dä rut aanjeloofe!" Et Wood beschriev dat Opjebrachsin un de Aufrejung, wann einem de Krage platz. „En de Doll kumme" heiß, sich furchbar opräje — typisch kölsch för dä Aujenbleck, wann eim de Hutschnur räut.',
+      beispiel: 'Vör luuter Doll övver dat Unrääch kunnt hä kaum noch kalle.',
+      beispiel_hd: 'Vor lauter Wut über das Unrecht konnte er kaum noch reden.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-577',
+      ausdruck: 'Striebel',
+      hochdeutsch: 'Strähne / zerzauste Haare',
+      bedeutung: 'En „Striebel" es op Kölsch en Strähn Hoor, die eim wirr ins Jeseech hängk. „Kämm dr de Striebel us em Jeseech!" Et Wood weed för de eenzelne, widderspenstije Hoorsträhn jebruch, die net liege blieve well. Besonders bei Pänz, die vum Spille verschwitz sin, hange de Striebel kreuz un quer.',
+      beispiel: 'Em Wind hange dem Mädche de Striebel quer övver et Jeseech.',
+      beispiel_hd: 'Im Wind hängen dem Mädchen die Strähnen quer über das Gesicht.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-578',
+      ausdruck: 'Strötzsche',
+      hochdeutsch: 'winziges Blumensträußchen',
+      bedeutung: 'E „Strötzsche" es op Kölsch e janz klei Blomesträußche, e Hampvoll Blömcher. „Dat Pänz hät mer e Strötzsche jepflöck." Et Verkleinerungswood weed leevevoll för de klein, leeve Sträußcher jebruch, wie Pänz se vun dr Wis metbringe — e Jeschenk vum Hätze, dat mehr wäät es wie ene jroße Struuß us em Lade.',
+      beispiel: 'Et klein Mädche kütt met nem Strötzsche Jänseblömcher heim.',
+      beispiel_hd: 'Das kleine Mädchen kommt mit einem winzigen Sträußchen Gänseblümchen heim.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-579',
+      ausdruck: 'Knöllchesbroder',
+      hochdeutsch: 'gemütlicher Dicker / Rundlicher',
+      bedeutung: 'En „Knöllchesbroder" es op Kölsch leevevoll e rundliche, jemütliche Kääl, dä et Levve jenüss. „Dä jemütliche Knöllchesbroder lacht ömmer!" Et Wood verbingk dat Rundliche met „Broder" un weed met Wärme un ohne Böshäit för e propper, mollig Mannsbild jebruch — mieh Koseform wie Schimpf, voll Hätzlichkeit.',
+      beispiel: 'Dä jemütliche Knöllchesbroder hät för jeden e fröhlich Woot parat.',
+      beispiel_hd: 'Der gemütliche Rundliche hat für jeden ein fröhliches Wort parat.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-580',
+      ausdruck: 'Höppezahn',
+      hochdeutsch: 'Springinsfeld / Wildfang',
+      bedeutung: 'En „Höppezahn" es op Kölsch e wildes, lebhaff Pänz, dat ständig eröm spreng. „Su ene Höppezahn, dä hät ömmer Flause em Kopp!" Et Wood verbingk „hüppe" met „Zahn" un beschriev leevevoll e quirlich, ussjelasse Kind, dat net stillstonn kann un vör luuter Levensfreud nur su sprudelt.',
+      beispiel: 'Dä klein Höppezahn klätter övverall eropp, wat net niet- un nagelfast es.',
+      beispiel_hd: 'Der kleine Wildfang klettert überall hinauf, was nicht niet- und nagelfest ist.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-581',
+      ausdruck: 'Bützevoss',
+      hochdeutsch: 'verschmitzter Küsser',
+      bedeutung: 'En „Bützevoss" es op Kölsch e verschmitzte, schlaue Schmuser, dä jän un jeresse bütz. „Dä Bützevoss hät widder en Bützje erjattert!" Et Wood verbingk „bütze" (küssen) met „Voss" (Fuchs) un beschriev leevevoll-spöttisch eine, dä pfiffig öm e Küsschen bettelt — besonders em Karneval, wo dä Bützevoss överall zoschläht.',
+      beispiel: 'Em Fastelovend es dä Klein ene richtije Bützevoss.',
+      beispiel_hd: 'Im Karneval ist der Kleine ein richtiger verschmitzter Küsser.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-582',
+      ausdruck: 'Knaatschmuul',
+      hochdeutsch: 'Heulmaul / Jammerlappen',
+      bedeutung: 'E „Knaatschmuul" es op Kölsch eine, dä ständig knaatsch, also jammert un kriesch. „Sei kein esu e Knaatschmuul!" sät mer zo eim, dä wäje jeder Klengigkeit flennt. Et Wood verbingk „knaatsche" (weinen) met „Muul" (Mund) un weed leevevoll-spöttisch besonders för Pänz jebruch, die vill jammere un kriesche.',
+      beispiel: 'Dat klein Knaatschmuul fängk beim klingste Aanlass aan ze kriesche.',
+      beispiel_hd: 'Das kleine Heulmaul fängt beim kleinsten Anlass an zu weinen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-583',
+      ausdruck: 'Stüvvjesfrau',
+      hochdeutsch: 'übergenaue Putzfrau / Pingelige',
+      bedeutung: 'En „Stüvvjesfrau" es op Kölsch en övverjenaue Frau, die jedem Stäubche henger her es. „Dat es en Stüvvjesfrau, bei dä litt nit e Körnche eröm!" Et Wood verbingk „Stüvvje" (Stäubchen) met „Frau" un beschriev leevevoll-spöttisch en pingelije Frau, die et met dr Suuverkeit övverdriev un jedes Stüvvje wegputz.',
+      beispiel: 'Bei dä Stüvvjesfrau muss mer de Schoh schon aan dr Dör ussziehe.',
+      beispiel_hd: 'Bei der pingeligen Putzfrau muss man die Schuhe schon an der Tür ausziehen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-584',
+      ausdruck: 'Plütschbüggel',
+      hochdeutsch: 'Matschfink / verdrecktes Kind',
+      bedeutung: 'E „Plütschbüggel" es op Kölsch e Pänz, dat sich von bes unge en de Plütsch jesatz un voll Dreck jemaht hät. „Komm her, du klein Plütschbüggel, mer mosse dich wäsche!" Et Wood verbingk „Plütsch" (Matsch) met „Büggel" un weed leevevoll-spöttisch för Pänz jebruch, die met Wonn dorch jede Pööz jelaufe sin un voll Schlamm sin.',
+      beispiel: 'Du klein Plütschbüggel, wo häs de dich dann esu versaut?',
+      beispiel_hd: 'Du kleiner Matschfink, wo hast du dich denn so verdreckt?',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-585',
+      ausdruck: 'Knöllchesmädche',
+      hochdeutsch: 'rundliches Mädchen / Pummelchen',
+      bedeutung: 'E „Knöllchesmädche" es op Kölsch leevevoll e rundlich, mollig un proppere Mädche. „Su e leev Knöllchesmädche met söße Backe!" sät de Oma. Et Wood verbingk dat Rundliche met „Mädche" un weed met Wärme un ohne Böshäit för e mollig Mädche jebruch — mieh Koseform wie Schimpf, voller Hätzlichkeit un Zärtlichkeit.',
+      beispiel: 'Dat leev Knöllchesmädche lacht övver et janze Jeseech.',
+      beispiel_hd: 'Das liebe rundliche Mädchen lacht über das ganze Gesicht.',
+      kategorie: 'familie'
     }
   ]
 };

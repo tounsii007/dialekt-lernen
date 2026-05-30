@@ -1897,8 +1897,8 @@ export default {
       ausdruck: 'Gaul',
       hochdeutsch: 'Pferd',
       bedeutung: 'Da „Gaul" ist das Pferd — früher unverzichtbar bei der Arbeit im Wengerd und auf dem Feld. „Frieher hot de Gaul de Pflug dorch de Acker gezoge." Mehrzahl „Geil". Redensart: „Mer schaut em geschenkte Gaul ned ins Maul." Heute eher Reit- und Festpferd. Ein klassisches Pfälzer Wort aus der bäuerlichen Welt. Gehört zum Alltags- und Arbeitswortschatz und ruft Erinnerungen an die Zeit wach, als Pferde die Höfe, Felder und Weinberge der Pfalz mit ihrer Kraft bestellten.',
-      beispiel: 'De Bauer hot frieher zwää Geil far de schwere Arbeit gehabt.',
-      beispiel_hd: 'Der Bauer hatte früher zwei Pferde für die schwere Arbeit.',
+      beispiel: 'De Gaul hot frieher de Pflug dorch de Acker gezoge.',
+      beispiel_hd: 'Das Pferd hat früher den Pflug durch den Acker gezogen.',
       kategorie: 'natur'
     },
     {
