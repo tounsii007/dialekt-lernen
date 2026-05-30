@@ -3278,6 +3278,996 @@ export default {
       beispiel: 'Hessisch-rund-um — so leb ich mei Leben!',
       beispiel_hd: 'Hessisch rundherum — so lebe ich mein Leben!',
       kategorie: 'menschen'
+    },
+    {
+      id: 'h-411',
+      ausdruck: 'ebbes',
+      hochdeutsch: 'etwas',
+      bedeutung: 'Das hessische Wort „ebbes" steht für „etwas" und gehört zum Grundwortschatz des Dialekts. Man hört es überall: „Willste ebbes esse?" oder „Da stimmt ebbes ned." Die weiche Aussprache mit dem doppelten „b" ist typisch hessisch und zeigt, wie sehr der Dialekt harte Konsonanten aufweicht.',
+      beispiel: 'Magste ebbes vom Kuche?',
+      beispiel_hd: 'Möchtest du etwas vom Kuchen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-412',
+      ausdruck: 'Stöffsche',
+      hochdeutsch: 'Apfelwein (Koseform)',
+      bedeutung: 'Das „Stöffsche" ist die liebevolle Verkleinerung von „Stöffche" und meint zärtlich den Apfelwein — das Stöffchen schlechthin. Wer in Sachsenhausen „a Stöffsche" bestellt, zeigt, dass er die hessische Trinkkultur kennt. Der Ausdruck verrät die innige Beziehung der Hessen zu ihrem Nationalgetränk.',
+      beispiel: 'Komm, mer trinke noch a Stöffsche zusamme!',
+      beispiel_hd: 'Komm, wir trinken noch ein Apfelweinchen zusammen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-413',
+      ausdruck: 'aafange',
+      hochdeutsch: 'anfangen',
+      bedeutung: 'Das hessische „aafange" bedeutet „anfangen" — das „an" wird zu einem gedehnten „aa" verschliffen. „Mer müsse langsam aafange" hört man oft, wenn etwas beginnen soll. Diese Vokaldehnung ist ein Markenzeichen der hessischen Aussprache und macht den Dialekt so unverwechselbar gemütlich.',
+      beispiel: 'Wann wolle mer mit der Arbeit aafange?',
+      beispiel_hd: 'Wann wollen wir mit der Arbeit anfangen?',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-414',
+      ausdruck: 'Schnoog',
+      hochdeutsch: 'Schnake / Stechmücke',
+      bedeutung: 'Die „Schnoog" ist im Hessischen die Stechmücke oder Schnake, die einem an lauen Sommerabenden am Mainufer das Leben schwer macht. „Die Schnoog hat mich gebisse!" klagt mancher nach einem Abend im Biergarten. Das Wort ist im ganzen hessischen Raum verbreitet und klingt fast schon liebevoll für so ein lästiges Tier.',
+      beispiel: 'Am Owend komme die Schnoog vom Bach hoch.',
+      beispiel_hd: 'Am Abend kommen die Stechmücken vom Fluss hoch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-415',
+      ausdruck: 'hibbelig',
+      hochdeutsch: 'zappelig / nervös',
+      bedeutung: 'Wer „hibbelig" ist, kann nicht stillsitzen, ist unruhig, zappelig und nervös. „Sei doch ned so hibbelig!" sagt man zu einem aufgeregten Kind oder einem ungeduldigen Erwachsenen. Das Wort ist im Hessischen weit verbreitet und beschreibt anschaulich einen Zustand innerer Unruhe, bei dem man kaum auf dem Stuhl bleiben kann.',
+      beispiel: 'Vor der Prüfung war ich ganz hibbelig.',
+      beispiel_hd: 'Vor der Prüfung war ich ganz zappelig.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-416',
+      ausdruck: 'Krische',
+      hochdeutsch: 'Kirsche',
+      bedeutung: 'Die „Krische" ist im Hessischen die Kirsche — der Bergstraße und dem Odenwald sei Dank, wo im Frühling die Krischebääm blühen. „Die Krische sin dies Jahr besonders süß" freut sich mancher Gärtner. Die hessische Aussprache verschluckt das „r" und macht aus der Kirsche eine weiche, runde Krische.',
+      beispiel: 'Im Garte hänge die Krische schon ganz rot.',
+      beispiel_hd: 'Im Garten hängen die Kirschen schon ganz rot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-417',
+      ausdruck: 'Schlappe',
+      hochdeutsch: 'Hausschuhe / Pantoffeln',
+      bedeutung: 'Die „Schlappe" sind im Hessischen die Hausschuhe oder Pantoffeln, in die man daheim schlüpft. „Zieh dir die Schlappe an, sonst werste kalt an de Füß!" mahnt die Großmutter. Der Name kommt vom schlappenden Geräusch, das die lockeren Schuhe beim Gehen über den Boden machen — herrlich gemütlich und bodenständig.',
+      beispiel: 'Daheim lauf ich am liebste in meine Schlappe rum.',
+      beispiel_hd: 'Zu Hause laufe ich am liebsten in meinen Hausschuhen herum.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-418',
+      ausdruck: 'Gewidder',
+      hochdeutsch: 'Gewitter',
+      bedeutung: 'Das „Gewidder" ist im Hessischen das Gewitter — mit dem typisch weichen „d" statt „t". „Es zieht a Gewidder uff!" warnt man, wenn sich der Himmel verdunkelt. Im Sommer sind die Gewidder über dem Taunus und der Wetterau oft heftig, und mancher Hesse beobachtet sie vom Fenster aus mit ehrfürchtigem Respekt vor der Natur.',
+      beispiel: 'Heut Nacht gabs a fürchterlichs Gewidder.',
+      beispiel_hd: 'Heute Nacht gab es ein fürchterliches Gewitter.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-419',
+      ausdruck: 'fei',
+      hochdeutsch: 'wirklich / aber (Betonungspartikel)',
+      bedeutung: 'Das Wörtchen „fei" ist eine hessische Betonungspartikel, die eine Aussage verstärkt oder einen freundlichen Hinweis gibt. „Des is fei wahr!" oder „Du musst fei aufpasse!" Es lässt sich kaum direkt übersetzen und gibt dem Satz eine warme, vertrauliche Note. Besonders im südhessischen und fränkisch geprägten Raum hört man „fei" sehr häufig.',
+      beispiel: 'Des Essen schmeckt fei richtig gut!',
+      beispiel_hd: 'Das Essen schmeckt wirklich richtig gut!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-420',
+      ausdruck: 'Dippe',
+      hochdeutsch: 'Topf',
+      bedeutung: 'Die „Dippe" ist im Hessischen der Topf — egal ob Kochtopf oder Blumentopf. „Stell die Dippe uff den Herd!" sagt man beim Kochen. Aus diesem Wort entstand auch das bekannte hessische Gericht „Dippehas" (Hase aus dem Topf). Die Dippe gehört zum alltäglichen Küchenvokabular und zeigt die bodenständige hessische Kochkultur.',
+      beispiel: 'In der große Dippe koch ich heut a Supp.',
+      beispiel_hd: 'In dem großen Topf koche ich heute eine Suppe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-421',
+      ausdruck: 'Strolch',
+      hochdeutsch: 'frecher Junge / Lausbub',
+      bedeutung: 'Ein „Strolch" ist im Hessischen ein frecher, aber liebenswerter Junge — ein Lausbub, der Streiche ausheckt. „Du klaaner Strolch!" sagt die Oma mit einem Augenzwinkern, wenn das Enkelkind wieder Unsinn gemacht hat. Das Wort schwankt zwischen Tadel und Zärtlichkeit und gehört zum hessischen Repertoire der gutmütigen Schimpfwörter.',
+      beispiel: 'Der klaa Strolch hat die ganze Schokolad aufgesse!',
+      beispiel_hd: 'Der kleine Lausbub hat die ganze Schokolade aufgegessen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-422',
+      ausdruck: 'verzehle',
+      hochdeutsch: 'erzählen',
+      bedeutung: 'Das hessische „verzehle" bedeutet „erzählen" — eine Geschichte zum Besten geben oder berichten, was passiert ist. „Verzehl mer mol, wie\'s war!" bittet man neugierig. Im Hessischen sitzt man gern zusammen, trinkt ein Schoppe und verzehlt sich gegenseitig die neuesten Geschichten aus dem Dorf oder der Nachbarschaft.',
+      beispiel: 'Verzehl mer mol, was gestern passiert is!',
+      beispiel_hd: 'Erzähl mir mal, was gestern passiert ist!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-423',
+      ausdruck: 'Dunnerkeil',
+      hochdeutsch: 'Donnerwetter! / Mein Gott!',
+      bedeutung: 'Der Ausruf „Dunnerkeil!" ist ein hessischer Kraftausdruck der Verblüffung oder des Ärgers — wörtlich ein „Donnerkeil", also ein Blitz. „Dunnerkeil, des is awwer teuer!" entfährt es einem bei einer Überraschung. Der Ausruf ist deftig, aber harmlos und drückt ehrliche, ungekünstelte Verwunderung auf gut hessische Art aus.',
+      beispiel: 'Dunnerkeil, hast du des ganz allaa gemacht?',
+      beispiel_hd: 'Donnerwetter, hast du das ganz allein gemacht?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-424',
+      ausdruck: 'Schtubb',
+      hochdeutsch: 'Stube / Wohnzimmer',
+      bedeutung: 'Die „Schtubb" ist im Hessischen die gute Stube, das Wohnzimmer, in dem man Gäste empfängt und sich am Abend zusammensetzt. „Komm in die Schtubb, da is geheizt!" lädt man freundlich ein. Die hessische Aussprache macht aus der Stube eine behagliche Schtubb, in der hessische Gemütlichkeit und Gastfreundschaft zu Hause sind.',
+      beispiel: 'In der Schtubb steht der Owetisch fürs Esse.',
+      beispiel_hd: 'In der Stube steht der Esstisch fürs Essen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-425',
+      ausdruck: 'Hannebambel',
+      hochdeutsch: 'Schwächling / Trottel',
+      bedeutung: 'Ein „Hannebambel" ist im Frankfurter Raum ein einfältiger, schwächlicher oder unselbständiger Mensch, der sich nicht durchsetzen kann. „Sei doch kaa Hannebambel!" fordert man jemanden auf, sich nicht alles gefallen zu lassen. Das Wort ist urhessisch und gehört zu den klassischen, farbenfrohen Schimpfwörtern der Mainmetropole.',
+      beispiel: 'Lass dich ned ausnutze, sei kaa Hannebambel!',
+      beispiel_hd: 'Lass dich nicht ausnutzen, sei kein Schwächling!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-426',
+      ausdruck: 'Schnudd',
+      hochdeutsch: 'Mund / Schnute',
+      bedeutung: 'Die „Schnudd" ist im Hessischen der Mund oder die Schnute — besonders, wenn jemand sie schmollend verzieht. „Mach ned so a Schnudd!" sagt man zu einem beleidigten Kind. Das Wort ist liebevoll-spöttisch und beschreibt anschaulich das hängende, verärgerte Gesicht, das man im hessischen Alltag öfter mal zu sehen bekommt.',
+      beispiel: 'Was ziehst du denn so a Schnudd?',
+      beispiel_hd: 'Warum ziehst du denn so eine Schnute?',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-427',
+      ausdruck: 'rumbabbele',
+      hochdeutsch: 'herumreden / dummes Zeug reden',
+      bedeutung: 'Das hessische „rumbabbele" bedeutet, ziel- und sinnloses Zeug zu reden oder lange um den heißen Brei herumzureden. „Hör uff zu rumbabbele und sag, was Sach is!" fordert man ungeduldig. Es ist eine Steigerung von „babbeln" und drückt aus, dass jemand viel redet, ohne auf den Punkt zu kommen — ein klassischer hessischer Vorwurf.',
+      beispiel: 'Tu ned so lang rumbabbele, komm zur Sach!',
+      beispiel_hd: 'Rede nicht so lange herum, komm zur Sache!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-428',
+      ausdruck: 'Bub',
+      hochdeutsch: 'Junge',
+      bedeutung: 'Der „Bub" ist im Hessischen der Junge — ein Wort, das im ganzen süddeutschen Raum verbreitet ist und im Hessischen herzlich klingt. „Der Bub is groß geworde!" stellt man stolz fest. Im Gegensatz zum norddeutschen „Jung" ist der „Bub" tief in der hessischen Sprache verwurzelt und wird liebevoll für Söhne und kleine Jungen verwendet.',
+      beispiel: 'Mei Bub geht jetzt schon in die Schul.',
+      beispiel_hd: 'Mein Junge geht jetzt schon in die Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-429',
+      ausdruck: 'Mädsche',
+      hochdeutsch: 'Mädchen',
+      bedeutung: 'Das „Mädsche" ist im Hessischen das Mädchen — mit der typischen Verkleinerungsendung „-sche" statt „-chen". „Des Mädsche is awwer hübsch!" sagt man anerkennend. Die weiche hessische Verkleinerungsform verleiht dem Wort eine besondere Zärtlichkeit und gehört zum Grundvokabular, mit dem man in Hessen über Töchter und kleine Mädchen spricht.',
+      beispiel: 'Des klaa Mädsche kann schon laufe.',
+      beispiel_hd: 'Das kleine Mädchen kann schon laufen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-430',
+      ausdruck: 'Gickel',
+      hochdeutsch: 'Hahn',
+      bedeutung: 'Der „Gickel" ist im Hessischen der Hahn — der morgens auf dem Misthaufen kräht. „Der Gickel weckt des ganze Dorf!" beschwert sich mancher Frühaufsteher unfreiwillig. Das Wort ist in der hessischen Landwirtschaft fest verankert und beschreibt anschaulich, mit dem hellen „i"-Laut, das stolze Federvieh, das den Bauernhof regiert.',
+      beispiel: 'Der Gickel kräht jeden Morge um fünfe.',
+      beispiel_hd: 'Der Hahn kräht jeden Morgen um fünf.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-431',
+      ausdruck: 'Brieche',
+      hochdeutsch: 'Brötchen',
+      bedeutung: 'Das „Brieche" ist im Frankfurter Raum das Brötchen — die hessische Verkleinerung des Brotes. „Hol mer beim Bäcker a paar Brieche!" bittet man am Morgen. Frische Brieche zum Frühstück mit Butter und Marmelade gehören zum hessischen Alltag, und der Gang zum Bäcker, um warme Brieche zu holen, ist ein sonntägliches Ritual in vielen Familien.',
+      beispiel: 'Zum Frühstück gibts frische Brieche vom Bäcker.',
+      beispiel_hd: 'Zum Frühstück gibt es frische Brötchen vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-432',
+      ausdruck: 'Aameis',
+      hochdeutsch: 'Ameise',
+      bedeutung: 'Die „Aameis" ist im Hessischen die Ameise — mit der typischen Dehnung des Anlauts zu „Aa". „Im Garte sin überall Aameis!" stellt man fest, wenn die kleinen Krabbler unterwegs sind. Das Wort zeigt schön, wie der hessische Dialekt Vokale dehnt und Konsonanten weicher macht, und gehört zum alltäglichen Naturvokabular.',
+      beispiel: 'Die Aameis trage Krümel in ihrn Bau.',
+      beispiel_hd: 'Die Ameisen tragen Krümel in ihren Bau.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-433',
+      ausdruck: 'schaffe',
+      hochdeutsch: 'arbeiten',
+      bedeutung: 'Das hessische „schaffe" bedeutet „arbeiten" — ein Wort, das den Fleiß und die Bodenständigkeit der Hessen ausdrückt. „Ich muss morge schaffe gehe" sagt man ganz selbstverständlich. Anders als das hochdeutsche „schaffen" (im Sinne von erreichen) meint „schaffe" im Hessischen schlicht die tägliche Arbeit und Mühe, mit der man seinen Lebensunterhalt verdient.',
+      beispiel: 'Mer müsse hart schaffe für unser Geld.',
+      beispiel_hd: 'Wir müssen hart arbeiten für unser Geld.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-434',
+      ausdruck: 'Hawwerkaste',
+      hochdeutsch: 'unruhiger Mensch / Hektiker',
+      bedeutung: 'Ein „Hawwerkaste" (Haferkasten) ist im Hessischen jemand, der ständig zappelt, übermütig oder hektisch ist — vergleichbar mit einem Pferd, das zu viel Hafer bekommen hat. „Bleib mol ruhig, du Hawwerkaste!" sagt man zu einem übermütigen Kind. Das Wort ist bildhaft und liebevoll-spöttisch und beschreibt überschäumende, kaum zu bändigende Energie.',
+      beispiel: 'Des Kind is a richticher Hawwerkaste heut!',
+      beispiel_hd: 'Das Kind ist heute ein richtiger Wildfang!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-435',
+      ausdruck: 'Buwwespitzle',
+      hochdeutsch: 'Kartoffelnudeln / Schupfnudeln',
+      bedeutung: 'Die „Buwwespitzle" (auch Bubenspitzle) sind längliche Kartoffelnudeln aus Kartoffelteig, die in der südhessischen und odenwälderischen Küche beliebt sind. „Heut gibts Buwwespitzle mit Sauerkraut!" freut man sich. Das deftige Gericht gehört zur traditionellen hessischen Hausmannskost und wird gern mit Speck, Zwiebeln oder Sauerkraut serviert.',
+      beispiel: 'Die Oma macht die beste Buwwespitzle weit und breit.',
+      beispiel_hd: 'Die Oma macht die besten Schupfnudeln weit und breit.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-436',
+      ausdruck: 'aagedotzt',
+      hochdeutsch: 'angeschlagen / leicht beschädigt',
+      bedeutung: 'Etwas „aagedotzt" ist im Hessischen angeschlagen, leicht beschädigt oder angestoßen — etwa eine Tasse mit einem kleinen Sprung. „Der Teller is a bissje aagedotzt." Auch auf Menschen übertragen kann es bedeuten, dass jemand gesundheitlich nicht ganz auf der Höhe ist. Das Wort beschreibt liebevoll-nachsichtig einen leicht ramponierten Zustand.',
+      beispiel: 'Die Vas is aagedotzt, awwer mer kann sie noch nehme.',
+      beispiel_hd: 'Die Vase ist angeschlagen, aber man kann sie noch verwenden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-437',
+      ausdruck: 'Knaschder',
+      hochdeutsch: 'alter, knorriger Mann',
+      bedeutung: 'Ein „Knaschder" ist im Hessischen ein alter, knorriger und oft eigensinniger Mann — manchmal auch im Sinne von schlechtem Tabak. „Der alt Knaschder sitzt jeden Tag im selbe Eck." Das Wort ist deftig, aber nicht unbedingt böse gemeint und gehört zur Galerie der hessischen Typenbezeichnungen für die markanten Originale eines jeden Dorfes.',
+      beispiel: 'Der alt Knaschder erzählt immer die gleiche Geschichte.',
+      beispiel_hd: 'Der alte Knorrige erzählt immer die gleiche Geschichte.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-438',
+      ausdruck: 'Schnigge',
+      hochdeutsch: 'Schnecke',
+      bedeutung: 'Die „Schnigge" ist im Hessischen die Schnecke — mit dem typisch weichen „gg" statt „ck". „Nach\'m Rege sin überall Schnigge!" stellt man im Garten fest. Auch übertragen kann man jemanden, der langsam ist, als Schnigge bezeichnen. Das Wort zeigt schön die hessische Vorliebe für weiche Konsonanten und gehört zum alltäglichen Naturwortschatz.',
+      beispiel: 'Die Schnigge frisst mer den ganze Salat weg.',
+      beispiel_hd: 'Die Schnecke frisst mir den ganzen Salat weg.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-439',
+      ausdruck: 'allaa',
+      hochdeutsch: 'allein',
+      bedeutung: 'Das hessische „allaa" bedeutet „allein" — das „ei" wird zu einem langen „aa" gedehnt, wie so oft im Dialekt. „Ich bin heut ganz allaa daheim" sagt man. Die Vokaldehnung ist eines der auffälligsten Merkmale des Hessischen und macht aus dem nüchternen „allein" ein weiches, fast melancholisches „allaa", das man sofort als hessisch erkennt.',
+      beispiel: 'Des hab ich ganz allaa hingekriegt!',
+      beispiel_hd: 'Das habe ich ganz allein hinbekommen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-440',
+      ausdruck: 'Bachstelz',
+      hochdeutsch: 'lebhaftes, zappeliges Mädchen',
+      bedeutung: 'Eine „Bachstelz" ist im Hessischen ein lebhaftes, zappeliges Mädchen, das nicht stillsitzen kann — benannt nach dem Vogel, der ständig mit dem Schwanz wippt. „Die klaa Bachstelz hüpft den ganze Tag rum!" Das Wort ist liebevoll und beschreibt die ungestüme Lebensfreude eines quirligen Kindes, das vor Energie nur so sprüht.',
+      beispiel: 'Unser Tochter is a richtige Bachstelz.',
+      beispiel_hd: 'Unsere Tochter ist ein richtiger Wirbelwind.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-441',
+      ausdruck: 'Maad',
+      hochdeutsch: 'Mädchen / junge Frau',
+      bedeutung: 'Die „Maad" ist im Hessischen ein Mädchen oder eine junge Frau — ein altes Wort, das früher auch die Magd auf dem Bauernhof bezeichnete. „Die Maad is fleißig!" lobt man. Heute hört man es vor allem im ländlichen Hessen, wo es liebevoll und respektvoll für junge Frauen verwendet wird und ein Stück Sprachgeschichte bewahrt.',
+      beispiel: 'Die jung Maad hilft im Hof mit.',
+      beispiel_hd: 'Die junge Frau hilft im Hof mit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-442',
+      ausdruck: 'sutsche',
+      hochdeutsch: 'langsam / sachte / vorsichtig',
+      bedeutung: 'Das hessische „sutsche" bedeutet langsam, sachte oder vorsichtig — man macht etwas ohne Hast. „Mach\'s sutsche!" rät man jemandem, der sich zu sehr beeilt. Das Wort drückt die hessische Gemütlichkeit aus, die Hektik ablehnt und stattdessen für ein bedächtiges, ruhiges Vorgehen plädiert. Sutsche kommt man auch ans Ziel — nur entspannter.',
+      beispiel: 'Geh sutsche die Trepp runner, sonst fällste!',
+      beispiel_hd: 'Geh langsam die Treppe hinunter, sonst fällst du!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-443',
+      ausdruck: 'Hutzel',
+      hochdeutsch: 'getrocknete Birne / runzelige Frucht',
+      bedeutung: 'Eine „Hutzel" ist im Hessischen eine getrocknete Birne oder eine runzelige, eingeschrumpelte Frucht. „Im Winter koche mer Hutzelbrot." Übertragen nennt man auch eine kleine, gebückte alte Person liebevoll „Hutzel". Das Wort ist tief in der ländlichen hessischen Tradition des Obsttrocknens verwurzelt und klingt herrlich altmodisch und gemütlich.',
+      beispiel: 'Aus de Hutzel back ich a leckeres Brot.',
+      beispiel_hd: 'Aus den Dörrbirnen backe ich ein leckeres Brot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-444',
+      ausdruck: 'Buddik',
+      hochdeutsch: 'kleiner Laden / Bude',
+      bedeutung: 'Die „Buddik" (von franz. boutique) ist im Hessischen ein kleiner Laden, ein Kiosk oder eine Bude — oft die Trinkhalle an der Ecke. „Ich geh schnell zur Buddik a Zeitung hole." Das Wort zeigt den französischen Einfluss auf das Hessische und bezeichnet liebevoll den kleinen Eckladen, der zum Treffpunkt der Nachbarschaft geworden ist.',
+      beispiel: 'An der Buddik gibts Eis und Zeitunge.',
+      beispiel_hd: 'An dem Kiosk gibt es Eis und Zeitungen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-445',
+      ausdruck: 'Schmu',
+      hochdeutsch: 'Betrug / Schwindel',
+      bedeutung: 'Der „Schmu" ist im Hessischen ein kleiner Betrug, Schwindel oder Unsinn. „Mach kaa Schmu!" warnt man jemanden, der mogeln will. Das Wort stammt aus dem Rotwelschen und Jiddischen und hat sich im Hessischen fest eingebürgert. Es beschreibt unredliches Verhalten meist im kleineren Rahmen — nicht den großen Betrug, sondern die alltägliche Mogelei.',
+      beispiel: 'Bei dem Geschäft is doch Schmu dabei!',
+      beispiel_hd: 'Bei dem Geschäft ist doch Schwindel dabei!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-446',
+      ausdruck: 'Zores',
+      hochdeutsch: 'Ärger / Streit',
+      bedeutung: 'Der „Zores" ist im Hessischen Ärger, Streit oder Durcheinander. „Mach mer kaan Zores!" bittet man um Ruhe. Das Wort stammt aus dem Jiddischen (zores = Sorgen) und ist besonders im Frankfurter Raum geläufig, wo es über Jahrhunderte ins Hessische eingeflossen ist. Es beschreibt anschaulich jeden Wirbel und jede Aufregung, die einem das Leben schwer macht.',
+      beispiel: 'Ich will kaan Zores, lass uns vernünftig rede.',
+      beispiel_hd: 'Ich will keinen Ärger, lass uns vernünftig reden.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-447',
+      ausdruck: 'Maloche',
+      hochdeutsch: 'harte Arbeit / Schufterei',
+      bedeutung: 'Die „Maloche" ist im Hessischen die harte, schwere Arbeit, die Schufterei. „Des war heut a echte Maloche!" stöhnt man nach einem anstrengenden Tag. Das Wort kommt aus dem Jiddischen (melocho = Arbeit) und ist im Rhein-Main-Gebiet weit verbreitet. Es drückt anerkennend aus, dass jemand körperlich richtig hart gearbeitet und sich abgeplagt hat.',
+      beispiel: 'Nach der Maloche schmeckt der Schoppe doppelt gut.',
+      beispiel_hd: 'Nach der Schufterei schmeckt der Apfelwein doppelt gut.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-448',
+      ausdruck: 'Reibekuche',
+      hochdeutsch: 'Kartoffelpuffer / Reibeplätzchen',
+      bedeutung: 'Die „Reibekuche" sind im Hessischen Kartoffelpuffer aus geriebenen rohen Kartoffeln, die in der Pfanne goldbraun gebraten werden. „Zur Kerb gibts Reibekuche mit Apfelmus!" Das deftige Gericht ist auf Festen und Märkten beliebt und gehört zur hessischen Küche. Frisch aus der Pfanne, knusprig und herzhaft, sind Reibekuche ein wahrer Volksgenuss.',
+      beispiel: 'Die Reibekuche schmecke am beste mit Apfelmus.',
+      beispiel_hd: 'Die Kartoffelpuffer schmecken am besten mit Apfelmus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-449',
+      ausdruck: 'Plärre',
+      hochdeutsch: 'laut weinen / schreien',
+      bedeutung: 'Das hessische „plärre" bedeutet laut weinen, schreien oder herumheulen — meist auf Kinder bezogen. „Hör uff zu plärre!" sagt man zu einem weinenden Kind. Das Wort ist lautmalerisch und beschreibt anschaulich das anhaltende, laute Geheul. Es kann auch für übertrieben lautes Reden oder Plärren aus dem Radio verwendet werden und klingt leicht genervt.',
+      beispiel: 'Des Bobbelsche tut die ganze Nacht plärre.',
+      beispiel_hd: 'Das Baby weint die ganze Nacht.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-450',
+      ausdruck: 'Schubkarsch',
+      hochdeutsch: 'Schubkarre',
+      bedeutung: 'Der „Schubkarsch" ist im Hessischen die Schubkarre — mit der typisch hessischen Endung „-arsch" statt „-arre". „Hol mer den Schubkarsch ausm Schuppe!" sagt man bei der Gartenarbeit. Das Wort gehört zum bodenständigen Werkzeugvokabular und zeigt, wie der hessische Dialekt selbst alltägliche Geräte mit seiner unverwechselbaren Klangfärbung versieht.',
+      beispiel: 'Mit\'m Schubkarsch fahr ich die Erd in de Garte.',
+      beispiel_hd: 'Mit der Schubkarre fahre ich die Erde in den Garten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'h-451',
+      ausdruck: 'Bagaasch',
+      hochdeutsch: 'Gesindel / Bagage / Sippschaft',
+      bedeutung: 'Die „Bagaasch" ist im Hessischen abwertend die Sippschaft, das Gesindel oder eine unliebsame Gruppe von Leuten — abgeleitet vom französischen „bagage". „Die ganze Bagaasch is gekomme!" sagt man halb spöttisch, halb genervt. Manchmal wird das Wort aber auch augenzwinkernd für die eigene große Verwandtschaft verwendet, die zahlreich zu Besuch erscheint.',
+      beispiel: 'Zum Geburtstag kommt die ganze Bagaasch.',
+      beispiel_hd: 'Zum Geburtstag kommt die ganze Verwandtschaft.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-452',
+      ausdruck: 'Geseier',
+      hochdeutsch: 'Gejammer / sinnloses Gerede',
+      bedeutung: 'Das „Geseier" ist im Hessischen langatmiges Gejammer, Gerede oder Geschwätz ohne echten Inhalt. „Hör uff mit dem Geseier!" sagt man genervt. Das Wort stammt aus dem Jiddischen und ist im Frankfurter Raum geläufig. Es beschreibt das endlose Lamentieren und Drumherumreden, bei dem viel gesprochen, aber nichts Wesentliches gesagt wird.',
+      beispiel: 'Des ewige Geseier kann ich nimmer höre!',
+      beispiel_hd: 'Das ewige Gejammer kann ich nicht mehr hören!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-453',
+      ausdruck: 'Schlawiner',
+      hochdeutsch: 'gerissener Kerl / Schlitzohr',
+      bedeutung: 'Ein „Schlawiner" ist im Hessischen ein gerissener, listiger Kerl, der es faustdick hinter den Ohren hat. „Du aler Schlawiner!" sagt man halb tadelnd, halb bewundernd. Das Wort beschreibt jemanden, der mit Charme und List immer einen Vorteil herausschlägt — nicht wirklich bösartig, sondern eher ein durchtriebenes Schlitzohr, dem man nicht ganz trauen darf.',
+      beispiel: 'Der Schlawiner hat mer schon widder a Verspreche abgeluchst.',
+      beispiel_hd: 'Der Schlawiner hat mir schon wieder ein Versprechen abgeluchst.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-454',
+      ausdruck: 'Gickelhahn',
+      hochdeutsch: 'aufgeregter / streitsüchtiger Mensch',
+      bedeutung: 'Ein „Gickelhahn" ist im Hessischen ein aufbrausender, streitsüchtiger Mensch, der schnell in die Höhe geht — wie ein kampflustiger Hahn. „Sei ned so a Gickelhahn!" beruhigt man jemanden. Das Wort verbindet den „Gickel" (Hahn) mit dem kämpferischen Wesen und beschreibt anschaulich einen reizbaren Zeitgenossen, der bei jeder Kleinigkeit den Kamm schwellen lässt.',
+      beispiel: 'Der Nachbar is a echter Gickelhahn, immer am Streite.',
+      beispiel_hd: 'Der Nachbar ist ein echter Streithahn, immer am Streiten.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-455',
+      ausdruck: 'Quatschkopp',
+      hochdeutsch: 'Schwätzer / jemand der Unsinn redet',
+      bedeutung: 'Ein „Quatschkopp" ist im Hessischen jemand, der viel Unsinn und dummes Zeug redet. „Du aler Quatschkopp!" sagt man liebevoll-spöttisch. Das Wort verbindet „Quatsch" mit „Kopp" (Kopf) und ist im ganzen mitteldeutschen Raum verbreitet. Es ist selten wirklich böse gemeint und gehört zu den gutmütigen hessischen Bezeichnungen für einen geschwätzigen Zeitgenossen.',
+      beispiel: 'Glaab dem Quatschkopp doch kaa Wort!',
+      beispiel_hd: 'Glaub dem Schwätzer doch kein Wort!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-456',
+      ausdruck: 'Boltze',
+      hochdeutsch: 'Bolzen / kräftiger Schuss',
+      bedeutung: 'Ein „Boltze" ist im hessischen Fußballjargon ein kräftiger, harter Schuss aufs Tor — abgeleitet vom Bolzen. „Was a Boltze!" ruft man begeistert, wenn der Stürmer den Ball wuchtig ins Netz drischt. Auch das wilde Fußballspielen auf dem Bolzplatz nennt man „boltze". Das Wort gehört zum Sportvokabular besonders der Eintracht-Fans im Stadion.',
+      beispiel: 'Der hat den Ball mit\'m echte Boltze rein gehaue!',
+      beispiel_hd: 'Der hat den Ball mit einem echten Bolzen reingehauen!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'h-457',
+      ausdruck: 'Kappes',
+      hochdeutsch: 'Kohl / Unsinn',
+      bedeutung: 'Der „Kappes" ist im Hessischen einerseits der Weißkohl, andererseits übertragen der Unsinn oder Quatsch. „Red kaan Kappes!" entspricht „Red keinen Unsinn!". Das Wort kommt vom lateinischen „caput" über das Rheinische ins Hessische. In der Küche meint Kappes den Kohl, im Alltag aber meistens das dumme Gerede, das man nicht ernst nehmen sollte.',
+      beispiel: 'Des is doch alles Kappes, was der erzählt!',
+      beispiel_hd: 'Das ist doch alles Unsinn, was der erzählt!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-458',
+      ausdruck: 'Schluri',
+      hochdeutsch: 'unordentlicher / nachlässiger Mensch',
+      bedeutung: 'Ein „Schluri" ist im Hessischen ein nachlässiger, unordentlicher oder unzuverlässiger Mensch, der alles schludrig macht. „Der Schluri hat\'s widder ned fertig gemacht!" Das Wort drückt milden Tadel aus über jemanden, der es mit der Sorgfalt und Pünktlichkeit nicht so genau nimmt. Ein Schluri ist nicht bösartig, nur eben liederlich und unzuverlässig.',
+      beispiel: 'So a Schluri, der räumt nie hinter sich uff!',
+      beispiel_hd: 'So ein Schludrian, der räumt nie hinter sich auf!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-459',
+      ausdruck: 'Schmackeduzje',
+      hochdeutsch: 'kleiner Schlag / Klaps',
+      bedeutung: 'Ein „Schmackeduzje" ist im hessischen Raum ein kleiner, leichter Schlag oder Klaps — meist liebevoll oder zur sanften Ermahnung. „Wenn de ned hörst, gibt\'s a Schmackeduzje!" droht man scherzhaft. Das Wort verbindet „Schmackes" (Wucht) mit einer Verkleinerung und beschreibt anschaulich den ganz leichten Klaps, der mehr Geste als wirkliche Strafe ist.',
+      beispiel: 'Gleich gibt\'s a Schmackeduzje, wenn de frech wirst!',
+      beispiel_hd: 'Gleich gibt es einen Klaps, wenn du frech wirst!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-460',
+      ausdruck: 'Babbschachtel',
+      hochdeutsch: 'geschwätzige Person / Plappermaul',
+      bedeutung: 'Eine „Babbschachtel" ist im Hessischen ein geschwätziger Mensch, ein Plappermaul, das ununterbrochen redet. „Die alt Babbschachtel weiß alles vom ganze Dorf!" Das Wort verbindet „babbe" (reden) mit „Schachtel" und ist liebevoll-spöttisch gemeint. Es bezeichnet jemanden, meist eine Frau, die gern und viel klatscht und über alles und jeden Bescheid weiß.',
+      beispiel: 'Erzähl der Babbschachtel nix, des weiß sonst gleich jeder!',
+      beispiel_hd: 'Erzähl dem Plappermaul nichts, das weiß sonst gleich jeder!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-461',
+      ausdruck: 'Quetschekommod',
+      hochdeutsch: 'Akkordeon / Ziehharmonika',
+      bedeutung: 'Die „Quetschekommod" ist die scherzhaft-hessische Bezeichnung für das Akkordeon oder die Ziehharmonika — weil man sie zum Spielen zusammenquetscht. „Bei der Kerb spielt aaner die Quetschekommod!" Das Instrument gehört zur hessischen Volksmusik und sorgt auf Festen für Stimmung. Der bildhafte Name beschreibt liebevoll-humorvoll die ausgezogene und zusammengedrückte Balgmechanik.',
+      beispiel: 'Uff\'m Fest spielt der Schorsch die Quetschekommod.',
+      beispiel_hd: 'Auf dem Fest spielt der Georg das Akkordeon.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-462',
+      ausdruck: 'Gusche',
+      hochdeutsch: 'Mund / Maul',
+      bedeutung: 'Die „Gusche" ist im Hessischen derb für den Mund oder das Maul. „Halt die Gusche!" ist eine deftige Aufforderung zu schweigen. Das Wort ist im mitteldeutschen Raum verbreitet und drückt je nach Tonfall Ärger oder grobe Vertrautheit aus. „Mach die Gusche uff!" kann auch heißen, dass jemand endlich etwas sagen soll, statt zu schweigen.',
+      beispiel: 'Jetzt halt emol die Gusche und lass mich ausrede!',
+      beispiel_hd: 'Jetzt halt mal den Mund und lass mich ausreden!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-463',
+      ausdruck: 'pussiere',
+      hochdeutsch: 'flirten / turteln',
+      bedeutung: 'Das hessische „pussiere" bedeutet flirten, turteln oder eine Liebelei haben — abgeleitet vom französischen „pousser". „Die zwaa pussiere schon a Weil!" stellt man schmunzelnd fest. Das Wort ist altmodisch-charmant und beschreibt das Anbandeln und verliebte Tändeln junger Leute. Es klingt herrlich nostalgisch und gehört zur hessischen Sprache der Herzensangelegenheiten.',
+      beispiel: 'Der Bub un des Mädsche pussiere am Gartezaun.',
+      beispiel_hd: 'Der Junge und das Mädchen turteln am Gartenzaun.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-464',
+      ausdruck: 'Schmalznudel',
+      hochdeutsch: 'Schmalzgebäck / Krapfen',
+      bedeutung: 'Die „Schmalznudel" ist im Hessischen ein in Schmalz oder Fett ausgebackenes Hefegebäck, ähnlich einem Krapfen oder Auszogenen. „Zur Kerb gibts frische Schmalznudel!" Das süße Gebäck wird oft mit Zucker bestreut und gehört zum traditionellen hessischen Festgebäck. Warm aus der Pfanne ist die Schmalznudel ein Hochgenuss auf jedem Jahrmarkt und Volksfest.',
+      beispiel: 'Die Schmalznudel uff\'m Markt sin himmlisch!',
+      beispiel_hd: 'Das Schmalzgebäck auf dem Markt ist himmlisch!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-465',
+      ausdruck: 'Stuss',
+      hochdeutsch: 'Unsinn / dummes Zeug',
+      bedeutung: 'Der „Stuss" ist im Hessischen Unsinn, dummes Zeug oder Quatsch. „Erzähl kaan Stuss!" entspricht „Red keinen Unsinn!". Das Wort stammt aus dem Jiddischen und ist im Frankfurter Raum besonders geläufig. Es bezeichnet alles Unsinnige und Sinnlose und wird im Alltag häufig verwendet, um eine abwegige Behauptung oder einen dummen Plan kurz und bündig abzutun.',
+      beispiel: 'Was du da redest, is doch der größte Stuss!',
+      beispiel_hd: 'Was du da redest, ist doch der größte Unsinn!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-466',
+      ausdruck: 'Heckewirtschaft',
+      hochdeutsch: 'saisonale Straußwirtschaft',
+      bedeutung: 'Eine „Heckewirtschaft" (auch Besenwirtschaft) ist im Rheingau und in hessischen Weingegenden eine saisonale Straußwirtschaft, in der Winzer ihren eigenen Wein und einfache Speisen ausschenken. „Mer gehn heut Owend in die Heckewirtschaft!" Erkennbar ist sie am ausgehängten Kranz oder Besen. Die gemütliche Heckewirtschaft ist ein beliebter Treffpunkt zur Weinlese-Zeit.',
+      beispiel: 'In der Heckewirtschaft gibts den neue Wein.',
+      beispiel_hd: 'In der Straußwirtschaft gibt es den neuen Wein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'h-467',
+      ausdruck: 'Hannüberschwer',
+      hochdeutsch: 'sehr schwer / kaum zu heben',
+      bedeutung: 'Etwas, das „hannübersch schwer" oder „hannüberschwer" ist, ist im Hessischen außerordentlich schwer und kaum zu heben. „Der Sack is ja hannüberschwer!" stöhnt man. Die hessische Verstärkung übertreibt anschaulich das Gewicht. Das Wort gehört zu den ausdrucksstarken Steigerungen, mit denen Hessen die Anstrengung beim Tragen oder Heben drastisch unterstreichen.',
+      beispiel: 'Der Kaste mit de Bembel is hannüberschwer!',
+      beispiel_hd: 'Der Kasten mit den Bembeln ist unglaublich schwer!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-468',
+      ausdruck: 'verbabbele',
+      hochdeutsch: 'sich verplappern / verraten',
+      bedeutung: 'Sich „verbabbele" bedeutet im Hessischen, sich zu verplappern und unabsichtlich ein Geheimnis auszuplaudern. „Jetzt hab ich mich verbabbelt!" ärgert man sich, wenn einem etwas herausgerutscht ist. Das Wort baut auf „babbe" (reden) auf und beschreibt das Missgeschick, vor lauter Reden etwas zu verraten, das eigentlich hätte geheim bleiben sollen.',
+      beispiel: 'Pass uff, dass de dich ned verbabbelst!',
+      beispiel_hd: 'Pass auf, dass du dich nicht verplapperst!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-469',
+      ausdruck: 'Knöllsche',
+      hochdeutsch: 'Strafzettel / Knöllchen',
+      bedeutung: 'Das „Knöllsche" ist im Hessischen das Knöllchen, also der Strafzettel fürs Falschparken. „Schon widder a Knöllsche an de Scheib!" ärgert man sich. Mit der typischen hessischen Verkleinerungsendung „-sche" klingt selbst der ärgerliche Strafzettel fast harmlos. Das Wort gehört zum modernen Alltagsvokabular der Stadt und sorgt regelmäßig für Verdruss bei Autofahrern.',
+      beispiel: 'Ich hab a Knöllsche kriegt, weil ich falsch geparkt hab.',
+      beispiel_hd: 'Ich habe einen Strafzettel bekommen, weil ich falsch geparkt habe.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-470',
+      ausdruck: 'Schmeißfliesch',
+      hochdeutsch: 'Schmeißfliege',
+      bedeutung: 'Die „Schmeißfliesch" ist im Hessischen die Schmeißfliege — die dicke, brummende Fliege, die im Sommer ums Essen kreist. „Mach\'s Fenster zu, sonst kommt die Schmeißfliesch rein!" Mit dem typisch hessischen „sch" statt „g" klingt das lästige Insekt gleich noch ekliger. Das Wort gehört zum sommerlichen Alltagsvokabular und ruft bei jedem sofort ein genervtes Gefühl hervor.',
+      beispiel: 'Die Schmeißfliesch summt schon de ganze Tag rum.',
+      beispiel_hd: 'Die Schmeißfliege summt schon den ganzen Tag herum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-471',
+      ausdruck: 'Plärrkopp',
+      hochdeutsch: 'Schreihals / weinerliches Kind',
+      bedeutung: 'Ein „Plärrkopp" ist im Hessischen ein Schreihals oder ein weinerliches Kind, das viel heult und jammert. „Sei doch kaa Plärrkopp!" tröstet und tadelt man zugleich. Das Wort verbindet „plärre" (weinen) mit „Kopp" (Kopf) und ist liebevoll-spöttisch gemeint. Es beschreibt anschaulich ein Kind, das bei jeder Kleinigkeit gleich in Tränen ausbricht.',
+      beispiel: 'Unser Klaaner is heut a richticher Plärrkopp.',
+      beispiel_hd: 'Unser Kleiner ist heute ein richtiger Schreihals.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-472',
+      ausdruck: 'Schissmelina',
+      hochdeutsch: 'ängstlicher Mensch / Angsthase',
+      bedeutung: 'Eine „Schissmelina" ist im Hessischen ein ängstlicher Mensch, ein Angsthase, der sich vor allem fürchtet. „Sei kaa Schissmelina, des is doch ned gefährlich!" mutigt man jemanden auf. Das deftige, humorvolle Wort verbindet derbe Vulgärsprache mit einem Frauennamen und ist liebevoll-spöttisch gemeint. Es ist ein Klassiker unter den hessischen Bezeichnungen für Hasenfüße.',
+      beispiel: 'Trau dich endlich, du klaa Schissmelina!',
+      beispiel_hd: 'Trau dich endlich, du kleiner Angsthase!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-473',
+      ausdruck: 'Owacht',
+      hochdeutsch: 'Acht / Vorsicht',
+      bedeutung: 'Das hessische „Owacht" bedeutet Acht oder Vorsicht — man gibt „Owacht", wenn man aufpasst. „Gib Owacht, dass de ned hinfällst!" warnt man fürsorglich. Das Wort ist eine dialektale Form von „Obacht" und gehört zum alltäglichen Wortschatz der Fürsorge und Warnung. Wer in Hessen Owacht gibt, ist achtsam und passt gut auf sich und andere auf.',
+      beispiel: 'Gib Owacht beim Überquere von der Straß!',
+      beispiel_hd: 'Gib Acht beim Überqueren der Straße!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-474',
+      ausdruck: 'Hannekloppes',
+      hochdeutsch: 'einfältiger Mensch / Dummkopf',
+      bedeutung: 'Ein „Hannekloppes" ist im Frankfurter Raum ein einfältiger, tölpelhafter Mensch — ein liebevoll-spöttisches Schimpfwort für jemanden, der nicht der Hellste ist. „So a Hannekloppes!" sagt man kopfschüttelnd. Das Wort gehört zu den traditionellen hessischen Typenbezeichnungen und ist selten wirklich böse, sondern beschreibt mit augenzwinkerndem Spott den begriffsstutzigen Zeitgenossen.',
+      beispiel: 'Der Hannekloppes hat\'s widder ned kapiert.',
+      beispiel_hd: 'Der Tölpel hat es wieder nicht kapiert.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-475',
+      ausdruck: 'Kerbeplatz',
+      hochdeutsch: 'Kirmesplatz / Festplatz',
+      bedeutung: 'Der „Kerbeplatz" ist im Hessischen der Festplatz, auf dem die Kerb (Kirchweih) gefeiert wird — mit Karussells, Bierzelt und Musik. „Treffe mer uns am Kerbeplatz?" Der Kerbeplatz ist das gesellige Zentrum des Dorffestes, wo Jung und Alt zusammenkommen, tanzen und feiern. Er gehört zum festen Bestandteil der hessischen Festkultur und Dorfgemeinschaft.',
+      beispiel: 'Am Wochenend is der Kerbeplatz voller Leut.',
+      beispiel_hd: 'Am Wochenende ist der Kirmesplatz voller Leute.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-476',
+      ausdruck: 'gewwe',
+      hochdeutsch: 'geben',
+      bedeutung: 'Das hessische „gewwe" bedeutet „geben" — das harte „b" wird zum weichen „ww" verschliffen, wie so oft im Dialekt. „Kannste mer mol des Salz gewwe?" bittet man am Tisch. Auch „Was gibt\'s?" wird zu „Was gewwt\'s?". Das Wort gehört zum absoluten Grundwortschatz und zeigt exemplarisch die hessische Konsonantenerweichung, die den Dialekt so weich klingen lässt.',
+      beispiel: 'Tu mer mol a Stück Brot gewwe!',
+      beispiel_hd: 'Gib mir mal ein Stück Brot!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-477',
+      ausdruck: 'Schlackes',
+      hochdeutsch: 'großer, schlaksiger Mensch',
+      bedeutung: 'Ein „Schlackes" ist im Hessischen ein großer, dünner, schlaksiger Mensch mit langen Gliedmaßen. „Der Schlackes muss sich am Türrahme bücke!" sagt man über einen besonders Hochgewachsenen. Das Wort ist liebevoll-spöttisch und beschreibt anschaulich die hagere, aufgeschossene Gestalt. Ein Schlackes überragt alle und wirkt mit seinen langen Armen und Beinen oft etwas linkisch.',
+      beispiel: 'Der lang Schlackes spielt bestimmt gut Baskeball.',
+      beispiel_hd: 'Der lange Schlaks spielt bestimmt gut Basketball.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-478',
+      ausdruck: 'Bembelrunde',
+      hochdeutsch: 'gesellige Apfelweinrunde',
+      bedeutung: 'Die „Bembelrunde" ist im Hessischen die gesellige Runde, die sich um einen Bembel Apfelwein versammelt und zusammen trinkt, babbelt und lacht. „Heut Owend treffe mer uns zur Bembelrunde!" Es ist eine fest etablierte Form hessischer Geselligkeit, bei der der Bembel von Hand zu Hand geht und die Gläser immer wieder neu gefüllt werden. Gemütlichkeit pur.',
+      beispiel: 'In der Bembelrunde wird viel gelacht und gebabbelt.',
+      beispiel_hd: 'In der Apfelweinrunde wird viel gelacht und geredet.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'h-479',
+      ausdruck: 'verkasematuckeln',
+      hochdeutsch: 'erklären / verständlich machen',
+      bedeutung: 'Das hessische „verkasematuckeln" bedeutet, etwas umständlich zu erklären oder verständlich zu machen — manchmal auch im Sinne von verputzen oder aufessen. „Des muss mer mer erst emol verkasematuckeln!" Das herrlich lange, verschnörkelte Wort ist im Frankfurter Raum bekannt und drückt mit humorvoller Ausführlichkeit aus, dass etwas erst gründlich auseinandergesetzt werden muss.',
+      beispiel: 'Kannste mer des nochmol verkasematuckeln?',
+      beispiel_hd: 'Kannst du mir das nochmal erklären?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-480',
+      ausdruck: 'Schoppestecher',
+      hochdeutsch: 'eingefleischter Apfelweintrinker',
+      bedeutung: 'Ein „Schoppestecher" ist im Hessischen ein passionierter Apfelweintrinker, der gern und regelmäßig sein Schoppe Ebbelwoi „sticht". „Der alt Schoppestecher kennt jede Wertschaft in Sachsenhause!" Das Wort beschreibt anerkennend-spöttisch den Stammgast, für den der Apfelwein zum Lebenselixier gehört und der die hessische Trinkkultur in Perfektion verkörpert.',
+      beispiel: 'Mei Opa war a echter Schoppestecher sei Lebe lang.',
+      beispiel_hd: 'Mein Opa war ein echter Apfelweintrinker sein Leben lang.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-481',
+      ausdruck: 'Dippcher',
+      hochdeutsch: 'kleine Töpfchen',
+      bedeutung: 'Die „Dippcher" sind im Hessischen kleine Töpfchen — die Verkleinerung von „Dippe" (Topf). „Stell die Dippcher mit der Marmelad in de Schrank!" sagt man. Die kleinen Dippcher werden für Eingemachtes, Gewürze oder Marmelade verwendet. Mit der hessischen Verkleinerungsform „-cher" klingen selbst die alltäglichen Küchengefäße liebevoll und gemütlich.',
+      beispiel: 'In de Dippcher tu ich mei selbstgemachte Marmelad.',
+      beispiel_hd: 'In die Töpfchen fülle ich meine selbstgemachte Marmelade.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-482',
+      ausdruck: 'oogucke',
+      hochdeutsch: 'anschauen / ansehen',
+      bedeutung: 'Das hessische „oogucke" bedeutet „anschauen" oder „ansehen" — das „an" wird zu „oo" verschliffen. „Guck der des mol oo!" fordert man jemanden auf, etwas zu betrachten. Das Wort gehört zum alltäglichen Grundwortschatz und zeigt die typische hessische Verschleifung der Vorsilbe „an". Wer in Hessen etwas oogucke will, will es sich genau und in Ruhe ansehen.',
+      beispiel: 'Komm, mer gehn uns die neue Wohnung oogucke!',
+      beispiel_hd: 'Komm, wir gehen uns die neue Wohnung ansehen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-483',
+      ausdruck: 'Schnorres',
+      hochdeutsch: 'Schnurrbart',
+      bedeutung: 'Der „Schnorres" ist im Hessischen der Schnurrbart — der Oberlippenbart, den mancher Hesse mit Stolz trägt. „Der hat sich a stattliche Schnorres wachse lasse!" Das Wort ist liebevoll-spöttisch und gehört zum hessischen Körpervokabular. Ein gepflegter Schnorres galt früher als Zeichen von Männlichkeit, und der Begriff klingt herrlich urig und bodenständig.',
+      beispiel: 'Der Wirt hat a mächtiche Schnorres unter der Nas.',
+      beispiel_hd: 'Der Wirt hat einen mächtigen Schnurrbart unter der Nase.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-484',
+      ausdruck: 'Stippche',
+      hochdeutsch: 'kleiner Augenblick / Moment',
+      bedeutung: 'Ein „Stippche" ist im Hessischen ein kurzer Augenblick, ein winziger Moment. „Wart a Stippche, ich komm gleich!" sagt man, wenn man jemanden um etwas Geduld bittet. Das Wort mit der zärtlichen Verkleinerungsendung beschreibt eine ganz kleine Zeitspanne und gehört zum charmanten hessischen Zeitvokabular. Ein Stippche dauert nur einen Wimpernschlag.',
+      beispiel: 'Gib mer a Stippche, dann bin ich fertig.',
+      beispiel_hd: 'Gib mir einen kleinen Moment, dann bin ich fertig.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-485',
+      ausdruck: 'Schtumbe',
+      hochdeutsch: 'Stoß / Schubs',
+      bedeutung: 'Ein „Schtumbe" ist im Hessischen ein Stoß oder Schubs, den man jemandem gibt. „Gib mer kaan Schtumbe, ich fall sonst!" warnt man. Das Wort beschreibt den leichten oder kräftigen Anstoß mit der typischen hessischen Aussprache. Ein Schtumbe kann freundschaftlich gemeint sein oder aus Versehen passieren, wenn es im Gedränge mal eng wird.',
+      beispiel: 'Im Gedräng hat mer aaner a Schtumbe gegewwe.',
+      beispiel_hd: 'Im Gedränge hat mir einer einen Stoß gegeben.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-486',
+      ausdruck: 'Mauke',
+      hochdeutsch: 'Kartoffelbrei / Püree',
+      bedeutung: 'Die „Mauke" ist im nord- und osthessischen Raum der Kartoffelbrei oder das Kartoffelpüree. „Heut gibts Bratwurst mit Mauke!" freut man sich. Das deftige Gericht gehört zur traditionellen hessischen Hausmannskost und wird gern mit Soße, Würstchen oder Sauerkraut serviert. Die cremige Mauke ist ein Klassiker, der auf vielen hessischen Mittagstischen zu finden ist.',
+      beispiel: 'Zu de Klöß schmeckt a Portion Mauke prima.',
+      beispiel_hd: 'Zu den Klößen schmeckt eine Portion Kartoffelbrei prima.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-487',
+      ausdruck: 'Schlawittche',
+      hochdeutsch: 'Kragen / Genick (jemanden packen)',
+      bedeutung: 'Das „Schlawittche" meint im Hessischen den Kragen oder das Genick — meist in der Wendung „aaner am Schlawittche packe", also jemanden am Kragen fassen. „Pack ihn am Schlawittche!" sagt man. Das urige Wort beschreibt bildhaft das energische Zupacken und gehört zu den ausdrucksstarken hessischen Redewendungen, die eine handfeste, beherzte Geste anschaulich machen.',
+      beispiel: 'Der Lehrer hat de Strolch am Schlawittche genomme.',
+      beispiel_hd: 'Der Lehrer hat den Lausbub am Kragen genommen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-488',
+      ausdruck: 'Bachegucker',
+      hochdeutsch: 'neugieriger Mensch / Gaffer',
+      bedeutung: 'Ein „Bachegucker" ist im hessischen Raum ein neugieriger Mensch, der überall hinschaut und seine Nase in alles steckt — ein Gaffer, der nichts verpassen will. „Die alte Bachegucker stehe schon am Fenster!" Das Wort beschreibt liebevoll-spöttisch die Schaulustigen, die bei jedem Ereignis im Dorf sofort zur Stelle sind und alles ganz genau beobachten müssen.',
+      beispiel: 'Bei jedem Unfall sammle sich gleich die Bachegucker.',
+      beispiel_hd: 'Bei jedem Unfall sammeln sich gleich die Gaffer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-489',
+      ausdruck: 'Brimborium',
+      hochdeutsch: 'unnötiger Aufwand / Getue',
+      bedeutung: 'Das „Brimborium" ist im Hessischen unnötiges Getue, übertriebener Aufwand oder Drumherum um eine eigentlich einfache Sache. „Mach ned so a Brimborium drum!" winkt man ab. Das Wort stammt aus dem Französischen und ist im Hessischen geläufig. Es beschreibt den ganzen überflüssigen Zinnober und das Theater, das manche Leute um Belanglosigkeiten veranstalten.',
+      beispiel: 'Wege so ner Klaanigkeit a solches Brimborium!',
+      beispiel_hd: 'Wegen so einer Kleinigkeit ein solches Getue!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-490',
+      ausdruck: 'Schmeicheltäschsche',
+      hochdeutsch: 'Schmeichler / Schleimer',
+      bedeutung: 'Ein „Schmeicheltäschsche" ist im Hessischen ein Mensch, der gern schmeichelt und sich einschmeichelt, um etwas zu erreichen. „Du klaa Schmeicheltäschsche, was willste denn?" sagt man halb amüsiert. Das Wort ist liebevoll-spöttisch und beschreibt mit der hessischen Verkleinerungsform den charmanten Schleimer, der mit honigsüßen Worten sein Ziel zu erreichen versucht.',
+      beispiel: 'Des Schmeicheltäschsche will bestimmt widder ebbes habe.',
+      beispiel_hd: 'Der Schmeichler will bestimmt wieder etwas haben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-491',
+      ausdruck: 'Worschtsupp',
+      hochdeutsch: 'Wurstsuppe / Schlachtbrühe',
+      bedeutung: 'Die „Worschtsupp" ist im Hessischen die Wurstsuppe oder Schlachtbrühe, die beim Hausschlachten entsteht, wenn die Würste im Kessel gekocht werden. „Beim Schlachtfest gibts frische Worschtsupp!" Die kräftige, herzhafte Brühe ist eine ländliche Spezialität und gehört zur Tradition der hessischen Hausschlachtung. Mit etwas Brot serviert, wärmt sie an kalten Tagen herrlich von innen.',
+      beispiel: 'Nach\'m Schlachte gibts a deftige Worschtsupp.',
+      beispiel_hd: 'Nach dem Schlachten gibt es eine deftige Wurstsuppe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-492',
+      ausdruck: 'fott',
+      hochdeutsch: 'fort / weg',
+      bedeutung: 'Das hessische „fott" bedeutet „fort" oder „weg" — mit dem typisch weichen Doppel-„t". „Der is schon fott!" sagt man, wenn jemand bereits gegangen ist. Auch „Geh fott!" bedeutet „Geh weg!" oder drückt ungläubiges Erstaunen aus. Das Wort gehört zum hessischen Grundwortschatz und zeigt die charakteristische Lautverschiebung von „fort" zum knappen, runden „fott".',
+      beispiel: 'Wo is denn mei Schlüssel fott?',
+      beispiel_hd: 'Wo ist denn mein Schlüssel hin?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-493',
+      ausdruck: 'Schubbser',
+      hochdeutsch: 'kleiner Stoß / Anstoß',
+      bedeutung: 'Ein „Schubbser" ist im Hessischen ein kleiner Stoß oder Anstoß, ein freundlicher Schubs. „Gib mer a Schubbser, dann komm ich übern Zaun!" Das Wort beschreibt mit der hessischen Verdopplung des „b" den leichten Anstoß, der jemandem hilft oder ihn antreibt. Auch im übertragenen Sinn kann ein Schubbser eine kleine Ermutigung sein, etwas endlich anzupacken.',
+      beispiel: 'Mit a klaane Schubbser hat er\'s dann geschafft.',
+      beispiel_hd: 'Mit einem kleinen Anstoß hat er es dann geschafft.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-494',
+      ausdruck: 'Wingert',
+      hochdeutsch: 'Weinberg',
+      bedeutung: 'Der „Wingert" ist im Rheingau und in hessischen Weingegenden der Weinberg, in dem die Reben wachsen. „Mir schaffe heut im Wingert!" sagt der Winzer zur Lesezeit. Das alte Wort stammt aus dem Lateinischen (vinea) und ist tief in der hessischen Weinkultur verwurzelt. Im Herbst werden in den steilen Wingerten am Rhein die Trauben für den berühmten Riesling geerntet.',
+      beispiel: 'Im Herbst is im Wingert die meiste Arbeit.',
+      beispiel_hd: 'Im Herbst ist im Weinberg die meiste Arbeit.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-495',
+      ausdruck: 'Schunkelliedsche',
+      hochdeutsch: 'Schunkellied / Stimmungslied',
+      bedeutung: 'Ein „Schunkelliedsche" ist im Hessischen ein fröhliches Stimmungslied, zu dem man sich unterhakt und im Takt hin und her schunkelt. „Spiel a Schunkelliedsche!" ruft man dem Musiker auf der Kerb zu. Solche Lieder gehören zur hessischen Fest- und Wirtshauskultur und sorgen für ausgelassene Stimmung, wenn die ganze Runde Arm in Arm im Takt mitwiegt und mitsingt.',
+      beispiel: 'Bei dem Schunkelliedsche hält\'s kaan mehr uff\'m Stuhl.',
+      beispiel_hd: 'Bei dem Schunkellied hält es keinen mehr auf dem Stuhl.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'h-496',
+      ausdruck: 'Krawwel',
+      hochdeutsch: 'Gekrabbel / Wirrwarr / Durcheinander',
+      bedeutung: 'Der „Krawwel" ist im Hessischen ein Durcheinander, Gewimmel oder Wirrwarr — etwa wenn viele Leute durcheinanderlaufen. „Was is denn des für a Krawwel?" fragt man verwirrt. Das Wort beschreibt anschaulich das unübersichtliche Gewusel und Krabbeln und gehört zum hessischen Vokabular für chaotische Situationen, in denen man kaum noch durchblickt.',
+      beispiel: 'Uff\'m Markt is heut a richticher Krawwel.',
+      beispiel_hd: 'Auf dem Markt ist heute ein richtiges Gewimmel.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-497',
+      ausdruck: 'Schnüffche',
+      hochdeutsch: 'Schnäuzchen / Näschen',
+      bedeutung: 'Das „Schnüffche" ist im Hessischen das kleine Näschen oder Schnäuzchen — meist liebevoll auf Kinder oder Tiere bezogen. „Putz dir dei Schnüffche!" sagt man zärtlich zum erkälteten Kind. Mit der hessischen Verkleinerungsendung klingt das Wort herzlich und gehört zum liebevollen Körpervokabular, mit dem Eltern und Großeltern über ihre Kleinen sprechen.',
+      beispiel: 'Des Bobbelsche hat a rotes Schnüffche vom Schnupfe.',
+      beispiel_hd: 'Das Baby hat ein rotes Näschen vom Schnupfen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-498',
+      ausdruck: 'Latschari',
+      hochdeutsch: 'langsamer / träger Mensch',
+      bedeutung: 'Ein „Latschari" ist im hessischen Raum ein langsamer, träger oder energieloser Mensch, der lustlos herumlatscht. „Beweg dich, du Latschari!" treibt man jemanden an. Das Wort verbindet „latsche" (schlurfen) mit einer scherzhaften Endung und ist liebevoll-spöttisch gemeint. Ein Latschari nimmt das Leben gemächlich und lässt sich von niemandem zur Eile drängen.',
+      beispiel: 'Der Latschari kommt immer als Letzter an.',
+      beispiel_hd: 'Der Trödler kommt immer als Letzter an.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-499',
+      ausdruck: 'Quetschelatwerg',
+      hochdeutsch: 'Zwetschgenmus / Pflaumenmus',
+      bedeutung: 'Das „Quetschelatwerg" ist im Hessischen das Zwetschgenmus oder Pflaumenmus, das aus eingekochten Zwetschgen entsteht. „Aufs Brot streich ich mer Quetschelatwerg!" Das dunkle, süße Mus wird über Stunden eingekocht und ist eine traditionelle hessische Spezialität. „Latwerg" stammt vom lateinischen „electuarium" und zeigt, wie alte Wörter im hessischen Küchenvokabular überdauern.',
+      beispiel: 'Frisch Brot mit Quetschelatwerg is a Gedicht!',
+      beispiel_hd: 'Frisches Brot mit Pflaumenmus ist ein Gedicht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-500',
+      ausdruck: 'Bo ey!',
+      hochdeutsch: 'Boah! / Wow! (Ausruf)',
+      bedeutung: 'Der Ausruf „Bo ey!" ist im hessischen Raum, besonders bei jüngeren Leuten, ein Ausdruck des Staunens, der Begeisterung oder der Empörung. „Bo ey, hast du des gesehe?" Der knappe Ausruf verbindet das gedehnte „Bo" mit dem typischen „ey" und gehört zur lebendigen Alltagssprache der Mainmetropole. Je nach Tonfall drückt er Bewunderung oder Ärger aus.',
+      beispiel: 'Bo ey, des is ja der Wahnsinn!',
+      beispiel_hd: 'Boah, das ist ja der Wahnsinn!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-501',
+      ausdruck: 'Krombeerschnitz',
+      hochdeutsch: 'Kartoffelschnitze / Bratkartoffelstücke',
+      bedeutung: 'Die „Krombeerschnitz" sind im Hessischen Kartoffelschnitze — in Spalten geschnittene Kartoffeln, die gebraten oder im Ofen gegart werden. „Zu de Worscht gibts Krombeerschnitz!" Das Wort verbindet „Grumbeer/Krombeer" (Kartoffel) mit „Schnitz" (Spalte) und gehört zum bodenständigen hessischen Küchenvokabular. Knusprig gebraten sind die Krombeerschnitz eine beliebte Beilage.',
+      beispiel: 'Die Krombeerschnitz ausm Ofe sin schön knusprig.',
+      beispiel_hd: 'Die Kartoffelschnitze aus dem Ofen sind schön knusprig.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-502',
+      ausdruck: 'Schääl',
+      hochdeutsch: 'schielend / scheel blickend',
+      bedeutung: 'Wer „schääl" guckt, schaut im Hessischen schielend, schräg oder misstrauisch — entweder im wörtlichen Sinn oder als neidisch-argwöhnischer Blick. „Was guckst du so schääl?" fragt man. Das Wort beschreibt sowohl ein körperliches Schielen als auch den schiefen, missgünstigen Blick. Mit der gedehnten hessischen Aussprache klingt es besonders ausdrucksvoll und bildhaft.',
+      beispiel: 'Guck ned so schääl, ich hab nix gemacht!',
+      beispiel_hd: 'Schau nicht so scheel, ich habe nichts gemacht!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-503',
+      ausdruck: 'Hoschd',
+      hochdeutsch: 'Husten',
+      bedeutung: 'Der „Hoschd" ist im Hessischen der Husten — mit dem typisch hessischen „sch"-Laut. „Ich hab a fürchterliche Hoschd!" klagt man bei einer Erkältung. Das Wort gehört zum hessischen Gesundheitsvokabular und zeigt schön die charakteristische Lautfärbung. Im Winter geht der Hoschd in vielen hessischen Stuben um, und man kuriert ihn gern mit heißem Tee und Honig.',
+      beispiel: 'Mit dem Hoschd bleibste heut besser daheim.',
+      beispiel_hd: 'Mit dem Husten bleibst du heute besser zu Hause.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-504',
+      ausdruck: 'Bremme',
+      hochdeutsch: 'Bremse (Insekt)',
+      bedeutung: 'Die „Bremme" ist im Hessischen die Bremse — die stechende Fliege, die im Sommer Mensch und Vieh plagt. „Die Bremme beiße heut wie verrückt!" klagt man auf der Weide. Das Wort gehört zum hessischen Naturvokabular und beschreibt das lästige Insekt, dessen schmerzhafter Stich besonders an heißen, schwülen Tagen gefürchtet ist. Mit der weichen Endung klingt sie fast harmlos.',
+      beispiel: 'Bei der Hitz fliege die Bremme um die Kuh.',
+      beispiel_hd: 'Bei der Hitze fliegen die Bremsen um die Kuh.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-505',
+      ausdruck: 'Stippvisit',
+      hochdeutsch: 'kurzer Besuch',
+      bedeutung: 'Eine „Stippvisit" ist im Hessischen ein kurzer, schneller Besuch — man schaut nur kurz vorbei. „Ich mach heut nur a Stippvisit bei der Oma." Das Wort verbindet „stippe" (kurz eintauchen) mit „Visite" und beschreibt den flüchtigen Besuch, bei dem man nicht lange bleibt. Eine Stippvisit ist herzlich gemeint, aber zeitlich knapp bemessen.',
+      beispiel: 'Komm wenigstens uff a Stippvisit vorbei!',
+      beispiel_hd: 'Komm wenigstens auf einen kurzen Besuch vorbei!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-506',
+      ausdruck: 'Brummbär',
+      hochdeutsch: 'mürrischer Mensch / Griesgram',
+      bedeutung: 'Ein „Brummbär" ist im Hessischen ein mürrischer, grantiger Mensch, der oft brummt und schlecht gelaunt ist. „Sei doch kaa Brummbär!" muntert man jemanden auf. Das Wort vergleicht den Griesgram liebevoll-spöttisch mit einem brummenden Bären. Hinter der mürrischen Fassade steckt oft ein gutes Herz — der Brummbär ist nicht böse, nur eben grummelig und wortkarg.',
+      beispiel: 'Mei Onkel is morgens immer a richticher Brummbär.',
+      beispiel_hd: 'Mein Onkel ist morgens immer ein richtiger Griesgram.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-507',
+      ausdruck: 'Schoppeglas',
+      hochdeutsch: 'Apfelweinglas / Geripptes',
+      bedeutung: 'Das „Schoppeglas" ist im Hessischen das geriffelte Glas, aus dem man den Apfelwein trinkt — auch „Geripptes" genannt. „Reich mer mol a Schoppeglas!" Die typische Rautenstruktur des Glases reflektiert das Licht und sorgt für besseren Halt mit fettigen Fingern. Das Schoppeglas fasst genau einen Schoppen und gehört untrennbar zur hessischen Apfelweinkultur.',
+      beispiel: 'Aus\'m Schoppeglas schmeckt der Ebbelwoi am beste.',
+      beispiel_hd: 'Aus dem Apfelweinglas schmeckt der Apfelwein am besten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-508',
+      ausdruck: 'Heckmeck',
+      hochdeutsch: 'unnötiges Gerede / Aufhebens',
+      bedeutung: 'Der „Heckmeck" ist im Hessischen unnötiges Gerede, Durcheinander oder überflüssiges Aufhebens um eine Sache. „Mach ned so a Heckmeck!" winkt man genervt ab. Das lautmalerische Wort beschreibt den ganzen Wirbel und das Theater, das manche Leute um Kleinigkeiten veranstalten. Es gehört zum hessischen Vokabular für übertriebenes Getue und sinnloses Hin und Her.',
+      beispiel: 'Wege dem bissje Heckmeck reg ich mich ned uff.',
+      beispiel_hd: 'Wegen dem bisschen Gewese rege ich mich nicht auf.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-509',
+      ausdruck: 'Knöterich',
+      hochdeutsch: 'eigensinniger / widerspenstiger Mensch',
+      bedeutung: 'Ein „Knöterich" ist im Hessischen ein eigensinniger, widerspenstiger Mensch, der sich querstellt und nicht nachgibt — benannt nach der zähen, wuchernden Pflanze. „Mit dem Knöterich kann mer ned rede!" Das Wort beschreibt jemanden, der so verbissen und zäh an seiner Meinung festhält wie der Knöterich, der sich durch jeden Garten rankt und kaum auszurotten ist.',
+      beispiel: 'Der alt Knöterich gibt einfach kaa Ruh.',
+      beispiel_hd: 'Der alte Sturkopf gibt einfach keine Ruhe.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-510',
+      ausdruck: 'Schnuckelche',
+      hochdeutsch: 'Liebling / Süßer (Kosename)',
+      bedeutung: 'Ein „Schnuckelche" ist im Hessischen ein liebevoller Kosename für eine vertraute, geliebte Person oder ein niedliches Kind. „Komm her, mei Schnuckelche!" sagt man zärtlich. Das Wort mit der hessischen Verkleinerungsendung drückt Zuneigung und Herzlichkeit aus und gehört zum liebevollen Vokabular zwischen Partnern oder Eltern und Kindern. Ein Schnuckelche ist einfach zum Liebhaben.',
+      beispiel: 'Mei klaa Schnuckelche schläft schon ganz fest.',
+      beispiel_hd: 'Mein kleiner Liebling schläft schon ganz fest.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'h-511',
+      ausdruck: 'Kappeszeit',
+      hochdeutsch: 'Krautzeit / Erntezeit des Kohls',
+      bedeutung: 'Die „Kappeszeit" ist im Hessischen die Zeit der Kohlernte im Herbst, wenn der Kappes (Weißkohl) reif ist und eingemacht wird. „In der Kappeszeit wird Sauerkraut gemacht!" Traditionell hobelte man den Kohl und legte ihn in großen Fässern zum Gären ein. Die Kappeszeit gehört zum bäuerlichen Jahreskreis und sicherte früher die Vitaminversorgung über den Winter.',
+      beispiel: 'In der Kappeszeit riecht\'s im ganze Dorf nach Kraut.',
+      beispiel_hd: 'In der Krautzeit riecht es im ganzen Dorf nach Kohl.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-512',
+      ausdruck: 'Schorschbembel',
+      hochdeutsch: 'gemütlicher hessischer Stammtischbruder',
+      bedeutung: 'Ein „Schorschbembel" ist im Frankfurter Raum scherzhaft der gemütliche, bodenständige Hesse am Stammtisch, der gern seinen Bembel leert — eine liebevolle Personifikation des typischen Apfelwein-Hessen. „Der is a echter Schorschbembel!" Das Wort verbindet den Namen Schorsch mit dem Bembel und feiert augenzwinkernd den geselligen, trinkfreudigen Stammgast hessischer Wirtschaften.',
+      beispiel: 'Am Stammtisch sitze die alte Schorschbembel.',
+      beispiel_hd: 'Am Stammtisch sitzen die alten Apfelwein-Brüder.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-513',
+      ausdruck: 'verhaspele',
+      hochdeutsch: 'sich verheddern / verhaspeln',
+      bedeutung: 'Sich „verhaspele" bedeutet im Hessischen, sich beim Reden zu verheddern, ins Stocken zu geraten oder durcheinanderzukommen. „Vor Aufregung hab ich mich glatt verhaspelt!" Das Wort beschreibt das Stolpern über die eigenen Worte, wenn man zu schnell oder zu nervös spricht. Es gehört zum hessischen Alltagsvokabular und passiert jedem mal, der aufgeregt zu viel auf einmal sagen will.',
+      beispiel: 'Bei der Red hab ich mich total verhaspelt.',
+      beispiel_hd: 'Bei der Rede habe ich mich total verheddert.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'h-514',
+      ausdruck: 'Eemerche',
+      hochdeutsch: 'Eimerchen / kleiner Eimer',
+      bedeutung: 'Ein „Eemerche" ist im Hessischen ein kleiner Eimer — etwa das Sandeimerchen der Kinder oder ein kleines Gefäß. „Hol des Eemerche fürs Wasser!" sagt man. Mit der hessischen Verkleinerungsendung „-erche" und der gedehnten Aussprache von „Eimer" zu „Eemer" klingt das Wort besonders liebevoll. Das Eemerche gehört zum alltäglichen Vokabular in Haus, Hof und Garten.',
+      beispiel: 'Des Kind buddelt mit\'m Eemerche im Sand.',
+      beispiel_hd: 'Das Kind buddelt mit dem Eimerchen im Sand.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-515',
+      ausdruck: 'Schlotzer',
+      hochdeutsch: 'Lutscher / Schnuller',
+      bedeutung: 'Ein „Schlotzer" ist im hessischen Raum ein Lutscher, eine Süßigkeit zum Lutschen oder auch der Schnuller eines Babys. „Des Kind will sei Schlotzer!" Das Wort kommt von „schlotze" (lutschen, schlürfen) und gehört zum hessischen Vokabular rund um Kinder und Süßes. Mancherorts meint der Schlotzer auch einen Bonbon am Stiel, an dem die Kleinen genüsslich lecken.',
+      beispiel: 'Ohne sei Schlotzer schläft des Bobbelsche ned ei.',
+      beispiel_hd: 'Ohne seinen Schnuller schläft das Baby nicht ein.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-516',
+      ausdruck: 'Boppelmatz',
+      hochdeutsch: 'pummeliges Kind / Knirps',
+      bedeutung: 'Ein „Boppelmatz" ist im Hessischen ein kleines, rundliches, pummeliges Kind — ein liebevoller Kosename für einen niedlichen Knirps. „Komm her, du klaaner Boppelmatz!" sagt man zärtlich. Das Wort verbindet „Boppel/Bobbel" (Knirps) mit „Matz" und drückt Zuneigung aus. Ein Boppelmatz ist ein kugelrundes, gemütliches Kind, das man einfach knuddeln möchte.',
+      beispiel: 'Unser Klaaner is a richticher Boppelmatz geworde.',
+      beispiel_hd: 'Unser Kleiner ist ein richtiger Pummel geworden.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-517',
+      ausdruck: 'Schnegg',
+      hochdeutsch: 'Schnecke (Gebäck) / hübsches Mädchen',
+      bedeutung: 'Ein „Schnegg" ist im Hessischen einerseits ein schneckenförmiges Hefegebäck, andererseits umgangssprachlich ein hübsches Mädchen. „A süßer Schnegg!" kann beides meinen. Das Wort mit dem weichen hessischen „gg" gehört sowohl zur Bäckersprache als auch zur lockeren Alltagssprache. Auf dem Kaffeetisch ist der Schnegg eine süße Verlockung mit Rosinen und Zucker.',
+      beispiel: 'Zum Kaffee hol ich uns a paar Schnegg vom Bäcker.',
+      beispiel_hd: 'Zum Kaffee hole ich uns ein paar Hefeschnecken vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-518',
+      ausdruck: 'Hessebub',
+      hochdeutsch: 'echter hessischer Junge',
+      bedeutung: 'Ein „Hessebub" ist ein waschechter hessischer Junge — bodenständig, treu und mit Apfelwein im Blut. „Mei Sohn is a echter Hessebub!" sagt man stolz. Das Wort verbindet „Hesse" mit „Bub" (Junge) und drückt heimatverbundenen Stolz aus. Ein Hessebub wächst mit dem Dialekt, der Eintracht und dem Ebbelwoi auf und trägt die hessische Lebensart selbstbewusst weiter.',
+      beispiel: 'Der klaa Hessebub babbelt schon richtig Dialekt.',
+      beispiel_hd: 'Der kleine Hessenjunge spricht schon richtig Dialekt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-519',
+      ausdruck: 'Schnüsch',
+      hochdeutsch: 'Gemüseeintopf / Allerlei',
+      bedeutung: 'Der „Schnüsch" ist im nordhessischen Raum ein einfacher Gemüseeintopf aus allem, was Garten und Vorratskammer hergeben — ein buntes Allerlei. „Heut koch ich a großer Schnüsch!" Das Wort bezeichnet das resteverwertende Eintopfgericht, das je nach Jahreszeit unterschiedlich ausfällt. Der deftige Schnüsch gehört zur sparsamen, bodenständigen hessischen Landküche.',
+      beispiel: 'Im Schnüsch is alles drin, was der Garte hergibt.',
+      beispiel_hd: 'Im Gemüseeintopf ist alles drin, was der Garten hergibt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-520',
+      ausdruck: 'Räuberzivil',
+      hochdeutsch: 'lässige Alltagskleidung / legere Kleidung',
+      bedeutung: 'Das „Räuberzivil" ist im Hessischen die legere, bequeme Alltagskleidung, in der man sich daheim oder bei der Gartenarbeit zeigt — nichts Feines, sondern praktisch und abgetragen. „Ich bin noch im Räuberzivil, komm ned rein!" Das humorvolle Wort beschreibt den ungezwungenen Aufzug fernab jeder Eleganz und gehört zum augenzwinkernden hessischen Alltagsvokabular.',
+      beispiel: 'Im Garte lauf ich nur im Räuberzivil rum.',
+      beispiel_hd: 'Im Garten laufe ich nur in legerer Kleidung herum.',
+      kategorie: 'alltag'
     }
   ]
 };

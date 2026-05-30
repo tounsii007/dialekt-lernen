@@ -3277,6 +3277,1086 @@ export default {
       beispiel: 'Im Späti-Kanon findet jeder das Richtige!',
       beispiel_hd: 'Im Späti-Sortiment findet jeder das Richtige!',
       kategorie: 'essen'
+    },
+    {
+      id: 'b-411',
+      ausdruck: 'wa',
+      hochdeutsch: 'nicht wahr? / oder?',
+      bedeutung: 'Das berlinerische Bestätigungswörtchen „wa" hängt man hinten an einen Satz, um Zustimmung einzufordern — wie hochdeutsch „nicht wahr?" oder „oder?". „Det is doch Quatsch, wa?" Es ist eine geschliffene Kurzform von „nicht wahr" und gehört zur typischen Berliner Schnauze dazu. Man hört es an jeder Ecke.',
+      beispiel: 'Det war \'n langer Tag, wa?',
+      beispiel_hd: 'Das war ein langer Tag, nicht wahr?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-412',
+      ausdruck: 'keene',
+      hochdeutsch: 'keine',
+      bedeutung: 'Im Berlinischen wird aus „keine" oft „keene" — die typische Monophthongierung, bei der „ei" zu einem langen „ee" wird, wie auch in „een" für „ein" oder „kleen" für „klein". „Ick hab keene Lust" hört man ständig. Ein Kennzeichen des echten Berliner Lautstands.',
+      beispiel: 'Ick hab heut keene Kohle mehr.',
+      beispiel_hd: 'Ich habe heute kein Geld mehr.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-413',
+      ausdruck: 'Zaster',
+      hochdeutsch: 'Geld',
+      bedeutung: '„Zaster" ist im Berlinischen ein saloppes Wort für Geld, Moneten, Kohle. „Ohne Zaster läuft hier nüscht." Das Wort stammt aus dem Romanes (über das Rotwelsch) und bezeichnete ursprünglich Eisen oder Metallgeld. Es reiht sich ein in die lange Berliner Sammlung von Ausdrücken fürs liebe Geld wie Pinke, Penunse und Knete.',
+      beispiel: 'Für die Miete fehlt mir noch der Zaster.',
+      beispiel_hd: 'Für die Miete fehlt mir noch das Geld.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-414',
+      ausdruck: 'Jör',
+      hochdeutsch: 'Kind / Göre',
+      bedeutung: 'Ein „Jör" (auch „Jöre") ist im Berlinischen ein Kind, oft ein freches oder lebhaftes. Die berlinerische Form von „Göre" mit dem typischen weichen „j". „Die kleen Jören tollen uffm Hof rum." Mal abwertend, mal liebevoll gebraucht — je nach Tonfall der Berliner Schnauze.',
+      beispiel: 'Die Jören spieln den ganzen Tach uffm Hof.',
+      beispiel_hd: 'Die Kinder spielen den ganzen Tag auf dem Hof.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-415',
+      ausdruck: 'dette',
+      hochdeutsch: 'das da / dieses',
+      bedeutung: 'Eine betonte, hinweisende Form von „det" — „dette" zeigt nachdrücklich auf etwas, wie hochdeutsch „das da". Berühmt aus dem Spruch „Icke, dette, kieke mal, Oogen, Fleesch und Beene". „Dette will ick haben!" Gehört zum festen Bestand der Berliner Mundart.',
+      beispiel: 'Dette da, det will ick kaufen!',
+      beispiel_hd: 'Das da, das will ich kaufen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-416',
+      ausdruck: 'Buletten',
+      hochdeutsch: 'Frikadellen',
+      bedeutung: 'Die Berliner „Buletten" sind gebratene Hackfleischklöße, anderswo Frikadellen oder Fleischpflanzerl genannt. Das Wort kommt vom französischen „boulette" (Kügelchen). „Buletten mit Kartoffelsalat" ist ein Berliner Klassiker schlechthin. Kalt aus der Pfanne schmecken die Buletten den meisten Berlinern fast am besten.',
+      beispiel: 'Mutti hat heute Buletten jebraten, lecker!',
+      beispiel_hd: 'Mutti hat heute Frikadellen gebraten, lecker!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-417',
+      ausdruck: 'Stippe',
+      hochdeutsch: 'Soße / Tunke',
+      bedeutung: 'Eine „Stippe" ist im Berlinischen eine Soße oder Tunke zum Eintunken, oft eine einfache Mehlschwitze. „Gib ma die Stippe übern Klops!" Das Wort kommt von „stippen" (eintauchen). In der traditionellen Berliner Küche gehört zu vielen Gerichten eine kräftige Stippe dazu.',
+      beispiel: 'Tu ma noch \'n bisken Stippe übers Fleesch.',
+      beispiel_hd: 'Tu mal noch ein bisschen Soße über das Fleisch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-418',
+      ausdruck: 'Plinse',
+      hochdeutsch: 'Eierkuchen / Pfannkuchen',
+      bedeutung: 'Eine „Plinse" ist im Berlinischen und Ostdeutschen ein dünner Eierkuchen aus der Pfanne — das, was in Berlin gerade NICHT „Pfannkuchen" heißt (denn das ist der Krapfen). Das Wort stammt aus dem Slawischen. „Plinsen mit Apfelmus" sind ein beliebtes süßes Essen bei Berliner Kindern.',
+      beispiel: 'Oma backt uns Plinsen mit Zucker und Zimt.',
+      beispiel_hd: 'Oma backt uns Eierkuchen mit Zucker und Zimt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-419',
+      ausdruck: 'Kniffte',
+      hochdeutsch: 'belegtes Brot / Stulle',
+      bedeutung: 'Eine „Kniffte" ist im Berlinischen ein dick belegtes Butterbrot, eine herzhafte Stulle für unterwegs oder die Pause. „Ick schmier mir \'ne Kniffte für die Arbeit." Das Wort gehört zum alten Berliner Arbeitervokabular und steht für eine ordentliche, sättigende Brotzeit.',
+      beispiel: 'Ick nehm mir \'ne Kniffte mit uff Arbeit.',
+      beispiel_hd: 'Ich nehme mir ein belegtes Brot mit zur Arbeit.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-420',
+      ausdruck: 'Fisematenten',
+      hochdeutsch: 'Unsinn / Umstände',
+      bedeutung: '„Fisematenten" sind im Berlinischen Unsinn, faule Ausreden oder unnötige Umstände. „Mach keene Fisematenten!" heißt so viel wie „Mach keinen Quatsch" oder „Trödel nicht rum". Ein altes, urberlinerisches Wort, um das sich allerlei Legenden ranken. Heute meist als Aufforderung zur Sachlichkeit gebraucht.',
+      beispiel: 'Nu mach keene Fisematenten und komm endlich!',
+      beispiel_hd: 'Nun mach keinen Unsinn und komm endlich!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-421',
+      ausdruck: 'Lulatsch',
+      hochdeutsch: 'großer, schlaksiger Mensch',
+      bedeutung: 'Ein „Lulatsch" ist im Berlinischen ein langer, schlaksiger, oft etwas unbeholfen wirkender Mensch. „Der lange Lulatsch" ist sogar der Spitzname des Berliner Funkturms. „So \'n Lulatsch passt durch keene Tür." Meist gutmütig-spöttisch gemeint für jemanden auffällig großen Wuchses.',
+      beispiel: 'Der lange Lulatsch stößt sich überall den Kopp.',
+      beispiel_hd: 'Der lange Schlaks stößt sich überall den Kopf.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-422',
+      ausdruck: 'Drömel',
+      hochdeutsch: 'langsamer, träger Mensch',
+      bedeutung: 'Ein „Drömel" ist im Berlinischen ein langsamer, verträumter, schwerfälliger Mensch — einer, der trödelt und nicht in die Gänge kommt. „Nu komm, du oller Drömel!" Verwandt mit „drömeln" (langsam tun). Eine typisch berlinerische, gutmütig-genervte Bezeichnung für einen Bummelanten.',
+      beispiel: 'Nu beeil dir, du oller Drömel, wir komm zu spät!',
+      beispiel_hd: 'Nun beeil dich, du langsamer Mensch, wir kommen zu spät!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-423',
+      ausdruck: 'pofen',
+      hochdeutsch: 'schlafen',
+      bedeutung: '„Pofen" heißt im Berlinischen schlafen, pennen, in den Federn liegen. „Ick muss erstma \'ne Runde pofen." Ein umgangssprachliches Wort, das man in ganz Berlin hört, besonders wenn jemand müde ist oder ausschlafen will. Am Wochenende wird in Berlin gern lange gepoft.',
+      beispiel: 'Am Sonntach pof ick bis Mittach.',
+      beispiel_hd: 'Am Sonntag schlafe ich bis Mittag.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-424',
+      ausdruck: 'Maloche',
+      hochdeutsch: 'harte Arbeit',
+      bedeutung: 'Die „Maloche" ist im Berlinischen die harte, schweißtreibende Arbeit, die Schufterei. „Nach der Maloche jeht\'s ab in die Kneipe." Das Wort stammt aus dem Jiddischen (melocho = Arbeit) und kam übers Rotwelsch ins Berlinische. „Malochen" gehen heißt: hart arbeiten gehen.',
+      beispiel: 'Nach der Maloche jönn ick mir \'n Bier.',
+      beispiel_hd: 'Nach der harten Arbeit gönne ich mir ein Bier.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-425',
+      ausdruck: 'Penunse',
+      hochdeutsch: 'Geld',
+      bedeutung: '„Penunse" ist im Berlinischen ein saloppes Wort für Geld, Kohle, Moneten. „Ohne Penunse läuft hier nüscht." Das Wort kam wohl übers Polnische ins Berlinische. Es reiht sich ein in die vielen Berliner Ausdrücke fürs liebe Geld wie Pinke, Kohle und Knete.',
+      beispiel: 'Hast du noch \'n bisken Penunse für die Molle?',
+      beispiel_hd: 'Hast du noch ein bisschen Geld für das Bier?',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-426',
+      ausdruck: 'dösig',
+      hochdeutsch: 'benommen / verschlafen',
+      bedeutung: '„Dösig" ist man im Berlinischen, wenn man benommen, verschlafen oder leicht benebelt ist — etwa morgens nach dem Aufstehen oder bei drückender Hitze. „Mir is janz dösig im Kopp." Verwandt mit „dösen". Ein bildhaftes Wort für einen Zustand zwischen wach und müde.',
+      beispiel: 'Bei der Hitze werd ick janz dösig.',
+      beispiel_hd: 'Bei der Hitze werde ich ganz benommen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-427',
+      ausdruck: 'fuchsteufelswild',
+      hochdeutsch: 'sehr wütend',
+      bedeutung: 'Wer „fuchsteufelswild" ist, ist im Berlinischen außer sich vor Wut, rasend zornig. „Da werd ick ja fuchsteufelswild!" Eine bildkräftige Steigerung von „wild", die Fuchs und Teufel als Sinnbilder der Wut zusammenspannt. Drückt die höchste Stufe der Erregung anschaulich aus.',
+      beispiel: 'Wenn die BVG streikt, werd ick fuchsteufelswild.',
+      beispiel_hd: 'Wenn die BVG streikt, werde ich rasend wütend.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-428',
+      ausdruck: 'Töffel',
+      hochdeutsch: 'Tollpatsch / einfältiger Mensch',
+      bedeutung: 'Ein „Töffel" ist im Berlinischen ein ungeschickter, etwas einfältiger oder begriffsstutziger Mensch. „So \'n oller Töffel!" Meist nicht bösartig, sondern kopfschüttelnd-spöttisch gemeint. Gehört zur reichen Berliner Sammlung gutmütiger Schimpfnamen für Tollpatsche und Trottel.',
+      beispiel: 'Der Töffel hat schon wieder die Milch vajessen.',
+      beispiel_hd: 'Der Tollpatsch hat schon wieder die Milch vergessen.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-429',
+      ausdruck: 'Quatschkopp',
+      hochdeutsch: 'Schwätzer / Dummschwätzer',
+      bedeutung: 'Ein „Quatschkopp" ist im Berlinischen jemand, der viel Unsinn redet, ein Schwätzer oder Dummschwätzer. „Hör nich uff den Quatschkopp!" Zusammengesetzt aus „Quatsch" und „Kopp" (Kopf). Eine typisch berlinerische, abwertend-spöttische Bezeichnung für jemanden, der nur dummes Zeug von sich gibt.',
+      beispiel: 'Der Quatschkopp labert den janzen Tach Mist.',
+      beispiel_hd: 'Der Schwätzer redet den ganzen Tag Unsinn.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-430',
+      ausdruck: 'Klötenkopp',
+      hochdeutsch: 'Dummkopf',
+      bedeutung: 'Ein „Klötenkopp" ist im Berlinischen ein Dummkopf, einer, der nichts auf die Reihe kriegt. Ein derberes, urberlinerisches Schimpfwort. „Du oller Klötenkopp!" Gehört zum norddeutsch-berlinerischen Schatz kerniger Schimpfnamen und wird meist mehr aus Ärger als aus echter Bosheit gebraucht.',
+      beispiel: 'Du Klötenkopp hast den Schlüssel vajessen!',
+      beispiel_hd: 'Du Dummkopf hast den Schlüssel vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-431',
+      ausdruck: 'Mäkse',
+      hochdeutsch: 'Mucken / Widerworte',
+      bedeutung: '„Mäkse" sind im Berlinischen Mucken, Faxen oder Widerworte. „Mach keene Mäkse!" heißt: Stell dich nicht an, mach keine Umstände, gehorche. Ein altes Berliner Wort, das man Kindern oder Widerspenstigen entgegenhält, damit sie endlich Ruhe geben und tun, was man sagt.',
+      beispiel: 'Mach keene Mäkse und iss uff!',
+      beispiel_hd: 'Mach keine Mucken und iss auf!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-432',
+      ausdruck: 'Töle',
+      hochdeutsch: 'Hund / Köter',
+      bedeutung: 'Eine „Töle" ist im Berlinischen ein Hund, meist abwertend für einen Köter oder Straßenköter. „Die Töle kläfft die janze Nacht." Mal genervt, mal beiläufig gebraucht. Ein urberlinerisches Wort, das den Hund nicht als edles Tier, sondern als lästigen Bello betrachtet.',
+      beispiel: 'Die Töle vom Nachbarn bellt schon wieder.',
+      beispiel_hd: 'Der Köter vom Nachbarn bellt schon wieder.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-433',
+      ausdruck: 'pladdern',
+      hochdeutsch: 'stark regnen',
+      bedeutung: '„Pladdern" heißt im Berlinischen und Norddeutschen: in Strömen regnen, schütten. „Draußen pladdert\'s wie verrückt." Ein lautmalerisches Wort, das den Klang des prasselnden Regens nachahmt. Wenn es in Berlin so richtig pladdert, bleibt man besser im Trockenen.',
+      beispiel: 'Heut pladdert\'s den janzen Tach, so \'n Mist.',
+      beispiel_hd: 'Heute regnet es den ganzen Tag stark, so ein Mist.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-434',
+      ausdruck: 'Plinscherei',
+      hochdeutsch: 'Planscherei / Herumspritzen im Wasser',
+      bedeutung: 'Eine „Plinscherei" ist im Berlinischen das Planschen und Herumspritzen im Wasser, etwa im Freibad oder am See. „Im Sommer jibt\'s im Strandbad \'ne große Plinscherei." Verwandt mit „plinschern" (planschen). Ein heiteres Wort für das vergnügte Wasserspiel an heißen Berliner Sommertagen.',
+      beispiel: 'Am Müggelsee jibt\'s heut \'ne fröhliche Plinscherei.',
+      beispiel_hd: 'Am Müggelsee gibt es heute ein fröhliches Planschen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-435',
+      ausdruck: 'Töfftöff',
+      hochdeutsch: 'Auto (Kindersprache)',
+      bedeutung: '„Töfftöff" ist im Berlinischen ein lautmalerisches, kindersprachliches Wort fürs Auto, nach dem Geräusch des Motors. „Kiek mal, da fährt \'n Töfftöff!" Erwachsene benutzen es oft scherzhaft, wenn sie mit kleinen Kindern reden. Ein liebevoll-verspieltes Wort aus dem Familienalltag.',
+      beispiel: 'Kiek mal Schätzchen, da kommt \'n Töfftöff!',
+      beispiel_hd: 'Schau mal Schatz, da kommt ein Auto!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-436',
+      ausdruck: 'Pellkartoffeln',
+      hochdeutsch: 'Pellkartoffeln',
+      bedeutung: 'In Berlin sind „Pellkartoffeln mit Quark und Leinöl" ein traditionelles, einfaches Gericht — mit der Schale gekochte Kartoffeln, die man am Tisch pellt. „Pellkartoffeln und Stippe, mehr braucht\'s nich." Ein deftiger Klassiker der bodenständigen Berliner und Brandenburger Küche, schlicht und sättigend.',
+      beispiel: 'Heut Abend jibt\'s Pellkartoffeln mit Quark.',
+      beispiel_hd: 'Heute Abend gibt es Pellkartoffeln mit Quark.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-437',
+      ausdruck: 'Mollenfriedhof',
+      hochdeutsch: 'Bierbauch',
+      bedeutung: 'Ein „Mollenfriedhof" ist im Berlinischen scherzhaft der Bierbauch — dorthin wandern die vielen „Mollen" (Gläser Bier). „Der hat \'n ordentlichen Mollenfriedhof!" Ein typisch berlinerisch-bildhafter Spott, der die Vorliebe fürs Bier mit dem stattlichen Bauch in Verbindung bringt.',
+      beispiel: 'Der Wirt hat sich \'n schönen Mollenfriedhof anjefuttert.',
+      beispiel_hd: 'Der Wirt hat sich einen schönen Bierbauch angefuttert.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-438',
+      ausdruck: 'Riecher',
+      hochdeutsch: 'Nase / gutes Gespür',
+      bedeutung: 'Der „Riecher" ist im Berlinischen die Nase, aber auch das gute Gespür für etwas. „Der hat \'n Riecher für jute Jeschäfte." Man kann jemandem also „eens uffn Riecher jeben" (auf die Nase) oder einen feinen Riecher haben. Ein doppeldeutiges, bildkräftiges Berliner Wort.',
+      beispiel: 'Du hast echt \'n Riecher für die besten Spätis.',
+      beispiel_hd: 'Du hast echt ein Gespür für die besten Spätis.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-439',
+      ausdruck: 'Quadratlatschen',
+      hochdeutsch: 'große Füße',
+      bedeutung: '„Quadratlatschen" sind im Berlinischen auffällig große Füße — oder die entsprechend großen Schuhe. „Mit deine Quadratlatschen trittst du allen uff die Zehen." Ein spöttisch-übertreibendes Wort, das die Füße als riesige, eckige Trampler darstellt. Typischer Berliner Humor über die eigene Statur.',
+      beispiel: 'Mit deine Quadratlatschen passte in keen Schuh.',
+      beispiel_hd: 'Mit deinen großen Füßen passt du in keinen Schuh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-440',
+      ausdruck: 'Hackebeil',
+      hochdeutsch: 'Beil / harter Mensch',
+      bedeutung: 'Ein „Hackebeil" ist im Berlinischen wörtlich ein Beil, übertragen aber auch ein harter, kompromissloser Mensch oder eine schroffe Frau. „Die Cheffin is \'n richtjet Hackebeil." Ein bildhaftes Wort, das Schärfe und Unnachgiebigkeit ausdrückt — ganz im Stil der direkten Berliner Schnauze.',
+      beispiel: 'Unsere Vermieterin is \'n richtjet Hackebeil.',
+      beispiel_hd: 'Unsere Vermieterin ist ein richtig harter Mensch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-441',
+      ausdruck: 'Töchterken',
+      hochdeutsch: 'Töchterchen',
+      bedeutung: 'Ein „Töchterken" ist im Berlinischen die liebevolle Verkleinerung von Tochter — das Töchterchen. Die berlinerische Koseendung „-ken" hängt man gern an: „Mein kleenet Töchterken." Drückt Zärtlichkeit und Stolz aus und gehört zur warmen, familiären Seite der sonst so frechen Berliner Schnauze.',
+      beispiel: 'Mein Töchterken jeht jetzt schon zur Schule.',
+      beispiel_hd: 'Mein Töchterchen geht jetzt schon zur Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-442',
+      ausdruck: 'Sippschaft',
+      hochdeutsch: 'Verwandtschaft / Sippe',
+      bedeutung: 'Die „Sippschaft" ist im Berlinischen die ganze Verwandtschaft, die Sippe — oft leicht spöttisch für eine große, lautstarke Familie. „Die janze Sippschaft kommt zu Besuch." Mal liebevoll, mal genervt gebraucht, je nach Tonfall. Ein Wort, das Familienbande mit einem Augenzwinkern beschreibt.',
+      beispiel: 'Zu Weihnachten kommt die janze Sippschaft an.',
+      beispiel_hd: 'Zu Weihnachten kommt die ganze Verwandtschaft an.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-443',
+      ausdruck: 'Schwippschwager',
+      hochdeutsch: 'angeheirateter Schwager',
+      bedeutung: 'Ein „Schwippschwager" ist der Mann der Schwägerin oder der Bruder des Schwagers — eine entfernte, angeheiratete Verwandtschaft. „Mein Schwippschwager wohnt in Köpenick." Das Wort ist auch hochdeutsch geläufig, wird in Berlin aber mit besonderem Schmunzeln über die verzwickten Familienverhältnisse benutzt.',
+      beispiel: 'Mein Schwippschwager hilft beim Umzug mit.',
+      beispiel_hd: 'Mein angeheirateter Schwager hilft beim Umzug mit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-444',
+      ausdruck: 'Bowle',
+      hochdeutsch: 'Bowle / Punsch',
+      bedeutung: 'Die „Bowle" ist in Berlin das beliebte Partygetränk aus Wein, Sekt und Früchten, das auf keiner Feier fehlt. „Auf der Fete jab\'s \'ne Erdbeer-Bowle." Ob Geburtstag, Silvester oder Sommerfest — eine ordentliche Bowle bringt in Berlin Stimmung in die Bude und wird gern selbst angesetzt.',
+      beispiel: 'Zu Silvester setz ick \'ne Bowle an.',
+      beispiel_hd: 'Zu Silvester setze ich eine Bowle an.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-445',
+      ausdruck: 'Polterabend',
+      hochdeutsch: 'Polterabend',
+      bedeutung: 'Der „Polterabend" ist in Berlin der ausgelassene Abend vor der Hochzeit, an dem zum Glück Porzellan zerschlagen wird. „Uffm Polterabend wurde ordentlich jefeiert." Ein alter Brauch, der auch in Berlin gepflegt wird: Scherben bringen Glück, und das junge Paar fegt sie gemeinsam zusammen.',
+      beispiel: 'Beim Polterabend ham wa \'n Haufen Teller zaschmissen.',
+      beispiel_hd: 'Beim Polterabend haben wir einen Haufen Teller zerschmissen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'b-446',
+      ausdruck: 'Kappe',
+      hochdeutsch: 'Mütze / Kopf',
+      bedeutung: 'Die „Kappe" ist im Berlinischen die Mütze, aber auch scherzhaft der Kopf. „Setz dir \'ne Kappe uff, et is kalt!" Und „det nehm ick uff meine Kappe" heißt: dafür übernehme ich die Verantwortung. Ein doppeldeutiges Alltagswort mit typisch berlinerischer bildhafter Wendung.',
+      beispiel: 'Zieh dir \'ne Kappe übern Kopp, et zieht.',
+      beispiel_hd: 'Zieh dir eine Mütze über den Kopf, es zieht.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-447',
+      ausdruck: 'Buddel',
+      hochdeutsch: 'Flasche',
+      bedeutung: 'Eine „Buddel" ist im Berlinischen und Norddeutschen eine Flasche, meist eine Schnaps- oder Bierflasche. „Mach ma die Buddel uff!" Das Wort kommt vom französischen „bouteille". „Buddeln" (graben) hat damit nichts zu tun — die Buddel steht schlicht für die gute alte Pulle.',
+      beispiel: 'Hol ma \'ne Buddel Bier ausm Späti.',
+      beispiel_hd: 'Hol mal eine Flasche Bier aus dem Späti.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-448',
+      ausdruck: 'schlabbern',
+      hochdeutsch: 'schlürfen / kleckern',
+      bedeutung: '„Schlabbern" heißt im Berlinischen geräuschvoll trinken, schlürfen — oder beim Essen kleckern. „Schlabber nich so beim Suppeessen!" Ein lautmalerisches Wort, das man Kindern bei Tisch entgegenhält. Beschreibt das ungenierte, hörbare Schmatzen und Tropfen während der Mahlzeit.',
+      beispiel: 'Der Hund schlabbert sein Wasser ausm Napf.',
+      beispiel_hd: 'Der Hund schlürft sein Wasser aus dem Napf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-449',
+      ausdruck: 'Schlawiner',
+      hochdeutsch: 'gerissener Kerl / Schlitzohr',
+      bedeutung: 'Ein „Schlawiner" ist im Berlinischen ein gerissener, durchtriebener, aber meist sympathischer Kerl — ein Schlitzohr. „Du oller Schlawiner!" Halb tadelnd, halb bewundernd gemeint für jemanden, der mit Schläue und Charme durchs Leben kommt und immer einen Trick parat hat.',
+      beispiel: 'So \'n Schlawiner, hat sich vorjedrängelt!',
+      beispiel_hd: 'So ein Schlitzohr, hat sich vorgedrängelt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-450',
+      ausdruck: 'Trantüte',
+      hochdeutsch: 'langsamer, träger Mensch',
+      bedeutung: 'Eine „Trantüte" ist im Berlinischen ein langsamer, lustloser, schwerfälliger Mensch — einer, der wie in Zeitlupe agiert. „Nu mach hin, du Trantüte!" Das „Tran"-Wort verweist auf zähflüssiges Öl. Eine spöttisch-genervte Bezeichnung für jemanden ohne Schwung und Tempo.',
+      beispiel: 'Die Trantüte an der Kasse braucht ewig.',
+      beispiel_hd: 'Der lahme Mensch an der Kasse braucht ewig.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-451',
+      ausdruck: 'Schrulle',
+      hochdeutsch: 'wunderliche Frau / Marotte',
+      bedeutung: 'Eine „Schrulle" ist im Berlinischen eine wunderliche, eigensinnige Frau — oder eine Marotte. „Die olle Schrulle ausm zweeten Stock." Auch „schrullig" für eigenartig gehört dazu. Mal abwertend, mal liebevoll-nachsichtig für jemanden mit festgefahrenen, kauzigen Eigenheiten gebraucht.',
+      beispiel: 'Die olle Schrulle von nebenan redet mit ihre Katzen.',
+      beispiel_hd: 'Die wunderliche Frau von nebenan redet mit ihren Katzen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-452',
+      ausdruck: 'Schmu',
+      hochdeutsch: 'Schwindel / unredliches Zeug',
+      bedeutung: '„Schmu" ist im Berlinischen Schwindel, kleiner Betrug oder unredliches Gerede. „Mach keen Schmu mit der Abrechnung!" Das Wort stammt aus dem Jiddischen. Es bezeichnet meist die kleinen Mogeleien des Alltags, nicht das große Verbrechen — eben den alltäglichen Schmu.',
+      beispiel: 'Bei dem Händler is immer \'n bisken Schmu dabei.',
+      beispiel_hd: 'Bei dem Händler ist immer ein bisschen Schwindel dabei.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-453',
+      ausdruck: 'Kaff',
+      hochdeutsch: 'kleines, langweiliges Dorf',
+      bedeutung: 'Ein „Kaff" ist im Berlinischen ein kleines, abgelegenes, langweiliges Nest — ein Dorf, in dem nichts los ist. „Der wohnt in \'nem Kaff in Brandenburg." Ein typischer großstädtischer Spott der Berliner über die ländliche Umgebung, wo der Bär eben nicht steppt wie in der Hauptstadt.',
+      beispiel: 'Der zieht in irgend\'n Kaff weit weg von Berlin.',
+      beispiel_hd: 'Der zieht in irgendein langweiliges Dorf weit weg von Berlin.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-454',
+      ausdruck: 'Pennerladen',
+      hochdeutsch: 'heruntergekommenes Geschäft',
+      bedeutung: 'Ein „Pennerladen" ist im Berlinischen abwertend ein heruntergekommenes, unordentliches Geschäft oder ein schlecht geführter Betrieb. „Det is doch \'n richtjer Pennerladen hier!" Drückt Unmut über Schlamperei und Chaos aus — derbe Berliner Kritik an mangelnder Ordnung und Sorgfalt.',
+      beispiel: 'In dem Pennerladen findste ja nüscht wieder.',
+      beispiel_hd: 'In dem heruntergekommenen Laden findest du ja nichts wieder.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-455',
+      ausdruck: 'Buxe',
+      hochdeutsch: 'Hose',
+      bedeutung: 'Eine „Buxe" ist im Berlinischen und Norddeutschen eine Hose. „Zieh dir \'ne lange Buxe an, et is kalt!" Ein gemütlich-altmodisches Wort, das man besonders von älteren Berlinern hört. Gehört zum bodenständigen Kleidungsvokabular neben Latschen, Klamotten und Kappe.',
+      beispiel: 'Meine neue Buxe is mir zu eng jeworden.',
+      beispiel_hd: 'Meine neue Hose ist mir zu eng geworden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-456',
+      ausdruck: 'Puschen',
+      hochdeutsch: 'Hausschuhe / Pantoffeln',
+      bedeutung: '„Puschen" sind im Berlinischen die Hausschuhe, die bequemen Pantoffeln für daheim. „Zieh dir deine Puschen an!" Ein urgemütliches Berliner Wort, das sofort an einen Feierabend auf dem Sofa denken lässt. Wer in Puschen rumläuft, hat es sich zu Hause schön gemütlich gemacht.',
+      beispiel: 'Abends schlüpf ick in meine warmen Puschen.',
+      beispiel_hd: 'Abends schlüpfe ich in meine warmen Hausschuhe.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-457',
+      ausdruck: 'Kledage',
+      hochdeutsch: 'Kleidung / Garderobe',
+      bedeutung: 'Die „Kledage" ist im Berlinischen scherzhaft-vornehm die Kleidung, die Garderobe. „Schicke Kledage haste an!" Das Wort spielt mit französisch klingender Endung und wird oft augenzwinkernd benutzt, wenn jemand besonders herausgeputzt ist. Typisch berlinerischer Spott mit feiner Note.',
+      beispiel: 'Mensch, haste \'ne schicke Kledage heute an!',
+      beispiel_hd: 'Mensch, hast du eine schicke Kleidung heute an!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-458',
+      ausdruck: 'Aujust',
+      hochdeutsch: 'Dummkopf / Hanswurst',
+      bedeutung: 'Ein „Aujust" (August) ist im Berlinischen ein Dummkopf, Tölpel oder Hanswurst — wie der „dumme August" im Zirkus. „Benimm dir nich wie \'n Aujust!" Mit dem typischen berlinerischen „j" statt „g". Eine spöttische Bezeichnung für jemanden, der sich albern oder ungeschickt anstellt.',
+      beispiel: 'Stell dir nich an wie \'n Aujust!',
+      beispiel_hd: 'Stell dich nicht an wie ein Hanswurst!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-459',
+      ausdruck: 'Schippe',
+      hochdeutsch: 'Schaufel',
+      bedeutung: 'Eine „Schippe" ist im Berlinischen eine Schaufel. „Nimm die Schippe und mach den Schnee weg!" Und „eens uff die Schippe nehmen" heißt jemanden veräppeln. Ein bodenständiges Werkzeugwort, das im Berliner Alltag — vom Schneeschippen bis zur Gartenarbeit — ständig gebraucht wird.',
+      beispiel: 'Hol die Schippe, wir müssen Schnee schieben.',
+      beispiel_hd: 'Hol die Schaufel, wir müssen Schnee schieben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-460',
+      ausdruck: 'Klamauk',
+      hochdeutsch: 'lärmender Unfug / Klamauk',
+      bedeutung: '„Klamauk" ist im Berlinischen lärmender Unfug, alberner Krawall oder übertriebene Spaßmacherei. „Mach hier nich so \'n Klamauk!" Ein lautmalerisches Wort für lautstarkes Getöse und Possenreißerei. Wird oft genervt benutzt, wenn jemand übertrieben herumalbert und Krach veranstaltet.',
+      beispiel: 'Die Kinder ham den janzen Tach Klamauk jemacht.',
+      beispiel_hd: 'Die Kinder haben den ganzen Tag lärmenden Unfug gemacht.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-461',
+      ausdruck: 'Globus',
+      hochdeutsch: 'Kopf / Schädel',
+      bedeutung: 'Der „Globus" ist im Berlinischen scherzhaft der Kopf, der Schädel — wegen seiner runden Form. „Halt deinen Globus ausm Weg!" Eine bildhaft-spöttische Bezeichnung, die den Kopf mit der Weltkugel vergleicht. Typischer Berliner Witz, der Körperteile mit Alltagsdingen gleichsetzt.',
+      beispiel: 'Mir brummt der Globus nach der langen Nacht.',
+      beispiel_hd: 'Mir brummt der Kopf nach der langen Nacht.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-462',
+      ausdruck: 'Flossen',
+      hochdeutsch: 'Hände',
+      bedeutung: '„Flossen" sind im Berlinischen die Hände, meist etwas derb gemeint. „Nimm deine Flossen da weg!" Der Vergleich mit den Fischflossen macht das Wort anschaulich-spöttisch. Wird oft benutzt, wenn jemand etwas anfasst, das er nicht anfassen soll — Finger weg, also Flossen weg.',
+      beispiel: 'Lass deine Flossen von meinem Teller!',
+      beispiel_hd: 'Lass deine Hände von meinem Teller!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-463',
+      ausdruck: 'Wampe',
+      hochdeutsch: 'dicker Bauch',
+      bedeutung: 'Die „Wampe" ist im Berlinischen der dicke Bauch, der Wanst. „Der hat sich \'ne ordentliche Wampe anjefuttert." Ein derb-bildhaftes Wort, das ohne Umschweife auf den fülligen Leib zeigt. Ganz im Sinne der direkten Berliner Schnauze, die kein Blatt vor den Mund nimmt.',
+      beispiel: 'Bei dem vielen Bier wächst die Wampe.',
+      beispiel_hd: 'Bei dem vielen Bier wächst der dicke Bauch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-464',
+      ausdruck: 'Lauscher',
+      hochdeutsch: 'Ohren',
+      bedeutung: '„Lauscher" sind im Berlinischen scherzhaft die Ohren — eigentlich der Jägerausdruck für die Ohren des Wildes. „Spitz mal deine Lauscher!" Ein bildhaftes Wort, das ans aufmerksame Horchen erinnert. Wird benutzt, wenn jemand genau hinhören soll oder gerade etwas mitbekommen hat.',
+      beispiel: 'Spitz ma deine Lauscher, ick erzähl wat Wichtjet.',
+      beispiel_hd: 'Spitz mal deine Ohren, ich erzähle etwas Wichtiges.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-465',
+      ausdruck: 'Mief',
+      hochdeutsch: 'schlechte Luft / Gestank',
+      bedeutung: '„Mief" ist im Berlinischen abgestandene, schlechte Luft, muffiger Geruch. „Hier is vielleicht \'n Mief, mach mal det Fenster uff!" Übertragen meint „Mief" auch spießige Enge und Langeweile. Ein bildkräftiges Wort für alles, was stickig, abgestanden und unangenehm riecht.',
+      beispiel: 'In der Kneipe is vielleicht \'n Mief heute.',
+      beispiel_hd: 'In der Kneipe ist vielleicht eine schlechte Luft heute.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-466',
+      ausdruck: 'Kabache',
+      hochdeutsch: 'baufällige Hütte / schlechte Wohnung',
+      bedeutung: 'Eine „Kabache" ist im Berlinischen eine baufällige Hütte, eine elende Bude oder schlechte Wohnung. „Die olle Kabache fällt bald zusammen." Ein abwertendes Wort für eine heruntergekommene Behausung, das die Verachtung für schäbige Bauten anschaulich auf den Punkt bringt.',
+      beispiel: 'In so \'ner alten Kabache will doch keener wohnen.',
+      beispiel_hd: 'In so einer alten baufälligen Hütte will doch keiner wohnen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-467',
+      ausdruck: 'Penne',
+      hochdeutsch: 'Schule',
+      bedeutung: 'Die „Penne" ist im Berlinischen und in der deutschen Schülersprache die Schule. „Ick muss morjen wieder in die Penne." Ein saloppes, leicht widerwilliges Wort fürs ungeliebte Lernen. Generationen von Berliner Schülern sind schon zur Penne gegangen — mehr oder weniger gern.',
+      beispiel: 'In der Penne ham wa heut \'ne Mathearbeit jeschrieben.',
+      beispiel_hd: 'In der Schule haben wir heute eine Mathearbeit geschrieben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-468',
+      ausdruck: 'Pauker',
+      hochdeutsch: 'Lehrer',
+      bedeutung: 'Ein „Pauker" ist im Berlinischen und in der Schülersprache der Lehrer — von „einpauken", also Stoff eintrichtern. „Unser Mathe-Pauker is voll streng." Ein traditionsreiches, leicht spöttisches Wort, das die Lehrkraft als jemanden zeigt, der den Schülern das Wissen mit Nachdruck einbläut.',
+      beispiel: 'Der neue Pauker jibt uns immer viel uff.',
+      beispiel_hd: 'Der neue Lehrer gibt uns immer viele Hausaufgaben auf.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-469',
+      ausdruck: 'Klinke putzen',
+      hochdeutsch: 'von Tür zu Tür gehen / betteln',
+      bedeutung: '„Klinke putzen" heißt im Berlinischen von Tür zu Tür gehen, um etwas zu verkaufen, zu bitten oder zu betteln. „Der musste lange Klinken putzen, bis er den Job hatte." Ein bildhafter Ausdruck, der das mühsame, oft erfolglose Anklopfen bei einer Tür nach der anderen beschreibt.',
+      beispiel: 'Vertreter müssen den janzen Tach Klinken putzen.',
+      beispiel_hd: 'Vertreter müssen den ganzen Tag von Tür zu Tür gehen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-470',
+      ausdruck: 'Pofe',
+      hochdeutsch: 'Bett',
+      bedeutung: 'Die „Pofe" ist im Berlinischen das Bett, die Falle, die Heia. „Ick hau mir jetzt in die Pofe." Verwandt mit „pofen" (schlafen). Ein gemütlich-saloppes Wort für die wohlverdiente Schlafstatt, in die man sich nach einem langen Tag erschöpft fallen lässt.',
+      beispiel: 'Et is spät, ick hau mir in die Pofe.',
+      beispiel_hd: 'Es ist spät, ich gehe ins Bett.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-471',
+      ausdruck: 'Kommode',
+      hochdeutsch: 'Kommode / Königliche Bibliothek',
+      bedeutung: 'Die „Kommode" ist in Berlin nicht nur das Möbelstück, sondern auch der Spitzname der Alten Bibliothek am Bebelplatz — wegen ihrer geschwungenen Barockfassade. „Treffen wa uns an der Kommode?" Ein liebevoller Berliner Beiname für ein berühmtes Gebäude, der den Lokalstolz zeigt.',
+      beispiel: 'Die Kommode am Bebelplatz is \'n schönet altet Jebäude.',
+      beispiel_hd: 'Die Alte Bibliothek am Bebelplatz ist ein schönes altes Gebäude.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-472',
+      ausdruck: 'Bammel',
+      hochdeutsch: 'Angst / Lampenfieber',
+      bedeutung: '„Bammel" ist im Berlinischen Angst, Bange, Lampenfieber. „Ick hab vielleicht \'n Bammel vor der Prüfung!" Ein umgangssprachliches Wort für ein flaues, bängliches Gefühl vor etwas Ungewissem. Wer Bammel hat, dem ist mulmig zumute — ein ganz alltäglicher Berliner Ausdruck.',
+      beispiel: 'Vor\'m Zahnarzt hab ick immer \'n Bammel.',
+      beispiel_hd: 'Vor dem Zahnarzt habe ich immer Angst.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-473',
+      ausdruck: 'Schiss',
+      hochdeutsch: 'große Angst',
+      bedeutung: '„Schiss" haben heißt im Berlinischen große Angst oder Furcht haben. „Der hat vielleicht Schiss im Dunkeln!" Ein derbes, aber sehr gebräuchliches Wort für blanke Angst. Wer Schiss hat, traut sich nicht — das gehört zum kernigen, unverblümten Vokabular der Berliner Schnauze.',
+      beispiel: 'Vor dem jroßen Hund hab ick echt Schiss.',
+      beispiel_hd: 'Vor dem großen Hund habe ich echt große Angst.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-474',
+      ausdruck: 'Backpfeife',
+      hochdeutsch: 'Ohrfeige',
+      bedeutung: 'Eine „Backpfeife" ist im Berlinischen eine Ohrfeige, eine Watsche. „Du kriechst gleich \'ne Backpfeife!" Auch das „Backpfeifengesicht" für ein Gesicht, das geradezu nach einer Ohrfeige verlangt, ist geläufig. Ein derbes, bildhaftes Wort aus dem reichen Berliner Schimpf- und Drohrepertoire.',
+      beispiel: 'Noch so \'n Spruch und du kriechst \'ne Backpfeife!',
+      beispiel_hd: 'Noch so ein Spruch und du kriegst eine Ohrfeige!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-475',
+      ausdruck: 'Klamüsern',
+      hochdeutsch: 'tüfteln / grübeln',
+      bedeutung: '„Klamüsern" heißt im Berlinischen, etwas mühsam austüfteln, durchdenken oder herausgrübeln. „Ick muss mir det erst ma klamüsern." Ein bildhaftes Wort fürs umständliche, geduldige Knobeln an einer kniffligen Sache. Wer klamüsert, bastelt sich gedanklich Schritt für Schritt eine Lösung zurecht.',
+      beispiel: 'Ick muss mir erstma klamüsern, wie det jeht.',
+      beispiel_hd: 'Ich muss erst mal austüfteln, wie das geht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-476',
+      ausdruck: 'Zores',
+      hochdeutsch: 'Ärger / Scherereien',
+      bedeutung: '„Zores" ist im Berlinischen Ärger, Krach, Scherereien. „Mit dem jibt\'s nur Zores!" Das Wort stammt aus dem Jiddischen (zores = Sorgen, Nöte) und kam übers Rotwelsch ins Berlinische. Wer Zores hat, steckt im Schlamassel und muss sich mit lauter Verdruss herumplagen.',
+      beispiel: 'Mit der neuen Hausverwaltung jibt\'s nur Zores.',
+      beispiel_hd: 'Mit der neuen Hausverwaltung gibt es nur Ärger.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-477',
+      ausdruck: 'meschugge',
+      hochdeutsch: 'verrückt',
+      bedeutung: '„Meschugge" heißt im Berlinischen verrückt, übergeschnappt, nicht ganz bei Trost. „Bist du meschugge jeworden?" Das Wort stammt aus dem Jiddischen und hat sich fest in der Berliner Umgangssprache eingebürgert. Ein farbiges Wort, um jemandes überraschendes oder unsinniges Verhalten zu kommentieren.',
+      beispiel: 'Bei dem Wetter baden jehn? Bist du meschugge?',
+      beispiel_hd: 'Bei dem Wetter baden gehen? Bist du verrückt?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-478',
+      ausdruck: 'Mischpoke',
+      hochdeutsch: 'Familie / Gesellschaft',
+      bedeutung: 'Die „Mischpoke" ist im Berlinischen die ganze Familie oder Sippschaft, oft leicht abschätzig für eine zwielichtige Gesellschaft. „Die janze Mischpoke war da." Aus dem Jiddischen (mischpocho = Familie). Mal liebevoll für die eigene Verwandtschaft, mal spöttisch für eine dubiose Truppe gebraucht.',
+      beispiel: 'Zum Geburtstach kommt die janze Mischpoke.',
+      beispiel_hd: 'Zum Geburtstag kommt die ganze Familie.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-479',
+      ausdruck: 'Schlamassel',
+      hochdeutsch: 'Durcheinander / missliche Lage',
+      bedeutung: 'Ein „Schlamassel" ist im Berlinischen ein heilloses Durcheinander, eine verfahrene, missliche Lage. „Da ham wa den Schlamassel!" Das Wort stammt aus dem Jiddischen. Es bezeichnet die ganze Bredouille, in die man durch Pech oder Ungeschick gerät — ein typisch berlinerischer Stoßseufzer.',
+      beispiel: 'Jetzt ham wa den Schlamassel, der Zug is weg!',
+      beispiel_hd: 'Jetzt haben wir die missliche Lage, der Zug ist weg!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-480',
+      ausdruck: 'Knilch',
+      hochdeutsch: 'unangenehmer Kerl',
+      bedeutung: 'Ein „Knilch" ist im Berlinischen ein unangenehmer, unsympathischer oder eingebildeter Kerl. „So \'n oller Knilch!" Eine abwertende Bezeichnung, die man jemandem widmet, der einem auf die Nerven geht oder sich unverschämt benimmt. Gehört zum Berliner Repertoire kerniger Männerbeschimpfungen.',
+      beispiel: 'Der Knilch hat sich einfach vorjedrängelt.',
+      beispiel_hd: 'Der unangenehme Kerl hat sich einfach vorgedrängelt.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-481',
+      ausdruck: 'Klüngel',
+      hochdeutsch: 'Vetternwirtschaft / Clique',
+      bedeutung: 'Der „Klüngel" ist im Berlinischen eine eingeschworene Clique, die sich gegenseitig Vorteile zuschanzt — Vetternwirtschaft. „Da herrscht doch nur Klüngel im Rathaus!" Ein kritisches Wort für undurchsichtige Mauscheleien und Beziehungsgeflechte, das den Unmut über Filz und Vetternwirtschaft ausdrückt.',
+      beispiel: 'Im Bezirksamt jeht allet über Klüngel.',
+      beispiel_hd: 'Im Bezirksamt geht alles über Vetternwirtschaft.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-482',
+      ausdruck: 'Schmökern',
+      hochdeutsch: 'gemütlich lesen',
+      bedeutung: '„Schmökern" heißt im Berlinischen genüsslich und entspannt in einem Buch lesen, sich vertiefen. „Ick schmöker am Wochenende gern \'n dicket Buch." Verwandt mit „Schmöker" (dickes Buch). Ein behagliches Wort für das vergnügte, zweckfreie Lesen aus reiner Freude an der Geschichte.',
+      beispiel: 'Sonntachs schmöker ick stundenlang uffm Sofa.',
+      beispiel_hd: 'Sonntags lese ich stundenlang gemütlich auf dem Sofa.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-483',
+      ausdruck: 'Kabuff',
+      hochdeutsch: 'kleiner, enger Raum',
+      bedeutung: 'Ein „Kabuff" ist im Berlinischen ein kleiner, enger, oft fensterloser Raum — eine Kammer, ein Verschlag. „Mein Büro is nur \'n winzjet Kabuff." Ein abwertendes Wort für einen beengten, ungemütlichen Raum, in dem man kaum Platz hat. Typisch berlinerisch unverblümt benannt.',
+      beispiel: 'Det Hinterzimmer is nur \'n dunklet Kabuff.',
+      beispiel_hd: 'Das Hinterzimmer ist nur ein dunkler, enger Raum.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-484',
+      ausdruck: 'Murks',
+      hochdeutsch: 'Pfusch / schlechte Arbeit',
+      bedeutung: '„Murks" ist im Berlinischen Pfusch, schlampig gemachte Arbeit, Misslungenes. „Der Handwerker hat nur Murks jebaut." Auch „murksen" für stümperhaft arbeiten gehört dazu. Ein abwertendes Wort für alles, was schief, unsauber oder dilettantisch ausgeführt wurde und nun nichts taugt.',
+      beispiel: 'Die Reparatur war totaler Murks, allet kaputt.',
+      beispiel_hd: 'Die Reparatur war totaler Pfusch, alles kaputt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-485',
+      ausdruck: 'Klotz',
+      hochdeutsch: 'schwerfälliger Mensch / Last',
+      bedeutung: 'Ein „Klotz" ist im Berlinischen ein schwerfälliger, plumper Mensch — oder eine Last, die einem „am Bein hängt". „Der sitzt da wie \'n Klotz." Ein bildhaftes Wort, das jemanden als unbeweglich und träge wie einen Holzblock zeigt. Auch für eine drückende Bürde gebräuchlich.',
+      beispiel: 'Der steht da wie \'n Klotz und hilft nich mit.',
+      beispiel_hd: 'Der steht da wie ein Klotz und hilft nicht mit.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-486',
+      ausdruck: 'Schlot',
+      hochdeutsch: 'Schornstein',
+      bedeutung: 'Ein „Schlot" ist im Berlinischen ein Schornstein, eine Esse. „Der raucht wie \'n Schlot!" sagt man über einen starken Raucher. Ein bildkräftiges Wort, das an die qualmenden Fabrikschornsteine des alten Industrie-Berlins erinnert. Heute meist im Vergleich für Vielraucher gebraucht.',
+      beispiel: 'Mein Onkel raucht wie \'n Schlot, den janzen Tach.',
+      beispiel_hd: 'Mein Onkel raucht wie ein Schornstein, den ganzen Tag.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-487',
+      ausdruck: 'Pinsel',
+      hochdeutsch: 'eingebildeter Kerl',
+      bedeutung: 'Ein „Pinsel" ist im Berlinischen ein eingebildeter, eitler oder alberner Kerl. „So \'n eingebildeter Pinsel!" Eine spöttische Bezeichnung für jemanden, der sich wichtigtuerisch aufführt oder sich selbst zu sehr gefällt. Gehört zum reichen Berliner Vorrat an gutmütig-frechen Spitznamen.',
+      beispiel: 'Der olle Pinsel hält sich für wat Besseret.',
+      beispiel_hd: 'Der eingebildete Kerl hält sich für etwas Besseres.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-488',
+      ausdruck: 'Kittchen',
+      hochdeutsch: 'Gefängnis',
+      bedeutung: 'Das „Kittchen" ist im Berlinischen das Gefängnis, der Knast. „Der sitzt im Kittchen." Ein saloppes, fast verharmlosendes Wort für die Haftanstalt. Wer ins Kittchen wandert, kommt hinter Gitter — ein traditionsreicher Ausdruck der Berliner Umgangssprache aus dem Gauner-Milieu.',
+      beispiel: 'Wegen dem Bruch is er im Kittchen jelandet.',
+      beispiel_hd: 'Wegen des Einbruchs ist er im Gefängnis gelandet.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-489',
+      ausdruck: 'Pomade',
+      hochdeutsch: 'Langsamkeit / Trägheit',
+      bedeutung: '„Pomade" steht im Berlinischen für träge Langsamkeit und Bequemlichkeit. „Immer mit der Pomade!" heißt: bloß keine Hektik, schön gemächlich. Auch „pomadig" für langsam und phlegmatisch gehört dazu. Ein gemütliches Wort, das die berlinerische Gelassenheit gegenüber jeder Eile ausdrückt.',
+      beispiel: 'Immer mit der Pomade, wir ham doch Zeit!',
+      beispiel_hd: 'Immer mit der Ruhe, wir haben doch Zeit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-490',
+      ausdruck: 'Kröte',
+      hochdeutsch: 'Geldstück / kleiner Betrag',
+      bedeutung: '„Kröten" sind im Berlinischen Geldstücke, Moneten — meist ein kleiner Betrag. „Ick hab nur noch \'n paar Kröten in der Tasche." Ein saloppes Wort fürs Kleingeld, das sich in die lange Berliner Liste der Geldausdrücke einreiht. Wer nur noch Kröten hat, ist fast pleite.',
+      beispiel: 'Ick hab nur noch \'n paar Kröten bis zum Ersten.',
+      beispiel_hd: 'Ich habe nur noch ein paar Geldstücke bis zum Ersten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-491',
+      ausdruck: 'Strippe',
+      hochdeutsch: 'Schnur / Telefonleitung',
+      bedeutung: 'Eine „Strippe" ist im Berlinischen eine Schnur, ein Bindfaden — und übertragen die Telefonleitung. „Ick häng den janzen Tach an der Strippe." Wer „an der Strippe hängt", telefoniert. Ein bildhaftes Alltagswort, das von der Wäscheleine bis zum langen Telefonat reicht.',
+      beispiel: 'Ruf ma an, ick häng den janzen Tach an der Strippe.',
+      beispiel_hd: 'Ruf mal an, ich bin den ganzen Tag am Telefon.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-492',
+      ausdruck: 'Kabbelei',
+      hochdeutsch: 'kleiner Streit / Gezänk',
+      bedeutung: 'Eine „Kabbelei" ist im Berlinischen und Norddeutschen ein kleiner, harmloser Streit, ein Gezänk. „Die zwee ham immer so \'ne Kabbelei." Verwandt mit „sich kabbeln" (zanken). Ein Wort für die alltäglichen kleinen Reibereien, die meist ohne Ernst und ohne bösen Ausgang bleiben.',
+      beispiel: 'Die zwee Nachbarn ham wieder \'ne Kabbelei.',
+      beispiel_hd: 'Die zwei Nachbarn haben wieder einen kleinen Streit.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-493',
+      ausdruck: 'Pillepalle',
+      hochdeutsch: 'Kleinigkeit / Belangloses',
+      bedeutung: '„Pillepalle" ist im Berlinischen etwas Belangloses, eine Kleinigkeit, Unbedeutendes. „Det is doch allet Pillepalle!" Wird benutzt, um etwas als unwichtig oder kinderleicht abzutun. Ein launiges Reimwort, das mit lässiger Geste alles Geringfügige beiseiteschiebt — typisch berlinerische Coolness.',
+      beispiel: 'Die Aufgabe is Pillepalle, mach ick im Schlaf.',
+      beispiel_hd: 'Die Aufgabe ist eine Kleinigkeit, mache ich im Schlaf.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-494',
+      ausdruck: 'Pott',
+      hochdeutsch: 'Topf',
+      bedeutung: 'Ein „Pott" ist im Berlinischen und Norddeutschen ein Topf, oft auch eine große Tasse. „Mach den Pott uffn Herd!" Und „ein Pott Kaffee" ist eine ordentliche Tasse. Ein bodenständiges Küchenwort, das vom Kochtopf bis zum dampfenden Heißgetränk reicht und im Alltag ständig fällt.',
+      beispiel: 'Ick koch \'n jroßen Pott Suppe für alle.',
+      beispiel_hd: 'Ich koche einen großen Topf Suppe für alle.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-495',
+      ausdruck: 'Schluffen',
+      hochdeutsch: 'schlurfend gehen',
+      bedeutung: '„Schluffen" heißt im Berlinischen schlurfend, schlaff und ohne Schwung gehen — mit nachschleifenden Füßen. „Schluff nich so durch die Wohnung!" Auch ein „Schluffi" ist ein lahmer, schlampiger Mensch. Ein lautmalerisches Wort, das den müden, energielosen Gang anschaulich beschreibt.',
+      beispiel: 'Er schlufft müde durch die Wohnung.',
+      beispiel_hd: 'Er schlurft müde durch die Wohnung.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-496',
+      ausdruck: 'Schnauzbart',
+      hochdeutsch: 'Schnurrbart',
+      bedeutung: 'Ein „Schnauzbart" ist im Berlinischen der Schnurrbart über der Oberlippe. „Der hat \'n mächtjen Schnauzbart!" Ein anschauliches Wort, das den Bart direkt mit der „Schnauze" verbindet — passend zur Stadt der Berliner Schnauze. Mal stattlich, mal komisch gemeint, je nach Träger.',
+      beispiel: 'Mein Opa hatte immer \'n dicken Schnauzbart.',
+      beispiel_hd: 'Mein Opa hatte immer einen dicken Schnurrbart.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'b-497',
+      ausdruck: 'Kommabissel',
+      hochdeutsch: 'ein klein wenig',
+      bedeutung: '„Komm ma \'n bisken her" wird im schnellen Berliner Sprechen zu „kommabissel" verschliffen — ein typisches Beispiel berlinerischer Lautverschmelzung. „Kommabissel ran!" Solche zusammengezogenen Formen zeigen, wie flink und nuschelnd die echte Berliner Schnauze im Alltag oft daherkommt.',
+      beispiel: 'Kommabissel näher, ick versteh dir nich!',
+      beispiel_hd: 'Komm ein klein wenig näher, ich verstehe dich nicht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-498',
+      ausdruck: 'Kober',
+      hochdeutsch: 'Wirt / Gastwirt',
+      bedeutung: 'Ein „Kober" ist im alten Berlinischen der Wirt, der Gastwirt einer Kneipe. „Der Kober zapft \'n frischet Bier." Ein traditionsreiches Wort aus der Welt der Berliner Eckkneipen, das den Mann hinterm Tresen bezeichnet. Heute selten, aber bei Kennern der alten Berliner Mundart noch geläufig.',
+      beispiel: 'Der Kober kennt hier jeden Stammjast beim Namen.',
+      beispiel_hd: 'Der Wirt kennt hier jeden Stammgast beim Namen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-499',
+      ausdruck: 'Destille',
+      hochdeutsch: 'kleine Kneipe',
+      bedeutung: 'Eine „Destille" ist im Berlinischen eine kleine, einfache Eckkneipe, in der vor allem Schnaps und Bier ausgeschenkt werden. „Komm, wir jehn in die Destille um die Ecke." Ein urberlinerisches Wort für die schlichte Trinkstube, wo sich die Nachbarschaft auf eine Molle trifft.',
+      beispiel: 'In der Destille treffen sich abends die Stammjäste.',
+      beispiel_hd: 'In der kleinen Kneipe treffen sich abends die Stammgäste.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'b-500',
+      ausdruck: 'Köm',
+      hochdeutsch: 'Kümmelschnaps',
+      bedeutung: '„Köm" ist im Berlinischen und Norddeutschen ein klarer Kümmelschnaps, gern als Verdauungsschnaps getrunken. „Nach\'m Eisbein \'n Köm, det muss sein!" Ein bodenständiger Schnaps, der in der Eckkneipe zum deftigen Essen gereicht wird. Gehört zur traditionellen Berliner Trinkkultur.',
+      beispiel: 'Nach dem fetten Essen jönn ick mir \'n Köm.',
+      beispiel_hd: 'Nach dem fetten Essen gönne ich mir einen Kümmelschnaps.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-501',
+      ausdruck: 'Kabeljau',
+      hochdeutsch: 'Kabeljau (Fisch)',
+      bedeutung: 'Der „Kabeljau" ist in Berlin ein beliebter Speisefisch, der gebraten oder als Brötchen auf den Tisch kommt. „Heut jibt\'s Kabeljau mit Kartoffeln." Aus der Zeit, als Seefisch über die Häfen ins Binnenland Berlin kam. Ein deftiger Klassiker der norddeutsch geprägten Berliner Küche.',
+      beispiel: 'Am Freitach jibt\'s bei uns immer Kabeljau.',
+      beispiel_hd: 'Am Freitag gibt es bei uns immer Kabeljau.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-502',
+      ausdruck: 'Schlackerwetter',
+      hochdeutsch: 'nasskaltes Schmuddelwetter',
+      bedeutung: '„Schlackerwetter" ist im Berlinischen ungemütliches, nasskaltes Schmuddelwetter mit Schneeregen und Matsch. „Bei dem Schlackerwetter jeht keener vor die Tür." Ein bildkräftiges Wort für die graue, ungemütliche Berliner Winterzeit, wenn der Schnee nicht liegen bleibt, sondern matschig herumschlackert.',
+      beispiel: 'Bei dem Schlackerwetter bleib ick lieber drin.',
+      beispiel_hd: 'Bei dem nasskalten Schmuddelwetter bleibe ich lieber drinnen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-503',
+      ausdruck: 'Pieseln',
+      hochdeutsch: 'leicht nieseln',
+      bedeutung: '„Pieseln" heißt im Berlinischen ganz leicht und fein regnen, nieseln. „Et pieselt nur \'n bisken." Ein lautmalerisches Wort für den sanften Sprühregen, der einen kaum nass macht, aber doch lästig auf der Haut liegt. Gehört zum reichen Berliner Wortschatz rund ums graue Wetter.',
+      beispiel: 'Et pieselt draußen, nimm lieber \'n Schirm mit.',
+      beispiel_hd: 'Es nieselt draußen, nimm lieber einen Schirm mit.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-504',
+      ausdruck: 'Töppchen',
+      hochdeutsch: 'Töpfchen (Kindertopf)',
+      bedeutung: 'Ein „Töppchen" ist im Berlinischen das Töpfchen, auf das man kleine Kinder zum Sauberwerden setzt. „Setz dir aufs Töppchen, mein Schatz." Die berlinerische Koseform mit Verkleinerung gehört zum liebevollen Familienjargon, wenn Eltern oder Großeltern mit den Kleinsten reden und sie behutsam anleiten.',
+      beispiel: 'Komm, setz dir aufs Töppchen, mein Kleenet.',
+      beispiel_hd: 'Komm, setz dich aufs Töpfchen, mein Kleines.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-505',
+      ausdruck: 'Hutschnur',
+      hochdeutsch: 'Geduldsgrenze',
+      bedeutung: 'Wenn einem im Berlinischen etwas „über die Hutschnur jeht", ist die Geduldsgrenze überschritten, das Maß voll. „Jetzt jeht\'s mir aber über die Hutschnur!" Eine bildhafte Redewendung für den Moment, in dem einem der Kragen platzt. Die Hutschnur steht dabei als Sinnbild für die letzte Grenze.',
+      beispiel: 'Det jeht mir jetzt aber über die Hutschnur!',
+      beispiel_hd: 'Das geht mir jetzt aber über die Geduldsgrenze!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-506',
+      ausdruck: 'Klüten',
+      hochdeutsch: 'Klumpen / Klöße',
+      bedeutung: '„Klüten" sind im Berlinischen und Norddeutschen Klumpen oder Klöße — etwa Erdklumpen oder die Klümpchen in einer schlecht gerührten Soße. „In der Stippe sind lauter Klüten!" Ein bodenständiges Wort für unschöne Klumpen, das vom Acker bis zum Kochtopf reicht und oft mit Unmut benutzt wird.',
+      beispiel: 'In der Soße sind ja lauter Klüten drin!',
+      beispiel_hd: 'In der Soße sind ja lauter Klumpen drin!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-507',
+      ausdruck: 'Pofel',
+      hochdeutsch: 'minderwertiges Zeug / Ramsch',
+      bedeutung: '„Pofel" ist im Berlinischen minderwertige Ware, billiger Ramsch, Schund. „Det is doch nur Pofel, kauf det nich!" Ein abwertendes Wort für schlechte Qualität und wertlosen Krempel. Wer Pofel verkauft, bietet nur Plunder feil — die Berliner Schnauze nennt das klar beim Namen.',
+      beispiel: 'Auf\'m Flohmarkt jibt\'s viel Pofel zu kaufen.',
+      beispiel_hd: 'Auf dem Flohmarkt gibt es viel minderwertiges Zeug zu kaufen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'b-508',
+      ausdruck: 'Klamotte',
+      hochdeutsch: 'derber Schwank / altes Stück',
+      bedeutung: 'Eine „Klamotte" ist im Berlinischen außer einem Kleidungsstück auch ein derber, alberner Bühnenschwank oder ein abgenutzter alter Scherz. „Det Theaterstück war \'ne richtje Klamotte." Ein Wort aus der Welt der Berliner Volksbühnen und Possen für derbe, anspruchslose Unterhaltung.',
+      beispiel: 'Det Stück war \'ne alberne Klamotte, aber lustich.',
+      beispiel_hd: 'Das Stück war ein alberner Schwank, aber lustig.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-509',
+      ausdruck: 'Gassenhauer',
+      hochdeutsch: 'volkstümlicher Schlager',
+      bedeutung: 'Ein „Gassenhauer" ist im Berlinischen ein volkstümliches, eingängiges Lied, das jeder mitsingen kann — ein Schlager der Straße. „Det olle Berliner Lied is \'n echter Gassenhauer." Solche Gassenhauer wie „Berliner Luft" wurden auf Höfen und in Kneipen geschmettert und gehören zur musikalischen Seele der Stadt.',
+      beispiel: '„Berliner Luft" is \'n echter Gassenhauer.',
+      beispiel_hd: '„Berliner Luft" ist ein echter volkstümlicher Schlager.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-510',
+      ausdruck: 'Leierkasten',
+      hochdeutsch: 'Drehorgel',
+      bedeutung: 'Der „Leierkasten" ist im Berlinischen die Drehorgel des Straßenmusikanten — ein Wahrzeichen des alten Berlins. „Der Leierkastenmann spielte uffm Hinterhof." Mit Kurbel und Walze brachte der Leierkasten Musik in die Hinterhöfe, und die Kinder tanzten dazu. Ein Stück nostalgischer Berliner Kultur.',
+      beispiel: 'Auf\'m Hof spielte früher \'n Leierkasten.',
+      beispiel_hd: 'Auf dem Hof spielte früher eine Drehorgel.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-511',
+      ausdruck: 'Tingeltangel',
+      hochdeutsch: 'einfache Varieté-Unterhaltung',
+      bedeutung: '„Tingeltangel" ist im Berlinischen die anspruchslose, seichte Unterhaltung kleiner Varietés und Vergnügungslokale. „In der Kneipe jab\'s abends \'n bisken Tingeltangel." Ein lautmalerisches Wort, das an klimpernde Klaviermusik und billige Bühnenshows der alten Berliner Amüsierlokale erinnert.',
+      beispiel: 'Im Lokal jab\'s abends Tingeltangel und Klavier.',
+      beispiel_hd: 'Im Lokal gab es abends seichte Unterhaltung und Klavier.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'b-512',
+      ausdruck: 'Pellkartoffelgesicht',
+      hochdeutsch: 'unschönes Gesicht',
+      bedeutung: 'Ein „Pellkartoffelgesicht" ist im Berlinischen ein spöttischer Ausdruck für ein knubbeliges, unschönes oder ausdrucksloses Gesicht. „Mach nich so \'n Pellkartoffelgesicht!" Der bildhafte Vergleich mit der unförmigen Kartoffel zeigt den typisch derben, aber humorvollen Berliner Spott über das Aussehen.',
+      beispiel: 'Zieh nich so \'n Pellkartoffelgesicht, lach ma!',
+      beispiel_hd: 'Zieh nicht so ein mürrisches Gesicht, lach mal!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'b-513',
+      ausdruck: 'Steppke',
+      hochdeutsch: 'kleiner Junge',
+      bedeutung: 'Ein „Steppke" ist im Berlinischen ein kleiner Junge, ein Knirps. „So \'n kleener Steppke und schon so frech!" Ein liebevoll-anerkennendes Wort für ein lebhaftes Kind. Gehört zum warmherzigen Teil der Berliner Mundart und wird oft mit einem Schmunzeln über die Pfiffigkeit der Kleinen gesagt.',
+      beispiel: 'Der kleene Steppke flitzt durch\'n janzen Hof.',
+      beispiel_hd: 'Der kleine Junge flitzt durch den ganzen Hof.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-514',
+      ausdruck: 'Schmackes',
+      hochdeutsch: 'Schwung / Wucht',
+      bedeutung: '„Schmackes" ist im Berlinischen Schwung, Kraft, Wucht. „Da musste mit Schmackes ranjehn!" Wer etwas mit Schmackes tut, geht es kraftvoll und beherzt an. Ein energiegeladenes Wort, das zur Tatkraft auffordert und alles Halbherzige ausschließt — pack es an, mit ordentlich Schmackes!',
+      beispiel: 'Hau den Nagel mit Schmackes rein!',
+      beispiel_hd: 'Schlag den Nagel mit Schwung rein!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-515',
+      ausdruck: 'Quasselstrippe',
+      hochdeutsch: 'Vielredner / Plappermaul',
+      bedeutung: 'Eine „Quasselstrippe" ist im Berlinischen jemand, der pausenlos und ohne Punkt und Komma redet — ein Plappermaul. „Die Quasselstrippe hört ja jar nich mehr uff!" Zusammengesetzt aus „quasseln" und „Strippe". Mal genervt, mal liebevoll für eine besonders redselige Person gebraucht.',
+      beispiel: 'Meine Tante is \'ne richtje Quasselstrippe.',
+      beispiel_hd: 'Meine Tante ist ein richtiges Plappermaul.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-516',
+      ausdruck: 'Klatschbase',
+      hochdeutsch: 'Tratschtante',
+      bedeutung: 'Eine „Klatschbase" ist im Berlinischen eine geschwätzige Person, die gern über andere tratscht und Gerüchte verbreitet. „Die olle Klatschbase weeß allet über jeden." Ein abwertend-spöttisches Wort für jemanden, der den neuesten Klatsch im Haus verbreitet und nichts für sich behalten kann.',
+      beispiel: 'Die Klatschbase ausm dritten Stock weeß allet.',
+      beispiel_hd: 'Die Tratschtante aus dem dritten Stock weiß alles.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-517',
+      ausdruck: 'Schlafmütze',
+      hochdeutsch: 'verträumter, langsamer Mensch',
+      bedeutung: 'Eine „Schlafmütze" ist im Berlinischen ein verschlafener, langsamer oder unaufmerksamer Mensch. „Nu wach uff, du Schlafmütze!" Mal liebevoll, mal genervt gemeint für jemanden, der nicht in die Gänge kommt oder geistig abwesend ist. Auch die Nachtmütze trägt diesen Namen.',
+      beispiel: 'Nu komm in die Puschen, du olle Schlafmütze!',
+      beispiel_hd: 'Nun komm in die Gänge, du verträumter Mensch!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-518',
+      ausdruck: 'Trinkgeld',
+      hochdeutsch: 'Trinkgeld',
+      bedeutung: 'Das „Trinkgeld" ist in Berlin der kleine Obolus, den man dem Kellner oder Taxifahrer für guten Service zusteckt. „Lass dem Ober \'n anständjet Trinkgeld da!" In den Berliner Eckkneipen gehört das Trinkgeld zum guten Ton — wer zufrieden ist, rundet großzügig auf und zeigt seine Anerkennung.',
+      beispiel: 'Der Kellner war nett, der kriecht \'n jutet Trinkgeld.',
+      beispiel_hd: 'Der Kellner war nett, der bekommt ein gutes Trinkgeld.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-519',
+      ausdruck: 'Knete',
+      hochdeutsch: 'Geld',
+      bedeutung: '„Knete" ist im Berlinischen ein saloppes Wort für Geld, Kohle, Moneten. „Hast du noch \'n bisken Knete übrig?" Reiht sich ein in die lange Berliner Sammlung von Geldausdrücken neben Pinke, Penunse und Kohle. Wer Knete hat, ist flüssig; wer keine hat, muss sich strecken.',
+      beispiel: 'Für\'n neuet Fahrrad fehlt mir noch die Knete.',
+      beispiel_hd: 'Für ein neues Fahrrad fehlt mir noch das Geld.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-520',
+      ausdruck: 'Pennbruder',
+      hochdeutsch: 'Obdachloser / Stadtstreicher',
+      bedeutung: 'Ein „Pennbruder" ist im Berlinischen ein Obdachloser, ein Stadtstreicher, der „auf der Straße pennt". „Am Bahnhof sitzen \'n paar Pennbrüder." Ein altes Wort für die Wohnungslosen der Großstadt, das mal mitleidig, mal abschätzig benutzt wird und zum sozialen Wortschatz Berlins gehört.',
+      beispiel: 'Vor\'m Bahnhof wärmt sich \'n Pennbruder am Schacht.',
+      beispiel_hd: 'Vor dem Bahnhof wärmt sich ein Obdachloser am Schacht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'b-521',
+      ausdruck: 'Hechtsuppe',
+      hochdeutsch: 'eisige Kälte / Zugluft',
+      bedeutung: 'Wenn es im Berlinischen „zieht wie Hechtsuppe", herrscht eisige Zugluft oder klirrende Kälte. „Mach det Fenster zu, et zieht wie Hechtsuppe!" Eine bekannte Berliner Redewendung, deren Herkunft umstritten ist. Sie beschreibt anschaulich einen unangenehmen, kalten Luftzug, der durch alle Ritzen pfeift.',
+      beispiel: 'Mach die Tür zu, hier zieht\'s wie Hechtsuppe!',
+      beispiel_hd: 'Mach die Tür zu, hier zieht es eisig kalt!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'b-522',
+      ausdruck: 'Schusterjunge',
+      hochdeutsch: 'dunkles Roggenbrötchen',
+      bedeutung: 'Ein „Schusterjunge" ist in Berlin ein dunkles, herzhaftes Roggenbrötchen — das kräftige Gegenstück zur hellen Schrippe. „\'n Schusterjunge mit Schmalz, herrlich!" Ein urberliner Bäckereibegriff, der zum traditionellen Frühstückstisch der Stadt gehört und die Vielfalt der Berliner Backwaren zeigt.',
+      beispiel: 'Zum Frühstück ess ick gern \'n Schusterjunge.',
+      beispiel_hd: 'Zum Frühstück esse ich gern ein dunkles Roggenbrötchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-523',
+      ausdruck: 'Plörre',
+      hochdeutsch: 'dünnes, schlechtes Getränk',
+      bedeutung: '„Plörre" ist im Berlinischen ein dünnes, fades oder schlechtes Getränk — meist verwässerter Kaffee oder labbriges Bier. „Det is doch keen Kaffee, det is Plörre!" Ein abwertendes Wort für eine geschmacklose Brühe, das den Unmut über minderwertige Getränke unverblümt ausdrückt.',
+      beispiel: 'Der Kaffee in der Kantine is reine Plörre.',
+      beispiel_hd: 'Der Kaffee in der Kantine ist reine Brühe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-524',
+      ausdruck: 'Dröhnung',
+      hochdeutsch: 'Rausch / volle Wirkung',
+      bedeutung: 'Eine „Dröhnung" ist im Berlinischen ein Rausch oder die volle Wirkung von etwas — vom Bier bis zur lauten Musik. „Der hat sich \'ne ordentliche Dröhnung jejeben." Ein saloppes Wort für einen kräftigen Zustand der Benommenheit oder für eine geballte Ladung von irgendetwas Intensivem.',
+      beispiel: 'Nach drei Mollen hatte er \'ne ordentliche Dröhnung.',
+      beispiel_hd: 'Nach drei Bieren hatte er einen ordentlichen Rausch.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'b-525',
+      ausdruck: 'Pieke',
+      hochdeutsch: 'Anfang / von Grund auf',
+      bedeutung: 'Etwas „von der Pieke auf" lernen heißt im Berlinischen, es von Grund auf, von Anfang an gründlich zu erlernen. „Der hat det Handwerk von der Pieke auf jelernt." Die „Pieke" war einst der Spieß des einfachen Landsknechts — wer von der Pieke auf dient, beginnt ganz unten und arbeitet sich hoch.',
+      beispiel: 'Ick hab det Bäckerhandwerk von der Pieke auf jelernt.',
+      beispiel_hd: 'Ich habe das Bäckerhandwerk von Grund auf gelernt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'b-526',
+      ausdruck: 'Kohldampf',
+      hochdeutsch: 'großer Hunger',
+      bedeutung: '„Kohldampf" haben heißt im Berlinischen großen Hunger haben, am Hungertuch nagen. „Ick hab vielleicht \'n Kohldampf!" Das Wort verbindet zwei Rotwelsch-Begriffe für Hunger. Wer Kohldampf schiebt, hat einen Bärenhunger und sehnt sich nach einer kräftigen Mahlzeit — ein altes Berliner Wort.',
+      beispiel: 'Nach der Maloche hab ick \'n Kohldampf wie \'n Wolf.',
+      beispiel_hd: 'Nach der Arbeit habe ich einen Hunger wie ein Wolf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'b-527',
+      ausdruck: 'Klabautermann',
+      hochdeutsch: 'Schiffskobold / Unruhestifter',
+      bedeutung: 'Der „Klabautermann" ist im Berlinischen und Norddeutschen ein Schiffskobold, übertragen auch ein unruhiger Geist oder Zappelphilipp. „Der kleene Klabautermann hält uns alle auf Trab." Ein bildhaftes Wort aus der Seemannswelt, in Berlin scherzhaft für einen lebhaften kleinen Wirbelwind gebraucht.',
+      beispiel: 'Unser Jüngster is \'n richtjer Klabautermann.',
+      beispiel_hd: 'Unser Jüngster ist ein richtiger Unruhestifter.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-528',
+      ausdruck: 'Schmonzes',
+      hochdeutsch: 'sentimentaler Unsinn / Gefasel',
+      bedeutung: '„Schmonzes" ist im Berlinischen sentimentales, überflüssiges Gerede oder rührseliger Unsinn. „Erzähl mir keen Schmonzes!" Das Wort stammt aus dem Jiddischen und meint leeres, gefühlsduseliges Gefasel. Wird benutzt, um kitschiges oder belangloses Geschwätz nüchtern abzuwehren — typisch berlinerische Direktheit.',
+      beispiel: 'Hör uff mit dem Schmonzes und komm zur Sache!',
+      beispiel_hd: 'Hör auf mit dem Gefasel und komm zur Sache!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'b-529',
+      ausdruck: 'Strampelpeter',
+      hochdeutsch: 'zappeliges Kind',
+      bedeutung: 'Ein „Strampelpeter" ist im Berlinischen ein zappeliges, unruhiges kleines Kind, das ständig in Bewegung ist. „Mein kleener Strampelpeter liecht nie still." Ein liebevoll-scherzhaftes Wort aus dem Familienalltag für einen quirligen Säugling oder Knirps, der vor Energie kaum stillhalten kann.',
+      beispiel: 'Unser Baby is \'n richtjer Strampelpeter.',
+      beispiel_hd: 'Unser Baby ist ein richtiges Zappelkind.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'b-530',
+      ausdruck: 'Plünnen',
+      hochdeutsch: 'alte Klamotten / Lumpen',
+      bedeutung: '„Plünnen" sind im Berlinischen und Norddeutschen alte, abgetragene Kleidungsstücke, Lumpen oder Krempel. „Räum deine Plünnen weg!" Ein abwertendes Wort für schäbige Klamotten oder allerlei Gerümpel, das herumliegt. Gehört zum bodenständigen Berliner Wortschatz rund um Kleidung und Plunder.',
+      beispiel: 'Pack deine Plünnen zusammen, wir ziehn um!',
+      beispiel_hd: 'Pack deine alten Klamotten zusammen, wir ziehen um!',
+      kategorie: 'alltag'
     }
   ]
 };

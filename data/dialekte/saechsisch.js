@@ -2368,6 +2368,816 @@ export default {
       beispiel: 'Bei mir zu Hause gilt noch Zucht und Ordnung!',
       beispiel_hd: 'Bei mir zu Hause gilt noch Zucht und Ordnung!',
       kategorie: 'familie'
+    },
+    {
+      id: 's-271',
+      ausdruck: 'Heeede',
+      hochdeutsch: 'Heide / Heideland',
+      bedeutung: 'Die „Heeede" ist die sächsische Aussprache von „Heide" — das „ai" wird zum gedehnten „ee", die Endung weich. Die Dresdner Heide ist ein riesiges Waldgebiet im Norden der Stadt, beliebt zum Spazieren, Radfahren und Pilzesuchen. „Mer gehn ä bissel in de Heeede!" Auch die Laußnitzer und die Königsbrücker Heide sind weithin bekannt. Ein typisch sächsisches Lautbeispiel und zugleich ein Stück Heimat.',
+      beispiel: 'Am Sonndach gehn mer in de Heeede Pilze suchen!',
+      beispiel_hd: 'Am Sonntag gehen wir in die Heide Pilze suchen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-272',
+      ausdruck: 'Gör',
+      hochdeutsch: 'kleines Kind / Göre',
+      bedeutung: 'Das „Gör" ist im Sächsischen ein kleines Kind, oft ein freches oder lebhaftes. „So ä freches Gör!" Das Wort kann liebevoll oder leicht tadelnd gemeint sein, je nach Tonfall. Verbreitet im ganzen mitteldeutschen Raum, aber im Sächsischen besonders gebräuchlich. Die Mehrzahl lautet „Gören". Drückt eine Mischung aus Zuneigung und mildem Augenrollen über den kindlichen Übermut aus.',
+      beispiel: 'Das Gör hat schon wieder den ganzn Kuchn ausm Schrank geholt!',
+      beispiel_hd: 'Das Kind hat schon wieder den ganzen Kuchen aus dem Schrank geholt!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-273',
+      ausdruck: 'nüschd',
+      hochdeutsch: 'nichts',
+      bedeutung: 'Das Wort „nüschd" ist die sächsische Aussprache von „nichts" — mit dem typisch weichen, gelispelten „sch" und der Vokalfärbung zu „ü". „Da is doch nüschd dabei!" Eines der allerbekanntesten sächsischen Lautbeispiele, das oft von Nicht-Sachsen imitiert wird. Wer „nüschd" sagt, ist sofort als Sachse erkannt. Drückt im Alltag Verneinung, Bagatellisierung oder Gleichmut aus.',
+      beispiel: 'Ich hab heude noch gar nüschd gegessn!',
+      beispiel_hd: 'Ich habe heute noch gar nichts gegessen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-274',
+      ausdruck: 'Karnickl',
+      hochdeutsch: 'Kaninchen',
+      bedeutung: 'Das „Karnickl" ist die volkstümliche sächsische Bezeichnung für das Kaninchen. „Mir ham hintn im Garten ä paar Karnickl!" Die Kaninchenzucht war in Sachsen, besonders in der DDR-Zeit, eine weit verbreitete Selbstversorgung im Schrebergarten. Das Wort klingt durch die weichen Konsonanten gemütlich-bodenständig. Auch als Kosename für ein flinkes Kind gelegentlich verwendet.',
+      beispiel: 'Die Kinder fittern jeden Morgn de Karnickl im Stall!',
+      beispiel_hd: 'Die Kinder füttern jeden Morgen die Kaninchen im Stall!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-275',
+      ausdruck: 'Mudschl',
+      hochdeutsch: 'Schmusekind / kleiner Liebling',
+      bedeutung: 'Das „Mudschl" ist im Sächsischen ein zärtlicher Kosename für ein kleines, anschmiegsames Kind oder einen geliebten Menschen. „Komm her, mei Mudschl!" Das Wort strahlt Wärme und Geborgenheit aus und gehört zur liebevollen Familiensprache. Im Erzgebirge und in der Lausitz besonders gebräuchlich. Eine der vielen klangvollen Verkleinerungsformen, die das Sächsische so herzlich machen.',
+      beispiel: 'Na komm, mei kleenes Mudschl, ich nehm dich uffn Arm!',
+      beispiel_hd: 'Na komm, mein kleiner Liebling, ich nehme dich auf den Arm!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-276',
+      ausdruck: 'gell',
+      hochdeutsch: 'nicht wahr? / oder?',
+      bedeutung: 'Das Wörtchen „gell" hängt der Sachse gern ans Satzende, um Zustimmung einzuholen — wie das hochdeutsche „nicht wahr?". „Das schmeckt gut, gell?" Es schafft Nähe und bezieht den Gesprächspartner mit ein. Im südsächsischen und vogtländischen Raum besonders verbreitet, dort grenzt es ans Fränkische. Eine kleine Partikel mit großer sozialer Funktion im sächsischen Plauderton.',
+      beispiel: 'Du kummst doch heude Abend och mit, gell?',
+      beispiel_hd: 'Du kommst doch heute Abend auch mit, nicht wahr?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-277',
+      ausdruck: 'Babbsch',
+      hochdeutsch: 'etwas Klebriges / Matsch',
+      bedeutung: 'Ein „Babbsch" ist im Sächsischen etwas Klebriges, Pampiges oder Matschiges. „Igitt, was is\'n das für ä Babbsch!" Das Wort ist lautmalerisch und leitet sich von „pappen" (kleben) ab. Kinder benutzen es gern für matschiges Essen oder Dreck. Durch die verdoppelten weichen Konsonanten klingt es besonders bildhaft. Typisch für die plastische, klangvolle Wortbildung des Sächsischen.',
+      beispiel: 'Der Brei is ja ä einziger Babbsch, den ess ich nich!',
+      beispiel_hd: 'Der Brei ist ja ein einziger Matsch, den esse ich nicht!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-278',
+      ausdruck: 'Ärbeed',
+      hochdeutsch: 'Arbeit',
+      bedeutung: 'Das Wort „Ärbeed" ist die sächsische Aussprache von „Arbeit" — das „ei" wird zum gedehnten „ee", der Anlaut zu „Ä" gefärbt. „Ich muss morgn früh zur Ärbeed!" Sachsen sind für ihren Fleiß bekannt, und die Ärbeed nimmt im Alltag einen hohen Stellenwert ein. Ein klassisches Lautbeispiel, das die typische Vokalverschiebung des Dialekts gut zeigt.',
+      beispiel: 'Nach dor Ärbeed gehn mer noch ä Bierchn trinken!',
+      beispiel_hd: 'Nach der Arbeit gehen wir noch ein Bierchen trinken!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-279',
+      ausdruck: 'Dippel',
+      hochdeutsch: 'Beule / kleiner Höcker',
+      bedeutung: 'Ein „Dippel" ist im Sächsischen eine Beule, ein kleiner Höcker oder eine Unebenheit. „Vom Anstoßn hab ich ä dickn Dippel am Kopp!" Das Wort beschreibt die Schwellung nach einem Stoß ebenso wie eine kleine Unebenheit auf einer Oberfläche. Es ist im mitteldeutschen Raum weit verbreitet und bodenständig. Klingt durch die weichen Konsonanten harmlos-niedlich. Ein anschauliches, klangvolles Mundartwort aus dem Alltag.',
+      beispiel: 'Au, jetz hab ich mir ä dickn Dippel am Kopp gestoßn!',
+      beispiel_hd: 'Au, jetzt habe ich mir eine dicke Beule am Kopf gestoßen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-280',
+      ausdruck: 'gerscht',
+      hochdeutsch: 'gerade eben / erst',
+      bedeutung: 'Das Wort „gerscht" ist die sächsische Verschleifung von „gerade erst" oder „gerade jetzt". „Ich bin doch gerscht erst gekomm!" Die typische Lautverschmelzung mit dem weichen „sch" zeigt, wie Sachsen Silben zusammenziehen. Es drückt zeitliche Nähe aus — etwas ist soeben oder vor Kurzem geschehen. Im gesprochenen Alltagssächsisch sehr häufig zu hören.',
+      beispiel: 'Lass mich in Ruh, ich bin doch gerscht erst heeme!',
+      beispiel_hd: 'Lass mich in Ruhe, ich bin doch gerade erst zu Hause!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-281',
+      ausdruck: 'Glumbe',
+      hochdeutsch: 'Quark',
+      bedeutung: 'Die „Glumbe" ist in Teilen Sachsens, besonders im Erzgebirge, die mundartliche Bezeichnung für Quark. „Mach mor ä Bemme mit Glumbe drauf!" Quark mit Leinöl und Pellkartoffeln ist ein klassisches mitteldeutsches Essen. Das Wort klingt durch die weichen Laute herzhaft-deftig. Es zeigt die regionale Vielfalt des Sächsischen, denn anderswo sagt man „Quark" oder „Glims".',
+      beispiel: 'Zu de Gartoffeln gibt\'s heude Glumbe mit Leinöl!',
+      beispiel_hd: 'Zu den Kartoffeln gibt es heute Quark mit Leinöl!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-282',
+      ausdruck: 'Bammel',
+      hochdeutsch: 'Angst / Furcht',
+      bedeutung: 'Wer „Bammel" hat, der hat Angst oder Lampenfieber vor etwas. „Ich hab vielleicht ä Bammel vor dor Prüfung!" Das Wort ist umgangssprachlich im ganzen mitteldeutschen Raum verbreitet und im Sächsischen fest verankert. Es beschreibt ein mulmiges, beklommenes Gefühl, meist vor einer schwierigen Aufgabe. Klingt durch die weichen Konsonanten weniger bedrohlich als echte Furcht.',
+      beispiel: 'Vor\'m Zahnarzt hab ich jedes Mal ä riesn Bammel!',
+      beispiel_hd: 'Vor dem Zahnarzt habe ich jedes Mal eine riesige Angst!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-283',
+      ausdruck: 'Datsch',
+      hochdeutsch: 'Kartoffelpuffer / Brei',
+      bedeutung: 'Der „Datsch" ist im Sächsischen ein Kartoffelpuffer oder allgemein etwas Breiiges, Plattgedrücktes. „Heude mach ich Datsch mit Abbelmus!" In manchen Gegenden meint man speziell die gebratenen Kartoffelpuffer, in anderen einfach Matsch. Das lautmalerische Wort leitet sich von „datschen" (drücken, platt machen) ab. Ein deftiges Stück sächsischer Hausmannskost.',
+      beispiel: 'Es gibt Datsch mit Abbelmus, ä alter Sachsenschmaus!',
+      beispiel_hd: 'Es gibt Kartoffelpuffer mit Apfelmus, ein alter Sachsenschmaus!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-284',
+      ausdruck: 'Kließe',
+      hochdeutsch: 'Klöße / Knödel',
+      bedeutung: 'Die „Kließe" sind im Sächsischen die Klöße — die Vokalfärbung von „ö" zu „ie" ist typisch. „Zum Bratn gehörn ordntliche Kließe!" Grüne Klöße aus rohen Kartoffeln sind in Sachsen und Thüringen ein Sonntagsgericht, das zu Braten und Soße serviert wird. Das Wort gehört zur deftigen Festtagsküche und weckt bei vielen Sachsen Erinnerungen an das Mittagessen bei Oma.',
+      beispiel: 'Zum Schweinebratn gibt\'s natürlich Kließe und Rotkraut!',
+      beispiel_hd: 'Zum Schweinebraten gibt es natürlich Klöße und Rotkraut!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-285',
+      ausdruck: 'Heeme',
+      hochdeutsch: 'zu Hause / heim',
+      bedeutung: 'Das Wort „Heeme" ist die sächsische Form von „Heim" oder „zu Hause" — das „ei" wird zum gedehnten „ee". „Ich will jetz heeme!" Der Begriff steht für Geborgenheit und das eigene Zuhause. „Heeme is heeme" sagt der Sachse, wenn er ausdrücken will, dass nichts über die eigenen vier Wände geht. Ein zentrales, gefühlsbeladenes Wort des Dialekts.',
+      beispiel: 'Es is schon spät, ich geh jetz lieber heeme!',
+      beispiel_hd: 'Es ist schon spät, ich gehe jetzt lieber nach Hause!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-286',
+      ausdruck: 'Heende',
+      hochdeutsch: 'Hände',
+      bedeutung: 'Das Wort „Heende" ist die sächsische Aussprache von „Hände" — die Vokalfärbung dehnt den Laut zum charakteristischen „ee". „Wasch dir erst mal de Heende!" Ein typisches Lautbeispiel des Dialekts, das gern beim Imitieren benutzt wird. Im Alltag fällt das Wort ständig, etwa beim Aufruf zur Sauberkeit vor dem Essen. Die weiche Aussprache ist unverkennbar sächsisch.',
+      beispiel: 'Junge, mach de Heende sauber, gleich gibt\'s Essn!',
+      beispiel_hd: 'Junge, mach die Hände sauber, gleich gibt es Essen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-287',
+      ausdruck: 'Beemd',
+      hochdeutsch: 'Hemd',
+      bedeutung: 'Das „Beemd" ist die sächsische Variante von „Hemd" — der Anlaut wird zu „B" erweicht und der Vokal gefärbt. „Zieh dor ä saubres Beemd an!" Wieder ein Beispiel für die typische Lautverschiebung des Dialekts, bei der harte Anlaute weich werden. Im Alltag hört man das Wort beim Ankleiden oder beim Wäschewaschen. Bodenständig und unverkennbar obersächsisch.',
+      beispiel: 'Für die Feier ziehste dor ä frisches Beemd an, gell!',
+      beispiel_hd: 'Für die Feier ziehst du dir ein frisches Hemd an, nicht wahr!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-288',
+      ausdruck: 'Forz',
+      hochdeutsch: 'Kleinigkeit / Unsinn',
+      bedeutung: 'Im Sächsischen steht „Forz" oft bildlich für eine völlige Lappalie oder Belanglosigkeit. „Das is doch ä Forz, da reg dich nich uff!" Die derbe, aber harmlose Redewendung gehört zum bodenständigen Humor der Region. Auch in „wegen jedem Forz" (wegen jeder Kleinigkeit) sehr gebräuchlich. Trotz des deftigen Wortes ist die Bedeutung meist nur scherzhaft-relativierend gemeint.',
+      beispiel: 'Wegen jedem kleenen Forz musste gleich rummeckern!',
+      beispiel_hd: 'Wegen jeder kleinen Kleinigkeit musst du gleich herummeckern!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-289',
+      ausdruck: 'Bummi',
+      hochdeutsch: 'Teddybär / Kuscheltier',
+      bedeutung: 'Der „Bummi" war eine beliebte Bären-Figur aus einer DDR-Kinderzeitschrift und steht im Sächsischen liebevoll für jedes Kuscheltier oder einen Teddybären. „Wo is denn dein Bummi?" Generationen sächsischer Kinder wuchsen mit dem gelben Bären auf. Heute noch wird das Wort als zärtlicher Sammelbegriff fürs Lieblingsstofftier benutzt. Ein Stück ostdeutscher Kindheitsnostalgie.',
+      beispiel: 'Ohne sein Bummi schläft das Gör nich ein!',
+      beispiel_hd: 'Ohne seinen Teddybären schläft das Kind nicht ein!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-290',
+      ausdruck: 'Gusche halten',
+      hochdeutsch: 'den Mund halten',
+      bedeutung: 'Die Aufforderung „Gusche halten" heißt im Sächsischen schlicht „den Mund halten". „Nu halt endlich die Gusche!" Die „Gusche" ist der Mund, und die Wendung wird ärgerlich, aber auch scherzhaft unter Freunden gebraucht. Sie gehört zum direkten, bodenständigen Ton der Region. Wer zu viel redet, bekommt diese Aufforderung schnell zu hören — meist ohne echte Bösartigkeit.',
+      beispiel: 'Jetz halt mal die Gusche und lass mich ausredn!',
+      beispiel_hd: 'Jetzt halt mal den Mund und lass mich ausreden!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-291',
+      ausdruck: 'Lällebäbb',
+      hochdeutsch: 'Schwätzer / Dummschwätzer',
+      bedeutung: 'Ein „Lällebäbb" ist im Sächsischen jemand, der viel und wenig Sinnvolles redet — ein Schwätzer oder Tölpel. „Hör nich uff den Lällebäbb!" Das Wort ist lautmalerisch von „lallen" und „babbeln" abgeleitet und klingt herrlich abschätzig. Es gehört zum reichen Schatz sächsischer Spottnamen. Meist scherzhaft-genervt gemeint, selten wirklich böse — typisch für den sächsischen Wortwitz.',
+      beispiel: 'Der olle Lällebäbb erzählt den ganzn Dag nur Mist!',
+      beispiel_hd: 'Der alte Schwätzer erzählt den ganzen Tag nur Unsinn!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 's-292',
+      ausdruck: 'Äbbern',
+      hochdeutsch: 'Kartoffeln',
+      bedeutung: 'Die „Äbbern" sind in Teilen Sachsens die Kartoffeln — eine bodenständige Mundartbezeichnung, abgeleitet von „Erdäpfel". „Mer ham heude Äbbern mit Quark!" Die Kartoffel ist Grundnahrungsmittel der sächsischen Küche und kommt in unzähligen Varianten auf den Tisch. Das Wort zeigt, wie stark die mitteldeutsche Mundart die alltägliche Sprache prägt. Deftig, regional und unverkennbar.',
+      beispiel: 'Hol mal ä paar Äbbern ausm Keller hoch!',
+      beispiel_hd: 'Hol mal ein paar Kartoffeln aus dem Keller hoch!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-293',
+      ausdruck: 'Bibberschen',
+      hochdeutsch: 'Frieren / zittern vor Kälte',
+      bedeutung: 'Das „Bibberschen" beschreibt im Sächsischen das Zittern und Frieren bei Kälte. „Mir is so kalt, ich fang glei das Bibberschen an!" Lautmalerisch von „bibbern" abgeleitet, mit der typischen Verkleinerung versehen. Im rauen erzgebirgischen Winter ein vertrautes Gefühl. Das Wort vermittelt eine fast schon gemütliche Note trotz der unangenehmen Kälte — sächsischer Sprachhumor pur.',
+      beispiel: 'Ohne Mütze fängste hier draußn glei das Bibberschen an!',
+      beispiel_hd: 'Ohne Mütze fängst du hier draußen gleich das Frieren an!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-294',
+      ausdruck: 'Schmu',
+      hochdeutsch: 'Betrug / fauler Trick',
+      bedeutung: 'Wer „Schmu" macht, der schummelt, betrügt oder treibt krumme Geschäfte. „Da is doch Schmu im Spiel!" Das Wort ist im mitteldeutschen Raum verbreitet und im Sächsischen alltäglich. Es beschreibt unredliches Verhalten, kleine Schwindeleien oder Mauscheleien. Trotz der negativen Bedeutung klingt es eher harmlos-schelmisch. Ein praktisches Wort, um leise Skepsis auszudrücken.',
+      beispiel: 'Bei dem Angebot is bestimmt irgndwo Schmu dabei!',
+      beispiel_hd: 'Bei dem Angebot ist bestimmt irgendwo Betrug dabei!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-295',
+      ausdruck: 'Heenflee',
+      hochdeutsch: 'Hühnerflöhe / Gänsehaut',
+      bedeutung: 'Im Sächsischen sagt man scherzhaft, man kriege „Heenflee", wenn man eine Gänsehaut bekommt — vor Kälte oder Aufregung. „Bei der Musik krieg ich glatt Heenflee!" Wörtlich „Hühnerflöhe", denn die aufgestellten Härchen erinnern an krabbelnde Tierchen. Ein bildhaftes, humorvolles Wort, das die plastische sächsische Sprachfantasie zeigt. Liebevoll-übertreibend verwendet.',
+      beispiel: 'Bei dem Chor in dor Kirsche krieg ich richtig Heenflee!',
+      beispiel_hd: 'Bei dem Chor in der Kirche bekomme ich richtig Gänsehaut!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-296',
+      ausdruck: 'Gauchel',
+      hochdeutsch: 'Purzelbaum / Überschlag',
+      bedeutung: 'Ein „Gauchel" ist im Sächsischen ein Purzelbaum oder Überschlag, den Kinder auf der Wiese machen. „Schau mal, ich kann ä Gauchel schlagen!" Das Wort gehört zur fröhlichen Kindersprache und beschreibt das übermütige Herumtollen. Im Erzgebirge und Vogtland gebräuchlich. Es weckt Erinnerungen an unbeschwerte Kindheitstage und zeigt den Reichtum sächsischer Mundartwörter für alltägliche Dinge.',
+      beispiel: 'Die Gören schlagen den ganzn Nachmiddag Gauchel im Gras!',
+      beispiel_hd: 'Die Kinder schlagen den ganzen Nachmittag Purzelbaum im Gras!',
+      kategorie: 'sport'
+    },
+    {
+      id: 's-297',
+      ausdruck: 'Schälchen Heeßen',
+      hochdeutsch: 'Tasse Kaffee',
+      bedeutung: 'Das „Schälchen Heeßen" ist die berühmteste sächsische Umschreibung für eine Tasse Kaffee — wörtlich „Schälchen Heißes". „Komm, mer trinken erst mal ä Schälchen Heeßen!" Sachsen gelten als Kaffeesachsen mit jahrhundertealter Kaffeetradition. Die liebevolle Wendung ist Kult und steht für Gastfreundschaft und Gemütlichkeit. Kaum eine Phrase ist sächsischer als diese Einladung zum Kaffee.',
+      beispiel: 'Setz dich hin, ich mach uns ä Schälchen Heeßen!',
+      beispiel_hd: 'Setz dich hin, ich mache uns eine Tasse Kaffee!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-298',
+      ausdruck: 'Ranzen',
+      hochdeutsch: 'Bauch / Schulranzen',
+      bedeutung: 'Der „Ranzen" ist im Sächsischen doppeldeutig: der dicke Bauch oder der Schulranzen der Kinder. „Mach dor nich so den Ranzen voll!" oder „Pack deinen Ranzen!" Das Wort ist deftig-bodenständig und gehört zum Alltagswortschatz. Beim Bauch klingt eine humorvoll-tadelnde Note mit, beim Schulranzen die Aufforderung zur Ordnung. Ein vielseitiges, klangvolles Mundartwort.',
+      beispiel: 'Iss nich so viel, sonst kriegste ä dickn Ranzen!',
+      beispiel_hd: 'Iss nicht so viel, sonst bekommst du einen dicken Bauch!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-299',
+      ausdruck: 'Murkel',
+      hochdeutsch: 'kleines Kind / Knirps',
+      bedeutung: 'Ein „Murkel" ist im Sächsischen ein kleines, niedliches Kind — ein Knirps. „So ä süßer kleener Murkel!" Das Wort ist liebevoll und gehört zur zärtlichen Familiensprache. Es beschreibt meist ein Kleinkind, das gerade laufen lernt oder besonders herzig ist. Im mitteldeutschen Raum weit verbreitet. Eines der vielen warmherzigen Kosewörter, mit denen Sachsen ihre Kleinsten bedenken.',
+      beispiel: 'Guck dor mal den kleenen Murkel an, wie der lacht!',
+      beispiel_hd: 'Schau dir mal den kleinen Knirps an, wie der lacht!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-300',
+      ausdruck: 'Mährn',
+      hochdeutsch: 'Möhren / Karotten',
+      bedeutung: 'Die „Mährn" sind im Sächsischen die Möhren oder Karotten — die Vokalfärbung ist typisch für den Dialekt. „Hol mor noch ä paar Mährn fürn Eintopp!" Möhren gehören zur Grundausstattung jeder sächsischen Küche und landen im Eintopf, im Salat oder roh als Knabberei. Das Wort ist bodenständig und alltäglich. Auch im Schrebergarten werden Mährn gern selbst angebaut.',
+      beispiel: 'In den Eintopp gehörn noch ä paar frische Mährn rein!',
+      beispiel_hd: 'In den Eintopf gehören noch ein paar frische Möhren hinein!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-301',
+      ausdruck: 'verkohln',
+      hochdeutsch: 'jemanden veralbern / anschwindeln',
+      bedeutung: 'Wer jemanden „verkohln" will, der will ihn auf den Arm nehmen oder zum Narren halten. „Du willst mich wohl verkohln!" Das Wort ist im mitteldeutschen Raum verbreitet und im Sächsischen alltäglich. Es beschreibt harmlosen Spaß auf Kosten eines anderen, einen Scherz oder eine kleine Flunkerei. Meist ohne böse Absicht, eher als augenzwinkerndes Spiel verstanden.',
+      beispiel: 'Das gloob ich dor nich, du willst mich doch nur verkohln!',
+      beispiel_hd: 'Das glaube ich dir nicht, du willst mich doch nur veralbern!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-302',
+      ausdruck: 'Heefdsche',
+      hochdeutsch: 'Heftchen / kleines Heft',
+      bedeutung: 'Das „Heefdsche" ist im Sächsischen das kleine Heft oder Heftchen — die weiche Aussprache und die Verkleinerung sind charakteristisch. „Schreib dir das in dein Heefdsche!" Gemeint ist oft das Schulheft oder Notizbüchlein. Auch eine dünne Zeitschrift kann gemeint sein. Das Wort zeigt schön die typisch sächsische Vorliebe für Verkleinerungsformen mit dem klangvollen „-sche".',
+      beispiel: 'Schreib dor die Hausaufgabn ins Heefdsche, sonst vergisste se!',
+      beispiel_hd: 'Schreib dir die Hausaufgaben ins Heftchen, sonst vergisst du sie!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-303',
+      ausdruck: 'Hutzelmännel',
+      hochdeutsch: 'kleines, faltiges Männlein',
+      bedeutung: 'Ein „Hutzelmännel" ist im Erzgebirgischen ein kleines, runzliges Männlein — oft eine sagenhafte Zwergenfigur oder scherzhaft ein alter, zusammengeschrumpelter Mann. „Der Opa is ä richtiges Hutzelmännel geworn!" Das Wort kommt von „hutzelig" (verschrumpelt) und gehört zur erzgebirgischen Märchen- und Volkskultur. Liebevoll-spöttisch und tief in der Bergmannsregion verwurzelt.',
+      beispiel: 'In dor Sage wohnt ä kleenes Hutzelmännel im Bergwerk!',
+      beispiel_hd: 'In der Sage wohnt ein kleines faltiges Männlein im Bergwerk!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-304',
+      ausdruck: 'Dracksch',
+      hochdeutsch: 'Schmutz / Dreck',
+      bedeutung: 'Der „Dracksch" beziehungsweise „Dracks" ist im Sächsischen der Dreck oder Schmutz. „Mach nich so ä Dracksch in dor Kische!" Das Wort ist eine derbe, klangvolle Variante von „Dreck" und gehört zum bodenständigen Alltagswortschatz. Eltern benutzen es gern, wenn die Kinder Matsch ins Haus tragen. Durch das raue „sch" wirkt es besonders ausdrucksstark — typisch sächsische Lautmalerei.',
+      beispiel: 'Zieh de Schuh aus, du machst ja den ganzn Dracksch rein!',
+      beispiel_hd: 'Zieh die Schuhe aus, du machst ja den ganzen Dreck herein!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-305',
+      ausdruck: 'Schniepel',
+      hochdeutsch: 'Schnupfen / laufende Nase',
+      bedeutung: 'Wer den „Schniepel" hat, der leidet im Sächsischen unter Schnupfen mit laufender Nase. „Ich hab mir ä ordntlichen Schniepel gehollt!" Das lautmalerische Wort von „schniefen" beschreibt die typische Herbst- und Winterkrankheit. Im rauen erzgebirgischen Klima ein häufiger Begleiter. Das Wort klingt fast schon putzig und nimmt dem Unwohlsein ein wenig die Schwere — sächsischer Sprachhumor.',
+      beispiel: 'Bei dem Wetter hab ich mir glei ä Schniepel geholt!',
+      beispiel_hd: 'Bei dem Wetter habe ich mir gleich einen Schnupfen geholt!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-306',
+      ausdruck: 'Gusche',
+      hochdeutsch: 'Mund / Maul',
+      bedeutung: 'Die „Gusche" ist im Sächsischen der Mund — ein derbes, aber alltägliches Wort. „Du hast vielleicht ä große Gusche!" Es taucht in vielen Wendungen auf, etwa „Gusche halten" oder „eine große Gusche haben" (vorlaut sein). Das Wort gehört zum bodenständigen Kern des Dialekts und wird je nach Tonfall scherzhaft oder tadelnd benutzt. Unverkennbar mitteldeutsch und sehr gebräuchlich.',
+      beispiel: 'Mach mal de Gusche zu, mer versteht ja sein eignes Word nich!',
+      beispiel_hd: 'Mach mal den Mund zu, man versteht ja sein eigenes Wort nicht!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-307',
+      ausdruck: 'Klamotten',
+      hochdeutsch: 'Kleidung / Sachen',
+      bedeutung: 'Die „Klamotten" sind im Sächsischen die Kleidung oder ganz allgemein die Sachen. „Räum mal deine Klamotten weg!" Das umgangssprachliche Wort ist bundesweit bekannt, im Sächsischen aber besonders alltäglich. Es meint Klamotten zum Anziehen ebenso wie herumliegendes Zeug. Klingt locker und unkompliziert und gehört zum entspannten Alltagston der Region. Ein praktischer Sammelbegriff für allerlei.',
+      beispiel: 'Pack deine Klamotten in de Tasche, mer fahrn glei los!',
+      beispiel_hd: 'Pack deine Sachen in die Tasche, wir fahren gleich los!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-308',
+      ausdruck: 'Mäbbsch',
+      hochdeutsch: 'mürrischer Mensch / Miesepeter',
+      bedeutung: 'Ein „Mäbbsch" ist im Sächsischen ein mürrischer, schlecht gelaunter Mensch — ein Miesepeter. „Sei doch nich so ä Mäbbsch!" Das Wort hängt mit „mäbbsch sein“ (eingeschnappt, beleidigt) zusammen und beschreibt jemanden, der schmollt oder ständig nörgelt. Klingt durch das weiche „äbbsch" herrlich bildhaft. Meist scherzhaft-tadelnd gemeint, um jemanden aus seiner miesen Laune zu holen.',
+      beispiel: 'Nu lach doch mal, du oller Mäbbsch!',
+      beispiel_hd: 'Nun lach doch mal, du alter Miesepeter!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-309',
+      ausdruck: 'Heeßmangel',
+      hochdeutsch: 'Heißmangel / Wäscherolle',
+      bedeutung: 'Die „Heeßmangel" ist im Sächsischen die Heißmangel — eine große Rolle zum Glätten von Bettwäsche und Tischdecken. „Ich bring de Bettwäsche zur Heeßmangel!" In DDR-Zeiten gab es in vielen Orten eine gemeinschaftliche Mangelstube, die ein sozialer Treffpunkt war. Das Wort gehört zum Alltag der älteren Generation und weckt Erinnerungen an gestärkte, glatte Wäsche. Bodenständig und nostalgisch.',
+      beispiel: 'De große Bettwäsche kommt immer noch in de Heeßmangel!',
+      beispiel_hd: 'Die große Bettwäsche kommt immer noch in die Heißmangel!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-310',
+      ausdruck: 'Babb',
+      hochdeutsch: 'Vater / Papa',
+      bedeutung: 'Der „Babb" ist im Sächsischen liebevoll der Vater oder Papa. „Frag mal den Babb, ob er mitkommt!" Das Wort gehört zur warmherzigen Familiensprache und wird besonders im südsächsischen und vogtländischen Raum benutzt, wo es ans Fränkische grenzt. Es klingt vertraut und herzlich. Neben „Vadder" eine der gebräuchlichen mundartlichen Anreden für den Vater in sächsischen Familien.',
+      beispiel: 'Der Babb kummt heude ä bissel später von dor Ärbeed!',
+      beispiel_hd: 'Der Papa kommt heute ein bisschen später von der Arbeit!',
+      kategorie: 'familie'
+    },
+    {
+      id: 's-311',
+      ausdruck: 'Gämbe',
+      hochdeutsch: 'Kämme / Kamm',
+      bedeutung: 'Die „Gämbe" ist im Sächsischen der Kamm — der harte Anlaut „K" wird wie üblich zum weichen „G" erweicht. „Wo is denn meine Gämbe?" Ein gutes Beispiel für die durchgängige Konsonantenerweichung des Dialekts. Im Alltag fällt das Wort beim Frisieren oder Suchen im Bad. Bodenständig und lautlich typisch obersächsisch. Zeigt, wie konsequent Sachsen harte Laute weich aussprechen.',
+      beispiel: 'Gib mor mal de Gämbe, ich muss mir de Haare machen!',
+      beispiel_hd: 'Gib mir mal den Kamm, ich muss mir die Haare machen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-312',
+      ausdruck: 'rumeiern',
+      hochdeutsch: 'zögern / herumtrödeln',
+      bedeutung: 'Wer „rumeiert", der zögert, druckst herum oder kann sich nicht entscheiden. „Hör uff rumzueiern und sag endlich, was Sache is!" Das umgangssprachliche Wort ist im Sächsischen alltäglich und beschreibt unentschlossenes, zeitraubendes Verhalten. Sachsen schätzen Klarheit und Tatkraft, deshalb fällt diese Aufforderung schnell. Klingt locker-genervt und gehört zum direkten Alltagston der Region.',
+      beispiel: 'Nu eier nich so rum, entscheid dich endlich mal!',
+      beispiel_hd: 'Nun zögere nicht so herum, entscheide dich endlich mal!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-313',
+      ausdruck: 'Schlawittchen',
+      hochdeutsch: 'Kragen / Jackenkragen',
+      bedeutung: 'Jemanden „am Schlawittchen packen" heißt im Sächsischen, ihn am Kragen zu fassen. „Ich pack dich glei am Schlawittchen!" Das Wort meint den Kragen oder die Kleidung am Nacken und gehört zu einer alten, bildhaften Redewendung. Meist scherzhaft gemeint, etwa wenn man ein davonlaufendes Kind festhält. Ein klangvolles, traditionsreiches Wort, das im Alltag noch lebendig ist.',
+      beispiel: 'Komm her, sonst pack ich dich am Schlawittchen!',
+      beispiel_hd: 'Komm her, sonst packe ich dich am Kragen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-314',
+      ausdruck: 'Hibbeln',
+      hochdeutsch: 'zappeln / nicht stillsitzen',
+      bedeutung: 'Wer „hibbelt", der zappelt herum und kann nicht stillsitzen — meist vor Aufregung oder Ungeduld. „Hör uff zu hibbeln, mer kann ja nich in Ruh sitzen!" Das lautmalerische Wort beschreibt nervöse Unruhe und gehört zum sächsischen Alltagswortschatz. Kinder hibbeln vor Vorfreude, Erwachsene vor Nervosität. Ein lebendiges, anschauliches Wort, das die innere Anspannung treffend einfängt.',
+      beispiel: 'Vor dor Bescherung hibbeln de Gören schon den ganzn Dag!',
+      beispiel_hd: 'Vor der Bescherung zappeln die Kinder schon den ganzen Tag!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-315',
+      ausdruck: 'Heedscher',
+      hochdeutsch: 'Hätschelkind / Verwöhnter',
+      bedeutung: 'Ein „Heedscher" ist im Sächsischen ein verwöhntes Hätschelkind oder ein wehleidiger Mensch. „Stell dich nich so an, du Heedscher!" Das Wort kommt von „hätscheln" und beschreibt jemanden, der besonders umsorgt wird oder sich zimperlich gibt. Meist scherzhaft-tadelnd gemeint. Es gehört zum reichen Schatz sächsischer Personenbezeichnungen und klingt durch die weiche Aussprache liebevoll-spöttisch.',
+      beispiel: 'Wegen dem kleenen Kratzer jammerst du, du oller Heedscher!',
+      beispiel_hd: 'Wegen dem kleinen Kratzer jammerst du, du alter Weichling!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-316',
+      ausdruck: 'Malöör',
+      hochdeutsch: 'Missgeschick / Malheur',
+      bedeutung: 'Ein „Malöör" ist im Sächsischen ein Missgeschick oder kleines Unglück — die mundartliche Form des französischen „Malheur". „Mir is ä Malöör passiert!" Das Wort gehört zum Alltag und beschreibt Pannen, verschüttete Milch oder ein zerbrochenes Glas. Es klingt fast schon charmant und nimmt dem Missgeschick die Schwere. Ein gutes Beispiel dafür, wie Fremdwörter mundartlich eingedeutscht wurden.',
+      beispiel: 'Oh je, da is mor ä Malöör mit dor Soße passiert!',
+      beispiel_hd: 'Oh je, da ist mir ein Missgeschick mit der Soße passiert!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-317',
+      ausdruck: 'Bressn',
+      hochdeutsch: 'Brötchen / Semmel',
+      bedeutung: 'In Teilen Sachsens, besonders im Vogtland, ist die „Bressn" das Brötchen oder die Semmel. „Hol mor beim Bäcker ä paar frische Bressn!" Das Wort grenzt ans Fränkische und zeigt die regionale Vielfalt der sächsischen Mundart, denn andernorts sagt man „Schrippe" oder „Semmel". Frische Brötchen zum Frühstück gehören zum sächsischen Sonntag. Bodenständig und regional verwurzelt.',
+      beispiel: 'Zum Frühstück hol ich uns frische Bressn vom Bäcker!',
+      beispiel_hd: 'Zum Frühstück hole ich uns frische Brötchen vom Bäcker!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-318',
+      ausdruck: 'Maad sein',
+      hochdeutsch: 'müde sein / erschöpft sein',
+      bedeutung: 'Wer „maad" ist, der ist im Sächsischen müde oder erschöpft — die Vokalfärbung dehnt das Wort. „Ich bin heude vielleicht maad!" Nach einem langen Arbeitstag oder einer Wanderung im Erzgebirge ist man eben maad. Das Wort gehört zum alltäglichen Grundwortschatz und beschreibt körperliche wie geistige Erschöpfung. Die gedehnte Aussprache klingt unverkennbar obersächsisch und gemütlich-schwerfällig.',
+      beispiel: 'Nach dor langen Wanderung bin ich vielleicht maad!',
+      beispiel_hd: 'Nach der langen Wanderung bin ich vielleicht müde!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-319',
+      ausdruck: 'Schmackes',
+      hochdeutsch: 'Schwung / Wucht',
+      bedeutung: 'Etwas mit „Schmackes" zu machen heißt im Sächsischen, es mit Schwung, Kraft und Elan zu tun. „Da muss ä bissel mehr Schmackes ran!" Das Wort beschreibt energisches, kraftvolles Zupacken. Im Handwerk und bei der Arbeit wird gern mit Schmackes gehandelt. Es klingt schwungvoll und tatkräftig — passend zum sächsischen Fleiß. Ein lebendiges Wort, das Energie und Entschlossenheit ausdrückt.',
+      beispiel: 'Hau den Nagel mit ä bissel mehr Schmackes rein!',
+      beispiel_hd: 'Schlag den Nagel mit ein bisschen mehr Schwung hinein!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-320',
+      ausdruck: 'Dähämd',
+      hochdeutsch: 'daheim / zu Hause',
+      bedeutung: 'Das Wort „dähämd" ist die sächsische Aussprache von „daheim" — stark vokalgefärbt und gedehnt. „Bleib heude lieber dähämd!" Es drückt das vertraute Zuhause aus und steht für Geborgenheit. „Dähämd is dähämd" sagt der Sachse, wenn nichts über das eigene Heim geht. Besonders im südsächsischen Raum gebräuchlich. Ein gefühlsbeladenes Wort, das tiefe Heimatverbundenheit transportiert.',
+      beispiel: 'Bei dem Sauwetter bleib ich heude lieber dähämd!',
+      beispiel_hd: 'Bei dem schlechten Wetter bleibe ich heute lieber daheim!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-321',
+      ausdruck: 'Gnedschn',
+      hochdeutsch: 'Knöchel / Fingerknöchel',
+      bedeutung: 'Die „Gnedschn" sind im Sächsischen die Knöchel, besonders die Fingerknöchel — mit der typischen Erweichung von „K" zu „G". „Mir sind de Gnedschn ganz kalt!" Das Wort gehört zum bodenständigen Körperwortschatz und fällt etwa beim Klagen über kalte Hände im Winter. Die weiche, gedrungene Aussprache ist unverkennbar obersächsisch. Ein anschauliches Beispiel für mundartliche Körperbezeichnungen.',
+      beispiel: 'Bei dor Kälte werdn mor de Gnedschn ganz steif!',
+      beispiel_hd: 'Bei der Kälte werden mir die Fingerknöchel ganz steif!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-322',
+      ausdruck: 'Pfanneguchn',
+      hochdeutsch: 'Pfannkuchen / Eierkuchen',
+      bedeutung: 'Der „Pfanneguchn" ist im Sächsischen der Pfannkuchen oder Eierkuchen — mit der weichen Aussprache von „k" zu „g". „Heude gibt\'s Pfanneguchn mit Zucker!" Anders als in Berlin meint der Sachse damit den flachen, in der Pfanne gebackenen Eierkuchen, nicht den Berliner Krapfen. Ein beliebtes, einfaches Gericht, das Kinder lieben. Bodenständig und süß — sächsische Hausmannskost zum Niederknien.',
+      beispiel: 'Mach uns doch heude Pfanneguchn mit Abbelmus, ja nu!',
+      beispiel_hd: 'Mach uns doch heute Pfannkuchen mit Apfelmus, ja!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-323',
+      ausdruck: 'Schippsche',
+      hochdeutsch: 'Schäufelchen / kleine Schippe',
+      bedeutung: 'Das „Schippsche" ist im Sächsischen das kleine Schäufelchen — mit der typischen Verkleinerung und der weichen Aussprache. „Gib dem Kind ä Schippsche für den Sandkastn!" Gemeint ist die kleine Sandschippe oder die Kehrschaufel. Das Wort gehört zum Alltag und zur Kindersprache. Es zeigt die sächsische Vorliebe für klangvolle Verkleinerungsformen mit dem charakteristischen „-sche". Niedlich und bodenständig.',
+      beispiel: 'Hol das Schippsche, mir kehrn de Krümel zusamm!',
+      beispiel_hd: 'Hol das Schäufelchen, wir kehren die Krümel zusammen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-324',
+      ausdruck: 'Drmel',
+      hochdeutsch: 'Schwindel / Schwindelgefühl',
+      bedeutung: 'Der „Drmel" ist im Sächsischen das Schwindelgefühl oder ein Durcheinander im Kopf. „Mir is ganz drmlich!" beziehungsweise „ich krieg den Drmel!" Das Wort hängt mit „dröhnen" und „taumeln" zusammen und beschreibt Benommenheit. Auch bildlich für ein heilloses Durcheinander verwendet. Im Erzgebirge gebräuchlich. Ein klangvolles, ausdrucksstarkes Mundartwort für einen ganz alltäglichen Zustand.',
+      beispiel: 'Von dem ganzn Karussellfahrn krieg ich den Drmel!',
+      beispiel_hd: 'Von dem ganzen Karussellfahren bekomme ich Schwindel!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-325',
+      ausdruck: 'Schnudde',
+      hochdeutsch: 'Nasenschleim / Rotz',
+      bedeutung: 'Die „Schnudde" ist im Sächsischen der Nasenschleim oder Rotz — ein derbes, aber alltägliches Wort. „Wisch dor mal de Schnudde ausm Gesicht!" Besonders bei verschnupften Kindern fällt das Wort oft. Es ist lautmalerisch von „schnauben" abgeleitet und gehört zum bodenständigen Familienwortschatz. Trotz des unappetitlichen Inhalts klingt es eher harmlos. Ein typisch deftiges, klangvolles Mundartwort.',
+      beispiel: 'Nimm ä Taschnduch und wisch dor de Schnudde weg!',
+      beispiel_hd: 'Nimm ein Taschentuch und wisch dir den Nasenschleim weg!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-326',
+      ausdruck: 'Gardse',
+      hochdeutsch: 'Katze',
+      bedeutung: 'Die „Gardse" ist im Sächsischen die Katze — mit der durchgehenden Konsonantenerweichung von „K" zu „G" und „tz" zu „ds". „De Gardse will wieder raus!" Ein schönes Beispiel für die typische Lautverschiebung des Dialekts. Die Hauskatze ist ein beliebtes Haustier, und das Wort fällt im Alltag ständig. Die weiche Aussprache klingt unverkennbar obersächsisch und gemütlich.',
+      beispiel: 'De Gardse hat schon wieder ä Maus gefangn!',
+      beispiel_hd: 'Die Katze hat schon wieder eine Maus gefangen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-327',
+      ausdruck: 'Heisla',
+      hochdeutsch: 'Häuschen / Toilette',
+      bedeutung: 'Das „Heisla" ist im erzgebirgischen Sächsisch das Häuschen, oft scherzhaft für das Plumpsklo oder die Toilette. „Ich muss mal schnell aufs Heisla!" Früher war das Heisla das Außenklo im Hof. Das Wort gehört zur ländlichen Mundart und wird mit augenzwinkerndem Humor benutzt. Die Verkleinerung mit der vogtländisch-erzgebirgischen Endung „-la" ist charakteristisch. Bodenständig und urig.',
+      beispiel: 'Wart kurz, ich muss noch schnell aufs Heisla!',
+      beispiel_hd: 'Warte kurz, ich muss noch schnell auf die Toilette!',
+      kategorie: 'orte'
+    },
+    {
+      id: 's-328',
+      ausdruck: 'Gnorzn',
+      hochdeutsch: 'sich abmühen / werkeln',
+      bedeutung: 'Wer „gnorzt", der müht sich im Sächsischen umständlich mit etwas ab oder werkelt geduldig herum. „Der gnorzt schon den ganzn Dag an seim Audo rum!" Das Wort beschreibt mühsame, fummelige Arbeit, die nicht recht vorangeht. Es ist lautmalerisch und gehört zum bodenständigen Wortschatz. Im Erzgebirge und Vogtland gebräuchlich. Drückt geduldige, aber zähe Bastelei mit liebevollem Spott aus.',
+      beispiel: 'Der gnorzt seit Stundn an dor alten Uhr rum!',
+      beispiel_hd: 'Der müht sich seit Stunden an der alten Uhr ab!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 's-329',
+      ausdruck: 'Schniegelich',
+      hochdeutsch: 'fein herausgeputzt / schick',
+      bedeutung: 'Wer „schniegelich" daherkommt, ist im Sächsischen fein herausgeputzt und schick angezogen. „Heude biste aber schniegelich!" Das Wort hängt mit „schniegeln" (sich fein machen) zusammen und beschreibt sorgfältig zurechtgemachte Erscheinung. Meist anerkennend, manchmal leicht spöttisch gemeint, wenn jemand übertrieben fein wirkt. Klingt klangvoll und bildhaft — ein charmantes Mundartwort für gepflegtes Auftreten.',
+      beispiel: 'Na, so schniegelich — wo gehste denn heude hin?',
+      beispiel_hd: 'Na, so schick — wo gehst du denn heute hin?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-330',
+      ausdruck: 'Bambel',
+      hochdeutsch: 'herabhängendes Ding / Anhänger',
+      bedeutung: 'Ein „Bambel" ist im Sächsischen etwas, das lose herabhängt und baumelt — ein Anhänger, eine Troddel oder ein loser Faden. „Da hängt ja ä Bambel an deiner Jacke!" Das Wort ist lautmalerisch von „bammeln" (baumeln) abgeleitet. Es gehört zum bildhaften Alltagswortschatz und beschreibt alles, was lose schaukelt. Klingt locker und anschaulich — typisch sächsische, plastische Wortbildung.',
+      beispiel: 'An deim Rucksack hängt ä komischer Bambel rum!',
+      beispiel_hd: 'An deinem Rucksack hängt ein komischer Anhänger herum!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-331',
+      ausdruck: 'Gniedschn',
+      hochdeutsch: 'kneten / drücken',
+      bedeutung: 'Wer „gniedscht", der knetet oder drückt im Sächsischen etwas Weiches herum — mit der typischen Erweichung von „K" zu „G". „Gniedsch nich so am Teig rum!" Das Wort beschreibt das Durchkneten von Teig, Knete oder anderem Formbaren. Beim Backen oder bei Kinderspielen fällt es oft. Lautmalerisch und bildhaft. Ein gutes Beispiel für die weichen, klangvollen Verben des obersächsischen Dialekts.',
+      beispiel: 'Hör uff, am Brotteig rumzugniedschn, der wird sonst zäh!',
+      beispiel_hd: 'Hör auf, am Brotteig herumzukneten, der wird sonst zäh!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-332',
+      ausdruck: 'Heene',
+      hochdeutsch: 'Hühner',
+      bedeutung: 'Die „Heene" sind im Sächsischen die Hühner — die Vokalfärbung dehnt das Wort zum charakteristischen „ee". „De Heene legn heude gut!" Im Schrebergarten und auf dem Land gehören Hühner zur Selbstversorgung, besonders zu DDR-Zeiten. Das Wort ist bodenständig und ländlich geprägt. Die weiche, gedehnte Aussprache ist unverkennbar obersächsisch. Ein vertrautes Wort aus dem dörflichen Alltag.',
+      beispiel: 'De Heene im Stall ham heude drei Eier gelegt!',
+      beispiel_hd: 'Die Hühner im Stall haben heute drei Eier gelegt!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-333',
+      ausdruck: 'Glufe',
+      hochdeutsch: 'Stecknadel / Sicherheitsnadel',
+      bedeutung: 'Die „Glufe" ist im Sächsischen die Steck- oder Sicherheitsnadel. „Reich mor mal ä Glufe, der Saum is uffgegangn!" Das Wort gehört zum Nähkasten und zur Handarbeit, die in Sachsen, besonders im textilen Erzgebirge und Vogtland, eine lange Tradition hat. Es ist alt und bodenständig. Heute kennen es vor allem ältere Leute. Ein traditionsreiches Mundartwort aus der Welt der Handarbeit.',
+      beispiel: 'Mach den Knopp mit ä Glufe fest, bis ich ihn annähn kann!',
+      beispiel_hd: 'Mach den Knopf mit einer Stecknadel fest, bis ich ihn annähen kann!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-334',
+      ausdruck: 'Lorke',
+      hochdeutsch: 'dünner, schlechter Kaffee',
+      bedeutung: 'Die „Lorke" ist im Sächsischen ein dünner, schlechter Kaffee — eine Plörre. „Das is doch keen Kaffee, das is ja Lorke!" Für die kaffeeliebenden Sachsen ist dünner Kaffee eine kleine Beleidigung. Das Wort drückt die Enttäuschung über ein wässriges Getränk aus. Es ist deftig und klangvoll. Ein schönes Beispiel dafür, wie ernst Sachsen ihren Kaffee nehmen — die Lorke hat keinen guten Stand.',
+      beispiel: 'Die dünne Lorke kannste behaltn, ich will richtign Kaffee!',
+      beispiel_hd: 'Den dünnen Kaffee kannst du behalten, ich will richtigen Kaffee!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-335',
+      ausdruck: 'Hutzenmännel',
+      hochdeutsch: 'erzgebirgische Holzfigur',
+      bedeutung: 'Das „Hutzenmännel" ist eine erzgebirgische Holzfigur, die einen Mann beim gemütlichen Hutzenabend darstellt — sitzend, rauchend oder schnitzend. „Auf dor Fensterbank steht ä Hutzenmännel!" Es gehört wie Räuchermännel und Nussknacker zur volkstümlichen Schnitzkunst des Erzgebirges. Die Figuren erinnern an die abendlichen Hutzenstuben, wo man früher zusammen werkelte und erzählte. Ein Stück gelebter Bergmannskultur.',
+      beispiel: 'Zur Weihnachtszeit stell ich mei Hutzenmännel ins Fenster!',
+      beispiel_hd: 'Zur Weihnachtszeit stelle ich meine Holzfigur ins Fenster!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 's-336',
+      ausdruck: 'Gimpel',
+      hochdeutsch: 'einfältiger Mensch / Tölpel',
+      bedeutung: 'Ein „Gimpel" ist im Sächsischen ein einfältiger, leichtgläubiger Mensch — ursprünglich der Name eines Singvogels. „Sei doch kein Gimpel und glaub nich alles!" Das Wort wird mild-spöttisch für jemanden benutzt, der naiv ist oder sich leicht hereinlegen lässt. Es gehört zum reichen Schatz sächsischer Spottnamen aus dem Tierreich. Meist scherzhaft gemeint, selten wirklich verletzend.',
+      beispiel: 'Lass dich nich verkohln, du oller Gimpel!',
+      beispiel_hd: 'Lass dich nicht veralbern, du alter Tölpel!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 's-337',
+      ausdruck: 'Drscht',
+      hochdeutsch: 'Durst',
+      bedeutung: 'Der „Drscht" ist die sächsische Aussprache von „Durst" — der Vokal wird stark verschluckt, sodass fast nur die Konsonanten übrig bleiben. „Ich hab vielleicht ä Drscht!" Ein extremes, aber typisches Beispiel für die sächsische Silbenverschleifung. Nach getaner Arbeit oder an heißen Tagen fällt das Wort oft. Bodenständig und lautlich charakteristisch. Zeigt, wie stark Sachsen Vokale zusammenziehen.',
+      beispiel: 'Nach dor Gartnarbeit hab ich ä riesn Drscht!',
+      beispiel_hd: 'Nach der Gartenarbeit habe ich einen riesigen Durst!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-338',
+      ausdruck: 'Klötn',
+      hochdeutsch: 'Klöße / Kartoffelklöße',
+      bedeutung: 'Die „Klötn" sind in Teilen Sachsens die Klöße oder Kartoffelklöße — eine bodenständige Mundartvariante. „Zum Bratn gibt\'s natürlich Klötn!" Klöße gehören zum sächsisch-thüringischen Sonntagsessen und werden mit Soße und Braten serviert. Das Wort zeigt die regionale Vielfalt der Mundart neben „Kließe" und „Kließe". Deftig und festtäglich. Es weckt Erinnerungen an reichliche Mittagessen in der Familie.',
+      beispiel: 'Heude koch ich Rouladn mit Klötn und Rotkraut!',
+      beispiel_hd: 'Heute koche ich Rouladen mit Klößen und Rotkraut!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-339',
+      ausdruck: 'rumlungern',
+      hochdeutsch: 'faul herumhängen',
+      bedeutung: 'Wer „rumlungert", der hängt im Sächsischen faul und untätig herum. „Hör uff rumzulungern und mach was Sinnvolles!" Das umgangssprachliche Wort ist im Sächsischen alltäglich und beschreibt müßiges Nichtstun. Fleißige Sachsen sehen das Rumlungern ungern, deshalb fällt die Aufforderung schnell. Es klingt locker-tadelnd. Ein lebendiges Wort für ziellose Untätigkeit, oft an Jugendliche gerichtet.',
+      beispiel: 'Statt rumzulungern könntste mal den Rasn mähn!',
+      beispiel_hd: 'Statt herumzuhängen könntest du mal den Rasen mähen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-340',
+      ausdruck: 'Schmarrn',
+      hochdeutsch: 'Unsinn / Quatsch',
+      bedeutung: 'Der „Schmarrn" ist im Sächsischen Unsinn oder Quatsch. „Red doch keen Schmarrn!" Das Wort ist im süddeutschen und mitteldeutschen Raum verbreitet und im südsächsischen Gebiet alltäglich, wo es ans Bairisch-Fränkische grenzt. Es drückt Skepsis oder Ablehnung gegenüber dummem Gerede aus. Meist gutmütig-ärgerlich gemeint. Ein praktisches Wort, um Unfug klar und deutlich beim Namen zu nennen.',
+      beispiel: 'Was du da erzählst, is doch ä einziger Schmarrn!',
+      beispiel_hd: 'Was du da erzählst, ist doch ein einziger Unsinn!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-341',
+      ausdruck: 'Weeschd',
+      hochdeutsch: 'weißt du',
+      bedeutung: 'Das Wörtchen „weeschd" ist die sächsische Verschleifung von „weißt du" — der Vokal wird gedehnt und die Endung verschluckt. „Weeschd, das war so:..." Es wird ständig als Gesprächseinleitung oder Füllwort benutzt, um den Zuhörer einzubeziehen. Ein hochfrequentes Alltagswort, das den typischen sächsischen Plauderton prägt. Wer „weeschd" sagt, verrät sich sofort als Sachse. Bodenständig und unverkennbar.',
+      beispiel: 'Weeschd, ich hätt das ganz anders gemacht!',
+      beispiel_hd: 'Weißt du, ich hätte das ganz anders gemacht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-342',
+      ausdruck: 'Gleen',
+      hochdeutsch: 'klein',
+      bedeutung: 'Das Wort „gleen" ist die sächsische Aussprache von „klein" — der harte Anlaut „K" wird zum weichen „G" und das „ei" zum gedehnten „ee". „So ä gleenes Häusl!" Ein Paradebeispiel für die durchgehende Lautverschiebung des Dialekts. Im Alltag fällt das Wort ständig, etwa als Koseform „mei Gleener" für ein Kind. Bodenständig und lautlich typisch obersächsisch. Klingt weich und gemütlich.',
+      beispiel: 'Guck mal das gleene Hundl da, wie niedlich!',
+      beispiel_hd: 'Schau mal den kleinen Hund da, wie niedlich!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-343',
+      ausdruck: 'Babbedeggl',
+      hochdeutsch: 'Pappdeckel / Karton',
+      bedeutung: 'Der „Babbedeggl" ist im Sächsischen der Pappdeckel oder Karton — mit der typischen Erweichung der harten Laute. „Pack das in ä Babbedeggl!" Das Wort ist lautmalerisch von „Pappe" abgeleitet und gehört zum bodenständigen Alltag. Beim Umzug oder Aufräumen fällt es oft. Die verdoppelten weichen Konsonanten klingen herrlich bildhaft. Ein gutes Beispiel für die plastische, klangvolle Wortbildung des Dialekts.',
+      beispiel: 'Die alten Bücher kommn in den Babbedeggl da drübn!',
+      beispiel_hd: 'Die alten Bücher kommen in den Pappkarton da drüben!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-344',
+      ausdruck: 'Heuwagn',
+      hochdeutsch: 'Heuwagen',
+      bedeutung: 'Der „Heuwagn" ist im ländlichen Sachsen der Heuwagen, mit dem früher das Heu von den Wiesen eingefahren wurde. „Der Heuwagn is bis obn vollgeladn!" Das Wort gehört zur bäuerlichen Tradition und weckt Bilder von der Heuernte im Sommer. Auch im Schützenfest- und Erntedankbrauchtum spielt der geschmückte Heuwagn eine Rolle. Bodenständig und ländlich. Ein Stück sächsischer Landwirtschaftsgeschichte.',
+      beispiel: 'Im Sommer fuhrn se das Heu mitm Heuwagn vom Feld!',
+      beispiel_hd: 'Im Sommer fuhren sie das Heu mit dem Heuwagen vom Feld!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-345',
+      ausdruck: 'Gesabbel',
+      hochdeutsch: 'sinnloses Gerede / Geschwätz',
+      bedeutung: 'Das „Gesabbel" ist im Sächsischen sinnloses, endloses Gerede oder Geschwätz. „Hör uff mit dem Gesabbel!" Das Wort ist lautmalerisch von „sabbeln" (schwatzen) abgeleitet und drückt Genervtheit über leeres Geschwätz aus. Sachsen schätzen klare Worte, deshalb fällt diese Kritik schnell. Es klingt abschätzig und bildhaft. Ein treffendes Wort für inhaltsloses Gerede, das niemanden weiterbringt.',
+      beispiel: 'Bei dem ganzn Gesabbel kommt ja nüschd Vernünftiges raus!',
+      beispiel_hd: 'Bei dem ganzen Geschwätz kommt ja nichts Vernünftiges heraus!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 's-346',
+      ausdruck: 'Schrubber',
+      hochdeutsch: 'Gummiwischer / Abzieher',
+      bedeutung: 'Der „Schrubber" ist im Sächsischen der Gummiwischer oder Bodenabzieher zum Putzen — mancherorts auch der Schrubbbesen. „Hol den Schrubber, der Boden is nass!" Das Wort gehört zum Hausputz, der in ordnungsliebenden sächsischen Haushalten großgeschrieben wird. Es ist bodenständig und alltäglich. Beim Wischen des Flures oder nach einem Wasserschaden ist der Schrubber unentbehrlich. Praktisch und vertraut.',
+      beispiel: 'Nimm den Schrubber und zieh das Wasser vom Flur ab!',
+      beispiel_hd: 'Nimm den Gummiwischer und zieh das Wasser vom Flur ab!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-347',
+      ausdruck: 'Gnübbsche',
+      hochdeutsch: 'Knöpfchen / kleiner Knopf',
+      bedeutung: 'Das „Gnübbsche" ist im Sächsischen das Knöpfchen oder ein kleiner Knopf — mit der typischen Erweichung von „K" zu „G" und der Verkleinerung. „Drück mal auf das gleene Gnübbsche!" Gemeint ist ein Knopf an der Kleidung oder ein kleiner Schalter am Gerät. Das Wort gehört zum Alltag und zeigt die sächsische Vorliebe für klangvolle Verkleinerungen mit „-sche". Niedlich und bodenständig.',
+      beispiel: 'Zum Anschaltn musste auf das rote Gnübbsche drücken!',
+      beispiel_hd: 'Zum Anschalten musst du auf das rote Knöpfchen drücken!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-348',
+      ausdruck: 'Schlorre',
+      hochdeutsch: 'ausgelatschter Schuh / Pantoffel',
+      bedeutung: 'Die „Schlorre" ist im Sächsischen ein ausgelatschter Schuh oder ein bequemer Pantoffel zum Schlurfen. „Zieh dor de Schlorren an, draußn is\'s kalt!" Das Wort ist lautmalerisch von „schlorren" (schlurfen) abgeleitet. Es gehört zum gemütlichen Feierabend daheim. Auch abwertend für schlechtes Schuhwerk benutzt. Bodenständig und klangvoll. Ein anschauliches Wort für die bequemen Latschen im eigenen Heim.',
+      beispiel: 'Abends schlüpf ich daheim glei in meine alten Schlorren!',
+      beispiel_hd: 'Abends schlüpfe ich daheim gleich in meine alten Pantoffeln!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 's-349',
+      ausdruck: 'Mocke',
+      hochdeutsch: 'großes Stück / Brocken',
+      bedeutung: 'Eine „Mocke" ist im Sächsischen ein großes Stück oder ein dicker Brocken — etwa ein ordentliches Stück Brot oder Fleisch. „Schneid mor mal ä ordntliche Mocke Brot ab!" Das Wort betont die Größe und Üppigkeit einer Portion. Es gehört zum deftigen Essenswortschatz. Auch für einen kräftigen Menschen scherzhaft benutzt. Bodenständig und bildhaft. Ein klangvolles Wort für alles, was schön groß geraten ist.',
+      beispiel: 'Gib mor ä ordntliche Mocke von dem Bratn ab!',
+      beispiel_hd: 'Gib mir ein ordentliches Stück von dem Braten ab!',
+      kategorie: 'essen'
+    },
+    {
+      id: 's-350',
+      ausdruck: 'Geseire',
+      hochdeutsch: 'Gejammer / Klagerei',
+      bedeutung: 'Das „Geseire" ist im Sächsischen anhaltendes Gejammer oder lästige Klagerei. „Was soll das ganze Geseire?" Das Wort stammt ursprünglich aus dem Jiddischen und drückt Genervtheit über endloses Lamentieren aus. Sachsen mögen kein langes Wehklagen, deshalb fällt dieses Wort schnell. Es klingt abschätzig und treffend. Ein ausdrucksstarker Begriff für überflüssiges Jammern, das niemandem hilft.',
+      beispiel: 'Lass das Geseire und pack lieber mit an!',
+      beispiel_hd: 'Lass das Gejammer und pack lieber mit an!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-351',
+      ausdruck: 'Glitsche',
+      hochdeutsch: 'Rutschbahn / glatte Stelle',
+      bedeutung: 'Die „Glitsche" ist im Sächsischen eine Rutschbahn auf dem Eis oder eine glatte, rutschige Stelle. „Die Kinder ham sich ä Glitsche aufm Schulhof gemacht!" Im Winter rutschen Kinder über die glatt getretene Eisbahn. Das Wort ist lautmalerisch von „glitschen" (rutschen) abgeleitet. Es gehört zur fröhlichen Wintersprache und weckt Kindheitserinnerungen. Bodenständig und anschaulich — ein klangvolles Mundartwort.',
+      beispiel: 'Paff uff, auf dor Glitsche kannste leicht hinfalln!',
+      beispiel_hd: 'Pass auf, auf der Rutschbahn kannst du leicht hinfallen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-352',
+      ausdruck: 'Heeschnstall',
+      hochdeutsch: 'Hühnerstall',
+      bedeutung: 'Der „Heeschnstall" ist im ländlichen Sachsen der Hühnerstall — mit der typischen Vokalfärbung und weichen Aussprache. „Mach den Heeschnstall zu, sonst hollt sich dor Fuchs ä Huhn!" Im Schrebergarten und auf dem Dorf gehört der Hühnerstall zur Selbstversorgung. Das Wort ist bodenständig und ländlich geprägt. Es weckt Bilder vom morgendlichen Eiersammeln. Ein vertrauter Begriff aus dem dörflichen Alltagsleben.',
+      beispiel: 'Abends mach ich immer den Heeschnstall ordntlich zu!',
+      beispiel_hd: 'Abends mache ich immer den Hühnerstall ordentlich zu!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-353',
+      ausdruck: 'Drbsch',
+      hochdeutsch: 'derb / ungehobelt',
+      bedeutung: 'Wer „drbsch" ist, der ist im Sächsischen derb, grob oder ungehobelt im Auftreten. „Sei nich so drbsch zu dor Oma!" Das Wort ist die mundartlich verschliffene Form von „derb" mit verschlucktem Vokal. Es beschreibt raues, ungeschliffenes Verhalten. Meist tadelnd gemeint, wenn jemand zu grob mit anderen umgeht. Bodenständig und lautlich typisch. Ein gutes Beispiel für die sächsische Silbenverschleifung.',
+      beispiel: 'Muss du immer so drbsch mit de Leute redn?',
+      beispiel_hd: 'Musst du immer so derb mit den Leuten reden?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-354',
+      ausdruck: 'Lapps',
+      hochdeutsch: 'ungeschickter Mensch / Tollpatsch',
+      bedeutung: 'Ein „Lapps" ist im Sächsischen ein ungeschickter, etwas trotteliger Mensch — ein Tollpatsch. „Stell dich nich so an, du oller Lapps!" Das Wort beschreibt jemanden, dem alles aus den Händen fällt oder der ungelenk wirkt. Meist scherzhaft-tadelnd gemeint, selten wirklich böse. Es gehört zum reichen Schatz sächsischer Personenbezeichnungen und klingt durch den kurzen, knappen Laut herrlich bildhaft. Bodenständig und treffend.',
+      beispiel: 'Du oller Lapps, jetz haste schon wieder die Tasse fallnlassn!',
+      beispiel_hd: 'Du alter Tollpatsch, jetzt hast du schon wieder die Tasse fallen lassen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 's-355',
+      ausdruck: 'Pampe',
+      hochdeutsch: 'breiiger Matsch / Brei',
+      bedeutung: 'Die „Pampe" ist im Sächsischen ein dicker, breiiger Matsch — etwa aufgeweichter Boden, zäher Brei oder angerührter Mörtel. „Bei dem Regn is dor ganze Weg ä einzige Pampe!" Das Wort ist lautmalerisch und beschreibt alles Zähflüssige, Schlammige. Im Garten und beim Wetter fällt es oft. Es klingt bildhaft und anschaulich. Ein deftiges, klangvolles Mundartwort für matschige Angelegenheiten.',
+      beispiel: 'Nach dem Regn is dor Gartnweg ä einzige Pampe!',
+      beispiel_hd: 'Nach dem Regen ist der Gartenweg ein einziger Matsch!',
+      kategorie: 'natur'
+    },
+    {
+      id: 's-356',
+      ausdruck: 'Gackerei',
+      hochdeutsch: 'aufgeregtes Geschnatter',
+      bedeutung: 'Die „Gackerei" ist im Sächsischen aufgeregtes, lautes Geschnatter und Durcheinandergerede — wie bei aufgescheuchten Hühnern. „Was is denn das für ä Gackerei hier?" Das Wort ist lautmalerisch von „gackern" abgeleitet und beschreibt wirres Stimmengewirr. Meist leicht genervt gemeint, etwa bei einer aufgeregten Menschenmenge. Es klingt bildhaft und treffend. Ein klangvolles Wort für lärmendes Durcheinander.',
+      beispiel: 'Bei der ganzn Gackerei versteht mer ja keen Word!',
+      beispiel_hd: 'Bei dem ganzen Geschnatter versteht man ja kein Wort!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-357',
+      ausdruck: 'Heenerhaut',
+      hochdeutsch: 'Gänsehaut',
+      bedeutung: 'Die „Heenerhaut" ist im Sächsischen die Gänsehaut — wörtlich „Hühnerhaut", weil die aufgestellten Härchen an gerupfte Hühnerhaut erinnern. „Bei dem Lied krieg ich richtig Heenerhaut!" Das Wort beschreibt das Kribbeln auf der Haut vor Kälte oder bei Rührung. Es gehört zum bildhaften Körperwortschatz. Anschaulich und klangvoll. Ein gutes Beispiel für die plastische sächsische Sprachfantasie.',
+      beispiel: 'Wenn dor Chor singt, krieg ich glatt Heenerhaut!',
+      beispiel_hd: 'Wenn der Chor singt, bekomme ich glatt Gänsehaut!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-358',
+      ausdruck: 'Gosch',
+      hochdeutsch: 'Mund / Maul',
+      bedeutung: 'Die „Gosch" ist im südsächsischen und vogtländischen Raum der Mund — verwandt mit dem fränkisch-bairischen „Gosch(n)". „Mach mal de Gosch zu!" Das Wort ist derb-bodenständig und grenzt sprachlich an die Nachbardialekte. Es taucht in Wendungen wie „eine große Gosch haben" (vorlaut sein) auf. Meist scherzhaft oder tadelnd benutzt. Zeigt schön den Übergang des Sächsischen zum fränkischen Sprachraum.',
+      beispiel: 'Nu halt doch mal kurz de Gosch und hör zu!',
+      beispiel_hd: 'Nun halt doch mal kurz den Mund und hör zu!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 's-359',
+      ausdruck: 'Drnewersch',
+      hochdeutsch: 'durcheinander / verwirrt',
+      bedeutung: 'Wer „drnewersch" ist, der ist im Sächsischen durcheinander, verwirrt oder neben der Spur. „Ich bin heude ganz drnewersch!" Das Wort ist die mundartlich verschliffene Form von „dorneben" und beschreibt geistige Verwirrung oder Zerstreutheit. Nach einem anstrengenden Tag oder bei Aufregung fällt es oft. Bodenständig und lautlich charakteristisch. Ein anschauliches Wort für einen ganz alltäglichen Geisteszustand.',
+      beispiel: 'Frag mich heude nüschd, ich bin total drnewersch!',
+      beispiel_hd: 'Frag mich heute nichts, ich bin total durcheinander!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 's-360',
+      ausdruck: 'Bemmschnmann',
+      hochdeutsch: 'Vesperbrot-Behälter / Brotbüchse',
+      bedeutung: 'Der „Bemmschnmann" ist im Sächsischen scherzhaft die Brotbüchse oder Vesperdose, in der die „Bemme" (das belegte Brot) mit zur Arbeit oder Schule genommen wird. „Pack de Bemme in den Bemmschnmann!" Das Wort verbindet die typisch sächsische „Bemme" mit der Vorstellung eines kleinen Behälters. Es klingt humorvoll und bodenständig. Ein liebevoll-augenzwinkerndes Wort aus dem Alltag der Brotzeit.',
+      beispiel: 'Vergiss deinen Bemmschnmann nich, sonst haste in dor Schule nüschd!',
+      beispiel_hd: 'Vergiss deine Brotbüchse nicht, sonst hast du in der Schule nichts!',
+      kategorie: 'essen'
     }
   ]
 };

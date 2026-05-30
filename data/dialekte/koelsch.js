@@ -2791,6 +2791,996 @@ export default {
       beispiel: 'Min köllsche Hätz schlägt für die Stadt!',
       beispiel_hd: 'Mein kölsches Herz schlägt für die Stadt!',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-356',
+      ausdruck: 'Pittermännche zappe',
+      hochdeutsch: 'Bierfässchen anstechen',
+      bedeutung: 'Wenn man et „Pittermännche zappe" deit, dann sticht man dat kleine Zehn-Liter-Fässchen Kölsch aan — dat is op jeder Fier dr Höhepunkt. Wä dat „Pittermännche zappe" kann, ohne dat et spritz, kritt Applaus. Eng echte kölsche Kunst för dr Hausgebruch.',
+      beispiel: 'Komm, mer fange aan met Pittermännche zappe!',
+      beispiel_hd: 'Komm, wir fangen an mit dem Bierfässchen anstechen!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-357',
+      ausdruck: 'Drüsch',
+      hochdeutsch: 'mürrisch / verdrießlich',
+      bedeutung: 'Ener dä „drüsch" es, dä kuckt grämlich us dr Wäsch un hät schläächte Laun. „Wat bes de hück widder drüsch!" sät mer zo enem, dä bedröppelt es. Eng typisch kölsche Beschreibung för en miese Stimmung. Et Jejendeil vum opgekrazte Kölsche.',
+      beispiel: 'Wat sühs de hück widder drüsch us dr Wäsch!',
+      beispiel_hd: 'Was schaust du heute wieder mürrisch aus der Wäsche!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-358',
+      ausdruck: 'Spölmädche',
+      hochdeutsch: 'Spülerin / Tellerwäscherin',
+      bedeutung: 'Et „Spölmädche" wor fröher em Brauhaus dat Mädche, dat de Gläser un Telleren afgespölt hät. Dä Begriff es eng historische kölsche Berufsbezeichnung. „Et Spölmädche hät alle Häng voll zo donn" — eng harte Arbeit henger dr Theek.',
+      beispiel: 'Et Spölmädche hät hück Ovend alle Häng voll zo donn.',
+      beispiel_hd: 'Die Spülerin hat heute Abend alle Hände voll zu tun.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-359',
+      ausdruck: 'Pooz',
+      hochdeutsch: 'Tür / Pforte',
+      bedeutung: 'De „Pooz" es op Kölsch de Dör odder et Door — vum lateinische „porta". „Maach de Pooz zo, et zücht!" hührt mer en jedem aale kölsche Huus. Et Wood steiht och en Stroßenname wie „Hahnentorburg". Echtes aldes Kölsch us dr Stadtjeschichte.',
+      beispiel: 'Maach de Pooz zo, et zücht he janz schröcklich!',
+      beispiel_hd: 'Mach die Tür zu, es zieht hier ganz schrecklich!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-360',
+      ausdruck: 'Aap',
+      hochdeutsch: 'Affe / Dummkopf',
+      bedeutung: 'Eng „Aap" es eijentlich dr Aff, ävver em Kölsche och eng Beleidigung för enen, dä sich domm aanstellt. „Du aler Aap!" sät mer mieh em Spaß wie em Ähnz. Och dr Usdrock „enen Aap han" bedügg, dat mer betrunke es. Vielsigge kölsche Schimpf.',
+      beispiel: 'Stell dich nit aan wie en Aap, dat es doch janz einfach!',
+      beispiel_hd: 'Stell dich nicht an wie ein Affe, das ist doch ganz einfach!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-361',
+      ausdruck: 'Tirteljüffer',
+      hochdeutsch: 'altjüngferliche Frau',
+      bedeutung: 'Eng „Tirteljüffer" es em Kölsche eng aal Jungfer odder eng zimperliche, pingelige Frau, die sich övver alles opräg. „Se es eng richtige Tirteljüffer wood" — leeve gemeint, ävver met enem Augenzwinkere. En aldes, fast verjessenes kölsches Wood för enen Charakterzog.',
+      beispiel: 'Met dr Johre es se eng richtige Tirteljüffer wood.',
+      beispiel_hd: 'Mit den Jahren ist sie eine richtige altjüngferliche Frau geworden.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-362',
+      ausdruck: 'Knubbelisch',
+      hochdeutsch: 'knubbelig / dicklich',
+      bedeutung: 'Wat „knubbelisch" es, dat hät vill Knubbele odder es schön rundlich un mollig. Mer kann och en Pänz „knubbelisch" nenne, wenn et schön pummelig un knuffig es. „Esu en knubbelisch Bäbbelche!" Eng leeve kölsche Beschreibung met vill Wärme.',
+      beispiel: 'Wat es dat e knubbelisch klein Bäbbelche!',
+      beispiel_hd: 'Was ist das ein knubbeliges kleines Baby!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-363',
+      ausdruck: 'Strunzbüggel',
+      hochdeutsch: 'Angeber / Wichtigtuer',
+      bedeutung: 'En „Strunzbüggel" es ener, dä sich opbläs un ömmer aanjevve moss — vum kölsche Wood „strunze" för proddze odder aanjevve. „Maach kei Strunzbüggel us dir!" Eng treffende kölsche Beleidigung för enen, dä mieh schien wie sin well. Lustig un deftig zojlich.',
+      beispiel: 'Dä Kääl es e richtige Strunzbüggel, dä proddz dä janze Daach!',
+      beispiel_hd: 'Der Kerl ist ein richtiger Angeber, der gibt den ganzen Tag an!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-364',
+      ausdruck: 'Bestick',
+      hochdeutsch: 'Besteck',
+      bedeutung: 'Et „Bestick" es op Kölsch dat Bestäck — also Mätz, Jabel un Läffel. „Deck dr Desch un läg et Bestick erus!" sät de Mamm vör dem Esse. Eng typische kölsche Lautverschiebung vum hochdütsche „Besteck". Janz alldäglich em kölsche Huushalt.',
+      beispiel: 'Läg ens et Bestick op dr Desch, mer wolle esse!',
+      beispiel_hd: 'Leg mal das Besteck auf den Tisch, wir wollen essen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-365',
+      ausdruck: 'Muuzemändelcher',
+      hochdeutsch: 'Mutzenmandeln (Karnevalsgebäck)',
+      bedeutung: 'De „Muuzemändelcher" sin klein, en Fett erusjebackene Mandelförmige Süßigkeite, die mer zo Fastelovend ess. Met Zocker bestäubt schmecke se himmlisch. „Op em Maat jitt et widder Muuzemändelcher!" En typisch kölsch-rheinisches Karnevalsjebäck för de fünfte Johreszick.',
+      beispiel: 'Zo Fastelovend backe mer ömmer Muuzemändelcher.',
+      beispiel_hd: 'Zu Karneval backen wir immer Mutzenmandeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-366',
+      ausdruck: 'Quöbbes',
+      hochdeutsch: 'Unsinn / Quatsch',
+      bedeutung: 'Wat „Quöbbes" es, dat es Quatsch, Unfog odder dommes Zeug. „Verzäll mer kei Quöbbes!" sät mer zo enem, dä Unsinn schwaadt. En urtümliches kölsches Wood, dat mer hück nit mieh esu off hührt. Verwandt met „Kappes" — beids steiht för Blödsinn.',
+      beispiel: 'Verzäll mer doch kei Quöbbes, dat glöv dir keiner!',
+      beispiel_hd: 'Erzähl mir doch keinen Unsinn, das glaubt dir keiner!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-367',
+      ausdruck: 'Schötteldöchelche',
+      hochdeutsch: 'Geschirrtuch',
+      bedeutung: 'Et „Schötteldöchelche" es dat Döchelche, met dämmer de Schötteln un Telleren afdröch. „Reich mer ens et Schötteldöchelche eröver!" hührt mer en dr kölsche Köch. En urige Verkleinerungsform, die dat alldägliche Huushaltsdöchelche leevevoll bezeichnet.',
+      beispiel: 'Reich mer ens et Schötteldöchelche, ich moss afdröge.',
+      beispiel_hd: 'Reich mir mal das Geschirrtuch, ich muss abtrocknen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-368',
+      ausdruck: 'Drüggde',
+      hochdeutsch: 'Dürre / Trockenheit',
+      bedeutung: 'De „Drüggde" es de Drockenheit — wenn et lang nit jereent hät un alles verdröch. „Bei dä Drüggde verdröch dr janze Jaade!" klage de Lück em heiße Summer. En kölsches Wood för en Wetterlaag, die de Buure un Jäädner Suurje mäht.',
+      beispiel: 'Bei dä Drüggde verdröch mer dr janze Jaade.',
+      beispiel_hd: 'Bei dieser Trockenheit vertrocknet uns der ganze Garten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-369',
+      ausdruck: 'Knatsch',
+      hochdeutsch: 'Streit / Ärger',
+      bedeutung: 'Wenn et „Knatsch" jitt, dann jitt et Striet, Ärjer odder Krach. „Mer hatte Knatsch met dä Nohbere" bedügg, dat mer sich verkrachd hät. Och en weiche, matschije Mass kann „Knatsch" sin. Vielsigges kölsches Wood, meist ävver för Zoff jebruch.',
+      beispiel: 'Mer hatte ene Knatsch met dä Nohbere wäje dem Krach.',
+      beispiel_hd: 'Wir hatten Streit mit den Nachbarn wegen des Lärms.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-370',
+      ausdruck: 'Pittisch',
+      hochdeutsch: 'penibel / kleinlich',
+      bedeutung: 'Ener dä „pittisch" es, dä es övvertrieve jenau, kleinlich un pingelig. „Sei doch nit esu pittisch met dem bessche Dreck!" En kölsches Wood för enen Charakterzog, dä enem op de Nerve jonn kann. Verwandt met „pingelich", ävver noch e bessche schärfer.',
+      beispiel: 'Sei doch nit esu pittisch met dem bessche Stüvkes!',
+      beispiel_hd: 'Sei doch nicht so kleinlich mit dem bisschen Staub!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-371',
+      ausdruck: 'Bröckske',
+      hochdeutsch: 'kleines Stückchen / Brocken',
+      bedeutung: 'E „Bröckske" es e klein Stöckske odder e winzig Bröckche — vun Brut, Schokelad odder söns wat. „Jiff mer ens e Bröckske av!" bädd dat Pänz. De Verkleinerungsform mäht et besonders leev un kölsch. Wat Kleines, dat mer jän met andere deilt.',
+      beispiel: 'Jiff mer doch ens e Bröckske vun dingem Streuselkooche av!',
+      beispiel_hd: 'Gib mir doch mal ein Stückchen von deinem Streuselkuchen ab!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-372',
+      ausdruck: 'Plüschmors',
+      hochdeutsch: 'verwöhnter Mensch / Weichei',
+      bedeutung: 'En „Plüschmors" es ener, dä verwehnt es un et bequem hät — dä Mors (Hingere) sitz quasi op Plüsch. „Du aler Plüschmors, stell dich nit esu aan!" Eng deftige, ävver leeve kölsche Sticheleihe för enen, dä e bessche zo wei es. Typisch kölscher Humor.',
+      beispiel: 'Du aler Plüschmors, bei e bessche Räje jeihs de nit erus?',
+      beispiel_hd: 'Du verwöhnter Mensch, bei ein bisschen Regen gehst du nicht raus?',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-373',
+      ausdruck: 'Fisternöll',
+      hochdeutsch: 'Liebelei / heimliche Affäre',
+      bedeutung: 'En „Fisternöll" es eng heimliche Liebelei odder en kleine Techtelmechtel. „Die zwei han e Fisternöll metenander!" tuschelt mer em Veedel. E charmantes aldes kölsches Wood för en Romanze, övver die mer leeve klaaf. Klingt schon esu verschmitz wie de Saach sellver.',
+      beispiel: 'Ich jläuv, die zwei han e klei Fisternöll metenander.',
+      beispiel_hd: 'Ich glaube, die zwei haben eine kleine Liebelei miteinander.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-374',
+      ausdruck: 'Bröll',
+      hochdeutsch: 'Brille',
+      bedeutung: 'De „Bröll" es op Kölsch de Brell, die mer op dr Nas drät zom besser sinn. „Wo häv ich bloß widder ming Bröll hinjelaht?" frög dr Opa un sök övverall. Eng typisch kölsche Aussproch vum hochdütsche „Brille". Janz alldäglich un jeder kennt et.',
+      beispiel: 'Wo häv ich bloß widder ming Bröll hinjelaht?',
+      beispiel_hd: 'Wo habe ich bloß wieder meine Brille hingelegt?',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-375',
+      ausdruck: 'Knäuelche',
+      hochdeutsch: 'kleines Knäuel',
+      bedeutung: 'E „Knäuelche" es e klei Knäuel, mereistens us Woll odder Zwirn. „De Katz spillt met dem Knäuelche övver dr janze Stuv!" De Verkleinerungsform mäht et schön kölsch un leev. Och e zosamejeknülltes Stöckske Papp kann mer esu nenne.',
+      beispiel: 'De Katz spillt met dem Knäuelche övver de janze Stuv.',
+      beispiel_hd: 'Die Katze spielt mit dem kleinen Knäuel über die ganze Stube.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-376',
+      ausdruck: 'Schäng',
+      hochdeutsch: 'Johann / typischer Kölner Vorname',
+      bedeutung: 'Dr „Schäng" es de kölsche Form vum franzüsische „Jean" (Johann) — un steiht för dr typische kölsche Mann vun dr Stroß. „Dat es ene richtige Schäng!" sät mer för enen echte kölsche Jung. Spiejelt dä franzüsische Enfluss op et Rheinland us dr Napoleon-Zick.',
+      beispiel: 'Dat es ene richtige Schäng, dä kennt jede Eck em Veedel.',
+      beispiel_hd: 'Das ist ein echter Kölner, der kennt jede Ecke im Viertel.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-377',
+      ausdruck: 'Quängelei',
+      hochdeutsch: 'Quengelei / Nörgelei',
+      bedeutung: 'De „Quängelei" es dat ständige Jejammer un Jenörgel, besonders vun Pänz, die jet han wolle. „Hür op met dinger Quängelei!" sät de Mamm jenervt. En kölsches Wood för dat, wat Eldere op dr Nerve jonn kann, wenn et Kläutche partout sing Will durchsetze well.',
+      beispiel: 'Hür op met dinger Quängelei, do kriss et nit!',
+      beispiel_hd: 'Hör auf mit deiner Quengelei, du bekommst es nicht!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-378',
+      ausdruck: 'Bähnche',
+      hochdeutsch: 'Bähnchen / kleine Bahn',
+      bedeutung: 'E „Bähnche" es eng klei Bahn odder och de kölsche Stroßebahn, leevevoll jenannt. „Mer nemme et Bähnche bes en de Stadt!" De Verkleinerungsform zeig de kölsche Zoneijung zo dä KVB-Bahne, die dat janze Veedel verbingk. Alldäglich un sympathisch.',
+      beispiel: 'Mer nemme et Bähnche bes erop en de Stadt.',
+      beispiel_hd: 'Wir nehmen die kleine Bahn bis hoch in die Stadt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-379',
+      ausdruck: 'Köttel',
+      hochdeutsch: 'Kot / Köttel',
+      bedeutung: 'En „Köttel" es e klei Stöckske Kot, mereistens vun Diere wie Schoof odder Has. „Pass op, do litt en Köttel om Wääch!" En deftiges, ävver alldägliches kölsches Wood. Och övverdrage för jet Kleines, Unwichtiges jebruch: „Dat es doch nor en Köttel".',
+      beispiel: 'Pass op, wo de hintriss, do litt en Köttel om Wääch!',
+      beispiel_hd: 'Pass auf, wo du hintrittst, da liegt ein Köttel auf dem Weg!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-380',
+      ausdruck: 'Verzäll',
+      hochdeutsch: 'Erzähl / Erzählung',
+      bedeutung: 'Et „Verzäll" es dat, wat verzällt weed — also Jeschichte, Klaaf odder Anekdötcher. „Dat es ävver e schön Verzäll!" Och als Opfoddrung: „Verzäll ens!" bedügg „Erzähl mal!". E zentrales kölsches Wood, denn de Kölsche verzälle för ehr Levve jän un usjiebig.',
+      beispiel: 'Verzäll ens, wie et fröher em Veedel wor!',
+      beispiel_hd: 'Erzähl mal, wie es früher im Viertel war!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-381',
+      ausdruck: 'Quetsch',
+      hochdeutsch: 'Pflaume / Zwetschge',
+      bedeutung: 'Eng „Quetsch" es eng Zwetschge odder Plumm. Us „Quetsche" mäht mer dr berühmte „Quetschekooche" — ene Pläzkooche met Zwetschge. „Dä Quetschekooche es ming Leevlingskooche!" En kölsch-rheinisches Wood, dat besonders zo dr Erntezick em Spätsummer fällt.',
+      beispiel: 'Em Hähvs jitt et widder ene lecker Quetschekooche met frösche Quetsche.',
+      beispiel_hd: 'Im Herbst gibt es wieder einen leckeren Zwetschgenkuchen mit frischen Pflaumen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-382',
+      ausdruck: 'Höösch',
+      hochdeutsch: 'sachte / langsam / leise',
+      bedeutung: 'Wenn mer jet „höösch" mäht, dann mäht mer et sachte, langsam un vörsichtig. „Höösch, höösch, nit esu wild!" sät mer zo enem, dä sich beruhige soll. E typisch kölsches Wood, dat Jelossenheit usdröck — ganz em Sinn vum kölsche Levvensjeföhl: nor nit hetze.',
+      beispiel: 'Höösch, höösch, mer han doch jenuch Zick!',
+      beispiel_hd: 'Sachte, sachte, wir haben doch genug Zeit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-383',
+      ausdruck: 'Bötzemann',
+      hochdeutsch: 'Schreckgestalt / Buhmann',
+      bedeutung: 'Dr „Bötzemann" es de kölsche Schreckjestalt, met dä mer fröher de Pänz jebang hät: „Wenn de nit folgs, küss dr Bötzemann!" Eng Aart kölscher Buhmann us aale Zigge. Hück mieh spöllerisch jebruch. Verwandt met dem hochdütsche „Butzemann" us dem Kinderleed.',
+      beispiel: 'Wenn de nit brav bes, dann küss dr Bötzemann!',
+      beispiel_hd: 'Wenn du nicht brav bist, dann kommt der Buhmann!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-384',
+      ausdruck: 'Knöllche',
+      hochdeutsch: 'Strafzettel / Knöllchen',
+      bedeutung: 'E „Knöllche" es e Stroofzeddelche, dat mer aan dr Schiev kritt, wenn mer falsch jeparkt hät. „Hück hann ich widder e Knöllche an dr Schiev jehatt!" schimpf dr Autofahrer. En weitverbreitetes Wood, dat och em Kölsche dr alldägliche Ärjer met dem Politesse usdröck.',
+      beispiel: 'Hück hann ich widder e Knöllche an dr Schiev jehatt!',
+      beispiel_hd: 'Heute hatte ich wieder ein Knöllchen an der Scheibe!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-385',
+      ausdruck: 'Bützcheszigg',
+      hochdeutsch: 'Karnevalszeit / Zeit der Küsschen',
+      bedeutung: 'De „Bützcheszigg" es de Zick em Fastelovend, wo övverall jebütz weed — also Küsschen verdeilt weede. „Endlich es widder Bützcheszigg!" frög sich dr Jeck. E leevevolles kölsches Wood för de fünfte Johreszick, wo de Lück enander spontan e Bützje jevve.',
+      beispiel: 'Endlich es widder Bützcheszigg, Alaaf!',
+      beispiel_hd: 'Endlich ist wieder Karnevalszeit, Alaaf!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-386',
+      ausdruck: 'Knäppche',
+      hochdeutsch: 'Brotkanten / Endstück',
+      bedeutung: 'Et „Knäppche" es dat Engstöck vum Brut, dr Knust odder Kanten. „Ich esse am leevste et Knäppche met dröch Botter!" sät mancher. En urtümliches kölsches Wood för dat krosse Engstöck, öm dat sich en mancher Famillich jän jestridde weed. Echt rheinisch un alldäglich.',
+      beispiel: 'Ich esse am leevste et Knäppche met dröch Botter drop.',
+      beispiel_hd: 'Ich esse am liebsten den Brotkanten mit Butter drauf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-387',
+      ausdruck: 'Quärkopp',
+      hochdeutsch: 'Querkopf / Sturkopf',
+      bedeutung: 'En „Quärkopp" es ener, dä quär es, also störrisch un eijensinnig. „Sei doch nit esu en Quärkopp!" sät mer zo enem, dä partout nit mitmaache well. E treffendes kölsches Wood för enen, dä sich quär stellt un sing eije Kopp durchsetze well, ejal wat.',
+      beispiel: 'Sei doch nit esu en Quärkopp un maach met!',
+      beispiel_hd: 'Sei doch nicht so ein Querkopf und mach mit!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-388',
+      ausdruck: 'Schmierlappe',
+      hochdeutsch: 'Schmeichler / Kriecher',
+      bedeutung: 'En „Schmierlappe" es ener, dä sich beim Baas odder bei andere enschmiert un schmeichelt. „Dä Schmierlappe maht sich überall leev Kingk!" En kölsches Schimpfwood för enen Speichellecker, dä durch Schmeicheleihe wigger kütt. Verwandt met „Schwadlappe", ävver bösartiger.',
+      beispiel: 'Dä Schmierlappe maht sich beim Baas övverall leev Kingk.',
+      beispiel_hd: 'Der Schmeichler macht sich beim Chef überall lieb Kind.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-389',
+      ausdruck: 'Pläcksche',
+      hochdeutsch: 'kleiner Fleck / Stelle',
+      bedeutung: 'E „Pläcksche" es e klei Fleckche odder e Stöckske Platz. „Mer han noch e schön Pläcksche en dr Sonn jefunge!" Och e Plätzche em Sinn vun Örtchen. De Verkleinerungsform mäht et leev un kölsch. Mer bruch et för en kleine Fläck övverall — om Desch, em Jaade odder am Rhing.',
+      beispiel: 'Mer han noch e schön Pläcksche en dr Sonn am Rhing jefunge.',
+      beispiel_hd: 'Wir haben noch ein schönes Plätzchen in der Sonne am Rhein gefunden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-390',
+      ausdruck: 'Knöllemann',
+      hochdeutsch: 'Politesse / Verkehrspolizist',
+      bedeutung: 'Dr „Knöllemann" es dä, dä de Knöllcher (Stroofzeddele) verdeilt — also de Politesse odder dr Verkehrspolizist. „Pass op, do kütt dr Knöllemann!" wärnt mer, wenn mer falsch jeparkt hät. E spöttisches kölsches Wood, dat dr Ärjer met dem Strooftischje met Humor nimmp.',
+      beispiel: 'Pass op, do kütt dr Knöllemann öm de Eck!',
+      beispiel_hd: 'Pass auf, da kommt die Politesse um die Ecke!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-391',
+      ausdruck: 'Bröselich',
+      hochdeutsch: 'bröselig / krümelig',
+      bedeutung: 'Wat „bröselich" es, dat fällt usenander un mäht vill Brösele odder Krömmele. „Dä Streuselkooche es schön bröselich!" lov mer. E kölsches Wood, dat besonders bei Jebäck un Kooche jebruch weed — wat schön mörb un bröselich es, dat schmeck en de Reejel besonders jot.',
+      beispiel: 'Dä Streuselkooche es hück besonders bröselich jewoode.',
+      beispiel_hd: 'Der Streuselkuchen ist heute besonders bröselig geworden.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-392',
+      ausdruck: 'Knüsselich',
+      hochdeutsch: 'schmuddelig / ungepflegt',
+      bedeutung: 'Wat „knüsselich" es, dat es schmuddelig, dreckisch un ungepfläg — vum kölsche Wood „Knies" för Dreck. „Dat es ävver e knüsselich Eck he!" rümpf mer de Nas. E deftiges kölsches Adjektiv för jet, wat nit suvver es un dröm nit besonders enladend wirk.',
+      beispiel: 'Dat es ävver e knüsselich Eck he en dä Jass!',
+      beispiel_hd: 'Das ist aber eine schmuddelige Ecke hier in der Gasse!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-393',
+      ausdruck: 'Söckelcher',
+      hochdeutsch: 'Söckchen / kleine Socken',
+      bedeutung: 'De „Söckelcher" sin de klein Söckche, die mer aan de Föss träk. „Trick dem Pänz warme Söckelcher aan, et es kald!" mahnt de Oma. De Verkleinerungsform es typisch kölsch un leev. Besonders bei klein Pänz un em Winter en off jehürtes Wood em Huushalt.',
+      beispiel: 'Trick dem Pänz warme Söckelcher aan, et es bitterkald drusse!',
+      beispiel_hd: 'Zieh dem Kind warme Söckchen an, es ist bitterkalt draußen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-394',
+      ausdruck: 'Quetschkommod',
+      hochdeutsch: 'Akkordeon / Quetschkommode',
+      bedeutung: 'De „Quetschkommod" es et Akkordeon — leevevoll esu jenannt, weil mer et beim Spille zosamequetsch. „Op dr Sitzung spillt einer de Quetschkommod!" E lustiges kölsches Wood, dat dat Instrument met Humor bedenk. Op kölsche Fiere darf de Quetschkommod als Begleidung nit fehle.',
+      beispiel: 'Op dr Sitzung spillt einer de Quetschkommod un alle schunkele.',
+      beispiel_hd: 'Auf der Sitzung spielt einer das Akkordeon und alle schunkeln.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'k-395',
+      ausdruck: 'Bröckmännche',
+      hochdeutsch: 'Brückenmännchen (Hohenzollernbrücke)',
+      bedeutung: 'Et „Bröckmännche" es de kölsche Bezeichnung för de berühmte Liebesschlösser-Brök — odder mieh noch för de klein Figürcher op dr Hohenzollernbröck. „Mer hänge e Schloss am Bröckmännche op!" En leevevolle Aandüdung op dat romantische Wohrzeiche övver dem Rhing.',
+      beispiel: 'Mer hänge e Liebesschloss am Bröckmännche övver dem Rhing op.',
+      beispiel_hd: 'Wir hängen ein Liebesschloss am Brückenmännchen über dem Rhein auf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-396',
+      ausdruck: 'Knaatsche',
+      hochdeutsch: 'weinen / quengeln',
+      bedeutung: 'Wenn e Pänz „knaatsche" deit, dann jammert un grient et un well jet han. „Et Kläutche fängk aan zo knaatsche, et es möd!" sät de Mamm. E kölsches Wood, dat dat quängelige Jejammer vun klein Pänz beschriev — meist e Zeiche dofür, dat et Pänz möd odder hungrig es.',
+      beispiel: 'Et Kläutche fängk aan zo knaatsche, et es bestemmp möd.',
+      beispiel_hd: 'Das Kleine fängt an zu quengeln, es ist bestimmt müde.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-397',
+      ausdruck: 'Schäbbich',
+      hochdeutsch: 'schäbig / abgetragen',
+      bedeutung: 'Wat „schäbbich" es, dat es afjedrage, abjenötz un nit mieh schön. „Dä aale Mantel süht ävver schäbbich us!" mein mer. Och övverdrage för en mies Verhalde: „Dat wor schäbbich vun dir!". E kölsches Wood, dat zweifach jeiht — för Saache un för et Benemme.',
+      beispiel: 'Dä aale Mantel süht ävver schäbbich us, schmiess dä fott!',
+      beispiel_hd: 'Der alte Mantel sieht aber schäbig aus, wirf den weg!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-398',
+      ausdruck: 'Pöözje',
+      hochdeutsch: 'Türchen / kleine Pforte',
+      bedeutung: 'E „Pöözje" es e klei Dörche odder Pförtche — de Verkleinerungsform vun „Pooz". „Maach et Pöözje am Jaade zo!" sät mer. Besonders för dat klein Jaadedörche jebruch. De leeve Verkleinerung mäht dat alldägliche Wood schön kölsch un zeig de Aanhänglichkeit aan et eije Höfche.',
+      beispiel: 'Maach et Pöözje am Jaade zo, söns löpp dr Hungk fott!',
+      beispiel_hd: 'Mach das Türchen am Garten zu, sonst läuft der Hund weg!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-399',
+      ausdruck: 'Quetschefitzje',
+      hochdeutsch: 'kleines bisschen / Winzigkeit',
+      bedeutung: 'E „Quetschefitzje" es e janz klei bessche, en winzige Menge. „Jiff mer nor e Quetschefitzje vun dr Soß!" bädd mer. E lustiges kölsches Wood för en minimale Portion — wenn mer nor e Stöckske wäll un nit dr janze Berch. Drückt scharmant Bescheidenheit us.',
+      beispiel: 'Jiff mer nor e Quetschefitzje vun dr Soß, ich bin satt.',
+      beispiel_hd: 'Gib mir nur ein kleines bisschen von der Soße, ich bin satt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-400',
+      ausdruck: 'Knötterkopp',
+      hochdeutsch: 'Nörgler / Brummbär',
+      bedeutung: 'En „Knötterkopp" es ener, dä ständig knöttert, also brummt un nörgelt — vum kölsche „knöttere" för murre. „Dä aale Knötterkopp es met nix zofridde!" sät mer övver enen Miesepeter. E treffendes kölsches Wood för enen, dä övver alles un jeden meckert un nie zofridde es.',
+      beispiel: 'Dä aale Knötterkopp es ävver och met jaar nix zofridde!',
+      beispiel_hd: 'Der alte Nörgler ist aber auch mit gar nichts zufrieden!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-401',
+      ausdruck: 'Bröckelcher',
+      hochdeutsch: 'kleine Bröckchen / Krümel',
+      bedeutung: 'De „Bröckelcher" sin klein Bröckche odder Krömmele, mereistens vum Brut odder Kooche. „Du häs lauter Bröckelcher om Desch jelosse!" schimpf de Mamm. De Verkleinerungsform es schön kölsch. Wenn et Pänz jejesse hät, litt mereistens övverall e paar Bröckelcher eröm.',
+      beispiel: 'Du häs ävver lauter Bröckelcher om Desch jelosse!',
+      beispiel_hd: 'Du hast aber lauter Krümel auf dem Tisch gelassen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-402',
+      ausdruck: 'Schmuckelich',
+      hochdeutsch: 'gemütlich / kuschelig',
+      bedeutung: 'Wat „schmuckelich" es, dat es jemötlich, kuschelich un warm — wo mer sich richtich wohlföhlt. „Mer han et uns schmuckelich jemaht op dr Couch!" E leevevolles kölsches Wood för dat Jeföhl vun Behaaglichkeit, besonders em Winter, wenn et drusse kald es un drenne mollig warm.',
+      beispiel: 'Mer han et uns schmuckelich jemaht op dr Couch met heißem Kakao.',
+      beispiel_hd: 'Wir haben es uns gemütlich gemacht auf der Couch mit heißem Kakao.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-403',
+      ausdruck: 'Quasselstripp',
+      hochdeutsch: 'Schwätzer / Quasselstrippe',
+      bedeutung: 'Eng „Quasselstripp" es ener, dä ohne Engk schwaadt un quasselt. „Du bes ävver och eng richtige Quasselstripp!" sät mer leeve zo enem, dä nit met dem Klaaf ophürt. E sympathisches kölsches Wood, dat mieh schmunzelnd wie böse jemeint es — dann Kölsche verzälle nun ens jän.',
+      beispiel: 'Du bes ävver och eng richtige Quasselstripp am Telefon!',
+      beispiel_hd: 'Du bist aber auch eine richtige Quasselstrippe am Telefon!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-404',
+      ausdruck: 'Bröckske Glöck',
+      hochdeutsch: 'ein bisschen Glück',
+      bedeutung: 'E „Bröckske Glöck" es e klei bessche Jlöck — wat mer enem zo besondere Aanlässe wünsch. „Ich wünsch dir e Bröckske Glöck för et neue Johr!" En leevevolle kölsche Redensaart, die bescheide ävver vun Hätze e bessche Jlöck för dr andere erhoff. Typisch kölsch met Mass un Wärme.',
+      beispiel: 'Ich wünsch dir e Bröckske Glöck för dat neue Johr!',
+      beispiel_hd: 'Ich wünsche dir ein bisschen Glück für das neue Jahr!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-405',
+      ausdruck: 'Knubbelije Knee',
+      hochdeutsch: 'knubbelige Knie',
+      bedeutung: '„Knubbelije Knee" sin Knee, die schön rundlich un knubbelig erusstonn — besonders bei Pänz odder rundliche Lück. „Kuck ens de knubbelije Knee vun dem Bäbbelche!" sät de Oma jeröhrt. En leevevolle kölsche Beschreibung, die met vill Wärme op dat Süße aan klein Pänz kuck.',
+      beispiel: 'Kuck ens de knubbelije Knee vun dem klein Bäbbelche!',
+      beispiel_hd: 'Schau mal die knubbeligen Knie von dem kleinen Baby!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-406',
+      ausdruck: 'Pittermann',
+      hochdeutsch: 'kleines Bierfass (10 Liter)',
+      bedeutung: 'Dr „Pittermann" es e klei Beerfässje met zehn Liter Kölsch — de jrößere Form vum „Pittermännche". „Mer han für de Fier ene Pittermann bestallt!" Op private kölsche Fiere darf dat handliche Fässje nit fehle, dann doraan kann jeder sich sing Stange selvs zappe.',
+      beispiel: 'Mer han för de Jeburtsdaagsfier ene Pittermann bestallt.',
+      beispiel_hd: 'Wir haben für die Geburtstagsfeier ein kleines Bierfass bestellt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-407',
+      ausdruck: 'Knäuvel',
+      hochdeutsch: 'Knöchel / Fingerknöchel',
+      bedeutung: 'Dr „Knäuvel" es dr Knöchel am Finger odder Foß. „Ich han mer dr Knäuvel aan dr Dör jestouße!" jammert mer. E kölsches Wood för dat Jelenk, dat mer sich besonders jän aanstüss. Och beim Aanklopfe an de Dör bruch mer de Knäuvel — typisch alldäglich em Kölsche.',
+      beispiel: 'Ich han mer dr Knäuvel ärch aan dr Dör jestouße!',
+      beispiel_hd: 'Ich habe mir den Knöchel arg an der Tür gestoßen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-408',
+      ausdruck: 'Schmölzje',
+      hochdeutsch: 'kleiner Imbiss / Häppchen',
+      bedeutung: 'E „Schmölzje" es e klei Imbiss odder Häppche zwesche durch. „Ich nemme mer noch e Schmölzje för dr Hunger!" sät mer. De Verkleinerungsform vun „Schmalz" odder „Schmölzche" — jet Kleines zom Esse, dat dr ärgste Hunger stillt. Schön kölsch un leev jesäht.',
+      beispiel: 'Ich nemme mer noch flöck e Schmölzje för dr klein Hunger.',
+      beispiel_hd: 'Ich nehme mir noch schnell ein Häppchen für den kleinen Hunger.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-409',
+      ausdruck: 'Pööschje',
+      hochdeutsch: 'Päuschen / kleine Pause',
+      bedeutung: 'E „Pööschje" es e klei Päusche, en kotte Verschnaufpaus. „Loss uns ens e Pööschje maache!" schläät mer vör. De kölsche Verkleinerungsform mäht et schön leev. Ganz em Sinn vum kölsche Levvensjeföhl: zwesche dr Arbeit moss och ens e Pööschje sin, öm zo verschnaufe.',
+      beispiel: 'Loss uns ens e Pööschje maache un en Tass Kaffee drinke.',
+      beispiel_hd: 'Lass uns mal eine kleine Pause machen und eine Tasse Kaffee trinken.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-410',
+      ausdruck: 'Knöddelich',
+      hochdeutsch: 'knubbelig / klumpig',
+      bedeutung: 'Wat „knöddelich" es, dat hät Knöddele odder Klümpcher un es nit jlatt. „Dä Bree es janz knöddelich jewoode!" beklag mer en dr Köch. E kölsches Wood besonders för Esse, dat nit fein jeworde es, sondern voller Klümpcher — bei Soße odder Brei e häufiges Mißjeschick.',
+      beispiel: 'Dä Kartoffelbree es hück janz knöddelich jewoode, schad!',
+      beispiel_hd: 'Der Kartoffelbrei ist heute ganz klumpig geworden, schade!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-411',
+      ausdruck: 'Schwaadlappe',
+      hochdeutsch: 'Schwätzer / Maulheld',
+      bedeutung: 'En „Schwaadlappe" es ener, dä vill schwaadt, ävver winnig dohinger steiht. „Hür nit op dä Schwaadlappe!" wärnt mer. E kölsches Schimpfwood för enen Maulhelde, dä de jrooße Klapp hät, ävver wenn et draan kütt nix zostande bräng. Deftig un treffend zojlich.',
+      beispiel: 'Hür nit op dä Schwaadlappe, dä verzällt nor dommes Zeug!',
+      beispiel_hd: 'Hör nicht auf den Schwätzer, der erzählt nur dummes Zeug!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-412',
+      ausdruck: 'Bröhsel',
+      hochdeutsch: 'Brösel / Semmelbrösel',
+      bedeutung: 'Et „Bröhsel" sin de Brösele odder Semmelbrösele, met dämmer paniert odder bestreut. „Dun e bessche Bröhsel övver dr Auflauf!" sät de Mamm. E alldägliches kölsches Wood us dr Köch. Met Bröhsel weed dr Schnitzel paniert un dr Auflauf kritt sing krosse Krust om Dösch.',
+      beispiel: 'Dun e bessche Bröhsel un Botter övver dr Auflauf!',
+      beispiel_hd: 'Tu ein bisschen Semmelbrösel und Butter über den Auflauf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-413',
+      ausdruck: 'Knöllchesjäjer',
+      hochdeutsch: 'übereifrige Politesse',
+      bedeutung: 'En „Knöllchesjäjer" es eng övvereifrige Politesse, die jeede Schiev kontrolleert un övverall Knöllcher verdeilt. „Dä Knöllchesjäjer es widder ungerwääks!" stöhnt dr Aanwohner. E spöttisches kölsches Wood, dat dr Frust övver de strenge Parküberwachung met dem kölsche Humor afferdäät.',
+      beispiel: 'Dä Knöllchesjäjer es widder durch unser Jass ungerwääks!',
+      beispiel_hd: 'Die übereifrige Politesse ist wieder durch unsere Gasse unterwegs!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-414',
+      ausdruck: 'Möpp',
+      hochdeutsch: 'kleiner Hund / Mops',
+      bedeutung: 'En „Möpp" es e klei Höndsche, mereistens en Mops odder e knubbelig Schoßhöndsche. „Dä aale Möpp schnauf am Trottoir!" Och leevevoll för en mollig Pänz jebruch: „Du klein Möpp!". E sympathisches kölsches Wood, dat met Wärme op et Süße aan klein Häumcher kuck.',
+      beispiel: 'Dä aale Möpp schnauf un schnuffelt am Trottoir eröm.',
+      beispiel_hd: 'Der alte Mops schnauft und schnüffelt am Bürgersteig herum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-415',
+      ausdruck: 'Schäbbedäbbes',
+      hochdeutsch: 'Tollpatsch / Tölpel',
+      bedeutung: 'En „Schäbbedäbbes" es en Dappes, en ungeschickte Mensch, dä alles falle lett un övverall aanstüss. „Du aler Schäbbedäbbes, pass doch op!" sät mer leeve. E lustiges kölsches Schimpfwood för enen, dä zwei link Häng hät — mieh met Schmunzele wie em Ärjer jesäht.',
+      beispiel: 'Du aler Schäbbedäbbes, jetz häs de et widder falle jelosse!',
+      beispiel_hd: 'Du alter Tollpatsch, jetzt hast du es wieder fallen lassen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-416',
+      ausdruck: 'Bröckemännchersschloss',
+      hochdeutsch: 'Liebesschloss an der Brücke',
+      bedeutung: 'E „Bröckemännchersschloss" es e Liebesschloss, dat Verleevde aan dr Hohenzollernbröck aanbränge un dann dr Schlössel en dr Rhing schmieße. „Mer han unser Bröckemännchersschloss aanjebraht!" En jüngere kölsche Tradition, die de eweje Leev zweier Minsche symboliséere soll.',
+      beispiel: 'Mer han hück unser Bröckemännchersschloss aan dr Bröck aanjebraht.',
+      beispiel_hd: 'Wir haben heute unser Liebesschloss an der Brücke angebracht.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-417',
+      ausdruck: 'Knöösch',
+      hochdeutsch: 'mürrisch / verschlossen',
+      bedeutung: 'Ener dä „knöösch" es, dä es muffelig, verschlosse un nit jät jespächich. „Wat bes de hück knöösch, häs de schläch jeschlofe?" frög mer. E kölsches Wood för en eijenbrötlerische, verstockte Stimmung. Wä knöösch es, dä lett kei jot Wood erus un kuck zo Boddem.',
+      beispiel: 'Wat bes de hück knöösch, häs de schläch jeschlofe?',
+      beispiel_hd: 'Was bist du heute mürrisch, hast du schlecht geschlafen?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-418',
+      ausdruck: 'Schmandkooche',
+      hochdeutsch: 'Rahmkuchen / Schmandkuchen',
+      bedeutung: 'Dr „Schmandkooche" es e rheinische Kooche met enem Belach us Schmand (suure Sahn) un Früchte. „Op dr Kaffeedäfel jitt et hück Schmandkooche!" frög sich de Famillich. En typisch kölsch-rheinische Bäckerei-Spezialität, die besonders zo Familljefiere un am Sonndaag op dr Desch kütt.',
+      beispiel: 'Op dr Kaffeedäfel jitt et hück ene lecker Schmandkooche.',
+      beispiel_hd: 'Auf der Kaffeetafel gibt es heute einen leckeren Schmandkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-419',
+      ausdruck: 'Pittje',
+      hochdeutsch: 'Peterchen / kleiner Peter',
+      bedeutung: 'E „Pittje" es de kölsche Koseform vum Name Peter — leevevoll för enen kleine Jung odder leeve Kääl. „Komm her, Pittje, un jiff mer e Bützje!" sät de Oma. En urige kölsche Verkleinerung, die wie vill kölsche Namensforme de Wärme un Hätzlichkeit em Ömgang usdröck.',
+      beispiel: 'Komm her, Pittje, un jiff dingem Opa e Bützje!',
+      beispiel_hd: 'Komm her, Peterchen, und gib deinem Opa ein Küsschen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-420',
+      ausdruck: 'Knäckevoss',
+      hochdeutsch: 'durchtriebener Mensch / Schlitzohr',
+      bedeutung: 'En „Knäckevoss" es e durchtriebene, schlaue Person — wörtlich en „Knackfuchs". „Dä Knäckevoss kritt et ömmer henn, wie hä et well!" mein mer aanerkennend. E kölsches Wood för enen Schlaumeier, dä met List un Tück sing Zeel erreich. Mieh bewundernd wie tadelnd jemeint.',
+      beispiel: 'Dä Knäckevoss kritt et ömmer henn, wie hä et hann well!',
+      beispiel_hd: 'Das Schlitzohr schafft es immer, wie er es haben will!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-421',
+      ausdruck: 'Bröckske Brut',
+      hochdeutsch: 'ein Stück Brot',
+      bedeutung: 'E „Bröckske Brut" es e Stöckske Brut — wat mer enem hungrige Mensch odder dr Vüjjele jitt. „Jiff dem aale Mann e Bröckske Brut!" sät mer met Hätz. En leevevolle kölsche Wändung, die de Hülfsberitschaff un et Deile usdröck. Echt rheinisch un voller christliche Nächsteleev.',
+      beispiel: 'Jiff dem aale Mann doch e Bröckske Brut un en Tass Kaffee!',
+      beispiel_hd: 'Gib dem alten Mann doch ein Stück Brot und eine Tasse Kaffee!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-422',
+      ausdruck: 'Knüvvelich',
+      hochdeutsch: 'verknotet / verwickelt',
+      bedeutung: 'Wat „knüvvelich" es, dat es verknüddelt, verworre un voller Knüdde. „Dä Zwirn es janz knüvvelich jewoode!" jammert mer. E kölsches Wood för jet, wat sich verheddert hät un sich nor schwer entwirre lett — ejal of et Zwirn, e Käbelche odder de Haar sin. Alldäglich un treffend.',
+      beispiel: 'Dä Zwirn em Kästche es janz knüvvelich jewoode, esu en Ärjer!',
+      beispiel_hd: 'Der Zwirn im Kästchen ist ganz verknotet geworden, so ein Ärger!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-423',
+      ausdruck: 'Schmölzepott',
+      hochdeutsch: 'Schmalztopf / Schmalzgefäß',
+      bedeutung: 'Dr „Schmölzepott" es dr Pott, en dämmer et Schmalz opbewahrt — fröher en jedem kölsche Huushalt zo finge. „Et Schmölzche us dem Schmölzepott op et Brut!" wor e arme-Lück-Esse. En historisches kölsches Wood, dat aan de Zigge erinnert, wo Schmalzbrut e jängiges un satt maachendes Esse wor.',
+      beispiel: 'Strich mer e bessche Schmalz us dem Schmölzepott op et Brut!',
+      beispiel_hd: 'Streich mir ein bisschen Schmalz aus dem Schmalztopf aufs Brot!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-424',
+      ausdruck: 'Wermsje',
+      hochdeutsch: 'Würmchen / armer Tropf',
+      bedeutung: 'E „Wermsje" es e klei Würmche — leevevoll för e bedauernswertes, hülfloses Wese jesäht, of Pänz odder Deer. „Dat arm Wermsje friert ja!" sät mer met Metleid. En zärtliche kölsche Verkleinerung, die vill Metjeföhl un Wärme för dat Kleine, Schwache usdröck. Typisch hätzlich kölsch.',
+      beispiel: 'Dat arm Wermsje friert ja janz jämmerlich, nemm et erop!',
+      beispiel_hd: 'Das arme Würmchen friert ja ganz jämmerlich, nimm es hoch!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-425',
+      ausdruck: 'Knöösbüggel',
+      hochdeutsch: 'Geizhals / Knauser',
+      bedeutung: 'En „Knöösbüggel" es e jeiziger Mensch, dä keine Pennig erusröck. „Dä aale Knöösbüggel jitt nix för et Strüßje!" schimpf mer. E deftiges kölsches Schimpfwood för enen, dä op singem Jeld sitz un nix met andere deile well. Et Jejendeil vum jroßzügige Kölsche, dä jän einen usjitt.',
+      beispiel: 'Dä aale Knöösbüggel jitt nit ens e paar Cent för et Strüßje!',
+      beispiel_hd: 'Der alte Geizhals gibt nicht mal ein paar Cent für das Sträußchen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'k-426',
+      ausdruck: 'Pläätsch',
+      hochdeutsch: 'Ohrfeige / Klaps',
+      bedeutung: 'Eng „Pläätsch" es en Ohrfiej odder e Klätsch. „Pass op, söns jitt et en Pläätsch!" drohte fröher de Eldere. E kölsches Wood för enen leichte Schlach met dr flache Hand. Hück mieh als Redensaart jebruch, dann jeschlage weed natörlich nit mieh — fröher ävver wor de Pläätsch jäng.',
+      beispiel: 'Pass op met dingem Mundwerk, söns jitt et en Pläätsch!',
+      beispiel_hd: 'Pass auf mit deinem Mundwerk, sonst gibt es eine Ohrfeige!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-427',
+      ausdruck: 'Bröckske Hoffnung',
+      hochdeutsch: 'ein Funken Hoffnung',
+      bedeutung: 'E „Bröckske Hoffnung" es e klei bessche Hoffnung, e Fünkche Zoversich en schwere Zigge. „Mer han noch e Bröckske Hoffnung, dat et jot weed." En leevevolle kölsche Wändung, die de optimistische Levvenshaltung widderspiejelt — sellver wenn et schlääch ussüht, bliev ömmer e Bröckske Hoffnung.',
+      beispiel: 'Mer han noch e Bröckske Hoffnung, dat alles widder jot weed.',
+      beispiel_hd: 'Wir haben noch einen Funken Hoffnung, dass alles wieder gut wird.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-428',
+      ausdruck: 'Knuddelmuul',
+      hochdeutsch: 'Schmuser / verschmustes Kind',
+      bedeutung: 'E „Knuddelmuul" es e verschmustes Pänz odder en Mensch, dä jän knuddelt un kuschelt. „Du bes ävver e leev Knuddelmuul!" sät de Mamm zo ehrem Kläutche. En zärtliche kölsche Koseform, die de Aanhänglichkeit un et Bedörfnis no Närrde un Zärtlichkeit leevevoll bezeichnet. Voller Wärme jesäht.',
+      beispiel: 'Komm her, du klein Knuddelmuul, un loss dich knuddele!',
+      beispiel_hd: 'Komm her, du kleiner Schmuser, und lass dich knuddeln!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-429',
+      ausdruck: 'Schäng-Üngerjang',
+      hochdeutsch: 'Sonnenuntergang',
+      bedeutung: 'Met „Schäng-Üngerjang" — eijentlich „Sonn-Üngerjang" — meint mer dr Sonnenungerjang övver dem Rhing. „Dä Schäng-Üngerjang am Rhing es jet janz Besonderes!" Wä ovends am Ufer steiht un kuck, wie de Sonn henger dr Dom verschwindt, dä erläv eine vun dr schönste Aanblecke vun Kölle.',
+      beispiel: 'Dä Schäng-Üngerjang am Rhing wor hück widder wunderschön.',
+      beispiel_hd: 'Der Sonnenuntergang am Rhein war heute wieder wunderschön.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-430',
+      ausdruck: 'Knöllcheszigg',
+      hochdeutsch: 'Zeit der Strafzettel',
+      bedeutung: 'De „Knöllcheszigg" es spöttisch de Zick, wo besonders vill Knöllcher verdeilt weede — etwa wenn de Stadt jeld bruch. „Et es widder Knöllcheszigg em Veedel!" stöhnt dr Aanwohner. E humorvolles kölsches Wood, dat dr alldägliche Frust met dr Parküberwachung iröonisch op de Schepp nimmp.',
+      beispiel: 'Et es widder Knöllcheszigg, övverall stonn de Politesse!',
+      beispiel_hd: 'Es ist wieder Strafzettel-Zeit, überall stehen die Politessen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-431',
+      ausdruck: 'Bröckske Verstand',
+      hochdeutsch: 'ein bisschen Verstand',
+      bedeutung: 'E „Bröckske Verstand" es e bessche Verstand odder Vernunft. „Han doch e Bröckske Verstand un maach kei Dommheite!" mahnt mer. En kölsche Wändung, die enem aanrät, dat Köpfsche enzosetze un nit kopflos zo handele. Off als jotjemeinte Ermahnung aan enen Leichtsinnige jebruch.',
+      beispiel: 'Han doch e Bröckske Verstand un fahr nit esu schnell!',
+      beispiel_hd: 'Hab doch ein bisschen Verstand und fahr nicht so schnell!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-432',
+      ausdruck: 'Knuddelije Backe',
+      hochdeutsch: 'pummelige Wangen',
+      bedeutung: '„Knuddelije Backe" sin schön rundliche, pummelige Wange — besonders aan klein Pänz, die mer am leevste enen Bütz drop drücke deit. „Kuck ens de knuddelije Backe vun dem Pänz!" sät de Tant jeröhrt. En leevevolle kölsche Beschreibung voller Zärtlichkeit för dat Süße aan e Bäbbelche.',
+      beispiel: 'Kuck ens de knuddelije Backe vun dem klein Pänz, zom Aanbieße!',
+      beispiel_hd: 'Schau mal die pummeligen Wangen von dem kleinen Kind, zum Anbeißen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-433',
+      ausdruck: 'Schmölzbrut',
+      hochdeutsch: 'Schmalzbrot',
+      bedeutung: 'E „Schmölzbrut" es e Brut met Schmalz drop, mereistens met Jrieve un e bessche Salz. „E deftig Schmölzbrut un e Kölsch dobei!" — för vill Kölsche e Stöck Heimat. E urtümliches kölsches Esse, dat fröher de Arbeiter satt jemaht hät un hück als deftige Brauhaus-Spezialität jeschätz weed.',
+      beispiel: 'E deftig Schmölzbrut met Jrieve un e Kölsch dobei, herrlich!',
+      beispiel_hd: 'Ein deftiges Schmalzbrot mit Grieben und ein Kölsch dabei, herrlich!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-434',
+      ausdruck: 'Wackes',
+      hochdeutsch: 'Schlingel / Frechdachs',
+      bedeutung: 'En „Wackes" es e frecher, übermütiger Bengel, dä nor Unfog em Kopp hät. „Du klein Wackes, wat häs de widder aanjestallt?" frög de Mamm. E kölsch-rheinisches Wood för enen Lausbove. Met enem Augenzwinkere jesäht, dann en Wackes es zwar frech, ävver och leev un witzig.',
+      beispiel: 'Du klein Wackes, wat häs de widder för Unfog aanjestallt?',
+      beispiel_hd: 'Du kleiner Schlingel, was hast du wieder für Unfug angestellt?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-435',
+      ausdruck: 'Knöddelmaat',
+      hochdeutsch: 'Trödelmarkt / Flohmarkt',
+      bedeutung: 'Dr „Knöddelmaat" es e Treedelmaat odder Flohmaat, wo aler Krempel verkoof weed. „Op dem Knöddelmaat fingk mer ömmer jet Schönes!" frög sich dr Sammler. E urig-kölsches Wood för dä Maat, wo mer zwesche aale Schätzcher un Plunder stövere kann — e beleevtes Vergnüje am Wochenend.',
+      beispiel: 'Op dem Knöddelmaat fingk mer ömmer jet Schönes för bessche Jeld.',
+      beispiel_hd: 'Auf dem Trödelmarkt findet man immer etwas Schönes für wenig Geld.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-436',
+      ausdruck: 'Bröckske Sonn',
+      hochdeutsch: 'ein bisschen Sonne',
+      bedeutung: 'E „Bröckske Sonn" es e bessche Sonn, e paar Strahle no langem Räjewedder. „Endlich e Bröckske Sonn no all dem Räje!" frög sich jeder. En leevevolle kölsche Wändung, die de Freud övver et erste Sönnsche usdröck — besonders no enem nasse rheinische Winter es dat e jrooße Jlöck.',
+      beispiel: 'Endlich e Bröckske Sonn no all dem Räje, raus an de Luff!',
+      beispiel_hd: 'Endlich ein bisschen Sonne nach all dem Regen, raus an die Luft!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-437',
+      ausdruck: 'Knuddelpott',
+      hochdeutsch: 'verschmuster Mensch',
+      bedeutung: 'E „Knuddelpott" es ener, dä jän knuddelt un schmust — verwandt met „Knuddelmuul". „Du bes ävver e leev Knuddelpott!" sät mer zärtlich. En kölsche Koseform för enen aanhängliche, verschmuste Mensch, dä de körperliche Närrde sök. Voller Wärme un Zoneijung jesäht, of för Pänz of för dr Schatz.',
+      beispiel: 'Du bes ävver e leev Knuddelpott, komm en de Ärm!',
+      beispiel_hd: 'Du bist aber ein lieber Schmuser, komm in die Arme!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-438',
+      ausdruck: 'Schäl Auge',
+      hochdeutsch: 'schielende Augen',
+      bedeutung: '„Schäl Auge" sin Auge, die schiele odder verschräg kucke — vum kölsche „schäl" för schief. Drvun kütt och „Schäl Sick" för de andere Rhingsigg. „Dä Schäl kuck met singe schäle Auge!" Dat Wood „schäl" es zentral em Kölsche un steiht för alles, wat verschräg odder schief es.',
+      beispiel: 'Dä kuck met singe schäl Auge janz verschräg en de Welt.',
+      beispiel_hd: 'Der schaut mit seinen schielenden Augen ganz schief in die Welt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-439',
+      ausdruck: 'Knöllchespittje',
+      hochdeutsch: 'Strafzettelblock',
+      bedeutung: 'E „Knöllchespittje" es spöttisch dr Bestrooftischje odder Block, us dämmer de Politesse de Knöllcher russriess. „De Politesse zück et Knöllchespittje!" stöhnt mer. E humorvolles kölsches Wood, dat dr typische Frust met dr Parkkontroll met enem Schmunzele un kölscher Jelossenheit afferdäät.',
+      beispiel: 'De Politesse zück schon et Knöllchespittje, schnell fott he!',
+      beispiel_hd: 'Die Politesse zückt schon den Strafzettelblock, schnell weg hier!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-440',
+      ausdruck: 'Bröckske Spass',
+      hochdeutsch: 'ein bisschen Spaß',
+      bedeutung: 'E „Bröckske Spass" es e bessche Spass odder Freud em Levve. „Mer wolle doch nor e Bröckske Spass han!" sät mer. En kölsche Wändung, die dat Bedörfnis no Heiterkeit un Lebensfreud usdröck — ganz em Sinn vum kölsche Levvensjeföhl, dat et Levve nit zo ähnz nemme un jän laache deit.',
+      beispiel: 'Mer wolle doch nor e Bröckske Spass han, nit esu verbisse!',
+      beispiel_hd: 'Wir wollen doch nur ein bisschen Spaß haben, nicht so verbissen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-441',
+      ausdruck: 'Mängche',
+      hochdeutsch: 'Männchen',
+      bedeutung: 'E „Mängche" es e klei Männche — leevevoll för enen kleine Mann odder e Figürche jesäht. „Dat klein Mängche steiht do un kuck!" De Verkleinerungsform es typisch kölsch un leev. Och för Spillzeug-Figürcher odder de klein Männcher om Kööksche-Reejal jän jebruch. Voller kölscher Hätzlichkeit.',
+      beispiel: 'Dat klein Mängche steiht do an dr Eck un kuck verdotz.',
+      beispiel_hd: 'Das kleine Männchen steht da an der Ecke und schaut verdutzt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-442',
+      ausdruck: 'Knöösbacke',
+      hochdeutsch: 'mürrischer Mensch / Miesepeter',
+      bedeutung: 'En „Knöösbacke" es e muffelije, jrieseliche Mensch, dä ömmer schläch jeluunt es. „Dä aale Knöösbacke laach och nie!" mein mer. E kölsches Schimpfwood för enen Miesepeter, dä keine Spass versteit un dr janze Daag e jrieseliches Jesich zeig. Et Jejendeil vum opgekrazte Kölsche.',
+      beispiel: 'Dä aale Knöösbacke laach och nie un meckert dr janze Daach.',
+      beispiel_hd: 'Der alte Miesepeter lacht auch nie und meckert den ganzen Tag.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-443',
+      ausdruck: 'Schmölzfläppche',
+      hochdeutsch: 'Schmalzgebäck / Krapfen',
+      bedeutung: 'E „Schmölzfläppche" es e en Schmalz erusjebackenes Jebäck, ähnlich enem Krapfe odder Berliner. „Op dr Kirmes jitt et frösche Schmölzfläppcher!" frög sich jeder. E rheinisches Jebäck, dat besonders op Kirmes un zo Fastelovend frösch frittéert un met Zocker bestäubt verkoof weed. Süß un deftig zojlich.',
+      beispiel: 'Op dr Kirmes jitt et widder frösche Schmölzfläppcher met Zocker.',
+      beispiel_hd: 'Auf der Kirmes gibt es wieder frisches Schmalzgebäck mit Zucker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-444',
+      ausdruck: 'Buchel',
+      hochdeutsch: 'Buckel / Rücken',
+      bedeutung: 'Dr „Buchel" es dr Bockel odder Rögge. „Mer deit dr Buchel wieh vum lange Stonn!" klage mer. Och en Redensaart: „Dä kann mer dr Buchel eroprutsche!" — also dä soll mich en Ruh losse. E alldägliches kölsches Wood för dä Köörperdeil, dä besonders bei schwerer Arbeit jän Beschwerde mäht.',
+      beispiel: 'Mer deit dr Buchel wieh vum lange Stonn op dr Sitzung!',
+      beispiel_hd: 'Mir tut der Rücken weh vom langen Stehen auf der Sitzung!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-445',
+      ausdruck: 'Schmölzkööksche',
+      hochdeutsch: 'kleine Imbissbude / Schmalzküche',
+      bedeutung: 'E „Schmölzkööksche" es e klei Imbissbüdsche, wo et deftig Schmalzbrut un andere Kleinigkeite jitt. „Am Eck es e Schmölzkööksche met lecker Flönz!" En urig-kölsche Bezeichnung för dä klein Verzehrstand, wo mer flöck e deftig Häppche un e Kölsch kritt — Treffpunk för et Veedel.',
+      beispiel: 'Am Eck es e Schmölzkööksche met lecker Flönz un frösch Brut.',
+      beispiel_hd: 'An der Ecke ist eine kleine Imbissbude mit leckerer Blutwurst und frischem Brot.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'k-446',
+      ausdruck: 'Knuddeldeer',
+      hochdeutsch: 'Kuscheltier',
+      bedeutung: 'E „Knuddeldeer" es e Kuscheldeer odder Plüschdeer, dat de Pänz zom Schloofe metnemme. „Et Pänz schlööf nor met singem Knuddeldeer en!" weiß de Mamm. En leevevolle kölsche Bezeichnung för dä treue Beddjeselle us Plüsch, dä jedem Pänz Trus un Jeborjenheit jitt en dr Naach. Voller Wärme jesäht.',
+      beispiel: 'Et Pänz schlööf nor en met singem aale Knuddeldeer em Ärm.',
+      beispiel_hd: 'Das Kind schläft nur ein mit seinem alten Kuscheltier im Arm.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-447',
+      ausdruck: 'Bröckske Zick',
+      hochdeutsch: 'ein bisschen Zeit',
+      bedeutung: 'E „Bröckske Zick" es e bessche Zick, e paar Menütcher. „Häs de e Bröckske Zick för mich?" frög mer hätzlich. En kölsche Wändung, die bescheide öm e bessche Ophmäksamkeit odder en kotte Verzäll bädd. Em hektische Alldaag es e Bröckske Zick förenander jet janz Köstliches un Wärtvolles.',
+      beispiel: 'Häs de e Bröckske Zick för mich un en Tass Kaffee?',
+      beispiel_hd: 'Hast du ein bisschen Zeit für mich und eine Tasse Kaffee?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-448',
+      ausdruck: 'Knöösfrätz',
+      hochdeutsch: 'mürrisches Gesicht',
+      bedeutung: 'En „Knöösfrätz" es e jrieseliches, muffeliges Jesich — wenn einer en schläch Laun hät un dat och zeig. „Maach nit esu en Knöösfrätz!" sät mer zo enem Brummbär. E deftig-kölsches Wood, dat dat verkniffene, übellaunige Aussinn met Humor op de Schepp nimmp. Et Jejendeil vum frohe kölsche Jesich.',
+      beispiel: 'Maach doch nit esu en Knöösfrätz, et es doch Fastelovend!',
+      beispiel_hd: 'Mach doch nicht so ein mürrisches Gesicht, es ist doch Karneval!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-449',
+      ausdruck: 'Quetschefinger',
+      hochdeutsch: 'eingeklemmter Finger',
+      bedeutung: 'En „Quetschefinger" es e Finger, dä mer sich enjeklemmt odder jequetsch hät. „Au, ich han mer ene Quetschefinger en dr Dör jehollt!" jammert mer. E alldägliches kölsches Wood för dat schmerzhafte Mißjeschick, wenn dr Finger zwesche Dör un Rahme kütt — passéert leider öfters em Huushalt.',
+      beispiel: 'Au, ich han mer ene Quetschefinger en dr Schubblad jehollt!',
+      beispiel_hd: 'Au, ich habe mir einen eingeklemmten Finger in der Schublade geholt!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'k-450',
+      ausdruck: 'Schäldäälche',
+      hochdeutsch: 'kleines Tablett / Schälchen',
+      bedeutung: 'E „Schäldäälche" es e klei Schälche odder Däälche, op dämmer jet serveert. „Stell de Pläzcher op et Schäldäälche!" sät de Oma. De Verkleinerungsform es schön kölsch un leev. Besonders zo Wihnachte odder beim Kaffeeklaaf kütt dat klein Schäldäälche met Pläzcher un Süßichkeite op dr Desch.',
+      beispiel: 'Stell de Pläzcher op et Schäldäälche för de Kaffeedäfel!',
+      beispiel_hd: 'Stell die Plätzchen auf das kleine Tablett für die Kaffeetafel!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-451',
+      ausdruck: 'Knuddelovend',
+      hochdeutsch: 'gemütlicher Kuschelabend',
+      bedeutung: 'En „Knuddelovend" es e jemötliche Ovend zo zweit op dr Couch met Knuddele un Kuschele. „Mer maache uns ene schöne Knuddelovend!" frög sich et Pärche. En leevevolle kölsche Wortschöpfung för enen Ovend voller Närrde un Zärtlichkeit — wenn et drusse kald es un mer et drenne schmuckelich met dem Schatz hät.',
+      beispiel: 'Mer maache uns hück ene schöne Knuddelovend met Filmsche un Wing.',
+      beispiel_hd: 'Wir machen uns heute einen schönen Kuschelabend mit Film und Wein.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-452',
+      ausdruck: 'Bötzcheszigg',
+      hochdeutsch: 'Zeit zum Küssen',
+      bedeutung: 'De „Bötzcheszigg" es de Zick em Fastelovend, wo jebütz weed un mer enander Bötzjer jitt. „Op dr Sitzung es widder Bötzcheszigg!" frög sich dr Jeck. E leevevolles kölsches Wood för dä Brauch em Karneval, wo de Lück enander spontan e Bötzche op de Backe drücke — Usdrock vun Lebensfreud un Hätzlichkeit.',
+      beispiel: 'Op dr Sitzung es widder Bötzcheszigg, do weed flöck jebütz!',
+      beispiel_hd: 'Auf der Sitzung ist wieder Küsschen-Zeit, da wird schnell geküsst!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'k-453',
+      ausdruck: 'Knöllchessammler',
+      hochdeutsch: 'Vielparker mit vielen Strafzetteln',
+      bedeutung: 'En „Knöllchessammler" es spöttisch ener, dä esu off falsch park, dat hä e janze Sammlung Knöllcher hät. „Dä es e richtige Knöllchessammler, dä park övverall!" laach mer. E humorvolles kölsches Wood, dat dat notorische Falschparke met enem Augenzwinkere bedenk un de Saach läächt nimmp.',
+      beispiel: 'Dä es e richtige Knöllchessammler, dä park ja övverall verkiehrt!',
+      beispiel_hd: 'Der ist ein richtiger Vielparker, der parkt ja überall verkehrt!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-454',
+      ausdruck: 'Bröckske Leev',
+      hochdeutsch: 'ein bisschen Liebe',
+      bedeutung: 'E „Bröckske Leev" es e bessche Leev un Zoneijung. „Jeder bruch e Bröckske Leev em Levve!" weiß mer. En leevevolle kölsche Wändung, die dat menschliche Jrundbedörfnis no Wärme un Jeborjenheit usdröck. Ganz em Sinn vum kölsche Hätz, dat jän jitt un för jeden e Bröckske Leev övrich hät.',
+      beispiel: 'Jeder Mensch bruch e Bröckske Leev un en freundlich Wood.',
+      beispiel_hd: 'Jeder Mensch braucht ein bisschen Liebe und ein freundliches Wort.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-455',
+      ausdruck: 'Knöösmuul',
+      hochdeutsch: 'mürrischer Mund / Griesgram',
+      bedeutung: 'E „Knöösmuul" es ener met enem muffelige Muul, dä ömmer e jrieselich Jesich zeig un nix Frohes sät. „Dä aale Knöösmuul sät kei jot Wood!" mein mer. E deftig-kölsches Schimpfwood för enen Griesjram, dä de Mundwinkel ömmer no unge hät un keine Spass kennt — et Jejendeil vum laachende Kölsche.',
+      beispiel: 'Dä aale Knöösmuul sät kei jot Wood un meckert nor eröm.',
+      beispiel_hd: 'Der alte Griesgram sagt kein gutes Wort und meckert nur herum.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'k-456',
+      ausdruck: 'Schmölzfett',
+      hochdeutsch: 'Schmalz / Bratfett',
+      bedeutung: 'Et „Schmölzfett" es dat Schmalz odder Braotfett, met dämmer en dr Pann brät un backt. „Dun e Löffelche Schmölzfett en de Pann!" sät de Mamm. E alldägliches kölsches Wood us dr Köch. Em deftige rheinische Kooche darf et Schmölzfett nit fehle — domet kritt manch Jericht erst sing richtige Schmack.',
+      beispiel: 'Dun e Löffelche Schmölzfett en de Pann un brat de Zwivvele aan!',
+      beispiel_hd: 'Tu einen Löffel Schmalz in die Pfanne und brate die Zwiebeln an!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'k-457',
+      ausdruck: 'Knuddelwedder',
+      hochdeutsch: 'Schmuddelwetter / Kuschelwetter',
+      bedeutung: 'E „Knuddelwedder" es e nass-kaldes Schmuddelwedder, bei dämmer am leevste drenne bliev un kuschelt. „Bei dämm Knuddelwedder jonn ich nit erus!" sät mer. E charmantes kölsches Wood, dat dat ungemötliche rheinische Wedder ömdäät en e Aanlass för Jemötlichkeit op dr Couch. Typisch kölscher Optimismus.',
+      beispiel: 'Bei dämm Knuddelwedder bliev ich hück schön drenne om Sofa!',
+      beispiel_hd: 'Bei diesem Schmuddelwetter bleibe ich heute schön drinnen auf dem Sofa!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'k-458',
+      ausdruck: 'Bröckske Ruh',
+      hochdeutsch: 'ein bisschen Ruhe',
+      bedeutung: 'E „Bröckske Ruh" es e bessche Ruh un Frede. „Jönn mer doch e Bröckske Ruh!" bädd mer, wenn et zo hektisch weed. En kölsche Wändung, die dat Bedörfnis no Erholung un Stille usdröck. Em Trubel vum Alldaag es e Bröckske Ruh jet, wat mer sich vun Zick zo Zick janz dringend wünsch.',
+      beispiel: 'Jönn mer doch ens e Bröckske Ruh no all dem Stress!',
+      beispiel_hd: 'Gönn mir doch mal ein bisschen Ruhe nach all dem Stress!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'k-459',
+      ausdruck: 'Knöllchesärjer',
+      hochdeutsch: 'Ärger über Strafzettel',
+      bedeutung: 'Dr „Knöllchesärjer" es dr Ärjer un Verdross övver e bekommenes Knöllche. „Dä Knöllchesärjer hät mer dr Daag verdorve!" stöhnt mer. E kölsches Wood, dat dä typische alldägliche Frust met dr Parküberwachung op dr Punk bräng — ävver met kölscher Jelossenheit, dann „et hätt noch immer jot jejange".',
+      beispiel: 'Dä Knöllchesärjer hät mer hück dr janze Daag verdorve!',
+      beispiel_hd: 'Der Ärger über den Strafzettel hat mir heute den ganzen Tag verdorben!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-460',
+      ausdruck: 'Knuddelkösskuss',
+      hochdeutsch: 'innige Umarmung mit Küssen',
+      bedeutung: 'E „Knuddelkösskuss" es en innige Ömärmung met vill Bötzjer — wenn mer enen ärch leev hät. „Komm her för ene Knuddelkösskuss!" sät de Oma zo ehrem Enkelche. En leevevolle kölsche Wortschöpfung, die de jrooße Zoneijung un körperliche Närrde zwesche leeve Mensche met Schmunzele un Hätz usdröck.',
+      beispiel: 'Komm her, ming Schätzelche, för ene jroße Knuddelkösskuss!',
+      beispiel_hd: 'Komm her, mein Schätzchen, für eine große innige Umarmung mit Küssen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-461',
+      ausdruck: 'Schmölzkroch',
+      hochdeutsch: 'Schmalztopf / Steinguttopf',
+      bedeutung: 'Dr „Schmölzkroch" es e Kruch us Steinjut, en dämmer et Schmalz köhl un freisch jehalde weed. „Em Keller steiht dr aale Schmölzkroch vun dr Oma!" En historisches kölsches Wood, dat aan de Zigge vör dem Köhlschrank erinnert, wo mer et Schmalz em irdene Kroch em köhle Keller opbewahrt hät.',
+      beispiel: 'Em Keller steiht noch dr aale Schmölzkroch vun ming Oma.',
+      beispiel_hd: 'Im Keller steht noch der alte Schmalztopf von meiner Oma.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'k-462',
+      ausdruck: 'Knöllchesfrau',
+      hochdeutsch: 'Politesse',
+      bedeutung: 'De „Knöllchesfrau" es de Politesse, die de Knöllcher verdeilt — leevevoll-spöttisch esu jenannt. „Do kütt de Knöllchesfrau öm de Eck!" wärnt mer flöck. E kölsches Wood, dat dr alldägliche Ärjer met dr Parkkontroll met Humor un en Aart resignéerter Sympathie för de arme Frau, die nor ehr Plicht deit, ömschriev.',
+      beispiel: 'Do kütt de Knöllchesfrau öm de Eck, schnell fott met dem Auto!',
+      beispiel_hd: 'Da kommt die Politesse um die Ecke, schnell weg mit dem Auto!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'k-463',
+      ausdruck: 'Bröckske Sönn em Hätz',
+      hochdeutsch: 'ein bisschen Freude im Herzen',
+      bedeutung: '„E Bröckske Sönn em Hätz" hann bedügg, e bessche Freud un Lebensjlöck en sich dräge. „Met enem Leed kritt mer widder e Bröckske Sönn em Hätz!" En poetische kölsche Wändung, die dat innere Jlöcksjeföhl beschriev. Karnevalsleeder un Hätzlichkeit künne dat Bröckske Sönn em Hätz widder entfache.',
+      beispiel: 'Met enem schöne Leed kritt mer widder e Bröckske Sönn em Hätz.',
+      beispiel_hd: 'Mit einem schönen Lied bekommt man wieder ein bisschen Freude im Herzen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'k-464',
+      ausdruck: 'Knuddelpänz',
+      hochdeutsch: 'verschmuste Kinder',
+      bedeutung: 'De „Knuddelpänz" sin verschmuste, aanhängliche Pänz, die jän op dr Schoß sitze un kuschele. „Ming Knuddelpänz wolle ömmer op dr Schoß!" frög sich de Mamm. En leevevolle kölsche Bezeichnung för Pänz, die vill Närrde un Zärtlichkeit bruche un jevve — voller Wärme un Hätzlichkeit jesäht, wie et sich för et kölsche Hätz jehürt.',
+      beispiel: 'Ming Knuddelpänz wolle ovends ömmer op dr Schoß zom Kuschele.',
+      beispiel_hd: 'Meine verschmusten Kinder wollen abends immer auf den Schoß zum Kuscheln.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'k-465',
+      ausdruck: 'Schmölzbüggel',
+      hochdeutsch: 'rundlicher Mensch / Pummelchen',
+      bedeutung: 'En „Schmölzbüggel" es leevevoll en rundliche, mollige Mensch, dä jän jot un deftig ess. „Du klein Schmölzbüggel, häs de widder jenasch?" sät de Oma met Schmunzele. E kölsches Wood, dat met Wärme un ohne Böshäit op dat mollige Aussinn aanspillt — mieh Koseform wie Schimpf, voller Hätzlichkeit.',
+      beispiel: 'Du klein Schmölzbüggel, häs de widder am Streuselkooche jenasch?',
+      beispiel_hd: 'Du kleines Pummelchen, hast du wieder am Streuselkuchen genascht?',
+      kategorie: 'menschen'
     }
   ]
 };

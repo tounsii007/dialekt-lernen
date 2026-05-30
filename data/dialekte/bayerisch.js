@@ -3277,6 +3277,1005 @@ export default {
       beispiel: 'Servus pfia di, des war a schöner Abend, mia treffen uns wieder!',
       beispiel_hd: 'Tschüss und behüt dich, das war ein schöner Abend, wir treffen uns wieder!',
       kategorie: 'begruessung'
+    },
+    {
+      id: 'by-398',
+      ausdruck: 'Grüß di',
+      hochdeutsch: 'Grüß dich / Hallo',
+      bedeutung: '„Grüß di" ist die vertraute, geduzte Begrüßung unter Bekannten und Freunden im bairischen Raum, abgeleitet von „Grüß dich". Sie ist herzlicher und weniger förmlich als „Griaß Gott" und wird unter Gleichaltrigen oder im Familienkreis verwendet. Oft hängt man noch ein „Grüß di God" oder einen Namen an. Ein warmer, alltäglicher Gruß, der sofort Nähe schafft.',
+      beispiel: 'Grüß di, schee dass\'d kemma bist!',
+      beispiel_hd: 'Grüß dich, schön dass du gekommen bist!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-399',
+      ausdruck: 'Pfiat eich',
+      hochdeutsch: 'Behüt euch / Tschüss (Mehrzahl)',
+      bedeutung: '„Pfiat eich" ist die an mehrere Personen gerichtete Abschiedsformel, die Mehrzahlform von „Pfiat di". Wörtlich bedeutet sie „(Gott) behüte euch" und drückt einen herzlichen Wunsch beim Auseinandergehen aus. Man sagt „Pfiat eich" beim Verlassen einer Runde im Wirtshaus oder beim Abschied von einer Gruppe. Eine freundliche, fromm verwurzelte Verabschiedung.',
+      beispiel: 'So, jetz muass i geh, pfiat eich miteinand!',
+      beispiel_hd: 'So, jetzt muss ich gehen, behüt euch alle miteinander!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-400',
+      ausdruck: 'Auf Wiederschaun',
+      hochdeutsch: 'Auf Wiedersehen',
+      bedeutung: '„Auf Wiederschaun" ist die bairische Lautform von „Auf Wiedersehen" und die etwas förmlichere Abschiedsformel, etwa beim Verlassen eines Geschäfts oder gegenüber Fremden. Das „schaun" steht dabei für „sehen" und ist typisch für den bairischen Vokalismus. Höflich und neutral, ohne die Vertraulichkeit von „Servus" oder „Pfiat di".',
+      beispiel: 'Auf Wiederschaun, und an schönen Tag no!',
+      beispiel_hd: 'Auf Wiedersehen, und noch einen schönen Tag!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-401',
+      ausdruck: 'Grüß God beinand',
+      hochdeutsch: 'Grüß Gott zusammen',
+      bedeutung: '„Grüß God beinand" ist die an eine ganze Runde gerichtete Begrüßung, wobei „beinand" für „beieinander/zusammen" steht. Man betritt damit ein Wirtshaus oder eine Versammlung und grüßt alle Anwesenden auf einmal. Die Formel ist herzlich und gemeinschaftsstiftend und gehört zum guten Ton, wenn man dazustößt. Typisch für Stammtisch und Dorfleben.',
+      beispiel: 'Grüß God beinand, is no a Platzerl frei?',
+      beispiel_hd: 'Grüß Gott zusammen, ist noch ein Plätzchen frei?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'by-402',
+      ausdruck: 'Schweinsbraten',
+      hochdeutsch: 'Schweinebraten',
+      bedeutung: 'Der „Schweinsbraten" ist eines der wichtigsten bairischen Sonntags- und Wirtshausgerichte: ein knusprig gebratenes Stück vom Schwein mit dunkler Bratensoße, meist serviert mit Knödel und Kraut. Die resche Kruste („Krusterl") ist das Herzstück. Kaum ein Wirtshaus, das keinen Schweinsbraten auf der Karte hat — er gilt als Inbegriff bairischer Hausmannskost.',
+      beispiel: 'Am Sonntag gibt\'s an Schweinsbraten mit zwoa Knödl.',
+      beispiel_hd: 'Am Sonntag gibt es einen Schweinebraten mit zwei Knödeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-403',
+      ausdruck: 'Auszogne',
+      hochdeutsch: 'Ausgezogene (Schmalzgebäck)',
+      bedeutung: 'Die „Auszogne" (auch Auszogene oder Kiachl) ist ein traditionelles bairisches Schmalzgebäck: ein Hefeteig, der in der Mitte dünn auseinandergezogen und in heißem Schmalz ausgebacken wird, sodass ein dünner Boden mit dickem Rand entsteht. Bestreut mit Puderzucker wird sie auf Kirchweih und Volksfesten gegessen. Der Name kommt vom Auseinanderziehen des Teigs.',
+      beispiel: 'Auf da Kirta hams de bestn Auszogne weit und breit.',
+      beispiel_hd: 'Auf der Kirchweih haben sie die besten Ausgezogenen weit und breit.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-404',
+      ausdruck: 'Pfanzelt',
+      hochdeutsch: 'Krapfen aus Brandteig (Pfannzelten)',
+      bedeutung: 'Der „Pfanzelt" ist ein altbairisches Schmalzgebäck aus dünn ausgezogenem oder gerolltem Teig, das früher vor allem in Niederbayern und im Bayerwald zu Festtagen gebacken wurde. Die Schreibweisen schwanken regional stark. Heute ist der Pfanzelt eher selten geworden und gilt als Stück gelebter bäuerlicher Backtradition, das nur noch von älteren Hausfrauen gepflegt wird.',
+      beispiel: 'D\'Oma backt zu Allerheiligen no echte Pfanzelt.',
+      beispiel_hd: 'Die Oma backt zu Allerheiligen noch echte Pfannzelten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-405',
+      ausdruck: 'Griabn',
+      hochdeutsch: 'Grieben / Grammeln',
+      bedeutung: 'Die „Griabn" (Grieben oder Grammeln) sind die knusprig ausgelassenen Speckwürfel, die beim Schmalzauslassen übrig bleiben. Sie werden in Schmalz mit eingebacken („Griabnschmalz") oder über Knödel und Salate gestreut. In der bäuerlichen Küche galt nichts als verschwendet, und so wurden die Griabn als herzhafte Spezialität geschätzt. Sehr deftig und typisch für die Brotzeit.',
+      beispiel: 'A Brot mit Griabnschmalz, des is a echte Brotzeit.',
+      beispiel_hd: 'Ein Brot mit Griebenschmalz, das ist eine echte Brotzeit.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-406',
+      ausdruck: 'Kraut\'n',
+      hochdeutsch: 'Sauerkraut',
+      bedeutung: '„Kraut\'n" bezeichnet im Bairischen das Sauerkraut, die fein gehobelte und milchsauer vergorene Beilage, die zu Schweinsbraten, Würsten und Knödeln gereicht wird. Das eingelegte Kraut war früher ein wichtiger Vitaminlieferant über den Winter. „A Kraut\'n dazua" gehört zu vielen deftigen Gerichten einfach dazu und rundet sie säuerlich-frisch ab.',
+      beispiel: 'Zum Schweinsbraten mecht i no a Kraut\'n dazua.',
+      beispiel_hd: 'Zum Schweinebraten möchte ich noch etwas Sauerkraut dazu.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-407',
+      ausdruck: 'Dampfnudl',
+      hochdeutsch: 'Dampfnudel',
+      bedeutung: 'Die „Dampfnudl" ist eine warme bairische Mehlspeise aus Hefeteig, der in einer geschlossenen Pfanne in Milch oder Wasser mit etwas Fett gegart wird, bis sich unten eine goldbraune Kruste bildet. Serviert wird sie süß mit Vanillesoße oder herzhaft mit einer Suppe. Beim Garen darf der Deckel nicht gelüftet werden, sonst fällt die Dampfnudl zusammen — daher viel Erfahrung gefragt.',
+      beispiel: 'Heid gibt\'s a Dampfnudl mit Vanillesoß.',
+      beispiel_hd: 'Heute gibt es eine Dampfnudel mit Vanillesoße.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-408',
+      ausdruck: 'Stampfkartoffi',
+      hochdeutsch: 'Kartoffelpüree / Stampfkartoffeln',
+      bedeutung: '„Stampfkartoffi" sind zerstampfte, mit Milch und Butter cremig gerührte Kartoffeln, die im Bairischen als sättigende Beilage zu Braten und Geselchtem gereicht werden. Anders als das feine Püree dürfen sie ruhig etwas gröber und stückig bleiben. In der bäuerlichen Küche waren Stampfkartoffi ein einfaches, nahrhaftes Alltagsessen, oft mit gerösteten Zwiebeln verfeinert.',
+      beispiel: 'Zu de Bratwürscht passn Stampfkartoffi am bestn.',
+      beispiel_hd: 'Zu den Bratwürsten passen Stampfkartoffeln am besten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-409',
+      ausdruck: 'Mannsbild',
+      hochdeutsch: 'Mannsbild / Kerl',
+      bedeutung: 'Ein „Mannsbild" ist im Bairischen ein erwachsener Mann, oft mit dem Beiklang von Stattlichkeit oder ausgeprägter Männlichkeit. „A gscheid\'s Mannsbild" beschreibt einen kräftigen, tüchtigen Mann. Das Wort wird teils anerkennend, teils neckend gebraucht, etwa wenn eine Frau über einen ansehnlichen Kerl spricht. Es betont das Geschlecht und gehört zum traditionellen Wortschatz.',
+      beispiel: 'Da Sepp is scho a recht\'s Mannsbild worn.',
+      beispiel_hd: 'Der Sepp ist schon ein richtiger Kerl geworden.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-410',
+      ausdruck: 'Weiberleit',
+      hochdeutsch: 'Frauen / Weibsleute',
+      bedeutung: '„Weiberleit" ist die altbairische Sammelbezeichnung für die Frauen einer Gemeinschaft, etwa eines Hofes oder Dorfes. Der Begriff stammt aus der bäuerlichen Welt, in der Mannsleut und Weiberleit oft getrennte Arbeitsbereiche hatten. Heute klingt das Wort altmodisch und wird meist augenzwinkernd verwendet, etwa wenn die Weiberleit unter sich ratschen.',
+      beispiel: 'De Weiberleit hocken in da Kuchl und ratschen.',
+      beispiel_hd: 'Die Frauen sitzen in der Küche und plaudern.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-411',
+      ausdruck: 'Mandl',
+      hochdeutsch: 'Männchen / kleiner Mann',
+      bedeutung: 'Ein „Mandl" ist im Bairischen ein kleines Männchen oder ein kleiner, oft schmächtiger Mann; die Verkleinerungsform von „Mann". Das Wort kann liebevoll, spöttisch oder neutral gemeint sein, etwa für ein Figürchen, eine Spielfigur oder einen drolligen kleinen Kerl. „A gscheids Mandl" sagt man auch über ein altkluges Kind. Vielseitig und bildhaft.',
+      beispiel: 'Schau, was für a lustig\'s Mandl der g\'schnitzt hat!',
+      beispiel_hd: 'Schau, was für ein lustiges Männchen der geschnitzt hat!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-412',
+      ausdruck: 'Hupfa',
+      hochdeutsch: 'Hüpfer / unruhiger Mensch',
+      bedeutung: 'Ein „Hupfa" ist jemand, der nicht stillsitzen kann, ein zappeliger oder sprunghafter Mensch, oft auf ein lebhaftes Kind bezogen. Das Wort leitet sich von „hupfen" (hüpfen) ab. „So a Hupfa!" sagt man halb tadelnd, halb amüsiert über jemanden, der ständig in Bewegung ist oder von einer Sache zur nächsten springt. Bildhaft und alltagsnah.',
+      beispiel: 'Der kloane Hupfa hoit koan Augnblick stad.',
+      beispiel_hd: 'Der kleine Hüpfer hält keinen Augenblick still.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-413',
+      ausdruck: 'Tachinierer',
+      hochdeutsch: 'Faulenzer / Drückeberger',
+      bedeutung: 'Ein „Tachinierer" ist im bairisch-österreichischen Raum jemand, der sich vor der Arbeit drückt und die Zeit vertrödelt. Das Verb „tachinieren" bedeutet bummeln oder faulenzen. Der Begriff hat einen leicht abwertenden, aber auch humorvollen Klang und wird gern über Kollegen gesagt, die sich gemütlich durch den Tag schlängeln, statt anzupacken. Klassisches Schimpfwort am Arbeitsplatz.',
+      beispiel: 'Der oid Tachinierer steht den ganzn Tag bloß umadum.',
+      beispiel_hd: 'Der alte Faulenzer steht den ganzen Tag bloß herum.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-414',
+      ausdruck: 'Bröckerl',
+      hochdeutsch: 'kräftiger, stämmiger Kerl',
+      bedeutung: 'Ein „Bröckerl" ist im Bairischen ein stämmiger, kräftig gebauter Bursche, oft anerkennend für einen muskulösen jungen Mann gesagt. Das Bild kommt von einem festen „Brocken". „A fesch\'s Bröckerl" beschreibt einen ansehnlichen, robusten Kerl. Der Ausdruck ist neckend-bewundernd und wird häufig von Frauen über einen athletischen Mann verwendet. Lebendig und bildhaft.',
+      beispiel: 'Mei, der Bauernbua is a sauber\'s Bröckerl.',
+      beispiel_hd: 'Mein Gott, der Bauernbursche ist ein hübscher, kräftiger Kerl.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-415',
+      ausdruck: 'Fratz',
+      hochdeutsch: 'freches Kind / Range',
+      bedeutung: 'Ein „Fratz" ist im Bairischen ein freches, lebhaftes Kind, oft liebevoll-tadelnd gemeint. „So a kloana Fratz!" sagt man über ein Kind, das einen Streich gespielt hat oder vorwitzig ist. Das Wort schwankt zwischen Ärger und Zuneigung und beschreibt meist einen aufgeweckten Wildfang. Es gehört zum festen Bestand der bairischen Kindersprache.',
+      beispiel: 'Der kloane Fratz hat ma scho wieda was ausg\'fressn.',
+      beispiel_hd: 'Das kleine freche Kind hat mir schon wieder etwas angestellt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'by-416',
+      ausdruck: 'zwider',
+      hochdeutsch: 'missmutig / unleidlich',
+      bedeutung: '„Zwider" beschreibt im Bairischen einen Gemütszustand zwischen verärgert, missmutig und unleidlich. „I bin heid ganz zwider" bedeutet, dass man schlecht aufgelegt und reizbar ist. Anders als bloße Müdigkeit schwingt eine gewisse Gereiztheit mit, bei der einem alles auf die Nerven geht. Ein sehr gebräuchliches Stimmungswort, das jeder Bayer sofort versteht.',
+      beispiel: 'Heid bin i so zwider, lass mi liaba in Ruah.',
+      beispiel_hd: 'Heute bin ich so missmutig, lass mich lieber in Ruhe.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-417',
+      ausdruck: 'dahi sei',
+      hochdeutsch: 'erschöpft / fertig sein',
+      bedeutung: '„Dahi sei" (dahin sein) bedeutet im Bairischen, völlig erschöpft, ausgelaugt oder am Ende der Kräfte zu sein. „Nach da Arbeit bin i ganz dahi" heißt, dass man total platt ist. Der Ausdruck kann auch bedeuten, dass etwas kaputt oder verloren ist. In Bezug auf Menschen beschreibt er meist tiefe körperliche oder seelische Erschöpfung nach Anstrengung.',
+      beispiel: 'Nach\'m Heign war i am Abnd vollkomma dahi.',
+      beispiel_hd: 'Nach der Heuernte war ich am Abend vollkommen erschöpft.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-418',
+      ausdruck: 'pfundig',
+      hochdeutsch: 'großartig / klasse',
+      bedeutung: '„Pfundig" ist ein bairisches Lob und bedeutet großartig, prima oder klasse. Es leitet sich vom „Pfund" ab, im Sinne von „etwas, das Gewicht hat, was wert ist". „Des war a pfundige Sach!" drückt aufrichtige Begeisterung aus. Das Wort wirkt heute leicht altväterlich-gemütlich und wird gern von älteren Leuten verwendet, wenn ihnen etwas richtig gut gefällt.',
+      beispiel: 'Des war a pfundiger Abnd im Wirtshaus!',
+      beispiel_hd: 'Das war ein großartiger Abend im Wirtshaus!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-419',
+      ausdruck: 'gschamig',
+      hochdeutsch: 'schüchtern / verschämt',
+      bedeutung: '„Gschamig" beschreibt im Bairischen einen schüchternen, verschämten oder verlegenen Menschen, abgeleitet von „Scham". „Sei doch ned so gschamig!" ermuntert jemanden, der zu zurückhaltend ist. Das Wort hat einen liebevollen Klang und wird oft über Kinder oder zurückhaltende Burschen gesagt, die rot werden und sich nicht recht trauen. Sehr gebräuchlich und herzlich.',
+      beispiel: 'Da Bua is so gschamig, der traut si nix sagn.',
+      beispiel_hd: 'Der Junge ist so schüchtern, der traut sich nichts zu sagen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-420',
+      ausdruck: 'gaudig',
+      hochdeutsch: 'lustig / vergnügt',
+      bedeutung: '„Gaudig" leitet sich von der „Gaudi" (Spaß, Vergnügen) ab und beschreibt jemanden oder etwas Lustiges, Vergnügliches und Ausgelassenes. „A gaudige Runde" ist eine fröhliche Gesellschaft, in der viel gelacht wird. Das Wort drückt unbeschwerte Heiterkeit aus und passt gut zu Festen, Stammtischen und geselligen Anlässen. Ein durch und durch positives bairisches Stimmungswort.',
+      beispiel: 'Mit dene war\'s a richtig gaudige Hetz.',
+      beispiel_hd: 'Mit denen war es ein richtig lustiges Vergnügen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-421',
+      ausdruck: 'aufg\'legt',
+      hochdeutsch: 'gut gelaunt / aufgelegt',
+      bedeutung: '„Aufg\'legt" beschreibt im Bairischen die Laune, in der man sich gerade befindet. „Guad aufg\'legt" heißt bestens gelaunt, „schlecht aufg\'legt" das Gegenteil. Oft steht es allein für gute Stimmung: „Heid bin i recht aufg\'legt!" Der Ausdruck ist im Alltag allgegenwärtig, wenn jemand seine momentane Gemütslage oder Spiellaune beschreibt. Treffend und gebräuchlich.',
+      beispiel: 'Heid bin i so guad aufg\'legt, da geht alles leicht.',
+      beispiel_hd: 'Heute bin ich so gut gelaunt, da geht alles leicht.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-422',
+      ausdruck: 'verzagt',
+      hochdeutsch: 'mutlos / niedergeschlagen',
+      bedeutung: '„Verzagt" beschreibt im bairischen Sprachgebrauch einen mutlosen, niedergeschlagenen und kleinmütigen Zustand. „Sei ned glei so verzagt!" macht jemandem Mut, der schon aufgeben will. Das Wort drückt eine tiefere seelische Entmutigung aus als bloße Traurigkeit und schwingt mit, wenn einem die Zuversicht abhandenkommt. Es gehört zum gefühlvollen, älteren Wortschatz.',
+      beispiel: 'Sei ned verzagt, des wird scho wieda.',
+      beispiel_hd: 'Sei nicht so mutlos, das wird schon wieder.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-423',
+      ausdruck: 'Haderlump',
+      hochdeutsch: 'Putzlumpen / Wischtuch',
+      bedeutung: 'Ein „Haderlump" ist im Bairischen ein Putzlumpen oder Wischtuch, abgeleitet vom „Hader" (Lappen). Mit dem Haderlump wischt man den Boden oder den Tisch auf. Das Wort kann auch übertragen für einen heruntergekommenen Menschen stehen, doch im Alltag meint man meist schlicht das Putztuch. „Hol amal an Haderlump!" hört man in jeder bairischen Küche, wenn etwas verschüttet wurde.',
+      beispiel: 'Hol schnell an Haderlump, der Kaffee is umg\'falln!',
+      beispiel_hd: 'Hol schnell einen Putzlumpen, der Kaffee ist umgefallen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-424',
+      ausdruck: 'Scherzl',
+      hochdeutsch: 'Brotanschnitt / Endstück',
+      bedeutung: 'Das „Scherzl" ist im Bairischen das Anschnitt- oder Endstück eines Brotlaibs, also der knusprige erste oder letzte Kanten. Bei manchen ist das Scherzl heiß begehrt, weil es so resch ist, andere mögen es gar nicht. „I mecht\'s Scherzl!" ruft am Tisch, wer den knusprigen Ranft haben will. Ein kleines, aber im Alltag häufig gebrauchtes Wort rund ums Brot.',
+      beispiel: 'Des Scherzl vom frischn Brot g\'hört mir!',
+      beispiel_hd: 'Das Anschnittstück vom frischen Brot gehört mir!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-425',
+      ausdruck: 'Zwetschgenmandl',
+      hochdeutsch: 'Dörrpflaumenfigur (Weihnachtsdeko)',
+      bedeutung: 'Ein „Zwetschgenmandl" ist eine kleine Figur, die traditionell aus Dörrzwetschgen, Feigen und Nüssen auf einem Drahtgestell gebastelt wird, vor allem als nostalgische Weihnachts- und Christkindlmarkt-Dekoration. In Nürnberg sind die Zwetschgenmandl besonders bekannt. Sie stellen oft Handwerker oder Schornsteinfeger dar und sind ein liebenswertes Stück altbayerisch-fränkischer Bastelkunst.',
+      beispiel: 'Am Christkindlmarkt kauf i ma a Zwetschgenmandl.',
+      beispiel_hd: 'Auf dem Christkindlmarkt kaufe ich mir eine Dörrpflaumenfigur.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-426',
+      ausdruck: 'Goschnhobel',
+      hochdeutsch: 'Mundharmonika',
+      bedeutung: 'Der „Goschnhobel" ist die scherzhafte bairische Bezeichnung für die Mundharmonika — wörtlich der „Mundhobel", weil man das Instrument über die „Goschn" (den Mund) hin- und herzieht. Das Wort ist liebevoll-spöttisch und betont das volkstümliche, einfache Wesen des Instruments, das man bei Wanderungen und am Stammtisch dabeihat. Typisch bairischer Wortwitz im Alltag.',
+      beispiel: 'Auf da Hüttn hat er sein Goschnhobel ausg\'packt.',
+      beispiel_hd: 'Auf der Hütte hat er seine Mundharmonika ausgepackt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-427',
+      ausdruck: 'Klumpat',
+      hochdeutsch: 'Krempel / wertloses Zeug',
+      bedeutung: '„Klumpat" bezeichnet im Bairischen wertloses Zeug, Krempel oder Gerümpel, das nur herumliegt und Platz wegnimmt. „Räum den Klumpat weg!" fordert dazu auf, das nutzlose Durcheinander zu beseitigen. Das Wort hat einen leicht abschätzigen Klang und steht für allerlei Krimskrams, den man eigentlich wegwerfen könnte. Sehr gebräuchlich, wenn es um Unordnung geht.',
+      beispiel: 'In da Garasch liegt no a Haufa oida Klumpat.',
+      beispiel_hd: 'In der Garage liegt noch ein Haufen alter Krempel.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-428',
+      ausdruck: 'Schachtl',
+      hochdeutsch: 'Schachtel / Karton',
+      bedeutung: 'Eine „Schachtl" ist im Bairischen eine Schachtel oder ein kleiner Karton, in dem man Dinge aufbewahrt. Das Wort wird im Alltag ständig gebraucht, etwa für eine Pralinen- oder Streichholzschachtl. Spöttisch kann „a oide Schachtl" auch eine ältere Frau meinen, doch das ist eher derb. Im normalen Sprachgebrauch meint man schlicht das praktische Aufbewahrungsbehältnis aus Pappe.',
+      beispiel: 'Tua de Knöpf in de kloane Schachtl eini.',
+      beispiel_hd: 'Tu die Knöpfe in die kleine Schachtel hinein.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-429',
+      ausdruck: 'Krautwaschl',
+      hochdeutsch: 'großes Ohr / Lauscher',
+      bedeutung: 'Ein „Krautwaschl" ist im derb-humorvollen Bairischen ein großes, abstehendes Ohr. „Hast denn Krautwaschl?" fragt man scherzhaft jemanden, der schlecht zuhört oder etwas überhört hat. Das Bild vergleicht das Ohr mit einem großen Krautblatt. Der Ausdruck ist neckend gemeint und gehört zum bildhaften Körpervokabular, mit dem Bayern gern spielen. Augenzwinkernd-grob.',
+      beispiel: 'Hast denn Krautwaschl, host mi ned g\'hört?',
+      beispiel_hd: 'Hast du große Ohren, hast du mich nicht gehört?',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-430',
+      ausdruck: 'Bauchweh',
+      hochdeutsch: 'Bauchschmerzen',
+      bedeutung: '„Bauchweh" sind im Bairischen schlicht Bauchschmerzen, sei es vom Essen, von der Aufregung oder vom Sorgenmachen. „I hab Bauchweh" sagt das Kind, dem der Bauch zwickt. Übertragen bedeutet „Bauchweh mit etwas haben", dass einem eine Sache Unbehagen bereitet. Das Wort gehört zum ältesten Alltags- und Kinderwortschatz und ist im ganzen süddeutschen Raum verbreitet.',
+      beispiel: 'Von de viel\'n Knödl hab i jetz Bauchweh.',
+      beispiel_hd: 'Von den vielen Knödeln habe ich jetzt Bauchschmerzen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-431',
+      ausdruck: 'Goschn hoidn',
+      hochdeutsch: 'den Mund halten',
+      bedeutung: '„Goschn hoidn" bedeutet im Bairischen „den Mund halten", also still sein oder nichts ausplaudern. „Hoid dei Goschn!" ist eine grobe Aufforderung, endlich zu schweigen. Die „Goschn" ist der Mund, oft mit dem Beiklang des vorlauten Redens. Der Ausdruck ist deftig und direkt, im Streit ebenso gebräuchlich wie als barscher Rat, ein Geheimnis für sich zu behalten.',
+      beispiel: 'Jetz hoid amal dei Goschn und hör zua!',
+      beispiel_hd: 'Jetzt halt mal deinen Mund und hör zu!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-432',
+      ausdruck: 'Zehnt',
+      hochdeutsch: 'Zähne (Gebiss)',
+      bedeutung: 'Die „Zehnt" sind im Bairischen die Zähne; der Singular „Zahn" wird zu „Zah". „Putz da d\'Zehnt!" mahnt zum Zähneputzen. Auch in Redewendungen tauchen die Zehnt auf, etwa wenn einem vor Kälte die Zehnt klappern. Es handelt sich um die alltägliche Lautform des hochdeutschen Wortes, die im ganzen bairischen Sprachraum selbstverständlich verwendet wird. Ganz grundlegender Wortschatz.',
+      beispiel: 'Vor Kält hams ma d\'Zehnt g\'klappert.',
+      beispiel_hd: 'Vor Kälte haben mir die Zähne geklappert.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-433',
+      ausdruck: 'Buckl',
+      hochdeutsch: 'Rücken / Buckel',
+      bedeutung: 'Der „Buckl" ist im Bairischen der Rücken oder Buckel. „Mir tuat da Buckl weh" heißt, dass einem der Rücken schmerzt. In Redensarten ist der Buckl beliebt: „Du kannst ma am Buckl owe rutschn" ist eine derbe Abfuhr. Auch „an breiten Buckl ham" bedeutet, viel ertragen zu können. Ein bildhaftes, häufiges Wort des bairischen Körpervokabulars.',
+      beispiel: 'Vom Schaufeln tuat ma heid da Buckl weh.',
+      beispiel_hd: 'Vom Schaufeln tut mir heute der Rücken weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-434',
+      ausdruck: 'Wadln',
+      hochdeutsch: 'Waden',
+      bedeutung: 'Die „Wadln" sind im Bairischen die Waden, die Muskeln an der Rückseite des Unterschenkels. Kräftige Wadln gelten beim Schuhplattler und Bergsteiger als Zeichen guter Kondition. „Mir ziagt\'s in de Wadln" beschreibt einen Wadenkrampf. Das Wort ist im ganzen bairisch-österreichischen Raum geläufig und taucht auch in zusammengesetzten Begriffen rund ums Wandern und Tanzen auf.',
+      beispiel: 'Nach\'m Bergauf hab i a Ziagn in de Wadln.',
+      beispiel_hd: 'Nach dem Bergaufgehen habe ich ein Ziehen in den Waden.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-435',
+      ausdruck: 'Pratzn',
+      hochdeutsch: 'große Hände / Pranken',
+      bedeutung: 'Die „Pratzn" sind im Bairischen große, kräftige Hände oder Pranken. „Mit seine Pratzn" sagt man über jemanden mit auffallend großen Händen, oft anerkennend für einen kräftigen Mann. Das Wort kann auch tadelnd gemeint sein, wenn jemand mit groben Pratzn etwas Feines anpackt. Es ist bildhaft und gehört zum derb-herzlichen Körpervokabular der bairischen Umgangssprache.',
+      beispiel: 'Mit seine groß\'n Pratzn packt er glei zua.',
+      beispiel_hd: 'Mit seinen großen Pranken packt er gleich zu.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'by-436',
+      ausdruck: 'Passt scho',
+      hochdeutsch: 'Passt schon / ist in Ordnung',
+      bedeutung: '„Passt scho" ist eine der meistgebrauchten bairischen Redewendungen und drückt eine gelassene Zustimmung aus: alles in Ordnung, kein Problem, schon recht. Sie kann echte Zufriedenheit, aber auch resignierte Duldung bedeuten — der Tonfall entscheidet. Beim Zahlen heißt „Passt scho", dass der Rest Trinkgeld ist. Inbegriff bairischer Gelassenheit und sprachlicher Sparsamkeit.',
+      beispiel: 'Lass nur, passt scho, des macht doch nix.',
+      beispiel_hd: 'Lass nur, passt schon, das macht doch nichts.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-437',
+      ausdruck: 'Geh weida',
+      hochdeutsch: 'Geh weg / Ach komm',
+      bedeutung: '„Geh weida" (geh weiter) ist eine vielseitige bairische Redensart, die je nach Ton ungläubiges Staunen, freundliche Abwehr oder mildes „Ach komm, das glaub ich nicht" ausdrückt. „Geh weida, des is doch ned wahr!" zweifelt eine Behauptung an. Sie fordert selten ein wirkliches Weitergehen, sondern ist meist ein verbaler Reflex der Verwunderung oder des Abwinkens. Sehr lebendig.',
+      beispiel: 'Geh weida, des glaub i dir nia im Lebn!',
+      beispiel_hd: 'Ach komm, das glaube ich dir nie im Leben!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-438',
+      ausdruck: 'Ja mei',
+      hochdeutsch: 'Ja nun / was soll man machen',
+      bedeutung: '„Ja mei" ist der Inbegriff bairischer Gelassenheit und Schicksalsergebung. Die Floskel drückt aus, dass man eine Sache hinnimmt, wie sie ist — halb seufzend, halb achselzuckend. „Ja mei, dann is halt so" bedeutet „Nun ja, dann ist es eben so". Sie lässt sich kaum übersetzen und transportiert eine ganze Lebenshaltung von Geduld und Akzeptanz. Unverzichtbar im Alltag.',
+      beispiel: 'Ja mei, was willst denn machn, so is\'s halt.',
+      beispiel_hd: 'Ja nun, was willst du denn machen, so ist es eben.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-439',
+      ausdruck: 'Schau ma moi',
+      hochdeutsch: 'Schauen wir mal / mal sehen',
+      bedeutung: '„Schau ma moi" (schauen wir mal) ist eine typisch bairische Redewendung, mit der man eine Entscheidung vertagt und Gelassenheit signalisiert: man wartet ab, wie sich die Dinge entwickeln. „Schau ma moi, dann seg ma scho" drückt aus, dass sich vieles von selbst klärt. Die Floskel steht für die bairische Neigung, nichts zu überstürzen und abzuwarten. Sehr charakteristisch.',
+      beispiel: 'Schau ma moi, dann seg ma scho, wia\'s wird.',
+      beispiel_hd: 'Schauen wir mal, dann sehen wir schon, wie es wird.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-440',
+      ausdruck: 'A so a Schmarrn',
+      hochdeutsch: 'So ein Unsinn',
+      bedeutung: '„A so a Schmarrn" ist ein lebhafter bairischer Ausruf der Ablehnung und bedeutet „So ein Unsinn!" oder „So ein Quatsch!". Der „Schmarrn" ist eigentlich eine Mehlspeise, steht aber übertragen für Wertloses und Unsinniges. Mit „a so a Schmarrn" weist man eine Behauptung empört oder belustigt zurück. Die Wendung ist sehr gebräuchlich und transportiert deutliche Geringschätzung.',
+      beispiel: 'A so a Schmarrn, des glaubt doch koana!',
+      beispiel_hd: 'So ein Unsinn, das glaubt doch keiner!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-441',
+      ausdruck: 'In da Fruah',
+      hochdeutsch: 'am frühen Morgen',
+      bedeutung: '„In da Fruah" bedeutet im Bairischen „am frühen Morgen" oder „in der Frühe". „Glei in da Fruah" heißt gleich am Morgen, oft noch vor der Arbeit. Die Wendung ist im Alltag allgegenwärtig, wenn es um Tagesabläufe geht, etwa beim Aufstehen, Melken oder zur Arbeit gehen. Sie ersetzt das hochdeutsche „morgens" und klingt für bairische Ohren ganz selbstverständlich. Grundlegend.',
+      beispiel: 'In da Fruah um sechse muass i scho aufsteh.',
+      beispiel_hd: 'Am frühen Morgen um sechs muss ich schon aufstehen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-442',
+      ausdruck: 'Do legst di nieda',
+      hochdeutsch: 'Da bleibt einem die Spucke weg',
+      bedeutung: '„Do legst di nieda" (da legst du dich nieder) ist ein bairischer Ausruf des Staunens und der Verblüffung: etwas ist so überraschend oder unglaublich, dass man sich am liebsten hinlegen würde. „Do legst di nieda, was der alles ko!" drückt ehrliche Bewunderung aus. Die Wendung kann positiv staunend oder fassungslos gemeint sein und gehört zu den farbigsten bairischen Floskeln.',
+      beispiel: 'Do legst di nieda, so a Glück hat der ghabt!',
+      beispiel_hd: 'Da bleibt einem die Spucke weg, so ein Glück hat der gehabt!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'by-443',
+      ausdruck: 'Dalk',
+      hochdeutsch: 'Tölpel / ungeschickter Mensch',
+      bedeutung: 'Ein „Dalk" ist im Bairischen ein ungeschickter, tollpatschiger Mensch, ein Tölpel. „So a Dalk!" sagt man halb ärgerlich, halb nachsichtig über jemanden, der etwas verpatzt hat oder zwei linke Hände hat. Das Wort ist nicht bösartig gemeint, sondern beschreibt eine liebenswerte Tappigkeit. Davon abgeleitet ist auch „dalket" (ungeschickt, albern). Ein klassisches mildes Schimpfwort.',
+      beispiel: 'Du Dalk, jetz host scho wieda was umg\'haut!',
+      beispiel_hd: 'Du Tölpel, jetzt hast du schon wieder etwas umgeworfen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-444',
+      ausdruck: 'Hornochs',
+      hochdeutsch: 'Dummkopf / Trottel',
+      bedeutung: 'Ein „Hornochs" ist im Bairischen ein begriffsstutziger, dummer Mensch — wörtlich ein Ochse mit Hörnern, also Inbegriff der Einfältigkeit. „So a Hornochs!" ruft man über jemanden, der etwas Offensichtliches nicht begreift oder eine Dummheit gemacht hat. Das Schimpfwort ist kräftig, aber nicht ganz so derb wie andere und wird oft mit einem gewissen Kopfschütteln verwendet. Sehr bildhaft.',
+      beispiel: 'Du Hornochs, des hätt doch a Kind g\'wusst!',
+      beispiel_hd: 'Du Dummkopf, das hätte doch ein Kind gewusst!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-445',
+      ausdruck: 'Sauhund',
+      hochdeutsch: 'Schuft / durchtriebener Kerl',
+      bedeutung: 'Ein „Sauhund" ist im Bairischen ein durchtriebener, gerissener oder gemeiner Kerl. Das Schimpfwort ist deftig, kann aber je nach Tonfall sogar anerkennend für einen ausgefuchsten Schlawiner gemeint sein: „So a Sauhund!" über jemanden, der raffiniert getrickst hat. Im Ärger ist es eine handfeste Beschimpfung. Die Bandbreite zwischen Schimpf und widerwilliger Bewunderung ist typisch bairisch.',
+      beispiel: 'So a Sauhund, der hat mi glatt betrogn!',
+      beispiel_hd: 'So ein Schuft, der hat mich glatt betrogen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-446',
+      ausdruck: 'Lalli',
+      hochdeutsch: 'Schwächling / Trottel',
+      bedeutung: 'Ein „Lalli" ist im Bairischen ein weinerlicher, schwächlicher oder ungeschickter Mensch, manchmal auch ein Einfaltspinsel. „Sei doch ned so a Lalli!" fordert jemanden auf, sich nicht so anzustellen. Das Wort hat einen spöttischen, aber meist nicht bösartigen Klang und beschreibt einen, der wenig durchsetzungsfähig ist oder herumlamentiert. Ein gängiges, mild abwertendes Schimpfwort.',
+      beispiel: 'Stell di ned o wia a Lalli, pack o!',
+      beispiel_hd: 'Stell dich nicht an wie ein Schwächling, pack zu!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-447',
+      ausdruck: 'Schlawiner',
+      hochdeutsch: 'Schlitzohr / durchtriebener Kerl',
+      bedeutung: 'Ein „Schlawiner" ist im Bairischen ein gerissenes Schlitzohr, ein durchtriebener, aber meist sympathischer Schlingel. „Du Schlawiner!" sagt man halb tadelnd, halb bewundernd über jemanden, der gewitzt einen Vorteil herausschlägt oder einen kleinen Trick anwendet. Das Wort schwingt zwischen Schimpf und Anerkennung und wird oft mit einem Schmunzeln gebraucht. Liebenswert-spitzbübisch.',
+      beispiel: 'Du Schlawiner, host da\'s wieda gricht!',
+      beispiel_hd: 'Du Schlitzohr, hast es dir wieder gerichtet!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-448',
+      ausdruck: 'Trottl',
+      hochdeutsch: 'Trottel / Dummkopf',
+      bedeutung: 'Ein „Trottl" ist im Bairischen ein einfältiger, begriffsstutziger Mensch, ein Trottel. „So a Trottl!" ärgert man sich über jemanden, der ungeschickt oder dumm gehandelt hat. Das Wort ist im ganzen süddeutsch-österreichischen Raum verbreitet und gehört zu den gebräuchlichsten milden Schimpfwörtern. Je nach Tonfall reicht es von echtem Ärger bis zu nachsichtigem Kopfschütteln. Alltäglich.',
+      beispiel: 'So a Trottl, jetz hat er den Schlüssl verlorn!',
+      beispiel_hd: 'So ein Trottel, jetzt hat er den Schlüssel verloren!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-449',
+      ausdruck: 'Gschaftlhuber',
+      hochdeutsch: 'Wichtigtuer / Besserwisser',
+      bedeutung: 'Ein „Gschaftlhuber" ist im Bairischen ein Wichtigtuer, der sich überall einmischt und überaus geschäftig tut, ohne wirklich gebraucht zu werden. „So a Gschaftlhuber!" sagt man über jemanden, der ständig kommandiert und sich aufspielt. Der Begriff verbindet „Geschäft" (Betriebsamkeit) mit dem häufigen Namen Huber und verspottet die selbstherrliche Wichtigtuerei. Ein treffsicheres Schimpfwort.',
+      beispiel: 'Der Gschaftlhuber muass si überall einmischn.',
+      beispiel_hd: 'Der Wichtigtuer muss sich überall einmischen.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'by-450',
+      ausdruck: 'Wiesn-Wetter',
+      hochdeutsch: 'schönes Spätsommerwetter',
+      bedeutung: '„Wiesn-Wetter" bezeichnet im Bairischen das ideale, milde und sonnige Spätsommerwetter, wie man es sich zur Zeit des Oktoberfests („Wiesn") wünscht. „Heid hamma a echts Wiesn-Wetter" sagt man an einem goldenen Septembertag mit blauem Himmel. Der Begriff verbindet das Wetter eng mit dem größten Volksfest und drückt die Vorfreude auf laue Festtage im Biergarten aus. Stimmungsvoll.',
+      beispiel: 'Heid hamma a echts Wiesn-Wetter, perfekt für\'n Biergartn.',
+      beispiel_hd: 'Heute haben wir echtes Spätsommerwetter, perfekt für den Biergarten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-451',
+      ausdruck: 'Bröckerlwetter',
+      hochdeutsch: 'wechselhaftes Wetter mit Wolkenbrocken',
+      bedeutung: '„Bröckerlwetter" beschreibt im Bairischen einen wechselhaften Himmel mit einzelnen Wolkenbrocken, bei dem Sonne und Schatten einander abwechseln. „Heid is a richtigs Bröckerlwetter" sagt man, wenn dicke Quellwolken über den Himmel ziehen, ohne dass es gleich regnet. Der Ausdruck malt das Bild der einzelnen Wolken-„Brocken" anschaulich aus und gehört zum bäuerlichen Wetterwortschatz.',
+      beispiel: 'Bei dem Bröckerlwetter woaß ma ned, ob\'s regnet.',
+      beispiel_hd: 'Bei dem wechselhaften Wetter weiß man nicht, ob es regnet.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-452',
+      ausdruck: 'Bachl',
+      hochdeutsch: 'kleiner Bach / Rinnsal',
+      bedeutung: 'Ein „Bachl" ist im Bairischen ein kleiner Bach oder ein Rinnsal, die Verkleinerungsform von „Bach". Durch viele Dörfer und Almen plätschert ein Bachl, an dem früher Mühlen standen oder Vieh getränkt wurde. „Drunt am Bachl" verortet etwas am kleinen Wasserlauf. Das Wort ist im ländlich-bairischen Naturvokabular fest verankert und beschreibt die vielen kleinen Gewässer der Voralpenlandschaft.',
+      beispiel: 'D\'Kinder spuin drunt am Bachl im Wasser.',
+      beispiel_hd: 'Die Kinder spielen unten am kleinen Bach im Wasser.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-453',
+      ausdruck: 'Hoamgartn',
+      hochdeutsch: 'Bergweide / Heimweide',
+      bedeutung: 'Der „Hoamgartn" ist im alpenländisch-bairischen Raum eine heimatnahe Weide oder Bergwiese in der Nähe des Hofes, im Gegensatz zur fernen Hochalm. Das Vieh weidet im Frühjahr und Herbst auf dem Hoamgartn, bevor und nachdem es auf die Alm getrieben wird. Der Begriff verbindet „Heim" mit „Garten/Weide" und gehört zur bäuerlich-alpinen Lebenswelt. Heute eher selten gebraucht.',
+      beispiel: 'Im Herbst kummt\'s Viech wieda auf\'n Hoamgartn.',
+      beispiel_hd: 'Im Herbst kommt das Vieh wieder auf die Heimweide.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-454',
+      ausdruck: 'Schauer',
+      hochdeutsch: 'kurzer Regenguss',
+      bedeutung: 'Ein „Schauer" ist im Bairischen ein kurzer, oft heftiger Regenguss, der ebenso schnell vorüberzieht, wie er gekommen ist. „Da kummt no a Schauer" warnt vor einem aufziehenden Regenguss. Im Sommer sorgen plötzliche Schauer für willkommene Abkühlung, im bäuerlichen Alltag aber auch für Eile beim Heueinbringen. Das Wort ist im Wetter-Wortschatz allgegenwärtig und überall verständlich.',
+      beispiel: 'Schnell\'s Heu eini, da kummt a Schauer!',
+      beispiel_hd: 'Schnell das Heu hinein, da kommt ein Regenguss!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-455',
+      ausdruck: 'Roußkastanie',
+      hochdeutsch: 'Rosskastanie',
+      bedeutung: 'Die „Roußkastanie" ist im Bairischen die Rosskastanie, jener mächtige Baum, der traditionell die Biergärten beschattet — denn unter seinem dichten Laub blieb der Bierkeller darunter kühl. „Unter da Roußkastanie" sitzt es sich im Sommer am angenehmsten. Die herabfallenden Kastanien sind beliebtes Bastelmaterial für Kinder. Der Baum ist eng mit der bairischen Biergartenkultur verbunden.',
+      beispiel: 'Im Biergartn sitz ma am liabstn unter da Roußkastanie.',
+      beispiel_hd: 'Im Biergarten sitzen wir am liebsten unter der Rosskastanie.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-456',
+      ausdruck: 'Reif',
+      hochdeutsch: 'Raureif',
+      bedeutung: 'Der „Reif" ist im Bairischen der Raureif, die feine weiße Eisschicht, die sich an kalten Morgenstunden auf Wiesen, Dächern und Ästen bildet. „Heid liegt a Reif auf da Wiesn" beschreibt einen frostklaren Herbst- oder Wintermorgen. Der Reif kündigt den nahenden Winter an und verwandelt die Landschaft in ein glitzerndes Bild. Ein altes, allgemein verständliches Naturwort.',
+      beispiel: 'In da Fruah liegt a weißa Reif auf de Felder.',
+      beispiel_hd: 'Am frühen Morgen liegt ein weißer Raureif auf den Feldern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'by-457',
+      ausdruck: 'Enkerl',
+      hochdeutsch: 'Enkelkind',
+      bedeutung: 'Das „Enkerl" ist im bairisch-österreichischen Raum das Enkelkind, die liebevolle Verkleinerungsform. Großeltern sprechen voller Stolz von „mei Enkerl". Das Wort drückt eine besondere Zärtlichkeit aus und gehört zum familiären Grundwortschatz. „D\'Enkerl kemma am Sonntag" freut die Oma auf den Besuch der Enkelkinder. Im Bairischen ist das Enkerl der Inbegriff familiärer Freude über die jüngste Generation.',
+      beispiel: 'Am Sonntag kummt mei Enkerl zum Mittagessn.',
+      beispiel_hd: 'Am Sonntag kommt mein Enkelkind zum Mittagessen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-458',
+      ausdruck: 'Buaberl',
+      hochdeutsch: 'kleiner Bub / Söhnchen',
+      bedeutung: 'Ein „Buaberl" ist im Bairischen ein kleiner Bub, die zärtliche Verkleinerungsform von „Bua" (Junge). Eltern und Großeltern nennen ihren kleinen Sohn oder Enkel liebevoll „mei Buaberl". Das Wort schwingt von Wärme und Stolz und gehört zum innigsten Familienwortschatz. „A herzig\'s Buaberl" beschreibt ein liebes kleines Kind. Es ist Ausdruck der Zuneigung zur jüngsten männlichen Generation.',
+      beispiel: 'Mei kloans Buaberl hat heid laufa g\'lernt.',
+      beispiel_hd: 'Mein kleiner Bub hat heute laufen gelernt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-459',
+      ausdruck: 'Madl\'n',
+      hochdeutsch: 'die Mädchen / Töchter',
+      bedeutung: '„Madl\'n" ist im Bairischen die Mehrzahl von „Madl" und bezeichnet die Mädchen oder Töchter. „Mei zwoa Madl\'n" sagt eine Mutter über ihre beiden Töchter. Das Wort ist herzlich und gehört zum alltäglichen Familienwortschatz. Auf einem Fest können „d\'Madl\'n" auch allgemein die jungen Frauen meinen, die zusammen unterwegs sind. Liebevoll und im ganzen bairischen Raum gebräuchlich.',
+      beispiel: 'Mei zwoa Madl\'n gengan heid zum Tanzn.',
+      beispiel_hd: 'Meine zwei Mädchen gehen heute zum Tanzen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-460',
+      ausdruck: 'Ahnl',
+      hochdeutsch: 'Großmutter / Ahne',
+      bedeutung: 'Die „Ahnl" ist im altbairischen Sprachgebrauch die Großmutter oder allgemein eine Ahnin, eine ältere weibliche Verwandte. Das Wort ist mit „Ahne/Ahnin" verwandt und klingt heute altertümlich-ehrwürdig. „D\'Ahnl hat\'s no g\'wusst" verweist auf das Wissen der alten Generation. Vor allem in ländlichen Gegenden und in Erzählungen über frühere Zeiten ist die Ahnl als respektierte Familienälteste präsent.',
+      beispiel: 'D\'Ahnl hat uns früher so schöne Gschichtn verzöiht.',
+      beispiel_hd: 'Die Großmutter hat uns früher so schöne Geschichten erzählt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-461',
+      ausdruck: 'Bruada',
+      hochdeutsch: 'Bruder',
+      bedeutung: 'Der „Bruada" ist im Bairischen der Bruder. Die Lautform mit dem gedehnten „ua" ist typisch für den Dialekt. „Mei großer Bruada" verweist auf den älteren Geschwisterteil. Unter Männern kann „Bruada" auch freundschaftlich-vertraulich für einen guten Kumpel verwendet werden, ähnlich wie „Kumpel". Das Wort gehört zum elementaren Familienwortschatz und ist im ganzen bairischen Sprachraum verankert.',
+      beispiel: 'Mei großer Bruada hilft ma beim Hoizmacha.',
+      beispiel_hd: 'Mein großer Bruder hilft mir beim Holzmachen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-462',
+      ausdruck: 'Diandei',
+      hochdeutsch: 'Mädel / junge Frau',
+      bedeutung: 'Ein „Diandei" ist im Bairischen ein junges Mädel oder eine junge Frau, eine besonders herzliche Verkleinerungsform von „Dirn". In Volksliedern und Gstanzln besingt der Bursch oft sein „Diandei". Das Wort hat einen liebevoll-romantischen Klang und gehört zur Sprache der Trachten- und Wirtshauskultur. „A fesch\'s Diandei" beschreibt ein hübsches Mädchen. Sehr verbreitet im volkstümlichen Liedgut.',
+      beispiel: 'A fesch\'s Diandei tanzt drobn auf da Bühn.',
+      beispiel_hd: 'Ein hübsches Mädel tanzt oben auf der Bühne.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'by-463',
+      ausdruck: 'hackln',
+      hochdeutsch: 'hart arbeiten / schuften',
+      bedeutung: '„Hackln" bedeutet im bairisch-österreichischen Raum hart arbeiten oder schuften. „Den ganzn Tag hackln" heißt, sich von früh bis spät abrackern. Das Wort kommt von der „Hacke" als Werkzeug und betont die körperliche Mühe der Arbeit. Wer „a hackelt\'s Lebn" hat, muss sich sein Auskommen schwer verdienen. Der Begriff drückt Respekt vor ehrlicher, anstrengender Arbeit aus und ist sehr gebräuchlich.',
+      beispiel: 'Den ganzn Tag hab i auf\'m Bau g\'hackelt.',
+      beispiel_hd: 'Den ganzen Tag habe ich auf dem Bau geschuftet.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-464',
+      ausdruck: 'Hackn',
+      hochdeutsch: 'Arbeit / Job',
+      bedeutung: 'Die „Hackn" ist im bairisch-österreichischen Raum die Arbeit oder der Job. „I geh in d\'Hackn" heißt schlicht „Ich gehe arbeiten". „A sichere Hackn" ist ein sicherer Arbeitsplatz. Das Wort gehört zur derb-direkten Umgangssprache der arbeitenden Bevölkerung und ist im Alltag allgegenwärtig, wenn vom Broterwerb die Rede ist. Es betont das Handfeste und Mühevolle des Erwerbslebens.',
+      beispiel: 'Morgn muass i scho ganz früah in d\'Hackn.',
+      beispiel_hd: 'Morgen muss ich schon ganz früh zur Arbeit.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-465',
+      ausdruck: 'Feierabend macha',
+      hochdeutsch: 'Feierabend machen',
+      bedeutung: '„Feierabend macha" bedeutet im Bairischen, die Arbeit für den Tag zu beenden und in den wohlverdienten Feierabend zu gehen. „Jetz mach ma Feierabend!" ruft die Runde, wenn das Tagwerk getan ist. Der Begriff verbindet das Ende der Mühe mit der Vorfreude auf Ruhe, Brotzeit und vielleicht ein Bier. Er ist tief im Arbeitsalltag verwurzelt und drückt die Erleichterung nach getaner Arbeit aus.',
+      beispiel: 'So, für heid mach ma Feierabend, pack ma z\'samm!',
+      beispiel_hd: 'So, für heute machen wir Feierabend, packen wir zusammen!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-466',
+      ausdruck: 'Maurer',
+      hochdeutsch: 'Maurer',
+      bedeutung: 'Der „Maurer" ist im Bairischen wie im Hochdeutschen der Bauhandwerker, der Mauern und Wände errichtet — ein traditionsreicher und angesehener Beruf in der bayerischen Baukultur. „A fleißiger Maurer" genießt hohes Ansehen. Auf dem Bau wird oft kräftig bairisch geredet, und der Maurer gehört seit jeher zum Bild der Dörfer und Städte. Auch die Brotzeit auf dem Gerüst ist fester Bestandteil seines Arbeitstags.',
+      beispiel: 'Da Maurer baut uns heier no de Garasch fertig.',
+      beispiel_hd: 'Der Maurer baut uns dieses Jahr noch die Garage fertig.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-467',
+      ausdruck: 'Dengeln',
+      hochdeutsch: 'die Sense schärfen',
+      bedeutung: '„Dengeln" bezeichnet das traditionelle Schärfen der Sense, bei dem die Schneide mit einem Hammer auf einem kleinen Amboss („Dengelstock") dünn ausgetrieben wird. Das rhythmische Klingen des Dengelns gehörte früher zum sommerlichen Klangbild auf dem Land vor der Heumahd. „Vor\'m Mahn muass ma dengeln" — vor dem Mähen schärft der Bauer die Sense. Altes bäuerliches Handwerkswissen.',
+      beispiel: 'Da Großvada dengelt vor\'m Mahn no de Sengs.',
+      beispiel_hd: 'Der Großvater schärft vor dem Mähen noch die Sense.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-468',
+      ausdruck: 'Halterbua',
+      hochdeutsch: 'Hütejunge / Hirtenbub',
+      bedeutung: 'Ein „Halterbua" war im alten Bayern der Hütejunge, der das Vieh auf die Weide trieb und beaufsichtigte. Diese Arbeit übernahmen früher oft die Buben der Bauernfamilien oder Dienstboten. „Als Halterbua hat er d\'Küah ghüat" beschreibt diese bäuerliche Kindheitsarbeit. Der Begriff verweist auf eine vergangene ländliche Lebenswelt, in der schon Kinder fest in den Arbeitsalltag eingebunden waren.',
+      beispiel: 'Als Halterbua hat da Opa d\'Küah auf d\'Alm trieb\'n.',
+      beispiel_hd: 'Als Hütejunge hat der Opa die Kühe auf die Alm getrieben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'by-469',
+      ausdruck: 'Fingerhakeln',
+      hochdeutsch: 'Fingerhakeln (Kraftsport)',
+      bedeutung: 'Das „Fingerhakeln" ist ein traditioneller bairisch-österreichischer Kraftsport, bei dem zwei Männer über einen Tisch hinweg mit je einem Finger an einem Lederriemen ziehen, bis einer den anderen über die Tischmitte zerrt. Es gibt offizielle Meisterschaften und Gewichtsklassen. Das Fingerhakeln gilt als Probe männlicher Kraft und gehört zum festen Bestand bayerischer Brauchtumssportarten.',
+      beispiel: 'Beim Fingerhakeln hat da Stärkste vom Dorf gwunna.',
+      beispiel_hd: 'Beim Fingerhakeln hat der Stärkste vom Dorf gewonnen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-470',
+      ausdruck: 'Steinheben',
+      hochdeutsch: 'Steinheben (Kraftwettbewerb)',
+      bedeutung: 'Das „Steinheben" ist ein bayerischer Kraftwettbewerb, bei dem die Teilnehmer einen schweren Stein — oft über 100 Kilogramm — mit bloßen Händen so hoch wie möglich heben. Auf vielen Volksfesten und beim Oktoberfest gibt es einen solchen Wettbewerb mit dem berühmten „Steinheber". Das Steinheben demonstriert rohe Kraft und ist ein traditionsreiches Spektakel der bayerischen Festkultur.',
+      beispiel: 'Beim Steinheben auf da Wiesn ziagt\'s a Mordsgaudi.',
+      beispiel_hd: 'Beim Steinheben auf dem Oktoberfest ist ein Riesenspaß.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-471',
+      ausdruck: 'Wadlbeißn',
+      hochdeutsch: 'Wadenbeißen (hart spielen)',
+      bedeutung: '„Wadlbeißn" beschreibt im bairischen Fußball- und Sportjargon eine besonders bissige, hart in den Zweikampf gehende Spielweise. Ein Spieler, der seinem Gegner ständig an den Waden klebt und ruppig spielt, betreibt Wadlbeißn. Der Begriff hat einen kämpferisch-anerkennenden Klang und wird gern über zähe, unermüdliche Verteidiger gesagt. Er stammt vom Bild des Hundes, der nach den Waden schnappt.',
+      beispiel: 'Mit sein Wadlbeißn hat er den Stürmer ganz nervös gmacht.',
+      beispiel_hd: 'Mit seinem Wadenbeißen hat er den Stürmer ganz nervös gemacht.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-472',
+      ausdruck: 'Rodln',
+      hochdeutsch: 'Schlittenfahren / Rodeln',
+      bedeutung: '„Rodln" bedeutet im Bairischen Schlittenfahren, also auf dem Rodel den verschneiten Hang hinunterzusausen. „Heid gemma rodln!" freut sich die Kinderschar im Winter. In den bayerischen Alpen gibt es eigene Rodelbahnen, oft von Hütten herab. Das Rodln ist ein beliebtes Wintervergnügen für Jung und Alt und gehört zur kalten Jahreszeit ebenso wie Glühwein und Schnee. Vergnüglich und urig.',
+      beispiel: 'Wenn\'s schneit, gemma am Hügl rodln.',
+      beispiel_hd: 'Wenn es schneit, gehen wir am Hügel rodeln.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-473',
+      ausdruck: 'Schwimma geh',
+      hochdeutsch: 'schwimmen gehen / baden',
+      bedeutung: '„Schwimma geh" bedeutet im Bairischen, zum Baden und Schwimmen an einen See oder ins Freibad zu gehen. „Bei dera Hitz gemma schwimma!" ruft man an heißen Sommertagen. Bayern ist reich an Badeseen wie dem Chiemsee oder Tegernsee, und das Schwimma geh ist im Sommer ein selbstverständliches Vergnügen. Der Ausdruck gehört zum unbeschwerten Freizeitwortschatz der warmen Monate.',
+      beispiel: 'Bei dera Hitz gemma heid no schwimma.',
+      beispiel_hd: 'Bei dieser Hitze gehen wir heute noch schwimmen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-474',
+      ausdruck: 'Watn',
+      hochdeutsch: 'Watten (Kartenspiel)',
+      bedeutung: '„Watn" ist ein traditionelles bairisch-tirolerisches Kartenspiel, das mit dem bayerischen Blatt gespielt wird und vom Bluffen und geschickten Zeichengeben unter Partnern lebt. Am Stammtisch wird leidenschaftlich „g\'wattet". Beim Watn gehören das Andeuten guter Karten und das Täuschen der Gegner zum Reiz. Es ist eines der beliebtesten Wirtshaus-Kartenspiele und sorgt regelmäßig für hitzige Runden.',
+      beispiel: 'Am Stammtisch wird heid wieda g\'wattet.',
+      beispiel_hd: 'Am Stammtisch wird heute wieder Watten gespielt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'by-475',
+      ausdruck: 'Steirische',
+      hochdeutsch: 'steirische Harmonika',
+      bedeutung: 'Die „Steirische" ist die diatonische Knopfharmonika (steirische Harmonika), das wohl wichtigste Instrument der alpenländischen Volksmusik. Trotz des Namens ist sie im ganzen bairisch-österreichischen Raum verbreitet. „Er spuit a zünftige Steirische" lobt einen guten Harmonikaspieler. Ihr voller, treibender Klang prägt Polkas, Landler und Boarische auf jedem Wirtshausfest. Herzstück der Stubnmusi.',
+      beispiel: 'Auf da Hochzeit hat er a zünftige Steirische g\'spuit.',
+      beispiel_hd: 'Auf der Hochzeit hat er eine zünftige steirische Harmonika gespielt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-476',
+      ausdruck: 'Gstanzl singa',
+      hochdeutsch: 'Spottverse singen',
+      bedeutung: '„Gstanzl singa" bedeutet, kurze gereimte Spottverse („Gstanzln") zu meist bekannter Melodie vorzutragen, oft schlagfertig und auf bestimmte Personen gemünzt. Beim Gstanzl singa wechseln sich die Sänger ab und versuchen, einander an Witz zu übertreffen. Diese Tradition lebt von Improvisation und derbem Humor und gehört zu jedem zünftigen bairischen Fest. Ein Wettstreit der spitzen Zungen.',
+      beispiel: 'Beim Gstanzl singa hat er alle zum Lacha bracht.',
+      beispiel_hd: 'Beim Spottverse-Singen hat er alle zum Lachen gebracht.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-477',
+      ausdruck: 'Juchezer',
+      hochdeutsch: 'Jauchzer / Jodelschrei',
+      bedeutung: 'Ein „Juchezer" ist ein heller Jauchzer oder Jodelschrei, mit dem in der alpenländischen Volksmusik Freude und Übermut hinausgejubelt werden. Mitten in einer Polka oder beim Tanz bricht oft ein kräftiger Juchezer hervor. Der Schrei stammt aus der Tradition der Almrufe und drückt ausgelassene Lebensfreude aus. „A Juchezer wia a Glockn" lobt einen besonders schönen, durchdringenden Jauchzer.',
+      beispiel: 'Mittn im Tanz hat er an Juchezer auslassn.',
+      beispiel_hd: 'Mitten im Tanz hat er einen Jauchzer losgelassen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-478',
+      ausdruck: 'Blosmusi',
+      hochdeutsch: 'Blasmusik',
+      bedeutung: 'Die „Blosmusi" ist die Blasmusik, das Herzstück bayerischer Festkultur, gespielt von Blaskapellen aus Trompeten, Tuben, Klarinetten und Posaunen. Ohne Blosmusi ist kein Bierzelt, kein Volksfest und kein Frühschoppen denkbar. „D\'Blosmusi spuit auf" lädt zum Mitschunkeln ein. Märsche, Polkas und Walzer gehören zum festen Repertoire. Die Blosmusi verbindet Generationen und prägt das festliche Klangbild Bayerns.',
+      beispiel: 'Im Bierzelt spuit d\'Blosmusi an zünftign Marsch.',
+      beispiel_hd: 'Im Bierzelt spielt die Blasmusik einen zünftigen Marsch.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-479',
+      ausdruck: 'Landler',
+      hochdeutsch: 'Ländler (Volkstanz)',
+      bedeutung: 'Der „Landler" ist ein gemächlicher alpenländischer Volkstanz im Dreivierteltakt, ein Vorläufer des Walzers, bei dem die Paare unter erhobenen Armen kunstvolle Figuren drehen. Der Landler gehört zum festen Repertoire der Trachtenvereine und wird zu Stubnmusi getanzt. Sein ruhiger, würdevoller Charakter unterscheidet ihn von schnelleren Tänzen. Ein Stück lebendiges bairisch-österreichisches Tanzbrauchtum.',
+      beispiel: 'Beim Trachtnfest hams an schönen Landler tanzt.',
+      beispiel_hd: 'Beim Trachtenfest haben sie einen schönen Ländler getanzt.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-480',
+      ausdruck: 'Hoagascht',
+      hochdeutsch: 'zwangloser Musikabend',
+      bedeutung: 'Ein „Hoagascht" (auch Hoagarten) ist im altbairischen Brauchtum ein zwangloses, geselliges Beisammensein mit Hausmusik, Gesang und Ratschen, oft in der warmen Stube. Beim Hoagascht musizieren Freunde und Nachbarn ohne Bühne und Programm einfach miteinander. Der Begriff verweist auf eine ursprüngliche, ungezwungene Form der Volksmusikpflege und gehört zur dörflichen Geselligkeitskultur. Urig und herzlich.',
+      beispiel: 'Heid Abnd is bei uns a gmiatlicher Hoagascht.',
+      beispiel_hd: 'Heute Abend ist bei uns ein gemütlicher Musikabend.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-481',
+      ausdruck: 'Zwoagsang',
+      hochdeutsch: 'zweistimmiger Gesang',
+      bedeutung: 'Der „Zwoagsang" ist der zweistimmige Gesang, eine Grundform der alpenländischen Volksmusik, bei der zwei Sänger in harmonischen Stimmen miteinander singen. Der Zwoagsang gilt als besonders innig und klangvoll und wird bei Hoagaschten, in der Kirche und auf Festen gepflegt. „A schöner Zwoagsang geht ans Herz" lobt das ergreifende Zusammenklingen der Stimmen. Kernstück volksmusikalischer Sangeskultur.',
+      beispiel: 'Da Zwoagsang von dene zwoa is wirklich wunderschö.',
+      beispiel_hd: 'Der zweistimmige Gesang von den beiden ist wirklich wunderschön.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'by-482',
+      ausdruck: 'Leonhardiritt',
+      hochdeutsch: 'Leonhardiritt (Pferdewallfahrt)',
+      bedeutung: 'Der „Leonhardiritt" ist eine festliche Pferdewallfahrt zu Ehren des heiligen Leonhard, des Schutzpatrons der Pferde und Bauern, die alljährlich im Herbst in vielen oberbayerischen Orten stattfindet. Geschmückte Pferdegespanne und Reiter in Tracht ziehen zur Kirche, wo Tiere und Wagen gesegnet werden. Der Leonhardiritt in Bad Tölz ist besonders berühmt. Ein farbenprächtiges altbairisches Brauchtum.',
+      beispiel: 'Beim Leonhardiritt san d\'Ross wunderschö gschmückt.',
+      beispiel_hd: 'Beim Leonhardiritt sind die Pferde wunderschön geschmückt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-483',
+      ausdruck: 'Fronleichnam',
+      hochdeutsch: 'Fronleichnam (Prozession)',
+      bedeutung: '„Fronleichnam" ist im katholischen Bayern einer der höchsten Feiertage, an dem feierliche Prozessionen durch die mit Birkenzweigen und Blumenteppichen geschmückten Dörfer ziehen. Trachtler, Vereine und Blaskapellen begleiten den Zug, der an mehreren Altären haltmacht. Fronleichnam verbindet tiefe Frömmigkeit mit prächtigem Brauchtum und gehört zu den eindrucksvollsten religiösen Festen im bayerischen Jahreskreis.',
+      beispiel: 'An Fronleichnam geht d\'ganze Pfarr in da Prozession mit.',
+      beispiel_hd: 'An Fronleichnam geht die ganze Pfarrei in der Prozession mit.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-484',
+      ausdruck: 'Kirchweihbaum',
+      hochdeutsch: 'Kirchweihbaum',
+      bedeutung: 'Der „Kirchweihbaum" ist ein hoher, geschmückter Baum, der vielerorts zur Kirchweih („Kirta") aufgestellt wird, ähnlich dem Maibaum. Die Burschen des Ortes richten ihn auf und bewachen ihn vor dem Diebstahl durch das Nachbardorf. Rund um den Kirchweihbaum wird getanzt und gefeiert. Er ist ein weithin sichtbares Zeichen des Dorffestes und Ausdruck des Stolzes und Zusammenhalts der Dorfgemeinschaft.',
+      beispiel: 'D\'Burschn stelln heuer an mächtign Kirchweihbaum auf.',
+      beispiel_hd: 'Die Burschen stellen dieses Jahr einen mächtigen Kirchweihbaum auf.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-485',
+      ausdruck: 'Stand\'l',
+      hochdeutsch: 'Marktstand / Verkaufsbude',
+      bedeutung: 'Ein „Stand\'l" ist im Bairischen ein kleiner Markt- oder Verkaufsstand, eine Bude auf Volksfest, Christkindlmarkt oder Wochenmarkt. „Am Stand\'l gibt\'s gebrannte Mandl" beschreibt das Angebot süßer Leckereien. Die vielen bunten Stand\'l machen den Reiz eines jeden Festes aus, von Lebkuchenherzen bis Glühwein. Das Wort gehört zur Atmosphäre von Markt und Fest und klingt gemütlich und einladend.',
+      beispiel: 'Am Christkindlmarkt riacht\'s bei jedm Stand\'l anders.',
+      beispiel_hd: 'Auf dem Christkindlmarkt riecht es bei jedem Stand anders.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-486',
+      ausdruck: 'Maßkrugstemmen',
+      hochdeutsch: 'Maßkrugstemmen (Wettbewerb)',
+      bedeutung: 'Das „Maßkrugstemmen" ist ein beliebter Geschicklichkeits- und Kraftwettbewerb auf bayerischen Volksfesten: Wer eine volle Maß (einen Liter Bier) mit ausgestrecktem Arm am längsten waagrecht hält, ohne zu zittern oder zu verschütten, gewinnt. Das Maßkrugstemmen verlangt Kraft und Durchhaltevermögen und sorgt unter den Zuschauern für lautstarke Anfeuerung. Ein urig-bayerischer Festspaß.',
+      beispiel: 'Beim Maßkrugstemmen hat er über sechs Minutn ghalten.',
+      beispiel_hd: 'Beim Maßkrugstemmen hat er über sechs Minuten gehalten.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-487',
+      ausdruck: 'Frühschoppen',
+      hochdeutsch: 'Frühschoppen',
+      bedeutung: 'Der „Frühschoppen" ist die gesellige bayerische Tradition, sich am Sonntagvormittag nach der Kirche zu einem ersten Bier und einer Weißwurst im Wirtshaus oder Bierzelt zu treffen. Oft begleitet von Blasmusik, wird beim Frühschoppen geratscht und politisiert. „Auf an Frühschoppen geh" gehört für viele zum festen Sonntagsritual. Er verbindet Geselligkeit, Brotzeit und gemütliches Beisammensein am Vormittag.',
+      beispiel: 'Am Sonntag gemma nach da Kirch auf an Frühschoppen.',
+      beispiel_hd: 'Am Sonntag gehen wir nach der Kirche auf einen Frühschoppen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'by-488',
+      ausdruck: 'Englischer Garten',
+      hochdeutsch: 'Englischer Garten (München)',
+      bedeutung: 'Der „Englische Garten" ist die weitläufige Parkanlage im Herzen Münchens, einer der größten innerstädtischen Parks der Welt. Hier flaniert man, liegt auf den Wiesen, surft auf der Eisbach-Welle und kehrt im Biergarten am Chinesischen Turm ein. Der Englische Garten ist ein beliebter Treffpunkt der Münchner und Inbegriff städtischer Erholung. Sein Name verweist auf die naturnahe englische Gartengestaltung.',
+      beispiel: 'Bei dem Wetter gemma in Englischn Garten zum Hocka.',
+      beispiel_hd: 'Bei dem Wetter gehen wir in den Englischen Garten zum Sitzen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-489',
+      ausdruck: 'Viktualienmarkt',
+      hochdeutsch: 'Viktualienmarkt (München)',
+      bedeutung: 'Der „Viktualienmarkt" ist der berühmte tägliche Lebensmittelmarkt im Zentrum Münchens, nahe dem Marienplatz, mit Ständen voller Obst, Gemüse, Käse, Blumen und Schmankerl. In seiner Mitte steht ein gemütlicher Biergarten unter dem Maibaum. Der Viktualienmarkt ist Treffpunkt für Feinschmecker und Touristen gleichermaßen und ein lebendiges Stück Münchner Lebensart. Der Name kommt von „Viktualien" (Lebensmittel).',
+      beispiel: 'Am Viktualienmarkt kauf i mei Gmias und an Käs.',
+      beispiel_hd: 'Auf dem Viktualienmarkt kaufe ich mein Gemüse und einen Käse.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-490',
+      ausdruck: 'Walhalla',
+      hochdeutsch: 'Walhalla (Ruhmeshalle)',
+      bedeutung: 'Die „Walhalla" ist eine als griechischer Tempel errichtete Ruhmeshalle hoch über der Donau bei Regensburg, die König Ludwig I. zu Ehren bedeutender Persönlichkeiten deutscher Sprache erbauen ließ. In ihrem Inneren stehen zahlreiche Marmorbüsten. Die Walhalla ist ein eindrucksvolles Denkmal des bayerischen Klassizismus und ein weithin sichtbares Wahrzeichen über dem Donautal. Benannt nach der germanischen Götterhalle.',
+      beispiel: 'Von da Walhalla aus hat ma an herrlichn Blick auf d\'Donau.',
+      beispiel_hd: 'Von der Walhalla aus hat man einen herrlichen Blick auf die Donau.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-491',
+      ausdruck: 'Watzmannhaus',
+      hochdeutsch: 'Watzmannhaus (Berghütte)',
+      bedeutung: 'Das „Watzmannhaus" ist eine bekannte Berghütte am Watzmann im Berchtesgadener Land, Ausgangspunkt für die anspruchsvolle Besteigung des Gipfels. Bergsteiger übernachten hier, um früh zur berühmten Watzmann-Überschreitung aufzubrechen. Mit seinem grandiosen Ausblick über den Königssee ist das Watzmannhaus ein begehrtes Ziel und Stützpunkt im alpinen Bayern. Die Hütte verkörpert die Tradition des Bergsteigens.',
+      beispiel: 'Mia übernachtn am Watzmannhaus und steign in da Fruah auf.',
+      beispiel_hd: 'Wir übernachten am Watzmannhaus und steigen am frühen Morgen auf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-492',
+      ausdruck: 'Nockherberg',
+      hochdeutsch: 'Nockherberg (München)',
+      bedeutung: 'Der „Nockherberg" ist eine traditionsreiche Bierkeller- und Feststätte in München, berühmt für den alljährlichen Starkbieranstich, bei dem im Rahmen des „Derblecken" Politiker derb und spöttisch durch den Kakao gezogen werden. Das politische Singspiel am Nockherberg ist landesweit bekannt. Der Ort verbindet bayerische Bierkultur mit pointiertem politischem Spott und ist fester Bestandteil der Fastenzeit.',
+      beispiel: 'Am Nockherberg wern d\'Politiker wieda kräftig deblegt.',
+      beispiel_hd: 'Am Nockherberg werden die Politiker wieder kräftig verspottet.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-493',
+      ausdruck: 'Spitzingsee',
+      hochdeutsch: 'Spitzingsee (Bergsee)',
+      bedeutung: 'Der „Spitzingsee" ist ein malerischer Bergsee in den Schlierseer Bergen südlich von München, umgeben von beliebten Wander- und Skigebieten. Im Sommer locken Bergtouren und das kühle Wasser, im Winter die Pisten. Der Spitzingsee ist ein klassisches Ausflugsziel der Münchner und steht für die Schönheit der oberbayerischen Bergwelt. Rund um den See reihen sich urige Almen und Hütten.',
+      beispiel: 'Am Wochenend fahr ma zum Wandern an Spitzingsee.',
+      beispiel_hd: 'Am Wochenende fahren wir zum Wandern an den Spitzingsee.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-494',
+      ausdruck: 'Starnberger See',
+      hochdeutsch: 'Starnberger See',
+      bedeutung: 'Der „Starnberger See" ist ein großer, vornehmer See südwestlich von München, bekannt für seine Villen, Segelboote und als beliebtes Naherholungsgebiet. Hier ertrank 1886 König Ludwig II. unter bis heute ungeklärten Umständen, woran ein Gedenkkreuz im Wasser erinnert. Der Starnberger See verbindet landschaftliche Schönheit mit bayerischer Geschichte und ist ein bevorzugter Ausflugsort der Großstädter.',
+      beispiel: 'Am Starnberger See gemma segeln, wenn da Wind passt.',
+      beispiel_hd: 'Am Starnberger See gehen wir segeln, wenn der Wind passt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'by-495',
+      ausdruck: 'oans',
+      hochdeutsch: 'eins',
+      bedeutung: '„Oans" ist die bairische Lautform der Zahl „eins" und gehört zum elementarsten Wortschatz. Berühmt ist sie aus dem Wiesn-Trinkspruch „Oans, zwoa, gsuffa!". „Oans noch" bestellt ein weiteres Bier. Die Form mit dem typischen „oa"-Diphthong statt „ei" ist eines der auffälligsten Kennzeichen des bairischen Lautstands. Ohne „oans" kommt kein Zählen und kein Anstoßen im bairischen Alltag aus.',
+      beispiel: 'Oans, zwoa, drei, jetz geht\'s los!',
+      beispiel_hd: 'Eins, zwei, drei, jetzt geht es los!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-496',
+      ausdruck: 'fuchzg',
+      hochdeutsch: 'fünfzig',
+      bedeutung: '„Fuchzg" ist die bairische Lautform für die Zahl „fünfzig". „A fuchzg Johr" bedeutet fünfzig Jahre. Die Form zeigt die typische bairische Vereinfachung und Abschleifung des hochdeutschen Wortes. Beim Rechnen, beim Altersangeben oder beim Bezahlen ist „fuchzg" allgegenwärtig. „Fünfasechzg" für 65 zeigt dasselbe Lautmuster. Grundlegender Zahlenwortschatz, den jeder Bayer selbstverständlich verwendet.',
+      beispiel: 'Der Opa wird heier scho fuchzg Johr alt.',
+      beispiel_hd: 'Der Opa wird dieses Jahr schon fünfzig Jahre alt.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-497',
+      ausdruck: 'a Dutzn',
+      hochdeutsch: 'ein Dutzend',
+      bedeutung: '„A Dutzn" bezeichnet im Bairischen ein Dutzend, also zwölf Stück. „A Dutzn Oar" sind zwölf Eier. Die Mengenangabe ist beim Einkaufen auf dem Markt und beim Backen gebräuchlich. „A halb\'s Dutzn" meint entsprechend sechs. Die runde Zahl Zwölf hat als Dutzn praktische Bedeutung im Alltag und gehört zum traditionellen Mengenwortschatz, der besonders bei Eiern und Backwaren verwendet wird.',
+      beispiel: 'Hol ma a Dutzn frische Oar beim Bauern.',
+      beispiel_hd: 'Hol mir ein Dutzend frische Eier beim Bauern.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-498',
+      ausdruck: 'a Schock',
+      hochdeutsch: 'sechzig Stück / eine große Menge',
+      bedeutung: '„A Schock" ist eine alte bairische Mengenangabe für sechzig Stück, früher vor allem im Handel mit Eiern und Garben gebräuchlich. Heute wird „a Schock" oft nur noch übertragen für „eine große, unbestimmte Menge" verwendet: „a ganz\'s Schock Leit" sind sehr viele Leute. Die ursprünglich präzise Zahl ist zur bildhaften Umschreibung für Fülle geworden und gehört zum alten Zähl- und Maßwortschatz.',
+      beispiel: 'Auf\'m Fest warn a ganz\'s Schock Leit beinand.',
+      beispiel_hd: 'Auf dem Fest waren sehr viele Leute beieinander.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-499',
+      ausdruck: 'hundertdausnd',
+      hochdeutsch: 'hunderttausend',
+      bedeutung: '„Hundertdausnd" ist die bairische Lautform für „hunderttausend" und wird oft übertreibend für eine riesige, unzählbare Menge gebraucht. „I hab\'s da scho hundertdausnd Moi gsagt!" drückt aus, dass man etwas unzählige Male wiederholt hat. Die Zahl steht hier nicht für eine genaue Anzahl, sondern für gefühlte Endlosigkeit. Solche Übertreibungen mit großen Zahlen sind im bairischen Alltag sehr beliebt und ausdrucksstark.',
+      beispiel: 'Des hab i da scho hundertdausnd Moi gsagt!',
+      beispiel_hd: 'Das habe ich dir schon hunderttausend Mal gesagt!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-500',
+      ausdruck: 'a Schippl',
+      hochdeutsch: 'eine kleine Menge / ein paar',
+      bedeutung: '„A Schippl" bezeichnet im Bairischen eine kleine, unbestimmte Menge, ein paar Stück oder eine Handvoll. „A Schippl Leit" sind ein paar wenige Leute, „a Schippl Kirschn" eine kleine Anzahl Kirschen. Die Mengenangabe ist ungefähr und alltagssprachlich und drückt aus, dass es sich nur um wenige handelt. Das Wort ist im ländlichen Bairischen verbreitet, wenn man eine überschaubare kleine Anzahl meint.',
+      beispiel: 'Es war bloß a Schippl Leit beim Vortrag.',
+      beispiel_hd: 'Es waren bloß ein paar wenige Leute beim Vortrag.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'by-501',
+      ausdruck: 'Brezenbäck',
+      hochdeutsch: 'Brezenbäcker / Bäcker',
+      bedeutung: 'Der „Brezenbäck" ist der Bäcker, der die typischen bayerischen Brezn (Brezeln) backt — knusprig, dunkel gelaugt und mit grobem Salz bestreut. Frische Brezn vom Brezenbäck gehören zur Weißwurst und zur Brotzeit einfach dazu. „Hol beim Brezenbäck a paar frische" schickt jemanden zum morgendlichen Einkauf. Das Handwerk des Brezenbackens hat in Bayern eine lange Tradition und ist Teil der Esskultur.',
+      beispiel: 'In da Fruah hol i beim Brezenbäck a paar frische Brezn.',
+      beispiel_hd: 'Am frühen Morgen hole ich beim Bäcker ein paar frische Brezeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-502',
+      ausdruck: 'Wurstsalat',
+      hochdeutsch: 'Wurstsalat',
+      bedeutung: 'Der „Wurstsalat" ist ein klassisches bayerisches Brotzeitgericht aus in Streifen geschnittener Wurst, Zwiebeln, Essig und Öl, oft mit Käse als „Schweizer Wurstsalat". Sauer angemacht und mit einer frischen Brezn serviert, ist er ein beliebter Vesper- und Wirtshausklassiker. „An Wurstsalat mit Musi" gehört zur deftigen bairischen Küche. Erfrischend und herzhaft zugleich, vor allem an warmen Tagen geschätzt.',
+      beispiel: 'Zum Vesper gibt\'s an saurn Wurstsalat mit Brezn.',
+      beispiel_hd: 'Zur Brotzeit gibt es einen sauren Wurstsalat mit Brezel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-503',
+      ausdruck: 'Apfelkiachl',
+      hochdeutsch: 'Apfelküchlein (im Teig gebacken)',
+      bedeutung: 'Die „Apfelkiachl" sind in Backteig getauchte und in Schmalz ausgebackene Apfelringe, eine beliebte süße bairische Mehlspeise. Mit Zimt und Zucker bestreut werden sie warm serviert, oft mit Vanillesoße. „Apfelkiachl wia bei da Oma" wecken nostalgische Erinnerungen an die Hausmannskost. Die Süßspeise gehört zu den traditionellen warmen Nachspeisen und ist besonders im Herbst zur Apfelernte beliebt.',
+      beispiel: 'Zum Nachtisch macht d\'Oma warme Apfelkiachl.',
+      beispiel_hd: 'Zum Nachtisch macht die Oma warme Apfelküchlein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-504',
+      ausdruck: 'Bries',
+      hochdeutsch: 'Bries (Kalbsbries)',
+      bedeutung: 'Das „Bries" ist eine feine Innerei vom Kalb (die Thymusdrüse), die in der gehobenen bayerischen und Wirtshausküche als Delikatesse gilt. Zart und mild im Geschmack, wird das Bries gebacken, geschmort oder als Beilage zu feinen Gerichten gereicht. „A bachan\'s Bries" ist eine geschätzte Spezialität für Kenner. Die Innereienküche hat in Bayern Tradition, und das Bries zählt zu ihren edelsten Vertretern.',
+      beispiel: 'Im guadn Wirtshaus gibt\'s a bachan\'s Bries.',
+      beispiel_hd: 'Im guten Wirtshaus gibt es ein gebackenes Bries.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'by-505',
+      ausdruck: 'Baazn',
+      hochdeutsch: 'Matsch / breiiges Zeug',
+      bedeutung: '„Baazn" bezeichnet im Bairischen einen weichen, breiigen Matsch oder eine klebrige, unappetitliche Masse. „Des is ja a einziga Baazn!" sagt man über aufgeweichten Boden oder verkochtes Essen. Davon abgeleitet ist „baazig" (matschig, weich). Das Wort hat einen anschaulich-derben Klang und beschreibt alles, was unangenehm breiig und formlos ist, von Schlamm bis zu zerdrücktem Obst. Sehr bildhaft.',
+      beispiel: 'Nach\'m Regn is da ganze Weg a oanziga Baazn.',
+      beispiel_hd: 'Nach dem Regen ist der ganze Weg ein einziger Matsch.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-506',
+      ausdruck: 'Bröserl',
+      hochdeutsch: 'Krümel / Bröselchen',
+      bedeutung: 'Ein „Bröserl" ist im Bairischen ein winziger Krümel oder ein Bröselchen, die Verkleinerungsform von „Brösel". „Koa Bröserl is übrig blieb\'n" heißt, dass rein gar nichts mehr da ist. Übertragen kann „a Bröserl" auch ein kleines bisschen von etwas bedeuten: „a Bröserl Glück". Das Wort steht für die allerkleinste Menge und ist im Alltag rund ums Essen wie auch in übertragener Bedeutung gebräuchlich.',
+      beispiel: 'Vom Kucha is koa oanzigs Bröserl mehr da.',
+      beispiel_hd: 'Vom Kuchen ist kein einziger Krümel mehr da.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'by-507',
+      ausdruck: 'pumperlg\'sund',
+      hochdeutsch: 'kerngesund',
+      bedeutung: '„Pumperlg\'sund" bedeutet im Bairischen kerngesund, blühend gesund und voller Kraft. Das Wort spielt auf das kräftige „Pumpern" (Schlagen) des Herzens an. „Da Opa is mit neunzg no pumperlg\'sund" lobt jemandes robuste Gesundheit bis ins hohe Alter. Der Ausdruck ist herzlich und volkstümlich und drückt aus, dass jemandem nicht das Geringste fehlt. Ein beliebtes, fröhliches Wort für blühende Gesundheit.',
+      beispiel: 'Mit seine neunzg Johr is da Opa no pumperlg\'sund.',
+      beispiel_hd: 'Mit seinen neunzig Jahren ist der Opa noch kerngesund.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'by-508',
+      ausdruck: 'g\'spritzt',
+      hochdeutsch: 'eingebildet / affektiert',
+      bedeutung: '„G\'spritzt" beschreibt im Bairischen einen eingebildeten, affektierten oder geziert-vornehmen Menschen, der sich besser gibt, als er ist. „So a g\'spritzte Person!" missbilligt jemandes hochnäsiges Getue. Das Bild stammt vom „Spritzen" im Sinne von künstlich aufgemacht. Der Ausdruck ist abwertend und entlarvt aufgesetztes, unnatürliches Benehmen. Echtheit und Bodenständigkeit gelten in Bayern als Tugend, Gespreiztheit als unsympathisch.',
+      beispiel: 'De redt so g\'spritzt daher, des passt ned zu ihr.',
+      beispiel_hd: 'Die redet so affektiert daher, das passt nicht zu ihr.',
+      kategorie: 'gefuehle'
     }
   ]
 };
