@@ -1,11 +1,11 @@
 // Statistiken-View — detailliertes Analyse-Dashboard für Lernfortschritt
-import { el, go } from '../util.js';
+import { el, go, toast } from '../util.js';
 import { getLernStats, getQuizGenauigkeit, getStreak, getActiveDays, getQuizHistory, getVisitedDialects } from '../store.js';
 import { getLernstand } from '../store/learning.js';
 import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getXp, xpToNextLevel, getLevelTitle, getXpLog } from '../store/xp.js';
-import { getSrsStats, getSrsConfig, setSrsConfig } from '../store/srs.js';
+import { getSrsStats, getSrsConfig, setSrsConfig, getSrsLogStats, optimizeSrsParams } from '../store/srs.js';
 import { getProgressHistory, getGoalTarget, getTodayProgress } from '../store/goals.js';
 import { getStreakHeatmap } from '../store/streak.js';
 import { getWeekReview } from '../util/week-review.js';
@@ -208,10 +208,75 @@ function renderSrsSettingsSection() {
         slider,
         tradeoffEl
       ));
+
+      body.appendChild(renderSrsOptimizer(cfg, paint));
     }
   }
   paint();
   return section;
+}
+
+// Personalisierung: lernt die 19 FSRS-Gewichte aus dem Review-Log des Nutzers.
+// Genau dieser Schritt schlägt SM-2 — Anki nutzt für alle dieselbe Easiness,
+// FSRS justiert das Modell auf das tatsächliche Vergessensverhalten.
+const SRS_OPT_MIN_REVIEWS = 64;
+
+function renderSrsOptimizer(cfg, repaint) {
+  const stats = getSrsLogStats();
+  const personalized = Array.isArray(cfg.params) && cfg.params.length === 19;
+  const canOptimize = stats.reviewable >= SRS_OPT_MIN_REVIEWS;
+
+  const badge = el('span', { class: 'srs-opt-badge' + (personalized ? ' is-on' : '') },
+    personalized ? '● Personalisiert' : '○ Standard-Gewichte');
+
+  const info = el('p', { class: 'srs-opt-info lede' }, canOptimize
+    ? `${stats.reviewable} bewertbare Reviews über ${stats.cards} Karten — bereit für die Personalisierung.`
+    : `${stats.reviewable} von ${SRS_OPT_MIN_REVIEWS} bewertbaren Reviews gesammelt. Lerne weiter, dann lernt FSRS deine Gewichte aus deiner Historie.`
+  );
+
+  const optBtn = el('button', {
+    class: 'srs-opt-btn',
+    type: 'button',
+    onClick: () => {
+      optBtn.disabled = true;
+      optBtn.textContent = 'Optimiere…';
+      // Kurz an den Browser zurückgeben, damit der Button-Text neu zeichnet,
+      // bevor die (synchrone) Optimierung läuft.
+      setTimeout(() => {
+        const res = optimizeSrsParams({ minReviews: SRS_OPT_MIN_REVIEWS });
+        if (res.ok) {
+          toast(`Gewichte personalisiert · Loss ${res.initialLoss.toFixed(3)} → ${res.finalLoss.toFixed(3)}`, 'success');
+        } else {
+          toast('Noch zu wenig Daten für die Optimierung.', 'info');
+        }
+        repaint();
+      }, 30);
+    },
+  }, personalized ? 'Neu optimieren' : 'Jetzt optimieren');
+  optBtn.disabled = !canOptimize;
+
+  const actions = el('div', { class: 'srs-opt-actions' }, optBtn);
+
+  if (personalized) {
+    actions.appendChild(el('button', {
+      class: 'srs-opt-reset',
+      type: 'button',
+      onClick: () => {
+        setSrsConfig({ params: null });
+        toast('Zurück auf Standard-Gewichte.', 'info');
+        repaint();
+      },
+    }, 'Auf Standard zurücksetzen'));
+  }
+
+  return el('div', { class: 'srs-optimizer' },
+    el('div', { class: 'srs-opt-head' },
+      el('span', { class: 'srs-opt-title' }, 'Deine FSRS-Gewichte'),
+      badge
+    ),
+    info,
+    actions
+  );
 }
 
 function retentionTradeoff(pct) {

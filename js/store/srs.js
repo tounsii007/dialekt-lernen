@@ -24,6 +24,7 @@ import {
   S_MIN,
   schedule as fsrsSchedule, previewIntervals as fsrsPreview,
 } from '../util/fsrs.js';
+import { optimize as fsrsOptimize, buildSequences } from '../util/fsrs-optimizer.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -348,6 +349,29 @@ export function getReviewPreview(dialektId, ausdruckId, now = Date.now()) {
     params: cfg.params || undefined,
     desiredRetention: cfg.retention,
   });
+}
+
+// Kennzahlen über das Review-Log für die Optimizer-UI:
+//   total      — Roh-Einträge im Log
+//   reviewable — bewertbare Reviews (jedes außer dem ersten je Karte)
+//   cards      — Karten mit mindestens einem Review
+export function getSrsLogStats() {
+  const log = Array.isArray(state.srsLog) ? state.srsLog : [];
+  const { scored, cards } = buildSequences(log);
+  return { total: log.length, reviewable: scored, cards };
+}
+
+// Fittet die FSRS-Gewichte aus dem Review-Log und übernimmt sie (sofern
+// genug Daten vorliegen) als nutzerspezifische Parameter. Liefert das
+// Optimizer-Ergebnis zurück (ok/Loss/Anzahl), damit die UI Feedback geben kann.
+// opts.apply === false rechnet nur, ohne zu speichern (Vorschau/Tests).
+export function optimizeSrsParams(opts = {}) {
+  const log = Array.isArray(state.srsLog) ? state.srsLog : [];
+  const res = fsrsOptimize(log, opts);
+  if (res.ok && opts.apply !== false) {
+    setSrsConfig({ params: res.params });
+  }
+  return res;
 }
 
 // Pure SM-2-Berechnung ohne State-Side-Effects.
