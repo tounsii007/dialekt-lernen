@@ -4,10 +4,15 @@ import 'package:flutter/material.dart';
 
 import '../data/models.dart';
 import '../data/repository.dart';
+import '../data/srs_store.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
 import '../widgets/speak_button.dart';
+
+const int _kSessionSize = 20;
+
+typedef _Card = ({Dialekt dialekt, Ausdruck ausdruck, String key});
 
 class LernenScreen extends StatefulWidget {
   const LernenScreen({super.key});
@@ -19,9 +24,12 @@ class LernenScreen extends StatefulWidget {
 class _LernenScreenState extends State<LernenScreen>
     with SingleTickerProviderStateMixin {
   late final AnimationController _flip;
-  late final List<({Dialekt dialekt, Ausdruck ausdruck})> _cards;
+  List<_Card> _session = [];
   int _index = 0;
   bool _showBack = false;
+  bool _finished = false;
+  bool _studyAhead = false;
+  final Map<int, int> _ratings = {}; // rating -> count
 
   @override
   void initState() {
@@ -30,17 +38,49 @@ class _LernenScreenState extends State<LernenScreen>
       vsync: this,
       duration: const Duration(milliseconds: 420),
     );
-    final all = List<({Dialekt dialekt, Ausdruck ausdruck})>.from(
-      DialektRepository.instance.alleMitDialekt,
-    );
-    all.shuffle(math.Random());
-    _cards = all.take(30).toList();
+    _buildSession();
   }
 
   @override
   void dispose() {
     _flip.dispose();
     super.dispose();
+  }
+
+  void _buildSession({bool studyAhead = false}) {
+    final srs = SrsStore.instance;
+    final now = DateTime.now().millisecondsSinceEpoch;
+    final all = <_Card>[
+      for (final p in DialektRepository.instance.alleMitDialekt)
+        (
+          dialekt: p.dialekt,
+          ausdruck: p.ausdruck,
+          key: '${p.dialekt.id}.${p.ausdruck.id}',
+        ),
+    ];
+
+    List<_Card> pool;
+    if (studyAhead) {
+      pool = List.of(all)..shuffle(math.Random());
+    } else {
+      // Fällige zuerst (nach due sortiert), dann neue Karten.
+      final due = all.where((c) => !srs.isNew(c.key) && srs.isDue(c.key, now)).toList()
+        ..sort((a, b) =>
+            (srs.get(a.key)?.due ?? 0).compareTo(srs.get(b.key)?.due ?? 0));
+      final fresh = all.where((c) => srs.isNew(c.key)).toList()
+        ..shuffle(math.Random());
+      pool = [...due, ...fresh];
+    }
+
+    setState(() {
+      _session = pool.take(_kSessionSize).toList();
+      _index = 0;
+      _showBack = false;
+      _finished = _session.isEmpty;
+      _studyAhead = studyAhead;
+      _ratings.clear();
+    });
+    _flip.reset();
   }
 
   void _toggle() {
@@ -52,118 +92,227 @@ class _LernenScreenState extends State<LernenScreen>
     }
   }
 
-  void _next() {
-    if (_cards.isEmpty) return;
+  Future<void> _rate(int rating) async {
+    final card = _session[_index];
+    await SrsStore.instance.review(card.key, rating);
+    _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
+    if (_index + 1 >= _session.length) {
+      setState(() => _finished = true);
+      return;
+    }
     setState(() {
-      _index = (_index + 1) % _cards.length;
+      _index++;
       _showBack = false;
     });
-    _flip.reverse();
+    _flip.reset();
   }
 
   @override
   Widget build(BuildContext context) {
-    final surfaces = AppSurfaces.of(context);
-
-    if (_cards.isEmpty) {
-      return const AuroraBackground(
-        child: Center(child: Text('Keine Karten verfügbar.')),
+    if (_finished) {
+      return AuroraBackground(
+        child: SafeArea(child: _buildSummary(context)),
       );
     }
-
-    final card = _cards[_index];
-
     return AuroraBackground(
-      child: SafeArea(
-        bottom: false,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpacing.x5,
-            AppSpacing.x5,
-            AppSpacing.x5,
-            120,
-          ),
-          child: Column(
+      child: SafeArea(bottom: false, child: _buildSessionView(context)),
+    );
+  }
+
+  Widget _buildSessionView(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    final card = _session[_index];
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpacing.x5,
+        AppSpacing.x5,
+        AppSpacing.x5,
+        120,
+      ),
+      child: Column(
+        children: [
+          Row(
             children: [
-              Row(
-                children: [
-                  Text('🃏 Karteikarten',
-                      style: Theme.of(context).textTheme.headlineMedium
-                          ?.copyWith(fontSize: 24)),
-                  const Spacer(),
-                  SpeakButton(
-                    text: card.ausdruck.ausdruck,
-                    lang: card.dialekt.lang,
-                    size: 22,
-                  ),
-                  Text('${_index + 1} / ${_cards.length}',
-                      style: TextStyle(color: surfaces.textMuted)),
-                ],
+              Text('🃏 Lernen',
+                  style: Theme.of(context).textTheme.headlineMedium
+                      ?.copyWith(fontSize: 24)),
+              const Spacer(),
+              SpeakButton(
+                text: card.ausdruck.ausdruck,
+                lang: card.dialekt.lang,
               ),
-              const SizedBox(height: AppSpacing.x5),
-              Expanded(
-                child: Center(
-                  child: GestureDetector(
-                    onTap: _toggle,
-                    child: AnimatedBuilder(
-                      animation: _flip,
-                      builder: (context, _) {
-                        final angle = _flip.value * math.pi;
-                        final isBack = angle > math.pi / 2;
-                        return Transform(
-                          alignment: Alignment.center,
-                          transform: Matrix4.identity()
-                            ..setEntry(3, 2, 0.001)
-                            ..rotateY(angle),
-                          child: isBack
-                              ? Transform(
-                                  alignment: Alignment.center,
-                                  transform: Matrix4.identity()..rotateY(math.pi),
-                                  child: _CardFace(
-                                    title: card.ausdruck.hochdeutsch,
-                                    subtitle: card.ausdruck.bedeutung,
-                                    accent: AppColors.accent,
-                                    tag: 'Hochdeutsch',
-                                  ),
-                                )
-                              : _CardFace(
-                                  title: card.ausdruck.ausdruck,
-                                  subtitle: card.ausdruck.beispiel.isNotEmpty
-                                      ? '„${card.ausdruck.beispiel}"'
-                                      : 'Tippen zum Umdrehen',
-                                  accent: AppColors.brand,
-                                  tag: 'Dialekt',
-                                ),
-                        );
-                      },
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: AppSpacing.x5),
-              Row(
-                children: [
-                  Expanded(
-                    child: GradientButton(
-                      label: _showBack ? 'Umdrehen' : 'Aufdecken',
-                      variant: BtnVariant.secondary,
-                      icon: Icons.flip_rounded,
-                      expand: true,
-                      onPressed: _toggle,
-                    ),
-                  ),
-                  const SizedBox(width: AppSpacing.x3),
-                  Expanded(
-                    child: GradientButton(
-                      label: 'Weiter',
-                      icon: Icons.arrow_forward_rounded,
-                      expand: true,
-                      onPressed: _next,
-                    ),
-                  ),
-                ],
+              Text('${_index + 1} / ${_session.length}',
+                  style: TextStyle(color: surfaces.textMuted)),
+            ],
+          ),
+          const SizedBox(height: AppSpacing.x3),
+          Row(
+            children: [
+              Text(card.dialekt.flag, style: const TextStyle(fontSize: 16)),
+              const SizedBox(width: 6),
+              Text(
+                _studyAhead ? '${card.dialekt.name} · Üben' : card.dialekt.name,
+                style: TextStyle(color: card.dialekt.color, fontSize: 13),
               ),
             ],
+          ),
+          const SizedBox(height: AppSpacing.x4),
+          Expanded(
+            child: Center(
+              child: GestureDetector(
+                onTap: _toggle,
+                child: AnimatedBuilder(
+                  animation: _flip,
+                  builder: (context, _) {
+                    final angle = _flip.value * math.pi;
+                    final isBack = angle > math.pi / 2;
+                    return Transform(
+                      alignment: Alignment.center,
+                      transform: Matrix4.identity()
+                        ..setEntry(3, 2, 0.001)
+                        ..rotateY(angle),
+                      child: isBack
+                          ? Transform(
+                              alignment: Alignment.center,
+                              transform: Matrix4.identity()..rotateY(math.pi),
+                              child: _CardFace(
+                                title: card.ausdruck.hochdeutsch,
+                                subtitle: card.ausdruck.bedeutung,
+                                accent: AppColors.accent,
+                                tag: 'Hochdeutsch',
+                              ),
+                            )
+                          : _CardFace(
+                              title: card.ausdruck.ausdruck,
+                              subtitle: card.ausdruck.beispiel.isNotEmpty
+                                  ? '„${card.ausdruck.beispiel}"'
+                                  : 'Tippen zum Umdrehen',
+                              accent: AppColors.brand,
+                              tag: 'Dialekt',
+                            ),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.x4),
+          if (!_showBack)
+            GradientButton(
+              label: 'Aufdecken',
+              icon: Icons.visibility_rounded,
+              expand: true,
+              onPressed: _toggle,
+            )
+          else
+            Row(
+              children: [
+                _RateButton(
+                  label: 'Schwer',
+                  color: AppColors.danger,
+                  onTap: () => _rate(ratingHard),
+                ),
+                const SizedBox(width: AppSpacing.x2),
+                _RateButton(
+                  label: 'Mittel',
+                  color: AppColors.warning,
+                  onTap: () => _rate(ratingMed),
+                ),
+                const SizedBox(width: AppSpacing.x2),
+                _RateButton(
+                  label: 'Leicht',
+                  color: AppColors.success,
+                  onTap: () => _rate(ratingEasy),
+                ),
+              ],
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSummary(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    final reviewed = _ratings.values.fold(0, (a, b) => a + b);
+    final srs = SrsStore.instance;
+    final remainingDue = srs.dueCount(
+      DialektRepository.instance.alleMitDialekt
+          .map((p) => '${p.dialekt.id}.${p.ausdruck.id}'),
+    );
+
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(AppSpacing.x6),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(reviewed == 0 ? '🎉' : '✅',
+                style: const TextStyle(fontSize: 64)),
+            const SizedBox(height: AppSpacing.x4),
+            Text(
+              reviewed == 0 ? 'Alles erledigt!' : 'Session geschafft',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: AppSpacing.x3),
+            Text(
+              reviewed == 0
+                  ? 'Aktuell sind keine Karten fällig. Komm später wieder — oder übe schon mal voraus.'
+                  : '$reviewed Karten gelernt · noch $remainingDue fällig',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: surfaces.textMuted, height: 1.5),
+            ),
+            const SizedBox(height: AppSpacing.x6),
+            if (remainingDue > 0)
+              GradientButton(
+                label: 'Weiter lernen',
+                icon: Icons.play_arrow_rounded,
+                onPressed: () => _buildSession(),
+              )
+            else
+              GradientButton(
+                label: 'Voraus üben',
+                icon: Icons.fast_forward_rounded,
+                onPressed: () => _buildSession(studyAhead: true),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _RateButton extends StatelessWidget {
+  const _RateButton({
+    required this.label,
+    required this.color,
+    required this.onTap,
+  });
+
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          onTap: onTap,
+          child: Container(
+            padding: const EdgeInsets.symmetric(vertical: AppSpacing.x4),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: color.withValues(alpha: 0.14),
+              borderRadius: BorderRadius.circular(AppRadii.md),
+              border: Border.all(color: color.withValues(alpha: 0.6)),
+            ),
+            child: Text(
+              label,
+              style: TextStyle(color: color, fontWeight: FontWeight.w600),
+            ),
           ),
         ),
       ),
@@ -189,7 +338,7 @@ class _CardFace extends StatelessWidget {
     final surfaces = AppSurfaces.of(context);
     return Container(
       width: double.infinity,
-      constraints: const BoxConstraints(minHeight: 280, maxHeight: 420),
+      constraints: const BoxConstraints(minHeight: 260, maxHeight: 420),
       padding: const EdgeInsets.all(AppSpacing.x6),
       decoration: BoxDecoration(
         color: surfaces.surface.withValues(alpha: 0.85),
@@ -207,8 +356,7 @@ class _CardFace extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
             decoration: BoxDecoration(
               color: accent.withValues(alpha: 0.16),
               borderRadius: BorderRadius.circular(AppRadii.pill),
@@ -223,26 +371,35 @@ class _CardFace extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSpacing.x5),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: Theme.of(context)
-                .textTheme
-                .headlineMedium
-                ?.copyWith(fontSize: 26),
-          ),
-          if (subtitle.isNotEmpty) ...[
-            const SizedBox(height: AppSpacing.x4),
-            Text(
-              subtitle,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-                height: 1.5,
-                color: surfaces.textMuted,
+          Flexible(
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    title,
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context)
+                        .textTheme
+                        .headlineMedium
+                        ?.copyWith(fontSize: 26),
+                  ),
+                  if (subtitle.isNotEmpty) ...[
+                    const SizedBox(height: AppSpacing.x4),
+                    Text(
+                      subtitle,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 15,
+                        height: 1.5,
+                        color: surfaces.textMuted,
+                      ),
+                    ),
+                  ],
+                ],
               ),
             ),
-          ],
+          ),
         ],
       ),
     );

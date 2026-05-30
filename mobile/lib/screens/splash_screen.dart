@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../data/favorites_store.dart';
 import '../data/repository.dart';
+import '../data/srs_store.dart';
 import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/brand_logo.dart';
@@ -61,6 +62,7 @@ class _SplashScreenState extends State<SplashScreen>
       await SettingsController.instance.load();
       await DialektRepository.instance.load();
       await FavoritesStore.instance.load();
+      await SrsStore.instance.load();
     } catch (_) {
       // Daten konnten nicht geladen werden — App startet trotzdem.
     }
