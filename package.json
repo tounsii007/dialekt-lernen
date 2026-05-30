@@ -9,6 +9,7 @@
     "validate": "node tools/validate.mjs",
     "dedupe": "node tools/dedupe.mjs",
     "sync-version": "node tools/sync-version.mjs",
+    "export-mobile-data": "node tools/export-mobile-data.mjs",
     "test": "node tools/test.mjs",
     "test:coverage": "node tools/test.mjs --coverage",
     "test:integration": "node tools/test.mjs --filter=integration",
