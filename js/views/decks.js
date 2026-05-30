@@ -12,19 +12,10 @@ const COLOR_PRESETS = [
   '#7209b7', '#4cc9f0', '#f72585', '#4361ee', '#10b981', '#f59e0b'
 ];
 
-const DECK_INPUT_STYLE = {
-  width: '100%', padding: '10px 14px', borderRadius: 'var(--r-md)',
-  border: '1px solid var(--border)', background: 'var(--bg-soft)',
-  color: 'var(--text)', fontSize: '1rem', marginBottom: '16px'
-};
-
-const FIELD_LABEL_STYLE = {
-  display: 'block', fontSize: '.85rem', color: 'var(--text-muted)', marginBottom: '6px'
-};
-
 // Text-Input für Deck-Namen — gemeinsam von Create- und Edit-Modal genutzt.
+// Styling steckt in .deck-modal-input (styles.css), nicht mehr inline.
 function deckNameInput({ value = '', placeholder } = {}) {
-  const attrs = { type: 'text', value, style: DECK_INPUT_STYLE };
+  const attrs = { type: 'text', value, class: 'deck-modal-input' };
   if (placeholder) attrs.placeholder = placeholder;
   return el('input', attrs);
 }
@@ -33,7 +24,7 @@ function deckNameInput({ value = '', placeholder } = {}) {
 // damit beide Modals nicht je eine eigene paint()-Kopie brauchen.
 function deckColorRow(initialColor) {
   let selected = initialColor;
-  const row = el('div', { style: { display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '12px' } });
+  const row = el('div', { class: 'deck-swatch-row' });
   function paint() {
     row.innerHTML = '';
     COLOR_PRESETS.forEach(c => {
@@ -41,13 +32,8 @@ function deckColorRow(initialColor) {
         type: 'button',
         'aria-label': `Farbe ${c}`,
         title: c,
-        style: {
-          width: '28px', height: '28px', borderRadius: '50%',
-          background: c, cursor: 'pointer',
-          border: c === selected ? '3px solid var(--text)' : '2px solid var(--border)',
-          transform: c === selected ? 'scale(1.15)' : 'none',
-          transition: 'transform .15s, border .15s'
-        },
+        class: 'deck-swatch' + (c === selected ? ' is-selected' : ''),
+        style: { background: c },
         onClick: () => { selected = c; paint(); }
       }));
     });
@@ -183,9 +169,9 @@ export function openCreateDeckModal(onCreated, { initialName = '' } = {}) {
   openModal({
     title: 'Neues Deck',
     content: [
-      el('label', { style: FIELD_LABEL_STYLE }, 'Name'),
+      el('label', { class: 'deck-modal-label' }, 'Name'),
       nameInput,
-      el('label', { style: FIELD_LABEL_STYLE }, 'Farbe'),
+      el('label', { class: 'deck-modal-label' }, 'Farbe'),
       colorRow,
       el('p', { class: 'lede', style: { fontSize: '.85rem' } },
         'Deck wird leer angelegt. Befülle es über die Favoriten-Seite mit Bulk-Aktionen oder über das ＋ Symbol an Ausdrücken.'
@@ -222,9 +208,9 @@ function openEditDeckModal(deck, onSaved) {
   openModal({
     title: 'Deck bearbeiten',
     content: [
-      el('label', { style: FIELD_LABEL_STYLE }, 'Name'),
+      el('label', { class: 'deck-modal-label' }, 'Name'),
       nameInput,
-      el('label', { style: FIELD_LABEL_STYLE }, 'Farbe'),
+      el('label', { class: 'deck-modal-label' }, 'Farbe'),
       colorRow
     ],
     actions: [

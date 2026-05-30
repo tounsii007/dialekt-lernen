@@ -934,6 +934,42 @@ a { color: inherit; text-decoration: none; }
 }
 .dialekt-card:hover .dc-arrow { transform: translateX(4px); }
 
+/* Deck create/edit modal — geteilte Felder (vorher inline in decks.js) */
+.deck-modal-label {
+  display: block;
+  font-size: .85rem;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+.deck-modal-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: 1rem;
+  margin-bottom: var(--sp-4);
+}
+.deck-swatch-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+.deck-swatch {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--border);
+  transition: transform .15s, border .15s;
+}
+.deck-swatch.is-selected {
+  border: 3px solid var(--text);
+  transform: scale(1.15);
+}
+
 /* ============================================================ */
 /* Expression cards                                              */
 /* ============================================================ */
