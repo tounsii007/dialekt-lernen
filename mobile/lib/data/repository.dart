@@ -24,6 +24,12 @@ class DialektRepository {
   List<Ausdruck> get alleAusdruecke =>
       [for (final d in _dialekte) ...d.ausdruecke];
 
+  /// Alle Ausdrücke samt zugehörigem Dialekt (für Quiz, Suche etc.).
+  List<({Dialekt dialekt, Ausdruck ausdruck})> get alleMitDialekt => [
+        for (final d in _dialekte)
+          for (final a in d.ausdruecke) (dialekt: d, ausdruck: a),
+      ];
+
   Dialekt? byId(String id) {
     for (final d in _dialekte) {
       if (d.id == id) return d;
