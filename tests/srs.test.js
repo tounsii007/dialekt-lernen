@@ -114,6 +114,48 @@ describe('getCardSrs — Legacy-Migration', () => {
   });
 });
 
+describe('Härtung — korrupte Karten-Felder propagieren kein NaN', () => {
+  beforeEach(resetSrsState);
+
+  // sanitizeRecord (transfer.js) lässt jeden Objekt-Record durch, prüft aber
+  // die inneren Zahlen nicht. Ein manipuliertes Backup mit ef:"bad"/reps:NaN
+  // würde sonst NaN durch reviewCard() bis ins persistierte `due` propagieren —
+  // due=NaN heißt „nie wieder fällig", die Karte verschwindet aus getDueCards().
+  it('getCardSrs coerced korrupte numerische Felder auf endliche Werte', () => {
+    state.gelernt['h.x'] = {
+      ef: 'bad', reps: NaN, interval: 'x', due: 'nope', lapses: null, last: undefined, stand: 3,
+    };
+    const rec = getCardSrs('h', 'x');
+    assert.equal(rec.ef, 2.5);   // INIT_EF-Fallback
+    assert.equal(rec.reps, 0);
+    assert.equal(rec.interval, 0);
+    assert.equal(rec.due, 0);
+    assert.equal(rec.lapses, 0);
+    assert.equal(rec.last, 0);
+  });
+
+  it('reviewCard auf korruptem Record persistiert finite Werte (kein NaN-due)', () => {
+    state.gelernt['h.x'] = {
+      ef: 'bad', reps: NaN, interval: 'x', due: 'nope', lapses: 'y', last: 0, stand: 0,
+    };
+    const rec = reviewCard('h', 'x', RATING_EASY);
+    assert.ok(Number.isFinite(rec.ef), `ef finite, war ${rec.ef}`);
+    assert.ok(Number.isFinite(rec.interval), `interval finite, war ${rec.interval}`);
+    assert.ok(Number.isFinite(rec.due), `due finite, war ${rec.due}`);
+    assert.ok(rec.due > Date.now(), 'due liegt in der Zukunft, nicht NaN');
+    assert.equal(rec.reps, 1);     // frischer Start: 0 → 1
+    assert.equal(rec.lapses, 0);   // EASY ist kein Lapse, korrupter lapses → 0
+  });
+
+  it('korrupte Karte bleibt in getDueCards sichtbar (heilbar statt verloren)', () => {
+    state.gelernt['h.x'] = {
+      ef: 2.5, reps: 1, interval: 1, due: 'nope', lapses: 0, last: 0, stand: 3,
+    };
+    const due = getDueCards([{ dialektId: 'h', id: 'x' }]);
+    assert.equal(due.length, 1); // due='nope' → 0 → fällig (nicht NaN/verschwunden)
+  });
+});
+
 describe('getDueCards / getSrsStats', () => {
   beforeEach(() => {
     resetSrsState();

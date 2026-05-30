@@ -23,6 +23,16 @@ const MIN_EF = 1.3;
 const INIT_EF = 2.5;
 const DAY_MS = 86_400_000;
 
+// Erzwingt eine endliche Zahl >= min; sonst fallback. Verteidigt die SM-2-Mathe
+// gegen korrupte Karten-Felder (z. B. ef:"bad"/reps:NaN aus einem manipulierten
+// Import — sanitizeRecord prüft nur, dass der Record ein Objekt ist, nicht die
+// inneren Zahlen). Ohne diesen Schutz propagiert NaN bis ins persistierte `due`,
+// und die Karte taucht in getDueCards() nie wieder auf.
+function numFin(v, fallback, min = -Infinity) {
+  const n = Number(v);
+  return Number.isFinite(n) && n >= min ? n : fallback;
+}
+
 export const RATING_HARD = 1;
 export const RATING_MED  = 2;
 export const RATING_EASY = 3;
@@ -48,17 +58,30 @@ export function getCardSrs(dialektId, ausdruckId) {
 
   // Legacy-Records (nur stand+last) bekommen einen extrapolierten EF.
   if (v.ef == null) {
+    const stand = numFin(v.stand, 0, 0);
+    const last = numFin(v.last, 0);
     return {
       ef: INIT_EF,
-      reps: v.stand >= 3 ? 2 : v.stand >= 2 ? 1 : 0,
-      interval: v.stand >= 3 ? 6 : v.stand >= 2 ? 1 : 0,
-      due: v.last || Date.now(),
+      reps: stand >= 3 ? 2 : stand >= 2 ? 1 : 0,
+      interval: stand >= 3 ? 6 : stand >= 2 ? 1 : 0,
+      due: last || Date.now(),
       lapses: 0,
-      last: v.last || 0,
-      stand: v.stand || 0
+      last,
+      stand
     };
   }
-  return v;
+  // Numerische Felder defensiv coercen — ein korrupter Import-Record (ef:"bad",
+  // reps:NaN) würde sonst verbatim in reviewCard() fließen und NaN persistieren.
+  return {
+    ...v,
+    ef: numFin(v.ef, INIT_EF, MIN_EF),
+    reps: numFin(v.reps, 0, 0),
+    interval: numFin(v.interval, 0, 0),
+    due: numFin(v.due, 0),
+    lapses: numFin(v.lapses, 0, 0),
+    last: numFin(v.last, 0),
+    stand: numFin(v.stand, 0, 0),
+  };
 }
 
 // Wendet SM-2 auf eine Karte an und persistiert das Ergebnis.
@@ -172,7 +195,10 @@ export function getSrsAlgorithm() {
         ef: INIT_EF, reps: 0, interval: 0, due: now, lapses: 0, last: 0, stand: 0
       };
       const q = ratingToQuality(rating);
-      let { ef, reps, interval, lapses } = base;
+      let ef = numFin(base.ef, INIT_EF, MIN_EF);
+      let reps = numFin(base.reps, 0, 0);
+      let interval = numFin(base.interval, 0, 0);
+      let lapses = numFin(base.lapses, 0, 0);
       if (q < 3) {
         reps = 0;
         interval = 1;
