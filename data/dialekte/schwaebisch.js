@@ -2314,6 +2314,861 @@ export default {
       beispiel: 'Grüß di, Hans — wia geits, wia stoits bei dir?',
       beispiel_hd: 'Grüß dich, Hans — wie geht\'s, wie steht\'s bei dir?',
       kategorie: 'redensart'
+    },
+    {
+      id: 'sw-271',
+      ausdruck: 'gschwind',
+      hochdeutsch: 'schnell / rasch',
+      bedeutung: '„Gschwind" heißt im Schwäbischen schnell oder rasch und ist eines der meistgebrauchten Alltagswörter. „I komm gschwind no vorbei" bedeutet, dass man kurz und zügig vorbeischaut. Oft wird es mit „mal" kombiniert: „gschwind mal" für „eben mal kurz". Die Verkleinerung der Eile macht das Wort fast charmant — etwas gschwind erledigen klingt nie gehetzt, sondern flink und unkompliziert.',
+      beispiel: 'I geh no gschwind zum Bäcker, bevor der zumacht.',
+      beispiel_hd: 'Ich gehe noch schnell zum Bäcker, bevor der zumacht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-272',
+      ausdruck: 'Muggaseggele',
+      hochdeutsch: 'winzig kleine Menge',
+      bedeutung: '„Muggaseggele" ist das berühmteste schwäbische Maß für eine winzig kleine Menge — wörtlich das Geschlechtsteil einer Stubenfliege („Mugg"). Es bezeichnet die allerkleinste vorstellbare Einheit. „Noch a Muggaseggele Salz" heißt: nur eine Winzigkeit mehr. Das Wort ist liebevoll-derb und gilt als eines der schönsten Wörter des Dialekts. Selbst Kinder lernen früh, dass ein Muggaseggele wirklich fast nichts ist.',
+      beispiel: 'Ruck no a Muggaseggele nach links, dann passt\'s.',
+      beispiel_hd: 'Rück noch ein winziges Stückchen nach links, dann passt es.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-273',
+      ausdruck: 'Schorle',
+      hochdeutsch: 'Wein- oder Saftschorle',
+      bedeutung: '„Schorle" ist im schwäbischen und südwestdeutschen Raum das Alltagsgetränk schlechthin: Wein oder Apfelsaft, gemischt mit Sprudel. Die „saure" Schorle (mit Mineralwasser) unterscheidet man von der „süßen" (mit Limo). Beim Wengerter wie im Gartenlokal bestellt man ganz selbstverständlich a Schorle. Sie löscht den Durst nach dem Schaffe besser als alles andere und gilt als gesellig und bodenständig.',
+      beispiel: 'Bei dere Hitz trink i am liebschte a saure Schorle.',
+      beispiel_hd: 'Bei dieser Hitze trinke ich am liebsten eine saure Schorle.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-274',
+      ausdruck: 'Heckenklescher',
+      hochdeutsch: 'einfacher, saurer Wein',
+      bedeutung: '„Heckenklescher" ist ein humorvoller schwäbischer Ausdruck für einen sehr einfachen, sauren Wein — so sauer, dass man angeblich nach dem Trinken in die Hecke „klescht" (fällt). Gemeint ist meist ein junger, herber Trollinger oder Selbstgekelterter. Der Begriff wird augenzwinkernd verwendet und ist nie ganz ernst gemeint. Ein guter Heckenklescher gehört auf jedes bodenständige schwäbische Hocketse.',
+      beispiel: 'Der Wein vom Nachbar isch a echter Heckenklescher!',
+      beispiel_hd: 'Der Wein vom Nachbarn ist ein echter saurer Tropfen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-275',
+      ausdruck: 'Waggis',
+      hochdeutsch: 'Tollpatsch / Spaßvogel',
+      bedeutung: '„Waggis" bezeichnet im schwäbisch-alemannischen Raum einen Tollpatsch, Narren oder Spaßvogel, oft auch eine Fasnetsfigur. Der Ausdruck wird halb spöttisch, halb liebevoll für jemanden benutzt, der sich ungeschickt oder närrisch benimmt. „So a Waggis!" ruft man kopfschüttelnd, wenn einer etwas Dummes anstellt. In der Fasnet ist der Waggis eine traditionelle, bunt kostümierte Gestalt.',
+      beispiel: 'Du Waggis, jetzt hosch d\'Leiter falschrum gschtellt!',
+      beispiel_hd: 'Du Tollpatsch, jetzt hast du die Leiter falschherum gestellt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-276',
+      ausdruck: 'verzwatzeln',
+      hochdeutsch: 'vor Ungeduld fast vergehen',
+      bedeutung: '„Verzwatzeln" beschreibt das fast körperliche Vergehen vor Ungeduld, Nervosität oder Aufregung. Wer auf etwas sehnlich wartet, „verzwatzelt" beinahe. „I verzwatzel no, bis der endlich kommt!" Das Wort hat eine wunderbar bildhafte Lautmalerei und drückt das Zappeln und innere Zucken perfekt aus. Es gehört zu den ausdrucksstärksten Gefühlswörtern des Schwäbischen.',
+      beispiel: 'I verzwatzel fascht, bis endlich d\'Ergebnis komme!',
+      beispiel_hd: 'Ich vergehe fast vor Ungeduld, bis endlich die Ergebnisse kommen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-277',
+      ausdruck: 'schlotza',
+      hochdeutsch: 'genüsslich trinken / lutschen',
+      bedeutung: '„Schlotza" heißt im Schwäbischen genüsslich und langsam trinken oder lutschen. Wer sein Viertele „schlotzt", genießt es bedächtig, ohne Hast. Auch ein Bonbon oder Eis kann man schlotza. „Schlotz net so, trink amol gscheit!" sagt man scherzhaft zu einem, der ewig an einem Glas nippt. Das gemütliche Schlotza passt bestens zur schwäbischen Lebensart, bei der man sich für die schönen Dinge bewusst Zeit nimmt.',
+      beispiel: 'Mir schlotzet gmütlich a Viertele im Garte.',
+      beispiel_hd: 'Wir trinken gemütlich ein Viertel Wein im Garten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-278',
+      ausdruck: 'hano',
+      hochdeutsch: 'ja eben / tja',
+      bedeutung: '„Hano" ist eine typisch schwäbische Bestätigungs- und Resignationspartikel ohne genaue hochdeutsche Entsprechung. Sie drückt Zustimmung, Ratlosigkeit oder ein achselzuckendes „tja, so ist es halt" aus. „Hano, was willsch macha?" bedeutet so viel wie „ja eben, da kann man nichts machen". Das Wörtchen ist klein, aber unentbehrlich und verrät sofort den echten Schwaben am Gesprächston.',
+      beispiel: 'Hano, des isch halt so, do kann mer nix macha.',
+      beispiel_hd: 'Tja, das ist halt so, da kann man nichts machen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-279',
+      ausdruck: 'Hennadreck',
+      hochdeutsch: 'Unsinn / Kleinkram',
+      bedeutung: '„Hennadreck" (wörtlich Hühnerdreck) bezeichnet im Schwäbischen wertlosen Kleinkram, Unsinn oder eine Lappalie. „Des isch doch Hennadreck!" heißt, dass etwas nichtig oder bedeutungslos ist. Der derb-bildhafte Ausdruck wird benutzt, um eine Sache abzuwerten oder Aufregung zu dämpfen. Über Hennadreck regt sich ein gscheiter Schwabe nicht auf — dafür ist ihm seine Ruhe zu schade.',
+      beispiel: 'Wega so em Hennadreck brauchsch di doch net ufrega.',
+      beispiel_hd: 'Wegen so einer Lappalie brauchst du dich doch nicht aufregen.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-280',
+      ausdruck: 'Strähla',
+      hochdeutsch: 'kämmen',
+      bedeutung: '„Strähla" heißt im Schwäbischen kämmen, und der „Strähl" ist der Kamm. „Strähl dir d\'Haar, bevor mer geht!" sagt die Mutter zum Kind. Das Wort ist alt und im ganzen alemannischen Raum verbreitet. Es zeigt, wie das Schwäbische für ganz alltägliche Verrichtungen eigene, bodenständige Wörter bewahrt hat, die sich vom Hochdeutschen deutlich unterscheiden.',
+      beispiel: 'Strähl dr no gschwind d\'Haar, mir müsset los!',
+      beispiel_hd: 'Kämm dir noch schnell die Haare, wir müssen los!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'sw-281',
+      ausdruck: 'Loawble',
+      hochdeutsch: 'Brötchen / Wecken',
+      bedeutung: 'Ein „Loawble" ist im Schwäbischen ein kleines Brötchen oder Laibchen — die Verkleinerung von „Laib". Beim Bäcker holt man morgens frische Loawble fürs Vesper. In manchen Gegenden sagt man auch „Weckle" dazu. Das Wort zeigt wieder die Liebe des Schwaben zur „-le"-Endung, die selbst dem Brötchen etwas Heimeliges und Liebenswertes verleiht. Frische Loawble mit Butter sind ein einfaches Glück.',
+      beispiel: 'Hol no zwoi frische Loawble fürs Vesper mit!',
+      beispiel_hd: 'Hol noch zwei frische Brötchen für die Brotzeit mit!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-282',
+      ausdruck: 'Heugümper',
+      hochdeutsch: 'Heuschrecke / Grashüpfer',
+      bedeutung: 'Der „Heugümper" ist im Schwäbischen und Alemannischen die Heuschrecke oder der Grashüpfer — wörtlich der, der im Heu „gumpt" (hüpft). Im Sommer hört man die Heugümper auf den Wiesen der Schwäbischen Alb zirpen. Das Wort wird auch scherzhaft für einen zappeligen, ständig herumspringenden Menschen verwendet. Es ist ein schönes Beispiel für die anschauliche, naturnahe Wortbildung des Dialekts.',
+      beispiel: 'Auf der Wies hupfet hunderte Heugümper rum.',
+      beispiel_hd: 'Auf der Wiese hüpfen hunderte Grashüpfer herum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-283',
+      ausdruck: 'gumpa',
+      hochdeutsch: 'springen / hüpfen',
+      bedeutung: '„Gumpa" heißt im Schwäbischen springen oder hüpfen. Kinder „gumpet" über die Pfützen, und wer vor Freude „gumpt", ist außer sich vor Begeisterung. Das Wort ist im ganzen alemannischen Raum verbreitet und lautmalerisch sehr anschaulich. „Net rumgumpa!" ruft die Mutter, wenn die Kleinen wild herumtoben. Gumpa drückt eine lebendige, ungestüme Bewegung aus, die das Hochdeutsche so nicht kennt.',
+      beispiel: 'D\'Kinder gumpet de ganze Tag uf\'m Trampolin.',
+      beispiel_hd: 'Die Kinder springen den ganzen Tag auf dem Trampolin.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-284',
+      ausdruck: 'Breschtling',
+      hochdeutsch: 'Erdbeere',
+      bedeutung: 'Der „Breschtling" ist die schwäbische Bezeichnung für die Erdbeere — ein altes, regionales Wort, das vor allem die kleine Walderdbeere meinte. Im Frühsommer freut man sich auf die ersten süßen Breschtling vom Feld. Das Wort ist mancherorts schon selten geworden, gilt aber als typisches Erkennungszeichen echten Schwäbischs. Frische Breschtling mit Sahne sind im Juni ein Hochgenuss.',
+      beispiel: 'Mir gohet Breschtling selber pflücke uf\'m Feld.',
+      beispiel_hd: 'Wir gehen Erdbeeren selber pflücken auf dem Feld.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-285',
+      ausdruck: 'Grombira',
+      hochdeutsch: 'Kartoffel',
+      bedeutung: '„Grombira" (auch Grumbiere) ist das schwäbische Wort für Kartoffel — abgeleitet von „Grundbirne". Die Grombira ist Grundnahrungsmittel und steht in vielen Formen auf dem Tisch: als Grombirasalat, Bratkartoffeln oder im Eintopf. Das Wort ist im ganzen südwestdeutschen Raum lebendig und gehört zum festen Bestand der schwäbischen Küchensprache. Ein guter Grombirasalat ist die Krönung jeder Vesper.',
+      beispiel: 'Zum Schnitzel gibt\'s a feiner Grombirasalat.',
+      beispiel_hd: 'Zum Schnitzel gibt es einen feinen Kartoffelsalat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-286',
+      ausdruck: 'Bähnle',
+      hochdeutsch: 'kleine Bahn / Lokalbahn',
+      bedeutung: 'Das „Bähnle" ist die liebevolle schwäbische Verkleinerung für eine kleine Eisenbahn oder Lokalbahn. Viele Nebenstrecken auf der Alb und im Schwarzwald hießen früher schlicht „s\'Bähnle". Auch die Stuttgarter Zahnradbahn, die „Zacke", wird zärtlich so genannt. Das Wort verleiht selbst dem Verkehrsmittel etwas Heimeliges und steht für die Verbundenheit der Schwaben mit ihren kleinen, gemächlichen Bahnen.',
+      beispiel: 'Mit\'m Bähnle fahre mer nuff auf de Berg.',
+      beispiel_hd: 'Mit der kleinen Bahn fahren wir hinauf auf den Berg.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-287',
+      ausdruck: 'Zacke',
+      hochdeutsch: 'Stuttgarter Zahnradbahn',
+      bedeutung: 'Die „Zacke" ist der liebevolle Spitzname der Stuttgarter Zahnradbahn, die seit 1884 vom Marienplatz hinauf nach Degerloch fährt. Sie überwindet steile Steigungen mit einem Zahnrad und ist ein Stuttgarter Wahrzeichen. Berühmt ist der Fahrradwagen, an dem man sein Rad mitnehmen kann. Die Zacke gehört für die Stuttgarter zum Stadtbild wie der Fernsehturm und wird mit großer Zuneigung benutzt.',
+      beispiel: 'Mit de Zacke kommsch am bequemschte nach Degerloch nuff.',
+      beispiel_hd: 'Mit der Zahnradbahn kommst du am bequemsten nach Degerloch hinauf.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-288',
+      ausdruck: 'Spitzbua',
+      hochdeutsch: 'Schlawiner / durchtriebener Kerl',
+      bedeutung: 'Ein „Spitzbua" ist im Schwäbischen ein durchtriebener, schlitzohriger Kerl oder ein listiger Lausbub. „So a Spitzbua!" sagt man halb tadelnd, halb bewundernd über einen, der mit Pfiffigkeit seinen Vorteil sucht. Das Wort schwingt zwischen Schelte und heimlicher Anerkennung für die gewitzte Schläue. Ein liebenswerter Spitzbua bringt mit seinen Streichen und seiner Cleverness oft die ganze Runde zum Schmunzeln.',
+      beispiel: 'Der kloi Spitzbua hot mr glatt s\'letschte Stückle Kucha weggschnappt!',
+      beispiel_hd: 'Der kleine Schlawiner hat mir glatt das letzte Stückchen Kuchen weggeschnappt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-289',
+      ausdruck: 'Dapp',
+      hochdeutsch: 'Tollpatsch / ungeschickter Mensch',
+      bedeutung: 'Ein „Dapp" ist im Schwäbischen ein ungeschickter, etwas tollpatschiger Mensch — einer, der gerne „danebenlangt". Das Wort hängt mit „tappen" und „dappig" (ungeschickt) zusammen. „So a Dapp!" sagt man kopfschüttelnd, aber meist gutmütig, wenn jemand etwas verschüttet oder fallen lässt. Es ist eine milde, fast liebevolle Schelte für alltägliche kleine Missgeschicke.',
+      beispiel: 'Du Dapp, jetzt isch dr Kaffee am Bode!',
+      beispiel_hd: 'Du Tollpatsch, jetzt ist der Kaffee am Boden!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-290',
+      ausdruck: 'dappig',
+      hochdeutsch: 'ungeschickt / täppisch',
+      bedeutung: '„Dappig" beschreibt im Schwäbischen jemanden, der ungeschickt, täppisch oder unbeholfen ist. „Sei net so dappig!" ermahnt man einen, der ständig etwas fallen lässt oder anstößt. Das Wort gehört zur selben Wortfamilie wie „Dapp" und „tappen". Es wird im Alltag oft halb scherzhaft gebraucht und gehört zum reichen schwäbischen Wortschatz rund um menschliche Eigenheiten und kleine Schwächen.',
+      beispiel: 'Sei net so dappig, sonscht goht no was kaputt!',
+      beispiel_hd: 'Sei nicht so ungeschickt, sonst geht noch etwas kaputt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-291',
+      ausdruck: 'verschwätzt',
+      hochdeutsch: 'sich in der Zeit verplaudert',
+      bedeutung: '„Verschwätzt" sein heißt im Schwäbischen, sich beim Reden so vertieft zu haben, dass man die Zeit vergisst. „I hab mi total verschwätzt!" sagt man, wenn man zu spät kommt, weil das Gespräch so schön war. Das Wort leitet sich von „schwätza" (reden) ab und beschreibt liebevoll die schwäbische Geselligkeit. Sich zu verschwätzen ist eine verzeihliche, ja fast sympathische Schwäche.',
+      beispiel: 'Sorry, i hab mi mit\'m Nachbar total verschwätzt!',
+      beispiel_hd: 'Entschuldigung, ich habe mich mit dem Nachbarn total verplaudert!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-292',
+      ausdruck: 'Wonnemonat',
+      hochdeutsch: 'Mai / schönster Frühlingsmonat',
+      bedeutung: 'Auch wenn das Wort hochdeutsch klingt, lebt der „Wonnemonat" Mai in der schwäbischen Festkultur besonders auf: Maibäume, Maitänze und das erste Viertele im Freien. Die Schwaben feiern den Wonnemonat mit Hocketsen und Ausflügen in den blühenden Wengert. Wenn die Obstbäume auf der Alb blühen, ist der Wonnemonat in seiner schönsten Pracht. Es ist die Zeit, in der das Schwabenland am lieblichsten ist.',
+      beispiel: 'Im Wonnemonat isch s\'Schwobaland am allerschönschte.',
+      beispiel_hd: 'Im Mai ist das Schwabenland am allerschönsten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-293',
+      ausdruck: 'Butzenscheibe',
+      hochdeutsch: 'rundes Fensterglas',
+      bedeutung: 'Die „Butzenscheibe" ist eine alte, runde, in der Mitte verdickte Glasscheibe, wie man sie in historischen schwäbischen Fachwerkhäusern und Wirtshäusern findet. Durch ihre Wölbung verzerrt sie den Blick und gibt alten Stuben ihren urigen Charme. In Tübingen und Esslingen sieht man hinter manch alter Butzenscheibe noch das gemütliche Innere traditioneller Gaststuben schimmern.',
+      beispiel: 'Durch die alte Butzenscheibe sieht mer fascht nix.',
+      beispiel_hd: 'Durch die alte runde Fensterscheibe sieht man fast nichts.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-294',
+      ausdruck: 'Bachelet',
+      hochdeutsch: 'Pfütze / Bächlein',
+      bedeutung: 'Ein „Bachelet" ist im Schwäbischen eine kleine Pfütze oder ein Rinnsal — die Verkleinerung von „Bach". Nach dem Regen springen die Kinder durch jedes Bachelet auf der Straße. Das Wort zeigt die schwäbische Vorliebe, selbst der kleinsten Wasserlache mit der „-let"-Endung etwas Niedliches zu geben. Ein Bachelet ist harmlos und gehört zum Bild eines verregneten Nachmittags im Dorf.',
+      beispiel: 'D\'Kinder hupfet durch jedes Bachelet auf\'m Heimweg.',
+      beispiel_hd: 'Die Kinder springen durch jede Pfütze auf dem Heimweg.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-295',
+      ausdruck: 'Wackes',
+      hochdeutsch: 'Lausbub / frecher Kerl',
+      bedeutung: '„Wackes" bezeichnet im Schwäbischen und im angrenzenden alemannischen Raum einen frechen Lausbuben oder Tunichtgut. „So a Wackes!" sagt man halb tadelnd, halb belustigt über einen, der Streiche ausheckt. Der Ausdruck wird vor allem für aufgeweckte, schlitzohrige Jungen verwendet. Er ist nie wirklich böse gemeint und schwingt mit einer gewissen heimlichen Bewunderung für den Schabernack mit.',
+      beispiel: 'Der Wackes hot scho wieder ebbes ausgheckt!',
+      beispiel_hd: 'Der Lausbub hat schon wieder etwas ausgeheckt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-296',
+      ausdruck: 'rumdaddla',
+      hochdeutsch: 'herumtrödeln / herumspielen',
+      bedeutung: '„Rumdaddla" heißt im Schwäbischen herumtrödeln, sich mit Kleinigkeiten verzetteln oder ziellos herumhantieren. „Hör auf rumzudaddla und schaff was!" ermahnt man einen, der die Zeit vergeudet. Das Wort beschreibt das gemächliche, oft etwas planlose Beschäftigtsein. Es passt gut zum schwäbischen Arbeitsethos, das echtes Schaffen vom bloßen Rumdaddla streng unterscheidet.',
+      beispiel: 'Statt zom rumdaddla solltsch lieber d\'Garage aufräume.',
+      beispiel_hd: 'Statt herumzutrödeln solltest du lieber die Garage aufräumen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-297',
+      ausdruck: 'Heable',
+      hochdeutsch: 'Lämmchen / Schäfchen',
+      bedeutung: 'Ein „Heable" ist im Schwäbischen ein Lämmchen oder kleines Schaf — abgeleitet vom Lockruf für Schafe. Auf den Wacholderheiden der Schwäbischen Alb, wo die Schäferei seit Jahrhunderten zu Hause ist, hört man im Frühling das Blöken der jungen Heable. Das Wort ist zärtlich und gehört zur Welt der Albschäfer, deren Tradition mit dem berühmten Markgröninger Schäferlauf bis heute lebendig gehalten wird.',
+      beispiel: 'Im Frühling hupfet d\'kleine Heable über d\'Heide.',
+      beispiel_hd: 'Im Frühling hüpfen die kleinen Lämmchen über die Heide.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-298',
+      ausdruck: 'Wammes',
+      hochdeutsch: 'Jacke / Wams',
+      bedeutung: 'Das „Wammes" ist im Schwäbischen eine derbe Jacke oder ein Wams, oft die Arbeitsjacke. „Zieh dei Wammes a, draußa isch\'s kalt!" Das Wort ist alt und stammt aus der mittelalterlichen Kleidersprache. Übertragen heißt „jemandem das Wammes ausklopfen" so viel wie ihn verprügeln. Heute meint das Wammes meist liebevoll die warme, robuste Jacke für die Arbeit im Freien oder im Wengert.',
+      beispiel: 'Zieh dei Wammes a, bevor du naus en Wengert gohsch!',
+      beispiel_hd: 'Zieh deine Jacke an, bevor du hinaus in den Weinberg gehst!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-299',
+      ausdruck: 'Bäpp',
+      hochdeutsch: 'Klebstoff / Pampe',
+      bedeutung: '„Bäpp" ist im Schwäbischen klebriger Brei, Pampe oder Klebstoff. Etwas „bäppt", wenn es klebt. Das Wort ist lautmalerisch und beschreibt sowohl den Leim als auch jede zähe, pappige Masse. „Des bäppt ja wia Honig!" sagt man über etwas Klebriges. Bäpp gehört zu den anschaulichen schwäbischen Lautwörtern, die ihre Bedeutung schon durch den Klang fast spürbar machen.',
+      beispiel: 'Der Bäpp am Tisch goht koi bissle mehr ab.',
+      beispiel_hd: 'Der Klebstoff am Tisch geht kein bisschen mehr ab.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-300',
+      ausdruck: 'bäppa',
+      hochdeutsch: 'kleben / pappen',
+      bedeutung: '„Bäppa" heißt im Schwäbischen kleben oder pappen. „Des bäppt überall!" klagt man über etwas Klebriges, und ein Plakat „bäppt" man an die Wand. Das Verb gehört zur Wortfamilie von „Bäpp" und ist im Alltag sehr gebräuchlich. Wenn nach dem Esse die Finger noch vom Gsälz bäppet, greift der Schwabe zum feuchten Lappen. Ein schönes, anschauliches Wort aus dem Alltagsschwäbisch.',
+      beispiel: 'Mei Händ bäppet no ganz vom Honigbrot.',
+      beispiel_hd: 'Meine Hände kleben noch ganz vom Honigbrot.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-301',
+      ausdruck: 'gell',
+      hochdeutsch: 'nicht wahr? / oder?',
+      bedeutung: '„Gell" ist die typisch süddeutsch-schwäbische Rückversicherungspartikel — ein angehängtes „nicht wahr?" oder „oder?". „Schön isch\'s heut, gell?" sucht Zustimmung und Nähe. Das Wörtchen leitet sich von „es gelte" ab und ist im ganzen Südwesten verbreitet. Es macht jede Aussage geselliger und verbindlicher. Ein Gespräch ohne ein freundliches „gell" am Satzende klingt für einen Schwaben fast schon unhöflich.',
+      beispiel: 'Des Wetter isch heut traumhaft, gell?',
+      beispiel_hd: 'Das Wetter ist heute traumhaft, nicht wahr?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-302',
+      ausdruck: 'a weng',
+      hochdeutsch: 'ein wenig / ein bisschen',
+      bedeutung: '„A weng" heißt im Schwäbischen ein wenig oder ein bisschen — eine der häufigsten Mengenangaben im Alltag. „Magsch no a weng Soß?" fragt man beim Esse. Das Wörtchen drückt eine kleine, bescheidene Menge aus und passt damit gut zur schwäbischen Zurückhaltung. Es klingt weicher und herzlicher als das nüchterne hochdeutsche „ein wenig" und ist aus dem schwäbischen Sprachfluss nicht wegzudenken.',
+      beispiel: 'Wartsch no a weng, dann komm i mit.',
+      beispiel_hd: 'Wartest du noch ein wenig, dann komme ich mit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-303',
+      ausdruck: 'allaweil',
+      hochdeutsch: 'immer / ständig',
+      bedeutung: '„Allaweil" bedeutet im Schwäbischen immer, ständig oder andauernd. „Der jammert allaweil!" beschreibt einen, der ununterbrochen klagt. Das Wort ist aus „alle Weile" zusammengezogen und im ganzen oberdeutschen Raum verbreitet. Es trägt oft einen leicht genervten oder resignierten Unterton. Allaweil gehört zu den traditionsreichen Zeitwörtern, die dem Schwäbischen seine bodenständige, altertümliche Färbung geben.',
+      beispiel: 'Du muscht allaweil des letschte Wort haba!',
+      beispiel_hd: 'Du musst immer das letzte Wort haben!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-304',
+      ausdruck: 'Hagsch',
+      hochdeutsch: 'mürrischer Mensch / Zankweib',
+      bedeutung: 'Eine „Hagsch" ist im Schwäbischen eine mürrische, zänkische oder unzufriedene Person, oft auf ein Weib bezogen, manchmal auch eine alte Hexe. „So a alte Hagsch!" sagt man über jemanden, der ständig nörgelt und schimpft. Das Wort ist derb und nicht eben schmeichelhaft. Es gehört zum bunten Repertoire schwäbischer Personenbezeichnungen, die Charaktereigenschaften treffend und ungeschönt auf den Punkt bringen.',
+      beispiel: 'Die Hagsch hot wieder über alles gschimpft.',
+      beispiel_hd: 'Das Zankweib hat wieder über alles geschimpft.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-305',
+      ausdruck: 'pressiera',
+      hochdeutsch: 'eilig sein / drängen',
+      bedeutung: '„Pressiera" heißt im Schwäbischen eilig sein oder drängen — entlehnt aus dem Französischen „presser". „Es pressiert!" bedeutet, dass es dringend ist und keine Zeit zu verlieren. „Mir pressiert\'s net" sagt dagegen der gelassene Schwabe, der sich Zeit lässt. Das Wort zeigt den romanischen Einfluss auf den südwestdeutschen Wortschatz und ist im Alltag rund um Termine und Eile fest verankert.',
+      beispiel: 'Jetzt pressiert\'s aber, sonscht verpasse mer de Zug!',
+      beispiel_hd: 'Jetzt ist es aber eilig, sonst verpassen wir den Zug!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-306',
+      ausdruck: 'Loffel',
+      hochdeutsch: 'Löffel / Ohr (scherzhaft)',
+      bedeutung: 'Der „Loffel" ist im Schwäbischen der Löffel, scherzhaft aber auch das Ohr — „spitz dei Loffel!" heißt aufpassen und gut zuhören. Beim Esse rührt man mit dem Loffel im Eintopf, und Kinder lernen früh, den Loffel ordentlich zu halten. Die Doppelbedeutung sorgt für manchen Wortwitz. Das Wort gehört zu den kleinen alltäglichen Dingen, die im Dialekt eine ganz eigene, vertraute Lautgestalt bekommen.',
+      beispiel: 'Spitz dei Loffel, i sag\'s bloß oimol!',
+      beispiel_hd: 'Spitz die Ohren, ich sage es nur einmal!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'sw-307',
+      ausdruck: 'Pfnausel',
+      hochdeutsch: 'Schnupfen / verstopfte Nase',
+      bedeutung: 'Ein „Pfnausel" ist im Schwäbischen ein Schnupfen oder eine verstopfte, schniefende Nase. Wer „pfnauselt", schnieft und schnauft durch die erkältete Nase. „I hab a Pfnausel" klagt man im Winter über den Schnupfen. Das Wort ist herrlich lautmalerisch und ahmt das schniefende Geräusch nach. Es gehört zu den anschaulichen schwäbischen Krankheitswörtern, die das Leiden mit einer Prise Humor benennen.',
+      beispiel: 'I hab a fiesa Pfnausel ond mei Nas isch ganz zua.',
+      beispiel_hd: 'Ich habe einen fiesen Schnupfen und meine Nase ist ganz zu.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'sw-308',
+      ausdruck: 'Bobbele',
+      hochdeutsch: 'Baby / Kleinkind',
+      bedeutung: 'Ein „Bobbele" ist im Schwäbischen und Badischen ein Baby oder Kleinkind — eines der zärtlichsten Wörter überhaupt. „Guck mol des süße Bobbele!" sagt man entzückt über einen Säugling. Das Wort gehört zur Welt der jungen Familie und klingt durch seinen weichen Klang besonders liebevoll. Großmütter herzen ihr Bobbele und stricken ihm Söckle. Es ist Ausdruck reiner Zuneigung und gehört fest zum schwäbischen Familienwortschatz.',
+      beispiel: 'S\'Bobbele schloft endlich, jetzt isch Ruh im Haus.',
+      beispiel_hd: 'Das Baby schläft endlich, jetzt ist Ruhe im Haus.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-309',
+      ausdruck: 'Hoschd',
+      hochdeutsch: 'hast du',
+      bedeutung: '„Hoschd" ist die zusammengezogene schwäbische Form von „hast du" — ein Paradebeispiel für die typische Verschmelzung von Verb und Pronomen im Dialekt. „Hoschd des ghört?" heißt „Hast du das gehört?". Diese Verschleifungen machen das Schwäbische für Auswärtige schwer verständlich, sind aber grammatisch völlig konsequent. Wer „hoschd" sagt, ist unzweifelhaft als Schwabe zu erkennen, denn knapper geht es kaum.',
+      beispiel: 'Hoschd du heut scho dei Vesper dabei?',
+      beispiel_hd: 'Hast du heute schon deine Brotzeit dabei?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-310',
+      ausdruck: 'henn',
+      hochdeutsch: 'haben (sie/wir haben)',
+      bedeutung: '„Henn" ist die schwäbische Form von „haben" in der Mehrzahl — „mir henn" heißt „wir haben", „die henn" heißt „sie haben". Es ist eine der charakteristischsten Verbformen des Dialekts. „Mir henn no Zeit" sagt der gelassene Schwabe. Diese eigenständige Konjugation unterscheidet das Schwäbische klar vom Hochdeutschen und ist eines der untrüglichsten Erkennungsmerkmale echter Mundart im täglichen Gespräch.',
+      beispiel: 'Mir henn no a bissle Zeit bis zum Esse.',
+      beispiel_hd: 'Wir haben noch ein bisschen Zeit bis zum Essen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-311',
+      ausdruck: 'ebbes',
+      hochdeutsch: 'etwas',
+      bedeutung: '„Ebbes" ist das schwäbische Wort für „etwas" und gehört zu den allerhäufigsten Wörtern im Dialekt. „Magsch ebbes esse?" oder „Do stimmt ebbes net" — ebbes trägt unzählige Sätze. Das Gegenstück ist „nix" (nichts). Die weiche, gerundete Aussprache mit dem Doppel-b macht das Wort unverwechselbar schwäbisch. Wer „ebbes" statt „etwas" sagt, verrät sich sofort als Kind des Schwabenlandes.',
+      beispiel: 'I muss dir no ebbes Wichtigs saga.',
+      beispiel_hd: 'Ich muss dir noch etwas Wichtiges sagen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-312',
+      ausdruck: 'g\'hörig',
+      hochdeutsch: 'gehörig / kräftig',
+      bedeutung: '„G\'hörig" bedeutet im Schwäbischen gehörig, kräftig oder ordentlich — im Sinne von „in beträchtlichem Maße". „Der hot mr g\'hörig d\'Meinung gsagt!" heißt, dass jemand deutlich und nachdrücklich zurechtgewiesen wurde. Das Wort verstärkt eine Aussage und betont, dass etwas mit Wucht oder in vollem Umfang geschieht. Es gehört zum bodenständigen Schwäbisch, das gern mit kräftigen Worten Nachdruck verleiht.',
+      beispiel: 'Heut hot\'s g\'hörig gschneit über Nacht!',
+      beispiel_hd: 'Heute hat es kräftig geschneit über Nacht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-313',
+      ausdruck: 'Dotsch',
+      hochdeutsch: 'Dummkopf / Trottel',
+      bedeutung: 'Ein „Dotsch" ist im Schwäbischen ein Dummkopf, Trottel oder ungeschickter Mensch. „So a Dotsch!" sagt man kopfschüttelnd über einen, der etwas Einfältiges tut. Das Wort kann auch eine weiche, breiige Masse meinen, etwa einen Kartoffeldotsch. Als Schimpfwort ist es eher mild und gutmütig. Es reiht sich ein in die lange Liste anschaulicher schwäbischer Bezeichnungen für tollpatschige oder begriffsstutzige Zeitgenossen.',
+      beispiel: 'Du Dotsch, des hosch jetzt voll verkehrt gmacht!',
+      beispiel_hd: 'Du Trottel, das hast du jetzt völlig verkehrt gemacht!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-314',
+      ausdruck: 'Senf dazugeba',
+      hochdeutsch: 'sich ungefragt einmischen',
+      bedeutung: '„Sei Senf dazugeba" heißt im Schwäbischen, sich ungefragt in eine Sache einzumischen und seine Meinung kundzutun, obwohl niemand danach gefragt hat. „Der muss überall sei Senf dazugeba!" beklagt man einen Besserwisser. Die bildhafte Redensart vergleicht die ungebetene Meinung mit dem Senf, den der Wirt früher zu jedem Gericht reichte, ob man wollte oder nicht. Sie ist im ganzen Süden verbreitet.',
+      beispiel: 'Du muscht au überall dei Senf dazugeba, gell?',
+      beispiel_hd: 'Du musst auch überall deine Meinung dazugeben, nicht wahr?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-315',
+      ausdruck: 'Klingelbeutel',
+      hochdeutsch: 'Kollektenbeutel in der Kirche',
+      bedeutung: 'Der „Klingelbeutel" ist der an einer Stange befestigte Sammelbeutel, der im Gottesdienst zur Kollekte durch die Reihen gereicht wird — oft mit einem Glöckchen versehen, daher der Name. In den frommen schwäbischen Gemeinden mit ihrer pietistischen Tradition gehört der Klingelbeutel fest zum Sonntag. Über die berühmte schwäbische Sparsamkeit beim Klingelbeutel kursieren viele gutmütige Witze.',
+      beispiel: 'Wenn dr Klingelbeutel kommt, sucht jeder s\'kleinschte Geldstück.',
+      beispiel_hd: 'Wenn der Kollektenbeutel kommt, sucht jeder das kleinste Geldstück.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'sw-316',
+      ausdruck: 'Häfele',
+      hochdeutsch: 'Töpfchen / kleiner Topf',
+      bedeutung: 'Ein „Häfele" ist im Schwäbischen ein kleiner Topf oder Krug — die Verkleinerung von „Hafen" (Topf). „Stell s\'Häfele auf de Herd!" In jeder schwäbischen Küche stehen Häfele für Soßen und kleine Portionen. Auch das Töpfchen kleiner Kinder heißt so. Das Wort gehört zum häuslichen Wortschatz und zeigt erneut, wie die „-le"-Endung selbst dem Kochgeschirr eine vertraute, gemütliche Note verleiht.',
+      beispiel: 'Im Häfele köchelt scho d\'Soß fürs Esse.',
+      beispiel_hd: 'Im Töpfchen köchelt schon die Soße fürs Essen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-317',
+      ausdruck: 'Ähne',
+      hochdeutsch: 'Großvater / Opa',
+      bedeutung: 'Der „Ähne" (auch Ehne) ist im Schwäbischen und Alemannischen der Großvater oder Ahn. „Mei Ähne hot mr des Schnitza beibracht." Das alte Wort gehört zur selben Wurzel wie „Ahne" und ist im ländlichen Schwäbisch noch lebendig, auch wenn vielerorts „Opa" überwiegt. Der Ähne genoss als Familienoberhaupt großes Ansehen und gab Wissen und Handwerk an die Enkel weiter. Es gehört zum traditionellen Familienwortschatz.',
+      beispiel: 'Mei Ähne hot früher selber sei Most kelteret.',
+      beispiel_hd: 'Mein Großvater hat früher selbst seinen Most gekeltert.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-318',
+      ausdruck: 'Ranza',
+      hochdeutsch: 'Bauch / Wanst',
+      bedeutung: 'Der „Ranza" ist im Schwäbischen der Bauch, oft etwas spöttisch für einen dicken Wanst. „Der hot sich an ordentliche Ranza agfresse!" sagt man über einen, der gut gegessen hat. Das Wort kann auch den Schulranzen meinen, meint aber im engeren Sinn den Leib. Es gehört zum erdig-direkten schwäbischen Körperwortschatz und wird meist mit einem Augenzwinkern und ohne echte Bosheit verwendet.',
+      beispiel: 'Nach dem Festessa hot er an volla Ranza.',
+      beispiel_hd: 'Nach dem Festessen hat er einen vollen Bauch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'sw-319',
+      ausdruck: 'schaffig',
+      hochdeutsch: 'fleißig / arbeitsam',
+      bedeutung: '„Schaffig" beschreibt im Schwäbischen einen fleißigen, arbeitsamen Menschen — das höchste Lob im Land der Tüftler und Häuslebauer. „Des isch a schaffigs Mädle!" sagt man anerkennend über jemanden, der tüchtig zupackt. Das Wort leitet sich von „schaffa" (arbeiten) ab und steht im Zentrum des schwäbischen Wertesystems. Wer schaffig ist, genießt höchste Achtung, denn Fleiß gilt hier als wichtigste Tugend überhaupt.',
+      beispiel: 'Der neue Lehrbua isch wirklich schaffig ond zuverlässig.',
+      beispiel_hd: 'Der neue Lehrling ist wirklich fleißig und zuverlässig.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-320',
+      ausdruck: 'Grattler',
+      hochdeutsch: 'armer Schlucker / Habenichts',
+      bedeutung: 'Ein „Grattler" ist im Schwäbisch-Bairischen ein armer Schlucker, Habenichts oder ein schäbig wirkender Mensch. „So a Grattler!" sagt man abschätzig über jemanden ohne Ansehen oder Mittel. Das Wort hängt mit „gratteln" (mühsam herumkriechen, sich plagen) zusammen. Es ist derb und nicht schmeichelhaft, gehört aber zum farbigen Repertoire schwäbischer Personenbezeichnungen, die soziale Stellung und Charakter ungeschönt benennen.',
+      beispiel: 'Tu net so, du bisch au bloß a kloiner Grattler.',
+      beispiel_hd: 'Tu nicht so, du bist auch bloß ein kleiner Habenichts.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-321',
+      ausdruck: 'a Sträßle',
+      hochdeutsch: 'kleine Gasse / Sträßchen',
+      bedeutung: 'Ein „Sträßle" ist im Schwäbischen eine kleine Straße oder Gasse — die liebevolle Verkleinerung von „Straße". In den verwinkelten Altstädten von Esslingen, Tübingen oder Schwäbisch Hall führt manch enges Sträßle den Berg hinauf. Das Wort verleiht selbst dem Verkehrsweg etwas Heimeliges. Ein Spaziergang durch die kopfsteingepflasterten Sträßle gehört zum besonderen Charme der historischen schwäbischen Städtchen.',
+      beispiel: 'Des Sträßle nuff zum Schloss isch arg steil.',
+      beispiel_hd: 'Das Sträßchen hinauf zum Schloss ist ziemlich steil.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-322',
+      ausdruck: 'Gluck',
+      hochdeutsch: 'Glucke / überfürsorgliche Mutter',
+      bedeutung: 'Eine „Gluck" ist im Schwäbischen ursprünglich die brütende Henne, übertragen aber eine überfürsorgliche Mutter, die ihre Kinder ängstlich umsorgt. „Sei doch net so a Gluck!" sagt man zu jemandem, der allzu behütend ist. Das Bild der Henne, die ihre Küken unter die Flügel nimmt, passt treffend. Das Wort wird gutmütig-spöttisch gebraucht und gehört zum reichen Schatz schwäbischer Tier-Vergleiche für menschliches Verhalten.',
+      beispiel: 'D\'Mutter isch a richtige Gluck mit ihre Kinder.',
+      beispiel_hd: 'Die Mutter ist eine richtige Glucke mit ihren Kindern.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-323',
+      ausdruck: 'Daag',
+      hochdeutsch: 'Teig',
+      bedeutung: '„Daag" ist die schwäbische Aussprache von „Teig" — das „ei" wird zum gedehnten „aa". Beim Backen knetet man den Daag für Brot, Kuchen oder Spätzle. „Der Daag muss no aufgeha" sagt die Bäckerin. Das Wort gehört zur Küchensprache und zeigt die typische schwäbische Lautverschiebung. Ein guter, geschmeidiger Daag ist die Grundlage für Hefezopf, Brezg und all die schwäbischen Backwaren.',
+      beispiel: 'Der Daag fürs Brot muss no a Stund aufgeha.',
+      beispiel_hd: 'Der Teig fürs Brot muss noch eine Stunde aufgehen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-324',
+      ausdruck: 'Hudel',
+      hochdeutsch: 'Hektik / unordentliche Eile',
+      bedeutung: 'Ein „Hudel" ist im Schwäbischen Hektik, Durcheinander oder unordentliche Eile. „Mach koin Hudel!" mahnt man jemanden, der überstürzt und schlampig vorgeht. Das Substantiv gehört zu „hudla" und „hudelig" und beschreibt das Gegenteil der schwäbischen Gründlichkeit. Im Land der Ordnungsliebe gilt ein Hudel als wenig erstrebenswert — lieber langsam und richtig als schnell und im Hudel gepfuscht.',
+      beispiel: 'Mach bloß koin Hudel, mir hen no genug Zeit!',
+      beispiel_hd: 'Mach bloß keine Hektik, wir haben noch genug Zeit!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-325',
+      ausdruck: 'Goggel',
+      hochdeutsch: 'Hahn',
+      bedeutung: 'Der „Goggel" ist im Schwäbischen der Hahn, und „Goggelefleisch" das Hähnchen. Auf dem Bauernhof kräht der Goggel am Morgen, und auf dem Volksfest gibt\'s das knusprige Goggelefleisch vom Grill. Das Wort ist lautmalerisch dem Krähen nachempfunden und im ganzen alemannischen Raum verbreitet. Es gehört zur ländlichen Welt und zum festlichen Esse gleichermaßen und ist ein klassisches Erkennungswort des Dialekts.',
+      beispiel: 'In aller Früh kräht scho dr Goggel im Hof.',
+      beispiel_hd: 'In aller Frühe kräht schon der Hahn im Hof.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-326',
+      ausdruck: 'Schnegg',
+      hochdeutsch: 'Schnecke / liebes Mädchen',
+      bedeutung: 'Ein „Schnegg" ist im Schwäbischen die Schnecke, übertragen aber auch ein zärtliches Kosewort für ein liebes, hübsches Mädchen. „Du bisch mei Schnegg" sagt man liebevoll. Zugleich nennt man einen Langsamen spöttisch an Schnegg. Das Wort lebt also von seiner doppelten Färbung — vom kriechenden Tier bis zur herzlichen Anrede. Diese Bandbreite macht den Schnegg zu einem der vielseitigsten kleinen Wörter des Dialekts.',
+      beispiel: 'Komm her, mei Schnegg, i hab di gern!',
+      beispiel_hd: 'Komm her, mein Schatz, ich hab dich lieb!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-327',
+      ausdruck: 'Brodler',
+      hochdeutsch: 'Nörgler / Brummbär',
+      bedeutung: 'Ein „Brodler" ist im Schwäbischen ein mürrischer Nörgler, der ständig vor sich hin brummt und schimpft. „Der alt Brodler hot wieder über alles gschimpft." Das Wort gehört zu „brodla" (brummeln, leise schimpfen) und beschreibt treffend den ewig Unzufriedenen. Es wird oft mit einer gewissen Nachsicht gebraucht, denn ein liebenswerter Brodler gehört in jeder schwäbischen Nachbarschaft fast schon zum vertrauten Inventar.',
+      beispiel: 'Der Nachbar isch a richtiger Brodler, nie isch ebbes recht.',
+      beispiel_hd: 'Der Nachbar ist ein richtiger Nörgler, nie ist etwas recht.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-328',
+      ausdruck: 'brodla',
+      hochdeutsch: 'brummeln / leise schimpfen',
+      bedeutung: '„Brodla" heißt im Schwäbischen vor sich hin brummeln, murren oder leise schimpfen. Wer unzufrieden ist, „brodlet" still in den Bart hinein. „Hör auf zom brodla!" sagt man zu einem Nörgler. Das Wort ist lautmalerisch und gibt das dumpfe Grummeln gut wieder. Es gehört zum Wortfeld der schwäbischen Gemütsäußerungen, in dem der zurückhaltende Unmut oft nicht laut, sondern brodelnd unter der Oberfläche bleibt.',
+      beispiel: 'Statt zom brodla solltsch lieber sage, was di stört.',
+      beispiel_hd: 'Statt zu murren solltest du lieber sagen, was dich stört.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-329',
+      ausdruck: 'verhaspere',
+      hochdeutsch: 'sich verhaspeln / verheddern',
+      bedeutung: '„Verhaspere" heißt im Schwäbischen sich beim Reden verheddern, ins Stocken geraten oder durcheinanderkommen. „I hab mi total verhaspert!" sagt man, wenn einem vor Aufregung die Worte durcheinandergeraten. Das Wort beschreibt anschaulich, wie sich Sätze wie Garn verknoten. Es gehört zum Alltag und passt zu jedem, der vor lauter Eifer oder Nervosität über die eigenen Worte stolpert und den Faden verliert.',
+      beispiel: 'Bei der Red hab i mi voll verhaspert vor lauter Aufregung.',
+      beispiel_hd: 'Bei der Rede habe ich mich völlig verhaspelt vor lauter Aufregung.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-330',
+      ausdruck: 'Wonneproppe',
+      hochdeutsch: 'pummeliges, fröhliches Baby',
+      bedeutung: 'Ein „Wonneproppe" ist im Schwäbischen ein rundliches, prächtig gedeihendes und fröhliches Baby — ein „Prachtexemplar" von einem Kind. „Was für a Wonneproppe!" sagt man entzückt über einen wohlgenährten Säugling. Das Wort verbindet „Wonne" (Freude) mit „Proppe" (Pfropfen, etwas Pralles) und drückt liebevolle Bewunderung aus. Es gehört zum herzlichen Familienwortschatz rund um Babys und kleine Kinder.',
+      beispiel: 'Euer Kleiner isch ja a richtiger Wonneproppe!',
+      beispiel_hd: 'Euer Kleiner ist ja ein richtiges Pummelchen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sw-331',
+      ausdruck: 'Bschiss',
+      hochdeutsch: 'Betrug / Schwindel',
+      bedeutung: '„Bschiss" ist im Schwäbischen ein Betrug, Schwindel oder eine Mogelei. „Des isch a glatter Bschiss!" empört man sich über eine unfaire Sache. Das derbe Wort gehört zu „bscheißa" (betrügen) und wird im Alltag häufig gebraucht, wenn man sich übervorteilt fühlt. Der ehrliche, aufs Geld bedachte Schwabe reagiert auf jeden Bschiss besonders empfindlich, denn er lässt sich beim Geschäft ungern hinters Licht führen.',
+      beispiel: 'Die Rechnung isch a glatter Bschiss, des zahl i net!',
+      beispiel_hd: 'Die Rechnung ist ein glatter Betrug, das zahle ich nicht!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-332',
+      ausdruck: 'Schlampamp',
+      hochdeutsch: 'Schlamperei / Durcheinander',
+      bedeutung: '„Schlampamp" bezeichnet im Schwäbischen eine Schlamperei, ein liederliches Durcheinander oder eine unordentliche Wirtschaft. „Was isch denn des für a Schlampamp!" empört sich der ordnungsliebende Schwabe über ein Chaos. Das lautmalerische Wort drückt mit seiner Doppelung das Ausmaß der Unordnung aus. Im Land der Kehrwoche und der Ordnungsliebe ist ein Schlampamp so ziemlich das Gegenteil dessen, was sich gehört.',
+      beispiel: 'In dem Zimmer herrscht ja a unglaublicher Schlampamp!',
+      beispiel_hd: 'In diesem Zimmer herrscht ja ein unglaubliches Durcheinander!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-333',
+      ausdruck: 'Schubkärrele',
+      hochdeutsch: 'Schubkarre',
+      bedeutung: 'Ein „Schubkärrele" ist im Schwäbischen die Schubkarre — natürlich mit liebevoller „-le"-Endung, selbst wenn das Gerät groß ist. Im Garten und im Wengert fährt man mit dem Schubkärrele Erde, Laub und Trauben. „Hol s\'Schubkärrele aus\'m Schopf!" Das Wort zeigt erneut, wie das Schwäbische selbst rustikalem Arbeitsgerät eine vertraute Note gibt. Das Schubkärrele gehört zur Grundausstattung jedes schwäbischen Häuslebauers.',
+      beispiel: 'Mit\'m Schubkärrele fahr i s\'Laub auf de Kompost.',
+      beispiel_hd: 'Mit der Schubkarre fahre ich das Laub auf den Kompost.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-334',
+      ausdruck: 'Heiermann',
+      hochdeutsch: 'Fünfmarkstück / größere Münze',
+      bedeutung: 'Der „Heiermann" war das Fünfmarkstück, die große, schwere Silbermünze der D-Mark-Zeit. „Des kost a Heiermann!" hieß, etwas kostet fünf Mark. Auch wenn die Mark längst Geschichte ist, lebt das Wort in den Erinnerungen der älteren Schwaben fort. Für den sparsamen Schwaben war ein Heiermann ein ordentlicher Batzen Geld, den man nicht leichtfertig ausgab, sondern lieber ins Säckle steckte.',
+      beispiel: 'Früher hot a guats Vesper grad amol a Heiermann kost.',
+      beispiel_hd: 'Früher hat eine gute Brotzeit gerade einmal fünf Mark gekostet.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'sw-335',
+      ausdruck: 'Batze',
+      hochdeutsch: 'großer Betrag / Klumpen',
+      bedeutung: 'Ein „Batze" ist im Schwäbischen ein großer Betrag Geld oder ein dicker Klumpen von etwas. „Des hot an schöne Batze kost!" sagt man über eine teure Anschaffung. Ursprünglich war der Batzen eine alte Münze. Heute meint das Wort sowohl eine ordentliche Summe als auch eine zusammengeballte Masse, etwa „a Batze Dreck". Für den sparsamen Schwaben ist ein Batze Geld immer eine ernst zu nehmende Angelegenheit.',
+      beispiel: 'Des neue Auto hot an ordentliche Batze koscht.',
+      beispiel_hd: 'Das neue Auto hat einen ordentlichen Batzen gekostet.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'sw-336',
+      ausdruck: 'Schtägele',
+      hochdeutsch: 'kleine Treppe / Stiege',
+      bedeutung: 'Ein „Schtägele" ist im Schwäbischen eine kleine Treppe oder Stiege — die Verkleinerung von „Stege/Stiege". „Pass auf\'m Schtägele auf, des isch steil!" In den alten Häusern und Weinbergen führt manch enges Schtägele nach oben. Das Wort zeigt die typische schwäbische Aussprache mit „scht" am Wortanfang und die geliebte „-le"-Endung. Es gehört zum Wortschatz rund ums Haus und die hügelige Landschaft.',
+      beispiel: 'S\'Schtägele nuff zum Speicher knarzt bei jedem Schritt.',
+      beispiel_hd: 'Die kleine Treppe hinauf zum Speicher knarzt bei jedem Schritt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-337',
+      ausdruck: 'verhebe',
+      hochdeutsch: 'festhalten / halten',
+      bedeutung: '„Verhebe" heißt im Schwäbischen festhalten oder halten. „Verheb mr mol des Brett!" bittet man jemanden, kurz mit anzupacken. Das Wort wird auch reflexiv gebraucht: „I hab mi grad no verhebt" heißt, gerade noch Halt gefunden zu haben. Es gehört zum praktischen Alltagswortschatz beim Schaffe und Werkeln. Wer einem beim Häuslebau „verhebe" hilft, leistet handfeste, willkommene Nachbarschaftshilfe.',
+      beispiel: 'Verheb mr schnell d\'Leiter, i steig nuff!',
+      beispiel_hd: 'Halt mir schnell die Leiter fest, ich steige hinauf!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-338',
+      ausdruck: 'Lällebäbbel',
+      hochdeutsch: 'Dummkopf / einfältiger Mensch',
+      bedeutung: 'Ein „Lällebäbbel" ist im Schwäbischen ein einfältiger, etwas tölpelhafter Mensch, der mit offenem Mund („Lälle") dasteht. „So a Lällebäbbel!" sagt man gutmütig-spöttisch über einen Begriffsstutzigen. Das Wort verbindet „Lälle" (Zunge, hängende Lippe) mit „Bäbbel" und ist eines der lautmalerisch schönsten schwäbischen Schimpfwörter. Es ist mild und nie wirklich verletzend gemeint, sondern eher liebevoll neckend.',
+      beispiel: 'Steh net rum wia a Lällebäbbel, pack mit a!',
+      beispiel_hd: 'Steh nicht herum wie ein Dummkopf, pack mit an!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-339',
+      ausdruck: 'Weckle',
+      hochdeutsch: 'Brötchen',
+      bedeutung: 'Ein „Weckle" ist im Schwäbischen ein Brötchen — die Verkleinerung von „Wecken". Beim Bäcker holt man morgens frische Weckle, die man mit Butter und Gsälz oder herzhaft mit Wurscht belegt. „Zwoi Weckle, bitte!" gehört zum täglichen Einkauf. Das Wort ist neben „Loawble" eine der gängigen schwäbischen Bezeichnungen fürs Brötchen und gehört unverzichtbar zum schwäbischen Frühstücks- und Vesperwortschatz.',
+      beispiel: 'Zum Frühstück gibt\'s a knuschprigs Weckle mit Gsälz.',
+      beispiel_hd: 'Zum Frühstück gibt es ein knuspriges Brötchen mit Marmelade.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-340',
+      ausdruck: 'Grasdackel',
+      hochdeutsch: 'Dummkopf / Tollpatsch',
+      bedeutung: 'Ein „Grasdackel" ist im Schwäbischen ein liebenswerter Dummkopf oder ungeschickter Tollpatsch. „So a Grasdackel!" sagt man kopfschüttelnd, aber meist gutmütig über einen, der etwas Einfältiges anstellt. Das Wort verbindet „Gras" mit „Dackel" zu einem anschaulichen Bild des Begriffsstutzigen. Es zählt zu den derb-herzlichen schwäbischen Schimpfwörtern, die nie wirklich verletzend, sondern eher neckend und nachsichtig gemeint sind.',
+      beispiel: 'Du Grasdackel, jetzt hosch d\'Milch überkocha lassa!',
+      beispiel_hd: 'Du Dummkopf, jetzt hast du die Milch überkochen lassen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-341',
+      ausdruck: 'Glufa',
+      hochdeutsch: 'Stecknadel',
+      bedeutung: 'Eine „Glufa" ist im Schwäbischen eine Steck- oder Sicherheitsnadel. „Hosch a Glufa, i muss des schnell feschtmacha." Beim Nähen und Schneidern sind Glufa unentbehrlich. Das Wort ist alt und im ganzen alemannischen Raum bekannt. Es steckt auch im „Glufamichel". Die kleine Glufa gehört zum häuslichen Handarbeitswortschatz und ist eines der vielen schwäbischen Wörter, die sich vom Hochdeutschen vollständig unterscheiden.',
+      beispiel: 'Gib mr a Glufa, dann steck i de Saum schnell ab.',
+      beispiel_hd: 'Gib mir eine Stecknadel, dann stecke ich den Saum schnell ab.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-342',
+      ausdruck: 'Hennegoschd',
+      hochdeutsch: 'Geschwätz / dummes Gerede',
+      bedeutung: '„Hennegoschd" (wörtlich Hühnermäuler) bezeichnet im Schwäbischen dummes Geschwätz, leeres Gerede oder Gackerei. „Des isch doch alles bloß Hennegoschd!" tut man unwichtiges Gerede ab. Das bildhafte Wort vergleicht sinnloses Plappern mit dem aufgeregten Gackern der Hühner. Es gehört zum farbigen schwäbischen Wortschatz rund ums Reden und drückt augenzwinkernd die Geringschätzung für belangloses Gschwätz aus.',
+      beispiel: 'Glaub dem Hennegoschd net, des isch alles erfunde.',
+      beispiel_hd: 'Glaub dem Geschwätz nicht, das ist alles erfunden.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-343',
+      ausdruck: 'aweng pressant',
+      hochdeutsch: 'ein wenig dringend',
+      bedeutung: '„Pressant" heißt im Schwäbischen dringend oder eilig — wie „pressiera" aus dem Französischen entlehnt. „Des isch aweng pressant" bedeutet, dass eine Sache keinen Aufschub duldet. Der gelassene Schwabe gibt allerdings selten zu, dass ihm etwas wirklich pressant ist, denn Hektik gilt als unschicklich. Das Wort zeigt den romanischen Einschlag im Dialekt und gehört zum Alltag rund um Termine und Eile.',
+      beispiel: 'Komm, des isch jetzt aweng pressant, mir müsset los!',
+      beispiel_hd: 'Komm, das ist jetzt ein wenig dringend, wir müssen los!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-344',
+      ausdruck: 'Dappschädel',
+      hochdeutsch: 'Dummkopf / Begriffsstutziger',
+      bedeutung: 'Ein „Dappschädel" ist im Schwäbischen ein Dummkopf oder Begriffsstutziger — wörtlich ein „tappiger Schädel". „Du Dappschädel, des hosch jetzt scho dreimal falsch gmacht!" Das derbe, aber meist gutmütige Schimpfwort verbindet „dappig" (ungeschickt) mit „Schädel". Es gehört zur langen Reihe anschaulicher schwäbischer Schelten und wird im Alltag eher liebevoll-genervt als wirklich böse gebraucht, etwa unter Freunden oder in der Familie.',
+      beispiel: 'So a Dappschädel, jetzt hot er de Schlüssel wieder vergesse!',
+      beispiel_hd: 'So ein Dummkopf, jetzt hat er den Schlüssel wieder vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'sw-345',
+      ausdruck: 'sell',
+      hochdeutsch: 'jenes / das dort',
+      bedeutung: '„Sell" ist im Schwäbischen das Demonstrativpronomen für „jenes" oder „das dort" — eine Besonderheit, die das Hochdeutsche so nicht mehr kennt. „Sell isch\'s!" heißt „genau das ist es!". Auch in der Wendung „sell wo" (derjenige, welcher) lebt es fort. Das alte Wort verleiht dem Schwäbischen eine altertümliche Note und ist im ganzen alemannischen Raum verbreitet. Es gehört zu den ältesten Schichten des Dialekts.',
+      beispiel: 'Sell do hinte, des isch genau des, was i gsucht hab!',
+      beispiel_hd: 'Das dort hinten, das ist genau das, was ich gesucht habe!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-346',
+      ausdruck: 'Loab',
+      hochdeutsch: 'Laib (Brot)',
+      bedeutung: 'Ein „Loab" ist im Schwäbischen ein Laib, meist ein Laib Brot. „Hol an frische Loab vom Beck!" Das kräftige schwäbische Bauernbrot wird in großen runden Loab gebacken und hält tagelang frisch. Das Wort zeigt die typische Lautverschiebung von „ei" zu „oa". Ein guter Loab Brot gehört in jeden schwäbischen Haushalt und ist die Grundlage fürs tägliche Vesper mit Wurscht, Käs und Gsälz.',
+      beispiel: 'A ganze Loab Bauernbrot hält bei uns fascht a Woch.',
+      beispiel_hd: 'Ein ganzer Laib Bauernbrot hält bei uns fast eine Woche.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-347',
+      ausdruck: 'naus',
+      hochdeutsch: 'hinaus / raus',
+      bedeutung: '„Naus" ist die schwäbische Kurzform von „hinaus". „Geh naus an d\'frische Luft!" Die Schwaben lieben solche knappen Richtungswörter: naus (hinaus), nei (hinein), nuff (hinauf), nab (hinab). Sie machen die Sprache kompakt und unverwechselbar. „Mir gohet naus en Wengert" heißt, wir gehen hinaus in den Weinberg. Naus gehört zu den kleinen, aber unentbehrlichen Bewegungswörtern des Alltagsschwäbisch.',
+      beispiel: 'Bei dem schöne Wetter goht mer am beschte naus.',
+      beispiel_hd: 'Bei dem schönen Wetter geht man am besten hinaus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-348',
+      ausdruck: 'nuff',
+      hochdeutsch: 'hinauf / rauf',
+      bedeutung: '„Nuff" ist die schwäbische Kurzform von „hinauf". „Mir laufet nuff auf de Berg" heißt, wir gehen hinauf auf den Berg. Das knappe Richtungswort gehört zur typischen schwäbischen Familie aus naus, nei, nuff und nab. In der hügeligen Landschaft des Schwabenlandes, wo es ständig den Wengert oder die Alb hinaufgeht, ist nuff ein vielgebrauchtes Wort. Es macht die Mundart kurz, bildhaft und unverkennbar.',
+      beispiel: 'Komm, mir laufet nuff zur Burg, do hot mer a tolle Aussicht.',
+      beispiel_hd: 'Komm, wir laufen hinauf zur Burg, da hat man eine tolle Aussicht.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-349',
+      ausdruck: 'Mässl',
+      hochdeutsch: 'unverdientes Glück / Dusel',
+      bedeutung: 'Ein „Mässl" ist im Schwäbischen unverdientes Glück, Dusel oder ein glücklicher Zufall. „Des war vielleicht a Mässl!" sagt man, wenn man gerade noch einmal davongekommen ist. Wer „a Mässl hot", hat mehr Glück als Verstand gehabt. Das Wort drückt das überraschende, fast unverschämte Glück aus, das einem unverhofft zufällt. Es gehört zum geselligen Wortschatz und wird oft mit einem erleichterten Lachen gebraucht.',
+      beispiel: 'Dass mir de Bus grad no kriegt henn, war a echtes Mässl!',
+      beispiel_hd: 'Dass wir den Bus gerade noch bekommen haben, war ein echter Dusel!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-350',
+      ausdruck: 'Schlotzbäbbel',
+      hochdeutsch: 'Lutscher / Lolli',
+      bedeutung: 'Ein „Schlotzbäbbel" ist im Schwäbischen ein Lutscher oder Lolli — etwas zum Schlotzen (Lutschen), das obendrein klebt (bäbbt). Die Kinder freuen sich über an Schlotzbäbbel vom Jahrmarkt. Das Wort vereint zwei schöne schwäbische Verben, „schlotza" und „bäbba", zu einem anschaulichen Ganzen. Es gehört zur Welt der Süßigkeiten und der Kindheit und gilt als eines der charmantesten zusammengesetzten Wörter des Dialekts.',
+      beispiel: 'D\'Kinder kriaget am Volksfescht jedes an Schlotzbäbbel.',
+      beispiel_hd: 'Die Kinder bekommen auf dem Volksfest jedes einen Lutscher.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-351',
+      ausdruck: 'verschütt gange',
+      hochdeutsch: 'verloren gegangen / abhandengekommen',
+      bedeutung: '„Verschütt gange" heißt im Schwäbischen verloren gegangen oder abhandengekommen. „Mei Schlüssel isch verschütt gange!" klagt man, wenn etwas spurlos verschwunden ist. Die Redewendung stammt aus dem Bergbau, wo Verschüttetes als verloren galt. Im Alltag wird sie für alles Mögliche gebraucht, das man nicht mehr findet. Sie gehört zum bildhaften schwäbischen Sprachschatz rund ums Verlieren und Suchen.',
+      beispiel: 'Mei Lieblingsmesser isch beim Umzug verschütt gange.',
+      beispiel_hd: 'Mein Lieblingsmesser ist beim Umzug verloren gegangen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-352',
+      ausdruck: 'Schwätzweib',
+      hochdeutsch: 'geschwätzige Person / Klatschbase',
+      bedeutung: 'Ein „Schwätzweib" ist im Schwäbischen eine geschwätzige Person oder Klatschbase, die gern und viel redet und Neuigkeiten weiterträgt. „Bei dem Schwätzweib weiß bald s\'ganze Dorf Bscheid!" Das Wort verbindet „schwätza" (reden) mit „Weib" und wird meist spöttisch gebraucht. Es gehört zum Repertoire schwäbischer Personenbezeichnungen und beschreibt augenzwinkernd den dörflichen Tratsch, der über jeden Gartenzaun läuft.',
+      beispiel: 'Erzähl dem Schwätzweib bloß nix, sonscht weiß\'s jeder.',
+      beispiel_hd: 'Erzähl der Klatschbase bloß nichts, sonst weiß es jeder.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sw-353',
+      ausdruck: 'gugg',
+      hochdeutsch: 'schau / guck',
+      bedeutung: '„Gugg!" ist im Schwäbischen die Aufforderung „schau!" oder „guck!". „Gugg amol do nieber!" lenkt die Aufmerksamkeit auf etwas. Das Verb „gugge" (schauen) ist im ganzen süddeutschen Raum verbreitet und gehört zu den allerhäufigsten Alltagswörtern. „Gugg net so!" sagt man zu jemandem, der starrt. Mit seiner weichen, gerundeten Aussprache ist gugg ein typisches Erkennungswort der schwäbischen Mundart.',
+      beispiel: 'Gugg amol, do hinte goht grad d\'Sonn unter!',
+      beispiel_hd: 'Schau mal, da hinten geht gerade die Sonne unter!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-354',
+      ausdruck: 'Lädle',
+      hochdeutsch: 'kleiner Laden / Geschäft',
+      bedeutung: 'Ein „Lädle" ist im Schwäbischen ein kleiner Laden oder ein Geschäft — die liebevolle Verkleinerung von „Laden". „I geh schnell ins Lädle um d\'Eck." Die kleinen Tante-Emma-Lädle gehörten früher zu jedem Dorf und Stadtviertel. Das Wort verleiht dem Geschäft etwas Heimeliges und Vertrautes. Heute werden auch hübsche Boutiquen und Hofläden gern als Lädle bezeichnet — immer mit einem Hauch von Gemütlichkeit.',
+      beispiel: 'Im Lädle um d\'Eck gibt\'s no frische Eier vom Bauer.',
+      beispiel_hd: 'Im kleinen Laden um die Ecke gibt es noch frische Eier vom Bauern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sw-355',
+      ausdruck: 'Stoißel',
+      hochdeutsch: 'Stößel / Stampfer',
+      bedeutung: 'Ein „Stoißel" ist im Schwäbischen ein Stößel oder Stampfer, mit dem man im Mörser etwas zerstößt oder Kraut einstampft. „Nimm de Stoißel ond stampf des klein." Das Wort zeigt die typische schwäbische Lautung von „ö" zu „oi". In der traditionellen Küche, etwa beim Sauerkraut-Einmachen, war der Stoißel ein wichtiges Werkzeug. Es gehört zum Wortschatz der alten bäuerlichen Vorratshaltung und Küche.',
+      beispiel: 'Mit\'m Stoißel stampf i s\'Kraut fescht ins Fass.',
+      beispiel_hd: 'Mit dem Stößel stampfe ich das Kraut fest ins Fass.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sw-356',
+      ausdruck: 'Goißel',
+      hochdeutsch: 'Peitsche',
+      bedeutung: 'Eine „Goißel" ist im Schwäbischen eine Peitsche — vor allem die Fuhrmannspeitsche. „Mit der Goißel hot der Fuhrmann d\'Ross angetrieba." Beim traditionellen „Goißelschnalza" lässt man die Peitsche laut knallen, ein altes Brauchtum bei Umzügen und Festen. Das Wort zeigt die typische schwäbische Lautverschiebung und gehört zur ländlichen Welt der Pferdefuhrwerke und des bäuerlichen Brauchtums im Schwabenland.',
+      beispiel: 'Beim Umzug hot er d\'Goißel laut schnalza lassa.',
+      beispiel_hd: 'Beim Umzug hat er die Peitsche laut knallen lassen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-357',
+      ausdruck: 'Hennefoß',
+      hochdeutsch: 'krakelige Handschrift',
+      bedeutung: '„Hennefoß" (Hühnerfuß) bezeichnet im Schwäbischen eine krakelige, unleserliche Handschrift — sie sieht aus, als hätte eine Henne mit den Füßen über das Papier gescharrt. „Dei Schrift isch a reiner Hennefoß!" Das bildhafte Wort vergleicht das Gekritzel treffend mit Hühnerspuren. Es gehört zum anschaulichen schwäbischen Wortschatz und wird meist scherzhaft über schlecht lesbare Notizen oder Kinderkritzeleien gesagt.',
+      beispiel: 'Dei Hennefoß kann ja koi Mensch entziffere!',
+      beispiel_hd: 'Deine krakelige Schrift kann ja kein Mensch entziffern!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'sw-358',
+      ausdruck: 'Doißet',
+      hochdeutsch: 'Durst',
+      bedeutung: '„Doißet" ist die schwäbische Form von „Durst". „I hab an mordsmäßige Doißet!" klagt man nach der Arbeit oder beim Wandern auf der Alb. Nach dem Schaffe in der Sonne löscht ein kühles Viertele oder a Schorle den Doißet am besten. Das Wort zeigt die charakteristische schwäbische Lautung und gehört zum Alltag rund ums Esse und Trinke. Ein ehrlicher Doißet nach getaner Arbeit gilt als wohlverdient.',
+      beispiel: 'Nach der Wanderung hab i an Doißet wia a ganze Kompanie!',
+      beispiel_hd: 'Nach der Wanderung habe ich einen Durst wie eine ganze Kompanie!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'sw-359',
+      ausdruck: 'Wäldle',
+      hochdeutsch: 'kleiner Wald / Wäldchen',
+      bedeutung: 'Ein „Wäldle" ist im Schwäbischen ein kleiner Wald oder ein Wäldchen — die Verkleinerung von „Wald". „Mir mache an Spaziergang durchs Wäldle." Rund um die schwäbischen Dörfer liegen oft idyllische Wäldle, in denen man Pilze sucht oder spazieren geht. Das Wort verleiht selbst dem Wald etwas Vertrautes und Überschaubares. Ein Sonntagsspaziergang durchs Wäldle, gefolgt vom Vesper, ist schwäbische Lebensart pur.',
+      beispiel: 'Am Sonntag drehe mir a Rundle durchs Wäldle.',
+      beispiel_hd: 'Am Sonntag drehen wir eine Runde durch das Wäldchen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sw-360',
+      ausdruck: 'brüele',
+      hochdeutsch: 'laut weinen / brüllen',
+      bedeutung: '„Brüele" heißt im Schwäbischen laut weinen, plärren oder brüllen. „Jetzt hör amol auf zom brüele!" sagt man zu einem Kind, das lauthals schreit. Das lautmalerische Wort gibt das kräftige Geheul gut wieder und wird auch fürs laute Schreien überhaupt gebraucht. Im Familienalltag begegnet einem das Brüele der Kleinen oft, doch der gelassene Schwabe beruhigt sie meist rasch mit ruhigem Wort und Geduld.',
+      beispiel: 'S\'Bobbele fangt bei jeder Kleinigkeit a zom brüele.',
+      beispiel_hd: 'Das Baby fängt bei jeder Kleinigkeit an zu brüllen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'sw-361',
+      ausdruck: 'a saubere Arbeit',
+      hochdeutsch: 'gründliche, ordentliche Arbeit',
+      bedeutung: '„A saubere Arbeit" ist im Schwäbischen das höchste Lob für gründliche, sorgfältig und ordentlich ausgeführte Arbeit. „Des isch a saubere Arbeit!" sagt der Meister anerkennend zum Gesellen. Im Land der Tüftler und Handwerker zählt nichts mehr als saubere Arbeit — Pfusch hingegen ist eine Schande. Die Wendung bringt das schwäbische Streben nach Perfektion und Gründlichkeit beim Schaffe auf den Punkt.',
+      beispiel: 'Des hosch wirklich saubere Arbeit gmacht, alle Achtung!',
+      beispiel_hd: 'Das hast du wirklich ordentliche Arbeit gemacht, alle Achtung!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-362',
+      ausdruck: 'Bändel',
+      hochdeutsch: 'Schnur / Band',
+      bedeutung: 'Ein „Bändel" ist im Schwäbischen eine Schnur, ein Band oder Bindfaden. „Bind des Päckle mit\'m Bändel zua." In der Wendung „am Bändel ha" bedeutet es, jemanden fest im Griff oder unter Kontrolle zu haben. Das kleine, alltägliche Wort gehört zum praktischen Hauswortschatz. Ob beim Einpacken, Basteln oder Werkeln — ein Bändel ist im schwäbischen Haushalt immer griffbereit und für vielerlei Zwecke gut.',
+      beispiel: 'Mit em Bändel mach i s\'Paket schnell zua.',
+      beispiel_hd: 'Mit der Schnur mache ich das Paket schnell zu.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-363',
+      ausdruck: 'verzettle',
+      hochdeutsch: 'sich verzetteln / verlieren',
+      bedeutung: '„Verzettle" heißt im Schwäbischen sich verzetteln, also sich in zu vielen Dingen gleichzeitig verlieren und nichts richtig zu Ende bringen. „I hab mi total verzettelt heut!" klagt man nach einem zerfahrenen Tag. Für den gründlichen Schwaben, der eine Sache nach der anderen sauber erledigt, ist das Verzettle ein Greuel. Das Wort gehört zum Alltag rund um Arbeit und Organisation und mahnt zur Konzentration.',
+      beispiel: 'Mach oins nach\'m andere, sonscht verzettelsch di bloß.',
+      beispiel_hd: 'Mach eins nach dem anderen, sonst verzettelst du dich bloß.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'sw-364',
+      ausdruck: 'Kruschd',
+      hochdeutsch: 'Kram / Gerümpel',
+      bedeutung: '„Kruschd" ist im Schwäbischen Kram, Gerümpel oder allerlei wertloses Zeug. „Räum endlich dei Kruschd weg!" mahnt man jemanden, dessen Sachen herumliegen. Das Wort meint angesammelten Plunder, den man eigentlich nicht braucht. Im ordnungsliebenden Schwabenland wird Kruschd nicht gern gesehen, auch wenn sich in jedem Keller und auf jedem Speicher mit der Zeit doch einiger Kruschd ansammelt. Ein anschauliches Alltagswort.',
+      beispiel: 'Im Keller liegt no a Hauffa alter Kruschd rum.',
+      beispiel_hd: 'Im Keller liegt noch ein Haufen alter Kram herum.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sw-365',
+      ausdruck: 'I mecht',
+      hochdeutsch: 'ich möchte',
+      bedeutung: '„I mecht" ist die schwäbische Form von „ich möchte" — eine der häufigsten Höflichkeitswendungen im Alltag. „I mecht a Viertele, bitte!" bestellt man im Wirtshaus. Die weiche Aussprache von „möchte" zu „mecht" ist unverkennbar schwäbisch. „I mecht no ebbes saga" leitet man höflich eine Bemerkung ein. Die bescheidene, zurückhaltende Wendung passt gut zur schwäbischen Art und gehört zum täglichen Sprachgebrauch.',
+      beispiel: 'I mecht no a Stückle Kucha, wenn\'s recht isch.',
+      beispiel_hd: 'Ich möchte noch ein Stückchen Kuchen, wenn es recht ist.',
+      kategorie: 'alltag'
     }
   ]
 };

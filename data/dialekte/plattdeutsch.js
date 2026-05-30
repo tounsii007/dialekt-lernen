@@ -2287,6 +2287,996 @@ export default {
       beispiel: 'Wi föhrt jeden Sommer in dat Seebad Travemünde.',
       beispiel_hd: 'Wir fahren jeden Sommer in das Seebad Travemünde.',
       kategorie: 'orte'
+    },
+    {
+      id: 'p-271',
+      ausdruck: 'kieken',
+      hochdeutsch: 'schauen / gucken',
+      bedeutung: '„kieken" heißt im Plattdeutschen schlicht „schauen" oder „gucken" — eines der bekanntesten niederdeutschen Verben überhaupt, hörbar verwandt mit niederländisch „kijken". „Kiek mol!" („Schau mal!") gehört zum täglichen Sprachgebrauch im ganzen Norden. Wer „kiekt", der wirft einen Blick auf etwas, beobachtet oder schaut nach. Das Wort lebt sogar im Hochdeutschen weiter, etwa im Berliner „kieken".',
+      beispiel: 'Kiek mol, dor swemmt en Seehund in\'t Water!',
+      beispiel_hd: 'Schau mal, da schwimmt ein Seehund im Wasser!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-272',
+      ausdruck: 'snacken',
+      hochdeutsch: 'reden / sprechen',
+      bedeutung: '„snacken" bedeutet „reden", „sprechen" oder „plaudern" und ist das plattdeutsche Kernverb fürs Sprechen. „Kannst du Platt snacken?" fragt man im Norden, um herauszufinden, ob jemand die Sprache beherrscht. Aus dem „snacken" leitet sich auch der „Klönschnack" ab, das gemütliche Schwätzchen. Wer viel „snackt", aber wenig tut, gilt allerdings auch schnell als Schwätzer.',
+      beispiel: 'Wi hebbt den ganzen Avend över ole Tieden snackt.',
+      beispiel_hd: 'Wir haben den ganzen Abend über alte Zeiten geredet.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-273',
+      ausdruck: 'töven',
+      hochdeutsch: 'warten',
+      bedeutung: '„töven" ist das plattdeutsche Wort für „warten". „Töv mol!" heißt „Warte mal!" und gehört zu den häufigsten Aufforderungen im Alltag. Das Verb ist alt und im ganzen niederdeutschen Sprachraum verbreitet. Wer geduldig „töövt", der harrt aus, bis es so weit ist — eine Tugend, die zum bedächtigen norddeutschen Wesen gut passt.',
+      beispiel: 'Töv mol, ick koom glieks na!',
+      beispiel_hd: 'Warte mal, ich komme gleich nach!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-274',
+      ausdruck: 'snieden',
+      hochdeutsch: 'schneiden',
+      bedeutung: '„snieden" heißt „schneiden" im Plattdeutschen — vom Brot über das Fleisch bis zum Garn. Das Wort zeigt die typische niederdeutsche „sn"-Lautung, wo das Hochdeutsche „schn" sagt, ähnlich wie bei „snacken" und „Snee". Wer „sniedt", teilt etwas mit dem Messer. In der bäuerlichen Küche des Nordens wurde viel „sneden": Speck, Brot und Kohl.',
+      beispiel: 'Mudder sniedt dat Brood för dat Avendbrot.',
+      beispiel_hd: 'Mutter schneidet das Brot für das Abendbrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-275',
+      ausdruck: 'Snee',
+      hochdeutsch: 'Schnee',
+      bedeutung: '„Snee" ist das plattdeutsche „Schnee", wieder mit der charakteristischen „sn"-Lautung statt „schn". An der Küste fällt nicht oft „Snee", doch wenn er kommt, sorgt der Wind für mannshohe Wehen. „De eerste Snee" galt früher als Zeichen, dass der Winter ernst wird und Vorräte reichen müssen. Im Plattdeutschen klingt das Wort dem englischen „snow" sehr nah.',
+      beispiel: 'Hüüt Nacht is de eerste Snee fullen.',
+      beispiel_hd: 'Heute Nacht ist der erste Schnee gefallen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-276',
+      ausdruck: 'Water',
+      hochdeutsch: 'Wasser',
+      bedeutung: '„Water" ist das plattdeutsche Wort für „Wasser" — fast identisch mit dem englischen „water". An der wasserreichen Küste, zwischen Nordsee, Ostsee, Flüssen und Marschgräben, ist „Water" allgegenwärtig. „Hooch Water" meint die Flut, „bi Water un Brood" die karge Kost. Die enge Verwandtschaft mit dem Englischen zeigt sich an diesem Alltagswort besonders deutlich.',
+      beispiel: 'Hool mol en Emmer Water ut\'n Born!',
+      beispiel_hd: 'Hol mal einen Eimer Wasser aus dem Brunnen!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-277',
+      ausdruck: 'Tüter',
+      hochdeutsch: 'Tüte / Beutel',
+      bedeutung: '„Tüter" (auch „Tüüt") ist im Plattdeutschen eine Tüte oder ein Beutel, etwa die Einkaufstüte vom Bäcker oder Kaufmann. Das Wort gehört zum norddeutschen Alltag und klingt im Hochdeutschen als „Tüte" wieder. Wer mit dem „Tüter" vom Markt kommt, hat eingekauft. Manchmal nennt man auch eine spitze Papiertüte für Bonbons so.',
+      beispiel: 'Pack de Eier man vörsichtig in\'n Tüter!',
+      beispiel_hd: 'Pack die Eier mal vorsichtig in die Tüte!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-278',
+      ausdruck: 'Appel',
+      hochdeutsch: 'Apfel',
+      bedeutung: '„Appel" ist der plattdeutsche „Apfel" — wieder fast gleich dem englischen „apple". In den Obstgärten des Alten Landes südlich von Hamburg, dem größten zusammenhängenden Obstanbaugebiet Nordeuropas, wächst der „Appel" zu Tausenden. „En Appel un en Ei" bedeutet, etwas kostet fast nichts. Das Wort gehört zum ältesten plattdeutschen Wortschatz.',
+      beispiel: 'In\'t Ole Land plückt se de besten Appels.',
+      beispiel_hd: 'Im Alten Land pflücken sie die besten Äpfel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-279',
+      ausdruck: 'Melk',
+      hochdeutsch: 'Milch',
+      bedeutung: '„Melk" ist das plattdeutsche Wort für „Milch", hörbar verwandt mit englisch „milk" und niederländisch „melk". In den Marsch- und Geestregionen Norddeutschlands war die Milchwirtschaft jahrhundertelang Lebensgrundlage; Holstein und Ostfriesland sind bis heute Milchländer. „En Glas Melk" trank man früher frisch von der Kuh. Das Wort ist tief im bäuerlichen Norden verwurzelt.',
+      beispiel: 'De Buur bringt jeden Morgen frische Melk.',
+      beispiel_hd: 'Der Bauer bringt jeden Morgen frische Milch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-280',
+      ausdruck: 'Köök',
+      hochdeutsch: 'Kuchen',
+      bedeutung: '„Köök" (auch „Koken") ist im Plattdeutschen der „Kuchen" — nicht zu verwechseln mit „Kööken", der Küche. Zum Sonntagskaffee gehört im Norden ein gutes Stück „Köök", oft Butterkuchen oder Streuselkuchen. Bei Familienfeiern wird reichlich „Köök" gebacken. Das Wort klingt dem englischen „cake" und niederländischen „koek" nah.',
+      beispiel: 'To\'n Kaffee gifft dat en lecker Stück Köök.',
+      beispiel_hd: 'Zum Kaffee gibt es ein leckeres Stück Kuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-281',
+      ausdruck: 'Beer',
+      hochdeutsch: 'Bier',
+      bedeutung: '„Beer" ist das plattdeutsche „Bier" — wie englisch „beer". In den Hansestädten Hamburg, Bremen und Lübeck war Bier seit dem Mittelalter ein wichtiges Handels- und Exportgut; das norddeutsche Bier wurde bis ins Baltikum verschifft. Ein kühles „Beer" nach getaner Arbeit gehört zum Norden wie der Wind. „En Lütt un en Beer" ist die klassische Hafenbestellung.',
+      beispiel: 'Na de Schicht smeckt en köhlt Beer am besten.',
+      beispiel_hd: 'Nach der Schicht schmeckt ein kühles Bier am besten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-282',
+      ausdruck: 'Disch',
+      hochdeutsch: 'Tisch',
+      bedeutung: '„Disch" ist der plattdeutsche „Tisch". „An\'n Disch!" ruft man, wenn das Essen fertig ist und alle sich setzen sollen. Der große Esstisch in der Bauernküche war der Mittelpunkt des Familienlebens, wo gegessen, geredet und auch gearbeitet wurde. Das Wort gehört zum alltäglichen plattdeutschen Wortschatz rund ums Haus.',
+      beispiel: 'Kumm an\'n Disch, dat Eten is fardig!',
+      beispiel_hd: 'Komm an den Tisch, das Essen ist fertig!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-283',
+      ausdruck: 'Stohl',
+      hochdeutsch: 'Stuhl',
+      bedeutung: '„Stohl" ist im Plattdeutschen der „Stuhl". „Sett di op\'n Stohl!" heißt „Setz dich auf den Stuhl!". In der guten Stube standen früher die schweren, dunklen Holzstühle, die oft über Generationen vererbt wurden. Das Wort zeigt die typische plattdeutsche Vokalfärbung gegenüber dem Hochdeutschen und gehört zum Grundwortschatz des Hauses.',
+      beispiel: 'Trekk di en Stohl ran un sett di to uns!',
+      beispiel_hd: 'Zieh dir einen Stuhl heran und setz dich zu uns!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-284',
+      ausdruck: 'Döör',
+      hochdeutsch: 'Tür',
+      bedeutung: '„Döör" ist die plattdeutsche „Tür" — verwandt mit englisch „door". „Maak de Döör to!" („Mach die Tür zu!") hört man oft, wenn der kalte Nordwind hereinzieht. Die geteilte Klöntür, deren obere Hälfte man zum Schnacken mit dem Nachbarn öffnen konnte, ist ein typisches Merkmal alter norddeutscher Bauernhäuser. Das Wort gehört zum Kern des Haushaltsplatts.',
+      beispiel: 'Maak de Döör to, dat tütt hier so!',
+      beispiel_hd: 'Mach die Tür zu, es zieht hier so!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-285',
+      ausdruck: 'Finster',
+      hochdeutsch: 'Fenster',
+      bedeutung: '„Finster" ist das plattdeutsche „Fenster". „Kiek ut\'t Finster!" heißt „Schau aus dem Fenster!". In den reetgedeckten Häusern des Nordens waren die kleinen Sprossenfenster wichtig, um Licht hereinzulassen und doch den Wind draußen zu halten. Das Wort gehört zum täglichen Plattdeutsch und beschreibt einen festen Teil jedes Hauses.',
+      beispiel: 'Maak dat Finster op, hier is dat to warm!',
+      beispiel_hd: 'Mach das Fenster auf, hier ist es zu warm!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-286',
+      ausdruck: 'Stünn',
+      hochdeutsch: 'Stunde',
+      bedeutung: '„Stünn" ist im Plattdeutschen die „Stunde". „En halve Stünn" heißt „eine halbe Stunde", „in en Stünn" („in einer Stunde") gibt eine Zeitspanne an. Der bedächtige Norddeutsche lässt sich Zeit: „Dat duert noch en Stünn" sagt er gelassen, wenn etwas nicht zu hetzen ist. Das Wort gehört zum Zeit- und Alltagswortschatz und ist im ganzen niederdeutschen Sprachraum gebräuchlich. Es zeigt die eigene Lautung des Niederdeutschen.',
+      beispiel: 'Töv noch en Stünn, denn is dat Brood fardig.',
+      beispiel_hd: 'Warte noch eine Stunde, dann ist das Brot fertig.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-287',
+      ausdruck: 'Avend',
+      hochdeutsch: 'Abend',
+      bedeutung: '„Avend" ist der plattdeutsche „Abend" — verwandt mit englisch „evening". „Goden Avend!" ist der höfliche Abendgruß im Norden. Am „Avend" kam die Familie nach getaner Arbeit zusammen, aß das „Avendbrot" und saß noch beim Klönen beisammen. Das Wort gehört zu den Tageszeit-Vokabeln, die jeder Plattschnacker täglich gebraucht.',
+      beispiel: 'Goden Avend tosamen, kummt rin un sett ju!',
+      beispiel_hd: 'Guten Abend zusammen, kommt rein und setzt euch!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'p-288',
+      ausdruck: 'Morrn',
+      hochdeutsch: 'Morgen',
+      bedeutung: '„Morrn" (auch „Morgen") ist im Plattdeutschen der „Morgen" und kann auch „morgen" als Zeitangabe meinen. „Goden Morrn!" sagt man früh am Tage, wobei im echten Norden das „Moin" jeder Tageszeit den Vorzug hat. „Morrn is ok noch en Dag" ist eine norddeutsche Lebensweisheit: Was heute nicht fertig wird, geht morgen auch noch. Ein typisches Alltagswort.',
+      beispiel: 'Morrn fohrt wi na\'n Markt, wenn dat Wedder hollt.',
+      beispiel_hd: 'Morgen fahren wir zum Markt, wenn das Wetter hält.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-289',
+      ausdruck: 'Nacht',
+      hochdeutsch: 'Nacht',
+      bedeutung: '„Nacht" ist im Plattdeutschen die „Nacht" — fast gleich dem Hochdeutschen, doch mit eigener Färbung. „Goden Nacht!" wünscht man vor dem Schlafengehen. Auf See war die „Nacht" für die Seeleute eine Zeit der Wachen und der Gefahr, an Land eine Zeit der Ruhe. „To Nacht eten" hieß zu Abend essen. Das Wort gehört zu den ältesten der Sprache.',
+      beispiel: 'Goden Nacht, slaap good un drööm wat Schööns!',
+      beispiel_hd: 'Gute Nacht, schlaf gut und träume etwas Schönes!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'p-290',
+      ausdruck: 'Hand',
+      hochdeutsch: 'Hand',
+      bedeutung: '„Hand" ist im Plattdeutschen die „Hand", gleich dem englischen „hand". „Giff mi de Hand!" besiegelte früher manchen Handel kräftiger als jeder Vertrag. Die schwielige „Hand" des Fischers, Bauern oder Hafenarbeiters stand für ehrliche Arbeit. „Hand un Foot hebben" heißt, dass etwas durchdacht und solide ist. Ein Grundwort des Körperplatts.',
+      beispiel: 'Giff mi de Hand dorop, denn gellt dat!',
+      beispiel_hd: 'Gib mir die Hand darauf, dann gilt es!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-291',
+      ausdruck: 'Foot',
+      hochdeutsch: 'Fuß',
+      bedeutung: '„Foot" ist der plattdeutsche „Fuß", verwandt mit englisch „foot". „To Foot gahn" heißt zu Fuß gehen. Auf den weiten, flachen Wegen durch Marsch und Geest legte man früher viel „to Foot" zurück. „Op egen Fööt stahn" bedeutet, selbstständig und unabhängig zu sein — eine geschätzte Tugend im selbstbewussten Norden. Ein Grundwort des Körperplatts.',
+      beispiel: 'Wi gaht to Foot na\'t Dörp röver.',
+      beispiel_hd: 'Wir gehen zu Fuß ins Dorf hinüber.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-292',
+      ausdruck: 'Kopp',
+      hochdeutsch: 'Kopf',
+      bedeutung: '„Kopp" ist der plattdeutsche „Kopf". „He hett en dicken Kopp" heißt, jemand ist störrisch oder dickköpfig — eine Eigenschaft, die man Norddeutschen gern nachsagt. „Den Kopp hoochhollen" bedeutet, trotz Widrigkeiten die Haltung zu bewahren. Ob beim Denken oder beim Durchhalten: der „Kopp" steckt in vielen plattdeutschen Redensarten. Ein zentrales Körperwort.',
+      beispiel: 'Holl den Kopp hooch, dat warrt al wedder!',
+      beispiel_hd: 'Halt den Kopf hoch, das wird schon wieder!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-293',
+      ausdruck: 'Ogen',
+      hochdeutsch: 'Augen',
+      bedeutung: '„Ogen" sind im Plattdeutschen die „Augen", verwandt mit niederländisch „ogen" und englisch „eyes" (von älterem „eagan"). „Maak de Ogen op!" heißt „Mach die Augen auf!" — sei aufmerksam. Der Seemann brauchte scharfe „Ogen", um bei Nebel und Sturm den Kurs zu halten. „Ünner veer Ogen" snackt man, wenn etwas vertraulich besprochen wird. Ein Grundwort des Körperplatts.',
+      beispiel: 'Maak de Ogen op, dor kummt en Wagen!',
+      beispiel_hd: 'Mach die Augen auf, da kommt ein Wagen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-294',
+      ausdruck: 'Vadder',
+      hochdeutsch: 'Vater',
+      bedeutung: '„Vadder" ist im Plattdeutschen der „Vater", verwandt mit englisch „father". Im traditionellen norddeutschen Bauernhaushalt war der „Vadder" das Oberhaupt, doch die Mudder regierte die Kööken. „Mien Vadder" sagt man von sich aus liebevoll. Das Wort wird teils auch für den Paten gebraucht. Es gehört zum Kern des Familienplatts und ist im ganzen Norden verbreitet.',
+      beispiel: 'Mien Vadder hett dat Hus noch sülvst boot.',
+      beispiel_hd: 'Mein Vater hat das Haus noch selbst gebaut.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-295',
+      ausdruck: 'Mudder',
+      hochdeutsch: 'Mutter',
+      bedeutung: '„Mudder" ist die plattdeutsche „Mutter", verwandt mit englisch „mother". In der norddeutschen Familie war die „Mudder" die Seele des Hauses — sie kochte, hielt zusammen und hatte oft das letzte Wort in häuslichen Dingen. „Mudders Köök" („Mutters Kuchen") gilt als unübertroffen. Das Wort gehört zum innersten Kern des Familienplatts und klingt warm und vertraut.',
+      beispiel: 'Mudder kakt hüüt Grönkohl för de ganze Familie.',
+      beispiel_hd: 'Mutter kocht heute Grünkohl für die ganze Familie.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-296',
+      ausdruck: 'Grootmudder',
+      hochdeutsch: 'Großmutter / Oma',
+      bedeutung: '„Grootmudder" ist die plattdeutsche „Großmutter", wörtlich „große Mutter". Bei der „Grootmudder" gab es Köök, Geschichten und Geborgenheit; sie hütete oft die Kinder, während die Eltern arbeiteten. Viele Norddeutsche haben ihr Platt erst bei „Grootmudder" und „Grootvadder" gelernt, denn die ältere Generation sprach es noch im Alltag. Ein warmes Wort des Familienplatts.',
+      beispiel: 'Bi Grootmudder gifft\'t jümmers wat Sötes.',
+      beispiel_hd: 'Bei Großmutter gibt es immer etwas Süßes.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-297',
+      ausdruck: 'Grootvadder',
+      hochdeutsch: 'Großvater / Opa',
+      bedeutung: '„Grootvadder" ist der plattdeutsche „Großvater", wörtlich „großer Vater". Der „Grootvadder" erzählte den Enkeln von der Seefahrt, vom Krieg oder von harten Wintern und gab so die Geschichten der Familie weiter. Oft war er es, der den Kindern noch echtes Platt beibrachte. Das Wort gehört zum Familienplatt und steht für Erfahrung, Erinnerung und die Verbindung der Generationen.',
+      beispiel: 'Mien Grootvadder vertellt geern vun de See.',
+      beispiel_hd: 'Mein Großvater erzählt gern von der See.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-298',
+      ausdruck: 'Wief',
+      hochdeutsch: 'Frau / Ehefrau',
+      bedeutung: '„Wief" ist im Plattdeutschen die „Frau" oder „Ehefrau", verwandt mit englisch „wife". „Mien Wief" sagt der Norddeutsche von seiner Ehefrau, ohne dass es abwertend gemeint ist — anders als das hochdeutsche „Weib" heute klingt. In den Fischer- und Bauernfamilien war das „Wief" oft diejenige, die den Hof zusammenhielt, wenn der Mann auf See war. Ein altes Wort des Familienplatts.',
+      beispiel: 'Mien Wief un ik sünd al veertig Johr tosamen.',
+      beispiel_hd: 'Meine Frau und ich sind schon vierzig Jahre zusammen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-299',
+      ausdruck: 'Kinner',
+      hochdeutsch: 'Kinder',
+      bedeutung: '„Kinner" sind im Plattdeutschen die „Kinder" — das „nd" wird zu „nn", wie so oft im Niederdeutschen. „Uns Kinner" sagt man von den eigenen Kindern. In den großen Familien früherer Zeiten wuchsen viele „Kinner" zusammen auf, halfen auf dem Hof und lernten das Platt ganz nebenbei. Das Wort gehört zum Herzen des Familienplatts und klingt liebevoll.',
+      beispiel: 'De Kinner speelt buten op\'n Hoff.',
+      beispiel_hd: 'Die Kinder spielen draußen auf dem Hof.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-300',
+      ausdruck: 'Broder',
+      hochdeutsch: 'Bruder',
+      bedeutung: '„Broder" ist im Plattdeutschen der „Bruder", verwandt mit englisch „brother". „Mien Broder" sagt man vom eigenen Bruder. In den oft kinderreichen norddeutschen Familien war der ältere „Broder" Vorbild und manchmal Aufpasser zugleich. Das Wort gehört zum Familienplatt und zeigt wieder die enge Verwandtschaft des Niederdeutschen mit dem Englischen. Es klingt vertraut und warm.',
+      beispiel: 'Mien Broder is Fischer worrn, jüst as uns Vadder.',
+      beispiel_hd: 'Mein Bruder ist Fischer geworden, genau wie unser Vater.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-301',
+      ausdruck: 'Süster',
+      hochdeutsch: 'Schwester',
+      bedeutung: '„Süster" ist im Plattdeutschen die „Schwester", verwandt mit englisch „sister". „Mien lütt Süster" sagt man liebevoll von der jüngeren Schwester. In den großen Familien des Nordens halfen die „Süstern" der Mudder im Haushalt und passten auf die Kleinen auf. Das Wort gehört zum Familienplatt und ist im ganzen niederdeutschen Sprachraum gebräuchlich. Es klingt vertraut und nah.',
+      beispiel: 'Mien Süster wahnt nu in Hamborg.',
+      beispiel_hd: 'Meine Schwester wohnt jetzt in Hamburg.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'p-302',
+      ausdruck: 'Naver',
+      hochdeutsch: 'Nachbar',
+      bedeutung: '„Naver" ist der plattdeutsche „Nachbar", verwandt mit englisch „neighbour". Im Dorf war der „Naver" wichtiger als mancher Verwandte — man half sich bei der Ernte, beim Hausbau und in der Not. „Een goden Naver is mehr weert as en Broder in de Ferns" sagt eine alte Weisheit. Über die geteilte Klöntür hielt man mit dem „Naver" Schnack. Ein soziales Grundwort des Nordens.',
+      beispiel: 'Uns Naver hett uns bi\'n Hauen holpen.',
+      beispiel_hd: 'Unser Nachbar hat uns beim Heuen geholfen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-303',
+      ausdruck: 'Buer',
+      hochdeutsch: 'Bauer',
+      bedeutung: '„Buer" ist im Plattdeutschen der „Bauer" — verwandt mit niederländisch „boer". Auf der fruchtbaren Marsch und der kargen Geest bestellte der „Buer" sein Land oft unter harten Bedingungen, dem Wetter und dem Meer ausgesetzt. Der norddeutsche „Buer" galt als bodenständig, wortkarg und zäh. Viele plattdeutsche Sprichwörter stammen aus seiner Lebenswelt. Ein zentrales Wort der ländlichen Arbeitswelt.',
+      beispiel: 'De Buer fohrt al bi Dau un Dag op\'t Feld.',
+      beispiel_hd: 'Der Bauer fährt schon bei Tau und Tag aufs Feld.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-304',
+      ausdruck: 'arbeiden',
+      hochdeutsch: 'arbeiten',
+      bedeutung: '„arbeiden" heißt „arbeiten" im Plattdeutschen. Der Norddeutsche gilt als fleißig und wortkarg: „Nich lang snacken, arbeiden!" bringt die Mentalität auf den Punkt. Ob auf dem Feld, im Hafen oder auf See — „arbeiden" bestimmte das Leben der einfachen Leute. Wer gut „arbeiden" kann, genießt im Norden mehr Achtung als der, der schön reden kann. Ein Grundwort der Arbeitswelt.',
+      beispiel: 'Wi mött noch bit Avend op\'n Hoff arbeiden.',
+      beispiel_hd: 'Wir müssen noch bis zum Abend auf dem Hof arbeiten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-305',
+      ausdruck: 'Geld',
+      hochdeutsch: 'Geld',
+      bedeutung: '„Geld" ist im Plattdeutschen das „Geld" — gleich geschrieben, doch eigen ausgesprochen. Der sparsame Norddeutsche hält sein „Geld" zusammen: „Wer den Penning nich ehrt, is den Daler nich weert" lautet eine plattdeutsche Variante des Sparspruchs. In den Handelsstädten der Hanse drehte sich vieles ums „Geld", doch Prahlerei damit galt als unfein. Ein wichtiges Alltagswort.',
+      beispiel: 'För so\'n Tüünkraam geev ik keen Geld ut.',
+      beispiel_hd: 'Für so einen Unsinn gebe ich kein Geld aus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-306',
+      ausdruck: 'Penning',
+      hochdeutsch: 'Pfennig / kleine Münze',
+      bedeutung: '„Penning" ist der plattdeutsche „Pfennig", verwandt mit englisch „penny". „Wer den Penning nich ehrt..." mahnt zur Sparsamkeit, die im Norden hochgehalten wird. Der „Penning" stand für das kleinste Geld und damit für den Wert auch der geringsten Dinge. Wer „op den Penning kieken" muss, hat wenig und rechnet genau. Ein altes Wort, das die norddeutsche Sparsamkeit spiegelt.',
+      beispiel: 'He dreiht jeden Penning tweemol üm.',
+      beispiel_hd: 'Er dreht jeden Pfennig zweimal um.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-307',
+      ausdruck: 'gau',
+      hochdeutsch: 'schnell',
+      bedeutung: '„gau" bedeutet „schnell" oder „rasch" im Plattdeutschen. „Maak gau!" heißt „Mach schnell!" und treibt zur Eile an. Trotz des Rufs der Bedächtigkeit kann der Norddeutsche durchaus „gau" sein, wenn es darauf ankommt — etwa wenn die Flut kommt oder das Wetter umschlägt. Das Wort ist kurz, kräftig und im ganzen Norden geläufig. Ein typisches Alltagsadjektiv.',
+      beispiel: 'Maak gau, sünst kriegt wi den Bus nich mehr!',
+      beispiel_hd: 'Mach schnell, sonst kriegen wir den Bus nicht mehr!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-308',
+      ausdruck: 'sutje',
+      hochdeutsch: 'langsam / sachte',
+      bedeutung: '„sutje" (auch „suutje") heißt „langsam", „sachte" oder „immer mit der Ruhe". „Sutje, sutje!" mahnt zur Gelassenheit und passt perfekt zum bedächtigen norddeutschen Wesen. Wer etwas „sutje" angeht, lässt sich nicht hetzen und macht es dafür gründlich. Die Redensart drückt eine ganze Lebenshaltung aus: Hektik bringt nichts, mit Ruhe kommt man auch ans Ziel.',
+      beispiel: 'Sutje mit de jungen Peer — kummt allns to sien Tied!',
+      beispiel_hd: 'Sachte mit den jungen Pferden — alles kommt zu seiner Zeit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-309',
+      ausdruck: 'Dösbaddel',
+      hochdeutsch: 'Dummkopf / Trottel',
+      bedeutung: '„Dösbaddel" ist ein gutmütig-spöttisches plattdeutsches Schimpfwort für einen Dummkopf, Trottel oder Tollpatsch. „So\'n Dösbaddel!" sagt man, wenn jemand etwas Unbedachtes angestellt hat — meist mehr kopfschüttelnd als wirklich böse. Das Wort gehört zu den beliebtesten norddeutschen Schimpfwörtern und klingt durch seinen Stabreim fast liebevoll. Ein Klassiker des plattdeutschen Schimpfens.',
+      beispiel: 'Du oller Dösbaddel, hest dat Solt vergeten!',
+      beispiel_hd: 'Du alter Trottel, hast das Salz vergessen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-310',
+      ausdruck: 'Dussel',
+      hochdeutsch: 'Tollpatsch / Dummkopf',
+      bedeutung: '„Dussel" ist ein mildes plattdeutsches Schimpfwort für einen unaufmerksamen, etwas vertrottelten Menschen. „So\'n oller Dussel!" sagt man halb tadelnd, halb belustigt über jemanden, der gerade etwas Ungeschicktes getan hat. Verwandt ist es mit „döösig" (benommen, verschlafen). Das Wort ist im ganzen Norden verbreitet und gehört zum Standardrepertoire des gutmütigen plattdeutschen Schimpfens.',
+      beispiel: 'Nu kiek di den Dussel an, he hett sik verlopen!',
+      beispiel_hd: 'Jetzt schau dir den Dummkopf an, er hat sich verlaufen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-311',
+      ausdruck: 'Bangbüx',
+      hochdeutsch: 'Angsthase / Feigling',
+      bedeutung: '„Bangbüx" ist ein anschauliches plattdeutsches Schimpfwort für einen Angsthasen oder Feigling — wörtlich „Angsthose". Wer sich nicht traut, ins kalte Nordseewasser zu springen oder bei Wind hinauszufahren, ist eine „Bangbüx". Das Wort ist mehr neckend als verletzend gemeint und gehört zum festen Bestand des norddeutschen Wortschatzes. Es zeigt den bildhaften Witz, mit dem das Plattdeutsche Charaktereigenschaften beschreibt.',
+      beispiel: 'Wees keen Bangbüx un spring man rin in\'t Water!',
+      beispiel_hd: 'Sei kein Angsthase und spring mal rein ins Wasser!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-312',
+      ausdruck: 'Lögenbüdel',
+      hochdeutsch: 'Lügner / Schwindler',
+      bedeutung: '„Lögenbüdel" ist das plattdeutsche Schimpfwort für einen Lügner oder Schwindler — wörtlich „Lügenbeutel". Wer ständig flunkert und Geschichten erfindet, ist ein „Lögenbüdel". Das Wort ist kräftig und unmissverständlich, klingt aber durch seine bildhafte Zusammensetzung typisch plattdeutsch. Ehrlichkeit gilt im Norden viel, und so trifft dieser Vorwurf einen wunden Punkt. Ein bildreiches Schimpfwort.',
+      beispiel: 'Glööv den Lögenbüdel keen Woort, he tüünt jümmers!',
+      beispiel_hd: 'Glaub dem Lügner kein Wort, er schwindelt immer!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-313',
+      ausdruck: 'Schietbüdel',
+      hochdeutsch: 'Frechdachs / kleiner Schlingel',
+      bedeutung: '„Schietbüdel" ist ein zwiespältiges plattdeutsches Wort: Mal Schimpfwort für einen Mistkerl, mal liebevoll-tadelnde Anrede für einen frechen kleinen Schlingel. „Du lütt Schietbüdel!" sagt man fast zärtlich zu einem aufgeweckten Kind, das Unfug treibt. Der Ton macht die Bedeutung. Das Wort gehört zum norddeutschen Alltag und zeigt, wie nah Schelte und Zuneigung im Platt beieinanderliegen.',
+      beispiel: 'Du lütt Schietbüdel, wat hest du nu wedder anstellt?',
+      beispiel_hd: 'Du kleiner Schlingel, was hast du jetzt wieder angestellt?',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-314',
+      ausdruck: 'Klugschieter',
+      hochdeutsch: 'Besserwisser',
+      bedeutung: '„Klugschieter" ist ein deftiges plattdeutsches Schimpfwort für einen Besserwisser — einen, der alles besser weiß und ungefragt seine Meinung kundtut. „So\'n oller Klugschieter!" sagt man kopfschüttelnd über jemanden, der ständig belehrt. Im Norden, wo man wenig Worte und viel Taten schätzt, ist der „Klugschieter" wenig beliebt. Das Wort ist derb und treffsicher zugleich und gehört zum reichen Repertoire des plattdeutschen Schimpfens.',
+      beispiel: 'Wees keen Klugschieter, maak dat man eerst sülvst beter!',
+      beispiel_hd: 'Sei kein Besserwisser, mach es erst mal selbst besser!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'p-315',
+      ausdruck: 'fröhlich',
+      hochdeutsch: 'froh / vergnügt',
+      bedeutung: '„fröhlich" (auch „fröhli") bedeutet im Plattdeutschen „froh", „vergnügt" oder „gut gelaunt". „He is jümmers fröhlich" sagt man von einem heiteren Menschen. Auch wenn dem Norddeutschen ein eher nüchternes Wesen nachgesagt wird, kennt das Platt durchaus die Freude — etwa beim Fest, beim Schnack oder bei einem guten „Beer". Das Wort gehört zum Gefühlswortschatz der Sprache.',
+      beispiel: 'Na de gode Naricht weern all fröhlich tomood.',
+      beispiel_hd: 'Nach der guten Nachricht waren alle froh gestimmt.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-316',
+      ausdruck: 'truurig',
+      hochdeutsch: 'traurig',
+      bedeutung: '„truurig" heißt „traurig" im Plattdeutschen. „Wat büst du so truurig?" fragt man einen Niedergeschlagenen. Der wortkarge Norddeutsche zeigt Kummer oft nicht offen, doch das Platt hat die Worte dafür. In den schwermütigen Liedern und Geschichten der Küste, etwa bei Theodor Storm, klingt diese „truurige" Saite immer wieder an. Das Wort gehört zum Gefühlswortschatz und drückt stille Wehmut aus.',
+      beispiel: 'Mi is ganz truurig tomood, sietdem he weg is.',
+      beispiel_hd: 'Mir ist ganz traurig zumute, seitdem er fort ist.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-317',
+      ausdruck: 'bang',
+      hochdeutsch: 'ängstlich / bange',
+      bedeutung: '„bang" bedeutet „ängstlich" oder „bange" im Plattdeutschen. „Mi is bang" heißt „Mir ist angst". Aus diesem Wort leitet sich auch die „Bangbüx" ab, der Angsthase. Wenn bei Sturm die See tobte und die Männer draußen waren, wurde manch einem an Land „bang" ums Herz. Das Wort gehört zum Gefühlswortschatz des Plattdeutschen und ist im ganzen Norden geläufig. Es klingt schlicht und eindringlich.',
+      beispiel: 'Bi den Storm op See weer mi richtig bang.',
+      beispiel_hd: 'Bei dem Sturm auf See war mir richtig bange.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-318',
+      ausdruck: 'gnatterig',
+      hochdeutsch: 'mürrisch / schlecht gelaunt',
+      bedeutung: '„gnatterig" beschreibt im Plattdeutschen einen mürrischen, gereizten oder schlecht gelaunten Menschen. „Wat büst du hüüt gnatterig!" sagt man zu jemandem, der mit dem falschen Fuß aufgestanden ist und an allem herumnörgelt. Das Wort klingt lautmalerisch nach dem mürrischen Gemurmel selbst. Es gehört zum bildhaften Gefühlswortschatz des Nordens und trifft den Brummbär auf den Punkt.',
+      beispiel: 'Vör\'n eersten Kaffee is he jümmers gnatterig.',
+      beispiel_hd: 'Vor dem ersten Kaffee ist er immer mürrisch.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-319',
+      ausdruck: 'vergnöögt',
+      hochdeutsch: 'vergnügt / zufrieden',
+      bedeutung: '„vergnöögt" heißt im Plattdeutschen „vergnügt", „zufrieden" oder „heiter". „He sitt vergnöögt bi sien Beer" beschreibt einen, der es sich behaglich macht und mit der Welt im Reinen ist. Diese stille Zufriedenheit, das Genießen kleiner Dinge, passt gut zum norddeutschen Gemüt. Das Wort gehört zum Gefühlswortschatz und drückt ein ruhiges, ungetrübtes Wohlbehagen aus.',
+      beispiel: 'Na\'t Eten seet Opa ganz vergnöögt in\'n Strandkorb.',
+      beispiel_hd: 'Nach dem Essen saß Opa ganz vergnügt im Strandkorb.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-320',
+      ausdruck: 'een',
+      hochdeutsch: 'eins',
+      bedeutung: '„een" ist im Plattdeutschen die Zahl „eins" und zugleich der unbestimmte Artikel „ein" — verwandt mit englisch „one". „Een Beer, bitte!" bestellt man am Tresen. „Een na\'t anner" heißt „eins nach dem anderen", also der Reihe nach. Das Wort gehört zum Grundwortschatz und begegnet einem im Norden auf Schritt und Tritt. Es ist eines der ersten Wörter, die man beim Plattlernen aufschnappt.',
+      beispiel: 'Een na\'t anner, denn klappt dat ok!',
+      beispiel_hd: 'Eins nach dem anderen, dann klappt es auch!',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-321',
+      ausdruck: 'twee',
+      hochdeutsch: 'zwei',
+      bedeutung: '„twee" ist die plattdeutsche „zwei" — verwandt mit englisch „two" und niederländisch „twee". „Twee Lütt un Lütt" bestellt man, wenn zwei das Hafengetränk aus Bier und Korn wollen. Das Wort zeigt die typische „tw"-Lautung des Niederdeutschen, wo das Hochdeutsche „zw" sagt. „twee" gehört zum Grundwortschatz der Zahlen und ist im ganzen Norden geläufig.',
+      beispiel: 'Ick nehm twee Fischbrötchen mit op de Reis.',
+      beispiel_hd: 'Ich nehme zwei Fischbrötchen mit auf die Reise.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-322',
+      ausdruck: 'dree',
+      hochdeutsch: 'drei',
+      bedeutung: '„dree" ist die plattdeutsche „drei" — verwandt mit englisch „three". „Dree Tassen Tee" sind in Ostfriesland Pflicht, sonst gilt man als unhöflich. Das Wort zeigt wieder die enge Verwandtschaft des Niederdeutschen mit dem Englischen und gehört zum Grundwortschatz der Zahlen. Wer im Norden zählen lernt, beginnt mit „een, twee, dree". Ein vertrautes Alltagswort.',
+      beispiel: 'Dree Daag bleev de Storm, denn weer he dörbi.',
+      beispiel_hd: 'Drei Tage blieb der Sturm, dann war er vorbei.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-323',
+      ausdruck: 'söss',
+      hochdeutsch: 'sechs',
+      bedeutung: '„söss" ist die plattdeutsche „sechs". „De Klock is söss" heißt „Es ist sechs Uhr". Das Wort zeigt die eigene niederdeutsche Lautung gegenüber dem Hochdeutschen. Um „söss" Uhr morgens begann auf dem Bauernhof und im Hafen oft schon die Arbeit. „söss" gehört zum Grundwortschatz der Zahlen und ist im ganzen Norden geläufig. Wer Platt zählt, kommt an dieser Zahl nicht vorbei.',
+      beispiel: 'Üm söss Klock geiht dat al los op\'n Hoff.',
+      beispiel_hd: 'Um sechs Uhr geht es schon los auf dem Hof.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-324',
+      ausdruck: 'teihn',
+      hochdeutsch: 'zehn',
+      bedeutung: '„teihn" ist die plattdeutsche „zehn" — verwandt mit englisch „ten". Das Wort beschließt die erste Zehnerreihe beim Zählen: „een, twee, dree ... bit teihn". Die eigentümliche Schreibung mit „ei" gibt den langen Vokal des Niederdeutschen wieder. „teihn" gehört zum Grundwortschatz der Zahlen und ist im ganzen norddeutschen Sprachraum gebräuchlich. Ein vertrautes Wort beim Plattlernen.',
+      beispiel: 'Bit teihn kann de lütt Deern al tellen.',
+      beispiel_hd: 'Bis zehn kann das kleine Mädchen schon zählen.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-325',
+      ausdruck: 'Fofftig',
+      hochdeutsch: 'fünfzig',
+      bedeutung: '„Fofftig" ist die plattdeutsche „fünfzig". „He is al över fofftig" sagt man von einem Mann jenseits der Lebensmitte. Das Wort zeigt die kräftige, vom Hochdeutschen deutlich abweichende Lautung des Niederdeutschen bei den Zehnerzahlen. „Fofftig" gehört zum Zahlenwortschatz und begegnet einem etwa bei Altersangaben oder beim Rechnen mit Geld. Ein typisch plattdeutsch klingendes Zahlwort.',
+      beispiel: 'Mien Naver warrt nu fofftig Johr.',
+      beispiel_hd: 'Mein Nachbar wird jetzt fünfzig Jahre.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'p-326',
+      ausdruck: 'Wind',
+      hochdeutsch: 'Wind',
+      bedeutung: '„Wind" ist im Plattdeutschen der „Wind" — gleich dem englischen „wind". An der Küste ist der „Wind" ein ständiger Begleiter: mal als steife Brise, mal als Orkan, der die Sturmfluten treibt. „De Wind weiht stief vun West" hört man oft. Der „Wind" prägt das Wetter, die Landschaft und das Leben der Menschen im Norden. Kaum ein Wort ist hier so allgegenwärtig.',
+      beispiel: 'De Wind weiht hüüt stief vun de See her.',
+      beispiel_hd: 'Der Wind weht heute steif von der See her.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-327',
+      ausdruck: 'See',
+      hochdeutsch: 'Meer / See',
+      bedeutung: '„See" ist im Plattdeutschen das „Meer" — „op See gahn" heißt „zur See fahren". Die „See" gibt den Menschen an der Küste Nahrung und Arbeit, fordert aber auch ihren Tribut bei Sturm und Flut. Generationen von Seeleuten fuhren „op See", manche kehrten nicht zurück. Die „See" ist Lebensraum, Schicksal und Sehnsuchtsort zugleich. Kaum ein Wort prägt den Norden so sehr.',
+      beispiel: 'Mien Grootvadder is sien Leven lang op See faren.',
+      beispiel_hd: 'Mein Großvater ist sein Leben lang zur See gefahren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-328',
+      ausdruck: 'Strand',
+      hochdeutsch: 'Strand',
+      bedeutung: '„Strand" ist im Plattdeutschen der „Strand" — der Saum aus Sand zwischen Land und See. Am „Strand" der Nord- und Ostseeinseln stehen die Strandkörbe in Reih und Glied, suchen Kinder nach Muscheln und gehen Spaziergänger gegen den Wind an. Der „Strand" ist Erholungsort und Sehnsuchtsziel für Millionen. Auch Strandgut, das die See anspült, gehörte früher dem, der es fand. Ein vertrautes Küstenwort.',
+      beispiel: 'An\'n Strand söcht de Kinner na Bossteen.',
+      beispiel_hd: 'Am Strand suchen die Kinder nach Bernstein.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-329',
+      ausdruck: 'Boom',
+      hochdeutsch: 'Baum',
+      bedeutung: '„Boom" ist im Plattdeutschen der „Baum" — verwandt mit niederländisch „boom". Im windgepeitschten Norden wachsen die Bäume oft schief, vom ständigen Westwind geformt — die „Windflüchter" auf Sylt sind berühmt. Ein einzelner „Boom" in der weiten Marsch ist eine Landmarke. Das Wort gehört zum Naturwortschatz und ist im ganzen niederdeutschen Sprachraum verbreitet. Es klingt schlicht und alt.',
+      beispiel: 'De ole Boom vör\'t Hus is vun\'n Wind ganz scheef.',
+      beispiel_hd: 'Der alte Baum vor dem Haus ist vom Wind ganz schief.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-330',
+      ausdruck: 'Vagel',
+      hochdeutsch: 'Vogel',
+      bedeutung: '„Vagel" ist im Plattdeutschen der „Vogel" — verwandt mit englisch „fowl". Im Wattenmeer rasten Millionen Zugvögel, und über den Marschen kreisen Möwen und Kiebitze. „En losen Vagel" nennt man scherzhaft einen leichtfertigen Menschen. Das Wort gehört zum Naturwortschatz und begegnet einem im vogelreichen Norden überall. Es zeigt wieder die alte Verwandtschaft des Niederdeutschen mit dem Englischen.',
+      beispiel: 'Op\'t Watt rasten dusend Vagels bi de Ebb.',
+      beispiel_hd: 'Auf dem Watt rasten tausend Vögel bei der Ebbe.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-331',
+      ausdruck: 'Peerd',
+      hochdeutsch: 'Pferd',
+      bedeutung: '„Peerd" (auch „Peer") ist im Plattdeutschen das „Pferd". Auf den Höfen und in der Marsch zog das „Peerd" früher Pflug und Wagen; die schweren Kaltblüter waren unentbehrlich. „Dat beste Peerd in\'n Stall" sagt man von der tüchtigsten Person. Das Wort gehört zum ländlichen Arbeits- und Naturwortschatz. Auf vielen norddeutschen Höfen werden bis heute Pferde gehalten. Ein altes, vertrautes Wort.',
+      beispiel: 'Dat Peerd treckt den Wagen dörch den deepen Sand.',
+      beispiel_hd: 'Das Pferd zieht den Wagen durch den tiefen Sand.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-332',
+      ausdruck: 'Koh',
+      hochdeutsch: 'Kuh',
+      bedeutung: '„Koh" ist im Plattdeutschen die „Kuh" — verwandt mit englisch „cow". Auf den fetten Weiden der Marsch und in Holstein grasen die Kühe, die Milch, Butter und Käse geben. Die schwarzbunte Holsteiner „Koh" ist weltberühmt. „So dumm as en Koh" sagt man wenig schmeichelhaft. Das Wort gehört zum bäuerlichen Wortschatz und ist im milchwirtschaftlich geprägten Norden allgegenwärtig. Ein altes Grundwort.',
+      beispiel: 'De Kö staht op de Weid an\'n Diek.',
+      beispiel_hd: 'Die Kühe stehen auf der Weide am Deich.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-333',
+      ausdruck: 'Hatt',
+      hochdeutsch: 'Herz',
+      bedeutung: '„Hatt" ist im Plattdeutschen das „Herz" — verwandt mit englisch „heart". „Rüm Hatt", das weite Herz, steht sogar im Wahlspruch Schleswig-Holsteins. „Mi blött dat Hatt" heißt „Mir blutet das Herz". Der nüchterne Norddeutsche trägt sein „Hatt" nicht auf der Zunge, doch wenn er es öffnet, meint er es ehrlich. Das Wort gehört zum Körper- und Gefühlswortschatz und klingt warm.',
+      beispiel: 'Dat geiht mi to Hatten, wenn ik dat höör.',
+      beispiel_hd: 'Das geht mir zu Herzen, wenn ich das höre.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-334',
+      ausdruck: 'Been',
+      hochdeutsch: 'Bein',
+      bedeutung: '„Been" ist im Plattdeutschen das „Bein" — verwandt mit niederländisch „been". „He kann sik nich op de Been hollen" heißt, jemand kann sich kaum auf den Beinen halten. Nach langer Wattwanderung sind die „Been" müde. Das Wort gehört zum Körperwortschatz und ist im ganzen niederdeutschen Sprachraum gebräuchlich. Es zeigt die typische Lautung des Niederdeutschen gegenüber dem Hochdeutschen.',
+      beispiel: 'Na de lange Tour doot mi de Been weh.',
+      beispiel_hd: 'Nach der langen Tour tun mir die Beine weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-335',
+      ausdruck: 'Hannen',
+      hochdeutsch: 'Hände',
+      bedeutung: '„Hannen" sind im Plattdeutschen die „Hände" — die Mehrzahl von „Hand", mit dem typischen Wandel von „nd" zu „nn". „Mit beide Hannen tofaten" heißt kräftig zupacken, eine im Norden geschätzte Eigenschaft. Die rauen „Hannen" des Fischers und Bauern erzählten von harter Arbeit. Das Wort gehört zum Körperwortschatz und steht oft sinnbildlich für Tatkraft und Fleiß. Ein bodenständiges Wort.',
+      beispiel: 'Faat mit beide Hannen to, denn geiht dat gau!',
+      beispiel_hd: 'Pack mit beiden Händen zu, dann geht es schnell!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-336',
+      ausdruck: 'fiern',
+      hochdeutsch: 'feiern',
+      bedeutung: '„fiern" heißt „feiern" im Plattdeutschen. Auch wenn der Norddeutsche als zurückhaltend gilt, weiß er ein Fest zu schätzen: Bei Hochzeit, Erntedank oder Schützenfest wird ausgiebig „fiert". „Wi fiert hüüt Avend" kündigt ein geselliges Beisammensein an. Das Wort gehört zum Festwortschatz und zeigt, dass hinter der nüchternen Fassade durchaus Lebensfreude steckt. Ein gern gebrauchtes Wort bei Anlässen.',
+      beispiel: 'Wi fiert hüüt Avend Geburtsdag bi Tante Greta.',
+      beispiel_hd: 'Wir feiern heute Abend Geburtstag bei Tante Greta.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'p-337',
+      ausdruck: 'Hochtiet',
+      hochdeutsch: 'Hochzeit',
+      bedeutung: '„Hochtiet" ist im Plattdeutschen die „Hochzeit" — wörtlich die „hohe Zeit". Eine „Hochtiet" war auf dem Lande früher ein großes Fest, zu dem das ganze Dorf zusammenkam und das tagelang dauern konnte. Es wurde getanzt, gegessen und reichlich getrunken. Das Wort gehört zum Festwortschatz und steht für einen der wichtigsten Anlässe im Leben. Es klingt feierlich und alt zugleich.',
+      beispiel: 'To de Hochtiet kummt dat ganze Dörp tosamen.',
+      beispiel_hd: 'Zur Hochzeit kommt das ganze Dorf zusammen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'p-338',
+      ausdruck: 'Wiehnachten',
+      hochdeutsch: 'Weihnachten',
+      bedeutung: '„Wiehnachten" ist das plattdeutsche „Weihnachten". In den dunklen, oft stürmischen Tagen des Nordens leuchten zu „Wiehnachten" die Fenster der reetgedeckten Häuser besonders warm. Es gibt Grünkohl, Klaben und Geschichten am Kachelofen. „Frohe Wiehnachten!" wünscht man sich. Das Wort gehört zum Festwortschatz und steht für Familie, Geborgenheit und Besinnung mitten im norddeutschen Winter.',
+      beispiel: 'To Wiehnachten gifft\'t bi uns jümmers Gröönkohl.',
+      beispiel_hd: 'Zu Weihnachten gibt es bei uns immer Grünkohl.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'p-339',
+      ausdruck: 'Schützenfest',
+      hochdeutsch: 'Schützenfest',
+      bedeutung: '„Schützenfest" ist im Norden das größte Dorffest des Jahres: Die Schützenbrüderschaft schießt den König aus, es gibt Umzüge mit Musik, Festzelt, Tanz und reichlich „Beer". Ein „Schützenfest" bringt das ganze Dorf auf die Beine und ist für viele Norddeutsche der gesellschaftliche Höhepunkt des Sommers. Das Wort gehört zum Festwortschatz und steht für Gemeinschaft, Brauchtum und ausgelassene Geselligkeit.',
+      beispiel: 'Op\'t Schützenfest danzt dat ganze Dörp bit in de Nacht.',
+      beispiel_hd: 'Auf dem Schützenfest tanzt das ganze Dorf bis in die Nacht.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'p-340',
+      ausdruck: 'Danz',
+      hochdeutsch: 'Tanz',
+      bedeutung: '„Danz" ist im Plattdeutschen der „Tanz". „En Danz op de Deel" — ein Tanz auf der Tenne — war auf den Bauernhöfen früher das Vergnügen bei Festen. Beim Schützenfest oder zur Hochzeit wurde getanzt, bis die Musik schwieg. „De Danz op\'n Vulkan" meint, sorglos zu feiern, obwohl Gefahr droht. Das Wort gehört zum Festwortschatz und steht für Lebensfreude und Geselligkeit.',
+      beispiel: 'Na\'t Eten geev dat noch en Danz op de Deel.',
+      beispiel_hd: 'Nach dem Essen gab es noch einen Tanz auf der Tenne.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'p-341',
+      ausdruck: 'Leed',
+      hochdeutsch: 'Lied',
+      bedeutung: '„Leed" ist im Plattdeutschen das „Lied". Die plattdeutschen „Leeder" von der See, von Liebe und Heimat werden in Shantychören und auf Festen gesungen. „Dat du mien Leevsten büst" gehört zu den bekanntesten. Ein gutes „Leed" hält Erinnerung und Sprache lebendig. Das Wort gehört zum Musikwortschatz und steht für die reiche Liedtradition des Nordens. Es klingt schlicht und vertraut.',
+      beispiel: 'Op de Fier hebbt se ole plattdüütsche Leeder sungen.',
+      beispiel_hd: 'Auf der Feier haben sie alte plattdeutsche Lieder gesungen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-342',
+      ausdruck: 'Shanty',
+      hochdeutsch: 'Seemannslied / Shanty',
+      bedeutung: 'Ein „Shanty" ist ein Seemannslied, das früher die Arbeit an Bord begleitete — beim Ankerlichten, Segelsetzen oder Pumpen gab der Rhythmus den Takt vor. Heute pflegen Shantychöre an der ganzen norddeutschen Küste dieses Erbe und treten bei Hafenfesten auf. Ein „Shanty" erzählt von Fernweh, Sturm und der Sehnsucht nach Land. Das Wort gehört zum Musikwortschatz und ist untrennbar mit der Seefahrt verbunden.',
+      beispiel: 'De Shantychoor singt en olen Shanty vun de Waterkant.',
+      beispiel_hd: 'Der Shantychor singt ein altes Seemannslied von der Waterkante.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-343',
+      ausdruck: 'Quetschkommood',
+      hochdeutsch: 'Ziehharmonika / Akkordeon',
+      bedeutung: '„Quetschkommood" ist die scherzhafte plattdeutsche Bezeichnung für die Ziehharmonika oder das Akkordeon — wörtlich „Quetschkommode", weil man das Instrument beim Spielen zusammendrückt wie eine Schublade. Bei Festen, beim Tanz auf der Deel und in Shantychören gab die „Quetschkommood" den Ton an. Das Wort zeigt den bildhaften Humor des Plattdeutschen und gehört zum Musikwortschatz des Nordens.',
+      beispiel: 'Opa speelt op de Quetschkommood en flotten Danz.',
+      beispiel_hd: 'Opa spielt auf dem Akkordeon einen flotten Tanz.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-344',
+      ausdruck: 'Fierabend',
+      hochdeutsch: 'Feierabend',
+      bedeutung: '„Fierabend" ist im Plattdeutschen der „Feierabend" — das Ende des Arbeitstages. „Nu is Fierabend!" sagt man erleichtert, wenn die Arbeit getan ist und die Ruhe beginnt. Nach getaner Arbeit setzt sich der Norddeutsche gern mit einem „Beer" hin und macht „Fierabend". Das Wort gehört zum Arbeits- und Alltagswortschatz und steht für die wohlverdiente Ruhe, die im fleißigen Norden umso höher geschätzt wird.',
+      beispiel: 'Nu maak ik Fierabend, de Dag weer lang noog.',
+      beispiel_hd: 'Jetzt mache ich Feierabend, der Tag war lang genug.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-345',
+      ausdruck: 'segeln',
+      hochdeutsch: 'unter Segeln fahren',
+      bedeutung: '„segeln" heißt im Plattdeutschen, ein Boot mit Segeln über das Wasser zu treiben. Auf Nord- und Ostsee, auf Förden und Flüssen ist das „segeln" eine alte Leidenschaft. Zur Kieler Woche, dem größten Segelereignis der Welt, kommen Tausende Boote zusammen. „Wi gaht segeln, wenn de Wind passt" sagt der Norddeutsche. Das Wort gehört zum Sportwortschatz und steht für die enge Verbindung der Küstenbewohner mit dem Wasser und dem Wind.',
+      beispiel: 'Bi goden Wind gaht wi op de Förd segeln.',
+      beispiel_hd: 'Bei gutem Wind gehen wir auf der Förde segeln.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'p-346',
+      ausdruck: 'Dörp',
+      hochdeutsch: 'Dorf',
+      bedeutung: '„Dörp" ist im Plattdeutschen das „Dorf" — verwandt mit niederländisch „dorp" und englisch „thorp". Das „Dörp" mit Kirche, Kroog und Schmiede war über Jahrhunderte der Lebensmittelpunkt auf dem flachen Lande. Im „Dörp" kannte jeder jeden, und die Nachbarschaft hielt zusammen. Das Wort gehört zum Ortswortschatz und steht für die enge dörfliche Gemeinschaft, die das norddeutsche Land bis heute prägt.',
+      beispiel: 'In uns lütt Dörp kennt noch een den annern.',
+      beispiel_hd: 'In unserem kleinen Dorf kennt noch einer den anderen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-347',
+      ausdruck: 'Karkhof',
+      hochdeutsch: 'Friedhof',
+      bedeutung: '„Karkhof" ist im Plattdeutschen der „Friedhof" — wörtlich der „Kirchhof", denn früher lagen die Gräber rund um die Kirche. Auf dem „Karkhof" ruhen die Vorfahren des Dorfes, und die alten Grabsteine erzählen von Seeleuten, Bauern und ganzen Familien. Das Wort gehört zum Ortswortschatz und steht für Erinnerung und Vergänglichkeit. In vielen Dörfern liegt der „Karkhof" bis heute neben der Backsteinkirche.',
+      beispiel: 'Op\'n Karkhof staht ole Steen vun Seelüüd.',
+      beispiel_hd: 'Auf dem Friedhof stehen alte Steine von Seeleuten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-348',
+      ausdruck: 'Kark',
+      hochdeutsch: 'Kirche',
+      bedeutung: '„Kark" ist die plattdeutsche „Kirche" — verwandt mit englisch „church" und schottisch „kirk". Die Backsteinkirchen des Nordens, oft auf einer Warft gegen die Flut erbaut, sind weithin sichtbare Landmarken. In der „Kark" wurde getauft, getraut und Abschied genommen; ihre Glocke gab den Takt des Dorflebens vor. Das Wort gehört zum Ortswortschatz und steht für den geistlichen Mittelpunkt der Gemeinde.',
+      beispiel: 'Sünndags morgens geiht Oma jümmers in de Kark.',
+      beispiel_hd: 'Sonntagmorgens geht Oma immer in die Kirche.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-349',
+      ausdruck: 'Kroog',
+      hochdeutsch: 'Wirtshaus / Kneipe',
+      bedeutung: '„Kroog" ist im Plattdeutschen das Wirtshaus oder die Dorfkneipe — der gesellige Mittelpunkt, wo man beim „Beer" und „Köm" zusammensaß, schnackte und Karten spielte. Vom „Kroog" leitet sich auch der „Kröger", der Wirt, ab. Auf dem Lande war der „Kroog" oft der einzige Treffpunkt weit und breit. Das Wort gehört zum Ortswortschatz und steht für Geselligkeit, Klönschnack und das gesellige Leben des Dorfes.',
+      beispiel: 'Avends drepen sik de Männer in\'n Kroog.',
+      beispiel_hd: 'Abends treffen sich die Männer im Wirtshaus.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-350',
+      ausdruck: 'Stratenmusik',
+      hochdeutsch: 'Straßenmusik',
+      bedeutung: '„Stratenmusik" ist im Plattdeutschen die „Straßenmusik" — wörtlich aus „Strate" (Straße) und Musik. Bei Hafenfesten und auf Märkten im Norden spielen Musikanten „Stratenmusik", oft mit Quetschkommood und Shanty-Gesang. Die „Stratenmusik" bringt Leben in die Gassen und lockt die Leute zum Stehenbleiben und Zuhören. Das Wort gehört zum Musikwortschatz und steht für die gesellige, offene Musikkultur der Küstenstädte.',
+      beispiel: 'Op\'n Markt speel se Stratenmusik mit Shanty-Sang.',
+      beispiel_hd: 'Auf dem Markt spielen sie Straßenmusik mit Shanty-Gesang.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'p-351',
+      ausdruck: 'Strate',
+      hochdeutsch: 'Straße',
+      bedeutung: '„Strate" ist im Plattdeutschen die „Straße" — verwandt mit niederländisch „straat" und englisch „street". Die kopfsteingepflasterte „Strate" durch das Dorf oder die Gasse in der Hansestadt prägt das Bild des alten Nordens. „Op de Strate" heißt „auf der Straße". Beim Boßeln rollt man die Kugel über die Landstrate. Das Wort gehört zum Ortswortschatz und ist im ganzen niederdeutschen Sprachraum gebräuchlich.',
+      beispiel: 'De Kinner speelt op de Strate vör\'t Hus.',
+      beispiel_hd: 'Die Kinder spielen auf der Straße vor dem Haus.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-352',
+      ausdruck: 'Hoff',
+      hochdeutsch: 'Hof / Bauernhof',
+      bedeutung: '„Hoff" ist im Plattdeutschen der „Hof" oder „Bauernhof". Auf dem „Hoff" mit Wohnhaus, Stall und Scheune unter einem reetgedeckten Dach lebte und arbeitete die Bauernfamilie. Der „Hoff" wurde meist über Generationen vererbt und trug oft einen eigenen Namen. „Op\'n Hoff" spielt sich das ländliche Leben ab. Das Wort gehört zum Arbeits- und Ortswortschatz und steht für bäuerliche Bodenständigkeit.',
+      beispiel: 'Op\'n Hoff gifft\'t jümmers wat to doon.',
+      beispiel_hd: 'Auf dem Hof gibt es immer etwas zu tun.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-353',
+      ausdruck: 'Schaap',
+      hochdeutsch: 'Schaf',
+      bedeutung: '„Schaap" ist im Plattdeutschen das „Schaf" — verwandt mit englisch „sheep". Auf den Deichen entlang der Nordseeküste grasen Tausende „Schaap"; sie halten mit ihren Hufen das Gras kurz und festigen so den Deich. „Diekschaap" sind unverzichtbar für den Küstenschutz. Das Wort gehört zum Naturwortschatz und gehört zum vertrauten Bild der norddeutschen Küste, wo Schafe und Deiche untrennbar zusammengehören.',
+      beispiel: 'Op\'n Diek grast hunnert Schaap in de Sünn.',
+      beispiel_hd: 'Auf dem Deich grasen hundert Schafe in der Sonne.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-354',
+      ausdruck: 'Mehl',
+      hochdeutsch: 'Mehl',
+      bedeutung: '„Mehl" ist im Plattdeutschen das „Mehl" — gemahlenes Korn für Brot und Kuchen. In den Windmühlen des Nordens, die der ständige Wind antrieb, wurde das Korn zu „Mehl" gemahlen. Aus dem „Mehl" buk man das tägliche Brot, Pannkoken und Köök. Das Wort gehört zum Essenswortschatz und ist eng mit der Müllerei und dem Backen verbunden — Handwerke, die im windreichen Norden lange blühten.',
+      beispiel: 'Ut dat Mehl backt Mudder dat Brood sülvst.',
+      beispiel_hd: 'Aus dem Mehl backt Mutter das Brot selbst.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-355',
+      ausdruck: 'Speck',
+      hochdeutsch: 'Speck',
+      bedeutung: '„Speck" ist im Plattdeutschen der „Speck" — gleich dem Hochdeutschen, doch fester Bestandteil der herzhaften Nordküche. Zu „Birnen un Bohnen", zum Grünkohl und in der Pfanne mit Bratkartoffeln gehört der „Speck" unbedingt dazu. „Speck un Eier" war eine kräftige Mahlzeit für harte Arbeit. Das Wort gehört zum Essenswortschatz und steht für die deftige, sättigende Hausmannskost des Nordens.',
+      beispiel: 'To de Bohnen hört en goden Stück Speck.',
+      beispiel_hd: 'Zu den Bohnen gehört ein gutes Stück Speck.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-356',
+      ausdruck: 'eten',
+      hochdeutsch: 'essen',
+      bedeutung: '„eten" heißt „essen" im Plattdeutschen — verwandt mit englisch „eat". „Kumm, wi gaht eten!" ruft die Familie zu Tisch. Das „Avendbrot eten" war früher der ruhige Abschluss des Arbeitstages. Im Norden isst man deftig und bodenständig: Grünkohl, Labskaus, Fisch. Das Wort gehört zum Grundwortschatz rund ums Essen und ist eines der ersten Verben, die man beim Plattlernen aufschnappt. Ein vertrautes Alltagswort.',
+      beispiel: 'Wenn de Klock twölf sleit, gaht wi eten.',
+      beispiel_hd: 'Wenn die Uhr zwölf schlägt, gehen wir essen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-357',
+      ausdruck: 'drinken',
+      hochdeutsch: 'trinken',
+      bedeutung: '„drinken" heißt „trinken" im Plattdeutschen — verwandt mit englisch „drink". Ob Ostfriesentee, ein kühles „Beer" oder ein „Köm" gegen die Kälte: das „drinken" gehört zur Geselligkeit des Nordens. „Wat magst du drinken?" fragt der Gastgeber. Das Wort gehört zum Grundwortschatz und zeigt wieder die Verwandtschaft des Niederdeutschen mit dem Englischen. Es ist im ganzen norddeutschen Sprachraum geläufig.',
+      beispiel: 'Bi Oma drinkt wi dree Tassen Tee.',
+      beispiel_hd: 'Bei Oma trinken wir drei Tassen Tee.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-358',
+      ausdruck: 'slapen',
+      hochdeutsch: 'schlafen',
+      bedeutung: '„slapen" heißt „schlafen" im Plattdeutschen — verwandt mit englisch „sleep", wieder mit der typischen „sl"-Lautung statt „schl". „Slaap good!" wünscht man zur Nacht. In den alten Bauernhäusern „slööp" man früher in der Butze, einem Wandbett mit Türen, das die Wärme hielt. Das Wort gehört zum Grundwortschatz des Alltags und zeigt die enge Verwandtschaft des Niederdeutschen mit dem Englischen. Ein vertrautes Wort.',
+      beispiel: 'De lütt Jung is so mööd, he kann kuum noch slapen.',
+      beispiel_hd: 'Der kleine Junge ist so müde, er kann kaum noch schlafen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-359',
+      ausdruck: 'loopen',
+      hochdeutsch: 'laufen / gehen',
+      bedeutung: '„loopen" heißt im Plattdeutschen „laufen" oder „gehen" — verwandt mit englisch „leap" und niederländisch „lopen". „Wi loopt en beten an\'n Strand" heißt „Wir gehen ein bisschen am Strand spazieren". Über die weiten, flachen Wege des Nordens ging man früher viel „to Foot". Das Wort gehört zum Grundwortschatz der Bewegung und ist im ganzen niederdeutschen Sprachraum gebräuchlich. Ein häufiges Alltagsverb.',
+      beispiel: 'Wi loopt noch en Runn üm\'n Diek.',
+      beispiel_hd: 'Wir gehen noch eine Runde um den Deich.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-360',
+      ausdruck: 'kommen',
+      hochdeutsch: 'kommen / herkommen',
+      bedeutung: '„kommen" (auch „kamen") heißt im Plattdeutschen „kommen". „Wullt du mit kommen?" fragt man freundlich, ob jemand mitkommen möchte. „Wo kummst du her?" fragt nach der Herkunft. Das Wort gehört zum allergrundlegendsten Wortschatz und begegnet einem in unzähligen Wendungen des Alltags. Trotz aller Ähnlichkeit zum Hochdeutschen hat es im Platt seine eigene Aussprache und seinen eigenen Klang. Ein unentbehrliches Verb.',
+      beispiel: 'Wullt du hüüt Avend mit kommen na\'t Fischbrötchen?',
+      beispiel_hd: 'Willst du heute Abend mitkommen zum Fischbrötchen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-361',
+      ausdruck: 'good',
+      hochdeutsch: 'gut',
+      bedeutung: '„good" heißt „gut" im Plattdeutschen — verwandt mit englisch „good". „Dat is good so" drückt Zufriedenheit aus. „Goden Dag", „goden Avend" und „slaap good" gehören zu den täglichen Höflichkeiten. Der Norddeutsche lobt sparsam: Ein schlichtes „good" wiegt schwer und meint oft mehr, als es sagt. Das Wort gehört zum Grundwortschatz und zeigt erneut die enge Verwandtschaft des Niederdeutschen mit dem Englischen.',
+      beispiel: 'Dat hest du good maakt, mien Jung!',
+      beispiel_hd: 'Das hast du gut gemacht, mein Junge!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-362',
+      ausdruck: 'koolt',
+      hochdeutsch: 'kalt',
+      bedeutung: '„koolt" heißt „kalt" im Plattdeutschen — verwandt mit englisch „cold". An der windigen Küste ist es oft „koolt", wenn der Nordwest über die See fegt. „Mi is koolt" sagt man fröstelnd, „dat is büter koolt" über die Kälte draußen. Das Wort gehört zum Wetter- und Alltagswortschatz und begegnet einem im rauen Norden häufig. Es zeigt wieder die typische Verwandtschaft des Niederdeutschen mit dem Englischen.',
+      beispiel: 'Treck di wat an, dat is hüüt bannig koolt!',
+      beispiel_hd: 'Zieh dir etwas an, es ist heute sehr kalt!',
+      kategorie: 'natur'
+    },
+    {
+      id: 'p-363',
+      ausdruck: 'groot',
+      hochdeutsch: 'groß',
+      bedeutung: '„groot" heißt „groß" im Plattdeutschen — verwandt mit niederländisch „groot". Vom „groten Water" (dem Meer) bis zur „groten Familie" begegnet einem das Wort überall. In „Grootmudder" und „Grootvadder" steckt es ebenfalls. Der Gegensatz ist „lütt" (klein). Das Wort gehört zum Grundwortschatz der Adjektive und ist im ganzen niederdeutschen Sprachraum gebräuchlich. Es zeigt die eigene Lautung des Niederdeutschen gegenüber dem Hochdeutschen.',
+      beispiel: 'Wat is de Jung groot worrn siet vörig Johr!',
+      beispiel_hd: 'Was ist der Junge groß geworden seit vorigem Jahr!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-364',
+      ausdruck: 'oolt',
+      hochdeutsch: 'alt',
+      bedeutung: '„oolt" heißt „alt" im Plattdeutschen — verwandt mit englisch „old". „De ole Mann" und „de ole Tied" begegnen einem in vielen Geschichten. Das „Ole Land" bei Hamburg trägt das Wort sogar im Namen. Im Norden wird das Alter geachtet, denn die Alten hüten die Sprache und die Geschichten. Das Wort gehört zum Grundwortschatz und zeigt erneut die enge Verwandtschaft des Niederdeutschen mit dem Englischen.',
+      beispiel: 'De oole Buer vertellt vun de Tied vör\'n Krieg.',
+      beispiel_hd: 'Der alte Bauer erzählt von der Zeit vor dem Krieg.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-365',
+      ausdruck: 'Tied',
+      hochdeutsch: 'Zeit',
+      bedeutung: '„Tied" ist im Plattdeutschen die „Zeit" — verwandt mit englisch „tide", das ursprünglich „Zeit" und dann „Gezeiten" bedeutete. „Allns to sien Tied" heißt „Alles zu seiner Zeit", eine gelassene norddeutsche Lebensweisheit. „In ole Tieden" („in alten Zeiten") leiten Geschichten ein. Das Wort gehört zum Grundwortschatz und verbindet im Norden sinnfällig Zeit und Gezeiten, die das Leben an der Küste prägen.',
+      beispiel: 'Allns to sien Tied, segg ik jümmers.',
+      beispiel_hd: 'Alles zu seiner Zeit, sage ich immer.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-366',
+      ausdruck: 'Dau un Dag',
+      hochdeutsch: 'früh am Morgen / bei Tagesanbruch',
+      bedeutung: '„Dau un Dag" — wörtlich „Tau und Tag" — ist eine plattdeutsche Wendung für den frühen Morgen, wenn noch der Tau auf den Wiesen liegt und der Tag gerade anbricht. „Bi Dau un Dag" steht der Bauer auf und fährt aufs Feld. Die Redensart malt mit zwei Bildern die frühe Stunde und atmet den Geist der fleißigen Landarbeit. Sie gehört zu den anschaulichen festen Wendungen des Plattdeutschen.',
+      beispiel: 'Bi Dau un Dag is de Buer al op de Been.',
+      beispiel_hd: 'Bei Tau und Tag ist der Bauer schon auf den Beinen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'p-367',
+      ausdruck: 'Buddel un Lütt',
+      hochdeutsch: 'Bier mit Korn (Hafenbestellung)',
+      bedeutung: '„Buddel un Lütt" steht im Hamburger Hafen für ein Bier mit einem Klaren — die klassische Bestellung der Hafenarbeiter. Die „Buddel" ist die Flasche, die „Lütt" das kleine Glas Korn dazu. Nach harter Schicht am Kai gehörte „Buddel un Lütt" zur Geselligkeit dazu. Die Wendung ist ein Stück Hamburger Lebensart und gehört zum Wortschatz rund um Hafen, Feierabend und das gesellige Beisammensein.',
+      beispiel: 'Na de Schicht an\'n Kai gifft\'t Buddel un Lütt.',
+      beispiel_hd: 'Nach der Schicht am Kai gibt es Bier mit Korn.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'p-368',
+      ausdruck: 'Achtern',
+      hochdeutsch: 'hinten / im Heck',
+      bedeutung: '„achtern" heißt im Plattdeutschen und in der Seemannssprache „hinten" oder „im Heck des Schiffes" — verwandt mit englisch „aft". „Na achtern gahn" heißt, ans hintere Ende des Schiffes gehen. Auch an Land sagt man „dat liggt achtern" für „das liegt hinten". Das Wort gehört zum maritimen Wortschatz, der von der Seefahrt ins Alltagsplatt übergegangen ist, und ist an der ganzen Küste gebräuchlich.',
+      beispiel: 'Gah mol na achtern un haal dat Tau!',
+      beispiel_hd: 'Geh mal nach hinten und hol das Tau!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-369',
+      ausdruck: 'Tau',
+      hochdeutsch: 'Seil / Tau',
+      bedeutung: '„Tau" ist im Plattdeutschen und in der Seemannssprache das „Seil" oder „Tau" — das dicke Seil, mit dem Schiffe vertäut und Segel gesetzt werden. Auf der Reeperbahn wurden früher genau diese „Tauen" gefertigt, daher der Name der Straße. „Dat Tau fastmaken" hieß, das Schiff zu vertäuen. Das Wort gehört zum maritimen Wortschatz und ist eng mit Hafenarbeit, Seefahrt und dem Reeperhandwerk verbunden.',
+      beispiel: 'Maak dat Tau an\'n Poller fast, sünst dröövt dat Boot weg!',
+      beispiel_hd: 'Mach das Tau am Poller fest, sonst treibt das Boot weg!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-370',
+      ausdruck: 'Hannig',
+      hochdeutsch: 'flink / geschickt / tüchtig',
+      bedeutung: '„hannig" (auch „handig") beschreibt im Plattdeutschen einen flinken, geschickten und tüchtigen Menschen, der mit den Händen gut zupacken kann — abgeleitet von „Hand". „En hannig Deern" ist eine Frau, die anpackt und der die Arbeit von der Hand geht. Im fleißigen Norden ist „hannig" ein hohes Lob. Das Wort gehört zum Wortschatz der Charakterbeschreibung und würdigt praktische Tüchtigkeit über schöne Worte.',
+      beispiel: 'Uns Deern is so hannig, de schafft dat in\'n Nu.',
+      beispiel_hd: 'Unser Mädchen ist so tüchtig, das schafft sie im Nu.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-371',
+      ausdruck: 'mööd',
+      hochdeutsch: 'müde',
+      bedeutung: '„mööd" heißt „müde" im Plattdeutschen — verwandt mit englisch „mood" in alter Bedeutung und niederländisch „moe". Nach einem langen Tag voller Arbeit auf dem Hoff oder im Hafen ist man abends „mööd". „Ik bün hunnemööd" steigert das zu „todmüde". Das Wort gehört zum Gefühls- und Alltagswortschatz und begegnet einem überall, wo nach getaner Arbeit die Erschöpfung kommt. Ein vertrautes, schlichtes Wort.',
+      beispiel: 'Na den langen Dag bün ik richtig mööd.',
+      beispiel_hd: 'Nach dem langen Tag bin ich richtig müde.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'p-372',
+      ausdruck: 'Klaut',
+      hochdeutsch: 'Hand / Pfote (derb)',
+      bedeutung: '„Klaut" (auch „Klauten") ist ein derbes, deftiges plattdeutsches Wort für die „Hand" — etwa wie das hochdeutsche „Pranke" oder „Pfote". „Nimm dien Klauten weg!" sagt man, wenn jemand mit den Händen an etwas geht, das ihn nichts angeht. Das Wort hat einen rauen, humorvollen Klang und gehört zum bildhaften Körperwortschatz des Nordens. Es wird meist scherzhaft oder leicht grob gebraucht.',
+      beispiel: 'Nimm dien Klauten vun\'t Brood, dat is nich för di!',
+      beispiel_hd: 'Nimm deine Pfoten vom Brot, das ist nicht für dich!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'p-373',
+      ausdruck: 'Fent',
+      hochdeutsch: 'Junge / Bursche',
+      bedeutung: '„Fent" (auch „Fent\'") ist im ostfriesischen und nordwestlichen Platt ein Wort für einen Jungen oder jungen Burschen. „En fixen Fent" ist ein aufgeweckter, flinker Junge. Das Wort ist regional gefärbt und in Ostfriesland besonders verbreitet, wo es zum vertrauten Wortschatz gehört. Es zeigt, wie reich das Plattdeutsche an Wörtern für junge Menschen ist — neben „Jung", „Deern" und „Knüüt".',
+      beispiel: 'De lütt Fent helpt sien Vadder al op\'n Hoff.',
+      beispiel_hd: 'Der kleine Junge hilft seinem Vater schon auf dem Hof.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'p-374',
+      ausdruck: 'Wark',
+      hochdeutsch: 'Arbeit / Werk',
+      bedeutung: '„Wark" ist im Plattdeutschen die „Arbeit" oder das „Werk" — verwandt mit englisch „work". „Dat is en böös Stück Wark" heißt „Das ist ein hartes Stück Arbeit". Im fleißigen Norden wird „Wark" hochgehalten: Wer ordentlich schafft, genießt Achtung. Das Wort gehört zum Arbeitswortschatz und zeigt wieder die enge Verwandtschaft des Niederdeutschen mit dem Englischen. Es steht für Mühe, Tüchtigkeit und ehrliches Schaffen.',
+      beispiel: 'Dat is noch en böös Stück Wark bit dat fardig is.',
+      beispiel_hd: 'Das ist noch ein hartes Stück Arbeit, bis es fertig ist.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-375',
+      ausdruck: 'Naricht',
+      hochdeutsch: 'Nachricht',
+      bedeutung: '„Naricht" ist im Plattdeutschen die „Nachricht" — eine Botschaft oder Neuigkeit. „Hest du de Naricht al höört?" fragt man, wenn etwas Neues die Runde macht. Früher kam die „Naricht" über Boten, später über Brief und Radio ins Dorf. Eine gute „Naricht" verbreitete sich schnell beim Klönschnack. Das Wort gehört zum Alltagswortschatz und steht für Mitteilung und Austausch in der dörflichen Gemeinschaft.',
+      beispiel: 'Hest du de gode Naricht al höört vun de Hochtiet?',
+      beispiel_hd: 'Hast du die gute Nachricht schon gehört von der Hochzeit?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-376',
+      ausdruck: 'Wagen',
+      hochdeutsch: 'Wagen',
+      bedeutung: '„Wagen" ist im Plattdeutschen der „Wagen" — früher der von Pferden gezogene Leiterwagen, heute auch das Auto. „De Buer fohrt mit\'n Wagen op\'t Feld" beschreibt die Heu- oder Erntefahrt. Über den tiefen Sand und die holprigen Feldwege zog das Peerd den schwer beladenen „Wagen". Das Wort gehört zum Alltags- und Arbeitswortschatz und ist im ganzen niederdeutschen Sprachraum gebräuchlich. Ein vertrautes Wort.',
+      beispiel: 'De Buer laadt dat Hau op\'n Wagen.',
+      beispiel_hd: 'Der Bauer lädt das Heu auf den Wagen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'p-377',
+      ausdruck: 'Hau',
+      hochdeutsch: 'Heu',
+      bedeutung: '„Hau" ist im Plattdeutschen das „Heu" — das getrocknete Gras, das als Winterfutter für das Vieh eingebracht wird. Die Heuernte, das „Hauen", war auf dem Hoff harte Arbeit, bei der die ganze Familie und oft die Nachbarn mithalfen. „Dat Hau in de Schüün bringen" hieß, es vor dem Regen in Sicherheit zu bringen. Das Wort gehört zum bäuerlichen Arbeitswortschatz und steht für ländliche Mühe.',
+      beispiel: 'Vör\'n Regen mött wi dat Hau in de Schüün bringen.',
+      beispiel_hd: 'Vor dem Regen müssen wir das Heu in die Scheune bringen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-378',
+      ausdruck: 'Schüün',
+      hochdeutsch: 'Scheune',
+      bedeutung: '„Schüün" ist im Plattdeutschen die „Scheune" — das große Gebäude auf dem Hoff, in dem Heu, Stroh und Erntegut gelagert werden. Unter dem weiten reetgedeckten Dach der „Schüün" wurde gedroschen und auch mal getanzt. „Dat Korn in de Schüün" bedeutete, die Ernte war geborgen. Das Wort gehört zum bäuerlichen Ortswortschatz und steht für das Einbringen und Bewahren der Ernte im ländlichen Norden.',
+      beispiel: 'In de Schüün liggt dat Stroh bit ünner\'t Dack.',
+      beispiel_hd: 'In der Scheune liegt das Stroh bis unter das Dach.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'p-379',
+      ausdruck: 'Korn',
+      hochdeutsch: 'Korn / Getreide',
+      bedeutung: '„Korn" ist im Plattdeutschen das „Getreide" auf dem Feld — Roggen, Weizen oder Gerste. Wenn das „Korn" reif war und golden im Wind wogte, begann die Ernte, die wichtigste Zeit des Bauernjahres. Aus dem „Korn" wurde Mehl gemahlen und Brot gebacken. Das Wort gehört zum bäuerlichen Wortschatz und steht für die Grundlage der Ernährung und den Kreislauf von Aussaat, Ernte und Brot im ländlichen Norden.',
+      beispiel: 'Dat Korn steiht good, dütt Johr gifft\'t en gode Aarn.',
+      beispiel_hd: 'Das Korn steht gut, dieses Jahr gibt es eine gute Ernte.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'p-380',
+      ausdruck: 'Aarn',
+      hochdeutsch: 'Ernte',
+      bedeutung: '„Aarn" ist im Plattdeutschen die „Ernte" — das Einbringen des reifen Korns vom Feld. Die „Aarn" war die arbeitsreichste und wichtigste Zeit des Bauernjahres, bei der jede Hand gebraucht wurde und das Wetter über Wohl und Wehe entschied. Nach getaner „Aarn" feierte man Erntedank. Das Wort gehört zum bäuerlichen Arbeitswortschatz und steht für Mühe, Lohn und Dankbarkeit für die Gaben des Feldes.',
+      beispiel: 'To de Aarn helpt de ganze Naverschap mit.',
+      beispiel_hd: 'Zur Ernte hilft die ganze Nachbarschaft mit.',
+      kategorie: 'arbeit'
     }
   ]
 };
