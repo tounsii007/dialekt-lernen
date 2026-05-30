@@ -5438,6 +5438,96 @@ export default {
       beispiel: 'Etz halt emol die Gosch!',
       beispiel_hd: 'Jetzt halt mal den Mund!',
       kategorie: 'koerper'
+    },
+    {
+      id: 'h-651',
+      ausdruck: 'Mädche',
+      hochdeutsch: 'Mädchen',
+      bedeutung: 'Es Mädche ist das Mädchen, liebevolle Verkleinerung. Männliches Gegenstück ist de Bub. Ein alltägliches Familienwort der hessischen Mundart.',
+      beispiel: 'Des Mädche geht heut in die Schul.',
+      beispiel_hd: 'Das Mädchen geht heute in die Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-652',
+      ausdruck: 'Babba',
+      hochdeutsch: 'Vater / Papa',
+      bedeutung: 'De Babba ist der Vater oder Papa, ein vertrautes Familienwort. Zusammen mit de Mamma die übliche Anrede der Eltern im Hessischen.',
+      beispiel: 'De Babba kummt glei vun de Arbeit.',
+      beispiel_hd: 'Der Papa kommt gleich von der Arbeit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-653',
+      ausdruck: 'Mamma',
+      hochdeutsch: 'Mutter / Mama',
+      bedeutung: 'Die Mamma ist die Mutter oder Mama. Die Mamma kocht un sorgt fer die Familie. Ein liebevolles, alltägliches Wort der hessischen Mundart.',
+      beispiel: 'Frag emol die Mamma, ob mer derfe.',
+      beispiel_hd: 'Frag mal die Mama, ob wir dürfen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-654',
+      ausdruck: 'Maa',
+      hochdeutsch: 'Mann',
+      bedeutung: 'De Maa ist der Mann oder Ehemann. Mei Maa heißt mein Mann. Ein Grundwort des hessischen Alltags, oft in Familiengesprächen verwendet.',
+      beispiel: 'Mei Maa schafft in Frankfort.',
+      beispiel_hd: 'Mein Mann arbeitet in Frankfurt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-655',
+      ausdruck: 'Fraa',
+      hochdeutsch: 'Frau',
+      bedeutung: 'Die Fraa ist die Frau oder Ehefrau, mei Fraa heißt meine Frau. Zusammen mit Maa eines der häufigsten Personenwörter der hessischen Mundart.',
+      beispiel: 'Mei Fraa kummt glei heem.',
+      beispiel_hd: 'Meine Frau kommt gleich nach Hause.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-656',
+      ausdruck: 'Buckel',
+      hochdeutsch: 'Rücken',
+      bedeutung: 'De Buckel ist der Rücken. Vom viele Bicke tut mer de Buckel weh. En breite Buckel hat, wer viel aushält. Ein anschauliches Körperwort.',
+      beispiel: 'Vom Schaffe tut mer de Buckel weh.',
+      beispiel_hd: 'Vom Arbeiten tut mir der Rücken weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-657',
+      ausdruck: 'Aag',
+      hochdeutsch: 'Auge',
+      bedeutung: 'Es Aag ist das Auge, Mehrzahl die Aache. Ich hab kä Aag zugemacht heißt „ich habe nicht geschlafen". Ein gängiges Körperwort.',
+      beispiel: 'Mer is ebbes ins Aag gefloge.',
+      beispiel_hd: 'Mir ist etwas ins Auge geflogen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-658',
+      ausdruck: 'Daa',
+      hochdeutsch: 'Tag',
+      bedeutung: 'De Daa ist der Tag. En schöne Daa wünscht man zum Abschied. Alle Daa heißt „jeden Tag". Ein häufiges Zeitwort der hessischen Mundart.',
+      beispiel: 'Des war en lange Daa heut.',
+      beispiel_hd: 'Das war ein langer Tag heute.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-659',
+      ausdruck: 'Owend',
+      hochdeutsch: 'Abend',
+      bedeutung: 'De Owend ist der Abend. Gude Owend! ist der Abendgruß. Am Owend sitzt mer beim Schobbe zsamme. Ein alltägliches Zeitwort.',
+      beispiel: 'Am Owend gemmer noch debbe.',
+      beispiel_hd: 'Am Abend gehen wir noch hinaus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-660',
+      ausdruck: 'Nacht',
+      hochdeutsch: 'Nacht',
+      bedeutung: 'Die Nacht ist die Nacht. Die ganz Nacht durchgemacht heißt, nicht geschlafen zu haben. Gut Nacht! wünscht man vorm Schlafe. Ein alltägliches Wort.',
+      beispiel: 'Die Nacht war mer viel zu kurz.',
+      beispiel_hd: 'Die Nacht war mir viel zu kurz.',
+      kategorie: 'alltag'
     }
   ]
 };
