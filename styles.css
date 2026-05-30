@@ -67,6 +67,28 @@
   --sp-7: 48px;
   --sp-8: 64px;
 
+  /* z-index-Ebenen — benannte Stapel-Reihenfolge statt verstreuter Magic Numbers.
+     Werte 1:1 aus dem Bestand übernommen (keine Stapel-Änderung). */
+  --z-below: -1;
+  --z-elevated: 10;
+  --z-nav: 20;
+  --z-sticky: 40;
+  --z-header: 50;
+  --z-fab: 60;
+  --z-overlay: 80;
+  --z-overlay-2: 90;
+  --z-dropdown: 100;
+  --z-banner: 200;
+  --z-drawer: 1000;
+  --z-modal: 1100;
+  --z-modal-content: 1101;
+  --z-modal-top: 1200;
+  --z-toast: 9990;
+  --z-search: 9998;
+  --z-cmdp: 9999;
+  --z-top: 10000;
+  --z-top-2: 10001;
+
   /* Responsive Breakpoints — als Tokens für Referenz (in @media müssen sie hartkodiert werden,
      da @media noch keine CSS-Variablen unterstützt). */
   --bp-xs: 360px;    /* sehr kleine Phones (iPhone SE 1. Gen) */
@@ -185,7 +207,7 @@ input:focus-visible,
   color: white;
   font-weight: 600;
   font-size: 0.9rem;
-  z-index: 1200;
+  z-index: var(--z-modal-top);
   transition: top var(--t-fast) var(--ease);
 }
 .skip-link:focus { top: 12px; }
@@ -194,7 +216,7 @@ input:focus-visible,
 .noscript-banner {
   position: fixed;
   inset: 16px;
-  z-index: 9999;
+  z-index: var(--z-cmdp);
   padding: 24px 28px;
   background: linear-gradient(135deg, #8b5cf6, #ec4899);
   color: #fff;
@@ -258,7 +280,7 @@ a { color: inherit; text-decoration: none; }
 .bg-stack {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: var(--z-below);
   overflow: hidden;
   pointer-events: none;
 }
@@ -408,7 +430,7 @@ a { color: inherit; text-decoration: none; }
   top: 0; left: 0;
   height: 3px;
   width: 100%;
-  z-index: 60;
+  z-index: var(--z-fab);
   pointer-events: none;
   transform-origin: 0 50%;
   transform: scaleX(var(--scroll-p, 0));
@@ -432,7 +454,7 @@ a { color: inherit; text-decoration: none; }
 .topbar {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: var(--z-header);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   background: var(--surface);
@@ -555,7 +577,7 @@ a { color: inherit; text-decoration: none; }
     -webkit-backdrop-filter: blur(20px);
     background: var(--surface-strong);
     box-shadow: var(--shadow-lg);
-    z-index: 40;
+    z-index: var(--z-sticky);
   }
   .nav-link { padding: var(--sp-2) var(--sp-3); font-size: 0.8rem; }
   .brand-sub { display: none; }
@@ -858,7 +880,7 @@ a { color: inherit; text-decoration: none; }
   inset: 0;
   background: linear-gradient(135deg, var(--dc, var(--brand)) 0%, transparent 70%);
   opacity: 0.12;
-  z-index: -1;
+  z-index: var(--z-below);
   transition: opacity var(--t-med) var(--ease);
 }
 .dialekt-card::after {
@@ -871,7 +893,7 @@ a { color: inherit; text-decoration: none; }
   background: radial-gradient(circle, var(--dc, var(--brand)) 0%, transparent 70%);
   opacity: 0.15;
   border-radius: 50%;
-  z-index: -1;
+  z-index: var(--z-below);
   transition: all var(--t-med) var(--ease);
 }
 .dialekt-card:hover {
@@ -1657,7 +1679,7 @@ a { color: inherit; text-decoration: none; }
 .search-overlay {
   position: fixed;
   inset: 0;
-  z-index: 100;
+  z-index: var(--z-dropdown);
   background: rgba(10, 10, 25, 0.5);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -1757,7 +1779,7 @@ a { color: inherit; text-decoration: none; }
   position: fixed;
   top: 80px;
   right: var(--sp-4);
-  z-index: 200;
+  z-index: var(--z-banner);
   display: flex;
   flex-direction: column;
   gap: var(--sp-2);
@@ -1983,7 +2005,7 @@ a { color: inherit; text-decoration: none; }
   background-size: 200% 200%;
   opacity: 0;
   transition: opacity var(--t-fast) var(--ease);
-  z-index: -1;
+  z-index: var(--z-below);
   animation: navGradient 6s var(--ease) infinite;
 }
 .nav-link.is-active {
@@ -2125,7 +2147,7 @@ a { color: inherit; text-decoration: none; }
 .confetti-layer {
   position: fixed;
   inset: 0;
-  z-index: 1000;
+  z-index: var(--z-drawer);
   pointer-events: none;
   overflow: hidden;
 }
@@ -2444,7 +2466,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: inherit;
   background: linear-gradient(135deg, var(--brand), var(--pink));
   opacity: 0;
-  z-index: -1;
+  z-index: var(--z-below);
   transition: opacity var(--t-med) var(--ease);
 }
 .expr-card:hover {
@@ -2470,7 +2492,7 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   transform: translateY(100%);
   transition: transform var(--t-med) var(--ease-spring);
-  z-index: -1;
+  z-index: var(--z-below);
 }
 .chip.is-active::before { transform: translateY(0); }
 .chip:hover:not(.is-active) {
@@ -2690,7 +2712,7 @@ input[type="search"]:not(#searchInput) {
     color-mix(in oklab, var(--pink) 18%, transparent));
   opacity: 0;
   transition: opacity var(--t-med) var(--ease);
-  z-index: -1;
+  z-index: var(--z-below);
 }
 .achievement.is-unlocked {
   border-color: color-mix(in oklab, var(--brand) 35%, var(--border));
@@ -2792,7 +2814,7 @@ input[type="search"]:not(#searchInput) {
 .onboard-overlay {
   position: fixed;
   inset: 0;
-  z-index: 1100;
+  z-index: var(--z-modal);
   outline: none;
   animation: fadeIn .3s var(--ease);
 }
@@ -2824,7 +2846,7 @@ input[type="search"]:not(#searchInput) {
 
 .onboard-target {
   position: relative;
-  z-index: 1101;
+  z-index: var(--z-modal-content);
 }
 
 .onboard-card {
@@ -3172,7 +3194,7 @@ html.is-speaking .daily {
   background: linear-gradient(135deg, color-mix(in oklab, var(--dc) 24%, transparent), transparent 50%);
   opacity: .55;
   pointer-events: none;
-  z-index: -1;
+  z-index: var(--z-below);
 }
 .dash-card::after {
   content: '';
@@ -3376,7 +3398,7 @@ html.is-speaking .daily {
   background: linear-gradient(135deg, var(--brand), var(--pink));
   opacity: 0;
   transition: opacity var(--t-med) var(--ease);
-  z-index: -1;
+  z-index: var(--z-below);
 }
 .learn-mode.is-active::before { opacity: 1; }
 .learn-mode.is-active {
@@ -3603,7 +3625,7 @@ html.is-speaking .fc-big-speak {
   background: linear-gradient(135deg,
     color-mix(in oklab, var(--brand) 14%, transparent),
     transparent 60%);
-  z-index: -1;
+  z-index: var(--z-below);
   opacity: .6;
 }
 .compare-group-head {
@@ -3783,7 +3805,7 @@ html.is-speaking .fc-big-speak {
 .palette-panel {
   position: fixed;
   top: 0; right: 0;
-  z-index: 80;
+  z-index: var(--z-overlay);
   min-width: 260px;
   padding: var(--sp-4);
   border-radius: var(--r-lg);
@@ -3911,7 +3933,7 @@ html.is-speaking .fc-big-speak {
   position: fixed;
   bottom: 100px;
   right: var(--sp-4);
-  z-index: 90;
+  z-index: var(--z-overlay-2);
   display: inline-flex;
   align-items: center;
   gap: var(--sp-2);
@@ -4646,7 +4668,7 @@ html.is-speaking .is-speakable {
 }
 
 /* Flying XP chips */
-.xp-hud { position: fixed; inset: 0; pointer-events: none; z-index: 9999; }
+.xp-hud { position: fixed; inset: 0; pointer-events: none; z-index: var(--z-cmdp); }
 .xp-chip {
   position: fixed;
   left: var(--x, 50%);
@@ -4676,7 +4698,7 @@ html.is-speaking .is-speakable {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000;
+  z-index: var(--z-top);
   pointer-events: none;
   animation: lvlOverlayIn 2.6s var(--ease) forwards;
 }
@@ -4966,7 +4988,7 @@ html.is-speaking .is-speakable {
     0 8px 30px color-mix(in oklab, var(--dc) 40%, transparent),
     0 0 0 6px color-mix(in oklab, var(--dc) 20%, transparent);
   border-color: var(--dc);
-  z-index: 10;
+  z-index: var(--z-elevated);
 }
 .karte-bubble:hover .karte-tooltip { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); pointer-events: auto; }
 
@@ -5008,7 +5030,7 @@ html.is-speaking .is-speakable {
   white-space: nowrap;
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 24px hsl(0 0% 0% / .25);
-  z-index: 20;
+  z-index: var(--z-nav);
   min-width: 130px;
 }
 .karte-tooltip-name {
@@ -5106,7 +5128,7 @@ html.is-speaking .is-speakable {
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-120%);
-  z-index: 9998;
+  z-index: var(--z-search);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -6077,7 +6099,7 @@ html {
   inset: 0;
   background: hsl(0 0% 0% / .5);
   backdrop-filter: blur(6px);
-  z-index: 10001;
+  z-index: var(--z-top-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6185,7 +6207,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9990;
+  z-index: var(--z-toast);
   background: color-mix(in oklab, var(--bg-elev) 85%, transparent);
   backdrop-filter: blur(20px) saturate(1.4);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
@@ -7839,7 +7861,7 @@ img, svg, video {
   position: fixed;
   top: 12px;
   right: 12px;
-  z-index: 80;
+  z-index: var(--z-overlay);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -7895,7 +7917,7 @@ img, svg, video {
   position: fixed;
   top: 60px;
   right: 16px;
-  z-index: 90;
+  z-index: var(--z-overlay-2);
   display: flex;
   flex-direction: column;
   gap: var(--sp-3);
