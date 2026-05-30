@@ -245,6 +245,96 @@ export default {
       beispiel: 'Mit dat lütt Huus bün ik tofreden.',
       beispiel_hd: 'Mit dem kleinen Haus bin ich zufrieden.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'mk-027',
+      ausdruck: 'Water',
+      hochdeutsch: 'Wasser',
+      bedeutung: 'Water ist das Wasser, an der Ostseeküste allgegenwärtig. Op dat Water kieken heißt aufs Meer schauen. Ein niederdeutsches Grundwort.',
+      beispiel: 'Dat Water is vandaag ganz still.',
+      beispiel_hd: 'Das Wasser ist heute ganz still.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-028',
+      ausdruck: 'Sünn',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'De Sünn ist die Sonne. Wenn de Sünn schient, sitt man giern an Strand. Ein freundliches Naturwort der niederdeutschen Mundart.',
+      beispiel: 'Endlich kummt de Sünn rut.',
+      beispiel_hd: 'Endlich kommt die Sonne heraus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-029',
+      ausdruck: 'Regen',
+      hochdeutsch: 'Regen',
+      bedeutung: 'Regen fällt an der Küste oft und reichlich. Bi Regen blifft man binnen un drinkt Tee. Ein häufiges Wetterwort im Norden.',
+      beispiel: 'De Regen hört gor nich op.',
+      beispiel_hd: 'Der Regen hört gar nicht auf.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-030',
+      ausdruck: 'Boom',
+      hochdeutsch: 'Baum',
+      bedeutung: 'De Boom ist der Baum, Mehrzahl Bööm. Ünner den Boom find man Schatten. Ein niederdeutsches Wort, das in vielen Ortsnamen steckt.',
+      beispiel: 'Vör dat Huus steiht en olen Boom.',
+      beispiel_hd: 'Vor dem Haus steht ein alter Baum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-031',
+      ausdruck: 'Katt',
+      hochdeutsch: 'Katze',
+      bedeutung: 'De Katt ist die Katze, die es sich am warmen Ofen gemütlich macht. De Katt fangt de Müüs. Ein gängiges niederdeutsches Tierwort.',
+      beispiel: 'De Katt liggt op de Fensterbank.',
+      beispiel_hd: 'Die Katze liegt auf der Fensterbank.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-032',
+      ausdruck: 'Peerd',
+      hochdeutsch: 'Pferd',
+      bedeutung: 'Dat Peerd ist das Pferd, das früher den Acker pflügte. Mecklenburg ist bekannt für seine Pferdezucht. Ein wichtiges Wort der ländlichen Welt.',
+      beispiel: 'Dat Peerd treckt den Wagen.',
+      beispiel_hd: 'Das Pferd zieht den Wagen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-033',
+      ausdruck: 'Huus',
+      hochdeutsch: 'Haus',
+      bedeutung: 'Dat Huus ist das Haus, oft ein altes Backsteinhaus mit Reetdach. Na Huus gahn heißt nach Hause gehen. Ein zentrales niederdeutsches Wort.',
+      beispiel: 'Wi gaht nu na Huus.',
+      beispiel_hd: 'Wir gehen jetzt nach Hause.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'mk-034',
+      ausdruck: 'Disch',
+      hochdeutsch: 'Tisch',
+      bedeutung: 'De Disch ist der Tisch, an dem die Familie sitzt und isst. Den Disch decken heißt den Tisch decken. Ein alltägliches Möbelwort.',
+      beispiel: 'Dat Eten steiht al op den Disch.',
+      beispiel_hd: 'Das Essen steht schon auf dem Tisch.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'mk-035',
+      ausdruck: 'Hand',
+      hochdeutsch: 'Hand',
+      bedeutung: 'De Hand ist die Hand, Mehrzahl Hannen. Een Hand wäscht de anner ist ein bekanntes Sprichwort. Ein niederdeutsches Körperwort.',
+      beispiel: 'Giff mi maal de Hand.',
+      beispiel_hd: 'Gib mir mal die Hand.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'mk-036',
+      ausdruck: 'eten',
+      hochdeutsch: 'essen',
+      bedeutung: 'eten heißt essen. Wat gifft dat to eten? fragt nach dem Essen. Dat Eten ist auch die Mahlzeit selbst. Ein zentrales Alltagsverb.',
+      beispiel: 'Kumm, wi wüllt eten.',
+      beispiel_hd: 'Komm, wir wollen essen.',
+      kategorie: 'alltag'
     }
   ]
 };
