@@ -8,6 +8,7 @@ import '../widgets/brand_logo.dart';
 import '../widgets/dialekt_card.dart';
 import '../widgets/gradient_button.dart';
 import 'dialekt_detail_screen.dart';
+import 'search_screen.dart';
 import 'settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -46,6 +47,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
+                IconButton(
+                  tooltip: 'Suchen',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const SearchScreen()),
+                  ),
+                  icon: Icon(Icons.search_rounded, color: surfaces.textMuted),
+                ),
                 IconButton(
                   tooltip: 'Einstellungen',
                   onPressed: () => Navigator.of(context).push(

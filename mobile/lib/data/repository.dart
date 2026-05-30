@@ -51,6 +51,43 @@ class DialektRepository {
     return '🏷️';
   }
 
+  /// Normalisiert für die Suche: Kleinschreibung + Umlaut-/ß-Faltung.
+  static String normalize(String s) {
+    var t = s.toLowerCase();
+    const map = {
+      'ä': 'a', 'ö': 'o', 'ü': 'u', 'ß': 'ss',
+      'á': 'a', 'à': 'a', 'â': 'a', 'é': 'e', 'è': 'e', 'ê': 'e',
+    };
+    map.forEach((k, v) => t = t.replaceAll(k, v));
+    return t.trim();
+  }
+
+  /// Sucht Dialekte (Name/Region) und Ausdrücke (Ausdruck/Hochdeutsch).
+  ({
+    List<Dialekt> dialekte,
+    List<({Dialekt dialekt, Ausdruck ausdruck})> ausdruecke,
+  }) search(String query, {int limit = 40}) {
+    final q = normalize(query);
+    if (q.isEmpty) {
+      return (dialekte: const [], ausdruecke: const []);
+    }
+    final ds = _dialekte
+        .where((d) =>
+            normalize(d.name).contains(q) || normalize(d.region).contains(q))
+        .toList();
+    final as = <({Dialekt dialekt, Ausdruck ausdruck})>[];
+    for (final d in _dialekte) {
+      for (final a in d.ausdruecke) {
+        if (normalize(a.ausdruck).contains(q) ||
+            normalize(a.hochdeutsch).contains(q)) {
+          as.add((dialekt: d, ausdruck: a));
+          if (as.length >= limit) return (dialekte: ds, ausdruecke: as);
+        }
+      }
+    }
+    return (dialekte: ds, ausdruecke: as);
+  }
+
   Future<void> load() async {
     if (_loaded) return;
     final dRaw = await rootBundle.loadString('assets/data/dialekte.json');
