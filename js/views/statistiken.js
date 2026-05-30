@@ -5,7 +5,7 @@ import { getLernstand } from '../store/learning.js';
 import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getXp, xpToNextLevel, getLevelTitle, getXpLog } from '../store/xp.js';
-import { getSrsStats } from '../store/srs.js';
+import { getSrsStats, getSrsConfig, setSrsConfig } from '../store/srs.js';
 import { getProgressHistory, getGoalTarget, getTodayProgress } from '../store/goals.js';
 import { getStreakHeatmap } from '../store/streak.js';
 import { getWeekReview } from '../util/week-review.js';
@@ -86,6 +86,9 @@ export function renderStatistiken(root) {
     )
   ));
 
+  // ── SRS-Einstellungen (Scheduler + Wunsch-Retention) ─────────
+  view.appendChild(renderSrsSettingsSection());
+
   // ── Quiz-Verlauf ─────────────────────────────────────────────
   if (quizHistory.length) {
     const sparkData = quizHistory.slice(0, 20).reverse().map(h => Math.round((h.score / h.total) * 100));
@@ -150,6 +153,71 @@ export function renderStatistiken(root) {
   view.appendChild(renderWeekReview());
 
   root.appendChild(view);
+}
+
+// ── SRS-Einstellungen: Scheduler-Wahl + Wunsch-Retention ───────
+function renderSrsSettingsSection() {
+  const section = el('section', { class: 'section stats-srs-settings', dataset: { reveal: '' } });
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '⚙️ Wiederholungs-Algorithmus')));
+
+  const body = el('div', { class: 'srs-settings-body' });
+  section.appendChild(body);
+
+  // In-place neu zeichnen, damit das Retention-Feld je nach Scheduler erscheint.
+  function paint() {
+    body.innerHTML = '';
+    const cfg = getSrsConfig();
+
+    const mkSeg = (val, title, sub) => el('button', {
+      class: 'srs-seg-btn' + (cfg.scheduler === val ? ' is-active' : ''),
+      type: 'button',
+      'aria-pressed': cfg.scheduler === val,
+      onClick: () => { setSrsConfig({ scheduler: val }); paint(); },
+    }, el('span', { class: 'srs-seg-title' }, title), el('span', { class: 'srs-seg-sub' }, sub));
+
+    body.appendChild(el('div', { class: 'srs-seg', role: 'group', 'aria-label': 'Scheduler-Auswahl' },
+      mkSeg('fsrs', 'FSRS-5', 'Modern · empfohlen'),
+      mkSeg('sm2', 'SM-2', 'Klassisch (Anki)')
+    ));
+
+    body.appendChild(el('p', { class: 'lede srs-settings-hint' },
+      cfg.scheduler === 'fsrs'
+        ? 'FSRS-5 modelliert dein Gedächtnis über Difficulty, Stability und Retrievability und trifft deine Wunsch-Retention präzise — spürbar effizienter als SM-2.'
+        : 'SM-2 ist der klassische Karteikasten-Algorithmus (Anki-Default) mit Easiness-Faktor.'
+    ));
+
+    if (cfg.scheduler === 'fsrs') {
+      const pct = Math.round(cfg.retention * 100);
+      const pctEl = el('strong', { class: 'srs-retention-pct' }, pct + '%');
+      const tradeoffEl = el('div', { class: 'srs-retention-tradeoff lede' }, retentionTradeoff(pct));
+      const slider = el('input', {
+        type: 'range', min: '70', max: '97', step: '1', value: String(pct),
+        class: 'srs-retention-slider',
+        'aria-label': 'Wunsch-Retention in Prozent',
+      });
+      slider.addEventListener('input', () => {
+        const p = Number(slider.value);
+        pctEl.textContent = p + '%';
+        tradeoffEl.textContent = retentionTradeoff(p);
+      });
+      slider.addEventListener('change', () => {
+        setSrsConfig({ retention: Number(slider.value) / 100 });
+      });
+      body.appendChild(el('div', { class: 'srs-retention' },
+        el('div', { class: 'srs-retention-label' }, el('span', {}, 'Wunsch-Retention'), pctEl),
+        slider,
+        tradeoffEl
+      ));
+    }
+  }
+  paint();
+  return section;
+}
+
+function retentionTradeoff(pct) {
+  if (pct >= 90) return 'Hohe Retention: weniger Vergessen, dafür häufigere Wiederholungen.';
+  if (pct >= 80) return 'Ausgewogen: solides Behalten bei moderater Wiederholungslast.';
+  return 'Niedrige Retention: längere Intervalle und weniger Reviews — aber mehr Vergessen.';
 }
 
 // ── Sektion A: Vergessenskurve ─────────────────────────────────

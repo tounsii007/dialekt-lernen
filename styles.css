@@ -8711,3 +8711,97 @@ img, svg, video {
     border: 1px solid #ddd !important;
   }
 }
+
+/* ============================================================
+ * FSRS: Intervall-Vorschau auf den Bewertungs-Buttons
+ * Jeder Button stapelt sein Label über dem prognostizierten
+ * nächsten Wiederholungs-Intervall (z. B. „3 T", „2 Wo").
+ * ============================================================ */
+.fc-rate {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  line-height: 1.15;
+}
+.fc-rate-label { font-weight: 600; }
+.fc-rate-ival {
+  font-size: 0.66rem;
+  font-weight: 600;
+  opacity: 0.62;
+}
+.fc-rate:hover .fc-rate-ival { opacity: 0.9; }
+
+/* ============================================================
+ * SRS-Algorithmus-Einstellungen (Statistiken-View)
+ * Scheduler-Umschalter (FSRS-5 / SM-2) + Wunsch-Retention-Slider.
+ * ============================================================ */
+.srs-settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.srs-seg {
+  display: flex;
+  gap: 8px;
+}
+.srs-seg-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color .14s var(--ease), background .14s;
+}
+.srs-seg-btn:hover {
+  border-color: color-mix(in oklab, var(--brand) 40%, var(--border));
+}
+.srs-seg-btn.is-active {
+  border-color: var(--brand);
+  background: color-mix(in oklab, var(--brand) 10%, var(--bg-elev));
+}
+.srs-seg-title { font-weight: 700; font-size: .92rem; }
+.srs-seg-sub { font-size: .76rem; color: var(--text-muted); }
+.srs-settings-hint {
+  font-size: .82rem;
+  color: var(--text-soft);
+  margin: 0;
+}
+.srs-retention {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  background: var(--bg-soft);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+}
+.srs-retention-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+.srs-retention-pct {
+  font-family: var(--font-display, inherit);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--brand);
+}
+.srs-retention-slider {
+  width: 100%;
+  accent-color: var(--brand);
+  cursor: pointer;
+}
+.srs-retention-tradeoff {
+  font-size: .78rem;
+  color: var(--text-soft);
+  margin: 0;
+}
