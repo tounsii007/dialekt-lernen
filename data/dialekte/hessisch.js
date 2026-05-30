@@ -5528,6 +5528,96 @@ export default {
       beispiel: 'Die Nacht war mer viel zu kurz.',
       beispiel_hd: 'Die Nacht war mir viel zu kurz.',
       kategorie: 'alltag'
+    },
+    {
+      id: 'h-661',
+      ausdruck: 'Sunn',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'Die Sunn ist die Sonne. Wenn die Sunn scheint, hocke die Leut drauße. Ein freundliches Naturwort, das gute Laune verspricht.',
+      beispiel: 'Heut scheint die Sunn de ganze Daa.',
+      beispiel_hd: 'Heute scheint die Sonne den ganzen Tag.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-662',
+      ausdruck: 'Schnee',
+      hochdeutsch: 'Schnee',
+      bedeutung: 'De Schnee fällt im Winter und deckt alles weiß zu. Wenns Schnee gibt, freue sich die Kinner. Ein winterliches Naturwort der hessischen Mundart.',
+      beispiel: 'Heut Nacht is viel Schnee gefalle.',
+      beispiel_hd: 'Heute Nacht ist viel Schnee gefallen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-663',
+      ausdruck: 'Wald',
+      hochdeutsch: 'Wald',
+      bedeutung: 'De Wald umgibt die hessischen Dörfer, vom Taunus bis zum Vogelsberg. Im Wald geht mer spaziere un Pilze suche. Ein vertrautes Naturwort.',
+      beispiel: 'Am Sunndaa laafe mer dorch de Wald.',
+      beispiel_hd: 'Am Sonntag gehen wir durch den Wald.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-664',
+      ausdruck: 'Hund',
+      hochdeutsch: 'Hund',
+      bedeutung: 'De Hund ist der Hund, des treueste Haustier. De Hund muss gassi gefiehrt werre. Ein alltägliches Tierwort der hessischen Mundart.',
+      beispiel: 'De Hund will raus in de Garte.',
+      beispiel_hd: 'Der Hund will raus in den Garten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-665',
+      ausdruck: 'Katz',
+      hochdeutsch: 'Katze',
+      bedeutung: 'Die Katz ist die Katze, die sich am Owend aufs Sofa legt. Die Katz fängt die Mäus. Ein gängiges Tierwort im hessischen Alltag.',
+      beispiel: 'Die Katz hockt am Owend aufm Sofa.',
+      beispiel_hd: 'Die Katze sitzt am Abend auf dem Sofa.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-666',
+      ausdruck: 'gugge',
+      hochdeutsch: 'gucken / schauen',
+      bedeutung: 'gugge heißt schauen oder gucken. Gug emol! bedeutet „schau mal!". Ein hochfrequentes Verb des hessischen Alltags.',
+      beispiel: 'Gug emol, wer do kummt!',
+      beispiel_hd: 'Schau mal, wer da kommt!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-667',
+      ausdruck: 'laafe',
+      hochdeutsch: 'laufen / gehen',
+      bedeutung: 'laafe heißt laufen oder zu Fuß gehen. Mer laafe heem heißt „wir gehen nach Hause". Ein alltägliches Bewegungsverb der hessischen Mundart.',
+      beispiel: 'Mer laafe lieber, des is net weit.',
+      beispiel_hd: 'Wir gehen lieber zu Fuß, das ist nicht weit.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-668',
+      ausdruck: 'hocke',
+      hochdeutsch: 'sitzen',
+      bedeutung: 'hocke heißt im Hessischen schlicht sitzen, nicht nur kauern. Mer hocke zsamme beim Schobbe. Ein zentrales Verb der geselligen Runde.',
+      beispiel: 'Mer hocke am Owend beim Ebbelwoi.',
+      beispiel_hd: 'Wir sitzen am Abend beim Apfelwein.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-669',
+      ausdruck: 'esse',
+      hochdeutsch: 'essen',
+      bedeutung: 'esse heißt essen. Mer esse zsamme zu Mittag. Auch das Essen selbst meint man manchmal. Ein zentrales Alltagsverb der hessischen Mundart.',
+      beispiel: 'Mer esse heut Grie Soß mit Ei.',
+      beispiel_hd: 'Wir essen heute Grüne Soße mit Ei.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-670',
+      ausdruck: 'Eens',
+      hochdeutsch: 'eins',
+      bedeutung: 'Eens ist die Zahl eins in hessischer Lautung. Eens, zwaa, drei zählt man im Dialekt. Auch „eins nach dem anderen" sagt man eens nachem annere.',
+      beispiel: 'Gib mer eens vun de Brezel.',
+      beispiel_hd: 'Gib mir eine von den Brezeln.',
+      kategorie: 'zahlen'
     }
   ]
 };
