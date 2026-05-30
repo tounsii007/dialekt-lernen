@@ -7680,6 +7680,126 @@ img, svg, video {
 }
 
 /* ============================================================ */
+/* Tägliche Quests (Duolingo-Style)                              */
+/* ============================================================ */
+
+.quest-summary-pill {
+  flex-shrink: 0;
+  align-self: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 99px;
+  background: color-mix(in oklab, var(--brand) 14%, var(--bg-elev));
+  color: var(--brand);
+  font-variant-numeric: tabular-nums;
+}
+.quest-summary-pill.is-done {
+  background: color-mix(in oklab, var(--accent) 22%, transparent);
+  color: var(--accent);
+}
+
+.quest-alldone-banner {
+  margin-bottom: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--accent) 14%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, var(--accent) 38%, var(--border));
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-3);
+}
+
+.quest-card {
+  position: relative;
+  padding: var(--sp-4);
+  border-radius: var(--r-xl);
+  background: color-mix(in oklab, var(--brand) 6%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, var(--brand) 18%, var(--border));
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  transition: border-color var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+}
+.quest-card:hover {
+  border-color: color-mix(in oklab, var(--brand) 40%, var(--border));
+  transform: translateY(-2px);
+}
+.quest-card.is-done {
+  border-color: color-mix(in oklab, var(--accent) 45%, var(--border));
+  background: color-mix(in oklab, var(--accent) 8%, var(--bg-elev));
+}
+
+.quest-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+}
+.quest-card-icon {
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.quest-card-title {
+  flex: 1;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.25;
+}
+.quest-card-xp {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 99px;
+  background: color-mix(in oklab, var(--accent) 18%, transparent);
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.quest-card-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.quest-progress {
+  position: relative;
+  height: 8px;
+  background: color-mix(in oklab, var(--brand) 12%, var(--bg-soft));
+  border-radius: 99px;
+  overflow: hidden;
+  margin-top: auto;
+}
+.quest-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  border-radius: 99px;
+  transition: width 0.6s var(--ease-spring);
+}
+.quest-card.is-done .quest-progress-bar {
+  background: linear-gradient(90deg, var(--accent), var(--brand));
+}
+.quest-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.quest-done {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ============================================================ */
 /* Wave 3 — Lernziele (Long-term Goals)                          */
 /* ============================================================ */
 
