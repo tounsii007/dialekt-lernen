@@ -326,6 +326,186 @@ export default {
       beispiel: 'Ich muss murje widder schaffe geh.',
       beispiel_hd: 'Ich muss morgen wieder arbeiten gehen.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'sl-036',
+      ausdruck: 'Bub',
+      hochdeutsch: 'Junge',
+      bedeutung: 'De Bub ist der Junge oder Sohn. Mei Bub heißt mein Sohn. Zusammen mit Mädsche das gängige Wortpaar für Kinder im saarländischen Familienalltag.',
+      beispiel: 'De Bub kummt grad vun da Schul.',
+      beispiel_hd: 'Der Junge kommt gerade von der Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sl-037',
+      ausdruck: 'Kinner',
+      hochdeutsch: 'Kinder',
+      bedeutung: 'Kinner sind die Kinder. Die Kinner spiele drauße bedeutet, die Kinder spielen draußen. Ein häufiges Wort in jedem saarländischen Haushalt mit Familie.',
+      beispiel: 'Die Kinner spiele im Hof.',
+      beispiel_hd: 'Die Kinder spielen im Hof.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'sl-038',
+      ausdruck: 'Lait',
+      hochdeutsch: 'Leute',
+      bedeutung: 'Lait sind die Leute. Viel Lait wore do meint, viele Leute waren da. Ein alltägliches Wort für Menschen in der Gemeinschaft.',
+      beispiel: 'Beim Fescht wore viel Lait do.',
+      beispiel_hd: 'Beim Fest waren viele Leute da.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sl-039',
+      ausdruck: 'Kerl',
+      hochdeutsch: 'Mann / Kerl',
+      bedeutung: 'E Kerl ist ein Mann oder Bursche, oft anerkennend für einen tüchtigen Menschen. E ganze Kerl ist ein ganzer Kerl. Ein bodenständiges Personenwort.',
+      beispiel: 'Der is e fleißiche Kerl.',
+      beispiel_hd: 'Der ist ein fleißiger Kerl.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'sl-040',
+      ausdruck: 'Hus',
+      hochdeutsch: 'Haus',
+      bedeutung: 'Es Hus ist das Haus. Heem ins Hus geh bedeutet nach Hause gehen. Das eigene Hus zu bauen war im Saarland lange ein wichtiges Lebensziel.',
+      beispiel: 'Mir hann es Hus selwer gebaut.',
+      beispiel_hd: 'Wir haben das Haus selbst gebaut.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sl-041',
+      ausdruck: 'Stubb',
+      hochdeutsch: 'Stube / Wohnzimmer',
+      bedeutung: 'Die Stubb ist die gute Stube oder das Wohnzimmer, wo die Familie zusammensitzt und Besuch empfangen wird. Ein gemütlicher Mittelpunkt des Hauses.',
+      beispiel: 'Mir hocke in da Stubb beinanner.',
+      beispiel_hd: 'Wir sitzen im Wohnzimmer beisammen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sl-042',
+      ausdruck: 'Schdroß',
+      hochdeutsch: 'Straße',
+      bedeutung: 'Die Schdroß ist die Straße. Uff da Schdroß spiele die Kinner früher Fußball. Ein alltägliches Ortswort der saarländischen Mundart.',
+      beispiel: 'Pass uff, wennde iwwer die Schdroß gehsch.',
+      beispiel_hd: 'Pass auf, wenn du über die Straße gehst.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'sl-043',
+      ausdruck: 'Bach',
+      hochdeutsch: 'Bach',
+      bedeutung: 'De Bach ist der kleine Wasserlauf, der durchs Dorf oder Tal fließt. Am Bach spiele die Kinner gern. Viele Ortsnamen im Saarland enden auf -bach.',
+      beispiel: 'Hinnerm Hus laaft e klääner Bach.',
+      beispiel_hd: 'Hinter dem Haus läuft ein kleiner Bach.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sl-044',
+      ausdruck: 'Wald',
+      hochdeutsch: 'Wald',
+      bedeutung: 'De Wald umgibt die saarländischen Dörfer und lädt zum Spazieren und Pilzesuchen ein. Im Wald war früher das Holzmachen eine wichtige Arbeit.',
+      beispiel: 'Am Sunndaa mache mer e Spaziergang im Wald.',
+      beispiel_hd: 'Am Sonntag machen wir einen Spaziergang im Wald.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sl-045',
+      ausdruck: 'Sunn',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'Die Sunn ist die Sonne. Wenn die Sunn scheint, sitze die Lait drauße. Ein freundliches Naturwort, das gute Laune verspricht.',
+      beispiel: 'Heit scheint die Sunn de ganze Daa.',
+      beispiel_hd: 'Heute scheint die Sonne den ganzen Tag.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sl-046',
+      ausdruck: 'Reje',
+      hochdeutsch: 'Regen',
+      bedeutung: 'De Reje ist der Regen. Bei Reje bleibe die Lait lieber im Hus. Ein häufiges Wetterwort im regenreichen Saarland.',
+      beispiel: 'Bei dem Reje geht keiner naus.',
+      beispiel_hd: 'Bei dem Regen geht keiner hinaus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'sl-047',
+      ausdruck: 'Dorscht',
+      hochdeutsch: 'Durst',
+      bedeutung: 'De Dorscht ist der Durst. Ich hann Dorscht bedeutet „ich habe Durst". Gegen den Dorscht hilft eine kühle Schorle. Ein alltägliches Körperwort.',
+      beispiel: 'Noch da Arwet hann ich e Dorscht.',
+      beispiel_hd: 'Nach der Arbeit habe ich einen Durst.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'sl-048',
+      ausdruck: 'Worschd',
+      hochdeutsch: 'Wurst',
+      bedeutung: 'Die Worschd ist die Wurst, im Saarland besonders die Lyoner oder die Bratworschd vom Schwenker. Des is mir Worschd heißt übertragen „das ist mir egal".',
+      beispiel: 'Aufs Brot kummt e Stick Worschd.',
+      beispiel_hd: 'Aufs Brot kommt ein Stück Wurst.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sl-049',
+      ausdruck: 'Weck',
+      hochdeutsch: 'Brötchen',
+      bedeutung: 'De Weck ist das Brötchen. Beim Beck holt man morgens frische Weck. Ein Lyonerweck ist ein Brötchen mit Fleischwurst, ein beliebter Imbiss.',
+      beispiel: 'Hol mer drei Weck vum Beck.',
+      beispiel_hd: 'Hol mir drei Brötchen vom Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sl-050',
+      ausdruck: 'Woi',
+      hochdeutsch: 'Wein',
+      bedeutung: 'De Woi ist der Wein, im Saarland gern als Schorle getrunken. An da Saar un Mosel wächst guder Woi. Teil der geselligen Lebensart.',
+      beispiel: 'Am Owend trinke mer e Glas Woi.',
+      beispiel_hd: 'Am Abend trinken wir ein Glas Wein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'sl-051',
+      ausdruck: 'Dippe',
+      hochdeutsch: 'Topf',
+      bedeutung: 'Es Dippe ist der Topf, in dem gekocht wird — etwa der Dibbelabbes, der seinen Namen vom Dippe hat. Ein Grundwort der saarländischen Küche.',
+      beispiel: 'De Eintopf kocht im große Dippe.',
+      beispiel_hd: 'Der Eintopf kocht im großen Topf.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sl-052',
+      ausdruck: 'Pann',
+      hochdeutsch: 'Pfanne',
+      bedeutung: 'Die Pann ist die Pfanne, in der man brät und backt. In da Pann mache mer Brägele oder Spiegeleier. Ein alltägliches Küchenwort.',
+      beispiel: 'In da Pann brutzele die Brägele.',
+      beispiel_hd: 'In der Pfanne brutzeln die Bratkartoffeln.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sl-053',
+      ausdruck: 'gscheit',
+      hochdeutsch: 'klug / vernünftig',
+      bedeutung: 'gscheit bedeutet klug oder vernünftig. Sei gscheit! mahnt zur Vernunft. Ebbes Gscheites lerne heißt, etwas Ordentliches zu lernen. Ein vielseitiges Wort.',
+      beispiel: 'Der Bub is e gscheites Kerlche.',
+      beispiel_hd: 'Der Junge ist ein kluges Kerlchen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sl-054',
+      ausdruck: 'hann',
+      hochdeutsch: 'haben',
+      bedeutung: 'hann heißt haben. Ich hann, du hasch, mir hann — die saarländische Beugung. Ich hann kä Zeit bedeutet „ich habe keine Zeit". Ein zentrales Hilfsverb.',
+      beispiel: 'Mir hann heit viel zu dun.',
+      beispiel_hd: 'Wir haben heute viel zu tun.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'sl-055',
+      ausdruck: 'esse',
+      hochdeutsch: 'essen',
+      bedeutung: 'esse heißt essen — und passend zum Motto Hauptsach gudd gess wird im Saarland gern und gut gegessen. Mir esse zsamme bedeutet „wir essen zusammen".',
+      beispiel: 'Am Mittaa esse mer all zsamme.',
+      beispiel_hd: 'Am Mittag essen wir alle zusammen.',
+      kategorie: 'alltag'
     }
   ]
 };
