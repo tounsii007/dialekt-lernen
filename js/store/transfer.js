@@ -99,6 +99,15 @@ function sanitizeRecord(obj) {
   return out;
 }
 
+// Erzwingt eine endliche Zahl >= min; sonst fallback. Schützt downstream-Mathe
+// (XP-Level, Streak-Zähler, Goal-%) vor korrupten Skalaren aus einem
+// manipulierten Backup ("abc", -5, NaN, "20"), die isValidShape passieren,
+// weil sie nur die Top-Level-Objektform prüft, nicht die inneren Skalare.
+function numOr(v, fallback, min = 0) {
+  const n = Number(v);
+  return Number.isFinite(n) && n >= min ? n : fallback;
+}
+
 // Validiert und importiert ein Snapshot. Liefert {ok, error?}.
 // strategy:
 //   'replace' — überschreibt vorhandene Felder
@@ -149,12 +158,20 @@ function replaceImport(d) {
       lastDay: null,
       days: {},
       ...d.streak,
+      count: numOr(d.streak.count, 0),
+      lastDay: typeof d.streak.lastDay === 'string' ? d.streak.lastDay : null,
       days: (d.streak.days && typeof d.streak.days === 'object') ? d.streak.days : {},
     };
   }
   if (Array.isArray(d.quizHistory)) state.quizHistory = d.quizHistory;
   if (d.lernStats && typeof d.lernStats === 'object') {
-    state.lernStats = { total: 0, korrekt: 0, ...d.lernStats };
+    state.lernStats = {
+      total: 0,
+      korrekt: 0,
+      ...d.lernStats,
+      total: numOr(d.lernStats.total, 0),
+      korrekt: numOr(d.lernStats.korrekt, 0),
+    };
   }
   if (Array.isArray(d.visited)) state.visited = d.visited;
   if (d.achievements && typeof d.achievements === 'object') state.achievements = d.achievements;
@@ -166,6 +183,7 @@ function replaceImport(d) {
       total: 0,
       log: [],
       ...d.xp,
+      total: numOr(d.xp.total, 0),
       log: Array.isArray(d.xp.log) ? d.xp.log : [],
     };
   }
@@ -175,6 +193,7 @@ function replaceImport(d) {
       progress: {},
       reminderShown: {},
       ...d.goals,
+      target: numOr(d.goals.target, 10, 1),
       progress: (d.goals.progress && typeof d.goals.progress === 'object') ? d.goals.progress : {},
       reminderShown: (d.goals.reminderShown && typeof d.goals.reminderShown === 'object') ? d.goals.reminderShown : {},
     };

@@ -218,6 +218,78 @@ describe('importState — Härtung gegen korrupte gelernt-Einträge', () => {
   });
 });
 
+describe('importState — Härtung gegen korrupte Skalar-Zahlen (replace)', () => {
+  beforeEach(() => resetAllData());
+
+  // isValidShape prüft nur, dass streak/xp/lernStats/goals top-level Objekte
+  // sind — die inneren Skalare nicht. Ein manipuliertes Backup mit count="abc",
+  // total=-5 oder target="20" würde sonst verbatim übernommen und bricht später
+  // XP-Level, Streak-Zähler und Goal-%-Mathe (NaN/negativ propagiert).
+  it('coerced korrupte streak.count / xp.total / lernStats / goals.target', () => {
+    const snap = {
+      format: 'dialekto', version: 2,
+      data: {
+        streak: { count: 'abc', lastDay: 12345, days: { '2026-1-1': 3 } },
+        xp: { total: -5, log: [] },
+        lernStats: { total: NaN, korrekt: 'x' },
+        goals: { target: '20', progress: {}, reminderShown: {} },
+      },
+    };
+    const r = importState(snap, { strategy: 'replace' });
+    assert.equal(r.ok, true);
+
+    // streak.count: "abc" → 0 (endliche Zahl >= 0), lastDay nicht-String → null.
+    assert.equal(state.streak.count, 0);
+    assert.equal(state.streak.lastDay, null);
+    assert.deepEqual(state.streak.days, { '2026-1-1': 3 }); // gültiges Feld bleibt
+
+    // xp.total: -5 (negativ) → 0.
+    assert.equal(state.xp.total, 0);
+
+    // lernStats: NaN / "x" → 0.
+    assert.equal(state.lernStats.total, 0);
+    assert.equal(state.lernStats.korrekt, 0);
+
+    // goals.target: "20" ist als Zahl coercibel → 20 (min 1 erfüllt).
+    assert.equal(state.goals.target, 20);
+    assert.equal(typeof state.goals.target, 'number');
+  });
+
+  it('ungültiges goals.target fällt auf Default 10 (min 1)', () => {
+    const snap = {
+      format: 'dialekto', version: 2,
+      data: { goals: { target: 0, progress: {}, reminderShown: {} } },
+    };
+    importState(snap, { strategy: 'replace' });
+    assert.equal(state.goals.target, 10); // 0 < min(1) → Default
+
+    importState({
+      format: 'dialekto', version: 2,
+      data: { goals: { target: 'kaputt', progress: {}, reminderShown: {} } },
+    }, { strategy: 'replace' });
+    assert.equal(state.goals.target, 10); // NaN → Default
+  });
+
+  it('gültige Zahlen bleiben unverändert', () => {
+    const snap = {
+      format: 'dialekto', version: 2,
+      data: {
+        streak: { count: 7, lastDay: '2026-05-30', days: {} },
+        xp: { total: 250, log: [] },
+        lernStats: { total: 40, korrekt: 33 },
+        goals: { target: 50, progress: {}, reminderShown: {} },
+      },
+    };
+    importState(snap, { strategy: 'replace' });
+    assert.equal(state.streak.count, 7);
+    assert.equal(state.streak.lastDay, '2026-05-30');
+    assert.equal(state.xp.total, 250);
+    assert.equal(state.lernStats.total, 40);
+    assert.equal(state.lernStats.korrekt, 33);
+    assert.equal(state.goals.target, 50);
+  });
+});
+
 describe('resetAllData — setzt ALLE Felder zurück (auch xp/goals/notes)', () => {
   it('XP, Goals, Notes, Preset werden zurückgesetzt', () => {
     seedState();

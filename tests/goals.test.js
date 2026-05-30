@@ -65,6 +65,50 @@ describe('getTodayProgress / incrementGoalProgress', () => {
   });
 });
 
+describe('incrementGoalProgress — Pruning behält die chronologisch jüngsten 30 Tage', () => {
+  beforeEach(resetState);
+
+  // Schlüssel haben das Format YYYY-M-D (nicht null-gepolstert). Ein naiver
+  // String-Sort ordnet "2025-1-10" vor "2025-1-9" und "2025-12-1" vor
+  // "2025-9-1" — also würden beim Kappen auf 30 die FALSCHEN Tage verworfen.
+  // Dieser Test seedet 35 Vergangenheits-Tage über eine Monatsgrenze (inkl.
+  // ein-/zweistelliger Tage), triggert einen Increment (= heute, jüngster Tag)
+  // und prüft, dass exakt die ältesten Tage gekappt werden.
+  function mkKey(date) {
+    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  }
+
+  it('verwirft die ältesten Tage, nicht die lexikografisch kleinsten', () => {
+    const seeded = [];
+    for (let i = 0; i < 35; i++) {
+      const d = new Date(2025, 0, 1 + i); // 2025-1-1 .. 2025-2-4
+      const key = mkKey(d);
+      seeded.push(key);
+      state.goals.progress[key] = i + 1;
+    }
+
+    incrementGoalProgress(); // fügt den heutigen (jüngsten) Tag hinzu → 36 Einträge
+
+    const remaining = Object.keys(state.goals.progress);
+    assert.equal(remaining.length, 30, 'auf 30 Tage gekappt');
+
+    // Heute (jüngster Tag) bleibt erhalten.
+    const today = new Date();
+    assert.ok(remaining.includes(mkKey(today)), 'heutiger Tag bleibt');
+
+    // Die 6 chronologisch ältesten seeds (i=0..5) sind verworfen.
+    for (let i = 0; i < 6; i++) {
+      assert.ok(!remaining.includes(seeded[i]), `ältester Tag ${seeded[i]} verworfen`);
+    }
+    // Die jüngeren seeds (i>=6) bleiben — inkl. "2025-1-10", das ein naiver
+    // String-Sort fälschlich als "alt" einstufen und kappen würde.
+    for (let i = 6; i < 35; i++) {
+      assert.ok(remaining.includes(seeded[i]), `jüngerer Tag ${seeded[i]} bleibt`);
+    }
+    assert.ok(remaining.includes('2025-1-10'), 'lexikografisch kleiner, aber chronologisch jung → bleibt');
+  });
+});
+
 describe('isGoalMet / getGoalPct', () => {
   beforeEach(resetState);
 

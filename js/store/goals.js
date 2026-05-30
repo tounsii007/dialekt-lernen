@@ -11,6 +11,14 @@ function todayKey() {
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 }
 
+// Wandelt einen YYYY-M-D-Key in eine chronologisch sortierbare Ordnungszahl.
+// Nötig, weil die Keys NICHT null-gepolstert sind ("2026-5-9" vs "2026-5-10"):
+// ein lexikografischer String-Sort würde sie falsch ordnen.
+function keyToOrd(key) {
+  const [y, m, d] = String(key).split('-').map(Number);
+  return (y || 0) * 10000 + (m || 0) * 100 + (d || 0);
+}
+
 function ensureGoalState() {
   if (!state.goals || typeof state.goals !== 'object') {
     state.goals = { target: DEFAULT_GOAL, progress: {}, reminderShown: {} };
@@ -39,10 +47,12 @@ export function incrementGoalProgress(by = 1) {
   ensureGoalState();
   const key = todayKey();
   state.goals.progress[key] = (state.goals.progress[key] || 0) + by;
-  // Prune old entries (keep last 30 days)
-  const keys = Object.keys(state.goals.progress).sort().reverse();
+  // Prune old entries (keep last 30 days) — chronologisch sortieren, nicht
+  // lexikografisch, sonst werden bei >30 Einträgen die falschen Tage verworfen.
+  const keys = Object.keys(state.goals.progress);
   if (keys.length > 30) {
-    keys.slice(30).forEach(k => delete state.goals.progress[k]);
+    keys.sort((a, b) => keyToOrd(a) - keyToOrd(b)); // alt → neu
+    keys.slice(0, keys.length - 30).forEach(k => delete state.goals.progress[k]);
   }
   persist();
   return state.goals.progress[key];
