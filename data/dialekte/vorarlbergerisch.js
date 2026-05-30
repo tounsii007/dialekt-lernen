@@ -281,6 +281,186 @@ export default {
       beispiel: 'Am Sunntig kunnt dr Bsuach.',
       beispiel_hd: 'Am Sonntag kommt der Besuch.',
       kategorie: 'familie'
+    },
+    {
+      id: 'vb-031',
+      ausdruck: 'Muotter',
+      hochdeutsch: 'Mutter',
+      bedeutung: 'D Muotter ist die Mutter. Sie hält die Familie zusammen und kocht die Käsknöpfle. Zusammen mit Vatter eines der wichtigsten Familienwörter im Ländle.',
+      beispiel: 'D Muotter kocht hüt znacht.',
+      beispiel_hd: 'Die Mutter kocht heute Abend.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'vb-032',
+      ausdruck: 'Vatter',
+      hochdeutsch: 'Vater',
+      bedeutung: 'Dr Vatter ist der Vater. Er arbeitet, schafft am Hof oder im Betrieb. Mit Muotter und de Kinder bildet er die alemannische Familie.',
+      beispiel: 'Mi Vatter schafft in dr Fabrik.',
+      beispiel_hd: 'Mein Vater arbeitet in der Fabrik.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'vb-033',
+      ausdruck: 'Chind',
+      hochdeutsch: 'Kind',
+      bedeutung: 'Es Chind ist das Kind, Mehrzahl d Chinder. Die alemannische Lautung mit Ch ist typisch und verbindet Vorarlberg eng mit dem Schweizerdeutschen.',
+      beispiel: 'D Chinder spielnd im Garta.',
+      beispiel_hd: 'Die Kinder spielen im Garten.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'vb-034',
+      ausdruck: 'Wätter',
+      hochdeutsch: 'Wetter',
+      bedeutung: 'Es Wätter ist das Wetter, in den Bergen oft wechselhaft. Bei schö Wätter goht man wandern, bei schlecht Wätter blibt man dahei. Ein häufiges Naturwort.',
+      beispiel: 'Hüt hämmer es schö Wätter.',
+      beispiel_hd: 'Heute haben wir schönes Wetter.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'vb-035',
+      ausdruck: 'Reaga',
+      hochdeutsch: 'Regen',
+      bedeutung: 'Dr Reaga ist der Regen, der im Bregenzerwald häufig fällt. Bei Reaga zieht man d Gummistiefel a. Ein alltägliches Wetterwort des Ländles.',
+      beispiel: 'Bi dem Reaga blibmr lieber dahei.',
+      beispiel_hd: 'Bei diesem Regen bleiben wir lieber daheim.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'vb-036',
+      ausdruck: 'Sunna',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'D Sunna ist die Sonne. Wenn d Sunna scht, sitzt man gern am See. Ein freundliches Wort, das die warme Jahreszeit am Bodensee ankündigt.',
+      beispiel: 'D Sunna schint hüt dr ganz Tag.',
+      beispiel_hd: 'Die Sonne scheint heute den ganzen Tag.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'vb-037',
+      ausdruck: 'Schnee',
+      hochdeutsch: 'Schnee',
+      bedeutung: 'Dr Schnee fällt im Winter reichlich in den Bergen und lockt zum Schifahren. Viel Schnee bedeutet gute Pisten im Montafon oder Bregenzerwald.',
+      beispiel: 'Am Berg liit scho viel Schnee.',
+      beispiel_hd: 'Am Berg liegt schon viel Schnee.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'vb-038',
+      ausdruck: 'Senn',
+      hochdeutsch: 'Senner / Älpler',
+      bedeutung: 'Dr Senn bewirtschaftet im Sommer die Alp und macht aus der Milch den Bergkäse. Die Arbeit als Senn ist hart, gehört aber zur Vorarlberger Tradition.',
+      beispiel: 'Dr Senn macht obn an guata Käs.',
+      beispiel_hd: 'Der Senner macht oben einen guten Käse.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'vb-039',
+      ausdruck: 'Suppa',
+      hochdeutsch: 'Suppe',
+      bedeutung: 'D Suppa ist die Suppe, oft als erster Gang oder leichtes Abendessen. A warmi Suppa tut bei kaltem Wätter gut. Ein alltägliches Küchenwort.',
+      beispiel: 'Z Mittag gits a haaßi Suppa.',
+      beispiel_hd: 'Zu Mittag gibt es eine heiße Suppe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'vb-040',
+      ausdruck: 'znüni',
+      hochdeutsch: 'Vormittagsjause',
+      bedeutung: 'Es znüni ist die kleine Zwischenmahlzeit am Vormittag, gegen neun Uhr. Beim znüni gibts a Brot und an Kaffee. Ein alemannisches Wort, geteilt mit der Schweiz.',
+      beispiel: 'Zum znüni gits a Käsbrot.',
+      beispiel_hd: 'Zur Vormittagsjause gibt es ein Käsebrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'vb-041',
+      ausdruck: 'zvieri',
+      hochdeutsch: 'Nachmittagsjause',
+      bedeutung: 'Es zvieri ist die Zwischenmahlzeit am Nachmittag, gegen vier Uhr. Beim zvieri trinkt man Kaffee und isst ebbas Süaßes. Pendant zum znüni am Vormittag.',
+      beispiel: 'Am Nomittag mächmr es zvieri.',
+      beispiel_hd: 'Am Nachmittag machen wir eine Jause.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'vb-042',
+      ausdruck: 'Hus',
+      hochdeutsch: 'Haus',
+      bedeutung: 'Es Hus ist das Haus. Hei is Hus goh bedeutet nach Hause gehen. Im Ländle baut man gern ein eigenes Hus mit viel Holz. Ein zentrales Ortswort.',
+      beispiel: 'Üser Hus stoht am Berghang.',
+      beispiel_hd: 'Unser Haus steht am Berghang.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'vb-043',
+      ausdruck: 'Schual',
+      hochdeutsch: 'Schule',
+      bedeutung: 'D Schual ist die Schule. D Chinder gönd in d Schual. Ein alltägliches Wort, das den Tagesablauf vieler Familien bestimmt.',
+      beispiel: 'S Modle goht gern in d Schual.',
+      beispiel_hd: 'Das Mädchen geht gern in die Schule.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'vb-044',
+      ausdruck: 'goh',
+      hochdeutsch: 'gehen',
+      bedeutung: 'goh heißt gehen. I goh hei bedeutet „ich gehe heim". Ein zentrales Verb, das in vielen Wendungen vorkommt, etwa go luaga (schauen gehen).',
+      beispiel: 'I goh jetz langsam hei.',
+      beispiel_hd: 'Ich gehe jetzt langsam heim.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'vb-045',
+      ausdruck: 'cho',
+      hochdeutsch: 'kommen',
+      bedeutung: 'cho heißt kommen. Chuscht du au? bedeutet „kommst du auch?". Ein alemannisches Grundverb, das Vorarlberg eng mit der Schweiz teilt.',
+      beispiel: 'Chuscht du morn au mit?',
+      beispiel_hd: 'Kommst du morgen auch mit?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'vb-046',
+      ausdruck: 'macha',
+      hochdeutsch: 'machen',
+      bedeutung: 'macha heißt machen oder tun. Was machsch? bedeutet „was machst du?". Eines der häufigsten Verben im alltäglichen Vorarlberger Sprachgebrauch.',
+      beispiel: 'Was machsch du am Wuchenend?',
+      beispiel_hd: 'Was machst du am Wochenende?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'vb-047',
+      ausdruck: 'schaffa',
+      hochdeutsch: 'arbeiten',
+      bedeutung: 'schaffa heißt arbeiten. Viel schaffa müaßa bedeutet „viel arbeiten müssen". Der Fleiß hat im Ländle einen hohen Stellenwert.',
+      beispiel: 'I muass morn wieder schaffa.',
+      beispiel_hd: 'Ich muss morgen wieder arbeiten.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'vb-048',
+      ausdruck: 'hüt',
+      hochdeutsch: 'heute',
+      bedeutung: 'hüt bedeutet heute. Hüt han i frei heißt „heute habe ich frei". Zusammen mit moarn (morgen) und gescht (gestern) ein wichtiges Zeitwort.',
+      beispiel: 'Hüt bliibmr dahei.',
+      beispiel_hd: 'Heute bleiben wir daheim.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'vb-049',
+      ausdruck: 'moarn',
+      hochdeutsch: 'morgen',
+      bedeutung: 'moarn bedeutet morgen, der kommende Tag. Bis moarn! sagt man beim Abschied. Gegenstück sind hüt (heute) und gescht (gestern).',
+      beispiel: 'Moarn gömmr ga wandera.',
+      beispiel_hd: 'Morgen gehen wir wandern.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'vb-050',
+      ausdruck: 'guat',
+      hochdeutsch: 'gut',
+      bedeutung: 'guat heißt gut. Des isch guat gsi bedeutet „das ist gut gewesen". Eines der häufigsten Eigenschaftswörter, auch im Gruß alles Guate.',
+      beispiel: 'Des Essa isch richtig guat gsi.',
+      beispiel_hd: 'Das Essen ist richtig gut gewesen.',
+      kategorie: 'gefuehle'
     }
   ]
 };
