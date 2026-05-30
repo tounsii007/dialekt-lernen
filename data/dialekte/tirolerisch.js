@@ -317,6 +317,222 @@ export default {
       beispiel: 'Stell di ned o wia a Tschegg!',
       beispiel_hd: 'Stell dich nicht an wie ein Tölpel!',
       kategorie: 'schimpf'
+    },
+    {
+      id: 'ti-035',
+      ausdruck: 'Erdäpfel',
+      hochdeutsch: 'Kartoffeln',
+      bedeutung: 'Erdäpfel sind die Kartoffeln, das österreichische Wort dafür. Aus Erdäpfel macht man Knödl, Gröstl oder Erdäpfelsalat. Ein Grundnahrungsmittel der Tiroler Küche.',
+      beispiel: 'Mir setzn heuer wieder Erdäpfel an.',
+      beispiel_hd: 'Wir setzen dieses Jahr wieder Kartoffeln an.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-036',
+      ausdruck: 'Paradeiser',
+      hochdeutsch: 'Tomaten',
+      bedeutung: 'Paradeiser sind die Tomaten, ein typisch österreichisches Wort aus dem Paradiesapfel. Frische Paradeiser kommen im Sommer aus dem eigenen Garten.',
+      beispiel: 'Im Glashaus reifn d Paradeiser.',
+      beispiel_hd: 'Im Gewächshaus reifen die Tomaten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-037',
+      ausdruck: 'Topfen',
+      hochdeutsch: 'Quark',
+      bedeutung: 'Topfen ist der Quark, in Österreich Grundlage für Topfenknödl, Strudel und Aufstriche. Ein vielseitiges Milchprodukt der Tiroler Küche.',
+      beispiel: 'Fürn Strudl brauch i an Topfen.',
+      beispiel_hd: 'Für den Strudel brauche ich Quark.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-038',
+      ausdruck: 'Obers',
+      hochdeutsch: 'Sahne / Rahm',
+      bedeutung: 'Obers ist die Schlagsahne oder der Rahm. Auf den Kaffee oder den Kaiserschmarrn kommt ein Schlagobers. Ein gängiges österreichisches Küchenwort.',
+      beispiel: 'Aufs Dessert kimmt a Schlagobers.',
+      beispiel_hd: 'Aufs Dessert kommt Schlagsahne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-039',
+      ausdruck: 'Marilln',
+      hochdeutsch: 'Aprikosen',
+      bedeutung: 'Marilln sind die Aprikosen. Aus reifen Marilln macht man Marmelade, Knödl und Schnaps. Ein beliebtes Sommerobst im Alpenraum.',
+      beispiel: 'D Marilln san heuer besonders süaß.',
+      beispiel_hd: 'Die Aprikosen sind dieses Jahr besonders süß.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ti-040',
+      ausdruck: 'Ribisel',
+      hochdeutsch: 'Johannisbeeren',
+      bedeutung: 'Ribisel sind die Johannisbeeren, rot oder schwarz. Aus Ribisel kocht man Saft und Marmelade. Das Wort ist im ganzen österreichischen Raum gebräuchlich.',
+      beispiel: 'Im Goartn hängn d Ribisel rot am Strauch.',
+      beispiel_hd: 'Im Garten hängen die Johannisbeeren rot am Strauch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ti-041',
+      ausdruck: 'Fisolen',
+      hochdeutsch: 'grüne Bohnen',
+      bedeutung: 'Fisolen sind die grünen Gartenbohnen. Gekocht als Beilage oder im Eintopf gehören Fisolen zur sommerlichen Hausmannskost in Tirol und ganz Österreich.',
+      beispiel: 'Als Beilag gibts heut Fisolen.',
+      beispiel_hd: 'Als Beilage gibt es heute grüne Bohnen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-042',
+      ausdruck: 'Karfiol',
+      hochdeutsch: 'Blumenkohl',
+      bedeutung: 'Karfiol ist der Blumenkohl, vom italienischen cavolfiore. Gebacken oder mit Bröseln ist Karfiol eine beliebte Beilage der österreichischen Küche.',
+      beispiel: 'An Karfiol back ma in da Pfann.',
+      beispiel_hd: 'Den Blumenkohl backen wir in der Pfanne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-043',
+      ausdruck: 'Faschiertes',
+      hochdeutsch: 'Hackfleisch',
+      bedeutung: 'Faschiertes ist das Hackfleisch, aus dem man Faschierte Laibchen (Frikadellen) formt. Ein Grundbegriff der österreichischen Küche, vom Faschieren (durch den Wolf drehen).',
+      beispiel: 'Aus Faschiertem mach i Laibchen.',
+      beispiel_hd: 'Aus Hackfleisch mache ich Frikadellen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-044',
+      ausdruck: 'Gselchtes',
+      hochdeutsch: 'Geräuchertes / Pökelfleisch',
+      bedeutung: 'Gselchtes ist geräuchertes und gepökeltes Fleisch, vom Selchen (Räuchern). Gselchtes mit Knödl und Kraut ist ein deftiges Tiroler Hauptgericht.',
+      beispiel: 'Zum Kraut gibts Gselchtes mit Knödl.',
+      beispiel_hd: 'Zum Kraut gibt es Geräuchertes mit Knödeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-045',
+      ausdruck: 'Gröstl',
+      hochdeutsch: 'Tiroler Gröstl (Bratkartoffelgericht)',
+      bedeutung: 'Das Gröstl ist ein herzhaftes Pfannengericht aus gerösteten Kartoffeln, Zwiebeln und Fleischresten, oft mit Spiegelei. Ein klassisches Tiroler Resteessen vom Vortag.',
+      beispiel: 'Vom Restl mach ma a Tiroler Gröstl.',
+      beispiel_hd: 'Aus den Resten machen wir ein Tiroler Gröstl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-046',
+      ausdruck: 'Speckknödl',
+      hochdeutsch: 'Speckknödel',
+      bedeutung: 'Speckknödl sind herzhafte Knödel aus altbackenem Brot und Speck, in Suppe oder mit Kraut serviert. Ein Aushängeschild der Tiroler Knödlküche.',
+      beispiel: 'In da Suppn schwimmen zwoa Speckknödl.',
+      beispiel_hd: 'In der Suppe schwimmen zwei Speckknödel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-047',
+      ausdruck: 'Kaspressknödl',
+      hochdeutsch: 'gepresster Käseknödel',
+      bedeutung: 'Kaspressknödl sind flach gepresste Knödel mit Graukas, die in der Pfanne angebraten und in der Rindsuppe serviert werden. Eine Tiroler Spezialität.',
+      beispiel: 'D Kaspressknödl gibts in da Rindsuppn.',
+      beispiel_hd: 'Die Kaspressknödel gibt es in der Rindssuppe.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-048',
+      ausdruck: 'Zelten',
+      hochdeutsch: 'Tiroler Früchtebrot',
+      bedeutung: 'Zelten ist das schwere Früchtebrot mit Feigen, Nüssen und Dörrobst, das zur Weihnachtszeit gebacken wird. Ein traditionelles Tiroler und Südtiroler Gebäck.',
+      beispiel: 'Zu Weihnachtn backt d Oma an Zelten.',
+      beispiel_hd: 'Zu Weihnachten backt die Oma ein Früchtebrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ti-049',
+      ausdruck: 'Schwammerl',
+      hochdeutsch: 'Pilze',
+      bedeutung: 'Schwammerl sind die Pilze, die man im Wald sammelt, etwa Eierschwammerl (Pfifferlinge). Schwammerl suchen ist im Herbst ein beliebter Zeitvertreib.',
+      beispiel: 'Im Herbst gemma Schwammerl suachn.',
+      beispiel_hd: 'Im Herbst gehen wir Pilze suchen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ti-050',
+      ausdruck: 'Moosbeer',
+      hochdeutsch: 'Heidelbeere',
+      bedeutung: 'Moosbeer sind die Heidelbeeren, die im Sommer auf den Almböden wachsen. Aus Moosbeer macht man Mus, Kuchen und Schnaps. Ein begehrtes Waldobst.',
+      beispiel: 'Auf da Alm hammr Moosbeer gabrockt.',
+      beispiel_hd: 'Auf der Alm haben wir Heidelbeeren gepflückt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ti-051',
+      ausdruck: 'Murmele',
+      hochdeutsch: 'Murmeltier',
+      bedeutung: 'Murmele ist das Murmeltier, das hoch in den Bergen lebt und bei Gefahr laut pfeift. Aus dem Fett der Murmele wurde früher eine heilende Salbe gemacht.',
+      beispiel: 'Auf da Alm pfeift a Murmele.',
+      beispiel_hd: 'Auf der Alm pfeift ein Murmeltier.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ti-052',
+      ausdruck: 'Föhn',
+      hochdeutsch: 'warmer Fallwind',
+      bedeutung: 'Der Föhn ist der warme, trockene Fallwind, der über die Alpen weht und das Wetter umschlagen lässt. Viele klagen bei Föhn über Kopfweh und Müdigkeit.',
+      beispiel: 'Bei Föhn hot mei Großmuatter Kopfweh.',
+      beispiel_hd: 'Bei Föhn hat meine Großmutter Kopfschmerzen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ti-053',
+      ausdruck: 'Patschn',
+      hochdeutsch: 'Hausschuhe / Pantoffeln',
+      bedeutung: 'Patschn sind die Hausschuhe, in die man daheim schlüpft. Auch ein platter Reifen ist umgangssprachlich a Patschn. Ein gemütliches Alltagswort.',
+      beispiel: 'Zieh da d Patschn o, s is kalt.',
+      beispiel_hd: 'Zieh dir die Hausschuhe an, es ist kalt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ti-054',
+      ausdruck: 'Sackerl',
+      hochdeutsch: 'Tüte / Beutel',
+      bedeutung: 'A Sackerl ist eine kleine Tüte oder ein Beutel, etwa fürs Einkaufen oder fürs Eis. Ein typisch österreichisches Wort, das man im ganzen Land hört.',
+      beispiel: 'Tua di Semmeln ins Sackerl.',
+      beispiel_hd: 'Tu die Brötchen in die Tüte.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ti-055',
+      ausdruck: 'Stiege',
+      hochdeutsch: 'Treppe',
+      bedeutung: 'D Stiege ist die Treppe. Über d Stiege geht man in den ersten Stock hinauf. Ein im Alpenraum verbreitetes Wort für die Treppe im Haus.',
+      beispiel: 'Geh d Stiege auffi, s Zimmer is obn.',
+      beispiel_hd: 'Geh die Treppe hinauf, das Zimmer ist oben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ti-056',
+      ausdruck: 'Greißler',
+      hochdeutsch: 'kleiner Lebensmittelladen',
+      bedeutung: 'Der Greißler ist der kleine Tante-Emma-Laden im Dorf, wo es alles fürs Tägliche gibt. Viele Greißler sind heute verschwunden, gelten aber als Stück Heimat.',
+      beispiel: 'Beim Greißler hol i no a Milch.',
+      beispiel_hd: 'Beim kleinen Laden hole ich noch Milch.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ti-057',
+      ausdruck: 'Jänner',
+      hochdeutsch: 'Januar',
+      bedeutung: 'Jänner ist der Januar, der erste Monat des Jahres. Das Wort ist in Österreich und Tirol üblich, wo im Jänner tief verschneite Berge zum Schifahren locken.',
+      beispiel: 'Im Jänner liegt am Berg viel Schnee.',
+      beispiel_hd: 'Im Januar liegt am Berg viel Schnee.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ti-058',
+      ausdruck: 'Hoagascht',
+      hochdeutsch: 'geselliger Stubenabend / Plausch',
+      bedeutung: 'Der Hoagascht ist das zwanglose abendliche Beisammensein in der Stube, mit Reden, Musik und Geschichten. Ein altes Tiroler Wort für gepflegte Geselligkeit.',
+      beispiel: 'Am Obnd hammr an gmiatlichn Hoagascht.',
+      beispiel_hd: 'Am Abend haben wir ein gemütliches Beisammensein.',
+      kategorie: 'redensart'
     }
   ]
 };
