@@ -299,6 +299,186 @@ export default {
       beispiel: 'I muess morge wieder schaffe.',
       beispiel_hd: 'Ich muss morgen wieder arbeiten.',
       kategorie: 'arbeit'
+    },
+    {
+      id: 'bad-033',
+      ausdruck: 'Bueble',
+      hochdeutsch: 'kleiner Junge / Bub',
+      bedeutung: 'Es Bueble ist der kleine Junge, liebevolle Verkleinerung von Bueb. Weibliches Gegenstück ist s Mädle. Ein zärtliches Familienwort im badischen Alltag.',
+      beispiel: 'S Bueble lernt grad laufe.',
+      beispiel_hd: 'Der kleine Junge lernt gerade laufen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'bad-034',
+      ausdruck: 'Spätzle',
+      hochdeutsch: 'Spätzle',
+      bedeutung: 'Spätzle sind die geschabten oder gepressten Eiernudeln, eine Säule der badisch-schwäbischen Küche. Frische Spätzle gehören zu Braten, Linsen oder als Kässpätzle.',
+      beispiel: 'Zum Brote gits selbstgmachte Spätzle.',
+      beispiel_hd: 'Zum Braten gibt es selbstgemachte Spätzle.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'bad-035',
+      ausdruck: 'Maultasche',
+      hochdeutsch: 'gefüllte Teigtasche',
+      bedeutung: 'Maultasche sind große, mit Brät und Spinat gefüllte Teigtaschen. Gekocht in der Brühe oder geröstet mit Ei eine beliebte Spezialität des Südwestens.',
+      beispiel: 'In de Brüeh schwimme zwei Maultasche.',
+      beispiel_hd: 'In der Brühe schwimmen zwei Maultaschen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'bad-036',
+      ausdruck: 'Bredle',
+      hochdeutsch: 'Weihnachtsplätzchen',
+      bedeutung: 'Bredle sind die kleinen Weihnachtsplätzchen, die in der Adventszeit gebacken werden. Jede Familie hat ihre eigenen Bredle-Rezepte für Zimtsterne und Co.',
+      beispiel: 'In de Adventszeit backe mir Bredle.',
+      beispiel_hd: 'In der Adventszeit backen wir Plätzchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'bad-037',
+      ausdruck: 'Gutsle',
+      hochdeutsch: 'Bonbon / Plätzchen',
+      bedeutung: 'Es Gutsle ist ein Bonbon oder Plätzchen, eine Süßigkeit für zwischendurch. Den Kindern steckt die Oma gern e Gutsle zu. Ein liebevolles Wort.',
+      beispiel: 'D Oma hot de Kinder Gutsle gschenkt.',
+      beispiel_hd: 'Die Oma hat den Kindern Bonbons geschenkt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'bad-038',
+      ausdruck: 'Viertele',
+      hochdeutsch: 'Viertelliter Wein',
+      bedeutung: 'Es Viertele ist das Viertelliterglas Wein, das man am Feierabend genießt. Es Viertele trinke gehört zur badischen Geselligkeit und Lebensart dazu.',
+      beispiel: 'Am Obe trink i no es Viertele.',
+      beispiel_hd: 'Am Abend trinke ich noch ein Viertele.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'bad-039',
+      ausdruck: 'Stüble',
+      hochdeutsch: 'Stube / Wirtsstube',
+      bedeutung: 'Es Stüble ist die gemütliche Stube oder kleine Wirtschaft, in der man beim Viertele zusammensitzt. Ein Ort der Geselligkeit im badischen Dorf.',
+      beispiel: 'Mir hocke im Stüble beim Wii.',
+      beispiel_hd: 'Wir sitzen in der Stube beim Wein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'bad-040',
+      ausdruck: 'Buckel',
+      hochdeutsch: 'Rücken',
+      bedeutung: 'De Buckel ist der Rücken. Mir tuet de Buckel weh heißt „mir tut der Rücken weh". En breite Buckel hat, wer viel aushält. Ein anschauliches Körperwort.',
+      beispiel: 'Vom Schaffe tuet mir de Buckel weh.',
+      beispiel_hd: 'Vom Arbeiten tut mir der Rücken weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'bad-041',
+      ausdruck: 'Hampfle',
+      hochdeutsch: 'Handvoll',
+      bedeutung: 'E Hampfle ist eine Handvoll, also so viel wie in eine Hand passt. E Hampfle Nuss meint eine Handvoll Nüsse. Ein anschauliches Mengenwort.',
+      beispiel: 'Gib mir e Hampfle Mehl in de Teig.',
+      beispiel_hd: 'Gib mir eine Handvoll Mehl in den Teig.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'bad-042',
+      ausdruck: 'Kehrwoche',
+      hochdeutsch: 'Reinigungsdienst-Turnus',
+      bedeutung: 'D Kehrwoche ist der wöchentlich wechselnde Putzdienst im Mietshaus, für Treppe und Gehweg. Eine fast sprichwörtliche Institution der schwäbisch-badischen Ordnungsliebe.',
+      beispiel: 'Die Woch hammir Kehrwoche.',
+      beispiel_hd: 'Diese Woche haben wir Kehrwoche.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'bad-043',
+      ausdruck: 'gschafft',
+      hochdeutsch: 'erschöpft / müde',
+      bedeutung: 'gschafft ist, wer erschöpft und müde von der Arbeit ist. I bi heit total gschafft heißt „ich bin heute völlig erschöpft". Vom vielen Schaffe kommt das gschafft sein.',
+      beispiel: 'Nach em Tag bi i ganz gschafft.',
+      beispiel_hd: 'Nach dem Tag bin ich ganz erschöpft.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'bad-044',
+      ausdruck: 'bäbbe',
+      hochdeutsch: 'kleben',
+      bedeutung: 'bäbbe heißt kleben oder pappen. Der Teig bäbbt an de Finger. Davon kommt auch der Bäbber, der Aufkleber. Ein anschauliches Alltagsverb.',
+      beispiel: 'Der Bonbon bäbbt an de Zäh.',
+      beispiel_hd: 'Der Bonbon klebt an den Zähnen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'bad-045',
+      ausdruck: 'dehäm',
+      hochdeutsch: 'zu Hause / daheim',
+      bedeutung: 'dehäm bedeutet zu Hause oder daheim. Dehäm isch dehäm drückt die Verbundenheit mit der Heimat aus. Ein warmherziges Wort des Südwestens.',
+      beispiel: 'Am liebschte bin i dehäm.',
+      beispiel_hd: 'Am liebsten bin ich zu Hause.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'bad-046',
+      ausdruck: 'glei',
+      hochdeutsch: 'gleich / sofort',
+      bedeutung: 'glei bedeutet gleich oder sofort. I kumm glei heißt „ich komme gleich". Ein häufiges Zeitwort, mit dem man eine baldige Handlung ankündigt.',
+      beispiel: 'Wart, i bin glei do.',
+      beispiel_hd: 'Warte, ich bin gleich da.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'bad-047',
+      ausdruck: 'ebbe',
+      hochdeutsch: 'eben / halt',
+      bedeutung: 'ebbe ist das Füllwort eben oder halt, das eine Sache als gegeben hinstellt. So isch s ebbe heißt „so ist es eben". Drückt badische Gelassenheit aus.',
+      beispiel: 'Des isch ebbe so, do kasch nix mache.',
+      beispiel_hd: 'Das ist eben so, da kannst du nichts machen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'bad-048',
+      ausdruck: 'noi',
+      hochdeutsch: 'nein',
+      bedeutung: 'noi heißt nein, das Gegenteil von jo (ja). Es kann von einem entschiedenen Noi! bis zum gedehnten Zögern reichen. Ein alltägliches Antwortwort.',
+      beispiel: 'Noi, des will i ned.',
+      beispiel_hd: 'Nein, das will ich nicht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'bad-049',
+      ausdruck: 'Schnägg',
+      hochdeutsch: 'Schnecke',
+      bedeutung: 'D Schnägg ist die Schnecke, die im feuchten Garten die Salatköpf anknabbert. Als Schnägg bezeichnet man auch jemanden, der langsam unterwegs ist.',
+      beispiel: 'Im Garte sin viel Schnägg am Salat.',
+      beispiel_hd: 'Im Garten sind viele Schnecken am Salat.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'bad-050',
+      ausdruck: 'Kätzle',
+      hochdeutsch: 'Kätzchen',
+      bedeutung: 'Es Kätzle ist das Kätzchen, die junge Katze. Die Verkleinerung auf -le ist im Badischen für alles Kleine und Liebe typisch, so auch beim Kätzle.',
+      beispiel: 'S Kätzle spielt mit em Knäuel.',
+      beispiel_hd: 'Das Kätzchen spielt mit dem Knäuel.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'bad-051',
+      ausdruck: 'Häfele',
+      hochdeutsch: 'Töpfchen / kleiner Topf',
+      bedeutung: 'Es Häfele ist ein kleiner Topf oder Krug. Jedes Häfele find sei Deckele ist ein bekanntes Sprichwort: Für jeden gibt es den passenden Partner.',
+      beispiel: 'Mach s Gsälz ins Häfele nei.',
+      beispiel_hd: 'Füll die Marmelade ins Töpfchen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'bad-052',
+      ausdruck: 'arg',
+      hochdeutsch: 'sehr / arg',
+      bedeutung: 'arg dient als Verstärkung im Sinne von „sehr". Des isch arg schee heißt „das ist sehr schön". Ein im Südwesten allgegenwärtiges Steigerungswort.',
+      beispiel: 'Des hot mi arg gfreut.',
+      beispiel_hd: 'Das hat mich sehr gefreut.',
+      kategorie: 'alltag'
     }
   ]
 };
