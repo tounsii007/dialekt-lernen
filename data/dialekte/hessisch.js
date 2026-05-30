@@ -5348,6 +5348,96 @@ export default {
       beispiel: 'Als Worschdsänger schmettert er trotzdem jedes Liedsche mit.',
       beispiel_hd: 'Als Gelegenheitssänger schmettert er trotzdem jedes Liedchen mit.',
       kategorie: 'musik'
+    },
+    {
+      id: 'h-641',
+      ausdruck: 'Gerippte',
+      hochdeutsch: 'geripptes Apfelwein-Glas',
+      bedeutung: 'Es Gerippte ist das typische Frankfurter Apfelwein-Glas mit dem rautenförmig geripptem Muster, das den Schoppen besser greifbar macht. Aus em Gerippte schmeckt der Ebbelwoi am beschte. Ein Wahrzeichen der hessischen Trinkkultur.',
+      beispiel: 'Schenk mer en Schobbe ins Gerippte!',
+      beispiel_hd: 'Schenk mir einen Schoppen ins geripptes Glas!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-642',
+      ausdruck: 'Handkäs',
+      hochdeutsch: 'Sauermilchkäse',
+      bedeutung: 'Handkäs ist der gelbe Sauermilchkäse, der mit Musik (Zwiebeln, Essig, Öl) serviert wird. Handkäs mit Musik gehört zum Ebbelwoi wie de Bembel. Eine ikonische hessische Spezialität mit kräftigem Geruch und Geschmack.',
+      beispiel: 'Zum Schobbe gibts Handkäs mit Musik.',
+      beispiel_hd: 'Zum Schoppen gibt es Handkäse mit Musik.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-643',
+      ausdruck: 'Schobbe',
+      hochdeutsch: 'Schoppen (Glas Apfelwein)',
+      bedeutung: 'Da Schobbe ist der Schoppen, das Standardmaß Apfelwein im Gerippte. Mer trinke noch en Schobbe heißt „wir trinken noch ein Glas Apfelwein". Maßeinheit der hessischen Geselligkeit.',
+      beispiel: 'Mer trinke noch en Schobbe Ebbelwoi.',
+      beispiel_hd: 'Wir trinken noch einen Schoppen Apfelwein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-644',
+      ausdruck: 'Riwwele',
+      hochdeutsch: 'Streusel',
+      bedeutung: 'Riwwele sind die Streusel aus Mehl, Butter und Zucker, die auf den Kuchen kommen. En Riwwelkuche ist ein Streuselkuchen. Vom Verb riwwele (zerreiben). Ein Klassiker der hessischen Backstube.',
+      beispiel: 'Aufn Kuche kumme dicke Riwwele.',
+      beispiel_hd: 'Auf den Kuchen kommen dicke Streusel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-645',
+      ausdruck: 'Brieh',
+      hochdeutsch: 'Brühe',
+      bedeutung: 'Die Brieh ist die Brühe oder Suppe, in der Klöße oder Nudeln schwimmen. A heeße Brieh wärmt im Winter. Ein alltägliches Küchenwort der hessischen Mundart.',
+      beispiel: 'In de Brieh schwimme Griesnockerle.',
+      beispiel_hd: 'In der Brühe schwimmen Grießnockerl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-646',
+      ausdruck: 'Krischer',
+      hochdeutsch: 'Schreihals / Heulsuse',
+      bedeutung: 'En Krischer ist jemand, der viel schreit oder weint, vom hessischen krische (schreien, weinen). Sei kä Krischer! mahnt ein weinerliches Kind. Ein bildhaftes Menschenwort.',
+      beispiel: 'Des Kind is heut a rechter Krischer.',
+      beispiel_hd: 'Das Kind ist heute eine rechte Heulsuse.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-647',
+      ausdruck: 'dabbisch',
+      hochdeutsch: 'ungeschickt / tollpatschig',
+      bedeutung: 'dabbisch heißt ungeschickt, tollpatschig oder etwas dümmlich. Stell dich net so dabbisch o! tadelt jemanden für Ungeschick. Ein häufiges hessisches Eigenschaftswort.',
+      beispiel: 'Sei net so dabbisch, halt s fest!',
+      beispiel_hd: 'Sei nicht so ungeschickt, halt es fest!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-648',
+      ausdruck: 'babbisch',
+      hochdeutsch: 'klebrig / pappig',
+      bedeutung: 'babbisch beschreibt etwas Klebriges oder Pappiges, vom hessischen babbe (kleben). Die Händ sind ganz babbisch vom Bonbon. Ein anschauliches Alltagswort.',
+      beispiel: 'Mei Händ sind ganz babbisch.',
+      beispiel_hd: 'Meine Hände sind ganz klebrig.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-649',
+      ausdruck: 'Schnudde',
+      hochdeutsch: 'Nasenschleim / Rotznase',
+      bedeutung: 'Die Schnudde ist der Nasenschleim oder die Rotznase, vor allem bei verschnupften Kindern. Wisch der die Schnudd ab! Ein deftiges hessisches Körperwort.',
+      beispiel: 'Des Bübsche hat die Schnudd am laafe.',
+      beispiel_hd: 'Der kleine Junge hat die Nase am Laufen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-650',
+      ausdruck: 'Gosch',
+      hochdeutsch: 'Mund',
+      bedeutung: 'Die Gosch ist der Mund, oft im Sinne von vorlautem Reden. Halt die Gosch! heißt „sei still!". Ein deftiges Alltagswort, das Hessisch mit anderen Mundarten teilt.',
+      beispiel: 'Etz halt emol die Gosch!',
+      beispiel_hd: 'Jetzt halt mal den Mund!',
+      kategorie: 'koerper'
     }
   ]
 };
