@@ -76,14 +76,20 @@ export function renderStatistiken(root) {
   ));
 
   // ── SRS-Status ──────────────────────────────────────────────
+  const srsPills = [
+    statPill(String(srsStats.due),      'Heute fällig',  'var(--pink)'),
+    statPill(String(srsStats.learning), 'Im Lernen',     'var(--warm)'),
+    statPill(String(srsStats.learned),  'Gemeistert',    'var(--accent)'),
+    statPill(String(srsStats.fresh),    'Noch neu',      'var(--text-muted)'),
+  ];
+  // Problemkarten (Leeches) nur einblenden, wenn welche existieren — sonst
+  // wäre eine 0 für die meisten Nutzer nur verwirrendes Rauschen.
+  if (srsStats.leeches > 0) {
+    srsPills.push(statPill(String(srsStats.leeches), '⚠️ Problemkarten', 'var(--danger)'));
+  }
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' }, el('h3', {}, 'Spaced-Repetition-Status')),
-    el('div', { class: 'stats-srs-grid' },
-      statPill(String(srsStats.due),      'Heute fällig',  'var(--pink)'),
-      statPill(String(srsStats.learning), 'Im Lernen',     'var(--warm)'),
-      statPill(String(srsStats.learned),  'Gemeistert',    'var(--accent)'),
-      statPill(String(srsStats.fresh),    'Noch neu',      'var(--text-muted)')
-    )
+    el('div', { class: 'stats-srs-grid' }, ...srsPills)
   ));
 
   // ── SRS-Einstellungen (Scheduler + Wunsch-Retention) ─────────

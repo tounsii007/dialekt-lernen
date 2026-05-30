@@ -23,8 +23,10 @@ import {
   STATE_LEARNING, STATE_REVIEW,
   S_MIN,
   schedule as fsrsSchedule, previewIntervals as fsrsPreview,
+  retrievability,
 } from '../util/fsrs.js';
 import { optimize as fsrsOptimize, buildSequences } from '../util/fsrs-optimizer.js';
+import { applyFuzz } from '../util/fsrs-fuzz.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -178,27 +180,67 @@ export function reviewCard(dialektId, ausdruckId, rating) {
   return record;
 }
 
-// Karten, die spätestens heute fällig sind.
+// Lapse-Schwelle, ab der eine Karte als „Leech" (Dauer-Problemkarte) gilt —
+// wie Ankis Default. Solche Karten haben einen strukturellen Mangel (mehrdeutig,
+// zu komplex) und fressen unverhältnismäßig viel Übungszeit; sie verdienen
+// gezielte Aufmerksamkeit statt blinder Wiederholung.
+export const LEECH_LAPSES = 8;
+
+// Ist diese Karte ein Leech? (rein lesend, defensiv gegen korrupte lapses)
+export function isLeech(srs) {
+  return !!srs && numFin(srs.lapses, 0, 0) >= LEECH_LAPSES;
+}
+
+// Geschätzte aktuelle Retrievability einer Karte (0..1) — wie wahrscheinlich
+// der Nutzer sie JETZT noch erinnert. FSRS-Karten nutzen ihre Stabilität,
+// SM-2-Karten das Intervall als Stabilitäts-Proxy. Niedrig = dringend.
+function cardRetrievability(srs, now) {
+  if (!srs) return 1;
+  const stability = srs.sched === 'fsrs'
+    ? numFin(srs.stability, S_MIN, S_MIN)
+    : Math.max(numFin(srs.interval, 0, 0), S_MIN);
+  const last = numFin(srs.last, 0);
+  // last==0 (Legacy/korrupt) ⇒ riesiges elapsed ⇒ R≈0 ⇒ zuerst dran. Gewollt.
+  const elapsed = Math.max(0, (now - last) / DAY_MS);
+  return retrievability(elapsed, stability);
+}
+
+// Karten, die spätestens heute fällig sind — sortiert nach Retrievability
+// (am stärksten vom Vergessen bedrohte zuerst). Das schlägt Ankis reine
+// Fälligkeits-Sortierung: bei einem Rückstand übt man die Karten zuerst, die
+// man sonst als Erstes verliert. `due` dient nur als stabiler Gleichstand-Tie.
 export function getDueCards(allCards) {
   const now = Date.now();
   return allCards
     .map((a) => ({ ...a, _srs: getCardSrs(a.dialektId, a.id) }))
     .filter((a) => a._srs && a._srs.due <= now)
-    .sort((a, b) => a._srs.due - b._srs.due);
+    .map((a) => ({ ...a, _r: cardRetrievability(a._srs, now) }))
+    .sort((a, b) => a._r - b._r || a._srs.due - b._srs.due);
+}
+
+// Leeches absteigend nach Lapses — für Problemkarten-Anzeige/Drills.
+export function getLeeches(allCards) {
+  const out = [];
+  for (const a of allCards) {
+    const s = getCardSrs(a.dialektId, a.id);
+    if (isLeech(s)) out.push({ ...a, lapses: numFin(s.lapses, 0, 0), _srs: s });
+  }
+  return out.sort((x, y) => y.lapses - x.lapses);
 }
 
 // Statistik-Hilfsfunktionen.
 export function getSrsStats(allCards) {
   const now = Date.now();
-  let due = 0, learned = 0, learning = 0, fresh = 0;
+  let due = 0, learned = 0, learning = 0, fresh = 0, leeches = 0;
   for (const a of allCards) {
     const s = getCardSrs(a.dialektId, a.id);
     if (!s) { fresh += 1; continue; }
     if (s.reps >= 2 && s.interval >= 6) learned += 1;
     else if (s.reps > 0) learning += 1;
     if (s.due <= now) due += 1;
+    if (isLeech(s)) leeches += 1;
   }
-  return { due, learned, learning, fresh };
+  return { due, learned, learning, fresh, leeches };
 }
 
 // ── FSRS-Integration ──────────────────────────────────────────────────────
@@ -296,6 +338,22 @@ function appendSrsLog(entry) {
   }
 }
 
+// Verteilung künftig fälliger Karten auf Tage (Offset ab `now`) — Grundlage
+// für das Load-Balancing. Überfällige Karten (Offset <= 0) zählen nicht zur
+// künftigen Last.
+function buildDueDayHistogram(now) {
+  const hist = new Map();
+  const g = state.gelernt || {};
+  for (const k of Object.keys(g)) {
+    const due = Number(g[k] && g[k].due);
+    if (!Number.isFinite(due)) continue;
+    const day = Math.round((due - now) / DAY_MS);
+    if (day <= 0) continue;
+    hist.set(day, (hist.get(day) || 0) + 1);
+  }
+  return hist;
+}
+
 // Wendet FSRS auf eine Karte an, persistiert den Superset-Record und löst die
 // gemeinsamen Seiteneffekte aus. `grade` ist ein FSRS-Grade (1..4).
 export function reviewCardFsrs(dialektId, ausdruckId, grade, now = Date.now()) {
@@ -308,6 +366,16 @@ export function reviewCardFsrs(dialektId, ausdruckId, grade, now = Date.now()) {
     desiredRetention: cfg.retention,
   });
   const c = res.card;
+
+  // Load-Balancing-Fuzz nur für echte Mehrtages-Intervalle. Same-Day-/Lern-
+  // Schritte (< 2.5 Tage) behalten ihr exaktes `due` aus schedule().
+  let interval = res.interval;
+  let due = c.due;
+  if (cfg.fuzz && interval >= 2.5) {
+    interval = applyFuzz(interval, { load: buildDueDayHistogram(now) });
+    due = now + interval * DAY_MS;
+  }
+
   const record = {
     sched: 'fsrs',
     difficulty: c.difficulty,
@@ -315,8 +383,8 @@ export function reviewCardFsrs(dialektId, ausdruckId, grade, now = Date.now()) {
     state: c.state,
     reps: c.reps,
     lapses: c.lapses,
-    interval: res.interval,
-    due: c.due,
+    interval,
+    due,
     last: now,
     stand: gradeToStand(g),
   };
