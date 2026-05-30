@@ -299,6 +299,222 @@ export default {
       beispiel: 'Dat Wedder is vandaag richtig leep.',
       beispiel_hd: 'Das Wetter ist heute richtig schlimm.',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'of-033',
+      ausdruck: 'Klock',
+      hochdeutsch: 'Uhr / Uhrzeit',
+      bedeutung: 'De Klock ist die Uhr und die Uhrzeit. Wo laat is de Klock? fragt nach der Uhrzeit. Klock teihn bedeutet zehn Uhr. Ein gängiges niederdeutsches Alltagswort.',
+      beispiel: 'Wo laat is de Klock al?',
+      beispiel_hd: 'Wie spät ist es schon?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-034',
+      ausdruck: 'Tied',
+      hochdeutsch: 'Zeit',
+      bedeutung: 'Tied ist die Zeit. Ik heff keen Tied bedeutet „ich habe keine Zeit". Bi de Theetied nimmt man sich bewusst Tied. Ein zentrales Wort der gelassenen Küstenmentalität.',
+      beispiel: 'Loot di Tied, wi hebbt keen Haast.',
+      beispiel_hd: 'Lass dir Zeit, wir haben keine Eile.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-035',
+      ausdruck: 'Wedder',
+      hochdeutsch: 'Wetter',
+      bedeutung: 'Dat Wedder ist das Wetter, an der Küste ein Dauerthema. Bi good Wedder geiht man na buten, bi leep Wedder blifft man binnen. Wind und Regen bestimmen den Tag.',
+      beispiel: 'Vandaag hebbt wi good Wedder.',
+      beispiel_hd: 'Heute haben wir gutes Wetter.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'of-036',
+      ausdruck: 'Storm',
+      hochdeutsch: 'Sturm',
+      bedeutung: 'De Storm ist der Sturm, an der Nordsee oft mit Sturmflut verbunden. Bi Storm bleibt man besser an Land. Ein Wort, das die raue Seite der Küste beschreibt.',
+      beispiel: 'Vannacht kummt en swore Storm.',
+      beispiel_hd: 'Heute Nacht kommt ein schwerer Sturm.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'of-037',
+      ausdruck: 'See',
+      hochdeutsch: 'Meer / See',
+      bedeutung: 'De See ist das Meer, die Nordsee. Op See gahn bedeutet aufs Meer hinausfahren. Das Leben der Küstenbewohner ist seit jeher eng mit der See verbunden.',
+      beispiel: 'De Fischers fohrt fröh op See.',
+      beispiel_hd: 'Die Fischer fahren früh aufs Meer.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'of-038',
+      ausdruck: 'Strand',
+      hochdeutsch: 'Strand',
+      bedeutung: 'De Strand ist der Sandstrand an der Küste und auf den Inseln. Am Strand sitzt man im Strandkorb. Im Sommer zieht es viele Gäste an den Strand.',
+      beispiel: 'Wi sitt den ganzen Dag an Strand.',
+      beispiel_hd: 'Wir sitzen den ganzen Tag am Strand.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'of-039',
+      ausdruck: 'Boot',
+      hochdeutsch: 'Boot',
+      bedeutung: 'Dat Boot ist das Boot. Mit dat Boot fährt man hinaus aufs Watt oder zum Fischen. Vom kleinen Ruderboot bis zum Kutter prägen Boote das Küstenbild.',
+      beispiel: 'Dat Boot liggt an de Kaj.',
+      beispiel_hd: 'Das Boot liegt an der Kaimauer.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-040',
+      ausdruck: 'Kutter',
+      hochdeutsch: 'Fischkutter',
+      bedeutung: 'De Kutter ist das robuste Fischerboot, mit dem die Krabbenfischer aufs Meer fahren. Am Hafen kann man den Krabben direkt vom Kutter kaufen.',
+      beispiel: 'De Kutter kummt mit Garnaten torüg.',
+      beispiel_hd: 'Der Kutter kommt mit Krabben zurück.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'of-041',
+      ausdruck: 'Reep',
+      hochdeutsch: 'Seil / Tau',
+      bedeutung: 'Dat Reep ist das Seil oder Tau, mit dem das Boot festgemacht wird. An Bord muss jedes Reep gut verstaut sein. Ein wichtiges Wort der Seefahrt.',
+      beispiel: 'Mook dat Reep an de Poller fast.',
+      beispiel_hd: 'Mach das Tau am Poller fest.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'of-042',
+      ausdruck: 'Plünnen',
+      hochdeutsch: 'Klamotten / alte Kleider',
+      bedeutung: 'Plünnen sind Kleider, oft im Sinne von alten Klamotten oder Lumpen. Truck di dröge Plünnen an heißt, sich trockene Sachen anzuziehen. Ein gemütliches Alltagswort.',
+      beispiel: 'Truck di drög Plünnen an, du büst natt.',
+      beispiel_hd: 'Zieh dir trockene Sachen an, du bist nass.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-043',
+      ausdruck: 'Tüffel',
+      hochdeutsch: 'Kartoffeln',
+      bedeutung: 'Tüffel sind die Kartoffeln, ein niederdeutsches Wort. Tüffel mit Stippels meint Kartoffeln mit Soße. Grundlage vieler herzhafter Küstengerichte.',
+      beispiel: 'To Middag gifft dat Tüffel un Fisch.',
+      beispiel_hd: 'Zu Mittag gibt es Kartoffeln und Fisch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'of-044',
+      ausdruck: 'Snut',
+      hochdeutsch: 'Mund / Schnauze',
+      bedeutung: 'De Snut ist der Mund oder die Schnauze. Hool de Snut bedeutet „halt den Mund". Auch eine Schnute ziehen heißt, beleidigt zu schmollen.',
+      beispiel: 'Nu hool maal de Snut!',
+      beispiel_hd: 'Jetzt halt mal den Mund!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'of-045',
+      ausdruck: 'Kopp',
+      hochdeutsch: 'Kopf',
+      bedeutung: 'De Kopp ist der Kopf. En dicken Kopp hebben heißt einen Dickschädel haben. Auch die Teetasse heißt Kopp — Wortspiele inklusive. Ein vielseitiges Körperwort.',
+      beispiel: 'Mi deit de Kopp weh.',
+      beispiel_hd: 'Mir tut der Kopf weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'of-046',
+      ausdruck: 'Been',
+      hochdeutsch: 'Bein',
+      bedeutung: 'Dat Been ist das Bein, Mehrzahl de Beene. Op de Beene blieven heißt auf den Beinen bleiben. Ein niederdeutsches Grundwort für die Gliedmaßen.',
+      beispiel: 'Mi doot na de Tour de Beene weh.',
+      beispiel_hd: 'Mir tun nach der Tour die Beine weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'of-047',
+      ausdruck: 'groot',
+      hochdeutsch: 'groß',
+      bedeutung: 'groot heißt groß, das Gegenstück zu lütt (klein). En grooten Kerl ist ein großer Kerl. Eines der häufigsten Eigenschaftswörter im Plattdeutschen.',
+      beispiel: 'De Jung is al groot worrn.',
+      beispiel_hd: 'Der Junge ist schon groß geworden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-048',
+      ausdruck: 'gau',
+      hochdeutsch: 'schnell',
+      bedeutung: 'gau bedeutet schnell oder rasch. Man gau! heißt „schnell!". Wer gau is, beeilt sich. Ein gebräuchliches Tempo-Wort an der Küste.',
+      beispiel: 'Kumm gau, de Bus föhrt glieks.',
+      beispiel_hd: 'Komm schnell, der Bus fährt gleich.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-049',
+      ausdruck: 'bannig',
+      hochdeutsch: 'sehr / gewaltig',
+      bedeutung: 'bannig ist eine kräftige Verstärkung im Sinne von „sehr" oder „gewaltig". Dat is bannig good heißt „das ist sehr gut". Ein typisch norddeutsches Wort.',
+      beispiel: 'Dat hett mi bannig freit.',
+      beispiel_hd: 'Das hat mich sehr gefreut.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'of-050',
+      ausdruck: 'Buur',
+      hochdeutsch: 'Bauer',
+      bedeutung: 'De Buur ist der Bauer, der auf der Marsch hinterm Deich wirtschaftet. De Buurfru ist die Bäuerin. Die Landwirtschaft prägt Ostfriesland bis heute.',
+      beispiel: 'De Buur melkt de Köh in de Fröhde.',
+      beispiel_hd: 'Der Bauer melkt die Kühe in der Frühe.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'of-051',
+      ausdruck: 'Kark',
+      hochdeutsch: 'Kirche',
+      bedeutung: 'De Kark ist die Kirche, oft eine alte Backsteinkirche mit freistehendem Glockenturm. Sünndags geiht man na de Kark. Mittelpunkt vieler ostfriesischer Dörfer.',
+      beispiel: 'De Kark hett en olen Toorn.',
+      beispiel_hd: 'Die Kirche hat einen alten Turm.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'of-052',
+      ausdruck: 'Döntje',
+      hochdeutsch: 'kurze lustige Anekdote',
+      bedeutung: 'En Döntje ist eine kurze, humorvolle Geschichte oder Anekdote, die man beim Klönen zum Besten gibt. Ostfriesen sind für ihre trockenen Döntjes bekannt.',
+      beispiel: 'Vertell us doch en Döntje!',
+      beispiel_hd: 'Erzähl uns doch eine lustige Anekdote!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'of-053',
+      ausdruck: 'vertellen',
+      hochdeutsch: 'erzählen',
+      bedeutung: 'vertellen heißt erzählen. Vertell maal! fordert auf, etwas zu berichten. Beim Tee wird gern stundenlang vertellt. Ein zentrales Verb der Klönschnack-Kultur.',
+      beispiel: 'Opa kann good Geschichten vertellen.',
+      beispiel_hd: 'Opa kann gut Geschichten erzählen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'of-054',
+      ausdruck: 'Pannkoken',
+      hochdeutsch: 'Pfannkuchen',
+      bedeutung: 'Pannkoken sind die Pfannkuchen, in der Pann gebacken, süß oder mit Speck. Dicke Pannkoken sind ein beliebtes Hauptgericht der norddeutschen Küche.',
+      beispiel: 'Vandaag backt Mudder Pannkoken mit Speck.',
+      beispiel_hd: 'Heute backt Mutter Pfannkuchen mit Speck.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'of-055',
+      ausdruck: 'Grog',
+      hochdeutsch: 'heißes Rumgetränk',
+      bedeutung: 'Grog ist heißer Rum mit Wasser und Zucker, der an kalten Tagen wärmt. Rum mutt, Water kann, Zucker draf nich fehlen, sagt der bekannte Spruch.',
+      beispiel: 'Bi de Küll smeckt en heten Grog.',
+      beispiel_hd: 'Bei der Kälte schmeckt ein heißer Grog.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'of-056',
+      ausdruck: 'Mettwust',
+      hochdeutsch: 'Mettwurst',
+      bedeutung: 'De Mettwust ist die kräftige, geräucherte Mettwurst, die aufs Brot oder in den Grünkohl kommt. Ein deftiger Bestandteil der norddeutschen Küche.',
+      beispiel: 'In den Grönkohl höört Mettwust.',
+      beispiel_hd: 'In den Grünkohl gehört Mettwurst.',
+      kategorie: 'essen'
     }
   ]
 };
