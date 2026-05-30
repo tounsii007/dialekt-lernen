@@ -36,7 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   # Web-Design-Schriften: Inter (Body) + Fraunces (Display).
-  google_fonts: ^6.2.1
+  google_fonts: ^8.1.0
 
   # Nativer Splash-Screen (Android/iOS) — Hintergrundfarbe + Logo.
   flutter_native_splash: ^2.4.4
