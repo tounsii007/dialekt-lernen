@@ -87,6 +87,13 @@ function withDefaults(loaded) {
                         progress: (loaded.challenges.progress && typeof loaded.challenges.progress === 'object') ? loaded.challenges.progress : {},
                         completed: Array.isArray(loaded.challenges.completed) ? loaded.challenges.completed : [] }
                     : { week: null, progress: {}, completed: [] },
+    // Tägliche Quests (Duolingo-Style): drei pro Tag, rotierend.
+    quests:       loaded.quests && typeof loaded.quests === 'object'
+                    ? { day: null, progress: {}, completed: [], allDoneBonus: false, ...loaded.quests,
+                        progress: (loaded.quests.progress && typeof loaded.quests.progress === 'object') ? loaded.quests.progress : {},
+                        completed: Array.isArray(loaded.quests.completed) ? loaded.quests.completed : [],
+                        allDoneBonus: loaded.quests.allDoneBonus === true }
+                    : { day: null, progress: {}, completed: [], allDoneBonus: false },
     longGoals:    Array.isArray(loaded.longGoals) ? loaded.longGoals : [],
     notesIdbMigrated: !!loaded.notesIdbMigrated,
     // SRS-Konfiguration: FSRS-5 ist Default (schlaegt SM-2/Anki-Default).

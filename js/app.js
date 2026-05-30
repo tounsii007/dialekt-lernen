@@ -19,6 +19,7 @@ import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
 import { initGoalEvents } from './util/daily-goal.js';
 import { initChallenges } from './store/challenges.js';
+import { initQuests } from './store/quests.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
@@ -228,6 +229,15 @@ function init() {
   document.addEventListener('dialekto:challengeComplete', (e) => {
     const { label, xp } = e.detail || {};
     toast(`🏆 Challenge abgeschlossen: ${label} (+${xp} XP)`, 'success', 3200);
+  });
+  initQuests();
+  document.addEventListener('dialekto:questComplete', (e) => {
+    const { label, xp } = e.detail || {};
+    toast(`✅ Quest erledigt: ${label} (+${xp} XP)`, 'success', 3000);
+  });
+  document.addEventListener('dialekto:questsAllDone', (e) => {
+    const { xp } = e.detail || {};
+    toast(`🎉 Alle Tages-Quests geschafft! Bonus +${xp} XP`, 'success', 3600);
   });
   mountXpBar();
   mountFooterMeta();
