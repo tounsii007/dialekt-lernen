@@ -8,6 +8,7 @@ import '../widgets/brand_logo.dart';
 import '../widgets/dialekt_card.dart';
 import '../widgets/gradient_button.dart';
 import 'dialekt_detail_screen.dart';
+import 'settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.onOpenTab});
@@ -43,6 +44,14 @@ class HomeScreen extends StatelessWidget {
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
                   ),
+                ),
+                const Spacer(),
+                IconButton(
+                  tooltip: 'Einstellungen',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const SettingsScreen()),
+                  ),
+                  icon: Icon(Icons.settings_rounded, color: surfaces.textMuted),
                 ),
               ],
             ),

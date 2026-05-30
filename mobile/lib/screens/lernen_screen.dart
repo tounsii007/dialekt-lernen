@@ -7,6 +7,7 @@ import '../data/repository.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
+import '../widgets/speak_button.dart';
 
 class LernenScreen extends StatefulWidget {
   const LernenScreen({super.key});
@@ -18,7 +19,7 @@ class LernenScreen extends StatefulWidget {
 class _LernenScreenState extends State<LernenScreen>
     with SingleTickerProviderStateMixin {
   late final AnimationController _flip;
-  late final List<Ausdruck> _cards;
+  late final List<({Dialekt dialekt, Ausdruck ausdruck})> _cards;
   int _index = 0;
   bool _showBack = false;
 
@@ -29,7 +30,9 @@ class _LernenScreenState extends State<LernenScreen>
       vsync: this,
       duration: const Duration(milliseconds: 420),
     );
-    final all = List<Ausdruck>.from(DialektRepository.instance.alleAusdruecke);
+    final all = List<({Dialekt dialekt, Ausdruck ausdruck})>.from(
+      DialektRepository.instance.alleMitDialekt,
+    );
     all.shuffle(math.Random());
     _cards = all.take(30).toList();
   }
@@ -83,11 +86,16 @@ class _LernenScreenState extends State<LernenScreen>
           child: Column(
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('🃏 Karteikarten',
                       style: Theme.of(context).textTheme.headlineMedium
                           ?.copyWith(fontSize: 24)),
+                  const Spacer(),
+                  SpeakButton(
+                    text: card.ausdruck.ausdruck,
+                    lang: card.dialekt.lang,
+                    size: 22,
+                  ),
                   Text('${_index + 1} / ${_cards.length}',
                       style: TextStyle(color: surfaces.textMuted)),
                 ],
@@ -112,16 +120,16 @@ class _LernenScreenState extends State<LernenScreen>
                                   alignment: Alignment.center,
                                   transform: Matrix4.identity()..rotateY(math.pi),
                                   child: _CardFace(
-                                    title: card.hochdeutsch,
-                                    subtitle: card.bedeutung,
+                                    title: card.ausdruck.hochdeutsch,
+                                    subtitle: card.ausdruck.bedeutung,
                                     accent: AppColors.accent,
                                     tag: 'Hochdeutsch',
                                   ),
                                 )
                               : _CardFace(
-                                  title: card.ausdruck,
-                                  subtitle: card.beispiel.isNotEmpty
-                                      ? '„${card.beispiel}"'
+                                  title: card.ausdruck.ausdruck,
+                                  subtitle: card.ausdruck.beispiel.isNotEmpty
+                                      ? '„${card.ausdruck.beispiel}"'
                                       : 'Tippen zum Umdrehen',
                                   accent: AppColors.brand,
                                   tag: 'Dialekt',

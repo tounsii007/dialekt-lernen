@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../data/models.dart';
-import '../data/repository.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/favorite_button.dart';
 import '../widgets/glass_card.dart';
+import '../widgets/speak_button.dart';
 
 class DialektDetailScreen extends StatelessWidget {
   const DialektDetailScreen({super.key, required this.dialekt});
@@ -108,6 +108,7 @@ class DialektDetailScreen extends StatelessWidget {
                     ausdruck: dialekt.ausdruecke[i],
                     accent: dialekt.color,
                     dialektId: dialekt.id,
+                    lang: dialekt.lang,
                   ),
                 ),
               ),
@@ -124,16 +125,17 @@ class _AusdruckTile extends StatelessWidget {
     required this.ausdruck,
     required this.accent,
     required this.dialektId,
+    required this.lang,
   });
 
   final Ausdruck ausdruck;
   final Color accent;
   final String dialektId;
+  final String lang;
 
   @override
   Widget build(BuildContext context) {
     final surfaces = AppSurfaces.of(context);
-    final repo = DialektRepository.instance;
     return GlassCard(
       accent: accent,
       padding: const EdgeInsets.all(AppSpacing.x4),
@@ -159,10 +161,7 @@ class _AusdruckTile extends StatelessWidget {
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                repo.kategorieIcon(ausdruck.kategorie),
-                style: const TextStyle(fontSize: 18),
-              ),
+              SpeakButton(text: ausdruck.ausdruck, lang: lang, size: 20),
               FavoriteButton(dialektId: dialektId, ausdruckId: ausdruck.id),
             ],
           ),

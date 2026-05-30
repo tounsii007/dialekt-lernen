@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../data/favorites_store.dart';
 import '../data/repository.dart';
+import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/brand_logo.dart';
 import 'app_shell.dart';
@@ -57,6 +58,7 @@ class _SplashScreenState extends State<SplashScreen>
   Future<void> _boot() async {
     final sw = Stopwatch()..start();
     try {
+      await SettingsController.instance.load();
       await DialektRepository.instance.load();
       await FavoritesStore.instance.load();
     } catch (_) {

@@ -41,8 +41,11 @@ dependencies:
   # Nativer Splash-Screen (Android/iOS) — Hintergrundfarbe + Logo.
   flutter_native_splash: ^2.4.4
 
-  # Lokale Persistenz (Favoriten, später Fortschritt) — kein Backend.
+  # Lokale Persistenz (Favoriten, Lernstand, Einstellungen) — kein Backend.
   shared_preferences: ^2.3.2
+
+  # Sprachausgabe (Ausdruck vorlesen) — Pendant zu util/speech.js.
+  flutter_tts: ^4.2.0
 
 dev_dependencies:
   flutter_test:

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'screens/splash_screen.dart';
+import 'state/settings_controller.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -16,14 +17,18 @@ class DialektoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Dialekto',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.light(),
-      darkTheme: AppTheme.dark(),
-      // Moderne, dunkle Standard-Optik (passend zum Splash); Light bleibt verfügbar.
-      themeMode: ThemeMode.dark,
-      home: const SplashScreen(),
+    return ListenableBuilder(
+      listenable: SettingsController.instance,
+      builder: (context, _) {
+        return MaterialApp(
+          title: 'Dialekto',
+          debugShowCheckedModeBanner: false,
+          theme: AppTheme.light(),
+          darkTheme: AppTheme.dark(),
+          themeMode: SettingsController.instance.themeMode,
+          home: const SplashScreen(),
+        );
+      },
     );
   }
 }
