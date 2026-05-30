@@ -17,6 +17,17 @@ import fraenkisch      from './dialekte/fraenkisch.js';
 import ruhrdeutsch     from './dialekte/ruhrdeutsch.js';
 import alemannisch     from './dialekte/alemannisch.js';
 import pfaelzisch      from './dialekte/pfaelzisch.js';
+import tirolerisch     from './dialekte/tirolerisch.js';
+import saarlaendisch   from './dialekte/saarlaendisch.js';
+import ostfriesisch    from './dialekte/ostfriesisch.js';
+import badisch         from './dialekte/badisch.js';
+import vorarlbergerisch from './dialekte/vorarlbergerisch.js';
+import steirisch       from './dialekte/steirisch.js';
+import kaerntnerisch   from './dialekte/kaerntnerisch.js';
+import thueringisch    from './dialekte/thueringisch.js';
+import mecklenburgisch from './dialekte/mecklenburgisch.js';
+import brandenburgisch from './dialekte/brandenburgisch.js';
+import oberpfaelzisch  from './dialekte/oberpfaelzisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -31,7 +42,18 @@ export const DIALEKTE = [
   fraenkisch,
   ruhrdeutsch,
   alemannisch,
-  pfaelzisch
+  pfaelzisch,
+  tirolerisch,
+  saarlaendisch,
+  ostfriesisch,
+  badisch,
+  vorarlbergerisch,
+  steirisch,
+  kaerntnerisch,
+  thueringisch,
+  mecklenburgisch,
+  brandenburgisch,
+  oberpfaelzisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup
