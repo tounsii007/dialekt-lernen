@@ -2395,6 +2395,1536 @@ export default {
       beispiel: 'Mei Hund frisst gärn s\'Bütschgi vom Öpfel.',
       beispiel_hd: 'Mein Hund frisst gerne das Kerngehäuse vom Apfel.',
       kategorie: 'essen'
+    },
+    {
+      id: 'ch-291',
+      ausdruck: 'Salü',
+      hochdeutsch: 'Hallo / Servus',
+      bedeutung: '„Salü" ist die lockere, freundschaftliche Begrüssung im Schweizerdeutschen — vom französischen „salut" abgeleitet. Unter Freunden, Bekannten und Gleichaltrigen verwendet, nie gegenüber Respektspersonen (da gilt „Grüezi"). „Salü zäme!" begrüsst eine ganze Gruppe. Im Gegensatz zum förmlichen „Grüezi" signalisiert „Salü" Nähe und Vertrautheit. Auch zum Abschied gebräuchlich. Eines der häufigsten Wörter im Alltag junger Deutschschweizer.',
+      beispiel: 'Salü Päscu, lang nüm gseh — wie gaht\'s?',
+      beispiel_hd: 'Hallo Pascal, lange nicht gesehen — wie geht es dir?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-292',
+      ausdruck: 'Hoi',
+      hochdeutsch: 'Hallo (informell)',
+      bedeutung: '„Hoi" ist die kürzeste und freundschaftlichste Begrüssung im Schweizerdeutschen — schlicht „Hallo" unter Vertrauten. Für mehrere Personen erweitert zu „Hoi zäme". Klingt warm, unkompliziert und typisch schweizerisch. Niemals förmlich, immer herzlich. Kinder, Freunde und Familienmitglieder begrüssen sich mit „Hoi". Die Steigerung „Hoi du!" drückt freudige Überraschung aus, wenn man jemanden trifft, den man mag.',
+      beispiel: 'Hoi Anna, schön bisch da!',
+      beispiel_hd: 'Hallo Anna, schön bist du da!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-293',
+      ausdruck: 'Sali zäme',
+      hochdeutsch: 'Hallo zusammen',
+      bedeutung: 'Die Begrüssung „Sali zäme" verbindet das lockere „Sali" (von franz. „salut") mit „zäme" (zusammen) — eine ungezwungene Anrede für mehrere Leute gleichzeitig. Beim Betreten eines Raums voller Bekannter oder am Stammtisch gebräuchlich. Im Gegensatz zu „Grüezi mitenand" deutlich informeller. Verbreitet vor allem in Basel, Zürich und der Nordwestschweiz. Drückt Zugehörigkeit zu einer vertrauten Runde aus.',
+      beispiel: 'Sali zäme, isch no es Plätzli frei?',
+      beispiel_hd: 'Hallo zusammen, ist noch ein Plätzchen frei?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-294',
+      ausdruck: 'Schöne Abig',
+      hochdeutsch: 'Schönen Abend',
+      bedeutung: 'Mit „Schöne Abig" wünscht man im Schweizerdeutschen einen schönen Abend — eine höfliche Abschiedsformel am späteren Tag. „Abig" ist die schweizerdeutsche Form von „Abend". Im Laden, beim Verlassen des Büros oder unter Nachbarn ein freundlicher Gruss. Auch „Schöne Aabig no!" mit dem hinzugefügten „no" (noch) ist verbreitet. Die Schweizer pflegen eine ausgeprägte Höflichkeitskultur mit vielen Tageszeit-Grüssen.',
+      beispiel: 'Danke fürs Iichaufe, schöne Abig no!',
+      beispiel_hd: 'Danke fürs Einkaufen, schönen Abend noch!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-295',
+      ausdruck: 'Tschau',
+      hochdeutsch: 'Tschüss',
+      bedeutung: '„Tschau" (vom italienischen „ciao") ist die lockere Abschiedsformel im Schweizerdeutschen — unter Freunden und Bekannten allgegenwärtig. Oft verdoppelt: „Tschau tschau!" oder kombiniert: „Tschau zäme". Im Gegensatz zum förmlichen „Uf Wiederluege" signalisiert „Tschau" Vertrautheit. Der italienische Einfluss zeigt die kulturelle Nähe der Schweiz zu Italien. Eines der meistgebrauchten Abschiedswörter im Alltag.',
+      beispiel: 'Tschau zäme, mir gseht eus am Zischtig!',
+      beispiel_hd: 'Tschüss zusammen, wir sehen uns am Dienstag!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-296',
+      ausdruck: 'Grüessech',
+      hochdeutsch: 'Guten Tag (Berndeutsch, formell)',
+      bedeutung: '„Grüessech" ist die Berndeutsche Höflichkeitsbegrüssung — das Pendant zum Zürcher „Grüezi". Wörtlich „grüss euch", wird es auch gegenüber einer einzelnen Person als Höflichkeitsform verwendet. Typisch für den weichen, gemütlichen Berner Tonfall. In Bern, im Emmental und im Berner Oberland Standard. „Grüessech wohl!" ist die besonders herzliche Variante. Wer „Grüessech" sagt, ist unverkennbar Berner.',
+      beispiel: 'Grüessech, chönnt i bitte es Stück Züpfe ha?',
+      beispiel_hd: 'Guten Tag, könnte ich bitte ein Stück Zopf haben?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-297',
+      ausdruck: 'En Guete',
+      hochdeutsch: 'Guten Appetit',
+      bedeutung: '„En Guete" ist der schweizerdeutsche Wunsch für guten Appetit — kurz für „en guete Appetit". Vor jedem gemeinsamen Essen unverzichtbar, am Familientisch wie im Restaurant. Niemand fängt an zu essen, bevor nicht „En Guete" gesagt wurde — eine fest verankerte Tischsitte. Auch der Kellner wünscht beim Servieren „En Guete". Wer es vergisst, gilt als unhöflich. Ein kleines, aber zentrales Stück Schweizer Esskultur.',
+      beispiel: 'So, es Ässe isch parat — en Guete mitenand!',
+      beispiel_hd: 'So, das Essen ist fertig — guten Appetit zusammen!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-298',
+      ausdruck: 'Wie gaht\'s der',
+      hochdeutsch: 'Wie geht es dir',
+      bedeutung: 'Mit „Wie gaht\'s der?" erkundigt man sich im Schweizerdeutschen nach dem Befinden — die alltägliche Höflichkeitsfrage nach der Begrüssung. „Gaht" ist die Form von „geht", „der" bedeutet „dir". Die typische Antwort fällt schweizerisch bescheiden aus: „Es gaht" oder „Merci, guet". Die formelle Variante lautet „Wie gaht\'s Ihne?". Eine der ersten Wendungen, die Zugezogene im Schweizer Alltag lernen.',
+      beispiel: 'Hoi Reto, wie gaht\'s der dänn so?',
+      beispiel_hd: 'Hallo Reto, wie geht es dir denn so?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-299',
+      ausdruck: 'Schlaf guet',
+      hochdeutsch: 'Schlaf gut',
+      bedeutung: 'Mit „Schlaf guet" wünscht man im Schweizerdeutschen eine gute Nacht — die liebevolle Abschiedsformel vor dem Zubettgehen. In der Familie, gegenüber Kindern und unter Partnern täglich gebraucht. Oft ergänzt durch „und träum öppis Schöns" (und träume etwas Schönes). „Guet Nacht" ist die etwas förmlichere Variante. Ein kleines Ritual der Geborgenheit, das in jedem Schweizer Haushalt zum Tagesabschluss gehört.',
+      beispiel: 'Schlaf guet, mis Härzli, bis morn!',
+      beispiel_hd: 'Schlaf gut, mein Schatz, bis morgen!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ch-300',
+      ausdruck: 'Natel',
+      hochdeutsch: 'Handy / Mobiltelefon',
+      bedeutung: 'Das „Natel" ist das schweizerdeutsche Wort für Handy oder Mobiltelefon — ein typischer Helvetismus. Der Begriff stammt vom Swisscom-Produktnamen „Nationales Autotelefon" und ist zum Gattungsbegriff geworden, ähnlich wie „Tempo" für Taschentuch. Kein Schweizer sagt „Handy", alle sagen „Natel". „Hesch dis Natel debii?" ist eine alltägliche Frage. Ein schönes Beispiel dafür, wie ein Markenname die Umgangssprache prägt.',
+      beispiel: 'Ich han mis Natel deheim vergässe — so es Mist!',
+      beispiel_hd: 'Ich habe mein Handy zu Hause vergessen — so ein Mist!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-301',
+      ausdruck: 'parkiere',
+      hochdeutsch: 'parken',
+      bedeutung: '„Parkiere" ist das schweizerdeutsche Verb für „parken" — wo der Deutsche „parkt", da „parkiert" der Schweizer. Ein klassischer Helvetismus mit französischem Einschlag (von „parquer"). „Ich ha s\'Auto vorem Hus parkiert." Auch das Substantiv folgt: der „Parkplatz" wird zur „Parkiermöglichkeit". Die Parkbusse heisst „Bussenzettel". Eines jener Wörter, an denen man sofort den Schweizer erkennt — Deutsche stutzen beim ersten Hören.',
+      beispiel: 'Wo chan ich do mis Auto parkiere?',
+      beispiel_hd: 'Wo kann ich hier mein Auto parken?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-302',
+      ausdruck: 'Güsel',
+      hochdeutsch: 'Abfall / Müll',
+      bedeutung: 'Der „Güsel" ist im Schweizerdeutschen der Abfall oder Müll — vor allem im Raum Zürich und der Ostschweiz gebräuchlich. „D\'Güselsäck" sind die Abfallsäcke, die in der Schweiz mit einer kostenpflichtigen Gebührenmarke versehen sein müssen (Sackgebühr nach dem Verursacherprinzip). „De Güselchübel" ist der Mülleimer. Die Schweizer trennen ihren Güsel gewissenhaft — Recycling ist fast eine Nationaltugend. Ein urtümliches Mundartwort.',
+      beispiel: 'Bring bitte de Güsel use, d\'Tonne wird morn gleert.',
+      beispiel_hd: 'Bring bitte den Müll raus, die Tonne wird morgen geleert.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-303',
+      ausdruck: 'Finken',
+      hochdeutsch: 'Hausschuhe / Pantoffeln',
+      bedeutung: '„Finken" sind im Schweizerdeutschen die Hausschuhe oder Pantoffeln — ein unverzichtbarer Teil des Schweizer Haushalts. In vielen Schweizer Wohnungen und sogar in Schulen zieht man am Eingang die Strassenschuhe aus und schlüpft in die „Finke". „Zieh dini Finke aa!" ist ein häufiger Satz an der Tür. Auch Gäste bekommen oft „Hausfinke" angeboten. Die Tradition zeigt das Schweizer Bedürfnis nach Sauberkeit und Gemütlichkeit im eigenen Heim.',
+      beispiel: 'Zieh dini Finke aa, susch häsch chalti Füess!',
+      beispiel_hd: 'Zieh deine Hausschuhe an, sonst hast du kalte Füsse!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-304',
+      ausdruck: 'Hüsli',
+      hochdeutsch: 'Toilette / kleines Haus',
+      bedeutung: 'Das „Hüsli" ist im Schweizerdeutschen einerseits ein kleines Haus, andererseits die volkstümliche Bezeichnung für die Toilette — früher das Plumpsklo im Garten, das „Plumpshüsli". „Ich muess schnäll ufs Hüsli." Die Verkleinerung mit „-li" macht das Wort charmant und alltagstauglich. Auf dem Land bezeichnet man auch das Gartenhäuschen so. Ein gutes Beispiel für die schweizerdeutsche Vorliebe für diskrete, freundliche Umschreibungen.',
+      beispiel: 'Wart chli, ich muess no schnäll ufs Hüsli.',
+      beispiel_hd: 'Warte kurz, ich muss noch schnell auf die Toilette.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-305',
+      ausdruck: 'Tubel',
+      hochdeutsch: 'Dummkopf / Trottel',
+      bedeutung: 'Ein „Tubel" ist im Schweizerdeutschen ein Dummkopf, Trottel oder Tollpatsch — ein mildes Schimpfwort, oft mehr scherzhaft als bösartig. „Du Tubel, häsch das würkli gmacht?" sagt man kopfschüttelnd zu jemandem, der etwas Ungeschicktes angestellt hat. Verwandt mit „vertubelt" (durcheinander, verwirrt). Unter Freunden ist „Tubel" fast liebevoll, gegenüber Fremden hingegen kränkend. Ein typisches Wort der alemannischen Alltagssprache.',
+      beispiel: 'Du Tubel, jetz häsch d\'Milch übercho!',
+      beispiel_hd: 'Du Trottel, jetzt hast du die Milch übergekocht!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ch-306',
+      ausdruck: 'Löli',
+      hochdeutsch: 'Dummkopf / Narr',
+      bedeutung: 'Der „Löli" ist im Schweizerdeutschen ein gutmütiger Dummkopf oder Narr — jemand, der sich etwas tollpatschig oder einfältig verhält. Das Wort hat einen warmen, fast zärtlichen Unterton: „Du chliine Löli!" sagt man eher liebevoll als bösartig. In der Steigerung „Lottolöli" wird es noch verspielter. Wer einen Fehler macht, schilt sich selbst gern „ich Löli". Ein charakteristisches, sympathisches Schimpfwort ohne echte Schärfe.',
+      beispiel: 'Ich ha de Schlüssel iigschlosse — ich Löli!',
+      beispiel_hd: 'Ich habe den Schlüssel eingeschlossen — ich Dummkopf!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ch-307',
+      ausdruck: 'Sigrist',
+      hochdeutsch: 'Küster / Mesner',
+      bedeutung: 'Der „Sigrist" ist im Schweizerdeutschen der Küster oder Mesner — die Person, die für Kirche, Glocken, Friedhof und Gottesdienst-Vorbereitung zuständig ist. In jedem Schweizer Dorf eine geachtete Figur. Der Sigrist läutet die Glocken, richtet die Kirche her und pflegt den Friedhof. Das Wort stammt vom mittellateinischen „sacrista". Während im übrigen deutschen Sprachraum „Küster" oder „Mesner" üblich sind, hält sich in der Schweiz der „Sigrist".',
+      beispiel: 'De Sigrist lütet jede Sunntig pünktlich d\'Glogge.',
+      beispiel_hd: 'Der Küster läutet jeden Sonntag pünktlich die Glocken.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-308',
+      ausdruck: 'Büez',
+      hochdeutsch: 'Arbeit / Maloche',
+      bedeutung: 'Die „Büez" ist im Schweizerdeutschen die Arbeit, besonders die körperliche, handwerkliche Maloche — verwandt mit dem Verb „büezä" (arbeiten, werken). „Ich gang go büezä" heisst „ich gehe arbeiten". Der „Büezer" ist der Handwerker oder Arbeiter, oft mit Stolz auf ehrliche Handarbeit gesagt. Die Schweizer Arbeitsethik schätzt das „Büeze" hoch. Ein bodenständiges, kerniges Wort, das man eher auf der Baustelle als im Bankenviertel hört.',
+      beispiel: 'Nach de Büez gani no schnäll es Bier go zieh.',
+      beispiel_hd: 'Nach der Arbeit gehe ich noch schnell ein Bier trinken.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-309',
+      ausdruck: 'Stürmi',
+      hochdeutsch: 'Wirrkopf / chaotischer Mensch',
+      bedeutung: 'Ein „Stürmi" ist im Schweizerdeutschen ein verwirrter, zerstreuter oder chaotischer Mensch — jemand, der „stürmt", also durcheinander ist. „Mach kei Stürm!" bedeutet „reg dich nicht auf, mach kein Theater". Wer ein Stürmi ist, verliert leicht den Überblick oder bringt Dinge durcheinander. Das Wort wird meist nachsichtig-spöttisch gebraucht. Verwandt mit „verstürmt" (durcheinander). Eine liebevolle Charakterisierung eines etwas hektischen Zeitgenossen.',
+      beispiel: 'Du bisch hüt aber es Stürmi — alles vergisst du!',
+      beispiel_hd: 'Du bist heute aber ein Wirrkopf — alles vergisst du!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-310',
+      ausdruck: 'Schaffseckel',
+      hochdeutsch: 'fleissiger Arbeiter',
+      bedeutung: 'Ein „Schaffseckel" ist im Schweizerdeutschen ein unermüdlich fleissiger Mensch — jemand, der ständig „schafft" (arbeitet) und nie stillsteht. Der Ausdruck verbindet „schaffe" (arbeiten) mit „Seckel" und ist trotz des derben zweiten Teils anerkennend gemeint. „Dä isch en richtige Schaffseckel" lobt jemanden, der hart anpackt. Die Schweizer Arbeitsmoral verehrt den Fleiss — wer ein Schaffseckel ist, geniesst Respekt. Bodenständiges Lob für Tüchtigkeit.',
+      beispiel: 'De Hausi isch en Schaffseckel, dä ruet nie.',
+      beispiel_hd: 'Der Hans ist ein fleissiger Arbeiter, der ruht sich nie aus.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-311',
+      ausdruck: 'gschpässig',
+      hochdeutsch: 'seltsam / komisch',
+      bedeutung: '„Gschpässig" bedeutet im Schweizerdeutschen seltsam, eigenartig oder komisch — abgeleitet von „Spass", aber im Sinne von „sonderbar". „Das isch öppis Gschpässigs" heisst „das ist etwas Merkwürdiges". Auch über Menschen: „En gschpässige Kärli" ist ein schrulliger Kauz. Das Wort schwankt zwischen amüsiert und befremdet, je nach Tonfall. Eines jener vielseitigen Mundartadjektive, die im Schweizer Alltag ständig fallen, wenn etwas nicht ganz ins Schema passt.',
+      beispiel: 'Das isch jetz scho gschpässig, dass niemmer do isch.',
+      beispiel_hd: 'Das ist jetzt schon seltsam, dass niemand hier ist.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-312',
+      ausdruck: 'mängisch',
+      hochdeutsch: 'manchmal',
+      bedeutung: '„Mängisch" ist das schweizerdeutsche Wort für „manchmal" — eines der häufigsten Zeitadverbien im Alltag. „Mängisch chunnt\'s eso, mängisch andersch." Es drückt aus, dass etwas hin und wieder, aber nicht regelmässig geschieht. Die Form leitet sich von „manig" (manch) ab. Im Berndeutschen wie im Zürichdeutschen gebräuchlich. Wer Schweizerdeutsch lernt, stolpert früh über „mängisch", weil es so oft vorkommt und im Hochdeutschen keine direkte lautliche Entsprechung hat.',
+      beispiel: 'Mängisch gani am Sunntig go wandere, mängisch nöd.',
+      beispiel_hd: 'Manchmal gehe ich am Sonntag wandern, manchmal nicht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-313',
+      ausdruck: 'gschiit',
+      hochdeutsch: 'klug / gescheit',
+      bedeutung: '„Gschiit" ist die schweizerdeutsche Form von „gescheit" und bedeutet klug, intelligent, vernünftig. „Sii so gschiit und losch das sii!" heisst „sei so klug und lass das bleiben!". Ein gschiite Mensch denkt mit, handelt überlegt. Auch ironisch: „Jetz bisch gschiit gsi!" wenn jemand etwas Dummes getan hat. Das Wort gehört zum Grundwortschatz und wird in unzähligen Situationen verwendet — von echtem Lob bis zu spöttischem Tadel.',
+      beispiel: 'Du bisch en gschiite Bursch, das chasch du loose.',
+      beispiel_hd: 'Du bist ein kluger Bursche, das kannst du lösen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-314',
+      ausdruck: 'pressiere',
+      hochdeutsch: 'eilen / es eilig haben',
+      bedeutung: '„Pressiere" bedeutet im Schweizerdeutschen eilen oder es eilig haben — vom französischen „presser". „Es pressiert!" heisst „es ist dringend, es eilt!". „Pressier nöd so!" mahnt zur Gelassenheit. Ein klassischer Helvetismus mit welschem Ursprung, der im Hochdeutschen fehlt. Obwohl die Schweizer als gemächlich gelten, kennen sie das „Pressiere" sehr wohl — vor allem, wenn der Zug gleich abfährt. Ein unverzichtbares Alltagswort.',
+      beispiel: 'Mir müend pressiere, susch verpasse mer de Zug!',
+      beispiel_hd: 'Wir müssen uns beeilen, sonst verpassen wir den Zug!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-315',
+      ausdruck: 'tönt',
+      hochdeutsch: 'klingt / hört sich an',
+      bedeutung: '„Tönt" ist im Schweizerdeutschen die Form von „klingt" oder „hört sich an" — vom Verb „töne". „Das tönt guet!" heisst „das klingt gut!". Wo der Deutsche sagt „das klingt nach einem Plan", sagt der Schweizer „das tönt nach ame Plan". Auch wörtlich: eine Glocke „tönt". Ein alltägliches Wort, das in Gesprächen ständig fällt, wenn man einen Vorschlag oder eine Idee bewertet. Charakteristisch schweizerdeutsch, wo Hochdeutsch „klingen" bevorzugt.',
+      beispiel: 'Es Znacht im Beizli? Das tönt doch guet!',
+      beispiel_hd: 'Ein Abendessen im kleinen Restaurant? Das klingt doch gut!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-316',
+      ausdruck: 'lädele',
+      hochdeutsch: 'einkaufen / bummeln',
+      bedeutung: '„Lädele" bedeutet im Schweizerdeutschen gemütlich einkaufen oder durch Geschäfte bummeln — abgeleitet von „Lade" (Laden). „Mir gönd am Samschtig go lädele" heisst „wir gehen am Samstag shoppen". Im Gegensatz zum zweckmässigen Einkauf schwingt beim „Lädele" das Vergnügliche, Schaufenster-Bummelnde mit. Beliebter Zeitvertreib in den Zürcher und Basler Innenstädten. Ein leichtes, fröhliches Wort, das die angenehme Seite des Konsums beschreibt.',
+      beispiel: 'Hesch Luscht, mir gönd es bitzli go lädele i de Stadt?',
+      beispiel_hd: 'Hast du Lust, wir gehen ein bisschen shoppen in der Stadt?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-317',
+      ausdruck: 'gumpe',
+      hochdeutsch: 'springen / hüpfen',
+      bedeutung: '„Gumpe" ist das schweizerdeutsche Verb für springen oder hüpfen — eines der lebhaftesten Wörter der Mundart. „D\'Chind gumped uf em Bett ume" beschreibt herumtollende Kinder. „En Gumpi" ist ein Sprung. Das Wort klingt lautmalerisch nach der Bewegung selbst. Auf dem Trampolin, im Schnee oder vor Freude — überall wird „gegumpet". Verwandt mit dem Substantiv „Gumpi". Ein fröhliches, kindlich-energisches Mundartwort, das es im Hochdeutschen so nicht gibt.',
+      beispiel: 'D\'Goofe gumped vor Freud im ganze Garte ume.',
+      beispiel_hd: 'Die Kinder hüpfen vor Freude im ganzen Garten herum.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-318',
+      ausdruck: 'verhebe',
+      hochdeutsch: 'standhalten / halten',
+      bedeutung: '„Verhebe" bedeutet im Schweizerdeutschen halten, standhalten oder zusammenhalten. „Das verhebt nöd" heisst „das hält nicht, das ist nicht stichhaltig". Eine Ausrede, die „nöd verhebt", überzeugt nicht. Auch wörtlich: „d\'Leiter verhebt scho" (die Leiter hält schon). Das Wort wird häufig im übertragenen Sinn für Argumente, Theorien oder Pläne verwendet. Ein praktisches, vielseitiges Mundartverb, das die schweizerische Vorliebe für solide Verlässlichkeit spiegelt.',
+      beispiel: 'Dini Usred verhebt nöd, das gloub der niemmer.',
+      beispiel_hd: 'Deine Ausrede hält nicht stand, das glaubt dir niemand.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-319',
+      ausdruck: 'lisme',
+      hochdeutsch: 'stricken',
+      bedeutung: '„Lisme" ist das schweizerdeutsche Verb für stricken — wo der Deutsche „strickt", da „lismet" die Schweizerin. „Mini Grossmuetter lismet mir es Paar Socke." Das Substantiv „Gelismets" bezeichnet das Strickzeug oder Gestrickte. Ein urtümliches alemannisches Wort, das mit dem hochdeutschen „stricken" lautlich nichts gemein hat. In den Wintermonaten und auf der Alp ist das Stricken traditionelle Handarbeit. Wer „lismet", pflegt ein Stück Schweizer Heimwerk-Tradition.',
+      beispiel: 'D\'Grossmuetter lismet de ganz Winter warmi Socke.',
+      beispiel_hd: 'Die Grossmutter strickt den ganzen Winter warme Socken.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-320',
+      ausdruck: 'Bschiss',
+      hochdeutsch: 'Betrug / Schwindel',
+      bedeutung: 'Der „Bschiss" ist im Schweizerdeutschen ein Betrug, Schwindel oder eine Mogelei — vom Verb „bschiisse" (betrügen). „Das isch en glatte Bschiss!" empört sich, wer sich übers Ohr gehauen fühlt. Wer „bschisst", hält sich nicht an die Regeln. In einem Land, das Ehrlichkeit und Fairness hochhält, ist „Bschiss" ein schweres Verdikt. Das Wort fällt beim Kartenspiel ebenso wie bei unfairen Geschäften. Ein deftiges, aber alltägliches Mundartwort.',
+      beispiel: 'Drüü Stutz für es Kaffi — das isch doch en Bschiss!',
+      beispiel_hd: 'Drei Franken für einen Kaffee — das ist doch ein Betrug!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-321',
+      ausdruck: 'Schnorre',
+      hochdeutsch: 'Mund / Schnauze',
+      bedeutung: 'Die „Schnorre" ist im Schweizerdeutschen die Schnauze oder der Mund — meist derb gebraucht. „Halt d\'Schnorre!" heisst „halt den Mund!". Wer „e grossi Schnorre hät", redet viel oder prahlt. „Verzell mer kei Seich" und „halt d\'Schnorre" gehören zum kernigen Alltagsrepertoire. Das Wort ist nicht fein, aber unter Kollegen und in hitzigen Momenten allgegenwärtig. Ein urtümlich-direktes Stück Mundart, das die robuste Seite des Schweizerdeutschen zeigt.',
+      beispiel: 'Jetz halt emol d\'Schnorre und los zue!',
+      beispiel_hd: 'Jetzt halt mal den Mund und hör zu!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ch-322',
+      ausdruck: 'lueg emol',
+      hochdeutsch: 'schau mal',
+      bedeutung: 'Die Aufforderung „lueg emol" heisst auf Hochdeutsch „schau mal" oder „sieh dir das an". Sie ist im Schweizerdeutschen alltäglich, wenn man jemanden auf etwas aufmerksam machen will. „Lueg" kommt von „luege" (schauen), „emol" entspricht dem hochdeutschen „einmal" im Sinn von „mal". Man hört es ständig im Gespräch, etwa wenn man auf etwas zeigt oder Erstaunen ausdrückt. Eine der gängigsten Wendungen im Schweizer Alltag.',
+      beispiel: 'Lueg emol, dört dobe flügt en Adler!',
+      beispiel_hd: 'Schau mal, dort oben fliegt ein Adler!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-323',
+      ausdruck: 'es Müntschi',
+      hochdeutsch: 'ein Kuss / ein Küsschen',
+      bedeutung: 'Mit „es Müntschi" ist im Schweizerdeutschen ein Kuss oder Küsschen gemeint. Das Wort gehört zur zärtlichen Alltagssprache, vor allem in Familie und unter Verliebten. „Gib mer es Müntschi" sagt man liebevoll zu Kindern oder dem Partner. Die Verkleinerungsform mit „-i" macht es besonders herzlich. Ein typisch schweizerisches, gefühlvolles Wort, das man in keiner anderen Region so hört.',
+      beispiel: 'Chumm, gib em Grosi no es Müntschi zum Abschied.',
+      beispiel_hd: 'Komm, gib der Oma noch ein Küsschen zum Abschied.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-324',
+      ausdruck: 'pumpfärnä',
+      hochdeutsch: 'topfeben / kerngesund',
+      bedeutung: 'Das Wort „pumpfärnä" beschreibt im Schweizerdeutschen etwas, das vollkommen in Ordnung oder kerngesund ist, oft auch „topfeben". Es ist ein urchiges, lautmalerisches Ausdrucksmittel für „bestens" oder „makellos". Man sagt etwa „es isch alles pumpfärnä", wenn alles tadellos läuft. Das Wort wirkt gemütlich und volkstümlich. Es zählt zu den charmanten, schwer übersetzbaren Eigenheiten der Mundart.',
+      beispiel: 'Em Grossvatter gaht\'s wieder pumpfärnä nach em Spital.',
+      beispiel_hd: 'Dem Großvater geht es nach dem Spital wieder kerngesund.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-325',
+      ausdruck: 'es Trottinett',
+      hochdeutsch: 'ein Tretroller',
+      bedeutung: 'Ein „Trottinett" ist im Schweizerdeutschen ein Tretroller. Das Wort stammt aus dem Französischen (trottinette) und ist typisch für den Schweizer Sprachgebrauch, wo viele französische Lehnwörter heimisch sind. Kinder fahren damit zur Schule, heute auch Erwachsene auf E-Trottinetts durch die Stadt. In Deutschland sagt man „Roller", in der Schweiz fast immer „Trottinett". Ein gutes Beispiel für den welschen Einschlag im Schweizerdeutschen.',
+      beispiel: 'D\'Chind sind mit em Trottinett id Schuel gfahre.',
+      beispiel_hd: 'Die Kinder sind mit dem Tretroller in die Schule gefahren.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-326',
+      ausdruck: 'es Billett',
+      hochdeutsch: 'ein Fahrschein / eine Eintrittskarte',
+      bedeutung: 'Ein „Billett" ist im Schweizerdeutschen der Fahrschein oder die Eintrittskarte. Auch dieses Wort kommt aus dem Französischen und ist in der ganzen Deutschschweiz gebräuchlich. Am Bahnschalter löst man „es Billett", für Bus, Tram oder Zug. Sogar der Führerschein heisst „Fahrbillett" oder kurz „Billett". In Deutschland sagt man „Ticket" oder „Fahrkarte", in der Schweiz bleibt es das „Billett".',
+      beispiel: 'Häsch scho es Billett glööst oder müemmer no zum Schalter?',
+      beispiel_hd: 'Hast du schon einen Fahrschein gelöst oder müssen wir noch zum Schalter?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-327',
+      ausdruck: 'es Poulet',
+      hochdeutsch: 'ein Hähnchen / Huhn',
+      bedeutung: 'Ein „Poulet" ist im Schweizerdeutschen das Hähnchen oder Brathuhn. Das Wort ist direkt aus dem Französischen übernommen und auf jeder Schweizer Speisekarte zu finden. „Poulet mit Pommes" ist ein Klassiker, und im Coop kauft man „es Pouletbrüstli". In Deutschland sagt man „Hähnchen" oder „Hühnchen", in der Schweiz ausschliesslich „Poulet". Ein weiteres Alltagswort mit französischen Wurzeln.',
+      beispiel: 'Zmittag git\'s es knusprigs Poulet mit Härdöpfelstock.',
+      beispiel_hd: 'Zu Mittag gibt es ein knuspriges Hähnchen mit Kartoffelpüree.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-328',
+      ausdruck: 's Morgenässe',
+      hochdeutsch: 'das Frühstück',
+      bedeutung: 'Mit „Morgenässe" ist im Schweizerdeutschen das Frühstück gemeint, wörtlich das „Morgenessen". Daneben gibt es regional auch „Zmorge". Es ist die erste Mahlzeit des Tages mit Brot, Konfitüre, Müesli und Kaffee. „Zum Morgenässe git\'s frischs Bürli" ist typisch schweizerisch. Das Wort folgt dem Muster der Tagesmahlzeiten wie Znüni, Zmittag und Znacht. Ein bodenständiger Begriff aus dem Schweizer Familienalltag.',
+      beispiel: 'Zum Morgenässe gniesse mer am Sunntig frischi Gipfeli.',
+      beispiel_hd: 'Zum Frühstück genießen wir am Sonntag frische Croissants.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-329',
+      ausdruck: 'truurig',
+      hochdeutsch: 'traurig',
+      bedeutung: 'Das Wort „truurig" ist die schweizerdeutsche Form von „traurig". Es beschreibt einen niedergeschlagenen, bekümmerten Gemütszustand. „Sei nöd truurig" tröstet man jemanden, der niedergeschlagen ist. Die typisch schweizerische Aussprache mit dem langen „uu" unterscheidet es vom Hochdeutschen. Ein alltägliches Gefühlswort, das in jedem Gespräch über Stimmungen vorkommt.',
+      beispiel: 'Sii isch ganz truurig gsi, wo de Hund gschtorbe isch.',
+      beispiel_hd: 'Sie war ganz traurig, als der Hund gestorben ist.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-330',
+      ausdruck: 'fröhlich',
+      hochdeutsch: 'fröhlich / heiter',
+      bedeutung: 'Das Wort „fröhlich" wird im Schweizerdeutschen ähnlich wie im Hochdeutschen für eine heitere, gut gelaunte Stimmung verwendet, lautlich aber leicht anders gefärbt. „Es fröhlichs Gmüet" hat, wer von Natur aus heiter ist. An einem Fest geht es „fröhlich" zu und her. Das Wort drückt unbeschwerte Freude aus. Es gehört zum festen Grundwortschatz der Gefühle in der Mundart.',
+      beispiel: 'Es isch en fröhliche Obig gsi mit vill Lache und Singe.',
+      beispiel_hd: 'Es war ein fröhlicher Abend mit viel Lachen und Singen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-331',
+      ausdruck: 'd\'Stäge ab',
+      hochdeutsch: 'die Treppe hinunter',
+      bedeutung: 'Die Wendung „d\'Stäge ab" bedeutet „die Treppe hinunter". „Stäge" ist das schweizerdeutsche Wort für Treppe, „ab" heisst hinunter. „Gang d\'Stäge ab und denn rächts" weist man jemandem den Weg. Das Gegenstück ist „d\'Stäge ufe" (die Treppe hinauf). Eine alltägliche Richtungsangabe im Haus und im Treppenhaus. Typisch ist die weiche schweizerische Aussprache von „Stäge".',
+      beispiel: 'Gump nöd eso schnäll d\'Stäge ab, susch fallsch!',
+      beispiel_hd: 'Spring nicht so schnell die Treppe hinunter, sonst fällst du!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-332',
+      ausdruck: 'go poschte',
+      hochdeutsch: 'einkaufen gehen',
+      bedeutung: 'Die Wendung „go poschte" heisst auf Hochdeutsch „einkaufen gehen", besonders Lebensmittel besorgen. „Poschte" leitet sich von den Einkäufen ab, die man besorgt. „Ich gang schnäll go poschte" sagt man vor dem Gang in den Coop oder die Migros. Das vorangestellte „go" ist die typisch schweizerdeutsche Konstruktion für „gehen, um zu". Eine der häufigsten Alltagswendungen überhaupt.',
+      beispiel: 'Am Samschtig müemmer no schnäll go poschte für s\'Wuchenänd.',
+      beispiel_hd: 'Am Samstag müssen wir noch schnell einkaufen gehen für das Wochenende.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-333',
+      ausdruck: 'es Necessaire',
+      hochdeutsch: 'ein Kulturbeutel',
+      bedeutung: 'Ein „Necessaire" ist im Schweizerdeutschen der Kulturbeutel oder die Waschtasche für die Reise. Das Wort kommt aus dem Französischen und meint wörtlich das „Notwendige". Darin sind Zahnbürste, Seife und Kosmetik verstaut. In Deutschland sagt man „Kulturbeutel" oder „Waschtasche", in der Schweiz das elegante „Necessaire". Ein weiteres Beispiel für den selbstverständlichen Gebrauch französischer Wörter im Alltag.',
+      beispiel: 'Vergiss s\'Necessaire nöd, susch häsch kei Zahnbürschte debii.',
+      beispiel_hd: 'Vergiss den Kulturbeutel nicht, sonst hast du keine Zahnbürste dabei.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-334',
+      ausdruck: 'es Glesli',
+      hochdeutsch: 'ein Gläschen',
+      bedeutung: 'Ein „Glesli" ist im Schweizerdeutschen ein kleines Glas oder Gläschen. Die Verkleinerungsform mit „-li" ist typisch und drückt Gemütlichkeit aus. „Mer trinke no es Glesli Wii" sagt man gesellig nach dem Essen. Es kann ein Glas Wein, Most oder Sirup sein. Das Wort zeigt die Vorliebe der Mundart für liebevolle Verkleinerungen im Alltag.',
+      beispiel: 'Trinksch no es Glesli Rote mit mir uf em Balkon?',
+      beispiel_hd: 'Trinkst du noch ein Gläschen Roten mit mir auf dem Balkon?',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-335',
+      ausdruck: 'zwäg',
+      hochdeutsch: 'wohlauf / fit / in Ordnung',
+      bedeutung: 'Das Wort „zwäg" bedeutet im Schweizerdeutschen „wohlauf", „fit" oder „in Ordnung". „Bisch wieder zwäg?" fragt man jemanden nach einer Krankheit. „Öppis zwägmache" heisst etwas herrichten oder reparieren. Das Wort ist äusserst vielseitig und gehört zum täglichen Wortschatz. Wer „guet zwäg" ist, fühlt sich rundum gut. Ein echtes Schweizer Allzweckwort ohne genaue hochdeutsche Entsprechung.',
+      beispiel: 'Nach de Grippe bin ich jetz wieder ganz zwäg.',
+      beispiel_hd: 'Nach der Grippe bin ich jetzt wieder ganz wohlauf.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-336',
+      ausdruck: 'hässig',
+      hochdeutsch: 'wütend / verärgert',
+      bedeutung: 'Das Wort „hässig" beschreibt im Schweizerdeutschen einen ärgerlichen, wütenden oder gereizten Zustand. „Ich bin hässig" heisst „ich bin sauer". Es leitet sich von „Hass" ab, ist aber im Alltag viel harmloser gemeint und beschreibt eher Ärger als echten Hass. „Mach mi nöd hässig" warnt jemanden, der einen reizt. Ein häufiges, kerniges Gefühlswort der Mundart.',
+      beispiel: 'Ich bin hässig worde, wil de Zug scho wieder Verspötig ghaa hät.',
+      beispiel_hd: 'Ich bin wütend geworden, weil der Zug schon wieder Verspätung hatte.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-337',
+      ausdruck: 'es Zückerli',
+      hochdeutsch: 'ein Bonbon',
+      bedeutung: 'Ein „Zückerli" ist im Schweizerdeutschen ein Bonbon oder Zuckerstück. Das Wort ist die liebevolle Verkleinerung von „Zucker". Kinder bekommen „es Zückerli" als kleine Belohnung. Im übertragenen Sinn ist „es Zückerli" auch ein verlockendes Angebot oder ein Anreiz. In Deutschland sagt man „Bonbon", in der Schweiz das herzige „Zückerli". Ein typisches Beispiel für die Verkleinerungsfreude der Mundart.',
+      beispiel: 'D\'Grossmuetter hät jedem Chind es Zückerli i d\'Hand drückt.',
+      beispiel_hd: 'Die Großmutter hat jedem Kind ein Bonbon in die Hand gedrückt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-338',
+      ausdruck: 'Chuchi',
+      hochdeutsch: 'die Küche',
+      bedeutung: 'Die „Chuchi" ist im Schweizerdeutschen die Küche. Das berühmte „Chuchichäschtli" (Küchenschränkchen) gilt als Schweizer Schibboleth. In der „Chuchi" wird gekocht, gegessen und geschwatzt, sie ist oft das Herz der Wohnung. „Mer sitze i de Chuchi" ist Alltag. Die typische Aussprache mit dem harten „ch" macht das Wort unverwechselbar schweizerisch.',
+      beispiel: 'D\'Mueter schtaht scho am Morge früe i de Chuchi und bachet.',
+      beispiel_hd: 'Die Mutter steht schon am frühen Morgen in der Küche und backt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-339',
+      ausdruck: 'Stube',
+      hochdeutsch: 'das Wohnzimmer',
+      bedeutung: 'Die „Stube" ist im Schweizerdeutschen das Wohnzimmer oder die gute Stube. Sie ist der gemütliche Aufenthaltsraum, wo man am Abend zusammensitzt. „Mer hocked i de Stube" beschreibt den gemeinsamen Feierabend. In traditionellen Häusern ist die Stube mit Kachelofen und Holztäfer ausgestattet. Ein warmes, heimeliges Wort, das Gemütlichkeit ausstrahlt.',
+      beispiel: 'Am Winterobig sitze mer all zäme i de warme Stube.',
+      beispiel_hd: 'Am Winterabend sitzen wir alle zusammen in der warmen Stube.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-340',
+      ausdruck: 'd\'Chatz',
+      hochdeutsch: 'die Katze',
+      bedeutung: 'Die „Chatz" ist im Schweizerdeutschen die Katze. Die Aussprache mit dem typischen Anlaut-„ch" statt „k" ist charakteristisch für die Mundart. „D\'Chatz schnurret" sagt man, wenn das Tier behaglich ist. Sprichwörtlich ist „es het kei Chatz" für „es war niemand da". Ein alltägliches Wort, das die lautlichen Eigenheiten des Schweizerdeutschen schön zeigt.',
+      beispiel: 'D\'Chatz ligt de ganz Tag uf em warme Sofa und schloft.',
+      beispiel_hd: 'Die Katze liegt den ganzen Tag auf dem warmen Sofa und schläft.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-341',
+      ausdruck: 'de Hund',
+      hochdeutsch: 'der Hund',
+      bedeutung: 'Der „Hund" heisst im Schweizerdeutschen ebenso „Hund", wird aber lautlich weicher und mit kurzem „u" gesprochen. Daneben gibt es liebevolle Formen wie „Hündli". „Mit em Hund go spaziere" ist alltäglich. Im übertragenen Sinn ist „en armé Hund" ein bedauernswerter Mensch. Ein Grundwort, das im Schweizer Alltag und in vielen Redensarten vorkommt.',
+      beispiel: 'Jede Morge gan ich mit em Hund ständ am See spaziere.',
+      beispiel_hd: 'Jeden Morgen gehe ich mit dem Hund am See spazieren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-342',
+      ausdruck: 'es rägnet',
+      hochdeutsch: 'es regnet',
+      bedeutung: 'Die Wendung „es rägnet" heisst „es regnet". „Räge" ist das schweizerdeutsche Wort für Regen, gesprochen mit hellem „ä". „Es rägnet wie us Chüble" entspricht dem hochdeutschen „es schüttet wie aus Kübeln". Das Wetter ist in der Schweiz ein dauerndes Gesprächsthema. Eine ganz alltägliche Beobachtung, die man unzählige Male am Tag hört. Die Aussprache mit „ä" ist typisch schweizerisch.',
+      beispiel: 'Nimm en Schirm mit, es rägnet hüt de ganz Tag.',
+      beispiel_hd: 'Nimm einen Schirm mit, es regnet heute den ganzen Tag.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-343',
+      ausdruck: 'd\'Sunne schiint',
+      hochdeutsch: 'die Sonne scheint',
+      bedeutung: 'Die Wendung „d\'Sunne schiint" bedeutet „die Sonne scheint". „Sunne" ist das schweizerdeutsche Wort für Sonne, „schiine" heisst scheinen. An einem schönen Tag freut man sich: „Hüt schiint d\'Sunne." Das Wetter bestimmt in den Bergen vieles, darum ist die Wendung allgegenwärtig. Eine positive, alltägliche Aussage über schönes Wetter. Die weiche Aussprache ist typisch für die Mundart.',
+      beispiel: 'Hüt schiint d\'Sunne, drum gömmer go wandere id Bärge.',
+      beispiel_hd: 'Heute scheint die Sonne, darum gehen wir wandern in die Berge.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-344',
+      ausdruck: 'es Müsterli',
+      hochdeutsch: 'ein Pröbchen / kleines Muster',
+      bedeutung: 'Ein „Müsterli" ist im Schweizerdeutschen ein kleines Muster oder Pröbchen, etwa eine Warenprobe. Die Verkleinerung von „Muster" wird im Alltag oft gebraucht. „Es Müsterli zum Probiere" gibt es an der Käsetheke oder bei der Kosmetik. Im übertragenen Sinn ist „es Müsterli" auch eine nette Begebenheit zum Erzählen. Ein praktisches Alltagswort mit der typischen „-li"-Endung.',
+      beispiel: 'A de Cheestheke händ sie eus es Müsterli zum Probiere ggä.',
+      beispiel_hd: 'An der Käsetheke haben sie uns ein Pröbchen zum Probieren gegeben.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-345',
+      ausdruck: 'go schaffe',
+      hochdeutsch: 'zur Arbeit gehen / arbeiten gehen',
+      bedeutung: 'Die Wendung „go schaffe" heisst „zur Arbeit gehen" oder „arbeiten gehen". „Schaffe" ist das schweizerdeutsche Wort für arbeiten, das vorangestellte „go" drückt die Absicht aus. „Ich mues morn go schaffe" sagt man vor einem Arbeitstag. Es bezeichnet die berufliche Tätigkeit ganz allgemein. Eine der häufigsten Wendungen im Berufsalltag der Deutschschweiz.',
+      beispiel: 'Am Mäntig mues ich scho wieder früe go schaffe.',
+      beispiel_hd: 'Am Montag muss ich schon wieder früh zur Arbeit gehen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-346',
+      ausdruck: 'es Trottoir',
+      hochdeutsch: 'ein Gehsteig / Bürgersteig',
+      bedeutung: 'Das „Trottoir" ist im Schweizerdeutschen der Gehsteig oder Bürgersteig. Das Wort stammt aus dem Französischen und ist in der ganzen Deutschschweiz üblich. „Lauf uf em Trottoir, nöd uf de Strass" sagt man zu Kindern. In Deutschland heisst es „Bürgersteig" oder „Gehweg", in der Schweiz immer „Trottoir". Ein weiteres Alltagswort, das den französischen Einfluss auf die Mundart zeigt.',
+      beispiel: 'D\'Velöfahrer söttet nöd uf em Trottoir fahre.',
+      beispiel_hd: 'Die Velofahrer sollten nicht auf dem Gehsteig fahren.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-347',
+      ausdruck: 'es Buschi',
+      hochdeutsch: 'ein Baby / Säugling',
+      bedeutung: 'Ein „Buschi" ist im Schweizerdeutschen ein Baby oder Säugling. Das herzige Wort gehört zur liebevollen Familiensprache. „S\'Buschi schloft" sagt man leise, wenn das Kleine ruht. Daneben gibt es auch „Bébé" nach französischem Vorbild. Das Wort drückt Zärtlichkeit gegenüber dem Neugeborenen aus. Ein typisch schweizerdeutscher Kosebegriff für die Allerkleinsten.',
+      beispiel: 'S\'Buschi hät die ganz Nacht dürägschlofe, e seltni Freud.',
+      beispiel_hd: 'Das Baby hat die ganze Nacht durchgeschlafen, eine seltene Freude.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-348',
+      ausdruck: 'd\'Giele',
+      hochdeutsch: 'die Jungen / die Burschen',
+      bedeutung: 'Mit „Giele" sind im Schweizerdeutschen Jungen oder Burschen gemeint, die Einzahl ist „Giel". Das Wort ist vor allem im Raum Bern und im Mittelland verbreitet. „D\'Giele spilet Fuessball" beschreibt eine Gruppe Buben. Das weibliche Pendant ist „Modi" (Mädchen). Ein bodenständiges Wort für die männliche Jugend. Es gehört zum traditionellen Wortschatz der Mundart.',
+      beispiel: 'D\'Giele vom Dorf träffed sich jede Obig uf em Sportplatz.',
+      beispiel_hd: 'Die Jungen aus dem Dorf treffen sich jeden Abend auf dem Sportplatz.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-349',
+      ausdruck: 'es Modi',
+      hochdeutsch: 'ein Mädchen',
+      bedeutung: 'Ein „Modi" ist im Schweizerdeutschen ein Mädchen. Das Wort ist besonders im Berndeutschen und im Mittelland geläufig. „Es härzigs Modi" ist ein nettes Mädchen. Das männliche Gegenstück ist „Giel" (Junge). Die Mehrzahl lautet „Meitli" oder „Modi". Ein traditionelles, liebevolles Wort für ein junges Mädchen, das tief in der Mundart verwurzelt ist.',
+      beispiel: 'S\'Nochbersmodi hät hüt sin erscht Schueltag ghaa.',
+      beispiel_hd: 'Das Nachbarsmädchen hatte heute seinen ersten Schultag.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-350',
+      ausdruck: 'tüür',
+      hochdeutsch: 'teuer',
+      bedeutung: 'Das Wort „tüür" ist die schweizerdeutsche Form von „teuer". Es beschreibt einen hohen Preis. „Das isch mer z\'tüür" sagt man, wenn etwas zu kostspielig ist. Die typische Aussprache mit dem langgezogenen „üü" unterscheidet es vom Hochdeutschen. In der teuren Schweiz ist das Wort allgegenwärtig beim Einkaufen. Ein alltägliches Wort rund ums Geld und die Preise.',
+      beispiel: 'De neu Velöhälm isch mer ehrlich gseit z\'tüür gsi.',
+      beispiel_hd: 'Der neue Velohelm war mir ehrlich gesagt zu teuer.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-351',
+      ausdruck: 'gschpürig',
+      hochdeutsch: 'feinfühlig / empfindsam',
+      bedeutung: 'Das Wort „gschpürig" beschreibt im Schweizerdeutschen einen feinfühligen, empfindsamen Menschen, der viel spürt und wahrnimmt. Es leitet sich von „gschpüre" (spüren) ab. „Es gschpürigs Chind" nimmt Stimmungen stark wahr. Das Wort kann auch heikel oder empfindlich bedeuten. Ein ausdrucksstarkes Gefühlswort, das eine besondere Sensibilität beschreibt. Es zeigt den Reichtum der Mundart bei seelischen Begriffen.',
+      beispiel: 'Sii isch es gschpürigs Modi und merkt sofort, wenn öpper truurig isch.',
+      beispiel_hd: 'Sie ist ein feinfühliges Mädchen und merkt sofort, wenn jemand traurig ist.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-352',
+      ausdruck: 'es Spätzli',
+      hochdeutsch: 'ein Schätzchen / Liebling',
+      bedeutung: 'Ein „Spätzli" ist im Schweizerdeutschen ein Kosename für ein Schätzchen oder den Liebling. Wörtlich bedeutet es „Spätzchen" und wird zärtlich für den Partner oder das Kind gebraucht. „Mis Spätzli" sagt man liebevoll. Daneben kennt man „Spätzli" auch als kleine Teigwaren, doch als Kosewort ist es weit verbreitet. Ein herzliches Wort der Zuneigung in der Mundart.',
+      beispiel: 'Guete Morge, mis Spätzli, hesch guet gschlofe?',
+      beispiel_hd: 'Guten Morgen, mein Schätzchen, hast du gut geschlafen?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-353',
+      ausdruck: 'umä',
+      hochdeutsch: 'herum / wieder',
+      bedeutung: 'Das kleine Wort „umä" bedeutet im Schweizerdeutschen je nach Zusammenhang „herum" oder „wieder/erneut". „Lauf nöd eso umä" heisst „lauf nicht so herum". „Es chunt scho umä guet" bedeutet „es kommt schon wieder gut". Das vielseitige Wörtchen taucht in zahllosen Wendungen auf. Es gehört zu den kleinen, aber unverzichtbaren Bausteinen der Mundart. Die Aussprache ist weich und kurz.',
+      beispiel: 'D\'Chind sind de ganz Nomittag im Garte umä gsprunge.',
+      beispiel_hd: 'Die Kinder sind den ganzen Nachmittag im Garten herumgerannt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-354',
+      ausdruck: 'pfupfig',
+      hochdeutsch: 'lebhaft / temperamentvoll',
+      bedeutung: 'Das Wort „pfupfig" beschreibt im Schweizerdeutschen einen lebhaften, temperamentvollen oder energiegeladenen Menschen. Es leitet sich vom „Pfupf" (Schwung, Energie) ab. „Es pfupfigs Modi" ist voller Tatendrang und Schwung. Das Wort hat einen positiven, schalkhaften Klang. Es beschreibt jemanden, der nicht stillsitzen kann und Schwung in die Bude bringt. Ein farbiges, urchiges Mundartwort.',
+      beispiel: 'Üses Jüngscht isch so pfupfig, das cha kei Minute schtill sitze.',
+      beispiel_hd: 'Unser Jüngstes ist so lebhaft, dass es keine Minute stillsitzen kann.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-355',
+      ausdruck: 'es Kafi',
+      hochdeutsch: 'ein Kaffee',
+      bedeutung: 'Ein „Kafi" ist im Schweizerdeutschen der Kaffee, das Getränk wie auch oft das Café selbst. „Mer gönd no schnäll es Kafi go trinke" gehört zum geselligen Alltag. „Es Kafi crème" ist der Kaffee mit Milch, typisch für die Schweiz. Die schweizerische Form mit kurzem „a" und betontem „i" unterscheidet sich vom Hochdeutschen. Ein unverzichtbares Wort der Schweizer Kaffeekultur.',
+      beispiel: 'Nach em Zmittag gniesse mer immer no es Kafi crème.',
+      beispiel_hd: 'Nach dem Mittagessen genießen wir immer noch einen Milchkaffee.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-356',
+      ausdruck: 'es Stückli',
+      hochdeutsch: 'ein Stückchen',
+      bedeutung: 'Ein „Stückli" ist im Schweizerdeutschen ein Stückchen, etwa vom Kuchen oder von der Schoggi. Die Verkleinerung von „Stück" ist im Alltag häufig. „Magsch no es Stückli Chueche?" fragt man beim Kaffee. Im übertragenen Sinn ist „es lustigs Stückli" auch eine drollige Begebenheit. Ein alltägliches Wort mit der typischen „-li"-Endung. Es zeigt die schweizerische Vorliebe für Verkleinerungen.',
+      beispiel: 'Nimm doch no es Stückli vo dem feine Schoggichueche.',
+      beispiel_hd: 'Nimm doch noch ein Stückchen von diesem feinen Schokoladenkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-357',
+      ausdruck: 'wüescht',
+      hochdeutsch: 'hässlich / schlimm / garstig',
+      bedeutung: 'Das Wort „wüescht" bedeutet im Schweizerdeutschen „hässlich", „schlimm" oder „garstig". „Es wüeschts Wätter" ist mieses, garstiges Wetter. „Er hät wüescht gredt" heisst, jemand hat unanständig geredet. Das Wort ist sehr vielseitig und drückt allgemeines Missfallen aus. Die typische Aussprache mit „üe" ist charakteristisch. Ein ausdrucksstarkes, häufiges Wort der Mundart für alles Unschöne.',
+      beispiel: 'Hüt isch es wüeschts Wätter, mer blibed lieber dihei.',
+      beispiel_hd: 'Heute ist ein garstiges Wetter, wir bleiben lieber daheim.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-358',
+      ausdruck: 'es Wätter',
+      hochdeutsch: 'ein Wetter',
+      bedeutung: 'Das „Wätter" ist im Schweizerdeutschen das Wetter, gesprochen mit hellem „ä". Es ist eines der häufigsten Gesprächsthemen, besonders in den Bergen. „Schöns Wätter hüt" oder „es wüeschts Wätter" hört man ständig. Das Wetter bestimmt Wanderungen, Skitage und die Landwirtschaft. Die typische Aussprache mit „ä" macht das Wort unverkennbar schweizerisch. Ein zentrales Alltagswort der Mundart.',
+      beispiel: 'Wenn s\'Wätter haltet, gömmer am Sunntig uf de Bärg.',
+      beispiel_hd: 'Wenn das Wetter hält, gehen wir am Sonntag auf den Berg.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-359',
+      ausdruck: 'de Schnee',
+      hochdeutsch: 'der Schnee',
+      bedeutung: 'Der „Schnee" heisst im Schweizerdeutschen ebenso „Schnee", wird aber weicher und mit langem „ee" gesprochen. In den Bergen und im Winter spielt er eine grosse Rolle. „Es lit vill Schnee" sagt man nach einem Schneefall. Schnee bedeutet Skifahren, Schlitteln und weisse Landschaften. Ein zentrales Wort des Schweizer Winters, das in Wetter und Freizeit ständig vorkommt. Die Aussprache ist typisch mundartlich weich.',
+      beispiel: 'Über Nacht isch en halbe Meter Schnee abeghiit.',
+      beispiel_hd: 'Über Nacht ist ein halber Meter Schnee gefallen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-360',
+      ausdruck: 'go schlittle',
+      hochdeutsch: 'Schlitten fahren gehen',
+      bedeutung: 'Die Wendung „go schlittle" heisst „Schlitten fahren gehen". „Schlittle" ist das schweizerdeutsche Verb fürs Schlittenfahren, das vorangestellte „go" drückt die Absicht aus. Im Winter ist „go schlittle" ein beliebter Spass für Gross und Klein. Man saust den verschneiten Hang hinunter. Eine typische Winterfreizeit-Wendung der Deutschschweiz. Sie zeigt die schweizerische „go"-Konstruktion für Vorhaben.',
+      beispiel: 'Wenn gnueg Schnee lit, gömmer mit de Chind go schlittle.',
+      beispiel_hd: 'Wenn genug Schnee liegt, gehen wir mit den Kindern Schlitten fahren.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-361',
+      ausdruck: 'es Müüli',
+      hochdeutsch: 'ein Maul / Mündchen (Schmollmund)',
+      bedeutung: 'Ein „Müüli" macht im Schweizerdeutschen, wer schmollt oder beleidigt ist, also einen Schmollmund zieht. „Es Müüli mache" heisst beleidigt dreinschauen. Das Wort ist die Verkleinerung von „Muul" (Maul). Vor allem bei Kindern hört man „mach kei Müüli". Das Wort beschreibt liebevoll-neckend das Schmollen. Ein anschauliches Mundartwort für eine vertraute Geste der Verstimmung.',
+      beispiel: 'Mach jetz kei Müüli, du chunsch s\'nächscht Mol au draa.',
+      beispiel_hd: 'Mach jetzt keinen Schmollmund, du kommst das nächste Mal auch dran.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ch-362',
+      ausdruck: 'd\'Finger',
+      hochdeutsch: 'die Finger',
+      bedeutung: 'Die „Finger" heissen im Schweizerdeutschen ebenso „Finger", werden aber mit weichem Anlaut gesprochen. „Halt d\'Finger devo" warnt davor, etwas anzufassen. Redensartlich „lange Finger mache" heisst stehlen. Die Finger gehören zum täglichen Körpervokabular. Ein Grundwort, das in vielen Wendungen und Warnungen auftaucht. Die Aussprache ist typisch mundartlich gefärbt.',
+      beispiel: 'Halt d\'Finger vo de heisse Pfanne, du verbrennsch di!',
+      beispiel_hd: 'Halt die Finger von der heißen Pfanne, du verbrennst dich!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ch-363',
+      ausdruck: 'd\'Füess',
+      hochdeutsch: 'die Füße',
+      bedeutung: 'Die „Füess" sind im Schweizerdeutschen die Füße, die Einzahl ist „Fuess". Die typische Aussprache mit „üe" beziehungsweise „ue" ist charakteristisch. „Mer tüend d\'Füess weh" nach einer langen Wanderung. „Z\'Fuess gah" heisst zu Fuss gehen. Ein alltägliches Körperwort, das beim Wandern und Laufen oft fällt. Die Lautung unterscheidet es deutlich vom Hochdeutschen.',
+      beispiel: 'Nach de langé Wanderig tüend mer d\'Füess rüüdig weh.',
+      beispiel_hd: 'Nach der langen Wanderung tun mir die Füße arg weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ch-364',
+      ausdruck: 'glücklich',
+      hochdeutsch: 'glücklich / froh',
+      bedeutung: 'Das Wort „glücklich" wird im Schweizerdeutschen ähnlich wie im Hochdeutschen für ein tiefes Gefühl der Freude und Zufriedenheit verwendet, lautlich aber weicher. „Ich bin so glücklich" drückt grosses Glück aus. An einem Hochzeitstag ist man „überglücklich". Das Wort gehört zum festen Grundwortschatz der positiven Gefühle. Es beschreibt einen erfüllten, freudigen Gemütszustand. Ein zentrales Gefühlswort der Mundart.',
+      beispiel: 'Sii sind überglücklich gsi, wo s\'erscht Chind uf d\'Wält cho isch.',
+      beispiel_hd: 'Sie waren überglücklich, als das erste Kind auf die Welt kam.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-365',
+      ausdruck: 'nervös',
+      hochdeutsch: 'nervös / aufgeregt',
+      bedeutung: 'Das Wort „nervös" wird im Schweizerdeutschen für einen aufgeregten, unruhigen Zustand verwendet, lautlich leicht anders als im Hochdeutschen. „Ich bin nervös vor de Prüefig" sagt man vor einer Prüfung. Wer „nervös" ist, kann nicht ruhig bleiben. Das Wort beschreibt innere Anspannung und Unruhe. Es gehört zum alltäglichen Gefühlswortschatz. Ein häufiges Wort in Situationen mit Lampenfieber oder Stress.',
+      beispiel: 'Vor em Vorstellungsgschpröch bin ich rächt nervös gsi.',
+      beispiel_hd: 'Vor dem Vorstellungsgespräch war ich ziemlich nervös.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-366',
+      ausdruck: 'es Foto',
+      hochdeutsch: 'ein Foto',
+      bedeutung: 'Ein „Foto" ist im Schweizerdeutschen ein Lichtbild, wie im Hochdeutschen, aber im Sprachfluss der Mundart eingebettet. „Mach es Foto" sagt man, wenn man ein Bild aufnehmen will. „Es schöns Foto vo de Bärge" hält die Aussicht fest. Heute werden Fotos meist mit dem Natel gemacht. Ein alltägliches Wort der modernen Mundart. Es zeigt, wie internationale Begriffe ins Schweizerdeutsche eingebunden werden.',
+      beispiel: 'Mach schnäll es Foto vo eus vor em Matterhorn!',
+      beispiel_hd: 'Mach schnell ein Foto von uns vor dem Matterhorn!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-367',
+      ausdruck: 'es Velöplätzli',
+      hochdeutsch: 'ein Fahrradabstellplatz',
+      bedeutung: 'Ein „Velöplätzli" ist im Schweizerdeutschen ein kleiner Fahrradabstellplatz. Es setzt sich aus „Velo" (Fahrrad) und „Plätzli" (Plätzchen) zusammen. „Häsch es Velöplätzli gfunde?" fragt man vor dem Bahnhof. Das Velo ist in der Schweiz ein wichtiges Verkehrsmittel, drum braucht es Abstellplätze. Ein praktisches Alltagswort, das zwei typische Mundartelemente verbindet. Es zeigt die Wortbildung mit Verkleinerung.',
+      beispiel: 'Vor em Bahnhof hät\'s käs einzigs Velöplätzli meh gha.',
+      beispiel_hd: 'Vor dem Bahnhof gab es keinen einzigen Fahrradabstellplatz mehr.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-368',
+      ausdruck: 'umärennä',
+      hochdeutsch: 'herumrennen',
+      bedeutung: 'Das Wort „umärennä" heisst im Schweizerdeutschen „herumrennen", also hektisch oder ziellos hin und her laufen. Es setzt sich aus „umä" (herum) und „rennä" (rennen) zusammen. „Renn nöd eso umä" sagt man zu jemandem, der nervös umherläuft. Auch im Stress „rennt mer de ganz Tag umä". Ein anschauliches Alltagswort für Hektik und Betriebsamkeit. Es zeigt die mundartliche Zusammensetzung von Verben.',
+      beispiel: 'D\'Chind sind vor luter Freud im Garte umärennt.',
+      beispiel_hd: 'Die Kinder sind vor lauter Freude im Garten herumgerannt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-369',
+      ausdruck: 'es Sürmeli',
+      hochdeutsch: 'ein Tollpatsch / Wirrkopf',
+      bedeutung: 'Ein „Sürmeli" ist im Schweizerdeutschen ein liebenswerter Tollpatsch oder ein zerstreuter Wirrkopf. Das Wort wird neckisch-liebevoll gebraucht für jemanden, der etwas verpeilt ist. „Du bisch mer es Sürmeli" sagt man schmunzelnd. Es ist die Verkleinerung von „Sürmel". Das Wort beschreibt charmant einen kleinen Chaoten. Ein humorvolles, gutmütiges Mundartwort ohne echte Bosheit.',
+      beispiel: 'Du bisch mer es Sürmeli, jetz hesch scho wieder de Schlüssel vergässe.',
+      beispiel_hd: 'Du bist mir ein Tollpatsch, jetzt hast du schon wieder den Schlüssel vergessen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-370',
+      ausdruck: 'gluschtig',
+      hochdeutsch: 'appetitlich / verlockend',
+      bedeutung: 'Das Wort „gluschtig" bedeutet im Schweizerdeutschen „appetitlich" oder „verlockend". Es leitet sich vom „Gluscht" (Appetit, Lust) ab. „Das gseht gluschtig us" sagt man über ein feines Essen, das einem den Mund wässrig macht. Es kann sich auch auf andere verlockende Dinge beziehen. Ein farbiges Mundartwort, das Vorfreude und Appetit ausdrückt. Es gehört zur genussfreudigen Seite der Sprache.',
+      beispiel: 'Die frische Erdbeeri gsehnd ja rüüdig gluschtig us!',
+      beispiel_hd: 'Die frischen Erdbeeren sehen ja äußerst appetitlich aus!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-371',
+      ausdruck: 'umständlich',
+      hochdeutsch: 'kompliziert / mühsam',
+      bedeutung: 'Das Wort „umständlich" beschreibt im Schweizerdeutschen etwas Kompliziertes oder Mühsames, das viel Aufwand macht. „Das isch mer z\'umständlich" sagt man über eine zu aufwändige Sache. Wer „umständlich" vorgeht, macht es sich unnötig schwer. Das Wort wird ähnlich wie im Hochdeutschen gebraucht, im Klang aber mundartlich weicher. Ein alltägliches Wort, wenn etwas zu kompliziert oder schwerfällig ist.',
+      beispiel: 'Das ganze Formular uszfülle isch mer viel z\'umständlich gsi.',
+      beispiel_hd: 'Das ganze Formular auszufüllen war mir viel zu umständlich.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-372',
+      ausdruck: 'es Spili',
+      hochdeutsch: 'ein Spiel',
+      bedeutung: 'Ein „Spili" ist im Schweizerdeutschen ein Spiel, sei es ein Gesellschaftsspiel oder eine Partie. Die Verkleinerung von „Spiel" klingt liebevoll. „Mer mached no es Spili" sagt man am gemütlichen Abend mit Jassen oder Brettspielen. Auch ein Fussballmatch ist „es Spili". Ein alltägliches Wort der Freizeit mit der typischen „-li"-Endung. Es zeigt die schweizerische Vorliebe für Verkleinerungen.',
+      beispiel: 'Am Sunntignomittag mached mer immer no es Spili Jass.',
+      beispiel_hd: 'Am Sonntagnachmittag machen wir immer noch ein Spiel Jass.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-373',
+      ausdruck: 'jasse',
+      hochdeutsch: 'Jass spielen (Schweizer Kartenspiel)',
+      bedeutung: 'Das Wort „jasse" heisst im Schweizerdeutschen, das traditionelle Kartenspiel Jass zu spielen. Der Jass ist DAS Schweizer Nationalkartenspiel, gespielt mit den typischen Jasskarten. „Mer gönd go jasse" ist gesellige Tradition in Beizen und Familien. Es gibt zahllose Varianten wie Schieber oder Differenzler. Ein zutiefst schweizerisches Wort, das ein Stück Kultur transportiert. Jassen verbindet Generationen.',
+      beispiel: 'Am Stammtisch i de Beiz wird jede Aabig glideschaftlich gjasset.',
+      beispiel_hd: 'Am Stammtisch in der Beiz wird jeden Abend leidenschaftlich Jass gespielt.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-374',
+      ausdruck: 'Trumpf',
+      hochdeutsch: 'der Trumpf (beim Jass)',
+      bedeutung: 'Der „Trumpf" ist im Schweizerdeutschen die stärkste Farbe beim Jass, die alle anderen sticht. „Was isch Trumpf?" fragt man zu Beginn jeder Runde. Die Wahl des Trumpfs entscheidet oft über Sieg oder Niederlage. Redensartlich heisst „de Trumpf usspiele", seinen entscheidenden Vorteil einsetzen. Ein zentrales Wort der Jasskultur, das auch im übertragenen Sinn gebraucht wird. Es gehört zum festen Schweizer Wortschatz.',
+      beispiel: 'Bi dere Rundä isch Egge de Trumpf gsi, drum hämmer gwunne.',
+      beispiel_hd: 'Bei dieser Runde war Ecken der Trumpf, darum haben wir gewonnen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-375',
+      ausdruck: 'd\'Wösch',
+      hochdeutsch: 'die Wäsche',
+      bedeutung: 'Die „Wösch" ist im Schweizerdeutschen die Wäsche, also die Kleider, die gewaschen werden. „D\'Wösch ufhänke" heisst die Wäsche aufhängen. In Mehrfamilienhäusern gibt es den geregelten „Wöschtag". Das Wort gehört zum Haushaltsalltag. Die typische Aussprache mit „ö" unterscheidet es vom Hochdeutschen. Ein bodenständiges Wort, das in jedem Schweizer Haushalt fällt.',
+      beispiel: 'Wenn d\'Sunne schiint, häng ich d\'Wösch lieber duss uf.',
+      beispiel_hd: 'Wenn die Sonne scheint, hänge ich die Wäsche lieber draußen auf.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-376',
+      ausdruck: 'putze',
+      hochdeutsch: 'putzen / reinigen',
+      bedeutung: 'Das Wort „putze" heisst im Schweizerdeutschen putzen oder reinigen. „D\'Wohnig putze" gehört zum samstäglichen Hausputz. Im Schweizerdeutschen wird es weicher gesprochen als im Hochdeutschen. Eine „Putzfrau" hilft beim Reinemachen. Das Wort ist im Haushaltsalltag allgegenwärtig. Ein praktisches, häufiges Tätigkeitswort der Mundart rund um Sauberkeit und Ordnung.',
+      beispiel: 'Am Samschtig müemmer no schnäll s\'ganze Hus putze.',
+      beispiel_hd: 'Am Samstag müssen wir noch schnell das ganze Haus putzen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-377',
+      ausdruck: 'wärche',
+      hochdeutsch: 'werken / arbeiten / schaffen',
+      bedeutung: 'Das Wort „wärche" bedeutet im Schweizerdeutschen werken, arbeiten oder körperlich schaffen. Es betont die handwerkliche, tätige Arbeit. „De ganz Tag gwärchet" hat, wer viel gearbeitet hat. Ähnlich wie „chrampfe" beschreibt es Mühe und Einsatz. Das Wort hat einen bodenständigen, fleissigen Klang. Es gehört zum traditionellen Arbeitswortschatz der Mundart und betont den Wert der Hände.',
+      beispiel: 'De Buur hät de ganz Tag uf em Feld gwärchet.',
+      beispiel_hd: 'Der Bauer hat den ganzen Tag auf dem Feld gewerkt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ch-378',
+      ausdruck: 'de Föhn',
+      hochdeutsch: 'der Föhn (warmer Fallwind)',
+      bedeutung: 'Der „Föhn" ist im Schweizerdeutschen der warme, trockene Fallwind, der von den Alpen herabweht. Er bringt mildes Wetter, aber auch Kopfweh und Gereiztheit, weshalb man von „Föhnchopfweh" spricht. „Hüt hämmer Föhn" erklärt manche schlechte Laune. Der Föhn ist ein typisches Alpenphänomen. Ein zentrales Wetterwort der Schweiz, das Klima und Befinden gleichermassen betrifft.',
+      beispiel: 'Bi dem Föhn ha ich scho de ganz Tag es bizli Chopfweh.',
+      beispiel_hd: 'Bei diesem Föhn habe ich schon den ganzen Tag ein bisschen Kopfweh.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-379',
+      ausdruck: 'es Gwitter',
+      hochdeutsch: 'ein Gewitter',
+      bedeutung: 'Ein „Gwitter" ist im Schweizerdeutschen ein Gewitter mit Blitz und Donner. „Es chunt es Gwitter" sagt man, wenn sich der Himmel verdunkelt. Im Sommer ziehen oft heftige Gewitter über die Berge. Redensartlich ist „es Gwitter im Anzug" ein drohender Streit. Das Wort gehört zum Wetterwortschatz und wird auch bildlich gebraucht. Die typische Aussprache lässt das „e" am Anfang weg.',
+      beispiel: 'Am Obig isch es schwers Gwitter über s\'Tal zoge.',
+      beispiel_hd: 'Am Abend ist ein schweres Gewitter über das Tal gezogen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-380',
+      ausdruck: 'de Tschumpel',
+      hochdeutsch: 'der Dummkopf / Trottel',
+      bedeutung: 'Ein „Tschumpel" ist im Schweizerdeutschen ein Dummkopf oder Trottel, meist gutmütig-neckend gemeint. „Du bisch en Tschumpel" sagt man eher liebevoll als bösartig. Das Wort beschreibt jemanden, der etwas tollpatschig oder begriffsstutzig ist. Es gehört zur Reihe harmloser Schimpfwörter wie Tubel oder Löli. Ein farbiges Mundartwort mit augenzwinkerndem Unterton, ohne echte Schärfe.',
+      beispiel: 'Du bisch mer en rächte Tschumpel, jetz hesch s\'Falsche poschtet.',
+      beispiel_hd: 'Du bist mir ein rechter Trottel, jetzt hast du das Falsche eingekauft.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ch-381',
+      ausdruck: 'läck',
+      hochdeutsch: 'Donnerwetter! / Wow! (Ausruf)',
+      bedeutung: 'Der Ausruf „läck" drückt im Schweizerdeutschen Erstaunen, Überraschung oder Bewunderung aus, etwa wie „Donnerwetter!" oder „Wow!". Verstärkt sagt man „läck Bobby!" oder „läck mer am Tschöpli". Es ist ein gängiger Stossseufzer bei allem, was beeindruckt oder verblüfft. Das Wort hat keinen vulgären Beigeschmack mehr und ist im Alltag völlig harmlos. Ein typischer Schweizer Ausruf der Verwunderung.',
+      beispiel: 'Läck, hesch du das wüklich ganz elei gmacht?',
+      beispiel_hd: 'Donnerwetter, hast du das wirklich ganz allein gemacht?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-382',
+      ausdruck: 'sänavörig',
+      hochdeutsch: 'gestern Abend',
+      bedeutung: 'Das Wort „sennevörig" oder „sänavörig" bezeichnet im Schweizerdeutschen den gestrigen Abend, also „gestern Abend". Es ist ein traditioneller Zeitausdruck der Mundart. „Sänavörig sind mer no lang ufblibe" erzählt vom Vorabend. Das Wort hat keine direkte hochdeutsche Einwortentsprechung. Es zeigt die feine zeitliche Gliederung der Mundart. Ein urchiges, altes Wort, das vor allem ältere Generationen pflegen.',
+      beispiel: 'Sänavörig hämmer no es feins Fondue gha mit de Nochbere.',
+      beispiel_hd: 'Gestern Abend hatten wir noch ein feines Fondue mit den Nachbarn.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-383',
+      ausdruck: 'vorgeschter',
+      hochdeutsch: 'vorgestern',
+      bedeutung: 'Das Wort „vorgeschter" ist die schweizerdeutsche Form von „vorgestern", also der Tag vor gestern. „Vorgeschter bin ich id Stadt gange" erzählt von einem vergangenen Tag. Die Aussprache mit „sch" statt „st" ist typisch für die Mundart. Es gehört zu den gängigen Zeitangaben im Alltag. Ein praktisches Wort, das in Erzählungen über kürzlich Geschehenes ständig vorkommt.',
+      beispiel: 'Vorgeschter hät\'s no gschneit, und hüt schiint scho d\'Sunne.',
+      beispiel_hd: 'Vorgestern hat es noch geschneit, und heute scheint schon die Sonne.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-384',
+      ausdruck: 'übermorn',
+      hochdeutsch: 'übermorgen',
+      bedeutung: 'Das Wort „übermorn" ist die schweizerdeutsche Form von „übermorgen", also der Tag nach morgen. „Übermorn han ich frei" plant man voraus. Es ergänzt die Reihe „hüt" (heute), „morn" (morgen) und „übermorn". Die kurze Form ohne „-gen" ist typisch mundartlich. Eine alltägliche Zeitangabe, wenn man etwas für die nahe Zukunft plant. Ein praktisches Wort des Schweizer Alltags.',
+      beispiel: 'Übermorn fahred mer id Bärge go wandere, wenn s\'Wätter passt.',
+      beispiel_hd: 'Übermorgen fahren wir in die Berge wandern, wenn das Wetter passt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-385',
+      ausdruck: 'es Sackmässer',
+      hochdeutsch: 'ein Taschenmesser',
+      bedeutung: 'Ein „Sackmässer" ist im Schweizerdeutschen ein Taschenmesser. „Sack" heisst in der Mundart die Hosentasche, drum das Messer für den Sack. Das berühmteste ist das rote Schweizer Sackmesser mit vielen Werkzeugen. „Häsch es Sackmässer debii?" fragt man beim Wandern oder Picknick. Ein praktisches Alltagswort und zugleich ein Stück Schweizer Identität. Das Sackmesser ist weltweit ein Symbol für die Schweiz.',
+      beispiel: 'Mit em Sackmässer han ich schnäll s\'Brot ufgschnitte.',
+      beispiel_hd: 'Mit dem Taschenmesser habe ich schnell das Brot aufgeschnitten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-386',
+      ausdruck: 'de Sack',
+      hochdeutsch: 'die Hosentasche / der Sack',
+      bedeutung: 'Der „Sack" bezeichnet im Schweizerdeutschen vor allem die Hosentasche, daneben auch einen Beutel. „Tue\'s id Sack" heisst „steck es in die Hosentasche". „Es Sackmässer" und „Sackgäld" leiten sich davon ab. „Tüüf id Sack greife" heisst, viel Geld ausgeben. Ein vielseitiges Alltagswort, das in zahlreichen Zusammensetzungen vorkommt. Die Bedeutung Hosentasche ist im Hochdeutschen so nicht gebräuchlich.',
+      beispiel: 'Tue de Schlüssel id Sack, susch verlürsch en no.',
+      beispiel_hd: 'Steck den Schlüssel in die Hosentasche, sonst verlierst du ihn noch.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-387',
+      ausdruck: 'es Müli',
+      hochdeutsch: 'eine Mühle',
+      bedeutung: 'Ein „Müli" ist im Schweizerdeutschen eine Mühle, etwa zum Mahlen von Getreide. Viele Schweizer Ortsnamen und Familiennamen leiten sich davon ab. „S\'alte Müli am Bach" ist ein vertrautes Bild auf dem Land. Auch das Brettspiel „Müli" (Mühle) trägt diesen Namen. Ein traditionsreiches Wort, das mit der ländlichen Geschichte verbunden ist. Die Aussprache mit hellem „ü" ist typisch mundartlich.',
+      beispiel: 'Unde am Bach schtaht no s\'alte Müli vo früener.',
+      beispiel_hd: 'Unten am Bach steht noch die alte Mühle von früher.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-388',
+      ausdruck: 'Geiss',
+      hochdeutsch: 'die Ziege / Geiß',
+      bedeutung: 'Die „Geiss" ist im Schweizerdeutschen die Ziege. In den Bergen gehören Geissen zur Älplerkultur, sie liefern Milch und Käse. „D\'Geiss mäckeret" beschreibt ihren Ruf. Redensartlich ist „e zähi Geiss" eine eigensinnige Person. Das berühmte Geissenpeter-Bild aus Heidi gehört zur Schweizer Volkskultur. Ein bodenständiges Tierwort, das in den Alpen fest verankert ist.',
+      beispiel: 'Uf de Alp hät de Senn es ganzi Herde Geisse.',
+      beispiel_hd: 'Auf der Alp hat der Senn eine ganze Herde Ziegen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-389',
+      ausdruck: 'd\'Chue',
+      hochdeutsch: 'die Kuh',
+      bedeutung: 'Die „Chue" ist im Schweizerdeutschen die Kuh, gesprochen mit dem typischen Anlaut-„ch". Kühe prägen das Bild der Schweizer Alpen, ihr Glockengeläut gehört zum Sommer. „D\'Chüe gönd uf d\'Alp" beim Alpaufzug. Redensartlich ist „dasteh wie d\'Chue vorem neue Tor" für Ratlosigkeit. Ein zentrales Wort der ländlichen Schweiz. Die Aussprache mit „ch" macht es unverkennbar mundartlich.',
+      beispiel: 'Im Summer schtönd d\'Chüe de ganz Tag uf de saftige Weid.',
+      beispiel_hd: 'Im Sommer stehen die Kühe den ganzen Tag auf der saftigen Weide.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-390',
+      ausdruck: 'd\'Glogge',
+      hochdeutsch: 'die Glocke',
+      bedeutung: 'Die „Glogge" ist im Schweizerdeutschen die Glocke, sei es die Kirchenglocke oder die Kuhglocke. Das Geläut der Kirchenglocken prägt jedes Dorf. „D\'Glogge lütet" zur vollen Stunde. Die Kuhglocken (Treicheln) gehören zur Alpkultur. Redensartlich ist „öppis a d\'grossi Glogge hänke" für etwas herumerzählen. Ein klangvolles Wort, das tief in der Schweizer Tradition verankert ist.',
+      beispiel: 'Am Sunntigmorge lütet d\'Glogge vo de Dorfchile.',
+      beispiel_hd: 'Am Sonntagmorgen läutet die Glocke der Dorfkirche.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-391',
+      ausdruck: 'd\'Chile',
+      hochdeutsch: 'die Kirche',
+      bedeutung: 'Die „Chile" ist im Schweizerdeutschen die Kirche, gesprochen mit dem charakteristischen „ch". Sie steht im Zentrum jedes Dorfes. „I d\'Chile gah" heisst zum Gottesdienst gehen. Viele Ortsnamen wie Kilchberg leiten sich davon ab. Die „Chilbi" (Kirchweih) ist ein Fest rund um die Kirche. Ein traditionsreiches Wort, dessen Aussprache mit „ch" typisch schweizerisch ist und es klar vom Hochdeutschen abhebt.',
+      beispiel: 'D\'Grosseltere gönd jede Sunntig i d\'Chile go bäte.',
+      beispiel_hd: 'Die Großeltern gehen jeden Sonntag in die Kirche zum Beten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-392',
+      ausdruck: 'd\'Chilbi',
+      hochdeutsch: 'die Kirchweih / der Jahrmarkt',
+      bedeutung: 'Die „Chilbi" ist im Schweizerdeutschen die Kirchweih, ein jährliches Dorffest mit Marktständen, Karussells und Festwirtschaft. Ursprünglich war es das Fest zur Kirchweihe, heute ein fröhlicher Jahrmarkt. „Mer gönd a d\'Chilbi" freut Gross und Klein. Es gibt Zuckerwatte, Magenbrot und Fahrgeschäfte. Ein zentrales Wort der dörflichen Festkultur. Die Chilbi ist in jedem Schweizer Dorf ein Höhepunkt im Jahr.',
+      beispiel: 'A de Chilbi händ d\'Chind Zuckerwatte gässe und sind Rössli gritte.',
+      beispiel_hd: 'An der Kirchweih haben die Kinder Zuckerwatte gegessen und sind Karussell gefahren.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-393',
+      ausdruck: 'es Magebrot',
+      hochdeutsch: 'Magenbrot (Lebkuchengebäck)',
+      bedeutung: 'Das „Magebrot" ist im Schweizerdeutschen ein würziges, lebkuchenartiges Gebäck mit Zuckerglasur, das traditionell an der Chilbi und auf Jahrmärkten verkauft wird. Es schmeckt nach Zimt und Gewürzen. „Es Tütli Magebrot" gehört zum Marktbesuch. Der Name verspricht, es sei gut für den Magen. Ein typisch schweizerisches Festgebäck, das untrennbar mit Chilbi und Weihnachtsmärkten verbunden ist.',
+      beispiel: 'A de Chilbi chauf ich mer immer es Tütli Magebrot.',
+      beispiel_hd: 'An der Kirchweih kaufe ich mir immer ein Tütchen Magenbrot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-394',
+      ausdruck: 'Fasnacht',
+      hochdeutsch: 'die Fastnacht / der Karneval',
+      bedeutung: 'Die „Fasnacht" ist im Schweizerdeutschen die Fastnacht, die fünfte Jahreszeit mit Masken, Umzügen und Guggenmusik. Berühmt ist die Basler Fasnacht mit ihrem „Morgestraich". Man verkleidet sich in „Larve" (Maske) und „Plätzli". „A d\'Fasnacht gah" ist für viele ein Höhepunkt. Es gibt Schnitzelbänke und Konfetti. Ein zentrales Fest der Schweizer Kultur, regional sehr unterschiedlich gefeiert.',
+      beispiel: 'A de Basler Fasnacht zieht de Morgestraich am vieri am Morge los.',
+      beispiel_hd: 'An der Basler Fastnacht zieht der Morgenstreich um vier Uhr früh los.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ch-395',
+      ausdruck: 'd\'Guggemusig',
+      hochdeutsch: 'die Guggenmusik (Fasnachtskapelle)',
+      bedeutung: 'Die „Guggemusig" ist im Schweizerdeutschen eine schräg und laut spielende Blaskapelle an der Fasnacht. Verkleidete Musiker ziehen mit Trompeten, Posaunen und Trommeln durch die Gassen und spielen bewusst schief. „D\'Guggemusig chunt" sorgt für ausgelassene Stimmung. Sie gehört untrennbar zur Schweizer Fasnacht. Ein farbiges Kulturwort, das eine ganz eigene, fröhlich-chaotische Musiktradition beschreibt.',
+      beispiel: 'D\'Guggemusig hät so luut gschpilt, dass me sis eige Wort nöd ghört hät.',
+      beispiel_hd: 'Die Guggenmusik hat so laut gespielt, dass man sein eigenes Wort nicht gehört hat.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'ch-396',
+      ausdruck: 'es Cordon bleu',
+      hochdeutsch: 'ein Cordon bleu (paniertes Schnitzel mit Käse)',
+      bedeutung: 'Ein „Cordon bleu" ist im Schweizerdeutschen ein paniertes Schnitzel, gefüllt mit Schinken und Käse, ein beliebtes Restaurantgericht. Der französische Name gehört fest zum Schweizer Speiseplan. „Es Cordon bleu mit Pommes" ist ein Klassiker in jeder Beiz. Beim Anschneiden fliesst der geschmolzene Käse heraus. Ein typisches Wirtshausgericht, dessen französischer Name den welschen Einfluss zeigt. In der ganzen Schweiz beliebt.',
+      beispiel: 'I de Beiz han ich es riesigs Cordon bleu mit Pommes gha.',
+      beispiel_hd: 'In der Beiz hatte ich ein riesiges Cordon bleu mit Pommes.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-397',
+      ausdruck: 'd\'Glace go ässe',
+      hochdeutsch: 'ein Eis essen gehen',
+      bedeutung: 'Die Wendung „d\'Glace go ässe" heisst „ein Eis essen gehen". „Glace" ist das schweizerdeutsche Wort für Speiseeis, aus dem Französischen. Im Sommer gehört „go Glace ässe" zum grössten Vergnügen für Gross und Klein. „Es Cornet Glace" ist das Eis in der Waffel. Ein sommerliches Alltagswort, das wieder den französischen Einschlag der Mundart zeigt. In Deutschland sagt man „Eis", in der Schweiz „Glace".',
+      beispiel: 'Bi dere Hitz gömmer am Nomittag schnäll d\'Glace go ässe.',
+      beispiel_hd: 'Bei dieser Hitze gehen wir am Nachmittag schnell ein Eis essen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-398',
+      ausdruck: 'es Cornet',
+      hochdeutsch: 'eine Eistüte / Waffeltüte',
+      bedeutung: 'Ein „Cornet" ist im Schweizerdeutschen die Waffeltüte fürs Speiseeis. Das Wort kommt aus dem Französischen und meint das spitze Hörnchen. „Es Cornet mit zwöi Chugele" bestellt man am Glacestand. In Deutschland sagt man „Eistüte" oder „Waffel", in der Schweiz „Cornet". Ein sommerliches Alltagswort, das den französischen Spracheinfluss verkörpert. Es gehört untrennbar zum Schweizer Glace-Genuss.',
+      beispiel: 'Ich nimm es Cornet mit Schoggi- und Vanille-Glace.',
+      beispiel_hd: 'Ich nehme eine Waffeltüte mit Schokoladen- und Vanilleeis.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-399',
+      ausdruck: 'es Träffe',
+      hochdeutsch: 'ein Treffen',
+      bedeutung: 'Ein „Träffe" ist im Schweizerdeutschen ein Treffen oder eine Zusammenkunft. „Mer hend es Träffe abgmacht" heisst, man hat sich verabredet. Es kann ein geschäftliches Meeting oder ein geselliges Beisammensein sein. Die typische Aussprache mit „ä" unterscheidet es vom Hochdeutschen. Ein alltägliches Wort rund um Verabredungen und Begegnungen. Es gehört zum gewöhnlichen Sprachgebrauch im Beruf und in der Freizeit.',
+      beispiel: 'Mer hend für nächschti Wuche es Träffe mit de alte Schuelkollege abgmacht.',
+      beispiel_hd: 'Wir haben für nächste Woche ein Treffen mit den alten Schulkollegen abgemacht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-400',
+      ausdruck: 'abmache',
+      hochdeutsch: 'verabreden / ausmachen',
+      bedeutung: 'Das Wort „abmache" heisst im Schweizerdeutschen etwas verabreden oder ausmachen, also einen Termin oder eine Verabredung festlegen. „Mer wänd öppis abmache" plant ein Treffen. Es kann auch heissen, etwas zu vereinbaren oder zu beschliessen. Ein vielseitiges Alltagswort rund um Absprachen. „Abgmacht!" bekräftigt eine Vereinbarung wie „abgemacht!". Es gehört zum täglichen Sprachgebrauch bei Planungen und Verabredungen.',
+      beispiel: 'Mer wänd für s\'Wuchenänd no öppis zäme abmache.',
+      beispiel_hd: 'Wir wollen für das Wochenende noch etwas zusammen verabreden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-401',
+      ausdruck: 'gschwind',
+      hochdeutsch: 'schnell / rasch',
+      bedeutung: 'Das Wort „gschwind" bedeutet im Schweizerdeutschen „schnell" oder „rasch". „Ich gang gschwind go poschte" heisst, man erledigt etwas rasch. Es ist ein sehr häufiges Tempo-Wort im Alltag, oft synonym mit „schnäll". „Mach gschwind!" treibt zur Eile an. Das Wort hat einen flotten, lebhaften Klang. Es gehört zum alltäglichen Grundwortschatz und kommt in unzähligen Situationen vor, wenn etwas zügig gehen soll.',
+      beispiel: 'Ich lauf no gschwind zum Beck go es Brot hole.',
+      beispiel_hd: 'Ich laufe noch schnell zum Bäcker, um ein Brot zu holen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-402',
+      ausdruck: 'tschuute',
+      hochdeutsch: 'Fußball spielen / kicken',
+      bedeutung: 'Das Wort „tschuute" heisst im Schweizerdeutschen Fussball spielen oder einen Ball treten. Es stammt vom englischen „to shoot" ab. „D\'Buebe gönd go tschuute" auf dem Bolzplatz. Ein „Tschuttibändeli" wird zur Fussball-WM getragen. Das Wort gehört zur Sportsprache und ist besonders bei Kindern und Jugendlichen verbreitet. Ein lockeres, alltägliches Wort fürs Kicken, das den englischen Spracheinfluss zeigt.',
+      beispiel: 'Nach de Schuel gönd d\'Buebe immer no schnäll go tschuute.',
+      beispiel_hd: 'Nach der Schule gehen die Buben immer noch schnell Fußball spielen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-403',
+      ausdruck: 'es Goal',
+      hochdeutsch: 'ein Tor (beim Fußball)',
+      bedeutung: 'Ein „Goal" ist im Schweizerdeutschen ein Tor beim Fussball. Das Wort stammt aus dem Englischen und ist in der Schweiz das übliche Wort statt „Tor". „Es Goal schiesse" jubelt die ganze Mannschaft. Der Torhüter heisst „Goalie". In Deutschland sagt man „Tor", in der Schweiz fast immer „Goal". Ein zentrales Wort der Schweizer Fussballsprache, das den englischen Einfluss im Sport zeigt.',
+      beispiel: 'I de letschte Minute hät er no s\'entscheidend Goal gschosse.',
+      beispiel_hd: 'In der letzten Minute hat er noch das entscheidende Tor geschossen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-404',
+      ausdruck: 'de Goalie',
+      hochdeutsch: 'der Torhüter / Torwart',
+      bedeutung: 'Der „Goalie" ist im Schweizerdeutschen der Torhüter oder Torwart. Das Wort kommt aus dem Englischen und ist in der Schweiz die gängige Bezeichnung. „De Goalie hät guet ghalte" lobt eine starke Leistung. In Deutschland sagt man „Torwart" oder „Keeper", in der Schweiz „Goalie". Ein zentrales Wort des Schweizer Fussball- und Eishockeyvokabulars. Es zeigt den selbstverständlichen Gebrauch englischer Sportbegriffe.',
+      beispiel: 'De Goalie hät de Penalty ghalte und s\'Spiel grettet.',
+      beispiel_hd: 'Der Torhüter hat den Penalty gehalten und das Spiel gerettet.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-405',
+      ausdruck: 'es Velörennä',
+      hochdeutsch: 'ein Radrennen',
+      bedeutung: 'Ein „Velörennä" ist im Schweizerdeutschen ein Radrennen. Es setzt sich aus „Velo" (Fahrrad) und „Rennä" (Rennen) zusammen. Die Tour de Suisse ist das berühmteste Velörennä des Landes. „Es Velörennä go luege" zieht viele Zuschauer an die Strecke. Velofahren hat in der Schweiz einen hohen Stellenwert. Ein Sportwort, das das typische Schweizer „Velo" enthält und den Radsport beschreibt.',
+      beispiel: 'A de Tour de Suisse hämmer es spannends Velörennä gluegt.',
+      beispiel_hd: 'An der Tour de Suisse haben wir ein spannendes Radrennen geschaut.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ch-406',
+      ausdruck: 'de Pneu',
+      hochdeutsch: 'der Reifen',
+      bedeutung: 'Der „Pneu" ist im Schweizerdeutschen der Reifen, am Auto, Velo oder Töff. Das Wort kommt aus dem Französischen (pneu) und ist in der ganzen Schweiz üblich. „De Pneu isch platt" heisst, man hat einen Plattfuss. Beim Garagisten wechselt man „d\'Pneu" auf Winterreifen. In Deutschland sagt man „Reifen", in der Schweiz „Pneu". Ein alltägliches Wort rund ums Fahrzeug, das den französischen Einfluss verkörpert.',
+      beispiel: 'Bi mim Velo isch hinde de Pneu platt gsi.',
+      beispiel_hd: 'Bei meinem Velo war hinten der Reifen platt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-407',
+      ausdruck: 'de Camion',
+      hochdeutsch: 'der Lastwagen',
+      bedeutung: 'Der „Camion" ist im Schweizerdeutschen der Lastwagen. Das Wort stammt aus dem Französischen und ist in der ganzen Deutschschweiz gebräuchlich. „En grosse Camion" transportiert Waren über die Alpen. In Deutschland sagt man „Lastwagen" oder „Lkw", in der Schweiz „Camion". Ein weiteres alltägliches Verkehrswort mit französischen Wurzeln. Es zeigt, wie tief der welsche Einfluss im Schweizer Wortschatz verankert ist.',
+      beispiel: 'Vor em Hus isch en grosse Camion am Uslade gsi.',
+      beispiel_hd: 'Vor dem Haus war ein großer Lastwagen am Ausladen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-408',
+      ausdruck: 'es Poschtbüro',
+      hochdeutsch: 'eine Poststelle / das Postamt',
+      bedeutung: 'Ein „Poschtbüro" ist im Schweizerdeutschen die Poststelle oder das Postamt der Schweizerischen Post. Dort gibt man Pakete auf und holt Einschreiben ab. „Ich gang uf d\'Poscht" oder „is Poschtbüro" gehört zum Alltag. Der gelbe Postauftritt ist ein Stück Schweizer Identität. Ein praktisches Alltagswort rund um Postgeschäfte. Es verbindet „Poscht" mit „Büro" und beschreibt eine vertraute Einrichtung.',
+      beispiel: 'Ich mues no schnäll is Poschtbüro es Päckli ufgä.',
+      beispiel_hd: 'Ich muss noch schnell zur Poststelle ein Päckchen aufgeben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-409',
+      ausdruck: 'es Päckli',
+      hochdeutsch: 'ein Päckchen / Paket',
+      bedeutung: 'Ein „Päckli" ist im Schweizerdeutschen ein Päckchen oder kleines Paket. Die Verkleinerung von „Pack" ist im Alltag häufig. „Es Päckli ufgä" macht man auf der Post. Zu Weihnachten gibt es „Päckli" als Geschenke. Ein „Päcklisuppe" ist eine Fertigsuppe aus dem Beutel. Ein praktisches Alltagswort mit der typischen „-li"-Endung, das vom Postversand bis zum Geschenk vieles bezeichnet.',
+      beispiel: 'Hüt isch es Päckli vo mim Götti cho mit eme Gschänk.',
+      beispiel_hd: 'Heute ist ein Päckchen von meinem Paten gekommen mit einem Geschenk.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-410',
+      ausdruck: 'de Götti',
+      hochdeutsch: 'der Pate / Taufpate',
+      bedeutung: 'Der „Götti" ist im Schweizerdeutschen der Pate oder Taufpate. Er übernimmt eine besondere Rolle im Leben des Patenkindes und beschenkt es zu Festen. „Mis Götti" ist eine vertraute Bezugsperson. Das weibliche Pendant ist die „Gotte" (Patin). Die Beziehung zwischen Götti und Patenkind ist in der Schweiz traditionell sehr eng. Ein warmes Familienwort, das eine wichtige soziale Rolle bezeichnet.',
+      beispiel: 'Mis Götti schänkt mer jedes Jahr öppis Schöns zum Geburtstag.',
+      beispiel_hd: 'Mein Pate schenkt mir jedes Jahr etwas Schönes zum Geburtstag.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-411',
+      ausdruck: 'Gotte',
+      hochdeutsch: 'die Patin / Taufpatin',
+      bedeutung: 'Die „Gotte" ist im Schweizerdeutschen die Patin oder Taufpatin. Sie begleitet das Patenkind durchs Leben und beschenkt es zu besonderen Anlässen. „Mini Gotte" ist eine geliebte Bezugsperson. Das männliche Gegenstück ist der „Götti" (Pate). Die Rolle der Gotte hat in der Schweiz einen hohen Stellenwert. Ein herzliches Familienwort, das eine traditionsreiche und enge Beziehung beschreibt.',
+      beispiel: 'Mini Gotte hät mer zur Konfirmation es schöns Buech gschänkt.',
+      beispiel_hd: 'Meine Patin hat mir zur Konfirmation ein schönes Buch geschenkt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-412',
+      ausdruck: 'es Grosi',
+      hochdeutsch: 'die Großmutter / Oma',
+      bedeutung: 'Ein „Grosi" ist im Schweizerdeutschen die Grossmutter oder Oma, ein liebevoller Kosename. „S\'Grosi" backt Guetzli und erzählt Geschichten. Daneben gibt es auch „Grossmueti" oder „Nona". Das Wort drückt Wärme und Zuneigung gegenüber der Grossmutter aus. Ein herzliches Familienwort, das in vielen Schweizer Familien gebraucht wird. Es zeigt die enge Bindung zwischen Enkeln und Grosseltern.',
+      beispiel: 'S\'Grosi bachet zu Wiehnacht immer die beschte Mailänderli.',
+      beispiel_hd: 'Die Oma backt zu Weihnachten immer die besten Mailänderli.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-413',
+      ausdruck: 'de Grospa',
+      hochdeutsch: 'der Großvater / Opa',
+      bedeutung: 'Der „Grospa" oder „Grosspapi" ist im Schweizerdeutschen der Grossvater oder Opa, ein liebevoller Kosename. „De Grospa" werkt im Garten und erzählt von früher. Daneben gibt es „Grossvatter" oder „Nono". Das Wort drückt Vertrautheit und Zuneigung aus. Ein warmes Familienwort, das die enge Beziehung zwischen Enkeln und Grossvater zeigt. Es gehört zum herzlichen Familienvokabular der Mundart.',
+      beispiel: 'De Grospa zeigt mer, wie me richtig en Nagel ischlaht.',
+      beispiel_hd: 'Der Opa zeigt mir, wie man richtig einen Nagel einschlägt.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-414',
+      ausdruck: 'Schwöschter',
+      hochdeutsch: 'die Schwester',
+      bedeutung: 'Die „Schwöschter" ist im Schweizerdeutschen die Schwester. Die typische Aussprache mit „ö" und „sch" unterscheidet sie vom Hochdeutschen. „Mini chlii Schwöschter" gehört zur Familie. Auch eine Krankenschwester wurde früher „Schwöschter" genannt. Ein alltägliches Familienwort, das in jedem Gespräch über Geschwister fällt. Die mundartliche Lautung macht es unverkennbar schweizerisch und unterscheidet es klar vom Standarddeutschen.',
+      beispiel: 'Mini chlii Schwöschter gaht erscht sit churzem id Schuel.',
+      beispiel_hd: 'Meine kleine Schwester geht erst seit kurzem zur Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-415',
+      ausdruck: 'de Brüeder',
+      hochdeutsch: 'der Bruder',
+      bedeutung: 'Der „Brüeder" ist im Schweizerdeutschen der Bruder. Die typische Aussprache mit „üe" unterscheidet ihn vom Hochdeutschen. „Min grosse Brüeder" gehört zur Familie. Unter Kollegen sagt man auch freundschaftlich „Brüeder". Ein alltägliches Familienwort, das in jedem Gespräch über Geschwister vorkommt. Die mundartliche Lautung mit dem Diphthong „üe" ist charakteristisch und hebt es vom Standarddeutschen ab.',
+      beispiel: 'Min grosse Brüeder hilft mer immer bi de Mathiufgabe.',
+      beispiel_hd: 'Mein großer Bruder hilft mir immer bei den Matheaufgaben.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-416',
+      ausdruck: 'd\'Chind',
+      hochdeutsch: 'die Kinder',
+      bedeutung: 'Die „Chind" sind im Schweizerdeutschen die Kinder, die Einzahl ist „Chind" (Kind). Die typische Aussprache mit Anlaut-„ch" ist charakteristisch. „D\'Chind spilet im Garte" beschreibt fröhliches Treiben. Liebevoll sagt man auch „Chindli". Ein zentrales Familienwort, das in unzähligen Alltagssituationen vorkommt. Die mundartliche Lautung mit „ch" statt „k" macht es unverkennbar schweizerisch und hebt es klar vom Hochdeutschen ab.',
+      beispiel: 'D\'Chind sind de ganz Nomittag im Garte am Spile gsi.',
+      beispiel_hd: 'Die Kinder waren den ganzen Nachmittag im Garten am Spielen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-417',
+      ausdruck: 'es Chindli',
+      hochdeutsch: 'ein Kindlein / kleines Kind',
+      bedeutung: 'Ein „Chindli" ist im Schweizerdeutschen ein kleines Kind oder Kindlein, eine liebevolle Verkleinerung von „Chind". „Es härzigs Chindli" sagt man voller Zuneigung. Das Wort wird besonders für Babys und Kleinkinder gebraucht. Die Endung „-li" gibt ihm einen besonders zärtlichen Klang. Ein herzliches Familienwort, das die schweizerische Vorliebe für Verkleinerungen zeigt. Es drückt Wärme gegenüber den Kleinsten aus.',
+      beispiel: 'S\'Chindli vo de Nochbere hät grad sini erschte Schritt gmacht.',
+      beispiel_hd: 'Das Kindlein der Nachbarn hat gerade seine ersten Schritte gemacht.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-418',
+      ausdruck: 'härzig',
+      hochdeutsch: 'niedlich / herzig',
+      bedeutung: 'Das Wort „härzig" bedeutet im Schweizerdeutschen „niedlich", „goldig" oder „herzig". „Es härzigs Buschi" ist ein süsses Baby. Das Wort wird häufig für Kinder, Tiere oder hübsche Dinge gebraucht. Im Hochdeutschen ist „herzig" seltener, in der Schweiz allgegenwärtig. Es drückt Zuneigung und Entzücken aus. Ein typisches Schweizer Wort, das Wärme und liebevolle Bewunderung ausdrückt und im Alltag ständig fällt.',
+      beispiel: 'Lueg emol das härzig Chätzli, wie\'s da im Chörbli schloft!',
+      beispiel_hd: 'Schau mal das niedliche Kätzchen, wie es da im Körbchen schläft!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ch-419',
+      ausdruck: 'rüüdig',
+      hochdeutsch: 'sehr / äußerst (Verstärkung)',
+      bedeutung: 'Das Wort „rüüdig" ist im Schweizerdeutschen ein Verstärkungswort und bedeutet „sehr" oder „äusserst". „Rüüdig guet" heisst „ausserordentlich gut". Ursprünglich bezog es sich auf die Räude, heute ist es ein rein steigernder Ausdruck ohne negative Bedeutung. „Rüüdig schön" oder „rüüdig kalt" hört man oft. Ein farbiges Verstärkungswort der Mundart, das Gefühlen und Beschreibungen Nachdruck verleiht.',
+      beispiel: 'Das Konzärt geschter isch rüüdig guet gsi, eifach spitze.',
+      beispiel_hd: 'Das Konzert gestern war äußerst gut, einfach spitze.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-420',
+      ausdruck: 'tifig',
+      hochdeutsch: 'flink / rasch / zügig',
+      bedeutung: 'Das Wort „tifig" bedeutet im Schweizerdeutschen „flink", „rasch" oder „zügig". „Mach tifig!" treibt zur Eile an. Wer „tifig" ist, arbeitet flott und behände. Das Wort ist vor allem in der Ost- und Zentralschweiz verbreitet. Es beschreibt sowohl Tempo als auch Geschicklichkeit. Ein lebhaftes Mundartwort, das man hört, wenn etwas schnell und gewandt erledigt werden soll. Es gehört zum bodenständigen Alltagswortschatz.',
+      beispiel: 'Mach tifig vorwärts, susch verpasse mer no de Zug!',
+      beispiel_hd: 'Mach zügig vorwärts, sonst verpassen wir noch den Zug!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-421',
+      ausdruck: 'gäbig',
+      hochdeutsch: 'praktisch / handlich / angenehm',
+      bedeutung: 'Das Wort „gäbig" bedeutet im Schweizerdeutschen „praktisch", „handlich" oder „angenehm". Etwas, das gut von der Hand geht oder bequem ist, ist „gäbig". „Das isch e gäbigi Sach" lobt eine praktische Lösung. Auch ein umgänglicher Mensch kann „gäbig" sein. Das Wort drückt aus, dass etwas gut passt und Freude macht. Ein vielseitiges, positives Mundartwort, das im Alltag oft fällt, wenn etwas angenehm funktioniert.',
+      beispiel: 'Die neu Tasche isch würkli gäbig, da gaht alles ine.',
+      beispiel_hd: 'Die neue Tasche ist wirklich praktisch, da geht alles hinein.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-422',
+      ausdruck: 'lätz',
+      hochdeutsch: 'falsch / verkehrt',
+      bedeutung: 'Das Wort „lätz" bedeutet im Schweizerdeutschen „falsch" oder „verkehrt". „Öppis lätz mache" heisst etwas falsch machen. „De Pulli isch lätz aagleit" bedeutet, der Pullover ist verkehrt herum an. Das Wort beschreibt alles, was nicht richtig oder verdreht ist. „Es lauft lätz" heisst, es läuft schief. Ein häufiges Alltagswort, das im Hochdeutschen keine direkte Einwortentsprechung hat und etwas Verkehrtes bezeichnet.',
+      beispiel: 'Du hesch s\'T-Shirt lätz aagleit, s\'Etikett isch vorne.',
+      beispiel_hd: 'Du hast das T-Shirt verkehrt herum angezogen, das Etikett ist vorne.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-423',
+      ausdruck: 'es Träf',
+      hochdeutsch: 'ein Treffpunkt / Treffer',
+      bedeutung: 'Ein „Träf" ist im Schweizerdeutschen ein Treffpunkt oder ein gelungener Treffer. „Das isch es Träf gsi" sagt man, wenn etwas genau passt oder gut gelungen ist. Es kann auch einen Ort bezeichnen, wo man sich trifft. Das Wort hat einen positiven, zielsicheren Klang. Ein vielseitiges Mundartwort, das sowohl einen Ort als auch einen Glücksfall beschreiben kann, je nach Zusammenhang.',
+      beispiel: 'Das Gschänk isch es voll Träf gsi, sie hät sich rüüdig gfreut.',
+      beispiel_hd: 'Das Geschenk war ein voller Treffer, sie hat sich sehr gefreut.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-424',
+      ausdruck: 'umetrölä',
+      hochdeutsch: 'herumtrödeln / herumlungern',
+      bedeutung: 'Das Wort „umetrölä" heisst im Schweizerdeutschen herumtrödeln, bummeln oder ziellos herumlungern. „Trölä nöd eso ume" treibt jemanden zur Eile an. Es beschreibt langsames, unentschlossenes Verhalten. Wer „umetrölet", verbummelt die Zeit. Ein anschauliches Alltagswort, das gemächliches oder zögerliches Tun beschreibt. Es setzt sich aus „ume" (herum) und „trölä" (trödeln) zusammen und hat einen leicht tadelnden Unterton.',
+      beispiel: 'Trölä nöd eso ume, mer sött langsam go!',
+      beispiel_hd: 'Trödel nicht so herum, wir sollten langsam gehen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-425',
+      ausdruck: 'es Müntschgi',
+      hochdeutsch: 'ein Apfelbutzen / Kerngehäuse',
+      bedeutung: 'Ein „Müntschgi" oder „Bütschgi" ist im Schweizerdeutschen der Apfelbutzen, also das übrig gebliebene Kerngehäuse eines Apfels. „Wirf s\'Müntschgi id Biokübel" sagt man nach dem Apfelessen. Das Wort ist regional verbreitet und beschreibt liebevoll den Apfelrest. In Deutschland sagt man „Apfelbutzen" oder „Griebsch", in der Schweiz „Müntschgi". Ein typisch mundartliches Wort für einen vertrauten Alltagsgegenstand.',
+      beispiel: 'Iss de Apfel ganz uf und lass nöd es so es grosses Müntschgi übrig.',
+      beispiel_hd: 'Iss den Apfel ganz auf und lass nicht so einen großen Apfelbutzen übrig.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-426',
+      ausdruck: 'innäfädmä',
+      hochdeutsch: 'sich täuschen / hereinfallen',
+      bedeutung: 'Die Wendung „innäfädmä" oder „inefädle" heisst im Schweizerdeutschen, sich einfädeln, sich täuschen oder auf etwas hereinfallen. Wörtlich bedeutet es „einfädeln" wie beim Nähen. „Da bisch inegfädlet" sagt man, wenn jemand reingelegt wurde. Auch im Verkehr „fädlet" man sich auf die Spur ein. Ein bildhaftes Mundartwort, das vom Nähen abgeleitet ist und sowohl Täuschung als auch Einordnen bezeichnen kann.',
+      beispiel: 'Mit dem Spezial-Aagebot han ich mi rächt la innäfädmä.',
+      beispiel_hd: 'Mit diesem Spezialangebot habe ich mich ganz schön täuschen lassen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-427',
+      ausdruck: 'de Zmittag',
+      hochdeutsch: 'das Mittagessen / der Mittag',
+      bedeutung: 'Der „Zmittag" ist im Schweizerdeutschen das Mittagessen oder die Mittagszeit. Wörtlich kommt es von „zu Mittag". „Was git\'s zum Zmittag?" fragt man hungrig. Es ist die Hauptmahlzeit am Tag und reiht sich in Zmorge, Znüni, Zvieri und Znacht ein. Das Wort folgt dem typischen Muster der Schweizer Tagesmahlzeiten. Ein zentrales Alltagswort rund ums Essen, das in jeder Familie täglich fällt.',
+      beispiel: 'Zum Zmittag git\'s hüt Älplermagrone mit Öpfelmues.',
+      beispiel_hd: 'Zum Mittagessen gibt es heute Älplermagronen mit Apfelmus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-428',
+      ausdruck: 'es Zältli',
+      hochdeutsch: 'ein Bonbon / Täfeli',
+      bedeutung: 'Ein „Zältli" ist im Schweizerdeutschen ein Bonbon oder Täfeli, eine kleine Süssigkeit zum Lutschen. „Es Zältli gege de Huschte" hilft bei Halsweh. Kinder bekommen „es Zältli" als Leckerei. Das Wort ist vor allem in der Ost- und Zentralschweiz verbreitet. Ein süsses Alltagswort mit der typischen „-li"-Endung. Es bezeichnet liebevoll die kleinen Bonbons, die man immer in der Tasche hat.',
+      beispiel: 'D\'Grossmuetter hät immer es Zältli i de Handtäsche.',
+      beispiel_hd: 'Die Großmutter hat immer ein Bonbon in der Handtasche.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-429',
+      ausdruck: 'de Znacht',
+      hochdeutsch: 'das Abendessen',
+      bedeutung: 'Der „Znacht" ist im Schweizerdeutschen das Abendessen. Wörtlich kommt es von „zu Nacht". „Mer ässed grad Znacht" sagt man am Abend. Oft ist es eine leichtere Mahlzeit mit Brot, Käse und Aufschnitt. Es reiht sich in Zmorge, Znüni, Zmittag und Zvieri ein. Das Wort folgt dem typischen Muster der Schweizer Tagesmahlzeiten. Ein zentrales Alltagswort, das den gemeinsamen Abschluss des Tages am Familientisch bezeichnet.',
+      beispiel: 'Zum Znacht git\'s hüt eifach es Brot mit Chäs und es Tee.',
+      beispiel_hd: 'Zum Abendessen gibt es heute einfach ein Brot mit Käse und einen Tee.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-430',
+      ausdruck: 'verusä',
+      hochdeutsch: 'nach draußen / hinaus',
+      bedeutung: 'Das Wort „verusä" bedeutet im Schweizerdeutschen „nach draussen" oder „hinaus". „Gang verusä go spiele" schickt die Kinder ins Freie. Das Gegenstück ist „verinä" (nach drinnen). Das Wort beschreibt die Bewegung aus dem Haus hinaus. Ein alltägliches Richtungswort, das ständig vorkommt, wenn jemand das Haus verlässt oder etwas nach draussen gebracht wird. Die Aussprache ist weich und typisch mundartlich.',
+      beispiel: 'Bi dem schöne Wätter gönd d\'Chind am beschte verusä go spiele.',
+      beispiel_hd: 'Bei diesem schönen Wetter gehen die Kinder am besten nach draußen spielen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-431',
+      ausdruck: 'es Stägeli',
+      hochdeutsch: 'ein Treppchen / Stiege',
+      bedeutung: 'Ein „Stägeli" ist im Schweizerdeutschen ein kleines Treppchen oder eine kurze Stiege. Die Verkleinerung von „Stäge" (Treppe) wird liebevoll gebraucht. „Pass uf s\'Stägeli uf" warnt vor einer Stufe. Es kann auch einen schmalen Weg mit Stufen bezeichnen. Ein alltägliches Wort mit der typischen „-li"-Endung. Es zeigt die schweizerische Vorliebe für Verkleinerungen und bezeichnet vertraute kleine Treppen im und ums Haus.',
+      beispiel: 'Pass uf, s\'Stägeli zum Chäller abe isch chli rütschig.',
+      beispiel_hd: 'Pass auf, das Treppchen zum Keller hinunter ist etwas rutschig.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-432',
+      ausdruck: 'de Chäller',
+      hochdeutsch: 'der Keller',
+      bedeutung: 'Der „Chäller" ist im Schweizerdeutschen der Keller. Die Aussprache mit Anlaut-„ch" ist charakteristisch. „Im Chäller" lagert man Wein, Kartoffeln und Eingemachtes. „Gang go schnäll in Chäller" schickt jemanden hinunter. Im Mehrfamilienhaus hat jede Partei ihr „Chällerabteil". Ein alltägliches Wort rund ums Haus. Die mundartliche Lautung mit „ch" statt „k" macht es unverkennbar schweizerisch und hebt es klar vom Hochdeutschen ab.',
+      beispiel: 'D\'Härdöpfel lagere mer de ganz Winter im chüele Chäller.',
+      beispiel_hd: 'Die Kartoffeln lagern wir den ganzen Winter im kühlen Keller.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-433',
+      ausdruck: 'de Estrich',
+      hochdeutsch: 'der Dachboden / Estrich',
+      bedeutung: 'Der „Estrich" ist im Schweizerdeutschen der Dachboden, also der Raum unter dem Dach. Dort lagert man Gerümpel, alte Möbel und Erinnerungen. „Uf em Estrich" findet man oft Vergessenes. Achtung: in Deutschland meint „Estrich" den Fussbodenbelag, in der Schweiz den Dachboden. Ein typisch schweizerisches Wort mit abweichender Bedeutung. Ein vertrauter Ort im Haus, wo Vergangenes seinen Platz findet.',
+      beispiel: 'Uf em Estrich hämmer no e alti Truhe vo de Urgrosseltere gfunde.',
+      beispiel_hd: 'Auf dem Dachboden haben wir noch eine alte Truhe der Urgroßeltern gefunden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-434',
+      ausdruck: 'de Sunntig',
+      hochdeutsch: 'der Sonntag',
+      bedeutung: 'Der „Sunntig" ist im Schweizerdeutschen der Sonntag, der Ruhetag der Woche. Die Aussprache mit „u" statt „o" ist typisch. „Am Sunntig" geht man wandern, in die Kirche oder besucht die Familie. Der Sonntag ist in der Schweiz traditionell ein stiller Tag, an dem man nicht laut werkelt. Ein zentrales Wort im Wochenrhythmus. Die mundartliche Lautung unterscheidet es deutlich vom hochdeutschen „Sonntag".',
+      beispiel: 'Am Sunntig schlofe mer immer es bizli länger und gniessed s\'Zmorge.',
+      beispiel_hd: 'Am Sonntag schlafen wir immer ein bisschen länger und genießen das Frühstück.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-435',
+      ausdruck: 'Wuche',
+      hochdeutsch: 'die Woche',
+      bedeutung: 'Die „Wuche" ist im Schweizerdeutschen die Woche. Die Aussprache mit „u" und „ch" ist typisch. „Die ganz Wuche" hat man zu tun, am „Wuchenänd" (Wochenende) ruht man sich aus. „Nächschti Wuche" plant man Termine. Ein zentrales Zeitwort, das den Rhythmus von Arbeit und Freizeit gliedert. Die mundartliche Lautung mit dem harten „ch" macht es unverkennbar schweizerisch und hebt es klar vom Hochdeutschen ab.',
+      beispiel: 'Die ganz Wuche hämmer gschaffet, jetz freu mer eus uf s\'Wuchenänd.',
+      beispiel_hd: 'Die ganze Woche haben wir gearbeitet, jetzt freuen wir uns auf das Wochenende.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-436',
+      ausdruck: 'hüür',
+      hochdeutsch: 'dieses Jahr / heuer',
+      bedeutung: 'Das Wort „hüür" bedeutet im Schweizerdeutschen „dieses Jahr" oder „heuer". „Hüür hämmer en strenge Winter gha" bezieht sich aufs laufende Jahr. Das Gegenstück ist „färn" (letztes Jahr). Das Wort ist ein traditioneller Zeitausdruck, der im Hochdeutschen als „heuer" vor allem im Süden bekannt ist. Ein urchiges Mundartwort, das die feine zeitliche Gliederung der Sprache zeigt und im Alltag rund ums Jahr gebraucht wird.',
+      beispiel: 'Hüür git\'s im Garte bsunders vill Öpfel a de Böim.',
+      beispiel_hd: 'Dieses Jahr gibt es im Garten besonders viele Äpfel an den Bäumen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-437',
+      ausdruck: 'färn',
+      hochdeutsch: 'letztes Jahr / im Vorjahr',
+      bedeutung: 'Das Wort „färn" oder „fern" bedeutet im Schweizerdeutschen „letztes Jahr" oder „im Vorjahr". „Färn isch de Summer heisser gsi" vergleicht mit dem vergangenen Jahr. Das Gegenstück ist „hüür" (dieses Jahr). Das Wort ist ein traditioneller Zeitausdruck der Mundart ohne direkte hochdeutsche Einwortentsprechung. Ein urchiges Wort, das die zeitliche Feingliederung der Sprache zeigt und beim Erzählen über vergangene Jahre fällt.',
+      beispiel: 'Färn hämmer no chönne id Bärge go schiifahre, hüür hät\'s z\'wenig Schnee.',
+      beispiel_hd: 'Letztes Jahr konnten wir noch in die Berge Ski fahren, dieses Jahr hat es zu wenig Schnee.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-438',
+      ausdruck: 'd\'Metzgete',
+      hochdeutsch: 'das Schlachtfest',
+      bedeutung: 'Die „Metzgete" ist im Schweizerdeutschen das Schlachtfest, bei dem nach dem Schlachten frische Fleisch- und Wurstspezialitäten aufgetischt werden. Im Herbst lädt manche Beiz zur „Metzgete" mit Blut- und Leberwurst, Speck und Sauerkraut. „Mer gönd a d\'Metzgete" ist ein kulinarisches Ereignis. Ein traditionsreiches Wort der ländlichen Esskultur, das eng mit dem bäuerlichen Jahreslauf verbunden ist.',
+      beispiel: 'Im Spootherbscht gömmer i d\'Beiz a d\'Metzgete go ässe.',
+      beispiel_hd: 'Im Spätherbst gehen wir in die Beiz zum Schlachtfest essen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-439',
+      ausdruck: 'Suurchabis',
+      hochdeutsch: 'das Sauerkraut',
+      bedeutung: 'Der „Suurchabis" ist im Schweizerdeutschen das Sauerkraut, also milchsauer vergorener Weisskohl. „Suurchabis mit Schüfeli" ist ein währschaftes Wintergericht. Das Wort setzt sich aus „suur" (sauer) und „Chabis" (Kohl) zusammen. Es gehört zur bodenständigen Schweizer Küche, besonders im Winter. Ein traditionsreiches Essenswort, dessen Bestandteile die typisch mundartliche Lautung mit „ch" zeigen und das Hochdeutsche klar abgrenzen.',
+      beispiel: 'Zum Schüfeli git\'s hüt es chräftigs Plättli Suurchabis.',
+      beispiel_hd: 'Zum Schäufele gibt es heute eine kräftige Portion Sauerkraut.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-440',
+      ausdruck: 'de Chabis',
+      hochdeutsch: 'der Kohl / Unsinn',
+      bedeutung: 'Der „Chabis" ist im Schweizerdeutschen einerseits der Kohl (Gemüse), andererseits umgangssprachlich „Unsinn" oder „Quatsch". „Red kei Chabis" heisst „red keinen Unsinn". Im Garten wächst der „Chabis" als Kohlkopf. Die doppelte Bedeutung macht das Wort besonders reizvoll. Ein vielseitiges Mundartwort, das vom Gemüsebeet bis zum Stammtisch reicht. Die Aussprache mit „ch" ist typisch schweizerisch.',
+      beispiel: 'Jetz red doch nöd eso en Chabis, das stimmt ja gar nöd!',
+      beispiel_hd: 'Jetzt red doch nicht so einen Unsinn, das stimmt ja gar nicht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ch-441',
+      ausdruck: 'bablä',
+      hochdeutsch: 'plaudern / tratschen',
+      bedeutung: 'Das Wort „bablä" oder „babble" heisst im Schweizerdeutschen plaudern, schwatzen oder tratschen. „Die zwöi babled de ganz Tag" beschreibt ausgiebiges Schwatzen. Es hat einen leicht spöttischen Unterton fürs viele Reden. Wer gern „bablet", erzählt und tratscht ausgiebig. Ein lebhaftes Mundartwort fürs gesellige oder ausschweifende Reden. Es gehört zum bildhaften Alltagswortschatz rund ums Sprechen.',
+      beispiel: 'Die zwöi Nochbersfraue babled über de Gartehag ome.',
+      beispiel_hd: 'Die zwei Nachbarsfrauen plaudern über den Gartenzaun.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-442',
+      ausdruck: 'gschwätzig',
+      hochdeutsch: 'geschwätzig / redselig',
+      bedeutung: 'Das Wort „gschwätzig" beschreibt im Schweizerdeutschen einen redseligen, schwatzhaften Menschen, der gern und viel redet. „Sii isch rüüdig gschwätzig" sagt man über jemanden, der pausenlos plaudert. Das Wort kann freundlich oder leicht tadelnd gemeint sein. Es leitet sich vom Schwatzen ab. Ein anschauliches Mundartwort, das eine vertraute menschliche Eigenschaft beschreibt und im Alltag oft fällt.',
+      beispiel: 'Mini Tante isch so gschwätzig, sie cha stundelang verzelle.',
+      beispiel_hd: 'Meine Tante ist so geschwätzig, sie kann stundenlang erzählen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ch-443',
+      ausdruck: 'Tante',
+      hochdeutsch: 'die Tante',
+      bedeutung: 'Die „Tante" ist im Schweizerdeutschen die Tante, die Schwester der Eltern oder die Frau des Onkels. „Mini Tante" gehört zur erweiterten Familie. Sie verwöhnt oft die Nichten und Neffen. Das Wort wird ähnlich wie im Hochdeutschen gebraucht, im Klang aber mundartlich gefärbt. Ein vertrautes Familienwort, das in Gesprächen über Verwandte ständig vorkommt und eine geliebte Bezugsperson bezeichnet.',
+      beispiel: 'Mini Tante chunt am Sunntig uf Bsuech und bringt immer öppis mit.',
+      beispiel_hd: 'Meine Tante kommt am Sonntag zu Besuch und bringt immer etwas mit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-444',
+      ausdruck: 'de Unggle',
+      hochdeutsch: 'der Onkel',
+      bedeutung: 'Der „Unggle" oder „Onkel" ist im Schweizerdeutschen der Bruder der Eltern oder der Mann der Tante. „Min Unggle" gehört zur erweiterten Familie. Er nimmt die Neffen oft zu Unternehmungen mit. Das Wort wird mundartlich weicher gesprochen. Ein vertrautes Familienwort, das in Gesprächen über Verwandte häufig fällt. Es bezeichnet eine nahe Bezugsperson, die im Familienleben eine wichtige Rolle spielt.',
+      beispiel: 'Min Unggle nimmt mi am Samschtig mit go fische go.',
+      beispiel_hd: 'Mein Onkel nimmt mich am Samstag mit zum Fischen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ch-445',
+      ausdruck: 'd\'Chuchichäschtlitür',
+      hochdeutsch: 'die Küchenschranktür',
+      bedeutung: 'Die „Chuchichäschtlitür" ist im Schweizerdeutschen die Türe des Küchenschränkchens, eine Steigerung des berühmten „Chuchichäschtli". Das Wort ist ein gefürchteter Zungenbrecher mit gleich mehreren „ch"-Lauten und gilt als Aussprache-Prüfstein für Nicht-Schweizer. „Mach d\'Chuchichäschtlitür zue" ist im Alltag durchaus gebräuchlich. Ein spielerisches, typisch schweizerisches Wort, das die Häufung des „ch"-Lautes auf die Spitze treibt.',
+      beispiel: 'Mach bitte d\'Chuchichäschtlitür zue, susch gaht sie no kaputt.',
+      beispiel_hd: 'Mach bitte die Küchenschranktür zu, sonst geht sie noch kaputt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-446',
+      ausdruck: 'ghörig',
+      hochdeutsch: 'gehörig / tüchtig / ordentlich',
+      bedeutung: 'Das Wort „ghörig" bedeutet im Schweizerdeutschen „gehörig", „tüchtig" oder „ordentlich" im Sinn von kräftig und gründlich. „Es hät ghörig gschneit" heisst, es hat ordentlich geschneit. Wer „ghörig zuelanget", greift kräftig zu. Das Wort verstärkt eine Aussage und betont das Ausmass. Ein anschauliches Mundartwort, das Nachdruck verleiht und ausdrückt, dass etwas in beträchtlichem Mass geschieht.',
+      beispiel: 'Geschter Nacht hät\'s ghörig abeghiit, alles isch wiss.',
+      beispiel_hd: 'Gestern Nacht hat es gehörig geschneit, alles ist weiß.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-447',
+      ausdruck: 'znäbis',
+      hochdeutsch: 'daneben / nebenan',
+      bedeutung: 'Das Wort „znäbis" oder „dänäbe" bedeutet im Schweizerdeutschen „daneben" oder „nebenan". „Stell\'s znäbis ane" heisst, etwas daneben hinzustellen. Es beschreibt eine Position direkt neben etwas anderem. Im übertragenen Sinn kann „dänäbe" auch „danebengegriffen" heissen. Ein praktisches Richtungswort des Alltags, das die räumliche Nähe ausdrückt. Die Aussprache mit „ä" ist typisch für die Mundart.',
+      beispiel: 'Stell de Stuel doch grad znäbis a de Tisch ane.',
+      beispiel_hd: 'Stell den Stuhl doch gleich daneben an den Tisch.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-448',
+      ausdruck: 'obenabe',
+      hochdeutsch: 'von oben herab',
+      bedeutung: 'Das Wort „obenabe" bedeutet im Schweizerdeutschen „von oben herab" oder „von oben herunter". „S\'Wasser chunt obenabe" beschreibt etwas, das von oben kommt. Im übertragenen Sinn behandelt jemand andere „obenabe", also herablassend. Ein anschauliches Richtungswort, das sowohl räumlich als auch im Verhalten gebraucht wird. Es setzt sich aus „obe" (oben) und „abe" (hinunter) zusammen und zeigt die mundartliche Wortbildung.',
+      beispiel: 'Vom Bärg obenabe hät me e wunderbari Ussicht über s\'ganze Tal.',
+      beispiel_hd: 'Vom Berg von oben herab hat man eine wunderbare Aussicht über das ganze Tal.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ch-449',
+      ausdruck: 'zuehäre',
+      hochdeutsch: 'dazu / hinzu',
+      bedeutung: 'Das Wort „zuehäre" bedeutet im Schweizerdeutschen „dazugehören" oder „hinzu". „Das ghört zuehäre" sagt man, wenn etwas dazugehört oder ergänzt wird. Es beschreibt die Zugehörigkeit oder Hinzufügung. Im Alltag fällt es, wenn etwas zu einer Sache passt oder ergänzend hinzukommt. Ein praktisches Mundartwort, das aus „zue" (zu) und „häre" (her) zusammengesetzt ist und Zusammengehörigkeit ausdrückt.',
+      beispiel: 'Zum währschafte Zmittag ghört bi eus immer es Dessert zuehäre.',
+      beispiel_hd: 'Zum deftigen Mittagessen gehört bei uns immer ein Dessert dazu.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-450',
+      ausdruck: 'es Dessert',
+      hochdeutsch: 'eine Nachspeise / ein Dessert',
+      bedeutung: 'Ein „Dessert" ist im Schweizerdeutschen die Nachspeise nach dem Hauptgang. Das Wort kommt aus dem Französischen und wird in der Schweiz „Dessär" ausgesprochen. „Was git\'s zum Dessert?" fragt man nach dem Essen. Es kann ein Glace, ein Kuchen oder eine Crème sein. In Deutschland sagt man auch „Nachtisch", in der Schweiz meist „Dessert". Ein alltägliches Essenswort, das wieder den französischen Spracheinfluss zeigt.',
+      beispiel: 'Zum Dessert git\'s hüt e selbergmachti Vanillecrème.',
+      beispiel_hd: 'Zur Nachspeise gibt es heute eine selbstgemachte Vanillecreme.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ch-451',
+      ausdruck: 'pflotsch',
+      hochdeutsch: 'Schneematsch / Matsch',
+      bedeutung: 'Der „Pflotsch" ist im Schweizerdeutschen der Schneematsch, also halb geschmolzener, matschiger Schnee auf der Strasse. „Uf de Strass isch nume no Pflotsch" beschreibt das nasse Winterchaos. Wer durch den „Pflotsch" läuft, hat nasse Füsse. Das Wort ist lautmalerisch und beschreibt anschaulich die matschige Konsistenz. Ein farbiges Winterwort der Mundart, das die unangenehme Seite des Tauwetters einfängt.',
+      beispiel: 'Bi dem Tauwätter isch d\'Strass voll Pflotsch und mer wird ganz nass.',
+      beispiel_hd: 'Bei diesem Tauwetter ist die Straße voller Schneematsch und man wird ganz nass.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ch-452',
+      ausdruck: 'glettä',
+      hochdeutsch: 'bügeln',
+      bedeutung: 'Das Wort „glettä" heisst im Schweizerdeutschen bügeln, also Wäsche mit dem Bügeleisen glätten. „D\'Hemmli glettä" gehört zur Hausarbeit. Das Bügeleisen selbst heisst „Glettise". Das Wort leitet sich von „glatt" ab, denn beim Bügeln wird die Wäsche glatt. Ein alltägliches Wort des Haushalts, das eine vertraute Tätigkeit beschreibt. Die mundartliche Form unterscheidet sich deutlich vom hochdeutschen „bügeln".',
+      beispiel: 'Am Sunntigobig mues ich no all d\'Hemmli für d\'Wuche glettä.',
+      beispiel_hd: 'Am Sonntagabend muss ich noch alle Hemden für die Woche bügeln.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-453',
+      ausdruck: 'abverheit',
+      hochdeutsch: 'misslungen / kaputt / hingefallen',
+      bedeutung: 'Das Wort „abverheit" bedeutet im Schweizerdeutschen „misslungen", „kaputt" oder „hingefallen", je nach Zusammenhang. „De Chueche isch abverheit" heisst, der Kuchen ist missraten. „Er isch abverheit" kann heissen, jemand ist gestürzt. Das vielseitige Wort drückt aus, dass etwas schiefgegangen oder zu Bruch gegangen ist. Ein ausdrucksstarkes Mundartwort für Missgeschicke aller Art im Alltag.',
+      beispiel: 'Min erscht Versuech mit em Zopf isch komplett abverheit.',
+      beispiel_hd: 'Mein erster Versuch mit dem Zopf ist komplett misslungen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-454',
+      ausdruck: 'go luege',
+      hochdeutsch: 'nachschauen gehen',
+      bedeutung: 'Die Wendung „go luege" heisst im Schweizerdeutschen „nachschauen gehen" oder „sich etwas anschauen gehen". „Ich gang go luege" sagt man, bevor man nachsieht. „Luege" ist das schweizerdeutsche Wort für schauen, das vorangestellte „go" drückt die Absicht aus. Man kann „go luege", ob alles in Ordnung ist, oder einen Match „go luege". Eine der häufigsten „go"-Wendungen im Schweizer Alltag.',
+      beispiel: 'Ich gang gschwind go luege, öb de Bus scho chunt.',
+      beispiel_hd: 'Ich gehe schnell nachschauen, ob der Bus schon kommt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-455',
+      ausdruck: 'es Trinkgäld',
+      hochdeutsch: 'ein Trinkgeld',
+      bedeutung: 'Das „Trinkgäld" ist im Schweizerdeutschen das Trinkgeld, das man im Restaurant oder Taxi gibt. „Es Trinkgäld ggä" gehört zum guten Ton, wenn man zufrieden war. In der Schweiz ist der Service oft inbegriffen, ein kleines „Trinkgäld" durch Aufrunden ist trotzdem üblich. Das Wort setzt sich aus „Trinke" und „Gäld" zusammen. Ein alltägliches Wort rund ums Bezahlen und die Höflichkeit beim Bedienen.',
+      beispiel: 'Mer hend em Kellner no es schöns Trinkgäld da gla.',
+      beispiel_hd: 'Wir haben dem Kellner noch ein schönes Trinkgeld dagelassen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-456',
+      ausdruck: 'es Münz',
+      hochdeutsch: 'das Kleingeld / die Münzen',
+      bedeutung: 'Das „Münz" ist im Schweizerdeutschen das Kleingeld oder die Münzen. „Häsch chli Münz?" fragt man, wenn man Hartgeld braucht. Beim Bezahlen kramt man im „Münz". Das Wort bezeichnet die Geldstücke im Gegensatz zu den Noten. Ein alltägliches Wort rund ums Bezahlen. Im Hochdeutschen sagt man „Kleingeld" oder „Münzen", in der Schweiz oft einfach „Münz". Es gehört zum täglichen Sprachgebrauch beim Einkaufen.',
+      beispiel: 'Häsch zuefällig chli Münz für de Iichaufswage?',
+      beispiel_hd: 'Hast du zufällig etwas Kleingeld für den Einkaufswagen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-457',
+      ausdruck: 'es Portmonnaie',
+      hochdeutsch: 'ein Portemonnaie / Geldbeutel',
+      bedeutung: 'Ein „Portmonnaie" ist im Schweizerdeutschen der Geldbeutel oder das Portemonnaie. Das Wort stammt aus dem Französischen und ist in der ganzen Schweiz gebräuchlich. „Ich ha s\'Portmonnaie deheim vergässe" ist ein häufiges Missgeschick. Darin sind Münz, Noten und Karten. Ein alltägliches Wort, das wieder den französischen Spracheinfluss zeigt. Es gehört zum täglichen Wortschatz rund ums Geld und Bezahlen.',
+      beispiel: 'Oh nei, ich ha s\'Portmonnaie deheim uf em Tisch vergässe!',
+      beispiel_hd: 'Oh nein, ich habe das Portemonnaie daheim auf dem Tisch vergessen!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-458',
+      ausdruck: 'go reise',
+      hochdeutsch: 'verreisen / in die Ferien gehen',
+      bedeutung: 'Die Wendung „go reise" oder „verreise" heisst im Schweizerdeutschen, in die Ferien fahren oder verreisen. „Mer gönd im Summer go reise" plant den Urlaub. Die Schweizer reisen gern, ob in die Berge, ans Meer oder in ferne Länder. Das vorangestellte „go" drückt die Absicht aus. Ein alltägliches Wort rund um Ferien und Urlaub, das die schweizerische „go"-Konstruktion für Vorhaben zeigt.',
+      beispiel: 'Die Familie gaht jede Summer für zwöi Wuche go reise.',
+      beispiel_hd: 'Die Familie geht jeden Sommer für zwei Wochen verreisen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-459',
+      ausdruck: 'd\'Ferie',
+      hochdeutsch: 'die Ferien / der Urlaub',
+      bedeutung: 'Die „Ferie" sind im Schweizerdeutschen die Ferien oder der Urlaub. „I d\'Ferie gah" freut sich jung und alt. In der Schweiz spricht man fast immer von „Ferie", selten von „Urlaub". „Schöni Ferie!" wünscht man vor der Abreise. Das Wort gehört zur schönsten Zeit des Jahres. Ein zentrales Alltagswort rund um Erholung und Reisen, das die freie Zeit fern vom Alltag bezeichnet.',
+      beispiel: 'I de Sommerferie gönd mer immer i d\'Ferie ans Meer.',
+      beispiel_hd: 'In den Sommerferien gehen wir immer in den Urlaub ans Meer.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ch-460',
+      ausdruck: 'wältschä',
+      hochdeutsch: 'Französisch sprechen / in der Westschweiz',
+      bedeutung: 'Das Wort „wältsch" bezeichnet im Schweizerdeutschen alles Französischsprachige, besonders die Westschweiz und ihre Bewohner. „D\'Wältsche" sind die französischsprachigen Schweizer, „d\'Wältschschwiiz" ist die Romandie. „Wältsch rede" heisst Französisch sprechen. Das Wort stammt von „welsch" für romanischsprachig. Ein wichtiges Kulturwort, das die viersprachige Schweiz und die Beziehung zur französischen Sprachregion widerspiegelt.',
+      beispiel: 'Min Cousin wohnt z\'Lausanne und redt scho lang nume no wältsch.',
+      beispiel_hd: 'Mein Cousin wohnt in Lausanne und spricht schon lange nur noch Französisch.',
+      kategorie: 'menschen'
     }
   ]
 };

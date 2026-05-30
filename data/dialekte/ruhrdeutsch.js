@@ -2332,6 +2332,1401 @@ export default {
       beispiel: 'Im Süden krieg ich immer Pott-Heimweh nach\'n paar Wochen!',
       beispiel_hd: 'Im Süden bekomme ich immer Heimweh nach dem Pott nach ein paar Wochen!',
       kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-271',
+      ausdruck: 'kannze',
+      hochdeutsch: 'kannst du',
+      bedeutung: 'Im Ruhrpott verschmelzen Verb und Personalpronomen gerne zu einer Einheit: aus „kannst du" wird „kannze". Diese Verschleifung ist eines der typischsten Merkmale des Ruhrdeutsch und macht den Sprachfluss schneller und direkter. Man hört es ständig im Alltag: „Kannze mal kommen?" oder „Kannze dat eben halten?".',
+      beispiel: 'Kannze mir mal eben helfen, dat Regal zu tragen?',
+      beispiel_hd: 'Kannst du mir mal eben helfen, das Regal zu tragen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-272',
+      ausdruck: 'hasse',
+      hochdeutsch: 'hast du',
+      bedeutung: 'Aus „hast du" wird im Ruhrpott „hasse" — wieder so eine typische Verschmelzung von Verb und Pronomen. „Hasse Feuer?", „Hasse mal nen Euro?" oder „Wat hasse gesagt?" gehören zum Grundwortschatz des Reviers. Diese Endsilbe -e am Verb ersetzt das angehängte „du" und ist ein Markenzeichen der Ruhrpott-Sprache.',
+      beispiel: 'Hasse mal Feuer für meine Kippe?',
+      beispiel_hd: 'Hast du mal Feuer für meine Zigarette?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-273',
+      ausdruck: 'wattnlos',
+      hochdeutsch: 'was ist denn los',
+      bedeutung: '„Wattnlos" ist die stark zusammengezogene Form von „was ist denn los" und drückt Neugier, Sorge oder Verwunderung aus. Im Ruhrpott wird gern gefragt „Wattnlos mit dir?", wenn jemand schlecht drauf ist. Die Verschleifung mehrerer Wörter zu einem ist typisch für den schnellen, direkten Tonfall der Region.',
+      beispiel: 'Mensch, du guckst so böse — wattnlos mit dir?',
+      beispiel_hd: 'Mensch, du schaust so böse — was ist denn los mit dir?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-274',
+      ausdruck: 'gehssema',
+      hochdeutsch: 'gehst du mal',
+      bedeutung: '„Gehssema" verschmilzt „gehst du mal" zu einem einzigen Wort und ist eine freundliche Aufforderung. „Gehssema Brötchen holen?" oder „Gehssema aus\'m Weg?" hört man im Revier ständig. Die Endung -ssema fasst Verb, Pronomen und das Füllwort „mal" zusammen — kompakter geht\'s kaum.',
+      beispiel: 'Gehssema eben zum Büdchen und holst Zigaretten?',
+      beispiel_hd: 'Gehst du mal eben zum Kiosk und holst Zigaretten?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-275',
+      ausdruck: 'kommma',
+      hochdeutsch: 'komm mal',
+      bedeutung: '„Kommma" ist die typische Ruhrpott-Verschleifung von „komm mal" und wird als Aufforderung benutzt, näherzukommen oder herzuhören. „Kommma her!" oder „Kommma gucken!" ruft man Freunden oder Kindern zu. Das angehängte -ma ersetzt das „mal" und ist eine der häufigsten Verkürzungen im Revier.',
+      beispiel: 'Kommma her, ich zeig dir wat Tolles!',
+      beispiel_hd: 'Komm mal her, ich zeige dir etwas Tolles!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-276',
+      ausdruck: 'sachma',
+      hochdeutsch: 'sag mal',
+      bedeutung: '„Sachma" ist die Ruhrpott-Form von „sag mal" und leitet oft eine neugierige oder ungläubige Frage ein. „Sachma, bisse bekloppt?" oder „Sachma, wo wasse gestern?". Das g in „sag" wird zum ch erweicht, und „mal" schrumpft zum angehängten -ma. Eine echte Allzweckfloskel des Reviers.',
+      beispiel: 'Sachma, wo wasse denn gestern Abend?',
+      beispiel_hd: 'Sag mal, wo warst du denn gestern Abend?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-277',
+      ausdruck: 'wasse',
+      hochdeutsch: 'warst du',
+      bedeutung: '„Wasse" steht im Ruhrpott für „warst du" und verschmilzt wieder Verb und Pronomen. „Wo wasse?" oder „Wasse schon da?" sind typische Fragen. Das r in „warst" verschwindet, und das angehängte -se ersetzt das „du". So entsteht der für das Revier charakteristische, flüssige Sprechrhythmus.',
+      beispiel: 'Wo wasse denn die ganze Zeit, ich hab dich gesucht!',
+      beispiel_hd: 'Wo warst du denn die ganze Zeit, ich habe dich gesucht!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-278',
+      ausdruck: 'wennze',
+      hochdeutsch: 'wenn du',
+      bedeutung: '„Wennze" ist die Verschmelzung von „wenn du" und leitet im Ruhrpott Bedingungssätze ein. „Wennze willst, kannze mitkommen" oder „Wennze keine Lust hast, lass\'es". Das angehängte -ze ersetzt das „du" und ist neben „kannze" und „hasse" eine der häufigsten Pronomen-Verschleifungen der Region.',
+      beispiel: 'Wennze Bock hast, komm einfach mit zum Spiel.',
+      beispiel_hd: 'Wenn du Lust hast, komm einfach mit zum Spiel.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-279',
+      ausdruck: 'isset',
+      hochdeutsch: 'ist es',
+      bedeutung: '„Isset" verschmilzt „ist es" zu einem Wort und taucht im Ruhrpott in Fragen und Aussagen auf: „Wie spät isset?" oder „Isset noch weit?". Das angehängte -et entspricht dem „es" und das s wird gerne verdoppelt. Eine typische Lautverschleifung, die den Sprachfluss des Reviers prägt.',
+      beispiel: 'Wie spät isset eigentlich, ich muss gleich los?',
+      beispiel_hd: 'Wie spät ist es eigentlich, ich muss gleich los?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-280',
+      ausdruck: 'wammer',
+      hochdeutsch: 'wenn wir',
+      bedeutung: '„Wammer" ist die Ruhrpott-Verschleifung von „wenn wir" und leitet Vorschläge oder Bedingungen in der Wir-Form ein. „Wammer gewinnen, gehn wir feiern" oder „Wammer das schaffen, isset gut". Das angehängte -mer steht für „wir", typisch für das gesellige Revier, wo viel im Kollektiv gedacht und gesprochen wird.',
+      beispiel: 'Wammer das Spiel gewinnen, gehn wir alle einen trinken!',
+      beispiel_hd: 'Wenn wir das Spiel gewinnen, gehen wir alle etwas trinken!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-281',
+      ausdruck: 'auffe',
+      hochdeutsch: 'auf die / auf der',
+      bedeutung: '„Auffe" ist die typische Ruhrpott-Verschmelzung von „auf die" oder „auf der". Man geht „auffe Maloche", steht „auffe Halde" oder hat etwas „auffe Lunge". Diese Verschleifung der Präposition mit dem Artikel ist eines der auffälligsten grammatischen Merkmale des Ruhrdeutsch und kommt im Alltag ständig vor.',
+      beispiel: 'Ich muss morgen früh auffe Maloche, da kann ich nich lang machen.',
+      beispiel_hd: 'Ich muss morgen früh zur Arbeit, da kann ich nicht lange aufbleiben.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-282',
+      ausdruck: 'inne Kiste',
+      hochdeutsch: 'ins Bett',
+      bedeutung: '„Inne Kiste" gehen bedeutet im Ruhrpott schlafen gehen — die „Kiste" ist scherzhaft das Bett. „Ich geh inne Kiste" hört man abends nach einer langen Schicht. Der Ausdruck verbindet die typische Verschleifung „inne" (in die) mit dem derb-liebevollen Bild vom Bett als Kiste. Echter Pott-Humor.',
+      beispiel: 'So, ich bin platt, ich geh jetzt inne Kiste.',
+      beispiel_hd: 'So, ich bin erschöpft, ich gehe jetzt ins Bett.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-283',
+      ausdruck: 'Pömps',
+      hochdeutsch: 'Schuhe / Treter (scherzhaft)',
+      bedeutung: '„Pömps" ist im Ruhrpott eine scherzhafte, abgewandelte Bezeichnung für Schuhe — abgeleitet von den „Pumps", aber breit auf jegliches Schuhwerk angewandt. „Zieh deine Pömps an" sagt man zu Kindern. Der Ausdruck zeigt den verspielten Umgang mit der Sprache und ist im Familienalltag des Reviers verbreitet.',
+      beispiel: 'Zieh deine Pömps an, wir gehen gleich raus!',
+      beispiel_hd: 'Zieh deine Schuhe an, wir gehen gleich raus!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-284',
+      ausdruck: 'Kabuff',
+      hochdeutsch: 'kleine Abstellkammer / enger Raum',
+      bedeutung: 'Ein „Kabuff" ist im Ruhrpott ein kleiner, enger, oft unordentlicher Raum — eine Abstellkammer, ein winziges Büro oder ein vollgestopfter Verschlag. „In dem Kabuff kann man sich ja kaum drehen!". Das Wort hat einen leicht abwertenden, aber humorvollen Beiklang und beschreibt jeden Raum, der zu klein und zu vollgepackt ist.',
+      beispiel: 'Meinen Krempel hab ich alles in dat Kabuff gestopft.',
+      beispiel_hd: 'Meinen Kram habe ich alles in die kleine Abstellkammer gestopft.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-285',
+      ausdruck: 'Pinkepinke',
+      hochdeutsch: 'Geld / Kohle',
+      bedeutung: '„Pinkepinke" ist im Ruhrpott ein scherzhaftes Wort für Geld — vermutlich lautmalerisch nach dem Klimpern von Münzen. „Ohne Pinkepinke läuft nix" oder „Hasse genug Pinkepinke dabei?". Neben „Kohle" und „Knete" gehört es zum bunten Wortschatz fürs Geld, der im arbeitergeprägten Revier eine besondere Rolle spielt.',
+      beispiel: 'Erst Pinkepinke verdienen, dann können wir feiern gehen.',
+      beispiel_hd: 'Erst Geld verdienen, dann können wir feiern gehen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-286',
+      ausdruck: 'Knete',
+      hochdeutsch: 'Geld',
+      bedeutung: '„Knete" ist im Ruhrpott — wie in weiten Teilen Deutschlands — ein gängiges umgangssprachliches Wort für Geld. „Ich hab keine Knete mehr" heißt „Ich bin pleite". Im Revier, wo das Geld bei vielen Familien knapp war, gibt es viele solcher Ausdrücke: Kohle, Knete, Pinkepinke, Moos. Knete betont dabei das Greifbare, Handfeste am Geld.',
+      beispiel: 'Bis zum Ersten hab ich keine Knete mehr inne Tasche.',
+      beispiel_hd: 'Bis zum Ersten habe ich kein Geld mehr in der Tasche.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-287',
+      ausdruck: 'Pillepalle',
+      hochdeutsch: 'Kleinigkeit / Lappalie',
+      bedeutung: '„Pillepalle" bezeichnet im Ruhrpott eine belanglose Kleinigkeit oder etwas, das einfach zu bewältigen ist. „Dat is doch Pillepalle!" sagt man, wenn eine Aufgabe leicht ist oder ein Problem nicht der Rede wert. Der Ausdruck verströmt die typische Ruhrpott-Gelassenheit: Man macht aus einer Mücke keinen Elefanten.',
+      beispiel: 'Die paar Kisten tragen wir eben hoch, dat is doch Pillepalle.',
+      beispiel_hd: 'Die paar Kisten tragen wir eben hoch, das ist doch eine Kleinigkeit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-288',
+      ausdruck: 'Kappeskopp',
+      hochdeutsch: 'Dummkopf / Begriffsstutziger',
+      bedeutung: 'Ein „Kappeskopp" ist im Ruhrpott jemand, der nicht besonders helle ist oder gerade etwas Unkluges getan hat — wörtlich ein „Kohlkopf". Das Wort verbindet „Kappes" (Weißkohl) mit „Kopp" und ist ein gutmütig-derbes Schimpfwort. „Du Kappeskopp!" sagt man eher kopfschüttelnd als wirklich böse.',
+      beispiel: 'Du Kappeskopp, jetzt hasse die Milch überkochen lassen!',
+      beispiel_hd: 'Du Dummkopf, jetzt hast du die Milch überkochen lassen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-289',
+      ausdruck: 'Dussel',
+      hochdeutsch: 'Tollpatsch / zerstreuter Mensch',
+      bedeutung: 'Ein „Dussel" ist im Ruhrpott ein liebenswerter Tollpatsch oder zerstreuter Mensch, dem ständig kleine Missgeschicke passieren. „Du Dussel, du hast die Schlüssel wieder vergessen!". Das Schimpfwort ist mild und voller Nachsicht — man ärgert sich nicht wirklich, sondern schüttelt eher schmunzelnd den Kopf.',
+      beispiel: 'So\'n Dussel, jetzt hab ich den Bus verpasst!',
+      beispiel_hd: 'So ein Tollpatsch, jetzt habe ich den Bus verpasst!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-290',
+      ausdruck: 'verkasematuckeln',
+      hochdeutsch: 'verbrauchen / verputzen / erledigen',
+      bedeutung: '„Verkasematuckeln" ist ein herrlich umständliches Ruhrpott-Wort für „verbrauchen", „aufessen" oder „erledigen". „Die ganze Pizza hat er allein verkasematuckelt!". Das lange, gekünstelt klingende Wort wird mit Augenzwinkern benutzt und steht beispielhaft für den schrägen, fantasievollen Wortwitz des Reviers.',
+      beispiel: 'Den ganzen Kuchen hasse ja schon allein verkasematuckelt!',
+      beispiel_hd: 'Den ganzen Kuchen hast du ja schon allein aufgegessen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-291',
+      ausdruck: 'fummelig',
+      hochdeutsch: 'kniffelig / feinmotorisch schwierig',
+      bedeutung: '„Fummelig" beschreibt im Ruhrpott eine Arbeit, die viel Fingerspitzengefühl und Geduld verlangt — kleinteilig und schwer zu greifen. „Die kleinen Schrauben einzudrehen is echt fummelig". Das Wort kommt von „fummeln" (mit den Fingern hantieren) und gehört in jeden Werkstatt- und Bastelalltag des Reviers.',
+      beispiel: 'Die winzigen Schrauben reinzudrehen is mir zu fummelig.',
+      beispiel_hd: 'Die winzigen Schrauben einzudrehen ist mir zu kniffelig.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-292',
+      ausdruck: 'pömpeln',
+      hochdeutsch: 'mit dem Saugglockenstab arbeiten / herumhantieren',
+      bedeutung: '„Pömpeln" heißt im Ruhrpott, mit dem „Pömpel" (Saugglocke) einen verstopften Abfluss freizubekommen, im weiteren Sinne auch unbeholfen an etwas herumhantieren. „Ich pömpel schon ne Stunde am Abfluss". Das Wort gehört zum handwerklich-praktischen Alltagswortschatz des Reviers und klingt so anschaulich, wie die Tätigkeit ist.',
+      beispiel: 'Der Abfluss is dicht, ich muss erstmal kräftig pömpeln.',
+      beispiel_hd: 'Der Abfluss ist verstopft, ich muss erst kräftig mit der Saugglocke arbeiten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-293',
+      ausdruck: 'Backes',
+      hochdeutsch: 'Backofen / Backhaus',
+      bedeutung: 'Der „Backes" ist im Ruhrpott und im westfälischen Raum das Backhaus oder umgangssprachlich der Backofen. Früher hatte fast jede Zechensiedlung einen gemeinschaftlichen Backes, in dem die Familien reihum ihr Brot buken. Das Wort ist eng mit der dörflich-solidarischen Vergangenheit des Reviers verbunden.',
+      beispiel: 'Früher hat die ganze Siedlung im Backes ihr Brot gebacken.',
+      beispiel_hd: 'Früher hat die ganze Siedlung im Backhaus ihr Brot gebacken.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-294',
+      ausdruck: 'Panhas',
+      hochdeutsch: 'Blutwurst-Grützwurst zum Braten',
+      bedeutung: '„Panhas" ist eine westfälisch-rheinische Spezialität: eine feste Wurstmasse aus Wurstbrühe, Blut und Buchweizen- oder Roggenmehl, die in Scheiben kross gebraten wird. Im Ruhrpott gehört Panhas mit Bratkartoffeln oder Apfelmus zum deftigen Arbeiteressen. Das Gericht entstand aus der Resteverwertung beim Schlachten.',
+      beispiel: 'Sonntags gabs bei Oma Panhas mit Bratkartoffeln und Apfelmus.',
+      beispiel_hd: 'Sonntags gab es bei Oma Panhas mit Bratkartoffeln und Apfelmus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-295',
+      ausdruck: 'Pottsuppe',
+      hochdeutsch: 'deftiger Eintopf',
+      bedeutung: 'Die „Pottsuppe" ist im Ruhrgebiet der herzhafte Eintopf aus dem großen Topf — mit Kartoffeln, Gemüse, Speck und Wurst, der die ganze malochende Familie satt machte. Sie war günstig, nahrhaft und konnte über Stunden auf dem Herd köcheln. Ein klassisches Arbeiteressen, das den Zusammenhalt am Tisch symbolisierte.',
+      beispiel: 'Wenn et kalt is, gibt et bei uns ne dicke Pottsuppe.',
+      beispiel_hd: 'Wenn es kalt ist, gibt es bei uns einen kräftigen Eintopf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-296',
+      ausdruck: 'Pellkartoffeln',
+      hochdeutsch: 'in der Schale gekochte Kartoffeln',
+      bedeutung: '„Pellkartoffeln" sind im Ruhrpott in der Schale gekochte Kartoffeln, die man sich am Tisch selbst pellt. Klassisch isst man sie mit Quark und Leinöl oder mit Hering — ein einfaches, günstiges Arbeiteressen. Kartoffeln waren das Grundnahrungsmittel der Bergarbeiterfamilien und Pellkartoffeln eine der beliebtesten Zubereitungen.',
+      beispiel: 'Heute Abend gibt et Pellkartoffeln mit Quark und Leinöl.',
+      beispiel_hd: 'Heute Abend gibt es Pellkartoffeln mit Quark und Leinöl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-297',
+      ausdruck: 'Reibekuchen',
+      hochdeutsch: 'Kartoffelpuffer',
+      bedeutung: '„Reibekuchen" sind im Ruhrpott und Rheinland in Fett ausgebackene Kartoffelpuffer aus geriebenen rohen Kartoffeln, Zwiebeln und Ei. Klassisch isst man sie mit Apfelmus oder Rübenkraut. Auf jedem Markt und jeder Kirmes im Revier duftet es nach frischen Reibekuchen — ein echtes Stück Heimat für die Nase.',
+      beispiel: 'Auffe Kirmes hol ich mir immer ne Portion Reibekuchen mit Apfelmus.',
+      beispiel_hd: 'Auf der Kirmes hole ich mir immer eine Portion Reibekuchen mit Apfelmus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-298',
+      ausdruck: 'Rübenkraut',
+      hochdeutsch: 'Zuckerrübensirup',
+      bedeutung: '„Rübenkraut" ist im Ruhrpott und Rheinland der dunkle, dickflüssige Sirup aus Zuckerrüben, den man aufs Butterbrot streicht oder zu Reibekuchen reicht. Trotz des Namens hat es nichts mit Kraut zu tun. Das süße Brotaufstrich war günstig und energiereich und gehörte fest in die Brotdose der Bergleute.',
+      beispiel: 'Auffs Butterbrot kommt bei mir Rübenkraut, schön süß.',
+      beispiel_hd: 'Aufs Butterbrot kommt bei mir Zuckerrübensirup, schön süß.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-299',
+      ausdruck: 'Pittermännchen',
+      hochdeutsch: 'kleines Bierfass (10 Liter)',
+      bedeutung: 'Das „Pittermännchen" ist im Ruhrpott und Rheinland das kleine 10-Liter-Bierfass, das man zu Familienfeiern und Gartenpartys anschleppt. „Holma das Pittermännchen aus\'m Keller!". Der Name geht auf den Heiligen Petrus (Pitter) zurück. Das Fässchen steht für gesellige Feiern im Kreis von Familie und Kumpels.',
+      beispiel: 'Für die Geburtstagsfeier holen wir uns ein Pittermännchen.',
+      beispiel_hd: 'Für die Geburtstagsfeier holen wir uns ein kleines Bierfass.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-300',
+      ausdruck: 'Molle',
+      hochdeutsch: 'Glas Bier',
+      bedeutung: 'Eine „Molle" ist im Ruhrpott ein Glas Bier — meist ein gut gefülltes. „Komm, wir trinken noch ne Molle" gehört zum Feierabend dazu. Das Wort stammt aus dem Berlinischen, ist aber im Revier längst heimisch. Nach der Maloche oder beim Fußballgucken darf die Molle nicht fehlen.',
+      beispiel: 'Nach der Schicht gönn ich mir erstmal ne kühle Molle.',
+      beispiel_hd: 'Nach der Schicht gönne ich mir erst ein kühles Glas Bier.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-301',
+      ausdruck: 'Pittermann',
+      hochdeutsch: 'Bier / Fassbier (scherzhaft)',
+      bedeutung: '„Pittermann" ist im Ruhrpott eine scherzhafte Bezeichnung für das Bier aus dem kleinen Fass, abgeleitet vom „Pittermännchen". „Mach ma den Pittermann auf!" ruft man bei der Feier. Der Ausdruck personifiziert das Fass beinahe und zeigt die liebevoll-humorvolle Beziehung der Pottler zu ihrem Gerstensaft.',
+      beispiel: 'Mach ma den Pittermann auf, die Gäste haben Durst!',
+      beispiel_hd: 'Mach mal das Bierfass auf, die Gäste haben Durst!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-302',
+      ausdruck: 'einen heben',
+      hochdeutsch: 'etwas trinken gehen',
+      bedeutung: '„Einen heben" bedeutet im Ruhrpott, ein Bier oder einen Schnaps trinken zu gehen — das Glas wird ja zum Mund „gehoben". „Komm, wir gehn einen heben" ist die klassische Einladung zum Feierabendbier. Der Ausdruck gehört zur geselligen Trinkkultur der Eckkneipen und Trinkhallen des Reviers.',
+      beispiel: 'Nach der Arbeit gehn wir noch einen heben, kommse mit?',
+      beispiel_hd: 'Nach der Arbeit gehen wir noch etwas trinken, kommst du mit?',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-303',
+      ausdruck: 'Schluck',
+      hochdeutsch: 'Schnaps / Kurzer',
+      bedeutung: 'Ein „Schluck" ist im Ruhrpott nicht nur ein Schluck Flüssigkeit, sondern speziell ein Schnaps oder Kurzer. „Komm, einen Schluck noch!" sagt man beim geselligen Beisammensein. Der Korn oder Klare gehörte in der Eckkneipe zum Bier dazu und wärmte den Bergmann nach der kalten Schicht.',
+      beispiel: 'Auf die Gesundheit trinken wir noch einen Schluck zusammen!',
+      beispiel_hd: 'Auf die Gesundheit trinken wir noch einen Schnaps zusammen!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-304',
+      ausdruck: 'sich einen ballern',
+      hochdeutsch: 'sich betrinken',
+      bedeutung: '„Sich einen ballern" heißt im Ruhrpott, ordentlich Alkohol zu trinken und sich zu betrinken. „Gestern haben wir uns ganz schön einen geballert!". Der Ausdruck ist derb, aber im Revier nicht negativ gemeint, wenn vom feuchtfröhlichen Feierabend oder einer ausgelassenen Feier die Rede ist.',
+      beispiel: 'Auf der Party haben wir uns ordentlich einen geballert.',
+      beispiel_hd: 'Auf der Party haben wir uns ordentlich betrunken.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-305',
+      ausdruck: 'blau wie ne Strippe',
+      hochdeutsch: 'völlig betrunken',
+      bedeutung: '„Blau wie ne Strippe" ist im Ruhrpott eine bildhafte Redensart für jemanden, der völlig betrunken ist. „Der war gestern blau wie ne Strippe!". Das Wort „blau" für betrunken ist deutschlandweit verbreitet, der Vergleich mit der schlaff herunterhängenden Strippe (Schnur) verstärkt das Bild des Schwankenden.',
+      beispiel: 'Nach dem Schützenfest war er blau wie ne Strippe.',
+      beispiel_hd: 'Nach dem Schützenfest war er völlig betrunken.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-306',
+      ausdruck: 'Pömmel',
+      hochdeutsch: 'kleiner, rundlicher Mensch / Knirps',
+      bedeutung: 'Ein „Pömmel" ist im Ruhrpott liebevoll ein kleiner, rundlicher Mensch oder ein pummeliges Kind. „Komm her, du kleiner Pömmel!" sagt man zärtlich zum Nachwuchs. Das Wort ist nie wirklich böse gemeint, sondern drückt herzliche Zuneigung mit einem Augenzwinkern aus — typisch für den warmen Pott-Umgangston.',
+      beispiel: 'Unser Kleiner is so ein süßer Pömmel mit dicken Bäckchen.',
+      beispiel_hd: 'Unser Kleiner ist so ein süßer Knirps mit dicken Bäckchen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-307',
+      ausdruck: 'Pittenkerl',
+      hochdeutsch: 'Bergmann / Kumpel von der Zeche',
+      bedeutung: 'Ein „Pittenkerl" ist im Ruhrpott ein Bergmann, ein Mann vom „Pütt" (Zeche). Der Begriff trägt Respekt und Arbeiterstolz in sich, denn der Pittenkerl war es, der unter Tage sein Leben riskierte. „Echte Pittenkerls halten zusammen" beschreibt den legendären Zusammenhalt der Bergleute, der die ganze Region prägte.',
+      beispiel: 'Mein Opa war ein echter Pittenkerl, vierzig Jahre unter Tage.',
+      beispiel_hd: 'Mein Opa war ein echter Bergmann, vierzig Jahre unter Tage.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-308',
+      ausdruck: 'Steiger',
+      hochdeutsch: 'Aufsichtsperson im Bergwerk',
+      bedeutung: 'Der „Steiger" war im Bergwerk die Aufsichts- und Führungsperson, die für Sicherheit, Ordnung und die Arbeit der Bergleute verantwortlich war. Im berühmten Steigerlied „Glück auf, der Steiger kommt" wird er besungen. Der Steiger genoss hohes Ansehen und kannte jeden Winkel der Grube — eine Schlüsselfigur der Bergbaukultur.',
+      beispiel: 'Der Steiger hat die Wetter geprüft, bevor wir eingefahren sind.',
+      beispiel_hd: 'Der Steiger hat die Grubenluft geprüft, bevor wir eingefahren sind.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-309',
+      ausdruck: 'Hauer',
+      hochdeutsch: 'Bergmann an der Kohlefront',
+      bedeutung: 'Der „Hauer" war im Bergwerk der Facharbeiter, der direkt vor Ort die Kohle aus dem Flöz „haute" — die anstrengendste und gefährlichste Arbeit unter Tage. Vom Schlepper über den Lehrhauer bis zum Hauer führte der Weg im Bergbau. Der Hauer stand sinnbildlich für die harte körperliche Maloche des Reviers.',
+      beispiel: 'Als Hauer hat er die Kohle direkt aussem Flöz geschlagen.',
+      beispiel_hd: 'Als Hauer hat er die Kohle direkt aus dem Flöz geschlagen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-310',
+      ausdruck: 'Schlepper',
+      hochdeutsch: 'junger Bergmann zum Kohletransport',
+      bedeutung: 'Der „Schlepper" war im Bergwerk der junge Bergmann, der die geförderte Kohle in Loren zum Schacht transportierte — oft die erste Tätigkeit eines Neulings unter Tage. Es war eine knochenharte Arbeit in Enge und Dunkelheit. Vom Schlepper arbeitete man sich zum Hauer hoch. Ein Begriff voller Bergbaugeschichte.',
+      beispiel: 'Mit fünfzehn fing er als Schlepper unter Tage an.',
+      beispiel_hd: 'Mit fünfzehn fing er als Schlepper unter Tage an.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-311',
+      ausdruck: 'einfahren',
+      hochdeutsch: 'in das Bergwerk hinabfahren',
+      bedeutung: '„Einfahren" bedeutet im Bergbau, mit dem Förderkorb in die Grube hinabzufahren, um die Schicht zu beginnen. „Wir fahren um sechs ein". Obwohl es nach unten geht, heißt es traditionell „einfahren". Der Gegenbegriff ist „ausfahren". Diese Bergmannssprache ist tief im Wortschatz des Reviers verankert.',
+      beispiel: 'Frühschicht heißt um sechs einfahren in die Grube.',
+      beispiel_hd: 'Frühschicht heißt um sechs in die Grube hinabfahren.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-312',
+      ausdruck: 'Kaue',
+      hochdeutsch: 'Waschraum/Umkleide der Bergleute',
+      bedeutung: 'Die „Kaue" war im Bergwerk der Umkleide- und Waschraum, in dem die Bergleute ihre Kleidung an Ketten zur Decke zogen und sich vor und nach der Schicht wuschen. Die „Schwarzkaue" für die schmutzige Grubenkleidung und die „Weißkaue" für die saubere Straßenkleidung gehörten zu jeder Zeche. Ein zentraler Ort des Bergmannsalltags.',
+      beispiel: 'Nach der Schicht ab inne Kaue und den Kohlenstaub abduschen.',
+      beispiel_hd: 'Nach der Schicht in den Waschraum und den Kohlenstaub abduschen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-313',
+      ausdruck: 'Flöz',
+      hochdeutsch: 'Kohleschicht im Gestein',
+      bedeutung: 'Das „Flöz" ist die Schicht aus Steinkohle, die zwischen dem Gestein liegt und von den Bergleuten abgebaut wurde. Die Flöze im Ruhrgebiet trugen klangvolle Namen wie „Sonnenschein" oder „Mausegatt". Wie mächtig und wie tief ein Flöz lag, bestimmte die Arbeit der Hauer. Ein Grundbegriff des Steinkohlenbergbaus.',
+      beispiel: 'Dat Flöz lag hier über tausend Meter tief unter Tage.',
+      beispiel_hd: 'Die Kohleschicht lag hier über tausend Meter tief unter Tage.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-314',
+      ausdruck: 'Förderturm',
+      hochdeutsch: 'Schachtturm der Zeche',
+      bedeutung: 'Der „Förderturm" mit seinen großen Seilscheiben ist das weithin sichtbare Wahrzeichen jeder Zeche und der Silhouette des Ruhrgebiets. Über ihn wurden Bergleute und Kohle durch den Schacht befördert. Viele Fördertürme sind erhalten geblieben und stehen heute als Industriedenkmäler für die Bergbaugeschichte des Reviers.',
+      beispiel: 'Den Förderturm von der Zeche sieht man schon von Weitem.',
+      beispiel_hd: 'Den Förderturm der Zeche sieht man schon von Weitem.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-315',
+      ausdruck: 'Knappschaft',
+      hochdeutsch: 'Sozialversicherung der Bergleute',
+      bedeutung: 'Die „Knappschaft" ist die traditionsreiche Sozial- und Krankenversicherung der Bergleute — eine der ältesten Sozialeinrichtungen Deutschlands. Sie sicherte Kumpel und ihre Familien bei Krankheit, Unfall und im Alter ab. Die „Knappen" (Bergleute) zahlten in die Knappschaftskasse ein. Bis heute ein Begriff im Revier, etwa beim Knappschaftskrankenhaus.',
+      beispiel: 'Im Knappschaftskrankenhaus wurden die Bergleute behandelt.',
+      beispiel_hd: 'Im Knappschaftskrankenhaus wurden die Bergleute behandelt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-316',
+      ausdruck: 'Schippe',
+      hochdeutsch: 'Schaufel',
+      bedeutung: 'Die „Schippe" ist im Ruhrpott die Schaufel — das Grundwerkzeug des Bergmanns und jedes Arbeiters. „Nimm die Schippe inne Hand!" ist eine Aufforderung, mit anzupacken. Im übertragenen Sinn bedeutet „noch eine Schippe drauflegen", sich noch mehr anzustrengen. Ein Wort, das die Arbeitskultur des Reviers verkörpert.',
+      beispiel: 'Nimm die Schippe inne Hand, der Schnee muss weg!',
+      beispiel_hd: 'Nimm die Schaufel in die Hand, der Schnee muss weg!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-317',
+      ausdruck: 'Pinkel',
+      hochdeutsch: 'eingebildeter, feiner Mensch',
+      bedeutung: 'Ein „Pinkel" ist im Ruhrpott ein eingebildeter, vornehm tuender Mensch, der sich für etwas Besseres hält — oft als „feiner Pinkel" verstärkt. „Der spielt sich auf wie\'n feiner Pinkel!". Im bodenständigen Revier, wo Bescheidenheit zählt, ist Angeberei verpönt — und der Pinkel kriegt dafür gutmütigen Spott ab.',
+      beispiel: 'Seit er befördert wurde, benimmt er sich wie\'n feiner Pinkel.',
+      beispiel_hd: 'Seit er befördert wurde, benimmt er sich wie ein feiner Mensch.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-318',
+      ausdruck: 'Tucke',
+      hochdeutsch: 'zickige oder zimperliche Person',
+      bedeutung: 'Eine „Tucke" ist im Ruhrpott eine zickige, übertrieben empfindliche oder umständliche Person. „Sei nich so ne Tucke!" sagt man zu jemandem, der sich anstellt. Das Wort ist derb-umgangssprachlich und wird im Revier locker für beide Geschlechter verwendet, wenn jemand zu zimperlich oder kompliziert ist.',
+      beispiel: 'Jetzt sei nich so ne Tucke und pack mit an!',
+      beispiel_hd: 'Jetzt sei nicht so zimperlich und pack mit an!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-319',
+      ausdruck: 'Pannekopp',
+      hochdeutsch: 'Dummkopf / Trottel',
+      bedeutung: 'Ein „Pannekopp" ist im Ruhrpott ein Dummkopf oder Trottel — wörtlich ein „Pfannenkopf", also ein hohler Kopf. „Du Pannekopp, dat war doch klar!". Das Schimpfwort ist derb, aber meist gutmütig und kopfschüttelnd gemeint, wenn jemand etwas Unkluges angestellt hat. Ein Klassiker des Pott-Schimpfwortschatzes.',
+      beispiel: 'Du Pannekopp, jetzt hasse den falschen Schlüssel mitgenommen!',
+      beispiel_hd: 'Du Dummkopf, jetzt hast du den falschen Schlüssel mitgenommen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-320',
+      ausdruck: 'Lällebäbb',
+      hochdeutsch: 'Schwätzer / Dummschwätzer',
+      bedeutung: 'Ein „Lällebäbb" ist im Ruhrpott und Rheinland jemand, der viel und dummes Zeug daherredet — ein Schwätzer ohne Substanz. „Hör nich auf den, dat is doch\'n Lällebäbb!". Das lautmalerische Wort (von „lallen" und „babbeln") karikiert das Geschwätz und ist ein typisch fantasievolles Schimpfwort der Region.',
+      beispiel: 'Der erzählt den ganzen Tag Quatsch, so\'n Lällebäbb!',
+      beispiel_hd: 'Der erzählt den ganzen Tag Unsinn, so ein Dummschwätzer!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-321',
+      ausdruck: 'plietsch',
+      hochdeutsch: 'schlau / clever / aufgeweckt',
+      bedeutung: '„Plietsch" bedeutet im Ruhrpott und Norddeutschen schlau, clever und aufgeweckt. „Dat Mädchen is echt plietsch!" lobt man ein cleveres Kind. Das Wort kommt aus dem Plattdeutschen und ist ein anerkennendes Kompliment für jemanden, der pfiffig und nicht auf den Kopf gefallen ist. Im Revier schätzt man solche Bauernschläue.',
+      beispiel: 'Der Junge is richtig plietsch, der findet immer ne Lösung.',
+      beispiel_hd: 'Der Junge ist richtig schlau, der findet immer eine Lösung.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-322',
+      ausdruck: 'pingelig',
+      hochdeutsch: 'übergenau / kleinlich',
+      bedeutung: '„Pingelig" beschreibt im Ruhrpott jemanden, der übertrieben genau, penibel und kleinlich ist. „Sei nich so pingelig!" sagt man, wenn jemand wegen Kleinigkeiten ein Theater macht. Im pragmatischen Revier, wo es auf Anpacken ankommt, gilt übertriebene Pingeligkeit eher als lästige Eigenschaft.',
+      beispiel: 'Musse nich so pingelig sein, dat passt schon so.',
+      beispiel_hd: 'Du musst nicht so kleinlich sein, das passt schon so.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-323',
+      ausdruck: 'verpeilt',
+      hochdeutsch: 'durcheinander / zerstreut',
+      bedeutung: '„Verpeilt" ist im Ruhrpott jemand, der zerstreut, durcheinander oder nicht ganz bei der Sache ist. „Ich bin heut total verpeilt!" sagt man an einem Tag, an dem alles schiefgeht und man den Faden verliert. Der Ausdruck ist locker und selbstironisch und beschreibt einen vorübergehenden Zustand der Verwirrung.',
+      beispiel: 'Sorry, ich bin heut völlig verpeilt und hab alles vergessen.',
+      beispiel_hd: 'Entschuldigung, ich bin heute völlig durcheinander und habe alles vergessen.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-324',
+      ausdruck: 'angefressen',
+      hochdeutsch: 'genervt / schlecht gelaunt',
+      bedeutung: '„Angefressen" sein bedeutet im Ruhrpott, genervt, verärgert oder schlecht gelaunt zu sein. „Der is heut richtig angefressen" sagt man über jemanden, der mit Miesepetergesicht herumläuft. Der bildhafte Ausdruck zeigt, dass den Betreffenden etwas „anfrisst", ihm also auf die Stimmung schlägt. Im Revier wird Laune direkt benannt.',
+      beispiel: 'Lass ihn in Ruhe, der is heut total angefressen.',
+      beispiel_hd: 'Lass ihn in Ruhe, der ist heute total genervt.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-325',
+      ausdruck: 'dun',
+      hochdeutsch: 'betrunken',
+      bedeutung: '„Dun" ist im Ruhrpott und Niederrheinischen ein Wort für betrunken. „Der is schon ganz schön dun!" sagt man über jemanden, der zu tief ins Glas geschaut hat. Das kurze, knappe Wort stammt aus dem Niederdeutschen und gehört zum Trinkkultur-Wortschatz der Eckkneipen und Feiern im Revier.',
+      beispiel: 'Nach drei Bier war er schon richtig dun.',
+      beispiel_hd: 'Nach drei Bier war er schon richtig betrunken.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-326',
+      ausdruck: 'Mappen',
+      hochdeutsch: 'Hände / Pfoten (derb)',
+      bedeutung: '„Mappen" sind im Ruhrpott derb-scherzhaft die Hände oder Pfoten. „Nimm deine Mappen da weg!" sagt man, wenn jemand etwas anfasst, das ihn nichts angeht. Das Wort ist umgangssprachlich und gehört zum bildhaften Körper-Wortschatz des Reviers, der oft mit einem augenzwinkernden Unterton daherkommt.',
+      beispiel: 'Nimm deine Mappen vom Kuchen, der is für die Gäste!',
+      beispiel_hd: 'Nimm deine Hände vom Kuchen, der ist für die Gäste!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-327',
+      ausdruck: 'Wampe',
+      hochdeutsch: 'dicker Bauch',
+      bedeutung: 'Die „Wampe" ist im Ruhrpott der dicke Bauch oder Bierbauch. „Der hat sich aber ne Wampe angefuttert!" sagt man scherzhaft über einen Schmerbauch. Das Wort ist derb, aber meist humorvoll und ohne echte Bosheit gemeint — im Revier, wo deftig gegessen und gern Bier getrunken wird, ist die Wampe ein vertrautes Phänomen.',
+      beispiel: 'Vom vielen Bier hat er sich ne ordentliche Wampe zugelegt.',
+      beispiel_hd: 'Vom vielen Bier hat er sich einen ordentlichen Bierbauch zugelegt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-328',
+      ausdruck: 'Kanten',
+      hochdeutsch: 'Brotkanten / Endstück vom Brot',
+      bedeutung: 'Der „Kanten" ist im Ruhrpott das Endstück vom Brotlaib, die Kruste am Anfang und Ende. „Den Kanten ess ich am liebsten!" sagt mancher, der die knusprige Rinde mag. In den sparsamen Arbeiterhaushalten des Reviers wurde kein Stück Brot weggeworfen — auch der Kanten fand seinen Liebhaber.',
+      beispiel: 'Gib mir den Kanten, der is schön knusprig.',
+      beispiel_hd: 'Gib mir das Brotendstück, das ist schön knusprig.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-329',
+      ausdruck: 'Pömpken',
+      hochdeutsch: 'kleiner Schnaps / Stamperl',
+      bedeutung: 'Ein „Pömpken" ist im Ruhrpott ein kleiner Schnaps, ein Kurzer im kleinen Glas. „Komm, wir trinken noch\'n Pömpken!". Die Verkleinerungsform macht aus dem Schnaps etwas Geselliges und Harmloses. In der Eckkneipe und bei Feiern gehört das Pömpken zum Bier dazu und besiegelt manche Freundschaft.',
+      beispiel: 'Auf die Freundschaft trinken wir noch\'n Pömpken!',
+      beispiel_hd: 'Auf die Freundschaft trinken wir noch einen kleinen Schnaps!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-330',
+      ausdruck: 'fix und alle',
+      hochdeutsch: 'völlig erschöpft',
+      bedeutung: '„Fix und alle" bedeutet im Ruhrpott, völlig erschöpft und am Ende der Kräfte zu sein. „Nach der Doppelschicht bin ich fix und alle!". Die Redensart verbindet „fix" (schnell/fertig) mit „alle" (zu Ende) und beschreibt die totale Erschöpfung nach harter Maloche — ein Zustand, den jeder Bergmann und Arbeiter im Revier gut kannte.',
+      beispiel: 'Nach dem langen Arbeitstag bin ich fix und alle.',
+      beispiel_hd: 'Nach dem langen Arbeitstag bin ich völlig erschöpft.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-331',
+      ausdruck: 'Mottenkiste',
+      hochdeutsch: 'veraltetes Zeug / alte Geschichten',
+      bedeutung: 'Die „Mottenkiste" steht im Ruhrpott für alte, längst überholte Dinge oder Geschichten. „Dat hol nich aussa Mottenkiste!" sagt man, wenn jemand alte Kamellen aufwärmt. Bildlich ist es die Kiste, in der von Motten zerfressene alte Kleidung liegt — also etwas Verstaubtes, das besser dort bleibt, wo es ist.',
+      beispiel: 'Die alten Geschichten aussa Mottenkiste will keiner mehr hören.',
+      beispiel_hd: 'Die alten Geschichten aus der Mottenkiste will keiner mehr hören.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-332',
+      ausdruck: 'Lütt',
+      hochdeutsch: 'klein / der Kleine',
+      bedeutung: '„Lütt" bedeutet im Ruhrpott und Norddeutschen „klein" und wird auch liebevoll als Anrede fürs jüngste Kind benutzt: „der Lütte" oder „die Lütte". „Komm her, mein Lütter!". Das plattdeutsche Wort drückt Zärtlichkeit und Verbundenheit aus und ist im familiären Alltag des Reviers fest verankert.',
+      beispiel: 'Unser Lütter geht nächstes Jahr schon inne Schule.',
+      beispiel_hd: 'Unser Kleiner geht nächstes Jahr schon in die Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-333',
+      ausdruck: 'Görre',
+      hochdeutsch: 'Kind / Gör',
+      bedeutung: 'Eine „Görre" (auch „Gör") ist im Ruhrpott ein Kind, meist ein quirliges, lebhaftes. „Die Görren spielen draußen aufm Hof". Das Wort ist umgangssprachlich und ohne echte Abwertung — es beschreibt die fröhliche, manchmal freche Kinderschar, die in den Zechensiedlungen auf den Höfen und Straßen herumtollte.',
+      beispiel: 'Die Görren toben den ganzen Tag draußen aufm Hof rum.',
+      beispiel_hd: 'Die Kinder toben den ganzen Tag draußen auf dem Hof herum.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-334',
+      ausdruck: 'Blag',
+      hochdeutsch: 'Kind / Range',
+      bedeutung: 'Ein „Blag" (Mehrzahl: Blagen) ist im Ruhrpott und Westfälischen ein Kind — oft im Sinne von kleiner Range oder Bengel. „Die Blagen machen wieder Krach!". Das Wort ist derb-liebevoll und gehört zum typischen Pott-Wortschatz für den Nachwuchs, der lärmend und lebhaft durch die Siedlung tobt.',
+      beispiel: 'Die Blagen vonne Nachbarn spielen den ganzen Tag Fußball.',
+      beispiel_hd: 'Die Kinder von den Nachbarn spielen den ganzen Tag Fußball.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'ru-335',
+      ausdruck: 'Tünnes',
+      hochdeutsch: 'einfältiger, gutmütiger Kerl',
+      bedeutung: '„Tünnes" ist im Ruhrpott und Rheinland eine Figur des Volkshumors (aus dem Hänneschen-Theater) und steht für einen gutmütigen, etwas einfältigen, aber pfiffigen Mann. Im Alltag nennt man so jemanden, der trottelig-liebenswert ist. „Du alter Tünnes!" ist mehr freundschaftlicher Spott als echte Beleidigung.',
+      beispiel: 'Der Tünnes hat wieder seinen Schirm im Bus liegen lassen.',
+      beispiel_hd: 'Der gutmütige Kerl hat wieder seinen Schirm im Bus liegen lassen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-336',
+      ausdruck: 'Penne',
+      hochdeutsch: 'Schule',
+      bedeutung: 'Die „Penne" ist im Ruhrpott die Schule — ein umgangssprachliches, oft von Schülern leicht abschätzig gebrauchtes Wort. „Ich muss morgen wieder inne Penne". Der Ausdruck stammt aus dem Rotwelschen und ist in ganz Deutschland verbreitet, aber im Revier besonders im Alltag von Kindern und Jugendlichen lebendig.',
+      beispiel: 'Morgen früh muss ich wieder inne Penne, die Ferien sind rum.',
+      beispiel_hd: 'Morgen früh muss ich wieder in die Schule, die Ferien sind vorbei.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-337',
+      ausdruck: 'Maloche-Pott',
+      hochdeutsch: 'Arbeitsstelle / Betrieb',
+      bedeutung: 'Der „Maloche-Pott" ist im Ruhrpott scherzhaft die Arbeitsstelle oder der Betrieb, in dem man schuftet. „Morgen wieder ab in\'n Maloche-Pott!". Der Ausdruck verbindet „Maloche" (schwere Arbeit) mit „Pott" und bringt die ambivalente Beziehung zur Arbeit auf den Punkt: Pflicht und Broterwerb, aber auch ein Stück Identität.',
+      beispiel: 'Wochenende vorbei, morgen geht\'s wieder in\'n Maloche-Pott.',
+      beispiel_hd: 'Wochenende vorbei, morgen geht es wieder zur Arbeit.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-338',
+      ausdruck: 'Kötten',
+      hochdeutsch: 'betteln / schnorren',
+      bedeutung: '„Kötten" heißt im Ruhrpott betteln oder schnorren. „Hör auf zu kötten!" sagt man zu jemandem, der ständig um etwas bittet. Das Wort hat einen leicht abwertenden Beiklang und gehört zum derben Alltagswortschatz. Im solidarischen Revier teilt man zwar gern, aber dauerndes Schnorren wird nicht gern gesehen.',
+      beispiel: 'Der kommt immer kötten, wenn ihm sein Geld ausgeht.',
+      beispiel_hd: 'Der kommt immer schnorren, wenn ihm sein Geld ausgeht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-339',
+      ausdruck: 'schummeln',
+      hochdeutsch: 'mogeln / betrügen',
+      bedeutung: '„Schummeln" bedeutet im Ruhrpott mogeln oder kleine Betrügereien begehen — beim Kartenspiel, in der Schule oder im Alltag. „Du hast geschummelt!" ruft man beim Doppelkopf. Das Wort ist umgangssprachlich und beschreibt eher den harmlosen Schwindel als echten Betrug — beim geselligen Kartenspiel im Revier ein häufiger Vorwurf.',
+      beispiel: 'Beim Doppelkopf hat er wieder ganz schön geschummelt.',
+      beispiel_hd: 'Beim Doppelkopf hat er wieder ganz schön gemogelt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-340',
+      ausdruck: 'fummeln',
+      hochdeutsch: 'mit den Fingern hantieren',
+      bedeutung: '„Fummeln" heißt im Ruhrpott, mit den Fingern an etwas Kleinem herumhantieren — meist ungeschickt oder umständlich. „Fummel nich so lange am Schloss rum!". Das Wort beschreibt die feinmotorische Plackerei mit kleinen Dingen und gehört zum praktischen Werkstatt- und Alltagswortschatz des Reviers.',
+      beispiel: 'Ich fummel schon ne Ewigkeit am Reißverschluss rum.',
+      beispiel_hd: 'Ich hantiere schon eine Ewigkeit am Reißverschluss herum.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-341',
+      ausdruck: 'Wetter',
+      hochdeutsch: 'Grubenluft / Belüftung im Bergwerk',
+      bedeutung: 'Die „Wetter" sind in der Bergmannssprache die Grubenluft und ihre Belüftung unter Tage. „Schlagende Wetter" — explosives Grubengas — waren die gefürchtetste Gefahr im Bergbau. Der Steiger prüfte die Wetter vor der Einfahrt. Ein zentraler Begriff der Bergbaukultur, der nichts mit dem Wetter über Tage zu tun hat.',
+      beispiel: 'Bevor wir einfuhren, hat der Steiger immer die Wetter geprüft.',
+      beispiel_hd: 'Bevor wir einfuhren, hat der Steiger immer die Grubenluft geprüft.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-342',
+      ausdruck: 'Schlägel und Eisen',
+      hochdeutsch: 'Bergbau-Wahrzeichen / gekreuztes Werkzeug',
+      bedeutung: '„Schlägel und Eisen" sind das gekreuzte Werkzeug-Symbol des Bergbaus — der Schlägel (Hammer) und das Eisen (Meißel), mit denen früher die Kohle aus dem Gestein gebrochen wurde. Das Zeichen schmückt Zechenwappen, Vereinslogos und ist das weltweit bekannte Symbol des Bergbaus. Im Revier ist es ein Stolz-Emblem der Bergbautradition.',
+      beispiel: 'Auffem Vereinswappen prangt noch Schlägel und Eisen.',
+      beispiel_hd: 'Auf dem Vereinswappen prangt noch Schlägel und Eisen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-343',
+      ausdruck: 'Grubenpferd',
+      hochdeutsch: 'Pferd zum Lastenziehen unter Tage',
+      bedeutung: 'Das „Grubenpferd" zog früher unter Tage die mit Kohle beladenen Loren durch die Strecken. Diese Pferde verbrachten oft ihr ganzes Leben in der Dunkelheit der Grube und wurden von den Bergleuten geliebt und umsorgt. Sie sind ein bewegendes Kapitel der Bergbaugeschichte und stehen für die harte Vergangenheit des Reviers.',
+      beispiel: 'Dat Grubenpferd hat jahrelang die Loren unter Tage gezogen.',
+      beispiel_hd: 'Das Grubenpferd hat jahrelang die Loren unter Tage gezogen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-344',
+      ausdruck: 'Lore',
+      hochdeutsch: 'Förderwagen für Kohle',
+      bedeutung: 'Die „Lore" ist der kleine Förderwagen auf Schienen, mit dem im Bergwerk die Kohle und das Gestein transportiert wurden. Vollgeladen wurden die Loren zum Schacht gefahren und nach oben befördert. Das Klappern der Loren auf den Gleisen gehörte zum Alltagsgeräusch jeder Zeche. Ein anschaulicher Begriff der Bergbauwelt.',
+      beispiel: 'Die Loren voll Kohle wurden zum Förderturm geschoben.',
+      beispiel_hd: 'Die Förderwagen voll Kohle wurden zum Förderturm geschoben.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-345',
+      ausdruck: 'Taubenvatter',
+      hochdeutsch: 'Brieftaubenzüchter',
+      bedeutung: 'Der „Taubenvatter" ist im Ruhrpott der Brieftaubenzüchter — eine traditionsreiche Figur der Bergarbeiterkultur. Die Brieftaubenzucht galt als „Rennpferd des kleinen Mannes" und war das große Hobby vieler Bergleute. Am Wochenende stiegen die Tauben auf, und im Vereinsheim wurde gefiebert. Ein Stück lebendiges Pott-Brauchtum.',
+      beispiel: 'Mein Opa war Taubenvatter und hat jeden Sonntag seine Tauben steigen lassen.',
+      beispiel_hd: 'Mein Opa war Brieftaubenzüchter und hat jeden Sonntag seine Tauben steigen lassen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-346',
+      ausdruck: 'Taubenschlag',
+      hochdeutsch: 'Behausung für Brieftauben',
+      bedeutung: 'Der „Taubenschlag" ist die Behausung der Brieftauben, oft auf dem Dach oder im Garten der Bergarbeiterhäuser. In der Brieftaubenkultur des Reviers war der Taubenschlag der ganze Stolz des Züchters. „Hier geht\'s zu wie im Taubenschlag" sagt man auch, wenn ständig jemand kommt und geht — ein ständiges Aus und Ein.',
+      beispiel: 'Hier geht\'s ja zu wie im Taubenschlag, ständig kommt einer rein.',
+      beispiel_hd: 'Hier geht es ja zu wie im Taubenschlag, ständig kommt einer herein.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-347',
+      ausdruck: 'Schrebergarten',
+      hochdeutsch: 'Kleingarten / Parzelle',
+      bedeutung: 'Der „Schrebergarten" ist im Ruhrpott die heißgeliebte Kleingarten-Parzelle, in der die Arbeiterfamilien Gemüse zogen, grillten und das Wochenende verbrachten. In den engen Zechensiedlungen war der Schrebergarten das grüne Refugium. Bis heute ist die Laube mit Gartenzwerg und Bratwurst ein Stück Pott-Lebensgefühl und Naherholung.',
+      beispiel: 'Am Wochenende sind wir im Schrebergarten und grillen.',
+      beispiel_hd: 'Am Wochenende sind wir im Kleingarten und grillen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-348',
+      ausdruck: 'Laube',
+      hochdeutsch: 'Gartenhäuschen',
+      bedeutung: 'Die „Laube" ist im Ruhrpott das kleine Gartenhäuschen im Schrebergarten, in dem man Werkzeug lagert, Kaffee trinkt und bei Regen Unterschlupf findet. „Wir sitzen inne Laube und trinken Kaffee". Die Gartenlaube ist das gemütliche Herzstück jeder Parzelle und ein Symbol für die Naherholung der Pott-Familien.',
+      beispiel: 'Bei Regen sitzen wir gemütlich inne Laube und spielen Karten.',
+      beispiel_hd: 'Bei Regen sitzen wir gemütlich im Gartenhäuschen und spielen Karten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-349',
+      ausdruck: 'Pötter',
+      hochdeutsch: 'Bewohner des Ruhrgebiets',
+      bedeutung: 'Ein „Pötter" ist ein Bewohner des Ruhrgebiets, ein Mensch aus dem „Pott". Der Begriff wird mit Stolz getragen und bezeichnet jemanden mit der typischen Revier-Mentalität: direkt, herzlich, bodenständig und fußballverrückt. „Echte Pötter halten zusammen" beschreibt das starke Gemeinschaftsgefühl der Region.',
+      beispiel: 'Als echter Pötter lässt man seine Kumpels nie im Stich.',
+      beispiel_hd: 'Als echter Ruhrgebietler lässt man seine Freunde nie im Stich.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-350',
+      ausdruck: 'Wattenscheider',
+      hochdeutsch: 'Einwohner von Wattenscheid',
+      bedeutung: 'Ein „Wattenscheider" ist Einwohner des Stadtteils Wattenscheid, der 1975 zu Bochum eingemeindet wurde — was viele Wattenscheider bis heute nicht ganz verwunden haben. Der bekannte Boxer-Spruch und die SG Wattenscheid 09 gehören zur Identität. Im Revier-Vergleich sorgt die Eingemeindung für freundlichen Lokalpatriotismus-Spott.',
+      beispiel: 'Echte Wattenscheider sagen bis heute, sie sind keine Bochumer.',
+      beispiel_hd: 'Echte Wattenscheider sagen bis heute, sie sind keine Bochumer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-351',
+      ausdruck: 'Oberhausener',
+      hochdeutsch: 'Einwohner von Oberhausen',
+      bedeutung: 'Ein „Oberhausener" ist Einwohner von Oberhausen, einer Stadt im westlichen Ruhrgebiet. Oberhausen gilt als Wiege der Ruhrindustrie und ist heute bekannt für das CentrO, eines der größten Einkaufszentren Europas, und den Gasometer. Die Oberhausener teilen die typische Revier-Mentalität und sind stolz auf ihre Industriegeschichte.',
+      beispiel: 'Die Oberhausener sind stolz auf ihren Gasometer.',
+      beispiel_hd: 'Die Oberhausener sind stolz auf ihren Gasometer.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-352',
+      ausdruck: 'Gasometer',
+      hochdeutsch: 'großer Gasspeicher in Oberhausen',
+      bedeutung: 'Der „Gasometer" in Oberhausen ist ein ehemaliger Gasspeicher und mit 117 Metern eines der höchsten Industriedenkmäler Europas. Heute dient der riesige Rundbau als spektakulärer Ausstellungsort. Der Gasometer ist ein Wahrzeichen des Strukturwandels und zeigt, wie aus Industrieanlagen Kulturorte wurden — ein Stolz des nördlichen Reviers.',
+      beispiel: 'Im Gasometer läuft grad ne richtig große Ausstellung.',
+      beispiel_hd: 'Im Gasometer läuft gerade eine richtig große Ausstellung.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-353',
+      ausdruck: 'Bergkamen',
+      hochdeutsch: 'Stadt im östlichen Ruhrgebiet',
+      bedeutung: 'Bergkamen ist eine Stadt im östlichen Ruhrgebiet im Kreis Unna, geprägt vom Steinkohlenbergbau. Die Zeche Monopol war jahrzehntelang der größte Arbeitgeber. Bergkamen steht beispielhaft für die vielen kleineren Bergbaustädte des Reviers, deren Identität und Geschichte untrennbar mit dem „schwarzen Gold" verbunden sind.',
+      beispiel: 'In Bergkamen hat die Zeche das ganze Stadtleben geprägt.',
+      beispiel_hd: 'In Bergkamen hat die Zeche das ganze Stadtleben geprägt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-354',
+      ausdruck: 'Hörde',
+      hochdeutsch: 'Stadtteil im Süden Dortmunds',
+      bedeutung: 'Hörde ist ein Stadtteil im Süden Dortmunds, der lange vom Stahlwerk Phoenix geprägt war. Nach dessen Schließung entstand auf dem Gelände der Phoenix-See, ein künstliches Naherholungsgebiet. Hörde ist ein Paradebeispiel für den Wandel vom rauchenden Stahlstandort zum modernen Wohn- und Freizeitviertel im Revier.',
+      beispiel: 'In Hörde stand früher dat Stahlwerk, heute is da der See.',
+      beispiel_hd: 'In Hörde stand früher das Stahlwerk, heute ist dort der See.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-355',
+      ausdruck: 'Kemnade',
+      hochdeutsch: 'Stausee bei Bochum/Witten',
+      bedeutung: 'Der „Kemnader See" (Kemnade) ist ein Stausee der Ruhr zwischen Bochum und Witten und ein beliebtes Naherholungsgebiet im Revier. Hier wird gesegelt, geradelt und spaziert. Die Kemnade zeigt, dass das Ruhrgebiet längst grün und wasserreich ist — ein Ausflugsziel für Familien, das im Sommer aus allen Nähten platzt.',
+      beispiel: 'Sonntags radeln wir an die Kemnade und essen ein Eis.',
+      beispiel_hd: 'Sonntags radeln wir an den Kemnader See und essen ein Eis.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-356',
+      ausdruck: 'Baldeneysee',
+      hochdeutsch: 'Stausee in Essen',
+      bedeutung: 'Der „Baldeneysee" ist der größte der sechs Ruhrstauseen und das beliebteste Naherholungsgebiet Essens. Hier wird gesegelt, gerudert und an den Ufern flaniert. Der See entstand in den 1930er Jahren und ist heute ein grünes Wahrzeichen, das beweist, wie lebenswert und naturnah das Ruhrgebiet abseits der Industrie ist.',
+      beispiel: 'Am Baldeneysee kannze schön segeln gehen im Sommer.',
+      beispiel_hd: 'Am Baldeneysee kannst du im Sommer schön segeln gehen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-357',
+      ausdruck: 'Emscherbruch',
+      hochdeutsch: 'Naturgebiet im mittleren Ruhrgebiet',
+      bedeutung: 'Der „Emscherbruch" ist ein großes Wald- und Naturgebiet im mittleren Ruhrgebiet zwischen Gelsenkirchen, Herne und Recklinghausen. Mit der Halde Hoheward und dem Tierpark ist er ein wichtiges Naherholungsgebiet. Der Emscherbruch zeigt das grüne Gesicht des Reviers — ausgedehnte Wälder mitten in der einstigen Industrielandschaft.',
+      beispiel: 'Im Emscherbruch kannze stundenlang durch den Wald wandern.',
+      beispiel_hd: 'Im Emscherbruch kannst du stundenlang durch den Wald wandern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-358',
+      ausdruck: 'Kohlenpott',
+      hochdeutsch: 'das Ruhrgebiet (vom Kohlebergbau)',
+      bedeutung: 'Der „Kohlenpott" ist eine der ältesten und liebevollsten Bezeichnungen für das Ruhrgebiet — abgeleitet von der Steinkohle, die hier das Leben bestimmte. Während „Pott" allgemein die Region meint, betont „Kohlenpott" die Bergbau-Wurzeln. Heute ist der Begriff nostalgisch und stolz zugleich, denn die Kohle ist Geschichte, der Stolz geblieben.',
+      beispiel: 'Im Kohlenpott groß geworden, da weiß man, wat Maloche heißt.',
+      beispiel_hd: 'Im Kohlenpott aufgewachsen, da weiß man, was Schwerarbeit heißt.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-359',
+      ausdruck: 'Revier',
+      hochdeutsch: 'das Ruhrgebiet (Bergbaurevier)',
+      bedeutung: 'Das „Revier" ist eine gängige Selbstbezeichnung für das Ruhrgebiet, kurz für „Ruhrbergbaurevier". „Im Revier" bedeutet „im Ruhrgebiet". Der Begriff betont die gemeinsame industrielle Geschichte und den Zusammenhalt der Region. Auch das berühmte „Revierderby" zwischen BVB und Schalke trägt diesen Namen — Fußball verbindet das ganze Revier.',
+      beispiel: 'Im Revier gibt et mehr Fußballvereine als sonstwo in Deutschland.',
+      beispiel_hd: 'Im Ruhrgebiet gibt es mehr Fußballvereine als sonst irgendwo in Deutschland.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-360',
+      ausdruck: 'Kirmes',
+      hochdeutsch: 'Jahrmarkt / Volksfest',
+      bedeutung: 'Die „Kirmes" ist im Ruhrpott der Jahrmarkt mit Karussells, Buden und Fahrgeschäften — ein Höhepunkt im Jahr. Die Cranger Kirmes in Herne ist eines der größten Volksfeste Deutschlands. Auf der Kirmes trifft sich das Revier, isst Reibekuchen, fährt Riesenrad und feiert ausgelassen. Ein Stück geselliges Pott-Brauchtum.',
+      beispiel: 'Auffe Kirmes fahren wir Riesenrad und essen gebrannte Mandeln.',
+      beispiel_hd: 'Auf der Kirmes fahren wir Riesenrad und essen gebrannte Mandeln.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-361',
+      ausdruck: 'Cranger Kirmes',
+      hochdeutsch: 'großes Volksfest in Herne',
+      bedeutung: 'Die „Cranger Kirmes" in Herne-Crange ist mit über vier Millionen Besuchern eines der größten Volksfeste Deutschlands und das größte im Ruhrgebiet. Jeden August verwandelt sie sich in ein Meer aus Fahrgeschäften, Buden und Lichtern. Für viele Pottler ist der Besuch der Cranger Kirmes fester Bestandteil des Sommers und ein Stück Heimat.',
+      beispiel: 'Im August fahren wir alle zur Cranger Kirmes nach Herne.',
+      beispiel_hd: 'Im August fahren wir alle zur Cranger Kirmes nach Herne.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-362',
+      ausdruck: 'Schützenfest',
+      hochdeutsch: 'traditionelles Vereinsfest',
+      bedeutung: 'Das „Schützenfest" ist im Ruhrpott und Westfalen ein traditionelles Vereinsfest mit Umzug, Königsschießen, Festzelt und viel Bier. Der Schützenverein ist in vielen Stadtteilen eine Institution. Beim Schützenfest kommt das ganze Viertel zusammen, es wird marschiert, gefeiert und der neue Schützenkönig ausgeschossen — geselliges Brauchtum pur.',
+      beispiel: 'Beim Schützenfest wird im Festzelt bis spät gefeiert.',
+      beispiel_hd: 'Beim Schützenfest wird im Festzelt bis spät gefeiert.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-363',
+      ausdruck: 'Schunkeln',
+      hochdeutsch: 'sich eingehakt im Takt wiegen',
+      bedeutung: '„Schunkeln" heißt im Ruhrpott, sich bei Festen eingehakt mit den Nachbarn im Takt der Musik hin und her zu wiegen. Beim Schützenfest, im Festzelt oder bei Stimmungsmusik wird ausgiebig geschunkelt. Es ist Ausdruck von Geselligkeit und Gemeinschaft — fremde Menschen werden für einen Moment zu einer fröhlich schwingenden Reihe.',
+      beispiel: 'Im Festzelt haben alle eingehakt geschunkelt zur Musik.',
+      beispiel_hd: 'Im Festzelt haben alle eingehakt im Takt geschwungen zur Musik.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'ru-364',
+      ausdruck: 'Mauken',
+      hochdeutsch: 'Füße (derb)',
+      bedeutung: '„Mauken" sind im Ruhrpott derb-scherzhaft die Füße, besonders wenn sie müde sind oder unangenehm riechen. „Nimm deine Mauken vom Tisch!". Das Wort gehört zum bildhaften Körper-Wortschatz des Reviers und wird mit augenzwinkerndem Spott benutzt — etwa wenn nach einem langen Tag die Schuhe ausgezogen werden.',
+      beispiel: 'Nach dem langen Marsch tun mir die Mauken weh.',
+      beispiel_hd: 'Nach dem langen Marsch tun mir die Füße weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-365',
+      ausdruck: 'Köpper',
+      hochdeutsch: 'Kopfsprung ins Wasser',
+      bedeutung: 'Ein „Köpper" ist im Ruhrpott und Rheinland ein Kopfsprung ins Wasser — kopfüber hinein. „Mach mal\'n Köpper vom Beckenrand!" rief man sich im Freibad zu. Im heißen Sommer war der Köpper ins kühle Nass das Größte. Das Wort gehört zur Schwimmbad- und Freizeitkultur, die im Revier an heißen Tagen großgeschrieben wird.',
+      beispiel: 'Vom Dreier hat er nen perfekten Köpper hingelegt.',
+      beispiel_hd: 'Vom Dreimeterbrett hat er einen perfekten Kopfsprung hingelegt.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-366',
+      ausdruck: 'Bütterken schmieren',
+      hochdeutsch: 'Butterbrote streichen',
+      bedeutung: '„Bütterken schmieren" heißt im Ruhrpott Butterbrote streichen — für die Schule, die Schicht oder den Ausflug. Die Mutter schmierte morgens die „Bütterken" für die ganze Familie. Das Wort verbindet die Verkleinerung von „Butter" mit der typischen Endung -ken und gehört zum liebevollen Familien- und Essenswortschatz des Reviers.',
+      beispiel: 'Bevor die Kinder inne Schule gehen, muss ich Bütterken schmieren.',
+      beispiel_hd: 'Bevor die Kinder in die Schule gehen, muss ich Butterbrote streichen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-367',
+      ausdruck: 'Henkelmann',
+      hochdeutsch: 'Essgeschirr für die Arbeit',
+      bedeutung: 'Der „Henkelmann" war das tragbare, mehrteilige Blechgeschirr mit Henkel, in dem der Bergmann und Arbeiter sein warmes Mittagessen zur Schicht mitnahm. Die Ehefrau füllte morgens den Henkelmann mit Eintopf oder Bratkartoffeln. Ein nostalgisches Symbol der Arbeiterkultur und ein vertrauter Begriff in jeder Pott-Familie.',
+      beispiel: 'Den Henkelmann mit Eintopf hat Mutter jeden Tag gepackt.',
+      beispiel_hd: 'Das Essgeschirr mit Eintopf hat Mutter jeden Tag gepackt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-368',
+      ausdruck: 'Kaffeepott',
+      hochdeutsch: 'große Kaffeetasse / Becher',
+      bedeutung: 'Der „Kaffeepott" ist im Ruhrpott die große, henkelbewehrte Kaffeetasse — kein feines Tässchen, sondern ein ordentlicher Becher für den ehrlichen Filterkaffee. „Gönn dir nen Kaffeepott!". Im Revier trinkt man den Kaffee bodenständig und reichlich, und der Kaffeepott gehört auf jeden Küchentisch und in jede Frühstückspause.',
+      beispiel: 'Morgens brauch ich erstmal nen großen Kaffeepott, sonst geht nix.',
+      beispiel_hd: 'Morgens brauche ich erst einen großen Becher Kaffee, sonst geht nichts.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-369',
+      ausdruck: 'Mahlzeit!',
+      hochdeutsch: 'Gruß zur Mittagszeit / guten Appetit',
+      bedeutung: '„Mahlzeit!" ist im Ruhrpott der typische Gruß rund um die Mittagszeit — sowohl als „Guten Appetit" als auch einfach als Begrüßung am Mittag im Betrieb. „Mahlzeit!" ruft man sich auf dem Gang oder in der Kantine zu. Im Arbeiteralltag des Reviers ist es ein fester, knapper Gruß, der Kollegialität ausdrückt.',
+      beispiel: 'Inne Kantine ruft jeder „Mahlzeit!", wenn er reinkommt.',
+      beispiel_hd: 'In der Kantine ruft jeder „Mahlzeit!", wenn er hereinkommt.',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ru-370',
+      ausdruck: 'Wie isset?',
+      hochdeutsch: 'Wie geht es dir?',
+      bedeutung: '„Wie isset?" ist im Ruhrpott die knappe, herzliche Art zu fragen, wie es jemandem geht — die Kurzform von „Wie ist es?". Man begrüßt sich damit oder erkundigt sich nach dem Befinden. Die typische Antwort ist ebenso knapp: „Muss ja" oder „Kann nich klagen". Echter Pott-Smalltalk: kurz, direkt, ohne Umschweife.',
+      beispiel: 'Tach Kalle, wie isset bei dir so?',
+      beispiel_hd: 'Hallo Kalle, wie geht es dir so?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ru-371',
+      ausdruck: 'Muss ja',
+      hochdeutsch: 'es geht so / man muss weitermachen',
+      bedeutung: '„Muss ja" ist die klassische Ruhrpott-Antwort auf die Frage „Wie geht\'s?". Sie drückt eine bodenständige, leicht fatalistische Gelassenheit aus: Es läuft nicht perfekt, aber das Leben geht weiter, und man macht eben weiter. Kein Jammern, kein Schönreden — der Pottler nimmt die Dinge, wie sie kommen.',
+      beispiel: 'Wie geht\'s? — Muss ja, dat Leben geht weiter.',
+      beispiel_hd: 'Wie geht es? — Es geht so, das Leben geht weiter.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-372',
+      ausdruck: 'Kann nich klagen',
+      hochdeutsch: 'es geht mir gut',
+      bedeutung: '„Kann nich klagen" ist im Ruhrpott die bescheidene Art zu sagen, dass es einem eigentlich ganz gut geht. Statt zu prahlen, untertreibt der Pottler lieber. Die doppelte Verneinung drückt zufriedene Genügsamkeit aus: Es läuft, es gibt nichts zu meckern. Typisch für die bodenständige, undramatische Lebenshaltung des Reviers.',
+      beispiel: 'Und, wie läuft\'s? — Kann nich klagen, alles im grünen Bereich.',
+      beispiel_hd: 'Und, wie läuft es? — Ich kann nicht klagen, alles im grünen Bereich.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-373',
+      ausdruck: 'Dat haut hin',
+      hochdeutsch: 'das passt / das klappt',
+      bedeutung: '„Dat haut hin" bedeutet im Ruhrpott, dass etwas passt, klappt oder in Ordnung geht. „Treffen wir uns um acht? — Dat haut hin!". Der Ausdruck ist eine bestätigende Zusage und drückt unkomplizierte Zustimmung aus. Im pragmatischen Revier wird so signalisiert: Geht klar, alles geregelt, kein Problem.',
+      beispiel: 'Wir treffen uns morgen um sieben? — Jau, dat haut hin.',
+      beispiel_hd: 'Wir treffen uns morgen um sieben? — Ja, das passt.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-374',
+      ausdruck: 'Dat geht klar',
+      hochdeutsch: 'in Ordnung / einverstanden',
+      bedeutung: '„Dat geht klar" ist im Ruhrpott eine knappe Zusage: in Ordnung, abgemacht, kein Problem. „Kannze mir helfen? — Dat geht klar!". Der Ausdruck signalisiert verlässliche Zustimmung und gehört zum direkten, unkomplizierten Kommunikationsstil des Reviers, wo man sich auf ein Wort verlässt und nicht lange drumherum redet.',
+      beispiel: 'Hilfst du mir beim Umzug? — Dat geht klar, kein Ding.',
+      beispiel_hd: 'Hilfst du mir beim Umzug? — Das geht klar, kein Problem.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-375',
+      ausdruck: 'kein Ding',
+      hochdeutsch: 'kein Problem / gern geschehen',
+      bedeutung: '„Kein Ding" ist im Ruhrpott die lässige Art zu sagen, dass etwas kein Problem ist oder man sich gern revanchiert. „Danke fürs Helfen! — Kein Ding!". Der Ausdruck ist unkompliziert und herzlich und drückt die selbstverständliche Hilfsbereitschaft des Reviers aus, wo man füreinander da ist, ohne viel Aufhebens darum zu machen.',
+      beispiel: 'Danke, dass de mich mitgenommen hast! — Kein Ding, gerne.',
+      beispiel_hd: 'Danke, dass du mich mitgenommen hast! — Kein Problem, gerne.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-376',
+      ausdruck: 'Ich glaub, mich tritt ein Pferd',
+      hochdeutsch: 'Ausdruck größter Verblüffung',
+      bedeutung: '„Ich glaub, mich tritt ein Pferd" ist im Ruhrpott ein deftiger Ausruf der Verblüffung oder Empörung — wenn etwas völlig Unerwartetes passiert. „Der hat gewonnen? Ich glaub, mich tritt ein Pferd!". Die übertriebene Redensart bringt das ungläubige Staunen humorvoll auf den Punkt und ist im Revier ein beliebter Ausdruck der Überraschung.',
+      beispiel: 'Schalke schlägt Bayern? Ich glaub, mich tritt ein Pferd!',
+      beispiel_hd: 'Schalke schlägt Bayern? Ich glaube, mich tritt ein Pferd!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-377',
+      ausdruck: 'Da bekomms\'e Zustände',
+      hochdeutsch: 'das macht einen wahnsinnig',
+      bedeutung: '„Da bekomms\'e Zustände" sagt man im Ruhrpott, wenn einen etwas zur Verzweiflung treibt oder gewaltig aufregt. „Bei dem Stau bekomms\'e ja Zustände!". Die Redensart drückt Genervtheit und Fassungslosigkeit aus und gehört zum emotionalen Wortschatz des Reviers, wo man seinem Ärger gern bildhaft und direkt Luft macht.',
+      beispiel: 'Wenn die Bahn schon wieder ausfällt, da bekomms\'e Zustände.',
+      beispiel_hd: 'Wenn die Bahn schon wieder ausfällt, da bekommt man Zustände.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'ru-378',
+      ausdruck: 'sich bedeppert anstellen',
+      hochdeutsch: 'sich ungeschickt anstellen',
+      bedeutung: '„Sich bedeppert anstellen" heißt im Ruhrpott, sich ungeschickt, begriffsstutzig oder umständlich verhalten. „Stell dich nich so bedeppert an!". „Bedeppert" bedeutet so viel wie verdattert oder begriffsstutzig. Im tatkräftigen Revier, wo man anpackt, wird Ungeschicklichkeit mit gutmütigem Spott und dieser Redensart quittiert.',
+      beispiel: 'Stell dich nich so bedeppert an, dat is doch ganz einfach!',
+      beispiel_hd: 'Stell dich nicht so ungeschickt an, das ist doch ganz einfach!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-379',
+      ausdruck: 'Dat zieht wie Hechtsuppe',
+      hochdeutsch: 'es zieht stark / kalter Luftzug',
+      bedeutung: '„Dat zieht wie Hechtsuppe" ist im Ruhrpott die Redensart für einen unangenehmen, kalten Luftzug. „Mach die Tür zu, dat zieht wie Hechtsuppe!". Der bildhafte Vergleich macht den Durchzug anschaulich. Im Revier, wo in den Altbauten und Zechenhäusern oft der Wind durch die Ritzen pfiff, war das ein häufiges Übel.',
+      beispiel: 'Mach das Fenster zu, hier zieht\'s wie Hechtsuppe!',
+      beispiel_hd: 'Mach das Fenster zu, hier zieht es wie Hechtsuppe!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-380',
+      ausdruck: 'Tachhaben',
+      hochdeutsch: 'guten Tag (wünschen)',
+      bedeutung: '„Tachhaben" ist im Ruhrpott eine umgangssprachliche Begrüßungsformel, abgeleitet von „einen schönen Tag haben". Man wirft sich beim Vorbeigehen ein knappes „Tachhaben!" zu. Es verbindet den typischen Ruhrpott-Gruß „Tach" mit dem Wunsch und zeigt die herzlich-knappe Art, mit der man sich im Revier grüßt — ohne große Worte.',
+      beispiel: 'Beim Rausgehen ruft er nur kurz „Tachhaben!" und is weg.',
+      beispiel_hd: 'Beim Hinausgehen ruft er nur kurz „Schönen Tag!" und ist weg.',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'ru-381',
+      ausdruck: 'Klüngel',
+      hochdeutsch: 'Vetternwirtschaft / Gemauschel',
+      bedeutung: 'Der „Klüngel" ist im Ruhrpott und Rheinland das informelle Geben und Nehmen, das Gemauschel und die Vetternwirtschaft, bei der man sich gegenseitig Vorteile zuschanzt. „Dat lief alles über Klüngel". Das Wort hat einen ironisch-resignierten Beiklang und beschreibt die Beziehungsgeflechte, die im Revier wie anderswo manches Geschäft regelten.',
+      beispiel: 'Den Job hat er nur über Klüngel gekriegt, nich durch Leistung.',
+      beispiel_hd: 'Den Job hat er nur durch Vetternwirtschaft bekommen, nicht durch Leistung.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-382',
+      ausdruck: 'Plünnen',
+      hochdeutsch: 'Klamotten / alte Sachen',
+      bedeutung: '„Plünnen" sind im Ruhrpott und Norddeutschen Kleidungsstücke oder alte Sachen — oft im Sinne von Krempel oder abgetragenem Zeug. „Räum deine Plünnen weg!". Das plattdeutsche Wort ist umgangssprachlich und gehört zum Alltagswortschatz, wenn es um herumliegende Kleidung oder Gerümpel geht, das endlich weggeräumt werden soll.',
+      beispiel: 'Räum mal deine Plünnen vom Stuhl, ich will mich setzen.',
+      beispiel_hd: 'Räum mal deine Klamotten vom Stuhl, ich will mich setzen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-383',
+      ausdruck: 'Kram',
+      hochdeutsch: 'Zeug / Krempel',
+      bedeutung: '„Kram" ist im Ruhrpott das Zeug, der Krempel, die unsortierten Dinge des Alltags. „Räum deinen Kram weg!" oder „Ich hab noch viel Kram zu erledigen". Das Wort ist vielseitig: Es bezeichnet sowohl Gegenstände als auch Angelegenheiten. Ein bodenständiges Alltagswort, das im Revier ständig in Gebrauch ist.',
+      beispiel: 'Der ganze Kram muss bis morgen aussem Keller raus.',
+      beispiel_hd: 'Der ganze Krempel muss bis morgen aus dem Keller heraus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-384',
+      ausdruck: 'Trumm',
+      hochdeutsch: 'großes, klobiges Ding',
+      bedeutung: 'Ein „Trumm" ist im Ruhrpott ein großes, klobiges, schweres Ding — „ein Trumm von einem Schrank" etwa. Das Wort betont die ungeschlachte Größe und Wucht eines Gegenstands. Im Revier, wo man mit schwerem Gerät hantierte, beschreibt „Trumm" anschaulich alles, was unhandlich groß und mächtig daherkommt.',
+      beispiel: 'Wie soll ich dat Trumm von Schrank denn alleine tragen?',
+      beispiel_hd: 'Wie soll ich das riesige Ding von Schrank denn alleine tragen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-385',
+      ausdruck: 'verkackeiern',
+      hochdeutsch: 'veralbern / auf den Arm nehmen',
+      bedeutung: '„Verkackeiern" heißt im Ruhrpott jemanden veralbern, auf den Arm nehmen oder hinters Licht führen. „Willze mich verkackeiern?". Das derb-umgangssprachliche Wort drückt aus, dass man sich nicht für dumm verkaufen lassen will. Im direkten Revier mag man es nicht, an der Nase herumgeführt zu werden — und sagt das deutlich.',
+      beispiel: 'Willze mich verkackeiern, oder meinse dat ernst?',
+      beispiel_hd: 'Willst du mich veralbern, oder meinst du das ernst?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-386',
+      ausdruck: 'Mätzchen',
+      hochdeutsch: 'Faxen / unnötige Umstände',
+      bedeutung: '„Mätzchen" sind im Ruhrpott Faxen, Sperenzchen oder unnötige Umstände. „Mach keine Mätzchen!" sagt man warnend, wenn jemand Unsinn anstellt oder sich ziert. Das Wort bündelt alles, was den geraden, unkomplizierten Ablauf stört. Im pragmatischen Revier sind Mätzchen schlicht überflüssig und werden direkt unterbunden.',
+      beispiel: 'Mach jetzt keine Mätzchen und komm einfach mit!',
+      beispiel_hd: 'Mach jetzt keine Faxen und komm einfach mit!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-387',
+      ausdruck: 'Tüddelkram',
+      hochdeutsch: 'überflüssiger Schnickschnack',
+      bedeutung: '„Tüddelkram" ist im Ruhrpott überflüssiger Schnickschnack, unnötiges Beiwerk oder umständliches Gedöns. „Lass den Tüddelkram weg, komm zur Sache!". Das Wort kommt von „tüddeln" (umständlich hantieren) und steht für alles Verschnörkelte und Unnötige. Der bodenständige Pottler hält wenig von Tüddelkram und schätzt das Wesentliche.',
+      beispiel: 'Lass den ganzen Tüddelkram weg und sag mir, wat los is.',
+      beispiel_hd: 'Lass den ganzen Schnickschnack weg und sag mir, was los ist.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'ru-388',
+      ausdruck: 'Pispott',
+      hochdeutsch: 'Nachttopf',
+      bedeutung: 'Der „Pispott" ist im Ruhrpott und Norddeutschen der Nachttopf — das Pinkelgefäß für die Nacht, bevor es Innentoiletten gab. In den alten Zechenhäusern mit Plumpsklo auf dem Hof war der Pispott unter dem Bett unverzichtbar. Heute ein nostalgisch-derbes Wort, das an die einfachen Wohnverhältnisse von früher erinnert.',
+      beispiel: 'Früher stand bei Oma noch der Pispott unterm Bett.',
+      beispiel_hd: 'Früher stand bei Oma noch der Nachttopf unter dem Bett.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-389',
+      ausdruck: 'Plumpsklo',
+      hochdeutsch: 'einfache Trockentoilette',
+      bedeutung: 'Das „Plumpsklo" war die einfache Trockentoilette ohne Wasserspülung, oft als Häuschen auf dem Hof der alten Zechensiedlungen. Bis weit ins 20. Jahrhundert teilten sich mehrere Familien ein Plumpsklo. Der Begriff erinnert lautmalerisch an das Geschäft und steht für die bescheidenen Wohnverhältnisse der Arbeiterfamilien im Revier.',
+      beispiel: 'In der alten Siedlung gab\'s nur dat Plumpsklo aufm Hof.',
+      beispiel_hd: 'In der alten Siedlung gab es nur die Trockentoilette auf dem Hof.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'ru-390',
+      ausdruck: 'Pott voll',
+      hochdeutsch: 'jede Menge / sehr viel',
+      bedeutung: '„Pott voll" bedeutet im Ruhrpott jede Menge, sehr viel von etwas — „nen Pott voll Geld" oder „nen Pott voll Arbeit". Der Ausdruck nimmt das Bild des randvollen Topfes und überträgt es auf große Mengen. Im Revier, wo der „Pott" allgegenwärtig ist, ist diese bildhafte Mengenangabe besonders treffend und beliebt.',
+      beispiel: 'Mit der Aktion hat er nen Pott voll Geld verdient.',
+      beispiel_hd: 'Mit der Aktion hat er jede Menge Geld verdient.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ru-391',
+      ausdruck: 'ne ganze Ecke',
+      hochdeutsch: 'eine beträchtliche Menge/Strecke',
+      bedeutung: '„Ne ganze Ecke" bedeutet im Ruhrpott eine beträchtliche Menge oder Strecke — deutlich mehr oder weiter, als man dachte. „Bis dahin isset noch ne ganze Ecke" oder „Dat kostet ne ganze Ecke". Der Ausdruck ist eine vage, aber nachdrückliche Mengenangabe und gehört zum bodenständigen Alltagsdeutsch des Reviers.',
+      beispiel: 'Bis nach Duisburg isset von hier noch ne ganze Ecke.',
+      beispiel_hd: 'Bis nach Duisburg ist es von hier noch ein gutes Stück.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ru-392',
+      ausdruck: 'nen Appel und n Ei',
+      hochdeutsch: 'sehr wenig Geld / fast umsonst',
+      bedeutung: '„Für nen Appel und n Ei" heißt im Ruhrpott, etwas für sehr wenig Geld, fast geschenkt, zu bekommen. „Dat Auto hab ich für nen Appel und n Ei gekriegt!". Die Redensart steht für ein echtes Schnäppchen. Im sparsamen Revier, wo jeder Euro zählte, war ein guter Kauf für wenig Geld immer Anlass zur Freude.',
+      beispiel: 'Den Schrank hab ich vom Flohmarkt für nen Appel und n Ei.',
+      beispiel_hd: 'Den Schrank habe ich vom Flohmarkt für fast nichts.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'ru-393',
+      ausdruck: 'auf Maloche gehen',
+      hochdeutsch: 'zur Arbeit gehen',
+      bedeutung: '„Auf Maloche gehen" heißt im Ruhrpott schlicht, zur Arbeit zu gehen — die schwere, ehrliche Arbeit antreten. „Ich muss früh auf Maloche". Der Ausdruck verbindet die alltägliche Selbstverständlichkeit der Arbeit mit dem Arbeiterstolz des Reviers. Wer auf Maloche geht, tut seine Pflicht und sorgt für die Familie.',
+      beispiel: 'Morgen früh um fünf muss ich wieder auf Maloche.',
+      beispiel_hd: 'Morgen früh um fünf muss ich wieder zur Arbeit.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-394',
+      ausdruck: 'Feierabend machen',
+      hochdeutsch: 'die Arbeit beenden',
+      bedeutung: '„Feierabend machen" heißt im Ruhrpott, die Arbeit für den Tag zu beenden und in den wohlverdienten Ruhestand des Abends überzugehen. „So, ich mach Feierabend!". Nach der harten Maloche war der Feierabend heilig — Zeit für Familie, Eckkneipe, Schrebergarten oder Fußball. Ein Wort, das die Arbeitskultur des Reviers feiert.',
+      beispiel: 'Um vier mach ich Feierabend und geh nach Hause.',
+      beispiel_hd: 'Um vier beende ich die Arbeit und gehe nach Hause.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-395',
+      ausdruck: 'Buckel',
+      hochdeutsch: 'Rücken',
+      bedeutung: 'Der „Buckel" ist im Ruhrpott der Rücken. „Mir tut der Buckel weh von der Maloche" oder „Nimm dat auf\'n Buckel!". Nach der schweren körperlichen Arbeit im Bergbau und Stahlwerk klagten viele über den geschundenen Buckel. Das bodenständige Wort gehört zum Körper-Wortschatz des Reviers und steht oft für getragene Last.',
+      beispiel: 'Vom vielen Bücken tut mir abends der Buckel weh.',
+      beispiel_hd: 'Vom vielen Bücken tut mir abends der Rücken weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-396',
+      ausdruck: 'Quanten',
+      hochdeutsch: 'große Füße',
+      bedeutung: '„Quanten" sind im Ruhrpott derb-scherzhaft große Füße. „Mit deinen Quanten trittste mir noch auf die Zehen!". Das Wort betont die ungeschlachte Größe der Füße und wird mit augenzwinkerndem Spott benutzt. Es gehört zum bildhaften Körper-Wortschatz des Reviers, der gern mit liebevoller Übertreibung arbeitet.',
+      beispiel: 'Pass auf mit deinen Quanten, der Boden is grad gewischt!',
+      beispiel_hd: 'Pass auf mit deinen großen Füßen, der Boden ist gerade gewischt!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-397',
+      ausdruck: 'Lauscher',
+      hochdeutsch: 'Ohren',
+      bedeutung: 'Die „Lauscher" sind im Ruhrpott scherzhaft die Ohren — eigentlich aus der Jägersprache für die Ohren des Wilds. „Mach die Lauscher auf!" heißt „Hör gut zu!". Das Wort wird augenzwinkernd benutzt, etwa zu Kindern, die nicht zuhören wollen. Es gehört zum bildhaften, humorvollen Körper-Wortschatz des Reviers.',
+      beispiel: 'Mach ma die Lauscher auf, ich sag dat nur einmal!',
+      beispiel_hd: 'Mach mal die Ohren auf, ich sage das nur einmal!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-398',
+      ausdruck: 'Riecher',
+      hochdeutsch: 'Nase / gutes Gespür',
+      bedeutung: 'Der „Riecher" ist im Ruhrpott die Nase, aber auch das gute Gespür für etwas. „Der hat\'n guten Riecher für Geschäfte". Im wörtlichen wie im übertragenen Sinn gebraucht, beschreibt das Wort entweder das Riechorgan oder die Fähigkeit, Chancen und Gefahren früh zu wittern — eine im pragmatischen Revier geschätzte Eigenschaft.',
+      beispiel: 'Der hat\'n guten Riecher, der wittert jedes Schnäppchen.',
+      beispiel_hd: 'Der hat ein gutes Gespür, der wittert jedes Schnäppchen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-399',
+      ausdruck: 'Visage',
+      hochdeutsch: 'Gesicht (derb)',
+      bedeutung: 'Die „Visage" ist im Ruhrpott das Gesicht — derb und oft abschätzig gemeint. „Zieh nich so ne Visage!" oder „Halt mir deine Visage ausm Gesicht!". Das Wort kommt aus dem Französischen und gehört zum harten, direkten Wortschatz des Reviers. Es wird benutzt, wenn jemand ein mürrisches oder unverschämtes Gesicht macht.',
+      beispiel: 'Zieh nich so ne saure Visage, et is doch alles gut!',
+      beispiel_hd: 'Zieh nicht so ein saures Gesicht, es ist doch alles gut!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-400',
+      ausdruck: 'Pelle',
+      hochdeutsch: 'Haut',
+      bedeutung: 'Die „Pelle" ist im Ruhrpott die Haut — eigentlich die Schale von Wurst oder Kartoffel, übertragen auf die menschliche Haut. „Bleib mir von der Pelle!" heißt „Lass mich in Ruhe!". Die Redensart „jemandem auf die Pelle rücken" bedeutet, ihm zu nahe zu kommen. Ein bildhaftes Wort des Reviers für Nähe und Distanz.',
+      beispiel: 'Jetzt bleib mir mal von der Pelle, ich brauch meine Ruhe!',
+      beispiel_hd: 'Jetzt lass mich mal in Ruhe, ich brauche meine Ruhe!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'ru-401',
+      ausdruck: 'Köttelköpper',
+      hochdeutsch: 'Dummkopf / Trottel',
+      bedeutung: 'Ein „Köttelköpper" ist im Ruhrpott ein gutmütig-derbes Schimpfwort für einen Dummkopf oder Trottel. „Du Köttelköpper!" sagt man kopfschüttelnd, wenn jemand etwas Unkluges getan hat. Das fantasievolle Wort gehört zum reichen Schimpfwortschatz des Reviers, wo man seinem Unmut gern mit erfinderischen, aber meist harmlosen Beleidigungen Luft macht.',
+      beispiel: 'Du Köttelköpper, jetzt hasse die Tür offen gelassen!',
+      beispiel_hd: 'Du Dummkopf, jetzt hast du die Tür offen gelassen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'ru-402',
+      ausdruck: 'Lülatsch',
+      hochdeutsch: 'langer, schlaksiger Mensch',
+      bedeutung: 'Ein „Lülatsch" (oft „langer Lülatsch") ist im Ruhrpott ein großgewachsener, schlaksiger Mensch. „Der lange Lülatsch kommt überall ran!". Das Wort beschreibt gutmütig-spöttisch die hagere Größe und gehört zum bildhaften Menschen-Wortschatz des Reviers. Es ist nie böse gemeint, sondern eher liebevoll-neckend.',
+      beispiel: 'Der lange Lülatsch holt dat Buch ganz oben ausm Regal.',
+      beispiel_hd: 'Der lange Schlaks holt das Buch ganz oben aus dem Regal.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-403',
+      ausdruck: 'Schluffi',
+      hochdeutsch: 'lässiger, schlampiger Mensch',
+      bedeutung: 'Ein „Schluffi" ist im Ruhrpott ein lässiger, schlampiger oder antriebsloser Mensch, der die Dinge schleifen lässt. „Stell dich nich an wie\'n Schluffi!". Das Wort kommt von „schluffen" (schlurfen) und beschreibt jemanden, der ohne Elan durchs Leben latscht. Im tatkräftigen Revier ein gutmütiger Vorwurf an Bummelanten.',
+      beispiel: 'Der Schluffi kommt jeden Morgen zu spät zur Arbeit.',
+      beispiel_hd: 'Der lässige Typ kommt jeden Morgen zu spät zur Arbeit.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-404',
+      ausdruck: 'Schlawiner',
+      hochdeutsch: 'durchtriebener Schlitzohr',
+      bedeutung: 'Ein „Schlawiner" ist im Ruhrpott ein durchtriebenes Schlitzohr, ein gerissener, aber meist sympathischer Schlingel. „Du alter Schlawiner!" sagt man fast bewundernd zu jemandem, der pfiffig getrickst hat. Das Wort ist eine Mischung aus Tadel und Anerkennung — im Revier schätzt man Bauernschläue durchaus.',
+      beispiel: 'Du alter Schlawiner, du hast dich wieder rausgeredet!',
+      beispiel_hd: 'Du altes Schlitzohr, du hast dich wieder herausgeredet!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-405',
+      ausdruck: 'Brömmel',
+      hochdeutsch: 'Krümel / Brösel',
+      bedeutung: 'Ein „Brömmel" ist im Ruhrpott ein Krümel oder Brösel — ein kleines Stückchen, das abfällt. „Du hast überall Brömmel gemacht!". Das Wort gehört zum bodenständigen Alltagswortschatz und beschreibt die Krümel, die beim Essen von Brot oder Keksen auf Tisch und Boden landen. Eine liebevoll-lautmalerische Pott-Variante.',
+      beispiel: 'Vom Brötchen liegen überall Brömmel aufm Tisch.',
+      beispiel_hd: 'Vom Brötchen liegen überall Krümel auf dem Tisch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-406',
+      ausdruck: 'duster',
+      hochdeutsch: 'dunkel / finster',
+      bedeutung: '„Duster" bedeutet im Ruhrpott und Norddeutschen dunkel oder finster. „Mach Licht an, hier isset ja duster!". Das plattdeutsche Wort gehört zum Alltagswortschatz des Reviers. Im übertragenen Sinn kann „duster aussehen" auch bedeuten, dass eine Lage schlecht oder aussichtslos ist — ein bildhafter, vielseitiger Ausdruck.',
+      beispiel: 'Mach ma dat Licht an, hier drin isset duster.',
+      beispiel_hd: 'Mach mal das Licht an, hier drin ist es dunkel.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-407',
+      ausdruck: 'Schmuddelwetter',
+      hochdeutsch: 'nasskaltes, ungemütliches Wetter',
+      bedeutung: '„Schmuddelwetter" ist im Ruhrpott das typische nasskalte, neblig-graue und ungemütliche Wetter, das die Region im Herbst und Winter oft prägt. „Bei dem Schmuddelwetter bleib ich lieber drin!". Das Wort kommt von „schmuddelig" (schmutzig, eklig) und beschreibt anschaulich die graue Tristesse, die man im Revier nur zu gut kennt.',
+      beispiel: 'Bei dem Schmuddelwetter geh ich heut nich vor die Tür.',
+      beispiel_hd: 'Bei dem nasskalten Wetter gehe ich heute nicht vor die Tür.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-408',
+      ausdruck: 'Pladdern',
+      hochdeutsch: 'in Strömen regnen',
+      bedeutung: '„Pladdern" heißt im Ruhrpott und Norddeutschen, heftig und in Strömen zu regnen. „Et pladdert wie aus Eimern!". Das lautmalerische Wort gibt das Geräusch des prasselnden Platzregens wieder. Im regenreichen Revier gehört das Pladdern zum Wetteralltag und ist ein anschauliches Wort für den ordentlichen Guss von oben.',
+      beispiel: 'Den ganzen Tag pladdert et schon, ein richtiger Landregen.',
+      beispiel_hd: 'Den ganzen Tag regnet es schon in Strömen, ein richtiger Landregen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-409',
+      ausdruck: 'matschig',
+      hochdeutsch: 'schlammig / breiig',
+      bedeutung: '„Matschig" bedeutet im Ruhrpott schlammig, breiig oder aufgeweicht — sei es der Boden nach Regen oder überreifes Obst. „Der Bolzplatz is ganz matschig". In der einstigen Industrielandschaft mit ihren Brachen und Halden war matschiger Untergrund nach Regen allgegenwärtig. Ein anschauliches Alltagswort des Reviers.',
+      beispiel: 'Nach dem Regen is der ganze Acker total matschig.',
+      beispiel_hd: 'Nach dem Regen ist der ganze Acker total schlammig.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-410',
+      ausdruck: 'Pott-Wetter',
+      hochdeutsch: 'graues Ruhrgebietswetter',
+      bedeutung: '„Pott-Wetter" ist im Ruhrpott scherzhaft das typische graue, bedeckte Wetter der Region — weder richtig schön noch richtig schlecht, einfach grau in grau. „Heut is wieder echtes Pott-Wetter". Der Ausdruck nimmt mit Selbstironie das oft trübe Klima des Reviers aufs Korn, das die Pottler mit gewohnter Gelassenheit ertragen.',
+      beispiel: 'Grau in grau und kein Sonnenstrahl — typisches Pott-Wetter.',
+      beispiel_hd: 'Grau in grau und kein Sonnenstrahl — typisches Ruhrgebietswetter.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'ru-411',
+      ausdruck: 'Schalker',
+      hochdeutsch: 'Anhänger von Schalke 04',
+      bedeutung: 'Ein „Schalker" ist Anhänger des FC Schalke 04 aus Gelsenkirchen — königsblau im Herzen und treu durch dick und dünn. Schalke ist der Verein der Bergleute, gegründet im Arbeiterviertel Schalke. Die Schalker pflegen eine leidenschaftliche Fankultur und liefern sich mit den Dortmundern das hitzige Revierderby. Vereinsstolz pur im Pott.',
+      beispiel: 'Als echter Schalker fahr ich zu jedem Heimspiel inne Arena.',
+      beispiel_hd: 'Als echter Schalke-Fan fahre ich zu jedem Heimspiel in die Arena.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-412',
+      ausdruck: 'Bolzplatz',
+      hochdeutsch: 'Fußballplatz / Ascheplatz',
+      bedeutung: 'Der „Bolzplatz" ist im Ruhrpott der einfache Fußballplatz, auf dem die Kinder und Jugendlichen kicken — oft ein Ascheplatz zwischen den Häusern. Hier lernten Generationen das Fußballspielen. Der Bolzplatz ist die Wiege der legendären Reviersport-Kultur, wo aus Hinterhofkickern manchmal echte Profis wurden. Ein Stück Pott-Kindheit.',
+      beispiel: 'Nach der Schule ging\'s direkt auffen Bolzplatz zum Kicken.',
+      beispiel_hd: 'Nach der Schule ging es direkt auf den Bolzplatz zum Kicken.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-413',
+      ausdruck: 'bolzen',
+      hochdeutsch: 'Fußball spielen (ungezwungen)',
+      bedeutung: '„Bolzen" heißt im Ruhrpott, zwanglos und mit Begeisterung Fußball zu spielen — ohne festes Regelwerk, einfach um des Spielens willen. „Komm, wir gehn bolzen!". Das Wort steht für die unverfälschte Spielfreude auf dem Bolzplatz. Im fußballverrückten Revier gehört das Bolzen zur Kindheit wie die Currywurst zum Imbiss.',
+      beispiel: 'Bei dem schönen Wetter gehn wir aufm Platz bolzen.',
+      beispiel_hd: 'Bei dem schönen Wetter gehen wir auf dem Platz Fußball spielen.',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-414',
+      ausdruck: 'Pille',
+      hochdeutsch: 'Fußball / der Ball',
+      bedeutung: 'Die „Pille" ist im Ruhrpott der Fußball selbst — eine liebevoll-saloppe Bezeichnung für das runde Leder. „Gib ma die Pille rüber!" ruft man auf dem Platz. Auch Reporter sprechen von der Pille, wenn der Ball gemeint ist. Im Reviersport gehört das Wort zum festen Vokabular rund ums geliebte Fußballspiel.',
+      beispiel: 'Er nimmt die Pille mit und haut se ins obere Eck!',
+      beispiel_hd: 'Er nimmt den Ball mit und schießt ihn ins obere Eck!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-415',
+      ausdruck: 'Budde',
+      hochdeutsch: 'Tor / Bude (Fußball)',
+      bedeutung: 'Im Ruhrpott-Fußballjargon ist eine „Budde" ein erzieltes Tor. „Der hat zwei Budden gemacht!" heißt, er hat zwei Tore geschossen. Das Wort ist eng verwandt mit „Bude" und gehört zur farbigen Sprache des Reviersports. Auf dem Bolzplatz und in der Eckkneipe feiert man jede Budde der eigenen Mannschaft lautstark.',
+      beispiel: 'Unser Stürmer hat heut gleich drei Budden gemacht!',
+      beispiel_hd: 'Unser Stürmer hat heute gleich drei Tore gemacht!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'ru-416',
+      ausdruck: 'Pulle',
+      hochdeutsch: 'Flasche',
+      bedeutung: 'Die „Pulle" ist im Ruhrpott die Flasche — meist die Bierflasche. „Reich ma die Pulle rüber!". Das umgangssprachliche Wort gehört zur geselligen Trinkkultur des Reviers. Ob am Büdchen, im Schrebergarten oder beim Fußball: Die kühle Pulle Bier ist ein vertrauter Begleiter des Feierabends und der Geselligkeit.',
+      beispiel: 'Hol uns noch ne Pulle Bier aus\'m Kühlschrank!',
+      beispiel_hd: 'Hol uns noch eine Flasche Bier aus dem Kühlschrank!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'ru-417',
+      ausdruck: 'Köbes',
+      hochdeutsch: 'Kellner (in der Kneipe)',
+      bedeutung: 'Der „Köbes" ist im Ruhrpott und Rheinland der Kellner in der Kneipe oder im Brauhaus — traditionell etwas ruppig, aber herzlich. Der Name leitet sich von Jakobus ab. „Köbes, noch zwei Bier!" ruft man durch die Gaststube. In der Eckkneipen-Kultur des Reviers ist der Köbes eine vertraute Figur mit flotter Zunge.',
+      beispiel: 'Köbes, bring uns noch zwei Bier und zwei Korn!',
+      beispiel_hd: 'Kellner, bring uns noch zwei Bier und zwei Korn!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-418',
+      ausdruck: 'Pittermesser',
+      hochdeutsch: 'einfaches Taschenmesser',
+      bedeutung: 'Ein „Pittermesser" ist im Ruhrpott ein einfaches, robustes Taschenmesser, wie es jeder Arbeiter und Bergmann zur Brotzeit dabei hatte. „Hol ma dein Pittermesser, ich muss die Wurst schneiden". Das schlichte Klappmesser gehörte zur Grundausstattung und half beim Bütterken schneiden in der Frühstückspause unter Tage.',
+      beispiel: 'Mit dem Pittermesser hat Opa immer seine Wurst geschnitten.',
+      beispiel_hd: 'Mit dem Taschenmesser hat Opa immer seine Wurst geschnitten.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-419',
+      ausdruck: 'aufmucken',
+      hochdeutsch: 'sich widersetzen / aufbegehren',
+      bedeutung: '„Aufmucken" heißt im Ruhrpott, sich gegen etwas aufzulehnen oder zu widersetzen. „Wenn der Chef zu weit geht, muss man auch mal aufmucken!". Im Revier mit seiner stolzen Arbeiter- und Gewerkschaftstradition gehörte das Aufmucken gegen Unrecht zum Selbstverständnis. Wer sich nicht alles gefallen lässt, muckt eben auf.',
+      beispiel: 'Bei der Lohnkürzung haben die Kumpel ordentlich aufgemuckt.',
+      beispiel_hd: 'Bei der Lohnkürzung haben die Kollegen ordentlich aufbegehrt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-420',
+      ausdruck: 'Kumpeltyp',
+      hochdeutsch: 'umgänglicher, zuverlässiger Mensch',
+      bedeutung: 'Ein „Kumpeltyp" ist im Ruhrpott jemand, mit dem man gut auskommt — umgänglich, zuverlässig und kameradschaftlich. „Der Neue is\'n richtiger Kumpeltyp". Das Wort leitet sich vom „Kumpel" (Bergmannskollege) ab und beschreibt die geschätzteste Eigenschaft im Revier: ein verlässlicher Freund zu sein, auf den man zählen kann.',
+      beispiel: 'Der neue Kollege is\'n echter Kumpeltyp, mit dem kommt jeder klar.',
+      beispiel_hd: 'Der neue Kollege ist ein echter umgänglicher Typ, mit dem kommt jeder klar.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'ru-421',
+      ausdruck: 'rabotten',
+      hochdeutsch: 'schwer arbeiten / schuften',
+      bedeutung: '„Rabotten" heißt im Ruhrpott schwer arbeiten und schuften — das Wort stammt aus dem Polnischen bzw. Russischen („rabota" = Arbeit) und zeugt von der starken Zuwanderung osteuropäischer Bergleute ins Revier. „Den ganzen Tag rabotten und nix verdienen". Neben „malochen" ist es ein weiteres Wort für die ehrliche, harte Arbeit.',
+      beispiel: 'Wir haben den ganzen Tag auffer Baustelle rabottet.',
+      beispiel_hd: 'Wir haben den ganzen Tag auf der Baustelle geschuftet.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'ru-422',
+      ausdruck: 'stickum',
+      hochdeutsch: 'heimlich',
+      bedeutung: '„Stickum" heißt im Ruhrpott so viel wie heimlich, leise oder unauffällig — man macht etwas, ohne dass es jemand mitkriegt. Das Wort geht aufs jiddische „schtika" (Schweigen) zurück und ist im Revier bis heute gebräuchlich, wenn sich einer klammheimlich aus dem Staub macht oder was hinterm Rücken anderer regelt.',
+      beispiel: 'Der hat sich stickum vom Acker gemacht, kein Mensch hat dat gemerkt.',
+      beispiel_hd: 'Der hat sich heimlich davongemacht, kein Mensch hat das gemerkt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-423',
+      ausdruck: 'Mattenklopper',
+      hochdeutsch: 'Teppichklopfer',
+      bedeutung: 'Der „Mattenklopper" ist im Ruhrpott der Teppichklopfer — das geflochtene Gerät, mit dem früher auf dem Hof die Teppiche ausgeklopft wurden. „Hol den Mattenklopper, die Läufer müssen raus!". In den Zechensiedlungen war das Teppichklopfen am Wochenende ein vertrautes Bild und Geräusch. Der Mattenklopper galt auch als gefürchtetes Erziehungsinstrument.',
+      beispiel: 'Samstags wurden mit\'m Mattenklopper die Teppiche ausgeklopft.',
+      beispiel_hd: 'Samstags wurden mit dem Teppichklopfer die Teppiche ausgeklopft.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-424',
+      ausdruck: 'Pömpelchen',
+      hochdeutsch: 'kleiner Klaps / kleiner Stoß',
+      bedeutung: 'Ein „Pömpelchen" ist im Ruhrpott ein kleiner Klaps, Stoß oder Anstubser. „Gib ihm ma\'n Pömpelchen, dann wacht er auf!". Die liebevolle Verkleinerungsform beschreibt einen sanften, freundschaftlichen Schubs. Das Wort gehört zum verspielten Alltagswortschatz des Reviers und kommt mit einem warmherzigen Unterton daher.',
+      beispiel: 'Gib ihm ma\'n kleines Pömpelchen, damit er aufwacht.',
+      beispiel_hd: 'Gib ihm mal einen kleinen Klaps, damit er aufwacht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'ru-425',
+      ausdruck: 'Pottkind',
+      hochdeutsch: 'im Ruhrgebiet geborenes Kind',
+      bedeutung: 'Ein „Pottkind" ist jemand, der im Ruhrgebiet geboren und aufgewachsen ist — mit Currywurst, Bolzplatz, Trinkhalle und Revierderby groß geworden. „Ich bin\'n echtes Pottkind!". Der Begriff drückt tiefe Verbundenheit mit der Heimat aus und ist Ausweis der Pott-Identität, auf die man im Revier ein Leben lang stolz bleibt.',
+      beispiel: 'Als echtes Pottkind kenn ich jede Trinkhalle inner Gegend.',
+      beispiel_hd: 'Als echtes Ruhrgebietskind kenne ich jeden Kiosk in der Gegend.',
+      kategorie: 'menschen'
     }
   ]
 };

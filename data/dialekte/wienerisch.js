@@ -2386,6 +2386,1446 @@ export default {
       beispiel: 'Da Stiagn-Vorsteher hot sich beschwert, weil mei Hund laut war.',
       beispiel_hd: 'Der Stiegenvorsteher hat sich beschwert, weil mein Hund laut war.',
       kategorie: 'menschen'
+    },
+    {
+      id: 'w-291',
+      ausdruck: 'Grant',
+      hochdeutsch: 'schlechte Laune / Verdruss',
+      bedeutung: 'Da „Grant" — die typisch wienerische Mischung aus mürrischer Laune, Verdruss und Unmut, ein Kulturphänomen der Stadt. „Heut hob i an Grant, frog mi ned warum." Der Wiener pflegt seinen Grant geradezu liebevoll, er gehört zur Mentalität wie der Schmäh. „Grantig" sein heißt schlecht gelaunt, brummig. Ein „Grantscherbn" ist ein notorisch mürrischer Mensch. Der Grant ist kein echter Zorn, sondern eher eine genießerische Unzufriedenheit mit der Welt.',
+      beispiel: 'Loss mi in Ruh, i hob heut an ordentlichen Grant!',
+      beispiel_hd: 'Lass mich in Ruhe, ich habe heute eine ordentliche schlechte Laune!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-292',
+      ausdruck: 'Gspusi',
+      hochdeutsch: 'Liebschaft / Techtelmechtel',
+      bedeutung: 's\'„Gspusi" — eine leichte Liebschaft, ein Flirt oder heimliches Verhältnis, vom italienischen „sposa" (Braut). „De zwa hom a Gspusi, des merkt ma ja." Bezeichnet meist eine unverbindliche Romanze ohne große Ernsthaftigkeit. Kann auch die Person selbst meinen: „Des is sei neichs Gspusi." Ein charmant-augenzwinkerndes Wort, das die Wiener Lust am leichten Liebesspiel widerspiegelt. Nicht abwertend, eher amüsiert gemeint.',
+      beispiel: 'I hob g\'hört, du host a neichs Gspusi — stimmt des?',
+      beispiel_hd: 'Ich habe gehört, du hast eine neue Liebschaft — stimmt das?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-293',
+      ausdruck: 'sekkieren',
+      hochdeutsch: 'ärgern / quälen',
+      bedeutung: '„Sekkieren" — jemanden necken, ärgern, sticheln oder quälen, vom italienischen „seccare" (lästig sein). „Hör auf, mi zum sekkieren!" Reicht vom harmlosen Hänseln bis zum echten Schikanieren. Kinder sekkieren einander, ein Chef kann seine Angestellten sekkieren. Ein klassisches Wort der altwienerischen Umgangssprache mit italienischen Wurzeln, wie viele Begriffe aus der k.u.k.-Zeit. Drückt anhaltende, lästige Belästigung aus.',
+      beispiel: 'De Buam sekkieren de Katz scho den ganzn Tog!',
+      beispiel_hd: 'Die Buben ärgern die Katze schon den ganzen Tag!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-294',
+      ausdruck: 'Zwutschkerl',
+      hochdeutsch: 'kleiner Mensch / Knirps',
+      bedeutung: 's\'„Zwutschkerl" — ein liebevoll-spöttischer Ausdruck für einen kleinen Menschen, besonders ein kleines Kind oder eine kleinwüchsige Person. „So a Zwutschkerl und scho so frech!" Klingt nach der Verkleinerung von etwas Winzigem, herzig Kleinem. Wird fast immer zärtlich oder amüsiert gebraucht, nie ernsthaft beleidigend. Typisch für die wienerische Vorliebe, mit Verkleinerungsformen Zuneigung und Wärme auszudrücken.',
+      beispiel: 'Schau dir des Zwutschkerl an, kaum a Meter groß und so an Schmäh!',
+      beispiel_hd: 'Schau dir den Knirps an, kaum einen Meter groß und so einen Witz!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-295',
+      ausdruck: 'zach',
+      hochdeutsch: 'zäh / mühsam / anstrengend',
+      bedeutung: '„Zach" — die wienerische Form von „zäh", verwendet für mühsame, anstrengende oder langwierige Dinge. „Des war a zacher Tog heut." Kann sich auf Fleisch beziehen („a zaches Schnitzl"), auf eine zähe Verhandlung, einen mühseligen Menschen oder eine schleppende Situation. „Zach sei" heißt auch hartnäckig, ausdauernd sein. Eines der häufigsten Alltagswörter, drückt jede Form von Anstrengung und Widerstand aus.',
+      beispiel: 'De Sitzung heut war vielleicht zach, drei Stunden und nix beschlossn.',
+      beispiel_hd: 'Die Sitzung heute war vielleicht mühsam, drei Stunden und nichts beschlossen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-296',
+      ausdruck: 'Oida',
+      hochdeutsch: 'Alter / Mann (Anrede)',
+      bedeutung: '„Oida" — wörtlich „Alter", das wohl meistgebrauchte Wiener Anrede- und Füllwort, vor allem unter jüngeren Wienern. „Oida, wos is mit dir los?" Kann Erstaunen, Begrüßung, Ärger oder Verwunderung ausdrücken — je nach Betonung. „Oida!" allein ist ein kompletter Satz. Auch unter Frauen gebräuchlich. Vom Anredewort für einen Freund hat es sich zum universellen Ausruf entwickelt, fast schon ein Markenzeichen der Wiener Jugendsprache.',
+      beispiel: 'Oida, des kannst da ned vurstelln, wos heut passiert is!',
+      beispiel_hd: 'Alter, das kannst du dir nicht vorstellen, was heute passiert ist!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'w-297',
+      ausdruck: 'Gschropp',
+      hochdeutsch: 'kleines Kind',
+      bedeutung: 's\'„Gschropp" — ein kleines Kind, ein Knirps, meist liebevoll gemeint. „De hom drei Gschropp\'n daham." Bezeichnet die ganz Kleinen, oft im Plural „Gschroppn" für die Kinderschar. Kann auch leicht abwertend für ein freches, lästiges Kind verwendet werden: „So a frechs Gschropp!" Ein urwienerisches Wort der Familiensprache, das die Mischung aus Zuneigung und gespielter Strenge gegenüber den Kleinen einfängt.',
+      beispiel: 'Mit drei Gschropp\'n im Haus is nie ned Ruh, des kannst da denken.',
+      beispiel_hd: 'Mit drei kleinen Kindern im Haus ist nie Ruhe, das kannst du dir denken.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-298',
+      ausdruck: 'Haberer',
+      hochdeutsch: 'Freund / Kumpel',
+      bedeutung: 'Da „Haberer" — ein guter Freund, Kumpel oder Spezi, neben „Hawara" eine der zentralen Wiener Bezeichnungen für einen Kameraden. „Des is mei bester Haberer." Kann auch den Liebhaber oder festen Freund einer Frau meinen: „Hot di dei Haberer abg\'holt?" Ein durch und durch wienerisches Wort der Männerfreundschaft und des Beisl-Lebens. Drückt Vertrautheit, Loyalität und Kameradschaft aus, gehört zum Kern des Wiener Wortschatzes.',
+      beispiel: 'Mit dem Haberer geh i scho seit da Schui auf a Bier.',
+      beispiel_hd: 'Mit dem Kumpel gehe ich schon seit der Schule auf ein Bier.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-299',
+      ausdruck: 'Beidl',
+      hochdeutsch: 'Trottel / Depp (vulgär)',
+      bedeutung: 'Da „Beidl" — eine derbe wienerische Beschimpfung für einen Dummkopf, Trottel oder unfähigen Menschen, ursprünglich vulgär für den Hodensack. „So a Beidl, der versteht goar nix!" Wird im Alltag aber oft eher abgemildert als allgemeines Schimpfwort gebraucht. „A bleda Beidl" ist ein ausgemachter Trottel. Gehört zum kräftigen Repertoire der Wiener Schimpfkultur, die für ihre bildhafte Direktheit bekannt ist.',
+      beispiel: 'So a Beidl, der hot scho wieda olles vakehrt g\'macht!',
+      beispiel_hd: 'So ein Trottel, der hat schon wieder alles falsch gemacht!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-300',
+      ausdruck: 'Wos geht\'n?',
+      hochdeutsch: 'Was ist los? / Wie geht\'s?',
+      bedeutung: '„Wos geht\'n?" — eine lässige wienerische Begrüßung und Frage nach dem Befinden, vor allem in der Jugendsprache verbreitet. „Servus Oida, wos geht\'n bei dir?" Erkundigt sich nach Neuigkeiten, dem Stand der Dinge oder einfach danach, wie es jemandem geht. Antwort oft „Nix bsundas" (nichts Besonderes). Eine moderne, saloppe Floskel, die das traditionelle „Wie geht\'s?" in der Alltagssprache der jüngeren Wiener weitgehend ersetzt hat.',
+      beispiel: 'Wos geht\'n, hob di scho lang nimma g\'sehn!',
+      beispiel_hd: 'Was ist los, habe dich schon lange nicht mehr gesehen!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'w-301',
+      ausdruck: 'Blunzn',
+      hochdeutsch: 'Blutwurst / nichtsnutziger Mensch',
+      bedeutung: 'D\'„Blunzn" — eigentlich die Blutwurst, ein traditionelles Gericht der Wiener Küche, etwa als „Blunzngröstl" mit Erdäpfeln. „A Blunzn mit Sauerkraut, des is wos Guads." Im übertragenen Sinn auch ein Schimpfwort für einen unfähigen oder gleichgültigen Menschen: „Des is ma wurscht wia da Blunzn." Der Ausdruck „Mir is\'s blunzn" bedeutet „Mir ist es völlig egal". Ein vielseitiges Wort zwischen Speisekarte und Schimpfwortschatz.',
+      beispiel: 'Zum Mittog gibt\'s a Blunzngröstl, mei Lieblingsessen!',
+      beispiel_hd: 'Zum Mittag gibt es ein Blutwurstgröstl, mein Lieblingsessen!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-302',
+      ausdruck: 'Gschdanzl',
+      hochdeutsch: 'Spottvers / Vierzeiler',
+      bedeutung: 's\'„Gschdanzl" — ein kurzer, oft spöttischer oder derber Vierzeiler, gesungen oder gesprochen, traditionell beim Heurigen oder zu volkstümlicher Musik. „De hom beim Wein a paar Gschdanzln g\'sungen." Die Gstanzln nehmen mit Witz und Schmäh Leute, Politik oder das Leben aufs Korn. Sie gehören zur lebendigen Wiener und ostösterreichischen Volkskultur. Improvisiert und schlagfertig vorgetragen, sind sie eine Form des gesungenen Wiener Humors.',
+      beispiel: 'Da Sepp hot beim Heurigen a deppertes Gschdanzl über\'n Wirt g\'sungen.',
+      beispiel_hd: 'Der Sepp hat beim Heurigen einen frechen Spottvers über den Wirt gesungen.',
+      kategorie: 'musik'
+    },
+    {
+      id: 'w-303',
+      ausdruck: 'aufpudeln',
+      hochdeutsch: 'aufspielen / wichtigmachen',
+      bedeutung: 'Sich „aufpudeln" — sich wichtigmachen, aufspielen, prahlerisch auftrumpfen oder sich aufplustern wie ein Pudel. „Pudel di ned so auf, du bist a nur a kloana Beamter." Bezeichnet jemanden, der sich aufbläst, angibt oder sich größer macht, als er ist. Oft mit einem Unterton von Spott für die Selbstüberschätzung. Ein bildhaftes Wiener Wort, das die Verachtung für Wichtigtuerei und Großspurigkeit treffend einfängt.',
+      beispiel: 'Pudel di ned so auf, du host des a ned besser g\'macht!',
+      beispiel_hd: 'Spiel dich nicht so auf, du hast das auch nicht besser gemacht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-304',
+      ausdruck: 'Hackn',
+      hochdeutsch: 'Arbeit / Job',
+      bedeutung: 'D\'„Hackn" — die Arbeit, der Job, vom Hacken als körperlicher Tätigkeit abgeleitet. „I muss morgn früh in d\'Hackn." Ein zentrales Wort der Wiener Alltagssprache. „Hackeln" heißt arbeiten, oft hart und körperlich. „A gscheide Hackn hom" bedeutet einen anständigen Job haben. „Ohne Hackn" ist arbeitslos. Drückt die wienerische, eher robuste Einstellung zur Arbeit aus — Mühsal, aber auch Stolz auf das Schaffen mit den eigenen Händen.',
+      beispiel: 'I bin fix und fertig, de Hackn war heut wieder a Wahnsinn.',
+      beispiel_hd: 'Ich bin völlig erschöpft, die Arbeit war heute wieder der Wahnsinn.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-305',
+      ausdruck: 'hackeln',
+      hochdeutsch: 'arbeiten / schuften',
+      bedeutung: '„Hackeln" — arbeiten, schuften, oft im Sinne von harter, redlicher Maloche, abgeleitet von „Hackn" (Arbeit). „I hob mei Lebn lang g\'hackelt." Beschreibt körperliche wie auch allgemeine Arbeit, immer mit dem Beiklang von Anstrengung und Fleiß. Ein „Hackler" ist ein Arbeiter, besonders ein Bauarbeiter oder Handwerker. Das Wort trägt den Stolz der Wiener Arbeiterschaft in sich, die sich über ihre Schufterei definiert und sie mit Würde trägt.',
+      beispiel: 'I hackel scho seit\'m fünfzehnten Lebnsjahr, des merk i in de Knochn.',
+      beispiel_hd: 'Ich arbeite schon seit dem fünfzehnten Lebensjahr, das merke ich in den Knochen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-306',
+      ausdruck: 'Hackler',
+      hochdeutsch: 'Arbeiter / Malocher',
+      bedeutung: 'Da „Hackler" — ein Arbeiter, besonders ein körperlich Schaffender wie ein Bauarbeiter oder Handwerker, von „hackeln" (arbeiten). „A echter Hackler steht um sechse auf." Der Begriff ist ein Stolzwort der Wiener Arbeiterschaft, sogar die „Hacklerregelung" (eine Frühpensionsregelung für langjährig Versicherte) trägt ihn im Namen. Bezeichnet den ehrlichen, fleißigen Werktätigen, der mit seinen Händen sein Brot verdient. Sozial- und identitätsgeschichtlich bedeutsam.',
+      beispiel: 'Mei Vater war sei Lebn lang a Hackler beim Bau.',
+      beispiel_hd: 'Mein Vater war sein Leben lang ein Arbeiter beim Bau.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-307',
+      ausdruck: 'Gschäft',
+      hochdeutsch: 'Geschäft / Laden',
+      bedeutung: 's\'„Gschäft" — der Laden, das Geschäft, in dem man einkauft oder das man betreibt. „I geh schnell ins Gschäft, was holen." Die wienerische Aussprache verschluckt das „e" am Anfang. „A Gschäft aufmachen" heißt ein Geschäft eröffnen. „Im Gschäft sein" kann auch heißen, beruflich beschäftigt zu sein. Ein alltägliches Wort, das den kleinen Greißler genauso meint wie das große Kaufhaus. Teil der wienerischen Lautfärbung des Standarddeutschen.',
+      beispiel: 'Des Gschäft an der Eck\'n hot leider zuagsperrt.',
+      beispiel_hd: 'Das Geschäft an der Ecke hat leider zugesperrt.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-308',
+      ausdruck: 'Greißler',
+      hochdeutsch: 'kleiner Lebensmittelhändler',
+      bedeutung: 'Da „Greißler" — der kleine Lebensmittelhändler ums Eck, ein Wiener Kulturgut, das durch die Supermärkte fast verschwunden ist. „Beim Greißler hot ma no olles auf Pump kriegt." Der Greißler kannte seine Kundschaft persönlich, schrieb an und war Teil des Grätzl-Lebens. Heute steht der Begriff nostalgisch für eine vergangene, persönlichere Form des Einkaufens. Ein Symbol des alten Wien, das mit der Anonymität der Großmärkte verloren ging.',
+      beispiel: 'Beim Greißler unten hob i ois bekommen, sogar a kurzes Ratscherl.',
+      beispiel_hd: 'Beim kleinen Lebensmittelhändler unten habe ich alles bekommen, sogar ein kurzes Schwätzchen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-309',
+      ausdruck: 'Grätzl',
+      hochdeutsch: 'Stadtviertel / Kiez',
+      bedeutung: 's\'„Grätzl" — ein kleiner, überschaubarer Teil eines Wiener Bezirks, vergleichbar mit dem Berliner Kiez, das Wohnumfeld mit seinen Geschäften und Bekannten. „In unserm Grätzl kennt jeder jeden." Das Grätzl ist die kleinste soziale Einheit der Stadt, ein Stück Heimat mit eigenem Charakter, Stammbeisl und Greißler. Ein zentrales Wort der Wiener Identität, das die Verbundenheit mit dem eigenen Viertel und seiner Gemeinschaft ausdrückt.',
+      beispiel: 'In unserm Grätzl gibt\'s no a echtes Beisl und an Greißler.',
+      beispiel_hd: 'In unserem Stadtviertel gibt es noch ein echtes Wirtshaus und einen Lebensmittelladen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-310',
+      ausdruck: 'Bim',
+      hochdeutsch: 'Straßenbahn',
+      bedeutung: 'D\'„Bim" — die Wiener Straßenbahn, liebevoll-lautmalerisch nach ihrem Klingelton benannt. „I nimm de Bim bis zum Ring." Die Bim ist ein Wahrzeichen Wiens, das rote Schienenfahrzeug prägt das Stadtbild seit über hundert Jahren. „Bim-Fahren" gehört zum Wiener Alltag. Der Begriff ist herzlich und vertraut, drückt die enge Beziehung der Wiener zu ihren öffentlichen Verkehrsmitteln aus. Wiens Tramnetz ist eines der größten der Welt.',
+      beispiel: 'Schnell, de Bim kummt, sunst miass ma zehn Minutn wartn!',
+      beispiel_hd: 'Schnell, die Straßenbahn kommt, sonst müssen wir zehn Minuten warten!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-311',
+      ausdruck: 'Schmäh-Tandler',
+      hochdeutsch: 'Witzbold / Schwätzer',
+      bedeutung: 'Da „Schmäh-Tandler" — jemand, der ständig Schmäh führt, also Witze macht, schwätzt und mit Charme und Geschwätz die Leute unterhält oder auch hinters Licht führt. „Auf den Schmäh-Tandler kannst di ned verlassn." Verbindet den „Schmäh" (Witz, Trick) mit dem „Tandler" (Trödler, Schwätzer). Bezeichnet einen, der mehr redet als hält, aber meist mit Augenzwinkern. Ein liebevoll-skeptischer Begriff für die geschwätzigen Charmeure der Stadt.',
+      beispiel: 'Der olte Schmäh-Tandler verzöhlt da glei drei G\'schichten auf amoi.',
+      beispiel_hd: 'Der alte Schwätzer erzählt dir gleich drei Geschichten auf einmal.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-312',
+      ausdruck: 'deppert',
+      hochdeutsch: 'dumm / blöd',
+      bedeutung: '„Deppert" — dumm, blöd, einfältig, eines der häufigsten Wiener Alltagswörter, abgeleitet vom „Depp". „So a depperte Idee!" Kann Sachen, Situationen oder Menschen meinen. „Si deppert stelln" heißt sich dumm stellen. „Deppert wern" kann auch heißen, vor Aufregung durchzudrehen: „I wer no deppert mit dem Lärm!" Ein vielseitiges, gutmütig-grobes Wort, das von harmloser Kritik bis zu echtem Ärger alles ausdrücken kann.',
+      beispiel: 'So a depperte G\'schicht, dass i da Schlüssel verloren hob!',
+      beispiel_hd: 'So eine blöde Geschichte, dass ich den Schlüssel verloren habe!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-313',
+      ausdruck: 'fad',
+      hochdeutsch: 'langweilig',
+      bedeutung: '„Fad" — langweilig, öde, eintönig, eines der grundlegenden Wiener Befindlichkeitswörter. „Mir is so fad heut." Beschreibt sowohl Langeweile als auch fade, geschmacklose Dinge. „A fade Partie" ist ein langweiliger Mensch oder ein öder Abend. „Fad wern" heißt sich zu langweilen beginnen. Die „Fadesse" ist die ausgewachsene Langeweile. Ein Wort, das die wienerische Neigung zur genießerischen Klage über die Eintönigkeit des Daseins gut einfängt.',
+      beispiel: 'Mir is so fad, kennt ma ned irgendwos unternehmen?',
+      beispiel_hd: 'Mir ist so langweilig, könnten wir nicht irgendetwas unternehmen?',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-314',
+      ausdruck: 'Fadesse',
+      hochdeutsch: 'Langeweile',
+      bedeutung: 'D\'„Fadesse" — die Langeweile, die ausgewachsene Form des Fadseins, mit französisch klingender Endung vornehm ausgeschmückt. „Aus lauter Fadesse hob i den ganzn Schrank ausg\'räumt." Bezeichnet einen Zustand der gähnenden Öde, in dem die Zeit nicht vergehen will. Ein typisch wienerisches Wort, das die Langeweile fast zelebriert und ihr durch die elegante Endung einen ironisch-mondänen Anstrich gibt. Die Wiener leiden an der Fadesse mit einer gewissen Hingabe.',
+      beispiel: 'Vor lauter Fadesse hob i scho zweimoi den Boden aufg\'wischt.',
+      beispiel_hd: 'Vor lauter Langeweile habe ich schon zweimal den Boden gewischt.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-315',
+      ausdruck: 'a Hetz hom',
+      hochdeutsch: 'Spaß haben',
+      bedeutung: '„A Hetz hom" — Spaß, Vergnügen oder einen Heidenspaß haben, von der „Hetz" (Spaß, Belustigung). „Mir hom gestern a Mordshetz g\'habt!" Die Hetz ist der ausgelassene Spaß, das fröhliche Treiben, oft in geselliger Runde. Etwas „aus da Hetz" tun heißt es zum Spaß tun. Der Begriff geht auf die historischen Tierhetzen im Wiener Hetztheater zurück, hat aber heute nur noch die heitere Bedeutung von Vergnügen und ausgelassener Stimmung.',
+      beispiel: 'Mir hom gestern a Hetz hom bei der Feier, des glaubst ned!',
+      beispiel_hd: 'Wir haben gestern viel Spaß gehabt bei der Feier, das glaubst du nicht!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-316',
+      ausdruck: 'auszuzln',
+      hochdeutsch: 'aussaugen / ausnutzen',
+      bedeutung: '„Auszuzln" — etwas aussaugen, ausschlürfen oder im übertragenen Sinn jemanden ausnutzen, vom „Zuzln" (saugen, lutschen). „De Marille bis zum Kern auszuzln." Ein Kind zuzelt am Schnuller, man kann einen Knochen auszuzln oder einen Menschen finanziell auszuzln. Das „Zuzerl" ist übrigens der Schnuller. Ein bildhaftes Wiener Wort, das vom genüsslichen Saugen bis zur rücksichtslosen Ausbeutung reicht, immer mit der Grundbedeutung des restlosen Aussaugens.',
+      beispiel: 'De hom mi bei dem G\'schäft ordentlich auszuzln woin.',
+      beispiel_hd: 'Die haben mich bei dem Geschäft ordentlich ausnutzen wollen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-317',
+      ausdruck: 'Zuzerl',
+      hochdeutsch: 'Schnuller',
+      bedeutung: 's\'„Zuzerl" — der Schnuller für Babys, vom „zuzln" (saugen, lutschen). „Gib dem Kloan sei Zuzerl, sunst schreit\'s." Ein zärtliches Wort der Familiensprache, das den Beruhigungssauger der Säuglinge meint. Auch „Schnuller" wird gesagt, aber das Zuzerl ist die urwienerische Variante. Spiegelt die wienerische Vorliebe für lautmalerische Verkleinerungsformen in der Kindersprache wider. Wenn das Zuzerl verloren geht, herrscht im Haushalt Alarmstufe Rot.',
+      beispiel: 'Ohne sei Zuzerl schloft des Kind ned ei, des is a Drama.',
+      beispiel_hd: 'Ohne seinen Schnuller schläft das Kind nicht ein, das ist ein Drama.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-318',
+      ausdruck: 'Mascherl',
+      hochdeutsch: 'Schleife / Fliege (Krawatte)',
+      bedeutung: 's\'„Mascherl" — eine kleine Schleife oder die Fliege als Halsschmuck zum Anzug, Verkleinerungsform von „Masche". „Zum Anzug trogt er a elegantes Mascherl." Das Mascherl ziert Geschenkpakete, Mädchenzöpfe oder den Hals des feinen Herrn. „Mit Mascherl" bedeutet auch fein herausgeputzt. Ein charmantes Wort, das den wienerischen Sinn für Eleganz und festliche Ausstattung widerspiegelt. Beim Opernball ist das Mascherl Pflicht für die Herren.',
+      beispiel: 'Zum Opernball muass da Herr a schwarzes Mascherl trogn.',
+      beispiel_hd: 'Zum Opernball muss der Herr eine schwarze Fliege tragen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-319',
+      ausdruck: 'Pracker',
+      hochdeutsch: 'Teppichklopfer',
+      bedeutung: 'Da „Pracker" — der Teppichklopfer aus Rohrgeflecht, mit dem früher die Teppiche im Hof ausgeklopft wurden, vom „pracken" (schlagen, klopfen). „Hol den Pracker, mir klopfen heut de Teppiche." Berüchtigt war der Pracker auch als Drohwerkzeug der Mütter: „Wennst ned folgst, gibt\'s den Pracker!" Ein Stück Wiener Hauskultur, das an die Zeit der Bassena-Höfe erinnert, als das Teppichklopfen ein wöchentliches Ritual und Treffpunkt der Hausfrauen war.',
+      beispiel: 'Friaher hot d\'Oma mit\'m Pracker g\'droht, wenn ma schlimm war.',
+      beispiel_hd: 'Früher hat die Oma mit dem Teppichklopfer gedroht, wenn man frech war.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-320',
+      ausdruck: 'Tuchent',
+      hochdeutsch: 'Federbett / Bettdecke',
+      bedeutung: 'D\'„Tuchent" — das dicke Federbett oder die gefüllte Bettdecke, ein Wort böhmischer Herkunft, das in Wien heimisch wurde. „Im Winter is\'s unter da Tuchent schön warm." Die Tuchent wird zum Lüften aus dem Fenster gehängt, ein vertrautes Bild in Wiener Innenhöfen. „Unter da Tuchent bleibn" heißt im Bett liegen bleiben. Ein gemütliches Wort, das Wärme und Geborgenheit ausstrahlt und den böhmisch-österreichischen Kultureinfluss in der Alltagssprache zeigt.',
+      beispiel: 'Bei der Kält\'n bleib i am liabsten unter da Tuchent liegn.',
+      beispiel_hd: 'Bei der Kälte bleibe ich am liebsten unter dem Federbett liegen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-321',
+      ausdruck: 'Polster',
+      hochdeutsch: 'Kissen',
+      bedeutung: 'Da „Polster" — das Kopfkissen, in Österreich die übliche Bezeichnung, während „Kissen" eher norddeutsch klingt. „Schüttl den Polster auf, bevorst di hinlegst." Der Polster gehört zur Schlafstatt wie die Tuchent. „Polsterüberzug" ist der Kissenbezug, der „Polsterschlacht" das Kissenwerfen der Kinder. Ein alltägliches Wort, das die feinen Unterschiede zwischen österreichischem und deutschem Wortschatz zeigt. Auf einen weichen Polster legt der Wiener gerne seinen müden Kopf.',
+      beispiel: 'Mei Polster is z\'hoch, do krieg i an steifn Hois.',
+      beispiel_hd: 'Mein Kissen ist zu hoch, da bekomme ich einen steifen Hals.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-322',
+      ausdruck: 'Stockerl',
+      hochdeutsch: 'Hocker / Treppchen',
+      bedeutung: 's\'„Stockerl" — ein kleiner Hocker ohne Lehne, Verkleinerung von „Stock". „Setz di auf\'s Stockerl in der Kuchl." Im Sport ist das „Stockerl" das Siegertreppchen: „Aufs Stockerl steigen" heißt einen Podestplatz erreichen, ein „Stockerlplatz" ist ein Platz unter den ersten drei. Ein doppeldeutiges Wort, das vom Küchenhocker bis zum sportlichen Triumph reicht. Bei österreichischen Sportübertragungen ist vom Stockerl ständig die Rede.',
+      beispiel: 'Unser Läufer is heut aufs Stockerl kommen, a super Leistung!',
+      beispiel_hd: 'Unser Läufer ist heute aufs Treppchen gekommen, eine super Leistung!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-323',
+      ausdruck: 'Sessel',
+      hochdeutsch: 'Stuhl',
+      bedeutung: 'Da „Sessel" — in Österreich der ganz normale Stuhl, während „Sessel" in Deutschland einen Polstersessel meint. „Nimm da an Sessel und setz di zu uns." Das sorgt oft für Verwirrung zwischen Österreichern und Deutschen. Der Wiener „Sessel" hat eine Lehne und vier Beine, mehr nicht. „Vom Sessel fallen" heißt sehr überrascht sein. Ein klassisches Beispiel für die Tücken zwischen den deutschen Sprachvarianten, das im Alltag immer wieder zu Missverständnissen führt.',
+      beispiel: 'Nimm da an Sessel her und setz di zu uns an Tisch!',
+      beispiel_hd: 'Nimm dir einen Stuhl und setz dich zu uns an den Tisch!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-324',
+      ausdruck: 'Kasten',
+      hochdeutsch: 'Schrank',
+      bedeutung: 'Da „Kasten" — in Österreich der Schrank, besonders der Kleiderschrank. „Häng da Jacke in den Kasten." Wo der Deutsche „Schrank" sagt, sagt der Wiener „Kasten". Der „Eiskasten" ist der Kühlschrank, der „Geschirrkasten" der Geschirrschrank. „A Kasten von am Mann" beschreibt einen besonders großen, breiten Mann. Ein grundlegendes Möbelwort des österreichischen Deutsch, das sich klar vom bundesdeutschen Sprachgebrauch unterscheidet und zum Kern des Alltagswortschatzes gehört.',
+      beispiel: 'Räum bitte de Wäsch in den Kasten, sie liegt scho seit Togn umadum.',
+      beispiel_hd: 'Räume bitte die Wäsche in den Schrank, sie liegt schon seit Tagen herum.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-325',
+      ausdruck: 'Eiskasten',
+      hochdeutsch: 'Kühlschrank',
+      bedeutung: 'Da „Eiskasten" — der Kühlschrank, in Österreich noch weit verbreitet, auch wenn das Wort aus der Zeit stammt, als man tatsächlich mit Eis kühlte. „Hol a kühles Bier aus\'m Eiskasten." Der Begriff hat die Eisblöcke längst überlebt und meint das moderne Kühlgerät. „Da Eiskasten is leer" ist ein Alltagsdrama. Ein charmant altmodisches Wort, das die Kontinuität der österreichischen Alltagssprache zeigt, während Deutschland längst zum „Kühlschrank" gewechselt hat.',
+      beispiel: 'Da Eiskasten is leer, mir miassn dringend einkaufen gehn.',
+      beispiel_hd: 'Der Kühlschrank ist leer, wir müssen dringend einkaufen gehen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-326',
+      ausdruck: 'Polster-Zipf',
+      hochdeutsch: 'Trottel / Schlafmütze',
+      bedeutung: 'Da „Polster-Zipf" — ein gutmütiges Schimpfwort für einen Trottel, eine Schlafmütze oder einen begriffsstutzigen Menschen, wörtlich der Zipfel eines Kissens. „Du Polster-Zipf, des hob i dir scho dreimoi g\'sagt!" Bezeichnet jemanden, der nicht recht aufpasst, langsam von Begriff ist oder verschlafen wirkt. Die Beschimpfung ist eher liebevoll-spöttisch als ernsthaft kränkend. Ein typisch wienerisches Schimpfwort aus der Welt der Bettwäsche, kreativ und harmlos zugleich.',
+      beispiel: 'Du Polster-Zipf, jetzt host scho wieder ois überhört!',
+      beispiel_hd: 'Du Schlafmütze, jetzt hast du schon wieder alles überhört!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-327',
+      ausdruck: 'Trumm',
+      hochdeutsch: 'großes Stück / Brocken',
+      bedeutung: 's\'„Trumm" — ein großes Stück, ein gewaltiger Brocken, etwas Riesiges. „A Trumm von am Schnitzl ham ma kriegt!" Bezeichnet alles, was durch seine Größe beeindruckt: ein riesiges Stück Fleisch, ein massiger Mensch („a Trumm von am Kerl"), ein dicker Stein. „A Mordstrumm" steigert das Ganze noch. Ein ausdrucksstarkes Wiener Wort der Größenbeschreibung, das mit hörbarem Respekt oder Staunen die Wucht und das Ausmaß einer Sache betont.',
+      beispiel: 'A Trumm von am Schnitzl, des hängt über\'n Teller drüber!',
+      beispiel_hd: 'Ein riesiges Stück Schnitzel, das hängt über den Teller hinaus!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-328',
+      ausdruck: 'Schmarrn',
+      hochdeutsch: 'Unsinn / Blödsinn',
+      bedeutung: 'Da „Schmarrn" — Unsinn, Blödsinn, dummes Zeug, übertragen von der Mehlspeise gleichen Namens. „Red ned so an Schmarrn daher!" Was als Kaiserschmarrn auf den Teller kommt, wird im Gespräch zum sinnlosen Gerede. „A Schmarrn!" allein heißt „Quatsch!" oder „Von wegen!". „An Schmarrn machen" kann auch heißen, etwas verpfuschen. Ein vielseitiges Wort, das jede Form von Nonsens, Pfusch oder Ablehnung ausdrücken kann und im Alltag ständig fällt.',
+      beispiel: 'Red ned so an Schmarrn, des stimmt ja vorn und hintn ned!',
+      beispiel_hd: 'Rede nicht so einen Unsinn, das stimmt ja vorne und hinten nicht!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-329',
+      ausdruck: 'Gschicht',
+      hochdeutsch: 'Geschichte / Angelegenheit',
+      bedeutung: 'D\'„Gschicht" — die Geschichte, aber auch eine Angelegenheit, ein Vorfall oder eine heikle Sache. „Des is a depperte Gschicht." Die wienerische Verschleifung lässt das „e" fallen. „A Gschicht machen" heißt Umstände bereiten oder Theater machen. „A alte Gschicht" ist eine längst bekannte Sache. „Mach ka Gschicht!" bedeutet „Stell dich nicht so an!". Ein Allerweltswort, das von der erzählten Geschichte bis zum lästigen Problem alles umfassen kann.',
+      beispiel: 'Mach ka Gschicht, des renkt si scho wieder ein!',
+      beispiel_hd: 'Mach keine Umstände, das renkt sich schon wieder ein!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-330',
+      ausdruck: 'narrisch',
+      hochdeutsch: 'verrückt / wahnsinnig',
+      bedeutung: '„Narrisch" — verrückt, wahnsinnig, übergeschnappt, vom „Narren" abgeleitet. „Bist narrisch worden?" Kann echten Wahnsinn meinen oder bloß große Aufregung: „I wer narrisch vor lauter Wartn!" „Narrisch sein nach was" heißt etwas leidenschaftlich gern mögen. „Des is ja narrisch!" drückt Staunen aus. Ein vielseitiges Wiener Wort, das von liebevoller Begeisterung über Ungeduld bis zu echtem Irresein reicht und je nach Ton ganz Verschiedenes bedeuten kann.',
+      beispiel: 'Bist narrisch worden, so a Summ Geld fürs Auto auszugebn!',
+      beispiel_hd: 'Bist du verrückt geworden, so eine Summe Geld fürs Auto auszugeben!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-331',
+      ausdruck: 'Kiberer',
+      hochdeutsch: 'Polizist (abwertend)',
+      bedeutung: 'Da „Kiberer" — eine salopp-abwertende Wiener Bezeichnung für einen Polizisten, besonders einen Kriminalbeamten, aus dem Rotwelschen stammend. „Pass auf, do hint steht a Kiberer!" Bezeichnet im Milieu- und Gaunerjargon den Kriminalpolizisten oder allgemein einen Polizeibeamten. „D\'Kiberer" sind die Kripo oder die Polizei insgesamt. Ein Wort aus der Wiener Unterwelt- und Vorstadtsprache, das die distanziert-misstrauische Haltung gegenüber der Obrigkeit und den Ordnungshütern ausdrückt.',
+      beispiel: 'De Kiberer hom den Taschndieb am Praterstern erwischt.',
+      beispiel_hd: 'Die Polizisten haben den Taschendieb am Praterstern erwischt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-332',
+      ausdruck: 'Marmeladinger',
+      hochdeutsch: 'spöttisch für Deutsche / Norddeutsche',
+      bedeutung: 'Da „Marmeladinger" — eine spöttische, im Ersten Weltkrieg entstandene Bezeichnung der Österreicher für die (Nord-)Deutschen, weil deutsche Soldaten angeblich nur Marmelade als Brotaufstrich hatten, während die Österreicher Butter und Speck bekamen. „De Marmeladinger versteh\'n unsern Schmäh ned." Heute meist scherzhaft-neckisch gebraucht für die deutschen Nachbarn. Ein Wort, das die augenzwinkernde Rivalität zwischen Österreichern und Deutschen humorvoll auf den Punkt bringt.',
+      beispiel: 'De Marmeladinger sogn Kartoffel statt Erdäpfel, do schüttelt\'s mi!',
+      beispiel_hd: 'Die Deutschen sagen Kartoffel statt Erdäpfel, da schüttelt es mich!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-333',
+      ausdruck: 'Piefke',
+      hochdeutsch: 'spöttisch für Deutsche',
+      bedeutung: 'Da „Piefke" — die bekannteste österreichische Spottbezeichnung für die Deutschen, vor allem die Norddeutschen, mit ihrer als forsch empfundenen Art und Aussprache. „De Piefke kommen jeden Sommer zum Schifahren." Der Begriff geht vermutlich auf einen preußischen Militärkapellmeister namens Piefke zurück. „Piefkinese" ist eine scherzhafte Steigerung. Trägt eine Mischung aus Spott, Neckerei und gelegentlich echtem Ressentiment gegenüber dem großen Nachbarn in sich.',
+      beispiel: 'Im Skiort san im Winter de Piefke in da Überzahl.',
+      beispiel_hd: 'Im Skiort sind im Winter die Deutschen in der Überzahl.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-334',
+      ausdruck: 'Häusl',
+      hochdeutsch: 'Toilette / Klo',
+      bedeutung: 's\'„Häusl" — die Toilette, das Klo, ursprünglich das Plumpsklo am Gang oder im Hof, Verkleinerung von „Haus". „I muss schnell aufs Häusl." In den alten Wiener Bassena-Wohnungen war das „Gangl-Häusl" das geteilte Klo am Gang. „Aufs Häusl gehn" ist die alltägliche Umschreibung. Ein bodenständiges Wort der Wiener Alltagssprache, das an die Wohnverhältnisse der Gründerzeit erinnert, als jede Etage sich eine Toilette teilen musste.',
+      beispiel: 'Wo is do des Häusl, i muass dringend!',
+      beispiel_hd: 'Wo ist hier die Toilette, ich muss dringend!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-335',
+      ausdruck: 'Stiege',
+      hochdeutsch: 'Treppe',
+      bedeutung: 'D\'„Stiege" — die Treppe, in Österreich das übliche Wort, während „Treppe" eher norddeutsch klingt. „Geh de Stiege rauf, dann bist im zweiten Stock." Das „Stiegenhaus" ist das Treppenhaus. „Über d\'Stiegn falln" heißt die Treppe hinunterstürzen. In den Wiener Altbauten sind die Stiegen oft breit, mit kunstvollen Geländern. Ein grundlegendes Wort des österreichischen Deutsch, das die sprachliche Eigenständigkeit gegenüber dem bundesdeutschen Wortschatz unterstreicht.',
+      beispiel: 'De Stiege is so steil, dass i jedesmoi schnauf wia a Loktiv.',
+      beispiel_hd: 'Die Treppe ist so steil, dass ich jedes Mal schnaufe wie eine Lokomotive.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-336',
+      ausdruck: 'Gusto',
+      hochdeutsch: 'Appetit / Lust',
+      bedeutung: 'Da „Gusto" — der Appetit, die Lust auf etwas, vom italienischen „gusto" (Geschmack). „I hob an Gusto auf was Süßes." Drückt das spontane Verlangen nach einer bestimmten Speise oder Sache aus. „A Gustostückerl" ist ein besonderer Leckerbissen oder ein Schmankerl, auch im übertragenen Sinn das Schönste an einer Sache. Ein genussfreudiges Wort, das die wienerische Lebenslust und Freude am Essen widerspiegelt und den italienischen Einfluss der k.u.k.-Zeit zeigt.',
+      beispiel: 'I hob an Gusto auf a Mehlspeis, geh ma ins Kaffeehaus!',
+      beispiel_hd: 'Ich habe Appetit auf eine Mehlspeise, gehen wir ins Kaffeehaus!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-337',
+      ausdruck: 'Gustostückerl',
+      hochdeutsch: 'Leckerbissen / Glanzstück',
+      bedeutung: 's\'„Gustostückerl" — ein besonderer Leckerbissen, ein Schmankerl oder im übertragenen Sinn das Beste, Feinste an einer Sache, vom „Gusto" (Appetit). „Des Konzert war a echtes Gustostückerl." Kann eine erlesene Speise meinen oder das Glanzstück einer Sammlung, einer Aufführung, einer Argumentation. „Da legt er sich a Gustostückerl auf" heißt, er hebt sich das Beste auf. Ein genießerisches Wort, das die wienerische Freude am Besonderen und Auserlesenen ausdrückt.',
+      beispiel: 'Des letzte Stückerl Sachertortn heb i ma als Gustostückerl auf.',
+      beispiel_hd: 'Das letzte Stück Sachertorte hebe ich mir als Leckerbissen auf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-338',
+      ausdruck: 'Häusler',
+      hochdeutsch: 'Kleinhäusler / armer Schlucker',
+      bedeutung: 'Da „Häusler" — ursprünglich ein Kleinbauer mit nur einem Häuschen ohne viel Grund, im Wienerischen übertragen auf einen armen Schlucker oder kleinen Mann. „Mir san hoit nur kleine Häusler." Drückt eine bescheidene soziale Stellung aus, oft mit einem gewissen Stolz auf die eigene Redlichkeit trotz geringer Mittel. Ein Wort, das die soziale Schichtung des alten Wien widerspiegelt und die Selbstbezeichnung des einfachen Volkes gegenüber den Reichen und Mächtigen war.',
+      beispiel: 'Was woin de von uns kleinen Häusler scho gross verlangen?',
+      beispiel_hd: 'Was wollen die von uns kleinen Leuten schon viel verlangen?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-339',
+      ausdruck: 'Mascherl-Bua',
+      hochdeutsch: 'feiner Pinkel / Geck',
+      bedeutung: 'Da „Mascherl-Bua" — ein feiner Pinkel, ein herausgeputzter Geck oder Schönling, abgeleitet vom „Mascherl" (Fliege, Schleife). „Schau dir den Mascherl-Bua an, ganz aufgmascherlt!" Bezeichnet spöttisch einen Mann, der besonders elegant oder geziert auftritt, oft mit dem Beiklang, er sei mehr Schein als Sein. „Aufgmascherlt" heißt fein zurechtgemacht. Ein typisch wienerischer Spott für die Eitelkeit und das Getue feiner Herren, der mit Augenzwinkern serviert wird.',
+      beispiel: 'Der Mascherl-Bua glaubt, er is wer, dabei kann er goar nix.',
+      beispiel_hd: 'Der feine Pinkel glaubt, er ist wer, dabei kann er gar nichts.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-340',
+      ausdruck: 'Lercherl',
+      hochdeutsch: 'Loch / kleiner Riss',
+      bedeutung: 's\'„Lercherl" — ein kleines Loch, ein Riss oder eine schadhafte Stelle, etwa im Strumpf oder Kleidungsstück. „I hob a Lercherl im Strumpf." Verkleinerungsform, die das Missgeschick eines kleinen Defekts beschreibt. „A Lercherlschaß" ist übrigens eine wienerische Bezeichnung für eine völlige Kleinigkeit oder Belanglosigkeit. Ein bildhaftes Wort, das die wienerische Lust an Verkleinerungsformen zeigt und alltägliche kleine Ärgernisse mit Humor benennt.',
+      beispiel: 'In mei\'m Lieblingspulli is a Lercherl, des muss i flicken.',
+      beispiel_hd: 'In meinem Lieblingspulli ist ein Loch, das muss ich flicken.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-341',
+      ausdruck: 'Wuzzi',
+      hochdeutsch: 'Schwächling / kleiner Kerl',
+      bedeutung: 'Da „Wuzzi" — ein kleiner, schwächlicher oder unbedeutender Mensch, oft etwas spöttisch gemeint. „So a Wuzzi und macht so a großes Gschrei." Bezeichnet jemanden, der schmächtig, klein oder von geringer Statur ist, manchmal auch jemanden ohne Durchsetzungskraft. Kann aber auch liebevoll für ein kleines Wesen verwendet werden. Verwandt mit „Wuzerl" (rundliches Kind). Ein typisches Wiener Wort, das Körpergröße und Bedeutung augenzwinkernd miteinander verknüpft.',
+      beispiel: 'Der Wuzzi will mit mir rauf\'n? Da lach i mi ja kaputt!',
+      beispiel_hd: 'Der Schwächling will mit mir raufen? Da lache ich mich ja kaputt!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-342',
+      ausdruck: 'g\'schert',
+      hochdeutsch: 'bäuerisch / ungehobelt',
+      bedeutung: '„G\'schert" — ungehobelt, bäuerisch, ungebildet, ursprünglich auf die kurz geschorenen Haare der Bauern und Knechte anspielend. „So a g\'scherter Kerl, ka Manieren!" Ein „G\'scherter" ist im Wiener Hochmut ein Landbewohner ohne städtischen Schliff. Das Wort drückt die alte Spannung zwischen Stadt und Land aus, den Dünkel des Wieners gegenüber dem Provinzler. Heute oft humorvoll-spöttisch, manchmal aber auch herablassend für grobes, ungeschliffenes Benehmen gebraucht.',
+      beispiel: 'Sei ned so g\'schert und benimm di amoi anständig bei Tisch!',
+      beispiel_hd: 'Sei nicht so ungehobelt und benimm dich einmal anständig bei Tisch!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-343',
+      ausdruck: 'Bschoad',
+      hochdeutsch: 'Mitgebrachtes Essen vom Heurigen',
+      bedeutung: 'Da „Bschoad" oder „Bscheid" — die mitgebrachten Speisen, die man früher beim Heurigen verzehren durfte, oder das Essenspaket, das man von einem Fest mit nach Hause bekam. „D\'Oma hot uns an Bschoad eingepackt." Beim traditionellen Heurigen brachte man die Jause selbst mit, nur der Wein wurde ausgeschenkt. Heute erinnert das „Bschoadbinkerl" (eingepacktes Essen zum Mitnehmen) an diesen Brauch. Ein Stück Wiener Wirtshauskultur, das Gastfreundschaft und Sparsamkeit verband.',
+      beispiel: 'Von da Hochzeit hob i an ordentlichen Bschoad mit hamg\'numma.',
+      beispiel_hd: 'Von der Hochzeit habe ich ein ordentliches Essenspaket mit nach Hause genommen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-344',
+      ausdruck: 'Schlapfen',
+      hochdeutsch: 'Hausschuhe / Pantoffeln',
+      bedeutung: 'D\'„Schlapfen" — die Hausschuhe oder Pantoffeln, lautmalerisch nach dem schlappenden Geräusch beim Gehen benannt. „Zieh da d\'Schlapfen an, da Boden is kalt." Auch der Mund kann scherzhaft als „Schlapfen" bezeichnet werden: „Hoit d\'Schlapfen!" heißt „Halt den Mund!". In der Schule sind „Schlapfen" oft die Hausschuhe zum Wechseln. Ein gemütliches Wort der häuslichen Sphäre, das den behaglichen Wiener Wohnalltag und seine Vorliebe für Bequemlichkeit widerspiegelt.',
+      beispiel: 'Zieh da d\'Schlapfen an, sunst hoist da no a Verkühlung!',
+      beispiel_hd: 'Zieh dir die Hausschuhe an, sonst holst du dir noch eine Erkältung!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-345',
+      ausdruck: 'Haxn',
+      hochdeutsch: 'Bein / Fuß',
+      bedeutung: 'D\'„Haxn" — das Bein oder der Fuß, ein robustes Wiener Körperwort. „Mir tuan d\'Haxn weh vom vielen Gehn." Beim Essen ist die „Stelze" oder „Haxn" das Schweinshaxerl. „Sich d\'Haxn ausreißen" heißt sich sehr anstrengen. „A Haxn stelln" bedeutet jemandem ein Bein stellen, ihn hereinlegen. Ein kräftiges, bildhaftes Wort, das die wienerische Direktheit in der Beschreibung des Körpers zeigt und in zahllosen Redewendungen vorkommt.',
+      beispiel: 'Nach dem langen Marsch tuan ma vielleicht d\'Haxn weh!',
+      beispiel_hd: 'Nach dem langen Marsch tun mir vielleicht die Beine weh!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-346',
+      ausdruck: 'Goschn halten',
+      hochdeutsch: 'den Mund halten',
+      bedeutung: '„D\'Goschn halten" — den Mund halten, still sein, von der „Goschn" (Mund, Maul). „Hoit endlich amoi dei Goschn!" Eine derbe, aber im Alltag häufige Aufforderung zur Ruhe. „A große Goschn hom" heißt großmäulig sein, vorlaut daherreden. „Sich d\'Goschn zerreißen" bedeutet über jemanden tratschen. Ein kräftiges Wiener Idiom, das die direkte, ungeschminkte Art der Stadt im Umgang miteinander zeigt und ohne Umschweife zur Sache kommt.',
+      beispiel: 'Kannst ned amoi fünf Minutn dei Goschn halten?',
+      beispiel_hd: 'Kannst du nicht einmal fünf Minuten den Mund halten?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-347',
+      ausdruck: 'Wadlbeißer',
+      hochdeutsch: 'Nörgler / aggressiver Kritiker',
+      bedeutung: 'Da „Wadlbeißer" — ein hinterhältiger Nörgler, ein streitsüchtiger kleiner Kritiker, wörtlich einer, der in die Waden beißt wie ein kleiner Kläffer. „Der politische Wadlbeißer hetzt gegen olle." Bezeichnet jemanden, der ständig herumnörgelt, stänkert und andere von hinten attackiert, ohne offen zu kämpfen. Besonders in der österreichischen Politik ein gängiges Schimpfwort. Ein bildkräftiges Wort, das die Verachtung für feige, kleinliche Streithanseln auf den Punkt bringt.',
+      beispiel: 'Der Wadlbeißer hot wieder an jedem was auszusetzen g\'habt.',
+      beispiel_hd: 'Der Nörgler hat wieder an jedem etwas auszusetzen gehabt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-348',
+      ausdruck: 'Schmankerl-Wirt',
+      hochdeutsch: 'Wirt guter Hausmannskost',
+      bedeutung: 'Da „Schmankerl-Wirt" — ein Wirt, der für seine besonderen kulinarischen Köstlichkeiten und gute Hausmannskost bekannt ist, vom „Schmankerl" (Leckerbissen). „Beim Schmankerl-Wirt gibt\'s des beste Gulasch der Stadt." Bezeichnet einen Gastronomen, der mit Liebe und Können kocht und dafür einen guten Ruf genießt. Im Wiener Beisl-Leben ein Ehrentitel. Ein Wort, das die Wertschätzung für ehrliche, schmackhafte Küche und gemütliche Wirtshäuser ausdrückt, die zur Wiener Kultur gehören.',
+      beispiel: 'Zum Geburtstog gehn ma zum Schmankerl-Wirt, da schmeckt\'s ois!',
+      beispiel_hd: 'Zum Geburtstag gehen wir zum Wirt mit der guten Hausmannskost, da schmeckt alles!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-349',
+      ausdruck: 'Tschoperl',
+      hochdeutsch: 'Schwächling / Tollpatsch',
+      bedeutung: 's\'„Tschoperl" — ein unbeholfener, schwächlicher oder einfältiger Mensch, ein Tollpatsch, meist mitleidig-spöttisch gemeint. „Des oarme Tschoperl bringt goar nix z\'samm." Bezeichnet jemanden, der hilflos, ungeschickt oder lebensuntüchtig wirkt, oft mit einem Anflug von Mitleid statt echter Verachtung. Verwandt mit „Tschapperl" für ein hilfloses kleines Wesen. Ein typisch wienerisches Wort, das Schwäche und Unbeholfenheit mit einer gewissen gutmütigen Nachsicht benennt.',
+      beispiel: 'Loss des oarme Tschoperl in Ruh, der kann ja nix dafür!',
+      beispiel_hd: 'Lass den armen Tollpatsch in Ruhe, der kann ja nichts dafür!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-350',
+      ausdruck: 'Mascha',
+      hochdeutsch: 'Pegerl / Spielmarke',
+      bedeutung: 'D\'„Mascha" oder „Masch" — beim Kartenspiel und im Alltag ein Punkt, eine Spielmarke oder ein Strich auf dem Bierdeckel zum Mitzählen der Konsumation. „Mach ma no a Mascha für des Bier." Im Beisl wurde traditionell mit Strichen angeschrieben. „A Mascha machen" heißt einen Punkt notieren oder beim Spiel einen Stich machen. Ein Wort aus der Welt der Wirtshausspiele und des Anschreibens, das an die Zeiten erinnert, als im Beisl noch mit Kreide gerechnet wurde.',
+      beispiel: 'Herr Ober, no a Mascha für a Krügerl, bitte!',
+      beispiel_hd: 'Herr Ober, noch einen Strich für ein großes Bier, bitte!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-351',
+      ausdruck: 'Schani-Bua',
+      hochdeutsch: 'Laufbursche / Gehilfe',
+      bedeutung: 'Da „Schani-Bua" — der Laufbursche, Gehilfe oder die rechte Hand, vom „Schani" (Diener, Gehilfe, von französisch „Jean"). „Bin i denn dei Schani-Bua, dass i ois mach?" Bezeichnet jemanden, der für die niederen Dienste und Botengänge zuständig ist. Vom „Schani" leitet sich auch der „Schanigarten" ab, der vom Schani auf den Gehsteig gestellte Gastgarten. Ein Wort, das die soziale Hierarchie der Dienstboten und Gehilfen im alten Wien widerspiegelt.',
+      beispiel: 'I bin ned dei Schani-Bua, hol da dei Zeug söwa!',
+      beispiel_hd: 'Ich bin nicht dein Laufbursche, hol dir deine Sachen selber!',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-352',
+      ausdruck: 'Lavoir',
+      hochdeutsch: 'Waschschüssel',
+      bedeutung: 's\'„Lavoir" — die Waschschüssel oder das Waschbecken, ein Wort französischer Herkunft (von „laver", waschen), das in der k.u.k.-Zeit ins Wienerische kam. „Wasch da d\'Händ im Lavoir." In den alten Wohnungen ohne fließend Wasser war das Lavoir auf dem Waschtisch unentbehrlich. Heute meist altmodisch, aber bei älteren Wienern noch gebräuchlich. Ein Wort, das den französischen Kultureinfluss am Wiener Hof und in der gehobenen Sprache der Monarchie bezeugt.',
+      beispiel: 'Friaher hot ma sich im Lavoir g\'wäschn, ka Badzimmer hot\'s gebn.',
+      beispiel_hd: 'Früher hat man sich in der Waschschüssel gewaschen, kein Badezimmer gab es.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-353',
+      ausdruck: 'Trottoir',
+      hochdeutsch: 'Gehsteig / Bürgersteig',
+      bedeutung: 's\'„Trottoir" — der Gehsteig oder Bürgersteig, ein Wort französischer Herkunft, das im alten Wien gebräuchlich war. „Geh am Trottoir, ned auf da Stroßn!" Auch „Gehsteig" wird gesagt, aber das Trottoir hat den feinen Klang der Monarchie-Zeit. „Trottoir-Schwalbe" war früher eine spöttische Bezeichnung. Ein Wort, das den starken französischen Einfluss auf die Wiener Stadtsprache des 19. Jahrhunderts zeigt, als Französisch die Sprache der vornehmen Gesellschaft war.',
+      beispiel: 'Bleib am Trottoir, do kommen Autos mit an Höllntempo daher!',
+      beispiel_hd: 'Bleib auf dem Gehsteig, da kommen Autos mit einem Höllentempo daher!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-354',
+      ausdruck: 'Plafond',
+      hochdeutsch: 'Zimmerdecke',
+      bedeutung: 'Da „Plafond" — die Zimmerdecke, ein Wort französischer Herkunft, das im Wienerischen heimisch wurde. „In dem Altbau is da Plafond drei Meter hoch." In den Wiener Gründerzeitwohnungen sind die Plafonds oft mit Stuck verziert. „Mir foit da Plafond auf\'n Kopf" heißt, man hält es zu Hause nicht mehr aus. Ein Wort, das den französischen Einfluss auf die Wiener Wohnkultur und Architektursprache zeigt und die hohen, repräsentativen Räume der Stadt charakterisiert.',
+      beispiel: 'Da Plafond in der guten Stubn is mit Stuck verziert, a Pracht!',
+      beispiel_hd: 'Die Zimmerdecke im guten Wohnzimmer ist mit Stuck verziert, eine Pracht!',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-355',
+      ausdruck: 'Fauteuil',
+      hochdeutsch: 'Lehnsessel / Polstersessel',
+      bedeutung: 'Da „Fauteuil" — der gepolsterte Lehnsessel, ein elegantes Wort französischer Herkunft, das in Wien für den bequemen Polstersessel verwendet wird. „Setz di in den Fauteuil und mach\'s da gmütlich." Während der einfache Stuhl der „Sessel" ist, ist der Fauteuil das vornehme, gepolsterte Sitzmöbel. Ein Wort aus der Welt der bürgerlichen Wiener Salons, das den französischen Einfluss auf die gehobene Wohnkultur der Monarchie bezeugt und Eleganz und Behaglichkeit verbindet.',
+      beispiel: 'Da Opa sitzt am liabsten in sei\'m alten Fauteuil und liest d\'Zeitung.',
+      beispiel_hd: 'Der Opa sitzt am liebsten in seinem alten Lehnsessel und liest die Zeitung.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-356',
+      ausdruck: 'Tschick weghaun',
+      hochdeutsch: 'Zigarette wegwerfen / Schluss machen',
+      bedeutung: '„An Tschick weghaun" — die Zigarette wegwerfen, oft als Geste des Aufbruchs oder im übertragenen Sinn für das Beenden von etwas. „Hau den Tschick weg, mir gehn!" Vom „Tschick" (Zigarette). Beschreibt das achtlose Wegschnippen der Zigarette, etwa wenn man losgeht oder mit etwas fertig ist. Ein Bild aus dem Alltag der Raucher, das die lässige, oft ruppige Gestik der Wiener Straße einfängt und für Endgültigkeit und Aufbruch stehen kann.',
+      beispiel: 'Hau den Tschick weghaun und kumm, de Bim foaht glei!',
+      beispiel_hd: 'Wirf die Zigarette weg und komm, die Straßenbahn fährt gleich!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-357',
+      ausdruck: 'aufmücken',
+      hochdeutsch: 'aufbegehren / widersprechen',
+      bedeutung: '„Aufmücken" — aufbegehren, sich widersetzen, frech widersprechen, oft gegen eine Autorität. „Wennst aufmuckst, fliegst raus!" Bezeichnet das trotzige Aufbäumen gegen Anweisungen, Regeln oder Vorgesetzte. „Ned aufmücken!" ist eine barsche Aufforderung zum Gehorsam. Ein kräftiges Wiener Wort, das den Widerstand des kleinen Mannes gegen die Obrigkeit ebenso meinen kann wie das Aufmüpfige eines Kindes. Drückt Rebellion und Ungehorsam mit einem Unterton von Warnung aus.',
+      beispiel: 'Muck ned auf, sunst gibt\'s no a Mordsg\'schicht mit\'m Chef!',
+      beispiel_hd: 'Begehr nicht auf, sonst gibt es noch eine große Auseinandersetzung mit dem Chef!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-358',
+      ausdruck: 'Gschaftlhuber',
+      hochdeutsch: 'Wichtigtuer / Geschäftiger',
+      bedeutung: 'Da „Gschaftlhuber" — ein Wichtigtuer, ein übertrieben geschäftiger Mensch, der sich überall einmischt und wichtigmacht, von „Gschäft" (Geschäftigkeit). „Der Gschaftlhuber muass si überoi einmischen!" Bezeichnet jemanden, der mit viel Getue und Aufhebens herumwerkelt, ohne wirklich etwas zu leisten, und sich in alles einmengt. „Gschaftln" heißt geschäftig herumwuseln. Ein treffendes Wiener Wort, das den Spott über aufdringliche Betriebsamkeit und aufgesetzte Wichtigkeit auf den Punkt bringt.',
+      beispiel: 'Der Gschaftlhuber muass bei jeder Sitzung sei\'n Senf dazugebn.',
+      beispiel_hd: 'Der Wichtigtuer muss bei jeder Sitzung seinen Senf dazugeben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-359',
+      ausdruck: 'Fetzen-Schädel',
+      hochdeutsch: 'Betrunkener / Wirrkopf',
+      bedeutung: 'Da „Fetzen-Schädel" — ein Betrunkener oder ein wirrer, unzuverlässiger Mensch, vom „Fetzn" (Rausch, auch Lumpen). „Der Fetzen-Schädel kommt jeden Tog besoffen ham." „An Fetzn hom" heißt betrunken sein. Bezeichnet jemanden, der entweder dem Alkohol verfallen ist oder generell einen unklaren, wirren Kopf hat. Ein bildhaftes Wiener Schimpfwort, das die Auflösung der Sinne durch den Rausch oder die geistige Verworrenheit drastisch auf den Punkt bringt.',
+      beispiel: 'Mit dem Fetzen-Schädel kannst ka vernünftiges Wort redn.',
+      beispiel_hd: 'Mit dem Betrunkenen kannst du kein vernünftiges Wort reden.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-360',
+      ausdruck: 'angfressen',
+      hochdeutsch: 'verärgert / sauer',
+      bedeutung: '„Angfressen" sein — verärgert, sauer, wütend sein, wörtlich „angefressen". „I bin so angfressen auf den, des glaubst ned!" Beschreibt einen Zustand des Grolls und Ärgers, wenn einem etwas gehörig gegen den Strich geht. „A angfressene Miene" ist ein verdrossenes Gesicht. Ein häufiges Wiener Befindlichkeitswort, das den aufgestauten Unmut treffend ausdrückt, irgendwo zwischen tiefem Grant und offenem Zorn. Drückt aus, dass einem der Kragen geplatzt ist.',
+      beispiel: 'I bin vielleicht angfressen, weil scho wieder der Zug ausg\'falln is!',
+      beispiel_hd: 'Ich bin vielleicht verärgert, weil schon wieder der Zug ausgefallen ist!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-361',
+      ausdruck: 'Lercherl-Schaß',
+      hochdeutsch: 'völlige Kleinigkeit / Lappalie',
+      bedeutung: 'Da „Lercherl-Schaß" — eine völlige Kleinigkeit, eine Belanglosigkeit, etwas vollkommen Unbedeutendes, drastisch zusammengesetzt. „Reg di ned auf, des is do nur a Lercherl-Schaß!" Bezeichnet eine Sache, die keinerlei Bedeutung hat und um die sich aufzuregen sich nicht lohnt. Eine derbe, aber im Alltag durchaus geläufige Wiener Redensart, die mit drastischer Bildhaftigkeit die Nichtigkeit einer Angelegenheit betont und zur Gelassenheit auffordert.',
+      beispiel: 'Wegen so am Lercherl-Schaß machst du so a Theater?',
+      beispiel_hd: 'Wegen so einer Lappalie machst du so ein Theater?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-362',
+      ausdruck: 'Bankert',
+      hochdeutsch: 'uneheliches Kind / Lausbub',
+      bedeutung: 'Da „Bankert" — ursprünglich ein uneheliches Kind (auf einer Bank statt im Ehebett gezeugt), im Wienerischen oft derb-spöttisch für ein freches Kind oder einen Lausbuben. „So a frecher Bankert!" Der historisch abwertende Beiklang ist im Alltag meist verblasst, oft wird es fast liebevoll für ein durchtriebenes Kind gebraucht. Ein altes Wort mit derber Vergangenheit, das die ungeschminkte Direktheit der Wiener Volkssprache zeigt und heute mehr Schalk als Schmähung enthält.',
+      beispiel: 'De frechn Bankert\'n hom ma de Kirschen vom Baum g\'stohln!',
+      beispiel_hd: 'Die frechen Lausbuben haben mir die Kirschen vom Baum gestohlen!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-363',
+      ausdruck: 'Hawi-Mahlzeit',
+      hochdeutsch: 'Begrüßung unter Kumpels',
+      bedeutung: '„Hawi-Mahlzeit" — eine lässige, scherzhafte Begrüßung unter Freunden, eine Kombination aus „Hawi" (Kurzform von Hawara, Freund) und dem üblichen „Mahlzeit"-Gruß. „Hawi-Mahlzeit, wie schaut\'s aus bei dir?" Eine ungezwungene, oft augenzwinkernde Grußformel im Kollegen- und Freundeskreis, besonders rund um die Mittagszeit. Verbindet die wienerische Kumpelhaftigkeit mit dem österreichischen „Mahlzeit". Ein heiteres Wort der Alltagskommunikation unter Vertrauten.',
+      beispiel: 'Hawi-Mahlzeit, setz di her, mir hom grad über di g\'redt!',
+      beispiel_hd: 'Hallo Kumpel, setz dich her, wir haben gerade über dich geredet!',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'w-364',
+      ausdruck: 'aufmandeln',
+      hochdeutsch: 'sich aufspielen / aufplustern',
+      bedeutung: 'Sich „aufmandeln" — sich aufspielen, sich wichtigmachen, den starken Mann markieren, vom „Mandl" (kleiner Mann). „Pudel di ned auf und mandel di ned so auf!" Bezeichnet jemanden, der sich aufbläst, prahlt oder sich kämpferisch gibt, um größer zu wirken, als er ist. Ähnlich wie „aufpudeln", oft auf einen Mann bezogen, der sich provokant aufführt. Ein bildhaftes Wiener Wort, das den Spott über männliche Großtuerei und Imponiergehabe treffend einfängt.',
+      beispiel: 'Mandel di ned so auf, gegn den hosch eh ka Chance!',
+      beispiel_hd: 'Spiel dich nicht so auf, gegen den hast du sowieso keine Chance!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-365',
+      ausdruck: 'Bröckerl',
+      hochdeutsch: 'kräftiger Mann / Muskelpaket',
+      bedeutung: 's\'„Bröckerl" — ein kräftiger, gut gebauter Mann, ein Muskelpaket, im Sport ein robuster Spieler. „Der neue Stürmer is a echtes Bröckerl." Bezeichnet jemanden mit beeindruckender Statur und Kraft, oft anerkennend gemeint. Im Fußball ist ein „Bröckerl" ein durchsetzungsstarker, körperlich überlegener Spieler. Verwandt mit „Brocken". Ein Wort, das Respekt vor körperlicher Stärke ausdrückt und besonders im Sportkontext der Wiener gerne verwendet wird, etwa bei Rapid oder der Austria.',
+      beispiel: 'Mit so am Bröckerl im Sturm gwinnt Rapid sicher des Derby!',
+      beispiel_hd: 'Mit so einem Muskelpaket im Sturm gewinnt Rapid sicher das Derby!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-366',
+      ausdruck: 'Wuchtel druckn',
+      hochdeutsch: 'Witze reißen / flunkern',
+      bedeutung: '„Wuchteln druckn" — Witze reißen, flunkern, Sprüche klopfen oder jemandem etwas vorflunkern, von der „Wuchtl" (Ball, auch lustiger Spruch). „Der druckt den ganzn Tog Wuchteln." Im Fußball ist die Wuchtl der Ball, im übertragenen Sinn der flotte Spruch. „Wuchteln druckn" verbindet beides: Sprüche raushauen wie Bälle. Ein typisch wienerisches Idiom für den geselligen Wortwitz, das Schmäh-Führen und die Lust am unterhaltsamen Schwindeln im Freundeskreis.',
+      beispiel: 'Der druckt a Wuchtel druckn nach der andern, da lochst di krumm!',
+      beispiel_hd: 'Der reißt einen Witz nach dem anderen, da lachst du dich krumm!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-367',
+      ausdruck: 'Heisl-Papier',
+      hochdeutsch: 'Toilettenpapier',
+      bedeutung: 's\'„Heisl-Papier" — das Toilettenpapier, zusammengesetzt aus „Heisl/Häusl" (Klo) und Papier. „Es is ka Heisl-Papier mehr da!" Eine bodenständige, alltägliche Bezeichnung für das WC-Papier, derber und vertrauter als das hochdeutsche Wort. Gehört zum unverblümten Wiener Haushaltsvokabular. Spiegelt die direkte, unprätentiöse Art der Wiener wider, auch banale Dinge des Alltags beim Namen zu nennen, ohne falsche Scham oder gespreizte Höflichkeit.',
+      beispiel: 'Geh schnell ins Gschäft, mir hom ka Heisl-Papier mehr daham!',
+      beispiel_hd: 'Geh schnell ins Geschäft, wir haben kein Toilettenpapier mehr zu Hause!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-368',
+      ausdruck: 'pfundig',
+      hochdeutsch: 'großartig / prima',
+      bedeutung: '„Pfundig" — großartig, prima, hervorragend, ein anerkennendes Wort für etwas wirklich Gutes. „Des hosch pfundig g\'macht!" Drückt Begeisterung und Lob aus, ähnlich wie „leiwand" oder „super". „A pfundige Sach" ist eine tolle Angelegenheit. Verwandt mit „Pfundskerl" für einen prächtigen Menschen. Ein gemütliches, leicht altmodisches Wiener Lobwort, das warme Zustimmung und Wertschätzung signalisiert und etwas als rundum gelungen und erfreulich bezeichnet.',
+      beispiel: 'Des Fest gestern war pfundig, so guad hob i mi lang ned amüsiert!',
+      beispiel_hd: 'Das Fest gestern war großartig, so gut habe ich mich lange nicht amüsiert!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-369',
+      ausdruck: 'Hausmasta',
+      hochdeutsch: 'Hausmeister',
+      bedeutung: 'Da „Hausmasta" — der Hausmeister, eine zentrale Figur des Wiener Wohnalltags, zuständig für Reinigung, Reparaturen und Ordnung im Haus. „Da Hausmasta hot scho wieder a schlechte Laune." Im alten Wien hatte der Hausmeister oft große Macht über die Mieter, sperrte abends das Tor zu (das „Sperrsechserl" war das Trinkgeld dafür). Eine klassische, manchmal gefürchtete Wiener Figur. Heute oft durch Hausbetreuungsfirmen ersetzt, aber als Begriff fest verankert.',
+      beispiel: 'Da Hausmasta hot si beschwert, weil i am Gang g\'raucht hob.',
+      beispiel_hd: 'Der Hausmeister hat sich beschwert, weil ich am Gang geraucht habe.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-370',
+      ausdruck: 'Sperrsechserl',
+      hochdeutsch: 'Trinkgeld fürs Tor-Aufsperren',
+      bedeutung: 's\'„Sperrsechserl" — das kleine Trinkgeld (ursprünglich sechs Kreuzer), das man dem Hausmeister gab, wenn er nach dem nächtlichen Toresperren das Haustor noch aufsperrte. „Hosch a Sperrsechserl fürn Hausmasta?" Bis in die 1920er Jahre wurden die Wiener Haustore um 22 Uhr verschlossen, und wer später heimkam, musste klingeln und zahlen. Ein historisches Wort, das ein vergangenes Stück Wiener Stadtkultur und das einstige Machtmonopol der Hausmeister lebendig hält.',
+      beispiel: 'Friaher hot ma a Sperrsechserl braucht, sunst is ma ned eini kumma.',
+      beispiel_hd: 'Früher hat man ein Trinkgeld gebraucht, sonst ist man nicht hineingekommen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'w-371',
+      ausdruck: 'Tröpferlbad-Zeit',
+      hochdeutsch: 'alte, einfache Zeiten',
+      bedeutung: 'D\'„Tröpferlbad-Zeit" — eine Anspielung auf die alten, einfachen Zeiten, als man ohne eigenes Bad ins öffentliche Brausebad („Tröpferlbad") gehen musste. „Des war no in da Tröpferlbad-Zeit, do hot ma nix g\'habt." Die Tröpferlbäder waren öffentliche Duschanstalten für die Wiener Arbeiterbevölkerung, die in ihren Wohnungen kein Badezimmer hatte. Der Begriff steht nostalgisch für die bescheidenen Lebensumstände der Vergangenheit und die Mühen des alltäglichen Lebens im alten Wien.',
+      beispiel: 'In da Tröpferlbad-Zeit hot ma sich no über a warme Stubn g\'freut.',
+      beispiel_hd: 'In den alten Zeiten hat man sich noch über eine warme Stube gefreut.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-372',
+      ausdruck: 'Mocca',
+      hochdeutsch: 'kleiner schwarzer Kaffee',
+      bedeutung: 'Da „Mocca" — ein kleiner, kräftiger schwarzer Kaffee, im Wiener Kaffeehaus eine der klassischen Bestellungen. „A kleinen Mocca, bitte!" Wird auch „kleiner Schwarzer" genannt, der „große Schwarze" ist die doppelte Menge. Der Mocca steht für die Wiener Kaffeehauskultur, in der jede Kaffeevariante ihren eigenen Namen hat. Ein Wort aus der reichen Wiener Kaffee-Terminologie, die vom Einspänner über die Melange bis zum Verlängerten reicht und weltberühmt ist.',
+      beispiel: 'Nach\'m Essen brauch i no an kleinen Mocca zum Verdauen.',
+      beispiel_hd: 'Nach dem Essen brauche ich noch einen kleinen schwarzen Kaffee zum Verdauen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-373',
+      ausdruck: 'Kapuziner',
+      hochdeutsch: 'Kaffee mit wenig Schlagobers',
+      bedeutung: 'Da „Kapuziner" — ein Wiener Kaffee, ein kleiner Schwarzer mit einem Schuss Schlagobers, der ihm die bräunliche Farbe der Kapuzinermönchskutte gibt. „A Kapuziner und a Glas Wasser, bitte." Nicht zu verwechseln mit dem italienischen Cappuccino, der Kapuziner ist die ursprüngliche Wiener Variante. Ein Wort aus der traditionsreichen Wiener Kaffeehauskultur, das zeigt, wie liebevoll und detailliert die Wiener ihre Kaffeespezialitäten benennen und unterscheiden.',
+      beispiel: 'Im Kaffeehaus bestell i ma am liabsten an Kapuziner zur Zeitung.',
+      beispiel_hd: 'Im Kaffeehaus bestelle ich mir am liebsten einen Kaffee mit etwas Schlagobers zur Zeitung.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-374',
+      ausdruck: 'Fiaker (Kaffee)',
+      hochdeutsch: 'Mokka mit Rum und Schlagobers',
+      bedeutung: 'Da „Fiaker" — als Kaffeespezialität ein großer Schwarzer mit Rum oder Kirschwasser, Zucker und Schlagobers, benannt nach den Wiener Kutschern. „A Fiaker zum Aufwärmen im Winter!" Der Fiaker-Kaffee war einst das Getränk der Kutscher, die sich an kalten Tagen damit aufwärmten. Im Glas serviert, mit einer Schlagobershaube. Ein Wort, das die Wiener Kaffeehauskultur mit der Welt der berühmten Pferdekutschen verbindet und Wärme, Genuss und Tradition vereint.',
+      beispiel: 'Bei der Kält\'n geht nix über an Fiaker (Kaffee) mit ordentlich Rum!',
+      beispiel_hd: 'Bei der Kälte geht nichts über einen Mokka mit Rum und Schlagobers!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-375',
+      ausdruck: 'Brauner',
+      hochdeutsch: 'Kaffee mit etwas Milch',
+      bedeutung: 'Da „Brauner" — ein Kaffee mit einem Schuss Milch oder Obers, eine der häufigsten Bestellungen im Wiener Kaffeehaus. „An kleinen Braunen, bitte!" Der „kleine Braune" ist ein einfacher Mokka mit Milch, der „große Braune" die doppelte Menge. Durch die Milch bekommt der Kaffee seine braune Farbe. Ein zentrales Wort der Wiener Kaffeehaus-Sprache, das die feinen Abstufungen zwischen den Kaffeevarianten zeigt, für die Wien in aller Welt bekannt ist.',
+      beispiel: 'A großen Braunen und a Topfengolatsche, des is mei Frühstück.',
+      beispiel_hd: 'Einen großen Kaffee mit Milch und eine Topfengolatsche, das ist mein Frühstück.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-376',
+      ausdruck: 'Pülcher-Bande',
+      hochdeutsch: 'Gauner / Strolche',
+      bedeutung: 'D\'„Pülcher-Bande" — eine Gruppe von Gaunern, Strolchen oder Tagedieben, vom „Pülcher" (Strolch, Halunke). „De Pülcher-Bande treibt si am Praterstern umadum." Bezeichnet zwielichtige Gestalten, kleine Kriminelle oder einfach Herumlungerer ohne geregelte Arbeit. Oft mit einem Anflug von Spott statt echter Bedrohung gemeint. Ein Wort aus der Welt des Wiener Milieus und der Vorstadt, das die Gauner und Außenseiter der Stadt mit einer gewissen schroffen Vertrautheit benennt.',
+      beispiel: 'Geh ned alloa durch de Gass\'n, do treibt si a Pülcher-Bande um!',
+      beispiel_hd: 'Geh nicht allein durch die Gasse, da treiben sich Gauner herum!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-377',
+      ausdruck: 'Watschnbaum',
+      hochdeutsch: 'jemand, der Ohrfeigen verdient',
+      bedeutung: 'Da „Watschnbaum" — eine scherzhafte Drohung, meist in der Wendung „Der Watschnbaum blüht!", was so viel heißt wie „Gleich setzt es Ohrfeigen!". Von der „Watschn" (Ohrfeige). „Wennst ned ruhig bist, blüht da Watschnbaum!" Eine bildhafte, halb ernste, halb scherzhafte Wiener Drohung, vor allem von Eltern gegenüber frechen Kindern. Ein klassisches Idiom der Wiener Volkssprache, das die ruppige Erziehungskultur vergangener Zeiten mit Humor und Übertreibung einfängt.',
+      beispiel: 'Wennst ned glei aufhörst, dann blüht da Watschnbaum!',
+      beispiel_hd: 'Wenn du nicht gleich aufhörst, dann setzt es Ohrfeigen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-378',
+      ausdruck: 'Gschpusi-Geschichten',
+      hochdeutsch: 'Liebesaffären / Klatsch',
+      bedeutung: 'D\'„Gschpusi-Geschichten" — Erzählungen über Liebesaffären, Techtelmechtel und romantische Verwicklungen, vom „Gspusi" (Liebschaft). „Im Beisl wern de neichsten Gschpusi-Geschichten ausgetauscht." Der beliebte Stoff des Wiener Tratsches, das Gerede über die heimlichen Beziehungen der Nachbarn und Bekannten. Ein Wort, das die wienerische Lust am Klatsch und an pikanten Geschichten widerspiegelt, immer mit einem Augenzwinkern und der nötigen Portion Schmäh serviert.',
+      beispiel: 'Beim Kaffee hot d\'Resi de neichsten Gschpusi-Geschichten erzöhlt.',
+      beispiel_hd: 'Beim Kaffee hat die Resi die neuesten Liebesaffären erzählt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-379',
+      ausdruck: 'Hetz und Gaudi',
+      hochdeutsch: 'Spaß und Vergnügen',
+      bedeutung: '„Hetz und Gaudi" — ausgelassener Spaß und Vergnügen, eine Verdoppelung aus „Hetz" (Spaß) und „Gaudi" (Spaß, Belustigung). „Bei dem Fest gab\'s nur Hetz und Gaudi." Die Steigerungsform für besonders viel Heiterkeit, Gelächter und gute Stimmung. Wird verwendet, wenn es so richtig lustig zugeht, etwa auf einer Feier oder beim Heurigen. Ein urwienerisch-österreichisches Begriffspaar, das die Lebensfreude und den ausgelassenen Frohsinn bei geselligen Anlässen einfängt.',
+      beispiel: 'Auf der Kirtag war Hetz und Gaudi bis in d\'Fruah eini!',
+      beispiel_hd: 'Auf dem Volksfest war Spaß und Vergnügen bis in die Früh hinein!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-380',
+      ausdruck: 'Sautanz',
+      hochdeutsch: 'Schlachtfest / wildes Treiben',
+      bedeutung: 'Da „Sautanz" — ursprünglich das Fest nach der Schweineschlachtung mit reichlich Essen, Trinken und Tanz, im übertragenen Sinn ein wildes, chaotisches Treiben. „Bei der Feier war a richtiger Sautanz." Beim ländlichen Sautanz wurden Blut- und Leberwürste, Bratl und Surfleisch aufgetischt und ausgelassen gefeiert. Im städtischen Gebrauch meint es jedes turbulente, fröhlich-chaotische Geschehen. Ein deftiges Wort, das bäuerliche Festkultur und ungezügeltes Vergnügen verbindet.',
+      beispiel: 'Bei der Geburtstogsfeier is a Sautanz losgangen, unglaublich!',
+      beispiel_hd: 'Bei der Geburtstagsfeier ist ein wildes Treiben losgegangen, unglaublich!',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-381',
+      ausdruck: 'sich auskennen',
+      hochdeutsch: 'durchblicken / Bescheid wissen',
+      bedeutung: 'Sich „auskennen" — durchblicken, Bescheid wissen, eine Situation verstehen, ein zentrales Wort der Wiener Alltagssprache. „I kenn mi do nimma aus!" Drückt aus, ob man bei einer Sache den Überblick hat oder eben verloren hat. „Da kennt si kaner mehr aus" heißt, niemand versteht die Sache noch. Eines der allerhäufigsten Wiener Idiome, das von der Wegbeschreibung bis zur komplizierten Bürokratie überall fällt und die Orientierung oder eben Verwirrung beschreibt.',
+      beispiel: 'Bei dem ganzen Formular-Wahnsinn kenn i mi überhaupt nimma aus!',
+      beispiel_hd: 'Bei dem ganzen Formular-Wahnsinn blicke ich überhaupt nicht mehr durch!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-382',
+      ausdruck: 'Wickel',
+      hochdeutsch: 'Streit / Problem',
+      bedeutung: 'Da „Wickel" — ein Streit, eine Auseinandersetzung oder ein verfahrenes Problem. „Mit dem hob i an Wickel g\'habt." Bezeichnet einen Konflikt, eine heikle Angelegenheit oder eine verzwickte Situation, in die man verwickelt ist. „An Wickel hom mit jemandem" heißt Streit haben. „A Mordswickel" ist ein gewaltiger Krach. Ein bildhaftes Wiener Wort, das die Verstrickung in Streitigkeiten und Schwierigkeiten treffend beschreibt, von der kleinen Reiberei bis zum handfesten Zwist.',
+      beispiel: 'I hob an Wickel mit\'m Nachbarn wegn dem Parkplatz vor\'m Haus.',
+      beispiel_hd: 'Ich habe einen Streit mit dem Nachbarn wegen dem Parkplatz vor dem Haus.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-383',
+      ausdruck: 'Trumm-Hammel',
+      hochdeutsch: 'großer Tollpatsch / Trottel',
+      bedeutung: 'Da „Trumm-Hammel" — ein großer, kräftiger, aber tollpatschiger oder dummer Mensch, zusammengesetzt aus „Trumm" (großes Stück) und „Hammel". „So a Trumm-Hammel, der trampelt alles nieder!" Bezeichnet jemanden, der trotz seiner Größe ungeschickt oder begriffsstutzig agiert. Verbindet Spott über die Statur mit Spott über die Tölpelhaftigkeit. Ein typisch wienerisches Schimpfwort, das zwei kräftige Bilder kombiniert und gutmütig-derb die Unbeholfenheit eines großen Kerls aufs Korn nimmt.',
+      beispiel: 'Pass auf, du Trumm-Hammel, fast hätt\'st de Vas\'n umg\'haut!',
+      beispiel_hd: 'Pass auf, du großer Tollpatsch, fast hättest du die Vase umgeworfen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-384',
+      ausdruck: 'Schlawiner',
+      hochdeutsch: 'gerissener Schlaukopf / Schlitzohr',
+      bedeutung: 'Da „Schlawiner" — ein gerissener, durchtriebener Schlaukopf, ein Schlitzohr, oft mit einem Anflug von widerwilliger Bewunderung gemeint. „Der Schlawiner hot wieder an guten Deal g\'macht!" Bezeichnet jemanden, der mit List, Charme und Bauernschläue zum Ziel kommt, manchmal an der Grenze zur Unehrlichkeit. Nicht durchweg negativ, eher mit augenzwinkerndem Respekt für die Cleverness. Ein Wort, das den listigen, gewieften Typus mit einer Mischung aus Tadel und Anerkennung beschreibt.',
+      beispiel: 'Der Schlawiner hot\'s wieder gschickt eingfädelt, des muass ma ihm lassen!',
+      beispiel_hd: 'Der Schlaukopf hat es wieder geschickt eingefädelt, das muss man ihm lassen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-385',
+      ausdruck: 'Putzerl',
+      hochdeutsch: 'Baby / Säugling',
+      bedeutung: 's\'„Putzerl" — ein liebevoller Kosename für ein Baby oder einen kleinen Säugling. „Schau, was für a süßes Putzerl!" Drückt zärtliche Zuneigung gegenüber dem winzigen, herzigen kleinen Wesen aus. Eine typisch wienerische Verkleinerungs- und Koseform aus der Familiensprache. Wird vor allem von Müttern, Großeltern und Verwandten gegenüber Neugeborenen und Kleinkindern verwendet. Ein warmes Wort, das die Wiener Vorliebe für zärtliche Verniedlichungen im Umgang mit Babys zeigt.',
+      beispiel: 'Unser kloans Putzerl hot heut zum erstn Moi g\'lacht!',
+      beispiel_hd: 'Unser kleines Baby hat heute zum ersten Mal gelacht!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-386',
+      ausdruck: 'Spezi',
+      hochdeutsch: 'guter Freund / Kumpan',
+      bedeutung: 'Da „Spezi" — ein guter Freund, Kumpan oder Vertrauter, von „spezieller" Freund. „Des is mei alter Spezi aus da Schui." Bezeichnet einen engen Kameraden, mit dem man durch dick und dünn geht. „Spezi sein mit jemandem" heißt gut befreundet sein. Im negativen Sinn kann „Spezlwirtschaft" auch Vetternwirtschaft und Begünstigung von Freunderln meinen. Ein vertrautes Wiener Wort der Freundschaft, neben Hawara und Haberer eine der gängigen Bezeichnungen für einen Kumpel.',
+      beispiel: 'Mei bester Spezi feiert am Wochenend seinen Vierziger.',
+      beispiel_hd: 'Mein bester Freund feiert am Wochenende seinen vierzigsten Geburtstag.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-387',
+      ausdruck: 'Tschuri',
+      hochdeutsch: 'weg / fort / verschwunden',
+      bedeutung: '„Tschuri" — weg, fort, verschwunden, oft in der Wendung „Tschuri gehn" (weggehen, abhauen) oder „tschuri sein" (verschwunden, verloren sein). „Mei Geldbörsl is tschuri!" Drückt aus, dass etwas verloren, abhanden gekommen oder jemand fort ist. „Mach di tschuri!" heißt „Verschwinde!". Ein lautmalerisches Wiener Wort der Umgangssprache, das das Verschwinden und Abhandenkommen salopp und bildhaft beschreibt, oft mit einem Anflug von Bedauern oder Ärger.',
+      beispiel: 'Mei Handy is tschuri, i kann\'s nirgends mehr finden!',
+      beispiel_hd: 'Mein Handy ist weg, ich kann es nirgends mehr finden!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-388',
+      ausdruck: 'Surschnitzel',
+      hochdeutsch: 'paniertes Pökelfleisch-Schnitzel',
+      bedeutung: 's\'„Surschnitzel" — ein paniertes Schnitzel aus gepökeltem (gesurtem) Schweinefleisch, eine Spezialität der Wiener und österreichischen Küche. „A Surschnitzel mit Erdäpfelsalat, des is wos!" Das „Suren" ist das Pökeln in Salzlake, das dem Fleisch seinen charakteristischen Geschmack gibt. Das Surschnitzel ist eine deftige, traditionelle Variante neben dem klassischen Wiener Schnitzel. Ein Wort aus der reichen Wiener Fleischküche, das die Vielfalt der österreichischen Schnitzelkultur zeigt.',
+      beispiel: 'Beim Wirtn gibt\'s heut a Surschnitzel, do bin i sofort dabei!',
+      beispiel_hd: 'Beim Wirt gibt es heute ein Pökelfleisch-Schnitzel, da bin ich sofort dabei!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-389',
+      ausdruck: 'Liptauer',
+      hochdeutsch: 'pikanter Streichkäse-Aufstrich',
+      bedeutung: 'Da „Liptauer" — ein pikanter, mit Paprika, Zwiebeln, Kapern und Gewürzen angemachter Streichkäse-Aufstrich auf Topfen- und Butterbasis, benannt nach der Region Liptau in der Slowakei. „A Brot mit Liptauer und a Bier, herrlich!" Ein Klassiker der Wiener Beisl- und Heurigen-Küche, würzig-cremig und unverkennbar im Geschmack. Spiegelt den böhmisch-slowakischen Einfluss auf die Wiener Esskultur wider. Ein fester Bestandteil jeder ordentlichen Brettljause.',
+      beispiel: 'Zur Brettljause g\'hört a g\'scheiter Liptauer einfach dazu!',
+      beispiel_hd: 'Zur Brettljause gehört ein ordentlicher pikanter Streichkäse einfach dazu!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-390',
+      ausdruck: 'Powidltascherl',
+      hochdeutsch: 'Teigtaschen mit Pflaumenmus',
+      bedeutung: 'D\'„Powidltascherl" — gefüllte Teigtaschen aus Erdäpfelteig mit Powidl (eingedicktem Pflaumenmus), eine süße Mehlspeise der böhmisch-wienerischen Küche. „Powidltascherl mit Butterbröseln und Zimt, ein Traum!" Verwandt mit den Powidltatschkerln, werden sie in Butterbröseln gewälzt und mit Staubzucker bestreut serviert. Eine traditionelle Süßspeise, die den böhmischen Einfluss auf die Wiener Mehlspeiskultur zeigt. Ein Wort, das die enge kulinarische Verbindung Wiens mit Böhmen bezeugt.',
+      beispiel: 'Zum Nachtisch gibt\'s Powidltascherl, mei Lieblingsmehlspeis!',
+      beispiel_hd: 'Zum Nachtisch gibt es Teigtaschen mit Pflaumenmus, meine Lieblingsmehlspeise!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-391',
+      ausdruck: 'Palatschinken',
+      hochdeutsch: 'dünne Eierkuchen / Crêpes',
+      bedeutung: 'D\'„Palatschinken" — dünne, gefüllte Eierkuchen, die österreichische Variante der Crêpes, vom rumänisch-ungarischen „palacsinta". „Palatschinken mit Marillenmarmelade, des liebn d\'Kinder!" Werden mit Marmelade, Topfen, Nüssen oder herzhaft gefüllt und zusammengerollt. Eine der beliebtesten Mehlspeisen der Wiener Küche. Das Wort zeigt den balkanisch-ungarischen Einfluss auf die österreichische Esskultur. Trotz der Endung haben Palatschinken nichts mit Schinken zu tun.',
+      beispiel: 'Am Sonntog mocht d\'Mama Palatschinken, do freu i mi scho!',
+      beispiel_hd: 'Am Sonntag macht die Mama dünne Eierkuchen, da freue ich mich schon!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-392',
+      ausdruck: 'Germknödel',
+      hochdeutsch: 'Hefekloß mit Pflaumenmus',
+      bedeutung: 'Da „Germknödel" — ein großer, flaumiger Hefekloß, gefüllt mit Powidl und übergossen mit zerlassener Butter und Mohn-Zucker, vom „Germ" (Hefe). „A Germknödel mit Vanillesauce, des wärmt von innen!" Eine süße, sättigende Mehlspeise, besonders beliebt auf Skihütten und in der kalten Jahreszeit. Der „Germ" ist das österreichische Wort für Hefe. Ein Klassiker der österreichischen Süßspeisenküche, der Gemütlichkeit und winterliche Wärme verkörpert und auf keiner Hüttenkarte fehlt.',
+      beispiel: 'Auf der Schihütt\'n hob i ma an Germknödel mit Mohn gönnt.',
+      beispiel_hd: 'Auf der Skihütte habe ich mir einen Hefekloß mit Mohn gegönnt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-393',
+      ausdruck: 'Powidl sein',
+      hochdeutsch: 'völlig egal sein',
+      bedeutung: '„Powidl sein" — völlig egal, gleichgültig sein, in der Wendung „Des is ma Powidl". Vom „Powidl" (Pflaumenmus), das hier bildhaft für etwas Gleichgültiges, Breiiges steht. „Ob er kommt oder ned, des is ma Powidl." Drückt vollkommene Gleichgültigkeit gegenüber einer Sache aus, ähnlich wie „Des is ma wurscht". Ein charmant-bildhaftes Wiener Idiom, das die genüssliche Wiener Gleichgültigkeit gegenüber unwichtigen Dingen mit einem kulinarischen Begriff auf den Punkt bringt.',
+      beispiel: 'Wos de Leut über mi redn, des is ma sowas von Powidl sein!',
+      beispiel_hd: 'Was die Leute über mich reden, das ist mir sowas von völlig egal!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-394',
+      ausdruck: 'Schmäh is gut',
+      hochdeutsch: 'die Stimmung ist gut',
+      bedeutung: '„Da Schmäh is gut" — die Stimmung ist gut, es herrscht gute Laune und heitere Unterhaltung, vom „Schmäh" (Witz, Charme). „Im Beisl war heut da Schmäh richtig gut!" Drückt aus, dass eine fröhliche, gelöste Atmosphäre voller Witz und guter Gespräche herrscht. „Da Schmäh rennt" bedeutet, es geht lustig und unterhaltsam zu. Ein zentrales Wiener Idiom, das die geschätzte Geselligkeit, den Humor und die gute Laune im sozialen Miteinander beschreibt.',
+      beispiel: 'Mit denen geh i gern auf a Bier, do is da Schmäh is gut!',
+      beispiel_hd: 'Mit denen gehe ich gern auf ein Bier, da ist die Stimmung gut!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-395',
+      ausdruck: 'Hawara-Kreis',
+      hochdeutsch: 'Freundeskreis',
+      bedeutung: 'Da „Hawara-Kreis" — der enge Freundeskreis, die Runde der Kumpels und Vertrauten, vom „Hawara" (Freund, Kumpel). „In mei\'m Hawara-Kreis kennt jeder jeden seit Jahrzehnten." Bezeichnet die feste Clique von Freunden, mit denen man durchs Leben geht, sich im Stammbeisl trifft und Freud und Leid teilt. Ein Wort, das die hohe Bedeutung von Freundschaft und sozialer Verbundenheit in der Wiener Kultur ausdrückt, in der die Gemeinschaft im Grätzl und unter Freunden zentral ist.',
+      beispiel: 'In mei\'m Hawara-Kreis halt ma z\'samm, durch dick und dünn!',
+      beispiel_hd: 'In meinem Freundeskreis halten wir zusammen, durch dick und dünn!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-396',
+      ausdruck: 'Grantscherbn-Wetter',
+      hochdeutsch: 'trübes, mürrisches Wetter',
+      bedeutung: 's\'„Grantscherbn-Wetter" — trübes, graues, miesepetriges Wetter, das einem den Grant (schlechte Laune) bringt, vom „Grantscherbn" (mürrischer Mensch). „Bei dem Grantscherbn-Wetter bleib i lieber daham." Bezeichnet das nasskalte, neblige, ungemütliche Wetter, das die Stimmung drückt und für Verdruss sorgt. Ein bildhaftes Wiener Wort, das die Wechselwirkung zwischen dem grauen Wetter und der schlechten Laune einfängt und typisch ist für die wienerische Lust, übers Wetter zu klagen.',
+      beispiel: 'Bei dem Grantscherbn-Wetter draußn wü ka Mensch vor d\'Tür.',
+      beispiel_hd: 'Bei dem trüben Wetter draußen will kein Mensch vor die Tür.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'w-397',
+      ausdruck: 'Wuchtl-Tormann',
+      hochdeutsch: 'Torwart',
+      bedeutung: 'Da „Wuchtl-Tormann" — scherzhaft der Torwart beim Fußball, von der „Wuchtl" (Ball). „Der Wuchtl-Tormann hot heut olle Bälle ghalten!" Bezeichnet den Tormann, der die „Wuchtl" (den Ball) abwehrt. Im Wiener Fußball-Jargon ist die Wuchtl der Ball, also ist der Wuchtl-Tormann der, der mit dem Ball ringt. Ein humorvolles Wort aus der Welt des Wiener Fußballs, der mit Rapid und der Austria zwei traditionsreiche, leidenschaftlich verehrte Vereine hervorgebracht hat.',
+      beispiel: 'Unser Wuchtl-Tormann hot in der letztn Minutn an Elfer ghalten!',
+      beispiel_hd: 'Unser Torwart hat in der letzten Minute einen Elfmeter gehalten!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-398',
+      ausdruck: 'Goal',
+      hochdeutsch: 'Tor (beim Fußball)',
+      bedeutung: 's\'„Goal" — das Tor beim Fußball, vom englischen „goal", im Wiener und österreichischen Fußballjargon fest verankert. „A Goal in der Nachspüzeit, des war da Wahnsinn!" Während in Deutschland eher „Tor" gesagt wird, hat sich in Österreich das englische „Goal" eingebürgert, ausgesprochen „Gol". „A Goal schiaßn" heißt ein Tor schießen. Ein Wort, das die eigenständige Fußballsprache Österreichs zeigt, geprägt von der frühen Begeisterung für den aus England importierten Sport.',
+      beispiel: 'In da neunzigstn Minutn hot er des Goal zum Sieg gschossn!',
+      beispiel_hd: 'In der neunzigsten Minute hat er das Tor zum Sieg geschossen!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-399',
+      ausdruck: 'Tschecherant',
+      hochdeutsch: 'Trinker / Säufer',
+      bedeutung: 'Da „Tschecherant" — ein notorischer Trinker, ein Säufer, abgeleitet vom „Tschecherl" (kleines, einfaches Wirtshaus). „Der olte Tschecherant sitzt jeden Tog im Wirtshaus." Bezeichnet jemanden, der dem Alkohol stark zuspricht und seine Zeit in den Beisln verbringt. Oft mit einer Mischung aus Spott und Mitleid gemeint, manchmal fast nachsichtig für den vertrauten Stammgast. Ein Wort aus der Welt der Wiener Wirtshauskultur, das den Typus des trinkfreudigen Beisl-Habitués beschreibt.',
+      beispiel: 'Der Tschecherant kennt jedes Beisl im ganzen Bezirk.',
+      beispiel_hd: 'Der Trinker kennt jedes Wirtshaus im ganzen Bezirk.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-400',
+      ausdruck: 'verkühlt',
+      hochdeutsch: 'erkältet',
+      bedeutung: '„Verkühlt" sein — erkältet sein, sich eine Verkühlung (Erkältung) zugezogen haben, in Österreich das übliche Wort. „I bin ganz verkühlt, hob an Schnupfn und Husten." Während der Deutsche „erkältet" sagt, ist der Österreicher „verkühlt". „Sich verkühlen" heißt sich eine Erkältung holen. Ein grundlegendes Wort des österreichischen Deutsch im Bereich Gesundheit und Befinden, das die feinen lexikalischen Unterschiede zwischen den deutschen Sprachvarianten verdeutlicht.',
+      beispiel: 'Zieh da was Warmes an, sunst wirst no verkühlt!',
+      beispiel_hd: 'Zieh dir etwas Warmes an, sonst wirst du noch erkältet!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-401',
+      ausdruck: 'Schnackerl',
+      hochdeutsch: 'Schluckauf',
+      bedeutung: 'Da „Schnackerl" — der Schluckauf, eine lautmalerische, liebevolle Wiener Bezeichnung. „I hob an Schnackerl, des hört ja gar nimma auf!" Der volkstümliche Glaube besagt, man bekommt den Schnackerl, wenn jemand an einen denkt oder über einen redet. „An Schnackerl hom" heißt schluckaufgeplagt sein. Ein gemütliches Wort der Wiener Alltagssprache, das selbst ein kleines körperliches Ärgernis wie den Schluckauf mit einer charmanten Verkleinerungsform und volkstümlichem Aberglauben versieht.',
+      beispiel: 'Jetzt hob i scho a Viertelstund\'n an Schnackerl, des is zach!',
+      beispiel_hd: 'Jetzt habe ich schon eine Viertelstunde einen Schluckauf, das ist mühsam!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-402',
+      ausdruck: 'Wimmerl',
+      hochdeutsch: 'Pickel / Pustel',
+      bedeutung: 's\'„Wimmerl" — ein Pickel, eine kleine Pustel auf der Haut, Verkleinerungsform. „I hob a Wimmerl auf da Nasn, ausgrechnet heut!" Bezeichnet die kleinen Hautunreinheiten, die besonders in der Pubertät plagen. „Voller Wimmerln" heißt von Pickeln übersät. Eine „Wimmerl-Taschn" ist übrigens scherzhaft die kleine Bauchtasche. Ein typisch wienerisches Wort, das auch ein lästiges kleines Hautproblem mit der charakteristischen Verkleinerungsform versieht und so verharmlost.',
+      beispiel: 'Ausgrechnet vor\'m Fototermin krieg i a Wimmerl auf da Stirn!',
+      beispiel_hd: 'Ausgerechnet vor dem Fototermin bekomme ich einen Pickel auf der Stirn!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-403',
+      ausdruck: 'Goschert',
+      hochdeutsch: 'vorlaut / frech',
+      bedeutung: '„Goschert" — vorlaut, frech, großmäulig, von der „Goschn" (Mund, Maul). „Sei ned so goschert zu de Älteren!" Bezeichnet jemanden, der ein vorlautes Mundwerk hat, frech daherredet und kein Blatt vor den Mund nimmt. „A goscherts Madl" ist ein schlagfertiges, freches Mädchen. Kann tadelnd, aber auch anerkennend für Schlagfertigkeit gemeint sein. Ein kräftiges Wiener Wort, das die unverblümte, oft auch respektlose Redseligkeit treffend beschreibt.',
+      beispiel: 'Des goscherte Kind hot da Lehrerin glei a freche Antwort gebn.',
+      beispiel_hd: 'Das vorlaute Kind hat der Lehrerin gleich eine freche Antwort gegeben.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-404',
+      ausdruck: 'Strudelteig',
+      hochdeutsch: 'hauchdünner Teig für Strudel',
+      bedeutung: 'Da „Strudelteig" — der hauchdünne, ausgezogene Teig für den Apfelstrudel und andere Strudel der Wiener Mehlspeisküche. „A guter Strudelteig muass so dünn sein, dass ma d\'Zeitung durchlesn kann." Der echte Wiener Strudelteig wird von Hand über ein Tuch gezogen, bis er fast durchsichtig ist, eine hohe Kunst der Mehlspeisbäckerei. Ein Wort, das für die Meisterschaft und Tradition der Wiener Süßspeisenkultur steht, deren Apfelstrudel weltberühmt ist und höchste handwerkliche Sorgfalt verlangt.',
+      beispiel: 'D\'Oma zieht den Strudelteig so dünn, dass ma durchschaun kann!',
+      beispiel_hd: 'Die Oma zieht den Teig für den Strudel so dünn, dass man durchschauen kann!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-405',
+      ausdruck: 'Kipferl',
+      hochdeutsch: 'Hörnchen / Croissant',
+      bedeutung: 's\'„Kipferl" — ein Hörnchen oder Croissant, ein gebogenes Gebäckstück, das zum Wiener Frühstück gehört. „A Kipferl mit Butter und Marmelade zum Kaffee." Das Wiener Kipferl gilt als Vorläufer des französischen Croissants. „Vanillekipferl" sind das berühmte Weihnachtsgebäck. „A Kipferl eintunken" heißt es in den Kaffee tauchen. Ein klassisches Wort der Wiener Bäckerei- und Kaffeehauskultur, das auf eine lange Backtradition zurückgeht und fest zum Wiener Genussalltag gehört.',
+      beispiel: 'Zum Frühstück hol i frische Kipferl vom Bäcker an der Eck\'n.',
+      beispiel_hd: 'Zum Frühstück hole ich frische Hörnchen vom Bäcker an der Ecke.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-406',
+      ausdruck: 'Wuzerl-Speck',
+      hochdeutsch: 'Babyspeck / Pölsterchen',
+      bedeutung: 'Da „Wuzerl-Speck" — der Babyspeck oder die kleinen Pölsterchen, die rundliche Fülle eines pummeligen Menschen, vom „Wuzerl" (rundliches Kind). „A bissl Wuzerl-Speck schadt ja nix, des is gmütlich!" Bezeichnet liebevoll-spöttisch die kleinen Rundungen und das Pölsterchen, oft bei Babys oder leicht fülligen Personen. Wird meist herzlich und gutmütig verwendet. Ein charmantes Wiener Wort, das die Fülligkeit nicht abwertet, sondern mit einem warmen Augenzwinkern als behaglich und sympathisch darstellt.',
+      beispiel: 'A bissl Wuzerl-Speck am Bauch hot no kam g\'schadt!',
+      beispiel_hd: 'Ein bisschen Babyspeck am Bauch hat noch keinem geschadet!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-407',
+      ausdruck: 'Bussi',
+      hochdeutsch: 'Küsschen',
+      bedeutung: 's\'„Bussi" — ein Küsschen, eine zärtliche Wiener Verkleinerungsform für einen Kuss. „Gib da Oma a Bussi zum Abschied!" Das Bussi auf die Wange ist in Wien eine verbreitete Begrüßungs- und Abschiedsgeste unter Vertrauten. „Bussi-Bussi-Gesellschaft" bezeichnet spöttisch die oberflächliche, gschaftlhuberische High Society. „Baba und Bussi!" ist eine herzliche Abschiedsformel. Ein liebevolles Wort, das die wienerische Wärme und Herzlichkeit im zwischenmenschlichen Umgang ausdrückt.',
+      beispiel: 'Komm her und gib ma a Bussi, bevor du gehst!',
+      beispiel_hd: 'Komm her und gib mir ein Küsschen, bevor du gehst!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-408',
+      ausdruck: 'Hetschepetsch',
+      hochdeutsch: 'Hagebutte',
+      bedeutung: 'D\'„Hetschepetsch" oder „Hetscherl" — die Hagebutte, die rote Frucht der Heckenrose, aus der Marmelade gemacht wird. „Aus de Hetschepetsch kocht d\'Oma a herrliche Marmelad\'." Ein lautmalerisch-verspieltes Wiener Wort für die Hagebutte, die im Herbst an den Wildrosensträuchern reift. Die „Hetscherl-Marmelade" ist eine traditionelle Spezialität. Ein charmantes Wort der Wiener Natursprache, das die Lust an klangvollen, fast kindlichen Bezeichnungen für Pflanzen und Früchte zeigt.',
+      beispiel: 'Im Herbst sammeln ma Hetschepetsch fürs Marmeladkochn.',
+      beispiel_hd: 'Im Herbst sammeln wir Hagebutten fürs Marmeladekochen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'w-409',
+      ausdruck: 'Ribisel',
+      hochdeutsch: 'Johannisbeere',
+      bedeutung: 'D\'„Ribisel" — die Johannisbeere, in Österreich die übliche Bezeichnung, vom italienischen „ribes". „Rote Ribisel und schwarze Ribisel wachsn in unserm Gartl." Aus den Ribiseln macht man Saft, Marmelade oder den „Ribiselkuchen". Während der Deutsche „Johannisbeere" sagt, kennt der Österreicher nur die Ribisel. Ein grundlegendes Wort des österreichischen Deutsch aus der Welt der Früchte, das den italienischen Spracheinfluss zeigt und ein weiteres Beispiel für die kulinarischen Eigenheiten Österreichs ist.',
+      beispiel: 'Aus de rotn Ribisel mach ma heuer wieder an guten Saft.',
+      beispiel_hd: 'Aus den roten Johannisbeeren machen wir dieses Jahr wieder einen guten Saft.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'w-410',
+      ausdruck: 'Kukuruz',
+      hochdeutsch: 'Mais',
+      bedeutung: 'Da „Kukuruz" — der Mais, in Österreich und am Balkan die gängige Bezeichnung, vom slawischen Wort für Mais. „Am Praterstand gibt\'s gebratenen Kukuruz." Der gegrillte oder gekochte Maiskolben ist ein beliebter Imbiss, etwa im Prater. Während der Deutsche „Mais" sagt, kennt der Österreicher den Kukuruz. Ein Wort, das den slawisch-südosteuropäischen Spracheinfluss auf das österreichische Deutsch bezeugt und die kulturelle Verbindung Wiens mit dem Balkan und Osteuropa widerspiegelt.',
+      beispiel: 'Im Summer kauf i ma am Prater an gegrillten Kukuruz mit Salz.',
+      beispiel_hd: 'Im Sommer kaufe ich mir im Prater einen gegrillten Mais mit Salz.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-411',
+      ausdruck: 'Vogerlsalat',
+      hochdeutsch: 'Feldsalat',
+      bedeutung: 'Da „Vogerlsalat" — der Feldsalat, in Österreich nach den kleinen, vogelschnabelartigen Blättchen benannt. „A Vogerlsalat mit Kürbiskernöl und Erdäpfeln, a Gedicht!" Der zarte Vogerlsalat wird in Österreich gern mit Kernöl, Zwiebeln und warmen Erdäpfeln angemacht. Während der Deutsche „Feldsalat" oder „Rapunzel" sagt, kennt der Österreicher den Vogerlsalat. Ein liebevolles Wort der österreichischen Küchensprache, das die zarten Blättchen mit einer kleinen Vogel-Metapher charmant beschreibt.',
+      beispiel: 'Zum Backhendl pass\'n a Vogerlsalat mit Kernöl perfekt dazu.',
+      beispiel_hd: 'Zum Backhuhn passt ein Feldsalat mit Kürbiskernöl perfekt dazu.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-412',
+      ausdruck: 'Backhendl',
+      hochdeutsch: 'paniertes Brathähnchen',
+      bedeutung: 's\'„Backhendl" — ein paniertes, in Fett herausgebackenes Hühnchen, eine Spezialität der Wiener Küche, verwandt mit dem Wiener Schnitzel. „A Backhendl mit Erdäpfelsalat, des is Wiener Sonntagsessen!" Das „Hendl" ist das österreichische Wort für Huhn. Das Backhendl war einst ein Festtagsessen des Bürgertums, die „Backhendlzeit" stand für eine Zeit des Wohlstands. Ein klassisches Gericht, das für die deftige, traditionsreiche Wiener Hausmannskost steht.',
+      beispiel: 'Beim Heurigen bestell i ma a knuspriges Backhendl mit Salat.',
+      beispiel_hd: 'Beim Heurigen bestelle ich mir ein knuspriges Brathähnchen mit Salat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-413',
+      ausdruck: 'Hendl',
+      hochdeutsch: 'Huhn / Hähnchen',
+      bedeutung: 's\'„Hendl" — das Huhn oder Hähnchen, in Österreich die übliche Bezeichnung für das Geflügel. „A halbes Hendl vom Grill, bitte!" Vom „Hendl" leiten sich „Backhendl" und „Grillhendl" ab. „Mit jemandem a Hendl z\'rupfen hom" heißt ein Hühnchen mit jemandem zu rupfen haben, also eine offene Rechnung begleichen wollen. Ein grundlegendes Wort der österreichischen Küchen- und Alltagssprache, das in zahlreichen Gerichten und Redewendungen seinen festen Platz hat.',
+      beispiel: 'Zum Mittag gibt\'s a Hendl mit Reis, des mög\'n olle gern.',
+      beispiel_hd: 'Zum Mittag gibt es ein Huhn mit Reis, das mögen alle gern.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-414',
+      ausdruck: 'Stelze',
+      hochdeutsch: 'Schweinshaxe',
+      bedeutung: 'D\'„Stelze" — die Schweinshaxe, ein deftiges Gericht der Wiener Wirtshausküche, knusprig gebraten oder gekocht. „A g\'suttene Stelze mit Kren und Senf, des is wos für an Mann!" Die gebackene Stelze mit knuspriger Schwarte ist besonders beliebt, oft beim Heurigen oder im Beisl serviert. Dazu gibt es Sauerkraut, Knödel, Kren und Senf. Ein Wort der herzhaften Wiener Fleischküche, das für üppigen Genuss und die bodenständige Gastlichkeit der Wiener Wirtshäuser steht.',
+      beispiel: 'Beim Schweizerhaus im Prater g\'hört a Stelze und a Krügerl dazu!',
+      beispiel_hd: 'Beim Schweizerhaus im Prater gehört eine Schweinshaxe und ein großes Bier dazu!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-415',
+      ausdruck: 'Kren',
+      hochdeutsch: 'Meerrettich',
+      bedeutung: 'Da „Kren" — der Meerrettich, in Österreich die übliche Bezeichnung, vom slawischen Wort. „Zum Tafelspitz g\'hört frisch g\'riss\'ner Kren!" Der scharfe Kren wird zu Siedefleisch, Würsteln und Schinken gereicht. „Apfelkren" ist eine mildere Variante mit geriebenem Apfel. „Sich an Kren ärgern" oder „an Kren hom" gibt es als Redewendung für Ärger. Ein grundlegendes Wort der österreichischen Küche, das den slawischen Spracheinfluss zeigt und zu vielen Wiener Klassikern unverzichtbar dazugehört.',
+      beispiel: 'Zum Selchfleisch reib i ma frischen Kren, der zwickt in der Nasn!',
+      beispiel_hd: 'Zum Räucherfleisch reibe ich mir frischen Meerrettich, der zwickt in der Nase!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-416',
+      ausdruck: 'Selchfleisch',
+      hochdeutsch: 'Räucherfleisch / Geselchtes',
+      bedeutung: 's\'„Selchfleisch" oder „Geselchtes" — geräuchertes Schweinefleisch, eine Spezialität der österreichischen Küche, vom „Selchen" (Räuchern). „Selchfleisch mit Sauerkraut und Knödel, des is a deftiges Essen!" Das Selchen ist das Räuchern in der „Selch" (Räucherkammer). Geselchtes wird warm mit Kraut und Knödeln oder kalt zur Jause gegessen. Ein Wort der traditionellen Wiener und österreichischen Fleischverarbeitung, das die bäuerliche Vorratshaltung und die deftige Hausmannskost lebendig hält.',
+      beispiel: 'Am Sonntog kocht d\'Oma Selchfleisch mit Kraut und Semmelknödel.',
+      beispiel_hd: 'Am Sonntag kocht die Oma Räucherfleisch mit Kraut und Semmelknödel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-417',
+      ausdruck: 'Faschiertes Laberl',
+      hochdeutsch: 'Frikadelle / Bulette',
+      bedeutung: 's\'„Faschierte Laberl" — die Frikadelle oder Bulette, ein flaches Gebilde aus Faschiertem (Hackfleisch), vom „Laberl" (kleiner Laib). „A faschiertes Laberl mit Erdäpfelpüree, des liebn d\'Kinder!" Das „Faschierte" ist das österreichische Wort für Hackfleisch, das „Laberl" die flache, runde Form. Während der Deutsche „Frikadelle" oder „Bulette" sagt, kennt der Österreicher das faschierte Laberl. Ein bodenständiges Wort der Wiener Hausmannskost, beliebt bei Groß und Klein.',
+      beispiel: 'Zum Mittog mach i faschierte Laberl mit am Erdäpfelpüree.',
+      beispiel_hd: 'Zum Mittag mache ich Frikadellen mit einem Kartoffelpüree.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-418',
+      ausdruck: 'Häuptelsalat',
+      hochdeutsch: 'Kopfsalat',
+      bedeutung: 'Da „Häuptelsalat" — der Kopfsalat, in Österreich nach dem „Häuptel" (kleiner Kopf) benannt. „A Häuptelsalat mit am Kernölmarinade, des is gsund und guad!" Der zarte Häuptelsalat wird in Österreich gern mit einer Marinade aus Essig, Öl, Zucker und etwas Wasser angemacht. „A Häuptel Salat" ist ein Salatkopf. Während der Deutsche „Kopfsalat" sagt, kennt der Österreicher den Häuptelsalat. Ein typisches Wort der österreichischen Küchensprache mit charakteristischer Verkleinerungsform.',
+      beispiel: 'Zum Schnitzl pass\'n a frischer Häuptelsalat mit Kernöl dazu.',
+      beispiel_hd: 'Zum Schnitzel passt ein frischer Kopfsalat mit Kürbiskernöl dazu.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-419',
+      ausdruck: 'Kohlsprossen',
+      hochdeutsch: 'Rosenkohl',
+      bedeutung: 'D\'„Kohlsprossen" — der Rosenkohl, in Österreich die übliche Bezeichnung für die kleinen Kohlröschen. „Kohlsprossen mog i als Kind goar ned, jetzt schmecken s\' ma." Die kleinen, knospenförmigen Kohlröschen wachsen am Stängel und werden als Gemüsebeilage gekocht. Während der Deutsche „Rosenkohl" sagt, kennt der Österreicher die Kohlsprossen. Ein weiteres Beispiel für die eigenständige österreichische Gemüse-Terminologie, die sich in vielen Begriffen vom bundesdeutschen Sprachgebrauch unterscheidet.',
+      beispiel: 'Zum Brat\'l mach i heut Kohlsprossen mit Butter und Muskat.',
+      beispiel_hd: 'Zum Braten mache ich heute Rosenkohl mit Butter und Muskat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-420',
+      ausdruck: 'Melanzani',
+      hochdeutsch: 'Aubergine',
+      bedeutung: 'D\'„Melanzani" — die Aubergine, in Österreich die gängige Bezeichnung, vom italienischen „melanzana". „A Melanzani, gegrillt mit Olivenöl, herrlich!" Die dunkelviolette Frucht wird gebraten, gegrillt oder gefüllt. Während der Deutsche „Aubergine" sagt, kennt der Österreicher die Melanzani. Ein Wort, das wie viele andere österreichische Gemüsebegriffe (Paradeiser, Fisolen, Karfiol) den italienischen Spracheinfluss aus der Zeit der Monarchie zeigt, als Norditalien zu Österreich gehörte.',
+      beispiel: 'Für d\'Lasagne brauch i no a Melanzani und a paar Paradeiser.',
+      beispiel_hd: 'Für die Lasagne brauche ich noch eine Aubergine und ein paar Tomaten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-421',
+      ausdruck: 'Häferl-Schädl',
+      hochdeutsch: 'Dummkopf / Sturschädel',
+      bedeutung: 'Da „Häferl-Schädl" — ein Dummkopf oder Sturschädel, jemand mit einem „Häferl" (Tasse, hier Kopf) statt Verstand. „So a Häferl-Schädl, der lasst si nix sogn!" Bezeichnet einen begriffsstutzigen oder besonders sturen Menschen, der nicht hören will. Das „Häferl" steht hier bildhaft für den hohlen oder dickschädeligen Kopf. Ein typisch wienerisches Schimpfwort, das mit einem Alltagsgegenstand die Dummheit oder Sturheit eines Menschen drastisch und bildhaft auf den Punkt bringt.',
+      beispiel: 'Mit dem Häferl-Schädl brauchst goar ned diskutiern, der bleibt stur.',
+      beispiel_hd: 'Mit dem Sturschädel brauchst du gar nicht diskutieren, der bleibt stur.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-422',
+      ausdruck: 'Mordstrumm',
+      hochdeutsch: 'riesiges Stück / Riesending',
+      bedeutung: 's\'„Mordstrumm" — ein riesiges Stück, ein gewaltiges Ding, die Steigerung von „Trumm" (großes Stück) mit der Vorsilbe „Mords-". „A Mordstrumm von am Fisch hot er g\'fangt!" Bezeichnet etwas außergewöhnlich Großes, das durch seine Dimension beeindruckt. Die Vorsilbe „Mords-" dient im Wienerischen generell der Verstärkung („Mordshetz", „Mordsglück"). Ein ausdrucksstarkes Wort der Größenbeschreibung, das mit hörbarem Staunen die schiere Wucht und das Ausmaß einer Sache betont.',
+      beispiel: 'Schau dir des Mordstrumm Schnitzl an, des kann ka Mensch aufessn!',
+      beispiel_hd: 'Schau dir das riesige Stück Schnitzel an, das kann kein Mensch aufessen!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-423',
+      ausdruck: 'zwider',
+      hochdeutsch: 'unangenehm / verdrießlich',
+      bedeutung: '„Zwider" sein — unangenehm, verdrießlich, missmutig oder widerwärtig sein. „Heut bin i so zwider, frog mi ned warum." Kann eine schlechte, mürrische Laune beschreiben („i bin zwider") oder etwas Unangenehmes, Ekelhaftes („des is ma zwider"). Eng verwandt mit dem Grant. „A zwiderer Kerl" ist ein unleidlicher, mürrischer Mensch. Ein häufiges Wiener Befindlichkeitswort, das die ganze Bandbreite von Verdrossenheit, Widerwillen und schlechter Laune ausdrückt und zur Grant-Kultur passt.',
+      beispiel: 'Sei ned so zwider, mir woin do nur an schönen Tog hom!',
+      beispiel_hd: 'Sei nicht so verdrießlich, wir wollen doch nur einen schönen Tag haben!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-424',
+      ausdruck: 'Wuchtel-Partie',
+      hochdeutsch: 'Fußballspiel / Match',
+      bedeutung: 'D\'„Wuchtel-Partie" — scherzhaft ein Fußballspiel oder Match, von der „Wuchtl" (Ball) und „Partie" (Spiel). „Am Sonntog schau ma uns d\'Wuchtel-Partie im Stadion an." Bezeichnet umgangssprachlich-humorvoll ein Fußballmatch, bei dem es um die Wuchtl (den Ball) geht. Der Wiener Fußball mit Rapid und Austria hat eine lange, leidenschaftliche Tradition. Ein augenzwinkerndes Wort, das die Begeisterung der Wiener für ihren Fußball mit dem typischen Schmäh und der Lust am Wortspiel verbindet.',
+      beispiel: 'Heut Abend is a wichtige Wuchtel-Partie, des Derby gegn d\'Austria!',
+      beispiel_hd: 'Heute Abend ist ein wichtiges Fußballspiel, das Derby gegen die Austria!',
+      kategorie: 'sport'
+    },
+    {
+      id: 'w-425',
+      ausdruck: 'Häuserl am Land',
+      hochdeutsch: 'Wochenendhaus / Datsche',
+      bedeutung: 's\'„Häuserl am Land" — das Wochenendhaus oder die kleine Datsche außerhalb der Stadt, der Rückzugsort vieler Wiener vom Großstadttrubel. „Am Wochenend fahr ma aufs Häuserl am Land." Bezeichnet das bescheidene Landhaus, den Schrebergarten oder das Wochenenddomizil, wo der Wiener Ruhe, Natur und frische Luft sucht. Ein Wort, das die wienerische Sehnsucht nach dem Grünen und der Erholung vom Stadtleben ausdrückt, eine tief verwurzelte Tradition des Wochenend-Ausflugs ins Umland.',
+      beispiel: 'Am Freitog packen ma z\'samm und fahrn aufs Häuserl am Land.',
+      beispiel_hd: 'Am Freitag packen wir zusammen und fahren aufs Wochenendhaus.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-426',
+      ausdruck: 'auszahln',
+      hochdeutsch: 'sich lohnen',
+      bedeutung: 'Sich „auszahln" — sich lohnen, sich rentieren, einen Nutzen bringen. „Des zahlt si ned aus, so vü Aufwand für so wenig." Drückt aus, ob eine Mühe, Investition oder Anstrengung den Aufwand wert ist. „Es zahlt si aus" heißt es lohnt sich. „Es zahlt si ned aus" bedeutet, es ist die Mühe nicht wert. Ein häufiges Wort der Wiener Alltagssprache, das die praktische, abwägende Lebenseinstellung widerspiegelt, bei der Aufwand und Ertrag sorgfältig gegeneinander abgewogen werden.',
+      beispiel: 'Für de paar Euro zahlt si der weite Weg überhaupt ned auszahln.',
+      beispiel_hd: 'Für die paar Euro lohnt sich der weite Weg überhaupt nicht.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-427',
+      ausdruck: 'Trumm-Glück',
+      hochdeutsch: 'Riesenglück / Mordsglück',
+      bedeutung: 's\'„Trumm-Glück" oder „Mordsglück" — ein gewaltiges Glück, ein außerordentlicher Glücksfall. „A Trumm-Glück, dass nix passiert is bei dem Unfoi!" Bezeichnet einen Moment des großen Glücks, in dem alles gerade noch gut ausgegangen ist oder einem etwas besonders Erfreuliches widerfahren ist. Die Steigerung durch „Trumm" oder „Mords-" verleiht dem Glück besonderes Gewicht. Ein Wort, das das wienerische Staunen über einen glücklichen Zufall oder eine knapp abgewendete Gefahr ausdrückt.',
+      beispiel: 'A Trumm-Glück, dass i den Zug grad no derwischt hob!',
+      beispiel_hd: 'Ein Riesenglück, dass ich den Zug gerade noch erwischt habe!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-428',
+      ausdruck: 'Mascherl machen',
+      hochdeutsch: 'sich verabschieden / abhauen',
+      bedeutung: '„A Mascherl machen" — sich davonmachen, abhauen oder etwas beenden, vom „Mascherl" (Schleife) im Sinne von zubinden, abschließen. „Mir machen jetzt a Mascherl und gehn ham." Drückt aus, dass man eine Sache abschließt, Schluss macht oder sich verabschiedet. „Da machen ma a Mascherl drum" heißt, wir machen die Sache fertig. Ein bildhaftes Wiener Idiom, das den Abschluss einer Angelegenheit mit dem Zubinden einer Schleife vergleicht, anschaulich und charmant.',
+      beispiel: 'Es is scho spät, mir machen a Mascherl machen und gehn ham.',
+      beispiel_hd: 'Es ist schon spät, wir machen Schluss und gehen nach Hause.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-429',
+      ausdruck: 'Heuriger-Bankerl',
+      hochdeutsch: 'Sitzbank beim Heurigen',
+      bedeutung: 's\'„Heuriger-Bankerl" — die einfache Holzbank beim Heurigen, auf der man im Gastgarten unter Kastanienbäumen Wein trinkt, vom „Bankerl" (kleine Bank). „Setz ma uns aufs Heuriger-Bankerl in d\'Sonn." Bezeichnet die typischen langen Holzbänke im Heurigen, wo man gesellig beisammensitzt, Wein trinkt und die Brettljause genießt. Ein Wort, das die gemütliche, gesellige Atmosphäre der Wiener Heurigenkultur einfängt, eine der schönsten und urtypischsten Traditionen der Stadt.',
+      beispiel: 'Aufm Heuriger-Bankerl unter de Kastanien sitzt si\'s am schönsten.',
+      beispiel_hd: 'Auf der Sitzbank beim Heurigen unter den Kastanien sitzt es sich am schönsten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'w-430',
+      ausdruck: 'Tschickerant',
+      hochdeutsch: 'Kettenraucher',
+      bedeutung: 'Da „Tschickerant" — ein starker Raucher oder Kettenraucher, vom „Tschick" (Zigarette). „Der Tschickerant zündt si glei de nächste Tschick an." Bezeichnet jemanden, der ununterbrochen raucht und kaum eine Zigarette ausgehen lässt. Ähnlich gebildet wie „Tschecherant" (Trinker), zeigt das Wort die wienerische Lust, mit der Endung „-ant" charakterliche Eigenschaften oder Gewohnheiten zu benennen. Ein Wort der Wiener Alltagssprache, das den notorischen Raucher mit einem Anflug von Spott beschreibt.',
+      beispiel: 'Als alter Tschickerant rauchst du dir no de Lungn aus\'m Leib!',
+      beispiel_hd: 'Als alter Kettenraucher rauchst du dir noch die Lunge aus dem Leib!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-431',
+      ausdruck: 'a Eitrige mit am Bugl',
+      hochdeutsch: 'Käsekrainer mit Endstück Brot',
+      bedeutung: '„A Eitrige mit am Bugl" — die klassische Würstelstand-Bestellung: eine Käsekrainer („Eitrige", wegen des austretenden Käses) mit dem Endstück eines Brotlaibs („Bugl"). „A Eitrige mit am Bugl und an scharfen Senf, bitte!" Diese geheimnisvoll klingende Bestellung ist ein Wahrzeichen der Wiener Würstelstand-Kultur und ein Schibboleth: Wer sie kennt, ist ein echter Wiener. Ein Wort, das die unverwechselbare Sprache und Tradition des Wiener Würstelstands feiert.',
+      beispiel: 'Am Würstelstand sog i: a Eitrige mit am Bugl und an Krensenf!',
+      beispiel_hd: 'Am Würstelstand sage ich: eine Käsekrainer mit Brotendstück und Meerrettichsenf!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-432',
+      ausdruck: 'Bugl',
+      hochdeutsch: 'Buckel / Rücken / Brotendstück',
+      bedeutung: 'Da „Bugl" — der Buckel oder Rücken, aber auch das Endstück eines Brotlaibs. „Mir tut da Bugl weh vom vielen Bücken." Vielseitig: der gekrümmte Rücken, das knusprige Brotendstück oder in Redewendungen wie „Rutsch ma den Bugl runter!" (eine Abfuhr) und „an krummen Bugl machen" (sich ducken, buckeln). „Am Bugl hom" heißt etwas zu schleppen oder zu ertragen haben. Ein kräftiges Wiener Körperwort, das in zahlreichen bildhaften Wendungen lebendig ist.',
+      beispiel: 'Nach der Gartenarbeit hob i an Bugl, der mi narrisch macht!',
+      beispiel_hd: 'Nach der Gartenarbeit habe ich einen Rücken, der mich verrückt macht!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-433',
+      ausdruck: 'Wangerl',
+      hochdeutsch: 'Bäckchen / Wange',
+      bedeutung: 's\'„Wangerl" — das Bäckchen, die Wange, eine zärtliche Verkleinerungsform, besonders bei Kindern und Babys. „Des Kind hot so rosige Wangerl!" Drückt liebevolle Zuneigung gegenüber den runden, weichen Bäckchen aus. „A Bussi aufs Wangerl" ist ein Küsschen auf die Wange. Auch „Schweinswangerl" sind in der Küche eine Delikatesse. Ein warmes Wort der Wiener Familiensprache, das die Vorliebe für zärtliche Verkleinerungen im Umgang mit den Kleinen und Geliebten zeigt.',
+      beispiel: 'Bei der Kält\'n hot des Kind ganz rote Wangerl kriegt.',
+      beispiel_hd: 'Bei der Kälte hat das Kind ganz rote Bäckchen bekommen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-434',
+      ausdruck: 'Pratzn',
+      hochdeutsch: 'große Hand / Pranke',
+      bedeutung: 'D\'„Pratzn" — eine große, kräftige Hand, eine Pranke, oft mit einem Anflug von Respekt oder Spott über die Größe. „Mit dene Pratzn kann er an Sack Erdäpfel auf amoi heben!" Bezeichnet besonders große oder grobe Hände. „D\'Pratzn weg!" heißt „Finger weg!". „Sei Pratzn überall hom" bedeutet, überall hineingreifen oder mitmischen. Ein kräftiges, bildhaftes Wiener Wort für die Hände, das die ungeschminkte, anschauliche Art der Wiener in der Körperbeschreibung zeigt.',
+      beispiel: 'Nimm dei Pratzn von mei\'m Tella weg, des is mei Essen!',
+      beispiel_hd: 'Nimm deine großen Hände von meinem Teller weg, das ist mein Essen!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-435',
+      ausdruck: 'Wuzerl-Bauch',
+      hochdeutsch: 'rundes Bäuchlein',
+      bedeutung: 'Da „Wuzerl-Bauch" — ein rundes, behäbiges Bäuchlein, vom „Wuzerl" (rundliches Wesen). „Vom guten Essen hot er an Wuzerl-Bauch kriegt." Bezeichnet liebevoll-spöttisch den kleinen Bauchansatz, der vom genüsslichen Essen und Trinken kommt. Wird meist gutmütig und herzlich verwendet, oft mit einem Anflug von Stolz auf die Genussfreude. Ein charmantes Wiener Wort, das die Fülligkeit nicht abwertet, sondern als Zeichen von Behaglichkeit und Lebensgenuss augenzwinkernd feiert.',
+      beispiel: 'Bei dem guten Wirtshaus-Essen wachst da Wuzerl-Bauch von ganz alloa!',
+      beispiel_hd: 'Bei dem guten Wirtshaus-Essen wächst das Bäuchlein von ganz allein!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-436',
+      ausdruck: 'Goschen-Trommler',
+      hochdeutsch: 'Schwätzer / Plappermaul',
+      bedeutung: 'Da „Goschen-Trommler" — ein unermüdlicher Schwätzer, ein Plappermaul, das ununterbrochen redet, von der „Goschn" (Mund). „Der Goschen-Trommler hört goar nimma auf zum redn!" Bezeichnet jemanden, der pausenlos quasselt und mit seinem Mundwerk trommelt wie auf einer Trommel. Ein bildkräftiges Wiener Wort, das die Redseligkeit eines Menschen mit dem unermüdlichen Schlagen einer Trommel vergleicht, treffend und humorvoll für jene, die einfach nicht still sein können.',
+      beispiel: 'Der Goschen-Trommler redt da a Loch in\'n Bauch, gnadenlos!',
+      beispiel_hd: 'Der Schwätzer redet dir ein Loch in den Bauch, gnadenlos!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-437',
+      ausdruck: 'Augerl',
+      hochdeutsch: 'Äuglein',
+      bedeutung: 's\'„Augerl" — das Äuglein, eine zärtliche Verkleinerungsform, besonders bei Kindern, Babys oder Tieren. „Schau, was für treuherzige Augerl der Hund hot!" Drückt liebevolle Zuneigung aus. „A Augerl auf jemanden werfn" heißt verliebt nach jemandem schauen. „D\'Augerl zumachen" bedeutet einschlafen. „A blaues Augerl" ist ein Veilchen. Ein warmes Wort der Wiener Familiensprache, das die Vorliebe für zärtliche Verkleinerungen zeigt und Wärme und Zuneigung in den Augen einfängt.',
+      beispiel: 'Mach d\'Augerl zu und schlof schön, mei kloana Schatz!',
+      beispiel_hd: 'Mach die Äuglein zu und schlaf schön, mein kleiner Schatz!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'w-438',
+      ausdruck: 'Patscherl',
+      hochdeutsch: 'Babyschuh / kleiner Fuß',
+      bedeutung: 's\'„Patscherl" — ein kleiner Babyschuh oder das winzige Füßchen eines Kindes, lautmalerisch von „patschen". „Schau, de kloanen Patscherl vom Baby, so süß!" Bezeichnet die winzigen, weichen Schühchen oder Füßchen der Allerkleinsten. „Patscherl" können auch gestrickte Babyschuhe sein. Ein zärtliches Wort der Wiener Familiensprache, das die Vorliebe für lautmalerische Verkleinerungen im Umgang mit Babys zeigt und die Rührung über die winzigen Füßchen der Neugeborenen einfängt.',
+      beispiel: 'D\'Oma hot fürs Baby kloane Patscherl gstrickt, herzig!',
+      beispiel_hd: 'Die Oma hat fürs Baby kleine Babyschuhe gestrickt, herzig!',
+      kategorie: 'familie'
+    },
+    {
+      id: 'w-439',
+      ausdruck: 'Schnoferl',
+      hochdeutsch: 'schmollendes Gesicht / Schnute',
+      bedeutung: 's\'„Schnoferl" — ein schmollendes, beleidigtes Gesicht, eine Schnute, oft bei Kindern. „Mach ned so a Schnoferl, du kriagst eh dei Eis!" Bezeichnet die heruntergezogenen Mundwinkel und das verdrossene Gesicht eines Schmollenden. „A Schnoferl ziehn" heißt schmollen oder eine beleidigte Miene aufsetzen. Ein liebevoll-spöttisches Wiener Wort, das vor allem das trotzige Schmollgesicht von Kindern beschreibt, aber auch bei beleidigten Erwachsenen Verwendung findet.',
+      beispiel: 'Zieh ned glei a Schnoferl, nur weil\'s ned nach dei\'m Kopf geht!',
+      beispiel_hd: 'Zieh nicht gleich eine Schnute, nur weil es nicht nach deinem Kopf geht!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'w-440',
+      ausdruck: 'Hackn-Stad',
+      hochdeutsch: 'arbeitsfreie Zeit / Flaute',
+      bedeutung: 'D\'„Hackn-Stad" oder „Stad-Zeit" — die ruhige, arbeitsarme Zeit, eine Flaute im Geschäft, von „stad" (still, ruhig) und „Hackn" (Arbeit). „Im Sommer is bei uns Hackn-Stad, do is wenig los." Bezeichnet die Phase, in der wenig zu tun ist, etwa im Sommerloch oder einer geschäftlichen Flaute. „Stad" heißt im Wienerischen still, ruhig. Ein Wort aus der Arbeitswelt, das die saisonalen Schwankungen und die ruhigen Zeiten im Berufsleben beschreibt, in denen die Arbeit stillsteht.',
+      beispiel: 'Im August is bei uns im Gschäft immer a Hackn-Stad.',
+      beispiel_hd: 'Im August ist bei uns im Geschäft immer eine Flaute.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'w-441',
+      ausdruck: 'stad',
+      hochdeutsch: 'still / ruhig',
+      bedeutung: '„Stad" — still, ruhig, leise, ein vielseitiges Wiener und bairisches Wort. „Sei stad, i hör grad de Nachrichten!" Bedeutet still sein, ruhig sein. „De staade Zeit" ist die besinnliche Adventszeit vor Weihnachten. „A stades Wasser" ist ein stilles Wasser, sprichwörtlich auch für einen ruhigen, hintergründigen Menschen. „Stad wern" heißt verstummen. Ein grundlegendes Wort der Wiener Alltagssprache, das Ruhe und Stille in vielen Zusammenhängen ausdrückt, von der Aufforderung bis zur Jahreszeit.',
+      beispiel: 'Sei amoi stad, i kann mi ned konzentriern bei dem Lärm!',
+      beispiel_hd: 'Sei einmal still, ich kann mich nicht konzentrieren bei dem Lärm!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'w-442',
+      ausdruck: 'Staade Zeit',
+      hochdeutsch: 'Adventszeit / besinnliche Zeit',
+      bedeutung: 'D\'„Staade Zeit" — die besinnliche Adventszeit vor Weihnachten, von „stad" (still, ruhig). „In da staaden Zeit kommen ma zur Ruh und g\'nießen d\'Vorfreud." Bezeichnet die ruhige, beschauliche Zeit im Advent, in der man innehält, sich besinnt und auf Weihnachten freut. Ein poetisches Wiener und österreichisches Wort, das die kontemplative Stimmung der Vorweihnachtszeit einfängt, auch wenn die Realität mit Christkindlmärkten und Einkaufstrubel oft alles andere als „stad" ist.',
+      beispiel: 'In da Staade Zeit back ma Keks und g\'nießen d\'Punschstandl.',
+      beispiel_hd: 'In der Adventszeit backen wir Kekse und genießen die Punschstände.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-443',
+      ausdruck: 'Keks',
+      hochdeutsch: 'Plätzchen / Weihnachtsgebäck',
+      bedeutung: 'D\'„Keks" — in Österreich besonders das Weihnachtsgebäck, die Plätzchen, die in der Adventszeit gebacken werden. „D\'Oma backt scho de Vanillekipferl und de Lebkuchen-Keks." Während der Deutsche im Plural „Kekse" sagt, sind in Wien „d\'Keks" oft die selbstgebackenen Weihnachtsplätzchen. „Auf de Keks gehn" heißt jemandem auf die Nerven gehen. Ein Wort der Wiener Festtagskultur, das die liebevolle Tradition des vorweihnachtlichen Keksbackens beschreibt, ein fester Brauch in jedem Haushalt.',
+      beispiel: 'In da Adventzeit duftet de ganze Wohnung nach frischen Keks.',
+      beispiel_hd: 'In der Adventszeit duftet die ganze Wohnung nach frischen Plätzchen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-444',
+      ausdruck: 'Christkindlmarkt',
+      hochdeutsch: 'Weihnachtsmarkt',
+      bedeutung: 'Da „Christkindlmarkt" — der Weihnachtsmarkt, in Österreich nach dem „Christkindl" benannt, das die Geschenke bringt. „Aufm Christkindlmarkt am Rathausplatz trink ma an Punsch." Die Wiener Christkindlmärkte, etwa vor dem Rathaus oder am Spittelberg, sind berühmt für ihre festliche Atmosphäre, Punschstände, Lebkuchen und Handwerk. Während in Deutschland eher „Weihnachtsmarkt" gesagt wird, bringt in Österreich das Christkindl die Gaben. Ein Wort, das die Wiener Vorweihnachtszeit prägt.',
+      beispiel: 'Am Christkindlmarkt vorm Rathaus is heuer wieder a Mordstrubel.',
+      beispiel_hd: 'Am Weihnachtsmarkt vor dem Rathaus ist dieses Jahr wieder ein Riesentrubel.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-445',
+      ausdruck: 'Silvesterpfad',
+      hochdeutsch: 'Silvesterfeier in der Innenstadt',
+      bedeutung: 'Da „Silvesterpfad" — die große öffentliche Silvesterfeier in der Wiener Innenstadt mit Musikbühnen, Ständen und Feuerwerk entlang eines Rundwegs. „Zu Silvester gemma auf\'n Silvesterpfad in d\'Stadt." Tausende Wiener und Touristen feiern den Jahreswechsel auf dem Silvesterpfad rund um den Stephansplatz, Graben und Rathausplatz. Um Mitternacht erklingt der Donauwalzer. Ein Wort, das eine moderne Wiener Tradition beschreibt, bei der die ganze Stadt zur Festmeile des Jahreswechsels wird.',
+      beispiel: 'Aufm Silvesterpfad tanzn ma um Mitternacht den Donauwalzer.',
+      beispiel_hd: 'Auf der Silvesterfeier tanzen wir um Mitternacht den Donauwalzer.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-446',
+      ausdruck: 'Fasching',
+      hochdeutsch: 'Karneval / Fastnacht',
+      bedeutung: 'Da „Fasching" — der Karneval, die närrische Zeit vor der Fastenzeit, in Österreich und Bayern so genannt. „Zum Fasching verkleiden si d\'Kinder als Cowboy und Prinzessin." Während im Rheinland „Karneval" und im Südwesten „Fastnacht" gefeiert wird, ist es in Wien der Fasching. Höhepunkt ist der „Faschingsdienstag" vor dem Aschermittwoch. Auch die Ballsaison gehört zum Fasching. Ein Wort, das die österreichische Festtradition der ausgelassenen, verkleideten Feierzeit beschreibt.',
+      beispiel: 'Im Fasching gibt\'s in da Schui a Maskenfest mit Krapfen.',
+      beispiel_hd: 'Im Karneval gibt es in der Schule ein Maskenfest mit Krapfen.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'w-447',
+      ausdruck: 'Faschingskrapfen',
+      hochdeutsch: 'Berliner / Pfannkuchen (Gebäck)',
+      bedeutung: 'Da „Faschingskrapfen" — ein mit Marillenmarmelade gefülltes, in Fett gebackenes und mit Staubzucker bestreutes Hefegebäck, das traditionell in der Faschingszeit gegessen wird. „A Faschingskrapfen mit Marillenmarmelade, frisch und flaumig!" Während der Deutsche „Berliner" oder „Pfannkuchen" sagt, kennt der Wiener den Faschingskrapfen. In einen wird scherzhaft Senf statt Marmelade gefüllt. Ein Wort der Wiener Festtagsbäckerei, das fest zur närrischen Zeit gehört.',
+      beispiel: 'Zum Fasching kauf i a Dutzend Faschingskrapfen beim Bäcker.',
+      beispiel_hd: 'Zum Karneval kaufe ich ein Dutzend Berliner beim Bäcker.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'w-448',
+      ausdruck: 'Zniachterl',
+      hochdeutsch: 'schwächliches Männlein / Kümmerling',
+      bedeutung: 's\'„Zniachterl" — ein schwächliches, schmächtiges oder kümmerliches Männlein, ein unscheinbarer, kleiner Mensch. „So a Zniachterl und macht so a großes Geschrei!" Bezeichnet jemanden, der zart, mager und unbedeutend wirkt, oft mit einem Anflug von Mitleid oder Spott. Verwandt mit anderen Wiener Wörtern für schwächliche Personen wie „Wuzzi" oder „Tschoperl". Ein typisch wienerisches Wort, das körperliche Zartheit und geringe Statur mit einer abwertend-mitleidigen Note benennt.',
+      beispiel: 'Des Zniachterl traut si nix, der bleibt liaber daham.',
+      beispiel_hd: 'Das schwächliche Männlein traut sich nichts, der bleibt lieber zu Hause.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'w-449',
+      ausdruck: 'Trutschn',
+      hochdeutsch: 'einfältige Frau / Gans',
+      bedeutung: 'D\'„Trutschn" — eine einfältige, naive oder etwas tölpelhafte Frau, eine dumme Gans, meist abwertend gemeint. „De aufgetakelte Trutschn glaubt, sie is wer." Bezeichnet eine Frau, die als beschränkt, geziert oder oberflächlich wahrgenommen wird. Ein derbes Wiener Schimpfwort, das vor allem auf Frauen gemünzt ist und ihre vermeintliche Dummheit oder Affektiertheit aufs Korn nimmt. Gehört zum kräftigen Repertoire der Wiener Schimpfkultur, das vor Deftigkeit nicht zurückschreckt.',
+      beispiel: 'De Trutschn versteht aber a goar nix von der Sach!',
+      beispiel_hd: 'Die einfältige Frau versteht aber auch gar nichts von der Sache!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'w-450',
+      ausdruck: 'Brandstifter',
+      hochdeutsch: 'Streithetzer / Unruhestifter',
+      bedeutung: 'Da „Brandstifter" — im übertragenen Sinn ein Unruhestifter, Streithetzer oder Provokateur, der Zwietracht sät und Konflikte anfacht. „Der Brandstifter hetzt de Leut nur gegeneinander auf." Bezeichnet jemanden, der absichtlich Streit schürt, Gerüchte streut und für böses Blut sorgt, ohne selbst die Folgen zu tragen. Im Wienerischen ein gängiges Bild für den hinterhältigen Aufwiegler. Ein Wort, das die Verachtung für jene ausdrückt, die aus Bosheit oder Eigennutz Zwietracht und Unfrieden stiften.',
+      beispiel: 'Der Brandstifter im Büro bringt olle gegeneinander auf, a Gfrast!',
+      beispiel_hd: 'Der Unruhestifter im Büro bringt alle gegeneinander auf, ein Ekel!',
+      kategorie: 'menschen'
     }
   ]
 };

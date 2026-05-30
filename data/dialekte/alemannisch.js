@@ -2341,6 +2341,1356 @@ export default {
       beispiel: 'Bei d\'r Trachteprozesion träg sie ihre rote Bollenhut.',
       beispiel_hd: 'Bei der Trachtenprozession trägt sie ihren roten Bollenhut.',
       kategorie: 'feiern'
+    },
+    {
+      id: 'al-271',
+      ausdruck: 'gschwind',
+      hochdeutsch: 'schnell / rasch',
+      bedeutung: '„Gschwind" ist das alemannische Wort für „schnell" oder „rasch" und gehört zum täglichen Wortschatz in ganz Baden. „Gang gschwind in d\'Bäckerei!" heißt „Geh schnell in die Bäckerei!". Oft wird es benutzt, wenn man kurz etwas erledigen will: „I mach des no gschwind". Das Wort betont, dass etwas ohne Umstände und zügig geschehen soll, und klingt durch das alemannische „g" am Anfang sehr typisch.',
+      beispiel: 'Lauf gschwind go Brot hole, eb d\'Bäckerei zuemacht!',
+      beispiel_hd: 'Lauf schnell Brot holen, bevor die Bäckerei zumacht!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-272',
+      ausdruck: 'hesch',
+      hochdeutsch: 'hast (du)',
+      bedeutung: 'Die Form „hesch" ist die alemannische Variante von „hast du" und eines der unverkennbaren Merkmale des Dialekts am Oberrhein. „Hesch des gsehne?" bedeutet „Hast du das gesehen?". Die zweite Person Singular endet im Alemannischen oft auf „-sch", was den Dialekt für Auswärtige schwer verständlich macht. Zusammen mit „bisch" und „chasch" bildet „hesch" das Grundgerüst des alemannischen Verbsystems.',
+      beispiel: 'Hesch hüt scho dini Großmuetter aagrüeft?',
+      beispiel_hd: 'Hast du heute schon deine Großmutter angerufen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-273',
+      ausdruck: 'bisch',
+      hochdeutsch: 'bist (du)',
+      bedeutung: '„Bisch" ist die alemannische Form von „bist du" und begegnet einem in Baden auf Schritt und Tritt. „Wo bisch gsi?" heißt „Wo bist du gewesen?". Wie bei „hesch" zeigt sich die typische Endung „-sch" der zweiten Person Singular. Die Frage „Bisch dabei?" („Bist du dabei?") gehört zu den alltäglichsten Sätzen unter Freunden im südbadischen Raum.',
+      beispiel: 'Bisch am Sunntig au beim Familiefescht dabei?',
+      beispiel_hd: 'Bist du am Sonntag auch beim Familienfest dabei?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-274',
+      ausdruck: 'gsehsch',
+      hochdeutsch: 'siehst (du)',
+      bedeutung: '„Gsehsch" ist die alemannische Form von „siehst du" und stammt vom Verb „gseh" (sehen). „Gsehsch des do dröbe?" heißt „Siehst du das da drüben?". Das Verb „gseh" mit seinem vorangestellten „g" ist eines der schönsten Beispiele alemannischer Lautbildung. Im Markgräflerland und im Breisgau hört man „gsehsch" ständig, wenn jemand auf etwas aufmerksam machen will.',
+      beispiel: 'Gsehsch dört dr Münschterturm über de Dächer?',
+      beispiel_hd: 'Siehst du dort den Münsterturm über den Dächern?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-275',
+      ausdruck: 'Grumbiere',
+      hochdeutsch: 'Kartoffeln',
+      bedeutung: 'Die „Grumbiere" (auch Grumbeere) sind im Badischen die Kartoffeln — wörtlich „Grundbirnen", weil sie wie Birnen in der Erde wachsen. Der Ausdruck ist im ganzen badisch-pfälzischen Raum verbreitet. „Mir setze hüt Grumbiere im Garte" heißt „Wir pflanzen heute Kartoffeln im Garten". Aus den Grumbiere macht man Bratkartoffeln, Kartoffelsalat oder die berühmte Grumbeersuppe.',
+      beispiel: 'Zum Brote gits hüt Grumbiere mit Quark und Leinöl.',
+      beispiel_hd: 'Zum Braten gibt es heute Kartoffeln mit Quark und Leinöl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-276',
+      ausdruck: 'Gsälz',
+      hochdeutsch: 'Marmelade / Konfitüre',
+      bedeutung: 'Das „Gsälz" ist im Alemannischen und Schwäbischen die Marmelade oder Konfitüre. Das Wort hängt mit „einsalzen/einkochen" zusammen — früher wurde Obst zum Haltbarmachen eingekocht. „Erdbeergsälz" ist das beliebteste, aber auch Brombeer- und Zwetschgegsälz sind verbreitet. „Ä Brötli mit Gsälz" gehört in Baden zu jedem Frühstück und zu jeder Vesper.',
+      beispiel: 'Oma kocht jede Summer ihr eiges Zwetschgegsälz ii.',
+      beispiel_hd: 'Oma kocht jeden Sommer ihre eigene Zwetschgenmarmelade ein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-277',
+      ausdruck: 'Hämpfeli',
+      hochdeutsch: 'eine Handvoll',
+      bedeutung: 'Ein „Hämpfeli" ist im Alemannischen eine Handvoll von etwas — die Menge, die in eine hohle Hand passt. „Gib mir no ä Hämpfeli Nuss" heißt „Gib mir noch eine Handvoll Nüsse". Das Wort ist eine Verkleinerungsform und wird liebevoll für kleine Mengen benutzt, etwa beim Backen, beim Füttern der Hühner oder beim Naschen. Es zeigt den alemannischen Hang zu anschaulichen, bildhaften Maßangaben.',
+      beispiel: 'Wirf de Hüehner no ä Hämpfeli Körner ane!',
+      beispiel_hd: 'Wirf den Hühnern noch eine Handvoll Körner hin!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-278',
+      ausdruck: 'Wäldele',
+      hochdeutsch: 'kleines Wäldchen',
+      bedeutung: 'Das „Wäldele" ist im Badischen ein kleines Wäldchen oder Gehölz — die Verkleinerungsform von „Wald". Im hügeligen Markgräflerland und am Kaiserstuhl gibt es viele solcher kleinen Wäldele zwischen den Rebbergen und Feldern. „Mir gehn ins Wäldele go Pilz suche" heißt „Wir gehen ins Wäldchen Pilze suchen". Das liebevolle „-ele" am Ende ist typisch für die alemannische Verkleinerung.',
+      beispiel: 'Hinterm Hof lit ä chlises Wäldele voll Bärlauch.',
+      beispiel_hd: 'Hinter dem Hof liegt ein kleines Wäldchen voll Bärlauch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-279',
+      ausdruck: 'Heidi',
+      hochdeutsch: 'Hallo / lockerer Gruß',
+      bedeutung: '„Heidi" oder „Heido" ist im südbadischen und alemannischen Raum ein lockerer, freundschaftlicher Gruß unter Bekannten — vergleichbar mit „Hallo" oder „Servus". Man ruft es im Vorbeigehen oder beim Betreten eines Lokals. Es ist ungezwungener als das förmliche „Guete Tag" und drückt eine herzliche, unkomplizierte Begegnung aus. Besonders in Freiburg und im Breisgau verbreitet.',
+      beispiel: 'Heidi mitenand, was machet ihr denn do?',
+      beispiel_hd: 'Hallo zusammen, was macht ihr denn da?',
+      kategorie: 'begruessung'
+    },
+    {
+      id: 'al-280',
+      ausdruck: 'gigele',
+      hochdeutsch: 'kichern / leise lachen',
+      bedeutung: '„Gigele" bedeutet im Alemannischen kichern oder leise, vergnügt lachen — oft heimlich und ein bisschen albern. „D\'Mädle hen i de Eck gigelt" heißt „Die Mädchen haben in der Ecke gekichert". Das Wort ist lautmalerisch und gibt das hohe, helle Lachen wieder. Oft wird es benutzt, wenn Kinder oder junge Leute über etwas Lustiges oder Verbotenes kichern.',
+      beispiel: 'D\'Kinder hen in dr Schuelbank gigelt, bis dr Lehrer gschimpft hät.',
+      beispiel_hd: 'Die Kinder haben in der Schulbank gekichert, bis der Lehrer geschimpft hat.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-281',
+      ausdruck: 'briegge',
+      hochdeutsch: 'weinen / heulen',
+      bedeutung: '„Briegge" (auch brüele) ist im Alemannischen das laute Weinen oder Heulen, besonders von Kindern. „S\'Bobbele hät d\'ganz Nacht gbriegget" heißt „Das Baby hat die ganze Nacht geweint". Das Wort ist kräftig und drückt anhaltendes, lautes Weinen aus, nicht nur stilles Tränen. Es kann auch leicht spöttisch gebraucht werden, wenn jemand wegen einer Kleinigkeit jammert.',
+      beispiel: 'Hör uf go briegge, des isch doch nit so schlimm!',
+      beispiel_hd: 'Hör auf zu weinen, das ist doch nicht so schlimm!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-282',
+      ausdruck: 'gluschte',
+      hochdeutsch: 'Appetit haben / Lust auf etwas haben',
+      bedeutung: '„Gluschte" bedeutet im Alemannischen, auf etwas Lust oder Appetit zu haben. „Mir gluschtet jetz ä Stück Kueche" heißt „Mir steht jetzt der Sinn nach einem Stück Kuchen". Das Wort hängt mit „Gluscht" (Gelüst, Verlangen) zusammen. Wenn einem etwas „gluschtet", verspürt man ein deutliches Verlangen danach — meist nach etwas Gutem zu essen oder zu trinken.',
+      beispiel: 'Bi dem heiße Wetter gluschtet mi nur no ä chüehls Bier.',
+      beispiel_hd: 'Bei diesem heißen Wetter habe ich nur noch Lust auf ein kühles Bier.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-283',
+      ausdruck: 'hocke',
+      hochdeutsch: 'sitzen',
+      bedeutung: '„Hocke" ist im Alemannischen das normale Wort für „sitzen" — es ersetzt das hochdeutsche „sitzen" fast vollständig. „Mir hocke uf dr Bank vor em Huus" heißt „Wir sitzen auf der Bank vor dem Haus". Auch das gesellige Beisammensitzen heißt „zämmehocke". „Hock di ane!" ist die freundliche Aufforderung „Setz dich!". Das Wort gehört zum Kern des alltäglichen alemannischen Wortschatzes.',
+      beispiel: 'Chumm, hock di zue üs an de Disch!',
+      beispiel_hd: 'Komm, setz dich zu uns an den Tisch!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-284',
+      ausdruck: 'schwätze',
+      hochdeutsch: 'reden / sprechen',
+      bedeutung: '„Schwätze" ist im Alemannischen und Schwäbischen das ganz normale Wort für „reden" oder „sprechen" — ohne den abwertenden Beiklang, den „schwatzen" im Hochdeutschen hat. „Mir hen lang mitenand gschwätzt" heißt „Wir haben lange miteinander geredet". „Badisch schwätze" bedeutet, im Dialekt zu sprechen. Das Wort ist eines der wichtigsten Verben des badischen Alltags.',
+      beispiel: 'Mir hen am Hag no ä Stund mit em Nochber gschwätzt.',
+      beispiel_hd: 'Wir haben am Zaun noch eine Stunde mit dem Nachbarn geredet.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-285',
+      ausdruck: 'lupfe',
+      hochdeutsch: 'anheben / hochheben',
+      bedeutung: '„Lupfe" bedeutet im Alemannischen etwas anheben oder hochheben — meist kurz und mit etwas Kraft. „Hilf mir de Sack lupfe!" heißt „Hilf mir, den Sack anzuheben!". Das Wort ist im ganzen alemannischen und schweizerdeutschen Raum verbreitet. Beim Schwingen (dem traditionellen Ringkampf) wird der Gegner „glupft", also vom Boden gehoben.',
+      beispiel: 'De Stei isch so schwer, de chasch fascht nit lupfe.',
+      beispiel_hd: 'Der Stein ist so schwer, den kannst du fast nicht anheben.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-286',
+      ausdruck: 'putze',
+      hochdeutsch: 'rennen / schnell laufen',
+      bedeutung: 'Neben der gewöhnlichen Bedeutung „reinigen" heißt „putze" im südbadischen Alemannisch auch „schnell rennen" oder „flitzen". „Er isch um d\'Eck gputzt" heißt „Er ist um die Ecke gerannt". Das Wort drückt eine eilige, fast hektische Fortbewegung aus. Wenn die Kinder „go putze", sausen sie davon. Diese Doppelbedeutung sorgt bei Auswärtigen manchmal für Verwirrung.',
+      beispiel: 'Wo isch er denn so gschwind ane gputzt?',
+      beispiel_hd: 'Wo ist er denn so schnell hingerannt?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-287',
+      ausdruck: 'Hag',
+      hochdeutsch: 'Zaun / Hecke',
+      bedeutung: 'Der „Hag" ist im Alemannischen der Zaun oder die Hecke um einen Garten oder ein Grundstück. „Mir hen am Hag gschwätzt" heißt „Wir haben am Zaun geredet" — der Gartenzaun ist traditionell der Ort des nachbarschaftlichen Austauschs. Das Wort steckt auch in Ortsnamen und in „Hagebuche" (Hainbuche). Ein „Gartehag" ist die Umzäunung des Gartens.',
+      beispiel: 'Über de Hag ane git d\'Nochberin üs frischi Eier.',
+      beispiel_hd: 'Über den Zaun hinüber gibt uns die Nachbarin frische Eier.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-288',
+      ausdruck: 'Wegli',
+      hochdeutsch: 'schmaler Weg / Pfad',
+      bedeutung: 'Das „Wegli" ist im Alemannischen ein schmaler Weg oder Pfad — die Verkleinerungsform von „Weg". Im Schwarzwald und in den Reben gibt es zahllose Wegli, die durch Wald und Wiesen führen. „Mir nehmet s\'Wegli durch d\'Reb" heißt „Wir nehmen den Pfad durch die Weinberge". Wanderer und Spaziergänger schätzen diese kleinen, verschwiegenen Wege abseits der Straßen.',
+      beispiel: 'S\'Wegli durch de Wald isch chürzer als d\'Stroß.',
+      beispiel_hd: 'Der Pfad durch den Wald ist kürzer als die Straße.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-289',
+      ausdruck: 'Brünneli',
+      hochdeutsch: 'kleiner Brunnen',
+      bedeutung: 'Das „Brünneli" ist im Alemannischen ein kleiner Brunnen — die Verkleinerungsform von „Brunnen". In vielen schwarzwälder und markgräfler Dörfern steht ein steinernes Brünneli auf dem Platz, an dem früher Wasser geholt und Vieh getränkt wurde. „Am Brünneli treffe mer üs" heißt „Am Brunnen treffen wir uns". Das frische Quellwasser aus dem Brünneli gilt als besonders gut.',
+      beispiel: 'S\'chalt Wasser us em Brünneli schmeckt am beschte.',
+      beispiel_hd: 'Das kalte Wasser aus dem kleinen Brunnen schmeckt am besten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-290',
+      ausdruck: 'Buurehof',
+      hochdeutsch: 'Bauernhof',
+      bedeutung: 'Der „Buurehof" ist im Alemannischen der Bauernhof — von „Buur" (Bauer). Im Schwarzwald sind die großen Eindachhöfe berühmt, bei denen Wohnung, Stall und Scheune unter einem mächtigen Walmdach vereint sind. „Uf em Buurehof gits Chüeh, Hüehner und Schwii" heißt „Auf dem Bauernhof gibt es Kühe, Hühner und Schweine". Viele Höfe werden seit Generationen von derselben Familie bewirtschaftet.',
+      beispiel: 'Mir kaufet d\'Milch direkt vom Buurehof im Dorf.',
+      beispiel_hd: 'Wir kaufen die Milch direkt vom Bauernhof im Dorf.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-291',
+      ausdruck: 'Bäbbe',
+      hochdeutsch: 'Vater / Papa',
+      bedeutung: '„Bäbbe" (auch Bäpp) ist im badischen Alemannisch eine vertraute Bezeichnung für den Vater oder Papa. „Mi Bäbbe schafft im Wald" heißt „Mein Papa arbeitet im Wald". Das Wort ist herzlich und familiär und gehört zur Kindersprache, wird aber auch von Erwachsenen liebevoll benutzt. Neben „Bäbbe" sagt man im badischen Raum auch „Babbe" oder schlicht „Vadder".',
+      beispiel: 'Mi Bäbbe hät mir s\'Velofahre biibrocht.',
+      beispiel_hd: 'Mein Papa hat mir das Fahrradfahren beigebracht.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-292',
+      ausdruck: 'Mädle',
+      hochdeutsch: 'Mädchen',
+      bedeutung: 'Das „Mädle" ist im Alemannischen und Schwäbischen das Mädchen — die typische südwestdeutsche Verkleinerungsform statt des hochdeutschen „Mädchen". „S\'Mädle goht in d\'erscht Klass" heißt „Das Mädchen geht in die erste Klasse". Die Endung „-le" ist das Erkennungszeichen der alemannisch-schwäbischen Koseform. Ein liebes „Mädle" ist ein braves, freundliches Mädchen.',
+      beispiel: 'S\'Mädle vom Nochber hilft jede Samschtig im Lade.',
+      beispiel_hd: 'Das Mädchen vom Nachbarn hilft jeden Samstag im Laden.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-293',
+      ausdruck: 'Bueb',
+      hochdeutsch: 'Junge / Bub',
+      bedeutung: 'Der „Bueb" ist im Alemannischen der Junge oder Bub. „Dr Bueb isch scho zwölfi" heißt „Der Junge ist schon zwölf". Das Wort ist im ganzen süddeutschen und schweizerdeutschen Raum verbreitet und steht im Gegensatz zum norddeutschen „Junge". Die Verkleinerung „Büebli" bezeichnet einen kleinen Buben. „Mei Buebe" sind „meine Söhne".',
+      beispiel: 'Dr Bueb hät em Vatter de ganz Tag uf em Feld gholfe.',
+      beispiel_hd: 'Der Junge hat dem Vater den ganzen Tag auf dem Feld geholfen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-294',
+      ausdruck: 'Ähni',
+      hochdeutsch: 'Großvater / Opa',
+      bedeutung: 'Der „Ähni" ist im hochalemannischen Raum (Hochrhein, Schweiz, südlicher Schwarzwald) der Großvater oder Opa. „Dr Ähni verzellt gern alti Gschichte" heißt „Der Opa erzählt gern alte Geschichten". Das Wort ist alt und ehrwürdig und gehört zur traditionellen Familiensprache. Die Großmutter heißt entsprechend „Äni" oder „Großmuetter". Der Ähni ist oft die Respektsperson der Familie.',
+      beispiel: 'Mi Ähni hät früener im Wald als Holzer gschafft.',
+      beispiel_hd: 'Mein Großvater hat früher im Wald als Holzfäller gearbeitet.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-295',
+      ausdruck: 'Bäse',
+      hochdeutsch: 'Tante / Base',
+      bedeutung: 'Die „Bäse" (auch Base) ist im Alemannischen ursprünglich die Cousine, heute oft allgemein eine Tante oder weibliche Verwandte. „D\'Bäse us Lörrach chunnt am Sunntig" heißt „Die Tante aus Lörrach kommt am Sonntag". Das Wort ist alt und in der ganzen Verwandtschaftssprache des Südwestens verbreitet. Das männliche Gegenstück ist der „Vetter" (Cousin oder Onkel).',
+      beispiel: 'D\'Bäse bringt zum Kaffi immer ihre berüehmt Gugelhopf.',
+      beispiel_hd: 'Die Tante bringt zum Kaffee immer ihren berühmten Gugelhupf.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-296',
+      ausdruck: 'Vetter',
+      hochdeutsch: 'Cousin / Onkel',
+      bedeutung: 'Der „Vetter" ist im Alemannischen der Cousin oder, in älterer Verwendung, allgemein ein männlicher Verwandter oder Onkel. „Mi Vetter wohnt am Bodesee" heißt „Mein Cousin wohnt am Bodensee". In Dörfern sind oft viele Familien miteinander verwandt, und der respektvolle Anredegruß „Vetter" wurde früher auch für ältere, geachtete Männer benutzt. Das weibliche Gegenstück ist die „Bäse".',
+      beispiel: 'Mi Vetter us em Wiesental hilft üs bi dr Ärnte.',
+      beispiel_hd: 'Mein Cousin aus dem Wiesental hilft uns bei der Ernte.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-297',
+      ausdruck: 'Dirndl',
+      hochdeutsch: 'Mädchen / junge Frau',
+      bedeutung: 'Im südlichsten alemannischen und vorarlbergischen Raum bezeichnet „Dirndl" ein Mädchen oder eine junge Frau (nicht nur das Kleid). „S\'Dirndl tanzt schö" heißt „Das Mädchen tanzt schön". Während im Badischen eher „Mädle" üblich ist, hört man „Dirndl" am Bodensee und in Vorarlberg. Das Wort hängt mit „Dirne" im alten, unverfänglichen Sinn von „junges Mädchen" zusammen.',
+      beispiel: 'S\'Dirndl vom Hof hilft bim Heue uf dr Wiese.',
+      beispiel_hd: 'Das Mädchen vom Hof hilft beim Heuen auf der Wiese.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-298',
+      ausdruck: 'Wiib',
+      hochdeutsch: 'Frau / Ehefrau',
+      bedeutung: '„Wiib" ist im Alemannischen die Frau oder Ehefrau — ohne den abwertenden Klang, den „Weib" im Hochdeutschen oft hat. „Mi Wiib chunnt grad heim" heißt „Meine Frau kommt gerade heim". Das Wort ist im alltäglichen Sprachgebrauch ganz normal und respektvoll. Im Plural „Wiiber" bezeichnet es die Frauen allgemein, etwa bei der „Wiiberfasnet".',
+      beispiel: 'Mi Wiib und i gehn am Obe go spaziere.',
+      beispiel_hd: 'Meine Frau und ich gehen am Abend spazieren.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-299',
+      ausdruck: 'Ma',
+      hochdeutsch: 'Mann / Ehemann',
+      bedeutung: '„Ma" (auch Mah) ist im Alemannischen der Mann oder Ehemann. „Mi Ma schafft uf em Bau" heißt „Mein Mann arbeitet auf dem Bau". Das kurze Wort ist eine der häufigsten Bezeichnungen im familiären Alltag. „Dr alt Ma" ist der alte Mann, und „mi Ma" ist immer der eigene Ehemann. Zusammen mit „Wiib" bildet es das alemannische Ehepaar.',
+      beispiel: 'Mi Ma reparert grad s\'Dach vom Schopf.',
+      beispiel_hd: 'Mein Mann repariert gerade das Dach vom Schuppen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'al-300',
+      ausdruck: 'Bäbbeler',
+      hochdeutsch: 'Schwätzer / Vielredner',
+      bedeutung: 'Ein „Bäbbeler" ist im badischen Alemannisch jemand, der viel und ununterbrochen redet — ein Schwätzer oder Plappermaul. „Der Bäbbeler hört gar nümmi uf" heißt „Der Schwätzer hört gar nicht mehr auf". Das Wort ist leicht spöttisch und beschreibt jemanden, dessen Mundwerk nie stillsteht. Es leitet sich vom Verb „bäbbele" (plappern) ab und wird meist gutmütig verwendet.',
+      beispiel: 'Mit dem Bäbbeler chasch kei zwei Wort allei rede.',
+      beispiel_hd: 'Mit dem Schwätzer kannst du kein zwei Worte allein reden.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-301',
+      ausdruck: 'Bappe',
+      hochdeutsch: 'Brei / Matsch',
+      bedeutung: 'Die „Bappe" (auch Babb) ist im Alemannischen ein zäher Brei, Matsch oder Schlamm. „Nach em Rege isch dr Weg ä einzig Bappe" heißt „Nach dem Regen ist der Weg ein einziger Matsch". Das Wort wird auch für klebriges Essen oder einen verkochten Brei benutzt. Etwas, das „bappt", klebt. Die Lautmalerei drückt das Klebrig-Breiige treffend aus.',
+      beispiel: 'D\'Kinder sin durch d\'Bappe glaufe und ganz dräckig wore.',
+      beispiel_hd: 'Die Kinder sind durch den Matsch gelaufen und ganz dreckig geworden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-302',
+      ausdruck: 'dräckig',
+      hochdeutsch: 'schmutzig / dreckig',
+      bedeutung: '„Dräckig" ist die alemannische Form von „dreckig" oder „schmutzig" — mit dem typischen offenen „ä". „Dini Schueh sin ganz dräckig" heißt „Deine Schuhe sind ganz schmutzig". Das Wort „Dräck" (Dreck, Schmutz) ist im Badischen allgegenwärtig. Wenn Kinder im Garten oder im Wald spielen, kommen sie meist „dräckig" heim. Auch übertragen für etwas Wertloses: „Des isch mir dräckegal".',
+      beispiel: 'Zieh d\'dräckige Stifel us, eb du i d\'Stube chunnsch!',
+      beispiel_hd: 'Zieh die schmutzigen Stiefel aus, bevor du in die Stube kommst!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-303',
+      ausdruck: 'Bettmümpfeli',
+      hochdeutsch: 'kleiner Leckerbissen vor dem Schlafengehen',
+      bedeutung: 'Ein „Bettmümpfeli" ist im Alemannischen und Schweizerdeutschen ein kleiner Leckerbissen oder Schluck, den man sich kurz vor dem Schlafengehen gönnt — ein Stück Schokolade, ein Schnäpsli oder ein Keks. „Ä Stückli Schoggi als Bettmümpfeli" heißt „Ein Stück Schokolade als Betthupferl". Das Wort setzt sich aus „Bett" und „Mümpfeli" (kleiner Bissen) zusammen und ist überaus gemütlich.',
+      beispiel: 'Vor em Schlofe gönnt sie sich immer no ä Bettmümpfeli.',
+      beispiel_hd: 'Vor dem Schlafen gönnt sie sich immer noch ein Betthupferl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-304',
+      ausdruck: 'Mümpfeli',
+      hochdeutsch: 'kleiner Bissen / Happen',
+      bedeutung: 'Ein „Mümpfeli" ist im Alemannischen ein kleiner Bissen oder Happen — die Menge, die man auf einmal in den Mund nimmt. „Nimm doch no ä Mümpfeli vom Chueche" heißt „Nimm doch noch einen kleinen Happen vom Kuchen". Das Wort hängt mit „mampfen" zusammen und ist eine liebevolle Verkleinerung. Man bietet einem Gast gern „nur no ä chlises Mümpfeli" an.',
+      beispiel: 'I mag nümmi viel, nur no ä Mümpfeli zum Probiere.',
+      beispiel_hd: 'Ich mag nicht mehr viel, nur noch einen kleinen Happen zum Probieren.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-305',
+      ausdruck: 'Schnäpsli',
+      hochdeutsch: 'kleiner Schnaps',
+      bedeutung: 'Ein „Schnäpsli" ist im Alemannischen ein kleiner Schnaps — die freundliche Verkleinerungsform von „Schnaps". Nach einem reichhaltigen Essen gehört im Schwarzwald ein „Schnäpsli" zur Verdauung dazu, oft ein selbstgebrannter Obstler oder Kirschwasser. „Mir trinket no ä Schnäpsli" heißt „Wir trinken noch einen kleinen Schnaps". Die Verkleinerung macht das Trinken gesellig und harmlos.',
+      beispiel: 'Nach em Brote git dr Wirt jedem no ä Schnäpsli us.',
+      beispiel_hd: 'Nach dem Braten gibt der Wirt jedem noch einen kleinen Schnaps aus.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-306',
+      ausdruck: 'Schoppe',
+      hochdeutsch: 'Viertel Wein / Glas Wein',
+      bedeutung: 'Der „Schoppe" ist im Badischen und Pfälzischen ein Glas Wein, traditionell ein Viertelliter (in der Pfalz sogar ein halber Liter im typischen Dubbeglas). „Mir trinket no ä Schoppe zämme" heißt „Wir trinken noch ein Glas Wein zusammen". Der „Schoppe" gehört zur Geselligkeit in der Strausswirtschaft und beim Vesper. „Schoppe stemme" bedeutet, gesellig Wein zu trinken.',
+      beispiel: 'Am Obe sitze mir bim Winzer und trinke ä Schoppe.',
+      beispiel_hd: 'Am Abend sitzen wir beim Winzer und trinken ein Glas Wein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-307',
+      ausdruck: 'Gsottnigs',
+      hochdeutsch: 'Gekochtes / Suppenfleisch',
+      bedeutung: '„Gsottnigs" ist im Alemannischen das Gekochte oder Gesottene, meist gekochtes Suppenfleisch oder Siedfleisch. „Zum Mittag gits Gsottnigs mit Meerrettich" heißt „Zum Mittag gibt es Siedfleisch mit Meerrettich". Das Wort kommt von „sieden" (kochen). Suppenfleisch mit einer kräftigen Brühe und Gemüse war lange ein Sonntagsessen in vielen badischen Familien.',
+      beispiel: 'Am Sunntig hät\'s Gsottnigs mit Bouillon und Gmües ge.',
+      beispiel_hd: 'Am Sonntag gab es Siedfleisch mit Bouillon und Gemüse.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-308',
+      ausdruck: 'Schäufele',
+      hochdeutsch: 'gepökeltes Schweineschulterstück',
+      bedeutung: 'Das „Schäufele" ist eine badische Spezialität: ein gepökeltes und geräuchertes Stück aus der Schweineschulter, das mit dem Schulterblatt-Knochen serviert wird (daher der Name „Schäufele" wie kleine Schaufel). „S\'Schäufele mit Chrutsalat" heißt „Das Schäufele mit Krautsalat". Es wird langsam gegart und mit Kartoffelsalat oder Sauerkraut gegessen — ein deftiges, beliebtes Wirtshausgericht in Baden.',
+      beispiel: 'Im Gaschthuus bstelle mir s\'Schäufele mit Chrutsalat.',
+      beispiel_hd: 'Im Gasthaus bestellen wir das Schäufele mit Krautsalat.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-309',
+      ausdruck: 'Bibeliskäs',
+      hochdeutsch: 'Quark / Frischkäse',
+      bedeutung: 'Der „Bibeliskäs" (auch Bibbeleskäs) ist im Badischen der Quark oder frische Weißkäse, oft mit Schnittlauch, Zwiebeln und Leinöl angemacht. „Grumbiere mit Bibeliskäs" ist Pellkartoffeln mit Quark — ein einfaches, beliebtes Vesperessen. Der Name hängt mit „Bibeli" (Küken) zusammen, weil der körnige Quark an Hühnerfutter erinnerte. Auf jedem badischen Markt wird frischer Bibeliskäs verkauft.',
+      beispiel: 'Pellkartoffle mit Bibeliskäs und Leinöl — eifach guet!',
+      beispiel_hd: 'Pellkartoffeln mit Quark und Leinöl — einfach gut!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-310',
+      ausdruck: 'Schlutzkrapfe',
+      hochdeutsch: 'gefüllte Teigtaschen',
+      bedeutung: 'Im südlichsten alemannischen und vorarlbergischen Raum sind „Schlutzkrapfe" halbmondförmige gefüllte Teigtaschen, meist mit Spinat-Topfen-Füllung, übergossen mit brauner Butter und Käse. „Schlutzkrapfe mit Salbeibutter" sind ein beliebtes Gericht. Sie sind mit den Tiroler und Südtiroler Schlutzkrapfen verwandt und zeigen die kulinarische Nähe des Bodenseeraums zum Alpenraum.',
+      beispiel: 'Z\'Vorarlberg hen mir Schlutzkrapfe mit brauner Butter gesse.',
+      beispiel_hd: 'In Vorarlberg haben wir Schlutzkrapfen mit brauner Butter gegessen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-311',
+      ausdruck: 'Brägele',
+      hochdeutsch: 'Bratkartoffeln',
+      bedeutung: '„Brägele" sind im südbadischen Alemannisch Bratkartoffeln — in der Pfanne mit Speck und Zwiebeln gebratene Kartoffeln. Das Verb „brägele" bedeutet „in der Pfanne braten". „Mir mache hüt Brägele zum Salat" heißt „Wir machen heute Bratkartoffeln zum Salat". Brägele gehören zu den beliebtesten Beilagen der badischen Hausmannskost und werden gern zum Wurstsalat oder zu Spiegeleiern gegessen.',
+      beispiel: 'D\'Mueter brägelt d\'Grumbiere mit Speck in dr Pfanne.',
+      beispiel_hd: 'Die Mutter brät die Kartoffeln mit Speck in der Pfanne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-312',
+      ausdruck: 'Hewe',
+      hochdeutsch: 'Hefe',
+      bedeutung: '„Hewe" ist die alemannische Form von „Hefe". „Für de Zopf bruucht\'s frischi Hewe" heißt „Für den Hefezopf braucht es frische Hefe". Mit Hewe werden im Badischen die Sonntagszöpfe, der Gugelhopf und der Hefekuchen gebacken. Der „Heweteig" muss „go" (gehen), also aufgehen. Das Backen mit Hewe ist ein traditioneller Teil der südbadischen Backkultur, besonders zu Festtagen.',
+      beispiel: 'Dr Teig mit dr Hewe muess no ä Stund go, eb mer ihn bocht.',
+      beispiel_hd: 'Der Teig mit der Hefe muss noch eine Stunde gehen, bevor man ihn bäckt.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-313',
+      ausdruck: 'Zibebe',
+      hochdeutsch: 'Rosinen',
+      bedeutung: '„Zibebe" sind im Alemannischen die Rosinen — getrocknete Weinbeeren. „In de Gugelhopf chömme Zibebe und Mandle" heißt „In den Gugelhupf kommen Rosinen und Mandeln". Das Wort stammt vom italienischen „zibibbo" (eine süße Traubensorte) und kam über den Handel ins Alemannische. Zibebe gehören in den Hefezopf, in den Stollen und in viele süße Speisen der badischen Küche.',
+      beispiel: 'D\'Oma duet in ihre Zopf immer ä Hampfle Zibebe.',
+      beispiel_hd: 'Die Oma tut in ihren Zopf immer eine Handvoll Rosinen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-314',
+      ausdruck: 'Schwartemage',
+      hochdeutsch: 'Schwartenmagen / Presskopf',
+      bedeutung: 'Der „Schwartemage" ist eine badische Wurstspezialität aus Schweinefleisch, Schwarten und Gewürzen, die im Magen oder Darm gepresst und gesotten wird (Presssack/Sülzwurst). „Schwartemage mit Brot und Zwiebel" ist ein typisches Vesper. In Baden gibt es roten (mit Blut) und weißen Schwartemage. Er wird in Scheiben mit Essig, Öl und Zwiebeln als deftiger Imbiss gegessen.',
+      beispiel: 'Zum Vesper git\'s Schwartemage mit saure Zibele.',
+      beispiel_hd: 'Zur Brotzeit gibt es Schwartenmagen mit sauren Zwiebeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-315',
+      ausdruck: 'Wegge',
+      hochdeutsch: 'längliches Brötchen / Wecken',
+      bedeutung: 'Der „Wegge" (auch Wecke) ist im Alemannischen ein längliches Weißbrot oder Brötchen. „Hol zum Zmorge frischi Wegge!" heißt „Hol zum Frühstück frische Brötchen!". Das Wort steckt auch im „Milchwegge" (Milchbrötchen) und im „Fasnachtswegge". In Baden ist der Wegge das Standard-Frühstücksgebäck, das man warm beim Bäcker holt und mit Butter und Gsälz isst.',
+      beispiel: 'Zum Zmorge ess i am liebschte ä warme Wegge mit Gsälz.',
+      beispiel_hd: 'Zum Frühstück esse ich am liebsten ein warmes Brötchen mit Marmelade.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-316',
+      ausdruck: 'Zmorge',
+      hochdeutsch: 'Frühstück',
+      bedeutung: 'Das „Zmorge" (zu Morgen) ist im Alemannischen und Schweizerdeutschen das Frühstück. „Mir sitze zämme bim Zmorge" heißt „Wir sitzen zusammen beim Frühstück". Die Mahlzeiten heißen im Alemannischen oft nach der Tageszeit: Zmorge (Frühstück), Zmittag (Mittagessen), Zvieri (Nachmittagsjause) und Znacht (Abendessen). Ein gemütliches Zmorge am Sonntag mit frischen Wegge ist ein Stück Lebensqualität.',
+      beispiel: 'Am Sunntig nehme mir üs Ziit fürs Zmorge.',
+      beispiel_hd: 'Am Sonntag nehmen wir uns Zeit fürs Frühstück.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-317',
+      ausdruck: 'Zvieri',
+      hochdeutsch: 'Nachmittagsjause / Vier-Uhr-Imbiss',
+      bedeutung: 'Das „Zvieri" (zu Vieri, also um vier Uhr) ist im Alemannischen und Schweizerdeutschen die kleine Mahlzeit am Nachmittag — vergleichbar mit der Vesper. „Mir mache Zvieri mit Brot und Wurst" heißt „Wir machen eine Nachmittagsjause mit Brot und Wurst". Auf dem Feld oder im Weinberg gönnt man sich um vier Uhr das Zvieri, oft mit einem Schoppe Wein dazu.',
+      beispiel: 'Um vieri mache d\'Schaffer im Wingert ihr Zvieri.',
+      beispiel_hd: 'Um vier Uhr machen die Arbeiter im Weinberg ihre Nachmittagsjause.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-318',
+      ausdruck: 'Znacht',
+      hochdeutsch: 'Abendessen',
+      bedeutung: 'Das „Znacht" (zu Nacht) ist im Alemannischen und Schweizerdeutschen das Abendessen. „Was gits hüt zum Znacht?" heißt „Was gibt es heute zum Abendessen?". Wie die anderen Mahlzeitnamen (Zmorge, Zmittag, Zvieri) folgt es dem alten alemannischen Muster „zu + Tageszeit". Das Znacht ist oft eine leichtere Mahlzeit, etwa Brot mit Käse und Wurst oder eine warme Suppe.',
+      beispiel: 'Zum Znacht git\'s nur ä Suppe und ä Stückli Brot.',
+      beispiel_hd: 'Zum Abendessen gibt es nur eine Suppe und ein Stück Brot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-319',
+      ausdruck: 'Hüsli',
+      hochdeutsch: 'kleines Haus / Häuschen',
+      bedeutung: 'Das „Hüsli" ist im Alemannischen ein kleines Haus oder Häuschen — die Verkleinerungsform von „Huus" (Haus). „Mir hen ä chlises Hüsli am Waldrand" heißt „Wir haben ein kleines Häuschen am Waldrand". Das Wort wird liebevoll für das eigene Heim oder ein Gartenhäuschen benutzt. Früher war das „Hüsli" im Garten auch eine verhüllende Bezeichnung für das Plumpsklo.',
+      beispiel: 'Am Hang stoht ä chlises Hüsli mit eme Garte drum.',
+      beispiel_hd: 'Am Hang steht ein kleines Häuschen mit einem Garten drumherum.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-320',
+      ausdruck: 'Chuchi',
+      hochdeutsch: 'Küche',
+      bedeutung: 'Die „Chuchi" ist im Hochalemannischen die Küche — mit dem typischen „ch" am Anfang statt „k". „D\'Mueter stoht de ganz Tag i dr Chuchi" heißt „Die Mutter steht den ganzen Tag in der Küche". Das berühmte schweizerdeutsche „Chuchichäschtli" (Küchenschränkchen) gilt als Schibboleth des Hochalemannischen. Am Hochrhein und im südlichen Schwarzwald ist die „Chuchi" der Mittelpunkt des Hauses.',
+      beispiel: 'In dr Chuchi duftet\'s nach frisch bochenem Brot.',
+      beispiel_hd: 'In der Küche duftet es nach frisch gebackenem Brot.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-321',
+      ausdruck: 'Estrich',
+      hochdeutsch: 'Dachboden',
+      bedeutung: 'Der „Estrich" ist im Alemannischen und Schweizerdeutschen der Dachboden oder Speicher unter dem Dach — nicht, wie im Hochdeutschen, der Fußbodenbelag. „Uf em Estrich lagre mir d\'alte Möbel" heißt „Auf dem Dachboden lagern wir die alten Möbel". Im Estrich werden alte Sachen, Vorräte und Erinnerungsstücke aufbewahrt. Wer etwas Vergessenes sucht, „muess uf de Estrich go" (muss auf den Dachboden gehen).',
+      beispiel: 'D\'alte Kischte mit de Foto stehn obe uf em Estrich.',
+      beispiel_hd: 'Die alten Kisten mit den Fotos stehen oben auf dem Dachboden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-322',
+      ausdruck: 'Bsetzischtei',
+      hochdeutsch: 'Kopfsteinpflaster / Pflasterstein',
+      bedeutung: 'Die „Bsetzischtei" (Besetzsteine) sind im Alemannischen die Pflastersteine oder das Kopfsteinpflaster auf Straßen und Plätzen. „D\'Altstadt isch mit Bsetzischtei plaschtert" heißt „Die Altstadt ist mit Kopfsteinpflaster gepflastert". In Freiburg sind viele Plätze und Gassen mit den charakteristischen rheinischen Kieselmosaiken belegt, die hier „Bsetzischtei" genannt werden. Auf den unebenen Steinen holpert jedes Velo.',
+      beispiel: 'Uf de Bsetzischtei in dr Altstadt schlottert dr Velorahme.',
+      beispiel_hd: 'Auf dem Kopfsteinpflaster in der Altstadt rüttelt der Fahrradrahmen.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-323',
+      ausdruck: 'Dorfplatz',
+      hochdeutsch: 'Dorfplatz / Versammlungsort',
+      bedeutung: 'Der „Dorfplatz" ist im alemannischen Dorf der zentrale Versammlungsort, meist mit Brünneli, Linde und Wirtshaus. „Uf em Dorfplatz isch hüt Märt" heißt „Auf dem Dorfplatz ist heute Markt". Hier finden Feste, Märkte und die Fasnet statt, hier trifft man sich nach der Kirche. Der Dorfplatz ist das Herz der dörflichen Gemeinschaft und Ort des nachbarschaftlichen Lebens.',
+      beispiel: 'Am Sunntig nach dr Chille trifft mer sich uf em Dorfplatz.',
+      beispiel_hd: 'Am Sonntag nach der Kirche trifft man sich auf dem Dorfplatz.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-324',
+      ausdruck: 'Chille',
+      hochdeutsch: 'Kirche',
+      bedeutung: 'Die „Chille" (auch Chilche) ist im Hochalemannischen die Kirche — mit dem typischen „ch". „Am Sunntig gehn d\'Leut in d\'Chille" heißt „Am Sonntag gehen die Leute in die Kirche". In den Dörfern des südlichen Schwarzwalds und am Hochrhein ist die Chille mit ihrem Turm das Wahrzeichen. Die „Chilbi" (Kirchweih) ist das Fest zur Einweihung der Chille und ein Höhepunkt im Dorfjahr.',
+      beispiel: 'D\'Glocke vo dr Chille lüte zum Mittag.',
+      beispiel_hd: 'Die Glocken der Kirche läuten zum Mittag.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-325',
+      ausdruck: 'Chilbi',
+      hochdeutsch: 'Kirchweih / Jahrmarkt',
+      bedeutung: 'Die „Chilbi" (Kirchweih) ist im Alemannischen das jährliche Dorffest zum Gedenken an die Einweihung der Kirche — mit Festzelt, Karussell, Musik und Tanz. „An dr Chilbi isch des ganz Dorf uf de Bei" heißt „An der Kirchweih ist das ganze Dorf auf den Beinen". Die Chilbi ist neben der Fasnet das wichtigste Fest im Dorfjahr und versammelt Jung und Alt bei Bier, Wein und Hocketse.',
+      beispiel: 'An dr Chilbi git\'s Karussell, Festzält und am Obe Tanz.',
+      beispiel_hd: 'An der Kirchweih gibt es Karussell, Festzelt und am Abend Tanz.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-326',
+      ausdruck: 'Hocketse',
+      hochdeutsch: 'geselliges Sommerfest / Straßenfest',
+      bedeutung: 'Die „Hocketse" (auch Hockete) ist im alemannisch-schwäbischen Raum ein geselliges Sommerfest, bei dem man draußen zusammen „hockt" (sitzt), isst und trinkt. „Am Wuchenend isch Hocketse vom Musikverein" heißt „Am Wochenende ist Straßenfest vom Musikverein". Vereine richten Hocketsen aus, um ihre Kasse zu füllen. Bei Bier, Wein, Grillwürsten und Musik feiert das Dorf bis spät in die Nacht.',
+      beispiel: 'Bi dr Hocketse vom Sportverein gits Grillwürscht und Bier.',
+      beispiel_hd: 'Beim Sommerfest vom Sportverein gibt es Grillwürste und Bier.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'al-327',
+      ausdruck: 'Hämmerli',
+      hochdeutsch: 'kleiner Hammer',
+      bedeutung: 'Das „Hämmerli" ist im Alemannischen ein kleiner Hammer — die Verkleinerungsform von „Hammer". „Gib mir s\'Hämmerli, i muess de Nagel iischlo" heißt „Gib mir den kleinen Hammer, ich muss den Nagel einschlagen". Wie bei vielen alemannischen Werkzeugnamen wird die Koseform „-li" auch für ganz normale Gegenstände benutzt. In der Werkstatt und beim Basteln ist das Hämmerli oft im Einsatz.',
+      beispiel: 'Mit em Hämmerli schlot er de Nagel ganz vorsichtig ii.',
+      beispiel_hd: 'Mit dem kleinen Hammer schlägt er den Nagel ganz vorsichtig ein.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-328',
+      ausdruck: 'Schaffer',
+      hochdeutsch: 'Arbeiter / fleißiger Mensch',
+      bedeutung: 'Der „Schaffer" ist im Alemannischen ein Arbeiter oder ein besonders fleißiger Mensch — abgeleitet von „schaffe" (arbeiten). „Er isch ä guete Schaffer" heißt „Er ist ein guter, fleißiger Arbeiter". Das Wort ist ein Lob: Wer als „Schaffer" gilt, packt an und drückt sich nicht. Die alemannische Arbeitsethik („Schaffe, schaffe, Häusle baue") schätzt den unermüdlichen Schaffer hoch ein.',
+      beispiel: 'Dr neu Lehrbueb isch ä rechte Schaffer, des freut de Meischter.',
+      beispiel_hd: 'Der neue Lehrling ist ein richtiger Arbeiter, das freut den Meister.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-329',
+      ausdruck: 'Meischter',
+      hochdeutsch: 'Meister / Handwerksmeister',
+      bedeutung: 'Der „Meischter" ist im Alemannischen der Meister, besonders der Handwerksmeister mit eigenem Betrieb. „Dr Meischter zeigt em Lehrbueb, wie\'s goht" heißt „Der Meister zeigt dem Lehrling, wie es geht". Im Schwarzwald mit seinem reichen Handwerk (Uhrmacher, Schnitzer, Glasbläser) hat der Meischter hohes Ansehen. „Es isch no kei Meischter vom Himmel gfalle" ist ein bekanntes alemannisches Sprichwort.',
+      beispiel: 'Dr Meischter het em Lehrling alli Griff zeigt.',
+      beispiel_hd: 'Der Meister hat dem Lehrling alle Handgriffe gezeigt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-330',
+      ausdruck: 'Holzer',
+      hochdeutsch: 'Holzfäller / Waldarbeiter',
+      bedeutung: 'Der „Holzer" ist im Schwarzwald der Holzfäller oder Waldarbeiter. „Dr Holzer fällt im Winter d\'Tanne" heißt „Der Holzfäller fällt im Winter die Tannen". Die Waldarbeit war über Jahrhunderte der wichtigste Broterwerb im Schwarzwald. Das gefällte Holz wurde früher als Flöße auf dem Rhein bis nach Holland verkauft. Der Beruf des Holzers ist hart und gefährlich und genießt im Schwarzwald großen Respekt.',
+      beispiel: 'Dr Holzer schafft bi jedem Wetter dröbe im Tannewald.',
+      beispiel_hd: 'Der Holzfäller arbeitet bei jedem Wetter oben im Tannenwald.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-331',
+      ausdruck: 'Sennerin',
+      hochdeutsch: 'Almhirtin / Käserin',
+      bedeutung: 'Die „Sennerin" ist im südalemannischen und voralpinen Raum die Frau, die auf der Alm das Vieh hütet und Käse herstellt. „D\'Sennerin macht obe uf dr Alp de Chäs" heißt „Die Sennerin macht oben auf der Alp den Käse". Auf den Sömmerungsweiden des südlichen Schwarzwalds, des Bodenseeraums und Vorarlbergs verbringt sie den Sommer mit der Herde. Aus der frischen Milch entsteht der würzige Bergkäse.',
+      beispiel: 'D\'Sennerin treibt im Friehjohr d\'Chüeh uf d\'Alp.',
+      beispiel_hd: 'Die Sennerin treibt im Frühjahr die Kühe auf die Alm.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-332',
+      ausdruck: 'Chrämer',
+      hochdeutsch: 'Krämer / Ladenbesitzer',
+      bedeutung: 'Der „Chrämer" ist im Alemannischen der Krämer oder kleine Ladenbesitzer, der Waren des täglichen Bedarfs verkauft. „Bim Chrämer am Eck git\'s alles" heißt „Beim Krämer an der Ecke gibt es alles". Der Dorfkrämer war früher Versorgungs- und Treffpunkt zugleich. Auf der „Chrämermäss" (Krämermarkt) boten fahrende Händler ihre Waren feil. Heute sind die kleinen Chrämerläden selten geworden.',
+      beispiel: 'Dr Chrämer im Dorf het no jede Sach für de Hushalt.',
+      beispiel_hd: 'Der Krämer im Dorf hat noch jede Sache für den Haushalt.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-333',
+      ausdruck: 'Metzg',
+      hochdeutsch: 'Metzgerei',
+      bedeutung: 'Die „Metzg" ist im Alemannischen und Schweizerdeutschen die Metzgerei. „I gang in d\'Metzg go Wurscht hole" heißt „Ich gehe in die Metzgerei Wurst holen". Das Wort kommt vom lateinischen „macellum" (Fleischmarkt). In der Metzg gibt es frische Wurst, Schäufele und Fleischkäse. Das „Metzge" (Schlachten) war früher ein Hausbrauch, bei dem das Schwein im eigenen Hof geschlachtet wurde.',
+      beispiel: 'In dr Metzg am Marktplatz git\'s de beschte Fleischchäs.',
+      beispiel_hd: 'In der Metzgerei am Marktplatz gibt es den besten Fleischkäse.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-334',
+      ausdruck: 'Wirtschaft',
+      hochdeutsch: 'Gasthaus / Wirtshaus',
+      bedeutung: 'Die „Wirtschaft" ist im Alemannischen das Gasthaus oder Wirtshaus, der gesellige Mittelpunkt des Dorfes. „Mir gehn am Obe in d\'Wirtschaft" heißt „Wir gehen am Abend ins Wirtshaus". Hier trifft sich der Stammtisch, hier wird Karten gespielt, gegessen und der Schoppe getrunken. In der dörflichen Wirtschaft erfährt man die Neuigkeiten und pflegt die Geselligkeit. Viele Wirtschaften tragen Namen wie „Löwen", „Adler" oder „Krone".',
+      beispiel: 'In dr Wirtschaft zum Löwe spielt dr Stammtisch jede Mittwuch Karte.',
+      beispiel_hd: 'Im Gasthaus zum Löwen spielt der Stammtisch jeden Mittwoch Karten.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-335',
+      ausdruck: 'Beiz',
+      hochdeutsch: 'einfache Kneipe / Wirtschaft',
+      bedeutung: 'Die „Beiz" ist im Alemannischen und Schweizerdeutschen eine einfache, gemütliche Kneipe oder Wirtschaft. „Mir hocke no schnell in d\'Beiz" heißt „Wir setzen uns noch schnell in die Kneipe". Im Unterschied zum feinen Restaurant ist die Beiz urig und unkompliziert — ein Ort zum Schoppe trinken und Schwätze. Der „Beizer" ist der Wirt. Eine gute Beiz hat Charakter und Stammgäste.',
+      beispiel: 'Nach dr Schicht trifft mer sich in dr Beiz uf ä Schoppe.',
+      beispiel_hd: 'Nach der Schicht trifft man sich in der Kneipe auf ein Glas Wein.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-336',
+      ausdruck: 'Schtammtisch',
+      hochdeutsch: 'Stammtisch',
+      bedeutung: 'Der „Schtammtisch" ist die feste Runde von Stammgästen, die sich regelmäßig am selben Tisch in der Wirtschaft trifft. „Dr Schtammtisch chunnt jede Fritig zämme" heißt „Der Stammtisch kommt jeden Freitag zusammen". Am Schtammtisch wird über Politik, Dorfgeschehen und den Fußball geredet und Karten gespielt. Er ist eine alte Institution der Geselligkeit und oft der Geburtsort von Vereinen und Fasnetideen.',
+      beispiel: 'Am Schtammtisch wird über d\'Welt und s\'Dorf disktiert.',
+      beispiel_hd: 'Am Stammtisch wird über die Welt und das Dorf diskutiert.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-337',
+      ausdruck: 'Cheib',
+      hochdeutsch: 'Kerl / Lümmel (derb)',
+      bedeutung: 'Der „Cheib" ist im Alemannischen ein derber Ausdruck für einen Kerl, Lümmel oder Schlingel — je nach Tonfall spöttisch-liebevoll oder schimpfend. „Du fule Cheib!" heißt „Du fauler Kerl!". Das Wort stammt von „Kaib" (Aas, Tierkadaver) und ist deftig. „Ä rechte Cheib" kann ein durchtriebener Bursche sein. Als Verstärker steckt es auch in „cheibe guet" (verdammt gut).',
+      beispiel: 'Du fule Cheib, hesch wieder de ganz Morge im Bett glege!',
+      beispiel_hd: 'Du fauler Kerl, hast wieder den ganzen Morgen im Bett gelegen!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'al-338',
+      ausdruck: 'Löhl',
+      hochdeutsch: 'Dummkopf / einfältiger Mensch',
+      bedeutung: 'Der „Löhl" (auch Lööl) ist im badischen Alemannisch ein Dummkopf, Tölpel oder einfältiger Mensch. „Sei doch kei Löhl!" heißt „Sei doch kein Dummkopf!". Das Wort ist ein mildes Schimpfwort und wird oft kopfschüttelnd über jemanden gesagt, der sich ungeschickt oder begriffsstutzig anstellt. „Ä rechte Löhl" ist jemand, der einfach nichts kapiert. Meist ist es nicht bösartig gemeint.',
+      beispiel: 'So ä Löhl, jetz het er de Schlüssel scho wieder verlore!',
+      beispiel_hd: 'So ein Dummkopf, jetzt hat er den Schlüssel schon wieder verloren!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'al-339',
+      ausdruck: 'Stoffel',
+      hochdeutsch: 'grober / ungehobelter Mensch',
+      bedeutung: 'Der „Stoffel" ist im Alemannischen ein grober, ungehobelter oder mürrischer Mensch ohne feine Manieren. „Sei kei sone Stoffel!" heißt „Sei kein solcher Grobian!". Das Wort leitet sich vom Namen Christoph ab und beschreibt jemanden, der unbeholfen, einsilbig oder rüpelhaft auftritt. Ein Stoffel grüßt nicht, redet barsch und kennt keine Höflichkeit. Das Schimpfwort ist deftig, aber nicht ganz so scharf wie andere.',
+      beispiel: 'Dr alt Stoffel hät nit emol grüeßt, wo i verbii bi.',
+      beispiel_hd: 'Der alte Grobian hat nicht einmal gegrüßt, als ich vorbei bin.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'al-340',
+      ausdruck: 'Trottel',
+      hochdeutsch: 'Dummkopf / Tollpatsch',
+      bedeutung: 'Der „Trottel" ist auch im Alemannischen ein Dummkopf oder ungeschickter Mensch, doch wird das Wort im südwestdeutschen Raum besonders häufig und oft gutmütig gebraucht. „I aalte Trottel hab\'s vergesse" heißt „Ich alter Dummkopf habe es vergessen". Über sich selbst gesagt drückt es harmlosen Ärger über die eigene Vergesslichkeit aus. Über andere ist es ein mildes Schimpfwort.',
+      beispiel: 'I aalte Trottel hab d\'Brill wieder dheim glo.',
+      beispiel_hd: 'Ich alter Dummkopf habe die Brille wieder zu Hause gelassen.',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'al-341',
+      ausdruck: 'Gränne',
+      hochdeutsch: 'jammern / nörgeln / quengeln',
+      bedeutung: '„Gränne" bedeutet im Alemannischen jammern, nörgeln oder weinerlich quengeln. „Hör uf go gränne!" heißt „Hör auf zu jammern!". Das Wort wird oft für quengelnde Kinder benutzt, die unzufrieden vor sich hin maulen, aber auch für ständig nörgelnde Erwachsene. „Ä Grännig" ist eine weinerliche, unzufriedene Person. Das Wort hat einen leicht spöttischen Klang.',
+      beispiel: 'S\'Chind grännt de ganz Nomittag, wil\'s müed isch.',
+      beispiel_hd: 'Das Kind quengelt den ganzen Nachmittag, weil es müde ist.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-342',
+      ausdruck: 'hudle',
+      hochdeutsch: 'hudeln / schlampig schnell arbeiten',
+      bedeutung: '„Hudle" bedeutet im Alemannischen und Schwäbischen, etwas hastig und schlampig zu erledigen. „Nit hudle, sunscht wird\'s nüt!" heißt „Nicht hudeln, sonst wird es nichts!". Das alemannische Sprichwort „Hudle git nüt Guets" warnt davor, eine Arbeit zu überstürzen. Wer „hudelt", pfuscht und macht Fehler aus Eile. Das Gegenteil ist sauberes, geduldiges Arbeiten.',
+      beispiel: 'Wenn du so hudlisch, muesch alles zweimol mache.',
+      beispiel_hd: 'Wenn du so hudelst, musst du alles zweimal machen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-343',
+      ausdruck: 'gschpässig',
+      hochdeutsch: 'seltsam / komisch / sonderbar',
+      bedeutung: '„Gschpässig" bedeutet im Alemannischen seltsam, komisch oder sonderbar. „Des isch ä gschpässige Sach" heißt „Das ist eine seltsame Sache". Das Wort kommt von „Spaß", hat aber die Bedeutung „eigenartig" angenommen. Ein „gschpässige Mensch" ist ein wunderlicher, schwer einzuschätzender Zeitgenosse. Wenn einem etwas „gschpässig" vorkommt, kommt es einem merkwürdig oder verdächtig vor.',
+      beispiel: 'S\'isch scho gschpässig, dass er sich nümmi meldet.',
+      beispiel_hd: 'Es ist schon seltsam, dass er sich nicht mehr meldet.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-344',
+      ausdruck: 'ghaue und gstoche',
+      hochdeutsch: 'völlig egal / einerlei',
+      bedeutung: 'Die Wendung „ghaue und gstoche" (gehauen und gestochen) bedeutet im Alemannischen „völlig einerlei" oder „das kommt aufs Gleiche heraus". „Ob so oder so, des isch ghaue und gstoche" heißt „Ob so oder so, das ist völlig egal". Die Redensart drückt aus, dass zwei Möglichkeiten gleichwertig sind und es keinen Unterschied macht, welche man wählt. Eine bildhafte, alte alemannische Redensart.',
+      beispiel: 'Ob mir hüt oder morn fahre, des isch ghaue und gstoche.',
+      beispiel_hd: 'Ob wir heute oder morgen fahren, das ist völlig egal.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-345',
+      ausdruck: 'go bett go',
+      hochdeutsch: 'ins Bett gehen / schlafen gehen',
+      bedeutung: 'Die Wendung „go bett go" (zu Bett gehen) bedeutet im Hochalemannischen schlafen gehen — wobei das typische „go" (gehen) gleich doppelt erscheint, einmal als Richtungspartikel und einmal als Verb. „I gang jetz go bett go" heißt „Ich gehe jetzt ins Bett". Diese Verdoppelung des „go" ist ein berühmtes Merkmal des Hochalemannischen und für Auswärtige verwirrend, für Einheimische aber selbstverständlich.',
+      beispiel: 'S\'isch scho spot, i gang jetz go bett go.',
+      beispiel_hd: 'Es ist schon spät, ich gehe jetzt ins Bett.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-346',
+      ausdruck: 'uffmüpfig',
+      hochdeutsch: 'aufmüpfig / widerspenstig',
+      bedeutung: '„Uffmüpfig" ist die alemannische Form von „aufmüpfig" und bedeutet widerspenstig, trotzig oder rebellisch. „Sei nit so uffmüpfig!" heißt „Sei nicht so widerspenstig!". Ein „uffmüpfige Bueb" ist ein aufsässiger Junge, der nicht gehorcht und gegen Anweisungen aufbegehrt. Das Wort wird besonders über Kinder und Jugendliche gebraucht, die sich nicht fügen wollen.',
+      beispiel: 'Dr uffmüpfig Lehrling will sich vom Meischter nüt sage lo.',
+      beispiel_hd: 'Der aufmüpfige Lehrling will sich vom Meister nichts sagen lassen.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'al-347',
+      ausdruck: 'gring',
+      hochdeutsch: 'Kopf (derb)',
+      bedeutung: 'Der „Gring" (auch Grind) ist im Alemannischen und Schweizerdeutschen ein derbes Wort für den Kopf. „Halt de Gring still!" heißt „Halt den Kopf still!". Das Wort ist nicht besonders fein, aber im Alltag verbreitet. „Ä dicke Gring ha" bedeutet, stur und dickköpfig zu sein. „Mir brummt dr Gring" heißt „Mir brummt der Schädel". Der Ausdruck gehört zum derberen Körperwortschatz.',
+      beispiel: 'Vom viele Wii brummt mir hüt morge dr Gring.',
+      beispiel_hd: 'Vom vielen Wein brummt mir heute Morgen der Schädel.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-348',
+      ausdruck: 'Fueß',
+      hochdeutsch: 'Fuß / Bein',
+      bedeutung: 'Der „Fueß" ist im Alemannischen der Fuß oder das ganze Bein — mit dem typischen Diphthong „ue". „Mir tuet dr Fueß weh vom viele Laufe" heißt „Mir tut der Fuß weh vom vielen Laufen". Im Alemannischen wird „Fueß" oft für das ganze Bein verwendet, nicht nur für den Fuß im engeren Sinn. „Uf de Fueß sii" bedeutet, auf den Beinen, also unterwegs zu sein.',
+      beispiel: 'Nach dr lange Wanderig tuet mir jede Fueß weh.',
+      beispiel_hd: 'Nach der langen Wanderung tut mir jeder Fuß weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-349',
+      ausdruck: 'Buuch',
+      hochdeutsch: 'Bauch',
+      bedeutung: 'Der „Buuch" ist im Alemannischen der Bauch — mit dem gedehnten „uu". „Mir tuet dr Buuch weh" heißt „Mir tut der Bauch weh". Wer zu viel gegessen hat, hat einen „volle Buuch". „Sich de Buuch voll schlage" bedeutet, sich richtig satt zu essen. Das Wort gehört zum alltäglichen Körperwortschatz und klingt durch die alemannische Vokaldehnung sehr charakteristisch.',
+      beispiel: 'Nach em große Brote han i ä rächt volle Buuch.',
+      beispiel_hd: 'Nach dem großen Braten habe ich einen recht vollen Bauch.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-350',
+      ausdruck: 'Händ',
+      hochdeutsch: 'Hände',
+      bedeutung: 'Die „Händ" sind im Alemannischen die Hände. „Wäsch dir d\'Händ vor em Esse!" heißt „Wasch dir die Hände vor dem Essen!". Wer fleißig anpackt, hat „rauhi Händ" vom Schaffen. „Zwei linki Händ ha" bedeutet, ungeschickt zu sein. Die Händ sind im bäuerlich-handwerklichen Alemannischen das wichtigste Werkzeug, und arbeitsame Händ genießen hohes Ansehen.',
+      beispiel: 'Vom Garteschaffe han i ganz dräckigi Händ.',
+      beispiel_hd: 'Vom Gartenarbeiten habe ich ganz schmutzige Hände.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-351',
+      ausdruck: 'Bei',
+      hochdeutsch: 'Bein / Beine',
+      bedeutung: 'Das „Bei" (Plural: d\'Bei) ist im Alemannischen das Bein. „Mir sin d\'Bei schwer wore" heißt „Mir sind die Beine schwer geworden". „Uf de Bei sii" bedeutet, auf den Beinen, also unterwegs und aktiv zu sein. Wer lange gestanden hat, dem „tüen d\'Bei weh". Das kurze Wort ist im Alemannischen sehr geläufig und ersetzt oft das längere hochdeutsche „Bein".',
+      beispiel: 'Vom lange Stoh am Märt tüen mir d\'Bei weh.',
+      beispiel_hd: 'Vom langen Stehen am Markt tun mir die Beine weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-352',
+      ausdruck: 'Bäse-Reis',
+      hochdeutsch: 'Reisigbesen',
+      bedeutung: 'Der „Bäse" (Besen) wird im Alemannischen aus „Bäse-Reis" (Reisig) gebunden — der Reisigbesen aus Birkenreisig dient zum Kehren von Hof und Straße. „Mit em Bäse kehr i de Hof" heißt „Mit dem Besen kehre ich den Hof". Das Reisig-Binden war früher Heimarbeit. „Ä neue Bäse kehrt guet" ist ein bekanntes Sprichwort. Der Reisigbesen gehört zum traditionellen Gerät jedes Hofes.',
+      beispiel: 'Mit em alte Bäse-Reis kehrt mer am beschte s\'Laub.',
+      beispiel_hd: 'Mit dem alten Reisigbesen kehrt man am besten das Laub.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'al-353',
+      ausdruck: 'Wadel',
+      hochdeutsch: 'Tannenzweig / Reisig',
+      bedeutung: 'Der „Wadel" (auch Wedel) ist im Schwarzwälder Alemannisch ein Tannen- oder Fichtenzweig, das grüne Reisig der Nadelbäume. „Mir hole Wadel zum Schmücke" heißt „Wir holen Tannenreisig zum Schmücken". Zur Advents- und Weihnachtszeit werden Türen und Brunnen mit Wadel geschmückt. Auch als Streu im Stall oder zum Abdecken der Beete im Winter dient der Wadel. Im Schwarzwald mit seinen Tannen ist er reichlich vorhanden.',
+      beispiel: 'Im Advent stecke mir frische Wadel an d\'Huustür.',
+      beispiel_hd: 'Im Advent stecken wir frisches Tannenreisig an die Haustür.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-354',
+      ausdruck: 'Tobel',
+      hochdeutsch: 'enge Waldschlucht',
+      bedeutung: 'Der „Tobel" ist im alemannischen Raum eine enge, bewaldete Schlucht oder ein tiefer Geländeeinschnitt, durch den oft ein Bach fließt. „Dr Weg goht durch en wilde Tobel" heißt „Der Weg geht durch eine wilde Schlucht". Im Schwarzwald und am Bodensee gibt es viele solcher feuchten, schattigen Tobel mit Farnen und Moos. Das Wort taucht häufig in Flur- und Ortsnamen auf.',
+      beispiel: 'Im chüehle Tobel rauscht en chline Bach übers Gstei.',
+      beispiel_hd: 'In der kühlen Schlucht rauscht ein kleiner Bach über das Gestein.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-355',
+      ausdruck: 'Halde',
+      hochdeutsch: 'Hang / steiler Abhang',
+      bedeutung: 'Die „Halde" ist im Alemannischen ein Hang oder steiler Abhang, oft mit Reben oder Wiesen bewachsen. „D\'Reb stehn an dr süüdliche Halde" heißt „Die Reben stehen am südlichen Hang". Am Kaiserstuhl und im Markgräflerland wachsen die besten Weine an den sonnigen Halden. Das Wort steckt in vielen Ortsnamen wie „Sonnhalde" oder „Schönhalde". Eine steile Halde zu bewirtschaften ist harte Arbeit.',
+      beispiel: 'An dr sunnige Halde reift dr Wii am beschte.',
+      beispiel_hd: 'Am sonnigen Hang reift der Wein am besten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-356',
+      ausdruck: 'Matte',
+      hochdeutsch: 'Wiese / Weide',
+      bedeutung: 'Die „Matte" ist im Alemannischen und Schweizerdeutschen die Wiese oder Bergweide. „D\'Chüeh stehn uf dr Matte" heißt „Die Kühe stehen auf der Weide". Das Wort steckt in vielen Ortsnamen, etwa im Freiburger Stadtteil „Wiehre" oder in „Schwarzmatt". Auf den saftigen Matten des Schwarzwalds und Voralpenlands weidet das Vieh den Sommer über. Die „Bergmatte" ist die hochgelegene Sommerweide.',
+      beispiel: 'Im Friehjohr blüeht d\'Matte voller Löwezahn.',
+      beispiel_hd: 'Im Frühjahr blüht die Wiese voller Löwenzahn.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-357',
+      ausdruck: 'Wuhr',
+      hochdeutsch: 'Wehr / Stauwehr am Bach',
+      bedeutung: 'Das „Wuhr" ist im Alemannischen ein Wehr oder Stauwehr an einem Bach oder Fluss, das das Wasser staut oder umleitet. „S\'Wuhr leitet s\'Wasser zur Mühli" heißt „Das Wehr leitet das Wasser zur Mühle". Früher trieben solche Wuhre die Wasserräder der Mühlen und Sägen an. Das Wort taucht in Ortsnamen wie „Wyhl" auf. Am Hochrhein und in den Schwarzwaldtälern gibt es viele alte Wuhre.',
+      beispiel: 'Am alte Wuhr het früener s\'Wasser d\'Sägi triebe.',
+      beispiel_hd: 'Am alten Wehr hat früher das Wasser die Säge angetrieben.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-358',
+      ausdruck: 'Runse',
+      hochdeutsch: 'Wasserrinne / Erosionsrinne',
+      bedeutung: 'Die „Runse" ist im alemannischen Raum eine Wasserrinne oder Erosionsrinne am Hang, durch die bei Regen oder Schneeschmelze das Wasser abfließt. „Nach em Gwitter het\'s d\'Runse ganz uusgwäsche" heißt „Nach dem Gewitter hat es die Rinne ganz ausgewaschen". An steilen Hängen graben sich solche Runsen tief ins Gelände. Das Wort wird in den Bergregionen des Südwestens und der Alpen gebraucht.',
+      beispiel: 'S\'Rägewasser het in dr Halde ä tiefi Runse grabe.',
+      beispiel_hd: 'Das Regenwasser hat im Hang eine tiefe Rinne gegraben.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-359',
+      ausdruck: 'Gwitter',
+      hochdeutsch: 'Gewitter',
+      bedeutung: 'Das „Gwitter" ist im Alemannischen das Gewitter — mit Donner, Blitz und Regen. „Am Obe chunnt no ä Gwitter" heißt „Am Abend kommt noch ein Gewitter". Im Sommer ziehen über dem Schwarzwald und dem Bodensee oft heftige Gwitter auf. „S\'gwitteret" bedeutet, dass es gewittert. Ein „Gwitter im Aazug" ist ein heraufziehendes Unwetter. Übertragen kann „Gwitter" auch einen heftigen Streit meinen.',
+      beispiel: 'Über em Feldberg ziet ä schwarz Gwitter uf.',
+      beispiel_hd: 'Über dem Feldberg zieht ein schwarzes Gewitter auf.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-360',
+      ausdruck: 'Nebel',
+      hochdeutsch: 'Nebel / Hochnebel',
+      bedeutung: 'Der „Nebel" ist im alemannischen Bodenseeraum und in der Rheinebene im Herbst und Winter allgegenwärtig. „Am Bodesee lit dr Nebel oft de ganz Tag" heißt „Am Bodensee liegt der Nebel oft den ganzen Tag". Während die Niederungen im Hochnebel versinken, scheint auf den Schwarzwaldhöhen die Sonne. „Uf de Nebel" zu fahren bedeutet, hinauf über die Nebelgrenze. Der zähe Herbstnebel prägt das Klima der Region.',
+      beispiel: 'Im Novembr hängt dr Nebel zäh über dr Rhiiebeni.',
+      beispiel_hd: 'Im November hängt der Nebel zäh über der Rheinebene.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-361',
+      ausdruck: 'Hudelwetter',
+      hochdeutsch: 'schlechtes / ungemütliches Wetter',
+      bedeutung: 'Das „Hudelwetter" ist im Alemannischen schlechtes, ungemütliches Wetter mit Regen, Wind und Nässe. „Bi dem Hudelwetter bliib i dheim" heißt „Bei diesem schlechten Wetter bleibe ich daheim". Das Wort hängt mit „hudle" (schlampig sein) zusammen — das Wetter ist gleichsam „liederlich". Im nasskalten Schwarzwälder Herbst gibt es viele Tage mit Hudelwetter, an denen man am liebsten am warmen Kachelofen sitzt.',
+      beispiel: 'Bi dem Hudelwetter goht kei Mensch freiwillig uus em Huus.',
+      beispiel_hd: 'Bei diesem schlechten Wetter geht kein Mensch freiwillig aus dem Haus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-362',
+      ausdruck: 'Schauer',
+      hochdeutsch: 'Regenschauer',
+      bedeutung: 'Der „Schauer" ist im Alemannischen ein kurzer, kräftiger Regenguss. „Es chunnt grad ä Schauer, gang unter\'s Dach!" heißt „Es kommt gerade ein Regenschauer, geh unters Dach!". Im wechselhaften Schwarzwälder Wetter wechseln sich Sonne und Schauer oft rasch ab. Ein „Wettersturz" bringt schnell vorbeiziehende Schauer. Das kurze Wort beschreibt den plötzlichen, aber meist kurzen Regen treffend.',
+      beispiel: 'Mir hen üs grad no vor em Schauer unters Dach gflüchtet.',
+      beispiel_hd: 'Wir haben uns gerade noch vor dem Schauer unters Dach geflüchtet.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-363',
+      ausdruck: 'Glück',
+      hochdeutsch: 'Glück / Freude',
+      bedeutung: 'Im Alemannischen drückt man „Glück" oft sehr herzlich aus. „Was ä Glück, dass du do bisch!" heißt „Was für ein Glück, dass du da bist!". Der bekannte alemannische Trinkspruch und Glückwunsch „Glück, Heil und Sege" begleitet Feste und Neuanfänge. Auch das Sprichwort „Mer cha sii Glück nit zwinge" (Man kann sein Glück nicht erzwingen) zeigt die gelassene alemannische Lebenshaltung.',
+      beispiel: 'Was ä Glück, dass mir üs grad do begegne!',
+      beispiel_hd: 'Was für ein Glück, dass wir uns gerade hier begegnen!',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-364',
+      ausdruck: 'gfreut',
+      hochdeutsch: 'erfreulich / sympathisch',
+      bedeutung: 'Im Alemannischen und Schweizerdeutschen ist „ä gfreuti Sach" eine erfreuliche, schöne Angelegenheit und „ä gfreute Mensch" ein angenehmer, sympathischer Mensch, der gute Laune verbreitet. „Des isch ä ganz gfreuts Pärli" heißt „Das ist ein ganz reizendes Pärchen". Das Wort drückt Wohlwollen und Freude aus. Wer „gfreut" ist, hat eine positive, herzliche Ausstrahlung, an der man sich erfreut.',
+      beispiel: 'D\'neu Nochbere sin ä ganz gfreuti Familie.',
+      beispiel_hd: 'Die neuen Nachbarn sind eine ganz erfreuliche Familie.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-365',
+      ausdruck: 'teggetig',
+      hochdeutsch: 'gemütlich / behäbig / langsam',
+      bedeutung: '„Tegetig" (auch dägetig) bedeutet im südbadischen Alemannisch gemütlich, behäbig und ohne Hast. „Mir mache des ganz tegetig" heißt „Wir machen das ganz gemütlich". Das Wort beschreibt die typisch alemannische Gelassenheit, mit der man Dinge ruhig und bedächtig angeht, ohne sich hetzen zu lassen. Ein „tegetige Mensch" lässt sich Zeit und bleibt entspannt — Ausdruck der badischen Gemütlichkeit.',
+      beispiel: 'Mir lehn üs zrugg und mache de Obe ganz tegetig.',
+      beispiel_hd: 'Wir lehnen uns zurück und machen den Abend ganz gemütlich.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-366',
+      ausdruck: 'Hämpfeli-wiis',
+      hochdeutsch: 'handvollweise / in kleinen Mengen',
+      bedeutung: 'Die Wendung „Hämpfeli-wiis" bedeutet im Alemannischen „handvollweise", also in kleinen Mengen, jeweils eine Handvoll. „Sie verteilt d\'Bonbon Hämpfeli-wiis a d\'Kinder" heißt „Sie verteilt die Bonbons handvollweise an die Kinder". Das Wort bildet die Mengenangabe „Hämpfeli" (Handvoll) zu einem Adverb um. Auf Festen und an der Fasnet werden Süßigkeiten oft Hämpfeli-wiis unter die Kinder geworfen.',
+      beispiel: 'An dr Fasnet werfe d\'Narre d\'Bonbon Hämpfeli-wiis is Volk.',
+      beispiel_hd: 'An der Fasnet werfen die Narren die Bonbons handvollweise ins Volk.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'al-367',
+      ausdruck: 'zwoo',
+      hochdeutsch: 'zwei (weiblich)',
+      bedeutung: '„Zwoo" ist im Alemannischen die weibliche Form von „zwei", die bei weiblichen Hauptwörtern benutzt wird. „Zwoo Chüeh und drei Geiße" heißt „Zwei Kühe und drei Ziegen". Das Alemannische unterscheidet wie das ältere Deutsch noch die Geschlechter beim Zahlwort zwei: „zwee" (männlich), „zwoo" (weiblich) und „zwei" (sächlich). Diese alte Dreiteilung ist im Hochdeutschen verloren gegangen, im Alemannischen aber lebendig.',
+      beispiel: 'Im Stall stehn zwoo Chüeh und ä alts Geißli.',
+      beispiel_hd: 'Im Stall stehen zwei Kühe und ein altes Zicklein.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'al-368',
+      ausdruck: 'es paar',
+      hochdeutsch: 'ein paar / einige',
+      bedeutung: 'Im Alemannischen sagt man „es paar" für „ein paar" oder „einige" — eine unbestimmte kleine Anzahl. „Gib mir no es paar Öpfel" heißt „Gib mir noch ein paar Äpfel". Die Wendung ist im Alltag allgegenwärtig, wenn es um eine ungefähre, geringe Menge geht. „Es paar Tag" sind einige Tage, „es paar Schritt" sind wenige Schritte. Das „es" statt „ein" ist typisch alemannisch.',
+      beispiel: 'Mir bruuche no es paar Eier für de Kueche.',
+      beispiel_hd: 'Wir brauchen noch ein paar Eier für den Kuchen.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'al-369',
+      ausdruck: 'es bitzeli',
+      hochdeutsch: 'ein bisschen / ein wenig',
+      bedeutung: '„Es bitzeli" (auch es bizeli) bedeutet im Alemannischen „ein bisschen" oder „ein wenig" — eine sehr kleine Menge oder ein geringer Grad. „Gib mir no es bitzeli Zucker" heißt „Gib mir noch ein bisschen Zucker". Das Wort ist eine liebevolle Verkleinerung von „Bitz" (Bissen, Stück). „Es bitzeli müed" heißt „ein wenig müde". Es gehört zu den allergebräuchlichsten alemannischen Wendungen.',
+      beispiel: 'Wart no es bitzeli, i bi grad fertig.',
+      beispiel_hd: 'Warte noch ein bisschen, ich bin gleich fertig.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'al-370',
+      ausdruck: 'gnueg',
+      hochdeutsch: 'genug / ausreichend',
+      bedeutung: '„Gnueg" ist die alemannische Form von „genug" — mit dem typischen „ue". „Mir hen gnueg Holz für de Winter" heißt „Wir haben genug Holz für den Winter". „S\'isch gnueg!" bedeutet „Es ist genug!" und beendet eine Sache. Wer „gnueg het", ist satt oder hat genug von etwas. Das kurze, kräftige Wort gehört zum alltäglichen alemannischen Grundwortschatz und klingt durch den Diphthong sehr charakteristisch.',
+      beispiel: 'Mir hen gnueg Wii im Cheller für s\'ganze Fescht.',
+      beispiel_hd: 'Wir haben genug Wein im Keller für das ganze Fest.',
+      kategorie: 'zahlen'
+    },
+    {
+      id: 'al-371',
+      ausdruck: 'Cheller',
+      hochdeutsch: 'Keller',
+      bedeutung: 'Der „Cheller" ist im Hochalemannischen der Keller — mit dem typischen „ch" statt „k". „Im Cheller lagre mir de Wii und d\'Grumbiere" heißt „Im Keller lagern wir den Wein und die Kartoffeln". Der kühle Cheller dient zur Vorratshaltung von Wein, Most, Eingemachtem und Kartoffeln. In den Weinbaugemeinden ist der Wii-Cheller das Herzstück jedes Hauses, in dem die Fässer reifen.',
+      beispiel: 'Im chüehle Cheller reift dr Wii in alte Holzfässer.',
+      beispiel_hd: 'Im kühlen Keller reift der Wein in alten Holzfässern.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-372',
+      ausdruck: 'Gada',
+      hochdeutsch: 'Kammer / Vorratsraum',
+      bedeutung: 'Der „Gada" (auch Gade) ist im südalemannischen und vorarlbergischen Raum eine Kammer, ein Vorratsraum oder Stall. „Im Gada hänge d\'Würscht zum Trockne" heißt „In der Kammer hängen die Würste zum Trocknen". Auf dem Bauernhof bezeichnet der Gada oft den Speicher oder die Vorratskammer, in der Lebensmittel und Geräte aufbewahrt werden. Das alte Wort hat sich vor allem im Alpenraum erhalten.',
+      beispiel: 'Im chüehle Gada lagret d\'Mueter ihri Vorröt.',
+      beispiel_hd: 'In der kühlen Kammer lagert die Mutter ihre Vorräte.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-373',
+      ausdruck: 'Sundig',
+      hochdeutsch: 'Sonntag',
+      bedeutung: 'Der „Sundig" (auch Sunntig) ist im Alemannischen der Sonntag — der Ruhetag, an dem man in die Chille geht, sich fein anzieht und die Familie besucht. „Am Sundig git\'s immer ä Brote" heißt „Am Sonntag gibt es immer einen Braten". Die „Sundigshose" und das „Sundigsgwand" sind die guten Kleider für den Sonntag. Der Sundig ist im alemannischen Dorf ein Tag der Ruhe, der Familie und der Tradition.',
+      beispiel: 'Am Sundig zieht mer s\'guete Gwand a für d\'Chille.',
+      beispiel_hd: 'Am Sonntag zieht man das gute Gewand an für die Kirche.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-374',
+      ausdruck: 'Fiirobe',
+      hochdeutsch: 'Feierabend',
+      bedeutung: 'Der „Fiirobe" (Feierabend) ist im Alemannischen das Ende des Arbeitstags, die wohlverdiente Ruhe am Abend. „Jetz isch Fiirobe, mir hocke uf d\'Bank" heißt „Jetzt ist Feierabend, wir setzen uns auf die Bank". Nach getaner Arbeit gönnt man sich den Fiirobe mit einem Schoppe Wein und gemütlichem Schwätze. „Fiirobe mache" bedeutet, die Arbeit für heute zu beenden. Ein hochgeschätzter Moment im alemannischen Tagesablauf.',
+      beispiel: 'Nach em Fiirobe sitze mir no lang vor em Huus.',
+      beispiel_hd: 'Nach dem Feierabend sitzen wir noch lange vor dem Haus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-375',
+      ausdruck: 'Wuche',
+      hochdeutsch: 'Woche',
+      bedeutung: 'Die „Wuche" ist im Alemannischen die Woche. „Nächschti Wuche fahre mir in d\'Ferie" heißt „Nächste Woche fahren wir in die Ferien". „Unter dr Wuche" bedeutet werktags, im Gegensatz zum Wochenende. „D\'ganz Wuche dur" heißt „die ganze Woche hindurch". Das Wort gehört zum grundlegenden Zeitwortschatz und klingt durch das alemannische „u" weicher als das hochdeutsche „Woche".',
+      beispiel: 'Unter dr Wuche han i kei Ziit, aber am Wuchenend scho.',
+      beispiel_hd: 'Unter der Woche habe ich keine Zeit, aber am Wochenende schon.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-376',
+      ausdruck: 'Friehjohr',
+      hochdeutsch: 'Frühling / Frühjahr',
+      bedeutung: 'Das „Friehjohr" (Frühjahr) ist im Alemannischen der Frühling. „Im Friehjohr blüeht d\'ganz Reb" heißt „Im Frühling blüht der ganze Weinberg". Im milden Klima des Oberrheins kommt das Friehjohr früher als anderswo in Deutschland — der Kaiserstuhl gilt als eine der wärmsten Gegenden. „Friehjohrsmüedikeit" ist die Frühjahrsmüdigkeit. Das Erwachen der Natur im Friehjohr ist im Weinland ein besonderes Erlebnis.',
+      beispiel: 'Im Friehjohr fangt im Wingert d\'Arbet wieder a.',
+      beispiel_hd: 'Im Frühjahr fängt im Weinberg die Arbeit wieder an.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-377',
+      ausdruck: 'Herbscht',
+      hochdeutsch: 'Herbst / Weinlese',
+      bedeutung: 'Der „Herbscht" ist im Alemannischen der Herbst — und im Weinland zugleich die Zeit der Weinlese. „Im Herbscht wird im Wingert gläse" heißt „Im Herbst wird im Weinberg gelesen". „Herbschte" bedeutet, die Trauben zu ernten. Der Herbscht ist im Markgräflerland und am Kaiserstuhl die wichtigste und arbeitsreichste Zeit des Jahres, wenn die ganze Familie bei der Lese mit anpackt. Danach wird das „Herbschtfescht" gefeiert.',
+      beispiel: 'Im Herbscht hilft d\'ganz Familie bim Träube läse.',
+      beispiel_hd: 'Im Herbst hilft die ganze Familie beim Traubenlesen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-378',
+      ausdruck: 'Winter',
+      hochdeutsch: 'Winter',
+      bedeutung: 'Der „Winter" bringt im Schwarzwald viel Schnee und ist die Zeit des Wintersports, aber auch der Ruhe am warmen Kachelofen. „Im Winter lit uf em Feldberg meterhoch Schnee" heißt „Im Winter liegt auf dem Feldberg meterhoch Schnee". Während die Höhen tief verschneit sind, bleibt die Rheinebene oft mild. Im Winter rückt man in der warmen Stube zusammen, und draußen brennen zur Fasnetzeit bald die Funkenfeuer.',
+      beispiel: 'Im Winter goht mer im Schwarzwald go Schlitte fahre.',
+      beispiel_hd: 'Im Winter geht man im Schwarzwald Schlitten fahren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-379',
+      ausdruck: 'Schnee',
+      hochdeutsch: 'Schnee',
+      bedeutung: 'Der „Schnee" liegt im Schwarzwald oft von November bis ins Frühjahr und macht die Region zum Wintersportparadies. „Uf em Feldberg lit dr Schnee am längschte" heißt „Auf dem Feldberg liegt der Schnee am längsten". Der „Bsetzischnee" oder „Pappschnee" eignet sich zum Schneemannbauen. Im Schnee fahren die Kinder Schlitten, die Erwachsenen Ski. Der erste Schnee im Jahr wird im Schwarzwald sehnlich erwartet.',
+      beispiel: 'Über Nacht het\'s en halbe Meter Schnee abegleit.',
+      beispiel_hd: 'Über Nacht hat es einen halben Meter Schnee gegeben.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-380',
+      ausdruck: 'Iis',
+      hochdeutsch: 'Eis',
+      bedeutung: 'Das „Iis" ist im Alemannischen das Eis — sowohl das gefrorene Wasser als auch die Speiseeis-Erfrischung. „Uf em Wiher isch s\'Iis scho dick gnueg zum Schlittschuehlaufe" heißt „Auf dem Weiher ist das Eis schon dick genug zum Schlittschuhlaufen". Im strengen Winter friert mancher Weiher und Bach zu. Im Sommer dagegen freut man sich über ä „Iis am Stiel". Der typische Diphthong „ii" macht das Wort unverkennbar alemannisch.',
+      beispiel: 'S\'Iis uf em Wiher trait scho, mir chönne go schlittschuehlaufe.',
+      beispiel_hd: 'Das Eis auf dem Weiher trägt schon, wir können Schlittschuh laufen gehen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-381',
+      ausdruck: 'Sunne',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'Die „Sunne" ist im Alemannischen die Sonne. „Hüt schiint d\'Sunne de ganz Tag" heißt „Heute scheint die Sonne den ganzen Tag". Freiburg gilt als die sonnenreichste Stadt Deutschlands, und das milde Klima am Oberrhein lässt Wein und Obst gedeihen. „An d\'Sunne hocke" bedeutet, sich in die Sonne zu setzen. Viele Wirtschaften heißen „Sunne" oder „Sonne" — ein beliebter, warmer Name.',
+      beispiel: 'Mir hocke uf dr Terrasse und gnüße d\'warm Sunne.',
+      beispiel_hd: 'Wir sitzen auf der Terrasse und genießen die warme Sonne.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-382',
+      ausdruck: 'Räge',
+      hochdeutsch: 'Regen',
+      bedeutung: 'Der „Räge" ist im Alemannischen der Regen. „Bi dem Räge bliibe mir lieber dheim" heißt „Bei diesem Regen bleiben wir lieber daheim". Der Schwarzwald gehört zu den niederschlagsreichsten Mittelgebirgen Deutschlands, weshalb seine Wälder so dicht und grün sind. „S\'rägnet" bedeutet, dass es regnet. Nach langem Räge freuen sich die Bauern und Winzer über das Wasser für ihre Felder und Reben.',
+      beispiel: 'Dr Räge het de Garte ändlich wieder gschwemmt.',
+      beispiel_hd: 'Der Regen hat den Garten endlich wieder gewässert.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-383',
+      ausdruck: 'Wind',
+      hochdeutsch: 'Wind',
+      bedeutung: 'Der „Wind" weht am Oberrhein und am Bodensee oft kräftig. „Hüt blost ä chalte Wind vom Rhii her" heißt „Heute weht ein kalter Wind vom Rhein her". Der berüchtigte „Höllentäler" ist ein Fallwind, der abends aus dem Höllental nach Freiburg weht. Am Bodensee kann der Wind rasch zum Sturm anwachsen, weshalb es eine eigene Sturmwarnung gibt. Der Wind prägt das Klima und das Leben der Region.',
+      beispiel: 'Dr chalt Wind pfift hüt um d\'Husegg.',
+      beispiel_hd: 'Der kalte Wind pfeift heute um die Hausecke.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-384',
+      ausdruck: 'Höllentäler',
+      hochdeutsch: 'Fallwind aus dem Höllental',
+      bedeutung: 'Der „Höllentäler" ist ein berühmter Fallwind, der an Sommerabenden aus dem Höllental herab nach Freiburg weht und für angenehme Abkühlung sorgt. „Am Obe chunnt dr Höllentäler und bringt frischi Luft" heißt „Am Abend kommt der Höllentäler und bringt frische Luft". Nach heißen Sommertagen warten die Freiburger sehnlich auf diesen kühlen Wind. Er ist ein lokales Wetterphänomen und ein liebgewonnener Teil des Freiburger Sommers.',
+      beispiel: 'Wenn dr Höllentäler chunnt, chasch ändlich wieder atme.',
+      beispiel_hd: 'Wenn der Höllentäler kommt, kannst du endlich wieder atmen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-385',
+      ausdruck: 'Chriesi',
+      hochdeutsch: 'Kirschen',
+      bedeutung: 'Die „Chriesi" sind im Hochalemannischen die Kirschen — am Hochrhein, im südlichen Schwarzwald und in der Schweiz gebräuchlich. „Im Juni reife d\'Chriesi am Baum" heißt „Im Juni reifen die Kirschen am Baum". Aus den Chriesi macht man Kirschwasser, Chrieskueche und Konfitüre. Der Schwarzwald und das Markgräflerland sind berühmt für ihre Kirschbäume. „Go Chriesi pflücke" ist im Frühsommer ein beliebter Ausflug.',
+      beispiel: 'Mir stehn uf dr Leiter und pflücke d\'reife Chriesi.',
+      beispiel_hd: 'Wir stehen auf der Leiter und pflücken die reifen Kirschen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-386',
+      ausdruck: 'Öpfel',
+      hochdeutsch: 'Apfel / Äpfel',
+      bedeutung: 'Der „Öpfel" ist im Alemannischen der Apfel. „Am Bodesee wachse d\'beschte Öpfel" heißt „Am Bodensee wachsen die besten Äpfel". Das Bodenseegebiet ist eines der größten Obstanbaugebiete Deutschlands. Aus den Öpfel macht man Most, Apfelsaft und Chueche. „Dr Öpfel fallt nit wiit vom Stamm" ist auch im Alemannischen ein bekanntes Sprichwort. Der Apfel gehört zur täglichen Vesper dazu.',
+      beispiel: 'Im Herbscht lese mir d\'Öpfel für de Moscht.',
+      beispiel_hd: 'Im Herbst lesen wir die Äpfel für den Most.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-387',
+      ausdruck: 'Bire',
+      hochdeutsch: 'Birne',
+      bedeutung: 'Die „Bire" ist im Alemannischen die Birne — sowohl die Frucht als auch (übertragen, derb) der Kopf. „D\'Bire am Baum sin scho rief" heißt „Die Birnen am Baum sind schon reif". Aus den Bire macht man Most, Dörrobst und Kompott. „Ä weichi Bire ha" kann scherzhaft bedeuten, nicht ganz bei Verstand zu sein. Im Obstland am Bodensee und im Schwarzwald sind Birnbäume weit verbreitet.',
+      beispiel: 'D\'reife Bire fallet scho vom Baum is Gras.',
+      beispiel_hd: 'Die reifen Birnen fallen schon vom Baum ins Gras.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-388',
+      ausdruck: 'Bohne',
+      hochdeutsch: 'Bohnen',
+      bedeutung: 'Die „Bohne" gehören im Badischen zu den wichtigsten Gartengemüsen. „Im Garte ziehe mir Bohne und Erbse" heißt „Im Garten ziehen wir Bohnen und Erbsen". Aus grünen Bohnen macht man Bohnegmües, und getrocknete Bohne werden eingelagert. „Saure Bohne" mit Speck sind ein deftiges Gericht. Im Bauerngarten ranken die Stangenbohnen an Stecken empor. Die Bohnenernte im Spätsommer ist arbeitsam, aber lohnend.',
+      beispiel: 'Mir hen hüt d\'Bohne im Garte gschnitte und iigmacht.',
+      beispiel_hd: 'Wir haben heute die Bohnen im Garten geschnitten und eingemacht.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-389',
+      ausdruck: 'Rüebli',
+      hochdeutsch: 'Karotten / Möhren',
+      bedeutung: 'Die „Rüebli" sind im Alemannischen und Schweizerdeutschen die Karotten oder Möhren. „Im Garte stehn d\'Rüebli in dr Reihe" heißt „Im Garten stehen die Karotten in der Reihe". Aus geriebenen Rüebli backt man den beliebten Rüeblikueche (Karottenkuchen). Die orangefarbenen Rüebli gehören zu den häufigsten Gartengemüsen und werden roh, gekocht oder als Suppe gegessen. Kinder knabbern sie gern frisch aus dem Beet.',
+      beispiel: 'D\'Chind zupfe d\'Rüebli frisch us em Beet und ässe sie roh.',
+      beispiel_hd: 'Die Kinder ziehen die Karotten frisch aus dem Beet und essen sie roh.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-390',
+      ausdruck: 'Salat',
+      hochdeutsch: 'Salat / Kopfsalat',
+      bedeutung: 'Der „Salat" ist im Badischen sowohl der grüne Kopfsalat aus dem Garten als auch die angemachte Speise. „Mir hen frische Salat us em Garte" heißt „Wir haben frischen Salat aus dem Garten". Der badische „Salat" wird traditionell mit Essig, Öl und etwas Zucker angemacht, oft mit einem Hauch Sahne. Zum Schäufele oder zu den Brägele gehört ein knackiger Salat. Im Sommer kommt er frisch aus dem eigenen Beet.',
+      beispiel: 'Zum Brote git\'s frische Salat mit Essig und Öl.',
+      beispiel_hd: 'Zum Braten gibt es frischen Salat mit Essig und Öl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-391',
+      ausdruck: 'Chäs',
+      hochdeutsch: 'Käse',
+      bedeutung: 'Der „Chäs" ist im Hochalemannischen der Käse — mit dem typischen „ch". „Zum Vesper git\'s Brot, Chäs und ä Schoppe" heißt „Zur Brotzeit gibt es Brot, Käse und ein Glas Wein". Im südlichen Schwarzwald und in Vorarlberg wird auf den Almen würziger Bergchäs hergestellt. „Chäsknöpfle" sind mit Käse überbackene Knöpfle. „Des isch alles Chäs" bedeutet übertragen „Das ist alles Unsinn".',
+      beispiel: 'Dr würzig Bergchäs vo dr Alp schmeckt zum Schoppe am beschte.',
+      beispiel_hd: 'Der würzige Bergkäse von der Alm schmeckt zum Glas Wein am besten.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-392',
+      ausdruck: 'Anke',
+      hochdeutsch: 'Butter',
+      bedeutung: 'Der „Anke" ist im Hochalemannischen (Hochrhein, Schweiz, südlicher Schwarzwald) die Butter. „Streich dr Anke uf s\'Brot!" heißt „Streich die Butter aufs Brot!". Das alte Wort „Anke" für Butter ist ein Kennzeichen des Hochalemannischen und unterscheidet diesen Raum vom übrigen Deutsch. Frischer Anke aus der Sennerei auf dem warmen Wegge ist ein einfacher Genuss. „Ankeballe" sind geformte Butterstücke.',
+      beispiel: 'Uf s\'frische Brot chunnt ä dicke Schicht Anke.',
+      beispiel_hd: 'Auf das frische Brot kommt eine dicke Schicht Butter.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-393',
+      ausdruck: 'Nidle',
+      hochdeutsch: 'Sahne / Rahm',
+      bedeutung: 'Die „Nidle" (auch Nidel) ist im Hochalemannischen die Sahne oder der Rahm. „Uf de Chueche chunnt no ä Chlex Nidle" heißt „Auf den Kuchen kommt noch ein Klecks Sahne". Die fette Nidle schöpft man von der frischen Milch ab. Aus geschlagener Nidle wird die Schlagsahne für Torten und Desserts. Im Hochalemannischen ist „Nidle" das gebräuchliche Wort, das den Raum sprachlich vom übrigen Deutschland abgrenzt.',
+      beispiel: 'D\'Großmuetter schöpft d\'Nidle vo dr frische Milch.',
+      beispiel_hd: 'Die Großmutter schöpft die Sahne von der frischen Milch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-394',
+      ausdruck: 'Sure Moscht',
+      hochdeutsch: 'saurer Apfelwein / Apfelmost',
+      bedeutung: 'Der „Sure Moscht" ist im Badischen der vergorene, leicht saure Apfelwein — das alltägliche Getränk auf vielen Höfen. „Zum Vesper trinkt dr Buur sin Sure Moscht" heißt „Zur Brotzeit trinkt der Bauer seinen sauren Most". Aus dem eigenen Obst gekeltert, ist der Sure Moscht erfrischend und herb. „Ä Moschtkrueg" steht auf vielen Bauerntischen. Er gilt als bodenständiges, gesundes Getränk der Landbevölkerung.',
+      beispiel: 'Uf em Hof trinke mir zum Vesper en chüehle Sure Moscht.',
+      beispiel_hd: 'Auf dem Hof trinken wir zur Brotzeit einen kühlen sauren Most.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-395',
+      ausdruck: 'Schorle',
+      hochdeutsch: 'Schorle (Wein oder Saft mit Wasser)',
+      bedeutung: 'Die „Schorle" ist im Badischen und Pfälzischen ein Getränk aus Wein oder Saft, gemischt mit Mineralwasser. „Bi dr Hitz trinke mir ä Wiischorle" heißt „Bei der Hitze trinken wir eine Weinschorle". Die „saure Schorle" ist Wein mit Sprudel, die „süße" mit Limonade. An heißen Tagen und bei Festen ist die spritzige Schorle das ideale Erfrischungsgetränk. Im Weinland gehört die Schorle einfach dazu.',
+      beispiel: 'An dr Hocketse bstelle mir ä große Wiischorle.',
+      beispiel_hd: 'Am Sommerfest bestellen wir eine große Weinschorle.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'al-396',
+      ausdruck: 'Sied',
+      hochdeutsch: 'Süden / Süd',
+      bedeutung: 'Im Alemannischen liegt der „Sied" (Süden) in Richtung Schweiz und Alpen. „D\'Reb stehn alli gege Sied" heißt „Die Reben stehen alle nach Süden". Die südexponierten Hänge am Kaiserstuhl und im Markgräflerland bekommen die meiste Sonne und bringen die besten Weine. „Dr Sied" ist auch eine Himmelsrichtung der Sehnsucht — von Baden aus geht es nach Süden ins warme Italien oder in die Schweizer Berge.',
+      beispiel: 'D\'beschte Lage liege alli am Hang gege Sied.',
+      beispiel_hd: 'Die besten Lagen liegen alle am Hang nach Süden.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'al-397',
+      ausdruck: 'Rhii',
+      hochdeutsch: 'Rhein',
+      bedeutung: 'Der „Rhii" ist im Alemannischen der Rhein — der große Strom, der Baden vom Elsass und von der Schweiz trennt und verbindet. „Mir wohne am Rhii" heißt „Wir wohnen am Rhein". Der Hochrhein fließt von Basel her, bildet die Grenze und prägt die ganze Region. Über den Rhii bestehen seit jeher enge Beziehungen ins Elsass. Das Badnerlied besingt das Land „an des Rheines Strand". Der Rhii ist Lebensader und Identität zugleich.',
+      beispiel: 'Am Obe gehn mir am Rhii entlang go spaziere.',
+      beispiel_hd: 'Am Abend gehen wir am Rhein entlang spazieren.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-398',
+      ausdruck: 'Stei',
+      hochdeutsch: 'Stein',
+      bedeutung: 'Der „Stei" ist im Alemannischen der Stein. „Dr Acker isch voller Stei" heißt „Der Acker ist voller Steine". Aus Stei sind die alten Mauern, Brünneli und Kirchen der Region gebaut. „Ä Stei im Brett ha" bedeutet, bei jemandem gut angeschrieben zu sein. Am Kaiserstuhl prägen die Lösswände und vulkanischen Stei die Landschaft. Das Steineklauben von den Äckern war früher mühsame Frühjahrsarbeit.',
+      beispiel: 'Vom Acker müen mir jede Friehjohr d\'Stei abläse.',
+      beispiel_hd: 'Vom Acker müssen wir jedes Frühjahr die Steine ablesen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-399',
+      ausdruck: 'Baum',
+      hochdeutsch: 'Baum',
+      bedeutung: 'Der „Baum" ist im Alemannischen der Baum. „Im Garte stoht en alte Öpfelbaum" heißt „Im Garten steht ein alter Apfelbaum". Im Schwarzwald herrschen die mächtigen Tannen und Fichten vor. Auf den Streuobstwiesen wachsen Öpfel-, Bire- und Chriesibäum. „Uf de Baum stiige" bedeutet, auf den Baum zu klettern. Der Maibaum wird im Frühjahr aufgestellt. Bäume prägen die alemannische Landschaft und das Brauchtum.',
+      beispiel: 'Unter em große Baum im Hof stoht ä Bank im Schatte.',
+      beispiel_hd: 'Unter dem großen Baum im Hof steht eine Bank im Schatten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-400',
+      ausdruck: 'Wald',
+      hochdeutsch: 'Wald',
+      bedeutung: 'Der „Wald" ist im Schwarzwald allgegenwärtig — der Name der ganzen Region kommt von den dunklen Tannenwäldern. „Mir gehn im Wald go Pilz suche" heißt „Wir gehen im Wald Pilze suchen". Der Wald liefert Holz, Wild, Beeren und Pilze und ist Erholungsraum zugleich. „In de Wald go" bedeutet, in den Wald zu gehen. Der dichte, dunkle Schwarzwald hat unzählige Sagen und Märchen hervorgebracht.',
+      beispiel: 'Im Schwarzwald chasch stundelang dur de Wald wandere.',
+      beispiel_hd: 'Im Schwarzwald kannst du stundenlang durch den Wald wandern.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-401',
+      ausdruck: 'Tanne',
+      hochdeutsch: 'Tanne / Nadelbaum',
+      bedeutung: 'Die „Tanne" ist der Baum des Schwarzwalds schlechthin — die dunklen Weißtannen und Fichten geben dem Gebirge seinen Namen und sein Aussehen. „D\'Tanne stehn dicht am Hang" heißt „Die Tannen stehen dicht am Hang". Aus Tannenholz werden Häuser, Schindeln und Möbel gefertigt. Zur Weihnacht holt man sich ä „Tannebaum" in d\'Stube. Der harzige Duft der Tanne gehört zum Schwarzwald wie die Kuckucksuhr.',
+      beispiel: 'D\'dunkle Tanne stehn so dicht, dass kei Sunne durechunnt.',
+      beispiel_hd: 'Die dunklen Tannen stehen so dicht, dass keine Sonne durchkommt.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-402',
+      ausdruck: 'Geiß',
+      hochdeutsch: 'Ziege',
+      bedeutung: 'Die „Geiß" ist im Alemannischen die Ziege. „Uf dr Alp hüete mir d\'Geiße" heißt „Auf der Alm hüten wir die Ziegen". Aus Geißmilch wird würziger Geißkäse gemacht. Die genügsame Geiß war früher die „Kuh des kleinen Mannes", weil sich arme Familien keine Kuh leisten konnten. Das „Geißli" ist das Zicklein. Im südlichen Schwarzwald und Voralpenland gehört die Geiß zum bäuerlichen Leben.',
+      beispiel: 'D\'Geiß springt am Hang umä und frisst s\'Gras.',
+      beispiel_hd: 'Die Ziege springt am Hang umher und frisst das Gras.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-403',
+      ausdruck: 'Chue',
+      hochdeutsch: 'Kuh',
+      bedeutung: 'Die „Chue" ist im Hochalemannischen die Kuh — mit dem typischen „ch" und dem Diphthong „ue". „D\'Chue git hüt viel Milch" heißt „Die Kuh gibt heute viel Milch". Auf den Matten und Alpen des Schwarzwalds und Voralpenlands weiden die Chüeh den Sommer über. Aus ihrer Milch entstehen Anke, Nidle und Chäs. Das Vinzgauer und Hinterwälder Rind sind alte Schwarzwälder Rassen. Die Chue ist ein Eckpfeiler der Berglandwirtschaft.',
+      beispiel: 'Am Morge und am Obe wird d\'Chue im Stall gmolke.',
+      beispiel_hd: 'Am Morgen und am Abend wird die Kuh im Stall gemolken.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-404',
+      ausdruck: 'Hund',
+      hochdeutsch: 'Hund',
+      bedeutung: 'Der „Hund" ist im Alemannischen der Hund — treuer Begleiter auf Hof und Wanderung. „Dr Hund hüetet s\'Vieh und bellt em Fremde" heißt „Der Hund hütet das Vieh und bellt den Fremden an". Auf dem Bauernhof bewacht der Hund Haus und Hof. „Do lit dr Hund begrabe" ist auch im Alemannischen ein bekanntes Sprichwort für den Kern eines Problems. Beim Wandern im Schwarzwald ist der Hund ein gern gesehener Gefährte.',
+      beispiel: 'Dr Hund springt freudig um üs umä, wenn mir heichömme.',
+      beispiel_hd: 'Der Hund springt freudig um uns herum, wenn wir heimkommen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-405',
+      ausdruck: 'Voge',
+      hochdeutsch: 'Vogel / Vögel',
+      bedeutung: 'Der „Voge" (auch Vogel) ist im Alemannischen der Vogel. „Im Friehjohr singe d\'Voge im Garte" heißt „Im Frühling singen die Vögel im Garten". Im Schwarzwald lebt der seltene Auerhahn, am Kaiserstuhl singen Wiedehopf und Bienenfresser. „En Voge ha" bedeutet umgangssprachlich, ein bisschen verrückt zu sein. Das frühe Vogelgezwitscher im Friehjohr kündigt das Erwachen der Natur an.',
+      beispiel: 'Frueh am Morge wecke mi d\'Voge mit ihrem Gsang.',
+      beispiel_hd: 'Früh am Morgen wecken mich die Vögel mit ihrem Gesang.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-406',
+      ausdruck: 'Imme',
+      hochdeutsch: 'Biene',
+      bedeutung: 'Die „Imme" ist im Alemannischen und Schwäbischen die Biene. „D\'Imme summe um d\'Blueme im Garte" heißt „Die Bienen summen um die Blumen im Garten". Der Imker heißt „Immer". Aus dem Honig der Imme wird der süße Brotaufstrich gewonnen. „Im Immehus" stehen die Bienenstöcke. Am blütenreichen Kaiserstuhl und in den Streuobstwiesen finden die Imme reiche Nahrung. Das alte Wort „Imme" hat sich im Südwesten gut gehalten.',
+      beispiel: 'D\'Imme fliege vo Blueme zu Blueme und sammle Honig.',
+      beispiel_hd: 'Die Bienen fliegen von Blume zu Blume und sammeln Honig.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-407',
+      ausdruck: 'Schmetterling',
+      hochdeutsch: 'Schmetterling / Falter',
+      bedeutung: 'Im Alemannischen sagt man für den Schmetterling auch „Summervogel" oder „Pfiifolter", doch der „Schmetterling" selbst flattert bunt durch Wiesen und Gärten. „Uf dr Matte flattere d\'Schmetterling" heißt „Auf der Wiese flattern die Schmetterlinge". Am artenreichen Kaiserstuhl mit seinen Trockenrasen leben besonders viele seltene Schmetterling. Die bunten Falter über den blühenden Matten sind ein Sinnbild des alemannischen Sommers.',
+      beispiel: 'Über dr blüehende Matte tanze d\'Schmetterling im Sunneschii.',
+      beispiel_hd: 'Über der blühenden Wiese tanzen die Schmetterlinge im Sonnenschein.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-408',
+      ausdruck: 'Schnägg',
+      hochdeutsch: 'Schnecke',
+      bedeutung: 'Der „Schnägg" (auch Schneck) ist im Alemannischen die Schnecke. „Nach em Räge sin überall Schnägge im Garte" heißt „Nach dem Regen sind überall Schnecken im Garten". Die gefräßigen Nacktschnägge sind der Schrecken jedes Gärtners. „Langsam wie ä Schnägg" bedeutet sehr langsam. Liebevoll wird „Schnägg" auch als Kosename benutzt: „Du liebe Schnägg!". Auch eine süße, schneckenförmige Gebäckrolle heißt „Schnägg".',
+      beispiel: 'Nach em Räge fresse d\'Schnägge mir de ganz Salat ab.',
+      beispiel_hd: 'Nach dem Regen fressen die Schnecken mir den ganzen Salat ab.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-409',
+      ausdruck: 'Roß',
+      hochdeutsch: 'Pferd',
+      bedeutung: 'Das „Roß" ist im Alemannischen und Schwäbischen das Pferd. „Vor de Wage isch s\'Roß gschpannt" heißt „Vor den Wagen ist das Pferd gespannt". Früher zogen die Roß den Pflug und die Erntewagen. Im Schwarzwald war das kräftige Schwarzwälder Kaltblut (das „Wälderpferd") für die Holz- und Feldarbeit unentbehrlich. „Arbeite wie ä Roß" bedeutet, sehr hart zu schuften. Das Roß genoss als Arbeitstier hohe Wertschätzung.',
+      beispiel: 'Dr Buur het s\'Roß vor de Wage gschpannt und fahrt ufs Feld.',
+      beispiel_hd: 'Der Bauer hat das Pferd vor den Wagen gespannt und fährt aufs Feld.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'al-410',
+      ausdruck: 'Hoor',
+      hochdeutsch: 'Haar / Haare',
+      bedeutung: 'Das „Hoor" ist im Alemannischen das Haar. „Sie het langi blondi Hoor" heißt „Sie hat lange blonde Haare". „Sich d\'Hoor rauffe" bedeutet, verzweifelt zu sein. „Hoor uf de Zähn ha" heißt, resolut und durchsetzungsfähig zu sein. „Kei guets Hoor a eim losse" bedeutet, jemanden schlechtmachen. Das alltägliche Körperwort klingt durch das gedehnte „oo" sehr charakteristisch alemannisch.',
+      beispiel: 'Bim Friseur lon i mir d\'Hoor wieder churz schniide.',
+      beispiel_hd: 'Beim Friseur lasse ich mir die Haare wieder kurz schneiden.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-411',
+      ausdruck: 'Aug',
+      hochdeutsch: 'Auge / Augen',
+      bedeutung: 'Das „Aug" ist im Alemannischen das Auge. „Mach d\'Auge uf!" heißt „Mach die Augen auf!". „Es Aug uf öppis ha" bedeutet, ein Auge auf etwas zu werfen, also aufzupassen. „Vor de Auge schwarz werde" heißt, einem wird schwindlig. Das alltägliche Körperwort ist im ganzen alemannischen Raum gebräuchlich. „Schöni Auge mache" bedeutet, jemandem schöne Augen zu machen, also zu flirten.',
+      beispiel: 'Sie het so schöni blaui Auge wie dr Bodesee.',
+      beispiel_hd: 'Sie hat so schöne blaue Augen wie der Bodensee.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-412',
+      ausdruck: 'Nase',
+      hochdeutsch: 'Nase',
+      bedeutung: 'Die „Nase" ist im Alemannischen die Nase. „Bi dr Chälte wird eim d\'Nase rot" heißt „Bei der Kälte wird einem die Nase rot". „D\'Nase voll ha" bedeutet, von etwas genug zu haben. „Sich a dr eigne Nase nehme" heißt, sich an die eigene Nase zu fassen. „D\'Nase rümpfe" bedeutet, etwas verächtlich abzulehnen. Das Wort gehört zum alltäglichen Körperwortschatz und wird in vielen Redensarten gebraucht.',
+      beispiel: 'Bi dr Chälte lauft eim d\'Nase de ganz Tag.',
+      beispiel_hd: 'Bei der Kälte läuft einem die Nase den ganzen Tag.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-413',
+      ausdruck: 'Ohr',
+      hochdeutsch: 'Ohr / Ohren',
+      bedeutung: 'Das „Ohr" ist im Alemannischen das Ohr. „Halt d\'Ohre uf!" heißt „Pass gut auf!". „Es goht zum eine Ohr ii und zum andre wieder uus" bedeutet, dass etwas nicht beachtet wird. „D\'Ohre spitze" heißt, aufmerksam zu lauschen. „Übers Ohr ghaue werde" bedeutet, betrogen zu werden. Das alltägliche Körperwort steckt in zahlreichen alemannischen Redensarten über Aufmerksamkeit und Zuhören.',
+      beispiel: 'Spitz d\'Ohre, jetz chunnt s\'Wichtigschte!',
+      beispiel_hd: 'Spitz die Ohren, jetzt kommt das Wichtigste!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'al-414',
+      ausdruck: 'Maul halte',
+      hochdeutsch: 'den Mund halten / still sein',
+      bedeutung: 'Die Wendung „s\'Maul halte" bedeutet im Alemannischen, den Mund zu halten und still zu sein. „Halt jetz emol s\'Maul!" heißt „Halt jetzt mal den Mund!". Sie wird derb-direkt benutzt, um jemanden zum Schweigen zu bringen. „S\'Maul nit halte chönne" bedeutet, geschwätzig zu sein und nichts für sich behalten zu können. Trotz des derben Klangs gehört die Redensart zum alltäglichen Sprachgebrauch.',
+      beispiel: 'Du chasch eifach s\'Maul halte nit, oder?',
+      beispiel_hd: 'Du kannst einfach den Mund nicht halten, oder?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'al-415',
+      ausdruck: 'Pfupf',
+      hochdeutsch: 'Schwung / Elan / Energie',
+      bedeutung: 'Der „Pfupf" ist im Alemannischen und Schweizerdeutschen Schwung, Elan oder Energie. „Dä het hüt rächt Pfupf" heißt „Der hat heute richtig Schwung". Wer „Pfupf het", ist tatkräftig und voller Tatendrang. „Ohni Pfupf" geht eine Sache lahm und müde voran. Das lautmalerische Wort drückt die innere Kraft und den Antrieb aus, mit dem jemand eine Sache angeht. Ein munterer, energischer Mensch hat „voll Pfupf".',
+      beispiel: 'Dr neu Lehrling het Pfupf und packt überall mit a.',
+      beispiel_hd: 'Der neue Lehrling hat Elan und packt überall mit an.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'al-416',
+      ausdruck: 'verzelle',
+      hochdeutsch: 'erzählen',
+      bedeutung: '„Verzelle" ist im Alemannischen das Wort für „erzählen". „Dr Ähni verzellt gern alti Gschichte" heißt „Der Großvater erzählt gern alte Geschichten". Am Stammtisch und in der warmen Stube wird viel verzellt — von früher, von der Arbeit, vom Dorf. „Verzell mir nüt!" bedeutet „Erzähl mir keinen Unsinn!". Das Verzelle alter Sagen und Geschichten am Kachelofen war im Schwarzwald lange ein wichtiger Teil des Winterabends.',
+      beispiel: 'Verzell üs no emol d\'Gschicht vo dr Wilde Jagd!',
+      beispiel_hd: 'Erzähl uns noch einmal die Geschichte von der Wilden Jagd!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-417',
+      ausdruck: 'lose',
+      hochdeutsch: 'zuhören / horchen',
+      bedeutung: '„Lose" bedeutet im Alemannischen und Schweizerdeutschen zuhören oder horchen. „Los emol, was i dir sag!" heißt „Hör mal zu, was ich dir sage!". Das Wort ist im ganzen hochalemannischen Raum verbreitet und unterscheidet sich klar vom hochdeutschen „hören" oder „zuhören". „Gut lose chönne" bedeutet, aufmerksam zuhören zu können. „Am Radio lose" heißt, Radio zu hören. Ein wichtiges alltägliches Verb des Alemannischen.',
+      beispiel: 'Los emol gnau zue, sunscht verstosch es nit.',
+      beispiel_hd: 'Hör mal genau zu, sonst verstehst du es nicht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-418',
+      ausdruck: 'umetriibe',
+      hochdeutsch: 'herumtreiben / unterwegs sein',
+      bedeutung: '„Umetriibe" bedeutet im Alemannischen, sich herumzutreiben oder unterwegs zu sein. „Wo hesch di de ganz Tag umetriibe?" heißt „Wo hast du dich den ganzen Tag herumgetrieben?". Das Wort wird oft leicht vorwurfsvoll über jemanden gesagt, der ohne festes Ziel unterwegs ist. „Sich am Obe in dr Stadt umetriibe" bedeutet, abends in der Stadt unterwegs zu sein. Ein „Umetriiber" ist ein unsteter Mensch.',
+      beispiel: 'D\'Buebe hen sich de ganz Nomittag im Wald umetriibe.',
+      beispiel_hd: 'Die Jungen haben sich den ganzen Nachmittag im Wald herumgetrieben.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-419',
+      ausdruck: 'pressiere',
+      hochdeutsch: 'eilen / dringend sein',
+      bedeutung: '„Pressiere" bedeutet im Alemannischen, dass etwas eilt oder dringend ist — vom französischen „presser" (drängen). „Es pressiert, mir müen go!" heißt „Es eilt, wir müssen gehen!". Wenn nichts „pressiert", hat man Zeit und kann es gemütlich angehen lassen. Das Wort kam über den Sprachkontakt am Oberrhein ins Alemannische. „Was pressiert\'s denn so?" fragt man jemanden, der es übertrieben eilig hat.',
+      beispiel: 'Lo dir Ziit, es pressiert hüt würkli gar nüt.',
+      beispiel_hd: 'Lass dir Zeit, es eilt heute wirklich gar nichts.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'al-420',
+      ausdruck: 'Grüß Gott mitenand',
+      hochdeutsch: 'Grüß Gott zusammen / Hallo allerseits',
+      bedeutung: '„Grüß Gott mitenand" ist im südalemannischen und schwäbischen Raum eine herzliche Begrüßung an mehrere Personen zugleich — „mitenand" bedeutet „miteinander", also „zusammen". „Grüß Gott mitenand, do bin i!" heißt „Hallo allerseits, da bin ich!". Beim Betreten einer Wirtschaft oder einer Runde grüßt man so alle Anwesenden auf einmal. Die Wendung ist freundlich, traditionell und im katholisch geprägten Süden weit verbreitet.',
+      beispiel: 'Grüß Gott mitenand, isch no ä Platz frei am Tisch?',
+      beispiel_hd: 'Grüß Gott zusammen, ist noch ein Platz frei am Tisch?',
+      kategorie: 'begruessung'
     }
   ]
 };
