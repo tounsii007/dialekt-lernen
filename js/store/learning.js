@@ -3,7 +3,7 @@
 
 import { state, persist, favKey } from './state.js';
 import { registerStreak } from './streak.js';
-import { reviewCard, migrateLegacyEntries } from './srs.js';
+import { reviewCardScheduled, migrateLegacyEntries } from './srs.js';
 
 export const STATUS_UNKNOWN  = 0;
 export const STATUS_HARD     = 1;
@@ -28,8 +28,8 @@ export function setLernstand(dialektId, ausdruckId, stand) {
     persist();
     return;
   }
-  reviewCard(dialektId, ausdruckId, s);
-  // registerStreak() bereits in reviewCard()
+  reviewCardScheduled(dialektId, ausdruckId, s);
+  // registerStreak() + XP/Challenges/Tagesziel laufen im Scheduler-Pfad.
 }
 
 export function getLernstand(dialektId, ausdruckId) {

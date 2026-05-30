@@ -88,7 +88,15 @@ function withDefaults(loaded) {
                         completed: Array.isArray(loaded.challenges.completed) ? loaded.challenges.completed : [] }
                     : { week: null, progress: {}, completed: [] },
     longGoals:    Array.isArray(loaded.longGoals) ? loaded.longGoals : [],
-    notesIdbMigrated: !!loaded.notesIdbMigrated
+    notesIdbMigrated: !!loaded.notesIdbMigrated,
+    // SRS-Konfiguration: FSRS-5 ist Default (schlaegt SM-2/Anki-Default).
+    // scheduler 'fsrs'|'sm2', retention = Wunsch-Retention, params = 19 FSRS-Gewichte
+    // (null = Populations-Default; vom Optimizer pro Nutzer ueberschrieben).
+    srs:          loaded.srs && typeof loaded.srs === 'object'
+                    ? { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null, ...loaded.srs }
+                    : { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null },
+    // Review-Log fuer den FSRS-Optimizer (gekappt). Pro Eintrag: {key,t,g,r,s,d}.
+    srsLog:       Array.isArray(loaded.srsLog) ? loaded.srsLog : []
   };
 }
 

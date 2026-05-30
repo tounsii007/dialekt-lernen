@@ -24,6 +24,8 @@ export function resetState() {
   state.notes = {};
   state.xp = { total: 0, log: [] };
   state.goals = { target: 10, progress: {}, reminderShown: {} };
+  state.srs = { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null };
+  state.srsLog = [];
 }
 
 // Minimaler DOM-Mock — wird global gesetzt, wenn ein Test es braucht.

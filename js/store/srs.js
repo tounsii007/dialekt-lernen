@@ -18,10 +18,18 @@ import { state, persist, favKey } from './state.js';
 import { registerStreak } from './streak.js';
 import { awardXp, XP } from './xp.js';
 import { incrementGoalProgress, isGoalMet, getGoalTarget } from './goals.js';
+import {
+  GRADE_AGAIN, GRADE_HARD, GRADE_GOOD, GRADE_EASY,
+  STATE_LEARNING, STATE_REVIEW,
+  S_MIN,
+  schedule as fsrsSchedule, previewIntervals as fsrsPreview,
+} from '../util/fsrs.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
 const DAY_MS = 86_400_000;
+
+function clamp(x, lo, hi) { return Math.min(hi, Math.max(lo, x)); }
 
 // Erzwingt eine endliche Zahl >= min; sonst fallback. Verteidigt die SM-2-Mathe
 // gegen korrupte Karten-Felder (z. B. ef:"bad"/reps:NaN aus einem manipulierten
@@ -57,7 +65,9 @@ export function getCardSrs(dialektId, ausdruckId) {
   if (!v) return null;
 
   // Legacy-Records (nur stand+last) bekommen einen extrapolierten EF.
-  if (v.ef == null) {
+  // FSRS-Records haben ebenfalls kein `ef`, dürfen hier aber NICHT landen —
+  // sie werden weiter unten im FSRS-Zweig behandelt.
+  if (v.ef == null && v.sched !== 'fsrs') {
     const stand = numFin(v.stand, 0, 0);
     const last = numFin(v.last, 0);
     return {
@@ -68,6 +78,24 @@ export function getCardSrs(dialektId, ausdruckId) {
       lapses: 0,
       last,
       stand
+    };
+  }
+  // FSRS-Records: eigener Algorithmus-Zweig. Defensiv coercen wie bei SM-2.
+  // `ef` ist ein Platzhalter, damit Legacy-Consumer (forgetting-curve etc.)
+  // weiterhin ein Feld vorfinden; die Terminierung läuft über difficulty/stability.
+  if (v.sched === 'fsrs') {
+    return {
+      sched: 'fsrs',
+      difficulty: numFin(v.difficulty, 5, 1),
+      stability: numFin(v.stability, S_MIN, S_MIN),
+      state: numFin(v.state, STATE_REVIEW, 0),
+      reps: numFin(v.reps, 0, 0),
+      lapses: numFin(v.lapses, 0, 0),
+      interval: numFin(v.interval, 0, 0),
+      due: numFin(v.due, 0),
+      last: numFin(v.last, 0),
+      stand: numFin(v.stand, 0, 0),
+      ef: INIT_EF,
     };
   }
   // Numerische Felder defensiv coercen — ein korrupter Import-Record (ef:"bad",
@@ -82,6 +110,30 @@ export function getCardSrs(dialektId, ausdruckId) {
     last: numFin(v.last, 0),
     stand: numFin(v.stand, 0, 0),
   };
+}
+
+// Gemeinsame Seiteneffekte nach einem Review: Streak, XP, Challenges, Tagesziel.
+// Von beiden Schedulern (SM-2 und FSRS) genutzt, damit die Gamification
+// identisch bleibt, egal welcher Algorithmus terminiert. `isEasy` steuert nur
+// die XP-Höhe (Leicht = "gelernt", sonst = "wiederholt").
+function applyReviewSideEffects(dialektId, ausdruckId, isEasy) {
+  registerStreak();
+  const xpAmount = isEasy ? XP.cardLearned : XP.cardReviewed;
+  const xpReason = isEasy ? 'card-learned' : 'card-reviewed';
+  awardXp(xpAmount, xpReason);
+  // Wöchentliche Challenges tracken (lazy import, um Zyklen zu vermeiden).
+  try {
+    import('./challenges.js').then(m => m.trackCardReview(dialektId, ausdruckId, xpReason)).catch(() => {});
+  } catch {}
+  // Tages-Lernziel tracken
+  const newProgress = incrementGoalProgress(1);
+  const target = getGoalTarget();
+  if (newProgress === target) {
+    // Exakt erreicht — Event auslösen
+    try {
+      document.dispatchEvent(new CustomEvent('dialekto:goalmet', { detail: { target } }));
+    } catch {}
+  }
 }
 
 // Wendet SM-2 auf eine Karte an und persistiert das Ergebnis.
@@ -121,24 +173,7 @@ export function reviewCard(dialektId, ausdruckId, rating) {
   };
   state.gelernt[key] = record;
   persist();
-  registerStreak();
-  // XP-Award je nach Bewertung
-  const xpAmount = rating === RATING_EASY ? XP.cardLearned : XP.cardReviewed;
-  const xpReason = rating === RATING_EASY ? 'card-learned' : 'card-reviewed';
-  awardXp(xpAmount, xpReason);
-  // Wöchentliche Challenges tracken (lazy import, um Zyklen zu vermeiden).
-  try {
-    import('./challenges.js').then(m => m.trackCardReview(dialektId, ausdruckId, xpReason)).catch(() => {});
-  } catch {}
-  // Tages-Lernziel tracken
-  const newProgress = incrementGoalProgress(1);
-  const target = getGoalTarget();
-  if (newProgress === target) {
-    // Exakt erreicht — Event auslösen
-    try {
-      document.dispatchEvent(new CustomEvent('dialekto:goalmet', { detail: { target } }));
-    } catch {}
-  }
+  applyReviewSideEffects(dialektId, ausdruckId, rating === RATING_EASY);
   return record;
 }
 
@@ -163,6 +198,156 @@ export function getSrsStats(allCards) {
     if (s.due <= now) due += 1;
   }
   return { due, learned, learning, fresh };
+}
+
+// ── FSRS-Integration ──────────────────────────────────────────────────────
+// Ab hier der moderne Scheduler. `state.srs` wählt den Algorithmus; FSRS ist
+// Default (schlägt SM-2/Anki-Default). Der SM-2-Pfad oben bleibt voll intakt,
+// damit ein Scheduler-Wechsel verlustfrei möglich ist.
+
+const SRS_LOG_MAX = 5000;
+
+// Liest die SRS-Konfiguration defensiv (Scheduler, Wunsch-Retention, Fuzz,
+// optimierte Parameter). Retention auf einen sinnvollen Bereich begrenzt.
+export function getSrsConfig() {
+  const c = (state.srs && typeof state.srs === 'object') ? state.srs : {};
+  return {
+    scheduler: c.scheduler === 'sm2' ? 'sm2' : 'fsrs',
+    retention: clamp(numFin(c.retention, 0.9), 0.7, 0.97),
+    fuzz: c.fuzz !== false,
+    params: Array.isArray(c.params) && c.params.length === 19 ? c.params.slice() : null,
+  };
+}
+
+// Aktualisiert die SRS-Konfiguration (Teil-Patch) und persistiert.
+export function setSrsConfig(patch) {
+  const next = { ...getSrsConfig(), ...(patch || {}) };
+  state.srs = {
+    scheduler: next.scheduler === 'sm2' ? 'sm2' : 'fsrs',
+    retention: clamp(numFin(next.retention, 0.9), 0.7, 0.97),
+    fuzz: next.fuzz !== false,
+    params: Array.isArray(next.params) && next.params.length === 19 ? next.params.slice() : null,
+  };
+  persist();
+  return state.srs;
+}
+
+// 3-Knopf-UI (Schwer/Mittel/Leicht) → FSRS-Grade. Die Legacy-UI hat keinen
+// separaten "Hard"-Knopf, daher MED→GOOD. Bekommt die UI später 4 Knöpfe,
+// kann der Grade direkt an reviewCardScheduled übergeben werden.
+function ratingToGrade(rating) {
+  if (rating === RATING_EASY) return GRADE_EASY;
+  if (rating === RATING_MED)  return GRADE_GOOD;
+  return GRADE_AGAIN;
+}
+
+// FSRS-Grade → Legacy-stand (0..3) für UI-Marker.
+function gradeToStand(grade) {
+  if (grade >= GRADE_EASY) return 3;
+  if (grade >= GRADE_GOOD) return 2;
+  return 1;
+}
+
+// Liefert eine FSRS-Karte (im fsrs.js-Format) für eine Karten-ID, oder null
+// für eine Neukarte (dann seedet fsrsSchedule selbst). Existiert nur ein
+// SM-2-Record, wird er faul in den FSRS-Raum übersetzt, damit ein
+// Scheduler-Wechsel den Fortschritt nicht verwirft:
+//   difficulty ← aus EF abgeleitet (hoher EF ⇒ leicht ⇒ niedrige Difficulty)
+//   stability  ← bisheriges Intervall (mind. S_MIN)
+function getFsrsCard(dialektId, ausdruckId) {
+  const key = favKey(dialektId, ausdruckId);
+  const v = state.gelernt[key];
+  if (v && v.sched === 'fsrs') {
+    return {
+      difficulty: numFin(v.difficulty, 5, 1),
+      stability: numFin(v.stability, S_MIN, S_MIN),
+      state: numFin(v.state, STATE_REVIEW, 0),
+      reps: numFin(v.reps, 0, 0),
+      lapses: numFin(v.lapses, 0, 0),
+      lastReview: numFin(v.last, 0) || 0,
+      due: numFin(v.due, 0) || Date.now(),
+    };
+  }
+  if (v) {
+    const sm = getCardSrs(dialektId, ausdruckId);
+    if (sm && sm.reps > 0) {
+      return {
+        difficulty: clamp(8.0 - (sm.ef - MIN_EF) * 3, 1, 10),
+        stability: Math.max(sm.interval || 0, S_MIN),
+        state: STATE_REVIEW,
+        reps: sm.reps,
+        lapses: sm.lapses || 0,
+        lastReview: sm.last || 0,
+        due: sm.due || Date.now(),
+      };
+    }
+  }
+  return null;
+}
+
+// Hängt einen Eintrag ans Review-Log (für den FSRS-Optimizer in Iter 4) und
+// kappt die Länge. Persistiert NICHT selbst — der Caller bündelt persist().
+function appendSrsLog(entry) {
+  if (!Array.isArray(state.srsLog)) state.srsLog = [];
+  state.srsLog.push(entry);
+  if (state.srsLog.length > SRS_LOG_MAX) {
+    state.srsLog.splice(0, state.srsLog.length - SRS_LOG_MAX);
+  }
+}
+
+// Wendet FSRS auf eine Karte an, persistiert den Superset-Record und löst die
+// gemeinsamen Seiteneffekte aus. `grade` ist ein FSRS-Grade (1..4).
+export function reviewCardFsrs(dialektId, ausdruckId, grade, now = Date.now()) {
+  const key = favKey(dialektId, ausdruckId);
+  const cfg = getSrsConfig();
+  const g = clamp(numFin(grade, GRADE_GOOD), 1, 4);
+  const prevCard = getFsrsCard(dialektId, ausdruckId);
+  const res = fsrsSchedule(prevCard, g, now, {
+    params: cfg.params || undefined,
+    desiredRetention: cfg.retention,
+  });
+  const c = res.card;
+  const record = {
+    sched: 'fsrs',
+    difficulty: c.difficulty,
+    stability: c.stability,
+    state: c.state,
+    reps: c.reps,
+    lapses: c.lapses,
+    interval: res.interval,
+    due: c.due,
+    last: now,
+    stand: gradeToStand(g),
+  };
+  state.gelernt[key] = record;
+  // Kompaktes Log fürs spätere Parameter-Fitting: t=Zeit, g=Grade,
+  // r=Retrievability beim Review, s/d = neue Stabilität/Difficulty.
+  appendSrsLog({ key, t: now, g, r: Number(res.retrievability.toFixed(4)), s: c.stability, d: c.difficulty });
+  persist();
+  applyReviewSideEffects(dialektId, ausdruckId, g >= GRADE_EASY);
+  return record;
+}
+
+// Scheduler-agnostischer Einstieg: routet je nach state.srs.scheduler.
+// `rating` ist die 3-Knopf-Bewertung (1..3); optionales `grade` (1..4)
+// überschreibt das Mapping, falls die UI bereits 4 Knöpfe liefert.
+export function reviewCardScheduled(dialektId, ausdruckId, rating, grade = null) {
+  if (getSrsConfig().scheduler === 'fsrs') {
+    const g = grade != null ? clamp(numFin(grade, GRADE_GOOD), 1, 4) : ratingToGrade(rating);
+    return reviewCardFsrs(dialektId, ausdruckId, g, Date.now());
+  }
+  return reviewCard(dialektId, ausdruckId, rating);
+}
+
+// Intervall-Vorschau (Tage) je Bewertung — für die Anki-Stil-Buttons.
+// Nur im FSRS-Modus sinnvoll; im SM-2-Modus null.
+export function getReviewPreview(dialektId, ausdruckId, now = Date.now()) {
+  const cfg = getSrsConfig();
+  if (cfg.scheduler !== 'fsrs') return null;
+  return fsrsPreview(getFsrsCard(dialektId, ausdruckId), now, {
+    params: cfg.params || undefined,
+    desiredRetention: cfg.retention,
+  });
 }
 
 // Pure SM-2-Berechnung ohne State-Side-Effects.
@@ -231,7 +416,8 @@ export function migrateLegacyEntries() {
   for (const key of Object.keys(state.gelernt || {})) {
     const v = state.gelernt[key];
     if (!v || typeof v !== 'object') continue;
-    if (v.ef != null) continue;
+    // FSRS-Records nicht anfassen — sie haben kein `ef`, sind aber kein Legacy.
+    if (v.ef != null || v.sched === 'fsrs') continue;
     const stand = v.stand || 0;
     state.gelernt[key] = {
       ef: INIT_EF,
