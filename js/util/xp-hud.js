@@ -4,19 +4,41 @@ import { xpToNextLevel, getLevelTitle } from '../store/xp.js';
 import { confettiBurst } from './motion.js';
 
 let hudEl = null;
+let liveRegion = null;
 
 function getHud() {
   if (hudEl && document.body.contains(hudEl)) return hudEl;
   hudEl = document.createElement('div');
   hudEl.id = 'xpHud';
   hudEl.className = 'xp-hud';
+  hudEl.setAttribute('aria-hidden', 'true'); // rein visuell — SR-Feedback via Live-Region
   document.body.appendChild(hudEl);
   return hudEl;
+}
+
+// Unsichtbare Live-Region: gibt XP-/Level-Feedback an Screenreader weiter,
+// da die fliegenden Chips/Overlays aria-hidden sind.
+function getLiveRegion() {
+  if (liveRegion && document.body.contains(liveRegion)) return liveRegion;
+  liveRegion = document.createElement('div');
+  liveRegion.className = 'sr-only';
+  liveRegion.setAttribute('aria-live', 'polite');
+  liveRegion.setAttribute('aria-atomic', 'true');
+  document.body.appendChild(liveRegion);
+  return liveRegion;
+}
+
+function announce(message) {
+  const region = getLiveRegion();
+  // Leeren → setzen, sonst wird identischer Folgetext nicht erneut vorgelesen.
+  region.textContent = '';
+  setTimeout(() => { region.textContent = message; }, 30);
 }
 
 function spawnXpChip(amount, anchor) {
   const chip = document.createElement('div');
   chip.className = 'xp-chip';
+  chip.setAttribute('aria-hidden', 'true');
   chip.textContent = `+${amount} XP`;
 
   // Position near anchor el or topbar
@@ -26,12 +48,16 @@ function spawnXpChip(amount, anchor) {
   chip.style.setProperty('--y', `${r.top + 10}px`);
 
   getHud().appendChild(chip);
-  chip.addEventListener('animationend', () => chip.remove(), { once: true });
+  const remove = () => chip.remove();
+  chip.addEventListener('animationend', remove, { once: true });
+  // Fallback: auch entfernen, falls animationend ausbleibt (animation 1.1s).
+  setTimeout(remove, 1500);
 }
 
 function showLevelUp(level, title) {
   const overlay = document.createElement('div');
   overlay.className = 'xp-levelup';
+  overlay.setAttribute('aria-hidden', 'true');
   overlay.innerHTML = `
     <div class="xp-levelup-inner">
       <div class="xp-levelup-label">Level Up!</div>
@@ -41,7 +67,11 @@ function showLevelUp(level, title) {
   `;
   document.body.appendChild(overlay);
   confettiBurst(overlay, { count: 30 });
-  overlay.addEventListener('animationend', () => overlay.remove(), { once: true });
+  // Nur das eigene Overlay-Ende zählt — animationend bubblet sonst vom
+  // schnelleren Inner-Pop (~0.6s) hoch und entfernt das 2.6s-Overlay zu früh.
+  const remove = () => overlay.remove();
+  overlay.addEventListener('animationend', (e) => { if (e.target === overlay) remove(); });
+  setTimeout(remove, 3000); // Fallback, falls animationend ausbleibt.
 }
 
 export function initXpHud() {
@@ -49,7 +79,11 @@ export function initXpHud() {
     const { amount, levelUp, level } = e.detail;
     spawnXpChip(amount);
     if (levelUp) {
-      setTimeout(() => showLevelUp(level, getLevelTitle(level)), 400);
+      const title = getLevelTitle(level);
+      announce(`Level ${level} erreicht: ${title}`);
+      setTimeout(() => showLevelUp(level, title), 400);
+    } else {
+      announce(`Plus ${amount} XP`);
     }
     // Aktualisiere XP-Balken in der Topbar, falls vorhanden
     updateXpBar(e.detail.total);

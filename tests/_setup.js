@@ -105,6 +105,9 @@ class FakeNode {
     child.parentNode = null;
     return child;
   }
+  remove() {
+    if (this.parentNode) this.parentNode.removeChild(this);
+  }
   setAttribute(k, v) { this._attrs[k] = String(v); }
   getAttribute(k) { return this._attrs[k] ?? null; }
   removeAttribute(k) { delete this._attrs[k]; }

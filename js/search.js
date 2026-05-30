@@ -28,6 +28,7 @@ let searchInput;
 let results;
 let activeIndex = 0;
 let flatItems = [];
+let lastFocused = null;
 
 function getRecent() {
   try {
@@ -274,6 +275,8 @@ function onKeydown(e) {
 }
 
 export function openSearch() {
+  // Auslösendes Element merken, um den Fokus beim Schließen zurückzugeben.
+  lastFocused = (typeof document !== 'undefined') ? document.activeElement : null;
   activeDialektFilter = null;
   overlay.classList.add('is-open');
   overlay.setAttribute('aria-hidden', 'false');
@@ -285,6 +288,21 @@ export function openSearch() {
 export function closeSearch() {
   overlay.classList.remove('is-open');
   overlay.setAttribute('aria-hidden', 'true');
+  restoreFocus();
+}
+
+// Fokus zurück auf das auslösende Element; Fallback auf den Such-Button im
+// Header (immer vorhanden), falls der Ursprung weg ist (z. B. nach Navigation).
+function restoreFocus() {
+  const prev = lastFocused;
+  lastFocused = null;
+  const fallback = (typeof document !== 'undefined') ? document.getElementById('searchOpen') : null;
+  const target = (prev && prev !== document.body && prev.isConnected !== false && typeof prev.focus === 'function')
+    ? prev
+    : fallback;
+  if (target && typeof target.focus === 'function') {
+    try { target.focus(); } catch { /* Element evtl. nicht mehr im DOM */ }
+  }
 }
 
 export function isSearchOpen() {

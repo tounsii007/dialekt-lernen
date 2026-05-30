@@ -8,6 +8,7 @@ import { el } from './dom.js';
 let activeBackdrop = null;
 let activePanel = null;
 let lastFocused = null;
+let activeOnClose = null;
 
 const FOCUSABLE_SEL = [
   'a[href]',
@@ -27,9 +28,11 @@ export function closeModal() {
   if (!activeBackdrop) return;
   const b = activeBackdrop;
   const toRestore = lastFocused;
+  const cb = activeOnClose;
   activeBackdrop = null;
   activePanel = null;
   lastFocused = null;
+  activeOnClose = null;
   b.classList.remove('is-open');
   setTimeout(() => b.remove(), 300);
   document.removeEventListener('keydown', onKeydown);
@@ -38,6 +41,9 @@ export function closeModal() {
   if (toRestore && typeof toRestore.focus === 'function') {
     try { toRestore.focus(); } catch { /* Element evtl. nicht mehr im DOM */ }
   }
+  // onClose feuert genau einmal bei jedem Schließen (ESC, Backdrop, ×, Action).
+  // Aufrufer unterscheiden „bestätigt" vs. „abgebrochen" über ein eigenes Flag.
+  if (cb) cb();
 }
 
 // ESC schließt; Tab/Shift+Tab bleiben im Panel gefangen (Focus-Trap).
@@ -73,6 +79,10 @@ export function openModal({ title, content, actions = [], onClose } = {}) {
   // Falls schon eines offen ist, erst schließen.
   if (activeBackdrop) closeModal();
 
+  // Auslösendes Element merken, um den Fokus beim Schließen wiederherzustellen.
+  lastFocused = (typeof document !== 'undefined') ? document.activeElement : null;
+  activeOnClose = onClose || null;
+
   const body = el('div', { class: 'kbd-overlay-body', style: { display: 'block' } });
   const children = Array.isArray(content) ? content : [content];
   children.forEach(c => { if (c) body.appendChild(c); });
@@ -80,7 +90,7 @@ export function openModal({ title, content, actions = [], onClose } = {}) {
   const closeBtn = el('button', {
     class: 'kbd-overlay-close',
     'aria-label': 'Schließen',
-    onClick: () => { closeModal(); if (onClose) onClose(); }
+    onClick: () => closeModal()
   }, '×');
 
   const actionRow = el('div', {
@@ -107,6 +117,7 @@ export function openModal({ title, content, actions = [], onClose } = {}) {
     role: 'dialog',
     'aria-modal': 'true',
     'aria-label': title || 'Dialog',
+    tabindex: '-1',
     onClick: (e) => e.stopPropagation()
   },
     el('div', { class: 'kbd-overlay-head' },
@@ -119,7 +130,7 @@ export function openModal({ title, content, actions = [], onClose } = {}) {
 
   const backdrop = el('div', {
     class: 'kbd-overlay-backdrop',
-    onClick: () => { closeModal(); if (onClose) onClose(); }
+    onClick: () => closeModal()
   }, panel);
 
   document.body.appendChild(backdrop);
@@ -128,7 +139,12 @@ export function openModal({ title, content, actions = [], onClose } = {}) {
   backdrop.classList.add('is-open');
 
   activeBackdrop = backdrop;
-  document.addEventListener('keydown', onEsc);
+  activePanel = panel;
+  document.addEventListener('keydown', onKeydown);
+
+  // Initialfokus in den Dialog setzen (Panel-Container → kündigt aria-label an,
+  // ohne versehentlich eine Aktion vorzubelegen).
+  try { panel.focus(); } catch { /* FakeDOM: focus() ist No-op */ }
 
   return backdrop;
 }
