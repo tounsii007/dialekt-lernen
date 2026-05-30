@@ -18,6 +18,7 @@ import ruhrdeutsch     from './dialekte/ruhrdeutsch.js';
 import alemannisch     from './dialekte/alemannisch.js';
 import pfaelzisch      from './dialekte/pfaelzisch.js';
 import tirolerisch     from './dialekte/tirolerisch.js';
+import saarlaendisch   from './dialekte/saarlaendisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -33,7 +34,8 @@ export const DIALEKTE = [
   ruhrdeutsch,
   alemannisch,
   pfaelzisch,
-  tirolerisch
+  tirolerisch,
+  saarlaendisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup
