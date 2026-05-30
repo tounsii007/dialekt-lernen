@@ -31,6 +31,14 @@ class FavoritesStore extends ChangeNotifier {
   bool isFavorite(String dialektId, String ausdruckId) =>
       _keys.contains(_key(dialektId, ausdruckId));
 
+  /// Nur für Tests: setzt den In-Memory-Zustand zurück, damit load() erneut
+  /// aus (gemockten) Prefs lesen kann.
+  @visibleForTesting
+  void debugReset() {
+    _keys.clear();
+    _loaded = false;
+  }
+
   /// Toggelt einen Favoriten und persistiert. Liefert true, wenn hinzugefügt.
   Future<bool> toggle(String dialektId, String ausdruckId) async {
     final key = _key(dialektId, ausdruckId);

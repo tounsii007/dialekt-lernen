@@ -161,7 +161,12 @@ class _QuizScreenState extends State<QuizScreen> {
           ),
         ),
         const SizedBox(height: AppSpacing.x5),
-        Container(
+        Expanded(
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
           padding: const EdgeInsets.all(AppSpacing.x5),
           decoration: BoxDecoration(
             color: surfaces.surface.withValues(alpha: 0.8),
@@ -204,7 +209,11 @@ class _QuizScreenState extends State<QuizScreen> {
           ),
           const SizedBox(height: AppSpacing.x3),
         ],
-        const Spacer(),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: AppSpacing.x3),
         if (answered)
           GradientButton(
             label: _index + 1 >= _questions.length ? 'Ergebnis' : 'Weiter',
