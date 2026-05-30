@@ -14,6 +14,7 @@ import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 import { initPwa } from './util/pwa.js';
 import { initNotifications } from './store/notifications.js';
 import { initXpHud, renderXpBar } from './util/xp-hud.js';
+import { initComboHud } from './util/combo-hud.js';
 import { getXp } from './store/xp.js';
 import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
@@ -224,6 +225,7 @@ function init() {
   initNotifications();
   initNetwork(toast);
   initXpHud();
+  initComboHud();
   initGoalEvents(toast);
   initChallenges();
   document.addEventListener('dialekto:challengeComplete', (e) => {

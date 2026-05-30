@@ -27,6 +27,7 @@ import {
 } from '../util/fsrs.js';
 import { optimize as fsrsOptimize, buildSequences } from '../util/fsrs-optimizer.js';
 import { applyFuzz } from '../util/fsrs-fuzz.js';
+import { registerComboHit, applyComboToXp } from '../util/combo.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -119,11 +120,14 @@ export function getCardSrs(dialektId, ausdruckId) {
 // Von beiden Schedulern (SM-2 und FSRS) genutzt, damit die Gamification
 // identisch bleibt, egal welcher Algorithmus terminiert. `isEasy` steuert nur
 // die XP-Höhe (Leicht = "gelernt", sonst = "wiederholt").
-function applyReviewSideEffects(dialektId, ausdruckId, isEasy) {
+function applyReviewSideEffects(dialektId, ausdruckId, isEasy, correct = true) {
   registerStreak();
-  const xpAmount = isEasy ? XP.cardLearned : XP.cardReviewed;
+  // Combo zuerst aktualisieren — ein korrektes Review steigert den Multiplikator,
+  // ein Fehler bricht die Serie. Der Multiplikator skaliert dann die XP.
+  const hit = registerComboHit(correct);
+  const baseXp = isEasy ? XP.cardLearned : XP.cardReviewed;
   const xpReason = isEasy ? 'card-learned' : 'card-reviewed';
-  awardXp(xpAmount, xpReason);
+  awardXp(applyComboToXp(baseXp, hit.multiplier), xpReason);
   // Wöchentliche Challenges tracken (lazy import, um Zyklen zu vermeiden).
   try {
     import('./challenges.js').then(m => m.trackCardReview(dialektId, ausdruckId, xpReason)).catch(() => {});
@@ -176,7 +180,8 @@ export function reviewCard(dialektId, ausdruckId, rating) {
   };
   state.gelernt[key] = record;
   persist();
-  applyReviewSideEffects(dialektId, ausdruckId, rating === RATING_EASY);
+  // Combo-Korrektheit: SM-2-Lapse ist q < 3 (Knopf „Schwer").
+  applyReviewSideEffects(dialektId, ausdruckId, rating === RATING_EASY, q >= 3);
   return record;
 }
 
@@ -393,7 +398,8 @@ export function reviewCardFsrs(dialektId, ausdruckId, grade, now = Date.now()) {
   // r=Retrievability beim Review, s/d = neue Stabilität/Difficulty.
   appendSrsLog({ key, t: now, g, r: Number(res.retrievability.toFixed(4)), s: c.stability, d: c.difficulty });
   persist();
-  applyReviewSideEffects(dialektId, ausdruckId, g >= GRADE_EASY);
+  // Combo-Korrektheit: nur „Again" (Grade 1) bricht die Serie; Hard/Good/Easy zählen.
+  applyReviewSideEffects(dialektId, ausdruckId, g >= GRADE_EASY, g > GRADE_AGAIN);
   return record;
 }
 

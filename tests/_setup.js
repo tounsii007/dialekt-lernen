@@ -8,9 +8,13 @@
 // echtes DOM-Verhalten braucht, soll er explizit mocken.
 
 import { state } from '../js/store/state.js';
+import { resetCombo } from '../js/util/combo.js';
 
 // State-Reset — alle Felder auf saubere Defaults.
 export function resetState() {
+  // Session-Combo ist modul-lokal (nicht im State) — pro Test zurücksetzen,
+  // damit ein Multiplikator aus einem vorherigen Test die XP nicht verfälscht.
+  resetCombo();
   state.theme = 'auto';
   state.favoriten = [];
   state.gelernt = {};

@@ -4819,6 +4819,99 @@ html.is-speaking .is-speakable {
 }
 
 /* ============================================================ */
+/* Iteration 8 — Session-Combo-Badge                            */
+/* ============================================================ */
+
+.combo-badge {
+  position: fixed;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-12px) scale(0.9);
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px 14px 6px 10px;
+  border-radius: 99px;
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--brand) 20%, var(--bg-elev)),
+    color-mix(in oklab, var(--accent) 14%, var(--bg-elev)));
+  border: 1.5px solid color-mix(in oklab, var(--brand) 36%, transparent);
+  box-shadow:
+    0 0 30px color-mix(in oklab, var(--brand) 24%, transparent),
+    0 8px 28px hsl(0 0% 0% / .28);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .28s var(--ease), transform .28s var(--ease-spring), visibility 0s linear .28s;
+}
+.combo-badge.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0) scale(1);
+  transition: opacity .28s var(--ease), transform .28s var(--ease-spring);
+}
+.combo-badge-flame {
+  font-size: 1.15rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 6px color-mix(in oklab, var(--accent) 60%, transparent));
+}
+.combo-badge-count {
+  font-weight: 800;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.combo-badge-mult {
+  font-weight: 800;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--bg);
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  padding: 2px 8px;
+  border-radius: 99px;
+  box-shadow: 0 0 12px color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+/* Pop on each hit */
+.combo-badge.is-bump { animation: comboBump .32s var(--ease-spring); }
+@keyframes comboBump {
+  0%   { transform: translateX(-50%) translateY(0) scale(1); }
+  40%  { transform: translateX(-50%) translateY(-3px) scale(1.09); }
+  100% { transform: translateX(-50%) translateY(0) scale(1); }
+}
+
+/* Bigger pop when crossing into a new multiplier tier */
+.combo-badge.is-tierup { animation: comboTierUp .6s var(--ease-spring); }
+@keyframes comboTierUp {
+  0%   { transform: translateX(-50%) translateY(0) scale(1); }
+  25%  { transform: translateX(-50%) translateY(-8px) scale(1.28); }
+  55%  { transform: translateX(-50%) translateY(0) scale(0.96); }
+  100% { transform: translateX(-50%) translateY(0) scale(1); }
+}
+
+/* Shake + desaturate when the combo breaks */
+.combo-badge.is-broken {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--danger) 22%, var(--bg-elev)),
+    var(--bg-elev));
+  border-color: color-mix(in oklab, var(--danger) 40%, transparent);
+  box-shadow: none;
+  animation: comboBreak .5s var(--ease);
+}
+@keyframes comboBreak {
+  0%   { transform: translateX(-50%) translateY(0) scale(1); }
+  15%  { transform: translateX(calc(-50% - 5px)) translateY(0) scale(1); }
+  30%  { transform: translateX(calc(-50% + 5px)) translateY(0) scale(0.98); }
+  45%  { transform: translateX(calc(-50% - 4px)) translateY(0) scale(0.97); }
+  60%  { transform: translateX(calc(-50% + 3px)) translateY(0) scale(0.96); }
+  100% { transform: translateX(-50%) translateY(2px) scale(0.92); }
+}
+
+/* ============================================================ */
 /* Iteration 21 — Multiple-Choice-Karteikarten                 */
 /* ============================================================ */
 
