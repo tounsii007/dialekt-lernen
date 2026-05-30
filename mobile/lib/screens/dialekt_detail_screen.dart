@@ -4,6 +4,7 @@ import '../data/models.dart';
 import '../data/repository.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
+import '../widgets/favorite_button.dart';
 import '../widgets/glass_card.dart';
 
 class DialektDetailScreen extends StatelessWidget {
@@ -106,6 +107,7 @@ class DialektDetailScreen extends StatelessWidget {
                   itemBuilder: (_, i) => _AusdruckTile(
                     ausdruck: dialekt.ausdruecke[i],
                     accent: dialekt.color,
+                    dialektId: dialekt.id,
                   ),
                 ),
               ),
@@ -118,10 +120,15 @@ class DialektDetailScreen extends StatelessWidget {
 }
 
 class _AusdruckTile extends StatelessWidget {
-  const _AusdruckTile({required this.ausdruck, required this.accent});
+  const _AusdruckTile({
+    required this.ausdruck,
+    required this.accent,
+    required this.dialektId,
+  });
 
   final Ausdruck ausdruck;
   final Color accent;
+  final String dialektId;
 
   @override
   Widget build(BuildContext context) {
@@ -149,9 +156,15 @@ class _AusdruckTile extends StatelessWidget {
               style: TextStyle(color: surfaces.textMuted, fontSize: 13.5),
             ),
           ),
-          trailing: Text(
-            repo.kategorieIcon(ausdruck.kategorie),
-            style: const TextStyle(fontSize: 18),
+          trailing: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                repo.kategorieIcon(ausdruck.kategorie),
+                style: const TextStyle(fontSize: 18),
+              ),
+              FavoriteButton(dialektId: dialektId, ausdruckId: ausdruck.id),
+            ],
           ),
           children: [
             if (ausdruck.bedeutung.isNotEmpty)

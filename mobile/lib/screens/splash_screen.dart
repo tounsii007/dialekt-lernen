@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../data/favorites_store.dart';
 import '../data/repository.dart';
 import '../theme/app_theme.dart';
 import '../widgets/brand_logo.dart';
@@ -57,6 +58,7 @@ class _SplashScreenState extends State<SplashScreen>
     final sw = Stopwatch()..start();
     try {
       await DialektRepository.instance.load();
+      await FavoritesStore.instance.load();
     } catch (_) {
       // Daten konnten nicht geladen werden — App startet trotzdem.
     }
