@@ -22,6 +22,7 @@ import saarlaendisch   from './dialekte/saarlaendisch.js';
 import ostfriesisch    from './dialekte/ostfriesisch.js';
 import badisch         from './dialekte/badisch.js';
 import vorarlbergerisch from './dialekte/vorarlbergerisch.js';
+import steirisch       from './dialekte/steirisch.js';
 
 export const DIALEKTE = [
   hessisch,
@@ -41,7 +42,8 @@ export const DIALEKTE = [
   saarlaendisch,
   ostfriesisch,
   badisch,
-  vorarlbergerisch
+  vorarlbergerisch,
+  steirisch
 ];
 
 // Schneller Index per ID für O(1)-Lookup
