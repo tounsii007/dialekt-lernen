@@ -9293,6 +9293,58 @@ img, svg, video {
   border-left: 3px solid color-mix(in oklab, var(--brand) 35%, var(--border));
 }
 
+/* Iteration 15 — Aussprache-Panel (IPA + Silben + Slow-Mo) */
+.pron-section {
+  padding: 10px 14px;
+  background: linear-gradient(135deg,
+      color-mix(in oklab, var(--brand) 7%, var(--bg-soft)),
+      var(--bg-soft));
+  border-radius: var(--r-md);
+  border: 1px dashed var(--border);
+}
+.pron-summary {
+  display: flex; align-items: center; gap: 8px;
+  cursor: pointer; list-style: none; user-select: none;
+}
+.pron-summary::-webkit-details-marker { display: none; }
+.pron-summary::after {
+  content: '▶'; font-size: .55rem; color: var(--text-muted);
+  margin-left: auto; transition: transform .18s var(--ease);
+}
+.pron-section[open] .pron-summary::after { transform: rotate(90deg); }
+.pron-icon { font-size: 1rem; }
+.pron-label {
+  font-weight: 700; color: var(--text);
+  text-transform: uppercase; letter-spacing: .04em; font-size: .76rem;
+}
+.pron-ipa-mini {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: .82rem; color: var(--text-soft);
+}
+.pron-body {
+  display: flex; flex-direction: column; gap: 12px;
+  margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.pron-ipa {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 1.25rem; font-weight: 600; color: var(--brand);
+  letter-spacing: .02em;
+}
+.pron-syllables { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
+.pron-syl {
+  font: inherit; font-weight: 600; font-size: .95rem;
+  padding: 4px 12px; border-radius: var(--r-pill);
+  border: 1px solid color-mix(in oklab, var(--brand) 30%, var(--border));
+  background: var(--bg-elev); color: var(--text);
+  cursor: pointer; transition: background .15s var(--ease), transform .12s var(--ease);
+}
+.pron-syl:hover { background: color-mix(in oklab, var(--brand) 16%, var(--bg-elev)); }
+.pron-syl:active { transform: scale(.94); }
+.pron-syl-sep { color: var(--text-muted); font-weight: 700; }
+.pron-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.pron-play { padding: 6px 16px; }
+
 /* ============================================================
  * Idiom-Explorer
  * ============================================================ */

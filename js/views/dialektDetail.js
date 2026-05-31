@@ -1,4 +1,4 @@
-import { el, go, normalize } from '../util.js';
+import { el, go, normalize, speak } from '../util.js';
 import { getDialekt } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
@@ -8,6 +8,8 @@ import { icon, emptyIllustration } from '../util/icons.js';
 import { buildIndex, searchIndex } from '../util/fuzzy.js';
 import { findRelatedExpressions } from '../util/related-expressions.js';
 import { extractEtymology, hasEtymology } from '../util/etymology.js';
+import { formatIpa, splitSyllables } from '../util/ipa.js';
+import { sfx } from '../util/sounds.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -128,6 +130,8 @@ export function renderDialektDetail(root, dialektId) {
     items.forEach(a => {
       const cardWrap = el('div', { class: 'expr-card-wrap' });
       cardWrap.appendChild(renderExpressionCard(a, d));
+      const pron = renderPronunciationSection(a, d);
+      if (pron) cardWrap.appendChild(pron);
       const etym = renderEtymologySection(a);
       if (etym) cardWrap.appendChild(etym);
       const related = renderRelatedSection(a, d);
@@ -187,6 +191,52 @@ function renderRelatedSection(a, dialekt) {
     ));
   }
   sec.appendChild(list);
+  return sec;
+}
+
+// Aussprache-Bereich: IPA-Lautschrift, Silbenzerlegung (klickbar) und
+// Wiedergabe in normalem sowie verlangsamtem Tempo (Slow-Mo).
+function renderPronunciationSection(a, dialekt) {
+  const lang = dialekt.lang || 'de-DE';
+  const ipa = formatIpa(a.ausdruck, dialekt.id);
+  const syllables = splitSyllables(a.ausdruck);
+
+  const sec = el('details', { class: 'pron-section' });
+  sec.appendChild(el('summary', { class: 'pron-summary' },
+    el('span', { class: 'pron-icon' }, '🔊'),
+    el('span', { class: 'pron-label' }, 'Aussprache'),
+    el('span', { class: 'pron-ipa-mini' }, ipa)
+  ));
+
+  const body = el('div', { class: 'pron-body' });
+
+  // Große IPA-Zeile
+  body.appendChild(el('div', { class: 'pron-ipa' }, ipa));
+
+  // Silben — klickbare Chips, jede einzeln langsam vorgesprochen.
+  if (syllables.length) {
+    const sylRow = el('div', { class: 'pron-syllables', role: 'group', ariaLabel: 'Silben' });
+    syllables.forEach((syl, idx) => {
+      if (idx > 0) sylRow.appendChild(el('span', { class: 'pron-syl-sep', ariaHidden: 'true' }, '·'));
+      sylRow.appendChild(el('button', {
+        class: 'pron-syl',
+        title: `„${syl}" langsam anhören`,
+        onClick: () => { sfx.click(); speak(syl, lang, { rate: 0.7 }); }
+      }, syl));
+    });
+    body.appendChild(sylRow);
+  }
+
+  // Wiedergabe-Buttons: normal + Slow-Mo.
+  body.appendChild(el('div', { class: 'pron-buttons' },
+    el('button', { class: 'btn btn-secondary pron-play',
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang); } }, '▶ Anhören'),
+    el('button', { class: 'btn btn-ghost pron-play',
+      title: 'Verlangsamt — Silbe für Silbe nachsprechen',
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5 }); } }, '🐢 Langsam')
+  ));
+
+  sec.appendChild(body);
   return sec;
 }
 
