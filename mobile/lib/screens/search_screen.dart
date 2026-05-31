@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../data/models.dart';
@@ -19,9 +21,21 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   final _controller = TextEditingController();
   String _query = '';
+  Timer? _debounce;
+
+  // Debounce: repo.search() scannt ~6700 Ausdrücke synchron im build —
+  // ohne Entprellung läuft das bei jedem Tastendruck und ruckelt.
+  void _onChanged(String v) {
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 150), () {
+      if (!mounted) return;
+      setState(() => _query = v);
+    });
+  }
 
   @override
   void dispose() {
+    _debounce?.cancel();
     _controller.dispose();
     super.dispose();
   }
@@ -60,7 +74,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       child: TextField(
                         controller: _controller,
                         autofocus: true,
-                        onChanged: (v) => setState(() => _query = v),
+                        onChanged: _onChanged,
                         decoration: InputDecoration(
                           hintText: 'Ausdruck oder Dialekt suchen…',
                           border: InputBorder.none,
@@ -69,6 +83,7 @@ class _SearchScreenState extends State<SearchScreen> {
                               ? IconButton(
                                   icon: const Icon(Icons.close_rounded),
                                   onPressed: () {
+                                    _debounce?.cancel();
                                     _controller.clear();
                                     setState(() => _query = '');
                                   },
