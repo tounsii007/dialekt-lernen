@@ -11,9 +11,15 @@ import { renderExpressionCard } from './partials.js';
 import { normalize } from '../util/text.js';
 import { emptyIllustration } from '../util/icons.js';
 
-// Redensart-Datensatz (alle Dialekte, nur kategorie === 'redensart')
+// Redensart-Datensatz (alle Dialekte, nur kategorie === 'redensart').
+// ALLE_AUSDRUECKE ist statisch → einmal filtern und cachen, statt pro Render
+// mehrfach über alle ~6700 Ausdrücke zu scannen.
+let _redensartenCache = null;
 function getRedensarten() {
-  return ALLE_AUSDRUECKE.filter(a => a.kategorie === 'redensart');
+  if (_redensartenCache === null) {
+    _redensartenCache = ALLE_AUSDRUECKE.filter(a => a.kategorie === 'redensart');
+  }
+  return _redensartenCache;
 }
 
 // Heuristische Cluster-Titel — gewählt anhand der hochdeutschen Bedeutung.
