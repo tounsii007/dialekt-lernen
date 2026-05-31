@@ -66,7 +66,16 @@ export function open(name = DB_NAME, version = DB_VERSION, upgrade) {
         reject(err);
       }
     };
-    req.onsuccess = () => resolve(req.result);
+    req.onsuccess = () => {
+      const db = req.result;
+      // Gecachte Verbindung freigeben, wenn sie geschlossen wird (anderer Tab
+      // triggert ein Upgrade → versionchange, oder Browser schließt bei
+      // Speicherdruck). Sonst bleibt ein geschlossenes db-Objekt im Cache und
+      // ein späterer tx()-Aufruf wirft InvalidStateError statt des Fallbacks.
+      db.onversionchange = () => { try { db.close(); } catch {} openCache.delete(cacheKey); };
+      db.onclose = () => { openCache.delete(cacheKey); };
+      resolve(db);
+    };
     req.onerror = () => reject(req.error || new Error('IDB open failed'));
     req.onblocked = () => reject(new Error('IDB open blocked'));
   });

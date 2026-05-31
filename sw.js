@@ -244,7 +244,9 @@ async function staleWhileRevalidate(req, cacheName) {
       if (resp.ok) cache.put(req, resp.clone());
       return resp;
     })
-    .catch(() => cached);
+    // Offline + nicht gecacht: kontrollierte 503 statt eines zu `undefined`
+    // aufgelösten Promise (respondWith(Promise<undefined>) → Netzwerkfehler).
+    .catch(() => cached || new Response('Offline', { status: 503, statusText: 'Service Unavailable' }));
   return cached || fetchPromise;
 }
 
