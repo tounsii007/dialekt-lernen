@@ -174,10 +174,12 @@ function startGame(difficulty, pool) {
   root.innerHTML = '';
   root.appendChild(renderGameView(game));
 
-  // Timer aktualisieren
+  // Timer aktualisieren — stoppt sich selbst, sobald die Spiel-View weg ist
+  // (Router ersetzt #app via innerHTML; sonst liefe das Intervall ewig weiter).
   game.timerInterval = setInterval(() => {
     const el = root.querySelector('[data-mem-timer]');
-    if (el) el.textContent = formatElapsed(Date.now() - game.startTime);
+    if (!el || activeGame !== game) { clearInterval(game.timerInterval); return; }
+    el.textContent = formatElapsed(Date.now() - game.startTime);
   }, 500);
 }
 

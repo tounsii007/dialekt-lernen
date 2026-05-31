@@ -41,6 +41,9 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
   function startTimer(optsBtns) {
     if (!timerEnabled || !timerSvg) return;
     timerInterval = setInterval(() => {
+      // Selbst-Stopp, falls die Quiz-View nicht mehr im DOM ist (Router-Wechsel)
+      // — sonst laufen Tick-Sound und Auto-Antwort im Hintergrund weiter.
+      if (!timerSvg.isConnected) { stopTimer(); return; }
       remaining--;
       updateTimer(timerSvg, remaining, TIMER_SECONDS, CIRCUM);
       if (remaining <= 5 && remaining > 0) sfx.click(); // tick sound

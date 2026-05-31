@@ -68,8 +68,9 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
-    // Auto-play beim Erscheinen
-    setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
+    // Auto-play beim Erscheinen (nur falls Karte noch im DOM — sonst spricht
+    // sie nach schnellem Weiterklicken/Navigieren im Hintergrund)
+    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
   } else if (mode === 'cloze') {
     // Lückentext: Beispielsatz mit ausgeschnittenem Ausdruck
     const { before, hidden, after, found } = buildCloze(c.beispiel || '', c.ausdruck);
@@ -302,8 +303,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       hRow.appendChild(btn);
     });
     front.appendChild(hRow);
-    // Auto-play beim Erscheinen
-    setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
+    // Auto-play beim Erscheinen (nur falls Karte noch im DOM)
+    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
@@ -353,8 +354,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       vRow.appendChild(btn);
     });
     front.appendChild(vRow);
-    // Auto-play Hochdeutsch
-    setTimeout(() => speak(c.hochdeutsch, 'de-DE'), 200);
+    // Auto-play Hochdeutsch (nur falls Karte noch im DOM)
+    setTimeout(() => { if (card.isConnected) speak(c.hochdeutsch, 'de-DE'); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
