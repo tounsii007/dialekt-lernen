@@ -18,6 +18,7 @@ import 'goals_screen.dart';
 import 'quests_screen.dart';
 import 'search_screen.dart';
 import 'settings_screen.dart';
+import 'spiele_screen.dart';
 import 'statistik_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -48,14 +49,24 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const BrandLogo(size: 38),
                 const SizedBox(width: AppSpacing.x3),
-                Text(
-                  'Dialekto',
-                  style: GoogleFonts.fraunces(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
+                Expanded(
+                  child: Text(
+                    'Dialekto',
+                    overflow: TextOverflow.ellipsis,
+                    style: GoogleFonts.fraunces(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 ),
-                const Spacer(),
+                IconButton(
+                  tooltip: 'Spiele',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const SpieleScreen()),
+                  ),
+                  icon: Icon(Icons.videogame_asset_rounded,
+                      color: surfaces.textMuted),
+                ),
                 IconButton(
                   tooltip: 'Statistik',
                   onPressed: () => Navigator.of(context).push(
