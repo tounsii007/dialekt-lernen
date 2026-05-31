@@ -72,6 +72,7 @@ flutter:
   assets:
     - assets/data/dialekte.json
     - assets/data/kategorien.json
+    - assets/data/lektionen.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

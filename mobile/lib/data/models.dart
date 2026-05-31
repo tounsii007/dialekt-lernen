@@ -119,3 +119,44 @@ class Kategorie {
     );
   }
 }
+
+/// Verweis auf einen Ausdruck (für verwandte Ausdrücke in Lektionen).
+typedef AusdruckRef = ({String dialektId, String id});
+
+/// Eine Mini-Lektion (Artikel) über Sprache/Kultur/Geschichte der Dialekte.
+@immutable
+class Lektion {
+  const Lektion({
+    required this.id,
+    required this.title,
+    required this.kategorie,
+    required this.dialekte,
+    required this.emoji,
+    required this.summary,
+    required this.content,
+    required this.relatedExpressions,
+  });
+
+  final String id;
+  final String title;
+  final String kategorie; // 'sprache' | 'geschichte' | 'kultur' | 'regionen'
+  final List<String> dialekte;
+  final String emoji;
+  final String summary;
+  final String content; // Markdown-leicht (## Headlines, Leerzeilen = Absätze)
+  final List<AusdruckRef> relatedExpressions;
+
+  factory Lektion.fromJson(Map<String, dynamic> j) => Lektion(
+        id: _str(j['id']),
+        title: _str(j['title']),
+        kategorie: _str(j['kategorie']),
+        dialekte: _list(j['dialekte']).map(_str).toList(),
+        emoji: _str(j['emoji']).isEmpty ? '📖' : _str(j['emoji']),
+        summary: _str(j['summary']),
+        content: _str(j['content']),
+        relatedExpressions: _list(j['relatedExpressions'])
+            .whereType<Map<String, dynamic>>()
+            .map((r) => (dialektId: _str(r['dialektId']), id: _str(r['id'])))
+            .toList(),
+      );
+}

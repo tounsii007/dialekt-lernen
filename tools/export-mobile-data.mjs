@@ -5,6 +5,7 @@
 // Aufruf:  node tools/export-mobile-data.mjs
 // Ausgabe: mobile/assets/data/dialekte.json
 //          mobile/assets/data/kategorien.json
+//          mobile/assets/data/lektionen.json
 
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -12,6 +13,7 @@ import { dirname, join } from 'node:path';
 
 import { DIALEKTE } from '../data/dialekte.js';
 import { KATEGORIEN } from '../data/kategorien.js';
+import { LEKTIONEN } from '../js/data/lektionen.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -45,6 +47,20 @@ const kategorien = Array.isArray(KATEGORIEN)
   ? KATEGORIEN
   : Object.entries(KATEGORIEN ?? {}).map(([id, v]) => ({ id, ...v }));
 
+// Mini-Lektionen (Artikel) — schlanke, stabile Struktur für die App.
+const lektionen = (LEKTIONEN ?? []).map((l) => ({
+  id: l.id,
+  title: l.title,
+  kategorie: l.kategorie ?? '',
+  dialekte: Array.isArray(l.dialekte) ? l.dialekte : [],
+  emoji: l.emoji ?? '📖',
+  summary: l.summary ?? '',
+  content: l.content ?? '',
+  relatedExpressions: Array.isArray(l.relatedExpressions)
+    ? l.relatedExpressions.map((r) => ({ dialektId: r.dialektId, id: r.id }))
+    : [],
+}));
+
 const totalAusdruecke = dialekte.reduce((n, d) => n + d.ausdruecke.length, 0);
 
 writeFileSync(
@@ -57,5 +73,12 @@ writeFileSync(
   JSON.stringify({ version: 1, kategorien }, null, 0),
   'utf8',
 );
+writeFileSync(
+  join(OUT_DIR, 'lektionen.json'),
+  JSON.stringify({ version: 1, lektionen }, null, 0),
+  'utf8',
+);
 
-console.log(`✓ ${dialekte.length} Dialekte · ${totalAusdruecke} Ausdrücke → mobile/assets/data/`);
+console.log(
+  `✓ ${dialekte.length} Dialekte · ${totalAusdruecke} Ausdrücke · ${lektionen.length} Lektionen → mobile/assets/data/`,
+);

@@ -12,10 +12,12 @@ class DialektRepository {
 
   List<Dialekt> _dialekte = const [];
   List<Kategorie> _kategorien = const [];
+  List<Lektion> _lektionen = const [];
   bool _loaded = false;
 
   List<Dialekt> get dialekte => _dialekte;
   List<Kategorie> get kategorien => _kategorien;
+  List<Lektion> get lektionen => _lektionen;
   bool get isLoaded => _loaded;
 
   int get totalAusdruecke =>
@@ -102,6 +104,17 @@ class DialektRepository {
     _kategorien = ((kJson['kategorien'] ?? []) as List)
         .map((e) => Kategorie.fromJson(e as Map<String, dynamic>))
         .toList();
+
+    // Lektionen sind optional — fehlt das Asset, bleibt die Liste leer.
+    try {
+      final lRaw = await rootBundle.loadString('assets/data/lektionen.json');
+      final lJson = json.decode(lRaw) as Map<String, dynamic>;
+      _lektionen = ((lJson['lektionen'] ?? []) as List)
+          .map((e) => Lektion.fromJson(e as Map<String, dynamic>))
+          .toList();
+    } catch (_) {
+      _lektionen = const [];
+    }
 
     _loaded = true;
   }
