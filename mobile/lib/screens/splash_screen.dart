@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/favorites_store.dart';
 import '../data/repository.dart';
@@ -113,7 +112,7 @@ class _SplashScreenState extends State<SplashScreen>
                         AppColors.brandGradient.createShader(bounds),
                     child: Text(
                       'Dialekto',
-                      style: GoogleFonts.fraunces(
+                      style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                         fontSize: 40,
                         fontWeight: FontWeight.w700,
                         color: Colors.white,
@@ -123,7 +122,7 @@ class _SplashScreenState extends State<SplashScreen>
                   const SizedBox(height: AppSpacing.x2),
                   Text(
                     'Deutsche Dialekte lernen',
-                    style: GoogleFonts.inter(
+                    style: const TextStyle(fontFamily: 'Inter').copyWith(
                       fontSize: 14,
                       color: Colors.white.withValues(alpha: 0.7),
                       letterSpacing: 0.3,

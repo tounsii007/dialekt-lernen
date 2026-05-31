@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/repository.dart';
 import '../theme/app_theme.dart';
@@ -41,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(width: AppSpacing.x3),
                 Text(
                   'Dialekto',
-                  style: GoogleFonts.fraunces(
+                  style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                     fontSize: 22,
                     fontWeight: FontWeight.w700,
                   ),
@@ -89,7 +88,7 @@ class HomeScreen extends StatelessWidget {
             // Headline mit Gradient-Wort
             RichText(
               text: TextSpan(
-                style: GoogleFonts.fraunces(
+                style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                   fontSize: 34,
                   height: 1.1,
                   fontWeight: FontWeight.w700,
@@ -99,7 +98,7 @@ class HomeScreen extends StatelessWidget {
                   const TextSpan(text: 'Lerne Dialekte aus '),
                   TextSpan(
                     text: 'ganz Deutschland',
-                    style: GoogleFonts.fraunces(
+                    style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                       fontSize: 34,
                       height: 1.1,
                       fontWeight: FontWeight.w700,
@@ -213,7 +212,7 @@ class _Stat extends StatelessWidget {
             shaderCallback: (b) => AppColors.brandGradient.createShader(b),
             child: Text(
               value,
-              style: GoogleFonts.fraunces(
+              style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                 fontSize: 28,
                 fontWeight: FontWeight.w700,
                 color: Colors.white,

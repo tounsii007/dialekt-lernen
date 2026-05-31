@@ -5,13 +5,13 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'package:dialekto/theme/app_theme.dart';
 
-void useTestFonts() {
-  GoogleFonts.config.allowRuntimeFetching = false;
-}
+// No-op: Fonts werden inzwischen als Assets gebündelt (kein google_fonts mehr),
+// es gibt also kein Laufzeit-Fetching, das in Tests deaktiviert werden müsste.
+// Funktion bleibt erhalten, damit bestehende Test-Setups sie weiter aufrufen können.
+void useTestFonts() {}
 
 ThemeData testTheme() {
   final base = ThemeData(brightness: Brightness.dark, useMaterial3: true);

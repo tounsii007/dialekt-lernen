@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/models.dart';
 import '../data/repository.dart';
@@ -263,7 +262,7 @@ class _QuizScreenState extends State<QuizScreen> {
             shaderCallback: (b) => AppColors.brandGradient.createShader(b),
             child: Text(
               '$pct%',
-              style: GoogleFonts.fraunces(
+              style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                 fontSize: 56,
                 fontWeight: FontWeight.w700,
                 color: Colors.white,
