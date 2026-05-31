@@ -7,6 +7,7 @@ import '../widgets/aurora_background.dart';
 import '../widgets/brand_logo.dart';
 import '../widgets/dialekt_card.dart';
 import '../widgets/gradient_button.dart';
+import '../widgets/progress_hud.dart';
 import 'dialekt_detail_screen.dart';
 import 'search_screen.dart';
 import 'settings_screen.dart';
@@ -63,6 +64,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(height: AppSpacing.x5),
+
+            // Fortschritts-HUD: Level, XP, Streak
+            const ProgressHud(),
             const SizedBox(height: AppSpacing.x6),
 
             // Eyebrow

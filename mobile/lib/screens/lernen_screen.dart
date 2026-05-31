@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import '../data/models.dart';
 import '../data/repository.dart';
 import '../data/srs_store.dart';
+import '../data/streak_store.dart';
+import '../data/xp_store.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
@@ -95,6 +97,8 @@ class _LernenScreenState extends State<LernenScreen>
   Future<void> _rate(int rating) async {
     final card = _session[_index];
     await SrsStore.instance.review(card.key, rating);
+    await StreakStore.instance.register();
+    await XpStore.instance.award(XpReward.cardReviewed, 'card-reviewed');
     _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
     if (_index + 1 >= _session.length) {
       setState(() => _finished = true);
