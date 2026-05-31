@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../util/comparison.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/glass_card.dart';
+import '../widgets/skeleton.dart';
 import '../widgets/speak_button.dart';
 import 'dialekt_detail_screen.dart';
 
@@ -49,7 +50,7 @@ class _VergleichScreenState extends State<VergleichScreen> {
     return AuroraBackground(
       child: SafeArea(
         child: _groups == null
-            ? const Center(child: CircularProgressIndicator())
+            ? const SkeletonCardList()
             : _buildContent(context, _groups!),
       ),
     );

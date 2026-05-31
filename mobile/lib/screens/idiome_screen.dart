@@ -5,6 +5,7 @@ import '../theme/app_theme.dart';
 import '../util/idiome.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/glass_card.dart';
+import '../widgets/skeleton.dart';
 import '../widgets/speak_button.dart';
 import 'dialekt_detail_screen.dart';
 
@@ -42,7 +43,7 @@ class _IdiomeScreenState extends State<IdiomeScreen> {
     return AuroraBackground(
       child: SafeArea(
         child: _clusters == null
-            ? const Center(child: CircularProgressIndicator())
+            ? const SkeletonCardList()
             : (_selected == null
                 ? _overview(context, _clusters!)
                 : _detail(context, _selected!)),

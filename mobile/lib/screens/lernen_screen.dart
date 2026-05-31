@@ -39,6 +39,7 @@ class _LernenScreenState extends State<LernenScreen>
   bool _showBack = false;
   bool _finished = false;
   bool _studyAhead = false;
+  double _dragDx = 0; // horizontale Wisch-Distanz (Swipe-to-Rate)
   final Map<int, int> _ratings = {}; // rating -> count
 
   @override
@@ -95,6 +96,7 @@ class _LernenScreenState extends State<LernenScreen>
       _showBack = false;
       _finished = _session.isEmpty;
       _studyAhead = studyAhead;
+      _dragDx = 0;
       _ratings.clear();
     });
     _flip.reset();
@@ -148,8 +150,21 @@ class _LernenScreenState extends State<LernenScreen>
     setState(() {
       _index++;
       _showBack = false;
+      _dragDx = 0;
     });
     _flip.reset();
+  }
+
+  /// Wisch-Geste auswerten: weit genug rechts → Leicht, links → Nochmal.
+  void _onSwipeEnd() {
+    const threshold = 90.0;
+    if (_dragDx > threshold) {
+      _rate(gradeEasy);
+    } else if (_dragDx < -threshold) {
+      _rate(gradeAgain);
+    } else {
+      setState(() => _dragDx = 0);
+    }
   }
 
   @override
@@ -210,41 +225,71 @@ class _LernenScreenState extends State<LernenScreen>
             child: Center(
               child: GestureDetector(
                 onTap: _toggle,
-                child: AnimatedBuilder(
-                  animation: _flip,
-                  builder: (context, _) {
-                    final angle = _flip.value * math.pi;
-                    final isBack = angle > math.pi / 2;
-                    return Transform(
-                      alignment: Alignment.center,
-                      transform: Matrix4.identity()
-                        ..setEntry(3, 2, 0.001)
-                        ..rotateY(angle),
-                      child: isBack
-                          ? Transform(
+                onHorizontalDragUpdate: _showBack
+                    ? (d) => setState(() => _dragDx += d.delta.dx)
+                    : null,
+                onHorizontalDragEnd: _showBack ? (_) => _onSwipeEnd() : null,
+                child: Transform.translate(
+                  offset: Offset(_dragDx, 0),
+                  child: Transform.rotate(
+                    angle: _dragDx * 0.0009,
+                    child: Stack(
+                      alignment: Alignment.topCenter,
+                      children: [
+                        AnimatedBuilder(
+                          animation: _flip,
+                          builder: (context, _) {
+                            final angle = _flip.value * math.pi;
+                            final isBack = angle > math.pi / 2;
+                            return Transform(
                               alignment: Alignment.center,
-                              transform: Matrix4.identity()..rotateY(math.pi),
-                              child: _CardFace(
-                                title: card.ausdruck.hochdeutsch,
-                                subtitle: card.ausdruck.bedeutung,
-                                accent: AppColors.accent,
-                                tag: 'Hochdeutsch',
-                              ),
-                            )
-                          : _CardFace(
-                              title: card.ausdruck.ausdruck,
-                              subtitle: card.ausdruck.beispiel.isNotEmpty
-                                  ? '„${card.ausdruck.beispiel}"'
-                                  : 'Tippen zum Umdrehen',
-                              accent: AppColors.brand,
-                              tag: 'Dialekt',
-                            ),
-                    );
-                  },
+                              transform: Matrix4.identity()
+                                ..setEntry(3, 2, 0.001)
+                                ..rotateY(angle),
+                              child: isBack
+                                  ? Transform(
+                                      alignment: Alignment.center,
+                                      transform: Matrix4.identity()
+                                        ..rotateY(math.pi),
+                                      child: _CardFace(
+                                        title: card.ausdruck.hochdeutsch,
+                                        subtitle: card.ausdruck.bedeutung,
+                                        accent: AppColors.accent,
+                                        tag: 'Hochdeutsch',
+                                      ),
+                                    )
+                                  : _CardFace(
+                                      title: card.ausdruck.ausdruck,
+                                      subtitle: card.ausdruck.beispiel.isNotEmpty
+                                          ? '„${card.ausdruck.beispiel}"'
+                                          : 'Tippen zum Umdrehen',
+                                      accent: AppColors.brand,
+                                      tag: 'Dialekt',
+                                    ),
+                            );
+                          },
+                        ),
+                        if (_showBack && _dragDx.abs() > 24)
+                          Positioned(
+                            top: 12,
+                            child: _SwipeHint(toEasy: _dragDx > 0),
+                          ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
+          if (_showBack)
+            Padding(
+              padding: const EdgeInsets.only(top: AppSpacing.x2),
+              child: Text(
+                '← wischen: Nochmal · Leicht: wischen →',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 11, color: surfaces.textMuted),
+              ),
+            ),
           const SizedBox(height: AppSpacing.x4),
           if (!_showBack)
             GradientButton(
@@ -445,6 +490,32 @@ class _ComboBadge extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+/// Richtungs-Hinweis beim Wischen der Karte (Leicht rechts / Nochmal links).
+class _SwipeHint extends StatelessWidget {
+  const _SwipeHint({required this.toEasy});
+  final bool toEasy;
+
+  @override
+  Widget build(BuildContext context) {
+    final color = toEasy ? AppColors.success : AppColors.danger;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        boxShadow: [
+          BoxShadow(color: color.withValues(alpha: 0.5), blurRadius: 16),
+        ],
+      ),
+      child: Text(
+        toEasy ? 'Leicht ✓' : 'Nochmal ✗',
+        style: const TextStyle(
+            color: Colors.white, fontWeight: FontWeight.w700, fontSize: 13),
+      ),
     );
   }
 }

@@ -149,6 +149,14 @@ class AppTheme {
       iconTheme: IconThemeData(color: text),
       splashColor: AppColors.brand.withValues(alpha: 0.12),
       highlightColor: AppColors.brand.withValues(alpha: 0.06),
+      // Sanfte, plattformübergreifende Seitenübergänge.
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: ZoomPageTransitionsBuilder(),
+          TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
+        },
+      ),
       extensions: <ThemeExtension<dynamic>>[
         AppSurfaces(
           surface: surface,
