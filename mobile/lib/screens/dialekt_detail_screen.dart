@@ -4,6 +4,8 @@ import '../data/achievements_store.dart';
 import '../data/models.dart';
 import '../data/notes_store.dart';
 import '../data/xp_store.dart';
+import '../services/tts_service.dart';
+import '../util/ipa.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/deck_note_actions.dart';
@@ -232,6 +234,13 @@ class _AusdruckTile extends StatelessWidget {
               ),
             ],
             const SizedBox(height: AppSpacing.x3),
+            _Phonetics(
+              text: ausdruck.ausdruck,
+              dialektId: dialektId,
+              lang: lang,
+              accent: accent,
+            ),
+            const SizedBox(height: AppSpacing.x3),
             _TileActions(
               dialektId: dialektId,
               ausdruckId: ausdruck.id,
@@ -240,6 +249,65 @@ class _AusdruckTile extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Aussprache-Hilfe: IPA-Transkription, Silbentrennung und Slow-Mo-Wiedergabe.
+class _Phonetics extends StatelessWidget {
+  const _Phonetics({
+    required this.text,
+    required this.dialektId,
+    required this.lang,
+    required this.accent,
+  });
+
+  final String text;
+  final String dialektId;
+  final String lang;
+  final Color accent;
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    final ipa = formatIpa(text, dialektId);
+    final syllables = splitSyllables(text);
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(AppSpacing.x3),
+      decoration: BoxDecoration(
+        color: surfaces.surface.withValues(alpha: 0.5),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        border: Border.all(color: surfaces.border),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(ipa,
+                    style: TextStyle(fontSize: 14.5, color: accent)),
+                if (syllables.length > 1) ...[
+                  const SizedBox(height: 3),
+                  Text(
+                    syllables.join(' · '),
+                    style:
+                        TextStyle(fontSize: 12.5, color: surfaces.textMuted),
+                  ),
+                ],
+              ],
+            ),
+          ),
+          IconButton(
+            visualDensity: VisualDensity.compact,
+            tooltip: 'Langsam vorlesen',
+            onPressed: () => TtsService.instance.speakSlow(text, lang: lang),
+            icon: Icon(Icons.slow_motion_video_rounded,
+                size: 20, color: surfaces.textMuted),
+          ),
+        ],
       ),
     );
   }
