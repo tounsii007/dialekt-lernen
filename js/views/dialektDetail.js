@@ -1,4 +1,4 @@
-import { el, go, normalize } from '../util.js';
+import { el, go, normalize, debounce } from '../util.js';
 import { getDialekt } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
@@ -107,8 +107,25 @@ export function renderDialektDetail(root, dialektId) {
     { key: 'bedeutung',   weight: 1.0 }
   ]);
 
+  // Lazy-Observer für „verwandte Ausdrücke": findRelatedExpressions scannt
+  // ALLE_AUSDRUECKE pro Karte — wir berechnen das erst, wenn die Karte in den
+  // Viewport scrollt, statt für jede Karte beim Listen-Render (sonst Long-Task).
+  let relatedObserver = null;
+
   function render() {
     grid.innerHTML = '';
+    if (relatedObserver) { relatedObserver.disconnect(); relatedObserver = null; }
+    if ('IntersectionObserver' in window) {
+      relatedObserver = new IntersectionObserver((entries, obs) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          const ph = e.target;
+          obs.unobserve(ph);
+          const sec = renderRelatedSection(ph._expr, d);
+          if (sec) ph.replaceWith(sec); else ph.remove();
+        }
+      }, { rootMargin: '300px' });
+    }
     const raw = term.trim();
     let pool = activeCat === 'all' ? d.ausdruecke : d.ausdruecke.filter(a => a.kategorie === activeCat);
     let items;
@@ -130,8 +147,15 @@ export function renderDialektDetail(root, dialektId) {
       cardWrap.appendChild(renderExpressionCard(a, d));
       const etym = renderEtymologySection(a);
       if (etym) cardWrap.appendChild(etym);
-      const related = renderRelatedSection(a, d);
-      if (related) cardWrap.appendChild(related);
+      if (relatedObserver) {
+        const ph = el('div', { class: 'related-placeholder' });
+        ph._expr = a;
+        cardWrap.appendChild(ph);
+        relatedObserver.observe(ph);
+      } else {
+        const related = renderRelatedSection(a, d);
+        if (related) cardWrap.appendChild(related);
+      }
       grid.appendChild(cardWrap);
     });
   }
@@ -143,25 +167,32 @@ export function renderDialektDetail(root, dialektId) {
     activeCat = c.dataset.cat;
     render();
   }));
-  toolbar.querySelector('input').addEventListener('input', (e) => { term = e.target.value; render(); });
+  const debouncedRender = debounce(render, 160);
+  toolbar.querySelector('input').addEventListener('input', (e) => { term = e.target.value; debouncedRender(); });
 
   root.appendChild(view);
 }
 
+// Cache: findRelatedExpressions scannt ALLE_AUSDRUECKE — pro Ausdruck nur einmal.
+const _relatedCache = new Map();
+
 // „Siehe auch": findet bis zu 5 verwandte Ausdrücke aus anderen Dialekten.
 function renderRelatedSection(a, dialekt) {
-  // Wir brauchen ein vollständiges Entry-Objekt mit dialektId/hochdeutsch.
-  const entry = {
-    dialektId: dialekt.id,
-    id: a.id,
-    hochdeutsch: a.hochdeutsch,
-    kategorie: a.kategorie,
-  };
-  let related;
-  try {
-    related = findRelatedExpressions(entry, 5);
-  } catch {
-    related = [];
+  const cacheKey = `${dialekt.id}.${a.id}`;
+  let related = _relatedCache.get(cacheKey);
+  if (related === undefined) {
+    const entry = {
+      dialektId: dialekt.id,
+      id: a.id,
+      hochdeutsch: a.hochdeutsch,
+      kategorie: a.kategorie,
+    };
+    try {
+      related = findRelatedExpressions(entry, 5);
+    } catch {
+      related = [];
+    }
+    _relatedCache.set(cacheKey, related);
   }
   if (!related || related.length === 0) return null;
 

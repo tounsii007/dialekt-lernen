@@ -45,17 +45,28 @@ const PRECACHE_URLS = [
   './js/util.js',
   './js/version.js',
   './data/dialekte/alemannisch.js',
+  './data/dialekte/badisch.js',
   './data/dialekte/bayerisch.js',
   './data/dialekte/berlinisch.js',
+  './data/dialekte/brandenburgisch.js',
   './data/dialekte/fraenkisch.js',
   './data/dialekte/hessisch.js',
+  './data/dialekte/kaerntnerisch.js',
   './data/dialekte/koelsch.js',
+  './data/dialekte/mecklenburgisch.js',
+  './data/dialekte/oberpfaelzisch.js',
+  './data/dialekte/ostfriesisch.js',
   './data/dialekte/pfaelzisch.js',
   './data/dialekte/plattdeutsch.js',
   './data/dialekte/ruhrdeutsch.js',
+  './data/dialekte/saarlaendisch.js',
   './data/dialekte/saechsisch.js',
   './data/dialekte/schwaebisch.js',
   './data/dialekte/schwizerduetsch.js',
+  './data/dialekte/steirisch.js',
+  './data/dialekte/thueringisch.js',
+  './data/dialekte/tirolerisch.js',
+  './data/dialekte/vorarlbergerisch.js',
   './data/dialekte/wienerisch.js',
   './js/data/lektionen.js',
   './js/store/achievements.js',
@@ -86,6 +97,7 @@ const PRECACHE_URLS = [
   './js/util/etymology.js',
   './js/util/feedback.js',
   './js/util/forgetting-curve.js',
+  './js/util/fsrs.js',
   './js/util/fuzzy.js',
   './js/util/hangman.js',
   './js/util/i18n.js',
@@ -232,7 +244,9 @@ async function staleWhileRevalidate(req, cacheName) {
       if (resp.ok) cache.put(req, resp.clone());
       return resp;
     })
-    .catch(() => cached);
+    // Offline + nicht gecacht: kontrollierte 503 statt eines zu `undefined`
+    // aufgelösten Promise (respondWith(Promise<undefined>) → Netzwerkfehler).
+    .catch(() => cached || new Response('Offline', { status: 503, statusText: 'Service Unavailable' }));
   return cached || fetchPromise;
 }
 

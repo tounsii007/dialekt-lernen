@@ -211,21 +211,19 @@ export function trackCardReview(dialektId, ausdruckId, reason) {
   if (dirty) persist();
 }
 
-// Listener auf XP-Events anbringen — wird einmal beim App-Boot aufgerufen.
-let listenerAttached = false;
+// Initialisiert die Wochen-Challenges — wird einmal beim App-Boot aufgerufen.
+//
+// Das Challenge-Tracking läuft NICHT über das 'dialekto:xp'-Event: dessen detail
+// trägt nur { amount, reason, total, levelUp, level } (siehe xp.js), aber keine
+// dialektId/ausdruckId. Stattdessen ruft reviewCard()/setLernstand explizit
+// trackCardReview(dialektId, ausdruckId, reason) auf (srs.js) — das ist der
+// einzige, autoritative Tracking-Pfad. Ein leerer XP-Listener wäre toter Code,
+// der fälschlich Aktivität suggeriert, daher bewusst weggelassen.
+let initialized = false;
 export function initChallenges() {
-  if (listenerAttached) return;
-  listenerAttached = true;
+  if (initialized) return;
+  initialized = true;
   rollWeek();
-  if (typeof document === 'undefined') return;
-  document.addEventListener('dialekto:xp', (e) => {
-    const d = e.detail || {};
-    if (d.reason !== 'card-learned' && d.reason !== 'card-reviewed') return;
-    // Wir haben hier dialektId/ausdruckId nicht direkt — aber der jüngste
-    // gelernt-Eintrag wurde gerade geschrieben. Stattdessen explizit über
-    // trackCardReview() aus setLernstand/reviewCard aufrufen wäre sauberer;
-    // hier nutzen wir den XP-Hook als Fallback.
-  });
 }
 
 // Convenience: alle Challenges samt Progress (für UI).

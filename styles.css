@@ -3700,6 +3700,11 @@ html.is-speaking .fc-big-speak {
   transform: translateY(-2px);
   box-shadow: 0 10px 24px color-mix(in oklab, var(--dc) 28%, transparent);
 }
+/* role="button"-Zelle (div) hat keinen nativen Fokusring — explizit ergänzen */
+.compare-cell:focus-visible {
+  outline: 2px solid var(--dc);
+  outline-offset: 2px;
+}
 .compare-cell-flag {
   font-size: 1.5rem;
   flex-shrink: 0;

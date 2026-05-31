@@ -75,9 +75,15 @@ export function getSpeechStatus(lang = 'de-DE') {
   };
 }
 
+// Handle des harten onend-Fallback-Timers. Modulweit, damit ein neues speak()
+// (oder onend/onerror) den Timer der vorigen Äußerung clearen kann — sonst
+// beendet ein veralteter Timer den Sprechzustand einer NEUEN Äußerung zu früh.
+let _fallbackTimer = null;
+
 export function speak(text, lang = 'de-DE') {
   if (!isSpeechSupported()) return false;
   try {
+    if (_fallbackTimer) { clearTimeout(_fallbackTimer); _fallbackTimer = null; }
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(String(text));
     utterance.lang = lang;
@@ -94,15 +100,21 @@ export function speak(text, lang = 'de-DE') {
     const setState = (on) => {
       document.documentElement.classList.toggle('is-speaking', on);
     };
+    const finish = () => {
+      if (_fallbackTimer) { clearTimeout(_fallbackTimer); _fallbackTimer = null; }
+      setState(false);
+    };
     utterance.onstart = () => setState(true);
-    utterance.onend = () => setState(false);
-    utterance.onerror = () => setState(false);
+    utterance.onend = finish;
+    utterance.onerror = finish;
 
     // Optimistisches Flag — Safari feuert onstart nicht zuverlässig.
     setState(true);
     window.speechSynthesis.speak(utterance);
-    // Hartes Timeout-Fallback, falls onend nie kommt.
-    setTimeout(() => setState(false), Math.max(2500, text.length * 90));
+    // Hartes Timeout-Fallback, falls onend nie kommt — großzügig geschätzt
+    // (Dauer ∝ Zeichen / Rate). Wird in finish()/beim nächsten speak() gecleart.
+    _fallbackTimer = setTimeout(() => { _fallbackTimer = null; setState(false); },
+      Math.max(3000, (String(text).length * 100) / DEFAULT_RATE));
     return true;
   } catch {
     return false;

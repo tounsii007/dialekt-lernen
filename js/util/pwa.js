@@ -14,9 +14,15 @@ export function initPwa(toast) {
           if (!newWorker) return;
           newWorker.addEventListener('statechange', () => {
             if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-              // Neue Version wartet — App neu laden zur Aktivierung.
+              // Neue Version wartet — Toast klickbar machen, Klick lädt neu
+              // (der SW aktiviert sich via skipWaiting, der Reload übernimmt ihn).
               if (toast) {
-                toast('Neue Version verfügbar — klicke hier zum Aktualisieren', 'info', 6000);
+                const node = toast('Neue Version verfügbar — zum Aktualisieren tippen', 'info', 8000);
+                if (node) {
+                  node.style.cursor = 'pointer';
+                  node.setAttribute('role', 'button');
+                  node.addEventListener('click', () => window.location.reload());
+                }
               }
             }
           });

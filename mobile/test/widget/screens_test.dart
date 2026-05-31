@@ -83,6 +83,8 @@ void main() {
     expect(find.textContaining('Tippe'), findsOneWidget);
 
     await tester.enterText(find.byType(TextField), 'hessisch');
+    // Suche ist um 150ms entprellt — Timer vorrücken, dann rebuilden.
+    await tester.pump(const Duration(milliseconds: 200));
     await tester.pump();
     expect(find.text('Dialekte'), findsOneWidget); // Sektionstitel
   });
