@@ -245,6 +245,96 @@ export default {
       beispiel: 'Am Wochenende fahrn wir raus in de Mark.',
       beispiel_hd: 'Am Wochenende fahren wir raus in die Mark Brandenburg.',
       kategorie: 'orte'
+    },
+    {
+      id: 'br-027',
+      ausdruck: 'Atze',
+      hochdeutsch: 'Kumpel / Bruder',
+      bedeutung: 'Die Atze ist der gute Kumpel oder Bruder, ein vertrautes Berlin-Brandenburger Wort. Na, Atze? ist eine lockere Begrüßung unter Freunden.',
+      beispiel: 'Na Atze, allet klar bei dir?',
+      beispiel_hd: 'Na Kumpel, alles klar bei dir?',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'br-028',
+      ausdruck: 'kieken',
+      hochdeutsch: 'gucken / schauen',
+      bedeutung: 'kieken heißt gucken oder schauen. Kiek mal! bedeutet „schau mal!". Aus dem berühmten Icke, dette, kieke mal nicht wegzudenken. Ein niederdeutsches Erbe.',
+      beispiel: 'Kiek mal, wat der da macht.',
+      beispiel_hd: 'Schau mal, was der da macht.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'br-029',
+      ausdruck: 'ooch',
+      hochdeutsch: 'auch',
+      bedeutung: 'ooch ist das berlin-brandenburgische „auch", mit dem gedehnten oo. Ick will ooch mit! heißt „ich will auch mit!". Ein typisches Lautmerkmal.',
+      beispiel: 'Ick will ooch een Eis.',
+      beispiel_hd: 'Ich will auch ein Eis.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'br-030',
+      ausdruck: 'allet',
+      hochdeutsch: 'alles',
+      bedeutung: 'allet bedeutet alles. Allet jut! heißt „alles gut!". Eines der häufigsten Wörter der Berlin-Brandenburger Umgangssprache, oft mit jut kombiniert.',
+      beispiel: 'Allet jut, mach dir keene Sorgen.',
+      beispiel_hd: 'Alles gut, mach dir keine Sorgen.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'br-031',
+      ausdruck: 'nüscht',
+      hochdeutsch: 'nichts',
+      bedeutung: 'nüscht bedeutet nichts. Da is nüscht zu machen heißt „da ist nichts zu machen". Ein gängiges Wort der Region, das die niederdeutsche Herkunft zeigt.',
+      beispiel: 'Ick hab davon nüscht jewusst.',
+      beispiel_hd: 'Ich habe davon nichts gewusst.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'br-032',
+      ausdruck: 'koofen',
+      hochdeutsch: 'kaufen',
+      bedeutung: 'koofen heißt kaufen, mit dem typischen oo. Ick jeh koofen heißt „ich gehe einkaufen". Das KaDeWe wird scherzhaft auch Koofhaus genannt.',
+      beispiel: 'Ick muss noch Schrippen koofen.',
+      beispiel_hd: 'Ich muss noch Brötchen kaufen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'br-033',
+      ausdruck: 'Schnauze',
+      hochdeutsch: 'Mund / Schnauze',
+      bedeutung: 'Die Schnauze ist der Mund, sprichwörtlich für die direkte Berliner Art (Berliner Schnauze). Halt die Schnauze! heißt „sei still!". Ein deftiges Wort.',
+      beispiel: 'Der hat ne lockere Schnauze.',
+      beispiel_hd: 'Der hat ein loses Mundwerk.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'br-034',
+      ausdruck: 'Eckkneipe',
+      hochdeutsch: 'Stammkneipe an der Straßenecke',
+      bedeutung: 'Die Eckkneipe ist die einfache Stammkneipe an der Straßenecke, wo man sein Bier und seine Molle trinkt. Ein Stück Berlin-Brandenburger Geselligkeit.',
+      beispiel: 'Wir treffen uns in der Eckkneipe.',
+      beispiel_hd: 'Wir treffen uns in der Stammkneipe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'br-035',
+      ausdruck: 'Sonnabend',
+      hochdeutsch: 'Samstag',
+      bedeutung: 'Sonnabend ist der Samstag, im Osten und Norden gebräuchlicher als Samstag. Am Sonnabend wird eingekauft und geputzt. Ein traditionelles Wort.',
+      beispiel: 'Am Sonnabend fahrn wir an See.',
+      beispiel_hd: 'Am Samstag fahren wir an den See.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'br-036',
+      ausdruck: 'Kiez',
+      hochdeutsch: 'Stadtviertel / Wohnviertel',
+      bedeutung: 'Der Kiez ist das vertraute Wohnviertel mit seinen Läden und Nachbarn. Im Kiez kennt man sich. Ein zentrales Wort der Berlin-Brandenburger Identität.',
+      beispiel: 'In unserm Kiez is immer wat los.',
+      beispiel_hd: 'In unserem Viertel ist immer etwas los.',
+      kategorie: 'orte'
     }
   ]
 };

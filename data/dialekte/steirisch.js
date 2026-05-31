@@ -326,6 +326,96 @@ export default {
       beispiel: 'Heuer hamma an guatn Wein.',
       beispiel_hd: 'Dieses Jahr haben wir einen guten Wein.',
       kategorie: 'alltag'
+    },
+    {
+      id: 'st-036',
+      ausdruck: 'Jause',
+      hochdeutsch: 'Zwischenmahlzeit / Vesper',
+      bedeutung: 'D Jause ist die kalte Zwischenmahlzeit am Vormittag oder Nachmittag, oft mit Brot, Speck und Käse. A zünftige Jause gehört zum Ausflug dazu.',
+      beispiel: 'Um zehne mach ma a Jause.',
+      beispiel_hd: 'Um zehn machen wir eine Jause.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-037',
+      ausdruck: 'Kipferl',
+      hochdeutsch: 'Hörnchen / Croissant',
+      bedeutung: 'A Kipferl ist ein gebogenes Hörnchen aus Germteig, zum Frühstück mit Butter und Marmelade. Das Vanillekipferl ist ein beliebtes Weihnachtsgebäck.',
+      beispiel: 'Zum Kaffee iss i a Kipferl.',
+      beispiel_hd: 'Zum Kaffee esse ich ein Hörnchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-038',
+      ausdruck: 'Faschiertes',
+      hochdeutsch: 'Hackfleisch',
+      bedeutung: 'Faschiertes ist das Hackfleisch, aus dem man Faschierte Laibchen formt. Ein Grundbegriff der österreichischen Küche, vom Faschieren durch den Wolf.',
+      beispiel: 'Aus Faschiertem mach i Laibchen.',
+      beispiel_hd: 'Aus Hackfleisch mache ich Frikadellen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-039',
+      ausdruck: 'Karfiol',
+      hochdeutsch: 'Blumenkohl',
+      bedeutung: 'Karfiol ist der Blumenkohl, vom italienischen cavolfiore. Gebacken oder mit Bröseln ist Karfiol eine beliebte Beilage der steirischen Küche.',
+      beispiel: 'An Karfiol back ma in da Pfann.',
+      beispiel_hd: 'Den Blumenkohl backen wir in der Pfanne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-040',
+      ausdruck: 'Fisolen',
+      hochdeutsch: 'grüne Bohnen',
+      bedeutung: 'Fisolen sind die grünen Gartenbohnen. Gekocht als Beilage oder im Eintopf gehören Fisolen zur sommerlichen Hausmannskost der Steiermark.',
+      beispiel: 'Als Beilag gibts heut Fisolen.',
+      beispiel_hd: 'Als Beilage gibt es heute grüne Bohnen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-041',
+      ausdruck: 'Ribisel',
+      hochdeutsch: 'Johannisbeeren',
+      bedeutung: 'Ribisel sind die Johannisbeeren, rot oder schwarz. Aus Ribisel macht man Saft und Marmelade. Das Wort ist im ganzen österreichischen Raum gebräuchlich.',
+      beispiel: 'Im Garten hängen d Ribisel rot am Strauch.',
+      beispiel_hd: 'Im Garten hängen die Johannisbeeren rot am Strauch.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'st-042',
+      ausdruck: 'Häusl',
+      hochdeutsch: 'Toilette / Häuschen',
+      bedeutung: 'S Häusl ist die Toilette, früher das Plumpsklo im Hof. I muass aufs Häusl heißt „ich muss auf die Toilette". Ein gängiges Alltagswort.',
+      beispiel: 'Wo is denn do des Häusl?',
+      beispiel_hd: 'Wo ist denn hier die Toilette?',
+      kategorie: 'orte'
+    },
+    {
+      id: 'st-043',
+      ausdruck: 'Tschick',
+      hochdeutsch: 'Zigarette',
+      bedeutung: 'A Tschick ist eine Zigarette, vom italienischen cicca. A Tschick rauchn heißt rauchen. Ein in ganz Österreich verbreitetes umgangssprachliches Wort.',
+      beispiel: 'Geh ma vor d Tür auf a Tschick.',
+      beispiel_hd: 'Gehen wir vor die Tür auf eine Zigarette.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'st-044',
+      ausdruck: 'Sackerl',
+      hochdeutsch: 'Tüte / Beutel',
+      bedeutung: 'A Sackerl ist eine kleine Tüte oder ein Beutel, etwa fürs Einkaufen. Tua d Erdäpfel ins Sackerl. Ein typisch österreichisches Wort.',
+      beispiel: 'Geben S ma a Sackerl dazua.',
+      beispiel_hd: 'Geben Sie mir eine Tüte dazu.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'st-045',
+      ausdruck: 'Häferl',
+      hochdeutsch: 'Tasse / Becher',
+      bedeutung: 'A Häferl ist eine Tasse oder ein Becher. A Häferl Kaffee am Morgen gehört dazu. Ein gängiges österreichisches Wort für das Trinkgefäß.',
+      beispiel: 'I trink a Häferl Kaffee am Morgn.',
+      beispiel_hd: 'Ich trinke eine Tasse Kaffee am Morgen.',
+      kategorie: 'alltag'
     }
   ]
 };
