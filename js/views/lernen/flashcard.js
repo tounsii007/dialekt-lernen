@@ -372,6 +372,9 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     } else {
       const statusEl = el('div', { class: 'pron-check-status' }, 'Klicke das Mikrofon und sprich den Ausdruck.');
+      // currentStop MUSS außerhalb des Handlers leben, damit der Stopp-Klick
+      // dieselbe Referenz sieht (vorher let-im-Handler → TDZ-ReferenceError).
+      let currentStop = null;
       const micBtn = el('button', {
         class: 'pron-mic-btn',
         title: 'Aufnahme starten/stoppen',
@@ -385,7 +388,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
           statusEl.classList.remove('is-ok', 'is-wrong');
           statusEl.classList.add('is-listening');
           statusEl.textContent = 'Höre zu… sprich jetzt.';
-          let currentStop = startListening({
+          currentStop = startListening({
             lang: c.dialektLang || 'de-DE',
             onPartial: (t) => { statusEl.textContent = '… ' + t; },
             onResult: ({ transcript, alternatives }) => {
