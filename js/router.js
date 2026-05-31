@@ -34,7 +34,8 @@ const ROUTE_LABELS = {
   spiele:    'Mini-Spiele',
   sammlung:  'Ausdrücke-Sammlung',
   idiome:    'Idiom-Explorer',
-  lektionen: 'Mini-Lektionen'
+  lektionen: 'Mini-Lektionen',
+  liga:      'Lokale Liga'
 };
 
 // Lazy: erst beim Bedarf laden + danach gecached.
@@ -47,7 +48,8 @@ const lazyLoaders = {
   spiele:    () => import('./views/spiele.js'),
   sammlung:  () => import('./views/sammlung.js'),
   idiome:    () => import('./views/idiome.js'),
-  lektionen: () => import('./views/lektionen.js')
+  lektionen: () => import('./views/lektionen.js'),
+  liga:      () => import('./views/liga.js')
 };
 const lazyCache = {};
 
@@ -162,6 +164,11 @@ async function renderRoute(app, route, segs, params) {
       const m = await loadLazy('lektionen');
       if (!m) return;
       return m.renderLektionen(app, params);
+    }
+    case 'liga': {
+      const m = await loadLazy('liga');
+      if (!m) return;
+      return m.renderLiga(app);
     }
     default:
       return renderHome(app);

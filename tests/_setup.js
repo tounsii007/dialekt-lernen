@@ -30,6 +30,7 @@ export function resetState() {
   state.goals = { target: 10, progress: {}, reminderShown: {} };
   state.srs = { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null };
   state.srsLog = [];
+  state.league = { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null };
 }
 
 // Minimaler DOM-Mock — wird global gesetzt, wenn ein Test es braucht.

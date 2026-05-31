@@ -9,6 +9,7 @@ import { getRecommendations, getRecentDialects, getActivitySeries } from '../uti
 import { renderGoalWidget } from '../util/daily-goal.js';
 import { getActiveChallengesWithProgress } from '../store/challenges.js';
 import { getActiveQuestsWithProgress, getQuestsSummary, ALL_DONE_BONUS_XP } from '../store/quests.js';
+import { getLeagueSummary, PROMOTE_RANK } from '../store/league.js';
 import { getLongGoals, addLongGoal, removeLongGoal } from '../store/long-goals.js';
 import {
   startPomodoro, stopPomodoro, isPomodoroRunning, getPomodoroState,
@@ -90,11 +91,13 @@ export function renderHome(root, params = {}) {
   // Non-kritische Sektionen — via requestIdleCallback nachrendern (kein Long-Task)
   const placeholders = {
     reco: el('div', { class: 'home-section-placeholder' }),
+    league: el('div', { class: 'home-section-placeholder' }),
     quests: el('div', { class: 'home-section-placeholder' }),
     challenges: el('div', { class: 'home-section-placeholder' }),
     longGoals: el('div', { class: 'home-section-placeholder' }),
   };
   view.appendChild(placeholders.reco);
+  view.appendChild(placeholders.league);
   view.appendChild(placeholders.quests);
   view.appendChild(placeholders.challenges);
   view.appendChild(placeholders.longGoals);
@@ -105,6 +108,7 @@ export function renderHome(root, params = {}) {
     if (recoSection) placeholders.reco.replaceWith(recoSection);
     else placeholders.reco.remove();
   });
+  idle(() => placeholders.league.replaceWith(renderLeagueSection()));
   idle(() => placeholders.quests.replaceWith(renderQuestsSection()));
   idle(() => placeholders.challenges.replaceWith(renderChallengesSection()));
   idle(() => placeholders.longGoals.replaceWith(renderLongGoalsSection()));
@@ -414,6 +418,58 @@ function buildWordCarousel() {
   wrap.addEventListener('mouseleave', () => { interval = setInterval(advance, 2800); });
 
   return wrap;
+}
+
+// ----------------------------------------------------------------------------
+// Lokale Liga — kompakte Standings-Karte (verlinkt auf die Voll-Ansicht)
+// ----------------------------------------------------------------------------
+const LEAGUE_ZONE_LABEL = {
+  promotion: '🔼 Aufstieg',
+  demotion:  '🔽 Abstieg',
+  hold:      '➖ Gehalten',
+};
+
+function renderLeagueSection() {
+  let s;
+  try {
+    s = getLeagueSummary();
+  } catch {
+    return el('div');
+  }
+
+  const section = el('section', { class: 'section', dataset: { reveal: '' } },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, 'Lokale Liga'),
+        el('div', { class: 'lede' }, 'Wettstreit gegen Übungs-Geister — komplett offline.')
+      ),
+      el('button', {
+        class: 'btn btn-ghost',
+        onClick: () => go('#/liga')
+      }, 'Rangliste →')
+    )
+  );
+
+  const card = el('button', {
+    class: 'league-card',
+    onClick: () => go('#/liga'),
+    title: `${s.tierInfo.name}-Liga ansehen`
+  },
+    el('span', { class: 'league-card-badge', 'aria-hidden': 'true' }, s.tierInfo.icon),
+    el('div', { class: 'league-card-meta' },
+      el('div', { class: 'league-card-name' }, s.tierInfo.name + '-Liga'),
+      el('div', { class: 'league-card-sub' },
+        `Rang ${s.rank} / ${s.cohortSize}`,
+        el('span', { class: `league-card-zone league-zone-${s.zone}` }, LEAGUE_ZONE_LABEL[s.zone])
+      )
+    ),
+    el('div', { class: 'league-card-xp' },
+      el('span', { class: 'league-card-xp-num' }, String(s.weeklyXp)),
+      el('span', { class: 'league-card-xp-label' }, 'XP / Woche')
+    )
+  );
+  section.appendChild(card);
+  return section;
 }
 
 // ----------------------------------------------------------------------------

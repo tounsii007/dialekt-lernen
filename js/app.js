@@ -21,6 +21,7 @@ import { initRipple } from './util/ripple.js';
 import { initGoalEvents } from './util/daily-goal.js';
 import { initChallenges } from './store/challenges.js';
 import { initQuests } from './store/quests.js';
+import { initLeague, getLeagueResult, clearLeagueResult, LEAGUE_TIERS } from './store/league.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
@@ -119,6 +120,19 @@ function mountFooterMeta() {
   if (statsEl) {
     statsEl.textContent = `${DIALEKTE.length} Dialekte · ${ALLE_AUSDRUECKE.length.toLocaleString('de-DE')} Ausdrücke`;
   }
+}
+
+// Auf-/Abstieg der Vorwoche einmalig melden (und damit konsumieren).
+function notifyLeagueResult(toast) {
+  const r = getLeagueResult();
+  if (!r || r.outcome === 'held') return;
+  const toName = LEAGUE_TIERS[r.tier]?.name || '';
+  if (r.outcome === 'promoted') {
+    toast(`🎉 Aufgestiegen in die ${toName}-Liga! (Platz ${r.rank})`, 'success', 4000);
+  } else {
+    toast(`🔽 Abgestiegen in die ${toName}-Liga (Platz ${r.rank})`, 'info', 4000);
+  }
+  clearLeagueResult();
 }
 
 function initStorageWarning() {
@@ -241,6 +255,8 @@ function init() {
     const { xp } = e.detail || {};
     toast(`🎉 Alle Tages-Quests geschafft! Bonus +${xp} XP`, 'success', 3600);
   });
+  initLeague();
+  notifyLeagueResult(toast);
   mountXpBar();
   mountFooterMeta();
 

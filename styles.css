@@ -4912,6 +4912,286 @@ html.is-speaking .is-speakable {
 }
 
 /* ============================================================ */
+/* Iteration 9 — Lokale Liga                                    */
+/* ============================================================ */
+
+/* Home: kompakte Standings-Karte */
+.league-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--r-xl);
+  border: 1px solid color-mix(in oklab, var(--brand) 18%, var(--border));
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--brand) 10%, var(--bg-elev)),
+    color-mix(in oklab, var(--accent) 6%, var(--bg-elev)));
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  transition: transform .18s var(--ease-spring), box-shadow .18s var(--ease), border-color .18s var(--ease);
+}
+.league-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px hsl(0 0% 0% / .14);
+  border-color: color-mix(in oklab, var(--brand) 36%, var(--border));
+}
+.league-card-badge {
+  font-size: 2.2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.league-card-meta { flex: 1; min-width: 0; }
+.league-card-name { font-weight: 800; font-size: 1.05rem; }
+.league-card-sub {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-top: 2px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.league-card-xp { text-align: right; flex-shrink: 0; }
+.league-card-xp-num {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.league-card-xp-label { font-size: 0.68rem; color: var(--text-muted); }
+
+.league-card-zone, .liga-zone-chip {
+  font-weight: 700;
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  border-radius: 99px;
+}
+.league-zone-promotion, .liga-zone-promotion {
+  color: var(--success, #30a46c);
+  background: color-mix(in oklab, var(--success, #30a46c) 14%, transparent);
+}
+.league-zone-demotion, .liga-zone-demotion {
+  color: var(--danger);
+  background: color-mix(in oklab, var(--danger) 14%, transparent);
+}
+.league-zone-hold, .liga-zone-hold {
+  color: var(--text-muted);
+  background: color-mix(in oklab, var(--text-muted) 12%, transparent);
+}
+
+/* Liga-View: Hero */
+.liga-hero {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  padding: var(--sp-6);
+  border-radius: var(--r-xl);
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--liga-accent, var(--brand)) 22%, var(--bg-elev)),
+    var(--bg-elev));
+  border: 1.5px solid color-mix(in oklab, var(--liga-accent, var(--brand)) 32%, transparent);
+}
+.liga-hero-badge {
+  font-size: 3.4rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 12px color-mix(in oklab, var(--liga-accent, var(--brand)) 40%, transparent));
+}
+.liga-hero-meta { flex: 1; min-width: 0; }
+.liga-hero-eyebrow {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.liga-hero-name { font-size: 1.6rem; font-weight: 800; margin: 2px 0; }
+.liga-hero-sub {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  flex-wrap: wrap;
+}
+.liga-hero-xp { text-align: right; flex-shrink: 0; }
+.liga-hero-xp-num {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--liga-accent, var(--brand));
+}
+.liga-hero-xp-label { font-size: 0.72rem; color: var(--text-muted); }
+
+/* Tier-Leiter */
+.liga-ladder {
+  display: flex;
+  gap: var(--sp-2);
+  overflow-x: auto;
+  padding-bottom: var(--sp-2);
+}
+.liga-ladder-step {
+  flex: 1 0 auto;
+  min-width: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: var(--sp-3) var(--sp-2);
+  border-radius: var(--r-lg);
+  border: 1.5px solid var(--border);
+  background: var(--bg-elev);
+  opacity: 0.5;
+  transition: opacity .2s var(--ease), transform .2s var(--ease-spring);
+}
+.liga-ladder-step.is-unlocked { opacity: 1; }
+.liga-ladder-step.is-passed {
+  border-color: color-mix(in oklab, var(--liga-accent, var(--brand)) 30%, var(--border));
+}
+.liga-ladder-step.is-current {
+  opacity: 1;
+  transform: translateY(-3px);
+  border-color: var(--liga-accent, var(--brand));
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--liga-accent, var(--brand)) 30%, transparent);
+  background: color-mix(in oklab, var(--liga-accent, var(--brand)) 12%, var(--bg-elev));
+}
+.liga-ladder-icon { font-size: 1.5rem; line-height: 1; }
+.liga-ladder-name { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); }
+.liga-ladder-step.is-current .liga-ladder-name { color: var(--text); }
+
+/* Wochenfortschritt */
+.liga-progress-card {
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--r-xl);
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+.liga-progress-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-2);
+}
+.liga-progress {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--border);
+  overflow: hidden;
+}
+.liga-progress-bar {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  transition: width 0.6s var(--ease-spring);
+}
+.liga-progress-hint {
+  margin-top: var(--sp-3);
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+/* Rangliste */
+.liga-board {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.liga-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-lg);
+  background: var(--bg-elev);
+  border: 1px solid transparent;
+}
+.liga-row.in-promote { background: color-mix(in oklab, var(--success, #30a46c) 7%, var(--bg-elev)); }
+.liga-row.in-demote { background: color-mix(in oklab, var(--danger) 7%, var(--bg-elev)); }
+.liga-row.is-user {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--brand) 40%, transparent);
+  background: color-mix(in oklab, var(--brand) 12%, var(--bg-elev));
+}
+.liga-row-rank {
+  flex-shrink: 0;
+  width: 2rem;
+  text-align: center;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+.liga-row-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.liga-row.is-user .liga-row-name { font-weight: 800; color: var(--brand); }
+.liga-row-xp {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+.liga-zone-divider {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: var(--sp-1) var(--sp-2);
+  margin-top: var(--sp-2);
+}
+.liga-zone-divider.is-promote { color: var(--success, #30a46c); }
+.liga-zone-divider.is-demote { color: var(--danger); }
+
+/* Auf-/Abstiegs-Banner */
+.liga-result-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  border-radius: var(--r-xl);
+}
+.liga-result-banner.is-promoted {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--success, #30a46c) 20%, var(--bg-elev)), var(--bg-elev));
+  border: 1.5px solid color-mix(in oklab, var(--success, #30a46c) 40%, transparent);
+}
+.liga-result-banner.is-demoted {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--danger) 16%, var(--bg-elev)), var(--bg-elev));
+  border: 1.5px solid color-mix(in oklab, var(--danger) 32%, transparent);
+}
+.liga-result-icon { font-size: 2.4rem; line-height: 1; }
+.liga-result-title { font-weight: 800; font-size: 1.1rem; }
+.liga-result-sub { font-size: 0.86rem; color: var(--text-muted); margin-top: 2px; }
+
+/* Datenschutz-Hinweis */
+.liga-privacy-note {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--success, #30a46c) 8%, var(--bg-elev));
+  border: 1px dashed color-mix(in oklab, var(--success, #30a46c) 30%, var(--border));
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+/* ============================================================ */
 /* Iteration 21 — Multiple-Choice-Karteikarten                 */
 /* ============================================================ */
 

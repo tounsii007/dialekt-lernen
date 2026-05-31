@@ -103,7 +103,12 @@ function withDefaults(loaded) {
                     ? { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null, ...loaded.srs }
                     : { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null },
     // Review-Log fuer den FSRS-Optimizer (gekappt). Pro Eintrag: {key,t,g,r,s,d}.
-    srsLog:       Array.isArray(loaded.srsLog) ? loaded.srsLog : []
+    srsLog:       Array.isArray(loaded.srsLog) ? loaded.srsLog : [],
+    // Lokale Liga (privacy-preserving): tier-Index, laufende Woche, XP-Snapshot
+    // zum Wochenstart, hoechste je erreichte Stufe, letztes Auf-/Abstiegs-Ergebnis.
+    league:       loaded.league && typeof loaded.league === 'object'
+                    ? { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null, ...loaded.league }
+                    : { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null }
   };
 }
 
