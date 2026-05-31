@@ -2,7 +2,7 @@
 // Initialisiert Theme, Suche, Tastatursteuerung, Streak und Router.
 
 import { $, toast } from './util.js';
-import { registerStreak } from './store.js';
+import { registerStreak, MAX_FREEZES, MAX_REPAIRS } from './store.js';
 import { initTheme } from './theme.js';
 import { initSearch } from './search.js';
 import { initShortcuts } from './shortcuts.js';
@@ -135,6 +135,40 @@ function notifyLeagueResult(toast) {
   clearLeagueResult();
 }
 
+// Streak-Schutz-Ereignisse als Toasts melden. MUSS vor registerStreak()
+// registriert werden, da Freeze/Bruch/Verdienst synchron dort gefeuert werden.
+function initStreakEvents() {
+  document.addEventListener('dialekto:streak', (e) => {
+    const d = e.detail || {};
+    switch (d.type) {
+      case 'earned':
+        if (d.item === 'freeze') {
+          toast(`❄️ Streak-Freeze verdient! (${d.freezes}/${MAX_FREEZES})`, 'success', 3000);
+        } else if (d.item === 'repair') {
+          toast(`🔧 Reparatur-Token verdient! (${d.repairs}/${MAX_REPAIRS})`, 'success', 3000);
+        }
+        break;
+      case 'frozen':
+        if (d.usedFreezes === 0 && d.weekendCovered > 0) {
+          toast('🛡️ Wochenende übersprungen — dein Streak läuft weiter!', 'success', 3200);
+        } else {
+          toast(`❄️ Streak gerettet — ${d.usedFreezes} Freeze${d.usedFreezes === 1 ? '' : 's'} eingesetzt.`, 'success', 3200);
+        }
+        break;
+      case 'broken':
+        if (d.canRepair) {
+          toast(`💔 Streak gerissen (war ${d.prevCount}) — du kannst ihn reparieren! Siehe Favoriten.`, 'info', 4200);
+        } else {
+          toast(`💔 Dein ${d.prevCount}-Tage-Streak ist gerissen. Neuer Anlauf heute!`, 'info', 3600);
+        }
+        break;
+      case 'repaired':
+        toast(`🔧 Streak repariert — zurück auf ${d.count} Tage!`, 'success', 2800);
+        break;
+    }
+  });
+}
+
 function initStorageWarning() {
   // state.js feuert dies einmalig, wenn localStorage voll ist — sonst gingen
   // Favoriten/Fortschritt/Notizen unbemerkt verloren.
@@ -214,6 +248,7 @@ function init() {
   initTheme();
 
   // 2. Persistence + navigation core
+  initStreakEvents(); // vor registerStreak: fängt Freeze/Bruch/Verdienst ab
   registerStreak();
   initRouter();
   initNav();

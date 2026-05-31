@@ -2653,6 +2653,115 @@ input[type="search"]:not(#searchInput) {
   to   { transform: scale(1); opacity: 1; }
 }
 
+/* Streak-Schutz (Freeze / Reparatur / Wochenend-Amulett) */
+.streak-prot-card {
+  margin-top: var(--sp-4);
+  padding: var(--sp-5);
+}
+.streak-prot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-3);
+}
+.streak-prot-item,
+.streak-amulet-row {
+  display: flex;
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--bg-soft) 70%, transparent);
+  border: 1px solid var(--border);
+}
+.streak-amulet-row {
+  align-items: center;
+  margin-top: var(--sp-3);
+  cursor: pointer;
+}
+.streak-prot-emoji {
+  font-size: 1.7rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.streak-prot-body { flex: 1; min-width: 0; }
+.streak-prot-title { font-weight: 600; }
+.streak-prot-count {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--brand);
+  margin: 2px 0;
+}
+.streak-prot-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.streak-pips {
+  display: flex;
+  gap: 5px;
+  margin: 4px 0 6px;
+}
+.streak-pip {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+}
+.streak-pip.is-filled {
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  border-color: transparent;
+  box-shadow: 0 0 8px color-mix(in oklab, var(--brand) 50%, transparent);
+}
+/* Wochenend-Amulett-Toggle */
+.streak-amulet-switch {
+  position: relative;
+  flex-shrink: 0;
+  width: 46px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  transition: background var(--t-fast) var(--ease);
+}
+.streak-amulet-switch:has(input:checked) {
+  background: linear-gradient(135deg, var(--brand), var(--pink));
+  border-color: transparent;
+}
+.streak-amulet-switch input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.streak-amulet-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  transition: transform var(--t-fast) var(--ease-spring);
+  pointer-events: none;
+}
+.streak-amulet-switch input:checked ~ .streak-amulet-knob {
+  transform: translateX(20px);
+}
+.streak-repair-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-top: var(--sp-4);
+  padding: var(--sp-4);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--brand) 10%, var(--bg-elev));
+  border: 1px solid color-mix(in oklab, var(--brand) 35%, transparent);
+}
+
 /* Achievements */
 .achievements-grid {
   display: grid;

@@ -18,7 +18,9 @@ export function resetState() {
   state.theme = 'auto';
   state.favoriten = [];
   state.gelernt = {};
-  state.streak = { count: 0, lastDay: null, days: {} };
+  state.streak = { count: 0, lastDay: null, days: {},
+                   freezes: 0, repairs: 0, weekendAmulet: false, frozenDays: {},
+                   freezeMilestone: 0, repairMilestone: 0, lastBreak: null };
   state.quizHistory = [];
   state.lernStats = { total: 0, korrekt: 0 };
   state.visited = [];

@@ -60,10 +60,18 @@ function withDefaults(loaded) {
     theme:        loaded.theme        ?? 'auto',
     favoriten:    Array.isArray(loaded.favoriten) ? loaded.favoriten : [],
     gelernt:      loaded.gelernt      && typeof loaded.gelernt === 'object' ? loaded.gelernt : {},
+    // Streak inkl. Schutz-Mechaniken (Freeze/Reparatur/Wochenend-Amulett),
+    // alle offline verdient — keine Käufe (Privacy-/Offline-Säule bleibt).
     streak:       loaded.streak       && typeof loaded.streak === 'object'
-                    ? { count: 0, lastDay: null, days: {}, ...loaded.streak,
-                        days: (loaded.streak.days && typeof loaded.streak.days === 'object') ? loaded.streak.days : {} }
-                    : { count: 0, lastDay: null, days: {} },
+                    ? { count: 0, lastDay: null, days: {},
+                        freezes: 0, repairs: 0, weekendAmulet: false, frozenDays: {},
+                        freezeMilestone: 0, repairMilestone: 0, lastBreak: null,
+                        ...loaded.streak,
+                        days: (loaded.streak.days && typeof loaded.streak.days === 'object') ? loaded.streak.days : {},
+                        frozenDays: (loaded.streak.frozenDays && typeof loaded.streak.frozenDays === 'object') ? loaded.streak.frozenDays : {} }
+                    : { count: 0, lastDay: null, days: {},
+                        freezes: 0, repairs: 0, weekendAmulet: false, frozenDays: {},
+                        freezeMilestone: 0, repairMilestone: 0, lastBreak: null },
     quizHistory:  Array.isArray(loaded.quizHistory) ? loaded.quizHistory : [],
     lernStats:    loaded.lernStats    && typeof loaded.lernStats === 'object'
                     ? { total: 0, korrekt: 0, ...loaded.lernStats }
