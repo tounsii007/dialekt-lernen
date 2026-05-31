@@ -201,12 +201,18 @@ function replaceImport(d) {
 }
 
 function mergeImport(d) {
-  // Favoriten — Set-Union per (dialektId, ausdruckId)
+  // Favoriten — Set-Union per String-Key. Favoriten sind flache
+  // "dialektId.ausdruckId"-Strings (favKey); ältere Backups können sie als
+  // Objekte enthalten — beides wird zu Strings normalisiert.
   if (Array.isArray(d.favoriten)) {
-    const setKeys = new Set((state.favoriten || []).map((f) => `${f.dialektId}.${f.ausdruckId}`));
+    if (!Array.isArray(state.favoriten)) state.favoriten = [];
+    const norm = (f) => typeof f === 'string'
+      ? f
+      : (f && f.dialektId && f.ausdruckId ? `${f.dialektId}.${f.ausdruckId}` : null);
+    const seen = new Set(state.favoriten.map(norm).filter(Boolean));
     for (const f of d.favoriten) {
-      const k = `${f.dialektId}.${f.ausdruckId}`;
-      if (!setKeys.has(k)) state.favoriten.push(f);
+      const k = norm(f);
+      if (k && !seen.has(k)) { state.favoriten.push(k); seen.add(k); }
     }
   }
 
@@ -325,9 +331,19 @@ export function exportToCsv(allEntries = false, ausdrueckeFromCaller = null, get
       rows.push(toCsvRow(a, d));
     }
   } else {
-    for (const f of (state.favoriten || [])) {
-      const d = getDialektFromCaller(f.dialektId);
-      const a = d?.ausdruecke?.find((x) => x.id === f.ausdruckId);
+    for (const entry of (state.favoriten || [])) {
+      // Favoriten sind "dialektId.ausdruckId"-Strings; Legacy-Objekte tolerieren.
+      let dialektId, ausdruckId;
+      if (entry && typeof entry === 'object') {
+        dialektId = entry.dialektId; ausdruckId = entry.ausdruckId;
+      } else {
+        const s = String(entry);
+        const dot = s.indexOf('.');
+        dialektId = dot < 0 ? s : s.slice(0, dot);
+        ausdruckId = dot < 0 ? '' : s.slice(dot + 1);
+      }
+      const d = getDialektFromCaller(dialektId);
+      const a = d?.ausdruecke?.find((x) => x.id === ausdruckId);
       if (a && d) rows.push(toCsvRow(a, d));
     }
   }

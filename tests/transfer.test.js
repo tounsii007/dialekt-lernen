@@ -17,7 +17,7 @@ import {
 
 function seedState() {
   state.theme = 'dark';
-  state.favoriten = [{ dialektId: 'hessisch', ausdruckId: 'h-001' }];
+  state.favoriten = ['hessisch.h-001'];
   state.gelernt = { 'hessisch.h-001': { ef: 2.5, reps: 1, interval: 1, due: 0, lapses: 0, last: 1000, stand: 3 } };
   state.streak = { count: 5, lastDay: '2026-01-01', days: { '2026-01-01': 3 } };
   state.quizHistory = [{ date: 1000, score: 8, total: 10, source: 'all' }];
@@ -122,7 +122,7 @@ describe('importState — strategy=replace', () => {
 describe('importState — strategy=merge', () => {
   beforeEach(() => {
     resetAllData();
-    state.favoriten = [{ dialektId: 'hessisch', ausdruckId: 'h-001' }];
+    state.favoriten = ['hessisch.h-001'];
     state.xp = { total: 100, log: [] };
     state.goals = { target: 10, progress: { '2026-1-1': 3 }, reminderShown: {} };
   });
@@ -133,8 +133,8 @@ describe('importState — strategy=merge', () => {
       version: 2,
       data: {
         favoriten: [
-          { dialektId: 'hessisch', ausdruckId: 'h-001' }, // existiert
-          { dialektId: 'berlinisch', ausdruckId: 'b-001' }, // neu
+          'hessisch.h-001',   // existiert
+          'berlinisch.b-001', // neu
         ],
       },
     };
@@ -358,7 +358,7 @@ describe('exportToCsv — Anki-kompatibel', () => {
   });
 
   it('Modus „nur Favoriten" filtert aus state.favoriten', () => {
-    state.favoriten = [{ dialektId: 'hessisch', ausdruckId: 'h-001' }];
+    state.favoriten = ['hessisch.h-001'];
     const ausdruecke = [
       { id: 'h-001', ausdruck: 'Ei guude', hochdeutsch: 'Hallo', bedeutung: 'X', beispiel: 'P', beispiel_hd: 'Q', kategorie: 'begruessung' },
       { id: 'h-002', ausdruck: 'Geh weg', hochdeutsch: 'Geh weg', bedeutung: 'Y', beispiel: 'P', beispiel_hd: 'Q', kategorie: 'gefuehle' },
