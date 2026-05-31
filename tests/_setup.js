@@ -34,6 +34,7 @@ export function resetState() {
   state.srsLog = [];
   state.league = { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null };
   state.chest = { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 };
+  state.speech = { rate: 0.92, pitch: 1, voiceURI: null };
 }
 
 // Minimaler DOM-Mock — wird global gesetzt, wenn ein Test es braucht.

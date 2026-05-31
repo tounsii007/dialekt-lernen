@@ -121,7 +121,13 @@ function withDefaults(loaded) {
     // letzte Belohnung (für die UI) und Gesamtzahl der Öffnungen.
     chest:        loaded.chest && typeof loaded.chest === 'object'
                     ? { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0, ...loaded.chest }
-                    : { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 }
+                    : { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 },
+    // Sprachausgabe (Text-to-Speech): Tempo, Tonhöhe und bevorzugte Stimme.
+    // voiceURI = stabile Voice-Kennung der Web-Speech-API (null = automatisch
+    // passend zum Dialekt). rate/pitch werden beim Setzen geklemmt.
+    speech:       loaded.speech && typeof loaded.speech === 'object'
+                    ? { rate: 0.92, pitch: 1, voiceURI: null, ...loaded.speech }
+                    : { rate: 0.92, pitch: 1, voiceURI: null }
   };
 }
 

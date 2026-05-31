@@ -5,7 +5,11 @@ export { $, $$, el, escapeHtml } from './util/dom.js';
 export { shuffle, seededRandom, pickSeeded } from './util/random.js';
 export { normalize } from './util/text.js';
 export { debounce } from './util/timing.js';
-export { speak, isSpeechSupported } from './util/speech.js';
+export {
+  speak, isSpeechSupported, getSpeechSettings, setSpeechSettings,
+  listVoices, onVoicesChanged, getSpeechStatus,
+  RATE_MIN, RATE_MAX, PITCH_MIN, PITCH_MAX
+} from './util/speech.js';
 export { parseHash, go } from './util/route.js';
 export { toast } from './util/toast.js';
 export {
