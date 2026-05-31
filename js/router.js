@@ -8,6 +8,7 @@ import {
   initTilt, initMagnetic, initPointerParallax, initParallax
 } from './util/motion.js';
 import { initNav, syncMobileNav } from './nav.js';
+import { attachPullToRefresh } from './util/pull-to-refresh.js';
 
 // Eager: Routes, die direkt verfügbar sein müssen.
 import { renderHome } from './views/home.js';
@@ -244,6 +245,9 @@ export async function router() {
 export function initRouter() {
   window.addEventListener('hashchange', router);
   router();
+  // Pull-to-Refresh (Mobile): am Seitenanfang nach unten ziehen lädt die
+  // aktuelle Ansicht neu.
+  attachPullToRefresh({ onRefresh: () => router() });
   // Vorladen, sobald die UI idle ist — schnelle Navigation ohne Skeleton-Blitz.
   const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 500));
   idle(() => {

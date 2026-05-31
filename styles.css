@@ -3338,6 +3338,36 @@ input[type="search"]:not(#searchInput) {
 }
 .skeleton-line { height: 12px; margin-bottom: 8px; }
 .skeleton-line.tall { height: 24px; }
+
+/* Pull-to-Refresh-Indikator (Mobile) */
+.ptr-indicator {
+  position: fixed;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1200;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--surface, #1b1b2b);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+.ptr-spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  border: 2.5px solid var(--border, rgba(255, 255, 255, .2));
+  border-top-color: var(--brand, #8b5cf6);
+}
+.ptr-indicator.is-armed .ptr-spinner { border-top-color: var(--accent, #26d9ac); }
+.ptr-indicator.is-refreshing .ptr-spinner { animation: ptr-spin .7s linear infinite; }
+@keyframes ptr-spin { to { transform: rotate(360deg); } }
+
 .skeleton-card {
   height: 200px;
   border-radius: var(--r-lg);
