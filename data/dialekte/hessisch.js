@@ -5348,6 +5348,276 @@ export default {
       beispiel: 'Als Worschdsänger schmettert er trotzdem jedes Liedsche mit.',
       beispiel_hd: 'Als Gelegenheitssänger schmettert er trotzdem jedes Liedchen mit.',
       kategorie: 'musik'
+    },
+    {
+      id: 'h-641',
+      ausdruck: 'Gerippte',
+      hochdeutsch: 'geripptes Apfelwein-Glas',
+      bedeutung: 'Es Gerippte ist das typische Frankfurter Apfelwein-Glas mit dem rautenförmig geripptem Muster, das den Schoppen besser greifbar macht. Aus em Gerippte schmeckt der Ebbelwoi am beschte. Ein Wahrzeichen der hessischen Trinkkultur.',
+      beispiel: 'Schenk mer en Schobbe ins Gerippte!',
+      beispiel_hd: 'Schenk mir einen Schoppen ins geripptes Glas!',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-642',
+      ausdruck: 'Handkäs',
+      hochdeutsch: 'Sauermilchkäse',
+      bedeutung: 'Handkäs ist der gelbe Sauermilchkäse, der mit Musik (Zwiebeln, Essig, Öl) serviert wird. Handkäs mit Musik gehört zum Ebbelwoi wie de Bembel. Eine ikonische hessische Spezialität mit kräftigem Geruch und Geschmack.',
+      beispiel: 'Zum Schobbe gibts Handkäs mit Musik.',
+      beispiel_hd: 'Zum Schoppen gibt es Handkäse mit Musik.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-643',
+      ausdruck: 'Schobbe',
+      hochdeutsch: 'Schoppen (Glas Apfelwein)',
+      bedeutung: 'Da Schobbe ist der Schoppen, das Standardmaß Apfelwein im Gerippte. Mer trinke noch en Schobbe heißt „wir trinken noch ein Glas Apfelwein". Maßeinheit der hessischen Geselligkeit.',
+      beispiel: 'Mer trinke noch en Schobbe Ebbelwoi.',
+      beispiel_hd: 'Wir trinken noch einen Schoppen Apfelwein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-644',
+      ausdruck: 'Riwwele',
+      hochdeutsch: 'Streusel',
+      bedeutung: 'Riwwele sind die Streusel aus Mehl, Butter und Zucker, die auf den Kuchen kommen. En Riwwelkuche ist ein Streuselkuchen. Vom Verb riwwele (zerreiben). Ein Klassiker der hessischen Backstube.',
+      beispiel: 'Aufn Kuche kumme dicke Riwwele.',
+      beispiel_hd: 'Auf den Kuchen kommen dicke Streusel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-645',
+      ausdruck: 'Brieh',
+      hochdeutsch: 'Brühe',
+      bedeutung: 'Die Brieh ist die Brühe oder Suppe, in der Klöße oder Nudeln schwimmen. A heeße Brieh wärmt im Winter. Ein alltägliches Küchenwort der hessischen Mundart.',
+      beispiel: 'In de Brieh schwimme Griesnockerle.',
+      beispiel_hd: 'In der Brühe schwimmen Grießnockerl.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'h-646',
+      ausdruck: 'Krischer',
+      hochdeutsch: 'Schreihals / Heulsuse',
+      bedeutung: 'En Krischer ist jemand, der viel schreit oder weint, vom hessischen krische (schreien, weinen). Sei kä Krischer! mahnt ein weinerliches Kind. Ein bildhaftes Menschenwort.',
+      beispiel: 'Des Kind is heut a rechter Krischer.',
+      beispiel_hd: 'Das Kind ist heute eine rechte Heulsuse.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-647',
+      ausdruck: 'dabbisch',
+      hochdeutsch: 'ungeschickt / tollpatschig',
+      bedeutung: 'dabbisch heißt ungeschickt, tollpatschig oder etwas dümmlich. Stell dich net so dabbisch o! tadelt jemanden für Ungeschick. Ein häufiges hessisches Eigenschaftswort.',
+      beispiel: 'Sei net so dabbisch, halt s fest!',
+      beispiel_hd: 'Sei nicht so ungeschickt, halt es fest!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'h-648',
+      ausdruck: 'babbisch',
+      hochdeutsch: 'klebrig / pappig',
+      bedeutung: 'babbisch beschreibt etwas Klebriges oder Pappiges, vom hessischen babbe (kleben). Die Händ sind ganz babbisch vom Bonbon. Ein anschauliches Alltagswort.',
+      beispiel: 'Mei Händ sind ganz babbisch.',
+      beispiel_hd: 'Meine Hände sind ganz klebrig.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-649',
+      ausdruck: 'Schnudde',
+      hochdeutsch: 'Nasenschleim / Rotznase',
+      bedeutung: 'Die Schnudde ist der Nasenschleim oder die Rotznase, vor allem bei verschnupften Kindern. Wisch der die Schnudd ab! Ein deftiges hessisches Körperwort.',
+      beispiel: 'Des Bübsche hat die Schnudd am laafe.',
+      beispiel_hd: 'Der kleine Junge hat die Nase am Laufen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-650',
+      ausdruck: 'Gosch',
+      hochdeutsch: 'Mund',
+      bedeutung: 'Die Gosch ist der Mund, oft im Sinne von vorlautem Reden. Halt die Gosch! heißt „sei still!". Ein deftiges Alltagswort, das Hessisch mit anderen Mundarten teilt.',
+      beispiel: 'Etz halt emol die Gosch!',
+      beispiel_hd: 'Jetzt halt mal den Mund!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-651',
+      ausdruck: 'Mädche',
+      hochdeutsch: 'Mädchen',
+      bedeutung: 'Es Mädche ist das Mädchen, liebevolle Verkleinerung. Männliches Gegenstück ist de Bub. Ein alltägliches Familienwort der hessischen Mundart.',
+      beispiel: 'Des Mädche geht heut in die Schul.',
+      beispiel_hd: 'Das Mädchen geht heute in die Schule.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-652',
+      ausdruck: 'Babba',
+      hochdeutsch: 'Vater / Papa',
+      bedeutung: 'De Babba ist der Vater oder Papa, ein vertrautes Familienwort. Zusammen mit de Mamma die übliche Anrede der Eltern im Hessischen.',
+      beispiel: 'De Babba kummt glei vun de Arbeit.',
+      beispiel_hd: 'Der Papa kommt gleich von der Arbeit.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-653',
+      ausdruck: 'Mamma',
+      hochdeutsch: 'Mutter / Mama',
+      bedeutung: 'Die Mamma ist die Mutter oder Mama. Die Mamma kocht un sorgt fer die Familie. Ein liebevolles, alltägliches Wort der hessischen Mundart.',
+      beispiel: 'Frag emol die Mamma, ob mer derfe.',
+      beispiel_hd: 'Frag mal die Mama, ob wir dürfen.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'h-654',
+      ausdruck: 'Maa',
+      hochdeutsch: 'Mann',
+      bedeutung: 'De Maa ist der Mann oder Ehemann. Mei Maa heißt mein Mann. Ein Grundwort des hessischen Alltags, oft in Familiengesprächen verwendet.',
+      beispiel: 'Mei Maa schafft in Frankfort.',
+      beispiel_hd: 'Mein Mann arbeitet in Frankfurt.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-655',
+      ausdruck: 'Fraa',
+      hochdeutsch: 'Frau',
+      bedeutung: 'Die Fraa ist die Frau oder Ehefrau, mei Fraa heißt meine Frau. Zusammen mit Maa eines der häufigsten Personenwörter der hessischen Mundart.',
+      beispiel: 'Mei Fraa kummt glei heem.',
+      beispiel_hd: 'Meine Frau kommt gleich nach Hause.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'h-656',
+      ausdruck: 'Buckel',
+      hochdeutsch: 'Rücken',
+      bedeutung: 'De Buckel ist der Rücken. Vom viele Bicke tut mer de Buckel weh. En breite Buckel hat, wer viel aushält. Ein anschauliches Körperwort.',
+      beispiel: 'Vom Schaffe tut mer de Buckel weh.',
+      beispiel_hd: 'Vom Arbeiten tut mir der Rücken weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-657',
+      ausdruck: 'Aag',
+      hochdeutsch: 'Auge',
+      bedeutung: 'Es Aag ist das Auge, Mehrzahl die Aache. Ich hab kä Aag zugemacht heißt „ich habe nicht geschlafen". Ein gängiges Körperwort.',
+      beispiel: 'Mer is ebbes ins Aag gefloge.',
+      beispiel_hd: 'Mir ist etwas ins Auge geflogen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'h-658',
+      ausdruck: 'Daa',
+      hochdeutsch: 'Tag',
+      bedeutung: 'De Daa ist der Tag. En schöne Daa wünscht man zum Abschied. Alle Daa heißt „jeden Tag". Ein häufiges Zeitwort der hessischen Mundart.',
+      beispiel: 'Des war en lange Daa heut.',
+      beispiel_hd: 'Das war ein langer Tag heute.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-659',
+      ausdruck: 'Owend',
+      hochdeutsch: 'Abend',
+      bedeutung: 'De Owend ist der Abend. Gude Owend! ist der Abendgruß. Am Owend sitzt mer beim Schobbe zsamme. Ein alltägliches Zeitwort.',
+      beispiel: 'Am Owend gemmer noch debbe.',
+      beispiel_hd: 'Am Abend gehen wir noch hinaus.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-660',
+      ausdruck: 'Nacht',
+      hochdeutsch: 'Nacht',
+      bedeutung: 'Die Nacht ist die Nacht. Die ganz Nacht durchgemacht heißt, nicht geschlafen zu haben. Gut Nacht! wünscht man vorm Schlafe. Ein alltägliches Wort.',
+      beispiel: 'Die Nacht war mer viel zu kurz.',
+      beispiel_hd: 'Die Nacht war mir viel zu kurz.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-661',
+      ausdruck: 'Sunn',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'Die Sunn ist die Sonne. Wenn die Sunn scheint, hocke die Leut drauße. Ein freundliches Naturwort, das gute Laune verspricht.',
+      beispiel: 'Heut scheint die Sunn de ganze Daa.',
+      beispiel_hd: 'Heute scheint die Sonne den ganzen Tag.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-662',
+      ausdruck: 'Schnee',
+      hochdeutsch: 'Schnee',
+      bedeutung: 'De Schnee fällt im Winter und deckt alles weiß zu. Wenns Schnee gibt, freue sich die Kinner. Ein winterliches Naturwort der hessischen Mundart.',
+      beispiel: 'Heut Nacht is viel Schnee gefalle.',
+      beispiel_hd: 'Heute Nacht ist viel Schnee gefallen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-663',
+      ausdruck: 'Wald',
+      hochdeutsch: 'Wald',
+      bedeutung: 'De Wald umgibt die hessischen Dörfer, vom Taunus bis zum Vogelsberg. Im Wald geht mer spaziere un Pilze suche. Ein vertrautes Naturwort.',
+      beispiel: 'Am Sunndaa laafe mer dorch de Wald.',
+      beispiel_hd: 'Am Sonntag gehen wir durch den Wald.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-664',
+      ausdruck: 'Hund',
+      hochdeutsch: 'Hund',
+      bedeutung: 'De Hund ist der Hund, des treueste Haustier. De Hund muss gassi gefiehrt werre. Ein alltägliches Tierwort der hessischen Mundart.',
+      beispiel: 'De Hund will raus in de Garte.',
+      beispiel_hd: 'Der Hund will raus in den Garten.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-665',
+      ausdruck: 'Katz',
+      hochdeutsch: 'Katze',
+      bedeutung: 'Die Katz ist die Katze, die sich am Owend aufs Sofa legt. Die Katz fängt die Mäus. Ein gängiges Tierwort im hessischen Alltag.',
+      beispiel: 'Die Katz hockt am Owend aufm Sofa.',
+      beispiel_hd: 'Die Katze sitzt am Abend auf dem Sofa.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'h-666',
+      ausdruck: 'gugge',
+      hochdeutsch: 'gucken / schauen',
+      bedeutung: 'gugge heißt schauen oder gucken. Gug emol! bedeutet „schau mal!". Ein hochfrequentes Verb des hessischen Alltags.',
+      beispiel: 'Gug emol, wer do kummt!',
+      beispiel_hd: 'Schau mal, wer da kommt!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-667',
+      ausdruck: 'laafe',
+      hochdeutsch: 'laufen / gehen',
+      bedeutung: 'laafe heißt laufen oder zu Fuß gehen. Mer laafe heem heißt „wir gehen nach Hause". Ein alltägliches Bewegungsverb der hessischen Mundart.',
+      beispiel: 'Mer laafe lieber, des is net weit.',
+      beispiel_hd: 'Wir gehen lieber zu Fuß, das ist nicht weit.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-668',
+      ausdruck: 'hocke',
+      hochdeutsch: 'sitzen',
+      bedeutung: 'hocke heißt im Hessischen schlicht sitzen, nicht nur kauern. Mer hocke zsamme beim Schobbe. Ein zentrales Verb der geselligen Runde.',
+      beispiel: 'Mer hocke am Owend beim Ebbelwoi.',
+      beispiel_hd: 'Wir sitzen am Abend beim Apfelwein.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-669',
+      ausdruck: 'esse',
+      hochdeutsch: 'essen',
+      bedeutung: 'esse heißt essen. Mer esse zsamme zu Mittag. Auch das Essen selbst meint man manchmal. Ein zentrales Alltagsverb der hessischen Mundart.',
+      beispiel: 'Mer esse heut Grie Soß mit Ei.',
+      beispiel_hd: 'Wir essen heute Grüne Soße mit Ei.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'h-670',
+      ausdruck: 'Eens',
+      hochdeutsch: 'eins',
+      bedeutung: 'Eens ist die Zahl eins in hessischer Lautung. Eens, zwaa, drei zählt man im Dialekt. Auch „eins nach dem anderen" sagt man eens nachem annere.',
+      beispiel: 'Gib mer eens vun de Brezel.',
+      beispiel_hd: 'Gib mir eine von den Brezeln.',
+      kategorie: 'zahlen'
     }
   ]
 };

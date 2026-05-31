@@ -13,6 +13,17 @@ export const MAX_REPAIRS = 1;        // max. gehaltene Reparatur-Token
 export const REPAIR_EARN_EVERY = 20; // alle 20 Streak-Tage ein Reparatur-Token
 export const REPAIR_WINDOW_DAYS = 2; // Reparatur nur binnen 2 Tagen nach Bruch
 
+// Defensiv: stellt sicher, dass state.streak ein gültiges Objekt mit days-Map ist.
+function ensureStreak() {
+  if (!state.streak || typeof state.streak !== 'object') {
+    state.streak = { count: 0, lastDay: null, days: {} };
+  }
+  if (!state.streak.days || typeof state.streak.days !== 'object') {
+    state.streak.days = {};
+  }
+  return state.streak;
+}
+
 function todayKey() {
   const d = new Date();
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
@@ -25,7 +36,8 @@ function parseKey(key) {
 
 function dayDiff(a, b) {
   if (!a || !b) return Infinity;
-  return Math.round((parseKey(b) - parseKey(a)) / DAY_MS);
+  const diff = (parseKey(b) - parseKey(a)) / DAY_MS;
+  return Number.isFinite(diff) ? Math.round(diff) : Infinity;
 }
 
 function isWeekendKey(key) {
@@ -116,9 +128,9 @@ function grantMilestoneRewards() {
 }
 
 export function registerStreak() {
+  ensureStreak();
   const today = todayKey();
   ensureProtectionDefaults();
-  if (!state.streak.days) state.streak.days = {};
 
   // Veralteten Bruch (außerhalb des Reparaturfensters) verwerfen.
   if (state.streak.lastBreak && dayDiff(state.streak.lastBreak.brokenOn, today) > REPAIR_WINDOW_DAYS) {
@@ -173,7 +185,7 @@ export function registerStreak() {
 }
 
 export function getStreak() {
-  return state.streak.count || 0;
+  return ensureStreak().count || 0;
 }
 
 // Schutz-Übersicht für die UI.

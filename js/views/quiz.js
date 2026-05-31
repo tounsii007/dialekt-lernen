@@ -114,7 +114,7 @@ export function handleQuizKey(e) {
   const quiz = getQuiz();
   if (!quiz || quiz.idx >= quiz.questions.length) return;
   if (e.key >= '1' && e.key <= '4') {
-    const idx = parseInt(e.key) - 1;
+    const idx = parseInt(e.key, 10) - 1;
     const btns = document.querySelectorAll('.quiz-option');
     if (btns[idx] && !btns[idx].disabled) btns[idx].click();
   }

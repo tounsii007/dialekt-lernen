@@ -299,6 +299,150 @@ export default {
       beispiel: 'A so, des hob i gar net gwusst.',
       beispiel_hd: 'Ach so, das habe ich gar nicht gewusst.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'kt-033',
+      ausdruck: 'Marille',
+      hochdeutsch: 'Aprikose',
+      bedeutung: 'Marille ist die Aprikose, das österreichische Wort. Aus Marillen macht man Marmelade, Knödl und Schnaps. Ein beliebtes Sommerobst.',
+      beispiel: 'Aus Marillen koch ma a Marmelad.',
+      beispiel_hd: 'Aus Aprikosen kochen wir Marmelade.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'kt-034',
+      ausdruck: 'Powidl',
+      hochdeutsch: 'Pflaumenmus',
+      bedeutung: 'Powidl ist eingekochtes Pflaumenmus ohne Zucker, das in Powidltascherl oder aufs Brot kommt. Übertragen heißt des is mir powidl auch „das ist mir egal".',
+      beispiel: 'In d Tascherl kummt Powidl eini.',
+      beispiel_hd: 'In die Teigtaschen kommt Pflaumenmus hinein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'kt-035',
+      ausdruck: 'Palatschinke',
+      hochdeutsch: 'dünner Eierkuchen',
+      bedeutung: 'A Palatschinke ist ein dünner, gefüllter Eierkuchen, süß mit Marmelade oder Topfen. Eine Mehlspeise, die in ganz Österreich beliebt ist.',
+      beispiel: 'Zum Nachtisch gibts a Palatschinke.',
+      beispiel_hd: 'Zum Nachtisch gibt es einen Eierkuchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'kt-036',
+      ausdruck: 'Germknödel',
+      hochdeutsch: 'Hefekloß mit Powidl',
+      bedeutung: 'A Germknödel ist ein flaumiger Hefekloß, gefüllt mit Powidl und übergossen mit Vanillesoße und Mohn. Eine warme Mehlspeise, oft auf der Skihütte.',
+      beispiel: 'Auf da Hüttn iss i an Germknödel.',
+      beispiel_hd: 'Auf der Hütte esse ich einen Germknödel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'kt-037',
+      ausdruck: 'Häferl',
+      hochdeutsch: 'Tasse / Becher',
+      bedeutung: 'A Häferl ist eine Tasse oder ein Becher, etwa fürs Kaffeetrinken. A Häferl Kaffee am Morgen gehört dazu. Ein gängiges österreichisches Wort.',
+      beispiel: 'I trink a Häferl Kaffee.',
+      beispiel_hd: 'Ich trinke eine Tasse Kaffee.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-038',
+      ausdruck: 'Sessel',
+      hochdeutsch: 'Stuhl',
+      bedeutung: 'Der Sessel ist in Österreich der einfache Stuhl, nicht der Polstersessel. Setz di auf an Sessel heißt, sich auf einen Stuhl zu setzen. Eine österreichische Eigenheit.',
+      beispiel: 'Hol da an Sessel und setz di her.',
+      beispiel_hd: 'Hol dir einen Stuhl und setz dich her.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-039',
+      ausdruck: 'Polster',
+      hochdeutsch: 'Kissen',
+      bedeutung: 'Der Polster ist das Kopfkissen, auf dem man schläft. A weicher Polster lässt gut schlafen. Das österreichische Wort fürs Kissen.',
+      beispiel: 'I brauch an weichen Polster zum Schlafn.',
+      beispiel_hd: 'Ich brauche ein weiches Kissen zum Schlafen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-040',
+      ausdruck: 'Tuchent',
+      hochdeutsch: 'Bettdecke / Federdecke',
+      bedeutung: 'D Tuchent ist die dicke Federbett-Decke, unter die man sich im Winter kuschelt. Eine warme Tuchent gehört zum österreichischen Schlafzimmer.',
+      beispiel: 'Im Winter zieh i d Tuchent bis ans Kinn.',
+      beispiel_hd: 'Im Winter ziehe ich die Bettdecke bis ans Kinn.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-041',
+      ausdruck: 'Sackerl',
+      hochdeutsch: 'Tüte / Beutel',
+      bedeutung: 'A Sackerl ist eine kleine Tüte oder ein Beutel, etwa fürs Einkaufen. Tua de Semmeln ins Sackerl. Ein typisch österreichisches Wort.',
+      beispiel: 'Geben S ma bitte a Sackerl dazua.',
+      beispiel_hd: 'Geben Sie mir bitte eine Tüte dazu.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-042',
+      ausdruck: 'Trafik',
+      hochdeutsch: 'Tabak- und Zeitungsladen',
+      bedeutung: 'D Trafik ist der kleine Laden für Zigaretten, Zeitungen und Fahrscheine, oft von einem Trafikanten geführt. Eine österreichische Institution.',
+      beispiel: 'In da Trafik kauf i a Zeitung.',
+      beispiel_hd: 'Im Tabakladen kaufe ich eine Zeitung.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'kt-043',
+      ausdruck: 'Stiege',
+      hochdeutsch: 'Treppe',
+      bedeutung: 'D Stiege ist die Treppe. Über d Stiege geht man in den ersten Stock. Ein im österreichischen Raum verbreitetes Wort fürs Treppenhaus.',
+      beispiel: 'Geh d Stiege auffi, s Zimmer is obn.',
+      beispiel_hd: 'Geh die Treppe hinauf, das Zimmer ist oben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'kt-044',
+      ausdruck: 'Jänner',
+      hochdeutsch: 'Januar',
+      bedeutung: 'Jänner ist der Januar, der erste Monat des Jahres. Im Jänner liegt am Berg viel Schnee. Das Wort ist in ganz Österreich üblich.',
+      beispiel: 'Im Jänner is da See zugfrorn.',
+      beispiel_hd: 'Im Januar ist der See zugefroren.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-045',
+      ausdruck: 'Topfen',
+      hochdeutsch: 'Quark',
+      bedeutung: 'Topfen ist der Quark, Grundlage vieler Mehlspeisen wie Topfenstrudel oder der Fülle für d Kasnudl. Ein vielseitiges österreichisches Milchprodukt.',
+      beispiel: 'In d Kasnudl kummt Topfen eini.',
+      beispiel_hd: 'In die Kasnudeln kommt Quark hinein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'kt-046',
+      ausdruck: 'Obers',
+      hochdeutsch: 'Sahne / Rahm',
+      bedeutung: 'Obers ist die Schlagsahne oder der Rahm. Auf an Kaffee kummt a Schlagobers. Ein gängiges österreichisches Küchenwort.',
+      beispiel: 'Auf d Palatschinke kummt a Obers.',
+      beispiel_hd: 'Auf den Eierkuchen kommt Sahne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'kt-047',
+      ausdruck: 'Beisl',
+      hochdeutsch: 'kleine Wirtschaft / Kneipe',
+      bedeutung: 'A Beisl ist eine kleine, einfache Wirtschaft oder Kneipe, in der man günstig isst und trinkt. Ins Beisl geh heißt, in die Stammkneipe zu gehen.',
+      beispiel: 'Am Ownd treffma uns im Beisl.',
+      beispiel_hd: 'Am Abend treffen wir uns in der Kneipe.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'kt-048',
+      ausdruck: 'Vogerlsalat',
+      hochdeutsch: 'Feldsalat',
+      bedeutung: 'Vogerlsalat ist der Feldsalat, gern mit Kürbiskernöl und Erdäpfeln angemacht. Eine beliebte Beilage in der Kärntner und österreichischen Küche.',
+      beispiel: 'Als Beilag gibts an Vogerlsalat.',
+      beispiel_hd: 'Als Beilage gibt es Feldsalat.',
+      kategorie: 'essen'
     }
   ]
 };

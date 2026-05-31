@@ -20,7 +20,7 @@ const VELOCITY_BOOST = 0.45; // Boost für schnelle Wischgesten (px/ms)
 export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, onFlip }) {
   const c = session.cards[session.idx];
   const total = session.cards.length;
-  const progress = ((session.idx) / total) * 100;
+  const progress = total > 0 ? (session.idx / total) * 100 : 0;
   const fav = isFavorit(c.dialektId, c.id);
   // FSRS-Intervall-Vorschau je Bewertung (null im SM-2-Modus → keine Hints).
   const preview = getReviewPreview(c.dialektId, c.id);

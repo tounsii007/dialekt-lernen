@@ -245,6 +245,96 @@ export default {
       beispiel: 'Heuer hamma a guade Ernte.',
       beispiel_hd: 'Dieses Jahr haben wir eine gute Ernte.',
       kategorie: 'alltag'
+    },
+    {
+      id: 'op-027',
+      ausdruck: 'Reng',
+      hochdeutsch: 'Regen',
+      bedeutung: 'Reng ist der Regen, in nordbairischer Lautung. Bei Reng bleibt ma dahoam. Ein häufiges Wetterwort der Oberpfalz.',
+      beispiel: 'Bei dem Reng geh i ned naus.',
+      beispiel_hd: 'Bei dem Regen gehe ich nicht hinaus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-028',
+      ausdruck: 'Sunna',
+      hochdeutsch: 'Sonne',
+      bedeutung: 'D Sunna ist die Sonne. Wenn d Sunna scheint, sitzt ma gern vor da Zoiglstubn. Ein freundliches Naturwort der bairischen Mundart.',
+      beispiel: 'Heit scheint d Sunna den ganzn Doch.',
+      beispiel_hd: 'Heute scheint die Sonne den ganzen Tag.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-029',
+      ausdruck: 'Baam',
+      hochdeutsch: 'Baum',
+      bedeutung: 'Da Baam ist der Baum, Mehrzahl Baam. Unter am Baam findt ma im Summa Schattn. Ein gängiges Naturwort des nordbairischen Raums.',
+      beispiel: 'Vorm Haus steht a oida Baam.',
+      beispiel_hd: 'Vor dem Haus steht ein alter Baum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-030',
+      ausdruck: 'Wåssa',
+      hochdeutsch: 'Wasser',
+      bedeutung: 'Wåssa ist das Wasser, mit dem dunklen nordbairischen a. A Glasl Wåssa zum Zoigl schadt ned. Ein alltägliches Grundwort.',
+      beispiel: 'Gib ma a Glasl Wåssa.',
+      beispiel_hd: 'Gib mir ein Glas Wasser.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-031',
+      ausdruck: 'Muich',
+      hochdeutsch: 'Milch',
+      bedeutung: 'D Muich ist die Milch, mit der typischen Lautung. Frische Muich hoit ma vom Bauern. Ein Grundnahrungsmittel der ländlichen Oberpfalz.',
+      beispiel: 'D Muich is heit frisch vom Bauern.',
+      beispiel_hd: 'Die Milch ist heute frisch vom Bauern.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'op-032',
+      ausdruck: 'schee',
+      hochdeutsch: 'schön',
+      bedeutung: 'schee heißt schön. Des is schee! ist ein begeistertes Lob. A schee Madl, a schee Landschaft — ein vielseitiges Eigenschaftswort.',
+      beispiel: 'D Landschaft is do echt schee.',
+      beispiel_hd: 'Die Landschaft ist hier echt schön.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'op-033',
+      ausdruck: 'oiwei',
+      hochdeutsch: 'immer',
+      bedeutung: 'oiwei bedeutet immer oder ständig. Der kummt oiwei z spät heißt „der kommt immer zu spät". Ein häufiges Zeitwort der bairischen Rede.',
+      beispiel: 'Du host oiwei was zum Meckern.',
+      beispiel_hd: 'Du hast immer etwas zu meckern.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'op-034',
+      ausdruck: 'Ohrwaschl',
+      hochdeutsch: 'Ohr',
+      bedeutung: 'S Ohrwaschl ist das Ohr. Schreib da des hinter d Ohrwaschl heißt, sich etwas gut zu merken. Ein anschauliches bairisches Körperwort.',
+      beispiel: 'Mir is heit s Ohrwaschl kalt.',
+      beispiel_hd: 'Mir ist heute das Ohr kalt.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'op-035',
+      ausdruck: 'Kerwa',
+      hochdeutsch: 'Kirchweihfest',
+      bedeutung: 'D Kerwa ist das Kirchweihfest, das größte Dorffest mit Musik, Tanz und Bier. Auf da Kerwa trifft sich das ganze Dorf. Ein Höhepunkt im Festkalender.',
+      beispiel: 'Am Wochenend is bei uns Kerwa.',
+      beispiel_hd: 'Am Wochenende ist bei uns Kirchweih.',
+      kategorie: 'feiern'
+    },
+    {
+      id: 'op-036',
+      ausdruck: 'dees',
+      hochdeutsch: 'das / dieses',
+      bedeutung: 'dees ist das nordbairische „das" oder „dieses". Dees do mecht i heißt „das da möchte ich". Ein häufiges Hinweiswort der Mundart.',
+      beispiel: 'Dees do schmeckt ma am bestn.',
+      beispiel_hd: 'Das da schmeckt mir am besten.',
+      kategorie: 'redensart'
     }
   ]
 };

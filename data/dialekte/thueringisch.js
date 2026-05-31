@@ -209,6 +209,132 @@ export default {
       beispiel: 'Das machmr morgn, gell?',
       beispiel_hd: 'Das machen wir morgen, nicht wahr?',
       kategorie: 'redensart'
+    },
+    {
+      id: 'th-023',
+      ausdruck: 'heeme',
+      hochdeutsch: 'nach Hause / daheim',
+      bedeutung: 'heeme bedeutet nach Hause oder daheim, mit dem typisch thüringischen langen ee. Ich geh heeme heißt „ich gehe nach Hause". Ein warmherziges Alltagswort.',
+      beispiel: 'Ich muss jetz heeme.',
+      beispiel_hd: 'Ich muss jetzt nach Hause.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-024',
+      ausdruck: 'Mudder',
+      hochdeutsch: 'Mutter',
+      bedeutung: 'Die Mudder ist die Mutter, mit der für Thüringen typischen Lautung. Zusammen mit dem Vadder eines der häufigsten Familienwörter im Alltag.',
+      beispiel: 'Die Mudder kocht heit Kließ.',
+      beispiel_hd: 'Die Mutter kocht heute Klöße.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'th-025',
+      ausdruck: 'Vadder',
+      hochdeutsch: 'Vater',
+      bedeutung: 'Der Vadder ist der Vater. Mei Vadder geht in die Arweit. Gemeinsam mit der Mudder bildet er die thüringische Familie. Ein vertrautes Wort.',
+      beispiel: 'Der Vadder schraubt am Auto.',
+      beispiel_hd: 'Der Vater schraubt am Auto.',
+      kategorie: 'familie'
+    },
+    {
+      id: 'th-026',
+      ausdruck: 'Beene',
+      hochdeutsch: 'Beine',
+      bedeutung: 'Beene sind die Beine, Einzahl Been. Nach dem langen Weg tun mr die Beene weh. Ein gängiges Körperwort der ostmitteldeutschen Mundart.',
+      beispiel: 'Mir tun vom Stehn die Beene weh.',
+      beispiel_hd: 'Mir tun vom Stehen die Beine weh.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'th-027',
+      ausdruck: 'Kopp',
+      hochdeutsch: 'Kopf',
+      bedeutung: 'Der Kopp ist der Kopf. Sich den Kopp zerbrechen heißt, angestrengt nachzudenken. Ein häufiges Körperwort, das Thüringisch mit vielen Mundarten teilt.',
+      beispiel: 'Mir brummt heit der Kopp.',
+      beispiel_hd: 'Mir brummt heute der Kopf.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'th-028',
+      ausdruck: 'schwätzn',
+      hochdeutsch: 'reden / schwatzen',
+      bedeutung: 'schwätzn heißt reden oder sich unterhalten. Die zwee schwätzn schon den ganzen Tag. Ein alltägliches Verb des thüringischen Sprachgebrauchs.',
+      beispiel: 'Die beedn schwätzn übern Zaun.',
+      beispiel_hd: 'Die beiden reden über den Zaun.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-029',
+      ausdruck: 'loofen',
+      hochdeutsch: 'laufen / gehen',
+      bedeutung: 'loofen heißt laufen oder zu Fuß gehen. Mir loofen den ganzen Weg. Die Lautung mit oo statt au ist typisch ostmitteldeutsch.',
+      beispiel: 'Mir sin den ganzn Weg geloofen.',
+      beispiel_hd: 'Wir sind den ganzen Weg gelaufen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-030',
+      ausdruck: 'horchen',
+      hochdeutsch: 'zuhören / lauschen',
+      bedeutung: 'horchen heißt zuhören oder lauschen. Horch ma! bedeutet „hör mal!". Ein im thüringisch-sächsischen Raum übliches Verb des Hinhörens.',
+      beispiel: 'Horch ma, was die da sahn.',
+      beispiel_hd: 'Hör mal, was die da sagen.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-031',
+      ausdruck: 'meckern',
+      hochdeutsch: 'nörgeln / sich beschweren',
+      bedeutung: 'meckern heißt nörgeln oder ständig etwas zu beanstanden haben. Der meckert über alles. Ein verbreitetes Wort für miesepetriges Verhalten.',
+      beispiel: 'Nu hör uff zu meckern!',
+      beispiel_hd: 'Nun hör auf zu nörgeln!',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-032',
+      ausdruck: 'weeßte',
+      hochdeutsch: 'weißt du',
+      bedeutung: 'weeßte ist die verschliffene Form von „weißt du" und leitet oft einen Satz ein. Weeßte was? heißt „weißt du was?". Typisch für die schnelle Aussprache.',
+      beispiel: 'Weeßte, das war so.',
+      beispiel_hd: 'Weißt du, das war so.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'th-033',
+      ausdruck: 'Reen',
+      hochdeutsch: 'Regen',
+      bedeutung: 'Reen ist der Regen, mit der gedehnten thüringischen Lautung. Bei dem Reen bleibmr lieber drinne. Ein häufiges Wetterwort.',
+      beispiel: 'Bei dem Reen geh ich nich raus.',
+      beispiel_hd: 'Bei dem Regen gehe ich nicht raus.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'th-034',
+      ausdruck: 'Kraut',
+      hochdeutsch: 'Kohl / Sauerkraut',
+      bedeutung: 'Kraut ist der Kohl, vor allem das Sauerkraut, das zum Bratel gereicht wird. Kraut un Kließ gehören zum thüringischen Sonntagsessen.',
+      beispiel: 'Zum Bratn gibts Kraut un Kließ.',
+      beispiel_hd: 'Zum Braten gibt es Kraut und Klöße.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'th-035',
+      ausdruck: 'Bratel',
+      hochdeutsch: 'Braten',
+      bedeutung: 'Der Bratel ist der Braten, das Herzstück des thüringischen Sonntagsessens, mit Kließ und Stippe. Ein guter Bratel braucht Zeit im Rohr.',
+      beispiel: 'Sonntags gibts an Bratel mit Kließ.',
+      beispiel_hd: 'Sonntags gibt es einen Braten mit Klößen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'th-036',
+      ausdruck: 'aamol',
+      hochdeutsch: 'einmal / mal',
+      bedeutung: 'aamol bedeutet einmal oder mal, oft als Aufforderung. Komm aamol her! heißt „komm mal her!". Ein häufiges Würzwort der thüringischen Rede.',
+      beispiel: 'Guck aamol da nüber.',
+      beispiel_hd: 'Schau mal da hinüber.',
+      kategorie: 'redensart'
     }
   ]
 };
