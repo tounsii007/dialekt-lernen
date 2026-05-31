@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../data/achievements_store.dart';
 import '../data/models.dart';
+import '../data/notes_store.dart';
 import '../data/xp_store.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
+import '../widgets/deck_note_actions.dart';
 import '../widgets/favorite_button.dart';
 import '../widgets/glass_card.dart';
 import '../widgets/speak_button.dart';
@@ -229,9 +231,98 @@ class _AusdruckTile extends StatelessWidget {
                 ),
               ),
             ],
+            const SizedBox(height: AppSpacing.x3),
+            _TileActions(
+              dialektId: dialektId,
+              ausdruckId: ausdruck.id,
+              title: ausdruck.ausdruck,
+              accent: accent,
+            ),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Notiz- und Deck-Aktionen am Fuß eines aufgeklappten Ausdrucks.
+class _TileActions extends StatelessWidget {
+  const _TileActions({
+    required this.dialektId,
+    required this.ausdruckId,
+    required this.title,
+    required this.accent,
+  });
+
+  final String dialektId;
+  final String ausdruckId;
+  final String title;
+  final Color accent;
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    return ListenableBuilder(
+      listenable: NotesStore.instance,
+      builder: (context, _) {
+        final note = NotesStore.instance.getNote(dialektId, ausdruckId);
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (note.isNotEmpty)
+              Container(
+                width: double.infinity,
+                margin: const EdgeInsets.only(bottom: AppSpacing.x2),
+                padding: const EdgeInsets.all(AppSpacing.x3),
+                decoration: BoxDecoration(
+                  color: AppColors.warm.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(AppRadii.sm),
+                  border: Border.all(
+                      color: AppColors.warm.withValues(alpha: 0.35)),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('📝 ', style: TextStyle(fontSize: 13)),
+                    Expanded(
+                      child: Text(note,
+                          style: const TextStyle(fontSize: 13, height: 1.4)),
+                    ),
+                  ],
+                ),
+              ),
+            Row(
+              children: [
+                TextButton.icon(
+                  onPressed: () => showNoteEditor(
+                    context,
+                    dialektId: dialektId,
+                    ausdruckId: ausdruckId,
+                    title: title,
+                  ),
+                  icon: Icon(
+                      note.isEmpty
+                          ? Icons.note_add_outlined
+                          : Icons.edit_note_rounded,
+                      size: 18),
+                  label: Text(note.isEmpty ? 'Notiz' : 'Notiz bearbeiten'),
+                  style: TextButton.styleFrom(foregroundColor: surfaces.textMuted),
+                ),
+                const SizedBox(width: AppSpacing.x2),
+                TextButton.icon(
+                  onPressed: () => showAddToDeckSheet(
+                    context,
+                    (dialektId: dialektId, id: ausdruckId),
+                  ),
+                  icon: const Icon(Icons.playlist_add_rounded, size: 18),
+                  label: const Text('Deck'),
+                  style: TextButton.styleFrom(foregroundColor: surfaces.textMuted),
+                ),
+              ],
+            ),
+          ],
+        );
+      },
     );
   }
 }

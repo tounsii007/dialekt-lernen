@@ -39,6 +39,17 @@ class DialektRepository {
     return null;
   }
 
+  /// Löst eine Referenz (dialektId, ausdruckId) zu Dialekt + Ausdruck auf.
+  ({Dialekt dialekt, Ausdruck ausdruck})? resolve(
+      String dialektId, String ausdruckId) {
+    final d = byId(dialektId);
+    if (d == null) return null;
+    for (final a in d.ausdruecke) {
+      if (a.id == ausdruckId) return (dialekt: d, ausdruck: a);
+    }
+    return null;
+  }
+
   String kategorieLabel(String id) {
     for (final k in _kategorien) {
       if (k.id == id) return k.label;
