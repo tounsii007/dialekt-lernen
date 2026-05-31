@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../data/achievements_store.dart';
 import '../data/favorites_store.dart';
 import '../data/goals_store.dart';
+import '../data/quests_store.dart';
 import '../data/repository.dart';
 import '../data/srs_store.dart';
 import '../data/streak_store.dart';
@@ -70,6 +71,7 @@ class _SplashScreenState extends State<SplashScreen>
       await XpStore.instance.load();
       await StreakStore.instance.load();
       await GoalsStore.instance.load();
+      await QuestsStore.instance.load();
       await AchievementsStore.instance.load();
     } catch (_) {
       // Daten konnten nicht geladen werden — App startet trotzdem.

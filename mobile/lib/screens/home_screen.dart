@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../data/achievements_store.dart';
 import '../data/goals_store.dart';
+import '../data/quests_store.dart';
 import '../data/repository.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
@@ -14,6 +15,7 @@ import '../widgets/progress_hud.dart';
 import 'achievements_screen.dart';
 import 'dialekt_detail_screen.dart';
 import 'goals_screen.dart';
+import 'quests_screen.dart';
 import 'search_screen.dart';
 import 'settings_screen.dart';
 
@@ -77,6 +79,10 @@ class HomeScreen extends StatelessWidget {
 
             // Schnellzugriff: Tagesziel + Erfolge
             const _QuickTiles(),
+            const SizedBox(height: AppSpacing.x3),
+
+            // Tagesquests
+            const _QuestsCard(),
             const SizedBox(height: AppSpacing.x6),
 
             // Eyebrow
@@ -254,6 +260,80 @@ class _QuickTiles extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _QuestsCard extends StatelessWidget {
+  const _QuestsCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final store = QuestsStore.instance;
+    final surfaces = AppSurfaces.of(context);
+    return ListenableBuilder(
+      listenable: store,
+      builder: (context, _) {
+        final summary = store.summary();
+        final pct = summary.total == 0 ? 0.0 : summary.done / summary.total;
+        return GlassCard(
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (_) => const QuestsScreen()),
+          ),
+          accent: AppColors.accent,
+          padding: const EdgeInsets.all(AppSpacing.x4),
+          child: Row(
+            children: [
+              const Text('🗺️', style: TextStyle(fontSize: 22)),
+              const SizedBox(width: AppSpacing.x3),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Expanded(
+                          child: Text(
+                            'Tagesquests',
+                            style: TextStyle(
+                              fontSize: 14.5,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          summary.allDone
+                              ? 'Alle erledigt 🎉'
+                              : '${summary.done} / ${summary.total} erledigt',
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            color: surfaces.textMuted,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: AppSpacing.x2),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(AppRadii.pill),
+                      child: LinearProgressIndicator(
+                        value: pct.clamp(0.0, 1.0),
+                        minHeight: 6,
+                        backgroundColor:
+                            surfaces.border.withValues(alpha: 0.6),
+                        valueColor: const AlwaysStoppedAnimation<Color>(
+                          AppColors.accent,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpacing.x2),
+              Icon(Icons.chevron_right_rounded, color: surfaces.textMuted),
+            ],
+          ),
+        );
+      },
     );
   }
 }

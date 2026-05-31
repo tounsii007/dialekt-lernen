@@ -3,8 +3,10 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../data/achievements_store.dart';
+import '../data/combo_controller.dart';
 import '../data/goals_store.dart';
 import '../data/models.dart';
+import '../data/quests_store.dart';
 import '../data/repository.dart';
 import '../data/srs_store.dart';
 import '../data/streak_store.dart';
@@ -12,6 +14,7 @@ import '../data/xp_store.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
+import '../widgets/level_up_overlay.dart';
 import '../widgets/speak_button.dart';
 
 const int _kSessionSize = 20;
@@ -52,6 +55,7 @@ class _LernenScreenState extends State<LernenScreen>
   }
 
   void _buildSession({bool studyAhead = false}) {
+    ComboController.instance.reset();
     final srs = SrsStore.instance;
     final now = DateTime.now().millisecondsSinceEpoch;
     final all = <_Card>[
@@ -98,13 +102,36 @@ class _LernenScreenState extends State<LernenScreen>
 
   Future<void> _rate(int rating) async {
     final card = _session[_index];
+    final wasNew = SrsStore.instance.isNew(card.key);
+    final correct = rating != ratingHard;
+
     await SrsStore.instance.review(card.key, rating);
     await StreakStore.instance.register();
     await GoalsStore.instance.increment();
-    await XpStore.instance.award(XpReward.cardReviewed, 'card-reviewed');
+
+    // Combo aufbauen/brechen und XP mit Multiplikator gutschreiben.
+    final combo = ComboController.instance.registerHit(correct);
+    final baseXp = wasNew ? XpReward.cardLearned : XpReward.cardReviewed;
+    final gainedXp = applyComboToXp(baseXp, combo.multiplier);
+    final reason = wasNew ? 'card-learned' : 'card-reviewed';
+    final award = await XpStore.instance.award(gainedXp, reason);
+    await QuestsStore.instance.trackFromReason(reason, gainedXp);
+
     _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
+
+    if (!mounted) return;
+    if (award.levelUp) {
+      await showLevelUpCelebration(
+        context,
+        level: award.level,
+        title: levelTitle(award.level),
+      );
+      if (!mounted) return;
+    }
+
     if (_index + 1 >= _session.length) {
       await AchievementsStore.instance.evaluateFromStores();
+      if (!mounted) return;
       setState(() => _finished = true);
       return;
     }
@@ -146,6 +173,7 @@ class _LernenScreenState extends State<LernenScreen>
                   style: Theme.of(context).textTheme.headlineMedium
                       ?.copyWith(fontSize: 24)),
               const Spacer(),
+              const _ComboBadge(),
               SpeakButton(
                 text: card.ausdruck.ausdruck,
                 lang: card.dialekt.lang,
@@ -324,6 +352,49 @@ class _RateButton extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Live-Combo-Anzeige im Kopf: erscheint ab 2 in Folge, zeigt Zähler und (ab
+/// Tier-Schwelle) den XP-Multiplikator.
+class _ComboBadge extends StatelessWidget {
+  const _ComboBadge();
+
+  static String _fmtMult(double m) =>
+      m.toStringAsFixed(2).replaceFirst(RegExp(r'\.?0+$'), '');
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: ComboController.instance,
+      builder: (context, _) {
+        final combo = ComboController.instance;
+        if (combo.count < 2) return const SizedBox.shrink();
+        final mult = combo.multiplier;
+        final label = mult > 1.0
+            ? '🔥 ${combo.count} · ${_fmtMult(mult)}×'
+            : '🔥 ${combo.count}';
+        return Padding(
+          padding: const EdgeInsets.only(right: AppSpacing.x2),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            decoration: BoxDecoration(
+              color: AppColors.warm.withValues(alpha: 0.16),
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+              border: Border.all(color: AppColors.warm.withValues(alpha: 0.5)),
+            ),
+            child: Text(
+              label,
+              style: const TextStyle(
+                color: AppColors.warm,
+                fontSize: 12.5,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
