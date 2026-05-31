@@ -90,30 +90,30 @@
 
       <div class="topbar-actions">
         <div id="xpBarSlot" class="xp-bar-slot" aria-hidden="true"></div>
-        <button id="searchOpen" class="search-trigger" aria-label="Suchen" title="Suchen (S)">
+        <button type="button" id="searchOpen" class="search-trigger" aria-label="Suchen" title="Suchen (S)">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
           <span class="search-trigger-text">Suchen oder springen…</span>
           <kbd class="kbd search-trigger-kbd">S</kbd>
         </button>
-        <button id="paletteToggle" class="icon-btn palette-toggle" aria-label="Farbpalette wählen" title="Farbpalette">
+        <button type="button" id="paletteToggle" class="icon-btn palette-toggle" aria-label="Farbpalette wählen" title="Farbpalette">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 22a10 10 0 0 1 0-20 9 9 0 0 1 9 9c0 2.5-2 4-4 4h-2a2 2 0 0 0-1.4 3.4A1.7 1.7 0 0 1 12 22z"/></svg>
         </button>
         <a href="#/favoriten" id="notifyShortcut" class="icon-btn notify-shortcut" aria-label="Benachrichtigungen verwalten" title="Erinnerung verwalten">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
         </a>
-        <button id="soundToggle" class="icon-btn sound-toggle" aria-label="Sounds ein/aus" title="Sounds (M)">
+        <button type="button" id="soundToggle" class="icon-btn sound-toggle" aria-label="Sounds ein/aus" title="Sounds (M)">
           <svg class="icon-sound-on" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M19 6a8 8 0 0 1 0 12"/></svg>
           <svg class="icon-sound-off" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
         </button>
-        <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
+        <button type="button" id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
           <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <button id="dyslexicToggle" class="icon-btn dyslexic-toggle" aria-label="Dyslexie-freundliche Schrift" title="Dyslexie-freundliche Schrift" aria-pressed="false">Aa</button>
-        <button id="langToggle" class="icon-btn lang-toggle" aria-label="Sprache wechseln" title="Sprache wechseln">DE</button>
+        <button type="button" id="dyslexicToggle" class="icon-btn dyslexic-toggle" aria-label="Dyslexie-freundliche Schrift" title="Dyslexie-freundliche Schrift" aria-pressed="false">Aa</button>
+        <button type="button" id="langToggle" class="icon-btn lang-toggle" aria-label="Sprache wechseln" title="Sprache wechseln">DE</button>
       </div>
 
-      <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Menü">
+      <button type="button" id="menuToggle" class="icon-btn menu-toggle" aria-label="Menü">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>
@@ -148,7 +148,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <span>Dialekto · Mit ♥ für die deutsche Sprachvielfalt</span>
-      <span class="footer-meta"><span id="appVersionLabel">v…</span> · <span id="dataStatsLabel">… Ausdrücke</span> · <button id="addDialectHint" class="link-btn">Eigenen Dialekt hinzufügen?</button> · <button id="restartTour" class="link-btn">Tour starten</button></span>
+      <span class="footer-meta"><span id="appVersionLabel">v…</span> · <span id="dataStatsLabel">… Ausdrücke</span> · <button type="button" id="addDialectHint" class="link-btn">Eigenen Dialekt hinzufügen?</button> · <button type="button" id="restartTour" class="link-btn">Tour starten</button></span>
     </div>
   </footer>
 
