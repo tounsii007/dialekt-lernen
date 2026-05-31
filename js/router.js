@@ -36,7 +36,8 @@ const ROUTE_LABELS = {
   idiome:    'Idiom-Explorer',
   lektionen: 'Mini-Lektionen',
   liga:      'Lokale Liga',
-  lernpfad:  'Lernpfad'
+  lernpfad:  'Lernpfad',
+  shadowing: 'Shadowing-Trainer'
 };
 
 // Lazy: erst beim Bedarf laden + danach gecached.
@@ -51,7 +52,8 @@ const lazyLoaders = {
   idiome:    () => import('./views/idiome.js'),
   lektionen: () => import('./views/lektionen.js'),
   liga:      () => import('./views/liga.js'),
-  lernpfad:  () => import('./views/lernpfad.js')
+  lernpfad:  () => import('./views/lernpfad.js'),
+  shadowing: () => import('./views/shadowing.js')
 };
 const lazyCache = {};
 
@@ -176,6 +178,11 @@ async function renderRoute(app, route, segs, params) {
       const m = await loadLazy('lernpfad');
       if (!m) return;
       return m.renderLernpfad(app);
+    }
+    case 'shadowing': {
+      const m = await loadLazy('shadowing');
+      if (!m) return;
+      return m.renderShadowing(app, params);
     }
     default:
       return renderHome(app);
