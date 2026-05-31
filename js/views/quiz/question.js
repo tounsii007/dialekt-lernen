@@ -8,7 +8,7 @@ const TIMER_SECONDS = 20;
 export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
   const q = quiz.questions[quiz.idx];
   const total = quiz.questions.length;
-  const progress = ((quiz.idx) / total) * 100;
+  const progress = total > 0 ? (quiz.idx / total) * 100 : 0;
   const timerEnabled = quiz.timerEnabled !== false;
 
   const wrap = el('div', { class: 'quiz-stage' });

@@ -4,6 +4,17 @@ import { state, persist } from './state.js';
 
 const DAY_MS = 86_400_000;
 
+// Defensiv: stellt sicher, dass state.streak ein gültiges Objekt mit days-Map ist.
+function ensureStreak() {
+  if (!state.streak || typeof state.streak !== 'object') {
+    state.streak = { count: 0, lastDay: null, days: {} };
+  }
+  if (!state.streak.days || typeof state.streak.days !== 'object') {
+    state.streak.days = {};
+  }
+  return state.streak;
+}
+
 function todayKey() {
   const d = new Date();
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
@@ -16,12 +27,13 @@ function parseKey(key) {
 
 function dayDiff(a, b) {
   if (!a || !b) return Infinity;
-  return Math.round((parseKey(b) - parseKey(a)) / DAY_MS);
+  const diff = (parseKey(b) - parseKey(a)) / DAY_MS;
+  return Number.isFinite(diff) ? Math.round(diff) : Infinity;
 }
 
 export function registerStreak() {
+  ensureStreak();
   const today = todayKey();
-  if (!state.streak.days) state.streak.days = {};
   // Mark today as active (idempotent).
   const wasActive = state.streak.days[today];
   state.streak.days[today] = (state.streak.days[today] || 0) + 1;
@@ -42,7 +54,7 @@ export function registerStreak() {
 }
 
 export function getStreak() {
-  return state.streak.count || 0;
+  return ensureStreak().count || 0;
 }
 
 // Activity counts per day for last `weeks` weeks (default 16), keyed by YYYY-M-D.
