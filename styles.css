@@ -2762,6 +2762,115 @@ input[type="search"]:not(#searchInput) {
   border: 1px solid color-mix(in oklab, var(--brand) 35%, transparent);
 }
 
+/* Lernpfad / Skill-Tree */
+.lernpfad-view { max-width: 760px; margin: 0 auto; }
+
+.pfad-progress { padding: var(--sp-4) var(--sp-5); margin-bottom: var(--sp-5); }
+.pfad-progress-top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 8px; gap: var(--sp-3);
+}
+.pfad-progress-label { font-weight: 600; }
+.pfad-progress-pct { font-weight: 800; color: var(--brand); }
+.pfad-progress-bar {
+  height: 10px; border-radius: 999px;
+  background: var(--bg-soft); overflow: hidden;
+}
+.pfad-progress-fill {
+  height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, var(--brand), var(--pink));
+  transition: width .6s var(--ease);
+}
+.pfad-progress-hint { margin-top: 8px; font-size: .85rem; color: var(--text-muted); }
+
+.pfad {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-5) 0 var(--sp-6);
+}
+/* zentrale gestrichelte Spine-Linie */
+.pfad::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+  width: 4px; transform: translateX(-50%);
+  background: repeating-linear-gradient(var(--border) 0 8px, transparent 8px 16px);
+  border-radius: 2px;
+  z-index: 0;
+}
+.pfad-row { position: relative; z-index: 1; width: 100%; display: flex; justify-content: center; }
+/* gewundener Versatz (Zickzack um die Mittellinie) */
+.pfad-pos-0 { transform: translateX(0); }
+.pfad-pos-1 { transform: translateX(72px); }
+.pfad-pos-2 { transform: translateX(0); }
+.pfad-pos-3 { transform: translateX(-72px); }
+
+.pfad-node { position: relative; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.pfad-node-disc {
+  --pct: 0;
+  width: 88px; height: 88px; border-radius: 50%;
+  display: grid; place-items: center; padding: 6px;
+  background: conic-gradient(var(--dc, var(--brand)) calc(var(--pct) * 1%), var(--bg-soft) 0);
+}
+.pfad-node-btn {
+  width: 100%; height: 100%; border-radius: 50%; border: none; cursor: pointer;
+  display: grid; place-items: center; position: relative;
+  background: var(--bg-elev); font-size: 2rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  transition: transform var(--t-fast) var(--ease-spring);
+}
+.pfad-node-btn:hover { transform: translateY(-3px) scale(1.05); }
+.pfad-node-emoji { line-height: 1; }
+.pfad-node-badge {
+  position: absolute; right: -2px; bottom: -2px;
+  width: 26px; height: 26px; border-radius: 50%;
+  background: linear-gradient(135deg, #f5b301, var(--pink));
+  color: #fff; display: grid; place-items: center; font-size: .9rem;
+  border: 2px solid var(--bg-elev);
+}
+.pfad-node-label { font-weight: 600; font-size: .9rem; text-align: center; }
+.pfad-node-sub { font-size: .78rem; color: var(--text-muted); }
+
+.pfad-node.is-locked .pfad-node-disc { background: var(--bg-soft); }
+.pfad-node.is-locked .pfad-node-btn { filter: grayscale(1); opacity: .55; box-shadow: none; }
+.pfad-node.is-locked .pfad-node-label { color: var(--text-muted); }
+
+.pfad-node.is-current .pfad-node-disc { animation: pfadPulse 1.8s var(--ease) infinite; }
+@keyframes pfadPulse {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--brand) 45%, transparent); }
+  50%      { box-shadow: 0 0 0 12px color-mix(in oklab, var(--brand) 0%, transparent); }
+}
+.pfad-start-bubble {
+  position: absolute; top: -22px; left: 50%; transform: translateX(-50%);
+  background: var(--brand); color: #fff;
+  font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 999px; white-space: nowrap; z-index: 3;
+  box-shadow: 0 4px 10px color-mix(in oklab, var(--brand) 40%, transparent);
+}
+.pfad-start-bubble::after {
+  content: ''; position: absolute; bottom: -4px; left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px; height: 8px; background: var(--brand);
+}
+
+.pfad-legend {
+  display: flex; flex-wrap: wrap; gap: var(--sp-3); justify-content: center;
+  font-size: .8rem; color: var(--text-muted); margin-top: var(--sp-3);
+}
+.pfad-legend-goal { font-weight: 600; color: var(--text); }
+
+@media (max-width: 520px) {
+  .pfad-pos-1 { transform: translateX(48px); }
+  .pfad-pos-3 { transform: translateX(-48px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pfad-node.is-current .pfad-node-disc { animation: none; }
+  .pfad-progress-fill { transition: none; }
+}
+
 /* Achievements */
 .achievements-grid {
   display: grid;

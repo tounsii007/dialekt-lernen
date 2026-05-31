@@ -30,3 +30,4 @@ export {
 } from './store/transfer.js';
 export { PRESETS, getPreset, setPreset, applyPreset } from './store/presets.js';
 export { getNote, setNote, countNotes, getAllNotes } from './store/notes.js';
+export { getLernpfad, getLernpfadSummary, STAGE_GOAL } from './store/skilltree.js';
