@@ -14,6 +14,7 @@ import { confettiBurst } from '../util/motion.js';
 import { isRecordingSupported, startRecording } from '../util/recorder.js';
 import { syllableEnvelope, scorePronunciation, normalizeEnvelope } from '../util/audio-analysis.js';
 import { isPronunciationSupported, startListening, scoreBestAlternative } from '../util/pronunciation.js';
+import { forvoUrl, pickForvoWords } from '../util/forvo.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -81,6 +82,9 @@ export function renderDialektDetail(root, dialektId) {
       )
     )
   ));
+
+  // Hör-Training + Community-Aussprachen
+  view.appendChild(renderDialectAudioSection(d));
 
   // Toolbar
   const usedCats = new Set(d.ausdruecke.map(a => a.kategorie));
@@ -154,6 +158,75 @@ export function renderDialektDetail(root, dialektId) {
   toolbar.querySelector('input').addEventListener('input', (e) => { term = e.target.value; render(); });
 
   root.appendChild(view);
+}
+
+// Hör-Training (Klangpaare/Shadowing für genau diesen Dialekt) + kuratierte
+// Forvo-Links zu Muttersprachler-Aufnahmen. Forvo-Links sind externe,
+// nutzerinitiierte Links (neuer Tab) — kein Embed, kein Auto-Fetch, kein
+// Tracking, damit die Offline-/Privacy-Säule unangetastet bleibt.
+function renderDialectAudioSection(d) {
+  const sec = el('section', { class: 'detail-audio', dataset: { reveal: 'up' } });
+
+  // Übungs-Trainer für diesen Dialekt.
+  sec.appendChild(el('div', { class: 'detail-audio-train' },
+    el('button', {
+      class: 'detail-train-btn',
+      style: { '--dc': d.farbe },
+      onClick: () => { sfx.click(); go(`#/klangpaare?source=${d.id}`); }
+    },
+      el('span', { class: 'detail-train-emoji' }, '👂'),
+      el('span', { class: 'detail-train-text' },
+        el('span', { class: 'detail-train-title' }, 'Klangpaare üben'),
+        el('span', { class: 'detail-train-sub' }, 'Ähnlich klingende Ausdrücke unterscheiden')
+      )
+    ),
+    el('button', {
+      class: 'detail-train-btn',
+      style: { '--dc': d.farbe },
+      onClick: () => { sfx.click(); go(`#/shadowing?source=${d.id}`); }
+    },
+      el('span', { class: 'detail-train-emoji' }, '🗣️'),
+      el('span', { class: 'detail-train-text' },
+        el('span', { class: 'detail-train-title' }, 'Shadowing'),
+        el('span', { class: 'detail-train-sub' }, 'Hören und sofort nachsprechen')
+      )
+    )
+  ));
+
+  // Forvo-Community-Aussprachen (ausklappbar, externe Links).
+  const words = pickForvoWords(d.ausdruecke, 12);
+  if (words.length) {
+    const det = el('details', { class: 'forvo-section' });
+    det.appendChild(el('summary', { class: 'forvo-summary' },
+      el('span', { class: 'forvo-icon' }, '🎧'),
+      el('span', { class: 'forvo-label' }, 'Von Muttersprachlern gesprochen'),
+      el('span', { class: 'forvo-count' }, `${words.length} Wörter`)
+    ));
+    const body = el('div', { class: 'forvo-body' });
+    body.appendChild(el('p', { class: 'forvo-note' },
+      'Öffnet Forvo.com in einem neuen Tab — eine Community-Datenbank mit ' +
+      'Aufnahmen echter Sprecher. Externer Link; wir laden oder tracken nichts.'));
+    const list = el('div', { class: 'forvo-list' });
+    words.forEach(w => {
+      const href = forvoUrl(w.ausdruck);
+      if (!href) return;
+      list.appendChild(el('a', {
+        class: 'forvo-link',
+        href,
+        target: '_blank',
+        rel: 'noopener noreferrer nofollow',
+        title: `„${w.ausdruck}" auf Forvo anhören (neuer Tab)`
+      },
+        el('span', { class: 'forvo-link-word' }, w.ausdruck),
+        el('span', { class: 'forvo-link-ext' }, '↗')
+      ));
+    });
+    body.appendChild(list);
+    det.appendChild(body);
+    sec.appendChild(det);
+  }
+
+  return sec;
 }
 
 // „Siehe auch": findet bis zu 5 verwandte Ausdrücke aus anderen Dialekten.

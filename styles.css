@@ -9541,6 +9541,108 @@ img, svg, video {
 }
 
 /* ============================================================
+ * Klangpaare — Minimal-Paar-Hörtrainer — Iteration 19
+ * (teilt sich viele .shadow-* / .summary-* Klassen)
+ * ============================================================ */
+.klangpaare-view { max-width: 620px; margin: 0 auto; }
+
+.klangpaare-card {
+  display: flex; flex-direction: column; gap: 10px; align-items: center;
+  text-align: center; padding: 26px 20px 22px; border-radius: var(--r-md);
+  border: 1px solid color-mix(in oklab, var(--brand) 22%, var(--border));
+  background: color-mix(in oklab, var(--brand) 5%, var(--bg-elev));
+}
+.klangpaare-card-dialect { font-size: .85rem; font-weight: 700; color: var(--text-soft); }
+.klangpaare-prompt { font-size: 1.15rem; font-weight: 800; color: var(--text); }
+.klangpaare-play-btn {
+  width: 84px; height: 84px; border-radius: 50%; cursor: pointer;
+  display: grid; place-items: center; font-size: 2rem;
+  border: none; color: #fff; background: var(--brand);
+  box-shadow: 0 8px 22px color-mix(in oklab, var(--brand) 42%, transparent);
+  transition: transform .12s var(--ease), box-shadow .2s var(--ease);
+}
+.klangpaare-play-btn:hover { transform: scale(1.06); }
+.klangpaare-play-btn:active { transform: scale(.93); }
+.klangpaare-play-icon { line-height: 1; }
+.klangpaare-slow-btn { margin-top: 2px; }
+
+.klangpaare-options { display: flex; flex-direction: column; gap: 12px; margin: 18px 0 4px; }
+.klangpaare-option {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  font: inherit; cursor: pointer; padding: 16px 18px; border-radius: var(--r-md);
+  border: 2px solid var(--border); background: var(--bg-elev); color: var(--text);
+  transition: transform .12s var(--ease), border-color .15s var(--ease), background .15s var(--ease);
+}
+.klangpaare-option:hover { border-color: var(--brand); transform: translateY(-2px); }
+.klangpaare-option:active { transform: scale(.98); }
+.klangpaare-option-text { font-size: 1.4rem; font-weight: 800; line-height: 1.1; }
+.klangpaare-option-ipa { font-family: var(--font-mono, ui-monospace, monospace); font-size: .9rem; color: var(--text-muted); }
+.klangpaare-option.is-locked { cursor: default; }
+.klangpaare-option.is-locked:hover { transform: none; }
+.klangpaare-option.is-correct {
+  border-color: #1a8a4d; background: color-mix(in oklab, #1a8a4d 14%, var(--bg-elev));
+}
+.klangpaare-option.is-correct .klangpaare-option-text { color: #1a8a4d; }
+.klangpaare-option.is-wrong {
+  border-color: #c93539; background: color-mix(in oklab, #c93539 12%, var(--bg-elev));
+}
+.klangpaare-option.is-wrong .klangpaare-option-text { color: #c93539; }
+.klangpaare-reveal { width: 100%; flex-basis: 100%; color: var(--text-soft); font-size: .95rem; }
+
+/* ============================================================
+ * Dialekt-Detail · Hör-Training + Forvo-Community-Aussprachen — Iteration 19
+ * ============================================================ */
+.detail-audio { margin: 18px 0 4px; display: flex; flex-direction: column; gap: 14px; }
+.detail-audio-train { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.detail-train-btn {
+  display: flex; align-items: center; gap: 12px; text-align: left;
+  font: inherit; cursor: pointer; padding: 14px 16px; border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--dc, var(--brand)) 7%, var(--bg-elev));
+  color: var(--text);
+  transition: transform .12s var(--ease), border-color .15s var(--ease), box-shadow .2s var(--ease);
+}
+.detail-train-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--dc, var(--brand));
+  box-shadow: 0 6px 16px color-mix(in oklab, var(--dc, var(--brand)) 22%, transparent);
+}
+.detail-train-btn:active { transform: scale(.98); }
+.detail-train-emoji { font-size: 1.7rem; line-height: 1; }
+.detail-train-text { display: flex; flex-direction: column; gap: 2px; }
+.detail-train-title { font-weight: 800; }
+.detail-train-sub { font-size: .8rem; color: var(--text-muted); }
+
+.forvo-section { border: 1px solid var(--border); border-radius: var(--r-md); background: var(--bg-elev); }
+.forvo-summary {
+  display: flex; align-items: center; gap: 8px; cursor: pointer;
+  padding: 12px 16px; font-weight: 700; list-style: none;
+}
+.forvo-summary::-webkit-details-marker { display: none; }
+.forvo-icon { font-size: 1.1rem; }
+.forvo-label { flex: 1; }
+.forvo-count { font-size: .78rem; color: var(--text-muted); font-weight: 600; }
+.forvo-body { padding: 0 16px 16px; }
+.forvo-note { font-size: .8rem; color: var(--text-muted); line-height: 1.45; margin: 0 0 12px; }
+.forvo-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.forvo-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px; border-radius: var(--r-pill); text-decoration: none;
+  border: 1px solid var(--border); background: var(--bg-soft); color: var(--text);
+  font-weight: 600; font-size: .92rem;
+  transition: border-color .15s var(--ease), background .15s var(--ease), transform .12s var(--ease);
+}
+.forvo-link:hover {
+  border-color: var(--brand); transform: translateY(-1px);
+  background: color-mix(in oklab, var(--brand) 10%, var(--bg-soft));
+}
+.forvo-link-ext { color: var(--text-muted); font-size: .8rem; }
+
+@media (max-width: 520px) {
+  .detail-audio-train { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
  * Idiom-Explorer
  * ============================================================ */
 .idiome-view { /* container hook */ }

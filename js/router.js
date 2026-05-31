@@ -37,7 +37,8 @@ const ROUTE_LABELS = {
   lektionen: 'Mini-Lektionen',
   liga:      'Lokale Liga',
   lernpfad:  'Lernpfad',
-  shadowing: 'Shadowing-Trainer'
+  shadowing: 'Shadowing-Trainer',
+  klangpaare: 'Klangpaare-Hörtrainer'
 };
 
 // Lazy: erst beim Bedarf laden + danach gecached.
@@ -53,7 +54,8 @@ const lazyLoaders = {
   lektionen: () => import('./views/lektionen.js'),
   liga:      () => import('./views/liga.js'),
   lernpfad:  () => import('./views/lernpfad.js'),
-  shadowing: () => import('./views/shadowing.js')
+  shadowing: () => import('./views/shadowing.js'),
+  klangpaare: () => import('./views/klangpaare.js')
 };
 const lazyCache = {};
 
@@ -183,6 +185,11 @@ async function renderRoute(app, route, segs, params) {
       const m = await loadLazy('shadowing');
       if (!m) return;
       return m.renderShadowing(app, params);
+    }
+    case 'klangpaare': {
+      const m = await loadLazy('klangpaare');
+      if (!m) return;
+      return m.renderKlangpaare(app, params);
     }
     default:
       return renderHome(app);
