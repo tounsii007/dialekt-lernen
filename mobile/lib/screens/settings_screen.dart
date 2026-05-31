@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
+import '../data/backup_service.dart';
 import '../data/repository.dart';
 import '../data/srs_store.dart';
 import '../state/i18n.dart';
@@ -152,6 +154,18 @@ class SettingsScreen extends StatelessWidget {
               const _LearningAlgoCard(),
               const SizedBox(height: AppSpacing.x6),
 
+              Text('Erinnerung & Feedback',
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              const _ReminderHapticsCard(),
+              const SizedBox(height: AppSpacing.x6),
+
+              Text('Daten & Sicherung',
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              const _BackupCard(),
+              const SizedBox(height: AppSpacing.x6),
+
               Text(settings.t('settings.about'),
                   style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: AppSpacing.x3),
@@ -286,6 +300,162 @@ class _LearningAlgoCard extends StatelessWidget {
             ],
           );
         },
+      ),
+    );
+  }
+}
+
+class _ReminderHapticsCard extends StatelessWidget {
+  const _ReminderHapticsCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final settings = SettingsController.instance;
+    final surfaces = AppSurfaces.of(context);
+    return GlassCard(
+      padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.x4, vertical: AppSpacing.x2),
+      child: ListenableBuilder(
+        listenable: settings,
+        builder: (context, _) => Column(
+          children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              value: settings.reminderEnabled,
+              onChanged: (v) => settings.setReminder(enabled: v),
+              title: const Text('Tägliche Erinnerung'),
+              subtitle: Text(
+                'In-App-Hinweis, wenn du heute noch nicht gelernt hast.',
+                style: TextStyle(color: surfaces.textMuted, fontSize: 12.5),
+              ),
+            ),
+            if (settings.reminderEnabled)
+              Padding(
+                padding: const EdgeInsets.only(bottom: AppSpacing.x2),
+                child: Row(
+                  children: [
+                    Text('Ab', style: TextStyle(color: surfaces.textMuted)),
+                    Expanded(
+                      child: Slider(
+                        value: settings.reminderHour.toDouble(),
+                        min: 6,
+                        max: 23,
+                        divisions: 17,
+                        label: '${settings.reminderHour}:00 Uhr',
+                        onChanged: (v) =>
+                            settings.setReminder(hour: v.round()),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 64,
+                      child: Text('${settings.reminderHour}:00',
+                          textAlign: TextAlign.end,
+                          style: const TextStyle(fontWeight: FontWeight.w600)),
+                    ),
+                  ],
+                ),
+              ),
+            Divider(color: surfaces.border, height: 1),
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              value: settings.hapticsEnabled,
+              onChanged: settings.setHaptics,
+              title: const Text('Haptisches Feedback'),
+              subtitle: Text(
+                'Vibration bei Bewertung, Treffern und Level-Ups.',
+                style: TextStyle(color: surfaces.textMuted, fontSize: 12.5),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _BackupCard extends StatelessWidget {
+  const _BackupCard();
+
+  Future<void> _export(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final jsonStr = await BackupService.exportJson(
+        exportedAt: DateTime.now().toIso8601String());
+    await Clipboard.setData(ClipboardData(text: jsonStr));
+    messenger.showSnackBar(const SnackBar(
+        content: Text('Backup in die Zwischenablage kopiert.')));
+  }
+
+  Future<void> _import(BuildContext context) async {
+    final controller = TextEditingController();
+    final messenger = ScaffoldMessenger.of(context);
+    final text = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Backup importieren'),
+        content: TextField(
+          controller: controller,
+          maxLines: 6,
+          autofocus: true,
+          decoration: const InputDecoration(
+            hintText: 'Backup-JSON hier einfügen …',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Abbrechen'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(controller.text),
+            child: const Text('Importieren'),
+          ),
+        ],
+      ),
+    );
+    controller.dispose();
+    if (text == null || text.trim().isEmpty) return;
+    final res = await BackupService.importJson(text.trim());
+    messenger.showSnackBar(SnackBar(
+      content: Text(res.ok
+          ? '✓ Importiert (${res.restored} Bereiche wiederhergestellt).'
+          : '✗ ${res.error ?? 'Import fehlgeschlagen.'}'),
+    ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpacing.x4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Sichere deinen Lernstand (Karten, XP, Streak, Decks, Notizen …) '
+            'als JSON oder stelle ihn wieder her. Alles bleibt lokal.',
+            style: TextStyle(color: surfaces.textMuted, height: 1.4, fontSize: 13),
+          ),
+          const SizedBox(height: AppSpacing.x3),
+          Row(
+            children: [
+              Expanded(
+                child: FilledButton.tonalIcon(
+                  onPressed: () => _export(context),
+                  icon: const Icon(Icons.upload_rounded, size: 18),
+                  label: const Text('Exportieren'),
+                ),
+              ),
+              const SizedBox(width: AppSpacing.x3),
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: () => _import(context),
+                  icon: const Icon(Icons.download_rounded, size: 18),
+                  label: const Text('Importieren'),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

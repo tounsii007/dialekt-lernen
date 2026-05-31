@@ -12,6 +12,7 @@ import '../data/srs_store.dart';
 import '../data/streak_store.dart';
 import '../data/xp_store.dart';
 import '../util/fsrs.dart';
+import '../util/haptics.dart';
 import '../util/interval_format.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
@@ -112,6 +113,7 @@ class _LernenScreenState extends State<LernenScreen>
     final card = _session[_index];
     final wasNew = SrsStore.instance.isNew(card.key);
     final correct = grade != gradeAgain;
+    correct ? Haptics.light() : Haptics.error();
 
     await SrsStore.instance.reviewScheduled(card.key, grade: grade);
     await StreakStore.instance.register();

@@ -389,6 +389,13 @@ class AchievementsStore extends ChangeNotifier {
     );
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    _unlocked.clear();
+    _visited.clear();
+    await load();
+  }
+
   @visibleForTesting
   void debugReset() {
     _unlocked.clear();

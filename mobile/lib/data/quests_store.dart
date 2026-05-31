@@ -272,6 +272,11 @@ class QuestsStore extends ChangeNotifier {
     );
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
   @visibleForTesting
   int progressOf(String id) => _progress[id] ?? 0;
 

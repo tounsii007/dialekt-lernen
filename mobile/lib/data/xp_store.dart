@@ -190,6 +190,11 @@ class XpStore extends ChangeNotifier {
     await prefs.setString(_prefsKey, json.encode(map));
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
   @visibleForTesting
   void debugReset() {
     _total = 0;

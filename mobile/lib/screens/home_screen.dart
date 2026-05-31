@@ -5,6 +5,8 @@ import '../data/achievements_store.dart';
 import '../data/goals_store.dart';
 import '../data/quests_store.dart';
 import '../data/repository.dart';
+import '../data/streak_store.dart';
+import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/brand_logo.dart';
@@ -91,6 +93,9 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
             const SizedBox(height: AppSpacing.x5),
+
+            // In-App-Erinnerung (wenn heute noch nicht gelernt)
+            _ReminderBanner(onLearn: () => onOpenTab(2)),
 
             // Fortschritts-HUD: Level, XP, Streak
             const ProgressHud(),
@@ -279,6 +284,47 @@ class _QuickTiles extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _ReminderBanner extends StatelessWidget {
+  const _ReminderBanner({required this.onLearn});
+  final VoidCallback onLearn;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: Listenable.merge(
+          [SettingsController.instance, StreakStore.instance]),
+      builder: (context, _) {
+        final show = SettingsController.instance
+            .shouldRemind(DateTime.now(), StreakStore.instance.lastDay);
+        if (!show) return const SizedBox.shrink();
+        return Padding(
+          padding: const EdgeInsets.only(bottom: AppSpacing.x3),
+          child: GlassCard(
+            onTap: onLearn,
+            accent: AppColors.warm,
+            padding: const EdgeInsets.all(AppSpacing.x4),
+            child: Row(
+              children: [
+                const Text('🔔', style: TextStyle(fontSize: 22)),
+                const SizedBox(width: AppSpacing.x3),
+                const Expanded(
+                  child: Text(
+                    'Zeit zum Lernen! Heute noch keine Karte geübt.',
+                    style: TextStyle(
+                        fontSize: 13.5, fontWeight: FontWeight.w600),
+                  ),
+                ),
+                Icon(Icons.chevron_right_rounded,
+                    color: AppSurfaces.of(context).textMuted),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 }

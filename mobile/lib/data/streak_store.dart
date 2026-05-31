@@ -130,6 +130,11 @@ class StreakStore extends ChangeNotifier {
     );
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
   @visibleForTesting
   void debugReset() {
     _count = 0;

@@ -404,6 +404,12 @@ class SrsStore extends ChangeNotifier {
     );
   }
 
+  /// Setzt `_loaded` zurück und lädt neu (z. B. nach Backup-Import).
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
   @visibleForTesting
   void debugReset() {
     _cards.clear();

@@ -11,25 +11,68 @@ class SettingsController extends ChangeNotifier {
 
   static const String _themeKey = 'dialekto.themeMode';
   static const String _langKey = 'dialekto.lang';
+  static const String _hapticsKey = 'dialekto.haptics';
+  static const String _reminderKey = 'dialekto.reminder';
+  static const String _reminderHourKey = 'dialekto.reminderHour';
 
   ThemeMode _themeMode = ThemeMode.dark;
   AppLang _lang = AppLang.de;
+  bool _haptics = true;
+  bool _reminder = false;
+  int _reminderHour = 19;
   bool _loaded = false;
 
   ThemeMode get themeMode => _themeMode;
   AppLang get lang => _lang;
+  bool get hapticsEnabled => _haptics;
+  bool get reminderEnabled => _reminder;
+  int get reminderHour => _reminderHour;
   bool get isLoaded => _loaded;
 
   /// Übersetzt einen UI-Key in die aktuelle Sprache.
   String t(String key) => tr(_lang, key);
+
+  static String _dayKey(DateTime d) => '${d.year}-${d.month}-${d.day}';
+
+  /// In-App-Erinnerung fällig? (aktiviert, Stunde erreicht, heute noch nicht
+  /// aktiv). [lastActiveDay] kommt aus dem Streak-Store.
+  bool shouldRemind(DateTime now, String? lastActiveDay) =>
+      _reminder && now.hour >= _reminderHour && lastActiveDay != _dayKey(now);
 
   Future<void> load() async {
     if (_loaded) return;
     final prefs = await SharedPreferences.getInstance();
     _themeMode = _parse(prefs.getString(_themeKey));
     _lang = parseLang(prefs.getString(_langKey));
+    _haptics = prefs.getString(_hapticsKey) != 'false';
+    _reminder = prefs.getString(_reminderKey) == 'true';
+    _reminderHour = int.tryParse(prefs.getString(_reminderHourKey) ?? '')
+            ?.clamp(0, 23) ??
+        19;
     _loaded = true;
     notifyListeners();
+  }
+
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
+  Future<void> setHaptics(bool on) async {
+    if (on == _haptics) return;
+    _haptics = on;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_hapticsKey, on ? 'true' : 'false');
+  }
+
+  Future<void> setReminder({bool? enabled, int? hour}) async {
+    if (enabled != null) _reminder = enabled;
+    if (hour != null) _reminderHour = hour.clamp(0, 23);
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_reminderKey, _reminder ? 'true' : 'false');
+    await prefs.setString(_reminderHourKey, '$_reminderHour');
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {
@@ -64,6 +107,9 @@ class SettingsController extends ChangeNotifier {
   void debugReset() {
     _themeMode = ThemeMode.dark;
     _lang = AppLang.de;
+    _haptics = true;
+    _reminder = false;
+    _reminderHour = 19;
     _loaded = false;
   }
 }

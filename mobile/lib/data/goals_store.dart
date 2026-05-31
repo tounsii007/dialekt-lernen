@@ -122,6 +122,11 @@ class GoalsStore extends ChangeNotifier {
     );
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
   @visibleForTesting
   int get trackedDays => _progress.length;
 

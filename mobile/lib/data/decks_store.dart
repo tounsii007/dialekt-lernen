@@ -190,6 +190,12 @@ class DecksStore extends ChangeNotifier {
     );
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    _decks.clear();
+    await load();
+  }
+
   @visibleForTesting
   void debugReset() {
     _decks.clear();

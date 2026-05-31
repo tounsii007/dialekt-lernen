@@ -73,6 +73,12 @@ class NotesStore extends ChangeNotifier {
     await prefs.setString(_prefsKey, json.encode(_notes));
   }
 
+  Future<void> reload() async {
+    _loaded = false;
+    _notes.clear();
+    await load();
+  }
+
   @visibleForTesting
   void debugReset() {
     _notes.clear();
