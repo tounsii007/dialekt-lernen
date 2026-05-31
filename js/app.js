@@ -10,6 +10,7 @@ import { initRouter } from './router.js';
 import { initNav } from './nav.js';
 import { initSpotlight, initScrollProgress, initMagnetic, initTilt } from './util/motion.js';
 import { startOnboarding, resetOnboarding } from './util/onboarding.js';
+import { resetTips } from './util/progressive-disclosure.js';
 import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 import { initPwa } from './util/pwa.js';
 import { initNotifications } from './store/notifications.js';
@@ -53,6 +54,7 @@ function initAddDialectHint() {
 function initRestartTour() {
   const restartTour = () => {
     resetOnboarding();
+    resetTips(); // kontextuelle Tipps erneut freischalten
     startOnboarding({ force: true });
   };
   $('#restartTour')?.addEventListener('click', restartTour);

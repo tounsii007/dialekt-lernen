@@ -80,6 +80,8 @@ function withDefaults(loaded) {
     achievements: loaded.achievements && typeof loaded.achievements === 'object'
                     ? loaded.achievements : {},
     onboarded:    !!loaded.onboarded,
+    // Bereits gezeigte Progressive-Disclosure-Tipps (kontextuelle Hinweise).
+    seenTips:     Array.isArray(loaded.seenTips) ? loaded.seenTips : [],
     preset:       typeof loaded.preset === 'string' ? loaded.preset : 'default',
     notes:        loaded.notes && typeof loaded.notes === 'object' ? loaded.notes : {},
     xp:           loaded.xp && typeof loaded.xp === 'object'

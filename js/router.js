@@ -9,6 +9,8 @@ import {
 } from './util/motion.js';
 import { initNav, syncMobileNav } from './nav.js';
 import { attachPullToRefresh } from './util/pull-to-refresh.js';
+import { maybeShowTip } from './util/progressive-disclosure.js';
+import { state } from './store/state.js';
 
 // Eager: Routes, die direkt verfügbar sein müssen.
 import { renderHome } from './views/home.js';
@@ -209,6 +211,19 @@ async function doRender(app, route, segs, params) {
   initNav();
   syncMobileNav();
   app.setAttribute('aria-busy', 'false');
+
+  // Progressive Disclosure: nach der Willkommens-Tour höchstens ein
+  // kontextueller Tipp pro Navigation (gedrosselt, einmalig je Tipp).
+  if (state.onboarded) {
+    setTimeout(() => {
+      try {
+        maybeShowTip({
+          route,
+          learned: Object.keys(state.gelernt || {}).length,
+        });
+      } catch {}
+    }, 1200);
+  }
 }
 
 export async function router() {

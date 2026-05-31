@@ -3368,6 +3368,41 @@ input[type="search"]:not(#searchInput) {
 .ptr-indicator.is-refreshing .ptr-spinner { animation: ptr-spin .7s linear infinite; }
 @keyframes ptr-spin { to { transform: rotate(360deg); } }
 
+/* Progressive-Disclosure-Tipp (kontextueller Coachmark) */
+.pd-tip {
+  position: fixed;
+  left: 50%;
+  bottom: calc(84px + max(0px, var(--safe-bottom, 0px)));
+  transform: translate(-50%, 16px);
+  z-index: 1150;
+  max-width: min(440px, calc(100vw - 32px));
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: var(--r-lg, 16px);
+  background: var(--surface, #1b1b2b);
+  color: var(--text, #fff);
+  border: 1px solid var(--border, rgba(255, 255, 255, .14));
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  opacity: 0;
+  transition: opacity .25s ease, transform .25s ease;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.pd-tip.is-in { opacity: 1; transform: translate(-50%, 0); }
+.pd-tip-text { flex: 1; }
+.pd-tip-dismiss {
+  flex: none;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted, rgba(255, 255, 255, .6));
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
 .skeleton-card {
   height: 200px;
   border-radius: var(--r-lg);
