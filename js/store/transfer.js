@@ -108,6 +108,20 @@ function numOr(v, fallback, min = 0) {
   return Number.isFinite(n) && n >= min ? n : fallback;
 }
 
+// goals.progress aus einem Backup: nur endliche, nicht-negative Tageswerte
+// übernehmen. Ein manipuliertes/korruptes Backup (progress:{'2026-5-31':'abc'})
+// würde sonst via incrementGoalProgress/getGoalPct zu NaN in der Fortschritts-UI
+// führen. Nicht-numerische Einträge werden verworfen.
+function sanitizeProgress(p) {
+  const out = {};
+  if (!p || typeof p !== 'object') return out;
+  for (const k of Object.keys(p)) {
+    const n = Number(p[k]);
+    if (Number.isFinite(n) && n >= 0) out[k] = n;
+  }
+  return out;
+}
+
 // Validiert und importiert ein Snapshot. Liefert {ok, error?}.
 // strategy:
 //   'replace' — überschreibt vorhandene Felder
@@ -194,7 +208,7 @@ function replaceImport(d) {
       reminderShown: {},
       ...d.goals,
       target: numOr(d.goals.target, 10, 1),
-      progress: (d.goals.progress && typeof d.goals.progress === 'object') ? d.goals.progress : {},
+      progress: sanitizeProgress(d.goals.progress),
       reminderShown: (d.goals.reminderShown && typeof d.goals.reminderShown === 'object') ? d.goals.reminderShown : {},
     };
   }
@@ -281,11 +295,13 @@ function mergeImport(d) {
   // Goals — Target wird vom Backup übernommen, Tagesfortschritt: max per Tag.
   if (d.goals && typeof d.goals === 'object') {
     state.goals = state.goals || { target: 10, progress: {}, reminderShown: {} };
-    if (typeof d.goals.target === 'number') state.goals.target = d.goals.target;
+    state.goals.target = numOr(d.goals.target, state.goals.target, 1);
     if (d.goals.progress) {
       state.goals.progress = state.goals.progress || {};
-      for (const k of Object.keys(d.goals.progress)) {
-        state.goals.progress[k] = Math.max(state.goals.progress[k] || 0, d.goals.progress[k] || 0);
+      const incoming = sanitizeProgress(d.goals.progress);
+      for (const k of Object.keys(incoming)) {
+        const cur = Number(state.goals.progress[k]);
+        state.goals.progress[k] = Math.max(Number.isFinite(cur) && cur >= 0 ? cur : 0, incoming[k]);
       }
     }
   }

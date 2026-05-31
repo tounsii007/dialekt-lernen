@@ -44,11 +44,15 @@ export function registerStreak() {
   }
 
   const diff = dayDiff(state.streak.lastDay, today);
-  if (diff === 1)      state.streak.count += 1;
-  else if (diff > 1)   state.streak.count  = 1;
-  else                 state.streak.count  = state.streak.count || 1;
-
-  state.streak.lastDay = today;
+  if (diff <= 0) {
+    // diff <= 0 ⇒ lastDay liegt in der Zukunft (Geräteuhr zurückgestellt oder
+    // korruptes Import-Datum). Als Bruch behandeln: Streak auf 1 setzen und das
+    // spätere lastDay NICHT rückwärts überschreiben (sonst friert der Zähler ein).
+    state.streak.count = 1;
+  } else {
+    state.streak.count = diff === 1 ? state.streak.count + 1 : 1;
+    state.streak.lastDay = today;
+  }
   persist();
   return state.streak.count;
 }
