@@ -3003,6 +3003,134 @@ input[type="search"]:not(#searchInput) {
   50%      { transform: translateY(-3px); }
 }
 
+/* Achievement-Raritäten + Sammler-Punkte (Iter 13) */
+.section-head.ach-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+.ach-score { text-align: right; white-space: nowrap; line-height: 1.1; }
+.ach-score-num {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.7rem;
+  color: var(--brand);
+}
+.ach-score-max { font-size: .8rem; color: var(--text-muted); margin-left: 6px; }
+
+.ach-rarity-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: var(--sp-3);
+}
+.ach-rarity-chip {
+  font-size: .72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: var(--rarity, var(--text-muted));
+  border: 1px solid color-mix(in oklab, var(--rarity, var(--border)) 50%, transparent);
+  background: color-mix(in oklab, var(--rarity, var(--border)) 12%, transparent);
+}
+
+/* Per-Stufe Akzentfarbe (in beiden Themes lesbar) */
+.rarity-common    { --rarity: color-mix(in oklab, var(--text-muted) 75%, var(--border)); }
+.rarity-rare      { --rarity: #3b82f6; }
+.rarity-epic      { --rarity: #a855f7; }
+.rarity-legendary { --rarity: #f5a623; }
+
+.ach-rarity-tag {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: .6rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: var(--rarity);
+  border: 1px solid color-mix(in oklab, var(--rarity) 50%, transparent);
+  background: color-mix(in oklab, var(--rarity) 14%, transparent);
+}
+.achievement.is-locked .ach-rarity-tag { opacity: .6; }
+
+/* Akzent für freigeschaltete Trophäen je Rarität */
+.achievement.is-unlocked.rarity-rare,
+.achievement.is-unlocked.rarity-epic {
+  border-color: color-mix(in oklab, var(--rarity) 45%, var(--border));
+}
+.achievement.is-unlocked.rarity-legendary {
+  border-color: color-mix(in oklab, var(--rarity) 60%, var(--border));
+}
+.achievement.is-unlocked.rarity-rare .ach-icon {
+  background: linear-gradient(135deg, var(--rarity), var(--brand));
+  box-shadow: 0 6px 20px color-mix(in oklab, var(--rarity) 45%, transparent);
+}
+.achievement.is-unlocked.rarity-epic .ach-icon {
+  background: linear-gradient(135deg, var(--rarity), var(--pink));
+  box-shadow: 0 6px 20px color-mix(in oklab, var(--rarity) 45%, transparent);
+}
+.achievement.is-unlocked.rarity-legendary .ach-icon {
+  background: linear-gradient(135deg, var(--rarity), #fde68a);
+  box-shadow: 0 6px 24px color-mix(in oklab, var(--rarity) 60%, transparent);
+}
+.achievement.is-unlocked.rarity-legendary::before {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--rarity) 32%, transparent),
+    transparent 45%,
+    color-mix(in oklab, #fde68a 24%, transparent));
+  opacity: 1;
+}
+
+/* Täglicher Belohnungs-Chest (Iter 13) */
+.chest-card.is-ready {
+  border-color: color-mix(in oklab, var(--warm) 45%, var(--border));
+}
+.chest-main {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  margin-top: var(--sp-3);
+}
+.chest-visual {
+  font-size: 3rem;
+  width: 76px;
+  height: 76px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--warm) 12%, transparent);
+  border: 1px solid color-mix(in oklab, var(--warm) 30%, transparent);
+  flex-shrink: 0;
+}
+.chest-visual.is-ready { animation: chestBob 1.8s var(--ease) infinite; }
+.chest-visual.is-open { opacity: .7; filter: saturate(.7); }
+@keyframes chestBob {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(-6px) rotate(2deg); }
+}
+.chest-body { flex: 1; min-width: 0; }
+.chest-streak-line {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .98rem;
+  margin-bottom: 4px;
+}
+.chest-teaser, .chest-claimed {
+  font-size: .84rem;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-3);
+}
+.chest-claimed { color: var(--text); font-weight: 600; }
+.chest-open-btn { width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  .chest-visual.is-ready { animation: none; }
+}
+
 /* ============================================================ */
 /* Iteration 6 — Onboarding tour & loading states                 */
 /* ============================================================ */

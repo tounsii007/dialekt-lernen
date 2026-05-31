@@ -33,6 +33,7 @@ export function resetState() {
   state.srs = { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null };
   state.srsLog = [];
   state.league = { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null };
+  state.chest = { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 };
 }
 
 // Minimaler DOM-Mock — wird global gesetzt, wenn ein Test es braucht.

@@ -17,7 +17,14 @@ export {
 } from './store/streak.js';
 export { saveQuizResult, getQuizHistory, getQuizGenauigkeit } from './store/quiz.js';
 export { getDailySeed } from './store/daily.js';
-export { ACHIEVEMENTS, evaluateAchievements, markDialectVisited, getVisitedDialects } from './store/achievements.js';
+export {
+  ACHIEVEMENTS, RARITY, rarityOf, evaluateAchievements, getAchievementStatus,
+  getAchievementScore, markDialectVisited, getVisitedDialects
+} from './store/achievements.js';
+export {
+  getChestState, openChest, previewReward,
+  CHEST_FREEZE_EVERY, CHEST_JACKPOT_EVERY
+} from './store/chest.js';
 export {
   reviewCard, getCardSrs, getDueCards, getSrsStats,
   RATING_HARD, RATING_MED, RATING_EASY

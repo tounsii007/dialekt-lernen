@@ -116,7 +116,12 @@ function withDefaults(loaded) {
     // zum Wochenstart, hoechste je erreichte Stufe, letztes Auf-/Abstiegs-Ergebnis.
     league:       loaded.league && typeof loaded.league === 'object'
                     ? { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null, ...loaded.league }
-                    : { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null }
+                    : { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null },
+    // Täglicher Belohnungs-Chest: zuletzt geöffneter Tag, Folge-Öffnungstage,
+    // letzte Belohnung (für die UI) und Gesamtzahl der Öffnungen.
+    chest:        loaded.chest && typeof loaded.chest === 'object'
+                    ? { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0, ...loaded.chest }
+                    : { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 }
   };
 }
 

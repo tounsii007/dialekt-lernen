@@ -198,6 +198,16 @@ export function setWeekendAmulet(on) {
   return state.streak.weekendAmulet;
 }
 
+// Einen Freeze gutschreiben (z. B. aus dem Tages-Chest verdient), gedeckelt bei
+// MAX_FREEZES. Gibt true zurück, wenn tatsächlich einer hinzukam.
+export function grantFreeze() {
+  ensureProtectionDefaults();
+  if (state.streak.freezes >= MAX_FREEZES) return false;
+  state.streak.freezes += 1;
+  persist();
+  return true;
+}
+
 export function canRepairStreak(nowKey = todayKey()) {
   ensureProtectionDefaults();
   const b = state.streak.lastBreak;

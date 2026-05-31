@@ -4,7 +4,9 @@ import {
   getStreakHeatmap, getActiveDays, evaluateAchievements, getVisitedDialects,
   toggleFavorit,
   getStreakProtection, setWeekendAmulet, canRepairStreak, repairStreak,
-  MAX_FREEZES, MAX_REPAIRS, REPAIR_WINDOW_DAYS
+  MAX_FREEZES, MAX_REPAIRS, REPAIR_WINDOW_DAYS,
+  getChestState, openChest, getAchievementScore, rarityOf, RARITY,
+  getLernpfadSummary, countNotes
 } from '../store.js';
 import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
@@ -38,6 +40,9 @@ export function renderFavoriten(root) {
 
   // XP Card
   view.appendChild(renderXpCard());
+
+  // Täglicher Belohnungs-Chest (offline verdient)
+  view.appendChild(renderChestCard(() => renderFavoriten(root)));
 
   // Stats
   const stats = getLernStats();
@@ -81,6 +86,7 @@ export function renderFavoriten(root) {
   view.appendChild(renderStreakProtection(() => renderFavoriten(root)));
 
   // Achievements
+  const lernpfad = getLernpfadSummary();
   const achView = renderAchievements({
     gelerntCount: stats.gelernt,
     streak,
@@ -89,7 +95,13 @@ export function renderFavoriten(root) {
     visitedCount: getVisitedDialects().length,
     totalDialects: DIALEKTE.length,
     totalAvailable: DIALEKTE.reduce((sum, d) => sum + d.ausdruecke.length, 0),
-    favCount: favs.length
+    favCount: favs.length,
+    level: xpToNextLevel(getXp()).level,
+    noteCount: countNotes(),
+    deckCount: getDecks().length,
+    pathCompleted: lernpfad.completedUnits,
+    pathTotal: lernpfad.totalUnits,
+    chestStreak: getChestState().claimStreak
   });
   view.appendChild(achView);
 
@@ -768,21 +780,98 @@ function renderStreakProtection(rerender) {
   return card;
 }
 
+// Täglicher Belohnungs-Chest: einmal pro Tag öffenbar, Belohnung skaliert mit
+// aufeinanderfolgenden Öffnungstagen. Alles offline verdient — kein Kauf.
+function renderChestCard(rerender) {
+  const cs = getChestState();
+
+  const head = el('div', { class: 'streak-head' },
+    el('div', {},
+      el('div', { class: 'card-title' }, '🎁 Tages-Chest'),
+      el('div', { class: 'lede', style: { fontSize: '.85rem' } },
+        'Jeden Tag eine Belohnung — je länger deine Serie, desto mehr.')
+    )
+  );
+
+  const lid = el('div', {
+    class: 'chest-visual' + (cs.canOpen ? ' is-ready' : ' is-open'),
+    'aria-hidden': 'true'
+  }, cs.canOpen ? '🎁' : '📦');
+
+  const body = el('div', { class: 'chest-body' });
+
+  if (cs.canOpen) {
+    const teaser = [`+${cs.preview.xp} XP`];
+    if (cs.preview.freeze) teaser.push('❄️ Freeze');
+    if (cs.preview.jackpot) teaser.push('🎉 Jackpot');
+
+    body.appendChild(el('div', { class: 'chest-streak-line' },
+      cs.claimStreak > 0
+        ? `🔥 ${cs.claimStreak} Tage in Folge — heute wäre Tag ${cs.upcomingStreak}.`
+        : 'Öffne deinen ersten Chest!'));
+    body.appendChild(el('div', { class: 'chest-teaser' }, 'Heute drin: ' + teaser.join(' · ')));
+
+    const btn = el('button', {
+      class: 'btn btn-primary chest-open-btn', dataset: { magnetic: '12' },
+      onClick: () => {
+        const res = openChest();
+        if (!res.opened) { rerender(); return; }
+        try { sfx.unlock(); } catch {}
+        try { confettiBurst(btn, { count: res.reward.jackpot ? 130 : 70 }); } catch {}
+        const parts = [`+${res.reward.xp} XP`];
+        if (res.reward.freeze) parts.push('❄️ +1 Streak-Freeze');
+        toast((res.reward.jackpot ? '🎉 JACKPOT! ' : '🎁 Chest geöffnet! ') + parts.join(' · '),
+          'success', 3000);
+        rerender();
+      }
+    }, 'Chest öffnen');
+    body.appendChild(btn);
+  } else {
+    const r = cs.lastReward;
+    const parts = [];
+    if (r) {
+      parts.push(`+${r.xp} XP`);
+      if (r.freeze) parts.push('❄️ +1 Freeze');
+    }
+    body.appendChild(el('div', { class: 'chest-streak-line' },
+      `🔥 ${cs.claimStreak} Tage in Folge geöffnet`));
+    body.appendChild(el('div', { class: 'chest-claimed' },
+      r ? `Heute erhalten: ${parts.join(' · ')}${r.jackpot ? ' · 🎉 Jackpot!' : ''}` : 'Heute schon geöffnet.'));
+    body.appendChild(el('div', { class: 'lede', style: { fontSize: '.82rem', marginTop: '6px' } },
+      `Komm morgen wieder für Tag ${cs.claimStreak + 1}.`));
+  }
+
+  return el('div', { class: 'card chest-card' + (cs.canOpen ? ' is-ready' : ''), dataset: { spotlight: '', reveal: '' } },
+    head,
+    el('div', { class: 'chest-main' }, lid, body)
+  );
+}
+
 function renderAchievements(stats) {
   const { items, justUnlocked } = evaluateAchievements(stats);
   const unlockedCount = items.filter(i => i.unlocked).length;
+  const score = getAchievementScore();
+
+  // Nach Rarität sortieren (legendär zuerst), damit die wertvollsten Trophäen
+  // oben stehen; innerhalb gleicher Stufe bleibt die Definitionsreihenfolge.
+  const ordered = items
+    .map((it, i) => ({ it, i }))
+    .sort((a, b) => (rarityOf(b.it.def).order - rarityOf(a.it.def).order) || (a.i - b.i))
+    .map((x) => x.it);
 
   const grid = el('div', { class: 'achievements-grid' });
-  items.forEach(({ def, unlocked, justUnlocked: ju }) => {
+  ordered.forEach(({ def, unlocked, justUnlocked: ju }) => {
+    const r = rarityOf(def);
     const card = el('div', {
-      class: 'achievement' + (unlocked ? ' is-unlocked' : ' is-locked') + (ju ? ' is-fresh' : ''),
-      title: def.desc,
+      class: 'achievement rarity-' + r.id + (unlocked ? ' is-unlocked' : ' is-locked') + (ju ? ' is-fresh' : ''),
+      title: `${def.desc} · ${r.label} (${r.points} Punkte)`,
       dataset: { spotlight: '' }
     },
       el('div', { class: 'ach-icon' }, def.icon),
       el('div', { class: 'ach-text' },
         el('div', { class: 'ach-title' }, def.title),
-        el('div', { class: 'ach-desc' }, def.desc)
+        el('div', { class: 'ach-desc' }, def.desc),
+        el('div', { class: 'ach-rarity-tag' }, r.label)
       ),
       unlocked ? el('div', { class: 'ach-check' }, icon('zap', { size: 14 })) : null
     );
@@ -798,13 +887,26 @@ function renderAchievements(stats) {
     }, 400);
   }
 
+  // Sammler-Punkte-Aufschlüsselung pro Raritätsstufe.
+  const legend = el('div', { class: 'ach-rarity-legend' },
+    ...Object.keys(RARITY)
+      .sort((a, b) => RARITY[a].order - RARITY[b].order)
+      .map((k) => el('span', { class: 'ach-rarity-chip rarity-' + k },
+        `${RARITY[k].label} ${score.byRarity[k].unlocked}/${score.byRarity[k].total}`))
+  );
+
   return el('section', { class: 'section', dataset: { reveal: '' } },
-    el('div', { class: 'section-head' },
+    el('div', { class: 'section-head ach-head' },
       el('div', {},
         el('h2', {}, 'Achievements'),
         el('div', { class: 'lede' }, `${unlockedCount} von ${items.length} freigeschaltet`)
+      ),
+      el('div', { class: 'ach-score', title: 'Sammler-Punkte aus allen freigeschalteten Trophäen' },
+        el('span', { class: 'ach-score-num', dataset: { count: String(score.score) } }, String(score.score)),
+        el('span', { class: 'ach-score-max' }, `/ ${score.maxScore} Punkte`)
       )
     ),
+    legend,
     grid
   );
 }
