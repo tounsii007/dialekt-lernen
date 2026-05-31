@@ -2,6 +2,7 @@
 
 import { xpToNextLevel, getLevelTitle } from '../store/xp.js';
 import { confettiBurst } from './motion.js';
+import { sfx, vibrate } from './sounds.js';
 
 let hudEl = null;
 let liveRegion = null;
@@ -55,23 +56,37 @@ function spawnXpChip(amount, anchor) {
 }
 
 function showLevelUp(level, title) {
+  // Doppel-Overlay vermeiden, falls zwei Level-Ups dicht aufeinander folgen.
+  document.querySelector('.xp-levelup')?.remove();
+
+  // Bis Level 10 vergibt jede Stufe einen neuen Rang-Titel.
+  const isNewRank = title !== getLevelTitle(level - 1);
+
   const overlay = document.createElement('div');
   overlay.className = 'xp-levelup';
   overlay.setAttribute('aria-hidden', 'true');
   overlay.innerHTML = `
+    <div class="xp-levelup-rays"></div>
     <div class="xp-levelup-inner">
+      <div class="xp-levelup-burst"></div>
       <div class="xp-levelup-label">Level Up!</div>
-      <div class="xp-levelup-num">${level}</div>
+      <div class="xp-levelup-badge">
+        <span class="xp-levelup-num">${level}</span>
+        <span class="xp-levelup-sparkle s1">✦</span>
+        <span class="xp-levelup-sparkle s2">✧</span>
+        <span class="xp-levelup-sparkle s3">✦</span>
+      </div>
       <div class="xp-levelup-title">${title}</div>
+      <div class="xp-levelup-sub">${isNewRank ? '🏅 Neuer Rang freigeschaltet' : 'Bleib dran — der nächste Rang wartet!'}</div>
     </div>
   `;
   document.body.appendChild(overlay);
-  confettiBurst(overlay, { count: 30 });
+  confettiBurst(overlay, { count: 70 });
   // Nur das eigene Overlay-Ende zählt — animationend bubblet sonst vom
   // schnelleren Inner-Pop (~0.6s) hoch und entfernt das 2.6s-Overlay zu früh.
   const remove = () => overlay.remove();
   overlay.addEventListener('animationend', (e) => { if (e.target === overlay) remove(); });
-  setTimeout(remove, 3000); // Fallback, falls animationend ausbleibt.
+  setTimeout(remove, 3200); // Fallback, falls animationend ausbleibt.
 }
 
 export function initXpHud() {
@@ -81,6 +96,8 @@ export function initXpHud() {
     if (levelUp) {
       const title = getLevelTitle(level);
       announce(`Level ${level} erreicht: ${title}`);
+      try { sfx.levelUp(); } catch {}
+      vibrate([0, 45, 35, 80]);
       setTimeout(() => showLevelUp(level, title), 400);
     } else {
       announce(`Plus ${amount} XP`);

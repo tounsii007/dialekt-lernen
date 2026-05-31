@@ -4687,6 +4687,7 @@ html.is-speaking .is-speakable {
   100% { opacity: 0; }
 }
 .xp-levelup-inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4703,6 +4704,81 @@ html.is-speaking .is-speakable {
   padding: var(--sp-8) var(--sp-10);
   animation: lvlInnerPop 0.5s 0.1s var(--ease-spring) both;
 }
+
+/* Rotierende Lichtstrahlen hinter der Karte */
+.xp-levelup-rays {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(120vmin, 820px);
+  height: min(120vmin, 820px);
+  border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg,
+    color-mix(in oklab, var(--brand) 26%, transparent) 0deg 6deg,
+    transparent 6deg 22deg);
+  filter: blur(2px);
+  opacity: 0;
+  pointer-events: none;
+  animation: lvlRaysSpin 9s linear infinite, lvlRaysFade 2.6s var(--ease) forwards;
+}
+@keyframes lvlRaysSpin { to { transform: rotate(360deg); } }
+@keyframes lvlRaysFade { 0% { opacity: 0; } 16% { opacity: .45; } 70% { opacity: .45; } 100% { opacity: 0; } }
+
+/* Schockwellen-Ring, der aus der Karten-Mitte expandiert */
+.xp-levelup-burst {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid color-mix(in oklab, var(--brand) 55%, transparent);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: lvlBurst 0.8s 0.15s var(--ease) both;
+}
+@keyframes lvlBurst {
+  0%   { opacity: .8; width: 40px;  height: 40px;  }
+  100% { opacity: 0;  width: 440px; height: 440px; }
+}
+
+/* Runder Level-Badge mit pulsierendem Glühen */
+.xp-levelup-badge {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 132px;
+  height: 132px;
+  margin: var(--sp-1) 0;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 38%,
+    color-mix(in oklab, var(--brand) 28%, var(--bg-elev)),
+    color-mix(in oklab, var(--accent) 14%, var(--bg-elev)));
+  border: 2px solid color-mix(in oklab, var(--brand) 45%, transparent);
+  box-shadow:
+    inset 0 2px 16px color-mix(in oklab, var(--brand) 30%, transparent),
+    0 0 40px color-mix(in oklab, var(--brand) 26%, transparent);
+  animation: lvlBadgePulse 1.6s var(--ease) infinite;
+}
+@keyframes lvlBadgePulse {
+  0%, 100% { box-shadow: inset 0 2px 16px color-mix(in oklab, var(--brand) 30%, transparent), 0 0 40px color-mix(in oklab, var(--brand) 24%, transparent); }
+  50%      { box-shadow: inset 0 2px 16px color-mix(in oklab, var(--brand) 40%, transparent), 0 0 64px color-mix(in oklab, var(--brand) 42%, transparent); }
+}
+.xp-levelup-sparkle {
+  position: absolute;
+  font-size: 1rem;
+  color: var(--accent);
+  opacity: 0;
+  pointer-events: none;
+  animation: lvlSparkle 1.4s var(--ease) infinite;
+}
+.xp-levelup-sparkle.s1 { top: 4%;    right: 6%;  animation-delay: .1s; }
+.xp-levelup-sparkle.s2 { bottom: 10%; left: 2%;  animation-delay: .55s; font-size: .8rem; }
+.xp-levelup-sparkle.s3 { top: 34%;   left: -4%;  animation-delay: .95s; font-size: 1.2rem; }
+@keyframes lvlSparkle {
+  0%, 100% { opacity: 0; transform: scale(.4) rotate(0deg); }
+  50%      { opacity: 1; transform: scale(1) rotate(25deg); }
+}
 @keyframes lvlInnerPop {
   from { transform: scale(0.6) translateY(20px); }
   to   { transform: scale(1) translateY(0); }
@@ -4716,7 +4792,7 @@ html.is-speaking .is-speakable {
 }
 .xp-levelup-num {
   font-family: var(--font-display);
-  font-size: 5rem;
+  font-size: 3.4rem;
   font-weight: 800;
   line-height: 1;
   background: linear-gradient(135deg, var(--brand), var(--accent));
@@ -4726,10 +4802,24 @@ html.is-speaking .is-speakable {
   filter: drop-shadow(0 0 20px color-mix(in oklab, var(--brand) 50%, transparent));
 }
 .xp-levelup-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-muted);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
   margin-top: var(--sp-1);
+}
+.xp-levelup-sub {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xp-levelup { animation: none; opacity: 1; }
+  .xp-levelup-inner { animation: none; }
+  .xp-levelup-rays,
+  .xp-levelup-burst,
+  .xp-levelup-sparkle { display: none; }
+  .xp-levelup-badge { animation: none; }
 }
 
 /* XP progress card in favoriten */
