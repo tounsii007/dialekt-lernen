@@ -2,7 +2,6 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/xp_store.dart';
 import '../theme/app_theme.dart';
@@ -129,7 +128,7 @@ class _LevelUpContentState extends State<_LevelUpContent>
                   ),
                   child: Text(
                     '${widget.level}',
-                    style: GoogleFonts.fraunces(
+                    style: TextStyle(fontFamily: 'Fraunces', 
                       fontSize: 60,
                       fontWeight: FontWeight.w700,
                       color: Colors.white,
@@ -140,7 +139,7 @@ class _LevelUpContentState extends State<_LevelUpContent>
               const SizedBox(height: AppSpacing.x4),
               Text(
                 widget.title,
-                style: GoogleFonts.fraunces(
+                style: TextStyle(fontFamily: 'Fraunces', 
                   fontSize: 26,
                   fontWeight: FontWeight.w700,
                   color: Colors.white,

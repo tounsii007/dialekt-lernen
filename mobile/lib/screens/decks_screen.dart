@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/decks_store.dart';
 import '../data/models.dart';
@@ -128,7 +127,7 @@ class _DeckCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(deck.name,
-                    style: GoogleFonts.fraunces(
+                    style: TextStyle(fontFamily: 'Fraunces', 
                         fontSize: 17, fontWeight: FontWeight.w700)),
                 const SizedBox(height: 2),
                 Text('${deck.size} Ausdrücke',

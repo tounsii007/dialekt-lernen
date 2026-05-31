@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 /// Design-Tokens, abgeleitet aus styles.css (:root) der Web-App.
 /// Eine zentrale Quelle für Farben, Radien, Abstände, Gradienten und Typografie.
@@ -119,7 +118,10 @@ class AppTheme {
       onSurface: text,
     );
 
-    final bodyTextTheme = GoogleFonts.interTextTheme(base.textTheme).apply(
+    // Gebündelte Fonts (assets/fonts) statt Laufzeit-Download via google_fonts —
+    // voll offline, kein Netzwerk-/Datenschutz-Nebeneffekt.
+    final bodyTextTheme = base.textTheme.apply(
+      fontFamily: 'Inter',
       bodyColor: text,
       displayColor: text,
     );
@@ -129,18 +131,18 @@ class AppTheme {
       scaffoldBackgroundColor: scaffold,
       canvasColor: scaffold,
       textTheme: bodyTextTheme.copyWith(
-        displayLarge: GoogleFonts.fraunces(
-          textStyle: bodyTextTheme.displayLarge,
+        displayLarge: bodyTextTheme.displayLarge?.copyWith(
+          fontFamily: 'Fraunces',
           fontWeight: FontWeight.w700,
           color: text,
         ),
-        headlineMedium: GoogleFonts.fraunces(
-          textStyle: bodyTextTheme.headlineMedium,
+        headlineMedium: bodyTextTheme.headlineMedium?.copyWith(
+          fontFamily: 'Fraunces',
           fontWeight: FontWeight.w700,
           color: text,
         ),
-        titleLarge: GoogleFonts.fraunces(
-          textStyle: bodyTextTheme.titleLarge,
+        titleLarge: bodyTextTheme.titleLarge?.copyWith(
+          fontFamily: 'Fraunces',
           fontWeight: FontWeight.w600,
           color: text,
         ),

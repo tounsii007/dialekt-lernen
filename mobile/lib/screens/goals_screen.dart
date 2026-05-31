@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/goals_store.dart';
 import '../theme/app_theme.dart';
@@ -126,7 +125,7 @@ class _GoalRing extends StatelessWidget {
                   children: [
                     Text(
                       '$progress',
-                      style: GoogleFonts.fraunces(
+                      style: TextStyle(fontFamily: 'Fraunces', 
                         fontSize: 44,
                         fontWeight: FontWeight.w700,
                         color: ringColor,

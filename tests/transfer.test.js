@@ -17,7 +17,7 @@ import {
 
 function seedState() {
   state.theme = 'dark';
-  state.favoriten = [{ dialektId: 'hessisch', ausdruckId: 'h-001' }];
+  state.favoriten = ['hessisch.h-001'];
   state.gelernt = { 'hessisch.h-001': { ef: 2.5, reps: 1, interval: 1, due: 0, lapses: 0, last: 1000, stand: 3 } };
   state.streak = { count: 5, lastDay: '2026-01-01', days: { '2026-01-01': 3 } };
   state.quizHistory = [{ date: 1000, score: 8, total: 10, source: 'all' }];
@@ -122,7 +122,7 @@ describe('importState — strategy=replace', () => {
 describe('importState — strategy=merge', () => {
   beforeEach(() => {
     resetAllData();
-    state.favoriten = [{ dialektId: 'hessisch', ausdruckId: 'h-001' }];
+    state.favoriten = ['hessisch.h-001'];
     state.xp = { total: 100, log: [] };
     state.goals = { target: 10, progress: { '2026-1-1': 3 }, reminderShown: {} };
   });
@@ -133,8 +133,8 @@ describe('importState — strategy=merge', () => {
       version: 2,
       data: {
         favoriten: [
-          { dialektId: 'hessisch', ausdruckId: 'h-001' }, // existiert
-          { dialektId: 'berlinisch', ausdruckId: 'b-001' }, // neu
+          'hessisch.h-001',   // existiert
+          'berlinisch.b-001', // neu
         ],
       },
     };
@@ -358,7 +358,7 @@ describe('exportToCsv — Anki-kompatibel', () => {
   });
 
   it('Modus „nur Favoriten" filtert aus state.favoriten', () => {
-    state.favoriten = [{ dialektId: 'hessisch', ausdruckId: 'h-001' }];
+    state.favoriten = ['hessisch.h-001'];
     const ausdruecke = [
       { id: 'h-001', ausdruck: 'Ei guude', hochdeutsch: 'Hallo', bedeutung: 'X', beispiel: 'P', beispiel_hd: 'Q', kategorie: 'begruessung' },
       { id: 'h-002', ausdruck: 'Geh weg', hochdeutsch: 'Geh weg', bedeutung: 'Y', beispiel: 'P', beispiel_hd: 'Q', kategorie: 'gefuehle' },
@@ -369,5 +369,56 @@ describe('exportToCsv — Anki-kompatibel', () => {
     assert.equal(lines.length, 2); // Header + 1 Eintrag
     assert.match(lines[1], /Ei guude/);
     assert.doesNotMatch(lines[1], /Geh weg/);
+  });
+});
+
+describe('importState — Prototype-Pollution-Schutz', () => {
+  beforeEach(() => { resetAllData(); });
+
+  it('verseucht Object.prototype NICHT über __proto__ im Import (merge)', () => {
+    const evil = JSON.stringify({
+      format: 'dialekto', version: 2,
+      data: {
+        gelernt: { '__proto__': { polluted: 'yes' }, 'hessisch.h-001': { last: 1, level: 2 } },
+        streak: { days: { '__proto__': 9, '2026-01-01': 3 } },
+        goals: { progress: { '__proto__': 5, '2026-01-01': 2 } },
+      },
+    });
+    const r = importState(evil, { strategy: 'merge' });
+    assert.equal(r.ok, true);
+    assert.equal(({}).polluted, undefined);
+    assert.equal([].polluted, undefined);
+    assert.equal(Object.prototype.polluted, undefined);
+  });
+
+  it('verseucht Object.prototype NICHT über __proto__ im Import (replace)', () => {
+    const evil = JSON.stringify({
+      format: 'dialekto', version: 2,
+      data: { notes: { '__proto__': { polluted: 'x' } }, achievements: { '__proto__': { y: 1 } } },
+    });
+    const r = importState(evil, { strategy: 'replace' });
+    assert.equal(r.ok, true);
+    assert.equal(({}).polluted, undefined);
+    assert.equal(Object.prototype.polluted, undefined);
+  });
+
+  it('entfernt __proto__ auch bei bereits geparster Objekt-Eingabe', () => {
+    const obj = { format: 'dialekto', version: 2, data: { streak: { days: {} } } };
+    // Eigenen __proto__-Key bewusst setzen (umgeht den Prototyp-Setter)
+    Object.defineProperty(obj.data, '__proto__', { value: { polluted: 1 }, enumerable: true, configurable: true });
+    const r = importState(obj, { strategy: 'merge' });
+    assert.equal(r.ok, true);
+    assert.equal(({}).polluted, undefined);
+  });
+
+  it('übernimmt legitime Daten trotz Schutz weiterhin korrekt', () => {
+    const good = JSON.stringify({
+      format: 'dialekto', version: 2,
+      data: { goals: { target: 7, progress: { '2026-01-01': 4 } } },
+    });
+    const r = importState(good, { strategy: 'replace' });
+    assert.equal(r.ok, true);
+    assert.equal(state.goals.target, 7);
+    assert.equal(state.goals.progress['2026-01-01'], 4);
   });
 });

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/goals_store.dart';
 import '../data/repository.dart';
@@ -188,7 +187,7 @@ class _StatCard extends StatelessWidget {
             fit: BoxFit.scaleDown,
             child: Text(
               value,
-              style: GoogleFonts.fraunces(
+              style: TextStyle(fontFamily: 'Fraunces', 
                 fontSize: 22,
                 fontWeight: FontWeight.w700,
                 color: color,
@@ -232,7 +231,7 @@ class _XpLevelCard extends StatelessWidget {
                 ),
                 child: Text(
                   '${xp.level}',
-                  style: GoogleFonts.fraunces(
+                  style: TextStyle(fontFamily: 'Fraunces', 
                     fontSize: 24,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,
@@ -344,7 +343,7 @@ class _Pill extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(value,
-              style: GoogleFonts.fraunces(
+              style: TextStyle(fontFamily: 'Fraunces', 
                   fontSize: 22, fontWeight: FontWeight.w700, color: color)),
           const SizedBox(height: 2),
           Text(label,

@@ -32,7 +32,9 @@ const RULES = [
   ['w', 'v'],
   ['y', 'y'],
   ['j', 'j'],
-  ['ch', 'x'], // wird unten nach „weichem ch" verfeinert
+  // 'ch' wird NICHT hier ersetzt, sondern nach der Schleife kontextsensitiv
+  // aufgelöst (ich-Laut ç vs. ach-Laut x). So bleibt literales 'x'/'ks'
+  // (nix, Hexe, Taxi) unberührt — die frühere Rückwärts-Korrektur verfälschte es.
 ];
 
 // Dialekt-spezifische Anpassungen
@@ -70,13 +72,14 @@ export function toIpa(word, dialektId = null) {
   // Apostrophes & punctuation strippen
   s = s.replace(/[!?.,;:„"]/g, '');
 
-  // Erst dialekt-spezifische Ersetzungen (machen oft Mehr-Zeichen-Patterns kaputt,
-  // also vor den Standardregeln anwenden, aber nur für ausgewählte Patterns).
-  if (dialektId && DIALECT_OVERRIDES[dialektId]) {
-    for (const [from, to] of DIALECT_OVERRIDES[dialektId]) {
-      // Nur Wortanfang oder isolierte Vorkommen für robuste Heuristik
-      s = s.replace(new RegExp(from, 'g'), to);
-    }
+  // Dialekt-Overrides: Mehrzeichen-Overrides (z. B. 'ch'→χ/ʃ) MÜSSEN vor den
+  // Standardregeln laufen, sonst greift die generische 'ch'-Auflösung zuerst.
+  // Einzelbuchstaben-Overrides (t→d, p→b, g→k/j, k→kʰ) hingegen ERST NACH den
+  // Mehrzeichen-RULES — liefen sie davor, zerstörten sie Digraphen wie
+  // 'th'/'pf'/'ng' ('theater'→'dheater', 'finger'→'finker'), bevor deren Regel greift.
+  const overrides = (dialektId && DIALECT_OVERRIDES[dialektId]) || [];
+  for (const [from, to] of overrides) {
+    if (from.length >= 2) s = s.replace(new RegExp(from, 'g'), to);
   }
 
   // Standard-Regeln (Mehr-Zeichen zuerst, weshalb RULES so sortiert ist)
@@ -84,9 +87,18 @@ export function toIpa(word, dialektId = null) {
     s = s.replace(new RegExp(from, 'g'), to);
   }
 
-  // „weiches ch" nach hellen Vokalen: ɛ, ɪ, e, i → ç
-  // (Hack: nach Standardregel wurde ch → x; wir korrigieren rückwärts)
-  s = s.replace(/([ɛɪei])x/g, '$1ç');
+  // 'ch' kontextsensitiv auflösen (steht hier noch als literales "ch", da es
+  // keiner RULES-Regel unterliegt; 'sch'/'chs'/'tsch' wurden bereits ersetzt):
+  //   ach-Laut [x] nach dunklem Vokal a/o/u (inkl. Diphthong aʊ̯),
+  //   sonst ich-Laut [ç]. Dialekt-Overrides (χ/ʃ) haben 'ch' ggf. schon ersetzt.
+  s = s.replace(/([aouʊ]̯?)ch/g, '$1x');
+  s = s.replace(/ch/g, 'ç');
+
+  // Einzelbuchstaben-Overrides jetzt — nach den Digraph-RULES, damit sie
+  // 'th'/'pf'/'ng' nicht vorab zerstören.
+  for (const [from, to] of overrides) {
+    if (from.length === 1) s = s.replace(new RegExp(from, 'g'), to);
+  }
 
   // r am Wortende → ɐ (Vokalisierung), r vor Konsonant → ɐ
   s = s.replace(/r(?=$| )/g, 'ɐ');

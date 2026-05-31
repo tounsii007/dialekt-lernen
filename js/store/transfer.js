@@ -108,13 +108,57 @@ function numOr(v, fallback, min = 0) {
   return Number.isFinite(n) && n >= min ? n : fallback;
 }
 
+// goals.progress aus einem Backup: nur endliche, nicht-negative Tageswerte
+// übernehmen. Ein manipuliertes/korruptes Backup (progress:{'2026-5-31':'abc'})
+// würde sonst via incrementGoalProgress/getGoalPct zu NaN in der Fortschritts-UI
+// führen. Nicht-numerische Einträge werden verworfen.
+function sanitizeProgress(p) {
+  const out = {};
+  if (!p || typeof p !== 'object') return out;
+  for (const k of Object.keys(p)) {
+    const n = Number(p[k]);
+    if (Number.isFinite(n) && n >= 0) out[k] = n;
+  }
+  return out;
+}
+
+// Prototype-Pollution-Schutz: gefährliche Keys, die niemals aus einem
+// importierten Backup in den State übernommen werden dürfen.
+const UNSAFE_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+// Parst JSON mit einem Reviver, der __proto__/constructor/prototype an der
+// QUELLE entfernt (Reviver gibt undefined → Key wird verworfen). Das deckt
+// alle nachgelagerten Merge-/Spread-Pfade auf einmal ab, statt jede einzelne
+// dynamische Key-Zuweisung absichern zu müssen.
+function safeJsonParse(text) {
+  return JSON.parse(text, (key, value) => (UNSAFE_KEYS.has(key) ? undefined : value));
+}
+
+// Für bereits geparste Objekt-Eingaben (Nicht-String): rekursiv die gleichen
+// gefährlichen Keys entfernen. Greift nicht auf value['__proto__'] zu (das
+// würde den Prototyp-Getter auslösen) — UNSAFE_KEYS werden vorab übersprungen.
+function stripUnsafeKeys(value) {
+  if (Array.isArray(value)) return value.map(stripUnsafeKeys);
+  if (value && typeof value === 'object') {
+    const out = {};
+    for (const k of Object.keys(value)) {
+      if (UNSAFE_KEYS.has(k)) continue;
+      out[k] = stripUnsafeKeys(value[k]);
+    }
+    return out;
+  }
+  return value;
+}
+
 // Validiert und importiert ein Snapshot. Liefert {ok, error?}.
 // strategy:
 //   'replace' — überschreibt vorhandene Felder
 //   'merge'   — Favoriten/Notes vereinen, gelernt/streak/quizHistory mergen
 export function importState(jsonOrObject, { strategy = 'replace' } = {}) {
   try {
-    const obj = typeof jsonOrObject === 'string' ? JSON.parse(jsonOrObject) : jsonOrObject;
+    const obj = typeof jsonOrObject === 'string'
+      ? safeJsonParse(jsonOrObject)
+      : stripUnsafeKeys(jsonOrObject);
     if (!obj || obj.format !== 'dialekto') {
       return { ok: false, error: 'Format unbekannt (erwartet dialekto-Snapshot).' };
     }
@@ -194,19 +238,25 @@ function replaceImport(d) {
       reminderShown: {},
       ...d.goals,
       target: numOr(d.goals.target, 10, 1),
-      progress: (d.goals.progress && typeof d.goals.progress === 'object') ? d.goals.progress : {},
+      progress: sanitizeProgress(d.goals.progress),
       reminderShown: (d.goals.reminderShown && typeof d.goals.reminderShown === 'object') ? d.goals.reminderShown : {},
     };
   }
 }
 
 function mergeImport(d) {
-  // Favoriten — Set-Union per (dialektId, ausdruckId)
+  // Favoriten — Set-Union per String-Key. Favoriten sind flache
+  // "dialektId.ausdruckId"-Strings (favKey); ältere Backups können sie als
+  // Objekte enthalten — beides wird zu Strings normalisiert.
   if (Array.isArray(d.favoriten)) {
-    const setKeys = new Set((state.favoriten || []).map((f) => `${f.dialektId}.${f.ausdruckId}`));
+    if (!Array.isArray(state.favoriten)) state.favoriten = [];
+    const norm = (f) => typeof f === 'string'
+      ? f
+      : (f && f.dialektId && f.ausdruckId ? `${f.dialektId}.${f.ausdruckId}` : null);
+    const seen = new Set(state.favoriten.map(norm).filter(Boolean));
     for (const f of d.favoriten) {
-      const k = `${f.dialektId}.${f.ausdruckId}`;
-      if (!setKeys.has(k)) state.favoriten.push(f);
+      const k = norm(f);
+      if (k && !seen.has(k)) { state.favoriten.push(k); seen.add(k); }
     }
   }
 
@@ -275,11 +325,13 @@ function mergeImport(d) {
   // Goals — Target wird vom Backup übernommen, Tagesfortschritt: max per Tag.
   if (d.goals && typeof d.goals === 'object') {
     state.goals = state.goals || { target: 10, progress: {}, reminderShown: {} };
-    if (typeof d.goals.target === 'number') state.goals.target = d.goals.target;
+    state.goals.target = numOr(d.goals.target, state.goals.target, 1);
     if (d.goals.progress) {
       state.goals.progress = state.goals.progress || {};
-      for (const k of Object.keys(d.goals.progress)) {
-        state.goals.progress[k] = Math.max(state.goals.progress[k] || 0, d.goals.progress[k] || 0);
+      const incoming = sanitizeProgress(d.goals.progress);
+      for (const k of Object.keys(incoming)) {
+        const cur = Number(state.goals.progress[k]);
+        state.goals.progress[k] = Math.max(Number.isFinite(cur) && cur >= 0 ? cur : 0, incoming[k]);
       }
     }
   }
@@ -325,9 +377,19 @@ export function exportToCsv(allEntries = false, ausdrueckeFromCaller = null, get
       rows.push(toCsvRow(a, d));
     }
   } else {
-    for (const f of (state.favoriten || [])) {
-      const d = getDialektFromCaller(f.dialektId);
-      const a = d?.ausdruecke?.find((x) => x.id === f.ausdruckId);
+    for (const entry of (state.favoriten || [])) {
+      // Favoriten sind "dialektId.ausdruckId"-Strings; Legacy-Objekte tolerieren.
+      let dialektId, ausdruckId;
+      if (entry && typeof entry === 'object') {
+        dialektId = entry.dialektId; ausdruckId = entry.ausdruckId;
+      } else {
+        const s = String(entry);
+        const dot = s.indexOf('.');
+        dialektId = dot < 0 ? s : s.slice(0, dot);
+        ausdruckId = dot < 0 ? '' : s.slice(dot + 1);
+      }
+      const d = getDialektFromCaller(dialektId);
+      const a = d?.ausdruecke?.find((x) => x.id === ausdruckId);
       if (a && d) rows.push(toCsvRow(a, d));
     }
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/models.dart';
 import '../data/repository.dart';
@@ -159,7 +158,7 @@ class _LektionCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(lektion.title,
-                    style: GoogleFonts.fraunces(
+                    style: TextStyle(fontFamily: 'Fraunces', 
                         fontSize: 16, height: 1.25, fontWeight: FontWeight.w700)),
                 const SizedBox(height: 4),
                 Text(lektion.summary,

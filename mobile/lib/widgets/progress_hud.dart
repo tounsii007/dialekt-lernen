@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/streak_store.dart';
 import '../data/xp_store.dart';
@@ -35,7 +34,7 @@ class ProgressHud extends StatelessWidget {
                       children: [
                         Text(
                           xp.title,
-                          style: GoogleFonts.fraunces(
+                          style: TextStyle(fontFamily: 'Fraunces', 
                             fontSize: 17,
                             fontWeight: FontWeight.w700,
                           ),
@@ -101,7 +100,7 @@ class _LevelBadge extends StatelessWidget {
       ),
       child: Text(
         '$level',
-        style: GoogleFonts.fraunces(
+        style: TextStyle(fontFamily: 'Fraunces', 
           fontSize: 19,
           fontWeight: FontWeight.w700,
           color: Colors.white,

@@ -1,0 +1,19 @@
+# Release-Signing-Konfiguration — KOPIERE diese Datei nach `key.properties`
+# und trage echte Werte ein. `key.properties` ist via .gitignore vom Repo
+# ausgeschlossen und darf NIEMALS eingecheckt oder geteilt werden.
+#
+# 1) Keystore erzeugen (einmalig):
+#    keytool -genkey -v -keystore release.jks -keyalg RSA -keysize 2048 \
+#      -validity 10000 -alias dialekto
+#    -> legt android/app/release.jks an (ebenfalls gitignored)
+#
+# 2) Diese Datei nach key.properties kopieren und ausfüllen:
+
+storePassword=DEIN_STORE_PASSWORT
+keyPassword=DEIN_KEY_PASSWORT
+keyAlias=dialekto
+# Pfad relativ zu android/app/ :
+storeFile=release.jks
+
+# Fehlt key.properties, signiert der Release-Build automatisch mit dem
+# Debug-Key (nur für lokale Builds; für Store-Release zwingend ersetzen).

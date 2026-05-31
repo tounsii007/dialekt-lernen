@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/achievements_store.dart';
 import '../theme/app_theme.dart';
@@ -119,7 +118,7 @@ class _ScoreHeader extends StatelessWidget {
                 shaderCallback: (b) => AppColors.brandGradient.createShader(b),
                 child: Text(
                   '${score.score}',
-                  style: GoogleFonts.fraunces(
+                  style: TextStyle(fontFamily: 'Fraunces', 
                     fontSize: 40,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,

@@ -71,8 +71,9 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
-    // Auto-play beim Erscheinen
-    setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
+    // Auto-play beim Erscheinen (nur falls Karte noch im DOM — sonst spricht
+    // sie nach schnellem Weiterklicken/Navigieren im Hintergrund)
+    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
   } else if (mode === 'cloze') {
     // Lückentext: Beispielsatz mit ausgeschnittenem Ausdruck
     const { before, hidden, after, found } = buildCloze(c.beispiel || '', c.ausdruck);
@@ -305,8 +306,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       hRow.appendChild(btn);
     });
     front.appendChild(hRow);
-    // Auto-play beim Erscheinen
-    setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 200);
+    // Auto-play beim Erscheinen (nur falls Karte noch im DOM)
+    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
@@ -356,8 +357,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       vRow.appendChild(btn);
     });
     front.appendChild(vRow);
-    // Auto-play Hochdeutsch
-    setTimeout(() => speak(c.hochdeutsch, 'de-DE'), 200);
+    // Auto-play Hochdeutsch (nur falls Karte noch im DOM)
+    setTimeout(() => { if (card.isConnected) speak(c.hochdeutsch, 'de-DE'); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
@@ -375,6 +376,9 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     } else {
       const statusEl = el('div', { class: 'pron-check-status' }, 'Klicke das Mikrofon und sprich den Ausdruck.');
+      // currentStop MUSS außerhalb des Handlers leben, damit der Stopp-Klick
+      // dieselbe Referenz sieht (vorher let-im-Handler → TDZ-ReferenceError).
+      let currentStop = null;
       const micBtn = el('button', {
         class: 'pron-mic-btn',
         title: 'Aufnahme starten/stoppen',
@@ -388,7 +392,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
           statusEl.classList.remove('is-ok', 'is-wrong');
           statusEl.classList.add('is-listening');
           statusEl.textContent = 'Höre zu… sprich jetzt.';
-          let currentStop = startListening({
+          currentStop = startListening({
             lang: c.dialektLang || 'de-DE',
             onPartial: (t) => { statusEl.textContent = '… ' + t; },
             onResult: ({ transcript, alternatives }) => {

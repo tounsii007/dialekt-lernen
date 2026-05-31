@@ -1,13 +1,13 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/models.dart';
 import '../data/repository.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
+import '../widgets/placeholder_view.dart';
 
 const int _kQuestionCount = 10;
 
@@ -39,6 +39,7 @@ class _QuizScreenState extends State<QuizScreen> {
   int? _selected;
   int _score = 0;
   bool _finished = false;
+  bool _ready = false; // true, sobald _generate() einmal gelaufen ist
 
   @override
   void initState() {
@@ -87,6 +88,7 @@ class _QuizScreenState extends State<QuizScreen> {
       _selected = null;
       _score = 0;
       _finished = false;
+      _ready = true;
     });
   }
 
@@ -112,8 +114,22 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     if (_questions.isEmpty) {
-      return const AuroraBackground(
-        child: Center(child: CircularProgressIndicator()),
+      // Vor dem ersten _generate()-Lauf: Ladezustand. Danach mit leerer Liste:
+      // echter Leer-/Fehlerzustand statt eines unendlichen Spinners (tritt auf,
+      // wenn die Daten <4 distinkte Bedeutungen liefern → keine Frage baubar).
+      return AuroraBackground(
+        child: SafeArea(
+          child: !_ready
+              ? const Center(child: CircularProgressIndicator())
+              : PlaceholderView(
+                  emoji: '🧩',
+                  title: 'Quiz nicht verfügbar',
+                  message:
+                      'Es sind zu wenige Ausdrücke vorhanden, um ein Quiz zu erstellen. '
+                      'Schau später noch einmal vorbei.',
+                  accent: Theme.of(context).colorScheme.primary,
+                ),
+        ),
       );
     }
     return AuroraBackground(
@@ -246,7 +262,7 @@ class _QuizScreenState extends State<QuizScreen> {
             shaderCallback: (b) => AppColors.brandGradient.createShader(b),
             child: Text(
               '$pct%',
-              style: GoogleFonts.fraunces(
+              style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                 fontSize: 56,
                 fontWeight: FontWeight.w700,
                 color: Colors.white,

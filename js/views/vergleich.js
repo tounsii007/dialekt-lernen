@@ -67,10 +67,22 @@ export function renderVergleich(root) {
         el('h3', { class: 'compare-group-title' }, g.head)
       ),
       el('div', { class: 'compare-grid' },
-        ...g.items.map((it) => el('button', {
+        ...g.items.map((it) => el('div', {
+          // role=button statt <button>: die Zelle enthält einen eigenen
+          // Speak-<button> — verschachtelte interaktive Buttons sind ungültiges
+          // HTML. div + role/tabindex + Tastatur-Handling bewahrt die Semantik.
           class: 'compare-cell',
+          role: 'button',
+          tabindex: 0,
           style: { '--dc': it.dialektFarbe },
-          onClick: () => { sfx.click(); go(`#/dialekt/${it.dialektId}`); }
+          onClick: () => { sfx.click(); go(`#/dialekt/${it.dialektId}`); },
+          onKeydown: (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              sfx.click();
+              go(`#/dialekt/${it.dialektId}`);
+            }
+          }
         },
           el('span', { class: 'compare-cell-flag' }, it.dialektFlag),
           el('div', { class: 'compare-cell-content' },

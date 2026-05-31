@@ -396,6 +396,9 @@ function buildWordCarousel() {
 
   let interval;
   function advance() {
+    // Selbst-Stopp, sobald das Karussell nicht mehr im DOM hängt (View-Wechsel)
+    // — der Router ersetzt #app via innerHTML, ohne das Intervall zu clearen.
+    if (!wrap.isConnected) { clearInterval(interval); return; }
     wordEl.classList.add('carousel-exit');
     setTimeout(() => {
       idx = (idx + 1) % WORDS.length;

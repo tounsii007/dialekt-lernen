@@ -158,11 +158,17 @@ export function getSpeechStatus(lang = 'de-DE') {
   };
 }
 
+// Handle des harten onend-Fallback-Timers. Modulweit, damit ein neues speak()
+// (oder onend/onerror) den Timer der vorigen Äußerung clearen kann — sonst
+// beendet ein veralteter Timer den Sprechzustand einer NEUEN Äußerung zu früh.
+let _fallbackTimer = null;
+
 // Sprich `text`. Optionen überschreiben die persistenten Einstellungen
 // punktuell (z. B. Slow-Mo-Wiedergabe mit { rate: 0.6 }).
 export function speak(text, lang = 'de-DE', opts = {}) {
   if (!isSpeechSupported()) return false;
   try {
+    if (_fallbackTimer) { clearTimeout(_fallbackTimer); _fallbackTimer = null; }
     const settings = getSpeechSettings();
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(String(text));
@@ -180,17 +186,22 @@ export function speak(text, lang = 'de-DE', opts = {}) {
     const setState = (on) => {
       document.documentElement.classList.toggle('is-speaking', on);
     };
+    const finish = () => {
+      if (_fallbackTimer) { clearTimeout(_fallbackTimer); _fallbackTimer = null; }
+      setState(false);
+    };
     utterance.onstart = () => setState(true);
-    utterance.onend = () => setState(false);
-    utterance.onerror = () => setState(false);
+    utterance.onend = finish;
+    utterance.onerror = finish;
 
     // Optimistisches Flag — Safari feuert onstart nicht zuverlässig.
     setState(true);
     window.speechSynthesis.speak(utterance);
     // Hartes Timeout-Fallback, falls onend nie kommt. Langsameres Tempo
-    // verlängert die Ausgabe → Timeout ans Tempo koppeln.
-    const ms = Math.max(2500, (text.length * 90) / Math.max(0.5, utterance.rate));
-    setTimeout(() => setState(false), ms);
+    // verlängert die Ausgabe → Timeout ans Tempo koppeln. Wird in finish()/
+    // beim nächsten speak() gecleart.
+    const ms = Math.max(2500, (String(text).length * 90) / Math.max(0.5, utterance.rate));
+    _fallbackTimer = setTimeout(() => { _fallbackTimer = null; setState(false); }, ms);
     return true;
   } catch {
     return false;

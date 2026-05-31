@@ -15,22 +15,25 @@ class DialektRepository {
   List<Lektion> _lektionen = const [];
   bool _loaded = false;
 
+  // Nach load() einmalig berechnet — die Daten ändern sich danach nie mehr.
+  // Früher materialisierten die Getter diese Listen über alle ~6700 Ausdrücke
+  // bei JEDEM Zugriff neu (u. a. pro Rebuild/Build der Lern-/Quiz-Screens).
+  List<Ausdruck> _alleAusdruecke = const [];
+  List<({Dialekt dialekt, Ausdruck ausdruck})> _alleMitDialekt = const [];
+  int _totalAusdruecke = 0;
+
   List<Dialekt> get dialekte => _dialekte;
   List<Kategorie> get kategorien => _kategorien;
   List<Lektion> get lektionen => _lektionen;
   bool get isLoaded => _loaded;
 
-  int get totalAusdruecke =>
-      _dialekte.fold(0, (sum, d) => sum + d.ausdruecke.length);
+  int get totalAusdruecke => _totalAusdruecke;
 
-  List<Ausdruck> get alleAusdruecke =>
-      [for (final d in _dialekte) ...d.ausdruecke];
+  List<Ausdruck> get alleAusdruecke => _alleAusdruecke;
 
   /// Alle Ausdrücke samt zugehörigem Dialekt (für Quiz, Suche etc.).
-  List<({Dialekt dialekt, Ausdruck ausdruck})> get alleMitDialekt => [
-        for (final d in _dialekte)
-          for (final a in d.ausdruecke) (dialekt: d, ausdruck: a),
-      ];
+  List<({Dialekt dialekt, Ausdruck ausdruck})> get alleMitDialekt =>
+      _alleMitDialekt;
 
   Dialekt? byId(String id) {
     for (final d in _dialekte) {
@@ -126,6 +129,14 @@ class DialektRepository {
     } catch (_) {
       _lektionen = const [];
     }
+
+    // Abgeleitete Listen einmalig cachen (Daten sind ab hier unveränderlich).
+    _alleAusdruecke = [for (final d in _dialekte) ...d.ausdruecke];
+    _alleMitDialekt = [
+      for (final d in _dialekte)
+        for (final a in d.ausdruecke) (dialekt: d, ausdruck: a),
+    ];
+    _totalAusdruecke = _alleAusdruecke.length;
 
     _loaded = true;
   }

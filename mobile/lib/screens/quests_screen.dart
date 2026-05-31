@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/quests_store.dart';
 import '../theme/app_theme.dart';
@@ -235,7 +234,7 @@ class _BonusBanner extends StatelessWidget {
               children: [
                 Text(
                   'Alle Quests geschafft!',
-                  style: GoogleFonts.fraunces(
+                  style: TextStyle(fontFamily: 'Fraunces', 
                     fontSize: 18,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,

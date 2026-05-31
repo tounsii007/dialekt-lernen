@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
@@ -113,7 +112,7 @@ class _GameCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(title,
-                    style: GoogleFonts.fraunces(
+                    style: TextStyle(fontFamily: 'Fraunces', 
                         fontSize: 19, fontWeight: FontWeight.w700)),
                 const SizedBox(height: 3),
                 Text(description,

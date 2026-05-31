@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/quests_store.dart';
 import '../data/repository.dart';
@@ -177,7 +176,7 @@ class _BlitzGameScreenState extends State<BlitzGameScreen> {
     return Column(
       children: [
         Text(value,
-            style: GoogleFonts.fraunces(
+            style: TextStyle(fontFamily: 'Fraunces', 
                 fontSize: 20, fontWeight: FontWeight.w700)),
         Text(label, style: TextStyle(fontSize: 11.5, color: surfaces.textMuted)),
       ],
@@ -234,7 +233,7 @@ class _QuestionView extends StatelessWidget {
               Text(
                 q.prompt,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.fraunces(
+                style: TextStyle(fontFamily: 'Fraunces', 
                     fontSize: 26, fontWeight: FontWeight.w700),
               ),
             ],
@@ -348,7 +347,7 @@ class _Summary extends StatelessWidget {
     return Column(
       children: [
         Text(value,
-            style: GoogleFonts.fraunces(
+            style: TextStyle(fontFamily: 'Fraunces', 
                 fontSize: 22, fontWeight: FontWeight.w700)),
         Text(label, style: TextStyle(fontSize: 11.5, color: surfaces.textMuted)),
       ],

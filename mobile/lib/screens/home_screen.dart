@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/achievements_store.dart';
 import '../data/goals_store.dart';
@@ -55,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                   child: Text(
                     'Dialekto',
                     overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.fraunces(
+                    style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
                     ),
@@ -133,7 +132,7 @@ class HomeScreen extends StatelessWidget {
             // Headline mit Gradient-Wort
             RichText(
               text: TextSpan(
-                style: GoogleFonts.fraunces(
+                style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                   fontSize: 34,
                   height: 1.1,
                   fontWeight: FontWeight.w700,
@@ -143,7 +142,7 @@ class HomeScreen extends StatelessWidget {
                   const TextSpan(text: 'Lerne Dialekte aus '),
                   TextSpan(
                     text: 'ganz Deutschland',
-                    style: GoogleFonts.fraunces(
+                    style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                       fontSize: 34,
                       height: 1.1,
                       fontWeight: FontWeight.w700,
@@ -448,7 +447,7 @@ class _QuickTile extends StatelessWidget {
           const SizedBox(height: AppSpacing.x2),
           Text(
             value,
-            style: GoogleFonts.fraunces(
+            style: TextStyle(fontFamily: 'Fraunces', 
               fontSize: 20,
               fontWeight: FontWeight.w700,
               color: accent,
@@ -486,7 +485,7 @@ class _Stat extends StatelessWidget {
             shaderCallback: (b) => AppColors.brandGradient.createShader(b),
             child: Text(
               value,
-              style: GoogleFonts.fraunces(
+              style: const TextStyle(fontFamily: 'Fraunces').copyWith(
                 fontSize: 28,
                 fontWeight: FontWeight.w700,
                 color: Colors.white,

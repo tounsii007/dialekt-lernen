@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../data/models.dart';
 import '../data/repository.dart';
@@ -39,7 +38,7 @@ class LektionDetailScreen extends StatelessWidget {
             const SizedBox(height: AppSpacing.x3),
             Text(
               lektion.title,
-              style: GoogleFonts.fraunces(
+              style: TextStyle(fontFamily: 'Fraunces', 
                   fontSize: 26, height: 1.2, fontWeight: FontWeight.w700),
             ),
             const SizedBox(height: AppSpacing.x2),
@@ -107,7 +106,7 @@ class LektionDetailScreen extends StatelessWidget {
         widgets.add(Padding(
           padding: const EdgeInsets.only(top: AppSpacing.x2, bottom: AppSpacing.x2),
           child: Text(line.substring(3).trim(),
-              style: GoogleFonts.fraunces(
+              style: TextStyle(fontFamily: 'Fraunces', 
                   fontSize: 18, fontWeight: FontWeight.w700)),
         ));
       } else if (line.trimLeft().startsWith('- ')) {

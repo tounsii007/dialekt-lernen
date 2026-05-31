@@ -45,6 +45,11 @@ class FavoritesStore extends ChangeNotifier {
   }
 
   /// Toggelt einen Favoriten und persistiert. Liefert true, wenn hinzugefügt.
+  ///
+  /// Optimistisch: der In-Memory-Zustand wird sofort geändert (UI reagiert
+  /// unmittelbar). Schlägt das Persistieren fehl, wird der Zustand
+  /// zurückgerollt + notifyListeners() erneut gefeuert, damit In-Memory und
+  /// Persistenz nicht dauerhaft auseinanderlaufen.
   Future<bool> toggle(String dialektId, String ausdruckId) async {
     final key = _key(dialektId, ausdruckId);
     final added = !_keys.contains(key);
@@ -54,8 +59,20 @@ class FavoritesStore extends ChangeNotifier {
       _keys.remove(key);
     }
     notifyListeners();
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setStringList(_prefsKey, _keys.toList());
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_prefsKey, _keys.toList());
+    } catch (e) {
+      // Rollback bei Persistenz-Fehler.
+      if (added) {
+        _keys.remove(key);
+      } else {
+        _keys.add(key);
+      }
+      notifyListeners();
+      debugPrint('FavoritesStore.toggle: persist failed, rolled back: $e');
+      return !added;
+    }
     return added;
   }
 }
