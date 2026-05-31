@@ -1,6 +1,5 @@
 // Widget-Test für das Fortschritts-HUD: spiegelt Level, XP und Streak live.
 
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

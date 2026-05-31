@@ -1,19 +1,41 @@
 import 'package:flutter/material.dart';
 
+import '../data/achievements_store.dart';
 import '../data/models.dart';
+import '../data/xp_store.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/favorite_button.dart';
 import '../widgets/glass_card.dart';
 import '../widgets/speak_button.dart';
 
-class DialektDetailScreen extends StatelessWidget {
+class DialektDetailScreen extends StatefulWidget {
   const DialektDetailScreen({super.key, required this.dialekt});
 
   final Dialekt dialekt;
 
   @override
+  State<DialektDetailScreen> createState() => _DialektDetailScreenState();
+}
+
+class _DialektDetailScreenState extends State<DialektDetailScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Besuch erfassen → schaltet Entdecker-Achievements frei, vergibt XP.
+    final ach = AchievementsStore.instance;
+    final firstVisit = !ach.visitedIds.contains(widget.dialekt.id);
+    ach.markVisited(widget.dialekt.id).then((_) {
+      ach.evaluateFromStores();
+    });
+    if (firstVisit) {
+      XpStore.instance.award(XpReward.dialectVisit, 'dialect-visit');
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final dialekt = widget.dialekt;
     final surfaces = AppSurfaces.of(context);
     return Scaffold(
       body: AuroraBackground(

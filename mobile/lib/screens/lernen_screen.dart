@@ -2,6 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../data/achievements_store.dart';
+import '../data/goals_store.dart';
 import '../data/models.dart';
 import '../data/repository.dart';
 import '../data/srs_store.dart';
@@ -98,9 +100,11 @@ class _LernenScreenState extends State<LernenScreen>
     final card = _session[_index];
     await SrsStore.instance.review(card.key, rating);
     await StreakStore.instance.register();
+    await GoalsStore.instance.increment();
     await XpStore.instance.award(XpReward.cardReviewed, 'card-reviewed');
     _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
     if (_index + 1 >= _session.length) {
+      await AchievementsStore.instance.evaluateFromStores();
       setState(() => _finished = true);
       return;
     }
