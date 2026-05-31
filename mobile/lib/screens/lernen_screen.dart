@@ -11,6 +11,8 @@ import '../data/repository.dart';
 import '../data/srs_store.dart';
 import '../data/streak_store.dart';
 import '../data/xp_store.dart';
+import '../util/fsrs.dart';
+import '../util/interval_format.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
@@ -71,10 +73,16 @@ class _LernenScreenState extends State<LernenScreen>
     if (studyAhead) {
       pool = List.of(all)..shuffle(math.Random());
     } else {
-      // Fällige zuerst (nach due sortiert), dann neue Karten.
+      // Fällige zuerst — nach Retrievability sortiert (am stärksten vom
+      // Vergessen bedrohte zuerst, schlägt Ankis reine Fälligkeits-Sortierung),
+      // `due` als stabiler Gleichstand-Tie. Dann neue Karten.
       final due = all.where((c) => !srs.isNew(c.key) && srs.isDue(c.key, now)).toList()
-        ..sort((a, b) =>
-            (srs.get(a.key)?.due ?? 0).compareTo(srs.get(b.key)?.due ?? 0));
+        ..sort((a, b) {
+          final byR = srs.retrievabilityOf(a.key, now)
+              .compareTo(srs.retrievabilityOf(b.key, now));
+          if (byR != 0) return byR;
+          return (srs.get(a.key)?.due ?? 0).compareTo(srs.get(b.key)?.due ?? 0);
+        });
       final fresh = all.where((c) => srs.isNew(c.key)).toList()
         ..shuffle(math.Random());
       pool = [...due, ...fresh];
@@ -100,12 +108,12 @@ class _LernenScreenState extends State<LernenScreen>
     }
   }
 
-  Future<void> _rate(int rating) async {
+  Future<void> _rate(int grade) async {
     final card = _session[_index];
     final wasNew = SrsStore.instance.isNew(card.key);
-    final correct = rating != ratingHard;
+    final correct = grade != gradeAgain;
 
-    await SrsStore.instance.review(card.key, rating);
+    await SrsStore.instance.reviewScheduled(card.key, grade: grade);
     await StreakStore.instance.register();
     await GoalsStore.instance.increment();
 
@@ -117,7 +125,7 @@ class _LernenScreenState extends State<LernenScreen>
     final award = await XpStore.instance.award(gainedXp, reason);
     await QuestsStore.instance.trackFromReason(reason, gainedXp);
 
-    _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
+    _ratings.update(grade, (v) => v + 1, ifAbsent: () => 1);
 
     if (!mounted) return;
     if (award.levelUp) {
@@ -157,6 +165,8 @@ class _LernenScreenState extends State<LernenScreen>
   Widget _buildSessionView(BuildContext context) {
     final surfaces = AppSurfaces.of(context);
     final card = _session[_index];
+    // FSRS-Intervall-Vorschau je Bewertung (null im SM-2-Modus → keine Hints).
+    final preview = SrsStore.instance.previewFor(card.key);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(
@@ -245,21 +255,31 @@ class _LernenScreenState extends State<LernenScreen>
             Row(
               children: [
                 _RateButton(
-                  label: 'Schwer',
+                  label: 'Nochmal',
                   color: AppColors.danger,
-                  onTap: () => _rate(ratingHard),
+                  hint: preview == null ? null : formatInterval(preview[gradeAgain]!),
+                  onTap: () => _rate(gradeAgain),
                 ),
                 const SizedBox(width: AppSpacing.x2),
                 _RateButton(
-                  label: 'Mittel',
+                  label: 'Schwer',
                   color: AppColors.warning,
-                  onTap: () => _rate(ratingMed),
+                  hint: preview == null ? null : formatInterval(preview[gradeHard]!),
+                  onTap: () => _rate(gradeHard),
+                ),
+                const SizedBox(width: AppSpacing.x2),
+                _RateButton(
+                  label: 'Gut',
+                  color: AppColors.accent2,
+                  hint: preview == null ? null : formatInterval(preview[gradeGood]!),
+                  onTap: () => _rate(gradeGood),
                 ),
                 const SizedBox(width: AppSpacing.x2),
                 _RateButton(
                   label: 'Leicht',
                   color: AppColors.success,
-                  onTap: () => _rate(ratingEasy),
+                  hint: preview == null ? null : formatInterval(preview[gradeEasy]!),
+                  onTap: () => _rate(gradeEasy),
                 ),
               ],
             ),
@@ -323,11 +343,15 @@ class _RateButton extends StatelessWidget {
     required this.label,
     required this.color,
     required this.onTap,
+    this.hint,
   });
 
   final String label;
   final Color color;
   final VoidCallback onTap;
+
+  /// Optionaler Intervall-Hinweis (FSRS-Vorschau) unter dem Label.
+  final String? hint;
 
   @override
   Widget build(BuildContext context) {
@@ -338,16 +362,40 @@ class _RateButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadii.md),
           onTap: onTap,
           child: Container(
-            padding: const EdgeInsets.symmetric(vertical: AppSpacing.x4),
+            padding: const EdgeInsets.symmetric(
+              vertical: AppSpacing.x3,
+              horizontal: 2,
+            ),
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: color.withValues(alpha: 0.14),
               borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(color: color.withValues(alpha: 0.6)),
             ),
-            child: Text(
-              label,
-              style: TextStyle(color: color, fontWeight: FontWeight.w600),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: color,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 13,
+                  ),
+                ),
+                if (hint != null) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    hint!,
+                    style: TextStyle(
+                      color: color.withValues(alpha: 0.78),
+                      fontSize: 11,
+                    ),
+                  ),
+                ],
+              ],
             ),
           ),
         ),
