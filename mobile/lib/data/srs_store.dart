@@ -76,6 +76,25 @@ class CardSrs {
       );
 }
 
+/// Aggregierte SRS-Kennzahlen für das Statistik-Dashboard.
+class SrsStats {
+  const SrsStats({
+    required this.total,
+    required this.due,
+    required this.learned,
+    required this.learning,
+    required this.fresh,
+    required this.leeches,
+  });
+
+  final int total;
+  final int due; // bewertete Karten, deren Review fällig ist
+  final int learned; // gemeistert (reps≥2, interval≥6)
+  final int learning; // angefangen (reps>0, nicht gemeistert)
+  final int fresh; // noch kein Record
+  final int leeches; // Problemkarten (lapses ≥ leechLapses)
+}
+
 class SrsStore extends ChangeNotifier {
   SrsStore._();
   static final SrsStore instance = SrsStore._();
@@ -85,6 +104,9 @@ class SrsStore extends ChangeNotifier {
   static const double initEf = 2.5;
   static const double minEf = 1.3;
   static const int dayMs = 86400000;
+
+  /// Lapse-Schwelle, ab der eine Karte als „Leech" (Dauer-Problemkarte) gilt.
+  static const int leechLapses = 8;
 
   final Map<String, CardSrs> _cards = {};
   bool _loaded = false;
@@ -332,6 +354,35 @@ class SrsStore extends ChangeNotifier {
         : math.max(c.interval.toDouble(), sMin);
     final elapsed = math.max(0.0, (now - c.last) / dayMs);
     return retrievability(elapsed, stability);
+  }
+
+  /// Aggregierte Kennzahlen über die übergebenen Karten-Keys (für Statistik).
+  SrsStats stats(Iterable<String> keys, [int? nowMs]) {
+    final now = nowMs ?? DateTime.now().millisecondsSinceEpoch;
+    var total = 0, due = 0, learned = 0, learning = 0, fresh = 0, leeches = 0;
+    for (final k in keys) {
+      total++;
+      final c = _cards[k];
+      if (c == null) {
+        fresh++;
+        continue;
+      }
+      if (c.reps >= 2 && c.interval >= 6) {
+        learned++;
+      } else if (c.reps > 0) {
+        learning++;
+      }
+      if (c.due <= now) due++;
+      if (c.lapses >= leechLapses) leeches++;
+    }
+    return SrsStats(
+      total: total,
+      due: due,
+      learned: learned,
+      learning: learning,
+      fresh: fresh,
+      leeches: leeches,
+    );
   }
 
   Future<void> _persist() async {

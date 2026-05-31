@@ -18,6 +18,7 @@ import 'goals_screen.dart';
 import 'quests_screen.dart';
 import 'search_screen.dart';
 import 'settings_screen.dart';
+import 'statistik_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.onOpenTab});
@@ -55,6 +56,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
+                IconButton(
+                  tooltip: 'Statistik',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const StatistikScreen()),
+                  ),
+                  icon: Icon(Icons.bar_chart_rounded, color: surfaces.textMuted),
+                ),
                 IconButton(
                   tooltip: 'Suchen',
                   onPressed: () => Navigator.of(context).push(

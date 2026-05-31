@@ -3,6 +3,15 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/// Ein Tag in der Aktivitäts-Heatmap.
+class HeatDay {
+  const HeatDay({required this.date, required this.count});
+  final DateTime date;
+  final int count;
+
+  bool get active => count > 0;
+}
+
 /// Tages-Streak: konsekutive Lerntage zählen — Kern portiert von
 /// js/store/streak.js (Schutz-Mechaniken Freeze/Repair/Amulett folgen später).
 /// Persistiert als JSON { "count": int, "lastDay": "Y-M-D"?, "days": {key:int} }.
@@ -94,6 +103,19 @@ class StreakStore extends ChangeNotifier {
     notifyListeners();
     await _persist();
     return _count;
+  }
+
+  /// Aktivität je Tag der letzten [weeks] Wochen (ältester zuerst), DST-sicher
+  /// über Kalender-Arithmetik. Quelle für die GitHub-artige Heatmap.
+  List<HeatDay> heatmap({int weeks = 16, DateTime? now}) {
+    final today = now ?? DateTime.now();
+    final total = weeks * 7;
+    final out = <HeatDay>[];
+    for (var i = total - 1; i >= 0; i--) {
+      final d = DateTime(today.year, today.month, today.day - i);
+      out.add(HeatDay(date: d, count: _days[_dayKey(d)] ?? 0));
+    }
+    return out;
   }
 
   Future<void> _persist() async {
