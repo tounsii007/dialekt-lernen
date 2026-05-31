@@ -1,22 +1,15 @@
 #!/usr/bin/env node
-// CSS-Minifier — sehr einfacher Regex-basierter Minifier ohne Deps.
+// CSS-Minifier — sicherer, dependency-freier Build-Schritt.
 //
-// Strategie:
-//   * Kommentare entfernen
-//   * Whitespace komprimieren
-//   * Trailing-Semikolons in `{...}` entfernen
-//   * Leerzeichen um {, }, :, ; entfernen
-//   * Doppelte Semikolons reduzieren
-//
-// Output: styles.min.css neben styles.css.
-//
-// HINWEIS: Standard-Output ist unminified styles.css — die App wird damit
-// ausgeliefert. Dieser Tool ist optional für Produktions-Deployments,
-// wo man ggf. Caching/Bandbreite zusätzlich optimieren möchte.
+// Die eigentliche Logik liegt in tools/lib/minify-css.mjs (testbar). Dieser
+// Wrapper liest styles.css, schreibt styles.min.css und meldet die Ersparnis.
+// index.html wird mit styles.min.css ausgeliefert.
 
 import { readFileSync, writeFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+
+import { minifyCss } from './lib/minify-css.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -25,23 +18,6 @@ const inPath = join(ROOT, 'styles.css');
 const outPath = join(ROOT, 'styles.min.css');
 
 const src = readFileSync(inPath, 'utf8');
-
-function minifyCss(css) {
-  return css
-    // Block-Kommentare entfernen (außer License-Markern /*! ... */)
-    .replace(/\/\*(?!!)[\s\S]*?\*\//g, '')
-    // Mehrfach-Whitespace zu Single-Space
-    .replace(/\s+/g, ' ')
-    // Whitespace um Strukturzeichen entfernen
-    .replace(/\s*([\{\}:;,>+~])\s*/g, '$1')
-    // Trailing-Semikolon vor } entfernen
-    .replace(/;}/g, '}')
-    // Mehrfach-Semikolons reduzieren
-    .replace(/;+/g, ';')
-    // Führendes & abschließendes Whitespace
-    .trim();
-}
-
 const minified = minifyCss(src);
 
 writeFileSync(outPath, minified, 'utf8');
