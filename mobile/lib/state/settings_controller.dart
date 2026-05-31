@@ -25,10 +25,19 @@ class SettingsController extends ChangeNotifier {
 
   Future<void> setThemeMode(ThemeMode mode) async {
     if (mode == _themeMode) return;
+    final previous = _themeMode;
     _themeMode = mode;
     notifyListeners();
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_themeKey, _name(mode));
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_themeKey, _name(mode));
+    } catch (e) {
+      // Rollback bei Persistenz-Fehler, damit Anzeige und gespeicherter Wert
+      // nicht auseinanderlaufen.
+      _themeMode = previous;
+      notifyListeners();
+      debugPrint('SettingsController.setThemeMode: persist failed, rolled back: $e');
+    }
   }
 
   static ThemeMode _parse(String? s) => switch (s) {
