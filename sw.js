@@ -294,6 +294,10 @@ self.addEventListener('fetch', (event) => {
 });
 
 self.addEventListener('message', (event) => {
+  // Defense-in-depth: nur same-origin-Nachrichten verarbeiten. Der SW-Scope ist
+  // ohnehin origin-gebunden, aber so können destruktive Kommandos (CLEAR_CACHE)
+  // bei künftigen Änderungen nicht versehentlich aus fremdem Kontext greifen.
+  if (event.origin && event.origin !== self.location.origin) return;
   if (event.data === 'CLEAR_CACHE') {
     event.waitUntil(
       caches.keys().then((keys) => Promise.all(keys.map((k) => caches.delete(k)))),
