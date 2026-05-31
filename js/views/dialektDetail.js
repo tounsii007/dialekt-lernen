@@ -13,6 +13,7 @@ import { sfx } from '../util/sounds.js';
 import { confettiBurst } from '../util/motion.js';
 import { isRecordingSupported, startRecording } from '../util/recorder.js';
 import { syllableEnvelope, scorePronunciation, normalizeEnvelope } from '../util/audio-analysis.js';
+import { isPronunciationSupported, startListening, scoreBestAlternative } from '../util/pronunciation.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -240,8 +241,9 @@ function renderPronunciationSection(a, dialekt) {
   ));
 
   // Aussprache-Übung (Mikrofon) erst beim Aufklappen bauen — spart bei großen
-  // Dialekten hunderte Canvas-Elemente im DOM. Nur wenn Aufnahme unterstützt wird.
-  if (isRecordingSupported() && syllables.length) {
+  // Dialekten hunderte Canvas-Elemente im DOM. Nur wenn Rhythmus-Aufnahme ODER
+  // Worterkennung unterstützt wird.
+  if ((isRecordingSupported() || isPronunciationSupported()) && syllables.length) {
     let built = false;
     sec.addEventListener('toggle', () => {
       if (sec.open && !built) {
@@ -291,33 +293,37 @@ function drawEnvelopes(canvas, refEnv, userEnv) {
   plot(userEnv ? normalizeEnvelope(userEnv) : null, { stroke: brand, lw: 2.5 });
 }
 
-// Mikrofon-Übungs-Widget: aufnehmen, Rhythmus mit erwartetem Silbenmuster
-// vergleichen, Score zeigen. Speichert/sendet kein Audio (siehe recorder.js).
+// Mikrofon-Übungs-Widget. Zwei Blöcke: (1) Rhythmus-Vergleich (rein lokal, kein
+// Audio gespeichert/gesendet, siehe recorder.js) und (2) optionale Worterkennung
+// über die Browser-SpeechRecognition (kann online sein → transparenter Hinweis).
+// Beide teilen sich einen `mic`-Status, damit sie nicht gleichzeitig aufnehmen.
 function renderPracticeWidget(a, lang, sylCount) {
-  const BUCKETS = 48;
-  const refEnv = syllableEnvelope(sylCount, BUCKETS);
-
   const wrap = el('div', { class: 'pron-practice' });
   wrap.appendChild(el('div', { class: 'pron-practice-head' },
     el('span', { class: 'pron-practice-icon' }, '🎙️'),
-    el('span', { class: 'pron-practice-title' }, 'Rhythmus üben'),
+    el('span', { class: 'pron-practice-title' }, 'Aussprache üben'),
     el('span', { class: 'pron-practice-hint' }, `${sylCount} Silbe${sylCount === 1 ? '' : 'n'}`)
   ));
+  const mic = { busy: false };
+  if (isRecordingSupported()) appendRhythmBlock(wrap, sylCount, mic);
+  if (isPronunciationSupported()) appendRecognitionBlock(wrap, a, lang, mic);
+  return wrap;
+}
 
+// Block 1 — Rhythmus aufnehmen und gegen das erwartete Silbenmuster bewerten.
+function appendRhythmBlock(wrap, sylCount, mic) {
+  const BUCKETS = 48;
+  const refEnv = syllableEnvelope(sylCount, BUCKETS);
   const canvas = el('canvas', { class: 'pron-canvas', width: 480, height: 96, ariaHidden: 'true' });
-  wrap.appendChild(canvas);
-  drawEnvelopes(canvas, refEnv, null);
-
-  const status = el('div', { class: 'pron-practice-status' },
-    'Erst anhören, dann aufnehmen und nachsprechen.');
+  const status = el('div', { class: 'pron-practice-status' }, 'Rhythmus: anhören, dann aufnehmen und nachsprechen.');
   const badge = el('div', { class: 'pron-score-badge' });
   const recBtn = el('button', { class: 'btn btn-primary pron-rec' }, '🎙️ Aufnehmen');
-
+  wrap.appendChild(canvas);
   wrap.appendChild(el('div', { class: 'pron-practice-foot' }, recBtn, badge));
   wrap.appendChild(status);
+  drawEnvelopes(canvas, refEnv, null);
 
-  let controller = null;
-  let recording = false;
+  let controller = null, recording = false;
   const live = [];
 
   function showScore({ score, userPeaks, expectedSyllables }) {
@@ -325,8 +331,7 @@ function renderPracticeWidget(a, lang, sylCount) {
     const tone = score >= 80 ? 'high' : score >= 55 ? 'mid' : 'low';
     badge.className = `pron-score-badge is-shown tone-${tone}`;
     badge.appendChild(el('span', { class: 'pron-score-num' }, score + '%'));
-    badge.appendChild(el('span', { class: 'pron-score-sub' },
-      `${userPeaks}/${expectedSyllables} Silben`));
+    badge.appendChild(el('span', { class: 'pron-score-sub' }, `${userPeaks}/${expectedSyllables} Silben`));
     status.textContent = score >= 80 ? 'Super Rhythmus! 🎉'
       : score >= 55 ? 'Schon nah dran — versuch es nochmal.'
       : 'Achte auf die Silben-Betonung.';
@@ -334,8 +339,9 @@ function renderPracticeWidget(a, lang, sylCount) {
   }
 
   async function start() {
+    if (mic.busy) { status.textContent = 'Erst die Worterkennung beenden.'; return; }
+    mic.busy = true; recording = true;
     live.length = 0;
-    recording = true;
     badge.classList.remove('is-shown');
     recBtn.classList.add('is-recording');
     recBtn.textContent = '⏹ Stoppen';
@@ -346,8 +352,7 @@ function renderPracticeWidget(a, lang, sylCount) {
         maxMs: Math.min(8000, Math.max(2500, sylCount * 750)),
         onLevel: (lvl) => { live.push(lvl); drawEnvelopes(canvas, refEnv, live); },
         onStop: ({ envelope }) => {
-          recording = false;
-          controller = null;
+          recording = false; mic.busy = false; controller = null;
           recBtn.classList.remove('is-recording');
           recBtn.textContent = '🎙️ Nochmal';
           drawEnvelopes(canvas, refEnv, envelope);
@@ -355,7 +360,7 @@ function renderPracticeWidget(a, lang, sylCount) {
         },
       });
     } catch {
-      recording = false;
+      recording = false; mic.busy = false;
       recBtn.classList.remove('is-recording');
       recBtn.textContent = '🎙️ Aufnehmen';
       status.textContent = 'Mikrofon nicht verfügbar oder Zugriff verweigert.';
@@ -366,8 +371,61 @@ function renderPracticeWidget(a, lang, sylCount) {
     if (recording) { if (controller) controller.stop(); return; }
     start();
   });
+}
 
-  return wrap;
+// Block 2 — Worterkennung: hört zu und bewertet das Transcript (tolerant, mit
+// Laut-Faltung). Nutzt die Browser-SpeechRecognition (kann online sein).
+function appendRecognitionBlock(wrap, a, lang, mic) {
+  const out = el('div', { class: 'pron-recog-out' }, 'Worterkennung: tippe „Prüfen" und sprich den Ausdruck.');
+  const recogBtn = el('button', { class: 'btn btn-secondary pron-recog-btn' }, '🗣️ Aussprache prüfen');
+  wrap.appendChild(el('div', { class: 'pron-recog' },
+    el('div', { class: 'pron-recog-foot' }, recogBtn, out),
+    el('div', { class: 'pron-recog-note' },
+      'ⓘ nutzt die Spracherkennung deines Browsers — dabei kann Audio an den Browser-Dienst (ggf. online) gehen.')
+  ));
+
+  let listening = false, stop = null, finalShown = false;
+  function reset() {
+    listening = false; stop = null; mic.busy = false;
+    recogBtn.classList.remove('is-listening');
+    recogBtn.textContent = '🗣️ Aussprache prüfen';
+  }
+
+  recogBtn.addEventListener('click', () => {
+    if (listening) { if (stop) stop(); return; }
+    if (mic.busy) { out.className = 'pron-recog-out'; out.textContent = 'Erst die Rhythmus-Aufnahme beenden.'; return; }
+    listening = true; mic.busy = true; finalShown = false;
+    recogBtn.classList.add('is-listening');
+    recogBtn.textContent = '⏹ Höre zu…';
+    out.className = 'pron-recog-out';
+    out.textContent = 'Sprich jetzt…';
+    sfx.click();
+    stop = startListening({
+      lang,
+      onPartial: (t) => { out.textContent = '„' + t + '…"'; },
+      onResult: ({ transcript, alternatives }) => {
+        finalShown = true;
+        const best = scoreBestAlternative(a.ausdruck, (alternatives && alternatives.length) ? alternatives : [transcript]);
+        const pct = Math.round(best.score * 100);
+        out.className = 'pron-recog-out ' + (best.ok ? 'is-ok' : 'is-miss');
+        out.innerHTML = '';
+        out.appendChild(el('span', { class: 'pron-recog-verdict' }, (best.ok ? '✓ ' : '✗ ') + pct + '%'));
+        out.appendChild(el('span', { class: 'pron-recog-heard' }, 'gehört: „' + (best.transcript || '–') + '"'));
+        if (best.ok) { sfx.unlock(); if (pct >= 90) confettiBurst(out, { count: 16 }); }
+        else sfx.wrong();
+      },
+      onError: () => {
+        finalShown = true;
+        out.className = 'pron-recog-out is-miss';
+        out.textContent = 'Erkennung nicht verfügbar oder Zugriff verweigert.';
+        reset();
+      },
+      onEnd: () => {
+        if (!finalShown) { out.className = 'pron-recog-out'; out.textContent = 'Nichts erkannt — nochmal versuchen.'; }
+        reset();
+      },
+    });
+  });
 }
 
 // Etymologie-Bereich: zeigt extrahierte Wortherkunfts-Sätze aus dem Bedeutungs-Text

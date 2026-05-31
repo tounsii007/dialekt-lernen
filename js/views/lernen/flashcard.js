@@ -10,7 +10,7 @@ import { createWaveform } from '../../util/waveform.js';
 import { buildCloze } from '../../util/cloze.js';
 import { shareCard } from '../../util/share-card.js';
 import { formatIpa } from '../../util/ipa.js';
-import { isPronunciationSupported, startListening, scorePronunciation } from '../../util/pronunciation.js';
+import { isPronunciationSupported, startListening, scoreBestAlternative } from '../../util/pronunciation.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
 const SWIPE_THRESHOLD = 100;
@@ -392,10 +392,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             lang: c.dialektLang || 'de-DE',
             onPartial: (t) => { statusEl.textContent = '… ' + t; },
             onResult: ({ transcript, alternatives }) => {
-              const best = (alternatives || [transcript]).reduce((bestSoFar, alt) => {
-                const s = scorePronunciation(c.ausdruck, alt);
-                return s.score > bestSoFar.score ? { ...s, transcript: alt } : bestSoFar;
-              }, { score: 0, ok: false, transcript });
+              const best = scoreBestAlternative(c.ausdruck,
+                (alternatives && alternatives.length) ? alternatives : [transcript]);
               statusEl.classList.remove('is-listening');
               statusEl.classList.add(best.ok ? 'is-ok' : 'is-wrong');
               statusEl.textContent = best.ok
@@ -424,6 +422,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       front.appendChild(el('div', { class: 'pron-check-row', onClick: (e) => e.stopPropagation() },
         micBtn, statusEl
       ));
+      front.appendChild(el('div', { class: 'pron-recog-note' },
+        'ⓘ nutzt die Spracherkennung deines Browsers — dabei kann Audio an den Browser-Dienst (ggf. online) gehen.'));
       back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
       back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
       back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
