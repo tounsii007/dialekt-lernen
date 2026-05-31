@@ -5,8 +5,8 @@ import assert from 'node:assert/strict';
 
 import { state } from '../js/store/state.js';
 import {
-  ACHIEVEMENTS, evaluateAchievements, getAchievementStatus,
-  markDialectVisited, getVisitedDialects,
+  ACHIEVEMENTS, RARITY, rarityOf, evaluateAchievements, getAchievementStatus,
+  getAchievementScore, markDialectVisited, getVisitedDialects,
 } from '../js/store/achievements.js';
 import { resetState } from './_setup.js';
 
@@ -23,6 +23,19 @@ describe('ACHIEVEMENTS — Definitionen', () => {
       assert.ok(a.desc);
       assert.equal(typeof a.check, 'function');
     }
+  });
+
+  it('jedes Achievement hat eine gültige Rarität', () => {
+    for (const a of ACHIEVEMENTS) {
+      assert.ok(a.rarity, `${a.id} hat keine rarity`);
+      assert.ok(RARITY[a.rarity], `${a.id} hat ungültige rarity "${a.rarity}"`);
+      assert.equal(rarityOf(a).id, a.rarity);
+    }
+  });
+
+  it('rarityOf fällt auf common zurück', () => {
+    assert.equal(rarityOf({}).id, 'common');
+    assert.equal(rarityOf({ rarity: 'unbekannt' }).id, 'common');
   });
 
   it('keine doppelten IDs', () => {
@@ -98,6 +111,73 @@ describe('evaluateAchievements — Vergabe-Logik', () => {
     // ACHIEVEMENTS sind sicher implementiert — wir verifizieren nur, dass
     // ein fehlender stats-Wert nicht zum Absturz führt.
     assert.doesNotThrow(() => evaluateAchievements({}));
+  });
+});
+
+describe('evaluateAchievements — neue Kategorien (Iter 13)', () => {
+  beforeEach(resetState);
+
+  const unlocked = (r, id) => r.items.find(i => i.def.id === id).unlocked;
+
+  it('Level-Achievements: level5/10/20', () => {
+    assert.equal(unlocked(evaluateAchievements({ level: 4 }), 'level5'), false);
+    assert.equal(unlocked(evaluateAchievements({ level: 5 }), 'level5'), true);
+    assert.equal(unlocked(evaluateAchievements({ level: 20 }), 'level20'), true);
+  });
+
+  it('Notiz-Achievements: firstNote/notes10', () => {
+    assert.equal(unlocked(evaluateAchievements({ noteCount: 1 }), 'firstNote'), true);
+    assert.equal(unlocked(evaluateAchievements({ noteCount: 9 }), 'notes10'), false);
+    assert.equal(unlocked(evaluateAchievements({ noteCount: 10 }), 'notes10'), true);
+  });
+
+  it('Deck-Achievement: firstDeck', () => {
+    assert.equal(unlocked(evaluateAchievements({ deckCount: 0 }), 'firstDeck'), false);
+    assert.equal(unlocked(evaluateAchievements({ deckCount: 1 }), 'firstDeck'), true);
+  });
+
+  it('Lernpfad-Achievements: pathStart/pathHalf/pathAll', () => {
+    assert.equal(unlocked(evaluateAchievements({ pathCompleted: 1, pathTotal: 24 }), 'pathStart'), true);
+    assert.equal(unlocked(evaluateAchievements({ pathCompleted: 11, pathTotal: 24 }), 'pathHalf'), false);
+    assert.equal(unlocked(evaluateAchievements({ pathCompleted: 12, pathTotal: 24 }), 'pathHalf'), true);
+    assert.equal(unlocked(evaluateAchievements({ pathCompleted: 24, pathTotal: 24 }), 'pathAll'), true);
+  });
+
+  it('Lernpfad-Achievements lösen ohne pathTotal nicht aus', () => {
+    const r = evaluateAchievements({ pathCompleted: 5 });
+    assert.equal(unlocked(r, 'pathHalf'), false);
+    assert.equal(unlocked(r, 'pathAll'), false);
+  });
+
+  it('Chest-Achievements: chest7/chest30', () => {
+    assert.equal(unlocked(evaluateAchievements({ chestStreak: 6 }), 'chest7'), false);
+    assert.equal(unlocked(evaluateAchievements({ chestStreak: 7 }), 'chest7'), true);
+    assert.equal(unlocked(evaluateAchievements({ chestStreak: 30 }), 'chest30'), true);
+  });
+});
+
+describe('getAchievementScore', () => {
+  beforeEach(resetState);
+
+  it('Default: 0 Punkte, maxScore > 0, Aufschlüsselung pro Stufe', () => {
+    const s = getAchievementScore();
+    assert.equal(s.score, 0);
+    assert.ok(s.maxScore > 0);
+    for (const key in RARITY) {
+      assert.equal(s.byRarity[key].unlocked, 0);
+      assert.ok(s.byRarity[key].total >= 0);
+    }
+    // maxScore == Summe aller Raritätspunkte.
+    const expectedMax = ACHIEVEMENTS.reduce((sum, d) => sum + rarityOf(d).points, 0);
+    assert.equal(s.maxScore, expectedMax);
+  });
+
+  it('zählt freigeschaltete Punkte korrekt', () => {
+    // firstCard = common (10 Pkt).
+    evaluateAchievements({ gelerntCount: 1 });
+    const s = getAchievementScore();
+    assert.equal(s.score, RARITY.common.points);
+    assert.equal(s.byRarity.common.unlocked, 1);
   });
 });
 

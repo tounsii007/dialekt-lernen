@@ -22,10 +22,11 @@ yarn-error.log*
 coverage/
 .nyc_output/
 
-# Build artifacts (we have no build step, but just in case)
+# Build artifacts
 dist/
 build/
-styles.min.css
+# styles.min.css wird ausgeliefert (index.html + SW) → committet,
+# per `npm run minify-css` aus styles.css generiert, Freshness per Test geprüft.
 
 # Local env
 .env

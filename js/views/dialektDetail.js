@@ -1,4 +1,4 @@
-import { el, go, normalize, debounce } from '../util.js';
+import { el, go, normalize, speak, debounce } from '../util.js';
 import { getDialekt } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
@@ -8,6 +8,13 @@ import { icon, emptyIllustration } from '../util/icons.js';
 import { buildIndex, searchIndex } from '../util/fuzzy.js';
 import { findRelatedExpressions } from '../util/related-expressions.js';
 import { extractEtymology, hasEtymology } from '../util/etymology.js';
+import { formatIpa, splitSyllables } from '../util/ipa.js';
+import { sfx } from '../util/sounds.js';
+import { confettiBurst } from '../util/motion.js';
+import { isRecordingSupported, startRecording } from '../util/recorder.js';
+import { syllableEnvelope, scorePronunciation, normalizeEnvelope } from '../util/audio-analysis.js';
+import { isPronunciationSupported, startListening, scoreBestAlternative } from '../util/pronunciation.js';
+import { forvoUrl, pickForvoWords } from '../util/forvo.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -75,6 +82,9 @@ export function renderDialektDetail(root, dialektId) {
       )
     )
   ));
+
+  // Hör-Training + Community-Aussprachen
+  view.appendChild(renderDialectAudioSection(d));
 
   // Toolbar
   const usedCats = new Set(d.ausdruecke.map(a => a.kategorie));
@@ -145,6 +155,8 @@ export function renderDialektDetail(root, dialektId) {
     items.forEach(a => {
       const cardWrap = el('div', { class: 'expr-card-wrap' });
       cardWrap.appendChild(renderExpressionCard(a, d));
+      const pron = renderPronunciationSection(a, d);
+      if (pron) cardWrap.appendChild(pron);
       const etym = renderEtymologySection(a);
       if (etym) cardWrap.appendChild(etym);
       if (relatedObserver) {
@@ -171,6 +183,75 @@ export function renderDialektDetail(root, dialektId) {
   toolbar.querySelector('input').addEventListener('input', (e) => { term = e.target.value; debouncedRender(); });
 
   root.appendChild(view);
+}
+
+// Hör-Training (Klangpaare/Shadowing für genau diesen Dialekt) + kuratierte
+// Forvo-Links zu Muttersprachler-Aufnahmen. Forvo-Links sind externe,
+// nutzerinitiierte Links (neuer Tab) — kein Embed, kein Auto-Fetch, kein
+// Tracking, damit die Offline-/Privacy-Säule unangetastet bleibt.
+function renderDialectAudioSection(d) {
+  const sec = el('section', { class: 'detail-audio', dataset: { reveal: 'up' } });
+
+  // Übungs-Trainer für diesen Dialekt.
+  sec.appendChild(el('div', { class: 'detail-audio-train' },
+    el('button', {
+      class: 'detail-train-btn',
+      style: { '--dc': d.farbe },
+      onClick: () => { sfx.click(); go(`#/klangpaare?source=${d.id}`); }
+    },
+      el('span', { class: 'detail-train-emoji' }, '👂'),
+      el('span', { class: 'detail-train-text' },
+        el('span', { class: 'detail-train-title' }, 'Klangpaare üben'),
+        el('span', { class: 'detail-train-sub' }, 'Ähnlich klingende Ausdrücke unterscheiden')
+      )
+    ),
+    el('button', {
+      class: 'detail-train-btn',
+      style: { '--dc': d.farbe },
+      onClick: () => { sfx.click(); go(`#/shadowing?source=${d.id}`); }
+    },
+      el('span', { class: 'detail-train-emoji' }, '🗣️'),
+      el('span', { class: 'detail-train-text' },
+        el('span', { class: 'detail-train-title' }, 'Shadowing'),
+        el('span', { class: 'detail-train-sub' }, 'Hören und sofort nachsprechen')
+      )
+    )
+  ));
+
+  // Forvo-Community-Aussprachen (ausklappbar, externe Links).
+  const words = pickForvoWords(d.ausdruecke, 12);
+  if (words.length) {
+    const det = el('details', { class: 'forvo-section' });
+    det.appendChild(el('summary', { class: 'forvo-summary' },
+      el('span', { class: 'forvo-icon' }, '🎧'),
+      el('span', { class: 'forvo-label' }, 'Von Muttersprachlern gesprochen'),
+      el('span', { class: 'forvo-count' }, `${words.length} Wörter`)
+    ));
+    const body = el('div', { class: 'forvo-body' });
+    body.appendChild(el('p', { class: 'forvo-note' },
+      'Öffnet Forvo.com in einem neuen Tab — eine Community-Datenbank mit ' +
+      'Aufnahmen echter Sprecher. Externer Link; wir laden oder tracken nichts.'));
+    const list = el('div', { class: 'forvo-list' });
+    words.forEach(w => {
+      const href = forvoUrl(w.ausdruck);
+      if (!href) return;
+      list.appendChild(el('a', {
+        class: 'forvo-link',
+        href,
+        target: '_blank',
+        rel: 'noopener noreferrer nofollow',
+        title: `„${w.ausdruck}" auf Forvo anhören (neuer Tab)`
+      },
+        el('span', { class: 'forvo-link-word' }, w.ausdruck),
+        el('span', { class: 'forvo-link-ext' }, '↗')
+      ));
+    });
+    body.appendChild(list);
+    det.appendChild(body);
+    sec.appendChild(det);
+  }
+
+  return sec;
 }
 
 // Cache: findRelatedExpressions scannt ALLE_AUSDRUECKE — pro Ausdruck nur einmal.
@@ -219,6 +300,236 @@ function renderRelatedSection(a, dialekt) {
   }
   sec.appendChild(list);
   return sec;
+}
+
+// Aussprache-Bereich: IPA-Lautschrift, Silbenzerlegung (klickbar) und
+// Wiedergabe in normalem sowie verlangsamtem Tempo (Slow-Mo).
+function renderPronunciationSection(a, dialekt) {
+  const lang = dialekt.lang || 'de-DE';
+  const ipa = formatIpa(a.ausdruck, dialekt.id);
+  const syllables = splitSyllables(a.ausdruck);
+
+  const sec = el('details', { class: 'pron-section' });
+  sec.appendChild(el('summary', { class: 'pron-summary' },
+    el('span', { class: 'pron-icon' }, '🔊'),
+    el('span', { class: 'pron-label' }, 'Aussprache'),
+    el('span', { class: 'pron-ipa-mini' }, ipa)
+  ));
+
+  const body = el('div', { class: 'pron-body' });
+
+  // Große IPA-Zeile
+  body.appendChild(el('div', { class: 'pron-ipa' }, ipa));
+
+  // Silben — klickbare Chips, jede einzeln langsam vorgesprochen.
+  if (syllables.length) {
+    const sylRow = el('div', { class: 'pron-syllables', role: 'group', ariaLabel: 'Silben' });
+    syllables.forEach((syl, idx) => {
+      if (idx > 0) sylRow.appendChild(el('span', { class: 'pron-syl-sep', ariaHidden: 'true' }, '·'));
+      sylRow.appendChild(el('button', {
+        class: 'pron-syl',
+        title: `„${syl}" langsam anhören`,
+        onClick: () => { sfx.click(); speak(syl, lang, { rate: 0.7 }); }
+      }, syl));
+    });
+    body.appendChild(sylRow);
+  }
+
+  // Wiedergabe-Buttons: normal + Slow-Mo.
+  body.appendChild(el('div', { class: 'pron-buttons' },
+    el('button', { class: 'btn btn-secondary pron-play',
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang); } }, '▶ Anhören'),
+    el('button', { class: 'btn btn-ghost pron-play',
+      title: 'Verlangsamt — Silbe für Silbe nachsprechen',
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5 }); } }, '🐢 Langsam')
+  ));
+
+  // Aussprache-Übung (Mikrofon) erst beim Aufklappen bauen — spart bei großen
+  // Dialekten hunderte Canvas-Elemente im DOM. Nur wenn Rhythmus-Aufnahme ODER
+  // Worterkennung unterstützt wird.
+  if ((isRecordingSupported() || isPronunciationSupported()) && syllables.length) {
+    let built = false;
+    sec.addEventListener('toggle', () => {
+      if (sec.open && !built) {
+        built = true;
+        body.appendChild(renderPracticeWidget(a, lang, syllables.length));
+      }
+    });
+  }
+
+  sec.appendChild(body);
+  return sec;
+}
+
+// Zeichnet erwartete (blasse Fläche) und aufgenommene (kräftige Linie) Hüllkurve.
+function drawEnvelopes(canvas, refEnv, userEnv) {
+  const ctx = canvas.getContext && canvas.getContext('2d');
+  if (!ctx) return;
+  const W = canvas.width, H = canvas.height, pad = 6;
+  let brand = '#7c5cff';
+  try {
+    const c = getComputedStyle(canvas).getPropertyValue('--brand').trim();
+    if (c) brand = c;
+  } catch {}
+  ctx.clearRect(0, 0, W, H);
+  const plot = (env, { stroke, fill, lw } = {}) => {
+    if (!env || !env.length) return;
+    const n = env.length;
+    const x = (i) => pad + (i / Math.max(1, n - 1)) * (W - 2 * pad);
+    const y = (v) => H - pad - Math.max(0, Math.min(1, v)) * (H - 2 * pad);
+    ctx.beginPath();
+    ctx.moveTo(x(0), y(env[0]));
+    for (let i = 1; i < n; i++) ctx.lineTo(x(i), y(env[i]));
+    if (fill) {
+      ctx.lineTo(x(n - 1), H - pad);
+      ctx.lineTo(x(0), H - pad);
+      ctx.closePath();
+      ctx.fillStyle = fill;
+      ctx.fill();
+    } else {
+      ctx.strokeStyle = stroke;
+      ctx.lineWidth = lw || 2;
+      ctx.lineJoin = 'round';
+      ctx.stroke();
+    }
+  };
+  plot(refEnv, { fill: 'rgba(124,92,255,.16)' });
+  plot(userEnv ? normalizeEnvelope(userEnv) : null, { stroke: brand, lw: 2.5 });
+}
+
+// Mikrofon-Übungs-Widget. Zwei Blöcke: (1) Rhythmus-Vergleich (rein lokal, kein
+// Audio gespeichert/gesendet, siehe recorder.js) und (2) optionale Worterkennung
+// über die Browser-SpeechRecognition (kann online sein → transparenter Hinweis).
+// Beide teilen sich einen `mic`-Status, damit sie nicht gleichzeitig aufnehmen.
+function renderPracticeWidget(a, lang, sylCount) {
+  const wrap = el('div', { class: 'pron-practice' });
+  wrap.appendChild(el('div', { class: 'pron-practice-head' },
+    el('span', { class: 'pron-practice-icon' }, '🎙️'),
+    el('span', { class: 'pron-practice-title' }, 'Aussprache üben'),
+    el('span', { class: 'pron-practice-hint' }, `${sylCount} Silbe${sylCount === 1 ? '' : 'n'}`)
+  ));
+  const mic = { busy: false };
+  if (isRecordingSupported()) appendRhythmBlock(wrap, sylCount, mic);
+  if (isPronunciationSupported()) appendRecognitionBlock(wrap, a, lang, mic);
+  return wrap;
+}
+
+// Block 1 — Rhythmus aufnehmen und gegen das erwartete Silbenmuster bewerten.
+function appendRhythmBlock(wrap, sylCount, mic) {
+  const BUCKETS = 48;
+  const refEnv = syllableEnvelope(sylCount, BUCKETS);
+  const canvas = el('canvas', { class: 'pron-canvas', width: 480, height: 96, ariaHidden: 'true' });
+  const status = el('div', { class: 'pron-practice-status' }, 'Rhythmus: anhören, dann aufnehmen und nachsprechen.');
+  const badge = el('div', { class: 'pron-score-badge' });
+  const recBtn = el('button', { class: 'btn btn-primary pron-rec' }, '🎙️ Aufnehmen');
+  wrap.appendChild(canvas);
+  wrap.appendChild(el('div', { class: 'pron-practice-foot' }, recBtn, badge));
+  wrap.appendChild(status);
+  drawEnvelopes(canvas, refEnv, null);
+
+  let controller = null, recording = false;
+  const live = [];
+
+  function showScore({ score, userPeaks, expectedSyllables }) {
+    badge.innerHTML = '';
+    const tone = score >= 80 ? 'high' : score >= 55 ? 'mid' : 'low';
+    badge.className = `pron-score-badge is-shown tone-${tone}`;
+    badge.appendChild(el('span', { class: 'pron-score-num' }, score + '%'));
+    badge.appendChild(el('span', { class: 'pron-score-sub' }, `${userPeaks}/${expectedSyllables} Silben`));
+    status.textContent = score >= 80 ? 'Super Rhythmus! 🎉'
+      : score >= 55 ? 'Schon nah dran — versuch es nochmal.'
+      : 'Achte auf die Silben-Betonung.';
+    if (score >= 80) { sfx.unlock(); confettiBurst(badge, { count: 18 }); }
+  }
+
+  async function start() {
+    if (mic.busy) { status.textContent = 'Erst die Worterkennung beenden.'; return; }
+    mic.busy = true; recording = true;
+    live.length = 0;
+    badge.classList.remove('is-shown');
+    recBtn.classList.add('is-recording');
+    recBtn.textContent = '⏹ Stoppen';
+    status.textContent = 'Aufnahme läuft… sprich jetzt nach.';
+    sfx.click();
+    try {
+      controller = await startRecording({
+        maxMs: Math.min(8000, Math.max(2500, sylCount * 750)),
+        onLevel: (lvl) => { live.push(lvl); drawEnvelopes(canvas, refEnv, live); },
+        onStop: ({ envelope }) => {
+          recording = false; mic.busy = false; controller = null;
+          recBtn.classList.remove('is-recording');
+          recBtn.textContent = '🎙️ Nochmal';
+          drawEnvelopes(canvas, refEnv, envelope);
+          showScore(scorePronunciation(envelope, sylCount, { buckets: BUCKETS }));
+        },
+      });
+    } catch {
+      recording = false; mic.busy = false;
+      recBtn.classList.remove('is-recording');
+      recBtn.textContent = '🎙️ Aufnehmen';
+      status.textContent = 'Mikrofon nicht verfügbar oder Zugriff verweigert.';
+    }
+  }
+
+  recBtn.addEventListener('click', () => {
+    if (recording) { if (controller) controller.stop(); return; }
+    start();
+  });
+}
+
+// Block 2 — Worterkennung: hört zu und bewertet das Transcript (tolerant, mit
+// Laut-Faltung). Nutzt die Browser-SpeechRecognition (kann online sein).
+function appendRecognitionBlock(wrap, a, lang, mic) {
+  const out = el('div', { class: 'pron-recog-out' }, 'Worterkennung: tippe „Prüfen" und sprich den Ausdruck.');
+  const recogBtn = el('button', { class: 'btn btn-secondary pron-recog-btn' }, '🗣️ Aussprache prüfen');
+  wrap.appendChild(el('div', { class: 'pron-recog' },
+    el('div', { class: 'pron-recog-foot' }, recogBtn, out),
+    el('div', { class: 'pron-recog-note' },
+      'ⓘ nutzt die Spracherkennung deines Browsers — dabei kann Audio an den Browser-Dienst (ggf. online) gehen.')
+  ));
+
+  let listening = false, stop = null, finalShown = false;
+  function reset() {
+    listening = false; stop = null; mic.busy = false;
+    recogBtn.classList.remove('is-listening');
+    recogBtn.textContent = '🗣️ Aussprache prüfen';
+  }
+
+  recogBtn.addEventListener('click', () => {
+    if (listening) { if (stop) stop(); return; }
+    if (mic.busy) { out.className = 'pron-recog-out'; out.textContent = 'Erst die Rhythmus-Aufnahme beenden.'; return; }
+    listening = true; mic.busy = true; finalShown = false;
+    recogBtn.classList.add('is-listening');
+    recogBtn.textContent = '⏹ Höre zu…';
+    out.className = 'pron-recog-out';
+    out.textContent = 'Sprich jetzt…';
+    sfx.click();
+    stop = startListening({
+      lang,
+      onPartial: (t) => { out.textContent = '„' + t + '…"'; },
+      onResult: ({ transcript, alternatives }) => {
+        finalShown = true;
+        const best = scoreBestAlternative(a.ausdruck, (alternatives && alternatives.length) ? alternatives : [transcript]);
+        const pct = Math.round(best.score * 100);
+        out.className = 'pron-recog-out ' + (best.ok ? 'is-ok' : 'is-miss');
+        out.innerHTML = '';
+        out.appendChild(el('span', { class: 'pron-recog-verdict' }, (best.ok ? '✓ ' : '✗ ') + pct + '%'));
+        out.appendChild(el('span', { class: 'pron-recog-heard' }, 'gehört: „' + (best.transcript || '–') + '"'));
+        if (best.ok) { sfx.unlock(); if (pct >= 90) confettiBurst(out, { count: 16 }); }
+        else sfx.wrong();
+      },
+      onError: () => {
+        finalShown = true;
+        out.className = 'pron-recog-out is-miss';
+        out.textContent = 'Erkennung nicht verfügbar oder Zugriff verweigert.';
+        reset();
+      },
+      onEnd: () => {
+        if (!finalShown) { out.className = 'pron-recog-out'; out.textContent = 'Nichts erkannt — nochmal versuchen.'; }
+        reset();
+      },
+    });
+  });
 }
 
 // Etymologie-Bereich: zeigt extrahierte Wortherkunfts-Sätze aus dem Bedeutungs-Text

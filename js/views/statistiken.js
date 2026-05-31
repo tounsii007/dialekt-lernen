@@ -1,11 +1,11 @@
 // Statistiken-View — detailliertes Analyse-Dashboard für Lernfortschritt
-import { el, go } from '../util.js';
+import { el, go, toast } from '../util.js';
 import { getLernStats, getQuizGenauigkeit, getStreak, getActiveDays, getQuizHistory, getVisitedDialects } from '../store.js';
 import { getLernstand } from '../store/learning.js';
 import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getXp, xpToNextLevel, getLevelTitle, getXpLog } from '../store/xp.js';
-import { getSrsStats } from '../store/srs.js';
+import { getSrsStats, getSrsConfig, setSrsConfig, getSrsLogStats, optimizeSrsParams } from '../store/srs.js';
 import { getProgressHistory, getGoalTarget, getTodayProgress } from '../store/goals.js';
 import { getStreakHeatmap } from '../store/streak.js';
 import { getWeekReview } from '../util/week-review.js';
@@ -76,15 +76,24 @@ export function renderStatistiken(root) {
   ));
 
   // ── SRS-Status ──────────────────────────────────────────────
+  const srsPills = [
+    statPill(String(srsStats.due),      'Heute fällig',  'var(--pink)'),
+    statPill(String(srsStats.learning), 'Im Lernen',     'var(--warm)'),
+    statPill(String(srsStats.learned),  'Gemeistert',    'var(--accent)'),
+    statPill(String(srsStats.fresh),    'Noch neu',      'var(--text-muted)'),
+  ];
+  // Problemkarten (Leeches) nur einblenden, wenn welche existieren — sonst
+  // wäre eine 0 für die meisten Nutzer nur verwirrendes Rauschen.
+  if (srsStats.leeches > 0) {
+    srsPills.push(statPill(String(srsStats.leeches), '⚠️ Problemkarten', 'var(--danger)'));
+  }
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' }, el('h3', {}, 'Spaced-Repetition-Status')),
-    el('div', { class: 'stats-srs-grid' },
-      statPill(String(srsStats.due),      'Heute fällig',  'var(--pink)'),
-      statPill(String(srsStats.learning), 'Im Lernen',     'var(--warm)'),
-      statPill(String(srsStats.learned),  'Gemeistert',    'var(--accent)'),
-      statPill(String(srsStats.fresh),    'Noch neu',      'var(--text-muted)')
-    )
+    el('div', { class: 'stats-srs-grid' }, ...srsPills)
   ));
+
+  // ── SRS-Einstellungen (Scheduler + Wunsch-Retention) ─────────
+  view.appendChild(renderSrsSettingsSection());
 
   // ── Quiz-Verlauf ─────────────────────────────────────────────
   if (quizHistory.length) {
@@ -150,6 +159,136 @@ export function renderStatistiken(root) {
   view.appendChild(renderWeekReview());
 
   root.appendChild(view);
+}
+
+// ── SRS-Einstellungen: Scheduler-Wahl + Wunsch-Retention ───────
+function renderSrsSettingsSection() {
+  const section = el('section', { class: 'section stats-srs-settings', dataset: { reveal: '' } });
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '⚙️ Wiederholungs-Algorithmus')));
+
+  const body = el('div', { class: 'srs-settings-body' });
+  section.appendChild(body);
+
+  // In-place neu zeichnen, damit das Retention-Feld je nach Scheduler erscheint.
+  function paint() {
+    body.innerHTML = '';
+    const cfg = getSrsConfig();
+
+    const mkSeg = (val, title, sub) => el('button', {
+      class: 'srs-seg-btn' + (cfg.scheduler === val ? ' is-active' : ''),
+      type: 'button',
+      'aria-pressed': cfg.scheduler === val,
+      onClick: () => { setSrsConfig({ scheduler: val }); paint(); },
+    }, el('span', { class: 'srs-seg-title' }, title), el('span', { class: 'srs-seg-sub' }, sub));
+
+    body.appendChild(el('div', { class: 'srs-seg', role: 'group', 'aria-label': 'Scheduler-Auswahl' },
+      mkSeg('fsrs', 'FSRS-5', 'Modern · empfohlen'),
+      mkSeg('sm2', 'SM-2', 'Klassisch (Anki)')
+    ));
+
+    body.appendChild(el('p', { class: 'lede srs-settings-hint' },
+      cfg.scheduler === 'fsrs'
+        ? 'FSRS-5 modelliert dein Gedächtnis über Difficulty, Stability und Retrievability und trifft deine Wunsch-Retention präzise — spürbar effizienter als SM-2.'
+        : 'SM-2 ist der klassische Karteikasten-Algorithmus (Anki-Default) mit Easiness-Faktor.'
+    ));
+
+    if (cfg.scheduler === 'fsrs') {
+      const pct = Math.round(cfg.retention * 100);
+      const pctEl = el('strong', { class: 'srs-retention-pct' }, pct + '%');
+      const tradeoffEl = el('div', { class: 'srs-retention-tradeoff lede' }, retentionTradeoff(pct));
+      const slider = el('input', {
+        type: 'range', min: '70', max: '97', step: '1', value: String(pct),
+        class: 'srs-retention-slider',
+        'aria-label': 'Wunsch-Retention in Prozent',
+      });
+      slider.addEventListener('input', () => {
+        const p = Number(slider.value);
+        pctEl.textContent = p + '%';
+        tradeoffEl.textContent = retentionTradeoff(p);
+      });
+      slider.addEventListener('change', () => {
+        setSrsConfig({ retention: Number(slider.value) / 100 });
+      });
+      body.appendChild(el('div', { class: 'srs-retention' },
+        el('div', { class: 'srs-retention-label' }, el('span', {}, 'Wunsch-Retention'), pctEl),
+        slider,
+        tradeoffEl
+      ));
+
+      body.appendChild(renderSrsOptimizer(cfg, paint));
+    }
+  }
+  paint();
+  return section;
+}
+
+// Personalisierung: lernt die 19 FSRS-Gewichte aus dem Review-Log des Nutzers.
+// Genau dieser Schritt schlägt SM-2 — Anki nutzt für alle dieselbe Easiness,
+// FSRS justiert das Modell auf das tatsächliche Vergessensverhalten.
+const SRS_OPT_MIN_REVIEWS = 64;
+
+function renderSrsOptimizer(cfg, repaint) {
+  const stats = getSrsLogStats();
+  const personalized = Array.isArray(cfg.params) && cfg.params.length === 19;
+  const canOptimize = stats.reviewable >= SRS_OPT_MIN_REVIEWS;
+
+  const badge = el('span', { class: 'srs-opt-badge' + (personalized ? ' is-on' : '') },
+    personalized ? '● Personalisiert' : '○ Standard-Gewichte');
+
+  const info = el('p', { class: 'srs-opt-info lede' }, canOptimize
+    ? `${stats.reviewable} bewertbare Reviews über ${stats.cards} Karten — bereit für die Personalisierung.`
+    : `${stats.reviewable} von ${SRS_OPT_MIN_REVIEWS} bewertbaren Reviews gesammelt. Lerne weiter, dann lernt FSRS deine Gewichte aus deiner Historie.`
+  );
+
+  const optBtn = el('button', {
+    class: 'srs-opt-btn',
+    type: 'button',
+    onClick: () => {
+      optBtn.disabled = true;
+      optBtn.textContent = 'Optimiere…';
+      // Kurz an den Browser zurückgeben, damit der Button-Text neu zeichnet,
+      // bevor die (synchrone) Optimierung läuft.
+      setTimeout(() => {
+        const res = optimizeSrsParams({ minReviews: SRS_OPT_MIN_REVIEWS });
+        if (res.ok) {
+          toast(`Gewichte personalisiert · Loss ${res.initialLoss.toFixed(3)} → ${res.finalLoss.toFixed(3)}`, 'success');
+        } else {
+          toast('Noch zu wenig Daten für die Optimierung.', 'info');
+        }
+        repaint();
+      }, 30);
+    },
+  }, personalized ? 'Neu optimieren' : 'Jetzt optimieren');
+  optBtn.disabled = !canOptimize;
+
+  const actions = el('div', { class: 'srs-opt-actions' }, optBtn);
+
+  if (personalized) {
+    actions.appendChild(el('button', {
+      class: 'srs-opt-reset',
+      type: 'button',
+      onClick: () => {
+        setSrsConfig({ params: null });
+        toast('Zurück auf Standard-Gewichte.', 'info');
+        repaint();
+      },
+    }, 'Auf Standard zurücksetzen'));
+  }
+
+  return el('div', { class: 'srs-optimizer' },
+    el('div', { class: 'srs-opt-head' },
+      el('span', { class: 'srs-opt-title' }, 'Deine FSRS-Gewichte'),
+      badge
+    ),
+    info,
+    actions
+  );
+}
+
+function retentionTradeoff(pct) {
+  if (pct >= 90) return 'Hohe Retention: weniger Vergessen, dafür häufigere Wiederholungen.';
+  if (pct >= 80) return 'Ausgewogen: solides Behalten bei moderater Wiederholungslast.';
+  return 'Niedrige Retention: längere Intervalle und weniger Reviews — aber mehr Vergessen.';
 }
 
 // ── Sektion A: Vergessenskurve ─────────────────────────────────

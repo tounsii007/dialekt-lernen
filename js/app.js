@@ -2,7 +2,7 @@
 // Initialisiert Theme, Suche, Tastatursteuerung, Streak und Router.
 
 import { $, toast } from './util.js';
-import { registerStreak } from './store.js';
+import { registerStreak, MAX_FREEZES, MAX_REPAIRS } from './store.js';
 import { initTheme } from './theme.js';
 import { initSearch } from './search.js';
 import { initShortcuts } from './shortcuts.js';
@@ -10,15 +10,19 @@ import { initRouter } from './router.js';
 import { initNav } from './nav.js';
 import { initSpotlight, initScrollProgress, initMagnetic, initTilt } from './util/motion.js';
 import { startOnboarding, resetOnboarding } from './util/onboarding.js';
+import { resetTips } from './util/progressive-disclosure.js';
 import { isSoundEnabled, setSoundEnabled, sfx } from './util/sounds.js';
 import { initPwa } from './util/pwa.js';
 import { initNotifications } from './store/notifications.js';
 import { initXpHud, renderXpBar } from './util/xp-hud.js';
+import { initComboHud } from './util/combo-hud.js';
 import { getXp } from './store/xp.js';
 import { initNetwork } from './util/network.js';
 import { initRipple } from './util/ripple.js';
 import { initGoalEvents } from './util/daily-goal.js';
 import { initChallenges } from './store/challenges.js';
+import { initQuests } from './store/quests.js';
+import { initLeague, getLeagueResult, clearLeagueResult, LEAGUE_TIERS } from './store/league.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
@@ -50,6 +54,7 @@ function initAddDialectHint() {
 function initRestartTour() {
   const restartTour = () => {
     resetOnboarding();
+    resetTips(); // kontextuelle Tipps erneut freischalten
     startOnboarding({ force: true });
   };
   $('#restartTour')?.addEventListener('click', restartTour);
@@ -117,6 +122,53 @@ function mountFooterMeta() {
   if (statsEl) {
     statsEl.textContent = `${DIALEKTE.length} Dialekte · ${ALLE_AUSDRUECKE.length.toLocaleString('de-DE')} Ausdrücke`;
   }
+}
+
+// Auf-/Abstieg der Vorwoche einmalig melden (und damit konsumieren).
+function notifyLeagueResult(toast) {
+  const r = getLeagueResult();
+  if (!r || r.outcome === 'held') return;
+  const toName = LEAGUE_TIERS[r.tier]?.name || '';
+  if (r.outcome === 'promoted') {
+    toast(`🎉 Aufgestiegen in die ${toName}-Liga! (Platz ${r.rank})`, 'success', 4000);
+  } else {
+    toast(`🔽 Abgestiegen in die ${toName}-Liga (Platz ${r.rank})`, 'info', 4000);
+  }
+  clearLeagueResult();
+}
+
+// Streak-Schutz-Ereignisse als Toasts melden. MUSS vor registerStreak()
+// registriert werden, da Freeze/Bruch/Verdienst synchron dort gefeuert werden.
+function initStreakEvents() {
+  document.addEventListener('dialekto:streak', (e) => {
+    const d = e.detail || {};
+    switch (d.type) {
+      case 'earned':
+        if (d.item === 'freeze') {
+          toast(`❄️ Streak-Freeze verdient! (${d.freezes}/${MAX_FREEZES})`, 'success', 3000);
+        } else if (d.item === 'repair') {
+          toast(`🔧 Reparatur-Token verdient! (${d.repairs}/${MAX_REPAIRS})`, 'success', 3000);
+        }
+        break;
+      case 'frozen':
+        if (d.usedFreezes === 0 && d.weekendCovered > 0) {
+          toast('🛡️ Wochenende übersprungen — dein Streak läuft weiter!', 'success', 3200);
+        } else {
+          toast(`❄️ Streak gerettet — ${d.usedFreezes} Freeze${d.usedFreezes === 1 ? '' : 's'} eingesetzt.`, 'success', 3200);
+        }
+        break;
+      case 'broken':
+        if (d.canRepair) {
+          toast(`💔 Streak gerissen (war ${d.prevCount}) — du kannst ihn reparieren! Siehe Favoriten.`, 'info', 4200);
+        } else {
+          toast(`💔 Dein ${d.prevCount}-Tage-Streak ist gerissen. Neuer Anlauf heute!`, 'info', 3600);
+        }
+        break;
+      case 'repaired':
+        toast(`🔧 Streak repariert — zurück auf ${d.count} Tage!`, 'success', 2800);
+        break;
+    }
+  });
 }
 
 function initStorageWarning() {
@@ -198,6 +250,7 @@ function init() {
   initTheme();
 
   // 2. Persistence + navigation core
+  initStreakEvents(); // vor registerStreak: fängt Freeze/Bruch/Verdienst ab
   registerStreak();
   initRouter();
   initNav();
@@ -223,12 +276,24 @@ function init() {
   initNotifications();
   initNetwork(toast);
   initXpHud();
+  initComboHud();
   initGoalEvents(toast);
   initChallenges();
   document.addEventListener('dialekto:challengeComplete', (e) => {
     const { label, xp } = e.detail || {};
     toast(`🏆 Challenge abgeschlossen: ${label} (+${xp} XP)`, 'success', 3200);
   });
+  initQuests();
+  document.addEventListener('dialekto:questComplete', (e) => {
+    const { label, xp } = e.detail || {};
+    toast(`✅ Quest erledigt: ${label} (+${xp} XP)`, 'success', 3000);
+  });
+  document.addEventListener('dialekto:questsAllDone', (e) => {
+    const { xp } = e.detail || {};
+    toast(`🎉 Alle Tages-Quests geschafft! Bonus +${xp} XP`, 'success', 3600);
+  });
+  initLeague();
+  notifyLeagueResult(toast);
   mountXpBar();
   mountFooterMeta();
 

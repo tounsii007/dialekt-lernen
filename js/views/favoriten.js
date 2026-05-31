@@ -1,8 +1,17 @@
 import { el, go } from '../util.js';
 import {
+  speak, isSpeechSupported, getSpeechSettings, setSpeechSettings,
+  listVoices, onVoicesChanged, getSpeechStatus,
+  RATE_MIN, RATE_MAX, PITCH_MIN, PITCH_MAX
+} from '../util.js';
+import {
   getFavoriten, getLernStats, getQuizGenauigkeit, getStreak, getQuizHistory,
   getStreakHeatmap, getActiveDays, evaluateAchievements, getVisitedDialects,
-  toggleFavorit
+  toggleFavorit,
+  getStreakProtection, setWeekendAmulet, canRepairStreak, repairStreak,
+  MAX_FREEZES, MAX_REPAIRS, REPAIR_WINDOW_DAYS,
+  getChestState, openChest, getAchievementScore, rarityOf, RARITY,
+  getLernpfadSummary, countNotes
 } from '../store.js';
 import { DIALEKTE, getDialekt, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { renderExpressionCard } from './partials.js';
@@ -36,6 +45,9 @@ export function renderFavoriten(root) {
 
   // XP Card
   view.appendChild(renderXpCard());
+
+  // Täglicher Belohnungs-Chest (offline verdient)
+  view.appendChild(renderChestCard(() => renderFavoriten(root)));
 
   // Stats
   const stats = getLernStats();
@@ -75,7 +87,11 @@ export function renderFavoriten(root) {
   // Streak heatmap — GitHub-style
   view.appendChild(renderHeatmap());
 
+  // Streak-Schutz (Freeze/Reparatur/Wochenend-Amulett)
+  view.appendChild(renderStreakProtection(() => renderFavoriten(root)));
+
   // Achievements
+  const lernpfad = getLernpfadSummary();
   const achView = renderAchievements({
     gelerntCount: stats.gelernt,
     streak,
@@ -84,7 +100,13 @@ export function renderFavoriten(root) {
     visitedCount: getVisitedDialects().length,
     totalDialects: DIALEKTE.length,
     totalAvailable: DIALEKTE.reduce((sum, d) => sum + d.ausdruecke.length, 0),
-    favCount: favs.length
+    favCount: favs.length,
+    level: xpToNextLevel(getXp()).level,
+    noteCount: countNotes(),
+    deckCount: getDecks().length,
+    pathCompleted: lernpfad.completedUnits,
+    pathTotal: lernpfad.totalUnits,
+    chestStreak: getChestState().claimStreak
   });
   view.appendChild(achView);
 
@@ -124,6 +146,9 @@ export function renderFavoriten(root) {
 
   // Benachrichtigungen (Tägliche Erinnerung)
   view.appendChild(renderNotificationSettings());
+
+  // Sprachausgabe (Stimme / Tempo / Tonhöhe)
+  view.appendChild(renderSpeechSettings());
 
   // Daten-Tools (Export/Import/Reset)
   view.appendChild(renderDataTools());
@@ -671,21 +696,190 @@ function renderHeatmap() {
   );
 }
 
+// Streak-Schutz: verdiente Freezes, Reparatur-Token, Wochenend-Amulett.
+// Alles offline verdient — keine Käufe (Privacy-/Offline-Säule bleibt intakt).
+function renderStreakProtection(rerender) {
+  const p = getStreakProtection();
+
+  const pip = (filled) => el('span', {
+    class: 'streak-pip' + (filled ? ' is-filled' : ''),
+    'aria-hidden': 'true'
+  });
+  const pips = (have, max) => {
+    const row = el('div', { class: 'streak-pips' });
+    for (let i = 0; i < max; i++) row.appendChild(pip(i < have));
+    return row;
+  };
+
+  // Eine Schutz-Kachel (Icon, Titel, Menge, Pip-Anzeige, Hinweis).
+  const item = (emoji, title, have, max, hint) =>
+    el('div', { class: 'streak-prot-item', dataset: { spotlight: '' } },
+      el('div', { class: 'streak-prot-emoji' }, emoji),
+      el('div', { class: 'streak-prot-body' },
+        el('div', { class: 'streak-prot-title' }, title),
+        el('div', { class: 'streak-prot-count' }, `${have} / ${max}`),
+        pips(have, max),
+        el('div', { class: 'streak-prot-hint' }, hint)
+      )
+    );
+
+  const grid = el('div', { class: 'streak-prot-grid' },
+    item('❄️', 'Streak-Freeze', p.freezes, p.maxFreezes,
+      `Überbrückt einen verpassten Tag automatisch. Alle 5 Streak-Tage verdienst du einen.`),
+    item('🔧', 'Reparatur', p.repairs, p.maxRepairs,
+      `Stellt einen gerissenen Streak wieder her (binnen ${REPAIR_WINDOW_DAYS} Tagen). Alle 20 Tage gibt es eine.`)
+  );
+
+  // Wochenend-Amulett: opt-in Toggle (deckt Sa/So gratis ab, wenn ausgerüstet).
+  const amuletToggle = el('input', {
+    type: 'checkbox',
+    checked: p.weekendAmulet,
+    'aria-label': 'Wochenend-Amulett ausrüsten',
+    onClick: (e) => {
+      const on = setWeekendAmulet(e.target.checked);
+      try { sfx.toggle(); } catch {}
+      toast(on ? 'Wochenend-Amulett ausgerüstet 🛡️' : 'Wochenend-Amulett abgelegt', 'info', 1600);
+    }
+  });
+  const amuletRow = el('label', { class: 'streak-amulet-row' },
+    el('span', { class: 'streak-prot-emoji' }, '🛡️'),
+    el('div', { class: 'streak-prot-body' },
+      el('div', { class: 'streak-prot-title' }, 'Wochenend-Amulett'),
+      el('div', { class: 'streak-prot-hint' },
+        'Wenn ausgerüstet, zählen verpasste Wochenenden (Sa/So) nicht gegen deinen Streak — ganz ohne Freeze.')
+    ),
+    el('span', { class: 'streak-amulet-switch' }, amuletToggle, el('span', { class: 'streak-amulet-knob' }))
+  );
+
+  const card = el('div', { class: 'card streak-prot-card', dataset: { spotlight: '', reveal: '' } },
+    el('div', { class: 'streak-head' },
+      el('div', {},
+        el('div', { class: 'card-title' }, '🛡️ Streak-Schutz'),
+        el('div', { class: 'lede', style: { fontSize: '.85rem' } },
+          'Schütze deine Serie — alles wird durchs Lernen verdient, nichts gekauft.')
+      )
+    ),
+    grid,
+    amuletRow
+  );
+
+  // Reparatur-Aufruf, falls der Streak gerade gerissen ist und reparierbar.
+  if (p.canRepair && p.lastBreak) {
+    const repairBtn = el('button', {
+      class: 'btn btn-primary', dataset: { magnetic: '10' },
+      onClick: () => {
+        if (repairStreak()) {
+          try { sfx.unlock(); } catch {}
+          toast(`Streak repariert — zurück auf ${getStreakProtection().count} Tage! 🔧`, 'success', 2400);
+          rerender();
+        } else {
+          toast('Reparatur nicht mehr möglich.', 'info', 1800);
+        }
+      }
+    }, `🔧 Streak reparieren (war ${p.lastBreak.prevCount} Tage)`);
+
+    card.appendChild(el('div', { class: 'streak-repair-cta' },
+      el('div', { class: 'lede', style: { fontSize: '.88rem' } },
+        `Dein ${p.lastBreak.prevCount}-Tage-Streak ist gerissen. Mit einer Reparatur holst du ihn zurück.`),
+      repairBtn
+    ));
+  }
+
+  return card;
+}
+
+// Täglicher Belohnungs-Chest: einmal pro Tag öffenbar, Belohnung skaliert mit
+// aufeinanderfolgenden Öffnungstagen. Alles offline verdient — kein Kauf.
+function renderChestCard(rerender) {
+  const cs = getChestState();
+
+  const head = el('div', { class: 'streak-head' },
+    el('div', {},
+      el('div', { class: 'card-title' }, '🎁 Tages-Chest'),
+      el('div', { class: 'lede', style: { fontSize: '.85rem' } },
+        'Jeden Tag eine Belohnung — je länger deine Serie, desto mehr.')
+    )
+  );
+
+  const lid = el('div', {
+    class: 'chest-visual' + (cs.canOpen ? ' is-ready' : ' is-open'),
+    'aria-hidden': 'true'
+  }, cs.canOpen ? '🎁' : '📦');
+
+  const body = el('div', { class: 'chest-body' });
+
+  if (cs.canOpen) {
+    const teaser = [`+${cs.preview.xp} XP`];
+    if (cs.preview.freeze) teaser.push('❄️ Freeze');
+    if (cs.preview.jackpot) teaser.push('🎉 Jackpot');
+
+    body.appendChild(el('div', { class: 'chest-streak-line' },
+      cs.claimStreak > 0
+        ? `🔥 ${cs.claimStreak} Tage in Folge — heute wäre Tag ${cs.upcomingStreak}.`
+        : 'Öffne deinen ersten Chest!'));
+    body.appendChild(el('div', { class: 'chest-teaser' }, 'Heute drin: ' + teaser.join(' · ')));
+
+    const btn = el('button', {
+      class: 'btn btn-primary chest-open-btn', dataset: { magnetic: '12' },
+      onClick: () => {
+        const res = openChest();
+        if (!res.opened) { rerender(); return; }
+        try { sfx.unlock(); } catch {}
+        try { confettiBurst(btn, { count: res.reward.jackpot ? 130 : 70 }); } catch {}
+        const parts = [`+${res.reward.xp} XP`];
+        if (res.reward.freeze) parts.push('❄️ +1 Streak-Freeze');
+        toast((res.reward.jackpot ? '🎉 JACKPOT! ' : '🎁 Chest geöffnet! ') + parts.join(' · '),
+          'success', 3000);
+        rerender();
+      }
+    }, 'Chest öffnen');
+    body.appendChild(btn);
+  } else {
+    const r = cs.lastReward;
+    const parts = [];
+    if (r) {
+      parts.push(`+${r.xp} XP`);
+      if (r.freeze) parts.push('❄️ +1 Freeze');
+    }
+    body.appendChild(el('div', { class: 'chest-streak-line' },
+      `🔥 ${cs.claimStreak} Tage in Folge geöffnet`));
+    body.appendChild(el('div', { class: 'chest-claimed' },
+      r ? `Heute erhalten: ${parts.join(' · ')}${r.jackpot ? ' · 🎉 Jackpot!' : ''}` : 'Heute schon geöffnet.'));
+    body.appendChild(el('div', { class: 'lede', style: { fontSize: '.82rem', marginTop: '6px' } },
+      `Komm morgen wieder für Tag ${cs.claimStreak + 1}.`));
+  }
+
+  return el('div', { class: 'card chest-card' + (cs.canOpen ? ' is-ready' : ''), dataset: { spotlight: '', reveal: '' } },
+    head,
+    el('div', { class: 'chest-main' }, lid, body)
+  );
+}
+
 function renderAchievements(stats) {
   const { items, justUnlocked } = evaluateAchievements(stats);
   const unlockedCount = items.filter(i => i.unlocked).length;
+  const score = getAchievementScore();
+
+  // Nach Rarität sortieren (legendär zuerst), damit die wertvollsten Trophäen
+  // oben stehen; innerhalb gleicher Stufe bleibt die Definitionsreihenfolge.
+  const ordered = items
+    .map((it, i) => ({ it, i }))
+    .sort((a, b) => (rarityOf(b.it.def).order - rarityOf(a.it.def).order) || (a.i - b.i))
+    .map((x) => x.it);
 
   const grid = el('div', { class: 'achievements-grid' });
-  items.forEach(({ def, unlocked, justUnlocked: ju }) => {
+  ordered.forEach(({ def, unlocked, justUnlocked: ju }) => {
+    const r = rarityOf(def);
     const card = el('div', {
-      class: 'achievement' + (unlocked ? ' is-unlocked' : ' is-locked') + (ju ? ' is-fresh' : ''),
-      title: def.desc,
+      class: 'achievement rarity-' + r.id + (unlocked ? ' is-unlocked' : ' is-locked') + (ju ? ' is-fresh' : ''),
+      title: `${def.desc} · ${r.label} (${r.points} Punkte)`,
       dataset: { spotlight: '' }
     },
       el('div', { class: 'ach-icon' }, def.icon),
       el('div', { class: 'ach-text' },
         el('div', { class: 'ach-title' }, def.title),
-        el('div', { class: 'ach-desc' }, def.desc)
+        el('div', { class: 'ach-desc' }, def.desc),
+        el('div', { class: 'ach-rarity-tag' }, r.label)
       ),
       unlocked ? el('div', { class: 'ach-check' }, icon('zap', { size: 14 })) : null
     );
@@ -701,13 +895,26 @@ function renderAchievements(stats) {
     }, 400);
   }
 
+  // Sammler-Punkte-Aufschlüsselung pro Raritätsstufe.
+  const legend = el('div', { class: 'ach-rarity-legend' },
+    ...Object.keys(RARITY)
+      .sort((a, b) => RARITY[a].order - RARITY[b].order)
+      .map((k) => el('span', { class: 'ach-rarity-chip rarity-' + k },
+        `${RARITY[k].label} ${score.byRarity[k].unlocked}/${score.byRarity[k].total}`))
+  );
+
   return el('section', { class: 'section', dataset: { reveal: '' } },
-    el('div', { class: 'section-head' },
+    el('div', { class: 'section-head ach-head' },
       el('div', {},
         el('h2', {}, 'Achievements'),
         el('div', { class: 'lede' }, `${unlockedCount} von ${items.length} freigeschaltet`)
+      ),
+      el('div', { class: 'ach-score', title: 'Sammler-Punkte aus allen freigeschalteten Trophäen' },
+        el('span', { class: 'ach-score-num', dataset: { count: String(score.score) } }, String(score.score)),
+        el('span', { class: 'ach-score-max' }, `/ ${score.maxScore} Punkte`)
       )
     ),
+    legend,
     grid
   );
 }
@@ -827,6 +1034,120 @@ function renderNotificationSettings() {
       enableBtn,
       testBtn
     ),
+    statusLine
+  ));
+
+  return wrap;
+}
+
+function renderSpeechSettings() {
+  const wrap = el('section', { class: 'section speech-section', dataset: { reveal: '' } },
+    el('div', { class: 'section-head' },
+      el('div', {},
+        el('h2', {}, '🗣️ Sprachausgabe'),
+        el('div', { class: 'lede' }, isSpeechSupported()
+          ? 'Wähle Stimme, Tempo und Tonhöhe für das Vorlesen der Dialekt-Ausdrücke.'
+          : 'Dein Browser unterstützt keine Sprachausgabe — diese Funktion ist nicht verfügbar.')
+      )
+    )
+  );
+
+  if (!isSpeechSupported()) {
+    wrap.appendChild(el('div', { class: 'card' },
+      el('div', { class: 'lede' }, 'Text-to-Speech wird vom Browser nicht unterstützt.')
+    ));
+    return wrap;
+  }
+
+  const fmt = (n) => Number(n).toFixed(2).replace(/0$/, '').replace(/\.$/, '');
+
+  // --- Stimmen-Auswahl ---
+  const select = el('select', { class: 'speech-voice-select', ariaLabel: 'Stimme wählen' });
+  function populateVoices() {
+    const cur = getSpeechSettings().voiceURI || '';
+    select.innerHTML = '';
+    select.appendChild(el('option', { value: '' }, '🔈 Automatisch (zum Dialekt passend)'));
+    for (const v of listVoices()) {
+      const de = (v.lang || '').toLowerCase().startsWith('de');
+      const label = `${de ? '🇩🇪 ' : ''}${v.name} · ${v.lang}`;
+      select.appendChild(el('option', { value: v.voiceURI }, label));
+    }
+    select.value = cur;
+  }
+  populateVoices();
+  // Voices kommen in vielen Browsern erst asynchron — Picker dann nachfüllen.
+  const off = onVoicesChanged(() => {
+    if (!select.isConnected) { off(); return; }
+    populateVoices();
+  });
+
+  // --- Tempo & Tonhöhe ---
+  const s0 = getSpeechSettings();
+  const rate = el('input', { type: 'range', class: 'speech-range',
+    min: String(RATE_MIN), max: String(RATE_MAX), step: '0.02', value: String(s0.rate) });
+  const rateVal = el('span', { class: 'speech-range-val' }, fmt(s0.rate) + '×');
+  const pitch = el('input', { type: 'range', class: 'speech-range',
+    min: String(PITCH_MIN), max: String(PITCH_MAX), step: '0.02', value: String(s0.pitch) });
+  const pitchVal = el('span', { class: 'speech-range-val' }, fmt(s0.pitch));
+
+  const statusLine = el('div', { class: 'lede speech-status', style: { fontSize: '.85rem', marginTop: '4px' } });
+  const refreshStatus = () => {
+    const st = getSpeechStatus('de-DE');
+    if (!st.available) { statusLine.textContent = 'Keine Stimme verfügbar.'; return; }
+    const src = st.preferred ? 'deine Wunschstimme' : (st.exact ? 'exakt passend' : 'automatisch gewählt');
+    statusLine.textContent = `Aktive Stimme: ${st.voice} (${st.voiceLang}) — ${src}.`;
+  };
+  refreshStatus();
+
+  const sample = 'Grüß dich! So klingt deine gewählte Stimme.';
+  const previewSoon = (() => {
+    let t = null;
+    return () => { clearTimeout(t); t = setTimeout(() => speak(sample, 'de-DE'), 220); };
+  })();
+
+  select.addEventListener('change', () => {
+    setSpeechSettings({ voiceURI: select.value || null });
+    refreshStatus();
+    previewSoon();
+  });
+  rate.addEventListener('input', () => { rateVal.textContent = fmt(rate.value) + '×'; });
+  rate.addEventListener('change', () => { setSpeechSettings({ rate: rate.value }); refreshStatus(); previewSoon(); });
+  pitch.addEventListener('input', () => { pitchVal.textContent = fmt(pitch.value); });
+  pitch.addEventListener('change', () => { setSpeechSettings({ pitch: pitch.value }); refreshStatus(); previewSoon(); });
+
+  const testBtn = el('button', { class: 'btn btn-primary', dataset: { magnetic: '10' },
+    onClick: () => speak(sample, 'de-DE') }, '▶ Stimme testen');
+  const resetBtn = el('button', { class: 'btn btn-ghost', dataset: { magnetic: '10' },
+    onClick: () => {
+      setSpeechSettings({ rate: 0.92, pitch: 1, voiceURI: null });
+      const s = getSpeechSettings();
+      rate.value = String(s.rate); rateVal.textContent = fmt(s.rate) + '×';
+      pitch.value = String(s.pitch); pitchVal.textContent = fmt(s.pitch);
+      select.value = '';
+      refreshStatus();
+      toast('Sprachausgabe zurückgesetzt', 'info', 1200);
+    } }, 'Zurücksetzen');
+
+  wrap.appendChild(el('div', { class: 'card speech-card', dataset: { spotlight: '' } },
+    el('label', { class: 'speech-field' },
+      el('span', { class: 'speech-field-label' }, 'Stimme'),
+      select
+    ),
+    el('label', { class: 'speech-field' },
+      el('span', { class: 'speech-field-label' },
+        el('span', {}, 'Tempo'),
+        rateVal
+      ),
+      rate
+    ),
+    el('label', { class: 'speech-field' },
+      el('span', { class: 'speech-field-label' },
+        el('span', {}, 'Tonhöhe'),
+        pitchVal
+      ),
+      pitch
+    ),
+    el('div', { class: 'speech-actions' }, testBtn, resetBtn),
     statusLine
   ));
 

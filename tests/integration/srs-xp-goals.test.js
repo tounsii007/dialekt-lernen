@@ -9,6 +9,7 @@ import assert from 'node:assert/strict';
 import { state } from '../../js/store/state.js';
 import { reviewCard, RATING_EASY, RATING_MED, RATING_HARD } from '../../js/store/srs.js';
 import { getXp, XP } from '../../js/store/xp.js';
+import { comboMultiplier, applyComboToXp } from '../../js/util/combo.js';
 import { getTodayProgress } from '../../js/store/goals.js';
 import { getStreak } from '../../js/store/streak.js';
 import { resetState } from '../_setup.js';
@@ -59,8 +60,12 @@ describe('reviewCard löst SRS + XP + Goals + Streak gleichzeitig aus', () => {
     reviewCard('hessisch', 'h-001', RATING_EASY);
     reviewCard('hessisch', 'h-002', RATING_EASY);
     reviewCard('hessisch', 'h-003', RATING_MED);
-    // 2x EASY + 1x MED = 2*cardLearned + 1*cardReviewed
-    const expectedXp = 2 * XP.cardLearned + XP.cardReviewed;
+    // Drei korrekte Reviews in Folge bauen eine Combo auf (count 1→2→3); ab
+    // count 3 greift der ×1.25-Multiplikator. XP wird entsprechend skaliert.
+    const expectedXp =
+      applyComboToXp(XP.cardLearned,  comboMultiplier(1)) +
+      applyComboToXp(XP.cardLearned,  comboMultiplier(2)) +
+      applyComboToXp(XP.cardReviewed, comboMultiplier(3));
     assert.equal(getXp(), expectedXp);
     assert.equal(getTodayProgress(), 3);
     assert.equal(Object.keys(state.gelernt).length, 3);

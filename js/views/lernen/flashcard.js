@@ -2,6 +2,7 @@
 // Drag/swipe: left = schwer, right = leicht, up = mittel.
 import { el, speak, toast } from '../../util.js';
 import { setLernstand, isFavorit, toggleFavorit } from '../../store.js';
+import { getReviewPreview } from '../../store/srs.js';
 import { confettiBurst } from '../../util/motion.js';
 import { icon } from '../../util/icons.js';
 import { sfx, vibrate } from '../../util/sounds.js';
@@ -9,7 +10,7 @@ import { createWaveform } from '../../util/waveform.js';
 import { buildCloze } from '../../util/cloze.js';
 import { shareCard } from '../../util/share-card.js';
 import { formatIpa } from '../../util/ipa.js';
-import { isPronunciationSupported, startListening, scorePronunciation } from '../../util/pronunciation.js';
+import { isPronunciationSupported, startListening, scoreBestAlternative } from '../../util/pronunciation.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
 const SWIPE_THRESHOLD = 100;
@@ -21,6 +22,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
   const total = session.cards.length;
   const progress = total > 0 ? (session.idx / total) * 100 : 0;
   const fav = isFavorit(c.dialektId, c.id);
+  // FSRS-Intervall-Vorschau je Bewertung (null im SM-2-Modus → keine Hints).
+  const preview = getReviewPreview(c.dialektId, c.id);
 
   const wrap = el('div', { class: 'flashcard-stage' });
 
@@ -393,10 +396,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             lang: c.dialektLang || 'de-DE',
             onPartial: (t) => { statusEl.textContent = '… ' + t; },
             onResult: ({ transcript, alternatives }) => {
-              const best = (alternatives || [transcript]).reduce((bestSoFar, alt) => {
-                const s = scorePronunciation(c.ausdruck, alt);
-                return s.score > bestSoFar.score ? { ...s, transcript: alt } : bestSoFar;
-              }, { score: 0, ok: false, transcript });
+              const best = scoreBestAlternative(c.ausdruck,
+                (alternatives && alternatives.length) ? alternatives : [transcript]);
               statusEl.classList.remove('is-listening');
               statusEl.classList.add(best.ok ? 'is-ok' : 'is-wrong');
               statusEl.textContent = best.ok
@@ -425,6 +426,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       front.appendChild(el('div', { class: 'pron-check-row', onClick: (e) => e.stopPropagation() },
         micBtn, statusEl
       ));
+      front.appendChild(el('div', { class: 'pron-recog-note' },
+        'ⓘ nutzt die Spracherkennung deines Browsers — dabei kann Audio an den Browser-Dienst (ggf. online) gehen.'));
       back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
       back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
       back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
@@ -462,9 +465,12 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       el('span', { html: '←' })
     ),
     el('div', { class: 'fc-rating' },
-      el('button', { class: 'fc-rate hard', onClick: () => { sfx.rate(1); vibrate(8);  rateAndPersist(c, 1, session, onRate); } }, 'Schwer'),
-      el('button', { class: 'fc-rate med',  onClick: () => { sfx.rate(2); vibrate(12); rateAndPersist(c, 2, session, onRate); } }, 'Mittel'),
-      el('button', { class: 'fc-rate easy', onClick: (e) => { sfx.rate(3); vibrate([10, 40, 10]); confettiBurst(e.currentTarget, { count: 60 }); rateAndPersist(c, 3, session, onRate); } }, 'Leicht')
+      el('button', { class: 'fc-rate hard', onClick: () => { sfx.rate(1); vibrate(8);  rateAndPersist(c, 1, session, onRate); } },
+        el('span', { class: 'fc-rate-label' }, 'Schwer'), ivalHint(preview, 1)),
+      el('button', { class: 'fc-rate med',  onClick: () => { sfx.rate(2); vibrate(12); rateAndPersist(c, 2, session, onRate); } },
+        el('span', { class: 'fc-rate-label' }, 'Mittel'), ivalHint(preview, 3)),
+      el('button', { class: 'fc-rate easy', onClick: (e) => { sfx.rate(3); vibrate([10, 40, 10]); confettiBurst(e.currentTarget, { count: 60 }); rateAndPersist(c, 3, session, onRate); } },
+        el('span', { class: 'fc-rate-label' }, 'Leicht'), ivalHint(preview, 4))
     ),
     speakControl(c)
   ));
@@ -501,6 +507,25 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
 function rateAndPersist(card, stand, session, onRate) {
   setLernstand(card.dialektId, card.id, stand);
   onRate(stand);
+}
+
+// Kompakte deutsche Intervall-Beschriftung für die Bewertungs-Buttons.
+function fmtInterval(days) {
+  const d = Math.round(Number(days) || 0);
+  if (d <= 0) return '<1 T';
+  if (d === 1) return '1 T';
+  if (d < 7) return d + ' T';
+  if (d < 30) return Math.round(d / 7) + ' Wo';
+  if (d < 365) return Math.round(d / 30) + ' Mt';
+  const y = d / 365;
+  return (y < 10 ? y.toFixed(1) : String(Math.round(y))) + ' J';
+}
+
+// Intervall-Hinweis (oder null im SM-2-Modus, wo es keine Vorschau gibt).
+// grade ist ein FSRS-Grade: 1=Again (Schwer), 3=Good (Mittel), 4=Easy (Leicht).
+function ivalHint(preview, grade) {
+  if (!preview) return null;
+  return el('span', { class: 'fc-rate-ival' }, fmtInterval(preview[grade]));
 }
 
 function normalizeForType(s) {

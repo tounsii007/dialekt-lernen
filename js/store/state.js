@@ -60,10 +60,18 @@ function withDefaults(loaded) {
     theme:        loaded.theme        ?? 'auto',
     favoriten:    Array.isArray(loaded.favoriten) ? loaded.favoriten : [],
     gelernt:      loaded.gelernt      && typeof loaded.gelernt === 'object' ? loaded.gelernt : {},
+    // Streak inkl. Schutz-Mechaniken (Freeze/Reparatur/Wochenend-Amulett),
+    // alle offline verdient — keine Käufe (Privacy-/Offline-Säule bleibt).
     streak:       loaded.streak       && typeof loaded.streak === 'object'
-                    ? { count: 0, lastDay: null, days: {}, ...loaded.streak,
-                        days: (loaded.streak.days && typeof loaded.streak.days === 'object') ? loaded.streak.days : {} }
-                    : { count: 0, lastDay: null, days: {} },
+                    ? { count: 0, lastDay: null, days: {},
+                        freezes: 0, repairs: 0, weekendAmulet: false, frozenDays: {},
+                        freezeMilestone: 0, repairMilestone: 0, lastBreak: null,
+                        ...loaded.streak,
+                        days: (loaded.streak.days && typeof loaded.streak.days === 'object') ? loaded.streak.days : {},
+                        frozenDays: (loaded.streak.frozenDays && typeof loaded.streak.frozenDays === 'object') ? loaded.streak.frozenDays : {} }
+                    : { count: 0, lastDay: null, days: {},
+                        freezes: 0, repairs: 0, weekendAmulet: false, frozenDays: {},
+                        freezeMilestone: 0, repairMilestone: 0, lastBreak: null },
     quizHistory:  Array.isArray(loaded.quizHistory) ? loaded.quizHistory : [],
     lernStats:    loaded.lernStats    && typeof loaded.lernStats === 'object'
                     ? { total: 0, korrekt: 0, ...loaded.lernStats }
@@ -72,6 +80,8 @@ function withDefaults(loaded) {
     achievements: loaded.achievements && typeof loaded.achievements === 'object'
                     ? loaded.achievements : {},
     onboarded:    !!loaded.onboarded,
+    // Bereits gezeigte Progressive-Disclosure-Tipps (kontextuelle Hinweise).
+    seenTips:     Array.isArray(loaded.seenTips) ? loaded.seenTips : [],
     preset:       typeof loaded.preset === 'string' ? loaded.preset : 'default',
     notes:        loaded.notes && typeof loaded.notes === 'object' ? loaded.notes : {},
     xp:           loaded.xp && typeof loaded.xp === 'object'
@@ -87,8 +97,39 @@ function withDefaults(loaded) {
                         progress: (loaded.challenges.progress && typeof loaded.challenges.progress === 'object') ? loaded.challenges.progress : {},
                         completed: Array.isArray(loaded.challenges.completed) ? loaded.challenges.completed : [] }
                     : { week: null, progress: {}, completed: [] },
+    // Tägliche Quests (Duolingo-Style): drei pro Tag, rotierend.
+    quests:       loaded.quests && typeof loaded.quests === 'object'
+                    ? { day: null, progress: {}, completed: [], allDoneBonus: false, ...loaded.quests,
+                        progress: (loaded.quests.progress && typeof loaded.quests.progress === 'object') ? loaded.quests.progress : {},
+                        completed: Array.isArray(loaded.quests.completed) ? loaded.quests.completed : [],
+                        allDoneBonus: loaded.quests.allDoneBonus === true }
+                    : { day: null, progress: {}, completed: [], allDoneBonus: false },
     longGoals:    Array.isArray(loaded.longGoals) ? loaded.longGoals : [],
-    notesIdbMigrated: !!loaded.notesIdbMigrated
+    notesIdbMigrated: !!loaded.notesIdbMigrated,
+    // SRS-Konfiguration: FSRS-5 ist Default (schlaegt SM-2/Anki-Default).
+    // scheduler 'fsrs'|'sm2', retention = Wunsch-Retention, params = 19 FSRS-Gewichte
+    // (null = Populations-Default; vom Optimizer pro Nutzer ueberschrieben).
+    srs:          loaded.srs && typeof loaded.srs === 'object'
+                    ? { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null, ...loaded.srs }
+                    : { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null },
+    // Review-Log fuer den FSRS-Optimizer (gekappt). Pro Eintrag: {key,t,g,r,s,d}.
+    srsLog:       Array.isArray(loaded.srsLog) ? loaded.srsLog : [],
+    // Lokale Liga (privacy-preserving): tier-Index, laufende Woche, XP-Snapshot
+    // zum Wochenstart, hoechste je erreichte Stufe, letztes Auf-/Abstiegs-Ergebnis.
+    league:       loaded.league && typeof loaded.league === 'object'
+                    ? { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null, ...loaded.league }
+                    : { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null },
+    // Täglicher Belohnungs-Chest: zuletzt geöffneter Tag, Folge-Öffnungstage,
+    // letzte Belohnung (für die UI) und Gesamtzahl der Öffnungen.
+    chest:        loaded.chest && typeof loaded.chest === 'object'
+                    ? { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0, ...loaded.chest }
+                    : { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 },
+    // Sprachausgabe (Text-to-Speech): Tempo, Tonhöhe und bevorzugte Stimme.
+    // voiceURI = stabile Voice-Kennung der Web-Speech-API (null = automatisch
+    // passend zum Dialekt). rate/pitch werden beim Setzen geklemmt.
+    speech:       loaded.speech && typeof loaded.speech === 'object'
+                    ? { rate: 0.92, pitch: 1, voiceURI: null, ...loaded.speech }
+                    : { rate: 0.92, pitch: 1, voiceURI: null }
   };
 }
 

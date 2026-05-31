@@ -12,6 +12,7 @@ class DialektRepository {
 
   List<Dialekt> _dialekte = const [];
   List<Kategorie> _kategorien = const [];
+  List<Lektion> _lektionen = const [];
   bool _loaded = false;
 
   // Nach load() einmalig berechnet — die Daten ändern sich danach nie mehr.
@@ -23,6 +24,7 @@ class DialektRepository {
 
   List<Dialekt> get dialekte => _dialekte;
   List<Kategorie> get kategorien => _kategorien;
+  List<Lektion> get lektionen => _lektionen;
   bool get isLoaded => _loaded;
 
   int get totalAusdruecke => _totalAusdruecke;
@@ -36,6 +38,17 @@ class DialektRepository {
   Dialekt? byId(String id) {
     for (final d in _dialekte) {
       if (d.id == id) return d;
+    }
+    return null;
+  }
+
+  /// Löst eine Referenz (dialektId, ausdruckId) zu Dialekt + Ausdruck auf.
+  ({Dialekt dialekt, Ausdruck ausdruck})? resolve(
+      String dialektId, String ausdruckId) {
+    final d = byId(dialektId);
+    if (d == null) return null;
+    for (final a in d.ausdruecke) {
+      if (a.id == ausdruckId) return (dialekt: d, ausdruck: a);
     }
     return null;
   }
@@ -105,6 +118,17 @@ class DialektRepository {
     _kategorien = ((kJson['kategorien'] ?? []) as List)
         .map((e) => Kategorie.fromJson(e as Map<String, dynamic>))
         .toList();
+
+    // Lektionen sind optional — fehlt das Asset, bleibt die Liste leer.
+    try {
+      final lRaw = await rootBundle.loadString('assets/data/lektionen.json');
+      final lJson = json.decode(lRaw) as Map<String, dynamic>;
+      _lektionen = ((lJson['lektionen'] ?? []) as List)
+          .map((e) => Lektion.fromJson(e as Map<String, dynamic>))
+          .toList();
+    } catch (_) {
+      _lektionen = const [];
+    }
 
     // Abgeleitete Listen einmalig cachen (Daten sind ab hier unveränderlich).
     _alleAusdruecke = [for (final d in _dialekte) ...d.ausdruecke];

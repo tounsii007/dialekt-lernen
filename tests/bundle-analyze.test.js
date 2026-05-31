@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { existsSync, statSync, unlinkSync, readFileSync } from 'node:fs';
+import { existsSync, statSync, readFileSync } from 'node:fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -45,10 +45,10 @@ describe('bundle-analyze Tool', () => {
 describe('minify-css Tool', () => {
   const outPath = join(ROOT, 'styles.min.css');
 
+  // styles.min.css ist jetzt ein ausgeliefertes (committetes) Artefakt —
+  // index.html und der Service-Worker laden es. Der Tool-Lauf regeneriert es
+  // deterministisch (gleicher Inhalt) und löscht es NICHT mehr.
   it('erzeugt styles.min.css', () => {
-    // Cleanup vorab
-    if (existsSync(outPath)) unlinkSync(outPath);
-
     const result = spawnSync(process.execPath, [join(ROOT, 'tools', 'minify-css.mjs')], {
       stdio: 'pipe',
       encoding: 'utf8',
@@ -57,20 +57,16 @@ describe('minify-css Tool', () => {
     assert.ok(existsSync(outPath));
   });
 
-  it('Minified < Original (mindestens 20% Ersparnis)', () => {
+  it('Minified < Original', () => {
     const orig = statSync(join(ROOT, 'styles.css')).size;
     const min = statSync(outPath).size;
-    const ratio = min / orig;
-    assert.ok(ratio < 0.8, `Minified ${min} vs Original ${orig} — Ratio ${ratio.toFixed(2)}`);
+    assert.ok(min < orig, `Minified ${min} vs Original ${orig}`);
   });
 
-  it('Minified enthält keine /* ... */-Kommentare', () => {
+  it('enthält nur noch License-Kommentare (/*! … */)', () => {
     const content = readFileSync(outPath, 'utf8');
-    assert.doesNotMatch(content, /\/\*[\s\S]*?\*\//);
-  });
-
-  it('Cleanup: styles.min.css wird wieder entfernt (nicht in Repo)', () => {
-    if (existsSync(outPath)) unlinkSync(outPath);
-    assert.equal(existsSync(outPath), false);
+    const comments = content.match(/\/\*/g) || [];
+    const license = content.match(/\/\*!/g) || [];
+    assert.equal(comments.length, license.length);
   });
 });

@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 
+import '../data/achievements_store.dart';
+import '../data/goals_store.dart';
+import '../data/quests_store.dart';
 import '../data/repository.dart';
+import '../data/streak_store.dart';
+import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/brand_logo.dart';
 import '../widgets/dialekt_card.dart';
+import '../widgets/glass_card.dart';
 import '../widgets/gradient_button.dart';
+import '../widgets/progress_hud.dart';
+import 'achievements_screen.dart';
 import 'dialekt_detail_screen.dart';
+import 'goals_screen.dart';
+import 'quests_screen.dart';
 import 'search_screen.dart';
 import 'settings_screen.dart';
+import 'spiele_screen.dart';
+import 'statistik_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.onOpenTab});
@@ -38,14 +50,31 @@ class HomeScreen extends StatelessWidget {
               children: [
                 const BrandLogo(size: 38),
                 const SizedBox(width: AppSpacing.x3),
-                Text(
-                  'Dialekto',
-                  style: const TextStyle(fontFamily: 'Fraunces').copyWith(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
+                Expanded(
+                  child: Text(
+                    'Dialekto',
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(fontFamily: 'Fraunces').copyWith(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
                 ),
-                const Spacer(),
+                IconButton(
+                  tooltip: 'Spiele',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const SpieleScreen()),
+                  ),
+                  icon: Icon(Icons.videogame_asset_rounded,
+                      color: surfaces.textMuted),
+                ),
+                IconButton(
+                  tooltip: 'Statistik',
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const StatistikScreen()),
+                  ),
+                  icon: Icon(Icons.bar_chart_rounded, color: surfaces.textMuted),
+                ),
                 IconButton(
                   tooltip: 'Suchen',
                   onPressed: () => Navigator.of(context).push(
@@ -62,6 +91,21 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(height: AppSpacing.x5),
+
+            // In-App-Erinnerung (wenn heute noch nicht gelernt)
+            _ReminderBanner(onLearn: () => onOpenTab(2)),
+
+            // Fortschritts-HUD: Level, XP, Streak
+            const ProgressHud(),
+            const SizedBox(height: AppSpacing.x3),
+
+            // Schnellzugriff: Tagesziel + Erfolge
+            const _QuickTiles(),
+            const SizedBox(height: AppSpacing.x3),
+
+            // Tagesquests
+            const _QuestsCard(),
             const SizedBox(height: AppSpacing.x6),
 
             // Eyebrow
@@ -191,6 +235,235 @@ class HomeScreen extends StatelessWidget {
             ],
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _QuickTiles extends StatelessWidget {
+  const _QuickTiles();
+
+  @override
+  Widget build(BuildContext context) {
+    final goals = GoalsStore.instance;
+    final ach = AchievementsStore.instance;
+    return Row(
+      children: [
+        Expanded(
+          child: ListenableBuilder(
+            listenable: goals,
+            builder: (context, _) => _QuickTile(
+              icon: '🎯',
+              accent: AppColors.brand,
+              title: 'Tagesziel',
+              value: '${goals.todayProgress} / ${goals.target}',
+              progress: goals.pct,
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const GoalsScreen()),
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(width: AppSpacing.x3),
+        Expanded(
+          child: ListenableBuilder(
+            listenable: ach,
+            builder: (context, _) => _QuickTile(
+              icon: '🏆',
+              accent: AppColors.warm,
+              title: 'Erfolge',
+              value: '${ach.unlockedCount} / ${achievements.length}',
+              progress: achievements.isEmpty
+                  ? 0.0
+                  : ach.unlockedCount / achievements.length,
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const AchievementsScreen()),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _ReminderBanner extends StatelessWidget {
+  const _ReminderBanner({required this.onLearn});
+  final VoidCallback onLearn;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: Listenable.merge(
+          [SettingsController.instance, StreakStore.instance]),
+      builder: (context, _) {
+        final show = SettingsController.instance
+            .shouldRemind(DateTime.now(), StreakStore.instance.lastDay);
+        if (!show) return const SizedBox.shrink();
+        return Padding(
+          padding: const EdgeInsets.only(bottom: AppSpacing.x3),
+          child: GlassCard(
+            onTap: onLearn,
+            accent: AppColors.warm,
+            padding: const EdgeInsets.all(AppSpacing.x4),
+            child: Row(
+              children: [
+                const Text('🔔', style: TextStyle(fontSize: 22)),
+                const SizedBox(width: AppSpacing.x3),
+                const Expanded(
+                  child: Text(
+                    'Zeit zum Lernen! Heute noch keine Karte geübt.',
+                    style: TextStyle(
+                        fontSize: 13.5, fontWeight: FontWeight.w600),
+                  ),
+                ),
+                Icon(Icons.chevron_right_rounded,
+                    color: AppSurfaces.of(context).textMuted),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _QuestsCard extends StatelessWidget {
+  const _QuestsCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final store = QuestsStore.instance;
+    final surfaces = AppSurfaces.of(context);
+    return ListenableBuilder(
+      listenable: store,
+      builder: (context, _) {
+        final summary = store.summary();
+        final pct = summary.total == 0 ? 0.0 : summary.done / summary.total;
+        return GlassCard(
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (_) => const QuestsScreen()),
+          ),
+          accent: AppColors.accent,
+          padding: const EdgeInsets.all(AppSpacing.x4),
+          child: Row(
+            children: [
+              const Text('🗺️', style: TextStyle(fontSize: 22)),
+              const SizedBox(width: AppSpacing.x3),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Expanded(
+                          child: Text(
+                            'Tagesquests',
+                            style: TextStyle(
+                              fontSize: 14.5,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          summary.allDone
+                              ? 'Alle erledigt 🎉'
+                              : '${summary.done} / ${summary.total} erledigt',
+                          style: TextStyle(
+                            fontSize: 12.5,
+                            color: surfaces.textMuted,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: AppSpacing.x2),
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(AppRadii.pill),
+                      child: LinearProgressIndicator(
+                        value: pct.clamp(0.0, 1.0),
+                        minHeight: 6,
+                        backgroundColor:
+                            surfaces.border.withValues(alpha: 0.6),
+                        valueColor: const AlwaysStoppedAnimation<Color>(
+                          AppColors.accent,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpacing.x2),
+              Icon(Icons.chevron_right_rounded, color: surfaces.textMuted),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _QuickTile extends StatelessWidget {
+  const _QuickTile({
+    required this.icon,
+    required this.accent,
+    required this.title,
+    required this.value,
+    required this.progress,
+    required this.onTap,
+  });
+
+  final String icon;
+  final Color accent;
+  final String title;
+  final String value;
+  final double progress;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    return GlassCard(
+      onTap: onTap,
+      accent: accent,
+      padding: const EdgeInsets.all(AppSpacing.x4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Text(icon, style: const TextStyle(fontSize: 20)),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  title,
+                  style: const TextStyle(
+                    fontSize: 13.5,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpacing.x2),
+          Text(
+            value,
+            style: TextStyle(fontFamily: 'Fraunces', 
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+              color: accent,
+            ),
+          ),
+          const SizedBox(height: AppSpacing.x2),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            child: LinearProgressIndicator(
+              value: progress.clamp(0.0, 1.0),
+              minHeight: 6,
+              backgroundColor: surfaces.border.withValues(alpha: 0.6),
+              valueColor: AlwaysStoppedAnimation<Color>(accent),
+            ),
+          ),
+        ],
       ),
     );
   }

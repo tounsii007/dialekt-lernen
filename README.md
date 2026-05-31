@@ -3,21 +3,38 @@
 [![CI](https://github.com/tounsii007/dialekt-lernen/actions/workflows/ci.yml/badge.svg)](https://github.com/tounsii007/dialekt-lernen/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-377%20passing-success.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-891%20web%20%2B%20250%20mobile-success.svg)](tests/)
 [![PWA](https://img.shields.io/badge/PWA-ready-purple.svg)](manifest.webmanifest)
 
-Eine moderne, erweiterbare Web-App (PWA) zum Lernen deutscher Dialekte aus
-verschiedenen Bundesländern und Regionen. Komplett auf Hochdeutsch erklärt,
-ohne Backend — alle Daten bleiben lokal im Browser.
+Eine moderne, erweiterbare App zum Lernen deutscher Dialekte aus dem gesamten
+DACH-Raum. Komplett auf Hochdeutsch erklärt, ohne Backend — alle Daten bleiben
+lokal. Verfügbar als **Web-PWA** und als **native Mobile-App (Flutter, `mobile/`)**,
+gespeist aus derselben Datenquelle.
 
-**Stand: 13 Dialekte · 3.509 Ausdrücke · 10 Lernmodi · 377 Tests**
+**Stand: 24 Dialekte · 6.700 Ausdrücke · 891 Web- + 250 Mobile-Tests (alle grün)**
+
+## Im Vergleich (Ziel: deutsche Dialekte lernen)
+
+| Fähigkeit | Dialekto | Duolingo | Anki | Memrise |
+|---|---|---|---|---|
+| Deutsche Dialekte (24 Regionen, 6.700 Ausdrücke) | ✅ | ❌ | ⚠️ Eigen-Decks | ⚠️ vereinzelt |
+| FSRS-5-Scheduler (+ SM-2, Wunsch-Retention) | ✅ | ❌ | ✅ | ❌ |
+| Gamification (XP · Streak · Quests · Ligen) | ✅ | ✅ | ❌ | ⚠️ |
+| Aussprache: IPA + Silben + Slow-Mo + Aufnahme/Score | ✅ | ⚠️ | ⚠️ | ⚠️ |
+| 100 % offline · kein Konto · kein Tracking | ✅ | ❌ | ✅ | ❌ |
+| Native App **und** PWA | ✅ | ✅ | ✅ | ✅ |
+| Open Source (Apache-2.0) | ✅ | ❌ | ✅ | ❌ |
+
+Details & Bewertung: siehe [AUDIT.md](AUDIT.md).
 
 ## Features
 
 ### Lernen & Wiederholen (10 Modi!)
-- **12 Dialekte** vorinstalliert: Hessisch, Berlinisch, Bayerisch, Sächsisch,
-  Schwäbisch, Kölsch, Plattdeutsch, Schwizerdütsch, Wienerisch, Fränkisch,
-  Ruhrdeutsch, Alemannisch
+- **24 Dialekte** aus dem DACH-Raum: u. a. Hessisch, Berlinisch, Bayerisch,
+  Sächsisch, Schwäbisch, Kölsch, Plattdeutsch, Schwizerdütsch, Wienerisch,
+  Fränkisch, Ruhrdeutsch, Alemannisch, Pfälzisch, Tirolerisch, Saarländisch,
+  Ostfriesisch, Badisch, Vorarlbergerisch, Steirisch, Kärntnerisch,
+  Thüringisch, Mecklenburgisch, Brandenburgisch, Oberpfälzisch
 - **10 Karteikarten-Modi**:
   Klassisch · Umgekehrt · Multiple Choice · Tippen (mit Levenshtein-Toleranz) ·
   Lückentext · Audio · Aussprache (Speech Recognition) · Diktat ·
@@ -91,8 +108,9 @@ ohne Backend — alle Daten bleiben lokal im Browser.
 ### Tech-Highlights
 - **Frameworkfrei** — Vanilla JS + ES Modules
 - **Zero Production-Dependencies** (nur `http-server` für Dev)
-- **107 Unit-Tests** (node --test, zero deps)
-- **Service Worker** mit Strategy-Mix + Auto-Update-Detection
+- **891 Web-Unit-Tests** (node --test, zero deps) + **250 Mobile-Tests** (Flutter)
+- **Minifiziertes CSS** ausgeliefert (`npm run build`), Service Worker mit
+  Strategy-Mix + Auto-Update-Detection
 - **Web-Worker für SRS** (non-blocking SM-2, Sync-Fallback)
 - **WebGPU Voice-Visualization** mit Canvas2D-Fallback
 - **CSP-Header** (`script-src 'self'`) + Referrer-Policy

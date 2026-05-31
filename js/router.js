@@ -8,6 +8,9 @@ import {
   initTilt, initMagnetic, initPointerParallax, initParallax
 } from './util/motion.js';
 import { initNav, syncMobileNav } from './nav.js';
+import { attachPullToRefresh } from './util/pull-to-refresh.js';
+import { maybeShowTip } from './util/progressive-disclosure.js';
+import { state } from './store/state.js';
 
 // Eager: Routes, die direkt verfügbar sein müssen.
 import { renderHome } from './views/home.js';
@@ -34,7 +37,11 @@ const ROUTE_LABELS = {
   spiele:    'Mini-Spiele',
   sammlung:  'Ausdrücke-Sammlung',
   idiome:    'Idiom-Explorer',
-  lektionen: 'Mini-Lektionen'
+  lektionen: 'Mini-Lektionen',
+  liga:      'Lokale Liga',
+  lernpfad:  'Lernpfad',
+  shadowing: 'Shadowing-Trainer',
+  klangpaare: 'Klangpaare-Hörtrainer'
 };
 
 // Lazy: erst beim Bedarf laden + danach gecached.
@@ -47,7 +54,11 @@ const lazyLoaders = {
   spiele:    () => import('./views/spiele.js'),
   sammlung:  () => import('./views/sammlung.js'),
   idiome:    () => import('./views/idiome.js'),
-  lektionen: () => import('./views/lektionen.js')
+  lektionen: () => import('./views/lektionen.js'),
+  liga:      () => import('./views/liga.js'),
+  lernpfad:  () => import('./views/lernpfad.js'),
+  shadowing: () => import('./views/shadowing.js'),
+  klangpaare: () => import('./views/klangpaare.js')
 };
 const lazyCache = {};
 
@@ -163,6 +174,26 @@ async function renderRoute(app, route, segs, params) {
       if (!m) return;
       return m.renderLektionen(app, params);
     }
+    case 'liga': {
+      const m = await loadLazy('liga');
+      if (!m) return;
+      return m.renderLiga(app);
+    }
+    case 'lernpfad': {
+      const m = await loadLazy('lernpfad');
+      if (!m) return;
+      return m.renderLernpfad(app);
+    }
+    case 'shadowing': {
+      const m = await loadLazy('shadowing');
+      if (!m) return;
+      return m.renderShadowing(app, params);
+    }
+    case 'klangpaare': {
+      const m = await loadLazy('klangpaare');
+      if (!m) return;
+      return m.renderKlangpaare(app, params);
+    }
     default:
       return renderHome(app);
   }
@@ -180,6 +211,19 @@ async function doRender(app, route, segs, params) {
   initNav();
   syncMobileNav();
   app.setAttribute('aria-busy', 'false');
+
+  // Progressive Disclosure: nach der Willkommens-Tour höchstens ein
+  // kontextueller Tipp pro Navigation (gedrosselt, einmalig je Tipp).
+  if (state.onboarded) {
+    setTimeout(() => {
+      try {
+        maybeShowTip({
+          route,
+          learned: Object.keys(state.gelernt || {}).length,
+        });
+      } catch {}
+    }, 1200);
+  }
 }
 
 export async function router() {
@@ -216,6 +260,9 @@ export async function router() {
 export function initRouter() {
   window.addEventListener('hashchange', router);
   router();
+  // Pull-to-Refresh (Mobile): am Seitenanfang nach unten ziehen lädt die
+  // aktuelle Ansicht neu.
+  attachPullToRefresh({ onRefresh: () => router() });
   // Vorladen, sobald die UI idle ist — schnelle Navigation ohne Skeleton-Blitz.
   const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 500));
   idle(() => {

@@ -32,6 +32,7 @@ const PRECACHE_URLS = [
   './index.html',
   './manifest.webmanifest',
   './styles.css',
+  './styles.min.css',
   './sw.js',
   './data/dialekte.js',
   './data/kategorien.js',

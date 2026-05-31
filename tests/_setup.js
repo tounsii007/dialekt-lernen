@@ -8,13 +8,19 @@
 // echtes DOM-Verhalten braucht, soll er explizit mocken.
 
 import { state } from '../js/store/state.js';
+import { resetCombo } from '../js/util/combo.js';
 
 // State-Reset — alle Felder auf saubere Defaults.
 export function resetState() {
+  // Session-Combo ist modul-lokal (nicht im State) — pro Test zurücksetzen,
+  // damit ein Multiplikator aus einem vorherigen Test die XP nicht verfälscht.
+  resetCombo();
   state.theme = 'auto';
   state.favoriten = [];
   state.gelernt = {};
-  state.streak = { count: 0, lastDay: null, days: {} };
+  state.streak = { count: 0, lastDay: null, days: {},
+                   freezes: 0, repairs: 0, weekendAmulet: false, frozenDays: {},
+                   freezeMilestone: 0, repairMilestone: 0, lastBreak: null };
   state.quizHistory = [];
   state.lernStats = { total: 0, korrekt: 0 };
   state.visited = [];
@@ -24,6 +30,11 @@ export function resetState() {
   state.notes = {};
   state.xp = { total: 0, log: [] };
   state.goals = { target: 10, progress: {}, reminderShown: {} };
+  state.srs = { scheduler: 'fsrs', retention: 0.9, fuzz: true, params: null };
+  state.srsLog = [];
+  state.league = { tier: 0, week: null, weekStartXp: 0, best: 0, lastResult: null };
+  state.chest = { lastDay: null, claimStreak: 0, lastReward: null, totalOpened: 0 };
+  state.speech = { rate: 0.92, pitch: 1, voiceURI: null };
 }
 
 // Minimaler DOM-Mock — wird global gesetzt, wenn ein Test es braucht.

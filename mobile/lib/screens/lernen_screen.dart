@@ -2,12 +2,22 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../data/achievements_store.dart';
+import '../data/combo_controller.dart';
+import '../data/goals_store.dart';
 import '../data/models.dart';
+import '../data/quests_store.dart';
 import '../data/repository.dart';
 import '../data/srs_store.dart';
+import '../data/streak_store.dart';
+import '../data/xp_store.dart';
+import '../util/fsrs.dart';
+import '../util/haptics.dart';
+import '../util/interval_format.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
 import '../widgets/gradient_button.dart';
+import '../widgets/level_up_overlay.dart';
 import '../widgets/speak_button.dart';
 
 const int _kSessionSize = 20;
@@ -29,6 +39,7 @@ class _LernenScreenState extends State<LernenScreen>
   bool _showBack = false;
   bool _finished = false;
   bool _studyAhead = false;
+  double _dragDx = 0; // horizontale Wisch-Distanz (Swipe-to-Rate)
   final Map<int, int> _ratings = {}; // rating -> count
 
   @override
@@ -48,6 +59,7 @@ class _LernenScreenState extends State<LernenScreen>
   }
 
   void _buildSession({bool studyAhead = false}) {
+    ComboController.instance.reset();
     final srs = SrsStore.instance;
     final now = DateTime.now().millisecondsSinceEpoch;
     final all = <_Card>[
@@ -63,10 +75,16 @@ class _LernenScreenState extends State<LernenScreen>
     if (studyAhead) {
       pool = List.of(all)..shuffle(math.Random());
     } else {
-      // Fällige zuerst (nach due sortiert), dann neue Karten.
+      // Fällige zuerst — nach Retrievability sortiert (am stärksten vom
+      // Vergessen bedrohte zuerst, schlägt Ankis reine Fälligkeits-Sortierung),
+      // `due` als stabiler Gleichstand-Tie. Dann neue Karten.
       final due = all.where((c) => !srs.isNew(c.key) && srs.isDue(c.key, now)).toList()
-        ..sort((a, b) =>
-            (srs.get(a.key)?.due ?? 0).compareTo(srs.get(b.key)?.due ?? 0));
+        ..sort((a, b) {
+          final byR = srs.retrievabilityOf(a.key, now)
+              .compareTo(srs.retrievabilityOf(b.key, now));
+          if (byR != 0) return byR;
+          return (srs.get(a.key)?.due ?? 0).compareTo(srs.get(b.key)?.due ?? 0);
+        });
       final fresh = all.where((c) => srs.isNew(c.key)).toList()
         ..shuffle(math.Random());
       pool = [...due, ...fresh];
@@ -78,6 +96,7 @@ class _LernenScreenState extends State<LernenScreen>
       _showBack = false;
       _finished = _session.isEmpty;
       _studyAhead = studyAhead;
+      _dragDx = 0;
       _ratings.clear();
     });
     _flip.reset();
@@ -92,20 +111,60 @@ class _LernenScreenState extends State<LernenScreen>
     }
   }
 
-  Future<void> _rate(int rating) async {
+  Future<void> _rate(int grade) async {
     final card = _session[_index];
-    await SrsStore.instance.review(card.key, rating);
-    if (!mounted) return; // Widget könnte während des await disposed worden sein
-    _ratings.update(rating, (v) => v + 1, ifAbsent: () => 1);
+    final wasNew = SrsStore.instance.isNew(card.key);
+    final correct = grade != gradeAgain;
+    correct ? Haptics.light() : Haptics.error();
+
+    await SrsStore.instance.reviewScheduled(card.key, grade: grade);
+    await StreakStore.instance.register();
+    await GoalsStore.instance.increment();
+
+    // Combo aufbauen/brechen und XP mit Multiplikator gutschreiben.
+    final combo = ComboController.instance.registerHit(correct);
+    final baseXp = wasNew ? XpReward.cardLearned : XpReward.cardReviewed;
+    final gainedXp = applyComboToXp(baseXp, combo.multiplier);
+    final reason = wasNew ? 'card-learned' : 'card-reviewed';
+    final award = await XpStore.instance.award(gainedXp, reason);
+    await QuestsStore.instance.trackFromReason(reason, gainedXp);
+
+    _ratings.update(grade, (v) => v + 1, ifAbsent: () => 1);
+
+    if (!mounted) return;
+    if (award.levelUp) {
+      await showLevelUpCelebration(
+        context,
+        level: award.level,
+        title: levelTitle(award.level),
+      );
+      if (!mounted) return;
+    }
+
     if (_index + 1 >= _session.length) {
+      await AchievementsStore.instance.evaluateFromStores();
+      if (!mounted) return;
       setState(() => _finished = true);
       return;
     }
     setState(() {
       _index++;
       _showBack = false;
+      _dragDx = 0;
     });
     _flip.reset();
+  }
+
+  /// Wisch-Geste auswerten: weit genug rechts → Leicht, links → Nochmal.
+  void _onSwipeEnd() {
+    const threshold = 90.0;
+    if (_dragDx > threshold) {
+      _rate(gradeEasy);
+    } else if (_dragDx < -threshold) {
+      _rate(gradeAgain);
+    } else {
+      setState(() => _dragDx = 0);
+    }
   }
 
   @override
@@ -123,6 +182,8 @@ class _LernenScreenState extends State<LernenScreen>
   Widget _buildSessionView(BuildContext context) {
     final surfaces = AppSurfaces.of(context);
     final card = _session[_index];
+    // FSRS-Intervall-Vorschau je Bewertung (null im SM-2-Modus → keine Hints).
+    final preview = SrsStore.instance.previewFor(card.key);
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(
@@ -139,6 +200,7 @@ class _LernenScreenState extends State<LernenScreen>
                   style: Theme.of(context).textTheme.headlineMedium
                       ?.copyWith(fontSize: 24)),
               const Spacer(),
+              const _ComboBadge(),
               SpeakButton(
                 text: card.ausdruck.ausdruck,
                 lang: card.dialekt.lang,
@@ -163,41 +225,71 @@ class _LernenScreenState extends State<LernenScreen>
             child: Center(
               child: GestureDetector(
                 onTap: _toggle,
-                child: AnimatedBuilder(
-                  animation: _flip,
-                  builder: (context, _) {
-                    final angle = _flip.value * math.pi;
-                    final isBack = angle > math.pi / 2;
-                    return Transform(
-                      alignment: Alignment.center,
-                      transform: Matrix4.identity()
-                        ..setEntry(3, 2, 0.001)
-                        ..rotateY(angle),
-                      child: isBack
-                          ? Transform(
+                onHorizontalDragUpdate: _showBack
+                    ? (d) => setState(() => _dragDx += d.delta.dx)
+                    : null,
+                onHorizontalDragEnd: _showBack ? (_) => _onSwipeEnd() : null,
+                child: Transform.translate(
+                  offset: Offset(_dragDx, 0),
+                  child: Transform.rotate(
+                    angle: _dragDx * 0.0009,
+                    child: Stack(
+                      alignment: Alignment.topCenter,
+                      children: [
+                        AnimatedBuilder(
+                          animation: _flip,
+                          builder: (context, _) {
+                            final angle = _flip.value * math.pi;
+                            final isBack = angle > math.pi / 2;
+                            return Transform(
                               alignment: Alignment.center,
-                              transform: Matrix4.identity()..rotateY(math.pi),
-                              child: _CardFace(
-                                title: card.ausdruck.hochdeutsch,
-                                subtitle: card.ausdruck.bedeutung,
-                                accent: AppColors.accent,
-                                tag: 'Hochdeutsch',
-                              ),
-                            )
-                          : _CardFace(
-                              title: card.ausdruck.ausdruck,
-                              subtitle: card.ausdruck.beispiel.isNotEmpty
-                                  ? '„${card.ausdruck.beispiel}"'
-                                  : 'Tippen zum Umdrehen',
-                              accent: AppColors.brand,
-                              tag: 'Dialekt',
-                            ),
-                    );
-                  },
+                              transform: Matrix4.identity()
+                                ..setEntry(3, 2, 0.001)
+                                ..rotateY(angle),
+                              child: isBack
+                                  ? Transform(
+                                      alignment: Alignment.center,
+                                      transform: Matrix4.identity()
+                                        ..rotateY(math.pi),
+                                      child: _CardFace(
+                                        title: card.ausdruck.hochdeutsch,
+                                        subtitle: card.ausdruck.bedeutung,
+                                        accent: AppColors.accent,
+                                        tag: 'Hochdeutsch',
+                                      ),
+                                    )
+                                  : _CardFace(
+                                      title: card.ausdruck.ausdruck,
+                                      subtitle: card.ausdruck.beispiel.isNotEmpty
+                                          ? '„${card.ausdruck.beispiel}"'
+                                          : 'Tippen zum Umdrehen',
+                                      accent: AppColors.brand,
+                                      tag: 'Dialekt',
+                                    ),
+                            );
+                          },
+                        ),
+                        if (_showBack && _dragDx.abs() > 24)
+                          Positioned(
+                            top: 12,
+                            child: _SwipeHint(toEasy: _dragDx > 0),
+                          ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
+          if (_showBack)
+            Padding(
+              padding: const EdgeInsets.only(top: AppSpacing.x2),
+              child: Text(
+                '← wischen: Nochmal · Leicht: wischen →',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 11, color: surfaces.textMuted),
+              ),
+            ),
           const SizedBox(height: AppSpacing.x4),
           if (!_showBack)
             GradientButton(
@@ -210,21 +302,31 @@ class _LernenScreenState extends State<LernenScreen>
             Row(
               children: [
                 _RateButton(
-                  label: 'Schwer',
+                  label: 'Nochmal',
                   color: AppColors.danger,
-                  onTap: () => _rate(ratingHard),
+                  hint: preview == null ? null : formatInterval(preview[gradeAgain]!),
+                  onTap: () => _rate(gradeAgain),
                 ),
                 const SizedBox(width: AppSpacing.x2),
                 _RateButton(
-                  label: 'Mittel',
+                  label: 'Schwer',
                   color: AppColors.warning,
-                  onTap: () => _rate(ratingMed),
+                  hint: preview == null ? null : formatInterval(preview[gradeHard]!),
+                  onTap: () => _rate(gradeHard),
+                ),
+                const SizedBox(width: AppSpacing.x2),
+                _RateButton(
+                  label: 'Gut',
+                  color: AppColors.accent2,
+                  hint: preview == null ? null : formatInterval(preview[gradeGood]!),
+                  onTap: () => _rate(gradeGood),
                 ),
                 const SizedBox(width: AppSpacing.x2),
                 _RateButton(
                   label: 'Leicht',
                   color: AppColors.success,
-                  onTap: () => _rate(ratingEasy),
+                  hint: preview == null ? null : formatInterval(preview[gradeEasy]!),
+                  onTap: () => _rate(gradeEasy),
                 ),
               ],
             ),
@@ -288,11 +390,15 @@ class _RateButton extends StatelessWidget {
     required this.label,
     required this.color,
     required this.onTap,
+    this.hint,
   });
 
   final String label;
   final Color color;
   final VoidCallback onTap;
+
+  /// Optionaler Intervall-Hinweis (FSRS-Vorschau) unter dem Label.
+  final String? hint;
 
   @override
   Widget build(BuildContext context) {
@@ -303,19 +409,112 @@ class _RateButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppRadii.md),
           onTap: onTap,
           child: Container(
-            padding: const EdgeInsets.symmetric(vertical: AppSpacing.x4),
+            padding: const EdgeInsets.symmetric(
+              vertical: AppSpacing.x3,
+              horizontal: 2,
+            ),
             alignment: Alignment.center,
             decoration: BoxDecoration(
               color: color.withValues(alpha: 0.14),
               borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(color: color.withValues(alpha: 0.6)),
             ),
-            child: Text(
-              label,
-              style: TextStyle(color: color, fontWeight: FontWeight.w600),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  label,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                    color: color,
+                    fontWeight: FontWeight.w600,
+                    fontSize: 13,
+                  ),
+                ),
+                if (hint != null) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    hint!,
+                    style: TextStyle(
+                      color: color.withValues(alpha: 0.78),
+                      fontSize: 11,
+                    ),
+                  ),
+                ],
+              ],
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Live-Combo-Anzeige im Kopf: erscheint ab 2 in Folge, zeigt Zähler und (ab
+/// Tier-Schwelle) den XP-Multiplikator.
+class _ComboBadge extends StatelessWidget {
+  const _ComboBadge();
+
+  static String _fmtMult(double m) =>
+      m.toStringAsFixed(2).replaceFirst(RegExp(r'\.?0+$'), '');
+
+  @override
+  Widget build(BuildContext context) {
+    return ListenableBuilder(
+      listenable: ComboController.instance,
+      builder: (context, _) {
+        final combo = ComboController.instance;
+        if (combo.count < 2) return const SizedBox.shrink();
+        final mult = combo.multiplier;
+        final label = mult > 1.0
+            ? '🔥 ${combo.count} · ${_fmtMult(mult)}×'
+            : '🔥 ${combo.count}';
+        return Padding(
+          padding: const EdgeInsets.only(right: AppSpacing.x2),
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            decoration: BoxDecoration(
+              color: AppColors.warm.withValues(alpha: 0.16),
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+              border: Border.all(color: AppColors.warm.withValues(alpha: 0.5)),
+            ),
+            child: Text(
+              label,
+              style: const TextStyle(
+                color: AppColors.warm,
+                fontSize: 12.5,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+/// Richtungs-Hinweis beim Wischen der Karte (Leicht rechts / Nochmal links).
+class _SwipeHint extends StatelessWidget {
+  const _SwipeHint({required this.toEasy});
+  final bool toEasy;
+
+  @override
+  Widget build(BuildContext context) {
+    final color = toEasy ? AppColors.success : AppColors.danger;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        boxShadow: [
+          BoxShadow(color: color.withValues(alpha: 0.5), blurRadius: 16),
+        ],
+      ),
+      child: Text(
+        toEasy ? 'Leicht ✓' : 'Nochmal ✗',
+        style: const TextStyle(
+            color: Colors.white, fontWeight: FontWeight.w700, fontSize: 13),
       ),
     );
   }

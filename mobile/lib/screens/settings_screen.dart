@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
+import '../data/backup_service.dart';
 import '../data/repository.dart';
+import '../data/srs_store.dart';
+import '../state/i18n.dart';
 import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
@@ -28,14 +32,14 @@ class SettingsScreen extends StatelessWidget {
                     icon: const Icon(Icons.arrow_back_rounded),
                   ),
                   const SizedBox(width: AppSpacing.x2),
-                  Text('Einstellungen',
+                  Text(settings.t('settings.title'),
                       style: Theme.of(context).textTheme.headlineMedium
                           ?.copyWith(fontSize: 24)),
                 ],
               ),
               const SizedBox(height: AppSpacing.x5),
 
-              Text('Darstellung',
+              Text(settings.t('settings.appearance'),
                   style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: AppSpacing.x3),
               GlassCard(
@@ -51,28 +55,28 @@ class SettingsScreen extends StatelessWidget {
                             Icon(Icons.palette_rounded,
                                 size: 20, color: AppColors.brand),
                             const SizedBox(width: AppSpacing.x3),
-                            const Text('Design'),
+                            Text(settings.t('settings.design')),
                           ],
                         ),
                         const SizedBox(height: AppSpacing.x3),
                         SizedBox(
                           width: double.infinity,
                           child: SegmentedButton<ThemeMode>(
-                            segments: const [
+                            segments: [
                               ButtonSegment(
                                 value: ThemeMode.system,
-                                label: Text('System'),
-                                icon: Icon(Icons.brightness_auto_rounded),
+                                label: Text(settings.t('theme.system')),
+                                icon: const Icon(Icons.brightness_auto_rounded),
                               ),
                               ButtonSegment(
                                 value: ThemeMode.light,
-                                label: Text('Hell'),
-                                icon: Icon(Icons.light_mode_rounded),
+                                label: Text(settings.t('theme.light')),
+                                icon: const Icon(Icons.light_mode_rounded),
                               ),
                               ButtonSegment(
                                 value: ThemeMode.dark,
-                                label: Text('Dunkel'),
-                                icon: Icon(Icons.dark_mode_rounded),
+                                label: Text(settings.t('theme.dark')),
+                                icon: const Icon(Icons.dark_mode_rounded),
                               ),
                             ],
                             selected: {settings.themeMode},
@@ -91,7 +95,79 @@ class SettingsScreen extends StatelessWidget {
               ),
               const SizedBox(height: AppSpacing.x6),
 
-              Text('Über', style: Theme.of(context).textTheme.titleLarge),
+              Text(settings.t('settings.language'),
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              GlassCard(
+                padding: const EdgeInsets.all(AppSpacing.x4),
+                child: ListenableBuilder(
+                  listenable: settings,
+                  builder: (context, _) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.translate_rounded,
+                              size: 20, color: AppColors.brand),
+                          const SizedBox(width: AppSpacing.x3),
+                          Text(settings.t('settings.language')),
+                        ],
+                      ),
+                      const SizedBox(height: AppSpacing.x3),
+                      SizedBox(
+                        width: double.infinity,
+                        child: SegmentedButton<AppLang>(
+                          segments: const [
+                            ButtonSegment(
+                              value: AppLang.de,
+                              label: Text('Deutsch'),
+                            ),
+                            ButtonSegment(
+                              value: AppLang.en,
+                              label: Text('English'),
+                            ),
+                          ],
+                          selected: {settings.lang},
+                          showSelectedIcon: false,
+                          onSelectionChanged: (sel) {
+                            if (sel.isNotEmpty) settings.setLang(sel.first);
+                          },
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.x2),
+                      Text(
+                        settings.t('settings.language.note'),
+                        style: TextStyle(
+                            color: surfaces.textMuted,
+                            fontSize: 12.5,
+                            height: 1.4),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: AppSpacing.x6),
+
+              Text(settings.t('settings.scheduler'),
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              const _LearningAlgoCard(),
+              const SizedBox(height: AppSpacing.x6),
+
+              Text('Erinnerung & Feedback',
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              const _ReminderHapticsCard(),
+              const SizedBox(height: AppSpacing.x6),
+
+              Text('Daten & Sicherung',
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              const _BackupCard(),
+              const SizedBox(height: AppSpacing.x6),
+
+              Text(settings.t('settings.about'),
+                  style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: AppSpacing.x3),
               GlassCard(
                 padding: const EdgeInsets.all(AppSpacing.x4),
@@ -99,16 +175,15 @@ class SettingsScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _InfoRow(
-                      label: 'Inhalte',
+                      label: settings.t('settings.content'),
                       value:
                           '${repo.dialekte.length} Dialekte · ${repo.totalAusdruecke} Ausdrücke',
                     ),
                     const SizedBox(height: AppSpacing.x3),
-                    _InfoRow(label: 'App', value: 'Dialekto · v1.0.0'),
+                    _InfoRow(label: settings.t('settings.app'), value: 'Dialekto · v1.0.0'),
                     const SizedBox(height: AppSpacing.x3),
                     Text(
-                      'Deutsche Dialekte lernen — Karteikarten, Quiz & mehr. '
-                      'Lokal, ohne Konto.',
+                      settings.t('settings.about.text'),
                       style: TextStyle(color: surfaces.textMuted, height: 1.5),
                     ),
                   ],
@@ -117,6 +192,270 @@ class SettingsScreen extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _LearningAlgoCard extends StatelessWidget {
+  const _LearningAlgoCard();
+
+  static const List<double> _retentionOptions = [0.8, 0.85, 0.9, 0.95];
+
+  @override
+  Widget build(BuildContext context) {
+    final srs = SrsStore.instance;
+    final surfaces = AppSurfaces.of(context);
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpacing.x4),
+      child: ListenableBuilder(
+        listenable: srs,
+        builder: (context, _) {
+          final isFsrs = srs.scheduler == 'fsrs';
+          final currentRet = _retentionOptions.reduce((a, b) =>
+              (a - srs.retention).abs() <= (b - srs.retention).abs() ? a : b);
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.psychology_rounded,
+                      size: 20, color: AppColors.brand),
+                  const SizedBox(width: AppSpacing.x3),
+                  const Expanded(child: Text('Scheduler')),
+                ],
+              ),
+              const SizedBox(height: AppSpacing.x3),
+              SizedBox(
+                width: double.infinity,
+                child: SegmentedButton<String>(
+                  segments: const [
+                    ButtonSegment(
+                      value: 'fsrs',
+                      label: Text('FSRS'),
+                      icon: Icon(Icons.auto_awesome_rounded),
+                    ),
+                    ButtonSegment(
+                      value: 'sm2',
+                      label: Text('SM-2'),
+                      icon: Icon(Icons.timeline_rounded),
+                    ),
+                  ],
+                  selected: {srs.scheduler},
+                  showSelectedIcon: false,
+                  onSelectionChanged: (sel) {
+                    if (sel.isNotEmpty) srs.setConfig(scheduler: sel.first);
+                  },
+                ),
+              ),
+              const SizedBox(height: AppSpacing.x2),
+              Text(
+                isFsrs
+                    ? 'FSRS-5 plant Reviews nach einem Gedächtnismodell — '
+                        'präziser als SM-2.'
+                    : 'SM-2 (klassisch, Anki-Stil). Dein Lernstand bleibt erhalten.',
+                style: TextStyle(
+                    color: surfaces.textMuted, fontSize: 12.5, height: 1.4),
+              ),
+              if (isFsrs) ...[
+                const SizedBox(height: AppSpacing.x4),
+                const Text('Wunsch-Retention'),
+                const SizedBox(height: AppSpacing.x2),
+                SizedBox(
+                  width: double.infinity,
+                  child: SegmentedButton<double>(
+                    segments: const [
+                      ButtonSegment(value: 0.8, label: Text('80 %')),
+                      ButtonSegment(value: 0.85, label: Text('85 %')),
+                      ButtonSegment(value: 0.9, label: Text('90 %')),
+                      ButtonSegment(value: 0.95, label: Text('95 %')),
+                    ],
+                    selected: {currentRet},
+                    showSelectedIcon: false,
+                    onSelectionChanged: (sel) {
+                      if (sel.isNotEmpty) srs.setConfig(retention: sel.first);
+                    },
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.x2),
+                Text(
+                  'Höher = häufigere Wiederholungen, bessere Erinnerung.',
+                  style: TextStyle(
+                      color: surfaces.textMuted, fontSize: 12.5, height: 1.4),
+                ),
+                const SizedBox(height: AppSpacing.x2),
+                SwitchListTile(
+                  contentPadding: EdgeInsets.zero,
+                  value: srs.fuzzEnabled,
+                  onChanged: (v) => srs.setConfig(fuzz: v),
+                  title: const Text('Intervalle streuen',
+                      style: TextStyle(fontSize: 14)),
+                  subtitle: Text(
+                    'Verteilt die tägliche Last gleichmäßiger (Load-Balancing).',
+                    style:
+                        TextStyle(color: surfaces.textMuted, fontSize: 12),
+                  ),
+                ),
+              ],
+            ],
+          );
+        },
+      ),
+    );
+  }
+}
+
+class _ReminderHapticsCard extends StatelessWidget {
+  const _ReminderHapticsCard();
+
+  @override
+  Widget build(BuildContext context) {
+    final settings = SettingsController.instance;
+    final surfaces = AppSurfaces.of(context);
+    return GlassCard(
+      padding: const EdgeInsets.symmetric(
+          horizontal: AppSpacing.x4, vertical: AppSpacing.x2),
+      child: ListenableBuilder(
+        listenable: settings,
+        builder: (context, _) => Column(
+          children: [
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              value: settings.reminderEnabled,
+              onChanged: (v) => settings.setReminder(enabled: v),
+              title: const Text('Tägliche Erinnerung'),
+              subtitle: Text(
+                'In-App-Hinweis, wenn du heute noch nicht gelernt hast.',
+                style: TextStyle(color: surfaces.textMuted, fontSize: 12.5),
+              ),
+            ),
+            if (settings.reminderEnabled)
+              Padding(
+                padding: const EdgeInsets.only(bottom: AppSpacing.x2),
+                child: Row(
+                  children: [
+                    Text('Ab', style: TextStyle(color: surfaces.textMuted)),
+                    Expanded(
+                      child: Slider(
+                        value: settings.reminderHour.toDouble(),
+                        min: 6,
+                        max: 23,
+                        divisions: 17,
+                        label: '${settings.reminderHour}:00 Uhr',
+                        onChanged: (v) =>
+                            settings.setReminder(hour: v.round()),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 64,
+                      child: Text('${settings.reminderHour}:00',
+                          textAlign: TextAlign.end,
+                          style: const TextStyle(fontWeight: FontWeight.w600)),
+                    ),
+                  ],
+                ),
+              ),
+            Divider(color: surfaces.border, height: 1),
+            SwitchListTile(
+              contentPadding: EdgeInsets.zero,
+              value: settings.hapticsEnabled,
+              onChanged: settings.setHaptics,
+              title: const Text('Haptisches Feedback'),
+              subtitle: Text(
+                'Vibration bei Bewertung, Treffern und Level-Ups.',
+                style: TextStyle(color: surfaces.textMuted, fontSize: 12.5),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _BackupCard extends StatelessWidget {
+  const _BackupCard();
+
+  Future<void> _export(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final jsonStr = await BackupService.exportJson(
+        exportedAt: DateTime.now().toIso8601String());
+    await Clipboard.setData(ClipboardData(text: jsonStr));
+    messenger.showSnackBar(const SnackBar(
+        content: Text('Backup in die Zwischenablage kopiert.')));
+  }
+
+  Future<void> _import(BuildContext context) async {
+    final controller = TextEditingController();
+    final messenger = ScaffoldMessenger.of(context);
+    final text = await showDialog<String>(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Backup importieren'),
+        content: TextField(
+          controller: controller,
+          maxLines: 6,
+          autofocus: true,
+          decoration: const InputDecoration(
+            hintText: 'Backup-JSON hier einfügen …',
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text('Abbrechen'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(context).pop(controller.text),
+            child: const Text('Importieren'),
+          ),
+        ],
+      ),
+    );
+    controller.dispose();
+    if (text == null || text.trim().isEmpty) return;
+    final res = await BackupService.importJson(text.trim());
+    messenger.showSnackBar(SnackBar(
+      content: Text(res.ok
+          ? '✓ Importiert (${res.restored} Bereiche wiederhergestellt).'
+          : '✗ ${res.error ?? 'Import fehlgeschlagen.'}'),
+    ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpacing.x4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Sichere deinen Lernstand (Karten, XP, Streak, Decks, Notizen …) '
+            'als JSON oder stelle ihn wieder her. Alles bleibt lokal.',
+            style: TextStyle(color: surfaces.textMuted, height: 1.4, fontSize: 13),
+          ),
+          const SizedBox(height: AppSpacing.x3),
+          Row(
+            children: [
+              Expanded(
+                child: FilledButton.tonalIcon(
+                  onPressed: () => _export(context),
+                  icon: const Icon(Icons.upload_rounded, size: 18),
+                  label: const Text('Exportieren'),
+                ),
+              ),
+              const SizedBox(width: AppSpacing.x3),
+              Expanded(
+                child: OutlinedButton.icon(
+                  onPressed: () => _import(context),
+                  icon: const Icon(Icons.download_rounded, size: 18),
+                  label: const Text('Importieren'),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }

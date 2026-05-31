@@ -76,6 +76,11 @@ export const sfx = {
     else tone({ freq: 330, dur: 0.18, type: 'triangle', decay: 0.16, gain: 0.18 });
   },
   unlock()   { chord([523, 659, 784, 1047], { dur: 0.3, type: 'triangle', decay: 0.24, gain: 0.22 }); },
+  // Triumphale Level-Up-Fanfare: schnelle Arpeggio-Treppe + heller Schluss-Akkord.
+  levelUp()  {
+    chord([523, 659, 784, 1047], { dur: 0.26, type: 'triangle', decay: 0.2, gain: 0.2 });
+    setTimeout(() => chord([784, 1047, 1319], { dur: 0.5, type: 'sine', decay: 0.42, gain: 0.2 }), 280);
+  },
   toggle()   { tone({ freq: 600, dur: 0.06, type: 'sine', decay: 0.05, gain: 0.12 }); }
 };
 

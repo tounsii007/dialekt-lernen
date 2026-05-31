@@ -31,6 +31,11 @@ class FavoritesStore extends ChangeNotifier {
   bool isFavorite(String dialektId, String ausdruckId) =>
       _keys.contains(_key(dialektId, ausdruckId));
 
+  Future<void> reload() async {
+    _loaded = false;
+    await load();
+  }
+
   /// Nur für Tests: setzt den In-Memory-Zustand zurück, damit load() erneut
   /// aus (gemockten) Prefs lesen kann.
   @visibleForTesting

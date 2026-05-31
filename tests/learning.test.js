@@ -44,12 +44,14 @@ describe('setLernstand / getLernstand', () => {
     assert.equal(state.gelernt['hessisch.h-001'], undefined);
   });
 
-  it('triggert SRS-Review (state.gelernt enthält ef/interval)', () => {
+  it('triggert SRS-Review (state.gelernt enthält Scheduling-Felder)', () => {
     setLernstand('hessisch', 'h-001', STATUS_LEARNED);
     const rec = state.gelernt['hessisch.h-001'];
-    assert.ok(rec.ef);
-    assert.ok(rec.interval !== undefined);
+    // Scheduler-agnostisch: due + interval sind immer da, plus algorithmus-
+    // spezifische Felder (FSRS: stability/difficulty, SM-2: ef).
     assert.ok(rec.due);
+    assert.ok(rec.interval !== undefined);
+    assert.ok(rec.stability !== undefined || rec.ef !== undefined);
   });
 });
 

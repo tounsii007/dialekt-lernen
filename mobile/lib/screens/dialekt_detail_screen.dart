@@ -1,19 +1,45 @@
 import 'package:flutter/material.dart';
 
+import '../data/achievements_store.dart';
 import '../data/models.dart';
+import '../data/notes_store.dart';
+import '../data/xp_store.dart';
+import '../services/tts_service.dart';
+import '../util/ipa.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
+import '../widgets/deck_note_actions.dart';
 import '../widgets/favorite_button.dart';
 import '../widgets/glass_card.dart';
 import '../widgets/speak_button.dart';
 
-class DialektDetailScreen extends StatelessWidget {
+class DialektDetailScreen extends StatefulWidget {
   const DialektDetailScreen({super.key, required this.dialekt});
 
   final Dialekt dialekt;
 
   @override
+  State<DialektDetailScreen> createState() => _DialektDetailScreenState();
+}
+
+class _DialektDetailScreenState extends State<DialektDetailScreen> {
+  @override
+  void initState() {
+    super.initState();
+    // Besuch erfassen → schaltet Entdecker-Achievements frei, vergibt XP.
+    final ach = AchievementsStore.instance;
+    final firstVisit = !ach.visitedIds.contains(widget.dialekt.id);
+    ach.markVisited(widget.dialekt.id).then((_) {
+      ach.evaluateFromStores();
+    });
+    if (firstVisit) {
+      XpStore.instance.award(XpReward.dialectVisit, 'dialect-visit');
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final dialekt = widget.dialekt;
     final surfaces = AppSurfaces.of(context);
     return Scaffold(
       body: AuroraBackground(
@@ -207,9 +233,164 @@ class _AusdruckTile extends StatelessWidget {
                 ),
               ),
             ],
+            const SizedBox(height: AppSpacing.x3),
+            _Phonetics(
+              text: ausdruck.ausdruck,
+              dialektId: dialektId,
+              lang: lang,
+              accent: accent,
+            ),
+            const SizedBox(height: AppSpacing.x3),
+            _TileActions(
+              dialektId: dialektId,
+              ausdruckId: ausdruck.id,
+              title: ausdruck.ausdruck,
+              accent: accent,
+            ),
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Aussprache-Hilfe: IPA-Transkription, Silbentrennung und Slow-Mo-Wiedergabe.
+class _Phonetics extends StatelessWidget {
+  const _Phonetics({
+    required this.text,
+    required this.dialektId,
+    required this.lang,
+    required this.accent,
+  });
+
+  final String text;
+  final String dialektId;
+  final String lang;
+  final Color accent;
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    final ipa = formatIpa(text, dialektId);
+    final syllables = splitSyllables(text);
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(AppSpacing.x3),
+      decoration: BoxDecoration(
+        color: surfaces.surface.withValues(alpha: 0.5),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        border: Border.all(color: surfaces.border),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(ipa,
+                    style: TextStyle(fontSize: 14.5, color: accent)),
+                if (syllables.length > 1) ...[
+                  const SizedBox(height: 3),
+                  Text(
+                    syllables.join(' · '),
+                    style:
+                        TextStyle(fontSize: 12.5, color: surfaces.textMuted),
+                  ),
+                ],
+              ],
+            ),
+          ),
+          IconButton(
+            visualDensity: VisualDensity.compact,
+            tooltip: 'Langsam vorlesen',
+            onPressed: () => TtsService.instance.speakSlow(text, lang: lang),
+            icon: Icon(Icons.slow_motion_video_rounded,
+                size: 20, color: surfaces.textMuted),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Notiz- und Deck-Aktionen am Fuß eines aufgeklappten Ausdrucks.
+class _TileActions extends StatelessWidget {
+  const _TileActions({
+    required this.dialektId,
+    required this.ausdruckId,
+    required this.title,
+    required this.accent,
+  });
+
+  final String dialektId;
+  final String ausdruckId;
+  final String title;
+  final Color accent;
+
+  @override
+  Widget build(BuildContext context) {
+    final surfaces = AppSurfaces.of(context);
+    return ListenableBuilder(
+      listenable: NotesStore.instance,
+      builder: (context, _) {
+        final note = NotesStore.instance.getNote(dialektId, ausdruckId);
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (note.isNotEmpty)
+              Container(
+                width: double.infinity,
+                margin: const EdgeInsets.only(bottom: AppSpacing.x2),
+                padding: const EdgeInsets.all(AppSpacing.x3),
+                decoration: BoxDecoration(
+                  color: AppColors.warm.withValues(alpha: 0.1),
+                  borderRadius: BorderRadius.circular(AppRadii.sm),
+                  border: Border.all(
+                      color: AppColors.warm.withValues(alpha: 0.35)),
+                ),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('📝 ', style: TextStyle(fontSize: 13)),
+                    Expanded(
+                      child: Text(note,
+                          style: const TextStyle(fontSize: 13, height: 1.4)),
+                    ),
+                  ],
+                ),
+              ),
+            Row(
+              children: [
+                TextButton.icon(
+                  onPressed: () => showNoteEditor(
+                    context,
+                    dialektId: dialektId,
+                    ausdruckId: ausdruckId,
+                    title: title,
+                  ),
+                  icon: Icon(
+                      note.isEmpty
+                          ? Icons.note_add_outlined
+                          : Icons.edit_note_rounded,
+                      size: 18),
+                  label: Text(note.isEmpty ? 'Notiz' : 'Notiz bearbeiten'),
+                  style: TextButton.styleFrom(foregroundColor: surfaces.textMuted),
+                ),
+                const SizedBox(width: AppSpacing.x2),
+                TextButton.icon(
+                  onPressed: () => showAddToDeckSheet(
+                    context,
+                    (dialektId: dialektId, id: ausdruckId),
+                  ),
+                  icon: const Icon(Icons.playlist_add_rounded, size: 18),
+                  label: const Text('Deck'),
+                  style: TextButton.styleFrom(foregroundColor: surfaces.textMuted),
+                ),
+              ],
+            ),
+          ],
+        );
+      },
     );
   }
 }

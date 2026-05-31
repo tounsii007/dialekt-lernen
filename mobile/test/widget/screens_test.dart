@@ -40,6 +40,11 @@ void main() {
 
   testWidgets('HomeScreen rendert Hero, Stats und Dialekt-Vorschau',
       (tester) async {
+    // Großes Viewport, damit die nun mit Fortschritts-HUD längere Seite alle
+    // Sektionen gleichzeitig layoutet (ListView baut Off-Screen-Kinder sonst
+    // nicht).
+    await tester.binding.setSurfaceSize(const Size(1200, 2900));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
     await _pump(tester, HomeScreen(onOpenTab: (_) {}));
     expect(find.text('Beliebte Dialekte'), findsOneWidget);
     expect(find.text('Dialekte'), findsWidgets);

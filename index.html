@@ -15,7 +15,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet" /></noscript>
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Ausgeliefert wird minifiziertes CSS (Quelle: styles.css → `npm run minify-css`). -->
+  <link rel="stylesheet" href="styles.min.css" />
+  <!-- JS-Entry früh anstoßen (parallel zu CSS/Fonts) für schnelleren Start. -->
+  <link rel="modulepreload" href="js/app.js" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" href="./icons/icon.svg" />
   <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
@@ -72,6 +75,9 @@
         <a href="#/" data-route="home" class="nav-link"><span>Start</span></a>
         <a href="#/entdecken" data-route="entdecken" class="nav-link"><span>Entdecken</span></a>
         <a href="#/lernen" data-route="lernen" class="nav-link"><span>Lernen</span></a>
+        <a href="#/lernpfad" data-route="lernpfad" class="nav-link"><span>Lernpfad</span></a>
+        <a href="#/shadowing" data-route="shadowing" class="nav-link"><span>Shadowing</span></a>
+        <a href="#/klangpaare" data-route="klangpaare" class="nav-link"><span>Klangpaare</span></a>
         <a href="#/quiz" data-route="quiz" class="nav-link"><span>Quiz</span></a>
         <a href="#/spiele" data-route="spiele" class="nav-link"><span>Spiele</span></a>
         <a href="#/idiome" data-route="idiome" class="nav-link"><span>Idiome</span></a>
