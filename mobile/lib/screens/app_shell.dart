@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import 'entdecken_screen.dart';
 import 'favoriten_screen.dart';
@@ -40,17 +41,17 @@ class _AppShellState extends State<AppShell> {
 }
 
 class _NavItem {
-  const _NavItem(this.icon, this.label);
+  const _NavItem(this.icon, this.labelKey);
   final IconData icon;
-  final String label;
+  final String labelKey;
 }
 
 const _items = <_NavItem>[
-  _NavItem(Icons.home_rounded, 'Start'),
-  _NavItem(Icons.explore_rounded, 'Entdecken'),
-  _NavItem(Icons.style_rounded, 'Lernen'),
-  _NavItem(Icons.quiz_rounded, 'Quiz'),
-  _NavItem(Icons.favorite_rounded, 'Favoriten'),
+  _NavItem(Icons.home_rounded, 'nav.home'),
+  _NavItem(Icons.explore_rounded, 'nav.entdecken'),
+  _NavItem(Icons.style_rounded, 'nav.lernen'),
+  _NavItem(Icons.quiz_rounded, 'nav.quiz'),
+  _NavItem(Icons.favorite_rounded, 'nav.favoriten'),
 ];
 
 class _BottomBar extends StatelessWidget {
@@ -140,7 +141,7 @@ class _BarButton extends StatelessWidget {
               child: Icon(item.icon, color: Colors.white, size: 24),
             ),
             const SizedBox(height: 2),
-            Text(item.label,
+            Text(SettingsController.instance.t(item.labelKey),
                 style: TextStyle(fontSize: 10, color: color)),
           ],
         ),
@@ -156,7 +157,7 @@ class _BarButton extends StatelessWidget {
           Icon(item.icon, color: color, size: 24),
           const SizedBox(height: 4),
           Text(
-            item.label,
+            SettingsController.instance.t(item.labelKey),
             style: TextStyle(
               fontSize: 10,
               color: color,

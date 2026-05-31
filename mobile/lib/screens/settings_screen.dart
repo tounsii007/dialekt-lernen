@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../data/repository.dart';
 import '../data/srs_store.dart';
+import '../state/i18n.dart';
 import '../state/settings_controller.dart';
 import '../theme/app_theme.dart';
 import '../widgets/aurora_background.dart';
@@ -29,14 +30,14 @@ class SettingsScreen extends StatelessWidget {
                     icon: const Icon(Icons.arrow_back_rounded),
                   ),
                   const SizedBox(width: AppSpacing.x2),
-                  Text('Einstellungen',
+                  Text(settings.t('settings.title'),
                       style: Theme.of(context).textTheme.headlineMedium
                           ?.copyWith(fontSize: 24)),
                 ],
               ),
               const SizedBox(height: AppSpacing.x5),
 
-              Text('Darstellung',
+              Text(settings.t('settings.appearance'),
                   style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: AppSpacing.x3),
               GlassCard(
@@ -52,28 +53,28 @@ class SettingsScreen extends StatelessWidget {
                             Icon(Icons.palette_rounded,
                                 size: 20, color: AppColors.brand),
                             const SizedBox(width: AppSpacing.x3),
-                            const Text('Design'),
+                            Text(settings.t('settings.design')),
                           ],
                         ),
                         const SizedBox(height: AppSpacing.x3),
                         SizedBox(
                           width: double.infinity,
                           child: SegmentedButton<ThemeMode>(
-                            segments: const [
+                            segments: [
                               ButtonSegment(
                                 value: ThemeMode.system,
-                                label: Text('System'),
-                                icon: Icon(Icons.brightness_auto_rounded),
+                                label: Text(settings.t('theme.system')),
+                                icon: const Icon(Icons.brightness_auto_rounded),
                               ),
                               ButtonSegment(
                                 value: ThemeMode.light,
-                                label: Text('Hell'),
-                                icon: Icon(Icons.light_mode_rounded),
+                                label: Text(settings.t('theme.light')),
+                                icon: const Icon(Icons.light_mode_rounded),
                               ),
                               ButtonSegment(
                                 value: ThemeMode.dark,
-                                label: Text('Dunkel'),
-                                icon: Icon(Icons.dark_mode_rounded),
+                                label: Text(settings.t('theme.dark')),
+                                icon: const Icon(Icons.dark_mode_rounded),
                               ),
                             ],
                             selected: {settings.themeMode},
@@ -92,13 +93,67 @@ class SettingsScreen extends StatelessWidget {
               ),
               const SizedBox(height: AppSpacing.x6),
 
-              Text('Lernalgorithmus',
+              Text(settings.t('settings.language'),
+                  style: Theme.of(context).textTheme.titleLarge),
+              const SizedBox(height: AppSpacing.x3),
+              GlassCard(
+                padding: const EdgeInsets.all(AppSpacing.x4),
+                child: ListenableBuilder(
+                  listenable: settings,
+                  builder: (context, _) => Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.translate_rounded,
+                              size: 20, color: AppColors.brand),
+                          const SizedBox(width: AppSpacing.x3),
+                          Text(settings.t('settings.language')),
+                        ],
+                      ),
+                      const SizedBox(height: AppSpacing.x3),
+                      SizedBox(
+                        width: double.infinity,
+                        child: SegmentedButton<AppLang>(
+                          segments: const [
+                            ButtonSegment(
+                              value: AppLang.de,
+                              label: Text('Deutsch'),
+                            ),
+                            ButtonSegment(
+                              value: AppLang.en,
+                              label: Text('English'),
+                            ),
+                          ],
+                          selected: {settings.lang},
+                          showSelectedIcon: false,
+                          onSelectionChanged: (sel) {
+                            if (sel.isNotEmpty) settings.setLang(sel.first);
+                          },
+                        ),
+                      ),
+                      const SizedBox(height: AppSpacing.x2),
+                      Text(
+                        settings.t('settings.language.note'),
+                        style: TextStyle(
+                            color: surfaces.textMuted,
+                            fontSize: 12.5,
+                            height: 1.4),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: AppSpacing.x6),
+
+              Text(settings.t('settings.scheduler'),
                   style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: AppSpacing.x3),
               const _LearningAlgoCard(),
               const SizedBox(height: AppSpacing.x6),
 
-              Text('Über', style: Theme.of(context).textTheme.titleLarge),
+              Text(settings.t('settings.about'),
+                  style: Theme.of(context).textTheme.titleLarge),
               const SizedBox(height: AppSpacing.x3),
               GlassCard(
                 padding: const EdgeInsets.all(AppSpacing.x4),
@@ -106,16 +161,15 @@ class SettingsScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     _InfoRow(
-                      label: 'Inhalte',
+                      label: settings.t('settings.content'),
                       value:
                           '${repo.dialekte.length} Dialekte · ${repo.totalAusdruecke} Ausdrücke',
                     ),
                     const SizedBox(height: AppSpacing.x3),
-                    _InfoRow(label: 'App', value: 'Dialekto · v1.0.0'),
+                    _InfoRow(label: settings.t('settings.app'), value: 'Dialekto · v1.0.0'),
                     const SizedBox(height: AppSpacing.x3),
                     Text(
-                      'Deutsche Dialekte lernen — Karteikarten, Quiz & mehr. '
-                      'Lokal, ohne Konto.',
+                      settings.t('settings.about.text'),
                       style: TextStyle(color: surfaces.textMuted, height: 1.5),
                     ),
                   ],
