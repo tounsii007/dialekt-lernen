@@ -122,13 +122,43 @@ function sanitizeProgress(p) {
   return out;
 }
 
+// Prototype-Pollution-Schutz: gefährliche Keys, die niemals aus einem
+// importierten Backup in den State übernommen werden dürfen.
+const UNSAFE_KEYS = new Set(['__proto__', 'constructor', 'prototype']);
+
+// Parst JSON mit einem Reviver, der __proto__/constructor/prototype an der
+// QUELLE entfernt (Reviver gibt undefined → Key wird verworfen). Das deckt
+// alle nachgelagerten Merge-/Spread-Pfade auf einmal ab, statt jede einzelne
+// dynamische Key-Zuweisung absichern zu müssen.
+function safeJsonParse(text) {
+  return JSON.parse(text, (key, value) => (UNSAFE_KEYS.has(key) ? undefined : value));
+}
+
+// Für bereits geparste Objekt-Eingaben (Nicht-String): rekursiv die gleichen
+// gefährlichen Keys entfernen. Greift nicht auf value['__proto__'] zu (das
+// würde den Prototyp-Getter auslösen) — UNSAFE_KEYS werden vorab übersprungen.
+function stripUnsafeKeys(value) {
+  if (Array.isArray(value)) return value.map(stripUnsafeKeys);
+  if (value && typeof value === 'object') {
+    const out = {};
+    for (const k of Object.keys(value)) {
+      if (UNSAFE_KEYS.has(k)) continue;
+      out[k] = stripUnsafeKeys(value[k]);
+    }
+    return out;
+  }
+  return value;
+}
+
 // Validiert und importiert ein Snapshot. Liefert {ok, error?}.
 // strategy:
 //   'replace' — überschreibt vorhandene Felder
 //   'merge'   — Favoriten/Notes vereinen, gelernt/streak/quizHistory mergen
 export function importState(jsonOrObject, { strategy = 'replace' } = {}) {
   try {
-    const obj = typeof jsonOrObject === 'string' ? JSON.parse(jsonOrObject) : jsonOrObject;
+    const obj = typeof jsonOrObject === 'string'
+      ? safeJsonParse(jsonOrObject)
+      : stripUnsafeKeys(jsonOrObject);
     if (!obj || obj.format !== 'dialekto') {
       return { ok: false, error: 'Format unbekannt (erwartet dialekto-Snapshot).' };
     }

@@ -371,3 +371,54 @@ describe('exportToCsv — Anki-kompatibel', () => {
     assert.doesNotMatch(lines[1], /Geh weg/);
   });
 });
+
+describe('importState — Prototype-Pollution-Schutz', () => {
+  beforeEach(() => { resetAllData(); });
+
+  it('verseucht Object.prototype NICHT über __proto__ im Import (merge)', () => {
+    const evil = JSON.stringify({
+      format: 'dialekto', version: 2,
+      data: {
+        gelernt: { '__proto__': { polluted: 'yes' }, 'hessisch.h-001': { last: 1, level: 2 } },
+        streak: { days: { '__proto__': 9, '2026-01-01': 3 } },
+        goals: { progress: { '__proto__': 5, '2026-01-01': 2 } },
+      },
+    });
+    const r = importState(evil, { strategy: 'merge' });
+    assert.equal(r.ok, true);
+    assert.equal(({}).polluted, undefined);
+    assert.equal([].polluted, undefined);
+    assert.equal(Object.prototype.polluted, undefined);
+  });
+
+  it('verseucht Object.prototype NICHT über __proto__ im Import (replace)', () => {
+    const evil = JSON.stringify({
+      format: 'dialekto', version: 2,
+      data: { notes: { '__proto__': { polluted: 'x' } }, achievements: { '__proto__': { y: 1 } } },
+    });
+    const r = importState(evil, { strategy: 'replace' });
+    assert.equal(r.ok, true);
+    assert.equal(({}).polluted, undefined);
+    assert.equal(Object.prototype.polluted, undefined);
+  });
+
+  it('entfernt __proto__ auch bei bereits geparster Objekt-Eingabe', () => {
+    const obj = { format: 'dialekto', version: 2, data: { streak: { days: {} } } };
+    // Eigenen __proto__-Key bewusst setzen (umgeht den Prototyp-Setter)
+    Object.defineProperty(obj.data, '__proto__', { value: { polluted: 1 }, enumerable: true, configurable: true });
+    const r = importState(obj, { strategy: 'merge' });
+    assert.equal(r.ok, true);
+    assert.equal(({}).polluted, undefined);
+  });
+
+  it('übernimmt legitime Daten trotz Schutz weiterhin korrekt', () => {
+    const good = JSON.stringify({
+      format: 'dialekto', version: 2,
+      data: { goals: { target: 7, progress: { '2026-01-01': 4 } } },
+    });
+    const r = importState(good, { strategy: 'replace' });
+    assert.equal(r.ok, true);
+    assert.equal(state.goals.target, 7);
+    assert.equal(state.goals.progress['2026-01-01'], 4);
+  });
+});
