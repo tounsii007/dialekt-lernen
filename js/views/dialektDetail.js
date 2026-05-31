@@ -10,6 +10,9 @@ import { findRelatedExpressions } from '../util/related-expressions.js';
 import { extractEtymology, hasEtymology } from '../util/etymology.js';
 import { formatIpa, splitSyllables } from '../util/ipa.js';
 import { sfx } from '../util/sounds.js';
+import { confettiBurst } from '../util/motion.js';
+import { isRecordingSupported, startRecording } from '../util/recorder.js';
+import { syllableEnvelope, scorePronunciation, normalizeEnvelope } from '../util/audio-analysis.js';
 
 export function renderDialektDetail(root, dialektId) {
   root.innerHTML = '';
@@ -236,8 +239,135 @@ function renderPronunciationSection(a, dialekt) {
       onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5 }); } }, '🐢 Langsam')
   ));
 
+  // Aussprache-Übung (Mikrofon) erst beim Aufklappen bauen — spart bei großen
+  // Dialekten hunderte Canvas-Elemente im DOM. Nur wenn Aufnahme unterstützt wird.
+  if (isRecordingSupported() && syllables.length) {
+    let built = false;
+    sec.addEventListener('toggle', () => {
+      if (sec.open && !built) {
+        built = true;
+        body.appendChild(renderPracticeWidget(a, lang, syllables.length));
+      }
+    });
+  }
+
   sec.appendChild(body);
   return sec;
+}
+
+// Zeichnet erwartete (blasse Fläche) und aufgenommene (kräftige Linie) Hüllkurve.
+function drawEnvelopes(canvas, refEnv, userEnv) {
+  const ctx = canvas.getContext && canvas.getContext('2d');
+  if (!ctx) return;
+  const W = canvas.width, H = canvas.height, pad = 6;
+  let brand = '#7c5cff';
+  try {
+    const c = getComputedStyle(canvas).getPropertyValue('--brand').trim();
+    if (c) brand = c;
+  } catch {}
+  ctx.clearRect(0, 0, W, H);
+  const plot = (env, { stroke, fill, lw } = {}) => {
+    if (!env || !env.length) return;
+    const n = env.length;
+    const x = (i) => pad + (i / Math.max(1, n - 1)) * (W - 2 * pad);
+    const y = (v) => H - pad - Math.max(0, Math.min(1, v)) * (H - 2 * pad);
+    ctx.beginPath();
+    ctx.moveTo(x(0), y(env[0]));
+    for (let i = 1; i < n; i++) ctx.lineTo(x(i), y(env[i]));
+    if (fill) {
+      ctx.lineTo(x(n - 1), H - pad);
+      ctx.lineTo(x(0), H - pad);
+      ctx.closePath();
+      ctx.fillStyle = fill;
+      ctx.fill();
+    } else {
+      ctx.strokeStyle = stroke;
+      ctx.lineWidth = lw || 2;
+      ctx.lineJoin = 'round';
+      ctx.stroke();
+    }
+  };
+  plot(refEnv, { fill: 'rgba(124,92,255,.16)' });
+  plot(userEnv ? normalizeEnvelope(userEnv) : null, { stroke: brand, lw: 2.5 });
+}
+
+// Mikrofon-Übungs-Widget: aufnehmen, Rhythmus mit erwartetem Silbenmuster
+// vergleichen, Score zeigen. Speichert/sendet kein Audio (siehe recorder.js).
+function renderPracticeWidget(a, lang, sylCount) {
+  const BUCKETS = 48;
+  const refEnv = syllableEnvelope(sylCount, BUCKETS);
+
+  const wrap = el('div', { class: 'pron-practice' });
+  wrap.appendChild(el('div', { class: 'pron-practice-head' },
+    el('span', { class: 'pron-practice-icon' }, '🎙️'),
+    el('span', { class: 'pron-practice-title' }, 'Rhythmus üben'),
+    el('span', { class: 'pron-practice-hint' }, `${sylCount} Silbe${sylCount === 1 ? '' : 'n'}`)
+  ));
+
+  const canvas = el('canvas', { class: 'pron-canvas', width: 480, height: 96, ariaHidden: 'true' });
+  wrap.appendChild(canvas);
+  drawEnvelopes(canvas, refEnv, null);
+
+  const status = el('div', { class: 'pron-practice-status' },
+    'Erst anhören, dann aufnehmen und nachsprechen.');
+  const badge = el('div', { class: 'pron-score-badge' });
+  const recBtn = el('button', { class: 'btn btn-primary pron-rec' }, '🎙️ Aufnehmen');
+
+  wrap.appendChild(el('div', { class: 'pron-practice-foot' }, recBtn, badge));
+  wrap.appendChild(status);
+
+  let controller = null;
+  let recording = false;
+  const live = [];
+
+  function showScore({ score, userPeaks, expectedSyllables }) {
+    badge.innerHTML = '';
+    const tone = score >= 80 ? 'high' : score >= 55 ? 'mid' : 'low';
+    badge.className = `pron-score-badge is-shown tone-${tone}`;
+    badge.appendChild(el('span', { class: 'pron-score-num' }, score + '%'));
+    badge.appendChild(el('span', { class: 'pron-score-sub' },
+      `${userPeaks}/${expectedSyllables} Silben`));
+    status.textContent = score >= 80 ? 'Super Rhythmus! 🎉'
+      : score >= 55 ? 'Schon nah dran — versuch es nochmal.'
+      : 'Achte auf die Silben-Betonung.';
+    if (score >= 80) { sfx.unlock(); confettiBurst(badge, { count: 18 }); }
+  }
+
+  async function start() {
+    live.length = 0;
+    recording = true;
+    badge.classList.remove('is-shown');
+    recBtn.classList.add('is-recording');
+    recBtn.textContent = '⏹ Stoppen';
+    status.textContent = 'Aufnahme läuft… sprich jetzt nach.';
+    sfx.click();
+    try {
+      controller = await startRecording({
+        maxMs: Math.min(8000, Math.max(2500, sylCount * 750)),
+        onLevel: (lvl) => { live.push(lvl); drawEnvelopes(canvas, refEnv, live); },
+        onStop: ({ envelope }) => {
+          recording = false;
+          controller = null;
+          recBtn.classList.remove('is-recording');
+          recBtn.textContent = '🎙️ Nochmal';
+          drawEnvelopes(canvas, refEnv, envelope);
+          showScore(scorePronunciation(envelope, sylCount, { buckets: BUCKETS }));
+        },
+      });
+    } catch {
+      recording = false;
+      recBtn.classList.remove('is-recording');
+      recBtn.textContent = '🎙️ Aufnehmen';
+      status.textContent = 'Mikrofon nicht verfügbar oder Zugriff verweigert.';
+    }
+  }
+
+  recBtn.addEventListener('click', () => {
+    if (recording) { if (controller) controller.stop(); return; }
+    start();
+  });
+
+  return wrap;
 }
 
 // Etymologie-Bereich: zeigt extrahierte Wortherkunfts-Sätze aus dem Bedeutungs-Text
