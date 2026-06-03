@@ -24,6 +24,7 @@ import { initChallenges } from './store/challenges.js';
 import { initQuests } from './store/quests.js';
 import { initLeague, getLeagueResult, clearLeagueResult, LEAGUE_TIERS } from './store/league.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
+import { initSettings } from './views/settings.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
 
@@ -108,6 +109,27 @@ function initPaletteToggle() {
       })
       .catch(() => {});
   });
+}
+
+// „⚙"-Werkzeug-Popover in der Topbar: Toggle + Außenklick/Escape schließen.
+// Die enthaltenen Buttons (Palette/Sound/…) behalten ihre eigenen Handler (per ID).
+function initToolsMenu() {
+  const tools = document.querySelector('.topbar-tools');
+  if (!tools) return;
+  const btn = document.getElementById('toolsToggle');
+  const menu = tools.querySelector('.topbar-tools-menu');
+  if (!btn || !menu) return;
+  const setOpen = (open) => {
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) document.dispatchEvent(new CustomEvent('dialekto:menuOpen', { detail: menu }));
+  };
+  btn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(menu.hidden); });
+  menu.addEventListener('click', () => setOpen(false));
+  document.addEventListener('click', (e) => { if (!tools.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  // Anderes Topbar-Menü öffnet → dieses schließen.
+  document.addEventListener('dialekto:menuOpen', (e) => { if (e.detail !== menu) setOpen(false); });
 }
 
 function mountXpBar() {
@@ -263,6 +285,7 @@ function init() {
   initRestartTour();
   initSoundToggle();
   initPaletteToggle();
+  initSettings();
 
   // 4. Visual effects (run after layout exists)
   initScrollProgress();

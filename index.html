@@ -79,13 +79,21 @@
         <a href="#/shadowing" data-route="shadowing" class="nav-link"><span>Shadowing</span></a>
         <a href="#/klangpaare" data-route="klangpaare" class="nav-link"><span>Klangpaare</span></a>
         <a href="#/quiz" data-route="quiz" class="nav-link"><span>Quiz</span></a>
-        <a href="#/spiele" data-route="spiele" class="nav-link"><span>Spiele</span></a>
-        <a href="#/idiome" data-route="idiome" class="nav-link"><span>Idiome</span></a>
-        <a href="#/lektionen" data-route="lektionen" class="nav-link"><span>Lektionen</span></a>
-        <a href="#/vergleich" data-route="vergleich" class="nav-link"><span>Vergleich</span></a>
-        <a href="#/karte" data-route="karte" class="nav-link"><span>Karte</span></a>
-        <a href="#/decks" data-route="decks" class="nav-link"><span>Decks</span></a>
         <a href="#/favoriten" data-route="favoriten" class="nav-link"><span>Favoriten</span></a>
+        <div class="nav-more">
+          <button type="button" class="nav-link nav-more-btn" aria-haspopup="true" aria-expanded="false" aria-label="Weitere Bereiche">
+            <span>Mehr</span>
+            <svg class="nav-more-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="nav-more-menu" role="menu" hidden>
+            <a href="#/spiele" data-route="spiele" class="nav-more-link" role="menuitem"><span>Spiele</span></a>
+            <a href="#/idiome" data-route="idiome" class="nav-more-link" role="menuitem"><span>Idiome</span></a>
+            <a href="#/lektionen" data-route="lektionen" class="nav-more-link" role="menuitem"><span>Lektionen</span></a>
+            <a href="#/vergleich" data-route="vergleich" class="nav-more-link" role="menuitem"><span>Vergleich</span></a>
+            <a href="#/karte" data-route="karte" class="nav-more-link" role="menuitem"><span>Karte</span></a>
+            <a href="#/decks" data-route="decks" class="nav-more-link" role="menuitem"><span>Decks</span></a>
+          </div>
+        </div>
       </nav>
 
       <div class="topbar-actions">
@@ -95,22 +103,13 @@
           <span class="search-trigger-text">Suchen oder springen…</span>
           <kbd class="kbd search-trigger-kbd">S</kbd>
         </button>
-        <button type="button" id="paletteToggle" class="icon-btn palette-toggle" aria-label="Farbpalette wählen" title="Farbpalette">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 22a10 10 0 0 1 0-20 9 9 0 0 1 9 9c0 2.5-2 4-4 4h-2a2 2 0 0 0-1.4 3.4A1.7 1.7 0 0 1 12 22z"/></svg>
-        </button>
-        <a href="#/favoriten" id="notifyShortcut" class="icon-btn notify-shortcut" aria-label="Benachrichtigungen verwalten" title="Erinnerung verwalten">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
-        </a>
-        <button type="button" id="soundToggle" class="icon-btn sound-toggle" aria-label="Sounds ein/aus" title="Sounds (M)">
-          <svg class="icon-sound-on" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M19 6a8 8 0 0 1 0 12"/></svg>
-          <svg class="icon-sound-off" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
-        </button>
-        <button type="button" id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
+        <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
           <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <button type="button" id="dyslexicToggle" class="icon-btn dyslexic-toggle" aria-label="Dyslexie-freundliche Schrift" title="Dyslexie-freundliche Schrift" aria-pressed="false">Aa</button>
-        <button type="button" id="langToggle" class="icon-btn lang-toggle" aria-label="Sprache wechseln" title="Sprache wechseln">DE</button>
+        <button type="button" id="toolsToggle" class="icon-btn settings-toggle" aria-haspopup="dialog" aria-label="Einstellungen" title="Einstellungen">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </button>
       </div>
 
       <button type="button" id="menuToggle" class="icon-btn menu-toggle" aria-label="Menü">

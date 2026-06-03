@@ -129,7 +129,9 @@ function withDefaults(loaded) {
     // passend zum Dialekt). rate/pitch werden beim Setzen geklemmt.
     speech:       loaded.speech && typeof loaded.speech === 'object'
                     ? { rate: 0.92, pitch: 1, voiceURI: null, ...loaded.speech }
-                    : { rate: 0.92, pitch: 1, voiceURI: null }
+                    : { rate: 0.92, pitch: 1, voiceURI: null },
+    settings:     loaded.settings && typeof loaded.settings === 'object' && !Array.isArray(loaded.settings)
+                    ? loaded.settings : {}
   };
 }
 

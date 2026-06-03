@@ -82,6 +82,20 @@ describe('el — Element-Konstruktor', () => {
     assert.equal(e.style.fontSize, '12px');
   });
 
+  it('style setzt CSS-Custom-Properties (--var) via setProperty', () => {
+    // Regression: Object.assign(style, {'--x':…}) ignoriert Custom-Props still.
+    const e = el('div', { style: { '--dc': '#e63946', '--progress': '50%', width: '50%' } });
+    assert.equal(e.style.getPropertyValue('--dc'), '#e63946');
+    assert.equal(e.style.getPropertyValue('--progress'), '50%');
+    assert.equal(e.style.width, '50%');
+  });
+
+  it('style: null/undefined wirft nicht (Object.entries-Guard)', () => {
+    // Regression: typeof null === 'object' → früher crashte Object.entries(null).
+    assert.doesNotThrow(() => el('div', { style: null }));
+    assert.doesNotThrow(() => el('div', { style: undefined }));
+  });
+
   it('Children: einzelnes Element', () => {
     const child = el('span');
     const parent = el('div', {}, child);

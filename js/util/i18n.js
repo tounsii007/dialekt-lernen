@@ -14,7 +14,13 @@
 
 const STORAGE_KEY = 'dialekto:lang';
 const DEFAULT_LANG = 'de';
-const SUPPORTED = ['de', 'en'];
+export const SUPPORTED = ['de', 'en', 'tr', 'fr', 'es'];
+export const LANGUAGE_NAMES = {
+  de: 'Deutsch', en: 'English', tr: 'Türkçe', fr: 'Français', es: 'Español'
+};
+export const LANGUAGE_FLAGS = {
+  de: '🇩🇪', en: '🇬🇧', tr: '🇹🇷', fr: '🇫🇷', es: '🇪🇸'
+};
 
 const STRINGS = {
   de: {
@@ -154,6 +160,60 @@ const STRINGS = {
     'section.heuteFaellig':        'Due today',
     'section.dailyExpr':           'Expression of the day',
   },
+
+  tr: {
+    'nav.home': 'Ana Sayfa', 'nav.entdecken': 'Keşfet', 'nav.lernen': 'Öğren',
+    'nav.quiz': 'Test', 'nav.vergleich': 'Karşılaştır', 'nav.karte': 'Harita', 'nav.favoriten': 'Favoriler',
+    'brand.name': 'Dialekto', 'brand.sub': 'Almanca lehçelerini öğren',
+    'home.title': 'Dialekto', 'home.hero.eyebrow': 'Alman dil çeşitliliğini keşfedin',
+    'home.hero.cta.discover': 'Lehçeleri keşfet', 'home.hero.cta.learn': 'Kartlarla öğren', 'home.hero.cta.quiz': 'Teste başla',
+    'stats.dialekte': 'Lehçeler', 'stats.ausdruecke': 'İfadeler', 'stats.gelernt': 'öğrenildi', 'stats.streak': 'gün serisi',
+    'btn.start': 'Öğrenmeye başla', 'btn.share': 'Kartı paylaş', 'btn.close': 'Kapat', 'btn.cancel': 'İptal',
+    'btn.save': 'Kaydet', 'btn.copy': 'Kopyala', 'btn.download': 'İndir', 'btn.continue': 'Devam', 'btn.back': 'Geri',
+    'topbar.search': 'Ara veya geç…', 'topbar.theme': 'Açık/koyu değiştir', 'topbar.palette': 'Renk paleti',
+    'topbar.sound': 'Sesi aç/kapat', 'topbar.lang': 'Dili değiştir', 'topbar.dyslexic': 'Disleksi dostu yazı',
+    'theme.light': 'Açık', 'theme.dark': 'Koyu', 'theme.auto': 'Otomatik', 'theme.contrast': 'Yüksek kontrast',
+    'toast.sound.on': 'Sesler açık', 'toast.sound.off': 'Sesler kapalı', 'toast.lang.changed': 'Dil değiştirildi',
+    'toast.dyslexic.on': 'Disleksi yazısı açık', 'toast.dyslexic.off': 'Disleksi yazısı kapalı',
+    'toast.copied': 'Panoya kopyalandı', 'toast.saved': 'Kaydedildi', 'toast.error': 'Bir hata oluştu',
+    'section.alleDialekte': 'Tüm lehçeler', 'section.dashboard': 'Panonuz', 'section.heuteFaellig': 'Bugün vadesi gelen', 'section.dailyExpr': 'Günün ifadesi',
+  },
+
+  fr: {
+    'nav.home': 'Accueil', 'nav.entdecken': 'Découvrir', 'nav.lernen': 'Apprendre',
+    'nav.quiz': 'Quiz', 'nav.vergleich': 'Comparer', 'nav.karte': 'Carte', 'nav.favoriten': 'Favoris',
+    'brand.name': 'Dialekto', 'brand.sub': 'Apprendre les dialectes allemands',
+    'home.title': 'Dialekto', 'home.hero.eyebrow': 'Découvrez la diversité linguistique allemande',
+    'home.hero.cta.discover': 'Découvrir les dialectes', 'home.hero.cta.learn': 'Réviser les cartes', 'home.hero.cta.quiz': 'Lancer le quiz',
+    'stats.dialekte': 'Dialectes', 'stats.ausdruecke': 'Expressions', 'stats.gelernt': 'appris', 'stats.streak': 'jours de suite',
+    'btn.start': 'Commencer', 'btn.share': 'Partager la carte', 'btn.close': 'Fermer', 'btn.cancel': 'Annuler',
+    'btn.save': 'Enregistrer', 'btn.copy': 'Copier', 'btn.download': 'Télécharger', 'btn.continue': 'Continuer', 'btn.back': 'Retour',
+    'topbar.search': 'Rechercher ou aller à…', 'topbar.theme': 'Basculer clair/sombre', 'topbar.palette': 'Palette de couleurs',
+    'topbar.sound': 'Activer/couper le son', 'topbar.lang': 'Changer de langue', 'topbar.dyslexic': 'Police adaptée à la dyslexie',
+    'theme.light': 'Clair', 'theme.dark': 'Sombre', 'theme.auto': 'Auto', 'theme.contrast': 'Contraste élevé',
+    'toast.sound.on': 'Sons activés', 'toast.sound.off': 'Sons coupés', 'toast.lang.changed': 'Langue modifiée',
+    'toast.dyslexic.on': 'Police dyslexie activée', 'toast.dyslexic.off': 'Police dyslexie désactivée',
+    'toast.copied': 'Copié dans le presse-papiers', 'toast.saved': 'Enregistré', 'toast.error': "Une erreur s'est produite",
+    'section.alleDialekte': 'Tous les dialectes', 'section.dashboard': 'Votre tableau de bord', 'section.heuteFaellig': 'À réviser aujourd’hui', 'section.dailyExpr': 'Expression du jour',
+  },
+
+  es: {
+    'nav.home': 'Inicio', 'nav.entdecken': 'Descubrir', 'nav.lernen': 'Aprender',
+    'nav.quiz': 'Quiz', 'nav.vergleich': 'Comparar', 'nav.karte': 'Mapa', 'nav.favoriten': 'Favoritos',
+    'brand.name': 'Dialekto', 'brand.sub': 'Aprende dialectos alemanes',
+    'home.title': 'Dialekto', 'home.hero.eyebrow': 'Descubre la diversidad lingüística alemana',
+    'home.hero.cta.discover': 'Descubrir dialectos', 'home.hero.cta.learn': 'Estudiar tarjetas', 'home.hero.cta.quiz': 'Empezar quiz',
+    'stats.dialekte': 'Dialectos', 'stats.ausdruecke': 'Expresiones', 'stats.gelernt': 'aprendidas', 'stats.streak': 'días seguidos',
+    'btn.start': 'Empezar a aprender', 'btn.share': 'Compartir tarjeta', 'btn.close': 'Cerrar', 'btn.cancel': 'Cancelar',
+    'btn.save': 'Guardar', 'btn.copy': 'Copiar', 'btn.download': 'Descargar', 'btn.continue': 'Continuar', 'btn.back': 'Atrás',
+    'topbar.search': 'Buscar o saltar…', 'topbar.theme': 'Cambiar claro/oscuro', 'topbar.palette': 'Paleta de colores',
+    'topbar.sound': 'Activar/desactivar sonido', 'topbar.lang': 'Cambiar idioma', 'topbar.dyslexic': 'Fuente para dislexia',
+    'theme.light': 'Claro', 'theme.dark': 'Oscuro', 'theme.auto': 'Auto', 'theme.contrast': 'Alto contraste',
+    'toast.sound.on': 'Sonidos activados', 'toast.sound.off': 'Sonidos desactivados', 'toast.lang.changed': 'Idioma cambiado',
+    'toast.dyslexic.on': 'Fuente dislexia activada', 'toast.dyslexic.off': 'Fuente dislexia desactivada',
+    'toast.copied': 'Copiado al portapapeles', 'toast.saved': 'Guardado', 'toast.error': 'Ocurrió un error',
+    'section.alleDialekte': 'Todos los dialectos', 'section.dashboard': 'Tu panel', 'section.heuteFaellig': 'Para hoy', 'section.dailyExpr': 'Expresión del día',
+  },
 };
 
 function safeStorage() {
@@ -218,7 +278,8 @@ export function setLang(lang) {
  * Zyklus DE → EN → DE.
  */
 export function cycleLang() {
-  const next = currentLang === 'de' ? 'en' : 'de';
+  const i = SUPPORTED.indexOf(currentLang);
+  const next = SUPPORTED[(i + 1) % SUPPORTED.length] || DEFAULT_LANG;
   setLang(next);
   return next;
 }

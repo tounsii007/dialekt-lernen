@@ -54,10 +54,55 @@ export function syncMobileNav() {
   });
 }
 
+// Aktuelle Route aus dem Hash (erstes Segment), Default 'home'.
+function currentRoute() {
+  const seg = (location.hash || '').replace(/^#\/?/, '').split(/[/?]/)[0];
+  return seg || 'home';
+}
+
+// „Mehr"-Menü: markiert den aktiven Untereintrag + den Mehr-Button, falls die
+// aktuelle Route in der Überlauf-Gruppe liegt. Der Indikator nutzt dann den
+// Mehr-Button als Ziel (er trägt .nav-link).
+function syncMoreActive() {
+  const moreBtn = document.querySelector('.nav-more-btn');
+  if (!moreBtn) return;
+  const route = currentRoute();
+  let activeInMore = false;
+  document.querySelectorAll('.nav-more-link').forEach(a => {
+    const on = a.dataset.route === route;
+    a.classList.toggle('is-active', on);
+    if (on) activeInMore = true;
+  });
+  moreBtn.classList.toggle('is-active', activeInMore);
+}
+
+// Dropdown einmalig verdrahten (Toggle, Außenklick, Escape, Auswahl schließt).
+function wireMoreDropdown() {
+  const more = document.querySelector('.nav-more');
+  if (!more || more.dataset.bound) return;
+  more.dataset.bound = '1';
+  const btn = more.querySelector('.nav-more-btn');
+  const menu = more.querySelector('.nav-more-menu');
+  if (!btn || !menu) return;
+  const setOpen = (open) => {
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open) document.dispatchEvent(new CustomEvent('dialekto:menuOpen', { detail: menu }));
+  };
+  btn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(menu.hidden); });
+  menu.addEventListener('click', () => setOpen(false));
+  document.addEventListener('click', (e) => { if (!more.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  // Anderes Topbar-Menü öffnet → dieses schließen.
+  document.addEventListener('dialekto:menuOpen', (e) => { if (e.detail !== menu) setOpen(false); });
+}
+
 export function initNav() {
   const nav = $('.nav');
   if (!nav) return;
   decorateLinks();
+  wireMoreDropdown();
+  syncMoreActive();
 
   // Inject the sliding indicator behind the links
   if (!nav.querySelector('.nav-indicator')) {

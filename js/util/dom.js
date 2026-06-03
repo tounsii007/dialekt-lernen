@@ -7,8 +7,15 @@ function applyAttribute(elem, key, value) {
   if (key === 'class')   { elem.className = value; return; }
   if (key === 'html')    { elem.innerHTML = value; return; }
   if (key === 'dataset') { Object.assign(elem.dataset, value); return; }
-  if (key === 'style' && typeof value === 'object') {
-    Object.assign(elem.style, value);
+  if (key === 'style' && value && typeof value === 'object') {
+    // CSS-Custom-Properties (--foo) MÜSSEN über setProperty gesetzt werden —
+    // Object.assign(style, {'--foo': x}) ignoriert sie still (nur Standard-Props
+    // greifen). Sonst fielen z. B. --dc/--progress/--sc auf den Fallback zurück.
+    for (const [prop, val] of Object.entries(value)) {
+      if (val == null) continue;
+      if (prop.startsWith('--')) elem.style.setProperty(prop, val);
+      else elem.style[prop] = val;
+    }
     return;
   }
   if (key.startsWith('on') && typeof value === 'function') {
