@@ -320,7 +320,7 @@ function renderSessionSummary(host, queue, results, source, count) {
 
   const CIRC = 2 * Math.PI * 42;
   const dash = CIRC * (pct / 100);
-  const color = isGreat ? 'var(--accent)' : isFine ? 'var(--warm)' : 'hsl(0 70% 60%)';
+  const color = isGreat ? 'var(--accent)' : isFine ? 'var(--warm)' : 'var(--danger)';
   const NS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(NS, 'svg');
   svg.setAttribute('viewBox', '0 0 100 100');

@@ -143,8 +143,8 @@ function updateTimer(svg, remaining, total, circumference) {
   const dash = circumference * pct;
   fill.setAttribute('stroke-dasharray', `${dash.toFixed(2)} ${circumference.toFixed(2)}`);
   // Color shift: green → yellow → red
-  const color = remaining > total * 0.5 ? 'var(--accent)' : remaining > total * 0.25 ? 'var(--warm)' : 'hsl(0 70% 60%)';
+  const color = remaining > total * 0.5 ? 'var(--accent)' : remaining > total * 0.25 ? 'var(--warm)' : 'var(--danger)';
   fill.setAttribute('stroke', color);
   text.textContent = String(Math.max(0, remaining));
-  text.setAttribute('fill', remaining <= 5 ? 'hsl(0 70% 60%)' : 'currentColor');
+  text.setAttribute('fill', remaining <= 5 ? 'var(--danger)' : 'currentColor');
 }

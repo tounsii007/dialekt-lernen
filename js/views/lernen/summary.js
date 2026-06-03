@@ -27,7 +27,7 @@ export function renderSummary(finished, onRestart) {
     // Header with animated ring
     el('div', { class: 'summary-header', dataset: { reveal: 'zoom' } },
       el('div', { class: 'summary-ring-wrap' },
-        buildDonut(pctEasy, isGreat ? 'var(--accent)' : isFine ? 'var(--warm)' : 'hsl(0 70% 60%)', CIRCUMFERENCE),
+        buildDonut(pctEasy, isGreat ? 'var(--accent)' : isFine ? 'var(--warm)' : 'var(--danger)', CIRCUMFERENCE),
         el('div', { class: 'summary-ring-inner' },
           el('div', { class: 'summary-ring-pct' }, pctEasy + '%'),
           el('div', { class: 'summary-ring-label' }, 'Leicht')
@@ -75,7 +75,7 @@ export function renderSummary(finished, onRestart) {
     el('div', { class: 'summary-breakdown' },
       ratingBar('Leicht', easy, total, 'var(--accent)'),
       ratingBar('Mittel', med, total, 'var(--warm)'),
-      ratingBar('Schwer', hard, total, 'hsl(0 70% 60%)')
+      ratingBar('Schwer', hard, total, 'var(--danger)')
     ),
 
     // CTA Buttons

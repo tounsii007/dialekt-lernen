@@ -445,7 +445,7 @@ function renderWeekReview() {
     sparkRow.appendChild(el('div', { style: { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' } },
       el('div', { style: {
         width: '100%', height: h + 'px',
-        background: isToday ? 'var(--brand, #8b5cf6)' : 'rgba(139,92,246,0.3)',
+        background: isToday ? 'var(--brand)' : 'color-mix(in oklab, var(--brand) 30%, transparent)',
         borderRadius: '4px 4px 0 0',
         transition: 'all 0.3s ease',
       }, title: `${d.label}: ${d.activity + d.cardsReviewed} Aktionen` }),
