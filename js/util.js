@@ -10,7 +10,7 @@ export {
   listVoices, onVoicesChanged, getSpeechStatus,
   RATE_MIN, RATE_MAX, PITCH_MIN, PITCH_MAX
 } from './util/speech.js';
-export { parseHash, go } from './util/route.js';
+export { parseHash, go, toPublicPath, initLinkInterception, ROUTE_EVENT } from './util/route.js';
 export { toast } from './util/toast.js';
 export {
   observeReveals, observeCounters, animateCounter,

@@ -1,7 +1,7 @@
 // Floating dock navigation: decorate top + bottom nav with icons and
 // a sliding active indicator that animates between items.
 
-import { $, $$ } from './util.js';
+import { $, $$, parseHash } from './util.js';
 import { icon } from './util/icons.js';
 
 const NAV_ICONS = {
@@ -54,10 +54,9 @@ export function syncMobileNav() {
   });
 }
 
-// Aktuelle Route aus dem Hash (erstes Segment), Default 'home'.
+// Aktuelle Route (interner Key) aus der URL, Default 'home'.
 function currentRoute() {
-  const seg = (location.hash || '').replace(/^#\/?/, '').split(/[/?]/)[0];
-  return seg || 'home';
+  return parseHash().segs[0] || 'home';
 }
 
 // „Mehr"-Menü: markiert den aktiven Untereintrag + den Mehr-Button, falls die

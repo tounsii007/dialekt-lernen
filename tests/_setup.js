@@ -171,7 +171,17 @@ export function mountDom() {
   globalThis.document = new FakeDocument();
   globalThis.window = {
     document: globalThis.document,
-    location: { hash: '', hostname: 'localhost', href: 'http://localhost/' },
+    location: { hash: '', hostname: 'localhost', href: 'http://localhost/', pathname: '/', search: '' },
+    history: {
+      pushState(_state, _title, url) {
+        const u = String(url || '/');
+        const [p, q = ''] = u.split('?');
+        globalThis.window.location.pathname = p || '/';
+        globalThis.window.location.search = q ? '?' + q : '';
+      },
+      replaceState() {}, back() {}, forward() {},
+    },
+    dispatchEvent: () => {},
     matchMedia: () => ({ matches: false, addEventListener: () => {} }),
     navigator: { vibrate: () => {}, clipboard: { writeText: async () => {} } },
     speechSynthesis: { speak: () => {}, cancel: () => {}, getVoices: () => [], addEventListener: () => {} },
@@ -181,6 +191,8 @@ export function mountDom() {
     addEventListener: () => {},
     setTimeout, clearTimeout, setInterval, clearInterval,
   };
+  globalThis.location = globalThis.window.location;
+  globalThis.history = globalThis.window.history;
   globalThis.HTMLElement = FakeNode;
   globalThis.Element = FakeNode;
   globalThis.Node = FakeNode;

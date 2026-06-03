@@ -2,7 +2,7 @@
 // Lazy-loads schwere Views (lernen, quiz, vergleich, share) per dynamic import.
 // Eager bleiben Home / Entdecken / Detail / Favoriten (häufig + leichtgewichtig).
 
-import { $, $$, parseHash } from './util.js';
+import { $, $$, parseHash, initLinkInterception, ROUTE_EVENT } from './util.js';
 import {
   observeReveals, observeCounters,
   initTilt, initMagnetic, initPointerParallax, initParallax
@@ -270,7 +270,9 @@ export async function router() {
 }
 
 export function initRouter() {
-  window.addEventListener('hashchange', router);
+  initLinkInterception();                       // interne <a>-Klicks → History-API
+  window.addEventListener('popstate', router);  // Zurück/Vorwärts im Browser
+  window.addEventListener(ROUTE_EVENT, router); // programmatische go()-Navigation
   router();
   // Pull-to-Refresh (Mobile): am Seitenanfang nach unten ziehen lädt die
   // aktuelle Ansicht neu.
