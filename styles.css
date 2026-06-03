@@ -1201,6 +1201,24 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-soft);
   line-height: 1.55;
 }
+/* Übersetzte Erklärung: Sprach-Badge + ausklappbares deutsches Original */
+.expr-meaning-tr { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+.expr-lang-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 2px 7px; border-radius: var(--r-pill);
+  background: color-mix(in oklab, var(--brand) 12%, transparent);
+  color: var(--brand); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em;
+}
+.expr-lang-badge .lang-flag { border-radius: 2px; box-shadow: 0 0 0 1px rgba(0,0,0,.1); }
+.expr-meaning-orig { margin-top: 2px; font-size: 0.82rem; }
+.expr-meaning-orig > summary {
+  cursor: pointer; color: var(--text-muted); font-weight: 600;
+  list-style: none; display: inline-flex; align-items: center; gap: 4px;
+}
+.expr-meaning-orig > summary::-webkit-details-marker { display: none; }
+.expr-meaning-orig > summary::before { content: '▸'; font-size: 0.6rem; transition: transform var(--t-fast) var(--ease); }
+.expr-meaning-orig[open] > summary::before { transform: rotate(90deg); }
+.expr-meaning-orig[open] { color: var(--text-muted); }
 .expr-example {
   padding: var(--sp-3);
   background: var(--bg-soft);

@@ -17,7 +17,7 @@
 //   ein Offline-First-Load funktioniert.
 
 // === BEGIN VERSION (managed by tools/sync-version.mjs) ===
-const APP_VERSION = '2.1.2';
+const APP_VERSION = '2.1.3';
 // === END VERSION ===
 
 const VERSION = `dialekto-v${APP_VERSION}`;
@@ -68,6 +68,10 @@ const PRECACHE_URLS = [
   './data/dialekte/tirolerisch.js',
   './data/dialekte/vorarlbergerisch.js',
   './data/dialekte/wienerisch.js',
+  './data/translations/en.js',
+  './data/translations/es.js',
+  './data/translations/fr.js',
+  './data/translations/tr.js',
   './js/data/lektionen.js',
   './js/store/achievements.js',
   './js/store/avatar.js',
@@ -149,6 +153,7 @@ const PRECACHE_URLS = [
   './js/util/time-heatmap.js',
   './js/util/timing.js',
   './js/util/toast.js',
+  './js/util/translations.js',
   './js/util/voice-viz-webgpu.js',
   './js/util/waveform.js',
   './js/util/week-review.js',

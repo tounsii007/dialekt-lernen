@@ -13,6 +13,8 @@ import {
 import { isSoundEnabled, setSoundEnabled, sfx } from '../util/sounds.js';
 import { getLang, setLang, SUPPORTED, LANGUAGE_NAMES } from '../util/i18n.js';
 import { flagSvg } from '../util/flags.js';
+import { initTranslations } from '../util/translations.js';
+import { router } from '../router.js';
 import {
   getAnimationsEnabled, setAnimationsEnabled, applyAnimations,
   getExplanationLang, setExplanationLang, EXPLANATION_LANGS
@@ -159,6 +161,8 @@ function buildPanel() {
     }), 'Sprache der Oberfläche (lädt neu)'),
     row('Erklärungen', langSelect(EXPLANATION_LANGS, getExplanationLang(), (v) => {
       setExplanationLang(v);
+      // Übersetzungen laden + aktuelle Ansicht neu rendern (Drawer bleibt offen).
+      initTranslations().then(() => { try { router(); } catch {} });
       toast('Erklärungs-Sprache: ' + (LANGUAGE_NAMES[v] || v).toUpperCase(), 'success', 1600);
     }), 'Sprache der Ausdrucks-Erklärungen (sofern übersetzt)')
   ));

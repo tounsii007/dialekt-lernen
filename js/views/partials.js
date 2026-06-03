@@ -4,6 +4,27 @@ import { isFavorit, toggleFavorit, getLernstand, setLernstand, getNote, setNote 
 import { reportCorrection } from '../util/feedback.js';
 import { shareCard } from '../util/share-card.js';
 import { openSuggestEditModal } from './suggestEditModal.js';
+import { getExplanationLang } from '../store/settings.js';
+import { translatedBedeutung } from '../util/translations.js';
+import { flagSvg } from '../util/flags.js';
+
+// Erklärung („bedeutung") — übersetzt anzeigen, wenn eine Erklärungs-Sprache ≠ de
+// gewählt ist UND eine Übersetzung vorliegt; sonst deutsches Original.
+// Bei Übersetzung: Sprach-Badge + das deutsche Original ausklappbar.
+function meaningEl(a, dialekt) {
+  const lang = getExplanationLang();
+  const tr = lang !== 'de' ? translatedBedeutung(dialekt.id, a.id) : null;
+  if (!tr) return el('div', { class: 'expr-meaning' }, a.bedeutung);
+  return el('div', { class: 'expr-meaning expr-meaning-tr' },
+    el('span', { class: 'expr-lang-badge', title: `Erklärung auf ${lang.toUpperCase()}` },
+      flagSvg(lang, 11), el('span', {}, lang.toUpperCase())),
+    el('span', { class: 'expr-meaning-text' }, tr),
+    el('details', { class: 'expr-meaning-orig' },
+      el('summary', {}, 'Original (DE)'),
+      el('span', {}, a.bedeutung)
+    )
+  );
+}
 
 export function renderDialektCard(d) {
   return el('button', {
@@ -148,7 +169,7 @@ export function renderExpressionCard(a, dialekt) {
       )
     ),
     el('div', { class: 'expr-hd' }, a.hochdeutsch),
-    el('div', { class: 'expr-meaning' }, a.bedeutung),
+    meaningEl(a, dialekt),
     a.beispiel ? el('div', { class: 'expr-example' },
       el('strong', {}, '„' + a.beispiel + '"'),
       a.beispiel_hd || ''

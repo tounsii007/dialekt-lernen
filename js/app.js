@@ -25,6 +25,7 @@ import { initQuests } from './store/quests.js';
 import { initLeague, getLeagueResult, clearLeagueResult, LEAGUE_TIERS } from './store/league.js';
 import { initShortcutsOverlay } from './util/shortcuts-overlay.js';
 import { initSettings } from './views/settings.js';
+import { initTranslations } from './util/translations.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
 
@@ -266,7 +267,7 @@ function initDevValidator() {
     .catch(() => {});
 }
 
-function init() {
+async function init() {
   // 1. Device + theme baseline before anything else paints
   detectInputDevice();
   initTheme();
@@ -274,6 +275,8 @@ function init() {
   // 2. Persistence + navigation core
   initStreakEvents(); // vor registerStreak: fängt Freeze/Bruch/Verdienst ab
   registerStreak();
+  // Erklärungs-Übersetzungen laden, bevor die erste View synchron rendert.
+  await initTranslations();
   initRouter();
   initNav();
   initSearch();
