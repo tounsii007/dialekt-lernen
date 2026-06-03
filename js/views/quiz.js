@@ -100,6 +100,12 @@ function answer(btn, chosen, correct, optsEl) {
     }
     quiz.history.push({ correct: false });
   }
+  const feedback = document.querySelector('.quiz-feedback');
+  if (feedback) {
+    const ok = chosen === correct;
+    feedback.className = 'quiz-feedback ' + (ok ? 'is-correct' : 'is-wrong');
+    feedback.textContent = ok ? 'Richtig!' : `Leider falsch. Richtig: ${correct}`;
+  }
   setTimeout(() => {
     quiz.idx++;
     rerender();

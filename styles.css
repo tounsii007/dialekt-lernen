@@ -1561,6 +1561,17 @@ a { color: inherit; text-decoration: none; }
   display: grid;
   gap: var(--sp-3);
 }
+/* Antwort-Ergebnis (auch aria-live für Screenreader) */
+.quiz-feedback {
+  margin-top: var(--sp-3);
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  min-height: 1.3em;
+}
+.quiz-feedback:empty { display: none; }
+.quiz-feedback.is-correct { color: var(--success, #16a34a); }
+.quiz-feedback.is-wrong { color: var(--danger); }
 .quiz-option {
   padding: var(--sp-4) var(--sp-5);
   border-radius: var(--r-lg);

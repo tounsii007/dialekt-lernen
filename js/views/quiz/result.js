@@ -4,6 +4,8 @@ import { saveQuizResult, encodeQuizShare } from '../../store.js';
 import { confettiBurst, animateCounter } from '../../util/motion.js';
 import { sfx } from '../../util/sounds.js';
 
+let _resultRingSeq = 0;
+
 export function renderQuizResult(finished, { onRetry, onAnother }) {
   const total = finished.questions.length;
   const score = finished.score;
@@ -17,6 +19,11 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
   const r = 64;
   const C = 2 * Math.PI * r;
   const dash = (pct / 100) * C;
+  // Eindeutige SVG-IDs, damit der generische id="g"/"glow" nicht mit anderen
+  // SVGs auf der Seite kollidiert (url(#g) referenziert sonst evtl. das falsche).
+  const uid = 'qres' + (++_resultRingSeq);
+  const gradId = uid + 'g';
+  const glowId = uid + 'glow';
 
   const numEl = el('div', { class: 'score-num' }, '0%');
 
@@ -26,17 +33,18 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
       el('div', { class: 'score-ring is-animating' },
         el('svg', {
           width: 170, height: 170, viewBox: '0 0 170 170',
+          role: 'img', 'aria-label': `Quiz-Ergebnis: ${pct} Prozent richtig`,
           html: `
             <defs>
-              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <linearGradient id="${gradId}" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="hsl(258 80% 60%)"/>
                 <stop offset="50%" stop-color="hsl(335 85% 65%)"/>
                 <stop offset="100%" stop-color="hsl(195 85% 55%)"/>
               </linearGradient>
-              <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              <filter id="${glowId}"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
             </defs>
             <circle cx="85" cy="85" r="${r}" fill="none" stroke="color-mix(in oklab, var(--bg-soft) 80%, transparent)" stroke-width="14"/>
-            <circle class="score-ring-fg" cx="85" cy="85" r="${r}" fill="none" stroke="url(#g)" stroke-width="14" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C}" filter="url(#glow)" transform="rotate(-90 85 85)" style="--ring-len:${dash}px;--ring-tot:${C}px"/>
+            <circle class="score-ring-fg" cx="85" cy="85" r="${r}" fill="none" stroke="url(#${gradId})" stroke-width="14" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C}" filter="url(#${glowId})" transform="rotate(-90 85 85)" style="--ring-len:${dash}px;--ring-tot:${C}px"/>
           `
         }),
         numEl

@@ -82,7 +82,7 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
     )
   ));
 
-  const opts = el('div', { class: 'quiz-options' });
+  const opts = el('div', { class: 'quiz-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten' });
   q.options.forEach((opt, i) => {
     const btn = el('button', {
       class: 'quiz-option',
@@ -103,6 +103,10 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
     opts.appendChild(btn);
   });
   wrap.appendChild(opts);
+
+  // aria-live-Region: kündigt Screenreadern „Richtig"/„Falsch" an (das visuelle
+  // Feedback läuft sonst nur über Farb-/Icon-Klassen). Wird in quiz.js befüllt.
+  wrap.appendChild(el('div', { class: 'quiz-feedback', 'aria-live': 'assertive', 'aria-atomic': 'true' }));
 
   // Start timer after a short delay so the question can appear first
   setTimeout(() => startTimer(opts.querySelectorAll('.quiz-option')), 400);
