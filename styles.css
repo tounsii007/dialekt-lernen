@@ -30,6 +30,11 @@
   --info-soft: var(--brand-soft);
 
   --grad-brand: linear-gradient(135deg, var(--brand), var(--brand-2) 55%, var(--pink));
+  /* Flächen-Variante des Brand-Gradients. Im Hellmodus identisch; im
+     Dunkelmodus (s.u.) mit dem Untergrund gemischt → gefüllte Flächen
+     (Buttons, aktiver Nav, Panels) wirken nicht grell. Text-Gradienten
+     nutzen weiterhin --grad-brand und bleiben voll leuchtend. */
+  --grad-brand-fill: var(--grad-brand);
   --grad-cool:  linear-gradient(135deg, var(--brand-3), var(--accent));
   --grad-warm:  linear-gradient(135deg, var(--warm), var(--pink));
   --scroll-p: 0;
@@ -171,6 +176,13 @@
   --danger-soft: hsl(0 80% 68% / .18);
   --warning: hsl(38 92% 62%);
   --warning-soft: hsl(38 92% 62% / .2);
+  /* Brand-Flächen im Dunkelmodus mit dem Untergrund mischen → nicht grell
+     (wirkt besonders bei gesättigten Presets wie Sunset). */
+  --grad-brand-fill: linear-gradient(135deg,
+    color-mix(in oklab, var(--brand) 76%, var(--bg)),
+    color-mix(in oklab, var(--brand-2) 72%, var(--bg)) 55%,
+    color-mix(in oklab, var(--pink) 74%, var(--bg)));
+  --brand-fill: color-mix(in oklab, var(--brand) 78%, var(--bg));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -197,6 +209,11 @@
     --danger-soft: hsl(0 80% 68% / .18);
     --warning: hsl(38 92% 62%);
     --warning-soft: hsl(38 92% 62% / .2);
+    --grad-brand-fill: linear-gradient(135deg,
+      color-mix(in oklab, var(--brand) 76%, var(--bg)),
+      color-mix(in oklab, var(--brand-2) 72%, var(--bg)) 55%,
+      color-mix(in oklab, var(--pink) 74%, var(--bg)));
+    --brand-fill: color-mix(in oklab, var(--brand) 78%, var(--bg));
   }
 }
 
@@ -797,7 +814,7 @@ a { color: inherit; text-decoration: none; }
 .btn:hover::after { left: 130%; }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--brand), var(--brand-2) 55%, var(--pink));
+  background: var(--grad-brand-fill);
   background-size: 180% 180%;
   background-position: 0% 50%;
   color: white;
@@ -5145,7 +5162,7 @@ html.is-speaking .is-speakable {
   position: absolute;
   left: 4px; top: 4px;
   border-radius: var(--r-pill);
-  background: linear-gradient(135deg, var(--brand), var(--brand-2) 55%, var(--pink));
+  background: var(--grad-brand-fill);
   background-size: 220% 220%;
   animation: navGradient 6s var(--ease) infinite;
   box-shadow: 0 4px 18px hsl(var(--brand-h) var(--brand-s) 60% / .35);

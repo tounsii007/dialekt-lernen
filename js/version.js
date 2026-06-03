@@ -4,7 +4,7 @@
 //   `node tools/sync-version.mjs`
 // ausführen. Das aktualisiert sw.js automatisch (Cache-Key).
 
-export const APP_VERSION = '2.1.40';
+export const APP_VERSION = '2.1.41';
 
 // Anzeige-String für Footer & Über-Dialoge.
 export const APP_VERSION_LABEL = `v${APP_VERSION}`;
