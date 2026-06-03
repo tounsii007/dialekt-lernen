@@ -201,11 +201,7 @@ function buildPanel() {
   body.appendChild(section('Daten', '🗄️',
     el('div', { class: 'set-data-row' },
       el('button', { class: 'btn btn-secondary', onClick: () => { try { downloadStateFile(); toast('Backup heruntergeladen', 'success', 1800); } catch { toast('Export fehlgeschlagen', 'error', 2200); } } }, '⬇ Backup exportieren'),
-      el('button', { class: 'btn btn-ghost set-danger', onClick: () => {
-        if (confirm('Wirklich ALLE lokalen Daten löschen (Fortschritt, XP, Favoriten, Einstellungen)? Das kann nicht rückgängig gemacht werden.')) {
-          try { resetAllData(); } catch {}
-        }
-      } }, '🗑 Alle Daten zurücksetzen')
+      buildResetControl()
     )
   ));
 
@@ -257,6 +253,44 @@ function buildGoalControl() {
   return wrap;
 }
 
+// Zweistufige Inline-Bestätigung statt blockierendem window.confirm().
+function buildResetControl() {
+  const wrap = el('div', { class: 'set-reset' });
+  let revertTimer = null;
+
+  const renderIdle = () => {
+    if (revertTimer) { clearTimeout(revertTimer); revertTimer = null; }
+    wrap.innerHTML = '';
+    wrap.appendChild(el('button', {
+      type: 'button', class: 'btn btn-ghost set-danger',
+      onClick: renderConfirm
+    }, '🗑 Alle Daten zurücksetzen'));
+  };
+
+  const renderConfirm = () => {
+    wrap.innerHTML = '';
+    const box = el('div', { class: 'set-reset-confirm' },
+      el('div', { class: 'set-reset-warn' },
+        '⚠️ Wirklich ALLE Daten löschen? Fortschritt, XP, Favoriten & Einstellungen gehen unwiderruflich verloren.'),
+      el('div', { class: 'set-reset-actions' },
+        el('button', { type: 'button', class: 'btn btn-ghost', onClick: renderIdle }, 'Abbrechen'),
+        el('button', {
+          type: 'button', class: 'btn set-danger-solid',
+          onClick: () => { try { resetAllData(); } catch {} }
+        }, 'Ja, alles löschen')
+      )
+    );
+    wrap.appendChild(box);
+    // Auto-Rückfall nach 6 s, falls keine Entscheidung getroffen wird.
+    revertTimer = setTimeout(renderIdle, 6000);
+    const cancelBtn = box.querySelector('.btn-ghost');
+    if (cancelBtn) cancelBtn.focus();
+  };
+
+  renderIdle();
+  return wrap;
+}
+
 export function openSettings() {
   if (overlay && document.body.contains(overlay)) { overlay.classList.add('is-open'); return; }
   lastFocus = document.activeElement;
@@ -281,7 +315,16 @@ export function closeSettings() {
 }
 
 function onKey(e) {
-  if (e.key === 'Escape') { e.stopPropagation(); closeSettings(); }
+  if (e.key === 'Escape') { e.stopPropagation(); closeSettings(); return; }
+  // Fokus-Falle: Tab zyklisch innerhalb des Drawers halten (Modal-A11y).
+  if (e.key === 'Tab' && overlay) {
+    const list = [...overlay.querySelectorAll('button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])')]
+      .filter(n => !n.disabled && n.offsetParent !== null);
+    if (list.length < 2) return;
+    const first = list[0], last = list[list.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
 }
 
 /** Einmal beim App-Start: ⚙-Button verdrahten + Animations-Präferenz anwenden. */

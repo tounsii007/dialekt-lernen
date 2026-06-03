@@ -10864,6 +10864,22 @@ img, svg, video {
 .set-danger { color: var(--danger); }
 .set-danger:hover { background: var(--danger-soft); }
 
+/* Zweistufige Reset-Bestätigung (inline statt window.confirm) */
+.set-reset { width: 100%; }
+.set-reset-confirm {
+  display: flex; flex-direction: column; gap: var(--sp-3);
+  padding: var(--sp-3);
+  border: 1px solid color-mix(in oklab, var(--danger) 55%, transparent);
+  border-radius: var(--r-md);
+  background: var(--danger-soft);
+  animation: setSectionIn 0.22s var(--ease) both;
+}
+.set-reset-warn { font-size: 0.84rem; color: var(--text); line-height: 1.5; }
+.set-reset-actions { display: flex; gap: var(--sp-2); }
+.set-reset-actions .btn { flex: 1; width: auto; justify-content: center; }
+.set-danger-solid { background: var(--danger); color: #fff; border-color: transparent; }
+.set-danger-solid:hover { filter: brightness(1.08); background: var(--danger); color: #fff; }
+
 /* UX-Politur: gestaffelte Sektion-Einblendung beim Öffnen des Drawers */
 @keyframes setSectionIn {
   from { opacity: 0; transform: translateY(10px); }
