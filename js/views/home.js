@@ -21,6 +21,38 @@ import {
 } from '../util/season.js';
 import { getAdaptiveRecommendations } from '../util/adaptive-plan.js';
 
+// Variierende Hero-Texte — pro Render zufällig kombiniert, damit die Startseite
+// nicht statisch wirkt. Der hervorgehobene `grad`-Teil bleibt der animierte
+// Gradient-Span.
+const HERO_EYEBROWS = [
+  'Deutsche Sprachvielfalt entdecken',
+  'Mundart lernen & verstehen',
+  'Regionale Ausdrücke entdecken',
+  'Dialekte aus dem ganzen Sprachraum',
+  'Von „Moin" bis „Servus"'
+];
+const HERO_HEADLINES = [
+  { prefix: 'Lerne Dialekte aus ', grad: 'ganz Deutschland', suffix: '.' },
+  { prefix: 'Entdecke Mundart von ', grad: 'Hamburg bis Wien', suffix: '.' },
+  { prefix: 'Von der Waterkant bis ', grad: 'in die Alpen', suffix: '.' },
+  { prefix: 'Sprich wie ', grad: 'die Einheimischen', suffix: '.' },
+  { prefix: 'Tauche ein in ', grad: 'echte regionale Sprache', suffix: '.' }
+];
+const HERO_LEDES = [
+  'Vom Frankfurter „Ei guude" bis zum Wiener „Schmäh": Tauche ein in regionale Ausdrücke, lerne mit Karteikarten und teste dich im Quiz — alles erklärt auf Hochdeutsch.',
+  'Über 6700 Ausdrücke aus 24 Regionen: lerne mit Karteikarten, höre die Aussprache und teste dich im Quiz — verständlich auf Hochdeutsch erklärt.',
+  'Ob „Moin", „Servus" oder „Grüezi" — entdecke, was die Regionen sprachlich ausmacht, und lerne die schönsten Ausdrücke spielerisch.',
+  'Karteikarten, Quiz und Aussprache: Lerne lebendige Mundart aus Deutschland, Österreich und der Schweiz — Schritt für Schritt.'
+];
+function pickHeroCopy() {
+  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+  return {
+    eyebrow: pick(HERO_EYEBROWS),
+    headline: pick(HERO_HEADLINES),
+    lede: pick(HERO_LEDES)
+  };
+}
+
 export function renderHome(root, params = {}) {
   root.innerHTML = '';
   const view = el('div', { class: 'view' });
@@ -36,20 +68,21 @@ export function renderHome(root, params = {}) {
     view.appendChild(renderSeasonBanner(seasonId));
   }
 
-  // Hero
+  // Hero — Texte pro Render variierend (Eyebrow / Headline / Beschreibung)
+  const heroCopy = pickHeroCopy();
   view.appendChild(el('section', { class: 'hero' },
     el('div', {},
       el('span', { class: 'hero-eyebrow' },
         el('span', { html: '✨' }),
-        'Deutsche Sprachvielfalt entdecken'
+        heroCopy.eyebrow
       ),
       el('h1', {},
-        'Lerne Dialekte aus ',
-        el('span', { class: 'grad' }, 'ganz Deutschland'),
-        '.'
+        heroCopy.headline.prefix,
+        el('span', { class: 'grad' }, heroCopy.headline.grad),
+        heroCopy.headline.suffix
       ),
       buildWordCarousel(),
-      el('p', {}, 'Vom Frankfurter „Ei guude" bis zum Wiener „Schmäh": Tauche ein in regionale Ausdrücke, lerne mit Karteikarten und teste dich im Quiz — alles erklärt auf Hochdeutsch.'),
+      el('p', {}, heroCopy.lede),
       el('div', { class: 'hero-cta' },
         el('button', { class: 'btn btn-primary', dataset: { magnetic: '16' }, onClick: () => go('#/entdecken') },
           'Dialekte entdecken',
