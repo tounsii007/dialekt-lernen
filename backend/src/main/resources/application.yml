@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: dialekto-backend
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/dialekto}
+    username: ${DB_USER:dialekto}
+    password: ${DB_PASSWORD:dialekto}
+  jpa:
+    hibernate:
+      ddl-auto: validate          # Schema wird von Flyway verwaltet, nicht von Hibernate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+server:
+  port: ${SERVER_PORT:8080}
+
+# Origins, die das Frontend bedienen darf (CORS). Komma-getrennt überschreibbar.
+dialekto:
+  cors:
+    allowed-origins: ${CORS_ORIGINS:http://localhost:5173,http://127.0.0.1:5173}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
