@@ -28,6 +28,7 @@ import { initSettings } from './views/settings.js';
 import { initTranslations } from './util/translations.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
+import * as api from './util/api.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const SOUND_TOAST_MS = 1200;
@@ -267,6 +268,26 @@ function initDevValidator() {
     .catch(() => {});
 }
 
+// Verbindet sich (nicht-blockierend) mit dem Backend: prüft Erreichbarkeit und
+// registriert die anonyme Geräte-ID. Ist das Backend aus, läuft die App im
+// bisherigen lokalen Modus weiter (Fallback) — kein Fehler für den Nutzer.
+async function initBackend() {
+  try {
+    if (!(await api.isBackendAvailable())) {
+      window.__dialektoBackend = { online: false };
+      console.info('[Dialekto] Backend offline — lokaler Modus.');
+      return;
+    }
+    const user = await api.registerUser();
+    window.__dialektoBackend = { online: true, userId: user?.id, base: api.getApiBase() };
+    document.dispatchEvent(new CustomEvent('dialekto:backendReady', { detail: window.__dialektoBackend }));
+    console.info('[Dialekto] Backend verbunden:', api.getApiBase(), '· Nutzer', user?.id);
+  } catch (e) {
+    window.__dialektoBackend = { online: false };
+    console.info('[Dialekto] Backend nicht erreichbar — lokaler Modus.', e?.message || e);
+  }
+}
+
 async function init() {
   // 1. Device + theme baseline before anything else paints
   detectInputDevice();
@@ -298,6 +319,7 @@ async function init() {
   initRipple();
 
   // 5. Background services
+  initBackend(); // nicht-blockierend: Backend verbinden + Geräte-ID registrieren
   initPwa(toast);
   initNotifications();
   initNetwork(toast);
