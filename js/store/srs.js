@@ -28,6 +28,7 @@ import {
 import { optimize as fsrsOptimize, buildSequences } from '../util/fsrs-optimizer.js';
 import { applyFuzz } from '../util/fsrs-fuzz.js';
 import { registerComboHit, applyComboToXp } from '../util/combo.js';
+import { lernstand as apiLernstand } from '../util/api.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -407,11 +408,26 @@ export function reviewCardFsrs(dialektId, ausdruckId, grade, now = Date.now()) {
 // `rating` ist die 3-Knopf-Bewertung (1..3); optionales `grade` (1..4)
 // überschreibt das Mapping, falls die UI bereits 4 Knöpfe liefert.
 export function reviewCardScheduled(dialektId, ausdruckId, rating, grade = null) {
+  let result;
   if (getSrsConfig().scheduler === 'fsrs') {
     const g = grade != null ? clamp(numFin(grade, GRADE_GOOD), 1, 4) : ratingToGrade(rating);
-    return reviewCardFsrs(dialektId, ausdruckId, g, Date.now());
+    result = reviewCardFsrs(dialektId, ausdruckId, g, Date.now());
+  } else {
+    result = reviewCard(dialektId, ausdruckId, rating);
   }
-  return reviewCard(dialektId, ausdruckId, rating);
+  // Lokal-first: Bewertung zusätzlich ans Backend spiegeln (write-through).
+  syncReviewToBackend(ausdruckId, rating);
+  return result;
+}
+
+// Spiegelt eine Bewertung ans Backend, wenn verbunden. Fire-and-forget —
+// Fehler/Offline werden bewusst verschluckt (die lokale Quelle bleibt führend).
+function syncReviewToBackend(ausdruckId, rating) {
+  try {
+    if (!globalThis.window?.__dialektoBackend?.online) return;
+    const r = clamp(numFin(rating, 2), 1, 3);
+    Promise.resolve(apiLernstand.bewerten(ausdruckId, r)).catch(() => {});
+  } catch { /* ignore */ }
 }
 
 // Intervall-Vorschau (Tage) je Bewertung — für die Anki-Stil-Buttons.
