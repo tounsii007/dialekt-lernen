@@ -11,7 +11,8 @@ import {
   downloadStateFile, resetAllData
 } from '../store.js';
 import { isSoundEnabled, setSoundEnabled, sfx } from '../util/sounds.js';
-import { getLang, setLang, SUPPORTED, LANGUAGE_NAMES, LANGUAGE_FLAGS } from '../util/i18n.js';
+import { getLang, setLang, SUPPORTED, LANGUAGE_NAMES } from '../util/i18n.js';
+import { flagSvg } from '../util/flags.js';
 import {
   getAnimationsEnabled, setAnimationsEnabled, applyAnimations,
   getExplanationLang, setExplanationLang, EXPLANATION_LANGS
@@ -86,13 +87,57 @@ function segmented(options, current, onPick) {
   return wrap;
 }
 
+// Custom-Sprachauswahl mit echten SVG-Flaggen (statt nativem <select>, das auf
+// Windows nur Emoji-Buchstaben "DE" statt Flaggen zeigt).
 function langSelect(langs, current, onChange) {
-  return el('select', {
-    class: 'set-select',
-    onChange: (e) => onChange(e.target.value)
-  }, ...langs.map(l => el('option', {
-    value: l, selected: l === current
-  }, `${LANGUAGE_FLAGS[l] ? LANGUAGE_FLAGS[l] + ' ' : ''}${LANGUAGE_NAMES[l] || l.toUpperCase()}`)));
+  let cur = current;
+  const name = (l) => LANGUAGE_NAMES[l] || l.toUpperCase();
+
+  const btn = el('button', {
+    type: 'button', class: 'lang-picker-btn',
+    'aria-haspopup': 'listbox', 'aria-expanded': 'false'
+  });
+  const menu = el('div', { class: 'lang-picker-menu', role: 'listbox', hidden: true });
+  const wrap = el('div', { class: 'lang-picker' }, btn, menu);
+
+  const paintBtn = () => {
+    btn.innerHTML = '';
+    btn.append(flagSvg(cur, 16),
+      el('span', { class: 'lang-picker-name' }, name(cur)),
+      el('span', { class: 'lang-picker-caret', 'aria-hidden': 'true', html: '▾' }));
+  };
+  paintBtn();
+
+  const onDocClick = (e) => { if (!wrap.contains(e.target)) setOpen(false); };
+  function setOpen(open) {
+    menu.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    wrap.classList.toggle('is-open', open);
+    if (open) document.addEventListener('click', onDocClick);
+    else document.removeEventListener('click', onDocClick);
+  }
+
+  langs.forEach((l) => {
+    menu.appendChild(el('button', {
+      type: 'button', role: 'option', dataset: { l },
+      class: 'lang-picker-opt' + (l === cur ? ' is-active' : ''),
+      'aria-selected': l === cur ? 'true' : 'false',
+      onClick: () => {
+        cur = l;
+        menu.querySelectorAll('.lang-picker-opt').forEach((o) => {
+          const on = o.dataset.l === l;
+          o.classList.toggle('is-active', on);
+          o.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        paintBtn();
+        setOpen(false);
+        onChange(l);
+      }
+    }, flagSvg(l, 16), el('span', {}, name(l))));
+  });
+
+  btn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(menu.hidden); });
+  return wrap;
 }
 
 // --- Drawer ------------------------------------------------------------------

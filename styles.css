@@ -9595,7 +9595,18 @@ img, svg, video {
 
 /* --- Dialektkarten (scoped, überschreibt geteilte .dc-* nur hier) --- */
 .lernen-view .learn-dialekt-card { display: flex; flex-direction: column; }
-.lernen-view .learn-dialekt-card .dc-flag { margin-bottom: var(--sp-2); }
+/* Dialekt-Icon als modernes, getöntes Badge (Dialekt-Farbe) statt nacktem Emoji */
+.lernen-view .learn-dialekt-card .dc-flag {
+  width: 46px; height: 46px;
+  margin-bottom: var(--sp-3);
+  display: inline-grid; place-items: center;
+  font-size: 1.6rem; line-height: 1;
+  border-radius: 14px;
+  background: color-mix(in oklab, var(--dc, var(--brand)) 15%, var(--bg-elev));
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--brand)) 38%, transparent);
+  transition: transform var(--t-fast) var(--ease-spring);
+}
+.lernen-view .learn-dialekt-card:hover .dc-flag { transform: scale(1.08) rotate(-3deg); }
 .lernen-view .learn-dialekt-card .dc-name { margin-bottom: 0; }
 .lernen-view .learn-dialekt-card .dc-region {
   margin-bottom: var(--sp-3);
@@ -10742,6 +10753,46 @@ img, svg, video {
   cursor: pointer; min-width: 130px;
 }
 .set-select:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+/* Sprachauswahl mit echten SVG-Flaggen (Custom-Dropdown) */
+.lang-flag {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  display: block;
+}
+.lang-picker { position: relative; }
+.lang-picker-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-width: 150px;
+  padding: 7px 10px; border-radius: var(--r-md);
+  border: 1px solid var(--border); background: var(--bg-soft); color: var(--text);
+  font: inherit; font-size: 0.9rem; font-weight: 600; cursor: pointer;
+  transition: border-color var(--t-fast) var(--ease);
+}
+.lang-picker-btn:hover { border-color: var(--brand); }
+.lang-picker-name { flex: 1; text-align: left; }
+.lang-picker-caret { color: var(--text-muted); transition: transform var(--t-fast) var(--ease); }
+.lang-picker.is-open .lang-picker-caret { transform: rotate(180deg); }
+.lang-picker-menu {
+  position: absolute; top: calc(100% + 6px); right: 0; z-index: 5;
+  min-width: 170px;
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 6px;
+  background: var(--surface-strong); border: 1px solid var(--border);
+  border-radius: var(--r-md); box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(var(--blur-12)); -webkit-backdrop-filter: blur(var(--blur-12));
+  animation: navMoreIn 0.16s var(--ease);
+}
+.lang-picker-menu[hidden] { display: none; }
+.lang-picker-opt {
+  display: flex; align-items: center; gap: 8px;
+  padding: 7px 10px; border: 0; border-radius: var(--r-sm);
+  background: transparent; color: var(--text); font: inherit; font-size: 0.88rem; font-weight: 600;
+  cursor: pointer; text-align: left; white-space: nowrap;
+}
+.lang-picker-opt:hover { background: var(--bg-soft); }
+.lang-picker-opt.is-active { background: var(--brand-soft); color: var(--brand); }
 
 /* Palette */
 .set-palette { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
