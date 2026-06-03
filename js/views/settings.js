@@ -20,6 +20,7 @@ import {
   getExplanationLang, setExplanationLang, EXPLANATION_LANGS
 } from '../store/settings.js';
 import { getGoalTarget, setGoalTarget, getGoalOptions } from '../store/goals.js';
+import { APP_VERSION_LABEL, DIALEKT_COUNT, AUSDRUCK_COUNT, REPO_URL } from '../version.js';
 
 const THEMES = [
   { id: 'light',    label: 'Hell',    icon: '☀️' },
@@ -43,9 +44,12 @@ function row(label, control, hint) {
   );
 }
 
-function section(title, ...children) {
+function section(title, icon, ...children) {
   return el('section', { class: 'set-section' },
-    el('h3', { class: 'set-section-title' }, title),
+    el('h3', { class: 'set-section-title' },
+      icon ? el('span', { class: 'set-section-ic', 'aria-hidden': 'true' }, icon) : null,
+      el('span', {}, title)
+    ),
     ...children
   );
 }
@@ -155,7 +159,7 @@ function buildPanel() {
   const body = el('div', { class: 'settings-body' });
 
   // Sprache
-  body.appendChild(section('Sprache',
+  body.appendChild(section('Sprache', '🌐',
     row('App-Sprache', langSelect(SUPPORTED, getLang(), (v) => {
       if (v !== getLang()) setLang(v); // löst Reload aus
     }), 'Sprache der Oberfläche (lädt neu)'),
@@ -168,7 +172,7 @@ function buildPanel() {
   ));
 
   // Darstellung
-  body.appendChild(section('Darstellung',
+  body.appendChild(section('Darstellung', '🎨',
     row('Design', segmented(THEMES, getTheme(), (v) => { setTheme(v); applyTheme(); }), 'Hell, dunkel, automatisch oder hoher Kontrast'),
     row('Farbpalette', buildPaletteGrid(), 'Akzentfarben der App'),
     row('Animationen', toggleSwitch(getAnimationsEnabled(), (on) => {
@@ -181,7 +185,7 @@ function buildPanel() {
   ));
 
   // Audio
-  body.appendChild(section('Audio',
+  body.appendChild(section('Audio', '🔊',
     row('Sounds', toggleSwitch(isSoundEnabled(), (on) => {
       setSoundEnabled(on);
       if (on) sfx.toggle();
@@ -189,12 +193,12 @@ function buildPanel() {
   ));
 
   // Lernen
-  body.appendChild(section('Lernen',
+  body.appendChild(section('Lernen', '🎯',
     row('Tagesziel', buildGoalControl(), 'Karten pro Tag')
   ));
 
   // Daten
-  body.appendChild(section('Daten',
+  body.appendChild(section('Daten', '🗄️',
     el('div', { class: 'set-data-row' },
       el('button', { class: 'btn btn-secondary', onClick: () => { try { downloadStateFile(); toast('Backup heruntergeladen', 'success', 1800); } catch { toast('Export fehlgeschlagen', 'error', 2200); } } }, '⬇ Backup exportieren'),
       el('button', { class: 'btn btn-ghost set-danger', onClick: () => {
@@ -202,6 +206,15 @@ function buildPanel() {
           try { resetAllData(); } catch {}
         }
       } }, '🗑 Alle Daten zurücksetzen')
+    )
+  ));
+
+  // Über
+  body.appendChild(section('Über', 'ℹ️',
+    el('div', { class: 'set-about' },
+      el('div', { class: 'set-about-ver' }, 'Dialekto ' + APP_VERSION_LABEL),
+      el('div', { class: 'set-about-meta' }, DIALEKT_COUNT + ' Dialekte · ' + AUSDRUCK_COUNT.toLocaleString('de-DE') + ' Ausdrücke'),
+      el('a', { class: 'set-about-link', href: REPO_URL, target: '_blank', rel: 'noopener noreferrer' }, 'Quellcode auf GitHub ↗')
     )
   ));
 
