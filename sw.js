@@ -17,7 +17,7 @@
 //   ein Offline-First-Load funktioniert.
 
 // === BEGIN VERSION (managed by tools/sync-version.mjs) ===
-const APP_VERSION = '2.1.29';
+const APP_VERSION = '2.1.30';
 // === END VERSION ===
 
 const VERSION = `dialekto-v${APP_VERSION}`;

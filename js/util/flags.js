@@ -28,8 +28,20 @@ const FLAG_MARKUP = {
     '<rect width="8" height="16" fill="#002654"/>' +
     '<rect x="16" width="8" height="16" fill="#CE1126"/>',
   es:
-    '<rect width="24" height="16" fill="#AA151B"/>' +
-    '<rect y="4" width="24" height="8" fill="#F1BF00"/>',
+    '<rect width="24" height="16" fill="#AD1519"/>' +
+    '<rect y="4" width="24" height="8" fill="#FABD00"/>' +
+    // Vereinfachtes Staatswappen (Säulen des Herkules + Schild + Krone) an der
+    // Originalposition (~1/3 von links) auf dem gelben Streifen.
+    '<g transform="translate(8 8)" stroke="#7c0d11" stroke-width="0.25" stroke-linejoin="round">' +
+      '<rect x="-3.5" y="-2.7" width="1.1" height="5.4" rx="0.5" fill="#fbf3df"/>' +
+      '<rect x="2.4" y="-2.7" width="1.1" height="5.4" rx="0.5" fill="#fbf3df"/>' +
+      '<rect x="-3.7" y="0.3" width="1.5" height="0.9" fill="#AD1519" stroke="none"/>' +
+      '<rect x="2.2" y="0.3" width="1.5" height="0.9" fill="#AD1519" stroke="none"/>' +
+      '<path d="M-2.1 -2.8 H2.1 V0.7 Q2.1 2.6 0 3.4 Q-2.1 2.6 -2.1 0.7 Z" fill="#fbf3df"/>' +
+      '<path d="M-1.9 -2.6 H0 V0.5 H-1.9 Z" fill="#AD1519" stroke="none"/>' +
+      '<path d="M0 0.5 H1.9 V0.7 Q1.9 2.4 0 3.1 Z" fill="#AD1519" stroke="none"/>' +
+      '<path d="M-2 -3.5 L-1.3 -2.85 H1.3 L2 -3.5 L1 -3.05 L0 -3.9 L-1 -3.05 Z" fill="#f4c430"/>' +
+    '</g>',
 };
 
 /**
