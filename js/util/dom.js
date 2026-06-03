@@ -4,6 +4,12 @@ export const $  = (sel, root = document) => root.querySelector(sel);
 export const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
 function applyAttribute(elem, key, value) {
+  // aria-Attribute in camelCase (ariaLabel, ariaHidden, …) zu kebab-case
+  // normalisieren. Da Attribute via setAttribute() gesetzt werden (vom Browser
+  // klein geschrieben), landete camelCase sonst als wirkungsloses „arialabel"
+  // statt „aria-label" — für Screenreader unsichtbar.
+  if (/^aria[A-Z]/.test(key)) key = 'aria-' + key.slice(4).toLowerCase();
+
   if (key === 'class')   { elem.className = value; return; }
   if (key === 'html')    { elem.innerHTML = value; return; }
   if (key === 'dataset') { Object.assign(elem.dataset, value); return; }

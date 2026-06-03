@@ -53,6 +53,15 @@ describe('el — Element-Konstruktor', () => {
     assert.equal(e.getAttribute('aria-label'), 'Test');
   });
 
+  it('normalisiert camelCase-aria zu kebab-case (ariaLabel → aria-label)', () => {
+    // Regression: setAttribute('ariaLabel', …) landet als „arialabel" und ist
+    // für Screenreader wirkungslos — muss zu „aria-label" normalisiert werden.
+    const e = el('button', { ariaLabel: 'Schließen', ariaHidden: 'true' });
+    assert.equal(e.getAttribute('aria-label'), 'Schließen');
+    assert.equal(e.getAttribute('aria-hidden'), 'true');
+    assert.equal(e.hasAttribute('arialabel'), false);
+  });
+
   it('lässt Attribute mit Wert true zur leeren Strings werden', () => {
     const e = el('input', { disabled: true });
     assert.equal(e.getAttribute('disabled'), '');
