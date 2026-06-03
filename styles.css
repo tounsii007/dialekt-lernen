@@ -6047,6 +6047,17 @@ html.is-speaking .is-speakable {
               border-color var(--t-fast) var(--ease);
   z-index: 2;
 }
+/* Auf schmalem Stage kleinere Bubbles, damit eng benachbarte Regionen
+   (z.B. Rheinland/Ruhrgebiet) sich nicht überlappen. */
+@media (max-width: 520px) {
+  /* Höhere Spezifität (.karte-stage .karte-bubble) als die globale 44px-Touch-
+     Regel, damit das Verkleinern greift. 38/36px sind weiterhin AA-konform
+     (>=24px) und verhindern Bubble-Überlappung auf schmalem Stage. */
+  .karte-stage .karte-bubble { width: 38px; height: 38px; min-width: 38px; min-height: 38px; font-size: 1.25rem; }
+}
+@media (max-width: 380px) {
+  .karte-stage .karte-bubble { width: 36px; height: 36px; min-width: 36px; min-height: 36px; font-size: 1.1rem; border-width: 1.5px; }
+}
 .karte-bubble:hover,
 .karte-bubble:focus-visible {
   transform: translate(-50%, -50%) scale(1.28);

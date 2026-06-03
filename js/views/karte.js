@@ -10,8 +10,8 @@ import { icon } from '../util/icons.js';
 const GEO = {
   plattdeutsch:   { x: 42, y: 15, label: 'Norden' },
   berlinisch:     { x: 65, y: 27, label: 'Nordosten' },
-  ruhrdeutsch:    { x: 22, y: 44, label: 'Ruhrgebiet' },
-  koelsch:        { x: 18, y: 51, label: 'Rheinland' },
+  ruhrdeutsch:    { x: 25, y: 40, label: 'Ruhrgebiet' },
+  koelsch:        { x: 15, y: 54, label: 'Rheinland' },
   saechsisch:     { x: 68, y: 44, label: 'Osten' },
   hessisch:       { x: 44, y: 51, label: 'Mitte' },
   fraenkisch:     { x: 58, y: 59, label: 'Nordbayern' },
