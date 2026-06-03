@@ -193,7 +193,7 @@ function startSession(host, source, count) {
       )
     );
 
-    const result = el('div', { class: 'shadow-result' });
+    const result = el('div', { class: 'shadow-result', 'aria-live': 'assertive', 'aria-atomic': 'true' });
     const actionRow = el('div', { class: 'shadow-action-row' });
 
     // Manueller Bestätigungs-Pfad (Fallback ohne Erkennung).
@@ -212,7 +212,7 @@ function startSession(host, source, count) {
     if (isPronunciationSupported()) {
       const micBtn = el('button', { class: 'shadow-mic-btn', ariaLabel: 'Nachsprechen' },
         icon('speaker', { size: 26 }));
-      const micLabel = el('span', { class: 'shadow-mic-label' }, 'Tippe und sprich nach');
+      const micLabel = el('span', { class: 'shadow-mic-label', 'aria-live': 'polite' }, 'Tippe und sprich nach');
       let listening = false, finalShown = false;
 
       function resetMic() {
