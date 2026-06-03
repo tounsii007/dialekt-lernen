@@ -2,7 +2,7 @@ import { el, go, speak, toast } from '../util.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { getStreak, getLernStats, getDailySeed, toggleFavorit, isFavorit } from '../store.js';
-import { pickSeeded } from '../util.js';
+import { pickSeeded, shuffle } from '../util.js';
 import { renderDialektCard } from './partials.js';
 import { icon, sparkline } from '../util/icons.js';
 import { getRecommendations, getRecentDialects, getActivitySeries } from '../util/recommendations.js';
@@ -178,11 +178,7 @@ export function renderHome(root, params = {}) {
 }
 
 function renderHeroPreview() {
-  const samples = [
-    { dialekt: 'Hessisch',   farbe: '#e63946', ausdruck: 'Ei guude!',   meaning: 'Hallo!',           depth: '1.4' },
-    { dialekt: 'Ruhrdeutsch',farbe: '#e36414', ausdruck: 'Glück auf!',  meaning: 'Bergmannsgruß',    depth: '1.0' },
-    { dialekt: 'Bayerisch',  farbe: '#0077b6', ausdruck: 'Servus',      meaning: 'Hallo / Tschüss',  depth: '1.7' }
-  ];
+  const samples = pickHeroSamples(3);
   return el('div', { class: 'hero-preview', dataset: { pointerParallax: '' } },
     ...samples.map(s => el('div', { class: 'preview-card', dataset: { ppDepth: s.depth } },
       el('span', { class: 'dialect-tag', style: { background: s.farbe + '22', color: s.farbe } }, s.dialekt),
@@ -190,6 +186,45 @@ function renderHeroPreview() {
       el('div', { class: 'meaning' }, s.meaning)
     ))
   );
+}
+
+// Zieht n knackige Beispiel-Ausdrücke aus möglichst verschiedenen Dialekten —
+// bei jedem Render frisch gemischt, damit die Hero-Vorschau nicht statisch wirkt.
+const HERO_PREVIEW_DEPTHS = ['1.4', '1.0', '1.7'];
+const HERO_FALLBACK_SAMPLES = [
+  { dialekt: 'Hessisch',    farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!' },
+  { dialekt: 'Ruhrdeutsch', farbe: '#e36414', ausdruck: 'Glück auf!', meaning: 'Bergmannsgruß' },
+  { dialekt: 'Bayerisch',   farbe: '#0077b6', ausdruck: 'Servus',     meaning: 'Hallo / Tschüss' }
+];
+// Nur die charakteristisch-mundartlichen Kategorien als Aushängeschild zulassen
+// (Begrüßungen, Redensarten, Ausrufe) — keine Sachbegriffe/Eigennamen/Abkürzungen.
+const HERO_PREVIEW_CATEGORIES = new Set(['begruessung', 'redensart', 'gefuehle']);
+function pickHeroSamples(n = 3) {
+  const fits = a => HERO_PREVIEW_CATEGORIES.has(a.kategorie)
+    && a.ausdruck && a.ausdruck.length >= 2 && a.ausdruck.length <= 17
+    && a.hochdeutsch && a.hochdeutsch.length <= 26
+    && !/^[A-ZÄÖÜ.]{2,}$/.test(a.ausdruck);  // reine Abkürzungen (z.B. „RVR") ausschließen
+  const pool = shuffle(ALLE_AUSDRUECKE.filter(fits));
+  const picked = [];
+  const usedDialects = new Set();
+  for (const a of pool) {
+    if (usedDialects.has(a.dialektId)) continue;
+    usedDialects.add(a.dialektId);
+    picked.push({
+      dialekt: a.dialektName,
+      farbe: a.dialektFarbe || 'var(--brand)',
+      ausdruck: a.ausdruck,
+      meaning: a.hochdeutsch,
+      depth: HERO_PREVIEW_DEPTHS[picked.length % HERO_PREVIEW_DEPTHS.length]
+    });
+    if (picked.length >= n) break;
+  }
+  // Defensive: bei zu kleiner Datenlage auf die kuratierten Beispiele zurückfallen.
+  while (picked.length < n) {
+    const fb = HERO_FALLBACK_SAMPLES[picked.length % HERO_FALLBACK_SAMPLES.length];
+    picked.push({ ...fb, depth: HERO_PREVIEW_DEPTHS[picked.length % HERO_PREVIEW_DEPTHS.length] });
+  }
+  return picked;
 }
 
 function renderDashboard() {
@@ -375,8 +410,9 @@ function renderSeasonBanner(seasonId) {
 }
 
 function buildWordCarousel() {
-  // Sample of expressive dialect words to cycle through
-  const WORDS = [
+  // Sample of expressive dialect words to cycle through — pro Render gemischt,
+  // damit nicht immer dasselbe Wort zuerst erscheint.
+  const WORDS = shuffle([
     { word: 'Ei guude!',        flag: '🦁', name: 'Hessisch' },
     { word: 'Moin!',            flag: '⚓', name: 'Plattdeutsch' },
     { word: 'Servus!',          flag: '🥨', name: 'Bayerisch' },
@@ -389,7 +425,7 @@ function buildWordCarousel() {
     { word: 'Glück auf!',       flag: '⚒️', name: 'Ruhrdeutsch' },
     { word: 'Heimelig!',        flag: '🌲', name: 'Alemannisch' },
     { word: 'Kehrwoche!',       flag: '🧹', name: 'Schwäbisch' }
-  ];
+  ]);
 
   let idx = 0;
   const wordEl = el('span', { class: 'carousel-word' }, WORDS[0].word);
