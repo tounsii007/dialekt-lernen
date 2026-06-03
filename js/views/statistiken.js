@@ -245,6 +245,7 @@ function renderSrsOptimizer(cfg, repaint) {
     type: 'button',
     onClick: () => {
       optBtn.disabled = true;
+      optBtn.classList.add('is-loading');
       optBtn.textContent = 'Optimiere…';
       // Kurz an den Browser zurückgeben, damit der Button-Text neu zeichnet,
       // bevor die (synchrone) Optimierung läuft.

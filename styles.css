@@ -10716,6 +10716,9 @@ img, svg, video {
   opacity: .5;
   cursor: not-allowed;
 }
+/* Während der (kurzen) Optimierung sanft pulsieren statt statisch ausgegraut */
+.srs-opt-btn.is-loading { animation: srsOptPulse 1s var(--ease) infinite; }
+@keyframes srsOptPulse { 0%, 100% { opacity: .5; } 50% { opacity: .85; } }
 .srs-opt-reset {
   font: inherit;
   font-size: .82rem;
