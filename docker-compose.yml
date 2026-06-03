@@ -1,0 +1,61 @@
+# Dialekto · komplette Stack-Orchestrierung (Frontend + Backend + PostgreSQL).
+#
+#   docker compose up -d --build
+#   → Frontend auf http://localhost:8080  (nginx, proxyt /api an das Backend)
+#
+# Backend und Datenbank sind NICHT nach außen exponiert (nur im internen Netz),
+# der einzige öffentliche Einstieg ist der nginx-Frontend-Container.
+
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: dialekto
+      POSTGRES_USER: dialekto
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dialekto}
+    volumes:
+      - dialekto-pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dialekto -d dialekto"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    restart: unless-stopped
+    networks: [dialekto-net]
+
+  backend:
+    build: ./backend
+    environment:
+      DB_URL: jdbc:postgresql://postgres:5432/dialekto
+      DB_USER: dialekto
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-dialekto}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
+      SERVER_PORT: "8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/actuator/health | grep -q UP || exit 1"]
+      interval: 10s
+      timeout: 4s
+      retries: 12
+      start_period: 45s
+    restart: unless-stopped
+    networks: [dialekto-net]
+
+  frontend:
+    build: .
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    networks: [dialekto-net]
+
+volumes:
+  dialekto-pgdata:
+
+networks:
+  dialekto-net:
+    driver: bridge

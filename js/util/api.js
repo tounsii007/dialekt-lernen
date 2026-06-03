@@ -5,15 +5,24 @@
 // werfen bei Fehlern — die Aufrufer können so auf die lokalen Daten zurückfallen
 // (Offline-/Backend-aus-Fallback), bis die Views vollständig umgestellt sind.
 
-const DEFAULT_BASE = 'http://localhost:8080';
 const LS_BASE   = 'dialekto.apiBase';
 const LS_DEVICE = 'dialekto.deviceId';
 const LS_USER   = 'dialekto.userId';
 
+// Default-Backend-Adresse: im lokalen Dev (Frontend-Server auf :5173) läuft das
+// Backend separat auf :8080; im Docker-/Prod-Setup proxyt nginx /api an das
+// Backend → dann same-origin (leere Basis). Per localStorage überschreibbar.
+function defaultBase() {
+  try {
+    if (location.port === '5173') return 'http://localhost:8080';
+  } catch { /* ignore */ }
+  return '';
+}
+
 function lsGet(k) { try { return localStorage.getItem(k); } catch { return null; } }
 function lsSet(k, v) { try { localStorage.setItem(k, v); } catch { /* ignore */ } }
 
-export function getApiBase() { return lsGet(LS_BASE) || DEFAULT_BASE; }
+export function getApiBase() { return lsGet(LS_BASE) || defaultBase(); }
 export function setApiBase(url) { lsSet(LS_BASE, url); }
 
 /** Anonyme, stabile Geräte-ID (wird bei Bedarf erzeugt). */

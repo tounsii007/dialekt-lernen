@@ -1,0 +1,11 @@
+backend/
+mobile/
+tools/
+tests/
+node_modules/
+.git/
+.github/
+.claude/
+*.md
+*.log
+styles.css.map
