@@ -8912,6 +8912,22 @@ img, svg, video {
   color: var(--danger);
   border-color: var(--danger);
 }
+/* „Scharfer" Zustand: zweiter Klick löscht endgültig */
+.long-goal-remove.is-armed {
+  width: auto;
+  padding: 0 12px;
+  border-radius: var(--r-pill);
+  background: var(--danger);
+  color: #fff;
+  border-color: transparent;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.long-goal-remove.is-armed:hover {
+  background: var(--danger);
+  color: #fff;
+  filter: brightness(1.08);
+}
 
 .long-goal-meta {
   display: flex;
@@ -10867,9 +10883,9 @@ img, svg, video {
 .set-danger { color: var(--danger); }
 .set-danger:hover { background: var(--danger-soft); }
 
-/* Zweistufige Reset-Bestätigung (inline statt window.confirm) */
-.set-reset { width: 100%; }
-.set-reset-confirm {
+/* Zweistufige Inline-Bestätigung (app-weit, ersetzt window.confirm) */
+.inline-confirm { width: 100%; }
+.inline-confirm-box {
   display: flex; flex-direction: column; gap: var(--sp-3);
   padding: var(--sp-3);
   border: 1px solid color-mix(in oklab, var(--danger) 55%, transparent);
@@ -10877,11 +10893,11 @@ img, svg, video {
   background: var(--danger-soft);
   animation: setSectionIn 0.22s var(--ease) both;
 }
-.set-reset-warn { font-size: 0.84rem; color: var(--text); line-height: 1.5; }
-.set-reset-actions { display: flex; gap: var(--sp-2); }
-.set-reset-actions .btn { flex: 1; width: auto; justify-content: center; }
-.set-danger-solid { background: var(--danger); color: #fff; border-color: transparent; }
-.set-danger-solid:hover { filter: brightness(1.08); background: var(--danger); color: #fff; }
+.inline-confirm-msg { font-size: 0.84rem; color: var(--text); line-height: 1.5; }
+.inline-confirm-actions { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
+.inline-confirm-actions .btn { flex: 1 1 120px; width: auto; justify-content: center; }
+.inline-confirm-go { background: var(--danger); color: #fff; border-color: transparent; }
+.inline-confirm-go:hover { filter: brightness(1.08); background: var(--danger); color: #fff; }
 
 /* UX-Politur: gestaffelte Sektion-Einblendung beim Öffnen des Drawers */
 @keyframes setSectionIn {

@@ -632,15 +632,29 @@ function renderLongGoalRow(g, body) {
   return el('article', { class: 'long-goal-row' + (g.done ? ' is-done' : '') },
     el('div', { class: 'long-goal-head' },
       el('div', { class: 'long-goal-label' }, g.label),
-      el('button', {
-        class: 'long-goal-remove',
-        title: 'Ziel entfernen',
-        onClick: () => {
-          if (!confirm(`Ziel „${g.label}" wirklich löschen?`)) return;
-          removeLongGoal(g.id);
-          refreshLongGoalsBody(body);
-        }
-      }, '✕')
+      (() => {
+        // Zweiklick-Bestätigung direkt am Button (kein blockierendes confirm,
+        // platzsparend für die Zeile): erster Klick „scharf", zweiter löscht.
+        const btn = el('button', { class: 'long-goal-remove', title: 'Ziel entfernen' }, '✕');
+        let armed = false, t = null;
+        btn.addEventListener('click', () => {
+          if (!armed) {
+            armed = true;
+            btn.classList.add('is-armed');
+            btn.textContent = 'Löschen?';
+            btn.title = 'Nochmal klicken zum endgültigen Löschen';
+            t = setTimeout(() => {
+              armed = false; btn.classList.remove('is-armed');
+              btn.textContent = '✕'; btn.title = 'Ziel entfernen';
+            }, 4000);
+          } else {
+            clearTimeout(t);
+            removeLongGoal(g.id);
+            refreshLongGoalsBody(body);
+          }
+        });
+        return btn;
+      })()
     ),
     el('div', { class: 'long-goal-meta' },
       el('span', {}, `${g.current} / ${g.target}`),

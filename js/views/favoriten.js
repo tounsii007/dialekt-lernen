@@ -1,4 +1,5 @@
 import { el, go } from '../util.js';
+import { inlineConfirm } from '../util/inline-confirm.js';
 import {
   speak, isSpeechSupported, getSpeechSettings, setSpeechSettings,
   listVoices, onVoicesChanged, getSpeechStatus,
@@ -637,16 +638,17 @@ function renderDataTools() {
           toast(`${ALLE_AUSDRUECKE.length} Ausdrücke als CSV exportiert 📚`, 'success', 1800);
         }
       }, '📚 Alle als CSV (Anki)'),
-      el('button', {
-        class: 'btn btn-ghost danger-btn',
-        onClick: () => {
-          if (confirm('Alle Daten wirklich zurücksetzen? Theme bleibt erhalten.')) {
-            resetAllData({ keepTheme: true });
-            toast('Daten zurückgesetzt — Seite wird neu geladen', 'info', 1600);
-            setTimeout(() => window.location.reload(), 900);
-          }
+      inlineConfirm({
+        label: '🗑️ Zurücksetzen',
+        triggerClass: 'btn btn-ghost danger-btn',
+        message: 'Alle Daten wirklich zurücksetzen? (Theme bleibt erhalten.)',
+        confirmLabel: 'Ja, zurücksetzen',
+        onConfirm: () => {
+          resetAllData({ keepTheme: true });
+          toast('Daten zurückgesetzt — Seite wird neu geladen', 'info', 1600);
+          setTimeout(() => window.location.reload(), 900);
         }
-      }, '🗑️ Zurücksetzen'),
+      }),
       fileInput
     )
   );

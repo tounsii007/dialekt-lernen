@@ -21,6 +21,7 @@ import {
 } from '../store/settings.js';
 import { getGoalTarget, setGoalTarget, getGoalOptions } from '../store/goals.js';
 import { APP_VERSION_LABEL, DIALEKT_COUNT, AUSDRUCK_COUNT, REPO_URL } from '../version.js';
+import { inlineConfirm } from '../util/inline-confirm.js';
 
 const THEMES = [
   { id: 'light',    label: 'Hell',    icon: '☀️' },
@@ -201,7 +202,12 @@ function buildPanel() {
   body.appendChild(section('Daten', '🗄️',
     el('div', { class: 'set-data-row' },
       el('button', { class: 'btn btn-secondary', onClick: () => { try { downloadStateFile(); toast('Backup heruntergeladen', 'success', 1800); } catch { toast('Export fehlgeschlagen', 'error', 2200); } } }, '⬇ Backup exportieren'),
-      buildResetControl()
+      inlineConfirm({
+        label: '🗑 Alle Daten zurücksetzen',
+        message: 'Wirklich ALLE Daten löschen? Fortschritt, XP, Favoriten & Einstellungen gehen unwiderruflich verloren.',
+        confirmLabel: 'Ja, alles löschen',
+        onConfirm: () => { try { resetAllData(); } catch {} },
+      })
     )
   ));
 
@@ -250,44 +256,6 @@ function buildGoalControl() {
       onClick: () => { setGoalTarget(n); paint(); }
     }, String(n)));
   });
-  return wrap;
-}
-
-// Zweistufige Inline-Bestätigung statt blockierendem window.confirm().
-function buildResetControl() {
-  const wrap = el('div', { class: 'set-reset' });
-  let revertTimer = null;
-
-  const renderIdle = () => {
-    if (revertTimer) { clearTimeout(revertTimer); revertTimer = null; }
-    wrap.innerHTML = '';
-    wrap.appendChild(el('button', {
-      type: 'button', class: 'btn btn-ghost set-danger',
-      onClick: renderConfirm
-    }, '🗑 Alle Daten zurücksetzen'));
-  };
-
-  const renderConfirm = () => {
-    wrap.innerHTML = '';
-    const box = el('div', { class: 'set-reset-confirm' },
-      el('div', { class: 'set-reset-warn' },
-        '⚠️ Wirklich ALLE Daten löschen? Fortschritt, XP, Favoriten & Einstellungen gehen unwiderruflich verloren.'),
-      el('div', { class: 'set-reset-actions' },
-        el('button', { type: 'button', class: 'btn btn-ghost', onClick: renderIdle }, 'Abbrechen'),
-        el('button', {
-          type: 'button', class: 'btn set-danger-solid',
-          onClick: () => { try { resetAllData(); } catch {} }
-        }, 'Ja, alles löschen')
-      )
-    );
-    wrap.appendChild(box);
-    // Auto-Rückfall nach 6 s, falls keine Entscheidung getroffen wird.
-    revertTimer = setTimeout(renderIdle, 6000);
-    const cancelBtn = box.querySelector('.btn-ghost');
-    if (cancelBtn) cancelBtn.focus();
-  };
-
-  renderIdle();
   return wrap;
 }
 
