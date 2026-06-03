@@ -167,8 +167,8 @@ function startSession(host, source, count) {
       el('button', { class: 'btn btn-ghost klangpaare-slow-btn', onClick: playSlow }, '🐢 Langsam')
     );
 
-    const optionsWrap = el('div', { class: 'klangpaare-options' });
-    const result = el('div', { class: 'shadow-result klangpaare-result' });
+    const optionsWrap = el('div', { class: 'klangpaare-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten' });
+    const result = el('div', { class: 'shadow-result klangpaare-result', 'aria-live': 'assertive', 'aria-atomic': 'true' });
     const actionRow = el('div', { class: 'shadow-action-row' });
     let answered = false;
 

@@ -235,7 +235,7 @@ function renderMemoryCard(card) {
       el('div', { class: 'memory-card-face memory-card-back' },
         el('span', { class: 'memory-card-back-mark' }, '?')
       ),
-      el('div', { class: 'memory-card-face memory-card-front' },
+      el('div', { class: 'memory-card-face memory-card-front', 'aria-hidden': 'true' },
         el('div', { class: 'memory-card-flag' }, card.dialektFlag || ''),
         el('div', { class: 'memory-card-text' }, card.text),
         el('div', { class: 'memory-card-side' },
@@ -302,6 +302,21 @@ function setFlipped(cardId, on, cls) {
   const node = document.querySelector(`[data-mem-card="${cardId}"]`);
   if (!node) return;
   node.classList.toggle(cls, on);
+  // A11y: eine verdeckte Karte darf ihren Inhalt nicht verraten (sonst könnten
+  // Screenreader die Lösung vorlesen). Aufgedeckt/gematcht liest der
+  // Screenreader den Text + die Seite statt „umdrehen".
+  const front = node.querySelector('.memory-card-front');
+  if (on) {
+    const card = activeGame?.cards.find(c => c.id === cardId);
+    if (card) {
+      const seite = card.side === 'ausdruck' ? 'Dialekt' : 'Hochdeutsch';
+      node.setAttribute('aria-label', `${card.text}, ${seite}`);
+    }
+    if (front) front.removeAttribute('aria-hidden');
+  } else {
+    node.setAttribute('aria-label', 'Memory-Karte umdrehen');
+    if (front) front.setAttribute('aria-hidden', 'true');
+  }
 }
 
 function finishGame() {
