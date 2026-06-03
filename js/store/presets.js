@@ -96,6 +96,36 @@ export function getPreset() {
   return state.preset || 'default';
 }
 
+// Ist der effektiv aktive Modus dunkel? (explizit dark, oder auto + System dunkel)
+function isDarkActive() {
+  const t = document.documentElement.getAttribute('data-theme');
+  if (t === 'dark') return true;
+  if (t === 'auto') {
+    return typeof window !== 'undefined' && window.matchMedia
+      && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  }
+  return false; // light, contrast → volle Farben
+}
+
+// Dämpft einen Preset-Farbwert für den Dunkelmodus: gesättigte, helle Presets
+// (z.B. Sunset) wirken sonst auf dunklem Grund grell. Reduziert Lightness
+// (und bei --brand-s die Sättigung) moderat. Wirkt damit app-weit auf jede
+// Fläche/jeden Akzent, der die Brand-Variablen nutzt.
+const DARK_L_DROP = 8;   // Prozentpunkte Lightness
+const DARK_S_DROP = 6;   // Prozentpunkte Sättigung (nur --brand-s)
+function dimVarForDark(key, value) {
+  const v = String(value).trim();
+  if (key === '--brand-l') return Math.max(34, parseFloat(v) - DARK_L_DROP) + '%';
+  if (key === '--brand-s') return Math.max(45, parseFloat(v) - DARK_S_DROP) + '%';
+  // hsl(H S% L%) — nur die Lightness (dritter Wert) reduzieren.
+  const m = v.match(/^hsl\(\s*([\d.]+)\s+([\d.]+)%\s+([\d.]+)%\s*\)$/i);
+  if (m) {
+    const l = Math.max(34, parseFloat(m[3]) - DARK_L_DROP);
+    return `hsl(${m[1]} ${m[2]}% ${l}%)`;
+  }
+  return value; // unbekanntes Format → unverändert
+}
+
 export function applyPreset(id = getPreset()) {
   const root = document.documentElement;
   // Vorher alle Custom-Vars zurücksetzen, um sauber zu wechseln.
@@ -104,8 +134,9 @@ export function applyPreset(id = getPreset()) {
   allVars.forEach((k) => root.style.removeProperty(k));
 
   const preset = PRESETS.find((p) => p.id === id) || PRESETS[0];
+  const dark = isDarkActive();
   for (const [k, v] of Object.entries(preset.vars)) {
-    root.style.setProperty(k, v);
+    root.style.setProperty(k, dark ? dimVarForDark(k, v) : v);
   }
   root.dataset.preset = preset.id;
 }

@@ -32,8 +32,18 @@ export function initTheme() {
   if (btn) {
     btn.addEventListener('click', () => {
       const next = cycleTheme();
+      // Preset neu anwenden — die Farbdämpfung hängt vom (neuen) Modus ab.
+      applyPreset();
       const label = t(THEME_LABELS_KEYS[next] || next);
       toast(`Modus: ${label}`, 'info', THEME_TOAST_MS);
+    });
+  }
+
+  // Bei „auto" auf System-Hell/Dunkel-Wechsel reagieren, damit die
+  // Preset-Dämpfung (Dunkelmodus) zur Laufzeit korrekt bleibt.
+  if (typeof window !== 'undefined' && window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if (document.documentElement.getAttribute('data-theme') === 'auto') applyPreset();
     });
   }
 
