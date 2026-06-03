@@ -142,51 +142,61 @@
 }
 
 [data-theme="dark"] {
-  --bg: hsl(240 25% 7%);
-  --bg-elev: hsl(240 22% 11%);
-  --bg-soft: hsl(240 20% 14%);
-  --surface: rgba(28, 28, 48, 0.55);
-  --surface-strong: rgba(28, 28, 48, 0.85);
-  --border: hsl(240 15% 22%);
-  --border-strong: hsl(240 15% 30%);
+  /* Etwas entsättigtes, elegantes Dunkel (statt grellem Blau-Violett) +
+     bessere Elevation-Abstufung. */
+  --bg: hsl(240 16% 8%);
+  --bg-elev: hsl(240 14% 12%);
+  --bg-soft: hsl(240 13% 16%);
+  --surface: rgba(30, 31, 46, 0.58);
+  --surface-strong: rgba(30, 31, 46, 0.9);
+  --border: hsl(240 13% 25%);
+  --border-strong: hsl(240 13% 34%);
   --text: hsl(240 15% 96%);
-  --text-soft: hsl(240 10% 75%);
-  --text-muted: hsl(240 10% 55%);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .15);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, .35), 0 2px 6px rgba(0, 0, 0, .2);
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, .5), 0 8px 20px rgba(0, 0, 0, .3);
-  --glow: 0 0 80px hsl(var(--brand-h) var(--brand-s) 60% / .4);
+  --text-soft: hsl(240 12% 80%);
+  --text-muted: hsl(240 11% 64%);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 8px rgba(0, 0, 0, .18);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, .4), 0 2px 6px rgba(0, 0, 0, .24);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, .55), 0 8px 20px rgba(0, 0, 0, .34);
+  --glow: 0 0 80px hsl(var(--brand-h) var(--brand-s) 62% / .42);
+
+  /* Akzent-Tints auf dunklem Grund kräftiger, damit aktive Zustände/Badges
+     sichtbar sind (palette-folgend über --brand-h/-s). */
+  --brand-soft: hsl(var(--brand-h) var(--brand-s) 72% / .24);
+  --accent-soft: hsl(165 66% 56% / .2);
 
   /* State colors — brighter on dark surfaces for AA contrast */
-  --success: hsl(152 55% 52%);
-  --success-soft: hsl(152 55% 52% / .16);
-  --danger: hsl(0 80% 66%);
-  --danger-soft: hsl(0 80% 66% / .16);
-  --warning: hsl(38 92% 60%);
-  --warning-soft: hsl(38 92% 60% / .18);
+  --success: hsl(152 55% 56%);
+  --success-soft: hsl(152 55% 56% / .18);
+  --danger: hsl(0 80% 68%);
+  --danger-soft: hsl(0 80% 68% / .18);
+  --warning: hsl(38 92% 62%);
+  --warning-soft: hsl(38 92% 62% / .2);
 }
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --bg: hsl(240 25% 7%);
-    --bg-elev: hsl(240 22% 11%);
-    --bg-soft: hsl(240 20% 14%);
-    --surface: rgba(28, 28, 48, 0.55);
-    --surface-strong: rgba(28, 28, 48, 0.85);
-    --border: hsl(240 15% 22%);
-    --border-strong: hsl(240 15% 30%);
+    --bg: hsl(240 16% 8%);
+    --bg-elev: hsl(240 14% 12%);
+    --bg-soft: hsl(240 13% 16%);
+    --surface: rgba(30, 31, 46, 0.58);
+    --surface-strong: rgba(30, 31, 46, 0.9);
+    --border: hsl(240 13% 25%);
+    --border-strong: hsl(240 13% 34%);
     --text: hsl(240 15% 96%);
-    --text-soft: hsl(240 10% 75%);
-    --text-muted: hsl(240 10% 55%);
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .25), 0 2px 8px rgba(0, 0, 0, .15);
-    --shadow-md: 0 8px 30px rgba(0, 0, 0, .35), 0 2px 6px rgba(0, 0, 0, .2);
-    --shadow-lg: 0 20px 60px rgba(0, 0, 0, .5), 0 8px 20px rgba(0, 0, 0, .3);
-    --success: hsl(152 55% 52%);
-    --success-soft: hsl(152 55% 52% / .16);
-    --danger: hsl(0 80% 66%);
-    --danger-soft: hsl(0 80% 66% / .16);
-    --warning: hsl(38 92% 60%);
-    --warning-soft: hsl(38 92% 60% / .18);
+    --text-soft: hsl(240 12% 80%);
+    --text-muted: hsl(240 11% 64%);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 8px rgba(0, 0, 0, .18);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, .4), 0 2px 6px rgba(0, 0, 0, .24);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, .55), 0 8px 20px rgba(0, 0, 0, .34);
+    --glow: 0 0 80px hsl(var(--brand-h) var(--brand-s) 62% / .42);
+    --brand-soft: hsl(var(--brand-h) var(--brand-s) 72% / .24);
+    --accent-soft: hsl(165 66% 56% / .2);
+    --success: hsl(152 55% 56%);
+    --success-soft: hsl(152 55% 56% / .18);
+    --danger: hsl(0 80% 68%);
+    --danger-soft: hsl(0 80% 68% / .18);
+    --warning: hsl(38 92% 62%);
+    --warning-soft: hsl(38 92% 62% / .2);
   }
 }
 
