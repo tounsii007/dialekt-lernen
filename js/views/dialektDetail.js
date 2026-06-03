@@ -45,6 +45,7 @@ export function renderDialektDetail(root, dialektId) {
   const ringSvg = el('svg', {
     width: 72, height: 72, viewBox: '0 0 72 72',
     class: 'detail-ring',
+    role: 'img', 'aria-label': `Lernfortschritt: ${pct}% gelernt`,
     html: `
       <circle cx="36" cy="36" r="${R}" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="6"/>
       <circle cx="36" cy="36" r="${R}" fill="none" stroke="white" stroke-width="6"
@@ -258,7 +259,7 @@ function renderDialectAudioSection(d) {
   if (words.length) {
     const det = el('details', { class: 'forvo-section' });
     det.appendChild(el('summary', { class: 'forvo-summary' },
-      el('span', { class: 'forvo-icon' }, '🎧'),
+      el('span', { class: 'forvo-icon', 'aria-hidden': 'true' }, '🎧'),
       el('span', { class: 'forvo-label' }, 'Von Muttersprachlern gesprochen'),
       el('span', { class: 'forvo-count' }, `${words.length} Wörter`)
     ));
@@ -314,7 +315,7 @@ function renderRelatedSection(a, dialekt) {
 
   const sec = el('div', { class: 'related-section', dataset: { reveal: '' } });
   sec.appendChild(el('div', { class: 'related-head' },
-    el('span', { class: 'related-icon' }, '🔗'),
+    el('span', { class: 'related-icon', 'aria-hidden': 'true' }, '🔗'),
     el('span', { class: 'related-title' }, 'Siehe auch')
   ));
   const list = el('div', { class: 'related-list' });
@@ -346,7 +347,7 @@ function renderPronunciationSection(a, dialekt) {
 
   const sec = el('details', { class: 'pron-section' });
   sec.appendChild(el('summary', { class: 'pron-summary' },
-    el('span', { class: 'pron-icon' }, '🔊'),
+    el('span', { class: 'pron-icon', 'aria-hidden': 'true' }, '🔊'),
     el('span', { class: 'pron-label' }, 'Aussprache'),
     el('span', { class: 'pron-ipa-mini' }, ipa)
   ));
@@ -428,7 +429,7 @@ function drawEnvelopes(canvas, refEnv, userEnv) {
       ctx.stroke();
     }
   };
-  plot(refEnv, { fill: 'rgba(124,92,255,.16)' });
+  plot(refEnv, { fill: `color-mix(in oklab, ${brand} 18%, transparent)` });
   plot(userEnv ? normalizeEnvelope(userEnv) : null, { stroke: brand, lw: 2.5 });
 }
 
@@ -439,7 +440,7 @@ function drawEnvelopes(canvas, refEnv, userEnv) {
 function renderPracticeWidget(a, lang, sylCount) {
   const wrap = el('div', { class: 'pron-practice' });
   wrap.appendChild(el('div', { class: 'pron-practice-head' },
-    el('span', { class: 'pron-practice-icon' }, '🎙️'),
+    el('span', { class: 'pron-practice-icon', 'aria-hidden': 'true' }, '🎙️'),
     el('span', { class: 'pron-practice-title' }, 'Aussprache üben'),
     el('span', { class: 'pron-practice-hint' }, `${sylCount} Silbe${sylCount === 1 ? '' : 'n'}`)
   ));
@@ -576,7 +577,7 @@ function renderEtymologySection(a) {
 
   const sec = el('details', { class: 'etymology-section' });
   sec.appendChild(el('summary', { class: 'etymology-summary' },
-    el('span', { class: 'etymology-icon' }, '📜'),
+    el('span', { class: 'etymology-icon', 'aria-hidden': 'true' }, '📜'),
     el('span', { class: 'etymology-label' }, 'Etymologie'),
     el('span', { class: 'etymology-count' }, `${sentences.length} Hinweis${sentences.length === 1 ? '' : 'e'}`)
   ));
