@@ -44,13 +44,44 @@ const HERO_LEDES = [
   'Ob „Moin", „Servus" oder „Grüezi" — entdecke, was die Regionen sprachlich ausmacht, und lerne die schönsten Ausdrücke spielerisch.',
   'Karteikarten, Quiz und Aussprache: Lerne lebendige Mundart aus Deutschland, Österreich und der Schweiz — Schritt für Schritt.'
 ];
-function pickHeroCopy() {
-  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
-  return {
-    eyebrow: pick(HERO_EYEBROWS),
-    headline: pick(HERO_HEADLINES),
-    lede: pick(HERO_LEDES)
+const pickRandom = arr => arr[Math.floor(Math.random() * arr.length)];
+
+// Baut den Inhalt der Hero-Überschrift inkl. hervorgehobenem Gradient-Teil.
+// Jede Variante bekommt eine andere Gradient-Startphase (--grad-phase), sodass
+// der animierte Farbverlauf bei jedem Wechsel sichtbar anders einsetzt.
+function fillHeadline(item, host, step = 0) {
+  const grad = el('span', { class: 'grad' }, item.grad);
+  grad.style.setProperty('--grad-phase', (step * 37) % 100 + '%');
+  host.replaceChildren(
+    document.createTextNode(item.prefix),
+    grad,
+    document.createTextNode(item.suffix)
+  );
+}
+
+// Lässt den Inhalt von `host` sanft durch `items` rotieren (Fade/Slide), pausiert
+// bei Hover, stoppt sich selbst beim View-Wechsel und respektiert reduced-motion.
+function rotateText(host, items, renderItem, intervalMs) {
+  const order = shuffle(items);
+  let idx = 0;
+  renderItem(order[0], host, 0);
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || order.length < 2) return;
+  let timer = null;
+  const tick = () => {
+    if (!host.isConnected) { clearInterval(timer); timer = null; return; }
+    host.classList.add('is-fading');
+    setTimeout(() => {
+      idx = (idx + 1) % order.length;
+      renderItem(order[idx], host, idx);
+      host.classList.remove('is-fading');
+    }, 320);
   };
+  const start = () => { if (!timer) timer = setInterval(tick, intervalMs); };
+  const stop = () => { clearInterval(timer); timer = null; };
+  setTimeout(start, intervalMs);
+  host.addEventListener('mouseenter', stop);
+  host.addEventListener('mouseleave', start);
 }
 
 // „Wusstest du?" — kurze, allgemein anerkannte Fakten rund um die Dialekte.
@@ -101,21 +132,19 @@ export function renderHome(root, params = {}) {
     view.appendChild(renderSeasonBanner(seasonId));
   }
 
-  // Hero — Texte pro Render variierend (Eyebrow / Headline / Beschreibung)
-  const heroCopy = pickHeroCopy();
+  // Hero — Eyebrow zufällig; Überschrift & Beschreibung rotieren live durch ihre
+  // Varianten (Fade/Slide + wechselnder Farb-Akzent), pausieren bei Hover.
+  const heroHeadline = el('h1', { class: 'hero-rotator' });
+  const heroLede = el('p', { class: 'hero-rotator' });
   view.appendChild(el('section', { class: 'hero' },
     el('div', {},
       el('span', { class: 'hero-eyebrow' },
         el('span', { html: '✨' }),
-        heroCopy.eyebrow
+        pickRandom(HERO_EYEBROWS)
       ),
-      el('h1', {},
-        heroCopy.headline.prefix,
-        el('span', { class: 'grad' }, heroCopy.headline.grad),
-        heroCopy.headline.suffix
-      ),
+      heroHeadline,
       buildWordCarousel(),
-      el('p', {}, heroCopy.lede),
+      heroLede,
       el('div', { class: 'hero-cta' },
         el('button', { class: 'btn btn-primary', dataset: { magnetic: '16' }, onClick: () => go('#/entdecken') },
           'Dialekte entdecken',
@@ -149,6 +178,9 @@ export function renderHome(root, params = {}) {
     ),
     renderHeroPreview()
   ));
+  // Live-Rotation der Hero-Texte starten (versetzte Intervalle → ruhiger Wechsel)
+  rotateText(heroHeadline, HERO_HEADLINES, fillHeadline, 6500);
+  rotateText(heroLede, HERO_LEDES, (text, host) => { host.textContent = text; }, 8500);
 
   // Personal dashboard — "Heute lernen" + Recent + Activity (kritisch, sofort)
   const dash = renderDashboard();

@@ -2174,17 +2174,35 @@ a { color: inherit; text-decoration: none; }
 
 /* Hero — modern gradient title with subtle shimmer */
 .hero h1 .grad {
-  background: linear-gradient(110deg, var(--brand), var(--brand-2) 35%, var(--pink) 65%, var(--accent-2));
-  background-size: 220% 100%;
-  background-position: 0% 50%;
+  background: linear-gradient(110deg,
+    var(--brand), var(--brand-2) 25%, var(--pink) 45%, var(--accent-2) 65%, var(--brand-2) 85%, var(--brand));
+  background-size: 300% 100%;
+  background-position: var(--grad-phase, 0%) 50%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation: gradShift 9s var(--ease) infinite;
+  animation: gradShift 6s linear infinite;
 }
 @keyframes gradShift {
-  0%, 100% { background-position: 0% 50%; }
-  50%      { background-position: 100% 50%; }
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
+
+/* Live rotierende Hero-Texte (Überschrift + Beschreibung): sanfter Fade/Slide
+   beim Wechsel. .is-fading wird kurz vor dem Inhaltswechsel gesetzt. */
+.hero-rotator {
+  transition: opacity 0.34s var(--ease), transform 0.34s var(--ease), filter 0.34s var(--ease);
+  will-change: opacity, transform;
+}
+.hero-rotator.is-fading {
+  opacity: 0;
+  transform: translateY(0.5em);
+  filter: blur(3px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 .grad { animation: none; background-position: 0% 50%; }
+  .hero-rotator { transition: opacity 0.2s linear; }
+  .hero-rotator.is-fading { transform: none; filter: none; }
 }
 
 .hero-eyebrow {
