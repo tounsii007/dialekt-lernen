@@ -16,9 +16,6 @@ import { state } from './store/state.js';
 import { renderHome } from './views/home.js';
 import { renderEntdecken } from './views/entdecken.js';
 import { renderDialektDetail } from './views/dialektDetail.js';
-import { renderFavoriten } from './views/favoriten.js';
-import { renderKarte } from './views/karte.js';
-import { renderStatistiken } from './views/statistiken.js';
 
 const DEFAULT_ROUTE = 'home';
 
@@ -46,6 +43,9 @@ const ROUTE_LABELS = {
 
 // Lazy: erst beim Bedarf laden + danach gecached.
 const lazyLoaders = {
+  favoriten:   () => import('./views/favoriten.js'),
+  karte:       () => import('./views/karte.js'),
+  statistiken: () => import('./views/statistiken.js'),
   lernen:    () => import('./views/lernen.js'),
   quiz:      () => import('./views/quiz.js'),
   vergleich: () => import('./views/vergleich.js'),
@@ -118,12 +118,24 @@ async function renderRoute(app, route, segs, params) {
       return renderEntdecken(app);
     case 'dialekt':
       return renderDialektDetail(app, segs[1]);
-    case 'favoriten':
-      return renderFavoriten(app);
-    case 'karte':
-      return renderKarte(app);
-    case 'statistiken':
-      return renderStatistiken(app);
+    case 'favoriten': {
+      showSkeleton(app, 'grid');
+      const m = await loadLazy('favoriten');
+      if (!m) return;
+      return m.renderFavoriten(app);
+    }
+    case 'karte': {
+      showSkeleton(app, 'grid');
+      const m = await loadLazy('karte');
+      if (!m) return;
+      return m.renderKarte(app);
+    }
+    case 'statistiken': {
+      showSkeleton(app, 'grid');
+      const m = await loadLazy('statistiken');
+      if (!m) return;
+      return m.renderStatistiken(app);
+    }
     case 'lernen': {
       if (!lernenModule) {
         showSkeleton(app, 'flashcard');
