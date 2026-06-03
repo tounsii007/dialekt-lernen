@@ -18,9 +18,6 @@ export const SUPPORTED = ['de', 'en', 'tr', 'fr', 'es'];
 export const LANGUAGE_NAMES = {
   de: 'Deutsch', en: 'English', tr: 'Türkçe', fr: 'Français', es: 'Español'
 };
-export const LANGUAGE_FLAGS = {
-  de: '🇩🇪', en: '🇬🇧', tr: '🇹🇷', fr: '🇫🇷', es: '🇪🇸'
-};
 
 const STRINGS = {
   de: {

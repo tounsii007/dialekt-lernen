@@ -6,7 +6,7 @@ export default {
   name: 'Tirolerisch',
   region: 'Tirol',
   bundesland: 'Tirol (Österreich)',
-  flag: '🇦🇹',
+  flag: '⛰️',
   farbe: '#c1121f',
   beschreibung: 'Tirolerisch gehört zu den bairischen Dialekten und wird in Nord- und Osttirol sowie (als Südtirolerisch) in Südtirol gesprochen. Charakteristisch sind das kräftige, gerollte „R", die alpenländische Färbung und viele Wörter aus Almwirtschaft, Bergbauerntum und Brauchtum. Der Tonfall gilt als herzhaft und urig.',
   sprecher: 'ca. 0,9 Mio.',
