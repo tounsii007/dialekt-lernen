@@ -4913,10 +4913,20 @@ html.is-speaking .is-speakable {
   margin-left: auto;
 }
 @media (max-width: 880px) {
-  .search-trigger {
-    min-width: 0;
-    padding: 0 12px;
+  /* Topbar-Icons einheitlich darstellen: Suche wird Icon-only und teilt
+     Form/Größe/Hintergrund mit Theme- und Einstellungs-Button. */
+  .topbar-actions .search-trigger,
+  .topbar-actions .icon-btn {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 auto;
+    padding: 0;
+    justify-content: center;
+    border-radius: var(--r-md);
+    background: color-mix(in oklab, var(--bg-elev) 72%, transparent);
+    border: 1px solid var(--border);
   }
+  .topbar-actions .search-trigger svg { width: 20px; height: 20px; }
   .search-trigger-text { display: none; }
   .search-trigger-kbd { display: none; }
 }
