@@ -60,6 +60,9 @@ export function renderKarte(root) {
         '--dc': d.farbe
       },
       title: `${d.name} — ${d.region}`,
+      'aria-label': `${d.name}, ${pos.label}. ` + (stats.gelernt > 0
+        ? `${stats.gelernt} von ${d.ausdruecke.length} gelernt`
+        : `${d.ausdruecke.length} Ausdrücke`),
       onClick: () => go(`#/dialekt/${d.id}`)
     });
 

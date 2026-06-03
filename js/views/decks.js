@@ -27,10 +27,11 @@ function deckColorRow(initialColor) {
   const row = el('div', { class: 'deck-swatch-row' });
   function paint() {
     row.innerHTML = '';
-    COLOR_PRESETS.forEach(c => {
+    COLOR_PRESETS.forEach((c, i) => {
       row.appendChild(el('button', {
         type: 'button',
-        'aria-label': `Farbe ${c}`,
+        'aria-label': `Farbe ${i + 1} von ${COLOR_PRESETS.length}`,
+        'aria-pressed': c === selected ? 'true' : 'false',
         title: c,
         class: 'deck-swatch' + (c === selected ? ' is-selected' : ''),
         style: { background: c },

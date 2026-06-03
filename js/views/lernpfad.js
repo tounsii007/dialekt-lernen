@@ -79,7 +79,7 @@ function renderNode(n, i) {
     style: { '--dc': n.farbe },
     'aria-label': n.unlocked
       ? `${n.name} lernen — ${n.learned} von ${n.goal} gelernt`
-      : `${n.name} gesperrt`,
+      : `${n.name} gesperrt — meistere zuerst den vorherigen Dialekt`,
     title: n.unlocked ? `${n.name} · ${n.learned}/${n.goal}` : `${n.name} (gesperrt)`,
     onClick,
   },
