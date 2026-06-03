@@ -8,18 +8,18 @@ import { icon } from '../util/icons.js';
 // Geografische Positionen (% left, % top) für jede Dialekt-ID
 // Grobverortung auf einer Deutschland/AT/CH-Karte (0,0 = links oben)
 const GEO = {
-  plattdeutsch:   { x: 52, y: 10, label: 'Norden' },
-  berlinisch:     { x: 76, y: 26, label: 'Nordosten' },
-  ruhrdeutsch:    { x: 36, y: 36, label: 'Ruhrgebiet' },
-  saechsisch:     { x: 73, y: 44, label: 'Osten' },
-  fraenkisch:     { x: 62, y: 60, label: 'Nordbayern' },
-  hessisch:       { x: 50, y: 52, label: 'Mitte' },
-  koelsch:        { x: 34, y: 48, label: 'Rheinland' },
-  schwaebisch:    { x: 52, y: 74, label: 'Südwesten' },
-  alemannisch:    { x: 40, y: 83, label: 'Oberrhein' },
-  bayerisch:      { x: 70, y: 80, label: 'Süden' },
-  wienerisch:     { x: 91, y: 84, label: 'Österreich' },
-  schwizerduetsch:{ x: 50, y: 95, label: 'Schweiz' }
+  plattdeutsch:   { x: 42, y: 15, label: 'Norden' },
+  berlinisch:     { x: 65, y: 27, label: 'Nordosten' },
+  ruhrdeutsch:    { x: 22, y: 44, label: 'Ruhrgebiet' },
+  koelsch:        { x: 18, y: 51, label: 'Rheinland' },
+  saechsisch:     { x: 68, y: 44, label: 'Osten' },
+  hessisch:       { x: 44, y: 51, label: 'Mitte' },
+  fraenkisch:     { x: 58, y: 59, label: 'Nordbayern' },
+  schwaebisch:    { x: 40, y: 67, label: 'Südwesten' },
+  bayerisch:      { x: 60, y: 68, label: 'Süden' },
+  alemannisch:    { x: 26, y: 70, label: 'Oberrhein' },
+  wienerisch:     { x: 82, y: 78, label: 'Österreich' },
+  schwizerduetsch:{ x: 29, y: 84, label: 'Schweiz' }
 };
 
 export function renderKarte(root) {
@@ -129,31 +129,30 @@ function getDialektProgress(d) {
 }
 
 function buildMapBackground() {
-  // Stilisierte D/AT/CH Silhouette als SVG-Pfad (sehr vereinfacht)
+  // Vereinfachte, aber erkennbare Umrisse von Deutschland, Österreich und der
+  // Schweiz (viewBox 100×105, Norden oben). Geografisch grob projiziert:
+  // schmaler Norden (Schleswig-Holstein), breiter Süden mit Bayern; Österreich
+  // langgestreckt im Südosten; Schweiz kompakt im Südwesten.
   const NS = 'http://www.w3.org/2000/svg';
   const svg = document.createElementNS(NS, 'svg');
   svg.setAttribute('viewBox', '0 0 100 105');
   svg.setAttribute('class', 'karte-bg-svg');
   svg.setAttribute('aria-hidden', 'true');
 
-  // Ungefähre Umrisse als Polygone (grob vereinfacht)
-  const germany = document.createElementNS(NS, 'polygon');
-  germany.setAttribute('points',
-    '38,2 65,0 82,8 88,18 82,28 92,38 88,54 78,60 82,72 72,88 60,92 48,88 36,94 28,88 22,78 16,68 12,56 18,42 14,30 20,18 28,8'
-  );
-  germany.setAttribute('class', 'karte-country de');
-
-  const austria = document.createElementNS(NS, 'polygon');
-  austria.setAttribute('points', '60,88 72,88 88,80 98,88 96,96 80,98 62,96');
-  austria.setAttribute('class', 'karte-country at');
-
-  const swiss = document.createElementNS(NS, 'polygon');
-  swiss.setAttribute('points', '34,92 48,88 60,92 58,102 44,104 32,100');
-  swiss.setAttribute('class', 'karte-country ch');
-
-  svg.appendChild(germany);
-  svg.appendChild(austria);
-  svg.appendChild(swiss);
+  const COUNTRIES = {
+    de: 'M31,5 L24,8 L25,13 L18,17 L13,24 L9,33 L6,45 L9,52 L8,58 L13,62 L15,69 L24,76 ' +
+        'L33,79 L40,80 L49,81 L57,79 L62,72 L65,64 L70,58 L74,49 L80,46 L77,38 L79,31 ' +
+        'L72,24 L74,18 L65,13 L57,11 L49,9 L40,13 L34,8 Z',
+    at: 'M36,80 L43,82 L51,82 L58,80 L64,73 L72,72 L80,71 L88,72 L93,76 L91,84 L82,88 ' +
+        'L70,90 L58,89 L48,88 L40,85 Z',
+    ch: 'M15,79 L23,76 L31,77 L40,81 L43,88 L40,95 L31,98 L21,97 L14,91 L12,84 Z',
+  };
+  for (const [id, d] of Object.entries(COUNTRIES)) {
+    const p = document.createElementNS(NS, 'path');
+    p.setAttribute('d', d);
+    p.setAttribute('class', 'karte-country ' + id);
+    svg.appendChild(p);
+  }
   return svg;
 }
 
