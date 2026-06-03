@@ -5883,6 +5883,18 @@ html.is-speaking .is-speakable {
   width: 100%;
 }
 
+/* Antwort-Ergebnis (auch aria-live für Screenreader) */
+.fc-mc-verdict {
+  margin-top: var(--sp-3);
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  min-height: 1.3em;
+}
+.fc-mc-verdict:empty { display: none; }
+.fc-mc-verdict.is-correct { color: var(--success, #16a34a); }
+.fc-mc-verdict.is-wrong { color: var(--danger); }
+
 .fc-mc-opt {
   padding: var(--sp-3) var(--sp-3);
   border-radius: var(--r-lg);

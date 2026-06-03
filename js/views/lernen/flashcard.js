@@ -165,7 +165,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
     front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Wähle die richtige Bedeutung:'));
     const choices = buildMcChoices(c, ALLE_AUSDRUECKE);
-    const optRow = el('div', { class: 'fc-mc-options', onClick: (e) => e.stopPropagation() });
+    const optRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten', onClick: (e) => e.stopPropagation() });
+    const verdict = mcVerdict();
     let answered = false;
     choices.forEach((opt) => {
       const btn = el('button', {
@@ -179,6 +180,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             if (b.dataset.answer === c.hochdeutsch) b.classList.add('mc-correct');
           });
           btn.classList.add(correct ? 'mc-correct' : 'mc-wrong');
+          verdict.say(correct, c.hochdeutsch);
           if (correct) {
             sfx.correct();
             vibrate([10, 30, 10]);
@@ -195,6 +197,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       optRow.appendChild(btn);
     });
     front.appendChild(optRow);
+    front.appendChild(verdict.region);
     back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
@@ -279,7 +282,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     ));
     front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Was bedeutet das? Wähle die richtige Übersetzung:'));
     const hChoices = buildMcChoices(c, ALLE_AUSDRUECKE);
-    const hRow = el('div', { class: 'fc-mc-options', onClick: (e) => e.stopPropagation() });
+    const hRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten', onClick: (e) => e.stopPropagation() });
+    const hVerdict = mcVerdict();
     let hAnswered = false;
     hChoices.forEach((opt) => {
       const btn = el('button', {
@@ -292,6 +296,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             if (b.dataset.answer === c.hochdeutsch) b.classList.add('mc-correct');
           });
           btn.classList.add(correct ? 'mc-correct' : 'mc-wrong');
+          hVerdict.say(correct, c.hochdeutsch);
           if (correct) {
             sfx.correct(); vibrate([10, 30, 10]);
             confettiBurst(btn, { count: 40 });
@@ -306,6 +311,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       hRow.appendChild(btn);
     });
     front.appendChild(hRow);
+    front.appendChild(hVerdict.region);
     // Auto-play beim Erscheinen (nur falls Karte noch im DOM)
     setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
@@ -328,7 +334,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     ));
     front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Welcher Dialekt-Ausdruck passt?'));
     const vChoices = buildMcChoices(c, ALLE_AUSDRUECKE);
-    const vRow = el('div', { class: 'fc-mc-options', onClick: (e) => e.stopPropagation() });
+    const vRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten', onClick: (e) => e.stopPropagation() });
+    const vVerdict = mcVerdict();
     let vAnswered = false;
     vChoices.forEach((opt) => {
       const btn = el('button', {
@@ -341,6 +348,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             if (b.dataset.answer === c.ausdruck) b.classList.add('mc-correct');
           });
           btn.classList.add(correct ? 'mc-correct' : 'mc-wrong');
+          vVerdict.say(correct, c.ausdruck);
           if (correct) {
             sfx.correct(); vibrate([10, 30, 10]);
             confettiBurst(btn, { count: 40 });
@@ -357,6 +365,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       vRow.appendChild(btn);
     });
     front.appendChild(vRow);
+    front.appendChild(vVerdict.region);
     // Auto-play Hochdeutsch (nur falls Karte noch im DOM)
     setTimeout(() => { if (card.isConnected) speak(c.hochdeutsch, 'de-DE'); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
@@ -678,6 +687,20 @@ function bindDrag(card, onRate) {
   card.addEventListener('pointerup',           () => finish(false));
   card.addEventListener('pointercancel',        () => finish(true));
   card.addEventListener('lostpointercapture',   () => finish(true));
+}
+
+// aria-live-Region für das Antwort-Ergebnis der Multiple-Choice-Modi: kündigt
+// Screenreadern „Richtig"/„Falsch" an (war zuvor nur per Farbe erkennbar) und
+// zeigt allen Nutzern ein klares Text-Feedback.
+function mcVerdict() {
+  const region = el('div', { class: 'fc-mc-verdict', 'aria-live': 'assertive', 'aria-atomic': 'true' });
+  return {
+    region,
+    say(correct, answer) {
+      region.className = 'fc-mc-verdict ' + (correct ? 'is-correct' : 'is-wrong');
+      region.textContent = correct ? `Richtig! ${answer}` : `Leider falsch. Richtig: ${answer}`;
+    },
+  };
 }
 
 function buildMcChoices(card, allExpr, count = 4) {
