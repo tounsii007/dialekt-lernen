@@ -105,7 +105,10 @@ export function renderDialektDetail(root, dialektId) {
   view.appendChild(toolbar);
   view.appendChild(chips);
 
-  const grid = el('div', { class: 'expr-grid', style: { marginTop: '20px' } });
+  const countEl = el('div', { class: 'expr-count', 'aria-live': 'polite' });
+  view.appendChild(countEl);
+
+  const grid = el('div', { class: 'expr-grid', style: { marginTop: '14px' } });
   view.appendChild(grid);
 
   let activeCat = 'all';
@@ -121,8 +124,10 @@ export function renderDialektDetail(root, dialektId) {
   // ALLE_AUSDRUECKE pro Karte — wir berechnen das erst, wenn die Karte in den
   // Viewport scrollt, statt für jede Karte beim Listen-Render (sonst Long-Task).
   let relatedObserver = null;
+  let renderSeq = 0;
 
   function render() {
+    const mySeq = ++renderSeq;
     grid.innerHTML = '';
     if (relatedObserver) { relatedObserver.disconnect(); relatedObserver = null; }
     if ('IntersectionObserver' in window) {
@@ -145,6 +150,12 @@ export function renderDialektDetail(root, dialektId) {
       const matches = new Set(searchIndex(localIdx, raw, { threshold: 0.2, limit: 500 }).map(r => r.rec));
       items = pool.filter(a => matches.has(a));
     }
+
+    // Ergebnis-Zähler über dem Grid
+    countEl.textContent = raw
+      ? `${items.length} Treffer`
+      : `${items.length} ${items.length === 1 ? 'Ausdruck' : 'Ausdrücke'}`;
+
     if (!items.length) {
       grid.appendChild(el('div', { class: 'empty-state' },
         emptyIllustration('search'),
@@ -153,7 +164,8 @@ export function renderDialektDetail(root, dialektId) {
       ));
       return;
     }
-    items.forEach(a => {
+
+    const appendCard = (a) => {
       const cardWrap = el('div', { class: 'expr-card-wrap' });
       cardWrap.appendChild(renderExpressionCard(a, d));
       const pron = renderPronunciationSection(a, d);
@@ -170,7 +182,29 @@ export function renderDialektDetail(root, dialektId) {
         if (related) cardWrap.appendChild(related);
       }
       grid.appendChild(cardWrap);
-    });
+    };
+
+    // Progressives Rendern: erste Batch sofort (schnelle erste Anzeige),
+    // restliche Batches in Idle-Häppchen nachrendern — verhindert den
+    // Long-Task/Ruckler bei großen Dialekten (mehrere Hundert Ausdrücke),
+    // ohne auf Scroll-Events angewiesen zu sein. Ein neuer render()-Aufruf
+    // (Filter/Suche) erhöht renderSeq und stoppt laufende Häppchen.
+    const BATCH = 24;
+    let idx = 0;
+    const renderBatch = () => {
+      const end = Math.min(idx + BATCH, items.length);
+      for (; idx < end; idx++) appendCard(items[idx]);
+    };
+    renderBatch();
+    if (idx < items.length) {
+      const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 16));
+      const pump = () => {
+        if (mySeq !== renderSeq) return;   // abgebrochen (neuer Render)
+        renderBatch();
+        if (idx < items.length) idle(pump);
+      };
+      idle(pump);
+    }
   }
   render();
 
