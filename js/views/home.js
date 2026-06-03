@@ -102,16 +102,22 @@ export function renderHome(root, params = {}) {
   view.appendChild(placeholders.challenges);
   view.appendChild(placeholders.longGoals);
 
-  const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 16));
-  idle(() => {
+  // Gestaffelt nach dem ersten Paint nachrendern. Bewusst setTimeout statt
+  // requestIdleCallback: letzteres feuert in versteckten/Hintergrund-Tabs gar
+  // nicht (auch nicht mit { timeout }), wodurch diese Sektionen dort nie
+  // erschienen. setTimeout feuert zuverlässig und hält den Initial-Render
+  // trotzdem frei (eigene Tasks nach dem Paint). Jeder Callback ist isoliert,
+  // damit ein Fehler in einer Sektion die übrigen nicht verhindert.
+  const after = (i, cb) => setTimeout(() => { try { cb(); } catch {} }, 60 + i * 40);
+  after(0, () => {
     const recoSection = renderAdaptiveRecommendationsSection();
     if (recoSection) placeholders.reco.replaceWith(recoSection);
     else placeholders.reco.remove();
   });
-  idle(() => placeholders.league.replaceWith(renderLeagueSection()));
-  idle(() => placeholders.quests.replaceWith(renderQuestsSection()));
-  idle(() => placeholders.challenges.replaceWith(renderChallengesSection()));
-  idle(() => placeholders.longGoals.replaceWith(renderLongGoalsSection()));
+  after(1, () => placeholders.league.replaceWith(renderLeagueSection()));
+  after(2, () => placeholders.quests.replaceWith(renderQuestsSection()));
+  after(3, () => placeholders.challenges.replaceWith(renderChallengesSection()));
+  after(4, () => placeholders.longGoals.replaceWith(renderLongGoalsSection()));
 
   // Daily expression
   const dailyWrap = renderDailyExpression(dailyFocus);
