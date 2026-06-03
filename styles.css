@@ -7404,8 +7404,8 @@ html {
 .word-carousel {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
+  gap: 12px;
+  padding: 10px 20px;
   border-radius: var(--r-pill);
   background: color-mix(in oklab, var(--brand) 8%, var(--bg-elev));
   border: 1.5px solid color-mix(in oklab, var(--brand) 18%, var(--border));
@@ -7447,7 +7447,7 @@ html {
   font-size: 0.72rem;
   color: var(--text-muted);
   font-weight: 600;
-  padding: 2px 8px;
+  padding: 3px 11px;
   background: var(--bg-soft);
   border-radius: var(--r-pill);
   white-space: nowrap;
@@ -7770,10 +7770,10 @@ html, body {
   .hero p {
     font-size: 0.95rem;
   }
-  /* Carousel kompakter */
+  /* Carousel kompakter (aber weiterhin luftig: gap bleibt 12px) */
   .word-carousel {
     font-size: 0.9rem;
-    padding: 6px 12px;
+    padding: 8px 15px;
   }
   .carousel-flag { font-size: 1.1rem; }
   .carousel-word { font-size: 0.9rem; }
