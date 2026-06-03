@@ -83,6 +83,16 @@ export const favoriten = {
     request(`/api/users/${await ensureUserId()}/favoriten/${encodeURIComponent(ausdruckId)}`, { method: 'DELETE' }),
 };
 
+export const lernstand = {
+  list:    async () => request(`/api/users/${await ensureUserId()}/lernstand`),
+  faellig: async (limit = 50) =>
+    request(`/api/users/${await ensureUserId()}/lernstand/faellig?limit=${limit}`),
+  // rating: 1 = schwer, 2 = mittel, 3 = leicht (wie js/store/srs.js)
+  bewerten: async (ausdruckId, rating) =>
+    request(`/api/users/${await ensureUserId()}/lernstand/${encodeURIComponent(ausdruckId)}/bewerten`,
+      { method: 'POST', body: { rating } }),
+};
+
 // Einmaliger Erreichbarkeits-Check (für Fallback-Entscheidungen). Cacht das
 // Ergebnis für die Sitzung; mit force=true neu prüfen.
 let _available = null;
