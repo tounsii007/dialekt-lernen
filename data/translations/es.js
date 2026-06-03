@@ -36,4 +36,21 @@ export default {
   'mecklenburgisch.mk-001': `El saludo omnipresente del norte, a cualquier hora. Basta un solo «Moin»; para algunos, el doble «Moin moin» ya suena demasiado hablador.`,
   'brandenburgisch.br-001': `El «yo» enfático del berlinés-brandeburgués. «Icke, dette, kieke mal» es una frase conocida. Subraya la propia persona con cierto orgullo.`,
   'oberpfaelzisch.op-001': `El saludo cotidiano del Alto Palatinado entre conocidos. Para varias personas, «Griaß enk»; más formal, «Griaß God»: un cálido saludo bávaro.`,
+
+  // Weitere Ausdrücke populärer Dialekte
+  'berlinisch.b-004': `¡Cuidado con la confusión! En Berlín, un «Pfannkuchen» es lo que en otros sitios se llama «Berliner» o «Krapfen»: un bollo dulce de levadura relleno de mermelada. La crep, en cambio, se llama aquí «Eierkuchen».`,
+  'berlinisch.b-006': `El cambio berlinés de la «g» por la «j» es legendario: «janz» por «ganz» (entero), «jut» por «gut» (bueno), «Jurke» por «Gurke» (pepino).`,
+  'berlinisch.b-007': `Exclamación de sorpresa o ligera indignación. «Meier» hace de «alguien»: un apellido antiguo y muy común.`,
+  'bayerisch.by-002': `El saludo más formal y tradicional en la Baviera y Austria católicas. Incluso sin ser religioso: una fórmula de cortesía a cualquier hora.`,
+  'bayerisch.by-005': `Exclamación bávara universal: según el tono, expresa admiración, compasión o leve fastidio. «Mei, is des schö!» (¡qué bonito!) o «Mei, war ma des aanstrengend!» (¡qué agotador!).`,
+  'bayerisch.by-009': `Medio en broma, medio en reproche: alguien que hace algo tonto o disparatado. «Du Damischer!» es más cariñoso que insultante.`,
+  'saechsisch.s-003': `Sajón para «¡mira!» / «¡guck mal!». Suele pronunciarse con un color vocálico marcado: «Guggemal!» o «Guggesdumal!».`,
+  'saechsisch.s-004': `Sajón para «Hochgenüsse» (grandes placeres): un ejemplo vivo del típico desplazamiento vocálico sajón (la «o» se vuelve una «e» larga y alargada). Lo hizo legendario un famoso cabaré de la RDA.`,
+  'saechsisch.s-005': `Sajón para «una vez». Cambio vocálico clásico: «ei» se vuelve «ee», como en «Heem» (hogar), «Klee» (pequeño).`,
+  'schwaebisch.sw-002': `El lema vital suabo: trabajar duro, ahorrar y construirse una casita propia. Un estereotipo autoirónico de la laboriosidad y el ahorro suabos.`,
+  'schwaebisch.sw-003': `El diminutivo de «Haus» (casa) con la típica terminación suaba «-le». A menudo dicho con orgullo: la propia casita, muchas veces construida por uno mismo.`,
+  'plattdeutsch.p-002': `Literalmente «tiempo de mierda». En el norte, una descripción sobria y honesta de la lluvia, el viento y el cielo gris: es decir, buena parte del año.`,
+  'plattdeutsch.p-004': `Bajo alemán para «pequeño». También en la bebida de los estibadores de Hamburgo «Lütt un Lütt» (cerveza + aguardiente de grano). Emparentado con el inglés «little».`,
+  'wienerisch.w-002': `Despedida vienesa. Relajada y amistosa, se pronuncia algo así como «pa-ba». También se alarga en broma: «bababa».`,
+  'wienerisch.w-005': `Austriaco para huevos revueltos. Se sirven tradicionalmente con cebollino y pan negro.`,
 };

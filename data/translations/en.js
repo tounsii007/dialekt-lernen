@@ -40,4 +40,21 @@ export default {
   'mecklenburgisch.mk-001': `The omnipresent northern greeting, used at any time of day. A single "Moin" is enough — to some, the double "Moin moin" already sounds too chatty.`,
   'brandenburgisch.br-001': `The emphatic "I" of Berlin-Brandenburg. "Icke, dette, kieke mal" is a well-known phrase. It stresses oneself with a touch of pride.`,
   'oberpfaelzisch.op-001': `The everyday Upper Palatinate greeting among acquaintances. For several people you say "Griaß enk", more formally "Griaß God" — a warm Bavarian greeting.`,
+
+  // Weitere Ausdrücke populärer Dialekte
+  'berlinisch.b-004': `Watch out for confusion! In Berlin a "Pfannkuchen" is what's called "Berliner" or "Krapfen" elsewhere — a sweet yeast pastry with jam filling. A pancake, by contrast, is called "Eierkuchen" here.`,
+  'berlinisch.b-006': `The Berlin swap of "g" for "j" is legendary: "janz" for "ganz" (whole), "jut" for "gut" (good), "Jurke" for "Gurke" (cucumber).`,
+  'berlinisch.b-007': `An exclamation of surprise or mild indignation. "Meier" stands in for "somebody" — an old, very common family name.`,
+  'bayerisch.by-002': `The more formal, traditional greeting in Catholic Bavaria and Austria. Even for the non-religious: a polite phrase used at any time of day.`,
+  'bayerisch.by-005': `A universal Bavarian exclamation — depending on tone it expresses admiration, sympathy or mild annoyance. "Mei, is des schö!" (how lovely!) or "Mei, war ma des aanstrengend!" (how exhausting!).`,
+  'bayerisch.by-009': `Half-joking, half-scolding: someone doing something silly or crazy. "Du Damischer!" is more affectionate than insulting.`,
+  'saechsisch.s-003': `Saxon for "look here!" / "guck mal!". Often spoken with a pronounced vowel colour — "Guggemal!" or "Guggesdumal!".`,
+  'saechsisch.s-004': `Saxon for "Hochgenüsse" (great delights) — a vivid example of the typical Saxon vowel shift (the "o" becomes a long, drawn-out "e"). Made legendary by a famous GDR-era cabaret.`,
+  'saechsisch.s-005': `Saxon for "once / one time". A classic vowel change — "ei" becomes "ee", as in "Heem" (home) and "Klee" (small).`,
+  'schwaebisch.sw-002': `The Swabian motto for life — work hard, save up, build your own little house. A self-ironic stereotype of Swabian diligence and thrift.`,
+  'schwaebisch.sw-003': `The diminutive of "Haus" (house) with the typical Swabian "-le" ending. Often said with pride: one's own little house, frequently self-built.`,
+  'plattdeutsch.p-002': `Literally "shit weather". In the North a matter-of-fact, honest description of rain, wind and grey skies — i.e. much of the year.`,
+  'plattdeutsch.p-004': `Low German for "small / little". Also in the Hamburg dockworkers' drink "Lütt un Lütt" (beer + grain schnapps). Related to English "little".`,
+  'wienerisch.w-002': `A Viennese farewell. Casual and friendly, pronounced roughly "pa-ba". Also playfully lengthened: "bababa".`,
+  'wienerisch.w-005': `Austrian for scrambled eggs. Traditionally served with chives and dark bread.`,
 };

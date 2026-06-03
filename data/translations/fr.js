@@ -36,4 +36,21 @@ export default {
   'mecklenburgisch.mk-001': `La salutation omniprésente du Nord, à toute heure. Un seul « Moin » suffit — pour certains, le double « Moin moin » sonne déjà trop bavard.`,
   'brandenburgisch.br-001': `Le « je » emphatique du Berlin-Brandebourg. « Icke, dette, kieke mal » est une formule connue. Il met en avant sa propre personne, non sans fierté.`,
   'oberpfaelzisch.op-001': `La salutation quotidienne du Haut-Palatinat entre connaissances. À plusieurs : « Griaß enk », plus formellement « Griaß God » — une salutation bavaroise chaleureuse.`,
+
+  // Weitere Ausdrücke populärer Dialekte
+  'berlinisch.b-004': `Attention aux confusions ! À Berlin, un « Pfannkuchen » est ce qu'on appelle ailleurs « Berliner » ou « Krapfen » — une pâtisserie levée sucrée fourrée à la confiture. La crêpe, elle, se dit « Eierkuchen ».`,
+  'berlinisch.b-006': `Le remplacement berlinois du « g » par « j » est légendaire : « janz » pour « ganz » (entier), « jut » pour « gut » (bon), « Jurke » pour « Gurke » (concombre).`,
+  'berlinisch.b-007': `Exclamation de surprise ou de léger agacement. « Meier » remplace « quelqu'un » — un nom de famille ancien et très répandu.`,
+  'bayerisch.by-002': `La salutation plus formelle et traditionnelle dans la Bavière et l'Autriche catholiques. Même sans être croyant : une formule polie à toute heure.`,
+  'bayerisch.by-005': `Exclamation bavaroise universelle — selon le ton, elle exprime l'admiration, la compassion ou un léger agacement. « Mei, is des schö ! » (que c'est beau !) ou « Mei, war ma des aanstrengend ! » (que c'était fatigant !).`,
+  'bayerisch.by-009': `Mi-plaisantin, mi-réprobateur : quelqu'un qui fait une bêtise ou une folie. « Du Damischer ! » est plus affectueux qu'insultant.`,
+  'saechsisch.s-003': `Saxon pour « regarde ! » / « guck mal ! ». Souvent prononcé avec une coloration vocalique marquée — « Guggemal ! » ou « Guggesdumal ! ».`,
+  'saechsisch.s-004': `Saxon pour « Hochgenüsse » (délices suprêmes) — un exemple frappant du glissement vocalique typique du saxon (le « o » devient un « e » long et étiré). Rendu légendaire par un célèbre cabaret est-allemand.`,
+  'saechsisch.s-005': `Saxon pour « une fois ». Changement vocalique classique — « ei » devient « ee », comme dans « Heem » (foyer), « Klee » (petit).`,
+  'schwaebisch.sw-002': `La devise de vie souabe — travailler dur, économiser, se construire sa petite maison. Un stéréotype autodérisoire de l'assiduité et de l'épargne souabes.`,
+  'schwaebisch.sw-003': `Le diminutif de « Haus » (maison) avec la terminaison souabe typique « -le ». Souvent dit avec fierté : sa propre petite maison, souvent construite soi-même.`,
+  'plattdeutsch.p-002': `Littéralement « temps de merde ». Dans le Nord, une description sobre et honnête de la pluie, du vent et du ciel gris — soit une bonne partie de l'année.`,
+  'plattdeutsch.p-004': `Bas-allemand pour « petit ». Aussi dans la boisson des dockers de Hambourg « Lütt un Lütt » (bière + schnaps de céréales). Apparenté à l'anglais « little ».`,
+  'wienerisch.w-002': `Formule d'adieu viennoise. Décontractée et amicale, prononcée à peu près « pa-ba ». Aussi allongée par jeu : « bababa ».`,
+  'wienerisch.w-005': `Autrichien pour œufs brouillés. Traditionnellement servis avec de la ciboulette et du pain noir.`,
 };

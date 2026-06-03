@@ -36,4 +36,21 @@ export default {
   'mecklenburgisch.mk-001': `Kuzey'in her saat kullanılan selamı. Tek bir «Moin» yeter — bazılarına göre çift «Moin moin» bile fazla geveze gelir.`,
   'brandenburgisch.br-001': `Berlin-Brandenburg'un vurgulu «ben»i. «Icke, dette, kieke mal» bilinen bir sözdür. Kişinin kendini biraz gururla vurgulamasıdır.`,
   'oberpfaelzisch.op-001': `Tanıdıklar arasında günlük Yukarı Pfalz selamı. Birden fazla kişiye «Griaß enk», daha resmî «Griaß God» denir — sıcak, Bavyera selamı.`,
+
+  // Weitere Ausdrücke populärer Dialekte
+  'berlinisch.b-004': `Dikkat, karışıklık tehlikesi! Berlin'de «Pfannkuchen», başka yerlerde «Berliner» ya da «Krapfen» denen şeydir — reçel dolgulu tatlı bir mayalı hamur işi. Krep ise burada «Eierkuchen» olarak adlandırılır.`,
+  'berlinisch.b-006': `Berlin ağzında «g» sesinin «j» ile değiştirilmesi efsanevidir: «ganz» (bütün) yerine «janz», «gut» (iyi) yerine «jut», «Gurke» (salatalık) yerine «Jurke».`,
+  'berlinisch.b-007': `Şaşkınlık ya da hafif kızgınlık ünlemi. «Meier», «herhangi biri» yerine geçer — eski ve çok yaygın bir soyadı.`,
+  'bayerisch.by-002': `Katolik Bavyera ve Avusturya'da daha resmî, geleneksel selam. Dindar olmayanlar için bile: günün her saati kullanılan kibar bir kalıp.`,
+  'bayerisch.by-005': `Evrensel bir Bavyera ünlemi — tona göre hayranlık, şefkat ya da hafif sıkıntı ifade edebilir. «Mei, is des schö!» (ne güzel!) ya da «Mei, war ma des aanstrengend!» (ne yorucuydu!).`,
+  'bayerisch.by-009': `Yarı şaka, yarı azar: aptalca ya da çılgınca bir şey yapan kişi. «Du Damischer!» hakaretten çok sevecen bir ifadedir.`,
+  'saechsisch.s-003': `Saksonca «bak hele!» / «guck mal!». Genelde belirgin bir sesli harf rengiyle söylenir — «Guggemal!» ya da «Guggesdumal!».`,
+  'saechsisch.s-004': `Saksonca «Hochgenüsse» (büyük keyifler) — tipik Sakson sesli harf kaymasının canlı bir örneği («o», uzatılmış bir «e» olur). Ünlü bir DDR dönemi kabaresiyle efsane oldu.`,
+  'saechsisch.s-005': `Saksonca «bir kez». Klasik sesli harf değişimi — «ei», «ee» olur; «Heem» (yuva), «Klee» (küçük) gibi.`,
+  'schwaebisch.sw-002': `Svabya'nın yaşam düsturu — çok çalış, biriktir, kendi küçük evini yap. Svabyalıların çalışkanlık ve tutumluluğuna dair özeleştirel bir klişe.`,
+  'schwaebisch.sw-003': `«Haus» (ev) kelimesinin, tipik Svabya «-le» ekiyle küçültülmüş hâli. Çoğu zaman gururla söylenir: çoğunlukla kendi yapılan küçük ev.`,
+  'plattdeutsch.p-002': `Kelimesi kelimesine «bok hava». Kuzeyde yağmurun, rüzgârın ve gri göğün — yani yılın büyük bölümünün — sade, dürüst bir tarifi.`,
+  'plattdeutsch.p-004': `Aşağı Almancada «küçük». Hamburg liman işçilerinin içkisi «Lütt un Lütt»te de geçer (bira + tahıl rakısı). İngilizce «little» ile akraba.`,
+  'wienerisch.w-002': `Viyana'ya özgü bir veda. Rahat ve dostça, kabaca «pa-ba» diye söylenir. Şakayla uzatılır da: «bababa».`,
+  'wienerisch.w-005': `Avusturyaca çırpılmış yumurta. Geleneksel olarak frenk soğanı ve siyah ekmekle servis edilir.`,
 };
