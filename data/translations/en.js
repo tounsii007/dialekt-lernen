@@ -57,4 +57,21 @@ export default {
   'plattdeutsch.p-004': `Low German for "small / little". Also in the Hamburg dockworkers' drink "Lütt un Lütt" (beer + grain schnapps). Related to English "little".`,
   'wienerisch.w-002': `A Viennese farewell. Casual and friendly, pronounced roughly "pa-ba". Also playfully lengthened: "bababa".`,
   'wienerisch.w-005': `Austrian for scrambled eggs. Traditionally served with chives and dark bread.`,
+
+  // Vertiefung: Kölsch, Schwizerdütsch, Fränkisch, Ruhrdeutsch, Alemannisch
+  'koelsch.k-003': `In the wider sense a "madman", in the narrower sense a carnival reveller. "Jeder Jeck is anders" (every fool is different) is a core philosophy of life in Cologne — everyone is different, and that's a good thing.`,
+  'koelsch.k-004': `A "Bützje" (little kiss) is handed out generously during carnival — on the cheek, no ulterior motive. "Bützen" is something of a folk sport during the "fifth season".`,
+  'koelsch.k-005': `Article 3 of the "Cologne Constitution": "It's always turned out fine so far" — the Cologne philosophy of serenity. Why fret? It'll work out.`,
+  'koelsch.k-006': `Article 2 of the "Cologne Constitution": "What's gone is gone." Advice on acceptance — what's lost won't come back, so move on.`,
+  'schwizerduetsch.ch-002': `Swiss-German way of saying thanks — French "merci" plus German "vielmal" (many times). Very typical of the francophone influence.`,
+  'schwizerduetsch.ch-003': `Swiss German for bicycle (from French "vélo"). Standard across German-speaking Switzerland; hardly anyone says "Fahrrad".`,
+  'schwizerduetsch.ch-004': `The "Znüni" is the Swiss mid-morning snack at 9 o'clock — a croissant, apple or muesli. A fixed part of the daily routine and of break culture at many workplaces.`,
+  'fraenkisch.fr-002': `The Franconian all-purpose formula of composure. Whether something's not quite right, you overpaid, or it's only half-finished — "Bassd scho" (it's fine) smooths it over. Pragmatic, relaxed, unflappable.`,
+  'fraenkisch.fr-003': `Franconian form of "we have". Typical is the leading "h" that standard German drops after "wir" — a feature that clearly sets Franconian apart from neighbouring Bavarian.`,
+  'fraenkisch.fr-004': `The Franconian form of the demonstrative "das" (that/the), where the "a" has often become an open "e". One of the most common words in everyday Franconian — in nearly every sentence.`,
+  'ruhrdeutsch.ru-002': `The traditional miners' greeting and an emblem of Ruhr culture. It wished the miner that the seam would open before him and that he'd return safely to daylight. Today a symbol of the region's whole mining identity, used at gatherings and farewells.`,
+  'ruhrdeutsch.ru-003': `In the Ruhr a universal exclamation — amazement, outrage, delight or simply getting attention. As a form of address it's neutral-to-friendly, used for men and women alike; the tone decides whether it's delight or real outrage.`,
+  'ruhrdeutsch.ru-004': `In the Ruhr the "Flappe" is the mouth, usually paired with a call for silence. "Halt die Flappe!" is blunter than "be quiet", but not necessarily hostile here. From Low German, widespread across Westphalia.`,
+  'alemannisch.al-002': `A Baden farewell from the Alemannic region, probably derived from "Gott befohlen" (God keep you); the fast speech rhythm makes it sound like a single word. Especially common in Freiburg and the Breisgau.`,
+  'alemannisch.al-003': `The Alemannic tag question added to the end of a sentence (southern Baden, Swabia, Switzerland), expecting agreement. It sounds softer and more questioning than its Franconian counterpart, thanks to the sing-song lilt.`,
 };

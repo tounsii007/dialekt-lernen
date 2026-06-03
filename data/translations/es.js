@@ -53,4 +53,21 @@ export default {
   'plattdeutsch.p-004': `Bajo alemán para «pequeño». También en la bebida de los estibadores de Hamburgo «Lütt un Lütt» (cerveza + aguardiente de grano). Emparentado con el inglés «little».`,
   'wienerisch.w-002': `Despedida vienesa. Relajada y amistosa, se pronuncia algo así como «pa-ba». También se alarga en broma: «bababa».`,
   'wienerisch.w-005': `Austriaco para huevos revueltos. Se sirven tradicionalmente con cebollino y pan negro.`,
+
+  // Vertiefung: Kölsch, Schwizerdütsch, Fränkisch, Ruhrdeutsch, Alemannisch
+  'koelsch.k-003': `En sentido amplio, un «loco»; en sentido estricto, un carnavalero. «Jeder Jeck is anders» (cada loco es distinto) es una filosofía de vida central en Colonia: cada uno es diferente, y eso es bueno.`,
+  'koelsch.k-004': `Un «Bützje» (besito) se reparte con generosidad en carnaval: en la mejilla, sin segundas intenciones. El «Bützen» es una especie de deporte popular durante la «quinta estación».`,
+  'koelsch.k-005': `Artículo 3 de la «Constitución colonesa»: «Hasta ahora siempre ha salido bien», la filosofía colonesa de la calma. ¿Para qué preocuparse? Saldrá bien.`,
+  'koelsch.k-006': `Artículo 2 de la «Constitución colonesa»: «Lo que se fue, se fue.» Un consejo de aceptación: lo perdido no vuelve, así que sigue adelante.`,
+  'schwizerduetsch.ch-002': `Forma suizo-alemana de dar las gracias: el «merci» francés más el «vielmal» alemán (muchas veces). Muy típica de la influencia francófona.`,
+  'schwizerduetsch.ch-003': `Suizo alemán para bicicleta (del francés «vélo»). Estándar en toda la Suiza alemana; casi nadie dice «Fahrrad».`,
+  'schwizerduetsch.ch-004': `El «Znüni» es el tentempié suizo de las 9 h: un cruasán, una manzana o muesli. Parte fija de la jornada y de la cultura de las pausas en muchas empresas.`,
+  'fraenkisch.fr-002': `La fórmula franconia universal de la calma. Si algo no está del todo bien, si has pagado de más o si está a medias: «Bassd scho» (ya vale) lo arregla todo. Pragmática, relajada, sin alterarse.`,
+  'fraenkisch.fr-003': `Forma franconia de «nosotros tenemos». Típica es la «h» inicial que el alemán estándar omite tras «wir», un rasgo que distingue claramente el franconio del bávaro vecino.`,
+  'fraenkisch.fr-004': `La forma franconia del demostrativo «das» (eso/el), donde la «a» se ha vuelto a menudo una «e» abierta. Una de las palabras más frecuentes del franconio cotidiano: en casi cada frase.`,
+  'ruhrdeutsch.ru-002': `El saludo tradicional de los mineros y un emblema de la cultura del Ruhr. Le deseaba al minero que la galería se abriera ante él y que volviera sano y salvo a la luz del día. Hoy es símbolo de toda la identidad minera de la región, usado en encuentros y despedidas.`,
+  'ruhrdeutsch.ru-003': `En el Ruhr, una exclamación universal: asombro, indignación, entusiasmo o simplemente para llamar la atención. Como tratamiento es de neutro a amistoso, para hombres y mujeres por igual; el tono decide si es entusiasmo o indignación real.`,
+  'ruhrdeutsch.ru-004': `En el Ruhr, la «Flappe» es la boca, normalmente junto a una invitación a callar. «Halt die Flappe!» es más directo que «calla», pero aquí no necesariamente hostil. Viene del bajo alemán y está extendido por toda Westfalia.`,
+  'alemannisch.al-002': `Una despedida de Baden del área alemánica, probablemente derivada de «Gott befohlen» (a Dios); el ritmo rápido del habla la hace sonar como una sola palabra. Especialmente común en Friburgo y el Brisgovia.`,
+  'alemannisch.al-003': `La pregunta de confirmación alemánica que se añade al final de la frase (sur de Baden, Suabia, Suiza), que espera aprobación. Suena más suave y más interrogativa que su equivalente franconio, gracias a la entonación cantarina.`,
 };

@@ -53,4 +53,21 @@ export default {
   'plattdeutsch.p-004': `Aşağı Almancada «küçük». Hamburg liman işçilerinin içkisi «Lütt un Lütt»te de geçer (bira + tahıl rakısı). İngilizce «little» ile akraba.`,
   'wienerisch.w-002': `Viyana'ya özgü bir veda. Rahat ve dostça, kabaca «pa-ba» diye söylenir. Şakayla uzatılır da: «bababa».`,
   'wienerisch.w-005': `Avusturyaca çırpılmış yumurta. Geleneksel olarak frenk soğanı ve siyah ekmekle servis edilir.`,
+
+  // Vertiefung: Kölsch, Schwizerdütsch, Fränkisch, Ruhrdeutsch, Alemannisch
+  'koelsch.k-003': `Geniş anlamda bir «deli», dar anlamda bir karnaval kutlayıcısı. «Jeder Jeck is anders» (her deli farklıdır) Köln'ün temel yaşam ilkesidir — herkes farklıdır, bu da iyidir.`,
+  'koelsch.k-004': `Karnavalda bol bol dağıtılan bir «Bützje» (öpücük) — yanağa, art niyetsiz. «Bützen», «beşinci mevsim»in bir tür halk sporudur.`,
+  'koelsch.k-005': `«Köln Anayasası»nın 3. maddesi: «Şimdiye kadar hep yolunda gitti» — Köln'ün sakinlik felsefesi. Niye dert edesin? Olacak.`,
+  'koelsch.k-006': `«Köln Anayasası»nın 2. maddesi: «Giden gitmiştir.» Kabullenme öğüdü — kaybolan geri gelmez, yola devam et.`,
+  'schwizerduetsch.ch-002': `İsviçre Almancasında teşekkür — Fransızca «merci» artı Almanca «vielmal» (çok kez). Frankofon etkinin çok tipik bir örneği.`,
+  'schwizerduetsch.ch-003': `İsviçre Almancasında bisiklet (Fransızca «vélo»dan). Almanca konuşulan tüm İsviçre'de standarttır; neredeyse kimse «Fahrrad» demez.`,
+  'schwizerduetsch.ch-004': `«Znüni», saat 9'daki İsviçre ara öğünüdür — bir kruvasan, elma ya da müsli. Günlük düzenin sabit bir parçası ve birçok iş yerinde mola kültürünün bir öğesi.`,
+  'fraenkisch.fr-002': `Frankonya'nın çok amaçlı sükûnet formülü. Bir şey tam yolunda değilse, fazla ödediyseniz ya da yarım kaldıysa — «Bassd scho» (idare eder) her şeyi yoluna koyar. Pragmatik, rahat, telaşsız.`,
+  'fraenkisch.fr-003': `«haben» (sahip olmak) fiilinin Frankonya'daki birinci çoğul biçimi. Standart Almancanın «wir»den sonra düşürdüğü baştaki «h» tipiktir — Frankoncayı komşu Bavyeracadan açıkça ayıran bir özellik.`,
+  'fraenkisch.fr-004': `İşaret zamiri «das»ın Frankonya biçimi; burada «a» çoğu kez açık bir «e» olmuştur. Günlük Frankoncanın en sık kullanılan sözcüklerinden biri — neredeyse her cümlede.`,
+  'ruhrdeutsch.ru-002': `Geleneksel madenci selamı ve Ruhr kültürünün simgesi. Madenciye, önündeki galerinin açılmasını ve sağ salim gün ışığına dönmesini dilerdi. Bugün bölgenin tüm madencilik kimliğinin simgesidir; buluşmalarda ve vedalarda kullanılır.`,
+  'ruhrdeutsch.ru-003': `Ruhr'da evrensel bir ünlem — şaşkınlık, öfke, coşku ya da sadece dikkat çekmek. Hitap olarak nötr ile dostça arasıdır; kadın erkek herkese söylenir. Coşku mu yoksa gerçek öfke mi olduğunu ton belirler.`,
+  'ruhrdeutsch.ru-004': `Ruhr'da «Flappe» ağız demektir, genelde susma çağrısıyla birlikte. «Halt die Flappe!», «sessiz ol»dan daha kaba ama burada illa düşmanca değil. Aşağı Almancadan gelir, tüm Vestfalya'da yaygındır.`,
+  'alemannisch.al-002': `Alemann bölgesinden bir Baden vedası; muhtemelen «Gott befohlen» (Tanrı'ya emanet) gibi bir kalıptan türemiş, hızlı konuşma ritmi yüzünden tek bir kelime gibi duyulur. Özellikle Freiburg ve Breisgau'da yaygın.`,
+  'alemannisch.al-003': `Cümlenin sonuna eklenen Alemann onay sorusu (Güney Baden, Svabya, İsviçre), onay bekler. Ezgili tonlama sayesinde Frankonya'daki karşılığından daha yumuşak ve daha soru gibi duyulur.`,
 };

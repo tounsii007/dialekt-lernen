@@ -53,4 +53,21 @@ export default {
   'plattdeutsch.p-004': `Bas-allemand pour « petit ». Aussi dans la boisson des dockers de Hambourg « Lütt un Lütt » (bière + schnaps de céréales). Apparenté à l'anglais « little ».`,
   'wienerisch.w-002': `Formule d'adieu viennoise. Décontractée et amicale, prononcée à peu près « pa-ba ». Aussi allongée par jeu : « bababa ».`,
   'wienerisch.w-005': `Autrichien pour œufs brouillés. Traditionnellement servis avec de la ciboulette et du pain noir.`,
+
+  // Vertiefung: Kölsch, Schwizerdütsch, Fränkisch, Ruhrdeutsch, Alemannisch
+  'koelsch.k-003': `Au sens large un « fou », au sens strict un carnavalier. « Jeder Jeck is anders » (chaque fou est différent) est une philosophie de vie centrale à Cologne — chacun est différent, et c'est tant mieux.`,
+  'koelsch.k-004': `Un « Bützje » (petit bisou) se distribue généreusement au carnaval — sur la joue, sans arrière-pensée. Le « Bützen » est une sorte de sport national pendant la « cinquième saison ».`,
+  'koelsch.k-005': `Article 3 de la « Constitution colonaise » : « Ça s'est toujours bien passé jusqu'ici » — la philosophie colonaise de la sérénité. Pourquoi s'en faire ? Ça va marcher.`,
+  'koelsch.k-006': `Article 2 de la « Constitution colonaise » : « Ce qui est parti est parti. » Un conseil d'acceptation — ce qui est perdu ne revient pas, alors on avance.`,
+  'schwizerduetsch.ch-002': `Façon suisse-allemande de remercier — le « merci » français plus le « vielmal » allemand (de nombreuses fois). Très typique de l'influence francophone.`,
+  'schwizerduetsch.ch-003': `Suisse allemand pour vélo (du français « vélo »). Standard dans toute la Suisse alémanique ; presque personne ne dit « Fahrrad ».`,
+  'schwizerduetsch.ch-004': `Le « Znüni » est l'en-cas suisse de 9 h — un croissant, une pomme ou un müesli. Un élément fixe de la journée et de la culture des pauses dans beaucoup d'entreprises.`,
+  'fraenkisch.fr-002': `La formule franconienne universelle de la sérénité. Que quelque chose ne soit pas tout à fait juste, qu'on ait trop payé ou que ce soit à moitié fini — « Bassd scho » (ça va) arrange tout. Pragmatique, détendu, imperturbable.`,
+  'fraenkisch.fr-003': `Forme franconienne de « nous avons ». Typique est le « h » initial que l'allemand standard supprime après « wir » — un trait qui distingue nettement le franconien du bavarois voisin.`,
+  'fraenkisch.fr-004': `La forme franconienne du démonstratif « das » (ce/le), où le « a » est souvent devenu un « e » ouvert. L'un des mots les plus fréquents du franconien quotidien — dans presque chaque phrase.`,
+  'ruhrdeutsch.ru-002': `Le salut traditionnel des mineurs et un emblème de la culture de la Ruhr. Il souhaitait au mineur que la galerie s'ouvre devant lui et qu'il remonte sain et sauf au jour. Aujourd'hui symbole de toute l'identité minière de la région, utilisé lors des rencontres et des adieux.`,
+  'ruhrdeutsch.ru-003': `Dans la Ruhr, une exclamation universelle — étonnement, indignation, enthousiasme ou simplement pour attirer l'attention. Comme appellation, neutre à amicale, pour les hommes comme pour les femmes ; le ton décide s'il s'agit d'enthousiasme ou de vraie indignation.`,
+  'ruhrdeutsch.ru-004': `Dans la Ruhr, la « Flappe » est la bouche, généralement avec une invitation à se taire. « Halt die Flappe ! » est plus direct que « tais-toi », mais pas forcément hostile ici. Vient du bas-allemand, répandu dans toute la Westphalie.`,
+  'alemannisch.al-002': `Une formule d'adieu badoise de l'aire alémanique, sans doute dérivée de « Gott befohlen » (à Dieu) ; le rythme rapide la fait sonner comme un seul mot. Particulièrement courante à Freiburg et dans le Brisgau.`,
+  'alemannisch.al-003': `La question de confirmation alémanique ajoutée en fin de phrase (sud du pays de Bade, Souabe, Suisse), qui attend l'approbation. Elle sonne plus douce et plus interrogative que son pendant franconien, grâce à l'intonation chantante.`,
 };
