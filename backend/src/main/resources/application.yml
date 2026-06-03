@@ -19,6 +19,13 @@ spring:
 
 server:
   port: ${SERVER_PORT:8080}
+  forward-headers-strategy: framework   # X-Forwarded-* hinter Reverse-Proxy (nginx) respektieren
+  error:
+    include-stacktrace: never
+    include-message: never
+    include-binding-errors: never
+    include-exception: false
+  shutdown: graceful
 
 # Origins, die das Frontend bedienen darf (CORS). Komma-getrennt überschreibbar.
 dialekto:
