@@ -10811,6 +10811,19 @@ img, svg, video {
 .set-row-label { font-weight: 600; font-size: 0.95rem; }
 .set-row-hint { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
 .set-row-control { flex-shrink: 0; }
+/* Multi-Button-Controls (Theme, Palette, Tagesziel) sind zu breit für eine
+   Zeile neben dem Label und würden sonst aus dem schmalen Drawer ragen (z.B.
+   Kontrast-Button / Farbpalette rechts abgeschnitten). Label nach oben, Control
+   in eigene Zeile über volle Breite — die Button-Reihen dürfen umbrechen. */
+.set-row:has(.set-seg, .set-palette, .set-goal) {
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--sp-2);
+}
+.set-row:has(.set-seg, .set-palette, .set-goal) .set-row-control {
+  flex-shrink: 1;
+  width: 100%;
+}
 
 /* Toggle-Switch */
 .set-switch {
