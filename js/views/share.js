@@ -4,12 +4,14 @@ import { decodeQuizShare } from '../store.js';
 import { getDialekt } from '../../data/dialekte.js';
 import { confettiBurst } from '../util/motion.js';
 import { sfx } from '../util/sounds.js';
+import { emptyIllustration } from '../util/icons.js';
 
 export function renderShare(root, token) {
   root.innerHTML = '';
   const data = decodeQuizShare('q:' + token);
   if (!data) {
     root.appendChild(el('div', { class: 'empty-state' },
+      emptyIllustration('sparkles'),
       el('h3', {}, 'Link nicht lesbar'),
       el('div', { class: 'empty-meta' }, 'Der Share-Link scheint defekt oder veraltet zu sein.'),
       el('button', { class: 'btn btn-primary', onClick: () => go('#/quiz') }, 'Eigenes Quiz starten')

@@ -147,8 +147,9 @@ export function renderDialektDetail(root, dialektId) {
     }
     if (!items.length) {
       grid.appendChild(el('div', { class: 'empty-state' },
-        el('span', { class: 'emoji' }, '🔎'),
-        el('div', {}, 'Keine Ausdrücke gefunden.')
+        emptyIllustration('search'),
+        el('h3', {}, 'Keine Ausdrücke gefunden'),
+        el('div', { class: 'empty-meta' }, 'Versuche einen anderen Suchbegriff oder lockere die Filter.')
       ));
       return;
     }

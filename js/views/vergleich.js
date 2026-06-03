@@ -2,7 +2,7 @@
 import { el, go, speak } from '../util.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { buildComparison, filterByKategorie } from '../util/comparison.js';
-import { icon } from '../util/icons.js';
+import { icon, emptyIllustration } from '../util/icons.js';
 import { sfx } from '../util/sounds.js';
 
 let cachedGroups = null;
@@ -48,6 +48,7 @@ export function renderVergleich(root) {
     const groups = filterByKategorie(cachedGroups, activeCat);
     if (!groups.length) {
       list.appendChild(el('div', { class: 'empty-state' },
+        emptyIllustration('map'),
         el('h3', {}, 'Keine Gruppen in dieser Kategorie'),
         el('div', { class: 'empty-meta' }, 'Wechsle auf „Alle" — die meisten Gruppen entstehen quer über Kategorien hinweg.')
       ));

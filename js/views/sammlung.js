@@ -6,6 +6,7 @@ import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { getLernstand } from '../store/learning.js';
 import { KATEGORIEN, KATEGORIE_LIST } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
+import { emptyIllustration } from '../util/icons.js';
 
 const STATUS_FILTERS = [
   { id: 'alle',     label: 'Alle' },
@@ -63,6 +64,7 @@ export function renderSammlung(root) {
     gridWrap.innerHTML = '';
     if (currentFiltered.length === 0) {
       gridWrap.appendChild(el('div', { class: 'empty-state' },
+        emptyIllustration('search'),
         el('h3', {}, 'Keine Ausdrücke gefunden'),
         el('div', { class: 'empty-meta' }, 'Versuche die Filter zu lockern.')
       ));
