@@ -6298,10 +6298,12 @@ html.is-speaking .is-speakable {
 /* Iteration 25 — Ripple-Effekte & Micro-Interaktionen         */
 /* ============================================================ */
 
-/* Ripple: Elterncontainer braucht position:relative und overflow:hidden */
+/* Ripple: Elterncontainer braucht position:relative und overflow:hidden.
+   .karte-bubble ist hier bewusst AUSGENOMMEN: sie muss position:absolute
+   (Geo-Positionierung auf der Karte) und overflow:visible (Progress-Ring
+   inset:-6px + Tooltip dürfen nicht abgeschnitten werden) behalten. */
 .btn,
 .fc-mc-opt,
-.karte-bubble,
 .dash-chip,
 .nav-link {
   position: relative;

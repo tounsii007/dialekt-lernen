@@ -14,7 +14,7 @@ const GEO = {
   koelsch:        { x: 15, y: 54, label: 'Rheinland' },
   saechsisch:     { x: 68, y: 44, label: 'Osten' },
   hessisch:       { x: 44, y: 51, label: 'Mitte' },
-  fraenkisch:     { x: 58, y: 59, label: 'Nordbayern' },
+  fraenkisch:     { x: 58, y: 55, label: 'Nordbayern' },
   schwaebisch:    { x: 40, y: 67, label: 'Südwesten' },
   bayerisch:      { x: 60, y: 68, label: 'Süden' },
   alemannisch:    { x: 26, y: 70, label: 'Oberrhein' },
