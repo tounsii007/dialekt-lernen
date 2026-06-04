@@ -17,7 +17,7 @@
 //   ein Offline-First-Load funktioniert.
 
 // === BEGIN VERSION (managed by tools/sync-version.mjs) ===
-const APP_VERSION = '2.1.50';
+const APP_VERSION = '2.1.51';
 // === END VERSION ===
 
 const VERSION = `dialekto-v${APP_VERSION}`;
@@ -87,6 +87,7 @@ const PRECACHE_URLS = [
   './js/store/notes.js',
   './js/store/notifications.js',
   './js/store/presets.js',
+  './js/store/progress-sync.js',
   './js/store/quests.js',
   './js/store/quiz.js',
   './js/store/settings.js',

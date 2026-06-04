@@ -116,6 +116,14 @@ export const favoriten = {
     request(`/api/users/${await ensureUserId()}/favoriten/${encodeURIComponent(ausdruckId)}`, { method: 'DELETE' }),
 };
 
+export const progress = {
+  /** @returns {Promise<{xp:number,streak:number,lastActive:?string,aktualisiertAt:string}>} */
+  get: async () => request(`/api/users/${await ensureUserId()}/progress`),
+  /** @param {{xp:number,streak:number,lastActive:?string}} p */
+  put: async (p) =>
+    request(`/api/users/${await ensureUserId()}/progress`, { method: 'PUT', body: p }),
+};
+
 export const lernstand = {
   /** @returns {Promise<Lernstand[]>} */
   list:    async () => request(`/api/users/${await ensureUserId()}/lernstand`),

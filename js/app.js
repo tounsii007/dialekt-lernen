@@ -31,6 +31,7 @@ import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
 import * as api from './util/api.js';
 import { syncFavoritenFromBackend } from './store/favorites.js';
 import { syncLernstandFromBackend } from './store/srs.js';
+import { initProgressSync, syncProgressFromBackend } from './store/progress-sync.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const SOUND_TOAST_MS = 1200;
@@ -286,11 +287,12 @@ async function initBackend() {
     console.info('[Dialekto] Backend verbunden:', api.getApiBase(), '· Nutzer', user?.id);
     // Nutzer-State vom Backend mergen (Favoriten + Lernstand) und bei Änderung neu rendern.
     try {
-      const [favChanged, srsChanged] = await Promise.all([
+      const [favChanged, srsChanged, xpChanged] = await Promise.all([
         syncFavoritenFromBackend(),
         syncLernstandFromBackend(),
+        syncProgressFromBackend(),
       ]);
-      if (favChanged || srsChanged) window.dispatchEvent(new Event('dialekto:route'));
+      if (favChanged || srsChanged || xpChanged) window.dispatchEvent(new Event('dialekto:route'));
     } catch { /* Fallback: lokaler Stand */ }
   } catch (e) {
     window.__dialektoBackend = { online: false };
@@ -329,6 +331,7 @@ async function init() {
   initRipple();
 
   // 5. Background services
+  initProgressSync(); // XP/Streak-Änderungen ans Backend pushen (wenn verbunden)
   initBackend(); // nicht-blockierend: Backend verbinden + Geräte-ID registrieren
   initPwa(toast);
   initNotifications();
