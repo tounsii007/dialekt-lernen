@@ -32,7 +32,19 @@ server {
         proxy_read_timeout 30s;
     }
 
-    location /actuator/ {
+    # Nur die in der Backend-Whitelist freigegebenen Actuator-Endpunkte
+    # (management.endpoints.web.exposure.include: health,info) nach außen
+    # durchreichen. Exakte location-Blöcke statt Präfix /actuator/, damit
+    # künftig freigeschaltete Endpunkte nicht automatisch exponiert werden.
+    location = /actuator/health {
+        set $actuator_upstream ${BACKEND_HOST}:${BACKEND_PORT};
+        proxy_pass http://$actuator_upstream;
+        proxy_set_header Host              $host;
+        proxy_set_header X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    location = /actuator/info {
         set $actuator_upstream ${BACKEND_HOST}:${BACKEND_PORT};
         proxy_pass http://$actuator_upstream;
         proxy_set_header Host              $host;

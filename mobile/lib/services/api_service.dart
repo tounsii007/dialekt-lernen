@@ -38,12 +38,19 @@ class ApiService {
     final prefs = await SharedPreferences.getInstance();
     var id = prefs.getString(_kDeviceId);
     if (id == null) {
-      final rnd = Random();
-      id = 'dev-${DateTime.now().microsecondsSinceEpoch}-'
-          '${rnd.nextInt(1 << 31).toRadixString(16)}';
+      id = _newDeviceId();
       await prefs.setString(_kDeviceId, id);
     }
     return id;
+  }
+
+  /// Erzeugt eine neue, kryptografisch sichere Geräte-ID: 16 Zufallsbytes aus
+  /// [Random.secure] als Hex-String. Die Geräte-ID ist faktisch ein Geheimnis,
+  /// darf also nicht vorhersehbar sein.
+  static String _newDeviceId() {
+    final rnd = Random.secure();
+    final bytes = List<int>.generate(16, (_) => rnd.nextInt(256));
+    return bytes.map((b) => b.toRadixString(16).padLeft(2, '0')).join();
   }
 
   /// Legt den Nutzer zur Geräte-ID an (oder findet ihn) und cached die User-ID.

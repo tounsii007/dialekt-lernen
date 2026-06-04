@@ -36,7 +36,6 @@
 /**
  * @typedef {Object} ApiUser
  * @property {string} id
- * @property {string} deviceId
  * @property {string} createdAt
  */
 

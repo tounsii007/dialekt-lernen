@@ -15,10 +15,14 @@ public final class UserDtos {
         @NotBlank @Size(max = 128) String deviceId
     ) { }
 
-    /** Nutzer-Antwort. */
-    public record UserResponse(UUID id, String deviceId, Instant createdAt) {
+    /**
+     * Nutzer-Antwort. Enthält bewusst KEINE Geräte-ID: diese ist ein Geheimnis
+     * (dient faktisch als Zugangs-Token) und darf nicht in der API-Antwort
+     * zurückgegeben werden — nur unkritische Felder.
+     */
+    public record UserResponse(UUID id, Instant createdAt) {
         public static UserResponse from(AppUser u) {
-            return new UserResponse(u.getId(), u.getDeviceId(), u.getCreatedAt());
+            return new UserResponse(u.getId(), u.getCreatedAt());
         }
     }
 }

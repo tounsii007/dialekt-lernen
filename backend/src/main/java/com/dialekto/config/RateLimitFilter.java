@@ -15,8 +15,12 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Einfaches In-Memory-Rate-Limiting pro Client-IP (Fixed-Window) für /api/**.
- * Schützt vor Brute-Force/Scraping ohne externe Abhängigkeit. Hinter einem
- * Reverse-Proxy wird die echte IP aus X-Forwarded-For gelesen.
+ * Schützt vor Brute-Force/Scraping ohne externe Abhängigkeit. Als Schlüssel
+ * dient {@code request.getRemoteAddr()}: Bei aktivem
+ * {@code server.forward-headers-strategy: framework} hat Spring die echte
+ * Client-IP bereits aus X-Forwarded-* aufgelöst. Den Header selbst zu parsen
+ * wäre angreifbar, da ein Client beliebige X-Forwarded-For-Werte mitschicken
+ * und so das Limit unterlaufen könnte.
  */
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
@@ -68,10 +72,9 @@ public class RateLimitFilter extends OncePerRequestFilter {
     }
 
     private static String clientIp(HttpServletRequest req) {
-        String xff = req.getHeader("X-Forwarded-For");
-        if (xff != null && !xff.isBlank()) {
-            return xff.split(",")[0].trim();
-        }
+        // getRemoteAddr() liefert die von Spring (forward-headers-strategy=framework)
+        // bereits aufgelöste echte Client-IP. Den X-Forwarded-For-Header hier selbst
+        // zu parsen wäre spoofbar — ein Client könnte das Limit mit beliebigen Werten umgehen.
         return req.getRemoteAddr();
     }
 }

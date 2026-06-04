@@ -15,8 +15,8 @@ import java.io.IOException;
 
 /**
  * Protokolliert jede API-Anfrage mit Methode, Pfad, Status-Code und Dauer.
- * Status &lt; 400 → INFO, 4xx → WARN, 5xx → ERROR. Läuft direkt nach dem
- * Rate-Limit-Filter.
+ * Status &lt; 400 → DEBUG (erfolgreiche Antworten nicht im Normalbetrieb fluten),
+ * 4xx → WARN, 5xx → ERROR. Läuft direkt nach dem Rate-Limit-Filter.
  */
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE + 10)
@@ -44,7 +44,7 @@ public class RequestLoggingFilter extends OncePerRequestFilter {
             } else if (status >= 400) {
                 log.warn("{} {} -> {} ({} ms)", method, uri, status, ms);
             } else {
-                log.info("{} {} -> {} ({} ms)", method, uri, status, ms);
+                log.debug("{} {} -> {} ({} ms)", method, uri, status, ms);
             }
         }
     }
