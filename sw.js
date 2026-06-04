@@ -17,7 +17,7 @@
 //   ein Offline-First-Load funktioniert.
 
 // === BEGIN VERSION (managed by tools/sync-version.mjs) ===
-const APP_VERSION = '2.1.53';
+const APP_VERSION = '2.1.54';
 // === END VERSION ===
 
 const VERSION = `dialekto-v${APP_VERSION}`;
@@ -190,6 +190,21 @@ self.addEventListener('install', (event) => {
   );
 });
 
+// Navigation Preload feature-gated aktivieren. Der Browser startet damit den
+// Netzwerk-Request für Navigationen PARALLEL zum SW-Boot, sodass im fetch-
+// Handler bereits eine Response bereitsteht (event.preloadResponse) — spart die
+// SW-Startup-Latenz beim ersten Navigations-Request. Fehlschläge (z.B. nicht
+// unterstützt) dürfen die Aktivierung nicht abbrechen.
+async function enableNavigationPreload() {
+  if (self.registration && self.registration.navigationPreload) {
+    try {
+      await self.registration.navigationPreload.enable();
+    } catch {
+      // best-effort — Offline-/Cache-Strategie funktioniert auch ohne Preload.
+    }
+  }
+}
+
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches
@@ -197,6 +212,7 @@ self.addEventListener('activate', (event) => {
       .then((keys) =>
         Promise.all(keys.filter((k) => !k.startsWith(VERSION)).map((k) => caches.delete(k))),
       )
+      .then(() => enableNavigationPreload())
       .then(() => self.clients.claim())
       .then(() => {
         // Allen Clients eine Update-Nachricht senden, damit eine Toast-UI
@@ -228,11 +244,25 @@ async function trimCache(cacheName, maxEntries) {
   await Promise.all(toDelete.map((req) => cache.delete(req)));
 }
 
-async function networkFirst(req, cacheName) {
+// network-first mit optionaler Navigation-Preload-Response.
+//   preloadResponse: das Promise aus event.preloadResponse (oder null/undefined).
+//     Wenn der Browser bereits eine Navigations-Response vorgeladen hat, nutzen
+//     wir sie statt eines eigenen fetch — spart die SW-Boot-Latenz. Liefert das
+//     Preload nichts Brauchbares (null/Fehler), fällt es transparent auf fetch
+//     zurück. Der Offline-Fallback auf index.html bleibt in jedem Fall erhalten.
+async function networkFirst(req, cacheName, preloadResponse) {
   const cache = await caches.open(cacheName);
   try {
-    const fresh = await fetch(req);
-    if (fresh.ok) cache.put(req, fresh.clone());
+    let fresh;
+    if (preloadResponse) {
+      try {
+        fresh = await preloadResponse;
+      } catch {
+        fresh = undefined;
+      }
+    }
+    if (!fresh) fresh = await fetch(req);
+    if (fresh && fresh.ok) cache.put(req, fresh.clone());
     return fresh;
   } catch {
     const cached = await cache.match(req);
@@ -290,7 +320,9 @@ self.addEventListener('fetch', (event) => {
   if (!isSameOrigin) return;
 
   if (isNavigationRequest(req)) {
-    event.respondWith(networkFirst(req, STATIC_CACHE));
+    // event.preloadResponse ist gesetzt, sobald Navigation Preload aktiv ist
+    // (sonst undefined) — networkFirst nutzt es bevorzugt vor einem eigenen fetch.
+    event.respondWith(networkFirst(req, STATIC_CACHE, event.preloadResponse));
     return;
   }
 

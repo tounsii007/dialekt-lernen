@@ -147,14 +147,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Check for accidentally committed secrets
-        run: |
-          # Sehr leichter Sekret-Check (echte Tools wie gitleaks wären besser)
-          if grep -rIE '(api[_-]?key|secret|password|token)["'\''=:]{1,3}[A-Za-z0-9]{20,}' \
-              --include='*.js' --include='*.json' --include='*.md' \
-              --exclude-dir=node_modules --exclude-dir=.git . ; then
-            echo "::warning::Possible secret-like patterns found — please review"
-          fi
+      - name: Security scan (secrets, eval/Function, innerHTML/XSS, CSP)
+        run: node tools/security-scan.mjs
 
       - name: Check for console.log in production code (allowed in tools/, tests/)
         run: |
@@ -164,3 +158,46 @@ jobs:
             echo "::warning::console.log in production code:"
             echo "$violations"
           fi
+
+  backend:
+    name: Backend (Spring Boot, Java 21)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up JDK 21 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'maven'
+
+      - name: Run backend tests (Maven)
+        run: mvn -B -f backend/pom.xml test
+
+  mobile:
+    name: Mobile (Flutter)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Flutter (stable, Dart >= 3.11.5)
+        uses: subosito/flutter-action@v2
+        with:
+          # 3.41.9 bündelt Dart 3.11.5 — passt zur SDK-Constraint
+          # (sdk: ^3.11.5) in mobile/pubspec.yaml.
+          flutter-version: '3.41.9'
+          channel: 'stable'
+          cache: true
+
+      - name: Install dependencies (flutter pub get)
+        working-directory: mobile
+        run: flutter pub get
+
+      - name: Run Flutter tests
+        working-directory: mobile
+        run: flutter test
