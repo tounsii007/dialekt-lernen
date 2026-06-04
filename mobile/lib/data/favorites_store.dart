@@ -12,6 +12,10 @@ class FavoritesStore extends ChangeNotifier {
   final Set<String> _keys = <String>{};
   bool _loaded = false;
 
+  /// Optionaler Write-Through ans Backend (von BackendSync gesetzt; entkoppelt,
+  /// damit der Store den ApiService nicht kennen muss). Fire-and-forget.
+  Future<void> Function(String ausdruckId, bool added)? remoteSync;
+
   bool get isLoaded => _loaded;
   int get count => _keys.length;
   List<String> get keys => _keys.toList();
@@ -73,6 +77,23 @@ class FavoritesStore extends ChangeNotifier {
       debugPrint('FavoritesStore.toggle: persist failed, rolled back: $e');
       return !added;
     }
+    // Write-through ans Backend (falls verbunden) — fehlertolerant.
+    try {
+      remoteSync?.call(ausdruckId, added);
+    } catch (_) { /* lokal bleibt führend */ }
     return added;
+  }
+
+  /// Merged vom Backend gelieferte Favoriten-Keys ("dialektId.ausdruckId") in
+  /// den lokalen Bestand (Union) und persistiert. Löst keinen Write-Through aus.
+  void mergeRemote(List<String> keys) {
+    var changed = false;
+    for (final k in keys) {
+      if (_keys.add(k)) changed = true;
+    }
+    if (!changed) return;
+    SharedPreferences.getInstance()
+        .then((p) => p.setStringList(_prefsKey, _keys.toList()));
+    notifyListeners();
   }
 }
