@@ -5,6 +5,8 @@ import com.dialekto.repository.AusdruckRepository;
 import com.dialekto.repository.LernstandRepository;
 import com.dialekto.web.NotFoundException;
 import com.dialekto.web.dto.LernstandDtos.LernstandDto;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,6 +22,8 @@ import java.util.UUID;
  */
 @Service
 public class SrsService {
+
+    private static final Logger log = LoggerFactory.getLogger(SrsService.class);
 
     private static final double INIT_EF = 2.5;
     private static final double MIN_EF = 1.3;
@@ -57,7 +61,10 @@ public class SrsService {
         Lernstand ls = repo.findByUserIdAndAusdruckId(userId, ausdruckId)
             .orElseGet(() -> new Lernstand(userId, ausdruckId));
         applySm2(ls, rating);
-        return LernstandDto.from(repo.save(ls));
+        Lernstand saved = repo.save(ls);
+        log.debug("SRS-Bewertung: user={} ausdruck={} rating={} -> status={} intervall={}d faellig={}",
+            userId, ausdruckId, rating, saved.getStatus(), saved.getIntervallTage(), saved.getFaelligkeit());
+        return LernstandDto.from(saved);
     }
 
     /** Wendet einen SM-2-Schritt auf den Lernstand an. */
