@@ -29,6 +29,7 @@ import { optimize as fsrsOptimize, buildSequences } from '../util/fsrs-optimizer
 import { applyFuzz } from '../util/fsrs-fuzz.js';
 import { registerComboHit, applyComboToXp } from '../util/combo.js';
 import { lernstand as apiLernstand } from '../util/api.js';
+import { ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 
 const MIN_EF = 1.3;
 const INIT_EF = 2.5;
@@ -428,6 +429,54 @@ function syncReviewToBackend(ausdruckId, rating) {
     const r = clamp(numFin(rating, 2), 1, 3);
     Promise.resolve(apiLernstand.bewerten(ausdruckId, r)).catch(() => {});
   } catch { /* ignore */ }
+}
+
+// Lazy-Map ausdruckId → dialektId (das Backend kennt nur die ausdruckId).
+let _ausdruckDialekt = null;
+function dialektOf(ausdruckId) {
+  if (!_ausdruckDialekt) {
+    _ausdruckDialekt = new Map(ALLE_AUSDRUECKE.map(a => [a.id, a.dialektId]));
+  }
+  return _ausdruckDialekt.get(ausdruckId) || null;
+}
+
+/**
+ * Lädt den Lernstand des Nutzers vom Backend und merged ihn in state.gelernt
+ * (der neuere Zeitstempel gewinnt). No-op, wenn das Backend offline ist.
+ * @returns {Promise<boolean>} true, wenn lokal etwas geändert wurde
+ */
+export async function syncLernstandFromBackend() {
+  if (!globalThis.window?.__dialektoBackend?.online) return false;
+  let remote;
+  try {
+    remote = await apiLernstand.list();
+  } catch {
+    return false;
+  }
+  let changed = false;
+  for (const ls of remote) {
+    const dialektId = dialektOf(ls.ausdruckId);
+    if (!dialektId) continue;
+    const key = favKey(dialektId, ls.ausdruckId);
+    const remoteLast = ls.aktualisiertAt ? Date.parse(ls.aktualisiertAt) : 0;
+    const existing = state.gelernt[key];
+    if (existing && numFin(existing.last, 0) >= (Number.isFinite(remoteLast) ? remoteLast : 0)) {
+      continue; // lokaler Stand ist gleich aktuell oder neuer
+    }
+    const due = ls.faelligkeit ? Date.parse(ls.faelligkeit) : Date.now();
+    state.gelernt[key] = {
+      ef: numFin(ls.ease, INIT_EF, MIN_EF),
+      reps: numFin(ls.wiederholungen, 0, 0),
+      interval: numFin(ls.intervallTage, 0, 0),
+      due: Number.isFinite(due) ? due : Date.now(),
+      lapses: numFin(existing?.lapses, 0, 0),
+      last: Number.isFinite(remoteLast) ? remoteLast : Date.now(),
+      stand: numFin(ls.status, 0, 0),
+    };
+    changed = true;
+  }
+  if (changed) persist();
+  return changed;
 }
 
 // Intervall-Vorschau (Tage) je Bewertung — für die Anki-Stil-Buttons.
