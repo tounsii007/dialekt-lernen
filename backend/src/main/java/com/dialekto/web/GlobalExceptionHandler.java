@@ -75,6 +75,12 @@ public class GlobalExceptionHandler {
         return ProblemDetail.forStatusAndDetail(HttpStatus.METHOD_NOT_ALLOWED, "Methode nicht erlaubt.");
     }
 
+    /**
+     * Letzte Verteidigungslinie für DB-Integritätsverletzungen. Die erwarteten
+     * UNIQUE-Races (Nutzer-Registrierung, Lernstand-Upsert) lösen die Services
+     * bereits transparent per Re-Read auf; erreicht eine Verletzung dennoch den
+     * Handler, ist 409 die korrekte Antwort (keine internen Details preisgeben).
+     */
     @ExceptionHandler(DataIntegrityViolationException.class)
     ProblemDetail handleConflict(DataIntegrityViolationException e, HttpServletRequest req) {
         log.warn("409 Datenkonflikt {} {} — {}", req.getMethod(), req.getRequestURI(),

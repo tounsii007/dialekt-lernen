@@ -5,11 +5,15 @@ import com.dialekto.domain.Rating;
 import com.dialekto.repository.AusdruckRepository;
 import com.dialekto.repository.LernstandRepository;
 import com.dialekto.web.NotFoundException;
+import com.dialekto.web.ValidationException;
 import com.dialekto.web.dto.LernstandDtos.LernstandDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Lazy;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.Instant;
@@ -32,11 +36,17 @@ public class SrsService {
     private final LernstandRepository repo;
     private final AusdruckRepository ausdruckRepo;
     private final UserService userService;
+    /** Selbst-Referenz über den Proxy, damit {@link #legeAnUndBewerte} mit REQUIRES_NEW greift. */
+    private final SrsService self;
 
-    public SrsService(LernstandRepository repo, AusdruckRepository ausdruckRepo, UserService userService) {
+    public SrsService(LernstandRepository repo,
+                      AusdruckRepository ausdruckRepo,
+                      UserService userService,
+                      @Lazy SrsService self) {
         this.repo = repo;
         this.ausdruckRepo = ausdruckRepo;
         this.userService = userService;
+        this.self = self;
     }
 
     @Transactional(readOnly = true)
@@ -53,24 +63,67 @@ public class SrsService {
             .stream().map(LernstandDto::from).toList();
     }
 
+    /**
+     * Bewertet eine Karte und schreibt den SM-2-Lernstand fort (Upsert).
+     *
+     * <p>Gibt es noch keinen Lernstand, wird er in einer eigenen Transaktion
+     * ({@code REQUIRES_NEW}) angelegt. Laufen zwei Bewertungen desselben Paares
+     * ({@code userId}, {@code ausdruckId}) parallel, verliert eine das Rennen am
+     * UNIQUE-Constraint ({@link DataIntegrityViolationException}); nur deren innere
+     * Transaktion rollt zurück. Wir lesen den nun existierenden Lernstand erneut
+     * und wenden den SM-2-Schritt darauf an.
+     */
     @Transactional
     public LernstandDto bewerten(UUID userId, String ausdruckId, int rating) {
         userService.benoetige(userId);
         if (!ausdruckRepo.existsById(ausdruckId)) {
             throw new NotFoundException("Ausdruck nicht gefunden: " + ausdruckId);
         }
-        Lernstand ls = repo.findByUserIdAndAusdruckId(userId, ausdruckId)
-            .orElseGet(() -> new Lernstand(userId, ausdruckId));
-        applySm2(ls, rating);
+        Rating r = parseRating(rating);
+
+        return repo.findByUserIdAndAusdruckId(userId, ausdruckId)
+            .map(ls -> bewerteUndSpeichere(ls, r))
+            .orElseGet(() -> {
+                try {
+                    return self.legeAnUndBewerte(userId, ausdruckId, r);
+                } catch (DataIntegrityViolationException konflikt) {
+                    // Paralleler Request hat den Lernstand soeben angelegt: erneut lesen.
+                    Lernstand ls = repo.findByUserIdAndAusdruckId(userId, ausdruckId)
+                        .orElseThrow(() -> konflikt);
+                    log.debug("SRS-Race aufgelöst (Re-Read): user={} ausdruck={}", userId, ausdruckId);
+                    return bewerteUndSpeichere(ls, r);
+                }
+            });
+    }
+
+    /** Legt einen neuen Lernstand an und bewertet ihn — in eigener Transaktion (s. {@link #bewerten}). */
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public LernstandDto legeAnUndBewerte(UUID userId, String ausdruckId, Rating r) {
+        return bewerteUndSpeichere(new Lernstand(userId, ausdruckId), r);
+    }
+
+    private LernstandDto bewerteUndSpeichere(Lernstand ls, Rating r) {
+        applySm2(ls, r);
         Lernstand saved = repo.save(ls);
         log.debug("SRS-Bewertung: user={} ausdruck={} rating={} -> status={} intervall={}d faellig={}",
-            userId, ausdruckId, rating, saved.getStatus(), saved.getIntervallTage(), saved.getFaelligkeit());
+            saved.getUserId(), saved.getAusdruckId(), r.getValue(),
+            saved.getStatus(), saved.getIntervallTage(), saved.getFaelligkeit());
         return LernstandDto.from(saved);
     }
 
+    /** Bewertung 1..3 in {@link Rating} übersetzen; ungültige Eingabe → fachlicher 400. */
+    private Rating parseRating(int rating) {
+        try {
+            return Rating.fromValue(rating);
+        } catch (IllegalArgumentException e) {
+            // domain darf web nicht kennen: Rating wirft die JDK-Exception, hier mappen wir
+            // sie auf eine fachliche ValidationException (sauberer 400 statt generischem Catch-all).
+            throw new ValidationException("Ungültige Bewertung: " + rating + " (erlaubt: 1..3).");
+        }
+    }
+
     /** Wendet einen SM-2-Schritt auf den Lernstand an. */
-    private void applySm2(Lernstand ls, int rating) {
-        Rating r = Rating.fromValue(rating);
+    private void applySm2(Lernstand ls, Rating r) {
         int q = r.quality();
         double ef = ls.getEase() > 0 ? ls.getEase() : INIT_EF;
         int reps = ls.getWiederholungen();

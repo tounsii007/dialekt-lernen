@@ -11,9 +11,10 @@ import jakarta.persistence.Table;
 public class Ausdruck {
 
     @Id
+    @Column(length = 64)
     private String id;
 
-    @Column(name = "dialekt_id", nullable = false)
+    @Column(name = "dialekt_id", nullable = false, length = 64)
     private String dialektId;
 
     @Column(columnDefinition = "text", nullable = false)
@@ -31,6 +32,7 @@ public class Ausdruck {
     @Column(name = "beispiel_hd", columnDefinition = "text")
     private String beispielHd;
 
+    @Column(length = 64)
     private String kategorie;
 
     public Ausdruck() { }
