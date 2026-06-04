@@ -29,6 +29,7 @@ import { initTranslations } from './util/translations.js';
 import { APP_VERSION_LABEL } from './version.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../data/dialekte.js';
 import * as api from './util/api.js';
+import { syncFavoritenFromBackend } from './store/favorites.js';
 
 const ADD_DIALECT_HINT_MS = 4000;
 const SOUND_TOAST_MS = 1200;
@@ -282,6 +283,10 @@ async function initBackend() {
     window.__dialektoBackend = { online: true, userId: user?.id, base: api.getApiBase() };
     document.dispatchEvent(new CustomEvent('dialekto:backendReady', { detail: window.__dialektoBackend }));
     console.info('[Dialekto] Backend verbunden:', api.getApiBase(), '· Nutzer', user?.id);
+    // Nutzer-State vom Backend mergen (Favoriten) und bei Änderung neu rendern.
+    try {
+      if (await syncFavoritenFromBackend()) window.dispatchEvent(new Event('dialekto:route'));
+    } catch { /* Fallback: lokaler Stand */ }
   } catch (e) {
     window.__dialektoBackend = { online: false };
     console.info('[Dialekto] Backend nicht erreichbar — lokaler Modus.', e?.message || e);
