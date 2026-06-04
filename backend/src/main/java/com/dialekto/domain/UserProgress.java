@@ -4,6 +4,8 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Version;
+import org.hibernate.annotations.UpdateTimestamp;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.util.UUID;
@@ -26,8 +28,13 @@ public class UserProgress {
     @Column(name = "last_active")
     private LocalDate lastActive;
 
+    @UpdateTimestamp
     @Column(name = "aktualisiert_at", nullable = false)
     private Instant aktualisiertAt = Instant.now();
+
+    @Version
+    @Column(nullable = false)
+    private long version;
 
     protected UserProgress() { }
 

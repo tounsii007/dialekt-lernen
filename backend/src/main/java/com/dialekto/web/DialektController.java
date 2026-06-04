@@ -3,6 +3,7 @@ package com.dialekto.web;
 import com.dialekto.service.DialektService;
 import com.dialekto.web.dto.AusdruckDto;
 import com.dialekto.web.dto.DialektDto;
+import com.dialekto.web.dto.KategorieDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,6 +28,11 @@ public class DialektController {
     @GetMapping("/dialekte")
     public List<DialektDto> dialekte() {
         return service.alleDialekte();
+    }
+
+    @GetMapping("/kategorien")
+    public List<KategorieDto> kategorien() {
+        return service.alleKategorien();
     }
 
     @GetMapping("/dialekte/{id}")

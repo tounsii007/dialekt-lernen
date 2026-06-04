@@ -7,6 +7,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import jakarta.persistence.Version;
+import org.hibernate.annotations.UpdateTimestamp;
 import java.time.Instant;
 import java.util.UUID;
 
@@ -40,8 +42,13 @@ public class Lernstand {
     @Column(nullable = false)
     private int wiederholungen = 0;
 
+    @UpdateTimestamp
     @Column(name = "aktualisiert_at", nullable = false)
     private Instant aktualisiertAt = Instant.now();
+
+    @Version
+    @Column(nullable = false)
+    private long version;
 
     protected Lernstand() { }
 

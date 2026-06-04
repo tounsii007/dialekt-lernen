@@ -2,9 +2,11 @@ package com.dialekto.service;
 
 import com.dialekto.repository.AusdruckRepository;
 import com.dialekto.repository.DialektRepository;
+import com.dialekto.repository.KategorieRepository;
 import com.dialekto.web.NotFoundException;
 import com.dialekto.web.dto.AusdruckDto;
 import com.dialekto.web.dto.DialektDto;
+import com.dialekto.web.dto.KategorieDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -19,14 +21,21 @@ public class DialektService {
 
     private final DialektRepository dialektRepo;
     private final AusdruckRepository ausdruckRepo;
+    private final KategorieRepository kategorieRepo;
 
-    public DialektService(DialektRepository dialektRepo, AusdruckRepository ausdruckRepo) {
+    public DialektService(DialektRepository dialektRepo, AusdruckRepository ausdruckRepo,
+                          KategorieRepository kategorieRepo) {
         this.dialektRepo = dialektRepo;
         this.ausdruckRepo = ausdruckRepo;
+        this.kategorieRepo = kategorieRepo;
     }
 
     public List<DialektDto> alleDialekte() {
         return dialektRepo.findAll().stream().map(DialektDto::from).toList();
+    }
+
+    public List<KategorieDto> alleKategorien() {
+        return kategorieRepo.findAll().stream().map(KategorieDto::from).toList();
     }
 
     public DialektDto dialekt(String id) {

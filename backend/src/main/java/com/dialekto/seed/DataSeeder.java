@@ -2,8 +2,10 @@ package com.dialekto.seed;
 
 import com.dialekto.domain.Ausdruck;
 import com.dialekto.domain.Dialekt;
+import com.dialekto.domain.Kategorie;
 import com.dialekto.repository.AusdruckRepository;
 import com.dialekto.repository.DialektRepository;
+import com.dialekto.repository.KategorieRepository;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -33,11 +35,14 @@ public class DataSeeder implements CommandLineRunner {
 
     private final DialektRepository dialektRepo;
     private final AusdruckRepository ausdruckRepo;
+    private final KategorieRepository kategorieRepo;
     private final ObjectMapper objectMapper;
 
-    public DataSeeder(DialektRepository dialektRepo, AusdruckRepository ausdruckRepo, ObjectMapper objectMapper) {
+    public DataSeeder(DialektRepository dialektRepo, AusdruckRepository ausdruckRepo,
+                      KategorieRepository kategorieRepo, ObjectMapper objectMapper) {
         this.dialektRepo = dialektRepo;
         this.ausdruckRepo = ausdruckRepo;
+        this.kategorieRepo = kategorieRepo;
         this.objectMapper = objectMapper;
     }
 
@@ -61,6 +66,7 @@ public class DataSeeder implements CommandLineRunner {
         List<Dialekt> dialekte = new ArrayList<>();
         List<Ausdruck> ausdruecke = new ArrayList<>();
         Set<String> ausdruckIds = new HashSet<>();
+        Set<String> kategorien = new HashSet<>();
         int duplikate = 0;
 
         for (JsonNode d : root.path("dialekte")) {
@@ -87,19 +93,29 @@ public class DataSeeder implements CommandLineRunner {
                 ex.setBedeutung(text(a, "bedeutung"));
                 ex.setBeispiel(text(a, "beispiel"));
                 ex.setBeispielHd(text(a, "beispiel_hd"));
-                ex.setKategorie(text(a, "kategorie"));
+                String kat = text(a, "kategorie");
+                ex.setKategorie(kat);
+                if (kat != null && !kat.isBlank()) kategorien.add(kat);
                 ausdruecke.add(ex);
             }
         }
 
+        // Reihenfolge wegen FK: Kategorien → Dialekte → Ausdrücke.
+        kategorieRepo.saveAll(kategorien.stream().map(k -> new Kategorie(k, label(k))).toList());
         dialektRepo.saveAll(dialekte);
         ausdruckRepo.saveAll(ausdruecke);
-        log.info("Seed abgeschlossen: {} Dialekte, {} Ausdrücke importiert ({} doppelte IDs übersprungen).",
-            dialekte.size(), ausdruecke.size(), duplikate);
+        log.info("Seed abgeschlossen: {} Kategorien, {} Dialekte, {} Ausdrücke ({} doppelte IDs übersprungen).",
+            kategorien.size(), dialekte.size(), ausdruecke.size(), duplikate);
     }
 
     private static String text(JsonNode node, String field) {
         JsonNode v = node.get(field);
         return (v == null || v.isNull()) ? null : v.asText();
+    }
+
+    /** Erzeugt aus einem Kategorie-Schlüssel ("begruessung") ein Anzeige-Label. */
+    private static String label(String key) {
+        String s = key.replace('_', ' ').trim();
+        return s.isEmpty() ? key : Character.toUpperCase(s.charAt(0)) + s.substring(1);
     }
 }
