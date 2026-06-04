@@ -45,7 +45,11 @@ function walk(dir, exts) {
   return out;
 }
 
-const rootFiles = ['index.html', 'styles.css', 'manifest.webmanifest', 'sw.js']
+// Ausgeliefert wird das minifizierte CSS (styles.min.css, ~250 KB) — NICHT die
+// unminifizierte Quelle styles.css (~315 KB). Nur die ausgelieferte Datei darf
+// in den kritischen Precache, sonst cachen wir umsonst und der offline genutzte
+// Stylesheet fehlt im App-Shell.
+const rootFiles = ['index.html', 'styles.min.css', 'manifest.webmanifest', 'sw.js']
   .map((f) => join(ROOT, f))
   .filter((f) => {
     try { statSync(f); return true; } catch { return false; }
@@ -54,7 +58,21 @@ const rootFiles = ['index.html', 'styles.css', 'manifest.webmanifest', 'sw.js']
 const jsFiles = walk(join(ROOT, 'js'), ['.js']);
 const dataFiles = walk(join(ROOT, 'data'), ['.js']);
 
-const allFiles = [...rootFiles, ...jsFiles, ...dataFiles];
+// Große Dialekt-Daten (data/dialekte/*.js, zusammen ~4,4 MB) NICHT in den
+// kritischen Install-Precache aufnehmen: das würde jeden Erst-Install und jeden
+// Versions-Bump um Megabytes verlangsamen. Sie werden ohnehin beim ersten Laden
+// über den App-Modul-Graphen (data/dialekte.js importiert sie statisch) geholt
+// und dabei vom Runtime-Cache (stale-while-revalidate) erfasst — damit bleiben
+// sie offline verfügbar, ohne den Install zu blockieren.
+// Das zentrale Register (data/dialekte.js), Kategorien und Übersetzungen sind
+// klein und bleiben im Precache, damit die App-Shell offline sofort startet.
+const isHeavyDialectData = (f) => {
+  const rel = relative(ROOT, f).split(sep).join('/');
+  return rel.startsWith('data/dialekte/');
+};
+const precacheDataFiles = dataFiles.filter((f) => !isHeavyDialectData(f));
+
+const allFiles = [...rootFiles, ...jsFiles, ...precacheDataFiles];
 
 // Pfad relativ zur Root, mit forward-slashes für SW (URL-Norm).
 const precacheUrls = allFiles.map((f) => {
@@ -101,7 +119,8 @@ swSrc = swSrc.replace(versionRe, versionBlock);
 swSrc = swSrc.replace(precacheRe, precacheBlock);
 
 writeFileSync(swPath, swSrc, 'utf8');
-console.log(`✓ sw.js aktualisiert (${precacheUrls.length} Assets im Precache).`);
+const heavyExcluded = dataFiles.length - precacheDataFiles.length;
+console.log(`✓ sw.js aktualisiert (${precacheUrls.length} Assets im Precache, ${heavyExcluded} große Dialekt-Dateien laufen über den Runtime-Cache).`);
 
 // --- 4) DIALEKT_COUNT / AUSDRUCK_COUNT in version.js ---
 const dialekteUrl = pathToFileURL(join(ROOT, 'data', 'dialekte.js')).href + `?t=${Date.now()}`;

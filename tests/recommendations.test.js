@@ -9,6 +9,7 @@ import {
   getActivitySeries, getQuizSparkline,
 } from '../js/util/recommendations.js';
 import { STATUS_HARD, STATUS_MEDIUM, STATUS_LEARNED } from '../js/store/learning.js';
+import { bump } from '../js/util/learn-cache.js';
 import { resetState } from './_setup.js';
 
 describe('getRecommendations', () => {
@@ -50,6 +51,41 @@ describe('getRecommendations', () => {
     assert.ok(r.hard.length <= 3);
     assert.ok(r.almost.length <= 3);
     assert.ok(r.fresh.length <= 3);
+  });
+
+  it('rechnet nach einer Lernstand-Änderung neu (Cache invalidiert)', () => {
+    // Frische Sicht: Karte ist noch in keinem Bucket.
+    const before = getRecommendations(50);
+    assert.ok(!before.hard.some(a => a.id === 'h-001'),
+      'h-001 sollte vor der Änderung nicht in hard sein');
+
+    // Lernstand ändern UND das Invalidierungs-Signal feuern (in der App via
+    // dialekto:xp; der Cache hört darauf — bump() ist derselbe Handler).
+    state.gelernt['hessisch.h-001'] = {
+      ef: 1.5, reps: 0, interval: 1, due: 0, lapses: 5, last: 100, stand: STATUS_HARD,
+    };
+    bump();
+
+    const after = getRecommendations(50);
+    assert.ok(after.hard.some(a => a.dialektId === 'hessisch' && a.id === 'h-001'),
+      'nach der Änderung + Invalidierung muss h-001 in hard auftauchen');
+  });
+
+  it('ohne Invalidierung liefert derselbe Tick das gecachte Ergebnis (kein Re-Compute)', () => {
+    // Belegt, dass tatsächlich gecacht wird: zwei Aufrufe ohne bump liefern
+    // identische Bucket-Referenzen-Inhalte trotz zwischenzeitlicher (nicht
+    // signalisierter) State-Mutation. Die App signalisiert immer via Event;
+    // dieser Test prüft nur die Cache-Mechanik im selben Tick.
+    const first = getRecommendations(50);
+    const firstFreshLen = first.fresh.length;
+    // Direkter Schreibzugriff OHNE Signal — darf den Cache im selben Tick NICHT
+    // verändern (Invalidierung passiert in der App über das Event / am Tick-Ende).
+    state.gelernt['hessisch.h-002'] = {
+      ef: 2.0, reps: 1, interval: 1, due: 0, lapses: 0, last: 100, stand: STATUS_MEDIUM,
+    };
+    const second = getRecommendations(50);
+    assert.equal(second.fresh.length, firstFreshLen,
+      'ohne bump im selben Tick bleibt das Ergebnis stabil (gecacht)');
   });
 });
 

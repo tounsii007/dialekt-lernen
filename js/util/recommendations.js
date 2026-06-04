@@ -5,6 +5,7 @@ import { ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { STATUS_HARD, STATUS_MEDIUM, STATUS_LEARNED } from '../store/learning.js';
 import { getDueCards } from '../store/srs.js';
 import { shuffle } from './random.js';
+import { memoizePerEpoch } from './learn-cache.js';
 
 function keyFor(a) { return `${a.dialektId}.${a.id}`; }
 
@@ -20,28 +21,43 @@ function annotate(a) {
   };
 }
 
-export function getRecommendations(limit = 6) {
+// Die teure O(6700)-Arbeit (annotate über ALLE Ausdrücke + getDueCards + die
+// vollständigen Sortierungen) wird hier EINMAL pro Epoche berechnet und gemerkt.
+// `limit` schneidet nur das gecachte Ergebnis zu — verschiedene Limits teilen
+// sich also dieselbe Schwerstarbeit. Die Buckets werden unbeschnitten gecacht,
+// damit ein größeres Limit nach einem kleineren nicht zu wenig Treffer liefert.
+// Invalidierung: memoizePerEpoch (Event-Bump bei jeder Bewertung + Pro-Tick-
+// Verfall) — siehe util/learn-cache.js.
+const computeBuckets = memoizePerEpoch(() => {
   const annotated = ALLE_AUSDRUECKE.map(annotate);
 
   // 0. Heute fällig — höchste Priorität, basiert auf SM-2
-  const due = getDueCards(ALLE_AUSDRUECKE).slice(0, limit);
+  const due = getDueCards(ALLE_AUSDRUECKE);
 
   // 1. Wiederholen: viele Lapses oder Stand "schwer"
   const hard = annotated
     .filter((x) => x.stand === STATUS_HARD || x.lapses >= 2)
-    .sort((a, b) => (b.lapses - a.lapses) || (a.last - b.last))
-    .slice(0, limit);
+    .sort((a, b) => (b.lapses - a.lapses) || (a.last - b.last));
 
   // 2. Fast-gelernt: "mittel"
   const almost = annotated
     .filter((x) => x.stand === STATUS_MEDIUM)
-    .sort((a, b) => a.last - b.last)
-    .slice(0, limit);
+    .sort((a, b) => a.last - b.last);
 
-  // 3. Neu entdecken: nie gesehen
-  const fresh = shuffle(annotated.filter((x) => x.stand === 0)).slice(0, limit);
+  // 3. Neu entdecken: nie gesehen (gemischt — Reihenfolge variiert je Epoche)
+  const fresh = shuffle(annotated.filter((x) => x.stand === 0));
 
   return { due, hard, almost, fresh };
+});
+
+export function getRecommendations(limit = 6) {
+  const { due, hard, almost, fresh } = computeBuckets();
+  return {
+    due:    due.slice(0, limit),
+    hard:   hard.slice(0, limit),
+    almost: almost.slice(0, limit),
+    fresh:  fresh.slice(0, limit)
+  };
 }
 
 export function getRecentDialects(limit = 4) {

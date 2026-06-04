@@ -29,6 +29,7 @@ import { getRecentDialects } from '../../util/recommendations.js';
 import { getAdaptiveRecommendations } from '../../util/adaptive-plan.js';
 import { renderGoalWidget } from '../../util/daily-goal.js';
 import { getDialectProgress } from '../../util/dialect-progress.js';
+import { memoizePerEpoch } from '../../util/learn-cache.js';
 
 // Modus-Definitionen (id → Anzeige). IDs bleiben identisch zum Bestand, damit
 // der in sessionStorage gespeicherte Modus weiter gültig ist.
@@ -60,6 +61,23 @@ const THEMEN_FARBEN = [
 ];
 
 const ALL_COLOR = '#8338ec';
+
+// Kategorie-Statistiken (total/learned/started je Kategorie) über ALLE ~6700
+// Ausdrücke. Bisher bei jedem Öffnen des Lern-Hubs neu berechnet — jetzt einmal
+// pro Epoche gemerkt. Invalidierung via util/learn-cache.js: Event-Bump bei
+// jeder Bewertung (dialekto:xp) + Pro-Tick-Verfall als Backstop, sodass nach
+// einer Lernstand-Änderung garantiert neu gerechnet wird.
+const computeThemenStats = memoizePerEpoch(() => {
+  const statsByKat = {};
+  ALLE_AUSDRUECKE.forEach(a => {
+    const s = statsByKat[a.kategorie] || (statsByKat[a.kategorie] = { total: 0, learned: 0, started: 0 });
+    s.total++;
+    const stand = getLernstand(a.dialektId, a.id);
+    if (stand >= STATUS_LEARNED) s.learned++;
+    else if (stand >= STATUS_MEDIUM) s.started++;
+  });
+  return statsByKat;
+});
 
 // ---- kleine, zustandslose Bausteine -----------------------------------------
 
@@ -328,14 +346,7 @@ export function renderSetup(onStart) {
 
   // 6 — Themen-Lektionen ------------------------------------------------------
   function renderThemen() {
-    const statsByKat = {};
-    ALLE_AUSDRUECKE.forEach(a => {
-      const s = statsByKat[a.kategorie] || (statsByKat[a.kategorie] = { total: 0, learned: 0, started: 0 });
-      s.total++;
-      const stand = getLernstand(a.dialektId, a.id);
-      if (stand >= STATUS_LEARNED) s.learned++;
-      else if (stand >= STATUS_MEDIUM) s.started++;
-    });
+    const statsByKat = computeThemenStats();
 
     const grid = el('div', { class: 'dialekt-grid' });
     KATEGORIE_LIST.forEach((kat, i) => {

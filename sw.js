@@ -17,7 +17,7 @@
 //   ein Offline-First-Load funktioniert.
 
 // === BEGIN VERSION (managed by tools/sync-version.mjs) ===
-const APP_VERSION = '2.1.51';
+const APP_VERSION = '2.1.52';
 // === END VERSION ===
 
 const VERSION = `dialekto-v${APP_VERSION}`;
@@ -31,7 +31,7 @@ const PRECACHE_URLS = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './styles.css',
+  './styles.min.css',
   './sw.js',
   './data/dialekte.js',
   './data/kategorien.js',
@@ -44,30 +44,6 @@ const PRECACHE_URLS = [
   './js/theme.js',
   './js/util.js',
   './js/version.js',
-  './data/dialekte/alemannisch.js',
-  './data/dialekte/badisch.js',
-  './data/dialekte/bayerisch.js',
-  './data/dialekte/berlinisch.js',
-  './data/dialekte/brandenburgisch.js',
-  './data/dialekte/fraenkisch.js',
-  './data/dialekte/hessisch.js',
-  './data/dialekte/kaerntnerisch.js',
-  './data/dialekte/koelsch.js',
-  './data/dialekte/mecklenburgisch.js',
-  './data/dialekte/oberpfaelzisch.js',
-  './data/dialekte/ostfriesisch.js',
-  './data/dialekte/pfaelzisch.js',
-  './data/dialekte/plattdeutsch.js',
-  './data/dialekte/ruhrdeutsch.js',
-  './data/dialekte/saarlaendisch.js',
-  './data/dialekte/saechsisch.js',
-  './data/dialekte/schwaebisch.js',
-  './data/dialekte/schwizerduetsch.js',
-  './data/dialekte/steirisch.js',
-  './data/dialekte/thueringisch.js',
-  './data/dialekte/tirolerisch.js',
-  './data/dialekte/vorarlbergerisch.js',
-  './data/dialekte/wienerisch.js',
   './data/translations/en.js',
   './data/translations/es.js',
   './data/translations/fr.js',
@@ -125,6 +101,7 @@ const PRECACHE_URLS = [
   './js/util/indexed-db.js',
   './js/util/inline-confirm.js',
   './js/util/ipa.js',
+  './js/util/learn-cache.js',
   './js/util/minimal-pairs.js',
   './js/util/modal.js',
   './js/util/motion.js',
