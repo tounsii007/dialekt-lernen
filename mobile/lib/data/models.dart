@@ -48,7 +48,8 @@ class Ausdruck {
         hochdeutsch: _str(j['hochdeutsch']),
         bedeutung: _str(j['bedeutung']),
         beispiel: _str(j['beispiel']),
-        beispielHd: _str(j['beispiel_hd']),
+        // lokale Assets: 'beispiel_hd' · Backend-API: 'beispielHd'
+        beispielHd: _str(j['beispiel_hd'] ?? j['beispielHd']),
         kategorie: _str(j['kategorie']),
       );
 }

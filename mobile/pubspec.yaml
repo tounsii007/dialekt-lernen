@@ -45,6 +45,10 @@ dependencies:
   # Lokale Persistenz (Favoriten, Lernstand, Einstellungen) — kein Backend.
   shared_preferences: ^2.3.2
 
+  # REST-Client für die Anbindung ans Dialekto-Backend (optional, mit Fallback
+  # auf die lokalen Assets, wenn das Backend nicht erreichbar ist).
+  http: ^1.2.2
+
   # Sprachausgabe (Ausdruck vorlesen) — Pendant zu util/speech.js.
   flutter_tts: ^4.2.0
 
