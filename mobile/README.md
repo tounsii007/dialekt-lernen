@@ -13,7 +13,7 @@ performanten Flutter-Oberfläche und nativem Splash Screen.
   ```bash
   # vom Repo-Root:
   npm run export-mobile-data
-  # → mobile/assets/data/dialekte.json  (13 Dialekte, ~3.500 Ausdrücke)
+  # → mobile/assets/data/dialekte.json  (24 Dialekte, ~6.700 Ausdrücke)
   ```
 
   Bei Änderungen an den Web-Dialektdaten einfach erneut ausführen.
@@ -26,7 +26,28 @@ performanten Flutter-Oberfläche und nativem Splash Screen.
   - `lib/data/` — Modelle + Repository (lädt das JSON-Asset)
   - `lib/widgets/` — Aurora-Hintergrund, Glass-Card, Buttons, Logo, Dialekt-Karte
   - `lib/screens/` — Splash, App-Shell (Bottom-Nav), Home, Entdecken, Detail,
-    Lernen (Flip-Karteikarten), Quiz/Favoriten (folgen)
+    Lernen (Flip-Karteikarten), Quiz, Favoriten, Spiele, Statistik u. a.
+  - `lib/services/` — REST-Client (`api_service.dart`) + Backend-Sync
+    (`backend_sync.dart`), TTS
+
+## Backend-Sync
+
+Die App ist lokal-first: Sie funktioniert vollständig offline aus dem
+gebündelten Daten-Asset. Ist das [Backend](../backend/README.md) erreichbar
+(Health-Check beim Start), verbindet sich `BackendSync` über eine anonyme
+Geräte-ID und gleicht den Nutzer-State mit dem Server ab — analog zur Web-App:
+
+- **Favoriten** — Write-Through beim Umschalten; beim Start werden die
+  Server-Favoriten in den lokalen Bestand gemerged (Union).
+- **Lernstand / SRS** — Beim Bewerten einer Karte wird die Bewertung
+  fehlertolerant ans Backend gespiegelt (Write-Through, fire-and-forget). Beim
+  Start wird der Server-Lernstand gemerged (pro Karte gewinnt der jüngere
+  Stand). Das Backend terminiert per SM-2.
+
+Alle Backend-Aufrufe sind fehlertolerant: Schlägt ein Request fehl oder ist der
+Server offline, bleibt der lokale Stand führend und die App läuft unverändert
+weiter. Die Backend-URL ist per `--dart-define=DIALEKTO_API=http://<host>:<port>`
+überschreibbar (Default: `http://10.0.2.2:8973`, der Host-PC im Android-Emulator).
 
 ## Splash Screen
 

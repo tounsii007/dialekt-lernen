@@ -12,6 +12,12 @@ const validKategorien = new Set(Object.keys(kategorienMod.KATEGORIEN));
 
 const REQUIRED_FIELDS = ['id', 'ausdruck', 'hochdeutsch', 'bedeutung', 'beispiel', 'beispiel_hd', 'kategorie'];
 
+// Soll-Mindestzahl an Ausdrücken pro Dialekt. Unterschreitung erzeugt eine
+// WARNUNG (kein Fehler) — dünne Dialekte (z. B. brandenburgisch ~36) werden
+// später ausgebaut. Bewusst NICHT in totalIssues gezählt: 'npm run validate'
+// und CI sollen weiterhin mit Exit 0 durchlaufen.
+const MIN_AUSDRUECKE_PRO_DIALEKT = 50;
+
 // CLI flags
 const args = new Set(process.argv.slice(2));
 const SHOW_INFO = args.has('--info');     // also show informational gaps/cross-dialect
@@ -23,6 +29,9 @@ const allIssues = [];
 let totalEntries = 0;
 let totalIssues = 0;
 const crossDialect = new Map();
+// Pro Dialekt: { name, count } — für den Mindestanzahl-Warn-Check (rein
+// informativ, fließt nicht in totalIssues/Exit-Code ein).
+const dialektSizes = [];
 
 // Normalize text for substring matching: lowercase, strip diacritics.
 function norm(s) {
@@ -77,6 +86,7 @@ for (const file of files) {
   const dialektId = data.id;
   const dialektPrefix = data.ausdruecke[0]?.id?.split('-')[0];
   totalEntries += data.ausdruecke.length;
+  dialektSizes.push({ name: data.name || dialektId, count: data.ausdruecke.length });
 
   const seenIds = new Map();
   const seenAusdrucks = new Map();
@@ -272,6 +282,22 @@ if (totalIssues === 0) {
       if (list.length > 5) console.log(`    ... +${list.length - 5} more`);
     }
   }
+}
+
+// Mindestanzahl-Check pro Dialekt — reine WARNUNG, kein Build-Stopper.
+// Dünne Dialekte werden später ausgebaut; daher kein Einfluss auf den
+// Exit-Code ('npm run validate' und CI bleiben grün / Exit 0).
+const thinDialekte = dialektSizes
+  .filter(d => d.count < MIN_AUSDRUECKE_PRO_DIALEKT)
+  .sort((a, b) => a.count - b.count);
+
+if (thinDialekte.length > 0) {
+  console.log(`\n⚠ WARNUNG: ${thinDialekte.length} Dialekt(e) unter der Soll-Mindestzahl von ${MIN_AUSDRUECKE_PRO_DIALEKT} Ausdrücken (kein Fehler — Build läuft weiter):`);
+  for (const d of thinDialekte) {
+    console.log(`  - ${d.name}: ${d.count} Ausdrücke (Soll: ≥${MIN_AUSDRUECKE_PRO_DIALEKT})`);
+  }
+} else {
+  console.log(`\n✓ Alle Dialekte erreichen die Soll-Mindestzahl von ${MIN_AUSDRUECKE_PRO_DIALEKT} Ausdrücken.`);
 }
 
 if (SHOW_INFO && crossDialectMatches.length > 0) {

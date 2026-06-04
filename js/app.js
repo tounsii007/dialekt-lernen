@@ -1,7 +1,7 @@
 // Dialekto · Einstiegspunkt
 // Initialisiert Theme, Suche, Tastatursteuerung, Streak und Router.
 
-import { $, toast } from './util.js';
+import { $, toast, ROUTE_EVENT } from './util.js';
 import { registerStreak, MAX_FREEZES, MAX_REPAIRS } from './store.js';
 import { initTheme } from './theme.js';
 import { initSearch } from './search.js';
@@ -292,7 +292,7 @@ async function initBackend() {
         syncLernstandFromBackend(),
         syncProgressFromBackend(),
       ]);
-      if (favChanged || srsChanged || xpChanged) window.dispatchEvent(new Event('dialekto:route'));
+      if (favChanged || srsChanged || xpChanged) window.dispatchEvent(new Event(ROUTE_EVENT));
     } catch { /* Fallback: lokaler Stand */ }
   } catch (e) {
     window.__dialektoBackend = { online: false };

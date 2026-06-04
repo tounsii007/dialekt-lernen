@@ -22,6 +22,13 @@ function getRedensarten() {
   return _redensartenCache;
 }
 
+// Anzahl distinct Dialekte, die tatsächlich Redensarten beisteuern — für den
+// Header-Untertitel ("… aus N Dialekten"). Dynamisch statt fest verdrahtet,
+// damit die Aussage zur Datenlage passt (aktuell tragen alle Dialekte bei).
+function countRedensartDialekte() {
+  return new Set(getRedensarten().map(a => a.dialektId)).size;
+}
+
 // Heuristische Cluster-Titel — gewählt anhand der hochdeutschen Bedeutung.
 // Wir matchen per Substring auf der normalisierten Form (lowercase, Umlaute
 // aufgelöst) — das ist toleranter als Word-Boundary-Regex.
@@ -170,7 +177,7 @@ export function renderIdiome(root, params = {}) {
       el('div', { class: 'lede' },
         selectedCluster
           ? `${selectedCluster.label} — ${selectedCluster.items.length} Redewendungen aus den Dialekten.`
-          : `Entdecke ${getRedensarten().length} Redensarten aus 12 Dialekten — gruppiert nach Bedeutung.`
+          : `Entdecke ${getRedensarten().length} Redensarten aus ${countRedensartDialekte()} Dialekten — gruppiert nach Bedeutung.`
       )
     ),
     selectedCluster

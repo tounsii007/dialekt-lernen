@@ -117,6 +117,16 @@ class ApiService {
 
   // ---------- Lernstand / SRS ----------
 
+  /// Lädt den gesamten Lernstand des Nutzers (für den Read-Merge beim Start).
+  /// Jeder Eintrag entspricht dem Backend-`LernstandDto`
+  /// (ausdruckId, status, ease, intervallTage, faelligkeit, wiederholungen,
+  /// aktualisiertAt).
+  Future<List<Map<String, dynamic>>> fetchLernstand() async {
+    final uid = await _ensureUserId();
+    final list = await _getJsonList('/api/users/$uid/lernstand');
+    return list.cast<Map<String, dynamic>>();
+  }
+
   /// Bewertet eine Karte. rating: 1 = schwer, 2 = mittel, 3 = leicht.
   Future<Map<String, dynamic>> bewerten(String ausdruckId, int rating) async {
     final uid = await _ensureUserId();

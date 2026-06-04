@@ -111,6 +111,12 @@ class SrsStore extends ChangeNotifier {
   final Map<String, CardSrs> _cards = {};
   bool _loaded = false;
 
+  /// Optionaler Write-Through ans Backend (von BackendSync gesetzt; entkoppelt,
+  /// damit der Store den ApiService nicht kennen muss — wie bei FavoritesStore).
+  /// `rating` ist die 3-stufige Bewertung (1 = schwer, 2 = mittel, 3 = leicht),
+  /// die das Backend erwartet. Fire-and-forget; offline = no-op.
+  Future<void> Function(String ausdruckId, int rating)? remoteSync;
+
   // ── Scheduler-Konfiguration ──────────────────────────────────────────────
   String _scheduler = 'fsrs'; // 'fsrs' | 'sm2' — FSRS ist Default
   double _retention = 0.9; // Wunsch-Retention (0.7..0.97)
@@ -326,13 +332,38 @@ class SrsStore extends ChangeNotifier {
 
   /// Scheduler-agnostischer Einstieg. Liefert die UI 4 Knöpfe, wird [grade]
   /// (1..4) übergeben; sonst mappt [rating] (1..3). Routet je nach Scheduler.
-  Future<CardSrs> reviewScheduled(String key, {int? rating, int? grade, int? nowMs}) {
+  Future<CardSrs> reviewScheduled(String key, {int? rating, int? grade, int? nowMs}) async {
+    final CardSrs result;
     if (_scheduler == 'fsrs') {
       final g = grade != null ? grade.clamp(1, 4) : _ratingToGrade(rating ?? ratingMed);
-      return reviewFsrs(key, g, nowMs);
+      result = await reviewFsrs(key, g, nowMs);
+    } else {
+      final r = rating ?? _gradeToRating(grade ?? gradeGood);
+      result = await review(key, r);
     }
-    final r = rating ?? _gradeToRating(grade ?? gradeGood);
-    return review(key, r);
+    // Lokal-first: Bewertung zusätzlich ans Backend spiegeln (Write-Through).
+    _syncReviewToBackend(key, rating: rating, grade: grade);
+    return result;
+  }
+
+  /// Spiegelt eine Bewertung ans Backend (sofern via [remoteSync] verbunden).
+  /// Fire-and-forget — Fehler/Offline werden bewusst verschluckt; der lokale
+  /// Stand bleibt führend. Das Backend kennt nur die 3-stufige Bewertung und
+  /// die `ausdruckId`, daher wird der Schlüssel `dialektId.ausdruckId` am ersten
+  /// Punkt zerlegt (Dialekt-/Ausdruck-IDs enthalten selbst keinen Punkt) und
+  /// ein evtl. nur als FSRS-Grade (1..4) gegebener Wert auf 1..3 gemappt.
+  void _syncReviewToBackend(String key, {int? rating, int? grade}) {
+    final sync = remoteSync;
+    if (sync == null) return;
+    final dot = key.indexOf('.');
+    if (dot < 0 || dot + 1 >= key.length) return;
+    final ausdruckId = key.substring(dot + 1);
+    final r = (rating ?? _gradeToRating(grade ?? gradeGood)).clamp(1, 3);
+    try {
+      sync(ausdruckId, r);
+    } catch (_) {
+      // lokal bleibt führend
+    }
   }
 
   /// Intervall-Vorschau (Tage) je Bewertung — für die Anki-Stil-Buttons.
@@ -383,6 +414,27 @@ class SrsStore extends ChangeNotifier {
       fresh: fresh,
       leeches: leeches,
     );
+  }
+
+  /// Merged vom Backend gelieferte Lernstände in den lokalen Bestand und
+  /// persistiert. Pro Karte gewinnt der jüngere Stand: ein eingehender Record
+  /// überschreibt den lokalen nur, wenn sein `last`-Zeitstempel >= dem lokalen
+  /// ist (so geht offline gesammelter Fortschritt nicht verloren). `lapses`
+  /// wird vom lokalen Record übernommen, da das Backend (SM-2-Read-DTO) sie
+  /// nicht ausliefert. Löst keinen Write-Through aus. Analog zu
+  /// FavoritesStore.mergeRemote und dem Web-`syncLernstandFromBackend`.
+  Future<void> mergeRemote(Map<String, CardSrs> remote) async {
+    var changed = false;
+    remote.forEach((key, incoming) {
+      final existing = _cards[key];
+      if (existing != null && existing.last >= incoming.last) return;
+      if (existing != null) incoming.lapses = existing.lapses;
+      _cards[key] = incoming;
+      changed = true;
+    });
+    if (!changed) return;
+    notifyListeners();
+    await _persist();
   }
 
   Future<void> _persist() async {

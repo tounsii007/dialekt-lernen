@@ -3,6 +3,9 @@
 // Eager bleiben Home / Entdecken / Detail / Favoriten (häufig + leichtgewichtig).
 
 import { $, $$, parseHash, initLinkInterception, ROUTE_EVENT } from './util.js';
+// Routen-Labels + Liste der Lazy-Keys stammen aus der Single-Source-Registry in
+// route.js, damit eine neue Route primär nur dort eingetragen werden muss.
+import { ROUTE_LABELS, LAZY_ROUTE_KEYS } from './util/route.js';
 import {
   observeReveals, observeCounters,
   initTilt, initMagnetic, initPointerParallax, initParallax
@@ -23,47 +26,40 @@ const DEFAULT_ROUTE = 'home';
 // (nicht bei In-View-Re-Renders/Pull-to-Refresh derselben Route) auszulösen.
 let lastRenderedRoute = null;
 
-const ROUTE_LABELS = {
-  home:      'Startseite',
-  entdecken: 'Dialekte entdecken',
-  lernen:    'Karteikarten lernen',
-  quiz:      'Quiz',
-  vergleich: 'Dialekt-Vergleich',
-  favoriten: 'Favoriten und Statistiken',
-  karte:        'Dialekt-Karte',
-  statistiken:  'Lernstatistiken',
-  dialekt:      'Dialekt-Details',
-  decks:        'Eigene Decks',
-  share:     'Geteiltes Quiz-Resultat',
-  spiele:    'Mini-Spiele',
-  sammlung:  'Ausdrücke-Sammlung',
-  idiome:    'Idiom-Explorer',
-  lektionen: 'Mini-Lektionen',
-  liga:      'Lokale Liga',
-  lernpfad:  'Lernpfad',
-  shadowing: 'Shadowing-Trainer',
-  klangpaare: 'Klangpaare-Hörtrainer'
-};
-
-// Lazy: erst beim Bedarf laden + danach gecached.
-const lazyLoaders = {
+// Lazy-Loader: die import()-Thunks bleiben hier (kolokalisiert mit loadLazy +
+// Idle-Preload). WELCHE Routen lazy sind, bestimmt allein die Registry in
+// route.js (LAZY_ROUTE_KEYS); der Guard darunter erzwingt, dass diese Map exakt
+// dieselben Keys abdeckt — fehlt/überzählt ein Eintrag, schlägt der Init laut fehl.
+const LAZY_LOADERS = {
   favoriten:   () => import('./views/favoriten.js'),
   karte:       () => import('./views/karte.js'),
   statistiken: () => import('./views/statistiken.js'),
-  lernen:    () => import('./views/lernen.js'),
-  quiz:      () => import('./views/quiz.js'),
-  vergleich: () => import('./views/vergleich.js'),
-  decks:     () => import('./views/decks.js'),
-  share:     () => import('./views/share.js'),
-  spiele:    () => import('./views/spiele.js'),
-  sammlung:  () => import('./views/sammlung.js'),
-  idiome:    () => import('./views/idiome.js'),
-  lektionen: () => import('./views/lektionen.js'),
-  liga:      () => import('./views/liga.js'),
-  lernpfad:  () => import('./views/lernpfad.js'),
-  shadowing: () => import('./views/shadowing.js'),
-  klangpaare: () => import('./views/klangpaare.js')
+  lernen:      () => import('./views/lernen.js'),
+  quiz:        () => import('./views/quiz.js'),
+  vergleich:   () => import('./views/vergleich.js'),
+  decks:       () => import('./views/decks.js'),
+  share:       () => import('./views/share.js'),
+  spiele:      () => import('./views/spiele.js'),
+  sammlung:    () => import('./views/sammlung.js'),
+  idiome:      () => import('./views/idiome.js'),
+  lektionen:   () => import('./views/lektionen.js'),
+  liga:        () => import('./views/liga.js'),
+  lernpfad:    () => import('./views/lernpfad.js'),
+  shadowing:   () => import('./views/shadowing.js'),
+  klangpaare:  () => import('./views/klangpaare.js'),
 };
+
+// Drift-Schutz: Loader-Keys MÜSSEN deckungsgleich mit der Registry sein. Eine neue
+// `lazy:true`-Route ohne Loader (oder ein verwaister Loader) wird so sofort sichtbar.
+{
+  const loaderKeys = Object.keys(LAZY_LOADERS);
+  const missing = LAZY_ROUTE_KEYS.filter((k) => !(k in LAZY_LOADERS));
+  const extra = loaderKeys.filter((k) => !LAZY_ROUTE_KEYS.includes(k));
+  if (missing.length || extra.length) {
+    console.error('[Dialekto] Routen-Registry/Loader-Drift', { missing, extra });
+  }
+}
+
 const lazyCache = {};
 
 let lernenModule = null;
@@ -108,8 +104,8 @@ function showSkeleton(app, kind = 'grid') {
 
 async function loadLazy(route) {
   if (lazyCache[route]) return lazyCache[route];
-  if (!lazyLoaders[route]) return null;
-  lazyCache[route] = await lazyLoaders[route]();
+  if (!LAZY_LOADERS[route]) return null;
+  lazyCache[route] = await LAZY_LOADERS[route]();
   return lazyCache[route];
 }
 
@@ -299,6 +295,6 @@ export function initRouter() {
   // Vorladen, sobald die UI idle ist — schnelle Navigation ohne Skeleton-Blitz.
   const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 500));
   idle(() => {
-    Object.keys(lazyLoaders).forEach((k) => { lazyCache[k] || lazyLoaders[k]().then((m) => { lazyCache[k] = m; if (k === 'lernen') lernenModule = m; else if (k === 'quiz') quizModule = m; }); });
+    Object.keys(LAZY_LOADERS).forEach((k) => { lazyCache[k] || LAZY_LOADERS[k]().then((m) => { lazyCache[k] = m; if (k === 'lernen') lernenModule = m; else if (k === 'quiz') quizModule = m; }); });
   });
 }

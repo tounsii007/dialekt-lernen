@@ -3,15 +3,22 @@
 [![CI](https://github.com/tounsii007/dialekt-lernen/actions/workflows/ci.yml/badge.svg)](https://github.com/tounsii007/dialekt-lernen/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-891%20web%20%2B%20250%20mobile-success.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-972%20web%20%2B%20250%20mobile-success.svg)](tests/)
 [![PWA](https://img.shields.io/badge/PWA-ready-purple.svg)](manifest.webmanifest)
 
 Eine moderne, erweiterbare App zum Lernen deutscher Dialekte aus dem gesamten
-DACH-Raum. Komplett auf Hochdeutsch erklärt, ohne Backend — alle Daten bleiben
-lokal. Verfügbar als **Web-PWA** und als **native Mobile-App (Flutter, `mobile/`)**,
-gespeist aus derselben Datenquelle.
+DACH-Raum. Komplett auf Hochdeutsch erklärt und **lokal-first**: Die Web-PWA
+funktioniert ohne Server vollständig offline, alle Daten bleiben standardmäßig
+im Browser. Verfügbar als **Web-PWA** und als **native Mobile-App
+(Flutter, `mobile/`)**, gespeist aus derselben Datenquelle.
 
-**Stand: 24 Dialekte · 6.700 Ausdrücke · 891 Web- + 250 Mobile-Tests (alle grün)**
+Optional gibt es ein **Java/Spring-Boot-Backend mit PostgreSQL**, das Nutzer-State
+(Favoriten, Lernstand/SRS, XP/Streak) geräteübergreifend synchronisiert. Web,
+Backend und Datenbank lassen sich als kompletter **Docker-Stack** (nginx +
+Backend-Replikate + Postgres) betreiben. Ohne dieses Backend bleibt die App voll
+funktionsfähig — der Sync ist eine Ergänzung, keine Voraussetzung.
+
+**Stand: 24 Dialekte · 6.700 Ausdrücke · 972 Web- + 250 Mobile-Tests (alle grün)**
 
 ## Im Vergleich (Ziel: deutsche Dialekte lernen)
 
@@ -94,7 +101,11 @@ Details & Bewertung: siehe [AUDIT.md](AUDIT.md).
 - **Responsive Design** für Mobile, Tablet und Desktop
 
 ### Datenschutz & Offline
-- **Lokal persistent** — alles im Browser (localStorage + IndexedDB für Notizen), kein Backend
+- **Lokal-first** — standardmäßig bleibt alles im Browser
+  (localStorage + IndexedDB für Notizen); kein Konto, kein Tracking
+- **Optionaler Sync** — bei aktivem Backend werden Favoriten, Lernstand/SRS und
+  XP/Streak über eine anonyme Geräte-ID synchronisiert (siehe
+  [`backend/README.md`](backend/README.md))
 - **PWA** — installierbar, voll offline-fähig (Service Worker)
 - **Manifest-Shortcuts** — 4 PWA-Shortcuts (Daily, Lernen, Quiz, Vergleich)
 - **Export / Import** — JSON-Backup, CSV/Anki-Export, PDF-Statistik-Druck
@@ -108,7 +119,7 @@ Details & Bewertung: siehe [AUDIT.md](AUDIT.md).
 ### Tech-Highlights
 - **Frameworkfrei** — Vanilla JS + ES Modules
 - **Zero Production-Dependencies** (nur `http-server` für Dev)
-- **891 Web-Unit-Tests** (node --test, zero deps) + **250 Mobile-Tests** (Flutter)
+- **972 Web-Unit-Tests** (node --test, zero deps) + **250 Mobile-Tests** (Flutter)
 - **Minifiziertes CSS** ausgeliefert (`npm run build`), Service Worker mit
   Strategy-Mix + Auto-Update-Detection
 - **Web-Worker für SRS** (non-blocking SM-2, Sync-Fallback)
@@ -305,6 +316,15 @@ dialekt-lernen/
   Referrer-Policy `strict-origin-when-cross-origin`
 - **Web Standards** — `prefers-color-scheme`, Web Speech API mit
   Voice-Picker, History/Hash-Router, View Transitions
+- **Optionales Backend** — Java/Spring-Boot-3 + PostgreSQL 17, das Favoriten,
+  Lernstand/SRS und XP/Streak synchronisiert; der komplette Stack (nginx +
+  Backend-Replikate + Postgres) läuft per Docker Compose. Siehe
+  [`backend/README.md`](backend/README.md) und [`ARCHITECTURE.md`](ARCHITECTURE.md).
+- **Native Mobile-App** — Flutter (`mobile/`), nutzt dieselbe Datenquelle,
+  synct über dasselbe Backend und fällt offline auf gebündelte Assets zurück.
+
+Das große Gesamtbild — Web-PWA, Backend, Mobile und Docker im Zusammenspiel —
+beschreibt [`ARCHITECTURE.md`](ARCHITECTURE.md).
 
 ## Beitragen
 

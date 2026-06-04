@@ -3,9 +3,42 @@
 Ein Überblick über die Struktur, die Datenflüsse und die Design-Entscheidungen
 der Dialekto-App.
 
-## Übersicht
+## Gesamtbild
 
-Dialekto ist eine **frameworkfreie Single-Page-PWA** in vanilla JavaScript
+Dialekto besteht aus vier Strängen, die sich dieselbe Dialekt-Datenquelle teilen
+und **lokal-first mit optionalem Sync** funktionieren:
+
+- **Web-PWA** (`/`) — frameworkfreies vanilla JavaScript (ES Modules), läuft ohne
+  Build-Step direkt aus dem Repository und ist voll offline-fähig.
+- **Mobile-App** (`mobile/`) — native Flutter-App; synct Nutzer-State (Favoriten,
+  Lernstand/SRS) mit dem Backend und fällt offline auf gebündelte Assets zurück.
+- **Backend** (`backend/`) — optionales Java/Spring-Boot-3-REST-API (Java 21) mit
+  PostgreSQL, das Nutzer-State (Favoriten, Lernstand/SRS, XP/Streak) über eine
+  anonyme Geräte-ID geräteübergreifend synchronisiert.
+- **Docker-Stack** (Root-`docker-compose.yml`) — orchestriert nginx-Frontend,
+  Backend-Replikate und Postgres als ein deploybares Gesamtsystem.
+
+Wichtig: Ohne Backend bleiben Web-PWA und Mobile-App voll funktionsfähig —
+sämtlicher State liegt dann lokal. Der Sync ist eine Ergänzung, keine
+Voraussetzung.
+
+```
+   Web-PWA (Browser)          Flutter-App (mobile/)
+   localStorage/IndexedDB     lokale Assets + Storage
+          │                            │
+          │   optionaler Sync (HTTPS / REST, anonyme Geräte-ID)
+          └──────────────┬─────────────┘
+                         ▼
+              Spring-Boot-Backend (/api)
+                         │
+                         ▼
+                   PostgreSQL 17
+   (alles zusammen via Docker Compose: nginx + Backend-Replikate + DB)
+```
+
+## Web-PWA im Detail
+
+Die Web-App ist eine **frameworkfreie Single-Page-PWA** in vanilla JavaScript
 (ES Modules), die ohne Build-Step direkt aus dem Repository läuft.
 
 ```
@@ -45,7 +78,7 @@ dialekt-lernen/
 │   └── dialekte/
 │       ├── hessisch.js
 │       ├── bayerisch.js
-│       └── …                   # 13 Dateien
+│       └── …                   # 24 Dialekt-Dateien (~6.700 Ausdrücke)
 ├── js/
 │   ├── app.js                  # Einstiegspunkt
 │   ├── router.js               # Hash-Router + Lazy-Loading
@@ -183,6 +216,100 @@ end of questions?           streak + xp + achievement-eval
 renderQuizResult()
 ```
 
+## Backend (optional, `backend/`)
+
+Ein **Spring-Boot-3-REST-API (Java 21)** mit **PostgreSQL** spiegelt den
+Nutzer-State serverseitig, damit er geräteübergreifend synchron bleibt. Nutzer
+werden **anonym über eine Geräte-ID** identifiziert (kein Login/Passwort); die
+`userId` ist eine vom Server vergebene UUID.
+
+```
+backend/
+├── src/main/java/com/dialekto/
+│   ├── web/                    # REST-Controller (@RestController)
+│   │   ├── DialektController.java    # GET /api/dialekte, /kategorien, /ausdruecke…
+│   │   ├── UserController.java       # POST /api/users (Geräte-ID → UUID)
+│   │   ├── FavoritController.java    # /api/users/{id}/favoriten
+│   │   ├── LernstandController.java  # /api/users/{id}/lernstand (SRS/SM-2)
+│   │   └── ProgressController.java   # /api/users/{id}/progress (XP/Streak)
+│   ├── service/                # Geschäftslogik (DialektService, SrsService, …)
+│   ├── domain/                 # JPA-Entities (AppUser, …)
+│   └── config/SecurityConfig.java    # CORS, Security-Header, stateless
+├── src/main/resources/
+│   ├── application.yml         # DB, Flyway, CORS, Actuator
+│   ├── db/migration/           # Flyway-Migrationen (Schema)
+│   └── seed/dialekte.json      # 24 Dialekte / ~6.700 Ausdrücke (Import beim Start)
+└── docker-compose.yml          # Dev: nur PostgreSQL 17 (Backend läuft via Maven)
+```
+
+Eckpunkte:
+
+- **Schema via Flyway** — Hibernate läuft auf `ddl-auto: validate`; eine separate
+  Kategorie-Tabelle, Constraints, optimistisches Locking (`@Version`) und
+  Audit-Felder sind Teil des Schemas.
+- **Daten-Import** — beim ersten Start wird `seed/dialekte.json` (dieselben
+  24 Dialekte / 6.700 Ausdrücke wie die Web-App) nach Postgres importiert.
+- **Read-API für Stammdaten** plus **Sync-Endpunkte** für Favoriten, Lernstand/SRS
+  (serverseitiges SM-2 über `SrsService`) und XP/Streak.
+- **Stateless & gehärtet** — `SecurityConfig`: keine Session, CSRF aus
+  (geräte-/token-basiert), strikte CORS-Whitelist, Security-Header (HSTS,
+  `X-Frame-Options: DENY`, nosniff, Referrer-Policy, restriktive CSP). Nur
+  `/api/**` und `/actuator/{health,info}` sind erreichbar.
+
+Die vollständige Endpunkt-Liste steht in [`backend/README.md`](backend/README.md).
+
+### Sync-Modell (lokal-first)
+
+Clients (Web wie Mobile) sind **Source of Truth offline** und nutzen das Backend
+als Spiegel: Favoriten und Lernstand werden gegen `/api/users/{userId}/…`
+abgeglichen, XP/Streak via `/progress` hochgespielt. Ist kein Backend
+konfiguriert oder erreichbar, fällt der Client transparent auf den rein lokalen
+Betrieb zurück.
+
+## Mobile-App (`mobile/`)
+
+Eine **native Flutter-App** teilt sich Datenmodell und Dialekt-Inhalte mit der
+Web-App. Über einen `ApiService` (Dart) spricht sie dieselben REST-Endpunkte an
+und synchronisiert **Favoriten und Lernstand/SRS** mit dem Backend. Offline — oder
+ohne konfiguriertes Backend — greift sie auf **gebündelte Assets** zurück, sodass
+Lernen jederzeit funktioniert. Tests laufen via `flutter test` (siehe
+[`mobile/README.md`](mobile/README.md)).
+
+## Docker-Stack (Root-`docker-compose.yml`)
+
+Für den Produktivbetrieb werden alle drei Dienste containerisiert orchestriert:
+
+```
+                Browser
+                   │  FRONTEND_PORT (Default 8973, einziger Host-Port)
+                   ▼
+        ┌─────────────────────┐
+        │  frontend (nginx)   │  serviert die statische PWA
+        │                     │  + Reverse-Proxy /api → backend
+        └──────────┬──────────┘
+                   │  intern: BACKEND_PORT (Default 9090), Round-Robin
+        ┌──────────▼──────────┐
+        │  backend × N        │  Spring Boot (BACKEND_REPLICAS, Default 2)
+        └──────────┬──────────┘
+                   │  intern: POSTGRES_PORT (Default 6432)
+        ┌──────────▼──────────┐
+        │  postgres:17-alpine │  Volume dialekto-pgdata
+        └─────────────────────┘
+```
+
+- **Nur das Frontend** ist von außen erreichbar (Host-Port `FRONTEND_PORT`);
+  nginx proxyt `/api` intern an die Backend-Replikate (Round-Robin).
+- **Bewusst nicht-standardmäßige, interne Ports** — Backend `9090`, Postgres
+  `6432` (statt 8080/5432), ohne Host-Mapping. Alle Ports, Replikatzahl und
+  Zugangsdaten sind über `.env` steuerbar (Vorlage: [`.env.example`](.env.example)).
+- **Skalierung** über `BACKEND_REPLICAS`; nginx verteilt die Last.
+- Ein Debug-Override (`docker-compose.debug.yml`) blendet bei Bedarf direkte
+  Host-Ports für Backend und DB ein.
+
+> Hinweis: Die separate `backend/docker-compose.yml` ist die **Dev**-Variante und
+> startet nur PostgreSQL (auf `127.0.0.1:5432`), während das Backend daneben per
+> `mvn spring-boot:run` läuft.
+
 ## Design-Entscheidungen
 
 ### Kein Build-Step
@@ -212,11 +339,13 @@ Dialekt-Daten sind reine JavaScript-Objekte mit klarem Schema. Die App
 ist dadurch trivial **erweiterbar**: ein neuer Dialekt erfordert nur
 eine neue Datei und einen Import in `data/dialekte.js`.
 
-### Lokale Persistenz
+### Lokale Persistenz (mit optionalem Sync)
 
 - **localStorage**: Theme, Favoriten, SRS-Stand, XP, Goals, Streak
 - **IndexedDB**: Notes (mit Migration aus localStorage)
-- Keine Server, keine Konten, keine Datenschutz-Probleme
+- Standardmäßig **lokal-first**: keine Konten, kein Tracking. Ist das optionale
+  Backend konfiguriert, werden Favoriten, Lernstand/SRS und XP/Streak über eine
+  anonyme Geräte-ID gespiegelt — ohne Backend bleibt alles rein lokal.
 
 ### PWA-First
 
@@ -291,7 +420,8 @@ Coverage-Strategie:
 | HTML/CSS/SW/Manifest | 250 KB |
 | **Total App Size** | **~3.1 MB** |
 | Lazy-loaded Views | 9 (alle großen Views) |
-| Test-Suite | 485 Tests, ~60s |
+| Web-Test-Suite | 972 Tests (`node --test`) |
+| Mobile-Test-Suite | 250 Tests (`flutter test`) |
 
 ## CI-Pipeline (6 parallele Jobs)
 
@@ -303,7 +433,7 @@ push/PR auf main
 │ check     │ data      │ audit    │ audit    │ tests    │ test     │
 └───────────┴───────────┴──────────┴──────────┴──────────┴──────────┘
     ↓           ↓           ↓          ↓          ↓          ↓
-  node --check  Dialekt    HTML+CSS   Secrets+   485 Tests  http-server
+  node --check  Dialekt    HTML+CSS   Secrets+   972 Tests  http-server
   + html-val    Schema     +Buttons   Eval+CSP   +Coverage  +curl checks
 ```
 

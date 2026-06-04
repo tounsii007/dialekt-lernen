@@ -1,4 +1,7 @@
-// SM-2 Spaced-Repetition-Algorithmus (Anki-style, leicht angepasst).
+// Spaced-Repetition-Scheduler: SM-2 + FSRS-5 (Default).
+// FSRS-5 ist der aktive Scheduler (state.srs.scheduler), SM-2 dient als
+// Fallback/Legacy-Pfad — siehe FSRS-Integration weiter unten. Der folgende
+// SM-2-Teil (Anki-style, leicht angepasst) bleibt voll funktionsfähig.
 // Pro Karte werden gespeichert:
 //   ef        — easiness factor (>=1.3, startet bei 2.5)
 //   reps      — Anzahl korrekter Reviews in Folge
