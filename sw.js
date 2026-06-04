@@ -17,7 +17,7 @@
 //   ein Offline-First-Load funktioniert.
 
 // === BEGIN VERSION (managed by tools/sync-version.mjs) ===
-const APP_VERSION = '2.1.55';
+const APP_VERSION = '2.1.56';
 // === END VERSION ===
 
 const VERSION = `dialekto-v${APP_VERSION}`;
@@ -161,6 +161,30 @@ const PRECACHE_URLS = [
   './js/views/statistiken.js',
   './js/views/suggestEditModal.js',
   './js/views/vergleich.js',
+  './js/views/favoriten/achievements-panel.js',
+  './js/views/favoriten/chest-panel.js',
+  './js/views/favoriten/heatmap-panel.js',
+  './js/views/favoriten/list-panel.js',
+  './js/views/favoriten/notifications-panel.js',
+  './js/views/favoriten/speech-panel.js',
+  './js/views/favoriten/stats-panel.js',
+  './js/views/favoriten/streak-panel.js',
+  './js/views/favoriten/suggestions-panel.js',
+  './js/views/favoriten/tools-panel.js',
+  './js/views/favoriten/xp-panel.js',
+  './js/views/home/adaptive.js',
+  './js/views/home/challenges.js',
+  './js/views/home/daily-expression.js',
+  './js/views/home/dashboard.js',
+  './js/views/home/dialekt-grid.js',
+  './js/views/home/fakt.js',
+  './js/views/home/features.js',
+  './js/views/home/hero.js',
+  './js/views/home/league.js',
+  './js/views/home/long-goals.js',
+  './js/views/home/pomodoro.js',
+  './js/views/home/quests.js',
+  './js/views/home/season-banner.js',
   './js/views/lernen/flashcard.js',
   './js/views/lernen/setup.js',
   './js/views/lernen/state.js',
