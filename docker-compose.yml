@@ -1,22 +1,25 @@
-# Dialekto · komplette Stack-Orchestrierung (Frontend + Backend + PostgreSQL).
+# Dialekto · Stack-Orchestrierung (Frontend + Backend + PostgreSQL).
+# Alle Ports, Replikate und Zugangsdaten sind über die .env steuerbar
+# (Vorlage: .env.example). Bewusst NICHT die Standard-Ports.
 #
-#   docker compose up -d --build
-#   → Frontend auf http://localhost:8080  (nginx, proxyt /api an das Backend)
+#   cp .env.example .env  &&  docker compose up -d --build
 #
-# Backend und Datenbank sind NICHT nach außen exponiert (nur im internen Netz),
-# der einzige öffentliche Einstieg ist der nginx-Frontend-Container.
+# Öffentlich erreichbar ist nur das Frontend (nginx) auf FRONTEND_PORT; nginx
+# leitet /api intern an die — beliebig vielen — Backend-Replikate weiter
+# (Round-Robin). Backend und Datenbank haben keinen Host-Port.
 
 services:
   postgres:
     image: postgres:17-alpine
+    command: ["-p", "${POSTGRES_PORT:-6432}"]
     environment:
-      POSTGRES_DB: dialekto
-      POSTGRES_USER: dialekto
+      POSTGRES_DB: ${POSTGRES_DB:-dialekto}
+      POSTGRES_USER: ${POSTGRES_USER:-dialekto}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dialekto}
     volumes:
       - dialekto-pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U dialekto -d dialekto"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-dialekto} -d ${POSTGRES_DB:-dialekto} -p ${POSTGRES_PORT:-6432}"]
       interval: 5s
       timeout: 3s
       retries: 12
@@ -26,16 +29,21 @@ services:
   backend:
     build: ./backend
     environment:
-      DB_URL: jdbc:postgresql://postgres:5432/dialekto
-      DB_USER: dialekto
+      DB_URL: "jdbc:postgresql://postgres:${POSTGRES_PORT:-6432}/${POSTGRES_DB:-dialekto}"
+      DB_USER: ${POSTGRES_USER:-dialekto}
       DB_PASSWORD: ${POSTGRES_PASSWORD:-dialekto}
-      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8080}
-      SERVER_PORT: "8080"
+      SERVER_PORT: ${BACKEND_PORT:-9090}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8973}
+      JAVA_OPTS: ${JAVA_OPTS:--XX:MaxRAMPercentage=75.0}
+    expose:
+      - "${BACKEND_PORT:-9090}"
     depends_on:
       postgres:
         condition: service_healthy
+    deploy:
+      replicas: ${BACKEND_REPLICAS:-2}
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/actuator/health | grep -q UP || exit 1"]
+      test: ["CMD-SHELL", "wget -qO- http://localhost:${BACKEND_PORT:-9090}/actuator/health | grep -q UP || exit 1"]
       interval: 10s
       timeout: 4s
       retries: 12
@@ -45,8 +53,12 @@ services:
 
   frontend:
     build: .
+    environment:
+      NGINX_PORT: ${NGINX_PORT:-8080}
+      BACKEND_HOST: backend
+      BACKEND_PORT: ${BACKEND_PORT:-9090}
     ports:
-      - "${FRONTEND_PORT:-8080}:80"
+      - "${FRONTEND_PORT:-8973}:${NGINX_PORT:-8080}"
     depends_on:
       backend:
         condition: service_healthy

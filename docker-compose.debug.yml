@@ -1,0 +1,16 @@
+# Optionaler Override für Entwicklung/Debug — exponiert Datenbank und Backend
+# direkt auf (nicht-Standard-) Host-Ports:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.debug.yml up -d
+#
+# Hinweis: Bei direktem Backend-Host-Port muss BACKEND_REPLICAS=1 gesetzt sein
+# (ein fester Host-Port kann nicht von mehreren Replikaten belegt werden).
+
+services:
+  postgres:
+    ports:
+      - "${POSTGRES_DEBUG_PORT:-65432}:${POSTGRES_PORT:-6432}"
+
+  backend:
+    ports:
+      - "${BACKEND_DEBUG_PORT:-19090}:${BACKEND_PORT:-9090}"
