@@ -26,7 +26,7 @@ public class Lernstand {
     private String ausdruckId;
 
     @Column(nullable = false)
-    private short status = 0;
+    private LernStatus status = LernStatus.UNKNOWN;  // via LernStatusConverter als SMALLINT
 
     @Column(nullable = false)
     private double ease = 2.5;
@@ -55,8 +55,8 @@ public class Lernstand {
     public void setUserId(UUID userId) { this.userId = userId; }
     public String getAusdruckId() { return ausdruckId; }
     public void setAusdruckId(String ausdruckId) { this.ausdruckId = ausdruckId; }
-    public short getStatus() { return status; }
-    public void setStatus(short status) { this.status = status; }
+    public LernStatus getStatus() { return status; }
+    public void setStatus(LernStatus status) { this.status = status; }
     public double getEase() { return ease; }
     public void setEase(double ease) { this.ease = ease; }
     public int getIntervallTage() { return intervallTage; }

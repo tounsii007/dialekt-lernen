@@ -20,7 +20,7 @@ public final class LernstandDtos {
         Instant aktualisiertAt
     ) {
         public static LernstandDto from(Lernstand l) {
-            return new LernstandDto(l.getAusdruckId(), l.getStatus(), l.getEase(),
+            return new LernstandDto(l.getAusdruckId(), (short) l.getStatus().getValue(), l.getEase(),
                 l.getIntervallTage(), l.getFaelligkeit(), l.getWiederholungen(), l.getAktualisiertAt());
         }
     }

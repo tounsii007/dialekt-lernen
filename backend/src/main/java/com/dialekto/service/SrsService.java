@@ -1,6 +1,7 @@
 package com.dialekto.service;
 
 import com.dialekto.domain.Lernstand;
+import com.dialekto.domain.Rating;
 import com.dialekto.repository.AusdruckRepository;
 import com.dialekto.repository.LernstandRepository;
 import com.dialekto.web.NotFoundException;
@@ -69,7 +70,8 @@ public class SrsService {
 
     /** Wendet einen SM-2-Schritt auf den Lernstand an. */
     private void applySm2(Lernstand ls, int rating) {
-        int q = quality(rating);
+        Rating r = Rating.fromValue(rating);
+        int q = r.quality();
         double ef = ls.getEase() > 0 ? ls.getEase() : INIT_EF;
         int reps = ls.getWiederholungen();
         int interval = ls.getIntervallTage();
@@ -90,16 +92,8 @@ public class SrsService {
         ls.setEase(ef);
         ls.setWiederholungen(reps);
         ls.setIntervallTage(interval);
-        ls.setStatus((short) stand(rating));
+        ls.setStatus(r.resultingStatus());
         ls.setFaelligkeit(Instant.now().plus(interval, ChronoUnit.DAYS));
         ls.setAktualisiertAt(Instant.now());
-    }
-
-    private int quality(int rating) {
-        return rating >= 3 ? 5 : (rating == 2 ? 3 : 2);
-    }
-
-    private int stand(int rating) {
-        return rating >= 3 ? 3 : (rating == 2 ? 2 : 1);
     }
 }
