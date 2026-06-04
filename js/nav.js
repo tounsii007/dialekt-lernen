@@ -75,7 +75,11 @@ function syncMoreActive() {
   moreBtn.classList.toggle('is-active', activeInMore);
 }
 
-// Dropdown einmalig verdrahten (Toggle, Außenklick, Escape, Auswahl schließt).
+// „Mehr" ist ein Disclosure (kein Menü): Button mit aria-expanded klappt einen
+// Container aus, dessen Inhalt normale, per Tab erreichbare Links sind. Daher
+// KEIN role=menu / menuitem und kein Roving-Tabindex — die Links behalten ihre
+// native Link-Semantik. Verdrahtet werden Toggle, Außenklick, Escape (schließt
+// + Fokus zurück zum Button) und „Auswahl schließt".
 function wireMoreDropdown() {
   const more = document.querySelector('.nav-more');
   if (!more || more.dataset.bound) return;
@@ -83,15 +87,22 @@ function wireMoreDropdown() {
   const btn = more.querySelector('.nav-more-btn');
   const menu = more.querySelector('.nav-more-menu');
   if (!btn || !menu) return;
-  const setOpen = (open) => {
+  const isOpen = () => !menu.hidden;
+  const setOpen = (open, { focusBtn = false } = {}) => {
     menu.hidden = !open;
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
     if (open) document.dispatchEvent(new CustomEvent('dialekto:menuOpen', { detail: menu }));
+    else if (focusBtn) btn.focus();
   };
   btn.addEventListener('click', (e) => { e.stopPropagation(); setOpen(menu.hidden); });
   menu.addEventListener('click', () => setOpen(false));
   document.addEventListener('click', (e) => { if (!more.contains(e.target)) setOpen(false); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !isOpen()) return;
+    // Fokus nur zurückgeben, wenn er innerhalb des Disclosure liegt — sonst
+    // (Escape an anderer Stelle) nur schließen, ohne den Fokus zu verschieben.
+    setOpen(false, { focusBtn: more.contains(document.activeElement) });
+  });
   // Anderes Topbar-Menü öffnet → dieses schließen.
   document.addEventListener('dialekto:menuOpen', (e) => { if (e.detail !== menu) setOpen(false); });
 }

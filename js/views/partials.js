@@ -31,6 +31,7 @@ export function renderDialektCard(d) {
     class: 'dialekt-card',
     style: { '--dc': d.farbe },
     dataset: { spotlight: '', tilt: '', tiltMax: '6' },
+    'aria-label': `${d.name}, ${d.region}, ${d.ausdruecke.length} Ausdrücke`,
     onClick: () => go(`#/dialekt/${d.id}`)
   },
     el('span', { class: 'dc-flag' }, d.flag),

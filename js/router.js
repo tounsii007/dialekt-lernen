@@ -19,6 +19,10 @@ import { renderDialektDetail } from './views/dialektDetail.js';
 
 const DEFAULT_ROUTE = 'home';
 
+// Letzte gerenderte Route — um Fokus-Handover nur bei echtem View-Wechsel
+// (nicht bei In-View-Re-Renders/Pull-to-Refresh derselben Route) auszulösen.
+let lastRenderedRoute = null;
+
 const ROUTE_LABELS = {
   home:      'Startseite',
   entdecken: 'Dialekte entdecken',
@@ -211,7 +215,7 @@ async function renderRoute(app, route, segs, params) {
   }
 }
 
-async function doRender(app, route, segs, params) {
+async function doRender(app, route, segs, params, focusContent = false) {
   app.setAttribute('aria-busy', 'true');
   await renderRoute(app, route, segs, params);
   observeReveals(app);
@@ -223,6 +227,14 @@ async function doRender(app, route, segs, params) {
   initNav();
   syncMobileNav();
   app.setAttribute('aria-busy', 'false');
+
+  // Fokus-Handover: nur beim echten View-/Routen-Wechsel den Fokus auf den
+  // Inhalt setzen (app hat tabindex=-1). So landen Tastatur-/Screenreader-
+  // Nutzer nach einem Link-Klick im neuen Inhalt statt im alten Kontext.
+  // preventScroll, damit das eigene Smooth-Scrollen nach oben erhalten bleibt.
+  if (focusContent) {
+    try { app.focus({ preventScroll: true }); } catch {}
+  }
 
   // Progressive Disclosure: nach der Willkommens-Tour höchstens ein
   // kontextueller Tipp pro Navigation (gedrosselt, einmalig je Tipp).
@@ -252,20 +264,27 @@ export async function router() {
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
+  // Fokus-Handover nur bei echtem View-Wechsel. Schlüssel inkl. Detail-Segment
+  // (z. B. dialekt/hessisch), damit auch ein Wechsel zwischen zwei Detailseiten
+  // den Fokus mitnimmt; ein Re-Render derselben Route (Pull-to-Refresh) nicht.
+  const renderKey = (route === 'dialekt' || route === 'share') ? `${route}/${segs[1] || ''}` : route;
+  const focusContent = renderKey !== lastRenderedRoute;
+  lastRenderedRoute = renderKey;
+
   if (document.startViewTransition) {
     // Bei schnellem Hash-Wechsel kann die vorherige Transition abgebrochen werden
     // → InvalidStateError. Das ist harmlos, also schlucken.
     try {
-      const t = document.startViewTransition(() => doRender(app, route, segs, params));
+      const t = document.startViewTransition(() => doRender(app, route, segs, params, focusContent));
       // .finished kann mit AbortError rejecten; .ready kann mit InvalidStateError rejecten
       t.ready?.catch(() => {});
       t.finished?.catch(() => {});
     } catch (e) {
       // Falls die Transition gar nicht startet, direkt rendern
-      doRender(app, route, segs, params);
+      doRender(app, route, segs, params, focusContent);
     }
   } else {
-    doRender(app, route, segs, params);
+    doRender(app, route, segs, params, focusContent);
   }
 }
 

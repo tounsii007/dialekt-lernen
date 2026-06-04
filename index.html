@@ -81,17 +81,17 @@
         <a href="/quiz" data-route="quiz" class="nav-link"><span>Quiz</span></a>
         <a href="/favorites" data-route="favoriten" class="nav-link"><span>Favoriten</span></a>
         <div class="nav-more">
-          <button type="button" class="nav-link nav-more-btn" aria-haspopup="true" aria-expanded="false" aria-label="Weitere Bereiche">
+          <button type="button" class="nav-link nav-more-btn" aria-expanded="false" aria-controls="navMoreMenu" aria-label="Weitere Bereiche">
             <span>Mehr</span>
             <svg class="nav-more-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </button>
-          <div class="nav-more-menu" role="menu" hidden>
-            <a href="/games" data-route="spiele" class="nav-more-link" role="menuitem"><span>Spiele</span></a>
-            <a href="/idioms" data-route="idiome" class="nav-more-link" role="menuitem"><span>Idiome</span></a>
-            <a href="/lessons" data-route="lektionen" class="nav-more-link" role="menuitem"><span>Lektionen</span></a>
-            <a href="/compare" data-route="vergleich" class="nav-more-link" role="menuitem"><span>Vergleich</span></a>
-            <a href="/map" data-route="karte" class="nav-more-link" role="menuitem"><span>Karte</span></a>
-            <a href="/decks" data-route="decks" class="nav-more-link" role="menuitem"><span>Decks</span></a>
+          <div id="navMoreMenu" class="nav-more-menu" hidden>
+            <a href="/games" data-route="spiele" class="nav-more-link"><span>Spiele</span></a>
+            <a href="/idioms" data-route="idiome" class="nav-more-link"><span>Idiome</span></a>
+            <a href="/lessons" data-route="lektionen" class="nav-more-link"><span>Lektionen</span></a>
+            <a href="/compare" data-route="vergleich" class="nav-more-link"><span>Vergleich</span></a>
+            <a href="/map" data-route="karte" class="nav-more-link"><span>Karte</span></a>
+            <a href="/decks" data-route="decks" class="nav-more-link"><span>Decks</span></a>
           </div>
         </div>
       </nav>
@@ -118,7 +118,7 @@
     </div>
   </header>
 
-  <main id="app" class="app" tabindex="-1" aria-live="polite" aria-busy="false">
+  <main id="app" class="app" tabindex="-1" aria-busy="false">
     <!-- Views werden hier dynamisch gerendert -->
   </main>
   <div id="routeAnnouncer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
@@ -128,7 +128,9 @@
     <div class="search-panel cmdp-panel">
       <div class="search-input-row cmdp-input-row">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input id="searchInput" type="search" placeholder="Aktion, Dialekt oder Ausdruck…" autocomplete="off" />
+        <input id="searchInput" type="search" placeholder="Aktion, Dialekt oder Ausdruck…" autocomplete="off"
+               role="combobox" aria-autocomplete="list" aria-expanded="false"
+               aria-controls="searchListbox" aria-label="Aktion, Dialekt oder Ausdruck suchen" />
         <kbd class="kbd">Esc</kbd>
       </div>
       <div id="searchResults" class="search-results cmdp-results" aria-live="polite"></div>

@@ -149,10 +149,32 @@ function recentMatches() {
   }));
 }
 
+// Stabile, eindeutige id pro Option — Ziel für aria-activedescendant.
+function optionId(idx) {
+  return `cmdp-opt-${idx}`;
+}
+
+// aria-activedescendant am combobox-Input setzen (oder entfernen, wenn keine
+// Option aktiv ist). Der Fokus bleibt physisch im Input — der Screenreader
+// folgt der „virtuell" aktiven Option über diese Referenz.
+function setActiveDescendant(id) {
+  if (!searchInput) return;
+  if (id) searchInput.setAttribute('aria-activedescendant', id);
+  else searchInput.removeAttribute('aria-activedescendant');
+}
+
+// aria-expanded am combobox spiegelt, ob Optionen sichtbar sind.
+function setExpanded(open) {
+  searchInput?.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+
 function renderGroup(title, items) {
   if (!items.length) return null;
-  return el('div', { class: 'cmdp-group' },
-    el('div', { class: 'cmdp-group-title' }, title),
+  // role=group bündelt die Optionen innerhalb der Listbox; der sichtbare Titel
+  // dient als Gruppenname (aria-label) und wird daher selbst aus dem
+  // Accessibility-Baum genommen, um doppelte Ansagen zu vermeiden.
+  return el('div', { class: 'cmdp-group', role: 'group', 'aria-label': title },
+    el('div', { class: 'cmdp-group-title', 'aria-hidden': 'true' }, title),
     el('div', { class: 'cmdp-group-items' },
       ...items.map((item) => renderItem(item))
     )
@@ -164,6 +186,9 @@ function renderItem(item) {
   flatItems.push(item);
   return el('button', {
     class: 'cmdp-item' + (idx === 0 ? ' is-active' : ''),
+    id: optionId(idx),
+    role: 'option',
+    'aria-selected': idx === 0 ? 'true' : 'false',
     dataset: { idx },
     onClick: () => activate(item)
   },
@@ -239,6 +264,10 @@ function renderSearchResults(query) {
   if (ausds.length) groups.push(['Ausdrücke', ausds]);
 
   if (!groups.length) {
+    // Keine Optionen → combobox „eingeklappt", activedescendant löschen.
+    setExpanded(false);
+    setActiveDescendant(null);
+    announceCount(0, query);
     results.appendChild(el('div', { class: 'cmdp-empty' },
       el('div', { class: 'cmdp-empty-emoji' }, '🤔'),
       el('div', { class: 'cmdp-empty-text' }, 'Keine Treffer für „' + query + '".'),
@@ -247,16 +276,65 @@ function renderSearchResults(query) {
     return;
   }
 
-  groups.forEach(([title, items]) => results.appendChild(renderGroup(title, items)));
+  // Treffer-Anzahl in die Live-Region (#searchResults) ansagen — als kurzer
+  // Satz, ohne dass jede einzelne Option vorgelesen wird (Listbox = aria-live off).
+  announceCount(flatItemsCount(groups), query);
+
+  // Eigentliche Listbox: Container ist die Live-Region (#searchResults),
+  // die Optionen leben in einem dedizierten role=listbox-Kind.
+  // aria-live="off" am Listbox-Subtree: überschreibt das geerbte „polite" des
+  // Containers, damit beim Neuaufbau NICHT die komplette Optionsliste
+  // vorgelesen wird. Nur die kurze Treffer-Ansage (announceCount) bleibt live.
+  const listbox = el('div', {
+    id: 'searchListbox',
+    class: 'cmdp-listbox',
+    role: 'listbox',
+    'aria-label': 'Suchergebnisse',
+    'aria-live': 'off',
+  });
+  groups.forEach(([title, items]) => {
+    const g = renderGroup(title, items);
+    if (g) listbox.appendChild(g);
+  });
+  results.appendChild(listbox);
+
+  setExpanded(true);
+  // Erste Option ist initial aktiv (renderItem markiert idx 0).
+  setActiveDescendant(flatItems.length ? optionId(0) : null);
+}
+
+// Gesamtzahl der Optionen über alle Gruppen (für die Ansage, bevor flatItems
+// gefüllt ist — renderItem füllt flatItems erst beim eigentlichen Rendern).
+function flatItemsCount(groups) {
+  return groups.reduce((n, [, items]) => n + items.length, 0);
+}
+
+// Treffer-Anzahl in die Live-Region schreiben (sr-only). Da die Listbox selbst
+// aria-live="off" trägt, ist dieser kurze Satz die einzige live angesagte
+// Textänderung im Container.
+function announceCount(count, query) {
+  const q = (query || '').trim();
+  // „Treffer" ist im Deutschen Singular wie Plural identisch.
+  const msg = count
+    ? `${count} Treffer${q ? ` für ${q}` : ''}.`
+    : (q ? `Keine Treffer für ${q}.` : 'Keine Treffer.');
+  // Plain sr-only div: erbt das „polite" der Container-Live-Region (#searchResults).
+  results.appendChild(el('div', { class: 'sr-only cmdp-count' }, msg));
 }
 
 function syncActive() {
   const items = $$('.cmdp-item', overlay);
-  items.forEach((it) => it.classList.remove('is-active'));
+  items.forEach((it, i) => {
+    const on = i === activeIndex;
+    it.classList.toggle('is-active', on);
+    it.setAttribute('aria-selected', on ? 'true' : 'false');
+  });
   const target = items[activeIndex];
   if (target) {
-    target.classList.add('is-active');
+    setActiveDescendant(target.id || optionId(activeIndex));
     target.scrollIntoView({ block: 'nearest' });
+  } else {
+    setActiveDescendant(null);
   }
 }
 
@@ -288,6 +366,9 @@ export function openSearch() {
 export function closeSearch() {
   overlay.classList.remove('is-open');
   overlay.setAttribute('aria-hidden', 'true');
+  // combobox-Zustand zurücksetzen (eingeklappt, keine aktive Option).
+  setExpanded(false);
+  setActiveDescendant(null);
   restoreFocus();
 }
 
