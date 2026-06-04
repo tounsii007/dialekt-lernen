@@ -5,6 +5,19 @@
 // werfen bei Fehlern — die Aufrufer können so auf die lokalen Daten zurückfallen
 // (Offline-/Backend-aus-Fallback), bis die Views vollständig umgestellt sind.
 
+/**
+ * @typedef {import('./api-types.js').Dialekt} Dialekt
+ * @typedef {import('./api-types.js').Ausdruck} Ausdruck
+ * @typedef {import('./api-types.js').Kategorie} Kategorie
+ * @typedef {import('./api-types.js').ApiUser} ApiUser
+ * @typedef {import('./api-types.js').Favorit} Favorit
+ * @typedef {import('./api-types.js').Lernstand} Lernstand
+ * @typedef {import('./api-types.js').Page} Page
+ */
+
+// Enums (Rating, LernStatus) für Aufrufer mit-exportieren.
+export { Rating, LernStatus } from './api-types.js';
+
 const LS_BASE   = 'dialekto.apiBase';
 const LS_DEVICE = 'dialekto.deviceId';
 const LS_USER   = 'dialekto.userId';
@@ -73,30 +86,43 @@ export async function ensureUserId() {
 }
 
 export const dialekte = {
+  /** @returns {Promise<Dialekt[]>} */
   all: () => request('/api/dialekte'),
+  /** @param {string} id @returns {Promise<Dialekt>} */
   one: (id) => request(`/api/dialekte/${encodeURIComponent(id)}`),
+  /** @param {string} id @returns {Promise<Ausdruck[]>} */
   ausdruecke: (id) => request(`/api/dialekte/${encodeURIComponent(id)}/ausdruecke`),
 };
 
+/** @returns {Promise<Kategorie[]>} */
+export const kategorien = () => request('/api/kategorien');
+
 export const ausdruecke = {
+  /** @param {string} id @returns {Promise<Ausdruck>} */
   one: (id) => request(`/api/ausdruecke/${encodeURIComponent(id)}`),
+  /** @param {string} q @param {number} [page] @param {number} [size] @returns {Promise<Page>} */
   search: (q, page = 0, size = 20) =>
     request(`/api/ausdruecke/search?q=${encodeURIComponent(q)}&page=${page}&size=${size}`),
 };
 
 export const favoriten = {
+  /** @returns {Promise<Favorit[]>} */
   list:   async () => request(`/api/users/${await ensureUserId()}/favoriten`),
+  /** @param {string} ausdruckId @returns {Promise<null>} */
   add:    async (ausdruckId) =>
     request(`/api/users/${await ensureUserId()}/favoriten/${encodeURIComponent(ausdruckId)}`, { method: 'PUT' }),
+  /** @param {string} ausdruckId @returns {Promise<null>} */
   remove: async (ausdruckId) =>
     request(`/api/users/${await ensureUserId()}/favoriten/${encodeURIComponent(ausdruckId)}`, { method: 'DELETE' }),
 };
 
 export const lernstand = {
+  /** @returns {Promise<Lernstand[]>} */
   list:    async () => request(`/api/users/${await ensureUserId()}/lernstand`),
+  /** @param {number} [limit] @returns {Promise<Lernstand[]>} */
   faellig: async (limit = 50) =>
     request(`/api/users/${await ensureUserId()}/lernstand/faellig?limit=${limit}`),
-  // rating: 1 = schwer, 2 = mittel, 3 = leicht (wie js/store/srs.js)
+  /** @param {string} ausdruckId @param {1|2|3} rating  (1=schwer, 2=mittel, 3=leicht) @returns {Promise<Lernstand>} */
   bewerten: async (ausdruckId, rating) =>
     request(`/api/users/${await ensureUserId()}/lernstand/${encodeURIComponent(ausdruckId)}/bewerten`,
       { method: 'POST', body: { rating } }),
