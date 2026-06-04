@@ -335,6 +335,114 @@ export default {
       beispiel: 'Kumm, wi wüllt eten.',
       beispiel_hd: 'Komm, wir wollen essen.',
       kategorie: 'alltag'
+    },
+    {
+      id: 'mk-037',
+      ausdruck: 'snacken',
+      hochdeutsch: 'reden / sprechen',
+      bedeutung: 'snacken heißt reden oder sprechen. Platt snacken bedeutet Plattdeutsch sprechen. De Snack ist das Gespräch oder Geschwätz. Eines der zentralsten niederdeutschen Verben.',
+      beispiel: 'Kannst du Platt snacken?',
+      beispiel_hd: 'Kannst du Plattdeutsch sprechen?',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'mk-038',
+      ausdruck: 'suutje',
+      hochdeutsch: 'sachte / langsam',
+      bedeutung: 'suutje heißt sachte, langsam und vorsichtig. Man suutje! mahnt zur Ruhe und gemächlichem Vorgehen. Ein typisch norddeutsches Wort für die bedächtige Gangart.',
+      beispiel: 'Man suutje, wi hebbt Tiet.',
+      beispiel_hd: 'Immer sachte, wir haben Zeit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'mk-039',
+      ausdruck: 'Büx',
+      hochdeutsch: 'Hose',
+      bedeutung: 'De Büx ist die Hose. De Büx antrecken heißt die Hose anziehen. Wer sik in de Büx maakt, bekommt es mit der Angst zu tun. Ein urtümliches niederdeutsches Kleidungswort.',
+      beispiel: 'Treck di en dröge Büx an.',
+      beispiel_hd: 'Zieh dir eine trockene Hose an.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'mk-040',
+      ausdruck: 'Schapp',
+      hochdeutsch: 'Schrank',
+      bedeutung: 'Dat Schapp ist der Schrank. In dat Schapp liggt dat gode Tüüg. Ein gängiges niederdeutsches Möbelwort, das auch im Norddeutschen Hochdeutsch noch lebendig ist.',
+      beispiel: 'Dat Tüüg liggt in dat Schapp.',
+      beispiel_hd: 'Die Wäsche liegt im Schrank.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'mk-041',
+      ausdruck: 'Mors',
+      hochdeutsch: 'Hintern / Gesäß',
+      bedeutung: 'De Mors ist der Hintern, das Gesäß. Beweeg dien Mors! ist eine derbe Aufforderung, sich zu beeilen. Ein deftiges, im Plattdeutschen gut verankertes Körperwort.',
+      beispiel: 'Nu beweeg maal dien Mors!',
+      beispiel_hd: 'Nun beweg mal deinen Hintern!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'mk-042',
+      ausdruck: 'Fofftein',
+      hochdeutsch: 'Pause (wörtlich „fünfzehn")',
+      bedeutung: 'Fofftein heißt wörtlich fünfzehn und meint die (Arbeits-)Pause. Fofftein maken bedeutet, eine Pause einzulegen — gemeint sind die fünfzehn Minuten Frühstückspause.',
+      beispiel: 'Nu maakt wi eerst maal Fofftein.',
+      beispiel_hd: 'Jetzt machen wir erst einmal Pause.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'mk-043',
+      ausdruck: 'Wruke',
+      hochdeutsch: 'Steckrübe / Kohlrübe',
+      bedeutung: 'De Wruke ist die Steckrübe (Kohlrübe). In mageren Zeiten war sie ein wichtiges Grundnahrungsmittel im Norden. Wruken mit Fleesch ist ein deftiges, traditionelles Gericht.',
+      beispiel: 'To Middag gifft dat Wruken mit Fleesch.',
+      beispiel_hd: 'Zu Mittag gibt es Steckrüben mit Fleisch.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'mk-044',
+      ausdruck: 'gnatterig',
+      hochdeutsch: 'gereizt / mürrisch',
+      bedeutung: 'gnatterig heißt gereizt, quengelig und schlecht gelaunt. En gnatterig Kind quengelt vor Müdigkeit. Ein anschauliches niederdeutsches Wort für nörgelige Stimmung.',
+      beispiel: 'De Lütte is vandaag bannig gnatterig.',
+      beispiel_hd: 'Der Kleine ist heute sehr quengelig.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'mk-045',
+      ausdruck: 'Tüdelkram',
+      hochdeutsch: 'Krimskrams / Kleinkram',
+      bedeutung: 'Tüdelkram ist unnützer Kleinkram, allerlei Krimskrams und Durcheinander. Räum mal dien Tüdelkram weg! Verwandt mit tüdern und tüdelig (verwirrt).',
+      beispiel: 'Räum maal dien Tüdelkram weg.',
+      beispiel_hd: 'Räum mal deinen Krimskrams weg.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'mk-046',
+      ausdruck: 'dröög',
+      hochdeutsch: 'trocken',
+      bedeutung: 'dröög heißt trocken, sowohl vom Wetter als auch von trockenem Humor. En dröög Humor ist ein trockener, hintergründiger Witz. Gegenteil von natt (nass).',
+      beispiel: 'Endlich is dat Holt wedder dröög.',
+      beispiel_hd: 'Endlich ist das Holz wieder trocken.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'mk-047',
+      ausdruck: 'Kieker',
+      hochdeutsch: 'Fernglas / Auge (in „op den Kieker")',
+      bedeutung: 'De Kieker ist das Fernglas, abgeleitet von kieken (schauen). In der Wendung een op den Kieker hebben heißt es, jemanden scharf im Auge zu behalten.',
+      beispiel: 'Den hebb ik op den Kieker.',
+      beispiel_hd: 'Den habe ich im Auge.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'mk-048',
+      ausdruck: 'bregenklöterig',
+      hochdeutsch: 'schlecht gelaunt / wirr im Kopf',
+      bedeutung: 'bregenklöterig heißt missmutig, wirr oder leicht verdreht im Kopf. Es setzt sich aus Bregen (Gehirn) und klötern (klappern) zusammen — als klapperte einem das Hirn.',
+      beispiel: 'Vandaag is he ganz bregenklöterig.',
+      beispiel_hd: 'Heute ist er ganz missmutig.',
+      kategorie: 'gefuehle'
     }
   ]
 };

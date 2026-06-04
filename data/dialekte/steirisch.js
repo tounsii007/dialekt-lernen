@@ -416,6 +416,96 @@ export default {
       beispiel: 'I trink a Häferl Kaffee am Morgn.',
       beispiel_hd: 'Ich trinke eine Tasse Kaffee am Morgen.',
       kategorie: 'alltag'
+    },
+    {
+      id: 'st-046',
+      ausdruck: 'Marille',
+      hochdeutsch: 'Aprikose',
+      bedeutung: 'D Marille ist die Aprikose, das österreichische Wort dafür. Aus Marillen macht man Marmelade, Knödel und Schnaps. Im ganzen österreichischen Raum gebräuchlich.',
+      beispiel: 'Aus de Marilln mach ma Knödl.',
+      beispiel_hd: 'Aus den Aprikosen machen wir Knödel.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-047',
+      ausdruck: 'Topfen',
+      hochdeutsch: 'Quark',
+      bedeutung: 'Topfen ist der Quark, das österreichische Wort. Mit Topfen füllt man Strudel und Knödel oder rührt einen Aufstrich an. Grundzutat vieler Mehlspeisen.',
+      beispiel: 'In Strudl kummt a Topfen eini.',
+      beispiel_hd: 'In den Strudel kommt Quark hinein.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-048',
+      ausdruck: 'Obers',
+      hochdeutsch: 'Schlagsahne / Sahne',
+      bedeutung: 'S Obers ist die Sahne, geschlagen das Schlagobers. Aufs Kaffeehäferl oder den Kuchen kummt a Schlagobers. Ein gängiges österreichisches Wort.',
+      beispiel: 'Auf an Kuchen mecht i a Obers.',
+      beispiel_hd: 'Auf den Kuchen möchte ich Sahne.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-049',
+      ausdruck: 'Kren',
+      hochdeutsch: 'Meerrettich',
+      bedeutung: 'Kren ist der Meerrettich, scharf gerieben zur Brettljause, zum Schinken oder Selchfleisch gereicht. Steirischer Kren ist ein bekanntes regionales Produkt.',
+      beispiel: 'Zum Schinken reib i an Kren dazua.',
+      beispiel_hd: 'Zum Schinken reibe ich Meerrettich dazu.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'st-050',
+      ausdruck: 'Stiege',
+      hochdeutsch: 'Treppe',
+      bedeutung: 'D Stiege ist die Treppe, das Stiegenhaus der Treppenraum. I geh d Stiegn aufi heißt „ich gehe die Treppe hinauf". Ein gängiges österreichisches Wort.',
+      beispiel: 'Geh d Stiegn auffi, mir san obn.',
+      beispiel_hd: 'Geh die Treppe hinauf, wir sind oben.',
+      kategorie: 'orte'
+    },
+    {
+      id: 'st-051',
+      ausdruck: 'Schmäh',
+      hochdeutsch: 'Witz / Scherz / Charme',
+      bedeutung: 'Da Schmäh ist ein Scherz, eine geistreiche Bemerkung oder der typische Charme. An guatn Schmäh führn heißt, witzig und charmant zu reden. Ein bekanntes österreichisches Wort.',
+      beispiel: 'Der hot an guatn Schmäh.',
+      beispiel_hd: 'Der hat einen guten Schmäh.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'st-052',
+      ausdruck: 'gscheit',
+      hochdeutsch: 'klug / gehörig',
+      bedeutung: 'gscheit heißt klug oder vernünftig, verstärkend auch „ordentlich, gehörig". Sei gscheit! mahnt zur Vernunft, gscheit regnen meint kräftig regnen. Ein bairisch-österreichisches Wort.',
+      beispiel: 'Heut regnets gscheit.',
+      beispiel_hd: 'Heute regnet es ordentlich.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'st-053',
+      ausdruck: 'Hackn',
+      hochdeutsch: 'Arbeit / Job',
+      bedeutung: 'D Hackn ist die Arbeit oder der Job, hackeln heißt arbeiten. In d Hackn gehn meint „zur Arbeit gehen". Ein im ganzen österreichischen Raum verbreitetes umgangssprachliches Wort.',
+      beispiel: 'I muass in da Fruah in d Hackn.',
+      beispiel_hd: 'Ich muss in der Früh zur Arbeit.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'st-054',
+      ausdruck: 'Trumm',
+      hochdeutsch: 'großes Stück / Brocken',
+      bedeutung: 'A Trumm ist ein großes Stück oder ein gewaltiger Brocken. A Trumm Brot ist ein dicker Ranken, a Trumm Kerl ein bulliger Mann. Ein bairisch-österreichisches Wort.',
+      beispiel: 'Schneid ma a Trumm Brot oba.',
+      beispiel_hd: 'Schneide mir ein großes Stück Brot ab.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'st-055',
+      ausdruck: 'Schöpsernes',
+      hochdeutsch: 'Hammel- / Schöpsenfleisch',
+      bedeutung: 'Schöpsernes ist das Fleisch vom Schöps, dem kastrierten Schafbock, also Hammelfleisch. Als Schöpsernes mit Kraut war es früher ein traditionelles Wirtshausgericht.',
+      beispiel: 'Beim Wirt gibts heut a Schöpsernes.',
+      beispiel_hd: 'Beim Wirt gibt es heute Hammelfleisch.',
+      kategorie: 'essen'
     }
   ]
 };

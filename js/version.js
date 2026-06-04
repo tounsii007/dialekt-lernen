@@ -4,14 +4,14 @@
 //   `node tools/sync-version.mjs`
 // ausführen. Das aktualisiert sw.js automatisch (Cache-Key).
 
-export const APP_VERSION = '2.1.56';
+export const APP_VERSION = '2.1.57';
 
 // Anzeige-String für Footer & Über-Dialoge.
 export const APP_VERSION_LABEL = `v${APP_VERSION}`;
 
 // Datenstand: wird durch tools/sync-version.mjs gepflegt.
 export const DIALEKT_COUNT = 24;
-export const AUSDRUCK_COUNT = 6700;
+export const AUSDRUCK_COUNT = 6759;
 
 // Repository — wird für „Korrektur melden"-Links genutzt.
 export const REPO_URL = 'https://github.com/tounsii007/dialekt-lernen';

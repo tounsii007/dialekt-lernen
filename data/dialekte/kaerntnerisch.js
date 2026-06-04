@@ -443,6 +443,78 @@ export default {
       beispiel: 'Als Beilag gibts an Vogerlsalat.',
       beispiel_hd: 'Als Beilage gibt es Feldsalat.',
       kategorie: 'essen'
+    },
+    {
+      id: 'kt-049',
+      ausdruck: 'Tschurtschn',
+      hochdeutsch: 'Tannenzapfen',
+      bedeutung: 'A Tschurtschn ist ein Tannen- oder Fichtenzapfen, den man im Wald aufklaubt. Scherzhaft sagt man zu einem tappigen Menschen auch „du Tschurtschn". Ein typisch Kärntner Wort.',
+      beispiel: 'Im Woid liegn lauter Tschurtschn umadum.',
+      beispiel_hd: 'Im Wald liegen lauter Tannenzapfen herum.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'kt-050',
+      ausdruck: 'Pratzn',
+      hochdeutsch: 'große, grobe Hand',
+      bedeutung: 'D Pratzn ist die große, grobe Hand oder Pfote. Wasch da amol deine Pratzn heißt, sich die schmutzigen Hände zu waschen. Ein deftiges südbairisches Wort.',
+      beispiel: 'Wasch da amol deine Pratzn vorm Essn.',
+      beispiel_hd: 'Wasch dir einmal die Hände vor dem Essen.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'kt-051',
+      ausdruck: 'Goschn',
+      hochdeutsch: 'Mund / Maul',
+      bedeutung: 'D Goschn ist derb der Mund oder das Maul. Holt di Goschn heißt „sei still". A große Goschn hom bedeutet, vorlaut zu sein. Ein im ganzen Süden gebräuchliches Wort.',
+      beispiel: 'Jetz holt amol dei Goschn!',
+      beispiel_hd: 'Jetzt halt einmal deinen Mund!',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'kt-052',
+      ausdruck: 'tschentschn',
+      hochdeutsch: 'jammern / nörgeln',
+      bedeutung: 'tschentschn heißt jammern, nörgeln oder wehleidig klagen. Heer auf zan tschentschn meint, mit dem Gejammere aufzuhören. Ein lautmalerisches Kärntner Wort.',
+      beispiel: 'Heer endlich auf zan tschentschn!',
+      beispiel_hd: 'Hör endlich auf zu jammern!',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'kt-053',
+      ausdruck: 'Tschoppale',
+      hochdeutsch: 'ungeschickter Mensch',
+      bedeutung: 'A Tschoppale ist ein tollpatschiger, ungeschickter Mensch, meist gutmütig-spöttisch gemeint. Zu einem tappigen Kind sagt man liebevoll a kloans Tschoppale. Ein Kärntner Ausdruck.',
+      beispiel: 'Du kloans Tschoppale, gib her, des moch i.',
+      beispiel_hd: 'Du kleiner Tollpatsch, gib her, das mache ich.',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'kt-054',
+      ausdruck: 'gach',
+      hochdeutsch: 'jäh / plötzlich',
+      bedeutung: 'gach bedeutet jäh, plötzlich oder steil. Es is ma gach gwordn heißt, jemandem ist plötzlich schwindlig oder schlecht geworden. A gacher Steig ist ein steiler Pfad.',
+      beispiel: 'Beim Aufsteh is ma gach gwordn.',
+      beispiel_hd: 'Beim Aufstehen ist mir plötzlich schwindlig geworden.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-055',
+      ausdruck: 'Hatscher',
+      hochdeutsch: 'langer, mühsamer Fußmarsch',
+      bedeutung: 'A Hatscher ist ein langer, mühsamer Fußmarsch oder Weg. Bis auffi af d Hüttn is a ordentlicher Hatscher. Wer hatscht, geht langsam und beschwerlich. Ein österreichisches Wort.',
+      beispiel: 'Bis auffi af d Hüttn is a rechter Hatscher.',
+      beispiel_hd: 'Bis hinauf zur Hütte ist es ein ordentlicher Fußmarsch.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'kt-056',
+      ausdruck: 'Jause',
+      hochdeutsch: 'Zwischenmahlzeit / Brotzeit',
+      bedeutung: 'D Jause ist die kleine Zwischenmahlzeit am Vor- oder Nachmittag, oft Brot, Speck und Käse. Das Wort stammt vom slowenischen južina und ist in ganz Österreich gebräuchlich.',
+      beispiel: 'Am Nochmittog mochma a zünftige Jausn.',
+      beispiel_hd: 'Am Nachmittag machen wir eine zünftige Brotzeit.',
+      kategorie: 'essen'
     }
   ]
 };

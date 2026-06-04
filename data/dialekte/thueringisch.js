@@ -335,6 +335,87 @@ export default {
       beispiel: 'Guck aamol da nüber.',
       beispiel_hd: 'Schau mal da hinüber.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'th-037',
+      ausdruck: 'Nischel',
+      hochdeutsch: 'Kopf',
+      bedeutung: 'Der Nischel ist der Kopf, ein im thüringisch-sächsischen Raum verbreitetes Wort. Halt den Nischel still! sagt man scherzhaft. Bekannt auch durch den Chemnitzer Karl-Marx-Kopf.',
+      beispiel: 'Zieh dr ne Mütze übern Nischel.',
+      beispiel_hd: 'Zieh dir eine Mütze über den Kopf.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'th-038',
+      ausdruck: 'Gusche',
+      hochdeutsch: 'Mund',
+      bedeutung: 'Die Gusche ist der Mund, oft etwas derb gebraucht. Halt die Gusche! heißt „sei still!". Ein im ostmitteldeutschen Raum gängiges Wort, auch im Sächsischen verbreitet.',
+      beispiel: 'Mach ma die Gusche uff.',
+      beispiel_hd: 'Mach mal den Mund auf.',
+      kategorie: 'koerper'
+    },
+    {
+      id: 'th-039',
+      ausdruck: 'Knust',
+      hochdeutsch: 'Brotkante / Brotkanten',
+      bedeutung: 'Der Knust ist das Endstück vom Brot, die Brotkante. Den Knust mag nich jeder. Das Wort geht aufs Mittelniederdeutsche zurück und ist im mitteldeutschen Raum verbreitet.',
+      beispiel: 'Gib mr den Knust vom Brot.',
+      beispiel_hd: 'Gib mir die Brotkante vom Brot.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'th-040',
+      ausdruck: 'Demse',
+      hochdeutsch: 'große Hitze / Schwüle',
+      bedeutung: 'Die Demse ist drückende Hitze oder Schwüle, etwa an einem heißen Sommertag. Bei der Demse bleibmr lieber im Schatten. Ein anschauliches thüringisches Wetterwort.',
+      beispiel: 'Heit is vielleicht ne Demse draußn.',
+      beispiel_hd: 'Heute ist vielleicht eine Hitze draußen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'th-041',
+      ausdruck: 'Funzel',
+      hochdeutsch: 'schwache Lampe',
+      bedeutung: 'Eine Funzel ist eine schlecht brennende, schwache Lichtquelle, die kaum Licht gibt. Bei der Funzel siehste ja nüschd. Das Wort ist umgangssprachlich im mitteldeutschen Raum verbreitet.',
+      beispiel: 'Mit der Funzel find ich nüschd.',
+      beispiel_hd: 'Mit der schwachen Lampe finde ich nichts.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-042',
+      ausdruck: 'Ficke',
+      hochdeutsch: 'Hosentasche',
+      bedeutung: 'Die Ficke ist die Hosentasche. Steck das in die Ficke! Ein altes, heute vor allem in den ostmitteldeutschen Mundarten erhaltenes Wort für die Tasche am Kleidungsstück.',
+      beispiel: 'Steck dr den Schlüssel in die Ficke.',
+      beispiel_hd: 'Steck dir den Schlüssel in die Hosentasche.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'th-043',
+      ausdruck: 'Quetsche',
+      hochdeutsch: 'Pflaume / Zwetschge',
+      bedeutung: 'Die Quetsche ist die Pflaume beziehungsweise Zwetschge, aus der man Kuchen und Mus macht. Im Spätsommer sin die Quetschn reif. Ein verbreitetes Obstwort im mitteldeutschen Raum.',
+      beispiel: 'Aufm Kuchn sin Quetschn drauf.',
+      beispiel_hd: 'Auf dem Kuchen sind Pflaumen drauf.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'th-044',
+      ausdruck: 'nee',
+      hochdeutsch: 'nein',
+      bedeutung: 'nee ist die alltägliche Verneinung und bedeutet nein. Es ist das verbreitete Gegenstück zum zustimmenden nu und in ganz Mitteldeutschland gebräuchlich. Nee, das mach ich nich.',
+      beispiel: 'Nee, da hab ich keene Zeit.',
+      beispiel_hd: 'Nein, da habe ich keine Zeit.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'th-045',
+      ausdruck: 'dittschen',
+      hochdeutsch: 'tunken / eintauchen',
+      bedeutung: 'dittschen heißt etwas in eine Flüssigkeit tunken, etwa den Keks in den Kaffee. Im thüringischen Alltag ein gängiges Verb fürs kurze Eintauchen von Gebäck in ein Getränk.',
+      beispiel: 'Ich tu den Keks in Kaffee dittschen.',
+      beispiel_hd: 'Ich tunke den Keks in den Kaffee.',
+      kategorie: 'essen'
     }
   ]
 };

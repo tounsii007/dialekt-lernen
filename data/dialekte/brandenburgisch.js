@@ -335,6 +335,96 @@ export default {
       beispiel: 'In unserm Kiez is immer wat los.',
       beispiel_hd: 'In unserem Viertel ist immer etwas los.',
       kategorie: 'orte'
+    },
+    {
+      id: 'br-037',
+      ausdruck: 'jut',
+      hochdeutsch: 'gut',
+      bedeutung: 'jut heißt gut, mit dem für die Region typischen j statt g. Allet jut! oder Na denn jut! sind alltägliche Wendungen. Das anlautende j für g ist das bekannteste Lautmerkmal der Mundart.',
+      beispiel: 'Mir jehts jut, danke der Nachfrage.',
+      beispiel_hd: 'Mir geht es gut, danke der Nachfrage.',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'br-038',
+      ausdruck: 'uff',
+      hochdeutsch: 'auf',
+      bedeutung: 'uff ist das berlin-brandenburgische „auf". Uffm Hof oder mach die Tür uff zeigen den verdumpften Vokal. Ein durchgängiges Lautmerkmal der Umgangssprache der Region.',
+      beispiel: 'Die Kinder spielen uffm Hof.',
+      beispiel_hd: 'Die Kinder spielen auf dem Hof.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'br-039',
+      ausdruck: 'wa',
+      hochdeutsch: 'nicht wahr? / oder?',
+      bedeutung: 'wa ist die typische angehängte Bestätigungsfrage „nicht wahr?" oder „oder?". Schön heute, wa? erwartet Zustimmung. Eine verschliffene Form von „nicht wahr", die fast jeden Satz abschließen kann.',
+      beispiel: 'Det war doch lecker, wa?',
+      beispiel_hd: 'Das war doch lecker, nicht wahr?',
+      kategorie: 'redensart'
+    },
+    {
+      id: 'br-040',
+      ausdruck: 'doof',
+      hochdeutsch: 'dumm / blöd',
+      bedeutung: 'doof bedeutet dumm, blöd oder auch langweilig. Stell dir nich so doof an! ist ein gängiger Tadel. Das Wort stammt aus dem Niederdeutschen und verbreitete sich von Berlin aus.',
+      beispiel: 'Stell dir nich so doof an!',
+      beispiel_hd: 'Stell dich nicht so dumm an!',
+      kategorie: 'schimpf'
+    },
+    {
+      id: 'br-041',
+      ausdruck: 'Keule',
+      hochdeutsch: 'Kumpel / Bruder',
+      bedeutung: 'Keule ist eine vertraute Anrede für einen Freund oder Bruder, vergleichbar mit Atze. Na Keule, allet fit? begrüßt einen Kumpel. Ein urberliner Wort, das auch in Brandenburg lebt.',
+      beispiel: 'Na Keule, lange nich jesehn!',
+      beispiel_hd: 'Na Kumpel, lange nicht gesehen!',
+      kategorie: 'menschen'
+    },
+    {
+      id: 'br-042',
+      ausdruck: 'Pfannkuchen',
+      hochdeutsch: 'Berliner (gefülltes Schmalzgebäck)',
+      bedeutung: 'In Berlin und Brandenburg ist ein Pfannkuchen das runde, mit Marmelade gefüllte Schmalzgebäck, das anderswo Berliner oder Krapfen heißt. Zu Silvester gehören Pfannkuchen fest dazu.',
+      beispiel: 'Zu Silvester koof ick een Blech Pfannkuchen.',
+      beispiel_hd: 'Zu Silvester kaufe ich ein Blech Berliner.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'br-043',
+      ausdruck: 'Hackepeter',
+      hochdeutsch: 'rohes gewürztes Hackfleisch',
+      bedeutung: 'Hackepeter ist rohes, gewürztes Schweinemett, das auf eine Schrippe gestrichen und mit Zwiebeln gegessen wird. Ein deftiger Berlin-Brandenburger Klassiker fürs Frühstück oder Buffet.',
+      beispiel: 'Auf de Schrippe kommt Hackepeter mit Zwiebeln.',
+      beispiel_hd: 'Auf das Brötchen kommt Hackfleisch mit Zwiebeln.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'br-044',
+      ausdruck: 'Schusterjunge',
+      hochdeutsch: 'dunkles Roggenbrötchen',
+      bedeutung: 'Der Schusterjunge ist das dunkle, kräftige Roggenbrötchen, das Gegenstück zur hellen Schrippe. Ein traditionelles Berlin-Brandenburger Bäckereiwort, das die alte Backkultur bewahrt.',
+      beispiel: 'Ick nehm lieber n Schusterjungen als ne Schrippe.',
+      beispiel_hd: 'Ich nehme lieber ein Roggenbrötchen als ein helles Brötchen.',
+      kategorie: 'essen'
+    },
+    {
+      id: 'br-045',
+      ausdruck: 'schnafte',
+      hochdeutsch: 'großartig / toll',
+      bedeutung: 'schnafte heißt großartig, prima oder toll, in einer Reihe mit knorke und dufte. Det is ja schnafte! drückt Begeisterung aus. Ein altberliner Lobwort, das in der Region noch lebt.',
+      beispiel: 'Die Aussicht von hier is ja schnafte.',
+      beispiel_hd: 'Die Aussicht von hier ist ja großartig.',
+      kategorie: 'gefuehle'
+    },
+    {
+      id: 'br-046',
+      ausdruck: 'Sense',
+      hochdeutsch: 'Schluss / Ende',
+      bedeutung: 'Sense steht in der Redensart Dann is Sense! für „dann ist Schluss" oder „aus und vorbei". Das bildhafte Wort verkündet ein endgültiges Ende, etwa der Geduld oder einer Sache.',
+      beispiel: 'Noch eener frech, denn is Sense!',
+      beispiel_hd: 'Noch einer frech, dann ist Schluss!',
+      kategorie: 'redensart'
     }
   ]
 };

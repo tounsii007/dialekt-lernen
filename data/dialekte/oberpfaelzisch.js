@@ -335,6 +335,96 @@ export default {
       beispiel: 'Dees do schmeckt ma am bestn.',
       beispiel_hd: 'Das da schmeckt mir am besten.',
       kategorie: 'redensart'
+    },
+    {
+      id: 'op-037',
+      ausdruck: 'Wòld',
+      hochdeutsch: 'Wald',
+      bedeutung: 'Wòld ist der Wald, mit dem für das Nordbairische typischen dunklen, zum o hin verschobenen a (Wald wird zu Wòld/Wòòld). Anders als im Mittelbairischen bleibt das l erhalten. Ein Kennzeichen der Oberpfälzer Lautung.',
+      beispiel: 'Mir gengan in Wòld Schwammerl suacha.',
+      beispiel_hd: 'Wir gehen in den Wald Pilze suchen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-038',
+      ausdruck: 'Stoa',
+      hochdeutsch: 'Stein',
+      bedeutung: 'Stoa ist der Stein, Mehrzahl Stoana. Der mittelhochdeutsche Zwielaut ei erscheint im Nordbairischen als oa, wie auch in Boa (Bein) oder hoaß (heiß). Ein verbreitetes Grundwort der Region.',
+      beispiel: 'Do liegt a groußa Stoa am Weg.',
+      beispiel_hd: 'Da liegt ein großer Stein am Weg.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-039',
+      ausdruck: 'Schòuf',
+      hochdeutsch: 'Schaf',
+      bedeutung: 'Schòuf ist das Schaf, in der nordbairischen Lautung mit dem gestürzten Zwielaut ou. Auf den mageren Weiden der Oberpfalz wurden früher viele Schòuf gehalten. Ein Wort der bäuerlichen Welt.',
+      beispiel: 'Af da Woad steht a Herd Schòuf.',
+      beispiel_hd: 'Auf der Weide steht eine Herde Schafe.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-040',
+      ausdruck: 'Woong',
+      hochdeutsch: 'Wagen',
+      bedeutung: 'Woong ist der Wagen, mit dem dunklen nordbairischen a (Wagen wird zu Wòòng/Woong). Früher ist der Heuwoong vom Ross zogn worn. Ein alltägliches Wort aus der Landwirtschaft.',
+      beispiel: 'Mir lon s Heu afn Woong.',
+      beispiel_hd: 'Wir laden das Heu auf den Wagen.',
+      kategorie: 'arbeit'
+    },
+    {
+      id: 'op-041',
+      ausdruck: 'Vuugl',
+      hochdeutsch: 'Vogel',
+      bedeutung: 'Vuugl ist der Vogel. Im westlichen Nordbairischen wird das o zu u gehoben, daher Vuugl statt des südlicheren Voogl. Mehrzahl Viigl. Ein anschauliches Beispiel der Oberpfälzer Vokalfärbung.',
+      beispiel: 'Af m Baam singt a Vuugl.',
+      beispiel_hd: 'Auf dem Baum singt ein Vogel.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-042',
+      ausdruck: 'Schnèj',
+      hochdeutsch: 'Schnee',
+      bedeutung: 'Schnèj ist der Schnee. Der lange Selbstlaut des Mittelhochdeutschen ist im Nordbairischen zum Zwielaut ej geworden, anders als das mittelbairische Schnèè. Im Winter liegt in der Oberpfalz oft viel Schnèj.',
+      beispiel: 'Heint Nacht is a Haufa Schnèj gfoin.',
+      beispiel_hd: 'Heute Nacht ist viel Schnee gefallen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-043',
+      ausdruck: 'wòam',
+      hochdeutsch: 'warm',
+      bedeutung: 'wòam heißt warm, wieder mit dem typisch dunklen, zum o verschobenen a des Nordbairischen. Wenn d Sunna scheint, wirds glei wòam. Ein häufiges Eigenschaftswort des Alltags.',
+      beispiel: 'Heit is hoit recht wòam draußt.',
+      beispiel_hd: 'Heute ist es halt recht warm draußen.',
+      kategorie: 'natur'
+    },
+    {
+      id: 'op-044',
+      ausdruck: 'schiach',
+      hochdeutsch: 'hässlich / unschön',
+      bedeutung: 'schiach bedeutet hässlich, unschön oder unangenehm, auch von schlechtem Wetter. A schiachs Wetta ist garstiges Wetter. Im ganzen bairischen Raum verbreitet, mit der Oberpfälzer Lautung schiach.',
+      beispiel: 'Heint is a schiachs Wetta.',
+      beispiel_hd: 'Heute ist ein hässliches Wetter.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'op-045',
+      ausdruck: 'Housn',
+      hochdeutsch: 'Hose',
+      bedeutung: 'D Housn ist die Hose, mit dem nordbairischen ou für hochdeutsches o. A neie Housn brauchst zum Kirwa. Ein alltägliches Wort aus dem Bereich der Kleidung.',
+      beispiel: 'Zieh da a saubere Housn o.',
+      beispiel_hd: 'Zieh dir eine saubere Hose an.',
+      kategorie: 'alltag'
+    },
+    {
+      id: 'op-046',
+      ausdruck: 'fertn',
+      hochdeutsch: 'voriges Jahr',
+      bedeutung: 'fertn (auch fert) bedeutet „im vorigen Jahr". Das alte oberdeutsche Wort steckt auch in Firn, dem vorjährigen Schnee. Fertn wars no koid heißt „voriges Jahr war es noch kalt". Im bairischen Raum gebräuchlich.',
+      beispiel: 'Fertn hamma vui mehra Schwammerl gfundn.',
+      beispiel_hd: 'Voriges Jahr haben wir viel mehr Pilze gefunden.',
+      kategorie: 'alltag'
     }
   ]
 };
