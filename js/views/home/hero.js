@@ -74,19 +74,6 @@ function rotateText(host, items, renderItem, intervalMs) {
   host.addEventListener('mouseleave', start);
 }
 
-function renderHeroPreview() {
-  const samples = pickHeroSamples(3);
-  return el('div', { class: 'hero-preview', dataset: { pointerParallax: '' } },
-    ...samples.map(s => el('div', { class: 'preview-card', dataset: { ppDepth: s.depth } },
-      el('span', { class: 'dialect-tag', style: { background: s.farbe + '22', color: s.farbe } }, s.dialekt),
-      el('div', { class: 'expr' }, s.ausdruck),
-      el('div', { class: 'meaning' }, s.meaning)
-    ))
-  );
-}
-
-// Zieht n knackige Beispiel-Ausdrücke aus möglichst verschiedenen Dialekten —
-// bei jedem Render frisch gemischt, damit die Hero-Vorschau nicht statisch wirkt.
 const HERO_PREVIEW_DEPTHS = ['1.4', '1.0', '1.7'];
 const HERO_FALLBACK_SAMPLES = [
   { dialekt: 'Hessisch',    farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!' },
@@ -96,51 +83,106 @@ const HERO_FALLBACK_SAMPLES = [
 // Nur die charakteristisch-mundartlichen Kategorien als Aushängeschild zulassen
 // (Begrüßungen, Redensarten, Ausrufe) — keine Sachbegriffe/Eigennamen/Abkürzungen.
 const HERO_PREVIEW_CATEGORIES = new Set(['begruessung', 'redensart', 'gefuehle']);
-function pickHeroSamples(n = 3) {
+const HERO_CARD_FARBE = s => (typeof s.farbe === 'string' && s.farbe.startsWith('#')) ? s.farbe : '#8b5cf6';
+
+// Großer, frisch gemischter Pool kartentauglicher Beispiele (~668 Einträge) —
+// kurze, charakteristische Ausdrücke. Wird sowohl für die Erst-Auswahl als auch
+// für die laufende Rotation der Vorschaukarten genutzt.
+export function buildPreviewPool() {
   const fits = a => HERO_PREVIEW_CATEGORIES.has(a.kategorie)
     && a.ausdruck && a.ausdruck.length >= 2 && a.ausdruck.length <= 17
     && a.hochdeutsch && a.hochdeutsch.length <= 26
     && !/^[A-ZÄÖÜ.]{2,}$/.test(a.ausdruck);  // reine Abkürzungen (z.B. „RVR") ausschließen
-  const pool = shuffle(ALLE_AUSDRUECKE.filter(fits));
-  const picked = [];
-  const usedDialects = new Set();
-  for (const a of pool) {
-    if (usedDialects.has(a.dialektId)) continue;
-    usedDialects.add(a.dialektId);
-    picked.push({
-      dialekt: a.dialektName,
-      farbe: a.dialektFarbe || 'var(--brand)',
-      ausdruck: a.ausdruck,
-      meaning: a.hochdeutsch,
-      depth: HERO_PREVIEW_DEPTHS[picked.length % HERO_PREVIEW_DEPTHS.length]
-    });
+  return shuffle(ALLE_AUSDRUECKE.filter(fits)).map(a => ({
+    dialekt: a.dialektName,
+    farbe: a.dialektFarbe || '#8b5cf6',
+    ausdruck: a.ausdruck,
+    meaning: a.hochdeutsch
+  }));
+}
+
+// Wählt n Erst-Beispiele aus möglichst verschiedenen Dialekten aus dem Pool.
+function pickDistinct(pool, n) {
+  const picked = [], used = new Set();
+  for (const s of pool) {
+    if (used.has(s.dialekt)) continue;
+    used.add(s.dialekt); picked.push(s);
     if (picked.length >= n) break;
   }
-  // Defensive: bei zu kleiner Datenlage auf die kuratierten Beispiele zurückfallen.
-  while (picked.length < n) {
-    const fb = HERO_FALLBACK_SAMPLES[picked.length % HERO_FALLBACK_SAMPLES.length];
-    picked.push({ ...fb, depth: HERO_PREVIEW_DEPTHS[picked.length % HERO_PREVIEW_DEPTHS.length] });
-  }
+  while (picked.length < n) picked.push(HERO_FALLBACK_SAMPLES[picked.length % HERO_FALLBACK_SAMPLES.length]);
   return picked;
 }
 
+function applySample(parts, s) {
+  const farbe = HERO_CARD_FARBE(s);
+  parts.tag.textContent = s.dialekt;
+  parts.tag.style.background = farbe + '22';
+  parts.tag.style.color = farbe;
+  parts.expr.textContent = s.ausdruck;
+  parts.meaning.textContent = s.meaning;
+}
+
+// Vorschaukarten: 3 Karten, die fortlaufend durch den 500+-Pool rotieren
+// (versetzt, mit sanftem Fade). Selbst-Stopp, sobald die Sektion nicht mehr im
+// DOM hängt (View-Wechsel) — analog zu rotateText/buildWordCarousel.
+function renderHeroPreview() {
+  const pool = buildPreviewPool();
+  const initial = pickDistinct(pool, 3);
+  const cards = initial.map((s, i) => {
+    const farbe = HERO_CARD_FARBE(s);
+    const tag = el('span', { class: 'dialect-tag', style: { background: farbe + '22', color: farbe } }, s.dialekt);
+    const expr = el('div', { class: 'expr' }, s.ausdruck);
+    const meaning = el('div', { class: 'meaning' }, s.meaning);
+    const card = el('div', { class: 'preview-card', dataset: { ppDepth: HERO_PREVIEW_DEPTHS[i] } }, tag, expr, meaning);
+    return { card, tag, expr, meaning };
+  });
+  const wrap = el('div', { class: 'hero-preview', dataset: { pointerParallax: '' } }, ...cards.map(c => c.card));
+
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && pool.length > 3) {
+    let pi = 3; // nächster Pool-Index nach den 3 Erst-Karten
+    cards.forEach((parts, i) => {
+      let timer = null;
+      const swap = () => {
+        if (!wrap.isConnected) { clearInterval(timer); timer = null; return; }
+        const next = pool[pi % pool.length]; pi++;
+        parts.card.classList.add('is-swapping');
+        setTimeout(() => {
+          applySample(parts, next);
+          parts.card.classList.remove('is-swapping');
+          parts.card.classList.add('is-swapped');
+          setTimeout(() => parts.card.classList.remove('is-swapped'), 460);
+        }, 280);
+      };
+      // Versetzter Start, damit die Karten nicht gleichzeitig umblättern.
+      setTimeout(() => { timer = setInterval(swap, 4600); }, 3000 + i * 1500);
+    });
+  }
+  return wrap;
+}
+
+// Großer Wort-Pool aus ALLEN Ausdrücken (6700+), pro Render gemischt → echte
+// Abwechslung statt einer Handvoll wiederholter Wörter. Filtert nur reine
+// Abkürzungen/Codes (z.B. „RVR") und übermäßig lange Phrasen heraus.
+const WORD_FALLBACK = [
+  { word: 'Servus!', flag: '🥨', name: 'Bayerisch' },
+  { word: 'Moin!', flag: '⚓', name: 'Plattdeutsch' }
+];
+export function buildWordPool() {
+  const fits = a => a.ausdruck
+    && a.ausdruck.length >= 2 && a.ausdruck.length <= 24
+    && !/^[A-ZÄÖÜ.\d]{2,}$/.test(a.ausdruck);
+  const pool = shuffle(ALLE_AUSDRUECKE.filter(fits)).map(a => ({
+    word: a.ausdruck,
+    flag: a.dialektFlag || '🗣️',
+    name: a.dialektName
+  }));
+  return pool.length >= 2 ? pool : WORD_FALLBACK;
+}
+
 function buildWordCarousel() {
-  // Sample of expressive dialect words to cycle through — pro Render gemischt,
-  // damit nicht immer dasselbe Wort zuerst erscheint.
-  const WORDS = shuffle([
-    { word: 'Ei guude!',        flag: '🦁', name: 'Hessisch' },
-    { word: 'Moin!',            flag: '⚓', name: 'Plattdeutsch' },
-    { word: 'Servus!',          flag: '🥨', name: 'Bayerisch' },
-    { word: 'Kölle Alaaf!',     flag: '🎭', name: 'Kölsch' },
-    { word: 'Icke dit det!',    flag: '🐻', name: 'Berlinisch' },
-    { word: 'Leiwand!',         flag: '🎻', name: 'Wienerisch' },
-    { word: 'Grüezi mitenand!', flag: '🏔️', name: 'Schwizerdütsch' },
-    { word: 'Nu freilich!',     flag: '⚪', name: 'Sächsisch' },
-    { word: 'Bassd scho!',      flag: '🦅', name: 'Fränkisch' },
-    { word: 'Glück auf!',       flag: '⚒️', name: 'Ruhrdeutsch' },
-    { word: 'Heimelig!',        flag: '🌲', name: 'Alemannisch' },
-    { word: 'Kehrwoche!',       flag: '🧹', name: 'Schwäbisch' }
-  ]);
+  // Durchläuft einen frisch gemischten Pool aller Ausdrücke (6700+).
+  const WORDS = buildWordPool();
 
   let idx = 0;
   const wordEl = el('span', { class: 'carousel-word' }, WORDS[0].word);
@@ -167,6 +209,11 @@ function buildWordCarousel() {
       setTimeout(() => wordEl.classList.remove('carousel-enter'), 400);
     }, 250);
   }
+
+  // Respektiert reduced-motion (kein automatisches Durchblättern) und vermeidet
+  // unnötige Timer bei leerem/winzigem Pool.
+  const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion || WORDS.length < 2) return wrap;
 
   // Start cycling after mount
   setTimeout(() => {

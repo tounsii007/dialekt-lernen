@@ -1,43 +1,48 @@
-// Onboarding-Tour — Spotlight-Highlights für Erst-Besucher.
-// Zeigt 3-4 Schritte mit Tooltips und überspringbarem Flow.
+// Onboarding-Tour — modern, auf Basis von driver.js (lokal vendored, js/vendor/driver.js).
+// Spotlight-Highlights für Erst-Besucher mit Glas-Popover, Spring-Animation und Tastatur-Steuerung.
 
 import { state, persist } from '../store/state.js';
+import { driver } from '../vendor/driver.js';
 
 const STEPS = [
   {
     selector: '.brand',
+    icon: '👋',
     title: 'Willkommen bei Dialekto',
     body: 'Eine schöne Sammlung deutscher Dialekte — zum Stöbern und Lernen.',
     placement: 'bottom-start'
   },
   {
     selector: '.nav, .nav-link[data-route="entdecken"]',
+    icon: '🧭',
     title: 'Navigation',
     body: 'Wechsle zwischen Start, Entdecken, Lernen, Quiz und Favoriten. Auf Mobile gibts die Nav als schwebendes Dock am unteren Rand.',
     placement: 'bottom'
   },
   {
-    selector: '.searchPill, #searchOpen',
+    selector: '.search-trigger, #searchOpen, .searchPill',
+    icon: '🔍',
     title: 'Schnellsuche',
     body: 'Drücke S oder klick hier — die Kommando-Palette findet Aktionen, Dialekte und Ausdrücke.',
     placement: 'bottom-end'
   },
   {
     selector: '.daily, .daily-expr',
+    icon: '📅',
     title: 'Ausdruck des Tages',
     body: 'Jeden Tag eine neue Redewendung. Tippe auf 🔊 zum Anhören.',
     placement: 'bottom'
   },
   {
     selector: '.dialekt-grid .dialekt-card, .dialekt-card',
+    icon: '🗺️',
     title: 'Dialekt-Karten',
     body: 'Tippe eine Karte für alle Ausdrücke einer Region. Bewege die Maus über die Karte — sie kippt in 3D.',
     placement: 'top'
   }
 ];
 
-let activeOverlay = null;
-let currentStep = 0;
+let activeDriver = null;
 
 function isOnboarded() {
   return !!state.onboarded;
@@ -48,102 +53,62 @@ export function markOnboarded() {
   persist();
 }
 
+function placementToSides(placement) {
+  const [side, align] = placement.split('-');
+  return { side: side || 'bottom', align: align || 'center' };
+}
+
+// Resolve each step against the live DOM; skip steps whose target is absent.
+function buildSteps() {
+  return STEPS.map((step) => {
+    const sel = step.selector
+      .split(',')
+      .map((s) => s.trim())
+      .find((s) => document.querySelector(s));
+    if (!sel) return null;
+    const { side, align } = placementToSides(step.placement);
+    return {
+      element: sel,
+      popover: {
+        title: `<span class="tour-ico" aria-hidden="true">${step.icon || '✨'}</span><span class="tour-ttl">${step.title}</span>`,
+        description: step.body,
+        side,
+        align
+      }
+    };
+  }).filter(Boolean);
+}
+
 export function startOnboarding({ force = false } = {}) {
   if (!force && isOnboarded()) return;
-  if (activeOverlay) return;
-  currentStep = 0;
-  renderStep();
-}
+  if (activeDriver) return;
 
-function renderStep() {
-  cleanup();
-  const step = STEPS[currentStep];
-  if (!step) { finish(); return; }
-  const target = document.querySelector(step.selector.split(',').map(s => s.trim()).find(s => document.querySelector(s)) || step.selector);
-  if (!target) { currentStep++; renderStep(); return; }
+  const steps = buildSteps();
+  if (!steps.length) return;
 
-  const rect = target.getBoundingClientRect();
-  const pad = 10;
+  activeDriver = driver({
+    steps,
+    showProgress: true,
+    progressText: 'Schritt {{current}} von {{total}}',
+    nextBtnText: 'Weiter →',
+    prevBtnText: '← Zurück',
+    doneBtnText: 'Loslegen 🚀',
+    popoverClass: 'dialekto-tour',
+    overlayColor: '#070712',
+    overlayOpacity: 0.62,
+    stagePadding: 8,
+    stageRadius: 18,
+    smoothScroll: true,
+    allowClose: true,
+    disableActiveInteraction: true,
+    allowKeyboardControl: true,
+    onDestroyed: () => {
+      activeDriver = null;
+      markOnboarded();
+    }
+  });
 
-  const overlay = document.createElement('div');
-  overlay.className = 'onboard-overlay';
-  overlay.innerHTML = `
-    <div class="onboard-mask"></div>
-    <div class="onboard-hole" style="left:${rect.left - pad}px;top:${rect.top - pad}px;width:${rect.width + pad*2}px;height:${rect.height + pad*2}px;"></div>
-    <div class="onboard-card" data-placement="${step.placement}">
-      <div class="onboard-progress">
-        ${STEPS.map((_, i) => `<span class="onboard-pip${i === currentStep ? ' active' : ''}${i < currentStep ? ' done' : ''}"></span>`).join('')}
-      </div>
-      <h3 class="onboard-title">${step.title}</h3>
-      <p class="onboard-body">${step.body}</p>
-      <div class="onboard-actions">
-        <button class="onboard-btn skip">Tour beenden</button>
-        <div class="onboard-nav">
-          ${currentStep > 0 ? '<button class="onboard-btn back">← Zurück</button>' : ''}
-          <button class="onboard-btn next">${currentStep === STEPS.length - 1 ? 'Loslegen 🚀' : 'Weiter →'}</button>
-        </div>
-      </div>
-    </div>
-  `;
-  document.body.appendChild(overlay);
-  activeOverlay = overlay;
-
-  // Position the card relative to target
-  requestAnimationFrame(() => positionCard(overlay, rect, step.placement));
-
-  // Wire actions
-  overlay.querySelector('.skip').addEventListener('click', finish);
-  overlay.querySelector('.next').addEventListener('click', () => { currentStep++; renderStep(); });
-  overlay.querySelector('.back')?.addEventListener('click', () => { currentStep = Math.max(0, currentStep - 1); renderStep(); });
-  overlay.addEventListener('keydown', handleKey);
-  overlay.tabIndex = -1; overlay.focus();
-  document.addEventListener('keydown', handleKey);
-  // Highlight pulse on target
-  target.classList.add('onboard-target');
-}
-
-function positionCard(overlay, rect, placement) {
-  const card = overlay.querySelector('.onboard-card');
-  const cr = card.getBoundingClientRect();
-  const gap = 18;
-  const vw = window.innerWidth, vh = window.innerHeight;
-  let x, y;
-  if (placement.startsWith('bottom')) {
-    y = rect.bottom + gap;
-    x = placement === 'bottom-end' ? rect.right - cr.width : placement === 'bottom-start' ? rect.left : rect.left + rect.width / 2 - cr.width / 2;
-  } else if (placement.startsWith('top')) {
-    y = rect.top - cr.height - gap;
-    x = rect.left + rect.width / 2 - cr.width / 2;
-  } else if (placement === 'left') {
-    x = rect.left - cr.width - gap;
-    y = rect.top + rect.height / 2 - cr.height / 2;
-  } else {
-    x = rect.right + gap;
-    y = rect.top + rect.height / 2 - cr.height / 2;
-  }
-  // Clamp
-  x = Math.max(12, Math.min(x, vw - cr.width - 12));
-  y = Math.max(12, Math.min(y, vh - cr.height - 12));
-  card.style.transform = `translate(${x}px, ${y}px)`;
-}
-
-function handleKey(e) {
-  if (!activeOverlay) return;
-  if (e.key === 'Escape') { e.preventDefault(); finish(); }
-  else if (e.key === 'ArrowRight' || e.key === 'Enter') { e.preventDefault(); currentStep++; renderStep(); }
-  else if (e.key === 'ArrowLeft') { e.preventDefault(); currentStep = Math.max(0, currentStep - 1); renderStep(); }
-}
-
-function cleanup() {
-  document.querySelectorAll('.onboard-target').forEach((n) => n.classList.remove('onboard-target'));
-  if (activeOverlay && activeOverlay.parentNode) activeOverlay.parentNode.removeChild(activeOverlay);
-  activeOverlay = null;
-  document.removeEventListener('keydown', handleKey);
-}
-
-function finish() {
-  cleanup();
-  markOnboarded();
+  activeDriver.drive();
 }
 
 export function resetOnboarding() {

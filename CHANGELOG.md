@@ -7,6 +7,29 @@ und das Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Geändert — v2.1.60
+
+- **Tour-Schließen-Button** neu gestaltet: klarer Glas-Icon-Button mit deutlich sichtbarem Kreuz, der beim Hover zu einem Gradient-Kreis wird (statt blassem, kaum sichtbarem ×).
+
+### Hinzugefügt — v2.1.59 (Tests & Style-Audit)
+
+- **Per-View-Tests** in eigenen Dateien: `home-view`, `entdecken-view`, `quiz-view`, `dialekt-detail-view`.
+- **Komplexe Schwachstellen-Tests**: `all-views-render` (rendert jede Route-View crashfrei + idempotentes Re-Render), `data-integrity` (17 Checks über 6759 Ausdrücke), `route-registry` (Registry-Konsistenz + URL-Round-Trip). Insgesamt +71 Tests (1043 grün).
+- **Test-Harness (FakeDOM) erweitert**: echter Mini-Selektor-Matcher (querySelector/closest/matches), DocumentFragment, className↔classList- und innerHTML-Sync — damit View-Render-Tests aussagekräftig sind.
+
+### Behoben — v2.1.59
+
+- **Lernpfad** (Mobile): Zickzack-Versatz lag auf der 100%-breiten Row und ließ deren Box rechts aus dem Viewport ragen — jetzt auf den Knoten angewandt.
+- **Wort-Karussell** respektiert `prefers-reduced-motion` (kein automatisches Durchblättern).
+
+### Geändert — v2.1.58 (UI/UX)
+
+- **Onboarding-Tour** auf driver.js (vendored, `js/vendor/driver.js`) umgestellt — modernes Glas-Popover, Spotlight, Tastatursteuerung; im Design-System gestylt.
+- **Header** entlastet: Lernpfad/Shadowing/Klangpaare ins „Mehr"-Überlaufmenü verschoben; Suche/Theme/Einstellungen werden auf keiner Bildschirmbreite mehr abgeschnitten.
+- **Dark-Mode „Midnight Aurora"**: tieferes Indigo/Violett-Fundament, kühlere Aurora-Akzente, farbig getöntes Glühen.
+- **Hero-Startseite**: „z.B."-Wort-Karussell rotiert jetzt durch 6700+ echte Ausdrücke; die 3 Vorschaukarten rotieren durch 500+ Beispiele statt fester Texte. Stats-Zeile und Vorschaukarten auf jeder Breite sauber ausgerichtet.
+
+
 ### Hinzugefügt — Wave 2-4 Features
 
 **Audio-Lernmodi (5 neue Modi, gesamt 10):**

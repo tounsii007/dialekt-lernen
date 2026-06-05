@@ -86,6 +86,58 @@ function makeFakeStyle() {
   );
 }
 
+// ── Minimaler CSS-Selektor-Matcher ───────────────────────────────────────────
+// Unterstützt Tag, .class, #id, [attr], [attr=val], Verbund (div.foo#id) und
+// Nachfahren-Kombinator (Leerzeichen) sowie Komma-Listen. Reicht, damit Views
+// ihre frisch gebauten Teilbäume per querySelector/closest verdrahten können.
+function _dataGet(node, k) {
+  if (!k.startsWith('data-') || !node.dataset) return undefined;
+  const camel = k.slice(5).replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+  return node.dataset[camel];
+}
+function _matchCompound(node, sel) {
+  if (!node || node.nodeType !== 1) return false;
+  const toks = sel.match(/[.#]?[\w-]+|\[[^\]]+\]|\*/g);
+  if (!toks) return false;
+  for (const t of toks) {
+    if (t === '*') continue;
+    if (t[0] === '.') { if (!node.classList.contains(t.slice(1))) return false; }
+    else if (t[0] === '#') { if ((node._attrs.id ?? node.id) !== t.slice(1)) return false; }
+    else if (t[0] === '[') {
+      const body = t.slice(1, -1);
+      const eq = body.indexOf('=');
+      if (eq === -1) {
+        if (!(body in node._attrs) && _dataGet(node, body) === undefined) return false;
+      } else {
+        const k = body.slice(0, eq).trim();
+        const v = body.slice(eq + 1).replace(/^["']|["']$/g, '');
+        const actual = node._attrs[k] ?? _dataGet(node, k);
+        if (String(actual) !== v) return false;
+      }
+    } else if (node.tagName.toLowerCase() !== t.toLowerCase()) return false;
+  }
+  return true;
+}
+function _matchSelector(node, full) {
+  const parts = full.trim().split(/\s+/);
+  const last = parts.pop();
+  if (!_matchCompound(node, last)) return false;
+  let anc = node.parentNode;
+  for (let i = parts.length - 1; i >= 0; i--) {
+    while (anc && !_matchCompound(anc, parts[i])) anc = anc.parentNode;
+    if (!anc) return false;
+    anc = anc.parentNode;
+  }
+  return true;
+}
+function _walk(node, fn) {
+  for (const c of node.childNodes) {
+    if (fn(c) === true) return true;
+    if (_walk(c, fn) === true) return true;
+  }
+  return false;
+}
+
 class FakeNode {
   constructor(tagName = 'div') {
     this.tagName = String(tagName).toUpperCase();
@@ -94,16 +146,35 @@ class FakeNode {
     this.children = [];
     this.classList = new FakeClassList();
     this._attrs = {};
-    this.className = '';
     this.style = makeFakeStyle();
     this.dataset = {};
     this._listeners = {};
     this.textContent = '';
-    this.innerHTML = '';
+    this._innerHTML = '';
     this.parentNode = null;
+  }
+  // innerHTML: kein HTML-Parsing, aber das verbreitete Leeren-Muster (el.innerHTML='')
+  // bilden wir korrekt ab → Kinder werden entfernt.
+  get innerHTML() { return this._innerHTML; }
+  set innerHTML(v) {
+    this._innerHTML = String(v ?? '');
+    for (const c of this.childNodes) c.parentNode = null;
+    this.childNodes = [];
+    this.children = [];
+  }
+  // className ↔ classList synchron halten (el() setzt elem.className als String).
+  get className() { return this.classList.toString(); }
+  set className(v) {
+    this.classList = new FakeClassList();
+    String(v || '').split(/\s+/).filter(Boolean).forEach((c) => this.classList.add(c));
   }
   appendChild(child) {
     if (child == null) return child;
+    if (child.tagName === '#FRAGMENT') {       // DocumentFragment entleeren
+      for (const c of [...child.childNodes]) this.appendChild(c);
+      child.childNodes = []; child.children = [];
+      return child;
+    }
     child.parentNode = this;
     this.childNodes.push(child);
     this.children.push(child);
@@ -116,6 +187,40 @@ class FakeNode {
     if (j >= 0) this.children.splice(j, 1);
     child.parentNode = null;
     return child;
+  }
+  // Moderne Kinder-APIs, die Views nutzen (Browser-nativ, im Mock nachgezogen).
+  append(...nodes) { for (const n of nodes) if (n != null) this.appendChild(this._asNode(n)); }
+  prepend(...nodes) {
+    const made = nodes.filter(n => n != null).map(n => this._asNode(n));
+    for (const n of made) n.parentNode = this;
+    this.childNodes.unshift(...made);
+    this.children.unshift(...made);
+  }
+  replaceChildren(...nodes) {
+    for (const c of this.childNodes) c.parentNode = null;
+    this.childNodes = [];
+    this.children = [];
+    for (const n of nodes) if (n != null) this.appendChild(this._asNode(n));
+  }
+  insertBefore(node, ref) {
+    const n = this._asNode(node);
+    const i = ref ? this.childNodes.indexOf(ref) : -1;
+    if (i < 0) { this.appendChild(n); return n; }
+    n.parentNode = this;
+    this.childNodes.splice(i, 0, n);
+    this.children.splice(i, 0, n);
+    return n;
+  }
+  contains(node) {
+    if (node === this) return true;
+    return this.childNodes.some(c => c === node || (c.contains && c.contains(node)));
+  }
+  // Strings → Textknoten, damit append/prepend('text') wie im Browser funktioniert.
+  _asNode(n) {
+    if (typeof n === 'string' || typeof n === 'number') {
+      const t = new FakeNode('#text'); t.textContent = String(n); return t;
+    }
+    return n;
   }
   remove() {
     if (this.parentNode) this.parentNode.removeChild(this);
@@ -137,8 +242,27 @@ class FakeNode {
     for (const fn of arr) { try { fn(event); } catch {} }
     return true;
   }
-  querySelector(_sel) { return null; }
-  querySelectorAll(_sel) { return []; }
+  querySelector(sel) {
+    const sels = sel.split(',').map(s => s.trim());
+    let found = null;
+    _walk(this, (n) => {
+      if (n.nodeType === 1 && sels.some(s => _matchSelector(n, s))) { found = n; return true; }
+    });
+    return found;
+  }
+  querySelectorAll(sel) {
+    const sels = sel.split(',').map(s => s.trim());
+    const out = [];
+    _walk(this, (n) => { if (n.nodeType === 1 && sels.some(s => _matchSelector(n, s))) out.push(n); });
+    return out;
+  }
+  closest(sel) {
+    const sels = sel.split(',').map(s => s.trim());
+    let n = this;
+    while (n) { if (n.nodeType === 1 && sels.some(s => _matchCompound(n, s))) return n; n = n.parentNode; }
+    return null;
+  }
+  matches(sel) { return sel.split(',').some(s => _matchCompound(this, s.trim())); }
   getBoundingClientRect() {
     return { x: 0, y: 0, top: 0, left: 0, bottom: 0, right: 0, width: 0, height: 0 };
   }
@@ -158,10 +282,17 @@ class FakeDocument extends FakeNode {
   createElement(tag) { return new FakeNode(tag); }
   createElementNS(_ns, tag) { return new FakeNode(tag); }
   createTextNode(text) { const n = new FakeNode('#text'); n.textContent = text; return n; }
-  getElementById(id) { return this._byId.get(id) || null; }
-  // Selektoren — sehr simpel: nichts gefunden, leeres Array
-  querySelector() { return null; }
-  querySelectorAll() { return []; }
+  createDocumentFragment() { return new FakeNode('#fragment'); }
+  getElementById(id) {
+    if (this._byId.has(id)) return this._byId.get(id);
+    let found = null;
+    for (const r of [this.documentElement, this.body, this.head]) {
+      _walk(r, (n) => { if (n.nodeType === 1 && (n._attrs.id ?? n.id) === id) { found = n; return true; } });
+      if (found) break;
+    }
+    return found;
+  }
+  // querySelector/querySelectorAll werden von FakeNode geerbt (echter Matcher).
 }
 
 let mounted = false;
@@ -203,13 +334,10 @@ export function mountDom() {
 
 export function unmountDom() {
   if (!mounted) return;
-  delete globalThis.document;
-  delete globalThis.window;
-  delete globalThis.HTMLElement;
-  delete globalThis.Element;
-  delete globalThis.Node;
-  delete globalThis.Event;
-  delete globalThis.CustomEvent;
+  // Globals NICHT löschen: Manche Views planen verzögerte DOM-Arbeit (rAF/Timeout).
+  // Feuert die nach dem File-Teardown, würde ein gelöschtes `document` einen
+  // uncaughtException auslösen. Wir markieren nur als unmounted — der nächste
+  // mountDom() baut ein frisches, sauberes FakeDocument auf.
   mounted = false;
 }
 
