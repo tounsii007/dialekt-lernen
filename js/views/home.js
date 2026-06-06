@@ -53,36 +53,21 @@ export function renderHome(root, params = {}) {
   const dash = renderDashboard();
   if (dash) view.appendChild(dash);
 
-  // Non-kritische Sektionen — gestaffelt nach dem ersten Paint nachrendern.
-  const placeholders = {
-    reco: el('div', { class: 'home-section-placeholder' }),
-    league: el('div', { class: 'home-section-placeholder' }),
-    quests: el('div', { class: 'home-section-placeholder' }),
-    challenges: el('div', { class: 'home-section-placeholder' }),
-    longGoals: el('div', { class: 'home-section-placeholder' }),
-  };
-  view.appendChild(placeholders.reco);
-  view.appendChild(placeholders.league);
-  view.appendChild(placeholders.quests);
-  view.appendChild(placeholders.challenges);
-  view.appendChild(placeholders.longGoals);
-
-  // Gestaffelt nach dem ersten Paint nachrendern. Bewusst setTimeout statt
-  // requestIdleCallback: letzteres feuert in versteckten/Hintergrund-Tabs gar
-  // nicht (auch nicht mit { timeout }), wodurch diese Sektionen dort nie
-  // erschienen. setTimeout feuert zuverlässig und hält den Initial-Render
-  // trotzdem frei (eigene Tasks nach dem Paint). Jeder Callback ist isoliert,
-  // damit ein Fehler in einer Sektion die übrigen nicht verhindert.
-  const after = (i, cb) => setTimeout(() => { try { cb(); } catch {} }, 60 + i * 40);
-  after(0, () => {
-    const recoSection = renderAdaptiveRecommendationsSection();
-    if (recoSection) placeholders.reco.replaceWith(recoSection);
-    else placeholders.reco.remove();
-  });
-  after(1, () => placeholders.league.replaceWith(renderLeagueSection()));
-  after(2, () => placeholders.quests.replaceWith(renderQuestsSection()));
-  after(3, () => placeholders.challenges.replaceWith(renderChallengesSection()));
-  after(4, () => placeholders.longGoals.replaceWith(renderLongGoalsSection()));
+  // Alle weiteren Sektionen direkt SYNCHRON rendern (kein gestaffeltes
+  // setTimeout/Platzhalter-Muster mehr). Grund: Der Router ruft observeReveals()
+  // einmalig direkt nach dem Render auf — es erfasst per statischem
+  // querySelectorAll nur die zu DIESEM Zeitpunkt vorhandenen [data-reveal]-
+  // Elemente. Früher nachgereichte Sektionen waren da noch nicht im DOM, wurden
+  // nie beobachtet (auch der 2,5s-Failsafe griff nicht) und blieben dauerhaft
+  // opacity:0 — unsichtbar, reservierten aber Platz = große Leerräume. Synchron
+  // eingefügt sind sie beim observeReveals()-Aufruf da und werden sichtbar.
+  // Jede Sektion isoliert (try/catch), damit ein Fehler die übrigen nicht stoppt.
+  const safeAppend = (fn) => { try { const s = fn(); if (s) view.appendChild(s); } catch {} };
+  safeAppend(renderAdaptiveRecommendationsSection);
+  safeAppend(renderLeagueSection);
+  safeAppend(renderQuestsSection);
+  safeAppend(renderChallengesSection);
+  safeAppend(renderLongGoalsSection);
 
   // Daily expression (inkl. Fokus-Scroll/-Highlight bei daily=1 — in der Sektion)
   view.appendChild(renderDailyExpression(dailyFocus));

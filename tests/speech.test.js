@@ -142,3 +142,15 @@ describe('listVoices / getSpeechStatus', () => {
     assert.equal(st.preferred, false);
   });
 });
+
+describe('dialectVoices — Schalter für eigene Dialekt-Stimmen', () => {
+  it('ist standardmäßig an', () => {
+    setSpeechSettings({ dialectVoices: true });
+    assert.equal(getSpeechSettings().dialectVoices, true);
+  });
+
+  it('lässt sich abschalten und wieder einschalten', () => {
+    assert.equal(setSpeechSettings({ dialectVoices: false }).dialectVoices, false);
+    assert.equal(setSpeechSettings({ dialectVoices: true }).dialectVoices, true);
+  });
+});

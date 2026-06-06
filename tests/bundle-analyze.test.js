@@ -28,17 +28,18 @@ describe('bundle-analyze Tool', () => {
     assert.match(result.stdout, /TOTAL APP SIZE/);
   });
 
-  it('berichtet aktivierten Lazy-Load-Status', () => {
+  it('berichtet, dass alle Views eager geladen werden (kein Lazy-Loading)', () => {
     const result = spawnSync(process.execPath, [join(ROOT, 'tools', 'bundle-analyze.mjs')], {
       stdio: 'pipe',
       encoding: 'utf8',
     });
-    // Erwartet: mindestens 1 Lazy-Load-Match
+    // Lazy-Loading wurde bewusst entfernt → 0 dynamic-imported Views.
     assert.match(result.stdout, /Lazy-loaded Views/);
     const m = result.stdout.match(/Lazy-loaded Views[^:]+:\s+(\d+)/);
     assert.ok(m);
     const n = parseInt(m[1], 10);
-    assert.ok(n >= 5, `Mindestens 5 Lazy-loaded Views erwartet, gefunden ${n}`);
+    assert.equal(n, 0, `Keine Lazy-loaded Views erwartet (eager), gefunden ${n}`);
+    assert.match(result.stdout, /eager geladen/);
   });
 });
 

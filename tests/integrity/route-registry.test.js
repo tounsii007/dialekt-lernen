@@ -8,7 +8,7 @@ import { mountDom, unmountDom } from '../_setup.js';
 before(mountDom);
 after(unmountDom);
 
-const { ROUTES, ROUTE_LABELS, LAZY_ROUTE_KEYS } = await import('../../js/util/route.js');
+const { ROUTES, ROUTE_LABELS } = await import('../../js/util/route.js');
 const { toPublicPath, parseHash } = await import('../../js/util/route.js');
 
 describe('ROUTES-Registry · Konsistenz', () => {
@@ -30,9 +30,9 @@ describe('ROUTES-Registry · Konsistenz', () => {
     for (const k of Object.keys(ROUTES)) assert.ok(ROUTE_LABELS[k], `Label fehlt: ${k}`);
   });
 
-  it('LAZY_ROUTE_KEYS sind eine Teilmenge der Registry und genau die lazy-Routen', () => {
-    const lazyFromRegistry = Object.entries(ROUTES).filter(([, r]) => r.lazy).map(([k]) => k).sort();
-    assert.deepEqual([...LAZY_ROUTE_KEYS].sort(), lazyFromRegistry);
+  it('keine Route trägt mehr ein lazy-Flag (alle Views werden eager geladen)', () => {
+    const stillLazy = Object.entries(ROUTES).filter(([, r]) => r.lazy).map(([k]) => k);
+    assert.deepEqual(stillLazy, [], `lazy-Flag übrig: ${stillLazy}`);
   });
 });
 

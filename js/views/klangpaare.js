@@ -156,8 +156,8 @@ function startSession(host, source, count) {
       )
     );
 
-    const playNormal = () => { sfx.click(); speak(drill.target.ausdruck, lang); };
-    const playSlow = () => { sfx.click(); speak(drill.target.ausdruck, lang, { rate: 0.55 }); };
+    const playNormal = () => { sfx.click(); speak(drill.target.ausdruck, lang, { dialektId: drill.target.dialektId }); };
+    const playSlow = () => { sfx.click(); speak(drill.target.ausdruck, lang, { rate: 0.55, dialektId: drill.target.dialektId }); };
 
     const card = el('div', { class: 'klangpaare-card', dataset: { reveal: 'zoom' } },
       el('div', { class: 'klangpaare-card-dialect' }, `${drill.target.dialektFlag} ${drill.target.dialektName}`),
@@ -178,7 +178,7 @@ function startSession(host, source, count) {
         el('span', { class: 'klangpaare-option-ipa' }, formatIpa(opt.ausdruck, opt.dialektId))
       );
       btn.addEventListener('click', () => {
-        if (answered) { speak(opt.ausdruck, lang); return; }
+        if (answered) { speak(opt.ausdruck, opt.dialektLang || lang, { dialektId: opt.dialektId }); return; }
         answered = true;
         const g = gradePair(drill, opt.id ?? opt.ausdruck);
         record(g.correct);
@@ -210,7 +210,7 @@ function startSession(host, source, count) {
     host.appendChild(actionRow);
 
     // Audio automatisch starten — die Übung beginnt mit Hören.
-    setTimeout(() => speak(drill.target.ausdruck, lang), 280);
+    setTimeout(() => speak(drill.target.ausdruck, lang, { dialektId: drill.target.dialektId }), 280);
   }
 
   renderDrill();

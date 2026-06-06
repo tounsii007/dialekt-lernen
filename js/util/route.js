@@ -7,43 +7,39 @@
 
 // ── Single-Source-Routen-Registry ────────────────────────────────────────────
 // Eine einzige Quelle für alle deklarativen Routen-Daten. Frühere Drift entstand,
-// weil dieselben Routen an vier Stellen gepflegt wurden (SLUGS hier, ROUTE_LABELS
-// + lazyLoaders + switch in router.js). Jetzt steht jede Route genau einmal hier;
-// SLUGS, ROUTE_LABELS und die Liste der Lazy-Keys werden daraus abgeleitet.
+// weil dieselben Routen an mehreren Stellen gepflegt wurden (SLUGS hier, ROUTE_LABELS
+// + switch in router.js). Jetzt steht jede Route genau einmal hier; SLUGS und
+// ROUTE_LABELS werden daraus abgeleitet.
 //
 // Eintrag je Routen-Key:
 //   slug   – öffentlicher englischer URL-Pfad ('' = Wurzel "/")
 //   label  – Anzeige-/A11y-Name (router.js: #routeAnnouncer)
-//   lazy   – true: View wird per dynamic import() lazy geladen (gecached +
-//            idle-vorgeladen). Ohne `lazy` ist die Route eager: statisch in
-//            router.js importiert und direkt im switch gerendert.
+//
+// Alle Views werden eager geladen: statisch in router.js importiert und direkt
+// im switch gerendert (kein Lazy-Loading).
 //
 // Die internen Keys (deutsch: 'entdecken', 'lernen', 'karte' …) sind die stabile
 // API: ~80 go()-Aufrufe, data-route-Attribute und Views hängen daran — NICHT ändern.
-//
-// Die konkreten import()-Thunks liegen bewusst in router.js (LAZY_LOADERS),
-// kolokalisiert mit loadLazy()/Idle-Preload; router.js prüft beim Init, dass
-// genau die hier mit `lazy:true` markierten Keys einen Loader haben (kein Drift).
 export const ROUTES = {
-  home:        { slug: '',            label: 'Startseite' },                         // eager
-  entdecken:   { slug: 'explore',     label: 'Dialekte entdecken' },                 // eager
-  lernen:      { slug: 'learn',       label: 'Karteikarten lernen',       lazy: true },
-  quiz:        { slug: 'quiz',        label: 'Quiz',                      lazy: true },
-  vergleich:   { slug: 'compare',     label: 'Dialekt-Vergleich',         lazy: true },
-  favoriten:   { slug: 'favorites',   label: 'Favoriten und Statistiken', lazy: true },
-  karte:       { slug: 'map',         label: 'Dialekt-Karte',             lazy: true },
-  statistiken: { slug: 'stats',       label: 'Lernstatistiken',           lazy: true },
-  dialekt:     { slug: 'dialect',     label: 'Dialekt-Details' },                    // eager
-  decks:       { slug: 'decks',       label: 'Eigene Decks',              lazy: true },
-  share:       { slug: 'share',       label: 'Geteiltes Quiz-Resultat',   lazy: true },
-  spiele:      { slug: 'games',       label: 'Mini-Spiele',               lazy: true },
-  sammlung:    { slug: 'collection',  label: 'Ausdrücke-Sammlung',        lazy: true },
-  idiome:      { slug: 'idioms',      label: 'Idiom-Explorer',            lazy: true },
-  lektionen:   { slug: 'lessons',     label: 'Mini-Lektionen',            lazy: true },
-  liga:        { slug: 'league',      label: 'Lokale Liga',               lazy: true },
-  lernpfad:    { slug: 'path',        label: 'Lernpfad',                  lazy: true },
-  shadowing:   { slug: 'shadowing',   label: 'Shadowing-Trainer',         lazy: true },
-  klangpaare:  { slug: 'sound-pairs', label: 'Klangpaare-Hörtrainer',     lazy: true },
+  home:        { slug: '',            label: 'Startseite' },
+  entdecken:   { slug: 'explore',     label: 'Dialekte entdecken' },
+  lernen:      { slug: 'learn',       label: 'Karteikarten lernen' },
+  quiz:        { slug: 'quiz',        label: 'Quiz' },
+  vergleich:   { slug: 'compare',     label: 'Dialekt-Vergleich' },
+  favoriten:   { slug: 'favorites',   label: 'Favoriten und Statistiken' },
+  karte:       { slug: 'map',         label: 'Dialekt-Karte' },
+  statistiken: { slug: 'stats',       label: 'Lernstatistiken' },
+  dialekt:     { slug: 'dialect',     label: 'Dialekt-Details' },
+  decks:       { slug: 'decks',       label: 'Eigene Decks' },
+  share:       { slug: 'share',       label: 'Geteiltes Quiz-Resultat' },
+  spiele:      { slug: 'games',       label: 'Mini-Spiele' },
+  sammlung:    { slug: 'collection',  label: 'Ausdrücke-Sammlung' },
+  idiome:      { slug: 'idioms',      label: 'Idiom-Explorer' },
+  lektionen:   { slug: 'lessons',     label: 'Mini-Lektionen' },
+  liga:        { slug: 'league',      label: 'Lokale Liga' },
+  lernpfad:    { slug: 'path',        label: 'Lernpfad' },
+  shadowing:   { slug: 'shadowing',   label: 'Shadowing-Trainer' },
+  klangpaare:  { slug: 'sound-pairs', label: 'Klangpaare-Hörtrainer' },
 };
 
 // Aus der Registry abgeleitet — NICHT separat pflegen.
@@ -53,10 +49,6 @@ const KEY_BY_SLUG = Object.fromEntries(Object.entries(SLUGS).map(([k, v]) => [v,
 
 // ROUTE_LABELS: key → Anzeige-/A11y-Name (von router.js für #routeAnnouncer genutzt).
 export const ROUTE_LABELS = Object.fromEntries(Object.entries(ROUTES).map(([k, r]) => [k, r.label]));
-
-// LAZY_ROUTE_KEYS: alle Keys mit `lazy:true`. router.js leitet seine Loader-Map
-// hieraus ab und verifiziert die Deckungsgleichheit (Drift-Schutz).
-export const LAZY_ROUTE_KEYS = Object.entries(ROUTES).filter(([, r]) => r.lazy).map(([k]) => k);
 
 export const ROUTE_EVENT = 'dialekto:route';
 

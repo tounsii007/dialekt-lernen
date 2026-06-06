@@ -118,9 +118,9 @@ for (const d of largestData) {
 }
 
 if (lazyMatches.length === 0) {
-  recs.push('Keine dynamic imports in router.js — Lazy-Loading sollte für große Views nachgerüstet werden');
+  console.log('  Alle Views werden eager geladen — kein Lazy-Loading (bewusst) ✓');
 } else {
-  console.log(`  Lazy-Loading ist aktiv für ${lazyMatches.length} Views ✓`);
+  console.log(`  Lazy-Loading ist aktiv für ${lazyMatches.length} Views`);
 }
 
 if (recs.length > 0) {

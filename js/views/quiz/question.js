@@ -73,7 +73,7 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
         class: 'btn btn-ghost fc-speak', style: { padding: '6px 14px' },
         'aria-label': `„${q.item.ausdruck || q.prompt}" anhören`,
         title: 'Anhören',
-        onClick: () => speak(q.item.ausdruck, q.item.dialektLang || 'de-DE')
+        onClick: () => speak(q.item.ausdruck, q.item.dialektLang || 'de-DE', { dialektId: q.item.dialektId })
       },
         el('span', { class: 'speak-icon' }, icon('speaker', { size: 18 })),
         el('span', { class: 'speak-wave', html: '<i></i><i></i><i></i><i></i><i></i>' }),

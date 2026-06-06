@@ -59,7 +59,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
         class: 'fc-big-speak',
-        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
+        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); },
         title: 'Anhören'
       },
         icon('speaker', { size: 48 }),
@@ -73,7 +73,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     // Auto-play beim Erscheinen (nur falls Karte noch im DOM — sonst spricht
     // sie nach schnellem Weiterklicken/Navigieren im Hintergrund)
-    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
+    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); }, 200);
   } else if (mode === 'cloze') {
     // Lückentext: Beispielsatz mit ausgeschnittenem Ausdruck
     const { before, hidden, after, found } = buildCloze(c.beispiel || '', c.ausdruck);
@@ -204,7 +204,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
   } else if (mode === 'diktat') {
     // Diktat: TTS spielt Beispielsatz (Fallback: Ausdruck), User tippt mit
     const dictText = (c.beispiel && c.beispiel.trim()) ? c.beispiel : c.ausdruck;
-    const playDict = () => { sfx.click(); speak(dictText, c.dialektLang || 'de-DE'); };
+    const playDict = () => { sfx.click(); speak(dictText, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); };
     front.appendChild(el('div', { class: 'fc-label' }, '✍ Diktat · ' + c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
@@ -273,7 +273,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
         class: 'fc-big-speak',
-        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
+        onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); },
         title: 'Anhören'
       },
         icon('speaker', { size: 48 }),
@@ -313,7 +313,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(hRow);
     front.appendChild(hVerdict.region);
     // Auto-play beim Erscheinen (nur falls Karte noch im DOM)
-    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE'); }, 200);
+    setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); }, 200);
     back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
@@ -353,7 +353,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             sfx.correct(); vibrate([10, 30, 10]);
             confettiBurst(btn, { count: 40 });
             // Bonus: nach Auswahl Dialekt-Audio abspielen
-            setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE'), 300);
+            setTimeout(() => speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }), 300);
             setTimeout(() => { rateAndPersist(c, 3, session, onRate); }, 1400);
           } else {
             sfx.wrong(); vibrate([12, 60, 12]);
@@ -575,7 +575,7 @@ function speakControl(c) {
   const canvas = el('canvas', { class: 'fc-speak-canvas' });
   const btn = el('button', {
     class: 'fc-btn fc-speak',
-    onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck, c.dialektLang || 'de-DE'); },
+    onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); },
     title: 'Anhören',
     'aria-label': `„${c.ausdruck}" anhören`,
   },

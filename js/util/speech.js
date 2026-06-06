@@ -15,6 +15,7 @@
 //     deutsche Varianten → die Wunschstimme gilt für alle Dialekte).
 
 import { state, persist } from '../store/state.js';
+import { getVoiceProfile, respellForTts, assignVoiceURI } from './voice-profiles.js';
 
 const DEFAULT_RATE = 0.92;
 const DEFAULT_PITCH = 1;
@@ -67,19 +68,22 @@ export function getSpeechSettings() {
     rate: clamp(s.rate, RATE_MIN, RATE_MAX, DEFAULT_RATE),
     pitch: clamp(s.pitch, PITCH_MIN, PITCH_MAX, DEFAULT_PITCH),
     voiceURI: typeof s.voiceURI === 'string' && s.voiceURI ? s.voiceURI : null,
+    // Eigene Stimme pro Dialekt — standardmäßig an (nur explizit false schaltet ab).
+    dialectVoices: s.dialectVoices !== false,
   };
 }
 
 // Patch der Einstellungen + Persistenz. Gibt die normalisierten Werte zurück.
 export function setSpeechSettings(patch = {}) {
   if (!state.speech || typeof state.speech !== 'object') {
-    state.speech = { rate: DEFAULT_RATE, pitch: DEFAULT_PITCH, voiceURI: null };
+    state.speech = { rate: DEFAULT_RATE, pitch: DEFAULT_PITCH, voiceURI: null, dialectVoices: true };
   }
   if ('rate' in patch) state.speech.rate = clamp(patch.rate, RATE_MIN, RATE_MAX, DEFAULT_RATE);
   if ('pitch' in patch) state.speech.pitch = clamp(patch.pitch, PITCH_MIN, PITCH_MAX, DEFAULT_PITCH);
   if ('voiceURI' in patch) {
     state.speech.voiceURI = (typeof patch.voiceURI === 'string' && patch.voiceURI) ? patch.voiceURI : null;
   }
+  if ('dialectVoices' in patch) state.speech.dialectVoices = !!patch.dialectVoices;
   try { persist(); } catch {}
   return getSpeechSettings();
 }
@@ -171,12 +175,31 @@ export function speak(text, lang = 'de-DE', opts = {}) {
     if (_fallbackTimer) { clearTimeout(_fallbackTimer); _fallbackTimer = null; }
     const settings = getSpeechSettings();
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(String(text));
-    utterance.lang = lang;
-    utterance.rate = clamp(opts.rate ?? settings.rate, RATE_MIN, RATE_MAX, DEFAULT_RATE);
-    utterance.pitch = clamp(opts.pitch ?? settings.pitch, PITCH_MIN, PITCH_MAX, DEFAULT_PITCH);
 
-    const voice = pickVoice(lang, opts.voiceURI ?? settings.voiceURI);
+    // Dialekt-Modus: eigenes Stimmprofil + lautnahes Respelling — aktiv, sobald
+    // eine dialektId übergeben wurde UND der globale Schalter eingeschaltet ist.
+    const useDialect = settings.dialectVoices && !!opts.dialektId;
+    const profile = useDialect ? getVoiceProfile(opts.dialektId) : null;
+
+    const spoken = useDialect ? respellForTts(text, opts.dialektId) : String(text);
+    const utterance = new SpeechSynthesisUtterance(String(spoken));
+    utterance.lang = lang;
+
+    // Profil-Tonhöhe/-Tempo sind Multiplikatoren auf die Basis (bzw. opts-Override,
+    // z. B. Slow-Mo) — so bleibt Langsam-Wiedergabe langsam und der Dialekt klingt
+    // trotzdem eigen, selbst wenn nur eine Stimme installiert ist.
+    const baseRate = opts.rate ?? settings.rate;
+    const basePitch = opts.pitch ?? settings.pitch;
+    utterance.rate = clamp(profile ? baseRate * profile.rate : baseRate, RATE_MIN, RATE_MAX, DEFAULT_RATE);
+    utterance.pitch = clamp(profile ? basePitch * profile.pitch : basePitch, PITCH_MIN, PITCH_MAX, DEFAULT_PITCH);
+
+    // Stimmenwahl: explizite Wunschstimme des Nutzers gewinnt immer; sonst im
+    // Dialekt-Modus die dem Dialekt fest zugewiesene Stimme; sonst Auto-Matching.
+    let preferredURI = opts.voiceURI ?? settings.voiceURI;
+    if (useDialect && !preferredURI) {
+      preferredURI = assignVoiceURI(opts.dialektId, lang, cachedVoices.length ? cachedVoices : loadVoices());
+    }
+    const voice = pickVoice(lang, preferredURI);
     if (voice) {
       utterance.voice = voice;
       // utterance.lang wird vom Browser auf die Voice-Sprache normalisiert.
@@ -200,7 +223,7 @@ export function speak(text, lang = 'de-DE', opts = {}) {
     // Hartes Timeout-Fallback, falls onend nie kommt. Langsameres Tempo
     // verlängert die Ausgabe → Timeout ans Tempo koppeln. Wird in finish()/
     // beim nächsten speak() gecleart.
-    const ms = Math.max(2500, (String(text).length * 90) / Math.max(0.5, utterance.rate));
+    const ms = Math.max(2500, (String(spoken).length * 90) / Math.max(0.5, utterance.rate));
     _fallbackTimer = setTimeout(() => { _fallbackTimer = null; setState(false); }, ms);
     return true;
   } catch {

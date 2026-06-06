@@ -1,11 +1,10 @@
 // Dialekto · Router
-// Lazy-loads schwere Views (lernen, quiz, vergleich, share) per dynamic import.
-// Eager bleiben Home / Entdecken / Detail / Favoriten (häufig + leichtgewichtig).
+// Alle Views werden statisch (eager) importiert und direkt gerendert — KEIN
+// Lazy-Loading. Jede Ansicht ist sofort vollständig verfügbar.
 
 import { $, $$, parseHash, initLinkInterception, ROUTE_EVENT } from './util.js';
-// Routen-Labels + Liste der Lazy-Keys stammen aus der Single-Source-Registry in
-// route.js, damit eine neue Route primär nur dort eingetragen werden muss.
-import { ROUTE_LABELS, LAZY_ROUTE_KEYS } from './util/route.js';
+// Routen-Labels stammen aus der Single-Source-Registry in route.js.
+import { ROUTE_LABELS } from './util/route.js';
 import {
   observeReveals, observeCounters,
   initTilt, initMagnetic, initPointerParallax, initParallax
@@ -15,55 +14,32 @@ import { attachPullToRefresh } from './util/pull-to-refresh.js';
 import { maybeShowTip } from './util/progressive-disclosure.js';
 import { state } from './store/state.js';
 
-// Eager: Routes, die direkt verfügbar sein müssen.
+// Alle Views statisch importiert (eager) — kein dynamic import(), kein Skeleton.
 import { renderHome } from './views/home.js';
 import { renderEntdecken } from './views/entdecken.js';
 import { renderDialektDetail } from './views/dialektDetail.js';
+import { renderFavoriten } from './views/favoriten.js';
+import { renderKarte } from './views/karte.js';
+import { renderStatistiken } from './views/statistiken.js';
+import { renderLernen, resetLernSession } from './views/lernen.js';
+import { renderQuiz, resetQuizSession } from './views/quiz.js';
+import { renderVergleich } from './views/vergleich.js';
+import { renderDecks } from './views/decks.js';
+import { renderShare } from './views/share.js';
+import { renderSpiele } from './views/spiele.js';
+import { renderSammlung } from './views/sammlung.js';
+import { renderIdiome } from './views/idiome.js';
+import { renderLektionen } from './views/lektionen.js';
+import { renderLiga } from './views/liga.js';
+import { renderLernpfad } from './views/lernpfad.js';
+import { renderShadowing } from './views/shadowing.js';
+import { renderKlangpaare } from './views/klangpaare.js';
 
 const DEFAULT_ROUTE = 'home';
 
 // Letzte gerenderte Route — um Fokus-Handover nur bei echtem View-Wechsel
 // (nicht bei In-View-Re-Renders/Pull-to-Refresh derselben Route) auszulösen.
 let lastRenderedRoute = null;
-
-// Lazy-Loader: die import()-Thunks bleiben hier (kolokalisiert mit loadLazy +
-// Idle-Preload). WELCHE Routen lazy sind, bestimmt allein die Registry in
-// route.js (LAZY_ROUTE_KEYS); der Guard darunter erzwingt, dass diese Map exakt
-// dieselben Keys abdeckt — fehlt/überzählt ein Eintrag, schlägt der Init laut fehl.
-const LAZY_LOADERS = {
-  favoriten:   () => import('./views/favoriten.js'),
-  karte:       () => import('./views/karte.js'),
-  statistiken: () => import('./views/statistiken.js'),
-  lernen:      () => import('./views/lernen.js'),
-  quiz:        () => import('./views/quiz.js'),
-  vergleich:   () => import('./views/vergleich.js'),
-  decks:       () => import('./views/decks.js'),
-  share:       () => import('./views/share.js'),
-  spiele:      () => import('./views/spiele.js'),
-  sammlung:    () => import('./views/sammlung.js'),
-  idiome:      () => import('./views/idiome.js'),
-  lektionen:   () => import('./views/lektionen.js'),
-  liga:        () => import('./views/liga.js'),
-  lernpfad:    () => import('./views/lernpfad.js'),
-  shadowing:   () => import('./views/shadowing.js'),
-  klangpaare:  () => import('./views/klangpaare.js'),
-};
-
-// Drift-Schutz: Loader-Keys MÜSSEN deckungsgleich mit der Registry sein. Eine neue
-// `lazy:true`-Route ohne Loader (oder ein verwaister Loader) wird so sofort sichtbar.
-{
-  const loaderKeys = Object.keys(LAZY_LOADERS);
-  const missing = LAZY_ROUTE_KEYS.filter((k) => !(k in LAZY_LOADERS));
-  const extra = loaderKeys.filter((k) => !LAZY_ROUTE_KEYS.includes(k));
-  if (missing.length || extra.length) {
-    console.error('[Dialekto] Routen-Registry/Loader-Drift', { missing, extra });
-  }
-}
-
-const lazyCache = {};
-
-let lernenModule = null;
-let quizModule = null;
 
 function updateActiveNav(route) {
   const active = route === '' ? DEFAULT_ROUTE : route;
@@ -77,143 +53,37 @@ function updateActiveNav(route) {
   }
 }
 
-function showSkeleton(app, kind = 'grid') {
-  app.innerHTML = '';
-  const wrap = document.createElement('div');
-  wrap.className = 'view skeleton-view';
-  if (kind === 'flashcard') {
-    wrap.innerHTML = `
-      <div class="skeleton-line tall" style="width:50%;margin-bottom:24px"></div>
-      <div class="skeleton-card" style="max-width:540px;margin:0 auto;height:380px"></div>
-    `;
-  } else if (kind === 'quiz') {
-    wrap.innerHTML = `
-      <div class="skeleton-line tall" style="width:60%;margin:0 auto 24px;max-width:520px"></div>
-      <div class="skeleton-card" style="max-width:640px;margin:0 auto;height:240px"></div>
-    `;
-  } else {
-    wrap.innerHTML = `
-      <div class="skeleton-line tall" style="width:40%;margin-bottom:24px"></div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px">
-        ${Array.from({length: 6}).map(() => `<div class="skeleton-card"></div>`).join('')}
-      </div>
-    `;
-  }
-  app.appendChild(wrap);
-}
-
-async function loadLazy(route) {
-  if (lazyCache[route]) return lazyCache[route];
-  if (!LAZY_LOADERS[route]) return null;
-  lazyCache[route] = await LAZY_LOADERS[route]();
-  return lazyCache[route];
-}
-
-async function renderRoute(app, route, segs, params) {
+// Synchroner Dispatch auf die passende View-Render-Funktion. Alle Views sind
+// statisch importiert, daher kein await/Skeleton nötig.
+function renderRoute(app, route, segs, params) {
   switch (route) {
     case '':
-    case 'home':
-      return renderHome(app, params);
-    case 'entdecken':
-      return renderEntdecken(app);
-    case 'dialekt':
-      return renderDialektDetail(app, segs[1]);
-    case 'favoriten': {
-      showSkeleton(app, 'grid');
-      const m = await loadLazy('favoriten');
-      if (!m) return;
-      return m.renderFavoriten(app);
-    }
-    case 'karte': {
-      showSkeleton(app, 'grid');
-      const m = await loadLazy('karte');
-      if (!m) return;
-      return m.renderKarte(app);
-    }
-    case 'statistiken': {
-      showSkeleton(app, 'grid');
-      const m = await loadLazy('statistiken');
-      if (!m) return;
-      return m.renderStatistiken(app);
-    }
-    case 'lernen': {
-      if (!lernenModule) {
-        showSkeleton(app, 'flashcard');
-        lernenModule = await loadLazy('lernen');
-      }
-      return lernenModule.renderLernen(app, params);
-    }
-    case 'quiz': {
-      if (!quizModule) {
-        showSkeleton(app, 'quiz');
-        quizModule = await loadLazy('quiz');
-      }
-      return quizModule.renderQuiz(app);
-    }
-    case 'vergleich': {
-      const m = await loadLazy('vergleich');
-      if (!m) return;
-      showSkeleton(app, 'grid');
-      return m.renderVergleich(app);
-    }
-    case 'share': {
-      const m = await loadLazy('share');
-      if (!m) return;
-      return m.renderShare(app, segs[1]);
-    }
-    case 'decks': {
-      const m = await loadLazy('decks');
-      if (!m) return;
-      return m.renderDecks(app);
-    }
-    case 'spiele': {
-      const m = await loadLazy('spiele');
-      if (!m) return;
-      return m.renderSpiele(app);
-    }
-    case 'sammlung': {
-      const m = await loadLazy('sammlung');
-      if (!m) return;
-      return m.renderSammlung(app);
-    }
-    case 'idiome': {
-      const m = await loadLazy('idiome');
-      if (!m) return;
-      return m.renderIdiome(app, params);
-    }
-    case 'lektionen': {
-      const m = await loadLazy('lektionen');
-      if (!m) return;
-      return m.renderLektionen(app, params);
-    }
-    case 'liga': {
-      const m = await loadLazy('liga');
-      if (!m) return;
-      return m.renderLiga(app);
-    }
-    case 'lernpfad': {
-      const m = await loadLazy('lernpfad');
-      if (!m) return;
-      return m.renderLernpfad(app);
-    }
-    case 'shadowing': {
-      const m = await loadLazy('shadowing');
-      if (!m) return;
-      return m.renderShadowing(app, params);
-    }
-    case 'klangpaare': {
-      const m = await loadLazy('klangpaare');
-      if (!m) return;
-      return m.renderKlangpaare(app, params);
-    }
-    default:
-      return renderHome(app);
+    case 'home':        return renderHome(app, params);
+    case 'entdecken':   return renderEntdecken(app);
+    case 'dialekt':     return renderDialektDetail(app, segs[1]);
+    case 'favoriten':   return renderFavoriten(app);
+    case 'karte':       return renderKarte(app);
+    case 'statistiken': return renderStatistiken(app);
+    case 'lernen':      return renderLernen(app, params);
+    case 'quiz':        return renderQuiz(app);
+    case 'vergleich':   return renderVergleich(app);
+    case 'share':       return renderShare(app, segs[1]);
+    case 'decks':       return renderDecks(app);
+    case 'spiele':      return renderSpiele(app);
+    case 'sammlung':    return renderSammlung(app);
+    case 'idiome':      return renderIdiome(app, params);
+    case 'lektionen':   return renderLektionen(app, params);
+    case 'liga':        return renderLiga(app);
+    case 'lernpfad':    return renderLernpfad(app);
+    case 'shadowing':   return renderShadowing(app, params);
+    case 'klangpaare':  return renderKlangpaare(app, params);
+    default:            return renderHome(app);
   }
 }
 
-async function doRender(app, route, segs, params, focusContent = false) {
+function doRender(app, route, segs, params, focusContent = false) {
   app.setAttribute('aria-busy', 'true');
-  await renderRoute(app, route, segs, params);
+  renderRoute(app, route, segs, params);
   observeReveals(app);
   observeCounters(app);
   initTilt(app);
@@ -246,7 +116,7 @@ async function doRender(app, route, segs, params, focusContent = false) {
   }
 }
 
-export async function router() {
+export function router() {
   const app = $('#app');
   if (!app) return;
 
@@ -255,8 +125,8 @@ export async function router() {
 
   updateActiveNav(route);
 
-  if (route !== 'lernen' && lernenModule?.resetLernSession) lernenModule.resetLernSession();
-  if (route !== 'quiz'   && quizModule?.resetQuizSession)   quizModule.resetQuizSession();
+  if (route !== 'lernen') resetLernSession();
+  if (route !== 'quiz')   resetQuizSession();
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -292,9 +162,4 @@ export function initRouter() {
   // Pull-to-Refresh (Mobile): am Seitenanfang nach unten ziehen lädt die
   // aktuelle Ansicht neu.
   attachPullToRefresh({ onRefresh: () => router() });
-  // Vorladen, sobald die UI idle ist — schnelle Navigation ohne Skeleton-Blitz.
-  const idle = window.requestIdleCallback || ((cb) => setTimeout(cb, 500));
-  idle(() => {
-    Object.keys(LAZY_LOADERS).forEach((k) => { lazyCache[k] || LAZY_LOADERS[k]().then((m) => { lazyCache[k] = m; if (k === 'lernen') lernenModule = m; else if (k === 'quiz') quizModule = m; }); });
-  });
 }

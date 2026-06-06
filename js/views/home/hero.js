@@ -74,7 +74,6 @@ function rotateText(host, items, renderItem, intervalMs) {
   host.addEventListener('mouseleave', start);
 }
 
-const HERO_PREVIEW_DEPTHS = ['1.4', '1.0', '1.7'];
 const HERO_FALLBACK_SAMPLES = [
   { dialekt: 'Hessisch',    farbe: '#e63946', ausdruck: 'Ei guude!',  meaning: 'Hallo!' },
   { dialekt: 'Ruhrdeutsch', farbe: '#e36414', ausdruck: 'Glück auf!', meaning: 'Bergmannsgruß' },
@@ -120,6 +119,7 @@ function applySample(parts, s) {
   parts.tag.style.color = farbe;
   parts.expr.textContent = s.ausdruck;
   parts.meaning.textContent = s.meaning;
+  if (parts.card) parts.card.style.setProperty('--card-accent', farbe);
 }
 
 // Vorschaukarten: 3 Karten, die fortlaufend durch den 500+-Pool rotieren
@@ -128,15 +128,18 @@ function applySample(parts, s) {
 function renderHeroPreview() {
   const pool = buildPreviewPool();
   const initial = pickDistinct(pool, 3);
-  const cards = initial.map((s, i) => {
+  const cards = initial.map((s) => {
     const farbe = HERO_CARD_FARBE(s);
     const tag = el('span', { class: 'dialect-tag', style: { background: farbe + '22', color: farbe } }, s.dialekt);
     const expr = el('div', { class: 'expr' }, s.ausdruck);
     const meaning = el('div', { class: 'meaning' }, s.meaning);
-    const card = el('div', { class: 'preview-card', dataset: { ppDepth: HERO_PREVIEW_DEPTHS[i] } }, tag, expr, meaning);
+    // Innerer Wrapper trägt die Glas-Optik + das dezente Schweben.
+    const inner = el('div', { class: 'preview-card-inner' }, tag, expr, meaning);
+    const card = el('div', { class: 'preview-card' }, inner);
+    card.style.setProperty('--card-accent', farbe);
     return { card, tag, expr, meaning };
   });
-  const wrap = el('div', { class: 'hero-preview', dataset: { pointerParallax: '' } }, ...cards.map(c => c.card));
+  const wrap = el('div', { class: 'hero-preview' }, ...cards.map(c => c.card));
 
   const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduce && pool.length > 3) {

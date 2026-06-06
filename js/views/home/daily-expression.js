@@ -31,7 +31,7 @@ export function renderDailyExpression(focus = false) {
           el('div', { class: 'daily-actions' },
             el('button', {
               class: 'daily-action', title: 'Anhören',
-              onClick: () => speak(expr.ausdruck, expr.dialektLang || 'de-DE')
+              onClick: () => speak(expr.ausdruck, expr.dialektLang || 'de-DE', { dialektId: expr.dialektId })
             }, el('span', { html: '🔊' })),
             el('button', {
               class: 'daily-action', title: 'Zum Dialekt',

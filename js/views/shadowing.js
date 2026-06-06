@@ -177,8 +177,8 @@ function startSession(host, source, count) {
     );
 
     const lang = c.dialektLang || 'de-DE';
-    const playNormal = () => { sfx.click(); speak(c.ausdruck, lang); };
-    const playSlow = () => { sfx.click(); speak(c.ausdruck, lang, { rate: 0.55 }); };
+    const playNormal = () => { sfx.click(); speak(c.ausdruck, lang, { dialektId: c.dialektId }); };
+    const playSlow = () => { sfx.click(); speak(c.ausdruck, lang, { rate: 0.55, dialektId: c.dialektId }); };
 
     const ipaText = formatIpa(c.ausdruck, c.dialektId).replace(/^\/|\/$/g, '');
 
@@ -276,7 +276,7 @@ function startSession(host, source, count) {
       'ⓘ Aussprache-Bewertung nutzt die Browser-Spracherkennung (ggf. online).'));
 
     // Audio automatisch starten — Shadowing beginnt mit Hören.
-    setTimeout(() => speak(c.ausdruck, lang), 280);
+    setTimeout(() => speak(c.ausdruck, lang, { dialektId: c.dialektId }), 280);
   }
 
   renderCard();

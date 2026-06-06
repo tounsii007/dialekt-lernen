@@ -93,7 +93,7 @@ export function renderVergleich(root) {
           el('button', {
             class: 'compare-cell-speak',
             title: 'Anhören',
-            onClick: (e) => { e.stopPropagation(); sfx.click(); speak(it.ausdruck, it.dialektLang || 'de-DE'); }
+            onClick: (e) => { e.stopPropagation(); sfx.click(); speak(it.ausdruck, it.dialektLang || 'de-DE', { dialektId: it.dialektId }); }
           }, icon('speaker', { size: 14 }))
         ))
       )

@@ -82,7 +82,7 @@ export function renderExpressionCard(a, dialekt) {
     class: 'expr-action',
     title: 'Anhören',
     'aria-label': `„${a.ausdruck}" anhören`,
-    onClick: (e) => { e.stopPropagation(); speak(a.ausdruck, dialekt.lang || 'de-DE'); }
+    onClick: (e) => { e.stopPropagation(); speak(a.ausdruck, dialekt.lang || 'de-DE', { dialektId: dialekt.id }); }
   }, el('span', { html: '🔊' }));
 
   const note = getNote(dialekt.id, a.id);

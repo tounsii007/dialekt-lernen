@@ -10,7 +10,7 @@ import { findRelatedExpressions } from '../util/related-expressions.js';
 import { extractEtymology, hasEtymology } from '../util/etymology.js';
 import { formatIpa, splitSyllables } from '../util/ipa.js';
 import { sfx } from '../util/sounds.js';
-import { confettiBurst } from '../util/motion.js';
+import { confettiBurst, observeReveals } from '../util/motion.js';
 import { isRecordingSupported, startRecording } from '../util/recorder.js';
 import { syllableEnvelope, scorePronunciation, normalizeEnvelope } from '../util/audio-analysis.js';
 import { isPronunciationSupported, startListening, scoreBestAlternative } from '../util/pronunciation.js';
@@ -138,7 +138,9 @@ export function renderDialektDetail(root, dialektId) {
           const ph = e.target;
           obs.unobserve(ph);
           const sec = renderRelatedSection(ph._expr, d);
-          if (sec) ph.replaceWith(sec); else ph.remove();
+          // is-revealed sicherstellen: diese Sektion entsteht NACH dem
+          // observeReveals() des Routers, würde sonst dauerhaft opacity:0 bleiben.
+          if (sec) { ph.replaceWith(sec); observeReveals(sec); } else ph.remove();
         }
       }, { rootMargin: '300px' });
     }
@@ -365,7 +367,7 @@ function renderPronunciationSection(a, dialekt) {
       sylRow.appendChild(el('button', {
         class: 'pron-syl',
         title: `„${syl}" langsam anhören`,
-        onClick: () => { sfx.click(); speak(syl, lang, { rate: 0.7 }); }
+        onClick: () => { sfx.click(); speak(syl, lang, { rate: 0.7, dialektId: dialekt.id }); }
       }, syl));
     });
     body.appendChild(sylRow);
@@ -374,10 +376,10 @@ function renderPronunciationSection(a, dialekt) {
   // Wiedergabe-Buttons: normal + Slow-Mo.
   body.appendChild(el('div', { class: 'pron-buttons' },
     el('button', { class: 'btn btn-secondary pron-play',
-      onClick: () => { sfx.click(); speak(a.ausdruck, lang); } }, '▶ Anhören'),
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { dialektId: dialekt.id }); } }, '▶ Anhören'),
     el('button', { class: 'btn btn-ghost pron-play',
       title: 'Verlangsamt — Silbe für Silbe nachsprechen',
-      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5 }); } }, '🐢 Langsam')
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5, dialektId: dialekt.id }); } }, '🐢 Langsam')
   ));
 
   // Aussprache-Übung (Mikrofon) erst beim Aufklappen bauen — spart bei großen

@@ -917,71 +917,135 @@ a { color: inherit; text-decoration: none; }
   white-space: nowrap;         /* „Tage Streak" bricht nicht mehr um */
 }
 
-/* Hero floating card preview */
+/* Hero-Vorschau — drei klar getrennte Karten (Flexbox-Flow, KEIN Überlappen) */
 .hero-preview {
-  position: relative;
-  height: 380px;
-  perspective: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  height: 100%;
+  min-height: 360px;
 }
 .preview-card {
-  position: absolute;
-  /* Rechtsbündig auf gemeinsamer Achse + fester vertikaler Abstand → identische
-     Ausrichtung auf jedem Screen (kein %-Versatz, der mit der Breite wandert). */
-  right: 0;
-  left: auto;
-  width: min(300px, 86%);
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: var(--r-lg);
-  padding: var(--sp-5);
-  box-shadow: var(--shadow-lg);
+  position: relative;
+  width: 100%;
+  /* KEINE opacity-Eingangsanimation: eine bei opacity 0 startende Animation
+     friert im Hintergrund-Tab unsichtbar ein (fill-mode hilft nicht). Karten
+     sind daher immer sofort sichtbar; Leben kommt vom Schweben/Hover/Sheen. */
+}
+
+/* Sichtbare Karte: solides, gut lesbares „Glas" mit farbigem Akzent + Tiefe.
+   Schwebt dezent über die EIGENE translate-Property → kein Konflikt mit dem
+   Hover-Lift (transform: scale). */
+.preview-card-inner {
+  position: relative;
+  overflow: hidden;                               /* hält den Sheen in Form */
+  padding: 16px 20px 17px;
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg,
+      color-mix(in srgb, var(--card-accent, var(--brand)) 9%, var(--bg-elev)),
+      var(--bg-elev) 72%);
+  border: 1px solid color-mix(in srgb, var(--card-accent, var(--brand)) 24%, var(--border));
+  box-shadow:
+    0 12px 28px -12px color-mix(in srgb, var(--card-accent, #2a2a55) 40%, transparent),
+    0 2px 8px rgba(20, 20, 60, .06);
+  /* Synchrones, dezentes Schweben → die Abstände zwischen den Karten bleiben
+     konstant (aufgeräumt), die Gruppe „atmet" als Einheit. */
   animation: floaty 6s var(--ease) infinite;
+  transition: transform .35s var(--ease-spring), box-shadow .35s var(--ease), border-color .35s var(--ease);
+  will-change: translate;
 }
-.preview-card:nth-child(1) {
-  top: 0;
-  transform: rotate(3deg);
+
+/* Farbiger Akzent-Steg über die volle Höhe am linken Rand */
+.preview-card-inner::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 4px;
+  background: var(--card-accent, var(--brand));
 }
-.preview-card:nth-child(2) {
-  top: 130px;
-  transform: rotate(-2deg);
-  animation-delay: -2s;
+
+/* Hover-Lift + farbiger Glow (scale via transform; kombiniert konfliktfrei mit
+   dem translate-Schweben). */
+.preview-card:hover { z-index: 5; }
+.preview-card:hover .preview-card-inner {
+  transform: scale(1.025);
+  border-color: color-mix(in srgb, var(--card-accent, var(--brand)) 50%, var(--border));
+  box-shadow:
+    0 20px 42px -12px color-mix(in srgb, var(--card-accent, #2a2a55) 55%, transparent),
+    0 4px 12px rgba(20, 20, 60, .10);
 }
-.preview-card:nth-child(3) {
-  top: 260px;
-  transform: rotate(2deg);
-  animation-delay: -4s;
+
+/* Glanz-Sweep beim Hover — Lichtstreif wandert diagonal über die Karte
+   (overflow:hidden auf .preview-card-inner hält ihn in Form). */
+.preview-card-inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 35%, hsl(0 0% 100% / .35) 50%, transparent 65%);
+  background-size: 250% 100%;
+  background-position: 160% 0;
+  pointer-events: none;
+  opacity: 0;
 }
-/* Sanfter Fade beim Durchrotieren der Karten-Inhalte (siehe hero.js). */
-.preview-card.is-swapping { opacity: .28; transition: opacity .28s var(--ease); }
-.preview-card.is-swapped { animation: previewSwapIn .46s var(--ease-spring); }
-@keyframes previewSwapIn {
-  from { opacity: .28; transform: translateY(6px) rotate(var(--card-rot, 0deg)); }
-  to   { opacity: 1; }
+.preview-card:hover .preview-card-inner::after {
+  opacity: 1;
+  animation: cardSheen .8s var(--ease);
 }
+@keyframes cardSheen {
+  from { background-position: 160% 0; }
+  to   { background-position: -60% 0; }
+}
+
 .preview-card .dialect-tag {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 3px 11px;
   border-radius: var(--r-pill);
-  font-size: 0.7rem;
-  font-weight: 600;
-  margin-bottom: var(--sp-2);
+  font-size: 0.66rem;
+  font-weight: 700;
+  margin-bottom: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
 }
 .preview-card .expr {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  line-height: 1.1;
+  margin-bottom: 3px;
 }
 .preview-card .meaning {
   font-size: 0.85rem;
   color: var(--text-muted);
 }
 
+/* Inhalts-Wechsel beim Durchrotieren (siehe hero.js): nur der Inhalt blendet/
+   gleitet, nicht die Box. */
+.preview-card.is-swapping .preview-card-inner > * {
+  opacity: .12;
+  filter: blur(2px);
+  transition: opacity .26s var(--ease), filter .26s var(--ease);
+}
+.preview-card.is-swapped .preview-card-inner > * {
+  animation: previewContentIn .5s var(--ease-spring);
+}
+
+@keyframes previewContentIn {
+  from { opacity: .12; transform: translateY(7px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 @keyframes floaty {
-  0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
-  50% { transform: translateY(-12px) rotate(var(--rot, 0deg)); }
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preview-card,
+  .preview-card-inner,
+  .preview-card-inner::after,
+  .preview-card.is-swapped .preview-card-inner > * { animation: none; }
+  .preview-card-inner::after { opacity: 0; }
 }
 
 @media (max-width: 880px) {
@@ -2565,16 +2629,8 @@ a { color: inherit; text-decoration: none; }
 [data-pointer-parallax]:hover [data-pp-depth] {
   transition: transform .12s var(--ease);
 }
-[data-pp-depth].preview-card {
-  animation-play-state: paused;
-  transform:
-    translate3d(var(--pp-x), var(--pp-y), 0)
-    rotateX(var(--pp-rx)) rotateY(var(--pp-ry))
-    rotate(var(--card-rot, 0deg));
-}
-.preview-card:nth-child(1) { --card-rot: 3deg; }
-.preview-card:nth-child(2) { --card-rot: -2deg; }
-.preview-card:nth-child(3) { --card-rot: 2deg; }
+/* (Hero-Vorschaukarten nutzen keinen Pointer-Parallax mehr — siehe
+   .hero-preview oben: klar getrennter Flexbox-Stapel.) */
 
 /* Scroll parallax — generic */
 [data-parallax] {
@@ -9532,6 +9588,22 @@ img, svg, video {
 }
 .speech-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .speech-status { min-height: 1.1em; }
+
+/* Eigene Stimme pro Dialekt — Schalter + Vergleichs-Demo */
+.speech-dialect-field {
+  gap: 10px; padding-bottom: 16px;
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 12%, transparent);
+}
+.speech-toggle { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; }
+.speech-toggle-input {
+  flex: none; width: 20px; height: 20px; margin-top: 2px;
+  accent-color: var(--brand); cursor: pointer;
+}
+.speech-toggle-text { display: flex; flex-direction: column; gap: 2px; }
+.speech-toggle-sub { font-size: .82rem; color: var(--text-soft, var(--text-muted)); }
+.speech-demo-hint { font-size: .8rem; color: var(--text-soft, var(--text-muted)); }
+.speech-demo { display: flex; flex-wrap: wrap; gap: 8px; }
+.speech-demo-btn { padding: 6px 12px; font-size: .85rem; }
 
 /* ============================================================
  * Statistiken: Wave-2 Sektionen (Vergessenskurve, Tageszeit-

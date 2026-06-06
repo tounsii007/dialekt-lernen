@@ -127,9 +127,10 @@ function withDefaults(loaded) {
     // Sprachausgabe (Text-to-Speech): Tempo, Tonhöhe und bevorzugte Stimme.
     // voiceURI = stabile Voice-Kennung der Web-Speech-API (null = automatisch
     // passend zum Dialekt). rate/pitch werden beim Setzen geklemmt.
+    // dialectVoices = eigenes Stimmprofil + Aussprache pro Dialekt (Default an).
     speech:       loaded.speech && typeof loaded.speech === 'object'
-                    ? { rate: 0.92, pitch: 1, voiceURI: null, ...loaded.speech }
-                    : { rate: 0.92, pitch: 1, voiceURI: null },
+                    ? { rate: 0.92, pitch: 1, voiceURI: null, dialectVoices: true, ...loaded.speech }
+                    : { rate: 0.92, pitch: 1, voiceURI: null, dialectVoices: true },
     settings:     loaded.settings && typeof loaded.settings === 'object' && !Array.isArray(loaded.settings)
                     ? loaded.settings : {}
   };
