@@ -900,6 +900,15 @@ a { color: inherit; text-decoration: none; }
   background-clip: text;
   color: transparent;
 }
+/* Null-Wert (z.B. „0 gelernt") nicht knallig hervorheben — beruhigt den
+   Einstieg für frische Nutzer, statt eine magentafarbene 0 anzuschreien. */
+.hero-stat-num.is-zero {
+  background: none;
+  -webkit-text-fill-color: var(--text-muted);
+  color: var(--text-muted);
+  opacity: .8;
+  font-weight: 600;
+}
 .hero-stat-label {
   font-size: clamp(0.62rem, 0.5rem + 0.4vw, 0.8rem);
   color: var(--text-muted);
@@ -999,7 +1008,9 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 .section-head .lede {
-  color: var(--text-muted);
+  /* text-soft statt text-muted: bessere Lesbarkeit über dem bewegten
+     Verlaufs-Hintergrund (text-muted wurde über hellen Blobs grenzwertig). */
+  color: var(--text-soft);
   font-size: 0.95rem;
   margin-top: 4px;
 }
@@ -3369,209 +3380,12 @@ input[type="search"]:not(#searchInput) {
 }
 
 /* ============================================================ */
-/* Iteration 6 — Onboarding tour & loading states                 */
+/* onboardIconPop — Keyframe für .driver-popover.dialekto-tour    */
+/* .tour-ico (driver.js-Tour). Die alte Vanilla-Onboarding-Tour   */
+/* wurde entfernt; nur dieses Keyframe wird noch genutzt.         */
 /* ============================================================ */
-
-.onboard-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: var(--z-modal);
-  outline: none;
-  animation: fadeIn .3s var(--ease);
-}
-@keyframes fadeIn { from { opacity: 0 } to { opacity: 1 } }
-
-.onboard-mask {
-  position: absolute;
-  inset: 0;
-  background: rgba(8, 8, 24, 0.62);
-  backdrop-filter: blur(var(--blur-4));
-  -webkit-backdrop-filter: blur(var(--blur-4));
-}
-
-.onboard-hole {
-  position: absolute;
-  border-radius: 18px;
-  box-shadow:
-    0 0 0 9999px rgba(8, 8, 24, 0.62),
-    inset 0 0 0 2px rgba(255, 255, 255, 0.7),
-    0 0 60px 4px color-mix(in oklab, var(--brand) 60%, transparent);
-  animation: holePulse 2s var(--ease) infinite;
-  transition: all .35s var(--ease-spring);
-  pointer-events: none;
-}
-@keyframes holePulse {
-  0%, 100% { box-shadow: 0 0 0 9999px rgba(8, 8, 24, 0.62), inset 0 0 0 2px rgba(255,255,255,.7), 0 0 60px 4px color-mix(in oklab, var(--brand) 60%, transparent); }
-  50%      { box-shadow: 0 0 0 9999px rgba(8, 8, 24, 0.62), inset 0 0 0 2px rgba(255,255,255,.9), 0 0 90px 8px color-mix(in oklab, var(--pink) 60%, transparent); }
-}
-
-.onboard-target {
-  position: relative;
-  z-index: var(--z-modal-content);
-}
-
-.onboard-card {
-  position: absolute;
-  top: 0; left: 0;
-  width: 360px;
-  max-width: calc(100vw - 32px);
-  padding: var(--sp-5);
-  border-radius: 22px;
-  background: color-mix(in oklab, var(--bg-elev) 95%, transparent);
-  border: 1px solid color-mix(in oklab, var(--border) 80%, transparent);
-  backdrop-filter: blur(var(--blur-20)) saturate(160%);
-  -webkit-backdrop-filter: blur(var(--blur-20)) saturate(160%);
-  box-shadow:
-    var(--shadow-lg),
-    0 30px 60px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  color: var(--text);
-  transform: translate(0, 0);
-  transition: transform .45s var(--ease-spring);
-  animation: cardEnter .5s var(--ease-spring);
-}
-@keyframes cardEnter {
-  from { opacity: 0; transform: translate(0, 12px) scale(.94); }
-}
-
-.onboard-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  border: 1px solid color-mix(in oklab, var(--border) 70%, transparent);
-  background: color-mix(in oklab, var(--bg-soft) 70%, transparent);
-  color: var(--text-muted);
-  font-size: 1.15rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: all var(--t-fast) var(--ease);
-}
-.onboard-close:hover {
-  background: color-mix(in oklab, var(--pink) 18%, var(--bg-soft));
-  color: var(--text);
-  border-color: color-mix(in oklab, var(--pink) 45%, transparent);
-  transform: rotate(90deg);
-}
-
-.onboard-head {
-  display: flex;
-  align-items: center;
-  gap: var(--sp-3);
-  margin-bottom: var(--sp-3);
-  padding-right: 34px;
-}
-.onboard-icon {
-  flex: none;
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  font-size: 1.3rem;
-  border-radius: 13px;
-  background: linear-gradient(135deg,
-    color-mix(in oklab, var(--brand) 22%, transparent),
-    color-mix(in oklab, var(--pink) 22%, transparent));
-  border: 1px solid color-mix(in oklab, var(--brand) 30%, transparent);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  animation: onboardIconPop .5s var(--ease-spring) backwards;
-}
 @keyframes onboardIconPop {
   from { opacity: 0; transform: scale(.5) rotate(-12deg); }
-}
-.onboard-step {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.onboard-progress {
-  display: flex;
-  gap: 6px;
-  margin-bottom: var(--sp-3);
-}
-.onboard-pip {
-  flex: 1;
-  height: 4px;
-  border-radius: var(--r-pill);
-  background: var(--bg-soft);
-  transition: background .35s var(--ease);
-}
-.onboard-pip.done {
-  background: linear-gradient(90deg, var(--brand), var(--pink));
-}
-.onboard-pip.active {
-  background: linear-gradient(90deg, var(--brand), var(--pink));
-  position: relative;
-  overflow: hidden;
-}
-.onboard-pip.active::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent);
-  animation: pipShimmer 1.4s var(--ease) infinite;
-}
-@keyframes pipShimmer {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(100%); }
-}
-
-.onboard-title {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 0 var(--sp-2);
-  background: linear-gradient(135deg, var(--brand), var(--pink));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.onboard-body {
-  margin: 0 0 var(--sp-4);
-  color: var(--text-soft);
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-.onboard-actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--sp-2);
-  flex-wrap: wrap;
-}
-.onboard-nav {
-  display: flex;
-  gap: var(--sp-2);
-}
-.onboard-btn {
-  padding: 8px 14px;
-  border-radius: var(--r-pill);
-  border: 1px solid var(--border);
-  background: var(--bg-soft);
-  color: var(--text);
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-  transition: all var(--t-fast) var(--ease);
-}
-.onboard-btn:hover { transform: translateY(-1px); border-color: var(--brand); }
-.onboard-btn.skip { background: transparent; color: var(--text-muted); }
-.onboard-btn.next {
-  background: linear-gradient(135deg, var(--brand), var(--pink));
-  color: white;
-  border-color: transparent;
-  box-shadow: 0 6px 18px color-mix(in oklab, var(--brand) 40%, transparent);
-}
-.onboard-btn.next:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px color-mix(in oklab, var(--brand) 50%, transparent);
 }
 
 /* ============================================================ */
@@ -3951,17 +3765,8 @@ input[type="search"]:not(#searchInput) {
   margin-right: auto;
 }
 
-/* Tour pulse */
 .searchPill {
   position: relative;
-}
-.onboard-target.searchPill::before,
-.onboard-target::after {
-  content: '';
-}
-
-@media (max-width: 600px) {
-  .onboard-card { width: calc(100vw - 32px); }
 }
 
 /* ============================================================ */
@@ -4032,6 +3837,18 @@ html.is-speaking .daily {
   align-items: center;
   gap: var(--sp-3);
   color: var(--brand);
+  /* In ein dezentes Stat-Panel fassen, damit die Kurve nicht kontextlos im
+     Header schwebt; Baseline (border-bottom an der Sparkline) gibt der Linie
+     einen Nullbezug. */
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--r-lg);
+  background: color-mix(in oklab, var(--bg-elev) 72%, transparent);
+  border: 1px solid color-mix(in oklab, var(--brand) 16%, var(--border));
+  backdrop-filter: blur(var(--blur-8));
+  -webkit-backdrop-filter: blur(var(--blur-8));
+}
+.dash-activity .sparkline {
+  border-bottom: 1.5px solid color-mix(in oklab, var(--brand) 22%, transparent);
 }
 .dash-activity-meta {
   display: flex;
@@ -4139,7 +3956,7 @@ html.is-speaking .daily {
   font-weight: 700;
 }
 .dash-card-hint {
-  color: var(--text-muted);
+  color: var(--text-soft);
   font-size: 0.85rem;
   margin-bottom: var(--sp-2);
 }
@@ -4180,13 +3997,23 @@ html.is-speaking .daily {
   font-size: 0.85rem !important;
 }
 
+/* Recent-Karte auf Brand-Violett statt Cyan — bleibt distinkt zur Magenta-
+   „Neu entdecken"-Karte, harmoniert aber mit dem Violett→Pink-Markenrückgrat
+   (das kalte Teal/Cyan brach vorher aus der Palette aus). */
 .dash-recent {
-  --dc: var(--accent-2, var(--brand));
+  --dc: var(--brand);
 }
 .dash-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+/* „Zuletzt angeschaut" füllt im Grid die Höhe der größten Karte aus — die
+   Chips den Restraum einnehmen und vertikal zentrieren lassen, statt einen
+   großen Leerraum unter wenigen Chips zu hinterlassen. */
+.dash-recent .dash-chips {
+  flex: 1;
+  align-content: center;
 }
 .dash-chip {
   --dc: var(--brand);
@@ -4647,7 +4474,7 @@ html.is-speaking .fc-big-speak {
 @media print {
   /* Backgrounds & decorations weg, hoher Kontrast, kein Schatten */
   .bg-stack, .scroll-progress, .topbar, .footer,
-  .toast-container, .search-overlay, .onboard-overlay,
+  .toast-container, .search-overlay, .driver-popover,
   .confetti-layer, .menu-toggle, .nav,
   .data-tools-section, .dashboard-section,
   .hero-cta, .preview-card, .hero-preview,
@@ -6817,9 +6644,21 @@ html.is-speaking .is-speakable {
 }
 .goal-progress {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--text-soft);
   font-variant-numeric: tabular-nums;
 }
+/* Motivierender Empty-State statt nackter „0 / 10" für frische Nutzer. */
+.goal-nudge {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: color-mix(in oklab, var(--brand) 70%, var(--text));
+}
+.goal-widget.goal-empty {
+  border-color: color-mix(in oklab, var(--brand) 24%, var(--border));
+}
+.goal-widget.goal-empty .goal-ring-text { opacity: .55; }
+.goal-widget.goal-empty .goal-ring-svg { animation: goalReadyPulse 2.4s var(--ease) infinite; }
+@keyframes goalReadyPulse { 0%,100% { opacity: .7; } 50% { opacity: 1; } }
 .goal-selector {
   display: flex;
   gap: var(--sp-2);
@@ -6861,23 +6700,34 @@ html.is-speaking .is-speakable {
   gap: 3px;
   height: 100%;
 }
+/* Volle Höhe = Track; die untere `--bh`-Fraktion ist gefüllt (Brand/Accent),
+   darüber ein dezenter Track. So zeigt der Balken den Tages-Füllstand statt —
+   wie zuvor durch `flex:1` verfälscht — überall die gleiche volle Höhe. */
 .goal-hist-bar {
   flex: 1;
   width: 10px;
+  align-self: center;
   border-radius: 4px;
-  background: color-mix(in oklab, var(--bc, var(--brand)) 40%, var(--border));
-  align-self: flex-end;
-  height: calc(var(--bh, 0.1) * 38px + 4px);
-  min-height: 4px;
-  transition: height 0.6s var(--ease-spring), background 0.3s var(--ease);
+  background: linear-gradient(to top,
+    var(--bc, var(--brand)) 0,
+    var(--bc, var(--brand)) calc(var(--bh, 0) * 100%),
+    color-mix(in oklab, var(--border) 55%, transparent) calc(var(--bh, 0) * 100%),
+    color-mix(in oklab, var(--border) 55%, transparent) 100%);
+  transition: background 0.6s var(--ease-spring);
 }
-.goal-hist-bar:hover {
-  background: var(--bc, var(--brand));
+.goal-hist-bar:hover { filter: brightness(1.25); cursor: help; }
+.goal-hist-col.is-today .goal-hist-bar {
+  width: 12px;
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--brand) 55%, transparent);
 }
 .goal-hist-day {
   font-size: 0.62rem;
   color: var(--text-muted);
   font-weight: 600;
+}
+.goal-hist-col.is-today .goal-hist-day {
+  color: var(--brand);
+  font-weight: 800;
 }
 
 @media (max-width: 520px) {
@@ -7433,22 +7283,6 @@ html {
     )
     0 0 / 200% 100%;
   animation: shimmer 1.8s ease-in-out infinite;
-}
-
-/* Better onboarding spotlight */
-.onboard-card {
-  background:
-    linear-gradient(
-      135deg,
-      color-mix(in oklab, var(--bg-elev) 96%, transparent),
-      color-mix(in oklab, var(--brand) 4%, var(--bg-elev))
-    );
-  backdrop-filter: blur(var(--blur-24)) saturate(1.4);
-  border: 1px solid color-mix(in oklab, var(--brand) 25%, var(--border));
-  box-shadow:
-    0 0 0 2px color-mix(in oklab, var(--brand) 20%, transparent),
-    0 32px 80px hsl(0 0% 0% / .35),
-    0 0 40px color-mix(in oklab, var(--brand) 20%, transparent);
 }
 
 /* XP chip: refined */

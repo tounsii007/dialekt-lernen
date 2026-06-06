@@ -266,7 +266,7 @@ export function renderHero({ stats, streak, totalExpr }) {
           el('span', { class: 'hero-stat-label' }, 'Ausdrücke')
         ),
         el('div', {},
-          el('span', { class: 'hero-stat-num', dataset: { count: String(stats.gelernt) } }, '0'),
+          el('span', { class: 'hero-stat-num' + (stats.gelernt === 0 ? ' is-zero' : ''), dataset: { count: String(stats.gelernt) } }, '0'),
           el('span', { class: 'hero-stat-label' }, 'gelernt')
         ),
         streak > 0 ? el('div', {},

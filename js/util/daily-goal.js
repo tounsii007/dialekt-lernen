@@ -10,11 +10,12 @@ export function renderGoalWidget() {
   const progress = getTodayProgress();
   const pct = getGoalPct();
   const met = progress >= target;
+  const isEmpty = progress === 0 && !met;
   const RADIUS = 32;
   const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
   const dash = CIRCUMFERENCE * pct;
 
-  const wrap = el('div', { class: 'goal-widget' + (met ? ' goal-met' : '') });
+  const wrap = el('div', { class: 'goal-widget' + (met ? ' goal-met' : '') + (isEmpty ? ' goal-empty' : '') });
 
   // Circular SVG ring
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -38,8 +39,9 @@ export function renderGoalWidget() {
   `;
 
   const info = el('div', { class: 'goal-info' },
-    el('div', { class: 'goal-title' }, met ? '🎉 Tagesziel erreicht!' : 'Tagesziel'),
-    el('div', { class: 'goal-progress' }, `${progress} / ${target} Karten`),
+    el('div', { class: 'goal-title' }, met ? '🎉 Tagesziel erreicht!' : (isEmpty ? 'Tagesziel — bereit?' : 'Tagesziel')),
+    el('div', { class: 'goal-progress' }, isEmpty ? `Heute noch keine Karte · Ziel: ${target}` : `${progress} / ${target} Karten`),
+    isEmpty ? el('div', { class: 'goal-nudge' }, '✨ Leg los — schon eine Karte zählt!') : null,
     el('div', { class: 'goal-selector', onClick: (e) => e.stopPropagation() },
       ...getGoalOptions().map(n =>
         el('button', {
@@ -63,14 +65,22 @@ export function renderGoalWidget() {
   wrap.appendChild(svg);
   wrap.appendChild(info);
 
-  // Progress history mini-bars
+  // Progress history mini-bars (Füllstand pro Tag, „heute" hervorgehoben)
   const hist = getProgressHistory(7);
-  const histRow = el('div', { class: 'goal-history' },
-    ...hist.map(h => {
+  const DAYS = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+  const histRow = el('div', { class: 'goal-history', role: 'img', ariaLabel: `Aktivität der letzten 7 Tage, Ziel ${target} Karten/Tag` },
+    ...hist.map((h, i) => {
       const barH = Math.min(1, target > 0 ? h.count / target : 0);
-      return el('div', { class: 'goal-hist-col' },
-        el('div', { class: 'goal-hist-bar', style: { '--bh': barH.toFixed(2), '--bc': h.met ? 'var(--accent)' : 'var(--brand)' } }),
-        el('div', { class: 'goal-hist-day' }, ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'][h.date.getDay()])
+      const isToday = i === hist.length - 1;
+      const dayLabel = DAYS[h.date.getDay()];
+      const cardWord = h.count === 1 ? 'Karte' : 'Karten';
+      return el('div', { class: 'goal-hist-col' + (isToday ? ' is-today' : '') },
+        el('div', {
+          class: 'goal-hist-bar',
+          title: `${isToday ? 'Heute' : dayLabel}: ${h.count} ${cardWord}${h.met ? ' · Ziel erreicht ✓' : ''}`,
+          style: { '--bh': barH.toFixed(2), '--bc': h.met ? 'var(--accent)' : 'var(--brand)' }
+        }),
+        el('div', { class: 'goal-hist-day' }, dayLabel)
       );
     })
   );

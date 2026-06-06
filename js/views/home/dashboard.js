@@ -23,7 +23,7 @@ export function renderDashboard() {
     { key: 'due',    title: 'Heute fällig',    hint: 'Spaced-Repetition empfiehlt',   items: rec.due,    color: 'var(--pink)' },
     { key: 'hard',   title: 'Wiederholen',     hint: 'Karten mit häufigen Patzern',  items: rec.hard,   color: 'var(--warm)' },
     { key: 'almost', title: 'Fast geschafft',  hint: 'Mittel — noch eine Runde',     items: rec.almost, color: 'var(--brand)' },
-    { key: 'fresh',  title: 'Neu entdecken',   hint: 'Noch unbekannte Ausdrücke',    items: rec.fresh,  color: 'var(--accent)' }
+    { key: 'fresh',  title: 'Neu entdecken',   hint: 'Noch unbekannte Ausdrücke',    items: rec.fresh,  color: 'var(--brand-2)' }
   ].filter(b => b.items.length > 0);
 
   const section = el('section', { class: 'section dashboard-section', dataset: { reveal: '' } },
@@ -48,7 +48,7 @@ export function renderDashboard() {
     const card = el('article', { class: 'dash-card', dataset: { spotlight: '' }, style: { '--dc': b.color } },
       el('div', { class: 'dash-card-head' },
         el('div', { class: 'dash-card-title' }, b.title),
-        el('span', { class: 'dash-card-count' }, String(b.items.length))
+        el('span', { class: 'dash-card-count', ariaLabel: `${b.items.length} Ausdrücke` }, String(b.items.length))
       ),
       el('div', { class: 'dash-card-hint' }, b.hint),
       el('ul', { class: 'dash-list' },
@@ -69,7 +69,7 @@ export function renderDashboard() {
     const recentCard = el('article', { class: 'dash-card dash-recent', dataset: { spotlight: '' } },
       el('div', { class: 'dash-card-head' },
         el('div', { class: 'dash-card-title' }, 'Zuletzt angeschaut'),
-        el('span', { class: 'dash-card-count' }, String(recent.length))
+        el('span', { class: 'dash-card-count', ariaLabel: `${recent.length} Dialekte` }, String(recent.length))
       ),
       el('div', { class: 'dash-card-hint' }, 'Setze dort fort, wo du warst.'),
       el('div', { class: 'dash-chips' },
