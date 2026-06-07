@@ -40,3 +40,7 @@ TODO.md
 
 # Lockfiles for npm-via-npx (no deps installed)
 package-lock.json
+
+# i18n-Uebersetzung: temporaere Batch-Artefakte (Aufgabe B)
+data/translations/_batches/
+data/translations/_missing.json
