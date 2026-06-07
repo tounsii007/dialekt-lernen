@@ -31,7 +31,7 @@
       Bitte aktiviere es und lade die Seite neu — alle Daten bleiben lokal in deinem Browser.
     </div>
   </noscript>
-  <a class="skip-link" href="#app">Zum Inhalt springen</a>
+  <a class="skip-link" href="#app" data-i18n="a11y.skip">Zum Inhalt springen</a>
   <div class="bg-stack" aria-hidden="true">
     <div class="bg-aurora">
       <div class="aurora-band b1"></div>
@@ -67,31 +67,31 @@
         </span>
         <span class="brand-text">
           <span class="brand-name">Dialekto</span>
-          <span class="brand-sub">Deutsche Dialekte lernen</span>
+          <span class="brand-sub" data-i18n="brand.sub">Deutsche Dialekte lernen</span>
         </span>
       </a>
 
       <nav class="nav" aria-label="Hauptnavigation">
-        <a href="/" data-route="home" class="nav-link"><span>Start</span></a>
-        <a href="/explore" data-route="entdecken" class="nav-link"><span>Entdecken</span></a>
-        <a href="/learn" data-route="lernen" class="nav-link"><span>Lernen</span></a>
-        <a href="/quiz" data-route="quiz" class="nav-link"><span>Quiz</span></a>
-        <a href="/favorites" data-route="favoriten" class="nav-link"><span>Favoriten</span></a>
+        <a href="/" data-route="home" class="nav-link"><span data-i18n="nav.home">Start</span></a>
+        <a href="/explore" data-route="entdecken" class="nav-link"><span data-i18n="nav.entdecken">Entdecken</span></a>
+        <a href="/learn" data-route="lernen" class="nav-link"><span data-i18n="nav.lernen">Lernen</span></a>
+        <a href="/quiz" data-route="quiz" class="nav-link"><span data-i18n="nav.quiz">Quiz</span></a>
+        <a href="/favorites" data-route="favoriten" class="nav-link"><span data-i18n="nav.favoriten">Favoriten</span></a>
         <div class="nav-more">
           <button type="button" class="nav-link nav-more-btn" aria-expanded="false" aria-controls="navMoreMenu" aria-label="Weitere Bereiche">
-            <span>Mehr</span>
+            <span data-i18n="nav.mehr">Mehr</span>
             <svg class="nav-more-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
           </button>
           <div id="navMoreMenu" class="nav-more-menu" hidden>
-            <a href="/path" data-route="lernpfad" class="nav-more-link"><span>Lernpfad</span></a>
-            <a href="/shadowing" data-route="shadowing" class="nav-more-link"><span>Shadowing</span></a>
-            <a href="/sound-pairs" data-route="klangpaare" class="nav-more-link"><span>Klangpaare</span></a>
-            <a href="/games" data-route="spiele" class="nav-more-link"><span>Spiele</span></a>
-            <a href="/idioms" data-route="idiome" class="nav-more-link"><span>Idiome</span></a>
-            <a href="/lessons" data-route="lektionen" class="nav-more-link"><span>Lektionen</span></a>
-            <a href="/compare" data-route="vergleich" class="nav-more-link"><span>Vergleich</span></a>
-            <a href="/map" data-route="karte" class="nav-more-link"><span>Karte</span></a>
-            <a href="/decks" data-route="decks" class="nav-more-link"><span>Decks</span></a>
+            <a href="/path" data-route="lernpfad" class="nav-more-link"><span data-i18n="nav.lernpfad">Lernpfad</span></a>
+            <a href="/shadowing" data-route="shadowing" class="nav-more-link"><span data-i18n="nav.shadowing">Shadowing</span></a>
+            <a href="/sound-pairs" data-route="klangpaare" class="nav-more-link"><span data-i18n="nav.klangpaare">Klangpaare</span></a>
+            <a href="/games" data-route="spiele" class="nav-more-link"><span data-i18n="nav.spiele">Spiele</span></a>
+            <a href="/idioms" data-route="idiome" class="nav-more-link"><span data-i18n="nav.idiome">Idiome</span></a>
+            <a href="/lessons" data-route="lektionen" class="nav-more-link"><span data-i18n="nav.lektionen">Lektionen</span></a>
+            <a href="/compare" data-route="vergleich" class="nav-more-link"><span data-i18n="nav.vergleich">Vergleich</span></a>
+            <a href="/map" data-route="karte" class="nav-more-link"><span data-i18n="nav.karte">Karte</span></a>
+            <a href="/decks" data-route="decks" class="nav-more-link"><span data-i18n="nav.decks">Decks</span></a>
           </div>
         </div>
       </nav>
@@ -100,19 +100,19 @@
         <div id="xpBarSlot" class="xp-bar-slot" aria-hidden="true"></div>
         <button type="button" id="searchOpen" class="search-trigger" aria-label="Suchen" title="Suchen (S)">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <span class="search-trigger-text">Suchen oder springen…</span>
+          <span class="search-trigger-text" data-i18n="topbar.search">Suchen oder springen…</span>
           <kbd class="kbd search-trigger-kbd">S</kbd>
         </button>
         <button id="themeToggle" class="icon-btn theme-toggle" aria-label="Design wechseln" title="Hell/Dunkel umschalten">
           <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <button type="button" id="toolsToggle" class="icon-btn settings-toggle" aria-haspopup="dialog" aria-label="Einstellungen" title="Einstellungen">
+        <button type="button" id="toolsToggle" class="icon-btn settings-toggle" aria-haspopup="dialog" aria-label="Einstellungen" title="Einstellungen" data-i18n-aria="topbar.settings" data-i18n-title="topbar.settings">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
         </button>
       </div>
 
-      <button type="button" id="menuToggle" class="icon-btn menu-toggle" aria-label="Menü">
+      <button type="button" id="menuToggle" class="icon-btn menu-toggle" aria-label="Menü" data-i18n-aria="topbar.menu">
         <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
     </div>

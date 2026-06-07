@@ -87,6 +87,12 @@ const STRINGS = {
     'section.dashboard':           'Dein Dashboard',
     'section.heuteFaellig':        'Heute fällig',
     'section.dailyExpr':           'Ausdruck des Tages',
+
+    // Erweiterte Navigation + Topbar
+    'nav.mehr': 'Mehr', 'nav.lernpfad': 'Lernpfad', 'nav.shadowing': 'Shadowing',
+    'nav.klangpaare': 'Klangpaare', 'nav.spiele': 'Spiele', 'nav.idiome': 'Idiome',
+    'nav.lektionen': 'Lektionen', 'nav.decks': 'Decks',
+    'topbar.settings': 'Einstellungen', 'topbar.menu': 'Menü', 'a11y.skip': 'Zum Inhalt springen',
   },
 
   en: {
@@ -156,6 +162,12 @@ const STRINGS = {
     'section.dashboard':           'Your dashboard',
     'section.heuteFaellig':        'Due today',
     'section.dailyExpr':           'Expression of the day',
+
+    // Erweiterte Navigation + Topbar
+    'nav.mehr': 'More', 'nav.lernpfad': 'Path', 'nav.shadowing': 'Shadowing',
+    'nav.klangpaare': 'Sound pairs', 'nav.spiele': 'Games', 'nav.idiome': 'Idioms',
+    'nav.lektionen': 'Lessons', 'nav.decks': 'Decks',
+    'topbar.settings': 'Settings', 'topbar.menu': 'Menu', 'a11y.skip': 'Skip to content',
   },
 
   tr: {
@@ -174,6 +186,10 @@ const STRINGS = {
     'toast.dyslexic.on': 'Disleksi yazısı açık', 'toast.dyslexic.off': 'Disleksi yazısı kapalı',
     'toast.copied': 'Panoya kopyalandı', 'toast.saved': 'Kaydedildi', 'toast.error': 'Bir hata oluştu',
     'section.alleDialekte': 'Tüm lehçeler', 'section.dashboard': 'Panonuz', 'section.heuteFaellig': 'Bugün vadesi gelen', 'section.dailyExpr': 'Günün ifadesi',
+    'nav.mehr': 'Daha fazla', 'nav.lernpfad': 'Öğrenme yolu', 'nav.shadowing': 'Shadowing',
+    'nav.klangpaare': 'Ses çiftleri', 'nav.spiele': 'Oyunlar', 'nav.idiome': 'Deyimler',
+    'nav.lektionen': 'Dersler', 'nav.decks': 'Desteler',
+    'topbar.settings': 'Ayarlar', 'topbar.menu': 'Menü', 'a11y.skip': 'İçeriğe geç',
   },
 
   fr: {
@@ -192,6 +208,10 @@ const STRINGS = {
     'toast.dyslexic.on': 'Police dyslexie activée', 'toast.dyslexic.off': 'Police dyslexie désactivée',
     'toast.copied': 'Copié dans le presse-papiers', 'toast.saved': 'Enregistré', 'toast.error': "Une erreur s'est produite",
     'section.alleDialekte': 'Tous les dialectes', 'section.dashboard': 'Votre tableau de bord', 'section.heuteFaellig': 'À réviser aujourd’hui', 'section.dailyExpr': 'Expression du jour',
+    'nav.mehr': 'Plus', 'nav.lernpfad': 'Parcours', 'nav.shadowing': 'Shadowing',
+    'nav.klangpaare': 'Paires sonores', 'nav.spiele': 'Jeux', 'nav.idiome': 'Idiomes',
+    'nav.lektionen': 'Leçons', 'nav.decks': 'Decks',
+    'topbar.settings': 'Paramètres', 'topbar.menu': 'Menu', 'a11y.skip': 'Aller au contenu',
   },
 
   es: {
@@ -210,6 +230,10 @@ const STRINGS = {
     'toast.dyslexic.on': 'Fuente dislexia activada', 'toast.dyslexic.off': 'Fuente dislexia desactivada',
     'toast.copied': 'Copiado al portapapeles', 'toast.saved': 'Guardado', 'toast.error': 'Ocurrió un error',
     'section.alleDialekte': 'Todos los dialectos', 'section.dashboard': 'Tu panel', 'section.heuteFaellig': 'Para hoy', 'section.dailyExpr': 'Expresión del día',
+    'nav.mehr': 'Más', 'nav.lernpfad': 'Ruta', 'nav.shadowing': 'Shadowing',
+    'nav.klangpaare': 'Pares sonoros', 'nav.spiele': 'Juegos', 'nav.idiome': 'Modismos',
+    'nav.lektionen': 'Lecciones', 'nav.decks': 'Mazos',
+    'topbar.settings': 'Ajustes', 'topbar.menu': 'Menú', 'a11y.skip': 'Ir al contenido',
   },
 };
 
@@ -288,12 +312,39 @@ export function applyHtmlLangAttr() {
 }
 
 /**
+ * Übersetzt alle deklarativ markierten Elemente innerhalb `root`:
+ *   data-i18n="key"        → textContent
+ *   data-i18n-aria="key"   → aria-label
+ *   data-i18n-title="key"  → title
+ *   data-i18n-ph="key"     → placeholder
+ * Bei DE (Original) passiert nichts — die Markup-Texte sind bereits deutsch.
+ * Idempotent; kann nach jedem (Re-)Render mit dem View-Root aufgerufen werden.
+ */
+export function applyI18nToDom(root) {
+  if (typeof document === 'undefined') return;
+  const scope = root || document;
+  if (currentLang === DEFAULT_LANG) return;
+  const set = (sel, apply) => {
+    scope.querySelectorAll(sel).forEach((el) => {
+      const key = el.getAttribute(sel.slice(1, -1));
+      const val = t(key);
+      if (val && val !== key) apply(el, val);
+    });
+  };
+  set('[data-i18n]',       (el, v) => { el.textContent = v; });
+  set('[data-i18n-aria]',  (el, v) => { el.setAttribute('aria-label', v); });
+  set('[data-i18n-title]', (el, v) => { el.setAttribute('title', v); });
+  set('[data-i18n-ph]',    (el, v) => { el.setAttribute('placeholder', v); });
+}
+
+/**
  * Bindet den Sprach-Toggle-Button (`#langToggle`) und setzt initiale Attribute.
  * Wird einmal beim App-Start aus `js/theme.js` aufgerufen.
  */
 export function initI18n() {
   applyHtmlLangAttr();
   if (typeof document === 'undefined') return;
+  applyI18nToDom(document);  // statische Shell (Nav, Brand, Topbar) übersetzen
   const btn = document.getElementById('langToggle');
   if (!btn) return;
   // Aktuellen Code als Label anzeigen (das zukünftige Ziel-Sprachkürzel ist intuitiver)

@@ -12,6 +12,7 @@ import {
 import { initNav, syncMobileNav } from './nav.js';
 import { attachPullToRefresh } from './util/pull-to-refresh.js';
 import { maybeShowTip } from './util/progressive-disclosure.js';
+import { applyI18nToDom } from './util/i18n.js';
 import { state } from './store/state.js';
 
 // Alle Views statisch importiert (eager) — kein dynamic import(), kein Skeleton.
@@ -84,6 +85,7 @@ function renderRoute(app, route, segs, params) {
 function doRender(app, route, segs, params, focusContent = false) {
   app.setAttribute('aria-busy', 'true');
   renderRoute(app, route, segs, params);
+  applyI18nToDom(app);   // [data-i18n]-markierte Strings der View übersetzen
   observeReveals(app);
   observeCounters(app);
   initTilt(app);

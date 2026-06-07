@@ -10,6 +10,7 @@
 
 import { ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { state } from '../store/state.js';
+import { shuffle } from './random.js';
 import { getCardsAtRisk, getCardRetention } from './forgetting-curve.js';
 
 /**
@@ -55,9 +56,8 @@ export function getAdaptiveRecommendations(limit = 10) {
     .map(([k]) => k);
 
   for (const k of weakKats.slice(0, 2)) {
-    const candidates = ALLE_AUSDRUECKE
-      .filter(a => a.kategorie === k && !seen.has(`${a.dialektId}:${a.id}`))
-      .sort(() => Math.random() - 0.5)
+    const candidates = shuffle(ALLE_AUSDRUECKE
+      .filter(a => a.kategorie === k && !seen.has(`${a.dialektId}:${a.id}`)))
       .slice(0, 2);
     for (const c of candidates) {
       seen.add(`${c.dialektId}:${c.id}`);
@@ -77,15 +77,13 @@ export function getAdaptiveRecommendations(limit = 10) {
     return acc;
   }, {});
   const allDialektIds = [...new Set(ALLE_AUSDRUECKE.map(a => a.dialektId))];
-  const rareDialekte = allDialektIds
-    .filter(d => (visitedCount[d] || 0) < 2)
-    .sort(() => Math.random() - 0.5)
+  const rareDialekte = shuffle(allDialektIds
+    .filter(d => (visitedCount[d] || 0) < 2))
     .slice(0, 2);
 
   for (const d of rareDialekte) {
-    const candidates = ALLE_AUSDRUECKE
-      .filter(a => a.dialektId === d && !seen.has(`${a.dialektId}:${a.id}`))
-      .sort(() => Math.random() - 0.5)
+    const candidates = shuffle(ALLE_AUSDRUECKE
+      .filter(a => a.dialektId === d && !seen.has(`${a.dialektId}:${a.id}`)))
       .slice(0, 2);
     for (const c of candidates) {
       seen.add(`${c.dialektId}:${c.id}`);

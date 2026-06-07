@@ -11,7 +11,7 @@ import {
   downloadStateFile, resetAllData
 } from '../store.js';
 import { isSoundEnabled, setSoundEnabled, sfx } from '../util/sounds.js';
-import { getLang, setLang, SUPPORTED, LANGUAGE_NAMES } from '../util/i18n.js';
+import { getLang, setLang, SUPPORTED, LANGUAGE_NAMES, t } from '../util/i18n.js';
 import { flagSvg } from '../util/flags.js';
 import { initTranslations } from '../util/translations.js';
 import { router } from '../router.js';
@@ -301,8 +301,8 @@ export function initSettings() {
   const btn = document.getElementById('toolsToggle');
   if (btn) {
     btn.setAttribute('aria-haspopup', 'dialog');
-    btn.setAttribute('aria-label', 'Einstellungen');
-    btn.setAttribute('title', 'Einstellungen');
+    btn.setAttribute('aria-label', t('topbar.settings'));
+    btn.setAttribute('title', t('topbar.settings'));
     btn.addEventListener('click', (e) => { e.stopPropagation(); openSettings(); });
   }
 }

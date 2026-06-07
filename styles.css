@@ -816,6 +816,15 @@ a { color: inherit; text-decoration: none; }
   isolation: isolate;
   overflow: hidden;
 }
+/* Generischer Deaktiviert-Zustand für alle .btn-Varianten (vorher nur einzelne
+   Spezial-Buttons gestylt — z. B. SRS-Optimieren/Prev blieben optisch „aktiv"). */
+.btn:disabled, .btn[disabled] {
+  opacity: .45;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+  transform: none;
+}
 .btn::after {
   /* Hover sheen */
   content: '';
@@ -7696,7 +7705,7 @@ html {
 /* Global: alle interaktiven Elemente mind. 44px Ziel-Fläche */
 .btn, .fc-rate, .fc-btn, .nav-link, .mobile-nav-item,
 .dash-chip, .icon-btn, .goal-opt, .expr-action,
-.daily-action, .karte-bubble, .cmdp-filter-chip {
+.daily-action, .karte-bubble, .cmdp-filter-chip, .quiz-option {
   min-height: 44px;
   min-width: 44px;
 }

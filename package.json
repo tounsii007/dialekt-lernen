@@ -1,6 +1,6 @@
 {
   "name": "dialekto",
-  "version": "2.1.63",
+  "version": "2.1.64",
   "description": "Dialekto · Web-App zum Lernen deutscher Dialekte. Karteikarten, SRS, Quiz, Vergleich, PWA — komplett ohne Backend.",
   "type": "module",
   "private": true,
