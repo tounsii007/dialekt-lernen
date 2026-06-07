@@ -6,22 +6,23 @@ import {
   listVoices, onVoicesChanged, getSpeechStatus,
   RATE_MIN, RATE_MAX, PITCH_MIN, PITCH_MAX
 } from '../../util.js';
+import { t } from '../../util/i18n.js';
 
 export function renderSpeechSettings() {
   const wrap = el('section', { class: 'section speech-section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, '🗣️ Sprachausgabe'),
+        el('h2', {}, t('view.speech-panel.title')),
         el('div', { class: 'lede' }, isSpeechSupported()
-          ? 'Wähle Stimme, Tempo und Tonhöhe für das Vorlesen der Dialekt-Ausdrücke.'
-          : 'Dein Browser unterstützt keine Sprachausgabe — diese Funktion ist nicht verfügbar.')
+          ? t('view.speech-panel.lede')
+          : t('view.speech-panel.notSupportedLede'))
       )
     )
   );
 
   if (!isSpeechSupported()) {
     wrap.appendChild(el('div', { class: 'card' },
-      el('div', { class: 'lede' }, 'Text-to-Speech wird vom Browser nicht unterstützt.')
+      el('div', { class: 'lede' }, t('view.speech-panel.notSupportedCard'))
     ));
     return wrap;
   }
@@ -29,11 +30,11 @@ export function renderSpeechSettings() {
   const fmt = (n) => Number(n).toFixed(2).replace(/0$/, '').replace(/\.$/, '');
 
   // --- Stimmen-Auswahl ---
-  const select = el('select', { class: 'speech-voice-select', ariaLabel: 'Stimme wählen' });
+  const select = el('select', { class: 'speech-voice-select', ariaLabel: t('view.speech-panel.voiceSelectAria') });
   function populateVoices() {
     const cur = getSpeechSettings().voiceURI || '';
     select.innerHTML = '';
-    select.appendChild(el('option', { value: '' }, '🔈 Automatisch (zum Dialekt passend)'));
+    select.appendChild(el('option', { value: '' }, t('view.speech-panel.voiceAuto')));
     for (const v of listVoices()) {
       const de = (v.lang || '').toLowerCase().startsWith('de');
       const label = `${de ? '🇩🇪 ' : ''}${v.name} · ${v.lang}`;
@@ -50,11 +51,11 @@ export function renderSpeechSettings() {
 
   // --- Eigene Stimme pro Dialekt (globaler Schalter + Mini-Demo) ---
   const dialectToggle = el('input', { type: 'checkbox', class: 'speech-toggle-input',
-    role: 'switch', ariaLabel: 'Eigene Stimme pro Dialekt' });
+    role: 'switch', ariaLabel: t('view.speech-panel.dialectToggleAria') });
   dialectToggle.checked = getSpeechSettings().dialectVoices;
   dialectToggle.addEventListener('change', () => {
     setSpeechSettings({ dialectVoices: dialectToggle.checked });
-    toast(dialectToggle.checked ? '🎭 Dialekt-Stimmen an' : 'Dialekt-Stimmen aus', 'info', 1200);
+    toast(dialectToggle.checked ? t('view.speech-panel.toastDialectOn') : t('view.speech-panel.toastDialectOff'), 'info', 1200);
   });
 
   // Gleiche Grußformeln, je Dialekt mit eigener Stimme & Aussprache — zum
@@ -84,16 +85,16 @@ export function renderSpeechSettings() {
   const statusLine = el('div', { class: 'lede speech-status', style: { fontSize: '.85rem', marginTop: '4px' } });
   const refreshStatus = () => {
     const st = getSpeechStatus('de-DE');
-    if (!st.available) { statusLine.textContent = 'Keine Stimme verfügbar.'; return; }
-    const src = st.preferred ? 'deine Wunschstimme' : (st.exact ? 'exakt passend' : 'automatisch gewählt');
-    statusLine.textContent = `Aktive Stimme: ${st.voice} (${st.voiceLang}) — ${src}.`;
+    if (!st.available) { statusLine.textContent = t('view.speech-panel.statusNoVoice'); return; }
+    const src = st.preferred ? t('view.speech-panel.statusSrcPreferred') : (st.exact ? t('view.speech-panel.statusSrcExact') : t('view.speech-panel.statusSrcAuto'));
+    statusLine.textContent = t('view.speech-panel.statusActive', { voice: st.voice, lang: st.voiceLang, src });
   };
   refreshStatus();
 
   const sample = 'Grüß dich! So klingt deine gewählte Stimme.';
   const previewSoon = (() => {
-    let t = null;
-    return () => { clearTimeout(t); t = setTimeout(() => speak(sample, 'de-DE'), 220); };
+    let timer = null;
+    return () => { clearTimeout(timer); timer = setTimeout(() => speak(sample, 'de-DE'), 220); };
   })();
 
   select.addEventListener('change', () => {
@@ -107,7 +108,7 @@ export function renderSpeechSettings() {
   pitch.addEventListener('change', () => { setSpeechSettings({ pitch: pitch.value }); refreshStatus(); previewSoon(); });
 
   const testBtn = el('button', { class: 'btn btn-primary', dataset: { magnetic: '10' },
-    onClick: () => speak(sample, 'de-DE') }, '▶ Stimme testen');
+    onClick: () => speak(sample, 'de-DE') }, t('view.speech-panel.testBtn'));
   const resetBtn = el('button', { class: 'btn btn-ghost', dataset: { magnetic: '10' },
     onClick: () => {
       setSpeechSettings({ rate: 0.92, pitch: 1, voiceURI: null, dialectVoices: true });
@@ -117,35 +118,35 @@ export function renderSpeechSettings() {
       select.value = '';
       dialectToggle.checked = true;
       refreshStatus();
-      toast('Sprachausgabe zurückgesetzt', 'info', 1200);
-    } }, 'Zurücksetzen');
+      toast(t('view.speech-panel.toastReset'), 'info', 1200);
+    } }, t('view.speech-panel.resetBtn'));
 
   wrap.appendChild(el('div', { class: 'card speech-card', dataset: { spotlight: '' } },
     el('div', { class: 'speech-field speech-dialect-field' },
       el('label', { class: 'speech-toggle' },
         dialectToggle,
         el('span', { class: 'speech-toggle-text' },
-          el('span', { class: 'speech-field-label' }, '🎭 Eigene Stimme pro Dialekt'),
-          el('span', { class: 'speech-toggle-sub' }, 'Jeder Dialekt mit eigener Stimme & angepasster Aussprache.')
+          el('span', { class: 'speech-field-label' }, t('view.speech-panel.dialectFieldLabel')),
+          el('span', { class: 'speech-toggle-sub' }, t('view.speech-panel.dialectFieldSub'))
         )
       ),
-      el('div', { class: 'speech-demo-hint' }, 'Zum Vergleich anhören:'),
+      el('div', { class: 'speech-demo-hint' }, t('view.speech-panel.compareHint')),
       demoRow
     ),
     el('label', { class: 'speech-field' },
-      el('span', { class: 'speech-field-label' }, 'Stimme'),
+      el('span', { class: 'speech-field-label' }, t('view.speech-panel.voiceLabel')),
       select
     ),
     el('label', { class: 'speech-field' },
       el('span', { class: 'speech-field-label' },
-        el('span', {}, 'Tempo'),
+        el('span', {}, t('view.speech-panel.rateLabel')),
         rateVal
       ),
       rate
     ),
     el('label', { class: 'speech-field' },
       el('span', { class: 'speech-field-label' },
-        el('span', {}, 'Tonhöhe'),
+        el('span', {}, t('view.speech-panel.pitchLabel')),
         pitchVal
       ),
       pitch

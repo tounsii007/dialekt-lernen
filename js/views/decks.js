@@ -5,6 +5,7 @@ import { getDecks, createDeck, deleteDeck, updateDeck, deckSize } from '../store
 import { getDialekt } from '../../data/dialekte.js';
 import { openModal, confirmModal, closeModal } from '../util/modal.js';
 import { emptyIllustration, icon } from '../util/icons.js';
+import { t } from '../util/i18n.js';
 
 const COLOR_PRESETS = [
   '#ef476f', '#06d6a0', '#118ab2', '#ffd166', '#8338ec',
@@ -30,7 +31,7 @@ function deckColorRow(initialColor) {
     COLOR_PRESETS.forEach((c, i) => {
       row.appendChild(el('button', {
         type: 'button',
-        'aria-label': `Farbe ${i + 1} von ${COLOR_PRESETS.length}`,
+        'aria-label': t('view.decks.swatchAria', { n: i + 1, total: COLOR_PRESETS.length }),
         'aria-pressed': c === selected ? 'true' : 'false',
         title: c,
         class: 'deck-swatch' + (c === selected ? ' is-selected' : ''),
@@ -49,15 +50,15 @@ export function renderDecks(root) {
 
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '🗂️ Eigene Decks'),
-      el('div', { class: 'lede' }, 'Stelle eigene Lern-Sammlungen aus Ausdrücken zusammen — quer durch alle Dialekte.')
+      el('h2', {}, t('view.decks.title')),
+      el('div', { class: 'lede' }, t('view.decks.lede'))
     ),
     el('div', { style: { display: 'flex', gap: '8px' } },
       el('button', {
         class: 'btn btn-primary',
         dataset: { magnetic: '10' },
         onClick: () => openCreateDeckModal(() => renderDecks(document.getElementById('app')))
-      }, '+ Neues Deck')
+      }, t('view.decks.newDeck'))
     )
   ));
 
@@ -66,13 +67,13 @@ export function renderDecks(root) {
   if (decks.length === 0) {
     view.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('sparkles'),
-      el('h3', {}, 'Noch keine eigenen Decks'),
-      el('div', { class: 'empty-meta' }, 'Erstelle ein Deck und fülle es über die Bulk-Aktionen in den Favoriten oder direkt aus Ausdruck-Karten.'),
+      el('h3', {}, t('view.decks.emptyTitle')),
+      el('div', { class: 'empty-meta' }, t('view.decks.emptyMeta')),
       el('button', {
         class: 'btn btn-primary',
         dataset: { magnetic: '12' },
         onClick: () => openCreateDeckModal(() => renderDecks(document.getElementById('app')))
-      }, '+ Erstes Deck anlegen')
+      }, t('view.decks.emptyCta'))
     ));
     root.appendChild(view);
     return;
@@ -107,9 +108,11 @@ function renderDeckCard(deck) {
   },
     el('span', { class: 'dc-flag' }, flagText),
     el('div', { class: 'dc-name' }, deck.name),
-    el('div', { class: 'dc-region' }, size === 0 ? 'Leeres Deck' : `${size} Ausdr${size === 1 ? 'uck' : 'ücke'}`),
+    el('div', { class: 'dc-region' }, size === 0
+      ? t('view.decks.emptyDeck')
+      : (size === 1 ? t('view.decks.exprOne', { n: size }) : t('view.decks.exprMany', { n: size }))),
     el('div', { class: 'dc-desc' },
-      `Eigene Sammlung · Erstellt am ${new Date(deck.createdAt || Date.now()).toLocaleDateString('de-DE')}`
+      t('view.decks.createdOn', { date: new Date(deck.createdAt || Date.now()).toLocaleDateString('de-DE') })
     ),
     el('div', { class: 'dc-foot', style: { gap: '8px', flexWrap: 'wrap' } },
       el('button', {
@@ -117,30 +120,30 @@ function renderDeckCard(deck) {
         style: { padding: '6px 14px', fontSize: '.85rem' },
         onClick: () => {
           if (size === 0) {
-            toast('Deck ist leer — füge zuerst Ausdrücke hinzu (z. B. via Favoriten-Bulk).', 'info', 2400);
+            toast(t('view.decks.emptyToast'), 'info', 2400);
             return;
           }
           go(`#/lernen?deck=${encodeURIComponent(deck.id)}`);
         }
-      }, '▶ Lernen'),
+      }, t('view.decks.learn')),
       el('button', {
         class: 'btn btn-ghost',
         style: { padding: '6px 12px', fontSize: '.85rem' },
         onClick: () => openEditDeckModal(deck, () => renderDecks(document.getElementById('app')))
-      }, '✎ Bearbeiten'),
+      }, t('view.decks.edit')),
       el('button', {
         class: 'btn btn-ghost danger-btn',
         style: { padding: '6px 12px', fontSize: '.85rem' },
         onClick: async () => {
           const ok = await confirmModal({
-            title: 'Deck löschen?',
-            message: `„${deck.name}" wirklich entfernen? Die Ausdrücke selbst bleiben natürlich erhalten.`,
-            confirmLabel: 'Löschen',
+            title: t('view.decks.deleteTitle'),
+            message: t('view.decks.deleteConfirm', { name: deck.name }),
+            confirmLabel: t('view.decks.deleteAction'),
             danger: true
           });
           if (!ok) return;
           deleteDeck(deck.id);
-          toast('Deck gelöscht', 'success', 1400);
+          toast(t('view.decks.deleted'), 'success', 1400);
           renderDecks(document.getElementById('app'));
         }
       }, '🗑️')
@@ -159,7 +162,7 @@ function renderDeckCard(deck) {
 export function openCreateDeckModal(onCreated, { initialName = '' } = {}) {
   const nameInput = deckNameInput({
     value: initialName,
-    placeholder: 'Name des Decks (z. B. „Wienerische Lieblinge")'
+    placeholder: t('view.decks.namePlaceholder')
   });
   const { row: colorRow, getColor } = deckColorRow(
     COLOR_PRESETS[Math.floor(Math.random() * COLOR_PRESETS.length)]
@@ -168,30 +171,30 @@ export function openCreateDeckModal(onCreated, { initialName = '' } = {}) {
   let created = false;
 
   openModal({
-    title: 'Neues Deck',
+    title: t('view.decks.createTitle'),
     content: [
-      el('label', { class: 'deck-modal-label' }, 'Name'),
+      el('label', { class: 'deck-modal-label' }, t('view.decks.labelName')),
       nameInput,
-      el('label', { class: 'deck-modal-label' }, 'Farbe'),
+      el('label', { class: 'deck-modal-label' }, t('view.decks.labelColor')),
       colorRow,
       el('p', { class: 'lede', style: { fontSize: '.85rem' } },
-        'Deck wird leer angelegt. Befülle es über die Favoriten-Seite mit Bulk-Aktionen oder über das ＋ Symbol an Ausdrücken.'
+        t('view.decks.createHint')
       )
     ],
     actions: [
-      { label: 'Abbrechen', variant: 'ghost', onClick: () => { /* cancel */ } },
+      { label: t('btn.cancel'), variant: 'ghost', onClick: () => { /* cancel */ } },
       {
-        label: 'Anlegen', variant: 'primary',
+        label: t('view.decks.createAction'), variant: 'primary',
         onClick: () => {
           const name = nameInput.value.trim();
           if (!name) {
-            toast('Bitte einen Namen vergeben', 'info', 1600);
+            toast(t('view.decks.nameRequired'), 'info', 1600);
             nameInput.focus();
             return false; // verhindere Schließen
           }
           const id = createDeck({ name, color: getColor() });
           created = true;
-          toast('Deck angelegt ✓', 'success', 1400);
+          toast(t('view.decks.created'), 'success', 1400);
           if (onCreated) onCreated(id);
         }
       }
@@ -207,22 +210,22 @@ function openEditDeckModal(deck, onSaved) {
   const { row: colorRow, getColor } = deckColorRow(deck.color);
 
   openModal({
-    title: 'Deck bearbeiten',
+    title: t('view.decks.editTitle'),
     content: [
-      el('label', { class: 'deck-modal-label' }, 'Name'),
+      el('label', { class: 'deck-modal-label' }, t('view.decks.labelName')),
       nameInput,
-      el('label', { class: 'deck-modal-label' }, 'Farbe'),
+      el('label', { class: 'deck-modal-label' }, t('view.decks.labelColor')),
       colorRow
     ],
     actions: [
-      { label: 'Abbrechen', variant: 'ghost', onClick: () => {} },
+      { label: t('btn.cancel'), variant: 'ghost', onClick: () => {} },
       {
-        label: 'Speichern', variant: 'primary',
+        label: t('btn.save'), variant: 'primary',
         onClick: () => {
           const name = nameInput.value.trim();
-          if (!name) { toast('Name darf nicht leer sein', 'info', 1600); return false; }
+          if (!name) { toast(t('view.decks.nameEmpty'), 'info', 1600); return false; }
           updateDeck(deck.id, { name, color: getColor() });
-          toast('Deck gespeichert ✓', 'success', 1400);
+          toast(t('view.decks.saved'), 'success', 1400);
           if (onSaved) onSaved();
         }
       }

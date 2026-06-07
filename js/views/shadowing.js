@@ -11,6 +11,7 @@
 // „Ich hab's nachgesprochen"-Pfad, damit der Modus offline nutzbar bleibt.
 
 import { el, go, speak, toast } from '../util.js';
+import { t } from '../util/i18n.js';
 import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { icon } from '../util/icons.js';
 import { sfx, vibrate } from '../util/sounds.js';
@@ -75,8 +76,8 @@ function renderSetup(host) {
   let source = 'all';
   let count = DEFAULT_COUNT;
 
-  const select = el('select', { class: 'shadow-select', ariaLabel: 'Dialekt wählen' },
-    el('option', { value: 'all' }, '🌍 Alle Dialekte'),
+  const select = el('select', { class: 'shadow-select', ariaLabel: t('view.shadowing.selectAria') },
+    el('option', { value: 'all' }, t('view.shadowing.allDialects')),
     ...DIALEKTE.map(d => el('option', { value: d.id }, `${d.flag} ${d.name}`))
   );
   select.addEventListener('change', () => { source = select.value; });
@@ -98,29 +99,22 @@ function renderSetup(host) {
   host.appendChild(el('div', { class: 'shadow-setup' },
     el('div', { class: 'shadow-hero', dataset: { reveal: 'up' } },
       el('div', { class: 'shadow-hero-icon' }, '🗣️'),
-      el('h2', {}, 'Shadowing'),
-      el('p', { class: 'lede' },
-        'Hören, sofort nachsprechen, Score bekommen. Die schnellste Art, ein ' +
-        'Gefühl für Klang und Rhythmus eines Dialekts zu bekommen.')
+      el('h2', {}, t('view.shadowing.title')),
+      el('p', { class: 'lede' }, t('view.shadowing.lede'))
     ),
     el('div', { class: 'shadow-setup-card' },
-      el('label', { class: 'shadow-field-label' }, 'Dialekt'),
+      el('label', { class: 'shadow-field-label' }, t('view.shadowing.dialectLabel')),
       select,
-      el('label', { class: 'shadow-field-label' }, 'Wie viele Ausdrücke?'),
+      el('label', { class: 'shadow-field-label' }, t('view.shadowing.countLabel')),
       countRow,
       el('button', {
         class: 'btn btn-primary shadow-start-btn',
         dataset: { magnetic: '12' },
         onClick: () => startSession(host, source, count)
-      }, icon('speaker'), ' Los geht’s'),
+      }, icon('speaker'), ' ' + t('view.shadowing.start')),
       recogOk
-        ? el('div', { class: 'pron-recog-note' },
-            'ⓘ Die Aussprache-Bewertung nutzt die Spracherkennung deines Browsers — ' +
-            'dabei kann Audio an den Browser-Dienst (ggf. online) gehen. Ohne Erkennung ' +
-            'kannst du trotzdem hören und selbst bestätigen.')
-        : el('div', { class: 'shadow-note-warn' },
-            '⚠️ Dein Browser unterstützt keine Aussprache-Erkennung (versuche Chrome/Edge). ' +
-            'Du kannst trotzdem üben: hören und selbst bestätigen.')
+        ? el('div', { class: 'pron-recog-note' }, t('view.shadowing.recogNote'))
+        : el('div', { class: 'shadow-note-warn' }, t('view.shadowing.recogWarn'))
     )
   ));
 }
@@ -136,8 +130,8 @@ function startSession(host, source, count) {
   if (!queue.length) {
     host.innerHTML = '';
     host.appendChild(el('div', { class: 'shadow-empty' },
-      el('p', {}, 'Für diese Auswahl gibt es keine Ausdrücke.'),
-      el('button', { class: 'btn btn-secondary', onClick: () => renderSetup(host) }, '← Zurück')
+      el('p', {}, t('view.shadowing.empty')),
+      el('button', { class: 'btn btn-secondary', onClick: () => renderSetup(host) }, t('view.shadowing.back'))
     ));
     return;
   }
@@ -169,7 +163,7 @@ function startSession(host, source, count) {
     const tallyStars = results.reduce((s, r) => s + (r.stars || 0), 0);
 
     const progress = el('div', { class: 'shadow-progress' },
-      el('div', { class: 'shadow-progress-text' }, `Ausdruck ${idx + 1} / ${queue.length}`),
+      el('div', { class: 'shadow-progress-text' }, t('view.shadowing.progress', { n: idx + 1, total: queue.length })),
       el('div', { class: 'shadow-progress-stars' }, '⭐ ' + tallyStars),
       el('div', { class: 'shadow-progress-bar' },
         el('div', { class: 'shadow-progress-fill', style: { width: Math.round((idx / queue.length) * 100) + '%' } })
@@ -188,8 +182,8 @@ function startSession(host, source, count) {
       ipaText ? el('div', { class: 'shadow-card-ipa' }, '/' + ipaText + '/') : null,
       el('div', { class: 'shadow-card-hd' }, '↦ ' + c.hochdeutsch),
       el('div', { class: 'shadow-listen-row' },
-        el('button', { class: 'btn btn-secondary shadow-listen-btn', onClick: playNormal }, '🔊 Anhören'),
-        el('button', { class: 'btn btn-ghost shadow-slow-btn', onClick: playSlow }, '🐢 Langsam')
+        el('button', { class: 'btn btn-secondary shadow-listen-btn', onClick: playNormal }, t('view.shadowing.listen')),
+        el('button', { class: 'btn btn-ghost shadow-slow-btn', onClick: playSlow }, t('view.shadowing.slow'))
       )
     );
 
@@ -198,21 +192,21 @@ function startSession(host, source, count) {
 
     // Manueller Bestätigungs-Pfad (Fallback ohne Erkennung).
     const manualBtn = el('button', { class: 'btn btn-secondary shadow-manual-btn' },
-      '✓ Hab’s nachgesprochen');
+      t('view.shadowing.manual'));
     manualBtn.addEventListener('click', () => {
       sfx.correct(); vibrate(8);
       record(1, 0.6);
-      showVerdict(result, { stars: 1, label: 'Gut geübt', score: 0.6 }, '');
+      showVerdict(result, { stars: 1, label: t('view.shadowing.manualVerdict'), score: 0.6 }, '');
       lockAndAdvance(actionRow, next);
     });
 
     const skipBtn = el('button', { class: 'btn btn-ghost shadow-skip-btn', onClick: () => { sfx.click(); record(0, 0); next(); } },
-      'Überspringen');
+      t('view.shadowing.skip'));
 
     if (isPronunciationSupported()) {
-      const micBtn = el('button', { class: 'shadow-mic-btn', ariaLabel: 'Nachsprechen' },
+      const micBtn = el('button', { class: 'shadow-mic-btn', ariaLabel: t('view.shadowing.micAria') },
         icon('speaker', { size: 26 }));
-      const micLabel = el('span', { class: 'shadow-mic-label', 'aria-live': 'polite' }, 'Tippe und sprich nach');
+      const micLabel = el('span', { class: 'shadow-mic-label', 'aria-live': 'polite' }, t('view.shadowing.micIdle'));
       let listening = false, finalShown = false;
 
       function resetMic() {
@@ -224,13 +218,13 @@ function startSession(host, source, count) {
         if (listening) { stopActive(); return; }
         listening = true; finalShown = false;
         micBtn.classList.add('is-listening');
-        micLabel.textContent = 'Höre zu… sprich jetzt';
+        micLabel.textContent = t('view.shadowing.micListening');
         result.className = 'shadow-result';
         result.innerHTML = '';
         sfx.click();
         currentStop = startListening({
           lang,
-          onPartial: (t) => { micLabel.textContent = '„' + t + '…"'; },
+          onPartial: (partial) => { micLabel.textContent = t('view.shadowing.micPartial', { t: partial }); },
           onResult: ({ transcript, alternatives }) => {
             finalShown = true;
             const best = scoreBestAlternative(c.ausdruck,
@@ -244,18 +238,18 @@ function startSession(host, source, count) {
               lockAndAdvance(actionRow, next);
             } else {
               sfx.wrong();
-              micLabel.textContent = 'Nochmal versuchen';
+              micLabel.textContent = t('view.shadowing.micRetry');
             }
           },
           onError: () => {
             finalShown = true;
-            micLabel.textContent = 'Erkennung nicht verfügbar — du kannst selbst bestätigen.';
+            micLabel.textContent = t('view.shadowing.micErrorLabel');
             result.className = 'shadow-result is-miss';
-            result.textContent = 'Mikrofon/Erkennung nicht verfügbar.';
+            result.textContent = t('view.shadowing.micErrorResult');
             resetMic();
           },
           onEnd: () => {
-            if (!finalShown) micLabel.textContent = 'Nichts gehört — nochmal?';
+            if (!finalShown) micLabel.textContent = t('view.shadowing.micNothing');
             resetMic();
           },
         });
@@ -273,7 +267,7 @@ function startSession(host, source, count) {
     host.appendChild(result);
     host.appendChild(actionRow);
     host.appendChild(el('div', { class: 'pron-recog-note shadow-card-note' },
-      'ⓘ Aussprache-Bewertung nutzt die Browser-Spracherkennung (ggf. online).'));
+      t('view.shadowing.cardNote')));
 
     // Audio automatisch starten — Shadowing beginnt mit Hören.
     setTimeout(() => speak(c.ausdruck, lang, { dialektId: c.dialektId }), 280);
@@ -291,7 +285,7 @@ function showVerdict(result, grade, heard) {
   if (grade.score != null) {
     result.appendChild(el('span', { class: 'shadow-result-pct' }, Math.round(grade.score * 100) + '%'));
   }
-  if (heard) result.appendChild(el('span', { class: 'shadow-result-heard' }, 'gehört: „' + heard + '"'));
+  if (heard) result.appendChild(el('span', { class: 'shadow-result-heard' }, t('view.shadowing.heard', { heard })));
 }
 
 // Nach einem bestandenen Versuch: „Weiter"-Knopf zeigen + nach kurzer Pause
@@ -302,7 +296,7 @@ function lockAndAdvance(actionRow, next) {
   const go1 = () => { if (advanced) return; advanced = true; next(); };
   actionRow.innerHTML = '';
   actionRow.appendChild(el('button', { class: 'btn btn-primary shadow-next-btn', dataset: { magnetic: '10' }, onClick: go1 },
-    'Weiter →'));
+    t('view.shadowing.next')));
   setTimeout(go1, 1100);
 }
 
@@ -338,42 +332,42 @@ function renderSessionSummary(host, queue, results, source, count) {
         svg,
         el('div', { class: 'summary-ring-inner' },
           el('div', { class: 'summary-ring-pct' }, pct + '%'),
-          el('div', { class: 'summary-ring-label' }, 'Aussprache')
+          el('div', { class: 'summary-ring-label' }, t('view.shadowing.ringLabel'))
         )
       ),
       el('div', { class: 'summary-header-text' },
-        el('h2', {}, isGreat ? '🎉 Klasse gesprochen!' : isFine ? '👍 Solide!' : '💪 Weiter üben!'),
-        el('p', {}, `${s.count} Ausdrücke · ${s.stars}/${s.maxStars} Sterne · ${s.perfect}× perfekt.`)
+        el('h2', {}, isGreat ? t('view.shadowing.headlineGreat') : isFine ? t('view.shadowing.headlineFine') : t('view.shadowing.headlinePractice')),
+        el('p', {}, t('view.shadowing.summaryLine', { count: s.count, stars: s.stars, maxStars: s.maxStars, perfect: s.perfect }))
       )
     ),
     el('div', { class: 'summary-xp-earned' },
       el('span', { class: 'summary-xp-num' }, '+' + s.xp),
-      el('span', { class: 'summary-xp-unit' }, 'XP verdient')
+      el('span', { class: 'summary-xp-unit' }, t('view.shadowing.xpEarned'))
     ),
     el('div', { class: 'summary-stats' },
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, icon('flame', { size: 20 })),
         el('div', { class: 'summary-stat-num' }, String(streak)),
-        el('div', { class: 'summary-stat-label' }, 'Streak')
+        el('div', { class: 'summary-stat-label' }, t('view.shadowing.statStreak'))
       ),
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, '🎯'),
         el('div', { class: 'summary-stat-num' }, s.accuracyPct + '%'),
-        el('div', { class: 'summary-stat-label' }, 'Treffer')
+        el('div', { class: 'summary-stat-label' }, t('view.shadowing.statHits'))
       ),
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, '🗣️'),
         el('div', { class: 'summary-stat-num' }, String(s.count)),
-        el('div', { class: 'summary-stat-label' }, 'Geübt')
+        el('div', { class: 'summary-stat-label' }, t('view.shadowing.statPracticed'))
       )
     ),
     el('div', { class: 'summary-cta' },
       el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => startSession(host, source, count) },
-        icon('refresh'), ' Nochmal'),
+        icon('refresh'), ' ' + t('view.shadowing.again')),
       el('button', { class: 'btn btn-secondary', onClick: () => renderSetup(host) },
-        icon('speaker'), ' Andere Auswahl'),
+        icon('speaker'), ' ' + t('view.shadowing.otherSelection')),
       el('button', { class: 'btn btn-ghost', onClick: () => go('#/statistiken') },
-        icon('zap'), ' Statistiken')
+        icon('zap'), ' ' + t('view.shadowing.stats'))
     )
   );
 

@@ -12,6 +12,7 @@ import { shareCard } from '../../util/share-card.js';
 import { formatIpa } from '../../util/ipa.js';
 import { isPronunciationSupported, startListening, scoreBestAlternative } from '../../util/pronunciation.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
+import { t } from '../../util/i18n.js';
 
 const SWIPE_THRESHOLD = 100;
 const ROTATE_FACTOR  = 0.06;
@@ -29,7 +30,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
 
   wrap.appendChild(el('div', { class: 'flashcard-progress' },
     el('button', { class: 'btn btn-ghost', style: { padding: '8px 16px' }, onClick: onAbort },
-      el('span', { html: '←' }), ' Auswahl'
+      el('span', { html: '←' }), ' ' + t('view.flashcard.selection')
     ),
     el('div', { class: 'fc-pbar' },
       el('div', { class: 'fc-pbar-fill', style: { width: progress + '%' } })
@@ -47,10 +48,10 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
 
   if (mode === 'reverse') {
     // Hochdeutsch zuerst, Dialekt-Ausdruck als Antwort
-    front.appendChild(el('div', { class: 'fc-label' }, 'Hochdeutsch · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.labelHochdeutsch') + ' · ' + c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-expr' }, c.hochdeutsch));
-    front.appendChild(el('div', { class: 'fc-hint' }, 'Welcher Ausdruck im Dialekt?'));
-    back.appendChild(el('div', { class: 'fc-label' }, 'Antwort'));
+    front.appendChild(el('div', { class: 'fc-hint' }, t('view.flashcard.reverseHint')));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.answer')));
     back.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'audio') {
@@ -60,14 +61,14 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       el('button', {
         class: 'fc-big-speak',
         onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); },
-        title: 'Anhören'
+        title: t('view.flashcard.listen')
       },
         icon('speaker', { size: 48 }),
-        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören')
+        el('div', { class: 'fc-big-speak-hint' }, t('view.flashcard.clickToListen'))
       )
     ));
-    front.appendChild(el('div', { class: 'fc-hint' }, 'Hör genau hin — Karte umdrehen für Auflösung'));
-    back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
+    front.appendChild(el('div', { class: 'fc-hint' }, t('view.flashcard.audioHint')));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solutionReveal')));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
@@ -78,7 +79,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     // Lückentext: Beispielsatz mit ausgeschnittenem Ausdruck
     const { before, hidden, after, found } = buildCloze(c.beispiel || '', c.ausdruck);
     const expected = found ? hidden : c.ausdruck;
-    front.appendChild(el('div', { class: 'fc-label' }, '✎ Lückentext · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.labelCloze') + ' · ' + c.dialektFlag + ' ' + c.dialektName));
     if (found) {
       const sentence = el('div', { class: 'fc-cloze-sentence' });
       sentence.appendChild(document.createTextNode(before));
@@ -88,11 +89,11 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     } else {
       front.appendChild(el('div', { class: 'fc-cloze-sentence' }, (c.beispiel || '') + ' _____'));
     }
-    front.appendChild(el('div', { class: 'fc-hint' }, 'Welches Wort fehlt? (Hochdeutsch: ' + c.hochdeutsch + ')'));
+    front.appendChild(el('div', { class: 'fc-hint' }, t('view.flashcard.clozeHint', { hd: c.hochdeutsch })));
     const clozeInput = el('input', {
       class: 'fc-type-input',
       type: 'text',
-      placeholder: 'Wort eingeben…',
+      placeholder: t('view.flashcard.phWord'),
       autocomplete: 'off',
       spellcheck: 'false'
     });
@@ -104,8 +105,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       const ok = checkTypedAnswer(clozeInput.value, expected);
       const distance = levenshteinSimple(normalizeForType(clozeInput.value), normalizeForType(expected));
       clozeFeedback.classList.remove('is-ok', 'is-close', 'is-wrong');
-      if (ok) { clozeFeedback.classList.add('is-ok'); clozeFeedback.textContent = '✓ Richtig — ' + expected; sfx.correct(); vibrate([10, 30, 10]); }
-      else if (distance <= 2) { clozeFeedback.classList.add('is-close'); clozeFeedback.textContent = '◐ Fast — ' + expected; sfx.rate(2); }
+      if (ok) { clozeFeedback.classList.add('is-ok'); clozeFeedback.textContent = t('view.flashcard.fbCorrect') + expected; sfx.correct(); vibrate([10, 30, 10]); }
+      else if (distance <= 2) { clozeFeedback.classList.add('is-close'); clozeFeedback.textContent = t('view.flashcard.fbClose') + expected; sfx.rate(2); }
       else { clozeFeedback.classList.add('is-wrong'); clozeFeedback.textContent = '✗ ' + expected; sfx.wrong(); }
       onFlip(card);
     };
@@ -114,10 +115,10 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     });
     front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
       clozeInput, clozeFeedback,
-      el('button', { class: 'btn btn-primary', onClick: submitCloze }, 'Prüfen ↵')
+      el('button', { class: 'btn btn-primary', onClick: submitCloze }, t('view.flashcard.check'))
     ));
     setTimeout(() => clozeInput.focus(), 80);
-    back.appendChild(el('div', { class: 'fc-label' }, 'Vollständiger Satz'));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.fullSentence')));
     back.appendChild(el('div', { class: 'fc-cloze-full' }, c.beispiel || ''));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + (c.beispiel_hd || c.hochdeutsch)));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
@@ -128,7 +129,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     const input = el('input', {
       class: 'fc-type-input',
       type: 'text',
-      placeholder: 'Antwort eintippen…',
+      placeholder: t('view.flashcard.phAnswer'),
       autocomplete: 'off',
       spellcheck: 'false'
     });
@@ -143,8 +144,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       if (ok) { feedback.classList.add('is-ok'); sfx.correct(); vibrate([10, 30, 10]); }
       else if (distance <= 2) { feedback.classList.add('is-close'); sfx.rate(2); }
       else { feedback.classList.add('is-wrong'); sfx.wrong(); }
-      feedback.textContent = ok ? '✓ Richtig — ' + c.hochdeutsch
-        : distance <= 2 ? '◐ Fast — ' + c.hochdeutsch
+      feedback.textContent = ok ? t('view.flashcard.fbCorrect') + c.hochdeutsch
+        : distance <= 2 ? t('view.flashcard.fbClose') + c.hochdeutsch
         : '✗ ' + c.hochdeutsch;
       onFlip(card);
     };
@@ -153,19 +154,19 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     });
     front.appendChild(el('div', { class: 'fc-type-form', onClick: (e) => e.stopPropagation() },
       input, feedback,
-      el('button', { class: 'btn btn-primary', onClick: submitType }, 'Prüfen ↵')
+      el('button', { class: 'btn btn-primary', onClick: submitType }, t('view.flashcard.check'))
     ));
     setTimeout(() => input.focus(), 80);
-    back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solution')));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'mc') {
     // Multiple Choice — 4 Optionen, kein Flip nötig
     front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
-    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Wähle die richtige Bedeutung:'));
+    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, t('view.flashcard.mcHint')));
     const choices = buildMcChoices(c, ALLE_AUSDRUECKE);
-    const optRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten', onClick: (e) => e.stopPropagation() });
+    const optRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': t('view.flashcard.optionsAria'), onClick: (e) => e.stopPropagation() });
     const verdict = mcVerdict();
     let answered = false;
     choices.forEach((opt) => {
@@ -198,29 +199,29 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     });
     front.appendChild(optRow);
     front.appendChild(verdict.region);
-    back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.meaning')));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'diktat') {
     // Diktat: TTS spielt Beispielsatz (Fallback: Ausdruck), User tippt mit
     const dictText = (c.beispiel && c.beispiel.trim()) ? c.beispiel : c.ausdruck;
     const playDict = () => { sfx.click(); speak(dictText, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); };
-    front.appendChild(el('div', { class: 'fc-label' }, '✍ Diktat · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.labelDiktat') + ' · ' + c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
         class: 'fc-big-speak',
         onClick: (e) => { e.stopPropagation(); playDict(); },
-        title: 'Anhören'
+        title: t('view.flashcard.listen')
       },
         icon('speaker', { size: 48 }),
-        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören')
+        el('div', { class: 'fc-big-speak-hint' }, t('view.flashcard.clickToListen'))
       )
     ));
-    front.appendChild(el('div', { class: 'fc-hint' }, 'Tippe ein, was du hörst:'));
+    front.appendChild(el('div', { class: 'fc-hint' }, t('view.flashcard.diktatHint')));
     const dictInput = el('input', {
       class: 'fc-type-input',
       type: 'text',
-      placeholder: 'Mitschreiben…',
+      placeholder: t('view.flashcard.phDictation'),
       autocomplete: 'off',
       spellcheck: 'false'
     });
@@ -235,11 +236,11 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       dictFeedback.classList.remove('is-ok', 'is-close', 'is-wrong');
       if (ok) {
         dictFeedback.classList.add('is-ok');
-        dictFeedback.textContent = '✓ Richtig — ' + dictText;
+        dictFeedback.textContent = t('view.flashcard.fbCorrect') + dictText;
         sfx.correct(); vibrate([10, 30, 10]);
       } else if (distance <= tolerance) {
         dictFeedback.classList.add('is-close');
-        dictFeedback.textContent = '◐ Fast — ' + dictText;
+        dictFeedback.textContent = t('view.flashcard.fbClose') + dictText;
         sfx.rate(2);
       } else {
         dictFeedback.classList.add('is-wrong');
@@ -257,32 +258,32 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
         el('button', {
           class: 'btn btn-ghost',
           onClick: (e) => { e.stopPropagation(); playDict(); },
-          title: 'Nochmal anhören'
-        }, '🔁 Nochmal anhören'),
-        el('button', { class: 'btn btn-primary', onClick: submitDict }, 'Prüfen ↵')
+          title: t('view.flashcard.replay')
+        }, t('view.flashcard.replayBtn')),
+        el('button', { class: 'btn btn-primary', onClick: submitDict }, t('view.flashcard.check'))
       )
     ));
     setTimeout(() => { dictInput.focus(); playDict(); }, 200);
-    back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solution')));
     back.appendChild(el('div', { class: 'fc-expr' }, dictText));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + (c.beispiel_hd || c.hochdeutsch)));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'hoeren') {
     // Hörverständnis: Nur Audio (Ausdruck), 4 Optionen mit Hochdeutsch-Übersetzungen
-    front.appendChild(el('div', { class: 'fc-label' }, '👂 Hörverständnis · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.labelHoeren') + ' · ' + c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
         class: 'fc-big-speak',
         onClick: (e) => { e.stopPropagation(); sfx.click(); speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); },
-        title: 'Anhören'
+        title: t('view.flashcard.listen')
       },
         icon('speaker', { size: 48 }),
-        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören')
+        el('div', { class: 'fc-big-speak-hint' }, t('view.flashcard.clickToListen'))
       )
     ));
-    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Was bedeutet das? Wähle die richtige Übersetzung:'));
+    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, t('view.flashcard.hoerenHint')));
     const hChoices = buildMcChoices(c, ALLE_AUSDRUECKE);
-    const hRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten', onClick: (e) => e.stopPropagation() });
+    const hRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': t('view.flashcard.optionsAria'), onClick: (e) => e.stopPropagation() });
     const hVerdict = mcVerdict();
     let hAnswered = false;
     hChoices.forEach((opt) => {
@@ -314,27 +315,27 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(hVerdict.region);
     // Auto-play beim Erscheinen (nur falls Karte noch im DOM)
     setTimeout(() => { if (card.isConnected) speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); }, 200);
-    back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solutionReveal')));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'voice-quiz') {
     // Voice-Quiz: TTS spielt Hochdeutsch, User wählt passenden Dialekt-Ausdruck
     const playHd = () => { sfx.click(); speak(c.hochdeutsch, 'de-DE'); };
-    front.appendChild(el('div', { class: 'fc-label' }, '🔊 Voice-Quiz · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.labelVoiceQuiz') + ' · ' + c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-audio-only' },
       el('button', {
         class: 'fc-big-speak',
         onClick: (e) => { e.stopPropagation(); playHd(); },
-        title: 'Hochdeutsch anhören'
+        title: t('view.flashcard.listenHd')
       },
         icon('speaker', { size: 48 }),
-        el('div', { class: 'fc-big-speak-hint' }, 'Klicken zum Hören (Hochdeutsch)')
+        el('div', { class: 'fc-big-speak-hint' }, t('view.flashcard.clickToListenHd'))
       )
     ));
-    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, 'Welcher Dialekt-Ausdruck passt?'));
+    front.appendChild(el('div', { class: 'fc-hint fc-mc-hint' }, t('view.flashcard.voiceQuizHint')));
     const vChoices = buildMcChoices(c, ALLE_AUSDRUECKE);
-    const vRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten', onClick: (e) => e.stopPropagation() });
+    const vRow = el('div', { class: 'fc-mc-options', role: 'group', 'aria-label': t('view.flashcard.optionsAria'), onClick: (e) => e.stopPropagation() });
     const vVerdict = mcVerdict();
     let vAnswered = false;
     vChoices.forEach((opt) => {
@@ -368,29 +369,29 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     front.appendChild(vVerdict.region);
     // Auto-play Hochdeutsch (nur falls Karte noch im DOM)
     setTimeout(() => { if (card.isConnected) speak(c.hochdeutsch, 'de-DE'); }, 200);
-    back.appendChild(el('div', { class: 'fc-label' }, 'Auflösung'));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solutionReveal')));
     back.appendChild(el('div', { class: 'fc-expr' }, c.ausdruck));
     back.appendChild(el('div', { class: 'fc-hd' }, '↦ ' + c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
   } else if (mode === 'pron') {
     // Aussprache-Check via Web Speech Recognition
-    front.appendChild(el('div', { class: 'fc-label' }, '🎤 Aussprache · ' + c.dialektFlag + ' ' + c.dialektName));
+    front.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.labelPron') + ' · ' + c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
     front.appendChild(el('div', { class: 'expr-ipa' }, formatIpa(c.ausdruck, c.dialektId).replace(/^\/|\/$/g, '')));
     if (!isPronunciationSupported()) {
       front.appendChild(el('div', { class: 'fc-hint', style: { color: 'var(--warm, #fb923c)' } },
-        'Aussprache-Erkennung wird vom Browser nicht unterstützt. Versuche Chrome/Edge.'));
-      back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+        t('view.flashcard.pronUnsupported')));
+      back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solution')));
       back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
       back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     } else {
-      const statusEl = el('div', { class: 'pron-check-status' }, 'Klicke das Mikrofon und sprich den Ausdruck.');
+      const statusEl = el('div', { class: 'pron-check-status' }, t('view.flashcard.pronIdle'));
       // currentStop MUSS außerhalb des Handlers leben, damit der Stopp-Klick
       // dieselbe Referenz sieht (vorher let-im-Handler → TDZ-ReferenceError).
       let currentStop = null;
       const micBtn = el('button', {
         class: 'pron-mic-btn',
-        title: 'Aufnahme starten/stoppen',
+        title: t('view.flashcard.pronMicTitle'),
         onClick: (e) => {
           e.stopPropagation();
           if (micBtn.classList.contains('is-recording')) {
@@ -400,7 +401,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
           micBtn.classList.add('is-recording');
           statusEl.classList.remove('is-ok', 'is-wrong');
           statusEl.classList.add('is-listening');
-          statusEl.textContent = 'Höre zu… sprich jetzt.';
+          statusEl.textContent = t('view.flashcard.pronListening');
           currentStop = startListening({
             lang: c.dialektLang || 'de-DE',
             onPartial: (t) => { statusEl.textContent = '… ' + t; },
@@ -410,8 +411,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
               statusEl.classList.remove('is-listening');
               statusEl.classList.add(best.ok ? 'is-ok' : 'is-wrong');
               statusEl.textContent = best.ok
-                ? `✓ Gehört: „${best.transcript}" (${Math.round(best.score * 100)}%)`
-                : `✗ Gehört: „${best.transcript}" — versuche es nochmal`;
+                ? t('view.flashcard.pronHeardOk', { transcript: best.transcript, pct: Math.round(best.score * 100) })
+                : t('view.flashcard.pronHeardWrong', { transcript: best.transcript });
               if (best.ok) {
                 sfx.correct(); vibrate([10, 30, 10]);
                 setTimeout(() => onFlip(card), 800);
@@ -422,7 +423,7 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
             onError: (err) => {
               statusEl.classList.remove('is-listening');
               statusEl.classList.add('is-wrong');
-              statusEl.textContent = 'Fehler: ' + (err.message || err);
+              statusEl.textContent = t('view.flashcard.pronError') + (err.message || err);
               micBtn.classList.remove('is-recording');
             },
             onEnd: () => {
@@ -436,8 +437,8 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
         micBtn, statusEl
       ));
       front.appendChild(el('div', { class: 'pron-recog-note' },
-        'ⓘ nutzt die Spracherkennung deines Browsers — dabei kann Audio an den Browser-Dienst (ggf. online) gehen.'));
-      back.appendChild(el('div', { class: 'fc-label' }, 'Lösung'));
+        t('view.flashcard.pronRecogNote')));
+      back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.solution')));
       back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
       back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
     }
@@ -445,12 +446,12 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
     // Klassisch
     front.appendChild(el('div', { class: 'fc-label' }, c.dialektFlag + ' ' + c.dialektName));
     front.appendChild(el('div', { class: 'fc-expr is-speakable' }, c.ausdruck));
-    front.appendChild(el('div', { class: 'expr-ipa', title: 'Lautschrift (IPA)' }, formatIpa(c.ausdruck, c.dialektId).replace(/^\/|\/$/g, '')));
-    front.appendChild(el('div', { class: 'fc-hint' }, 'Klicken / Leertaste umdrehen · ziehen zum Bewerten'));
-    back.appendChild(el('div', { class: 'fc-label' }, 'Bedeutung'));
+    front.appendChild(el('div', { class: 'expr-ipa', title: t('view.flashcard.ipaTitle') }, formatIpa(c.ausdruck, c.dialektId).replace(/^\/|\/$/g, '')));
+    front.appendChild(el('div', { class: 'fc-hint' }, t('view.flashcard.classicHintFront')));
+    back.appendChild(el('div', { class: 'fc-label' }, t('view.flashcard.meaning')));
     back.appendChild(el('div', { class: 'fc-hd' }, c.hochdeutsch));
     back.appendChild(el('div', { class: 'fc-meaning' }, c.bedeutung));
-    back.appendChild(el('div', { class: 'fc-hint' }, 'Wie war\'s? Bewerte unten · oder wische →'));
+    back.appendChild(el('div', { class: 'fc-hint' }, t('view.flashcard.classicHintBack')));
   }
 
   inner.appendChild(front);
@@ -459,9 +460,9 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
   card.appendChild(inner);
 
   // Swipe overlay labels
-  card.appendChild(el('div', { class: 'fc-swipe-cue cue-hard' },  'Schwer'));
-  card.appendChild(el('div', { class: 'fc-swipe-cue cue-med' },   'Mittel'));
-  card.appendChild(el('div', { class: 'fc-swipe-cue cue-easy' },  'Leicht'));
+  card.appendChild(el('div', { class: 'fc-swipe-cue cue-hard' },  t('view.flashcard.ratingHard')));
+  card.appendChild(el('div', { class: 'fc-swipe-cue cue-med' },   t('view.flashcard.ratingMed')));
+  card.appendChild(el('div', { class: 'fc-swipe-cue cue-easy' },  t('view.flashcard.ratingEasy')));
 
   bindDrag(card, (stand) => {
     rateAndPersist(c, stand, session, onRate);
@@ -470,16 +471,16 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
   wrap.appendChild(card);
 
   wrap.appendChild(el('div', { class: 'flashcard-controls' },
-    el('button', { class: 'fc-btn', onClick: onPrev, disabled: session.idx === 0, title: 'Zurück' },
+    el('button', { class: 'fc-btn', onClick: onPrev, disabled: session.idx === 0, title: t('view.flashcard.prev') },
       el('span', { html: '←' })
     ),
     el('div', { class: 'fc-rating' },
       el('button', { class: 'fc-rate hard', onClick: () => { sfx.rate(1); vibrate(8);  rateAndPersist(c, 1, session, onRate); } },
-        el('span', { class: 'fc-rate-label' }, 'Schwer'), ivalHint(preview, 1)),
+        el('span', { class: 'fc-rate-label' }, t('view.flashcard.ratingHard')), ivalHint(preview, 1)),
       el('button', { class: 'fc-rate med',  onClick: () => { sfx.rate(2); vibrate(12); rateAndPersist(c, 2, session, onRate); } },
-        el('span', { class: 'fc-rate-label' }, 'Mittel'), ivalHint(preview, 3)),
+        el('span', { class: 'fc-rate-label' }, t('view.flashcard.ratingMed')), ivalHint(preview, 3)),
       el('button', { class: 'fc-rate easy', onClick: (e) => { sfx.rate(3); vibrate([10, 40, 10]); confettiBurst(e.currentTarget, { count: 60 }); rateAndPersist(c, 3, session, onRate); } },
-        el('span', { class: 'fc-rate-label' }, 'Leicht'), ivalHint(preview, 4))
+        el('span', { class: 'fc-rate-label' }, t('view.flashcard.ratingEasy')), ivalHint(preview, 4))
     ),
     speakControl(c)
   ));
@@ -489,25 +490,25 @@ export function renderFlashcard(session, { onPrev, onRate, onAbort, onRerender, 
       class: 'btn btn-ghost',
       onClick: () => {
         const added = toggleFavorit(c.dialektId, c.id);
-        toast(added ? 'Zu Favoriten hinzugefügt ♥' : 'Aus Favoriten entfernt', 'success', 1400);
+        toast(added ? t('view.flashcard.favAdded') : t('view.flashcard.favRemoved'), 'success', 1400);
         onRerender();
       }
-    }, fav ? '♥ Aus Favoriten' : '♡ Zu Favoriten'),
+    }, fav ? t('view.flashcard.favBtnRemove') : t('view.flashcard.favBtnAdd')),
     el('button', {
       class: 'btn btn-ghost',
       onClick: async (e) => {
         e.currentTarget.disabled = true;
         try {
           const result = await shareCard(c);
-          toast(result === 'shared' ? 'Karte geteilt ✓' : 'Bild heruntergeladen ↓', 'success', 1600);
+          toast(result === 'shared' ? t('view.flashcard.shareShared') : t('view.flashcard.shareDownloaded'), 'success', 1600);
         } catch (err) {
-          toast('Teilen fehlgeschlagen', 'error', 2000);
+          toast(t('view.flashcard.shareFailed'), 'error', 2000);
         } finally {
           e.currentTarget.disabled = false;
         }
       },
-      title: 'Karte als Bild teilen'
-    }, '📤 Teilen')
+      title: t('view.flashcard.shareTitle')
+    }, t('view.flashcard.shareBtn'))
   ));
 
   return wrap;
@@ -521,13 +522,12 @@ function rateAndPersist(card, stand, session, onRate) {
 // Kompakte deutsche Intervall-Beschriftung für die Bewertungs-Buttons.
 function fmtInterval(days) {
   const d = Math.round(Number(days) || 0);
-  if (d <= 0) return '<1 T';
-  if (d === 1) return '1 T';
-  if (d < 7) return d + ' T';
-  if (d < 30) return Math.round(d / 7) + ' Wo';
-  if (d < 365) return Math.round(d / 30) + ' Mt';
+  if (d <= 0) return t('view.flashcard.ivalLtDay');
+  if (d < 7) return t('view.flashcard.ivalDays', { n: d });
+  if (d < 30) return t('view.flashcard.ivalWeeks', { n: Math.round(d / 7) });
+  if (d < 365) return t('view.flashcard.ivalMonths', { n: Math.round(d / 30) });
   const y = d / 365;
-  return (y < 10 ? y.toFixed(1) : String(Math.round(y))) + ' J';
+  return t('view.flashcard.ivalYears', { n: (y < 10 ? y.toFixed(1) : String(Math.round(y))) });
 }
 
 // Intervall-Hinweis (oder null im SM-2-Modus, wo es keine Vorschau gibt).
@@ -576,8 +576,8 @@ function speakControl(c) {
   const btn = el('button', {
     class: 'fc-btn fc-speak',
     onClick: () => { sfx.click(); vibrate(6); speak(c.ausdruck, c.dialektLang || 'de-DE', { dialektId: c.dialektId }); },
-    title: 'Anhören',
-    'aria-label': `„${c.ausdruck}" anhören`,
+    title: t('view.flashcard.listen'),
+    'aria-label': t('view.flashcard.listenAria', { term: c.ausdruck }),
   },
     el('div', { class: 'speak-icon' }, icon('speaker', { size: 20 })),
     canvas
@@ -698,7 +698,7 @@ function mcVerdict() {
     region,
     say(correct, answer) {
       region.className = 'fc-mc-verdict ' + (correct ? 'is-correct' : 'is-wrong');
-      region.textContent = correct ? `Richtig! ${answer}` : `Leider falsch. Richtig: ${answer}`;
+      region.textContent = correct ? t('view.flashcard.verdictCorrect', { answer }) : t('view.flashcard.verdictWrong', { answer });
     },
   };
 }

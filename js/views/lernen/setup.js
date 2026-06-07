@@ -14,6 +14,7 @@
 // das in sessionStorage gespeicherte Lern-Modus-Verhalten bleiben unverändert.
 
 import { el, go } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 import { KATEGORIE_LIST } from '../../../data/kategorien.js';
 import { icon } from '../../util/icons.js';
@@ -34,23 +35,23 @@ import { memoizePerEpoch } from '../../util/learn-cache.js';
 // Modus-Definitionen (id → Anzeige). IDs bleiben identisch zum Bestand, damit
 // der in sessionStorage gespeicherte Modus weiter gültig ist.
 const MODE_DEFS = {
-  normal:       { icon: 'cards',    title: 'Klassisch',       desc: 'Dialekt → Hochdeutsch' },
-  reverse:      { icon: 'refresh',  title: 'Umgekehrt',       desc: 'Hochdeutsch → Dialekt' },
-  audio:        { icon: 'speaker',  title: 'Nur Audio',       desc: 'Hör zu, dann antworte' },
-  hoeren:       { icon: 'speaker',  title: 'Hörverständnis',  desc: 'Nur hören, dann antworten' },
-  'voice-quiz': { icon: 'speaker',  title: 'Voice-Quiz',      desc: 'Hochdeutsch hören → Dialekt wählen' },
-  diktat:       { icon: 'speaker',  title: 'Diktat',          desc: 'Hörsatz mit-tippen' },
-  pron:         { icon: 'speaker',  title: 'Aussprache',      desc: 'Sprechen üben mit Mikrofon' },
-  mc:           { icon: 'target',   title: 'Multiple Choice', desc: '4 Optionen — tippe die Bedeutung' },
-  type:         { icon: 'keyboard', title: 'Tippen',          desc: 'Antwort eintippen (mit Toleranz)' },
-  cloze:        { icon: 'target',   title: 'Lückentext',      desc: 'Fehlendes Wort im Satz ergänzen' }
+  normal:       { icon: 'cards',    title: t('view.setup.modeNormalTitle'),   desc: t('view.setup.modeNormalDesc') },
+  reverse:      { icon: 'refresh',  title: t('view.setup.modeReverseTitle'),  desc: t('view.setup.modeReverseDesc') },
+  audio:        { icon: 'speaker',  title: t('view.setup.modeAudioTitle'),    desc: t('view.setup.modeAudioDesc') },
+  hoeren:       { icon: 'speaker',  title: t('view.setup.modeHoerenTitle'),   desc: t('view.setup.modeHoerenDesc') },
+  'voice-quiz': { icon: 'speaker',  title: t('view.setup.modeVoiceQuizTitle'), desc: t('view.setup.modeVoiceQuizDesc') },
+  diktat:       { icon: 'speaker',  title: t('view.setup.modeDiktatTitle'),   desc: t('view.setup.modeDiktatDesc') },
+  pron:         { icon: 'speaker',  title: t('view.setup.modePronTitle'),     desc: t('view.setup.modePronDesc') },
+  mc:           { icon: 'target',   title: t('view.setup.modeMcTitle'),       desc: t('view.setup.modeMcDesc') },
+  type:         { icon: 'keyboard', title: t('view.setup.modeTypeTitle'),     desc: t('view.setup.modeTypeDesc') },
+  cloze:        { icon: 'target',   title: t('view.setup.modeClozeTitle'),    desc: t('view.setup.modeClozeDesc') }
 };
 
 // Gruppierung — reduziert die kognitive Last gegenüber 10 gleichwertigen Buttons.
 const MODE_GROUPS = [
-  { label: 'Empfohlen',          icon: 'sparkles', color: 'var(--brand)',   modes: ['normal', 'reverse'] },
-  { label: 'Audio & Aussprache', icon: 'speaker',  color: 'var(--accent-2)', modes: ['audio', 'hoeren', 'voice-quiz', 'diktat', 'pron'] },
-  { label: 'Fortgeschritten',    icon: 'zap',      color: 'var(--warm)',    modes: ['mc', 'type', 'cloze'] }
+  { label: t('view.setup.groupRecommended'), icon: 'sparkles', color: 'var(--brand)',   modes: ['normal', 'reverse'] },
+  { label: t('view.setup.groupAudio'),       icon: 'speaker',  color: 'var(--accent-2)', modes: ['audio', 'hoeren', 'voice-quiz', 'diktat', 'pron'] },
+  { label: t('view.setup.groupAdvanced'),    icon: 'zap',      color: 'var(--warm)',    modes: ['mc', 'type', 'cloze'] }
 ];
 
 // Themen-Farben (zyklisch über die Kategorien)
@@ -118,9 +119,9 @@ export function renderSetup(onStart) {
   let currentMode = (() => {
     try { return sessionStorage.getItem('dialekto:learnMode') || 'normal'; } catch { return 'normal'; }
   })();
-  const modeTitle = () => MODE_DEFS[currentMode]?.title || 'Klassisch';
+  const modeTitle = () => MODE_DEFS[currentMode]?.title || t('view.setup.modeNormalTitle');
   let ctaHintEl = null;
-  const syncCtaHint = () => { if (ctaHintEl) ctaHintEl.textContent = `Modus: ${modeTitle()}`; };
+  const syncCtaHint = () => { if (ctaHintEl) ctaHintEl.textContent = t('view.setup.ctaHint', { mode: modeTitle() }); };
 
   // 1 — Hero ------------------------------------------------------------------
   function renderHero() {
@@ -138,21 +139,21 @@ export function renderSetup(onStart) {
         onStart({ source: hasRecs ? 'recommendations' : 'all', mode: currentMode });
       }
     },
-      el('span', {}, hasProgress ? 'Weiterlernen' : 'Lernsitzung starten'),
+      el('span', {}, hasProgress ? t('view.setup.ctaContinue') : t('view.setup.ctaStart')),
       el('span', { html: ' →' })
     );
-    ctaHintEl = el('span', { class: 'lv-hero-cta-hint' }, `Modus: ${modeTitle()}`);
+    ctaHintEl = el('span', { class: 'lv-hero-cta-hint' }, t('view.setup.ctaHint', { mode: modeTitle() }));
 
     const heroBadges = [
-      ['🔥', `${ALLE_AUSDRUECKE.length.toLocaleString('de-DE')}+ Karten`],
-      ['🎙️', 'Audio & Aussprache'],
-      ['🏆', 'Sammle Abzeichen'],
-      ['📈', 'Verfolge Fortschritt']
+      ['🔥', t('view.setup.heroBadgeCards', { n: ALLE_AUSDRUECKE.length.toLocaleString('de-DE') })],
+      ['🎙️', t('view.setup.heroBadgeAudio')],
+      ['🏆', t('view.setup.heroBadgeBadges')],
+      ['📈', t('view.setup.heroBadgeProgress')]
     ];
 
-    const levelCard = el('aside', { class: 'lv-level-card', dataset: { tilt: '', tiltMax: '6' }, 'aria-label': `Level ${lvl.level}, ${title}` },
+    const levelCard = el('aside', { class: 'lv-level-card', dataset: { tilt: '', tiltMax: '6' }, 'aria-label': t('view.setup.levelAria', { level: lvl.level, title }) },
       el('div', { class: 'lv-level-top' },
-        el('span', { class: 'lv-level-eyebrow' }, 'Dein Level'),
+        el('span', { class: 'lv-level-eyebrow' }, t('view.setup.levelEyebrow')),
         el('span', { class: 'lv-level-num' }, String(lvl.level))
       ),
       el('div', { class: 'lv-level-title' }, title),
@@ -161,7 +162,7 @@ export function renderSetup(onStart) {
       ),
       el('div', { class: 'lv-level-meta' },
         el('span', {}, `${lvl.current} / ${lvl.needed} XP`),
-        el('span', {}, remaining > 0 ? `Noch ${remaining} XP bis Lv. ${lvl.level + 1}` : 'Level voll!')
+        el('span', {}, remaining > 0 ? t('view.setup.levelRemaining', { xp: remaining, next: lvl.level + 1 }) : t('view.setup.levelFull'))
       )
     );
 
@@ -169,14 +170,14 @@ export function renderSetup(onStart) {
       el('div', { class: 'lv-hero-main' },
         el('div', { class: 'lv-hero-greeting' },
           el('span', { class: 'lv-hero-avatar', 'aria-hidden': 'true' }, avatar.emoji),
-          el('span', { class: 'lv-hero-hello' }, `Willkommen zurück, ${avatar.label}`)
+          el('span', { class: 'lv-hero-hello' }, t('view.setup.heroHello', { name: avatar.label }))
         ),
         el('h1', { class: 'lv-hero-title' },
-          'Deutsche Dialekte ',
-          el('span', { class: 'grad' }, 'entdecken')
+          t('view.setup.heroTitlePre'),
+          el('span', { class: 'grad' }, t('view.setup.heroTitleAccent'))
         ),
         el('p', { class: 'lv-hero-sub' },
-          'Lerne echte Ausdrücke aus ganz Deutschland — mit Audio, sichtbarem Fortschritt und Abzeichen.'),
+          t('view.setup.heroSub')),
         el('div', { class: 'lv-hero-badges' },
           ...heroBadges.map(([ic, txt]) => el('span', { class: 'lv-hero-badge' },
             el('span', { class: 'lv-hero-badge-ic', 'aria-hidden': 'true' }, ic), txt))
@@ -184,11 +185,11 @@ export function renderSetup(onStart) {
         el('div', { class: 'lv-hero-actions' },
           el('div', { class: 'lv-hero-cta-wrap' }, startCta, ctaHintEl),
           el('button', { class: 'btn btn-secondary', dataset: { magnetic: '10' }, onClick: () => go('#/entdecken') },
-            'Dialekte entdecken')
+            t('view.setup.heroDiscover'))
         ),
         hasProgress ? null : el('div', { class: 'lv-hero-firsttime' },
           el('span', { 'aria-hidden': 'true' }, '✨'),
-          'Deine erste Sitzung bringt XP und schaltet Abzeichen frei.'
+          t('view.setup.heroFirstTime')
         )
       ),
       levelCard
@@ -198,11 +199,11 @@ export function renderSetup(onStart) {
   // 2 — Dashboard -------------------------------------------------------------
   function renderDashboard() {
     const tiles = [
-      { ic: '🔥', value: streak,            label: streak === 1 ? 'Tag Streak' : 'Tage Streak', c: 'var(--warm)' },
-      { ic: '⭐', value: xpTotal,           label: 'Gesamt-XP',     c: 'var(--brand)' },
-      { ic: '🏆', value: badges,            label: 'Abzeichen',     c: '#f5b301' },
-      { ic: '📚', value: lernStats.gelernt, label: 'Karten gelernt', c: 'var(--accent)' },
-      { ic: '⏳', value: srs.due,           label: 'Heute fällig',  c: 'var(--pink)' }
+      { ic: '🔥', value: streak,            label: streak === 1 ? t('view.setup.statStreakOne') : t('view.setup.statStreak'), c: 'var(--warm)' },
+      { ic: '⭐', value: xpTotal,           label: t('view.setup.statXp'),     c: 'var(--brand)' },
+      { ic: '🏆', value: badges,            label: t('view.setup.statBadges'),     c: '#f5b301' },
+      { ic: '📚', value: lernStats.gelernt, label: t('view.setup.statLearned'), c: 'var(--accent)' },
+      { ic: '⏳', value: srs.due,           label: t('view.setup.statDue'),  c: 'var(--pink)' }
     ];
     const grid = el('div', { class: 'lv-stats-grid' },
       ...tiles.map(t => el('div', { class: 'lv-stat', dataset: { spotlight: '' }, style: { '--sc': t.c } },
@@ -212,7 +213,7 @@ export function renderSetup(onStart) {
       ))
     );
     return el('section', { class: 'section', dataset: { reveal: '' } },
-      sectionHead('Dein Fortschritt', 'Alles auf einen Blick — und was heute ansteht.'),
+      sectionHead(t('view.setup.dashTitle'), t('view.setup.dashLede')),
       el('div', { class: 'lv-dash' },
         grid,
         el('div', { class: 'lv-goal-card' }, renderGoalWidget())
@@ -258,7 +259,7 @@ export function renderSetup(onStart) {
     }
     paint();
     return el('section', { class: 'section', dataset: { reveal: '' } },
-      sectionHead('Wähle deinen Lernmodus', 'Von klassisch bis Aussprache — wähle, was zu dir passt.'),
+      sectionHead(t('view.setup.modesTitle'), t('view.setup.modesLede')),
       groupsWrap
     );
   }
@@ -269,7 +270,7 @@ export function renderSetup(onStart) {
     try { recent = getRecentDialects(4) || []; } catch { recent = []; }
     if (!recent.length) return null;
     return el('section', { class: 'section', dataset: { reveal: '' } },
-      sectionHead('Weiter wo du warst', 'Setze eine kürzlich gelernte Region direkt fort.'),
+      sectionHead(t('view.setup.continueTitle'), t('view.setup.continueLede')),
       el('div', { class: 'lv-continue-row' },
         ...recent.map(d => el('button', {
           class: 'lv-continue-chip',
@@ -294,18 +295,18 @@ export function renderSetup(onStart) {
       style: { '--dc': ALL_COLOR, '--progress': pct + '%' },
       dataset: { tilt: '', tiltMax: '6' },
       onClick: () => onStart({ source: 'all', mode: currentMode }),
-      'aria-label': `Alle Dialekte: ${learned} von ${total} gelernt`
+      'aria-label': t('view.setup.allCardAria', { learned, total })
     },
       el('span', { class: 'dc-flag', 'aria-hidden': 'true' }, '🌍'),
       el('div', { class: 'ldc-topline' },
-        el('span', { class: 'ldc-level' }, 'Alle'),
-        el('span', { class: 'ldc-xp' }, `${total.toLocaleString('de-DE')} Karten`)
+        el('span', { class: 'ldc-level' }, t('common.all')),
+        el('span', { class: 'ldc-xp' }, t('view.setup.cardsCount', { n: total.toLocaleString('de-DE') }))
       ),
-      el('div', { class: 'dc-name' }, 'Alle Dialekte'),
-      el('div', { class: 'dc-region' }, '🌍 Bunte Mischung'),
+      el('div', { class: 'dc-name' }, t('view.setup.allCardName')),
+      el('div', { class: 'dc-region' }, t('view.setup.allCardRegion')),
       progressBar(pct, ALL_COLOR),
       el('div', { class: 'dc-foot' },
-        el('span', { class: 'dc-count' }, learned > 0 ? `${learned} gelernt · ${pct}%` : 'Quer durch alle Regionen'),
+        el('span', { class: 'dc-count' }, learned > 0 ? t('view.setup.allCardFoot', { learned, pct }) : t('view.setup.allCardFootEmpty')),
         arrow()
       )
     );
@@ -318,18 +319,18 @@ export function renderSetup(onStart) {
       style: { '--dc': d.farbe, '--progress': p.pct + '%' },
       dataset: { tilt: '', tiltMax: '6' },
       onClick: () => onStart({ source: d.id, mode: currentMode }),
-      'aria-label': `${d.name}: ${p.learned} von ${p.total} gelernt, ${p.pct} Prozent`
+      'aria-label': t('view.setup.dialectCardAria', { name: d.name, learned: p.learned, total: p.total, pct: p.pct })
     },
       el('span', { class: 'dc-flag', 'aria-hidden': 'true' }, d.flag),
       el('div', { class: 'ldc-topline' },
-        el('span', { class: 'ldc-level' }, `Lv. ${p.level}`),
+        el('span', { class: 'ldc-level' }, t('view.setup.levelShort', { n: p.level })),
         el('span', { class: 'ldc-xp' }, `${p.xp} XP`)
       ),
       el('div', { class: 'dc-name' }, d.name),
       el('div', { class: 'dc-region' }, `📍 ${d.region}`),
       progressBar(p.pct, d.farbe),
       el('div', { class: 'dc-foot' },
-        el('span', { class: 'dc-count' }, `${p.learned}/${p.total} gelernt`),
+        el('span', { class: 'dc-count' }, t('view.setup.cardFootLearned', { learned: p.learned, total: p.total })),
         arrow()
       )
     );
@@ -339,7 +340,7 @@ export function renderSetup(onStart) {
     const grid = el('div', { class: 'dialekt-grid' }, renderAllCard());
     DIALEKTE.forEach(d => grid.appendChild(renderDialectCard(d)));
     return el('section', { class: 'section', dataset: { reveal: '' } },
-      sectionHead('Nach Dialekt lernen', 'Wähle eine Region — jede Karte zeigt deinen Fortschritt.'),
+      sectionHead(t('view.setup.dialectsTitle'), t('view.setup.dialectsLede')),
       grid
     );
   }
@@ -355,8 +356,8 @@ export function renderSetup(onStart) {
       const color = THEMEN_FARBEN[i % THEMEN_FARBEN.length];
       const pct = Math.round((stats.learned / stats.total) * 100);
       const progressLabel = stats.learned > 0
-        ? `${stats.learned}/${stats.total} gelernt (${pct}%)`
-        : (stats.started > 0 ? `${stats.started}/${stats.total} angefangen` : `${stats.total} Karten`);
+        ? t('view.setup.themaLabelLearned', { learned: stats.learned, total: stats.total, pct })
+        : (stats.started > 0 ? t('view.setup.themaLabelStarted', { started: stats.started, total: stats.total }) : t('view.setup.cardsCount', { n: stats.total }));
       grid.appendChild(el('button', {
         class: 'dialekt-card learn-dialekt-card thema-card',
         style: { '--dc': color, '--progress': pct + '%' },
@@ -366,11 +367,11 @@ export function renderSetup(onStart) {
       },
         el('span', { class: 'dc-flag', 'aria-hidden': 'true' }, kat.icon),
         el('div', { class: 'ldc-topline' },
-          el('span', { class: 'ldc-level' }, 'Thema'),
-          el('span', { class: 'ldc-xp' }, `${stats.total} Karten`)
+          el('span', { class: 'ldc-level' }, t('view.setup.themaTag')),
+          el('span', { class: 'ldc-xp' }, t('view.setup.cardsCount', { n: stats.total }))
         ),
         el('div', { class: 'dc-name' }, kat.label),
-        el('div', { class: 'dc-region' }, 'Quer durch alle Dialekte'),
+        el('div', { class: 'dc-region' }, t('view.setup.themaRegion')),
         progressBar(pct, color),
         el('div', { class: 'dc-foot' },
           el('span', { class: 'dc-count' }, progressLabel),
@@ -380,7 +381,7 @@ export function renderSetup(onStart) {
     });
 
     return el('section', { class: 'section', dataset: { reveal: '' } },
-      sectionHead('🎯 Themen-Lektionen', 'Fokussiert nach Kategorie — quer durch alle Dialekte.'),
+      sectionHead(t('view.setup.themenTitle'), t('view.setup.themenLede')),
       grid
     );
   }
@@ -395,13 +396,13 @@ export function renderSetup(onStart) {
         class: 'lv-sammlung-teaser',
         dataset: { spotlight: '' },
         onClick: () => go('#/sammlung'),
-        'aria-label': `Ausdrücke-Sammlung: ${unlocked} von ${total} freigeschaltet`
+        'aria-label': t('view.setup.sammlungAria', { unlocked, total })
       },
         el('span', { class: 'lv-sammlung-ic', 'aria-hidden': 'true' }, '📚'),
         el('div', { class: 'lv-sammlung-body' },
-          el('div', { class: 'lv-sammlung-title' }, 'Deine Ausdrücke-Sammlung'),
+          el('div', { class: 'lv-sammlung-title' }, t('view.setup.sammlungTitle')),
           el('div', { class: 'lv-sammlung-sub' },
-            `${unlocked.toLocaleString('de-DE')} von ${total.toLocaleString('de-DE')} Ausdrücken freigeschaltet`),
+            t('view.setup.sammlungSub', { unlocked: unlocked.toLocaleString('de-DE'), total: total.toLocaleString('de-DE') })),
           progressBar(pct, 'var(--brand)')
         ),
         el('span', { class: 'lv-sammlung-pct' }, `${pct}%`),

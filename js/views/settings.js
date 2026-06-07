@@ -24,9 +24,9 @@ import { APP_VERSION_LABEL, DIALEKT_COUNT, AUSDRUCK_COUNT, REPO_URL } from '../v
 import { inlineConfirm } from '../util/inline-confirm.js';
 
 const THEMES = [
-  { id: 'light',    label: 'Hell',    icon: '☀️' },
-  { id: 'dark',     label: 'Dunkel',  icon: '🌙' },
-  { id: 'auto',     label: 'Auto',    icon: '🖥️' },
+  { id: 'light',    label: t('theme.light'), icon: '☀️' },
+  { id: 'dark',     label: t('theme.dark'),  icon: '🌙' },
+  { id: 'auto',     label: t('theme.auto'),  icon: '🖥️' },
 ];
 
 let overlay = null;
@@ -149,73 +149,73 @@ function langSelect(langs, current, onChange) {
 // --- Drawer ------------------------------------------------------------------
 
 function buildPanel() {
-  const panel = el('div', { class: 'settings-panel', role: 'dialog', 'aria-modal': 'true', 'aria-label': 'Einstellungen' });
+  const panel = el('div', { class: 'settings-panel', role: 'dialog', 'aria-modal': 'true', 'aria-label': t('topbar.settings') });
 
   panel.appendChild(el('div', { class: 'settings-head' },
-    el('h2', { class: 'settings-title' }, '⚙️ Einstellungen'),
-    el('button', { class: 'settings-close', 'aria-label': 'Schließen', onClick: closeSettings }, '✕')
+    el('h2', { class: 'settings-title' }, '⚙️ ' + t('topbar.settings')),
+    el('button', { class: 'settings-close', 'aria-label': t('btn.close'), onClick: closeSettings }, '✕')
   ));
 
   const body = el('div', { class: 'settings-body' });
 
   // Sprache
-  body.appendChild(section('Sprache', '🌐',
-    row('App-Sprache', langSelect(SUPPORTED, getLang(), (v) => {
+  body.appendChild(section(t('view.settings.langSection'), '🌐',
+    row(t('view.settings.appLang'), langSelect(SUPPORTED, getLang(), (v) => {
       if (v !== getLang()) setLang(v); // löst Reload aus
-    }), 'Sprache der Oberfläche (lädt neu)'),
-    row('Erklärungen', langSelect(EXPLANATION_LANGS, getExplanationLang(), (v) => {
+    }), t('view.settings.appLangHint')),
+    row(t('view.settings.explanations'), langSelect(EXPLANATION_LANGS, getExplanationLang(), (v) => {
       setExplanationLang(v);
       // Übersetzungen laden + aktuelle Ansicht neu rendern (Drawer bleibt offen).
       initTranslations().then(() => { try { router(); } catch {} });
-      toast('Erklärungs-Sprache: ' + (LANGUAGE_NAMES[v] || v).toUpperCase(), 'success', 1600);
-    }), 'Sprache der Ausdrucks-Erklärungen (sofern übersetzt)')
+      toast(t('view.settings.explanationToast', { lang: (LANGUAGE_NAMES[v] || v).toUpperCase() }), 'success', 1600);
+    }), t('view.settings.explanationsHint'))
   ));
 
   // Darstellung
-  body.appendChild(section('Darstellung', '🎨',
-    row('Design', segmented(THEMES, getTheme(), (v) => { setTheme(v); applyTheme(); }), 'Hell, dunkel oder automatisch'),
-    row('Farbpalette', buildPaletteGrid(), 'Akzentfarben der App'),
-    row('Animationen', toggleSwitch(getAnimationsEnabled(), (on) => {
+  body.appendChild(section(t('view.settings.appearanceSection'), '🎨',
+    row(t('view.settings.design'), segmented(THEMES, getTheme(), (v) => { setTheme(v); applyTheme(); }), t('view.settings.designHint')),
+    row(t('view.settings.palette'), buildPaletteGrid(), t('view.settings.paletteHint')),
+    row(t('view.settings.animations'), toggleSwitch(getAnimationsEnabled(), (on) => {
       setAnimationsEnabled(on);
       applyAnimations();
-    }), 'Bewegungen & Übergänge'),
-    row('Lese-Schrift', toggleSwitch(getTypography() === 'dyslexic', (on) => {
+    }), t('view.settings.animationsHint')),
+    row(t('view.settings.readingFont'), toggleSwitch(getTypography() === 'dyslexic', (on) => {
       setTypography(on ? 'dyslexic' : 'default');
-    }), 'Legasthenie-freundliche Schriftart')
+    }), t('view.settings.readingFontHint'))
   ));
 
   // Audio
-  body.appendChild(section('Audio', '🔊',
-    row('Sounds', toggleSwitch(isSoundEnabled(), (on) => {
+  body.appendChild(section(t('view.settings.audioSection'), '🔊',
+    row(t('view.settings.sounds'), toggleSwitch(isSoundEnabled(), (on) => {
       setSoundEnabled(on);
       if (on) sfx.toggle();
-    }), 'UI-Klänge bei Aktionen')
+    }), t('view.settings.soundsHint'))
   ));
 
   // Lernen
-  body.appendChild(section('Lernen', '🎯',
-    row('Tagesziel', buildGoalControl(), 'Karten pro Tag')
+  body.appendChild(section(t('view.settings.learnSection'), '🎯',
+    row(t('view.settings.dailyGoal'), buildGoalControl(), t('view.settings.dailyGoalHint'))
   ));
 
   // Daten
-  body.appendChild(section('Daten', '🗄️',
+  body.appendChild(section(t('view.settings.dataSection'), '🗄️',
     el('div', { class: 'set-data-row' },
-      el('button', { class: 'btn btn-secondary', onClick: () => { try { downloadStateFile(); toast('Backup heruntergeladen', 'success', 1800); } catch { toast('Export fehlgeschlagen', 'error', 2200); } } }, '⬇ Backup exportieren'),
+      el('button', { class: 'btn btn-secondary', onClick: () => { try { downloadStateFile(); toast(t('view.settings.backupDone'), 'success', 1800); } catch { toast(t('view.settings.exportFailed'), 'error', 2200); } } }, '⬇ ' + t('view.settings.exportBackup')),
       inlineConfirm({
-        label: '🗑 Alle Daten zurücksetzen',
-        message: 'Wirklich ALLE Daten löschen? Fortschritt, XP, Favoriten & Einstellungen gehen unwiderruflich verloren.',
-        confirmLabel: 'Ja, alles löschen',
+        label: '🗑 ' + t('view.settings.resetAll'),
+        message: t('view.settings.resetConfirm'),
+        confirmLabel: t('view.settings.resetConfirmYes'),
         onConfirm: () => { try { resetAllData(); } catch {} },
       })
     )
   ));
 
   // Über
-  body.appendChild(section('Über', 'ℹ️',
+  body.appendChild(section(t('view.settings.aboutSection'), 'ℹ️',
     el('div', { class: 'set-about' },
       el('div', { class: 'set-about-ver' }, 'Dialekto ' + APP_VERSION_LABEL),
-      el('div', { class: 'set-about-meta' }, DIALEKT_COUNT + ' Dialekte · ' + AUSDRUCK_COUNT.toLocaleString('de-DE') + ' Ausdrücke'),
-      el('a', { class: 'set-about-link', href: REPO_URL, target: '_blank', rel: 'noopener noreferrer' }, 'Quellcode auf GitHub ↗')
+      el('div', { class: 'set-about-meta' }, t('view.settings.aboutMeta', { dialekte: DIALEKT_COUNT, ausdruecke: AUSDRUCK_COUNT.toLocaleString('de-DE') })),
+      el('a', { class: 'set-about-link', href: REPO_URL, target: '_blank', rel: 'noopener noreferrer' }, t('view.settings.sourceGithub'))
     )
   ));
 
@@ -233,7 +233,7 @@ function buildPaletteGrid() {
       class: 'set-palette-item' + (getPreset() === p.id ? ' is-active' : ''),
       dataset: { id: p.id },
       title: p.label,
-      'aria-label': 'Palette ' + p.label,
+      'aria-label': t('view.settings.paletteAria', { name: p.label }),
       onClick: () => { setPreset(p.id); paint(); }
     },
       el('span', { class: 'set-palette-swatch' },

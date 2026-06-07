@@ -1,5 +1,6 @@
 // Statistiken-View — detailliertes Analyse-Dashboard für Lernfortschritt
 import { el, go, toast } from '../util.js';
+import { t } from '../util/i18n.js';
 import { getLernStats, getQuizGenauigkeit, getStreak, getActiveDays, getQuizHistory, getVisitedDialects } from '../store.js';
 import { getLernstand } from '../store/learning.js';
 import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
@@ -20,14 +21,14 @@ export function renderStatistiken(root) {
 
   view.appendChild(el('div', { class: 'section-head stats-toolbar' },
     el('div', {},
-      el('h2', {}, '📊 Lernstatistiken'),
-      el('div', { class: 'lede' }, 'Detaillierter Überblick über deinen gesamten Lernfortschritt.')
+      el('h2', {}, t('view.statistiken.title')),
+      el('div', { class: 'lede' }, t('view.statistiken.lede'))
     ),
     canPrint() ? el('button', {
       class: 'btn btn-secondary stats-print-btn',
-      title: 'Statistiken als PDF exportieren oder ausdrucken',
+      title: t('view.statistiken.printTitle'),
       onClick: () => printStatistiken(),
-    }, '🖨️ PDF exportieren / drucken') : null
+    }, t('view.statistiken.print')) : null
   ));
 
   // ── Overview Cards ──────────────────────────────────────────
@@ -42,18 +43,18 @@ export function renderStatistiken(root) {
   const quizHistory = getQuizHistory();
 
   view.appendChild(el('div', { class: 'stats-overview', dataset: { reveal: '' } },
-    statBig('🃏', String(lernStats.gelernt), 'Ausdrücke gelernt', 'var(--brand)'),
-    statBig('🎯', String(acc) + '%', 'Quiz-Genauigkeit', acc >= 70 ? 'var(--accent)' : 'var(--warm)'),
-    statBig('🔥', String(streak), 'Tage Streak', 'var(--pink)'),
-    statBig('⚡', String(xp), 'XP gesamt', 'var(--brand)'),
-    statBig('📍', String(visited.length) + '/' + DIALEKTE.length, 'Dialekte besucht', 'var(--accent)'),
-    statBig('📅', String(activeDays), 'Aktive Tage', 'var(--warm)')
+    statBig('🃏', String(lernStats.gelernt), t('view.statistiken.cardExpressions'), 'var(--brand)'),
+    statBig('🎯', String(acc) + '%', t('view.statistiken.cardQuizAccuracy'), acc >= 70 ? 'var(--accent)' : 'var(--warm)'),
+    statBig('🔥', String(streak), t('stats.streak'), 'var(--pink)'),
+    statBig('⚡', String(xp), t('view.statistiken.cardXpTotal'), 'var(--brand)'),
+    statBig('📍', String(visited.length) + '/' + DIALEKTE.length, t('view.statistiken.cardDialectsVisited'), 'var(--accent)'),
+    statBig('📅', String(activeDays), t('view.statistiken.cardActiveDays'), 'var(--warm)')
   ));
 
   // ── XP & Level ──────────────────────────────────────────────
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
-      el('h3', {}, 'XP & Level'),
+      el('h3', {}, t('view.statistiken.xpLevel')),
     ),
     el('div', { class: 'stats-xp-row' },
       el('div', { class: 'stats-level-badge' },
@@ -61,7 +62,7 @@ export function renderStatistiken(root) {
         el('div', { class: 'stats-level-title' }, getLevelTitle(level))
       ),
       el('div', { class: 'stats-xp-bar-col' },
-        el('div', { class: 'stats-xp-label' }, `${current} / ${needed} XP bis Level ${level + 1}`),
+        el('div', { class: 'stats-xp-label' }, t('view.statistiken.xpToLevel', { current, needed, level: level + 1 })),
         el('div', { class: 'stats-xp-bar', role: 'progressbar', ariaValuenow: Math.round(xpProgress * 100), ariaValuemin: 0, ariaValuemax: 100 },
           el('div', { class: 'stats-xp-fill', style: { width: Math.round(xpProgress * 100) + '%' } })
         ),
@@ -77,18 +78,18 @@ export function renderStatistiken(root) {
 
   // ── SRS-Status ──────────────────────────────────────────────
   const srsPills = [
-    statPill(String(srsStats.due),      'Heute fällig',  'var(--pink)'),
-    statPill(String(srsStats.learning), 'Im Lernen',     'var(--warm)'),
-    statPill(String(srsStats.learned),  'Gemeistert',    'var(--accent)'),
-    statPill(String(srsStats.fresh),    'Noch neu',      'var(--text-muted)'),
+    statPill(String(srsStats.due),      t('section.heuteFaellig'),       'var(--pink)'),
+    statPill(String(srsStats.learning), t('view.statistiken.srsLearning'), 'var(--warm)'),
+    statPill(String(srsStats.learned),  t('view.statistiken.srsLearned'),  'var(--accent)'),
+    statPill(String(srsStats.fresh),    t('view.statistiken.srsFresh'),    'var(--text-muted)'),
   ];
   // Problemkarten (Leeches) nur einblenden, wenn welche existieren — sonst
   // wäre eine 0 für die meisten Nutzer nur verwirrendes Rauschen.
   if (srsStats.leeches > 0) {
-    srsPills.push(statPill(String(srsStats.leeches), '⚠️ Problemkarten', 'var(--danger)'));
+    srsPills.push(statPill(String(srsStats.leeches), t('view.statistiken.srsLeeches'), 'var(--danger)'));
   }
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
-    el('div', { class: 'section-head' }, el('h3', {}, 'Spaced-Repetition-Status')),
+    el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.srsTitle'))),
     el('div', { class: 'stats-srs-grid' }, ...srsPills)
   ));
 
@@ -99,12 +100,12 @@ export function renderStatistiken(root) {
   if (quizHistory.length) {
     const sparkData = quizHistory.slice(0, 20).reverse().map(h => Math.round((h.score / h.total) * 100));
     view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
-      el('div', { class: 'section-head' }, el('h3', {}, 'Quiz-Verlauf')),
+      el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.quizHistory'))),
       el('div', { class: 'stats-quiz-chart' },
         sparkline(sparkData, { width: 480, height: 80, color: 'var(--brand)', max: 100 }),
         el('div', { class: 'stats-quiz-meta' },
-          el('span', {}, `Ø ${acc}% Genauigkeit`),
-          el('span', {}, `${quizHistory.length} Quizze gespielt`)
+          el('span', {}, t('view.statistiken.quizAvgAccuracy', { acc })),
+          el('span', {}, t('view.statistiken.quizPlayed', { n: quizHistory.length }))
         )
       )
     ));
@@ -115,12 +116,12 @@ export function renderStatistiken(root) {
   const goalTarget = getGoalTarget();
   const goalToday = getTodayProgress();
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
-    el('div', { class: 'section-head' }, el('h3', {}, `Tägliches Lernziel (${goalTarget} Karten/Tag)`)),
+    el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.goalTitle', { n: goalTarget }))),
     el('div', { class: 'stats-goal-chart' },
       ...goalHist.map(h => {
         const pct = Math.min(1, goalTarget > 0 ? h.count / goalTarget : 0);
         const label = h.date.toLocaleDateString('de-DE', { weekday: 'short' });
-        return el('div', { class: 'stats-goal-bar-col', title: `${h.count} Karten · ${h.date.toLocaleDateString('de-DE')}` },
+        return el('div', { class: 'stats-goal-bar-col', title: t('view.statistiken.goalBarTitle', { n: h.count, date: h.date.toLocaleDateString('de-DE') }) },
           el('div', { class: 'stats-goal-bar-bg' },
             el('div', { class: 'stats-goal-bar-fill' + (h.met ? ' is-met' : ''), style: { height: Math.round(pct * 100) + '%' } })
           ),
@@ -132,7 +133,7 @@ export function renderStatistiken(root) {
 
   // ── Dialekt-Fortschritt ──────────────────────────────────────
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
-    el('div', { class: 'section-head' }, el('h3', {}, 'Fortschritt je Dialekt')),
+    el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.dialectProgress'))),
     el('div', { class: 'stats-dialect-list' },
       ...DIALEKTE.map(d => {
         const learned = d.ausdruecke.filter(a => getLernstand(d.id, a.id) >= 3).length;
@@ -164,7 +165,7 @@ export function renderStatistiken(root) {
 // ── SRS-Einstellungen: Scheduler-Wahl + Wunsch-Retention ───────
 function renderSrsSettingsSection() {
   const section = el('section', { class: 'section stats-srs-settings', dataset: { reveal: '' } });
-  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '⚙️ Wiederholungs-Algorithmus')));
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.srsSettingsTitle'))));
 
   const body = el('div', { class: 'srs-settings-body' });
   section.appendChild(body);
@@ -181,15 +182,15 @@ function renderSrsSettingsSection() {
       onClick: () => { setSrsConfig({ scheduler: val }); paint(); },
     }, el('span', { class: 'srs-seg-title' }, title), el('span', { class: 'srs-seg-sub' }, sub));
 
-    body.appendChild(el('div', { class: 'srs-seg', role: 'group', 'aria-label': 'Scheduler-Auswahl' },
-      mkSeg('fsrs', 'FSRS-5', 'Modern · empfohlen'),
-      mkSeg('sm2', 'SM-2', 'Klassisch (Anki)')
+    body.appendChild(el('div', { class: 'srs-seg', role: 'group', 'aria-label': t('view.statistiken.schedulerSelect') },
+      mkSeg('fsrs', 'FSRS-5', t('view.statistiken.schedulerFsrsSub')),
+      mkSeg('sm2', 'SM-2', t('view.statistiken.schedulerSm2Sub'))
     ));
 
     body.appendChild(el('p', { class: 'lede srs-settings-hint' },
       cfg.scheduler === 'fsrs'
-        ? 'FSRS-5 modelliert dein Gedächtnis über Difficulty, Stability und Retrievability und trifft deine Wunsch-Retention präzise — spürbar effizienter als SM-2.'
-        : 'SM-2 ist der klassische Karteikasten-Algorithmus (Anki-Default) mit Easiness-Faktor.'
+        ? t('view.statistiken.schedulerFsrsHint')
+        : t('view.statistiken.schedulerSm2Hint')
     ));
 
     if (cfg.scheduler === 'fsrs') {
@@ -199,7 +200,7 @@ function renderSrsSettingsSection() {
       const slider = el('input', {
         type: 'range', min: '70', max: '97', step: '1', value: String(pct),
         class: 'srs-retention-slider',
-        'aria-label': 'Wunsch-Retention in Prozent',
+        'aria-label': t('view.statistiken.retentionAria'),
       });
       slider.addEventListener('input', () => {
         const p = Number(slider.value);
@@ -210,7 +211,7 @@ function renderSrsSettingsSection() {
         setSrsConfig({ retention: Number(slider.value) / 100 });
       });
       body.appendChild(el('div', { class: 'srs-retention' },
-        el('div', { class: 'srs-retention-label' }, el('span', {}, 'Wunsch-Retention'), pctEl),
+        el('div', { class: 'srs-retention-label' }, el('span', {}, t('view.statistiken.retentionLabel')), pctEl),
         slider,
         tradeoffEl
       ));
@@ -233,11 +234,11 @@ function renderSrsOptimizer(cfg, repaint) {
   const canOptimize = stats.reviewable >= SRS_OPT_MIN_REVIEWS;
 
   const badge = el('span', { class: 'srs-opt-badge' + (personalized ? ' is-on' : '') },
-    personalized ? '● Personalisiert' : '○ Standard-Gewichte');
+    personalized ? t('view.statistiken.optBadgeOn') : t('view.statistiken.optBadgeOff'));
 
   const info = el('p', { class: 'srs-opt-info lede' }, canOptimize
-    ? `${stats.reviewable} bewertbare Reviews über ${stats.cards} Karten — bereit für die Personalisierung.`
-    : `${stats.reviewable} von ${SRS_OPT_MIN_REVIEWS} bewertbaren Reviews gesammelt. Lerne weiter, dann lernt FSRS deine Gewichte aus deiner Historie.`
+    ? t('view.statistiken.optInfoReady', { n: stats.reviewable, cards: stats.cards })
+    : t('view.statistiken.optInfoCollecting', { n: stats.reviewable, min: SRS_OPT_MIN_REVIEWS })
   );
 
   const optBtn = el('button', {
@@ -246,20 +247,20 @@ function renderSrsOptimizer(cfg, repaint) {
     onClick: () => {
       optBtn.disabled = true;
       optBtn.classList.add('is-loading');
-      optBtn.textContent = 'Optimiere…';
+      optBtn.textContent = t('view.statistiken.optimizing');
       // Kurz an den Browser zurückgeben, damit der Button-Text neu zeichnet,
       // bevor die (synchrone) Optimierung läuft.
       setTimeout(() => {
         const res = optimizeSrsParams({ minReviews: SRS_OPT_MIN_REVIEWS });
         if (res.ok) {
-          toast(`Gewichte personalisiert · Loss ${res.initialLoss.toFixed(3)} → ${res.finalLoss.toFixed(3)}`, 'success');
+          toast(t('view.statistiken.optToastSuccess', { init: res.initialLoss.toFixed(3), final: res.finalLoss.toFixed(3) }), 'success');
         } else {
-          toast('Noch zu wenig Daten für die Optimierung.', 'info');
+          toast(t('view.statistiken.optToastNoData'), 'info');
         }
         repaint();
       }, 30);
     },
-  }, personalized ? 'Neu optimieren' : 'Jetzt optimieren');
+  }, personalized ? t('view.statistiken.optBtnReoptimize') : t('view.statistiken.optBtnOptimize'));
   optBtn.disabled = !canOptimize;
 
   const actions = el('div', { class: 'srs-opt-actions' }, optBtn);
@@ -270,15 +271,15 @@ function renderSrsOptimizer(cfg, repaint) {
       type: 'button',
       onClick: () => {
         setSrsConfig({ params: null });
-        toast('Zurück auf Standard-Gewichte.', 'info');
+        toast(t('view.statistiken.optToastReset'), 'info');
         repaint();
       },
-    }, 'Auf Standard zurücksetzen'));
+    }, t('view.statistiken.optBtnReset')));
   }
 
   return el('div', { class: 'srs-optimizer' },
     el('div', { class: 'srs-opt-head' },
-      el('span', { class: 'srs-opt-title' }, 'Deine FSRS-Gewichte'),
+      el('span', { class: 'srs-opt-title' }, t('view.statistiken.optTitle')),
       badge
     ),
     info,
@@ -287,15 +288,15 @@ function renderSrsOptimizer(cfg, repaint) {
 }
 
 function retentionTradeoff(pct) {
-  if (pct >= 90) return 'Hohe Retention: weniger Vergessen, dafür häufigere Wiederholungen.';
-  if (pct >= 80) return 'Ausgewogen: solides Behalten bei moderater Wiederholungslast.';
-  return 'Niedrige Retention: längere Intervalle und weniger Reviews — aber mehr Vergessen.';
+  if (pct >= 90) return t('view.statistiken.tradeoffHigh');
+  if (pct >= 80) return t('view.statistiken.tradeoffBalanced');
+  return t('view.statistiken.tradeoffLow');
 }
 
 // ── Sektion A: Vergessenskurve ─────────────────────────────────
 function renderForgettingCurveSection() {
   const section = el('section', { class: 'section stats-forgetting', dataset: { reveal: '' } });
-  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '🧠 Vergessenskurve')));
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.forgettingTitle'))));
 
   const retention = getOverallRetention();
   const atRisk = getCardsAtRisk(0.5);
@@ -303,7 +304,7 @@ function renderForgettingCurveSection() {
 
   if (retention == null) {
     section.appendChild(el('div', { class: 'lede' },
-      'Sobald du ein paar Karten mit SRS bewertet hast, erscheint hier deine persönliche Vergessenskurve.'
+      t('view.statistiken.forgettingEmpty')
     ));
     return section;
   }
@@ -315,19 +316,19 @@ function renderForgettingCurveSection() {
     pct >= 40 ? 'var(--warm)' : 'var(--pink)';
 
   const overview = el('div', { class: 'forgetting-overview' },
-    statBig('🧠', pct + '%', 'Gesamt-Retention', color),
-    statBig('⏰', String(atRisk.length), 'Karten brauchen bald Wiederholung', 'var(--warm)')
+    statBig('🧠', pct + '%', t('view.statistiken.overallRetention'), color),
+    statBig('⏰', String(atRisk.length), t('view.statistiken.cardsNeedReview'), 'var(--warm)')
   );
   section.appendChild(overview);
 
   if (topRisk.length === 0) {
     section.appendChild(el('div', { class: 'lede', style: { marginTop: '12px' } },
-      'Super — aktuell ist keine Karte in akuter Vergessensgefahr. Weiter so!'
+      t('view.statistiken.noRisk')
     ));
     return section;
   }
 
-  section.appendChild(el('h4', { style: { marginTop: '16px' } }, 'Top 5: dringend wiederholen'));
+  section.appendChild(el('h4', { style: { marginTop: '16px' } }, t('view.statistiken.top5Title')));
   const list = el('ul', { class: 'forgetting-list' });
   for (const r of topRisk) {
     const dialekt = getDialekt(r.dialektId);
@@ -340,7 +341,7 @@ function renderForgettingCurveSection() {
         class: 'forgetting-row',
         style: { '--dc': dialekt.farbe },
         onClick: () => go('#/lernen?card=' + encodeURIComponent(key)),
-        title: `${dialekt.flag} ${dialekt.name} — Retention ${retPct}%`
+        title: t('view.statistiken.forgettingRowTitle', { flag: dialekt.flag, name: dialekt.name, pct: retPct })
       },
         el('span', { class: 'forgetting-flag' }, dialekt.flag),
         el('span', { class: 'forgetting-text' },
@@ -361,13 +362,13 @@ function renderForgettingCurveSection() {
 // ── Sektion B: Tageszeit-Heatmap ───────────────────────────────
 function renderTimeHeatmapSection() {
   const section = el('section', { class: 'section stats-timeheat', dataset: { reveal: '' } });
-  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, '📅 Wann lernst du am besten?')));
+  section.appendChild(el('div', { class: 'section-head' }, el('h3', {}, t('view.statistiken.timeheatTitle'))));
 
   const { matrix, maxCount, bestHour, bestDay } = getTimeHeatmap(90);
 
   if (maxCount === 0) {
     section.appendChild(el('div', { class: 'lede' },
-      'Noch zu wenig Daten — sobald du regelmäßig lernst, zeigen wir hier deinen Lern-Rhythmus.'
+      t('view.statistiken.timeheatEmpty')
     ));
     return section;
   }
@@ -375,15 +376,15 @@ function renderTimeHeatmapSection() {
   const slot = describeBestSlot(bestHour, bestDay);
   if (slot) {
     section.appendChild(el('div', { class: 'lede', style: { marginBottom: '14px' } },
-      'Dein Top-Slot: ',
+      t('view.statistiken.topSlot'),
       el('strong', {}, slot),
-      ` (${maxCount} Aktivität${maxCount === 1 ? '' : 'en'})`
+      ` (${activityCount(maxCount)})`
     ));
   }
 
   // 7×24-Grid: Spalten = Stunden, Zeilen = Wochentage (Mo zuerst, dann ... So)
   const dayOrder = [1, 2, 3, 4, 5, 6, 0]; // Mo..So
-  const grid = el('div', { class: 'timeheat-grid', role: 'img', ariaLabel: 'Tageszeit-Heatmap der Lernaktivität' });
+  const grid = el('div', { class: 'timeheat-grid', role: 'img', ariaLabel: t('view.statistiken.timeheatAria') });
 
   // Top-Label-Zeile (Stunden)
   grid.appendChild(el('div', { class: 'timeheat-corner' }));
@@ -403,7 +404,7 @@ function renderTimeHeatmapSection() {
           opacity: intensity > 0 ? String(0.25 + intensity * 0.75) : '0.08',
           background: intensity > 0 ? 'var(--brand)' : 'var(--bg-soft)',
         },
-        title: `${dayName(d)} ${hourLabel(h)} — ${count} Aktivität${count === 1 ? '' : 'en'}`
+        title: `${dayName(d)} ${hourLabel(h)} — ${activityCount(count)}`
       }));
     }
   }
@@ -415,22 +416,22 @@ function renderTimeHeatmapSection() {
 function renderWeekReview() {
   const r = getWeekReview(7);
   const section = el('div', { class: 'stats-section', dataset: { reveal: '' } });
-  section.appendChild(el('h3', {}, '📅 Wochenrückblick'));
+  section.appendChild(el('h3', {}, t('view.statistiken.weekTitle')));
   section.appendChild(el('div', { class: 'lede' },
-    `Letzte 7 Tage (${r.period.start.label} – ${r.period.end.label})`
+    t('view.statistiken.weekPeriod', { start: r.period.start.label, end: r.period.end.label })
   ));
 
   // KPI-Karten
   const grid = el('div', { class: 'wochenrueckblick-grid' });
-  grid.appendChild(wrCard('Aktive Tage', `${r.totals.activeDays}/${r.period.days}`,
-    r.totals.activeDays >= 5 ? 'Starke Lernwoche!' : 'Versuche mehr Routine.'));
-  grid.appendChild(wrCard('XP gesammelt', `+${r.totals.xp}`,
-    r.totals.xp > 0 ? 'Punkte verdient ⚡' : 'Diese Woche ruhig.'));
-  grid.appendChild(wrCard('Karten geübt', String(r.totals.cardsReviewed),
-    r.totals.cardsReviewed > 20 ? 'Solides Pensum 🃏' : 'Mehr Karteikarten ziehen!'));
+  grid.appendChild(wrCard(t('view.statistiken.wrActiveDays'), `${r.totals.activeDays}/${r.period.days}`,
+    r.totals.activeDays >= 5 ? t('view.statistiken.wrActiveDaysStrong') : t('view.statistiken.wrActiveDaysWeak')));
+  grid.appendChild(wrCard(t('view.statistiken.wrXp'), `+${r.totals.xp}`,
+    r.totals.xp > 0 ? t('view.statistiken.wrXpEarned') : t('view.statistiken.wrXpQuiet')));
+  grid.appendChild(wrCard(t('view.statistiken.wrCards'), String(r.totals.cardsReviewed),
+    r.totals.cardsReviewed > 20 ? t('view.statistiken.wrCardsStrong') : t('view.statistiken.wrCardsWeak')));
   if (r.totals.quizTotal > 0) {
-    grid.appendChild(wrCard('Quiz-Trefferquote', `${r.totals.quizAccuracy}%`,
-      `${r.totals.quizCorrect}/${r.totals.quizTotal} korrekt`));
+    grid.appendChild(wrCard(t('view.statistiken.wrQuizAccuracy'), `${r.totals.quizAccuracy}%`,
+      t('view.statistiken.wrQuizCorrect', { correct: r.totals.quizCorrect, total: r.totals.quizTotal })));
   }
   section.appendChild(grid);
 
@@ -449,7 +450,7 @@ function renderWeekReview() {
         background: isToday ? 'var(--brand)' : 'color-mix(in oklab, var(--brand) 30%, transparent)',
         borderRadius: '4px 4px 0 0',
         transition: 'all 0.3s ease',
-      }, title: `${d.label}: ${d.activity + d.cardsReviewed} Aktionen` }),
+      }, title: t('view.statistiken.wrSparkTitle', { label: d.label, n: d.activity + d.cardsReviewed }) }),
       el('div', { style: { fontSize: '11px', opacity: 0.7 } }, d.label.split(' ')[0])
     ));
   });
@@ -457,7 +458,7 @@ function renderWeekReview() {
 
   // Top-Dialekte diese Woche
   if (r.topDialekte.length > 0) {
-    section.appendChild(el('h4', { style: { marginTop: '20px' } }, 'Top-Dialekte diese Woche'));
+    section.appendChild(el('h4', { style: { marginTop: '20px' } }, t('view.statistiken.wrTopDialects')));
     const dialRow = el('div', { style: { display: 'flex', gap: '12px', flexWrap: 'wrap' } });
     r.topDialekte.forEach(d => {
       dialRow.appendChild(el('div', {
@@ -466,7 +467,7 @@ function renderWeekReview() {
       },
         el('div', { class: 'wr-card-label' }, `${d.flag} ${d.name}`),
         el('div', { class: 'wr-card-value' }, String(d.count)),
-        el('div', { class: 'wr-card-detail' }, 'Karten geübt')
+        el('div', { class: 'wr-card-detail' }, t('view.statistiken.wrCardsPracticed'))
       ));
     });
     section.appendChild(dialRow);
@@ -474,7 +475,7 @@ function renderWeekReview() {
 
   // Empfehlungen für die nächste Woche
   if (r.focusSuggestions.length > 0) {
-    section.appendChild(el('h4', { style: { marginTop: '20px' } }, '💡 Für die nächste Woche'));
+    section.appendChild(el('h4', { style: { marginTop: '20px' } }, t('view.statistiken.wrNextWeek')));
     const sugList = el('div', { style: { display: 'flex', flexDirection: 'column', gap: '10px' } });
     r.focusSuggestions.forEach(s => {
       sugList.appendChild(el('button', {
@@ -503,6 +504,11 @@ function wrCard(label, value, detail) {
     el('div', { class: 'wr-card-value' }, value),
     el('div', { class: 'wr-card-detail' }, detail)
   );
+}
+
+// Lokalisierte Mengenangabe „N Aktivität(en)" mit Singular/Plural-Auswahl.
+function activityCount(n) {
+  return t(n === 1 ? 'view.statistiken.activityCountOne' : 'view.statistiken.activityCountOther', { n });
 }
 
 function statBig(emoji, value, label, color) {

@@ -1,4 +1,5 @@
 import { el, go, normalize, speak, debounce } from '../util.js';
+import { t } from '../util/i18n.js';
 import { getDialekt } from '../../data/dialekte.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
@@ -23,9 +24,9 @@ export function renderDialektDetail(root, dialektId) {
   if (!d) {
     root.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('map'),
-      el('h3', {}, 'Dialekt nicht gefunden'),
-      el('div', { class: 'empty-meta' }, 'Die Adresse zeigt auf einen Dialekt, den es nicht gibt — vielleicht ein Tippfehler?'),
-      el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, 'Zurück zur Übersicht')
+      el('h3', {}, t('view.dialektDetail.notFoundTitle')),
+      el('div', { class: 'empty-meta' }, t('view.dialektDetail.notFoundMeta')),
+      el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, t('view.dialektDetail.backToOverview'))
     ));
     return;
   }
@@ -45,7 +46,7 @@ export function renderDialektDetail(root, dialektId) {
   const ringSvg = el('svg', {
     width: 72, height: 72, viewBox: '0 0 72 72',
     class: 'detail-ring',
-    role: 'img', 'aria-label': `Lernfortschritt: ${pct}% gelernt`,
+    role: 'img', 'aria-label': t('view.dialektDetail.ringAria', { n: pct }),
     html: `
       <circle cx="36" cy="36" r="${R}" fill="none" stroke="rgba(255,255,255,.22)" stroke-width="6"/>
       <circle cx="36" cy="36" r="${R}" fill="none" stroke="white" stroke-width="6"
@@ -57,7 +58,7 @@ export function renderDialektDetail(root, dialektId) {
   // Header
   view.appendChild(el('section', { class: 'detail-head', style: { '--dc': d.farbe, background: `linear-gradient(135deg, ${d.farbe} 0%, ${d.farbe}dd 100%)` } },
     el('button', { class: 'detail-back', onClick: () => go('#/entdecken') },
-      el('span', { html: '←' }), ' Zurück'
+      el('span', { html: '←' }), ' ' + t('view.dialektDetail.back')
     ),
     el('div', { class: 'detail-head-top' },
       el('div', {},
@@ -68,18 +69,18 @@ export function renderDialektDetail(root, dialektId) {
         ringSvg,
         el('div', { class: 'detail-progress-num' },
           el('span', { class: 'dpn-pct' }, pct + '%'),
-          el('span', { class: 'dpn-lbl' }, 'gelernt')
+          el('span', { class: 'dpn-lbl' }, t('view.dialektDetail.learned'))
         )
       )
     ),
     el('div', { class: 'detail-desc' }, d.beschreibung),
     el('div', { class: 'detail-meta' },
-      el('div', { class: 'detail-meta-item' }, el('b', {}, d.ausdruecke.length), 'Ausdrücke'),
-      el('div', { class: 'detail-meta-item' }, el('b', {}, learned), 'gelernt'),
-      el('div', { class: 'detail-meta-item' }, el('b', {}, inProgress), 'in Arbeit'),
-      el('div', { class: 'detail-meta-item' }, el('b', {}, d.sprecher || '–'), 'Sprecher'),
+      el('div', { class: 'detail-meta-item' }, el('b', {}, d.ausdruecke.length), t('view.dialektDetail.metaExpressions')),
+      el('div', { class: 'detail-meta-item' }, el('b', {}, learned), t('view.dialektDetail.learned')),
+      el('div', { class: 'detail-meta-item' }, el('b', {}, inProgress), t('view.dialektDetail.inProgress')),
+      el('div', { class: 'detail-meta-item' }, el('b', {}, d.sprecher || '–'), t('view.dialektDetail.speakers')),
       el('div', { class: 'detail-meta-item' },
-        el('button', { class: 'link-btn', style: { color: 'white' }, onClick: () => go(`#/lernen?dialekt=${d.id}`) }, 'Mit Karten lernen →')
+        el('button', { class: 'link-btn', style: { color: 'white' }, onClick: () => go(`#/lernen?dialekt=${d.id}`) }, t('view.dialektDetail.learnWithCards'))
       )
     )
   ));
@@ -95,12 +96,12 @@ export function renderDialektDetail(root, dialektId) {
     el('div', { class: 'expr-search' },
       el('svg', { viewBox: '0 0 24 24', width: 20, height: 20, fill: 'none', stroke: 'currentColor', 'stroke-width': 2,
         html: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>' }),
-      el('input', { id: 'detSearch', type: 'search', placeholder: 'Im Dialekt suchen…' })
+      el('input', { id: 'detSearch', type: 'search', placeholder: t('view.dialektDetail.searchPlaceholder') })
     )
   );
 
   const chips = el('div', { class: 'chip-row' },
-    el('button', { class: 'chip is-active', dataset: { cat: 'all' } }, 'Alle'),
+    el('button', { class: 'chip is-active', dataset: { cat: 'all' } }, t('common.all')),
     ...cats.map(c => el('button', { class: 'chip', dataset: { cat: c.id } }, `${c.icon} ${c.label}`))
   );
   view.appendChild(toolbar);
@@ -156,14 +157,14 @@ export function renderDialektDetail(root, dialektId) {
 
     // Ergebnis-Zähler über dem Grid
     countEl.textContent = raw
-      ? `${items.length} Treffer`
-      : `${items.length} ${items.length === 1 ? 'Ausdruck' : 'Ausdrücke'}`;
+      ? t('count.treffer', { n: items.length })
+      : t(items.length === 1 ? 'view.dialektDetail.countExpr' : 'view.dialektDetail.countExprs', { n: items.length });
 
     if (!items.length) {
       grid.appendChild(el('div', { class: 'empty-state' },
         emptyIllustration('search'),
-        el('h3', {}, 'Keine Ausdrücke gefunden'),
-        el('div', { class: 'empty-meta' }, 'Versuche einen anderen Suchbegriff oder lockere die Filter.')
+        el('h3', {}, t('view.dialektDetail.emptyTitle')),
+        el('div', { class: 'empty-meta' }, t('view.dialektDetail.emptyMeta'))
       ));
       return;
     }
@@ -239,8 +240,8 @@ function renderDialectAudioSection(d) {
     },
       el('span', { class: 'detail-train-emoji' }, '👂'),
       el('span', { class: 'detail-train-text' },
-        el('span', { class: 'detail-train-title' }, 'Klangpaare üben'),
-        el('span', { class: 'detail-train-sub' }, 'Ähnlich klingende Ausdrücke unterscheiden')
+        el('span', { class: 'detail-train-title' }, t('view.dialektDetail.klangpaareTitle')),
+        el('span', { class: 'detail-train-sub' }, t('view.dialektDetail.klangpaareSub'))
       )
     ),
     el('button', {
@@ -250,8 +251,8 @@ function renderDialectAudioSection(d) {
     },
       el('span', { class: 'detail-train-emoji' }, '🗣️'),
       el('span', { class: 'detail-train-text' },
-        el('span', { class: 'detail-train-title' }, 'Shadowing'),
-        el('span', { class: 'detail-train-sub' }, 'Hören und sofort nachsprechen')
+        el('span', { class: 'detail-train-title' }, t('view.dialektDetail.shadowingTitle')),
+        el('span', { class: 'detail-train-sub' }, t('view.dialektDetail.shadowingSub'))
       )
     )
   ));
@@ -262,13 +263,12 @@ function renderDialectAudioSection(d) {
     const det = el('details', { class: 'forvo-section' });
     det.appendChild(el('summary', { class: 'forvo-summary' },
       el('span', { class: 'forvo-icon', 'aria-hidden': 'true' }, '🎧'),
-      el('span', { class: 'forvo-label' }, 'Von Muttersprachlern gesprochen'),
-      el('span', { class: 'forvo-count' }, `${words.length} Wörter`)
+      el('span', { class: 'forvo-label' }, t('view.dialektDetail.forvoLabel')),
+      el('span', { class: 'forvo-count' }, t('view.dialektDetail.forvoCount', { n: words.length }))
     ));
     const body = el('div', { class: 'forvo-body' });
     body.appendChild(el('p', { class: 'forvo-note' },
-      'Öffnet Forvo.com in einem neuen Tab — eine Community-Datenbank mit ' +
-      'Aufnahmen echter Sprecher. Externer Link; wir laden oder tracken nichts.'));
+      t('view.dialektDetail.forvoNote')));
     const list = el('div', { class: 'forvo-list' });
     words.forEach(w => {
       const href = forvoUrl(w.ausdruck);
@@ -278,7 +278,7 @@ function renderDialectAudioSection(d) {
         href,
         target: '_blank',
         rel: 'noopener noreferrer nofollow',
-        title: `„${w.ausdruck}" auf Forvo anhören (neuer Tab)`
+        title: t('view.dialektDetail.forvoLinkTitle', { term: w.ausdruck })
       },
         el('span', { class: 'forvo-link-word' }, w.ausdruck),
         el('span', { class: 'forvo-link-ext' }, '↗')
@@ -318,7 +318,7 @@ function renderRelatedSection(a, dialekt) {
   const sec = el('div', { class: 'related-section', dataset: { reveal: '' } });
   sec.appendChild(el('div', { class: 'related-head' },
     el('span', { class: 'related-icon', 'aria-hidden': 'true' }, '🔗'),
-    el('span', { class: 'related-title' }, 'Siehe auch')
+    el('span', { class: 'related-title' }, t('view.dialektDetail.relatedTitle'))
   ));
   const list = el('div', { class: 'related-list' });
   for (const rel of related) {
@@ -350,7 +350,7 @@ function renderPronunciationSection(a, dialekt) {
   const sec = el('details', { class: 'pron-section' });
   sec.appendChild(el('summary', { class: 'pron-summary' },
     el('span', { class: 'pron-icon', 'aria-hidden': 'true' }, '🔊'),
-    el('span', { class: 'pron-label' }, 'Aussprache'),
+    el('span', { class: 'pron-label' }, t('view.dialektDetail.pronLabel')),
     el('span', { class: 'pron-ipa-mini' }, ipa)
   ));
 
@@ -361,12 +361,12 @@ function renderPronunciationSection(a, dialekt) {
 
   // Silben — klickbare Chips, jede einzeln langsam vorgesprochen.
   if (syllables.length) {
-    const sylRow = el('div', { class: 'pron-syllables', role: 'group', ariaLabel: 'Silben' });
+    const sylRow = el('div', { class: 'pron-syllables', role: 'group', ariaLabel: t('view.dialektDetail.syllablesAria') });
     syllables.forEach((syl, idx) => {
       if (idx > 0) sylRow.appendChild(el('span', { class: 'pron-syl-sep', ariaHidden: 'true' }, '·'));
       sylRow.appendChild(el('button', {
         class: 'pron-syl',
-        title: `„${syl}" langsam anhören`,
+        title: t('view.dialektDetail.syllableTitle', { term: syl }),
         onClick: () => { sfx.click(); speak(syl, lang, { rate: 0.7, dialektId: dialekt.id }); }
       }, syl));
     });
@@ -376,10 +376,10 @@ function renderPronunciationSection(a, dialekt) {
   // Wiedergabe-Buttons: normal + Slow-Mo.
   body.appendChild(el('div', { class: 'pron-buttons' },
     el('button', { class: 'btn btn-secondary pron-play',
-      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { dialektId: dialekt.id }); } }, '▶ Anhören'),
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { dialektId: dialekt.id }); } }, t('view.dialektDetail.listen')),
     el('button', { class: 'btn btn-ghost pron-play',
-      title: 'Verlangsamt — Silbe für Silbe nachsprechen',
-      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5, dialektId: dialekt.id }); } }, '🐢 Langsam')
+      title: t('view.dialektDetail.slowTitle'),
+      onClick: () => { sfx.click(); speak(a.ausdruck, lang, { rate: 0.5, dialektId: dialekt.id }); } }, t('view.dialektDetail.slow'))
   ));
 
   // Aussprache-Übung (Mikrofon) erst beim Aufklappen bauen — spart bei großen
@@ -443,8 +443,8 @@ function renderPracticeWidget(a, lang, sylCount) {
   const wrap = el('div', { class: 'pron-practice' });
   wrap.appendChild(el('div', { class: 'pron-practice-head' },
     el('span', { class: 'pron-practice-icon', 'aria-hidden': 'true' }, '🎙️'),
-    el('span', { class: 'pron-practice-title' }, 'Aussprache üben'),
-    el('span', { class: 'pron-practice-hint' }, `${sylCount} Silbe${sylCount === 1 ? '' : 'n'}`)
+    el('span', { class: 'pron-practice-title' }, t('view.dialektDetail.practiceTitle')),
+    el('span', { class: 'pron-practice-hint' }, t(sylCount === 1 ? 'view.dialektDetail.syllableCount' : 'view.dialektDetail.syllableCountPl', { n: sylCount }))
   ));
   const mic = { busy: false };
   if (isRecordingSupported()) appendRhythmBlock(wrap, sylCount, mic);
@@ -457,9 +457,9 @@ function appendRhythmBlock(wrap, sylCount, mic) {
   const BUCKETS = 48;
   const refEnv = syllableEnvelope(sylCount, BUCKETS);
   const canvas = el('canvas', { class: 'pron-canvas', width: 480, height: 96, ariaHidden: 'true' });
-  const status = el('div', { class: 'pron-practice-status' }, 'Rhythmus: anhören, dann aufnehmen und nachsprechen.');
+  const status = el('div', { class: 'pron-practice-status' }, t('view.dialektDetail.rhythmHint'));
   const badge = el('div', { class: 'pron-score-badge' });
-  const recBtn = el('button', { class: 'btn btn-primary pron-rec' }, '🎙️ Aufnehmen');
+  const recBtn = el('button', { class: 'btn btn-primary pron-rec' }, t('view.dialektDetail.record'));
   wrap.appendChild(canvas);
   wrap.appendChild(el('div', { class: 'pron-practice-foot' }, recBtn, badge));
   wrap.appendChild(status);
@@ -473,21 +473,21 @@ function appendRhythmBlock(wrap, sylCount, mic) {
     const tone = score >= 80 ? 'high' : score >= 55 ? 'mid' : 'low';
     badge.className = `pron-score-badge is-shown tone-${tone}`;
     badge.appendChild(el('span', { class: 'pron-score-num' }, score + '%'));
-    badge.appendChild(el('span', { class: 'pron-score-sub' }, `${userPeaks}/${expectedSyllables} Silben`));
-    status.textContent = score >= 80 ? 'Super Rhythmus! 🎉'
-      : score >= 55 ? 'Schon nah dran — versuch es nochmal.'
-      : 'Achte auf die Silben-Betonung.';
+    badge.appendChild(el('span', { class: 'pron-score-sub' }, t('view.dialektDetail.syllablesOf', { peaks: userPeaks, total: expectedSyllables })));
+    status.textContent = score >= 80 ? t('view.dialektDetail.rhythmGreat')
+      : score >= 55 ? t('view.dialektDetail.rhythmClose')
+      : t('view.dialektDetail.rhythmStress');
     if (score >= 80) { sfx.unlock(); confettiBurst(badge, { count: 18 }); }
   }
 
   async function start() {
-    if (mic.busy) { status.textContent = 'Erst die Worterkennung beenden.'; return; }
+    if (mic.busy) { status.textContent = t('view.dialektDetail.stopRecogFirst'); return; }
     mic.busy = true; recording = true;
     live.length = 0;
     badge.classList.remove('is-shown');
     recBtn.classList.add('is-recording');
-    recBtn.textContent = '⏹ Stoppen';
-    status.textContent = 'Aufnahme läuft… sprich jetzt nach.';
+    recBtn.textContent = t('view.dialektDetail.stop');
+    status.textContent = t('view.dialektDetail.recording');
     sfx.click();
     try {
       controller = await startRecording({
@@ -496,7 +496,7 @@ function appendRhythmBlock(wrap, sylCount, mic) {
         onStop: ({ envelope }) => {
           recording = false; mic.busy = false; controller = null;
           recBtn.classList.remove('is-recording');
-          recBtn.textContent = '🎙️ Nochmal';
+          recBtn.textContent = t('view.dialektDetail.recordAgain');
           drawEnvelopes(canvas, refEnv, envelope);
           showScore(scorePronunciation(envelope, sylCount, { buckets: BUCKETS }));
         },
@@ -504,8 +504,8 @@ function appendRhythmBlock(wrap, sylCount, mic) {
     } catch {
       recording = false; mic.busy = false;
       recBtn.classList.remove('is-recording');
-      recBtn.textContent = '🎙️ Aufnehmen';
-      status.textContent = 'Mikrofon nicht verfügbar oder Zugriff verweigert.';
+      recBtn.textContent = t('view.dialektDetail.record');
+      status.textContent = t('view.dialektDetail.micUnavailable');
     }
   }
 
@@ -518,29 +518,29 @@ function appendRhythmBlock(wrap, sylCount, mic) {
 // Block 2 — Worterkennung: hört zu und bewertet das Transcript (tolerant, mit
 // Laut-Faltung). Nutzt die Browser-SpeechRecognition (kann online sein).
 function appendRecognitionBlock(wrap, a, lang, mic) {
-  const out = el('div', { class: 'pron-recog-out' }, 'Worterkennung: tippe „Prüfen" und sprich den Ausdruck.');
-  const recogBtn = el('button', { class: 'btn btn-secondary pron-recog-btn' }, '🗣️ Aussprache prüfen');
+  const out = el('div', { class: 'pron-recog-out' }, t('view.dialektDetail.recogHint'));
+  const recogBtn = el('button', { class: 'btn btn-secondary pron-recog-btn' }, t('view.dialektDetail.recogCheck'));
   wrap.appendChild(el('div', { class: 'pron-recog' },
     el('div', { class: 'pron-recog-foot' }, recogBtn, out),
     el('div', { class: 'pron-recog-note' },
-      'ⓘ nutzt die Spracherkennung deines Browsers — dabei kann Audio an den Browser-Dienst (ggf. online) gehen.')
+      t('view.dialektDetail.recogNote'))
   ));
 
   let listening = false, stop = null, finalShown = false;
   function reset() {
     listening = false; stop = null; mic.busy = false;
     recogBtn.classList.remove('is-listening');
-    recogBtn.textContent = '🗣️ Aussprache prüfen';
+    recogBtn.textContent = t('view.dialektDetail.recogCheck');
   }
 
   recogBtn.addEventListener('click', () => {
     if (listening) { if (stop) stop(); return; }
-    if (mic.busy) { out.className = 'pron-recog-out'; out.textContent = 'Erst die Rhythmus-Aufnahme beenden.'; return; }
+    if (mic.busy) { out.className = 'pron-recog-out'; out.textContent = t('view.dialektDetail.stopRhythmFirst'); return; }
     listening = true; mic.busy = true; finalShown = false;
     recogBtn.classList.add('is-listening');
-    recogBtn.textContent = '⏹ Höre zu…';
+    recogBtn.textContent = t('view.dialektDetail.listening');
     out.className = 'pron-recog-out';
-    out.textContent = 'Sprich jetzt…';
+    out.textContent = t('view.dialektDetail.speakNow');
     sfx.click();
     stop = startListening({
       lang,
@@ -552,18 +552,18 @@ function appendRecognitionBlock(wrap, a, lang, mic) {
         out.className = 'pron-recog-out ' + (best.ok ? 'is-ok' : 'is-miss');
         out.innerHTML = '';
         out.appendChild(el('span', { class: 'pron-recog-verdict' }, (best.ok ? '✓ ' : '✗ ') + pct + '%'));
-        out.appendChild(el('span', { class: 'pron-recog-heard' }, 'gehört: „' + (best.transcript || '–') + '"'));
+        out.appendChild(el('span', { class: 'pron-recog-heard' }, t('view.dialektDetail.heard', { term: best.transcript || '–' })));
         if (best.ok) { sfx.unlock(); if (pct >= 90) confettiBurst(out, { count: 16 }); }
         else sfx.wrong();
       },
       onError: () => {
         finalShown = true;
         out.className = 'pron-recog-out is-miss';
-        out.textContent = 'Erkennung nicht verfügbar oder Zugriff verweigert.';
+        out.textContent = t('view.dialektDetail.recogUnavailable');
         reset();
       },
       onEnd: () => {
-        if (!finalShown) { out.className = 'pron-recog-out'; out.textContent = 'Nichts erkannt — nochmal versuchen.'; }
+        if (!finalShown) { out.className = 'pron-recog-out'; out.textContent = t('view.dialektDetail.nothingRecognized'); }
         reset();
       },
     });
@@ -580,8 +580,8 @@ function renderEtymologySection(a) {
   const sec = el('details', { class: 'etymology-section' });
   sec.appendChild(el('summary', { class: 'etymology-summary' },
     el('span', { class: 'etymology-icon', 'aria-hidden': 'true' }, '📜'),
-    el('span', { class: 'etymology-label' }, 'Etymologie'),
-    el('span', { class: 'etymology-count' }, `${sentences.length} Hinweis${sentences.length === 1 ? '' : 'e'}`)
+    el('span', { class: 'etymology-label' }, t('view.dialektDetail.etymologyLabel')),
+    el('span', { class: 'etymology-count' }, t(sentences.length === 1 ? 'view.dialektDetail.etymologyCount' : 'view.dialektDetail.etymologyCountPl', { n: sentences.length }))
   ));
   const list = el('div', { class: 'etymology-list' });
   sentences.forEach(s => {

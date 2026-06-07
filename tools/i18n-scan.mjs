@@ -30,10 +30,21 @@ function walk(dir, out = []) {
   return out;
 }
 
+// Bekannte technische Einzelwörter, die wie UI aussehen, aber keine sind:
+// Keyboard-Event-Keys (e.key === '…'), DOM-/Web-APIs, App-Eigenname.
+const STOP = new Set([
+  'Enter', 'Escape', 'Tab', 'Shift', 'Control', 'Alt', 'Meta', 'Backspace',
+  'Delete', 'Insert', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
+  'Home', 'End', 'PageUp', 'PageDown', 'CapsLock', 'Space', 'Spacebar', 'Clear',
+  'IntersectionObserver', 'ResizeObserver', 'MutationObserver', 'AbortController',
+  'Dialekto',
+]);
+
 // Sieht der String nach sichtbarem deutschem UI-Text aus (statt technischem Wert)?
 function looksGermanUi(s) {
   const t = s.trim();
   if (t.length < 2 || t.length > 240) return false;
+  if (STOP.has(t)) return false;                                 // Tasten/APIs/Eigenname
   if (!/[A-Za-zÄÖÜäöüß]/.test(t)) return false;                  // braucht Buchstaben
   if (t.startsWith('<')) return false;                            // HTML/SVG-Markup
   if (t.split(/\s+/).every((w) => /^[a-z][a-z0-9-]*$/.test(w))) return false; // CSS-Klassenliste

@@ -9,6 +9,7 @@
 // keine Erkennung, kein Netz, kein Tracking.
 
 import { el, go, speak } from '../util.js';
+import { t } from '../util/i18n.js';
 import { DIALEKTE, ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { icon } from '../util/icons.js';
 import { sfx, vibrate } from '../util/sounds.js';
@@ -62,8 +63,8 @@ function renderSetup(host, preset) {
   let source = preset || 'all';
   let count = DEFAULT_COUNT;
 
-  const select = el('select', { class: 'shadow-select', ariaLabel: 'Dialekt wählen' },
-    el('option', { value: 'all' }, '🌍 Alle Dialekte'),
+  const select = el('select', { class: 'shadow-select', ariaLabel: t('view.klangpaare.selectDialectAria') },
+    el('option', { value: 'all' }, t('view.klangpaare.allDialects')),
     ...DIALEKTE.map(d => el('option', { value: d.id }, `${d.flag} ${d.name}`))
   );
   select.value = source;
@@ -84,24 +85,22 @@ function renderSetup(host, preset) {
   host.appendChild(el('div', { class: 'shadow-setup klangpaare-setup' },
     el('div', { class: 'shadow-hero', dataset: { reveal: 'up' } },
       el('div', { class: 'shadow-hero-icon' }, '👂'),
-      el('h2', {}, 'Klangpaare'),
+      el('h2', {}, t('view.klangpaare.title')),
       el('p', { class: 'lede' },
-        'Zwei Ausdrücke, die fast gleich klingen — welchen hörst du? Trainiert dein ' +
-        'Ohr für die feinen Lautunterschiede eines Dialekts.')
+        t('view.klangpaare.lede'))
     ),
     el('div', { class: 'shadow-setup-card' },
-      el('label', { class: 'shadow-field-label' }, 'Dialekt'),
+      el('label', { class: 'shadow-field-label' }, t('view.klangpaare.dialectLabel')),
       select,
-      el('label', { class: 'shadow-field-label' }, 'Wie viele Paare?'),
+      el('label', { class: 'shadow-field-label' }, t('view.klangpaare.countLabel')),
       countRow,
       el('button', {
         class: 'btn btn-primary shadow-start-btn',
         dataset: { magnetic: '12' },
         onClick: () => startSession(host, source, count)
-      }, '👂 Los geht’s'),
+      }, t('view.klangpaare.start')),
       el('div', { class: 'pron-recog-note' },
-        'ⓘ Läuft komplett offline: Die Ausdrücke werden mit der Sprachausgabe deines ' +
-        'Geräts vorgelesen — kein Mikrofon, keine Internetverbindung nötig.')
+        t('view.klangpaare.offlineNote'))
     )
   ));
 }
@@ -116,9 +115,8 @@ function startSession(host, source, count) {
   if (!drills.length) {
     host.innerHTML = '';
     host.appendChild(el('div', { class: 'shadow-empty' },
-      el('p', {}, 'Für diese Auswahl konnten keine Klangpaare gebildet werden. ' +
-        'Versuch einen einzelnen Dialekt mit mehr Ausdrücken.'),
-      el('button', { class: 'btn btn-secondary', onClick: () => renderSetup(host, source) }, '← Zurück')
+      el('p', {}, t('view.klangpaare.emptyText')),
+      el('button', { class: 'btn btn-secondary', onClick: () => renderSetup(host, source) }, t('view.klangpaare.back'))
     ));
     return;
   }
@@ -149,7 +147,7 @@ function startSession(host, source, count) {
     const lang = drill.target.dialektLang || 'de-DE';
 
     const progress = el('div', { class: 'shadow-progress' },
-      el('div', { class: 'shadow-progress-text' }, `Paar ${idx + 1} / ${drills.length}`),
+      el('div', { class: 'shadow-progress-text' }, t('view.klangpaare.pairProgress', { n: idx + 1, total: drills.length })),
       el('div', { class: 'shadow-progress-stars' }, '✓ ' + correctSoFar),
       el('div', { class: 'shadow-progress-bar' },
         el('div', { class: 'shadow-progress-fill', style: { width: Math.round((idx / drills.length) * 100) + '%' } })
@@ -161,13 +159,13 @@ function startSession(host, source, count) {
 
     const card = el('div', { class: 'klangpaare-card', dataset: { reveal: 'zoom' } },
       el('div', { class: 'klangpaare-card-dialect' }, `${drill.target.dialektFlag} ${drill.target.dialektName}`),
-      el('div', { class: 'klangpaare-prompt' }, 'Welchen Ausdruck hörst du?'),
-      el('button', { class: 'klangpaare-play-btn', ariaLabel: 'Anhören', onClick: playNormal },
+      el('div', { class: 'klangpaare-prompt' }, t('view.klangpaare.prompt')),
+      el('button', { class: 'klangpaare-play-btn', ariaLabel: t('view.klangpaare.listen'), onClick: playNormal },
         el('span', { class: 'klangpaare-play-icon' }, '🔊')),
-      el('button', { class: 'btn btn-ghost klangpaare-slow-btn', onClick: playSlow }, '🐢 Langsam')
+      el('button', { class: 'btn btn-ghost klangpaare-slow-btn', onClick: playSlow }, t('view.klangpaare.slow'))
     );
 
-    const optionsWrap = el('div', { class: 'klangpaare-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten' });
+    const optionsWrap = el('div', { class: 'klangpaare-options', role: 'group', 'aria-label': t('view.klangpaare.optionsAria') });
     const result = el('div', { class: 'shadow-result klangpaare-result', 'aria-live': 'assertive', 'aria-atomic': 'true' });
     const actionRow = el('div', { class: 'shadow-action-row' });
     let answered = false;
@@ -219,7 +217,7 @@ function startSession(host, source, count) {
 function showVerdict(result, correct, target) {
   result.className = 'shadow-result klangpaare-result ' + (correct ? 'is-ok' : 'is-miss');
   result.innerHTML = '';
-  result.appendChild(el('span', { class: 'shadow-result-label' }, correct ? '✓ Richtig gehört!' : '✗ Knapp daneben'));
+  result.appendChild(el('span', { class: 'shadow-result-label' }, correct ? t('view.klangpaare.verdictCorrect') : t('view.klangpaare.verdictWrong')));
   result.appendChild(el('span', { class: 'klangpaare-reveal' },
     el('strong', {}, target.ausdruck), ' ↦ ' + target.hochdeutsch));
 }
@@ -230,7 +228,7 @@ function lockAndAdvance(actionRow, next) {
   const go1 = () => { if (advanced) return; advanced = true; next(); };
   actionRow.innerHTML = '';
   actionRow.appendChild(el('button', { class: 'btn btn-primary shadow-next-btn', dataset: { magnetic: '10' }, onClick: go1 },
-    'Weiter →'));
+    t('view.klangpaare.next')));
   setTimeout(go1, 1400);
 }
 
@@ -266,42 +264,42 @@ function renderSessionSummary(host, results, source, count) {
         svg,
         el('div', { class: 'summary-ring-inner' },
           el('div', { class: 'summary-ring-pct' }, pct + '%'),
-          el('div', { class: 'summary-ring-label' }, 'gehört')
+          el('div', { class: 'summary-ring-label' }, t('view.klangpaare.ringLabel'))
         )
       ),
       el('div', { class: 'summary-header-text' },
-        el('h2', {}, isGreat ? '🎉 Feines Gehör!' : isFine ? '👍 Gut gehört!' : '💪 Weiter trainieren!'),
-        el('p', {}, `${s.correct}/${s.count} Klangpaare richtig erkannt.`)
+        el('h2', {}, isGreat ? t('view.klangpaare.headlineGreat') : isFine ? t('view.klangpaare.headlineFine') : t('view.klangpaare.headlinePractice')),
+        el('p', {}, t('view.klangpaare.scoreLine', { n: s.correct, total: s.count }))
       )
     ),
     el('div', { class: 'summary-xp-earned' },
       el('span', { class: 'summary-xp-num' }, '+' + xp),
-      el('span', { class: 'summary-xp-unit' }, 'XP verdient')
+      el('span', { class: 'summary-xp-unit' }, t('view.klangpaare.xpEarned'))
     ),
     el('div', { class: 'summary-stats' },
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, icon('flame', { size: 20 })),
         el('div', { class: 'summary-stat-num' }, String(streak)),
-        el('div', { class: 'summary-stat-label' }, 'Streak')
+        el('div', { class: 'summary-stat-label' }, t('view.klangpaare.statStreak'))
       ),
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, '🎯'),
         el('div', { class: 'summary-stat-num' }, pct + '%'),
-        el('div', { class: 'summary-stat-label' }, 'Treffer')
+        el('div', { class: 'summary-stat-label' }, t('view.klangpaare.statHits'))
       ),
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, '👂'),
         el('div', { class: 'summary-stat-num' }, String(s.count)),
-        el('div', { class: 'summary-stat-label' }, 'Paare')
+        el('div', { class: 'summary-stat-label' }, t('view.klangpaare.statPairs'))
       )
     ),
     el('div', { class: 'summary-cta' },
       el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => startSession(host, source, count) },
-        icon('refresh'), ' Nochmal'),
+        icon('refresh'), ' ' + t('view.klangpaare.again')),
       el('button', { class: 'btn btn-secondary', onClick: () => renderSetup(host, source) },
-        '👂 Andere Auswahl'),
+        t('view.klangpaare.otherSelection')),
       el('button', { class: 'btn btn-ghost', onClick: () => go('#/statistiken') },
-        icon('zap'), ' Statistiken')
+        icon('zap'), ' ' + t('view.klangpaare.stats'))
     )
   );
 
