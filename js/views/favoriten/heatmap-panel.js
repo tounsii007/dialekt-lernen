@@ -2,12 +2,11 @@
 
 import { el } from '../../util.js';
 import { getStreakHeatmap, getActiveDays } from '../../store.js';
-import { t } from '../../util/i18n.js';
+import { t, getLang } from '../../util/i18n.js';
 
 export function renderHeatmap() {
   const days = getStreakHeatmap(16); // 16 weeks
   const maxCount = days.reduce((m, d) => Math.max(m, d.count), 0) || 1;
-  const monthLabel = (d) => ['Jan','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'][d.getMonth()];
 
   const grid = el('div', { class: 'streak-grid' });
   // Group into weeks (columns)
@@ -19,7 +18,7 @@ export function renderHeatmap() {
       const lvl = d.count === 0 ? 0 : Math.min(4, Math.ceil((d.count / maxCount) * 4));
       const cell = el('div', {
         class: `streak-cell lvl-${lvl}`,
-        title: t(d.count === 1 ? 'view.heatmap-panel.actionOne' : 'view.heatmap-panel.actionMany', { date: d.date.toLocaleDateString('de-DE'), n: d.count }),
+        title: t(d.count === 1 ? 'view.heatmap-panel.actionOne' : 'view.heatmap-panel.actionMany', { date: d.date.toLocaleDateString(getLang()), n: d.count }),
         style: { '--cell-delay': `${(w * 7 + i) * 6}ms` }
       });
       col.appendChild(cell);

@@ -199,7 +199,7 @@ function applyFilters(s) {
 
 function renderSammlungCard(a) {
   const unlocked = getLernstand(a.dialektId, a.id) > 0;
-  const cat = KATEGORIEN[a.kategorie] || { label: a.kategorie || 'Sonstige', icon: '·' };
+  const cat = KATEGORIEN[a.kategorie] || { label: a.kategorie || t('view.sammlung.catFallback'), icon: '·' };
 
   if (unlocked) {
     // Sichtbare Karte: aufklappbar zum Ausdruck-Detail

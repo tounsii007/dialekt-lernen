@@ -64,7 +64,7 @@ export function renderVergleich(root) {
       el('header', { class: 'compare-group-head' },
         el('div', { class: 'compare-group-meta' },
           el('span', { class: 'compare-group-cat' }, cat.icon + ' ' + cat.label),
-          el('span', { class: 'compare-group-count' }, g.items.length + ' Dialekte')
+          el('span', { class: 'compare-group-count' }, t('count.dialekte', { n: g.items.length }))
         ),
         el('h3', { class: 'compare-group-title' }, g.head)
       ),
@@ -93,7 +93,7 @@ export function renderVergleich(root) {
           ),
           el('button', {
             class: 'compare-cell-speak',
-            title: 'Anhören',
+            title: t('view.vergleich.listen'),
             onClick: (e) => { e.stopPropagation(); sfx.click(); speak(it.ausdruck, it.dialektLang || 'de-DE', { dialektId: it.dialektId }); }
           }, icon('speaker', { size: 14 }))
         ))

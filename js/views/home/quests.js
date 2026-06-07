@@ -2,6 +2,7 @@
 // und Bonus-Banner, sobald alle erledigt sind.
 
 import { el } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { getActiveQuestsWithProgress, getQuestsSummary, ALL_DONE_BONUS_XP } from '../../store/quests.js';
 
 const QUEST_METRIC_ICON = {
@@ -15,8 +16,8 @@ export function renderQuestsSection() {
   const section = el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Tages-Quests'),
-        el('div', { class: 'lede' }, 'Drei Aufgaben — jeden Tag neu.')
+        el('h2', {}, t('view.quests.title')),
+        el('div', { class: 'lede' }, t('view.quests.lede'))
       ),
       el('span', {
         class: 'quest-summary-pill' + (summary.allDone ? ' is-done' : ''),
@@ -26,7 +27,7 @@ export function renderQuestsSection() {
 
   if (summary.allDone) {
     section.appendChild(el('div', { class: 'quest-alldone-banner' },
-      `🎉 Alle Tages-Quests geschafft${summary.bonusClaimed ? ` · Bonus +${ALL_DONE_BONUS_XP} XP` : ''}`
+      t('view.quests.allDone') + (summary.bonusClaimed ? t('view.quests.bonusSuffix', { n: ALL_DONE_BONUS_XP }) : '')
     ));
   }
 
@@ -50,7 +51,7 @@ function renderQuestCard(q) {
     ),
     el('div', { class: 'quest-progress-meta' },
       el('span', {}, `${q.current} / ${q.target}`),
-      q.done ? el('span', { class: 'quest-done' }, '✓ erledigt') : null
+      q.done ? el('span', { class: 'quest-done' }, t('view.quests.done')) : null
     )
   );
 }

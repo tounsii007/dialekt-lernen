@@ -10,6 +10,7 @@ import { renderQuizQuestion } from './quiz/question.js';
 import { renderQuizResult } from './quiz/result.js';
 import { confettiBurst } from '../util/motion.js';
 import { sfx, vibrate } from '../util/sounds.js';
+import { t } from '../util/i18n.js';
 
 export function renderQuiz(root) {
   root.innerHTML = '';
@@ -51,7 +52,7 @@ function startQuiz({ source, direction, timerEnabled = true }) {
         dialektFarbe: getDialekt(source).farbe,
       }));
   if (pool.length < 4) {
-    toast('Zu wenige Ausdrücke für ein Quiz.', 'info');
+    toast(t('view.quiz.tooFew'), 'info');
     return;
   }
   const selected = shuffle(pool).slice(0, Math.min(QUIZ_LENGTH, pool.length));
@@ -104,7 +105,7 @@ function answer(btn, chosen, correct, optsEl) {
   if (feedback) {
     const ok = chosen === correct;
     feedback.className = 'quiz-feedback ' + (ok ? 'is-correct' : 'is-wrong');
-    feedback.textContent = ok ? 'Richtig!' : `Leider falsch. Richtig: ${correct}`;
+    feedback.textContent = ok ? t('view.quiz.correct') : t('view.quiz.wrong', { n: correct });
   }
   setTimeout(() => {
     quiz.idx++;

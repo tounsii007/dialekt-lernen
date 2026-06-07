@@ -42,68 +42,68 @@ const CLUSTER_DEFS = [
   // (matcht „nicht") die spezifischen Treffer wie „nicht wahr?".
   {
     id: 'fragen-anhang',
-    label: 'Frage-Anhängsel („gell, woll, ne?")',
+    label: t('view.idiome.clusterFragenAnhang'),
     emoji: '❔',
     keywords: ['nicht wahr', 'oder?', '/ oder', 'oder ', 'gell', 'gelle', 'odda', 'wer? / nicht']
   },
   {
     id: 'zustimmung',
-    label: 'Ausdrücke der Zustimmung',
+    label: t('view.idiome.clusterZustimmung'),
     emoji: '👍',
     keywords: ['passt', 'in ordnung', 'alles klar', 'okay', 'einverstanden', 'stimmt', 'sicher', 'jawohl', 'natuerlich', 'gerne']
   },
   {
     id: 'verneinung',
-    label: 'Verneinungen & „Geht nicht"',
+    label: t('view.idiome.clusterVerneinung'),
     emoji: '🚫',
     keywords: ['nicht', 'nichts', 'keine', 'kein ', 'niemals', 'gar nichts', 'unmoeglich', 'auf keinen fall']
   },
   {
     id: 'erstaunen',
-    label: 'Ausrufe des Erstaunens',
+    label: t('view.idiome.clusterErstaunen'),
     emoji: '😲',
     keywords: ['mein gott', 'allmaechtig', 'um himmels willen', 'ach du', 'oh weh', 'um gottes willen', 'wahnsinn', 'krass', 'unglaublich', 'donnerwetter', 'verflixt', 'mannometer']
   },
   {
     id: 'reden-schwatzen',
-    label: 'Reden, Schnacken, Schwätzen',
+    label: t('view.idiome.clusterRedenSchwatzen'),
     emoji: '🗣️',
     keywords: ['reden', 'plappern', 'schwatzen', 'quatschen', 'schnacken', 'erzaehlen', 'quatsch', 'unsinn', 'witz', 'witze', 'schnauze', 'plaudern']
   },
   {
     id: 'menschen-charakter',
-    label: 'Über Menschen & Charakter',
+    label: t('view.idiome.clusterMenschenCharakter'),
     emoji: '🧑',
     keywords: ['mensch', 'kerl', 'typ', 'frau', 'mann', 'kind', 'nachbar', 'kollege', 'fremder', 'liebling', 'streber', 'aengstlich', 'verrueckt', 'spinner', 'narr', 'trottel', 'depp', 'idiot']
   },
   {
     id: 'wetter-zeit',
-    label: 'Wetter & Zeit',
+    label: t('view.idiome.clusterWetterZeit'),
     emoji: '🌦️',
     keywords: ['regen', 'sonne', 'wetter', 'kalt', 'warm', 'nass', 'frostig', 'stuermisch', 'nieselt', 'matschig', 'morgen', 'gestern', 'heute', 'spaeter', 'gleich', 'sofort', 'frueher']
   },
   {
     id: 'koerper-gefuehl',
-    label: 'Körper, Müdigkeit & Gefühle',
+    label: t('view.idiome.clusterKoerperGefuehl'),
     emoji: '😴',
     keywords: ['muede', 'erschoepft', 'kaputt', 'krank', 'gesund', 'hunger', 'durst', 'satt', 'froh', 'traurig', 'aerger', 'wut', 'gluecklich']
   },
   {
     id: 'essen-trinken',
-    label: 'Rund ums Essen & Trinken',
+    label: t('view.idiome.clusterEssenTrinken'),
     emoji: '🍽️',
     keywords: ['essen', 'lecker', 'kaese', 'brot', 'wurst', 'bier', 'wein', 'kartoffel', 'kuchen', 'leckerei', 'futter']
   },
   {
     id: 'kultur-brauchtum',
-    label: 'Kultur & Brauchtum',
+    label: t('view.idiome.clusterKulturBrauchtum'),
     emoji: '🎭',
     keywords: ['karneval', 'fasching', 'fasnet', 'maibaum', 'volksfest', 'oktoberfest', 'kirmes', 'kirchweih', 'sitzung']
   },
 ];
 
 // „Sonstige" Cluster fängt Redensarten auf, die in keine Schublade passen.
-const FALLBACK_CLUSTER = { id: 'sonstige', label: 'Weitere Redensarten', emoji: '💬' };
+const FALLBACK_CLUSTER = { id: 'sonstige', label: t('view.idiome.clusterSonstige'), emoji: '💬' };
 
 /**
  * Berechnet Cluster aus allen Redensarten.

@@ -43,11 +43,17 @@ for (const lang of LANGS) {
   // Block ab "\n  <lang>: {" bis zum schließenden "\n  }," auf gleicher Ebene.
   const start = i18nSrc.search(new RegExp(`\\n  ${lang}: \\{\\n`));
   if (start === -1) { console.error(`Sprachblock ${lang} nicht gefunden.`); process.exit(2); }
-  // ab start die Klammer-Tiefe verfolgen
+  // ab start die Klammer-Tiefe verfolgen — STRING-AWARE, damit {n}/{date}
+  // in den Werten die Tiefe nicht verfaelschen (sonst endet der Block zu frueh).
   let i = i18nSrc.indexOf('{', start);
   let depth = 0, end = i;
   for (; i < i18nSrc.length; i++) {
     const c = i18nSrc[i];
+    if (c === '"' || c === "'") {
+      const q = c; i++;
+      while (i < i18nSrc.length && i18nSrc[i] !== q) { if (i18nSrc[i] === '\\') i++; i++; }
+      continue;
+    }
     if (c === '{') depth++;
     else if (c === '}') { depth--; if (depth === 0) { end = i; break; } }
   }

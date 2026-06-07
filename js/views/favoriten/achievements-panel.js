@@ -5,6 +5,7 @@ import { evaluateAchievements, getAchievementScore, rarityOf, RARITY } from '../
 import { icon } from '../../util/icons.js';
 import { confettiBurst } from '../../util/motion.js';
 import { sfx } from '../../util/sounds.js';
+import { t } from '../../util/i18n.js';
 
 export function renderAchievements(stats) {
   const { items, justUnlocked } = evaluateAchievements(stats);
@@ -23,7 +24,7 @@ export function renderAchievements(stats) {
     const r = rarityOf(def);
     const card = el('div', {
       class: 'achievement rarity-' + r.id + (unlocked ? ' is-unlocked' : ' is-locked') + (ju ? ' is-fresh' : ''),
-      title: `${def.desc} · ${r.label} (${r.points} Punkte)`,
+      title: `${def.desc} · ${r.label} (${t('view.achievements-panel.points', { n: r.points })})`,
       dataset: { spotlight: '' }
     },
       el('div', { class: 'ach-icon' }, def.icon),
@@ -57,12 +58,12 @@ export function renderAchievements(stats) {
   return el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head ach-head' },
       el('div', {},
-        el('h2', {}, 'Achievements'),
-        el('div', { class: 'lede' }, `${unlockedCount} von ${items.length} freigeschaltet`)
+        el('h2', {}, t('view.achievements-panel.title')),
+        el('div', { class: 'lede' }, t('view.achievements-panel.unlockedOf', { unlocked: unlockedCount, total: items.length }))
       ),
-      el('div', { class: 'ach-score', title: 'Sammler-Punkte aus allen freigeschalteten Trophäen' },
+      el('div', { class: 'ach-score', title: t('view.achievements-panel.scoreTitle') },
         el('span', { class: 'ach-score-num', dataset: { count: String(score.score) } }, String(score.score)),
-        el('span', { class: 'ach-score-max' }, `/ ${score.maxScore} Punkte`)
+        el('span', { class: 'ach-score-max' }, t('view.achievements-panel.scoreMax', { n: score.maxScore }))
       )
     ),
     legend,

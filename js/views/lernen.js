@@ -10,6 +10,7 @@ import { renderFlashcard } from './lernen/flashcard.js';
 import { renderSummary } from './lernen/summary.js';
 import { getDeck } from '../store/decks.js';
 import { getAdaptiveRecommendations } from '../util/adaptive-plan.js';
+import { t } from '../util/i18n.js';
 
 export function renderLernen(root, params) {
   root.innerHTML = '';
@@ -58,7 +59,7 @@ function startSession({ source, mode = 'normal' }) {
   let title = '';
   if (source === 'all') {
     cards = ALLE_AUSDRUECKE.slice();
-    title = 'Alle Dialekte';
+    title = t('view.lernen.titleAll');
   } else if (source === 'recommendations') {
     // Adaptiver Lernplan — bis zu 10 personalisierte Empfehlungen.
     let recs = [];
@@ -69,20 +70,20 @@ function startSession({ source, mode = 'normal' }) {
     }
     cards = (recs || []).map(r => r.entry).filter(Boolean);
     if (cards.length === 0) {
-      toast('Noch keine Empfehlungen verfügbar — erst ein paar Karten lernen.', 'info', 2400);
+      toast(t('view.lernen.noRecs'), 'info', 2400);
       return;
     }
-    title = '📈 Heute empfohlen';
+    title = t('view.lernen.titleRecs');
   } else if (typeof source === 'string' && source.startsWith('card:')) {
     // Einzel-Karte aus URL-Parameter (z.B. „card=dialekt.id" aus At-Risk-Liste).
     const key = source.slice('card:'.length);
     const sep = key.indexOf('.');
-    if (sep < 0) { toast('Karte nicht gefunden', 'info', 1800); return; }
+    if (sep < 0) { toast(t('view.lernen.cardNotFound'), 'info', 1800); return; }
     const dialektId = key.slice(0, sep);
     const ausdruckId = key.slice(sep + 1);
     const d = getDialekt(dialektId);
     const a = d?.ausdruecke.find(x => x.id === ausdruckId);
-    if (!d || !a) { toast('Karte nicht gefunden', 'info', 1800); return; }
+    if (!d || !a) { toast(t('view.lernen.cardNotFound'), 'info', 1800); return; }
     cards = [{ ...a, dialektId: d.id, dialektName: d.name, dialektFlag: d.flag, dialektFarbe: d.farbe }];
     title = `🎯 ${d.flag} ${a.ausdruck}`;
   } else if (typeof source === 'string' && source.startsWith('kategorie:')) {
@@ -98,7 +99,7 @@ function startSession({ source, mode = 'normal' }) {
     const deckId = source.slice('deck:'.length);
     const deck = getDeck(deckId);
     if (!deck) {
-      toast('Deck nicht gefunden', 'info', 1800);
+      toast(t('view.lernen.deckNotFound'), 'info', 1800);
       go('#/decks');
       return;
     }
@@ -115,7 +116,7 @@ function startSession({ source, mode = 'normal' }) {
       cards.push({ ...a, dialektId: d.id, dialektName: d.name, dialektFlag: d.flag, dialektFarbe: d.farbe });
     }
     if (cards.length === 0) {
-      toast('Deck enthält keine gültigen Ausdrücke', 'info', 2200);
+      toast(t('view.lernen.deckEmpty'), 'info', 2200);
       go('#/decks');
       return;
     }

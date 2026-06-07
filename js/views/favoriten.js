@@ -6,6 +6,7 @@
 // bekommen dieselbe `rerender`-Closure wie zuvor durchgereicht.
 
 import { el } from '../util.js';
+import { t } from '../util/i18n.js';
 import {
   getFavoriten, getLernStats, getQuizGenauigkeit, getStreak, getQuizHistory,
   getActiveDays, getVisitedDialects,
@@ -34,8 +35,8 @@ export function renderFavoriten(root) {
 
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '⭐ Deine Favoriten & Statistiken'),
-      el('div', { class: 'lede' }, 'Hier findest du markierte Ausdrücke und deinen Lernfortschritt.')
+      el('h2', {}, t('view.favoriten.title')),
+      el('div', { class: 'lede' }, t('view.favoriten.lede'))
     )
   ));
 

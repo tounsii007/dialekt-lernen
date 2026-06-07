@@ -2,6 +2,7 @@
 // (geteiltes Partial). Einstieg in Ausdrücke & Bedeutungen pro Region.
 
 import { el } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { DIALEKTE } from '../../../data/dialekte.js';
 import { renderDialektCard } from '../partials.js';
 
@@ -9,8 +10,8 @@ export function renderDialektGrid() {
   const sec = el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Alle Dialekte'),
-        el('div', { class: 'lede' }, 'Wähle eine Region, um Ausdrücke und Bedeutungen zu erkunden.')
+        el('h2', {}, t('view.dialekt-grid.title')),
+        el('div', { class: 'lede' }, t('view.dialekt-grid.lede'))
       )
     )
   );

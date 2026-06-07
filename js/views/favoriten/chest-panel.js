@@ -5,15 +5,16 @@ import { el, toast } from '../../util.js';
 import { getChestState, openChest } from '../../store.js';
 import { confettiBurst } from '../../util/motion.js';
 import { sfx } from '../../util/sounds.js';
+import { t } from '../../util/i18n.js';
 
 export function renderChestCard(rerender) {
   const cs = getChestState();
 
   const head = el('div', { class: 'streak-head' },
     el('div', {},
-      el('div', { class: 'card-title' }, '🎁 Tages-Chest'),
+      el('div', { class: 'card-title' }, t('view.chest-panel.title')),
       el('div', { class: 'lede', style: { fontSize: '.85rem' } },
-        'Jeden Tag eine Belohnung — je länger deine Serie, desto mehr.')
+        t('view.chest-panel.lede'))
     )
   );
 
@@ -26,14 +27,14 @@ export function renderChestCard(rerender) {
 
   if (cs.canOpen) {
     const teaser = [`+${cs.preview.xp} XP`];
-    if (cs.preview.freeze) teaser.push('❄️ Freeze');
-    if (cs.preview.jackpot) teaser.push('🎉 Jackpot');
+    if (cs.preview.freeze) teaser.push(t('view.chest-panel.teaserFreeze'));
+    if (cs.preview.jackpot) teaser.push(t('view.chest-panel.teaserJackpot'));
 
     body.appendChild(el('div', { class: 'chest-streak-line' },
       cs.claimStreak > 0
-        ? `🔥 ${cs.claimStreak} Tage in Folge — heute wäre Tag ${cs.upcomingStreak}.`
-        : 'Öffne deinen ersten Chest!'));
-    body.appendChild(el('div', { class: 'chest-teaser' }, 'Heute drin: ' + teaser.join(' · ')));
+        ? t('view.chest-panel.streakLine', { n: cs.claimStreak, day: cs.upcomingStreak })
+        : t('view.chest-panel.firstChest')));
+    body.appendChild(el('div', { class: 'chest-teaser' }, t('view.chest-panel.todayInside', { items: teaser.join(' · ') })));
 
     const btn = el('button', {
       class: 'btn btn-primary chest-open-btn', dataset: { magnetic: '12' },
@@ -43,26 +44,26 @@ export function renderChestCard(rerender) {
         try { sfx.unlock(); } catch {}
         try { confettiBurst(btn, { count: res.reward.jackpot ? 130 : 70 }); } catch {}
         const parts = [`+${res.reward.xp} XP`];
-        if (res.reward.freeze) parts.push('❄️ +1 Streak-Freeze');
-        toast((res.reward.jackpot ? '🎉 JACKPOT! ' : '🎁 Chest geöffnet! ') + parts.join(' · '),
+        if (res.reward.freeze) parts.push(t('view.chest-panel.rewardFreeze'));
+        toast((res.reward.jackpot ? t('view.chest-panel.toastJackpot') : t('view.chest-panel.toastOpened')) + parts.join(' · '),
           'success', 3000);
         rerender();
       }
-    }, 'Chest öffnen');
+    }, t('view.chest-panel.openBtn'));
     body.appendChild(btn);
   } else {
     const r = cs.lastReward;
     const parts = [];
     if (r) {
       parts.push(`+${r.xp} XP`);
-      if (r.freeze) parts.push('❄️ +1 Freeze');
+      if (r.freeze) parts.push(t('view.chest-panel.claimedFreeze'));
     }
     body.appendChild(el('div', { class: 'chest-streak-line' },
-      `🔥 ${cs.claimStreak} Tage in Folge geöffnet`));
+      t('view.chest-panel.streakOpened', { n: cs.claimStreak })));
     body.appendChild(el('div', { class: 'chest-claimed' },
-      r ? `Heute erhalten: ${parts.join(' · ')}${r.jackpot ? ' · 🎉 Jackpot!' : ''}` : 'Heute schon geöffnet.'));
+      r ? t('view.chest-panel.todayReceived', { items: parts.join(' · ') }) + (r.jackpot ? t('view.chest-panel.jackpotSuffix') : '') : t('view.chest-panel.alreadyOpened')));
     body.appendChild(el('div', { class: 'lede', style: { fontSize: '.82rem', marginTop: '6px' } },
-      `Komm morgen wieder für Tag ${cs.claimStreak + 1}.`));
+      t('view.chest-panel.comeBack', { n: cs.claimStreak + 1 })));
   }
 
   return el('div', { class: 'card chest-card' + (cs.canOpen ? ' is-ready' : ''), dataset: { spotlight: '', reveal: '' } },

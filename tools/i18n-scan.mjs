@@ -37,6 +37,7 @@ const STOP = new Set([
   'Delete', 'Insert', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight',
   'Home', 'End', 'PageUp', 'PageDown', 'CapsLock', 'Space', 'Spacebar', 'Clear',
   'IntersectionObserver', 'ResizeObserver', 'MutationObserver', 'AbortController',
+  'SourceGraphic', 'SourceAlpha', // SVG-Filter-Primitive
   'Dialekto',
 ]);
 
@@ -55,6 +56,7 @@ function looksGermanUi(s) {
   if (/^[\d\s.,:;%×/+\-–—()]+$/.test(t)) return false;           // nur Zahlen/Symbole
   if (/^[A-Z][A-Z0-9_]+$/.test(t)) return false;                 // CONST_NAME
   if (/(^|\s)(var\(--|px\b|rem\b|deg\b|%\b)/.test(t) && !/[äöüÄÖÜß]/.test(t)) return false; // CSS
+  if (/^\d+(\.\d+)?(px|rem|em|%|vh|vw|deg|ms|s)\b/.test(t)) return false; // CSS-Dimension (z.B. "24px auto")
   const hasUmlaut = /[äöüÄÖÜß]/.test(t);
   const multiWord = /[A-Za-zäöüÄÖÜ]{2,}\s+[A-Za-zäöüÄÖÜ]{2,}/.test(t);
   const capWord   = /^[A-ZÄÖÜ][a-zäöü]{2,}/.test(t);

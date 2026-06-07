@@ -1,6 +1,7 @@
 // Favoriten · XP-Panel — Level, Fortschrittsbalken, letzte XP-Einträge.
 
 import { el } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { getXp, getXpLog, xpToNextLevel, getLevelTitle } from '../../store/xp.js';
 
 export function renderXpCard() {
@@ -11,21 +12,21 @@ export function renderXpCard() {
   const pct = Math.round(progress * 100);
 
   const reasonLabels = {
-    'card-learned':   '📗 Karte gelernt',
-    'card-reviewed':  '🔄 Karte wiederholt',
-    'quiz-correct':   '✅ Quiz korrekt',
-    'quiz-perfect':   '🏆 Quiz perfekt',
-    'streak-day':     '🔥 Tages-Streak',
-    'achievement':    '🏅 Achievement',
-    'dialect-visit':  '📍 Dialekt besucht',
-    'note-written':   '📝 Notiz geschrieben',
+    'card-learned':   t('view.xp-panel.reasonCardLearned'),
+    'card-reviewed':  t('view.xp-panel.reasonCardReviewed'),
+    'quiz-correct':   t('view.xp-panel.reasonQuizCorrect'),
+    'quiz-perfect':   t('view.xp-panel.reasonQuizPerfect'),
+    'streak-day':     t('view.xp-panel.reasonStreakDay'),
+    'achievement':    t('view.xp-panel.reasonAchievement'),
+    'dialect-visit':  t('view.xp-panel.reasonDialectVisit'),
+    'note-written':   t('view.xp-panel.reasonNoteWritten'),
   };
 
   return el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Dein Fortschritt'),
-        el('div', { class: 'lede' }, 'XP sammelst du durch Lernen, Quiz und tägliche Aktivität.')
+        el('h2', {}, t('view.xp-panel.heading')),
+        el('div', { class: 'lede' }, t('view.xp-panel.lede'))
       )
     ),
     el('div', { class: 'xp-card', dataset: { spotlight: '' } },
@@ -33,7 +34,7 @@ export function renderXpCard() {
         el('div', { class: 'xp-card-level' }, `${level}`),
         el('div', {},
           el('div', { class: 'xp-card-title' }, title),
-          el('div', { class: 'xp-card-title-sub' }, `Level ${level} · ${xp} XP gesamt`)
+          el('div', { class: 'xp-card-title-sub' }, t('view.xp-panel.levelSub', { level, xp }))
         )
       ),
       el('div', { class: 'xp-card-bar-row' },
@@ -47,7 +48,7 @@ export function renderXpCard() {
           el('span', {}, reasonLabels[e.reason] || e.reason),
           el('span', { class: 'xp-log-amount' }, `+${e.amount}`)
         ))
-      ) : el('p', { class: 'xp-card-title-sub' }, 'Noch keine XP — lerne deine erste Karte!')
+      ) : el('p', { class: 'xp-card-title-sub' }, t('view.xp-panel.empty'))
     )
   );
 }

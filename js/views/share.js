@@ -5,6 +5,7 @@ import { getDialekt } from '../../data/dialekte.js';
 import { confettiBurst } from '../util/motion.js';
 import { sfx } from '../util/sounds.js';
 import { emptyIllustration } from '../util/icons.js';
+import { t } from '../util/i18n.js';
 
 export function renderShare(root, token) {
   root.innerHTML = '';
@@ -12,9 +13,9 @@ export function renderShare(root, token) {
   if (!data) {
     root.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('sparkles'),
-      el('h3', {}, 'Link nicht lesbar'),
-      el('div', { class: 'empty-meta' }, 'Der Share-Link scheint defekt oder veraltet zu sein.'),
-      el('button', { class: 'btn btn-primary', onClick: () => go('#/quiz') }, 'Eigenes Quiz starten')
+      el('h3', {}, t('view.share.errorTitle')),
+      el('div', { class: 'empty-meta' }, t('view.share.errorMeta')),
+      el('button', { class: 'btn btn-primary', onClick: () => go('#/quiz') }, t('view.share.errorCta'))
     ));
     return;
   }
@@ -25,7 +26,7 @@ export function renderShare(root, token) {
   const emoji = pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '👍' : '💪';
 
   const d = source !== 'all' ? getDialekt(source) : null;
-  const label = d ? `${d.flag} ${d.name}` : '🌍 Bunt gemischt';
+  const label = d ? `${d.flag} ${d.name}` : '🌍 ' + t('view.share.mixed');
 
   const r = 64;
   const C = 2 * Math.PI * r;
@@ -34,7 +35,7 @@ export function renderShare(root, token) {
   const view = el('div', { class: 'view share-view' },
     el('div', { class: 'quiz-stage' },
       el('div', { class: 'quiz-result', dataset: { tone, reveal: 'zoom' } },
-        el('div', { class: 'share-eyebrow' }, '🔗 Geteiltes Ergebnis'),
+        el('div', { class: 'share-eyebrow' }, '🔗 ' + t('view.share.eyebrow')),
         el('div', { class: 'celebrate-emoji' }, emoji),
         el('div', { class: 'score-ring is-animating' },
           el('svg', {
@@ -55,11 +56,11 @@ export function renderShare(root, token) {
           }),
           el('div', { class: 'score-num' }, pct + '%')
         ),
-        el('h2', {}, `${score} von ${total} Fragen richtig`),
-        el('p', {}, `${label} · vom ${new Date(date).toLocaleDateString('de-DE')}`),
+        el('h2', {}, t('view.share.scoreLine', { score, total })),
+        el('p', {}, t('view.share.meta', { label, date: new Date(date).toLocaleDateString('de-DE') })),
         el('div', { style: { display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '24px' } },
-          el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => go('#/quiz') }, 'Selbst versuchen'),
-          el('button', { class: 'btn btn-secondary', onClick: () => go('#/') }, 'Zur Startseite')
+          el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => go('#/quiz') }, t('view.share.tryYourself')),
+          el('button', { class: 'btn btn-secondary', onClick: () => go('#/') }, t('view.share.toHome'))
         )
       )
     )

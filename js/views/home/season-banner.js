@@ -3,6 +3,7 @@
 // Top-Begriffen und CTA zur Saison-Lektion ein.
 
 import { el, go } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import {
   getSeasonInfo, getSeasonalGreeting,
   getSeasonalExpressions, getSeasonStartHref
@@ -27,10 +28,10 @@ export function renderSeasonBanner(seasonId) {
         class: 'btn btn-primary season-cta',
         dataset: { magnetic: '12' },
         onClick: () => go(href)
-      }, 'Saison-Lektion starten →')
+      }, t('view.season-banner.cta'))
     ),
     expressions.length ? el('div', { class: 'season-list' },
-      el('div', { class: 'season-list-title' }, `Top ${expressions.length} Begriffe:`),
+      el('div', { class: 'season-list-title' }, t('view.season-banner.topTerms', { n: expressions.length })),
       el('ul', { class: 'season-chips' },
         ...expressions.map(a => el('li', {},
           el('button', {

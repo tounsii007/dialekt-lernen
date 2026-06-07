@@ -8,6 +8,7 @@ import { el, go, escapeHtml } from '../util.js';
 import { LEKTIONEN, getLektion } from '../data/lektionen.js';
 import { getAusdruck, getDialekt } from '../../data/dialekte.js';
 import { emptyIllustration } from '../util/icons.js';
+import { t } from '../util/i18n.js';
 
 const STORAGE_KEY = 'dialekto.lektionen.read';
 
@@ -39,11 +40,18 @@ function isRead(id) {
 
 // ------- Kategorie-Labels -------
 const KATEGORIE_LABEL = {
-  sprache:    { label: 'Sprache',    icon: '🗣️' },
-  geschichte: { label: 'Geschichte', icon: '📚' },
-  kultur:     { label: 'Kultur',     icon: '🎭' },
-  regionen:   { label: 'Regionen',   icon: '🗺️' },
+  sprache:    { key: 'view.lektionen.katSprache',    icon: '🗣️' },
+  geschichte: { key: 'view.lektionen.katGeschichte', icon: '📚' },
+  kultur:     { key: 'view.lektionen.katKultur',     icon: '🎭' },
+  regionen:   { key: 'view.lektionen.katRegionen',   icon: '🗺️' },
 };
+
+// Kategorie-Eintrag mit lokalisiertem Label auflösen.
+function katInfo(kategorie) {
+  const entry = KATEGORIE_LABEL[kategorie];
+  if (!entry) return { label: kategorie, icon: '·' };
+  return { label: t(entry.key), icon: entry.icon };
+}
 
 // ------- Lightweight Markdown-Renderer -------
 // Unterstützt: ## Headlines, Absätze (Leerzeile), - Listenpunkte,
@@ -141,9 +149,9 @@ function renderOverview() {
 
   wrap.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '📖 Mini-Lektionen'),
+      el('h2', {}, t('view.lektionen.title')),
       el('div', { class: 'lede' },
-        `${LEKTIONEN.length} kurze Lese-Artikel über Sprache, Geschichte und Kultur der Dialekte.`
+        t('view.lektionen.lede', { n: LEKTIONEN.length })
       )
     )
   ));
@@ -160,7 +168,7 @@ function renderOverview() {
       })
     ),
     el('div', { class: 'lektionen-progress-label' },
-      `${readCount} / ${LEKTIONEN.length} gelesen`
+      t('view.lektionen.progress', { read: readCount, total: LEKTIONEN.length })
     )
   ));
 
@@ -173,7 +181,7 @@ function renderOverview() {
 }
 
 function renderLektionCard(l, alreadyRead) {
-  const kat = KATEGORIE_LABEL[l.kategorie] || { label: l.kategorie, icon: '·' };
+  const kat = katInfo(l.kategorie);
   const dialektPills = l.dialekte
     .map(id => getDialekt(id))
     .filter(Boolean)
@@ -191,22 +199,22 @@ function renderLektionCard(l, alreadyRead) {
       el('div', { class: 'lektion-card-cat' },
         el('span', {}, kat.icon), el('span', {}, kat.label)
       ),
-      alreadyRead ? el('span', { class: 'lektion-card-read-badge', title: 'gelesen' }, '✓') : null
+      alreadyRead ? el('span', { class: 'lektion-card-read-badge', title: t('view.lektionen.readBadge') }, '✓') : null
     ),
     el('h3', { class: 'lektion-card-title' }, l.title),
     el('p', { class: 'lektion-card-summary' }, l.summary),
     dialektPills.length ? el('div', { class: 'lektion-card-dialekte' }, ...dialektPills) : null,
-    el('div', { class: 'lektion-card-cta' }, alreadyRead ? 'Erneut lesen →' : 'Lesen →')
+    el('div', { class: 'lektion-card-cta' }, alreadyRead ? t('view.lektionen.ctaReread') : t('view.lektionen.ctaRead'))
   );
 }
 
 function renderDetail(l) {
   const wrap = el('div', { class: 'lektion-detail' });
-  const kat = KATEGORIE_LABEL[l.kategorie] || { label: l.kategorie, icon: '·' };
+  const kat = katInfo(l.kategorie);
 
   // Header
   wrap.appendChild(el('button', { class: 'btn btn-ghost', onClick: () => go('#/lektionen') },
-    el('span', { html: '←' }), ' Zurück zur Übersicht'
+    el('span', { html: '←' }), ' ' + t('view.lektionen.back')
   ));
 
   wrap.appendChild(el('header', { class: 'lektion-head' },
@@ -233,7 +241,7 @@ function renderDetail(l) {
 
   if (related.length) {
     wrap.appendChild(el('section', { class: 'lektion-related' },
-      el('h4', {}, 'Im Datensatz nachsehen'),
+      el('h4', {}, t('view.lektionen.relatedExpr')),
       el('div', { class: 'lektion-related-chips' },
         ...related.map(({ d, a }) =>
           el('button', {
@@ -255,7 +263,7 @@ function renderDetail(l) {
   const dialekte = l.dialekte.map(id => getDialekt(id)).filter(Boolean);
   if (dialekte.length) {
     wrap.appendChild(el('section', { class: 'lektion-related' },
-      el('h4', {}, 'Verwandte Dialekte'),
+      el('h4', {}, t('view.lektionen.relatedDialekte')),
       el('div', { class: 'lektion-related-chips' },
         ...dialekte.map(d =>
           el('button', {
@@ -276,7 +284,7 @@ function renderDetail(l) {
     // Soft empty hint
     wrap.appendChild(el('div', { class: 'empty-state', style: { marginTop: '24px' } },
       emptyIllustration('sparkles'),
-      el('div', { class: 'empty-meta' }, 'Keine verknüpften Ausdrücke — die Lektion steht für sich.')
+      el('div', { class: 'empty-meta' }, t('view.lektionen.emptyMeta'))
     ));
   }
 

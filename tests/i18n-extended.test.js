@@ -19,12 +19,28 @@ const i18n = await import('../js/util/i18n.js');
 // Parse i18n.js und extrahiere DE/EN-Keys statisch
 const src = readFileSync(join(ROOT, 'js', 'util', 'i18n.js'), 'utf8');
 
+// String-aware Extraktion eines Sprachblocks: zaehlt { } NUR ausserhalb von
+// String-Literalen, damit Platzhalter wie {n}/{date} in den Werten die
+// Klammer-Tiefe nicht verfaelschen (frueherer naiver Regex brach daran).
 function extractKeys(langSection) {
-  const re = new RegExp(`${langSection}\\s*:\\s*\\{([\\s\\S]*?)\\n\\s*\\}`, 'm');
-  const m = src.match(re);
+  const m = new RegExp(`\\n  ${langSection}: \\{`).exec(src);
   if (!m) return new Set();
-  const block = m[1];
-  const keys = [...block.matchAll(/['"]([\w.-]+)['"]\s*:/g)].map(x => x[1]);
+  let i = m.index + m[0].length - 1; // auf dem oeffnenden {
+  let depth = 0;
+  const startContent = i + 1;
+  let endContent = i;
+  for (; i < src.length; i++) {
+    const c = src[i];
+    if (c === '"' || c === "'") {
+      const q = c; i++;
+      while (i < src.length && src[i] !== q) { if (src[i] === '\\') i++; i++; }
+      continue;
+    }
+    if (c === '{') depth++;
+    else if (c === '}') { depth--; if (depth === 0) { endContent = i; break; } }
+  }
+  const block = src.slice(startContent, endContent);
+  const keys = [...block.matchAll(/(['"])((?:\\.|(?!\1).)*)\1\s*:/g)].map(x => x[2]);
   return new Set(keys);
 }
 

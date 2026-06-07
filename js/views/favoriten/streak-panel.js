@@ -6,6 +6,7 @@ import {
   getStreakProtection, setWeekendAmulet, repairStreak, REPAIR_WINDOW_DAYS
 } from '../../store.js';
 import { sfx } from '../../util/sounds.js';
+import { t } from '../../util/i18n.js';
 
 export function renderStreakProtection(rerender) {
   const p = getStreakProtection();
@@ -33,29 +34,29 @@ export function renderStreakProtection(rerender) {
     );
 
   const grid = el('div', { class: 'streak-prot-grid' },
-    item('❄️', 'Streak-Freeze', p.freezes, p.maxFreezes,
-      `Überbrückt einen verpassten Tag automatisch. Alle 5 Streak-Tage verdienst du einen.`),
-    item('🔧', 'Reparatur', p.repairs, p.maxRepairs,
-      `Stellt einen gerissenen Streak wieder her (binnen ${REPAIR_WINDOW_DAYS} Tagen). Alle 20 Tage gibt es eine.`)
+    item('❄️', t('view.streak-panel.freezeTitle'), p.freezes, p.maxFreezes,
+      t('view.streak-panel.freezeHint')),
+    item('🔧', t('view.streak-panel.repairTitle'), p.repairs, p.maxRepairs,
+      t('view.streak-panel.repairHint', { n: REPAIR_WINDOW_DAYS }))
   );
 
   // Wochenend-Amulett: opt-in Toggle (deckt Sa/So gratis ab, wenn ausgerüstet).
   const amuletToggle = el('input', {
     type: 'checkbox',
     checked: p.weekendAmulet,
-    'aria-label': 'Wochenend-Amulett ausrüsten',
+    'aria-label': t('view.streak-panel.amuletEquipAria'),
     onClick: (e) => {
       const on = setWeekendAmulet(e.target.checked);
       try { sfx.toggle(); } catch {}
-      toast(on ? 'Wochenend-Amulett ausgerüstet 🛡️' : 'Wochenend-Amulett abgelegt', 'info', 1600);
+      toast(on ? t('view.streak-panel.amuletEquipped') : t('view.streak-panel.amuletRemoved'), 'info', 1600);
     }
   });
   const amuletRow = el('label', { class: 'streak-amulet-row' },
     el('span', { class: 'streak-prot-emoji' }, '🛡️'),
     el('div', { class: 'streak-prot-body' },
-      el('div', { class: 'streak-prot-title' }, 'Wochenend-Amulett'),
+      el('div', { class: 'streak-prot-title' }, t('view.streak-panel.amuletTitle')),
       el('div', { class: 'streak-prot-hint' },
-        'Wenn ausgerüstet, zählen verpasste Wochenenden (Sa/So) nicht gegen deinen Streak — ganz ohne Freeze.')
+        t('view.streak-panel.amuletHint'))
     ),
     el('span', { class: 'streak-amulet-switch' }, amuletToggle, el('span', { class: 'streak-amulet-knob' }))
   );
@@ -63,9 +64,9 @@ export function renderStreakProtection(rerender) {
   const card = el('div', { class: 'card streak-prot-card', dataset: { spotlight: '', reveal: '' } },
     el('div', { class: 'streak-head' },
       el('div', {},
-        el('div', { class: 'card-title' }, '🛡️ Streak-Schutz'),
+        el('div', { class: 'card-title' }, t('view.streak-panel.title')),
         el('div', { class: 'lede', style: { fontSize: '.85rem' } },
-          'Schütze deine Serie — alles wird durchs Lernen verdient, nichts gekauft.')
+          t('view.streak-panel.lede'))
       )
     ),
     grid,
@@ -79,17 +80,17 @@ export function renderStreakProtection(rerender) {
       onClick: () => {
         if (repairStreak()) {
           try { sfx.unlock(); } catch {}
-          toast(`Streak repariert — zurück auf ${getStreakProtection().count} Tage! 🔧`, 'success', 2400);
+          toast(t('view.streak-panel.repairToastSuccess', { n: getStreakProtection().count }), 'success', 2400);
           rerender();
         } else {
-          toast('Reparatur nicht mehr möglich.', 'info', 1800);
+          toast(t('view.streak-panel.repairToastFail'), 'info', 1800);
         }
       }
-    }, `🔧 Streak reparieren (war ${p.lastBreak.prevCount} Tage)`);
+    }, t('view.streak-panel.repairBtn', { n: p.lastBreak.prevCount }));
 
     card.appendChild(el('div', { class: 'streak-repair-cta' },
       el('div', { class: 'lede', style: { fontSize: '.88rem' } },
-        `Dein ${p.lastBreak.prevCount}-Tage-Streak ist gerissen. Mit einer Reparatur holst du ihn zurück.`),
+        t('view.streak-panel.repairCta', { n: p.lastBreak.prevCount })),
       repairBtn
     ));
   }

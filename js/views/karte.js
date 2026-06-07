@@ -9,18 +9,18 @@ import { t } from '../util/i18n.js';
 // Geografische Positionen (% left, % top) für jede Dialekt-ID
 // Grobverortung auf einer Deutschland/AT/CH-Karte (0,0 = links oben)
 const GEO = {
-  plattdeutsch:   { x: 42, y: 15, label: 'Norden' },
-  berlinisch:     { x: 65, y: 27, label: 'Nordosten' },
-  ruhrdeutsch:    { x: 25, y: 40, label: 'Ruhrgebiet' },
-  koelsch:        { x: 15, y: 54, label: 'Rheinland' },
-  saechsisch:     { x: 68, y: 44, label: 'Osten' },
-  hessisch:       { x: 44, y: 51, label: 'Mitte' },
-  fraenkisch:     { x: 58, y: 55, label: 'Nordbayern' },
-  schwaebisch:    { x: 40, y: 67, label: 'Südwesten' },
-  bayerisch:      { x: 60, y: 68, label: 'Süden' },
-  alemannisch:    { x: 26, y: 70, label: 'Oberrhein' },
-  wienerisch:     { x: 82, y: 78, label: 'Österreich' },
-  schwizerduetsch:{ x: 29, y: 84, label: 'Schweiz' }
+  plattdeutsch:   { x: 42, y: 15, labelKey: 'view.karte.regionNorth' },
+  berlinisch:     { x: 65, y: 27, labelKey: 'view.karte.regionNortheast' },
+  ruhrdeutsch:    { x: 25, y: 40, labelKey: 'view.karte.regionRuhr' },
+  koelsch:        { x: 15, y: 54, labelKey: 'view.karte.regionRhineland' },
+  saechsisch:     { x: 68, y: 44, labelKey: 'view.karte.regionEast' },
+  hessisch:       { x: 44, y: 51, labelKey: 'view.karte.regionCenter' },
+  fraenkisch:     { x: 58, y: 55, labelKey: 'view.karte.regionNorthBavaria' },
+  schwaebisch:    { x: 40, y: 67, labelKey: 'view.karte.regionSouthwest' },
+  bayerisch:      { x: 60, y: 68, labelKey: 'view.karte.regionSouth' },
+  alemannisch:    { x: 26, y: 70, labelKey: 'view.karte.regionUpperRhine' },
+  wienerisch:     { x: 82, y: 78, labelKey: 'view.karte.regionAustria' },
+  schwizerduetsch:{ x: 29, y: 84, labelKey: 'view.karte.regionSwitzerland' }
 };
 
 export function renderKarte(root) {
@@ -61,7 +61,7 @@ export function renderKarte(root) {
         '--dc': d.farbe
       },
       title: `${d.name} — ${d.region}`,
-      'aria-label': `${d.name}, ${pos.label}. ` + (stats.gelernt > 0
+      'aria-label': `${d.name}, ${t(pos.labelKey)}. ` + (stats.gelernt > 0
         ? t('view.karte.ariaLearned', { n: stats.gelernt, total: d.ausdruecke.length })
         : t('view.karte.ariaExpr', { n: d.ausdruecke.length })),
       onClick: () => go(`#/dialekt/${d.id}`)
@@ -77,7 +77,7 @@ export function renderKarte(root) {
     bubble.appendChild(el('span', { class: 'karte-flag' }, d.flag));
     bubble.appendChild(el('div', { class: 'karte-tooltip' },
       el('div', { class: 'karte-tooltip-name' }, d.name),
-      el('div', { class: 'karte-tooltip-region' }, pos.label),
+      el('div', { class: 'karte-tooltip-region' }, t(pos.labelKey)),
       el('div', { class: 'karte-tooltip-stat' },
         stats.gelernt > 0
           ? t('view.karte.tooltipLearned', { n: stats.gelernt, total: d.ausdruecke.length })
