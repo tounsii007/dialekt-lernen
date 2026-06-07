@@ -57,9 +57,7 @@ function renderMarkdown(text) {
 
     // Headline (## …)
     if (block.startsWith('## ')) {
-      const h = el('h3', { class: 'lektion-h3' });
-      h.innerHTML = renderInline(block.slice(3));
-      wrap.appendChild(h);
+      wrap.appendChild(el('h3', { class: 'lektion-h3', html: renderInline(block.slice(3)) }));
       continue;
     }
 
@@ -77,21 +75,14 @@ function renderMarkdown(text) {
     if (/^- /.test(block)) {
       const items = block.split('\n').filter(l => /^- /.test(l)).map(l => l.replace(/^- /, ''));
       const ul = el('ul', { class: 'lektion-list' });
-      items.forEach(itm => {
-        const li = el('li');
-        li.innerHTML = renderInline(itm);
-        ul.appendChild(li);
-      });
+      items.forEach(itm => ul.appendChild(el('li', { html: renderInline(itm) })));
       wrap.appendChild(ul);
       continue;
     }
 
-    // Sonst Absatz
-    const p = el('p', { class: 'lektion-p' });
-    // Mehrzeilige Absätze: \n innerhalb des Blocks soll Leerzeichen werden,
-    // damit man Autorenfreundlich Zeilen umbrechen kann.
-    p.innerHTML = renderInline(block.replace(/\n/g, ' '));
-    wrap.appendChild(p);
+    // Sonst Absatz. Mehrzeilige Absätze: \n innerhalb des Blocks soll Leerzeichen
+    // werden, damit man autorenfreundlich Zeilen umbrechen kann.
+    wrap.appendChild(el('p', { class: 'lektion-p', html: renderInline(block.replace(/\n/g, ' ')) }));
   }
   return wrap;
 }
@@ -115,19 +106,11 @@ function renderMarkdownTable(lines) {
   const table = el('div', { class: 'lektion-table-wrap' },
     el('table', { class: 'lektion-table' },
       el('thead', {}, el('tr', {},
-        ...header.map(h => {
-          const th = el('th');
-          th.innerHTML = renderInline(h);
-          return th;
-        })
+        ...header.map(h => el('th', { html: renderInline(h) }))
       )),
       el('tbody', {}, ...bodyLines.map(line => {
         const cols = parseRow(line);
-        return el('tr', {}, ...cols.map(c => {
-          const td = el('td');
-          td.innerHTML = renderInline(c);
-          return td;
-        }));
+        return el('tr', {}, ...cols.map(c => el('td', { html: renderInline(c) })));
       }))
     )
   );
