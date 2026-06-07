@@ -4,6 +4,7 @@
 // schlicht nichts zu zeigen gibt.
 
 import { el, go } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { sparkline } from '../../util/icons.js';
 import { getRecommendations, getRecentDialects, getActivitySeries } from '../../util/recommendations.js';
 import { renderGoalWidget } from '../../util/daily-goal.js';
@@ -29,8 +30,8 @@ export function renderDashboard() {
   const section = el('section', { class: 'section dashboard-section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Dein Dashboard'),
-        el('div', { class: 'lede' }, 'Personalisierte Empfehlungen basierend auf deinem Lernstand.')
+        el('h2', {}, t('section.dashboard')),
+        el('div', { class: 'lede' }, t('home.dashboard.lede'))
       ),
       totalActivity > 0 ? el('div', { class: 'dash-activity' },
         el('div', { class: 'dash-activity-meta' },
@@ -92,8 +93,8 @@ export function renderDashboard() {
   const goalSection = el('div', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Heutiges Ziel'),
-        el('div', { class: 'lede' }, 'Passe dein tägliches Lernpensum an — bleib im Rhythmus!')
+        el('h2', {}, t('home.dailyGoal.title')),
+        el('div', { class: 'lede' }, t('home.dailyGoal.lede'))
       )
     ),
     renderGoalWidget()

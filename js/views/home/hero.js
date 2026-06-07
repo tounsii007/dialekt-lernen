@@ -9,6 +9,7 @@
 // Selbst-Stopp-Logik MUSS erhalten bleiben.
 
 import { el, go, shuffle } from '../../util.js';
+import { getLang, t } from '../../util/i18n.js';
 import { DIALEKTE, ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 
 // Variierende Hero-Texte — pro Render zufällig kombiniert, damit die Startseite
@@ -236,56 +237,62 @@ function buildWordCarousel() {
 export function renderHero({ stats, streak, totalExpr }) {
   // Hero — Eyebrow zufällig; Überschrift & Beschreibung rotieren live durch ihre
   // Varianten (Fade/Slide + wechselnder Farb-Akzent), pausieren bei Hover.
+  // Nur auf Deutsch; andere Sprachen zeigen feste, lokalisierte Texte.
+  const isDe = getLang() === 'de';
   const heroHeadline = el('h1', { class: 'hero-rotator' });
   const heroLede = el('p', { class: 'hero-rotator' });
   const section = el('section', { class: 'hero' },
     el('div', {},
       el('span', { class: 'hero-eyebrow' },
         el('span', { html: '✨' }),
-        pickRandom(HERO_EYEBROWS)
+        isDe ? pickRandom(HERO_EYEBROWS) : t('home.hero.eyebrow')
       ),
       heroHeadline,
       buildWordCarousel(),
       heroLede,
       el('div', { class: 'hero-cta' },
         el('button', { class: 'btn btn-primary', dataset: { magnetic: '16' }, onClick: () => go('#/entdecken') },
-          'Dialekte entdecken',
+          t('home.hero.cta.discover'),
           el('span', { html: ' →' })
         ),
         el('button', { class: 'btn btn-secondary', dataset: { magnetic: '10' }, onClick: () => go('#/lernen') },
-          'Karteikarten lernen'
+          t('home.hero.cta.learn')
         ),
         el('button', { class: 'btn btn-ghost', onClick: () => go('#/quiz') },
-          'Quiz starten'
+          t('home.hero.cta.quiz')
         )
       ),
       el('div', { class: 'hero-stats' },
         el('div', {},
           el('span', { class: 'hero-stat-num', dataset: { count: String(DIALEKTE.length) } }, '0'),
-          el('span', { class: 'hero-stat-label' }, 'Dialekte')
+          el('span', { class: 'hero-stat-label' }, t('stats.dialekte'))
         ),
         el('div', {},
           el('span', { class: 'hero-stat-num', dataset: { count: String(totalExpr) } }, '0'),
-          el('span', { class: 'hero-stat-label' }, 'Ausdrücke')
+          el('span', { class: 'hero-stat-label' }, t('stats.ausdruecke'))
         ),
         el('div', {},
           el('span', { class: 'hero-stat-num' + (stats.gelernt === 0 ? ' is-zero' : ''), dataset: { count: String(stats.gelernt) } }, '0'),
-          el('span', { class: 'hero-stat-label' }, 'gelernt')
+          el('span', { class: 'hero-stat-label' }, t('stats.gelernt'))
         ),
         streak > 0 ? el('div', {},
           el('span', { class: 'hero-stat-num', dataset: { count: String(streak), suffix: '🔥' } }, '0'),
-          el('span', { class: 'hero-stat-label' }, 'Tage Streak')
+          el('span', { class: 'hero-stat-label' }, t('stats.streak'))
         ) : null
       )
     ),
     renderHeroPreview()
   );
-  // Live-Rotation der Hero-Texte starten (versetzte Intervalle → ruhiger Wechsel).
-  // Identisch zur bisherigen Reihenfolge: erst Sektion bauen, dann Rotation
-  // anstoßen. Der Selbst-Stopp greift, sobald der Host (über das Anhängen der
-  // View an #app durch den Orchestrator) (dis)connected ist.
-  rotateText(heroHeadline, HERO_HEADLINES, fillHeadline, 6500);
-  rotateText(heroLede, HERO_LEDES, (text, host) => { host.textContent = text; }, 8500);
+  // DE: Live-Rotation der Hero-Texte (versetzte Intervalle → ruhiger Wechsel),
+  // Selbst-Stopp bei View-Wechsel. Andere Sprachen: fester lokalisierter Text
+  // (keine DE-Varianten-Rotation).
+  if (isDe) {
+    rotateText(heroHeadline, HERO_HEADLINES, fillHeadline, 6500);
+    rotateText(heroLede, HERO_LEDES, (text, host) => { host.textContent = text; }, 8500);
+  } else {
+    fillHeadline({ prefix: '', grad: t('home.hero.headline'), suffix: '' }, heroHeadline, 0);
+    heroLede.textContent = t('home.hero.lede');
+  }
 
   return section;
 }
