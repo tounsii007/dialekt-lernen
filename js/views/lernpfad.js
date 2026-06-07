@@ -6,6 +6,7 @@
 import { el, go, toast } from '../util.js';
 import { getLernpfad, getLernpfadSummary, STAGE_GOAL } from '../store/skilltree.js';
 import { sfx } from '../util/sounds.js';
+import { t } from '../util/i18n.js';
 
 export function renderLernpfad(root) {
   root.innerHTML = '';
@@ -19,9 +20,9 @@ export function renderLernpfad(root) {
 
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '🗺️ Lernpfad'),
+      el('h2', {}, `🗺️ ${t('view.lernpfad.title')}`),
       el('div', { class: 'lede' },
-        'Deine geführte Reise durch die Mundarten — meistere einen Dialekt, um den nächsten freizuschalten.')
+        t('view.lernpfad.lede'))
     )
   ));
 
@@ -30,8 +31,8 @@ export function renderLernpfad(root) {
     el('div', { class: 'pfad-progress-top' },
       el('span', { class: 'pfad-progress-label' },
         summary.allComplete
-          ? '🏆 Alle Dialekte gemeistert!'
-          : `${summary.completedUnits} von ${summary.totalUnits} Dialekten gemeistert`),
+          ? `🏆 ${t('view.lernpfad.allComplete')}`
+          : t('view.lernpfad.progress', { n: summary.completedUnits, total: summary.totalUnits })),
       el('span', { class: 'pfad-progress-pct' }, `${pct}%`)
     ),
     el('div', { class: 'pfad-progress-bar' },
@@ -39,8 +40,11 @@ export function renderLernpfad(root) {
     ),
     summary.current
       ? el('div', { class: 'pfad-progress-hint' },
-          `Aktuell: ${summary.current.flag} ${summary.current.name} — noch `
-          + `${Math.max(0, summary.current.goal - summary.current.learned)} Ausdrücke bis zur Meisterung.`)
+          t('view.lernpfad.currentHint', {
+            flag: summary.current.flag,
+            name: summary.current.name,
+            n: Math.max(0, summary.current.goal - summary.current.learned),
+          }))
       : null
   ));
 
@@ -51,10 +55,10 @@ export function renderLernpfad(root) {
 
   // Legende.
   view.appendChild(el('div', { class: 'pfad-legend' },
-    el('span', {}, '★ gemeistert'),
-    el('span', {}, '● aktiv'),
-    el('span', {}, '🔒 gesperrt'),
-    el('span', { class: 'pfad-legend-goal' }, `Ziel: ${STAGE_GOAL} Ausdrücke pro Dialekt`)
+    el('span', {}, `★ ${t('view.lernpfad.legendMastered')}`),
+    el('span', {}, `● ${t('view.lernpfad.legendActive')}`),
+    el('span', {}, `🔒 ${t('view.lernpfad.legendLocked')}`),
+    el('span', { class: 'pfad-legend-goal' }, t('view.lernpfad.legendGoal', { n: STAGE_GOAL }))
   ));
 
   root.appendChild(view);
@@ -66,7 +70,7 @@ function renderNode(n, i) {
 
   const onClick = () => {
     if (!n.unlocked) {
-      toast(`🔒 ${n.name} ist noch gesperrt — meistere zuerst den vorherigen Dialekt.`, 'info', 2600);
+      toast(`🔒 ${t('view.lernpfad.lockedToast', { name: n.name })}`, 'info', 2600);
       try { sfx.wrong(); } catch {}
       return;
     }
@@ -78,9 +82,9 @@ function renderNode(n, i) {
     class: 'pfad-node-btn',
     style: { '--dc': n.farbe },
     'aria-label': n.unlocked
-      ? `${n.name} lernen — ${n.learned} von ${n.goal} gelernt`
-      : `${n.name} gesperrt — meistere zuerst den vorherigen Dialekt`,
-    title: n.unlocked ? `${n.name} · ${n.learned}/${n.goal}` : `${n.name} (gesperrt)`,
+      ? t('view.lernpfad.nodeAriaOpen', { name: n.name, n: n.learned, goal: n.goal })
+      : t('view.lernpfad.nodeAriaLocked', { name: n.name }),
+    title: n.unlocked ? `${n.name} · ${n.learned}/${n.goal}` : t('view.lernpfad.nodeTitleLocked', { name: n.name }),
     onClick,
   },
     el('span', { class: 'pfad-node-emoji' }, emoji),
@@ -93,14 +97,14 @@ function renderNode(n, i) {
   }, btn);
 
   const sub = n.complete
-    ? '★ Gemeistert'
+    ? `★ ${t('view.lernpfad.subMastered')}`
     : !n.unlocked
-      ? 'Gesperrt'
+      ? t('view.lernpfad.subLocked')
       : `${n.learned} / ${n.goal}`;
 
   return el('div', { class: `pfad-row pfad-pos-${i % 4}`, dataset: { reveal: '' } },
     el('div', { class: `pfad-node ${stateClass}` },
-      n.current ? el('div', { class: 'pfad-start-bubble' }, 'Start') : null,
+      n.current ? el('div', { class: 'pfad-start-bubble' }, t('view.lernpfad.start')) : null,
       disc,
       el('div', { class: 'pfad-node-label' }, n.name),
       el('div', { class: 'pfad-node-sub' }, sub)

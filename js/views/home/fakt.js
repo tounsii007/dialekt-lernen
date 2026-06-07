@@ -3,6 +3,7 @@
 // abwechselt.
 
 import { el } from '../../util.js';
+import { t } from '../../util/i18n.js';
 
 const DIALEKT_FAKTEN = [
   '„Moin" begrüßt im Norden rund um die Uhr — nicht nur morgens.',
@@ -25,11 +26,11 @@ const DIALEKT_FAKTEN = [
 
 export function renderDialektFakt() {
   const fakt = DIALEKT_FAKTEN[Math.floor(Math.random() * DIALEKT_FAKTEN.length)];
-  return el('section', { class: 'section', dataset: { reveal: '' }, 'aria-label': 'Dialekt-Wissen' },
+  return el('section', { class: 'section', dataset: { reveal: '' }, 'aria-label': t('view.fakt.aria') },
     el('div', { class: 'fakt-card', dataset: { spotlight: '' } },
       el('span', { class: 'fakt-icon', 'aria-hidden': 'true' }, '💡'),
       el('div', { class: 'fakt-body' },
-        el('div', { class: 'fakt-eyebrow' }, 'Wusstest du?'),
+        el('div', { class: 'fakt-eyebrow' }, t('view.fakt.eyebrow')),
         el('p', { class: 'fakt-text' }, fakt)
       )
     )

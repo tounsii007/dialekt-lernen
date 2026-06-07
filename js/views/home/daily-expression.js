@@ -7,6 +7,7 @@ import { el, go, speak } from '../../util.js';
 import { ALLE_AUSDRUECKE } from '../../../data/dialekte.js';
 import { getDailySeed } from '../../store.js';
 import { pickSeeded } from '../../util.js';
+import { t } from '../../util/i18n.js';
 
 export function renderDailyExpression(focus = false) {
   const seed = getDailySeed();
@@ -15,10 +16,10 @@ export function renderDailyExpression(focus = false) {
   // Wenn via Manifest-Shortcut (daily=1) aufgerufen: größere Karten-Variante
   // mit Beispiel-Satz und prominenteren Aktionen.
   const dailyClasses = 'daily' + (focus ? ' daily-large' : '');
-  const section = el('section', { class: 'section', dataset: { reveal: '' }, 'aria-label': 'Ausdruck des Tages' },
+  const section = el('section', { class: 'section', dataset: { reveal: '' }, 'aria-label': t('section.dailyExpr') },
     el('div', { class: dailyClasses },
       el('div', { class: 'daily-content' },
-        el('h2', { class: 'daily-eyebrow' }, focus ? '🌟 Heutiger Ausdruck' : '☀️ Ausdruck des Tages'),
+        el('h2', { class: 'daily-eyebrow' }, focus ? t('view.daily.eyebrowFocus') : t('view.daily.eyebrow')),
         el('div', { class: 'daily-expr' }, expr.ausdruck),
         el('div', { class: 'daily-hd' }, '↦ ' + expr.hochdeutsch),
         el('div', { class: 'daily-meaning' }, expr.bedeutung),
@@ -30,11 +31,11 @@ export function renderDailyExpression(focus = false) {
           el('span', { class: 'daily-source' }, `${expr.dialektFlag} ${expr.dialektName}`),
           el('div', { class: 'daily-actions' },
             el('button', {
-              class: 'daily-action', title: 'Anhören',
+              class: 'daily-action', title: t('view.daily.listen'),
               onClick: () => speak(expr.ausdruck, expr.dialektLang || 'de-DE', { dialektId: expr.dialektId })
             }, el('span', { html: '🔊' })),
             el('button', {
-              class: 'daily-action', title: 'Zum Dialekt',
+              class: 'daily-action', title: t('view.daily.toDialect'),
               onClick: () => go(`#/dialekt/${expr.dialektId}`)
             }, el('span', { html: '→' }))
           )
@@ -42,10 +43,10 @@ export function renderDailyExpression(focus = false) {
         focus ? el('div', { class: 'daily-cta-row', style: { marginTop: '14px', display: 'flex', gap: '10px', flexWrap: 'wrap' } },
           el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' },
             onClick: () => go('#/lernen')
-          }, 'Karteikarten starten →'),
+          }, t('view.daily.startFlashcards')),
           el('button', { class: 'btn btn-secondary', dataset: { magnetic: '10' },
             onClick: () => go(`#/dialekt/${expr.dialektId}`)
-          }, `${expr.dialektFlag} ${expr.dialektName} öffnen`)
+          }, t('view.daily.openDialect', { flag: expr.dialektFlag, name: expr.dialektName }))
         ) : null
       )
     )

@@ -3,15 +3,16 @@
 // es verlassen keine Daten das Gerät — der Datenschutz-Pfeiler bleibt intakt.
 
 import { el, go } from '../util.js';
+import { t } from '../util/i18n.js';
 import {
   LEAGUE_TIERS, PROMOTE_RANK, DEMOTE_RANK,
   getCohort, getLeagueSummary, getLeagueResult, clearLeagueResult,
 } from '../store/league.js';
 
 const ZONE_LABEL = {
-  promotion: '🔼 Aufstiegsplatz',
-  demotion:  '🔽 Abstiegsgefahr',
-  hold:      '➖ Gehalten',
+  promotion: '🔼 ' + t('view.liga.zonePromotion'),
+  demotion:  '🔽 ' + t('view.liga.zoneDemotion'),
+  hold:      '➖ ' + t('view.liga.zoneHold'),
 };
 
 export function renderLiga(root) {
@@ -33,16 +34,16 @@ export function renderLiga(root) {
     el('div', { class: 'liga-hero', style: { '--liga-accent': tierAccent(s.tier) } },
       el('div', { class: 'liga-hero-badge', 'aria-hidden': 'true' }, s.tierInfo.icon),
       el('div', { class: 'liga-hero-meta' },
-        el('div', { class: 'liga-hero-eyebrow' }, 'Deine Liga'),
-        el('h1', { class: 'liga-hero-name' }, s.tierInfo.name + '-Liga'),
+        el('div', { class: 'liga-hero-eyebrow' }, t('view.liga.heroEyebrow')),
+        el('h1', { class: 'liga-hero-name' }, t('view.liga.tierLiga', { name: s.tierInfo.name })),
         el('div', { class: 'liga-hero-sub' },
-          `Rang ${s.rank} von ${s.cohortSize}`,
+          t('view.liga.rankOf', { rank: s.rank, total: s.cohortSize }),
           el('span', { class: `liga-zone-chip liga-zone-${s.zone}` }, ZONE_LABEL[s.zone])
         )
       ),
       el('div', { class: 'liga-hero-xp' },
         el('div', { class: 'liga-hero-xp-num' }, String(s.weeklyXp)),
-        el('div', { class: 'liga-hero-xp-label' }, 'XP diese Woche')
+        el('div', { class: 'liga-hero-xp-label' }, t('view.liga.xpThisWeek'))
       )
     )
   ));
@@ -54,7 +55,7 @@ export function renderLiga(root) {
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'liga-progress-card' },
       el('div', { class: 'liga-progress-head' },
-        el('span', {}, 'Woche'),
+        el('span', {}, t('view.liga.week')),
         el('span', {}, `${Math.round(s.weekProgress * 100)} %`)
       ),
       el('div', { class: 'liga-progress' },
@@ -62,10 +63,12 @@ export function renderLiga(root) {
       ),
       el('div', { class: 'liga-progress-hint' },
         s.isTopTier
-          ? 'Du bist in der höchsten Liga — halte die Spitze!'
+          ? t('view.liga.hintTopTier')
           : s.zone === 'promotion'
-            ? `Stark! Halte einen Platz unter den Top ${PROMOTE_RANK}, um aufzusteigen.`
-            : `Komme unter die Top ${PROMOTE_RANK}${s.toPromote > 0 ? ` — noch ${s.toPromote} XP bis zur Aufstiegslinie` : ''}.`
+            ? t('view.liga.hintInPromo', { n: PROMOTE_RANK })
+            : t('view.liga.hintToPromo', { n: PROMOTE_RANK })
+              + (s.toPromote > 0 ? t('view.liga.hintToPromoXp', { xp: s.toPromote }) : '')
+              + '.'
       )
     )
   ));
@@ -77,13 +80,13 @@ export function renderLiga(root) {
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'liga-privacy-note' },
       el('span', { 'aria-hidden': 'true' }, '🔒'),
-      el('span', {}, 'Alle Mitstreiter sind lokal erzeugte Übungs-Geister. Keine Konten, kein Tracking, keine Daten verlassen dein Gerät.')
+      el('span', {}, t('view.liga.privacyNote'))
     )
   ));
 
   // Zurück-CTA.
   view.appendChild(el('section', { class: 'section', dataset: { reveal: '' } },
-    el('button', { class: 'btn btn-secondary', onClick: () => go('#/') }, '← Zur Startseite')
+    el('button', { class: 'btn btn-secondary', onClick: () => go('#/') }, '← ' + t('view.liga.backHome'))
   ));
 
   root.appendChild(view);
@@ -103,11 +106,11 @@ function renderResultBanner(r) {
       el('div', { class: 'liga-result-icon', 'aria-hidden': 'true' }, promoted ? '🎉' : '😮‍💨'),
       el('div', {},
         el('div', { class: 'liga-result-title' },
-          promoted ? `Aufgestiegen in die ${toName}-Liga!` : `Abgestiegen in die ${toName}-Liga`),
+          promoted ? t('view.liga.promotedTitle', { name: toName }) : t('view.liga.demotedTitle', { name: toName })),
         el('div', { class: 'liga-result-sub' },
           promoted
-            ? `Platz ${r.rank} in der ${fromName}-Liga — weiter so!`
-            : `Platz ${r.rank} in der ${fromName}-Liga. Nächste Woche zurückholen!`)
+            ? t('view.liga.promotedSub', { rank: r.rank, name: fromName })
+            : t('view.liga.demotedSub', { rank: r.rank, name: fromName }))
       )
     )
   );
@@ -128,8 +131,8 @@ function renderTierLadder(s) {
   return el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Liga-Stufen'),
-        el('div', { class: 'lede' }, `Höchste erreichte Stufe: ${s.bestInfo.icon} ${s.bestInfo.name}`)
+        el('h2', {}, t('view.liga.tiersTitle')),
+        el('div', { class: 'lede' }, t('view.liga.bestTier', { tier: `${s.bestInfo.icon} ${s.bestInfo.name}` }))
       )
     ),
     ladder
@@ -140,8 +143,8 @@ function renderLeaderboard(board, s) {
   const section = el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Rangliste der Woche'),
-        el('div', { class: 'lede' }, 'Sammle XP durch Lernen — die Plätze aktualisieren sich über die Woche.')
+        el('h2', {}, t('view.liga.boardTitle')),
+        el('div', { class: 'lede' }, t('view.liga.boardLede'))
       )
     )
   );
@@ -151,10 +154,10 @@ function renderLeaderboard(board, s) {
     const rank = idx + 1;
     // Zonen-Trenner einfügen.
     if (!s.isTopTier && rank === 1) {
-      list.appendChild(el('div', { class: 'liga-zone-divider is-promote' }, `Aufstieg — Top ${PROMOTE_RANK}`));
+      list.appendChild(el('div', { class: 'liga-zone-divider is-promote' }, t('view.liga.dividerPromote', { n: PROMOTE_RANK })));
     }
     if (!s.isBottomTier && rank === DEMOTE_RANK) {
-      list.appendChild(el('div', { class: 'liga-zone-divider is-demote' }, 'Abstiegszone'));
+      list.appendChild(el('div', { class: 'liga-zone-divider is-demote' }, t('view.liga.dividerDemote')));
     }
 
     const inPromo = !s.isTopTier && rank <= PROMOTE_RANK;
@@ -166,7 +169,7 @@ function renderLeaderboard(board, s) {
 
     list.appendChild(el('div', { class: cls },
       el('span', { class: 'liga-row-rank' }, medal(rank)),
-      el('span', { class: 'liga-row-name' }, e.isUser ? 'Du' : e.name),
+      el('span', { class: 'liga-row-name' }, e.isUser ? t('view.liga.you') : e.name),
       el('span', { class: 'liga-row-xp' }, `${e.xp} XP`)
     ));
   });

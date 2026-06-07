@@ -3,6 +3,7 @@
 
 import { el, go } from '../../util.js';
 import { getAdaptiveRecommendations } from '../../util/adaptive-plan.js';
+import { t } from '../../util/i18n.js';
 
 export function renderAdaptiveRecommendationsSection() {
   let recs = [];
@@ -16,15 +17,15 @@ export function renderAdaptiveRecommendationsSection() {
   const section = el('section', { class: 'section adaptive-section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, '📈 Heute empfohlen'),
-        el('div', { class: 'lede' }, 'Personalisiert — Karten, die jetzt den meisten Lerneffekt bringen.')
+        el('h2', {}, t('view.adaptive.title')),
+        el('div', { class: 'lede' }, t('view.adaptive.lede'))
       ),
       el('button', {
         class: 'btn btn-primary',
         dataset: { magnetic: '10' },
         onClick: () => go('#/lernen?source=recommendations'),
-        title: 'Diese Empfehlungen direkt in einer Karteikarten-Session lernen'
-      }, 'Diese 5 jetzt lernen →')
+        title: t('view.adaptive.ctaTitle')
+      }, t('view.adaptive.cta', { n: recs.length }))
     )
   );
 
@@ -42,9 +43,9 @@ export function renderAdaptiveRecommendationsSection() {
       el('div', { class: 'adaptive-card-head' },
         el('span', { class: 'adaptive-flag' }, a.dialektFlag || '🃏'),
         el('span', { class: 'adaptive-priority', dataset: { p: String(rec.priority || 4) } },
-          rec.priority === 1 ? '🔥 Dringend' :
-          rec.priority === 2 ? '⚠️ Schwach' :
-          rec.priority === 3 ? '🆕 Neu' : '✨ Auffrischung'
+          rec.priority === 1 ? t('view.adaptive.prio.urgent') :
+          rec.priority === 2 ? t('view.adaptive.prio.weak') :
+          rec.priority === 3 ? t('view.adaptive.prio.new') : t('view.adaptive.prio.refresh')
         )
       ),
       el('div', { class: 'adaptive-expr' }, a.ausdruck),

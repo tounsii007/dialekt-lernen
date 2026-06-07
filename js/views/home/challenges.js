@@ -5,6 +5,7 @@
 import { el } from '../../util.js';
 import { getActiveChallengesWithProgress } from '../../store/challenges.js';
 import { isPomodoroRunning } from '../../util/pomodoro.js';
+import { t } from '../../util/i18n.js';
 import { openPomodoroPicker } from './pomodoro.js';
 
 export function renderChallengesSection() {
@@ -13,14 +14,14 @@ export function renderChallengesSection() {
   const section = el('section', { class: 'section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Diese Woche'),
-        el('div', { class: 'lede' }, 'Drei Mini-Challenges — neu jeden Montag.')
+        el('h2', {}, t('view.challenges.title')),
+        el('div', { class: 'lede' }, t('view.challenges.lede'))
       ),
       el('button', {
         class: 'btn btn-ghost btn-pomodoro-toggle',
-        title: 'Pomodoro-Lern-Session starten',
+        title: t('view.challenges.pomodoroStart'),
         onClick: openPomodoroPicker
-      }, isPomodoroRunning() ? '⏸ Pomodoro stoppen' : '⏱ Pomodoro starten')
+      }, isPomodoroRunning() ? t('view.challenges.pomodoroStop') : t('view.challenges.pomodoroToggle'))
     )
   );
 
@@ -48,7 +49,7 @@ function renderChallengeCard(c) {
     ),
     el('div', { class: 'challenge-progress-meta' },
       el('span', {}, `${c.current} / ${c.target}`),
-      c.done ? el('span', { class: 'challenge-done' }, '✓ erledigt') : null
+      c.done ? el('span', { class: 'challenge-done' }, t('view.challenges.done')) : null
     )
   );
   return card;

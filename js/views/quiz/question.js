@@ -2,6 +2,7 @@
 import { el, speak } from '../../util.js';
 import { icon } from '../../util/icons.js';
 import { sfx } from '../../util/sounds.js';
+import { t } from '../../util/i18n.js';
 
 const TIMER_SECONDS = 20;
 
@@ -24,13 +25,13 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
 
   wrap.appendChild(el('div', { class: 'quiz-bar' },
     el('button', { class: 'btn btn-ghost', style: { padding: '8px 16px' }, onClick: () => { stopTimer(); onAbort(); } },
-      el('span', { html: '←' }), ' Abbrechen'
+      el('span', { html: '←' }), ' ' + t('btn.cancel')
     ),
     el('div', { class: 'qb-progress' },
       el('div', { class: 'qb-progress-fill', style: { width: progress + '%' } }),
       el('div', { class: 'qb-progress-glow', style: { left: progress + '%' } })
     ),
-    el('div', { class: 'qb-meta' }, `${quiz.idx + 1} / ${total} · ${quiz.score} Punkte`),
+    el('div', { class: 'qb-meta' }, `${quiz.idx + 1} / ${total} · ${t('view.question.points', { n: quiz.score })}`),
     timerSvg || el('span')
   ));
 
@@ -65,24 +66,24 @@ export function renderQuizQuestion(quiz, { onAbort, onAnswer }) {
   }
 
   wrap.appendChild(el('div', { class: 'quiz-question', dataset: { reveal: 'zoom' } },
-    el('div', { class: 'q-label' }, 'Was bedeutet'),
+    el('div', { class: 'q-label' }, t('view.question.label')),
     el('div', { class: 'q-text is-speakable' }, q.prompt),
     el('div', { class: 'q-sub' }, q.sub),
     el('div', { style: { marginTop: '12px' } },
       el('button', {
         class: 'btn btn-ghost fc-speak', style: { padding: '6px 14px' },
-        'aria-label': `„${q.item.ausdruck || q.prompt}" anhören`,
-        title: 'Anhören',
+        'aria-label': t('view.question.listenAria', { term: q.item.ausdruck || q.prompt }),
+        title: t('view.question.listen'),
         onClick: () => speak(q.item.ausdruck, q.item.dialektLang || 'de-DE', { dialektId: q.item.dialektId })
       },
         el('span', { class: 'speak-icon' }, icon('speaker', { size: 18 })),
         el('span', { class: 'speak-wave', html: '<i></i><i></i><i></i><i></i><i></i>' }),
-        el('span', {}, 'Anhören')
+        el('span', {}, t('view.question.listen'))
       )
     )
   ));
 
-  const opts = el('div', { class: 'quiz-options', role: 'group', 'aria-label': 'Antwortmöglichkeiten' });
+  const opts = el('div', { class: 'quiz-options', role: 'group', 'aria-label': t('view.question.optionsAria') });
   q.options.forEach((opt, i) => {
     const btn = el('button', {
       class: 'quiz-option',

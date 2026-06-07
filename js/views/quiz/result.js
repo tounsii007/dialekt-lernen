@@ -3,6 +3,7 @@ import { el, go, toast } from '../../util.js';
 import { saveQuizResult, encodeQuizShare } from '../../store.js';
 import { confettiBurst, animateCounter } from '../../util/motion.js';
 import { sfx } from '../../util/sounds.js';
+import { t } from '../../util/i18n.js';
 
 let _resultRingSeq = 0;
 
@@ -13,7 +14,7 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
   saveQuizResult(score, total, finished.source);
 
   const emoji = pct >= 90 ? '🏆' : pct >= 70 ? '🎉' : pct >= 50 ? '👍' : '💪';
-  const headline = pct >= 90 ? 'Hervorragend!' : pct >= 70 ? 'Sehr gut!' : pct >= 50 ? 'Solide Leistung' : 'Übung macht den Meister';
+  const headline = pct >= 90 ? t('view.result.headlineExcellent') : pct >= 70 ? t('view.result.headlineGreat') : pct >= 50 ? t('view.result.headlineSolid') : t('view.result.headlinePractice');
   const tone = pct >= 70 ? 'win' : pct >= 50 ? 'good' : 'try';
 
   const r = 64;
@@ -33,7 +34,7 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
       el('div', { class: 'score-ring is-animating' },
         el('svg', {
           width: 170, height: 170, viewBox: '0 0 170 170',
-          role: 'img', 'aria-label': `Quiz-Ergebnis: ${pct} Prozent richtig`,
+          role: 'img', 'aria-label': t('view.result.ringAria', { n: pct }),
           html: `
             <defs>
               <linearGradient id="${gradId}" x1="0" y1="0" x2="1" y2="1">
@@ -50,12 +51,12 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
         numEl
       ),
       el('h2', {}, headline),
-      el('p', {}, `${score} von ${total} Fragen richtig.`),
+      el('p', {}, t('view.result.scoreLine', { score, total })),
       el('div', { style: { display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '24px' } },
-        el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => onRetry(finished) }, 'Nochmal'),
-        el('button', { class: 'btn btn-secondary', onClick: onAnother }, 'Anderes Quiz'),
-        el('button', { class: 'btn btn-secondary', onClick: () => shareResult(score, total, finished.source) }, '🔗 Teilen'),
-        el('button', { class: 'btn btn-ghost', onClick: () => go('#/lernen') }, 'Karteikarten lernen')
+        el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: () => onRetry(finished) }, t('view.result.retry')),
+        el('button', { class: 'btn btn-secondary', onClick: onAnother }, t('view.result.another')),
+        el('button', { class: 'btn btn-secondary', onClick: () => shareResult(score, total, finished.source) }, t('view.result.share')),
+        el('button', { class: 'btn btn-ghost', onClick: () => go('#/lernen') }, t('home.hero.cta.learn'))
       )
     )
   );
@@ -74,12 +75,12 @@ export function renderQuizResult(finished, { onRetry, onAnother }) {
 function shareResult(score, total, source) {
   sfx.click();
   const token = encodeQuizShare({ score, total, source });
-  if (!token) { toast('Share-Link konnte nicht erstellt werden.', 'info', 1600); return; }
+  if (!token) { toast(t('view.result.shareLinkError'), 'info', 1600); return; }
   const url = `${window.location.origin}${window.location.pathname}#/share/${token}`;
   if (navigator.share) {
     navigator.share({
-      title: 'Mein Dialekto-Quiz-Resultat',
-      text: `Ich habe ${score}/${total} im Dialekto-Quiz!`,
+      title: t('view.result.shareTitle'),
+      text: t('view.result.shareText', { score, total }),
       url
     }).catch(() => fallbackClipboard(url));
   } else {
@@ -90,8 +91,8 @@ function shareResult(score, total, source) {
 function fallbackClipboard(url) {
   try {
     navigator.clipboard.writeText(url);
-    toast('Link kopiert 📋', 'success', 1800);
+    toast(t('view.result.linkCopied'), 'success', 1800);
   } catch {
-    toast('Link: ' + url, 'info', 4000);
+    toast(t('view.result.linkFallback', { url }), 'info', 4000);
   }
 }

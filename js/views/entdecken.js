@@ -9,12 +9,8 @@ import { fuzzyDialekte } from '../util/search-index.js';
 // alles andere inkl. nds/Plattdeutsch → de). Keine Länder-Emoji-Flaggen, da
 // Windows diese nur als Buchstabenpaare („DE") rendert.
 const COUNTRY_OF = (d) => d.lang === 'de-AT' ? 'at' : d.lang === 'de-CH' ? 'ch' : 'de';
-const COUNTRIES = [
-  { id: 'all', label: 'Alle' },
-  { id: 'de',  label: 'Deutschland' },
-  { id: 'at',  label: 'Österreich' },
-  { id: 'ch',  label: 'Schweiz' },
-];
+// Labels kommen aus i18n (t('country.<id>')); hier nur die IDs.
+const COUNTRIES = [{ id: 'all' }, { id: 'de' }, { id: 'at' }, { id: 'ch' }];
 
 export function renderEntdecken(root) {
   root.innerHTML = '';
