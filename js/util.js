@@ -15,6 +15,6 @@ export { toast } from './util/toast.js';
 export {
   observeReveals, observeCounters, animateCounter,
   initSpotlight, initScrollProgress, confettiBurst,
-  initTilt, initMagnetic, initParallax, initPointerParallax,
+  initTilt, initMagnetic, initParallax,
   registerParallax
 } from './util/motion.js';

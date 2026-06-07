@@ -7,7 +7,7 @@ import { $, $$, parseHash, initLinkInterception, ROUTE_EVENT } from './util.js';
 import { ROUTE_LABELS } from './util/route.js';
 import {
   observeReveals, observeCounters,
-  initTilt, initMagnetic, initPointerParallax, initParallax
+  initTilt, initMagnetic, initParallax
 } from './util/motion.js';
 import { initNav, syncMobileNav } from './nav.js';
 import { attachPullToRefresh } from './util/pull-to-refresh.js';
@@ -90,7 +90,6 @@ function doRender(app, route, segs, params, focusContent = false) {
   observeCounters(app);
   initTilt(app);
   initMagnetic(app);
-  initPointerParallax(app);
   initParallax(app);
   initNav();
   syncMobileNav();

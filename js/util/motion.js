@@ -187,36 +187,6 @@ export function initParallax(root = document) {
   root.querySelectorAll('[data-parallax]').forEach((el) => registerParallax(el));
 }
 
-// Pointer parallax for hero preview — listens once, updates registered groups.
-let pointerParallaxInit = false;
-export function initPointerParallax(root = document) {
-  if (prefersReduced() || isCoarse()) return;
-  const containers = root.querySelectorAll('[data-pointer-parallax]:not([data-pp-bound])');
-  containers.forEach((c) => {
-    c.dataset.ppBound = '1';
-    const items = c.querySelectorAll('[data-pp-depth]');
-    c.addEventListener('pointermove', (e) => {
-      const r = c.getBoundingClientRect();
-      const nx = (e.clientX - r.left) / r.width  - 0.5;
-      const ny = (e.clientY - r.top)  / r.height - 0.5;
-      items.forEach((it) => {
-        const depth = parseFloat(it.dataset.ppDepth) || 1;
-        it.style.setProperty('--pp-x', (nx * depth * 16).toFixed(1) + 'px');
-        it.style.setProperty('--pp-y', (ny * depth * 16).toFixed(1) + 'px');
-        it.style.setProperty('--pp-rx', (-ny * depth * 4).toFixed(2) + 'deg');
-        it.style.setProperty('--pp-ry', ( nx * depth * 4).toFixed(2) + 'deg');
-      });
-    }, { passive: true });
-    c.addEventListener('pointerleave', () => {
-      items.forEach((it) => {
-        it.style.setProperty('--pp-x', '0px');
-        it.style.setProperty('--pp-y', '0px');
-        it.style.setProperty('--pp-rx', '0deg');
-        it.style.setProperty('--pp-ry', '0deg');
-      });
-    });
-  });
-}
 
 // Confetti burst (for celebrations). Lightweight, no deps.
 export function confettiBurst(originEl, { count = 80, colors } = {}) {
