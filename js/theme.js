@@ -1,5 +1,5 @@
 // Dialekto · Theme-Umschalter
-// Klick-Logik für den Theme-Button (Hell/Dunkel/Auto/Hoher Kontrast),
+// Klick-Logik für den Theme-Button (Hell/Dunkel/Auto),
 // den Dyslexie-Schrift-Toggle und den Sprach-Umschalter.
 
 import { $, toast } from './util.js';
@@ -14,8 +14,7 @@ import { initI18n, t } from './util/i18n.js';
 const THEME_LABELS_KEYS = {
   light:    'theme.light',
   dark:     'theme.dark',
-  auto:     'theme.auto',
-  contrast: 'theme.contrast'
+  auto:     'theme.auto'
 };
 
 const THEME_TOAST_MS = 1200;

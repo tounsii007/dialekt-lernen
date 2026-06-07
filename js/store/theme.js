@@ -1,12 +1,12 @@
-// Theme-Verwaltung (Hell / Dunkel / Auto / Hoher Kontrast)
+// Theme-Verwaltung (Hell / Dunkel / Auto)
 // + Typografie-Mode (Standard / Dyslexie-freundlich).
 
 import { state, persist } from './state.js';
 
-const ORDER = ['light', 'dark', 'auto', 'contrast'];
+const ORDER = ['light', 'dark', 'auto'];
 
-// Typografie wird separat von Theme persistiert, damit Benutzer Hoher-Kontrast
-// + Standard-Font (oder Hell + Dyslexie-Font) frei kombinieren können.
+// Typografie wird separat von Theme persistiert, damit Benutzer Theme + Font
+// (z.B. Dunkel + Dyslexie-Font) frei kombinieren können.
 const TYPOGRAPHY_KEY = 'dialekto:typography';
 const TYPOGRAPHY_DEFAULT = 'default';
 const TYPOGRAPHY_DYSLEXIC = 'dyslexic';
@@ -44,6 +44,8 @@ export function getTheme() {
 
 export function applyTheme() {
   if (typeof document === 'undefined') return;
+  // Migration: der entfernte „Hoher Kontrast"-Modus fällt auf „auto" zurück.
+  if (!ORDER.includes(state.theme)) { state.theme = 'auto'; try { persist(); } catch {} }
   document.documentElement.setAttribute('data-theme', state.theme);
 }
 

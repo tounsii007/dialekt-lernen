@@ -104,7 +104,7 @@ function isDarkActive() {
     return typeof window !== 'undefined' && window.matchMedia
       && window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
-  return false; // light, contrast → volle Farben
+  return false; // light → volle Farben
 }
 
 // Dämpft einen Preset-Farbwert für den Dunkelmodus: gesättigte, helle Presets

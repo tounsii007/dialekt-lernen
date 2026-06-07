@@ -1,5 +1,6 @@
 // Vergleichs-View: zeigt äquivalente Ausdrücke quer über alle Dialekte.
 import { el, go, speak } from '../util.js';
+import { t } from '../util/i18n.js';
 import { KATEGORIEN } from '../../data/kategorien.js';
 import { buildComparison, filterByKategorie } from '../util/comparison.js';
 import { icon, emptyIllustration } from '../util/icons.js';
@@ -16,15 +17,15 @@ export function renderVergleich(root) {
   view.appendChild(el('section', {},
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Dialekt-Vergleich'),
-        el('div', { class: 'lede' }, 'Wie sagt man dasselbe in verschiedenen Regionen? Hier sind Ausdrücke gruppiert nach Bedeutung.')
+        el('h2', {}, t('view.vergleich.title')),
+        el('div', { class: 'lede' }, t('view.vergleich.lede'))
       )
     )
   ));
 
   // Kategorie-Chips
   const usedCats = new Set(cachedGroups.map((g) => g.kategorie));
-  const cats = [{ id: 'all', label: 'Alle', icon: '🌍' }, ...Array.from(usedCats).map((c) => KATEGORIEN[c]).filter(Boolean)];
+  const cats = [{ id: 'all', label: t('common.all'), icon: '🌍' }, ...Array.from(usedCats).map((c) => KATEGORIEN[c]).filter(Boolean)];
 
   let activeCat = 'all';
   const chipsRow = el('div', { class: 'chip-row', style: { marginBottom: 'var(--sp-5)' } });
@@ -49,8 +50,8 @@ export function renderVergleich(root) {
     if (!groups.length) {
       list.appendChild(el('div', { class: 'empty-state' },
         emptyIllustration('map'),
-        el('h3', {}, 'Keine Gruppen in dieser Kategorie'),
-        el('div', { class: 'empty-meta' }, 'Wechsle auf „Alle" — die meisten Gruppen entstehen quer über Kategorien hinweg.')
+        el('h3', {}, t('view.vergleich.emptyTitle')),
+        el('div', { class: 'empty-meta' }, t('view.vergleich.emptyMeta'))
       ));
       return;
     }

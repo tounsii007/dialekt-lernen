@@ -27,7 +27,6 @@ const THEMES = [
   { id: 'light',    label: 'Hell',    icon: '☀️' },
   { id: 'dark',     label: 'Dunkel',  icon: '🌙' },
   { id: 'auto',     label: 'Auto',    icon: '🖥️' },
-  { id: 'contrast', label: 'Kontrast', icon: '◐' },
 ];
 
 let overlay = null;
@@ -174,7 +173,7 @@ function buildPanel() {
 
   // Darstellung
   body.appendChild(section('Darstellung', '🎨',
-    row('Design', segmented(THEMES, getTheme(), (v) => { setTheme(v); applyTheme(); }), 'Hell, dunkel, automatisch oder hoher Kontrast'),
+    row('Design', segmented(THEMES, getTheme(), (v) => { setTheme(v); applyTheme(); }), 'Hell, dunkel oder automatisch'),
     row('Farbpalette', buildPaletteGrid(), 'Akzentfarben der App'),
     row('Animationen', toggleSwitch(getAnimationsEnabled(), (on) => {
       setAnimationsEnabled(on);
