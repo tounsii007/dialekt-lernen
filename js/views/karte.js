@@ -4,6 +4,7 @@ import { DIALEKTE } from '../../data/dialekte.js';
 import { getLernStats, getStreak } from '../store.js';
 import { getLernstand } from '../store/learning.js';
 import { icon } from '../util/icons.js';
+import { t } from '../util/i18n.js';
 
 // Geografische Positionen (% left, % top) für jede Dialekt-ID
 // Grobverortung auf einer Deutschland/AT/CH-Karte (0,0 = links oben)
@@ -28,13 +29,13 @@ export function renderKarte(root) {
 
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '🗺️ Dialekt-Karte'),
-      el('div', { class: 'lede' }, 'Klicke auf eine Region, um ihre Ausdrücke zu entdecken.')
+      el('h2', {}, t('view.karte.title')),
+      el('div', { class: 'lede' }, t('view.karte.lede'))
     ),
     el('button', {
       class: 'btn btn-ghost',
       onClick: () => go('#/entdecken')
-    }, icon('book'), ' Zur Liste')
+    }, icon('book'), ' ' + t('view.karte.toList'))
   ));
 
   const stage = el('div', { class: 'karte-stage' });
@@ -61,8 +62,8 @@ export function renderKarte(root) {
       },
       title: `${d.name} — ${d.region}`,
       'aria-label': `${d.name}, ${pos.label}. ` + (stats.gelernt > 0
-        ? `${stats.gelernt} von ${d.ausdruecke.length} gelernt`
-        : `${d.ausdruecke.length} Ausdrücke`),
+        ? t('view.karte.ariaLearned', { n: stats.gelernt, total: d.ausdruecke.length })
+        : t('view.karte.ariaExpr', { n: d.ausdruecke.length })),
       onClick: () => go(`#/dialekt/${d.id}`)
     });
 
@@ -79,8 +80,8 @@ export function renderKarte(root) {
       el('div', { class: 'karte-tooltip-region' }, pos.label),
       el('div', { class: 'karte-tooltip-stat' },
         stats.gelernt > 0
-          ? `${stats.gelernt}/${d.ausdruecke.length} gelernt`
-          : `${d.ausdruecke.length} Ausdrücke`
+          ? t('view.karte.tooltipLearned', { n: stats.gelernt, total: d.ausdruecke.length })
+          : t('view.karte.ariaExpr', { n: d.ausdruecke.length })
       )
     ));
 
@@ -91,11 +92,11 @@ export function renderKarte(root) {
   stage.appendChild(el('div', { class: 'karte-legend' },
     el('div', { class: 'karte-legend-item' },
       el('span', { class: 'karte-legend-dot karte-legend-new' }),
-      'Noch nicht begonnen'
+      t('view.karte.legendNew')
     ),
     el('div', { class: 'karte-legend-item' },
       el('span', { class: 'karte-legend-dot karte-legend-progress' }),
-      'In Arbeit'
+      t('view.karte.legendProgress')
     )
   ));
 
@@ -107,15 +108,15 @@ export function renderKarte(root) {
   view.appendChild(el('div', { class: 'karte-stats-row', dataset: { reveal: '' } },
     el('div', { class: 'karte-stat-card', dataset: { spotlight: '' } },
       el('div', { class: 'karte-stat-num' }, String(DIALEKTE.length)),
-      el('div', { class: 'karte-stat-label' }, 'Dialektregionen')
+      el('div', { class: 'karte-stat-label' }, t('view.karte.statRegions'))
     ),
     el('div', { class: 'karte-stat-card', dataset: { spotlight: '' } },
       el('div', { class: 'karte-stat-num' }, String(started)),
-      el('div', { class: 'karte-stat-label' }, 'bereits erkundet')
+      el('div', { class: 'karte-stat-label' }, t('view.karte.statExplored'))
     ),
     el('div', { class: 'karte-stat-card', dataset: { spotlight: '' } },
       el('div', { class: 'karte-stat-num' }, String(allStats.reduce((s, a) => s + a.gelernt, 0))),
-      el('div', { class: 'karte-stat-label' }, 'Ausdrücke gelernt')
+      el('div', { class: 'karte-stat-label' }, t('view.karte.statExprLearned'))
     )
   ));
 

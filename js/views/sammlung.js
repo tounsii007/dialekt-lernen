@@ -7,11 +7,12 @@ import { getLernstand } from '../store/learning.js';
 import { KATEGORIEN, KATEGORIE_LIST } from '../../data/kategorien.js';
 import { renderExpressionCard } from './partials.js';
 import { emptyIllustration } from '../util/icons.js';
+import { t } from '../util/i18n.js';
 
 const STATUS_FILTERS = [
-  { id: 'alle',     label: 'Alle' },
-  { id: 'unlocked', label: 'Freigeschaltet' },
-  { id: 'locked',   label: 'Verborgen' }
+  { id: 'alle',     label: () => t('common.all') },
+  { id: 'unlocked', label: () => t('view.sammlung.statusUnlocked') },
+  { id: 'locked',   label: () => t('view.sammlung.statusLocked') }
 ];
 
 let state = {
@@ -26,9 +27,9 @@ export function renderSammlung(root) {
 
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '📚 Deine Ausdrücke-Sammlung'),
+      el('h2', {}, t('view.sammlung.title')),
       el('div', { class: 'lede' },
-        'Jeder Ausdruck, den du mindestens einmal lernst, wird hier freigeschaltet. Verborgene Karten geben einen Tipp, was noch fehlt.'
+        t('view.sammlung.lede')
       )
     )
   ));
@@ -65,8 +66,8 @@ export function renderSammlung(root) {
     if (currentFiltered.length === 0) {
       gridWrap.appendChild(el('div', { class: 'empty-state' },
         emptyIllustration('search'),
-        el('h3', {}, 'Keine Ausdrücke gefunden'),
-        el('div', { class: 'empty-meta' }, 'Versuche die Filter zu lockern.')
+        el('h3', {}, t('view.sammlung.emptyTitle')),
+        el('div', { class: 'empty-meta' }, t('view.sammlung.emptyMeta'))
       ));
       return;
     }
@@ -83,14 +84,14 @@ export function renderSammlung(root) {
         onClick: () => {
           renderBatch(grid, renderedCount, renderedCount + PAGE_SIZE);
           if (renderedCount >= currentFiltered.length) loadMoreBtn.remove();
-          else loadMoreBtn.textContent = `Mehr laden (${currentFiltered.length - renderedCount} verbleiben)`;
+          else loadMoreBtn.textContent = t('view.sammlung.loadMore', { n: currentFiltered.length - renderedCount });
         }
-      }, `Mehr laden (${currentFiltered.length - renderedCount} verbleiben)`);
+      }, t('view.sammlung.loadMore', { n: currentFiltered.length - renderedCount }));
       gridWrap.appendChild(loadMoreBtn);
     }
 
     const meta = view.querySelector('[data-sml-meta]');
-    if (meta) meta.textContent = `${currentFiltered.length} Karten gefiltert`;
+    if (meta) meta.textContent = t('view.sammlung.metaFiltered', { n: currentFiltered.length });
   }
 
   // Filter-Events
@@ -125,9 +126,9 @@ function renderProgressBar({ unlocked, total }) {
   return el('section', { class: 'section sammlung-progress', dataset: { reveal: '' } },
     el('div', { class: 'sammlung-progress-head' },
       el('div', {},
-        el('div', { class: 'sammlung-progress-title' }, 'Sammlungs-Fortschritt'),
+        el('div', { class: 'sammlung-progress-title' }, t('view.sammlung.progressTitle')),
         el('div', { class: 'lede', style: { fontSize: '.9rem' } },
-          `${unlocked} von ${total} Ausdrücken freigeschaltet (${pct} %)`
+          t('view.sammlung.progressSub', { unlocked, total, pct })
         )
       ),
       el('div', { class: 'sammlung-progress-pill' }, `${pct} %`)
@@ -143,12 +144,12 @@ function renderFilters() {
   const section = el('section', { class: 'section sammlung-filters', dataset: { reveal: '' } });
 
   const dialektSel = el('select', { class: 'sammlung-select', dataset: { smlFilter: 'dialektId' } },
-    el('option', { value: 'alle' }, '— Alle Dialekte —'),
+    el('option', { value: 'alle' }, t('view.sammlung.allDialects')),
     ...DIALEKTE.map(d => el('option', { value: d.id, selected: state.dialektId === d.id }, `${d.flag} ${d.name}`))
   );
 
   const katSel = el('select', { class: 'sammlung-select', dataset: { smlFilter: 'kategorie' } },
-    el('option', { value: 'alle' }, '— Alle Kategorien —'),
+    el('option', { value: 'alle' }, t('view.sammlung.allCategories')),
     ...KATEGORIE_LIST.map(k => el('option', { value: k.id, selected: state.kategorie === k.id }, `${k.icon} ${k.label}`))
   );
 
@@ -156,20 +157,20 @@ function renderFilters() {
     ...STATUS_FILTERS.map(s => el('button', {
       class: 'sammlung-status-btn' + (state.status === s.id ? ' is-on' : ''),
       dataset: { smlStatus: s.id }
-    }, s.label))
+    }, s.label()))
   );
 
   section.appendChild(el('div', { class: 'sammlung-filter-row' },
     el('div', { class: 'sammlung-filter-cell' },
-      el('label', { class: 'sammlung-filter-label' }, 'Dialekt'),
+      el('label', { class: 'sammlung-filter-label' }, t('view.sammlung.labelDialect')),
       dialektSel
     ),
     el('div', { class: 'sammlung-filter-cell' },
-      el('label', { class: 'sammlung-filter-label' }, 'Kategorie'),
+      el('label', { class: 'sammlung-filter-label' }, t('view.sammlung.labelCategory')),
       katSel
     ),
     el('div', { class: 'sammlung-filter-cell' },
-      el('label', { class: 'sammlung-filter-label' }, 'Status'),
+      el('label', { class: 'sammlung-filter-label' }, t('view.sammlung.labelStatus')),
       statusRow
     )
   ));
@@ -226,10 +227,10 @@ function renderSammlungCard(a) {
   // Verborgene Karte — Silhouette
   return el('div', {
     class: 'sammlung-card is-locked',
-    title: 'Noch nicht freigeschaltet — übe ihn im Lernen-Modus, um ihn aufzudecken.',
-    'aria-label': `Verborgener Ausdruck aus ${a.dialektName}, Kategorie ${cat.label}`,
+    title: t('view.sammlung.lockedTitle'),
+    'aria-label': t('view.sammlung.lockedAria', { dialekt: a.dialektName, kategorie: cat.label }),
     onClick: () => {
-      toast('Verborgener Ausdruck — übe ihn im Karteikarten-Modus, um ihn freizuschalten!', 'info', 2400);
+      toast(t('view.sammlung.lockedToast'), 'info', 2400);
     }
   },
     el('div', { class: 'sammlung-card-head' },
@@ -237,7 +238,7 @@ function renderSammlungCard(a) {
       el('span', { class: 'sammlung-card-cat' }, `${cat.icon} ${cat.label}`)
     ),
     el('div', { class: 'sammlung-card-mystery' }, '?'),
-    el('div', { class: 'sammlung-card-hint' }, `${(a.ausdruck || '').length} Zeichen · ${cat.label}`),
+    el('div', { class: 'sammlung-card-hint' }, t('view.sammlung.cardHint', { n: (a.ausdruck || '').length, kategorie: cat.label })),
     el('div', { class: 'sammlung-card-foot' },
       el('span', { class: 'region-tag' }, `${a.dialektFlag || ''} ${a.dialektName}`),
       el('span', { class: 'sammlung-card-check' }, '🔒')

@@ -1,6 +1,6 @@
 {
   "name": "dialekto",
-  "version": "2.1.71",
+  "version": "2.1.72",
   "description": "Dialekto · Web-App zum Lernen deutscher Dialekte. Karteikarten, SRS, Quiz, Vergleich, PWA — komplett ohne Backend.",
   "type": "module",
   "private": true,
@@ -16,11 +16,13 @@
     "test:frontend": "node tools/test.mjs --filter=frontend",
     "a11y": "node tools/a11y-audit.mjs",
     "security": "node tools/security-scan.mjs",
+    "i18n:verify": "node tools/i18n-verify.mjs",
+    "i18n:scan": "node tools/i18n-scan.mjs",
     "bundle-analyze": "node tools/bundle-analyze.mjs",
     "minify-css": "node tools/minify-css.mjs",
     "build": "node tools/minify-css.mjs && node tools/export-mobile-data.mjs",
     "install-hooks": "node tools/install-hooks.mjs",
-    "ci": "npm run validate && npm run a11y && npm run security && npm test"
+    "ci": "npm run validate && npm run a11y && npm run security && npm run i18n:verify && npm test"
   },
   "engines": {
     "node": ">=18"

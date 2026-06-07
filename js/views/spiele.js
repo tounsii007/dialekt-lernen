@@ -6,14 +6,15 @@ import { DIALEKTE, ALLE_AUSDRUECKE } from '../../data/dialekte.js';
 import { confettiBurst } from '../util/motion.js';
 import { sfx } from '../util/sounds.js';
 import { awardXp } from '../store/xp.js';
+import { t } from '../util/i18n.js';
 
 // Persistenz der zuletzt gewählten Optionen (memory-only — kein localStorage nötig).
 let lastOptions = { dialektIds: [], difficulty: 4 };
 let activeGame = null; // damit Karten-Klicks die Spiel-Instanz erreichen
 
 const DIFFICULTIES = [
-  { value: 4, label: '4 × 4', pairs: 8,  description: '8 Paare · entspannt' },
-  { value: 6, label: '6 × 6', pairs: 18, description: '18 Paare · Profi' }
+  { value: 4, label: '4 × 4', pairs: 8,  description: t('view.spiele.diffRelaxed', { n: 8 }) },
+  { value: 6, label: '6 × 6', pairs: 18, description: t('view.spiele.diffPro', { n: 18 }) }
 ];
 
 export function renderSpiele(root) {
@@ -23,8 +24,8 @@ export function renderSpiele(root) {
 
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '🎮 Mini-Spiele'),
-      el('div', { class: 'lede' }, 'Memory: Decke gleiche Ausdrucks-Übersetzung-Paare auf. Je weniger Versuche, desto besser.')
+      el('h2', {}, t('view.spiele.title')),
+      el('div', { class: 'lede' }, t('view.spiele.lede'))
     )
   ));
 
@@ -35,9 +36,9 @@ export function renderSpiele(root) {
 function renderSetup() {
   const setup = el('section', { class: 'section spiele-setup', dataset: { reveal: '' } });
 
-  setup.appendChild(el('h3', {}, 'Dialekt-Auswahl'));
+  setup.appendChild(el('h3', {}, t('view.spiele.dialectSelection')));
   setup.appendChild(el('div', { class: 'lede', style: { marginBottom: '12px' } },
-    'Lass leer für „alle Dialekte" — sonst klicke einen oder mehrere zum Filtern.'
+    t('view.spiele.dialectHint')
   ));
 
   const chips = el('div', { class: 'spiele-dialekt-chips' });
@@ -61,7 +62,7 @@ function renderSetup() {
   });
   setup.appendChild(chips);
 
-  setup.appendChild(el('h3', { style: { marginTop: '24px' } }, 'Schwierigkeit'));
+  setup.appendChild(el('h3', { style: { marginTop: '24px' } }, t('view.spiele.difficulty')));
 
   let chosenDifficulty = lastOptions.difficulty;
   const diffRow = el('div', { class: 'spiele-difficulty-row' });
@@ -92,13 +93,13 @@ function renderSetup() {
       const diff = DIFFICULTIES.find(d => d.value === chosenDifficulty) || DIFFICULTIES[0];
       const pool = buildPool(ids);
       if (pool.length < diff.pairs) {
-        toast(`Nicht genug Ausdrücke für ${diff.pairs} Paare. Wähle weniger Filter oder eine kleinere Schwierigkeit.`, 'info', 2800);
+        toast(t('view.spiele.notEnough', { n: diff.pairs }), 'info', 2800);
         return;
       }
       sfx.open();
       startGame(diff, pool);
     }
-  }, '▶ Spiel starten');
+  }, t('view.spiele.start'));
   setup.appendChild(startBtn);
 
   return setup;
@@ -189,15 +190,15 @@ function renderGameView(game) {
   // HUD
   wrap.appendChild(el('div', { class: 'spiele-hud' },
     el('div', { class: 'spiele-hud-stat' },
-      el('div', { class: 'spiele-hud-label' }, 'Versuche'),
+      el('div', { class: 'spiele-hud-label' }, t('view.spiele.moves')),
       el('div', { class: 'spiele-hud-value', dataset: { memMoves: '' } }, '0')
     ),
     el('div', { class: 'spiele-hud-stat' },
-      el('div', { class: 'spiele-hud-label' }, 'Paare'),
+      el('div', { class: 'spiele-hud-label' }, t('view.spiele.pairs')),
       el('div', { class: 'spiele-hud-value', dataset: { memMatches: '' } }, `0 / ${game.difficulty.pairs}`)
     ),
     el('div', { class: 'spiele-hud-stat' },
-      el('div', { class: 'spiele-hud-label' }, 'Zeit'),
+      el('div', { class: 'spiele-hud-label' }, t('view.spiele.time')),
       el('div', { class: 'spiele-hud-value', dataset: { memTimer: '' } }, '00:00')
     ),
     el('button', {
@@ -207,7 +208,7 @@ function renderGameView(game) {
         cleanupGame();
         renderSpiele(document.querySelector('#app'));
       }
-    }, '↺ Neues Spiel')
+    }, t('view.spiele.newGame'))
   ));
 
   // Grid
@@ -228,7 +229,7 @@ function renderMemoryCard(card) {
     class: 'memory-card',
     dataset: { memCard: card.id },
     style: { '--dc': card.dialektFarbe || 'var(--brand)' },
-    'aria-label': 'Memory-Karte umdrehen',
+    'aria-label': t('view.spiele.cardFlip'),
     onClick: () => handleCardClick(card.id)
   },
     el('div', { class: 'memory-card-inner' },
@@ -239,7 +240,7 @@ function renderMemoryCard(card) {
         el('div', { class: 'memory-card-flag' }, card.dialektFlag || ''),
         el('div', { class: 'memory-card-text' }, card.text),
         el('div', { class: 'memory-card-side' },
-          card.side === 'ausdruck' ? 'Dialekt' : 'Hochdeutsch'
+          card.side === 'ausdruck' ? t('view.spiele.sideDialect') : t('view.spiele.sideHochdeutsch')
         )
       )
     )
@@ -309,12 +310,12 @@ function setFlipped(cardId, on, cls) {
   if (on) {
     const card = activeGame?.cards.find(c => c.id === cardId);
     if (card) {
-      const seite = card.side === 'ausdruck' ? 'Dialekt' : 'Hochdeutsch';
+      const seite = card.side === 'ausdruck' ? t('view.spiele.sideDialect') : t('view.spiele.sideHochdeutsch');
       node.setAttribute('aria-label', `${card.text}, ${seite}`);
     }
     if (front) front.removeAttribute('aria-hidden');
   } else {
-    node.setAttribute('aria-label', 'Memory-Karte umdrehen');
+    node.setAttribute('aria-label', t('view.spiele.cardFlip'));
     if (front) front.setAttribute('aria-hidden', 'true');
   }
 }
@@ -337,24 +338,24 @@ function finishGame() {
   const grid = document.querySelector('[data-mem-grid]');
   if (grid) confettiBurst(grid, { count: 120 });
 
-  toast(`🏆 Geschafft in ${game.moves} Versuchen · ${formatElapsed(elapsed)} · +${xp} XP`, 'success', 3600);
+  toast(t('view.spiele.winToast', { n: game.moves, time: formatElapsed(elapsed), xp }), 'success', 3600);
 
   // Abschluss-Overlay
   const view = document.querySelector('.spiele-view');
   if (!view) return;
   const summary = el('div', { class: 'spiele-summary card', dataset: { spotlight: '' } },
-    el('h3', {}, '🎉 Alle Paare gefunden!'),
+    el('h3', {}, t('view.spiele.summaryTitle')),
     el('div', { class: 'spiele-summary-row' },
       el('div', {},
-        el('div', { class: 'spiele-summary-label' }, 'Versuche'),
+        el('div', { class: 'spiele-summary-label' }, t('view.spiele.moves')),
         el('div', { class: 'spiele-summary-value' }, String(game.moves))
       ),
       el('div', {},
-        el('div', { class: 'spiele-summary-label' }, 'Zeit'),
+        el('div', { class: 'spiele-summary-label' }, t('view.spiele.time')),
         el('div', { class: 'spiele-summary-value' }, formatElapsed(elapsed))
       ),
       el('div', {},
-        el('div', { class: 'spiele-summary-label' }, 'XP'),
+        el('div', { class: 'spiele-summary-label' }, t('view.spiele.xp')),
         el('div', { class: 'spiele-summary-value' }, `+${xp}`)
       )
     ),
@@ -365,11 +366,11 @@ function finishGame() {
           cleanupGame();
           renderSpiele(document.querySelector('#app'));
         }
-      }, '↺ Nochmal'),
+      }, t('view.spiele.again')),
       el('button', {
         class: 'btn btn-ghost',
         onClick: () => go('#/lernen')
-      }, '📗 Weiterlernen')
+      }, t('view.spiele.keepLearning'))
     )
   );
   view.appendChild(summary);

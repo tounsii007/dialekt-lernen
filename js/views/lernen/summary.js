@@ -1,5 +1,6 @@
 // Karteikarten-Modus · End-of-Session-Zusammenfassung (verbessert)
 import { el, go } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { confettiBurst } from '../../util/motion.js';
 import { icon, sparkline } from '../../util/icons.js';
 import { sfx } from '../../util/sounds.js';
@@ -30,12 +31,12 @@ export function renderSummary(finished, onRestart) {
         buildDonut(pctEasy, isGreat ? 'var(--accent)' : isFine ? 'var(--warm)' : 'var(--danger)', CIRCUMFERENCE),
         el('div', { class: 'summary-ring-inner' },
           el('div', { class: 'summary-ring-pct' }, pctEasy + '%'),
-          el('div', { class: 'summary-ring-label' }, 'Leicht')
+          el('div', { class: 'summary-ring-label' }, t('view.summary.ratingEasy'))
         )
       ),
       el('div', { class: 'summary-header-text' },
-        el('h2', {}, isGreat ? '🎉 Ausgezeichnet!' : isFine ? '👍 Gut gemacht!' : '💪 Weiter üben!'),
-        el('p', {}, `${total} Karten aus ${finished.title} — ${easy} leicht, ${med} mittel, ${hard} schwer.`)
+        el('h2', {}, isGreat ? t('view.summary.headlineGreat') : isFine ? t('view.summary.headlineFine') : t('view.summary.headlinePractice')),
+        el('p', {}, t('view.summary.subline', { total, title: finished.title, easy, med, hard }))
       )
     ),
 
@@ -44,11 +45,11 @@ export function renderSummary(finished, onRestart) {
       const sessionXp = easy * 10 + med * 5 + hard * 5;
       return el('div', { class: 'summary-xp-earned' },
         el('span', { class: 'summary-xp-num' }, '+' + sessionXp),
-        el('span', { class: 'summary-xp-unit' }, 'XP verdient'),
+        el('span', { class: 'summary-xp-unit' }, t('view.summary.xpEarned')),
         el('div', { class: 'summary-xp-bar' },
           el('div', { class: 'summary-xp-fill', style: { width: Math.round(xpProgress * 100) + '%' } })
         ),
-        el('span', { class: 'summary-xp-level' }, `Lv.${level} · ${getLevelTitle(level)}`)
+        el('span', { class: 'summary-xp-level' }, t('view.summary.levelLine', { level, title: getLevelTitle(level) }))
       );
     })(),
 
@@ -57,37 +58,37 @@ export function renderSummary(finished, onRestart) {
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, icon('flame', { size: 20 })),
         el('div', { class: 'summary-stat-num' }, String(streak)),
-        el('div', { class: 'summary-stat-label' }, 'Streak')
+        el('div', { class: 'summary-stat-label' }, t('view.summary.statStreak'))
       ),
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, icon('target', { size: 20 })),
         el('div', { class: 'summary-stat-num' }, `${goalToday}/${goalTarget}`),
-        el('div', { class: 'summary-stat-label' }, 'Tagesziel')
+        el('div', { class: 'summary-stat-label' }, t('view.summary.statGoal'))
       ),
       el('div', { class: 'summary-stat' },
         el('div', { class: 'summary-stat-icon' }, icon('cards', { size: 20 })),
         el('div', { class: 'summary-stat-num' }, String(total)),
-        el('div', { class: 'summary-stat-label' }, 'Karten heute')
+        el('div', { class: 'summary-stat-label' }, t('view.summary.statCardsToday'))
       )
     ),
 
     // Session rating breakdown
     el('div', { class: 'summary-breakdown' },
-      ratingBar('Leicht', easy, total, 'var(--accent)'),
-      ratingBar('Mittel', med, total, 'var(--warm)'),
-      ratingBar('Schwer', hard, total, 'var(--danger)')
+      ratingBar(t('view.summary.ratingEasy'), easy, total, 'var(--accent)'),
+      ratingBar(t('view.summary.ratingMed'), med, total, 'var(--warm)'),
+      ratingBar(t('view.summary.ratingHard'), hard, total, 'var(--danger)')
     ),
 
     // CTA Buttons
     el('div', { class: 'summary-cta' },
       el('button', { class: 'btn btn-primary', dataset: { magnetic: '14' }, onClick: onRestart },
-        icon('refresh'), ' Nochmal lernen'
+        icon('refresh'), ' ' + t('view.summary.ctaRestart')
       ),
       el('button', { class: 'btn btn-secondary', onClick: () => go('#/quiz') },
-        icon('target'), ' Im Quiz testen'
+        icon('target'), ' ' + t('view.summary.ctaQuiz')
       ),
       el('button', { class: 'btn btn-ghost', onClick: () => go('#/statistiken') },
-        icon('zap'), ' Statistiken'
+        icon('zap'), ' ' + t('view.summary.ctaStats')
       )
     )
   );

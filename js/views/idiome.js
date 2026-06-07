@@ -5,6 +5,7 @@
 // mit allen verwandten Redewendungen aus allen Dialekten.
 
 import { el, go } from '../util.js';
+import { t } from '../util/i18n.js';
 import { ALLE_AUSDRUECKE, getDialekt } from '../../data/dialekte.js';
 import { findRelatedExpressions } from '../util/related-expressions.js';
 import { renderExpressionCard } from './partials.js';
@@ -173,26 +174,26 @@ export function renderIdiome(root, params = {}) {
   // Header
   view.appendChild(el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, '💬 Idiom-Explorer'),
+      el('h2', {}, t('view.idiome.title')),
       el('div', { class: 'lede' },
         selectedCluster
-          ? `${selectedCluster.label} — ${selectedCluster.items.length} Redewendungen aus den Dialekten.`
-          : `Entdecke ${getRedensarten().length} Redensarten aus ${countRedensartDialekte()} Dialekten — gruppiert nach Bedeutung.`
+          ? `${selectedCluster.label} — ${t('view.idiome.ledeCluster', { n: selectedCluster.items.length })}`
+          : t('view.idiome.lede', { count: getRedensarten().length, dialekte: countRedensartDialekte() })
       )
     ),
     selectedCluster
       ? el('button', {
           class: 'btn btn-ghost',
           onClick: () => go('#/idiome')
-        }, '← Zurück zur Übersicht')
+        }, t('view.idiome.backToOverview'))
       : null
   ));
 
   if (!getRedensarten().length) {
     view.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('sparkles'),
-      el('h3', {}, 'Noch keine Redensarten'),
-      el('div', { class: 'empty-meta' }, 'Sobald die Datenbank Redensarten enthält, tauchen sie hier auf.')
+      el('h3', {}, t('view.idiome.emptyTitle')),
+      el('div', { class: 'empty-meta' }, t('view.idiome.emptyMeta'))
     ));
     root.appendChild(view);
     return;
@@ -220,10 +221,10 @@ function renderClusterOverview(clusters) {
       el('div', { class: 'idiome-cluster-emoji' }, c.emoji),
       el('div', { class: 'idiome-cluster-title' }, c.label),
       el('div', { class: 'idiome-cluster-meta' },
-        `${c.items.length} Redewendungen · ${dialektSet.size} Dialekte`
+        `${t('view.idiome.cardCount', { n: c.items.length })} · ${t('count.dialekte', { n: dialektSet.size })}`
       ),
       sample ? el('div', { class: 'idiome-cluster-sample' }, '„' + sample + '"') : null,
-      el('div', { class: 'idiome-cluster-cta' }, 'Cluster öffnen →')
+      el('div', { class: 'idiome-cluster-cta' }, t('view.idiome.openCluster'))
     );
     grid.appendChild(card);
   });
@@ -239,7 +240,7 @@ function renderClusterDetail(cluster) {
     el('div', {},
       el('div', { class: 'idiome-detail-intro-title' }, cluster.label),
       el('div', { class: 'idiome-detail-intro-meta' },
-        `${cluster.items.length} Redensarten in diesem Cluster — quer durch ${new Set(cluster.items.map(a => a.dialektId)).size} Dialekte.`
+        t('view.idiome.detailMeta', { n: cluster.items.length, dialekte: new Set(cluster.items.map(a => a.dialektId)).size })
       )
     )
   ));
@@ -251,7 +252,7 @@ function renderClusterDetail(cluster) {
   if (!grouped.length) {
     wrap.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('search'),
-      el('h3', {}, 'Keine Redensarten gefunden')
+      el('h3', {}, t('view.idiome.detailEmptyTitle'))
     ));
     return wrap;
   }

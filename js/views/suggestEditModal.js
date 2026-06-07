@@ -4,13 +4,14 @@
 import { el, toast } from '../util.js';
 import { openModal } from '../util/modal.js';
 import { addSuggestion } from '../store/suggestions.js';
+import { t } from '../util/i18n.js';
 
 const FIELDS = [
-  { key: 'ausdruck',    label: 'Ausdruck (Dialekt)' },
-  { key: 'hochdeutsch', label: 'Hochdeutsche Übersetzung' },
-  { key: 'beispiel',    label: 'Beispielsatz (Dialekt)' },
-  { key: 'beispiel_hd', label: 'Beispielsatz (Hochdeutsch)' },
-  { key: 'bedeutung',   label: 'Bedeutung / Erklärung' }
+  { key: 'ausdruck',    labelKey: 'view.suggestEditModal.fieldAusdruck' },
+  { key: 'hochdeutsch', labelKey: 'view.suggestEditModal.fieldHochdeutsch' },
+  { key: 'beispiel',    labelKey: 'view.suggestEditModal.fieldBeispiel' },
+  { key: 'beispiel_hd', labelKey: 'view.suggestEditModal.fieldBeispielHd' },
+  { key: 'bedeutung',   labelKey: 'view.suggestEditModal.fieldBedeutung' }
 ];
 
 /**
@@ -52,14 +53,14 @@ export function openSuggestEditModal(dialekt, ausdruck, onSaved) {
     inputs[f.key] = { input, original: currentValue };
 
     wrap.appendChild(el('div', {},
-      el('label', { style: { display: 'block', fontSize: '.78rem', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '.04em' } }, f.label),
+      el('label', { style: { display: 'block', fontSize: '.78rem', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '.04em' } }, t(f.labelKey)),
       input
     ));
   });
 
   const noteArea = el('textarea', {
     rows: 2,
-    placeholder: 'Optionale Anmerkung (Quelle, Begründung, …)',
+    placeholder: t('view.suggestEditModal.notePlaceholder'),
     style: {
       width: '100%', padding: '10px 12px', borderRadius: 'var(--r-md)',
       border: '1px solid var(--border)', background: 'var(--bg-soft)',
@@ -67,21 +68,21 @@ export function openSuggestEditModal(dialekt, ausdruck, onSaved) {
     }
   });
   wrap.appendChild(el('div', {},
-    el('label', { style: { display: 'block', fontSize: '.78rem', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '.04em' } }, 'Notiz (optional)'),
+    el('label', { style: { display: 'block', fontSize: '.78rem', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '.04em' } }, t('view.suggestEditModal.noteLabel')),
     noteArea
   ));
 
   wrap.appendChild(el('p', { class: 'lede', style: { fontSize: '.8rem', margin: '4px 0 0', padding: '8px 12px', background: 'var(--bg-soft)', borderRadius: 'var(--r-sm)', borderLeft: '3px solid var(--brand)' } },
-    'ℹ️ Vorschläge werden nur lokal gespeichert. Über die Favoriten-Seite kannst du alle Vorschläge als JSON exportieren und in einem Pull-Request einreichen.'
+    t('view.suggestEditModal.localInfo')
   ));
 
   openModal({
-    title: '✎ Korrektur-Vorschlag',
+    title: t('view.suggestEditModal.title'),
     content: wrap,
     actions: [
-      { label: 'Abbrechen', variant: 'ghost', onClick: () => {} },
+      { label: t('view.suggestEditModal.cancel'), variant: 'ghost', onClick: () => {} },
       {
-        label: 'Vorschlag speichern',
+        label: t('view.suggestEditModal.save'),
         variant: 'primary',
         onClick: () => {
           let saved = 0;
@@ -100,10 +101,10 @@ export function openSuggestEditModal(dialekt, ausdruck, onSaved) {
             if (ok) saved++;
           }
           if (saved === 0) {
-            toast('Keine Änderungen erkannt', 'info', 1800);
+            toast(t('view.suggestEditModal.noChanges'), 'info', 1800);
             return false;
           }
-          toast(saved === 1 ? '1 Vorschlag gespeichert ✓' : `${saved} Vorschläge gespeichert ✓`, 'success', 1800);
+          toast(saved === 1 ? t('view.suggestEditModal.savedOne') : t('view.suggestEditModal.savedMany', { n: saved }), 'success', 1800);
           if (onSaved) onSaved();
         }
       }

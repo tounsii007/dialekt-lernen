@@ -2,6 +2,7 @@
 // (Zu Deck hinzufügen / Aus Favoriten entfernen).
 
 import { el, go, toast } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { getDialekt } from '../../../data/dialekte.js';
 import { toggleFavorit } from '../../store.js';
 import { renderExpressionCard } from '../partials.js';
@@ -15,13 +16,13 @@ export function renderFavoritenList(favs, rerender) {
 
   if (favs.length === 0) {
     wrap.appendChild(el('div', { class: 'section-head' },
-      el('div', {}, el('h2', {}, 'Deine Favoriten'))
+      el('div', {}, el('h2', {}, t('view.list-panel.title')))
     ));
     wrap.appendChild(el('div', { class: 'empty-state' },
       emptyIllustration('heart'),
-      el('h3', {}, 'Noch keine Favoriten markiert'),
-      el('div', { class: 'empty-meta' }, 'Klicke auf das ♡ Symbol bei einem Ausdruck, um ihn hier zu speichern.'),
-      el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, 'Dialekte erkunden')
+      el('h3', {}, t('view.list-panel.emptyTitle')),
+      el('div', { class: 'empty-meta' }, t('view.list-panel.emptyMeta')),
+      el('button', { class: 'btn btn-primary', dataset: { magnetic: '12' }, onClick: () => go('#/entdecken') }, t('view.list-panel.emptyCta'))
     ));
     return wrap;
   }
@@ -59,12 +60,12 @@ export function renderFavoritenList(favs, rerender) {
 
   let countLabel = null;
   function updateCountLabel() {
-    if (countLabel) countLabel.textContent = `${selectedKeys.size} ausgewählt`;
+    if (countLabel) countLabel.textContent = t('view.list-panel.countSelected', { n: selectedKeys.size });
   }
 
   function renderHead() {
     head.innerHTML = '';
-    head.appendChild(el('div', {}, el('h2', {}, 'Deine Favoriten')));
+    head.appendChild(el('div', {}, el('h2', {}, t('view.list-panel.title'))));
     const toggleBtn = el('button', {
       class: 'btn ' + (selectionMode ? 'btn-secondary' : 'btn-ghost'),
       style: { padding: '6px 14px' },
@@ -75,13 +76,13 @@ export function renderFavoritenList(favs, rerender) {
         renderHead();
         updateGridSelection();
       }
-    }, selectionMode ? '✕ Auswahl beenden' : '☑ Auswahl-Modus');
+    }, selectionMode ? t('view.list-panel.selectionEnd') : t('view.list-panel.selectionMode'));
     head.appendChild(el('div', { style: { display: 'flex', gap: '8px' } }, toggleBtn));
   }
   renderHead();
 
   // Toolbar-Aktionen
-  countLabel = el('span', { class: 'lede', style: { fontSize: '.85rem', flex: '1' } }, '0 ausgewählt');
+  countLabel = el('span', { class: 'lede', style: { fontSize: '.85rem', flex: '1' } }, t('view.list-panel.countSelected', { n: 0 }));
   toolbar.appendChild(countLabel);
 
   toolbar.appendChild(el('button', {
@@ -91,7 +92,7 @@ export function renderFavoritenList(favs, rerender) {
       all.forEach(k => selectedKeys.add(k));
       updateGridSelection();
     }
-  }, 'Alle auswählen'));
+  }, t('view.list-panel.selectAll')));
 
   toolbar.appendChild(el('button', {
     class: 'btn btn-ghost', style: { padding: '6px 12px', fontSize: '.85rem' },
@@ -103,25 +104,27 @@ export function renderFavoritenList(favs, rerender) {
       });
       updateGridSelection();
     }
-  }, 'Auswahl invertieren'));
+  }, t('view.list-panel.invertSelection')));
 
   toolbar.appendChild(el('button', {
     class: 'btn btn-secondary', style: { padding: '6px 12px', fontSize: '.85rem' },
     onClick: async () => {
-      if (selectedKeys.size === 0) { toast('Nichts ausgewählt', 'info', 1400); return; }
+      if (selectedKeys.size === 0) { toast(t('view.list-panel.toastNothingSelected'), 'info', 1400); return; }
       await openAddToDeckDialog(Array.from(selectedKeys), rerender);
     }
-  }, '🗂️ Zu Deck hinzufügen'));
+  }, t('view.list-panel.addToDeck')));
 
   toolbar.appendChild(el('button', {
     class: 'btn btn-ghost danger-btn', style: { padding: '6px 12px', fontSize: '.85rem' },
     onClick: async () => {
-      if (selectedKeys.size === 0) { toast('Nichts ausgewählt', 'info', 1400); return; }
+      if (selectedKeys.size === 0) { toast(t('view.list-panel.toastNothingSelected'), 'info', 1400); return; }
       const n = selectedKeys.size;
       const ok = await confirmModal({
-        title: 'Aus Favoriten entfernen?',
-        message: `${n} Ausdr${n === 1 ? 'uck' : 'ücke'} aus den Favoriten entfernen?`,
-        confirmLabel: 'Entfernen',
+        title: t('view.list-panel.removeConfirmTitle'),
+        message: n === 1
+          ? t('view.list-panel.removeConfirmMsgOne', { n })
+          : t('view.list-panel.removeConfirmMsg', { n }),
+        confirmLabel: t('view.list-panel.removeConfirmAction'),
         danger: true
       });
       if (!ok) return;
@@ -133,10 +136,10 @@ export function renderFavoritenList(favs, rerender) {
         removed++;
       }
       selectedKeys.clear();
-      toast(`${removed} entfernt`, 'success', 1600);
+      toast(t('view.list-panel.toastRemoved', { n: removed }), 'success', 1600);
       rerender();
     }
-  }, '🗑️ Aus Favoriten entfernen'));
+  }, t('view.list-panel.removeFromFavorites')));
 
   wrap.appendChild(head);
   wrap.appendChild(toolbar);
@@ -154,7 +157,7 @@ export function renderFavoritenList(favs, rerender) {
     // Checkbox-Overlay
     const cb = el('input', {
       type: 'checkbox',
-      'aria-label': 'In Auswahl',
+      'aria-label': t('view.list-panel.checkboxAria'),
       onClick: (e) => {
         e.stopPropagation();
         if (cb.checked) selectedKeys.add(key); else selectedKeys.delete(key);
@@ -208,7 +211,7 @@ async function openAddToDeckDialog(selectedKeys, rerender) {
 
   const buildDeckList = () => {
     if (decks.length === 0) {
-      return el('p', { class: 'lede' }, 'Du hast noch keine Decks. Lege jetzt eines an, um die Auswahl dort zu speichern.');
+      return el('p', { class: 'lede' }, t('view.list-panel.noDecks'));
     }
     const list = el('div', { style: { display: 'grid', gap: '8px', maxHeight: '300px', overflowY: 'auto', padding: '4px' } });
     decks.forEach(d => {
@@ -229,7 +232,7 @@ async function openAddToDeckDialog(selectedKeys, rerender) {
         el('div', { style: { flex: '1' } },
           el('div', { style: { fontWeight: '600' } }, d.name),
           el('div', { class: 'lede', style: { fontSize: '.8rem' } },
-            `${d.expressionIds.length} Einträge`
+            t('view.list-panel.deckEntries', { n: d.expressionIds.length })
           )
         )
       );
@@ -241,7 +244,7 @@ async function openAddToDeckDialog(selectedKeys, rerender) {
   const listWrap = el('div', {}, buildDeckList());
 
   openModal({
-    title: `Zu Deck hinzufügen (${selectedKeys.length})`,
+    title: t('view.list-panel.addToDeckTitle', { n: selectedKeys.length }),
     content: [
       listWrap,
       el('div', { style: { marginTop: '12px', display: 'flex', justifyContent: 'flex-end' } },
@@ -256,21 +259,21 @@ async function openAddToDeckDialog(selectedKeys, rerender) {
               for (const ref of refs) {
                 if (addToDeck(newDeckId, ref)) added++;
               }
-              toast(`${added} zum neuen Deck hinzugefügt ✓`, 'success', 1800);
+              toast(t('view.list-panel.toastAddedToNewDeck', { n: added }), 'success', 1800);
               rerender();
             });
           }
-        }, '+ Neues Deck anlegen')
+        }, t('view.list-panel.newDeck'))
       )
     ],
     actions: [
-      { label: 'Abbrechen', variant: 'ghost', onClick: () => {} },
+      { label: t('view.list-panel.cancel'), variant: 'ghost', onClick: () => {} },
       {
-        label: 'Hinzufügen',
+        label: t('view.list-panel.add'),
         variant: 'primary',
         onClick: () => {
           if (!selectedDeckId) {
-            toast('Bitte ein Deck wählen oder neu anlegen', 'info', 1800);
+            toast(t('view.list-panel.toastChooseDeck'), 'info', 1800);
             return false;
           }
           let added = 0, skipped = 0;
@@ -279,8 +282,8 @@ async function openAddToDeckDialog(selectedKeys, rerender) {
             else skipped++;
           }
           const msg = skipped > 0
-            ? `${added} hinzugefügt · ${skipped} bereits vorhanden`
-            : `${added} hinzugefügt ✓`;
+            ? t('view.list-panel.toastAddedSkipped', { added, skipped })
+            : t('view.list-panel.toastAdded', { n: added });
           toast(msg, 'success', 1800);
           rerender();
         }

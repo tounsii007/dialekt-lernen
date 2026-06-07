@@ -3,6 +3,7 @@
 // (kein extra Modal-Framework), Entfernen mit Zweiklick-Bestätigung an der Zeile.
 
 import { el, toast } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import { DIALEKTE } from '../../../data/dialekte.js';
 import { KATEGORIEN } from '../../../data/kategorien.js';
 import { getLongGoals, addLongGoal, removeLongGoal } from '../../store/long-goals.js';
@@ -11,13 +12,13 @@ export function renderLongGoalsSection() {
   const section = el('section', { class: 'section', dataset: { reveal: '' } });
   const head = el('div', { class: 'section-head' },
     el('div', {},
-      el('h2', {}, 'Deine Lernziele'),
-      el('div', { class: 'lede' }, 'Langfristige Ziele — z.B. „bis Dezember 100 bayerische Ausdrücke".')
+      el('h2', {}, t('view.long-goals.title')),
+      el('div', { class: 'lede' }, t('view.long-goals.lede'))
     ),
     el('button', {
       class: 'btn btn-secondary',
       onClick: () => openAddLongGoalDialog(section)
-    }, '+ Ziel hinzufügen')
+    }, t('view.long-goals.add'))
   );
   section.appendChild(head);
 
@@ -32,7 +33,7 @@ function refreshLongGoalsBody(body) {
   const goals = getLongGoals();
   if (!goals.length) {
     body.appendChild(el('div', { class: 'long-goal-empty' },
-      'Noch keine Lernziele gesetzt. Klick auf „+ Ziel hinzufügen", um anzufangen.'));
+      t('view.long-goals.empty')));
     return;
   }
   for (const g of goals) {
@@ -44,9 +45,9 @@ function renderLongGoalRow(g, body) {
   const pct = (g.progress * 100).toFixed(0);
   const deadlineLabel = g.deadline
     ? (g.daysLeft != null && g.daysLeft >= 0
-        ? `${g.deadline} (noch ${g.daysLeft} Tage)`
-        : `${g.deadline} (fällig)`)
-    : 'ohne Deadline';
+        ? t('view.long-goals.deadlineDaysLeft', { date: g.deadline, n: g.daysLeft })
+        : t('view.long-goals.deadlineDue', { date: g.deadline }))
+    : t('view.long-goals.noDeadline');
 
   return el('article', { class: 'long-goal-row' + (g.done ? ' is-done' : '') },
     el('div', { class: 'long-goal-head' },
@@ -54,20 +55,20 @@ function renderLongGoalRow(g, body) {
       (() => {
         // Zweiklick-Bestätigung direkt am Button (kein blockierendes confirm,
         // platzsparend für die Zeile): erster Klick „scharf", zweiter löscht.
-        const btn = el('button', { class: 'long-goal-remove', title: 'Ziel entfernen' }, '✕');
-        let armed = false, t = null;
+        const btn = el('button', { class: 'long-goal-remove', title: t('view.long-goals.removeTitle') }, '✕');
+        let armed = false, timer = null;
         btn.addEventListener('click', () => {
           if (!armed) {
             armed = true;
             btn.classList.add('is-armed');
-            btn.textContent = 'Löschen?';
-            btn.title = 'Nochmal klicken zum endgültigen Löschen';
-            t = setTimeout(() => {
+            btn.textContent = t('view.long-goals.removeArmed');
+            btn.title = t('view.long-goals.removeArmedTitle');
+            timer = setTimeout(() => {
               armed = false; btn.classList.remove('is-armed');
-              btn.textContent = '✕'; btn.title = 'Ziel entfernen';
+              btn.textContent = '✕'; btn.title = t('view.long-goals.removeTitle');
             }, 4000);
           } else {
-            clearTimeout(t);
+            clearTimeout(timer);
             removeLongGoal(g.id);
             refreshLongGoalsBody(body);
           }
@@ -85,7 +86,7 @@ function renderLongGoalRow(g, body) {
         style: { width: pct + '%' }
       })
     ),
-    g.done ? el('div', { class: 'long-goal-done' }, '🎉 Ziel erreicht!') : null
+    g.done ? el('div', { class: 'long-goal-done' }, t('view.long-goals.reached')) : null
   );
 }
 
@@ -99,45 +100,45 @@ function openAddLongGoalDialog(section) {
 
   const labelInput = el('input', {
     type: 'text', class: 'long-goal-input',
-    placeholder: 'z.B. „Bis Dezember 100 bayerische Ausdrücke"',
+    placeholder: t('view.long-goals.phLabel'),
     maxlength: '120'
   });
   const targetInput = el('input', {
     type: 'number', class: 'long-goal-input long-goal-input-num',
     min: '1', max: '5000', value: '50',
-    placeholder: 'Anzahl'
+    placeholder: t('view.long-goals.phTarget')
   });
   const deadlineInput = el('input', {
     type: 'date', class: 'long-goal-input'
   });
   const dialektSelect = el('select', { class: 'long-goal-input' },
-    el('option', { value: '' }, 'Alle Dialekte'),
+    el('option', { value: '' }, t('view.long-goals.allDialects')),
     ...DIALEKTE.map(d => el('option', { value: d.id }, `${d.flag} ${d.name}`))
   );
   const kategorieSelect = el('select', { class: 'long-goal-input' },
-    el('option', { value: '' }, 'Alle Kategorien'),
+    el('option', { value: '' }, t('view.long-goals.allCategories')),
     ...Object.values(KATEGORIEN).map(k =>
       el('option', { value: k.id }, `${k.icon} ${k.label}`))
   );
 
   const form = el('div', { class: 'long-goal-form' },
     el('div', { class: 'long-goal-form-row' },
-      el('label', {}, 'Bezeichnung'), labelInput
+      el('label', {}, t('view.long-goals.labelName')), labelInput
     ),
     el('div', { class: 'long-goal-form-row long-goal-form-row-split' },
-      el('label', {}, 'Zielzahl'), targetInput,
-      el('label', {}, 'Deadline'), deadlineInput
+      el('label', {}, t('view.long-goals.labelTarget')), targetInput,
+      el('label', {}, t('view.long-goals.labelDeadline')), deadlineInput
     ),
     el('div', { class: 'long-goal-form-row long-goal-form-row-split' },
-      el('label', {}, 'Dialekt'), dialektSelect,
-      el('label', {}, 'Kategorie'), kategorieSelect
+      el('label', {}, t('view.long-goals.labelDialect')), dialektSelect,
+      el('label', {}, t('view.long-goals.labelCategory')), kategorieSelect
     ),
     el('div', { class: 'long-goal-form-actions' },
       el('button', { class: 'btn btn-primary', onClick: () => {
         const label = labelInput.value.trim();
         const target = Number(targetInput.value) || 0;
         if (!label || target < 1) {
-          toast('Bitte Bezeichnung und gültige Zielzahl angeben.', 'info', 2400);
+          toast(t('view.long-goals.toastInvalid'), 'info', 2400);
           return;
         }
         addLongGoal({
@@ -150,8 +151,8 @@ function openAddLongGoalDialog(section) {
         });
         form.remove();
         refreshLongGoalsBody(list);
-      } }, 'Hinzufügen'),
-      el('button', { class: 'btn btn-ghost', onClick: () => form.remove() }, 'Abbrechen')
+      } }, t('view.long-goals.submit')),
+      el('button', { class: 'btn btn-ghost', onClick: () => form.remove() }, t('view.long-goals.cancel'))
     )
   );
 

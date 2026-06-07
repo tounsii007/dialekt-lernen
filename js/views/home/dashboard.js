@@ -21,10 +21,10 @@ export function renderDashboard() {
   if (!hasReco && !hasRecent && totalActivity === 0) return null;
 
   const buckets = [
-    { key: 'due',    title: 'Heute fällig',    hint: 'Spaced-Repetition empfiehlt',   items: rec.due,    color: 'var(--pink)' },
-    { key: 'hard',   title: 'Wiederholen',     hint: 'Karten mit häufigen Patzern',  items: rec.hard,   color: 'var(--warm)' },
-    { key: 'almost', title: 'Fast geschafft',  hint: 'Mittel — noch eine Runde',     items: rec.almost, color: 'var(--brand)' },
-    { key: 'fresh',  title: 'Neu entdecken',   hint: 'Noch unbekannte Ausdrücke',    items: rec.fresh,  color: 'var(--brand-2)' }
+    { key: 'due',    title: t('view.dashboard.bucketDueTitle'),    hint: t('view.dashboard.bucketDueHint'),   items: rec.due,    color: 'var(--pink)' },
+    { key: 'hard',   title: t('view.dashboard.bucketHardTitle'),     hint: t('view.dashboard.bucketHardHint'),  items: rec.hard,   color: 'var(--warm)' },
+    { key: 'almost', title: t('view.dashboard.bucketAlmostTitle'),  hint: t('view.dashboard.bucketAlmostHint'),     items: rec.almost, color: 'var(--brand)' },
+    { key: 'fresh',  title: t('view.dashboard.bucketFreshTitle'),   hint: t('view.dashboard.bucketFreshHint'),    items: rec.fresh,  color: 'var(--brand-2)' }
   ].filter(b => b.items.length > 0);
 
   const section = el('section', { class: 'section dashboard-section', dataset: { reveal: '' } },
@@ -36,7 +36,7 @@ export function renderDashboard() {
       totalActivity > 0 ? el('div', { class: 'dash-activity' },
         el('div', { class: 'dash-activity-meta' },
           el('span', { class: 'dash-activity-num' }, String(totalActivity)),
-          el('span', { class: 'dash-activity-label' }, 'Aktionen / 14 Tage')
+          el('span', { class: 'dash-activity-label' }, t('view.dashboard.activityLabel'))
         ),
         sparkline(activity.map(a => a.count), { width: 200, height: 48, color: 'currentColor' })
       ) : null
@@ -49,7 +49,7 @@ export function renderDashboard() {
     const card = el('article', { class: 'dash-card', dataset: { spotlight: '' }, style: { '--dc': b.color } },
       el('div', { class: 'dash-card-head' },
         el('div', { class: 'dash-card-title' }, b.title),
-        el('span', { class: 'dash-card-count', ariaLabel: `${b.items.length} Ausdrücke` }, String(b.items.length))
+        el('span', { class: 'dash-card-count', ariaLabel: t('view.dashboard.exprCount', { n: b.items.length }) }, String(b.items.length))
       ),
       el('div', { class: 'dash-card-hint' }, b.hint),
       el('ul', { class: 'dash-list' },
@@ -61,7 +61,7 @@ export function renderDashboard() {
       el('button', {
         class: 'btn btn-secondary dash-card-cta', dataset: { magnetic: '10' },
         onClick: () => go('#/lernen')
-      }, 'Diese lernen →')
+      }, t('view.dashboard.learnThese'))
     );
     dashGrid.appendChild(card);
   });
@@ -69,10 +69,10 @@ export function renderDashboard() {
   if (recent.length) {
     const recentCard = el('article', { class: 'dash-card dash-recent', dataset: { spotlight: '' } },
       el('div', { class: 'dash-card-head' },
-        el('div', { class: 'dash-card-title' }, 'Zuletzt angeschaut'),
-        el('span', { class: 'dash-card-count', ariaLabel: `${recent.length} Dialekte` }, String(recent.length))
+        el('div', { class: 'dash-card-title' }, t('view.dashboard.recentTitle')),
+        el('span', { class: 'dash-card-count', ariaLabel: t('count.dialekte', { n: recent.length }) }, String(recent.length))
       ),
-      el('div', { class: 'dash-card-hint' }, 'Setze dort fort, wo du warst.'),
+      el('div', { class: 'dash-card-hint' }, t('view.dashboard.recentHint')),
       el('div', { class: 'dash-chips' },
         ...recent.map(d => el('button', {
           class: 'dash-chip',

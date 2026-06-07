@@ -1,6 +1,7 @@
 // Favoriten · Benachrichtigungen — tägliche Erinnerung (Permission, Uhrzeit, Test).
 
 import { el, toast } from '../../util.js';
+import { t } from '../../util/i18n.js';
 import {
   getNotificationStatus, setNotificationSettings,
   enableNotifications, disableNotifications
@@ -14,17 +15,17 @@ export function renderNotificationSettings() {
   const wrap = el('section', { class: 'section notify-section', dataset: { reveal: '' } },
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, '🔔 Tägliche Erinnerung'),
+        el('h2', {}, t('view.notifications-panel.title')),
         el('div', { class: 'lede' }, supported
-          ? 'Bekomme eine sanfte Benachrichtigung, damit dein Streak nicht reißt.'
-          : 'Dein Browser unterstützt keine Benachrichtigungen — diese Funktion ist nicht verfügbar.')
+          ? t('view.notifications-panel.ledeSupported')
+          : t('view.notifications-panel.ledeUnsupported'))
       )
     )
   );
 
   if (!supported) {
     wrap.appendChild(el('div', { class: 'card' },
-      el('div', { class: 'lede' }, 'Notifications werden vom Browser nicht unterstützt.')
+      el('div', { class: 'lede' }, t('view.notifications-panel.notSupportedCard'))
     ));
     return wrap;
   }
@@ -39,24 +40,24 @@ export function renderNotificationSettings() {
   const enableBtn = el('button', {
     class: 'btn ' + (settings.enabled ? 'btn-secondary' : 'btn-primary'),
     dataset: { magnetic: '10' }
-  }, settings.enabled ? 'Aktiv ✓ — deaktivieren' : 'Erinnerung aktivieren');
+  }, settings.enabled ? t('view.notifications-panel.btnDisable') : t('view.notifications-panel.btnEnable'));
 
   const testBtn = el('button', {
     class: 'btn btn-ghost', dataset: { magnetic: '10' }
-  }, '🔔 Test-Benachrichtigung');
+  }, t('view.notifications-panel.testBtn'));
 
   const statusLine = el('div', { class: 'lede', style: { fontSize: '.85rem', marginTop: '6px' } });
   const refreshStatus = () => {
     const s = getNotificationStatus();
     let txt;
     if (s.permission === 'denied') {
-      txt = 'Permission wurde abgelehnt — bitte in den Browser-Einstellungen erlauben.';
+      txt = t('view.notifications-panel.statusDenied');
     } else if (s.permission === 'default') {
-      txt = 'Benachrichtigungen sind nicht aktiviert.';
+      txt = t('view.notifications-panel.statusDefault');
     } else if (s.settings.enabled) {
-      txt = `Aktiv — täglich um ${String(s.settings.hour).padStart(2,'0')}:${String(s.settings.minute).padStart(2,'0')}.`;
+      txt = t('view.notifications-panel.statusActive', { time: `${String(s.settings.hour).padStart(2,'0')}:${String(s.settings.minute).padStart(2,'0')}` });
     } else {
-      txt = 'Permission erteilt — Erinnerung ist aber ausgeschaltet.';
+      txt = t('view.notifications-panel.statusOff');
     }
     statusLine.textContent = txt;
   };
@@ -66,23 +67,23 @@ export function renderNotificationSettings() {
     const cur = getNotificationStatus();
     if (cur.settings.enabled) {
       disableNotifications();
-      enableBtn.textContent = 'Erinnerung aktivieren';
+      enableBtn.textContent = t('view.notifications-panel.btnEnable');
       enableBtn.classList.remove('btn-secondary');
       enableBtn.classList.add('btn-primary');
       refreshStatus();
-      toast('Erinnerung deaktiviert', 'info', 1400);
+      toast(t('view.notifications-panel.toastDisabled'), 'info', 1400);
       return;
     }
     const res = await enableNotifications();
     if (res.ok) {
-      enableBtn.textContent = 'Aktiv ✓ — deaktivieren';
+      enableBtn.textContent = t('view.notifications-panel.btnDisable');
       enableBtn.classList.remove('btn-primary');
       enableBtn.classList.add('btn-secondary');
-      toast('Erinnerung aktiviert 🔔', 'success', 1600);
+      toast(t('view.notifications-panel.toastEnabled'), 'success', 1600);
     } else if (res.permission === 'denied') {
-      toast('Permission wurde abgelehnt — bitte im Browser erlauben.', 'info', 2400);
+      toast(t('view.notifications-panel.toastDenied'), 'info', 2400);
     } else {
-      toast('Permission nicht erteilt.', 'info', 1600);
+      toast(t('view.notifications-panel.toastNotGranted'), 'info', 1600);
     }
     refreshStatus();
   });
@@ -91,7 +92,7 @@ export function renderNotificationSettings() {
     const [h, m] = (timeInput.value || '19:00').split(':').map(Number);
     setNotificationSettings({ hour: h, minute: m });
     refreshStatus();
-    toast(`Erinnerung auf ${timeInput.value} gesetzt`, 'success', 1200);
+    toast(t('view.notifications-panel.toastTimeSet', { time: timeInput.value }), 'success', 1200);
   });
 
   testBtn.addEventListener('click', async () => {
@@ -99,23 +100,23 @@ export function renderNotificationSettings() {
     if (s.permission !== 'granted') {
       const res = await enableNotifications();
       if (!res.ok) {
-        toast('Bitte zuerst Benachrichtigungen erlauben.', 'info', 1800);
+        toast(t('view.notifications-panel.toastAllowFirst'), 'info', 1800);
         return;
       }
     }
     const n = showNotification({
-      title: 'Dialekto — Test 🔔',
-      body: 'Wenn du das siehst, funktionieren Benachrichtigungen.',
+      title: t('view.notifications-panel.testNotifTitle'),
+      body: t('view.notifications-panel.testNotifBody'),
       tag: 'dialekto-test',
       url: '#/lernen'
     });
-    if (!n) toast('Test fehlgeschlagen — Browser blockt Benachrichtigungen.', 'info', 2000);
+    if (!n) toast(t('view.notifications-panel.toastTestFailed'), 'info', 2000);
   });
 
   wrap.appendChild(el('div', { class: 'card notify-card', dataset: { spotlight: '' } },
     el('div', { class: 'notify-row', style: { display: 'flex', gap: '12px', flexWrap: 'wrap', alignItems: 'center' } },
       el('label', { style: { display: 'flex', alignItems: 'center', gap: '8px', fontWeight: '500' } },
-        el('span', {}, 'Tägliche Uhrzeit'),
+        el('span', {}, t('view.notifications-panel.dailyTime')),
         timeInput
       ),
       enableBtn,

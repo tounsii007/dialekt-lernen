@@ -2,6 +2,7 @@
 
 import { el } from '../../util.js';
 import { getStreakHeatmap, getActiveDays } from '../../store.js';
+import { t } from '../../util/i18n.js';
 
 export function renderHeatmap() {
   const days = getStreakHeatmap(16); // 16 weeks
@@ -18,7 +19,7 @@ export function renderHeatmap() {
       const lvl = d.count === 0 ? 0 : Math.min(4, Math.ceil((d.count / maxCount) * 4));
       const cell = el('div', {
         class: `streak-cell lvl-${lvl}`,
-        title: `${d.date.toLocaleDateString('de-DE')} — ${d.count} Aktion${d.count===1?'':'en'}`,
+        title: t(d.count === 1 ? 'view.heatmap-panel.actionOne' : 'view.heatmap-panel.actionMany', { date: d.date.toLocaleDateString('de-DE'), n: d.count }),
         style: { '--cell-delay': `${(w * 7 + i) * 6}ms` }
       });
       col.appendChild(cell);
@@ -29,18 +30,18 @@ export function renderHeatmap() {
   return el('div', { class: 'card streak-card', dataset: { spotlight: '', reveal: '' } },
     el('div', { class: 'streak-head' },
       el('div', {},
-        el('div', { class: 'card-title' }, 'Lern-Heatmap'),
+        el('div', { class: 'card-title' }, t('view.heatmap-panel.title')),
         el('div', { class: 'lede', style: { fontSize: '.85rem' } },
-          `Letzte 16 Wochen · ${getActiveDays()} aktive Tage insgesamt`)
+          t('view.heatmap-panel.subtitle', { n: getActiveDays() }))
       ),
       el('div', { class: 'streak-legend' },
-        el('span', {}, 'weniger'),
+        el('span', {}, t('view.heatmap-panel.legendLess')),
         el('span', { class: 'streak-cell lvl-0' }),
         el('span', { class: 'streak-cell lvl-1' }),
         el('span', { class: 'streak-cell lvl-2' }),
         el('span', { class: 'streak-cell lvl-3' }),
         el('span', { class: 'streak-cell lvl-4' }),
-        el('span', {}, 'mehr')
+        el('span', {}, t('view.heatmap-panel.legendMore'))
       )
     ),
     grid
