@@ -45,6 +45,14 @@ const STRINGS = {
     'home.dashboard.lede':         'Personalisierte Empfehlungen basierend auf deinem Lernstand.',
     'home.dailyGoal.title':        'Heutiges Ziel',
     'home.dailyGoal.lede':         'Passe dein tägliches Lernpensum an — bleib im Rhythmus!',
+    // Views: Entdecken + generische Zähler/Länder (wiederverwendbar)
+    'view.entdecken.title': 'Dialekte entdecken',
+    'view.entdecken.lede': '{n} Regionen · Filtere nach Sprachraum oder suche direkt.',
+    'view.entdecken.search': 'Dialekt oder Region suchen…',
+    'view.entdecken.emptyTitle': 'Keine Dialekte gefunden',
+    'view.entdecken.emptyMeta': 'Probier ein anderes Wort, einen anderen Sprachraum oder leere das Suchfeld.',
+    'country.all': 'Alle', 'country.de': 'Deutschland', 'country.at': 'Österreich', 'country.ch': 'Schweiz',
+    'count.treffer': '{n} Treffer', 'count.dialekt': '{n} Dialekt', 'count.dialekte': '{n} Dialekte',
 
     // Stats
     'stats.dialekte':              'Dialekte',
@@ -125,6 +133,13 @@ const STRINGS = {
     'home.dashboard.lede':         'Personalised recommendations based on your progress.',
     'home.dailyGoal.title':        "Today's goal",
     'home.dailyGoal.lede':         'Adjust your daily learning target — keep your rhythm!',
+    'view.entdecken.title': 'Discover dialects',
+    'view.entdecken.lede': '{n} regions · Filter by language area or search directly.',
+    'view.entdecken.search': 'Search dialect or region…',
+    'view.entdecken.emptyTitle': 'No dialects found',
+    'view.entdecken.emptyMeta': 'Try another word, a different language area, or clear the search box.',
+    'country.all': 'All', 'country.de': 'Germany', 'country.at': 'Austria', 'country.ch': 'Switzerland',
+    'count.treffer': '{n} matches', 'count.dialekt': '{n} dialect', 'count.dialekte': '{n} dialects',
 
     // Stats
     'stats.dialekte':              'Dialects',
@@ -188,6 +203,7 @@ const STRINGS = {
     'home.hero.cta.discover': 'Lehçeleri keşfet', 'home.hero.cta.learn': 'Kartlarla öğren', 'home.hero.cta.quiz': 'Teste başla',
     'home.hero.headline': 'Yerliler gibi konuş.', 'home.hero.lede': '24 bölgeden 6700\'den fazla ifade: kartlarla öğren, telaffuzu dinle ve testte kendini sına — anlaşılır standart Almancayla açıklanır.',
     'home.dashboard.lede': 'Öğrenme durumuna göre kişiselleştirilmiş öneriler.', 'home.dailyGoal.title': 'Günün hedefi', 'home.dailyGoal.lede': 'Günlük öğrenme hedefini ayarla — ritmini koru!',
+    'view.entdecken.title': 'Lehçeleri keşfet', 'view.entdecken.lede': '{n} bölge · Dil bölgesine göre filtrele veya doğrudan ara.', 'view.entdecken.search': 'Lehçe veya bölge ara…', 'view.entdecken.emptyTitle': 'Lehçe bulunamadı', 'view.entdecken.emptyMeta': 'Başka bir kelime ya da dil bölgesi dene veya arama kutusunu temizle.', 'country.all': 'Tümü', 'country.de': 'Almanya', 'country.at': 'Avusturya', 'country.ch': 'İsviçre', 'count.treffer': '{n} sonuç', 'count.dialekt': '{n} lehçe', 'count.dialekte': '{n} lehçe',
     'stats.dialekte': 'Lehçeler', 'stats.ausdruecke': 'İfadeler', 'stats.gelernt': 'öğrenildi', 'stats.streak': 'gün serisi',
     'btn.start': 'Öğrenmeye başla', 'btn.share': 'Kartı paylaş', 'btn.close': 'Kapat', 'btn.cancel': 'İptal',
     'btn.save': 'Kaydet', 'btn.copy': 'Kopyala', 'btn.download': 'İndir', 'btn.continue': 'Devam', 'btn.back': 'Geri',
@@ -212,6 +228,7 @@ const STRINGS = {
     'home.hero.cta.discover': 'Découvrir les dialectes', 'home.hero.cta.learn': 'Réviser les cartes', 'home.hero.cta.quiz': 'Lancer le quiz',
     'home.hero.headline': 'Parle comme les gens du coin.', 'home.hero.lede': 'Plus de 6700 expressions de 24 régions : apprends avec des cartes, écoute la prononciation et teste-toi au quiz — expliqué en allemand standard clair.',
     'home.dashboard.lede': 'Recommandations personnalisées selon ta progression.', 'home.dailyGoal.title': 'Objectif du jour', 'home.dailyGoal.lede': 'Ajuste ton objectif quotidien — garde le rythme !',
+    'view.entdecken.title': 'Découvrir les dialectes', 'view.entdecken.lede': '{n} régions · Filtre par aire linguistique ou recherche directement.', 'view.entdecken.search': 'Rechercher un dialecte ou une région…', 'view.entdecken.emptyTitle': 'Aucun dialecte trouvé', 'view.entdecken.emptyMeta': 'Essaie un autre mot, une autre aire linguistique ou vide le champ de recherche.', 'country.all': 'Tous', 'country.de': 'Allemagne', 'country.at': 'Autriche', 'country.ch': 'Suisse', 'count.treffer': '{n} résultats', 'count.dialekt': '{n} dialecte', 'count.dialekte': '{n} dialectes',
     'stats.dialekte': 'Dialectes', 'stats.ausdruecke': 'Expressions', 'stats.gelernt': 'appris', 'stats.streak': 'jours de suite',
     'btn.start': 'Commencer', 'btn.share': 'Partager la carte', 'btn.close': 'Fermer', 'btn.cancel': 'Annuler',
     'btn.save': 'Enregistrer', 'btn.copy': 'Copier', 'btn.download': 'Télécharger', 'btn.continue': 'Continuer', 'btn.back': 'Retour',
@@ -236,6 +253,7 @@ const STRINGS = {
     'home.hero.cta.discover': 'Descubrir dialectos', 'home.hero.cta.learn': 'Estudiar tarjetas', 'home.hero.cta.quiz': 'Empezar quiz',
     'home.hero.headline': 'Habla como los locales.', 'home.hero.lede': 'Más de 6700 expresiones de 24 regiones: aprende con tarjetas, escucha la pronunciación y ponte a prueba en el quiz — explicado en alemán estándar claro.',
     'home.dashboard.lede': 'Recomendaciones personalizadas según tu progreso.', 'home.dailyGoal.title': 'Objetivo de hoy', 'home.dailyGoal.lede': 'Ajusta tu meta diaria de aprendizaje — ¡mantén el ritmo!',
+    'view.entdecken.title': 'Descubrir dialectos', 'view.entdecken.lede': '{n} regiones · Filtra por área lingüística o busca directamente.', 'view.entdecken.search': 'Buscar dialecto o región…', 'view.entdecken.emptyTitle': 'No se encontraron dialectos', 'view.entdecken.emptyMeta': 'Prueba otra palabra, otra área lingüística o vacía el campo de búsqueda.', 'country.all': 'Todos', 'country.de': 'Alemania', 'country.at': 'Austria', 'country.ch': 'Suiza', 'count.treffer': '{n} resultados', 'count.dialekt': '{n} dialecto', 'count.dialekte': '{n} dialectos',
     'stats.dialekte': 'Dialectos', 'stats.ausdruecke': 'Expresiones', 'stats.gelernt': 'aprendidas', 'stats.streak': 'días seguidos',
     'btn.start': 'Empezar a aprender', 'btn.share': 'Compartir tarjeta', 'btn.close': 'Cerrar', 'btn.cancel': 'Cancelar',
     'btn.save': 'Guardar', 'btn.copy': 'Copiar', 'btn.download': 'Descargar', 'btn.continue': 'Continuar', 'btn.back': 'Atrás',
@@ -285,12 +303,19 @@ export function getLang() {
  * Übersetzt einen Key.
  * Fällt bei fehlendem Key auf die deutsche Variante zurück, dann auf den Key selbst.
  */
-export function t(key) {
+export function t(key, params) {
   const table = STRINGS[currentLang] || STRINGS[DEFAULT_LANG];
-  if (table && Object.prototype.hasOwnProperty.call(table, key)) return table[key];
-  const fallback = STRINGS[DEFAULT_LANG];
-  if (fallback && Object.prototype.hasOwnProperty.call(fallback, key)) return fallback[key];
-  return key;
+  let val;
+  if (table && Object.prototype.hasOwnProperty.call(table, key)) val = table[key];
+  else {
+    const fallback = STRINGS[DEFAULT_LANG];
+    val = (fallback && Object.prototype.hasOwnProperty.call(fallback, key)) ? fallback[key] : key;
+  }
+  // Optionale Platzhalter-Interpolation: t('count.treffer', { n: 3 }) → "3 Treffer".
+  if (params && typeof val === 'string') {
+    for (const k in params) val = val.replace(new RegExp('\\{' + k + '\\}', 'g'), params[k]);
+  }
+  return val;
 }
 
 /**

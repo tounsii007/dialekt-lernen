@@ -1,4 +1,5 @@
 import { el } from '../util.js';
+import { t } from '../util/i18n.js';
 import { DIALEKTE } from '../../data/dialekte.js';
 import { renderDialektCard } from './partials.js';
 import { emptyIllustration } from '../util/icons.js';
@@ -22,8 +23,8 @@ export function renderEntdecken(root) {
   view.appendChild(el('section', {},
     el('div', { class: 'section-head' },
       el('div', {},
-        el('h2', {}, 'Dialekte entdecken'),
-        el('div', { class: 'lede' }, `${DIALEKTE.length} Regionen · Filtere nach Sprachraum oder suche direkt.`)
+        el('h2', {}, t('view.entdecken.title')),
+        el('div', { class: 'lede' }, t('view.entdecken.lede', { n: DIALEKTE.length }))
       )
     )
   ));
@@ -33,7 +34,7 @@ export function renderEntdecken(root) {
   const searchWrap = el('div', { class: 'expr-search' },
     el('svg', { viewBox: '0 0 24 24', width: 20, height: 20, fill: 'none', stroke: 'currentColor', 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round',
       html: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>' }),
-    el('input', { type: 'search', placeholder: 'Dialekt oder Region suchen…', id: 'discoverSearch' })
+    el('input', { type: 'search', placeholder: t('view.entdecken.search'), id: 'discoverSearch' })
   );
   filterRow.appendChild(searchWrap);
   view.appendChild(filterRow);
@@ -56,7 +57,7 @@ export function renderEntdecken(root) {
             x.classList.toggle('is-active', x.dataset.country === c.id));
           render();
         }
-      }, `${c.label} (${count})`);
+      }, `${t('country.' + c.id)} (${count})`);
     })
   );
   view.appendChild(chipRow);
@@ -73,14 +74,14 @@ export function renderEntdecken(root) {
     if (activeCountry !== 'all') items = items.filter(d => COUNTRY_OF(d) === activeCountry);
 
     countEl.textContent = raw
-      ? `${items.length} Treffer`
-      : `${items.length} ${items.length === 1 ? 'Dialekt' : 'Dialekte'}`;
+      ? t('count.treffer', { n: items.length })
+      : t(items.length === 1 ? 'count.dialekt' : 'count.dialekte', { n: items.length });
 
     if (!items.length) {
       grid.appendChild(el('div', { class: 'empty-state', style: { gridColumn: '1 / -1' } },
         emptyIllustration('search'),
-        el('h3', {}, 'Keine Dialekte gefunden'),
-        el('div', { class: 'empty-meta' }, 'Probier ein anderes Wort, einen anderen Sprachraum oder leere das Suchfeld.')
+        el('h3', {}, t('view.entdecken.emptyTitle')),
+        el('div', { class: 'empty-meta' }, t('view.entdecken.emptyMeta'))
       ));
       return;
     }
